@@ -14,7 +14,7 @@ A factory that produces the custom embedded content view for the biometric promp
 
 | Public methods ||
 |---|---|
-| abstract [View](../android.view/View.md) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.EmbeddedContentFactory#createView(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` <br /> |
+| abstract [View](../android.view/View.md) | createView <br /> |
 
 ## Public methods
 

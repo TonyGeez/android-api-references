@@ -17,8 +17,8 @@ Base interface for answer callbacks
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/DnsResolver.Callback#onAnswer(android.net.DnsResolver.Callback.T,%20kotlin.Int)(answer: T, rcode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Success response to android. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/DnsResolver.Callback#onError(android.net.DnsResolver.DnsException)(error: https://developer.android.com/reference/kotlin/android/net/DnsResolver.DnsException)` Error response to android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onAnswer Success response to android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onError Error response to android. |
 
 ## Public methods
 

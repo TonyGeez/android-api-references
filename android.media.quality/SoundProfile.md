@@ -19,7 +19,7 @@ Profile for sound quality.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile.Builder` A builder for `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#` |
+| | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile.Builder` A builder for SoundProfile |
 
 | Constants ||
 |---|---|
@@ -35,20 +35,20 @@ Profile for sound quality.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getInputId()()` Gets the input ID if the profile is for a TV input. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getName()()` Gets the profile name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getInputId Gets the input ID if the profile is for a TV input. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName Gets the profile name. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getPackageName()()` Gets the package name of this profile. |
-| [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getParameters()()` Gets the parameters of this profile. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getProfileId()()` Gets profile ID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getPackageName Gets the package name of this profile. |
+| [PersistableBundle](../android.os/PersistableBundle.md) | getParameters Gets the parameters of this profile. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getProfileId Gets profile ID. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getProfileType()()` Gets profile type. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProfileType Gets profile type. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -70,8 +70,8 @@ Error code for creating a profile with existing profile type and name.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getProfileType()`
-- `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getName()`
+- getProfileType
+- getName
 
 ### ERROR_INVALID_ARGUMENT
 
@@ -133,7 +133,7 @@ static val TYPE_APPLICATION: Int
 
 Application profile type.
 
-A profile of application type is managed by the package returned by `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getPackageName()`.
+A profile of application type is managed by the package returned by getPackageName.
 
  Value: 2
 
@@ -147,7 +147,7 @@ static val TYPE_SYSTEM: Int
 
 System profile type.
 
-A profile of system type is managed by the system, and readable to the package returned by `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile#getPackageName()`.
+A profile of system type is managed by the system, and readable to the package returned by getPackageName.
 
  Value: 1
 
@@ -161,7 +161,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -183,7 +183,7 @@ Gets the input ID if the profile is for a TV input.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/tv/TvInputInfo.html#getId()`
+- getId
 
 ### getName
 
@@ -237,7 +237,7 @@ fun getProfileId(): String?
 
 Gets profile ID.
 
-A profile ID is a globally unique ID generated and assigned by the system. For profile objects retrieved from system (e.g `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getAvailableSoundProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)`) this profile ID is non-null; For profiles built locally with `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile.Builder`, it's `null`.
+A profile ID is a globally unique ID generated and assigned by the system. For profile objects retrieved from system (e.g getAvailableSoundProfiles) this profile ID is non-null; For profiles built locally with `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile.Builder`, it's `null`.
 
 | Return ||
 |---|---|

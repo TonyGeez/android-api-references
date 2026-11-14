@@ -13,30 +13,30 @@ open class KeyEvent : InputEvent, Parcelable
 
 Object used to report key and button events.
 
-Each key press is described by a sequence of key events. A key press starts with a key event with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int`. If the key is held sufficiently long that it repeats, then the initial down is followed additional key events with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` and a non-zero value for `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getRepeatCount()`. The last key event is a `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` for the key up. If the key press is canceled, the key up event will have the `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int` flag set.
+Each key press is described by a sequence of key events. A key press starts with a key event with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int`. If the key is held sufficiently long that it repeats, then the initial down is followed additional key events with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` and a non-zero value for getRepeatCount. The last key event is a `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` for the key up. If the key press is canceled, the key up event will have the `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int` flag set.
 
-Key events are generally accompanied by a key code (`https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyCode()`), scan code (`https://developer.android.com/reference/kotlin/android/view/KeyEvent#getScanCode()`) and meta state (`https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`). Key code constants are defined in this class. Scan code constants are raw device-specific codes obtained from the OS and so are not generally meaningful to applications unless interpreted using the `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap`. Meta states describe the pressed state of key modifiers such as `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SHIFT_ON:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_ON:kotlin.Int`.
+Key events are generally accompanied by a key code (getKeyCode), scan code (getScanCode) and meta state (getMetaState). Key code constants are defined in this class. Scan code constants are raw device-specific codes obtained from the OS and so are not generally meaningful to applications unless interpreted using the KeyCharacterMap. Meta states describe the pressed state of key modifiers such as `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SHIFT_ON:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_ON:kotlin.Int`.
 
-Key codes typically correspond one-to-one with individual keys on an input device. Many keys and key combinations serve quite different functions on different input devices so care must be taken when interpreting them. Always use the `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap` associated with the input device when mapping keys to characters. Be aware that there may be multiple key input devices active at the same time and each will have its own key character map.
+Key codes typically correspond one-to-one with individual keys on an input device. Many keys and key combinations serve quite different functions on different input devices so care must be taken when interpreting them. Always use the KeyCharacterMap associated with the input device when mapping keys to characters. Be aware that there may be multiple key input devices active at the same time and each will have its own key character map.
 
 As soft input methods can use multiple and inventive ways of inputting text, there is no guarantee that any key press on a soft keyboard will generate a key event: this is left to the IME's discretion, and in fact sending such events is discouraged. You should never rely on receiving KeyEvents for any key on a soft input method. In particular, the default software keyboard will never send any key event to any application targetting Jelly Bean or later, and will only send events for some presses of the delete and return keys to applications targetting Ice Cream Sandwich or earlier. Be aware that other software input methods may never send key events regardless of the version. Consider using editor actions like `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_DONE:kotlin.Int` if you need specific interaction with the software keyboard, as it gives more visibility to the user as to how your application will react to key presses.
 
 In general, the framework cannot guarantee that the key events it delivers to a view always constitute complete key sequences since some events may be dropped or modified by containing views before they are delivered. The view implementation should be prepared to handle `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int` and should tolerate anomalous situations such as receiving a new `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` without first having received an `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` for the prior key press.
 
-Refer to `https://developer.android.com/reference/kotlin/android/view/InputDevice` for more information about how different kinds of input devices and sources represent keys and buttons.
+Refer to InputDevice for more information about how different kinds of input devices and sources represent keys and buttons.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
 | abstract | `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback` <br /> |
-| open | `https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState` Use with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#dispatch(android.view.KeyEvent.Callback,%20android.view.KeyEvent.DispatcherState,%20kotlin.Any)` for more advanced key dispatching, such as long presses. |
+| open | `https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState` Use with dispatch for more advanced key dispatching, such as long presses. |
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getAction()` value: the key has been pressed down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` getAction value: the key has been pressed down. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_MULTIPLE:kotlin.Int` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getAction()` value: the key has been released. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` getAction value: the key has been released. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int` When associated with up key events, this indicates that the key press has been canceled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED_LONG_PRESS:kotlin.Int` Set when a key event has `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int` set because a long press action was executed while it was down. |
@@ -541,103 +541,103 @@ Refer to `https://developer.android.com/reference/kotlin/android/view/InputDevic
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(android.view.KeyEvent)(origEvent: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!)` Make an exact copy of an existing key event. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int)(origEvent: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy an existing key event, modifying its time and repeat count. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Int,%20kotlin.Int)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Long,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)(time: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, characters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event for a string of characters. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(downTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(downTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(downTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scancode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(downTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scancode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event. |
-| `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KeyEvent(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(downTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scancode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event. |
+| KeyEvent Make an exact copy of an existing key event. |
+| KeyEvent Copy an existing key event, modifying its time and repeat count. |
+| KeyEvent Create a new key event. |
+| KeyEvent Create a new key event for a string of characters. |
+| KeyEvent Create a new key event. |
+| KeyEvent Create a new key event. |
+| KeyEvent Create a new key event. |
+| KeyEvent Create a new key event. |
+| KeyEvent Create a new key event. |
 
 | Public methods ||
 |---|---|
-| open static [KeyEvent](KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeAction(android.view.KeyEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose action is replaced with the given value. |
-| open static [KeyEvent](KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeFlags(android.view.KeyEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose flags are replaced with the given value. |
-| open static [KeyEvent](KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
+| open static [KeyEvent](KeyEvent.md)! | changeAction Create a new key event that is the same as the given one, but whose action is replaced with the given value. |
+| open static [KeyEvent](KeyEvent.md)! | changeFlags Create a new key event that is the same as the given one, but whose flags are replaced with the given value. |
+| open static [KeyEvent](KeyEvent.md)! | changeTimeRepeat Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
 | --- | --- |
-| open static [KeyEvent](KeyEvent.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent#!, eventTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newRepeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#dispatch(android.view.KeyEvent.Callback)(receiver: https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback!)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#dispatch(android.view.KeyEvent.Callback,%20android.view.KeyEvent.DispatcherState,%20kotlin.Any)(receiver: https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback!, state: https://developer.android.com/reference/kotlin/android/view/KeyEvent.DispatcherState!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Deliver this key event to a `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback` interface. |
+| open static [KeyEvent](KeyEvent.md)! | changeTimeRepeat Create a new key event that is the same as the given one, but whose event time and repeat count are replaced with the given value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | dispatch <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | dispatch Deliver this key event to a `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback` interface. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getAction()()` Retrieve the action of this key event. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getCharacters()()` For the special case of a `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_MULTIPLE:kotlin.Int` event with key code of `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_UNKNOWN:kotlin.Int`, this is a raw string of characters associated with the event. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getDeadChar(kotlin.Int,%20kotlin.Int)(accent: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the character that is produced by putting accent on the character c. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAction Retrieve the action of this key event. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getCharacters For the special case of a `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_MULTIPLE:kotlin.Int` event with key code of `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_UNKNOWN:kotlin.Int`, this is a raw string of characters associated with the event. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDeadChar Get the character that is produced by putting accent on the character c. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getDeviceId()()` Gets the id for the device that this event came from. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getDisplayLabel()()` Gets the primary character for this key. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getDownTime()()` Retrieve the time of the most recent key down event, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDeviceId Gets the id for the device that this event came from. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getDisplayLabel Gets the primary character for this key. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getDownTime Retrieve the time of the most recent key down event, in the uptimeMillis time base. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getEventTime()()` Retrieve the time this event occurred, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getFlags()()` Returns the flags for this key event. |
-| [KeyCharacterMap](KeyCharacterMap.md)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyCharacterMap()()` Gets the `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap` associated with the keyboard device. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getEventTime Retrieve the time this event occurred, in the uptimeMillis time base. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFlags Returns the flags for this key event. |
+| [KeyCharacterMap](KeyCharacterMap.md)! | getKeyCharacterMap Gets the KeyCharacterMap associated with the keyboard device. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyCode()()` Retrieve the key code of the key event. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getKeyData(android.view.KeyCharacterMap.KeyData)(results: https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.KeyData!)` Get the character conversion data for a given key code. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMatch(kotlin.CharArray)(chars: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Gets the first character in the character array that can be generated by the specified key code. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getKeyCode Retrieve the key code of the key event. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getKeyData Get the character conversion data for a given key code. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getMatch Gets the first character in the character array that can be generated by the specified key code. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMatch(kotlin.CharArray,%20kotlin.Int)(chars: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the first character in the character array that can be generated by the specified key code. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMaxKeyCode()()` Returns the maximum keycode. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()()` Returns the state of the meta keys. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getMatch Gets the first character in the character array that can be generated by the specified key code. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxKeyCode Returns the maximum keycode. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMetaState Returns the state of the meta keys. |
 | --- | --- |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getModifierMetaStateMask()()` Gets a mask that includes all valid modifier key meta state bits. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getModifiers()()` Returns the state of the modifier keys. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getNumber()()` Gets the number or symbol associated with the key. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getModifierMetaStateMask Gets a mask that includes all valid modifier key meta state bits. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getModifiers Returns the state of the modifier keys. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getNumber Gets the number or symbol associated with the key. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getRepeatCount()()` Retrieve the repeat count of the event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getScanCode()()` Retrieve the hardware key id of this key event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getSource()()` Gets the source of the event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRepeatCount Retrieve the repeat count of the event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getScanCode Retrieve the hardware key id of this key event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSource Gets the source of the event. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getUnicodeChar()()` Gets the Unicode character generated by the specified key and meta key state combination. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getUnicodeChar(kotlin.Int)(metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the Unicode character generated by the specified key and meta key state combination. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#hasModifiers(kotlin.Int)(modifiers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if only the specified modifiers keys are pressed. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUnicodeChar Gets the Unicode character generated by the specified key and meta key state combination. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUnicodeChar Gets the Unicode character generated by the specified key and meta key state combination. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasModifiers Returns true if only the specified modifiers keys are pressed. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#hasNoModifiers()()` Returns true if no modifier keys are pressed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isAltPressed()()` Returns the pressed state of the ALT meta key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCanceled()()` For `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` events, indicates that the event has been canceled as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasNoModifiers Returns true if no modifier keys are pressed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAltPressed Returns the pressed state of the ALT meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCanceled For `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` events, indicates that the event has been canceled as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_CANCELED:kotlin.Int`. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCapsLockOn()()` Returns the locked state of the CAPS LOCK meta key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCtrlPressed()()` Returns the pressed state of the CTRL meta key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isFunctionPressed()()` Returns the pressed state of the FUNCTION meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCapsLockOn Returns the locked state of the CAPS LOCK meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCtrlPressed Returns the pressed state of the CTRL meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFunctionPressed Returns the pressed state of the FUNCTION meta key. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isGamepadButton(kotlin.Int)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the specified keycode is a gamepad button. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isLongPress()()` For `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` events, indicates that the event has been canceled as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_LONG_PRESS:kotlin.Int`. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isMediaSessionKey(kotlin.Int)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether this key will be sent to the `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Callback.html#` if not handled. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isGamepadButton Returns true if the specified keycode is a gamepad button. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLongPress For `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` events, indicates that the event has been canceled as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_LONG_PRESS:kotlin.Int`. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMediaSessionKey Returns whether this key will be sent to the `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Callback.html#` if not handled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isMetaPressed()()` Returns the pressed state of the META meta key. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isModifierKey(kotlin.Int)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if this key code is a modifier key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isNumLockOn()()` Returns the locked state of the NUM LOCK meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMetaPressed Returns the pressed state of the META meta key. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isModifierKey Returns true if this key code is a modifier key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNumLockOn Returns the locked state of the NUM LOCK meta key. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isPrintingKey()()` Returns true if this key produces a glyph. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isScrollLockOn()()` Returns the locked state of the SCROLL LOCK meta key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isShiftPressed()()` Returns the pressed state of the SHIFT meta key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPrintingKey Returns true if this key produces a glyph. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isScrollLockOn Returns the locked state of the SCROLL LOCK meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isShiftPressed Returns the pressed state of the SHIFT meta key. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isSymPressed()()` Returns the pressed state of the SYM meta key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isSystem()()` Is this a system key? System keys can not be used for menu shortcuts. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isTracking()()` For `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` events, indicates that the event is still being tracked from its initial down event as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_TRACKING:kotlin.Int`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSymPressed Returns the pressed state of the SYM meta key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSystem Is this a system key? System keys can not be used for menu shortcuts. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTracking For `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int` events, indicates that the event is still being tracked from its initial down event as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent#FLAG_TRACKING:kotlin.Int`. |
 | --- | --- |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#keyCodeFromString(kotlin.String)(symbolicName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets a keycode by its symbolic name such as "KEYCODE_A" or an equivalent numeric constant such as "29". |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#keyCodeToString(kotlin.Int)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a string that represents the symbolic name of the specified keycode such as "KEYCODE_A", "KEYCODE_DPAD_UP", or an equivalent numeric constant such as "1001" if unknown. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#metaStateHasModifiers(kotlin.Int,%20kotlin.Int)(metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modifiers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if only the specified modifier keys are pressed according to the specified meta state. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | keyCodeFromString Gets a keycode by its symbolic name such as "KEYCODE_A" or an equivalent numeric constant such as "29". |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | keyCodeToString Returns a string that represents the symbolic name of the specified keycode such as "KEYCODE_A", "KEYCODE_DPAD_UP", or an equivalent numeric constant such as "1001" if unknown. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | metaStateHasModifiers Returns true if only the specified modifier keys are pressed according to the specified meta state. |
 | --- | --- |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#metaStateHasNoModifiers(kotlin.Int)(metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if no modifiers keys are pressed according to the specified meta state. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#normalizeMetaState(kotlin.Int)(metaState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Normalizes the specified meta state. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#setSource(kotlin.Int)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | metaStateHasNoModifiers Returns true if no modifiers keys are pressed according to the specified meta state. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | normalizeMetaState Normalizes the specified meta state. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSource <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#startTracking()()` Call this during `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback#onKeyDown(kotlin.Int,%20android.view.KeyEvent)` to have the system track the key through its final up (possibly including a long press). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startTracking Call this during onKeyDown to have the system track the key through its final up (possibly including a long press). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/view/InputEvent` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/view/InputEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit. <br /> | | `https://developer.android.com/reference/kotlin/android/view/InputDevice!` | `https://developer.android.com/reference/kotlin/android/view/InputEvent#getDevice()()` Gets the device that this event came from. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/android/view/InputEvent#isFromSource(kotlin.Int)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the event is from the given source. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. <br /> | ||
+| From class InputEvent |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit. <br /> | | `https://developer.android.com/reference/kotlin/android/view/InputDevice!` | getDevice Gets the device that this event came from. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | isFromSource Determines whether the event is from the given source. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | writeToParcel Flatten this object in to a Parcel. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -653,7 +653,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_DOWN: Int
 ```
 
-`https://developer.android.com/reference/kotlin/android/view/KeyEvent#getAction()` value: the key has been pressed down.
+getAction value: the key has been pressed down.
 
  Value: 0
 
@@ -666,7 +666,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 static val ACTION_MULTIPLE: Int
 ```
 
-**Deprecated:** *No longer used by the input system. `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getAction()` value: multiple duplicate key events have occurred in a row, or a complex string is being delivered. If the key code is not `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_UNKNOWN:kotlin.Int` then the `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getRepeatCount()` method returns the number of times the given key code should be executed. Otherwise, if the key code is `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_UNKNOWN:kotlin.Int`, then this is a sequence of characters as returned by `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getCharacters()`.*
+**Deprecated:** *No longer used by the input system. getAction value: multiple duplicate key events have occurred in a row, or a complex string is being delivered. If the key code is not `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_UNKNOWN:kotlin.Int` then the getRepeatCount method returns the number of times the given key code should be executed. Otherwise, if the key code is `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_UNKNOWN:kotlin.Int`, then this is a sequence of characters as returned by getCharacters.*
 
  Value: 2
 
@@ -678,7 +678,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_UP: Int
 ```
 
-`https://developer.android.com/reference/kotlin/android/view/KeyEvent#getAction()` value: the key has been released.
+getAction value: the key has been released.
 
  Value: 1
 
@@ -5206,7 +5206,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val MAX_KEYCODE: Int
 ```
 
-**Deprecated:** *There are now more than MAX_KEYCODE keycodes. Use `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMaxKeyCode()` instead.*
+**Deprecated:** *There are now more than MAX_KEYCODE keycodes. Use getMaxKeyCode instead.*
 
  Value: 84
 
@@ -5224,8 +5224,8 @@ This mask is used to check whether the left ALT meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isAltPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isAltPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_ALT_LEFT:kotlin.Int`
 
 ### META_ALT_MASK
@@ -5254,8 +5254,8 @@ This mask is used to check whether one of the ALT meta keys is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isAltPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isAltPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_ALT_LEFT:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_ALT_RIGHT:kotlin.Int`
 
@@ -5273,8 +5273,8 @@ This mask is used to check whether the right the ALT meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isAltPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isAltPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_ALT_RIGHT:kotlin.Int`
 
 ### META_CAPS_LOCK_ON
@@ -5291,8 +5291,8 @@ This mask is used to check whether the CAPS LOCK meta key is on.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCapsLockOn()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isCapsLockOn
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CAPS_LOCK:kotlin.Int`
 
 ### META_CTRL_LEFT_ON
@@ -5309,8 +5309,8 @@ This mask is used to check whether the left CTRL meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCtrlPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isCtrlPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CTRL_LEFT:kotlin.Int`
 
 ### META_CTRL_MASK
@@ -5339,8 +5339,8 @@ This mask is used to check whether one of the CTRL meta keys is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCtrlPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isCtrlPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CTRL_LEFT:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CTRL_RIGHT:kotlin.Int`
 
@@ -5358,8 +5358,8 @@ This mask is used to check whether the right CTRL meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCtrlPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isCtrlPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CTRL_RIGHT:kotlin.Int`
 
 ### META_FUNCTION_ON
@@ -5376,8 +5376,8 @@ This mask is used to check whether the FUNCTION meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isFunctionPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isFunctionPressed
+- getMetaState
 
 ### META_META_LEFT_ON
 
@@ -5393,8 +5393,8 @@ This mask is used to check whether the left META meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isMetaPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isMetaPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_META_LEFT:kotlin.Int`
 
 ### META_META_MASK
@@ -5423,8 +5423,8 @@ This mask is used to check whether one of the META meta keys is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isMetaPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isMetaPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_META_LEFT:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_META_RIGHT:kotlin.Int`
 
@@ -5442,8 +5442,8 @@ This mask is used to check whether the right META meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isMetaPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isMetaPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_META_RIGHT:kotlin.Int`
 
 ### META_NUM_LOCK_ON
@@ -5460,8 +5460,8 @@ This mask is used to check whether the NUM LOCK meta key is on.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isNumLockOn()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isNumLockOn
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_NUM_LOCK:kotlin.Int`
 
 ### META_SCROLL_LOCK_ON
@@ -5478,8 +5478,8 @@ This mask is used to check whether the SCROLL LOCK meta key is on.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isScrollLockOn()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isScrollLockOn
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SCROLL_LOCK:kotlin.Int`
 
 ### META_SHIFT_LEFT_ON
@@ -5496,8 +5496,8 @@ This mask is used to check whether the left SHIFT meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isShiftPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isShiftPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SHIFT_LEFT:kotlin.Int`
 
 ### META_SHIFT_MASK
@@ -5526,8 +5526,8 @@ This mask is used to check whether one of the SHIFT meta keys is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isShiftPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isShiftPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SHIFT_LEFT:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SHIFT_RIGHT:kotlin.Int`
 
@@ -5545,8 +5545,8 @@ This mask is used to check whether the right SHIFT meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isShiftPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isShiftPressed
+- getMetaState
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SHIFT_RIGHT:kotlin.Int`
 
 ### META_SYM_ON
@@ -5563,8 +5563,8 @@ This mask is used to check whether the SYM meta key is pressed.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isSymPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- isSymPressed
+- getMetaState
 
 ## Public constructors
 
@@ -5589,14 +5589,14 @@ KeyEvent(
     newRepeat: Int)
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/KeyEvent#changeTimeRepeat(android.view.KeyEvent,%20kotlin.Long,%20kotlin.Int)` instead.*
+**Deprecated:** *Use changeTimeRepeat instead.*
 
 Copy an existing key event, modifying its time and repeat count.
 
 | Parameters ||
 |---|---|
 | `origEvent` | [KeyEvent](KeyEvent.md)!: The existing event to be copied. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) of the event. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in uptimeMillis) of the event. |
 | `newRepeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new repeat count of the event. |
 | --- | --- |
 
@@ -5633,7 +5633,7 @@ Create a new key event for a string of characters. The key code, action, repeat 
 
 | Parameters ||
 |---|---|
-| `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this event occured. |
+| `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this event occured. |
 | `characters` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The string of characters. |
 | `deviceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The device ID that generated the key event. |
 | --- | --- |
@@ -5656,8 +5656,8 @@ Create a new key event.
 
 | Parameters ||
 |---|---|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this key code originally went down. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this event happened. |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this key code originally went down. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this event happened. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action code: either `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int`. |
 | --- | --- |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
@@ -5681,8 +5681,8 @@ Create a new key event.
 
 | Parameters ||
 |---|---|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this key code originally went down. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this event happened. |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this key code originally went down. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this event happened. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action code: either `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int`. |
 | --- | --- |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
@@ -5710,8 +5710,8 @@ Create a new key event.
 
 | Parameters ||
 |---|---|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this key code originally went down. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this event happened. |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this key code originally went down. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this event happened. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action code: either `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int`. |
 | --- | --- |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
@@ -5742,8 +5742,8 @@ Create a new key event.
 
 | Parameters ||
 |---|---|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this key code originally went down. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this event happened. |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this key code originally went down. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this event happened. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action code: either `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int`. |
 | --- | --- |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
@@ -5777,8 +5777,8 @@ Create a new key event.
 
 | Parameters ||
 |---|---|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this key code originally went down. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) at which this event happened. |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this key code originally went down. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in uptimeMillis) at which this event happened. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Action code: either `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_DOWN:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#ACTION_UP:kotlin.Int`. |
 | --- | --- |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
@@ -5846,7 +5846,7 @@ Create a new key event that is the same as the given one, but whose event time a
 | Parameters ||
 |---|---|
 | `event` | [KeyEvent](KeyEvent.md)!: The existing event to be copied. This is not modified. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) of the event. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in uptimeMillis) of the event. |
 | `newRepeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new repeat count of the event. |
 | --- | --- |
 
@@ -5868,7 +5868,7 @@ Create a new key event that is the same as the given one, but whose event time a
 | Parameters ||
 |---|---|
 | `event` | [KeyEvent](KeyEvent.md)!: The existing event to be copied. This is not modified. |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`) of the event. |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new event time (in uptimeMillis) of the event. |
 | `newRepeat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new repeat count of the event. |
 | --- | --- |
 | `newFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New flags for the event, replacing the entire value in the original event. |
@@ -5882,7 +5882,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 fun dispatch(receiver: KeyEvent.Callback!): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/KeyEvent#dispatch(android.view.KeyEvent.Callback,%20android.view.KeyEvent.DispatcherState,%20kotlin.Any)` instead.*
+**Deprecated:** *Use dispatch instead.*
 
 ### dispatch
 
@@ -5989,11 +5989,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getDownTime(): Long
 ```
 
-Retrieve the time of the most recent key down event, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. If this is a down event, this will be the same as `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getEventTime()`. Note that when chording keys, this value is the down time of the most recently pressed key, which may *not* be the same physical key of this event.
+Retrieve the time of the most recent key down event, in the uptimeMillis time base. If this is a down event, this will be the same as getEventTime. Note that when chording keys, this value is the down time of the most recently pressed key, which may *not* be the same physical key of this event.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Returns the most recent key down time, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Returns the most recent key down time, in the uptimeMillis time base |
 
 ### getEventTime
 
@@ -6003,11 +6003,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getEventTime(): Long
 ```
 
-Retrieve the time this event occurred, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base.
+Retrieve the time this event occurred, in the uptimeMillis time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Returns the time this event occurred, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Returns the time this event occurred, in the uptimeMillis time base. |
 
 ### getFlags
 
@@ -6030,7 +6030,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun getKeyCharacterMap(): KeyCharacterMap!
 ```
 
-Gets the `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap` associated with the keyboard device.
+Gets the KeyCharacterMap associated with the keyboard device.
 
 | Return ||
 |---|---|
@@ -6042,7 +6042,7 @@ Gets the `https://developer.android.com/reference/kotlin/android/view/KeyCharact
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#load(kotlin.Int)`
+- load
 
 ### getKeyCode
 
@@ -6067,7 +6067,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun getKeyData(results: KeyCharacterMap.KeyData!): Boolean
 ```
 
-**Deprecated:** *instead use `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getDisplayLabel()`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getNumber()` or `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getUnicodeChar(kotlin.Int)`.*
+**Deprecated:** *instead use getDisplayLabel, getNumber or getUnicodeChar.*
 
 Get the character conversion data for a given key code.
 
@@ -6089,7 +6089,7 @@ open fun getMatch(chars: CharArray!): Char
 
 Gets the first character in the character array that can be generated by the specified key code.
 
-This is a convenience function that returns the same value as `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMatch(kotlin.CharArray,%20kotlin.Int)`.
+This is a convenience function that returns the same value as getMatch.
 
 | Parameters ||
 |---|---|
@@ -6147,15 +6147,15 @@ Returns the state of the meta keys.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isAltPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isShiftPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isSymPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCtrlPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isMetaPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isFunctionPressed()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isCapsLockOn()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isNumLockOn()`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#isScrollLockOn()`
+- isAltPressed
+- isShiftPressed
+- isSymPressed
+- isCtrlPressed
+- isMetaPressed
+- isFunctionPressed
+- isCapsLockOn
+- isNumLockOn
+- isScrollLockOn
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_ON:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_LEFT_ON:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_ALT_RIGHT_ON:kotlin.Int`
@@ -6173,7 +6173,7 @@ Returns the state of the meta keys.
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_CAPS_LOCK_ON:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_NUM_LOCK_ON:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SCROLL_LOCK_ON:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getModifiers()`
+- getModifiers
 
 ### getModifierMetaStateMask
 
@@ -6203,7 +6203,7 @@ Returns the state of the modifier keys.
 
 For the purposes of this function, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CAPS_LOCK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SCROLL_LOCK:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_NUM_LOCK:kotlin.Int` are not considered modifier keys. Consequently, this function specifically masks out `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_CAPS_LOCK_ON:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SCROLL_LOCK_ON:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_NUM_LOCK_ON:kotlin.Int`.
 
-The value returned consists of the meta state (from `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`) normalized using `https://developer.android.com/reference/kotlin/android/view/KeyEvent#normalizeMetaState(kotlin.Int)` and then masked with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getModifierMetaStateMask()` so that only valid modifier bits are retained.
+The value returned consists of the meta state (from getMetaState) normalized using normalizeMetaState and then masked with getModifierMetaStateMask so that only valid modifier bits are retained.
 
 | Return ||
 |---|---|
@@ -6211,7 +6211,7 @@ The value returned consists of the meta state (from `https://developer.android.c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getMetaState()`
+- getMetaState
 
 ### getNumber
 
@@ -6227,7 +6227,7 @@ The character value is returned, not the numeric value. If the key is not a numb
 
 This method is intended to to support dial pads and other numeric or symbolic entry on keyboards where certain keys serve dual function as alphabetic and symbolic keys. This method returns the number or symbol associated with the key independent of whether the user has pressed the required modifier.
 
-For example, on one particular keyboard the keys on the top QWERTY row generate numbers when ALT is pressed such that ALT-Q maps to '1'. So for that keyboard when `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getNumber()` is called with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_Q:kotlin.Int` it returns '1' so that the user can type numbers without pressing ALT when it makes sense.
+For example, on one particular keyboard the keys on the top QWERTY row generate numbers when ALT is pressed such that ALT-Q maps to '1'. So for that keyboard when getNumber is called with `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_Q:kotlin.Int` it returns '1' so that the user can type numbers without pressing ALT when it makes sense.
 
 | Return ||
 |---|---|
@@ -6285,7 +6285,7 @@ Returns the Unicode character that the specified key would produce when the spec
 
 Returns 0 if the key is not one that is used to type Unicode characters.
 
-If the return value has bit `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT:kotlin.Int` set, the key is a "dead key" that should be combined with another to actually produce a character -- see `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getDeadChar(kotlin.Int,%20kotlin.Int)` -- after masking with `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT_MASK:kotlin.Int`.
+If the return value has bit `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT:kotlin.Int` set, the key is a "dead key" that should be combined with another to actually produce a character -- see getDeadChar -- after masking with `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT_MASK:kotlin.Int`.
 
 | Return ||
 |---|---|
@@ -6305,7 +6305,7 @@ Returns the Unicode character that the specified key would produce when the spec
 
 Returns 0 if the key is not one that is used to type Unicode characters.
 
-If the return value has bit `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT:kotlin.Int` set, the key is a "dead key" that should be combined with another to actually produce a character -- see `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getDeadChar(kotlin.Int,%20kotlin.Int)` -- after masking with `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT_MASK:kotlin.Int`.
+If the return value has bit `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT:kotlin.Int` set, the key is a "dead key" that should be combined with another to actually produce a character -- see getDeadChar -- after masking with `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#COMBINING_ACCENT_MASK:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -6331,7 +6331,7 @@ If the specified modifier mask includes directional modifiers, such as `https://
 
 | Parameters ||
 |---|---|
-| `modifiers` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The meta state of the modifier keys to check. May be a combination of modifier meta states as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getModifierMetaStateMask()`. May be 0 to ensure that no modifier keys are pressed. |
+| `modifiers` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The meta state of the modifier keys to check. May be a combination of modifier meta states as defined by getModifierMetaStateMask. May be 0 to ensure that no modifier keys are pressed. |
 
 | Return ||
 |---|---|
@@ -6343,7 +6343,7 @@ If the specified modifier mask includes directional modifiers, such as `https://
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#metaStateHasModifiers(kotlin.Int,%20kotlin.Int)`
+- metaStateHasModifiers
 
 ### hasNoModifiers
 
@@ -6357,7 +6357,7 @@ Returns true if no modifier keys are pressed.
 
 For the purposes of this function, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CAPS_LOCK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SCROLL_LOCK:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_NUM_LOCK:kotlin.Int` are not considered modifier keys. Consequently, this function ignores `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_CAPS_LOCK_ON:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SCROLL_LOCK_ON:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_NUM_LOCK_ON:kotlin.Int`.
 
-The meta state is normalized prior to comparison using `https://developer.android.com/reference/kotlin/android/view/KeyEvent#normalizeMetaState(kotlin.Int)`.
+The meta state is normalized prior to comparison using normalizeMetaState.
 
 | Return ||
 |---|---|
@@ -6365,7 +6365,7 @@ The meta state is normalized prior to comparison using `https://developer.androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#metaStateHasNoModifiers(kotlin.Int)`
+- metaStateHasNoModifiers
 
 ### isAltPressed
 
@@ -6669,7 +6669,7 @@ Gets a keycode by its symbolic name such as "KEYCODE_A" or an equivalent numeric
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#keyCodeToString(kotlin.Int)`
+- keyCodeToString
 
 ### keyCodeToString
 
@@ -6691,7 +6691,7 @@ Returns a string that represents the symbolic name of the specified keycode such
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap#getDisplayLabel(kotlin.Int)`
+- getDisplayLabel
 
 ### metaStateHasModifiers
 
@@ -6713,7 +6713,7 @@ If the specified modifier mask includes directional modifiers, such as `https://
 | Parameters ||
 |---|---|
 | `metaState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The meta state to consider. |
-| `modifiers` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The meta state of the modifier keys to check. May be a combination of modifier meta states as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent#getModifierMetaStateMask()`. May be 0 to ensure that no modifier keys are pressed. |
+| `modifiers` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The meta state of the modifier keys to check. May be a combination of modifier meta states as defined by getModifierMetaStateMask. May be 0 to ensure that no modifier keys are pressed. |
 
 | Return ||
 |---|---|
@@ -6725,7 +6725,7 @@ If the specified modifier mask includes directional modifiers, such as `https://
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#hasModifiers(kotlin.Int)`
+- hasModifiers
 
 ### metaStateHasNoModifiers
 
@@ -6739,7 +6739,7 @@ Returns true if no modifiers keys are pressed according to the specified meta st
 
 For the purposes of this function, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_CAPS_LOCK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_SCROLL_LOCK:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/KeyEvent#KEYCODE_NUM_LOCK:kotlin.Int` are not considered modifier keys. Consequently, this function ignores `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_CAPS_LOCK_ON:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_SCROLL_LOCK_ON:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/KeyEvent#META_NUM_LOCK_ON:kotlin.Int`.
 
-The meta state is normalized prior to comparison using `https://developer.android.com/reference/kotlin/android/view/KeyEvent#normalizeMetaState(kotlin.Int)`.
+The meta state is normalized prior to comparison using normalizeMetaState.
 
 | Parameters ||
 |---|---|
@@ -6751,7 +6751,7 @@ The meta state is normalized prior to comparison using `https://developer.androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/KeyEvent#hasNoModifiers()`
+- hasNoModifiers
 
 ### normalizeMetaState
 
@@ -6795,7 +6795,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun startTracking(): Unit
 ```
 
-Call this during `https://developer.android.com/reference/kotlin/android/view/KeyEvent.Callback#onKeyDown(kotlin.Int,%20android.view.KeyEvent)` to have the system track the key through its final up (possibly including a long press). Note that only one key can be tracked at a time -- if another key down event is received while a previous one is being tracked, tracking is stopped on the previous event.
+Call this during onKeyDown to have the system track the key through its final up (possibly including a long press). Note that only one key can be tracked at a time -- if another key down event is received while a previous one is being tracked, tracking is stopped on the previous event.
 
 ### toString
 

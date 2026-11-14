@@ -54,20 +54,20 @@ This class is not subclassable
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#CollationKey(kotlin.String,%20kotlin.ByteArray)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` CollationKey constructor. |
+| CollationKey CollationKey constructor. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#compareTo(android.icu.text.CollationKey)(other: https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#!)` Compare this CollationKey to another CollationKey. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#equals(android.icu.text.CollationKey)(target: https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#!)` Compare this CollationKey and the argument target CollationKey for equality. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare this CollationKey and the specified Object for equality. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compare this CollationKey to another CollationKey. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compare this CollationKey and the argument target CollationKey for equality. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compare this CollationKey and the specified Object for equality. |
 | --- | --- |
-| [CollationKey](CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#getBound(kotlin.Int,%20kotlin.Int)(boundType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, noOfLevels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces a bound for the sort order of a given collation key and a strength level. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#getSourceString()()` Return the source string that this CollationKey represents. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#hashCode()()` Returns a hash code for this CollationKey. |
+| [CollationKey](CollationKey.md)! | getBound Produces a bound for the sort order of a given collation key and a strength level. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSourceString Return the source string that this CollationKey represents. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this CollationKey. |
 | --- | --- |
-| [CollationKey](CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#merge(android.icu.text.CollationKey)(source: https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#!)` Merges this CollationKey with another. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#toByteArray()()` Duplicates and returns the value of this CollationKey as a sequence of big-endian bytes terminated by a null. |
+| [CollationKey](CollationKey.md)! | merge Merges this CollationKey with another. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | toByteArray Duplicates and returns the value of this CollationKey as a sequence of big-endian bytes terminated by a null. |
 
 ## Public constructors
 
@@ -81,7 +81,7 @@ CollationKey(
     key: ByteArray!)
 ```
 
-CollationKey constructor. This constructor is given public access, unlike the JDK version, to allow access to users extending the Collator class. See `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getCollationKey(kotlin.String)`.
+CollationKey constructor. This constructor is given public access, unlike the JDK version, to allow access to users extending the Collator class. See getCollationKey.
 
 | Parameters ||
 |---|---|
@@ -90,7 +90,7 @@ CollationKey constructor. This constructor is given public access, unlike the JD
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Collator`
+- Collator
 
 ## Public methods
 
@@ -122,7 +122,7 @@ Compare this CollationKey to another CollationKey. The collation rules of the Co
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Collator#compare(kotlin.String,%20kotlin.String)`
+- compare
 
 ### equals
 
@@ -175,7 +175,7 @@ See note in compareTo(CollationKey) for warnings about possible incorrect result
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#compareTo(android.icu.text.CollationKey)`
+- compareTo
 
 ### getBound
 
@@ -213,7 +213,7 @@ Collation keys produced may be compared using the `compare` API.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#`
+- CollationKey
 - `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey.BoundMode`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#PRIMARY:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#SECONDARY:kotlin.Int`

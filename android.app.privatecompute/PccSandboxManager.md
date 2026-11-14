@@ -16,12 +16,12 @@ Manager for interacting with the Private Compute Core (PCC) sandbox.
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#egressData(android.app.privatecompute.EgressRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressRequest<T>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<T, https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException!>)` Initiates an egress request from a PCC process. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#isPccTrustedSystemComponent(kotlin.Int,%20kotlin.String)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns whether the given package is considered a "Trusted System Component" by the framework. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#isPrivateComputeServicesUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the given UID belongs to a Private Compute Services (PCS) package. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | egressData Initiates an egress request from a PCC process. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPccTrustedSystemComponent Returns whether the given package is considered a "Trusted System Component" by the framework. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPrivateComputeServicesUid Returns whether the given UID belongs to a Private Compute Services (PCS) package. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#startNonPccProcessForDataMigration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult!, https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationException!>)` Requests the framework to start the non-PCC migration service of the calling application. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#writeToAuditLog(android.os.PersistableBundle)(data: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` Writes data to the audit log, if audit mode is enabled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startNonPccProcessForDataMigration Requests the framework to start the non-PCC migration service of the calling application. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToAuditLog Writes data to the audit log, if audit mode is enabled. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ These requests may be subject to rate limits or user consent defined by the OS. 
 | Parameters ||
 |---|---|
 | `request` | [EgressRequest](EgressRequest.md)\<T\>: The base EgressRequest containing the payload and use-case. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor on which the callback should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor on which the callback should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\<T, [PccEgressException](PccEgressException.md)!\>: The callback to receive the EgressResponse containing the status. This value cannot be `null`. |
 | --- | --- |
 
@@ -109,13 +109,13 @@ fun startNonPccProcessForDataMigration(
 
 Requests the framework to start the non-PCC migration service of the calling application.
 
-This is intended for PCC components to trigger a process outside the PCC sandbox to perform tasks like data migration. The system will look for a service extending `https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService` in the application's manifest that is **not** marked as a PCC component. If found, the non-PCC process is started and the service is invoked.
+This is intended for PCC components to trigger a process outside the PCC sandbox to perform tasks like data migration. The system will look for a service extending DataMigrationToPccService in the application's manifest that is **not** marked as a PCC component. If found, the non-PCC process is started and the service is invoked.
 
 If the non-PCC process is already running, this ensures the migration service is triggered. System unbinds from the service either when the service indicates it has accepted/rejected the request, or failing that, after a timeout of `https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService#MIGRATION_TIMEOUT_MS:kotlin.Long`.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MigrationRequestResult](MigrationRequestResult.md)!, [MigrationException](MigrationException.md)!\>: The callback to receive the result of the migration request. This value cannot be `null`. |
 
 ### writeToAuditLog

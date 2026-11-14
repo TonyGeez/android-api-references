@@ -19,7 +19,7 @@ class ChooserTarget : Parcelable
 >
 > For publishing direct share targets, please follow the instructions in https://developer.android.com/training/sharing/receive.html#providing-direct-share-targets instead.
 
-A ChooserTarget represents a deep-link into an application as returned by a `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService`.
+A ChooserTarget represents a deep-link into an application as returned by a ChooserTargetService.
 
 A chooser target represents a specific deep link target into an application exposed for selection by the user. This might be a frequently emailed contact, a recently active group messaging conversation, a folder in a cloud storage app, a collection of related items published on a social media service or any other contextually relevant grouping of target app + relevant metadata.
 
@@ -29,24 +29,24 @@ Creators of chooser targets should consult the relevant design guidelines for th
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#ChooserTarget(kotlin.CharSequence,%20android.graphics.drawable.Icon,%20kotlin.Float,%20android.content.ComponentName,%20android.os.Bundle)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#!, score: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, intentExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Construct a deep link target for presentation by a chooser UI. |
+| ChooserTarget Construct a deep link target for presentation by a chooser UI. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getComponentName()()` Returns the ComponentName of the Activity that should be launched for this ChooserTarget. |
-| [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIcon()()` Returns the icon representing this target for display to a user. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [ComponentName](../android.content/ComponentName.md)! | getComponentName Returns the ComponentName of the Activity that should be launched for this ChooserTarget. |
+| [Icon](../android.graphics.drawable/Icon.md)! | getIcon Returns the icon representing this target for display to a user. |
 | --- | --- |
-| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIntentExtras()()` Returns the Bundle of extras to be added to an intent launched to this target. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getScore()()` Returns the ranking score supplied by the creator of this ChooserTarget. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getTitle()()` Returns the title of this target for display to a user. |
+| [Bundle](../android.os/Bundle.md)! | getIntentExtras Returns the Bundle of extras to be added to an intent launched to this target. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getScore Returns the ranking score supplied by the creator of this ChooserTarget. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getTitle Returns the title of this target for display to a user. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -71,7 +71,7 @@ Construct a deep link target for presentation by a chooser UI.
 
 A target is composed of a title and an icon for presentation to the user. The UI presenting this target may truncate the title if it is too long to be presented in the available space, as well as crop, resize or overlay the supplied icon.
 
-The creator of a target may supply a ranking score. This score is assumed to be relative to the other targets supplied by the same `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#onGetChooserTargets(android.content.ComponentName,%20android.content.IntentFilter)`. Scores should be in the range from 0.0f (unlikely match) to 1.0f (very relevant match). Scores for a set of targets do not need to sum to 1.
+The creator of a target may supply a ranking score. This score is assumed to be relative to the other targets supplied by the same onGetChooserTargets. Scores should be in the range from 0.0f (unlikely match) to 1.0f (very relevant match). Scores for a set of targets do not need to sum to 1.
 
 The ComponentName must be the name of an Activity component in the creator's own package, or an exported component from any other package. You may provide an optional Bundle of extras that will be merged into the final intent before it is sent to the target Activity; use this to add any additional data about the deep link that the target activity will read. e.g. conversation IDs, email addresses, etc.
 
@@ -98,7 +98,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

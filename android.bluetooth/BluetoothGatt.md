@@ -14,7 +14,7 @@ Public API for the Bluetooth GATT Profile.
 
 This class provides Bluetooth GATT functionality to enable communication with Bluetooth Smart or Smart Ready devices.
 
-To connect to a remote peripheral device, create a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback` and call android.bluetooth.BluetoothDevice#connectGatt to get a instance of this class. GATT capable devices can be discovered using the Bluetooth device discovery or BLE scan process.
+To connect to a remote peripheral device, create a BluetoothGattCallback and call android.bluetooth.BluetoothDevice#connectGatt to get a instance of this class. GATT capable devices can be discovered using the Bluetooth device discovery or BLE scan process.
 
 ## Summary
 
@@ -50,7 +50,7 @@ To connect to a remote peripheral device, create a `https://developer.android.co
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#SUBRATE_MODE_SYSTEM_UPDATE:kotlin.Int` Connection Subrate mode - System Update. |
 
-Inherited constants From class `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#A2DP:kotlin.Int`
+Inherited constants From class BluetoothProfile `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#A2DP:kotlin.Int`
 
 Advanced Audio Distribution Profile (A2DP)
 
@@ -72,7 +72,7 @@ This extra represents the previous connection state of the profile of the Blueto
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#EXTRA_PROFILE:kotlin.String`
 
-Extra for the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile` that the intent applies to.
+Extra for the BluetoothProfile that the intent applies to.
 
 This extra represents the Bluetooth profile that the intent applies to.
 
@@ -164,41 +164,41 @@ The profile is in disconnecting state
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#abortReliableWrite()()` Cancels a reliable write transaction for a given device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#abortReliableWrite(android.bluetooth.BluetoothDevice)(mDevice: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!)` For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#beginReliableWrite()()` Initiates a reliable write transaction for a given remote device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | abortReliableWrite Cancels a reliable write transaction for a given device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | abortReliableWrite For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | beginReliableWrite Initiates a reliable write transaction for a given remote device. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#close()()` Close this Bluetooth GATT client. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#connect()()` Connect back to remote device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#disconnect()()` Disconnects an established connection, or cancels a connection attempt currently in progress. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Close this Bluetooth GATT client. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | connect Connect back to remote device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disconnect Disconnects an established connection, or cancels a connection attempt currently in progress. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#discoverServices()()` Discovers services offered by a remote device as well as their characteristics and descriptors. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#executeReliableWrite()()` Executes a reliable write transaction for a given remote device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getConnectedDevices()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | discoverServices Discovers services offered by a remote device as well as their characteristics and descriptors. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | executeReliableWrite Executes a reliable write transaction for a given remote device. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | getConnectedDevices <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getConnectionState(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!)` <br /> |
-| [BluetoothDevice](BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getDevice()()` Return the remote bluetooth device this GATT client targets to |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getConnectionState <br /> |
+| [BluetoothDevice](BluetoothDevice.md)! | getDevice Return the remote bluetooth device this GATT client targets to |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | getDevicesMatchingConnectionStates <br /> |
 | --- | --- |
-| [BluetoothGattService](BluetoothGattService.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getService(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService`, if the requested UUID is supported by the remote device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattService](BluetoothGattService.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getServices()()` Returns a list of GATT services offered by the remote device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)(characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic!)` Reads the requested characteristic from the associated remote device. |
+| [BluetoothGattService](BluetoothGattService.md)! | getService Returns a BluetoothGattService, if the requested UUID is supported by the remote device. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothGattService](BluetoothGattService.md)!\>! | getServices Returns a list of GATT services offered by the remote device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | readCharacteristic Reads the requested characteristic from the associated remote device. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readDescriptor(android.bluetooth.BluetoothGattDescriptor)(descriptor: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor!)` Reads the value for a given descriptor from the associated remote device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readPhy()()` Read the current transmitter PHY and receiver PHY of the connection. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#readRemoteRssi()()` Read the RSSI for a connected remote device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | readDescriptor Reads the value for a given descriptor from the associated remote device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readPhy Read the current transmitter PHY and receiver PHY of the connection. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | readRemoteRssi Read the RSSI for a connected remote device. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#requestConnectionPriority(kotlin.Int)(connectionPriority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Request a connection parameter update. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#requestMtu(kotlin.Int)(mtu: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Request an MTU size used for a given connection. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#requestSubrateMode(kotlin.Int)(subrateMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Request LE subrate mode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestConnectionPriority Request a connection parameter update. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestMtu Request an MTU size used for a given connection. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | requestSubrateMode Request LE subrate mode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#setCharacteristicNotification(android.bluetooth.BluetoothGattCharacteristic,%20kotlin.Boolean)(characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic!, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable notifications/indications for a given characteristic. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#setPreferredPhy(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(txPhy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rxPhy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phyOptions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the preferred connection PHY for this app. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)(characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic!)` Writes a given characteristic and its values to the associated remote device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setCharacteristicNotification Enable or disable notifications/indications for a given characteristic. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPreferredPhy Set the preferred connection PHY for this app. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | writeCharacteristic Writes a given characteristic and its values to the associated remote device. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic,%20kotlin.ByteArray,%20kotlin.Int)(characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, writeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a given characteristic and its values to the associated remote device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeDescriptor(android.bluetooth.BluetoothGattDescriptor)(descriptor: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor!)` Write the value of a given descriptor to the associated remote device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeDescriptor(android.bluetooth.BluetoothGattDescriptor,%20kotlin.ByteArray)(descriptor: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Write the value of a given descriptor to the associated remote device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | writeCharacteristic Writes a given characteristic and its values to the associated remote device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | writeDescriptor Write the value of a given descriptor to the associated remote device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | writeDescriptor Write the value of a given descriptor to the associated remote device. |
 | --- | --- |
 
 ## Constants
@@ -481,7 +481,7 @@ Cancels a reliable write transaction for a given device.
 
 Calling this function will discard all queued characteristic write operations for a given remote device. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 ### abortReliableWrite
@@ -493,9 +493,9 @@ Deprecated in [API level 19](https://developer.android.com/guide/topics/manifest
 fun abortReliableWrite(mDevice: BluetoothDevice!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#abortReliableWrite()`*
+**Deprecated:** *Use abortReliableWrite*
 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 ### beginReliableWrite
@@ -508,11 +508,11 @@ fun beginReliableWrite(): Boolean
 
 Initiates a reliable write transaction for a given remote device.
 
-Once a reliable write transaction has been initiated, all calls to #writeCharacteristic are sent to the remote device for verification and queued up for atomic execution. The application will receive a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onCharacteristicWrite(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattCharacteristic,%20kotlin.Int)` callback in response to every `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic,%20kotlin.ByteArray,%20kotlin.Int)` call and is responsible for verifying if the value has been transmitted accurately.
+Once a reliable write transaction has been initiated, all calls to #writeCharacteristic are sent to the remote device for verification and queued up for atomic execution. The application will receive a onCharacteristicWrite callback in response to every writeCharacteristic call and is responsible for verifying if the value has been transmitted accurately.
 
-After all characteristics have been queued up and verified, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#executeReliableWrite()` will execute all writes. If a characteristic was not written correctly, calling #abortReliableWrite will cancel the current transaction without committing any values on the remote device. 
+After all characteristics have been queued up and verified, executeReliableWrite will execute all writes. If a characteristic was not written correctly, calling #abortReliableWrite will cancel the current transaction without committing any values on the remote device. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -530,7 +530,7 @@ fun close(): Unit
 Close this Bluetooth GATT client.
 
 Application should call this method as early as possible after it is done with this GATT client. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 ### connect
@@ -544,7 +544,7 @@ fun connect(): Boolean
 Connect back to remote device.
 
 This method is used to re-connect to a remote device after the connection has been dropped. If the device is not in range, the re-connection will be triggered once the device is back in range. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -561,7 +561,7 @@ fun disconnect(): Unit
 
 Disconnects an established connection, or cancels a connection attempt currently in progress. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 ### discoverServices
@@ -574,9 +574,9 @@ fun discoverServices(): Boolean
 
 Discovers services offered by a remote device as well as their characteristics and descriptors.
 
-This is an asynchronous operation. Once service discovery is completed, the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onServicesDiscovered(android.bluetooth.BluetoothGatt,%20kotlin.Int)` callback is triggered. If the discovery was successful, the remote services can be retrieved using the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#getServices()` function. 
+This is an asynchronous operation. Once service discovery is completed, the onServicesDiscovered callback is triggered. If the discovery was successful, the remote services can be retrieved using the getServices function. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -595,9 +595,9 @@ Executes a reliable write transaction for a given remote device.
 
 This function will commit all queued up characteristic write operations for a given remote device.
 
-A `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onReliableWriteCompleted(android.bluetooth.BluetoothGatt,%20kotlin.Int)` callback is invoked to indicate whether the transaction has been executed correctly. 
+A onReliableWriteCompleted callback is invoked to indicate whether the transaction has been executed correctly. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -612,7 +612,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun getConnectedDevices(): MutableList<BluetoothDevice!>!
 ```
 
-**Deprecated:** *Not supported - please use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectedDevices(kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int` as argument*
+**Deprecated:** *Not supported - please use getConnectedDevices with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int` as argument*
 
 | Return ||
 |---|---|
@@ -630,7 +630,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun getConnectionState(device: BluetoothDevice!): Int
 ```
 
-**Deprecated:** *Not supported - please use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectedDevices(kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int` as argument*
+**Deprecated:** *Not supported - please use getConnectedDevices with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int` as argument*
 
 | Parameters ||
 |---|---|
@@ -666,7 +666,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun getDevicesMatchingConnectionStates(states: IntArray!): MutableList<BluetoothDevice!>!
 ```
 
-**Deprecated:** *Not supported - please use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getDevicesMatchingConnectionStates(kotlin.Int,%20kotlin.IntArray)` with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int` as first argument*
+**Deprecated:** *Not supported - please use getDevicesMatchingConnectionStates with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile#GATT:kotlin.Int` as first argument*
 
 | Parameters ||
 |---|---|
@@ -688,7 +688,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun getService(uuid: UUID!): BluetoothGattService!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService`, if the requested UUID is supported by the remote device.
+Returns a BluetoothGattService, if the requested UUID is supported by the remote device.
 
 This function requires that service discovery has been completed for the given device.
 
@@ -730,9 +730,9 @@ fun readCharacteristic(characteristic: BluetoothGattCharacteristic!): Boolean
 
 Reads the requested characteristic from the associated remote device.
 
-This is an asynchronous operation. The result of the read operation is reported by the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onCharacteristicRead(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattCharacteristic,%20kotlin.ByteArray,%20kotlin.Int)` callback. 
+This is an asynchronous operation. The result of the read operation is reported by the onCharacteristicRead callback. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -755,7 +755,7 @@ Reads the value for a given descriptor from the associated remote device.
 
 Once the read operation has been completed, the android.bluetooth.BluetoothGattCallback#onDescriptorRead callback is triggered, signaling the result of the operation. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -774,8 +774,8 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun readPhy(): Unit
 ```
 
-Read the current transmitter PHY and receiver PHY of the connection. The values are returned in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onPhyRead(android.bluetooth.BluetoothGatt,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+Read the current transmitter PHY and receiver PHY of the connection. The values are returned in onPhyRead 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 ### readRemoteRssi
@@ -788,9 +788,9 @@ fun readRemoteRssi(): Boolean
 
 Read the RSSI for a connected remote device.
 
-The `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onReadRemoteRssi(android.bluetooth.BluetoothGatt,%20kotlin.Int,%20kotlin.Int)` callback will be invoked when the RSSI value has been read. 
+The onReadRemoteRssi callback will be invoked when the RSSI value has been read. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -808,7 +808,7 @@ fun requestConnectionPriority(connectionPriority: Int): Boolean
 Request a connection parameter update.
 
 This function will send a connection parameter update request to the remote device. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -831,9 +831,9 @@ Request an MTU size used for a given connection. Please note that starting from 
 
 When performing a write request operation (write without response), the data sent is truncated to the MTU size. This function may be used to request a larger MTU size to be able to send more data at once.
 
-A `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onMtuChanged(android.bluetooth.BluetoothGatt,%20kotlin.Int,%20kotlin.Int)` callback will indicate whether this operation was successful. 
+A onMtuChanged callback will indicate whether this operation was successful. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -853,7 +853,7 @@ Request LE subrate mode.
 Configure/Request subrating with this API, sending a subrate request to the remote device based on Subrate Mode. This function should be used in conjunction with requestConnectionPriority to manage link latency and power consumption effectively.
 
 This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or be associated with the Companion Device manager (see android.companion.CompanionDeviceManager#associate(AssociationRequest,android.companion.CompanionDeviceManager.Callback,android.os.Handler)). 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Parameters ||
 |---|---|
@@ -880,9 +880,9 @@ fun setCharacteristicNotification(
 
 Enable or disable notifications/indications for a given characteristic.
 
-Once notifications are enabled for a characteristic, a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onCharacteristicChanged(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattCharacteristic,%20kotlin.ByteArray)` callback will be triggered if the remote device indicates that the given characteristic has changed. 
+Once notifications are enabled for a characteristic, a onCharacteristicChanged callback will be triggered if the remote device indicates that the given characteristic has changed. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -908,8 +908,8 @@ fun setPreferredPhy(
 
 Set the preferred connection PHY for this app. Please note that this is just a recommendation, whether the PHY change will happen depends on other applications preferences, local and remote controller capabilities. Controller can override these settings.
 
-`https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onPhyUpdate(android.bluetooth.BluetoothGatt,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` will be triggered as a result of this call, even if no PHY change happens. It is also triggered when remote device updates the PHY. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+onPhyUpdate will be triggered as a result of this call, even if no PHY change happens. It is also triggered when remote device updates the PHY. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -928,13 +928,13 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun writeCharacteristic(characteristic: BluetoothGattCharacteristic!): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic,%20kotlin.ByteArray,%20kotlin.Int)` as this is not memory safe because it relies on a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic` object whose underlying fields are subject to change outside this method.*
+**Deprecated:** *Use writeCharacteristic as this is not memory safe because it relies on a BluetoothGattCharacteristic object whose underlying fields are subject to change outside this method.*
 
 Writes a given characteristic and its values to the associated remote device.
 
-Once the write operation has been completed, the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onCharacteristicWrite(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattCharacteristic,%20kotlin.Int)` callback is invoked, reporting the result of the operation. 
+Once the write operation has been completed, the onCharacteristicWrite callback is invoked, reporting the result of the operation. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -963,8 +963,8 @@ fun writeCharacteristic(
 
 Writes a given characteristic and its values to the associated remote device.
 
-Once the write operation has been completed, the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onCharacteristicWrite(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattCharacteristic,%20kotlin.Int)` callback is invoked, reporting the result of the operation. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+Once the write operation has been completed, the onCharacteristicWrite callback is invoked, reporting the result of the operation. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -991,13 +991,13 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun writeDescriptor(descriptor: BluetoothGattDescriptor!): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt#writeDescriptor(android.bluetooth.BluetoothGattDescriptor,%20kotlin.ByteArray)` as this is not memory safe because it relies on a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor` object whose underlying fields are subject to change outside this method.*
+**Deprecated:** *Use writeDescriptor as this is not memory safe because it relies on a BluetoothGattDescriptor object whose underlying fields are subject to change outside this method.*
 
 Write the value of a given descriptor to the associated remote device.
 
-A `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onDescriptorWrite(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattDescriptor,%20kotlin.Int)` callback is triggered to report the result of the write operation. 
+A onDescriptorWrite callback is triggered to report the result of the write operation. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1025,8 +1025,8 @@ fun writeDescriptor(
 
 Write the value of a given descriptor to the associated remote device.
 
-A `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback#onDescriptorWrite(android.bluetooth.BluetoothGatt,%20android.bluetooth.BluetoothGattDescriptor,%20kotlin.Int)` callback is triggered to report the result of the write operation. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+A onDescriptorWrite callback is triggered to report the result of the write operation. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||

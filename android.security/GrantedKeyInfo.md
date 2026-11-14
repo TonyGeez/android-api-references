@@ -16,27 +16,27 @@ Information about a key pair granted to an application via KeyChain.
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#GrantedKeyInfo(kotlin.String,%20java.security.cert.X509Certificate)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, certificate: https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#?)` <br /> |
+| GrantedKeyInfo <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getAlias()()` Returns the alias of the granted key pair. |
-| [X509Certificate](../java.security.cert/X509Certificate.md)? | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getCertificate()()` Returns the leaf certificate of the granted key pair, or `null` if no certificate is associated with the alias. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getAlias Returns the alias of the granted key pair. |
+| [X509Certificate](../java.security.cert/X509Certificate.md)? | getCertificate Returns the leaf certificate of the granted key pair, or `null` if no certificate is associated with the alias. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -69,7 +69,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

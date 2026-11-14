@@ -12,13 +12,13 @@ open class RemoteCallbackList<E : IInterface!>
 
 Takes care of the grunt work of maintaining a list of remote interfaces, typically for the use of performing callbacks from a `https://developer.android.com/reference/kotlin/android/app/Service.html#` to its clients. In particular, this:
 
-- Keeps track of a set of registered `https://developer.android.com/reference/kotlin/android/os/IInterface` objects, taking care to identify them through their underlying unique `https://developer.android.com/reference/kotlin/android/os/IBinder` (by calling `https://developer.android.com/reference/kotlin/android/os/IInterface#asBinder()`.
+- Keeps track of a set of registered IInterface objects, taking care to identify them through their underlying unique IBinder (by calling asBinder.
 - Attaches a `https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient` to each registered interface, so that it can be cleaned out of the list if its process goes away.
 - Performs locking of the underlying list of interfaces to deal with multithreaded incoming calls, and a thread-safe way to iterate over a snapshot of the list without holding its lock.
 
 <br />
 
-To use this class, simply create a single instance along with your service, and call its #register and `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)` methods as client register and unregister with your service. To call back on to the registered clients, use `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`, `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()`.
+To use this class, simply create a single instance along with your service, and call its #register and unregister methods as client register and unregister with your service. To call back on to the registered clients, use beginBroadcast, getBroadcastItem, and finishBroadcast.
 
 If a registered interface's process goes away, this class will take care of automatically removing it from the list. If you want to do additional work in this situation, you can create a subclass that implements the #onCallbackDied method.
 
@@ -26,7 +26,7 @@ If a registered interface's process goes away, this class will take care of auto
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList.Builder` Builder for `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#`. |
+| | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList.Builder` Builder for RemoteCallbackList. |
 
 | Constants ||
 |---|---|
@@ -38,32 +38,32 @@ If a registered interface's process goes away, this class will take care of auto
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#RemoteCallbackList()()` Creates a RemoteCallbackList with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_UNSET:kotlin.Int`. |
+| RemoteCallbackList Creates a RemoteCallbackList with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_UNSET:kotlin.Int`. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()()` Use instead to ensure proper handling of frozen processes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#broadcast(java.util.function.Consumer)(callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<E>)` Performs `callback` on each registered interface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()()` Clean up the state of a broadcast previously initiated by calling `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | beginBroadcast Use instead to ensure proper handling of frozen processes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | broadcast Performs `callback` on each registered interface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishBroadcast Clean up the state of a broadcast previously initiated by calling beginBroadcast. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastCookie(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the cookie associated with the item returned by `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`. |
-| open E | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve an item in the active broadcast that was previously started with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. |
-| open [Executor](../java.util.concurrent/Executor.md)? | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getExecutor()()` Returns the executor used when invoking callbacks asynchronously. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getBroadcastCookie Retrieve the cookie associated with the item returned by getBroadcastItem. |
+| open E | getBroadcastItem Retrieve an item in the active broadcast that was previously started with beginBroadcast. |
+| open [Executor](../java.util.concurrent/Executor.md)? | getExecutor Returns the executor used when invoking callbacks asynchronously. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getFrozenCalleePolicy()()` Returns the frozen callee policy. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getMaxQueueSize()()` Returns the max queue size. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackCookie(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return any cookie associated with a currently registered interface. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFrozenCalleePolicy Returns the frozen callee policy. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxQueueSize Returns the max queue size. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getRegisteredCallbackCookie Return any cookie associated with a currently registered interface. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackCount()()` Returns the number of registered interfaces. |
-| open E | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackItem(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a currently registered interface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#kill()()` Disable this interface list. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRegisteredCallbackCount Returns the number of registered interfaces. |
+| open E | getRegisteredCallbackItem Return a currently registered interface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | kill Disable this interface list. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E)(callbackInterface: E)` Old version of `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E,%20kotlin.Any)` that does not provide a cookie. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E,%20kotlin.Any)(callbackInterface: E, cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Called when the process hosting an interface in the list has gone away. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E)(callbackInterface: E)` Simple version of `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E,%20kotlin.Any)` that does not take a cookie object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCallbackDied Old version of onCallbackDied that does not provide a cookie. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCallbackDied Called when the process hosting an interface in the list has gone away. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | register Simple version of register that does not take a cookie object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E,%20kotlin.Any)(callbackInterface: E, cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Add a new interface to the list. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)(callbackInterface: E)` Remove from the list an interface that was previously added with #register. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | register Add a new interface to the list. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | unregister Remove from the list an interface that was previously added with #register. |
 
 ## Constants
 
@@ -144,7 +144,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun beginBroadcast(): Int
 ```
 
-Use instead to ensure proper handling of frozen processes. Prepare to start making calls to the currently registered interfaces. This creates a copy of the interface list, which you can retrieve items from using `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`. Note that only one broadcast can be active at a time, so you must be sure to always call this from the same thread (usually by scheduling with `https://developer.android.com/reference/kotlin/android/os/Handler`) or do your own synchronization. You must call `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()` when done.
+Use instead to ensure proper handling of frozen processes. Prepare to start making calls to the currently registered interfaces. This creates a copy of the interface list, which you can retrieve items from using getBroadcastItem. Note that only one broadcast can be active at a time, so you must be sure to always call this from the same thread (usually by scheduling with Handler) or do your own synchronization. You must call finishBroadcast when done.
 
 A typical loop delivering a broadcast looks like this:
 
@@ -161,11 +161,11 @@ int i = interfaces.beginBroadcast();
   }
   interfaces.finishBroadcast();
 ```
-Note that this method is only supported for `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_UNSET:kotlin.Int`. For other policies use `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#broadcast(java.util.function.Consumer)` instead.
+Note that this method is only supported for `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#FROZEN_CALLEE_POLICY_UNSET:kotlin.Int`. For other policies use broadcast instead.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | Returns the number of interfaces in the broadcast, to be used with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)` to determine the range of indices you can supply. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | Returns the number of interfaces in the broadcast, to be used with getBroadcastItem to determine the range of indices you can supply. |
 
 | Exceptions ||
 |---|---|
@@ -173,8 +173,8 @@ Note that this method is only supported for `https://developer.android.com/refer
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()`
+- getBroadcastItem
+- finishBroadcast
 
 ### broadcast
 
@@ -184,7 +184,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun broadcast(callback: Consumer<E>): Unit
 ```
 
-Performs `callback` on each registered interface. This is equivalent to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`, followed by iterating over the items using `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)` and then `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()`, except that this method supports frozen callee policies.
+Performs `callback` on each registered interface. This is equivalent to beginBroadcast, followed by iterating over the items using getBroadcastItem and then finishBroadcast, except that this method supports frozen callee policies.
 
 | Parameters ||
 |---|---|
@@ -198,10 +198,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun finishBroadcast(): Unit
 ```
 
-Clean up the state of a broadcast previously initiated by calling `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. This must always be called when you are done with a broadcast.
+Clean up the state of a broadcast previously initiated by calling beginBroadcast. This must always be called when you are done with a broadcast.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`
+- beginBroadcast
 
 ### getBroadcastCookie
 
@@ -211,10 +211,10 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 open fun getBroadcastCookie(index: Int): Any!
 ```
 
-Retrieve the cookie associated with the item returned by `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`.
+Retrieve the cookie associated with the item returned by getBroadcastItem.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`
+- getBroadcastItem
 
 ### getBroadcastItem
 
@@ -224,13 +224,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getBroadcastItem(index: Int): E
 ```
 
-Retrieve an item in the active broadcast that was previously started with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. This can *only* be called after the broadcast is started, and its data is no longer valid after calling `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#finishBroadcast()`.
+Retrieve an item in the active broadcast that was previously started with beginBroadcast. This can *only* be called after the broadcast is started, and its data is no longer valid after calling finishBroadcast.
 
-Note that it is possible for the process of one of the returned interfaces to go away before you call it, so you will need to catch `https://developer.android.com/reference/kotlin/android/os/RemoteException` when calling on to the returned object. The interface list itself, however, will take care of unregistering these objects once it detects that it is no longer valid, so you can handle such an exception by simply ignoring it.
+Note that it is possible for the process of one of the returned interfaces to go away before you call it, so you will need to catch RemoteException when calling on to the returned object. The interface list itself, however, will take care of unregistering these objects once it detects that it is no longer valid, so you can handle such an exception by simply ignoring it.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Which of the registered interfaces you would like to retrieve. Ranges from 0 to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`-1, inclusive. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Which of the registered interfaces you would like to retrieve. Ranges from 0 to beginBroadcast-1, inclusive. |
 
 | Return ||
 |---|---|
@@ -238,7 +238,7 @@ Note that it is possible for the process of one of the returned interfaces to go
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`
+- beginBroadcast
 
 ### getExecutor
 
@@ -292,15 +292,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getRegisteredCallbackCookie(index: Int): Any!
 ```
 
-Return any cookie associated with a currently registered interface. Note that this is *not* the same as `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastCookie(kotlin.Int)` and should not be used interchangeably with it. This method returns the current cookie registered at the given index, not the current broadcast state. This means that it is not itself thread-safe: any call to #register or `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)` will change these indices, so you must do your own thread safety between these to protect from such changes.
+Return any cookie associated with a currently registered interface. Note that this is *not* the same as getBroadcastCookie and should not be used interchangeably with it. This method returns the current cookie registered at the given index, not the current broadcast state. This means that it is not itself thread-safe: any call to #register or unregister will change these indices, so you must do your own thread safety between these to protect from such changes.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Index of which registration cookie to return, from 0 to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackCount()` - 1. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Index of which registration cookie to return, from 0 to getRegisteredCallbackCount - 1. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!` | Returns whatever cookie object is associated with this index, or null if `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#kill()` has been called. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!` | Returns whatever cookie object is associated with this index, or null if kill has been called. |
 
 ### getRegisteredCallbackCount
 
@@ -310,7 +310,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun getRegisteredCallbackCount(): Int
 ```
 
-Returns the number of registered interfaces. Note that the number of registered interfaces may differ from the value returned by `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()` since the former returns the number of interfaces registered at the time of the call and the second the number of interfaces to which the broadcast will be delivered.
+Returns the number of registered interfaces. Note that the number of registered interfaces may differ from the value returned by beginBroadcast since the former returns the number of interfaces registered at the time of the call and the second the number of interfaces to which the broadcast will be delivered.
 
 This function is useful to decide whether to schedule a broadcast if this requires doing some work which otherwise would not be performed.
 
@@ -326,15 +326,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getRegisteredCallbackItem(index: Int): E
 ```
 
-Return a currently registered interface. Note that this is *not* the same as `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)` and should not be used interchangeably with it. This method returns the registered interface at the given index, not the current broadcast state. This means that it is not itself thread-safe: any call to #register or `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)` will change these indices, so you must do your own thread safety between these to protect from such changes.
+Return a currently registered interface. Note that this is *not* the same as getBroadcastItem and should not be used interchangeably with it. This method returns the registered interface at the given index, not the current broadcast state. This means that it is not itself thread-safe: any call to #register or unregister will change these indices, so you must do your own thread safety between these to protect from such changes.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Index of which interface registration to return, from 0 to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getRegisteredCallbackCount()` - 1. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Index of which interface registration to return, from 0 to getRegisteredCallbackCount - 1. |
 
 | Return ||
 |---|---|
-| `E` | Returns whatever interface is associated with this index, or null if `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#kill()` has been called. |
+| `E` | Returns whatever interface is associated with this index, or null if kill has been called. |
 
 ### kill
 
@@ -355,7 +355,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onCallbackDied(callbackInterface: E): Unit
 ```
 
-Old version of `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E,%20kotlin.Any)` that does not provide a cookie.
+Old version of onCallbackDied that does not provide a cookie.
 
 ### onCallbackDied
 
@@ -368,12 +368,12 @@ open fun onCallbackDied(
 ): Unit
 ```
 
-Called when the process hosting an interface in the list has gone away. The default implementation calls `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#onCallbackDied(android.os.RemoteCallbackList.E)` for backwards compatibility.
+Called when the process hosting an interface in the list has gone away. The default implementation calls onCallbackDied for backwards compatibility.
 
 | Parameters ||
 |---|---|
 | `callbackInterface` | E: The interface whose process has died. Note that, since its process has died, you can not make any calls on to this interface. You can, however, retrieve its IBinder and compare it with another IBinder to see if it is the same object. |
-| `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The cookie object original provided to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E,%20kotlin.Any)`. |
+| `cookie` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: The cookie object original provided to register. |
 
 **See Also**
 
@@ -385,7 +385,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun register(callbackInterface: E): Boolean
 ```
 
-Simple version of `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#register(android.os.RemoteCallbackList.E,%20kotlin.Any)` that does not take a cookie object.
+Simple version of register that does not take a cookie object.
 
 ### register
 
@@ -398,7 +398,7 @@ open fun register(
 ): Boolean
 ```
 
-Add a new interface to the list. This interface will remain in the list until a corresponding call to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)` or its hosting process goes away. If the interface was already registered (determined by checking to see if the `https://developer.android.com/reference/kotlin/android/os/IInterface#asBinder()` object is already in the list), then it will be replaced with the new interface. Registrations are not counted; a single call to `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)` will remove an interface after any number calls to register it.
+Add a new interface to the list. This interface will remain in the list until a corresponding call to unregister or its hosting process goes away. If the interface was already registered (determined by checking to see if the asBinder object is already in the list), then it will be replaced with the new interface. Registrations are not counted; a single call to unregister will remove an interface after any number calls to register it.
 
 | Parameters ||
 |---|---|
@@ -407,12 +407,12 @@ Add a new interface to the list. This interface will remain in the list until a 
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | Returns true if the interface was successfully added to the list. Returns false if it was not added, either because `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#kill()` had previously been called or the interface's process has gone away. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | Returns true if the interface was successfully added to the list. Returns false if it was not added, either because kill had previously been called or the interface's process has gone away. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#unregister(android.os.RemoteCallbackList.E)`
-- `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#kill()`
+- unregister
+- kill
 
 ### unregister
 
@@ -422,7 +422,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun unregister(callbackInterface: E): Boolean
 ```
 
-Remove from the list an interface that was previously added with #register. This uses the `https://developer.android.com/reference/kotlin/android/os/IInterface#asBinder()` object to correctly find the previous registration. Registrations are not counted; a single unregister call will remove an interface after any number calls to #register for it.
+Remove from the list an interface that was previously added with #register. This uses the asBinder object to correctly find the previous registration. Registrations are not counted; a single unregister call will remove an interface after any number calls to #register for it.
 
 | Parameters ||
 |---|---|

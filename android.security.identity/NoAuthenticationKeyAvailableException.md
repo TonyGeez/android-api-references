@@ -26,8 +26,8 @@ Thrown if no dynamic authentication keys are available.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/NoAuthenticationKeyAvailableException#NoAuthenticationKeyAvailableException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/NoAuthenticationKeyAvailableException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/NoAuthenticationKeyAvailableException#NoAuthenticationKeyAvailableException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/NoAuthenticationKeyAvailableException#` exception. |
+| NoAuthenticationKeyAvailableException Constructs a new NoAuthenticationKeyAvailableException exception. |
+| NoAuthenticationKeyAvailableException Constructs a new NoAuthenticationKeyAvailableException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ NoAuthenticationKeyAvailableException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/NoAuthenticationKeyAvailableException#` exception.
+Constructs a new NoAuthenticationKeyAvailableException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ NoAuthenticationKeyAvailableException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/NoAuthenticationKeyAvailableException#` exception.
+Constructs a new NoAuthenticationKeyAvailableException exception.
 
 | Parameters ||
 |---|---|

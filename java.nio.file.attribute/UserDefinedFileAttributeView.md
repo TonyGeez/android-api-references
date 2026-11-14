@@ -10,25 +10,25 @@ interface UserDefinedFileAttributeView : FileAttributeView
 
 A file attribute view that provides a view of a file's user-defined attributes, sometimes known as *extended attributes*. User-defined file attributes are used to store metadata with a file that is not meaningful to the file system. It is primarily intended for file system implementations that support such a capability directly but may be emulated. The details of such emulation are highly implementation specific and therefore not specified.
 
-This `FileAttributeView` provides a view of a file's user-defined attributes as a set of name/value pairs, where the attribute name is represented by a `String`. An implementation may require to encode and decode from the platform or file system representation when accessing the attribute. The value has opaque content. This attribute view defines the `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#read(kotlin.String,%20java.nio.ByteBuffer)` and `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#write(kotlin.String,%20java.nio.ByteBuffer)` methods to read the value into or write from a `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#`. This `FileAttributeView` is not intended for use where the size of an attribute value is larger than `https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int`.
+This `FileAttributeView` provides a view of a file's user-defined attributes as a set of name/value pairs, where the attribute name is represented by a `String`. An implementation may require to encode and decode from the platform or file system representation when accessing the attribute. The value has opaque content. This attribute view defines the read and write methods to read the value into or write from a `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#`. This `FileAttributeView` is not intended for use where the size of an attribute value is larger than `https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int`.
 
 User-defined attributes may be used in some implementations to store security related attributes so consequently, in the case of the default provider at least, all methods that access user-defined attributes require the `RuntimePermission("accessUserDefinedAttributes")` permission when a security manager is installed.
 
 The java.nio.file.FileStore#supportsFileAttributeView method may be used to test if a specific `https://developer.android.com/reference/kotlin/java/nio/file/FileStore.html#` supports the storage of user-defined attributes.
 
-Where dynamic access to file attributes is required, the `https://developer.android.com/reference/kotlin/java/nio/file/Files.html#getAttribute(java.nio.file.Path,%20kotlin.String,%20java.nio.file.LinkOption)` method may be used to read the attribute value. The attribute value is returned as a byte array (byte\[\]). The `https://developer.android.com/reference/kotlin/java/nio/file/Files.html#setAttribute(java.nio.file.Path,%20kotlin.String,%20kotlin.Any,%20java.nio.file.LinkOption)` method may be used to write the value of a user-defined attribute from a buffer (as if by invoking the `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#write(kotlin.String,%20java.nio.ByteBuffer)` method), or byte array (byte\[\]).
+Where dynamic access to file attributes is required, the getAttribute method may be used to read the attribute value. The attribute value is returned as a byte array (byte\[\]). The setAttribute method may be used to write the value of a user-defined attribute from a buffer (as if by invoking the write method), or byte array (byte\[\]).
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#delete(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Deletes a user-defined attribute. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#list()()` Returns a list containing the names of the user-defined attributes. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#name()()` Returns the name of this attribute view. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | delete Deletes a user-defined attribute. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | list Returns a list containing the names of the user-defined attributes. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | name Returns the name of this attribute view. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#read(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Read the value of a user-defined attribute into a buffer. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#size(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the size of the value of a user-defined attribute. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#write(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Writes the value of a user-defined attribute from a buffer. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Read the value of a user-defined attribute into a buffer. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Returns the size of the value of a user-defined attribute. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | write Writes the value of a user-defined attribute from a buffer. |
 | --- | --- |
 
 ## Public methods
@@ -50,7 +50,7 @@ Deletes a user-defined attribute.
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | If an I/O error occurs or the attribute does not exist |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String)` method denies write access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its checkWrite method denies write access to the file. |
 
 ### list
 
@@ -69,7 +69,7 @@ Returns a list containing the names of the user-defined attributes.
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | If an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String)` method denies read access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its checkRead method denies read access to the file. |
 
 ### name
 
@@ -126,12 +126,12 @@ UserDefinedFileAttributeView view =
 |---|---|
 | `java.io.IOException` | If an I/O error occurs or there is insufficient space in the destination buffer for the attribute value |
 | `java.lang.IllegalArgumentException` | If the destination buffer is read-only |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String)` method denies read access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its checkRead method denies read access to the file. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserDefinedFileAttributeView#size(kotlin.String)`
+- size
 
 ### size
 
@@ -155,7 +155,7 @@ Returns the size of the value of a user-defined attribute.
 |---|---|
 | `java.io.IOException` | If an I/O error occurs |
 | `java.lang.ArithmeticException` | If the size of the attribute is larger than `https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int` |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String)` method denies read access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its checkRead method denies read access to the file. |
 | --- | --- |
 
 ### write
@@ -198,4 +198,4 @@ UserDefinedFileAttributeView view =
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | If an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String)` method denies write access to the file. |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, and it denies `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission.html#``("accessUserDefinedAttributes")` or its checkWrite method denies write access to the file. |

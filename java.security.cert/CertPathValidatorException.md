@@ -16,9 +16,9 @@ open class CertPathValidatorException : GeneralSecurityException
 
 An exception indicating one of a variety of problems encountered when validating a certification path.
 
-A `CertPathValidatorException` provides support for wrapping exceptions. The `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method returns the throwable, if any, that caused this exception to be thrown.
+A `CertPathValidatorException` provides support for wrapping exceptions. The getCause method returns the throwable, if any, that caused this exception to be thrown.
 
-A `CertPathValidatorException` may also include the certification path that was being validated when the exception was thrown, the index of the certificate in the certification path that caused the exception to be thrown, and the reason that caused the failure. Use the `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getCertPath()`, `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getIndex()`, and `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getReason()` methods to retrieve this information.
+A `CertPathValidatorException` may also include the certification path that was being validated when the exception was thrown, the index of the certificate in the certification path that caused the exception to be thrown, and the reason that caused the failure. Use the getCertPath, getIndex, and getReason methods to retrieve this information.
 
 **Concurrent Access**
 
@@ -33,18 +33,18 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#CertPathValidatorException()()` Creates a `CertPathValidatorException` with no detail message. |
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#CertPathValidatorException(kotlin.String)(msg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a `CertPathValidatorException` with the given detail message. |
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#CertPathValidatorException(kotlin.String,%20kotlin.Throwable)(msg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Creates a `CertPathValidatorException` with the specified detail message and cause. |
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#CertPathValidatorException(kotlin.String,%20kotlin.Throwable,%20java.security.cert.CertPath,%20kotlin.Int)(msg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, certPath: https://developer.android.com/reference/kotlin/java/security/cert/CertPath!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `CertPathValidatorException` with the specified detail message, cause, certification path, and index. |
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#CertPathValidatorException(kotlin.String,%20kotlin.Throwable,%20java.security.cert.CertPath,%20kotlin.Int,%20java.security.cert.CertPathValidatorException.Reason)(msg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, certPath: https://developer.android.com/reference/kotlin/java/security/cert/CertPath!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, reason: https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException.Reason!)` Creates a `CertPathValidatorException` with the specified detail message, cause, certification path, index, and reason. |
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#CertPathValidatorException(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Creates a `CertPathValidatorException` that wraps the specified throwable. |
+| CertPathValidatorException Creates a `CertPathValidatorException` with no detail message. |
+| CertPathValidatorException Creates a `CertPathValidatorException` with the given detail message. |
+| CertPathValidatorException Creates a `CertPathValidatorException` with the specified detail message and cause. |
+| CertPathValidatorException Creates a `CertPathValidatorException` with the specified detail message, cause, certification path, and index. |
+| CertPathValidatorException Creates a `CertPathValidatorException` with the specified detail message, cause, certification path, index, and reason. |
+| CertPathValidatorException Creates a `CertPathValidatorException` that wraps the specified throwable. |
 
 | Public methods ||
 |---|---|
-| open [CertPath](CertPath.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getCertPath()()` Returns the certification path that was being validated when the exception was thrown. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getIndex()()` Returns the index of the certificate in the certification path that caused the exception to be thrown. |
-| open [CertPathValidatorException.Reason](../java/security/cert/CertPathValidatorException.Reason.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getReason()()` Returns the reason that the validation failed. |
+| open [CertPath](CertPath.md)! | getCertPath Returns the certification path that was being validated when the exception was thrown. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIndex Returns the index of the certificate in the certification path that caused the exception to be thrown. |
+| open [CertPathValidatorException.Reason](../java/security/cert/CertPathValidatorException.Reason.md)! | getReason Returns the reason that the validation failed. |
 | --- | --- |
 
 ## Public constructors
@@ -88,7 +88,7 @@ Creates a `CertPathValidatorException` with the specified detail message and cau
 | Parameters ||
 |---|---|
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### CertPathValidatorException
 
@@ -160,7 +160,7 @@ Creates a `CertPathValidatorException` that wraps the specified throwable. This 
 
 | Parameters ||
 |---|---|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ## Public methods
 
@@ -200,7 +200,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getReason(): CertPathValidatorException.Reason!
 ```
 
-Returns the reason that the validation failed. The reason is associated with the index of the certificate returned by `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorException#getIndex()`.
+Returns the reason that the validation failed. The reason is associated with the index of the certificate returned by getIndex.
 
 | Return ||
 |---|---|

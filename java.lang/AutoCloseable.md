@@ -76,7 +76,7 @@ Known Direct Subclasses [AppInteractionSession](../android.app/AppInteractionSes
 [SyncFence](../android.hardware/SyncFence.md) A SyncFence represents a synchronization primitive which signals when hardware units have completed work on a particular resource.
 [TranscodingSession](../android.media.metrics/TranscodingSession.md) An instances of this class represents a session of media Transcoding.
 [TransportHandle](../android.ranging.oob/TransportHandle.md) TransportHandle is used as the Out-Of-Band (OOB) transport mechanism by ranging module.
-[TypedArray](../android.content.res/TypedArray.md) Container for an array of values that were retrieved with `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#obtainAttributes(android.util.AttributeSet,%20kotlin.IntArray)`.
+[TypedArray](../android.content.res/TypedArray.md) Container for an array of values that were retrieved with obtainStyledAttributes or obtainAttributes.
 [VolumeShaper](../android.media/VolumeShaper.md) The `VolumeShaper` class is used to automatically control audio volume during media playback, allowing simple implementation of transition effects and ducking.
 [WifiAwareSession](../android.net.wifi.aware/WifiAwareSession.md) This class represents a Wi-Fi Aware session - an attachment to the Wi-Fi Aware service through which the app can execute discovery operations.
 [WifiManager.LocalOnlyHotspotReservation](../android/net/wifi/WifiManager.LocalOnlyHotspotReservation.md) LocalOnlyHotspotReservation that contains the `https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration.html#` for the active LocalOnlyHotspot request.
@@ -120,7 +120,7 @@ Known Indirect Subclasses [AbstractCursor](../android.database/AbstractCursor.md
 [ByteChannel](../java.nio.channels/ByteChannel.md) A channel that can read and write bytes.
 [CallableStatement](../java.sql/CallableStatement.md) The interface used to execute SQL stored procedures.
 [CameraConstrainedHighSpeedCaptureSession](../android.hardware.camera2/CameraConstrainedHighSpeedCaptureSession.md) A constrained high speed capture session for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`, used for capturing high speed images from the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#` for high speed video recording use case.
-[CameraOfflineSession](../android.hardware.camera2/CameraOfflineSession.md) A camera capture session that was switched to offline mode via successful call to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.html#switchToOffline(kotlin.collections.MutableCollection,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraOfflineSession.CameraOfflineSessionCallback)`.
+[CameraOfflineSession](../android.hardware.camera2/CameraOfflineSession.md) A camera capture session that was switched to offline mode via successful call to switchToOffline.
 [Channel](../java.nio.channels/Channel.md) A nexus for I/O operations.
 [Channel](../android.se.omapi/Channel.md) Instances of this class represent an ISO/IEC 7816-4 channel opened to a Secure Element.
 [CharArrayReader](../java.io/CharArrayReader.md) This class implements a character buffer that can be used as a character-input stream.
@@ -195,7 +195,7 @@ Known Indirect Subclasses [AbstractCursor](../android.database/AbstractCursor.md
 [MatrixCursor](../android.database/MatrixCursor.md) A mutable cursor implementation backed by an array of `Object`s.
 [MediaDataSource](../android.media/MediaDataSource.md) For supplying media data to the framework.
 [MergeCursor](../android.database/MergeCursor.md) A convenience class that lets you present an array of Cursors as a single linear Cursor.
-[MidiDevice](../android.media.midi/MidiDevice.md) This class is used for sending and receiving data to and from a MIDI device Instances of this class are created by `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.html#openDevice(android.media.midi.MidiDeviceInfo,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler)`.
+[MidiDevice](../android.media.midi/MidiDevice.md) This class is used for sending and receiving data to and from a MIDI device Instances of this class are created by openDevice.
 [MidiDevice.MidiConnection](../android/media/midi/MidiDevice.MidiConnection.md) This class represents a connection between the output port of one device and the input port of another.
 [MidiInputPort](../android.media.midi/MidiInputPort.md) This class is used for sending data to a port on a MIDI device
 [MidiOutputPort](../android.media.midi/MidiOutputPort.md) This class is used for receiving data from a port on a MIDI device
@@ -216,12 +216,12 @@ Known Indirect Subclasses [AbstractCursor](../android.database/AbstractCursor.md
 [ObjectInputStream](../java.io/ObjectInputStream.md) An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream.
 [ObjectOutputStream](../java.io/ObjectOutputStream.md) An ObjectOutputStream writes primitive data types and graphs of Java objects to an OutputStream.
 [ObjectOutputStream](../java.io/ObjectOutputStream.md) An ObjectOutputStream writes primitive data types and graphs of Java objects to an OutputStream.
-[OpenBlobForReadResponse](../android.app.appsearch/OpenBlobForReadResponse.md) The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#openBlobForRead(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
-[OpenBlobForWriteResponse](../android.app.appsearch/OpenBlobForWriteResponse.md) The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#openBlobForWrite(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[OpenBlobForReadResponse](../android.app.appsearch/OpenBlobForReadResponse.md) The response to provide batch operation results of openBlobForRead.
+[OpenBlobForWriteResponse](../android.app.appsearch/OpenBlobForWriteResponse.md) The response to provide batch operation results of openBlobForWrite.
 [OutputStream](../java.io/OutputStream.md) This abstract class is the superclass of all classes representing an output stream of bytes.
 [OutputStreamWriter](../java.io/OutputStreamWriter.md) An OutputStreamWriter is a bridge from character streams to byte streams: Characters written to it are encoded into bytes using a specified `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#`.
 [PackageInstaller.Session](../android/content/pm/PackageInstaller.Session.md) An installation that is being actively staged.
-[ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) The FileDescriptor returned by `https://developer.android.com/reference/kotlin/android/os/Parcel.html#readFileDescriptor()`, allowing you to close it when done with it.
+[ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) The FileDescriptor returned by readFileDescriptor, allowing you to close it when done with it.
 [ParcelFileDescriptor.AutoCloseInputStream](../android/os/ParcelFileDescriptor.AutoCloseInputStream.md) An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android.
 [ParcelFileDescriptor.AutoCloseOutputStream](../android/os/ParcelFileDescriptor.AutoCloseOutputStream.md) An OutputStream you can create on a ParcelFileDescriptor, which will take care of calling android.
 [PerformanceHintManager.Session](../android/os/PerformanceHintManager.Session.md) A Session represents a group of threads with an inter-related workload such that hints for their performance should be considered as a unit.
@@ -307,13 +307,13 @@ Known Indirect Subclasses [AbstractCursor](../android.database/AbstractCursor.md
 [ZipInputStream](../java.util.zip/ZipInputStream.md) This class implements an input stream filter for reading files in the ZIP file format.
 [ZipOutputStream](../java.util.zip/ZipOutputStream.md) This class implements an output stream filter for writing files in the ZIP file format.
 
-An object that may hold resources (such as file or socket handles) until it is closed. The `https://developer.android.com/reference/kotlin/java/lang/AutoCloseable#close()` method of an `AutoCloseable` object is called automatically when exiting a `try`-with-resources block for which the object has been declared in the resource specification header. This construction ensures prompt release, avoiding resource exhaustion exceptions and errors that may otherwise occur.
+An object that may hold resources (such as file or socket handles) until it is closed. The close method of an `AutoCloseable` object is called automatically when exiting a `try`-with-resources block for which the object has been declared in the resource specification header. This construction ensures prompt release, avoiding resource exhaustion exceptions and errors that may otherwise occur.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/AutoCloseable#close()()` Closes this resource, relinquishing any underlying resources. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes this resource, relinquishing any underlying resources. |
 
 ## Public methods
 

@@ -13,7 +13,7 @@ abstract class CellInfo : Parcelable
 | --- | --- |
 | ↳ | [android.telephony.CellInfo](CellInfo.md) |
 
-| Known Direct Subclasses [CellInfoCdma](CellInfoCdma.md), [CellInfoGsm](CellInfoGsm.md), [CellInfoLte](CellInfoLte.md), [CellInfoNr](CellInfoNr.md), [CellInfoTdscdma](CellInfoTdscdma.md), [CellInfoWcdma](CellInfoWcdma.md) |---|---| | [CellInfoCdma](CellInfoCdma.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a CDMA cell that provides identity and measurement info. | | [CellInfoGsm](CellInfoGsm.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a GSM cell that provides identity and measurement info. | | [CellInfoLte](CellInfoLte.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an LTE cell that provides identity and measurement info. | | [CellInfoNr](CellInfoNr.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing an 5G NR cell that provides identity and measurement info. | | [CellInfoTdscdma](CellInfoTdscdma.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a TD-SCDMA cell that provides identity and measurement info. | | [CellInfoWcdma](CellInfoWcdma.md) | A `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#` representing a WCDMA cell that provides identity and measurement info. | |
+| Known Direct Subclasses [CellInfoCdma](CellInfoCdma.md), [CellInfoGsm](CellInfoGsm.md), [CellInfoLte](CellInfoLte.md), [CellInfoNr](CellInfoNr.md), [CellInfoTdscdma](CellInfoTdscdma.md), [CellInfoWcdma](CellInfoWcdma.md) |---|---| | [CellInfoCdma](CellInfoCdma.md) | A CellInfo representing a CDMA cell that provides identity and measurement info. | | [CellInfoGsm](CellInfoGsm.md) | A CellInfo representing a GSM cell that provides identity and measurement info. | | [CellInfoLte](CellInfoLte.md) | A CellInfo representing an LTE cell that provides identity and measurement info. | | [CellInfoNr](CellInfoNr.md) | A CellInfo representing an 5G NR cell that provides identity and measurement info. | | [CellInfoTdscdma](CellInfoTdscdma.md) | A CellInfo representing a TD-SCDMA cell that provides identity and measurement info. | | [CellInfoWcdma](CellInfoWcdma.md) | A CellInfo representing a WCDMA cell that provides identity and measurement info. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Immutable cell information from a point in time.
@@ -33,24 +33,24 @@ Immutable cell information from a point in time.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#describeContents()()` Implement the Parcelable interface |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellConnectionStatus()()` Gets the connection status of this cell. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Implement the Parcelable interface |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCellConnectionStatus Gets the connection status of this cell. |
 | --- | --- |
-| abstract [CellIdentity](CellIdentity.md) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellIdentity()()` <br /> |
-| abstract [CellSignalStrength](CellSignalStrength.md) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getCellSignalStrength()()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimeStamp()()` Approximate time this cell information was received from the modem. |
+| abstract [CellIdentity](CellIdentity.md) | getCellIdentity <br /> |
+| abstract [CellSignalStrength](CellSignalStrength.md) | getCellSignalStrength <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimeStamp Approximate time this cell information was received from the modem. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimestampMillis()()` Approximate time this cell information was received from the modem. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#hashCode()()` Returns a hash code value for the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#isRegistered()()` True if the phone is registered to a mobile network that provides service on this cell and this cell is being used or would be used for network signaling. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimestampMillis Approximate time this cell information was received from the modem. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRegistered True if the phone is registered to a mobile network that provides service on this cell and this cell is being used or would be used for network signaling. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#toString()()` Returns a string representation of the object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Implement the Parcelable interface |
 
 | Properties ||
 |---|---|
@@ -207,7 +207,7 @@ abstract fun getCellIdentity(): CellIdentity
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/CellIdentity` | a `https://developer.android.com/reference/kotlin/android/telephony/CellIdentity` instance. This value cannot be `null`. |
+| CellIdentity | a CellIdentity instance. This value cannot be `null`. |
 
 ### getCellSignalStrength
 
@@ -219,7 +219,7 @@ abstract fun getCellSignalStrength(): CellSignalStrength
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength` | a `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrength` instance. This value cannot be `null`. |
+| CellSignalStrength | a CellSignalStrength instance. This value cannot be `null`. |
 
 ### getTimeStamp
 
@@ -230,7 +230,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun getTimeStamp(): Long
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimestampMillis()` instead.*
+**Deprecated:** *Use getTimestampMillis instead.*
 
 Approximate time this cell information was received from the modem.
 
@@ -247,11 +247,11 @@ open fun getTimestampMillis(): Long
 ```
 
 Approximate time this cell information was received from the modem. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` time base.
+Value is a non-negative timestamp in the elapsedRealtime time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | a time stamp in millis since boot. Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | a time stamp in millis since boot. Value is a non-negative timestamp in the elapsedRealtime time base. |
 
 ### hashCode
 
@@ -266,8 +266,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

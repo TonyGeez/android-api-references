@@ -14,38 +14,38 @@ SparseIntArrays map integers to integers. Unlike a normal array of integers, the
 
 Note that this container keeps its mappings in an array data structure, using a binary search to find keys. The implementation is not intended to be appropriate for data structures that may contain large numbers of items. It is generally slower than a traditional HashMap, since lookups require a binary search and adds and removes require inserting and deleting entries in the array. For containers holding up to hundreds of items, the performance difference is not significant, less than 50%.
 
-It is possible to iterate over the items in this container using `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#keyAt(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#valueAt(kotlin.Int)`. Iterating over the keys using `keyAt(int)` with ascending values of the index will return the keys in ascending order, or the values corresponding to the keys in ascending order in the case of `valueAt(int)`.
+It is possible to iterate over the items in this container using keyAt and valueAt. Iterating over the keys using `keyAt(int)` with ascending values of the index will return the keys in ascending order, or the values corresponding to the keys in ascending order in the case of `valueAt(int)`.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#SparseIntArray()()` Creates a new SparseIntArray containing no mappings. |
-| `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#SparseIntArray(kotlin.Int)(initialCapacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new SparseIntArray containing no mappings that will not require any additional memory allocation to store the specified number of mappings. |
+| SparseIntArray Creates a new SparseIntArray containing no mappings. |
+| SparseIntArray Creates a new SparseIntArray containing no mappings that will not require any additional memory allocation to store the specified number of mappings. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#append(kotlin.Int,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#clear()()` Removes all key-value mappings from this SparseIntArray. |
-| open [SparseIntArray](SparseIntArray.md) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#clone()()` Creates and returns a copy of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | append Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Removes all key-value mappings from this SparseIntArray. |
+| open [SparseIntArray](SparseIntArray.md) | clone Creates and returns a copy of this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#compute(kotlin.Int,%20java.util.function.IntBinaryOperator)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, function: https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)` Attempts to compute a new mapped value for the specified key based on its current mapped value (or 0 if there is no current mapping). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#delete(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping from the specified key, if there was any. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#get(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the int mapped from the specified key, or `0` if no such mapping has been made. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compute Attempts to compute a new mapped value for the specified key based on its current mapped value (or 0 if there is no current mapping). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | delete Removes the mapping from the specified key, if there was any. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get Gets the int mapped from the specified key, or `0` if no such mapping has been made. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#get(kotlin.Int,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, valueIfKeyNotFound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the int mapped from the specified key, or the specified value if no such mapping has been made. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#indexOfKey(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index for which `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#keyAt(kotlin.Int)` would return the specified key, or a negative number if the specified key is not mapped. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#indexOfValue(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an index for which `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#valueAt(kotlin.Int)` would return the specified key, or a negative number if no keys map to the specified value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get Gets the int mapped from the specified key, or the specified value if no such mapping has been made. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOfKey Returns the index for which keyAt would return the specified key, or a negative number if the specified key is not mapped. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOfValue Returns an index for which valueAt would return the specified key, or a negative number if no keys map to the specified value. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#keyAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given an index in the range `0...size()-1`, returns the key from the `index`th key-value mapping that this SparseIntArray stores. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#put(kotlin.Int,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds a mapping from the specified key to the specified value, replacing the previous mapping from the specified key if there was one. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#removeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping at the given index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | keyAt Given an index in the range `0...size()-1`, returns the key from the `index`th key-value mapping that this SparseIntArray stores. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | put Adds a mapping from the specified key to the specified value, replacing the previous mapping from the specified key if there was one. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeAt Removes the mapping at the given index. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#setValueAt(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Directly set the value at a particular index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#size()()` Returns the number of key-value mappings that this SparseIntArray currently stores. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#toString()()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setValueAt Directly set the value at a particular index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Returns the number of key-value mappings that this SparseIntArray currently stores. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#valueAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given an index in the range `0...size()-1`, returns the value from the `index`th key-value mapping that this SparseIntArray stores. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | valueAt Given an index in the range `0...size()-1`, returns the value from the `index`th key-value mapping that this SparseIntArray stores. |
 
 ## Public constructors
 
@@ -127,7 +127,7 @@ By convention, the object returned by this method should be independent of this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#` | a clone of this instance. |
+| SparseIntArray | a clone of this instance. |
 
 | Exceptions ||
 |---|---|
@@ -196,7 +196,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun indexOfKey(key: Int): Int
 ```
 
-Returns the index for which `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#keyAt(kotlin.Int)` would return the specified key, or a negative number if the specified key is not mapped.
+Returns the index for which keyAt would return the specified key, or a negative number if the specified key is not mapped.
 
 ### indexOfValue
 
@@ -206,7 +206,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun indexOfValue(value: Int): Int
 ```
 
-Returns an index for which `https://developer.android.com/reference/kotlin/android/util/SparseIntArray#valueAt(kotlin.Int)` would return the specified key, or a negative number if no keys map to the specified value. Beware that this is a linear search, unlike lookups by key, and that multiple keys can map to the same value and this will find only one of them.
+Returns an index for which valueAt would return the specified key, or a negative number if no keys map to the specified value. Beware that this is a linear search, unlike lookups by key, and that multiple keys can map to the same value and this will find only one of them.
 
 ### keyAt
 

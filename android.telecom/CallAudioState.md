@@ -30,27 +30,27 @@ Encapsulates the telecom audio state, including the current audio routing, suppo
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#CallAudioState(kotlin.Boolean,%20kotlin.Int,%20kotlin.Int)(muted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, route: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, supportedRouteMask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructor for a `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#` object. |
+| CallAudioState Constructor for a CallAudioState object. |
 
 | Public methods ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#audioRouteToString(kotlin.Int)(route: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts the provided audio route into a human readable string representation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | audioRouteToString Converts the provided audio route into a human readable string representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [BluetoothDevice](../android.bluetooth/BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getActiveBluetoothDevice()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getRoute()()` <br /> |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BluetoothDevice](../android.bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedBluetoothDevices()()` <br /> |
+| [BluetoothDevice](../android.bluetooth/BluetoothDevice.md)! | getActiveBluetoothDevice <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRoute <br /> |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [BluetoothDevice](../android.bluetooth/BluetoothDevice.md)!\>! | getSupportedBluetoothDevices <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getSupportedRouteMask()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#isMuted()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#toString()()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSupportedRouteMask <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMuted <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#writeToParcel(android.os.Parcel,%20kotlin.Int)(destination: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes AudioState object into a serializeable Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Writes AudioState object into a serializeable Parcel. |
 
 | Properties ||
 |---|---|
@@ -143,7 +143,7 @@ CallAudioState(
     supportedRouteMask: Int)
 ```
 
-Constructor for a `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#` object.
+Constructor for a CallAudioState object.
 
 | Parameters ||
 |---|---|
@@ -180,7 +180,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -224,7 +224,7 @@ fun getActiveBluetoothDevice(): BluetoothDevice!
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#!` | The `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#` through which audio is being routed. Will not be `null` if `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#getRoute()` returns `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int`. |
+| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#!` | The `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#` through which audio is being routed. Will not be `null` if getRoute returns `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState#ROUTE_BLUETOOTH:kotlin.Int`. |
 
 ### getRoute
 

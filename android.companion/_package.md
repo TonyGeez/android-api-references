@@ -9,7 +9,7 @@
 
 | [ActionRequest](../android/companion/ActionRequest.md) | Represents a request for a companion app to perform a specific action. |
 | --- | --- |
-| [ActionResult](ActionResult.md) | A result reported by a companion app in response to an `https://developer.android.com/reference/kotlin/android/companion/ActionRequest`. |
+| [ActionResult](ActionResult.md) | A result reported by a companion app in response to an ActionRequest. |
 | [AssociatedDevice](AssociatedDevice.md) | Container for device info from an association that is not self-managed. |
 | [AssociationInfo](AssociationInfo.md) | Details for a specific "association" that has been established between an app and companion device. |
 | --- | --- |

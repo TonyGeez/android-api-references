@@ -47,15 +47,15 @@ Device needs to be populated by users of the API. Metadata fields not provided b
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getDisplayName()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getManufacturer()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getDisplayName <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getManufacturer <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getModel()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getType()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#getUdi()()` Returns the UDI (Unique Device Identifier), a unique numeric or alphanumeric code assigned to a medical device, of this `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#` instance. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getModel <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getUdi Returns the UDI (Unique Device Identifier), a unique numeric or alphanumeric code assigned to a medical device, of this Device instance. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Constants
 
@@ -363,7 +363,7 @@ Also in [U Extensions 23](https://developer.android.com/sdkExtensions)
 fun getUdi(): String?
 ```
 
-Returns the UDI (Unique Device Identifier), a unique numeric or alphanumeric code assigned to a medical device, of this `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device#` instance.
+Returns the UDI (Unique Device Identifier), a unique numeric or alphanumeric code assigned to a medical device, of this Device instance.
 
 The identifier is entirely "self-declared" by the device or app writing the data. Health Connect acts as a passive data store; it does not cross-reference this ID against the FDA's GUDID database or any other regulatory registry to ensure the device is legitimate. The presence of a UDI indicates that the data source is a Registered Medical Device. However, it does not guarantee specific FDA Clearance or Approval. Data Readers should use the UDI to query the GUDID database if they need to filter by Regulatory Class (I, II, or III) or intended use.
 

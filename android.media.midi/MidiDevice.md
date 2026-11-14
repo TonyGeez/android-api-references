@@ -13,7 +13,7 @@ class MidiDevice : Closeable
 | --- | --- |
 | ↳ | [android.media.midi.MidiDevice](MidiDevice.md) |
 
-This class is used for sending and receiving data to and from a MIDI device Instances of this class are created by `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager#openDevice(android.media.midi.MidiDeviceInfo,%20android.media.midi.MidiManager.OnDeviceOpenedListener,%20android.os.Handler)`.
+This class is used for sending and receiving data to and from a MIDI device Instances of this class are created by openDevice.
 
 ## Summary
 
@@ -23,18 +23,18 @@ This class is used for sending and receiving data to and from a MIDI device Inst
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#close()()` Closes this stream and releases any system resources associated with it. |
-| [MidiDevice.MidiConnection](../android/media/midi/MidiDevice.MidiConnection.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#connectPorts(android.media.midi.MidiInputPort,%20kotlin.Int)(inputPort: https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort!, outputPortNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connects the supplied `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` to the output port of this device with the specified port number. |
-| [MidiDeviceInfo](MidiDeviceInfo.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#getInfo()()` Returns a `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` object, which describes this device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes this stream and releases any system resources associated with it. |
+| [MidiDevice.MidiConnection](../android/media/midi/MidiDevice.MidiConnection.md)! | connectPorts Connects the supplied MidiInputPort to the output port of this device with the specified port number. |
+| [MidiDeviceInfo](MidiDeviceInfo.md)! | getInfo Returns a MidiDeviceInfo object, which describes this device. |
 | --- | --- |
-| [MidiInputPort](MidiInputPort.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#openInputPort(kotlin.Int)(portNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` for the specified port number. |
-| [MidiOutputPort](MidiOutputPort.md)! | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#openOutputPort(kotlin.Int)(portNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort` for the specified port number. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#toString()()` Returns a string representation of the object. |
+| [MidiInputPort](MidiInputPort.md)! | openInputPort Called to open a MidiInputPort for the specified port number. |
+| [MidiOutputPort](MidiOutputPort.md)! | openOutputPort Called to open a MidiOutputPort for the specified port number. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public methods
 
@@ -48,7 +48,7 @@ fun close(): Unit
 
 Closes this stream and releases any system resources associated with it. If the stream is already closed then invoking this method has no effect.
 
-As noted in `https://developer.android.com/reference/kotlin/java/lang/AutoCloseable.html#close()`, cases where the close may fail require careful attention. It is strongly advised to relinquish the underlying resources and to internally *mark* the `Closeable` as closed, prior to throwing the `IOException`.
+As noted in close, cases where the close may fail require careful attention. It is strongly advised to relinquish the underlying resources and to internally *mark* the `Closeable` as closed, prior to throwing the `IOException`.
 
 | Exceptions ||
 |---|---|
@@ -66,7 +66,7 @@ fun connectPorts(
 ): MidiDevice.MidiConnection!
 ```
 
-Connects the supplied `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` to the output port of this device with the specified port number. Once the connection is made, the MidiInput port instance can no longer receive data via its `https://developer.android.com/reference/kotlin/android/media/midi/MidiReceiver#onSend(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long)` method. This method returns a `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice.MidiConnection` object, which can be used to close the connection.
+Connects the supplied MidiInputPort to the output port of this device with the specified port number. Once the connection is made, the MidiInput port instance can no longer receive data via its onSend method. This method returns a `https://developer.android.com/reference/kotlin/android/media/midi/MidiDevice.MidiConnection` object, which can be used to close the connection.
 
 | Parameters ||
 |---|---|
@@ -85,11 +85,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getInfo(): MidiDeviceInfo!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` object, which describes this device.
+Returns a MidiDeviceInfo object, which describes this device.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo!` | the `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo` object |
+| `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceInfo!` | the MidiDeviceInfo object |
 
 ### openInputPort
 
@@ -99,7 +99,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun openInputPort(portNumber: Int): MidiInputPort!
 ```
 
-Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` for the specified port number. An input port can only be used by one sender at a time. Opening an input port will fail if another application has already opened it for use. A `https://developer.android.com/reference/kotlin/android/media/midi/MidiDeviceStatus` can be used to determine if an input port is already open.
+Called to open a MidiInputPort for the specified port number. An input port can only be used by one sender at a time. Opening an input port will fail if another application has already opened it for use. A MidiDeviceStatus can be used to determine if an input port is already open.
 
 | Parameters ||
 |---|---|
@@ -107,7 +107,7 @@ Called to open a `https://developer.android.com/reference/kotlin/android/media/m
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort!` | the `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort` if the open is successful, or null in case of failure. |
+| `https://developer.android.com/reference/kotlin/android/media/midi/MidiInputPort!` | the MidiInputPort if the open is successful, or null in case of failure. |
 
 ### openOutputPort
 
@@ -117,7 +117,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun openOutputPort(portNumber: Int): MidiOutputPort!
 ```
 
-Called to open a `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort` for the specified port number. An output port may be opened by multiple applications.
+Called to open a MidiOutputPort for the specified port number. An output port may be opened by multiple applications.
 
 | Parameters ||
 |---|---|
@@ -125,7 +125,7 @@ Called to open a `https://developer.android.com/reference/kotlin/android/media/m
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort!` | the `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort` if the open is successful, or null in case of failure. |
+| `https://developer.android.com/reference/kotlin/android/media/midi/MidiOutputPort!` | the MidiOutputPort if the open is successful, or null in case of failure. |
 
 ### toString
 

@@ -18,11 +18,11 @@ abstract class ActionProvider
 
 An ActionProvider defines rich menu interaction in a single component. ActionProvider can generate action views for use in the action bar, dynamically populate submenus of a MenuItem, and handle default menu item invocations.
 
-An ActionProvider can be optionally specified for a `https://developer.android.com/reference/kotlin/android/view/MenuItem` and will be responsible for creating the action view that appears in the `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#` in place of a simple button in the bar. When the menu item is presented in a way that does not allow custom action views, (e.g. in an overflow menu,) the ActionProvider can perform a default action.
+An ActionProvider can be optionally specified for a MenuItem and will be responsible for creating the action view that appears in the `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#` in place of a simple button in the bar. When the menu item is presented in a way that does not allow custom action views, (e.g. in an overflow menu,) the ActionProvider can perform a default action.
 
 There are two ways to use an action provider:
 
-- Set the action provider on a `https://developer.android.com/reference/kotlin/android/view/MenuItem` directly by calling `https://developer.android.com/reference/kotlin/android/view/MenuItem#setActionProvider(android.view.ActionProvider)`.
+- Set the action provider on a MenuItem directly by calling setActionProvider.
 - Declare the action provider in an XML menu resource. For example:
 
   ```kotlin
@@ -41,25 +41,25 @@ There are two ways to use an action provider:
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/view/ActionProvider.VisibilityListener` Listens to changes in visibility as reported by `https://developer.android.com/reference/kotlin/android/view/ActionProvider#refreshVisibility()`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/view/ActionProvider.VisibilityListener` Listens to changes in visibility as reported by refreshVisibility. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/ActionProvider#ActionProvider(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Creates a new instance. |
+| ActionProvider Creates a new instance. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#hasSubMenu()()` Determines if this ActionProvider has a submenu associated with it. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()()` If `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()` returns true, the return value of this method will help determine the visibility of the `https://developer.android.com/reference/kotlin/android/view/MenuItem` this ActionProvider is bound to. |
-| abstract [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView()()` Factory method called by the Android framework to create new action views. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSubMenu Determines if this ActionProvider has a submenu associated with it. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVisible If overridesItemVisibility returns true, the return value of this method will help determine the visibility of the MenuItem this ActionProvider is bound to. |
+| abstract [View](View.md) | onCreateActionView Factory method called by the Android framework to create new action views. |
 | --- | --- |
-| open [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView(android.view.MenuItem)(forItem: https://developer.android.com/reference/kotlin/android/view/MenuItem)` Factory method called by the Android framework to create new action views. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onPerformDefaultAction()()` Performs an optional default action. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onPrepareSubMenu(android.view.SubMenu)(subMenu: https://developer.android.com/reference/kotlin/android/view/SubMenu)` Called to prepare an associated submenu for the menu item backed by this ActionProvider. |
+| open [View](View.md) | onCreateActionView Factory method called by the Android framework to create new action views. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onPerformDefaultAction Performs an optional default action. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPrepareSubMenu Called to prepare an associated submenu for the menu item backed by this ActionProvider. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()()` The result of this method determines whether or not `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()` will be used by the `https://developer.android.com/reference/kotlin/android/view/MenuItem` this ActionProvider is bound to help determine its visibility. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#refreshVisibility()()` If this ActionProvider is associated with an item in a menu, refresh the visibility of the item based on `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()` and `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#setVisibilityListener(android.view.ActionProvider.VisibilityListener)(listener: https://developer.android.com/reference/kotlin/android/view/ActionProvider.VisibilityListener?)` Set a listener to be notified when this ActionProvider's overridden visibility changes. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | overridesItemVisibility The result of this method determines whether or not isVisible will be used by the MenuItem this ActionProvider is bound to help determine its visibility. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | refreshVisibility If this ActionProvider is associated with an item in a menu, refresh the visibility of the item based on overridesItemVisibility and isVisible. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVisibilityListener Set a listener to be notified when this ActionProvider's overridden visibility changes. |
 | --- | --- |
 
 ## Public constructors
@@ -90,7 +90,7 @@ open fun hasSubMenu(): Boolean
 
 Determines if this ActionProvider has a submenu associated with it.
 
-Associated submenus will be shown when an action view is not. This provider instance will receive a call to `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onPrepareSubMenu(android.view.SubMenu)` after the call to `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onPerformDefaultAction()` and before a submenu is displayed to the user.
+Associated submenus will be shown when an action view is not. This provider instance will receive a call to onPrepareSubMenu after the call to onPerformDefaultAction and before a submenu is displayed to the user.
 
 | Return ||
 |---|---|
@@ -104,7 +104,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun isVisible(): Boolean
 ```
 
-If `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()` returns true, the return value of this method will help determine the visibility of the `https://developer.android.com/reference/kotlin/android/view/MenuItem` this ActionProvider is bound to.
+If overridesItemVisibility returns true, the return value of this method will help determine the visibility of the MenuItem this ActionProvider is bound to.
 
 If the MenuItem's visibility is explicitly set to false by the application, the MenuItem will not be shown, even if this method returns true.
 
@@ -121,15 +121,15 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 abstract fun onCreateActionView(): View
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView(android.view.MenuItem)`*
+**Deprecated:** *use onCreateActionView*
 
 Factory method called by the Android framework to create new action views.
 
-This method has been deprecated in favor of `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView(android.view.MenuItem)`. Newer apps that wish to support platform versions prior to API 16 should also implement this method to return a valid action view.
+This method has been deprecated in favor of onCreateActionView. Newer apps that wish to support platform versions prior to API 16 should also implement this method to return a valid action view.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/View` | A new action view. This value cannot be `null`. |
+| View | A new action view. This value cannot be `null`. |
 
 ### onCreateActionView
 
@@ -141,7 +141,7 @@ open fun onCreateActionView(forItem: MenuItem): View
 
 Factory method called by the Android framework to create new action views. This method returns a new action view for the given MenuItem.
 
-If your ActionProvider implementation overrides the deprecated no-argument overload `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView()`, overriding this method for devices running API 16 or later is recommended but optional. The default implementation calls `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView()` for compatibility with applications written for older platform versions.
+If your ActionProvider implementation overrides the deprecated no-argument overload onCreateActionView, overriding this method for devices running API 16 or later is recommended but optional. The default implementation calls onCreateActionView for compatibility with applications written for older platform versions.
 
 | Parameters ||
 |---|---|
@@ -149,7 +149,7 @@ If your ActionProvider implementation overrides the deprecated no-argument overl
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/View` | the new action view. This value cannot be `null`. |
+| View | the new action view. This value cannot be `null`. |
 
 ### onPerformDefaultAction
 
@@ -165,10 +165,10 @@ For the case of an action provider placed in a menu item not shown as an action 
 
 A menu item selection is processed in the following order:
 
-- Receiving a call to `https://developer.android.com/reference/kotlin/android/view/MenuItem.OnMenuItemClickListener#onMenuItemClick(android.view.MenuItem)`.
-- Receiving a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#onOptionsItemSelected(android.view.MenuItem)`
-- Receiving a call to `https://developer.android.com/reference/kotlin/android/app/Fragment.html#onOptionsItemSelected(android.view.MenuItem)`
-- Launching the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` set via `https://developer.android.com/reference/kotlin/android/view/MenuItem#setIntent(android.content.Intent)`
+- Receiving a call to onMenuItemClick.
+- Receiving a call to onOptionsItemSelected
+- Receiving a call to onOptionsItemSelected
+- Launching the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` set via setIntent
 - Invoking this method.
 
 <br />
@@ -185,7 +185,7 @@ open fun onPrepareSubMenu(subMenu: SubMenu): Unit
 
 Called to prepare an associated submenu for the menu item backed by this ActionProvider.
 
-if `https://developer.android.com/reference/kotlin/android/view/ActionProvider#hasSubMenu()` returns true, this method will be called when the menu item is selected to prepare the submenu for presentation to the user. Apps may use this to create or alter submenu content right before display.
+if hasSubMenu returns true, this method will be called when the menu item is selected to prepare the submenu for presentation to the user. Apps may use this to create or alter submenu content right before display.
 
 | Parameters ||
 |---|---|
@@ -199,7 +199,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun overridesItemVisibility(): Boolean
 ```
 
-The result of this method determines whether or not `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()` will be used by the `https://developer.android.com/reference/kotlin/android/view/MenuItem` this ActionProvider is bound to help determine its visibility.
+The result of this method determines whether or not isVisible will be used by the MenuItem this ActionProvider is bound to help determine its visibility.
 
 | Return ||
 |---|---|
@@ -207,7 +207,7 @@ The result of this method determines whether or not `https://developer.android.c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()`
+- isVisible
 
 ### refreshVisibility
 
@@ -217,7 +217,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun refreshVisibility(): Unit
 ```
 
-If this ActionProvider is associated with an item in a menu, refresh the visibility of the item based on `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()` and `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()`. If `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()` returns false, this call will have no effect.
+If this ActionProvider is associated with an item in a menu, refresh the visibility of the item based on overridesItemVisibility and isVisible. If overridesItemVisibility returns false, this call will have no effect.
 
 ### setVisibilityListener
 

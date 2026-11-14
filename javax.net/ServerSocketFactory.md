@@ -21,16 +21,16 @@ Like socket factories, server Socket factory instances have methods used to crea
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#ServerSocketFactory()()` Creates a server socket factory. |
+| ServerSocketFactory Creates a server socket factory. |
 
 | Public methods ||
 |---|---|
-| open [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket()()` Returns an unbound server socket. |
-| abstract [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a server socket bound to the specified port. |
-| abstract [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int,%20kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a server socket bound to the specified port, and uses the specified connection backlog. |
+| open [ServerSocket](../java.net/ServerSocket.md)! | createServerSocket Returns an unbound server socket. |
+| abstract [ServerSocket](../java.net/ServerSocket.md)! | createServerSocket Returns a server socket bound to the specified port. |
+| abstract [ServerSocket](../java.net/ServerSocket.md)! | createServerSocket Returns a server socket bound to the specified port, and uses the specified connection backlog. |
 | --- | --- |
-| abstract [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int,%20kotlin.Int,%20java.net.InetAddress)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ifAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!)` Returns a server socket bound to the specified port, with a specified listen backlog and local IP. |
-| open static [ServerSocketFactory](ServerSocketFactory.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#getDefault()()` Returns a copy of the environment's default socket factory. |
+| abstract [ServerSocket](../java.net/ServerSocket.md)! | createServerSocket Returns a server socket bound to the specified port, with a specified listen backlog and local IP. |
+| open static [ServerSocketFactory](ServerSocketFactory.md)! | getDefault Returns a copy of the environment's default socket factory. |
 
 ## Protected constructors
 
@@ -66,9 +66,9 @@ Returns an unbound server socket. The socket is configured with the socket optio
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#bind(java.net.SocketAddress)`
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#bind(java.net.SocketAddress,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#ServerSocket()`
+- bind
+- bind
+- ServerSocket
 
 ### createServerSocket
 
@@ -99,8 +99,8 @@ If there is a security manager, its `checkListen` method is called with the `por
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkListen(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#ServerSocket(kotlin.Int)`
+- checkListen
+- ServerSocket
 
 ### createServerSocket
 
@@ -137,8 +137,8 @@ If there is a security manager, its `checkListen` method is called with the `por
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkListen(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#ServerSocket(kotlin.Int,%20kotlin.Int)`
+- checkListen
+- ServerSocket
 
 ### createServerSocket
 
@@ -180,8 +180,8 @@ If there is a security manager, its `checkListen` method is called with the `por
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkListen(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#ServerSocket(kotlin.Int,%20kotlin.Int,%20java.net.InetAddress)`
+- checkListen
+- ServerSocket
 
 ### getDefault
 

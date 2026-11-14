@@ -19,7 +19,7 @@ Updates AppWidget state; gets information about installed AppWidget providers an
 > For more information about creating app widgets, read the [App Widgets](https://developer.android.com/guide/topics/appwidgets/index.html) developer guide.
 
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_APP_WIDGETS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_APP_WIDGETS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 <br />
 
@@ -27,7 +27,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_BIND:kotlin.String` Activity action to launch from your `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHost` activity when you want to bind an AppWidget to display and bindAppWidgetIdIfAllowed returns false. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_BIND:kotlin.String` Activity action to launch from your AppWidgetHost activity when you want to bind an AppWidget to display and bindAppWidgetIdIfAllowed returns false. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_CONFIGURE:kotlin.String` Sent when it is time to configure your AppWidget while it is being added to a host. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_DELETED:kotlin.String` Sent when an instance of an AppWidget is deleted from its host. |
 | --- | --- |
@@ -36,8 +36,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_HOST_RESTORED:kotlin.String` Sent to widget hosts after AppWidget state related to the host has been restored from backup. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_OPTIONS_CHANGED:kotlin.String` Sent when the custom extras for an AppWidget change. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_PICK:kotlin.String` Activity action to launch from your `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHost` activity when you want to pick an AppWidget to display. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_RESTORED:kotlin.String` Sent to an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider` after AppWidget state related to that provider has been restored from backup. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_PICK:kotlin.String` Activity action to launch from your AppWidgetHost activity when you want to pick an AppWidget to display. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_RESTORED:kotlin.String` Sent to an AppWidgetProvider after AppWidget state related to that provider has been restored from backup. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_UPDATE:kotlin.String` Sent when it is time to update your AppWidget. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_ID:kotlin.String` An intent extra (int) that contains one appWidgetId. |
@@ -45,13 +45,13 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_OLD_IDS:kotlin.String` An intent extra that contains multiple appWidgetIds. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_OPTIONS:kotlin.String` An intent extra which points to a bundle of extra information for a particular widget id. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_PREVIEW:kotlin.String` An extra that can be passed to `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_PREVIEW:kotlin.String` An extra that can be passed to requestPinAppWidget. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_PROVIDER:kotlin.String` An intent extra that contains the component name of a AppWidget provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_APPWIDGET_PROVIDER_PROFILE:kotlin.String` An intent extra that contains the user handle of the profile under which an AppWidget provider is registered. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_CUSTOM_EXTRAS:kotlin.String` An intent extra to pass to the AppWidget picker containing a `https://developer.android.com/reference/kotlin/java/util/List.html#` of `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` objects to mix in to the list of AppWidgets that are installed. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_CUSTOM_INFO:kotlin.String` An intent extra to pass to the AppWidget picker containing a `https://developer.android.com/reference/kotlin/java/util/List.html#` of `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo` objects to mix in to the list of AppWidgets that are installed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_CUSTOM_INFO:kotlin.String` An intent extra to pass to the AppWidget picker containing a `https://developer.android.com/reference/kotlin/java/util/List.html#` of AppWidgetProviderInfo objects to mix in to the list of AppWidgets that are installed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#EXTRA_HOST_ID:kotlin.String` An intent extra attached to the `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_HOST_RESTORED:kotlin.String` broadcast, indicating the integer ID of the host whose widgets have just been restored. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#INVALID_APPWIDGET_ID:kotlin.Int` A sentinel value that the AppWidget manager will never return as a appWidgetId. |
 | --- | --- |
@@ -70,39 +70,39 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#bindAppWidgetIdIfAllowed(kotlin.Int,%20android.content.ComponentName)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Set the component for a given appWidgetId. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#bindAppWidgetIdIfAllowed(kotlin.Int,%20android.content.ComponentName,%20android.os.Bundle)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set the component for a given appWidgetId. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#bindAppWidgetIdIfAllowed(kotlin.Int,%20android.os.UserHandle,%20android.content.ComponentName,%20android.os.Bundle)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!, provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set the provider for a given appWidgetId if the caller has a permission. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindAppWidgetIdIfAllowed Set the component for a given appWidgetId. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindAppWidgetIdIfAllowed Set the component for a given appWidgetId. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindAppWidgetIdIfAllowed Set the provider for a given appWidgetId if the caller has a permission. |
 | --- | --- |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getAppWidgetIds(android.content.ComponentName)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Get the list of appWidgetIds that have been bound to the given AppWidget provider. |
-| open [AppWidgetProviderInfo](AppWidgetProviderInfo.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getAppWidgetInfo(kotlin.Int)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo` for the specified AppWidget. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getAppWidgetOptions(kotlin.Int)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the extras associated with a given widget instance. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getAppWidgetIds Get the list of appWidgetIds that have been bound to the given AppWidget provider. |
+| open [AppWidgetProviderInfo](AppWidgetProviderInfo.md)! | getAppWidgetInfo Returns the AppWidgetProviderInfo for the specified AppWidget. |
+| open [Bundle](../android.os/Bundle.md)! | getAppWidgetOptions Get the extras associated with a given widget instance. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getInstalledProviders()()` Return a list of the AppWidget providers that are currently installed. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getInstalledProvidersForPackage(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, profile: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#?)` Gets the AppWidget providers for the given package and user profile. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getInstalledProvidersForProfile(android.os.UserHandle)(profile: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#?)` Gets the AppWidget providers for the given user profile. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!\>! | getInstalledProviders Return a list of the AppWidget providers that are currently installed. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!\> | getInstalledProvidersForPackage Gets the AppWidget providers for the given package and user profile. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!\> | getInstalledProvidersForProfile Gets the AppWidget providers for the given user profile. |
 | --- | --- |
-| open static [AppWidgetManager](AppWidgetManager.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Get the AppWidgetManager instance to use for the supplied `https://developer.android.com/reference/kotlin/android/content/Context.html#` object. |
-| open [RemoteViews](../android.widget/RemoteViews.md)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getWidgetPreview(android.content.ComponentName,%20android.os.UserHandle,%20kotlin.Int)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, profile: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#?, widgetCategory: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the RemoteViews previews for this widget. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#isRequestPinAppWidgetSupported()()` Returns `true` if the default launcher supports `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)`. |
+| open static [AppWidgetManager](AppWidgetManager.md)! | getInstance Get the AppWidgetManager instance to use for the supplied `https://developer.android.com/reference/kotlin/android/content/Context.html#` object. |
+| open [RemoteViews](../android.widget/RemoteViews.md)? | getWidgetPreview Get the RemoteViews previews for this widget. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRequestPinAppWidgetSupported Returns `true` if the default launcher supports requestPinAppWidget. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#notifyAppWidgetViewDataChanged(kotlin.Int,%20kotlin.Int)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notifies the specified collection view in the specified AppWidget instance to invalidate its data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#notifyAppWidgetViewDataChanged(kotlin.IntArray,%20kotlin.Int)(appWidgetIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notifies the specified collection view in all the specified AppWidget instances to invalidate their data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.Int,%20android.widget.RemoteViews)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, views: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#!)` Perform an incremental update or command on the widget specified by appWidgetId. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyAppWidgetViewDataChanged Notifies the specified collection view in the specified AppWidget instance to invalidate its data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyAppWidgetViewDataChanged Notifies the specified collection view in all the specified AppWidget instances to invalidate their data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | partiallyUpdateAppWidget Perform an incremental update or command on the widget specified by appWidgetId. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)(appWidgetIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, views: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#!)` Perform an incremental update or command on the widget(s) specified by appWidgetIds. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetEvent](AppWidgetEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#queryAppWidgetEvents(kotlin.Long,%20kotlin.Long)(beginTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Query for app widget interaction events in the given time range. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#removeWidgetPreview(android.content.ComponentName,%20kotlin.Int)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, widgetCategories: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove this provider's preview for the specified widget categories. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | partiallyUpdateAppWidget Perform an incremental update or command on the widget(s) specified by appWidgetIds. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppWidgetEvent](AppWidgetEvent.md)!\> | queryAppWidgetEvents Query for app widget interaction events in the given time range. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeWidgetPreview Remove this provider's preview for the specified widget categories. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, successCallback: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?)` Request to pin an app widget on the current launcher. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#setWidgetPreview(android.content.ComponentName,%20kotlin.Int,%20android.widget.RemoteViews)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, widgetCategories: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, preview: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#)` Set a preview for this widget. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(android.content.ComponentName,%20android.widget.RemoteViews)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, views: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#!)` Set the RemoteViews to use for all AppWidget instances for the supplied AppWidget provider. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestPinAppWidget Request to pin an app widget on the current launcher. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setWidgetPreview Set a preview for this widget. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAppWidget Set the RemoteViews to use for all AppWidget instances for the supplied AppWidget provider. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.Int,%20android.widget.RemoteViews)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, views: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#!)` Set the RemoteViews to use for the specified appWidgetId. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)(appWidgetIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, views: https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#!)` Set the RemoteViews to use for the specified appWidgetIds. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidgetOptions(kotlin.Int,%20android.os.Bundle)(appWidgetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Update the extras for a given widget instance. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAppWidget Set the RemoteViews to use for the specified appWidgetId. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAppWidget Set the RemoteViews to use for the specified appWidgetIds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAppWidgetOptions Update the extras for a given widget instance. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidgetProviderInfo(android.content.ComponentName,%20kotlin.String)(provider: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, metaDataKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Updates the info for the supplied AppWidget provider. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAppWidgetProviderInfo Updates the info for the supplied AppWidget provider. |
 
 ## Constants
 
@@ -114,7 +114,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_APPWIDGET_BIND: String
 ```
 
-Activity action to launch from your `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHost` activity when you want to bind an AppWidget to display and bindAppWidgetIdIfAllowed returns false.
+Activity action to launch from your AppWidgetHost activity when you want to bind an AppWidget to display and bindAppWidgetIdIfAllowed returns false.
 
 You must supply the following extras:
 
@@ -144,7 +144,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_APPWIDGET_CONFIGURE: String
 ```
 
-Sent when it is time to configure your AppWidget while it is being added to a host. This action is not sent as a broadcast to the AppWidget provider, but as a startActivity to the activity specified in the `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo`.
+Sent when it is time to configure your AppWidget while it is being added to a host. This action is not sent as a broadcast to the AppWidget provider, but as a startActivity to the activity specified in the AppWidgetProviderInfo.
 
 The intent will contain the following extras:
 
@@ -171,7 +171,7 @@ This is a protected intent that can only be sent by the system.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onDeleted(android.content.Context,%20kotlin.IntArray)`
+- onDeleted
 
 ### ACTION_APPWIDGET_DISABLED
 
@@ -189,7 +189,7 @@ This is a protected intent that can only be sent by the system.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onEnabled(android.content.Context)`
+- onEnabled
 
 ### ACTION_APPWIDGET_ENABLED
 
@@ -207,7 +207,7 @@ This is a protected intent that can only be sent by the system.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onEnabled(android.content.Context)`
+- onEnabled
 
 ### ACTION_APPWIDGET_HOST_RESTORED
 
@@ -250,7 +250,7 @@ This is a protected intent that can only be sent by the system.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onAppWidgetOptionsChanged(android.content.Context,%20android.appwidget.AppWidgetManager,%20kotlin.Int,%20android.os.Bundle)`
+- onAppWidgetOptionsChanged
 
 ### ACTION_APPWIDGET_PICK
 
@@ -260,7 +260,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_APPWIDGET_PICK: String
 ```
 
-Activity action to launch from your `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHost` activity when you want to pick an AppWidget to display. The AppWidget picker activity will be launched.
+Activity action to launch from your AppWidgetHost activity when you want to pick an AppWidget to display. The AppWidget picker activity will be launched.
 
 You must supply the following extras:
 
@@ -288,7 +288,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_APPWIDGET_RESTORED: String
 ```
 
-Sent to an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider` after AppWidget state related to that provider has been restored from backup. The intent contains information about how to translate AppWidget ids from the restored data to their new equivalents.
+Sent to an AppWidgetProvider after AppWidget state related to that provider has been restored from backup. The intent contains information about how to translate AppWidget ids from the restored data to their new equivalents.
 
 The intent will contain the following extras:
 
@@ -325,7 +325,7 @@ The intent will contain the following extras:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProvider#onUpdate(android.content.Context,%20android.appwidget.AppWidgetManager,%20kotlin.IntArray)`
+- onUpdate
 
 ### EXTRA_APPWIDGET_ID
 
@@ -389,7 +389,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_APPWIDGET_PREVIEW: String
 ```
 
-An extra that can be passed to `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)`. This would allow the launcher app to present a custom preview to the user.
+An extra that can be passed to requestPinAppWidget. This would allow the launcher app to present a custom preview to the user.
 
 The value should be a `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#` similar to what is used with #updateAppWidget calls.
 
@@ -443,7 +443,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_CUSTOM_INFO: String
 ```
 
-An intent extra to pass to the AppWidget picker containing a `https://developer.android.com/reference/kotlin/java/util/List.html#` of `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo` objects to mix in to the list of AppWidgets that are installed. (This is how the launcher shows the search widget).
+An intent extra to pass to the AppWidget picker containing a `https://developer.android.com/reference/kotlin/java/util/List.html#` of AppWidgetProviderInfo objects to mix in to the list of AppWidgets that are installed. (This is how the launcher shows the search widget).
 
  Value: "customInfo"
 
@@ -485,7 +485,7 @@ Field for the manifest meta-data tag.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo`
+- AppWidgetProviderInfo
 
 ### OPTION_APPWIDGET_DISPLAY_ID
 
@@ -495,13 +495,13 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPTION_APPWIDGET_DISPLAY_ID: String
 ```
 
-A bundle extra (int) that indicates which display the widget is currently being displayed on. This can be used with `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)` to retrieve the `https://developer.android.com/reference/kotlin/android/view/Display.html#` and its corresponding `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`.
+A bundle extra (int) that indicates which display the widget is currently being displayed on. This can be used with getDisplay to retrieve the `https://developer.android.com/reference/kotlin/android/view/Display.html#` and its corresponding `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`.
 
  Value: "appWidgetDisplayId"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Display.html#getDisplayId()`
+- getDisplayId
 
 ### OPTION_APPWIDGET_HOST_CATEGORY
 
@@ -579,7 +579,7 @@ After restore, the app should set OPTION_APPWIDGET_RESTORE_COMPLETED to true on 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidgetOptions(kotlin.Int,%20android.os.Bundle)`
+- updateAppWidgetOptions
 
 ### OPTION_APPWIDGET_SIZES
 
@@ -639,7 +639,7 @@ You need the BIND_APPWIDGET permission or the user must have enabled binding wid
 |---|---|
 | `appWidgetId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The AppWidget id under which to bind the provider. |
 | `provider` | [ComponentName](../android.content/ComponentName.md)!: The `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that will be the AppWidget provider for this AppWidget. |
-| `options` | [Bundle](../android.os/Bundle.md)!: Bundle containing options for the AppWidget. See also `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidgetOptions(kotlin.Int,%20android.os.Bundle)` |
+| `options` | [Bundle](../android.os/Bundle.md)!: Bundle containing options for the AppWidget. See also updateAppWidgetOptions |
 | --- | --- |
 
 | Return ||
@@ -697,7 +697,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun getAppWidgetInfo(appWidgetId: Int): AppWidgetProviderInfo!
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo` for the specified AppWidget.
+Returns the AppWidgetProviderInfo for the specified AppWidget.
 
 | Return ||
 |---|---|
@@ -725,7 +725,7 @@ The extras can be used to embed additional information about this widget to be a
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidgetOptions(kotlin.Int,%20android.os.Bundle)`
+- updateAppWidgetOptions
 
 ### getInstalledProviders
 
@@ -752,7 +752,7 @@ Gets the AppWidget providers for the given package and user profile. User profil
 
 | Parameters ||
 |---|---|
-| `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package for which to get providers. If null, this method is equivalent to `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getInstalledProvidersForProfile(android.os.UserHandle)`. |
+| `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package for which to get providers. If null, this method is equivalent to getInstalledProvidersForProfile. |
 | `profile` | [UserHandle](../android.os/UserHandle.md)?: The profile for which to get providers. Passing null is equivalent to querying for only the calling user. |
 
 | Return ||
@@ -765,8 +765,8 @@ Gets the AppWidget providers for the given package and user profile. User profil
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager.html#getUserProfiles()`
+- myUserHandle
+- getUserProfiles
 
 ### getInstalledProvidersForProfile
 
@@ -788,8 +788,8 @@ Gets the AppWidget providers for the given user profile. User profile can only b
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager.html#getUserProfiles()`
+- myUserHandle
+- getUserProfiles
 
 ### getInstance
 
@@ -838,9 +838,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun isRequestPinAppWidgetSupported(): Boolean
 ```
 
-Returns `true` if the default launcher supports `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)`.
+Returns `true` if the default launcher supports requestPinAppWidget.
 
-Returns `false` if the default launcher does not support pinning, or if App Lock is currently enabled for the calling app. App Lock is a feature that allows users to require authentication before opening apps (see `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)`). Applications presenting UI options to add widgets to the home screen should re-query this method when returning to the foreground (e.g. in `https://developer.android.com/reference/kotlin/android/app/Activity.html#onResume()`) to update option visibility.
+Returns `false` if the default launcher does not support pinning, or if App Lock is currently enabled for the calling app. App Lock is a feature that allows users to require authentication before opening apps (see getEnableAppLockIntentForPackage). Applications presenting UI options to add widgets to the home screen should re-query this method when returning to the foreground (e.g. in onResume) to update option visibility.
 
 ### notifyAppWidgetViewDataChanged
 
@@ -854,7 +854,7 @@ open fun notifyAppWidgetViewDataChanged(
 ): Unit
 ```
 
-**Deprecated:** *The corresponding API `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setRemoteAdapter(kotlin.Int,%20android.content.Intent)` associated with this method has been deprecated. Moving forward please use `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setRemoteAdapter(kotlin.Int,%20android.widget.RemoteViews.RemoteCollectionItems)` instead to set `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems.html#` for the remote adapter and update the widget views by calling `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`, `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.Int,%20android.widget.RemoteViews)`, `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(android.content.ComponentName,%20android.widget.RemoteViews)`, `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`, or `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.Int,%20android.widget.RemoteViews)`, whichever applicable.*
+**Deprecated:** *The corresponding API setRemoteAdapter associated with this method has been deprecated. Moving forward please use setRemoteAdapter instead to set `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems.html#` for the remote adapter and update the widget views by calling updateAppWidget, updateAppWidget, updateAppWidget, partiallyUpdateAppWidget, or partiallyUpdateAppWidget, whichever applicable.*
 
 Notifies the specified collection view in the specified AppWidget instance to invalidate its data.
 
@@ -875,7 +875,7 @@ open fun notifyAppWidgetViewDataChanged(
 ): Unit
 ```
 
-**Deprecated:** *The corresponding API `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setRemoteAdapter(kotlin.Int,%20android.content.Intent)` associated with this method has been deprecated. Moving forward please use `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setRemoteAdapter(kotlin.Int,%20android.widget.RemoteViews.RemoteCollectionItems)` instead to set `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems.html#` for the remote adapter and update the widget views by calling `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`, `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.Int,%20android.widget.RemoteViews)`, `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(android.content.ComponentName,%20android.widget.RemoteViews)`, `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`, or `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.Int,%20android.widget.RemoteViews)`, whichever applicable.*
+**Deprecated:** *The corresponding API setRemoteAdapter associated with this method has been deprecated. Moving forward please use setRemoteAdapter instead to set `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.RemoteCollectionItems.html#` for the remote adapter and update the widget views by calling updateAppWidget, updateAppWidget, updateAppWidget, partiallyUpdateAppWidget, or partiallyUpdateAppWidget, whichever applicable.*
 
 Notifies the specified collection view in all the specified AppWidget instances to invalidate their data.
 
@@ -897,11 +897,11 @@ open fun partiallyUpdateAppWidget(
 
 Perform an incremental update or command on the widget specified by appWidgetId.
 
-This update differs from `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.Int,%20android.widget.RemoteViews)` in that the RemoteViews object which is passed is understood to be an incomplete representation of the widget, and hence is not cached by the AppWidgetService. Note that because these updates are not cached, any state that they modify that is not restored by restoreInstanceState will not persist in the case that the widgets are restored using the cached version in AppWidgetService. Use with `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#showNext(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#showPrevious(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setScrollPosition(kotlin.Int,%20kotlin.Int)` and similar commands.
+This update differs from updateAppWidget in that the RemoteViews object which is passed is understood to be an incomplete representation of the widget, and hence is not cached by the AppWidgetService. Note that because these updates are not cached, any state that they modify that is not restored by restoreInstanceState will not persist in the case that the widgets are restored using the cached version in AppWidgetService. Use with showNext, showPrevious, setScrollPosition and similar commands.
 
 It is okay to call this method both inside an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_UPDATE:kotlin.String` broadcast, and outside of the handler. This method will only work when called from the uid that owns the AppWidget provider.
 
-This method will be ignored if a widget has not received a full update via `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`.
+This method will be ignored if a widget has not received a full update via updateAppWidget.
 
 | Parameters ||
 |---|---|
@@ -921,11 +921,11 @@ open fun partiallyUpdateAppWidget(
 
 Perform an incremental update or command on the widget(s) specified by appWidgetIds.
 
-This update differs from `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)` in that the RemoteViews object which is passed is understood to be an incomplete representation of the widget, and hence does not replace the cached representation of the widget. As of API level 17, the new properties set within the views objects will be appended to the cached representation of the widget, and hence will persist. Use with `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#showNext(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#showPrevious(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setScrollPosition(kotlin.Int,%20kotlin.Int)` and similar commands.
+This update differs from updateAppWidget in that the RemoteViews object which is passed is understood to be an incomplete representation of the widget, and hence does not replace the cached representation of the widget. As of API level 17, the new properties set within the views objects will be appended to the cached representation of the widget, and hence will persist. Use with showNext, showPrevious, setScrollPosition and similar commands.
 
 It is okay to call this method both inside an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_UPDATE:kotlin.String` broadcast, and outside of the handler. This method will only work when called from the uid that owns the AppWidget provider.
 
-This method will be ignored if a widget has not received a full update via `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#updateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`.
+This method will be ignored if a widget has not received a full update via updateAppWidget.
 
 | Parameters ||
 |---|---|
@@ -947,12 +947,12 @@ Query for app widget interaction events in the given time range. Events are only
 
 | Parameters ||
 |---|---|
-| `beginTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The inclusive beginning of the range of events to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
-| `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The exclusive end of the range of events to include in the results. Defined in terms of "Unix time", see `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
+| `beginTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The inclusive beginning of the range of events to include in the results. Defined in terms of "Unix time", see currentTimeMillis. |
+| `endTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The exclusive end of the range of events to include in the results. Defined in terms of "Unix time", see currentTimeMillis. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent!>` | An array of `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent` objects. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent!>` | An array of AppWidgetEvent objects. This value cannot be `null`. |
 
 ### removeWidgetPreview
 
@@ -1011,9 +1011,9 @@ Launcher will not show the configuration activity associated with the provider i
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager.html#isRequestPinShortcutSupported()`
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager.html#requestPinShortcut(android.content.pm.ShortcutInfo,%20android.content.IntentSender)`
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#isRequestPinAppWidgetSupported()`
+- isRequestPinShortcutSupported
+- requestPinShortcut
+- isRequestPinAppWidgetSupported
 
 ### setWidgetPreview
 
@@ -1079,7 +1079,7 @@ open fun updateAppWidget(
 
 Set the RemoteViews to use for the specified appWidgetId.
 
-Note that the RemoteViews parameter will be cached by the AppWidgetService, and hence should contain a complete representation of the widget. For performing partial widget updates, see `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.Int,%20android.widget.RemoteViews)`.
+Note that the RemoteViews parameter will be cached by the AppWidgetService, and hence should contain a complete representation of the widget. For performing partial widget updates, see partiallyUpdateAppWidget.
 
 It is okay to call this method both inside an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_UPDATE:kotlin.String` broadcast, and outside of the handler. This method will only work when called from the uid that owns the AppWidget provider.
 
@@ -1107,7 +1107,7 @@ open fun updateAppWidget(
 
 Set the RemoteViews to use for the specified appWidgetIds.
 
-Note that the RemoteViews parameter will be cached by the AppWidgetService, and hence should contain a complete representation of the widget. For performing partial widget updates, see `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#partiallyUpdateAppWidget(kotlin.IntArray,%20android.widget.RemoteViews)`.
+Note that the RemoteViews parameter will be cached by the AppWidgetService, and hence should contain a complete representation of the widget. For performing partial widget updates, see partiallyUpdateAppWidget.
 
 It is okay to call this method both inside an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#ACTION_APPWIDGET_UPDATE:kotlin.String` broadcast, and outside of the handler. This method will only work when called from the uid that owns the AppWidget provider.
 
@@ -1146,7 +1146,7 @@ The new options are merged into existing options using android.os.Bundle#putAll 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getAppWidgetOptions(kotlin.Int)`
+- getAppWidgetOptions
 
 ### updateAppWidgetProviderInfo
 

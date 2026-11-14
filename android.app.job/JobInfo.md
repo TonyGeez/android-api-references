@@ -10,7 +10,7 @@ open class JobInfo : Parcelable
 | --- | --- |
 | ↳ | [android.app.job.JobInfo](JobInfo.md) |
 
-Container of data passed to the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler` fully encapsulating the parameters required to schedule work against the calling application. These are constructed using the `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder`. The goal here is to provide the scheduler with high-level semantics about the work you want to accomplish.
+Container of data passed to the JobScheduler fully encapsulating the parameters required to schedule work against the calling application. These are constructed using the `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder`. The goal here is to provide the scheduler with high-level semantics about the work you want to accomplish.
 
 Prior to Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, you had to specify at least one constraint on the JobInfo object that you are creating. Otherwise, the builder would throw an exception when building. From Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` and onwards, it is valid to schedule jobs with no constraints.
 
@@ -18,7 +18,7 @@ Prior to Android version `https://developer.android.com/reference/kotlin/android
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder` Builder class for constructing `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder` Builder class for constructing JobInfo objects. |
 | | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.TriggerContentUri` Information about a content URI modification that a job would like to trigger on. |
 
 | Constants ||
@@ -50,72 +50,72 @@ Prior to Android version `https://developer.android.com/reference/kotlin/android
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getBackoffPolicy()()` Return the backoff policy of this job. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBackoffPolicy Return the backoff policy of this job. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getCategory()()` <br /> |
-| open [ClipData](../android.content/ClipData.md)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getClipData()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getClipGrantFlags()()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCategory <br /> |
+| open [ClipData](../android.content/ClipData.md)? | getClipData <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getClipGrantFlags <br /> |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getDebugTags()()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getEstimatedNetworkDownloadBytes()()` Return the estimated size of download traffic that will be performed by this job, in bytes. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getEstimatedNetworkUploadBytes()()` Return the estimated size of upload traffic that will be performed by this job, in bytes. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getDebugTags <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getEstimatedNetworkDownloadBytes Return the estimated size of download traffic that will be performed by this job, in bytes. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getEstimatedNetworkUploadBytes Return the estimated size of upload traffic that will be performed by this job, in bytes. |
 | --- | --- |
-| open [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getExtras()()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getFlexMillis()()` Flex time for this job. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getId()()` Unique job id associated with this application (uid). |
+| open [PersistableBundle](../android.os/PersistableBundle.md) | getExtras <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getFlexMillis Flex time for this job. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId Unique job id associated with this application (uid). |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getInitialBackoffMillis()()` The amount of time the JobScheduler will wait before rescheduling a failed job. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getIntervalMillis()()` Set to the interval between occurrences of this job. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getMaxExecutionDelayMillis()()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getInitialBackoffMillis The amount of time the JobScheduler will wait before rescheduling a failed job. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getIntervalMillis Set to the interval between occurrences of this job. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMaxExecutionDelayMillis <br /> |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getMinFlexMillis()()` Query the minimum flex time allowed for periodic scheduled jobs. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getMinLatencyMillis()()` Set for a job that does not recur periodically, to specify a delay after which the job will be eligible for execution. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getMinPeriodMillis()()` Query the minimum interval allowed for periodic scheduled jobs. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinFlexMillis Query the minimum flex time allowed for periodic scheduled jobs. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinLatencyMillis Set for a job that does not recur periodically, to specify a delay after which the job will be eligible for execution. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinPeriodMillis Query the minimum interval allowed for periodic scheduled jobs. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getMinimumNetworkChunkBytes()()` Return the smallest piece of data that cannot be easily paused and resumed, in bytes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getNetworkType()()` Return the basic description of the kind of network this job requires. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getPriority()()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinimumNetworkChunkBytes Return the smallest piece of data that cannot be easily paused and resumed, in bytes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNetworkType Return the basic description of the kind of network this job requires. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPriority <br /> |
 | --- | --- |
-| open [NetworkRequest](../android.net/NetworkRequest.md)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getRequiredNetwork()()` Return the detailed description of the kind of network this job requires, or `null` if no specific kind of network is required. |
-| open [ComponentName](../android.content/ComponentName.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getService()()` Name of the service endpoint that will be called back into by the JobScheduler. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTraceTag()()` <br /> |
+| open [NetworkRequest](../android.net/NetworkRequest.md)? | getRequiredNetwork Return the detailed description of the kind of network this job requires, or `null` if no specific kind of network is required. |
+| open [ComponentName](../android.content/ComponentName.md) | getService Name of the service endpoint that will be called back into by the JobScheduler. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getTraceTag <br /> |
 | --- | --- |
-| open [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTransientExtras()()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentMaxDelay()()` When triggering on content URI changes, this is the maximum delay we will use before scheduling the job. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentUpdateDelay()()` When triggering on content URI changes, this is the delay from when a change is detected until the job is scheduled. |
+| open [Bundle](../android.os/Bundle.md) | getTransientExtras <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTriggerContentMaxDelay When triggering on content URI changes, this is the maximum delay we will use before scheduling the job. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTriggerContentUpdateDelay When triggering on content URI changes, this is the delay from when a change is detected until the job is scheduled. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [JobInfo.TriggerContentUri](../android/app/job/JobInfo.TriggerContentUri.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getTriggerContentUris()()` Which content: URIs must change for the job to be scheduled. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#hashCode()()` Returns a hash code value for the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isExpedited()()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [JobInfo.TriggerContentUri](../android/app/job/JobInfo.TriggerContentUri.md)!\>? | getTriggerContentUris Which content: URIs must change for the job to be scheduled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isExpedited <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isImportantWhileForeground()()` **Note:** Beginning with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this flag will be ignored and no longer function effectively, regardless of the calling app's target SDK version. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isPeriodic()()` Track whether this job will repeat with a given period. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isPersisted()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isImportantWhileForeground **Note:** Beginning with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this flag will be ignored and no longer function effectively, regardless of the calling app's target SDK version. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPeriodic Track whether this job will repeat with a given period. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPersisted <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isPrefetch()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isRequireBatteryNotLow()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isRequireCharging()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPrefetch <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRequireBatteryNotLow <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRequireCharging <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isRequireDeviceIdle()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isRequireStorageNotLow()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isUserInitiated()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRequireDeviceIdle <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRequireStorageNotLow <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserInitiated <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -131,7 +131,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val BACKOFF_POLICY_EXPONENTIAL: Int
 ```
 
-Exponentially back-off a failed job. See `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setBackoffCriteria(kotlin.Long,%20kotlin.Int)` retry_time(current_time, num_failures) = current_time + initial_backoff_millis \* 2 \^ (num_failures - 1), num_failures \>= 1
+Exponentially back-off a failed job. See setBackoffCriteria retry_time(current_time, num_failures) = current_time + initial_backoff_millis \* 2 \^ (num_failures - 1), num_failures \>= 1
 
  Value: 1
 
@@ -143,7 +143,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val BACKOFF_POLICY_LINEAR: Int
 ```
 
-Linearly back-off a failed job. See `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setBackoffCriteria(kotlin.Long,%20kotlin.Int)` retry_time(current_time, num_failures) = current_time + initial_backoff_millis \* num_failures, num_failures \>= 1
+Linearly back-off a failed job. See setBackoffCriteria retry_time(current_time, num_failures) = current_time + initial_backoff_millis \* num_failures, num_failures \>= 1
 
  Value: 0
 
@@ -247,7 +247,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 static val NETWORK_TYPE_METERED: Int
 ```
 
-**Deprecated:** *Cellular networks may be unmetered, or Wi-Fi networks may be metered, so this isn't a good way of selecting a specific transport. Instead, use `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#NETWORK_TYPE_CELLULAR:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#addTransportType(kotlin.Int)` if your job requires a specific network transport.*
+**Deprecated:** *Cellular networks may be unmetered, or Wi-Fi networks may be metered, so this isn't a good way of selecting a specific transport. Instead, use `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#NETWORK_TYPE_CELLULAR:kotlin.Int` or addTransportType if your job requires a specific network transport.*
 
 This job requires metered connectivity such as most cellular data networks.
 
@@ -297,7 +297,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val PRIORITY_DEFAULT: Int
 ```
 
-Default value for all regular jobs. As noted in `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler`, these jobs have a general execution time of 10 minutes. Receives the standard job management policy.
+Default value for all regular jobs. As noted in JobScheduler, these jobs have a general execution time of 10 minutes. Receives the standard job management policy.
 
  Value: 300
 
@@ -333,7 +333,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val PRIORITY_MAX: Int
 ```
 
-This task is critical to user experience or functionality and should be run ahead of all other tasks. Only `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setExpedited(kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setUserInitiated(kotlin.Boolean)` can have this priority.
+This task is critical to user experience or functionality and should be run ahead of all other tasks. Only setExpedited and setUserInitiated can have this priority.
 
 Example tasks of max priority:
 
@@ -364,7 +364,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -414,7 +414,7 @@ Return the backoff policy of this job.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setBackoffCriteria(kotlin.Long,%20kotlin.Int)`
+- setBackoffCriteria
 
 ### getCategory
 
@@ -430,7 +430,7 @@ open fun getCategory(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setCategory(kotlin.Int)`
+- setCategory
 
 ### getClipData
 
@@ -446,7 +446,7 @@ open fun getClipData(): ClipData?
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setClipData(android.content.ClipData,%20kotlin.Int)`
+- setClipData
 
 ### getClipGrantFlags
 
@@ -457,7 +457,7 @@ open fun getClipGrantFlags(): Int
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setClipData(android.content.ClipData,%20kotlin.Int)`
+- setClipData
 
 ### getDebugTags
 
@@ -473,7 +473,7 @@ open fun getDebugTags(): MutableSet<String!>
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#addDebugTag(kotlin.String)`
+- addDebugTag
 
 ### getEstimatedNetworkDownloadBytes
 
@@ -492,7 +492,7 @@ Value is a non-negative number of bytes.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setEstimatedNetworkBytes(kotlin.Long,%20kotlin.Long)`
+- setEstimatedNetworkBytes
 
 ### getEstimatedNetworkUploadBytes
 
@@ -511,7 +511,7 @@ Value is a non-negative number of bytes.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setEstimatedNetworkBytes(kotlin.Long,%20kotlin.Long)`
+- setEstimatedNetworkBytes
 
 ### getExtras
 
@@ -527,7 +527,7 @@ open fun getExtras(): PersistableBundle
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setExtras(android.os.PersistableBundle)`
+- setExtras
 
 ### getFlexMillis
 
@@ -540,8 +540,8 @@ open fun getFlexMillis(): Long
 Flex time for this job. Only valid if this is a periodic job. The job can execute at any time in a window of flex length at the end of the period.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPeriodic(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPeriodic(kotlin.Long,%20kotlin.Long)`
+- setPeriodic
+- setPeriodic
 
 ### getId
 
@@ -564,7 +564,7 @@ open fun getInitialBackoffMillis(): Long
 The amount of time the JobScheduler will wait before rescheduling a failed job. This value will be increased depending on the backoff policy specified at job creation time. Defaults to 30 seconds, minimum is currently 10 seconds.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setBackoffCriteria(kotlin.Long,%20kotlin.Int)`
+- setBackoffCriteria
 
 ### getIntervalMillis
 
@@ -577,8 +577,8 @@ open fun getIntervalMillis(): Long
 Set to the interval between occurrences of this job. This value is **not** set if the job does not recur periodically.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPeriodic(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPeriodic(kotlin.Long,%20kotlin.Long)`
+- setPeriodic
+- setPeriodic
 
 ### getMaxExecutionDelayMillis
 
@@ -589,7 +589,7 @@ open fun getMaxExecutionDelayMillis(): Long
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setOverrideDeadline(kotlin.Long)`
+- setOverrideDeadline
 
 ### getMinFlexMillis
 
@@ -616,7 +616,7 @@ open fun getMinLatencyMillis(): Long
 Set for a job that does not recur periodically, to specify a delay after which the job will be eligible for execution. This value is not set if the job recurs periodically.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setMinimumLatency(kotlin.Long)`
+- setMinimumLatency
 
 ### getMinPeriodMillis
 
@@ -649,7 +649,7 @@ Value is a non-negative number of bytes.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setMinimumNetworkChunkBytes(kotlin.Long)`
+- setMinimumNetworkChunkBytes
 
 ### getNetworkType
 
@@ -660,7 +660,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 open fun getNetworkType(): Int
 ```
 
-**Deprecated:** *This method attempts to map `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getRequiredNetwork()` into the set of simple constants, which results in a loss of fidelity. Callers should move to using `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#getRequiredNetwork()` directly.*
+**Deprecated:** *This method attempts to map getRequiredNetwork into the set of simple constants, which results in a loss of fidelity. Callers should move to using getRequiredNetwork directly.*
 
 Return the basic description of the kind of network this job requires.
 
@@ -670,7 +670,7 @@ Return the basic description of the kind of network this job requires.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiredNetworkType(kotlin.Int)`
+- setRequiredNetworkType
 
 ### getPriority
 
@@ -686,7 +686,7 @@ open fun getPriority(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPriority(kotlin.Int)`
+- setPriority
 
 ### getRequiredNetwork
 
@@ -699,7 +699,7 @@ open fun getRequiredNetwork(): NetworkRequest?
 Return the detailed description of the kind of network this job requires, or `null` if no specific kind of network is required.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiredNetwork(android.net.NetworkRequest)`
+- setRequiredNetwork
 
 ### getService
 
@@ -729,7 +729,7 @@ open fun getTraceTag(): String?
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setTraceTag(kotlin.String)`
+- setTraceTag
 
 ### getTransientExtras
 
@@ -745,7 +745,7 @@ open fun getTransientExtras(): Bundle
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setTransientExtras(android.os.Bundle)`
+- setTransientExtras
 
 ### getTriggerContentMaxDelay
 
@@ -758,7 +758,7 @@ open fun getTriggerContentMaxDelay(): Long
 When triggering on content URI changes, this is the maximum delay we will use before scheduling the job.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setTriggerContentMaxDelay(kotlin.Long)`
+- setTriggerContentMaxDelay
 
 ### getTriggerContentUpdateDelay
 
@@ -771,7 +771,7 @@ open fun getTriggerContentUpdateDelay(): Long
 When triggering on content URI changes, this is the delay from when a change is detected until the job is scheduled.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setTriggerContentUpdateDelay(kotlin.Long)`
+- setTriggerContentUpdateDelay
 
 ### getTriggerContentUris
 
@@ -784,7 +784,7 @@ open fun getTriggerContentUris(): Array<JobInfo.TriggerContentUri!>?
 Which content: URIs must change for the job to be scheduled. Returns null if there are none required.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#addTriggerContentUri(android.app.job.JobInfo.TriggerContentUri)`
+- addTriggerContentUri
 
 ### hashCode
 
@@ -799,8 +799,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -815,7 +815,7 @@ open fun isExpedited(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setExpedited(kotlin.Boolean)`
+- setExpedited
 
 ### isImportantWhileForeground
 
@@ -826,12 +826,12 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun isImportantWhileForeground(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isExpedited()` instead.*
+**Deprecated:** *Use isExpedited instead.*
 
 **Note:** Beginning with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this flag will be ignored and no longer function effectively, regardless of the calling app's target SDK version. Calling this method will always return `false`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setImportantWhileForeground(kotlin.Boolean)`
+- setImportantWhileForeground
 
 ### isPeriodic
 
@@ -844,8 +844,8 @@ open fun isPeriodic(): Boolean
 Track whether this job will repeat with a given period.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPeriodic(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPeriodic(kotlin.Long,%20kotlin.Long)`
+- setPeriodic
+- setPeriodic
 
 ### isPersisted
 
@@ -856,7 +856,7 @@ open fun isPersisted(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPersisted(kotlin.Boolean)`
+- setPersisted
 
 ### isPrefetch
 
@@ -867,7 +867,7 @@ open fun isPrefetch(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPrefetch(kotlin.Boolean)`
+- setPrefetch
 
 ### isRequireBatteryNotLow
 
@@ -878,7 +878,7 @@ open fun isRequireBatteryNotLow(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresBatteryNotLow(kotlin.Boolean)`
+- setRequiresBatteryNotLow
 
 ### isRequireCharging
 
@@ -889,7 +889,7 @@ open fun isRequireCharging(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresCharging(kotlin.Boolean)`
+- setRequiresCharging
 
 ### isRequireDeviceIdle
 
@@ -900,7 +900,7 @@ open fun isRequireDeviceIdle(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresDeviceIdle(kotlin.Boolean)`
+- setRequiresDeviceIdle
 
 ### isRequireStorageNotLow
 
@@ -911,7 +911,7 @@ open fun isRequireStorageNotLow(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresStorageNotLow(kotlin.Boolean)`
+- setRequiresStorageNotLow
 
 ### isUserInitiated
 
@@ -922,7 +922,7 @@ open fun isUserInitiated(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setUserInitiated(kotlin.Boolean)`
+- setUserInitiated
 
 ### toString
 

@@ -63,37 +63,37 @@ CRLs are instantiated using a certificate factory. The following is an example o
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#X509CRL()()` Constructor for X. |
+| X509CRL Constructor for X. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this CRL for equality with the given object. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getEncoded()()` Returns the ASN. |
-| abstract [Principal](../java.security/Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getIssuerDN()()` **Denigrated** , replaced by [getIssuerX500Principal()](X509CRL.md)). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this CRL for equality with the given object. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getEncoded Returns the ASN. |
+| abstract [Principal](../java.security/Principal.md)! | getIssuerDN **Denigrated** , replaced by [getIssuerX500Principal()](X509CRL.md)). |
 | --- | --- |
-| open [X500Principal](../javax.security.auth.x500/X500Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getIssuerX500Principal()()` Returns the issuer (issuer distinguished name) value from the CRL as an `X500Principal`. |
-| abstract [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getNextUpdate()()` Gets the `nextUpdate` date from the CRL. |
-| abstract [X509CRLEntry](X509CRLEntry.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getRevokedCertificate(java.math.BigInteger)(serialNumber: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!)` Gets the CRL entry, if any, with the given certificate serialNumber. |
+| open [X500Principal](../javax.security.auth.x500/X500Principal.md)! | getIssuerX500Principal Returns the issuer (issuer distinguished name) value from the CRL as an `X500Principal`. |
+| abstract [Date](../java.util/Date.md)! | getNextUpdate Gets the `nextUpdate` date from the CRL. |
+| abstract [X509CRLEntry](X509CRLEntry.md)! | getRevokedCertificate Gets the CRL entry, if any, with the given certificate serialNumber. |
 | --- | --- |
-| open [X509CRLEntry](X509CRLEntry.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getRevokedCertificate(java.security.cert.X509Certificate)(certificate: https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate!)` Get the CRL entry, if any, for the given certificate. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [X509CRLEntry](X509CRLEntry.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getRevokedCertificates()()` Gets all the entries from this CRL. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSigAlgName()()` Gets the signature algorithm name for the CRL signature algorithm. |
+| open [X509CRLEntry](X509CRLEntry.md)! | getRevokedCertificate Get the CRL entry, if any, for the given certificate. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [X509CRLEntry](X509CRLEntry.md)!\>! | getRevokedCertificates Gets all the entries from this CRL. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSigAlgName Gets the signature algorithm name for the CRL signature algorithm. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSigAlgOID()()` Gets the signature algorithm OID string from the CRL. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSigAlgParams()()` Gets the DER-encoded signature algorithm parameters from this CRL's signature algorithm. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSignature()()` Gets the `signature` value (the raw signature bits) from the CRL. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSigAlgOID Gets the signature algorithm OID string from the CRL. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getSigAlgParams Gets the DER-encoded signature algorithm parameters from this CRL's signature algorithm. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getSignature Gets the `signature` value (the raw signature bits) from the CRL. |
 | --- | --- |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getTBSCertList()()` Gets the DER-encoded CRL information, the `tbsCertList` from this CRL. |
-| abstract [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getThisUpdate()()` Gets the `thisUpdate` date from the CRL. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getVersion()()` Gets the `version` (version number) value from the CRL. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getTBSCertList Gets the DER-encoded CRL information, the `tbsCertList` from this CRL. |
+| abstract [Date](../java.util/Date.md)! | getThisUpdate Gets the `thisUpdate` date from the CRL. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVersion Gets the `version` (version number) value from the CRL. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#hashCode()()` Returns a hashcode value for this CRL from its encoded form. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#verify(java.security.PublicKey)(key: https://developer.android.com/reference/kotlin/java/security/PublicKey.html#!)` Verifies that this CRL was signed using the private key that corresponds to the given public key. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#verify(java.security.PublicKey,%20kotlin.String)(key: https://developer.android.com/reference/kotlin/java/security/PublicKey.html#!, sigProvider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Verifies that this CRL was signed using the private key that corresponds to the given public key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hashcode value for this CRL from its encoded form. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verify Verifies that this CRL was signed using the private key that corresponds to the given public key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verify Verifies that this CRL was signed using the private key that corresponds to the given public key. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#verify(java.security.PublicKey,%20java.security.Provider)(key: https://developer.android.com/reference/kotlin/java/security/PublicKey.html#!, sigProvider: https://developer.android.com/reference/kotlin/java/security/Provider.html#!)` Verifies that this CRL was signed using the private key that corresponds to the given public key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verify Verifies that this CRL was signed using the private key that corresponds to the given public key. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/java/security/cert/X509Extension` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` `https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#getCriticalExtensionOIDs()()`
+Inherited functions From class X509Extension `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` getCriticalExtensionOIDs
 
 Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certificate/CRL managed by the object implementing this interface. Here is sample code to get a Set of critical extensions from an X509Certificate and print the OIDs:
 
@@ -118,7 +118,7 @@ Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certif
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!` `https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#getExtensionValue(kotlin.String)(oid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!` getExtensionValue
 
 Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identified by the passed-in `oid` String. The `oid` string is represented by a set of nonnegative whole numbers separated by periods.
 
@@ -127,7 +127,7 @@ OID *(Object Identifier)* Extension Name 2.5.29.14 SubjectKeyIdentifier 2.5.29.1
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` `https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#getNonCriticalExtensionOIDs()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` getNonCriticalExtensionOIDs
 
 Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the certificate/CRL managed by the object implementing this interface. Here is sample code to get a Set of non-critical extensions from an X509CRL revoked certificate entry and print the OIDs:
 
@@ -159,25 +159,25 @@ Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the ce
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/security/cert/X509Extension#hasUnsupportedCriticalExtension()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` hasUnsupportedCriticalExtension
 
 Check if there is a critical extension that is not supported.
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/java/security/cert/CRL` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/java/security/cert/CRL#getType()()`
+From class CRL `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` getType
 
 Returns the type of this CRL.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/security/cert/CRL#isRevoked(java.security.cert.Certificate)(cert: https://developer.android.com/reference/kotlin/java/security/cert/Certificate!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isRevoked
 
 Checks whether the given certificate is on this CRL.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/java/security/cert/CRL#toString()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` toString
 
 Returns a string representation of this CRL.
 
@@ -319,7 +319,7 @@ Gets the CRL entry, if any, with the given certificate serialNumber.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry`
+- X509CRLEntry
 
 ### getRevokedCertificate
 
@@ -361,7 +361,7 @@ Gets all the entries from this CRL. This returns a Set of X509CRLEntry objects.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/cert/X509CRLEntry`
+- X509CRLEntry
 
 ### getSigAlgName
 
@@ -403,7 +403,7 @@ abstract fun getSigAlgOID(): String!
 
 Gets the signature algorithm OID string from the CRL. An OID is represented by a set of nonnegative whole numbers separated by periods. For example, the string "1.2.840.10040.4.3" identifies the SHA-1 with DSA signature algorithm defined in [RFC 3279: Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and CRL Profile](http://www.ietf.org/rfc/rfc3279.txt).
 
-See `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSigAlgName()` for relevant ASN.1 definitions.
+See getSigAlgName for relevant ASN.1 definitions.
 
 | Return ||
 |---|---|
@@ -417,9 +417,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getSigAlgParams(): ByteArray!
 ```
 
-Gets the DER-encoded signature algorithm parameters from this CRL's signature algorithm. In most cases, the signature algorithm parameters are null; the parameters are usually supplied with the public key. If access to individual parameter values is needed then use `https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#` and instantiate with the name returned by `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSigAlgName()`.
+Gets the DER-encoded signature algorithm parameters from this CRL's signature algorithm. In most cases, the signature algorithm parameters are null; the parameters are usually supplied with the public key. If access to individual parameter values is needed then use `https://developer.android.com/reference/kotlin/java/security/AlgorithmParameters.html#` and instantiate with the name returned by getSigAlgName.
 
-See `https://developer.android.com/reference/kotlin/java/security/cert/X509CRL#getSigAlgName()` for relevant ASN.1 definitions.
+See getSigAlgName for relevant ASN.1 definitions.
 
 | Return ||
 |---|---|

@@ -16,7 +16,7 @@ Apps can expose a set of restrictions via an XML file specified in the manifest.
 
 If the user has an active Restrictions Provider, dynamic requests can be made in addition to the statically imposed restrictions. Dynamic requests are app-specific and can be expressed via a predefined set of request types.
 
-The RestrictionsManager forwards the dynamic requests to the active Restrictions Provider. The Restrictions Provider can respond back to requests by calling `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#notifyPermissionResponse(kotlin.String,%20android.os.PersistableBundle)`, when a response is received from the administrator of the device or user. The response is relayed back to the application via a protected broadcast, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#ACTION_PERMISSION_RESPONSE_RECEIVED:kotlin.String`.
+The RestrictionsManager forwards the dynamic requests to the active Restrictions Provider. The Restrictions Provider can respond back to requests by calling notifyPermissionResponse, when a response is received from the administrator of the device or user. The response is relayed back to the application via a protected broadcast, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#ACTION_PERMISSION_RESPONSE_RECEIVED:kotlin.String`.
 
 Static restrictions are specified by an XML file referenced by a meta-data attribute in the manifest. This enables applications as well as any web administration consoles to be able to read the list of available restrictions from the apk.
 
@@ -112,16 +112,16 @@ In your manifest's `application` section, add the meta-data tag to point to the 
 
 | Public methods ||
 |---|---|
-| open static [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#convertRestrictionsToBundle(kotlin.collections.MutableList)(entries: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/RestrictionEntry!>!)` Converts a list of restrictions to the corresponding bundle, using the following mapping: | RestrictionEntry | Bundle | |---|---| | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BOOLEAN:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putBoolean(kotlin.String,%20kotlin.Boolean)` | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_CHOICE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_MULTI_SELECT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putStringArray(kotlin.String,%20kotlin.Array)` | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_INTEGER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putInt(kotlin.String,%20kotlin.Int)` | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_STRING:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putString(kotlin.String,%20kotlin.String)` | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/Bundle.html#putBundle(kotlin.String,%20android.os.Bundle)` | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE_ARRAY:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/Bundle.html#putParcelableArray(kotlin.String,%20kotlin.Array)` | <br /> |
-| open [Intent](Intent.md)! | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#createLocalApprovalIntent()()` <br /> |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#getApplicationRestrictions()()` Returns any available set of application-specific restrictions applicable to this application. |
+| open static [Bundle](../android.os/Bundle.md)! | convertRestrictionsToBundle Converts a list of restrictions to the corresponding bundle, using the following mapping: | RestrictionEntry | Bundle | |---|---| | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BOOLEAN:kotlin.Int` | putBoolean | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_CHOICE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_MULTI_SELECT:kotlin.Int` | putStringArray | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_INTEGER:kotlin.Int` | putInt | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_STRING:kotlin.Int` | putString | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE:kotlin.Int` | putBundle | | `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE_ARRAY:kotlin.Int` | putParcelableArray | <br /> |
+| open [Intent](Intent.md)! | createLocalApprovalIntent <br /> |
+| open [Bundle](../android.os/Bundle.md)! | getApplicationRestrictions Returns any available set of application-specific restrictions applicable to this application. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bundle](../android.os/Bundle.md)!\> | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#getApplicationRestrictionsPerAdmin()()` Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` for each managing agent that has set restrictions for the current application, the bundle contains any application restrictions set for the current package. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RestrictionEntry](RestrictionEntry.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#getManifestRestrictions(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parse and return the list of restrictions defined in the manifest for the specified package, if any. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#hasRestrictionsProvider()()` Called by an application to check if there is an active Restrictions Provider. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bundle](../android.os/Bundle.md)!\> | getApplicationRestrictionsPerAdmin Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` for each managing agent that has set restrictions for the current application, the bundle contains any application restrictions set for the current package. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RestrictionEntry](RestrictionEntry.md)!\>! | getManifestRestrictions Parse and return the list of restrictions defined in the manifest for the specified package, if any. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasRestrictionsProvider Called by an application to check if there is an active Restrictions Provider. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#notifyPermissionResponse(kotlin.String,%20android.os.PersistableBundle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, response: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` Called by the Restrictions Provider to deliver a response to an application. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#requestPermission(kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)(requestType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, request: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` Called by an application to request permission for an operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyPermissionResponse Called by the Restrictions Provider to deliver a response to an application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestPermission Called by an application to request permission for an operation. |
 
 ## Constants
 
@@ -159,7 +159,7 @@ The intent must contain `https://developer.android.com/reference/kotlin/android/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#createLocalApprovalIntent()`
+- createLocalApprovalIntent
 
 ### ACTION_REQUEST_PERMISSION
 
@@ -169,7 +169,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_REQUEST_PERMISSION: String
 ```
 
-Broadcast intent sent to the Restrictions Provider to handle a permission request from an app. It will have the following extras: `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_PACKAGE_NAME:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_REQUEST_TYPE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_REQUEST_ID:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_REQUEST_BUNDLE:kotlin.String`. The Restrictions Provider will handle the request and respond back to the RestrictionsManager, when a response is available, by calling `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#notifyPermissionResponse(kotlin.String,%20android.os.PersistableBundle)`.
+Broadcast intent sent to the Restrictions Provider to handle a permission request from an app. It will have the following extras: `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_PACKAGE_NAME:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_REQUEST_TYPE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_REQUEST_ID:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#EXTRA_REQUEST_BUNDLE:kotlin.String`. The Restrictions Provider will handle the request and respond back to the RestrictionsManager, when a response is available, by calling notifyPermissionResponse.
 
 The BroadcastReceiver must require the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BIND_DEVICE_ADMIN:kotlin.String` permission to ensure that only the system can send the broadcast.
 
@@ -264,7 +264,7 @@ Name of the meta-data entry in the manifest that points to the XML file containi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#getManifestRestrictions(kotlin.String)`
+- getManifestRestrictions
 
 ### REQUEST_KEY_APPROVE_LABEL
 
@@ -584,13 +584,13 @@ Converts a list of restrictions to the corresponding bundle, using the following
 
 | RestrictionEntry | Bundle |
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BOOLEAN:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putBoolean(kotlin.String,%20kotlin.Boolean)` |
-| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_CHOICE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_MULTI_SELECT:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putStringArray(kotlin.String,%20kotlin.Array)` |
-| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_INTEGER:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putInt(kotlin.String,%20kotlin.Int)` |
+| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BOOLEAN:kotlin.Int` | putBoolean |
+| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_CHOICE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_MULTI_SELECT:kotlin.Int` | putStringArray |
+| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_INTEGER:kotlin.Int` | putInt |
 | --- | --- |
-| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_STRING:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/BaseBundle.html#putString(kotlin.String,%20kotlin.String)` |
-| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/Bundle.html#putBundle(kotlin.String,%20android.os.Bundle)` |
-| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE_ARRAY:kotlin.Int` | `https://developer.android.com/reference/kotlin/android/os/Bundle.html#putParcelableArray(kotlin.String,%20kotlin.Array)` |
+| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_STRING:kotlin.Int` | putString |
+| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE:kotlin.Int` | putBundle |
+| `https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#TYPE_BUNDLE_ARRAY:kotlin.Int` | putParcelableArray |
 | --- | --- |
 
 <br />
@@ -619,7 +619,7 @@ Returns any available set of application-specific restrictions applicable to thi
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Bundle.html#!` | the application restrictions as a Bundle. Returns null if there are no restrictions. Starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, it is possible for there to be multiple managing apps on the device with the ability to set restrictions, e.g. a Device Policy Controller (DPC) and a Supervision admin. This API will only return the restrictions set by the DPCs. To retrieve restrictions set by all managing apps, use `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#getApplicationRestrictionsPerAdmin()` instead. |
+| `https://developer.android.com/reference/kotlin/android/os/Bundle.html#!` | the application restrictions as a Bundle. Returns null if there are no restrictions. Starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, it is possible for there to be multiple managing apps on the device with the ability to set restrictions, e.g. a Device Policy Controller (DPC) and a Supervision admin. This API will only return the restrictions set by the DPCs. To retrieve restrictions set by all managing apps, use getApplicationRestrictionsPerAdmin instead. |
 
 **See Also**
 
@@ -682,7 +682,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun hasRestrictionsProvider(): Boolean
 ```
 
-Called by an application to check if there is an active Restrictions Provider. If there isn't, `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager#requestPermission(kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)` is not available.
+Called by an application to check if there is an active Restrictions Provider. If there isn't, requestPermission is not available.
 
 | Return ||
 |---|---|

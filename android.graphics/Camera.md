@@ -13,38 +13,38 @@ open class Camera
 | --- | --- |
 | ↳ | [android.graphics.Camera](Camera.md) |
 
-A camera instance can be used to compute 3D transformations and generate a matrix that can be applied, for instance, on a `https://developer.android.com/reference/kotlin/android/graphics/Canvas`.
+A camera instance can be used to compute 3D transformations and generate a matrix that can be applied, for instance, on a Canvas.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/Camera#Camera()()` Creates a new camera, with empty transformations. |
+| Camera Creates a new camera, with empty transformations. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#applyToCanvas(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas!)` Computes the matrix corresponding to the current transformation and applies it to the specified Canvas. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#dotWithNormal(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#getLocationX()()` Gets the x location of the camera. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | applyToCanvas Computes the matrix corresponding to the current transformation and applies it to the specified Canvas. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | dotWithNormal <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getLocationX Gets the x location of the camera. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#getLocationY()()` Gets the y location of the camera. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#getLocationZ()()` Gets the z location of the camera. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#getMatrix(android.graphics.Matrix)(matrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix!)` Computes the matrix corresponding to the current transformation and copies it to the supplied matrix object. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getLocationY Gets the y location of the camera. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getLocationZ Gets the z location of the camera. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getMatrix Computes the matrix corresponding to the current transformation and copies it to the supplied matrix object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#restore()()` Restores the saved state, if any. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotate(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, z: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Applies a rotation transform around all three axis. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateX(kotlin.Float)(deg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Applies a rotation transform around the X axis. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | restore Restores the saved state, if any. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | rotate Applies a rotation transform around all three axis. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | rotateX Applies a rotation transform around the X axis. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateY(kotlin.Float)(deg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Applies a rotation transform around the Y axis. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateZ(kotlin.Float)(deg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Applies a rotation transform around the Z axis. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#save()()` Saves the camera state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | rotateY Applies a rotation transform around the Y axis. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | rotateZ Applies a rotation transform around the Z axis. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | save Saves the camera state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#setLocation(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, z: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the location of the camera. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#translate(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, z: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Applies a translation transform on all three axis. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLocation Sets the location of the camera. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | translate Applies a translation transform on all three axis. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Camera#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public constructors
 
@@ -97,7 +97,7 @@ open fun getLocationX(): Float
 Gets the x location of the camera.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#setLocation(kotlin.Float,%20kotlin.Float,%20kotlin.Float)`
+- setLocation
 
 ### getLocationY
 
@@ -110,7 +110,7 @@ open fun getLocationY(): Float
 Gets the y location of the camera.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#setLocation(kotlin.Float,%20kotlin.Float,%20kotlin.Float)`
+- setLocation
 
 ### getLocationZ
 
@@ -123,7 +123,7 @@ open fun getLocationZ(): Float
 Gets the z location of the camera.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#setLocation(kotlin.Float,%20kotlin.Float,%20kotlin.Float)`
+- setLocation
 
 ### getMatrix
 
@@ -150,7 +150,7 @@ open fun restore(): Unit
 Restores the saved state, if any.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#restore()`
+- restore
 
 ### rotate
 
@@ -175,9 +175,9 @@ Applies a rotation transform around all three axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateZ(kotlin.Float)`
+- rotateX
+- rotateY
+- rotateZ
 
 ### rotateX
 
@@ -195,9 +195,9 @@ Applies a rotation transform around the X axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateZ(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotate(kotlin.Float,%20kotlin.Float,%20kotlin.Float)`
+- rotateY
+- rotateZ
+- rotate
 
 ### rotateY
 
@@ -215,9 +215,9 @@ Applies a rotation transform around the Y axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateZ(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotate(kotlin.Float,%20kotlin.Float,%20kotlin.Float)`
+- rotateX
+- rotateZ
+- rotate
 
 ### rotateZ
 
@@ -235,9 +235,9 @@ Applies a rotation transform around the Z axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotateY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#rotate(kotlin.Float,%20kotlin.Float,%20kotlin.Float)`
+- rotateX
+- rotateY
+- rotate
 
 ### save
 
@@ -247,10 +247,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun save(): Unit
 ```
 
-Saves the camera state. Each save should be balanced with a call to `https://developer.android.com/reference/kotlin/android/graphics/Camera#restore()`.
+Saves the camera state. Each save should be balanced with a call to restore.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Camera#save()`
+- save
 
 ### setLocation
 

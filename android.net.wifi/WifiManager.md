@@ -29,12 +29,12 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.AddNetworkResult` Provides the results of a call to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkPrivileged(android.net.wifi.WifiConfiguration)` |
-| open | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.InterfaceCreationImpact` Class describing an impact of interface creation - returned by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#reportCreateInterfaceImpact(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.BiConsumer)`. |
+| | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.AddNetworkResult` Provides the results of a call to addNetworkPrivileged |
+| open | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.InterfaceCreationImpact` Class describing an impact of interface creation - returned by reportCreateInterfaceImpact. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener` Interface for local-only connection failure listener. |
 | --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback` Callback class for applications to receive updates about the LocalOnlyHotspot status. |
-| open | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation` LocalOnlyHotspotReservation that contains the `https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration` for the active LocalOnlyHotspot request. |
+| open | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation` LocalOnlyHotspotReservation that contains the SoftApConfiguration for the active LocalOnlyHotspot request. |
 | open | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.MulticastLock` Allows an application to receive Wifi Multicast packets. |
 | --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.ScanResultsCallback` Abstract class for scan results callback. |
@@ -63,18 +63,18 @@ Restricted for SDK Runtime environment in API level 34.
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_BSSID:kotlin.String` The lookup key for a String giving the BSSID of the access point to which we are connected. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_NETWORK_INFO:kotlin.String` The lookup key for a `https://developer.android.com/reference/kotlin/android/net/NetworkInfo.html#` object associated with the Wi-Fi network. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_NETWORK_SUGGESTION:kotlin.String` Sent as as a part of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION:kotlin.String` that holds an instance of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` corresponding to the connected network. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_NETWORK_SUGGESTION:kotlin.String` Sent as as a part of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION:kotlin.String` that holds an instance of WifiNetworkSuggestion corresponding to the connected network. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_NEW_RSSI:kotlin.String` The lookup key for an `int` giving the new RSSI in dBm. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_NEW_STATE:kotlin.String` The lookup key for a `https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState` describing the new state Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_NEW_STATE:kotlin.String` The lookup key for a SupplicantState describing the new state Retrieve with getParcelableExtra. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_PREVIOUS_WIFI_STATE:kotlin.String` The previous Wi-Fi state. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_RESULTS_UPDATED:kotlin.String` Lookup key for a `boolean` extra in intent `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#SCAN_RESULTS_AVAILABLE_ACTION:kotlin.String` representing if the scan was successful or not. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_SCAN_AVAILABLE:kotlin.String` A boolean extra indicating whether scanning is currently available. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_SUPPLICANT_CONNECTED:kotlin.String` The lookup key for a boolean that indicates whether a connection to the supplicant daemon has been gained or lost. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_SUPPLICANT_ERROR:kotlin.String` The lookup key for a `https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState` describing the supplicant error code if any Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_WIFI_INFO:kotlin.String` The lookup key for a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo` object giving the information about the access point to which we are connected. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_SUPPLICANT_ERROR:kotlin.String` The lookup key for a SupplicantState describing the supplicant error code if any Retrieve with getIntExtra. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_WIFI_INFO:kotlin.String` The lookup key for a WifiInfo object giving the information about the access point to which we are connected. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_WIFI_STATE:kotlin.String` The lookup key for an int that indicates whether Wi-Fi is enabled, disabled, enabling, disabling, or unknown. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPEN:kotlin.Int` Do not send the DHCP hostname to open networks. |
@@ -158,161 +158,161 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addLocalOnlyConnectionFailureListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.LocalOnlyConnectionFailureListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener)` Add a listener for local-only networks. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)(config: https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration!)` Add a new network description to the set of configured networks. |
-| open [WifiManager.AddNetworkResult](../android/net/wifi/WifiManager.AddNetworkResult.md) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkPrivileged(android.net.wifi.WifiConfiguration)(config: https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration)` This is a new version of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)` which returns more detailed failure codes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addLocalOnlyConnectionFailureListener Add a listener for local-only networks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | addNetwork Add a new network description to the set of configured networks. |
+| open [WifiManager.AddNetworkResult](../android/net/wifi/WifiManager.AddNetworkResult.md) | addNetworkPrivileged This is a new version of addNetwork which returns more detailed failure codes. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)(networkSuggestions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion!>)` Provide a list of network suggestions to the device. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addOrUpdatePasspointConfiguration(android.net.wifi.hotspot2.PasspointConfiguration)(config: https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration!)` Add or update a Passpoint configuration. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addSuggestionConnectionStatusListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SuggestionConnectionStatusListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionConnectionStatusListener)` Add a listener for suggestion networks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | addNetworkSuggestions Provide a list of network suggestions to the device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOrUpdatePasspointConfiguration Add or update a Passpoint configuration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addSuggestionConnectionStatusListener Add a listener for suggestion networks. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addSuggestionUserApprovalStatusListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SuggestionUserApprovalStatusListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener)` Add a listener for Wi-Fi network suggestion user approval status. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addWifiStateChangedListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.WifiStateChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WifiStateChangedListener)` Register a callback for Wi-Fi state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#allowAutojoinGlobal(kotlin.Boolean)(allowAutojoin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether the device will automatically search for and connect to Wi-Fi networks - auto-join Wi-Fi networks. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addSuggestionUserApprovalStatusListener Add a listener for Wi-Fi network suggestion user approval status. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addWifiStateChangedListener Register a callback for Wi-Fi state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | allowAutojoinGlobal Control whether the device will automatically search for and connect to Wi-Fi networks - auto-join Wi-Fi networks. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#calculateSignalLevel(kotlin.Int)(rssi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given a raw RSSI, return the RSSI signal quality rating using the system default RSSI quality rating thresholds. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#calculateSignalLevel(kotlin.Int,%20kotlin.Int)(rssi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, numLevels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calculates the level of the signal. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#cancelWps(android.net.wifi.WifiManager.WpsCallback)(listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WpsCallback!)` WPS support has been deprecated from Client mode and this method will immediately trigger `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WpsCallback#onFailed(kotlin.Int)` with a generic error. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | calculateSignalLevel Given a raw RSSI, return the RSSI signal quality rating using the system default RSSI quality rating thresholds. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | calculateSignalLevel Calculates the level of the signal. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancelWps WPS support has been deprecated from Client mode and this method will immediately trigger onFailed with a generic error. |
 | --- | --- |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#compareSignalLevel(kotlin.Int,%20kotlin.Int)(rssiA: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rssiB: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compares two signal strengths. |
-| open [WifiManager.MulticastLock](../android/net/wifi/WifiManager.MulticastLock.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#createMulticastLock(kotlin.String)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new MulticastLock |
-| open [WifiManager.WifiLock](../android/net/wifi/WifiManager.WifiLock.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#createWifiLock(kotlin.Int,%20kotlin.String)(lockType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new WifiLock. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareSignalLevel Compares two signal strengths. |
+| open [WifiManager.MulticastLock](../android/net/wifi/WifiManager.MulticastLock.md)! | createMulticastLock Create a new MulticastLock |
+| open [WifiManager.WifiLock](../android/net/wifi/WifiManager.WifiLock.md)! | createWifiLock Creates a new WifiLock. |
 | --- | --- |
-| open [WifiManager.WifiLock](../android/net/wifi/WifiManager.WifiLock.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#createWifiLock(kotlin.String)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new WifiLock. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#disableNetwork(kotlin.Int)(netId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Disable a configured network. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#disallowCurrentSuggestedNetwork(android.net.wifi.BlockingOption)(blockingOption: https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption)` When the device is connected to a network suggested by calling app `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, this API provide a way to avoid the current connection without `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)`. |
+| open [WifiManager.WifiLock](../android/net/wifi/WifiManager.WifiLock.md)! | createWifiLock Creates a new WifiLock. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | disableNetwork Disable a configured network. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disallowCurrentSuggestedNetwork When the device is connected to a network suggested by calling app addNetworkSuggestions, this API provide a way to avoid the current connection without removeNetworkSuggestions. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#disconnect()()` Disassociate from the currently active access point. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#enableNetwork(kotlin.Int,%20kotlin.Boolean)(netId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, attemptConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Allow a previously configured network to be associated with. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#flushPasspointAnqpCache()()` Flush Passpoint ANQP cache, and clear pending ANQP requests. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | disconnect Disassociate from the currently active access point. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | enableNetwork Allow a previously configured network to be associated with. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flushPasspointAnqpCache Flush Passpoint ANQP cache, and clear pending ANQP requests. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](WifiAvailableChannel.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getAllowedChannels(kotlin.Int,%20kotlin.Int)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s), that is allowed for the current regulatory domain. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](WifiConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getCallerConfiguredNetworks()()` Return a list of all the networks previously configured by the calling app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getChannelData(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!>)` Get channel data such as the number of APs found on each channel from the most recent scan. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](WifiAvailableChannel.md)!\> | getAllowedChannels Returns a list of WifiAvailableChannel for the specified band and operational mode(s), that is allowed for the current regulatory domain. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](WifiConfiguration.md)!\> | getCallerConfiguredNetworks Return a list of all the networks previously configured by the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChannelData Get channel data such as the number of APs found on each channel from the most recent scan. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](WifiConfiguration.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConfiguredNetworks()()` Return a list of all the networks configured for the current foreground user. |
-| open [WifiInfo](WifiInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConnectionInfo()()` Return dynamic information about the current Wi-Fi connection, if any is active. |
-| open [DhcpInfo](../android.net/DhcpInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getDhcpInfo()()` Return the DHCP-assigned addresses from the last successful DHCP request, if any. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](WifiConfiguration.md)!\>! | getConfiguredNetworks Return a list of all the networks configured for the current foreground user. |
+| open [WifiInfo](WifiInfo.md)! | getConnectionInfo Return dynamic information about the current Wi-Fi connection, if any is active. |
+| open [DhcpInfo](../android.net/DhcpInfo.md)! | getDhcpInfo Return the DHCP-assigned addresses from the last successful DHCP request, if any. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxNumberOfChannelsPerNetworkSpecifierRequest()()` Returns the max number of channels that is allowed to be set on a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxNumberOfNetworkSuggestionsPerApp()()` Returns the max number of network suggestions that are allowed per app on the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxSignalLevel()()` Get the system default maximum signal level. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxNumberOfChannelsPerNetworkSpecifierRequest Returns the max number of channels that is allowed to be set on a WifiNetworkSpecifier. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxNumberOfNetworkSuggestionsPerApp Returns the max number of network suggestions that are allowed per app on the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxSignalLevel Get the system default maximum signal level. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxSupportedConcurrentTdlsSessions(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Return the maximum number of concurrent TDLS sessions supported by the device. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](WifiNetworkSuggestion.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getNetworkSuggestions()()` Get all network suggestions provided by the calling app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getNumberOfEnabledTdlsSessions(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Return the number of currently enabled TDLS sessions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getMaxSupportedConcurrentTdlsSessions Return the maximum number of concurrent TDLS sessions supported by the device. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](WifiNetworkSuggestion.md)!\> | getNetworkSuggestions Get all network suggestions provided by the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getNumberOfEnabledTdlsSessions Return the number of currently enabled TDLS sessions. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PasspointConfiguration](../android.net.wifi.hotspot2/PasspointConfiguration.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getPasspointConfigurations()()` Return the list of installed Passpoint configurations added by the caller. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getPerSsidRoamingModes(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>!>)` This API allows a privileged application to get roaming mode policies configured using the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult](ScanResult.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getScanResults()()` Return the results of the latest access point scan. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PasspointConfiguration](../android.net.wifi.hotspot2/PasspointConfiguration.md)!\>! | getPasspointConfigurations Return the list of installed Passpoint configurations added by the caller. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getPerSsidRoamingModes This API allows a privileged application to get roaming mode policies configured using the setPerSsidRoamingMode. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult](ScanResult.md)!\>! | getScanResults Return the results of the latest access point scan. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getStaConcurrencyForMultiInternetMode()()` The device may support concurrent connections to multiple internet-providing Wi-Fi networks (APs) - that is indicated by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForMultiInternetSupported()`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](WifiAvailableChannel.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getUsableChannels(kotlin.Int,%20kotlin.Int)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s) per the current regulatory domain and device-specific constraints such as concurrency state and interference due to other radios. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()()` Gets the Wi-Fi enabled state. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStaConcurrencyForMultiInternetMode The device may support concurrent connections to multiple internet-providing Wi-Fi networks (APs) - that is indicated by isStaConcurrencyForMultiInternetSupported. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](WifiAvailableChannel.md)!\> | getUsableChannels Returns a list of WifiAvailableChannel for the specified band and operational mode(s) per the current regulatory domain and device-specific constraints such as concurrency state and interference due to other radios. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWifiState Gets the Wi-Fi enabled state. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#is24GHzBandSupported()()` Check if the chipset supports 2. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#is5GHzBandSupported()()` Check if the chipset supports 5GHz band. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#is60GHzBandSupported()()` Check if the chipset supports the 60GHz frequency band. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is24GHzBandSupported Check if the chipset supports 2. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is5GHzBandSupported Check if the chipset supports 5GHz band. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is60GHzBandSupported Check if the chipset supports the 60GHz frequency band. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#is6GHzBandSupported()()` Check if the chipset supports 6GHz band. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isAggressiveRoamingModeSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isAutoWakeupEnabled()()` Get the persisted Wi-Fi auto wakeup feature state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is6GHzBandSupported Check if the chipset supports 6GHz band. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAggressiveRoamingModeSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAutoWakeupEnabled Get the persisted Wi-Fi auto wakeup feature state. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isBridgedApConcurrencySupported()()` Query whether or not the device supports multiple Access point (AP) which are bridged together. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isCarrierNetworkOffloadEnabled(kotlin.Int,%20kotlin.Boolean)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, merged: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Get the carrier network offload state for merged or unmerged networks for specified subscription. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isD2dSupportedWhenInfraStaDisabled()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBridgedApConcurrencySupported Query whether or not the device supports multiple Access point (AP) which are bridged together. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCarrierNetworkOffloadEnabled Get the carrier network offload state for merged or unmerged networks for specified subscription. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isD2dSupportedWhenInfraStaDisabled <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isDecoratedIdentitySupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isDeviceToApRttSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isDualBandSimultaneousSupported()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDecoratedIdentitySupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceToApRttSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDualBandSimultaneousSupported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isEasyConnectDppAkmSupported()()` Wi-Fi Easy Connect DPP AKM enables provisioning and configuration of Wi-Fi devices without the need of using the device PSK passphrase. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isEasyConnectEnrolleeResponderModeSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isEasyConnectSupported()()` Wi-Fi Easy Connect (DPP) introduces standardized mechanisms to simplify the provisioning and configuration of Wi-Fi devices. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEasyConnectDppAkmSupported Wi-Fi Easy Connect DPP AKM enables provisioning and configuration of Wi-Fi devices without the need of using the device PSK passphrase. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEasyConnectEnrolleeResponderModeSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEasyConnectSupported Wi-Fi Easy Connect (DPP) introduces standardized mechanisms to simplify the provisioning and configuration of Wi-Fi devices. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isEnhancedOpenSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isEnhancedPowerReportingSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isMakeBeforeBreakWifiSwitchingSupported()()` Query whether or not the device supports concurrent station (STA) connections for make-before-break wifi to wifi switching. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnhancedOpenSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnhancedPowerReportingSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMakeBeforeBreakWifiSwitchingSupported Query whether or not the device supports concurrent station (STA) connections for make-before-break wifi to wifi switching. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isP2pSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isPasspointTermsAndConditionsSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isPreferredNetworkOffloadSupported()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isP2pSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPasspointTermsAndConditionsSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPreferredNetworkOffloadSupported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isScanAlwaysAvailable()()` Check if scanning is always available. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isScanThrottleEnabled()()` Get the persisted Wi-Fi scan throttle state. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaApConcurrencySupported()()` Query whether or not the device supports Station (STA) + Access point (AP) concurrency. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isScanAlwaysAvailable Check if scanning is always available. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isScanThrottleEnabled Get the persisted Wi-Fi scan throttle state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStaApConcurrencySupported Query whether or not the device supports Station (STA) + Access point (AP) concurrency. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaBridgedApConcurrencySupported()()` Query whether or not the device supports concurrency of Station (STA) + multiple access points (AP) (where the APs bridged together). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForLocalOnlyConnectionsSupported()()` Query whether or not the device supports concurrent station (STA) connections for local-only connections using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForMultiInternetSupported()()` Query whether or not the device supports concurrent station (STA) connections for multi internet connections. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStaBridgedApConcurrencySupported Query whether or not the device supports concurrency of Station (STA) + multiple access points (AP) (where the APs bridged together). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStaConcurrencyForLocalOnlyConnectionsSupported Query whether or not the device supports concurrent station (STA) connections for local-only connections using WifiNetworkSpecifier. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStaConcurrencyForMultiInternetSupported Query whether or not the device supports concurrent station (STA) connections for multi internet connections. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTdlsOperationCurrentlyAvailable(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Check if a TDLS session can be established at this time via `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` Internally framework checks the STA connected state, device support for TDLS and the number of TDLS sessions available in driver/firmware. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTdlsSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTidToLinkMappingNegotiationSupported()()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | isTdlsOperationCurrentlyAvailable Check if a TDLS session can be established at this time via setTdlsEnabled or setTdlsEnabledWithMacAddress or setTdlsEnabled or setTdlsEnabledWithMacAddress Internally framework checks the STA connected state, device support for TDLS and the number of TDLS sessions available in driver/firmware. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTdlsSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTidToLinkMappingNegotiationSupported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTlsMinimumVersionSupported()()` Indicate that whether or not settings required TLS minimum version is supported. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTlsV13Supported()()` Indicate that whether or not TLS v1. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isTrustOnFirstUseSupported()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTlsMinimumVersionSupported Indicate that whether or not settings required TLS minimum version is supported. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTlsV13Supported Indicate that whether or not TLS v1. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTrustOnFirstUseSupported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWapiSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWepSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWifiDisplayR2Supported()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWapiSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWepSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWifiDisplayR2Supported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWifiEnabled()()` Return whether Wi-Fi is enabled or disabled. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWifiPasspointEnabled()()` If the device supports Wi-Fi Passpoint, the user can explicitly enable or disable it. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWifiStandardSupported(kotlin.Int)(standard: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check if the chipset supports a certain Wi-Fi standard. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWifiEnabled Return whether Wi-Fi is enabled or disabled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWifiPasspointEnabled If the device supports Wi-Fi Passpoint, the user can explicitly enable or disable it. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWifiStandardSupported Check if the chipset supports a certain Wi-Fi standard. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWpa3SaeH2eSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWpa3SaePublicKeySupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWpa3SaeSupported()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWpa3SaeH2eSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWpa3SaePublicKeySupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWpa3SaeSupported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWpa3SuiteBSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWpaPersonalSupported()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#pingSupplicant()()` Check that the supplicant daemon is responding to requests. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWpa3SuiteBSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWpaPersonalSupported <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | pingSupplicant Check that the supplicant daemon is responding to requests. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#queryAutojoinGlobal(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Query whether or not auto-join global is enabled/disabled |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#querySendDhcpHostnameRestriction(java.util.concurrent.Executor,%20java.util.function.IntConsumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Query the global restriction on which networks to send the device hostname to during DHCP. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#reassociate()()` Reconnect to the currently active access point, even if we are already connected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queryAutojoinGlobal Query whether or not auto-join global is enabled/disabled |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | querySendDhcpHostnameRestriction Query the global restriction on which networks to send the device hostname to during DHCP. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | reassociate Reconnect to the currently active access point, even if we are already connected. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#reconnect()()` Reconnect to the currently active access point, if we are currently disconnected. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#registerScanResultsCallback(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.ScanResultsCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.ScanResultsCallback)` Register a callback for Scan Results. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#registerSubsystemRestartTrackingCallback(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SubsystemRestartTrackingCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback)` Registers a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` to listen to Wi-Fi subsystem restarts. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | reconnect Reconnect to the currently active access point, if we are currently disconnected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerScanResultsCallback Register a callback for Scan Results. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerSubsystemRestartTrackingCallback Registers a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` to listen to Wi-Fi subsystem restarts. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeLocalOnlyConnectionFailureListener(android.net.wifi.WifiManager.LocalOnlyConnectionFailureListener)(listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener)` Allow callers to remove a previously registered listener. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetwork(kotlin.Int)(netId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove the specified network from the list of configured networks. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)(networkSuggestions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion!>)` Remove some or all of the network suggestions that were previously provided by the app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeLocalOnlyConnectionFailureListener Allow callers to remove a previously registered listener. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeNetwork Remove the specified network from the list of configured networks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | removeNetworkSuggestions Remove some or all of the network suggestions that were previously provided by the app. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList,%20kotlin.Int)(networkSuggestions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion!>, action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove some or all of the network suggestions that were previously provided by the app. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNonCallerConfiguredNetworks()()` Remove all configured networks that were not created by the calling app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removePasspointConfiguration(kotlin.String)(fqdn: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Remove the Passpoint configuration identified by its FQDN (Fully Qualified Domain Name) added by the caller. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | removeNetworkSuggestions Remove some or all of the network suggestions that were previously provided by the app. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeNonCallerConfiguredNetworks Remove all configured networks that were not created by the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removePasspointConfiguration Remove the Passpoint configuration identified by its FQDN (Fully Qualified Domain Name) added by the caller. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removePerSsidRoamingMode(android.net.wifi.WifiSsid)(ssid: https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid)` This API allows a privileged application to remove roaming mode policy configured using the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeSuggestionConnectionStatusListener(android.net.wifi.WifiManager.SuggestionConnectionStatusListener)(listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionConnectionStatusListener)` Allow callers to remove a previously registered listener. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeSuggestionUserApprovalStatusListener(android.net.wifi.WifiManager.SuggestionUserApprovalStatusListener)(listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener)` Allow callers to remove a previously registered listener using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addSuggestionUserApprovalStatusListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SuggestionUserApprovalStatusListener)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removePerSsidRoamingMode This API allows a privileged application to remove roaming mode policy configured using the setPerSsidRoamingMode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeSuggestionConnectionStatusListener Allow callers to remove a previously registered listener. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeSuggestionUserApprovalStatusListener Allow callers to remove a previously registered listener using addSuggestionUserApprovalStatusListener. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeWifiStateChangedListener(android.net.wifi.WifiManager.WifiStateChangedListener)(listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WifiStateChangedListener)` Unregisters a WifiStateChangedListener from listening on the current Wi-Fi state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#reportCreateInterfaceImpact(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.BiConsumer)(interfaceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, requireNewInterface: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultCallback: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.InterfaceCreationImpact!>!>)` Queries the framework to determine whether the specified interface can be created, and if so - what other interfaces would be torn down by the framework to allow this creation if it were requested. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#saveConfiguration()()` Tell the device to persist the current list of configured networks. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeWifiStateChangedListener Unregisters a WifiStateChangedListener from listening on the current Wi-Fi state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reportCreateInterfaceImpact Queries the framework to determine whether the specified interface can be created, and if so - what other interfaces would be torn down by the framework to allow this creation if it were requested. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | saveConfiguration Tell the device to persist the current list of configured networks. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)(ssid: https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid, roamingMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This API allows a privileged application to set roaming mode per SSID. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setSendDhcpHostnameRestriction(kotlin.Int)(restriction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the global restrictions on which networks to send the device hostname to during DHCP. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)(remoteIPAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable/Disable TDLS on a specific local route. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPerSsidRoamingMode This API allows a privileged application to set roaming mode per SSID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSendDhcpHostnameRestriction Sets the global restrictions on which networks to send the device hostname to during DHCP. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTdlsEnabled Enable/Disable TDLS on a specific local route. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(remoteIPAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Enable/Disable TDLS on a specific local route. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean)(remoteMacAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Similar to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)`, except this version allows you to specify remote endpoint with a MAC address. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(remoteMacAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Enable/Disable TDLS with a specific peer Mac Address. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTdlsEnabled Enable/Disable TDLS on a specific local route. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTdlsEnabledWithMacAddress Similar to setTdlsEnabled, except this version allows you to specify remote endpoint with a MAC address. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTdlsEnabledWithMacAddress Enable/Disable TDLS with a specific peer Mac Address. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setWifiEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable Wi-Fi. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotCallback,%20android.os.Handler)(callback: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Request a local only hotspot that an application can use to communicate between co-located devices connected to the created WiFi hotspot. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startLocalOnlyHotspotWithConfiguration(android.net.wifi.SoftApConfiguration,%20java.util.concurrent.Executor,%20android.net.wifi.WifiManager.LocalOnlyHotspotCallback)(config: https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback)` Starts a local-only hotspot with a specific configuration applied. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setWifiEnabled Enable or disable Wi-Fi. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startLocalOnlyHotspot Request a local only hotspot that an application can use to communicate between co-located devices connected to the created WiFi hotspot. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startLocalOnlyHotspotWithConfiguration Starts a local-only hotspot with a specific configuration applied. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startScan()()` Request a scan for access points. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startWps(android.net.wifi.WpsInfo,%20android.net.wifi.WifiManager.WpsCallback)(config: https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo!, listener: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WpsCallback!)` WPS suport has been deprecated from Client mode and this method will immediately trigger `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WpsCallback#onFailed(kotlin.Int)` with a generic error. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#unregisterScanResultsCallback(android.net.wifi.WifiManager.ScanResultsCallback)(callback: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.ScanResultsCallback)` Allow callers to unregister a previously registered callback. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | startScan Request a scan for access points. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startWps WPS suport has been deprecated from Client mode and this method will immediately trigger onFailed with a generic error. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterScanResultsCallback Allow callers to unregister a previously registered callback. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#unregisterSubsystemRestartTrackingCallback(android.net.wifi.WifiManager.SubsystemRestartTrackingCallback)(callback: https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback)` Unregisters a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` registered with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#registerSubsystemRestartTrackingCallback(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SubsystemRestartTrackingCallback)` Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String` |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#updateNetwork(android.net.wifi.WifiConfiguration)(config: https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration!)` Update the network description of an existing configured network. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#validateSoftApConfiguration(android.net.wifi.SoftApConfiguration)(config: https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration)` Check if input configuration is valid. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterSubsystemRestartTrackingCallback Unregisters a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` registered with registerSubsystemRestartTrackingCallback Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String` |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | updateNetwork Update the network description of an existing configured network. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | validateSoftApConfiguration Check if input configuration is valid. |
 | --- | --- |
 
 ## Constants
@@ -353,7 +353,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_REMOVE_SUGGESTION_LINGER: Int
 ```
 
-If one of the removed suggestions is currently connected, that network will be disconnected after a short delay as opposed to immediately (which will be done by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int`). The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` may call the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback.html#onLosing(android.net.Network,%20kotlin.Int)` on such networks.
+If one of the removed suggestions is currently connected, that network will be disconnected after a short delay as opposed to immediately (which will be done by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int`). The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` may call the onLosing on such networks.
 
  Value: 1
 
@@ -379,7 +379,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION: String
 ```
 
-Directed broadcast intent action indicating that the device has connected to one of the network suggestions provided by the app. This will be sent post connection to a network which was created with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsAppInteractionRequired(kotlin.Boolean)` flag set.
+Directed broadcast intent action indicating that the device has connected to one of the network suggestions provided by the app. This will be sent post connection to a network which was created with setIsAppInteractionRequired flag set.
 
 Note: The broadcast is sent to the app only if it holds `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission.
 
@@ -409,7 +409,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CHANNEL_DATA_KEY_FREQUENCY_MHZ: String
 ```
 
-The bundle key string for the channel frequency in MHz. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getChannelData(java.util.concurrent.Executor,%20java.util.function.Consumer)`
+The bundle key string for the channel frequency in MHz. See getChannelData
 
  Value: "CHANNEL_DATA_KEY_FREQUENCY_MHZ"
 
@@ -421,7 +421,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CHANNEL_DATA_KEY_NUM_AP: String
 ```
 
-The bundle key for the number of APs found on the corresponding channel specified by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_FREQUENCY_MHZ:kotlin.String`. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getChannelData(java.util.concurrent.Executor,%20java.util.function.Consumer)`
+The bundle key for the number of APs found on the corresponding channel specified by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_FREQUENCY_MHZ:kotlin.String`. See getChannelData
 
  Value: "CHANNEL_DATA_KEY_NUM_AP"
 
@@ -463,7 +463,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_NETWORK_INFO: String
 ```
 
-The lookup key for a `https://developer.android.com/reference/kotlin/android/net/NetworkInfo.html#` object associated with the Wi-Fi network. Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)`.
+The lookup key for a `https://developer.android.com/reference/kotlin/android/net/NetworkInfo.html#` object associated with the Wi-Fi network. Retrieve with getParcelableExtra.
 
  Value: "networkInfo"
 
@@ -475,7 +475,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NETWORK_SUGGESTION: String
 ```
 
-Sent as as a part of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION:kotlin.String` that holds an instance of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` corresponding to the connected network.
+Sent as as a part of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION:kotlin.String` that holds an instance of WifiNetworkSuggestion corresponding to the connected network.
 
  Value: "android.net.wifi.extra.NETWORK_SUGGESTION"
 
@@ -502,7 +502,7 @@ static val EXTRA_NEW_STATE: String
 
 **Deprecated:** *This is no longer supported.*
 
-The lookup key for a `https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState` describing the new state Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)`.
+The lookup key for a SupplicantState describing the new state Retrieve with getParcelableExtra.
 
  Value: "newState"
 
@@ -563,7 +563,7 @@ static val EXTRA_SUPPLICANT_CONNECTED: String
 
 **Deprecated:** *This is no longer supported.*
 
-The lookup key for a boolean that indicates whether a connection to the supplicant daemon has been gained or lost. `true` means a connection now exists. Retrieve it with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getBooleanExtra(kotlin.String,%20kotlin.Boolean)`.
+The lookup key for a boolean that indicates whether a connection to the supplicant daemon has been gained or lost. `true` means a connection now exists. Retrieve it with getBooleanExtra.
 
  Value: "connected"
 
@@ -578,7 +578,7 @@ static val EXTRA_SUPPLICANT_ERROR: String
 
 **Deprecated:** *This is no longer supported.*
 
-The lookup key for a `https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState` describing the supplicant error code if any Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)`.
+The lookup key for a SupplicantState describing the supplicant error code if any Retrieve with getIntExtra.
 
  Value: "supplicantError"
 
@@ -597,7 +597,7 @@ static val EXTRA_WIFI_INFO: String
 
 **Deprecated:** *Deprecated in Java.*
 
-The lookup key for a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo` object giving the information about the access point to which we are connected. No longer used.
+The lookup key for a WifiInfo object giving the information about the access point to which we are connected. No longer used.
 
  Value: "wifiInfo"
 
@@ -609,7 +609,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_WIFI_STATE: String
 ```
 
-The lookup key for an int that indicates whether Wi-Fi is enabled, disabled, enabling, disabling, or unknown. Retrieve it with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)`.
+The lookup key for an int that indicates whether Wi-Fi is enabled, disabled, enabling, disabling, or unknown. Retrieve it with getIntExtra.
 
  Value: "wifi_state"
 
@@ -735,7 +735,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SCAN_RESULTS_AVAILABLE_ACTION: String
 ```
 
-An access point scan has completed, and results are available. Call `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getScanResults()` to obtain the results. The broadcast intent may contain an extra field with the key `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_RESULTS_UPDATED:kotlin.String` and a `boolean` value indicating if the scan was successful.
+An access point scan has completed, and results are available. Call getScanResults to obtain the results. The broadcast intent may contain an extra field with the key `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#EXTRA_RESULTS_UPDATED:kotlin.String` and a `boolean` value indicating if the scan was successful.
 
  Value: "android.net.wifi.SCAN_RESULTS"
 
@@ -831,13 +831,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_DUPLICATE: Int
 ```
 
-Reason code if one or more of the network suggestions added already exists in platform's database. Note: this code will not be returned with Android 11 as in-place modification is allowed, please check `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`.
+Reason code if one or more of the network suggestions added already exists in platform's database. Note: this code will not be returned with Android 11 as in-place modification is allowed, please check addNetworkSuggestions.
 
  Value: 3
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any)`
+- equals
 
 ### STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_EXCEEDS_MAX_PER_APP
 
@@ -847,13 +847,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_EXCEEDS_MAX_PER_APP: Int
 ```
 
-Reason code if the number of network suggestions provided by the app crosses the max threshold set per app. The framework will reject all suggestions provided by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)` if the total size exceeds the limit.
+Reason code if the number of network suggestions provided by the app crosses the max threshold set per app. The framework will reject all suggestions provided by addNetworkSuggestions if the total size exceeds the limit.
 
  Value: 4
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxNumberOfNetworkSuggestionsPerApp()`
+- getMaxNumberOfNetworkSuggestionsPerApp
 
 ### STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_INVALID
 
@@ -863,7 +863,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_INVALID: Int
 ```
 
-Reason code if one or more of the network suggestions added is invalid. Framework will reject all the suggestions in the list. The framework will reject all suggestions provided by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)` if one or more of them is invalid. Please use `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder` to create network suggestions.
+Reason code if one or more of the network suggestions added is invalid. Framework will reject all the suggestions in the list. The framework will reject all suggestions provided by addNetworkSuggestions if one or more of them is invalid. Please use `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder` to create network suggestions.
 
  Value: 7
 
@@ -875,7 +875,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_NETWORK_SUGGESTIONS_ERROR_ADD_NOT_ALLOWED: Int
 ```
 
-Reason code if one or more of the network suggestions added is not allowed. The framework will reject all suggestions provided by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)` if one or more of them is not allowed. This error may be caused by suggestion is using SIM-based encryption method, but calling app is not carrier privileged.
+Reason code if one or more of the network suggestions added is not allowed. The framework will reject all suggestions provided by addNetworkSuggestions if one or more of them is not allowed. This error may be caused by suggestion is using SIM-based encryption method, but calling app is not carrier privileged.
 
  Value: 6
 
@@ -893,7 +893,7 @@ Reason code if the user has disallowed "android:change_wifi_state" app-ops from 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)`
+- unsafeCheckOp
 
 ### STATUS_NETWORK_SUGGESTIONS_ERROR_INTERNAL
 
@@ -915,13 +915,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_NETWORK_SUGGESTIONS_ERROR_REMOVE_INVALID: Int
 ```
 
-Reason code if one or more of the network suggestions removed does not exist in platform's database. The framework won't remove any suggestions if one or more of suggestions provided by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` does not exist in database.
+Reason code if one or more of the network suggestions removed does not exist in platform's database. The framework won't remove any suggestions if one or more of suggestions provided by removeNetworkSuggestions does not exist in database.
 
  Value: 5
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any)`
+- equals
 
 ### STATUS_NETWORK_SUGGESTIONS_ERROR_RESTRICTED_BY_ADMIN
 
@@ -961,7 +961,7 @@ Status code if the calling app was approved by virtue of being a carrier privile
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`
+- hasCarrierPrivileges
 
 ### STATUS_SUGGESTION_APPROVAL_APPROVED_BY_USER
 
@@ -1089,7 +1089,7 @@ static val SUPPLICANT_STATE_CHANGED_ACTION: String
 
 **Deprecated:** *This is no longer supported.*
 
-Broadcast intent action indicating that the state of establishing a connection to an access point has changed.One extra provides the new `https://developer.android.com/reference/kotlin/android/net/wifi/SupplicantState`. Note that the supplicant state is Wi-Fi specific, and is not generally the most useful thing to look at if you are just interested in the overall state of connectivity.
+Broadcast intent action indicating that the state of establishing a connection to an access point has changed.One extra provides the new SupplicantState. Note that the supplicant state is Wi-Fi specific, and is not generally the most useful thing to look at if you are just interested in the overall state of connectivity.
 
  Value: "android.net.wifi.supplicant.STATE_CHANGE"
 
@@ -1253,7 +1253,7 @@ Wi-Fi simultaneous connection to multiple internet-providing Wi-FI networks (APs
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getStaConcurrencyForMultiInternetMode()`
+- getStaConcurrencyForMultiInternetMode
 
 ### WIFI_MULTI_INTERNET_MODE_DISABLED
 
@@ -1269,7 +1269,7 @@ Wi-Fi simultaneous connection to multiple internet-providing Wi-Fi networks (APs
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getStaConcurrencyForMultiInternetMode()`
+- getStaConcurrencyForMultiInternetMode
 
 ### WIFI_MULTI_INTERNET_MODE_MULTI_AP
 
@@ -1285,7 +1285,7 @@ Wi-Fi simultaneous connection to multiple internet-providing Wi-Fi networks (APs
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getStaConcurrencyForMultiInternetMode()`
+- getStaConcurrencyForMultiInternetMode
 
 ### WIFI_STATE_CHANGED_ACTION
 
@@ -1321,7 +1321,7 @@ Wi-Fi is disabled.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_STATE_CHANGED_ACTION:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()`
+- getWifiState
 
 ### WIFI_STATE_DISABLING
 
@@ -1338,7 +1338,7 @@ Wi-Fi is currently being disabled. The state will change to `https://developer.a
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_STATE_CHANGED_ACTION:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()`
+- getWifiState
 
 ### WIFI_STATE_ENABLED
 
@@ -1355,7 +1355,7 @@ Wi-Fi is enabled.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_STATE_CHANGED_ACTION:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()`
+- getWifiState
 
 ### WIFI_STATE_ENABLING
 
@@ -1372,7 +1372,7 @@ Wi-Fi is currently being enabled. The state will change to `https://developer.an
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_STATE_CHANGED_ACTION:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()`
+- getWifiState
 
 ### WIFI_STATE_UNKNOWN
 
@@ -1389,7 +1389,7 @@ Wi-Fi is in an unknown state. This state will occur when an error happens while 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_STATE_CHANGED_ACTION:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()`
+- getWifiState
 
 ### WPS_AUTH_FAILURE
 
@@ -1479,7 +1479,7 @@ open fun addLocalOnlyConnectionFailureListener(
 ): Unit
 ```
 
-Add a listener for local-only networks. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier`. Specify the caller will only get connection failures for networks they requested. Caller can remove a previously registered listener using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeLocalOnlyConnectionFailureListener(android.net.wifi.WifiManager.LocalOnlyConnectionFailureListener)` Same caller can add multiple listeners to monitor the event.
+Add a listener for local-only networks. See WifiNetworkSpecifier. Specify the caller will only get connection failures for networks they requested. Caller can remove a previously registered listener using removeLocalOnlyConnectionFailureListener Same caller can add multiple listeners to monitor the event.
 
 Applications should have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String` permissions. Callers without the permission will trigger a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`.
 
@@ -1488,7 +1488,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.LocalOnlyConnectionFailureListener](../android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener.md): listener for local-only network connection failure. This value cannot be `null`. |
 
 ### addNetwork
@@ -1500,7 +1500,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun addNetwork(config: WifiConfiguration!): Int
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `-1`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `-1`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -1511,11 +1511,11 @@ Add a new network description to the set of configured networks. The `networkId`
 
 <br />
 
-The new network will be marked DISABLED by default. To enable it, called `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#enableNetwork(kotlin.Int,%20kotlin.Boolean)`.
+The new network will be marked DISABLED by default. To enable it, called enableNetwork.
 
 | Parameters ||
 |---|---|
-| `config` | [WifiConfiguration](WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
+| `config` | [WifiConfiguration](WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a WifiConfiguration object. If the WifiConfiguration has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
 
 | Return ||
 |---|---|
@@ -1529,15 +1529,15 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun addNetworkPrivileged(config: WifiConfiguration): WifiManager.AddNetworkResult
 ```
 
-This is a new version of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)` which returns more detailed failure codes. The usage of this API is limited to Device Owner (DO), Profile Owner (PO), system app, and privileged apps.
+This is a new version of addNetwork which returns more detailed failure codes. The usage of this API is limited to Device Owner (DO), Profile Owner (PO), system app, and privileged apps.
 
-Add a new network description to the set of configured networks. The `networkId` field of the supplied configuration object is ignored. The new network will be marked DISABLED by default. To enable it, call `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#enableNetwork(kotlin.Int,%20kotlin.Boolean)`.
+Add a new network description to the set of configured networks. The `networkId` field of the supplied configuration object is ignored. The new network will be marked DISABLED by default. To enable it, call enableNetwork.
 
 <br />
 
 | Parameters ||
 |---|---|
-| `config` | [WifiConfiguration](WifiConfiguration.md): the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. This value cannot be `null`. |
+| `config` | [WifiConfiguration](WifiConfiguration.md): the set of variables that describe the configuration, contained in a WifiConfiguration object. If the WifiConfiguration has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1556,13 +1556,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun addNetworkSuggestions(networkSuggestions: MutableList<WifiNetworkSuggestion!>): Int
 ```
 
-Provide a list of network suggestions to the device. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` for a detailed explanation of the parameters. When the device decides to connect to one of the provided network suggestions, platform sends a directed broadcast `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION:kotlin.String` to the app if the network was created with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setIsAppInteractionRequired(kotlin.Boolean)` flag set and the app holds `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission.
+Provide a list of network suggestions to the device. See WifiNetworkSuggestion for a detailed explanation of the parameters. When the device decides to connect to one of the provided network suggestions, platform sends a directed broadcast `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_WIFI_NETWORK_SUGGESTION_POST_CONNECTION:kotlin.String` to the app if the network was created with setIsAppInteractionRequired flag set and the app holds `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission.
 
 NOTE:
 
 - These networks are just a suggestion to the platform. The platform will ultimately decide on which network the device connects to.
 - When an app is uninstalled or disabled, all its suggested networks are discarded. If the device is currently connected to a suggested network which is being removed then the device will disconnect from that network.
-- If user reset network settings, all added suggestions will be discarded. Apps can use `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getNetworkSuggestions()` to check if their suggestions are in the device.
+- If user reset network settings, all added suggestions will be discarded. Apps can use getNetworkSuggestions to check if their suggestions are in the device.
 - In-place modification of existing suggestions are allowed.
  - If the provided suggestions include any previously provided suggestions by the app, previous suggestions will be updated.
  - If one of the provided suggestions marks a previously unmetered suggestion as metered and the device is currently connected to that suggested network, then the device will disconnect from that network. The system will immediately re-evaluate all the network candidates and possibly reconnect back to the same suggestion. This disconnect is to make sure that any traffic flowing over unmetered networks isn't accidentally continued over a metered network.
@@ -1585,7 +1585,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any)`
+- equals
 
 ### addOrUpdatePasspointConfiguration
 
@@ -1595,7 +1595,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun addOrUpdatePasspointConfiguration(config: PasspointConfiguration!): Unit
 ```
 
-Add or update a Passpoint configuration. The configuration provides a credential for connecting to Passpoint networks that are operated by the Passpoint service provider specified in the configuration. Each configuration is uniquely identified by a unique key which depends on the contents of the configuration. This allows the caller to install multiple profiles with the same FQDN (Fully qualified domain name). Therefore, in order to update an existing profile, it is first required to remove it using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removePasspointConfiguration(kotlin.String)`. Otherwise, a new profile will be added with both configuration. Deprecated for general app usage - except DO/PO apps. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setPasspointConfig(android.net.wifi.hotspot2.PasspointConfiguration)` to create a passpoint suggestion. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or above, this API will always fail and throw `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
+Add or update a Passpoint configuration. The configuration provides a credential for connecting to Passpoint networks that are operated by the Passpoint service provider specified in the configuration. Each configuration is uniquely identified by a unique key which depends on the contents of the configuration. This allows the caller to install multiple profiles with the same FQDN (Fully qualified domain name). Therefore, in order to update an existing profile, it is first required to remove it using removePasspointConfiguration. Otherwise, a new profile will be added with both configuration. Deprecated for general app usage - except DO/PO apps. See setPasspointConfig to create a passpoint suggestion. See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or above, this API will always fail and throw `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
 
 Deprecation Exemptions:
 
@@ -1620,7 +1620,7 @@ open fun addSuggestionConnectionStatusListener(
 ): Unit
 ```
 
-Add a listener for suggestion networks. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionConnectionStatusListener`. Caller will receive the event when suggested network have connection failure. Caller can remove a previously registered listener using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeSuggestionConnectionStatusListener(android.net.wifi.WifiManager.SuggestionConnectionStatusListener)` Same caller can add multiple listeners to monitor the event.
+Add a listener for suggestion networks. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionConnectionStatusListener`. Caller will receive the event when suggested network have connection failure. Caller can remove a previously registered listener using removeSuggestionConnectionStatusListener Same caller can add multiple listeners to monitor the event.
 
 Applications should have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String` permissions. Callers without the permission will trigger a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`.
 
@@ -1629,7 +1629,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.SuggestionConnectionStatusListener](../android/net/wifi/WifiManager.SuggestionConnectionStatusListener.md): listener for suggestion network connection failure. This value cannot be `null`. |
 
 ### addSuggestionUserApprovalStatusListener
@@ -1643,12 +1643,12 @@ open fun addSuggestionUserApprovalStatusListener(
 ): Unit
 ```
 
-Add a listener for Wi-Fi network suggestion user approval status. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener`. Caller will receive a callback immediately after adding a listener and when the user approval status of the caller has changed. Caller can remove a previously registered listener using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeSuggestionUserApprovalStatusListener(android.net.wifi.WifiManager.SuggestionUserApprovalStatusListener)` A caller can add multiple listeners to monitor the event. 
+Add a listener for Wi-Fi network suggestion user approval status. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener`. Caller will receive a callback immediately after adding a listener and when the user approval status of the caller has changed. Caller can remove a previously registered listener using removeSuggestionUserApprovalStatusListener A caller can add multiple listeners to monitor the event. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.SuggestionUserApprovalStatusListener](../android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener.md): listener for suggestion user approval status changes. This value cannot be `null`. |
 
 ### addWifiStateChangedListener
@@ -1662,12 +1662,12 @@ open fun addWifiStateChangedListener(
 ): Unit
 ```
 
-Register a callback for Wi-Fi state. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WifiStateChangedListener`. Caller will receive the event when the Wi-Fi state changes. Caller can remove a previously registered callback using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeWifiStateChangedListener(android.net.wifi.WifiManager.WifiStateChangedListener)` 
+Register a callback for Wi-Fi state. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WifiStateChangedListener`. Caller will receive the event when the Wi-Fi state changes. Caller can remove a previously registered callback using removeWifiStateChangedListener 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to execute listener callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to execute listener callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.WifiStateChangedListener](../android/net/wifi/WifiManager.WifiStateChangedListener.md): Listener to register. This value cannot be `null`. |
 
 ### allowAutojoinGlobal
@@ -1702,7 +1702,7 @@ Given a raw RSSI, return the RSSI signal quality rating using the system default
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the RSSI signal quality rating, in the range \[0, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxSignalLevel()`\], where 0 is the lowest (worst signal) RSSI rating and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxSignalLevel()` is the highest (best signal) RSSI rating. Value is 0 or greater |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the RSSI signal quality rating, in the range \[0, getMaxSignalLevel\], where 0 is the lowest (worst signal) RSSI rating and getMaxSignalLevel is the highest (best signal) RSSI rating. Value is 0 or greater |
 
 ### calculateSignalLevel
 
@@ -1716,7 +1716,7 @@ open static fun calculateSignalLevel(
 ): Int
 ```
 
-**Deprecated:** *Callers should use `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#calculateSignalLevel(kotlin.Int)` instead to get the signal level using the system default RSSI thresholds, or otherwise compute the RSSI level themselves using their own formula.*
+**Deprecated:** *Callers should use calculateSignalLevel instead to get the signal level using the system default RSSI thresholds, or otherwise compute the RSSI level themselves using their own formula.*
 
 Calculates the level of the signal. This should be used any time a signal is being shown.
 
@@ -1740,7 +1740,7 @@ open fun cancelWps(listener: WifiManager.WpsCallback!): Unit
 
 **Deprecated:** *This API is deprecated*
 
-WPS support has been deprecated from Client mode and this method will immediately trigger `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WpsCallback#onFailed(kotlin.Int)` with a generic error.
+WPS support has been deprecated from Client mode and this method will immediately trigger onFailed with a generic error.
 
 | Parameters ||
 |---|---|
@@ -1854,7 +1854,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun disableNetwork(netId: Int): Boolean
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -1865,7 +1865,7 @@ Disable a configured network. The specified network will not be a candidate for 
 
 | Parameters ||
 |---|---|
-| `netId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the network as returned by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConfiguredNetworks()`. |
+| `netId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the network as returned by addNetwork or getConfiguredNetworks. |
 
 | Return ||
 |---|---|
@@ -1879,12 +1879,12 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun disallowCurrentSuggestedNetwork(blockingOption: BlockingOption): Unit
 ```
 
-When the device is connected to a network suggested by calling app `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, this API provide a way to avoid the current connection without `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)`. The disallowed network will be disconnected or roam to other networks. App can only use this API to control the current connected network which was suggested by this app. 
+When the device is connected to a network suggested by calling app addNetworkSuggestions, this API provide a way to avoid the current connection without removeNetworkSuggestions. The disallowed network will be disconnected or roam to other networks. App can only use this API to control the current connected network which was suggested by this app. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CHANGE_WIFI_STATE:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `blockingOption` | [BlockingOption](BlockingOption.md): Option to change for the network blocking `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption` This value cannot be `null`. |
+| `blockingOption` | [BlockingOption](BlockingOption.md): Option to change for the network blocking BlockingOption This value cannot be `null`. |
 
 ### disconnect
 
@@ -1895,7 +1895,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun disconnect(): Boolean
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -1920,7 +1920,7 @@ open fun enableNetwork(
 ): Boolean
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -1929,11 +1929,11 @@ open fun enableNetwork(
 
 Allow a previously configured network to be associated with. If `attemptConnect` is true, an attempt to connect to the selected network is initiated. This may result in the asynchronous delivery of state change events.
 
-**Note:** Network communication may not use Wi-Fi even if Wi-Fi is connected; traffic may instead be sent through another network, such as cellular data, Bluetooth tethering, or Ethernet. For example, traffic will never use a Wi-Fi network that does not provide Internet access (e.g. a wireless printer), if another network that does offer Internet access (e.g. cellular data) is available. Applications that need to ensure that their network traffic uses Wi-Fi should use APIs such as `https://developer.android.com/reference/kotlin/android/net/Network.html#bindSocket(java.net.Socket)`, `https://developer.android.com/reference/kotlin/android/net/Network.html#openConnection(java.net.URL)`, or `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#bindProcessToNetwork(android.net.Network)` to do so. Applications are not allowed to enable networks created by other applications.
+**Note:** Network communication may not use Wi-Fi even if Wi-Fi is connected; traffic may instead be sent through another network, such as cellular data, Bluetooth tethering, or Ethernet. For example, traffic will never use a Wi-Fi network that does not provide Internet access (e.g. a wireless printer), if another network that does offer Internet access (e.g. cellular data) is available. Applications that need to ensure that their network traffic uses Wi-Fi should use APIs such as bindSocket, openConnection, or bindProcessToNetwork to do so. Applications are not allowed to enable networks created by other applications.
 
 | Parameters ||
 |---|---|
-| `netId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the network as returned by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConfiguredNetworks()`. |
+| `netId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the network as returned by addNetwork or getConfiguredNetworks. |
 | `attemptConnect` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The way to select a particular network to connect to is specify `true` for this parameter. |
 
 | Return ||
@@ -1961,7 +1961,7 @@ open fun getAllowedChannels(
 ): MutableList<WifiAvailableChannel!>
 ```
 
-Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s), that is allowed for the current regulatory domain. An empty list implies that there are no available channels for use. Note: the `band` parameter which is specified as a `WifiScanner#WIFI_BAND_*` constant is limited to one of the band values specified below. Specifically, if the 5GHz band is included then it must include the DFS channels - an exception will be thrown otherwise. The caller should not make any assumptions about whether DFS channels are allowed. This API will indicate whether DFS channels are allowed for the specified operation mode(s) per device policy. 
+Returns a list of WifiAvailableChannel for the specified band and operational mode(s), that is allowed for the current regulatory domain. An empty list implies that there are no available channels for use. Note: the `band` parameter which is specified as a `WifiScanner#WIFI_BAND_*` constant is limited to one of the band values specified below. Specifically, if the 5GHz band is included then it must include the DFS channels - an exception will be thrown otherwise. The caller should not make any assumptions about whether DFS channels are allowed. This API will indicate whether DFS channels are allowed for the specified operation mode(s) per device policy. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NEARBY_WIFI_DEVICES:kotlin.String`
 
 | Parameters ||
@@ -1971,7 +1971,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel!>` | a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel!>` | a list of WifiAvailableChannel This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1990,7 +1990,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration!>` | a list of network configurations in the form of a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` objects. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration!>` | a list of network configurations in the form of a list of WifiConfiguration objects. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2012,7 +2012,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bundle](../android.os/Bundle.md)!\>!\>: A callback that will return `List<Bundle>` containing channel data such as the number of APs found on each channel. `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_FREQUENCY_MHZ:kotlin.String` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_NUM_AP:kotlin.String` are used to get the frequency (Mhz) and number of APs. This value cannot be `null`. |
 
 | Exceptions ||
@@ -2031,7 +2031,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun getConfiguredNetworks(): MutableList<WifiConfiguration!>!
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return an empty list.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return an empty list.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps will have access to the full list.
@@ -2059,7 +2059,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration!>!` | a list of network configurations in the form of a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` objects. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration!>!` | a list of network configurations in the form of a list of WifiConfiguration objects. |
 
 ### getConnectionInfo
 
@@ -2070,7 +2070,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun getConnectionInfo(): WifiInfo!
 ```
 
-**Deprecated:** *Starting with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, WifiInfo retrieval is moved to `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` API surface. WifiInfo is attached in `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#getTransportInfo()` which is available via callback in `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback.html#onCapabilitiesChanged(android.net.Network,%20android.net.NetworkCapabilities)` or on-demand from `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#getNetworkCapabilities(android.net.Network)`.*
+**Deprecated:** *Starting with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, WifiInfo retrieval is moved to `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` API surface. WifiInfo is attached in getTransportInfo which is available via callback in onCapabilitiesChanged or on-demand from getNetworkCapabilities.*
 
 <br />
 
@@ -2099,7 +2099,7 @@ connectivityManager.registerNetworkCallback(request, networkCallback); // For li
 ```
 **Compatibility Notes:**
 - Apps can continue using this API, however newer features such as ability to mask out location sensitive data in WifiInfo will not be supported via this API.
-- On devices supporting concurrent connections (indicated via `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForLocalOnlyConnectionsSupported()`, etc) this API will return the details of the internet providing connection (if any) to all apps, except for the apps that triggered the creation of the concurrent connection. For such apps, this API will return the details of the connection they created. e.g. apps using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier` will trigger a concurrent connection on supported devices and hence this API will provide details of their peer to peer connection (not the internet providing connection). This is to maintain backwards compatibility with behavior on single STA devices.*
+- On devices supporting concurrent connections (indicated via isStaConcurrencyForLocalOnlyConnectionsSupported, etc) this API will return the details of the internet providing connection (if any) to all apps, except for the apps that triggered the creation of the concurrent connection. For such apps, this API will return the details of the connection they created. e.g. apps using WifiNetworkSpecifier will trigger a concurrent connection on supported devices and hence this API will provide details of their peer to peer connection (not the internet providing connection). This is to maintain backwards compatibility with behavior on single STA devices.*
 
 <br />
 
@@ -2109,7 +2109,7 @@ Return dynamic information about the current Wi-Fi connection, if any is active.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo!` | the Wi-Fi information, contained in `https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo`. |
+| `https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo!` | the Wi-Fi information, contained in WifiInfo. |
 
 ### getDhcpInfo
 
@@ -2120,10 +2120,10 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun getDhcpInfo(): DhcpInfo!
 ```
 
-**Deprecated:** *Use the methods on `https://developer.android.com/reference/kotlin/android/net/LinkProperties.html#` which can be obtained either via `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback.html#onLinkPropertiesChanged(android.net.Network,%20android.net.LinkProperties)` or `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#getLinkProperties(android.net.Network)`.*
+**Deprecated:** *Use the methods on `https://developer.android.com/reference/kotlin/android/net/LinkProperties.html#` which can be obtained either via onLinkPropertiesChanged or getLinkProperties.*
 
 ***Compatibility Notes:***
-*- On devices supporting concurrent connections (indicated via `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForLocalOnlyConnectionsSupported()`, etc), this API will return the details of the internet providing connection (if any) to all apps, except for the apps that triggered the creation of the concurrent connection. For such apps, this API will return the details of the connection they created. e.g. apps using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier` will trigger a concurrent connection on supported devices and hence this API will provide details of their peer to peer connection (not the internet providing connection). This is to maintain backwards compatibility with behavior on single STA devices.*
+*- On devices supporting concurrent connections (indicated via isStaConcurrencyForLocalOnlyConnectionsSupported, etc), this API will return the details of the internet providing connection (if any) to all apps, except for the apps that triggered the creation of the concurrent connection. For such apps, this API will return the details of the connection they created. e.g. apps using WifiNetworkSpecifier will trigger a concurrent connection on supported devices and hence this API will provide details of their peer to peer connection (not the internet providing connection). This is to maintain backwards compatibility with behavior on single STA devices.*
 
 <br />
 
@@ -2141,7 +2141,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getMaxNumberOfChannelsPerNetworkSpecifierRequest(): Int
 ```
 
-Returns the max number of channels that is allowed to be set on a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier`.
+Returns the max number of channels that is allowed to be set on a WifiNetworkSpecifier.
 
 | Return ||
 |---|---|
@@ -2149,7 +2149,7 @@ Returns the max number of channels that is allowed to be set on a `https://devel
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#setPreferredChannelsFrequenciesMhz(kotlin.IntArray)`
+- setPreferredChannelsFrequenciesMhz
 
 ### getMaxNumberOfNetworkSuggestionsPerApp
 
@@ -2162,8 +2162,8 @@ open fun getMaxNumberOfNetworkSuggestionsPerApp(): Int
 Returns the max number of network suggestions that are allowed per app on the device.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)`
+- addNetworkSuggestions
+- removeNetworkSuggestions
 
 ### getMaxSignalLevel
 
@@ -2173,7 +2173,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getMaxSignalLevel(): Int
 ```
 
-Get the system default maximum signal level. This is the maximum RSSI level returned by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#calculateSignalLevel(kotlin.Int)`.
+Get the system default maximum signal level. This is the maximum RSSI level returned by calculateSignalLevel.
 
 | Return ||
 |---|---|
@@ -2194,7 +2194,7 @@ Return the maximum number of concurrent TDLS sessions supported by the device.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: An asynchronous callback that will return the maximum number of concurrent TDLS sessions supported by the device. Returns `-1` if information is not available, e.g. if the driver/firmware doesn't provide this information. This value cannot be `null`. |
 
 | Exceptions ||
@@ -2210,12 +2210,12 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getNetworkSuggestions(): MutableList<WifiNetworkSuggestion!>
 ```
 
-Get all network suggestions provided by the calling app. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)` See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` 
+Get all network suggestions provided by the calling app. See addNetworkSuggestions See removeNetworkSuggestions 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion!>` | a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion!>` | a list of WifiNetworkSuggestion This value cannot be `null`. |
 
 ### getNumberOfEnabledTdlsSessions
 
@@ -2228,11 +2228,11 @@ open fun getNumberOfEnabledTdlsSessions(
 ): Unit
 ```
 
-Return the number of currently enabled TDLS sessions. Tracks the number of peers enabled for TDLS session via `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
+Return the number of currently enabled TDLS sessions. Tracks the number of peers enabled for TDLS session via setTdlsEnabled, setTdlsEnabledWithMacAddress, setTdlsEnabled and setTdlsEnabledWithMacAddress
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: An asynchronous callback that will return the number of Peer Mac addresses configured in the driver for TDLS session. This value cannot be `null`. |
 
 | Exceptions ||
@@ -2255,7 +2255,7 @@ Return the list of installed Passpoint configurations added by the caller. An em
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration!>!` | A list of `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration` added by the caller |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration!>!` | A list of PasspointConfiguration added by the caller |
 
 ### getPerSsidRoamingModes
 
@@ -2268,11 +2268,11 @@ open fun getPerSsidRoamingModes(
 ): Unit
 ```
 
-This API allows a privileged application to get roaming mode policies configured using the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)`. Available for Device Owner (DO) and profile owner of an organization owned device. Other apps require `android.Manifest.permission#NETWORK_SETTINGS` or `android.Manifest.permission#MANAGE_WIFI_NETWORK_SELECTION` permission.
+This API allows a privileged application to get roaming mode policies configured using the setPerSsidRoamingMode. Available for Device Owner (DO) and profile owner of an organization owned device. Other apps require `android.Manifest.permission#NETWORK_SETTINGS` or `android.Manifest.permission#MANAGE_WIFI_NETWORK_SELECTION` permission.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>: An asynchronous callback that will return the corresponding roaming policies for the API caller. This value cannot be `null`. |
 
 | Exceptions ||
@@ -2303,7 +2303,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getStaConcurrencyForMultiInternetMode(): Int
 ```
 
-The device may support concurrent connections to multiple internet-providing Wi-Fi networks (APs) - that is indicated by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForMultiInternetSupported()`. This method indicates whether or not the feature is currently enabled. A value of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_MULTI_INTERNET_MODE_DISABLED:kotlin.Int` indicates that the feature is disabled, a value of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_MULTI_INTERNET_MODE_DBS_AP:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_MULTI_INTERNET_MODE_MULTI_AP:kotlin.Int` indicates that the feature is enabled. The app can register to receive the corresponding Wi-Fi networks using the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,%20android.net.ConnectivityManager.NetworkCallback)` API with a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier` configured using the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#setBand(kotlin.Int)` method. 
+The device may support concurrent connections to multiple internet-providing Wi-Fi networks (APs) - that is indicated by isStaConcurrencyForMultiInternetSupported. This method indicates whether or not the feature is currently enabled. A value of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_MULTI_INTERNET_MODE_DISABLED:kotlin.Int` indicates that the feature is disabled, a value of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_MULTI_INTERNET_MODE_DBS_AP:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_MULTI_INTERNET_MODE_MULTI_AP:kotlin.Int` indicates that the feature is enabled. The app can register to receive the corresponding Wi-Fi networks using the registerNetworkCallback API with a WifiNetworkSpecifier configured using the setBand method. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
 | Return ||
@@ -2321,7 +2321,7 @@ open fun getUsableChannels(
 ): MutableList<WifiAvailableChannel!>
 ```
 
-Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s) per the current regulatory domain and device-specific constraints such as concurrency state and interference due to other radios. An empty list implies that there are no available channels for use. Note: the `band` parameter which is specified as a `WifiScanner#WIFI_BAND_*` constant is limited to one of the band values specified below. Specifically, if the 5GHz band is included then it must include the DFS channels - an exception will be thrown otherwise. The caller should not make any assumptions about whether DFS channels are allowed. This API will indicate whether DFS channels are allowed for the specified operation mode(s) per device policy. 
+Returns a list of WifiAvailableChannel for the specified band and operational mode(s) per the current regulatory domain and device-specific constraints such as concurrency state and interference due to other radios. An empty list implies that there are no available channels for use. Note: the `band` parameter which is specified as a `WifiScanner#WIFI_BAND_*` constant is limited to one of the band values specified below. Specifically, if the 5GHz band is included then it must include the DFS channels - an exception will be thrown otherwise. The caller should not make any assumptions about whether DFS channels are allowed. This API will indicate whether DFS channels are allowed for the specified operation mode(s) per device policy. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NEARBY_WIFI_DEVICES:kotlin.String`
 
 | Parameters ||
@@ -2331,7 +2331,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel!>` | a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel!>` | a list of WifiAvailableChannel This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2353,7 +2353,7 @@ Gets the Wi-Fi enabled state.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWifiEnabled()`
+- isWifiEnabled
 
 ### is24GHzBandSupported
 
@@ -2421,7 +2421,7 @@ open fun isAggressiveRoamingModeSupported(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if this device supports Aggressive roaming mode `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if this device supports Aggressive roaming mode setPerSsidRoamingMode |
 
 ### isAutoWakeupEnabled
 
@@ -2470,8 +2470,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): subscription ID see `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getSubscriptionId()` |
-| `merged` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True for carrier merged network, false otherwise. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.Builder#setCarrierMerged(kotlin.Boolean)` |
+| `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): subscription ID see getSubscriptionId |
+| `merged` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True for carrier merged network, false otherwise. See setCarrierMerged |
 
 | Return ||
 |---|---|
@@ -2510,7 +2510,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun isDeviceToApRttSupported(): Boolean
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI_RTT:kotlin.String`.*
+**Deprecated:** *Please use hasSystemFeature with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI_RTT:kotlin.String`.*
 
 | Return ||
 |---|---|
@@ -2653,7 +2653,7 @@ open fun isScanAlwaysAvailable(): Boolean
 
 **Deprecated:** *The ability for apps to trigger scan requests will be removed in a future release.*
 
-Check if scanning is always available. If this return `true`, apps can issue `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startScan()` and fetch scan results even when Wi-Fi is turned off. To change this setting, see `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REQUEST_SCAN_ALWAYS_AVAILABLE:kotlin.String`.
+Check if scanning is always available. If this return `true`, apps can issue startScan and fetch scan results even when Wi-Fi is turned off. To change this setting, see `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REQUEST_SCAN_ALWAYS_AVAILABLE:kotlin.String`.
 
 ### isScanThrottleEnabled
 
@@ -2709,7 +2709,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun isStaConcurrencyForLocalOnlyConnectionsSupported(): Boolean
 ```
 
-Query whether or not the device supports concurrent station (STA) connections for local-only connections using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier`.
+Query whether or not the device supports concurrent station (STA) connections for local-only connections using WifiNetworkSpecifier.
 
 | Return ||
 |---|---|
@@ -2740,11 +2740,11 @@ open fun isTdlsOperationCurrentlyAvailable(
 ): Unit
 ```
 
-Check if a TDLS session can be established at this time via `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` Internally framework checks the STA connected state, device support for TDLS and the number of TDLS sessions available in driver/firmware.
+Check if a TDLS session can be established at this time via setTdlsEnabled or setTdlsEnabledWithMacAddress or setTdlsEnabled or setTdlsEnabledWithMacAddress Internally framework checks the STA connected state, device support for TDLS and the number of TDLS sessions available in driver/firmware.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether a TDLS session can be established at this time. `true` for available, `false` for not available. This value cannot be `null`. |
 
 | Exceptions ||
@@ -2867,7 +2867,7 @@ Return whether Wi-Fi is enabled or disabled.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()`
+- getWifiState
 
 ### isWifiPasspointEnabled
 
@@ -2896,7 +2896,7 @@ Check if the chipset supports a certain Wi-Fi standard.
 
 | Parameters ||
 |---|---|
-| `standard` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the IEEE 802.11 standard to check on. valid values from `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult`'s `WIFI_STANDARD_` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_LEGACY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11N:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11AC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11AX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11AD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11BE:kotlin.Int` |
+| `standard` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the IEEE 802.11 standard to check on. valid values from ScanResult's `WIFI_STANDARD_` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_LEGACY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11N:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11AC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11AX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11AD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult#WIFI_STANDARD_11BE:kotlin.Int` |
 
 | Return ||
 |---|---|
@@ -2971,7 +2971,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun pingSupplicant(): Boolean
 ```
 
-**Deprecated:** *Will return the output of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isWifiEnabled()` instead.*
+**Deprecated:** *Will return the output of isWifiEnabled instead.*
 
 Check that the supplicant daemon is responding to requests.
 
@@ -2994,7 +2994,7 @@ Query whether or not auto-join global is enabled/disabled
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether auto-join global is enabled/disabled. This value cannot be `null`. |
 
 | Exceptions ||
@@ -3004,7 +3004,7 @@ Query whether or not auto-join global is enabled/disabled
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#allowAutojoinGlobal(kotlin.Boolean)`
+- allowAutojoinGlobal
 
 ### querySendDhcpHostnameRestriction
 
@@ -3022,7 +3022,7 @@ Requires android.Manifest.permission#NETWORK_SETTINGS or android.Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `resultsCallback` | [IntConsumer](../java.util.function/IntConsumer.md): An asynchronous callback that will return a bitmask of android.net.wifi.WifiManager.SendDhcpHostnameRestriction. This value cannot be `null`. |
 
 | Exceptions ||
@@ -3031,7 +3031,7 @@ Requires android.Manifest.permission#NETWORK_SETTINGS or android.Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setSendDhcpHostnameRestriction(kotlin.Int)`
+- setSendDhcpHostnameRestriction
 
 ### reassociate
 
@@ -3042,7 +3042,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun reassociate(): Boolean
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always return false.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always return false.*
 
 Reconnect to the currently active access point, even if we are already connected. This may result in the asynchronous delivery of state change events.
 
@@ -3059,7 +3059,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun reconnect(): Boolean
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -3083,7 +3083,7 @@ open fun registerScanResultsCallback(
 ): Unit
 ```
 
-Register a callback for Scan Results. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.ScanResultsCallback`. Caller will receive the event when scan results are available. Caller should use `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getScanResults()` requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` to get the scan results. Caller can remove a previously registered callback using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#unregisterScanResultsCallback(android.net.wifi.WifiManager.ScanResultsCallback)` Same caller can add multiple listeners.
+Register a callback for Scan Results. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.ScanResultsCallback`. Caller will receive the event when scan results are available. Caller should use getScanResults requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` to get the scan results. Caller can remove a previously registered callback using unregisterScanResultsCallback Same caller can add multiple listeners.
 
 Applications should have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String` permission. Callers without the permission will trigger a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`.
 
@@ -3092,7 +3092,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the callback of the `callback` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the callback of the `callback` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [WifiManager.ScanResultsCallback](../android/net/wifi/WifiManager.ScanResultsCallback.md): callback for Scan Results events. This value cannot be `null`. |
 
 ### registerSubsystemRestartTrackingCallback
@@ -3111,12 +3111,12 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to execute callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to execute callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [WifiManager.SubsystemRestartTrackingCallback](../android/net/wifi/WifiManager.SubsystemRestartTrackingCallback.md): `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` to register. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#unregisterSubsystemRestartTrackingCallback(android.net.wifi.WifiManager.SubsystemRestartTrackingCallback)`
+- unregisterSubsystemRestartTrackingCallback
 
 ### removeLocalOnlyConnectionFailureListener
 
@@ -3142,7 +3142,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun removeNetwork(netId: Int): Boolean
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `false`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -3153,7 +3153,7 @@ Remove the specified network from the list of configured networks. This may resu
 
 | Parameters ||
 |---|---|
-| `netId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the network as returned by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConfiguredNetworks()`. |
+| `netId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the network as returned by addNetwork or getConfiguredNetworks. |
 
 | Return ||
 |---|---|
@@ -3167,7 +3167,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun removeNetworkSuggestions(networkSuggestions: MutableList<WifiNetworkSuggestion!>): Int
 ```
 
-Remove some or all of the network suggestions that were previously provided by the app. If one of the suggestions being removed was used to establish connection to the current network, then the device will immediately disconnect from that network. This method is same as `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` for a detailed explanation of the parameters. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any)` for the equivalence evaluation used.
+Remove some or all of the network suggestions that were previously provided by the app. If one of the suggestions being removed was used to establish connection to the current network, then the device will immediately disconnect from that network. This method is same as removeNetworkSuggestions with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` See WifiNetworkSuggestion for a detailed explanation of the parameters. See equals for the equivalence evaluation used.
 
 [removeNetworkSuggestions(List,int)](WifiManager.md)). An `action` of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` is equivalent to the current behavior. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CHANGE_WIFI_STATE:kotlin.String`
@@ -3191,7 +3191,7 @@ open fun removeNetworkSuggestions(
 ): Int
 ```
 
-Remove some or all of the network suggestions that were previously provided by the app. If one of the suggestions being removed was used to establish connection to the current network, then the specified action will be executed. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` for a detailed explanation of the parameters. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any)` for the equivalence evaluation used. 
+Remove some or all of the network suggestions that were previously provided by the app. If one of the suggestions being removed was used to establish connection to the current network, then the specified action will be executed. See WifiNetworkSuggestion for a detailed explanation of the parameters. See equals for the equivalence evaluation used. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CHANGE_WIFI_STATE:kotlin.String`
 
 | Parameters ||
@@ -3252,7 +3252,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun removePerSsidRoamingMode(ssid: WifiSsid): Unit
 ```
 
-This API allows a privileged application to remove roaming mode policy configured using the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)`. Available for Device Owner (DO) and profile owner of an organization owned device. Other apps require `android.Manifest.permission#NETWORK_SETTINGS` or `android.Manifest.permission#MANAGE_WIFI_NETWORK_SELECTION` permission.
+This API allows a privileged application to remove roaming mode policy configured using the setPerSsidRoamingMode. Available for Device Owner (DO) and profile owner of an organization owned device. Other apps require `android.Manifest.permission#NETWORK_SETTINGS` or `android.Manifest.permission#MANAGE_WIFI_NETWORK_SELECTION` permission.
 
 | Parameters ||
 |---|---|
@@ -3288,7 +3288,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun removeSuggestionUserApprovalStatusListener(listener: WifiManager.SuggestionUserApprovalStatusListener): Unit
 ```
 
-Allow callers to remove a previously registered listener using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addSuggestionUserApprovalStatusListener(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SuggestionUserApprovalStatusListener)`. After calling this method, applications will no longer receive network suggestion user approval status change through that listener. 
+Allow callers to remove a previously registered listener using addSuggestionUserApprovalStatusListener. After calling this method, applications will no longer receive network suggestion user approval status change through that listener. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
 | Parameters ||
@@ -3327,7 +3327,7 @@ Queries the framework to determine whether the specified interface can be create
 - First argument: a `boolean` - indicating whether or not the interface can be created.
 - Second argument: a `Set<InterfaceCreationImpact>` - if the interface can be created (first argument is `true` then this is the set of interface types which will be removed and the packages which requested them. Possibly an empty set. If the first argument is `false`, then an empty set will be returned here.
 - Interfaces, input and output, are specified using the `WIFI_INTERFACE_*` constants: `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_STA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_AP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_AWARE:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_DIRECT:kotlin.Int`.
-- This method does not actually create the interface. That operation is handled by the framework when a particular service method is called. E.g. a Wi-Fi Direct interface may be created when various methods of `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager` are called, similarly for Wi-Fi Aware and `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager`.
+- This method does not actually create the interface. That operation is handled by the framework when a particular service method is called. E.g. a Wi-Fi Direct interface may be created when various methods of WifiP2pManager are called, similarly for Wi-Fi Aware and WifiAwareManager.
 - Note: the information returned via this method is the current snapshot of the system. It may change due to actions of the framework or other apps. 
  Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_WIFI_INTERFACES:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
@@ -3335,7 +3335,7 @@ Queries the framework to determine whether the specified interface can be create
 |---|---|
 | `interfaceType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The interface type whose possible creation is being queried. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_STA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_AP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_AWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_DIRECT:kotlin.Int` |
 | `requireNewInterface` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Indicates that the query is for a new interface of the specified type - an existing interface won't meet the query. Some operations (such as Wi-Fi Direct and Wi-Fi Aware are a shared resource and so may not need a new interface). |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to return the result. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to return the result. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `resultCallback` | [BiConsumer](../java.util.function/BiConsumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiManager.InterfaceCreationImpact](../android/net/wifi/WifiManager.InterfaceCreationImpact.md)!\>!\>: The asynchronous callback which will return two argument: a `boolean` (whether the interface can be created), and a `Set<InterfaceCreationImpact>` (a set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.InterfaceCreationImpact`: interfaces which will be destroyed when the interface is created and the packages which requested them and thus may be impacted). This value cannot be `null`. |
 
@@ -3348,7 +3348,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun saveConfiguration(): Boolean
 ```
 
-**Deprecated:** *There is no need to call this method - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetwork(android.net.wifi.WifiConfiguration)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#updateNetwork(android.net.wifi.WifiConfiguration)` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetwork(kotlin.Int)` already persist the configurations automatically.*
+**Deprecated:** *There is no need to call this method - addNetwork, updateNetwork and removeNetwork already persist the configurations automatically.*
 
 Tell the device to persist the current list of configured networks.
 
@@ -3382,7 +3382,7 @@ This API allows a privileged application to set roaming mode per SSID. Available
 | `java.lang.NullPointerException` | if the caller provided a null input. |
 | `java.lang.SecurityException` | if caller does not have the required permission. |
 | --- | --- |
-| `java.lang.UnsupportedOperationException` | if the API is not supported on this SDK version or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isAggressiveRoamingModeSupported()` returns false, but input roaming mode is `ROAMING_MODE_AGGRESSIVE`. |
+| `java.lang.UnsupportedOperationException` | if the API is not supported on this SDK version or isAggressiveRoamingModeSupported returns false, but input roaming mode is `ROAMING_MODE_AGGRESSIVE`. |
 
 ### setSendDhcpHostnameRestriction
 
@@ -3439,13 +3439,13 @@ open fun setTdlsEnabled(
 ): Unit
 ```
 
-Enable/Disable TDLS on a specific local route. Similar to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)`, except this version sends the result of the Enable/Disable request.
+Enable/Disable TDLS on a specific local route. Similar to setTdlsEnabled, except this version sends the result of the Enable/Disable request.
 
 | Parameters ||
 |---|---|
 | `remoteIPAddress` | [InetAddress](../java.net/InetAddress.md): IP address of the endpoint to setup TDLS with. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true = setup and false = tear down TDLS |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether TDLS was successfully enabled or disabled. `true` for success, `false` for failure. This value cannot be `null`. |
 
@@ -3464,7 +3464,7 @@ open fun setTdlsEnabledWithMacAddress(
 ): Unit
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabled(java.net.InetAddress,%20kotlin.Boolean)`, except this version allows you to specify remote endpoint with a MAC address.
+Similar to setTdlsEnabled, except this version allows you to specify remote endpoint with a MAC address.
 
 | Parameters ||
 |---|---|
@@ -3484,13 +3484,13 @@ open fun setTdlsEnabledWithMacAddress(
 ): Unit
 ```
 
-Enable/Disable TDLS with a specific peer Mac Address. Similar to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setTdlsEnabledWithMacAddress(kotlin.String,%20kotlin.Boolean)`, except this version sends the result of the Enable/Disable request.
+Enable/Disable TDLS with a specific peer Mac Address. Similar to setTdlsEnabledWithMacAddress, except this version sends the result of the Enable/Disable request.
 
 | Parameters ||
 |---|---|
 | `remoteMacAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Mac address of the endpoint to setup TDLS with. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true = setup and false = tear down TDLS |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether TDLS was successfully enabled or disabled. `true` for success, `false` for failure. This value cannot be `null`. |
 
@@ -3542,15 +3542,15 @@ open fun startLocalOnlyHotspot(
 ): Unit
 ```
 
-Request a local only hotspot that an application can use to communicate between co-located devices connected to the created WiFi hotspot. The network created by this method will not have Internet access. Each application can make a single request for the hotspot, but multiple applications could be requesting the hotspot at the same time. When multiple applications have successfully registered concurrently, they will be sharing the underlying hotspot. `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#onStarted(android.net.wifi.WifiManager.LocalOnlyHotspotReservation)` is called when the hotspot is ready for use by the application.
+Request a local only hotspot that an application can use to communicate between co-located devices connected to the created WiFi hotspot. The network created by this method will not have Internet access. Each application can make a single request for the hotspot, but multiple applications could be requesting the hotspot at the same time. When multiple applications have successfully registered concurrently, they will be sharing the underlying hotspot. onStarted is called when the hotspot is ready for use by the application.
 
-Each application can make a single active call to this method. The `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#onStarted(android.net.wifi.WifiManager.LocalOnlyHotspotReservation)` callback supplies the requestor with a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation` that contains a `https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration` with the SSID, security type and credentials needed to connect to the hotspot. Communicating this information is up to the application.
+Each application can make a single active call to this method. The onStarted callback supplies the requestor with a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation` that contains a SoftApConfiguration with the SSID, security type and credentials needed to connect to the hotspot. Communicating this information is up to the application.
 
-If the LocalOnlyHotspot cannot be created, the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#onFailed(kotlin.Int)` method will be called. Example failures include errors bringing up the network or if there is an incompatible operating mode. For example, if the user is currently using Wifi Tethering to provide an upstream to another device, LocalOnlyHotspot may not start due to an incompatible mode. The possible error codes include: `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_NO_CHANNEL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_GENERIC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_INCOMPATIBLE_MODE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_TETHERING_DISALLOWED:kotlin.Int`.
+If the LocalOnlyHotspot cannot be created, the onFailed method will be called. Example failures include errors bringing up the network or if there is an incompatible operating mode. For example, if the user is currently using Wifi Tethering to provide an upstream to another device, LocalOnlyHotspot may not start due to an incompatible mode. The possible error codes include: `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_NO_CHANNEL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_GENERIC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_INCOMPATIBLE_MODE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_TETHERING_DISALLOWED:kotlin.Int`.
 
-Internally, requests will be tracked to prevent the hotspot from being torn down while apps are still using it. The `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation` object passed in the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#onStarted(android.net.wifi.WifiManager.LocalOnlyHotspotReservation)` call should be closed when the LocalOnlyHotspot is no longer needed using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation#close()`. Since the hotspot may be shared among multiple applications, removing the final registered application request will trigger the hotspot teardown. This means that applications should not listen to broadcasts containing wifi state to determine if the hotspot was stopped after they are done using it. Additionally, once `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation#close()` is called, applications will not receive callbacks of any kind.
+Internally, requests will be tracked to prevent the hotspot from being torn down while apps are still using it. The `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotReservation` object passed in the onStarted call should be closed when the LocalOnlyHotspot is no longer needed using close. Since the hotspot may be shared among multiple applications, removing the final registered application request will trigger the hotspot teardown. This means that applications should not listen to broadcasts containing wifi state to determine if the hotspot was stopped after they are done using it. Additionally, once close is called, applications will not receive callbacks of any kind.
 
-Applications should be aware that the user may also stop the LocalOnlyHotspot through the Settings UI; it is not guaranteed to stay up as long as there is a requesting application. The requestors will be notified of this case via `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#onStopped()`. Other cases may arise where the hotspot is torn down (Emergency mode, etc). Application developers should be aware that it can stop unexpectedly, but they will receive a notification if they have properly registered.
+Applications should be aware that the user may also stop the LocalOnlyHotspot through the Settings UI; it is not guaranteed to stay up as long as there is a requesting application. The requestors will be notified of this case via onStopped. Other cases may arise where the hotspot is torn down (Emergency mode, etc). Application developers should be aware that it can stop unexpectedly, but they will receive a notification if they have properly registered.
 
 Applications should also be aware that this network will be shared with other applications. Applications are responsible for protecting their data on this network (e.g. TLS).
 
@@ -3575,13 +3575,13 @@ open fun startLocalOnlyHotspotWithConfiguration(
 ): Unit
 ```
 
-Starts a local-only hotspot with a specific configuration applied. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotCallback,%20android.os.Handler)`. Since custom configuration settings may be incompatible with each other, the hotspot started through this method cannot coexist with another hotspot created through `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#startLocalOnlyHotspot(android.net.wifi.WifiManager.LocalOnlyHotspotCallback,%20android.os.Handler)`. If this is attempted, the first hotspot request wins and others receive `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_GENERIC:kotlin.Int` through `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#onFailed(kotlin.Int)`. 
+Starts a local-only hotspot with a specific configuration applied. See startLocalOnlyHotspot. Since custom configuration settings may be incompatible with each other, the hotspot started through this method cannot coexist with another hotspot created through startLocalOnlyHotspot. If this is attempted, the first hotspot request wins and others receive `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.LocalOnlyHotspotCallback#ERROR_GENERIC:kotlin.Int` through onFailed. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CHANGE_WIFI_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NEARBY_WIFI_DEVICES:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `config` | [SoftApConfiguration](SoftApConfiguration.md): Custom configuration for the hotspot. See `https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration`. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to run callback methods on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `config` | [SoftApConfiguration](SoftApConfiguration.md): Custom configuration for the hotspot. See SoftApConfiguration. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to run callback methods on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [WifiManager.LocalOnlyHotspotCallback](../android/net/wifi/WifiManager.LocalOnlyHotspotCallback.md): LocalOnlyHotspotCallback for the application to receive updates about operating status. This value cannot be `null`. |
 | --- | --- |
 
@@ -3622,7 +3622,7 @@ open fun startWps(
 
 **Deprecated:** *This API is deprecated*
 
-WPS suport has been deprecated from Client mode and this method will immediately trigger `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.WpsCallback#onFailed(kotlin.Int)` with a generic error.
+WPS suport has been deprecated from Client mode and this method will immediately trigger onFailed with a generic error.
 
 | Parameters ||
 |---|---|
@@ -3656,7 +3656,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterSubsystemRestartTrackingCallback(callback: WifiManager.SubsystemRestartTrackingCallback): Unit
 ```
 
-Unregisters a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` registered with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#registerSubsystemRestartTrackingCallback(java.util.concurrent.Executor,%20android.net.wifi.WifiManager.SubsystemRestartTrackingCallback)` 
+Unregisters a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` registered with registerSubsystemRestartTrackingCallback 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_WIFI_STATE:kotlin.String`
 
 | Parameters ||
@@ -3672,7 +3672,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun updateNetwork(config: WifiConfiguration!): Int
 ```
 
-**Deprecated:** *a) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier.Builder#build()` for new mechanism to trigger connection to a Wi-Fi network. b) See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#addNetworkSuggestions(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList)` for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `-1`.*
+**Deprecated:** *a) See build for new mechanism to trigger connection to a Wi-Fi network. b) See addNetworkSuggestions, removeNetworkSuggestions for new API to add Wi-Fi networks for consideration when auto-connecting to wifi. **Compatibility Note:** For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or above, this API will always fail and return `-1`.*
 
 *Deprecation Exemptions:*
 *- Device Owner (DO), Profile Owner (PO) and system apps.*
@@ -3683,7 +3683,7 @@ Update the network description of an existing configured network.
 
 | Parameters ||
 |---|---|
-| `config` | [WifiConfiguration](WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. It may be sparse, so that only the items that are being changed are non-`null`. The `networkId` field must be set to the ID of the existing network being updated. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
+| `config` | [WifiConfiguration](WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a WifiConfiguration object. It may be sparse, so that only the items that are being changed are non-`null`. The `networkId` field must be set to the ID of the existing network being updated. If the WifiConfiguration has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
 
 | Return ||
 |---|---|
@@ -3703,7 +3703,7 @@ This will return `false` if a non-null BSSID is set but the caller does not have
 
 - android.Manifest.permission#NETWORK_SETTINGS
 - android.Manifest.permission#NETWORK_STACK
-- `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#`
+- WifiManager
 
 | Parameters ||
 |---|---|

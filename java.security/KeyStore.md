@@ -46,7 +46,7 @@ Typical ways to request a KeyStore object include specifying an existing keystor
        KeyStore ks = KeyStore.getInstance(new File("keyStoreName"), password);
    
   ```
- The system will probe the specified file to determine its keystore type and return a keystore implementation with its entries already loaded. When this approach is used there is no need to call the keystore's `https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.io.InputStream,%20kotlin.CharArray)` method.
+ The system will probe the specified file to determine its keystore type and return a keystore implementation with its entries already loaded. When this approach is used there is no need to call the keystore's load method.
 - To rely on the default type:
 
   ```kotlin
@@ -62,7 +62,7 @@ Typical ways to request a KeyStore object include specifying an existing keystor
   ```
  The system will return the most preferred implementation of the specified keystore type available in the environment.
 
-Before a keystore can be accessed, it must be `https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.io.InputStream,%20kotlin.CharArray)`.
+Before a keystore can be accessed, it must be load.
 
 ```kotlin
 KeyStore ks = KeyStore.getInstance(KeyStore.getDefaultType());
@@ -126,7 +126,7 @@ These types are described in the [KeyStore section](https://docs.oracle.com/java
 | open | `https://developer.android.com/reference/kotlin/java/security/KeyStore.CallbackHandlerProtection` A ProtectionParameter encapsulating a CallbackHandler. |
 | abstract | `https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry` A marker interface for `KeyStore` entry types. |
 | --- | --- |
-| abstract | `https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter` A marker interface for `KeyStore` `https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.security.KeyStore.LoadStoreParameter)` and `https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.security.KeyStore.LoadStoreParameter)` parameters. |
+| abstract | `https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter` A marker interface for `KeyStore` load and store parameters. |
 | open | `https://developer.android.com/reference/kotlin/java/security/KeyStore.PasswordProtection` A password-based implementation of `ProtectionParameter`. |
 | | `https://developer.android.com/reference/kotlin/java/security/KeyStore.PrivateKeyEntry` A `KeyStore` entry that holds a `PrivateKey` and corresponding certificate chain. |
 | --- | --- |
@@ -137,48 +137,48 @@ These types are described in the [KeyStore section](https://docs.oracle.com/java
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/KeyStore#KeyStore(java.security.KeyStoreSpi,%20java.security.Provider,%20kotlin.String)(keyStoreSpi: https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a KeyStore object of the given type, and encapsulates the given provider implementation (SPI object) in it. |
+| KeyStore Creates a KeyStore object of the given type, and encapsulates the given provider implementation (SPI object) in it. |
 
 | Public methods ||
 |---|---|
-| [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#aliases()()` Lists all the alias names of this keystore. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#containsAlias(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks if the given alias exists in this keystore. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#deleteEntry(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Deletes the entry identified by the given alias from this keystore. |
+| [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | aliases Lists all the alias names of this keystore. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | containsAlias Checks if the given alias exists in this keystore. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteEntry Deletes the entry identified by the given alias from this keystore. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#entryInstanceOf(kotlin.String,%20java.lang.Class)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, entryClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry!>!)` Determines if the keystore `Entry` for the specified `alias` is an instance or subclass of the specified `entryClass`. |
-| [Certificate](../java.security.cert/Certificate.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificate(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the certificate associated with the given alias. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificateAlias(java.security.cert.Certificate)(cert: https://developer.android.com/reference/kotlin/java/security/cert/Certificate!)` Returns the (alias) name of the first keystore entry whose certificate matches the given certificate. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | entryInstanceOf Determines if the keystore `Entry` for the specified `alias` is an instance or subclass of the specified `entryClass`. |
+| [Certificate](../java.security.cert/Certificate.md)! | getCertificate Returns the certificate associated with the given alias. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getCertificateAlias Returns the (alias) name of the first keystore entry whose certificate matches the given certificate. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificateChain(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the certificate chain associated with the given alias. |
-| [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCreationDate(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the creation date of the entry identified by the given alias. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getDefaultType()()` Returns the default keystore type as specified by the `keystore.type` security property, or the string "jks" (acronym for "Java keystore") if no such property exists. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | getCertificateChain Returns the certificate chain associated with the given alias. |
+| [Date](../java.util/Date.md)! | getCreationDate Returns the creation date of the entry identified by the given alias. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDefaultType Returns the default keystore type as specified by the `keystore.type` security property, or the string "jks" (acronym for "Java keystore") if no such property exists. |
 | --- | --- |
-| [KeyStore.Entry](../java/security/KeyStore.Entry.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getEntry(kotlin.String,%20java.security.KeyStore.ProtectionParameter)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, protParam: https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter!)` Gets a keystore `Entry` for the specified alias with the specified protection parameter. |
-| static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(java.io.File,%20kotlin.CharArray)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns a loaded keystore object of the appropriate keystore type. |
-| static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(java.io.File,%20java.security.KeyStore.LoadStoreParameter)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, param: https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter!)` Returns a loaded keystore object of the appropriate keystore type. |
+| [KeyStore.Entry](../java/security/KeyStore.Entry.md)! | getEntry Gets a keystore `Entry` for the specified alias with the specified protection parameter. |
+| static [KeyStore](KeyStore.md)! | getInstance Returns a loaded keystore object of the appropriate keystore type. |
+| static [KeyStore](KeyStore.md)! | getInstance Returns a loaded keystore object of the appropriate keystore type. |
 | --- | --- |
-| open static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a keystore object of the specified type. |
-| open static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a keystore object of the specified type. |
-| open static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String,%20java.security.Provider)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a keystore object of the specified type. |
+| open static [KeyStore](KeyStore.md)! | getInstance Returns a keystore object of the specified type. |
+| open static [KeyStore](KeyStore.md)! | getInstance Returns a keystore object of the specified type. |
+| open static [KeyStore](KeyStore.md)! | getInstance Returns a keystore object of the specified type. |
 | --- | --- |
-| [Key](Key.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getKey(kotlin.String,%20kotlin.CharArray)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns the key associated with the given alias, using the given password to recover it. |
-| [Provider](Provider.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getProvider()()` Returns the provider of this keystore. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getType()()` Returns the type of this keystore. |
+| [Key](Key.md)! | getKey Returns the key associated with the given alias, using the given password to recover it. |
+| [Provider](Provider.md)! | getProvider Returns the provider of this keystore. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getType Returns the type of this keystore. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#isCertificateEntry(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the entry identified by the given alias was created by a call to `setCertificateEntry`, or created by a call to `setEntry` with a `TrustedCertificateEntry`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#isKeyEntry(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the entry identified by the given alias was created by a call to `setKeyEntry`, or created by a call to `setEntry` with a `PrivateKeyEntry` or a `SecretKeyEntry`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.io.InputStream,%20kotlin.CharArray)(stream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Loads this KeyStore from the given input stream. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCertificateEntry Returns true if the entry identified by the given alias was created by a call to `setCertificateEntry`, or created by a call to `setEntry` with a `TrustedCertificateEntry`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isKeyEntry Returns true if the entry identified by the given alias was created by a call to `setKeyEntry`, or created by a call to `setEntry` with a `PrivateKeyEntry` or a `SecretKeyEntry`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | load Loads this KeyStore from the given input stream. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#load(java.security.KeyStore.LoadStoreParameter)(param: https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter!)` Loads this keystore using the given `LoadStoreParameter`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#setCertificateEntry(kotlin.String,%20java.security.cert.Certificate)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cert: https://developer.android.com/reference/kotlin/java/security/cert/Certificate!)` Assigns the given trusted certificate to the given alias. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#setEntry(kotlin.String,%20java.security.KeyStore.Entry,%20java.security.KeyStore.ProtectionParameter)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, entry: https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry!, protParam: https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter!)` Saves a keystore `Entry` under the specified alias. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | load Loads this keystore using the given `LoadStoreParameter`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCertificateEntry Assigns the given trusted certificate to the given alias. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEntry Saves a keystore `Entry` under the specified alias. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#setKeyEntry(kotlin.String,%20kotlin.ByteArray,%20kotlin.Array)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, chain: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/cert/Certificate!>!)` Assigns the given key (that has already been protected) to the given alias. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#setKeyEntry(kotlin.String,%20java.security.Key,%20kotlin.CharArray,%20kotlin.Array)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, key: https://developer.android.com/reference/kotlin/java/security/Key!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, chain: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/cert/Certificate!>!)` Assigns the given key to the given alias, protecting it with the given password. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#size()()` Retrieves the number of entries in this keystore. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setKeyEntry Assigns the given key (that has already been protected) to the given alias. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setKeyEntry Assigns the given key to the given alias, protecting it with the given password. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Retrieves the number of entries in this keystore. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.io.OutputStream,%20kotlin.CharArray)(stream: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Stores this keystore to the given output stream, and protects its integrity with the given password. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#store(java.security.KeyStore.LoadStoreParameter)(param: https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter!)` Stores this keystore using the given `LoadStoreParameter`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | store Stores this keystore to the given output stream, and protects its integrity with the given password. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | store Stores this keystore using the given `LoadStoreParameter`. |
 
 ## Protected constructors
 
@@ -405,7 +405,7 @@ The default keystore type can be changed by setting the value of the `keystore.t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Security`
+- Security
 
 ### getEntry
 
@@ -440,7 +440,7 @@ Gets a keystore `Entry` for the specified alias with the specified protection pa
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/KeyStore#setEntry(kotlin.String,%20java.security.KeyStore.Entry,%20java.security.KeyStore.ProtectionParameter)`
+- setEntry
 
 ### getInstance
 
@@ -457,9 +457,9 @@ Returns a loaded keystore object of the appropriate keystore type. First the key
 
 A password may be given to unlock the keystore (e.g. the keystore resides on a hardware token device), or to check the integrity of the keystore data. If a password is not given for integrity checking, then integrity checking is not performed.
 
-This method traverses the list of registered security [providers](Provider.md), starting with the most preferred Provider. For each `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi` implementation supported by a Provider, it invokes the `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream)` method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
+This method traverses the list of registered security [providers](Provider.md), starting with the most preferred Provider. For each KeyStoreSpi implementation supported by a Provider, it invokes the engineProbe method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -472,7 +472,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` of the `IOException` should be an `UnrecoverableKeyException`. |
+| `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the getCause of the `IOException` should be an `UnrecoverableKeyException`. |
 | `java.lang.IllegalArgumentException` | if file does not exist or does not refer to a normal file. |
 | `java.lang.NullPointerException` | if file is `null`. |
 | --- | --- |
@@ -484,7 +484,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -499,9 +499,9 @@ static fun getInstance(
 
 Returns a loaded keystore object of the appropriate keystore type. First the keystore type is determined by probing the specified file. Then a keystore object is instantiated and loaded using the data from that file. A `LoadStoreParameter` may be supplied which specifies how to unlock the keystore data or perform an integrity check.
 
-This method traverses the list of registered security [providers](Provider.md), starting with the most preferred Provider. For each `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi` implementation supported by a Provider, it invokes the `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream)` method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
+This method traverses the list of registered security [providers](Provider.md), starting with the most preferred Provider. For each KeyStoreSpi implementation supported by a Provider, it invokes the engineProbe method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -514,7 +514,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect `ProtectionParameter` (e.g. wrong password) the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` of the `IOException` should be an `UnrecoverableKeyException`. |
+| `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect `ProtectionParameter` (e.g. wrong password) the getCause of the `IOException` should be an `UnrecoverableKeyException`. |
 | `java.lang.IllegalArgumentException` | if file does not exist or does not refer to a normal file, or if param is not recognized. |
 | `java.lang.NullPointerException` | if file is `null`. |
 | --- | --- |
@@ -526,7 +526,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -540,7 +540,7 @@ Returns a keystore object of the specified type.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new KeyStore object encapsulating the KeyStoreSpi implementation from the first Provider that supports the specified type is returned.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -556,7 +556,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -573,7 +573,7 @@ Returns a keystore object of the specified type.
 
 A new KeyStore object encapsulating the KeyStoreSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -593,7 +593,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -628,7 +628,7 @@ A new KeyStore object encapsulating the KeyStoreSpi implementation from the spec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getKey
 
@@ -757,7 +757,7 @@ Note that if this keystore has already been loaded, it is reinitialized and load
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` of the `IOException` should be an `UnrecoverableKeyException` |
+| `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the getCause of the `IOException` should be an `UnrecoverableKeyException` |
 | `java.security.NoSuchAlgorithmException` | if the algorithm used to check the integrity of the keystore cannot be found |
 | `java.security.cert.CertificateException` | if any of the certificates in the keystore could not be loaded |
 | --- | --- |
@@ -780,7 +780,7 @@ Note that if this KeyStore has already been loaded, it is reinitialized and load
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect `ProtectionParameter` (e.g. wrong password) the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` of the `IOException` should be an `UnrecoverableKeyException` |
+| `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect `ProtectionParameter` (e.g. wrong password) the getCause of the `IOException` should be an `UnrecoverableKeyException` |
 | `java.lang.IllegalArgumentException` | if the given `LoadStoreParameter` input is not recognized |
 | `java.security.NoSuchAlgorithmException` | if the algorithm used to check the integrity of the keystore cannot be found |
 | --- | --- |
@@ -840,7 +840,7 @@ If an entry already exists for the specified alias, it is overridden.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/KeyStore#getEntry(kotlin.String,%20java.security.KeyStore.ProtectionParameter)`
+- getEntry
 
 ### setKeyEntry
 

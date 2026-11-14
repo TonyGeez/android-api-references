@@ -144,47 +144,47 @@ See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePoli
 
 | Public methods ||
 |---|---|
-| open static [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#createUserCreationIntent(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)(userName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, accountOptions: https://developer.android.com/reference/kotlin/android/os/PersistableBundle?)` Returns an intent to create a user for the provided name and account name. |
-| open [Bundle](Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getApplicationRestrictions(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle` containing any saved application restrictions for the context user, for the given package name. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)(user: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Return the serial number for a user. |
+| open static [Intent](../android.content/Intent.md)! | createUserCreationIntent Returns an intent to create a user for the provided name and account name. |
+| open [Bundle](Bundle.md)! | getApplicationRestrictions Returns a Bundle containing any saved application restrictions for the context user, for the given package name. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getSerialNumberForUser Return the serial number for a user. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserCount()()` Return the number of users currently created on the device. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserCreationTime(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Returns creation time of the given user. |
-| open [UserHandle](UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserForSerialNumber(kotlin.Long)(serialNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Return the user associated with a serial number previously returned by `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUserCount Return the number of users currently created on the device. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getUserCreationTime Returns creation time of the given user. |
+| open [UserHandle](UserHandle.md)! | getUserForSerialNumber Return the user associated with a serial number previously returned by getSerialNumberForUser. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserName()()` Returns the user name of the context user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](UserHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserProfiles()()` Returns a list of the users that are associated with the context user, including the user itself. |
-| open [Bundle](Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()()` Returns the user-wide restrictions imposed on the context user. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getUserName Returns the user name of the context user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](UserHandle.md)!\>! | getUserProfiles Returns a list of the users that are associated with the context user, including the user itself. |
+| open [Bundle](Bundle.md)! | getUserRestrictions Returns the user-wide restrictions imposed on the context user. |
 | --- | --- |
-| open [Bundle](Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Returns the user-wide restrictions imposed on the user specified by `userHandle`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#hasUserRestriction(kotlin.String)(restrictionKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns whether the context user has been disallowed from performing certain actions or setting certain settings. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isAdminUser()()` Used to check if the context user is an admin user. |
+| open [Bundle](Bundle.md)! | getUserRestrictions Returns the user-wide restrictions imposed on the user specified by `userHandle`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasUserRestriction Returns whether the context user has been disallowed from performing certain actions or setting certain settings. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAdminUser Used to check if the context user is an admin user. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isDemoUser()()` Checks if the context user is a demo user. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isHeadlessSystemUserMode()()` Checks whether the device is running in a headless system user mode. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isManagedProfile()()` Checks if the context user is a managed profile. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDemoUser Checks if the context user is a demo user. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isHeadlessSystemUserMode Checks whether the device is running in a headless system user mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isManagedProfile Checks if the context user is a managed profile. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isProfile()()` Checks if the context user is running in a profile. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isQuietModeEnabled(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Returns whether the given profile is in quiet mode or not. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isSystemUser()()` Used to check if the context user is the system user. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isProfile Checks if the context user is running in a profile. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isQuietModeEnabled Returns whether the given profile is in quiet mode or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSystemUser Used to check if the context user is the system user. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserAGoat()()` Used to determine whether the user making this call is subject to teleportations. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserForeground()()` Checks if the context user is running in the foreground. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserRunning(android.os.UserHandle)(user: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Return whether the given user is actively running. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserAGoat Used to determine whether the user making this call is subject to teleportations. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserForeground Checks if the context user is running in the foreground. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserRunning Return whether the given user is actively running. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserRunningOrStopping(android.os.UserHandle)(user: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Return whether the given user is actively running *or* stopping. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserUnlocked()()` Return whether the context user is running in an "unlocked" state. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserUnlocked(android.os.UserHandle)(user: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` Return whether the given user is running in an "unlocked" state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserRunningOrStopping Return whether the given user is actively running *or* stopping. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserUnlocked Return whether the context user is running in an "unlocked" state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserUnlocked Return whether the given user is running in an "unlocked" state. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#requestQuietModeEnabled(kotlin.Boolean,%20android.os.UserHandle)(enableQuietMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle)` Enables or disables quiet mode for a profile. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#requestQuietModeEnabled(kotlin.Boolean,%20android.os.UserHandle,%20kotlin.Int)(enableQuietMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Perform the same operation as `https://developer.android.com/reference/kotlin/android/os/UserManager#requestQuietModeEnabled(kotlin.Boolean,%20android.os.UserHandle)`, but with a flag to tweak the behavior of the request. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#setRestrictionsChallenge(kotlin.String)(newPin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets a new challenge PIN for restrictions. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestQuietModeEnabled Enables or disables quiet mode for a profile. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestQuietModeEnabled Perform the same operation as requestQuietModeEnabled, but with a flag to tweak the behavior of the request. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setRestrictionsChallenge Sets a new challenge PIN for restrictions. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#setUserRestriction(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the value of a specific restriction on the context user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#setUserRestrictions(android.os.Bundle)(restrictions: https://developer.android.com/reference/kotlin/android/os/Bundle!)` This will no longer work. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#setUserRestrictions(android.os.Bundle,%20android.os.UserHandle)(restrictions: https://developer.android.com/reference/kotlin/android/os/Bundle!, userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle!)` This will no longer work. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUserRestriction Sets the value of a specific restriction on the context user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUserRestrictions This will no longer work. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUserRestrictions This will no longer work. |
 | --- | --- |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/UserManager#supportsMultipleUsers()()` Returns whether this device supports multiple switchable users with their own login and customizable space. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsMultipleUsers Returns whether this device supports multiple switchable users with their own login and customizable space. |
 
 ## Constants
 
@@ -210,9 +210,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_ADD_MANAGED_PROFILE
 
@@ -239,9 +239,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_ADD_PRIVATE_PROFILE
 
@@ -265,10 +265,10 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getParentProfileInstance(android.content.ComponentName)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getParentProfileInstance
+- getUserRestrictions
 
 ### DISALLOW_ADD_USER
 
@@ -292,9 +292,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_ADD_WIFI_CONFIG
 
@@ -320,9 +320,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_ADJUST_VOLUME
 
@@ -348,9 +348,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_AIRPLANE_MODE
 
@@ -376,9 +376,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_AMBIENT_DISPLAY
 
@@ -404,9 +404,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_APPS_CONTROL
 
@@ -424,7 +424,7 @@ Specifies if a user is disallowed from modifying applications in Settings or lau
 - force stopping apps
 - clearing app defaults
 - The default value is `false`.
-- **Note:** The user will still be able to perform those actions via other means (such as adb). Third party apps will also be able to uninstall apps via the `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#`. `https://developer.android.com/reference/kotlin/android/os/UserManager#DISALLOW_UNINSTALL_APPS:kotlin.String` or `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setUninstallBlocked(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)` should be used to prevent the user from uninstalling apps completely, and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addPersistentPreferredActivity(android.content.ComponentName,%20android.content.IntentFilter,%20android.content.ComponentName)` to add a default intent handler for a given intent filter.
+- **Note:** The user will still be able to perform those actions via other means (such as adb). Third party apps will also be able to uninstall apps via the `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#`. `https://developer.android.com/reference/kotlin/android/os/UserManager#DISALLOW_UNINSTALL_APPS:kotlin.String` or setUninstallBlocked should be used to prevent the user from uninstalling apps completely, and addPersistentPreferredActivity to add a default intent handler for a given intent filter.
 - Holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_APPS_CONTROL:kotlin.String` can set this restriction using the DevicePolicyManager APIs mentioned below.
 - Key for user restrictions.
 - Type: Boolean
@@ -433,9 +433,9 @@ Specifies if a user is disallowed from modifying applications in Settings or lau
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_ASSIST_CONTENT
 
@@ -459,9 +459,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_AUTOFILL
 
@@ -483,9 +483,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_BLUETOOTH
 
@@ -511,9 +511,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_BLUETOOTH_SHARING
 
@@ -541,9 +541,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CAMERA_TOGGLE
 
@@ -562,9 +562,9 @@ The default value is `false`.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/hardware/SensorPrivacyManager.html#`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CELLULAR_2G
 
@@ -590,9 +590,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIO
 
@@ -618,9 +618,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CHANGE_WIFI_STATE
 
@@ -646,9 +646,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_BLUETOOTH
 
@@ -676,9 +676,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_BRIGHTNESS
 
@@ -704,9 +704,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_CELL_BROADCASTS
 
@@ -734,9 +734,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_CREDENTIALS
 
@@ -758,9 +758,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_DATE_TIME
 
@@ -786,9 +786,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_DEFAULT_APPS
 
@@ -812,9 +812,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_LOCALE
 
@@ -836,9 +836,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_LOCATION
 
@@ -856,7 +856,7 @@ Holders of the permission `https://developer.android.com/reference/kotlin/androi
 
 The default value is `false`.
 
-This user restriction is different from `https://developer.android.com/reference/kotlin/android/os/UserManager#DISALLOW_SHARE_LOCATION:kotlin.String`, as a device owner or a profile owner can still enable or disable location mode via `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setLocationEnabled(android.content.ComponentName,%20kotlin.Boolean)` when this restriction is on.
+This user restriction is different from `https://developer.android.com/reference/kotlin/android/os/UserManager#DISALLOW_SHARE_LOCATION:kotlin.String`, as a device owner or a profile owner can still enable or disable location mode via setLocationEnabled when this restriction is on.
 
 Key for user restrictions.
 
@@ -866,10 +866,10 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#isLocationEnabled()`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- isLocationEnabled
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_MOBILE_NETWORKS
 
@@ -897,9 +897,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_PRIVATE_DNS
 
@@ -925,9 +925,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_SCREEN_TIMEOUT
 
@@ -953,9 +953,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_TETHERING
 
@@ -983,9 +983,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_VPN
 
@@ -1011,9 +1011,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONFIG_WIFI
 
@@ -1039,9 +1039,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONTENT_CAPTURE
 
@@ -1063,9 +1063,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CONTENT_SUGGESTIONS
 
@@ -1087,9 +1087,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CREATE_WINDOWS
 
@@ -1111,9 +1111,9 @@ Specifies that windows besides app windows should not be created. This will bloc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_CROSS_PROFILE_COPY_PASTE
 
@@ -1125,7 +1125,7 @@ static val DISALLOW_CROSS_PROFILE_COPY_PASTE: String
 
 Specifies if the clipboard contents can be exported by pasting the data into other users or profiles. This restriction doesn't prevent import, such as someone pasting clipboard data from other profiles or users. The default value is `false`.
 
-**Note** : Because it's possible to extract data from screenshots using optical character recognition (OCR), we strongly recommend combining this user restriction with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setScreenCaptureDisabled(android.content.ComponentName,%20kotlin.Boolean)`.
+**Note** : Because it's possible to extract data from screenshots using optical character recognition (OCR), we strongly recommend combining this user restriction with setScreenCaptureDisabled.
 
 Holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_PROFILE_INTERACTION:kotlin.String` can set this restriction using the DevicePolicyManager APIs mentioned below.
 
@@ -1137,9 +1137,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_DATA_ROAMING
 
@@ -1161,9 +1161,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_DEBUGGING_FEATURES
 
@@ -1189,9 +1189,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_FACTORY_RESET
 
@@ -1215,9 +1215,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_FUN
 
@@ -1239,9 +1239,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_GRANT_ADMIN
 
@@ -1266,9 +1266,9 @@ Key for user restrictions. Type: Boolean. Default: `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_INSTALL_APPS
 
@@ -1290,9 +1290,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_INSTALL_UNKNOWN_SOURCES
 
@@ -1316,9 +1316,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY
 
@@ -1342,9 +1342,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_INSTALL_UNKNOWN_SOURCES_INCLUDING_REGISTERED_APP_STORES
 
@@ -1366,9 +1366,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_MICROPHONE_TOGGLE
 
@@ -1387,9 +1387,9 @@ The default value is `false`.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/hardware/SensorPrivacyManager.html#`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_MODIFY_ACCOUNTS
 
@@ -1413,9 +1413,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_MOUNT_PHYSICAL_MEDIA
 
@@ -1441,9 +1441,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO
 
@@ -1469,9 +1469,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_NETWORK_RESET
 
@@ -1495,9 +1495,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_OUTGOING_BEAM
 
@@ -1519,9 +1519,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_OUTGOING_CALLS
 
@@ -1547,9 +1547,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_PRINTING
 
@@ -1567,9 +1567,9 @@ Holders of the permission `https://developer.android.com/reference/kotlin/androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_REMOVE_MANAGED_PROFILE
 
@@ -1594,9 +1594,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_REMOVE_USER
 
@@ -1618,9 +1618,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SAFE_BOOT
 
@@ -1646,9 +1646,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SET_USER_ICON
 
@@ -1670,9 +1670,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SET_WALLPAPER
 
@@ -1694,9 +1694,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SHARE_INTO_MANAGED_PROFILE
 
@@ -1708,7 +1708,7 @@ static val DISALLOW_SHARE_INTO_MANAGED_PROFILE: String
 
 Specifies whether the user can share file / picture / data from the primary user into the managed profile, either by sending them from the primary side, or by picking up data within an app in the managed profile.
 
-When a managed profile is created, the system allows the user to send data from the primary side to the profile by setting up certain default cross profile intent filters. If this is undesired, this restriction can be set to disallow it. Note that this restriction will not block any sharing allowed by explicit `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addCrossProfileIntentFilter(android.content.ComponentName,%20android.content.IntentFilter,%20kotlin.Int)` calls by the profile owner.
+When a managed profile is created, the system allows the user to send data from the primary side to the profile by setting up certain default cross profile intent filters. If this is undesired, this restriction can be set to disallow it. Note that this restriction will not block any sharing allowed by explicit addCrossProfileIntentFilter calls by the profile owner.
 
 This restriction is only meaningful when set by profile owner. When it is set by device owner, it does not have any effect.
 
@@ -1720,9 +1720,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SHARE_LOCATION
 
@@ -1750,9 +1750,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI
 
@@ -1778,9 +1778,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SIM_GLOBALLY
 
@@ -1808,9 +1808,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SMS
 
@@ -1836,9 +1836,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_SYSTEM_ERROR_DIALOGS
 
@@ -1862,9 +1862,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_TASK_CONTINUITY_HANDOFF
 
@@ -1888,8 +1888,8 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
+- addUserRestriction
+- clearUserRestriction
 
 ### DISALLOW_THREAD_NETWORK
 
@@ -1915,9 +1915,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_ULTRA_WIDEBAND_RADIO
 
@@ -1945,9 +1945,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_UNIFIED_PASSWORD
 
@@ -1962,8 +1962,8 @@ Specifies that the managed profile is not allowed to have unified lock screen ch
 To ensure that there is a separate work profile password, IT admins have to:
 
 1. Enforce `https://developer.android.com/reference/kotlin/android/os/UserManager#DISALLOW_UNIFIED_PASSWORD:kotlin.String`
-2. Verify that `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#isUsingUnifiedPassword(android.content.ComponentName)` returns false. This indicates that there is now a separate work profile password configured and the set up is completed.
-3. In case `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#isUsingUnifiedPassword(android.content.ComponentName)` returns true, invoke `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#ACTION_SET_NEW_PASSWORD:kotlin.String` intent and then verify again `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#isUsingUnifiedPassword(android.content.ComponentName)`.
+2. Verify that isUsingUnifiedPassword returns false. This indicates that there is now a separate work profile password configured and the set up is completed.
+3. In case isUsingUnifiedPassword returns true, invoke `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#ACTION_SET_NEW_PASSWORD:kotlin.String` intent and then verify again isUsingUnifiedPassword.
 
 <br />
 
@@ -1979,9 +1979,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_UNINSTALL_APPS
 
@@ -2003,9 +2003,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_UNMUTE_MICROPHONE
 
@@ -2031,9 +2031,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_USB_FILE_TRANSFER
 
@@ -2059,9 +2059,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_USER_SWITCH
 
@@ -2073,7 +2073,7 @@ static val DISALLOW_USER_SWITCH: String
 
 Specifies if user switching is blocked on the current user.
 
-This restriction can only be set by the device owner, it will be applied to all users. Device owner can still switch user via `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#switchUser(android.content.ComponentName,%20android.os.UserHandle)` when this restriction is set.
+This restriction can only be set by the device owner, it will be applied to all users. Device owner can still switch user via switchUser when this restriction is set.
 
 Holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_MODIFY_USERS:kotlin.String` can set this restriction using the DevicePolicyManager APIs mentioned below.
 
@@ -2083,9 +2083,9 @@ The default value is `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_WIFI_DIRECT
 
@@ -2111,9 +2111,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### DISALLOW_WIFI_TETHERING
 
@@ -2141,9 +2141,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### ENSURE_VERIFY_APPS
 
@@ -2167,9 +2167,9 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserRestrictions()`
+- addUserRestriction
+- clearUserRestriction
+- getUserRestrictions
 
 ### KEY_RESTRICTIONS_PENDING
 
@@ -2191,8 +2191,8 @@ Type: Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setApplicationRestrictions(android.content.ComponentName,%20kotlin.String,%20android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getApplicationRestrictions(android.content.ComponentName,%20kotlin.String)`
+- setApplicationRestrictions
+- getApplicationRestrictions
 
 ### QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED
 
@@ -2214,7 +2214,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val USER_CREATION_FAILED_NOT_PERMITTED: Int
 ```
 
-Error result indicating that this user is not allowed to add other users on this device. This is a result code returned from the activity created by the intent `https://developer.android.com/reference/kotlin/android/os/UserManager#createUserCreationIntent(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)`.
+Error result indicating that this user is not allowed to add other users on this device. This is a result code returned from the activity created by the intent createUserCreationIntent.
 
  Value: 1
 
@@ -2226,7 +2226,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val USER_CREATION_FAILED_NO_MORE_USERS: Int
 ```
 
-Error result indicating that no more users can be created on this device. This is a result code returned from the activity created by the intent `https://developer.android.com/reference/kotlin/android/os/UserManager#createUserCreationIntent(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.PersistableBundle)`.
+Error result indicating that no more users can be created on this device. This is a result code returned from the activity created by the intent createUserCreationIntent.
 
  Value: 2
 
@@ -2371,9 +2371,9 @@ Returns an intent to create a user for the provided name and account name. The n
 
 The intent should be launched using startActivityForResult and the return result will indicate if the user consented to adding a new user and if the operation succeeded. Any errors in creating the user will be returned in the result code. If the user cancels the request, the return result will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`. On success, the result code will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`.
 
-Use `https://developer.android.com/reference/kotlin/android/os/UserManager#supportsMultipleUsers()` to first check if the device supports this operation at all.
+Use supportsMultipleUsers to first check if the device supports this operation at all.
 
-The new user is created but not initialized. After switching into the user for the first time, the preferred user name and account information are used by the setup process for that user. This API should only be called if the current user is an `https://developer.android.com/reference/kotlin/android/os/UserManager#isAdminUser()` user, as otherwise the returned intent will not be able to create a user.
+The new user is created but not initialized. After switching into the user for the first time, the preferred user name and account information are used by the setup process for that user. This API should only be called if the current user is an isAdminUser user, as otherwise the returned intent will not be able to create a user.
 
 | Parameters ||
 |---|---|
@@ -2381,7 +2381,7 @@ The new user is created but not initialized. After switching into the user for t
 | `accountName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Optional account name that will be used by the setup wizard to initialize the user. Character limit is 500. This value may be `null`. |
 | `accountType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Optional account type for the account to be created. This is required if the account name is specified. Character limit is 500. This value may be `null`. |
 | --- | --- |
-| `accountOptions` | [PersistableBundle](PersistableBundle.md)?: Optional bundle of data to be passed in during account creation in the new user via `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. Character limit is 1000. This value may be `null`. |
+| `accountOptions` | [PersistableBundle](PersistableBundle.md)?: Optional bundle of data to be passed in during account creation in the new user via addAccount. Character limit is 1000. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2391,7 +2391,7 @@ The new user is created but not initialized. After switching into the user for t
 
 - `https://developer.android.com/reference/kotlin/android/os/UserManager#USER_CREATION_FAILED_NOT_PERMITTED:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/os/UserManager#USER_CREATION_FAILED_NO_MORE_USERS:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#supportsMultipleUsers()`
+- supportsMultipleUsers
 
 ### getApplicationRestrictions
 
@@ -2401,9 +2401,9 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun getApplicationRestrictions(packageName: String!): Bundle!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle` containing any saved application restrictions for the context user, for the given package name. Only an application with this package name can call this method.
+Returns a Bundle containing any saved application restrictions for the context user, for the given package name. Only an application with this package name can call this method.
 
-The returned `https://developer.android.com/reference/kotlin/android/os/Bundle` consists of key-value pairs, as defined by the application, where the types of values may be:
+The returned Bundle consists of key-value pairs, as defined by the application, where the types of values may be:
 
 - `boolean`
 - `int`
@@ -2412,7 +2412,7 @@ The returned `https://developer.android.com/reference/kotlin/android/os/Bundle` 
 
 NOTE: The method performs disk I/O and shouldn't be called on the main thread
 
-Starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#UPSIDE_DOWN_CAKE:kotlin.Int`, it is possible for there to be multiple managing apps on the device with the ability to set app restrictions, e.g. an Enterprise Device Policy Controller (DPC) and a Supervision admin. This method will always return the app restrictions set by the DPC, if the DPC has set one. Beginning from SDK level 36.1, if the DPC has not set any app restriction while other managing apps have set some, this method will return app restrictions set by one of those managing apps. There is no guarantee on which managing apps app restriction will be returned. To retrieve restrictions set by all managing apps, use `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager.html#getApplicationRestrictionsPerAdmin()` instead. 
+Starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#UPSIDE_DOWN_CAKE:kotlin.Int`, it is possible for there to be multiple managing apps on the device with the ability to set app restrictions, e.g. an Enterprise Device Policy Controller (DPC) and a Supervision admin. This method will always return the app restrictions set by the DPC, if the DPC has set one. Beginning from SDK level 36.1, if the DPC has not set any app restriction while other managing apps have set some, this method will return app restrictions set by one of those managing apps. There is no guarantee on which managing apps app restriction will be returned. To retrieve restrictions set by all managing apps, use getApplicationRestrictionsPerAdmin instead. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -2421,12 +2421,12 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Bundle!` | a `https://developer.android.com/reference/kotlin/android/os/Bundle` with the restrictions for that package, or an empty `https://developer.android.com/reference/kotlin/android/os/Bundle` if there are no saved restrictions. |
+| `https://developer.android.com/reference/kotlin/android/os/Bundle!` | a Bundle with the restrictions for that package, or an empty Bundle if there are no saved restrictions. |
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/os/UserManager#KEY_RESTRICTIONS_PENDING:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getApplicationRestrictions(android.content.ComponentName,%20kotlin.String)`
+- getApplicationRestrictions
 
 ### getSerialNumberForUser
 
@@ -2448,7 +2448,7 @@ Return the serial number for a user. This is a device-unique number assigned to 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getUserForSerialNumber(kotlin.Long)`
+- getUserForSerialNumber
 
 ### getUserCount
 
@@ -2487,7 +2487,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun getUserForSerialNumber(serialNumber: Long): UserHandle!
 ```
 
-Return the user associated with a serial number previously returned by `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)`.
+Return the user associated with a serial number previously returned by getSerialNumberForUser.
 
 | Parameters ||
 |---|---|
@@ -2499,7 +2499,7 @@ Return the user associated with a serial number previously returned by `https://
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#getSerialNumberForUser(android.os.UserHandle)`
+- getSerialNumberForUser
 
 ### getUserName
 
@@ -2562,7 +2562,7 @@ Returns the user-wide restrictions imposed on the user specified by `userHandle`
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Bundle!` | a Bundle containing all the restrictions. Requires `android.permission.MANAGE_USERS` or `android.permission.INTERACT_ACROSS_USERS`, otherwise specified `https://developer.android.com/reference/kotlin/android/os/UserHandle` must be the calling user or a profile associated with it. |
+| `https://developer.android.com/reference/kotlin/android/os/Bundle!` | a Bundle containing all the restrictions. Requires `android.permission.MANAGE_USERS` or `android.permission.INTERACT_ACROSS_USERS`, otherwise specified UserHandle must be the calling user or a profile associated with it. |
 
 ### hasUserRestriction
 
@@ -2620,7 +2620,7 @@ open static fun isHeadlessSystemUserMode(): Boolean
 
 Checks whether the device is running in a headless system user mode.
 
-Headless system user mode means the `https://developer.android.com/reference/kotlin/android/os/UserManager#isSystemUser()` runs system services and some system UI, but it is not associated with any real person and additional users must be created to be associated with real persons.
+Headless system user mode means the isSystemUser runs system services and some system UI, but it is not associated with any real person and additional users must be created to be associated with real persons.
 
 | Return ||
 |---|---|
@@ -2634,7 +2634,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun isManagedProfile(): Boolean
 ```
 
-Checks if the context user is a managed profile. Note that this applies specifically to *managed* profiles. For profiles in general, use `https://developer.android.com/reference/kotlin/android/os/UserManager#isProfile()` instead.
+Checks if the context user is a managed profile. Note that this applies specifically to *managed* profiles. For profiles in general, use isProfile instead.
 
 | Return ||
 |---|---|
@@ -2648,7 +2648,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun isProfile(): Boolean
 ```
 
-Checks if the context user is running in a profile. A profile is a user that typically has its own separate data but shares its UI with some parent user. For example, a `https://developer.android.com/reference/kotlin/android/os/UserManager#isManagedProfile()` is a type of profile.
+Checks if the context user is running in a profile. A profile is a user that typically has its own separate data but shares its UI with some parent user. For example, a isManagedProfile is a type of profile.
 
 | Return ||
 |---|---|
@@ -2728,7 +2728,7 @@ open fun isUserRunning(user: UserHandle!): Boolean
 
 Return whether the given user is actively running. This means that the user is in the "started" state, not "stopped" -- it is currently allowed to run code through scheduled alarms, receiving broadcasts, etc. A started user may be either the current foreground user or a background user; the result here does not distinguish between the two.
 
-Note prior to Android Nougat MR1 (SDK version \<= 24; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N:kotlin.Int`, this API required a system permission in order to check other profile's status. Since Android Nougat MR1 (SDK version \>= 25; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N_MR1:kotlin.Int`), the restriction has been relaxed, and now it'll accept any `https://developer.android.com/reference/kotlin/android/os/UserHandle` within the same profile group as the caller.
+Note prior to Android Nougat MR1 (SDK version \<= 24; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N:kotlin.Int`, this API required a system permission in order to check other profile's status. Since Android Nougat MR1 (SDK version \>= 25; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N_MR1:kotlin.Int`), the restriction has been relaxed, and now it'll accept any UserHandle within the same profile group as the caller.
 
 | Parameters ||
 |---|---|
@@ -2742,9 +2742,9 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun isUserRunningOrStopping(user: UserHandle!): Boolean
 ```
 
-Return whether the given user is actively running *or* stopping. This is like `https://developer.android.com/reference/kotlin/android/os/UserManager#isUserRunning(android.os.UserHandle)`, but will also return true if the user had been running but is in the process of being stopped (but is not yet fully stopped, and still running some code).
+Return whether the given user is actively running *or* stopping. This is like isUserRunning, but will also return true if the user had been running but is in the process of being stopped (but is not yet fully stopped, and still running some code).
 
-Note prior to Android Nougat MR1 (SDK version \<= 24; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N:kotlin.Int`, this API required a system permission in order to check other profile's status. Since Android Nougat MR1 (SDK version \>= 25; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N_MR1:kotlin.Int`), the restriction has been relaxed, and now it'll accept any `https://developer.android.com/reference/kotlin/android/os/UserHandle` within the same profile group as the caller.
+Note prior to Android Nougat MR1 (SDK version \<= 24; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N:kotlin.Int`, this API required a system permission in order to check other profile's status. Since Android Nougat MR1 (SDK version \>= 25; `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#N_MR1:kotlin.Int`), the restriction has been relaxed, and now it'll accept any UserHandle within the same profile group as the caller.
 
 | Parameters ||
 |---|---|
@@ -2766,7 +2766,7 @@ When a user is locked, only device-protected data storage is available. When a u
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_USER_UNLOCKED:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#createDeviceProtectedStorageContext()`
+- createDeviceProtectedStorageContext
 
 ### isUserUnlocked
 
@@ -2782,7 +2782,7 @@ On devices with direct boot, a user is unlocked only after they've entered their
 
 When a user is locked, only device-protected data storage is available. When a user is unlocked, both device-protected and credential-protected private app data storage is available.
 
-Requires `android.permission.MANAGE_USERS` or `android.permission.INTERACT_ACROSS_USERS`, otherwise specified `https://developer.android.com/reference/kotlin/android/os/UserHandle` must be the calling user or a profile associated with it.
+Requires `android.permission.MANAGE_USERS` or `android.permission.INTERACT_ACROSS_USERS`, otherwise specified UserHandle must be the calling user or a profile associated with it.
 
 | Parameters ||
 |---|---|
@@ -2791,7 +2791,7 @@ Requires `android.permission.MANAGE_USERS` or `android.permission.INTERACT_ACROS
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_USER_UNLOCKED:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#createDeviceProtectedStorageContext()`
+- createDeviceProtectedStorageContext
 
 ### requestQuietModeEnabled
 
@@ -2808,7 +2808,7 @@ Enables or disables quiet mode for a profile. If quiet mode is enabled, apps in 
 
 If a user's credential is needed to turn off quiet mode, a confirm credential screen will be shown to the user.
 
-The change may not happen instantly, however apps can listen for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_AVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_UNAVAILABLE:kotlin.String` broadcasts in order to be notified of the change of the quiet mode for managed profile. Apps can listen to generic broadcasts `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_AVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_UNAVAILABLE:kotlin.String` to be notified of the change in quiet mode for any profiles. Apps can also check the current state of quiet mode by calling `https://developer.android.com/reference/kotlin/android/os/UserManager#isQuietModeEnabled(android.os.UserHandle)`.
+The change may not happen instantly, however apps can listen for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_AVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_UNAVAILABLE:kotlin.String` broadcasts in order to be notified of the change of the quiet mode for managed profile. Apps can listen to generic broadcasts `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_AVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_UNAVAILABLE:kotlin.String` to be notified of the change in quiet mode for any profiles. Apps can also check the current state of quiet mode by calling isQuietModeEnabled.
 
 The caller must either be the foreground default launcher or have one of these permissions: `MANAGE_USERS` or `MODIFY_QUIET_MODE`.
 
@@ -2828,7 +2828,7 @@ The caller must either be the foreground default launcher or have one of these p
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#isQuietModeEnabled(android.os.UserHandle)`
+- isQuietModeEnabled
 
 ### requestQuietModeEnabled
 
@@ -2842,7 +2842,7 @@ open fun requestQuietModeEnabled(
 ): Boolean
 ```
 
-Perform the same operation as `https://developer.android.com/reference/kotlin/android/os/UserManager#requestQuietModeEnabled(kotlin.Boolean,%20android.os.UserHandle)`, but with a flag to tweak the behavior of the request.
+Perform the same operation as requestQuietModeEnabled, but with a flag to tweak the behavior of the request.
 
 | Parameters ||
 |---|---|
@@ -2862,7 +2862,7 @@ Perform the same operation as `https://developer.android.com/reference/kotlin/an
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/UserManager#isQuietModeEnabled(android.os.UserHandle)`
+- isQuietModeEnabled
 
 ### setRestrictionsChallenge
 
@@ -2897,7 +2897,7 @@ open fun setUserRestriction(
 ): Unit
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)` or `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,%20kotlin.String)` instead.*
+**Deprecated:** *use addUserRestriction or clearUserRestriction instead.*
 
 Sets the value of a specific restriction on the context user. Requires the MANAGE_USERS permission. 
 Requires android.Manifest.permission.MANAGE_USERS
@@ -2918,7 +2918,7 @@ open fun setUserRestrictions(restrictions: Bundle!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-This will no longer work. Device owners and profile owners should use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)` instead.
+This will no longer work. Device owners and profile owners should use addUserRestriction instead.
 
 ### setUserRestrictions
 
@@ -2934,7 +2934,7 @@ open fun setUserRestrictions(
 
 **Deprecated:** *Deprecated in Java.*
 
-This will no longer work. Device owners and profile owners should use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,%20kotlin.String)` instead.
+This will no longer work. Device owners and profile owners should use addUserRestriction instead.
 
 ### supportsMultipleUsers
 

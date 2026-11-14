@@ -19,9 +19,9 @@ Thrown when the annotation parser attempts to read an annotation from a class fi
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationFormatError#AnnotationFormatError(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs a new `AnnotationFormatError` with the specified detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationFormatError#AnnotationFormatError(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new `AnnotationFormatError` with the specified detail message and cause. |
-| `https://developer.android.com/reference/kotlin/java/lang/annotation/AnnotationFormatError#AnnotationFormatError(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new `AnnotationFormatError` with the specified cause and a detail message of `(cause == null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
+| AnnotationFormatError Constructs a new `AnnotationFormatError` with the specified detail message. |
+| AnnotationFormatError Constructs a new `AnnotationFormatError` with the specified detail message and cause. |
+| AnnotationFormatError Constructs a new `AnnotationFormatError` with the specified cause and a detail message of `(cause == null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
 
 ## Public constructors
 

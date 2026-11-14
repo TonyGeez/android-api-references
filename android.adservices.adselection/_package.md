@@ -5,9 +5,9 @@ Kotlin | [Java](_package.md)
 
 ## Classes
 
-| [AddAdSelectionFromOutcomesOverrideRequest](AddAdSelectionFromOutcomesOverrideRequest.md) | This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager#overrideAdSelectionFromOutcomesConfigRemoteInfo(android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` ( AddAdSelectionOverrideRequest, Executor, OutcomeReceiver)} request |
+| [AddAdSelectionFromOutcomesOverrideRequest](AddAdSelectionFromOutcomesOverrideRequest.md) | This POJO represents the overrideAdSelectionFromOutcomesConfigRemoteInfo ( AddAdSelectionOverrideRequest, Executor, OutcomeReceiver)} request |
 | --- | --- |
-| [AddAdSelectionOverrideRequest](AddAdSelectionOverrideRequest.md) | This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager#overrideAdSelectionConfigRemoteInfo(android.adservices.adselection.AddAdSelectionOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` request |
+| [AddAdSelectionOverrideRequest](AddAdSelectionOverrideRequest.md) | This POJO represents the overrideAdSelectionConfigRemoteInfo request |
 | [AdSelectionConfig](AdSelectionConfig.md) | Contains the configuration of the ad selection process. |
 | [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md) | Contains the configuration of the ad selection process that select a winner from a given list of ad selection ids. |
 | --- | --- |
@@ -19,19 +19,19 @@ Kotlin | [Java](_package.md)
 | [GetAdSelectionDataOutcome](GetAdSelectionDataOutcome.md) | Represents ad selection data collected from device for ad selection. |
 | [GetAdSelectionDataRequest](GetAdSelectionDataRequest.md) | Represents a request containing the information to get ad selection data. |
 | --- | --- |
-| [PerBuyerConfiguration](PerBuyerConfiguration.md) | Contains a per buyer configuration which will be used as part of a `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration` in a `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest`. |
-| [PerBuyerDecisionLogic](PerBuyerDecisionLogic.md) | The override object for decision logic JS per buyer for `https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds`. |
+| [PerBuyerConfiguration](PerBuyerConfiguration.md) | Contains a per buyer configuration which will be used as part of a SellerConfiguration in a GetAdSelectionDataRequest. |
+| [PerBuyerDecisionLogic](PerBuyerDecisionLogic.md) | The override object for decision logic JS per buyer for SignedContextualAds. |
 | [PersistAdSelectionResultRequest](PersistAdSelectionResultRequest.md) | Represents a request containing the seller, the ad selection data id and data. |
 | --- | --- |
-| [RemoveAdSelectionFromOutcomesOverrideRequest](RemoveAdSelectionFromOutcomesOverrideRequest.md) | This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager` request |
-| [RemoveAdSelectionOverrideRequest](RemoveAdSelectionOverrideRequest.md) | This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager#removeAdSelectionConfigRemoteInfoOverride(android.adservices.adselection.RemoveAdSelectionOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` request |
+| [RemoveAdSelectionFromOutcomesOverrideRequest](RemoveAdSelectionFromOutcomesOverrideRequest.md) | This POJO represents the TestAdSelectionManager request |
+| [RemoveAdSelectionOverrideRequest](RemoveAdSelectionOverrideRequest.md) | This POJO represents the removeAdSelectionConfigRemoteInfoOverride request |
 | [ReportEventRequest](ReportEventRequest.md) | Request object wrapping the required arguments needed to report an ad event. |
 | --- | --- |
 | [ReportImpressionRequest](ReportImpressionRequest.md) | Represent input parameters to the reportImpression API. |
-| [SellerConfiguration](SellerConfiguration.md) | This object will be part of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest` and will be constructed and used by the SDK to influence the size of the response of `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` |
+| [SellerConfiguration](SellerConfiguration.md) | This object will be part of the GetAdSelectionDataRequest and will be constructed and used by the SDK to influence the size of the response of getAdSelectionData |
 | [SetAppInstallAdvertisersRequest](SetAppInstallAdvertisersRequest.md) | Represents input parameters to the setAppInstallAdvertiser API. |
 | --- | --- |
-| [SignedContextualAds](SignedContextualAds.md) | Contains a list of buyer supplied `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdWithBid` bundle and its signature. |
-| [TestAdSelectionManager](TestAdSelectionManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager` provides APIs for apps and ad SDKs to test ad selection processes. |
+| [SignedContextualAds](SignedContextualAds.md) | Contains a list of buyer supplied AdWithBid bundle and its signature. |
+| [TestAdSelectionManager](TestAdSelectionManager.md) | TestAdSelectionManager provides APIs for apps and ad SDKs to test ad selection processes. |
 | [UpdateAdCounterHistogramRequest](UpdateAdCounterHistogramRequest.md) | Request object wrapping the required arguments needed to update an ad counter histogram. |
 | --- | --- |

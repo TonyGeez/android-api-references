@@ -19,7 +19,7 @@ PhoneNumberManager provides APIs for parsing phone numbers from various sources,
 
 | Public methods ||
 |---|---|
-| open [ParsedPhoneNumber](ParsedPhoneNumber.md) | `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager#parsePhoneNumber(kotlin.collections.MutableList,%20kotlin.String)(associatedUris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>?, countryIso: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Parses the associated URIs into a `https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber` object. |
+| open [ParsedPhoneNumber](ParsedPhoneNumber.md) | parsePhoneNumber Parses the associated URIs into a ParsedPhoneNumber object. |
 
 ## Public methods
 
@@ -34,7 +34,7 @@ open fun parsePhoneNumber(
 ): ParsedPhoneNumber
 ```
 
-Parses the associated URIs into a `https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber` object.
+Parses the associated URIs into a ParsedPhoneNumber object.
 
 This method attempts to parse the provided list of URIs into a valid phone number. The order of the URIs in the list is significant; it is recommended to prioritize URIs that are more likely to contain a valid phone number by placing them at the beginning of the list. The method will iterate through the list and return the first URI that can be successfully parsed into a valid phone number.
 
@@ -45,4 +45,4 @@ This method attempts to parse the provided list of URIs into a valid phone numbe
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber` | A `https://developer.android.com/reference/kotlin/android/telephony/ParsedPhoneNumber` object representing the first successfully parsed phone number from the provided list or an error if no numbers could be parsed. This value cannot be `null`. |
+| ParsedPhoneNumber | A ParsedPhoneNumber object representing the first successfully parsed phone number from the provided list or an error if no numbers could be parsed. This value cannot be `null`. |

@@ -27,34 +27,34 @@ Text with text size updated.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(android.os.Parcel)(src: https://developer.android.com/reference/kotlin/android/os/Parcel.html#)` Creates an `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#` from a parcel. |
-| `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the text size to `size` physical pixels. |
-| `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(kotlin.Int,%20kotlin.Boolean)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dip: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the text size to `size` physical pixels, or to `size` device-independent pixels if `dip` is true. |
+| AbsoluteSizeSpan Creates an AbsoluteSizeSpan from a parcel. |
+| AbsoluteSizeSpan Set the text size to `size` physical pixels. |
+| AbsoluteSizeSpan Set the text size to `size` physical pixels, or to `size` device-independent pixels if `dip` is true. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#getDip()()` Returns whether the size is in device-independent pixels or not, depending on the `dip` flag passed in `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(kotlin.Int,%20kotlin.Boolean)` |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#getSize()()` Get the text size. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getDip Returns whether the size is in device-independent pixels or not, depending on the `dip` flag passed in AbsoluteSizeSpan |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSize Get the text size. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#updateDrawState(android.text.TextPaint)(ds: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpanTypeId Return a special type identifier for this span class. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateDrawState <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#updateMeasureState(android.text.TextPaint)(ds: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateMeasureState Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan` `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan#getUnderlying()()`
+Inherited functions From class MetricAffectingSpan `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` getUnderlying
 
-Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)`, returns the underlying MetricAffectingSpan.
+Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by wrap, returns the underlying MetricAffectingSpan.
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#updateDrawState(android.text.TextPaint)(tp: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#!)`
+From class CharacterStyle `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` updateDrawState
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!` `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)(cs: https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!)`
+`https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!` wrap
 
 A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict.
 
@@ -70,7 +70,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 AbsoluteSizeSpan(src: Parcel)
 ```
 
-Creates an `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#` from a parcel.
+Creates an AbsoluteSizeSpan from a parcel.
 
 | Parameters ||
 |---|---|
@@ -108,7 +108,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -122,7 +122,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open fun getDip(): Boolean
 ```
 
-Returns whether the size is in device-independent pixels or not, depending on the `dip` flag passed in `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(kotlin.Int,%20kotlin.Boolean)`
+Returns whether the size is in device-independent pixels or not, depending on the `dip` flag passed in AbsoluteSizeSpan
 
 | Return ||
 |---|---|
@@ -130,7 +130,7 @@ Returns whether the size is in device-independent pixels or not, depending on th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(kotlin.Int,%20kotlin.Boolean)`
+- AbsoluteSizeSpan
 
 ### getSize
 
@@ -140,7 +140,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSize(): Int
 ```
 
-Get the text size. This is in physical pixels if `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#getDip()` returns false or in device-independent pixels if `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#getDip()` returns true.
+Get the text size. This is in physical pixels if getDip returns false or in device-independent pixels if getDip returns true.
 
 | Return ||
 |---|---|
@@ -148,7 +148,7 @@ Get the text size. This is in physical pixels if `https://developer.android.com/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan#AbsoluteSizeSpan(kotlin.Int,%20kotlin.Boolean)`
+- AbsoluteSizeSpan
 
 ### getSpanTypeId
 

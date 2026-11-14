@@ -27,7 +27,7 @@ Represents input parameters to the setAppInstallAdvertiser API.
 
 | Public methods ||
 |---|---|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SetAppInstallAdvertisersRequest#getAdvertisers()()` Returns the set of advertisers that will be able to run app install filters based on this app's presence on the device after a call to SetAppInstallAdvertisers is made with this as input. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md)!\> | getAdvertisers Returns the set of advertisers that will be able to run app install filters based on this app's presence on the device after a call to SetAppInstallAdvertisers is made with this as input. |
 
 ## Public methods
 

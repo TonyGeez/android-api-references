@@ -18,7 +18,7 @@ A text editor might for instance store each paragraph into its own RenderNode. T
 
 ### Hardware acceleration
 
-RenderNodes can be drawn using a `https://developer.android.com/reference/kotlin/android/graphics/RecordingCanvas`. They are not supported in software. Always make sure that the `https://developer.android.com/reference/kotlin/android/graphics/Canvas` you are using to render a display list is hardware accelerated using `https://developer.android.com/reference/kotlin/android/graphics/Canvas#isHardwareAccelerated()`.
+RenderNodes can be drawn using a RecordingCanvas. They are not supported in software. Always make sure that the Canvas you are using to render a display list is hardware accelerated using isHardwareAccelerated.
 
 ### Creating a RenderNode
 
@@ -61,7 +61,7 @@ This step is not mandatory but recommended if you want to release resources held
 
 ### Properties
 
-In addition, a RenderNode offers several properties, such as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setScaleX(kotlin.Float)` or `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationX(kotlin.Float)`, that can be used to affect all the drawing commands recorded within. For instance, these properties can be used to move around a large number of images without re-issuing all the individual `canvas.drawBitmap()` calls.
+In addition, a RenderNode offers several properties, such as setScaleX or setTranslationX, that can be used to affect all the drawing commands recorded within. For instance, these properties can be used to move around a large number of images without re-issuing all the individual `canvas.drawBitmap()` calls.
 
 ```kotlin
 private void createDisplayList() {
@@ -94,7 +94,7 @@ private void createDisplayList() {
       }
 ```
 
-A few of the properties may at first appear redundant, such as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setElevation(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationZ(kotlin.Float)`. The reason for these duplicates are to allow for a separation between static \& transient usages. For example consider a button that raises from 2dp to 8dp when pressed. To achieve that an application may decide to setElevation(2dip), and then on press to animate setTranslationZ to 6dip. Combined this achieves the final desired 8dip value, but the animation need only concern itself with animating the lift from press without needing to know the initial starting value. `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationY(kotlin.Float)` are similarly provided for animation uses despite the functional overlap with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(android.graphics.Rect)`.
+A few of the properties may at first appear redundant, such as setElevation and setTranslationZ. The reason for these duplicates are to allow for a separation between static \& transient usages. For example consider a button that raises from 2dp to 8dp when pressed. To achieve that an application may decide to setElevation(2dip), and then on press to animate setTranslationZ to 6dip. Combined this achieves the final desired 8dip value, but the animation need only concern itself with animating the lift from press without needing to know the initial starting value. setTranslationX and setTranslationY are similarly provided for animation uses despite the functional overlap with setPosition.
 
 The RenderNode's transform matrix is computed at render time as follows:
 
@@ -125,7 +125,7 @@ RenderNode may be created and used on any thread but they are not thread-safe. O
 
 ### When to re-render
 
-Many of the RenderNode mutation methods, such as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationX(kotlin.Float)`, return a boolean indicating if the value actually changed or not. This is useful in detecting if a new frame should be rendered or not. A typical usage would look like:
+Many of the RenderNode mutation methods, such as setTranslationX, return a boolean indicating if the value actually changed or not. This is useful in detecting if a new frame should be rendered or not. A typical usage would look like:
 
 ```kotlin
 public void translateTo(int x, int y) {
@@ -136,7 +136,7 @@ public void translateTo(int x, int y) {
           }
       }
 ```
-This is marginally faster than doing a more explicit up-front check if the value changed by comparing the desired value against `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationX()` as it minimizes JNI transitions. The actual mechanism of requesting a new frame to be rendered will depend on how this RenderNode is being drawn. If it's drawn to a containing View, as in the above snippet, then simply invalidating that View works. If instead the RenderNode is being drawn to a Canvas directly such as with `https://developer.android.com/reference/kotlin/android/view/Surface.html#lockHardwareCanvas()` then a new frame needs to be drawn by calling `https://developer.android.com/reference/kotlin/android/view/Surface.html#lockHardwareCanvas()`, re-drawing the root RenderNode or whatever top-level content is desired, and finally calling `https://developer.android.com/reference/kotlin/android/view/Surface.html#unlockCanvasAndPost(android.graphics.Canvas)`.
+This is marginally faster than doing a more explicit up-front check if the value changed by comparing the desired value against getTranslationX as it minimizes JNI transitions. The actual mechanism of requesting a new frame to be rendered will depend on how this RenderNode is being drawn. If it's drawn to a containing View, as in the above snippet, then simply invalidating that View works. If instead the RenderNode is being drawn to a Canvas directly such as with lockHardwareCanvas then a new frame needs to be drawn by calling lockHardwareCanvas, re-drawing the root RenderNode or whatever top-level content is desired, and finally calling unlockCanvasAndPost.
 
 <br />
 
@@ -144,101 +144,101 @@ This is marginally faster than doing a more explicit up-front check if the value
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#RenderNode(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Creates a new RenderNode that can be used to record batches of drawing operations, and store / apply render properties when drawn. |
+| RenderNode Creates a new RenderNode that can be used to record batches of drawing operations, and store / apply render properties when drawn. |
 
 | Public methods ||
 |---|---|
-| [RecordingCanvas](RecordingCanvas.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording()()` Same as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` with the width \& height set to the RenderNode's own width \& height. |
-| [RecordingCanvas](RecordingCanvas.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Starts recording a display list for the render node. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#computeApproximateMemoryUsage()()` Gets the approximate memory usage of the RenderNode for debug purposes. |
+| [RecordingCanvas](RecordingCanvas.md) | beginRecording Same as beginRecording with the width \& height set to the RenderNode's own width \& height. |
+| [RecordingCanvas](RecordingCanvas.md) | beginRecording Starts recording a display list for the render node. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | computeApproximateMemoryUsage Gets the approximate memory usage of the RenderNode for debug purposes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#discardDisplayList()()` Reset native resources. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()()` \` Ends the recording for this display list. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getAlpha()()` Returns the translucency level of this display list. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | discardDisplayList Reset native resources. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | endRecording \` Ends the recording for this display list. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getAlpha Returns the translucency level of this display list. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getAmbientShadowColor()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getBottom()()` Gets the bottom position for the RenderNode. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getCameraDistance()()` Returns the distance in Z of the camera for this RenderNode |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAmbientShadowColor <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBottom Gets the bottom position for the RenderNode. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getCameraDistance Returns the distance in Z of the camera for this RenderNode |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getClipToBounds()()` Returns whether or not the RenderNode is clipping to its bounds. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getClipToOutline()()` See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipToOutline(kotlin.Boolean)` |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getElevation()()` See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setElevation(kotlin.Float)` |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getClipToBounds Returns whether or not the RenderNode is clipping to its bounds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getClipToOutline See setClipToOutline |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getElevation See setElevation |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getHeight()()` Gets the height of the RenderNode, which is the bottom - top. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getInverseMatrix(android.graphics.Matrix)(outMatrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix)` Gets the current transform inverted. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getLeft()()` Gets the left position for the RenderNode. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHeight Gets the height of the RenderNode, which is the bottom - top. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getInverseMatrix Gets the current transform inverted. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeft Gets the left position for the RenderNode. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getMatrix(android.graphics.Matrix)(outMatrix: https://developer.android.com/reference/kotlin/android/graphics/Matrix)` Gets the current transform matrix |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getPivotX()()` Returns the pivot value for this display list on the X axis, in pixels. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getPivotY()()` Returns the pivot value for this display list on the Y axis, in pixels. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getMatrix Gets the current transform matrix |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getPivotX Returns the pivot value for this display list on the X axis, in pixels. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getPivotY Returns the pivot value for this display list on the Y axis, in pixels. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRight()()` Gets the right position for the RenderNode. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRotationX()()` Returns the rotation value for this display list around the X axis, in degrees. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRotationY()()` Returns the rotation value for this display list around the Y axis, in degrees. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRight Gets the right position for the RenderNode. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRotationX Returns the rotation value for this display list around the X axis, in degrees. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRotationY Returns the rotation value for this display list around the Y axis, in degrees. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRotationZ()()` Returns the rotation value for this display list around the Z axis, in degrees. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getScaleX()()` Returns the scale value for this display list on the X axis. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getScaleY()()` Returns the scale value for this display list on the Y axis. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRotationZ Returns the rotation value for this display list around the Z axis, in degrees. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getScaleX Returns the scale value for this display list on the X axis. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getScaleY Returns the scale value for this display list on the Y axis. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getSpotShadowColor()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTop()()` Gets the top position for the RenderNode. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationX()()` Returns the translation value for this display list on the X axis, in pixels. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpotShadowColor <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTop Gets the top position for the RenderNode. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getTranslationX Returns the translation value for this display list on the X axis, in pixels. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationY()()` Returns the translation value for this display list on the Y axis, in pixels. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationZ()()` Returns the translation value for this display list on the Z axis. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getUniqueId()()` Returns the unique ID that identifies this RenderNode. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getTranslationY Returns the translation value for this display list on the Y axis, in pixels. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getTranslationZ Returns the translation value for this display list on the Z axis. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getUniqueId Returns the unique ID that identifies this RenderNode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getUseCompositingLayer()()` Gets whether or not a compositing layer is forced to be used. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getWidth()()` Gets the width of the RenderNode, which is the right - left. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasDisplayList()()` Returns whether the RenderNode has a display list. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getUseCompositingLayer Gets whether or not a compositing layer is forced to be used. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWidth Gets the width of the RenderNode, which is the right - left. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDisplayList Returns whether the RenderNode has a display list. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasIdentityMatrix()()` Whether or not the RenderNode has an identity transform. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasOverlappingRendering()()` Indicates whether the content of this display list overlaps. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasShadow()()` Checks if the RenderNode has a shadow. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasIdentityMatrix Whether or not the RenderNode has an identity transform. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasOverlappingRendering Indicates whether the content of this display list overlaps. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasShadow Checks if the RenderNode has a shadow. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#isForceDarkAllowed()()` See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setForceDarkAllowed(kotlin.Boolean)` |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#isPivotExplicitlySet()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#offsetLeftAndRight(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Offsets the left and right positions for the RenderNode |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isForceDarkAllowed See setForceDarkAllowed |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPivotExplicitlySet <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offsetLeftAndRight Offsets the left and right positions for the RenderNode |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#offsetTopAndBottom(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Offsets the top and bottom values for the RenderNode |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#resetPivot()()` Clears any pivot previously set by a call to `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotX(kotlin.Float)` or `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotY(kotlin.Float)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setAlpha(kotlin.Float)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the translucency level for the display list. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offsetTopAndBottom Offsets the top and bottom values for the RenderNode |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | resetPivot Clears any pivot previously set by a call to setPivotX or setPivotY. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setAlpha Sets the translucency level for the display list. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setAmbientShadowColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color of the ambient shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a `https://developer.android.com/reference/kotlin/android/graphics/Canvas#enableZ()` section. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setBackdropRenderEffect(android.graphics.RenderEffect)(renderEffect: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect?)` Configure the `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect` to apply to the backdrop contents of this RenderNode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setCameraDistance(kotlin.Float)(distance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the distance along the Z axis (orthogonal to the X/Y plane on which RenderNodes are drawn) from the camera to this RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setAmbientShadowColor Sets the color of the ambient shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a enableZ section. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setBackdropRenderEffect Configure the RenderEffect to apply to the backdrop contents of this RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setCameraDistance Sets the distance along the Z axis (orthogonal to the X/Y plane on which RenderNodes are drawn) from the camera to this RenderNode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipRect(android.graphics.Rect)(rect: https://developer.android.com/reference/kotlin/android/graphics/Rect?)` Sets an additional clip on the RenderNode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipToBounds(kotlin.Boolean)(clipToBounds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether the Render node should clip itself to its bounds. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipToOutline(kotlin.Boolean)(clipToOutline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables clipping to the outline. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setClipRect Sets an additional clip on the RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setClipToBounds Set whether the Render node should clip itself to its bounds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setClipToOutline Enables or disables clipping to the outline. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setElevation(kotlin.Float)(lift: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the base elevation of this RenderNode in pixels |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setForceDarkAllowed(kotlin.Boolean)(allow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether or not to allow force dark to apply to this RenderNode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setHasOverlappingRendering(kotlin.Boolean)(hasOverlappingRendering: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the display list renders content which overlaps. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setElevation Sets the base elevation of this RenderNode in pixels |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setForceDarkAllowed Sets whether or not to allow force dark to apply to this RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setHasOverlappingRendering Sets whether the display list renders content which overlaps. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline?)` Sets the outline, defining the shape that casts a shadow, and the path to be clipped if setClipToOutline is set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotX(kotlin.Float)(pivotX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the pivot value for the display list on the X axis |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotY(kotlin.Float)(pivotY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the pivot value for the display list on the Y axis |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setOutline Sets the outline, defining the shape that casts a shadow, and the path to be clipped if setClipToOutline is set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPivotX Sets the pivot value for the display list on the X axis |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPivotY Sets the pivot value for the display list on the Y axis |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(android.graphics.Rect)(position: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Sets the position of the RenderNode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the position of the RenderNode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setProjectBackwards(kotlin.Boolean)(shouldProject: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the RenderNode should be drawn immediately after the closest ancestor RenderNode containing a projection receiver. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPosition Sets the position of the RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPosition Sets the position of the RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setProjectBackwards Sets whether the RenderNode should be drawn immediately after the closest ancestor RenderNode containing a projection receiver. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setProjectionReceiver(kotlin.Boolean)(shouldReceive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the RenderNode is a projection receiver. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRenderEffect(android.graphics.RenderEffect)(renderEffect: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect?)` Configure the `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect` to apply to this RenderNode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationX(kotlin.Float)(rotationX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the rotation value for the display list around the X axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setProjectionReceiver Sets whether the RenderNode is a projection receiver. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setRenderEffect Configure the RenderEffect to apply to this RenderNode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setRotationX Sets the rotation value for the display list around the X axis. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationY(kotlin.Float)(rotationY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the rotation value for the display list around the Y axis. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationZ(kotlin.Float)(rotation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the rotation value for the display list around the Z axis. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setScaleX(kotlin.Float)(scaleX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the scale value for the display list on the X axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setRotationY Sets the rotation value for the display list around the Y axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setRotationZ Sets the rotation value for the display list around the Z axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setScaleX Sets the scale value for the display list on the X axis. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setScaleY(kotlin.Float)(scaleY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the scale value for the display list on the Y axis. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setSpotShadowColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color of the spot shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a `https://developer.android.com/reference/kotlin/android/graphics/Canvas#enableZ()` section. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationX(kotlin.Float)(translationX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the translation value for the display list on the X axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setScaleY Sets the scale value for the display list on the Y axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setSpotShadowColor Sets the color of the spot shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a enableZ section. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setTranslationX Sets the translation value for the display list on the X axis. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationY(kotlin.Float)(translationY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the translation value for the display list on the Y axis. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationZ(kotlin.Float)(translationZ: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the translation value for the display list on the Z axis. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setUseCompositingLayer(kotlin.Boolean,%20android.graphics.Paint)(forceToLayer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint?)` Controls whether or not to force this RenderNode to render to an intermediate buffer. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setTranslationY Sets the translation value for the display list on the Y axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setTranslationZ Sets the translation value for the display list on the Z axis. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setUseCompositingLayer Controls whether or not to force this RenderNode to render to an intermediate buffer. |
 | --- | --- |
 
 ## Public constructors
@@ -267,20 +267,20 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun beginRecording(): RecordingCanvas
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` with the width \& height set to the RenderNode's own width \& height. The RenderNode's width \& height may be set with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`.
+Same as beginRecording with the width \& height set to the RenderNode's own width \& height. The RenderNode's width \& height may be set with setPosition.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/RecordingCanvas` | A canvas to record drawing operations. This value cannot be `null`. |
+| RecordingCanvas | A canvas to record drawing operations. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If a recording is already in progress. That is, the previous call to `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` did not call `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()`. |
+| `java.lang.IllegalStateException` | If a recording is already in progress. That is, the previous call to beginRecording did not call endRecording. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasDisplayList()`
+- endRecording
+- hasDisplayList
 
 ### beginRecording
 
@@ -293,25 +293,25 @@ fun beginRecording(
 ): RecordingCanvas
 ```
 
-Starts recording a display list for the render node. All operations performed on the returned canvas are recorded and stored in this display list. `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()` must be called when the recording is finished in order to apply the updated display list. Failing to call `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()` will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` if `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` is called again.
+Starts recording a display list for the render node. All operations performed on the returned canvas are recorded and stored in this display list. endRecording must be called when the recording is finished in order to apply the updated display list. Failing to call endRecording will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` if beginRecording is called again.
 
 | Parameters ||
 |---|---|
-| `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the recording viewport. This will not alter the width of the RenderNode itself, that must be set with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(android.graphics.Rect)`. |
-| `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the recording viewport. This will not alter the height of the RenderNode itself, that must be set with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(android.graphics.Rect)`. |
+| `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width of the recording viewport. This will not alter the width of the RenderNode itself, that must be set with setPosition. |
+| `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height of the recording viewport. This will not alter the height of the RenderNode itself, that must be set with setPosition. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/RecordingCanvas` | A canvas to record drawing operations. This value cannot be `null`. |
+| RecordingCanvas | A canvas to record drawing operations. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If a recording is already in progress. That is, the previous call to `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` did not call `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()`. |
+| `java.lang.IllegalStateException` | If a recording is already in progress. That is, the previous call to beginRecording did not call endRecording. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasDisplayList()`
+- endRecording
+- hasDisplayList
 
 ### computeApproximateMemoryUsage
 
@@ -346,11 +346,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun endRecording(): Unit
 ```
 
-\` Ends the recording for this display list. Calling this method marks the display list valid and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasDisplayList()` will return true.
+\` Ends the recording for this display list. Calling this method marks the display list valid and hasDisplayList will return true.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasDisplayList()`
+- beginRecording
+- hasDisplayList
 
 ### getAlpha
 
@@ -368,7 +368,7 @@ Returns the translucency level of this display list.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setAlpha(kotlin.Float)`
+- setAlpha
 
 ### getAmbientShadowColor
 
@@ -380,7 +380,7 @@ fun getAmbientShadowColor(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The shadow color set by `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setAmbientShadowColor(kotlin.Int)`, or black if nothing was set |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The shadow color set by setAmbientShadowColor, or black if nothing was set |
 
 ### getBottom
 
@@ -412,7 +412,7 @@ Returns the distance in Z of the camera for this RenderNode
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setCameraDistance(kotlin.Float)`
+- setCameraDistance
 
 ### getClipToBounds
 
@@ -422,7 +422,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getClipToBounds(): Boolean
 ```
 
-Returns whether or not the RenderNode is clipping to its bounds. See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipToBounds(kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+Returns whether or not the RenderNode is clipping to its bounds. See setClipToBounds and setPosition
 
 | Return ||
 |---|---|
@@ -436,7 +436,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getClipToOutline(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipToOutline(kotlin.Boolean)`
+See setClipToOutline
 
 | Return ||
 |---|---|
@@ -450,7 +450,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getElevation(): Float
 ```
 
-See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setElevation(kotlin.Float)`
+See setElevation
 
 | Return ||
 |---|---|
@@ -478,7 +478,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getInverseMatrix(outMatrix: Matrix): Unit
 ```
 
-Gets the current transform inverted. This is a faster way to do the otherwise equivalent `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getMatrix(android.graphics.Matrix)` followed by `https://developer.android.com/reference/kotlin/android/graphics/Matrix#invert(android.graphics.Matrix)`
+Gets the current transform inverted. This is a faster way to do the otherwise equivalent getMatrix followed by invert
 
 | Parameters ||
 |---|---|
@@ -523,7 +523,7 @@ fun getPivotX(): Float
 Returns the pivot value for this display list on the X axis, in pixels.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotX(kotlin.Float)`
+- setPivotX
 
 ### getPivotY
 
@@ -536,7 +536,7 @@ fun getPivotY(): Float
 Returns the pivot value for this display list on the Y axis, in pixels.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotY(kotlin.Float)`
+- setPivotY
 
 ### getRight
 
@@ -563,7 +563,7 @@ fun getRotationX(): Float
 Returns the rotation value for this display list around the X axis, in degrees.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationX(kotlin.Float)`
+- setRotationX
 
 ### getRotationY
 
@@ -576,7 +576,7 @@ fun getRotationY(): Float
 Returns the rotation value for this display list around the Y axis, in degrees.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationY(kotlin.Float)`
+- setRotationY
 
 ### getRotationZ
 
@@ -589,7 +589,7 @@ fun getRotationZ(): Float
 Returns the rotation value for this display list around the Z axis, in degrees.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationZ(kotlin.Float)`
+- setRotationZ
 
 ### getScaleX
 
@@ -602,7 +602,7 @@ fun getScaleX(): Float
 Returns the scale value for this display list on the X axis.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setScaleX(kotlin.Float)`
+- setScaleX
 
 ### getScaleY
 
@@ -615,7 +615,7 @@ fun getScaleY(): Float
 Returns the scale value for this display list on the Y axis.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setScaleY(kotlin.Float)`
+- setScaleY
 
 ### getSpotShadowColor
 
@@ -627,7 +627,7 @@ fun getSpotShadowColor(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The shadow color set by `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setSpotShadowColor(kotlin.Int)`, or black if nothing was set |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The shadow color set by setSpotShadowColor, or black if nothing was set |
 
 ### getTop
 
@@ -654,7 +654,7 @@ fun getTranslationX(): Float
 Returns the translation value for this display list on the X axis, in pixels.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationX(kotlin.Float)`
+- setTranslationX
 
 ### getTranslationY
 
@@ -667,7 +667,7 @@ fun getTranslationY(): Float
 Returns the translation value for this display list on the Y axis, in pixels.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationY(kotlin.Float)`
+- setTranslationY
 
 ### getTranslationZ
 
@@ -680,7 +680,7 @@ fun getTranslationZ(): Float
 Returns the translation value for this display list on the Z axis.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setTranslationZ(kotlin.Float)`
+- setTranslationZ
 
 ### getUniqueId
 
@@ -704,7 +704,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getUseCompositingLayer(): Boolean
 ```
 
-Gets whether or not a compositing layer is forced to be used. The default \& recommended is false, as it is typically faster to avoid using compositing layers. See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setUseCompositingLayer(kotlin.Boolean,%20android.graphics.Paint)`.
+Gets whether or not a compositing layer is forced to be used. The default \& recommended is false, as it is typically faster to avoid using compositing layers. See setUseCompositingLayer.
 
 | Return ||
 |---|---|
@@ -732,7 +732,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun hasDisplayList(): Boolean
 ```
 
-Returns whether the RenderNode has a display list. If this returns false, the RenderNode should be re-recorded with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording()` and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#endRecording()`. A RenderNode without a display list may still be drawn, however it will have no impact on the rendering content until its display list is updated. When a RenderNode is no longer drawn by anything the system may automatically invoke `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#discardDisplayList()`. It is therefore important to ensure that `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasDisplayList()` is true on a RenderNode prior to drawing it. See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#discardDisplayList()`
+Returns whether the RenderNode has a display list. If this returns false, the RenderNode should be re-recorded with beginRecording and endRecording. A RenderNode without a display list may still be drawn, however it will have no impact on the rendering content until its display list is updated. When a RenderNode is no longer drawn by anything the system may automatically invoke discardDisplayList. It is therefore important to ensure that hasDisplayList is true on a RenderNode prior to drawing it. See discardDisplayList
 
 | Return ||
 |---|---|
@@ -746,7 +746,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun hasIdentityMatrix(): Boolean
 ```
 
-Whether or not the RenderNode has an identity transform. This is a faster way to do the otherwise equivalent `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getMatrix(android.graphics.Matrix)` `https://developer.android.com/reference/kotlin/android/graphics/Matrix#isIdentity()` as it doesn't require copying the Matrix first, thus minimizing overhead.
+Whether or not the RenderNode has an identity transform. This is a faster way to do the otherwise equivalent getMatrix isIdentity as it doesn't require copying the Matrix first, thus minimizing overhead.
 
 | Return ||
 |---|---|
@@ -768,7 +768,7 @@ Indicates whether the content of this display list overlaps.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setHasOverlappingRendering(kotlin.Boolean)`
+- setHasOverlappingRendering
 
 ### hasShadow
 
@@ -778,7 +778,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun hasShadow(): Boolean
 ```
 
-Checks if the RenderNode has a shadow. That is, if the combination of `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getElevation()` and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationZ()` is greater than zero, there is an `https://developer.android.com/reference/kotlin/android/graphics/Outline` set with a valid shadow caster path, and the provided outline has a non-zero `https://developer.android.com/reference/kotlin/android/graphics/Outline#getAlpha()`.
+Checks if the RenderNode has a shadow. That is, if the combination of getElevation and getTranslationZ is greater than zero, there is an Outline set with a valid shadow caster path, and the provided outline has a non-zero getAlpha.
 
 | Return ||
 |---|---|
@@ -792,7 +792,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun isForceDarkAllowed(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setForceDarkAllowed(kotlin.Boolean)`
+See setForceDarkAllowed
 
 | Return ||
 |---|---|
@@ -808,7 +808,7 @@ fun isPivotExplicitlySet(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | Whether or not a pivot was explicitly set with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotX(kotlin.Float)` or `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotY(kotlin.Float)`. If no pivot has been set then the pivot will be the center of the RenderNode. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | Whether or not a pivot was explicitly set with setPivotX or setPivotY. If no pivot has been set then the pivot will be the center of the RenderNode. |
 
 ### offsetLeftAndRight
 
@@ -854,7 +854,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun resetPivot(): Boolean
 ```
 
-Clears any pivot previously set by a call to `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotX(kotlin.Float)` or `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPivotY(kotlin.Float)`. After calling this `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#isPivotExplicitlySet()` will be false and the pivot used for rotation will return to default of being centered on the view.
+Clears any pivot previously set by a call to setPivotX or setPivotY. After calling this isPivotExplicitlySet will be false and the pivot used for rotation will return to default of being centered on the view.
 
 | Return ||
 |---|---|
@@ -880,8 +880,8 @@ Sets the translucency level for the display list.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setAlpha(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getAlpha()`
+- setAlpha
+- getAlpha
 
 ### setAmbientShadowColor
 
@@ -891,7 +891,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setAmbientShadowColor(color: Int): Boolean
 ```
 
-Sets the color of the ambient shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a `https://developer.android.com/reference/kotlin/android/graphics/Canvas#enableZ()` section.
+Sets the color of the ambient shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a enableZ section.
 
 By default the shadow color is black. Generally, this color will be opaque so the intensity of the shadow is consistent between different RenderNodes with different colors.
 
@@ -913,7 +913,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun setBackdropRenderEffect(renderEffect: RenderEffect?): Boolean
 ```
 
-Configure the `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect` to apply to the backdrop contents of this RenderNode. This will apply a visual effect to the result of the backdrop contents of this RenderNode before the RenderNode is drawn into the destination. For example if `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlurEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.RenderEffect,%20android.graphics.Shader.TileMode)` is provided, the previous content behind this RenderNode will be blurred before the RenderNode is drawn in to the destination.
+Configure the RenderEffect to apply to the backdrop contents of this RenderNode. This will apply a visual effect to the result of the backdrop contents of this RenderNode before the RenderNode is drawn into the destination. For example if createBlurEffect is provided, the previous content behind this RenderNode will be blurred before the RenderNode is drawn in to the destination.
 
 | Parameters ||
 |---|---|
@@ -947,8 +947,8 @@ The distance is expressed in pixels and must always be positive
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRotationY(kotlin.Float)`
+- setRotationX
+- setRotationY
 
 ### setClipRect
 
@@ -958,9 +958,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setClipRect(rect: Rect?): Boolean
 ```
 
-Sets an additional clip on the RenderNode. If null, the extra clip is removed from the RenderNode. If non-null, the RenderNode will be clipped to this rect. In addition if `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipToBounds(kotlin.Boolean)` is true, then the RenderNode will be clipped to the intersection of this rectangle and the bounds of the render node, which is set with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(android.graphics.Rect)`.
+Sets an additional clip on the RenderNode. If null, the extra clip is removed from the RenderNode. If non-null, the RenderNode will be clipped to this rect. In addition if setClipToBounds is true, then the RenderNode will be clipped to the intersection of this rectangle and the bounds of the render node, which is set with setPosition.
 
-This is equivalent to do a `https://developer.android.com/reference/kotlin/android/graphics/Canvas#clipRect(android.graphics.Rect)` at the start of this RenderNode's display list. However, as this is a property of the RenderNode instead of part of the display list it can be more easily animated for transient additional clipping. An example usage of this would be the `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds.html#` transition animation with the resizeClip=true option.
+This is equivalent to do a clipRect at the start of this RenderNode's display list. However, as this is a property of the RenderNode instead of part of the display list it can be more easily animated for transient additional clipping. An example usage of this would be the `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds.html#` transition animation with the resizeClip=true option.
 
 | Parameters ||
 |---|---|
@@ -978,7 +978,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setClipToBounds(clipToBounds: Boolean): Boolean
 ```
 
-Set whether the Render node should clip itself to its bounds. This defaults to true, and is useful to the renderer in enable quick-rejection of chunks of the tree as well as better partial invalidation support. Clipping can be further restricted or controlled through the combination of this property as well as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setClipRect(android.graphics.Rect)`, which allows for a different clipping rectangle to be used in addition to or instead of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setPosition(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` or the RenderNode.
+Set whether the Render node should clip itself to its bounds. This defaults to true, and is useful to the renderer in enable quick-rejection of chunks of the tree as well as better partial invalidation support. Clipping can be further restricted or controlled through the combination of this property as well as setClipRect, which allows for a different clipping rectangle to be used in addition to or instead of the setPosition or the RenderNode.
 
 | Parameters ||
 |---|---|
@@ -1058,8 +1058,8 @@ Sets whether the display list renders content which overlaps. Non-overlapping re
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#hasOverlappingRendering()`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#hasOverlappingRendering()`
+- hasOverlappingRendering
+- hasOverlappingRendering
 
 ### setOutline
 
@@ -1069,7 +1069,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setOutline(outline: Outline?): Boolean
 ```
 
-Sets the outline, defining the shape that casts a shadow, and the path to be clipped if setClipToOutline is set. This will make a copy of the provided `https://developer.android.com/reference/kotlin/android/graphics/Outline`, so any future modifications to the outline will need to call `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setOutline(android.graphics.Outline)` with the modified outline for those changes to be applied.
+Sets the outline, defining the shape that casts a shadow, and the path to be clipped if setClipToOutline is set. This will make a copy of the provided Outline, so any future modifications to the outline will need to call setOutline with the modified outline for those changes to be applied.
 
 | Parameters ||
 |---|---|
@@ -1099,8 +1099,8 @@ Sets the pivot value for the display list on the X axis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setPivotX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getPivotX()`
+- setPivotX
+- getPivotX
 
 ### setPivotY
 
@@ -1122,8 +1122,8 @@ Sets the pivot value for the display list on the Y axis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setPivotY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getPivotY()`
+- setPivotY
+- getPivotY
 
 ### setPosition
 
@@ -1182,9 +1182,9 @@ Sets whether the RenderNode should be drawn immediately after the closest ancest
 
 The default is false, and the rendering of this node happens in the typical draw order.
 
-If true, then at rendering time this rendernode will not be drawn in order with the `https://developer.android.com/reference/kotlin/android/graphics/Canvas#drawRenderNode(android.graphics.RenderNode)` command that drew this RenderNode, but instead it will be re-positioned in the RenderNode tree to be drawn on the closet ancestor with a child rendernode that has `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setProjectionReceiver(kotlin.Boolean)` as true.
+If true, then at rendering time this rendernode will not be drawn in order with the drawRenderNode command that drew this RenderNode, but instead it will be re-positioned in the RenderNode tree to be drawn on the closet ancestor with a child rendernode that has setProjectionReceiver as true.
 
-The typical usage of this is to allow a child RenderNode to draw on a parent's background, such as the platform's usage with `https://developer.android.com/reference/kotlin/android/graphics/drawable/RippleDrawable`. Consider the following structure, built out of which RenderNode called drawRenderNode on a different RenderNode:
+The typical usage of this is to allow a child RenderNode to draw on a parent's background, such as the platform's usage with RippleDrawable. Consider the following structure, built out of which RenderNode called drawRenderNode on a different RenderNode:
 
 ```kotlin
 +---+
@@ -1220,7 +1220,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setProjectionReceiver(shouldReceive: Boolean): Boolean
 ```
 
-Sets whether the RenderNode is a projection receiver. If true then this RenderNode's parent should draw any descendant RenderNodes with ProjectBackwards=true directly on top of it. Default value is false. See `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setProjectBackwards(kotlin.Boolean)` for a description of what this entails.
+Sets whether the RenderNode is a projection receiver. If true then this RenderNode's parent should draw any descendant RenderNodes with ProjectBackwards=true directly on top of it. Default value is false. See setProjectBackwards for a description of what this entails.
 
 | Parameters ||
 |---|---|
@@ -1238,7 +1238,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun setRenderEffect(renderEffect: RenderEffect?): Boolean
 ```
 
-Configure the `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect` to apply to this RenderNode. This will apply a visual effect to the end result of the contents of this RenderNode before it is drawn into the destination. For example if `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlurEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.RenderEffect,%20android.graphics.Shader.TileMode)` is provided, the contents will be drawn in a separate layer, then this layer will be blurred when this RenderNode is drawn into the destination.
+Configure the RenderEffect to apply to this RenderNode. This will apply a visual effect to the end result of the contents of this RenderNode before it is drawn into the destination. For example if createBlurEffect is provided, the contents will be drawn in a separate layer, then this layer will be blurred when this RenderNode is drawn into the destination.
 
 | Parameters ||
 |---|---|
@@ -1268,8 +1268,8 @@ Sets the rotation value for the display list around the X axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setRotationX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRotationX()`
+- setRotationX
+- getRotationX
 
 ### setRotationY
 
@@ -1291,8 +1291,8 @@ Sets the rotation value for the display list around the Y axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setRotationY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRotationY()`
+- setRotationY
+- getRotationY
 
 ### setRotationZ
 
@@ -1314,8 +1314,8 @@ Sets the rotation value for the display list around the Z axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setRotation(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getRotationZ()`
+- setRotation
+- getRotationZ
 
 ### setScaleX
 
@@ -1337,8 +1337,8 @@ Sets the scale value for the display list on the X axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setScaleX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getScaleX()`
+- setScaleX
+- getScaleX
 
 ### setScaleY
 
@@ -1360,8 +1360,8 @@ Sets the scale value for the display list on the Y axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setScaleY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getScaleY()`
+- setScaleY
+- getScaleY
 
 ### setSpotShadowColor
 
@@ -1371,7 +1371,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setSpotShadowColor(color: Int): Boolean
 ```
 
-Sets the color of the spot shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a `https://developer.android.com/reference/kotlin/android/graphics/Canvas#enableZ()` section.
+Sets the color of the spot shadow that is drawn when the RenderNode has a positive Z or elevation value and is drawn inside of a enableZ section.
 
 By default the shadow color is black. Generally, this color will be opaque so the intensity of the shadow is consistent between different RenderNodes with different colors.
 
@@ -1405,8 +1405,8 @@ Sets the translation value for the display list on the X axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setTranslationX(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationX()`
+- setTranslationX
+- getTranslationX
 
 ### setTranslationY
 
@@ -1428,8 +1428,8 @@ Sets the translation value for the display list on the Y axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setTranslationY(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationY()`
+- setTranslationY
+- getTranslationY
 
 ### setTranslationZ
 
@@ -1447,8 +1447,8 @@ Sets the translation value for the display list on the Z axis.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setTranslationZ(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getTranslationZ()`
+- setTranslationZ
+- getTranslationZ
 
 ### setUseCompositingLayer
 
@@ -1461,7 +1461,7 @@ fun setUseCompositingLayer(
 ): Boolean
 ```
 
-Controls whether or not to force this RenderNode to render to an intermediate buffer. Internally RenderNode will already promote itself to a composition layer if it's useful for performance or required for the current combination of `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setAlpha(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setHasOverlappingRendering(kotlin.Boolean)`.
+Controls whether or not to force this RenderNode to render to an intermediate buffer. Internally RenderNode will already promote itself to a composition layer if it's useful for performance or required for the current combination of setAlpha and setHasOverlappingRendering.
 
 The usage of this is instead to allow for either overriding of the internal behavior if it's measured to be necessary for the particular rendering content in question or, more usefully, to add a composition effect to the RenderNode via the optional paint parameter.
 
@@ -1470,7 +1470,7 @@ Note: When a RenderNode is using a compositing layer it will also result in clip
 | Parameters ||
 |---|---|
 | `forceToLayer` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true this forces the RenderNode to use an intermediate buffer. Default \& generally recommended value is false. |
-| `paint` | [Paint](Paint.md)?: The blend mode, alpha, and ColorFilter to apply to the compositing layer. Only applies if forceToLayer is true. The paint's alpha is multiplied with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getAlpha()` to resolve the final alpha of the RenderNode. If null then no additional composition effects are applied on top of the composition layer. |
+| `paint` | [Paint](Paint.md)?: The blend mode, alpha, and ColorFilter to apply to the compositing layer. Only applies if forceToLayer is true. The paint's alpha is multiplied with getAlpha to resolve the final alpha of the RenderNode. If null then no additional composition effects are applied on top of the composition layer. |
 
 | Return ||
 |---|---|

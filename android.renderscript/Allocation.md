@@ -22,9 +22,9 @@ open class Allocation : BaseObj
 |
 | Renderscript has been deprecated in API level 31. Please refer to the [migration guide](https://developer.android.com/guide/topics/renderscript/migration-guide) for the proposed alternatives.
 
-This class provides the primary method through which data is passed to and from RenderScript kernels. An Allocation provides the backing store for a given `https://developer.android.com/reference/kotlin/android/renderscript/Type`.
+This class provides the primary method through which data is passed to and from RenderScript kernels. An Allocation provides the backing store for a given Type.
 
-An Allocation also contains a set of usage flags that denote how the Allocation could be used. For example, an Allocation may have usage flags specifying that it can be used from a script as well as input to a `https://developer.android.com/reference/kotlin/android/renderscript/Sampler`. A developer must synchronize across these different usages using `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#syncAll(kotlin.Int)` in order to ensure that different users of the Allocation have a consistent view of memory. For example, in the case where an Allocation is used as the output of one kernel and as Sampler input in a later kernel, a developer must call `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#syncAll(kotlin.Int)` prior to launching the second kernel to ensure correctness.
+An Allocation also contains a set of usage flags that denote how the Allocation could be used. For example, an Allocation may have usage flags specifying that it can be used from a script as well as input to a Sampler. A developer must synchronize across these different usages using syncAll in order to ensure that different users of the Allocation have a consistent view of memory. For example, in the case where an Allocation is used as the output of one kernel and as Sampler input in a later kernel, a developer must call syncAll prior to launching the second kernel to ensure correctness.
 
 An Allocation can be populated with the #copyFrom routines. For more complex Element types, the #copyFromUnchecked methods can be used to copy from byte arrays or similar constructs.
 |
@@ -54,134 +54,134 @@ An Allocation can be populated with the #copyFrom routines. For more complex Ele
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20kotlin.Int)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!, dataOff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy part of an Allocation into this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFrom Copy part of an Allocation into this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFrom Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFrom Copy an array into a 1D region of this Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFrom Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFrom Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFrom Copy an array into a 1D region of this Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFromUnchecked Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFromUnchecked Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFromUnchecked Copy an array into a 1D region of this Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeFromUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy an array into a 1D region of this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFromUnchecked Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeFromUnchecked Copy an array into a 1D region of this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeTo Copy a 1D region of this Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy a 1D region of this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy a 1D region of this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeTo Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeTo Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeTo Copy a 1D region of this Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy a 1D region of this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy a 1D region of this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeTo Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeToUnchecked Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeToUnchecked Copy a 1D region of this Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy a 1D region of this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.Any)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy a 1D region of this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy1DRangeToUnchecked(kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeToUnchecked Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeToUnchecked Copy a 1D region of this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy1DRangeToUnchecked Copy a 1D region of this Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20android.graphics.Bitmap)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Copy a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` into an Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20kotlin.Int,%20kotlin.Int)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!, dataXoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dataYoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy a rectangular region from an Allocation into a rectangular region in this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` into an Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy a rectangular region from an Allocation into a rectangular region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy from an array into a rectangular region in this Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from an array into a rectangular region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy from an array into a rectangular region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy from an array into a rectangular region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy from an array into a rectangular region in this Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from an array into a rectangular region in this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeFrom Copy from an array into a rectangular region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeTo Copy from a rectangular region in this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeTo Copy from a rectangular region in this Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from a rectangular region in this Allocation into an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy2DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ShortArray)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from a rectangular region in this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeTo Copy from a rectangular region in this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeTo Copy from a rectangular region in this Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy2DRangeTo Copy from a rectangular region in this Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy3DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.Allocation,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!, dataXoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dataYoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dataZoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy a rectangular region into the allocation from another allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy3DRangeFrom(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from an array into a 3D region in this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copy3DRangeTo(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Any)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy3DRangeFrom Copy a rectangular region into the allocation from another allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy3DRangeFrom Copy from an array into a 3D region in this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copy3DRangeTo <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(android.graphics.Bitmap)(b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Copy into an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(android.renderscript.Allocation)(a: https://developer.android.com/reference/kotlin/android/renderscript/Allocation#!)` Copy an Allocation from an Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.Array)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/renderscript/BaseObj!>!)` Copy an array of RS objects to the Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy into an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy an Allocation from an Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy an array of RS objects to the Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.ByteArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.FloatArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.IntArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy into this Allocation from an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.ByteArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFrom Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFromUnchecked Copy into this Allocation from an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.FloatArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.IntArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFromUnchecked Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFromUnchecked Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFromUnchecked Copy into this Allocation from an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy into this Allocation from an array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(android.graphics.Bitmap)(b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Copy from the Allocation into a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.ByteArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Copy from the Allocation into a byte array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyFromUnchecked Copy into this Allocation from an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyTo Copy from the Allocation into a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyTo Copy from the Allocation into a byte array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.FloatArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)` Copy from the Allocation into a float array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.IntArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Copy from the Allocation into a int array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.Any)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Copy from the Allocation into an array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyTo Copy from the Allocation into a float array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyTo Copy from the Allocation into a int array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyTo Copy from the Allocation into an array. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyTo(kotlin.ShortArray)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html!)` Copy from the Allocation into a short array. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Allocation](Allocation.md)!\>! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createAllocations(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, t: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, numAlloc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation Array with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, and usage flags. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a graphics texture from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyTo Copy from the Allocation into a short array. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Allocation](Allocation.md)!\>! | createAllocations Creates a new Allocation Array with the given Type, and usage flags. |
+| open static [Allocation](Allocation.md)! | createCubemapFromBitmap Creates a non-mipmapped cubemap Allocation for use as a graphics texture from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
 | --- | --- |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createCubemapFromCubeFaces(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, xpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, xneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, ypos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, yneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zpos: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, zneg: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
+| open static [Allocation](Allocation.md)! | createCubemapFromBitmap Creates a cubemap Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` containing the horizontal list of cube faces. |
+| open static [Allocation](Allocation.md)! | createCubemapFromCubeFaces Creates a non-mipmapped cubemap Allocation for use as a sampler input from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
+| open static [Allocation](Allocation.md)! | createCubemapFromCubeFaces Creates a cubemap Allocation from 6 `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` objects containing the cube faces. |
 | --- | --- |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmap(android.renderscript.RenderScript,%20android.graphics.Bitmap,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, b: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a non-mipmapped Allocation to use as a graphics texture from the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` referenced by resource ID. |
+| open static [Allocation](Allocation.md)! | createFromBitmap Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
+| open static [Allocation](Allocation.md)! | createFromBitmap Creates an Allocation from a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`. |
+| open static [Allocation](Allocation.md)! | createFromBitmapResource Creates a non-mipmapped Allocation to use as a graphics texture from the `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` referenced by resource ID. |
 | --- | --- |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromBitmapResource(android.renderscript.RenderScript,%20android.content.res.Resources,%20kotlin.Int,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation from the Bitmap referenced by resource ID. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createFromString(android.renderscript.RenderScript,%20kotlin.String,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation containing string data encoded in UTF-8 format. |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
+| open static [Allocation](Allocation.md)! | createFromBitmapResource Creates an Allocation from the Bitmap referenced by resource ID. |
+| open static [Allocation](Allocation.md)! | createFromString Creates an Allocation containing string data encoded in UTF-8 format. |
+| open static [Allocation](Allocation.md)! | createSized Creates an Allocation with a specified number of given elements |
 | --- | --- |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createSized(android.renderscript.RenderScript,%20android.renderscript.Element,%20kotlin.Int,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, e: https://developer.android.com/reference/kotlin/android/renderscript/Element!, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with a specified number of given elements |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!)` Creates an Allocation for use by scripts with a given `https://developer.android.com/reference/kotlin/android/renderscript/Type` and no mipmaps |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20android.renderscript.Allocation.MipmapControl,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, mips: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.MipmapControl!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new Allocation with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, mipmap flag, and usage flags. |
+| open static [Allocation](Allocation.md)! | createSized Creates an Allocation with a specified number of given elements |
+| open static [Allocation](Allocation.md)! | createTyped Creates an Allocation for use by scripts with a given Type and no mipmaps |
+| open static [Allocation](Allocation.md)! | createTyped Creates a new Allocation with the given Type, mipmap flag, and usage flags. |
 | --- | --- |
-| open static [Allocation](Allocation.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#createTyped(android.renderscript.RenderScript,%20android.renderscript.Type,%20kotlin.Int)(rs: https://developer.android.com/reference/kotlin/android/renderscript/RenderScript!, type: https://developer.android.com/reference/kotlin/android/renderscript/Type!, usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an Allocation with the size specified by the type and no mipmaps generated by default |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#destroy()()` For USAGE_IO_OUTPUT, destroy() implies setSurface(null). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#generateMipmaps()()` Generate a mipmap chain. |
+| open static [Allocation](Allocation.md)! | createTyped Creates an Allocation with the size specified by the type and no mipmaps generated by default |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | destroy For USAGE_IO_OUTPUT, destroy() implies setSurface(null). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | generateMipmaps Generate a mipmap chain. |
 | --- | --- |
-| open [ByteBuffer](../java.nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getByteBuffer()()` Gets or creates a ByteBuffer that contains the raw data of the current Allocation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()()` Get the size of the Allocation in bytes. |
-| open [Element](Element.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Element` of the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
+| open [ByteBuffer](../java.nio/ByteBuffer.md)! | getByteBuffer Gets or creates a ByteBuffer that contains the raw data of the current Allocation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBytesSize Get the size of the Allocation in bytes. |
+| open [Element](Element.md)! | getElement Get the Element of the Type of the Allocation. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getStride()()` Gets the stride of the Allocation. |
-| open [Surface](../android.view/Surface.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getSurface()()` Returns the handle to a raw buffer that is being managed by the screen compositor. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getTimeStamp()()` Get the timestamp for the most recent buffer held by this Allocation. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStride Gets the stride of the Allocation. |
+| open [Surface](../android.view/Surface.md)! | getSurface Returns the handle to a raw buffer that is being managed by the screen compositor. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimeStamp Get the timestamp for the most recent buffer held by this Allocation. |
 | --- | --- |
-| open [Type](Type.md)! | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getType()()` Get the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getUsage()()` Get the usage flags of the Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioReceive()()` Receive the latest input into the Allocation. |
+| open [Type](Type.md)! | getType Get the Type of the Allocation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUsage Get the usage flags of the Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | ioReceive Receive the latest input into the Allocation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioSend()()` Send a buffer to the output stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#resize(kotlin.Int)(dimX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resize a 1D allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)(useAutoPadding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies the mapping between the Allocation's cells and an array's elements when data is copied from the Allocation to the array, or vice-versa. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | ioSend Send a buffer to the output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | resize Resize a 1D allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAutoPadding Specifies the mapping between the Allocation's cells and an array's elements when data is copied from the Allocation to the array, or vice-versa. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setFromFieldPacker(kotlin.Int,%20android.renderscript.FieldPacker)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fp: https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker!)` This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setFromFieldPacker(kotlin.Int,%20kotlin.Int,%20android.renderscript.FieldPacker)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, component_number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fp: https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker!)` This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setFromFieldPacker(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.renderscript.FieldPacker)(xoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, yoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, zoff: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, component_number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fp: https://developer.android.com/reference/kotlin/android/renderscript/FieldPacker!)` This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFromFieldPacker This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFromFieldPacker This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFromFieldPacker This is only intended to be used by auto-generated code reflected from the RenderScript script files and should not be used by developers. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setOnBufferAvailableListener(android.renderscript.Allocation.OnBufferAvailableListener)(callback: https://developer.android.com/reference/kotlin/android/renderscript/Allocation.OnBufferAvailableListener!)` Set a notification handler for `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_IO_INPUT:kotlin.Int`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setSurface(android.view.Surface)(sur: https://developer.android.com/reference/kotlin/android/view/Surface.html#!)` Associate a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` with this Allocation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#syncAll(kotlin.Int)(srcLocation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Propagate changes from one usage of the Allocation to the other usages of the Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnBufferAvailableListener Set a notification handler for `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#USAGE_IO_INPUT:kotlin.Int`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSurface Associate a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` with this Allocation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | syncAll Propagate changes from one usage of the Allocation to the other usages of the Allocation. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/renderscript/BaseObj` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare the current BaseObj with another BaseObj for equality. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#getName()()` <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#hashCode()()` Calculates the hash code value for a BaseObj. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/renderscript/BaseObj#setName(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
+| From class BaseObj |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | equals Compare the current BaseObj with another BaseObj for equality. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getName <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | hashCode Calculates the hash code value for a BaseObj. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | setName setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
 
 ## Constants
 
@@ -297,7 +297,7 @@ static val USAGE_SHARED: Int
 
 **Deprecated:** *Deprecated in Java.*
 
-The Allocation's backing store will be inherited from another object (usually a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`); copying to or from the original source Bitmap will cause a synchronization rather than a full copy. `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#syncAll(kotlin.Int)` may also be used to synchronize the Allocation and the source Bitmap.
+The Allocation's backing store will be inherited from another object (usually a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#`); copying to or from the original source Bitmap will cause a synchronization rather than a full copy. syncAll may also be used to synchronize the Allocation and the source Bitmap.
 
 This is set by default for allocations created with #createFromBitmap in API version 18 and higher.
 
@@ -345,15 +345,15 @@ open fun copy1DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's Element is not an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -376,15 +376,15 @@ open fun copy1DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -407,15 +407,15 @@ open fun copy1DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not an 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's Element is not an 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -439,15 +439,15 @@ open fun copy1DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the component type of the array passed in.
+Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's Element does not match the component type of the array passed in.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -470,15 +470,15 @@ open fun copy1DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not an 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy an array into a 1D region of this Allocation. This variant is type checked and will generate exceptions if the Allocation's Element is not an 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -503,13 +503,13 @@ open fun copy1DRangeFromUnchecked(
 
 Copy an array into a 1D region of this Allocation. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -534,13 +534,13 @@ open fun copy1DRangeFromUnchecked(
 
 Copy an array into a 1D region of this Allocation. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -565,13 +565,13 @@ open fun copy1DRangeFromUnchecked(
 
 Copy an array into a 1D region of this Allocation. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -597,13 +597,13 @@ open fun copy1DRangeFromUnchecked(
 
 Copy an array into a 1D region of this Allocation. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -628,13 +628,13 @@ open fun copy1DRangeFromUnchecked(
 
 Copy an array into a 1D region of this Allocation. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -658,15 +658,15 @@ open fun copy1DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -690,15 +690,15 @@ open fun copy1DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -722,15 +722,15 @@ open fun copy1DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -754,15 +754,15 @@ open fun copy1DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy a 1D region of this Allocation into an array. This method is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the component type of the array passed in.
+Copy a 1D region of this Allocation into an array. This method is type checked and will generate exceptions if the Allocation's Element does not match the component type of the array passed in.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -786,15 +786,15 @@ open fun copy1DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy a 1D region of this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -820,13 +820,13 @@ open fun copy1DRangeToUnchecked(
 
 Copy a 1D region of this Allocation into an array. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -852,13 +852,13 @@ open fun copy1DRangeToUnchecked(
 
 Copy a 1D region of this Allocation into an array. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -884,13 +884,13 @@ open fun copy1DRangeToUnchecked(
 
 Copy a 1D region of this Allocation into an array. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -916,13 +916,13 @@ open fun copy1DRangeToUnchecked(
 
 Copy a 1D region of this Allocation into an array. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -948,13 +948,13 @@ open fun copy1DRangeToUnchecked(
 
 Copy a 1D region of this Allocation into an array. This method does not guarantee that the Allocation is compatible with the input buffer.
 
-The size of the region is: count \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: count \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1035,15 +1035,15 @@ open fun copy2DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's Element is not an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1070,15 +1070,15 @@ open fun copy2DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1105,15 +1105,15 @@ open fun copy2DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's Element is not a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1141,15 +1141,15 @@ open fun copy2DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the input data type.
+Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's Element does not match the input data type.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1176,15 +1176,15 @@ open fun copy2DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from an array into a rectangular region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's Element is not a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1212,15 +1212,15 @@ open fun copy2DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1248,15 +1248,15 @@ open fun copy2DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1284,15 +1284,15 @@ open fun copy2DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1320,15 +1320,15 @@ open fun copy2DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from a rectangular region in this Allocation into an array. This method is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the component type of the array passed in.
+Copy from a rectangular region in this Allocation into an array. This method is type checked and will generate exceptions if the Allocation's Element does not match the component type of the array passed in.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1356,15 +1356,15 @@ open fun copy2DRangeTo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from a rectangular region in this Allocation into an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-The size of the region is: w \* h \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1434,15 +1434,15 @@ open fun copy3DRangeFrom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from an array into a 3D region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the input data type.
+Copy from an array into a 3D region in this Allocation. The array is assumed to be tightly packed. This variant is type checked and will generate exceptions if the Allocation's Element does not match the input data type.
 
-The size of the region is: w \* h \* d \* `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getElement()`.`https://developer.android.com/reference/kotlin/android/renderscript/Element#getBytesSize()`.
+The size of the region is: w \* h \* d \* getElement.getBytesSize.
 
 If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the region.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the region. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the region. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1536,13 +1536,13 @@ open fun copyFrom(d: ByteArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's Element is not an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1558,13 +1558,13 @@ open fun copyFrom(d: FloatArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1580,13 +1580,13 @@ open fun copyFrom(d: IntArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's Element is not a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1603,13 +1603,13 @@ open fun copyFrom(array: Any!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the array's primitive type.
+Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's Element does not match the array's primitive type.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1625,13 +1625,13 @@ open fun copyFrom(d: ShortArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy into this Allocation from an array. This variant is type checked and will generate exceptions if the Allocation's Element is not a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1649,11 +1649,11 @@ open fun copyFromUnchecked(d: ByteArray!): Unit
 
 Copy into this Allocation from an array. This method does not guarantee that the Allocation is compatible with the input buffer; it copies memory without reinterpretation.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1671,11 +1671,11 @@ open fun copyFromUnchecked(d: FloatArray!): Unit
 
 Copy into this Allocation from an array. This method does not guarantee that the Allocation is compatible with the input buffer; it copies memory without reinterpretation.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1693,11 +1693,11 @@ open fun copyFromUnchecked(d: IntArray!): Unit
 
 Copy into this Allocation from an array. This method does not guarantee that the Allocation is compatible with the input buffer; it copies memory without reinterpretation.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1716,11 +1716,11 @@ open fun copyFromUnchecked(array: Any!): Unit
 
 Copy into this Allocation from an array. This method does not guarantee that the Allocation is compatible with the input buffer; it copies memory without reinterpretation.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1738,11 +1738,11 @@ open fun copyFromUnchecked(d: ShortArray!): Unit
 
 Copy into this Allocation from an array. This method does not guarantee that the Allocation is compatible with the input buffer; it copies memory without reinterpretation.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells must be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1774,13 +1774,13 @@ open fun copyTo(d: ByteArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from the Allocation into a byte array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from the Allocation into a byte array. This variant is type checked and will generate exceptions if the Allocation's Element is neither an 8 bit integer nor a vector of 8 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells will be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells will be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1796,13 +1796,13 @@ open fun copyTo(d: FloatArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from the Allocation into a float array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from the Allocation into a float array. This variant is type checked and will generate exceptions if the Allocation's Element is neither a 32 bit float nor a vector of 32 bit floats `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells will be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells will be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1818,13 +1818,13 @@ open fun copyTo(d: IntArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from the Allocation into a int array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from the Allocation into a int array. This variant is type checked and will generate exceptions if the Allocation's Element is not a 32 bit integer nor a vector of 32 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells will be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells will be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1841,13 +1841,13 @@ open fun copyTo(array: Any!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from the Allocation into an array. The method is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` does not match the input data type.
+Copy from the Allocation into an array. The method is type checked and will generate exceptions if the Allocation's Element does not match the input data type.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells will be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells will be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1863,13 +1863,13 @@ open fun copyTo(d: ShortArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Copy from the Allocation into a short array. This variant is type checked and will generate exceptions if the Allocation's `https://developer.android.com/reference/kotlin/android/renderscript/Element` is not a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
+Copy from the Allocation into a short array. This variant is type checked and will generate exceptions if the Allocation's Element is not a 16 bit integer nor a vector of 16 bit integers `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`.
 
-If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`.
+If the Allocation does not have Vec3 Elements, then the size of the array in bytes must be at least the size of the Allocation getBytesSize.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is disabled, then the size of the array in bytes must be at least the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells will be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is disabled, then the size of the array in bytes must be at least the size of the Allocation getBytesSize. The padding bytes for the cells will be part of the array.
 
-If the Allocation has Vec3 Elements and `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#setAutoPadding(kotlin.Boolean)` is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getBytesSize()`. The padding bytes for the cells must not be part of the array.
+If the Allocation has Vec3 Elements and setAutoPadding is enabled, then the size of the array in bytes must be at least 3/4 the size of the Allocation getBytesSize. The padding bytes for the cells must not be part of the array.
 
 | Parameters ||
 |---|---|
@@ -1891,7 +1891,7 @@ open static fun createAllocations(
 
 **Deprecated:** *Deprecated in Java.*
 
-Creates a new Allocation Array with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, and usage flags. Note: If the input allocation is of usage: USAGE_IO_INPUT, the created Allocation will be sharing the same BufferQueue.
+Creates a new Allocation Array with the given Type, and usage flags. Note: If the input allocation is of usage: USAGE_IO_INPUT, the created Allocation will be sharing the same BufferQueue.
 
 | Parameters ||
 |---|---|
@@ -2242,7 +2242,7 @@ open static fun createTyped(
 
 **Deprecated:** *Deprecated in Java.*
 
-Creates an Allocation for use by scripts with a given `https://developer.android.com/reference/kotlin/android/renderscript/Type` and no mipmaps
+Creates an Allocation for use by scripts with a given Type and no mipmaps
 
 | Parameters ||
 |---|---|
@@ -2268,7 +2268,7 @@ open static fun createTyped(
 
 **Deprecated:** *Deprecated in Java.*
 
-Creates a new Allocation with the given `https://developer.android.com/reference/kotlin/android/renderscript/Type`, mipmap flag, and usage flags.
+Creates a new Allocation with the given Type, mipmap flag, and usage flags.
 
 | Parameters ||
 |---|---|
@@ -2330,7 +2330,7 @@ Generate a mipmap chain. This is only valid if the Type of the Allocation includ
 
 This function will generate a complete set of mipmaps from the top level LOD and place them into the script memory space.
 
-If the Allocation is also using other memory spaces, a call to `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#syncAll(kotlin.Int)` is required.
+If the Allocation is also using other memory spaces, a call to syncAll is required.
 
 ### getByteBuffer
 
@@ -2345,7 +2345,7 @@ open fun getByteBuffer(): ByteBuffer!
 
 Gets or creates a ByteBuffer that contains the raw data of the current Allocation.
 
-If the Allocation is created with USAGE_IO_INPUT, the returned ByteBuffer would contain the up-to-date data as READ ONLY. For a 2D or 3D Allocation, the raw data maybe padded so that each row of the Allocation has certain alignment. The size of each row including padding, called stride, can be queried using the `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#getStride()` method. Note: Operating on the ByteBuffer of a destroyed Allocation will triger errors.
+If the Allocation is created with USAGE_IO_INPUT, the returned ByteBuffer would contain the up-to-date data as READ ONLY. For a 2D or 3D Allocation, the raw data maybe padded so that each row of the Allocation has certain alignment. The size of each row including padding, called stride, can be queried using the getStride method. Note: Operating on the ByteBuffer of a destroyed Allocation will triger errors.
 
 | Return ||
 |---|---|
@@ -2379,7 +2379,7 @@ open fun getElement(): Element!
 
 **Deprecated:** *Deprecated in Java.*
 
-Get the `https://developer.android.com/reference/kotlin/android/renderscript/Element` of the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation.
+Get the Element of the Type of the Allocation.
 
 | Return ||
 |---|---|
@@ -2430,7 +2430,7 @@ open fun getTimeStamp(): Long
 
 **Deprecated:** *Deprecated in Java.*
 
-Get the timestamp for the most recent buffer held by this Allocation. The timestamp is guaranteed to be unique and monotonically increasing. Default value: -1. The timestamp will be updated after each `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioReceive()` call. It can be used to identify the images by comparing the unique timestamps when used with `https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html` APIs. Example steps: 1. Save `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult.html#` when the capture is completed. 2. Get the timestamp after `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#ioReceive()` call. 3. Comparing totalCaptureResult.get(CaptureResult.SENSOR_TIMESTAMP) with alloc.getTimeStamp().
+Get the timestamp for the most recent buffer held by this Allocation. The timestamp is guaranteed to be unique and monotonically increasing. Default value: -1. The timestamp will be updated after each ioReceive call. It can be used to identify the images by comparing the unique timestamps when used with `https://developer.android.com/reference/kotlin/android/hardware/camera2/package-summary.html` APIs. Example steps: 1. Save `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult.html#` when the capture is completed. 2. Get the timestamp after ioReceive call. 3. Comparing totalCaptureResult.get(CaptureResult.SENSOR_TIMESTAMP) with alloc.getTimeStamp().
 
 | Return ||
 |---|---|
@@ -2446,7 +2446,7 @@ open fun getType(): Type!
 
 **Deprecated:** *Deprecated in Java.*
 
-Get the `https://developer.android.com/reference/kotlin/android/renderscript/Type` of the Allocation.
+Get the Type of the Allocation.
 
 | Return ||
 |---|---|
@@ -2527,17 +2527,17 @@ open fun setAutoPadding(useAutoPadding: Boolean): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Specifies the mapping between the Allocation's cells and an array's elements when data is copied from the Allocation to the array, or vice-versa. Only applies to an Allocation whose Element is a vector of length 3 (such as `https://developer.android.com/reference/kotlin/android/renderscript/Element#U8_3(android.renderscript.RenderScript)` or `https://developer.android.com/reference/kotlin/android/renderscript/Element#RGB_888(android.renderscript.RenderScript)`). Enabling this feature may make copying data from the Allocation to an array or vice-versa less efficient.
+Specifies the mapping between the Allocation's cells and an array's elements when data is copied from the Allocation to the array, or vice-versa. Only applies to an Allocation whose Element is a vector of length 3 (such as U8_3 or RGB_888). Enabling this feature may make copying data from the Allocation to an array or vice-versa less efficient.
 
 Vec3 Element cells are stored in an Allocation as Vec4 Element cells with the same `https://developer.android.com/reference/kotlin/android/renderscript/Element.DataType`, with the fourth vector component treated as padding. When this feature is enabled, only the data components, i.e. the first 3 vector components of each cell, will be mapped between the array and the Allocation. When disabled, explicit mapping of the padding components is required, as described in the following example.
 
-For example, when copying an integer array to an Allocation of two `https://developer.android.com/reference/kotlin/android/renderscript/Element#I32_3(android.renderscript.RenderScript)` cells using `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFrom(kotlin.IntArray)`:
+For example, when copying an integer array to an Allocation of two I32_3 cells using copyFrom:
 
 When disabled: The array must have at least 8 integers, with the first 4 integers copied to the first cell of the Allocation, and the next 4 integers copied to the second cell. The 4th and 8th integers are mapped as the padding components.
 
 When enabled: The array just needs to have at least 6 integers, with the first 3 integers copied to the the first cell as data components, and the next 3 copied to the second cell. There is no mapping for the padding components.
 
-Similarly, when copying a byte array to an Allocation of two `https://developer.android.com/reference/kotlin/android/renderscript/Element#I32_3(android.renderscript.RenderScript)` cells, using `https://developer.android.com/reference/kotlin/android/renderscript/Allocation#copyFromUnchecked(kotlin.IntArray)`:
+Similarly, when copying a byte array to an Allocation of two I32_3 cells, using copyFromUnchecked:
 
 When disabled: The array must have at least 32 bytes, with the first 16 bytes copied to the first cell of the Allocation, and the next 16 bytes copied to the second cell. The 13th-16th and 29th-32nd bytes are mapped as padding components.
 

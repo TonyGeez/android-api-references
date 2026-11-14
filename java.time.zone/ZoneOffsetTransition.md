@@ -22,25 +22,25 @@ Overlaps occur where there are local date-times that exist twice. An example wou
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#compareTo(java.time.zone.ZoneOffsetTransition)(other: https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#!)` Compares this transition to another based on the transition instant. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this object equals another. |
-| [LocalDateTime](../java.time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getDateTimeAfter()()` Gets the local transition date-time, as would be expressed with the 'after' offset. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this transition to another based on the transition instant. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks if this object equals another. |
+| [LocalDateTime](../java.time/LocalDateTime.md)! | getDateTimeAfter Gets the local transition date-time, as would be expressed with the 'after' offset. |
 | --- | --- |
-| [LocalDateTime](../java.time/LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getDateTimeBefore()()` Gets the local transition date-time, as would be expressed with the 'before' offset. |
-| [Duration](../java.time/Duration.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getDuration()()` Gets the duration of the transition. |
-| [Instant](../java.time/Instant.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getInstant()()` Gets the transition instant. |
+| [LocalDateTime](../java.time/LocalDateTime.md)! | getDateTimeBefore Gets the local transition date-time, as would be expressed with the 'before' offset. |
+| [Duration](../java.time/Duration.md)! | getDuration Gets the duration of the transition. |
+| [Instant](../java.time/Instant.md)! | getInstant Gets the transition instant. |
 | --- | --- |
-| [ZoneOffset](../java.time/ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getOffsetAfter()()` Gets the offset after the transition. |
-| [ZoneOffset](../java.time/ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getOffsetBefore()()` Gets the offset before the transition. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#hashCode()()` Returns a suitable hash code. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | getOffsetAfter Gets the offset after the transition. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | getOffsetBefore Gets the offset before the transition. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a suitable hash code. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#isGap()()` Does this transition represent a gap in the local time-line. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#isOverlap()()` Does this transition represent an overlap in the local time-line. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#isValidOffset(java.time.ZoneOffset)(offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!)` Checks if the specified offset is valid during this transition. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isGap Does this transition represent a gap in the local time-line. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOverlap Does this transition represent an overlap in the local time-line. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isValidOffset Checks if the specified offset is valid during this transition. |
 | --- | --- |
-| static [ZoneOffsetTransition](ZoneOffsetTransition.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#of(java.time.LocalDateTime,%20java.time.ZoneOffset,%20java.time.ZoneOffset)(transition: https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#!, offsetBefore: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!, offsetAfter: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!)` Obtains an instance defining a transition between two offsets. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#toEpochSecond()()` Gets the transition instant as an epoch second. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#toString()()` Returns a string describing this object. |
+| static [ZoneOffsetTransition](ZoneOffsetTransition.md)! | of Obtains an instance defining a transition between two offsets. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toEpochSecond Gets the transition instant as an epoch second. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string describing this object. |
 | --- | --- |
 
 ## Public methods
@@ -156,7 +156,7 @@ Gets the transition instant.
 
 This is the instant of the discontinuity, which is defined as the first instant that the 'after' offset applies.
 
-The methods `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getInstant()`, `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getDateTimeBefore()` and `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition#getDateTimeAfter()` all represent the same instant.
+The methods getInstant, getDateTimeBefore and getDateTimeAfter all represent the same instant.
 
 | Return ||
 |---|---|
@@ -274,7 +274,7 @@ static fun of(
 
 Obtains an instance defining a transition between two offsets.
 
-Applications should normally obtain an instance from `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules`. This factory is only intended for use when creating `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules`.
+Applications should normally obtain an instance from ZoneRules. This factory is only intended for use when creating ZoneRules.
 
 | Parameters ||
 |---|---|

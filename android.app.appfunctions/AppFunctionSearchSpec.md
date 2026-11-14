@@ -10,7 +10,7 @@ class AppFunctionSearchSpec : Parcelable
 | --- | --- |
 | ↳ | [android.app.appfunctions.AppFunctionSearchSpec](AppFunctionSearchSpec.md) |
 
-Filter criteria for `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#searchAppFunctions(android.app.appfunctions.AppFunctionSearchSpec,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+Filter criteria for searchAppFunctions.
 
 A search will be performed using a logical AND operation across all provided criteria.
 
@@ -18,28 +18,28 @@ A search will be performed using a logical AND operation across all provided cri
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec.Builder` Builder for constructing `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#`. |
+| | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec.Builder` Builder for constructing AppFunctionSearchSpec. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getFunctionNames()()` Returns the set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName` to filter by, or null if this filter is skipped. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\>? | getFunctionNames Returns the set of AppFunctionName to filter by, or null if this filter is skipped. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getMinSchemaVersion()()` Returns the minimum schema category to filter by, or 0 if this filter is skipped. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getPackageNames()()` Returns the set of package names to filter by, or null if this filter is skipped. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getSchemaCategory()()` Returns the schema category to filter by, or null if this filter is skipped. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinSchemaVersion Returns the minimum schema category to filter by, or 0 if this filter is skipped. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getPackageNames Returns the set of package names to filter by, or null if this filter is skipped. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSchemaCategory Returns the schema category to filter by, or null if this filter is skipped. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getSchemaName()()` Returns the schema name to filter by, or null if this filter is skipped. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#getScopes()()` Returns the set of scope type to filter by, or null if this filter is skipped. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#hashCode()()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSchemaName Returns the schema name to filter by, or null if this filter is skipped. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | getScopes Returns the set of scope type to filter by, or null if this filter is skipped. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -55,7 +55,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -97,7 +97,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getFunctionNames(): MutableSet<AppFunctionName!>?
 ```
 
-Returns the set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName` to filter by, or null if this filter is skipped.
+Returns the set of AppFunctionName to filter by, or null if this filter is skipped.
 
 ### getMinSchemaVersion
 
@@ -110,7 +110,7 @@ fun getMinSchemaVersion(): Long
 Returns the minimum schema category to filter by, or 0 if this filter is skipped.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#getVersion()`
+- getVersion
 
 ### getPackageNames
 
@@ -133,7 +133,7 @@ fun getSchemaCategory(): String?
 Returns the schema category to filter by, or null if this filter is skipped.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#getCategory()`
+- getCategory
 
 ### getSchemaName
 
@@ -146,7 +146,7 @@ fun getSchemaName(): String?
 Returns the schema name to filter by, or null if this filter is skipped.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSchemaMetadata#getName()`
+- getName
 
 ### getScopes
 
@@ -159,7 +159,7 @@ fun getScopes(): MutableSet<Int!>?
 Returns the set of scope type to filter by, or null if this filter is skipped.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getScope()`
+- getScope
 
 ### hashCode
 
@@ -174,8 +174,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

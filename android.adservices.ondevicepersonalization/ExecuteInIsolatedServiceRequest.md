@@ -13,23 +13,23 @@ open class ExecuteInIsolatedServiceRequest
 | --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest](ExecuteInIsolatedServiceRequest.md) |
 
-The request of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationManager#executeInIsolatedService(android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+The request of executeInIsolatedService.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.Builder` A builder for `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#` |
-| open | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec` The set of spec to indicate output of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.Builder` A builder for ExecuteInIsolatedServiceRequest |
+| open | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec` The set of spec to indicate output of IsolatedService. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getAppParams()()` A `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed from the calling app to the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
-| open [ExecuteInIsolatedServiceRequest.OutputSpec](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getOutputSpec()()` The set of spec to indicate output of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [PersistableBundle](../android.os/PersistableBundle.md) | getAppParams A `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed from the calling app to the IsolatedService. |
+| open [ExecuteInIsolatedServiceRequest.OutputSpec](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md) | getOutputSpec The set of spec to indicate output of IsolatedService. |
 | --- | --- |
-| open [ComponentName](../android.content/ComponentName.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#getService()()` The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest#hashCode()()` Returns a hash code value for the object. |
+| open [ComponentName](../android.content/ComponentName.md) | getService The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the IsolatedService. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Public methods
 
@@ -74,7 +74,7 @@ open fun getAppParams(): PersistableBundle
 
 **Deprecated:** *Deprecated in Java.*
 
-A `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed from the calling app to the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. The expected contents of this parameter are defined by the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. The platform does not interpret this parameter.
+A `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed from the calling app to the IsolatedService. The expected contents of this parameter are defined by the IsolatedService. The platform does not interpret this parameter.
 
 | Return ||
 |---|---|
@@ -90,7 +90,7 @@ open fun getOutputSpec(): ExecuteInIsolatedServiceRequest.OutputSpec
 
 **Deprecated:** *Deprecated in Java.*
 
-The set of spec to indicate output of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`. It's mainly used by platform. For example, platform calls `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec#getOutputType()` and validates the result received from `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`.
+The set of spec to indicate output of IsolatedService. It's mainly used by platform. For example, platform calls getOutputType and validates the result received from IsolatedService.
 
 | Return ||
 |---|---|
@@ -106,7 +106,7 @@ open fun getService(): ComponentName
 
 **Deprecated:** *Deprecated in Java.*
 
-The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`.
+The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the IsolatedService.
 
 | Return ||
 |---|---|
@@ -127,8 +127,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

@@ -22,11 +22,11 @@ Known Direct Subclasses [AccountsException](../android.accounts/AccountsExceptio
 [BackingStoreException](../java.util.prefs/BackingStoreException.md) Thrown to indicate that a preferences operation could not complete because of a failure in the backing store, or a failure to contact the backing store.
 [BrokenBarrierException](../java.util.concurrent/BrokenBarrierException.md) Exception thrown when a thread tries to wait upon a barrier that is in a broken state, or which enters the broken state while the thread is waiting.
 [CertificateException](../javax.security.cert/CertificateException.md) This exception indicates one of a variety of certificate problems.
-[ClearCredentialStateException](../android.credentials/ClearCredentialStateException.md) Represents an error encountered during the `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#clearCredentialState(android.credentials.ClearCredentialStateRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` operation.
+[ClearCredentialStateException](../android.credentials/ClearCredentialStateException.md) Represents an error encountered during the clearCredentialState operation.
 [CloneNotSupportedException](CloneNotSupportedException.md) Thrown to indicate that the `clone` method in class `Object` has been called to clone an object, but that the object's class does not implement the `Cloneable` interface.
 [ConfirmationAlreadyPresentingException](../android.security/ConfirmationAlreadyPresentingException.md) This exception is thrown when presenting a prompt fails because another prompt is already being presented.
 [ConfirmationNotAvailableException](../android.security/ConfirmationNotAvailableException.md) This exception is thrown when presenting a prompt fails because the environment lacks facilities for showing confirmations.
-[CreateCredentialException](../android.credentials/CreateCredentialException.md) Represents an error encountered during the `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#createCredential(android.content.Context,%20android.credentials.CreateCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` operation.
+[CreateCredentialException](../android.credentials/CreateCredentialException.md) Represents an error encountered during the createCredential operation.
 [CrossDeviceAuthenticationException](../android.security.authenticationpolicy/CrossDeviceAuthenticationException.md) Exception thrown when cross-device authentication fails.
 [DataFormatException](../java.util.zip/DataFormatException.md) Signals that a data format error has occurred.
 [DatatypeConfigurationException](../javax.xml.datatype/DatatypeConfigurationException.md) Indicates a serious configuration error.
@@ -37,7 +37,7 @@ Known Direct Subclasses [AccountsException](../android.accounts/AccountsExceptio
 [FormatException](../android.nfc/FormatException.md) <br />
 
 [GeneralSecurityException](../java.security/GeneralSecurityException.md) The `GeneralSecurityException` class is a generic security exception class that provides type safety for all the security-related exception classes that extend from it.
-[GetCredentialException](../android.credentials/GetCredentialException.md) Represents an error encountered during the `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#getCredential(android.content.Context,%20android.credentials.GetCredentialRequest,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` operation.
+[GetCredentialException](../android.credentials/GetCredentialException.md) Represents an error encountered during the getCredential operation.
 [IOException](../java.io/IOException.md) Signals that an I/O exception of some sort has occurred.
 [IdentityCredentialException](../android.security.identity/IdentityCredentialException.md) Base class for all Identity Credential exceptions.
 [IkeException](../android.net.ipsec.ike.exceptions/IkeException.md) IkeException represents a generic exception that includes internal and protocol exceptions.
@@ -50,7 +50,7 @@ Known Direct Subclasses [AccountsException](../android.accounts/AccountsExceptio
 [KeyStoreException](../android.security/KeyStoreException.md) Exception containing information about the failure at the Keystore / KeyMint layer while generating or using a key.
 [LambdaConversionException](../java.lang.invoke/LambdaConversionException.md) LambdaConversionException
 [LastOwnerException](../java.security.acl/LastOwnerException.md) This is an exception that is thrown whenever an attempt is made to delete the last owner of an Access Control List.
-[LoadSdkException](../android.app.sdksandbox/LoadSdkException.md) Exception thrown by `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.html#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+[LoadSdkException](../android.app.sdksandbox/LoadSdkException.md) Exception thrown by loadSdk
 [MediaCasException](../android.media/MediaCasException.md) Base class for MediaCas exceptions
 [MediaCryptoException](../android.media/MediaCryptoException.md) Exception thrown if MediaCrypto object could not be instantiated or if unable to perform an operation on the MediaCrypto object.
 [MediaDrmException](../android.media/MediaDrmException.md) Base class for MediaDrm exceptions
@@ -63,16 +63,16 @@ Known Direct Subclasses [AccountsException](../android.accounts/AccountsExceptio
 [PccEgressException](../android.app.privatecompute/PccEgressException.md) Exception thrown when an egress request fails inside the PCC sandbox.
 [PrivilegedActionException](../java.security/PrivilegedActionException.md) Legacy security code; do not use.
 [ReflectiveOperationException](ReflectiveOperationException.md) Common superclass of exceptions thrown by reflective operations in core reflection.
-[RequestSurfacePackageException](../android.app.sdksandbox/RequestSurfacePackageException.md) Exception thrown by `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.html#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+[RequestSurfacePackageException](../android.app.sdksandbox/RequestSurfacePackageException.md) Exception thrown by requestSurfacePackage
 [RuntimeException](RuntimeException.md) `RuntimeException` is the superclass of those exceptions that can be thrown during the normal operation of the Java Virtual Machine.
 [SAXException](../org.xml.sax/SAXException.md) Encapsulate a general SAX error or warning.
 [SQLException](../java.sql/SQLException.md) An exception that provides information on a database access error or other errors.
 [SigningInfoException](../android.content.pm/SigningInfoException.md) Indicates an error when verifying the [app signing](https://source.android.com/docs/security/features/apksigning) information.
 [SipException](../android.net.sip/SipException.md) Indicates a general SIP-related exception.
-[StringConcatException](../java.lang.invoke/StringConcatException.md) StringConcatException is thrown by `https://developer.android.com/reference/kotlin/java/lang/Exception#` when linkage invariants are violated.
+[StringConcatException](../java.lang.invoke/StringConcatException.md) StringConcatException is thrown by Exception when linkage invariants are violated.
 [SurfaceTexture.OutOfResourcesException](../android/graphics/SurfaceTexture.OutOfResourcesException.md) Exception thrown when a SurfaceTexture couldn't be created or resized.
 [TelephonyManager.CallComposerException](../android/telephony/TelephonyManager.CallComposerException.md) Exception that may be supplied to the callback in #uploadCallComposerPicture if something goes awry.
-[TelephonyManager.NetworkSlicingException](../android/telephony/TelephonyManager.NetworkSlicingException.md) Exception that may be supplied to the callback in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` if something goes awry.
+[TelephonyManager.NetworkSlicingException](../android/telephony/TelephonyManager.NetworkSlicingException.md) Exception that may be supplied to the callback in getNetworkSlicingConfiguration if something goes awry.
 [TimeoutException](../java.util.concurrent/TimeoutException.md) Exception thrown when a blocking operation times out.
 [TooManyListenersException](../java.util/TooManyListenersException.md) The `TooManyListenersException ` Exception is used as part of the Java Event model to annotate and implement a unicast special case of a multicast Event Source.
 [TransformerException](../javax.xml.transform/TransformerException.md) This class specifies an exceptional condition that occurred during the transformation process.
@@ -97,7 +97,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [ArrayStoreException](ArrayStoreException.md) Thrown to indicate that an attempt has been made to store the wrong type of object into an array of objects.
 [AsynchronousCloseException](../java.nio.channels/AsynchronousCloseException.md) Checked exception received by a thread when another thread closes the channel or the part of the channel upon which it is blocked in an I/O operation.
 [AtomicMoveNotSupportedException](../java.nio.file/AtomicMoveNotSupportedException.md) Checked exception thrown when a file cannot be moved as an atomic file system operation.
-[AuthenticationRequiredException](../android.app/AuthenticationRequiredException.md) Specialization of `https://developer.android.com/reference/kotlin/java/lang/SecurityException` that is thrown when authentication is needed from the end user before viewing the content.
+[AuthenticationRequiredException](../android.app/AuthenticationRequiredException.md) Specialization of SecurityException that is thrown when authentication is needed from the end user before viewing the content.
 [AuthenticatorException](../android.accounts/AuthenticatorException.md) <br />
 
 [BackendBusyException](../android.security.keystore/BackendBusyException.md) Indicates a transient error that prevented a key operation from being created.
@@ -113,7 +113,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [CRLException](../java.security.cert/CRLException.md) CRL (Certificate Revocation List) Exception.
 [CallEndpointException](../android.telecom/CallEndpointException.md) This class represents a set of exceptions that can occur when requesting a `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint.html#` change.
 [CallException](../android.telecom/CallException.md) This class defines exceptions that can be thrown when using Telecom APIs with `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#`s.
-[CallbackException](../android.net.http/CallbackException.md) Exception passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` when `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#` or `https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider.html#` method throws an exception.
+[CallbackException](../android.net.http/CallbackException.md) Exception passed to onFailed when `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#` or `https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider.html#` method throws an exception.
 [CameraAccessException](../android.hardware.camera2/CameraAccessException.md) `CameraAccessException` is thrown if a camera device could not be queried or opened by the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#`, or if the connection to an opened `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#` is no longer valid.
 [CancellationException](../java.util.concurrent/CancellationException.md) Exception indicating that the result of a value-producing task, such as a `https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask.html#`, cannot be retrieved because the task was cancelled.
 [CancelledKeyException](../java.nio.channels/CancelledKeyException.md) Unchecked exception thrown when an attempt is made to use a selection key that is no longer valid.
@@ -173,7 +173,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [EchConfigMismatchException](../android/net/ssl/EchConfigMismatchException.md) Exception thrown when the provided ECH (Encrypted Client Hello) config does not match the server.
 [EmptyStackException](../java.util/EmptyStackException.md) Thrown by methods in the `Stack` class to indicate that the stack is empty.
 [EnumConstantNotPresentException](EnumConstantNotPresentException.md) Thrown when an application tries to access an enum constant by name and the enum type contains no constant with the specified name.
-[EphemeralPublicKeyNotFoundException](../android.security.identity/EphemeralPublicKeyNotFoundException.md) Thrown if the ephemeral public key was not found in the session transcript passed to `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential.html#getEntries(kotlin.ByteArray,%20kotlin.collections.MutableMap,%20kotlin.ByteArray,%20kotlin.ByteArray)`.
+[EphemeralPublicKeyNotFoundException](../android.security.identity/EphemeralPublicKeyNotFoundException.md) Thrown if the ephemeral public key was not found in the session transcript passed to getEntries.
 [ExemptionMechanismException](../javax.crypto/ExemptionMechanismException.md) This is the generic ExemptionMechanism exception.
 [FileAlreadyExistsException](../java.nio.file/FileAlreadyExistsException.md) Checked exception thrown when an attempt is made to create a file or directory and a file of that name already exists.
 [FileLockInterruptionException](../java.nio.channels/FileLockInterruptionException.md) Checked exception received by a thread when another thread interrupts it while it is waiting to acquire a file lock.
@@ -187,15 +187,15 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [ForegroundServiceTypeException](../android.app/ForegroundServiceTypeException.md) Base exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service.html#` without a valid type.
 [FormatFlagsConversionMismatchException](../java.util/FormatFlagsConversionMismatchException.md) Unchecked exception thrown when a conversion and flag are incompatible.
 [FormatterClosedException](../java.util/FormatterClosedException.md) Unchecked exception thrown when the formatter has been closed.
-[Fragment.InstantiationException](../android/app/Fragment.InstantiationException.md) Thrown by `https://developer.android.com/reference/kotlin/android/app/Fragment.html#instantiate(android.content.Context,%20kotlin.String,%20android.os.Bundle)` when there is an instantiation failure.
+[Fragment.InstantiationException](../android/app/Fragment.InstantiationException.md) Thrown by instantiate when there is an instantiation failure.
 [GLException](../android.opengl/GLException.md) An exception class for OpenGL errors.
 [HealthConnectException](../android.health.connect/HealthConnectException.md) Class representing health connect exceptions.
-[HttpException](../android.net.http/HttpException.md) Base exception passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)`.
+[HttpException](../android.net.http/HttpException.md) Base exception passed to onFailed.
 [HttpRetryException](../java.net/HttpRetryException.md) Thrown to indicate that a HTTP request needs to be retried but cannot be retried automatically, due to streaming mode being enabled.
 [ICUUncheckedIOException](../android.icu.util/ICUUncheckedIOException.md) Unchecked version of `https://developer.android.com/reference/kotlin/java/io/IOException.html#`.
 [IkeIOException](../android.net.ipsec.ike.exceptions/IkeIOException.md) Wrapper for I/O exceptions encountered during IKE operations.
 [IkeInternalException](../android.net.ipsec.ike.exceptions/IkeInternalException.md) IkeInternalException encapsulates all local implementation or resource related exceptions.
-[IkeNetworkLostException](../android.net.ipsec.ike.exceptions/IkeNetworkLostException.md) IkeNetworkLostException is returned to the caller via `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback.html#onError(android.net.ipsec.ike.exceptions.IkeException)` if the underlying Network for the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession.html#` was lost with no alternatives.
+[IkeNetworkLostException](../android.net.ipsec.ike.exceptions/IkeNetworkLostException.md) IkeNetworkLostException is returned to the caller via onError if the underlying Network for the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession.html#` was lost with no alternatives.
 [IkeNonProtocolException](../android.net.ipsec.ike.exceptions/IkeNonProtocolException.md) IkeNonProtocolException encapsulates all implementation-specific non-protocol IKE errors.
 [IkeProtocolException](../android.net.ipsec.ike.exceptions/IkeProtocolException.md) IkeProtocolException is an abstract class that represents the common information for all IKE protocol errors.
 [IkeTimeoutException](../android.net.ipsec.ike.exceptions/IkeTimeoutException.md) This exception is thrown when there is an IKE retransmission timeout.
@@ -206,7 +206,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [IllegalCallerException](../java/lang/IllegalCallerException.md) Thrown to indicate that a method has been called by an inappropriate caller.
 [IllegalChannelGroupException](../java.nio.channels/IllegalChannelGroupException.md) Unchecked exception thrown when an attempt is made to open a channel in a group that was not created by the same provider.
 [IllegalCharsetNameException](../java.nio.charset/IllegalCharsetNameException.md) Unchecked exception thrown when a string that is not a [legal charset name](../java.nio.charset/Charset.md) is used as such.
-[IllegalFormatCodePointException](../java.util/IllegalFormatCodePointException.md) Unchecked exception thrown when a character with an invalid Unicode code point as defined by `https://developer.android.com/reference/kotlin/java/lang/Character#isValidCodePoint(kotlin.Int)` is passed to the `https://developer.android.com/reference/kotlin/java/util/Formatter.html#`.
+[IllegalFormatCodePointException](../java.util/IllegalFormatCodePointException.md) Unchecked exception thrown when a character with an invalid Unicode code point as defined by isValidCodePoint is passed to the `https://developer.android.com/reference/kotlin/java/util/Formatter.html#`.
 [IllegalFormatConversionException](../java.util/IllegalFormatConversionException.md) Unchecked exception thrown when the argument corresponding to the format specifier is of an incompatible type.
 [IllegalFormatException](../java.util/IllegalFormatException.md) Unchecked exception thrown when a format string contains an illegal syntax or a format specifier that is incompatible with the given arguments.
 [IllegalFormatFlagsException](../java.util/IllegalFormatFlagsException.md) Unchecked exception thrown when an illegal combination flags is given.
@@ -223,9 +223,9 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [IndexOutOfBoundsException](IndexOutOfBoundsException.md) Thrown to indicate that an index of some sort (such as to an array, to a string, or to a vector) is out of range.
 [InfeasibleActivityOptionsException](../android.app/InfeasibleActivityOptionsException.md) This exception is thrown when a call to android.
 [InflateException](../android.view/InflateException.md) This exception is thrown by an inflater on error conditions.
-[InlineExecutionProhibitedException](../android.net.http/InlineExecutionProhibitedException.md) Thrown when an executor runs a submitted runnable inline in `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#execute(java.lang.Runnable)` and `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder.html#setDirectExecutorAllowed(kotlin.Boolean)` was not called.
+[InlineExecutionProhibitedException](../android.net.http/InlineExecutionProhibitedException.md) Thrown when an executor runs a submitted runnable inline in execute and setDirectExecutorAllowed was not called.
 [InputMismatchException](../java.util/InputMismatchException.md) Thrown by a `Scanner` to indicate that the token retrieved does not match the pattern for the expected type, or that the token is out of range for the expected type.
-[InspectionCompanion.UninitializedPropertyMapException](../android/view/inspector/InspectionCompanion.UninitializedPropertyMapException.md) Thrown by `https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion.html#readProperties(android.view.inspector.InspectionCompanion.T,%20android.view.inspector.PropertyReader)` if called before `https://developer.android.com/reference/kotlin/android/view/inspector/InspectionCompanion.html#mapProperties(android.view.inspector.PropertyMapper)`.
+[InspectionCompanion.UninitializedPropertyMapException](../android/view/inspector/InspectionCompanion.UninitializedPropertyMapException.md) Thrown by readProperties if called before mapProperties.
 [InstantiationException](InstantiationException.md) Thrown when an application tries to create an instance of a class using the `newInstance` method in class `Class`, but the specified class object cannot be instantiated.
 [IntentFilter.MalformedMimeTypeException](../android/content/IntentFilter.MalformedMimeTypeException.md) This exception is thrown when a given MIME type does not have a valid syntax.
 [IntentSender.SendIntentException](../android/content/IntentSender.SendIntentException.md) Exception thrown when trying to send through a PendingIntent that has been canceled or is otherwise no longer able to execute the request.
@@ -246,13 +246,13 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [InvalidPathException](../java.nio.file/InvalidPathException.md) Unchecked exception thrown when path string cannot be converted into a `https://developer.android.com/reference/kotlin/java/nio/file/Path.html#` because the path string contains invalid characters, or the path string is invalid for other file system specific reasons.
 [InvalidPropertiesFormatException](../java.util/InvalidPropertiesFormatException.md) Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of properties, as per the `https://developer.android.com/reference/kotlin/java/util/Properties.html#` specification.
 [InvalidReaderSignatureException](../android.security.identity/InvalidReaderSignatureException.md) Thrown if the reader signature is invalid, or it doesn't contain a certificate chain, or if the signature failed to validate.
-[InvalidRequestMessageException](../android.security.identity/InvalidRequestMessageException.md) Thrown if message with the request doesn't satisfy the requirements documented in `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential.html#getEntries(kotlin.ByteArray,%20kotlin.collections.MutableMap,%20kotlin.ByteArray,%20kotlin.ByteArray)`.
+[InvalidRequestMessageException](../android.security.identity/InvalidRequestMessageException.md) Thrown if message with the request doesn't satisfy the requirements documented in getEntries.
 [InvalidSelectorsException](../android.net.ipsec.ike.exceptions/InvalidSelectorsException.md) This exception is thrown if the remote server received an IPsec packet with mismatched selectors.
 [InvocationTargetException](../java.lang.reflect/InvocationTargetException.md) InvocationTargetException is a checked exception that wraps an exception thrown by an invoked method or constructor.
 [IpSecManager.ResourceUnavailableException](../android/net/IpSecManager.ResourceUnavailableException.md) Thrown to indicate that an IPsec resource is unavailable.
 [IpSecManager.SpiUnavailableException](../android/net/IpSecManager.SpiUnavailableException.md) Thrown to indicate that a requested SPI is in use.
 [JarException](../java.util.jar/JarException.md) Signals that an error of some sort has occurred while reading from or writing to a JAR file.
-[KeyCharacterMap.UnavailableException](../android/view/KeyCharacterMap.UnavailableException.md) Thrown by `https://developer.android.com/reference/kotlin/android/view/KeyCharacterMap.html#load(kotlin.Int)` when a key character map could not be loaded.
+[KeyCharacterMap.UnavailableException](../android/view/KeyCharacterMap.UnavailableException.md) Thrown by load when a key character map could not be loaded.
 [KeyException](../java.security/KeyException.md) This is the basic key exception.
 [KeyExpiredException](../android.security.keystore/KeyExpiredException.md) Indicates that a cryptographic operation failed because the employed key's validity end date is in the past.
 [KeyManagementException](../java.security/KeyManagementException.md) This is the general key management exception for all operations dealing with key management.
@@ -265,7 +265,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [MalformedInputException](../java.nio.charset/MalformedInputException.md) Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence.
 [MalformedJsonException](../android.util/MalformedJsonException.md) Thrown when a reader encounters malformed JSON.
 [MalformedParameterizedTypeException](../java.lang.reflect/MalformedParameterizedTypeException.md) Thrown when a semantically malformed parameterized type is encountered by a reflective method that needs to instantiate it.
-[MalformedParametersException](../java.lang.reflect/MalformedParametersException.md) Thrown when `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameters()` attempts to read method parameters from a class file and determines that one or more parameters are malformed.
+[MalformedParametersException](../java.lang.reflect/MalformedParametersException.md) Thrown when getParameters attempts to read method parameters from a class file and determines that one or more parameters are malformed.
 [MalformedURLException](../java.net/MalformedURLException.md) Thrown to indicate that a malformed URL has occurred.
 [MatchException](MatchException.md) Thrown to indicate an unexpected failure in pattern matching.
 [MediaCasException.DeniedByServerException](../android/media/MediaCasException.DeniedByServerException.md) Exception thrown when the provisioning server or key server denies a license for a device.
@@ -282,7 +282,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [MediaDrm.SessionException](../android/media/MediaDrm.SessionException.md) `https://developer.android.com/reference/kotlin/android/media/MediaDrm.SessionException.html#` is a misnomer because it may occur in methods **without** a session context.
 [MediaDrmResetException](../android.media/MediaDrmResetException.md) This exception is thrown when the MediaDrm instance has become unusable due to a restart of the mediaserver process.
 [MediaParser.ParsingException](../android/media/MediaParser.ParsingException.md) Thrown when an error occurs while parsing a media stream.
-[MediaParser.UnrecognizedInputFormatException](../android/media/MediaParser.UnrecognizedInputFormatException.md) Thrown if all parser implementations provided to `https://developer.android.com/reference/kotlin/android/media/MediaParser.html#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)` failed to sniff the input content.
+[MediaParser.UnrecognizedInputFormatException](../android/media/MediaParser.UnrecognizedInputFormatException.md) Thrown if all parser implementations provided to create failed to sniff the input content.
 [MediaPlayer.NoDrmSchemeException](../android/media/MediaPlayer.NoDrmSchemeException.md) Thrown when a DRM method is called before preparing a DRM scheme through prepareDrm().
 [MediaPlayer.ProvisioningNetworkErrorException](../android/media/MediaPlayer.ProvisioningNetworkErrorException.md) Thrown when the device requires DRM provisioning but the provisioning attempt has failed due to a network error (Internet reachability, timeout, etc.).
 [MediaPlayer.ProvisioningServerErrorException](../android/media/MediaPlayer.ProvisioningServerErrorException.md) Thrown when the device requires DRM provisioning but the provisioning attempt has failed due to the provisioning server denying the request.
@@ -294,10 +294,10 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [NegativeArraySizeException](NegativeArraySizeException.md) Thrown if an application tries to create an array with negative size.
 [NetworkErrorException](../android.accounts/NetworkErrorException.md) <br />
 
-[NetworkException](../android.net.http/NetworkException.md) Exception passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` when the HTTP stack fails to process a network request.
+[NetworkException](../android.net.http/NetworkException.md) Exception passed to onFailed when the HTTP stack fails to process a network request.
 [NetworkOnMainThreadException](../android.os/NetworkOnMainThreadException.md) The exception that is thrown when an application attempts to perform a networking operation on its main thread.
 [NoAuthenticationKeyAvailableException](../android.security.identity/NoAuthenticationKeyAvailableException.md) Thrown if no dynamic authentication keys are available.
-[NoConnectionPendingException](../java.nio.channels/NoConnectionPendingException.md) Unchecked exception thrown when the `https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#finishConnect()` method of a `https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#` is invoked without first successfully invoking its `https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)` method.
+[NoConnectionPendingException](../java.nio.channels/NoConnectionPendingException.md) Unchecked exception thrown when the finishConnect method of a `https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#` is invoked without first successfully invoking its connect method.
 [NoRouteToHostException](../java.net/NoRouteToHostException.md) Signals that an error occurred while attempting to connect a socket to a remote address and port.
 [NoSuchAlgorithmException](../java.security/NoSuchAlgorithmException.md) This exception is thrown when a particular cryptographic algorithm is requested but is not available in the environment.
 [NoSuchElementException](../java.util/NoSuchElementException.md) Thrown by various accessor methods to indicate that the element being requested does not exist.
@@ -337,17 +337,17 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [ProviderException](../java.security/ProviderException.md) A runtime exception for Provider exceptions (such as misconfiguration errors or unrecoverable internal errors), which may be subclassed by Providers to throw specialized, provider-specific runtime errors.
 [ProviderMismatchException](../java.nio.file/ProviderMismatchException.md) Unchecked exception thrown when an attempt is made to invoke a method on an object created by one file system provider with a parameter created by a different file system provider.
 [ProviderNotFoundException](../java.nio.file/ProviderNotFoundException.md) Runtime exception thrown when a provider of the required type cannot be found.
-[QueryLocationException](../android.telecom/QueryLocationException.md) This class represents a set of exceptions that can occur when requesting a `https://developer.android.com/reference/kotlin/android/telecom/Connection.html#queryLocationForEmergency(kotlin.Long,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+[QueryLocationException](../android.telecom/QueryLocationException.md) This class represents a set of exceptions that can occur when requesting a queryLocationForEmergency
 [QuicException](../android.net.http/QuicException.md) Subclass of `https://developer.android.com/reference/kotlin/android/net/http/NetworkException.html#` which contains a detailed [QUIC](https://www.chromium.org/quic) error code from [QuicErrorCode](https://cs.chromium.org/search/?q=symbol:%5CbQuicErrorCode%5Cb).
 [RSDriverException](../android.renderscript/RSDriverException.md) Base class for all exceptions thrown by the Android RenderScript
 [RSIllegalArgumentException](../android.renderscript/RSIllegalArgumentException.md) Base class for all exceptions thrown by the Android RenderScript
 [RSInvalidStateException](../android.renderscript/RSInvalidStateException.md) Base class for all exceptions thrown by the Android RenderScript
 [RSRuntimeException](../android.renderscript/RSRuntimeException.md) Base class for all exceptions thrown by the Android RenderScript
 [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md) Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer.
-[ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) Unchecked exception thrown when an attempt is made to update an object associated with a `https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#isReadOnly()` `FileSystem`.
+[ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) Unchecked exception thrown when an attempt is made to update an object associated with a isReadOnly `FileSystem`.
 [ReadPendingException](../java.nio.channels/ReadPendingException.md) Unchecked exception thrown when an attempt is made to read from an asynchronous socket channel and a previous read has not completed.
 [ReceiverCallNotAllowedException](../android.content/ReceiverCallNotAllowedException.md) This exception is thrown from android.
-[RecoverableSecurityException](../android.app/RecoverableSecurityException.md) Specialization of `https://developer.android.com/reference/kotlin/java/lang/SecurityException` that contains additional information about how to involve the end user to recover from the exception.
+[RecoverableSecurityException](../android.app/RecoverableSecurityException.md) Specialization of SecurityException that contains additional information about how to involve the end user to recover from the exception.
 [RejectedExecutionException](../java.util.concurrent/RejectedExecutionException.md) Exception thrown by an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` when a task cannot be accepted for execution.
 [RemoteException](../android.os/RemoteException.md) Parent exception for all Binder remote-invocation errors Note: not all exceptions from binder services will be subclasses of this.
 [RemoteViews.ActionException](../android/widget/RemoteViews.ActionException.md) Exception to send when something goes wrong executing an action
@@ -417,14 +417,14 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md) Thrown by `String` methods to indicate that an index is either negative or greater than the size of the string.
 [StringPrepParseException](../android.icu.text/StringPrepParseException.md) Exception that signals an error has occurred while parsing the input to StringPrep or IDNA.
 [StrongBoxUnavailableException](../android.security.keystore/StrongBoxUnavailableException.md) Indicates that an operation could not be performed because the requested security hardware is not available.
-[Surface.OutOfResourcesException](../android/view/Surface.OutOfResourcesException.md) Exception thrown when a Canvas couldn't be locked with `https://developer.android.com/reference/kotlin/android/view/Surface.html#lockCanvas(android.graphics.Rect)`, or when a SurfaceTexture could not successfully be allocated.
+[Surface.OutOfResourcesException](../android/view/Surface.OutOfResourcesException.md) Exception thrown when a Canvas couldn't be locked with lockCanvas, or when a SurfaceTexture could not successfully be allocated.
 [SurfaceHolder.BadSurfaceTypeException](../android/view/SurfaceHolder.BadSurfaceTypeException.md) Exception that is thrown from #lockCanvas when called on a Surface whose type is SURFACE_TYPE_PUSH_BUFFERS.
 [SyncFailedException](../java.io/SyncFailedException.md) Signals that a sync operation has failed.
-[SystemUpdatePolicy.ValidationFailedException](../android/app/admin/SystemUpdatePolicy.ValidationFailedException.md) An exception class that represents various validation errors thrown from `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy.html#setFreezePeriods(kotlin.collections.MutableList)` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setSystemUpdatePolicy(android.content.ComponentName,%20android.app.admin.SystemUpdatePolicy)`
+[SystemUpdatePolicy.ValidationFailedException](../android/app/admin/SystemUpdatePolicy.ValidationFailedException.md) An exception class that represents various validation errors thrown from setFreezePeriods and setSystemUpdatePolicy
 [TagLostException](../android.nfc/TagLostException.md) <br />
 
-[TelephonyManager.ModemErrorException](../android/telephony/TelephonyManager.ModemErrorException.md) Exception that is supplied to the callback in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` if the modem returned a failure.
-[TelephonyManager.TimeoutException](../android/telephony/TelephonyManager.TimeoutException.md) Exception that is supplied to the callback in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` if the system timed out waiting for a response from the Radio.
+[TelephonyManager.ModemErrorException](../android/telephony/TelephonyManager.ModemErrorException.md) Exception that is supplied to the callback in getNetworkSlicingConfiguration if the modem returned a failure.
+[TelephonyManager.TimeoutException](../android/telephony/TelephonyManager.TimeoutException.md) Exception that is supplied to the callback in getNetworkSlicingConfiguration if the system timed out waiting for a response from the Radio.
 [TimeFormatException](../android.util/TimeFormatException.md) <br />
 
 [TransactionTooLargeException](../android.os/TransactionTooLargeException.md) The Binder transaction failed because it was too large.
@@ -432,7 +432,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [TypeNotPresentException](TypeNotPresentException.md) Thrown when an application tries to access a type using a string representing the type's name, but no definition for the type with the specified name can be found.
 [UTFDataFormatException](../java.io/UTFDataFormatException.md) Signals that a malformed string in [modified UTF-8](../java.io/DataInput.md) format has been read in a data input stream or by any class that implements the data input interface.
 [UncheckedIOException](../java.io/UncheckedIOException.md) Wraps an `https://developer.android.com/reference/kotlin/java/io/IOException.html#` with an unchecked exception.
-[UndeclaredThrowableException](../java.lang.reflect/UndeclaredThrowableException.md) Thrown by a method invocation on a proxy instance if its invocation handler's `https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationHandler#invoke(kotlin.Any,%20java.lang.reflect.Method,%20kotlin.Array)` method throws a checked exception (a `Throwable` that is not assignable to `RuntimeException` or `Error`) that is not assignable to any of the exception types declared in the `throws` clause of the method that was invoked on the proxy instance and dispatched to the invocation handler.
+[UndeclaredThrowableException](../java.lang.reflect/UndeclaredThrowableException.md) Thrown by a method invocation on a proxy instance if its invocation handler's invoke method throws a checked exception (a `Throwable` that is not assignable to `RuntimeException` or `Error`) that is not assignable to any of the exception types declared in the `throws` clause of the method that was invoked on the proxy instance and dispatched to the invocation handler.
 [UnknownAuthenticationKeyException](../android.security.identity/UnknownAuthenticationKeyException.md) Thrown if trying to certify an unknown dynamic authentication key.
 [UnknownFormatConversionException](../java.util/UnknownFormatConversionException.md) Unchecked exception thrown when an unknown conversion is given.
 [UnknownFormatFlagsException](../java.util/UnknownFormatFlagsException.md) Unchecked exception thrown when an unknown flag is given.
@@ -455,7 +455,7 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 [UserPrincipalNotFoundException](../java.nio.file.attribute/UserPrincipalNotFoundException.md) Checked exception thrown when a lookup of `https://developer.android.com/reference/kotlin/java/nio/file/attribute/UserPrincipal.html#` fails because the principal does not exist.
 [VibrationEffect.VibrationParseException](../android/os/VibrationEffect.VibrationParseException.md) Exception thrown when parsing a vibration XML fails due to invalid format or values.
 [WindowManager.BadTokenException](../android/view/WindowManager.BadTokenException.md) Exception that is thrown when trying to add view whose `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#` `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#token:android.os.IBinder` is invalid.
-[WindowManager.InvalidDisplayException](../android/view/WindowManager.InvalidDisplayException.md) Exception that is thrown when calling `https://developer.android.com/reference/kotlin/android/view/ViewManager.html#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)` to a secondary display that cannot be found.
+[WindowManager.InvalidDisplayException](../android/view/WindowManager.InvalidDisplayException.md) Exception that is thrown when calling addView to a secondary display that cannot be found.
 [WriteAbortedException](../java.io/WriteAbortedException.md) Signals that one of the ObjectStreamExceptions was thrown during a write operation.
 [WritePendingException](../java.nio.channels/WritePendingException.md) Unchecked exception thrown when an attempt is made to write to an asynchronous socket channel and a previous write has not completed.
 [WrongMethodTypeException](../java.lang.invoke/WrongMethodTypeException.md) Thrown to indicate that code has attempted to call a method handle via the wrong method type.
@@ -468,20 +468,20 @@ Known Indirect Subclasses [AEADBadTagException](../javax.crypto/AEADBadTagExcept
 
 The class `Exception` and its subclasses are a form of `Throwable` that indicates conditions that a reasonable application might want to catch.
 
-The class `Exception` and any subclasses that are not also subclasses of `https://developer.android.com/reference/kotlin/java/lang/RuntimeException` are *checked exceptions* . Checked exceptions need to be declared in a method or constructor's `throws` clause if they can be thrown by the execution of the method or constructor and propagate outside the method or constructor boundary.
+The class `Exception` and any subclasses that are not also subclasses of RuntimeException are *checked exceptions* . Checked exceptions need to be declared in a method or constructor's `throws` clause if they can be thrown by the execution of the method or constructor and propagate outside the method or constructor boundary.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Exception#Exception()()` Constructs a new exception with `null` as its detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/Exception#Exception(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs a new exception with the specified detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/Exception#Exception(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new exception with the specified detail message and cause. |
-| `https://developer.android.com/reference/kotlin/java/lang/Exception#Exception(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new exception with the specified cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
+| Exception Constructs a new exception with `null` as its detail message. |
+| Exception Constructs a new exception with the specified detail message. |
+| Exception Constructs a new exception with the specified detail message and cause. |
+| Exception Constructs a new exception with the specified cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Exception#Exception(kotlin.String,%20kotlin.Throwable,%20kotlin.Boolean,%20kotlin.Boolean)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, enableSuppression: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, writableStackTrace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Constructs a new exception with the specified detail message, cause, suppression enabled or disabled, and writable stack trace enabled or disabled. |
+| Exception Constructs a new exception with the specified detail message, cause, suppression enabled or disabled, and writable stack trace enabled or disabled. |
 
 ## Public constructors
 
@@ -493,7 +493,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Exception()
 ```
 
-Constructs a new exception with `null` as its detail message. The cause is not initialized, and may subsequently be initialized by a call to `https://developer.android.com/reference/kotlin/java/lang/Throwable#initCause(kotlin.Throwable)`.
+Constructs a new exception with `null` as its detail message. The cause is not initialized, and may subsequently be initialized by a call to initCause.
 
 ### Exception
 
@@ -503,11 +503,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Exception(message: String!)
 ```
 
-Constructs a new exception with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to `https://developer.android.com/reference/kotlin/java/lang/Throwable#initCause(kotlin.Throwable)`.
+Constructs a new exception with the specified detail message. The cause is not initialized, and may subsequently be initialized by a call to initCause.
 
 | Parameters ||
 |---|---|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message. The detail message is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getMessage()` method. |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message. The detail message is saved for later retrieval by the getMessage method. |
 
 ### Exception
 
@@ -525,8 +525,8 @@ Note that the detail message associated with `cause` is *not* automatically inco
 
 | Parameters ||
 |---|---|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getMessage()` method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message (which is saved for later retrieval by the getMessage method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### Exception
 
@@ -540,7 +540,7 @@ Constructs a new exception with the specified cause and a detail message of `(ca
 
 | Parameters ||
 |---|---|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ## Protected constructors
 

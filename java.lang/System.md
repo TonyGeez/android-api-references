@@ -18,41 +18,41 @@ Among the facilities provided by the `System` class are standard input, standard
 
 | Public methods ||
 |---|---|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#arraycopy(kotlin.Any,%20kotlin.Int,%20kotlin.Any,%20kotlin.Int,%20kotlin.Int)(src: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, srcPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, destPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#clearProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes the system property indicated by the specified key. |
-| static [Console](../java.io/Console.md)? | `https://developer.android.com/reference/kotlin/java/lang/System#console()()` Returns the unique `https://developer.android.com/reference/kotlin/java/io/Console.html#` object associated with the current Java virtual machine, if any. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | arraycopy Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | clearProperty Removes the system property indicated by the specified key. |
+| static [Console](../java.io/Console.md)? | console Returns the unique `https://developer.android.com/reference/kotlin/java/io/Console.html#` object associated with the current Java virtual machine, if any. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#currentTimeMillis()()` Returns the current time in milliseconds. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#exit(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Terminates the currently running Java Virtual Machine. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#gc()()` Runs the garbage collector. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | currentTimeMillis Returns the current time in milliseconds. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | exit Terminates the currently running Java Virtual Machine. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | gc Runs the garbage collector. |
 | --- | --- |
-| static [Properties](../java.util/Properties.md) | `https://developer.android.com/reference/kotlin/java/lang/System#getProperties()()` Determines the current system properties. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the system property indicated by the specified key. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, def: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Gets the system property indicated by the specified key. |
+| static [Properties](../java.util/Properties.md) | getProperties Determines the current system properties. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getProperty Gets the system property indicated by the specified key. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getProperty Gets the system property indicated by the specified key. |
 | --- | --- |
-| static [SecurityManager](SecurityManager.md)? | `https://developer.android.com/reference/kotlin/java/lang/System#getSecurityManager()()` Always returns `null` in Android |
-| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/System#getenv()()` Returns an unmodifiable string map view of the current system environment. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#getenv(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the value of the specified environment variable. |
+| static [SecurityManager](SecurityManager.md)? | getSecurityManager Always returns `null` in Android |
+| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getenv Returns an unmodifiable string map view of the current system environment. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getenv Gets the value of the specified environment variable. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#identityHashCode(kotlin.Any)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the same hash code for the given object as would be returned by the default method hashCode(), whether or not the given object's class overrides hashCode(). |
-| static [Channel](../java.nio.channels/Channel.md)? | `https://developer.android.com/reference/kotlin/java/lang/System#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#lineSeparator()()` Returns the system-dependent line separator string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | identityHashCode Returns the same hash code for the given object as would be returned by the default method hashCode(), whether or not the given object's class overrides hashCode(). |
+| static [Channel](../java.nio.channels/Channel.md)? | inheritedChannel Returns the channel inherited from the entity that created this Java virtual machine. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | lineSeparator Returns the system-dependent line separator string. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#load(kotlin.String)(filename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the native library specified by the filename argument. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#loadLibrary(kotlin.String)(libname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the native library specified by the `libname` argument. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#mapLibraryName(kotlin.String)(libname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Maps a library name into a platform-specific string representing a native library. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | load Loads the native library specified by the filename argument. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | loadLibrary Loads the native library specified by the `libname` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | mapLibraryName Maps a library name into a platform-specific string representing a native library. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#nanoTime()()` Returns the current value of the running Java Virtual Machine's high-resolution time source, in nanoseconds. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#runFinalization()()` Runs the finalization methods of any objects pending finalization. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#runFinalizersOnExit(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable or disable finalization on exit; doing so specifies that the finalizers of all objects that have finalizers that have not yet been automatically invoked are to be run before the Java runtime exits. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | nanoTime Returns the current value of the running Java Virtual Machine's high-resolution time source, in nanoseconds. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | runFinalization Runs the finalization methods of any objects pending finalization. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | runFinalizersOnExit Enable or disable finalization on exit; doing so specifies that the finalizers of all objects that have finalizers that have not yet been automatically invoked are to be run before the Java runtime exits. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setErr(java.io.PrintStream)(err: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#?)` Reassigns the "standard" error output stream. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setIn(java.io.InputStream)(in: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?)` Reassigns the "standard" input stream. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setOut(java.io.PrintStream)(out: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#?)` Reassigns the "standard" output stream. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setErr Reassigns the "standard" error output stream. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setIn Reassigns the "standard" input stream. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOut Reassigns the "standard" output stream. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setProperties(java.util.Properties)(props: https://developer.android.com/reference/kotlin/java/util/Properties.html#?)` Attempts to set all system properties. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/System#setProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the system property indicated by the specified key. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/System#setSecurityManager(java.lang.SecurityManager)(s: https://developer.android.com/reference/kotlin/java/lang/SecurityManager?)` Throws `SecurityException` (except in case `sm == null`). |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setProperties Attempts to set all system properties. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | setProperty Sets the system property indicated by the specified key. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSecurityManager Throws `SecurityException` (except in case `sm == null`). |
 | --- | --- |
 
 | Properties ||
@@ -151,10 +151,10 @@ First, if a security manager exists, its `SecurityManager.checkPermission` metho
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#setProperty(kotlin.String,%20kotlin.String)`
+- setProperty
 - `https://developer.android.com/reference/kotlin/java/util/Properties.html#`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityException`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPropertiesAccess()`
+- SecurityException
+- checkPropertiesAccess
 
 ### console
 
@@ -219,7 +219,7 @@ Runtime.getRuntime().exit(n)
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#exit(kotlin.Int)`
+- exit
 
 ### gc
 
@@ -244,7 +244,7 @@ At API level 34 and lower, this does nothing unless it is preceded or followed b
 Calling this indiscriminately is likely to severely degrade performance. Intended primarily for testing.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#gc()`
+- gc
 
 ### getProperties
 
@@ -302,7 +302,7 @@ The following properties are always provided by the Dalvik VM:
 
 Multiple paths in a system property value are separated by the path separator character of the platform.
 
-Note that even if the security manager does not permit the `getProperties` operation, it may choose to permit the `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)` operation.
+Note that even if the security manager does not permit the `getProperties` operation, it may choose to permit the getProperty operation.
 
 | Return ||
 |---|---|
@@ -314,9 +314,9 @@ Note that even if the security manager does not permit the `getProperties` opera
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#setProperties(java.util.Properties)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityException`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPropertiesAccess()`
+- setProperties
+- SecurityException
+- checkPropertiesAccess
 - `https://developer.android.com/reference/kotlin/java/util/Properties.html#`
 
 ### getProperty
@@ -350,10 +350,10 @@ If there is no current set of system properties, a set of system properties is f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#setProperty(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityException`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPropertyAccess(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/System#getProperties()`
+- setProperty
+- SecurityException
+- checkPropertyAccess
+- getProperties
 
 ### getProperty
 
@@ -390,9 +390,9 @@ If there is no current set of system properties, a set of system properties is f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#setProperty(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPropertyAccess(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/System#getProperties()`
+- setProperty
+- checkPropertyAccess
+- getProperties
 
 ### getSecurityManager
 
@@ -406,7 +406,7 @@ Always returns `null` in Android
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/SecurityManager?` | `null` in Android |
+| SecurityManager | `null` in Android |
 
 ### getenv
 
@@ -420,13 +420,13 @@ Returns an unmodifiable string map view of the current system environment. The e
 
 If the system does not support environment variables, an empty map is returned.
 
-The returned map will never contain null keys or values. Attempting to query the presence of a null key or value will throw a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException`. Attempting to query the presence of a key or value which is not of type `https://developer.android.com/reference/kotlin/java/lang/String` will throw a `https://developer.android.com/reference/kotlin/java/lang/ClassCastException`.
+The returned map will never contain null keys or values. Attempting to query the presence of a null key or value will throw a NullPointerException. Attempting to query the presence of a key or value which is not of type String will throw a ClassCastException.
 
-The returned map and its collection views may not obey the general contract of the `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)` and `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()` methods.
+The returned map and its collection views may not obey the general contract of the equals and hashCode methods.
 
 The returned map is typically case-sensitive on all platforms.
 
-If a security manager exists, its java.lang.SecurityManager#checkPermission method is called with a `` `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`("getenv.*") `` permission. This may result in a `https://developer.android.com/reference/kotlin/java/lang/SecurityException` being thrown.
+If a security manager exists, its java.lang.SecurityManager#checkPermission method is called with a `` RuntimePermission("getenv.*") `` permission. This may result in a SecurityException being thrown.
 
 When passing information to a Java subprocess, [system properties](System.md) are generally preferred over environment variables.
 
@@ -440,8 +440,8 @@ When passing information to a Java subprocess, [system properties](System.md) ar
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#getenv(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#environment()`
+- getenv
+- environment
 
 ### getenv
 
@@ -453,7 +453,7 @@ static fun getenv(name: String): String?
 
 Gets the value of the specified environment variable. An environment variable is a system-dependent external named value.
 
-If a security manager exists, its java.lang.SecurityManager#checkPermission method is called with a `` `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`("getenv."+name) `` permission. This may result in a `https://developer.android.com/reference/kotlin/java/lang/SecurityException` being thrown. If no exception is thrown the value of the variable `name` is returned.
+If a security manager exists, its java.lang.SecurityManager#checkPermission method is called with a `` RuntimePermission("getenv."+name) `` permission. This may result in a SecurityException being thrown. If no exception is thrown the value of the variable `name` is returned.
 
 *System properties* and *environment variables* are both conceptually mappings between names and values. Both mechanisms can be used to pass user-defined information to a Java process. Environment variables have a more global effect, because they are visible to all descendants of the process which defines them, not just the immediate Java subprocess. They can have subtly different semantics, such as case insensitivity, on different operating systems. For these reasons, environment variables are more likely to have unintended side effects. It is best to use system properties where possible. Environment variables should be used when a global effect is desired, or when an external system interface requires an environment variable (such as `PATH`).
 
@@ -474,8 +474,8 @@ On UNIX systems the alphabetic case of `name` is typically significant, while on
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#getenv()`
-- `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#environment()`
+- getenv
+- environment
 
 ### identityHashCode
 
@@ -505,9 +505,9 @@ static fun inheritedChannel(): Channel?
 
 Returns the channel inherited from the entity that created this Java virtual machine.
 
-This method returns the channel obtained by invoking the `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider.html#inheritedChannel()` method of the system-wide default `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider.html#` object.
+This method returns the channel obtained by invoking the inheritedChannel method of the system-wide default `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider.html#` object.
 
-In addition to the network-oriented channels described in `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider.html#inheritedChannel()`, this method may return other kinds of channels in the future.
+In addition to the network-oriented channels described in inheritedChannel, this method may return other kinds of channels in the future.
 
 | Return ||
 |---|---|
@@ -564,8 +564,8 @@ Runtime.getRuntime().load(name)
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#load(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkLink(kotlin.String)`
+- load
+- checkLink
 
 ### loadLibrary
 
@@ -597,8 +597,8 @@ Runtime.getRuntime().loadLibrary(name)
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#loadLibrary(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkLink(kotlin.String)`
+- loadLibrary
+- checkLink
 
 ### mapLibraryName
 
@@ -624,8 +624,8 @@ Maps a library name into a platform-specific string representing a native librar
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#loadLibrary(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#findLibrary(kotlin.String)`
+- loadLibrary
+- findLibrary
 
 ### nanoTime
 
@@ -639,7 +639,7 @@ Returns the current value of the running Java Virtual Machine's high-resolution 
 
 This method can only be used to measure elapsed time and is not related to any other notion of system or wall-clock time. The value returned represents nanoseconds since some fixed but arbitrary *origin* time (perhaps in the future, so values may be negative). The same origin is used by all invocations of this method in an instance of a Java virtual machine; other virtual machine instances are likely to use a different origin.
 
-This method provides nanosecond precision, but not necessarily nanosecond resolution (that is, how frequently the value changes) - no guarantees are made except that the resolution is at least as good as that of `https://developer.android.com/reference/kotlin/java/lang/System#currentTimeMillis()`.
+This method provides nanosecond precision, but not necessarily nanosecond resolution (that is, how frequently the value changes) - no guarantees are made except that the resolution is at least as good as that of currentTimeMillis.
 
 Differences in successive calls that span greater than approximately 292 years (263 nanoseconds) will not correctly compute elapsed time due to numerical overflow.
 
@@ -688,7 +688,7 @@ Runtime.getRuntime().runFinalization()
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#runFinalization()`
+- runFinalization
 
 ### runFinalizersOnExit
 
@@ -715,9 +715,9 @@ If there is a security manager, its `checkExit` method is first called with 0 as
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#exit(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Runtime#gc()`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkExit(kotlin.Int)`
+- exit
+- gc
+- checkExit
 
 ### setErr
 
@@ -741,7 +741,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`
+- RuntimePermission
 
 ### setIn
 
@@ -767,7 +767,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`
+- RuntimePermission
 
 ### setOut
 
@@ -791,7 +791,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`
+- RuntimePermission
 
 ### setProperties
 
@@ -838,8 +838,8 @@ First, if a security manager exists, its `SecurityManager.checkPermission` metho
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)`
+- getProperty
+- getProperty
 - `https://developer.android.com/reference/kotlin/java/util/PropertyPermission.html#`
 
 ### setSecurityManager
@@ -906,13 +906,13 @@ System.out.println(data)
 See the `println` methods in class `PrintStream`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println()`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Char)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.CharArray)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Double)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.Any)`
-- `https://developer.android.com/reference/kotlin/java/io/PrintStream.html#println(kotlin.String)`
+- println
+- println
+- println
+- println
+- println
+- println
+- println
+- println
+- println
+- println

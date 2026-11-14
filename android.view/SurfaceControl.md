@@ -10,22 +10,22 @@ class SurfaceControl : Parcelable
 | --- | --- |
 | ↳ | [android.view.SurfaceControl](SurfaceControl.md) |
 
-Handle to an on-screen Surface managed by the system compositor. The SurfaceControl is a combination of a buffer source, and metadata about how to display the buffers. By constructing a `https://developer.android.com/reference/kotlin/android/view/Surface` from this SurfaceControl you can submit buffers to be composited. Using `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction` you can manipulate various properties of how the buffer will be displayed on-screen. SurfaceControl's are arranged into a scene-graph like hierarchy, and as such any SurfaceControl may have a parent. Geometric properties like transform, crop, and Z-ordering will be inherited from the parent, as if the child were content in the parents buffer stream.
+Handle to an on-screen Surface managed by the system compositor. The SurfaceControl is a combination of a buffer source, and metadata about how to display the buffers. By constructing a Surface from this SurfaceControl you can submit buffers to be composited. Using `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction` you can manipulate various properties of how the buffer will be displayed on-screen. SurfaceControl's are arranged into a scene-graph like hierarchy, and as such any SurfaceControl may have a parent. Geometric properties like transform, crop, and Z-ordering will be inherited from the parent, as if the child were content in the parents buffer stream.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Builder` Builder class for SurfaceControl objects. |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.JankData` Jank information to be fed back via `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener`. |
 | abstract | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` Listener interface to be informed about SurfaceFlinger's jank classification for a specific surface. |
 | --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListenerRegistration` Handle to a registered OnJankDatalistener. |
 | | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction` An atomic set of changes to a set of SurfaceControl. |
-| abstract | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionCommittedListener` Interface to handle request to `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#addTransactionCommittedListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.TransactionCommittedListener)` |
+| abstract | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionCommittedListener` Interface to handle request to addTransactionCommittedListener |
 | --- | --- |
-| | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionStats` Transaction stats given to the listener registered in `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#addTransactionCompletedListener(java.util.concurrent.Executor,%20java.util.function.Consumer)` |
-| | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TrustedPresentationThresholds` Threshold values that are sent with `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#setTrustedPresentationCallback(android.view.SurfaceControl,%20android.view.SurfaceControl.TrustedPresentationThresholds,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` |
+| | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TransactionStats` Transaction stats given to the listener registered in addTransactionCompletedListener |
+| | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.TrustedPresentationThresholds` Threshold values that are sent with setTrustedPresentationCallback |
 
 | Constants ||
 |---|---|
@@ -42,31 +42,31 @@ Handle to an on-screen Surface managed by the system compositor. The SurfaceCont
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#isValid()()` Check whether this instance points to a valid layer with the system-compositor. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#readFromParcel(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isValid Check whether this instance points to a valid layer with the system-compositor. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFromParcel <br /> |
 | --- | --- |
-| [SurfaceControl.OnJankDataListenerRegistration](../android/view/SurfaceControl.OnJankDataListenerRegistration.md) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#registerOnJankDataListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.OnJankDataListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#release()()` Release the local reference to the server-side surface. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#toString()()` Returns a string representation of the object. |
+| [SurfaceControl.OnJankDataListenerRegistration](../android/view/SurfaceControl.OnJankDataListenerRegistration.md) | registerOnJankDataListener Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | release Release the local reference to the server-side surface. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 | Properties ||
 |---|---|
@@ -188,7 +188,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -202,7 +202,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun isValid(): Boolean
 ```
 
-Check whether this instance points to a valid layer with the system-compositor. For example this may be false if construction failed, or the layer was released (`https://developer.android.com/reference/kotlin/android/view/SurfaceControl#release()`).
+Check whether this instance points to a valid layer with the system-compositor. For example this may be false if construction failed, or the layer was released (release).
 
 | Return ||
 |---|---|
@@ -229,11 +229,11 @@ fun registerOnJankDataListener(
 
 Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames.
 
-Use `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListenerRegistration#removeAfter(kotlin.Long)` to unregister the listener.
+Use removeAfter to unregister the listener.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [SurfaceControl.OnJankDataListener](../android/view/SurfaceControl.OnJankDataListener.md): The listener to add. This value cannot be `null`. |
 
 | Return ||
@@ -248,7 +248,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun release(): Unit
 ```
 
-Release the local reference to the server-side surface. The surface may continue to exist on-screen as long as its parent continues to exist. To explicitly remove a surface from the screen use `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#reparent(android.view.SurfaceControl,%20android.view.SurfaceControl)` with a null-parent. After release, `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#isValid()` will return false and other methods will throw an exception. Always call release() when you're done with a SurfaceControl.
+Release the local reference to the server-side surface. The surface may continue to exist on-screen as long as its parent continues to exist. To explicitly remove a surface from the screen use reparent with a null-parent. After release, isValid will return false and other methods will throw an exception. Always call release() when you're done with a SurfaceControl.
 
 ### toString
 

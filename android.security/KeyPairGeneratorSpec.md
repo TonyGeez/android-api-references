@@ -16,11 +16,11 @@ class KeyPairGeneratorSpec : AlgorithmParameterSpec
 
 | **This class was deprecated in API level 23.**
 |
-| Use `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec` instead.
+| Use KeyGenParameterSpec instead.
 
 This provides the required parameters needed for initializing the `KeyPairGenerator` that works with [Android KeyStore facility](https://developer.android.com/training/articles/keystore.html). The Android KeyStore facility is accessed through a `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#` API using the `AndroidKeyStore` provider. The `context` passed in may be used to pop up some UI to ask the user to unlock or initialize the Android KeyStore facility.
 
-After generation, the `keyStoreAlias` is used with the `https://developer.android.com/reference/kotlin/java/security/KeyStore.html#getEntry(kotlin.String,%20java.security.KeyStore.ProtectionParameter)` interface to retrieve the `https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#` and its associated `https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#` chain.
+After generation, the `keyStoreAlias` is used with the getEntry interface to retrieve the `https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#` and its associated `https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#` chain.
 
 The KeyPair generator will create a self-signed certificate with the subject as its X.509v3 Subject Distinguished Name and as its X.509v3 Issuer Distinguished Name along with the other parameters specified with the `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec.Builder`.
 
@@ -30,23 +30,23 @@ The self-signed X.509 certificate may be replaced at a later time by a certifica
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec.Builder` Builder class for KeyPairGeneratorSpec objects. |
 
 | Public methods ||
 |---|---|
-| [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getAlgorithmParameterSpec()()` Returns the `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` that will be used for creation of the key pair. |
-| [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getContext()()` Gets the Android context used for operations with this instance. |
-| [Date](../java.util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getEndDate()()` Gets the end date to be used on the X. |
+| [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md) | getAlgorithmParameterSpec Returns the `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` that will be used for creation of the key pair. |
+| [Context](../android.content/Context.md)! | getContext Gets the Android context used for operations with this instance. |
+| [Date](../java.util/Date.md) | getEndDate Gets the end date to be used on the X. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getKeySize()()` Returns the key size specified by this parameter. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getKeyType()()` Returns the type of key pair (e.g., |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getKeystoreAlias()()` Returns the alias that will be used in the `java.security.KeyStore` in conjunction with the `AndroidKeyStore`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getKeySize Returns the key size specified by this parameter. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getKeyType Returns the type of key pair (e.g., |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getKeystoreAlias Returns the alias that will be used in the `java.security.KeyStore` in conjunction with the `AndroidKeyStore`. |
 | --- | --- |
-| [BigInteger](../java.math/BigInteger.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getSerialNumber()()` Gets the serial number to be used on the X. |
-| [Date](../java.util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getStartDate()()` Gets the start date to be used on the X. |
-| [X500Principal](../javax.security.auth.x500/X500Principal.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getSubjectDN()()` Gets the subject distinguished name to be used on the X. |
+| [BigInteger](../java.math/BigInteger.md) | getSerialNumber Gets the serial number to be used on the X. |
+| [Date](../java.util/Date.md) | getStartDate Gets the start date to be used on the X. |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md) | getSubjectDN Gets the subject distinguished name to be used on the X. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#isEncryptionRequired()()` Returns `true` if the key must be encrypted at rest. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEncryptionRequired Returns `true` if the key must be encrypted at rest. |
 
 ## Public methods
 
@@ -119,7 +119,7 @@ fun getKeyType(): String?
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the type of key pair (e.g., `EC`, `RSA`) to be generated. See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`KEY_ALGORITHM` constants.
+Returns the type of key pair (e.g., `EC`, `RSA`) to be generated. See KeyProperties.`KEY_ALGORITHM` constants.
 
 | Return ||
 |---|---|
@@ -193,11 +193,11 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun isEncryptionRequired(): Boolean
 ```
 
-**Deprecated:** *Encryption at rest is on by default. If extra binding to the lockscreen screen credential is desired use `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationRequired(kotlin.Boolean)`. This flag will be ignored from Android S.*
+**Deprecated:** *Encryption at rest is on by default. If extra binding to the lockscreen screen credential is desired use setUserAuthenticationRequired. This flag will be ignored from Android S.*
 
 Returns `true` if the key must be encrypted at rest. This will protect the key pair with the secure lock screen credential (e.g., password, PIN, or pattern).
 
 Note that encrypting the key at rest requires that the secure lock screen (e.g., password, PIN, pattern) is set up, otherwise key generation will fail. Moreover, this key will be deleted when the secure lock screen is disabled or reset (e.g., by the user or a Device Administrator). Finally, this key cannot be used until the user unlocks the secure lock screen after boot.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#isDeviceSecure()`
+- isDeviceSecure

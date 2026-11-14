@@ -36,28 +36,28 @@ Describes the meta data for an installed AppWidget provider. The fields in this 
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#AppWidgetProviderInfo()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#AppWidgetProviderInfo(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` Unflatten the AppWidgetProviderInfo from a parcel. |
+| AppWidgetProviderInfo <br /> |
+| AppWidgetProviderInfo Unflatten the AppWidgetProviderInfo from a parcel. |
 
 | Public methods ||
 |---|---|
-| open [AppWidgetProviderInfo](AppWidgetProviderInfo.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#clone()()` Creates and returns a copy of this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [ActivityInfo](../android.content.pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getActivityInfo()()` Returns the broadcast receiver that is providing this widget. |
+| open [AppWidgetProviderInfo](AppWidgetProviderInfo.md)! | clone Creates and returns a copy of this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [ActivityInfo](../android.content.pm/ActivityInfo.md) | getActivityInfo Returns the broadcast receiver that is providing this widget. |
 | --- | --- |
-| [UserHandle](../android.os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#getProfile()()` Gets the user profile in which the provider resides. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadDescription(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Loads localized description for the app widget. |
-| [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadIcon(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads the icon to display for this AppWidget in the AppWidget picker. |
+| [UserHandle](../android.os/UserHandle.md)! | getProfile Gets the user profile in which the provider resides. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | loadDescription Loads localized description for the app widget. |
+| [Drawable](../android.graphics.drawable/Drawable.md)! | loadIcon Loads the icon to display for this AppWidget in the AppWidget picker. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadLabel(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Loads the localized label to display to the user in the AppWidget picker. |
-| [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadPreviewImage(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads a preview of what the AppWidget will look like after it's configured. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | loadLabel Loads the localized label to display to the user in the AppWidget picker. |
+| [Drawable](../android.graphics.drawable/Drawable.md)! | loadPreviewImage Loads a preview of what the AppWidget will look like after it's configured. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -226,7 +226,7 @@ The widget is added directly by the app, and the host may hide this widget when 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)`
+- requestPinAppWidget
 - `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#widgetFeatures:kotlin.Int`
 
 ### WIDGET_FEATURE_RECONFIGURABLE
@@ -314,7 +314,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -522,13 +522,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 var generatedPreviewCategories: Int
 ```
 
-Flags indicating the widget categories for which generated previews are available. These correspond to the previews set by this provider with `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#setWidgetPreview(android.content.ComponentName,%20kotlin.Int,%20android.widget.RemoteViews)`.
+Flags indicating the widget categories for which generated previews are available. These correspond to the previews set by this provider with setWidgetPreview.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_HOME_SCREEN:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_KEYGUARD:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#WIDGET_CATEGORY_SEARCHBOX:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getWidgetPreview(android.content.ComponentName,%20android.os.UserHandle,%20kotlin.Int)`
+- getWidgetPreview
 
 ### icon
 
@@ -575,7 +575,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 var label: String!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetProviderInfo#loadLabel(android.content.pm.PackageManager)`.*
+**Deprecated:** *Use loadLabel.*
 
 The label to display to the user in the AppWidget picker.
 

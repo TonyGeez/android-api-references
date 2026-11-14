@@ -12,7 +12,7 @@ class DocumentsContract
 
 Defines the contract between a documents provider and the platform.
 
-To create a document provider, extend `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`, which provides a foundational implementation of this contract.
+To create a document provider, extend DocumentsProvider, which provides a foundational implementation of this contract.
 
 All client apps must hold a valid URI permission grant to access documents, typically issued when a user makes a selection through `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CREATE_DOCUMENT:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT_TREE:kotlin.String`.
 
@@ -29,13 +29,13 @@ All client apps must hold a valid URI permission grant to access documents, typi
 |---|---|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#ACTION_DOCUMENT_SETTINGS:kotlin.String` Action of intent issued by DocumentsUI when user wishes to open/configure/manage a particular document in the provider application. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#CATEGORY_APPROVED_DOCUMENT_HANDLER:kotlin.String` Intent category to filter for activities that can handle document intents. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_ERROR:kotlin.String` Optional string included in a directory `https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras()` providing an error message that should be shown to a user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_ERROR:kotlin.String` Optional string included in a directory getExtras providing an error message that should be shown to a user. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_EXCLUDE_SELF:kotlin.String` Set this in a DocumentsUI intent to cause a package's own roots to be excluded from the roots list. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_INFO:kotlin.String` Optional string included in a directory `https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras()` providing an informational message that should be shown to a user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_INFO:kotlin.String` Optional string included in a directory getExtras providing an informational message that should be shown to a user. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_INITIAL_URI:kotlin.String` Sets the desired initial location visible to user when file chooser is shown. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_LOADING:kotlin.String` Optional boolean flag included in a directory `https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras()` indicating that a document provider is still loading data. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_LOADING:kotlin.String` Optional boolean flag included in a directory getExtras indicating that a document provider is still loading data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_ORIENTATION:kotlin.String` An extra number of degrees that an image should be rotated during the decode process to be presented correctly. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#EXTRA_PROMPT:kotlin.String` Overrides the default prompt text in DocumentsUI when set in an intent. |
 | --- | --- |
@@ -44,60 +44,60 @@ All client apps must hold a valid URI permission grant to access documents, typi
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#METADATA_TREE_SIZE:kotlin.String` Get total size of all documents currently stored under the given directory tree. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#METADATA_TYPES:kotlin.String` Get string array identifies the type or types of metadata returned using DocumentsContract#getDocumentMetadata. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#PROVIDER_INTERFACE:kotlin.String` Intent action used to identify `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` instances. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_DISPLAY_NAME:kotlin.String` Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query display name is matched. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#PROVIDER_INTERFACE:kotlin.String` Intent action used to identify DocumentsProvider instances. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_DISPLAY_NAME:kotlin.String` Key for DocumentsProvider to query display name is matched. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_EXCLUDE_MEDIA:kotlin.String` Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to decide whether the files that have been added to MediaStore should be excluded. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_FILE_SIZE_OVER:kotlin.String` Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query the file size in bytes is larger than the value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_LAST_MODIFIED_AFTER:kotlin.String` Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query the last modified time is newer than the value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_EXCLUDE_MEDIA:kotlin.String` Key for DocumentsProvider to decide whether the files that have been added to MediaStore should be excluded. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_FILE_SIZE_OVER:kotlin.String` Key for DocumentsProvider to query the file size in bytes is larger than the value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_LAST_MODIFIED_AFTER:kotlin.String` Key for DocumentsProvider to query the last modified time is newer than the value. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_MIME_TYPES:kotlin.String` Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query mime types is matched. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#QUERY_ARG_MIME_TYPES:kotlin.String` Key for DocumentsProvider to query mime types is matched. |
 
 | Public methods ||
 |---|---|
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildChildDocumentsUri(kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the children of the target directory in a document provider. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildChildDocumentsUriUsingTree(android.net.Uri,%20kotlin.String)(treeUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, parentDocumentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the children of the target directory in a document provider. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildDocumentUri(kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the target `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildChildDocumentsUri Build URI representing the children of the target directory in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildChildDocumentsUriUsingTree Build URI representing the children of the target directory in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildDocumentUri Build URI representing the target `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` in a document provider. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildDocumentUriUsingTree(android.net.Uri,%20kotlin.String)(treeUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the target `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` in a document provider. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildRecentDocumentsUri(kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the recently modified documents of a specific root in a document provider. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildRootUri(kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Root#COLUMN_ROOT_ID:kotlin.String` in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildDocumentUriUsingTree Build URI representing the target `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildRecentDocumentsUri Build URI representing the recently modified documents of a specific root in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildRootUri Build URI representing the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Root#COLUMN_ROOT_ID:kotlin.String` in a document provider. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildRootsUri(kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing the roots of a document provider. |
-| static [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildSearchDocumentsUri(android.net.Uri,%20kotlin.String)(parentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Build URI representing a search for matching documents under a specific directory in a document provider. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildSearchDocumentsUri(kotlin.String,%20kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing a search for matching documents under a specific root in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildRootsUri Build URI representing the roots of a document provider. |
+| static [Uri](../android.net/Uri.md) | buildSearchDocumentsUri Build URI representing a search for matching documents under a specific directory in a document provider. |
+| static [Uri](../android.net/Uri.md)! | buildSearchDocumentsUri Build URI representing a search for matching documents under a specific root in a document provider. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildTrashDocumentsUri(kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, rootId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns URI representing the query trash documents of a specific document provider. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildTreeDocumentUri(kotlin.String,%20kotlin.String)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, documentId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Build URI representing access to descendant documents of the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String`. |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#copyDocument(android.content.ContentResolver,%20android.net.Uri,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, sourceDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, targetParentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Copies the given document. |
+| static [Uri](../android.net/Uri.md) | buildTrashDocumentsUri Returns URI representing the query trash documents of a specific document provider. |
+| static [Uri](../android.net/Uri.md)! | buildTreeDocumentUri Build URI representing access to descendant documents of the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String`. |
+| static [Uri](../android.net/Uri.md)? | copyDocument Copies the given document. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#createDocument(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20kotlin.String)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, parentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, displayName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new document with given MIME type and display name. |
-| static [IntentSender](../android.content/IntentSender.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#createWebLinkIntent(android.content.ContentResolver,%20android.net.Uri,%20android.os.Bundle)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates an intent for obtaining a web link for the specified document. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#deleteDocument(android.content.ContentResolver,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Delete the given document. |
+| static [Uri](../android.net/Uri.md)? | createDocument Create a new document with given MIME type and display name. |
+| static [IntentSender](../android.content/IntentSender.md)? | createWebLinkIntent Creates an intent for obtaining a web link for the specified document. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteDocument Delete the given document. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#ejectRoot(android.content.ContentResolver,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, rootUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Ejects the given root. |
-| static [DocumentsContract.Path](../android/provider/DocumentsContract.Path.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#findDocumentPath(android.content.ContentResolver,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, treeUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Finds the canonical path from the top of the document tree. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentId(android.net.Uri)(documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Extract the `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` from the given URI. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | ejectRoot Ejects the given root. |
+| static [DocumentsContract.Path](../android/provider/DocumentsContract.Path.md)? | findDocumentPath Finds the canonical path from the top of the document tree. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDocumentId Extract the `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` from the given URI. |
 | --- | --- |
-| static [Bundle](../android.os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentMetadata(android.content.ContentResolver,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Returns metadata associated with the document. |
-| static [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentThumbnail(android.content.ContentResolver,%20android.net.Uri,%20android.graphics.Point,%20android.os.CancellationSignal)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, size: https://developer.android.com/reference/kotlin/android/graphics/Point.html#, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Return thumbnail representing the document at the given URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getRootId(android.net.Uri)(rootUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Extract the `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Root#COLUMN_ROOT_ID:kotlin.String` from the given URI. |
+| static [Bundle](../android.os/Bundle.md)? | getDocumentMetadata Returns metadata associated with the document. |
+| static [Bitmap](../android.graphics/Bitmap.md)? | getDocumentThumbnail Return thumbnail representing the document at the given URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getRootId Extract the `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Root#COLUMN_ROOT_ID:kotlin.String` from the given URI. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getSearchDocumentsQuery(android.net.Uri)(searchDocumentsUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Extract the search query from a URI built by `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildSearchDocumentsUri(kotlin.String,%20kotlin.String,%20kotlin.String)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getTreeDocumentId(android.net.Uri)(documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Extract the via `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` from the given URI. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#isChildDocument(android.content.ContentResolver,%20android.net.Uri,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, parentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, childDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Test if a document is descendant (child, grandchild, etc) from the given parent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSearchDocumentsQuery Extract the search query from a URI built by buildSearchDocumentsUri. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getTreeDocumentId Extract the via `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` from the given URI. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isChildDocument Test if a document is descendant (child, grandchild, etc) from the given parent. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#isDocumentUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` backed by a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#isRootUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Test if the given URI represents specific root backed by `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#isRootsUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Test if the given URI represents all roots of the authority backed by `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDocumentUri Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` backed by a DocumentsProvider. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRootUri Test if the given URI represents specific root backed by DocumentsProvider. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRootsUri Test if the given URI represents all roots of the authority backed by DocumentsProvider. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#isTreeUri(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` tree. |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#moveDocument(android.content.ContentResolver,%20android.net.Uri,%20android.net.Uri,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, sourceDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, sourceParentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, targetParentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Moves the given document under a new parent. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#removeDocument(android.content.ContentResolver,%20android.net.Uri,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, parentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Removes the given document from a parent directory. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTreeUri Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` tree. |
+| static [Uri](../android.net/Uri.md)? | moveDocument Moves the given document under a new parent. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeDocument Removes the given document from a parent directory. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#renameDocument(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, displayName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Change the display name of an existing document. |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#restoreDocumentFromTrash(android.content.ContentResolver,%20android.net.Uri,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, sourceDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, targetParentDocumentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Restores a document from the trash. |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#trashDocument(android.content.ContentResolver,%20android.net.Uri)(content: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Trashes the given document. |
+| static [Uri](../android.net/Uri.md)? | renameDocument Change the display name of an existing document. |
+| static [Uri](../android.net/Uri.md)? | restoreDocumentFromTrash Restores a document from the trash. |
+| static [Uri](../android.net/Uri.md)? | trashDocument Trashes the given document. |
 | --- | --- |
 
 ## Constants
@@ -158,7 +158,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ERROR: String
 ```
 
-Optional string included in a directory `https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras()` providing an error message that should be shown to a user. For example, a provider may wish to indicate that a network error occurred. The user may choose to retry, resulting in a new query.
+Optional string included in a directory getExtras providing an error message that should be shown to a user. For example, a provider may wish to indicate that a network error occurred. The user may choose to retry, resulting in a new query.
 
  Value: "error"
 
@@ -182,7 +182,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INFO: String
 ```
 
-Optional string included in a directory `https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras()` providing an informational message that should be shown to a user. For example, a provider may wish to indicate that not all documents are available.
+Optional string included in a directory getExtras providing an informational message that should be shown to a user. For example, a provider may wish to indicate that not all documents are available.
 
  Value: "info"
 
@@ -216,13 +216,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_LOADING: String
 ```
 
-Optional boolean flag included in a directory `https://developer.android.com/reference/kotlin/android/database/Cursor.html#getExtras()` indicating that a document provider is still loading data. For example, a provider has returned some results, but is still waiting on an outstanding network request. The provider must send a content changed notification when loading is finished.
+Optional boolean flag included in a directory getExtras indicating that a document provider is still loading data. For example, a provider has returned some results, but is still waiting on an outstanding network request. The provider must send a content changed notification when loading is finished.
 
  Value: "loading"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#notifyChange(android.net.Uri,%20android.database.ContentObserver,%20kotlin.Boolean)`
+- notifyChange
 
 ### EXTRA_ORIENTATION
 
@@ -238,7 +238,7 @@ An extra number of degrees that an image should be rotated during the decode pro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/res/AssetFileDescriptor.html#getExtras()`
+- getExtras
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#ORIENTATION:kotlin.String`
 
 ### EXTRA_PROMPT
@@ -267,7 +267,7 @@ Get Exif information using DocumentsContract#getDocumentMetadata.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentMetadata(android.content.ContentResolver,%20android.net.Uri)`
+- getDocumentMetadata
 
 ### METADATA_TREE_COUNT
 
@@ -283,7 +283,7 @@ Get total count of all documents currently stored under the given directory tree
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentMetadata(android.content.ContentResolver,%20android.net.Uri)`
+- getDocumentMetadata
 
 ### METADATA_TREE_SIZE
 
@@ -299,7 +299,7 @@ Get total size of all documents currently stored under the given directory tree.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentMetadata(android.content.ContentResolver,%20android.net.Uri)`
+- getDocumentMetadata
 
 ### METADATA_TYPES
 
@@ -315,7 +315,7 @@ Get string array identifies the type or types of metadata returned using Documen
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentMetadata(android.content.ContentResolver,%20android.net.Uri)`
+- getDocumentMetadata
 
 ### PROVIDER_INTERFACE
 
@@ -325,7 +325,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val PROVIDER_INTERFACE: String
 ```
 
-Intent action used to identify `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` instances. This is used in the `<intent-filter>` of a `<provider>`.
+Intent action used to identify DocumentsProvider instances. This is used in the `<intent-filter>` of a `<provider>`.
 
  Value: "android.content.action.DOCUMENTS_PROVIDER"
 
@@ -337,13 +337,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_DISPLAY_NAME: String
 ```
 
-Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query display name is matched. The match of display name is partial matching and case-insensitive. Ex: The value is "o", the display name of the results will contain both "foo" and "Open".
+Key for DocumentsProvider to query display name is matched. The match of display name is partial matching and case-insensitive. Ex: The value is "o", the display name of the results will contain both "foo" and "Open".
 
  Value: "android:query-arg-display-name"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)`
+- querySearchDocuments
 
 ### QUERY_ARG_EXCLUDE_MEDIA
 
@@ -353,13 +353,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_EXCLUDE_MEDIA: String
 ```
 
-Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to decide whether the files that have been added to MediaStore should be excluded. If the value is true, exclude them. Otherwise, include them.
+Key for DocumentsProvider to decide whether the files that have been added to MediaStore should be excluded. If the value is true, exclude them. Otherwise, include them.
 
  Value: "android:query-arg-exclude-media"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)`
+- querySearchDocuments
 
 ### QUERY_ARG_FILE_SIZE_OVER
 
@@ -369,13 +369,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_FILE_SIZE_OVER: String
 ```
 
-Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query the file size in bytes is larger than the value.
+Key for DocumentsProvider to query the file size in bytes is larger than the value.
 
  Value: "android:query-arg-file-size-over"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)`
+- querySearchDocuments
 
 ### QUERY_ARG_LAST_MODIFIED_AFTER
 
@@ -385,13 +385,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_LAST_MODIFIED_AFTER: String
 ```
 
-Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query the last modified time is newer than the value. The unit is in milliseconds since January 1, 1970 00:00:00.0 UTC.
+Key for DocumentsProvider to query the last modified time is newer than the value. The unit is in milliseconds since January 1, 1970 00:00:00.0 UTC.
 
  Value: "android:query-arg-last-modified-after"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)`
+- querySearchDocuments
 - `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_LAST_MODIFIED:kotlin.String`
 
 ### QUERY_ARG_MIME_TYPES
@@ -402,13 +402,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_MIME_TYPES: String
 ```
 
-Key for `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` to query mime types is matched. The value is a string array, it can support different mime types. Each items will be treated as "OR" condition. Ex: {"image/\*" , "video/\*"}. The mime types of the results will contain both image type and video type.
+Key for DocumentsProvider to query mime types is matched. The value is a string array, it can support different mime types. Each items will be treated as "OR" condition. Ex: {"image/\*" , "video/\*"}. The mime types of the results will contain both image type and video type.
 
  Value: "android:query-arg-mime-types"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle)`
+- querySearchDocuments
 
 ## Public methods
 
@@ -431,8 +431,8 @@ Build URI representing the children of the target directory in a document provid
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryChildDocuments(kotlin.String,%20kotlin.Array,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentId(android.net.Uri)`
+- queryChildDocuments
+- getDocumentId
 
 ### buildChildDocumentsUriUsingTree
 
@@ -459,8 +459,8 @@ This is typically used to access documents under a user-selected directory tree,
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT_TREE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#isChildDocument(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildChildDocumentsUri(kotlin.String,%20kotlin.String)`
+- isChildDocument
+- buildChildDocumentsUri
 
 ### buildDocumentUri
 
@@ -476,8 +476,8 @@ static fun buildDocumentUri(
 Build URI representing the target `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` in a document provider. When queried, a provider will return a single row with columns defined by `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryDocument(kotlin.String,%20kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentId(android.net.Uri)`
+- queryDocument
+- getDocumentId
 
 ### buildDocumentUriUsingTree
 
@@ -504,8 +504,8 @@ This is typically used to access documents under a user-selected directory tree,
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT_TREE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#isChildDocument(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildDocumentUri(kotlin.String,%20kotlin.String)`
+- isChildDocument
+- buildDocumentUri
 
 ### buildRecentDocumentsUri
 
@@ -521,8 +521,8 @@ static fun buildRecentDocumentsUri(
 Build URI representing the recently modified documents of a specific root in a document provider. When queried, a provider will return zero or more rows with columns defined by `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRecentDocuments(kotlin.String,%20kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getRootId(android.net.Uri)`
+- queryRecentDocuments
+- getRootId
 
 ### buildRootUri
 
@@ -538,7 +538,7 @@ static fun buildRootUri(
 Build URI representing the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Root#COLUMN_ROOT_ID:kotlin.String` in a document provider.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getRootId(android.net.Uri)`
+- getRootId
 
 ### buildRootsUri
 
@@ -551,7 +551,7 @@ static fun buildRootsUri(authority: String!): Uri!
 Build URI representing the roots of a document provider. When queried, a provider will return one or more rows with columns defined by `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Root`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryRoots(kotlin.Array)`
+- queryRoots
 
 ### buildSearchDocumentsUri
 
@@ -577,9 +577,9 @@ Build URI representing a search for matching documents under a specific director
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getDocumentId(android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getSearchDocumentsQuery(android.net.Uri)`
+- querySearchDocuments
+- getDocumentId
+- getSearchDocumentsQuery
 
 ### buildSearchDocumentsUri
 
@@ -596,9 +596,9 @@ static fun buildSearchDocumentsUri(
 Build URI representing a search for matching documents under a specific root in a document provider. When queried, a provider will return zero or more rows with columns defined by `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#querySearchDocuments(kotlin.String,%20kotlin.String,%20kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getRootId(android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getSearchDocumentsQuery(android.net.Uri)`
+- querySearchDocuments
+- getRootId
+- getSearchDocumentsQuery
 
 ### buildTrashDocumentsUri
 
@@ -624,8 +624,8 @@ Returns URI representing the query trash documents of a specific document provid
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#queryTrashDocuments(kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getRootId(android.net.Uri)`
+- queryTrashDocuments
+- getRootId
 
 ### buildTreeDocumentUri
 
@@ -641,7 +641,7 @@ static fun buildTreeDocumentUri(
 Build URI representing access to descendant documents of the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getTreeDocumentId(android.net.Uri)`
+- getTreeDocumentId
 
 ### copyDocument
 
@@ -757,7 +757,7 @@ In order to obtain the Web Link use code like this:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#createWebLinkIntent(kotlin.String,%20android.os.Bundle)`
+- createWebLinkIntent
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_EMAIL:kotlin.String`
 
 ### deleteDocument
@@ -811,7 +811,7 @@ static fun findDocumentPath(
 ): DocumentsContract.Path?
 ```
 
-Finds the canonical path from the top of the document tree. The `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Path#getPath()` of the return value contains the document ID of all documents along the path from the top the document tree to the requested document, both inclusive. The `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Path#getRootId()` of the return value returns `null`.
+Finds the canonical path from the top of the document tree. The getPath of the return value contains the document ID of all documents along the path from the top the document tree to the requested document, both inclusive. The getRootId of the return value returns `null`.
 
 | Parameters ||
 |---|---|
@@ -824,7 +824,7 @@ Finds the canonical path from the top of the document tree. The `https://develop
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#findDocumentPath(kotlin.String,%20kotlin.String)`
+- findDocumentPath
 
 ### getDocumentId
 
@@ -837,7 +837,7 @@ static fun getDocumentId(documentUri: Uri!): String!
 Extract the `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document#COLUMN_DOCUMENT_ID:kotlin.String` from the given URI.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#isDocumentUri(android.content.Context,%20android.net.Uri)`
+- isDocumentUri
 
 ### getDocumentMetadata
 
@@ -909,7 +909,7 @@ Return thumbnail representing the document at the given URI. Callers are respons
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider#openDocumentThumbnail(kotlin.String,%20android.graphics.Point,%20android.os.CancellationSignal)`
+- openDocumentThumbnail
 
 ### getRootId
 
@@ -929,7 +929,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static fun getSearchDocumentsQuery(searchDocumentsUri: Uri!): String!
 ```
 
-Extract the search query from a URI built by `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildSearchDocumentsUri(kotlin.String,%20kotlin.String,%20kotlin.String)`.
+Extract the search query from a URI built by buildSearchDocumentsUri.
 
 ### getTreeDocumentId
 
@@ -981,7 +981,7 @@ static fun isDocumentUri(
 ): Boolean
 ```
 
-Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` backed by a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`.
+Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` backed by a DocumentsProvider.
 
 | Parameters ||
 |---|---|
@@ -989,8 +989,8 @@ Test if the given URI represents a `https://developer.android.com/reference/kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildDocumentUri(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildDocumentUriUsingTree(android.net.Uri,%20kotlin.String)`
+- buildDocumentUri
+- buildDocumentUriUsingTree
 
 ### isRootUri
 
@@ -1003,7 +1003,7 @@ static fun isRootUri(
 ): Boolean
 ```
 
-Test if the given URI represents specific root backed by `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`.
+Test if the given URI represents specific root backed by DocumentsProvider.
 
 | Parameters ||
 |---|---|
@@ -1012,7 +1012,7 @@ Test if the given URI represents specific root backed by `https://developer.andr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildRootUri(kotlin.String,%20kotlin.String)`
+- buildRootUri
 
 ### isRootsUri
 
@@ -1025,7 +1025,7 @@ static fun isRootsUri(
 ): Boolean
 ```
 
-Test if the given URI represents all roots of the authority backed by `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider`.
+Test if the given URI represents all roots of the authority backed by DocumentsProvider.
 
 | Parameters ||
 |---|---|
@@ -1034,7 +1034,7 @@ Test if the given URI represents all roots of the authority backed by `https://d
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildRootsUri(kotlin.String)`
+- buildRootsUri
 
 ### isTreeUri
 
@@ -1047,8 +1047,8 @@ static fun isTreeUri(uri: Uri!): Boolean
 Test if the given URI represents a `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document` tree.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#buildTreeDocumentUri(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#getTreeDocumentId(android.net.Uri)`
+- buildTreeDocumentUri
+- getTreeDocumentId
 
 ### moveDocument
 
@@ -1091,7 +1091,7 @@ static fun removeDocument(
 
 Removes the given document from a parent directory.
 
-In contrast to `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract#deleteDocument(android.content.ContentResolver,%20android.net.Uri)` it requires specifying the parent. This method is especially useful if the document can be in multiple parents.
+In contrast to deleteDocument it requires specifying the parent. This method is especially useful if the document can be in multiple parents.
 
 | Parameters ||
 |---|---|

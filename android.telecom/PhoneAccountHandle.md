@@ -13,12 +13,12 @@ class PhoneAccountHandle : Parcelable
 | --- | --- |
 | ↳ | [android.telecom.PhoneAccountHandle](PhoneAccountHandle.md) |
 
-The unique identifier for a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. A `PhoneAccountHandle` is made of two parts:
+The unique identifier for a PhoneAccount. A `PhoneAccountHandle` is made of two parts:
 
 - The component name of the associated connection service.
-- A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`s should ensure that the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getId()` provided does not expose personally identifying information. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should use an opaque token as the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#` identifier.
+- A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering PhoneAccountHandles should ensure that the getId provided does not expose personally identifying information. A ConnectionService should use an opaque token as the PhoneAccountHandle identifier.
 
-Note: This Class requires a non-null `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` and `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` to operate properly. Passing in invalid parameters will generate a log warning. See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`, `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager`.
+Note: This Class requires a non-null `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` and `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` to operate properly. Passing in invalid parameters will generate a log warning. See PhoneAccount, TelecomManager.
 
 <br />
 
@@ -26,25 +26,25 @@ Note: This Class requires a non-null `https://developer.android.com/reference/ko
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#PhoneAccountHandle(android.content.ComponentName,%20kotlin.String)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. |
-| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#PhoneAccountHandle(android.content.ComponentName,%20kotlin.String,%20android.os.UserHandle)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Creates a new `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. |
+| PhoneAccountHandle Creates a new PhoneAccountHandle. |
+| PhoneAccountHandle Creates a new PhoneAccountHandle. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getComponentName()()` The `ComponentName` of the connection service which is responsible for making phone calls using this `PhoneAccountHandle`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [ComponentName](../android.content/ComponentName.md)! | getComponentName The `ComponentName` of the connection service which is responsible for making phone calls using this `PhoneAccountHandle`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getId()()` A string that uniquely distinguishes this particular `PhoneAccountHandle` from all the others supported by the connection service that created it. |
-| [UserHandle](../android.os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getUserHandle()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#hashCode()()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getId A string that uniquely distinguishes this particular `PhoneAccountHandle` from all the others supported by the connection service that created it. |
+| [UserHandle](../android.os/UserHandle.md)! | getUserHandle <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -62,12 +62,12 @@ PhoneAccountHandle(
     id: String)
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`.
+Creates a new PhoneAccountHandle.
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](../android.content/ComponentName.md): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which services this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. This value cannot be `null`. |
-| `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`s should ensure that the ID provided does not expose personally identifying information. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should use an opaque token as the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#` identifier. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android.content/ComponentName.md): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the ConnectionService which services this PhoneAccountHandle. This value cannot be `null`. |
+| `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering PhoneAccountHandles should ensure that the ID provided does not expose personally identifying information. A ConnectionService should use an opaque token as the PhoneAccountHandle identifier. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via registerPhoneAccount and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
 
 ### PhoneAccountHandle
 
@@ -80,13 +80,13 @@ PhoneAccountHandle(
     userHandle: UserHandle)
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`.
+Creates a new PhoneAccountHandle.
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](../android.content/ComponentName.md): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which services this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. This value cannot be `null`. |
-| `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`s should ensure that the ID provided does not expose personally identifying information. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should use an opaque token as the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#` identifier. This value cannot be `null`. |
-| `userHandle` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` associated with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#`. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android.content/ComponentName.md): The `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the ConnectionService which services this PhoneAccountHandle. This value cannot be `null`. |
+| `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A string identifier that is unique across `PhoneAccountHandle`s with the same component name. Apps registering PhoneAccountHandles should ensure that the ID provided does not expose personally identifying information. A ConnectionService should use an opaque token as the PhoneAccountHandle identifier. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` associated with this PhoneAccountHandle. Note: Each String field is limited to 256 characters. This check is enforced when registering the PhoneAccount via registerPhoneAccount and will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown if the character field limit is over 256. This value cannot be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -99,7 +99,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -190,8 +190,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

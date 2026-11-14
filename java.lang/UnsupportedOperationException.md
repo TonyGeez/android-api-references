@@ -14,7 +14,7 @@ open class UnsupportedOperationException : RuntimeException
 | --- | --- | --- | --- | --- |
 | | | | ↳ | [java.lang.UnsupportedOperationException](UnsupportedOperationException.md) |
 
-| Known Direct Subclasses [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md), [ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) |---|---| | [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md) | Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer. | | [ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) | Unchecked exception thrown when an attempt is made to update an object associated with a `https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#isReadOnly()` `FileSystem`. | |
+| Known Direct Subclasses [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md), [ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) |---|---| | [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md) | Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer. | | [ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) | Unchecked exception thrown when an attempt is made to update an object associated with a isReadOnly `FileSystem`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that the requested operation is not supported.
@@ -25,10 +25,10 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException#UnsupportedOperationException()()` Constructs an UnsupportedOperationException with no detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException#UnsupportedOperationException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs an UnsupportedOperationException with the specified detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException#UnsupportedOperationException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new exception with the specified detail message and cause. |
-| `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException#UnsupportedOperationException(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new exception with the specified cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
+| UnsupportedOperationException Constructs an UnsupportedOperationException with no detail message. |
+| UnsupportedOperationException Constructs an UnsupportedOperationException with the specified detail message. |
+| UnsupportedOperationException Constructs a new exception with the specified detail message and cause. |
+| UnsupportedOperationException Constructs a new exception with the specified cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
 
 ## Public constructors
 
@@ -72,8 +72,8 @@ Note that the detail message associated with `cause` is *not* automatically inco
 
 | Parameters ||
 |---|---|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getMessage()` method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the detail message (which is saved for later retrieval by the getMessage method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### UnsupportedOperationException
 
@@ -87,4 +87,4 @@ Constructs a new exception with the specified cause and a detail message of `(ca
 
 | Parameters ||
 |---|---|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |

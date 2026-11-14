@@ -13,20 +13,20 @@ open class OverlayManager
 | --- | --- |
 | ↳ | [android.content.om.OverlayManager](OverlayManager.md) |
 
-OverlayManager gives apps the ability to create an `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction` to maintain the overlays and list the registered fabricated runtime resources overlays(FRROs).
+OverlayManager gives apps the ability to create an OverlayManagerTransaction to maintain the overlays and list the registered fabricated runtime resources overlays(FRROs).
 
-OverlayManager returns the list of overlays to the app calling `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#getOverlayInfosForTarget(kotlin.String)`. The app starts an `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction` to manage the overlays. The app can achieve the following by using `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction`.
+OverlayManager returns the list of overlays to the app calling getOverlayInfosForTarget. The app starts an OverlayManagerTransaction to manage the overlays. The app can achieve the following by using OverlayManagerTransaction.
 
 - register overlays
 - unregister overlays
-- execute multiple operations in one commitment by calling `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#commit(android.content.om.OverlayManagerTransaction)`
+- execute multiple operations in one commitment by calling commit
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#commit(android.content.om.OverlayManagerTransaction)(transaction: https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction)` Commit the overlay manager transaction. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OverlayInfo](OverlayInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#getOverlayInfosForTarget(kotlin.String)(targetPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the related information of self-targeting overlays for `targetPackageName`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | commit Commit the overlay manager transaction. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OverlayInfo](OverlayInfo.md)!\> | getOverlayInfosForTarget Get the related information of self-targeting overlays for `targetPackageName`. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ open fun commit(transaction: OverlayManagerTransaction): Unit
 
 Commit the overlay manager transaction.
 
-Applications can register overlays and unregister the registered overlays in an atomic operation via `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction`.
+Applications can register overlays and unregister the registered overlays in an atomic operation via OverlayManagerTransaction.
 
 | Parameters ||
 |---|---|
@@ -52,7 +52,7 @@ Applications can register overlays and unregister the registered overlays in an 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction`
+- OverlayManagerTransaction
 
 ### getOverlayInfosForTarget
 

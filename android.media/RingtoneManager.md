@@ -13,7 +13,7 @@ open class RingtoneManager
 | --- | --- |
 | ↳ | [android.media.RingtoneManager](RingtoneManager.md) |
 
-RingtoneManager provides access to ringtones, notification, and other types of sounds. It manages querying the different media providers and combines the results into a single cursor. It also provides a `https://developer.android.com/reference/kotlin/android/media/Ringtone` for each ringtone. We generically call these sounds ringtones, however the `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TYPE_RINGTONE:kotlin.Int` refers to the type of sounds that are suitable for the phone ringer.
+RingtoneManager provides access to ringtones, notification, and other types of sounds. It manages querying the different media providers and combines the results into a single cursor. It also provides a Ringtone for each ringtone. We generically call these sounds ringtones, however the `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TYPE_RINGTONE:kotlin.Int` refers to the type of sounds that are suitable for the phone ringer.
 
 To show a ringtone picker to the user, use the `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#ACTION_RINGTONE_PICKER:kotlin.String` intent to launch the picker as a subactivity.
 
@@ -33,54 +33,54 @@ To show a ringtone picker to the user, use the `https://developer.android.com/re
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#EXTRA_RINGTONE_TITLE:kotlin.String` Given to the ringtone picker as a `https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#EXTRA_RINGTONE_TYPE:kotlin.String` Given to the ringtone picker as an int. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#ID_COLUMN_INDEX:kotlin.Int` The column index (in the cursor returned by `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()` for the row ID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TITLE_COLUMN_INDEX:kotlin.Int` The column index (in the cursor returned by `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()` for the title. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#ID_COLUMN_INDEX:kotlin.Int` The column index (in the cursor returned by getCursor for the row ID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TITLE_COLUMN_INDEX:kotlin.Int` The column index (in the cursor returned by getCursor for the title. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TYPE_ALARM:kotlin.Int` Type that refers to sounds that are used for the alarm. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TYPE_ALL:kotlin.Int` All types of sounds. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TYPE_NOTIFICATION:kotlin.Int` Type that refers to sounds that are used for notifications. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#TYPE_RINGTONE:kotlin.Int` Type that refers to sounds that are used for the phone ringer. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#URI_COLUMN_INDEX:kotlin.Int` The column index (in the cursor returned by `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()` for the media provider's URI. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#URI_COLUMN_INDEX:kotlin.Int` The column index (in the cursor returned by getCursor for the media provider's URI. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#RingtoneManager(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!)` Constructs a RingtoneManager. |
-| `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#RingtoneManager(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Constructs a RingtoneManager. |
+| RingtoneManager Constructs a RingtoneManager. |
+| RingtoneManager Constructs a RingtoneManager. |
 
 | Public methods ||
 |---|---|
-| open static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getActualDefaultRingtoneUri(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the current default sound's `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. |
-| open [Cursor](../android.database/Cursor.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()()` Returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` of all the ringtones available. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getDefaultType(android.net.Uri)(defaultRingtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Returns the type of a default `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. |
+| open static [Uri](../android.net/Uri.md)! | getActualDefaultRingtoneUri Gets the current default sound's `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. |
+| open [Cursor](../android.database/Cursor.md)! | getCursor Returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` of all the ringtones available. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefaultType Returns the type of a default `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. |
 | --- | --- |
-| open static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getDefaultUri(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` for the default ringtone of a particular type. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getIncludeDrm()()` Returns whether DRM ringtones will be included. |
-| open [Ringtone](Ringtone.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getRingtone(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets a `https://developer.android.com/reference/kotlin/android/media/Ringtone` for the ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. |
+| open static [Uri](../android.net/Uri.md)! | getDefaultUri Returns the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` for the default ringtone of a particular type. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getIncludeDrm Returns whether DRM ringtones will be included. |
+| open [Ringtone](Ringtone.md)! | getRingtone Gets a Ringtone for the ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. |
 | --- | --- |
-| open static [Ringtone](Ringtone.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getRingtone(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Returns a `https://developer.android.com/reference/kotlin/android/media/Ringtone` for a given sound URI. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getRingtonePosition(android.net.Uri)(ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Gets the position of a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` within this `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#`. |
-| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getRingtoneUri(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` for the ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. |
+| open static [Ringtone](Ringtone.md)! | getRingtone Returns a Ringtone for a given sound URI. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRingtonePosition Gets the position of a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` within this RingtoneManager. |
+| open [Uri](../android.net/Uri.md)! | getRingtoneUri Gets a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` for the ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. |
 | --- | --- |
-| open static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getRingtoneUriForPhoneAccountHandle(android.content.Context,%20android.telecom.PhoneAccountHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#?)` Gets TYPE_RINGTONE's `https://developer.android.com/reference/kotlin/android/net/Uri.html#` by id of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getStopPreviousRingtone()()` <br /> |
-| open static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getValidRingtoneUri(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Returns a valid ringtone URI. |
+| open static [Uri](../android.net/Uri.md)? | getRingtoneUriForPhoneAccountHandle Gets TYPE_RINGTONE's `https://developer.android.com/reference/kotlin/android/net/Uri.html#` by id of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getStopPreviousRingtone <br /> |
+| open static [Uri](../android.net/Uri.md)! | getValidRingtoneUri Returns a valid ringtone URI. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#hasHapticChannels(kotlin.Int)(position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns if the `https://developer.android.com/reference/kotlin/android/media/Ringtone` at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` contains haptic channels. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#hasHapticChannels(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Returns if the `https://developer.android.com/reference/kotlin/android/media/Ringtone` from a given sound URI contains haptics channels or not. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#hasHapticChannels(android.net.Uri)(ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Returns if the `https://developer.android.com/reference/kotlin/android/media/Ringtone` from a given sound URI contains haptic channels or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasHapticChannels Returns if the Ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` contains haptic channels. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasHapticChannels Returns if the Ringtone from a given sound URI contains haptics channels or not. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasHapticChannels Returns if the Ringtone from a given sound URI contains haptic channels or not. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#inferStreamType()()` Infers the volume stream type based on what type of ringtones this manager is returning. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#isDefault(android.net.Uri)(ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Returns whether the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` is one of the default ringtones. |
-| open static [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#openDefaultRingtoneUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Opens a raw file descriptor to read the data under the given default URI. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | inferStreamType Infers the volume stream type based on what type of ringtones this manager is returning. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDefault Returns whether the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` is one of the default ringtones. |
+| open static [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | openDefaultRingtoneUri Opens a raw file descriptor to read the data under the given default URI. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setActualDefaultRingtoneUri(android.content.Context,%20kotlin.Int,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Sets the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the default sound for a given sound type. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setIncludeDrm(kotlin.Boolean)(includeDrm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether to include DRM ringtones. |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setRingtoneUri(android.content.Context,%20android.net.Uri,%20android.telecom.PhoneAccountHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#?)` Sets the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the sound by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` for TYPE_RINGTONE. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setActualDefaultRingtoneUri Sets the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the default sound for a given sound type. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setIncludeDrm Sets whether to include DRM ringtones. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRingtoneUri Sets the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the sound by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` for TYPE_RINGTONE. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setStopPreviousRingtone(kotlin.Boolean)(stopPreviousRingtone: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether retrieving another `https://developer.android.com/reference/kotlin/android/media/Ringtone` will stop playing the previously retrieved `https://developer.android.com/reference/kotlin/android/media/Ringtone`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setType(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets which type(s) of ringtones will be listed by this. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#stopPreviousRingtone()()` Stops playing the last `https://developer.android.com/reference/kotlin/android/media/Ringtone` retrieved from this. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStopPreviousRingtone Whether retrieving another Ringtone will stop playing the previously retrieved Ringtone. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setType Sets which type(s) of ringtones will be listed by this. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopPreviousRingtone Stops playing the last Ringtone retrieved from this. |
 | --- | --- |
 
 ## Constants
@@ -229,7 +229,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ID_COLUMN_INDEX: Int
 ```
 
-The column index (in the cursor returned by `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()` for the row ID.
+The column index (in the cursor returned by getCursor for the row ID.
 
  Value: 0
 
@@ -241,7 +241,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TITLE_COLUMN_INDEX: Int
 ```
 
-The column index (in the cursor returned by `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()` for the title.
+The column index (in the cursor returned by getCursor for the title.
 
  Value: 1
 
@@ -301,7 +301,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val URI_COLUMN_INDEX: Int
 ```
 
-The column index (in the cursor returned by `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getCursor()` for the media provider's URI.
+The column index (in the cursor returned by getCursor for the media provider's URI.
 
  Value: 2
 
@@ -361,7 +361,7 @@ Gets the current default sound's `https://developer.android.com/reference/kotlin
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setActualDefaultRingtoneUri(android.content.Context,%20kotlin.Int,%20android.net.Uri)`
+- setActualDefaultRingtoneUri
 
 ### getCursor
 
@@ -371,9 +371,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getCursor(): Cursor!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` of all the ringtones available. The returned cursor will be the same cursor returned each time this method is called, so do not android.database.Cursor#close() the cursor. The cursor can be `https://developer.android.com/reference/kotlin/android/database/Cursor.html#deactivate()` safely.
+Returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` of all the ringtones available. The returned cursor will be the same cursor returned each time this method is called, so do not android.database.Cursor#close() the cursor. The cursor can be deactivate safely.
 
-If `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#RingtoneManager(android.app.Activity)` was not used, the caller should manage the returned cursor through its activity's life cycle to prevent leaking the cursor.
+If RingtoneManager was not used, the caller should manage the returned cursor through its activity's life cycle to prevent leaking the cursor.
 
 Note that the list of ringtones available will differ depending on whether the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission.
 
@@ -442,7 +442,7 @@ Returns whether DRM ringtones will be included.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setIncludeDrm(kotlin.Boolean)`
+- setIncludeDrm
 
 ### getRingtone
 
@@ -452,7 +452,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getRingtone(position: Int): Ringtone!
 ```
 
-Gets a `https://developer.android.com/reference/kotlin/android/media/Ringtone` for the ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`.
+Gets a Ringtone for the ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`.
 
 | Parameters ||
 |---|---|
@@ -460,7 +460,7 @@ Gets a `https://developer.android.com/reference/kotlin/android/media/Ringtone` f
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Ringtone!` | A `https://developer.android.com/reference/kotlin/android/media/Ringtone` pointing to the ringtone. |
+| `https://developer.android.com/reference/kotlin/android/media/Ringtone!` | A Ringtone pointing to the ringtone. |
 
 ### getRingtone
 
@@ -473,7 +473,7 @@ open static fun getRingtone(
 ): Ringtone!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/media/Ringtone` for a given sound URI.
+Returns a Ringtone for a given sound URI.
 
 If the given URI cannot be opened for any reason, this method will attempt to fallback on another sound. If it cannot find any, it will return null.
 
@@ -484,7 +484,7 @@ If the given URI cannot be opened for any reason, this method will attempt to fa
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Ringtone!` | A `https://developer.android.com/reference/kotlin/android/media/Ringtone` for the given URI, or null. |
+| `https://developer.android.com/reference/kotlin/android/media/Ringtone!` | A Ringtone for the given URI, or null. |
 
 ### getRingtonePosition
 
@@ -494,7 +494,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getRingtonePosition(ringtoneUri: Uri!): Int
 ```
 
-Gets the position of a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` within this `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#`.
+Gets the position of a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` within this RingtoneManager.
 
 | Parameters ||
 |---|---|
@@ -546,7 +546,7 @@ Gets TYPE_RINGTONE's `https://developer.android.com/reference/kotlin/android/net
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setRingtoneUri(android.content.Context,%20android.net.Uri,%20android.telecom.PhoneAccountHandle)`
+- setRingtoneUri
 
 ### getStopPreviousRingtone
 
@@ -557,7 +557,7 @@ open fun getStopPreviousRingtone(): Boolean
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setStopPreviousRingtone(kotlin.Boolean)`
+- setStopPreviousRingtone
 
 ### getValidRingtoneUri
 
@@ -585,7 +585,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun hasHapticChannels(position: Int): Boolean
 ```
 
-Returns if the `https://developer.android.com/reference/kotlin/android/media/Ringtone` at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` contains haptic channels.
+Returns if the Ringtone at the given position in the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` contains haptic channels.
 
 | Parameters ||
 |---|---|
@@ -606,7 +606,7 @@ open static fun hasHapticChannels(
 ): Boolean
 ```
 
-Returns if the `https://developer.android.com/reference/kotlin/android/media/Ringtone` from a given sound URI contains haptics channels or not.
+Returns if the Ringtone from a given sound URI contains haptics channels or not.
 
 | Parameters ||
 |---|---|
@@ -625,7 +625,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open static fun hasHapticChannels(ringtoneUri: Uri): Boolean
 ```
 
-Returns if the `https://developer.android.com/reference/kotlin/android/media/Ringtone` from a given sound URI contains haptic channels or not. As this function doesn't has a context to resolve the uri, the result may be wrong if the uri cannot be resolved correctly. Use `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#hasHapticChannels(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#hasHapticChannels(android.content.Context,%20android.net.Uri)` instead when possible.
+Returns if the Ringtone from a given sound URI contains haptic channels or not. As this function doesn't has a context to resolve the uri, the result may be wrong if the uri cannot be resolved correctly. Use hasHapticChannels or hasHapticChannels instead when possible.
 
 | Parameters ||
 |---|---|
@@ -695,7 +695,7 @@ Opens a raw file descriptor to read the data under the given default URI.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getDefaultUri(kotlin.Int)`
+- getDefaultUri
 
 ### setActualDefaultRingtoneUri
 
@@ -720,7 +720,7 @@ Sets the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getActualDefaultRingtoneUri(android.content.Context,%20kotlin.Int)`
+- getActualDefaultRingtoneUri
 
 ### setIncludeDrm
 
@@ -756,13 +756,13 @@ Sets the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): A context used for querying. This value cannot be `null`. |
-| `ringtoneUri` | [Uri](../android.net/Uri.md)?: A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` pointing to the sound to set. This parameter can be null, in which case the API behaves like `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setActualDefaultRingtoneUri(android.content.Context,%20kotlin.Int,%20android.net.Uri)`. |
-| `phoneAccountHandle` | [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)?: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` whose sound should be set. This parameter can be null, in which case the API behaves like `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#setActualDefaultRingtoneUri(android.content.Context,%20kotlin.Int,%20android.net.Uri)`. |
+| `ringtoneUri` | [Uri](../android.net/Uri.md)?: A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` pointing to the sound to set. This parameter can be null, in which case the API behaves like setActualDefaultRingtoneUri. |
+| `phoneAccountHandle` | [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)?: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` whose sound should be set. This parameter can be null, in which case the API behaves like setActualDefaultRingtoneUri. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RingtoneManager#getRingtoneUriForPhoneAccountHandle(android.content.Context,%20android.telecom.PhoneAccountHandle)`
+- getRingtoneUriForPhoneAccountHandle
 
 ### setStopPreviousRingtone
 
@@ -772,13 +772,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setStopPreviousRingtone(stopPreviousRingtone: Boolean): Unit
 ```
 
-Whether retrieving another `https://developer.android.com/reference/kotlin/android/media/Ringtone` will stop playing the previously retrieved `https://developer.android.com/reference/kotlin/android/media/Ringtone`.
+Whether retrieving another Ringtone will stop playing the previously retrieved Ringtone.
 
-If this is false, make sure to `https://developer.android.com/reference/kotlin/android/media/Ringtone#stop()` any previous ringtones to free resources.
+If this is false, make sure to stop any previous ringtones to free resources.
 
 | Parameters ||
 |---|---|
-| `stopPreviousRingtone` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the previously retrieved `https://developer.android.com/reference/kotlin/android/media/Ringtone` will be stopped. |
+| `stopPreviousRingtone` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the previously retrieved Ringtone will be stopped. |
 
 ### setType
 
@@ -806,4 +806,4 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun stopPreviousRingtone(): Unit
 ```
 
-Stops playing the last `https://developer.android.com/reference/kotlin/android/media/Ringtone` retrieved from this.
+Stops playing the last Ringtone retrieved from this.

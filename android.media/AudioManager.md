@@ -60,11 +60,11 @@ AudioManager provides access to volume and ringer mode control.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_GRANTED:kotlin.Int` A successful focus change request. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIO_SESSION_ID_GENERATE:kotlin.Int` A special audio session ID to indicate that the audio session ID isn't known and the framework should generate a new value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_BITSTREAM_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct playback supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_NOT_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct playback not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_BITSTREAM_SUPPORTED:kotlin.Int` Return value for getDirectPlaybackSupport: direct playback supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_NOT_SUPPORTED:kotlin.Int` Return value for getDirectPlaybackSupport: direct playback not supported. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_OFFLOAD_GAPLESS_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct offload playback supported with gapless transitions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_OFFLOAD_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct offload playback supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_OFFLOAD_GAPLESS_SUPPORTED:kotlin.Int` Return value for getDirectPlaybackSupport: direct offload playback supported with gapless transitions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#DIRECT_PLAYBACK_OFFLOAD_SUPPORTED:kotlin.Int` Return value for getDirectPlaybackSupport: direct offload playback supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#ENCODED_SURROUND_OUTPUT_ALWAYS:kotlin.Int` The surround sound formats are ALWAYS available, even if they are not detected by the hardware. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#ENCODED_SURROUND_OUTPUT_AUTO:kotlin.Int` The surround sound formats are available for use if they are detected. |
@@ -107,9 +107,9 @@ AudioManager provides access to volume and ringer mode control.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#FX_KEYPRESS_STANDARD:kotlin.Int` IME standard keypress sound |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#FX_KEY_CLICK:kotlin.Int` Keyboard and direction pad click sound |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#GET_DEVICES_ALL:kotlin.Int` Specifies to the `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` method to include both source and sink devices. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#GET_DEVICES_INPUTS:kotlin.Int` Specifies to the `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` method to include source (i.e. input) audio devices. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#GET_DEVICES_OUTPUTS:kotlin.Int` Specifies to the `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` method to include sink (i.e. output) audio devices. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#GET_DEVICES_ALL:kotlin.Int` Specifies to the getDevices method to include both source and sink devices. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#GET_DEVICES_INPUTS:kotlin.Int` Specifies to the getDevices method to include source (i.e. input) audio devices. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#GET_DEVICES_OUTPUTS:kotlin.Int` Specifies to the getDevices method to include sink (i.e. output) audio devices. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_ASSISTANT_CONVERSATION:kotlin.Int` Use this mode whenever an assistant conversation mode is started. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_CALL_REDIRECT:kotlin.Int` A telephony call is established and its audio is being redirected to another device. |
@@ -125,23 +125,23 @@ AudioManager provides access to volume and ringer mode control.
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_RINGTONE:kotlin.Int` Ringing audio mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#NUM_STREAMS:kotlin.Int` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PLAYBACK_OFFLOAD_GAPLESS_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: offload playback supported with gapless transitions |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PLAYBACK_OFFLOAD_GAPLESS_SUPPORTED:kotlin.Int` Return value for getPlaybackOffloadSupport: offload playback supported with gapless transitions |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PLAYBACK_OFFLOAD_NOT_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: offload playback not supported |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PLAYBACK_OFFLOAD_SUPPORTED:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: offload playback supported |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_OUTPUT_FRAMES_PER_BUFFER:kotlin.String` Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to request the native or optimal output buffer size for this device's low latency output stream, in decimal PCM frames. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PLAYBACK_OFFLOAD_NOT_SUPPORTED:kotlin.Int` Return value for getPlaybackOffloadSupport: offload playback not supported |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PLAYBACK_OFFLOAD_SUPPORTED:kotlin.Int` Return value for getPlaybackOffloadSupport: offload playback supported |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_OUTPUT_FRAMES_PER_BUFFER:kotlin.String` Used as a key for getProperty to request the native or optimal output buffer size for this device's low latency output stream, in decimal PCM frames. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_OUTPUT_SAMPLE_RATE:kotlin.String` Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to request the native or optimal output sample rate for this device's low latency output stream, in decimal Hz. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_SUPPORT_AUDIO_SOURCE_UNPROCESSED:kotlin.String` Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to determine if the unprocessed audio source is available and supported with the expected frequency range and level response. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_SUPPORT_MIC_NEAR_ULTRASOUND:kotlin.String` Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to determine if the default microphone audio source supports near-ultrasound frequencies (range of 18 - 21 kHz). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_OUTPUT_SAMPLE_RATE:kotlin.String` Used as a key for getProperty to request the native or optimal output sample rate for this device's low latency output stream, in decimal Hz. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_SUPPORT_AUDIO_SOURCE_UNPROCESSED:kotlin.String` Used as a key for getProperty to determine if the unprocessed audio source is available and supported with the expected frequency range and level response. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_SUPPORT_MIC_NEAR_ULTRASOUND:kotlin.String` Used as a key for getProperty to determine if the default microphone audio source supports near-ultrasound frequencies (range of 18 - 21 kHz). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_SUPPORT_SPEAKER_NEAR_ULTRASOUND:kotlin.String` Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to determine if the default speaker audio path supports near-ultrasound frequencies (range of 18 - 21 kHz). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#PROPERTY_SUPPORT_SPEAKER_NEAR_ULTRASOUND:kotlin.String` Used as a key for getProperty to determine if the default speaker audio path supports near-ultrasound frequencies (range of 18 - 21 kHz). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#RINGER_MODE_CHANGED_ACTION:kotlin.String` Sticky broadcast intent action indicating that the ringer mode has changed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#RINGER_MODE_NORMAL:kotlin.Int` Ringer mode that may be audible and may vibrate. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#RINGER_MODE_SILENT:kotlin.Int` Ringer mode that will be silent and will not vibrate. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#RINGER_MODE_VIBRATE:kotlin.Int` Ringer mode that will be silent and will vibrate. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#ROUTE_ALL:kotlin.Int` Used for mask parameter of `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRouting(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#ROUTE_ALL:kotlin.Int` Used for mask parameter of setRouting. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#ROUTE_BLUETOOTH:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#ROUTE_BLUETOOTH_A2DP:kotlin.Int` Routing audio output to bluetooth A2DP |
@@ -180,141 +180,141 @@ AudioManager provides access to volume and ringer mode control.
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#abandonAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener)(l: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener!)` Abandon audio focus. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#abandonAudioFocusRequest(android.media.AudioFocusRequest)(focusRequest: https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest)` Abandon audio focus. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnCommunicationDeviceChangedListener)` Adds a listener for being notified of changes to the communication audio device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | abandonAudioFocus Abandon audio focus. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | abandonAudioFocusRequest Abandon audio focus. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnCommunicationDeviceChangedListener Adds a listener for being notified of changes to the communication audio device. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnModeChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnModeChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnModeChangedListener)` Adds a listener to be notified of changes to the audio mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnPreferredMixerAttributesChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnPreferredMixerAttributesChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnPreferredMixerAttributesChangedListener)` Adds a listener for being notified of changes to the preferred mixer attributes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adjusts the volume of a particular stream by one step in a direction. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnModeChangedListener Adds a listener to be notified of changes to the audio mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnPreferredMixerAttributesChangedListener Adds a listener for being notified of changes to the preferred mixer attributes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | adjustStreamVolume Adjusts the volume of a particular stream by one step in a direction. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustSuggestedStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, suggestedStreamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adjusts the volume of the most relevant stream, or the given fallback stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adjusts the volume of the most relevant stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolumeGroupVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(groupId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adjusts the volume of a particular group associated to given id by one step in a direction. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | adjustSuggestedStreamVolume Adjusts the volume of the most relevant stream, or the given fallback stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | adjustVolume Adjusts the volume of the most relevant stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | adjustVolumeGroupVolume Adjusts the volume of a particular group associated to given id by one step in a direction. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#canManageAssistantAudio()()` Checks if the calling app can manage assistant audio. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearCommunicationDevice()()` Cancels previous communication device selection made with `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Clears the current preferred mixer attributes that were previously set via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)` Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS:kotlin.String` |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canManageAssistantAudio Checks if the calling app can manage assistant audio. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearCommunicationDevice Cancels previous communication device selection made with setCommunicationDevice. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | clearPreferredMixerAttributes Clears the current preferred mixer attributes that were previously set via setPreferredMixerAttributes Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS:kotlin.String` |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#dispatchMediaKeyEvent(android.view.KeyEvent)(keyEvent: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Sends a simulated key event for a media button. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#generateAudioSessionId()()` Return a new audio session identifier not associated with any player or effect. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioPlaybackConfiguration](AudioPlaybackConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getActivePlaybackConfigurations()()` Returns the current active audio playback configurations of the device |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchMediaKeyEvent Sends a simulated key event for a media button. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | generateAudioSessionId Return a new audio session identifier not associated with any player or effect. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioPlaybackConfiguration](AudioPlaybackConfiguration.md)!\> | getActivePlaybackConfigurations Returns the current active audio playback configurations of the device |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioRecordingConfiguration](AudioRecordingConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getActiveRecordingConfigurations()()` Returns the current active audio recording configurations of the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAllowedCapturePolicy()()` Return the capture policy. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAudioDevicesForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Get the audio devices that would be used for the routing of the given audio attributes. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioRecordingConfiguration](AudioRecordingConfiguration.md)!\> | getActiveRecordingConfigurations Returns the current active audio recording configurations of the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAllowedCapturePolicy Return the capture policy. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | getAudioDevicesForAttributes Get the audio devices that would be used for the routing of the given audio attributes. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAudioHwSyncForSession(kotlin.Int)(sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the Hardware A/V synchronization ID corresponding to the given audio session ID. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAvailableCommunicationDevices()()` Returns a list of audio devices that can be selected for communication use cases via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`. |
-| open [AudioDeviceInfo](AudioDeviceInfo.md)? | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getCommunicationDevice()()` Returns currently selected audio device for communication. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAudioHwSyncForSession Retrieves the Hardware A/V synchronization ID corresponding to the given audio session ID. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | getAvailableCommunicationDevices Returns a list of audio devices that can be selected for communication use cases via setCommunicationDevice. |
+| open [AudioDeviceInfo](AudioDeviceInfo.md)? | getCommunicationDevice Returns currently selected audio device for communication. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an array of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` objects corresponding to the audio devices currently connected to the system and meeting the criteria specified in the `flags` parameter. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)(format: https://developer.android.com/reference/kotlin/android/media/AudioFormat, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns a bitfield representing the different forms of direct playback currently available for a given audio format. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectProfilesForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\>! | getDevices Returns an array of AudioDeviceInfo objects corresponding to the audio devices currently connected to the system and meeting the criteria specified in the `flags` parameter. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDirectPlaybackSupport Returns a bitfield representing the different forms of direct playback currently available for a given audio format. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | getDirectProfilesForAttributes Returns a list of direct AudioProfile that are supported for the specified AudioAttributes. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectProfilesForAttributes(android.media.AudioAttributes,%20kotlin.Int)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getEncodedSurroundMode()()` Gets the surround sound mode. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MicrophoneInfo](MicrophoneInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMicrophones()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo` that corresponds to the characteristics of all available microphones. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | getDirectProfilesForAttributes Returns a list of direct AudioProfile that are supported for the specified AudioAttributes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getEncodedSurroundMode Gets the surround sound mode. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MicrophoneInfo](MicrophoneInfo.md)!\>! | getMicrophones Returns a list of MicrophoneInfo that corresponds to the characteristics of all available microphones. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMode()()` Returns the current audio mode. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getParameters(kotlin.String)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets a variable number of parameter values from audio hardware. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)(format: https://developer.android.com/reference/kotlin/android/media/AudioFormat, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns whether offloaded playback of an audio format is supported on the device or not and when supported whether gapless transitions are possible or not. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMode Returns the current audio mode. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getParameters Gets a variable number of parameter values from audio hardware. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPlaybackOffloadSupport Returns whether offloaded playback of an audio format is supported on the device or not and when supported whether gapless transitions are possible or not. |
 | --- | --- |
-| open [AudioMixerAttributes](AudioMixerAttributes.md)? | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Returns current preferred mixer attributes that is set via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)` |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value of the property with the specified key. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()()` Returns the current ringtone mode. |
+| open [AudioMixerAttributes](AudioMixerAttributes.md)? | getPreferredMixerAttributes Returns current preferred mixer attributes that is set via setPreferredMixerAttributes |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getProperty Returns the value of the property with the specified key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRingerMode Returns the current ringtone mode. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRouting(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current audio routing bit vector for a specified mode. |
-| open [Spatializer](Spatializer.md) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSpatializer()()` Return a handle to the optional platform's `https://developer.android.com/reference/kotlin/android/media/Spatializer` |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMaxVolume(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum volume index for a particular stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRouting Returns the current audio routing bit vector for a specified mode. |
+| open [Spatializer](Spatializer.md) | getSpatializer Return a handle to the optional platform's Spatializer |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStreamMaxVolume Returns the maximum volume index for a particular stream. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMinVolume(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum volume index for a particular stream. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamVolume(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current volume index for a particular stream. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamVolumeDb(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the volume in dB (decibel) for the given stream type at the given volume index, on the given type of audio output device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStreamMinVolume Returns the minimum volume index for a particular stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStreamVolume Returns the current volume index for a particular stream. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getStreamVolumeDb Returns the volume in dB (decibel) for the given stream type at the given volume index, on the given type of audio output device. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSupportedDeviceTypes(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a Set of unique Integers corresponding to audio device type identifiers that can *potentially* be connected to the system and meeting the criteria specified in the `direction` parameter. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioMixerAttributes](AudioMixerAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSupportedMixerAttributes(android.media.AudioDeviceInfo)(device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Returns the `https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes` that can be used to set as preferred mixer attributes via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)(vibrateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the user's vibrate setting for a vibrate type. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getSupportedDeviceTypes Returns a Set of unique Integers corresponding to audio device type identifiers that can *potentially* be connected to the system and meeting the criteria specified in the `direction` parameter. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioMixerAttributes](AudioMixerAttributes.md)!\> | getSupportedMixerAttributes Returns the AudioMixerAttributes that can be used to set as preferred mixer attributes via setPreferredMixerAttributes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVibrateSetting Returns whether the user's vibrate setting for a vibrate type. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVolumeGroupIdForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns the volume group id associated to the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isBluetoothA2dpOn()()` Checks whether a Bluetooth A2DP audio peripheral is connected or not. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isBluetoothScoAvailableOffCall()()` Indicates if current platform supports use of SCO for off call use cases. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVolumeGroupIdForAttributes Returns the volume group id associated to the given AudioAttributes. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBluetoothA2dpOn Checks whether a Bluetooth A2DP audio peripheral is connected or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBluetoothScoAvailableOffCall Indicates if current platform supports use of SCO for off call use cases. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isBluetoothScoOn()()` Checks whether communications use Bluetooth SCO. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isCallScreeningModeSupported()()` Indicates if the platform supports a special call screening and call monitoring mode. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isHapticPlaybackSupported()()` Return if audio haptic coupled playback is supported or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBluetoothScoOn Checks whether communications use Bluetooth SCO. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCallScreeningModeSupported Indicates if the platform supports a special call screening and call monitoring mode. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isHapticPlaybackSupported Return if audio haptic coupled playback is supported or not. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isMicrophoneMute()()` Checks whether the microphone mute is on or off. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isMusicActive()()` Checks whether any music is active. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isOffloadedPlaybackSupported(android.media.AudioFormat,%20android.media.AudioAttributes)(format: https://developer.android.com/reference/kotlin/android/media/AudioFormat, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns whether offloaded playback of an audio format is supported on the device. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMicrophoneMute Checks whether the microphone mute is on or off. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMusicActive Checks whether any music is active. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOffloadedPlaybackSupported Returns whether offloaded playback of an audio format is supported on the device. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isRampingRingerEnabled()()` Returns the current user setting for ramping ringer on incoming phone call ringtone. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isSpeakerphoneOn()()` Checks whether the speakerphone is on or off. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isStreamMute(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current mute state for a particular stream. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRampingRingerEnabled Returns the current user setting for ramping ringer on incoming phone call ringtone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSpeakerphoneOn Checks whether the speakerphone is on or off. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStreamMute Returns the current mute state for a particular stream. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isSurroundFormatEnabled(kotlin.Int)(audioFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets whether a certain surround format is enabled or not. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()()` Indicates if the device implements a fixed volume policy. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeGroupMuted(kotlin.Int)(groupId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current mute state for a particular volume group associated to the given id. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSurroundFormatEnabled Gets whether a certain surround format is enabled or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVolumeFixed Indicates if the device implements a fixed volume policy. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVolumeGroupMuted Returns the current mute state for a particular volume group associated to the given id. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#isWiredHeadsetOn()()` Checks whether a wired headset is connected or not. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#loadSoundEffects()()` Load Sound effects. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)(effectType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Plays a sound effect (Key clicks, lid open/close...) |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWiredHeadsetOn Checks whether a wired headset is connected or not. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | loadSoundEffects Load Sound effects. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | playSoundEffect Plays a sound effect (Key clicks, lid open/close...) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int,%20kotlin.Float)(effectType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, volume: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Plays a sound effect (Key clicks, lid open/close...) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioDeviceCallback(android.media.AudioDeviceCallback,%20android.os.Handler)(callback: https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Registers an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object to receive notifications of changes to the set of connected audio devices. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback,%20android.os.Handler)(cb: https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioPlaybackCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Register a callback to be notified of audio playback changes through `https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioPlaybackCallback` |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | playSoundEffect Plays a sound effect (Key clicks, lid open/close...) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerAudioDeviceCallback Registers an AudioDeviceCallback object to receive notifications of changes to the set of connected audio devices. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerAudioPlaybackCallback Register a callback to be notified of audio playback changes through `https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioPlaybackCallback` |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,%20android.os.Handler)(cb: https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Register a callback to be notified of audio recording changes through `https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback` |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.app.PendingIntent)(eventReceiver: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Register a component to be the sole receiver of MEDIA_BUTTON intents. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.content.ComponentName)(eventReceiver: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Register a component to be the sole receiver of MEDIA_BUTTON intents. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerAudioRecordingCallback Register a callback to be notified of audio recording changes through `https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback` |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerMediaButtonEventReceiver Register a component to be the sole receiver of MEDIA_BUTTON intents. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerMediaButtonEventReceiver Register a component to be the sole receiver of MEDIA_BUTTON intents. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerRemoteControlClient(android.media.RemoteControlClient)(rcClient: https://developer.android.com/reference/kotlin/android/media/RemoteControlClient!)` Registers the remote control client for providing information to display on the remote controls. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerRemoteController(android.media.RemoteController)(rctlr: https://developer.android.com/reference/kotlin/android/media/RemoteController!)` Registers a `https://developer.android.com/reference/kotlin/android/media/RemoteController` instance for it to receive media metadata updates and playback state information from applications using `https://developer.android.com/reference/kotlin/android/media/RemoteControlClient`, and control their playback. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#removeOnCommunicationDeviceChangedListener(android.media.AudioManager.OnCommunicationDeviceChangedListener)(listener: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnCommunicationDeviceChangedListener)` Removes a previously added listener of changes to the communication audio device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerRemoteControlClient Registers the remote control client for providing information to display on the remote controls. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | registerRemoteController Registers a RemoteController instance for it to receive media metadata updates and playback state information from applications using RemoteControlClient, and control their playback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnCommunicationDeviceChangedListener Removes a previously added listener of changes to the communication audio device. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#removeOnModeChangedListener(android.media.AudioManager.OnModeChangedListener)(listener: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnModeChangedListener)` Removes a previously added listener for changes to audio mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#removeOnPreferredMixerAttributesChangedListener(android.media.AudioManager.OnPreferredMixerAttributesChangedListener)(listener: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnPreferredMixerAttributesChangedListener)` Removes a previously added listener of changes to the preferred mixer attributes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest)(focusRequest: https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest)` Request audio focus. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnModeChangedListener Removes a previously added listener for changes to audio mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnPreferredMixerAttributesChangedListener Removes a previously added listener of changes to the preferred mixer attributes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | requestAudioFocus Request audio focus. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener,%20kotlin.Int,%20kotlin.Int)(l: https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener!, streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, durationHint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Request audio focus. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setAllowedCapturePolicy(kotlin.Int)(capturePolicy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies whether the audio played by this app may or may not be captured by other apps or the system. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setBluetoothA2dpOn(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | requestAudioFocus Request audio focus. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAllowedCapturePolicy Specifies whether the audio played by this app may or may not be captured by other apps or the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBluetoothA2dpOn <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setBluetoothScoOn(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Request use of Bluetooth SCO headset for communications. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)(device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Selects the audio device that should be used for communication use cases, for instance voice or video calls. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setEncodedSurroundMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the surround sound mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBluetoothScoOn Request use of Bluetooth SCO headset for communications. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setCommunicationDevice Selects the audio device that should be used for communication use cases, for instance voice or video calls. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setEncodedSurroundMode Sets the surround sound mode. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setMicrophoneMute(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the microphone mute on or off. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the audio mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setParameters(kotlin.String)(keyValuePairs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets a variable number of parameter values to audio hardware. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMicrophoneMute Sets the microphone mute on or off. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMode Sets the audio mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setParameters Sets a variable number of parameter values to audio hardware. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo, mixerAttributes: https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes)` Configures the mixer attributes for a particular `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` over a given `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)(ringerMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the ringer mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRouting(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, routes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the audio routing for a specified mode |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPreferredMixerAttributes Configures the mixer attributes for a particular AudioAttributes over a given AudioDeviceInfo. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRingerMode Sets the ringer mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRouting Sets the audio routing for a specified mode |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setSpeakerphoneOn(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the speakerphone on or off. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamMute(kotlin.Int,%20kotlin.Boolean)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Mute or unmute an audio stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamSolo(kotlin.Int,%20kotlin.Boolean)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Solo or unsolo a particular stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSpeakerphoneOn Sets the speakerphone on or off. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStreamMute Mute or unmute an audio stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStreamSolo Solo or unsolo a particular stream. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the volume index for a particular stream. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setSurroundFormatEnabled(kotlin.Int,%20kotlin.Boolean)(audioFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets and persists a certain surround format as enabled or not. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)(vibrateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vibrateSetting: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the setting for when the vibrate type should vibrate. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStreamVolume Sets the volume index for a particular stream. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setSurroundFormatEnabled Sets and persists a certain surround format as enabled or not. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVibrateSetting Sets the setting for when the vibrate type should vibrate. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#setWiredHeadsetOn(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets audio routing to the wired headset on or off. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#shouldVibrate(kotlin.Int)(vibrateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether a particular type should vibrate according to user settings and the current ringer mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()()` Start bluetooth SCO audio connection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWiredHeadsetOn Sets audio routing to the wired headset on or off. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | shouldVibrate Returns whether a particular type should vibrate according to user settings and the current ringer mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startBluetoothSco Start bluetooth SCO audio connection. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#stopBluetoothSco()()` Stop bluetooth SCO audio connection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unloadSoundEffects()()` Unload Sound effects. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterAudioDeviceCallback(android.media.AudioDeviceCallback)(callback: https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback!)` Unregisters an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object which has been previously registered to receive notifications of changes to the set of connected audio devices. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopBluetoothSco Stop bluetooth SCO audio connection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unloadSoundEffects Unload Sound effects. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterAudioDeviceCallback Unregisters an AudioDeviceCallback object which has been previously registered to receive notifications of changes to the set of connected audio devices. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback)(cb: https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioPlaybackCallback)` Unregister an audio playback callback previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback,%20android.os.Handler)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback)(cb: https://developer.android.com/reference/kotlin/android/media/AudioManager.AudioRecordingCallback)` Unregister an audio recording callback previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,%20android.os.Handler)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterMediaButtonEventReceiver(android.app.PendingIntent)(eventReceiver: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Unregister the receiver of MEDIA_BUTTON intents. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterAudioPlaybackCallback Unregister an audio playback callback previously registered with registerAudioPlaybackCallback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterAudioRecordingCallback Unregister an audio recording callback previously registered with registerAudioRecordingCallback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterMediaButtonEventReceiver Unregister the receiver of MEDIA_BUTTON intents. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterMediaButtonEventReceiver(android.content.ComponentName)(eventReceiver: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Unregister the receiver of MEDIA_BUTTON intents. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterRemoteControlClient(android.media.RemoteControlClient)(rcClient: https://developer.android.com/reference/kotlin/android/media/RemoteControlClient!)` Unregisters the remote control client that was providing information to display on the remote controls. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#unregisterRemoteController(android.media.RemoteController)(rctlr: https://developer.android.com/reference/kotlin/android/media/RemoteController!)` Unregisters a `https://developer.android.com/reference/kotlin/android/media/RemoteController`, causing it to no longer receive media metadata and playback state information, and no longer be capable of controlling playback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterMediaButtonEventReceiver Unregister the receiver of MEDIA_BUTTON intents. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterRemoteControlClient Unregisters the remote control client that was providing information to display on the remote controls. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterRemoteController Unregisters a RemoteController, causing it to no longer receive media metadata and playback state information, and no longer be capable of controlling playback. |
 | --- | --- |
 
 ## Constants
@@ -373,7 +373,7 @@ static val ACTION_MICROPHONE_MUTE_CHANGED: String
 
 Broadcast Action: microphone muting state changed. You *cannot* receive this through components declared in manifests, only by explicitly registering for it with android.content.Context#registerReceiver(BroadcastReceiver,IntentFilter).
 
-The intent has no extra values, use `https://developer.android.com/reference/kotlin/android/media/AudioManager#isMicrophoneMute()` to check whether the microphone is muted.
+The intent has no extra values, use isMicrophoneMute to check whether the microphone is muted.
 
  Value: "android.media.action.MICROPHONE_MUTE_CHANGED"
 
@@ -394,7 +394,7 @@ Sticky broadcast intent action indicating that the Bluetooth SCO audio connectio
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()`
+- startBluetoothSco
 
 ### ACTION_SCO_AUDIO_STATE_UPDATED
 
@@ -405,7 +405,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val ACTION_SCO_AUDIO_STATE_UPDATED: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Sticky broadcast intent action indicating that the Bluetooth SCO audio connection state has been updated.
 
@@ -424,7 +424,7 @@ EXTRA_SCO_AUDIO_STATE or EXTRA_SCO_AUDIO_PREVIOUS_STATE can be any of:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()`
+- startBluetoothSco
 
 ### ACTION_SPEAKERPHONE_STATE_CHANGED
 
@@ -435,11 +435,11 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val ACTION_SPEAKERPHONE_STATE_CHANGED: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Broadcast Action: speakerphone state changed. You *cannot* receive this through components declared in manifests, only by explicitly registering for it with android.content.Context#registerReceiver(BroadcastReceiver,IntentFilter).
 
-The intent has no extra values, use `https://developer.android.com/reference/kotlin/android/media/AudioManager#isSpeakerphoneOn()` to check whether the speakerphone functionality is enabled or not.
+The intent has no extra values, use isSpeakerphoneOn to check whether the speakerphone functionality is enabled or not.
 
  Value: "android.media.action.SPEAKERPHONE_STATE_CHANGED"
 
@@ -457,8 +457,8 @@ Decrease the ringer volume.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### ADJUST_MUTE
 
@@ -474,8 +474,8 @@ Mute the volume. Has no effect if the stream is already muted.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### ADJUST_RAISE
 
@@ -491,8 +491,8 @@ Increase the ringer volume.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### ADJUST_SAME
 
@@ -508,8 +508,8 @@ Maintain the previous ringer volume. This may be useful when needing to show the
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### ADJUST_TOGGLE_MUTE
 
@@ -525,8 +525,8 @@ Toggle the mute state. If muted the stream will be unmuted. If not muted the str
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### ADJUST_UNMUTE
 
@@ -542,8 +542,8 @@ Unmute the volume. Has no effect if the stream is not muted.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### AUDIOFOCUS_GAIN
 
@@ -559,8 +559,8 @@ Used to indicate a gain of audio focus, or a request of audio focus, of unknown 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener#onAudioFocusChange(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener,%20kotlin.Int,%20kotlin.Int)`
+- onAudioFocusChange
+- requestAudioFocus
 
 ### AUDIOFOCUS_GAIN_TRANSIENT
 
@@ -576,8 +576,8 @@ Used to indicate a temporary gain or request of audio focus, anticipated to last
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener#onAudioFocusChange(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener,%20kotlin.Int,%20kotlin.Int)`
+- onAudioFocusChange
+- requestAudioFocus
 
 ### AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE
 
@@ -593,7 +593,7 @@ Used to indicate a temporary request of audio focus, anticipated to last a short
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener,%20kotlin.Int,%20kotlin.Int)`
+- requestAudioFocus
 
 ### AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK
 
@@ -609,8 +609,8 @@ Used to indicate a temporary request of audio focus, anticipated to last a short
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener#onAudioFocusChange(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioManager.OnAudioFocusChangeListener,%20kotlin.Int,%20kotlin.Int)`
+- onAudioFocusChange
+- requestAudioFocus
 
 ### AUDIOFOCUS_LOSS
 
@@ -626,7 +626,7 @@ Used to indicate a loss of audio focus of unknown duration.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener#onAudioFocusChange(kotlin.Int)`
+- onAudioFocusChange
 
 ### AUDIOFOCUS_LOSS_TRANSIENT
 
@@ -642,7 +642,7 @@ Used to indicate a transient loss of audio focus.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener#onAudioFocusChange(kotlin.Int)`
+- onAudioFocusChange
 
 ### AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK
 
@@ -658,7 +658,7 @@ Used to indicate a transient loss of audio focus where the loser of the audio fo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener#onAudioFocusChange(kotlin.Int)`
+- onAudioFocusChange
 
 ### AUDIOFOCUS_NONE
 
@@ -680,7 +680,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val AUDIOFOCUS_REQUEST_DELAYED: Int
 ```
 
-A focus change request whose granting is delayed: the request was successful, but the requester will only be granted audio focus once the condition that prevented immediate granting has ended. See `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest)` and `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest.Builder#setAcceptsDelayedFocusGain(kotlin.Boolean)`
+A focus change request whose granting is delayed: the request was successful, but the requester will only be granted audio focus once the condition that prevented immediate granting has ended. See requestAudioFocus and setAcceptsDelayedFocusGain
 
  Value: 2
 
@@ -716,7 +716,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val AUDIO_SESSION_ID_GENERATE: Int
 ```
 
-A special audio session ID to indicate that the audio session ID isn't known and the framework should generate a new value. This can be used when building a new `https://developer.android.com/reference/kotlin/android/media/AudioTrack` instance with `https://developer.android.com/reference/kotlin/android/media/AudioTrack#AudioTrack(android.media.AudioAttributes,%20android.media.AudioFormat,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`.
+A special audio session ID to indicate that the audio session ID isn't known and the framework should generate a new value. This can be used when building a new AudioTrack instance with AudioTrack.
 
  Value: 0
 
@@ -728,7 +728,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECT_PLAYBACK_BITSTREAM_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct playback supported. This value covers direct playback that is bitstream pass-through such as compressed pass-through.
+Return value for getDirectPlaybackSupport: direct playback supported. This value covers direct playback that is bitstream pass-through such as compressed pass-through.
 
  Value: 4
 
@@ -740,7 +740,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECT_PLAYBACK_NOT_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct playback not supported.
+Return value for getDirectPlaybackSupport: direct playback not supported.
 
  Value: 0
 
@@ -752,7 +752,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECT_PLAYBACK_OFFLOAD_GAPLESS_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct offload playback supported with gapless transitions. Compressed offload is a variant of direct playback. It is the feature that allows audio processing tasks to be done on the Android device but not on the application processor, instead, it is handled by dedicated hardware such as audio DSPs. That will allow the application processor to be idle as much as possible, which is good for power saving. Compressed offload playback supports `https://developer.android.com/reference/kotlin/android/media/AudioTrack.StreamEventCallback` for event notifications. Gapless transitions indicates the ability to play consecutive audio tracks without an audio silence in between.
+Return value for getDirectPlaybackSupport: direct offload playback supported with gapless transitions. Compressed offload is a variant of direct playback. It is the feature that allows audio processing tasks to be done on the Android device but not on the application processor, instead, it is handled by dedicated hardware such as audio DSPs. That will allow the application processor to be idle as much as possible, which is good for power saving. Compressed offload playback supports `https://developer.android.com/reference/kotlin/android/media/AudioTrack.StreamEventCallback` for event notifications. Gapless transitions indicates the ability to play consecutive audio tracks without an audio silence in between.
 
  Value: 3
 
@@ -764,7 +764,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECT_PLAYBACK_OFFLOAD_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: direct offload playback supported. Compressed offload is a variant of direct playback. It is the feature that allows audio processing tasks to be done on the Android device but not on the application processor, instead, it is handled by dedicated hardware such as audio DSPs. That will allow the application processor to be idle as much as possible, which is good for power saving. Compressed offload playback supports `https://developer.android.com/reference/kotlin/android/media/AudioTrack.StreamEventCallback` for event notifications.
+Return value for getDirectPlaybackSupport: direct offload playback supported. Compressed offload is a variant of direct playback. It is the feature that allows audio processing tasks to be done on the Android device but not on the application processor, instead, it is handled by dedicated hardware such as audio DSPs. That will allow the application processor to be idle as much as possible, which is good for power saving. Compressed offload playback supports `https://developer.android.com/reference/kotlin/android/media/AudioTrack.StreamEventCallback` for event notifications.
 
  Value: 1
 
@@ -872,7 +872,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ENCODINGS: String
 ```
 
-Extra used in `https://developer.android.com/reference/kotlin/android/media/AudioManager#ACTION_HDMI_AUDIO_PLUG:kotlin.String` to define the audio encodings supported by the connected HDMI device. The corresponding array of encoding values is only available when the device is plugged in (as expressed by `https://developer.android.com/reference/kotlin/android/media/AudioManager#EXTRA_AUDIO_PLUG_STATE:kotlin.String`). Encoding values are defined in `https://developer.android.com/reference/kotlin/android/media/AudioFormat` (for instance see `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_16BIT:kotlin.Int`). Use `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntArrayExtra(kotlin.String)` to retrieve the encoding values.
+Extra used in `https://developer.android.com/reference/kotlin/android/media/AudioManager#ACTION_HDMI_AUDIO_PLUG:kotlin.String` to define the audio encodings supported by the connected HDMI device. The corresponding array of encoding values is only available when the device is plugged in (as expressed by `https://developer.android.com/reference/kotlin/android/media/AudioManager#EXTRA_AUDIO_PLUG_STATE:kotlin.String`). Encoding values are defined in AudioFormat (for instance see `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_16BIT:kotlin.Int`). Use getIntArrayExtra to retrieve the encoding values.
 
  Value: "android.media.extra.ENCODINGS"
 
@@ -916,7 +916,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val EXTRA_SCO_AUDIO_PREVIOUS_STATE: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Extra for intent `https://developer.android.com/reference/kotlin/android/media/AudioManager#ACTION_SCO_AUDIO_STATE_UPDATED:kotlin.String` containing the previous bluetooth SCO connection state.
 
@@ -931,7 +931,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val EXTRA_SCO_AUDIO_STATE: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Extra for intent `https://developer.android.com/reference/kotlin/android/media/AudioManager#ACTION_SCO_AUDIO_STATE_CHANGED:kotlin.String` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#ACTION_SCO_AUDIO_STATE_UPDATED:kotlin.String` containing the new bluetooth SCO connection state.
 
@@ -997,8 +997,8 @@ By default this is on for the ring stream. If this flag is included, this behavi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- adjustStreamVolume
 
 ### FLAG_PLAY_SOUND
 
@@ -1010,15 +1010,15 @@ static val FLAG_PLAY_SOUND: Int
 
 Whether to play a sound when changing the volume.
 
-If this is given to `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustSuggestedStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, it may be ignored in some cases (for example, the decided stream type is not `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_RING:kotlin.Int`, or the volume is being adjusted downward).
+If this is given to adjustVolume or adjustSuggestedStreamVolume, it may be ignored in some cases (for example, the decided stream type is not `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_RING:kotlin.Int`, or the volume is being adjusted downward).
 
  Value: 4
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustStreamVolume
+- adjustVolume
+- setStreamVolume
 
 ### FLAG_REMOVE_SOUND_AND_VIBRATE
 
@@ -1046,10 +1046,10 @@ Show a toast containing the current volume.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)`
+- adjustStreamVolume
+- adjustVolume
+- setStreamVolume
+- setRingerMode
 
 ### FLAG_VIBRATE
 
@@ -1077,7 +1077,7 @@ Back sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_FOCUS_NAVIGATION_DOWN
 
@@ -1093,7 +1093,7 @@ Focus has moved down
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_FOCUS_NAVIGATION_LEFT
 
@@ -1109,7 +1109,7 @@ Focus has moved left
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_FOCUS_NAVIGATION_RIGHT
 
@@ -1125,7 +1125,7 @@ Focus has moved right
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_FOCUS_NAVIGATION_UP
 
@@ -1141,7 +1141,7 @@ Focus has moved up
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_KEYPRESS_DELETE
 
@@ -1157,7 +1157,7 @@ IME delete keypress sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_KEYPRESS_INVALID
 
@@ -1173,7 +1173,7 @@ Invalid keypress sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_KEYPRESS_RETURN
 
@@ -1189,7 +1189,7 @@ IME return_keypress sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_KEYPRESS_SPACEBAR
 
@@ -1205,7 +1205,7 @@ IME spacebar keypress sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_KEYPRESS_STANDARD
 
@@ -1221,7 +1221,7 @@ IME standard keypress sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### FX_KEY_CLICK
 
@@ -1237,7 +1237,7 @@ Keyboard and direction pad click sound
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#playSoundEffect(kotlin.Int)`
+- playSoundEffect
 
 ### GET_DEVICES_ALL
 
@@ -1247,7 +1247,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val GET_DEVICES_ALL: Int
 ```
 
-Specifies to the `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` method to include both source and sink devices.
+Specifies to the getDevices method to include both source and sink devices.
 
  Value: 3
 
@@ -1259,7 +1259,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val GET_DEVICES_INPUTS: Int
 ```
 
-Specifies to the `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` method to include source (i.e. input) audio devices.
+Specifies to the getDevices method to include source (i.e. input) audio devices.
 
  Value: 1
 
@@ -1271,7 +1271,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val GET_DEVICES_OUTPUTS: Int
 ```
 
-Specifies to the `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` method to include sink (i.e. output) audio devices.
+Specifies to the getDevices method to include sink (i.e. output) audio devices.
 
  Value: 2
 
@@ -1285,7 +1285,7 @@ static val MODE_ASSISTANT_CONVERSATION: Int
 
 Use this mode whenever an assistant conversation mode is started.
 
-To check if this mode is allowed to be used by an app, use `https://developer.android.com/reference/kotlin/android/media/AudioManager#canManageAssistantAudio()`.
+To check if this mode is allowed to be used by an app, use canManageAssistantAudio.
 
  Value: 7
 
@@ -1418,7 +1418,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val PLAYBACK_OFFLOAD_GAPLESS_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: offload playback supported with gapless transitions
+Return value for getPlaybackOffloadSupport: offload playback supported with gapless transitions
 
  Value: 2
 
@@ -1430,7 +1430,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val PLAYBACK_OFFLOAD_NOT_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: offload playback not supported
+Return value for getPlaybackOffloadSupport: offload playback not supported
 
  Value: 0
 
@@ -1442,7 +1442,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val PLAYBACK_OFFLOAD_SUPPORTED: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)`: offload playback supported
+Return value for getPlaybackOffloadSupport: offload playback supported
 
  Value: 1
 
@@ -1454,7 +1454,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_OUTPUT_FRAMES_PER_BUFFER: String
 ```
 
-Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to request the native or optimal output buffer size for this device's low latency output stream, in decimal PCM frames. Latency-sensitive apps should use this value as a minimum, and offer the user the option to override it. The low latency output stream is typically either the device's primary output stream, or another output stream with smaller buffers.
+Used as a key for getProperty to request the native or optimal output buffer size for this device's low latency output stream, in decimal PCM frames. Latency-sensitive apps should use this value as a minimum, and offer the user the option to override it. The low latency output stream is typically either the device's primary output stream, or another output stream with smaller buffers.
 
  Value: "android.media.property.OUTPUT_FRAMES_PER_BUFFER"
 
@@ -1466,7 +1466,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_OUTPUT_SAMPLE_RATE: String
 ```
 
-Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to request the native or optimal output sample rate for this device's low latency output stream, in decimal Hz. Latency-sensitive apps should use this value as a default, and offer the user the option to override it. The low latency output stream is typically either the device's primary output stream, or another output stream with smaller buffers.
+Used as a key for getProperty to request the native or optimal output sample rate for this device's low latency output stream, in decimal Hz. Latency-sensitive apps should use this value as a default, and offer the user the option to override it. The low latency output stream is typically either the device's primary output stream, or another output stream with smaller buffers.
 
  Value: "android.media.property.OUTPUT_SAMPLE_RATE"
 
@@ -1478,7 +1478,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_SUPPORT_AUDIO_SOURCE_UNPROCESSED: String
 ```
 
-Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to determine if the unprocessed audio source is available and supported with the expected frequency range and level response.
+Used as a key for getProperty to determine if the unprocessed audio source is available and supported with the expected frequency range and level response.
 
  Value: "android.media.property.SUPPORT_AUDIO_SOURCE_UNPROCESSED"
 
@@ -1490,7 +1490,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_SUPPORT_MIC_NEAR_ULTRASOUND: String
 ```
 
-Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to determine if the default microphone audio source supports near-ultrasound frequencies (range of 18 - 21 kHz).
+Used as a key for getProperty to determine if the default microphone audio source supports near-ultrasound frequencies (range of 18 - 21 kHz).
 
  Value: "android.media.property.SUPPORT_MIC_NEAR_ULTRASOUND"
 
@@ -1502,7 +1502,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_SUPPORT_SPEAKER_NEAR_ULTRASOUND: String
 ```
 
-Used as a key for `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)` to determine if the default speaker audio path supports near-ultrasound frequencies (range of 18 - 21 kHz).
+Used as a key for getProperty to determine if the default speaker audio path supports near-ultrasound frequencies (range of 18 - 21 kHz).
 
  Value: "android.media.property.SUPPORT_SPEAKER_NEAR_ULTRASOUND"
 
@@ -1536,8 +1536,8 @@ Ringer mode that may be audible and may vibrate. It will be audible if the volum
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`
+- setRingerMode
+- getRingerMode
 
 ### RINGER_MODE_SILENT
 
@@ -1553,8 +1553,8 @@ Ringer mode that will be silent and will not vibrate. (This overrides the vibrat
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`
+- setRingerMode
+- getRingerMode
 
 ### RINGER_MODE_VIBRATE
 
@@ -1570,8 +1570,8 @@ Ringer mode that will be silent and will vibrate. (This will cause the phone rin
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`
+- setRingerMode
+- getRingerMode
 
 ### ROUTE_ALL
 
@@ -1584,7 +1584,7 @@ static val ROUTE_ALL: Int
 
 **Deprecated:** *Do not set audio routing directly, use setSpeakerphoneOn(), setBluetoothScoOn() methods instead.*
 
-Used for mask parameter of `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRouting(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`.
+Used for mask parameter of setRouting.
 
  Value: -1
 
@@ -1685,7 +1685,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val SCO_AUDIO_STATE_CONNECTED: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Value for extra `https://developer.android.com/reference/kotlin/android/media/AudioManager#EXTRA_SCO_AUDIO_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#EXTRA_SCO_AUDIO_PREVIOUS_STATE:kotlin.String` indicating that the SCO audio channel is established
 
@@ -1700,7 +1700,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val SCO_AUDIO_STATE_CONNECTING: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Value for extra EXTRA_SCO_AUDIO_STATE or EXTRA_SCO_AUDIO_PREVIOUS_STATE indicating that the SCO audio channel is being established
 
@@ -1715,7 +1715,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val SCO_AUDIO_STATE_DISCONNECTED: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Value for extra EXTRA_SCO_AUDIO_STATE or EXTRA_SCO_AUDIO_PREVIOUS_STATE indicating that the SCO audio channel is not established
 
@@ -1730,7 +1730,7 @@ Deprecated in [API level 37](https://developer.android.com/guide/topics/manifest
 static val SCO_AUDIO_STATE_ERROR: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnCommunicationDeviceChangedListener)` instead.*
+**Deprecated:** *Use addOnCommunicationDeviceChangedListener instead.*
 
 Value for extra EXTRA_SCO_AUDIO_STATE indicating that there was an error trying to obtain the state
 
@@ -1885,7 +1885,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 static val VIBRATE_SETTING_OFF: Int
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Vibrate setting that suggests to never vibrate.
 
@@ -1893,8 +1893,8 @@ Vibrate setting that suggests to never vibrate.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
+- setVibrateSetting
+- getVibrateSetting
 
 ### VIBRATE_SETTING_ON
 
@@ -1905,7 +1905,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 static val VIBRATE_SETTING_ON: Int
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Vibrate setting that suggests to vibrate when possible.
 
@@ -1913,8 +1913,8 @@ Vibrate setting that suggests to vibrate when possible.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
+- setVibrateSetting
+- getVibrateSetting
 
 ### VIBRATE_SETTING_ONLY_SILENT
 
@@ -1925,7 +1925,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 static val VIBRATE_SETTING_ONLY_SILENT: Int
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Vibrate setting that suggests to only vibrate when in the vibrate ringer mode.
 
@@ -1933,8 +1933,8 @@ Vibrate setting that suggests to only vibrate when in the vibrate ringer mode.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
+- setVibrateSetting
+- getVibrateSetting
 
 ### VIBRATE_TYPE_NOTIFICATION
 
@@ -1945,7 +1945,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 static val VIBRATE_TYPE_NOTIFICATION: Int
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Vibrate type that corresponds to notifications.
 
@@ -1953,9 +1953,9 @@ Vibrate type that corresponds to notifications.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#shouldVibrate(kotlin.Int)`
+- setVibrateSetting
+- getVibrateSetting
+- shouldVibrate
 
 ### VIBRATE_TYPE_RINGER
 
@@ -1966,7 +1966,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 static val VIBRATE_TYPE_RINGER: Int
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Vibrate type that corresponds to the ringer.
 
@@ -1974,9 +1974,9 @@ Vibrate type that corresponds to the ringer.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#shouldVibrate(kotlin.Int)`
+- setVibrateSetting
+- getVibrateSetting
+- shouldVibrate
 
 ## Public methods
 
@@ -1989,7 +1989,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun abandonAudioFocus(l: AudioManager.OnAudioFocusChangeListener!): Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/media/AudioManager#abandonAudioFocusRequest(android.media.AudioFocusRequest)`*
+**Deprecated:** *use abandonAudioFocusRequest*
 
 Abandon audio focus. Causes the previous focus owner, if any, to receive focus.
 
@@ -2013,7 +2013,7 @@ Abandon audio focus. Causes the previous focus owner, if any, to receive focus.
 
 | Parameters ||
 |---|---|
-| `focusRequest` | [AudioFocusRequest](AudioFocusRequest.md): the `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` that was used when requesting focus with `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest)`. This value cannot be `null`. |
+| `focusRequest` | [AudioFocusRequest](AudioFocusRequest.md): the AudioFocusRequest that was used when requesting focus with requestAudioFocus. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2034,11 +2034,11 @@ open fun addOnCommunicationDeviceChangedListener(
 ): Unit
 ```
 
-Adds a listener for being notified of changes to the communication audio device. See `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`.
+Adds a listener for being notified of changes to the communication audio device. See setCommunicationDevice.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioManager.OnCommunicationDeviceChangedListener](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md): This value cannot be `null`. |
 
 ### addOnModeChangedListener
@@ -2052,11 +2052,11 @@ open fun addOnModeChangedListener(
 ): Unit
 ```
 
-Adds a listener to be notified of changes to the audio mode. See `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMode()`
+Adds a listener to be notified of changes to the audio mode. See getMode
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioManager.OnModeChangedListener](../android/media/AudioManager.OnModeChangedListener.md): This value cannot be `null`. |
 
 ### addOnPreferredMixerAttributesChangedListener
@@ -2074,7 +2074,7 @@ Adds a listener for being notified of changes to the preferred mixer attributes.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to execute the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to execute the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioManager.OnPreferredMixerAttributesChangedListener](../android/media/AudioManager.OnPreferredMixerAttributesChangedListener.md): the listener to be notified of changes in the preferred mixer attributes. This value cannot be `null`. |
 
 ### adjustStreamVolume
@@ -2093,9 +2093,9 @@ Adjusts the volume of a particular stream by one step in a direction.
 
 This method should only be used by applications that replace the platform-wide management of audio settings or the main telephony application.
 
-This method has no effect if the device implements a fixed volume policy as indicated by `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`.
+This method has no effect if the device implements a fixed volume policy as indicated by isVolumeFixed.
 
-From N onward, ringer mode adjustments that would toggle Do Not Disturb are not allowed unless the app has been granted Notification Policy Access. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#isNotificationPolicyAccessGranted()`.
+From N onward, ringer mode adjustments that would toggle Do Not Disturb are not allowed unless the app has been granted Notification Policy Access. See isNotificationPolicyAccessGranted.
 
 | Parameters ||
 |---|---|
@@ -2110,8 +2110,8 @@ From N onward, ringer mode adjustments that would toggle Do Not Disturb are not 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolume
+- setStreamVolume
 
 ### adjustSuggestedStreamVolume
 
@@ -2129,7 +2129,7 @@ Adjusts the volume of the most relevant stream, or the given fallback stream.
 
 This method should only be used by applications that replace the platform-wide management of audio settings or the main telephony application.
 
-This method has no effect if the device implements a fixed volume policy as indicated by `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`.
+This method has no effect if the device implements a fixed volume policy as indicated by isVolumeFixed.
 
 | Parameters ||
 |---|---|
@@ -2140,10 +2140,10 @@ This method has no effect if the device implements a fixed volume policy as indi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`
+- adjustVolume
+- adjustStreamVolume
+- setStreamVolume
+- isVolumeFixed
 
 ### adjustVolume
 
@@ -2160,7 +2160,7 @@ Adjusts the volume of the most relevant stream. For example, if a call is active
 
 This method should only be used by applications that replace the platform-wide management of audio settings or the main telephony application.
 
-This method has no effect if the device implements a fixed volume policy as indicated by `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`.
+This method has no effect if the device implements a fixed volume policy as indicated by isVolumeFixed.
 
 | Parameters ||
 |---|---|
@@ -2169,10 +2169,10 @@ This method has no effect if the device implements a fixed volume policy as indi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustSuggestedStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`
+- adjustSuggestedStreamVolume
+- adjustStreamVolume
+- setStreamVolume
+- isVolumeFixed
 
 ### adjustVolumeGroupVolume
 
@@ -2188,9 +2188,9 @@ open fun adjustVolumeGroupVolume(
 
 Adjusts the volume of a particular group associated to given id by one step in a direction.
 
-If the volume group is associated to a stream type, it fallbacks on `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` for compatibility reason.
+If the volume group is associated to a stream type, it fallbacks on adjustStreamVolume for compatibility reason.
 
-Call first in prior `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVolumeGroupIdForAttributes(android.media.AudioAttributes)` to retrieve the volume group id supporting the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`.
+Call first in prior getVolumeGroupIdForAttributes to retrieve the volume group id supporting the given AudioAttributes.
 
 | Parameters ||
 |---|---|
@@ -2227,7 +2227,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun clearCommunicationDevice(): Unit
 ```
 
-Cancels previous communication device selection made with `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`.
+Cancels previous communication device selection made with setCommunicationDevice.
 
 ### clearPreferredMixerAttributes
 
@@ -2240,12 +2240,12 @@ open fun clearPreferredMixerAttributes(
 ): Boolean
 ```
 
-Clears the current preferred mixer attributes that were previously set via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)` 
+Clears the current preferred mixer attributes that were previously set via setPreferredMixerAttributes 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be cleared. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes whose mixer attributes should be cleared. This value cannot be `null`. |
 | `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the expected routing device. This value cannot be `null`. |
 
 | Return ||
@@ -2254,8 +2254,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)`
+- setPreferredMixerAttributes
+- getPreferredMixerAttributes
 
 ### dispatchMediaKeyEvent
 
@@ -2267,11 +2267,11 @@ open fun dispatchMediaKeyEvent(keyEvent: KeyEvent!): Unit
 
 Sends a simulated key event for a media button. To simulate a key press, you must first send a KeyEvent built with a `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#ACTION_DOWN:kotlin.Int` action, then another event with the `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#ACTION_UP:kotlin.Int` action.
 
-The key event will be sent to the current media key event consumer which registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.app.PendingIntent)`.
+The key event will be sent to the current media key event consumer which registered with registerMediaButtonEventReceiver.
 
 | Parameters ||
 |---|---|
-| `keyEvent` | [KeyEvent](../android.view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
+| `keyEvent` | [KeyEvent](../android.view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by isMediaSessionKey. |
 
 ### generateAudioSessionId
 
@@ -2283,9 +2283,9 @@ open fun generateAudioSessionId(): Int
 
 Return a new audio session identifier not associated with any player or effect. An audio session identifier is a system wide unique identifier for a set of audio streams (one or more mixed together).
 
-The primary use of the audio session ID is to associate audio effects to audio players, such as `https://developer.android.com/reference/kotlin/android/media/MediaPlayer` or `https://developer.android.com/reference/kotlin/android/media/AudioTrack`: all audio effects sharing the same audio session ID will be applied to the mixed audio content of the players that share the same audio session.
+The primary use of the audio session ID is to associate audio effects to audio players, such as MediaPlayer or AudioTrack: all audio effects sharing the same audio session ID will be applied to the mixed audio content of the players that share the same audio session.
 
-This method can for instance be used when creating one of the `https://developer.android.com/reference/kotlin/android/media/audiofx/AudioEffect` objects to define the audio session of the effect, or to specify a session for a speech synthesis utterance in `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech.Engine.html#`.
+This method can for instance be used when creating one of the AudioEffect objects to define the audio session of the effect, or to specify a session for a speech synthesis utterance in `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeech.Engine.html#`.
 
 | Return ||
 |---|---|
@@ -2307,7 +2307,7 @@ Returns the current active audio playback configurations of the device
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPlaybackConfiguration`
+- AudioPlaybackConfiguration
 
 ### getActiveRecordingConfigurations
 
@@ -2325,7 +2325,7 @@ Returns the current active audio recording configurations of the device.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioRecordingConfiguration`
+- AudioRecordingConfiguration
 
 ### getAllowedCapturePolicy
 
@@ -2339,7 +2339,7 @@ Return the capture policy.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the capture policy set by `https://developer.android.com/reference/kotlin/android/media/AudioManager#setAllowedCapturePolicy(kotlin.Int)` or the default if it was not called. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_SYSTEM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_NONE:kotlin.Int` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the capture policy set by setAllowedCapturePolicy or the default if it was not called. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_SYSTEM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_NONE:kotlin.Int` |
 
 ### getAudioDevicesForAttributes
 
@@ -2349,15 +2349,15 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getAudioDevicesForAttributes(attributes: AudioAttributes): MutableList<AudioDeviceInfo!>
 ```
 
-Get the audio devices that would be used for the routing of the given audio attributes. These are the devices anticipated to play sound from an `https://developer.android.com/reference/kotlin/android/media/AudioTrack` created with the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. The audio routing can change if audio devices are physically connected or disconnected or concurrently through `https://developer.android.com/reference/kotlin/android/media/AudioRouting` or `https://developer.android.com/reference/kotlin/android/media/MediaRouter`.
+Get the audio devices that would be used for the routing of the given audio attributes. These are the devices anticipated to play sound from an AudioTrack created with the specified AudioAttributes. The audio routing can change if audio devices are physically connected or disconnected or concurrently through AudioRouting or MediaRouter.
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` for which the routing is being queried. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes for which the routing is being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo!>` | an empty list if there was an issue with the request, a list of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` otherwise (typically one device, except for duplicated paths). This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo!>` | an empty list if there was an issue with the request, a list of AudioDeviceInfo otherwise (typically one device, except for duplicated paths). This value cannot be `null`. |
 
 ### getAudioHwSyncForSession
 
@@ -2389,11 +2389,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getAvailableCommunicationDevices(): MutableList<AudioDeviceInfo!>
 ```
 
-Returns a list of audio devices that can be selected for communication use cases via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`.
+Returns a list of audio devices that can be selected for communication use cases via setCommunicationDevice.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo!>` | a list of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` suitable for use with setCommunicationDevice(). This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo!>` | a list of AudioDeviceInfo suitable for use with setCommunicationDevice(). This value cannot be `null`. |
 
 ### getCommunicationDevice
 
@@ -2407,12 +2407,12 @@ Returns currently selected audio device for communication.
 
 This API replaces the following deprecated APIs:
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isBluetoothScoOn()`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isSpeakerphoneOn()`
+- isBluetoothScoOn
+- isSpeakerphoneOn
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo?` | an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` indicating which audio device is currently selected for communication use cases. Can be null on platforms not supporting `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String`. is used. |
+| AudioDeviceInfo | an AudioDeviceInfo indicating which audio device is currently selected for communication use cases. Can be null on platforms not supporting `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String`. is used. |
 
 ### getDevices
 
@@ -2422,7 +2422,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getDevices(flags: Int): Array<AudioDeviceInfo!>!
 ```
 
-Returns an array of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` objects corresponding to the audio devices currently connected to the system and meeting the criteria specified in the `flags` parameter.
+Returns an array of AudioDeviceInfo objects corresponding to the audio devices currently connected to the system and meeting the criteria specified in the `flags` parameter.
 
 | Parameters ||
 |---|---|
@@ -2458,7 +2458,7 @@ Checking for direct support can help the app select the representation of audio 
 | Parameters ||
 |---|---|
 | `format` | [AudioFormat](AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes to be used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2472,19 +2472,19 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getDirectProfilesForAttributes(attributes: AudioAttributes): MutableList<AudioProfile!>
 ```
 
-Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. This can be empty in case of an error or if no direct playback is possible.
+Returns a list of direct AudioProfile that are supported for the specified AudioAttributes. This can be empty in case of an error or if no direct playback is possible.
 
 Direct playback means that the audio stream is not resampled or downmixed by the framework. Checking for direct support can help the app select the representation of audio content that most closely matches the capabilities of the device and peripherals (e.g. A/V receiver) connected to it. Note that the provided stream can still be re-encoded or mixed with other streams, if needed.
 
-When using this information to inform your application which audio format to play, query again whenever audio output devices change (see `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback`).
+When using this information to inform your application which audio format to play, query again whenever audio output devices change (see AudioDeviceCallback).
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null AudioAttributes instance. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioProfile!>` | a list of `https://developer.android.com/reference/kotlin/android/media/AudioProfile` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioProfile!>` | a list of AudioProfile This value cannot be `null`. |
 
 ### getDirectProfilesForAttributes
 
@@ -2497,20 +2497,20 @@ open fun getDirectProfilesForAttributes(
 ): MutableList<AudioProfile!>
 ```
 
-Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. This can be empty in case of an error or if no direct playback is possible.
+Returns a list of direct AudioProfile that are supported for the specified AudioAttributes. This can be empty in case of an error or if no direct playback is possible.
 
 Direct playback means that the audio stream is not resampled or downmixed by the framework. Checking for direct support can help the app select the representation of audio content that most closely matches the capabilities of the device and peripherals (e.g. A/V receiver) connected to it. Note that the provided stream can still be re-encoded or mixed with other streams, if needed.
 
-When using this information to inform your application which audio format to play, query again whenever audio output devices change (see `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback`).
+When using this information to inform your application which audio format to play, query again whenever audio output devices change (see AudioDeviceCallback).
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null AudioAttributes instance. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Application/Service UID for the query |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioProfile!>` | a list of `https://developer.android.com/reference/kotlin/android/media/AudioProfile` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioProfile!>` | a list of AudioProfile This value cannot be `null`. |
 
 ### getEncodedSurroundMode
 
@@ -2534,7 +2534,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getMicrophones(): MutableList<MicrophoneInfo!>!
 ```
 
-Returns a list of `https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo` that corresponds to the characteristics of all available microphones. The list is empty when no microphones are available on the device. An error during the query will result in an IOException being thrown.
+Returns a list of MicrophoneInfo that corresponds to the characteristics of all available microphones. The list is empty when no microphones are available on the device. An error during the query will result in an IOException being thrown.
 
 | Return ||
 |---|---|
@@ -2588,7 +2588,7 @@ open static fun getPlaybackOffloadSupport(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)` instead*
+**Deprecated:** *Use getDirectPlaybackSupport instead*
 
 Returns whether offloaded playback of an audio format is supported on the device or not and when supported whether gapless transitions are possible or not.
 
@@ -2599,7 +2599,7 @@ Note that this query only provides information about the support of an audio for
 | Parameters ||
 |---|---|
 | `format` | [AudioFormat](AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes to be used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2616,21 +2616,21 @@ open fun getPreferredMixerAttributes(
 ): AudioMixerAttributes?
 ```
 
-Returns current preferred mixer attributes that is set via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`
+Returns current preferred mixer attributes that is set via setPreferredMixerAttributes
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be set. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes whose mixer attributes should be set. This value cannot be `null`. |
 | `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the expected routing device. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes?` | the preferred mixer attributes, which will be null when no preferred mixer attributes have been set, or when they have been cleared. |
+| AudioMixerAttributes | the preferred mixer attributes, which will be null when no preferred mixer attributes have been set, or when they have been cleared. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)`
+- setPreferredMixerAttributes
+- clearPreferredMixerAttributes
 
 ### getProperty
 
@@ -2666,7 +2666,7 @@ Returns the current ringtone mode.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)`
+- setRingerMode
 
 ### getRouting
 
@@ -2697,15 +2697,15 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 open fun getSpatializer(): Spatializer
 ```
 
-Return a handle to the optional platform's `https://developer.android.com/reference/kotlin/android/media/Spatializer`
+Return a handle to the optional platform's Spatializer
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Spatializer` | the `Spatializer` instance. This value cannot be `null`. |
+| Spatializer | the `Spatializer` instance. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/Spatializer#getImmersiveAudioLevel()`
+- getImmersiveAudioLevel
 
 ### getStreamMaxVolume
 
@@ -2727,7 +2727,7 @@ Returns the maximum volume index for a particular stream.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamVolume(kotlin.Int)`
+- getStreamVolume
 
 ### getStreamMinVolume
 
@@ -2749,7 +2749,7 @@ Returns the minimum volume index for a particular stream.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamVolume(kotlin.Int)`
+- getStreamVolume
 
 ### getStreamVolume
 
@@ -2771,8 +2771,8 @@ Returns the current volume index for a particular stream.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMaxVolume(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- getStreamMaxVolume
+- setStreamVolume
 
 ### getStreamVolumeDb
 
@@ -2791,7 +2791,7 @@ Returns the volume in dB (decibel) for the given stream type at the given volume
 | Parameters ||
 |---|---|
 | `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): stream type for which the volume is queried. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_VOICE_CALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_SYSTEM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_RING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_MUSIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_ALARM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_NOTIFICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_DTMF:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_ACCESSIBILITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#STREAM_ASSISTANT:kotlin.Int` |
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the volume index for which the volume is queried. The index value must be between the minimum and maximum index values for the given stream type (see `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMinVolume(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMaxVolume(kotlin.Int)`). |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the volume index for which the volume is queried. The index value must be between the minimum and maximum index values for the given stream type (see getStreamMinVolume and getStreamMaxVolume). |
 | `deviceType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the type of audio output device for which volume is queried. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BUILTIN_EARPIECE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BUILTIN_SPEAKER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_WIRED_HEADSET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_WIRED_HEADPHONES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLUETOOTH_SCO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLUETOOTH_A2DP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_HDMI:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_DOCK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_USB_ACCESSORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_USB_DEVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_USB_HEADSET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_TELEPHONY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_LINE_ANALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_HDMI_ARC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_HDMI_EARC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_LINE_DIGITAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_FM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_AUX_LINE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_IP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BUS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_REMOTE_SUBMIX:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_HEARING_AID:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BUILTIN_SPEAKER_SAFE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLE_HEADSET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLE_SPEAKER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLE_BROADCAST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_DOCK_ANALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_MULTICHANNEL_GROUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLE_HEARING_AID:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#TYPE_BLE_CENTRAL:kotlin.Int` |
 | --- | --- |
 
@@ -2807,7 +2807,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getSupportedDeviceTypes(direction: Int): MutableSet<Int!>
 ```
 
-Returns a Set of unique Integers corresponding to audio device type identifiers that can *potentially* be connected to the system and meeting the criteria specified in the `direction` parameter. Note that this set contains `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` device type identifiers for both devices currently available *and* those that can be available if the user connects an audio peripheral. Examples include TYPE_WIRED_HEADSET if the Android device supports an analog headset jack or TYPE_USB_DEVICE if the Android device supports a USB host-mode port. These are generally a superset of device type identifiers associated with the AudioDeviceInfo objects returned from AudioManager.getDevices().
+Returns a Set of unique Integers corresponding to audio device type identifiers that can *potentially* be connected to the system and meeting the criteria specified in the `direction` parameter. Note that this set contains AudioDeviceInfo device type identifiers for both devices currently available *and* those that can be available if the user connects an audio peripheral. Examples include TYPE_WIRED_HEADSET if the Android device supports an analog headset jack or TYPE_USB_DEVICE if the Android device supports a USB host-mode port. These are generally a superset of device type identifiers associated with the AudioDeviceInfo objects returned from AudioManager.getDevices().
 
 | Parameters ||
 |---|---|
@@ -2834,7 +2834,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getSupportedMixerAttributes(device: AudioDeviceInfo): MutableList<AudioMixerAttributes!>
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes` that can be used to set as preferred mixer attributes via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`.
+Returns the AudioMixerAttributes that can be used to set as preferred mixer attributes via setPreferredMixerAttributes.
 
 Note that only USB devices are guaranteed to expose configurable mixer attributes. An empty list may be returned for all other types of devices as they may not allow dynamic configuration.
 
@@ -2844,11 +2844,11 @@ Note that only USB devices are guaranteed to expose configurable mixer attribute
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes!>` | a list of `https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes` that can be used as preferred mixer attributes for the given device. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes!>` | a list of AudioMixerAttributes that can be used as preferred mixer attributes for the given device. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`
+- setPreferredMixerAttributes
 
 ### getVibrateSetting
 
@@ -2859,11 +2859,11 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 open fun getVibrateSetting(vibrateType: Int): Int
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Returns whether the user's vibrate setting for a vibrate type.
 
-This shouldn't be needed by most clients that want to vibrate, instead see `https://developer.android.com/reference/kotlin/android/media/AudioManager#shouldVibrate(kotlin.Int)`.
+This shouldn't be needed by most clients that want to vibrate, instead see shouldVibrate.
 
 | Parameters ||
 |---|---|
@@ -2875,8 +2875,8 @@ This shouldn't be needed by most clients that want to vibrate, instead see `http
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#shouldVibrate(kotlin.Int)`
+- setVibrateSetting
+- shouldVibrate
 
 ### getVolumeGroupIdForAttributes
 
@@ -2886,15 +2886,15 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getVolumeGroupIdForAttributes(attributes: AudioAttributes): Int
 ```
 
-Returns the volume group id associated to the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`.
+Returns the volume group id associated to the given AudioAttributes.
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to consider. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): The AudioAttributes to consider. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | audio volume group id supporting the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` if found, `android.media.audiopolicy.AudioVolumeGroup.DEFAULT_VOLUME_GROUP` otherwise. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | audio volume group id supporting the given AudioAttributes if found, `android.media.audiopolicy.AudioVolumeGroup.DEFAULT_VOLUME_GROUP` otherwise. |
 
 ### isBluetoothA2dpOn
 
@@ -2905,7 +2905,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun isBluetoothA2dpOn(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` instead to list available audio devices.*
+**Deprecated:** *Use getDevices instead to list available audio devices.*
 
 Checks whether a Bluetooth A2DP audio peripheral is connected or not.
 
@@ -2932,7 +2932,7 @@ Indicates if current platform supports use of SCO for off call use cases. Applic
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()`
+- startBluetoothSco
 
 ### isBluetoothScoOn
 
@@ -2943,7 +2943,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun isBluetoothScoOn(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#getCommunicationDevice()` instead.*
+**Deprecated:** *Use getCommunicationDevice instead.*
 
 Checks whether communications use Bluetooth SCO.
 
@@ -2963,9 +2963,9 @@ Indicates if the platform supports a special call screening and call monitoring 
 
 When this mode is supported, it is possible to perform call screening and monitoring functions while other use cases like music or movie playback are active.
 
-Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#setMode(kotlin.Int)` with mode `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_CALL_SCREENING:kotlin.Int` to place the platform in call screening mode.
+Use setMode with mode `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_CALL_SCREENING:kotlin.Int` to place the platform in call screening mode.
 
-If call screening mode is not supported, setting mode to MODE_CALL_SCREENING will be ignored and will not change current mode reported by `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMode()`.
+If call screening mode is not supported, setting mode to MODE_CALL_SCREENING will be ignored and will not change current mode reported by getMode.
 
 | Return ||
 |---|---|
@@ -3033,7 +3033,7 @@ Note that this query only provides information about the support of an audio for
 | Parameters ||
 |---|---|
 | `format` | [AudioFormat](AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes to be used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3062,7 +3062,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun isSpeakerphoneOn(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#getCommunicationDevice()` instead.*
+**Deprecated:** *Use getCommunicationDevice instead.*
 
 Checks whether the speakerphone is on or off.
 
@@ -3090,7 +3090,7 @@ Returns the current mute state for a particular stream.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustStreamVolume
 
 ### isSurroundFormatEnabled
 
@@ -3124,13 +3124,13 @@ Some devices may not have volume control and may operate at a fixed volume, and 
 
 The following APIs have no effect when volume is fixed:
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolume(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustSuggestedStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setRingerMode(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamSolo(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setStreamMute(kotlin.Int,%20kotlin.Boolean)`
+- adjustVolume
+- adjustSuggestedStreamVolume
+- adjustStreamVolume
+- setStreamVolume
+- setRingerMode
+- setStreamSolo
+- setStreamMute
 
 ### isVolumeGroupMuted
 
@@ -3142,7 +3142,7 @@ open fun isVolumeGroupMuted(groupId: Int): Boolean
 
 Returns the current mute state for a particular volume group associated to the given id.
 
-Call first in prior `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVolumeGroupIdForAttributes(android.media.AudioAttributes)` to retrieve the volume group id supporting the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`.
+Call first in prior getVolumeGroupIdForAttributes to retrieve the volume group id supporting the given AudioAttributes.
 
 | Parameters ||
 |---|---|
@@ -3154,7 +3154,7 @@ Call first in prior `https://developer.android.com/reference/kotlin/android/medi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustVolumeGroupVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- adjustVolumeGroupVolume
 
 ### isWiredHeadsetOn
 
@@ -3165,7 +3165,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun isWiredHeadsetOn(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)` instead to list available audio devices.*
+**Deprecated:** *Use getDevices instead to list available audio devices.*
 
 Checks whether a wired headset is connected or not.
 
@@ -3228,11 +3228,11 @@ open fun registerAudioDeviceCallback(
 ): Unit
 ```
 
-Registers an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object to receive notifications of changes to the set of connected audio devices.
+Registers an AudioDeviceCallback object to receive notifications of changes to the set of connected audio devices.
 
 | Parameters ||
 |---|---|
-| `callback` | [AudioDeviceCallback](AudioDeviceCallback.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object to receive connect/disconnect notifications. |
+| `callback` | [AudioDeviceCallback](AudioDeviceCallback.md)!: The AudioDeviceCallback object to receive connect/disconnect notifications. |
 | `handler` | [Handler](../android.os/Handler.md)?: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
 
 ### registerAudioPlaybackCallback
@@ -3280,9 +3280,9 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun registerMediaButtonEventReceiver(eventReceiver: PendingIntent!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#setMediaButtonReceiver(android.app.PendingIntent)` instead.*
+**Deprecated:** *Use setMediaButtonReceiver instead.*
 
-Register a component to be the sole receiver of MEDIA_BUTTON intents. This is like `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.content.ComponentName)`, but allows the buttons to go to any PendingIntent. Note that you should only use this form if you know you will continue running for the full time until unregistering the PendingIntent.
+Register a component to be the sole receiver of MEDIA_BUTTON intents. This is like registerMediaButtonEventReceiver, but allows the buttons to go to any PendingIntent. Note that you should only use this form if you know you will continue running for the full time until unregistering the PendingIntent.
 
 | Parameters ||
 |---|---|
@@ -3297,7 +3297,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun registerMediaButtonEventReceiver(eventReceiver: ComponentName!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#setMediaButtonReceiver(android.app.PendingIntent)` instead.*
+**Deprecated:** *Use setMediaButtonReceiver instead.*
 
 Register a component to be the sole receiver of MEDIA_BUTTON intents.
 
@@ -3314,7 +3314,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun registerRemoteControlClient(rcClient: RemoteControlClient!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSession` instead.*
+**Deprecated:** *Use MediaSession instead.*
 
 Registers the remote control client for providing information to display on the remote controls.
 
@@ -3324,7 +3324,7 @@ Registers the remote control client for providing information to display on the 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RemoteControlClient`
+- RemoteControlClient
 
 ### registerRemoteController
 
@@ -3335,9 +3335,9 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun registerRemoteController(rctlr: RemoteController!): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#addOnActiveSessionsChangedListener(android.media.session.MediaSessionManager.OnActiveSessionsChangedListener,%20android.content.ComponentName)` and `https://developer.android.com/reference/kotlin/android/media/session/MediaController` instead.*
+**Deprecated:** *Use addOnActiveSessionsChangedListener and MediaController instead.*
 
-Registers a `https://developer.android.com/reference/kotlin/android/media/RemoteController` instance for it to receive media metadata updates and playback state information from applications using `https://developer.android.com/reference/kotlin/android/media/RemoteControlClient`, and control their playback.
+Registers a RemoteController instance for it to receive media metadata updates and playback state information from applications using RemoteControlClient, and control their playback.
 
 Registration requires the `https://developer.android.com/reference/kotlin/android/media/RemoteController.OnClientUpdateListener` listener to be one of the enabled notification listeners (see `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#`).
 
@@ -3347,7 +3347,7 @@ Registration requires the `https://developer.android.com/reference/kotlin/androi
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the `https://developer.android.com/reference/kotlin/android/media/RemoteController` was successfully registered, false if an error occurred, due to an internal system error, or insufficient permissions. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the RemoteController was successfully registered, false if an error occurred, due to an internal system error, or insufficient permissions. |
 
 ### removeOnCommunicationDeviceChangedListener
 
@@ -3357,7 +3357,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun removeOnCommunicationDeviceChangedListener(listener: AudioManager.OnCommunicationDeviceChangedListener): Unit
 ```
 
-Removes a previously added listener of changes to the communication audio device. See `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`.
+Removes a previously added listener of changes to the communication audio device. See setCommunicationDevice.
 
 | Parameters ||
 |---|---|
@@ -3371,7 +3371,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun removeOnModeChangedListener(listener: AudioManager.OnModeChangedListener): Unit
 ```
 
-Removes a previously added listener for changes to audio mode. See `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMode()`
+Removes a previously added listener for changes to audio mode. See getMode
 
 | Parameters ||
 |---|---|
@@ -3389,7 +3389,7 @@ Removes a previously added listener of changes to the preferred mixer attributes
 
 | Parameters ||
 |---|---|
-| `listener` | [AudioManager.OnPreferredMixerAttributesChangedListener](../android/media/AudioManager.OnPreferredMixerAttributesChangedListener.md): the listener to be notified of changes in the preferred mixer attributes, which were added via `https://developer.android.com/reference/kotlin/android/media/AudioManager#addOnPreferredMixerAttributesChangedListener(java.util.concurrent.Executor,%20android.media.AudioManager.OnPreferredMixerAttributesChangedListener)`. This value cannot be `null`. |
+| `listener` | [AudioManager.OnPreferredMixerAttributesChangedListener](../android/media/AudioManager.OnPreferredMixerAttributesChangedListener.md): the listener to be notified of changes in the preferred mixer attributes, which were added via addOnPreferredMixerAttributesChangedListener. This value cannot be `null`. |
 
 ### requestAudioFocus
 
@@ -3399,15 +3399,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun requestAudioFocus(focusRequest: AudioFocusRequest): Int
 ```
 
-Request audio focus. See the `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` for information about the options available to configure your request, and notification of focus gain and loss. **Note:** If an app targets Android 15 (API level 35) or higher, it cannot request audio focus unless it's the top app or running a foreground service. This requirement is similar to the [requirements for audio playback](../media/media3/session/background-playback.md). If an app requests audio focus when it does not meet these requirements, the method returns `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_FAILED:kotlin.Int`.
+Request audio focus. See the AudioFocusRequest for information about the options available to configure your request, and notification of focus gain and loss. **Note:** If an app targets Android 15 (API level 35) or higher, it cannot request audio focus unless it's the top app or running a foreground service. This requirement is similar to the [requirements for audio playback](../media/media3/session/background-playback.md). If an app requests audio focus when it does not meet these requirements, the method returns `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_FAILED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
-| `focusRequest` | [AudioFocusRequest](AudioFocusRequest.md): a `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` instance used to configure how focus is requested. This value cannot be `null`. |
+| `focusRequest` | [AudioFocusRequest](AudioFocusRequest.md): a AudioFocusRequest instance used to configure how focus is requested. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_FAILED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_GRANTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_DELAYED:kotlin.Int`. Note that the return value is never `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_DELAYED:kotlin.Int` when focus is requested without building the `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` with `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest.Builder#setAcceptsDelayedFocusGain(kotlin.Boolean)` set to `true`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_FAILED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_GRANTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_DELAYED:kotlin.Int`. Note that the return value is never `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_DELAYED:kotlin.Int` when focus is requested without building the AudioFocusRequest with setAcceptsDelayedFocusGain set to `true`. |
 
 | Exceptions ||
 |---|---|
@@ -3426,7 +3426,7 @@ open fun requestAudioFocus(
 ): Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest)`*
+**Deprecated:** *use requestAudioFocus*
 
 Request audio focus. Send a request to obtain the audio focus. **Note:** If an app targets Android 15 (API level 35) or higher, it cannot request audio focus unless it's the top app or running a foreground service. This requirement is similar to the [requirements for audio playback](../media/media3/session/background-playback.md). If an app requests audio focus when it does not meet these requirements, the method returns `https://developer.android.com/reference/kotlin/android/media/AudioManager#AUDIOFOCUS_REQUEST_FAILED:kotlin.Int`.
 
@@ -3451,11 +3451,11 @@ open fun setAllowedCapturePolicy(capturePolicy: Int): Unit
 
 Specifies whether the audio played by this app may or may not be captured by other apps or the system. The default is `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#ALLOW_CAPTURE_BY_ALL:kotlin.Int`. There are multiple ways to set this policy:
 
-- for each track independently, see `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.Builder#setAllowedCapturePolicy(kotlin.Int)`
+- for each track independently, see setAllowedCapturePolicy
 - application-wide at runtime, with this method
 - application-wide at build time, see `allowAudioPlaybackCapture` in the application manifest.
 
-The most restrictive policy is always applied. See `https://developer.android.com/reference/kotlin/android/media/AudioPlaybackCaptureConfiguration` for more details on which audio signals can be captured.
+The most restrictive policy is always applied. See AudioPlaybackCaptureConfiguration for more details on which audio signals can be captured.
 
 <br />
 
@@ -3476,7 +3476,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun setBluetoothA2dpOn(on: Boolean): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/MediaRouter#selectRoute(kotlin.Int,%20android.media.MediaRouter.RouteInfo)` instead.*
+**Deprecated:** *Use selectRoute instead.*
 
 ### setBluetoothScoOn
 
@@ -3507,19 +3507,19 @@ open fun setCommunicationDevice(device: AudioDeviceInfo): Boolean
 
 Selects the audio device that should be used for communication use cases, for instance voice or video calls. This method can be used by voice or video chat applications to select a different audio device than the one selected by default by the platform.
 
-The device selection is expressed as an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` among devices returned by `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAvailableCommunicationDevices()`. Note that only devices in a sink role (AKA output devices, see `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#isSink()`) can be specified. The matching source device is selected automatically by the platform.
+The device selection is expressed as an AudioDeviceInfo among devices returned by getAvailableCommunicationDevices. Note that only devices in a sink role (AKA output devices, see isSink) can be specified. The matching source device is selected automatically by the platform.
 
-The selection is active as long as the requesting application process lives, until `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearCommunicationDevice()` is called or until the device is disconnected. It is therefore important for applications to clear the request when a call ends or the the requesting activity or service is stopped or destroyed.
+The selection is active as long as the requesting application process lives, until clearCommunicationDevice is called or until the device is disconnected. It is therefore important for applications to clear the request when a call ends or the the requesting activity or service is stopped or destroyed.
 
-In case of simultaneous requests by multiple applications the priority is given to the application currently controlling the audio mode (see `https://developer.android.com/reference/kotlin/android/media/AudioManager#setMode(kotlin.Int)`). This is the latest application having selected mode `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_IN_COMMUNICATION:kotlin.Int` or mode `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_IN_CALL:kotlin.Int`. Note that `MODE_IN_CALL` can only be selected by the main telephony application with permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`.
+In case of simultaneous requests by multiple applications the priority is given to the application currently controlling the audio mode (see setMode). This is the latest application having selected mode `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_IN_COMMUNICATION:kotlin.Int` or mode `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_IN_CALL:kotlin.Int`. Note that `MODE_IN_CALL` can only be selected by the main telephony application with permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`.
 
 If the requested devices is not currently available, the request will be rejected and the method will return false.
 
 This API replaces the following deprecated APIs:
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#stopBluetoothSco()`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setSpeakerphoneOn(kotlin.Boolean)`
+- startBluetoothSco
+- stopBluetoothSco
+- setSpeakerphoneOn
 
 #### Example
 
@@ -3607,7 +3607,7 @@ open fun setMode(mode: Int): Unit
 
 Sets the audio mode.
 
-The audio mode encompasses audio routing, volume management AND the behavior of the telephony layer. Therefore this method should only be used by applications that replace the platform-wide management of audio settings or the main telephony application. In particular, the `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_IN_CALL:kotlin.Int` mode should only be used by the telephony application when it places a phone call, as it will cause signals from the radio layer to feed the platform mixer. The `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_ASSISTANT_CONVERSATION:kotlin.Int` should only be used by applications that introduce an interactive assistant communication which would prioritize the audio management around streams with `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#USAGE_ASSISTANT:kotlin.Int`. To use `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_ASSISTANT_CONVERSATION:kotlin.Int`, the calling app must be allowed to manage assistant audio (see `https://developer.android.com/reference/kotlin/android/media/AudioManager#canManageAssistantAudio()`).
+The audio mode encompasses audio routing, volume management AND the behavior of the telephony layer. Therefore this method should only be used by applications that replace the platform-wide management of audio settings or the main telephony application. In particular, the `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_IN_CALL:kotlin.Int` mode should only be used by the telephony application when it places a phone call, as it will cause signals from the radio layer to feed the platform mixer. The `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_ASSISTANT_CONVERSATION:kotlin.Int` should only be used by applications that introduce an interactive assistant communication which would prioritize the audio management around streams with `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#USAGE_ASSISTANT:kotlin.Int`. To use `https://developer.android.com/reference/kotlin/android/media/AudioManager#MODE_ASSISTANT_CONVERSATION:kotlin.Int`, the calling app must be allowed to manage assistant audio (see canManageAssistantAudio).
 
 | Parameters ||
 |---|---|
@@ -3639,20 +3639,20 @@ open fun setPreferredMixerAttributes(
 ): Boolean
 ```
 
-Configures the mixer attributes for a particular `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` over a given `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo`.
+Configures the mixer attributes for a particular AudioAttributes over a given AudioDeviceInfo.
 
-Call `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSupportedMixerAttributes(android.media.AudioDeviceInfo)` to determine which mixer attributes can be used with the given device.
+Call getSupportedMixerAttributes to determine which mixer attributes can be used with the given device.
 
 The ownership of preferred mixer attributes is recognized by uid. When a playback from the same uid is routed to the given audio device when calling this API, the output mixer/stream will be configured with the values previously set via this API.
 
-Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)` to cancel setting mixer attributes for this `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. 
+Use clearPreferredMixerAttributes to cancel setting mixer attributes for this AudioAttributes. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be set. Currently, only `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#USAGE_MEDIA:kotlin.Int` is supported. When playing audio targeted at the given device, use the same attributes for playback. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes whose mixer attributes should be set. Currently, only `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#USAGE_MEDIA:kotlin.Int` is supported. When playing audio targeted at the given device, use the same attributes for playback. This value cannot be `null`. |
 | `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the device to be routed. Currently, only USB device will be allowed. This value cannot be `null`. |
-| `mixerAttributes` | [AudioMixerAttributes](AudioMixerAttributes.md): the preferred mixer attributes. When playing audio targeted at the given device, use the same `https://developer.android.com/reference/kotlin/android/media/AudioFormat` for both playback and the mixer attributes. This value cannot be `null`. |
+| `mixerAttributes` | [AudioMixerAttributes](AudioMixerAttributes.md): the preferred mixer attributes. When playing audio targeted at the given device, use the same AudioFormat for both playback and the mixer attributes. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -3661,8 +3661,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)`
+- getPreferredMixerAttributes
+- clearPreferredMixerAttributes
 
 ### setRingerMode
 
@@ -3676,9 +3676,9 @@ Sets the ringer mode.
 
 Silent mode will mute the volume and will not vibrate. Vibrate mode will mute the volume and vibrate. Normal mode will be audible and may vibrate according to user settings.
 
-This method has no effect if the device implements a fixed volume policy as indicated by `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`. \*
+This method has no effect if the device implements a fixed volume policy as indicated by isVolumeFixed. \*
 
-From N onward, ringer mode adjustments that would toggle Do Not Disturb are not allowed unless the app has been granted Notification Policy Access. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#isNotificationPolicyAccessGranted()`.
+From N onward, ringer mode adjustments that would toggle Do Not Disturb are not allowed unless the app has been granted Notification Policy Access. See isNotificationPolicyAccessGranted.
 
 | Parameters ||
 |---|---|
@@ -3686,8 +3686,8 @@ From N onward, ringer mode adjustments that would toggle Do Not Disturb are not 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`
+- getRingerMode
+- isVolumeFixed
 
 ### setRouting
 
@@ -3722,7 +3722,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun setSpeakerphoneOn(on: Boolean): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearCommunicationDevice()` instead.*
+**Deprecated:** *Use setCommunicationDevice or clearCommunicationDevice instead.*
 
 Sets the speakerphone on or off.
 
@@ -3744,13 +3744,13 @@ open fun setStreamMute(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#adjustStreamVolume(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_MUTE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_UNMUTE:kotlin.Int` instead.*
+**Deprecated:** *Use adjustStreamVolume with `https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_MUTE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/AudioManager#ADJUST_UNMUTE:kotlin.Int` instead.*
 
 Mute or unmute an audio stream.
 
 This method should only be used by applications that replace the platform-wide management of audio settings or the main telephony application.
 
-This method has no effect if the device implements a fixed volume policy as indicated by `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`.
+This method has no effect if the device implements a fixed volume policy as indicated by isVolumeFixed.
 
 This method was deprecated in API level 22. Prior to API level 22 this method had significantly different behavior and should be used carefully. The following applies only to pre-22 platforms:
 
@@ -3765,7 +3765,7 @@ This method was deprecated in API level 22. Prior to API level 22 this method ha
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`
+- isVolumeFixed
 
 ### setStreamSolo
 
@@ -3792,7 +3792,7 @@ Do not use. This method has been deprecated and is now a no-op. #requestAudioFoc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`
+- isVolumeFixed
 
 ### setStreamVolume
 
@@ -3808,14 +3808,14 @@ open fun setStreamVolume(
 
 Sets the volume index for a particular stream.
 
-This method has no effect if the device implements a fixed volume policy as indicated by `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`.
+This method has no effect if the device implements a fixed volume policy as indicated by isVolumeFixed.
 
-From N onward, volume adjustments that would toggle Do Not Disturb are not allowed unless the app has been granted Notification Policy Access. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#isNotificationPolicyAccessGranted()`.
+From N onward, volume adjustments that would toggle Do Not Disturb are not allowed unless the app has been granted Notification Policy Access. See isNotificationPolicyAccessGranted.
 
 | Parameters ||
 |---|---|
 | `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The stream whose volume index should be set. |
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The volume index to set. See `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMaxVolume(kotlin.Int)` for the largest valid value. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The volume index to set. See getStreamMaxVolume for the largest valid value. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioManager#FLAG_SHOW_UI:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#FLAG_ALLOW_RINGER_MODES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#FLAG_PLAY_SOUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#FLAG_REMOVE_SOUND_AND_VIBRATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioManager#FLAG_VIBRATE:kotlin.Int` |
 | --- | --- |
 
@@ -3825,9 +3825,9 @@ From N onward, volume adjustments that would toggle Do Not Disturb are not allow
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMaxVolume(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamVolume(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#isVolumeFixed()`
+- getStreamMaxVolume
+- getStreamVolume
+- isVolumeFixed
 
 ### setSurroundFormatEnabled
 
@@ -3866,7 +3866,7 @@ open fun setVibrateSetting(
 ): Unit
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Sets the setting for when the vibrate type should vibrate.
 
@@ -3879,8 +3879,8 @@ This method should only be used by applications that replace the platform-wide m
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#shouldVibrate(kotlin.Int)`
+- getVibrateSetting
+- shouldVibrate
 
 ### setWiredHeadsetOn
 
@@ -3908,7 +3908,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 open fun shouldVibrate(vibrateType: Int): Boolean
 ```
 
-**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()`.*
+**Deprecated:** *Applications should maintain their own vibrate policy based on current ringer mode that can be queried via getRingerMode.*
 
 Returns whether a particular type should vibrate according to user settings and the current ringer mode.
 
@@ -3924,8 +3924,8 @@ This shouldn't be needed by most clients that use notifications to vibrate. The 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#setVibrateSetting(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)`
+- setVibrateSetting
+- getVibrateSetting
 
 ### startBluetoothSco
 
@@ -3936,7 +3936,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun startBluetoothSco(): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)` instead.*
+**Deprecated:** *Use setCommunicationDevice instead.*
 
 Start bluetooth SCO audio connection.
 
@@ -3950,7 +3950,7 @@ As the ACTION_SCO_AUDIO_STATE_UPDATED intent is sticky, the application can chec
 
 Unless the connection is already active as described above, the state will always transition from DISCONNECTED to CONNECTING and then either to CONNECTED if the connection succeeds or back to DISCONNECTED if the connection fails (e.g no headset is connected).
 
-When finished with the SCO connection or if the establishment fails, the application must call `https://developer.android.com/reference/kotlin/android/media/AudioManager#stopBluetoothSco()` to clear the request and turn down the bluetooth connection.
+When finished with the SCO connection or if the establishment fails, the application must call stopBluetoothSco to clear the request and turn down the bluetooth connection.
 
 Even if a SCO connection is established, the following restrictions apply on audio output streams so that they can be routed to SCO headset:
 
@@ -3968,7 +3968,7 @@ Note that the phone application always has the priority on the usage of the SCO 
 NOTE: up to and including API version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR1:kotlin.Int`, this method initiates a virtual voice call to the bluetooth headset. After API version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int` only a raw SCO audio connection is established.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#stopBluetoothSco()`
+- stopBluetoothSco
 - `https://developer.android.com/reference/kotlin/android/media/AudioManager#ACTION_SCO_AUDIO_STATE_UPDATED:kotlin.String`
 
 ### stopBluetoothSco
@@ -3980,16 +3980,16 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun stopBluetoothSco(): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/AudioManager#clearCommunicationDevice()` instead.*
+**Deprecated:** *Use clearCommunicationDevice instead.*
 
 Stop bluetooth SCO audio connection.
 
 Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS:kotlin.String`.
 
-This method must be called by applications having requested the use of bluetooth SCO audio with `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()` when finished with the SCO connection or if connection fails.
+This method must be called by applications having requested the use of bluetooth SCO audio with startBluetoothSco when finished with the SCO connection or if connection fails.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#startBluetoothSco()`
+- startBluetoothSco
 
 ### unloadSoundEffects
 
@@ -4009,11 +4009,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterAudioDeviceCallback(callback: AudioDeviceCallback!): Unit
 ```
 
-Unregisters an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object which has been previously registered to receive notifications of changes to the set of connected audio devices.
+Unregisters an AudioDeviceCallback object which has been previously registered to receive notifications of changes to the set of connected audio devices.
 
 | Parameters ||
 |---|---|
-| `callback` | [AudioDeviceCallback](AudioDeviceCallback.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object that was previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioDeviceCallback(android.media.AudioDeviceCallback,%20android.os.Handler)` to be unregistered. |
+| `callback` | [AudioDeviceCallback](AudioDeviceCallback.md)!: The AudioDeviceCallback object that was previously registered with registerAudioDeviceCallback to be unregistered. |
 
 ### unregisterAudioPlaybackCallback
 
@@ -4023,7 +4023,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterAudioPlaybackCallback(cb: AudioManager.AudioPlaybackCallback): Unit
 ```
 
-Unregister an audio playback callback previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback,%20android.os.Handler)`.
+Unregister an audio playback callback previously registered with registerAudioPlaybackCallback.
 
 | Parameters ||
 |---|---|
@@ -4037,7 +4037,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterAudioRecordingCallback(cb: AudioManager.AudioRecordingCallback): Unit
 ```
 
-Unregister an audio recording callback previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,%20android.os.Handler)`.
+Unregister an audio recording callback previously registered with registerAudioRecordingCallback.
 
 | Parameters ||
 |---|---|
@@ -4052,13 +4052,13 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun unregisterMediaButtonEventReceiver(eventReceiver: PendingIntent!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSession` instead.*
+**Deprecated:** *Use MediaSession instead.*
 
 Unregister the receiver of MEDIA_BUTTON intents.
 
 | Parameters ||
 |---|---|
-| `eventReceiver` | [PendingIntent](../android.app/PendingIntent.md)!: same PendingIntent that was registed with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.app.PendingIntent)`. |
+| `eventReceiver` | [PendingIntent](../android.app/PendingIntent.md)!: same PendingIntent that was registed with registerMediaButtonEventReceiver. |
 
 ### unregisterMediaButtonEventReceiver
 
@@ -4069,13 +4069,13 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun unregisterMediaButtonEventReceiver(eventReceiver: ComponentName!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSession` instead.*
+**Deprecated:** *Use MediaSession instead.*
 
 Unregister the receiver of MEDIA_BUTTON intents.
 
 | Parameters ||
 |---|---|
-| `eventReceiver` | [ComponentName](../android.content/ComponentName.md)!: identifier of a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that was registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.content.ComponentName)`. |
+| `eventReceiver` | [ComponentName](../android.content/ComponentName.md)!: identifier of a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that was registered with registerMediaButtonEventReceiver. |
 
 ### unregisterRemoteControlClient
 
@@ -4086,7 +4086,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun unregisterRemoteControlClient(rcClient: RemoteControlClient!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSession` instead.*
+**Deprecated:** *Use MediaSession instead.*
 
 Unregisters the remote control client that was providing information to display on the remote controls.
 
@@ -4096,7 +4096,7 @@ Unregisters the remote control client that was providing information to display 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerRemoteControlClient(android.media.RemoteControlClient)`
+- registerRemoteControlClient
 
 ### unregisterRemoteController
 
@@ -4107,9 +4107,9 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun unregisterRemoteController(rctlr: RemoteController!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager#removeOnActiveSessionsChangedListener(android.media.session.MediaSessionManager.OnActiveSessionsChangedListener)` instead.*
+**Deprecated:** *Use removeOnActiveSessionsChangedListener instead.*
 
-Unregisters a `https://developer.android.com/reference/kotlin/android/media/RemoteController`, causing it to no longer receive media metadata and playback state information, and no longer be capable of controlling playback.
+Unregisters a RemoteController, causing it to no longer receive media metadata and playback state information, and no longer be capable of controlling playback.
 
 | Parameters ||
 |---|---|

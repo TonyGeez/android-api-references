@@ -12,46 +12,46 @@ open class ImageWriter : AutoCloseable
 
 The ImageWriter class allows an application to produce Image data into a `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, and have it be consumed by another component like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`.
 
-Several Android API classes can provide input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` objects for ImageWriter to produce data into, including `https://developer.android.com/reference/kotlin/android/media/MediaCodec` (encoder), `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.html#` (reprocessing input), `https://developer.android.com/reference/kotlin/android/media/ImageReader`, etc.
+Several Android API classes can provide input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` objects for ImageWriter to produce data into, including MediaCodec (encoder), `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.html#` (reprocessing input), ImageReader, etc.
 
-The input Image data is encapsulated in `https://developer.android.com/reference/kotlin/android/media/Image` objects. To produce Image data into a destination `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, the application can get an input Image via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` then write Image data into it. Multiple such `https://developer.android.com/reference/kotlin/android/media/Image` objects can be dequeued at the same time and queued back in any order, up to the number specified by the `maxImages` constructor parameter.
+The input Image data is encapsulated in Image objects. To produce Image data into a destination `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, the application can get an input Image via dequeueInputImage then write Image data into it. Multiple such Image objects can be dequeued at the same time and queued back in any order, up to the number specified by the `maxImages` constructor parameter.
 
-If the application already has an Image from `https://developer.android.com/reference/kotlin/android/media/ImageReader`, the application can directly queue this Image into the ImageWriter (via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)`), potentially with zero buffer copies. This even works if the image format of the ImageWriter is `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`, and prior to Android P is the only way to enqueue images into such an ImageWriter. Starting in Android P private images may also be accessed through their hardware buffers (when available) through the `https://developer.android.com/reference/kotlin/android/media/Image#getHardwareBuffer()` method. Attempting to access the planes of a private image, will return an empty array.
+If the application already has an Image from ImageReader, the application can directly queue this Image into the ImageWriter (via queueInputImage), potentially with zero buffer copies. This even works if the image format of the ImageWriter is `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`, and prior to Android P is the only way to enqueue images into such an ImageWriter. Starting in Android P private images may also be accessed through their hardware buffers (when available) through the getHardwareBuffer method. Attempting to access the planes of a private image, will return an empty array.
 
-Once new input Images are queued into an ImageWriter, it's up to the downstream components (e.g. `https://developer.android.com/reference/kotlin/android/media/ImageReader` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`) to consume the Images. If the downstream components cannot consume the Images at least as fast as the ImageWriter production rate, the `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` call will eventually block and the application will have to drop input frames.
+Once new input Images are queued into an ImageWriter, it's up to the downstream components (e.g. ImageReader or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`) to consume the Images. If the downstream components cannot consume the Images at least as fast as the ImageWriter production rate, the dequeueInputImage call will eventually block and the application will have to drop input frames.
 
-If the consumer component that provided the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` abandons the `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)` or `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` an `https://developer.android.com/reference/kotlin/android/media/Image` will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
+If the consumer component that provided the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` abandons the `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, queueInputImage or dequeueInputImage an Image will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/media/ImageWriter#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder` Builder class for ImageWriter objects. |
 | abstract | `https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener` ImageWriter callback interface, used to to asynchronously notify the application of various ImageWriter events. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#close()()` Free up all the resources associated with this ImageWriter. |
-| open [Image](Image.md)! | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()()` Dequeue the next available input Image for the application to produce data into. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getDataSpace()()` Get the ImageWriter dataspace. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Free up all the resources associated with this ImageWriter. |
+| open [Image](Image.md)! | dequeueInputImage Dequeue the next available input Image for the application to produce data into. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDataSpace Get the ImageWriter dataspace. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getFormat()()` Get the ImageWriter format. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getHardwareBufferFormat()()` Get the ImageWriter hardwareBuffer format. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getHeight()()` The height of `https://developer.android.com/reference/kotlin/android/media/Image`, in pixels. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFormat Get the ImageWriter format. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHardwareBufferFormat Get the ImageWriter hardwareBuffer format. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHeight The height of Image, in pixels. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getMaxImages()()` Maximum number of Images that can be dequeued from the ImageWriter simultaneously (for example, with `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`). |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getUsage()()` Get the ImageWriter usage flag. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getWidth()()` The width of `https://developer.android.com/reference/kotlin/android/media/Image`, in pixels. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxImages Maximum number of Images that can be dequeued from the ImageWriter simultaneously (for example, with dequeueInputImage). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getUsage Get the ImageWriter usage flag. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWidth The width of Image, in pixels. |
 | --- | --- |
-| open static [ImageWriter](ImageWriter.md) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#newInstance(android.view.Surface,%20kotlin.Int)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new ImageWriter. |
-| open static [ImageWriter](ImageWriter.md) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#newInstance(android.view.Surface,%20kotlin.Int,%20kotlin.Int)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#, maxImages: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new ImageWriter with given number of max Images and format. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)(image: https://developer.android.com/reference/kotlin/android/media/Image!)` Queue an input `https://developer.android.com/reference/kotlin/android/media/Image` back to ImageWriter for the downstream consumer to access. |
+| open static [ImageWriter](ImageWriter.md) | newInstance Create a new ImageWriter. |
+| open static [ImageWriter](ImageWriter.md) | newInstance Create a new ImageWriter with given number of max Images and format. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queueInputImage Queue an input Image back to ImageWriter for the downstream consumer to access. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#setOnImageReleasedListener(android.media.ImageWriter.OnImageReleasedListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Register a listener to be invoked when an input Image is returned to the ImageWriter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnImageReleasedListener Register a listener to be invoked when an input Image is returned to the ImageWriter. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/ImageWriter#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public methods
 
@@ -65,7 +65,7 @@ open fun close(): Unit
 
 Free up all the resources associated with this ImageWriter.
 
-After calling this method, this ImageWriter cannot be used. Calling any methods on this ImageWriter and Images previously provided by `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`, and attempting to write into `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` returned by an earlier `https://developer.android.com/reference/kotlin/android/media/Image.Plane#getBuffer()` call will have undefined behavior.
+After calling this method, this ImageWriter cannot be used. Calling any methods on this ImageWriter and Images previously provided by dequeueInputImage will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`, and attempting to write into `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` returned by an earlier getBuffer call will have undefined behavior.
 
 | Exceptions ||
 |---|---|
@@ -81,11 +81,11 @@ open fun dequeueInputImage(): Image!
 
 Dequeue the next available input Image for the application to produce data into.
 
-This method requests a new input Image from ImageWriter. The application owns this Image after this call. Once the application fills the Image data, it is expected to return this Image back to ImageWriter for downstream consumer components (e.g. `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`) to consume. The Image can be returned to ImageWriter via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)` or `https://developer.android.com/reference/kotlin/android/media/Image#close()`.
+This method requests a new input Image from ImageWriter. The application owns this Image after this call. Once the application fills the Image data, it is expected to return this Image back to ImageWriter for downstream consumer components (e.g. `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#`) to consume. The Image can be returned to ImageWriter via queueInputImage or close.
 
-This call will block if all available input images have been queued by the application and the downstream consumer has not yet consumed any. When an Image is consumed by the downstream consumer and released, an `https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener#onImageReleased(android.media.ImageWriter)` callback will be fired, which indicates that there is one input Image available. For non- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` formats ( `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getFormat()` != `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`), it is recommended to dequeue the next Image only after this callback is fired, in the steady state.
+This call will block if all available input images have been queued by the application and the downstream consumer has not yet consumed any. When an Image is consumed by the downstream consumer and released, an onImageReleased callback will be fired, which indicates that there is one input Image available. For non- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` formats ( getFormat != `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`), it is recommended to dequeue the next Image only after this callback is fired, in the steady state.
 
-If the format of ImageWriter is `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` ( `https://developer.android.com/reference/kotlin/android/media/ImageWriter#getFormat()` == `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`), the image buffer is accessible to the application only through the hardware buffer obtained through `https://developer.android.com/reference/kotlin/android/media/Image#getHardwareBuffer()`. (On Android versions prior to P, dequeueing private buffers will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` to be thrown). Alternatively, the application can acquire images from some other component (e.g. an `https://developer.android.com/reference/kotlin/android/media/ImageReader`), and queue them directly to this ImageWriter via the `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)` method.
+If the format of ImageWriter is `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` ( getFormat == `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`), the image buffer is accessible to the application only through the hardware buffer obtained through getHardwareBuffer. (On Android versions prior to P, dequeueing private buffers will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` to be thrown). Alternatively, the application can acquire images from some other component (e.g. an ImageReader), and queue them directly to this ImageWriter via the queueInputImage method.
 
 | Return ||
 |---|---|
@@ -97,8 +97,8 @@ If the format of ImageWriter is `https://developer.android.com/reference/kotlin/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)`
-- `https://developer.android.com/reference/kotlin/android/media/Image#close()`
+- queueInputImage
+- close
 
 ### getDataSpace
 
@@ -110,7 +110,7 @@ open fun getDataSpace(): Int
 
 Get the ImageWriter dataspace.
 
-Use this function if the ImageWriter instance is created by builder pattern `ImageWriter.Builder` and `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder#setDataSpace(kotlin.Int)`.
+Use this function if the ImageWriter instance is created by builder pattern `ImageWriter.Builder` and setDataSpace.
 
 | Return ||
 |---|---|
@@ -126,7 +126,7 @@ open fun getFormat(): Int
 
 Get the ImageWriter format.
 
-This format may be different than the Image format returned by `https://developer.android.com/reference/kotlin/android/media/Image#getFormat()`. However, if the ImageWriter format is `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`, calling `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
+This format may be different than the Image format returned by getFormat. However, if the ImageWriter format is `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`, calling dequeueInputImage will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 
 | Return ||
 |---|---|
@@ -142,7 +142,7 @@ open fun getHardwareBufferFormat(): Int
 
 Get the ImageWriter hardwareBuffer format.
 
-Use this function if the ImageWriter instance is created by builder pattern `ImageWriter.Builder` and using `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder#setHardwareBufferFormat(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder#setDataSpace(kotlin.Int)`.
+Use this function if the ImageWriter instance is created by builder pattern `ImageWriter.Builder` and using setHardwareBufferFormat and setDataSpace.
 
 | Return ||
 |---|---|
@@ -156,9 +156,9 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getHeight(): Int
 ```
 
-The height of `https://developer.android.com/reference/kotlin/android/media/Image`, in pixels.
+The height of Image, in pixels.
 
-If `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder#setWidthAndHeight(kotlin.Int,%20kotlin.Int)` is not called, the default height of the Image depends on the Surface provided by customer end-point.
+If setWidthAndHeight is not called, the default height of the Image depends on the Surface provided by customer end-point.
 
 | Return ||
 |---|---|
@@ -172,11 +172,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getMaxImages(): Int
 ```
 
-Maximum number of Images that can be dequeued from the ImageWriter simultaneously (for example, with `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`).
+Maximum number of Images that can be dequeued from the ImageWriter simultaneously (for example, with dequeueInputImage).
 
-An Image is considered dequeued after it's returned by `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` from ImageWriter, and until the Image is sent back to ImageWriter via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)`, or `https://developer.android.com/reference/kotlin/android/media/Image#close()`.
+An Image is considered dequeued after it's returned by dequeueInputImage from ImageWriter, and until the Image is sent back to ImageWriter via queueInputImage, or close.
 
-Attempting to dequeue more than `maxImages` concurrently will result in the `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` function throwing an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
+Attempting to dequeue more than `maxImages` concurrently will result in the dequeueInputImage function throwing an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 
 | Return ||
 |---|---|
@@ -184,9 +184,9 @@ Attempting to dequeue more than `maxImages` concurrently will result in the `htt
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`
-- `https://developer.android.com/reference/kotlin/android/media/ImageWriter#queueInputImage(android.media.Image)`
-- `https://developer.android.com/reference/kotlin/android/media/Image#close()`
+- dequeueInputImage
+- queueInputImage
+- close
 
 ### getUsage
 
@@ -198,7 +198,7 @@ open fun getUsage(): Long
 
 Get the ImageWriter usage flag.
 
-It is not recommended to use this function if `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder#setUsage(kotlin.Long)` is not called. Invalid usage value will be returned if so.
+It is not recommended to use this function if setUsage is not called. Invalid usage value will be returned if so.
 
 | Return ||
 |---|---|
@@ -212,9 +212,9 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getWidth(): Int
 ```
 
-The width of `https://developer.android.com/reference/kotlin/android/media/Image`, in pixels.
+The width of Image, in pixels.
 
-If `https://developer.android.com/reference/kotlin/android/media/ImageWriter.Builder#setWidthAndHeight(kotlin.Int,%20kotlin.Int)` is not called, the default width of the Image depends on the Surface provided by customer end-point.
+If setWidthAndHeight is not called, the default width of the Image depends on the Surface provided by customer end-point.
 
 | Return ||
 |---|---|
@@ -233,18 +233,18 @@ open static fun newInstance(
 
 Create a new ImageWriter.
 
-The `maxImages` parameter determines the maximum number of `https://developer.android.com/reference/kotlin/android/media/Image` objects that can be be dequeued from the `ImageWriter` simultaneously. Requesting more buffers will use up more memory, so it is important to use only the minimum number necessary.
+The `maxImages` parameter determines the maximum number of Image objects that can be be dequeued from the `ImageWriter` simultaneously. Requesting more buffers will use up more memory, so it is important to use only the minimum number necessary.
 
 The input Image size and format depend on the Surface that is provided by the downstream consumer end-point.
 
 | Parameters ||
 |---|---|
 | `surface` | [Surface](../android.view/Surface.md): The destination Surface this writer produces Image data into. This value cannot be `null`. |
-| `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of Images the user will want to access simultaneously for producing Image data. This should be as small as possible to limit memory use. Once maxImages Images are dequeued by the user, one of them has to be queued back before a new Image can be dequeued for access via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`. Value is 1 or greater |
+| `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of Images the user will want to access simultaneously for producing Image data. This should be as small as possible to limit memory use. Once maxImages Images are dequeued by the user, one of them has to be queued back before a new Image can be dequeued for access via dequeueInputImage. Value is 1 or greater |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/ImageWriter#` | a new ImageWriter instance. This value cannot be `null`. |
+| ImageWriter | a new ImageWriter instance. This value cannot be `null`. |
 
 ### newInstance
 
@@ -260,7 +260,7 @@ open static fun newInstance(
 
 Create a new ImageWriter with given number of max Images and format.
 
-The `maxImages` parameter determines the maximum number of `https://developer.android.com/reference/kotlin/android/media/Image` objects that can be be dequeued from the `ImageWriter` simultaneously. Requesting more buffers will use up more memory, so it is important to use only the minimum number necessary.
+The `maxImages` parameter determines the maximum number of Image objects that can be be dequeued from the `ImageWriter` simultaneously. Requesting more buffers will use up more memory, so it is important to use only the minimum number necessary.
 
 The format specifies the image format of this ImageWriter. The format from the `surface` will be overridden with this format. For example, if the surface is obtained from a `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`, the default format may be `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int`. If the application creates an ImageWriter with this surface and `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int`, this ImageWriter will be able to operate with `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` Images.
 
@@ -271,13 +271,13 @@ The input Image size depends on the Surface that is provided by the downstream c
 | Parameters ||
 |---|---|
 | `surface` | [Surface](../android.view/Surface.md): The destination Surface this writer produces Image data into. This value cannot be `null`. |
-| `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of Images the user will want to access simultaneously for producing Image data. This should be as small as possible to limit memory use. Once maxImages Images are dequeued by the user, one of them has to be queued back before a new Image can be dequeued for access via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`. Value is 1 or greater |
+| `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of Images the user will want to access simultaneously for producing Image data. This should be as small as possible to limit memory use. Once maxImages Images are dequeued by the user, one of them has to be queued back before a new Image can be dequeued for access via dequeueInputImage. Value is 1 or greater |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of this ImageWriter. It can be any valid format specified by `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#`. |
 | --- | --- |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/ImageWriter#` | a new ImageWriter instance. This value cannot be `null`. |
+| ImageWriter | a new ImageWriter instance. This value cannot be `null`. |
 
 ### queueInputImage
 
@@ -287,15 +287,15 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun queueInputImage(image: Image!): Unit
 ```
 
-Queue an input `https://developer.android.com/reference/kotlin/android/media/Image` back to ImageWriter for the downstream consumer to access.
+Queue an input Image back to ImageWriter for the downstream consumer to access.
 
-The input `https://developer.android.com/reference/kotlin/android/media/Image` could be from ImageReader (acquired via `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireNextImage()` or `https://developer.android.com/reference/kotlin/android/media/ImageReader#acquireLatestImage()`), or from this ImageWriter (acquired via `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`). In the former case, the Image data will be moved to this ImageWriter. Note that the Image properties (size, format, strides, etc.) must be the same as the properties of the images dequeued from this ImageWriter. In the latter case, the application has filled the input image with data. This method then passes the filled buffer to the downstream consumer. In both cases, it's up to the caller to ensure that the Image timestamp (in nanoseconds) is correctly set, as the downstream component may want to use it to indicate the Image data capture time.
+The input Image could be from ImageReader (acquired via acquireNextImage or acquireLatestImage), or from this ImageWriter (acquired via dequeueInputImage). In the former case, the Image data will be moved to this ImageWriter. Note that the Image properties (size, format, strides, etc.) must be the same as the properties of the images dequeued from this ImageWriter. In the latter case, the application has filled the input image with data. This method then passes the filled buffer to the downstream consumer. In both cases, it's up to the caller to ensure that the Image timestamp (in nanoseconds) is correctly set, as the downstream component may want to use it to indicate the Image data capture time.
 
-After this method is called and the downstream consumer consumes and releases the Image, an `https://developer.android.com/reference/kotlin/android/media/ImageWriter.OnImageReleasedListener#onImageReleased(android.media.ImageWriter)` callback will fire. The application can use this callback to avoid sending Images faster than the downstream consumer processing rate in steady state.
+After this method is called and the downstream consumer consumes and releases the Image, an onImageReleased callback will fire. The application can use this callback to avoid sending Images faster than the downstream consumer processing rate in steady state.
 
-Passing in an Image from some other component (e.g. an `https://developer.android.com/reference/kotlin/android/media/ImageReader`) requires a free input Image from this ImageWriter as the destination. In this case, this call will block, as `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()` does, if there are no free Images available. To avoid blocking, the application should ensure that there is at least one free Image available in this ImageWriter before calling this method.
+Passing in an Image from some other component (e.g. an ImageReader) requires a free input Image from this ImageWriter as the destination. In this case, this call will block, as dequeueInputImage does, if there are no free Images available. To avoid blocking, the application should ensure that there is at least one free Image available in this ImageWriter before calling this method.
 
-After this call, the input Image is no longer valid for further access, as if the Image is `https://developer.android.com/reference/kotlin/android/media/Image#close()`. Attempting to access the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` returned by an earlier `https://developer.android.com/reference/kotlin/android/media/Image.Plane#getBuffer()` call will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
+After this call, the input Image is no longer valid for further access, as if the Image is close. Attempting to access the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` returned by an earlier getBuffer call will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 
 | Parameters ||
 |---|---|
@@ -307,7 +307,7 @@ After this call, the input Image is no longer valid for further access, as if th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/ImageWriter#dequeueInputImage()`
+- dequeueInputImage
 
 ### setOnImageReleasedListener
 

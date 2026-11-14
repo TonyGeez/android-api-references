@@ -17,25 +17,25 @@ class LoadSdkException : Exception, Parcelable
 | | | ↳ | [android.app.sdksandbox.LoadSdkException](LoadSdkException.md) |
 | --- | --- | --- | --- |
 
-Exception thrown by `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+Exception thrown by loadSdk
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#LoadSdkException(kotlin.Throwable,%20android.os.Bundle)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html, extraInfo: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Initializes a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#` with a Throwable and a Bundle. |
+| LoadSdkException Initializes a LoadSdkException with a Throwable and a Bundle. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#getExtraInformation()()` Returns the extra error information this exception was constructed with. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#getLoadSdkErrorCode()()` Returns the result code this exception was constructed with. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Bundle](../android.os/Bundle.md) | getExtraInformation Returns the extra error information this exception was constructed with. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLoadSdkErrorCode Returns the result code this exception was constructed with. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#writeToParcel(android.os.Parcel,%20kotlin.Int)(destination: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -54,11 +54,11 @@ LoadSdkException(
     extraInfo: Bundle)
 ```
 
-Initializes a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException#` with a Throwable and a Bundle.
+Initializes a LoadSdkException with a Throwable and a Bundle.
 
 | Parameters ||
 |---|---|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html): The cause of the exception, which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method. This value cannot be `null`. |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html): The cause of the exception, which is saved for later retrieval by the getCause method. This value cannot be `null`. |
 | `extraInfo` | [Bundle](../android.os/Bundle.md): Extra error information. This is empty if there is no such information. This value cannot be `null`. |
 
 ## Public methods
@@ -73,7 +73,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

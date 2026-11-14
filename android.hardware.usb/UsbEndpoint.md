@@ -13,29 +13,29 @@ open class UsbEndpoint : Parcelable
 | --- | --- |
 | ↳ | [android.hardware.usb.UsbEndpoint](UsbEndpoint.md) |
 
-A class representing an endpoint on a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface`. Endpoints are the channels for sending and receiving data over USB. Typically bulk endpoints are used for sending non-trivial amounts of data. Interrupt endpoints are used for sending small amounts of data, typically events, separately from the main data streams. The endpoint zero is a special endpoint for control messages sent from the host to device. Isochronous endpoints are currently unsupported.
+A class representing an endpoint on a UsbInterface. Endpoints are the channels for sending and receiving data over USB. Typically bulk endpoints are used for sending non-trivial amounts of data. Interrupt endpoints are used for sending small amounts of data, typically events, separately from the main data streams. The endpoint zero is a special endpoint for control messages sent from the host to device. Isochronous endpoints are currently unsupported.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getAddress()()` Returns the endpoint's address field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getAttributes()()` Returns the endpoint's attributes field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAddress Returns the endpoint's address field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAttributes Returns the endpoint's attributes field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getDirection()()` Returns the endpoint's direction. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getEndpointNumber()()` Extracts the endpoint's endpoint number from its address |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getInterval()()` Returns the endpoint's interval field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDirection Returns the endpoint's direction. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getEndpointNumber Extracts the endpoint's endpoint number from its address |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInterval Returns the endpoint's interval field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getMaxPacketSize()()` Returns the endpoint's maximum packet size. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getType()()` Returns the endpoint's type. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#toString()()` Returns a string representation of the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxPacketSize Returns the endpoint's maximum packet size. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType Returns the endpoint's type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -51,7 +51,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -65,7 +65,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun getAddress(): Int
 ```
 
-Returns the endpoint's address field. The address is a bitfield containing both the endpoint number as well as the data direction of the endpoint. the endpoint number and direction can also be accessed via `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getEndpointNumber()` and `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint#getDirection()`.
+Returns the endpoint's address field. The address is a bitfield containing both the endpoint number as well as the data direction of the endpoint. the endpoint number and direction can also be accessed via getEndpointNumber and getDirection.
 
 | Return ||
 |---|---|

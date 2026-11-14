@@ -22,11 +22,11 @@ A class used to wrap an access control profile identifiers.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/AccessControlProfileId#AccessControlProfileId(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a new object holding a numerical identifier. |
+| AccessControlProfileId Constructs a new object holding a numerical identifier. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/AccessControlProfileId#getId()()` Gets the numerical identifier wrapped by this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId Gets the numerical identifier wrapped by this object. |
 
 ## Public constructors
 

@@ -18,15 +18,15 @@ open class ViewOverlay
 
 An overlay is an extra layer that sits on top of a View (the "host view") which is drawn after all other content in that view (including children, if the view is a ViewGroup). Interaction with the overlay layer is done by adding and removing drawables.
 
-An overlay requested from a ViewGroup is of type `https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay`, which also supports adding and removing views.
+An overlay requested from a ViewGroup is of type ViewGroupOverlay, which also supports adding and removing views.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#add(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Adds a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to the overlay. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#clear()()` Removes all content from the overlay. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#remove(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Removes the specified `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` from the overlay. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | add Adds a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to the overlay. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Removes all content from the overlay. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | remove Removes the specified `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` from the overlay. |
 | --- | --- |
 
 ## Public methods
@@ -47,7 +47,7 @@ Adds a `https://developer.android.com/reference/kotlin/android/graphics/drawable
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#remove(android.graphics.drawable.Drawable)`
+- remove
 
 ### clear
 
@@ -67,7 +67,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun remove(drawable: Drawable): Unit
 ```
 
-Removes the specified `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` from the overlay. Removing a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that was not added with `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#add(android.graphics.drawable.Drawable)` is a no-op. Passing `null` parameter will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` being thrown.
+Removes the specified `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` from the overlay. Removing a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that was not added with add is a no-op. Passing `null` parameter will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` being thrown.
 
 | Parameters ||
 |---|---|
@@ -75,4 +75,4 @@ Removes the specified `https://developer.android.com/reference/kotlin/android/gr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewOverlay#add(android.graphics.drawable.Drawable)`
+- add

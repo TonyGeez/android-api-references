@@ -29,48 +29,48 @@ Represents a contextual mode of the user interface. Action modes can be used to 
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#DEFAULT_HIDE_DURATION:kotlin.Int` Default value to hide the action mode for `https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#getDefaultActionModeHideDuration()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#DEFAULT_HIDE_DURATION:kotlin.Int` Default value to hide the action mode for getDefaultActionModeHideDuration. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_FLOATING:kotlin.Int` The action mode is treated as a Floating Toolbar. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_PRIMARY:kotlin.Int` The action mode is treated as a Primary mode. |
 | --- | --- |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/ActionMode#ActionMode()()` <br /> |
+| ActionMode <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#clearTextSelection()()` Clear the text selection. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#finish()()` Finish and close this action mode. |
-| abstract [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getCustomView()()` Returns the current custom view for this action mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearTextSelection Clear the text selection. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finish Finish and close this action mode. |
+| abstract [View](View.md)! | getCustomView Returns the current custom view for this action mode. |
 | --- | --- |
-| abstract [Menu](Menu.md)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getMenu()()` Returns the menu of actions that this action mode presents. |
-| abstract [MenuInflater](MenuInflater.md)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getMenuInflater()()` Returns a `https://developer.android.com/reference/kotlin/android/view/MenuInflater` with the ActionMode's context. |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getSubtitle()()` Returns the current subtitle of this action mode. |
+| abstract [Menu](Menu.md)! | getMenu Returns the menu of actions that this action mode presents. |
+| abstract [MenuInflater](MenuInflater.md)! | getMenuInflater Returns a MenuInflater with the ActionMode's context. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getSubtitle Returns the current subtitle of this action mode. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getTag()()` Retrieve the tag object associated with this ActionMode. |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getTitle()()` Returns the current title of this action mode. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getTitleOptionalHint()()` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getTag Retrieve the tag object associated with this ActionMode. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getTitle Returns the current title of this action mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getTitleOptionalHint <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#getType()()` Returns the type for this action mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#hide(kotlin.Long)(duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Hide the action mode view from obstructing the content below for a short duration. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#invalidate()()` Invalidate the action mode and refresh menu content. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType Returns the type for this action mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | hide Hide the action mode view from obstructing the content below for a short duration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | invalidate Invalidate the action mode and refresh menu content. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#invalidateContentRect()()` Invalidate the content rect associated to this ActionMode. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#isTitleOptional()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#onWindowFocusChanged(kotlin.Boolean)(hasWindowFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the window containing the view that started this action mode gains or loses focus. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | invalidateContentRect Invalidate the content rect associated to this ActionMode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTitleOptional <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onWindowFocusChanged Called when the window containing the view that started this action mode gains or loses focus. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setCustomView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` Set a custom view for this action mode. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setSubtitle(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the subtitle of the action mode. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setSubtitle(kotlin.CharSequence)(subtitle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set the subtitle of the action mode. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCustomView Set a custom view for this action mode. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSubtitle Set the subtitle of the action mode. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSubtitle Set the subtitle of the action mode. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTag(kotlin.Any)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Set a tag object associated with this ActionMode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTextSelection(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)` Forward text selection data for ActionMode to process. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitle(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the title of the action mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTag Set a tag object associated with this ActionMode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTextSelection Forward text selection data for ActionMode to process. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTitle Set the title of the action mode. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitle(kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Set the title of the action mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitleOptionalHint(kotlin.Boolean)(titleOptional: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether or not the title/subtitle display for this action mode is optional. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionMode#setType(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a type for this action mode. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTitle Set the title of the action mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTitleOptionalHint Set whether or not the title/subtitle display for this action mode is optional. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setType Set a type for this action mode. |
 | --- | --- |
 
 ## Constants
@@ -83,7 +83,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val DEFAULT_HIDE_DURATION: Int
 ```
 
-Default value to hide the action mode for `https://developer.android.com/reference/kotlin/android/view/ViewConfiguration#getDefaultActionModeHideDuration()`.
+Default value to hide the action mode for getDefaultActionModeHideDuration.
 
  Value: -1
 
@@ -95,7 +95,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_FLOATING: Int
 ```
 
-The action mode is treated as a Floating Toolbar. Use with `https://developer.android.com/reference/kotlin/android/view/ActionMode#setType(kotlin.Int)`.
+The action mode is treated as a Floating Toolbar. Use with setType.
 
  Value: 1
 
@@ -107,7 +107,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_PRIMARY: Int
 ```
 
-The action mode is treated as a Primary mode. This is the default. Use with `https://developer.android.com/reference/kotlin/android/view/ActionMode#setType(kotlin.Int)`.
+The action mode is treated as a Primary mode. This is the default. Use with setType.
 
  Value: 0
 
@@ -139,7 +139,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun finish(): Unit
 ```
 
-Finish and close this action mode. The action mode's `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback` will have its `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback#onDestroyActionMode(android.view.ActionMode)` method called.
+Finish and close this action mode. The action mode's `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback` will have its onDestroyActionMode method called.
 
 ### getCustomView
 
@@ -177,7 +177,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getMenuInflater(): MenuInflater!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/view/MenuInflater` with the ActionMode's context.
+Returns a MenuInflater with the ActionMode's context.
 
 ### getSubtitle
 
@@ -211,7 +211,7 @@ Like the tag available to views, this allows applications to associate arbitrary
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTag(kotlin.Any)`
+- setTag
 
 ### getTitle
 
@@ -241,8 +241,8 @@ open fun getTitleOptionalHint(): Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitleOptionalHint(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#isTitleOptional()`
+- setTitleOptionalHint
+- isTitleOptional
 
 ### getType
 
@@ -284,7 +284,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun invalidate(): Unit
 ```
 
-Invalidate the action mode and refresh menu content. The mode's `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback` will have its `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback#onPrepareActionMode(android.view.ActionMode,%20android.view.Menu)` method called. If it returns true the menu will be scanned for updated content and any relevant changes will be reflected to the user.
+Invalidate the action mode and refresh menu content. The mode's `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback` will have its onPrepareActionMode method called. If it returns true the menu will be scanned for updated content and any relevant changes will be reflected to the user.
 
 ### invalidateContentRect
 
@@ -297,7 +297,7 @@ open fun invalidateContentRect(): Unit
 Invalidate the content rect associated to this ActionMode. This only makes sense for action modes that support dynamic positioning on the screen, and provides a more efficient way to reposition it without invalidating the whole action mode.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback2#onGetContentRect(android.view.ActionMode,%20android.view.View,%20android.graphics.Rect)`
+- onGetContentRect
 
 ### isTitleOptional
 
@@ -341,8 +341,8 @@ Set a custom view for this action mode. The custom view will take the place of t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitle(kotlin.CharSequence)`
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setSubtitle(kotlin.CharSequence)`
+- setTitle
+- setSubtitle
 
 ### setSubtitle
 
@@ -360,8 +360,8 @@ Set the subtitle of the action mode. This method will have no visible effect if 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setSubtitle(kotlin.CharSequence)`
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setCustomView(android.view.View)`
+- setSubtitle
+- setCustomView
 
 ### setSubtitle
 
@@ -379,8 +379,8 @@ Set the subtitle of the action mode. This method will have no visible effect if 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setSubtitle(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setCustomView(android.view.View)`
+- setSubtitle
+- setCustomView
 
 ### setTag
 
@@ -400,7 +400,7 @@ Like the tag available to views, this allows applications to associate arbitrary
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#getTag()`
+- getTag
 
 ### setTextSelection
 
@@ -441,8 +441,8 @@ Set the title of the action mode. This method will have no visible effect if a c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitle(kotlin.CharSequence)`
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setCustomView(android.view.View)`
+- setTitle
+- setCustomView
 
 ### setTitle
 
@@ -460,8 +460,8 @@ Set the title of the action mode. This method will have no visible effect if a c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setTitle(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/ActionMode#setCustomView(android.view.View)`
+- setTitle
+- setCustomView
 
 ### setTitleOptionalHint
 

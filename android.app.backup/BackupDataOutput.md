@@ -10,11 +10,11 @@ open class BackupDataOutput
 | --- | --- |
 | ↳ | [android.app.backup.BackupDataOutput](BackupDataOutput.md) |
 
-Provides the structured interface through which a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` commits information to the backup data set, via its `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)` method. Data written for backup is presented as a set of "entities," key/value pairs in which each binary data record "value" is named with a string "key."
+Provides the structured interface through which a BackupAgent commits information to the backup data set, via its onBackup method. Data written for backup is presented as a set of "entities," key/value pairs in which each binary data record "value" is named with a string "key."
 
-To commit a data record to the backup transport, the agent's `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onBackup(android.os.ParcelFileDescriptor,%20android.app.backup.BackupDataOutput,%20android.os.ParcelFileDescriptor)` method first writes an "entity header" that supplies the key string for the record and the total size of the binary value for the record. After the header has been written, the agent then writes the binary entity value itself. The entity value can be written in multiple chunks if desired, as long as the total count of bytes written matches what was supplied to `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityHeader(kotlin.String,%20kotlin.Int)`.
+To commit a data record to the backup transport, the agent's onBackup method first writes an "entity header" that supplies the key string for the record and the total size of the binary value for the record. After the header has been written, the agent then writes the binary entity value itself. The entity value can be written in multiple chunks if desired, as long as the total count of bytes written matches what was supplied to writeEntityHeader.
 
-Entity key strings are considered to be unique within a given application's backup data set. If a backup agent writes a new entity under an existing key string, its value will replace any previous value in the transport's remote data store. You can remove a record entirely from the remote data set by writing a new entity header using the existing record's key, but supplying a negative `dataSize` parameter. When you do so, the agent does not need to call `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityData(kotlin.ByteArray,%20kotlin.Int)`.
+Entity key strings are considered to be unique within a given application's backup data set. If a backup agent writes a new entity under an existing key string, its value will replace any previous value in the transport's remote data store. You can remove a record entirely from the remote data set by writing a new entity header using the existing record's key, but supplying a negative `dataSize` parameter. When you do so, the agent does not need to call writeEntityData.
 
 ### Example
 
@@ -36,15 +36,15 @@ static final String MY_STRING_KEY = "storedstring";
 
 | Public methods ||
 |---|---|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#getQuota()()` Returns the quota in bytes for the application's current backup operation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#getTransportFlags()()` Returns flags with additional information about the backup transport. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityData(kotlin.ByteArray,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write a chunk of data under the current entity to the backup transport. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getQuota Returns the quota in bytes for the application's current backup operation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTransportFlags Returns flags with additional information about the backup transport. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | writeEntityData Write a chunk of data under the current entity to the backup transport. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityHeader(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dataSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Mark the beginning of one record in the backup data stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | writeEntityHeader Mark the beginning of one record in the backup data stream. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public methods
 
@@ -59,7 +59,7 @@ open fun getQuota(): Long
 Returns the quota in bytes for the application's current backup operation. The value can vary for each operation.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/backup/FullBackupDataOutput#getQuota()`
+- getQuota
 
 ### getTransportFlags
 
@@ -69,10 +69,10 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getTransportFlags(): Int
 ```
 
-Returns flags with additional information about the backup transport. For supported flags see `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent`
+Returns flags with additional information about the backup transport. For supported flags see BackupAgent
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/backup/FullBackupDataOutput#getTransportFlags()`
+- getTransportFlags
 
 ### writeEntityData
 
@@ -111,7 +111,7 @@ open fun writeEntityHeader(
 ): Int
 ```
 
-Mark the beginning of one record in the backup data stream. This must be called before `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataOutput#writeEntityData(kotlin.ByteArray,%20kotlin.Int)`.
+Mark the beginning of one record in the backup data stream. This must be called before writeEntityData.
 
 | Parameters ||
 |---|---|

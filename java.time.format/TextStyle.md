@@ -35,9 +35,9 @@ The difference between the 'standard' and 'stand-alone' forms is trickier to des
 
 | Public methods ||
 |---|---|
-| [TextStyle](TextStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asNormal()()` Returns the normal style with the same size. |
-| [TextStyle](TextStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asStandalone()()` {@return the stand-alone style with the same size} |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#isStandalone()()` Returns true if the Style is a stand-alone style. |
+| [TextStyle](TextStyle.md)! | asNormal Returns the normal style with the same size. |
+| [TextStyle](TextStyle.md)! | asStandalone {@return the stand-alone style with the same size} |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStandalone Returns true if the Style is a stand-alone style. |
 | --- | --- |
 
 ## Enum values

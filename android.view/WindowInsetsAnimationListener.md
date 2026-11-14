@@ -16,14 +16,14 @@ Unlike `https://developer.android.com/reference/kotlin/android/view/WindowInsets
 
 Because this listener does not perform frame-by-frame synchronization, registering only this listener without a corresponding `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback` on the view hierarchy allows the window insets animation to run off-thread on the background animation thread. This avoids the performance overhead of running the animation on the main UI thread.
 
-This listener does not have an equivalent to `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onStart(android.view.WindowInsetsAnimation,%20android.view.WindowInsetsAnimation.Bounds)` or receive the animation bounds, because it is not intended for layout synchronization. To perform frame-synchronized layout changes or customize the animation bounds, register a `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback` on the view hierarchy instead.
+This listener does not have an equivalent to onStart or receive the animation bounds, because it is not intended for layout synchronization. To perform frame-synchronized layout changes or customize the animation bounds, register a `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback` on the view hierarchy instead.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener#onEnd(android.view.WindowInsetsAnimation)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation)` Called after a window insets animation has ended. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener#onPrepare(android.view.WindowInsetsAnimation)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation)` Called when an insets animation is about to start and before the views have been laid out in the end state of the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onEnd Called after a window insets animation has ended. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPrepare Called when an insets animation is about to start and before the views have been laid out in the end state of the animation. |
 
 ## Public methods
 
@@ -51,7 +51,7 @@ open fun onPrepare(animation: WindowInsetsAnimation): Unit
 
 Called when an insets animation is about to start and before the views have been laid out in the end state of the animation.
 
-This is called before the final insets are dispatched to the view hierarchy via `https://developer.android.com/reference/kotlin/android/view/View#onApplyWindowInsets(android.view.WindowInsets)` or `https://developer.android.com/reference/kotlin/android/view/View.OnApplyWindowInsetsListener`.
+This is called before the final insets are dispatched to the view hierarchy via onApplyWindowInsets or `https://developer.android.com/reference/kotlin/android/view/View.OnApplyWindowInsetsListener`.
 
 | Parameters ||
 |---|---|

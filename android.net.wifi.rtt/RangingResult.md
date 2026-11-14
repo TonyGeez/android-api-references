@@ -10,82 +10,82 @@ class RangingResult : Parcelable
 | --- | --- |
 | ↳ | [android.net.wifi.rtt.RangingResult](RangingResult.md) |
 
-Ranging result for a request started by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`. Results are returned in `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingResults(kotlin.collections.MutableList)`.
+Ranging result for a request started by startRanging. Results are returned in onRangingResults.
 
-A ranging result is the distance measurement result for a single device specified in the `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest`.
+A ranging result is the distance measurement result for a single device specified in the RangingRequest.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult.Builder` Builder class used to construct `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult.Builder` Builder class used to construct RangingResult objects. |
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_BUSY_TRY_LATER:kotlin.Int` Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_FAIL:kotlin.Int` Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_RESPONDER_DOES_NOT_SUPPORT_IEEE80211MC:kotlin.Int` Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_BUSY_TRY_LATER:kotlin.Int` Individual range request status, getStatus. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_FAIL:kotlin.Int` Individual range request status, getStatus. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_RESPONDER_DOES_NOT_SUPPORT_IEEE80211MC:kotlin.Int` Individual range request status, getStatus. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int` Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int` Individual range request status, getStatus. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#UNSPECIFIED:kotlin.Int` The unspecified value. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#get80211azInitiatorTxLtfRepetitionsCount()()` Gets LTF repetitions that the initiator station (ISTA) used in the preamble of the initiator to responder (I2R) null data PPDU (NDP) for this result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get80211azInitiatorTxLtfRepetitionsCount Gets LTF repetitions that the initiator station (ISTA) used in the preamble of the initiator to responder (I2R) null data PPDU (NDP) for this result. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#get80211azNumberOfRxSpatialStreams()()` Gets number of receive spatial streams that the initiator station (ISTA) used for the initiator to responder (I2R) null data PPDU (NDP) for this result. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#get80211azNumberOfTxSpatialStreams()()` Gets number of transmit spatial streams that the initiator station (ISTA) used for the initiator to responder (I2R) null data PPDU (NDP) for this result. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#get80211azResponderTxLtfRepetitionsCount()()` Gets LTF repetitions that the responder station (RSTA) used in the preamble of the responder to initiator (I2R) null data PPDU (NDP) for this result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get80211azNumberOfRxSpatialStreams Gets number of receive spatial streams that the initiator station (ISTA) used for the initiator to responder (I2R) null data PPDU (NDP) for this result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get80211azNumberOfTxSpatialStreams Gets number of transmit spatial streams that the initiator station (ISTA) used for the initiator to responder (I2R) null data PPDU (NDP) for this result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get80211azResponderTxLtfRepetitionsCount Gets LTF repetitions that the responder station (RSTA) used in the preamble of the responder to initiator (I2R) null data PPDU (NDP) for this result. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getAvailabilityWindowDurationMillis()()` Gets availability window between measurements in milliseconds for proximity detection measurements. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getDistanceMm()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getDistanceStdDevMm()()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAvailabilityWindowDurationMillis Gets availability window between measurements in milliseconds for proximity detection measurements. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDistanceMm <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDistanceStdDevMm <br /> |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getLci()()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getLcr()()` <br /> |
-| [MacAddress](../android.net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMacAddress()()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getLci <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getLcr <br /> |
+| [MacAddress](../android.net/MacAddress.md)? | getMacAddress <br /> |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMaxTimeBetweenNtbMeasurementsMicros()()` Gets maximum time between measurements in microseconds for IEEE 802. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMeasurementBandwidth()()` The bandwidth used to transmit the RTT measurement frame. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMeasurementChannelFrequencyMHz()()` The center frequency of the primary 20 MHz frequency (in MHz) of the channel over which the measurement frames are sent. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMaxTimeBetweenNtbMeasurementsMicros Gets maximum time between measurements in microseconds for IEEE 802. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMeasurementBandwidth The bandwidth used to transmit the RTT measurement frame. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMeasurementChannelFrequencyMHz The center frequency of the primary 20 MHz frequency (in MHz) of the channel over which the measurement frames are sent. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMinTimeBetweenNtbMeasurementsMicros()()` Gets minimum time between measurements in microseconds for IEEE 802. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNominalTimeMillis()()` Get the nominal duration between adjacent availability window in milliseconds for proximity detection measurements. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNumAttemptedMeasurements()()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinTimeBetweenNtbMeasurementsMicros Gets minimum time between measurements in microseconds for IEEE 802. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getNominalTimeMillis Get the nominal duration between adjacent availability window in milliseconds for proximity detection measurements. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNumAttemptedMeasurements <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNumNtbRepetitionsPerMeasurement()()` Get the number of range repetitions carried out for distance calculation in Non Trigger Based (NTB) ranging. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNumSuccessfulMeasurements()()` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPasnComebackAfterMillis()()` Get Comeback after time in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNumNtbRepetitionsPerMeasurement Get the number of range repetitions carried out for distance calculation in Non Trigger Based (NTB) ranging. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNumSuccessfulMeasurements <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPasnComebackAfterMillis Get Comeback after time in milliseconds. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPasnComebackCookie()()` Get PASN comeback cookie. |
-| [PeerHandle](../android.net.wifi.aware/PeerHandle.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPeerHandle()()` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRangingTimestampMillis()()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getPasnComebackCookie Get PASN comeback cookie. |
+| [PeerHandle](../android.net.wifi.aware/PeerHandle.md)? | getPeerHandle <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getRangingTimestampMillis <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRetryAfterDurationMillis()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRssi()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getSecureHeLtfProtocolVersion()()` Get Secure HE-LTF protocol version used. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRetryAfterDurationMillis <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRssi <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSecureHeLtfProtocolVersion Get Secure HE-LTF protocol version used. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()()` <br /> |
-| [ResponderLocation](ResponderLocation.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getUnverifiedResponderLocation()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getUsdPeerId()()` Returns the USD peer identifier of the device whose range measurement was requested. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStatus <br /> |
+| [ResponderLocation](ResponderLocation.md)? | getUnverifiedResponderLocation <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUsdPeerId Returns the USD peer identifier of the device whose range measurement was requested. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#is80211azNtbMeasurement()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#is80211mcMeasurement()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is80211azNtbMeasurement <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is80211mcMeasurement <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#isLmrDelayed()()` Returns whether the Location Measurement Report (LMR) feedback is delayed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#isRangingAuthenticated()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#isRangingFrameProtected()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLmrDelayed Returns whether the Location Measurement Report (LMR) feedback is delayed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRangingAuthenticated <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRangingFrameProtected <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#isSecureHeLtfEnabled()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSecureHeLtfEnabled <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -102,7 +102,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_BUSY_TRY_LATER: Int
 ```
 
-Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. Indicates that the ranging operation failed because the peer is busy and unable to handle the request at this time. The requester should try again after a suggested delay, which can be retrieved with `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRetryAfterDurationMillis()`.
+Individual range request status, getStatus. Indicates that the ranging operation failed because the peer is busy and unable to handle the request at this time. The requester should try again after a suggested delay, which can be retrieved with getRetryAfterDurationMillis.
 
  Value: 12
 
@@ -114,7 +114,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_FAIL: Int
 ```
 
-Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. Indicates ranging operation failed and the distance value is invalid.
+Individual range request status, getStatus. Indicates ranging operation failed and the distance value is invalid.
 
  Value: 1
 
@@ -126,9 +126,9 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_RESPONDER_DOES_NOT_SUPPORT_IEEE80211MC: Int
 ```
 
-Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. Indicates that the ranging operation failed because the specified peer does not support IEEE 802.11mc RTT operations. Support by an Access Point can be confirmed using `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#is80211mcResponder()`.
+Individual range request status, getStatus. Indicates that the ranging operation failed because the specified peer does not support IEEE 802.11mc RTT operations. Support by an Access Point can be confirmed using is80211mcResponder.
 
-On such a failure, the individual result fields of `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#` such as `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getDistanceMm()` are invalid.
+On such a failure, the individual result fields of RangingResult such as getDistanceMm are invalid.
 
  Value: 2
 
@@ -140,7 +140,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_SUCCESS: Int
 ```
 
-Individual range request status, `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`. Indicates ranging operation was successful and distance value is valid.
+Individual range request status, getStatus. Indicates ranging operation was successful and distance value is valid.
 
  Value: 0
 
@@ -166,7 +166,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -276,7 +276,7 @@ fun getDistanceMm(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The distance (in mm) to the device specified by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMacAddress()` or `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPeerHandle()`. Note: the measured distance may be negative for very close devices. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The distance (in mm) to the device specified by getMacAddress or getPeerHandle. Note: the measured distance may be negative for very close devices. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### getDistanceStdDevMm
 
@@ -288,7 +288,7 @@ fun getDistanceStdDevMm(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The standard deviation of the measured distance (in mm) to the device specified by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getMacAddress()` or `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPeerHandle()`. The standard deviation is calculated over the measurements executed in a single RTT burst. The number of measurements is returned by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNumSuccessfulMeasurements()` - 0 successful measurements indicate that the standard deviation is not valid (a valid standard deviation requires at least 2 data points). Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The standard deviation of the measured distance (in mm) to the device specified by getMacAddress or getPeerHandle. The standard deviation is calculated over the measurements executed in a single RTT burst. The number of measurements is returned by getNumSuccessfulMeasurements - 0 successful measurements indicate that the standard deviation is not valid (a valid standard deviation requires at least 2 data points). Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### getLci
 
@@ -324,7 +324,7 @@ fun getMacAddress(): MacAddress?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/MacAddress.html#?` | The MAC address of the device whose range measurement was requested. Will correspond to the MAC address of the device in the `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest`. Will return a `null` for results corresponding to requests issued using a `PeerHandle`, i.e. using the `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest.Builder#addWifiAwarePeer(android.net.wifi.aware.PeerHandle)` API. |
+| `https://developer.android.com/reference/kotlin/android/net/MacAddress.html#?` | The MAC address of the device whose range measurement was requested. Will correspond to the MAC address of the device in the RangingRequest. Will return a `null` for results corresponding to requests issued using a `PeerHandle`, i.e. using the addWifiAwarePeer API. |
 
 ### getMaxTimeBetweenNtbMeasurementsMicros
 
@@ -334,7 +334,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getMaxTimeBetweenNtbMeasurementsMicros(): Long
 ```
 
-Gets maximum time between measurements in microseconds for IEEE 802.11az non-trigger based ranging. The next 11az ranging request needs to be invoked before the maximum time from the last measurement time `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRangingTimestampMillis()`. Otherwise, the non-trigger based ranging session will be terminated and a new ranging negotiation will happen with the responding station.
+Gets maximum time between measurements in microseconds for IEEE 802.11az non-trigger based ranging. The next 11az ranging request needs to be invoked before the maximum time from the last measurement time getRangingTimestampMillis. Otherwise, the non-trigger based ranging session will be terminated and a new ranging negotiation will happen with the responding station.
 
 ### getMeasurementBandwidth
 
@@ -352,7 +352,7 @@ The bandwidth used to transmit the RTT measurement frame.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` does not return `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`. |
+| `java.lang.IllegalStateException` | if getStatus does not return `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`. |
 
 ### getMeasurementChannelFrequencyMHz
 
@@ -370,7 +370,7 @@ The center frequency of the primary 20 MHz frequency (in MHz) of the channel ove
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` does not return `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`. |
+| `java.lang.IllegalStateException` | if getStatus does not return `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`. |
 
 ### getMinTimeBetweenNtbMeasurementsMicros
 
@@ -380,7 +380,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getMinTimeBetweenNtbMeasurementsMicros(): Long
 ```
 
-Gets minimum time between measurements in microseconds for IEEE 802.11az non-trigger based ranging. The next 11az ranging measurement request must be invoked after the minimum time from the last measurement time `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRangingTimestampMillis()` for the peer. Otherwise, cached ranging result will be returned for the peer.
+Gets minimum time between measurements in microseconds for IEEE 802.11az non-trigger based ranging. The next 11az ranging measurement request must be invoked after the minimum time from the last measurement time getRangingTimestampMillis for the peer. Otherwise, cached ranging result will be returned for the peer.
 
 ### getNominalTimeMillis
 
@@ -402,7 +402,7 @@ fun getNumAttemptedMeasurements(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The number of attempted measurements used in the RTT exchange resulting in this set of results. The number of successful measurements is returned by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNumSuccessfulMeasurements()` which at most, if there are no errors, will be 1 less than the number of attempted measurements. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. If the value is 0, it should be interpreted as no information available, which may occur for one-sided RTT measurements. Instead `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest#getRttBurstSize()` should be used instead. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The number of attempted measurements used in the RTT exchange resulting in this set of results. The number of successful measurements is returned by getNumSuccessfulMeasurements which at most, if there are no errors, will be 1 less than the number of attempted measurements. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. If the value is 0, it should be interpreted as no information available, which may occur for one-sided RTT measurements. Instead getRttBurstSize should be used instead. |
 
 ### getNumNtbRepetitionsPerMeasurement
 
@@ -428,7 +428,7 @@ fun getNumSuccessfulMeasurements(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The number of successful measurements used to calculate the distance and standard deviation. If the number of successful measurements if 1 then then standard deviation, returned by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getDistanceStdDevMm()`, is not valid (a 0 is returned for the standard deviation). The total number of measurement attempts is returned by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getNumAttemptedMeasurements()`. The number of successful measurements will be at most 1 less then the number of attempted measurements. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The number of successful measurements used to calculate the distance and standard deviation. If the number of successful measurements if 1 then then standard deviation, returned by getDistanceStdDevMm, is not valid (a 0 is returned for the standard deviation). The total number of measurement attempts is returned by getNumAttemptedMeasurements. The number of successful measurements will be at most 1 less then the number of attempted measurements. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### getPasnComebackAfterMillis
 
@@ -438,7 +438,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getPasnComebackAfterMillis(): Long
 ```
 
-Get Comeback after time in milliseconds. See `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPasnComebackCookie()`. A value 0 indicates the ranging request operation can be tried immediately with the cookie.
+Get Comeback after time in milliseconds. See getPasnComebackCookie. A value 0 indicates the ranging request operation can be tried immediately with the cookie.
 
 ### getPasnComebackCookie
 
@@ -448,7 +448,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getPasnComebackCookie(): ByteArray?
 ```
 
-Get PASN comeback cookie. PASN authentication allows an AP to indicate the deferral time and optionally a Cookie. See `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getPasnComebackAfterMillis()`
+Get PASN comeback cookie. PASN authentication allows an AP to indicate the deferral time and optionally a Cookie. See getPasnComebackAfterMillis
 
 When an AP receives a large volume of initial PASN Authentication frames, it can use the comeback after field in the PASN Parameters element to indicate a deferral time and optionally provide a comeback cookie which is an opaque sequence of octets. Upon receiving this response, the ranging initiator (STA) must wait for the specified time before retrying secure authentication, presenting the received cookie to the AP.
 
@@ -466,7 +466,7 @@ fun getPeerHandle(): PeerHandle?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle.html#?` | The PeerHandle of the device whose range measurement was requested. Will correspond to the PeerHandle of the devices requested using `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest.Builder#addWifiAwarePeer(android.net.wifi.aware.PeerHandle)`. Will return a `null` for results corresponding to requests issued using a MAC address. |
+| `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle.html#?` | The PeerHandle of the device whose range measurement was requested. Will correspond to the PeerHandle of the devices requested using addWifiAwarePeer. Will return a `null` for results corresponding to requests issued using a MAC address. |
 
 ### getRangingTimestampMillis
 
@@ -478,7 +478,7 @@ fun getRangingTimestampMillis(): Long
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The timestamp at which the ranging operation was performed. The timestamp is in milliseconds since boot, including time spent in sleep, corresponding to values provided by `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()`. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The timestamp at which the ranging operation was performed. The timestamp is in milliseconds since boot, including time spent in sleep, corresponding to values provided by elapsedRealtime. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### getRetryAfterDurationMillis
 
@@ -490,11 +490,11 @@ fun getRetryAfterDurationMillis(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The duration in milliseconds after which the ranging operation may be retried. A value of 0 means an immediate retry, otherwise retry after that much time in millisec. The time offset is from the measurement time `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getRangingTimestampMillis()`. . Value is 0 or greater |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The duration in milliseconds after which the ranging operation may be retried. A value of 0 means an immediate retry, otherwise retry after that much time in millisec. The time offset is from the measurement time getRangingTimestampMillis. . Value is 0 or greater |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` does not return `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_BUSY_TRY_LATER:kotlin.Int`. |
+| `java.lang.IllegalStateException` | if getStatus does not return `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_BUSY_TRY_LATER:kotlin.Int`. |
 
 ### getRssi
 
@@ -506,7 +506,7 @@ fun getRssi(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The average RSSI, in units of dBm, observed during the RTT measurement. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The average RSSI, in units of dBm, observed during the RTT measurement. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### getSecureHeLtfProtocolVersion
 
@@ -544,7 +544,7 @@ fun getUnverifiedResponderLocation(): ResponderLocation?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation?` | The unverified responder location represented as `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/ResponderLocation` which captures location information the responder is programmed to broadcast. The responder location is referred to as unverified, because we are relying on the device/site administrator to correctly configure its location data. Will return a `null` when the location information cannot be parsed. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| ResponderLocation | The unverified responder location represented as ResponderLocation which captures location information the responder is programmed to broadcast. The responder location is referred to as unverified, because we are relying on the device/site administrator to correctly configure its location data. Will return a `null` when the location information cannot be parsed. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### getUsdPeerId
 
@@ -575,8 +575,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -592,7 +592,7 @@ fun is80211azNtbMeasurement(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | The result is true if the IEEE 802.11az non-trigger based protocol was used. If the result is false, and `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#is80211mcMeasurement()` is also false a one-side RTT result is provided which does not subtract the turnaround time at the responder. . Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | The result is true if the IEEE 802.11az non-trigger based protocol was used. If the result is false, and is80211mcMeasurement is also false a one-side RTT result is provided which does not subtract the turnaround time at the responder. . Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### is80211mcMeasurement
 
@@ -604,7 +604,7 @@ fun is80211mcMeasurement(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | The result is true if the IEEE 802.11mc protocol was used. If the result is false, and `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#is80211azNtbMeasurement()` is also false a one-side RTT result is provided which does not subtract the turnaround time at the responder. Only valid if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()` returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | The result is true if the IEEE 802.11mc protocol was used. If the result is false, and is80211azNtbMeasurement is also false a one-side RTT result is provided which does not subtract the turnaround time at the responder. Only valid if getStatus returns `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#STATUS_SUCCESS:kotlin.Int`, otherwise will throw an exception. |
 
 ### isLmrDelayed
 

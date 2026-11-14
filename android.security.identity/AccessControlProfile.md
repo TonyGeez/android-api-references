@@ -22,4 +22,4 @@ A class used to specify access controls.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/security/identity/AccessControlProfile.Builder` A builder for `https://developer.android.com/reference/kotlin/android/security/identity/AccessControlProfile#`. |
+| | `https://developer.android.com/reference/kotlin/android/security/identity/AccessControlProfile.Builder` A builder for AccessControlProfile. |

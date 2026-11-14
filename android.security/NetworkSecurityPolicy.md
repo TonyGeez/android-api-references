@@ -18,7 +18,7 @@ Network stacks/components should honor this policy to make it possible to centra
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.Builder` A builder for a `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#`. |
+| | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.Builder` A builder for a NetworkSecurityPolicy. |
 
 | Constants ||
 |---|---|
@@ -31,12 +31,12 @@ Network stacks/components should honor this policy to make it possible to centra
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getDomainEncryptionMode(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the domain encryption mode the app has chosen for the given `hostname`, including the setting for Encrypted Client Hello. |
-| open static [NetworkSecurityPolicy](NetworkSecurityPolicy.md) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getInstance()()` Gets the policy for this process. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCertificateTransparencyVerificationRequired(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if Certificate Transparency information is required to be verified by the client in TLS connections to `hostname`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDomainEncryptionMode Returns the domain encryption mode the app has chosen for the given `hostname`, including the setting for Encrypted Client Hello. |
+| open static [NetworkSecurityPolicy](NetworkSecurityPolicy.md) | getInstance Gets the policy for this process. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCertificateTransparencyVerificationRequired Returns `true` if Certificate Transparency information is required to be verified by the client in TLS connections to `hostname`. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCleartextTrafficPermitted()()` Returns whether cleartext network traffic (e.g. HTTP, FTP, WebSockets, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for all network communication from this process. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCleartextTrafficPermitted(kotlin.String)(hostname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns whether cleartext network traffic (e.g. HTTP, FTP, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for communicating with |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCleartextTrafficPermitted Returns whether cleartext network traffic (e.g. HTTP, FTP, WebSockets, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for all network communication from this process. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCleartextTrafficPermitted Returns whether cleartext network traffic (e.g. HTTP, FTP, XMPP, IMAP, SMTP -- without TLS or STARTTLS) is permitted for communicating with |
 
 ## Constants
 
@@ -106,7 +106,7 @@ static val DOMAIN_ENCRYPTION_MODE_UNKNOWN: Int
 
 Unknown setting for domain encryption in the app.
 
-This is the default value returned by `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#getDomainEncryptionMode(kotlin.String)` when not overridden. Network libraries should avoid performing any domain encryption and perform a standard TLS handshake, equivalent to `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_DISABLED:kotlin.Int`.
+This is the default value returned by getDomainEncryptionMode when not overridden. Network libraries should avoid performing any domain encryption and perform a standard TLS handshake, equivalent to `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#DOMAIN_ENCRYPTION_MODE_DISABLED:kotlin.Int`.
 
  Value: 0
 
@@ -145,7 +145,7 @@ It's fine to cache this reference. Any changes to the policy will be immediately
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#` | This value cannot be `null`. |
+| NetworkSecurityPolicy | This value cannot be `null`. |
 
 ### isCertificateTransparencyVerificationRequired
 
@@ -199,4 +199,4 @@ Returns whether cleartext network traffic (e.g. HTTP, FTP, XMPP, IMAP, SMTP -- w
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy#isCleartextTrafficPermitted()`
+- isCleartextTrafficPermitted

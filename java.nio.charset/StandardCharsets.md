@@ -10,7 +10,7 @@ class StandardCharsets
 | --- | --- |
 | ↳ | [java.nio.charset.StandardCharsets](StandardCharsets.md) |
 
-Constant definitions for the standard `https://developer.android.com/reference/kotlin/java/nio/charset/Charset`. These charsets are guaranteed to be available on every implementation of the Java platform.
+Constant definitions for the standard Charset. These charsets are guaranteed to be available on every implementation of the Java platform.
 
 ## Summary
 

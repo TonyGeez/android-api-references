@@ -22,8 +22,8 @@ An interface to a read logs from REQUESTS and EVENTS Used as a Data Access Objec
 
 | Public methods ||
 |---|---|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](EventLogRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#getJoinedEvents(java.time.Instant,%20java.time.Instant)(startTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#, endTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#)` Retrieves a List of EventLogRecord with its corresponding RequestLogRecord written by this IsolatedService within the specified time range. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RequestLogRecord](RequestLogRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/LogReader#getRequests(java.time.Instant,%20java.time.Instant)(startTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#, endTime: https://developer.android.com/reference/kotlin/java/time/Instant.html#)` Retrieves a List of RequestLogRecords written by this IsolatedService within the specified time range. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](EventLogRecord.md)!\> | getJoinedEvents Retrieves a List of EventLogRecord with its corresponding RequestLogRecord written by this IsolatedService within the specified time range. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RequestLogRecord](RequestLogRecord.md)!\> | getRequests Retrieves a List of RequestLogRecords written by this IsolatedService within the specified time range. |
 
 ## Public methods
 

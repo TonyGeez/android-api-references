@@ -12,7 +12,7 @@ class SettingsPreferenceValue : Parcelable
 
 This objects represents a value that can be used for a particular settings preference.
 
-The data type for the value will correspond to `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getType()`. For possible types, see constants below, such as `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_BOOLEAN:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_STRING:kotlin.Int`. Depending on the type, the corresponding getter will contain its value.
+The data type for the value will correspond to getType. For possible types, see constants below, such as `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_BOOLEAN:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_STRING:kotlin.Int`. Depending on the type, the corresponding getter will contain its value.
 
 See documentation on the constants for which getter method should be used.
 
@@ -20,7 +20,7 @@ See documentation on the constants for which getter method should be used.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue.Builder` Builder to construct `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#`. |
+| | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue.Builder` Builder to construct SettingsPreferenceValue. |
 
 | Constants ||
 |---|---|
@@ -33,24 +33,24 @@ See documentation on the constants for which getter method should be used.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getBooleanValue()()` Returns the boolean value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_BOOLEAN:kotlin.Int`. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getDoubleValue()()` Returns the double value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_DOUBLE:kotlin.Int`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getBooleanValue Returns the boolean value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_BOOLEAN:kotlin.Int`. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getDoubleValue Returns the double value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_DOUBLE:kotlin.Int`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getIntValue()()` Returns the int value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_INT:kotlin.Int`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getLongValue()()` Returns the long value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_LONG:kotlin.Int`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getStringValue()()` Returns the string value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_STRING:kotlin.Int`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIntValue Returns the int value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_INT:kotlin.Int`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLongValue Returns the long value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_LONG:kotlin.Int`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getStringValue Returns the string value for Preference, the type must be `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#TYPE_STRING:kotlin.Int`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getType()()` Returns the type indicator for Preference value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType Returns the type indicator for Preference value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SettingsPreferenceValue](SettingsPreferenceValue.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SettingsPreferenceValue](SettingsPreferenceValue.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for SettingsPreferenceValue. |
 
 ## Constants
 
@@ -62,7 +62,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_BOOLEAN: Int
 ```
 
-Value is of type boolean. Access via `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getBooleanValue()`.
+Value is of type boolean. Access via getBooleanValue.
 
  Value: 0
 
@@ -74,7 +74,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_DOUBLE: Int
 ```
 
-Value is of type double. Access via `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getDoubleValue()`.
+Value is of type double. Access via getDoubleValue.
 
  Value: 2
 
@@ -86,7 +86,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_INT: Int
 ```
 
-Value is of type int. Access via `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getIntValue()`.
+Value is of type int. Access via getIntValue.
 
  Value: 4
 
@@ -98,7 +98,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_LONG: Int
 ```
 
-Value is of type long. Access via `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getLongValue()`.
+Value is of type long. Access via getLongValue.
 
  Value: 1
 
@@ -110,7 +110,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_STRING: Int
 ```
 
-Value is of type string. Access via `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#getStringValue()`.
+Value is of type string. Access via getStringValue.
 
  Value: 3
 
@@ -124,7 +124,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -222,4 +222,4 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val CREATOR: Parcelable.Creator<SettingsPreferenceValue!>
 ```
 
-Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceValue#`.
+Parcelable Creator for SettingsPreferenceValue.

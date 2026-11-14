@@ -25,9 +25,9 @@ For example using UTF-8 as the encoding scheme the string "The string ü@foo-bar
 
 | Public methods ||
 |---|---|
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Translates a string into `x-www-form-urlencoded` format. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String,%20kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, enc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Translates a string into `application/x-www-form-urlencoded` format using a specific encoding scheme. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URLEncoder#encode(kotlin.String,%20java.nio.charset.Charset)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#!)` Translates a string into `application/x-www-form-urlencoded` format using a specific [Charset](../java.nio.charset/Charset.md). |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | encode Translates a string into `x-www-form-urlencoded` format. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | encode Translates a string into `application/x-www-form-urlencoded` format using a specific encoding scheme. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | encode Translates a string into `application/x-www-form-urlencoded` format using a specific [Charset](../java.nio.charset/Charset.md). |
 | --- | --- |
 
 ## Public methods
@@ -83,7 +83,7 @@ This method behaves the same as [encode(String s, Charset charset)](../java.lang
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String,%20kotlin.String)`
+- decode
 
 ### encode
 
@@ -115,4 +115,4 @@ Translates a string into `application/x-www-form-urlencoded` format using a spec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URLDecoder#decode(kotlin.String,%20java.nio.charset.Charset)`
+- decode

@@ -16,24 +16,24 @@ A class representing a Serial port.
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#INVALID_ID:kotlin.Int` Value returned by `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getVendorId()` and `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getProductId()` if this serial port isn't a USB device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_DATA_SYNC:kotlin.Int` For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: write operations on the file will complete according to the requirements of synchronized I/O data integrity completion (while file metadata may not be synchronized). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_NONBLOCK:kotlin.Int` For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: when possible, the file is opened in nonblocking mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#INVALID_ID:kotlin.Int` Value returned by getVendorId and getProductId if this serial port isn't a USB device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_DATA_SYNC:kotlin.Int` For use with requestOpen: write operations on the file will complete according to the requirements of synchronized I/O data integrity completion (while file metadata may not be synchronized). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_NONBLOCK:kotlin.Int` For use with requestOpen: when possible, the file is opened in nonblocking mode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_READ_ONLY:kotlin.Int` For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: open for reading only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_READ_WRITE:kotlin.Int` For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: open for reading and writing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_SYNC:kotlin.Int` For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: write operations on the file will complete according to the requirements of synchronized I/O file integrity completion (by contrast with the synchronized I/O data integrity completion provided by FLAG_DATA_SYNC). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_READ_ONLY:kotlin.Int` For use with requestOpen: open for reading only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_READ_WRITE:kotlin.Int` For use with requestOpen: open for reading and writing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_SYNC:kotlin.Int` For use with requestOpen: write operations on the file will complete according to the requirements of synchronized I/O file integrity completion (by contrast with the synchronized I/O data integrity completion provided by FLAG_DATA_SYNC). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_WRITE_ONLY:kotlin.Int` For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: open for writing only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_WRITE_ONLY:kotlin.Int` For use with requestOpen: open for writing only. |
 
 | Public methods ||
 |---|---|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getName()()` Get the device name. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getProductId()()` Return the product ID of this serial port if it is a USB device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getVendorId()()` Return the vendor ID of this serial port if it is a USB device. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName Get the device name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProductId Return the product ID of this serial port if it is a USB device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVendorId Return the vendor ID of this serial port if it is a USB device. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPortResponse!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Request to open the port. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#toString()()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestOpen Request to open the port. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -45,7 +45,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val INVALID_ID: Int
 ```
 
-Value returned by `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getVendorId()` and `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#getProductId()` if this serial port isn't a USB device.
+Value returned by getVendorId and getProductId if this serial port isn't a USB device.
 
  Value: -1
 
@@ -57,7 +57,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPEN_FLAG_DATA_SYNC: Int
 ```
 
-For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: write operations on the file will complete according to the requirements of synchronized I/O data integrity completion (while file metadata may not be synchronized).
+For use with requestOpen: write operations on the file will complete according to the requirements of synchronized I/O data integrity completion (while file metadata may not be synchronized).
 
  Value: 4096
 
@@ -69,7 +69,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPEN_FLAG_NONBLOCK: Int
 ```
 
-For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: when possible, the file is opened in nonblocking mode.
+For use with requestOpen: when possible, the file is opened in nonblocking mode.
 
  Value: 2048
 
@@ -81,7 +81,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPEN_FLAG_READ_ONLY: Int
 ```
 
-For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: open for reading only.
+For use with requestOpen: open for reading only.
 
  Value: 0
 
@@ -93,7 +93,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPEN_FLAG_READ_WRITE: Int
 ```
 
-For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: open for reading and writing.
+For use with requestOpen: open for reading and writing.
 
  Value: 2
 
@@ -105,7 +105,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPEN_FLAG_SYNC: Int
 ```
 
-For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: write operations on the file will complete according to the requirements of synchronized I/O file integrity completion (by contrast with the synchronized I/O data integrity completion provided by FLAG_DATA_SYNC).
+For use with requestOpen: write operations on the file will complete according to the requirements of synchronized I/O file integrity completion (by contrast with the synchronized I/O data integrity completion provided by FLAG_DATA_SYNC).
 
  Value: 1048576
 
@@ -117,7 +117,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val OPEN_FLAG_WRITE_ONLY: Int
 ```
 
-For use with `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#requestOpen(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`: open for writing only.
+For use with requestOpen: open for writing only.
 
  Value: 1
 

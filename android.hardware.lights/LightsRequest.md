@@ -23,9 +23,9 @@ Encapsulates a request to modify the state of multiple lights.
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LightState](LightState.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLightStates()()` Get a list of LightState. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLights()()` Get a list of Light as ids. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Light](Light.md)!, [LightState](LightState.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLightsAndStates()()` Get a map of lights and states. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LightState](LightState.md)!\> | getLightStates Get a list of LightState. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getLights Get a list of Light as ids. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Light](Light.md)!, [LightState](LightState.md)!\> | getLightsAndStates Get a map of lights and states. |
 | --- | --- |
 
 ## Public methods
@@ -38,7 +38,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getLightStates(): MutableList<LightState!>
 ```
 
-Get a list of LightState. The states will be returned in same order as the light ids returned by `https://developer.android.com/reference/kotlin/android/hardware/lights/LightsRequest#getLights()`.
+Get a list of LightState. The states will be returned in same order as the light ids returned by getLights.
 
 | Return ||
 |---|---|

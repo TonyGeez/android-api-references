@@ -24,11 +24,11 @@ Exception thrown when a migration request fails.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationException#MigrationException(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` <br /> |
+| MigrationException <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationException#getErrorCode()()` Returns the error code associated with this exception. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getErrorCode Returns the error code associated with this exception. |
 
 ## Constants
 

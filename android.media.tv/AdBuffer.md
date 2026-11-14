@@ -19,25 +19,25 @@ Buffer for advertisement data.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#AdBuffer(kotlin.Int,%20kotlin.String,%20android.os.SharedMemory,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, buffer: https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, presentationTimeUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| AdBuffer <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getFlags()()` Gets the buffer flags for this ad buffer. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getId()()` Gets corresponding AD request ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFlags Gets the buffer flags for this ad buffer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId Gets corresponding AD request ID. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getLength()()` Gets the data length of this ad buffer. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getMimeType()()` Gets the mime type of the data. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getOffset()()` Gets the offset into the shared memory to begin mapping. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLength Gets the data length of this ad buffer. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getMimeType Gets the mime type of the data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOffset Gets the offset into the shared memory to begin mapping. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getPresentationTimeUs()()` Gets the presentation time. |
-| [SharedMemory](../android.os/SharedMemory.md) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getSharedMemory()()` Gets the `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#` which stores the data. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPresentationTimeUs Gets the presentation time. |
+| [SharedMemory](../android.os/SharedMemory.md) | getSharedMemory Gets the `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#` which stores the data. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -78,7 +78,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -160,7 +160,7 @@ Gets the offset into the shared memory to begin mapping.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#map(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- map
 
 ### getPresentationTimeUs
 
@@ -186,7 +186,7 @@ fun getSharedMemory(): SharedMemory
 
 Gets the `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#` which stores the data.
 
-Information on how the data in this buffer is formatted can be found using `https://developer.android.com/reference/kotlin/android/media/tv/AdRequest#getMetadata()`
+Information on how the data in this buffer is formatted can be found using getMetadata
 
 This data lives in a `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#` instance because of the potentially large amount of data needed to store the ad. This optimizes the data communication between the ad data source and the service responsible for its display.
 
@@ -196,7 +196,7 @@ This data lives in a `https://developer.android.com/reference/kotlin/android/os/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#create(kotlin.String,%20kotlin.Int)`
+- create
 
 ### writeToParcel
 

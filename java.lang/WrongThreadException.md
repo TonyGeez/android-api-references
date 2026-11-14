@@ -20,10 +20,10 @@ Thrown to indicate that a method has been called on the wrong thread.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/WrongThreadException#WrongThreadException()()` Constructs a WrongThreadException with no detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/WrongThreadException#WrongThreadException(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs a WrongThreadException with the given detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/WrongThreadException#WrongThreadException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a WrongThreadException with the given detail message and cause. |
-| `https://developer.android.com/reference/kotlin/java/lang/WrongThreadException#WrongThreadException(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a WrongThreadException with the given cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
+| WrongThreadException Constructs a WrongThreadException with no detail message. |
+| WrongThreadException Constructs a WrongThreadException with the given detail message. |
+| WrongThreadException Constructs a WrongThreadException with the given detail message and cause. |
+| WrongThreadException Constructs a WrongThreadException with the given cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
 
 ## Public constructors
 

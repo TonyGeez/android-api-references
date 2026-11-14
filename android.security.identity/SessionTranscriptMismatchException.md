@@ -26,8 +26,8 @@ Thrown when trying use multiple different session transcripts in the same presen
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#SessionTranscriptMismatchException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#SessionTranscriptMismatchException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#` exception. |
+| SessionTranscriptMismatchException Constructs a new SessionTranscriptMismatchException exception. |
+| SessionTranscriptMismatchException Constructs a new SessionTranscriptMismatchException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ SessionTranscriptMismatchException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#` exception.
+Constructs a new SessionTranscriptMismatchException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ SessionTranscriptMismatchException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/SessionTranscriptMismatchException#` exception.
+Constructs a new SessionTranscriptMismatchException exception.
 
 | Parameters ||
 |---|---|

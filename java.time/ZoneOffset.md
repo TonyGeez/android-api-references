@@ -15,7 +15,7 @@ A time-zone offset from Greenwich/UTC, such as `+02:00`.
 
 A time-zone offset is the amount of time that a time-zone differs from Greenwich/UTC. This is usually a fixed number of hours and minutes.
 
-Different parts of the world have different time-zone offsets. The rules for how offsets vary by place and time of year are captured in the `https://developer.android.com/reference/kotlin/java/time/ZoneId` class.
+Different parts of the world have different time-zone offsets. The rules for how offsets vary by place and time of year are captured in the ZoneId class.
 
 For example, Paris is one hour ahead of Greenwich/UTC in winter and two hours ahead in summer. The `ZoneId` instance for Paris will reference two `ZoneOffset` instances - a `+01:00` instance for winter, and a `+02:00` instance for summer.
 
@@ -23,7 +23,7 @@ In 2008, time-zone offsets around the world extended from -12:00 to +14:00. To p
 
 This class is designed for use with the ISO calendar system. The fields of hours, minutes and seconds make assumptions that are valid for the standard ISO definitions of those fields. This class may be used with other calendar systems providing the definition of the time fields matches those of the ISO calendar system.
 
-Instances of `ZoneOffset` must be compared using `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#equals(kotlin.Any)`. Implementations may choose to cache certain common offsets, however applications must not rely on such caching.
+Instances of `ZoneOffset` must be compared using equals. Implementations may choose to cache certain common offsets, however applications must not rely on such caching.
 
 This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](ZoneOffset.md)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. The `equals` method should be used for comparisons.
 
@@ -31,35 +31,35 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 
 | Public methods ||
 |---|---|
-| [Temporal](../java.time.temporal/Temporal.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have the same offset as this object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#compareTo(java.time.ZoneOffset)(other: https://developer.android.com/reference/kotlin/java/time/ZoneOffset#!)` Compares this offset to another offset in descending order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this offset is equal to another offset. |
+| [Temporal](../java.time.temporal/Temporal.md)! | adjustInto Adjusts the specified temporal object to have the same offset as this object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this offset to another offset in descending order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks if this offset is equal to another offset. |
 | --- | --- |
-| static [ZoneOffset](ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `ZoneOffset` from a temporal object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this offset as an `int`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getId()()` Gets the normalized zone offset ID. |
+| static [ZoneOffset](ZoneOffset.md)! | from Obtains an instance of `ZoneOffset` from a temporal object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get Gets the value of the specified field from this offset as an `int`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getId Gets the normalized zone offset ID. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this offset as a `long`. |
-| [ZoneRules](../java.time.zone/ZoneRules.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getRules()()` Gets the associated time-zone rules. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getTotalSeconds()()` Gets the total zone offset in seconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Gets the value of the specified field from this offset as a `long`. |
+| [ZoneRules](../java.time.zone/ZoneRules.md)! | getRules Gets the associated time-zone rules. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTotalSeconds Gets the total zone offset in seconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#hashCode()()` A hash code for this offset. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
-| static [ZoneOffset](ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#of(kotlin.String)(offsetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Obtains an instance of `ZoneOffset` using the ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode A hash code for this offset. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSupported Checks if the specified field is supported. |
+| static [ZoneOffset](ZoneOffset.md)! | of Obtains an instance of `ZoneOffset` using the ID. |
 | --- | --- |
-| static [ZoneOffset](ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofHours(kotlin.Int)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` using an offset in hours. |
-| static [ZoneOffset](ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofHoursMinutes(kotlin.Int,%20kotlin.Int)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` using an offset in hours and minutes. |
-| static [ZoneOffset](ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofHoursMinutesSeconds(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(hours: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minutes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, seconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` using an offset in hours, minutes and seconds. |
+| static [ZoneOffset](ZoneOffset.md)! | ofHours Obtains an instance of `ZoneOffset` using an offset in hours. |
+| static [ZoneOffset](ZoneOffset.md)! | ofHoursMinutes Obtains an instance of `ZoneOffset` using an offset in hours and minutes. |
+| static [ZoneOffset](ZoneOffset.md)! | ofHoursMinutesSeconds Obtains an instance of `ZoneOffset` using an offset in hours, minutes and seconds. |
 | --- | --- |
-| static [ZoneOffset](ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#ofTotalSeconds(kotlin.Int)(totalSeconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `ZoneOffset` specifying the total offset in seconds |
-| R | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this offset using the specified query. |
-| [ValueRange](../java.time.temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| static [ZoneOffset](ZoneOffset.md)! | ofTotalSeconds Obtains an instance of `ZoneOffset` specifying the total offset in seconds |
+| R | query Queries this offset using the specified query. |
+| [ValueRange](../java.time.temporal/ValueRange.md)! | range Gets the range of valid values for the specified field. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#toString()()` Outputs this offset as a `String`, using the normalized ID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Outputs this offset as a `String`, using the normalized ID. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/time/ZoneId` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#getAvailableZoneIds()()` Gets the set of available zone IDs. This set includes the string form of all available region-based IDs. Offset-based zone IDs are not included in the returned set. The ID can be passed to `https://developer.android.com/reference/kotlin/java/time/ZoneId#of(kotlin.String)` to create a `ZoneId`. The set of zone IDs can increase over time, although in a typical application the set of IDs is fixed. Each call to this method is thread-safe. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#getDisplayName(java.time.format.TextStyle,%20java.util.Locale)(style: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the textual representation of the zone, such as 'British Time' or '+02:00'. This returns the textual name used to identify the time-zone ID, suitable for presentation to the user. The parameters control the style of the returned text and the locale. If no textual mapping is found then the `https://developer.android.com/reference/kotlin/java/time/ZoneId#getId()` is returned. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#normalized()()` Normalizes the time-zone ID, returning a `ZoneOffset` where possible. The returns a normalized `ZoneId` that can be used in place of this ID. The result will have `ZoneRules` equivalent to those returned by this object, however the ID returned by `getId()` may be different. The normalization checks if the rules of this `ZoneId` have a fixed offset. If they do, then the `ZoneOffset` equal to that offset is returned. Otherwise `this` is returned. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#of(kotlin.String,%20kotlin.collections.MutableMap)(zoneId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, aliasMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Obtains an instance of `ZoneId` using its ID using a map of aliases to supplement the standard zone IDs. Many users of time-zones use short abbreviations, such as PST for 'Pacific Standard Time' and PDT for 'Pacific Daylight Time'. These abbreviations are not unique, and so cannot be used as IDs. This method allows a map of string to time-zone to be setup and reused within an application. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#ofOffset(kotlin.String,%20java.time.ZoneOffset)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset#!)` Obtains an instance of `ZoneId` wrapping an offset. If the prefix is "GMT", "UTC", or "UT" a `ZoneId` with the prefix and the non-zero offset is returned. If the prefix is empty `""` the `ZoneOffset` is returned. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#systemDefault()()` Gets the system default time-zone. This queries `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#getDefault()` to find the default time-zone and converts it to a `ZoneId`. If the system default time-zone is changed, then the result of this method will also change. <br /> | ||
+| From class ZoneId |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | getAvailableZoneIds Gets the set of available zone IDs. This set includes the string form of all available region-based IDs. Offset-based zone IDs are not included in the returned set. The ID can be passed to of to create a `ZoneId`. The set of zone IDs can increase over time, although in a typical application the set of IDs is fixed. Each call to this method is thread-safe. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getDisplayName Gets the textual representation of the zone, such as 'British Time' or '+02:00'. This returns the textual name used to identify the time-zone ID, suitable for presentation to the user. The parameters control the style of the returned text and the locale. If no textual mapping is found then the getId is returned. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | normalized Normalizes the time-zone ID, returning a `ZoneOffset` where possible. The returns a normalized `ZoneId` that can be used in place of this ID. The result will have `ZoneRules` equivalent to those returned by this object, however the ID returned by `getId()` may be different. The normalization checks if the rules of this `ZoneId` have a fixed offset. If they do, then the `ZoneOffset` equal to that offset is returned. Otherwise `this` is returned. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | of Obtains an instance of `ZoneId` using its ID using a map of aliases to supplement the standard zone IDs. Many users of time-zones use short abbreviations, such as PST for 'Pacific Standard Time' and PDT for 'Pacific Daylight Time'. These abbreviations are not unique, and so cannot be used as IDs. This method allows a map of string to time-zone to be setup and reused within an application. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | ofOffset Obtains an instance of `ZoneId` wrapping an offset. If the prefix is "GMT", "UTC", or "UT" a `ZoneId` with the prefix and the non-zero offset is returned. If the prefix is empty `""` the `ZoneOffset` is returned. <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneId!` | systemDefault Gets the system default time-zone. This queries getDefault to find the default time-zone and converts it to a `ZoneId`. If the system default time-zone is changed, then the result of this method will also change. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -70,7 +70,7 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 
 | Inherited properties ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/time/ZoneId` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#SHORT_IDS:kotlin.collections.MutableMap` A map of zone overrides to enable the short time-zone names to be used. Use of short zone IDs has been deprecated in `java.util.TimeZone`. This map allows the IDs to continue to be used via the `https://developer.android.com/reference/kotlin/java/time/ZoneId#of(kotlin.String,%20kotlin.collections.MutableMap)` factory method. This map contains a mapping of the IDs that is in line with TZDB 2005r and later, where 'EST', 'MST' and 'HST' map to IDs which do not include daylight savings. This maps as follows: - EST - -05:00 - HST - -10:00 - MST - -07:00 - ACT - Australia/Darwin - AET - Australia/Sydney - AGT - America/Argentina/Buenos_Aires - ART - Africa/Cairo - AST - America/Anchorage - BET - America/Sao_Paulo - BST - Asia/Dhaka - CAT - Africa/Harare - CNT - America/St_Johns - CST - America/Chicago - CTT - Asia/Shanghai - EAT - Africa/Addis_Ababa - ECT - Europe/Paris - IET - America/Indiana/Indianapolis - IST - Asia/Kolkata - JST - Asia/Tokyo - MIT - Pacific/Apia - NET - Asia/Yerevan - NST - Pacific/Auckland - PLT - Asia/Karachi - PNT - America/Phoenix - PRT - America/Puerto_Rico - PST - America/Los_Angeles - SST - Pacific/Guadalcanal - VST - Asia/Ho_Chi_Minh The map is unmodifiable. <br /> | ||
+| From class ZoneId |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | `https://developer.android.com/reference/kotlin/java/time/ZoneId#SHORT_IDS:kotlin.collections.MutableMap` A map of zone overrides to enable the short time-zone names to be used. Use of short zone IDs has been deprecated in `java.util.TimeZone`. This map allows the IDs to continue to be used via the of factory method. This map contains a mapping of the IDs that is in line with TZDB 2005r and later, where 'EST', 'MST' and 'HST' map to IDs which do not include daylight savings. This maps as follows: - EST - -05:00 - HST - -10:00 - MST - -07:00 - ACT - Australia/Darwin - AET - Australia/Sydney - AGT - America/Argentina/Buenos_Aires - ART - Africa/Cairo - AST - America/Anchorage - BET - America/Sao_Paulo - BST - Asia/Dhaka - CAT - Africa/Harare - CNT - America/St_Johns - CST - America/Chicago - CTT - Asia/Shanghai - EAT - Africa/Addis_Ababa - ECT - Europe/Paris - IET - America/Indiana/Indianapolis - IST - Asia/Kolkata - JST - Asia/Tokyo - MIT - Pacific/Apia - NET - Asia/Yerevan - NST - Pacific/Auckland - PLT - Asia/Karachi - PNT - America/Phoenix - PRT - America/Puerto_Rico - PST - America/Los_Angeles - SST - Pacific/Guadalcanal - VST - Asia/Ho_Chi_Minh The map is unmodifiable. <br /> | ||
 
 ## Public methods
 
@@ -86,9 +86,9 @@ Adjusts the specified temporal object to have the same offset as this object.
 
 This returns a temporal object of the same observable type as the input with the offset changed to be the same as this.
 
-The adjustment is equivalent to using `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalField,%20kotlin.Long)` passing `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` as the field.
+The adjustment is equivalent to using with passing ChronoField as the field.
 
-In most cases, it is clearer to reverse the calling pattern by using `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalAdjuster)`:
+In most cases, it is clearer to reverse the calling pattern by using with:
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -174,9 +174,9 @@ This obtains an offset based on the specified temporal. A `TemporalAccessor` rep
 
 A `TemporalAccessor` represents some form of date and time information. This factory converts the arbitrary temporal object to an instance of `ZoneOffset`.
 
-The conversion uses the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#offset()` query, which relies on extracting the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` field.
+The conversion uses the offset query, which relies on extracting the ChronoField field.
 
-This method matches the signature of the functional interface `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery` allowing it to be used as a query via method reference, `ZoneOffset::from`.
+This method matches the signature of the functional interface TemporalQuery allowing it to be used as a query via method reference, `ZoneOffset::from`.
 
 | Parameters ||
 |---|---|
@@ -202,7 +202,7 @@ Gets the value of the specified field from this offset as an `int`.
 
 This queries this offset for the value of the specified field. The returned value will always be within the valid range of values for the field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `OFFSET_SECONDS` field returns the value of the offset. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a ChronoField then the query is implemented here. The `OFFSET_SECONDS` field returns the value of the offset. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.getFrom(TemporalAccessor)` passing `this` as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
@@ -253,7 +253,7 @@ Gets the value of the specified field from this offset as a `long`.
 
 This queries this offset for the value of the specified field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `OFFSET_SECONDS` field returns the value of the offset. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a ChronoField then the query is implemented here. The `OFFSET_SECONDS` field returns the value of the offset. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.getFrom(TemporalAccessor)` passing `this` as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
@@ -332,9 +332,9 @@ fun isSupported(field: TemporalField!): Boolean
 
 Checks if the specified field is supported.
 
-This checks if this offset can be queried for the specified field. If false, then calling the `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#range(java.time.temporal.TemporalField)` and `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#get(java.time.temporal.TemporalField)` methods will throw an exception.
+This checks if this offset can be queried for the specified field. If false, then calling the range and get methods will throw an exception.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `OFFSET_SECONDS` field returns true. All other `ChronoField` instances will return false.
+If the field is a ChronoField then the query is implemented here. The `OFFSET_SECONDS` field returns true. All other `ChronoField` instances will return false.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.isSupportedBy(TemporalAccessor)` passing `this` as the argument. Whether the field is supported is determined by the field.
 
@@ -356,7 +356,7 @@ static fun of(offsetId: String!): ZoneOffset!
 
 Obtains an instance of `ZoneOffset` using the ID.
 
-This method parses the string ID of a `ZoneOffset` to return an instance. The parsing accepts all the formats generated by `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getId()`, plus some additional formats:
+This method parses the string ID of a `ZoneOffset` to return an instance. The parsing accepts all the formats generated by getId, plus some additional formats:
 
 - `Z` - for UTC
 - `+h`
@@ -372,7 +372,7 @@ This method parses the string ID of a `ZoneOffset` to return an instance. The pa
 
 Note that ± means either the plus or minus symbol.
 
-The ID of the returned offset will be normalized to one of the formats described by `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#getId()`.
+The ID of the returned offset will be normalized to one of the formats described by getId.
 
 The maximum supported range is from +18:00 to -18:00 inclusive.
 
@@ -505,7 +505,7 @@ Queries this offset using the specified query.
 
 This queries this offset using the specified query strategy object. The `TemporalQuery` object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be.
 
-The result of this method is obtained by invoking the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery#queryFrom(java.time.temporal.TemporalAccessor)` method on the specified query passing `this` as the argument.
+The result of this method is obtained by invoking the queryFrom method on the specified query passing `this` as the argument.
 
 | Parameters ||
 |---|---|
@@ -533,7 +533,7 @@ Gets the range of valid values for the specified field.
 
 The range object expresses the minimum and maximum valid values for a field. This offset is used to enhance the accuracy of the returned range. If it is not possible to return the range, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `https://developer.android.com/reference/kotlin/java/time/ZoneOffset#isSupported(java.time.temporal.TemporalField)` will return appropriate range instances. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a ChronoField then the query is implemented here. The isSupported will return appropriate range instances. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.rangeRefinedBy(TemporalAccessor)` passing `this` as the argument. Whether the range can be obtained is determined by the field.
 

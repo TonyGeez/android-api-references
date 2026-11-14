@@ -34,7 +34,7 @@ The framework will instantiate an implementation of this class on behalf of the 
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTION_BAR_OVERLAY:kotlin.Int` Flag for requesting an Action Bar that overlays window content. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTION_MODE_OVERLAY:kotlin.Int` Flag for specifying the behavior of action modes when an Action Bar is not present. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int` Enables Activities to run Activity Transitions either through sending or receiving ActivityOptions bundle created with `https://developer.android.com/reference/kotlin/android/app/ActivityOptions.html#makeSceneTransitionAnimation(android.app.Activity,%20android.util.Pair)` or `https://developer.android.com/reference/kotlin/android/app/ActivityOptions.html#makeSceneTransitionAnimation(android.app.Activity,%20android.view.View,%20kotlin.String)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int` Enables Activities to run Activity Transitions either through sending or receiving ActivityOptions bundle created with makeSceneTransitionAnimation or makeSceneTransitionAnimation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_CONTENT_TRANSITIONS:kotlin.Int` Flag for requesting that window content changes should be animated using a TransitionManager. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_CONTEXT_MENU:kotlin.Int` Flag for the context menu. |
@@ -66,213 +66,213 @@ The framework will instantiate an implementation of this class on behalf of the 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/Window#Window(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` <br /> |
+| Window <br /> |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Variation on `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` to add an additional content view to the screen. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#addFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience function to set the flag bits as specified in flags, as per `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#addOnFrameMetricsAvailableListener(android.view.Window.OnFrameMetricsAvailableListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/view/Window.OnFrameMetricsAvailableListener, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Set an observer to collect frame stats for each frame rendered in this window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addContentView Variation on setContentView to add an additional content view to the screen. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addFlags Convenience function to set the flag bits as specified in flags, as per setFlags. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnFrameMetricsAvailableListener Set an observer to collect frame stats for each frame rendered in this window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#clearFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience function to clear the flag bits as specified in flags, as per `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#closeAllPanels()()` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#closePanel(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearFlags Convenience function to clear the flag bits as specified in flags, as per setFlags. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | closeAllPanels <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | closePanel <br /> |
 | --- | --- |
-| open T | `https://developer.android.com/reference/kotlin/android/view/Window#findViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds a view that was identified by the `android:id` XML attribute that was processed in android. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getAllowEnterTransitionOverlap()()` Returns how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)` overlaps with the exit transition of the calling Activity. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getAllowReturnTransitionOverlap()()` Returns how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)` overlaps with the exit transition of the called Activity when reentering after if finishes. |
+| open T | findViewById Finds a view that was identified by the `android:id` XML attribute that was processed in android. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getAllowEnterTransitionOverlap Returns how the transition set in setEnterTransition overlaps with the exit transition of the calling Activity. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getAllowReturnTransitionOverlap Returns how the transition set in setExitTransition overlaps with the exit transition of the called Activity when reentering after if finishes. |
 | --- | --- |
-| [WindowManager.LayoutParams](../android/view/WindowManager.LayoutParams.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()()` Retrieve the current window attributes associated with this panel. |
-| [Window.Callback](../android/view/Window.Callback.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getCallback()()` Return the current Callback interface for this window. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getColorMode()()` Returns the requested color mode of the window, one of `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_DEFAULT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`. |
+| [WindowManager.LayoutParams](../android/view/WindowManager.LayoutParams.md)! | getAttributes Retrieve the current window attributes associated with this panel. |
+| [Window.Callback](../android/view/Window.Callback.md)! | getCallback Return the current Callback interface for this window. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColorMode Returns the requested color mode of the window, one of `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_DEFAULT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`. |
 | --- | --- |
-| [Window](Window.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContainer()()` Return the container for this Window. |
-| open [Scene](../android.transition/Scene.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContentScene()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/Scene.html#` representing this window's current content. |
-| [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContext()()` Return the Context this window policy is running in, for retrieving resources and other information. |
+| [Window](Window.md)! | getContainer Return the container for this Window. |
+| open [Scene](../android.transition/Scene.md)! | getContentScene Retrieve the `https://developer.android.com/reference/kotlin/android/transition/Scene.html#` representing this window's current content. |
+| [Context](../android.content/Context.md)! | getContext Return the Context this window policy is running in, for retrieving resources and other information. |
 | --- | --- |
-| abstract [View](View.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getCurrentFocus()()` Return the view in this Window that currently has focus, or null if there are none. |
-| abstract [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()()` Retrieve the top-level window decor view (containing the standard window frame/decorations and the client's content inside of that), which can be added as a window to the window manager. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getDefaultFeatures(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Return the feature bits set by default on a window. |
+| abstract [View](View.md)? | getCurrentFocus Return the view in this Window that currently has focus, or null if there are none. |
+| abstract [View](View.md) | getDecorView Retrieve the top-level window decor view (containing the standard window frame/decorations and the client's content inside of that), which can be added as a window to the window manager. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefaultFeatures Return the feature bits set by default on a window. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getDesiredHdrHeadroom()()` Get the desired amount of HDR headroom as set by `https://developer.android.com/reference/kotlin/android/view/Window#setDesiredHdrHeadroom(kotlin.Float)` |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getEnterTransition()()` Returns the transition used to move Views into the initial scene. |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getExitTransition()()` Returns the Transition that will be used to move Views out of the scene when starting a new Activity. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getDesiredHdrHeadroom Get the desired amount of HDR headroom as set by setDesiredHdrHeadroom |
+| open [Transition](../android.transition/Transition.md)! | getEnterTransition Returns the transition used to move Views into the initial scene. |
+| open [Transition](../android.transition/Transition.md)! | getExitTransition Returns the Transition that will be used to move Views out of the scene when starting a new Activity. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getFrameRateBoostOnTouchEnabled()()` Get whether frame rate touch boost is enabled `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)` |
-| open [WindowInsetsController](WindowInsetsController.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getInsetsController()()` <br /> |
-| abstract [LayoutInflater](LayoutInflater.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getLayoutInflater()()` Quick access to the `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` instance that this Window retrieved from its Context. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getFrameRateBoostOnTouchEnabled Get whether frame rate touch boost is enabled setFrameRateBoostOnTouchEnabled |
+| open [WindowInsetsController](WindowInsetsController.md)? | getInsetsController <br /> |
+| abstract [LayoutInflater](LayoutInflater.md) | getLayoutInflater Quick access to the LayoutInflater instance that this Window retrieved from its Context. |
 | --- | --- |
-| open [MediaController](../android.media.session/MediaController.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getMediaController()()` Gets the `https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#` that was previously set. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getNavigationBarColor()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getNavigationBarDividerColor()()` Retrieves the color of the navigation bar divider. |
+| open [MediaController](../android.media.session/MediaController.md)! | getMediaController Gets the `https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#` that was previously set. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNavigationBarColor <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNavigationBarDividerColor Retrieves the color of the navigation bar divider. |
 | --- | --- |
-| open [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getOnBackInvokedDispatcher()()` Returns the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#` instance associated with this window. |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getReenterTransition()()` Returns the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getReturnTransition()()` Returns the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAfterTransition()`. |
+| open [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md) | getOnBackInvokedDispatcher Returns the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#` instance associated with this window. |
+| open [Transition](../android.transition/Transition.md)! | getReenterTransition Returns the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. |
+| open [Transition](../android.transition/Transition.md)! | getReturnTransition Returns the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to finishAfterTransition. |
 | --- | --- |
-| open [AttachedSurfaceControl](AttachedSurfaceControl.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getRootSurfaceControl()()` This will be null before a content view is added, e. |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementEnterTransition()()` Returns the Transition that will be used for shared elements transferred into the content Scene. |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementExitTransition()()` Returns the Transition to use for shared elements in the launching Window prior to transferring to the launched Activity's Window. |
+| open [AttachedSurfaceControl](AttachedSurfaceControl.md)? | getRootSurfaceControl This will be null before a content view is added, e. |
+| open [Transition](../android.transition/Transition.md)! | getSharedElementEnterTransition Returns the Transition that will be used for shared elements transferred into the content Scene. |
+| open [Transition](../android.transition/Transition.md)! | getSharedElementExitTransition Returns the Transition to use for shared elements in the launching Window prior to transferring to the launched Activity's Window. |
 | --- | --- |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementReenterTransition()()` Returns the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. |
-| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementReturnTransition()()` Returns the Transition that will be used for shared elements transferred back to a calling Activity. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementsUseOverlay()()` Returns `true` when shared elements should use an Overlay during shared element transitions or `false` when they should animate as part of the normal View hierarchy. |
+| open [Transition](../android.transition/Transition.md)! | getSharedElementReenterTransition Returns the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. |
+| open [Transition](../android.transition/Transition.md)! | getSharedElementReturnTransition Returns the Transition that will be used for shared elements transferred back to a calling Activity. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getSharedElementsUseOverlay Returns `true` when shared elements should use an Overlay during shared element transitions or `false` when they should animate as part of the normal View hierarchy. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getStatusBarColor()()` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/Window#getSystemGestureExclusionRects()()` Retrieve the list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getTransitionBackgroundFadeDuration()()` Returns the duration, in milliseconds, of the window background fade when transitioning into or away from an Activity when called with an Activity Transition. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStatusBarColor <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\> | getSystemGestureExclusionRects Retrieve the list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTransitionBackgroundFadeDuration Returns the duration, in milliseconds, of the window background fade when transitioning into or away from an Activity when called with an Activity Transition. |
 | --- | --- |
-| open [TransitionManager](../android.transition/TransitionManager.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getTransitionManager()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` responsible for for default transitions in this window. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getVolumeControlStream()()` <br /> |
-| open [WindowManager](WindowManager.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getWindowManager()()` Return the window manager allowing this Window to display its own windows. |
+| open [TransitionManager](../android.transition/TransitionManager.md)! | getTransitionManager Retrieve the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` responsible for for default transitions in this window. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVolumeControlStream <br /> |
+| open [WindowManager](WindowManager.md)! | getWindowManager Return the window manager allowing this Window to display its own windows. |
 | --- | --- |
-| [TypedArray](../android.content.res/TypedArray.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getWindowStyle()()` Return the `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window:kotlin.IntArray` attributes from this window's theme. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#hasChildren()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#hasFeature(kotlin.Int)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for the availability of a certain feature. |
+| [TypedArray](../android.content.res/TypedArray.md)! | getWindowStyle Return the `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window:kotlin.IntArray` attributes from this window's theme. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasChildren <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasFeature Query for the availability of a certain feature. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#injectInputEvent(android.view.InputEvent)(event: https://developer.android.com/reference/kotlin/android/view/InputEvent!)` Inject an event to window locally. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#invalidatePanelMenu(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isActive()()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | injectInputEvent Inject an event to window locally. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | invalidatePanelMenu <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isActive <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isFloating()()` Return whether this window is being displayed with a floating style (based on the `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating:kotlin.Int` attribute in the style/theme). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isFrameRatePowerSavingsBalanced()()` Get whether frameratepowersavingsbalance is enabled for this Window. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isNavigationBarContrastEnforced()()` Returns whether the system is ensuring that the navigation bar has enough contrast when a fully transparent background is requested. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFloating Return whether this window is being displayed with a floating style (based on the `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating:kotlin.Int` attribute in the style/theme). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFrameRatePowerSavingsBalanced Get whether frameratepowersavingsbalance is enabled for this Window. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNavigationBarContrastEnforced Returns whether the system is ensuring that the navigation bar has enough contrast when a fully transparent background is requested. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isShortcutKey(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` Is a keypress one of the defined shortcut keys for this window. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isStatusBarContrastEnforced()()` Returns whether the system is ensuring that the status bar has enough contrast when a fully transparent background is requested. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#isWideColorGamut()()` Returns true if this window's color mode is `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int`, the display has a wide color gamut and this device supports wide color gamut rendering. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isShortcutKey Is a keypress one of the defined shortcut keys for this window. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStatusBarContrastEnforced Returns whether the system is ensuring that the status bar has enough contrast when a fully transparent background is requested. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWideColorGamut Returns true if this window's color mode is `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int`, the display has a wide color gamut and this device supports wide color gamut rendering. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#makeActive()()` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Should be called when the configuration is changed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#openPanel(kotlin.Int,%20android.view.KeyEvent)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | makeActive <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onConfigurationChanged Should be called when the configuration is changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | openPanel <br /> |
 | --- | --- |
-| abstract [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#peekDecorView()()` Retrieve the current decor view, but only if it has already been created; otherwise returns null. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#performContextMenuIdentifierAction(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#performPanelIdentifierAction(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| abstract [View](View.md)! | peekDecorView Retrieve the current decor view, but only if it has already been created; otherwise returns null. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performContextMenuIdentifierAction <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performPanelIdentifierAction <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#performPanelShortcut(kotlin.Int,%20kotlin.Int,%20android.view.KeyEvent,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#registerScrollCaptureCallback(android.view.ScrollCaptureCallback)(callback: https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback)` Used to provide scroll capture support for an arbitrary window. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#removeOnFrameMetricsAvailableListener(android.view.Window.OnFrameMetricsAvailableListener)(listener: https://developer.android.com/reference/kotlin/android/view/Window.OnFrameMetricsAvailableListener!)` Remove observer and stop listening to frame stats for this window. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performPanelShortcut <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerScrollCaptureCallback Used to provide scroll capture support for an arbitrary window. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnFrameMetricsAvailableListener Remove observer and stop listening to frame stats for this window. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#requestFeature(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Enable extended screen features. |
-| T | `https://developer.android.com/reference/kotlin/android/view/Window#requireViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds a view that was identified by the `android:id` XML attribute that was processed in android. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#restoreHierarchyState(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestFeature Enable extended screen features. |
+| T | requireViewById Finds a view that was identified by the `android:id` XML attribute that was processed in android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | restoreHierarchyState <br /> |
 | --- | --- |
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#saveHierarchyState()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setAllowEnterTransitionOverlap(kotlin.Boolean)(allow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)` overlaps with the exit transition of the calling Activity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setAllowReturnTransitionOverlap(kotlin.Boolean)(allow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)` overlaps with the exit transition of the called Activity when reentering after if finishes. |
+| abstract [Bundle](../android.os/Bundle.md)! | saveHierarchyState <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAllowEnterTransitionOverlap Controls how the transition set in setEnterTransition overlaps with the exit transition of the calling Activity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAllowReturnTransitionOverlap Controls how the transition set in setExitTransition overlaps with the exit transition of the called Activity when reentering after if finishes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setAttributes(android.view.WindowManager.LayoutParams)(a: https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams!)` Specify custom window attributes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)(blurRadius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Blurs the screen behind the window within the bounds of the window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Change the background of this window to a custom Drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAttributes Specify custom window attributes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBackgroundBlurRadius Blurs the screen behind the window within the bounds of the window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBackgroundDrawable Change the background of this window to a custom Drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundDrawableResource(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Change the background of this window to a Drawable resource. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setCallback(android.view.Window.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/Window.Callback!)` Set the Callback interface for this window, used to intercept key events and other dynamic operations in the window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setChildDrawable(kotlin.Int,%20android.graphics.drawable.Drawable)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBackgroundDrawableResource Change the background of this window to a Drawable resource. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCallback Set the Callback interface for this window, used to intercept key events and other dynamic operations in the window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setChildDrawable <br /> |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setChildInt(kotlin.Int,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setClipToOutline(kotlin.Boolean)(clipToOutline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether window content should be clipped to the outline of the window background. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setColorMode(kotlin.Int)(colorMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the requested color mode of the window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setChildInt <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setClipToOutline Sets whether window content should be clipped to the outline of the window background. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setColorMode Sets the requested color mode of the window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setContainer(android.view.Window)(container: https://developer.android.com/reference/kotlin/android/view/Window#!)` Set the container for this window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` Convenience for `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` set the screen content to an explicit view. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)` Set the screen content to an explicit view. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContainer Set the container for this window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentView Convenience for setContentView set the screen content to an explicit view. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentView Set the screen content to an explicit view. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(kotlin.Int)(layoutResID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience for `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` to set the screen content from a layout resource. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setDecorCaptionShade(kotlin.Int)(decorCaptionShade: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set what color should the caption controls be. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setDecorFitsSystemWindows(kotlin.Boolean)(decorFitsSystemWindows: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the decor view should fit root-level content views for `https://developer.android.com/reference/kotlin/android/view/WindowInsets`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentView Convenience for setContentView to set the screen content from a layout resource. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDecorCaptionShade Set what color should the caption controls be. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDecorFitsSystemWindows Sets whether the decor view should fit root-level content views for WindowInsets. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setDesiredHdrHeadroom(kotlin.Float)(desiredHeadroom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the desired amount of HDR headroom to be used when rendering as a ratio of targetHdrPeakBrightnessInNits / targetSdrWhitePointInNits. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setDimAmount(kotlin.Float)(amount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set the amount of dim behind the window when using `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_DIM_BEHIND:kotlin.Int`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setDimColor(kotlin.Long)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Set the color of the dim behind the window when using `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_DIM_BEHIND:kotlin.Int`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDesiredHdrHeadroom Sets the desired amount of HDR headroom to be used when rendering as a ratio of targetHdrPeakBrightnessInNits / targetSdrWhitePointInNits. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDimAmount Set the amount of dim behind the window when using `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_DIM_BEHIND:kotlin.Int`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDimColor Set the color of the dim behind the window when using `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_DIM_BEHIND:kotlin.Int`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setElevation(kotlin.Float)(elevation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the window elevation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used to move Views into the initial scene. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used to move Views out of the scene when starting a new Activity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setElevation Sets the window elevation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEnterTransition Sets the Transition that will be used to move Views into the initial scene. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExitTransition Sets the Transition that will be used to move Views out of the scene when starting a new Activity. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFeatureDrawable(kotlin.Int,%20android.graphics.drawable.Drawable)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set an explicit Drawable value for feature of this window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFeatureDrawableAlpha(kotlin.Int,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a custom alpha value for the given drawable feature, controlling how much the background is visible through it. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFeatureDrawableResource(kotlin.Int,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the value for a drawable feature of this window, from a resource identifier. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFeatureDrawable Set an explicit Drawable value for feature of this window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFeatureDrawableAlpha Set a custom alpha value for the given drawable feature, controlling how much the background is visible through it. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFeatureDrawableResource Set the value for a drawable feature of this window, from a resource identifier. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFeatureDrawableUri(kotlin.Int,%20android.net.Uri)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Set the value for a drawable feature of this window, from a URI. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFeatureInt(kotlin.Int,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the integer value for a feature. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the flags of the window, as per the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams` flags. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFeatureDrawableUri Set the value for a drawable feature of this window, from a URI. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFeatureInt Set the integer value for a feature. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFlags Set the flags of the window, as per the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams` flags. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFormat(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the format of window, as per the PixelFormat types. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the frame rate touch boost is enabled for this Window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRatePowerSavingsBalanced(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether frameratepowersavingsbalance is enabled for this Window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFormat Set the format of window, as per the PixelFormat types. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFrameRateBoostOnTouchEnabled Sets whether the frame rate touch boost is enabled for this Window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFrameRatePowerSavingsBalanced Set whether frameratepowersavingsbalance is enabled for this Window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setGravity(kotlin.Int)(gravity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the gravity of the window, as per the Gravity constants. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setHideOverlayWindows(kotlin.Boolean)(hide: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Prevent non-system overlay windows from being drawn on top of this window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setIcon(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the primary icon for this window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setGravity Set the gravity of the window, as per the Gravity constants. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHideOverlayWindows Prevent non-system overlay windows from being drawn on top of this window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setIcon Set the primary icon for this window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setLayout(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the width and height layout parameters of the window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setLocalFocus(kotlin.Boolean,%20kotlin.Boolean)(hasFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, inTouchMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set focus locally. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setLogo(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the logo for this window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLayout Set the width and height layout parameters of the window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLocalFocus Set focus locally. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLogo Set the logo for this window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setMediaController(android.media.session.MediaController)(controller: https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#!)` Sets a `https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#` to send media keys and volume changes to. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color of the navigation bar to `color`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarContrastEnforced(kotlin.Boolean)(enforceContrast: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the system should ensure that the navigation bar has enough contrast when a fully transparent background is requested. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMediaController Sets a `https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#` to send media keys and volume changes to. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNavigationBarColor Sets the color of the navigation bar to `color`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNavigationBarContrastEnforced Sets whether the system should ensure that the navigation bar has enough contrast when a fully transparent background is requested. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarDividerColor(kotlin.Int)(dividerColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Shows a thin line of the specified color between the navigation bar and the app content. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setPreferMinimalPostProcessing(kotlin.Boolean)(isPreferred: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If `isPreferred` is true, this method requests that the connected display does minimal post processing when this window is visible on the screen. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setReenterTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNavigationBarDividerColor Shows a thin line of the specified color between the navigation bar and the app content. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPreferMinimalPostProcessing If `isPreferred` is true, this method requests that the connected display does minimal post processing when this window is visible on the screen. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setReenterTransition Sets the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setResizingCaptionDrawable(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!)` Set the drawable that is drawn underneath the caption during the resizing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setRestrictedCaptionAreaListener(android.view.Window.OnRestrictedCaptionAreaChangedListener)(listener: https://developer.android.com/reference/kotlin/android/view/Window.OnRestrictedCaptionAreaChangedListener!)` Set a callback for changes of area where caption will draw its content. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setReturnTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAfterTransition()`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setResizingCaptionDrawable Set the drawable that is drawn underneath the caption during the resizing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRestrictedCaptionAreaListener Set a callback for changes of area where caption will draw its content. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setReturnTransition Sets the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to finishAfterTransition. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementEnterTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used for shared elements transferred into the content Scene. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementExitTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used for shared elements after starting a new Activity before the shared elements are transferred to the called Activity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementReenterTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSharedElementEnterTransition Sets the Transition that will be used for shared elements transferred into the content Scene. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSharedElementExitTransition Sets the Transition that will be used for shared elements after starting a new Activity before the shared elements are transferred to the called Activity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSharedElementReenterTransition Sets the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementReturnTransition(android.transition.Transition)(transition: https://developer.android.com/reference/kotlin/android/transition/Transition.html#!)` Sets the Transition that will be used for shared elements transferred back to a calling Activity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementsUseOverlay(kotlin.Boolean)(sharedElementsUseOverlay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether or not shared elements should use an Overlay during shared element transitions. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSoftInputMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify an explicit soft input mode to use for the window, as per `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#softInputMode:kotlin.Int`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSharedElementReturnTransition Sets the Transition that will be used for shared elements transferred back to a calling Activity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSharedElementsUseOverlay Sets whether or not shared elements should use an Overlay during shared element transitions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSoftInputMode Specify an explicit soft input mode to use for the window, as per `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#softInputMode:kotlin.Int`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setStatusBarColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the color of the status bar to `color`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setStatusBarContrastEnforced(kotlin.Boolean)(ensureContrast: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the system should ensure that the status bar has enough contrast when a fully transparent background is requested. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSustainedPerformanceMode(kotlin.Boolean)(enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the Sustained Performance requirement for the calling window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStatusBarColor Sets the color of the status bar to `color`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStatusBarContrastEnforced Sets whether the system should ensure that the status bar has enough contrast when a fully transparent background is requested. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSustainedPerformanceMode Sets the Sustained Performance requirement for the calling window. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setSystemGestureExclusionRects(kotlin.collections.MutableList)(rects: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!>)` Sets a list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setTitle(kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets a user-facing title for the window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setTitleColor(kotlin.Int)(textColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSystemGestureExclusionRects Sets a list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTitle Sets a user-facing title for the window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTitleColor <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setTransitionBackgroundFadeDuration(kotlin.Long)(fadeDurationMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the duration, in milliseconds, of the window background fade when transitioning into or away from an Activity when called with an Activity Transition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setTransitionManager(android.transition.TransitionManager)(tm: https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#!)` Set the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` to use for default transitions in this window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setType(kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the type of the window, as per the WindowManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTransitionBackgroundFadeDuration Sets the duration, in milliseconds, of the window background fade when transitioning into or away from an Activity when called with an Activity Transition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTransitionManager Set the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` to use for default transitions in this window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setType Set the type of the window, as per the WindowManager. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setUiOptions(kotlin.Int)(uiOptions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set extra options that will influence the UI for this window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setUiOptions(kotlin.Int,%20kotlin.Int)(uiOptions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set extra options that will influence the UI for this window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setVolumeControlStream(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUiOptions Set extra options that will influence the UI for this window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUiOptions Set extra options that will influence the UI for this window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVolumeControlStream <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setWindowAnimations(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify custom animations to use for the window, as per `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#windowAnimations:kotlin.Int`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setWindowManager(android.view.WindowManager,%20android.os.IBinder,%20kotlin.String)(wm: https://developer.android.com/reference/kotlin/android/view/WindowManager!, appToken: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!, appName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates and sets the window manager for use by this Window to, for example, display panels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setWindowManager(android.view.WindowManager,%20android.os.IBinder,%20kotlin.String,%20kotlin.Boolean)(wm: https://developer.android.com/reference/kotlin/android/view/WindowManager!, appToken: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!, appName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, hardwareAccelerated: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates and sets the window manager for use by this Window to, for example, display panels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWindowAnimations Specify custom animations to use for the window, as per `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#windowAnimations:kotlin.Int`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWindowManager Creates and sets the window manager for use by this Window to, for example, display panels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWindowManager Creates and sets the window manager for use by this Window to, for example, display panels. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#superDispatchGenericMotionEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Used by custom windows, such as Dialog, to pass the generic motion event further down the view hierarchy. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#superDispatchKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` Used by custom windows, such as Dialog, to pass the key press event further down the view hierarchy. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#superDispatchKeyShortcutEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` Used by custom windows, such as Dialog, to pass the key shortcut press event further down the view hierarchy. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | superDispatchGenericMotionEvent Used by custom windows, such as Dialog, to pass the generic motion event further down the view hierarchy. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | superDispatchKeyEvent Used by custom windows, such as Dialog, to pass the key press event further down the view hierarchy. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | superDispatchKeyShortcutEvent Used by custom windows, such as Dialog, to pass the key shortcut press event further down the view hierarchy. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#superDispatchTouchEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Used by custom windows, such as Dialog, to pass the touch screen event further down the view hierarchy. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#superDispatchTrackballEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Used by custom windows, such as Dialog, to pass the trackball event further down the view hierarchy. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#takeInputQueue(android.view.InputQueue.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/InputQueue.Callback!)` Take ownership of this window's InputQueue. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | superDispatchTouchEvent Used by custom windows, such as Dialog, to pass the touch screen event further down the view hierarchy. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | superDispatchTrackballEvent Used by custom windows, such as Dialog, to pass the trackball event further down the view hierarchy. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | takeInputQueue Take ownership of this window's InputQueue. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#takeKeyEvents(kotlin.Boolean)(get: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Request that key events come to this activity. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#takeSurface(android.view.SurfaceHolder.Callback2)(callback: https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback2!)` Take ownership of this window's surface. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#togglePanel(kotlin.Int,%20android.view.KeyEvent)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | takeKeyEvents Request that key events come to this activity. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | takeSurface Take ownership of this window's surface. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | togglePanel <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#unregisterScrollCaptureCallback(android.view.ScrollCaptureCallback)(callback: https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback)` Unregisters a `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback` previously registered with this window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterScrollCaptureCallback Unregisters a ScrollCaptureCallback previously registered with this window. |
 
 | Protected methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getFeatures()()` Return the feature bits that are enabled. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getForcedWindowFlags()()` Return the window flags that have been explicitly set by the client, so will not be modified by `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getLocalFeatures()()` Return the feature bits that are being implemented by this Window. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFeatures Return the feature bits that are enabled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getForcedWindowFlags Return the window flags that have been explicitly set by the client, so will not be modified by getDecorView. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLocalFeatures Return the feature bits that are being implemented by this Window. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#hasSoftInputMode()()` Has the app specified their own soft input mode? |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#onActive()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setDefaultWindowFormat(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the default format of window, as per the PixelFormat types. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSoftInputMode Has the app specified their own soft input mode? |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onActive <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDefaultWindowFormat Set the default format of window, as per the PixelFormat types. |
 | --- | --- |
 
 ## Constants
@@ -285,7 +285,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DECOR_CAPTION_SHADE_AUTO: Int
 ```
 
-Flag for letting the theme drive the color of the window caption controls. Use with `https://developer.android.com/reference/kotlin/android/view/Window#setDecorCaptionShade(kotlin.Int)`. This is the default value.
+Flag for letting the theme drive the color of the window caption controls. Use with setDecorCaptionShade. This is the default value.
 
  Value: 0
 
@@ -297,7 +297,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DECOR_CAPTION_SHADE_DARK: Int
 ```
 
-Flag for setting dark-color controls on the window caption. Use with `https://developer.android.com/reference/kotlin/android/view/Window#setDecorCaptionShade(kotlin.Int)`.
+Flag for setting dark-color controls on the window caption. Use with setDecorCaptionShade.
 
  Value: 2
 
@@ -309,7 +309,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DECOR_CAPTION_SHADE_LIGHT: Int
 ```
 
-Flag for setting light-color controls on the window caption. Use with `https://developer.android.com/reference/kotlin/android/view/Window#setDecorCaptionShade(kotlin.Int)`.
+Flag for setting light-color controls on the window caption. Use with setDecorCaptionShade.
 
  Value: 1
 
@@ -322,7 +322,7 @@ Deprecated in [API level 22](https://developer.android.com/guide/topics/manifest
 protected static val DEFAULT_FEATURES: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/view/Window#getDefaultFeatures(android.content.Context)` instead.*
+**Deprecated:** *use getDefaultFeatures instead.*
 
 The default features enabled.
 
@@ -352,7 +352,7 @@ Flag for requesting an Action Bar that overlays window content. Normally an Acti
 
 This mode is especially useful with `https://developer.android.com/reference/kotlin/android/view/View#SYSTEM_UI_FLAG_FULLSCREEN:kotlin.Int`, which allows you to seamlessly hide the action bar in conjunction with other screen decorations.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int`, when an ActionBar is in this mode it will adjust the insets provided to `https://developer.android.com/reference/kotlin/android/view/View#fitSystemWindows(android.graphics.Rect)` to include the content covered by the action bar, so you can do layout within that space.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int`, when an ActionBar is in this mode it will adjust the insets provided to fitSystemWindows to include the content covered by the action bar, so you can do layout within that space.
 
  Value: 9
 
@@ -376,7 +376,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val FEATURE_ACTIVITY_TRANSITIONS: Int
 ```
 
-Enables Activities to run Activity Transitions either through sending or receiving ActivityOptions bundle created with `https://developer.android.com/reference/kotlin/android/app/ActivityOptions.html#makeSceneTransitionAnimation(android.app.Activity,%20android.util.Pair)` or `https://developer.android.com/reference/kotlin/android/app/ActivityOptions.html#makeSceneTransitionAnimation(android.app.Activity,%20android.view.View,%20kotlin.String)`.
+Enables Activities to run Activity Transitions either through sending or receiving ActivityOptions bundle created with makeSceneTransitionAnimation or makeSceneTransitionAnimation.
 
  Value: 13
 
@@ -390,7 +390,7 @@ static val FEATURE_CONTENT_TRANSITIONS: Int
 
 Flag for requesting that window content changes should be animated using a TransitionManager.
 
-The TransitionManager is set using `https://developer.android.com/reference/kotlin/android/view/Window#setTransitionManager(android.transition.TransitionManager)`. If none is set, a default TransitionManager will be used.
+The TransitionManager is set using setTransitionManager. If none is set, a default TransitionManager will be used.
 
  Value: 12
 
@@ -539,7 +539,7 @@ The transitionName for the navigation bar background View when a custom backgrou
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarColor(kotlin.Int)`
+- setNavigationBarColor
 
 ### PROGRESS_END
 
@@ -675,7 +675,7 @@ The transitionName for the status bar background View when a custom background i
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setStatusBarColor(kotlin.Int)`
+- setStatusBarColor
 
 ## Public constructors
 
@@ -700,7 +700,7 @@ abstract fun addContentView(
 ): Unit
 ```
 
-Variation on `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` to add an additional content view to the screen. Added after any existing ones in the screen -- existing views are NOT removed.
+Variation on setContentView to add an additional content view to the screen. Added after any existing ones in the screen -- existing views are NOT removed.
 
 | Parameters ||
 |---|---|
@@ -715,7 +715,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun addFlags(flags: Int): Unit
 ```
 
-Convenience function to set the flag bits as specified in flags, as per `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`.
+Convenience function to set the flag bits as specified in flags, as per setFlags.
 
 | Parameters ||
 |---|---|
@@ -723,8 +723,8 @@ Convenience function to set the flag bits as specified in flags, as per `https:/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#clearFlags(kotlin.Int)`
+- setFlags
+- clearFlags
 
 ### addOnFrameMetricsAvailableListener
 
@@ -751,7 +751,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun clearFlags(flags: Int): Unit
 ```
 
-Convenience function to clear the flag bits as specified in flags, as per `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`.
+Convenience function to clear the flag bits as specified in flags, as per setFlags.
 
 | Parameters ||
 |---|---|
@@ -759,8 +759,8 @@ Convenience function to clear the flag bits as specified in flags, as per `https
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#addFlags(kotlin.Int)`
+- setFlags
+- addFlags
 
 ### closeAllPanels
 
@@ -788,7 +788,7 @@ open fun <T : View!> findViewById(id: Int): T
 
 Finds a view that was identified by the `android:id` XML attribute that was processed in android.app.Activity#onCreate.
 
-This will implicitly call `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()` with all of the associated side-effects.
+This will implicitly call getDecorView with all of the associated side-effects.
 
 **Note:** In most cases -- depending on compiler support -- the resulting view is automatically cast to the target class type. If the target class type is unconstrained, an explicit cast may be necessary.
 
@@ -802,8 +802,8 @@ This will implicitly call `https://developer.android.com/reference/kotlin/androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View#findViewById(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#requireViewById(kotlin.Int)`
+- findViewById
+- requireViewById
 
 ### getAllowEnterTransitionOverlap
 
@@ -813,7 +813,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getAllowEnterTransitionOverlap(): Boolean
 ```
 
-Returns how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)` overlaps with the exit transition of the calling Activity. When true, the transition will start as soon as possible. When false, the transition will wait until the remote exiting transition completes before starting. The default value is true.
+Returns how the transition set in setEnterTransition overlaps with the exit transition of the calling Activity. When true, the transition will start as soon as possible. When false, the transition will wait until the remote exiting transition completes before starting. The default value is true.
 
 | Return ||
 |---|---|
@@ -827,7 +827,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getAllowReturnTransitionOverlap(): Boolean
 ```
 
-Returns how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)` overlaps with the exit transition of the called Activity when reentering after if finishes. When true, the transition will start as soon as possible. When false, the transition will wait until the called Activity's exiting transition completes before starting. The default value is true.
+Returns how the transition set in setExitTransition overlaps with the exit transition of the called Activity when reentering after if finishes. When true, the transition will start as soon as possible. When false, the transition will wait until the called Activity's exiting transition completes before starting. The default value is true.
 
 | Return ||
 |---|---|
@@ -865,7 +865,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getColorMode(): Int
 ```
 
-Returns the requested color mode of the window, one of `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_DEFAULT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`. If `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` was requested it is possible the window will not be put in wide color gamut mode depending on device and display support for that mode. Use `https://developer.android.com/reference/kotlin/android/view/Window#isWideColorGamut()` to determine if the window is currently in wide color gamut mode.
+Returns the requested color mode of the window, one of `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_DEFAULT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`. If `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` was requested it is possible the window will not be put in wide color gamut mode depending on device and display support for that mode. Use isWideColorGamut to determine if the window is currently in wide color gamut mode.
 
 | Return ||
 |---|---|
@@ -873,9 +873,9 @@ Returns the requested color mode of the window, one of `https://developer.androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setColorMode(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Display#isWideColorGamut()`
-- `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#isScreenWideColorGamut()`
+- setColorMode
+- isWideColorGamut
+- isScreenWideColorGamut
 
 ### getContainer
 
@@ -933,7 +933,7 @@ Return the view in this Window that currently has focus, or null if there are no
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/View?` | View The current View with focus or null. |
+| View | View The current View with focus or null. |
 
 ### getDecorView
 
@@ -945,11 +945,11 @@ abstract fun getDecorView(): View
 
 Retrieve the top-level window decor view (containing the standard window frame/decorations and the client's content inside of that), which can be added as a window to the window manager.
 
-*Note that calling this function for the first time "locks in" various window characteristics as described in `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)`.*
+*Note that calling this function for the first time "locks in" various window characteristics as described in setContentView.*
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/View` | Returns the top-level window decor view. This value cannot be `null`. |
+| View | Returns the top-level window decor view. This value cannot be `null`. |
 
 ### getDefaultFeatures
 
@@ -973,7 +973,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getDesiredHdrHeadroom(): Float
 ```
 
-Get the desired amount of HDR headroom as set by `https://developer.android.com/reference/kotlin/android/view/Window#setDesiredHdrHeadroom(kotlin.Float)`
+Get the desired amount of HDR headroom as set by setDesiredHdrHeadroom
 
 | Return ||
 |---|---|
@@ -981,7 +981,7 @@ Get the desired amount of HDR headroom as set by `https://developer.android.com/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setDesiredHdrHeadroom(kotlin.Float)`
+- setDesiredHdrHeadroom
 
 ### getEnterTransition
 
@@ -991,7 +991,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getEnterTransition(): Transition!
 ```
 
-Returns the transition used to move Views into the initial scene. The entering Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`. If `transition` is null, entering Views will remain unaffected. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Returns the transition used to move Views into the initial scene. The entering Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`. If `transition` is null, entering Views will remain unaffected. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Return ||
 |---|---|
@@ -1005,7 +1005,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getExitTransition(): Transition!
 ```
 
-Returns the Transition that will be used to move Views out of the scene when starting a new Activity. The exiting Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If transition is null, the views will remain unaffected. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Returns the Transition that will be used to move Views out of the scene when starting a new Activity. The exiting Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If transition is null, the views will remain unaffected. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Return ||
 |---|---|
@@ -1019,7 +1019,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getFrameRateBoostOnTouchEnabled(): Boolean
 ```
 
-Get whether frame rate touch boost is enabled `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)`
+Get whether frame rate touch boost is enabled setFrameRateBoostOnTouchEnabled
 
 | Return ||
 |---|---|
@@ -1027,8 +1027,8 @@ Get whether frame rate touch boost is enabled `https://developer.android.com/ref
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#getFrameRateBoostOnTouchEnabled()`
+- setFrameRateBoostOnTouchEnabled
+- getFrameRateBoostOnTouchEnabled
 
 ### getInsetsController
 
@@ -1040,11 +1040,11 @@ open fun getInsetsController(): WindowInsetsController?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController?` | The `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController` associated with this window. This value may be `null`. |
+| WindowInsetsController | The WindowInsetsController associated with this window. This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View#getWindowInsetsController()`
+- getWindowInsetsController
 
 ### getLayoutInflater
 
@@ -1054,11 +1054,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getLayoutInflater(): LayoutInflater
 ```
 
-Quick access to the `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` instance that this Window retrieved from its Context.
+Quick access to the LayoutInflater instance that this Window retrieved from its Context.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` | LayoutInflater The shared LayoutInflater. This value cannot be `null`. |
+| LayoutInflater | LayoutInflater The shared LayoutInflater. This value cannot be `null`. |
 
 ### getMediaController
 
@@ -1076,8 +1076,8 @@ Gets the `https://developer.android.com/reference/kotlin/android/media/session/M
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setMediaController(android.media.session.MediaController)`
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#getMediaController()`
+- setMediaController
+- getMediaController
 
 ### getNavigationBarColor
 
@@ -1113,7 +1113,7 @@ Retrieves the color of the navigation bar divider.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarColor(kotlin.Int)`
+- setNavigationBarColor
 
 ### getOnBackInvokedDispatcher
 
@@ -1137,7 +1137,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getReenterTransition(): Transition!
 ```
 
-Returns the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. The entering Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Returns the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. The entering Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Return ||
 |---|---|
@@ -1151,7 +1151,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getReturnTransition(): Transition!
 ```
 
-Returns the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAfterTransition()`. The exiting Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`.
+Returns the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to finishAfterTransition. The exiting Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`.
 
 | Return ||
 |---|---|
@@ -1165,11 +1165,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getRootSurfaceControl(): AttachedSurfaceControl?
 ```
 
-This will be null before a content view is added, e.g. via #setContentView or `https://developer.android.com/reference/kotlin/android/view/Window#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)`. See `https://developer.android.com/reference/kotlin/android/view/View#getRootSurfaceControl()`.
+This will be null before a content view is added, e.g. via #setContentView or addContentView. See getRootSurfaceControl.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl?` | The `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl` interface for this Window |
+| AttachedSurfaceControl | The AttachedSurfaceControl interface for this Window |
 
 ### getSharedElementEnterTransition
 
@@ -1264,7 +1264,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getSystemGestureExclusionRects(): MutableList<Rect!>
 ```
 
-Retrieve the list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. This is the list as set by `https://developer.android.com/reference/kotlin/android/view/Window#setSystemGestureExclusionRects(kotlin.collections.MutableList)` or an empty list if `https://developer.android.com/reference/kotlin/android/view/Window#setSystemGestureExclusionRects(kotlin.collections.MutableList)` has not been called. It does not include exclusion rects set by this window's view hierarchy.
+Retrieve the list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. This is the list as set by setSystemGestureExclusionRects or an empty list if setSystemGestureExclusionRects has not been called. It does not include exclusion rects set by this window's view hierarchy.
 
 | Return ||
 |---|---|
@@ -1288,7 +1288,7 @@ When executing the enter transition, the background starts transparent and fades
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#getEnterTransition()`
+- getEnterTransition
 
 ### getTransitionManager
 
@@ -1315,7 +1315,7 @@ abstract fun getVolumeControlStream(): Int
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#getVolumeControlStream()`
+- getVolumeControlStream
 
 ### getWindowManager
 
@@ -1419,7 +1419,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun isFrameRatePowerSavingsBalanced(): Boolean
 ```
 
-Get whether frameratepowersavingsbalance is enabled for this Window. This allows device to adjust refresh rate as needed and can be useful for power saving. `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)`
+Get whether frameratepowersavingsbalance is enabled for this Window. This allows device to adjust refresh rate as needed and can be useful for power saving. setFrameRateBoostOnTouchEnabled
 
 | Return ||
 |---|---|
@@ -1427,8 +1427,8 @@ Get whether frameratepowersavingsbalance is enabled for this Window. This allows
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRatePowerSavingsBalanced(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#isFrameRatePowerSavingsBalanced()`
+- setFrameRatePowerSavingsBalanced
+- isFrameRatePowerSavingsBalanced
 
 ### isNavigationBarContrastEnforced
 
@@ -1449,8 +1449,8 @@ When the navigation bar color has a non-zero alpha value, the value of this prop
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/R.attr.html#enforceNavigationBarContrast:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarContrastEnforced(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarColor(kotlin.Int)`
+- setNavigationBarContrastEnforced
+- setNavigationBarColor
 
 ### isShortcutKey
 
@@ -1467,8 +1467,8 @@ Is a keypress one of the defined shortcut keys for this window.
 
 | Parameters ||
 |---|---|
-| `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the key code from `https://developer.android.com/reference/kotlin/android/view/KeyEvent` to check. |
-| `event` | [KeyEvent](KeyEvent.md)!: the `https://developer.android.com/reference/kotlin/android/view/KeyEvent` to use to help check. |
+| `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the key code from KeyEvent to check. |
+| `event` | [KeyEvent](KeyEvent.md)!: the KeyEvent to use to help check. |
 
 ### isStatusBarContrastEnforced
 
@@ -1492,8 +1492,8 @@ When the status bar color has a non-zero alpha value, the value of this property
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/R.attr.html#enforceStatusBarContrast:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setStatusBarContrastEnforced(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setStatusBarColor(kotlin.Int)`
+- setStatusBarContrastEnforced
+- setStatusBarColor
 
 ### isWideColorGamut
 
@@ -1506,8 +1506,8 @@ open fun isWideColorGamut(): Boolean
 Returns true if this window's color mode is `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int`, the display has a wide color gamut and this device supports wide color gamut rendering.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Display#isWideColorGamut()`
-- `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#isScreenWideColorGamut()`
+- isWideColorGamut
+- isScreenWideColorGamut
 
 ### makeActive
 
@@ -1558,7 +1558,7 @@ Retrieve the current decor view, but only if it has already been created; otherw
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()`
+- getDecorView
 
 ### performContextMenuIdentifierAction
 
@@ -1660,8 +1660,8 @@ Finds a view that was identified by the `android:id` XML attribute that was proc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View#requireViewById(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#findViewById(kotlin.Int)`
+- requireViewById
+- findViewById
 
 ### restoreHierarchyState
 
@@ -1687,7 +1687,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setAllowEnterTransitionOverlap(allow: Boolean): Unit
 ```
 
-Controls how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)` overlaps with the exit transition of the calling Activity. When true, the transition will start as soon as possible. When false, the transition will wait until the remote exiting transition completes before starting. The default value is true.
+Controls how the transition set in setEnterTransition overlaps with the exit transition of the calling Activity. When true, the transition will start as soon as possible. When false, the transition will wait until the remote exiting transition completes before starting. The default value is true.
 
 | Parameters ||
 |---|---|
@@ -1701,7 +1701,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setAllowReturnTransitionOverlap(allow: Boolean): Unit
 ```
 
-Controls how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)` overlaps with the exit transition of the called Activity when reentering after if finishes. When true, the transition will start as soon as possible. When false, the transition will wait until the called Activity's exiting transition completes before starting. The default value is true.
+Controls how the transition set in setExitTransition overlaps with the exit transition of the called Activity when reentering after if finishes. When true, the transition will start as soon as possible. When false, the transition will wait until the called Activity's exiting transition completes before starting. The default value is true.
 
 | Parameters ||
 |---|---|
@@ -1715,7 +1715,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setAttributes(a: WindowManager.LayoutParams!): Unit
 ```
 
-Specify custom window attributes. **PLEASE NOTE:** the layout params you give here should generally be from values previously retrieved with `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()`; you probably do not want to blindly create and apply your own, since this will blow away any values set by the framework that you are not interested in.
+Specify custom window attributes. **PLEASE NOTE:** the layout params you give here should generally be from values previously retrieved with getAttributes; you probably do not want to blindly create and apply your own, since this will blow away any values set by the framework that you are not interested in.
 
 | Parameters ||
 |---|---|
@@ -1737,7 +1737,7 @@ The window background drawable is drawn on top of the blurred region. The blur r
 
 For the blur region to be visible, the window has to be translucent (see `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsTranslucent:kotlin.Int`) and floating (see `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating:kotlin.Int`).
 
-Note the difference with `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`, which blurs the whole screen behind the window. Background blur blurs the screen behind only within the bounds of the window.
+Note the difference with setBlurBehindRadius, which blurs the whole screen behind the window. Background blur blurs the screen behind only within the bounds of the window.
 
 Some devices might not support cross-window blur due to GPU limitations. It can also be disabled at runtime, e.g. during battery saving mode, when multimedia tunneling is used or when minimal post processing is requested. In such situations, no blur will be computed or drawn, resulting in a transparent window background. To avoid this, the app might want to change its theme to one that does not use blurs. To listen for cross-window blur enabled/disabled events, use android.view.WindowManager#addCrossWindowBlurEnabledListener.
 
@@ -1748,7 +1748,7 @@ Some devices might not support cross-window blur due to GPU limitations. It can 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window_windowBackgroundBlurRadius:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`
+- setBlurBehindRadius
 
 ### setBackgroundDrawable
 
@@ -1830,7 +1830,7 @@ Sets whether window content should be clipped to the outline of the window backg
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View#setClipToOutline(kotlin.Boolean)`
+- setClipToOutline
 - `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window_windowClipToOutline:kotlin.Int`
 
 ### setColorMode
@@ -1845,7 +1845,7 @@ Sets the requested color mode of the window. The requested the color mode might 
 
 The requested color mode must be one of `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_DEFAULT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`.
 
-The requested color mode is not guaranteed to be honored. Please refer to `https://developer.android.com/reference/kotlin/android/view/Window#getColorMode()` for more information.
+The requested color mode is not guaranteed to be honored. Please refer to getColorMode for more information.
 
 Note: This does not impact SurfaceViews or SurfaceControls, as those have their own independent color mode and HDR parameters.
 
@@ -1855,9 +1855,9 @@ Note: This does not impact SurfaceViews or SurfaceControls, as those have their 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#getColorMode()`
-- `https://developer.android.com/reference/kotlin/android/view/Display#isWideColorGamut()`
-- `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#isScreenWideColorGamut()`
+- getColorMode
+- isWideColorGamut
+- isScreenWideColorGamut
 
 ### setContainer
 
@@ -1881,7 +1881,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setContentView(view: View!): Unit
 ```
 
-Convenience for `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` set the screen content to an explicit view. This view is placed directly into the screen's view hierarchy. It can itself be a complex view hierarhcy.
+Convenience for setContentView set the screen content to an explicit view. This view is placed directly into the screen's view hierarchy. It can itself be a complex view hierarhcy.
 
 | Parameters ||
 |---|---|
@@ -1889,7 +1889,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/view/Win
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)`
+- setContentView
 
 ### setContentView
 
@@ -1904,7 +1904,7 @@ abstract fun setContentView(
 
 Set the screen content to an explicit view. This view is placed directly into the screen's view hierarchy. It can itself be a complex view hierarchy.
 
-Note that calling this function "locks in" various characteristics of the window that can not, from this point forward, be changed: the features that have been requested with `https://developer.android.com/reference/kotlin/android/view/Window#requestFeature(kotlin.Int)`, and certain window flags as described in `https://developer.android.com/reference/kotlin/android/view/Window#setFlags(kotlin.Int,%20kotlin.Int)`.
+Note that calling this function "locks in" various characteristics of the window that can not, from this point forward, be changed: the features that have been requested with requestFeature, and certain window flags as described in setFlags.
 
 If `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_CONTENT_TRANSITIONS:kotlin.Int` is set, the window's TransitionManager will be used to animate content from the current content View to view.
 
@@ -1915,8 +1915,8 @@ If `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_C
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#getTransitionManager()`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setTransitionManager(android.transition.TransitionManager)`
+- getTransitionManager
+- setTransitionManager
 
 ### setContentView
 
@@ -1926,7 +1926,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setContentView(layoutResID: Int): Unit
 ```
 
-Convenience for `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` to set the screen content from a layout resource. The resource will be inflated, adding all top-level views to the screen.
+Convenience for setContentView to set the screen content from a layout resource. The resource will be inflated, adding all top-level views to the screen.
 
 | Parameters ||
 |---|---|
@@ -1934,7 +1934,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/view/Win
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)`
+- setContentView
 
 ### setDecorCaptionShade
 
@@ -1960,13 +1960,13 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 open fun setDecorFitsSystemWindows(decorFitsSystemWindows: Boolean): Unit
 ```
 
-**Deprecated:** *Make space in the container views to prevent the critical elements from getting obscured by `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#systemBars()` or `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#displayCutout()` instead.*
+**Deprecated:** *Make space in the container views to prevent the critical elements from getting obscured by systemBars or displayCutout instead.*
 
-Sets whether the decor view should fit root-level content views for `https://developer.android.com/reference/kotlin/android/view/WindowInsets`.
+Sets whether the decor view should fit root-level content views for WindowInsets.
 
 If set to `true`, the framework will inspect the now deprecated `https://developer.android.com/reference/kotlin/android/view/View#SYSTEM_UI_LAYOUT_FLAGS:kotlin.Int` as well the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#SOFT_INPUT_ADJUST_RESIZE:kotlin.Int` flag and fits content according to these flags.
 
-If set to `false`, the framework will not fit the content view to the insets and will just pass through the `https://developer.android.com/reference/kotlin/android/view/WindowInsets` to the content view.
+If set to `false`, the framework will not fit the content view to the insets and will just pass through the WindowInsets to the content view.
 
 If the app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` or above, the behavior will be like setting this to `false`, and cannot be changed.
 
@@ -1982,11 +1982,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun setDesiredHdrHeadroom(desiredHeadroom: Float): Unit
 ```
 
-Sets the desired amount of HDR headroom to be used when rendering as a ratio of targetHdrPeakBrightnessInNits / targetSdrWhitePointInNits. Only applies when `https://developer.android.com/reference/kotlin/android/view/Window#setColorMode(kotlin.Int)` is `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`
+Sets the desired amount of HDR headroom to be used when rendering as a ratio of targetHdrPeakBrightnessInNits / targetSdrWhitePointInNits. Only applies when setColorMode is `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`
 
 By default the system will choose an amount of HDR headroom that is appropriate for the underlying device capabilities \& bit-depth of the panel. However, for some types of content this can end up being more headroom than necessary or desired. An example would be a messaging app or gallery thumbnail view where some amount of HDR pop is desired without overly influencing the perceived brightness of the majority SDR content. This can also be used to animate in/out of an HDR range for smoother transitions.
 
-Note: The actual amount of HDR headroom that will be given is subject to a variety of factors such as ambient conditions, display capabilities, or bit-depth limitations. See `https://developer.android.com/reference/kotlin/android/view/Display#getHdrSdrRatio()` for more information as well as how to query the current value.
+Note: The actual amount of HDR headroom that will be given is subject to a variety of factors such as ambient conditions, display capabilities, or bit-depth limitations. See getHdrSdrRatio for more information as well as how to query the current value.
 
 Note: This does not impact SurfaceViews or SurfaceControls, as those have their own independent desired HDR headroom and HDR capabilities.
 
@@ -1996,8 +1996,8 @@ Note: This does not impact SurfaceViews or SurfaceControls, as those have their 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#getDesiredHdrHeadroom()`
-- `https://developer.android.com/reference/kotlin/android/view/Display#getHdrSdrRatio()`
+- getDesiredHdrHeadroom
+- getHdrSdrRatio
 
 ### setDimAmount
 
@@ -2045,7 +2045,7 @@ Changes to this property take effect immediately and will cause the window surfa
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View#setElevation(kotlin.Float)`
+- setElevation
 - `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window_windowElevation:kotlin.Int`
 
 ### setEnterTransition
@@ -2056,7 +2056,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setEnterTransition(transition: Transition!): Unit
 ```
 
-Sets the Transition that will be used to move Views into the initial scene. The entering Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`. If `transition` is null, entering Views will remain unaffected.
+Sets the Transition that will be used to move Views into the initial scene. The entering Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`. If `transition` is null, entering Views will remain unaffected.
 
 | Parameters ||
 |---|---|
@@ -2070,7 +2070,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setExitTransition(transition: Transition!): Unit
 ```
 
-Sets the Transition that will be used to move Views out of the scene when starting a new Activity. The exiting Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If transition is null, the views will remain unaffected. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Sets the Transition that will be used to move Views out of the scene when starting a new Activity. The exiting Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If transition is null, the views will remain unaffected. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -2132,7 +2132,7 @@ Set the value for a drawable feature of this window, from a resource identifier.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getDrawable(kotlin.Int)`
+- getDrawable
 
 ### setFeatureDrawableUri
 
@@ -2156,7 +2156,7 @@ The only URI currently supported is "content:", specifying an image in a content
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/widget/ImageView.html#setImageURI(android.net.Uri)`
+- setImageURI
 
 ### setFeatureInt
 
@@ -2189,7 +2189,7 @@ open fun setFlags(
 
 Set the flags of the window, as per the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams` flags.
 
-Note that some flags must be set before the window decoration is created (by the first call to `https://developer.android.com/reference/kotlin/android/view/Window#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` or `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()`: `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_LAYOUT_IN_SCREEN:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_LAYOUT_INSET_DECOR:kotlin.Int`. These will be set for you based on the `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating:kotlin.Int` attribute.
+Note that some flags must be set before the window decoration is created (by the first call to setContentView or getDecorView: `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_LAYOUT_IN_SCREEN:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_LAYOUT_INSET_DECOR:kotlin.Int`. These will be set for you based on the `https://developer.android.com/reference/kotlin/android/R.attr.html#windowIsFloating:kotlin.Int` attribute.
 
 | Parameters ||
 |---|---|
@@ -2198,8 +2198,8 @@ Note that some flags must be set before the window decoration is created (by the
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#addFlags(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#clearFlags(kotlin.Int)`
+- addFlags
+- clearFlags
 
 ### setFormat
 
@@ -2235,8 +2235,8 @@ Sets whether the frame rate touch boost is enabled for this Window. When enabled
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#getFrameRateBoostOnTouchEnabled()`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)`
+- getFrameRateBoostOnTouchEnabled
+- setFrameRateBoostOnTouchEnabled
 
 ### setFrameRatePowerSavingsBalanced
 
@@ -2254,8 +2254,8 @@ Set whether frameratepowersavingsbalance is enabled for this Window. This allows
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#isFrameRatePowerSavingsBalanced()`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setFrameRatePowerSavingsBalanced(kotlin.Boolean)`
+- isFrameRatePowerSavingsBalanced
+- setFrameRatePowerSavingsBalanced
 
 ### setGravity
 
@@ -2273,8 +2273,8 @@ Set the gravity of the window, as per the Gravity constants. This controls how t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Gravity`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setLayout(kotlin.Int,%20kotlin.Int)`
+- Gravity
+- setLayout
 
 ### setHideOverlayWindows
 
@@ -2354,7 +2354,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun setLogo(resId: Int): Unit
 ```
 
-Set the logo for this window. A logo is often shown in place of an `https://developer.android.com/reference/kotlin/android/view/Window#setIcon(kotlin.Int)` but is generally wider and communicates window title information as well.
+Set the logo for this window. A logo is often shown in place of an setIcon but is generally wider and communicates window title information as well.
 
 | Parameters ||
 |---|---|
@@ -2376,7 +2376,7 @@ Sets a `https://developer.android.com/reference/kotlin/android/media/session/Med
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#setMediaController(android.media.session.MediaController)`
+- setMediaController
 
 ### setNavigationBarColor
 
@@ -2387,7 +2387,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 abstract fun setNavigationBarColor(color: Int): Unit
 ```
 
-**Deprecated:** *Draw proper background behind `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#navigationBars()` or `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#tappableElement()` instead.*
+**Deprecated:** *Draw proper background behind navigationBars or tappableElement instead.*
 
 Sets the color of the navigation bar to `color`. For this to take effect, the window must be drawing the system bar backgrounds with `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_TRANSLUCENT_NAVIGATION:kotlin.Int` must not be set. If `color` is not opaque, consider setting `https://developer.android.com/reference/kotlin/android/view/View#SYSTEM_UI_FLAG_LAYOUT_STABLE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/View#SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION:kotlin.Int`.
 
@@ -2398,7 +2398,7 @@ If the color is transparent and the window enforces the navigation bar contrast,
 If the app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` or above, the color will be transparent and cannot be changed.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarContrastEnforced(kotlin.Boolean)`
+- setNavigationBarContrastEnforced
 
 ### setNavigationBarContrastEnforced
 
@@ -2416,8 +2416,8 @@ When the navigation bar color has a non-zero alpha value, the value of this prop
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/R.attr.html#enforceNavigationBarContrast:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/Window#isNavigationBarContrastEnforced()`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarColor(kotlin.Int)`
+- isNavigationBarContrastEnforced
+- setNavigationBarColor
 
 ### setNavigationBarDividerColor
 
@@ -2428,7 +2428,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 open fun setNavigationBarDividerColor(dividerColor: Int): Unit
 ```
 
-**Deprecated:** *Draw proper background behind `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#navigationBars()` or `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#tappableElement()` instead.*
+**Deprecated:** *Draw proper background behind navigationBars or tappableElement instead.*
 
 Shows a thin line of the specified color between the navigation bar and the app content.
 
@@ -2465,7 +2465,7 @@ The ability to switch to a mode with minimal post proessing may be disabled by a
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#FLAG_PREFER_MINIMAL_POST_PROCESSING:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/Display#isMinimalPostProcessingSupported()`
+- isMinimalPostProcessingSupported
 - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#preferMinimalPostProcessing:kotlin.Boolean`
 
 ### setReenterTransition
@@ -2476,7 +2476,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setReenterTransition(transition: Transition!): Unit
 ```
 
-Sets the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. The entering Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If transition is null, the views will remain unaffected. If nothing is set, the default will be to use the same transition as `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)`. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Sets the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. The entering Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as exiting is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If transition is null, the views will remain unaffected. If nothing is set, the default will be to use the same transition as setExitTransition. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -2490,7 +2490,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setResizingCaptionDrawable(drawable: Drawable!): Unit
 ```
 
-Set the drawable that is drawn underneath the caption during the resizing. During the resizing the caption might not be drawn fast enough to match the new dimensions. There is a second caption drawn underneath it that will be fast enough. By default the caption is constructed from the theme. You can provide a drawable, that will be drawn instead to better match your application. Starting in Android 15, this API is a no-op. New window decorations introduced in Android 14 are drawn in SystemUI process, and OEMs are responsible to make them responsive to resizing. There is no need to set a background drawable to improve UX anymore since then. Additionally, the foremost activity can draw in caption areas starting in Android 15. Check `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#APPEARANCE_LIGHT_CAPTION_BARS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#setSystemBarsAppearance(kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/view/WindowInsets#getBoundingRects(kotlin.Int)`.
+Set the drawable that is drawn underneath the caption during the resizing. During the resizing the caption might not be drawn fast enough to match the new dimensions. There is a second caption drawn underneath it that will be fast enough. By default the caption is constructed from the theme. You can provide a drawable, that will be drawn instead to better match your application. Starting in Android 15, this API is a no-op. New window decorations introduced in Android 14 are drawn in SystemUI process, and OEMs are responsible to make them responsive to resizing. There is no need to set a background drawable to improve UX anymore since then. Additionally, the foremost activity can draw in caption areas starting in Android 15. Check `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#APPEARANCE_LIGHT_CAPTION_BARS:kotlin.Int`, setSystemBarsAppearance and getBoundingRects.
 
 ### setRestrictedCaptionAreaListener
 
@@ -2514,7 +2514,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setReturnTransition(transition: Transition!): Unit
 ```
 
-Sets the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAfterTransition()`. The exiting Views will be those that are regular Views or ViewGroups that have `https://developer.android.com/reference/kotlin/android/view/ViewGroup#isTransitionGroup()` return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If `transition` is null, entering Views will remain unaffected. If nothing is set, the default will be to use the same value as set in `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)`.
+Sets the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to finishAfterTransition. The exiting Views will be those that are regular Views or ViewGroups that have isTransitionGroup return true. Typical Transitions will extend `https://developer.android.com/reference/kotlin/android/transition/Visibility.html#` as entering is governed by changing visibility from `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` to `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`. If `transition` is null, entering Views will remain unaffected. If nothing is set, the default will be to use the same value as set in setEnterTransition.
 
 | Parameters ||
 |---|---|
@@ -2556,7 +2556,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setSharedElementReenterTransition(transition: Transition!): Unit
 ```
 
-Sets the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. If no value is set, this will default to `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementExitTransition(android.transition.Transition)`. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Sets the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. If no value is set, this will default to setSharedElementExitTransition. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -2570,7 +2570,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setSharedElementReturnTransition(transition: Transition!): Unit
 ```
 
-Sets the Transition that will be used for shared elements transferred back to a calling Activity. Typical Transitions will affect size and location, such as `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds.html#`. A null value will cause transferred shared elements to blink to the final position. If no value is set, the default will be to use the same value as `https://developer.android.com/reference/kotlin/android/view/Window#setSharedElementEnterTransition(android.transition.Transition)`. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
+Sets the Transition that will be used for shared elements transferred back to a calling Activity. Typical Transitions will affect size and location, such as `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds.html#`. A null value will cause transferred shared elements to blink to the final position. If no value is set, the default will be to use the same value as setSharedElementEnterTransition. Requires `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_ACTIVITY_TRANSITIONS:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -2609,7 +2609,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 abstract fun setStatusBarColor(color: Int): Unit
 ```
 
-**Deprecated:** *Draw proper background behind `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#statusBars()`} instead.*
+**Deprecated:** *Draw proper background behind statusBars} instead.*
 
 Sets the color of the status bar to `color`. For this to take effect, the window must be drawing the system bar backgrounds with `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#FLAG_TRANSLUCENT_STATUS:kotlin.Int` must not be set. If `color` is not opaque, consider setting `https://developer.android.com/reference/kotlin/android/view/View#SYSTEM_UI_FLAG_LAYOUT_STABLE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/View#SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN:kotlin.Int`.
 
@@ -2620,7 +2620,7 @@ If the color is transparent and the window enforces the status bar contrast, the
 If the app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` or above, the color will be transparent and cannot be changed.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setNavigationBarContrastEnforced(kotlin.Boolean)`
+- setNavigationBarContrastEnforced
 
 ### setStatusBarContrastEnforced
 
@@ -2631,7 +2631,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 open fun setStatusBarContrastEnforced(ensureContrast: Boolean): Unit
 ```
 
-**Deprecated:** *Draw proper background behind `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#statusBars()`} instead.*
+**Deprecated:** *Draw proper background behind statusBars} instead.*
 
 Sets whether the system should ensure that the status bar has enough contrast when a fully transparent background is requested.
 
@@ -2641,8 +2641,8 @@ When the status bar color has a non-zero alpha value, the value of this property
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/R.attr.html#enforceStatusBarContrast:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/Window#isStatusBarContrastEnforced()`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setStatusBarColor(kotlin.Int)`
+- isStatusBarContrastEnforced
+- setStatusBarColor
 
 ### setSustainedPerformanceMode
 
@@ -2668,7 +2668,7 @@ open fun setSystemGestureExclusionRects(rects: MutableList<Rect!>): Unit
 
 Sets a list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures.
 
-This method should be used by apps that make use of `https://developer.android.com/reference/kotlin/android/view/Window#takeSurface(android.view.SurfaceHolder.Callback2)` and do not have a view hierarchy available. Apps that do have a view hierarchy should use `https://developer.android.com/reference/kotlin/android/view/View#setSystemGestureExclusionRects(kotlin.collections.MutableList)` instead. This method does not modify or replace the gesture exclusion rects populated by individual views in this window's view hierarchy using `https://developer.android.com/reference/kotlin/android/view/View#setSystemGestureExclusionRects(kotlin.collections.MutableList)`.
+This method should be used by apps that make use of takeSurface and do not have a view hierarchy available. Apps that do have a view hierarchy should use setSystemGestureExclusionRects instead. This method does not modify or replace the gesture exclusion rects populated by individual views in this window's view hierarchy using setSystemGestureExclusionRects.
 
 Use this to tell the system which specific sub-areas of a view need to receive gesture input in order to function correctly in the presence of global system gestures that may conflict. For example, if the system wishes to capture swipe-in-from-screen-edge gestures to provide system-level navigation functionality, a view such as a navigation drawer container can mark the left (or starting) edge of itself as requiring gesture capture priority using this API. The system may then choose to relax its own gesture recognition to allow the app to consume the user's gesture. It is not necessary for an app to register exclusion rects for broadly spanning regions such as the entirety of a `ScrollView` or for simple press and release click targets such as `Button`. Mark an exclusion rect when interacting with a view requires a precision touch gesture in a small area in either the X or Y dimension, such as an edge swipe or dragging a `SeekBar` thumb.
 
@@ -2688,10 +2688,10 @@ abstract fun setTitle(title: CharSequence!): Unit
 
 Sets a user-facing title for the window.
 
-This title may be shown to the user in the window's title or action bar if the `https://developer.android.com/reference/kotlin/android/view/Window#requestFeature(kotlin.Int)` provide such a bar. It is also exposed through `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getTitle()`.
+This title may be shown to the user in the window's title or action bar if the requestFeature provide such a bar. It is also exposed through getTitle.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setTitle(kotlin.CharSequence)`
+- setTitle
 
 ### setTitleColor
 
@@ -2722,7 +2722,7 @@ When executing the enter transition, the background starts transparent and fades
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)`
+- setEnterTransition
 
 ### setTransitionManager
 
@@ -2793,7 +2793,7 @@ abstract fun setVolumeControlStream(streamType: Int): Unit
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#setVolumeControlStream(kotlin.Int)`
+- setVolumeControlStream
 
 ### setWindowAnimations
 
@@ -2819,13 +2819,13 @@ open fun setWindowManager(
 
 Creates and sets the window manager for use by this Window to, for example, display panels. This is *not* used for displaying the Window itself -- that must be done by the client.
 
-If `wm` is not `null`, this method will creates a new instance of `https://developer.android.com/reference/kotlin/android/view/WindowManager` with this window attached based on `wm`, or, otherwise, based on `https://developer.android.com/reference/kotlin/android/view/WindowManager` obtained from `https://developer.android.com/reference/kotlin/android/view/Window#getContext()`.
+If `wm` is not `null`, this method will creates a new instance of WindowManager with this window attached based on `wm`, or, otherwise, based on WindowManager obtained from getContext.
 
 | Parameters ||
 |---|---|
 | `wm` | [WindowManager](WindowManager.md)!: the window manager for adding new windows. |
-| `appToken` | [IBinder](../android.os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
-| `appName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#getTitle()` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
+| `appToken` | [IBinder](../android.os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of getAttributes if specified. |
+| `appName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the window, which applies to the getTitle of getAttributes if specified. |
 | --- | --- |
 
 ### setWindowManager
@@ -2843,13 +2843,13 @@ open fun setWindowManager(
 
 Creates and sets the window manager for use by this Window to, for example, display panels. This is *not* used for displaying the Window itself -- that must be done by the client.
 
-If `wm` is not `null`, this method will creates a new instance of `https://developer.android.com/reference/kotlin/android/view/WindowManager` with this window attached based on `wm`, or, otherwise, based on `https://developer.android.com/reference/kotlin/android/view/WindowManager` obtained from `https://developer.android.com/reference/kotlin/android/view/Window#getContext()`.
+If `wm` is not `null`, this method will creates a new instance of WindowManager with this window attached based on `wm`, or, otherwise, based on WindowManager obtained from getContext.
 
 | Parameters ||
 |---|---|
 | `wm` | [WindowManager](WindowManager.md)!: the window manager for adding new windows. |
-| `appToken` | [IBinder](../android.os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
-| `appName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#getTitle()` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
+| `appToken` | [IBinder](../android.os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of getAttributes if specified. |
+| `appName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the window, which applies to the getTitle of getAttributes if specified. |
 | --- | --- |
 | `hardwareAccelerated` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): indicate whether this window or its sub-windows should be hardware accelerated, which is default to `false`. |
 
@@ -2952,7 +2952,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterScrollCaptureCallback(callback: ScrollCaptureCallback): Unit
 ```
 
-Unregisters a `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback` previously registered with this window.
+Unregisters a ScrollCaptureCallback previously registered with this window.
 
 | Parameters ||
 |---|---|
@@ -2984,7 +2984,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected fun getForcedWindowFlags(): Int
 ```
 
-Return the window flags that have been explicitly set by the client, so will not be modified by `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()`.
+Return the window flags that have been explicitly set by the client, so will not be modified by getDecorView.
 
 ### getLocalFeatures
 
@@ -3034,5 +3034,5 @@ Set the default format of window, as per the PixelFormat types. This is the form
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window#setFormat(kotlin.Int)`
+- setFormat
 - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#`

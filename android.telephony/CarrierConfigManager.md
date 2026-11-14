@@ -11,7 +11,7 @@ open class CarrierConfigManager
 | ↳ | [android.telephony.CarrierConfigManager](CarrierConfigManager.md) |
 
 Provides access to telephony configuration values that are carrier-specific. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
@@ -201,7 +201,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING:kotlin.String` The package name containing the ImsService that will be bound to the telephony framework to support both IMS MMTEL and RCS feature functionality instead of the device default ImsService for this subscription. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_IMS_RCS_PACKAGE_OVERRIDE_STRING:kotlin.String` The package name containing the ImsService that will be bound to the telephony framework to support IMS RCS feature functionality instead of the device default ImsService for this subscription. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_PLANS_PACKAGE_OVERRIDE_STRING:kotlin.String` Override the package that will manage `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan` information instead of the `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#` that defines this value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_PLANS_PACKAGE_OVERRIDE_STRING:kotlin.String` Override the package that will manage SubscriptionPlan information instead of the `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#` that defines this value. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_TELEPHONY_USE_OWN_NUMBER_FOR_VOICEMAIL_BOOL:kotlin.String` Flag that specifies to use the user's own phone number as the voicemail number when there is no pre-loaded voicemail number on the SIM card. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_WIFI_DISABLE_IN_ECBM:kotlin.String` Flag to indicate if Wi-Fi needs to be disabled in ECBM. |
@@ -389,15 +389,15 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREFER_2G_BOOL:kotlin.String` Used in the Preferred Network Types menu to determine if the 2G option is displayed. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREFER_3G_VISIBILITY_BOOL:kotlin.String` Used in the Preferred Network Types menu to determine if the 3G option is displayed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT:kotlin.String` The maximum number of times in a day that we display the notification for a performance boost via premium capabilities when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to user action or timeout. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT:kotlin.String` The maximum number of times in a month that we display the notification for a performance boost via premium capabilities when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to user action or timeout. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT:kotlin.String` The maximum number of times in a day that we display the notification for a performance boost via premium capabilities when purchasePremiumCapability returns a failure due to user action or timeout. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT:kotlin.String` The maximum number of times in a month that we display the notification for a performance boost via premium capabilities when purchasePremiumCapability returns a failure due to user action or timeout. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NETWORK_SETUP_TIME_MILLIS_LONG:kotlin.String` The amount of time in milliseconds within which the network must set up a slicing configuration for the premium capability after `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_SUCCESS:kotlin.Int`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NOTIFICATION_BACKOFF_HYSTERESIS_TIME_MILLIS_LONG:kotlin.String` The amount of time in milliseconds that the notification for a performance boost via premium capabilities should be blocked when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to user action or timeout. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NOTIFICATION_DISPLAY_TIMEOUT_MILLIS_LONG:kotlin.String` The amount of time in milliseconds the notification for a performance boost via premium capabilities will be visible to the user after `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` requests user action to purchase the boost from the carrier. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NETWORK_SETUP_TIME_MILLIS_LONG:kotlin.String` The amount of time in milliseconds within which the network must set up a slicing configuration for the premium capability after purchasePremiumCapability returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_SUCCESS:kotlin.Int`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NOTIFICATION_BACKOFF_HYSTERESIS_TIME_MILLIS_LONG:kotlin.String` The amount of time in milliseconds that the notification for a performance boost via premium capabilities should be blocked when purchasePremiumCapability returns a failure due to user action or timeout. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NOTIFICATION_DISPLAY_TIMEOUT_MILLIS_LONG:kotlin.String` The amount of time in milliseconds the notification for a performance boost via premium capabilities will be visible to the user after purchasePremiumCapability requests user action to purchase the boost from the carrier. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_PURCHASE_CONDITION_BACKOFF_HYSTERESIS_TIME_MILLIS_LONG:kotlin.String` The amount of time in milliseconds that the purchase request should be throttled when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to the carrier. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_PURCHASE_URL_STRING:kotlin.String` The URL to redirect to when the user clicks on the notification for a performance boost via premium capabilities after applications call `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_PURCHASE_CONDITION_BACKOFF_HYSTERESIS_TIME_MILLIS_LONG:kotlin.String` The amount of time in milliseconds that the purchase request should be throttled when purchasePremiumCapability returns a failure due to the carrier. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_PURCHASE_URL_STRING:kotlin.String` The URL to redirect to when the user clicks on the notification for a performance boost via premium capabilities after applications call purchasePremiumCapability. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_SUPPORTED_ON_LTE_BOOL:kotlin.String` Whether to allow premium capabilities to be purchased when the device is connected to LTE. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREVENT_CLIR_ACTIVATION_AND_DEACTIVATION_CODE_BOOL:kotlin.String` Flag specifying whether to prevent sending CLIR activation("\*31#") and deactivation("#31#") code only without dialing number. |
@@ -468,7 +468,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOL:kotlin.String` If true, show an onscreen "Dial" button in the dialer. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SHOW_ROAMING_INDICATOR_BOOL:kotlin.String` Config to show the roaming indicator (i.e. the "R" icon) from the status bar when roaming. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL:kotlin.String` Flag specifying whether the `https://developer.android.com/reference/kotlin/android/telephony/SignalStrength` is shown in the SIM Status screen. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL:kotlin.String` Flag specifying whether the SignalStrength is shown in the SIM Status screen. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SHOW_VIDEO_CALL_CHARGES_ALERT_DIALOG_BOOL:kotlin.String` Flag specifying whether to show an alert dialog for video call charges. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SHOW_WFC_LOCATION_PRIVACY_POLICY_BOOL:kotlin.String` Determines whether wifi calling location privacy policy is shown. |
 | --- | --- |
@@ -572,17 +572,17 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()()` Gets the configuration values for the default subscription. |
-| open [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig(kotlin.String)(vararg keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the configuration values of the specified config keys applied for the default subscription. |
-| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigByComponentForSubId(kotlin.String,%20kotlin.Int)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the configuration values for a component using its prefix. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | getConfig Gets the configuration values for the default subscription. |
+| open [PersistableBundle](../android.os/PersistableBundle.md) | getConfig Gets the configuration values of the specified config keys applied for the default subscription. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | getConfigByComponentForSubId Gets the configuration values for a component using its prefix. |
 | --- | --- |
-| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the configuration values for a particular subscription, which is associated with a specific SIM card. |
-| open [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int,%20kotlin.String)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the configuration values of the specified keys for a particular subscription. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#isConfigForIdentifiedCarrier(android.os.PersistableBundle)(bundle: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` Determines whether a configuration `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` obtained from `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()` or `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)` corresponds to an identified carrier. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | getConfigForSubId Gets the configuration values for a particular subscription, which is associated with a specific SIM card. |
+| open [PersistableBundle](../android.os/PersistableBundle.md) | getConfigForSubId Gets the configuration values of the specified keys for a particular subscription. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isConfigForIdentifiedCarrier Determines whether a configuration `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` obtained from getConfig or getConfigForSubId corresponds to an identified carrier. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#notifyConfigChangedForSubId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calling this method triggers telephony services to fetch the current carrier configuration. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#registerCarrierConfigChangeListener(java.util.concurrent.Executor,%20android.telephony.CarrierConfigManager.CarrierConfigChangeListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener)` Register a `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener` to get a notification when carrier configurations have changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#unregisterCarrierConfigChangeListener(android.telephony.CarrierConfigManager.CarrierConfigChangeListener)(listener: https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener)` Unregister the `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener` to stop notification on carrier configurations change. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyConfigChangedForSubId Calling this method triggers telephony services to fetch the current carrier configuration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerCarrierConfigChangeListener Register a `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener` to get a notification when carrier configurations have changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterCarrierConfigChangeListener Unregister the `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.CarrierConfigChangeListener` to stop notification on carrier configurations change. |
 | --- | --- |
 
 ## Constants
@@ -601,8 +601,8 @@ This intent is broadcast by the system when carrier config changes. An int is sp
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()`
+- getSimCarrierId
+- getSimSpecificCarrierId
 
 ### CARRIER_NR_AVAILABILITY_NSA
 
@@ -1284,7 +1284,7 @@ The Component Name of a carrier-provided CallScreeningService implementation. Te
 
 The String includes the package name/the class name. Example: com.android.carrier/com.android.carrier.callscreeningserviceimpl
 
-Using `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#flattenToString()` to convert a ComponentName object to String. Using `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#unflattenFromString(kotlin.String)` to convert a String object to a ComponentName.
+Using flattenToString to convert a ComponentName object to String. Using unflattenFromString to convert a String object to a ComponentName.
 
  Value: "call_screening_app"
 
@@ -1359,7 +1359,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CARRIER_DEFAULT_ACTIONS_ON_DCFAILURE_STRING_ARRAY: String
 ```
 
-Defines carrier-specific actions which act upon CARRIER_SIGNAL_REQUEST_NETWORK_FAILED and configured signal args: android.telephony.TelephonyManager#EXTRA_APN_TYPE, android.telephony.TelephonyManager#EXTRA_ERROR_CODE used for customization of the default carrier app Format: { "APN_1, ERROR_CODE_1 : CARRIER_ACTION_IDX_1, CARRIER_ACTION_IDX_2...", "APN_1, ERROR_CODE_2 : CARRIER_ACTION_IDX_1 " } Where `APN_1` is an integer defined in `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting` (e.g. `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_DEFAULT:kotlin.Int` `ERROR_CODE_1` is an integer defined in android.telephony.DataFailCause Example: android.telephony.DataFailCause#MISSING_UNKNOWN_APN `CARRIER_ACTION_IDX_1` is an integer defined in com.android.carrierdefaultapp.CarrierActionUtils Example: com.android.carrierdefaultapp.CarrierActionUtils#CARRIER_ACTION_DISABLE_METERED_APNS disables metered APNs
+Defines carrier-specific actions which act upon CARRIER_SIGNAL_REQUEST_NETWORK_FAILED and configured signal args: android.telephony.TelephonyManager#EXTRA_APN_TYPE, android.telephony.TelephonyManager#EXTRA_ERROR_CODE used for customization of the default carrier app Format: { "APN_1, ERROR_CODE_1 : CARRIER_ACTION_IDX_1, CARRIER_ACTION_IDX_2...", "APN_1, ERROR_CODE_2 : CARRIER_ACTION_IDX_1 " } Where `APN_1` is an integer defined in ApnSetting (e.g. `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#TYPE_DEFAULT:kotlin.Int` `ERROR_CODE_1` is an integer defined in android.telephony.DataFailCause Example: android.telephony.DataFailCause#MISSING_UNKNOWN_APN `CARRIER_ACTION_IDX_1` is an integer defined in com.android.carrierdefaultapp.CarrierActionUtils Example: com.android.carrierdefaultapp.CarrierActionUtils#CARRIER_ACTION_DISABLE_METERED_APNS disables metered APNs
 
  Value: "carrier_default_actions_on_dcfailure_string_array"
 
@@ -1524,7 +1524,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CARRIER_INSTANT_LETTERING_INVALID_CHARS_STRING: String
 ```
 
-When IMS instant lettering is available for a carrier (see `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_INSTANT_LETTERING_AVAILABLE_BOOL:kotlin.String`), determines the list of characters which may not be contained in messages. Should be specified as a regular expression suitable for use with `https://developer.android.com/reference/kotlin/java/lang/String.html#matches(kotlin.String)`.
+When IMS instant lettering is available for a carrier (see `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_INSTANT_LETTERING_AVAILABLE_BOOL:kotlin.String`), determines the list of characters which may not be contained in messages. Should be specified as a regular expression suitable for use with matches.
 
  Value: "carrier_instant_lettering_invalid_chars_string"
 
@@ -2122,7 +2122,7 @@ static val KEY_CDMA_ROAMING_MODE_INT: String
 
 The CDMA roaming mode (aka CDMA system select).
 
-The value should be one of the CDMA_ROAMING_MODE_ constants in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager`. Values other than `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CDMA_ROAMING_MODE_RADIO_DEFAULT:kotlin.Int` (which is the default) will take precedence over user selection.
+The value should be one of the CDMA_ROAMING_MODE_ constants in TelephonyManager. Values other than `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CDMA_ROAMING_MODE_RADIO_DEFAULT:kotlin.Int` (which is the default) will take precedence over user selection.
 
  Value: "cdma_roaming_mode_int"
 
@@ -2178,9 +2178,9 @@ If unset, the default value is "\[1, 2, 3\]" (supports all cellular services).
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceVoiceCapable()`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceSmsCapable()`
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getServiceCapabilities()`
+- isDeviceVoiceCapable
+- isDeviceSmsCapable
+- getServiceCapabilities
 - `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.OnSubscriptionsChangedListener`
 
 ### KEY_CELLULAR_USAGE_SETTING_INT
@@ -2201,7 +2201,7 @@ Devices that support configuration of the cellular usage setting, including devi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getUsageSetting()`
+- getUsageSetting
 
 ### KEY_CHECK_PRICING_WITH_CARRIER_FOR_DATA_ROAMING_BOOL
 
@@ -2310,14 +2310,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CONFIG_PLANS_PACKAGE_OVERRIDE_STRING: String
 ```
 
-Override the package that will manage `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionPlan` information instead of the `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#` that defines this value.
+Override the package that will manage SubscriptionPlan information instead of the `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService.html#` that defines this value.
 
  Value: "config_plans_package_override_string"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getSubscriptionPlans(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#setSubscriptionPlans(kotlin.Int,%20kotlin.collections.MutableList)`
+- getSubscriptionPlans
+- setSubscriptionPlans
 
 ### KEY_CONFIG_TELEPHONY_USE_OWN_NUMBER_FOR_VOICEMAIL_BOOL
 
@@ -2595,7 +2595,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_DISCONNECT_CAUSE_PLAY_BUSYTONE_INT_ARRAY: String
 ```
 
-DisconnectCause array to play busy tone. Value should be array of `https://developer.android.com/reference/kotlin/android/telephony/DisconnectCause`.
+DisconnectCause array to play busy tone. Value should be array of DisconnectCause.
 
  Value: "disconnect_cause_play_busytone_int_array"
 
@@ -3856,7 +3856,7 @@ List of network type constants which support only a single data connection at a 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager`
+- TelephonyManager
 - `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_ONLY_SINGLE_DC_ALLOWED_INT_ARRAY:kotlin.String`
 
 ### KEY_OPERATOR_SELECTION_EXPAND_BOOL
@@ -3941,7 +3941,7 @@ static val KEY_OPPORTUNISTIC_NETWORK_ENTRY_THRESHOLD_RSRP_INT: String
 
 Controls RSRP threshold, in dBm, at which OpportunisticNetworkService will decide whether the opportunistic network is good enough for internet data.
 
-The value of `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRsrp()` will be compared with this threshold.
+The value of getRsrp will be compared with this threshold.
 
  Value: "opportunistic_network_entry_threshold_rsrp_int"
 
@@ -3955,7 +3955,7 @@ static val KEY_OPPORTUNISTIC_NETWORK_ENTRY_THRESHOLD_RSSNR_INT: String
 
 Controls RSSNR threshold, in dB, at which OpportunisticNetworkService will decide whether the opportunistic network is good enough for internet data.
 
-The value of `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRssnr()` will be compared with this threshold.
+The value of getRssnr will be compared with this threshold.
 
  Value: "opportunistic_network_entry_threshold_rssnr_int"
 
@@ -3969,7 +3969,7 @@ static val KEY_OPPORTUNISTIC_NETWORK_EXIT_THRESHOLD_RSRP_INT: String
 
 Controls RSRP threshold, in dBm, below which OpportunisticNetworkService will decide whether the opportunistic network available is not good enough for internet data.
 
-The value of `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRsrp()` will be compared with this threshold.
+The value of getRsrp will be compared with this threshold.
 
  Value: "opportunistic_network_exit_threshold_rsrp_int"
 
@@ -3983,7 +3983,7 @@ static val KEY_OPPORTUNISTIC_NETWORK_EXIT_THRESHOLD_RSSNR_INT: String
 
 Controls RSSNR threshold, in dB, below which OpportunisticNetworkService will decide whether the opportunistic network available is not good enough for internet data.
 
-The value of `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthLte#getRssnr()` will be compared with this threshold.
+The value of getRssnr will be compared with this threshold.
 
  Value: "opportunistic_network_exit_threshold_rssnr_int"
 
@@ -4037,7 +4037,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val KEY_OVERRIDE_WFC_ROAMING_MODE_WHILE_USING_NTN_BOOL: String
 ```
 
-Determine whether to override roaming Wi-Fi Calling preference when device is connected to non-terrestrial network. `true` - roaming preference cannot be changed by user independently. Roaming preference is overridden to `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#` `false` - roaming preference can be changed by user independently and is not overridden when device is connected to non-terrestrial network.
+Determine whether to override roaming Wi-Fi Calling preference when device is connected to non-terrestrial network. `true` - roaming preference cannot be changed by user independently. Roaming preference is overridden to CarrierConfigManager `false` - roaming preference can be changed by user independently and is not overridden when device is connected to non-terrestrial network.
 
  Value: "override_wfc_roaming_mode_while_using_ntn_bool"
 
@@ -4108,7 +4108,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT: String
 ```
 
-The maximum number of times in a day that we display the notification for a performance boost via premium capabilities when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to user action or timeout. The default value is 2 times.
+The maximum number of times in a day that we display the notification for a performance boost via premium capabilities when purchasePremiumCapability returns a failure due to user action or timeout. The default value is 2 times.
 
  Value: "premium_capability_maximum_daily_notification_count_int"
 
@@ -4125,7 +4125,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT: String
 ```
 
-The maximum number of times in a month that we display the notification for a performance boost via premium capabilities when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to user action or timeout. The default value is 10 times.
+The maximum number of times in a month that we display the notification for a performance boost via premium capabilities when purchasePremiumCapability returns a failure due to user action or timeout. The default value is 10 times.
 
  Value: "premium_capability_maximum_monthly_notification_count_int"
 
@@ -4142,7 +4142,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_NETWORK_SETUP_TIME_MILLIS_LONG: String
 ```
 
-The amount of time in milliseconds within which the network must set up a slicing configuration for the premium capability after `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_SUCCESS:kotlin.Int`. During the setup time, calls to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` will return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_PENDING_NETWORK_SETUP:kotlin.Int`. If the network fails to set up a slicing configuration for the premium capability within the setup time, subsequent purchase requests will be allowed to go through again. The default value is 5 minutes.
+The amount of time in milliseconds within which the network must set up a slicing configuration for the premium capability after purchasePremiumCapability returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_SUCCESS:kotlin.Int`. During the setup time, calls to purchasePremiumCapability will return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_PENDING_NETWORK_SETUP:kotlin.Int`. If the network fails to set up a slicing configuration for the premium capability within the setup time, subsequent purchase requests will be allowed to go through again. The default value is 5 minutes.
 
  Value: "premium_capability_network_setup_time_millis_long"
 
@@ -4154,7 +4154,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_NOTIFICATION_BACKOFF_HYSTERESIS_TIME_MILLIS_LONG: String
 ```
 
-The amount of time in milliseconds that the notification for a performance boost via premium capabilities should be blocked when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to user action or timeout. The maximum number of performance boost notifications to show the user are defined in `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT:kotlin.String`. The default value is 30 minutes.
+The amount of time in milliseconds that the notification for a performance boost via premium capabilities should be blocked when purchasePremiumCapability returns a failure due to user action or timeout. The maximum number of performance boost notifications to show the user are defined in `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT:kotlin.String`. The default value is 30 minutes.
 
  Value: "premium_capability_notification_backoff_hysteresis_time_millis_long"
 
@@ -4171,7 +4171,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_NOTIFICATION_DISPLAY_TIMEOUT_MILLIS_LONG: String
 ```
 
-The amount of time in milliseconds the notification for a performance boost via premium capabilities will be visible to the user after `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` requests user action to purchase the boost from the carrier. Once the timeout expires, the performance boost notification will be automatically dismissed and the request will fail with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_TIMEOUT:kotlin.Int`. The default value is 30 minutes.
+The amount of time in milliseconds the notification for a performance boost via premium capabilities will be visible to the user after purchasePremiumCapability requests user action to purchase the boost from the carrier. Once the timeout expires, the performance boost notification will be automatically dismissed and the request will fail with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_TIMEOUT:kotlin.Int`. The default value is 30 minutes.
 
  Value: "premium_capability_notification_display_timeout_millis_long"
 
@@ -4183,7 +4183,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_PURCHASE_CONDITION_BACKOFF_HYSTERESIS_TIME_MILLIS_LONG: String
 ```
 
-The amount of time in milliseconds that the purchase request should be throttled when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` returns a failure due to the carrier. The default value is 30 minutes.
+The amount of time in milliseconds that the purchase request should be throttled when purchasePremiumCapability returns a failure due to the carrier. The default value is 30 minutes.
 
  Value: "premium_capability_purchase_condition_backoff_hysteresis_time_millis_long"
 
@@ -4200,7 +4200,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_PURCHASE_URL_STRING: String
 ```
 
-The URL to redirect to when the user clicks on the notification for a performance boost via premium capabilities after applications call `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`. If the URL is empty or invalid, the purchase request will return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_FEATURE_NOT_SUPPORTED:kotlin.Int`. This is empty by default.
+The URL to redirect to when the user clicks on the notification for a performance boost via premium capabilities after applications call purchasePremiumCapability. If the URL is empty or invalid, the purchase request will return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_FEATURE_NOT_SUPPORTED:kotlin.Int`. This is empty by default.
 
  Value: "premium_capability_purchase_url_string"
 
@@ -4212,7 +4212,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PREMIUM_CAPABILITY_SUPPORTED_ON_LTE_BOOL: String
 ```
 
-Whether to allow premium capabilities to be purchased when the device is connected to LTE. If this is `true`, applications can call `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` when connected to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_LTE:kotlin.Int` to purchase and use premium capabilities. If this is `false`, applications can only purchase and use premium capabilities when connected to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_NR:kotlin.Int`. This is `false` by default.
+Whether to allow premium capabilities to be purchased when the device is connected to LTE. If this is `true`, applications can call purchasePremiumCapability when connected to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_LTE:kotlin.Int` to purchase and use premium capabilities. If this is `false`, applications can only purchase and use premium capabilities when connected to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_NR:kotlin.Int`. This is `false` by default.
 
  Value: "premium_capability_supported_on_lte_bool"
 
@@ -4510,7 +4510,7 @@ An example config for a hybrid carrier supporting two PLMNs (lets say "XXXXXX" i
   </code>
 ```
 
-When set, this PLMN config would take precedence over the global configs. For example, if the global handover type is set as `https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager`, but if this config's current PLMN handover type is set as android.telephony.satellite.SatelliteManager#EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPE_T911, then T911 would be effective way of handling emergency call.
+When set, this PLMN config would take precedence over the global configs. For example, if the global handover type is set as SatelliteManager, but if this config's current PLMN handover type is set as android.telephony.satellite.SatelliteManager#EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPE_T911, then T911 would be effective way of handling emergency call.
 
 This config is empty by default.
 
@@ -4925,7 +4925,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL: String
 ```
 
-Flag specifying whether the `https://developer.android.com/reference/kotlin/android/telephony/SignalStrength` is shown in the SIM Status screen. The default value is true.
+Flag specifying whether the SignalStrength is shown in the SIM Status screen. The default value is true.
 
  Value: "show_signal_strength_in_sim_status_bool"
 
@@ -4976,7 +4976,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_SIM_COUNTRY_ISO_OVERRIDE_STRING: String
 ```
 
-String to override sim country iso. Sim country iso is based on sim MCC which is coarse and doesn't work with dual IMSI SIM where a SIM can have multiple MCC from different countries. Instead, each sim carrier should have a single country code, apply per carrier based iso code as an override. The overridden value can be read from `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCountryIso()` and `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getCountryIso()`
+String to override sim country iso. Sim country iso is based on sim MCC which is coarse and doesn't work with dual IMSI SIM where a SIM can have multiple MCC from different countries. Instead, each sim carrier should have a single country code, apply per carrier based iso code as an override. The overridden value can be read from getSimCountryIso and getCountryIso
 
  Value: "sim_country_iso_override_string"
 
@@ -5040,14 +5040,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAY: String
 ```
 
-A list of premium capabilities the carrier supports. Applications can prompt users to purchase these premium capabilities from their carrier for a performance boost. Valid values are any of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager`'s `PREMIUM_CAPABILITY_*` constants. This is empty by default, indicating that no premium capabilities are supported.
+A list of premium capabilities the carrier supports. Applications can prompt users to purchase these premium capabilities from their carrier for a performance boost. Valid values are any of TelephonyManager's `PREMIUM_CAPABILITY_*` constants. This is empty by default, indicating that no premium capabilities are supported.
 
  Value: "supported_premium_capabilities_int_array"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isPremiumCapabilityAvailableForPurchase(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
+- isPremiumCapabilityAvailableForPurchase
+- purchasePremiumCapability
 
 ### KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOL
 
@@ -5368,7 +5368,7 @@ Boolean flag indicating whether the carrier supports TTY.
 
 Note that `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_VOLTE_TTY_SUPPORTED_BOOL:kotlin.String` controls availability of TTY over VoLTE; if this carrier configuration is disabled, then `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_VOLTE_TTY_SUPPORTED_BOOL:kotlin.String` is also implicitly disabled.
 
-`https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#isTtySupported()` should be used to determine if a device supports TTY, and this carrier config key should be used to see if the current carrier supports it.
+isTtySupported should be used to determine if a device supports TTY, and this carrier config key should be used to see if the current carrier supports it.
 
  Value: "tty_supported_bool"
 
@@ -5670,7 +5670,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_VVM_TYPE_STRING: String
 ```
 
-The type of visual voicemail protocol the carrier adheres to. See `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager` for possible values. For example `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#VVM_TYPE_OMTP:kotlin.String`.
+The type of visual voicemail protocol the carrier adheres to. See TelephonyManager for possible values. For example `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#VVM_TYPE_OMTP:kotlin.String`.
 
  Value: "vvm_type_string"
 
@@ -5905,11 +5905,11 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun getConfig(): PersistableBundle?
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig(kotlin.String)` instead.*
+**Deprecated:** *use getConfig instead.*
 
-Gets the configuration values for the default subscription. After using this method to get the configuration bundle, `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#isConfigForIdentifiedCarrier(android.os.PersistableBundle)` should be called to confirm whether any carrier specific configuration has been applied.
+Gets the configuration values for the default subscription. After using this method to get the configuration bundle, isConfigForIdentifiedCarrier should be called to confirm whether any carrier specific configuration has been applied.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Return ||
@@ -5922,7 +5922,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig(kotlin.String)`
+- getConfig
 
 ### getConfig
 
@@ -5936,12 +5936,12 @@ Gets the configuration values of the specified config keys applied for the defau
 
 If the value for the key can't be found, the returned bundle will filter the key out.
 
-After using this method to get the configuration bundle, `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#isConfigForIdentifiedCarrier(android.os.PersistableBundle)` should be called to confirm whether any carrier specific configuration has been applied.
+After using this method to get the configuration bundle, isConfigForIdentifiedCarrier should be called to confirm whether any carrier specific configuration has been applied.
 
 Note that on success, the key/value for `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_CONFIG_VERSION_STRING:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_CONFIG_APPLIED_BOOL:kotlin.String` are always in the returned bundle, no matter if they were explicitly requested.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges for the default subscription (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges for the default subscription (see hasCarrierPrivileges). 
+Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or hasCarrierPrivileges
 
 | Parameters ||
 |---|---|
@@ -5957,8 +5957,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`
+- getConfigForSubId
+- getDefaultSubscriptionId
 
 ### getConfigByComponentForSubId
 
@@ -5973,13 +5973,13 @@ open fun getConfigByComponentForSubId(
 
 Gets the configuration values for a component using its prefix.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Parameters ||
 |---|---|
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): prefix of the component. This value cannot be `null`. |
-| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscription ID, normally obtained from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager`. |
+| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscription ID, normally obtained from SubscriptionManager. |
 
 | Return ||
 |---|---|
@@ -6000,16 +6000,16 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun getConfigForSubId(subId: Int): PersistableBundle?
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int,%20kotlin.String)` instead.*
+**Deprecated:** *Use getConfigForSubId instead.*
 
-Gets the configuration values for a particular subscription, which is associated with a specific SIM card. If an invalid subId is used, the returned config will contain default values. After using this method to get the configuration bundle, `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#isConfigForIdentifiedCarrier(android.os.PersistableBundle)` should be called to confirm whether any carrier specific configuration has been applied.
+Gets the configuration values for a particular subscription, which is associated with a specific SIM card. If an invalid subId is used, the returned config will contain default values. After using this method to get the configuration bundle, isConfigForIdentifiedCarrier should be called to confirm whether any carrier specific configuration has been applied.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscription ID, normally obtained from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager`. |
+| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscription ID, normally obtained from SubscriptionManager. |
 
 | Return ||
 |---|---|
@@ -6034,12 +6034,12 @@ Gets the configuration values of the specified keys for a particular subscriptio
 
 If an invalid subId is used, the returned configuration will contain default values for the specified keys. If the value for the key can't be found, the returned configuration will filter the key out.
 
-After using this method to get the configuration bundle, `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#isConfigForIdentifiedCarrier(android.os.PersistableBundle)` should be called to confirm whether any carrier specific configuration has been applied.
+After using this method to get the configuration bundle, isConfigForIdentifiedCarrier should be called to confirm whether any carrier specific configuration has been applied.
 
 Note that on success, the key/value for `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_CONFIG_VERSION_STRING:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_CONFIG_APPLIED_BOOL:kotlin.String` are always in the returned bundle, no matter if they were explicitly requested.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges on the specified subscription (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges on the specified subscription (see hasCarrierPrivileges). 
+Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or hasCarrierPrivileges
 
 | Parameters ||
 |---|---|
@@ -6062,11 +6062,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open static fun isConfigForIdentifiedCarrier(bundle: PersistableBundle!): Boolean
 ```
 
-Determines whether a configuration `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` obtained from `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()` or `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)` corresponds to an identified carrier.
+Determines whether a configuration `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` obtained from getConfig or getConfigForSubId corresponds to an identified carrier.
 
-When an app receives the `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#ACTION_CARRIER_CONFIG_CHANGED:kotlin.String` broadcast which informs it that the carrier configuration has changed, it is possible that another reload of the carrier configuration has begun since the intent was sent. In this case, the carrier configuration the app fetches (e.g. via `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()`) may not represent the configuration for the current carrier. It should be noted that it does not necessarily mean the configuration belongs to current carrier when this function return true because it may belong to another previous identified carrier. Users should always call `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()` or `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)` after receiving the broadcast `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#ACTION_CARRIER_CONFIG_CHANGED:kotlin.String`.
+When an app receives the `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#ACTION_CARRIER_CONFIG_CHANGED:kotlin.String` broadcast which informs it that the carrier configuration has changed, it is possible that another reload of the carrier configuration has begun since the intent was sent. In this case, the carrier configuration the app fetches (e.g. via getConfig) may not represent the configuration for the current carrier. It should be noted that it does not necessarily mean the configuration belongs to current carrier when this function return true because it may belong to another previous identified carrier. Users should always call getConfig or getConfigForSubId after receiving the broadcast `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#ACTION_CARRIER_CONFIG_CHANGED:kotlin.String`.
 
-After using `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()` or `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)` an app should always use this method to confirm whether any carrier specific configuration has been applied. Especially when an app misses the broadcast `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#ACTION_CARRIER_CONFIG_CHANGED:kotlin.String` but it still needs to get the current configuration, it must use this method to verify whether the configuration is default or carrier overridden.
+After using getConfig or getConfigForSubId an app should always use this method to confirm whether any carrier specific configuration has been applied. Especially when an app misses the broadcast `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#ACTION_CARRIER_CONFIG_CHANGED:kotlin.String` but it still needs to get the current configuration, it must use this method to verify whether the configuration is default or carrier overridden.
 
 | Parameters ||
 |---|---|
@@ -6088,7 +6088,7 @@ Calling this method triggers telephony services to fetch the current carrier con
 
 Normally this does not need to be called because the platform reloads config on its own. This should be called by a carrier service app if it wants to update config at an arbitrary moment.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`, or the calling app has carrier privileges (see hasCarrierPrivileges).
 
 This method returns before the reload has completed, and android.service.carrier.CarrierService#onLoadConfig will be called from an arbitrary thread. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`
@@ -6113,7 +6113,7 @@ Register a `https://developer.android.com/reference/kotlin/android/telephony/Car
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CarrierConfigManager.CarrierConfigChangeListener](../android/telephony/CarrierConfigManager.CarrierConfigChangeListener.md): The CarrierConfigChangeListener called when carrier configs has changed. This value cannot be `null`. |
 
 ### unregisterCarrierConfigChangeListener
@@ -6128,4 +6128,4 @@ Unregister the `https://developer.android.com/reference/kotlin/android/telephony
 
 | Parameters ||
 |---|---|
-| `listener` | [CarrierConfigManager.CarrierConfigChangeListener](../android/telephony/CarrierConfigManager.CarrierConfigChangeListener.md): The CarrierConfigChangeListener which was registered with method `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#registerCarrierConfigChangeListener(java.util.concurrent.Executor,%20android.telephony.CarrierConfigManager.CarrierConfigChangeListener)`. This value cannot be `null`. |
+| `listener` | [CarrierConfigManager.CarrierConfigChangeListener](../android/telephony/CarrierConfigManager.CarrierConfigChangeListener.md): The CarrierConfigChangeListener which was registered with method registerCarrierConfigChangeListener. This value cannot be `null`. |

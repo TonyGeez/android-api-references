@@ -16,12 +16,12 @@ The algorithm used for finding the next focusable view in a given direction from
 
 | Public methods ||
 |---|---|
-| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/FocusFinder#findNearestTouchable(android.view.ViewGroup,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(root: https://developer.android.com/reference/kotlin/android/view/ViewGroup!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deltas: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Find the nearest touchable view to the specified view. |
-| [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/FocusFinder#findNextFocus(android.view.ViewGroup,%20android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/ViewGroup!, focused: https://developer.android.com/reference/kotlin/android/view/View!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the next view to take focus in root's descendants, starting from the view that currently is focused. |
-| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/FocusFinder#findNextFocusFromRect(android.view.ViewGroup,%20android.graphics.Rect,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/ViewGroup!, focusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the next view to take focus in root's descendants, searching from a particular rectangle in root's coordinates. |
+| open [View](View.md)! | findNearestTouchable Find the nearest touchable view to the specified view. |
+| [View](View.md)! | findNextFocus Find the next view to take focus in root's descendants, starting from the view that currently is focused. |
+| open [View](View.md)! | findNextFocusFromRect Find the next view to take focus in root's descendants, searching from a particular rectangle in root's coordinates. |
 | --- | --- |
-| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/FocusFinder#findNextKeyboardNavigationCluster(android.view.View,%20android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View, currentCluster: https://developer.android.com/reference/kotlin/android/view/View?, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the root of the next keyboard navigation cluster after the current one. |
-| open static [FocusFinder](FocusFinder.md)! | `https://developer.android.com/reference/kotlin/android/view/FocusFinder#getInstance()()` Get the focus finder for this thread. |
+| open [View](View.md)! | findNextKeyboardNavigationCluster Find the root of the next keyboard navigation cluster after the current one. |
+| open static [FocusFinder](FocusFinder.md)! | getInstance Get the focus finder for this thread. |
 
 ## Public methods
 

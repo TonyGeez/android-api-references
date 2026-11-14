@@ -10,7 +10,7 @@ open class PolicyIdentifier<T : Any!>
 | --- | --- |
 | ↳ | [android.app.admin.PolicyIdentifier](PolicyIdentifier.md) |
 
-Represents a type safe identifier for a policy. Use it as a key for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setPolicy(android.app.admin.PolicyIdentifier,%20kotlin.Int,%20android.app.admin.DevicePolicyManager.setPolicy.T)` and related APIs.
+Represents a type safe identifier for a policy. Use it as a key for setPolicy and related APIs.
 
 Policies should be structured as:
 
@@ -27,7 +27,7 @@ Currently policy definitions are restricted to the `android.app.admin.policy` na
 
 | Public methods ||
 |---|---|
-| open static [PolicyIdentifier](PolicyIdentifier.md)\<U\> | `https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier#createForTesting(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create an instance of PolicyIdentifier for testing purposes. |
+| open static [PolicyIdentifier](PolicyIdentifier.md)\<U\> | createForTesting Create an instance of PolicyIdentifier for testing purposes. |
 
 ## Public methods
 

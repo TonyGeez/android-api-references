@@ -36,17 +36,17 @@ Information about the current build, extracted from system properties.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Build#Build()()` <br /> |
+| Build <br /> |
 
 | Public methods ||
 |---|---|
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getBackportedFixStatus(kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` The status of the backported fix for a known issue on this device. |
-| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Build.Partition](../android/os/Build.Partition.md)!\> | `https://developer.android.com/reference/kotlin/android/os/Build#getFingerprintedPartitions()()` Get build information about partitions that have a separate fingerprint defined. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getMajorSdkVersion(kotlin.Int)(sdkIntFull: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain the major version encoded in a VERSION_CODES_FULL value. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBackportedFixStatus The status of the backported fix for a known issue on this device. |
+| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Build.Partition](../android/os/Build.Partition.md)!\> | getFingerprintedPartitions Get build information about partitions that have a separate fingerprint defined. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMajorSdkVersion Obtain the major version encoded in a VERSION_CODES_FULL value. |
 | --- | --- |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Build#getMinorSdkVersion(kotlin.Int)(sdkIntFull: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtain the minor version encoded in a VERSION_CODES_FULL value. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#getRadioVersion()()` Returns the version string for the radio firmware. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Build#getSerial()()` Gets the hardware serial number, if available. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinorSdkVersion Obtain the minor version encoded in a VERSION_CODES_FULL value. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getRadioVersion Returns the version string for the radio firmware. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSerial Gets the hardware serial number, if available. |
 | --- | --- |
 
 | Properties ||
@@ -249,9 +249,9 @@ Gets the hardware serial number, if available.
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -434,7 +434,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val RADIO: String!
 ```
 
-**Deprecated:** *The radio firmware version is frequently not available when this class is initialized, leading to a blank or "unknown" value for this string. Use `https://developer.android.com/reference/kotlin/android/os/Build#getRadioVersion()` instead.*
+**Deprecated:** *The radio firmware version is frequently not available when this class is initialized, leading to a blank or "unknown" value for this string. Use getRadioVersion instead.*
 
 The radio firmware version number.
 
@@ -447,7 +447,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 static val SERIAL: String!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/Build#getSerial()` instead.*
+**Deprecated:** *Use getSerial instead.*
 
 A hardware serial number, if available. Alphanumeric only, case-insensitive. This field is always set to `https://developer.android.com/reference/kotlin/android/os/Build#UNKNOWN:kotlin.String`.
 

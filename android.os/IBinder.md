@@ -8,13 +8,13 @@ interface IBinder
 
 | [android.os.IBinder](IBinder.md) |
 
-Known Direct Subclasses [Binder](Binder.md) [Binder](Binder.md) Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by `https://developer.android.com/reference/kotlin/android/os/IBinder#`.
+Known Direct Subclasses [Binder](Binder.md) [Binder](Binder.md) Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by IBinder.
 
-Base interface for a remotable object, the core part of a lightweight remote procedure call mechanism designed for high performance when performing in-process and cross-process calls. This interface describes the abstract protocol for interacting with a remotable object. Do not implement this interface directly, instead extend from `https://developer.android.com/reference/kotlin/android/os/Binder`.
+Base interface for a remotable object, the core part of a lightweight remote procedure call mechanism designed for high performance when performing in-process and cross-process calls. This interface describes the abstract protocol for interacting with a remotable object. Do not implement this interface directly, instead extend from Binder.
 
-The key IBinder API is `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)` matched by `https://developer.android.com/reference/kotlin/android/os/Binder#onTransact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)`. These methods allow you to send a call to an IBinder object and receive a call coming in to a Binder object, respectively. This transaction API is synchronous, such that a call to `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)` does not return until the target has returned from `https://developer.android.com/reference/kotlin/android/os/Binder#onTransact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)`; this is the expected behavior when calling an object that exists in the local process, and the underlying inter-process communication (IPC) mechanism ensures that these same semantics apply when going across processes.
+The key IBinder API is transact matched by onTransact. These methods allow you to send a call to an IBinder object and receive a call coming in to a Binder object, respectively. This transaction API is synchronous, such that a call to transact does not return until the target has returned from onTransact; this is the expected behavior when calling an object that exists in the local process, and the underlying inter-process communication (IPC) mechanism ensures that these same semantics apply when going across processes.
 
-The data sent through transact() is a `https://developer.android.com/reference/kotlin/android/os/Parcel`, a generic buffer of data that also maintains some meta-data about its contents. The meta data is used to manage IBinder object references in the buffer, so that those references can be maintained as the buffer moves across processes. This mechanism ensures that when an IBinder is written into a Parcel and sent to another process, if that other process sends a reference to that same IBinder back to the original process, then the original process will receive the same IBinder object back. These semantics allow IBinder/Binder objects to be used as a unique identity (to serve as a token or for other purposes) that can be managed across processes.
+The data sent through transact() is a Parcel, a generic buffer of data that also maintains some meta-data about its contents. The meta data is used to manage IBinder object references in the buffer, so that those references can be maintained as the buffer moves across processes. This mechanism ensures that when an IBinder is written into a Parcel and sent to another process, if that other process sends a reference to that same IBinder back to the original process, then the original process will receive the same IBinder object back. These semantics allow IBinder/Binder objects to be used as a unique identity (to serve as a token or for other purposes) that can be managed across processes.
 
 The system maintains a pool of transaction threads in each process that it runs in. These threads are used to dispatch all IPCs coming in from other processes. For example, when an IPC is made from process A to process B, the calling thread in A blocks in transact() as it sends the transaction to process B. The next available pool thread in B receives the incoming transaction, calls Binder.onTransact() on the target object, and replies with the result Parcel. Upon receiving its result, the thread in process A returns to allow its execution to continue. In effect, other processes appear to use as additional threads that you did not create executing in your own process.
 
@@ -22,9 +22,9 @@ The Binder system also supports recursion across processes. For example if proce
 
 When working with remote objects, you often want to find out when they are no longer valid. There are three ways this can be determined:
 
-- The `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)` method will throw a `https://developer.android.com/reference/kotlin/android/os/RemoteException` exception if you try to call it on an IBinder whose process no longer exists.
-- The `https://developer.android.com/reference/kotlin/android/os/IBinder#pingBinder()` method can be called, and will return false if the remote process no longer exists.
-- The `https://developer.android.com/reference/kotlin/android/os/IBinder#linkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int)` method can be used to register a `https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient` with the IBinder, which will be called when its containing process goes away.
+- The transact method will throw a RemoteException exception if you try to call it on an IBinder whose process no longer exists.
+- The pingBinder method can be called, and will return false if the remote process no longer exists.
+- The linkToDeath method can be used to register a `https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient` with the IBinder, which will be called when its containing process goes away.
 
 ## Summary
 
@@ -37,7 +37,7 @@ When working with remote objects, you often want to find out when they are no lo
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#DUMP_TRANSACTION:kotlin.Int` IBinder protocol transaction code: dump internal state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#FIRST_CALL_TRANSACTION:kotlin.Int` The first transaction code available for user commands. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#FLAG_ONEWAY:kotlin.Int` Flag to `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)`: this is a one-way call, meaning that the caller returns immediately, without waiting for a result from the callee. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#FLAG_ONEWAY:kotlin.Int` Flag to transact: this is a one-way call, meaning that the caller returns immediately, without waiting for a result from the callee. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#INTERFACE_TRANSACTION:kotlin.Int` IBinder protocol transaction code: interrogate the recipient side of the transaction for its canonical interface descriptor. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#LAST_CALL_TRANSACTION:kotlin.Int` The last transaction code available for user commands. |
@@ -48,21 +48,21 @@ When working with remote objects, you often want to find out when they are no lo
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#addFrozenStateChangeCallback(java.util.concurrent.Executor,%20android.os.IBinder.FrozenStateChangeCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/IBinder.FrozenStateChangeCallback)` This method provides a callback mechanism to notify about process frozen/unfrozen events. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#dump(java.io.FileDescriptor,%20kotlin.Array)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Print the object's state into the given stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#dumpAsync(java.io.FileDescriptor,%20kotlin.Array)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Like `https://developer.android.com/reference/kotlin/android/os/IBinder#dump(java.io.FileDescriptor,%20kotlin.Array)` but always executes asynchronously. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addFrozenStateChangeCallback This method provides a callback mechanism to notify about process frozen/unfrozen events. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump Print the object's state into the given stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dumpAsync Like dump but always executes asynchronously. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/os/IBinder#getInterfaceDescriptor()()` Get the canonical name of the interface supported by this binder. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#getSuggestedMaxIpcSizeBytes()()` Limit that should be placed on IPC sizes, in bytes, to keep them safely under the transaction buffer limit. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#isBinderAlive()()` Check to see if the process that the binder is in is still alive. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getInterfaceDescriptor Get the canonical name of the interface supported by this binder. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSuggestedMaxIpcSizeBytes Limit that should be placed on IPC sizes, in bytes, to keep them safely under the transaction buffer limit. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBinderAlive Check to see if the process that the binder is in is still alive. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#linkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int)(recipient: https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register the recipient for a notification if this binder goes away. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#pingBinder()()` Check to see if the object still exists. |
-| abstract [IInterface](IInterface.md)? | `https://developer.android.com/reference/kotlin/android/os/IBinder#queryLocalInterface(kotlin.String)(descriptor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Attempt to retrieve a local implementation of an interface for this Binder object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | linkToDeath Register the recipient for a notification if this binder goes away. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | pingBinder Check to see if the object still exists. |
+| abstract [IInterface](IInterface.md)? | queryLocalInterface Attempt to retrieve a local implementation of an interface for this Binder object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#removeFrozenStateChangeCallback(android.os.IBinder.FrozenStateChangeCallback)(callback: https://developer.android.com/reference/kotlin/android/os/IBinder.FrozenStateChangeCallback)` Unregister a `https://developer.android.com/reference/kotlin/android/os/IBinder.FrozenStateChangeCallback`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/os/Parcel, reply: https://developer.android.com/reference/kotlin/android/os/Parcel?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Perform a generic operation with the object. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#unlinkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int)(recipient: https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove a previously registered death notification. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeFrozenStateChangeCallback Unregister a `https://developer.android.com/reference/kotlin/android/os/IBinder.FrozenStateChangeCallback`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | transact Perform a generic operation with the object. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | unlinkToDeath Remove a previously registered death notification. |
 | --- | --- |
 
 ## Constants
@@ -99,7 +99,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val FLAG_ONEWAY: Int
 ```
 
-Flag to `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)`: this is a one-way call, meaning that the caller returns immediately, without waiting for a result from the callee. Applies only if the caller and callee are in different processes.
+Flag to transact: this is a one-way call, meaning that the caller returns immediately, without waiting for a result from the callee. Applies only if the caller and callee are in different processes.
 
 The system provides special ordering semantics for multiple oneway calls being made to the same IBinder object: these calls will be dispatched in the other process one at a time, with the same order as the original calls. These are still dispatched by the IPC thread pool, so may execute on different threads, but the next one will not be dispatched until the previous one completes. This ordering is not guaranteed for calls on different IBinder objects or when mixing oneway and non-oneway calls on the same IBinder object.
 
@@ -192,7 +192,7 @@ You will only receive state change notifications for remote binders, as local bi
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [IBinder.FrozenStateChangeCallback](../android/os/IBinder.FrozenStateChangeCallback.md): The callback used to deliver state change notifications. This value cannot be `null`. |
 
 | Exceptions ||
@@ -228,7 +228,7 @@ abstract fun dumpAsync(
 ): Unit
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/os/IBinder#dump(java.io.FileDescriptor,%20kotlin.Array)` but always executes asynchronously. If the object is local, a new thread is created to perform the dump.
+Like dump but always executes asynchronously. If the object is local, a new thread is created to perform the dump.
 
 | Parameters ||
 |---|---|
@@ -300,7 +300,7 @@ You will only receive death notifications for remote binders, as local binders b
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/IBinder#unlinkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int)`
+- unlinkToDeath
 
 ### pingBinder
 
@@ -369,7 +369,7 @@ Perform a generic operation with the object.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | Returns the result from `https://developer.android.com/reference/kotlin/android/os/Binder#onTransact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)`. A successful call generally returns true; false generally means the transaction code was not understood. For a oneway call to a different process false should never be returned. If a oneway call is made to code in the same process (usually to a C++ or Rust implementation), then there are no oneway semantics, and false can still be returned. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | Returns the result from onTransact. A successful call generally returns true; false generally means the transaction code was not understood. For a oneway call to a different process false should never be returned. If a oneway call is made to code in the same process (usually to a C++ or Rust implementation), then there are no oneway semantics, and false can still be returned. |
 
 ### unlinkToDeath
 

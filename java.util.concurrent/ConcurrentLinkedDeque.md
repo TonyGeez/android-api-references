@@ -17,7 +17,7 @@ Iterators and spliterators are [*weakly consistent*](_package.md).
 
 Beware that, unlike in most collections, the `size` method is *NOT* a constant-time operation. Because of the asynchronous nature of these deques, determining the current number of elements requires a traversal of the elements, and so may report inaccurate results if this collection is modified during traversal.
 
-Bulk operations that add, remove, or examine multiple elements, such as #addAll, `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeIf(java.util.function.Predicate)` or `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#forEach(java.util.function.Consumer)`, are *not* guaranteed to be performed atomically. For example, a `forEach` traversal concurrent with an `addAll` operation might observe only some of the added elements.
+Bulk operations that add, remove, or examine multiple elements, such as #addAll, removeIf or forEach, are *not* guaranteed to be performed atomically. For example, a `forEach` traversal concurrent with an `addAll` operation might observe only some of the added elements.
 
 This class and its iterator implement all of the *optional* methods of the `https://developer.android.com/reference/kotlin/java/util/Deque.html#` and `https://developer.android.com/reference/kotlin/java/util/Iterator.html#` interfaces.
 
@@ -29,65 +29,65 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#ConcurrentLinkedDeque()()` Constructs an empty deque. |
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#ConcurrentLinkedDeque(kotlin.collections.MutableCollection)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<out E>!)` Constructs a deque initially containing the elements of the given collection, added in traversal order of the collection's iterator. |
+| ConcurrentLinkedDeque Constructs an empty deque. |
+| ConcurrentLinkedDeque Constructs a deque initially containing the elements of the given collection, added in traversal order of the collection's iterator. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#add(java.util.concurrent.ConcurrentLinkedDeque.E)(element: E)` Inserts the specified element at the tail of this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#addAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Appends all of the elements in the specified collection to the end of this deque, in the order that they are returned by the specified collection's iterator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#addFirst(java.util.concurrent.ConcurrentLinkedDeque.E)(e: E)` Inserts the specified element at the front of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | add Inserts the specified element at the tail of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | addAll Appends all of the elements in the specified collection to the end of this deque, in the order that they are returned by the specified collection's iterator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addFirst Inserts the specified element at the front of this deque. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#addLast(java.util.concurrent.ConcurrentLinkedDeque.E)(e: E)` Inserts the specified element at the end of this deque. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#clear()()` Removes all of the elements from this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#contains(java.util.concurrent.ConcurrentLinkedDeque.E)(element: E?)` Returns `true` if this deque contains the specified element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addLast Inserts the specified element at the end of this deque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Removes all of the elements from this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contains Returns `true` if this deque contains the specified element. |
 | --- | --- |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#descendingIterator()()` Returns an iterator over the elements in this deque in reverse sequential order. |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#element()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#forEach(java.util.function.Consumer)(action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in E>)` <br /> |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | descendingIterator Returns an iterator over the elements in this deque in reverse sequential order. |
+| open E | element <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | forEach <br /> |
 | --- | --- |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#getFirst()()` <br /> |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#getLast()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#isEmpty()()` Returns `true` if this collection contains no elements. |
+| open E | getFirst <br /> |
+| open E | getLast <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEmpty Returns `true` if this collection contains no elements. |
 | --- | --- |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#iterator()()` Returns an iterator over the elements in this deque in proper sequence. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#offer(java.util.concurrent.ConcurrentLinkedDeque.E)(e: E)` Inserts the specified element at the tail of this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#offerFirst(java.util.concurrent.ConcurrentLinkedDeque.E)(e: E)` Inserts the specified element at the front of this deque. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | iterator Returns an iterator over the elements in this deque in proper sequence. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offer Inserts the specified element at the tail of this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offerFirst Inserts the specified element at the front of this deque. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#offerLast(java.util.concurrent.ConcurrentLinkedDeque.E)(e: E)` Inserts the specified element at the end of this deque. |
-| open E? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#peek()()` Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
-| open E? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#peekFirst()()` Retrieves, but does not remove, the first element of this deque, or returns `null` if this deque is empty. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offerLast Inserts the specified element at the end of this deque. |
+| open E? | peek Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
+| open E? | peekFirst Retrieves, but does not remove, the first element of this deque, or returns `null` if this deque is empty. |
 | --- | --- |
-| open E? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#peekLast()()` Retrieves, but does not remove, the last element of this deque, or returns `null` if this deque is empty. |
-| open E? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#poll()()` Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
-| open E? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#pollFirst()()` Retrieves and removes the first element of this deque, or returns `null` if this deque is empty. |
+| open E? | peekLast Retrieves, but does not remove, the last element of this deque, or returns `null` if this deque is empty. |
+| open E? | poll Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
+| open E? | pollFirst Retrieves and removes the first element of this deque, or returns `null` if this deque is empty. |
 | --- | --- |
-| open E? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#pollLast()()` Retrieves and removes the last element of this deque, or returns `null` if this deque is empty. |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#pop()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#push(java.util.concurrent.ConcurrentLinkedDeque.E)(e: E)` <br /> |
+| open E? | pollLast Retrieves and removes the last element of this deque, or returns `null` if this deque is empty. |
+| open E | pop <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | push <br /> |
 | --- | --- |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#remove()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#remove(java.util.concurrent.ConcurrentLinkedDeque.E)(element: E?)` Removes the first occurrence of the specified element from this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` <br /> |
+| open E | remove <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | remove Removes the first occurrence of the specified element from this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeAll <br /> |
 | --- | --- |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeFirst()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeFirstOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the first occurrence of the specified element from this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeIf(java.util.function.Predicate)(filter: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in E>)` <br /> |
+| open E | removeFirst <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeFirstOccurrence Removes the first occurrence of the specified element from this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeIf <br /> |
 | --- | --- |
-| open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeLast()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeLastOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the last occurrence of the specified element from this deque. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#retainAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` <br /> |
+| open E | removeLast <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeLastOccurrence Removes the last occurrence of the specified element from this deque. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | retainAll <br /> |
 | --- | --- |
-| open [Spliterator](../java.util/Spliterator.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#spliterator()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this deque. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#toArray()()` Returns an array containing all of the elements in this deque, in proper sequence (from first to last element). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#toArray(kotlin.Array)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>)` Returns an array containing all of the elements in this deque, in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
+| open [Spliterator](../java.util/Spliterator.md)\<E\> | spliterator Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this deque. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | toArray Returns an array containing all of the elements in this deque, in proper sequence (from first to last element). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | toArray Returns an array containing all of the elements in this deque, in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#toString()()` Returns a string representation of this collection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of this collection. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#containsAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Returns `true` if this collection contains all of the elements in the specified collection. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/java/util/Deque.html#` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Deque.html#<E>` | `https://developer.android.com/reference/kotlin/java/util/Deque.html#reversed()()` Returns a reverse-ordered [view](../java.util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/util/AbstractCollection.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | containsAll Returns `true` if this collection contains all of the elements in the specified collection. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/util/Deque.html#` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Deque.html#<E>` | reversed Returns a reverse-ordered [view](../java.util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -141,7 +141,7 @@ Inserts the specified element at the tail of this deque. As the deque is unbound
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by `https://developer.android.com/reference/kotlin/java/util/Collection.html#add(java.util.Collection.E)`) |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by add) |
 
 | Exceptions ||
 |---|---|
@@ -390,7 +390,7 @@ Inserts the specified element at the tail of this deque. As the deque is unbound
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by `https://developer.android.com/reference/kotlin/java/util/Queue.html#offer(java.util.Queue.E)`) |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by offer) |
 
 | Exceptions ||
 |---|---|
@@ -415,7 +415,7 @@ Inserts the specified element at the front of this deque. As the deque is unboun
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by `https://developer.android.com/reference/kotlin/java/util/Deque.html#offerFirst(java.util.Deque.E)`) |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by offerFirst) |
 
 | Exceptions ||
 |---|---|
@@ -442,7 +442,7 @@ This method is equivalent to #add.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by `https://developer.android.com/reference/kotlin/java/util/Deque.html#offerLast(java.util.Deque.E)`) |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by offerLast) |
 
 | Exceptions ||
 |---|---|
@@ -461,7 +461,7 @@ open fun peek(): E?
 
 Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque.html#peekFirst()`.
+This method is equivalent to peekFirst.
 
 | Return ||
 |---|---|
@@ -505,7 +505,7 @@ open fun poll(): E?
 
 Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque.html#pollFirst()`.
+This method is equivalent to pollFirst.
 
 | Return ||
 |---|---|
@@ -601,7 +601,7 @@ open fun remove(element: E?): Boolean
 
 Removes the first occurrence of the specified element from this deque. If the deque does not contain the element, it is unchanged. More formally, removes the first element `e` such that `o.equals(e)` (if such an element exists). Returns `true` if this deque contained the specified element (or equivalently, if this deque changed as a result of the call).
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#removeFirstOccurrence(kotlin.Any)`.
+This method is equivalent to removeFirstOccurrence.
 
 | Parameters ||
 |---|---|
@@ -813,7 +813,7 @@ Returns an array containing all of the elements in this deque, in proper sequenc
 
 If this deque fits in the specified array with room to spare (i.e., the array has more elements than this deque), the element in the array immediately following the end of the deque is set to `null`.
 
-Like the `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentLinkedDeque#toArray()` method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
+Like the toArray method, this method acts as bridge between array-based and collection-based APIs. Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.
 
 Suppose `x` is a deque known to contain only strings. The following code can be used to dump the deque into a newly allocated array of `String`:
 
@@ -844,7 +844,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun toString(): String
 ```
 
-Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters `", "` (comma and space). Elements are converted to strings as by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)`.
+Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters `", "` (comma and space). Elements are converted to strings as by valueOf.
 
 | Return ||
 |---|---|

@@ -10,7 +10,7 @@ class WifiAwareNetworkInfo : Parcelable, TransportInfo
 | --- | --- |
 | ↳ | [android.net.wifi.aware.WifiAwareNetworkInfo](WifiAwareNetworkInfo.md) |
 
-Wi-Fi Aware-specific network information. The information can be extracted from the `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` of the network using `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#getTransportInfo()`. The `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` is provided by the connectivity service to apps, e.g. received through the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback.html#onCapabilitiesChanged(android.net.Network,%20android.net.NetworkCapabilities)` callback.
+Wi-Fi Aware-specific network information. The information can be extracted from the `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` of the network using getTransportInfo. The `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` is provided by the connectivity service to apps, e.g. received through the onCapabilitiesChanged callback.
 
 The Wi-Fi Aware-specific network information include the peer's scoped link-local IPv6 address for the Wi-Fi Aware link, as well as (optionally) the port and transport protocol specified by the peer. The scoped link-local IPv6, port, and transport protocol can then be used to create a `https://developer.android.com/reference/kotlin/java/net/Socket.html#` connection to the peer.
 
@@ -20,21 +20,21 @@ Note: these are the peer's IPv6 and port information - not the local device's!
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAwareChannelInfo](WifiAwareChannelInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getChannelInfoList()()` Get a list `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo` which is used by this Aware data-path |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAwareChannelInfo](WifiAwareChannelInfo.md)!\> | getChannelInfoList Get a list WifiAwareChannelInfo which is used by this Aware data-path |
 | --- | --- |
-| [Inet6Address](../java.net/Inet6Address.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getPeerIpv6Addr()()` Get the scoped link-local IPv6 address of the Wi-Fi Aware peer (not of the local device!). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getPort()()` Get the port number to be used to create a network connection to the Wi-Fi Aware peer. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getTransportProtocol()()` Get the transport protocol to be used to communicate over a network connection to the Wi-Fi Aware peer. |
+| [Inet6Address](../java.net/Inet6Address.md)? | getPeerIpv6Addr Get the scoped link-local IPv6 address of the Wi-Fi Aware peer (not of the local device!). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPort Get the port number to be used to create a network connection to the Wi-Fi Aware peer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTransportProtocol Get the transport protocol to be used to communicate over a network connection to the Wi-Fi Aware peer. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -51,7 +51,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -93,11 +93,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getChannelInfoList(): MutableList<WifiAwareChannelInfo!>
 ```
 
-Get a list `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo` which is used by this Aware data-path
+Get a list WifiAwareChannelInfo which is used by this Aware data-path
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo!>` | A list of `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo!>` | A list of WifiAwareChannelInfo This value cannot be `null`. |
 
 ### getPeerIpv6Addr
 
@@ -121,7 +121,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getPort(): Int
 ```
 
-Get the port number to be used to create a network connection to the Wi-Fi Aware peer. The port information is provided by the app running on the peer which requested the connection, using the `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier.Builder#setPort(kotlin.Int)`.
+Get the port number to be used to create a network connection to the Wi-Fi Aware peer. The port information is provided by the app running on the peer which requested the connection, using the setPort.
 
 | Return ||
 |---|---|
@@ -135,7 +135,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getTransportProtocol(): Int
 ```
 
-Get the transport protocol to be used to communicate over a network connection to the Wi-Fi Aware peer. The transport protocol is provided by the app running on the peer which requested the connection, using the `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkSpecifier.Builder#setTransportProtocol(kotlin.Int)`.
+Get the transport protocol to be used to communicate over a network connection to the Wi-Fi Aware peer. The transport protocol is provided by the app running on the peer which requested the connection, using the setTransportProtocol.
 
 The transport protocol number is assigned by the Internet Assigned Numbers Authority (IANA) https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml.
 
@@ -156,8 +156,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

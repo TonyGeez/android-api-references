@@ -15,12 +15,12 @@ The `KeyChain` class provides access to private keys and their corresponding cer
 Applications accessing the `KeyChain` normally go through these steps:
 
 1. Receive a callback from an `https://developer.android.com/reference/kotlin/javax/net/ssl/X509KeyManager.html#` that a private key is requested.
-2. Call #choosePrivateKeyAlias to allow the user to select from a list of currently available private keys and corresponding certificate chains. The chosen alias will be returned by the callback `https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback#alias(kotlin.String)`, or null if no private key is available or the user cancels the request.
-3. Call `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCertificateChain(android.content.Context,%20kotlin.String)` to retrieve the credentials to return to the corresponding `https://developer.android.com/reference/kotlin/javax/net/ssl/X509KeyManager.html#` callbacks.
+2. Call #choosePrivateKeyAlias to allow the user to select from a list of currently available private keys and corresponding certificate chains. The chosen alias will be returned by the callback alias, or null if no private key is available or the user cancels the request.
+3. Call getPrivateKey and getCertificateChain to retrieve the credentials to return to the corresponding `https://developer.android.com/reference/kotlin/javax/net/ssl/X509KeyManager.html#` callbacks.
 
 An application may remember the value of a selected alias to avoid prompting the user with #choosePrivateKeyAlias on subsequent connections. If the alias is no longer valid, null will be returned on lookups using that value
 
-An application can request the installation of private keys and certificates via the `Intent` provided by `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()`. Private keys installed via this `Intent` will be accessible via #choosePrivateKeyAlias while Certificate Authority (CA) certificates will be trusted by all applications through the default `X509TrustManager`.
+An application can request the installation of private keys and certificates via the `Intent` provided by createInstallIntent. Private keys installed via this `Intent` will be accessible via #choosePrivateKeyAlias while Certificate Authority (CA) certificates will be trusted by all applications through the default `X509TrustManager`.
 
 ## Summary
 
@@ -35,31 +35,31 @@ An application can request the installation of private keys and certificates via
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_KEY_ACCESSIBLE:kotlin.String` Used as a boolean extra field in `https://developer.android.com/reference/kotlin/android/security/KeyChain#ACTION_KEY_ACCESS_CHANGED:kotlin.String` to supply if the key is accessible to the application. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_KEY_ALIAS:kotlin.String` Used as a String extra field in `https://developer.android.com/reference/kotlin/android/security/KeyChain#ACTION_KEY_ACCESS_CHANGED:kotlin.String` to supply the alias of the key. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_NAME:kotlin.String` Optional extra to specify a `String` credential name on the `Intent` returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_PKCS12:kotlin.String` Optional extra for use with the `Intent` returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()` to specify a PKCS#12 key store to install. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_NAME:kotlin.String` Optional extra to specify a `String` credential name on the `Intent` returned by createInstallIntent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_PKCS12:kotlin.String` Optional extra for use with the `Intent` returned by createInstallIntent to specify a PKCS#12 key store to install. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#KEY_ALIAS_SELECTION_DENIED:kotlin.String` Used by DPC or delegated app in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)` or `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)` to identify that the requesting app is not granted access to any key, and nor will the user be able to grant access manually. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#KEY_ALIAS_SELECTION_DENIED:kotlin.String` Used by DPC or delegated app in onChoosePrivateKeyAlias or onChoosePrivateKeyAlias to identify that the requesting app is not granted access to any key, and nor will the user be able to grant access manually. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/KeyChain#KeyChain()()` <br /> |
+| KeyChain <br /> |
 
 | Public methods ||
 |---|---|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#choosePrivateKeyAlias(android.app.Activity,%20android.security.KeyChainAliasCallback,%20kotlin.Array,%20kotlin.Array,%20android.net.Uri,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#, response: https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback, keyTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, issuers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/Principal.html#!>?, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#choosePrivateKeyAlias(android.app.Activity,%20android.security.KeyChainAliasCallback,%20kotlin.Array,%20kotlin.Array,%20kotlin.String,%20kotlin.Int,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#, response: https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback, keyTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, issuers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/Principal.html#!>?, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. |
-| static [Intent](../android.content/Intent.md) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()()` Returns an `Intent` that can be used for credential installation. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | choosePrivateKeyAlias Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | choosePrivateKeyAlias Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. |
+| static [Intent](../android.content/Intent.md) | createInstallIntent Returns an `Intent` that can be used for credential installation. |
 | --- | --- |
-| static [Intent](../android.content/Intent.md) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#createManageCredentialsIntent(android.security.AppUriAuthenticationPolicy)(policy: https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy)` Returns an `Intent` that should be used by an app to request to manage the user's credentials. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>? | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCertificateChain(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `X509Certificate` chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions in `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)`). |
-| static [AppUriAuthenticationPolicy](AppUriAuthenticationPolicy.md) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getCredentialManagementAppPolicy(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Called by the credential management app to get the authentication policy `https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy`. |
+| static [Intent](../android.content/Intent.md) | createManageCredentialsIntent Returns an `Intent` that should be used by an app to request to manage the user's credentials. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>? | getCertificateChain Returns the `X509Certificate` chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions in getPrivateKey). |
+| static [AppUriAuthenticationPolicy](AppUriAuthenticationPolicy.md) | getCredentialManagementAppPolicy Called by the credential management app to get the authentication policy AppUriAuthenticationPolicy. |
 | --- | --- |
-| static [PrivateKey](../java.security/PrivateKey.md)? | `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `PrivateKey` for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions below). |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#isBoundKeyAlgorithm(kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if the current device's `KeyChain` binds any `PrivateKey` of the given `algorithm` to the device once imported or generated. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#isCredentialManagementApp(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Check whether the caller is the credential management app `CredentialManagementApp`. |
+| static [PrivateKey](../java.security/PrivateKey.md)? | getPrivateKey Returns the `PrivateKey` for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions below). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBoundKeyAlgorithm Returns `true` if the current device's `KeyChain` binds any `PrivateKey` of the given `algorithm` to the device once imported or generated. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCredentialManagementApp Check whether the caller is the credential management app `CredentialManagementApp`. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#isKeyAlgorithmSupported(kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if the current device's `KeyChain` supports a specific `PrivateKey` type indicated by `algorithm` (e.g., "RSA"). |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyChain#removeCredentialManagementApp(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Called by the credential management app `CredentialManagementApp` to unregister as the credential management app and stop managing the user's credentials. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isKeyAlgorithmSupported Returns `true` if the current device's `KeyChain` supports a specific `PrivateKey` type indicated by `algorithm` (e.g., "RSA"). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeCredentialManagementApp Called by the credential management app `CredentialManagementApp` to unregister as the credential management app and stop managing the user's credentials. |
 
 ## Constants
 
@@ -135,7 +135,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CERTIFICATE: String
 ```
 
-Optional extra to specify an X.509 certificate to install on the `Intent` returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()`. The extra value should be a PEM or ASN.1 DER encoded `byte[]`. An `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#` can be converted to DER encoded bytes with `https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#getEncoded()`.
+Optional extra to specify an X.509 certificate to install on the `Intent` returned by createInstallIntent. The extra value should be a PEM or ASN.1 DER encoded `byte[]`. An `https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#` can be converted to DER encoded bytes with getEncoded.
 
 `https://developer.android.com/reference/kotlin/android/security/KeyChain#EXTRA_NAME:kotlin.String` may be used to provide a default alias name for the installed certificate.
 
@@ -173,7 +173,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NAME: String
 ```
 
-Optional extra to specify a `String` credential name on the `Intent` returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()`.
+Optional extra to specify a `String` credential name on the `Intent` returned by createInstallIntent.
 
  Value: "name"
 
@@ -185,7 +185,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PKCS12: String
 ```
 
-Optional extra for use with the `Intent` returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain#createInstallIntent()` to specify a PKCS#12 key store to install. The extra value should be a `byte[]`. The bytes may come from an external source or be generated with java.security.KeyStore#store on a "PKCS12" instance.
+Optional extra for use with the `Intent` returned by createInstallIntent to specify a PKCS#12 key store to install. The extra value should be a `byte[]`. The bytes may come from an external source or be generated with java.security.KeyStore#store on a "PKCS12" instance.
 
 The user will be prompted for the password to load the key store.
 
@@ -203,7 +203,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_ALIAS_SELECTION_DENIED: String
 ```
 
-Used by DPC or delegated app in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)` or `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)` to identify that the requesting app is not granted access to any key, and nor will the user be able to grant access manually.
+Used by DPC or delegated app in onChoosePrivateKeyAlias or onChoosePrivateKeyAlias to identify that the requesting app is not granted access to any key, and nor will the user be able to grant access manually.
 
  Value: "android:alias-selection-denied"
 
@@ -234,7 +234,7 @@ static fun choosePrivateKeyAlias(
 
 Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. The selected alias or null will be returned via the KeyChainAliasCallback callback.
 
-A device policy controller (as a device or profile owner) can intercept the request before the activity is shown, to pick a specific private key alias by implementing `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)`.
+A device policy controller (as a device or profile owner) can intercept the request before the activity is shown, to pick a specific private key alias by implementing onChoosePrivateKeyAlias.
 
 `keyTypes` and `issuers` may be used to narrow down suggested choices to the user. If either `keyTypes` or `issuers` is specified and non-empty, and there are no matching certificates in the KeyChain, then the certificate selection prompt would be suppressed entirely.
 
@@ -275,7 +275,7 @@ static fun choosePrivateKeyAlias(
 
 Launches an `Activity` for the user to select the alias for a private key and certificate pair for authentication. The selected alias or null will be returned via the KeyChainAliasCallback callback.
 
-A device policy controller (as a device or profile owner) can intercept the request before the activity is shown, to pick a specific private key alias by implementing `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)`.
+A device policy controller (as a device or profile owner) can intercept the request before the activity is shown, to pick a specific private key alias by implementing onChoosePrivateKeyAlias.
 
 `keyTypes` and `issuers` may be used to narrow down suggested choices to the user. If either `keyTypes` or `issuers` is specified and non-empty, and there are no matching certificates in the KeyChain, then the certificate selection prompt would be suppressed entirely.
 
@@ -325,9 +325,9 @@ static fun createManageCredentialsIntent(policy: AppUriAuthenticationPolicy): I
 
 Returns an `Intent` that should be used by an app to request to manage the user's credentials. This is limited to unmanaged devices. The authentication policy must be provided to be able to make this request successfully.
 
-This intent should be started using `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` to verify whether the request was successful and whether the user accepted or denied the request. If the user successfully receives and accepts the request, the result code will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, otherwise the result code will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`.
+This intent should be started using startActivityForResult to verify whether the request was successful and whether the user accepted or denied the request. If the user successfully receives and accepts the request, the result code will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, otherwise the result code will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`.
 
-`https://developer.android.com/reference/kotlin/android/security/KeyChain#isCredentialManagementApp(android.content.Context)` should be used to determine whether an app is already the credential management app.
+isCredentialManagementApp should be used to determine whether an app is already the credential management app.
 
 | Parameters ||
 |---|---|
@@ -348,21 +348,21 @@ static fun getCertificateChain(
 ): Array<X509Certificate!>?
 ```
 
-Returns the `X509Certificate` chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions in `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)`).
+Returns the `X509Certificate` chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions in getPrivateKey).
 
 **Note:** If a certificate chain was explicitly specified when the alias was installed, this method will return that chain. If only the client certificate was specified at the installation time, this method will try to build a certificate chain using all available trust anchors (preinstalled and user-added).
 
 This method may block while waiting for a connection to another process, and must never be called from the main thread.
 
-As `https://developer.android.com/reference/kotlin/android/app/Activity.html#` and `https://developer.android.com/reference/kotlin/android/app/Service.html#` contexts are short-lived and can be destroyed at any time from the main thread, it is safer to rely on a long-lived context such as one returned from `https://developer.android.com/reference/kotlin/android/content/Context.html#getApplicationContext()`.
+As `https://developer.android.com/reference/kotlin/android/app/Activity.html#` and `https://developer.android.com/reference/kotlin/android/app/Service.html#` contexts are short-lived and can be destroyed at any time from the main thread, it is safer to rely on a long-lived context such as one returned from getApplicationContext.
 
-In case the caller specifies an alias for which it lacks a grant, it must call #choosePrivateKeyAlias again. See `https://developer.android.com/reference/kotlin/android/security/KeyChain#getPrivateKey(android.content.Context,%20kotlin.String)` for more details on coping with this scenario. 
+In case the caller specifies an alias for which it lacks a grant, it must call #choosePrivateKeyAlias again. See getPrivateKey for more details on coping with this scenario. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
-| `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the desired certificate chain, typically returned via `https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback#alias(kotlin.String)`. This value cannot be `null`. |
+| `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the desired certificate chain, typically returned via alias. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -377,7 +377,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static fun getCredentialManagementAppPolicy(context: Context): AppUriAuthenticationPolicy
 ```
 
-Called by the credential management app to get the authentication policy `https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy`. 
+Called by the credential management app to get the authentication policy AppUriAuthenticationPolicy. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -386,7 +386,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/AppUriAuthenticationPolicy` | the credential management app's authentication policy. This value cannot be `null`. |
+| AppUriAuthenticationPolicy | the credential management app's authentication policy. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -407,7 +407,7 @@ Returns the `PrivateKey` for the requested alias, or null if the alias does not 
 
 This method may block while waiting for a connection to another process, and must never be called from the main thread.
 
-As `https://developer.android.com/reference/kotlin/android/app/Activity.html#` and `https://developer.android.com/reference/kotlin/android/app/Service.html#` contexts are short-lived and can be destroyed at any time from the main thread, it is safer to rely on a long-lived context such as one returned from `https://developer.android.com/reference/kotlin/android/content/Context.html#getApplicationContext()`.
+As `https://developer.android.com/reference/kotlin/android/app/Activity.html#` and `https://developer.android.com/reference/kotlin/android/app/Service.html#` contexts are short-lived and can be destroyed at any time from the main thread, it is safer to rely on a long-lived context such as one returned from getApplicationContext.
 
 If the caller provides a valid alias to which it was not granted access, then the caller must invoke #choosePrivateKeyAlias again to get another valid alias or a grant to access the same alias.
 
@@ -417,7 +417,7 @@ This method may take several seconds to complete, so it should only be called fr
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
-| `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the desired private key, typically returned via `https://developer.android.com/reference/kotlin/android/security/KeyChainAliasCallback#alias(kotlin.String)`. This value cannot be `null`. |
+| `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the desired private key, typically returned via alias. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -464,7 +464,7 @@ static fun isCredentialManagementApp(context: Context): Boolean
 
 Check whether the caller is the credential management app `CredentialManagementApp`. The credential management app has the ability to manage the user's KeyChain credentials on unmanaged devices.
 
-`https://developer.android.com/reference/kotlin/android/security/KeyChain#createManageCredentialsIntent(android.security.AppUriAuthenticationPolicy)` should be used by an app to request to become the credential management app. The user must approve this request before the app can manage the user's credentials. There can only be one credential management on the device. 
+createManageCredentialsIntent should be used by an app to request to become the credential management app. The user must approve this request before the app can manage the user's credentials. There can only be one credential management on the device. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||

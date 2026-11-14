@@ -10,21 +10,21 @@ open class LauncherApps
 | --- | --- |
 | ↳ | [android.content.pm.LauncherApps](LauncherApps.md) |
 
-Class for retrieving a list of launchable activities for the current user and any associated managed profiles that are visible to the current user, which can be retrieved with `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getProfiles()`. This is mainly for use by launchers. Apps can be queried for each user profile. Since the PackageManager will not deliver package broadcasts for other profiles, you can register for package changes here.
+Class for retrieving a list of launchable activities for the current user and any associated managed profiles that are visible to the current user, which can be retrieved with getProfiles. This is mainly for use by launchers. Apps can be queried for each user profile. Since the PackageManager will not deliver package broadcasts for other profiles, you can register for package changes here.
 
 To watch for managed profiles being added or removed, register for the following broadcasts: `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_ADDED:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_REMOVED:kotlin.String`.
 
-Note as of Android O, apps on a managed profile are no longer allowed to access apps on the main profile. Apps can only access profiles returned by `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getProfiles()`.
+Note as of Android O, apps on a managed profile are no longer allowed to access apps on the main profile. Apps can only access profiles returned by getProfiles.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| open | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.ArchiveCompatibilityParams` Used to enable Archiving compatibility options with `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#setArchiveCompatibility(android.content.pm.LauncherApps.ArchiveCompatibilityParams)`. |
+| open | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.ArchiveCompatibilityParams` Used to enable Archiving compatibility options with setArchiveCompatibility. |
 | abstract | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.Callback` Callbacks for package changes to this and related managed profiles. |
 | | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` Represents a "pin shortcut" or a "pin appwidget" request made by an app, which is sent with an `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#ACTION_CONFIRM_PIN_SHORTCUT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#ACTION_CONFIRM_PIN_APPWIDGET:kotlin.String` intent respectively to the default launcher app. |
 | --- | --- |
-| open | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.ShortcutQuery` Represents a query passed to `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcuts(android.content.pm.LauncherApps.ShortcutQuery,%20android.os.UserHandle)`. |
+| open | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.ShortcutQuery` Represents a query passed to getShortcuts. |
 
 | Constants ||
 |---|---|
@@ -35,49 +35,49 @@ Note as of Android O, apps on a managed profile are no longer allowed to access 
 
 | Public methods ||
 |---|---|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LauncherActivityInfo](LauncherActivityInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getActivityList(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Retrieves a list of activities that specify `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`, across all apps, for a specified user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getAllPackageInstallerSessions()()` Return list of all known install sessions in this user and managed profiles, regardless of the installer. |
-| open [IntentSender](../android.content/IntentSender.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getAppMarketActivityIntent(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns an intent sender which can be used to start the App Market activity (Installer Activity). |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LauncherActivityInfo](LauncherActivityInfo.md)!\>! | getActivityList Retrieves a list of activities that specify `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`, across all apps, for a specified user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md)!\> | getAllPackageInstallerSessions Return list of all known install sessions in this user and managed profiles, regardless of the installer. |
+| open [IntentSender](../android.content/IntentSender.md)? | getAppMarketActivityIntent Returns an intent sender which can be used to start the App Market activity (Installer Activity). |
 | --- | --- |
-| open [ApplicationInfo](ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getApplicationInfo(kotlin.String,%20kotlin.Int,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` about an application installed for a specific user profile. |
-| [LauncherUserInfo](LauncherUserInfo.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getLauncherUserInfo(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns information related to a user which is useful for displaying UI elements to distinguish it from other users (eg, badges). |
-| open [LauncherApps.PinItemRequest](../android/content/pm/LauncherApps.PinItemRequest.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPinItemRequest(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` A helper method to extract a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` set to the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#EXTRA_PIN_ITEM_REQUEST:kotlin.String` extra. |
+| open [ApplicationInfo](ApplicationInfo.md)! | getApplicationInfo Returns ApplicationInfo about an application installed for a specific user profile. |
+| [LauncherUserInfo](LauncherUserInfo.md)? | getLauncherUserInfo Returns information related to a user which is useful for displaying UI elements to distinguish it from other users (eg, badges). |
+| open [LauncherApps.PinItemRequest](../android/content/pm/LauncherApps.PinItemRequest.md)! | getPinItemRequest A helper method to extract a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` set to the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#EXTRA_PIN_ITEM_REQUEST:kotlin.String` extra. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPreInstalledSystemPackages(android.os.UserHandle)(userHandle: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns the list of the system packages that are installed at user creation. |
-| open [IntentSender](../android.content/IntentSender.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPrivateSpaceSettingsIntent()()` Returns `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which can be used to start the Private Space Settings Activity. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android.os/UserHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getProfiles()()` Return a list of profiles that the caller can access via the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#` APIs. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getPreInstalledSystemPackages Returns the list of the system packages that are installed at user creation. |
+| open [IntentSender](../android.content/IntentSender.md)? | getPrivateSpaceSettingsIntent Returns `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which can be used to start the Private Space Settings Activity. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android.os/UserHandle.md)!\>! | getProfiles Return a list of profiles that the caller can access via the LauncherApps APIs. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutBadgedIconDrawable(android.content.pm.ShortcutInfo,%20kotlin.Int)(shortcut: https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo!, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the shortcut icon with badging appropriate for the profile. |
-| open [IntentSender](../android.content/IntentSender.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutConfigActivityIntent(android.content.pm.LauncherActivityInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo)` Returns an intent sender which can be used to start the configure activity for creating custom shortcuts. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LauncherActivityInfo](LauncherActivityInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutConfigActivityList(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Retrieves a list of config activities for creating `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | getShortcutBadgedIconDrawable Returns the shortcut icon with badging appropriate for the profile. |
+| open [IntentSender](../android.content/IntentSender.md)? | getShortcutConfigActivityIntent Returns an intent sender which can be used to start the configure activity for creating custom shortcuts. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [LauncherActivityInfo](LauncherActivityInfo.md)!\>! | getShortcutConfigActivityList Retrieves a list of config activities for creating ShortcutInfo. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutIconDrawable(android.content.pm.ShortcutInfo,%20kotlin.Int)(shortcut: https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the icon for this shortcut, without any badging for the profile. |
-| open [PendingIntent](../android.app/PendingIntent.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutIntent(kotlin.String,%20kotlin.String,%20android.os.Bundle,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, shortcutId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns PendingIntent associated with specified shortcut. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](ShortcutInfo.md)!\>? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcuts(android.content.pm.LauncherApps.ShortcutQuery,%20android.os.UserHandle)(query: https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.ShortcutQuery, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`s that match `query`. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | getShortcutIconDrawable Returns the icon for this shortcut, without any badging for the profile. |
+| open [PendingIntent](../android.app/PendingIntent.md)? | getShortcutIntent Returns PendingIntent associated with specified shortcut. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ShortcutInfo](ShortcutInfo.md)!\>? | getShortcuts Returns ShortcutInfos that match `query`. |
 | --- | --- |
-| open [Bundle](../android.os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getSuspendedPackageLauncherExtras(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Gets the launcher extras supplied to the system when the given package was suspended via `PackageManager#setPackagesSuspended(String[], boolean, PersistableBundle, PersistableBundle, String)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()()` Returns whether the caller can access the shortcut information. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#isActivityEnabled(android.content.ComponentName,%20android.os.UserHandle)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Checks if the activity exists and it enabled for a profile. |
+| open [Bundle](../android.os/Bundle.md)? | getSuspendedPackageLauncherExtras Gets the launcher extras supplied to the system when the given package was suspended via `PackageManager#setPackagesSuspended(String[], boolean, PersistableBundle, PersistableBundle, String)`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasShortcutHostPermission Returns whether the caller can access the shortcut information. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isActivityEnabled Checks if the activity exists and it enabled for a profile. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#isPackageEnabled(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Checks if the package is installed and enabled for a profile. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#pinShortcuts(kotlin.String,%20kotlin.collections.MutableList,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, shortcutIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Pin shortcuts on a package. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#registerCallback(android.content.pm.LauncherApps.Callback)(callback: https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.Callback!)` Registers a callback for changes to packages in this user and managed profiles. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPackageEnabled Checks if the package is installed and enabled for a profile. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | pinShortcuts Pin shortcuts on a package. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerCallback Registers a callback for changes to packages in this user and managed profiles. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#registerCallback(android.content.pm.LauncherApps.Callback,%20android.os.Handler)(callback: https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.Callback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Registers a callback for changes to packages in this user and managed profiles. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#registerPackageInstallerSessionCallback(java.util.concurrent.Executor,%20android.content.pm.PackageInstaller.SessionCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback)` Register a callback to watch for session lifecycle events in this user and managed profiles. |
-| open [LauncherActivityInfo](LauncherActivityInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#resolveActivity(android.content.Intent,%20android.os.UserHandle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Returns the activity info for a given intent and user handle, if it resolves. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerCallback Registers a callback for changes to packages in this user and managed profiles. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerPackageInstallerSessionCallback Register a callback to watch for session lifecycle events in this user and managed profiles. |
+| open [LauncherActivityInfo](LauncherActivityInfo.md)! | resolveActivity Returns the activity info for a given intent and user handle, if it resolves. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#setArchiveCompatibility(android.content.pm.LauncherApps.ArchiveCompatibilityParams)(params: https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.ArchiveCompatibilityParams)` Disable different archive compatibility options of the launcher for the caller of this method. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#shouldHideFromSuggestions(kotlin.String,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns whether a package should be hidden from suggestions to the user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#startAppDetailsActivity(android.content.ComponentName,%20android.os.UserHandle,%20android.graphics.Rect,%20android.os.Bundle)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!, sourceBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Starts the settings activity to show the application details for a package in the specified profile. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setArchiveCompatibility Disable different archive compatibility options of the launcher for the caller of this method. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | shouldHideFromSuggestions Returns whether a package should be hidden from suggestions to the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startAppDetailsActivity Starts the settings activity to show the application details for a package in the specified profile. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#startMainActivity(android.content.ComponentName,%20android.os.UserHandle,%20android.graphics.Rect,%20android.os.Bundle)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!, sourceBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Starts a Main activity in the specified profile. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#startPackageInstallerSessionDetailsActivity(android.content.pm.PackageInstaller.SessionInfo,%20android.graphics.Rect,%20android.os.Bundle)(sessionInfo: https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionInfo, sourceBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Starts an activity to show the details of the specified session. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#startShortcut(android.content.pm.ShortcutInfo,%20android.graphics.Rect,%20android.os.Bundle)(shortcut: https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo, sourceBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, startActivityOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Launches a shortcut. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startMainActivity Starts a Main activity in the specified profile. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startPackageInstallerSessionDetailsActivity Starts an activity to show the details of the specified session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startShortcut Launches a shortcut. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#startShortcut(kotlin.String,%20kotlin.String,%20android.graphics.Rect,%20android.os.Bundle,%20android.os.UserHandle)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, shortcutId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sourceBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, startActivityOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Starts a shortcut. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#unregisterCallback(android.content.pm.LauncherApps.Callback)(callback: https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.Callback!)` Unregisters a callback that was previously registered. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#unregisterPackageInstallerSessionCallback(android.content.pm.PackageInstaller.SessionCallback)(callback: https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.SessionCallback)` Unregisters a callback that was previously registered. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startShortcut Starts a shortcut. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterCallback Unregisters a callback that was previously registered. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterPackageInstallerSessionCallback Unregisters a callback that was previously registered. |
 | --- | --- |
 
 ## Constants
@@ -92,9 +92,9 @@ static val ACTION_CONFIRM_PIN_APPWIDGET: String
 
 Activity Action: For the default launcher to show the confirmation dialog to create a pinned app widget.
 
-See the `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager.html#requestPinAppWidget(android.content.ComponentName,%20android.os.Bundle,%20android.app.PendingIntent)` javadoc for details.
+See the requestPinAppWidget javadoc for details.
 
-Use `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPinItemRequest(android.content.Intent)` to get a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` object, and call `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest#accept(android.os.Bundle)` if the user accepts. If the user doesn't accept, no further action is required.
+Use getPinItemRequest to get a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` object, and call accept if the user accepts. If the user doesn't accept, no further action is required.
 
  Value: "android.content.pm.action.CONFIRM_PIN_APPWIDGET"
 
@@ -112,9 +112,9 @@ static val ACTION_CONFIRM_PIN_SHORTCUT: String
 
 Activity Action: For the default launcher to show the confirmation dialog to create a pinned shortcut.
 
-See the `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager` javadoc for details.
+See the ShortcutManager javadoc for details.
 
-Use `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPinItemRequest(android.content.Intent)` to get a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` object, and call `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest#accept(android.os.Bundle)` if the user accepts. If the user doesn't accept, no further action is required.
+Use getPinItemRequest to get a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` object, and call accept if the user accepts. If the user doesn't accept, no further action is required.
 
  Value: "android.content.pm.action.CONFIRM_PIN_SHORTCUT"
 
@@ -132,7 +132,7 @@ static val EXTRA_PIN_ITEM_REQUEST: String
 
 An extra for `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#ACTION_CONFIRM_PIN_SHORTCUT:kotlin.String` \& `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#ACTION_CONFIRM_PIN_APPWIDGET:kotlin.String` containing a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` of appropriate type asked to pin.
 
-A helper function `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPinItemRequest(android.content.Intent)` can be used instead of using this constant directly.
+A helper function getPinItemRequest can be used instead of using this constant directly.
 
  Value: "android.content.pm.extra.PIN_ITEM_REQUEST"
 
@@ -171,7 +171,7 @@ Additionally, the system hides synthesized activities for some or all apps in th
 
 If the user in question is a hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
-For the returned `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo` objects, the App Lock fields (`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockEnabled:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockSupported:kotlin.Boolean`) within the underlying `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` (retrieved via `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getApplicationInfo()`) are present if the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission. See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)` for more information about App Lock.
+For the returned LauncherActivityInfo objects, the App Lock fields (`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockEnabled:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockSupported:kotlin.Boolean`) within the underlying ApplicationInfo (retrieved via getApplicationInfo) are present if the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission. See getEnableAppLockIntentForPackage for more information about App Lock.
 
 | Parameters ||
 |---|---|
@@ -200,7 +200,7 @@ To receive callbacks for hidden profile `https://developer.android.com/reference
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#getAllSessions()`
+- getAllSessions
 
 ### getAppMarketActivityIntent
 
@@ -250,11 +250,11 @@ open fun getApplicationInfo(
 ): ApplicationInfo!
 ```
 
-Returns `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` about an application installed for a specific user profile.
+Returns ApplicationInfo about an application installed for a specific user profile.
 
 If the user in question is a hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
-App Lock fields in the returned `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` object (`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockEnabled:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockSupported:kotlin.Boolean`) are present if the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission. See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)` for more information about App Lock.
+App Lock fields in the returned ApplicationInfo object (`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockEnabled:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockSupported:kotlin.Boolean`) are present if the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission. See getEnableAppLockIntentForPackage for more information about App Lock.
 
 | Parameters ||
 |---|---|
@@ -265,7 +265,7 @@ App Lock fields in the returned `https://developer.android.com/reference/kotlin/
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` containing information about the package. Returns `null` if the package isn't installed for the given profile, or the profile isn't enabled. |
+| `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` | ApplicationInfo containing information about the package. Returns `null` if the package isn't installed for the given profile, or the profile isn't enabled. |
 
 ### getLauncherUserInfo
 
@@ -285,7 +285,7 @@ If the user in question is a hidden profile `https://developer.android.com/refer
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo?` | the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo` object related to the user specified, null in case the user is inaccessible. |
+| LauncherUserInfo | the LauncherUserInfo object related to the user specified, null in case the user is inaccessible. |
 
 ### getPinItemRequest
 
@@ -343,9 +343,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getProfiles(): MutableList<UserHandle!>!
 ```
 
-Return a list of profiles that the caller can access via the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#` APIs.
+Return a list of profiles that the caller can access via the LauncherApps APIs.
 
-If the caller is running on a managed profile, it'll return only the current profile. Otherwise it'll return the same list as `https://developer.android.com/reference/kotlin/android/os/UserManager.html#getUserProfiles()` would.
+If the caller is running on a managed profile, it'll return only the current profile. Otherwise it'll return the same list as getUserProfiles would.
 
 To get hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
@@ -362,9 +362,9 @@ open fun getShortcutBadgedIconDrawable(
 
 Returns the shortcut icon with badging appropriate for the profile.
 
-The calling launcher application must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+The calling launcher application must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -380,8 +380,8 @@ The returned drawable is subject to the same size capping limits as described in
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutIconDrawable(android.content.pm.ShortcutInfo,%20kotlin.Int)`
+- ShortcutManager
+- getShortcutIconDrawable
 - `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`
 
 ### getShortcutConfigActivityIntent
@@ -396,11 +396,11 @@ Returns an intent sender which can be used to start the configure activity for c
 
 The caller should receive `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.PinItemRequest` in onActivityResult on `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`.
 
-Callers must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+Callers must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
 | Parameters ||
 |---|---|
-| `info` | [LauncherActivityInfo](LauncherActivityInfo.md): a configuration activity returned by `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutConfigActivityList(kotlin.String,%20android.os.UserHandle)` This value cannot be `null`. |
+| `info` | [LauncherActivityInfo](LauncherActivityInfo.md): a configuration activity returned by getShortcutConfigActivityList This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -409,11 +409,11 @@ Callers must be allowed to access the shortcut information, as defined in `https
 | Exceptions ||
 |---|---|
 | `java.lang.IllegalStateException` | when the user is locked or not running. |
-| `java.lang.SecurityException` | if `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()` is false. |
+| `java.lang.SecurityException` | if hasShortcutHostPermission is false. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getPinItemRequest(android.content.Intent)`
+- getPinItemRequest
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CREATE_SHORTCUT:kotlin.String`
 
 ### getShortcutConfigActivityList
@@ -427,7 +427,7 @@ open fun getShortcutConfigActivityList(
 ): MutableList<LauncherActivityInfo!>!
 ```
 
-Retrieves a list of config activities for creating `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`.
+Retrieves a list of config activities for creating ShortcutInfo.
 
 | Parameters ||
 |---|---|
@@ -441,7 +441,7 @@ Retrieves a list of config activities for creating `https://developer.android.co
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CREATE_SHORTCUT:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutConfigActivityIntent(android.content.pm.LauncherActivityInfo)`
+- getShortcutConfigActivityIntent
 
 ### getShortcutIconDrawable
 
@@ -456,9 +456,9 @@ open fun getShortcutIconDrawable(
 
 Returns the icon for this shortcut, without any badging for the profile.
 
-The calling launcher application must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+The calling launcher application must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -475,8 +475,8 @@ The returned drawable is subject to the same size capping limits as described in
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getShortcutBadgedIconDrawable(android.content.pm.ShortcutInfo,%20kotlin.Int)`
+- ShortcutManager
+- getShortcutBadgedIconDrawable
 - `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`
 
 ### getShortcutIntent
@@ -517,9 +517,9 @@ open fun getShortcuts(
 ): MutableList<ShortcutInfo!>?
 ```
 
-Returns `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`s that match `query`.
+Returns ShortcutInfos that match `query`.
 
-Callers must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+Callers must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
 | Parameters ||
 |---|---|
@@ -528,7 +528,7 @@ Callers must be allowed to access the shortcut information, as defined in `https
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo!>?` | the IDs of `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo`s that match the query. This value may be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo!>?` | the IDs of ShortcutInfos that match the query. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -536,7 +536,7 @@ Callers must be allowed to access the shortcut information, as defined in `https
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`
+- ShortcutManager
 
 ### getSuspendedPackageLauncherExtras
 
@@ -568,8 +568,8 @@ Note: This just returns whatever extras were provided to the system, *which migh
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps.Callback#onPackagesSuspended(kotlin.Array,%20android.os.UserHandle,%20android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#isPackageSuspended()`
+- onPackagesSuspended
+- isPackageSuspended
 
 ### hasShortcutHostPermission
 
@@ -594,7 +594,7 @@ Note when this method returns `false`, it may be a temporary situation because t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`
+- ShortcutManager
 
 ### isActivityEnabled
 
@@ -609,7 +609,7 @@ open fun isActivityEnabled(
 
 Checks if the activity exists and it enabled for a profile.
 
-The activity may still not be exported, in which case `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#startMainActivity(android.content.ComponentName,%20android.os.UserHandle,%20android.graphics.Rect,%20android.os.Bundle)` will throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` unless the caller has the same UID as the target app's.
+The activity may still not be exported, in which case startMainActivity will throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` unless the caller has the same UID as the target app's.
 
 If the user in question is a hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
@@ -662,7 +662,7 @@ Pin shortcuts on a package.
 
 This API is **NOT** cumulative; this will replace all pinned shortcuts for the package. However, different launchers may have different set of pinned shortcuts.
 
-The calling launcher application must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+The calling launcher application must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
 For user-profiles with items restricted on home screen, caller must have the required permission.
 
@@ -679,7 +679,7 @@ For user-profiles with items restricted on home screen, caller must have the req
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`
+- ShortcutManager
 
 ### registerCallback
 
@@ -693,7 +693,7 @@ Registers a callback for changes to packages in this user and managed profiles.
 
 To receive callbacks for hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
-This callback will also receive changes to the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#getUserConfig()`, allowing clients to monitor updates to the user-specific configuration.
+This callback will also receive changes to the getUserConfig, allowing clients to monitor updates to the user-specific configuration.
 
 | Parameters ||
 |---|---|
@@ -714,7 +714,7 @@ Registers a callback for changes to packages in this user and managed profiles.
 
 To receive callbacks for hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
-This callback will also receive changes to the `https://developer.android.com/reference/kotlin/android/content/pm/LauncherUserInfo#getUserConfig()`, allowing clients to monitor updates to the user-specific configuration.
+This callback will also receive changes to the getUserConfig, allowing clients to monitor updates to the user-specific configuration.
 
 | Parameters ||
 |---|---|
@@ -738,12 +738,12 @@ Session callbacks are not sent for user-profiles that have items restricted on h
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the callbacks, cannot be null. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the callbacks, cannot be null. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [PackageInstaller.SessionCallback](../android/content/pm/PackageInstaller.SessionCallback.md): The callback to register. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback)`
+- registerSessionCallback
 
 ### resolveActivity
 
@@ -760,7 +760,7 @@ Returns the activity info for a given intent and user handle, if it resolves. Ot
 
 If the user in question is a hidden profile `https://developer.android.com/reference/kotlin/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE:kotlin.String`, caller should have normal `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_HIDDEN_PROFILES:kotlin.String` permission and the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_HOME:kotlin.String` role.
 
-For the returned `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo` object, the App Lock fields (`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockEnabled:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockSupported:kotlin.Boolean`) within the underlying `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo` (retrieved via `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getApplicationInfo()`) are present if the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission. See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)` for more information about App Lock.
+For the returned LauncherActivityInfo object, the App Lock fields (`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockEnabled:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isAppLockSupported:kotlin.Boolean`) within the underlying ApplicationInfo (retrieved via getApplicationInfo) are present if the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission. See getEnableAppLockIntentForPackage for more information about App Lock.
 
 | Parameters ||
 |---|---|
@@ -898,7 +898,7 @@ open fun startShortcut(
 
 Launches a shortcut.
 
-The calling launcher application must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+The calling launcher application must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
 | Parameters ||
 |---|---|
@@ -928,7 +928,7 @@ open fun startShortcut(
 
 Starts a shortcut.
 
-The calling launcher application must be allowed to access the shortcut information, as defined in `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#hasShortcutHostPermission()`.
+The calling launcher application must be allowed to access the shortcut information, as defined in hasShortcutHostPermission.
 
 | Parameters ||
 |---|---|
@@ -960,7 +960,7 @@ Unregisters a callback that was previously registered.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#registerCallback(android.content.pm.LauncherApps.Callback)`
+- registerCallback
 
 ### unregisterPackageInstallerSessionCallback
 
@@ -978,4 +978,4 @@ Unregisters a callback that was previously registered.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#registerPackageInstallerSessionCallback(java.util.concurrent.Executor,%20android.content.pm.PackageInstaller.SessionCallback)`
+- registerPackageInstallerSessionCallback

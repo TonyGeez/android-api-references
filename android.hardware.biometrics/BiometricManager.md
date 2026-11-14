@@ -10,15 +10,15 @@ open class BiometricManager
 | --- | --- |
 | ↳ | [android.hardware.biometrics.BiometricManager](BiometricManager.md) |
 
-A class that contains biometric utilities. For authentication, see `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt`. 
+A class that contains biometric utilities. For authentication, see BiometricPrompt. 
 Restricted for SDK Runtime environment in API level 34.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators` Types of authenticators, defined at a level of granularity supported by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#` and `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt`. |
-| open | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` Provides localized strings for an application that uses `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt` to authenticate the user. |
+| abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators` Types of authenticators, defined at a level of granularity supported by BiometricManager and BiometricPrompt. |
+| open | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` Provides localized strings for an application that uses BiometricPrompt to authenticate the user. |
 
 | Constants ||
 |---|---|
@@ -34,7 +34,7 @@ Restricted for SDK Runtime environment in API level 34.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_NO_HARDWARE:kotlin.Int` There is no biometric hardware. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_ERROR_SECURITY_UPDATE_REQUIRED:kotlin.Int` A security vulnerability has been discovered and the sensor is unavailable until a security update has addressed this issue. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Returned from `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)` when no matching successful authentication has been performed since boot. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Returned from getLastAuthenticationTime when no matching successful authentication has been performed since boot. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_SUCCESS:kotlin.Int` No error detected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#ICON_TYPE_ACCOUNT:kotlin.Int` An icon representing a user account. |
 | --- | --- |
@@ -50,12 +50,12 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate()()` Determine if biometrics can be used. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine if any of the provided authenticators can be used. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getBiometricSensorStrengths()()` Returns a map of biometric modalities to their sensor security strengths. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | canAuthenticate Determine if biometrics can be used. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | canAuthenticate Determine if any of the provided authenticators can be used. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getBiometricSensorStrengths Returns a map of biometric modalities to their sensor security strengths. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the last time the user successfully authenticated using one of the given authenticators. |
-| open [BiometricManager.Strings](../android/hardware/biometrics/BiometricManager.Strings.md) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getStrings(kotlin.Int)(authenticators: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces an instance of the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` class, which provides localized strings for an application, given a set of allowed authenticator types. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastAuthenticationTime Gets the last time the user successfully authenticated using one of the given authenticators. |
+| open [BiometricManager.Strings](../android/hardware/biometrics/BiometricManager.Strings.md) | getStrings Produces an instance of the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Strings` class, which provides localized strings for an application, given a set of allowed authenticator types. |
 
 ## Constants
 
@@ -175,7 +175,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val BIOMETRIC_NO_AUTHENTICATION: Long
 ```
 
-Returned from `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)` when no matching successful authentication has been performed since boot.
+Returned from getLastAuthenticationTime when no matching successful authentication has been performed since boot.
 
  Value: -1L
 
@@ -298,9 +298,9 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun canAuthenticate(): Int
 ```
 
-**Deprecated:** *See `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate(kotlin.Int)`.*
+**Deprecated:** *See canAuthenticate.*
 
-Determine if biometrics can be used. In other words, determine if `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt` can be expected to be shown (hardware available, templates enrolled, user-enabled). This is the equivalent of `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate(kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int` 
+Determine if biometrics can be used. In other words, determine if BiometricPrompt can be expected to be shown (hardware available, templates enrolled, user-enabled). This is the equivalent of canAuthenticate with `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int` 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_BIOMETRIC:kotlin.String`
 
 | Return ||
@@ -315,7 +315,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun canAuthenticate(authenticators: Int): Int
 ```
 
-Determine if any of the provided authenticators can be used. In other words, determine if `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt` can be expected to be shown (hardware available, templates enrolled, user-enabled). For biometric authenticators, determine if the device can currently authenticate with at least the requested strength. For example, invoking this API with `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int` on a device that currently only has `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` enrolled will return `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_SUCCESS:kotlin.Int`. Invoking this API with `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#DEVICE_CREDENTIAL:kotlin.Int` can be used to determine if the user has a PIN/Pattern/Password set up. 
+Determine if any of the provided authenticators can be used. In other words, determine if BiometricPrompt can be expected to be shown (hardware available, templates enrolled, user-enabled). For biometric authenticators, determine if the device can currently authenticate with at least the requested strength. For example, invoking this API with `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int` on a device that currently only has `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` enrolled will return `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_SUCCESS:kotlin.Int`. Invoking this API with `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#DEVICE_CREDENTIAL:kotlin.Int` can be used to determine if the user has a PIN/Pattern/Password set up. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_BIOMETRIC:kotlin.String`
 
 | Parameters ||
@@ -353,15 +353,15 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getLastAuthenticationTime(authenticators: Int): Long
 ```
 
-Gets the last time the user successfully authenticated using one of the given authenticators. The returned value is time in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` (time since boot, including sleep).
+Gets the last time the user successfully authenticated using one of the given authenticators. The returned value is time in elapsedRealtime (time since boot, including sleep).
 
 `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` is returned in the case where there has been no successful authentication using any of the given authenticators since boot.
 
 Currently, only `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#DEVICE_CREDENTIAL:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` are accepted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if `authenticators` contains other authenticator types.
 
-Note that this may return successful authentication times even if the device is currently locked. You may use `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#isDeviceLocked()` to determine if the device is unlocked or not. Additionally, this method may return valid times for an authentication method that is no longer available. For instance, if the user unlocked the device with a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` authenticator but then deleted that authenticator (e.g., fingerprint data), this method will still return the time of that unlock for `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` if it is the most recent successful event. The caveat is that `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` will be returned if the device no longer has a secure lock screen at all, even if there were successful authentications performed before the lock screen was made insecure. 
+Note that this may return successful authentication times even if the device is currently locked. You may use isDeviceLocked to determine if the device is unlocked or not. Additionally, this method may return valid times for an authentication method that is no longer available. For instance, if the user unlocked the device with a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` authenticator but then deleted that authenticator (e.g., fingerprint data), this method will still return the time of that unlock for `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int` if it is the most recent successful event. The caveat is that `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` will be returned if the device no longer has a secure lock screen at all, even if there were successful authentications performed before the lock screen was made insecure. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_BIOMETRIC:kotlin.String` 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` time base.
+Value is a non-negative timestamp in the elapsedRealtime time base.
 
 | Parameters ||
 |---|---|
@@ -369,7 +369,7 @@ Value is a non-negative timestamp in the `https://developer.android.com/referenc
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | the time of last authentication or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | the time of last authentication or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Value is a non-negative timestamp in the elapsedRealtime time base. |
 
 | Exceptions ||
 |---|---|

@@ -16,27 +16,27 @@ abstract class ContentObserver
 | Known Direct Subclasses [AbstractCursor.SelfContentObserver](../android/database/AbstractCursor.SelfContentObserver.md), [Loader.ForceLoadContentObserver](../android/content/Loader.ForceLoadContentObserver.md) |---|---| | [AbstractCursor.SelfContentObserver](../android/database/AbstractCursor.SelfContentObserver.md) | Cursors use this class to track changes others make to their URI. | | [Loader.ForceLoadContentObserver](../android/content/Loader.ForceLoadContentObserver.md) | An implementation of a ContentObserver that takes care of connecting it to the Loader to have the loader re-load its data when the observer is told it has changed. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Receives call backs for changes to content. Must be implemented by objects which are added to a `https://developer.android.com/reference/kotlin/android/database/ContentObservable`.
+Receives call backs for changes to content. Must be implemented by objects which are added to a ContentObservable.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/ContentObserver#ContentObserver(android.os.Handler)(handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Creates a content observer. |
+| ContentObserver Creates a content observer. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#deliverSelfNotifications()()` Returns true if this observer is interested receiving self-change notifications. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Dispatches a change notification to the observer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean,%20android.net.Uri)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Dispatches a change notification to the observer. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deliverSelfNotifications Returns true if this observer is interested receiving self-change notifications. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchChange Dispatches a change notification to the observer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchChange Dispatches a change notification to the observer. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean,%20android.net.Uri,%20kotlin.Int)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatches a change notification to the observer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean,%20kotlin.collections.MutableCollection,%20kotlin.Int)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatches a change notification to the observer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#onChange(kotlin.Boolean)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` This method is called when a content change occurs. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchChange Dispatches a change notification to the observer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchChange Dispatches a change notification to the observer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onChange This method is called when a content change occurs. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#onChange(kotlin.Boolean,%20android.net.Uri)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` This method is called when a content change occurs. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#onChange(kotlin.Boolean,%20android.net.Uri,%20kotlin.Int)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is called when a content change occurs. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/ContentObserver#onChange(kotlin.Boolean,%20kotlin.collections.MutableCollection,%20kotlin.Int)(selfChange: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is called when a content change occurs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onChange This method is called when a content change occurs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onChange This method is called when a content change occurs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onChange This method is called when a content change occurs. |
 | --- | --- |
 
 ## Public constructors
@@ -80,11 +80,11 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 fun dispatchChange(selfChange: Boolean): Unit
 ```
 
-**Deprecated:** *Callers should migrate towards using a richer overload that provides more details about the change, such as `https://developer.android.com/reference/kotlin/android/database/ContentObserver#dispatchChange(kotlin.Boolean,%20kotlin.collections.MutableCollection,%20kotlin.Int)`.*
+**Deprecated:** *Callers should migrate towards using a richer overload that provides more details about the change, such as dispatchChange.*
 
 Dispatches a change notification to the observer.
 
-If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the `https://developer.android.com/reference/kotlin/android/database/ContentObserver#` constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
+If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the ContentObserver constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
 
 ### dispatchChange
 
@@ -99,7 +99,7 @@ fun dispatchChange(
 
 Dispatches a change notification to the observer. Includes the changed content Uri when available.
 
-If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the `https://developer.android.com/reference/kotlin/android/database/ContentObserver#` constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
+If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the ContentObserver constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
 
 | Parameters ||
 |---|---|
@@ -120,7 +120,7 @@ fun dispatchChange(
 
 Dispatches a change notification to the observer. Includes the changed content Uri when available.
 
-If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the `https://developer.android.com/reference/kotlin/android/database/ContentObserver#` constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
+If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the ContentObserver constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
 
 | Parameters ||
 |---|---|
@@ -143,7 +143,7 @@ fun dispatchChange(
 
 Dispatches a change notification to the observer. Includes the changed content Uris when available.
 
-If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the `https://developer.android.com/reference/kotlin/android/database/ContentObserver#` constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
+If a `https://developer.android.com/reference/kotlin/android/os/Handler.html#` was supplied to the ContentObserver constructor, then a call to the #onChange method is posted to the handler's message queue. Otherwise, the #onChange method is invoked immediately on this thread.
 
 | Parameters ||
 |---|---|

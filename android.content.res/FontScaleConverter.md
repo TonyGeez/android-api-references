@@ -18,11 +18,11 @@ The thinking here is that large fonts are already big enough to read, but we sti
 
 | Public methods ||
 |---|---|
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#convertDpToSp(kotlin.Float)(dp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts a dimension in "dp" back to "sp". |
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#convertSpToDp(kotlin.Float)(sp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts a dimension in "sp" to "dp". |
-| open static [FontScaleConverter](FontScaleConverter.md)? | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#forScale(kotlin.Float)(fontScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Finds a matching FontScaleConverter for the given fontScale factor. |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | convertDpToSp Converts a dimension in "dp" back to "sp". |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | convertSpToDp Converts a dimension in "sp" to "dp". |
+| open static [FontScaleConverter](FontScaleConverter.md)? | forScale Finds a matching FontScaleConverter for the given fontScale factor. |
 | --- | --- |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#isNonLinearFontScalingActive(kotlin.Float)(fontScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns true if non-linear font scaling curves would be in effect for the given scale, false if the scaling would follow a linear curve or for no scaling. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNonLinearFontScalingActive Returns true if non-linear font scaling curves would be in effect for the given scale, false if the scaling would follow a linear curve or for no scaling. |
 
 ## Public methods
 
@@ -54,7 +54,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open static fun forScale(fontScale: Float): FontScaleConverter?
 ```
 
-Finds a matching FontScaleConverter for the given fontScale factor. Generally you shouldn't need this; you can use `https://developer.android.com/reference/kotlin/android/util/TypedValue.html#applyDimension(kotlin.Int,%20kotlin.Float,%20android.util.DisplayMetrics)` directly and it will do the scaling conversion for you. Dimens and resources loaded from XML will also be automatically converted. But for UI frameworks or other situations where you need to do the conversion without an Android Context, you can use this method. 
+Finds a matching FontScaleConverter for the given fontScale factor. Generally you shouldn't need this; you can use applyDimension directly and it will do the scaling conversion for you. Dimens and resources loaded from XML will also be automatically converted. But for UI frameworks or other situations where you need to do the conversion without an Android Context, you can use this method. 
 This method is safe to call from any thread.
 
 | Parameters ||

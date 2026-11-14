@@ -14,7 +14,7 @@ Callback for receiving content classification results.
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationCallback#onContentClassification(android.app.contentsafety.ContentClassificationResult)(result: https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult)` Called when the content has been classified. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onContentClassification Called when the content has been classified. |
 
 ## Public methods
 

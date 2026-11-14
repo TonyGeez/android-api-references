@@ -43,13 +43,13 @@ An EditorInfo describes several attributes of a text editing object that an inpu
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
@@ -139,19 +139,19 @@ Flag of `https://developer.android.com/reference/kotlin/android/text/InputType.h
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_VARIATION_NORMAL:kotlin.Int`
 
-Default variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int`: plain normal numeric text. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be dropped when passed through `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#makeCompatible(kotlin.Int)`.
+Default variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int`: plain normal numeric text. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be dropped when passed through makeCompatible.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_NUMBER_VARIATION_PASSWORD:kotlin.Int`
 
-Variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int`: entering a numeric password. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be dropped when passed through `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#makeCompatible(kotlin.Int)`.
+Variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_NUMBER:kotlin.Int`: entering a numeric password. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be dropped when passed through makeCompatible.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_COMPLETE:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: the text editor (which means the application) is performing auto-completion of the text being entered based on its own semantics, which it will present to the user as they type. This generally means that the input method should not be showing candidates itself, but can expect the editor to supply its own completions/candidates from `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#displayCompletions(kotlin.Array)` as a result of the editor calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#displayCompletions(android.view.View,%20kotlin.Array)`. Note the contrast with `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_CORRECT:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_NO_SUGGESTIONS:kotlin.Int`: `TYPE_TEXT_FLAG_AUTO_COMPLETE` means the editor should show an interface for displaying suggestions, but instead of supplying its own it will rely on the Editor to pass completions/corrections.
+Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: the text editor (which means the application) is performing auto-completion of the text being entered based on its own semantics, which it will present to the user as they type. This generally means that the input method should not be showing candidates itself, but can expect the editor to supply its own completions/candidates from displayCompletions as a result of the editor calling displayCompletions. Note the contrast with `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_AUTO_CORRECT:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_NO_SUGGESTIONS:kotlin.Int`: `TYPE_TEXT_FLAG_AUTO_COMPLETE` means the editor should show an interface for displaying suggestions, but instead of supplying its own it will rely on the Editor to pass completions/corrections.
 
 <br />
 
@@ -181,13 +181,13 @@ Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_ENABLE_TEXT_CONVERSION_SUGGESTIONS:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: Let the IME know the text conversion suggestions are required by the application. Text conversion suggestion is for the transliteration languages which has pronunciation characters and target characters. When the user is typing the pronunciation charactes, the IME could provide the possible target characters to the user. When this flag is set, the IME should insert the text conversion suggestions through `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute.Builder#setTextConversionSuggestions(kotlin.collections.MutableList)` and the `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute` with initialized with the text conversion suggestions is provided by the IME to the application. To receive the additional information, the application needs to implement `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`.
+Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: Let the IME know the text conversion suggestions are required by the application. Text conversion suggestion is for the transliteration languages which has pronunciation characters and target characters. When the user is typing the pronunciation charactes, the IME could provide the possible target characters to the user. When this flag is set, the IME should insert the text conversion suggestions through setTextConversionSuggestions and the TextAttribute with initialized with the text conversion suggestions is provided by the IME to the application. To receive the additional information, the application needs to implement setComposingText, setComposingRegion, and commitText.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_FLAG_ENABLE_TEXT_SUGGESTION_SELECTED:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: Let the IME know that conversion candidate selection information is requested by the application. Text conversion suggestion is for the transliteration languages, which have the notions of pronunciation and target characters. When the user actively selects a candidate from the conversion suggestions, notifying when candidate selection is occurring helps assistive technologies generate more effective feedback. When this flag is set, and there is an active selected suggestion, the IME should set that a conversion suggestion is selected android.view.inputmethod.TextAttribute.Builder#setSuggestionSelected(boolean) when initializing the `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute`. To receive this information, the application should implement `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`.
+Flag for `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: Let the IME know that conversion candidate selection information is requested by the application. Text conversion suggestion is for the transliteration languages, which have the notions of pronunciation and target characters. When the user actively selects a candidate from the conversion suggestions, notifying when candidate selection is occurring helps assistive technologies generate more effective feedback. When this flag is set, and there is an active selected suggestion, the IME should set that a conversion suggestion is selected android.view.inputmethod.TextAttribute.Builder#setSuggestionSelected(boolean) when initializing the TextAttribute. To receive this information, the application should implement setComposingText, setComposingRegion, and commitText.
 
 <br />
 
@@ -289,59 +289,59 @@ Variation of `https://developer.android.com/reference/kotlin/android/text/InputT
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS:kotlin.Int`
 
-Variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: entering e-mail address inside of a web form. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be seen as `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_EMAIL_ADDRESS:kotlin.Int` when passed through `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#makeCompatible(kotlin.Int)`.
+Variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: entering e-mail address inside of a web form. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be seen as `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_EMAIL_ADDRESS:kotlin.Int` when passed through makeCompatible.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_WEB_PASSWORD:kotlin.Int`
 
-Variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: entering password inside of a web form. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be seen as `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PASSWORD:kotlin.Int` when passed through `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#makeCompatible(kotlin.Int)`.
+Variation of `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_CLASS_TEXT:kotlin.Int`: entering password inside of a web form. This was added in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`. An IME must target this API version or later to see this input type; if it doesn't, a request for this type will be seen as `https://developer.android.com/reference/kotlin/android/text/InputType.html#TYPE_TEXT_VARIATION_PASSWORD:kotlin.Int` when passed through makeCompatible.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#EditorInfo()()` <br /> |
+| EditorInfo <br /> |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Write debug output of this object. |
-| open [AutofillId](../android.view.autofill/AutofillId.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getAutofillId()()` Returns the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is associated with. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump Write debug output of this object. |
+| open [AutofillId](../android.view.autofill/AutofillId.md)? | getAutofillId Returns the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this EditorInfo is associated with. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSelectedText(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the selected text, if any. |
-| open [SurroundingText](SurroundingText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextAfterCursor(kotlin.Int,%20kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get length characters of text after the current cursor position. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getInitialSelectedText Gets the selected text, if any. |
+| open [SurroundingText](SurroundingText.md)? | getInitialSurroundingText Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getInitialTextAfterCursor Get length characters of text after the current cursor position. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextBeforeCursor(kotlin.Int,%20kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get length characters of text before the current cursor position. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialToolType()()` Returns the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)` responsible for focus on the current editor. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java.lang/Class.md)\<out [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()()` Returns the combination of Stylus handwriting gesture preview types supported by the current `Editor`. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getInitialTextBeforeCursor Get length characters of text before the current cursor position. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInitialToolType Returns the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type getToolType responsible for focus on the current editor. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java.lang/Class.md)\<out [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md)!\>!\> | getSupportedHandwritingGesturePreviews Returns the combination of Stylus handwriting gesture preview types supported by the current `Editor`. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java.lang/Class.md)\<out [HandwritingGesture](HandwritingGesture.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()()` Returns the combination of Stylus handwriting gesture types supported by the current `Editor`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#isStylusHandwritingEnabled()()` Returns `true` when an `Editor` has stylus handwriting enabled. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#isWritingToolsEnabled()()` Returns `true` when an `Editor` has writing tools enabled. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java.lang/Class.md)\<out [HandwritingGesture](HandwritingGesture.md)!\>!\> | getSupportedHandwritingGestures Returns the combination of Stylus handwriting gesture types supported by the current `Editor`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStylusHandwritingEnabled Returns `true` when an `Editor` has stylus handwriting enabled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWritingToolsEnabled Returns `true` when an `Editor` has writing tools enabled. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#makeCompatible(kotlin.Int)(targetSdkVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensure that the data in this EditorInfo is compatible with an application that was developed against the given target API version. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setAutofillId(android.view.autofill.AutofillId)(autofillId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#?)` Sets the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is associated with. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setInitialSurroundingSubText(kotlin.CharSequence,%20kotlin.Int)(subText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, subTextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Editors may use this method to provide initial input text to IMEs. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | makeCompatible Ensure that the data in this EditorInfo is compatible with an application that was developed against the given target API version. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAutofillId Sets the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this EditorInfo is associated with. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInitialSurroundingSubText Editors may use this method to provide initial input text to IMEs. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setInitialSurroundingText(kotlin.CharSequence)(sourceText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Editors may use this method to provide initial input text to IMEs. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setInitialToolType(kotlin.Int)(toolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setStylusHandwritingEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set `true` if the `Editor` has `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)` enabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInitialSurroundingText Editors may use this method to provide initial input text to IMEs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInitialToolType Set the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type getToolType. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStylusHandwritingEnabled Set `true` if the `Editor` has startStylusHandwriting enabled. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setSupportedHandwritingGesturePreviews(kotlin.collections.MutableSet)(gestures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture!>!>)` Set the Handwriting gesture previews supported by the current `Editor`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setSupportedHandwritingGestures(kotlin.collections.MutableList)(gestures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture!>!>)` Set the Handwriting gestures supported by the current `Editor`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setWritingToolsEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set `false` if `Editor` opts-out of writing tools, that enable IMEs to replace text with generative AI text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSupportedHandwritingGesturePreviews Set the Handwriting gesture previews supported by the current `Editor`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSupportedHandwritingGestures Set the Handwriting gestures supported by the current `Editor`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWritingToolsEnabled Set `false` if `Editor` opts-out of writing tools, that enable IMEs to replace text with generative AI text. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 | Properties ||
 |---|---|
 | static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EditorInfo](EditorInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionId:kotlin.Int` If `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` has been given, this is the id for that command when the user presses its button that is delivered back with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performEditorAction(kotlin.Int)`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionId:kotlin.Int` If `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` has been given, this is the id for that command when the user presses its button that is delivered back with performEditorAction. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` In some cases an IME may be able to display an arbitrary label for a command the user can perform, which you can specify here. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#contentMimeTypes:kotlin.Array` List of acceptable MIME types for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#contentMimeTypes:kotlin.Array` List of acceptable MIME types for commitContent. |
 | [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#extras:android.os.Bundle` Any extra data to supply to the input method. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#fieldId:kotlin.Int` Identifier for the editor's field. |
 | --- | --- |
@@ -478,7 +478,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val IME_FLAG_NAVIGATE_NEXT: Int
 ```
 
-Flag of `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#imeOptions:kotlin.Int`: used to specify that there is something interesting that a forward navigation can focus on. This is like using `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_NEXT:kotlin.Int`, except allows the IME to be multiline (with an enter key) as well as provide forward navigation. Note that some IMEs may not be able to do this, especially when running on a small screen where there is little space. In that case it does not need to present a UI for this option. Like `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_NEXT:kotlin.Int`, if the user selects the IME's facility to forward navigate, this will show up in the application at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performEditorAction(kotlin.Int)`.
+Flag of `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#imeOptions:kotlin.Int`: used to specify that there is something interesting that a forward navigation can focus on. This is like using `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_NEXT:kotlin.Int`, except allows the IME to be multiline (with an enter key) as well as provide forward navigation. Note that some IMEs may not be able to do this, especially when running on a small screen where there is little space. In that case it does not need to present a UI for this option. Like `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_NEXT:kotlin.Int`, if the user selects the IME's facility to forward navigate, this will show up in the application at performEditorAction.
 
  Value: 134217728
 
@@ -490,7 +490,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val IME_FLAG_NAVIGATE_PREVIOUS: Int
 ```
 
-Flag of `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#imeOptions:kotlin.Int`: like `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_FLAG_NAVIGATE_NEXT:kotlin.Int`, but specifies there is something interesting that a backward navigation can focus on. If the user selects the IME's facility to backward navigate, this will show up in the application as an `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_PREVIOUS:kotlin.Int` at `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performEditorAction(kotlin.Int)`.
+Flag of `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#imeOptions:kotlin.Int`: like `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_FLAG_NAVIGATE_NEXT:kotlin.Int`, but specifies there is something interesting that a backward navigation can focus on. If the user selects the IME's facility to backward navigate, this will show up in the application as an `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#IME_ACTION_PREVIOUS:kotlin.Int` at performEditorAction.
 
  Value: 67108864
 
@@ -603,7 +603,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -630,7 +630,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getAutofillId(): AutofillId?
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is associated with. The value is filled in with the result of `https://developer.android.com/reference/kotlin/android/view/View.html#getAutofillId()` on the view that is being edited. Note: For virtual view(e.g. Compose or Webview), default behavior is the autofillId is the id of the container view, unless the virtual view provider sets the virtual id when the InputMethodManager calls `https://developer.android.com/reference/kotlin/android/view/View.html#onCreateInputConnection(android.view.inputmethod.EditorInfo)` on the container view.
+Returns the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this EditorInfo is associated with. The value is filled in with the result of getAutofillId on the view that is being edited. Note: For virtual view(e.g. Compose or Webview), default behavior is the autofillId is the id of the container view, unless the virtual view provider sets the virtual id when the InputMethodManager calls onCreateInputConnection on the container view.
 
 | Return ||
 |---|---|
@@ -688,7 +688,7 @@ For example, the subText can be viewed as TextBeforeCursor + Selection + TextAft
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText?` | an `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText` object describing the surrounding text and state of selection, or `null` if the editor or system could not support this protocol. |
+| SurroundingText | an SurroundingText object describing the surrounding text and state of selection, or `null` if the editor or system could not support this protocol. |
 
 | Exceptions ||
 |---|---|
@@ -746,17 +746,17 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getInitialToolType(): Int
 ```
 
-Returns the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)` responsible for focus on the current editor.
+Returns the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type getToolType responsible for focus on the current editor.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | toolType `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_FINGER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_STYLUS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_MOUSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_ERASER:kotlin.Int` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | toolType getToolType. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_FINGER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_STYLUS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_MOUSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#TOOL_TYPE_ERASER:kotlin.Int` |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setInitialToolType(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateEditorToolType(kotlin.Int)`
+- setInitialToolType
+- getToolType
+- onUpdateEditorToolType
 
 ### getSupportedHandwritingGesturePreviews
 
@@ -766,17 +766,17 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getSupportedHandwritingGesturePreviews(): MutableSet<Class<out PreviewableHandwritingGesture!>!>
 ```
 
-Returns the combination of Stylus handwriting gesture preview types supported by the current `Editor`. For an editor that supports Stylus Handwriting. `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)`, it also declares supported gesture previews.
+Returns the combination of Stylus handwriting gesture preview types supported by the current `Editor`. For an editor that supports Stylus Handwriting. startStylusHandwriting, it also declares supported gesture previews.
 
-Note: A supported gesture `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()` may not have preview supported `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()`.
+Note: A supported gesture getSupportedHandwritingGestures may not have preview supported getSupportedHandwritingGesturePreviews.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture!>!>` | Set of supported gesture preview classes. One of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture!>!>` | Set of supported gesture preview classes. One of SelectGesture, SelectRangeGesture, DeleteGesture, DeleteRangeGesture. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()`
+- getSupportedHandwritingGestures
 
 ### getSupportedHandwritingGestures
 
@@ -786,15 +786,15 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getSupportedHandwritingGestures(): MutableList<Class<out HandwritingGesture!>!>
 ```
 
-Returns the combination of Stylus handwriting gesture types supported by the current `Editor`. For an editor that supports Stylus Handwriting. `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)`, it also declares supported gestures.
+Returns the combination of Stylus handwriting gesture types supported by the current `Editor`. For an editor that supports Stylus Handwriting. startStylusHandwriting, it also declares supported gestures.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture!>!>` | List of supported gesture classes including any of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture!>!>` | List of supported gesture classes including any of SelectGesture, InsertGesture, DeleteGesture. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()`
+- getSupportedHandwritingGesturePreviews
 
 ### isStylusHandwritingEnabled
 
@@ -807,8 +807,8 @@ open fun isStylusHandwritingEnabled(): Boolean
 Returns `true` when an `Editor` has stylus handwriting enabled. `false` by default.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setStylusHandwritingEnabled(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#isStylusHandwritingAvailable()`
+- setStylusHandwritingEnabled
+- isStylusHandwritingAvailable
 
 ### isWritingToolsEnabled
 
@@ -821,7 +821,7 @@ open fun isWritingToolsEnabled(): Boolean
 Returns `true` when an `Editor` has writing tools enabled. `true` by default for all editors. Toolkits can optionally disable them where not relevant e.g. passwords, number input, etc.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setWritingToolsEnabled(kotlin.Boolean)`
+- setWritingToolsEnabled
 
 ### makeCompatible
 
@@ -847,7 +847,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun setAutofillId(autofillId: AutofillId?): Unit
 ```
 
-Sets the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is associated with.
+Sets the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the view that this EditorInfo is associated with.
 
 | Parameters ||
 |---|---|
@@ -864,7 +864,7 @@ open fun setInitialSurroundingSubText(
 ): Unit
 ```
 
-Editors may use this method to provide initial input text to IMEs. As the surrounding text could be used to provide various input assistance, we recommend editors to provide the complete initial input text in its `https://developer.android.com/reference/kotlin/android/view/View.html#onCreateInputConnection(android.view.inputmethod.EditorInfo)` callback. When trimming the input text is needed, call this method instead of `setInitialSurroundingText(CharSequence)` and provide the trimmed position info. Always try to include the selected text within `subText` to give the system best flexibility to choose where and how to trim `subText` when necessary. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, spans that do not implement `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` will be automatically dropped.
+Editors may use this method to provide initial input text to IMEs. As the surrounding text could be used to provide various input assistance, we recommend editors to provide the complete initial input text in its onCreateInputConnection callback. When trimming the input text is needed, call this method instead of `setInitialSurroundingText(CharSequence)` and provide the trimmed position info. Always try to include the selected text within `subText` to give the system best flexibility to choose where and how to trim `subText` when necessary. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, spans that do not implement `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` will be automatically dropped.
 
 | Parameters ||
 |---|---|
@@ -879,7 +879,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun setInitialSurroundingText(sourceText: CharSequence): Unit
 ```
 
-Editors may use this method to provide initial input text to IMEs. As the surrounding text could be used to provide various input assistance, we recommend editors to provide the complete initial input text in its `https://developer.android.com/reference/kotlin/android/view/View.html#onCreateInputConnection(android.view.inputmethod.EditorInfo)` callback. The supplied text will then be processed to serve `getInitialTextBeforeCursor`, `getInitialSelectedText`, and `getInitialTextBeforeCursor`. System is allowed to trim `sourceText` for various reasons while keeping the most valuable data to IMEs. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, spans that do not implement `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` will be automatically dropped.
+Editors may use this method to provide initial input text to IMEs. As the surrounding text could be used to provide various input assistance, we recommend editors to provide the complete initial input text in its onCreateInputConnection callback. The supplied text will then be processed to serve `getInitialTextBeforeCursor`, `getInitialSelectedText`, and `getInitialTextBeforeCursor`. System is allowed to trim `sourceText` for various reasons while keeping the most valuable data to IMEs. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, spans that do not implement `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` will be automatically dropped.
 
 **Editor authors:**Providing the initial input text helps reducing IPC calls for IMEs to provide many modern features right after the connection setup. We recommend calling this method in your implementation.
 
@@ -895,7 +895,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun setInitialToolType(toolType: Int): Unit
 ```
 
-Set the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)`. that brought focus to the view.
+Set the initial `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#ACTION_UP:kotlin.Int` tool type getToolType. that brought focus to the view.
 
 | Parameters ||
 |---|---|
@@ -903,9 +903,9 @@ Set the initial `https://developer.android.com/reference/kotlin/android/view/Mot
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialToolType()`
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getToolType(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateEditorToolType(kotlin.Int)`
+- getInitialToolType
+- getToolType
+- onUpdateEditorToolType
 
 ### setStylusHandwritingEnabled
 
@@ -915,7 +915,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun setStylusHandwritingEnabled(enabled: Boolean): Unit
 ```
 
-Set `true` if the `Editor` has `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)` enabled. `false` by default, `Editor` must set it `true` to indicate that it supports stylus handwriting.
+Set `true` if the `Editor` has startStylusHandwriting enabled. `false` by default, `Editor` must set it `true` to indicate that it supports stylus handwriting.
 
 | Parameters ||
 |---|---|
@@ -923,7 +923,7 @@ Set `true` if the `Editor` has `https://developer.android.com/reference/kotlin/a
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setAutoHandwritingEnabled(kotlin.Boolean)`
+- setAutoHandwritingEnabled
 
 ### setSupportedHandwritingGesturePreviews
 
@@ -933,19 +933,19 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun setSupportedHandwritingGesturePreviews(gestures: MutableSet<Class<out PreviewableHandwritingGesture!>!>): Unit
 ```
 
-Set the Handwriting gesture previews supported by the current `Editor`. For an editor that supports Stylus Handwriting `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)`, it is also recommended that it declares supported gesture previews.
+Set the Handwriting gesture previews supported by the current `Editor`. For an editor that supports Stylus Handwriting startStylusHandwriting, it is also recommended that it declares supported gesture previews.
 
-Note: A supported gesture `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()` may not have preview supported `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()`.
+Note: A supported gesture getSupportedHandwritingGestures may not have preview supported getSupportedHandwritingGesturePreviews.
 
 If editor doesn't support one of the declared types, gesture preview will be ignored.
 
 | Parameters ||
 |---|---|
-| `gestures` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java.lang/Class.md)\<out [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md)!\>!\>: Set of supported gesture classes. One of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
+| `gestures` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java.lang/Class.md)\<out [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md)!\>!\>: Set of supported gesture classes. One of SelectGesture, SelectRangeGesture, DeleteGesture, DeleteRangeGesture. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setSupportedHandwritingGestures(kotlin.collections.MutableList)`
+- setSupportedHandwritingGestures
 
 ### setSupportedHandwritingGestures
 
@@ -955,19 +955,19 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun setSupportedHandwritingGestures(gestures: MutableList<Class<out HandwritingGesture!>!>): Unit
 ```
 
-Set the Handwriting gestures supported by the current `Editor`. For an editor that supports Stylus Handwriting `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)`, it is also recommended that it declares supported gestures.
+Set the Handwriting gestures supported by the current `Editor`. For an editor that supports Stylus Handwriting startStylusHandwriting, it is also recommended that it declares supported gestures.
 
 If editor doesn't support one of the declared types, IME will not send those Gestures to the editor. Instead they will fallback to using normal text input.
 
-Note: A supported gesture may not have preview supported `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()`.
+Note: A supported gesture may not have preview supported getSupportedHandwritingGesturePreviews.
 
 | Parameters ||
 |---|---|
-| `gestures` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java.lang/Class.md)\<out [HandwritingGesture](HandwritingGesture.md)!\>!\>: List of supported gesture classes including any of `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InsertGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture`. This value cannot be `null`. |
+| `gestures` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java.lang/Class.md)\<out [HandwritingGesture](HandwritingGesture.md)!\>!\>: List of supported gesture classes including any of SelectGesture, InsertGesture, DeleteGesture. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#setSupportedHandwritingGesturePreviews(kotlin.collections.MutableSet)`
+- setSupportedHandwritingGesturePreviews
 
 ### setWritingToolsEnabled
 
@@ -985,7 +985,7 @@ Set `false` if `Editor` opts-out of writing tools, that enable IMEs to replace t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#isWritingToolsEnabled()`
+- isWritingToolsEnabled
 
 ### writeToParcel
 
@@ -1025,7 +1025,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var actionId: Int
 ```
 
-If `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` has been given, this is the id for that command when the user presses its button that is delivered back with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performEditorAction(kotlin.Int)`.
+If `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#actionLabel:kotlin.CharSequence` has been given, this is the id for that command when the user presses its button that is delivered back with performEditorAction.
 
 ### actionLabel
 
@@ -1045,9 +1045,9 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 var contentMimeTypes: Array<String!>?
 ```
 
-List of acceptable MIME types for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)`.
+List of acceptable MIME types for commitContent.
 
-`null` or an empty array means that `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)` is not supported in this editor.
+`null` or an empty array means that commitContent is not supported in this editor.
 
 ### extras
 
@@ -1067,7 +1067,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var fieldId: Int
 ```
 
-Identifier for the editor's field. This is optional, and may be 0. By default it is filled in with the result of `https://developer.android.com/reference/kotlin/android/view/View.html#getId()` on the View that is being edited.
+Identifier for the editor's field. This is optional, and may be 0. By default it is filled in with the result of getId on the View that is being edited.
 
 ### fieldName
 
@@ -1091,11 +1091,11 @@ List of the languages that the user is supposed to switch to no matter what inpu
 
 `null` means that no special language "hint" is needed.
 
-**Editor authors:** Specify this only when you are confident that the user will switch to certain languages in this context no matter what input method subtype is currently selected. Otherwise, keep this `null`. Explicit user actions and/or preferences would be good signals to specify this special "hint", For example, a chat application may be able to put the last used language at the top of `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#hintLocales:android.os.LocaleList` based on whom the user is going to talk, by remembering what language is used in the last conversation. Do not specify `https://developer.android.com/reference/kotlin/android/widget/TextView.html#getTextLocales()` only because it is used for text rendering.
+**Editor authors:** Specify this only when you are confident that the user will switch to certain languages in this context no matter what input method subtype is currently selected. Otherwise, keep this `null`. Explicit user actions and/or preferences would be good signals to specify this special "hint", For example, a chat application may be able to put the last used language at the top of `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#hintLocales:android.os.LocaleList` based on whom the user is going to talk, by remembering what language is used in the last conversation. Do not specify getTextLocales only because it is used for text rendering.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/widget/TextView.html#setImeHintLocales(android.os.LocaleList)`
-- `https://developer.android.com/reference/kotlin/android/widget/TextView.html#getImeHintLocales()`
+- setImeHintLocales
+- getImeHintLocales
 
 ### hintText
 
@@ -1137,7 +1137,7 @@ var initialSelEnd: Int
 
 The text offset of the end of the selection at the time editing begins; -1 if not known. Keep in mind that, without knowing the cursor position, many IMEs will not be able to offer their full feature set and may behave in unpredictable ways: pass the actual cursor position here if possible at all.
 
-Also, this needs to be the cursor position **right now** , not at some point in the past, even if input is starting in the same text field as before. When the app is filling this object, input is about to start by definition, and this value will override any value the app may have passed to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` before.
+Also, this needs to be the cursor position **right now** , not at some point in the past, even if input is starting in the same text field as before. When the app is filling this object, input is about to start by definition, and this value will override any value the app may have passed to updateSelection before.
 
 ### initialSelStart
 
@@ -1149,7 +1149,7 @@ var initialSelStart: Int
 
 The text offset of the start of the selection at the time editing begins; -1 if not known. Keep in mind that, without knowing the cursor position, many IMEs will not be able to offer their full feature set and may even behave in unpredictable ways: pass the actual cursor position here if possible at all.
 
-Also, this needs to be the cursor position **right now** , not at some point in the past, even if input is starting in the same text field as before. When the app is filling this object, input is about to start by definition, and this value will override any value the app may have passed to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` before.
+Also, this needs to be the cursor position **right now** , not at some point in the past, even if input is starting in the same text field as before. When the app is filling this object, input is about to start by definition, and this value will override any value the app may have passed to updateSelection before.
 
 ### inputType
 
@@ -1187,7 +1187,7 @@ var packageName: String!
 
 Name of the package that owns this editor.
 
-**IME authors:** In API level 22 `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP_MR1:kotlin.Int` and prior, do not trust this package name. The system had not verified the consistency between the package name here and application's uid. Consider to use `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputBinding#getUid()`, which is trustworthy. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, the system verifies the consistency between this package name and application uid before `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#` is passed to the input method.
+**IME authors:** In API level 22 `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP_MR1:kotlin.Int` and prior, do not trust this package name. The system had not verified the consistency between the package name here and application's uid. Consider to use getUid, which is trustworthy. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, the system verifies the consistency between this package name and application uid before EditorInfo is passed to the input method.
 
 **Editor authors:** Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, the application is no longer able to establish input connections if the package name provided here is inconsistent with application's uid.
 

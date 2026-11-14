@@ -13,14 +13,14 @@ open class StreamingService : AutoCloseable
 | --- | --- |
 | ↳ | [android.telephony.mbms.StreamingService](StreamingService.md) |
 
-Class used to represent a single MBMS stream. After a stream has been started with `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#startStreaming(android.telephony.mbms.StreamingServiceInfo,%20java.util.concurrent.Executor,%20android.telephony.mbms.StreamingServiceCallback)`, this class is used to hold information about the stream and control it.
+Class used to represent a single MBMS stream. After a stream has been started with startStreaming, this class is used to hold information about the stream and control it.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#BROADCAST_METHOD:kotlin.Int` The method of transmission currently used for a stream, reported via `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onStreamMethodUpdated(kotlin.Int)` |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#REASON_BY_USER_REQUEST:kotlin.Int` State changed due to a call to `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#close()` or `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#startStreaming(android.telephony.mbms.StreamingServiceInfo,%20java.util.concurrent.Executor,%20android.telephony.mbms.StreamingServiceCallback)` |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#BROADCAST_METHOD:kotlin.Int` The method of transmission currently used for a stream, reported via onStreamMethodUpdated |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#REASON_BY_USER_REQUEST:kotlin.Int` State changed due to a call to close or startStreaming |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#REASON_END_OF_SESSION:kotlin.Int` State changed due to the streaming session ending at the carrier. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#REASON_FREQUENCY_CONFLICT:kotlin.Int` State changed due to a frequency conflict with another requested stream. |
@@ -38,9 +38,9 @@ Class used to represent a single MBMS stream. After a stream has been started wi
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#close()()` Stop streaming this service. |
-| open [StreamingServiceInfo](StreamingServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#getInfo()()` Retrieve the `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo` corresponding to this stream. |
-| open [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#getPlaybackUri()()` Retrieve the Uri used to play this stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Stop streaming this service. |
+| open [StreamingServiceInfo](StreamingServiceInfo.md)! | getInfo Retrieve the StreamingServiceInfo corresponding to this stream. |
+| open [Uri](../android.net/Uri.md)? | getPlaybackUri Retrieve the Uri used to play this stream. |
 | --- | --- |
 
 ## Constants
@@ -53,7 +53,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val BROADCAST_METHOD: Int
 ```
 
-The method of transmission currently used for a stream, reported via `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceCallback#onStreamMethodUpdated(kotlin.Int)`
+The method of transmission currently used for a stream, reported via onStreamMethodUpdated
 
  Value: 1
 
@@ -65,7 +65,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_BY_USER_REQUEST: Int
 ```
 
-State changed due to a call to `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#close()` or `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#startStreaming(android.telephony.mbms.StreamingServiceInfo,%20java.util.concurrent.Executor,%20android.telephony.mbms.StreamingServiceCallback)`
+State changed due to a call to close or startStreaming
 
  Value: 1
 
@@ -205,7 +205,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getInfo(): StreamingServiceInfo!
 ```
 
-Retrieve the `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo` corresponding to this stream.
+Retrieve the StreamingServiceInfo corresponding to this stream.
 
 ### getPlaybackUri
 

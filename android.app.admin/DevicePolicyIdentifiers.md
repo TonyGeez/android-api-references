@@ -10,46 +10,46 @@ class DevicePolicyIdentifiers
 | --- | --- |
 | ↳ | [android.app.admin.DevicePolicyIdentifiers](DevicePolicyIdentifiers.md) |
 
-Class containing identifiers for policy APIs in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager`, for example they will be passed in `https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateReceiver#onPolicySetResult(android.content.Context,%20kotlin.String,%20android.os.Bundle,%20android.app.admin.TargetUser,%20android.app.admin.PolicyUpdateResult)` and `https://developer.android.com/reference/kotlin/android/app/admin/PolicyUpdateReceiver#onPolicyChanged(android.content.Context,%20kotlin.String,%20android.os.Bundle,%20android.app.admin.TargetUser,%20android.app.admin.PolicyUpdateResult)` to communicate updates of a certain policy back to the admin.
+Class containing identifiers for policy APIs in DevicePolicyManager, for example they will be passed in onPolicySetResult and onPolicyChanged to communicate updates of a certain policy back to the admin.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#ACCOUNT_MANAGEMENT_DISABLED_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAccountManagementDisabled(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#APPLICATION_HIDDEN_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setApplicationHidden(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#APPLICATION_RESTRICTIONS_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setApplicationRestrictions(android.content.ComponentName,%20kotlin.String,%20android.os.Bundle)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#ACCOUNT_MANAGEMENT_DISABLED_POLICY:kotlin.String` String identifier for setAccountManagementDisabled. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#APPLICATION_HIDDEN_POLICY:kotlin.String` String identifier for setApplicationHidden. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#APPLICATION_RESTRICTIONS_POLICY:kotlin.String` String identifier for setApplicationRestrictions. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#APP_FUNCTIONS_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAppFunctionsPolicy(kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#AUTO_TIMEZONE_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAutoTimeZoneEnabled(android.content.ComponentName,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#AUTO_TIME_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAutoTimeEnabled(android.content.ComponentName,%20kotlin.Boolean)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#APP_FUNCTIONS_POLICY:kotlin.String` String identifier for setAppFunctionsPolicy. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#AUTO_TIMEZONE_POLICY:kotlin.String` String identifier for setAutoTimeZoneEnabled. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#AUTO_TIME_POLICY:kotlin.String` String identifier for setAutoTimeEnabled. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#BACKUP_SERVICE_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setBackupServiceEnabled(android.content.ComponentName,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#CAMERA_DISABLED_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setCameraDisabled(android.content.ComponentName,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#CONTENT_PROTECTION_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setContentProtectionPolicy(android.content.ComponentName,%20kotlin.Int)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#BACKUP_SERVICE_POLICY:kotlin.String` String identifier for setBackupServiceEnabled. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#CAMERA_DISABLED_POLICY:kotlin.String` String identifier for setCameraDisabled. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#CONTENT_PROTECTION_POLICY:kotlin.String` String identifier for setContentProtectionPolicy. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#CROSS_PROFILE_WIDGET_PROVIDER_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addCrossProfileWidgetProvider(android.content.ComponentName,%20kotlin.String)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#KEYGUARD_DISABLED_FEATURES_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setKeyguardDisabledFeatures(android.content.ComponentName,%20kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#LOCK_TASK_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setLockTaskPackages(android.content.ComponentName,%20kotlin.Array)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#CROSS_PROFILE_WIDGET_PROVIDER_POLICY:kotlin.String` String identifier for addCrossProfileWidgetProvider. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#KEYGUARD_DISABLED_FEATURES_POLICY:kotlin.String` String identifier for setKeyguardDisabledFeatures. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#LOCK_TASK_POLICY:kotlin.String` String identifier for setLockTaskPackages. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#MEMORY_TAGGING_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setMtePolicy(kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PACKAGES_SUSPENDED_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setPackagesSuspended(android.content.ComponentName,%20kotlin.Array,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PACKAGE_UNINSTALL_BLOCKED_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setUninstallBlocked(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#MEMORY_TAGGING_POLICY:kotlin.String` String identifier for setMtePolicy. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PACKAGES_SUSPENDED_POLICY:kotlin.String` String identifier for setPackagesSuspended. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PACKAGE_UNINSTALL_BLOCKED_POLICY:kotlin.String` String identifier for setUninstallBlocked. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PASSWORD_COMPLEXITY_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setRequiredPasswordComplexity(kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PERMISSION_GRANT_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setPermissionGrantState(android.content.ComponentName,%20kotlin.String,%20kotlin.String,%20kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PERSISTENT_PREFERRED_ACTIVITY_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addPersistentPreferredActivity(android.content.ComponentName,%20android.content.IntentFilter,%20android.content.ComponentName)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PASSWORD_COMPLEXITY_POLICY:kotlin.String` String identifier for setRequiredPasswordComplexity. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PERMISSION_GRANT_POLICY:kotlin.String` String identifier for setPermissionGrantState. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#PERSISTENT_PREFERRED_ACTIVITY_POLICY:kotlin.String` String identifier for addPersistentPreferredActivity. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#RESET_PASSWORD_TOKEN_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setResetPasswordToken(android.content.ComponentName,%20kotlin.ByteArray)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#SECURITY_LOGGING_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setSecurityLoggingEnabled(android.content.ComponentName,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#STATUS_BAR_DISABLED_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setStatusBarDisabled(android.content.ComponentName,%20kotlin.Boolean)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#RESET_PASSWORD_TOKEN_POLICY:kotlin.String` String identifier for setResetPasswordToken. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#SECURITY_LOGGING_POLICY:kotlin.String` String identifier for setSecurityLoggingEnabled. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#STATUS_BAR_DISABLED_POLICY:kotlin.String` String identifier for setStatusBarDisabled. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#USB_DATA_SIGNALING_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setUsbDataSignalingEnabled(kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#USER_CONTROL_DISABLED_PACKAGES_POLICY:kotlin.String` String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setUserControlDisabledPackages(android.content.ComponentName,%20kotlin.collections.MutableList)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#USB_DATA_SIGNALING_POLICY:kotlin.String` String identifier for setUsbDataSignalingEnabled. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#USER_CONTROL_DISABLED_PACKAGES_POLICY:kotlin.String` String identifier for setUserControlDisabledPackages. |
 
 | Public methods ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyIdentifiers#getIdentifierForUserRestriction(kotlin.String)(restriction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a string identifier for the provided user restrictions, see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addUserRestriction(android.content.ComponentName,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for the list of available restrictions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getIdentifierForUserRestriction Returns a string identifier for the provided user restrictions, see addUserRestriction and `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for the list of available restrictions. |
 
 ## Constants
 
@@ -61,7 +61,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val ACCOUNT_MANAGEMENT_DISABLED_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAccountManagementDisabled(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`.
+String identifier for setAccountManagementDisabled.
 
  Value: "accountManagementDisabled"
 
@@ -73,7 +73,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val APPLICATION_HIDDEN_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setApplicationHidden(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`.
+String identifier for setApplicationHidden.
 
  Value: "applicationHidden"
 
@@ -85,7 +85,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val APPLICATION_RESTRICTIONS_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setApplicationRestrictions(android.content.ComponentName,%20kotlin.String,%20android.os.Bundle)`.
+String identifier for setApplicationRestrictions.
 
  Value: "applicationRestrictions"
 
@@ -97,7 +97,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val APP_FUNCTIONS_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAppFunctionsPolicy(kotlin.Int)`.
+String identifier for setAppFunctionsPolicy.
 
  Value: "appFunctions"
 
@@ -109,7 +109,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val AUTO_TIMEZONE_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAutoTimeZoneEnabled(android.content.ComponentName,%20kotlin.Boolean)`.
+String identifier for setAutoTimeZoneEnabled.
 
  Value: "autoTimezone"
 
@@ -121,7 +121,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val AUTO_TIME_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAutoTimeEnabled(android.content.ComponentName,%20kotlin.Boolean)`.
+String identifier for setAutoTimeEnabled.
 
  Value: "autoTime"
 
@@ -133,7 +133,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val BACKUP_SERVICE_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setBackupServiceEnabled(android.content.ComponentName,%20kotlin.Boolean)`.
+String identifier for setBackupServiceEnabled.
 
  Value: "backupService"
 
@@ -145,7 +145,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CAMERA_DISABLED_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setCameraDisabled(android.content.ComponentName,%20kotlin.Boolean)`.
+String identifier for setCameraDisabled.
 
  Value: "cameraDisabled"
 
@@ -157,7 +157,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CONTENT_PROTECTION_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setContentProtectionPolicy(android.content.ComponentName,%20kotlin.Int)`.
+String identifier for setContentProtectionPolicy.
 
  Value: "contentProtection"
 
@@ -169,7 +169,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val CROSS_PROFILE_WIDGET_PROVIDER_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addCrossProfileWidgetProvider(android.content.ComponentName,%20kotlin.String)`.
+String identifier for addCrossProfileWidgetProvider.
 
  Value: "crossProfileWidgetProvider"
 
@@ -181,7 +181,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val KEYGUARD_DISABLED_FEATURES_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setKeyguardDisabledFeatures(android.content.ComponentName,%20kotlin.Int)`.
+String identifier for setKeyguardDisabledFeatures.
 
  Value: "keyguardDisabledFeatures"
 
@@ -193,7 +193,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val LOCK_TASK_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setLockTaskPackages(android.content.ComponentName,%20kotlin.Array)`.
+String identifier for setLockTaskPackages.
 
  Value: "lockTask"
 
@@ -205,7 +205,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val MEMORY_TAGGING_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setMtePolicy(kotlin.Int)`.
+String identifier for setMtePolicy.
 
  Value: "memoryTagging"
 
@@ -217,7 +217,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PACKAGES_SUSPENDED_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setPackagesSuspended(android.content.ComponentName,%20kotlin.Array,%20kotlin.Boolean)`.
+String identifier for setPackagesSuspended.
 
  Value: "packagesSuspended"
 
@@ -229,7 +229,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PACKAGE_UNINSTALL_BLOCKED_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setUninstallBlocked(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`.
+String identifier for setUninstallBlocked.
 
  Value: "packageUninstallBlocked"
 
@@ -241,7 +241,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PASSWORD_COMPLEXITY_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setRequiredPasswordComplexity(kotlin.Int)`.
+String identifier for setRequiredPasswordComplexity.
 
  Value: "passwordComplexity"
 
@@ -253,7 +253,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PERMISSION_GRANT_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setPermissionGrantState(android.content.ComponentName,%20kotlin.String,%20kotlin.String,%20kotlin.Int)`.
+String identifier for setPermissionGrantState.
 
  Value: "permissionGrant"
 
@@ -265,7 +265,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PERSISTENT_PREFERRED_ACTIVITY_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addPersistentPreferredActivity(android.content.ComponentName,%20android.content.IntentFilter,%20android.content.ComponentName)`.
+String identifier for addPersistentPreferredActivity.
 
  Value: "persistentPreferredActivity"
 
@@ -277,7 +277,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val RESET_PASSWORD_TOKEN_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setResetPasswordToken(android.content.ComponentName,%20kotlin.ByteArray)`.
+String identifier for setResetPasswordToken.
 
  Value: "resetPasswordToken"
 
@@ -289,7 +289,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SECURITY_LOGGING_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setSecurityLoggingEnabled(android.content.ComponentName,%20kotlin.Boolean)`.
+String identifier for setSecurityLoggingEnabled.
 
  Value: "securityLogging"
 
@@ -301,7 +301,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_BAR_DISABLED_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setStatusBarDisabled(android.content.ComponentName,%20kotlin.Boolean)`.
+String identifier for setStatusBarDisabled.
 
  Value: "statusBarDisabled"
 
@@ -313,7 +313,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val USB_DATA_SIGNALING_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setUsbDataSignalingEnabled(kotlin.Boolean)`.
+String identifier for setUsbDataSignalingEnabled.
 
  Value: "usbDataSignaling"
 
@@ -325,7 +325,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val USER_CONTROL_DISABLED_PACKAGES_POLICY: String
 ```
 
-String identifier for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setUserControlDisabledPackages(android.content.ComponentName,%20kotlin.collections.MutableList)`.
+String identifier for setUserControlDisabledPackages.
 
  Value: "userControlDisabledPackages"
 
@@ -339,7 +339,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun getIdentifierForUserRestriction(restriction: String): String
 ```
 
-Returns a string identifier for the provided user restrictions, see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addUserRestriction(android.content.ComponentName,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for the list of available restrictions.
+Returns a string identifier for the provided user restrictions, see addUserRestriction and `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for the list of available restrictions.
 
 | Parameters ||
 |---|---|

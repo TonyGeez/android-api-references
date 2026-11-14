@@ -10,7 +10,7 @@ interface ParameterizedType : Type
 
 ParameterizedType represents a parameterized type such as Collection\<String\>.
 
-A parameterized type is created the first time it is needed by a reflective method, as specified in this package. When a parameterized type p is created, the generic type declaration that p instantiates is resolved, and all type arguments of p are created recursively. See `https://developer.android.com/reference/kotlin/java/lang/reflect/TypeVariable` for details on the creation process for type variables. Repeated creation of a parameterized type has no effect.
+A parameterized type is created the first time it is needed by a reflective method, as specified in this package. When a parameterized type p is created, the generic type declaration that p instantiates is resolved, and all type arguments of p are created recursively. See TypeVariable for details on the creation process for type variables. Repeated creation of a parameterized type has no effect.
 
 Instances of classes that implement this interface must implement an equals() method that equates any two instances that share the same generic type declaration and have equal type parameters.
 
@@ -18,14 +18,14 @@ Instances of classes that implement this interface must implement an equals() me
 
 | Public methods ||
 |---|---|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getActualTypeArguments()()` Returns an array of `Type` objects representing the actual type arguments to this type. |
-| abstract [Type](Type.md)? | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getOwnerType()()` Returns a `Type` object representing the type that this type is a member of. |
-| abstract [Type](Type.md) | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getRawType()()` Returns the `Type` object representing the class or interface that declared this type. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](Type.md)!\> | getActualTypeArguments Returns an array of `Type` objects representing the actual type arguments to this type. |
+| abstract [Type](Type.md)? | getOwnerType Returns a `Type` object representing the type that this type is a member of. |
+| abstract [Type](Type.md) | getRawType Returns the `Type` object representing the class or interface that declared this type. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/lang/reflect/Type` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/java/lang/reflect/Type#getTypeName()()` Returns a string describing this type, including information about any type parameters. <br /> | ||
+| From class Type |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | getTypeName Returns a string describing this type, including information about any type parameters. <br /> | ||
 
 ## Public methods
 
@@ -64,7 +64,7 @@ If this type is a top-level type, `null` is returned.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Type?` | a `Type` object representing the type that this type is a member of. If this type is a top-level type, `null` is returned |
+| Type | a `Type` object representing the type that this type is a member of. If this type is a top-level type, `null` is returned |
 
 | Exceptions ||
 |---|---|
@@ -83,4 +83,4 @@ Returns the `Type` object representing the class or interface that declared this
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Type` | the `Type` object representing the class or interface that declared this type |
+| Type | the `Type` object representing the class or interface that declared this type |

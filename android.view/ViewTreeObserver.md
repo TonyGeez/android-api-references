@@ -10,7 +10,7 @@ class ViewTreeObserver
 | --- | --- |
 | ↳ | [android.view.ViewTreeObserver](ViewTreeObserver.md) |
 
-A view tree observer is used to register listeners that can be notified of global changes in the view tree. Such global events include, but are not limited to, layout of the whole tree, beginning of the drawing pass, touch mode change.... A ViewTreeObserver should never be instantiated by applications as it is provided by the views hierarchy. Refer to `https://developer.android.com/reference/kotlin/android/view/View#getViewTreeObserver()` for more information.
+A view tree observer is used to register listeners that can be notified of global changes in the view tree. Such global events include, but are not limited to, layout of the whole tree, beginning of the drawing pass, touch mode change.... A ViewTreeObserver should never be instantiated by applications as it is provided by the views hierarchy. Refer to getViewTreeObserver for more information.
 
 ## Summary
 
@@ -32,45 +32,45 @@ A view tree observer is used to register listeners that can be notified of globa
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnDrawListener!)` Register a callback to be invoked when the view tree is about to be drawn. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalFocusChangeListener!)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalLayoutListener!)` Register a callback to be invoked when the global layout state or the visibility of views within the view tree changes |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnDrawListener Register a callback to be invoked when the view tree is about to be drawn. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnGlobalFocusChangeListener <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnGlobalLayoutListener Register a callback to be invoked when the global layout state or the visibility of views within the view tree changes |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnPreDrawListener!)` Register a callback to be invoked when the view tree is about to be drawn |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnScrollChangedListener!)` Register a callback to be invoked when a view has been scrolled. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!>!>)` Add a listener to be notified when the tree's *transformed* gesture exclusion rects change. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnPreDrawListener Register a callback to be invoked when the view tree is about to be drawn |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnScrollChangedListener Register a callback to be invoked when a view has been scrolled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnSystemGestureExclusionRectsChangedListener Add a listener to be notified when the tree's *transformed* gesture exclusion rects change. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener!)` Register a callback to be invoked when the invoked when the touch mode changes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowAttachListener!)` Register a callback to be invoked when the view hierarchy is attached to a window. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowFocusChangeListener!)` Register a callback to be invoked when the window focus state within the view tree changes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnTouchModeChangeListener Register a callback to be invoked when the invoked when the touch mode changes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnWindowAttachListener Register a callback to be invoked when the view hierarchy is attached to a window. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnWindowFocusChangeListener Register a callback to be invoked when the window focus state within the view tree changes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener)` Register a callback to be invoked when the window visibility changes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addWindowInsetsAnimationListener(android.view.ViewTreeObserver.WindowInsetsAnimationListener)(listener: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener)` Register a callback to be invoked when window insets animations start or end. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#dispatchOnDraw()()` Notifies registered listeners that the drawing pass is about to start. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addOnWindowVisibilityChangeListener Register a callback to be invoked when the window visibility changes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addWindowInsetsAnimationListener Register a callback to be invoked when window insets animations start or end. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchOnDraw Notifies registered listeners that the drawing pass is about to start. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#dispatchOnGlobalLayout()()` Notifies registered listeners that a global layout happened. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#dispatchOnPreDraw()()` Notifies registered listeners that the drawing pass is about to start. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#dispatchOnScrollChanged()()` Notifies registered listeners that something has scrolled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchOnGlobalLayout Notifies registered listeners that a global layout happened. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | dispatchOnPreDraw Notifies registered listeners that the drawing pass is about to start. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dispatchOnScrollChanged Notifies registered listeners that something has scrolled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()()` Indicates whether this ViewTreeObserver is alive. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#registerFrameCommitCallback(java.lang.Runnable)(callback: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Adds a frame commit callback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeGlobalOnLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalLayoutListener!)` Remove a previously installed global layout callback |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAlive Indicates whether this ViewTreeObserver is alive. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerFrameCommitCallback Adds a frame commit callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeGlobalOnLayoutListener Remove a previously installed global layout callback |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnDrawListener!)` Remove a previously installed pre-draw callback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalFocusChangeListener!)` Remove a previously installed focus change callback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnGlobalLayoutListener!)` Remove a previously installed global layout callback |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnDrawListener Remove a previously installed pre-draw callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnGlobalFocusChangeListener Remove a previously installed focus change callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnGlobalLayoutListener Remove a previously installed global layout callback |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnPreDrawListener!)` Remove a previously installed pre-draw callback |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnScrollChangedListener!)` Remove a previously installed scroll-changed callback |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!>!>)` Unsubscribe the given listener from gesture exclusion rect changes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnPreDrawListener Remove a previously installed pre-draw callback |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnScrollChangedListener Remove a previously installed scroll-changed callback |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnSystemGestureExclusionRectsChangedListener Unsubscribe the given listener from gesture exclusion rect changes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnTouchModeChangeListener!)` Remove a previously installed touch mode change callback |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowAttachListener!)` Remove a previously installed window attach callback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowFocusChangeListener!)` Remove a previously installed window focus change callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnTouchModeChangeListener Remove a previously installed touch mode change callback |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnWindowAttachListener Remove a previously installed window attach callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnWindowFocusChangeListener Remove a previously installed window focus change callback. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener)` Remove a previously installed window visibility callback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#removeWindowInsetsAnimationListener(android.view.ViewTreeObserver.WindowInsetsAnimationListener)(victim: https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.WindowInsetsAnimationListener)` Remove a previously installed window insets animation callback. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#unregisterFrameCommitCallback(java.lang.Runnable)(callback: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Attempts to remove the given callback from the list of pending frame complete callbacks. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeOnWindowVisibilityChangeListener Remove a previously installed window visibility callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeWindowInsetsAnimationListener Remove a previously installed window insets animation callback. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | unregisterFrameCommitCallback Attempts to remove the given callback from the list of pending frame complete callbacks. |
 | --- | --- |
 
 ## Public methods
@@ -85,7 +85,7 @@ fun addOnDrawListener(listener: ViewTreeObserver.OnDrawListener!): Unit
 
 Register a callback to be invoked when the view tree is about to be drawn.
 
-**Note:** this method **cannot** be invoked from `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnDrawListener#onDraw()`.
+**Note:** this method **cannot** be invoked from onDraw.
 
 | Parameters ||
 |---|---|
@@ -93,7 +93,7 @@ Register a callback to be invoked when the view tree is about to be drawn.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnGlobalFocusChangeListener
 
@@ -119,7 +119,7 @@ Register a callback to be invoked when the global layout state or the visibility
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnPreDrawListener
 
@@ -137,7 +137,7 @@ Register a callback to be invoked when the view tree is about to be drawn
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnScrollChangedListener
 
@@ -155,7 +155,7 @@ Register a callback to be invoked when a view has been scrolled.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnSystemGestureExclusionRectsChangedListener
 
@@ -165,7 +165,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun addOnSystemGestureExclusionRectsChangedListener(listener: Consumer<MutableList<Rect!>!>): Unit
 ```
 
-Add a listener to be notified when the tree's *transformed* gesture exclusion rects change. This could be the result of an animation or other layout change, or a view calling `https://developer.android.com/reference/kotlin/android/view/View#setSystemGestureExclusionRects(kotlin.collections.MutableList)`.
+Add a listener to be notified when the tree's *transformed* gesture exclusion rects change. This could be the result of an animation or other layout change, or a view calling setSystemGestureExclusionRects.
 
 | Parameters ||
 |---|---|
@@ -173,7 +173,7 @@ Add a listener to be notified when the tree's *transformed* gesture exclusion re
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View#setSystemGestureExclusionRects(kotlin.collections.MutableList)`
+- setSystemGestureExclusionRects
 
 ### addOnTouchModeChangeListener
 
@@ -191,7 +191,7 @@ Register a callback to be invoked when the invoked when the touch mode changes.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnWindowAttachListener
 
@@ -209,7 +209,7 @@ Register a callback to be invoked when the view hierarchy is attached to a windo
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnWindowFocusChangeListener
 
@@ -227,7 +227,7 @@ Register a callback to be invoked when the window focus state within the view tr
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addOnWindowVisibilityChangeListener
 
@@ -245,7 +245,7 @@ Register a callback to be invoked when the window visibility changes.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### addWindowInsetsAnimationListener
 
@@ -263,7 +263,7 @@ Register a callback to be invoked when window insets animations start or end.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### dispatchOnDraw
 
@@ -331,7 +331,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun registerFrameCommitCallback(callback: Runnable): Unit
 ```
 
-Adds a frame commit callback. This callback will be invoked when the current rendering content has been rendered into a frame and submitted to the swap chain. The frame may not currently be visible on the display when this is invoked, but it has been submitted. This callback is useful in combination with `https://developer.android.com/reference/kotlin/android/view/PixelCopy` to capture the current rendered content of the UI reliably. Note: Only works with hardware rendering. Does nothing otherwise.
+Adds a frame commit callback. This callback will be invoked when the current rendering content has been rendered into a frame and submitted to the swap chain. The frame may not currently be visible on the display when this is invoked, but it has been submitted. This callback is useful in combination with PixelCopy to capture the current rendered content of the UI reliably. Note: Only works with hardware rendering. Does nothing otherwise.
 
 | Parameters ||
 |---|---|
@@ -356,11 +356,11 @@ Remove a previously installed global layout callback
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)`
+- addOnGlobalLayoutListener
 
 ### removeOnDrawListener
 
@@ -372,7 +372,7 @@ fun removeOnDrawListener(victim: ViewTreeObserver.OnDrawListener!): Unit
 
 Remove a previously installed pre-draw callback.
 
-**Note:** this method **cannot** be invoked from `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver.OnDrawListener#onDraw()`.
+**Note:** this method **cannot** be invoked from onDraw.
 
 | Parameters ||
 |---|---|
@@ -380,11 +380,11 @@ Remove a previously installed pre-draw callback.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)`
+- addOnDrawListener
 
 ### removeOnGlobalFocusChangeListener
 
@@ -402,11 +402,11 @@ Remove a previously installed focus change callback.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnGlobalFocusChangeListener(android.view.ViewTreeObserver.OnGlobalFocusChangeListener)`
+- addOnGlobalFocusChangeListener
 
 ### removeOnGlobalLayoutListener
 
@@ -424,11 +424,11 @@ Remove a previously installed global layout callback
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnGlobalLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)`
+- addOnGlobalLayoutListener
 
 ### removeOnPreDrawListener
 
@@ -446,11 +446,11 @@ Remove a previously installed pre-draw callback
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnPreDrawListener(android.view.ViewTreeObserver.OnPreDrawListener)`
+- addOnPreDrawListener
 
 ### removeOnScrollChangedListener
 
@@ -468,11 +468,11 @@ Remove a previously installed scroll-changed callback
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnScrollChangedListener(android.view.ViewTreeObserver.OnScrollChangedListener)`
+- addOnScrollChangedListener
 
 ### removeOnSystemGestureExclusionRectsChangedListener
 
@@ -490,8 +490,8 @@ Unsubscribe the given listener from gesture exclusion rect changes.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnSystemGestureExclusionRectsChangedListener(java.util.function.Consumer)`
-- `https://developer.android.com/reference/kotlin/android/view/View#setSystemGestureExclusionRects(kotlin.collections.MutableList)`
+- addOnSystemGestureExclusionRectsChangedListener
+- setSystemGestureExclusionRects
 
 ### removeOnTouchModeChangeListener
 
@@ -509,11 +509,11 @@ Remove a previously installed touch mode change callback
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnTouchModeChangeListener(android.view.ViewTreeObserver.OnTouchModeChangeListener)`
+- addOnTouchModeChangeListener
 
 ### removeOnWindowAttachListener
 
@@ -531,11 +531,11 @@ Remove a previously installed window attach callback.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnWindowAttachListener(android.view.ViewTreeObserver.OnWindowAttachListener)`
+- addOnWindowAttachListener
 
 ### removeOnWindowFocusChangeListener
 
@@ -553,11 +553,11 @@ Remove a previously installed window focus change callback.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnWindowFocusChangeListener(android.view.ViewTreeObserver.OnWindowFocusChangeListener)`
+- addOnWindowFocusChangeListener
 
 ### removeOnWindowVisibilityChangeListener
 
@@ -575,11 +575,11 @@ Remove a previously installed window visibility callback.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#addOnWindowVisibilityChangeListener(android.view.ViewTreeObserver.OnWindowVisibilityChangeListener)`
+- addOnWindowVisibilityChangeListener
 
 ### removeWindowInsetsAnimationListener
 
@@ -597,7 +597,7 @@ Remove a previously installed window insets animation callback.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If `https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver#isAlive()` returns false |
+| `java.lang.IllegalStateException` | If isAlive returns false |
 
 ### unregisterFrameCommitCallback
 

@@ -11,9 +11,9 @@ interface SavedDatasetsInfoCallback
 
 | [android.service.autofill.SavedDatasetsInfoCallback](SavedDatasetsInfoCallback.md) |
 
-Handles the response to `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSavedDatasetsInfoRequest(android.service.autofill.SavedDatasetsInfoCallback)`.
+Handles the response to onSavedDatasetsInfoRequest.
 
-Use `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#onSuccess(kotlin.collections.MutableSet)` to return the computed info about the datasets the user saved to this service. If there was an error querying the info, or if the service is unable to do so at this time (for example, if the user isn't logged in), call `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#onError(kotlin.Int)`.
+Use onSuccess to return the computed info about the datasets the user saved to this service. If there was an error querying the info, or if the service is unable to do so at this time (for example, if the user isn't logged in), call onError.
 
 This callback can be used only once.
 
@@ -28,8 +28,8 @@ This callback can be used only once.
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#onError(kotlin.Int)(error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Respond to the request with an error. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfoCallback#onSuccess(kotlin.collections.MutableSet)(results: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo!>)` Successfully respond to the request with the info on each type of saved datasets. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onError Respond to the request with an error. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSuccess Successfully respond to the request with the info on each type of saved datasets. |
 
 ## Constants
 

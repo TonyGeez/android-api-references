@@ -10,7 +10,7 @@ interface Comparable<T : Any!>
 
 This interface imposes a total ordering on the objects of each class that implements it. This ordering is referred to as the class's *natural ordering* , and the class's method is referred to as its *natural comparison method*.
 
-Lists (and arrays) of objects that implement this interface can be sorted automatically by `https://developer.android.com/reference/kotlin/java/util/Collections.html#sort(kotlin.collections.MutableList)` (and `https://developer.android.com/reference/kotlin/java/util/Arrays.html#sort(kotlin.Array)`). Objects that implement this interface can be used as keys in a [sorted map](../java.util/SortedMap.md) or as elements in a [sorted set](../java.util/SortedSet.md), without the need to specify a [comparator](../java.util/Comparator.md).
+Lists (and arrays) of objects that implement this interface can be sorted automatically by sort (and sort). Objects that implement this interface can be used as keys in a [sorted map](../java.util/SortedMap.md) or as elements in a [sorted set](../java.util/SortedSet.md), without the need to specify a [comparator](../java.util/Comparator.md).
 
 The natural ordering for a class `C` is said to be *consistent with equals* if and only if `e1.compareTo(e2) == 0` has the same boolean value as `e1.equals(e2)` for every `e1` and `e2` of class `C`. Note that `null` is not an instance of any class, and `e.compareTo(null)` should throw a `NullPointerException` even though `e.equals(null)` returns `false`.
 
@@ -18,7 +18,7 @@ It is strongly recommended (though not required) that natural orderings be consi
 
 For example, if one adds two keys `a` and `b` such that `(!a.equals(b) && a.compareTo(b) == 0)` to a sorted set that does not use an explicit comparator, the second `add` operation returns false (and the size of the sorted set does not increase) because `a` and `b` are equivalent from the sorted set's perspective.
 
-Virtually all Java core classes that implement `Comparable` have natural orderings that are consistent with equals. One exception is `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`, whose [natural ordering](../java.math/BigDecimal.md)) equates `BigDecimal` objects with equal numerical values and different representations (such as 4.0 and 4.00). For `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#equals(kotlin.Any)` to return true, the representation and numerical value of the two `BigDecimal` objects must be the same.
+Virtually all Java core classes that implement `Comparable` have natural orderings that are consistent with equals. One exception is `https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#`, whose [natural ordering](../java.math/BigDecimal.md)) equates `BigDecimal` objects with equal numerical values and different representations (such as 4.0 and 4.00). For equals to return true, the representation and numerical value of the two `BigDecimal` objects must be the same.
 
 For the mathematically inclined, the *relation* that defines the natural ordering on a given class C is:
 
@@ -32,7 +32,7 @@ The *quotient* for this total order is:
 <code>{(x, y) such that x.compareTo(y) == 0}.
   </code>
 ```
-It follows immediately from the contract for `compareTo` that the quotient is an *equivalence relation* on `C`, and that the natural ordering is a *total order* on `C`. When we say that a class's natural ordering is *consistent with equals* , we mean that the quotient for the natural ordering is the equivalence relation defined by the class's `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)` method:
+It follows immediately from the contract for `compareTo` that the quotient is an *equivalence relation* on `C`, and that the natural ordering is a *total order* on `C`. When we say that a class's natural ordering is *consistent with equals* , we mean that the quotient for the natural ordering is the equivalence relation defined by the class's equals method:
 
 ```kotlin
 {(x, y) such that x.equals(y)}. 
@@ -46,7 +46,7 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |---|---|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Comparable#compareTo(java.lang.Comparable.T)(o: T)` Compares this object with the specified object for order. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this object with the specified object for order. |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ abstract fun compareTo(o: T): Int
 
 Compares this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
 
-The implementor must ensure `https://developer.android.com/reference/kotlin/java/lang/Integer#signum(kotlin.Int)``(x.compareTo(y)) == -signum(y.compareTo(x))` for all `x` and `y`. (This implies that `x.compareTo(y)` must throw an exception if and only if `y.compareTo(x)` throws an exception.)
+The implementor must ensure signum`(x.compareTo(y)) == -signum(y.compareTo(x))` for all `x` and `y`. (This implies that `x.compareTo(y)` must throw an exception if and only if `y.compareTo(x)` throws an exception.)
 
 The implementor must also ensure that the relation is transitive: `(x.compareTo(y) > 0 && y.compareTo(z) > 0)` implies `x.compareTo(z) > 0`.
 

@@ -12,7 +12,7 @@ class DataSpace
 
 DataSpace identifies three components of colors - standard (primaries), transfer and range.
 
-A DataSpace describes how buffer data, such as from an `https://developer.android.com/reference/kotlin/android/media/Image.html#` or a `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer` should be interpreted by both applications and typical hardware.
+A DataSpace describes how buffer data, such as from an `https://developer.android.com/reference/kotlin/android/media/Image.html#` or a HardwareBuffer should be interpreted by both applications and typical hardware.
 
 As buffer information is not guaranteed to be representative of color information, while DataSpace is typically used to describe three aspects of interpreting colors, some DataSpaces may describe other typical interpretations of buffer data such as depth information.
 
@@ -64,7 +64,7 @@ Defines the range of values corresponding to the unit range of `0-1`.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#DATASPACE_SRGB_LINEAR:kotlin.Int` sRGB linear encoding. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#DATASPACE_UNKNOWN:kotlin.Int` Default-assumption data space, when not explicitly specified. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#RANGE_EXTENDED:kotlin.Int` Extended range can be used in combination with FP16 to communicate scRGB or with `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction.html#setExtendedRangeBrightness(android.view.SurfaceControl,%20kotlin.Float,%20kotlin.Float)` to indicate an HDR range. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#RANGE_EXTENDED:kotlin.Int` Extended range can be used in combination with FP16 to communicate scRGB or with setExtendedRangeBrightness to indicate an HDR range. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#RANGE_FULL:kotlin.Int` Full range uses all values for Y, Cb and Cr from `0` to `2^b-1`, where b is the bit depth of the color format. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#RANGE_LIMITED:kotlin.Int` Limited range uses values `16/256*2^b` to `235/256*2^b` for Y, and `1/16*2^b` to `15/16*2^b` for Cb, Cr, R, G and B, where b is the bit depth of the color format. |
 | --- | --- |
@@ -100,11 +100,11 @@ Defines the range of values corresponding to the unit range of `0-1`.
 
 | Public methods ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#getRange(kotlin.Int)(dataSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Unpack the range field value from the packed dataSpace value |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#getStandard(kotlin.Int)(dataSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Unpack the standard field value from the packed dataSpace value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#getTransfer(kotlin.Int)(dataSpace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Unpack the transfer field value from the packed dataSpace value |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRange Unpack the range field value from the packed dataSpace value |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStandard Unpack the standard field value from the packed dataSpace value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTransfer Unpack the transfer field value from the packed dataSpace value |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DataSpace#pack(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(standard: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, transfer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, range: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Pack the dataSpace value using standard, transfer and range field value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | pack Pack the dataSpace value using standard, transfer and range field value. |
 
 ## Constants
 
@@ -509,11 +509,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val RANGE_EXTENDED: Int
 ```
 
-Extended range can be used in combination with FP16 to communicate scRGB or with `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction.html#setExtendedRangeBrightness(android.view.SurfaceControl,%20kotlin.Float,%20kotlin.Float)` to indicate an HDR range.
+Extended range can be used in combination with FP16 to communicate scRGB or with setExtendedRangeBrightness to indicate an HDR range.
 
 When used with floating point pixel formats and #STANDARD_BT709 then \[0.0 - 1.0\] is the standard sRGB space and values outside the range \[0.0 - 1.0\] can encode color outside the sRGB gamut. \[-0.5, 7.5\] is the standard scRGB range. Used to blend/merge multiple dataspaces on a single display.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` this may be combined with `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction.html#setExtendedRangeBrightness(android.view.SurfaceControl,%20kotlin.Float,%20kotlin.Float)` and other formats such as `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer#RGBA_8888:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer#RGBA_1010102:kotlin.Int` to communicate a variable HDR brightness range
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` this may be combined with setExtendedRangeBrightness and other formats such as `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer#RGBA_8888:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer#RGBA_1010102:kotlin.Int` to communicate a variable HDR brightness range
 
  Value: 402653184
 

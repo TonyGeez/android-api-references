@@ -12,14 +12,14 @@ open class TelecomManager
 
 The Android Telecom framework manages audio and video calls on an Android device. It acts as a central switchboard, connecting applications that provide calling capabilities (like SIM-based/telephony calls or VoIP apps) with applications that provide the user interface for calls (like the default Phone app). Key functions include routing calls, managing call states, and integrating various calling services into a consistent user experience. It allows developers to create replacements for the default phone app or integrate their own calling solutions (e.g., VoIP) into the native Android calling system.
 
-Note: The operation of the Telecom framework (this manager class, and other APIs such as `https://developer.android.com/reference/kotlin/android/telecom/InCallService`, `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`) is gated by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String`. It is expected that the Telecom framework is available on ALL devices where "calls" may take place. A call is defined generally as any communication using a microphone and audio output device. This broadly includes phones, tablets, wearables such as watches, and integrated automotive OSes.
+Note: The operation of the Telecom framework (this manager class, and other APIs such as InCallService, ConnectionService) is gated by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String`. It is expected that the Telecom framework is available on ALL devices where "calls" may take place. A call is defined generally as any communication using a microphone and audio output device. This broadly includes phones, tablets, wearables such as watches, and integrated automotive OSes.
 
 Common configurations include phones which will have both `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String` and tablets which will only have `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String`.
 
 Apps do not instantiate this class directly; instead, they retrieve a reference to an instance through android.content.Context#getSystemService.
 
 Note that access to some telecom information is permission-protected. Your app cannot access the protected information or gain access to protected functionality unless it has the appropriate permissions declared in its manifest file. Where permissions apply, they are noted in the method descriptions. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
@@ -27,10 +27,10 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 |---|---|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` Activity action: Triggers the calling UI and initiates a call back to a previous call made by the application. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CHANGE_DEFAULT_DIALER:kotlin.String` Activity action: Shows a dialog asking the user whether or not they want to replace the current default Dialer with the one specified in `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME:kotlin.String`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CHANGE_PHONE_ACCOUNTS:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to show the settings page used to configure `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` preferences. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CHANGE_PHONE_ACCOUNTS:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to show the settings page used to configure PhoneAccount preferences. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CONFIGURE_CALL_LOG_INTEGRATION:kotlin.String` Activity Action: Show the settings for configuring call log integration. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CONFIGURE_PHONE_ACCOUNT:kotlin.String` An `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action sent by the telecom framework to start a configuration dialog for a registered `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CONFIGURE_PHONE_ACCOUNT:kotlin.String` An `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action sent by the telecom framework to start a configuration dialog for a registered PhoneAccount. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED:kotlin.String` Broadcast intent action indicating that the current default call screening app has changed. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_DEFAULT_DIALER_CHANGED:kotlin.String` Broadcast intent action indicating that the current default dialer has changed. |
@@ -38,7 +38,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_PHONE_ACCOUNT_REGISTERED:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used indicate that a new phone account was just registered. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_PHONE_ACCOUNT_UNREGISTERED:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used indicate that a phone account was just unregistered. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_POST_CALL:kotlin.String` Start an activity indicating that the completion of an outgoing call or an incoming call which was not blocked by the `https://developer.android.com/reference/kotlin/android/telecom/CallScreeningService`, and which was NOT terminated while the call was in `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_AUDIO_PROCESSING:kotlin.Int`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_POST_CALL:kotlin.String` Start an activity indicating that the completion of an outgoing call or an incoming call which was not blocked by the CallScreeningService, and which was NOT terminated while the call was in `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_AUDIO_PROCESSING:kotlin.Int`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to show the call accessibility settings page. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_SHOW_CALL_SETTINGS:kotlin.String` The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to show the call settings page. |
@@ -61,7 +61,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_DURATION:kotlin.String` A integer value provided for completed calls to indicate the duration of the call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_LOG_URI:kotlin.String` Extra URI that is used by a dialer to query the `https://developer.android.com/reference/kotlin/android/provider/CallLog.html#` content provider and associate a missed call notification with a call log entry. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_NETWORK_TYPE:kotlin.String` Optional extra for communicating the call network technology used by a `https://developer.android.com/reference/kotlin/android/telecom/Connection` to Telecom and InCallUI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_NETWORK_TYPE:kotlin.String` Optional extra for communicating the call network technology used by a Connection to Telecom and InCallUI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_SUBJECT:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` containing a string call subject which will be associated with an outgoing call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_TYPE:kotlin.String` An optional `https://developer.android.com/reference/kotlin/android/content/Intent.html#` extra used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` to specify the desired call type for the callback. |
 | --- | --- |
@@ -71,10 +71,10 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_HANDLE:kotlin.String` A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` extra, which when set on the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_POST_CALL:kotlin.String` intent, indicates the uri handle(phone number) of the completed call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_HAS_PICTURE:kotlin.String` A boolean extra set on incoming calls to indicate that the call has a picture specified. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_CALL_ADDRESS:kotlin.String` The extra used by a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to provide the handle of the caller that has initiated a new incoming call. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_CALL_ADDRESS:kotlin.String` The extra used by a ConnectionService to provide the handle of the caller that has initiated a new incoming call. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_CALL_EXTRAS:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_INCOMING_CALL:kotlin.String` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` which contains metadata about the call. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_VIDEO_STATE:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)` containing an integer that determines the requested video state for an incoming call. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_VIDEO_STATE:kotlin.String` Optional extra for addNewIncomingCall containing an integer that determines the requested video state for an incoming call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_IS_DEFAULT_CALL_SCREENING_APP:kotlin.String` Extra value used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_DEFAULT_CALL_SCREENING_APP_CHANGED:kotlin.String` broadcast to indicate whether an app is the default call screening app. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_LOCATION:kotlin.String` Extra for the call composer call location, an `https://developer.android.com/reference/kotlin/android/location/Location.html#` parcelable class to represent the geolocation as a latitude and longitude pair. |
@@ -85,27 +85,27 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_OUTGOING_CALL_EXTRAS:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` which contains metadata about the call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_OUTGOING_PICTURE:kotlin.String` A ParcelUuid used as a token to represent a picture that was uploaded prior to the call being placed. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` The extra used with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` to specify a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` to use when making the call. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` The extra used with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` to specify a PhoneAccountHandle to use when making the call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PICTURE_URI:kotlin.String` A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` representing the picture that was downloaded when a call is received or uploaded when a call is placed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PRIORITY:kotlin.String` Extra for the call composer call priority, either `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#PRIORITY_NORMAL:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#PRIORITY_URGENT:kotlin.Int`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_START_CALL_WITH_RTT:kotlin.String` A boolean extra, which when set on the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent or on the bundle passed into `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)`, indicates that the call should be initiated with an RTT session open. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_START_CALL_WITH_RTT:kotlin.String` A boolean extra, which when set on the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent or on the bundle passed into placeCall, indicates that the call should be initiated with an RTT session open. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_START_CALL_WITH_SPEAKERPHONE:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` containing a boolean that determines whether the speakerphone should be automatically turned on for an outgoing call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_START_CALL_WITH_VIDEO_STATE:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` containing an integer that determines the desired video state for an outgoing call. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_USE_ASSISTED_DIALING:kotlin.String` The boolean indicated by this extra controls whether or not a call is eligible to undergo assisted dialing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_UUID:kotlin.String` Extra used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` to specify the UUID value representing the call ID returned by `https://developer.android.com/reference/kotlin/android/telecom/CallControl#getCallId()`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_UUID:kotlin.String` Extra used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` to specify the UUID value representing the call ID returned by getCallId. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_VOIP_CALL_LOG_PREFERENCE_STATUS:kotlin.String` Extra used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_VOIP_CALL_LOG_PREFERENCE:kotlin.String` to specify the value of the VoIP call log preference for the app receiving the broadcast. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#GATEWAY_ORIGINAL_ADDRESS:kotlin.String` An optional `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent extra corresponding to the original address to dial for the call. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#GATEWAY_PROVIDER_PACKAGE:kotlin.String` An optional `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent extra denoting the package name of the app specifying an alternative gateway for the call. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_EXTERNAL_CALLS:kotlin.String` A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_IS_EXTERNAL_CALL:kotlin.Int` property. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_EXTERNAL_CALLS:kotlin.String` A boolean meta-data value indicating whether an InCallService wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_IS_EXTERNAL_CALL:kotlin.Int` property. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_SELF_MANAGED_CALLS:kotlin.String` A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_SELF_MANAGED:kotlin.Int` property. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_CAR_MODE_UI:kotlin.String` A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implements an in-call user interface to be used while the device is in car-mode (see `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_CAR:kotlin.Int`). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_RINGING:kotlin.String` A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implements ringing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_SELF_MANAGED_CALLS:kotlin.String` A boolean meta-data value indicating whether an InCallService wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_SELF_MANAGED:kotlin.Int` property. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_CAR_MODE_UI:kotlin.String` A boolean meta-data value indicating whether an InCallService implements an in-call user interface to be used while the device is in car-mode (see `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_CAR:kotlin.Int`). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_RINGING:kotlin.String` A boolean meta-data value indicating whether an InCallService implements ringing. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_UI:kotlin.String` A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implements an in-call user interface. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_UI:kotlin.String` A boolean meta-data value indicating whether an InCallService implements an in-call user interface. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#PRESENTATION_ALLOWED:kotlin.Int` Indicates that the address or number of a call is allowed to be displayed for caller ID. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#PRESENTATION_PAYPHONE:kotlin.Int` Indicates that the address or number of a call belongs to a pay phone. |
 | --- | --- |
@@ -118,57 +118,57 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#acceptHandover(android.net.Uri,%20kotlin.Int,%20android.telecom.PhoneAccountHandle)(srcAddr: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, videoState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, destAcct: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Called by an app to indicate that it wishes to accept the handover of an ongoing call to a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` it defines. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#acceptRingingCall()()` If there is a ringing incoming call, this method accepts the call on behalf of the user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#acceptRingingCall(kotlin.Int)(videoState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If there is a ringing incoming call, this method accepts the call on behalf of the user, with the specified video state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acceptHandover Called by an app to indicate that it wishes to accept the handover of an ongoing call to a PhoneAccountHandle it defines. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acceptRingingCall If there is a ringing incoming call, this method accepts the call on behalf of the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acceptRingingCall If there is a ringing incoming call, this method accepts the call on behalf of the user, with the specified video state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback)(callAttributes: https://developer.android.com/reference/kotlin/android/telecom/CallAttributes, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, pendingControl: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/telecom/CallControl!, https://developer.android.com/reference/kotlin/android/telecom/CallException!>, handshakes: https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback, events: https://developer.android.com/reference/kotlin/android/telecom/CallEventCallback)` Add a call to the Android system service Telecom. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)(phoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Registers a new incoming call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingConference(android.telecom.PhoneAccountHandle,%20android.os.Bundle)(phoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Registers a new incoming conference. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addCall Add a call to the Android system service Telecom. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addNewIncomingCall Registers a new incoming call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addNewIncomingConference Registers a new incoming conference. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#cancelMissedCallsNotification()()` Removes the missed-call notification if one is present and marks missed calls in the call log as read. |
-| open [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#createManageBlockedNumbersIntent()()` Creates the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` to launch the activity to manage blocked numbers. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#endCall()()` Ends the foreground call on the device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancelMissedCallsNotification Removes the missed-call notification if one is present and marks missed calls in the call log as read. |
+| open [Intent](../android.content/Intent.md)! | createManageBlockedNumbersIntent Creates the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can be used with startActivity to launch the activity to manage blocked numbers. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | endCall Ends the foreground call on the device. |
 | --- | --- |
-| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getAdnUriForPhoneAccount(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Returns a URI (with the content:// scheme) specific to the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for ADN content retrieval. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getCallCapablePhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s which can be used to make and receive phone calls. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()()` Used to determine the currently selected default dialer package. |
+| open [Uri](../android.net/Uri.md)! | getAdnUriForPhoneAccount Returns a URI (with the content:// scheme) specific to the specified PhoneAccount for ADN content retrieval. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\>! | getCallCapablePhoneAccounts Returns a list of PhoneAccountHandles which can be used to make and receive phone calls. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDefaultDialerPackage Used to determine the currently selected default dialer package. |
 | --- | --- |
-| open [PhoneAccountHandle](PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultOutgoingPhoneAccount(kotlin.String)(uriScheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which will be used to place outgoing calls to addresses with the specified `uriScheme`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getLine1Number(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the line 1 phone number for given phone account. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getOwnSelfManagedPhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s owned by the calling self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)! | getDefaultOutgoingPhoneAccount Return the PhoneAccount which will be used to place outgoing calls to addresses with the specified `uriScheme`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getLine1Number Return the line 1 phone number for given phone account. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | getOwnSelfManagedPhoneAccounts Returns a list of PhoneAccountHandles owned by the calling self-managed ConnectionService. |
 | --- | --- |
-| open [PhoneAccount](PhoneAccount.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)(account: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for a specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccount](PhoneAccount.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getRegisteredPhoneAccounts()()` This API will return all `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s the caller registered via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSelfManagedPhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s for all self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s owned by the calling `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#`. |
+| open [PhoneAccount](PhoneAccount.md)! | getPhoneAccount Return the PhoneAccount for a specified PhoneAccountHandle. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccount](PhoneAccount.md)!\> | getRegisteredPhoneAccounts This API will return all PhoneAccounts the caller registered via registerPhoneAccount. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | getSelfManagedPhoneAccounts Returns a list of PhoneAccountHandles for all self-managed ConnectionServices owned by the calling `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#`. |
 | --- | --- |
-| open [PhoneAccountHandle](PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSimCallManager()()` Returns the current SIM call manager. |
-| open [PhoneAccountHandle](PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSimCallManagerForSubscription(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns current SIM call manager for the Telephony Subscription ID specified. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSystemDialerPackage()()` Determines the package name of the system-provided default phone app. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)! | getSimCallManager Returns the current SIM call manager. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)? | getSimCallManagerForSubscription Returns current SIM call manager for the Telephony Subscription ID specified. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSystemDialerPackage Determines the package name of the system-provided default phone app. |
 | --- | --- |
-| open [PhoneAccountHandle](PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getUserSelectedOutgoingPhoneAccount()()` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which is the user-chosen default for making outgoing phone calls. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getVoiceMailNumber(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the voicemail number for a given phone account. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#handleMmi(kotlin.String)(dialString: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Processes the specified dial string as an MMI code. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)? | getUserSelectedOutgoingPhoneAccount Return the PhoneAccount which is the user-chosen default for making outgoing phone calls. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getVoiceMailNumber Return the voicemail number for a given phone account. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | handleMmi Processes the specified dial string as an MMI code. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#handleMmi(kotlin.String,%20android.telecom.PhoneAccountHandle)(dialString: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Processes the specified dial string as an MMI code. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#hasManageOngoingCallsPermission()()` Returns whether the caller has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_ONGOING_CALLS:kotlin.String` permission. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isInCall()()` Returns whether there is an ongoing phone call (can be in dialing, ringing, active or holding states) originating from either a manager or self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | handleMmi Processes the specified dial string as an MMI code. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasManageOngoingCallsPermission Returns whether the caller has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_ONGOING_CALLS:kotlin.String` permission. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInCall Returns whether there is an ongoing phone call (can be in dialing, ringing, active or holding states) originating from either a manager or self-managed ConnectionService. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isInExternalCall()()` Returns whether there is an ongoing phone call (can be in dialing, ringing, active or holding states) that is an external call. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isInManagedCall()()` Returns whether there is an ongoing call originating from a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isIncomingCallPermitted(android.telecom.PhoneAccountHandle)(phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Determines whether Telecom would permit an incoming call to be added via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)` API for the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInExternalCall Returns whether there is an ongoing phone call (can be in dialing, ringing, active or holding states) that is an external call. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInManagedCall Returns whether there is an ongoing call originating from a managed ConnectionService. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isIncomingCallPermitted Determines whether Telecom would permit an incoming call to be added via the addNewIncomingCall API for the specified PhoneAccountHandle. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isOutgoingCallPermitted(android.telecom.PhoneAccountHandle)(phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Determines whether Telecom would permit an outgoing call to be placed via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)` API for the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isTtySupported()()` Returns whether TTY is supported on this device. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isVoiceMailNumber(android.telecom.PhoneAccountHandle,%20kotlin.String)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return whether a given phone number is the configured voicemail number for a particular phone account. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOutgoingCallPermitted Determines whether Telecom would permit an outgoing call to be placed via the placeCall API for the specified PhoneAccountHandle. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTtySupported Returns whether TTY is supported on this device. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVoiceMailNumber Return whether a given phone number is the configured voicemail number for a particular phone account. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)(address: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Places a new outgoing call to the provided address using the system telecom service with the specified extras. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)(account: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount!)` Register a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for use by the system that will be stored in Device Encrypted storage. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#showInCallScreen(kotlin.Boolean)(showDialpad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Brings the in-call screen to the foreground if there is an ongoing call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | placeCall Places a new outgoing call to the provided address using the system telecom service with the specified extras. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerPhoneAccount Register a PhoneAccount for use by the system that will be stored in Device Encrypted storage. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | showInCallScreen Brings the in-call screen to the foreground if there is an ongoing call. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#silenceRinger()()` Silences the ringer if a ringing call exists. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#startConference(kotlin.collections.MutableList,%20android.os.Bundle)(participants: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Place a new adhoc conference call with the provided participants using the system telecom service. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#unregisterPhoneAccount(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Remove a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` registration from the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | silenceRinger Silences the ringer if a ringing call exists. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startConference Place a new adhoc conference call with the provided participants using the system telecom service. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterPhoneAccount Remove a PhoneAccount registration from the system. |
 | --- | --- |
 
 ## Constants
@@ -209,7 +209,7 @@ Intent intent = new Intent(TelecomManager.ACTION_CHANGE_DEFAULT_DIALER);
 
 <br />
 
-This is no longer supported since Q, please use `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#createRequestRoleIntent(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` instead.
+This is no longer supported since Q, please use createRequestRoleIntent with `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` instead.
 
  Value: "android.telecom.action.CHANGE_DEFAULT_DIALER"
 
@@ -221,7 +221,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_CHANGE_PHONE_ACCOUNTS: String
 ```
 
-The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to show the settings page used to configure `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` preferences.
+The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to show the settings page used to configure PhoneAccount preferences.
 
  Value: "android.telecom.action.CHANGE_PHONE_ACCOUNTS"
 
@@ -249,9 +249,9 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_CONFIGURE_PHONE_ACCOUNT: String
 ```
 
-An `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action sent by the telecom framework to start a configuration dialog for a registered `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. There is no default dialog and each app that registers a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` should provide one if desired.
+An `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action sent by the telecom framework to start a configuration dialog for a registered PhoneAccount. There is no default dialog and each app that registers a PhoneAccount should provide one if desired.
 
-A user can access the list of enabled `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s through the Phone app's settings menu. For each entry, the settings app will add a click action. When triggered, the click-action will start this intent along with the extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to indicate the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` to configure. If the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` package does not register an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` for this intent, then it will not be sent.
+A user can access the list of enabled PhoneAccounts through the Phone app's settings menu. For each entry, the settings app will add a click action. When triggered, the click-action will start this intent along with the extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to indicate the PhoneAccount to configure. If the PhoneAccount package does not register an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` for this intent, then it will not be sent.
 
  Value: "android.telecom.action.CONFIGURE_PHONE_ACCOUNT"
 
@@ -267,7 +267,7 @@ Broadcast intent action indicating that the current default call screening app h
 
 Note: This intent is NEVER actually broadcast and will be deprecated in the future.
 
-An app that want to know if it holds the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_CALL_SCREENING:kotlin.String` role can use `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)` to confirm if it holds the role or not.
+An app that want to know if it holds the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_CALL_SCREENING:kotlin.String` role can use isRoleHeld to confirm if it holds the role or not.
 
  Value: "android.telecom.action.DEFAULT_CALL_SCREENING_APP_CHANGED"
 
@@ -296,11 +296,11 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 static val ACTION_INCOMING_CALL: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)` instead.*
+**Deprecated:** *Use addNewIncomingCall instead.*
 
-Activity action: Starts the UI for handing an incoming call. This intent starts the in-call UI by notifying the Telecom system that an incoming call exists for a specific call service (see `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`). Telecom reads the Intent extras to find and bind to the appropriate `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which Telecom will ultimately use to control and get information about the call.
+Activity action: Starts the UI for handing an incoming call. This intent starts the in-call UI by notifying the Telecom system that an incoming call exists for a specific call service (see ConnectionService). Telecom reads the Intent extras to find and bind to the appropriate ConnectionService which Telecom will ultimately use to control and get information about the call.
 
-Input: get\*Extra field `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` contains the component name of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` that Telecom should bind to. Telecom will then ask the connection service for more information about the call prior to showing any UI.
+Input: get\*Extra field `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` contains the component name of the ConnectionService that Telecom should bind to. Telecom will then ask the connection service for more information about the call prior to showing any UI.
 
  Value: "android.telecom.action.INCOMING_CALL"
 
@@ -314,9 +314,9 @@ static val ACTION_PHONE_ACCOUNT_REGISTERED: String
 
 `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used indicate that a new phone account was just registered.
 
-The Intent `https://developer.android.com/reference/kotlin/android/content/Intent.html#getExtras()` will contain `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to indicate which `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` was registered.
+The Intent getExtras will contain `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to indicate which PhoneAccount was registered.
 
-Will only be sent to the default dialer app (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()`).
+Will only be sent to the default dialer app (see getDefaultDialerPackage).
 
  Value: "android.telecom.action.PHONE_ACCOUNT_REGISTERED"
 
@@ -330,9 +330,9 @@ static val ACTION_PHONE_ACCOUNT_UNREGISTERED: String
 
 `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used indicate that a phone account was just unregistered.
 
-The Intent `https://developer.android.com/reference/kotlin/android/content/Intent.html#getExtras()` will contain `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to indicate which `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` was unregistered.
+The Intent getExtras will contain `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to indicate which PhoneAccount was unregistered.
 
-Will only be sent to the default dialer app (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()`).
+Will only be sent to the default dialer app (see getDefaultDialerPackage).
 
  Value: "android.telecom.action.PHONE_ACCOUNT_UNREGISTERED"
 
@@ -344,7 +344,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_POST_CALL: String
 ```
 
-Start an activity indicating that the completion of an outgoing call or an incoming call which was not blocked by the `https://developer.android.com/reference/kotlin/android/telecom/CallScreeningService`, and which was NOT terminated while the call was in `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_AUDIO_PROCESSING:kotlin.Int`. The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_HANDLE:kotlin.String` will contain the uri handle(phone number) for the call which completed. The integer extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_DISCONNECT_CAUSE:kotlin.String` will indicate the reason for the call disconnection. See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_DISCONNECT_CAUSE:kotlin.String` for more information. The integer extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_DURATION:kotlin.String` will indicate the duration of the call. See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_DURATION:kotlin.String` for more information.
+Start an activity indicating that the completion of an outgoing call or an incoming call which was not blocked by the CallScreeningService, and which was NOT terminated while the call was in `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_AUDIO_PROCESSING:kotlin.Int`. The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_HANDLE:kotlin.String` will contain the uri handle(phone number) for the call which completed. The integer extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_DISCONNECT_CAUSE:kotlin.String` will indicate the reason for the call disconnection. See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_DISCONNECT_CAUSE:kotlin.String` for more information. The integer extra `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_DURATION:kotlin.String` will indicate the duration of the call. See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_DURATION:kotlin.String` for more information.
 
  Value: "android.telecom.action.POST_CALL"
 
@@ -494,7 +494,7 @@ static val EXTRA_CALL_BACK_NUMBER: String
 
 The number which the party on the other side of the line will see (and use to return the call).
 
-`https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s which interact with `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection`s should only populate this if the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getLine1Number()` value, as that is the user's expected caller ID.
+ConnectionServices which interact with RemoteConnections should only populate this if the getLine1Number value, as that is the user's expected caller ID.
 
  Value: "android.telecom.extra.CALL_BACK_NUMBER"
 
@@ -563,7 +563,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CALL_NETWORK_TYPE: String
 ```
 
-Optional extra for communicating the call network technology used by a `https://developer.android.com/reference/kotlin/android/telecom/Connection` to Telecom and InCallUI. `NETWORK_TYPE_*` in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#`.
+Optional extra for communicating the call network technology used by a Connection to Telecom and InCallUI. `NETWORK_TYPE_*` in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#`.
 
  Value: "android.telecom.extra.CALL_NETWORK_TYPE"
 
@@ -575,7 +575,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CALL_SUBJECT: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` containing a string call subject which will be associated with an outgoing call. Should only be specified if the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` supports the capability `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_SUBJECT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_COMPOSER:kotlin.Int`.
+Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` containing a string call subject which will be associated with an outgoing call. Should only be specified if the PhoneAccount supports the capability `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_SUBJECT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_COMPOSER:kotlin.Int`.
 
  Value: "android.telecom.extra.CALL_SUBJECT"
 
@@ -679,7 +679,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INCOMING_CALL_ADDRESS: String
 ```
 
-The extra used by a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to provide the handle of the caller that has initiated a new incoming call.
+The extra used by a ConnectionService to provide the handle of the caller that has initiated a new incoming call.
 
  Value: "android.telecom.extra.INCOMING_CALL_ADDRESS"
 
@@ -691,7 +691,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INCOMING_CALL_EXTRAS: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_INCOMING_CALL:kotlin.String` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` which contains metadata about the call. This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` will be returned to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`.
+Optional extra for `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_INCOMING_CALL:kotlin.String` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` which contains metadata about the call. This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` will be returned to the ConnectionService.
 
  Value: "android.telecom.extra.INCOMING_CALL_EXTRAS"
 
@@ -703,7 +703,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INCOMING_VIDEO_STATE: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)` containing an integer that determines the requested video state for an incoming call. Valid options: `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_BIDIRECTIONAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_RX_ENABLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_TX_ENABLED:kotlin.Int`.
+Optional extra for addNewIncomingCall containing an integer that determines the requested video state for an incoming call. Valid options: `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_BIDIRECTIONAL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_RX_ENABLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_TX_ENABLED:kotlin.Int`.
 
  Value: "android.telecom.extra.INCOMING_VIDEO_STATE"
 
@@ -792,7 +792,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_OUTGOING_CALL_EXTRAS: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` which contains metadata about the call. This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` will be saved into `Call.Details` and passed to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` when placing the call.
+Optional extra for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` containing a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` which contains metadata about the call. This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` will be saved into `Call.Details` and passed to the ConnectionService when placing the call.
 
  Value: "android.telecom.extra.OUTGOING_CALL_EXTRAS"
 
@@ -816,9 +816,9 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PHONE_ACCOUNT_HANDLE: String
 ```
 
-The extra used with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` to specify a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` to use when making the call.
+The extra used with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` `Intent` to specify a PhoneAccountHandle to use when making the call.
 
-Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)`.
+Retrieve with getParcelableExtra.
 
  Value: "android.telecom.extra.PHONE_ACCOUNT_HANDLE"
 
@@ -830,7 +830,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PICTURE_URI: String
 ```
 
-A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` representing the picture that was downloaded when a call is received or uploaded when a call is placed. This is a content URI within the call log provider which can be used to open a file descriptor. This could be set a short time after a call is added to the Dialer app if the download/upload is delayed for some reason. The Dialer app will receive a callback via `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#onDetailsChanged(android.telecom.Call,%20android.telecom.Call.Details)` when this value has changed. Reference: RCC.20 Section 2.4.3.2
+A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` representing the picture that was downloaded when a call is received or uploaded when a call is placed. This is a content URI within the call log provider which can be used to open a file descriptor. This could be set a short time after a call is added to the Dialer app if the download/upload is delayed for some reason. The Dialer app will receive a callback via onDetailsChanged when this value has changed. Reference: RCC.20 Section 2.4.3.2
 
  Value: "android.telecom.extra.PICTURE_URI"
 
@@ -854,7 +854,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_START_CALL_WITH_RTT: String
 ```
 
-A boolean extra, which when set on the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent or on the bundle passed into `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)`, indicates that the call should be initiated with an RTT session open. See `https://developer.android.com/reference/kotlin/android/telecom/Call.RttCall` for more information on RTT.
+A boolean extra, which when set on the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent or on the bundle passed into placeCall, indicates that the call should be initiated with an RTT session open. See `https://developer.android.com/reference/kotlin/android/telecom/Call.RttCall` for more information on RTT.
 
  Value: "android.telecom.extra.START_CALL_WITH_RTT"
 
@@ -894,7 +894,7 @@ The boolean indicated by this extra controls whether or not a call is eligible t
 
 The call initiator can use this extra to indicate that a call used assisted dialing to help place the call. This is most commonly used by a Dialer app which provides the ability to automatically add dialing prefixes when placing international calls.
 
-Setting this extra on the outgoing call extras will cause the `https://developer.android.com/reference/kotlin/android/telecom/Connection#PROPERTY_ASSISTED_DIALING:kotlin.Int` property and `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_ASSISTED_DIALING:kotlin.Int` property to be set on the `https://developer.android.com/reference/kotlin/android/telecom/Connection`/`https://developer.android.com/reference/kotlin/android/telecom/Call` in question. When the call is logged to the call log, the `https://developer.android.com/reference/kotlin/android/provider/CallLog.Calls.html#FEATURES_ASSISTED_DIALING_USED:kotlin.Int` call feature is set to indicate that assisted dialing was used for the call.
+Setting this extra on the outgoing call extras will cause the `https://developer.android.com/reference/kotlin/android/telecom/Connection#PROPERTY_ASSISTED_DIALING:kotlin.Int` property and `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_ASSISTED_DIALING:kotlin.Int` property to be set on the Connection/Call in question. When the call is logged to the call log, the `https://developer.android.com/reference/kotlin/android/provider/CallLog.Calls.html#FEATURES_ASSISTED_DIALING_USED:kotlin.Int` call feature is set to indicate that assisted dialing was used for the call.
 
  Value: "android.telecom.extra.USE_ASSISTED_DIALING"
 
@@ -906,13 +906,13 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val EXTRA_UUID: String
 ```
 
-Extra used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` to specify the UUID value representing the call ID returned by `https://developer.android.com/reference/kotlin/android/telecom/CallControl#getCallId()`.
+Extra used with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` to specify the UUID value representing the call ID returned by getCallId.
 
 This extra is required when using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` to initiate a callback to a specific call.
 
 Type: String
 
-Applications that support the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` intent should obtain the UUID value by calling `https://developer.android.com/reference/kotlin/android/telecom/CallControl#getCallId()` during the initial call and persist this UUID along with other call-related information. When receiving the UUID via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` intent, the application should retrieve the corresponding call information using the provided UUID and initiate a new call using the stored details.
+Applications that support the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` intent should obtain the UUID value by calling getCallId during the initial call and persist this UUID along with other call-related information. When receiving the UUID via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` intent, the application should retrieve the corresponding call information using the provided UUID and initiate a new call using the stored details.
 
  Value: "android.telecom.extra.UUID"
 
@@ -966,7 +966,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_INCLUDE_EXTERNAL_CALLS: String
 ```
 
-A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_IS_EXTERNAL_CALL:kotlin.Int` property. An external call is one which a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` knows about, but is not connected to directly. Dialer implementations (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()`) which would like to be informed of external calls should set this meta-data to `true` in the manifest registration of their `https://developer.android.com/reference/kotlin/android/telecom/InCallService`. By default, the `https://developer.android.com/reference/kotlin/android/telecom/InCallService` will NOT be informed of external calls.
+A boolean meta-data value indicating whether an InCallService wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_IS_EXTERNAL_CALL:kotlin.Int` property. An external call is one which a ConnectionService knows about, but is not connected to directly. Dialer implementations (see getDefaultDialerPackage) which would like to be informed of external calls should set this meta-data to `true` in the manifest registration of their InCallService. By default, the InCallService will NOT be informed of external calls.
 
  Value: "android.telecom.INCLUDE_EXTERNAL_CALLS"
 
@@ -978,9 +978,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_INCLUDE_SELF_MANAGED_CALLS: String
 ```
 
-A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_SELF_MANAGED:kotlin.Int` property. A self-managed call is one which originates from a self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` which has chosen to implement its own call user interface. An `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implementation which would like to be informed of external calls should set this meta-data to `true` in the manifest registration of their `https://developer.android.com/reference/kotlin/android/telecom/InCallService`. By default, the `https://developer.android.com/reference/kotlin/android/telecom/InCallService` will NOT be informed about self-managed calls.
+A boolean meta-data value indicating whether an InCallService wants to be informed of calls which have the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#PROPERTY_SELF_MANAGED:kotlin.Int` property. A self-managed call is one which originates from a self-managed ConnectionService which has chosen to implement its own call user interface. An InCallService implementation which would like to be informed of external calls should set this meta-data to `true` in the manifest registration of their InCallService. By default, the InCallService will NOT be informed about self-managed calls.
 
-An `https://developer.android.com/reference/kotlin/android/telecom/InCallService` which receives self-managed calls is free to view and control the state of calls in the self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. An example use-case is exposing these calls to an automotive device via its companion app.
+An InCallService which receives self-managed calls is free to view and control the state of calls in the self-managed ConnectionService. An example use-case is exposing these calls to an automotive device via its companion app.
 
 See also `https://developer.android.com/reference/kotlin/android/telecom/Connection#PROPERTY_SELF_MANAGED:kotlin.Int`.
 
@@ -994,7 +994,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_IN_CALL_SERVICE_CAR_MODE_UI: String
 ```
 
-A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implements an in-call user interface to be used while the device is in car-mode (see `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_CAR:kotlin.Int`).
+A boolean meta-data value indicating whether an InCallService implements an in-call user interface to be used while the device is in car-mode (see `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#UI_MODE_TYPE_CAR:kotlin.Int`).
 
  Value: "android.telecom.IN_CALL_SERVICE_CAR_MODE_UI"
 
@@ -1006,9 +1006,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_IN_CALL_SERVICE_RINGING: String
 ```
 
-A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implements ringing. Dialer implementations (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()`) which would also like to override the system provided ringing should set this meta-data to `true` in the manifest registration of their `https://developer.android.com/reference/kotlin/android/telecom/InCallService`.
+A boolean meta-data value indicating whether an InCallService implements ringing. Dialer implementations (see getDefaultDialerPackage) which would also like to override the system provided ringing should set this meta-data to `true` in the manifest registration of their InCallService.
 
-When `true`, it is the `https://developer.android.com/reference/kotlin/android/telecom/InCallService`'s responsibility to play a ringtone for all incoming calls.
+When `true`, it is the InCallService's responsibility to play a ringtone for all incoming calls.
 
  Value: "android.telecom.IN_CALL_SERVICE_RINGING"
 
@@ -1020,7 +1020,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_IN_CALL_SERVICE_UI: String
 ```
 
-A boolean meta-data value indicating whether an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implements an in-call user interface. Dialer implementations (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()`) which would also like to replace the in-call interface should set this meta-data to `true` in the manifest registration of their `https://developer.android.com/reference/kotlin/android/telecom/InCallService`.
+A boolean meta-data value indicating whether an InCallService implements an in-call user interface. Dialer implementations (see getDefaultDialerPackage) which would also like to replace the in-call interface should set this meta-data to `true` in the manifest registration of their InCallService.
 
  Value: "android.telecom.IN_CALL_SERVICE_UI"
 
@@ -1122,27 +1122,27 @@ open fun acceptHandover(
 ): Unit
 ```
 
-Called by an app to indicate that it wishes to accept the handover of an ongoing call to a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` it defines.
+Called by an app to indicate that it wishes to accept the handover of an ongoing call to a PhoneAccountHandle it defines.
 
-A call handover is the process where an ongoing call is transferred from one app (i.e. `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to another app. The user could, for example, choose to continue a mobile network call in a video calling app. The mobile network call via the Telephony stack is referred to as the source of the handover, and the video calling app is referred to as the destination.
+A call handover is the process where an ongoing call is transferred from one app (i.e. ConnectionService to another app. The user could, for example, choose to continue a mobile network call in a video calling app. The mobile network call via the Telephony stack is referred to as the source of the handover, and the video calling app is referred to as the destination.
 
-When considering a handover scenario the *initiating* device is where a user initiated the handover process (e.g. by calling `https://developer.android.com/reference/kotlin/android/telecom/Call#handoverTo(android.telecom.PhoneAccountHandle,%20kotlin.Int,%20android.os.Bundle)`, and the other device is considered the *receiving* device.
+When considering a handover scenario the *initiating* device is where a user initiated the handover process (e.g. by calling handoverTo, and the other device is considered the *receiving* device.
 
-For a full discussion of the handover process and the APIs involved, see `https://developer.android.com/reference/kotlin/android/telecom/Call#handoverTo(android.telecom.PhoneAccountHandle,%20kotlin.Int,%20android.os.Bundle)`.
+For a full discussion of the handover process and the APIs involved, see handoverTo.
 
-This method is called from the *receiving* side of a handover to indicate a desire to accept the handover of an ongoing call to another `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` identified by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` destAcct. For managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s, the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` must have been registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and the user must have enabled the corresponding `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. This can be checked using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)`. Self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String` to handover a call to it.
+This method is called from the *receiving* side of a handover to indicate a desire to accept the handover of an ongoing call to another ConnectionService identified by PhoneAccountHandle destAcct. For managed ConnectionServices, the specified PhoneAccountHandle must have been registered with registerPhoneAccount and the user must have enabled the corresponding PhoneAccount. This can be checked using getPhoneAccount. Self-managed ConnectionServices must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String` to handover a call to it.
 
-Once invoked, this method will cause the system to bind to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` associated with the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` destAcct and call (See `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingHandoverConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`).
+Once invoked, this method will cause the system to bind to the ConnectionService associated with the PhoneAccountHandle destAcct and call (See onCreateIncomingHandoverConnection).
 
-For a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if either the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` destAcct does not correspond to a registered `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` or the associated `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` is not currently enabled by the user.
+For a managed ConnectionService, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if either the PhoneAccountHandle destAcct does not correspond to a registered PhoneAccount or the associated PhoneAccount is not currently enabled by the user.
 
-For a self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if the calling app does not have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`.
+For a self-managed ConnectionService, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if the calling app does not have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`.
 
 | Parameters ||
 |---|---|
-| `srcAddr` | [Uri](../android.net/Uri.md)!: The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the ongoing call to handover to the caller's `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
+| `srcAddr` | [Uri](../android.net/Uri.md)!: The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the ongoing call to handover to the caller's ConnectionService. |
 | `videoState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Video state after the handover. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_TX_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_RX_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_BIDIRECTIONAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_PAUSED:kotlin.Int` |
-| `destAcct` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered to the calling package. |
+| `destAcct` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The PhoneAccountHandle registered to the calling package. |
 | --- | --- |
 
 ### acceptRingingCall
@@ -1154,7 +1154,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun acceptRingingCall(): Unit
 ```
 
-**Deprecated:** *Companion apps for wearable devices should use the `https://developer.android.com/reference/kotlin/android/telecom/InCallService` API instead.*
+**Deprecated:** *Companion apps for wearable devices should use the InCallService API instead.*
 
 If there is a ringing incoming call, this method accepts the call on behalf of the user. If the incoming call is a video call, the call will be answered with the same video state as the incoming call requests. This means, for example, that an incoming call requesting `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_BIDIRECTIONAL:kotlin.Int` will be answered, accepting that state. If the ringing incoming call is self-managed, this method will only accept the call if the caller of this method is privileged (i.e. system, shell, or root) or system UI. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ANSWER_PHONE_CALLS:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`
@@ -1168,7 +1168,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun acceptRingingCall(videoState: Int): Unit
 ```
 
-**Deprecated:** *Companion apps for wearable devices should use the `https://developer.android.com/reference/kotlin/android/telecom/InCallService` API instead.*
+**Deprecated:** *Companion apps for wearable devices should use the InCallService API instead.*
 
 If there is a ringing incoming call, this method accepts the call on behalf of the user, with the specified video state. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ANSWER_PHONE_CALLS:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`
@@ -1191,15 +1191,15 @@ open fun addCall(
 ): Unit
 ```
 
-Add a call to the Android system service Telecom. This allows the system to start tracking an incoming or outgoing call with the specified `https://developer.android.com/reference/kotlin/android/telecom/CallAttributes`. Once a call is added, a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle.html#` notification should be posted and when the call is ready to be disconnected, use `https://developer.android.com/reference/kotlin/android/telecom/CallControl#disconnect(android.telecom.DisconnectCause,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is provided by the `pendingControl#onResult(CallControl)`
+Add a call to the Android system service Telecom. This allows the system to start tracking an incoming or outgoing call with the specified CallAttributes. Once a call is added, a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle.html#` notification should be posted and when the call is ready to be disconnected, use disconnect which is provided by the `pendingControl#onResult(CallControl)`
 
 **Call Lifecycle** : Your app is given foreground execution priority as long as you have a valid call and are posting a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle.html#` notification. When your application is given foreground execution priority, your app is treated as a foreground service. Foreground execution priority will prevent the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#` from killing your application when it is placed the background. Foreground execution priority is removed from your app when all of your app's calls terminate or your app no longer posts a valid notification.
 
-**Note** : Only packages that register with `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS:kotlin.Int` can utilize this API. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s that set the capabilities `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_PROVIDER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` are not supported and will cause an exception to be thrown.
+**Note** : Only packages that register with `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS:kotlin.Int` can utilize this API. PhoneAccounts that set the capabilities `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_PROVIDER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` are not supported and will cause an exception to be thrown.
 
 **Foreground Service (FGS) Guidance:**
 
-To maintain Telecom's temporary FGS delegation, VoIP apps must use a stable Notification ID for the duration of the call. When transitioning from an incoming to an ongoing call, update the existing notification in place using `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)` instead of canceling the previous notification.
+To maintain Telecom's temporary FGS delegation, VoIP apps must use a stable Notification ID for the duration of the call. When transitioning from an incoming to an ongoing call, update the existing notification in place using notify instead of canceling the previous notification.
 
 **Usage example:**
 
@@ -1242,7 +1242,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `callAttributes` | [CallAttributes](CallAttributes.md): attributes of the new call (incoming or outgoing, address, etc.). This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): execution context to run `https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback` updates on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): execution context to run CallControlCallback updates on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `pendingControl` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [CallControl](CallControl.md)!, [CallException](CallException.md)!\>: Receives the result of addCall transaction. Upon success, a CallControl object is provided which can be used to do things like disconnect the call that was added. This value cannot be `null`. |
 | --- | --- |
 | `handshakes` | [CallControlCallback](CallControlCallback.md): callback that receives **actionable** updates that originate from Telecom. This value cannot be `null`. |
@@ -1259,24 +1259,24 @@ open fun addNewIncomingCall(
 ): Unit
 ```
 
-Registers a new incoming call. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should invoke this method when it has an incoming call. For managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s, the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` must have been registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and the user must have enabled the corresponding `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. This can be checked using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)`. Self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String` to add a new incoming call.
+Registers a new incoming call. A ConnectionService should invoke this method when it has an incoming call. For managed ConnectionServices, the specified PhoneAccountHandle must have been registered with registerPhoneAccount and the user must have enabled the corresponding PhoneAccount. This can be checked using getPhoneAccount. Self-managed ConnectionServices must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String` to add a new incoming call.
 
-Specify the address associated with the incoming call using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_CALL_ADDRESS:kotlin.String`. If an incoming call is from an anonymous source, omit this extra and ensure you specify a valid number presentation via `https://developer.android.com/reference/kotlin/android/telecom/Connection#setAddress(android.net.Uri,%20kotlin.Int)` on the `https://developer.android.com/reference/kotlin/android/telecom/Connection` instance you return in your `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)` implementation.
+Specify the address associated with the incoming call using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_CALL_ADDRESS:kotlin.String`. If an incoming call is from an anonymous source, omit this extra and ensure you specify a valid number presentation via setAddress on the Connection instance you return in your onCreateIncomingConnection implementation.
 
 The incoming call you are adding is assumed to have a video state of `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int`, unless the extra value `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_VIDEO_STATE:kotlin.String` is specified.
 
-Once invoked, this method will cause the system to bind to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` associated with the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` and request additional information about the call (See `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`) before starting the incoming call UI.
+Once invoked, this method will cause the system to bind to the ConnectionService associated with the PhoneAccountHandle and request additional information about the call (See onCreateIncomingConnection) before starting the incoming call UI.
 
-For a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if either the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` does not correspond to a registered `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` or the associated `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` is not currently enabled by the user.
+For a managed ConnectionService, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if either the PhoneAccountHandle does not correspond to a registered PhoneAccount or the associated PhoneAccount is not currently enabled by the user.
 
-For a self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` has `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` and the calling app does not have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`.
+For a self-managed ConnectionService, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if the PhoneAccount has `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` and the calling app does not have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`.
 
 **Note** : `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle.html#` notifications should be posted after the call is added to Telecom in order for the notification to be non-dismissible.
 
 | Parameters ||
 |---|---|
-| `phoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. |
-| `extras` | [Bundle](../android.os/Bundle.md)!: A bundle that will be passed through to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
+| `phoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: A PhoneAccountHandle registered with registerPhoneAccount. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: A bundle that will be passed through to onCreateIncomingConnection. |
 
 ### addNewIncomingConference
 
@@ -1289,18 +1289,18 @@ open fun addNewIncomingConference(
 ): Unit
 ```
 
-Registers a new incoming conference. A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` should invoke this method when it has an incoming conference. An incoming `https://developer.android.com/reference/kotlin/android/telecom/Conference` is an adhoc conference call initiated on another device which the user is being invited to join in. For managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s, the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` must have been registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)` and the user must have enabled the corresponding `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. This can be checked using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)`. Self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String` to add a new incoming call.
+Registers a new incoming conference. A ConnectionService should invoke this method when it has an incoming conference. An incoming Conference is an adhoc conference call initiated on another device which the user is being invited to join in. For managed ConnectionServices, the specified PhoneAccountHandle must have been registered with registerPhoneAccount and the user must have enabled the corresponding PhoneAccount. This can be checked using getPhoneAccount. Self-managed ConnectionServices must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String` to add a new incoming call.
 
 The incoming conference you are adding is assumed to have a video state of `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int`, unless the extra value `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_INCOMING_VIDEO_STATE:kotlin.String` is specified.
 
-Once invoked, this method will cause the system to bind to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` associated with the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` and request additional information about the call (See `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`) before starting the incoming call UI.
+Once invoked, this method will cause the system to bind to the ConnectionService associated with the PhoneAccountHandle and request additional information about the call (See onCreateIncomingConference) before starting the incoming call UI.
 
-For a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if either the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` does not correspond to a registered `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` or the associated `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` is not currently enabled by the user.
+For a managed ConnectionService, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if either the PhoneAccountHandle does not correspond to a registered PhoneAccount or the associated PhoneAccount is not currently enabled by the user.
 
 | Parameters ||
 |---|---|
-| `phoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. This value cannot be `null`. |
-| `extras` | [Bundle](../android.os/Bundle.md): A bundle that will be passed through to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
+| `phoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): A PhoneAccountHandle registered with registerPhoneAccount. This value cannot be `null`. |
+| `extras` | [Bundle](../android.os/Bundle.md): A bundle that will be passed through to onCreateIncomingConference. This value cannot be `null`. |
 
 ### cancelMissedCallsNotification
 
@@ -1324,9 +1324,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun createManageBlockedNumbersIntent(): Intent!
 ```
 
-Creates the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` to launch the activity to manage blocked numbers.
+Creates the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can be used with startActivity to launch the activity to manage blocked numbers.
 
-The activity will display the UI to manage blocked numbers only if `https://developer.android.com/reference/kotlin/android/provider/BlockedNumberContract.html#canCurrentUserBlockNumbers(android.content.Context)` returns `true` for the current user.
+The activity will display the UI to manage blocked numbers only if canCurrentUserBlockNumbers returns `true` for the current user.
 
 ### endCall
 
@@ -1337,7 +1337,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun endCall(): Boolean
 ```
 
-**Deprecated:** *Companion apps for wearable devices should use the `https://developer.android.com/reference/kotlin/android/telecom/InCallService` API instead. Apps performing call screening should use the `https://developer.android.com/reference/kotlin/android/telecom/CallScreeningService` API instead.*
+**Deprecated:** *Companion apps for wearable devices should use the InCallService API instead. Apps performing call screening should use the CallScreeningService API instead.*
 
 Ends the foreground call on the device.
 
@@ -1360,7 +1360,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getAdnUriForPhoneAccount(accountHandle: PhoneAccountHandle!): Uri!
 ```
 
-Returns a URI (with the content:// scheme) specific to the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for ADN content retrieval. 
+Returns a URI (with the content:// scheme) specific to the specified PhoneAccount for ADN content retrieval. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`
 
 | Parameters ||
@@ -1369,7 +1369,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/Uri.html#!` | The URI (with the content:// scheme) specific to the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for the the content retrieve. |
+| `https://developer.android.com/reference/kotlin/android/net/Uri.html#!` | The URI (with the content:// scheme) specific to the specified PhoneAccount for the the content retrieve. |
 
 ### getCallCapablePhoneAccounts
 
@@ -1379,9 +1379,9 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getCallCapablePhoneAccounts(): MutableList<PhoneAccountHandle!>!
 ```
 
-Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s which can be used to make and receive phone calls. The returned list includes only those accounts which have been explicitly enabled by the user.
+Returns a list of PhoneAccountHandles which can be used to make and receive phone calls. The returned list includes only those accounts which have been explicitly enabled by the user.
 
-For callers only interested in finding all SIMs for voice calls, it is recommended to use `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoList()` instead. 
+For callers only interested in finding all SIMs for voice calls, it is recommended to use getActiveSubscriptionInfoList instead. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Return ||
@@ -1414,16 +1414,16 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getDefaultOutgoingPhoneAccount(uriScheme: String!): PhoneAccountHandle!
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which will be used to place outgoing calls to addresses with the specified `uriScheme`. This `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` will always be a member of the list which is returned from invoking `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getCallCapablePhoneAccounts()`. The specific account returned depends on the following priorities:
+Return the PhoneAccount which will be used to place outgoing calls to addresses with the specified `uriScheme`. This PhoneAccount will always be a member of the list which is returned from invoking getCallCapablePhoneAccounts. The specific account returned depends on the following priorities:
 
-- If the user-selected default `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` supports the specified scheme, it will be returned.
-- If there exists only one `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` that supports the specified scheme, it will be returned.
+- If the user-selected default PhoneAccount supports the specified scheme, it will be returned.
+- If there exists only one PhoneAccount that supports the specified scheme, it will be returned.
 
 <br />
 
-If no `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` fits the criteria above, this method will return `null`.
+If no PhoneAccount fits the criteria above, this method will return `null`.
 
-For callers only interested in finding the default SIM for voice calls, it is recommended to use `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#getDefaultVoiceSubscriptionId()` instead. 
+For callers only interested in finding the default SIM for voice calls, it is recommended to use getDefaultVoiceSubscriptionId instead. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Parameters ||
@@ -1432,7 +1432,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!` | The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` corresponding to the account to be used. |
+| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!` | The PhoneAccountHandle corresponding to the account to be used. |
 
 ### getLine1Number
 
@@ -1443,7 +1443,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open fun getLine1Number(accountHandle: PhoneAccountHandle!): String!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#getPhoneNumber(kotlin.Int)` instead, which takes a Telephony Subscription ID that can be retrieved with the `accountHandle` from `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSubscriptionId(android.telecom.PhoneAccountHandle)`.*
+**Deprecated:** *use getPhoneNumber instead, which takes a Telephony Subscription ID that can be retrieved with the `accountHandle` from getSubscriptionId.*
 
 Return the line 1 phone number for given phone account.
 
@@ -1465,9 +1465,9 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getOwnSelfManagedPhoneAccounts(): MutableList<PhoneAccountHandle!>
 ```
 
-Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s owned by the calling self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`.
+Returns a list of PhoneAccountHandles owned by the calling self-managed ConnectionService.
 
-Self-Managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s have a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` with `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`.
+Self-Managed ConnectionServices have a PhoneAccount with `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`.
 
 Requires permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`
 
@@ -1486,15 +1486,15 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getPhoneAccount(account: PhoneAccountHandle!): PhoneAccount!
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for a specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. Object includes resources which can be used in a user interface. Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_NUMBERS:kotlin.String` for applications targeting API level 31+.
+Return the PhoneAccount for a specified PhoneAccountHandle. Object includes resources which can be used in a user interface. Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_NUMBERS:kotlin.String` for applications targeting API level 31+.
 
 | Parameters ||
 |---|---|
-| `account` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
+| `account` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The PhoneAccountHandle. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount!` | The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` object. |
+| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount!` | The PhoneAccount object. |
 
 ### getRegisteredPhoneAccounts
 
@@ -1504,11 +1504,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getRegisteredPhoneAccounts(): MutableList<PhoneAccount!>
 ```
 
-This API will return all `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s the caller registered via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. If a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` appears to be missing from the list, Telecom has either unregistered the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` (for cleanup purposes) or the caller registered the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` under a different user and does not have the android.Manifest.permission#INTERACT_ACROSS_USERS permission. **Note:** This API will only return `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s registered by the same app. For system Dialers that need all the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s registered by every application, see #getAllPhoneAccounts().
+This API will return all PhoneAccounts the caller registered via registerPhoneAccount. If a PhoneAccount appears to be missing from the list, Telecom has either unregistered the PhoneAccount (for cleanup purposes) or the caller registered the PhoneAccount under a different user and does not have the android.Manifest.permission#INTERACT_ACROSS_USERS permission. **Note:** This API will only return PhoneAccounts registered by the same app. For system Dialers that need all the PhoneAccounts registered by every application, see #getAllPhoneAccounts().
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount!>` | all the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s registered by the caller. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount!>` | all the PhoneAccounts registered by the caller. This value cannot be `null`. |
 
 ### getSelfManagedPhoneAccounts
 
@@ -1518,9 +1518,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getSelfManagedPhoneAccounts(): MutableList<PhoneAccountHandle!>
 ```
 
-Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s for all self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s owned by the calling `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#`.
+Returns a list of PhoneAccountHandles for all self-managed ConnectionServices owned by the calling `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#`.
 
-Self-Managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s have a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` with `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`.
+Self-Managed ConnectionServices have a PhoneAccount with `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`.
 
 Requires permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, or that the caller is the default dialer app.
 
@@ -1539,7 +1539,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun getSimCallManager(): PhoneAccountHandle!
 ```
 
-Returns the current SIM call manager. Apps must be prepared for this method to return `null`, indicating that there currently exists no SIM call manager `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for the default voice subscription.
+Returns the current SIM call manager. Apps must be prepared for this method to return `null`, indicating that there currently exists no SIM call manager PhoneAccount for the default voice subscription.
 
 | Return ||
 |---|---|
@@ -1547,7 +1547,7 @@ Returns the current SIM call manager. Apps must be prepared for this method to r
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#getDefaultVoiceSubscriptionId()`
+- getDefaultVoiceSubscriptionId
 
 ### getSimCallManagerForSubscription
 
@@ -1557,7 +1557,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getSimCallManagerForSubscription(subscriptionId: Int): PhoneAccountHandle?
 ```
 
-Returns current SIM call manager for the Telephony Subscription ID specified. Apps must be prepared for this method to return `null`, indicating that there currently exists no SIM call manager `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for the subscription specified.
+Returns current SIM call manager for the Telephony Subscription ID specified. Apps must be prepared for this method to return `null`, indicating that there currently exists no SIM call manager PhoneAccount for the subscription specified.
 
 | Parameters ||
 |---|---|
@@ -1565,11 +1565,11 @@ Returns current SIM call manager for the Telephony Subscription ID specified. Ap
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?` | The phone account handle of the current sim call manager. |
+| PhoneAccountHandle | The phone account handle of the current sim call manager. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#getActiveSubscriptionInfoList()`
+- getActiveSubscriptionInfoList
 
 ### getSystemDialerPackage
 
@@ -1593,7 +1593,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getUserSelectedOutgoingPhoneAccount(): PhoneAccountHandle?
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which is the user-chosen default for making outgoing phone calls. This `PhoneAccount` will always be a member of the list which is returned from calling `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getCallCapablePhoneAccounts()`
+Return the PhoneAccount which is the user-chosen default for making outgoing phone calls. This `PhoneAccount` will always be a member of the list which is returned from calling getCallCapablePhoneAccounts
 
 Apps must be prepared for this method to return `null`, indicating that there currently exists no user-chosen default `PhoneAccount`.
 
@@ -1602,7 +1602,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?` | The user outgoing phone account selected by the user, or `null` if there is no user selected outgoing `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
+| PhoneAccountHandle | The user outgoing phone account selected by the user, or `null` if there is no user selected outgoing PhoneAccountHandle. |
 
 ### getVoiceMailNumber
 
@@ -1636,7 +1636,7 @@ Processes the specified dial string as an MMI code. MMI codes are any sequence o
 Requires that the method-caller be set as the system dialer app.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -1662,7 +1662,7 @@ Processes the specified dial string as an MMI code. MMI codes are any sequence o
 Requires that the method-caller be set as the system dialer app.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -1681,11 +1681,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun hasManageOngoingCallsPermission(): Boolean
 ```
 
-Returns whether the caller has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_ONGOING_CALLS:kotlin.String` permission. The permission can be obtained by associating with a physical wearable device via the `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#` API as a companion app. If the caller app has the permission, it has `https://developer.android.com/reference/kotlin/android/telecom/InCallService` access to manage ongoing calls.
+Returns whether the caller has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_ONGOING_CALLS:kotlin.String` permission. The permission can be obtained by associating with a physical wearable device via the `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#` API as a companion app. If the caller app has the permission, it has InCallService access to manage ongoing calls.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the caller has `https://developer.android.com/reference/kotlin/android/telecom/InCallService` access for companion app; `false` otherwise. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the caller has InCallService access for companion app; `false` otherwise. |
 
 ### isInCall
 
@@ -1695,12 +1695,12 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun isInCall(): Boolean
 ```
 
-Returns whether there is an ongoing phone call (can be in dialing, ringing, active or holding states) originating from either a manager or self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. 
+Returns whether there is an ongoing phone call (can be in dialing, ringing, active or holding states) originating from either a manager or self-managed ConnectionService. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if there is an ongoing call in either a managed or self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, `false` otherwise. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if there is an ongoing call in either a managed or self-managed ConnectionService, `false` otherwise. |
 
 ### isInExternalCall
 
@@ -1729,14 +1729,14 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun isInManagedCall(): Boolean
 ```
 
-Returns whether there is an ongoing call originating from a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. An ongoing call can be in dialing, ringing, active or holding states.
+Returns whether there is an ongoing call originating from a managed ConnectionService. An ongoing call can be in dialing, ringing, active or holding states.
 
-If you also need to know if there are ongoing self-managed calls, use `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#isInCall()` instead. 
+If you also need to know if there are ongoing self-managed calls, use isInCall instead. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if there is an ongoing call in a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`, `false` otherwise. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if there is an ongoing call in a managed ConnectionService, `false` otherwise. |
 
 ### isIncomingCallPermitted
 
@@ -1746,16 +1746,16 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun isIncomingCallPermitted(phoneAccountHandle: PhoneAccountHandle!): Boolean
 ```
 
-Determines whether Telecom would permit an incoming call to be added via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)` API for the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`.
+Determines whether Telecom would permit an incoming call to be added via the addNewIncomingCall API for the specified PhoneAccountHandle.
 
-A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` may not add a call for the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` in the following situations:
+A ConnectionService may not add a call for the specified PhoneAccountHandle in the following situations:
 
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` does not have property `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` set (i.e. it is a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`), and the active or held call limit has been reached.
+- PhoneAccount does not have property `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` set (i.e. it is a managed ConnectionService), and the active or held call limit has been reached.
 - There is an ongoing emergency call.
 
 | Parameters ||
 |---|---|
-| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the call will be added for. |
+| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The PhoneAccountHandle the call will be added for. |
 
 | Return ||
 |---|---|
@@ -1769,17 +1769,17 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun isOutgoingCallPermitted(phoneAccountHandle: PhoneAccountHandle!): Boolean
 ```
 
-Determines whether Telecom would permit an outgoing call to be placed via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)` API for the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`.
+Determines whether Telecom would permit an outgoing call to be placed via the placeCall API for the specified PhoneAccountHandle.
 
-A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` may not place a call for the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` in the following situations:
+A ConnectionService may not place a call for the specified PhoneAccountHandle in the following situations:
 
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` does not have property `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` set (i.e. it is a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`), and the active, held or ringing call limit has been reached.
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` has property `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` set (i.e. it is a self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` and there is an ongoing call in another `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`.
+- PhoneAccount does not have property `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` set (i.e. it is a managed ConnectionService), and the active, held or ringing call limit has been reached.
+- PhoneAccount has property `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` set (i.e. it is a self-managed ConnectionService and there is an ongoing call in another ConnectionService.
 - There is an ongoing emergency call.
 
 | Parameters ||
 |---|---|
-| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the call will be added for. |
+| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The PhoneAccountHandle the call will be added for. |
 
 | Return ||
 |---|---|
@@ -1826,7 +1826,7 @@ open fun placeCall(
 ): Unit
 ```
 
-Places a new outgoing call to the provided address using the system telecom service with the specified extras. This method is equivalent to placing an outgoing call using `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String`, except that the outgoing call will always be sent via the system telecom service. If method-caller is either the user selected default dialer app or preloaded system dialer app, then emergency calls will also be allowed. Placing a call via a managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CALL_PHONE:kotlin.String` Usage example:
+Places a new outgoing call to the provided address using the system telecom service with the specified extras. This method is equivalent to placing an outgoing call using `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String`, except that the outgoing call will always be sent via the system telecom service. If method-caller is either the user selected default dialer app or preloaded system dialer app, then emergency calls will also be allowed. Placing a call via a managed ConnectionService requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CALL_PHONE:kotlin.String` Usage example:
 
 ```kotlin
 Uri uri = Uri.fromParts("tel", "12345", null);
@@ -1845,9 +1845,9 @@ The following keys are supported in the supplied extras.
 
 <br />
 
-An app which implements the self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` API uses `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)` to inform Telecom of a new outgoing call. A self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` must include `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to specify its associated `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. Self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s require permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`.
+An app which implements the self-managed ConnectionService API uses placeCall to inform Telecom of a new outgoing call. A self-managed ConnectionService must include `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` to specify its associated PhoneAccountHandle. Self-managed ConnectionServices require permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_OWN_CALLS:kotlin.String`.
 
-**Note:** If this method is used to place an emergency call, it is not guaranteed that the call will be placed on the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` provided in the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` extra (if specified) and may be placed on another `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` with the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_PLACE_EMERGENCY_CALLS:kotlin.Int` capability, depending on external factors, such as network conditions and Modem/SIM status.
+**Note:** If this method is used to place an emergency call, it is not guaranteed that the call will be placed on the PhoneAccount provided in the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` extra (if specified) and may be placed on another PhoneAccount with the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_PLACE_EMERGENCY_CALLS:kotlin.Int` capability, depending on external factors, such as network conditions and Modem/SIM status.
 
 **Note** : `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle.html#` notifications should be posted after the call is placed in order for the notification to be non-dismissible.
 
@@ -1869,17 +1869,17 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun registerPhoneAccount(account: PhoneAccount!): Unit
 ```
 
-Register a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for use by the system that will be stored in Device Encrypted storage. When registering `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s, existing registrations will be overwritten if the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` matches that of a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which is already registered. Once registered, the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` is listed to the user as an option when placing calls. The user may still need to enable the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` within the phone app settings before the account is usable.
+Register a PhoneAccount for use by the system that will be stored in Device Encrypted storage. When registering PhoneAccounts, existing registrations will be overwritten if the PhoneAccountHandle matches that of a PhoneAccount which is already registered. Once registered, the PhoneAccount is listed to the user as an option when placing calls. The user may still need to enable the PhoneAccount within the phone app settings before the account is usable.
 
-Note: Each package is limited to 10 `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` registrations.
+Note: Each package is limited to 10 PhoneAccount registrations.
 
-A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if an app tries to register a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` where the package name specified within `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle#getComponentName()` does not match the package name of the app.
+A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if an app tries to register a PhoneAccountHandle where the package name specified within getComponentName does not match the package name of the app.
 
-A `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if an app tries to register a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` when the upper bound limit, 10, has already been reached.
+A `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if an app tries to register a PhoneAccount when the upper bound limit, 10, has already been reached.
 
 | Parameters ||
 |---|---|
-| `account` | [PhoneAccount](PhoneAccount.md)!: The complete `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. |
+| `account` | [PhoneAccount](PhoneAccount.md)!: The complete PhoneAccount. |
 
 | Exceptions ||
 |---|---|
@@ -1918,9 +1918,9 @@ This method can only be relied upon to stop the ringtone for a call if the ringt
 
 If this method is called prior to when the ringtone begins playing, the ringtone will not be silenced. As such it is not intended as a means to avoid playing of a ringtone.
 
-A dialer app which wants to have more control over ringtone playing should declare `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_RINGING:kotlin.String` in the manifest entry for their `https://developer.android.com/reference/kotlin/android/telecom/InCallService` implementation to indicate that the app wants to be responsible for playing the ringtone for all incoming calls.
+A dialer app which wants to have more control over ringtone playing should declare `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_RINGING:kotlin.String` in the manifest entry for their InCallService implementation to indicate that the app wants to be responsible for playing the ringtone for all incoming calls.
 
-Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the app fills the dialer role (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()`). 
+Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the app fills the dialer role (see getDefaultDialerPackage). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`
 
 ### startConference
@@ -1934,7 +1934,7 @@ open fun startConference(
 ): Unit
 ```
 
-Place a new adhoc conference call with the provided participants using the system telecom service. This method doesn't support placing of emergency calls. An adhoc conference call is established by providing a list of addresses to `TelecomManager#startConference(List<Uri>, int videoState)` where the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` is responsible for connecting all indicated participants to a conference simultaneously. This is in contrast to conferences formed by merging calls together (e.g. using `https://developer.android.com/reference/kotlin/android/telecom/Call#mergeConference()`). The following keys are supported in the supplied extras.
+Place a new adhoc conference call with the provided participants using the system telecom service. This method doesn't support placing of emergency calls. An adhoc conference call is established by providing a list of addresses to `TelecomManager#startConference(List<Uri>, int videoState)` where the ConnectionService is responsible for connecting all indicated participants to a conference simultaneously. This is in contrast to conferences formed by merging calls together (e.g. using mergeConference). The following keys are supported in the supplied extras.
 
 - `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_START_CALL_WITH_SPEAKERPHONE:kotlin.String`
@@ -1958,8 +1958,8 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterPhoneAccount(accountHandle: PhoneAccountHandle!): Unit
 ```
 
-Remove a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` registration from the system.
+Remove a PhoneAccount registration from the system.
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` for the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` to unregister. |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: A PhoneAccountHandle for the PhoneAccount to unregister. |

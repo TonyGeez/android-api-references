@@ -17,7 +17,7 @@ Interface for registration failures listener.
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.RegistrationFailedListener#onRegistrationFailed(android.telephony.CellIdentity,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(cellIdentity: https://developer.android.com/reference/kotlin/android/telephony/CellIdentity, chosenPlmn: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, domain: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, causeCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, additionalCauseCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Report that Registration or a Location/Routing/Tracking Area update has failed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onRegistrationFailed Report that Registration or a Location/Routing/Tracking Area update has failed. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ Report that Registration or a Location/Routing/Tracking Area update has failed.
 
 Indicate whenever a registration procedure, including a location, routing, or tracking area update fails. This includes procedures that do not necessarily result in a change of the modem's registration status. If the modem's registration status changes, that is reflected in the onNetworkStateChanged() and subsequent get{Voice/Data}RegistrationState().
 
-Because registration failures are ephemeral, this callback is not sticky. Registrants will not receive the most recent past value when registering. The calling app should have carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) if it does not have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. If the calling app doesn't have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`, it will receive `https://developer.android.com/reference/kotlin/android/telephony/CellIdentity` without location-sensitive information included. 
+Because registration failures are ephemeral, this callback is not sticky. Registrants will not receive the most recent past value when registering. The calling app should have carrier privileges (see hasCarrierPrivileges) if it does not have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. If the calling app doesn't have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`, it will receive CellIdentity without location-sensitive information included. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`
 
 | Parameters ||

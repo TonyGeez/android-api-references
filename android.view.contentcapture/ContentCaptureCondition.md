@@ -15,33 +15,33 @@ class ContentCaptureCondition : Parcelable
 
 Defines a condition for when content capture should be allowed.
 
-See `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#getContentCaptureConditions()` for more.
+See getContentCaptureConditions for more.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` When set, package should use the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#getId()` as a regular expression (using the `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#` format). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` When set, package should use the getId as a regular expression (using the `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#` format). |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#ContentCaptureCondition(android.content.LocusId,%20kotlin.Int)(locusId: https://developer.android.com/reference/kotlin/android/content/LocusId.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Default constructor. |
+| ContentCaptureCondition Default constructor. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#getFlags()()` Gets the flags associates with this condition. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFlags Gets the flags associates with this condition. |
 | --- | --- |
-| [LocusId](../android.content/LocusId.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#getLocusId()()` Gets the `LocusId` per se. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#toString()()` Returns a string representation of the object. |
+| [LocusId](../android.content/LocusId.md) | getLocusId Gets the `LocusId` per se. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -57,7 +57,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_IS_REGEX: Int
 ```
 
-When set, package should use the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#getId()` as a regular expression (using the `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#` format).
+When set, package should use the getId as a regular expression (using the `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#` format).
 
  Value: 2
 
@@ -77,8 +77,8 @@ Default constructor.
 
 | Parameters ||
 |---|---|
-| `locusId` | [LocusId](../android.content/LocusId.md): id of the condition, as defined by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext#getLocusId()`. This value cannot be `null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): either `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` (to use a regular expression match) or `0` (in which case the `LocusId` must be an exact match of the `LocusId` used in the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext`). Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` |
+| `locusId` | [LocusId](../android.content/LocusId.md): id of the condition, as defined by getLocusId. This value cannot be `null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): either `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` (to use a regular expression match) or `0` (in which case the `LocusId` must be an exact match of the `LocusId` used in the ContentCaptureContext). Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureCondition#FLAG_IS_REGEX:kotlin.Int` |
 
 ## Public methods
 
@@ -90,7 +90,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -165,8 +165,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

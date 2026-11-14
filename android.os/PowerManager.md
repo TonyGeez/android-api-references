@@ -25,12 +25,12 @@ This class lets you query and request control of aspects of the device's power s
 | Constants ||
 |---|---|
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACQUIRE_CAUSES_WAKEUP:kotlin.Int` Wake lock flag: Turn the screen on when the wake lock is acquired. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_DEVICE_IDLE_MODE_CHANGED:kotlin.String` Intent that is broadcast when the state of `https://developer.android.com/reference/kotlin/android/os/PowerManager#isDeviceIdleMode()` changes. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_DEVICE_LIGHT_IDLE_MODE_CHANGED:kotlin.String` Intent that is broadcast when the state of `https://developer.android.com/reference/kotlin/android/os/PowerManager#isDeviceLightIdleMode()` changes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_DEVICE_IDLE_MODE_CHANGED:kotlin.String` Intent that is broadcast when the state of isDeviceIdleMode changes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_DEVICE_LIGHT_IDLE_MODE_CHANGED:kotlin.String` Intent that is broadcast when the state of isDeviceLightIdleMode changes. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_LOW_POWER_STANDBY_ENABLED_CHANGED:kotlin.String` Intent that is broadcast when Low Power Standby is enabled or disabled. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_LOW_POWER_STANDBY_POLICY_CHANGED:kotlin.String` Intent that is broadcast when Low Power Standby policy is changed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_POWER_SAVE_MODE_CHANGED:kotlin.String` Intent that is broadcast when the state of `https://developer.android.com/reference/kotlin/android/os/PowerManager#isPowerSaveMode()` changes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_POWER_SAVE_MODE_CHANGED:kotlin.String` Intent that is broadcast when the state of isPowerSaveMode changes. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBY:kotlin.String` Signals that wake-on-lan/wake-on-wlan is allowed in Low Power Standby. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#FULL_WAKE_LOCK:kotlin.Int` Wake lock level: Ensures that the screen and keyboard backlight are on at full brightness. |
@@ -65,41 +65,41 @@ This class lets you query and request control of aspects of the device's power s
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalHeadroomListener(android.os.PowerManager.OnThermalHeadroomChangedListener)(listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalHeadroomChangedListener)` This function adds a listener for thermal headroom change, listener callback will be enqueued tasks on the main thread |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalHeadroomListener(java.util.concurrent.Executor,%20android.os.PowerManager.OnThermalHeadroomChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalHeadroomChangedListener)` This function adds a listener for thermal headroom change. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)(listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener)` This function adds a listener for thermal status change, listener callback will be enqueued tasks on the main thread |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addThermalHeadroomListener This function adds a listener for thermal headroom change, listener callback will be enqueued tasks on the main thread |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addThermalHeadroomListener This function adds a listener for thermal headroom change. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addThermalStatusListener This function adds a listener for thermal status change, listener callback will be enqueued tasks on the main thread |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalStatusListener(java.util.concurrent.Executor,%20android.os.PowerManager.OnThermalStatusChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener)` This function adds a listener for thermal status change. |
-| [Duration](../java.time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getBatteryDischargePrediction()()` Returns the current battery life remaining estimate. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getCurrentThermalStatus()()` This function returns the current thermal status of the device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addThermalStatusListener This function adds a listener for thermal status change. |
+| [Duration](../java.time/Duration.md)? | getBatteryDischargePrediction Returns the current battery life remaining estimate. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCurrentThermalStatus This function returns the current thermal status of the device. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getLocationPowerSaveMode()()` Returns how location features should behave when battery saver is on. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getThermalHeadroom(kotlin.Int)(forecastSeconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provides an estimate of how much thermal headroom the device currently has before hitting severe throttling. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getThermalHeadroomThresholds()()` Gets the thermal headroom thresholds for all available thermal throttling status above `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_NONE:kotlin.Int`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLocationPowerSaveMode Returns how location features should behave when battery saver is on. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getThermalHeadroom Provides an estimate of how much thermal headroom the device currently has before hitting severe throttling. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\> | getThermalHeadroomThresholds Gets the thermal headroom thresholds for all available thermal throttling status above `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_NONE:kotlin.Int`. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if Low Power Standby is disabled (so Low Power Standby does not restrict apps), or apps may be automatically exempt from Low Power Standby restrictions for the given reason. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.String)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true if Low Power Standby is disabled (so Low Power Standby does not restrict apps), or apps are allowed to use a given feature during Low Power Standby. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isBatteryDischargePredictionPersonalized()()` Returns whether the current battery life remaining estimate is personalized based on device usage history or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAllowedInLowPowerStandby Returns true if Low Power Standby is disabled (so Low Power Standby does not restrict apps), or apps may be automatically exempt from Low Power Standby restrictions for the given reason. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAllowedInLowPowerStandby Returns true if Low Power Standby is disabled (so Low Power Standby does not restrict apps), or apps are allowed to use a given feature during Low Power Standby. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBatteryDischargePredictionPersonalized Returns whether the current battery life remaining estimate is personalized based on device usage history or not. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isDeviceIdleMode()()` Returns true if the device is currently in idle mode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isDeviceLightIdleMode()()` Returns true if the device is currently in light idle mode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isExemptFromLowPowerStandby()()` Returns true if the calling package is exempt from Low Power Standby restrictions or Low Power Standby is disabled (so Low Power Standby does not restrict apps), false otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceIdleMode Returns true if the device is currently in idle mode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceLightIdleMode Returns true if the device is currently in light idle mode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isExemptFromLowPowerStandby Returns true if the calling package is exempt from Low Power Standby restrictions or Low Power Standby is disabled (so Low Power Standby does not restrict apps), false otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isIgnoringBatteryOptimizations(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return whether the given application package name is on the device's power allowlist. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isInteractive()()` Returns true if the device is in an interactive state. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isLowPowerStandbyEnabled()()` Returns true if Low Power Standby is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isIgnoringBatteryOptimizations Return whether the given application package name is on the device's power allowlist. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInteractive Returns true if the device is in an interactive state. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLowPowerStandbyEnabled Returns true if Low Power Standby is enabled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isPowerSaveMode()()` Returns true if the device is currently in power save mode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isRebootingUserspaceSupported()()` Returns `true` if this device supports rebooting userspace. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isScreenOn()()` Returns true if the device is in an interactive state. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPowerSaveMode Returns true if the device is currently in power save mode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRebootingUserspaceSupported Returns `true` if this device supports rebooting userspace. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isScreenOn Returns true if the device is in an interactive state. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isSustainedPerformanceModeSupported()()` This function checks if the device has implemented Sustained Performance Mode. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#isWakeLockLevelSupported(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the specified wake lock level is supported. |
-| [PowerManager.WakeLock](../android/os/PowerManager.WakeLock.md)! | `https://developer.android.com/reference/kotlin/android/os/PowerManager#newWakeLock(kotlin.Int,%20kotlin.String)(levelAndFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new wake lock with the specified level and flags. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSustainedPerformanceModeSupported This function checks if the device has implemented Sustained Performance Mode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWakeLockLevelSupported Returns true if the specified wake lock level is supported. |
+| [PowerManager.WakeLock](../android/os/PowerManager.WakeLock.md)! | newWakeLock Creates a new wake lock with the specified level and flags. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#reboot(kotlin.String)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Reboot the device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#removeThermalHeadroomListener(android.os.PowerManager.OnThermalHeadroomChangedListener)(listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalHeadroomChangedListener)` This function removes a listener for Thermal headroom change |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#removeThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)(listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener)` This function removes a listener for thermal status change |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reboot Reboot the device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeThermalHeadroomListener This function removes a listener for Thermal headroom change |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeThermalStatusListener This function removes a listener for thermal status change |
 | --- | --- |
 
 ## Constants
@@ -113,7 +113,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val ACQUIRE_CAUSES_WAKEUP: Int
 ```
 
-**Deprecated:** *Most applications should use `https://developer.android.com/reference/kotlin/android/R.attr.html#turnScreenOn:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/Activity.html#setTurnScreenOn(kotlin.Boolean)` instead, as this prevents the previous foreground app from being resumed first when the screen turns on.*
+**Deprecated:** *Most applications should use `https://developer.android.com/reference/kotlin/android/R.attr.html#turnScreenOn:kotlin.Int` or setTurnScreenOn instead, as this prevents the previous foreground app from being resumed first when the screen turns on.*
 
 Wake lock flag: Turn the screen on when the wake lock is acquired.
 
@@ -135,7 +135,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_DEVICE_IDLE_MODE_CHANGED: String
 ```
 
-Intent that is broadcast when the state of `https://developer.android.com/reference/kotlin/android/os/PowerManager#isDeviceIdleMode()` changes. This broadcast is only sent to registered receivers.
+Intent that is broadcast when the state of isDeviceIdleMode changes. This broadcast is only sent to registered receivers.
 
  Value: "android.os.action.DEVICE_IDLE_MODE_CHANGED"
 
@@ -147,7 +147,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_DEVICE_LIGHT_IDLE_MODE_CHANGED: String
 ```
 
-Intent that is broadcast when the state of `https://developer.android.com/reference/kotlin/android/os/PowerManager#isDeviceLightIdleMode()` changes. This broadcast is only sent to registered receivers.
+Intent that is broadcast when the state of isDeviceLightIdleMode changes. This broadcast is only sent to registered receivers.
 
  Value: "android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED"
 
@@ -165,7 +165,7 @@ Intent that is broadcast when Low Power Standby is enabled or disabled. This bro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isLowPowerStandbyEnabled()`
+- isLowPowerStandbyEnabled
 
 ### ACTION_LOW_POWER_STANDBY_POLICY_CHANGED
 
@@ -181,9 +181,9 @@ Intent that is broadcast when Low Power Standby policy is changed. This broadcas
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isExemptFromLowPowerStandby()`
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.String)`
+- isExemptFromLowPowerStandby
+- isAllowedInLowPowerStandby
+- isAllowedInLowPowerStandby
 
 ### ACTION_POWER_SAVE_MODE_CHANGED
 
@@ -193,7 +193,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_POWER_SAVE_MODE_CHANGED: String
 ```
 
-Intent that is broadcast when the state of `https://developer.android.com/reference/kotlin/android/os/PowerManager#isPowerSaveMode()` changes. This broadcast is only sent to registered receivers.
+Intent that is broadcast when the state of isPowerSaveMode changes. This broadcast is only sent to registered receivers.
 
  Value: "android.os.action.POWER_SAVE_MODE_CHANGED"
 
@@ -207,13 +207,13 @@ static val FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBY: String
 
 Signals that wake-on-lan/wake-on-wlan is allowed in Low Power Standby.
 
-If Low Power Standby is enabled (`https://developer.android.com/reference/kotlin/android/os/PowerManager#isLowPowerStandbyEnabled()`), wake-on-lan/wake-on-wlan may not be available while in standby. Use `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.String)` to determine whether the device allows this feature to be used during Low Power Standby with the currently active Low Power Standby policy.
+If Low Power Standby is enabled (isLowPowerStandbyEnabled), wake-on-lan/wake-on-wlan may not be available while in standby. Use isAllowedInLowPowerStandby to determine whether the device allows this feature to be used during Low Power Standby with the currently active Low Power Standby policy.
 
  Value: "com.android.lowpowerstandby.WAKE_ON_LAN"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.String)`
+- isAllowedInLowPowerStandby
 
 ### FULL_WAKE_LOCK
 
@@ -308,7 +308,7 @@ This includes apps with foreground services of type "phoneCall".
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.Int)`
+- isAllowedInLowPowerStandby
 
 ### LOW_POWER_STANDBY_ALLOWED_REASON_TEMP_POWER_SAVE_ALLOWLIST
 
@@ -324,7 +324,7 @@ Exempts apps on the temporary powersave allowlist.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.Int)`
+- isAllowedInLowPowerStandby
 
 ### LOW_POWER_STANDBY_ALLOWED_REASON_VOICE_INTERACTION
 
@@ -340,7 +340,7 @@ Exempts active Voice Interaction Sessions in Low Power Standby.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isAllowedInLowPowerStandby(kotlin.Int)`
+- isAllowedInLowPowerStandby
 
 ### ON_AFTER_RELEASE
 
@@ -386,7 +386,7 @@ If the proximity sensor detects that an object is nearby, the screen turns off i
 
 A proximity wake lock does not prevent the device from falling asleep unlike `https://developer.android.com/reference/kotlin/android/os/PowerManager#FULL_WAKE_LOCK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/os/PowerManager#SCREEN_BRIGHT_WAKE_LOCK:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/os/PowerManager#SCREEN_DIM_WAKE_LOCK:kotlin.Int`. If there is no user activity and no other wake locks are held, then the device will fall asleep (and lock) as usual. However, the device will not fall asleep while the screen has been turned off by the proximity sensor because it effectively counts as ongoing user activity.
 
-Since not all devices have proximity sensors, use `https://developer.android.com/reference/kotlin/android/os/PowerManager#isWakeLockLevelSupported(kotlin.Int)` to determine whether this wake lock level is supported.
+Since not all devices have proximity sensors, use isWakeLockLevelSupported to determine whether this wake lock level is supported.
 
 Cannot be used with `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACQUIRE_CAUSES_WAKEUP:kotlin.Int`.
 
@@ -553,7 +553,7 @@ This function adds a listener for thermal headroom change.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [PowerManager.OnThermalHeadroomChangedListener](../android/os/PowerManager.OnThermalHeadroomChangedListener.md): listener to be added. This value cannot be `null`. |
 
 ### addThermalStatusListener
@@ -585,7 +585,7 @@ This function adds a listener for thermal status change.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [PowerManager.OnThermalStatusChangedListener](../android/os/PowerManager.OnThermalStatusChangedListener.md): listener to be added. This value cannot be `null`. |
 
 ### getBatteryDischargePrediction
@@ -634,7 +634,7 @@ This API is normally only useful for components that provide location features.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager#isPowerSaveMode()`
+- isPowerSaveMode
 - `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACTION_POWER_SAVE_MODE_CHANGED:kotlin.String`
 
 ### getThermalHeadroom
@@ -671,13 +671,13 @@ fun getThermalHeadroomThresholds(): MutableMap<Int!, Float!>
 
 Gets the thermal headroom thresholds for all available thermal throttling status above `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_NONE:kotlin.Int`.
 
-A thermal status key in the returned map is only set if the device manufacturer has the corresponding threshold defined for at least one of its sensors. If it's set, one should expect to see that from `https://developer.android.com/reference/kotlin/android/os/PowerManager#getCurrentThermalStatus()` or `https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener#onThermalStatusChanged(kotlin.Int)`.
+A thermal status key in the returned map is only set if the device manufacturer has the corresponding threshold defined for at least one of its sensors. If it's set, one should expect to see that from getCurrentThermalStatus or onThermalStatusChanged.
 
 The headroom threshold is used to interpret the possible thermal throttling status based on the headroom prediction. For example, if the headroom threshold for `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_LIGHT:kotlin.Int` is 0.7, and a headroom prediction in 10s returns 0.75 (or `getThermalHeadroom(10)=0.75`), one can expect that in 10 seconds the system could be in lightly throttled state if the workload remains the same. The app can consider taking actions according to the nearest throttling status the difference between the headroom and the threshold.
 
 For new devices it's guaranteed to have a single sensor, but for older devices with multiple sensors reporting different threshold values, the minimum threshold is taken to be conservative on predictions. Thus, when reading real-time headroom, it's not guaranteed that a real-time value of 0.75 (or `getThermalHeadroom(0)`=0.75) exceeding the threshold of 0.7 above will always come with lightly throttled state (or `getCurrentThermalStatus()=THERMAL_STATUS_LIGHT`) but it can be lower (or `getCurrentThermalStatus()=THERMAL_STATUS_NONE`). While it's always guaranteed that the device won't be throttled heavier than the unmet threshold's state, so a real-time headroom of 0.75 will never come with `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_MODERATE:kotlin.Int` but lower, and 0.65 will never come with `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_LIGHT:kotlin.Int` but `https://developer.android.com/reference/kotlin/android/os/PowerManager#THERMAL_STATUS_NONE:kotlin.Int`.
 
-Starting at `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#BAKLAVA:kotlin.Int` the returned map of thresholds can change between calls to this function, one could use the new `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalHeadroomListener(java.util.concurrent.Executor,%20android.os.PowerManager.OnThermalHeadroomChangedListener)` API to register a listener and get callback for changes to thresholds.
+Starting at `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#BAKLAVA:kotlin.Int` the returned map of thresholds can change between calls to this function, one could use the new addThermalHeadroomListener API to register a listener and get callback for changes to thresholds.
 
 <br />
 
@@ -859,13 +859,13 @@ Deprecated in [API level 20](https://developer.android.com/guide/topics/manifest
 fun isScreenOn(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/PowerManager#isInteractive()` instead.*
+**Deprecated:** *Use isInteractive instead.*
 
 Returns true if the device is in an interactive state.
 
-For historical reasons, the name of this method refers to the power state of the screen but it actually describes the overall interactive state of the device. This method has been replaced by `https://developer.android.com/reference/kotlin/android/os/PowerManager#isInteractive()`.
+For historical reasons, the name of this method refers to the power state of the screen but it actually describes the overall interactive state of the device. This method has been replaced by isInteractive.
 
-The value returned by this method only indicates whether the device is in an interactive state which may have nothing to do with the screen being on or off. To determine the actual state of the screen, use `https://developer.android.com/reference/kotlin/android/view/Display.html#getState()`.
+The value returned by this method only indicates whether the device is in an interactive state which may have nothing to do with the screen being on or off. To determine the actual state of the screen, use getState.
 
 | Return ||
 |---|---|
@@ -879,7 +879,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun isSustainedPerformanceModeSupported(): Boolean
 ```
 
-This function checks if the device has implemented Sustained Performance Mode. This needs to be checked only once and is constant for a particular device/release. Sustained Performance Mode is intended to provide a consistent level of performance for prolonged amount of time. Applications should check if the device supports this mode, before using `https://developer.android.com/reference/kotlin/android/view/Window.html#setSustainedPerformanceMode(kotlin.Boolean)`.
+This function checks if the device has implemented Sustained Performance Mode. This needs to be checked only once and is constant for a particular device/release. Sustained Performance Mode is intended to provide a consistent level of performance for prolonged amount of time. Applications should check if the device supports this mode, before using setSustainedPerformanceMode.
 
 | Return ||
 |---|---|
@@ -887,7 +887,7 @@ This function checks if the device has implemented Sustained Performance Mode. T
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/Window.html#setSustainedPerformanceMode(kotlin.Boolean)`
+- setSustainedPerformanceMode
 
 ### isWakeLockLevelSupported
 
@@ -926,7 +926,7 @@ The wake lock levels are: `https://developer.android.com/reference/kotlin/androi
 
 The wake lock flags are: `https://developer.android.com/reference/kotlin/android/os/PowerManager#ACQUIRE_CAUSES_WAKEUP:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/os/PowerManager#ON_AFTER_RELEASE:kotlin.Int`. Multiple flags can be combined as part of the `levelAndFlags` parameters.
 
-Call `https://developer.android.com/reference/kotlin/android/os/PowerManager.WakeLock#acquire()` on the object to acquire the wake lock, and android.os.PowerManager.WakeLock#release when you are done.
+Call acquire on the object to acquire the wake lock, and android.os.PowerManager.WakeLock#release when you are done.
 
 {@samplecode \* PowerManager pm = mContext.getSystemService(PowerManager.class); \* PowerManager.WakeLock wl = pm.newWakeLock( \* PowerManager.SCREEN_DIM_WAKE_LOCK \* | PowerManager.ON_AFTER_RELEASE, \* TAG); \* wl.acquire(); \* // ... do work... \* wl.release(); \* }
 | --- | --- |
@@ -954,8 +954,8 @@ Recommended naming conventions for tags to make debugging easier:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager.WakeLock#acquire()`
-- `https://developer.android.com/reference/kotlin/android/os/PowerManager.WakeLock#release()`
+- acquire
+- release
 - `https://developer.android.com/reference/kotlin/android/os/PowerManager#PARTIAL_WAKE_LOCK:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/os/PowerManager#FULL_WAKE_LOCK:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/os/PowerManager#SCREEN_DIM_WAKE_LOCK:kotlin.Int`

@@ -17,27 +17,27 @@ class SellerConfiguration : Parcelable
 >
 > The Rubidium (Rb) Relevance APIs, including those in android.adservices.adselection, are being deprecated. Relevance APIs have no direct replacement. Developers should stop using them, as calls will be rejected in future Android releases. Please refer to official Privacy Sandbox documentation for deprecation and roadmap details: https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
 
-This object will be part of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest` and will be constructed and used by the SDK to influence the size of the response of `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+This object will be part of the GetAdSelectionDataRequest and will be constructed and used by the SDK to influence the size of the response of getAdSelectionData
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration.Builder` Builder for SellerConfiguration objects. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()()` Returns the maximum size of the payload in bytes that the service will return. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaximumPayloadSizeBytes Returns the maximum size of the payload in bytes that the service will return. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PerBuyerConfiguration](PerBuyerConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getPerBuyerConfigurations()()` Returns a set of per buyer configurations that the service will do a best effort to respect when constructing the response without exceeding `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#hashCode()()` Returns a hash code value for the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PerBuyerConfiguration](PerBuyerConfiguration.md)!\> | getPerBuyerConfigurations Returns a set of per buyer configurations that the service will do a best effort to respect when constructing the response without exceeding getMaximumPayloadSizeBytes. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -57,7 +57,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -124,9 +124,9 @@ fun getPerBuyerConfigurations(): MutableSet<PerBuyerConfiguration!>
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns a set of per buyer configurations that the service will do a best effort to respect when constructing the response without exceeding `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()`.
+Returns a set of per buyer configurations that the service will do a best effort to respect when constructing the response without exceeding getMaximumPayloadSizeBytes.
 
-If this is empty, the service will fill up the response with buyer data until `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()` is reached. Otherwise, only data from buyers from the per buyer configuration will be included. If the sum of `https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerConfiguration#getTargetInputSizeBytes()` sizes is larger than `https://developer.android.com/reference/kotlin/android/adservices/adselection/SellerConfiguration#getMaximumPayloadSizeBytes()`, the service will do a best effort attempt to proportionally include the buyer data based on the ratio between that specific buyer's target and the sum of `https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerConfiguration#getTargetInputSizeBytes()`.
+If this is empty, the service will fill up the response with buyer data until getMaximumPayloadSizeBytes is reached. Otherwise, only data from buyers from the per buyer configuration will be included. If the sum of getTargetInputSizeBytes sizes is larger than getMaximumPayloadSizeBytes, the service will do a best effort attempt to proportionally include the buyer data based on the ratio between that specific buyer's target and the sum of getTargetInputSizeBytes.
 
 | Return ||
 |---|---|
@@ -148,8 +148,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

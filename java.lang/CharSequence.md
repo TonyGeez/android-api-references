@@ -10,22 +10,22 @@ interface CharSequence
 
 A `CharSequence` is a readable sequence of `char` values. This interface provides uniform, read-only access to many different kinds of `char` sequences. A `char` value represents a character in the *Basic Multilingual Plane (BMP)* or a surrogate. Refer to [Unicode Character Representation](Character.md) for details.
 
-This interface does not refine the general contracts of the `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)` and `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()` methods. The result of testing two objects that implement `CharSequence` for equality is therefore, in general, undefined. Each object may be implemented by a different class, and there is no guarantee that each class will be capable of testing its instances for equality with those of the other. It is therefore inappropriate to use arbitrary `CharSequence` instances as elements in a set or as keys in a map.
+This interface does not refine the general contracts of the equals and hashCode methods. The result of testing two objects that implement `CharSequence` for equality is therefore, in general, undefined. Each object may be implemented by a different class, and there is no guarantee that each class will be capable of testing its instances for equality with those of the other. It is therefore inappropriate to use arbitrary `CharSequence` instances as elements in a set or as keys in a map.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#charAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `char` value at the specified index. |
-| open [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
-| open [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#codePoints()()` Returns a stream of code point values from this sequence. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | charAt Returns the `char` value at the specified index. |
+| open [IntStream](../java.util.stream/IntStream.md) | chars Returns a stream of `int` zero-extending the `char` values from this sequence. |
+| open [IntStream](../java.util.stream/IntStream.md) | codePoints Returns a stream of code point values from this sequence. |
 | --- | --- |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#compare(kotlin.CharSequence,%20kotlin.CharSequence)(cs1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, cs2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Compares two `CharSequence` instances lexicographically. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies characters from this sequence into the given destination array. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#isEmpty()()` Returns `true` if this character sequence is empty. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare Compares two `CharSequence` instances lexicographically. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChars Copies characters from this sequence into the given destination array. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEmpty Returns `true` if this character sequence is empty. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#length()()` Returns the length of this character sequence. |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#subSequence(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `CharSequence` that is a subsequence of this sequence. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | length Returns the length of this character sequence. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | subSequence Returns a `CharSequence` that is a subsequence of this sequence. |
 
 ## Public methods
 
@@ -156,7 +156,7 @@ Returns `true` if this character sequence is empty.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if `https://developer.android.com/reference/kotlin/java/lang/CharSequence#length()` is `0`, otherwise `false` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if length is `0`, otherwise `false` |
 
 ### length
 

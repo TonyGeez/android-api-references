@@ -17,7 +17,7 @@ open class ParserFactory
 
 Java-specific class for dynamically loading SAX parsers. *This module, both source code and documentation, is in the Public Domain, and comes with **NO WARRANTY**.* See <http://www.saxproject.org> for further information.
 
-**Note:** This class is designed to work with the now-deprecated SAX1 `https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#` class. SAX2 applications should use `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderFactory` instead.
+**Note:** This class is designed to work with the now-deprecated SAX1 `https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#` class. SAX2 applications should use XMLReaderFactory instead.
 
 ParserFactory is not part of the platform-independent definition of SAX; it is an additional convenience class designed specifically for Java XML application writers. SAX applications can use the static methods in this class to allocate a SAX parser dynamically at run-time based either on the value of the \`org.xml.sax.parser' system property or on a string containing the class name.
 
@@ -27,8 +27,8 @@ Note that the application still requires an XML parser that implements SAX1.
 
 | Public methods ||
 |---|---|
-| open static [Parser](../org.xml.sax/Parser.md)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser()()` Create a new SAX parser using the \`org. |
-| open static [Parser](../org.xml.sax/Parser.md)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser(kotlin.String)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new SAX parser object using the class name provided. |
+| open static [Parser](../org.xml.sax/Parser.md)! | makeParser Create a new SAX parser using the \`org. |
+| open static [Parser](../org.xml.sax/Parser.md)! | makeParser Create a new SAX parser object using the class name provided. |
 
 ## Public methods
 
@@ -61,7 +61,7 @@ The named class must exist and must implement the `https://developer.android.com
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser(kotlin.String)`
+- makeParser
 - `https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#`
 
 ### makeParser
@@ -96,5 +96,5 @@ The named class must exist and must implement the `https://developer.android.com
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserFactory#makeParser()`
+- makeParser
 - `https://developer.android.com/reference/kotlin/org/xml/sax/Parser.html#`

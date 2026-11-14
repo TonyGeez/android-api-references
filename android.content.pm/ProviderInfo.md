@@ -13,7 +13,7 @@ class ProviderInfo : ComponentInfo, Parcelable
 | | | ↳ | [android.content.pm.ProviderInfo](ProviderInfo.md) |
 | --- | --- | --- | --- |
 
-Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`. This is returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)`.
+Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`. This is returned by resolveContentProvider.
 
 ## Summary
 
@@ -23,100 +23,100 @@ Holds information about a specific `https://developer.android.com/reference/kotl
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#ProviderInfo()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#ProviderInfo(android.content.pm.ProviderInfo)(orig: https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#!)` <br /> |
+| ProviderInfo <br /> |
+| ProviderInfo <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#toString()()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel <br /> |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#dumpFront(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+Inherited functions From class ComponentInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpBack
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getBannerResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpFront
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getBannerResource
 
 Return the banner resource identifier to use for this component. If the component defines a banner, that is used; else, the application banner is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getIconResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getIconResource
 
 Return the icon resource identifier to use for this component. If the component defines an icon, that is used; else, the application icon is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getLogoResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getLogoResource
 
 Return the logo resource identifier to use for this component. If the component defines a logo, that is used; else, the application logo is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#isEnabled()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isEnabled
 
 Return whether this component and its enclosing application are enabled.
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+From class PackageItemInfo `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadBanner
 
 Retrieve the current graphical banner associated with this item. This will call back on the given PackageManager to load the banner from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadIcon
 
 Retrieve the current graphical icon associated with this item. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` loadLabel
 
 Retrieve the current textual label associated with this item. This will call back on the given PackageManager to load the label from the application.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadLogo
 
 Retrieve the current graphical logo associated with this item. This will call back on the given PackageManager to load the logo from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadUnbadgedIcon
 
 Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` loadXmlMetaData
 
 Load an XML resource attached to the meta-data of this item. This will retrieved the name meta-data entry, and if defined call back on the given PackageManager to load its XML file from the application.
 
@@ -141,7 +141,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo#writePermission:kotlin.String` Optional permission required for read/write access this content provider. |
 | --- | --- |
 
-Inherited properties From class `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo` `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo`
+Inherited properties From class ComponentInfo `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo`
 
 Global information about the application/package this component is a part of.
 
@@ -151,7 +151,7 @@ Global information about the application/package this component is a part of.
 
 Set of attribution tags that should be automatically applied to this component.
 
-When this component represents an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` or `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, each instance will be automatically configured with `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` using the first attribution tag contained here.
+When this component represents an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` or `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, each instance will be automatically configured with createAttributionContext using the first attribution tag contained here.
 
 Additionally, when this component represents a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` and the sender of a broadcast requires the receiver to hold one or more specific permissions, those permission checks will be performed using each of the attributions tags contained here.
 
@@ -171,7 +171,7 @@ Indicates if this component is aware of direct boot lifecycle, and can be safely
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#enabled:kotlin.Boolean`
 
-Indicates whether or not this component may be instantiated. Note that this value can be overridden by the one in its parent `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo`.
+Indicates whether or not this component may be instantiated. Note that this value can be overridden by the one in its parent ApplicationInfo.
 
 <br />
 
@@ -193,7 +193,7 @@ The name of the split in which this component is declared. Null if the component
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
+From class PackageItemInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
 
 A drawable resource identifier (in the package's resources) of this component's banner. From the "banner" attribute or, if not set, 0.
 
@@ -209,7 +209,7 @@ A drawable resource identifier (in the package's resources) of this component's 
 
 Whether the package is currently in an archived state.
 
-Packages can be archived through `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestArchive(kotlin.String,%20android.content.IntentSender)` and do not have any APKs stored on the device, but do keep the data directory.
+Packages can be archived through requestArchive and do not have any APKs stored on the device, but do keep the data directory.
 
 <br />
 
@@ -239,7 +239,7 @@ Public name of this item. From the "android:name" attribute.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#nonLocalizedLabel:kotlin.CharSequence`
 
-The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)`
+The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want getApplicationLabel
 
 <br />
 
@@ -291,7 +291,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

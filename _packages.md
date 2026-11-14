@@ -22,7 +22,7 @@ See all [API classes](./classes.md).
 | [android.adservices.signals](android.adservices.signals/_package.md) | |
 | --- | --- |
 | [android.adservices.topics](android.adservices.topics/_package.md) | |
-| [android.animation](android.animation/_package.md) | These classes provide functionality for the property animation system, which allows you to animate object properties of any type. `int`, `float`, and hexadecimal color values are supported by default. You can animate any other type by telling the system how to calculate the values for that given type with a custom `https://developer.android.com/reference/android/animation/TypeEvaluator`. For more information, see the [Animation](https://developer.android.com/guide/topics/graphics/prop-animation) guide. |
+| [android.animation](android.animation/_package.md) | These classes provide functionality for the property animation system, which allows you to animate object properties of any type. `int`, `float`, and hexadecimal color values are supported by default. You can animate any other type by telling the system how to calculate the values for that given type with a custom TypeEvaluator. For more information, see the [Animation](https://developer.android.com/guide/topics/graphics/prop-animation) guide. |
 | [android.annotation](android.annotation/_package.md) | |
 | --- | --- |
 | [android.app](android.app/_package.md) | Contains high-level classes encapsulating the overall Android application model. |

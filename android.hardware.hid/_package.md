@@ -4,7 +4,7 @@
 
 | [HidDeviceListener](HidDeviceListener.md) | Interface for receiving HID device connectivity updates. |
 | --- | --- |
-| [HidEventListener](HidEventListener.md) | Listener for receiving events from a `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice`. |
+| [HidEventListener](HidEventListener.md) | Listener for receiving events from a HidDevice. |
 
 ## Classes
 

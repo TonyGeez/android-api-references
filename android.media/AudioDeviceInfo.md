@@ -64,31 +64,31 @@ Provides information about an audio device.
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAddress()()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDescriptor](AudioDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAudioDescriptors()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getAddress <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDescriptor](AudioDescriptor.md)!\> | getAudioDescriptors <br /> |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAudioProfiles()()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getChannelCounts()()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getChannelIndexMasks()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | getAudioProfiles <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getChannelCounts <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getChannelIndexMasks <br /> |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getChannelMasks()()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getEncapsulationMetadataTypes()()` Returns an array of supported encapsulation metadata types for the device. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getEncapsulationModes()()` Returns an array of supported encapsulation modes for the device. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getChannelMasks <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getEncapsulationMetadataTypes Returns an array of supported encapsulation metadata types for the device. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getEncapsulationModes Returns an array of supported encapsulation modes for the device. |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getEncodings()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getId()()` <br /> |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getProductName()()` <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getEncodings <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getProductName <br /> |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getSampleRates()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getSpeakerLayoutChannelMask()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getType()()` <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getSampleRates <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpeakerLayoutChannelMask <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#isSink()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#isSource()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSink <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSource <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -382,7 +382,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_REMOTE_SUBMIX: Int
 ```
 
-A device type for rerouting audio within the Android framework between mixes and system applications. This type is for instance encountered when querying the output device of a track (with `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getRoutedDevice()` playing from a device in screen mirroring mode, where the audio is not heard on the device, but on the remote device.
+A device type for rerouting audio within the Android framework between mixes and system applications. This type is for instance encountered when querying the output device of a track (with getRoutedDevice playing from a device in screen mirroring mode, where the audio is not heard on the device, but on the remote device.
 
  Value: 25
 
@@ -534,7 +534,7 @@ fun getAudioDescriptors(): MutableList<AudioDescriptor!>
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioDescriptor!>` | A list of `https://developer.android.com/reference/kotlin/android/media/AudioDescriptor` supported by the audio devices. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioDescriptor!>` | A list of AudioDescriptor supported by the audio devices. This value cannot be `null`. |
 
 ### getAudioProfiles
 
@@ -546,7 +546,7 @@ fun getAudioProfiles(): MutableList<AudioProfile!>
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioProfile!>` | A list of `https://developer.android.com/reference/kotlin/android/media/AudioProfile` supported by the audio devices. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/AudioProfile!>` | A list of AudioProfile supported by the audio devices. This value cannot be `null`. |
 
 ### getChannelCounts
 
@@ -574,7 +574,7 @@ fun getChannelIndexMasks(): IntArray
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioFormat`
+- AudioFormat
 
 ### getChannelMasks
 
@@ -590,7 +590,7 @@ fun getChannelMasks(): IntArray
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioFormat`
+- AudioFormat
 
 ### getEncapsulationMetadataTypes
 
@@ -630,11 +630,11 @@ fun getEncodings(): IntArray
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html` | An array of audio encodings (e.g. `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_16BIT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_FLOAT:kotlin.Int`) supported by the audio device. `ENCODING_PCM_FLOAT` indicates the device supports more than 16 bits of integer precision. As there is no AudioFormat constant specifically defined for 24-bit PCM, the value `ENCODING_PCM_FLOAT` indicates that `https://developer.android.com/reference/kotlin/android/media/AudioTrack` or `https://developer.android.com/reference/kotlin/android/media/AudioRecord` can preserve at least 24 bits of integer precision to that device. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html` | An array of audio encodings (e.g. `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_16BIT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/AudioFormat#ENCODING_PCM_FLOAT:kotlin.Int`) supported by the audio device. `ENCODING_PCM_FLOAT` indicates the device supports more than 16 bits of integer precision. As there is no AudioFormat constant specifically defined for 24-bit PCM, the value `ENCODING_PCM_FLOAT` indicates that AudioTrack or AudioRecord can preserve at least 24 bits of integer precision to that device. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioFormat`
+- AudioFormat
 
 ### getId
 
@@ -686,7 +686,7 @@ fun getSpeakerLayoutChannelMask(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioFormat`
+- AudioFormat
 
 ### getType
 
@@ -713,8 +713,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

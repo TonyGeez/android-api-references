@@ -14,7 +14,7 @@ Instances of the class represent classes and interfaces in a running Java applic
 
 `Class` has no public constructor. Instead a `Class` object is constructed automatically by the Java Virtual Machine when a class is derived from the bytes of a `class` file through the invocation of one of the following methods:
 
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#defineClass(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`
+- defineClass
 
 The methods of class `Class` expose many characteristics of a class or interface. Most characteristics are derived from the `class` file that the class loader passed to the Java Virtual Machine. A few characteristics are determined by the class loading environment at run time.
 
@@ -37,103 +37,103 @@ Some methods of class `Class` expose whether the declaration of a class or inter
 
 | Public methods ||
 |---|---|
-| [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#arrayType()()` Returns a `Class` for an array type whose component type is described by this [Class](Class.md). |
-| [Class](Class.md)\<out U\> | `https://developer.android.com/reference/kotlin/java/lang/Class#asSubclass(java.lang.Class)(clazz: https://developer.android.com/reference/kotlin/java/lang/Class#<U>)` Casts this `Class` object to represent a subclass of the class represented by the specified class object. |
-| T? | `https://developer.android.com/reference/kotlin/java/lang/Class#cast(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Casts an object to the class or interface represented by this `Class` object. |
+| [Class](Class.md)\<\*\> | arrayType Returns a `Class` for an array type whose component type is described by this [Class](Class.md). |
+| [Class](Class.md)\<out U\> | asSubclass Casts this `Class` object to represent a subclass of the class represented by the specified class object. |
+| T? | cast Casts an object to the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#componentType()()` Returns the component type of this `Class`, if it describes an array type, or `null` otherwise. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#descriptorString()()` Returns the descriptor string of the entity (class, interface, array class, primitive type, or `void`) represented by this `Class` object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#desiredAssertionStatus()()` Returns the assertion status that would be assigned to this class if it were to be initialized at the time this method is invoked. |
+| [Class](Class.md)\<\*\>? | componentType Returns the component type of this `Class`, if it describes an array type, or `null` otherwise. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | descriptorString Returns the descriptor string of the entity (class, interface, array class, primitive type, or `void`) represented by this `Class` object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | desiredAssertionStatus Returns the assertion status that would be assigned to this class if it were to be initialized at the time this method is invoked. |
 | --- | --- |
-| static [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `Class` object associated with the class or interface with the given string name. |
-| static [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String,%20kotlin.Boolean,%20java.lang.ClassLoader)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, initialize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader?)` Returns the `Class` object associated with the class or interface with the given string name, using the given class loader. |
-| A? | `https://developer.android.com/reference/kotlin/java/lang/Class#getAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns this element's annotation for the specified type if such an annotation is *present*, else null. |
+| static [Class](Class.md)\<\*\> | forName Returns the `Class` object associated with the class or interface with the given string name. |
+| static [Class](Class.md)\<\*\> | forName Returns the `Class` object associated with the class or interface with the given string name, using the given class loader. |
+| A? | getAnnotation Returns this element's annotation for the specified type if such an annotation is *present*, else null. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getAnnotations()()` Returns annotations that are *present* on this element. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns annotations that are *associated* with this element. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getCanonicalName()()` Returns the canonical name of the underlying class as defined by The Java Language Specification. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | getAnnotations Returns annotations that are *present* on this element. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\> | getAnnotationsByType Returns annotations that are *associated* with this element. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getCanonicalName Returns the canonical name of the underlying class as defined by The Java Language Specification. |
 | --- | --- |
-| [ClassLoader](ClassLoader.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getClassLoader()()` Returns the class loader for the class. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getClasses()()` Returns an array containing `Class` objects representing all the public classes and interfaces that are members of the class represented by this `Class` object. |
-| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getComponentType()()` Returns the `Class` representing the component type of an array. |
+| [ClassLoader](ClassLoader.md)? | getClassLoader Returns the class loader for the class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | getClasses Returns an array containing `Class` objects representing all the public classes and interfaces that are members of the class represented by this `Class` object. |
+| [Class](Class.md)\<\*\>? | getComponentType Returns the `Class` representing the component type of an array. |
 | --- | --- |
-| [Constructor](../java.lang.reflect/Constructor.md)\<T\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getConstructor(java.lang.Class)(vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Constructor` object that reflects the specified public constructor of the class represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java.lang.reflect/Constructor.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getConstructors()()` Returns an array containing `Constructor` objects reflecting all the public constructors of the class represented by this `Class` object. |
-| A? | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns this element's annotation for the specified type if such an annotation is *directly present*, else null. |
+| [Constructor](../java.lang.reflect/Constructor.md)\<T\> | getConstructor Returns a `Constructor` object that reflects the specified public constructor of the class represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java.lang.reflect/Constructor.md)\<\*\>!\> | getConstructors Returns an array containing `Constructor` objects reflecting all the public constructors of the class represented by this `Class` object. |
+| A? | getDeclaredAnnotation Returns this element's annotation for the specified type if such an annotation is *directly present*, else null. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredAnnotations()()` Returns annotations that are *directly present* on this element. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns this element's annotation(s) for the specified type if such annotations are either *directly present* or *indirectly present*. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredClasses()()` Returns an array of `Class` objects reflecting all the classes and interfaces declared as members of the class represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | getDeclaredAnnotations Returns annotations that are *directly present* on this element. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\> | getDeclaredAnnotationsByType Returns this element's annotation(s) for the specified type if such annotations are either *directly present* or *indirectly present*. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | getDeclaredClasses Returns an array of `Class` objects reflecting all the classes and interfaces declared as members of the class represented by this `Class` object. |
 | --- | --- |
-| [Constructor](../java.lang.reflect/Constructor.md)\<T\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredConstructor(java.lang.Class)(vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Constructor` object that reflects the specified constructor of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java.lang.reflect/Constructor.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredConstructors()()` Returns an array of `Constructor` objects reflecting all the constructors declared by the class represented by this `Class` object. |
-| [Field](../java.lang.reflect/Field.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredField(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Field` object that reflects the specified declared field of the class or interface represented by this `Class` object. |
+| [Constructor](../java.lang.reflect/Constructor.md)\<T\> | getDeclaredConstructor Returns a `Constructor` object that reflects the specified constructor of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java.lang.reflect/Constructor.md)\<\*\>!\> | getDeclaredConstructors Returns an array of `Constructor` objects reflecting all the constructors declared by the class represented by this `Class` object. |
+| [Field](../java.lang.reflect/Field.md) | getDeclaredField Returns a `Field` object that reflects the specified declared field of the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java.lang.reflect/Field.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredFields()()` Returns an array of `Field` objects reflecting all the fields declared by the class or interface represented by this `Class` object. |
-| [Method](../java.lang.reflect/Method.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethod(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Method` object that reflects the specified declared method of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java.lang.reflect/Method.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethods()()` Returns an array containing `Method` objects reflecting all the declared methods of the class or interface represented by this `Class` object, including public, protected, default (package) access, and private methods, but excluding inherited methods. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java.lang.reflect/Field.md)!\> | getDeclaredFields Returns an array of `Field` objects reflecting all the fields declared by the class or interface represented by this `Class` object. |
+| [Method](../java.lang.reflect/Method.md) | getDeclaredMethod Returns a `Method` object that reflects the specified declared method of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java.lang.reflect/Method.md)!\> | getDeclaredMethods Returns an array containing `Method` objects reflecting all the declared methods of the class or interface represented by this `Class` object, including public, protected, default (package) access, and private methods, but excluding inherited methods. |
 | --- | --- |
-| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaringClass()()` If the class or interface represented by this `Class` object is a member of another class, returns the `Class` object representing the class in which it was declared. |
-| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingClass()()` Returns the immediately enclosing class of the underlying class. |
-| [Constructor](../java.lang.reflect/Constructor.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingConstructor()()` If this `Class` object represents a local or anonymous class within a constructor, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object representing the immediately enclosing constructor of the underlying class. |
+| [Class](Class.md)\<\*\>? | getDeclaringClass If the class or interface represented by this `Class` object is a member of another class, returns the `Class` object representing the class in which it was declared. |
+| [Class](Class.md)\<\*\>? | getEnclosingClass Returns the immediately enclosing class of the underlying class. |
+| [Constructor](../java.lang.reflect/Constructor.md)\<\*\>? | getEnclosingConstructor If this `Class` object represents a local or anonymous class within a constructor, returns a Constructor object representing the immediately enclosing constructor of the underlying class. |
 | --- | --- |
-| [Method](../java.lang.reflect/Method.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingMethod()()` If this `Class` object represents a local or anonymous class within a method, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` object representing the immediately enclosing method of the underlying class. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnumConstants()()` Returns the elements of this enum class or null if this Class object does not represent an enum class. |
-| [Field](../java.lang.reflect/Field.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getField(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Field` object that reflects the specified public member field of the class or interface represented by this `Class` object. |
+| [Method](../java.lang.reflect/Method.md)? | getEnclosingMethod If this `Class` object represents a local or anonymous class within a method, returns a Method object representing the immediately enclosing method of the underlying class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | getEnumConstants Returns the elements of this enum class or null if this Class object does not represent an enum class. |
+| [Field](../java.lang.reflect/Field.md) | getField Returns a `Field` object that reflects the specified public member field of the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java.lang.reflect/Field.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getFields()()` Returns an array containing `Field` objects reflecting all the accessible public fields of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java.lang.reflect/Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getGenericInterfaces()()` Returns the `Type`s representing the interfaces directly implemented by the class or interface represented by this `Class` object. |
-| [Type](../java.lang.reflect/Type.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getGenericSuperclass()()` Returns the `Type` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java.lang.reflect/Field.md)!\> | getFields Returns an array containing `Field` objects reflecting all the accessible public fields of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java.lang.reflect/Type.md)!\> | getGenericInterfaces Returns the `Type`s representing the interfaces directly implemented by the class or interface represented by this `Class` object. |
+| [Type](../java.lang.reflect/Type.md)? | getGenericSuperclass Returns the `Type` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class` object. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getInterfaces()()` Returns the interfaces directly implemented by the class or interface represented by this object. |
-| [Method](../java.lang.reflect/Method.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getMethod(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Method` object that reflects the specified public member method of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java.lang.reflect/Method.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getMethods()()` Returns an array containing `Method` objects reflecting all the public methods of the class or interface represented by this `Class` object, including those declared by the class or interface and those inherited from superclasses and superinterfaces. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | getInterfaces Returns the interfaces directly implemented by the class or interface represented by this object. |
+| [Method](../java.lang.reflect/Method.md) | getMethod Returns a `Method` object that reflects the specified public member method of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java.lang.reflect/Method.md)!\> | getMethods Returns an array containing `Method` objects reflecting all the public methods of the class or interface represented by this `Class` object, including those declared by the class or interface and those inherited from superclasses and superinterfaces. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getModifiers()()` Returns the Java language modifiers for this class or interface, encoded in an integer. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getName()()` Returns the name of the entity (class, interface, array class, primitive type, or void) represented by this `Class` object. |
-| [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getNestHost()()` Returns the nest host of the [nest](Class.md) to which the class or interface represented by this `Class` object belongs. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getModifiers Returns the Java language modifiers for this class or interface, encoded in an integer. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName Returns the name of the entity (class, interface, array class, primitive type, or void) represented by this `Class` object. |
+| [Class](Class.md)\<\*\> | getNestHost Returns the nest host of the [nest](Class.md) to which the class or interface represented by this `Class` object belongs. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getNestMembers()()` Returns an array containing `Class` objects representing all the classes and interfaces that are members of the nest to which the class or interface represented by this `Class` object belongs. |
-| [Package](Package.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getPackage()()` Gets the package of this class. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getPackageName()()` Returns the fully qualified package name. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | getNestMembers Returns an array containing `Class` objects representing all the classes and interfaces that are members of the nest to which the class or interface represented by this `Class` object belongs. |
+| [Package](Package.md)? | getPackage Gets the package of this class. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getPackageName Returns the fully qualified package name. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getPermittedSubclasses()()` Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. |
-| [ProtectionDomain](../java.security/ProtectionDomain.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getProtectionDomain()()` Returns the `ProtectionDomain` of this class. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RecordComponent](../java.lang.reflect/RecordComponent.md)!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getRecordComponents()()` Returns an array of `RecordComponent` objects representing all the record components of this record class, or `null` if this class is not a record class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\>? | getPermittedSubclasses Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. |
+| [ProtectionDomain](../java.security/ProtectionDomain.md)? | getProtectionDomain Returns the `ProtectionDomain` of this class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RecordComponent](../java.lang.reflect/RecordComponent.md)!\>? | getRecordComponents Returns an array of `RecordComponent` objects representing all the record components of this record class, or `null` if this class is not a record class. |
 | --- | --- |
-| [URL](../java.net/URL.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getResource(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds a resource with a given name. |
-| [InputStream](../java.io/InputStream.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getResourceAsStream(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds a resource with a given name. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getSigners()()` Gets the signers of this class. |
+| [URL](../java.net/URL.md)? | getResource Finds a resource with a given name. |
+| [InputStream](../java.io/InputStream.md)? | getResourceAsStream Finds a resource with a given name. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | getSigners Gets the signers of this class. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getSimpleName()()` Returns the simple name of the underlying class as given in the source code. |
-| [Class](Class.md)\<in T\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getSuperclass()()` Returns the `Class` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getTypeName()()` Return an informative string for the name of this class or interface. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getSimpleName Returns the simple name of the underlying class as given in the source code. |
+| [Class](Class.md)\<in T\>? | getSuperclass Returns the `Class` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getTypeName Return an informative string for the name of this class or interface. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](../java.lang.reflect/TypeVariable.md)\< [Class](Class.md)\<T\>!\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getTypeParameters()()` Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isAnnotation()()` Returns true if this `Class` object represents an annotation interface. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isAnnotationPresent(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html!>)` Returns true if an annotation for the specified type is *present* on this element, else false. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](../java.lang.reflect/TypeVariable.md)\< [Class](Class.md)\<T\>!\>!\> | getTypeParameters Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAnnotation Returns true if this `Class` object represents an annotation interface. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAnnotationPresent Returns true if an annotation for the specified type is *present* on this element, else false. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isAnonymousClass()()` Returns `true` if and only if the underlying class is an anonymous class. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isArray()()` Determines if this `Class` object represents an array class. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isAssignableFrom(java.lang.Class)(cls: https://developer.android.com/reference/kotlin/java/lang/Class#<*>)` Determines if the class or interface represented by this `Class` object is either the same as, or is a superclass or superinterface of, the class or interface represented by the specified `Class` parameter. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAnonymousClass Returns `true` if and only if the underlying class is an anonymous class. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isArray Determines if this `Class` object represents an array class. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAssignableFrom Determines if the class or interface represented by this `Class` object is either the same as, or is a superclass or superinterface of, the class or interface represented by the specified `Class` parameter. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isEnum()()` Returns true if and only if this class was declared as an enum in the source code. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isInstance(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Determines if the specified `Object` is assignment-compatible with the object represented by this `Class`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isInterface()()` Determines if this `Class` object represents an interface type. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnum Returns true if and only if this class was declared as an enum in the source code. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInstance Determines if the specified `Object` is assignment-compatible with the object represented by this `Class`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInterface Determines if this `Class` object represents an interface type. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isLocalClass()()` Returns `true` if and only if the underlying class is a local class. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isMemberClass()()` Returns `true` if and only if the underlying class is a member class. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isNestmateOf(java.lang.Class)(c: https://developer.android.com/reference/kotlin/java/lang/Class#<*>)` Determines if the given `Class` is a nestmate of the class or interface represented by this `Class` object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLocalClass Returns `true` if and only if the underlying class is a local class. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMemberClass Returns `true` if and only if the underlying class is a member class. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNestmateOf Determines if the given `Class` is a nestmate of the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isPrimitive()()` Determines if the specified `Class` object represents a primitive type. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isRecord()()` Returns `true` if and only if this class is a record class. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()()` Returns `true` if and only if this `Class` object represents a sealed class or interface. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPrimitive Determines if the specified `Class` object represents a primitive type. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRecord Returns `true` if and only if this class is a record class. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSealed Returns `true` if and only if this `Class` object represents a sealed class or interface. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isSynthetic()()` {@return {@code true} if and only if this class has the synthetic modifier \* bit set} |
-| T | `https://developer.android.com/reference/kotlin/java/lang/Class#newInstance()()` Creates a new instance of the class represented by this `Class` object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#toGenericString()()` Returns a string describing this `Class`, including information about modifiers and type parameters. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSynthetic {@return {@code true} if and only if this class has the synthetic modifier \* bit set} |
+| T | newInstance Creates a new instance of the class represented by this `Class` object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toGenericString Returns a string describing this `Class`, including information about modifiers and type parameters. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#toString()()` Converts the object to a string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Converts the object to a string. |
 
 ## Public methods
 
@@ -252,9 +252,9 @@ Returns the assertion status that would be assigned to this class if it were to 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setClassAssertionStatus(kotlin.String,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setPackageAssertionStatus(kotlin.String,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#setDefaultAssertionStatus(kotlin.Boolean)`
+- setClassAssertionStatus
+- setPackageAssertionStatus
+- setDefaultAssertionStatus
 
 ### forName
 
@@ -327,8 +327,8 @@ For example, in an instance method the expression:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader`
+- forName
+- ClassLoader
 
 ### getAnnotation
 
@@ -379,7 +379,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun <A : Annotation!> getAnnotationsByType(annotationClass: Class<A>): Array<A>
 ```
 
-Returns annotations that are *associated* with this element. If there are no annotations *associated* with this element, the return value is an array of length 0. The difference between this method and `https://developer.android.com/reference/kotlin/java/lang/reflect/AnnotatedElement#getAnnotation(java.lang.Class)` is that this method detects if its argument is a *repeatable annotation type* (JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
+Returns annotations that are *associated* with this element. If there are no annotations *associated* with this element, the return value is an array of length 0. The difference between this method and getAnnotation is that this method detects if its argument is a *repeatable annotation type* (JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
 
 Note that any annotations returned by this method are declaration annotations.
 
@@ -430,12 +430,12 @@ If this `Class` object represents a primitive type or void, null is returned.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/ClassLoader?` | the class loader that loaded the class or interface represented by this `Class` object. |
+| ClassLoader | the class loader that loaded the class or interface represented by this `Class` object. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/ClassLoader`
-- `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`
+- ClassLoader
+- RuntimePermission
 
 ### getClasses
 
@@ -467,7 +467,7 @@ Returns the `Class` representing the component type of an array. If this class d
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/reflect/Array`
+- Array
 
 ### getConstructor
 
@@ -492,7 +492,7 @@ The constructor to reflect is the public constructor of the class represented by
 | Exceptions ||
 |---|---|
 | `java.lang.NoSuchMethodException` | if a matching method is not found. |
-| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class. |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class. |
 
 ### getConstructors
 
@@ -510,7 +510,7 @@ Returns an array containing `Constructor` objects reflecting all the public cons
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class. |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class. |
 
 ### getDeclaredAnnotation
 
@@ -561,7 +561,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun <A : Annotation!> getDeclaredAnnotationsByType(annotationClass: Class<A>): Array<A>
 ```
 
-Returns this element's annotation(s) for the specified type if such annotations are either *directly present* or *indirectly present* . This method ignores inherited annotations. If there are no specified annotations directly or indirectly present on this element, the return value is an array of length 0. The difference between this method and `https://developer.android.com/reference/kotlin/java/lang/reflect/AnnotatedElement#getDeclaredAnnotation(java.lang.Class)` is that this method detects if its argument is a *repeatable annotation type* (JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation if one is present. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
+Returns this element's annotation(s) for the specified type if such annotations are either *directly present* or *indirectly present* . This method ignores inherited annotations. If there are no specified annotations directly or indirectly present on this element, the return value is an array of length 0. The difference between this method and getDeclaredAnnotation is that this method detects if its argument is a *repeatable annotation type* (JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation if one is present. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
 
 Note that any annotations returned by this method are declaration annotations.
 
@@ -594,7 +594,7 @@ Returns an array of `Class` objects reflecting all the classes and interfaces de
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared classes within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared classes within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 
 ### getDeclaredConstructor
 
@@ -617,7 +617,7 @@ Returns a `Constructor` object that reflects the specified constructor of the cl
 | Exceptions ||
 |---|---|
 | `java.lang.NoSuchMethodException` | if a matching method is not found. |
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared constructor - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared constructor - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 
 ### getDeclaredConstructors
 
@@ -637,7 +637,7 @@ See The Java Language Specification, section {@jls 8.2}.
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared constructors within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared constructors within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 
 ### getDeclaredField
 
@@ -657,13 +657,13 @@ If this `Class` object represents an array type, then this method does not find 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Field` | the `Field` object for the specified field in this class |
+| Field | the `Field` object for the specified field in this class |
 
 | Exceptions ||
 |---|---|
 | `java.lang.NoSuchFieldException` | if a field with the specified name is not found. |
 | `java.lang.NullPointerException` | if `name` is `null` |
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared field - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared field - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 | --- | --- |
 
 ### getDeclaredFields
@@ -688,7 +688,7 @@ The elements in the returned array are not sorted and are not in any particular 
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared fields within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared fields within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 
 ### getDeclaredMethod
 
@@ -712,13 +712,13 @@ If this `Class` object represents an array type, then this method does not find 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` | the `Method` object for the method of this class matching the specified name and parameters |
+| Method | the `Method` object for the method of this class matching the specified name and parameters |
 
 | Exceptions ||
 |---|---|
 | `java.lang.NoSuchMethodException` | if a matching method is not found. |
 | `java.lang.NullPointerException` | if `name` is `null` |
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared method - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared method - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 | --- | --- |
 
 ### getDeclaredMethods
@@ -747,7 +747,7 @@ The elements in the returned array are not sorted and are not in any particular 
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared methods within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared methods within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 
 **See Also**
 
@@ -787,7 +787,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getEnclosingConstructor(): Constructor<*>?
 ```
 
-If this `Class` object represents a local or anonymous class within a constructor, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object representing the immediately enclosing constructor of the underlying class. Returns `null` otherwise. In particular, this method returns `null` if the underlying class is a local or anonymous class immediately enclosed by a class or interface declaration, instance initializer or static initializer.
+If this `Class` object represents a local or anonymous class within a constructor, returns a Constructor object representing the immediately enclosing constructor of the underlying class. Returns `null` otherwise. In particular, this method returns `null` if the underlying class is a local or anonymous class immediately enclosed by a class or interface declaration, instance initializer or static initializer.
 
 | Return ||
 |---|---|
@@ -801,11 +801,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getEnclosingMethod(): Method?
 ```
 
-If this `Class` object represents a local or anonymous class within a method, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` object representing the immediately enclosing method of the underlying class. Returns `null` otherwise. In particular, this method returns `null` if the underlying class is a local or anonymous class immediately enclosed by a class or interface declaration, instance initializer or static initializer.
+If this `Class` object represents a local or anonymous class within a method, returns a Method object representing the immediately enclosing method of the underlying class. Returns `null` otherwise. In particular, this method returns `null` if the underlying class is a local or anonymous class immediately enclosed by a class or interface declaration, instance initializer or static initializer.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Method?` | the immediately enclosing method of the underlying class, if that class is a local or anonymous class; otherwise `null`. |
+| Method | the immediately enclosing method of the underlying class, if that class is a local or anonymous class; otherwise `null`. |
 
 ### getEnumConstants
 
@@ -845,13 +845,13 @@ If this `Class` object represents an array type, then this method does not find 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Field` | the `Field` object of this class specified by `name` |
+| Field | the `Field` object of this class specified by `name` |
 
 | Exceptions ||
 |---|---|
 | `java.lang.NoSuchFieldException` | if a field with the specified name is not found. |
 | `java.lang.NullPointerException` | if `name` is `null` |
-| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class. |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class. |
 | --- | --- |
 
 ### getFields
@@ -880,7 +880,7 @@ The elements in the returned array are not sorted and are not in any particular 
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class. |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class. |
 
 ### getGenericInterfaces
 
@@ -892,7 +892,7 @@ fun getGenericInterfaces(): Array<Type!>
 
 Returns the `Type`s representing the interfaces directly implemented by the class or interface represented by this `Class` object.
 
-If a superinterface is a parameterized type, the `Type` object returned for it must accurately reflect the actual type arguments used in the source code. The parameterized type representing each superinterface is created if it had not been created before. See the declaration of `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType` for the semantics of the creation process for parameterized types.
+If a superinterface is a parameterized type, the `Type` object returned for it must accurately reflect the actual type arguments used in the source code. The parameterized type representing each superinterface is created if it had not been created before. See the declaration of ParameterizedType for the semantics of the creation process for parameterized types.
 
 If this `Class` object represents a class, the return value is an array containing objects representing all interfaces directly implemented by the class. The order of the interface objects in the array corresponds to the order of the interface names in the `implements` clause of the declaration of the class represented by this `Class` object.
 
@@ -925,11 +925,11 @@ fun getGenericSuperclass(): Type?
 
 Returns the `Type` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class` object.
 
-If the superclass is a parameterized type, the `Type` object returned must accurately reflect the actual type arguments used in the source code. The parameterized type representing the superclass is created if it had not been created before. See the declaration of `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType` for the semantics of the creation process for parameterized types. If this `Class` object represents either the `Object` class, an interface, a primitive type, or void, then null is returned. If this `Class` object represents an array class then the `Class` object representing the `Object` class is returned.
+If the superclass is a parameterized type, the `Type` object returned must accurately reflect the actual type arguments used in the source code. The parameterized type representing the superclass is created if it had not been created before. See the declaration of ParameterizedType for the semantics of the creation process for parameterized types. If this `Class` object represents either the `Object` class, an interface, a primitive type, or void, then null is returned. If this `Class` object represents an array class then the `Class` object representing the `Object` class is returned.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Type?` | the direct superclass of the class represented by this `Class` object |
+| Type | the direct superclass of the class represented by this `Class` object |
 
 | Exceptions ||
 |---|---|
@@ -985,14 +985,14 @@ This method does not find any method with name "`<init>`" or "`<clinit>`".
 Generally, the method to be reflected is determined by the 4 step algorithm that follows. Let C be the class or interface represented by this `Class` object:
 
 1. A union of methods is composed of:
- 1. C's declared public instance and static methods as returned by `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethods()` and filtered to include only public methods that match given `name` and `parameterTypes`
+ 1. C's declared public instance and static methods as returned by getDeclaredMethods and filtered to include only public methods that match given `name` and `parameterTypes`
  2. If C is a class other than `Object`, then include the result of invoking this algorithm recursively on the superclass of C.
  3. Include the results of invoking this algorithm recursively on all direct superinterfaces of C, but include only instance methods.
 2. This union is partitioned into subsets of methods with same return type (the selection of methods from step 1 also guarantees that they have the same method name and parameter types).
 3. Within each such subset only the most specific methods are selected. Let method M be a method from a set of methods with same VM signature (return type, name, parameter types). M is most specific if there is no such method N != M from the same set, such that N is more specific than M. N is more specific than M if:
  1. N is declared by a class and M is declared by an interface; or
  2. N and M are both declared by classes or both by interfaces and N's declaring type is the same as or a subtype of M's declaring type (clearly, if M's and N's declaring types are the same type, then M and N are the same method).
-4. The result of this algorithm is chosen arbitrarily from the methods with most specific return type among all selected methods from step 3. Let R be a return type of a method M from the set of all selected methods from step 3. M is a method with most specific return type if there is no such method N != M from the same set, having return type S != R, such that S is a subtype of R as determined by R.class.`https://developer.android.com/reference/kotlin/java/lang/Class#isAssignableFrom(java.lang.Class)`(S.class).
+4. The result of this algorithm is chosen arbitrarily from the methods with most specific return type among all selected methods from step 3. Let R be a return type of a method M from the set of all selected methods from step 3. M is a method with most specific return type if there is no such method N != M from the same set, having return type S != R, such that S is a subtype of R as determined by R.class.isAssignableFrom(S.class).
 
 | Parameters ||
 |---|---|
@@ -1001,13 +1001,13 @@ Generally, the method to be reflected is determined by the 4 step algorithm that
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` | the `Method` object that matches the specified `name` and `parameterTypes` |
+| Method | the `Method` object that matches the specified `name` and `parameterTypes` |
 
 | Exceptions ||
 |---|---|
 | `java.lang.NoSuchMethodException` | if a matching method is not found or if the name is "\<init\>"or "\<clinit\>". |
 | `java.lang.NullPointerException` | if `name` is `null` |
-| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class. |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class. |
 | --- | --- |
 
 ### getMethods
@@ -1031,7 +1031,7 @@ The elements in the returned array are not sorted and are not in any particular 
 Generally, the result is computed as with the following 4 step algorithm. Let C be the class or interface represented by this `Class` object:
 
 1. A union of methods is composed of:
- 1. C's declared public instance and static methods as returned by `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethods()` and filtered to include only public methods.
+ 1. C's declared public instance and static methods as returned by getDeclaredMethods and filtered to include only public methods.
  2. If C is a class other than `Object`, then include the result of invoking this algorithm recursively on the superclass of C.
  3. Include the results of invoking this algorithm recursively on all direct superinterfaces of C, but include only instance methods.
 2. Union from step 1 is partitioned into subsets of methods with same signature (name, parameter types) and return type.
@@ -1046,7 +1046,7 @@ Generally, the result is computed as with the following 4 step algorithm. Let C 
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class. |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class. |
 
 ### getModifiers
 
@@ -1068,7 +1068,7 @@ The modifier encodings are defined in section {@jvms 4.1} of The Java Virtual Ma
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/reflect/Modifier`
+- Modifier
 
 ### getName
 
@@ -1153,7 +1153,7 @@ If this `Class` object represents a primitive type, an array type, or `void`, th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Class#getNestHost()`
+- getNestHost
 
 ### getPackage
 
@@ -1169,7 +1169,7 @@ If this class represents an array type, a primitive type or void, this method re
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Package?` | the package of this class. |
+| Package | the package of this class. |
 
 ### getPackageName
 
@@ -1201,7 +1201,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getPermittedSubclasses(): Array<Class<*>!>?
 ```
 
-Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. The order of such elements is unspecified. The array is empty if this sealed class or interface has no permitted subclass. If this `Class` object represents a primitive type, `void`, an array type, or a class or interface that is not sealed, that is `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()` returns `false`, then this method returns `null`. Conversely, if `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()` returns `true`, then this method returns a non-null value. For each class or interface `C` which is recorded as a permitted direct subinterface or subclass of this class or interface, this method attempts to obtain the `Class` object for `C` (using [the defining class](Class.md)) of the current `Class` object). The `Class` objects which can be obtained and which are direct subinterfaces or subclasses of this class or interface, are indicated by elements of the returned array. If a `Class` object cannot be obtained, it is silently ignored, and not included in the result array.
+Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. The order of such elements is unspecified. The array is empty if this sealed class or interface has no permitted subclass. If this `Class` object represents a primitive type, `void`, an array type, or a class or interface that is not sealed, that is isSealed returns `false`, then this method returns `null`. Conversely, if isSealed returns `true`, then this method returns a non-null value. For each class or interface `C` which is recorded as a permitted direct subinterface or subclass of this class or interface, this method attempts to obtain the `Class` object for `C` (using [the defining class](Class.md)) of the current `Class` object). The `Class` objects which can be obtained and which are direct subinterfaces or subclasses of this class or interface, are indicated by elements of the returned array. If a `Class` object cannot be obtained, it is silently ignored, and not included in the result array.
 
 | Return ||
 |---|---|
@@ -1228,7 +1228,7 @@ Returns the `ProtectionDomain` of this class. If there is a security manager ins
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/security/ProtectionDomain.html#`
-- `https://developer.android.com/reference/kotlin/java/lang/RuntimePermission`
+- RuntimePermission
 
 ### getRecordComponents
 
@@ -1240,7 +1240,7 @@ fun getRecordComponents(): Array<RecordComponent!>?
 
 Returns an array of `RecordComponent` objects representing all the record components of this record class, or `null` if this class is not a record class.
 
-The components are returned in the same order that they are declared in the record header. The array is empty if this record class has no components. If the class is not a record class, that is `https://developer.android.com/reference/kotlin/java/lang/Class#isRecord()` returns `false`, then this method returns `null`. Conversely, if `https://developer.android.com/reference/kotlin/java/lang/Class#isRecord()` returns `true`, then this method returns a non-null value.
+The components are returned in the same order that they are declared in the record header. The array is empty if this record class has no components. If the class is not a record class, that is isRecord returns `false`, then this method returns `null`. Conversely, if isRecord returns `true`, then this method returns a non-null value.
 
 | Return ||
 |---|---|
@@ -1248,7 +1248,7 @@ The components are returned in the same order that they are declared in the reco
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared methods within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of `https://developer.android.com/reference/kotlin/java/lang/SecurityManager#checkPackageAccess(kotlin.String)` denies access to the package of this class |
+| `java.lang.SecurityException` | If a security manager, *s* , is present and any of the following conditions is met: - the caller's class loader is not the same as the class loader of this class and invocation of java.lang.SecurityManager#checkPermission method with `RuntimePermission("accessDeclaredMembers")` denies access to the declared methods within this class - the caller's class loader is not the same as or an ancestor of the class loader for the current class and invocation of checkPackageAccess denies access to the package of this class |
 
 ### getResource
 
@@ -1260,7 +1260,7 @@ fun getResource(name: String): URL?
 
 Finds a resource with a given name.
 
-The rules for searching resources associated with a given class are implemented by the defining [class loader](ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResource(kotlin.String)`.
+The rules for searching resources associated with a given class are implemented by the defining [class loader](ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to getSystemResource.
 
 Before delegation, an absolute resource name is constructed from the given resource name using this algorithm:
 
@@ -1291,7 +1291,7 @@ fun getResourceAsStream(name: String): InputStream?
 
 Finds a resource with a given name.
 
-The rules for searching resources associated with a given class are implemented by the defining [class loader](ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResourceAsStream(kotlin.String)`.
+The rules for searching resources associated with a given class are implemented by the defining [class loader](ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to getSystemResourceAsStream.
 
 Before delegation, an absolute resource name is constructed from the given resource name using this algorithm:
 
@@ -1396,7 +1396,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun isAnnotation(): Boolean
 ```
 
-Returns true if this `Class` object represents an annotation interface. Note that if this method returns true, `https://developer.android.com/reference/kotlin/java/lang/Class#isInterface()` would also return true, as all annotation interfaces are also interfaces.
+Returns true if this `Class` object represents an annotation interface. Note that if this method returns true, isInterface would also return true, as all annotation interfaces are also interfaces.
 
 | Return ||
 |---|---|
@@ -1488,7 +1488,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun isEnum(): Boolean
 ```
 
-Returns true if and only if this class was declared as an enum in the source code. Note that `https://developer.android.com/reference/kotlin/java/lang/Enum` is not itself an enum class. Also note that if an enum constant is declared with a class body, the class of that enum constant object is an anonymous class and *not* the class of the declaring enum class. The `https://developer.android.com/reference/kotlin/java/lang/Enum#getDeclaringClass()` method of an enum constant can be used to get the class of the enum class declaring the constant.
+Returns true if and only if this class was declared as an enum in the source code. Note that Enum is not itself an enum class. Also note that if an enum constant is declared with a class body, the class of that enum constant object is an anonymous class and *not* the class of the declaring enum class. The getDeclaringClass method of an enum constant can be used to get the class of the enum class declaring the constant.
 
 | Return ||
 |---|---|
@@ -1614,9 +1614,9 @@ fun isRecord(): Boolean
 
 Returns `true` if and only if this class is a record class.
 
-The [direct superclass](Class.md)) of a record class is `java.lang.Record`. A record class is [final](../java.lang.reflect/Modifier.md). A record class has (possibly zero) record components; `https://developer.android.com/reference/kotlin/java/lang/Class#getRecordComponents()` returns a non-null but possibly empty value for a record.
+The [direct superclass](Class.md)) of a record class is `java.lang.Record`. A record class is [final](../java.lang.reflect/Modifier.md). A record class has (possibly zero) record components; getRecordComponents returns a non-null but possibly empty value for a record.
 
-Note that class `https://developer.android.com/reference/kotlin/java/lang/Record` is not a record class and thus invoking this method on class `Record` returns `false`.
+Note that class Record is not a record class and thus invoking this method on class `Record` returns `false`.
 
 | Return ||
 |---|---|
@@ -1630,7 +1630,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun isSealed(): Boolean
 ```
 
-Returns `true` if and only if this `Class` object represents a sealed class or interface. If this `Class` object represents a primitive type, `void`, or an array type, this method returns `false`. A sealed class or interface has (possibly zero) permitted subclasses; `https://developer.android.com/reference/kotlin/java/lang/Class#getPermittedSubclasses()` returns a non-null but possibly empty value for a sealed class or interface.
+Returns `true` if and only if this `Class` object represents a sealed class or interface. If this `Class` object represents a primitive type, `void`, or an array type, this method returns `false`. A sealed class or interface has (possibly zero) permitted subclasses; getPermittedSubclasses returns a non-null but possibly empty value for a sealed class or interface.
 
 | Return ||
 |---|---|
@@ -1656,7 +1656,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 fun newInstance(): T
 ```
 
-**Deprecated:** *This method propagates any exception thrown by the nullary constructor, including a checked exception. Use of this method effectively bypasses the compile-time exception checking that would otherwise be performed by the compiler. The `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor#newInstance(kotlin.Any)` method avoids this problem by wrapping any exception thrown by the constructor in a (checked) `https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationTargetException`.*
+**Deprecated:** *This method propagates any exception thrown by the nullary constructor, including a checked exception. Use of this method effectively bypasses the compile-time exception checking that would otherwise be performed by the compiler. The newInstance method avoids this problem by wrapping any exception thrown by the constructor in a (checked) InvocationTargetException.*
 
 *The call*
 *```kotlin
@@ -1668,7 +1668,7 @@ can be replaced by
 <code>clazz.getDeclaredConstructor().newInstance()
 </code>
 ```
-The latter sequence of calls is inferred to be able to throw the additional exception types `https://developer.android.com/reference/kotlin/java/lang/reflect/InvocationTargetException` and `https://developer.android.com/reference/kotlin/java/lang/NoSuchMethodException`. Both of these exception types are subclasses of `https://developer.android.com/reference/kotlin/java/lang/ReflectiveOperationException`.*
+The latter sequence of calls is inferred to be able to throw the additional exception types InvocationTargetException and NoSuchMethodException. Both of these exception types are subclasses of ReflectiveOperationException.*
 
 <br />
 

@@ -15,7 +15,7 @@ class EncoderProfiles
 
 Describes a set of encoding profiles for a given media (audio and/or video) profile. These settings are read-only.
 
-Currently, this is used to describe camera recording profile with more detail than `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile`, by providing encoding parameters for more than just the default audio and/or video codec.
+Currently, this is used to describe camera recording profile with more detail than CamcorderProfile, by providing encoding parameters for more than just the default audio and/or video codec.
 
 The compressed output from a camera recording session contains two tracks: one for audio and one for video.
 
@@ -46,11 +46,11 @@ Each media profile specifies a set of audio and a set of video specific settings
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.AudioProfile](../android/media/EncoderProfiles.AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getAudioProfiles()()` Returns the defined audio encoder profiles. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getDefaultDurationSeconds()()` Default recording duration in seconds before the session is terminated. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getRecommendedFileFormat()()` Recommended output file format |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.AudioProfile](../android/media/EncoderProfiles.AudioProfile.md)!\> | getAudioProfiles Returns the defined audio encoder profiles. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefaultDurationSeconds Default recording duration in seconds before the session is terminated. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRecommendedFileFormat Recommended output file format |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.VideoProfile](../android/media/EncoderProfiles.VideoProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/EncoderProfiles#getVideoProfiles()()` Returns the defined video encoder profiles. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncoderProfiles.VideoProfile](../android/media/EncoderProfiles.VideoProfile.md)!\> | getVideoProfiles Returns the defined video encoder profiles. |
 
 ## Public methods
 

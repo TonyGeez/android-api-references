@@ -26,8 +26,8 @@ Thrown if trying to create a credential with an unsupported document type.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/DocTypeNotSupportedException#DocTypeNotSupportedException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/DocTypeNotSupportedException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/DocTypeNotSupportedException#DocTypeNotSupportedException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/DocTypeNotSupportedException#` exception. |
+| DocTypeNotSupportedException Constructs a new DocTypeNotSupportedException exception. |
+| DocTypeNotSupportedException Constructs a new DocTypeNotSupportedException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ DocTypeNotSupportedException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/DocTypeNotSupportedException#` exception.
+Constructs a new DocTypeNotSupportedException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ DocTypeNotSupportedException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/DocTypeNotSupportedException#` exception.
+Constructs a new DocTypeNotSupportedException exception.
 
 | Parameters ||
 |---|---|

@@ -19,7 +19,7 @@ abstract class DynamicDrawableSpan : ReplacementSpan
 
 Span that replaces the text it's attached to with a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that can be aligned with the bottom or with the baseline of the surrounding text.
 
-For an implementation that constructs the drawable from various sources (`Bitmap`, `Drawable`, resource id or `Uri`) use `https://developer.android.com/reference/kotlin/android/text/style/ImageSpan`.
+For an implementation that constructs the drawable from various sources (`Bitmap`, `Drawable`, resource id or `Uri`) use ImageSpan.
 
 A simple implementation of `DynamicDrawableSpan` that uses drawables from resources looks like this:
 
@@ -62,26 +62,26 @@ Replacing text with a drawable.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#DynamicDrawableSpan()()` Creates a `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#`. |
+| DynamicDrawableSpan Creates a DynamicDrawableSpan. |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#DynamicDrawableSpan(kotlin.Int)(verticalAlignment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#` based on a vertical alignment. |
+| DynamicDrawableSpan Creates a DynamicDrawableSpan based on a vertical alignment. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#draw(android.graphics.Canvas,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Paint)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)` Draws the span into the canvas. |
-| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#getDrawable()()` Your subclass must implement this method to provide the bitmap to be drawn. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#getSize(android.graphics.Paint,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Paint.FontMetricsInt)(paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fm: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#?)` Returns the width of the span. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | draw Draws the span into the canvas. |
+| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | getDrawable Your subclass must implement this method to provide the bitmap to be drawn. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSize Returns the width of the span. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#getVerticalAlignment()()` Returns the vertical alignment of this span, one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_CENTER:kotlin.Int`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#toString()()` Returns a string representation of the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVerticalAlignment Returns the vertical alignment of this span, one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_CENTER:kotlin.Int`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?` | `https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan#getContentDescription()()` Gets a brief description of this ReplacementSpan for use in accessibility support. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan#setContentDescription(kotlin.CharSequence)(contentDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the specific content description into ReplacementSpan. ReplacementSpans are shared with accessibility services, but only the content description is available from them. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan#updateDrawState(android.text.TextPaint)(ds: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#!)` This method does nothing, since ReplacementSpans are drawn explicitly instead of affecting Paint properties. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan#updateMeasureState(android.text.TextPaint)(p: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` This method does nothing, since ReplacementSpans are measured explicitly instead of affecting Paint properties. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan` |---|---| | `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` | `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan#getUnderlying()()` Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)`, returns the underlying MetricAffectingSpan. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#updateDrawState(android.text.TextPaint)(tp: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#!)` <br /> | | `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!` | `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)(cs: https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!)` A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class ReplacementSpan |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?` | getContentDescription Gets a brief description of this ReplacementSpan for use in accessibility support. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | setContentDescription Sets the specific content description into ReplacementSpan. ReplacementSpans are shared with accessibility services, but only the content description is available from them. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | updateDrawState This method does nothing, since ReplacementSpans are drawn explicitly instead of affecting Paint properties. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | updateMeasureState This method does nothing, since ReplacementSpans are measured explicitly instead of affecting Paint properties. <br /> | ||
+| From class MetricAffectingSpan |---|---| | `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` | getUnderlying Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by wrap, returns the underlying MetricAffectingSpan. <br /> | ||
+| From class CharacterStyle |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | updateDrawState <br /> | | `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!` | wrap A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Properties ||
@@ -136,7 +136,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DynamicDrawableSpan()
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#`. The default vertical alignment is `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int`
+Creates a DynamicDrawableSpan. The default vertical alignment is `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int`
 
 ## Protected constructors
 
@@ -148,7 +148,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 protected DynamicDrawableSpan(verticalAlignment: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#` based on a vertical alignment.\\
+Creates a DynamicDrawableSpan based on a vertical alignment.\\
 
 | Parameters ||
 |---|---|
@@ -215,7 +215,7 @@ open fun getSize(
 ): Int
 ```
 
-Returns the width of the span. Extending classes can set the height of the span by updating attributes of `https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#`. If the span covers the whole text, and the height is not set, `https://developer.android.com/reference/kotlin/android/text/style/ReplacementSpan#draw(android.graphics.Canvas,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Paint)` will not be called for the span.
+Returns the width of the span. Extending classes can set the height of the span by updating attributes of `https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#`. If the span covers the whole text, and the height is not set, draw will not be called for the span.
 
 | Parameters ||
 |---|---|

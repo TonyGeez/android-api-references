@@ -10,7 +10,7 @@ abstract class AbstractAccountAuthenticator
 | --- | --- |
 | ↳ | [android.accounts.AbstractAccountAuthenticator](AbstractAccountAuthenticator.md) |
 
-Abstract base class for creating AccountAuthenticators. In order to be an authenticator one must extend this class, provide implementations for the abstract methods, and write a service that returns the result of `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getIBinder()` in the service's `https://developer.android.com/reference/kotlin/android/app/Service.html#onBind(android.content.Intent)` when invoked with an intent with action `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#ACTION_AUTHENTICATOR_INTENT:kotlin.String`. This service must specify the following intent filter and metadata tags in its AndroidManifest.xml file
+Abstract base class for creating AccountAuthenticators. In order to be an authenticator one must extend this class, provide implementations for the abstract methods, and write a service that returns the result of getIBinder in the service's onBind when invoked with an intent with action `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#ACTION_AUTHENTICATOR_INTENT:kotlin.String`. This service must specify the following intent filter and metadata tags in its AndroidManifest.xml file
 
 ```kotlin
 <intent-filter>
@@ -32,7 +32,7 @@ The `android:resource` attribute must point to a resource that looks like:
   />
   
 ```
-Replace the icons and labels with your own resources. The `android:accountType` attribute must be a string that uniquely identifies your authenticator and will be the same string that user will use when making calls on the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager` and it also corresponds to `https://developer.android.com/reference/kotlin/android/accounts/Account#type:kotlin.String` for your accounts. One user of the android:icon is the "Account \& Sync" settings page and one user of the android:smallIcon is the Contact Application's tab panels.
+Replace the icons and labels with your own resources. The `android:accountType` attribute must be a string that uniquely identifies your authenticator and will be the same string that user will use when making calls on the AccountManager and it also corresponds to `https://developer.android.com/reference/kotlin/android/accounts/Account#type:kotlin.String` for your accounts. One user of the android:icon is the "Account \& Sync" settings page and one user of the android:smallIcon is the Contact Application's tab panels.
 
 <br />
 
@@ -59,8 +59,8 @@ The standard pattern for implementing any of the abstract methods is the followi
 - If the supplied arguments are enough for the authenticator to fully satisfy the request then it will do so and return a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` that contains the results.
 - If the authenticator needs information from the user to satisfy the request then it will create an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to an activity that will prompt the user for the information and then carry out the request. This intent must be returned in a Bundle as key `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_INTENT:kotlin.String`.
 
- The activity needs to return the final result when it is complete so the Intent should contain the `https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse` as `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ACCOUNT_AUTHENTICATOR_RESPONSE:kotlin.String`. The activity must then call `https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#onResult(android.os.Bundle)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse#onError(kotlin.Int,%20kotlin.String)` when it is complete.
-- If the authenticator cannot synchronously process the request and return a result then it may choose to return null and then use the AccountManagerResponse to send the result when it has completed the request. This asynchronous option is not available for the `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#addAccount(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)` method, which must complete synchronously.
+ The activity needs to return the final result when it is complete so the Intent should contain the AccountAuthenticatorResponse as `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ACCOUNT_AUTHENTICATOR_RESPONSE:kotlin.String`. The activity must then call onResult or onError when it is complete.
+- If the authenticator cannot synchronously process the request and return a result then it may choose to return null and then use the AccountManagerResponse to send the result when it has completed the request. This asynchronous option is not available for the addAccount method, which must complete synchronously.
 
 The following descriptions of each of the abstract authenticator methods will not describe the possible asynchronous nature of the request handling and will instead just describe the input parameters and the expected result.
 
@@ -74,29 +74,29 @@ When writing an activity to satisfy these requests one must pass in the AccountM
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#AbstractAccountAuthenticator(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` <br /> |
+| AbstractAccountAuthenticator <br /> |
 
 | Public methods ||
 |---|---|
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#addAccount(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Adds an account of the specified accountType. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#addAccountFromCredentials(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, accountCredentials: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Creates an account based on credentials provided by the authenticator instance of another user on the device, who has chosen to share the account with this user. |
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#confirmCredentials(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Checks that the user knows the credentials of an account. |
+| abstract [Bundle](../android.os/Bundle.md)! | addAccount Adds an account of the specified accountType. |
+| open [Bundle](../android.os/Bundle.md)! | addAccountFromCredentials Creates an account based on credentials provided by the authenticator instance of another user on the device, who has chosen to share the account with this user. |
+| abstract [Bundle](../android.os/Bundle.md)! | confirmCredentials Checks that the user knows the credentials of an account. |
 | --- | --- |
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#editProperties(android.accounts.AccountAuthenticatorResponse,%20kotlin.String)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a Bundle that contains the Intent of the activity that can be used to edit the properties. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sessionBundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Finishes the session started by #startAddAccountSession or #startUpdateCredentials by installing the account to device with AccountManager, or updating the local credentials. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAccountCredentialsForCloning(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Returns a Bundle that contains whatever is required to clone the account on a different user. |
+| abstract [Bundle](../android.os/Bundle.md)! | editProperties Returns a Bundle that contains the Intent of the activity that can be used to edit the properties. |
+| open [Bundle](../android.os/Bundle.md)! | finishSession Finishes the session started by #startAddAccountSession or #startUpdateCredentials by installing the account to device with AccountManager, or updating the local credentials. |
+| open [Bundle](../android.os/Bundle.md)! | getAccountCredentialsForCloning Returns a Bundle that contains whatever is required to clone the account on a different user. |
 | --- | --- |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAccountRemovalAllowed(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Checks if the removal of this account is allowed. |
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAuthToken(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Gets an authtoken for an account. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAuthTokenLabel(kotlin.String)(authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Ask the authenticator for a localized label for the given authTokenType. |
+| open [Bundle](../android.os/Bundle.md)! | getAccountRemovalAllowed Checks if the removal of this account is allowed. |
+| abstract [Bundle](../android.os/Bundle.md)! | getAuthToken Gets an authtoken for an account. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getAuthTokenLabel Ask the authenticator for a localized label for the given authTokenType. |
 | --- | --- |
-| [IBinder](../android.os/IBinder.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getIBinder()()` <br /> |
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#hasFeatures(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.Array)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Checks if the account supports all the specified authenticator specific features. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#isCredentialsUpdateSuggested(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, statusToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks if update of the account credentials is suggested. |
+| [IBinder](../android.os/IBinder.md)! | getIBinder <br /> |
+| abstract [Bundle](../android.os/Bundle.md)! | hasFeatures Checks if the account supports all the specified authenticator specific features. |
+| open [Bundle](../android.os/Bundle.md)! | isCredentialsUpdateSuggested Checks if update of the account credentials is suggested. |
 | --- | --- |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startAddAccountSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Starts the add account session to authenticate user to an account of the specified accountType. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startUpdateCredentialsSession(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Asks user to re-authenticate for an account but defers updating the locally stored credentials. |
-| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#updateCredentials(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String,%20android.os.Bundle)(response: https://developer.android.com/reference/kotlin/android/accounts/AccountAuthenticatorResponse!, account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Update the locally stored credentials for an account. |
+| open [Bundle](../android.os/Bundle.md)! | startAddAccountSession Starts the add account session to authenticate user to an account of the specified accountType. |
+| open [Bundle](../android.os/Bundle.md)! | startUpdateCredentialsSession Asks user to re-authenticate for an account but defers updating the locally stored credentials. |
+| abstract [Bundle](../android.os/Bundle.md)! | updateCredentials Update the locally stored credentials for an account. |
 | --- | --- |
 
 ## Constants
@@ -115,7 +115,7 @@ Bundle key used for the `long` expiration time (in millis from the unix epoch) o
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAuthToken(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String,%20android.os.Bundle)`
+- getAuthToken
 
 ## Public constructors
 
@@ -180,7 +180,7 @@ Creates an account based on credentials provided by the authenticator instance o
 |---|---|
 | `response` | [AccountAuthenticatorResponse](AccountAuthenticatorResponse.md)!: to send the result back to the AccountManager, will never be null |
 | `account` | [Account](Account.md)!: the account to clone, will never be null |
-| `accountCredentials` | [Bundle](../android.os/Bundle.md)!: the Bundle containing the required credentials to create the account. Contents of the Bundle are only meaningful to the authenticator. This Bundle is provided by `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAccountCredentialsForCloning(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account)`. |
+| `accountCredentials` | [Bundle](../android.os/Bundle.md)!: the Bundle containing the required credentials to create the account. Contents of the Bundle are only meaningful to the authenticator. This Bundle is provided by getAccountCredentialsForCloning. |
 | --- | --- |
 
 | Return ||
@@ -193,7 +193,7 @@ Creates an account based on credentials provided by the authenticator instance o
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#getAccountCredentialsForCloning(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account)`
+- getAccountCredentialsForCloning
 
 ### confirmCredentials
 
@@ -260,13 +260,13 @@ open fun finishSession(
 
 Finishes the session started by #startAddAccountSession or #startUpdateCredentials by installing the account to device with AccountManager, or updating the local credentials. File I/O may be performed in this call.
 
-Note: when overriding this method, `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startAddAccountSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startUpdateCredentialsSession(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String,%20android.os.Bundle)` should be overridden too.
+Note: when overriding this method, startAddAccountSession and startUpdateCredentialsSession should be overridden too.
 
 | Parameters ||
 |---|---|
 | `response` | [AccountAuthenticatorResponse](AccountAuthenticatorResponse.md)!: to send the result back to the AccountManager, will never be null |
 | `accountType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the type of account to authenticate with, will never be null |
-| `sessionBundle` | [Bundle](../android.os/Bundle.md)!: a bundle of session data created by `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startAddAccountSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)` used for adding account to device, or by `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startUpdateCredentialsSession(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20kotlin.String,%20android.os.Bundle)` used for updating local credentials. |
+| `sessionBundle` | [Bundle](../android.os/Bundle.md)!: a bundle of session data created by startAddAccountSession used for adding account to device, or by startUpdateCredentialsSession used for updating local credentials. |
 | --- | --- |
 
 | Return ||
@@ -279,7 +279,7 @@ Note: when overriding this method, `https://developer.android.com/reference/kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#startAddAccountSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)`
+- startAddAccountSession
 
 ### getAccountCredentialsForCloning
 
@@ -292,7 +292,7 @@ open fun getAccountCredentialsForCloning(
 ): Bundle!
 ```
 
-Returns a Bundle that contains whatever is required to clone the account on a different user. The Bundle is passed to the authenticator instance in the target user via `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#addAccountFromCredentials(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20android.os.Bundle)`. The default implementation returns null, indicating that cloning is not supported.
+Returns a Bundle that contains whatever is required to clone the account on a different user. The Bundle is passed to the authenticator instance in the target user via addAccountFromCredentials. The default implementation returns null, indicating that cloning is not supported.
 
 | Parameters ||
 |---|---|
@@ -309,7 +309,7 @@ Returns a Bundle that contains whatever is required to clone the account on a di
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#addAccountFromCredentials(android.accounts.AccountAuthenticatorResponse,%20android.accounts.Account,%20android.os.Bundle)`
+- addAccountFromCredentials
 
 ### getAccountRemovalAllowed
 
@@ -354,11 +354,11 @@ Gets an authtoken for an account. If not `null`, the resultant `https://develope
 
 If a token cannot be provided without some additional activity, the Bundle should contain `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_INTENT:kotlin.String` with an associated `https://developer.android.com/reference/kotlin/android/content/Intent.html#`. On the other hand, if there is no such activity, then a Bundle containing `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ERROR_CODE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ERROR_MESSAGE:kotlin.String` should be returned.
 
-If a token can be successfully issued, the implementation should return the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ACCOUNT_NAME:kotlin.String` and `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ACCOUNT_TYPE:kotlin.String` of the account associated with the token as well as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_AUTHTOKEN:kotlin.String`. In addition `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#` implementations that declare themselves `android:customTokens=true` may also provide a non-negative `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#KEY_CUSTOM_TOKEN_EXPIRY:kotlin.String` long value containing the expiration timestamp of the expiration time (in millis since the unix epoch), tokens will be cached in memory based on application's packageName/signature for however long that was specified.
+If a token can be successfully issued, the implementation should return the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ACCOUNT_NAME:kotlin.String` and `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_ACCOUNT_TYPE:kotlin.String` of the account associated with the token as well as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_AUTHTOKEN:kotlin.String`. In addition AbstractAccountAuthenticator implementations that declare themselves `android:customTokens=true` may also provide a non-negative `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#KEY_CUSTOM_TOKEN_EXPIRY:kotlin.String` long value containing the expiration timestamp of the expiration time (in millis since the unix epoch), tokens will be cached in memory based on application's packageName/signature for however long that was specified.
 
 Implementers should assume that tokens will be cached on the basis of account and authTokenType. The system may ignore the contents of the supplied options Bundle when determining to re-use a cached token. Furthermore, implementers should assume a supplied expiration time will be treated as non-binding advice.
 
-Finally, note that for `android:customTokens=false` authenticators, tokens are cached indefinitely until some client calls `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#invalidateAuthToken(kotlin.String,%20kotlin.String)`.
+Finally, note that for `android:customTokens=false` authenticators, tokens are cached indefinitely until some client calls invalidateAuthToken.
 
 | Parameters ||
 |---|---|
@@ -478,9 +478,9 @@ open fun startAddAccountSession(
 ): Bundle!
 ```
 
-Starts the add account session to authenticate user to an account of the specified accountType. No file I/O should be performed in this call. Account should be added to device only when `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)` is called after this.
+Starts the add account session to authenticate user to an account of the specified accountType. No file I/O should be performed in this call. Account should be added to device only when finishSession is called after this.
 
-Note: when overriding this method, `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)` should be overridden too.
+Note: when overriding this method, finishSession should be overridden too.
 
 | Parameters ||
 |---|---|
@@ -501,7 +501,7 @@ Note: when overriding this method, `https://developer.android.com/reference/kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)`
+- finishSession
 
 ### startUpdateCredentialsSession
 
@@ -516,9 +516,9 @@ open fun startUpdateCredentialsSession(
 ): Bundle!
 ```
 
-Asks user to re-authenticate for an account but defers updating the locally stored credentials. No file I/O should be performed in this call. Local credentials should be updated only when `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)` is called after this.
+Asks user to re-authenticate for an account but defers updating the locally stored credentials. No file I/O should be performed in this call. Local credentials should be updated only when finishSession is called after this.
 
-Note: when overriding this method, `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)` should be overridden too.
+Note: when overriding this method, finishSession should be overridden too.
 
 | Parameters ||
 |---|---|
@@ -538,7 +538,7 @@ Note: when overriding this method, `https://developer.android.com/reference/kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accounts/AbstractAccountAuthenticator#finishSession(android.accounts.AccountAuthenticatorResponse,%20kotlin.String,%20android.os.Bundle)`
+- finishSession
 
 ### updateCredentials
 

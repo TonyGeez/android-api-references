@@ -18,67 +18,67 @@ It is generally true of all the reading routines in this class that if end-of-fi
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#RandomAccessFile(java.io.File,%20kotlin.String)(file: https://developer.android.com/reference/kotlin/java/io/File!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a random access file stream to read from, and optionally to write to, the file specified by the `https://developer.android.com/reference/kotlin/java/io/File` argument. |
-| `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#RandomAccessFile(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a random access file stream to read from, and optionally to write to, a file with the specified name. |
+| RandomAccessFile Creates a random access file stream to read from, and optionally to write to, the file specified by the File argument. |
+| RandomAccessFile Creates a random access file stream to read from, and optionally to write to, a file with the specified name. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#close()()` Closes this random access file stream and releases any system resources associated with the stream. |
-| [FileChannel](../java.nio.channels/FileChannel.md)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getChannel()()` Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` object associated with this file. |
-| [FileDescriptor](FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getFD()()` Returns the opaque file descriptor object associated with this stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes this random access file stream and releases any system resources associated with the stream. |
+| [FileChannel](../java.nio.channels/FileChannel.md)! | getChannel Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` object associated with this file. |
+| [FileDescriptor](FileDescriptor.md)! | getFD Returns the opaque file descriptor object associated with this stream. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getFilePointer()()` Returns the current offset in this file. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#length()()` Returns the length of this file. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#read()()` Reads a byte of data from this file. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getFilePointer Returns the current offset in this file. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | length Returns the length of this file. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Reads a byte of data from this file. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#read(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Reads up to `b.length` bytes of data from this file into an array of bytes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads up to `len` bytes of data from this file into an array of bytes. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readBoolean()()` Reads a `boolean` from this file. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Reads up to `b.length` bytes of data from this file into an array of bytes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Reads up to `len` bytes of data from this file into an array of bytes. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | readBoolean Reads a `boolean` from this file. |
 | --- | --- |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readByte()()` Reads a signed eight-bit value from this file. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readChar()()` Reads a character from this file. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readDouble()()` Reads a `double` from this file. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | readByte Reads a signed eight-bit value from this file. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | readChar Reads a character from this file. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | readDouble Reads a `double` from this file. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readFloat()()` Reads a `float` from this file. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readFully(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Reads `b.length` bytes from this file into the byte array, starting at the current file pointer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readFully(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads exactly `len` bytes from this file into the byte array, starting at the current file pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | readFloat Reads a `float` from this file. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFully Reads `b.length` bytes from this file into the byte array, starting at the current file pointer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFully Reads exactly `len` bytes from this file into the byte array, starting at the current file pointer. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readInt()()` Reads a signed 32-bit integer from this file. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readLine()()` Reads the next line of text from this file. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readLong()()` Reads a signed 64-bit integer from this file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | readInt Reads a signed 32-bit integer from this file. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | readLine Reads the next line of text from this file. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | readLong Reads a signed 64-bit integer from this file. |
 | --- | --- |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readShort()()` Reads a signed 16-bit number from this file. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readUTF()()` Reads in a string from this file. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readUnsignedByte()()` Reads an unsigned eight-bit number from this file. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | readShort Reads a signed 16-bit number from this file. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | readUTF Reads in a string from this file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | readUnsignedByte Reads an unsigned eight-bit number from this file. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readUnsignedShort()()` Reads an unsigned 16-bit number from this file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#seek(kotlin.Long)(pos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the file-pointer offset, measured from the beginning of this file, at which the next read or write occurs. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#setLength(kotlin.Long)(newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the length of this file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | readUnsignedShort Reads an unsigned 16-bit number from this file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | seek Sets the file-pointer offset, measured from the beginning of this file, at which the next read or write occurs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLength Sets the length of this file. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#skipBytes(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Attempts to skip over `n` bytes of input discarding the skipped bytes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#write(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Writes `b.length` bytes from the specified byte array to this file, starting at the current file pointer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes `len` bytes from the specified byte array starting at offset `off` to this file. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | skipBytes Attempts to skip over `n` bytes of input discarding the skipped bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes `b.length` bytes from the specified byte array to this file, starting at the current file pointer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes `len` bytes from the specified byte array starting at offset `off` to this file. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#write(kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes the specified byte to this file. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeBoolean(kotlin.Boolean)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Writes a `boolean` to the file as a one-byte value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeByte(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `byte` to the file as a one-byte value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes the specified byte to this file. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBoolean Writes a `boolean` to the file as a one-byte value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeByte Writes a `byte` to the file as a one-byte value. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeBytes(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes the string to the file as a sequence of bytes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeChar(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `char` to the file as a two-byte value, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeChars(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the file as a sequence of characters. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBytes Writes the string to the file as a sequence of bytes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeChar Writes a `char` to the file as a two-byte value, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeChars Writes a string to the file as a sequence of characters. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeDouble(kotlin.Double)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Converts the double argument to a `long` using the `doubleToLongBits` method in class `Double`, and then writes that `long` value to the file as an eight-byte quantity, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeFloat(kotlin.Float)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts the float argument to an `int` using the `floatToIntBits` method in class `Float`, and then writes that `int` value to the file as a four-byte quantity, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeInt(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes an `int` to the file as four bytes, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeDouble Converts the double argument to a `long` using the `doubleToLongBits` method in class `Double`, and then writes that `long` value to the file as an eight-byte quantity, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeFloat Converts the float argument to an `int` using the `floatToIntBits` method in class `Float`, and then writes that `int` value to the file as a four-byte quantity, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeInt Writes an `int` to the file as four bytes, high byte first. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeLong(kotlin.Long)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Writes a `long` to the file as eight bytes, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeShort(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `short` to the file as two bytes, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeUTF(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the file using [modified UTF-8](DataInput.md) encoding in a machine-independent manner. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeLong Writes a `long` to the file as eight bytes, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeShort Writes a `short` to the file as two bytes, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeUTF Writes a string to the file using [modified UTF-8](DataInput.md) encoding in a machine-independent manner. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public constructors
 
@@ -92,19 +92,19 @@ RandomAccessFile(
     mode: String!)
 ```
 
-Creates a random access file stream to read from, and optionally to write to, the file specified by the `https://developer.android.com/reference/kotlin/java/io/File` argument. A new `https://developer.android.com/reference/kotlin/java/io/FileDescriptor` object is created to represent this file connection.
+Creates a random access file stream to read from, and optionally to write to, the file specified by the File argument. A new FileDescriptor object is created to represent this file connection.
 
 The mode argument specifies the access mode in which the file is to be opened. The permitted values and their meanings are:
 
 | Value | Meaning |
 |---|---|
-| "r" | Open for reading only. Invoking any of the write methods of the resulting object will cause an `https://developer.android.com/reference/kotlin/java/io/IOException` to be thrown. |
+| "r" | Open for reading only. Invoking any of the write methods of the resulting object will cause an IOException to be thrown. |
 | "rw" | Open for reading and writing. If the file does not already exist then an attempt will be made to create it. |
 | "rws" | Open for reading and writing, as with "rw", and also require that every update to the file's content or metadata be written synchronously to the underlying storage device. |
 | --- | --- |
 | "rwd" | Open for reading and writing, as with "rw", and also require that every update to the file's content be written synchronously to the underlying storage device. |
 
-The "rws" and "rwd" modes work much like the `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#force(kotlin.Boolean)` method of the `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` class, passing arguments of true and false, respectively, except that they always apply to every I/O operation and are therefore often more efficient. If the file resides on a local storage device then when an invocation of a method of this class returns it is guaranteed that all changes made to the file by that invocation will have been written to that device. This is useful for ensuring that critical information is not lost in the event of a system crash. If the file does not reside on a local device then no such guarantee is made.
+The "rws" and "rwd" modes work much like the force method of the `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` class, passing arguments of true and false, respectively, except that they always apply to every I/O operation and are therefore often more efficient. If the file resides on a local storage device then when an invocation of a method of this class returns it is guaranteed that all changes made to the file by that invocation will have been written to that device. This is useful for ensuring that critical information is not lost in the event of a system crash. If the file does not reside on a local device then no such guarantee is made.
 
 The "rwd" mode can be used to reduce the number of I/O operations performed. Using "rwd" only requires updates to the file's content to be written to storage; using "rws" requires updates to both the file's content and its metadata to be written, which generally requires at least one more low-level I/O operation.
 
@@ -124,9 +124,9 @@ If there is a security manager, its `checkRead` method is called with the pathna
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#force(kotlin.Boolean)`
+- checkRead
+- checkWrite
+- force
 
 ### RandomAccessFile
 
@@ -138,7 +138,7 @@ RandomAccessFile(
     mode: String!)
 ```
 
-Creates a random access file stream to read from, and optionally to write to, a file with the specified name. A new `https://developer.android.com/reference/kotlin/java/io/FileDescriptor` object is created to represent the connection to the file.
+Creates a random access file stream to read from, and optionally to write to, a file with the specified name. A new FileDescriptor object is created to represent the connection to the file.
 
 The mode argument specifies the access mode with which the file is to be opened. The permitted values and their meanings are as specified for the [RandomAccessFile(File,String)](RandomAccessFile.md) constructor.
 
@@ -159,8 +159,8 @@ If there is a security manager, its `checkRead` method is called with the `name`
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkRead(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkWrite(kotlin.String)`
+- checkRead
+- checkWrite
 
 ## Public methods
 
@@ -191,7 +191,7 @@ fun getChannel(): FileChannel!
 
 Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#` object associated with this file.
 
-The `https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel.html#position()` of the returned channel will always be equal to this object's file-pointer offset as returned by the `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#getFilePointer()` method. Changing this object's file-pointer offset, whether explicitly or by reading or writing bytes, will change the position of the channel, and vice versa. Changing the file's length via this object will change the length seen via the file channel, and vice versa.
+The position of the returned channel will always be equal to this object's file-pointer offset as returned by the getFilePointer method. Changing this object's file-pointer offset, whether explicitly or by reading or writing bytes, will change the position of the channel, and vice versa. Changing the file's length via this object will change the length seen via the file channel, and vice versa.
 
 | Return ||
 |---|---|
@@ -217,7 +217,7 @@ Returns the opaque file descriptor object associated with this stream.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/FileDescriptor`
+- FileDescriptor
 
 ### getFilePointer
 
@@ -265,7 +265,7 @@ open fun read(): Int
 
 Reads a byte of data from this file. The byte is returned as an integer in the range 0 to 255 (`0x00-0x0ff`). This method blocks if no input is yet available.
 
-Although `RandomAccessFile` is not a subclass of `InputStream`, this method behaves in exactly the same way as the `https://developer.android.com/reference/kotlin/java/io/InputStream#read()` method of `InputStream`.
+Although `RandomAccessFile` is not a subclass of `InputStream`, this method behaves in exactly the same way as the read method of `InputStream`.
 
 | Return ||
 |---|---|
@@ -285,7 +285,7 @@ open fun read(b: ByteArray!): Int
 
 Reads up to `b.length` bytes of data from this file into an array of bytes. This method blocks until at least one byte of input is available.
 
-Although `RandomAccessFile` is not a subclass of `InputStream`, this method behaves in exactly the same way as the `https://developer.android.com/reference/kotlin/java/io/InputStream#read(kotlin.ByteArray)` method of `InputStream`.
+Although `RandomAccessFile` is not a subclass of `InputStream`, this method behaves in exactly the same way as the read method of `InputStream`.
 
 | Parameters ||
 |---|---|
@@ -314,7 +314,7 @@ open fun read(
 
 Reads up to `len` bytes of data from this file into an array of bytes. This method blocks until at least one byte of input is available.
 
-Although `RandomAccessFile` is not a subclass of `InputStream`, this method behaves in exactly the same way as the `https://developer.android.com/reference/kotlin/java/io/InputStream#read(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)` method of `InputStream`.
+Although `RandomAccessFile` is not a subclass of `InputStream`, this method behaves in exactly the same way as the read method of `InputStream`.
 
 | Parameters ||
 |---|---|
@@ -432,8 +432,8 @@ This method blocks until the eight bytes are read, the end of the stream is dete
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readLong()`
-- `https://developer.android.com/reference/kotlin/java/lang/Double.html#longBitsToDouble(kotlin.Long)`
+- readLong
+- longBitsToDouble
 
 ### readFloat
 
@@ -458,8 +458,8 @@ This method blocks until the four bytes are read, the end of the stream is detec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readInt()`
-- `https://developer.android.com/reference/kotlin/java/lang/Float.html#intBitsToFloat(kotlin.Int)`
+- readInt
+- intBitsToFloat
 
 ### readFully
 
@@ -654,7 +654,7 @@ This method blocks until all the bytes are read, the end of the stream is detect
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#readUnsignedShort()`
+- readUnsignedShort
 
 ### readUnsignedByte
 
@@ -922,7 +922,7 @@ Writes a string to the file as a sequence of characters. Each character is writt
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/RandomAccessFile#writeChar(kotlin.Int)`
+- writeChar
 
 ### writeDouble
 
@@ -944,7 +944,7 @@ Converts the double argument to a `long` using the `doubleToLongBits` method in 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Double.html#doubleToLongBits(kotlin.Double)`
+- doubleToLongBits
 
 ### writeFloat
 
@@ -966,7 +966,7 @@ Converts the float argument to an `int` using the `floatToIntBits` method in cla
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float.html#floatToIntBits(kotlin.Float)`
+- floatToIntBits
 
 ### writeInt
 

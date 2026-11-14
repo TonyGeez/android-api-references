@@ -12,9 +12,9 @@ class ApplicationStartInfo : Parcelable
 
 Describes information related to an application process's startup.
 
-Many aspects concerning why and how an applications process was started are valuable for apps both for logging and for potential behavior changes. Reason for process start, start type, start times, throttling, and other useful diagnostic data can be obtained from `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#` records.
+Many aspects concerning why and how an applications process was started are valuable for apps both for logging and for potential behavior changes. Reason for process start, start type, start times, throttling, and other useful diagnostic data can be obtained from ApplicationStartInfo records.
 
-ApplicationStartInfo objects can be retrieved via: - `https://developer.android.com/reference/kotlin/android/app/ActivityManager#getHistoricalProcessStartReasons(kotlin.Int)`, which can be called during or after a application's startup. Using this method, an app can retrieve information about an in-progress app start. - `https://developer.android.com/reference/kotlin/android/app/ActivityManager#addApplicationStartInfoCompletionListener(java.util.concurrent.Executor,%20java.util.function.Consumer)`, which returns an ApplicationStartInfo object via a callback when the startup is complete, or immediately if requested after the startup is complete.
+ApplicationStartInfo objects can be retrieved via: - getHistoricalProcessStartReasons, which can be called during or after a application's startup. Using this method, an app can retrieve information about an in-progress app start. - addApplicationStartInfoCompletionListener, which returns an ApplicationStartInfo object via a callback when the startup is complete, or immediately if requested after the startup is complete.
 
 ## Summary
 
@@ -77,40 +77,40 @@ ApplicationStartInfo objects can be retrieved via: - `https://developer.android.
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getDefiningUid()()` Return the defining kernel user identifier, maybe different from `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()`, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to ` true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefiningUid Return the defining kernel user identifier, maybe different from getRealUid and getPackageUid, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to ` true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider. |
 | --- | --- |
-| [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getIntent()()` The intent used to launch the application. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getLaunchMode()()` An instruction on how the activity should be launched. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()()` Similar to `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()`, it's the kernel user identifier that is assigned at the package installation time. |
+| [Intent](../android.content/Intent.md)? | getIntent The intent used to launch the application. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLaunchMode An instruction on how the activity should be launched. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPackageUid Similar to getRealUid, it's the kernel user identifier that is assigned at the package installation time. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPid()()` The process id. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getProcessName()()` The actual process name it was running with. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()()` The kernel user identifier of the process, most of the time the system uses this to do access control checks. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPid The process id. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getProcessName The actual process name it was running with. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRealUid The kernel user identifier of the process, most of the time the system uses this to do access control checks. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getReason()()` The reason code of what triggered the process's start. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartComponent()()` The component type that was being started which triggered the start. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartType()()` The state of the app at startup. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getReason The reason code of what triggered the process's start. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStartComponent The component type that was being started which triggered the start. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStartType The state of the app at startup. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()()` Current state of startup. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupTimestamps()()` Various clock monotonic timestamps in nanoseconds throughout the startup process. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStartupState Current state of startup. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | getStartupTimestamps Various clock monotonic timestamps in nanoseconds throughout the startup process. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#wasForceStopped()()` Informs whether this is the first process launch for an app since it was `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#FLAG_STOPPED:kotlin.Int` for some reason. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | wasForceStopped Informs whether this is the first process launch for an app since it was `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#FLAG_STOPPED:kotlin.Int` for some reason. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -186,7 +186,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val STARTUP_STATE_ERROR: Int
 ```
 
-State indicating process startup has failed. Startup information in `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#` is incomplete, but no more will be added.
+State indicating process startup has failed. Startup information in ApplicationStartInfo is incomplete, but no more will be added.
 
  Value: 1
 
@@ -198,7 +198,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val STARTUP_STATE_FIRST_FRAME_DRAWN: Int
 ```
 
-State indicating process startup has made it to first frame draw. Startup information in `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#` is complete with potential exception of fully drawn timestamp which is not guaranteed to be set.
+State indicating process startup has made it to first frame draw. Startup information in ApplicationStartInfo is complete with potential exception of fully drawn timestamp which is not guaranteed to be set.
 
  Value: 2
 
@@ -210,7 +210,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val STARTUP_STATE_STARTED: Int
 ```
 
-State indicating process startup has started. Some information is available in `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#` and more will be added.
+State indicating process startup has started. Some information is available in ApplicationStartInfo and more will be added.
 
  Value: 0
 
@@ -546,7 +546,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val START_TIMESTAMP_SOURCE_EVENT: Int
 ```
 
-Clock monotonic timestamp of the source event which triggered this start. The timestamp is in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeNanos()` timebase. Timestamp will only be set when `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartComponent()` is equal to `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_ACTIVITY:kotlin.Int`.
+Clock monotonic timestamp of the source event which triggered this start. The timestamp is in the uptimeNanos timebase. Timestamp will only be set when getStartComponent is equal to `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_ACTIVITY:kotlin.Int`.
 
  Value: 8
 
@@ -620,7 +620,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -663,9 +663,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getDefiningUid(): Int
 ```
 
-Return the defining kernel user identifier, maybe different from `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()`, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to ` true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider.
+Return the defining kernel user identifier, maybe different from getRealUid and getPackageUid, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to ` true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 ### getIntent
 
@@ -679,7 +679,7 @@ The intent used to launch the application.
 
 Note: Intent is stripped and does not include extras.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 | Return ||
 |---|---|
@@ -695,7 +695,7 @@ fun getLaunchMode(): Int
 
 An instruction on how the activity should be launched. There are five modes that work in conjunction with activity flags in Intent objects to determine what should happen when the activity is called upon to handle an intent. Modes: `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_STANDARD:kotlin.Int` `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_TOP:kotlin.Int` `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_INSTANCE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_TASK:kotlin.Int` `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#LAUNCH_MODE_SINGLE_INSTANCE_PER_TASK:kotlin.Int`
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 | Return ||
 |---|---|
@@ -709,9 +709,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getPackageUid(): Int
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getRealUid()`, it's the kernel user identifier that is assigned at the package installation time.
+Similar to getRealUid, it's the kernel user identifier that is assigned at the package installation time.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 ### getPid
 
@@ -723,7 +723,7 @@ fun getPid(): Int
 
 The process id.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 ### getProcessName
 
@@ -735,7 +735,7 @@ fun getProcessName(): String
 
 The actual process name it was running with.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 | Return ||
 |---|---|
@@ -749,9 +749,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRealUid(): Int
 ```
 
-The kernel user identifier of the process, most of the time the system uses this to do access control checks. It's typically the uid of the package where the component is running from, except the case of isolated process, where this field identifies the kernel user identifier that this process is actually running with, while the `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getPackageUid()` identifies the kernel user identifier that is assigned at the package installation time.
+The kernel user identifier of the process, most of the time the system uses this to do access control checks. It's typically the uid of the package where the component is running from, except the case of isolated process, where this field identifies the kernel user identifier that this process is actually running with, while the getPackageUid identifies the kernel user identifier that is assigned at the package installation time.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 ### getReason
 
@@ -761,9 +761,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getReason(): Int
 ```
 
-The reason code of what triggered the process's start. Start reason provides granular reasoning on why the app is being started. Start reason should not be used for distinguishing between the component the app is being started for as some reasons may overlap with multiple components, see `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartComponent()` for this functionality instead.
+The reason code of what triggered the process's start. Start reason provides granular reasoning on why the app is being started. Start reason should not be used for distinguishing between the component the app is being started for as some reasons may overlap with multiple components, see getStartComponent for this functionality instead.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 | Return ||
 |---|---|
@@ -777,9 +777,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getStartComponent(): Int
 ```
 
-The component type that was being started which triggered the start. Start component should be used to accurately distinguish between the 4 component types: activity, service, broadcast, and content provider. This can be useful for optimizing startup flow by enabling the caller to only load the necessary dependencies for a specific component type. For more granular information on why the app is being started, see `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getReason()`.
+The component type that was being started which triggered the start. Start component should be used to accurately distinguish between the 4 component types: activity, service, broadcast, and content provider. This can be useful for optimizing startup flow by enabling the caller to only load the necessary dependencies for a specific component type. For more granular information on why the app is being started, see getReason.
 
-Note: field will be set for any `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value.
+Note: field will be set for any getStartupState value.
 
 | Return ||
 |---|---|
@@ -795,7 +795,7 @@ fun getStartType(): Int
 
 The state of the app at startup.
 
-Note: field will be set for `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()` value `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_FIRST_FRAME_DRAWN:kotlin.Int`. Not guaranteed for other states.
+Note: field will be set for getStartupState value `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_FIRST_FRAME_DRAWN:kotlin.Int`. Not guaranteed for other states.
 
 | Return ||
 |---|---|
@@ -827,7 +827,7 @@ fun getStartupTimestamps(): MutableMap<Int!, Long!>
 
 Various clock monotonic timestamps in nanoseconds throughout the startup process.
 
-Note: different timestamps will be available for different values of `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#getStartupState()`: (Subsequent rows contain all timestamps of proceding states.) For `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_STARTED:kotlin.Int`, timestamp `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_LAUNCH:kotlin.Int` will be available. For `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_ERROR:kotlin.Int`, no additional timestamps are guaranteed available. For `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_FIRST_FRAME_DRAWN:kotlin.Int`, timestamps `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_APPLICATION_ONCREATE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_BIND_APPLICATION:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FIRST_FRAME:kotlin.Int` will additionally be available. Timestamp `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FULLY_DRAWN:kotlin.Int` is never guaranteed to be available as it is dependant on devloper calling `https://developer.android.com/reference/kotlin/android/app/Activity#reportFullyDrawn()`.
+Note: different timestamps will be available for different values of getStartupState: (Subsequent rows contain all timestamps of proceding states.) For `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_STARTED:kotlin.Int`, timestamp `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_LAUNCH:kotlin.Int` will be available. For `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_ERROR:kotlin.Int`, no additional timestamps are guaranteed available. For `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#STARTUP_STATE_FIRST_FRAME_DRAWN:kotlin.Int`, timestamps `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_APPLICATION_ONCREATE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_BIND_APPLICATION:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FIRST_FRAME:kotlin.Int` will additionally be available. Timestamp `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_FULLY_DRAWN:kotlin.Int` is never guaranteed to be available as it is dependant on devloper calling reportFullyDrawn.
 
 Note: The timestamp `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_TIMESTAMP_LAUNCH:kotlin.Int` for starts of type `https://developer.android.com/reference/kotlin/android/app/ApplicationStartInfo#START_COMPONENT_SERVICE:kotlin.Int` may be incorrect in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int` and below.
 
@@ -848,8 +848,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

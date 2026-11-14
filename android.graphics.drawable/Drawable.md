@@ -10,7 +10,7 @@ abstract class Drawable
 | --- | --- |
 | ↳ | [android.graphics.drawable.Drawable](Drawable.md) |
 
-| Known Direct Subclasses [AdaptiveIconDrawable](AdaptiveIconDrawable.md), [AnimatedImageDrawable](AnimatedImageDrawable.md), [AnimatedVectorDrawable](AnimatedVectorDrawable.md), [BitmapDrawable](BitmapDrawable.md), [ColorDrawable](ColorDrawable.md), [ColorStateListDrawable](ColorStateListDrawable.md), [DrawableContainer](DrawableContainer.md), [DrawableWrapper](DrawableWrapper.md), [GradientDrawable](GradientDrawable.md), [LayerDrawable](LayerDrawable.md), [NinePatchDrawable](NinePatchDrawable.md), [PictureDrawable](PictureDrawable.md), and 2 others. |---|---| | [AdaptiveIconDrawable](AdaptiveIconDrawable.md) | This class can also be created via XML inflation using `<adaptive-icon>` tag in addition to dynamic creation. | | [AnimatedImageDrawable](AnimatedImageDrawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#` for drawing animated images (like GIF). | | [AnimatedVectorDrawable](AnimatedVectorDrawable.md) | This class animates properties of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable` with animations defined using `https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator.html#` or `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.html#`. | | [BitmapDrawable](BitmapDrawable.md) | A Drawable that wraps a bitmap and can be tiled, stretched, or aligned. | | [ColorDrawable](ColorDrawable.md) | A specialized Drawable that fills the Canvas with a specified color. | | [ColorStateListDrawable](ColorStateListDrawable.md) | A Drawable that manages a `https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorDrawable` to make it stateful and backed by a `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#`. | | [DrawableContainer](DrawableContainer.md) | A helper class that contains several `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#`s and selects which one to use. | | [DrawableWrapper](DrawableWrapper.md) | Drawable container with only one child element. | | [GradientDrawable](GradientDrawable.md) | A Drawable with a color gradient for buttons, backgrounds, etc. | | [LayerDrawable](LayerDrawable.md) | A Drawable that manages an array of other Drawables. | | [NinePatchDrawable](NinePatchDrawable.md) | A resizeable bitmap, with stretchable areas that you define. | | [PictureDrawable](PictureDrawable.md) | Drawable subclass that wraps a Picture, allowing the picture to be used wherever a Drawable is supported. | | [ShapeDrawable](ShapeDrawable.md) | A Drawable object that draws primitive shapes. | | [VectorDrawable](VectorDrawable.md) | This lets you create a drawable based on an XML vector graphic. | |
+| Known Direct Subclasses [AdaptiveIconDrawable](AdaptiveIconDrawable.md), [AnimatedImageDrawable](AnimatedImageDrawable.md), [AnimatedVectorDrawable](AnimatedVectorDrawable.md), [BitmapDrawable](BitmapDrawable.md), [ColorDrawable](ColorDrawable.md), [ColorStateListDrawable](ColorStateListDrawable.md), [DrawableContainer](DrawableContainer.md), [DrawableWrapper](DrawableWrapper.md), [GradientDrawable](GradientDrawable.md), [LayerDrawable](LayerDrawable.md), [NinePatchDrawable](NinePatchDrawable.md), [PictureDrawable](PictureDrawable.md), and 2 others. |---|---| | [AdaptiveIconDrawable](AdaptiveIconDrawable.md) | This class can also be created via XML inflation using `<adaptive-icon>` tag in addition to dynamic creation. | | [AnimatedImageDrawable](AnimatedImageDrawable.md) | Drawable for drawing animated images (like GIF). | | [AnimatedVectorDrawable](AnimatedVectorDrawable.md) | This class animates properties of a VectorDrawable with animations defined using `https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator.html#` or `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.html#`. | | [BitmapDrawable](BitmapDrawable.md) | A Drawable that wraps a bitmap and can be tiled, stretched, or aligned. | | [ColorDrawable](ColorDrawable.md) | A specialized Drawable that fills the Canvas with a specified color. | | [ColorStateListDrawable](ColorStateListDrawable.md) | A Drawable that manages a ColorDrawable to make it stateful and backed by a `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#`. | | [DrawableContainer](DrawableContainer.md) | A helper class that contains several Drawables and selects which one to use. | | [DrawableWrapper](DrawableWrapper.md) | Drawable container with only one child element. | | [GradientDrawable](GradientDrawable.md) | A Drawable with a color gradient for buttons, backgrounds, etc. | | [LayerDrawable](LayerDrawable.md) | A Drawable that manages an array of other Drawables. | | [NinePatchDrawable](NinePatchDrawable.md) | A resizeable bitmap, with stretchable areas that you define. | | [PictureDrawable](PictureDrawable.md) | Drawable subclass that wraps a Picture, allowing the picture to be used wherever a Drawable is supported. | | [ShapeDrawable](ShapeDrawable.md) | A Drawable object that draws primitive shapes. | | [VectorDrawable](VectorDrawable.md) | This lets you create a drawable based on an XML vector graphic. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AnimatedStateListDrawable](AnimatedStateListDrawable.md), [AnimationDrawable](AnimationDrawable.md), [ClipDrawable](ClipDrawable.md), [InsetDrawable](InsetDrawable.md), [LevelListDrawable](LevelListDrawable.md), [PaintDrawable](PaintDrawable.md), [RippleDrawable](RippleDrawable.md), [RotateDrawable](RotateDrawable.md), [ScaleDrawable](ScaleDrawable.md), [StateListDrawable](StateListDrawable.md), [TransitionDrawable](TransitionDrawable.md) |---|---| | [AnimatedStateListDrawable](AnimatedStateListDrawable.md) | Drawable containing a set of Drawable keyframes where the currently displayed keyframe is chosen based on the current state set. | | [AnimationDrawable](AnimationDrawable.md) | An object used to create frame-by-frame animations, defined by a series of Drawable objects, which can be used as a View object's background. | | [ClipDrawable](ClipDrawable.md) | A Drawable that clips another Drawable based on this Drawable's current level value. | | [InsetDrawable](InsetDrawable.md) | A Drawable that insets another Drawable by a specified distance or fraction of the content bounds. | | [LevelListDrawable](LevelListDrawable.md) | A resource that manages a number of alternate Drawables, each assigned a maximum numerical value. | | [PaintDrawable](PaintDrawable.md) | Drawable that draws its bounds in the given paint, with optional rounded corners. | | [RippleDrawable](RippleDrawable.md) | Drawable that shows a ripple effect in response to state changes. | | [RotateDrawable](RotateDrawable.md) | A Drawable that can rotate another Drawable based on the current level value. | | [ScaleDrawable](ScaleDrawable.md) | A Drawable that changes the size of another Drawable based on its current level value. | | [StateListDrawable](StateListDrawable.md) | Lets you assign a number of graphic images to a single Drawable and swap out the visible item by a string ID value. | | [TransitionDrawable](TransitionDrawable.md) | An extension of LayerDrawables that is intended to cross-fade between the first and second layer. | |
@@ -20,11 +20,11 @@ A Drawable is a general abstraction for "something that can be drawn." Most ofte
 
 In addition to simple drawing, Drawable provides a number of generic mechanisms for its client to interact with what is being drawn:
 
-- The #setBounds method must be called to tell the Drawable where it is drawn and how large it should be. All Drawables should respect the requested size, often simply by scaling their imagery. A client can find the preferred size for some Drawables with the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getIntrinsicHeight()` and `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getIntrinsicWidth()` methods.
-- The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getPadding(android.graphics.Rect)` method can return from some Drawables information about how to frame content that is placed inside of them. For example, a Drawable that is intended to be the frame for a button widget would need to return padding that correctly places the label inside of itself.
-- The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setState(kotlin.IntArray)` method allows the client to tell the Drawable in which state it is to be drawn, such as "focused", "selected", etc. Some drawables may modify their imagery based on the selected state.
-- The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLevel(kotlin.Int)` method allows the client to supply a single continuous controller that can modify the Drawable is displayed, such as a battery level or progress level. Some drawables may modify their imagery based on the current level.
-- A Drawable can perform animations by calling back to its client through the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` interface. All clients should support this interface (via `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setCallback(android.graphics.drawable.Drawable.Callback)`) so that animations will work. A simple way to do this is through the system facilities such as `https://developer.android.com/reference/kotlin/android/view/View.html#setBackground(android.graphics.drawable.Drawable)` and `https://developer.android.com/reference/kotlin/android/widget/ImageView.html#`.
+- The #setBounds method must be called to tell the Drawable where it is drawn and how large it should be. All Drawables should respect the requested size, often simply by scaling their imagery. A client can find the preferred size for some Drawables with the getIntrinsicHeight and getIntrinsicWidth methods.
+- The getPadding method can return from some Drawables information about how to frame content that is placed inside of them. For example, a Drawable that is intended to be the frame for a button widget would need to return padding that correctly places the label inside of itself.
+- The setState method allows the client to tell the Drawable in which state it is to be drawn, such as "focused", "selected", etc. Some drawables may modify their imagery based on the selected state.
+- The setLevel method allows the client to supply a single continuous controller that can modify the Drawable is displayed, such as a battery level or progress level. Some drawables may modify their imagery based on the current level.
+- A Drawable can perform animations by calling back to its client through the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` interface. All clients should support this interface (via setCallback) so that animations will work. A simple way to do this is through the system facilities such as setBackground and `https://developer.android.com/reference/kotlin/android/widget/ImageView.html#`.
 
 Though usually not visible to the application, Drawables may take a variety of forms:
 
@@ -45,7 +45,7 @@ All versions of Android allow the Drawable class to be extended and used at run 
 
 **Note:** Custom drawable classes are only accessible from within your application package. Other applications will not be able to load them.
 
-At a minimum, custom drawable classes must implement the abstract methods on Drawable and should override the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#draw(android.graphics.Canvas)` method to draw content.
+At a minimum, custom drawable classes must implement the abstract methods on Drawable and should override the draw method to draw content.
 
 Custom drawables classes may be used in XML in multiple ways:
 
@@ -75,114 +75,114 @@ Custom drawables classes may be used in XML in multiple ways:
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` Implement this interface if you want to create an animated drawable that extends `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#`. |
-| abstract | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` This abstract class is used by `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#`s to store shared constant state and data between Drawables. |
+| abstract | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` Implement this interface if you want to create an animated drawable that extends Drawable. |
+| abstract | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` This abstract class is used by Drawables to store shared constant state and data between Drawables. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#Drawable()()` <br /> |
+| Drawable <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#applyTheme(android.content.res.Resources.Theme)(t: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#)` Applies the specified theme to this Drawable and its children. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#canApplyTheme()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#clearColorFilter()()` Removes the color filter for this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | applyTheme Applies the specified theme to this Drawable and its children. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canApplyTheme <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearColorFilter Removes the color filter for this drawable. |
 | --- | --- |
-| [Rect](../android.graphics/Rect.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#copyBounds()()` Return a copy of the drawable's bounds in a new Rect. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#copyBounds(android.graphics.Rect)(bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Return a copy of the drawable's bounds in the specified Rect (allocated by the caller). |
-| open static [Drawable](Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromPath(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a drawable from file path name. |
+| [Rect](../android.graphics/Rect.md) | copyBounds Return a copy of the drawable's bounds in a new Rect. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyBounds Return a copy of the drawable's bounds in the specified Rect (allocated by the caller). |
+| open static [Drawable](Drawable.md)? | createFromPath Create a drawable from file path name. |
 | --- | --- |
-| open static [Drawable](Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromResourceStream(android.content.res.Resources,%20android.util.TypedValue,%20java.io.InputStream,%20kotlin.String)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#?, value: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#?, is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?, srcName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Create a drawable from an inputstream, using the given resources and value to determine density information. |
-| open static [Drawable](Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromResourceStream(android.content.res.Resources,%20android.util.TypedValue,%20java.io.InputStream,%20kotlin.String,%20android.graphics.BitmapFactory.Options)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#?, value: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#?, is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?, srcName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options.html#?)` Create a drawable from an inputstream, using the given resources and value to determine density information. |
-| open static [Drawable](Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromStream(java.io.InputStream,%20kotlin.String)(is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?, srcName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Create a drawable from an inputstream |
+| open static [Drawable](Drawable.md)? | createFromResourceStream Create a drawable from an inputstream, using the given resources and value to determine density information. |
+| open static [Drawable](Drawable.md)? | createFromResourceStream Create a drawable from an inputstream, using the given resources and value to determine density information. |
+| open static [Drawable](Drawable.md)? | createFromStream Create a drawable from an inputstream |
 | --- | --- |
-| open static [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromXml(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#)` Create a drawable from an XML document. |
-| open static [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromXml(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Create a drawable from an XML document using an optional `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#`. |
-| open static [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromXmlInner(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)` Create from inside an XML document. |
+| open static [Drawable](Drawable.md) | createFromXml Create a drawable from an XML document. |
+| open static [Drawable](Drawable.md) | createFromXml Create a drawable from an XML document using an optional `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#`. |
+| open static [Drawable](Drawable.md) | createFromXmlInner Create from inside an XML document. |
 | --- | --- |
-| open static [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#createFromXmlInner(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Create a drawable from inside an XML document using an optional `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getAlpha()()` Gets the current alpha value for the drawable. |
+| open static [Drawable](Drawable.md) | createFromXmlInner Create a drawable from inside an XML document using an optional `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | draw Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAlpha Gets the current alpha value for the drawable. |
 | --- | --- |
-| [Rect](../android.graphics/Rect.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getBounds()()` Return the drawable's bounds Rect. |
-| open [Drawable.Callback](../android/graphics/drawable/Drawable.Callback.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getCallback()()` Return the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation attached to this Drawable. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getChangingConfigurations()()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
+| [Rect](../android.graphics/Rect.md) | getBounds Return the drawable's bounds Rect. |
+| open [Drawable.Callback](../android/graphics/drawable/Drawable.Callback.md)? | getCallback Return the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation attached to this Drawable. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getChangingConfigurations Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
 | --- | --- |
-| open [ColorFilter](../android.graphics/ColorFilter.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getColorFilter()()` Returns the current color filter, or `null` if none set. |
-| open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
-| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getCurrent()()` <br /> |
+| open [ColorFilter](../android.graphics/ColorFilter.md)? | getColorFilter Returns the current color filter, or `null` if none set. |
+| open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | getConstantState Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
+| open [Drawable](Drawable.md) | getCurrent <br /> |
 | --- | --- |
-| open [Rect](../android.graphics/Rect.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getDirtyBounds()()` Return the drawable's dirty bounds Rect. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getHotspotBounds(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Populates `outRect` with the hotspot bounds. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getIntrinsicHeight()()` Returns the drawable's intrinsic height. |
+| open [Rect](../android.graphics/Rect.md) | getDirtyBounds Return the drawable's dirty bounds Rect. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getHotspotBounds Populates `outRect` with the hotspot bounds. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIntrinsicHeight Returns the drawable's intrinsic height. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getIntrinsicWidth()()` Returns the drawable's intrinsic width. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getLayoutDirection()()` Returns the resolved layout direction for this Drawable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getLevel()()` Retrieve the current level. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIntrinsicWidth Returns the drawable's intrinsic width. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLayoutDirection Returns the resolved layout direction for this Drawable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLevel Retrieve the current level. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getMinimumHeight()()` Returns the minimum height suggested by this Drawable. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getMinimumWidth()()` Returns the minimum width suggested by this Drawable. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinimumHeight Returns the minimum height suggested by this Drawable. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinimumWidth Returns the minimum width suggested by this Drawable. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOpacity Return the opacity/transparency of this Drawable. |
 | --- | --- |
-| open [Insets](../android.graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Called to get the drawable to populate the Outline that defines its drawing area. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getPadding(android.graphics.Rect)(padding: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Return in padding the insets suggested by this Drawable for placing content inside the drawable's bounds. |
+| open [Insets](../android.graphics/Insets.md) | getOpticalInsets Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getOutline Called to get the drawable to populate the Outline that defines its drawing area. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getPadding Return in padding the insets suggested by this Drawable for placing content inside the drawable's bounds. |
 | --- | --- |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getState()()` Describes the current state, as a union of primitive states, such as `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/R.attr.html#state_selected:kotlin.Int`, etc. |
-| open [Region](../android.graphics/Region.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getTransparentRegion()()` Returns a Region representing the part of the Drawable that is completely transparent. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#hasFocusStateSpecified()()` Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getState Describes the current state, as a union of primitive states, such as `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/R.attr.html#state_selected:kotlin.Int`, etc. |
+| open [Region](../android.graphics/Region.md)? | getTransparentRegion Returns a Region representing the part of the Drawable that is completely transparent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasFocusStateSpecified Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#)` Inflate this Drawable from an XML resource. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Inflate this Drawable from an XML resource optionally styled by a theme. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#invalidateSelf()()` Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable redrawn. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | inflate Inflate this Drawable from an XML resource. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | inflate Inflate this Drawable from an XML resource optionally styled by a theme. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | invalidateSelf Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable redrawn. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#isAutoMirrored()()` Tells if this Drawable will be automatically mirrored when its layout direction is RTL right-to-left. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#isFilterBitmap()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#isProjected()()` Whether this drawable requests projection. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAutoMirrored Tells if this Drawable will be automatically mirrored when its layout direction is RTL right-to-left. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFilterBitmap <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isProjected Whether this drawable requests projection. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#isVisible()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#jumpToCurrentState()()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStateful Indicates whether this drawable will change its appearance based on state. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVisible <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | jumpToCurrentState If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. |
 | --- | --- |
-| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#mutate()()` Make this drawable mutable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#onLayoutDirectionChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the drawable's resolved layout direction changes. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#resolveOpacity(kotlin.Int,%20kotlin.Int)(op1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, op2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the appropriate opacity value for two source opacities. |
+| open [Drawable](Drawable.md) | mutate Make this drawable mutable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onLayoutDirectionChanged Called when the drawable's resolved layout direction changes. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | resolveOpacity Return the appropriate opacity value for two source opacities. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#scheduleSelf(java.lang.Runnable,%20kotlin.Long)(what: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable scheduled. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify an alpha value for the drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setAutoMirrored(kotlin.Boolean)(mirrored: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether this Drawable is automatically mirrored when its layout direction is RTL (right-to left). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | scheduleSelf Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable scheduled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAlpha Specify an alpha value for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAutoMirrored Set whether this Drawable is automatically mirrored when its layout direction is RTL (right-to left). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setBounds(android.graphics.Rect)(bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Specify a bounding rectangle for the Drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify a bounding rectangle for the Drawable. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setCallback(android.graphics.drawable.Drawable.Callback)(cb: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback?)` Bind a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` object to this Drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBounds Specify a bounding rectangle for the Drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBounds Specify a bounding rectangle for the Drawable. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCallback Bind a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` object to this Drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setChangingConfigurations(kotlin.Int)(configs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)(colorFilter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#?)` Specify an optional color filter for the drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#)` Specify a color and Porter-Duff mode to be the color filter for this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setChangingConfigurations Set a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setColorFilter Specify an optional color filter for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setColorFilter Specify a color and Porter-Duff mode to be the color filter for this drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setDither(kotlin.Boolean)(dither: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set to true to have the drawable dither its colors when drawn to a device with fewer than 8-bits per color component. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setFilterBitmap(kotlin.Boolean)(filter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set to true to have the drawable filter its bitmaps with bilinear sampling when they are scaled or rotated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setHotspot(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Specifies the hotspot's location within the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDither Set to true to have the drawable dither its colors when drawn to a device with fewer than 8-bits per color component. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFilterBitmap Set to true to have the drawable filter its bitmaps with bilinear sampling when they are scaled or rotated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHotspot Specifies the hotspot's location within the drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setHotspotBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bounds to which the hotspot is constrained, if they should be different from the drawable bounds. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLayoutDirection(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the layout direction for this drawable. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLevel(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify the level for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHotspotBounds Sets the bounds to which the hotspot is constrained, if they should be different from the drawable bounds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setLayoutDirection Set the layout direction for this drawable. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setLevel Specify the level for the drawable. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setState(kotlin.IntArray)(stateSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Specify a set of states for the drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTint(kotlin.Int)(tintColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specifies tint color for this drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintBlendMode(android.graphics.BlendMode)(blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)` Specifies a tint blending mode for this drawable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setState Specify a set of states for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTint Specifies tint color for this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTintBlendMode Specifies a tint blending mode for this drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)(tint: https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#?)` Specifies tint color for this drawable as a color state list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintMode(android.graphics.PorterDuff.Mode)(tintMode: https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#?)` Specifies a tint blending mode for this drawable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setVisible(kotlin.Boolean,%20kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, restart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether this Drawable is visible. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTintList Specifies tint color for this drawable as a color state list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTintMode Specifies a tint blending mode for this drawable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setVisible Set whether this Drawable is visible. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#unscheduleSelf(java.lang.Runnable)(what: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable unscheduled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unscheduleSelf Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable unscheduled. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#onBoundsChange(android.graphics.Rect)(bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Override this in your subclass to change appearance if you vary based on the bounds. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#onLevelChange(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Override this in your subclass to change appearance if you vary based on level. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#onStateChange(kotlin.IntArray)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Override this in your subclass to change appearance if you recognize the specified state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onBoundsChange Override this in your subclass to change appearance if you vary based on the bounds. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onLevelChange Override this in your subclass to change appearance if you vary based on level. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onStateChange Override this in your subclass to change appearance if you recognize the specified state. |
 | --- | --- |
 
 ## Public constructors
@@ -370,7 +370,7 @@ Create a drawable from an XML document. For more information on how to create re
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#` | This value cannot be `null`. |
+| Drawable | This value cannot be `null`. |
 
 ### createFromXml
 
@@ -395,7 +395,7 @@ Create a drawable from an XML document using an optional `https://developer.andr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#` | This value cannot be `null`. |
+| Drawable | This value cannot be `null`. |
 
 ### createFromXmlInner
 
@@ -485,8 +485,8 @@ Return the drawable's bounds Rect. Note: for efficiency, the returned object may
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#copyBounds()`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#copyBounds(android.graphics.Rect)`
+- copyBounds
+- copyBounds
 
 ### getCallback
 
@@ -504,7 +504,7 @@ Return the current `https://developer.android.com/reference/kotlin/android/graph
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setCallback(android.graphics.drawable.Drawable.Callback)`
+- setCallback
 
 ### getChangingConfigurations
 
@@ -514,7 +514,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getChangingConfigurations(): Int
 ```
 
-Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. The default implementation returns whatever was provided through `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setChangingConfigurations(kotlin.Int)` or 0 by default. Subclasses may extend this to or in the changing configurations of any other drawables they hold.
+Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. The default implementation returns whatever was provided through setChangingConfigurations or 0 by default. Subclasses may extend this to or in the changing configurations of any other drawables they hold.
 
 | Return ||
 |---|---|
@@ -555,7 +555,7 @@ Return a `https://developer.android.com/reference/kotlin/android/graphics/drawab
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#mutate()`
+- mutate
 
 ### getCurrent
 
@@ -567,7 +567,7 @@ open fun getCurrent(): Drawable
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#` | The current drawable that will be used by this drawable. For simple drawables, this is just the drawable itself. For drawables that change state like `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable` and `https://developer.android.com/reference/kotlin/android/graphics/drawable/LevelListDrawable` this will be the child drawable currently in use. This value cannot be `null`. |
+| Drawable | The current drawable that will be used by this drawable. For simple drawables, this is just the drawable itself. For drawables that change state like StateListDrawable and LevelListDrawable this will be the child drawable currently in use. This value cannot be `null`. |
 
 ### getDirtyBounds
 
@@ -601,7 +601,7 @@ Populates `outRect` with the hotspot bounds.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setHotspotBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- setHotspotBounds
 
 ### getIntrinsicHeight
 
@@ -651,7 +651,7 @@ Returns the resolved layout direction for this Drawable.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLayoutDirection(kotlin.Int)`
+- setLayoutDirection
 
 ### getLevel
 
@@ -710,9 +710,9 @@ Return the opacity/transparency of this Drawable. The returned value is one of t
 
 An OPAQUE drawable is one that draws all all content within its bounds, completely covering anything behind the drawable. A TRANSPARENT drawable is one that draws nothing within its bounds, allowing everything behind it to show through. A TRANSLUCENT drawable is a drawable in any other state, where the drawable will draw some, but not all, of the content within its bounds and at least some content behind the drawable will be visible. If the visibility of the drawable's contents cannot be determined, the safest/best return value is TRANSLUCENT.
 
-Generally a Drawable should be as conservative as possible with the value it returns. For example, if it contains multiple child drawables and only shows one of them at a time, if only one of the children is TRANSLUCENT and the others are OPAQUE then TRANSLUCENT should be returned. You can use the method `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#resolveOpacity(kotlin.Int,%20kotlin.Int)` to perform a standard reduction of two opacities to the appropriate single output.
+Generally a Drawable should be as conservative as possible with the value it returns. For example, if it contains multiple child drawables and only shows one of them at a time, if only one of the children is TRANSLUCENT and the others are OPAQUE then TRANSLUCENT should be returned. You can use the method resolveOpacity to perform a standard reduction of two opacities to the appropriate single output.
 
-Note that the returned value does not necessarily take into account a custom alpha or color filter that has been applied by the client through the `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setAlpha(kotlin.Int)` or #setColorFilter methods. Some subclasses, such as `https://developer.android.com/reference/kotlin/android/graphics/drawable/BitmapDrawable`, `https://developer.android.com/reference/kotlin/android/graphics/drawable/ColorDrawable`, and `https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable`, do account for the value of `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setAlpha(kotlin.Int)`, but the general behavior is dependent upon the implementation of the subclass.
+Note that the returned value does not necessarily take into account a custom alpha or color filter that has been applied by the client through the setAlpha or #setColorFilter methods. Some subclasses, such as BitmapDrawable, ColorDrawable, and GradientDrawable, do account for the value of setAlpha, but the general behavior is dependent upon the implementation of the subclass.
 
 | Return ||
 |---|---|
@@ -756,7 +756,7 @@ The default behavior defines the outline to be the bounding rectangle of 0 alpha
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setOutlineProvider(android.view.ViewOutlineProvider)`
+- setOutlineProvider
 
 ### getPadding
 
@@ -814,7 +814,7 @@ open fun hasFocusStateSpecified(): Boolean
 
 Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`.
 
-Note: A View uses a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#` instance as its background and it changes its appearance based on a state. On keyboard devices, it should specify its `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int` to make sure the user knows which view is holding the focus.
+Note: A View uses a Drawable instance as its background and it changes its appearance based on a state. On keyboard devices, it should specify its `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int` to make sure the user knows which view is holding the focus.
 
 | Return ||
 |---|---|
@@ -843,7 +843,7 @@ Inflate this Drawable from an XML resource. Does not apply a theme.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)`
+- inflate
 
 ### inflate
 
@@ -884,9 +884,9 @@ open fun invalidateSelf(): Unit
 Use the current `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback` implementation to have this Drawable redrawn. Does nothing if there is no Callback attached to the Drawable.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback#invalidateDrawable(android.graphics.drawable.Drawable)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getCallback()`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setCallback(android.graphics.drawable.Drawable.Callback)`
+- invalidateDrawable
+- getCallback
+- setCallback
 
 ### isAutoMirrored
 
@@ -916,7 +916,7 @@ open fun isFilterBitmap(): Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setFilterBitmap(kotlin.Boolean)`
+- setFilterBitmap
 
 ### isProjected
 
@@ -929,7 +929,7 @@ open fun isProjected(): Boolean
 Whether this drawable requests projection. Indicates that the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode.html#` this Drawable will draw into should be drawn immediately after the closest ancestor RenderNode containing a projection receiver.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/RenderNode.html#setProjectBackwards(kotlin.Boolean)`
+- setProjectBackwards
 
 ### isStateful
 
@@ -947,7 +947,7 @@ Indicates whether this drawable will change its appearance based on state. Clien
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setState(kotlin.IntArray)`
+- setState
 
 ### isVisible
 
@@ -979,12 +979,12 @@ Make this drawable mutable. This operation cannot be reversed. A mutable drawabl
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#` | This drawable. This value cannot be `null`. |
+| Drawable | This drawable. This value cannot be `null`. |
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getConstantState()`
+- getConstantState
 
 ### onLayoutDirectionChanged
 
@@ -1006,7 +1006,7 @@ Called when the drawable's resolved layout direction changes.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setLayoutDirection(kotlin.Int)`
+- setLayoutDirection
 
 ### resolveOpacity
 
@@ -1021,7 +1021,7 @@ open static fun resolveOpacity(
 
 Return the appropriate opacity value for two source opacities. If either is UNKNOWN, that is returned; else, if either is TRANSLUCENT, that is returned; else, if either is TRANSPARENT, that is returned; else, OPAQUE is returned.
 
-This is to help in implementing `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getOpacity()`.
+This is to help in implementing getOpacity.
 
 | Parameters ||
 |---|---|
@@ -1034,7 +1034,7 @@ This is to help in implementing `https://developer.android.com/reference/kotlin/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getOpacity()`
+- getOpacity
 
 ### scheduleSelf
 
@@ -1056,7 +1056,7 @@ Use the current `https://developer.android.com/reference/kotlin/android/graphics
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback#scheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable,%20kotlin.Long)`
+- scheduleDrawable
 
 ### setAlpha
 
@@ -1131,7 +1131,7 @@ Bind a `https://developer.android.com/reference/kotlin/android/graphics/drawable
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getCallback()`
+- getCallback
 
 ### setChangingConfigurations
 
@@ -1165,7 +1165,7 @@ If a Drawable has a ColorFilter, each output pixel of the Drawable's drawing con
 
 Pass `null` to remove any existing color filter.
 
-**Note:** Setting a non-`null` color filter disables `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)`.
+**Note:** Setting a non-`null` color filter disables setTintList.
 
 | Parameters ||
 |---|---|
@@ -1183,13 +1183,13 @@ open fun setColorFilter(
 ): Unit
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)` with an instance of `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter.html#`*
+**Deprecated:** *use setColorFilter with an instance of `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter.html#`*
 
 Specify a color and Porter-Duff mode to be the color filter for this drawable.
 
-Convenience for `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)` which constructs a `https://developer.android.com/reference/kotlin/android/graphics/PorterDuffColorFilter.html#`.
+Convenience for setColorFilter which constructs a `https://developer.android.com/reference/kotlin/android/graphics/PorterDuffColorFilter.html#`.
 
-**Note:** Setting a color filter disables `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)`.
+**Note:** Setting a color filter disables setTintList.
 
 | Parameters ||
 |---|---|
@@ -1197,7 +1197,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/graphics
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)`
+- setColorFilter
 
 ### setDither
 
@@ -1210,7 +1210,7 @@ open fun setDither(dither: Boolean): Unit
 Set to true to have the drawable dither its colors when drawn to a device with fewer than 8-bits per color component.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setDither(kotlin.Boolean)`
+- setDither
 
 ### setFilterBitmap
 
@@ -1225,8 +1225,8 @@ Set to true to have the drawable filter its bitmaps with bilinear sampling when 
 This can improve appearance when bitmaps are rotated. If the drawable does not use bitmaps, this call is ignored.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#isFilterBitmap()`
-- `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFilterBitmap(kotlin.Boolean)`
+- isFilterBitmap
+- setFilterBitmap
 
 ### setHotspot
 
@@ -1271,7 +1271,7 @@ Sets the bounds to which the hotspot is constrained, if they should be different
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getHotspotBounds(android.graphics.Rect)`
+- getHotspotBounds
 
 ### setLayoutDirection
 
@@ -1293,7 +1293,7 @@ Set the layout direction for this drawable. Should be a resolved layout directio
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#getLayoutDirection()`
+- getLayoutDirection
 
 ### setLevel
 
@@ -1305,7 +1305,7 @@ fun setLevel(level: Int): Boolean
 
 Specify the level for the drawable. This allows a drawable to vary its imagery based on a continuous controller, for example to show progress or volume level.
 
-If the new level you are supplying causes the appearance of the Drawable to change, then it is responsible for calling `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#invalidateSelf()` in order to have itself redrawn, *and* true will be returned from this function.
+If the new level you are supplying causes the appearance of the Drawable to change, then it is responsible for calling invalidateSelf in order to have itself redrawn, *and* true will be returned from this function.
 
 | Parameters ||
 |---|---|
@@ -1325,7 +1325,7 @@ open fun setState(stateSet: IntArray): Boolean
 
 Specify a set of states for the drawable. These are use-case specific, so see the relevant documentation. As an example, the background for widgets like Button understand the following states: \[`https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/R.attr.html#state_pressed:kotlin.Int`\].
 
-If the new state you are supplying causes the appearance of the Drawable to change, then it is responsible for calling `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#invalidateSelf()` in order to have itself redrawn, *and* true will be returned from this function.
+If the new state you are supplying causes the appearance of the Drawable to change, then it is responsible for calling invalidateSelf in order to have itself redrawn, *and* true will be returned from this function.
 
 Note: The Drawable holds a reference on to stateSet until a new state array is given to it, so you must not modify this array during that time.
 
@@ -1347,11 +1347,11 @@ open fun setTint(tintColor: Int): Unit
 
 Specifies tint color for this drawable.
 
-A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)`.
+A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to setColorFilter.
 
-To clear the tint, pass `null` to `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)`.
+To clear the tint, pass `null` to setTintList.
 
-**Note:** Setting a color filter via `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)` overrides tint.
+**Note:** Setting a color filter via setColorFilter or setColorFilter overrides tint.
 
 | Parameters ||
 |---|---|
@@ -1359,9 +1359,9 @@ To clear the tint, pass `null` to `https://developer.android.com/reference/kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintMode(android.graphics.PorterDuff.Mode)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintBlendMode(android.graphics.BlendMode)`
+- setTintList
+- setTintMode
+- setTintBlendMode
 
 ### setTintBlendMode
 
@@ -1375,7 +1375,7 @@ Specifies a tint blending mode for this drawable.
 
 Defines how this drawable's tint color should be blended into the drawable before it is drawn to screen. Default tint mode is `https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#`.
 
-**Note:** Setting a color filter via `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)`
+**Note:** Setting a color filter via setColorFilter
 
 | Parameters ||
 |---|---|
@@ -1383,8 +1383,8 @@ Defines how this drawable's tint color should be blended into the drawable befor
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTint(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)`
+- setTint
+- setTintList
 
 ### setTintList
 
@@ -1396,9 +1396,9 @@ open fun setTintList(tint: ColorStateList?): Unit
 
 Specifies tint color for this drawable as a color state list.
 
-A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)`.
+A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to setColorFilter.
 
-**Note:** Setting a color filter via `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)` overrides tint.
+**Note:** Setting a color filter via setColorFilter or setColorFilter overrides tint.
 
 | Parameters ||
 |---|---|
@@ -1406,9 +1406,9 @@ A Drawable's drawing content will be blended together with its tint before it is
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTint(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintMode(android.graphics.PorterDuff.Mode)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintBlendMode(android.graphics.BlendMode)`
+- setTint
+- setTintMode
+- setTintBlendMode
 
 ### setTintMode
 
@@ -1422,7 +1422,7 @@ Specifies a tint blending mode for this drawable.
 
 Defines how this drawable's tint color should be blended into the drawable before it is drawn to screen. Default tint mode is `https://developer.android.com/reference/kotlin/android/graphics/PorterDuff.Mode.html#`.
 
-**Note:** Setting a color filter via `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(android.graphics.ColorFilter)` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setColorFilter(kotlin.Int,%20android.graphics.PorterDuff.Mode)` overrides tint.
+**Note:** Setting a color filter via setColorFilter or setColorFilter overrides tint.
 
 | Parameters ||
 |---|---|
@@ -1430,8 +1430,8 @@ Defines how this drawable's tint color should be blended into the drawable befor
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTint(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable#setTintList(android.content.res.ColorStateList)`
+- setTint
+- setTintList
 
 ### setVisible
 
@@ -1471,7 +1471,7 @@ Use the current `https://developer.android.com/reference/kotlin/android/graphics
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback#unscheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable)`
+- unscheduleDrawable
 
 ## Protected methods
 

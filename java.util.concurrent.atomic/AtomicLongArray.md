@@ -16,52 +16,52 @@ A `long` array in which elements may be updated atomically. See the `https://dev
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#AtomicLongArray(kotlin.Int)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new AtomicLongArray of the given length, with all elements initially zero. |
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#AtomicLongArray(kotlin.LongArray)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!)` Creates a new AtomicLongArray with the same length as, and all elements copied from, the given array. |
+| AtomicLongArray Creates a new AtomicLongArray of the given length, with all elements initially zero. |
+| AtomicLongArray Creates a new AtomicLongArray with the same length as, and all elements copied from, the given array. |
 
 | Public methods ||
 |---|---|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#accumulateAndGet(kotlin.Int,%20kotlin.Long,%20java.util.function.LongBinaryOperator)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, accumulatorFunction: https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#!)` Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function to the current and given values, returning the updated value. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#addAndGet(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, delta: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically adds the given value to the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#compareAndExchange(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchange(kotlin.Any)`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | accumulateAndGet Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function to the current and given values, returning the updated value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | addAndGet Atomically adds the given value to the element at index `i`, with memory effects as specified by getAndAdd. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | compareAndExchange Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by compareAndExchange. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#compareAndExchangeAcquire(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#compareAndExchangeRelease(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(kotlin.Any)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#compareAndSet(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | compareAndExchangeAcquire Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by compareAndExchangeAcquire. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | compareAndExchangeRelease Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by compareAndExchangeRelease. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | compareAndSet Atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by compareAndSet. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#decrementAndGet(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Atomically decrements the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#get(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAcquire(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAcquire(kotlin.Any)`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | decrementAndGet Atomically decrements the value of the element at index `i`, with memory effects as specified by getAndAdd. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | get Returns the current value of the element at index `i`, with memory effects as specified by getVolatile. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAcquire Returns the current value of the element at index `i`, with memory effects as specified by getAcquire. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAndAccumulate(kotlin.Int,%20kotlin.Long,%20java.util.function.LongBinaryOperator)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, accumulatorFunction: https://developer.android.com/reference/kotlin/java/util/function/LongBinaryOperator.html#!)` Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function to the current and given values, returning the previous value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAndAdd(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, delta: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically adds the given value to the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAndDecrement(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Atomically decrements the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAndAccumulate Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function to the current and given values, returning the previous value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAndAdd Atomically adds the given value to the element at index `i`, with memory effects as specified by getAndAdd. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAndDecrement Atomically decrements the value of the element at index `i`, with memory effects as specified by getAndAdd. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAndIncrement(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Atomically increments the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAndSet(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically sets the element at index `i` to `newValue` and returns the old value, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndSet(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getAndUpdate(kotlin.Int,%20java.util.function.LongUnaryOperator)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, updateFunction: https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#!)` Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function, returning the previous value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAndIncrement Atomically increments the value of the element at index `i`, with memory effects as specified by getAndAdd. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAndSet Atomically sets the element at index `i` to `newValue` and returns the old value, with memory effects as specified by getAndSet. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAndUpdate Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function, returning the previous value. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getOpaque(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getOpaque(kotlin.Any)`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#getPlain(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current value of the element at index `i`, with memory semantics of reading as if the variable was declared non-`volatile`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#incrementAndGet(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Atomically increments the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getOpaque Returns the current value of the element at index `i`, with memory effects as specified by getOpaque. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPlain Returns the current value of the element at index `i`, with memory semantics of reading as if the variable was declared non-`volatile`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | incrementAndGet Atomically increments the value of the element at index `i`, with memory effects as specified by getAndAdd. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#lazySet(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#length()()` Returns the length of the array. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#set(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setVolatile(kotlin.Any)`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | lazySet Sets the element at index `i` to `newValue`, with memory effects as specified by setRelease. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | length Returns the length of the array. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the element at index `i` to `newValue`, with memory effects as specified by setVolatile. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#setOpaque(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setOpaque(kotlin.Any)`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#setPlain(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the element at index `i` to `newValue`, with memory semantics of setting as if the variable was declared non-`volatile` and non-`final`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#setRelease(kotlin.Int,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOpaque Sets the element at index `i` to `newValue`, with memory effects as specified by setOpaque. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPlain Sets the element at index `i` to `newValue`, with memory semantics of setting as if the variable was declared non-`volatile` and non-`final`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRelease Sets the element at index `i` to `newValue`, with memory effects as specified by setRelease. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#toString()()` {@return the String representation of the current values of array} |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#updateAndGet(kotlin.Int,%20java.util.function.LongUnaryOperator)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, updateFunction: https://developer.android.com/reference/kotlin/java/util/function/LongUnaryOperator.html#!)` Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function, returning the updated value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSet(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString {@return the String representation of the current values of array} |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | updateAndGet Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function, returning the updated value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | weakCompareAndSet Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetPlain. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSetAcquire(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(kotlin.Any)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSetPlain(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSetRelease(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(kotlin.Any)`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | weakCompareAndSetAcquire Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetAcquire. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | weakCompareAndSetPlain Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetPlain. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | weakCompareAndSetRelease Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetRelease. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSetVolatile(kotlin.Int,%20kotlin.Long,%20kotlin.Long)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, expectedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSet(kotlin.Any)`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | weakCompareAndSetVolatile Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSet. |
 
 ## Public constructors
 
@@ -111,7 +111,7 @@ fun accumulateAndGet(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value of the element at index `i` as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value of the element at index `i` as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |---|---|
@@ -135,7 +135,7 @@ open fun addAndGet(
 ): Long
 ```
 
-Atomically adds the given value to the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`.
+Atomically adds the given value to the element at index `i`, with memory effects as specified by getAndAdd.
 
 | Parameters ||
 |---|---|
@@ -158,7 +158,7 @@ fun compareAndExchange(
 ): Long
 ```
 
-Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchange(kotlin.Any)`.
+Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by compareAndExchange.
 
 | Parameters ||
 |---|---|
@@ -183,7 +183,7 @@ fun compareAndExchangeAcquire(
 ): Long
 ```
 
-Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(kotlin.Any)`.
+Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by compareAndExchangeAcquire.
 
 | Parameters ||
 |---|---|
@@ -208,7 +208,7 @@ fun compareAndExchangeRelease(
 ): Long
 ```
 
-Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(kotlin.Any)`.
+Atomically sets the element at index `i` to `newValue` if the element's current value, referred to as the *witness value* , `== expectedValue`, with memory effects as specified by compareAndExchangeRelease.
 
 | Parameters ||
 |---|---|
@@ -233,7 +233,7 @@ fun compareAndSet(
 ): Boolean
 ```
 
-Atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`.
+Atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by compareAndSet.
 
 | Parameters ||
 |---|---|
@@ -254,7 +254,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun decrementAndGet(i: Int): Long
 ```
 
-Atomically decrements the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`.
+Atomically decrements the value of the element at index `i`, with memory effects as specified by getAndAdd.
 
 Equivalent to `addAndGet(i, -1)`.
 
@@ -274,7 +274,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun get(i: Int): Long
 ```
 
-Returns the current value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getVolatile(kotlin.Any)`.
+Returns the current value of the element at index `i`, with memory effects as specified by getVolatile.
 
 | Parameters ||
 |---|---|
@@ -292,7 +292,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getAcquire(i: Int): Long
 ```
 
-Returns the current value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAcquire(kotlin.Any)`.
+Returns the current value of the element at index `i`, with memory effects as specified by getAcquire.
 
 | Parameters ||
 |---|---|
@@ -314,7 +314,7 @@ fun getAndAccumulate(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value of the element at index `i` as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value of the element at index `i` as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |---|---|
@@ -338,7 +338,7 @@ fun getAndAdd(
 ): Long
 ```
 
-Atomically adds the given value to the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`.
+Atomically adds the given value to the element at index `i`, with memory effects as specified by getAndAdd.
 
 | Parameters ||
 |---|---|
@@ -357,7 +357,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndDecrement(i: Int): Long
 ```
 
-Atomically decrements the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`.
+Atomically decrements the value of the element at index `i`, with memory effects as specified by getAndAdd.
 
 Equivalent to `getAndAdd(i, -1)`.
 
@@ -377,7 +377,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndIncrement(i: Int): Long
 ```
 
-Atomically increments the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`.
+Atomically increments the value of the element at index `i`, with memory effects as specified by getAndAdd.
 
 Equivalent to `getAndAdd(i, 1)`.
 
@@ -400,7 +400,7 @@ fun getAndSet(
 ): Long
 ```
 
-Atomically sets the element at index `i` to `newValue` and returns the old value, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndSet(kotlin.Any)`.
+Atomically sets the element at index `i` to `newValue` and returns the old value, with memory effects as specified by getAndSet.
 
 | Parameters ||
 |---|---|
@@ -422,7 +422,7 @@ fun getAndUpdate(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |---|---|
@@ -441,7 +441,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getOpaque(i: Int): Long
 ```
 
-Returns the current value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getOpaque(kotlin.Any)`.
+Returns the current value of the element at index `i`, with memory effects as specified by getOpaque.
 
 | Parameters ||
 |---|---|
@@ -477,7 +477,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun incrementAndGet(i: Int): Long
 ```
 
-Atomically increments the value of the element at index `i`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#getAndAdd(kotlin.Any)`.
+Atomically increments the value of the element at index `i`, with memory effects as specified by getAndAdd.
 
 Equivalent to `addAndGet(i, 1)`.
 
@@ -500,7 +500,7 @@ fun lazySet(
 ): Unit
 ```
 
-Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)`.
+Sets the element at index `i` to `newValue`, with memory effects as specified by setRelease.
 
 | Parameters ||
 |---|---|
@@ -532,7 +532,7 @@ fun set(
 ): Unit
 ```
 
-Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setVolatile(kotlin.Any)`.
+Sets the element at index `i` to `newValue`, with memory effects as specified by setVolatile.
 
 | Parameters ||
 |---|---|
@@ -550,7 +550,7 @@ fun setOpaque(
 ): Unit
 ```
 
-Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setOpaque(kotlin.Any)`.
+Sets the element at index `i` to `newValue`, with memory effects as specified by setOpaque.
 
 | Parameters ||
 |---|---|
@@ -586,7 +586,7 @@ fun setRelease(
 ): Unit
 ```
 
-Sets the element at index `i` to `newValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#setRelease(kotlin.Any)`.
+Sets the element at index `i` to `newValue`, with memory effects as specified by setRelease.
 
 | Parameters ||
 |---|---|
@@ -618,7 +618,7 @@ fun updateAndGet(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#compareAndSet(kotlin.Any)`) the element at index `i` with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by compareAndSet) the element at index `i` with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |---|---|
@@ -642,9 +642,9 @@ fun weakCompareAndSet(
 ): Boolean
 ```
 
-**Deprecated:** *This method has plain memory effects but the method name implies volatile memory effects (see methods such as `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#compareAndExchange(kotlin.Int,%20kotlin.Long,%20kotlin.Long)` and `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#compareAndSet(kotlin.Int,%20kotlin.Long,%20kotlin.Long)`). To avoid confusion over plain or volatile memory effects it is recommended that the method `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSetPlain(kotlin.Int,%20kotlin.Long,%20kotlin.Long)` be used instead.*
+**Deprecated:** *This method has plain memory effects but the method name implies volatile memory effects (see methods such as compareAndExchange and compareAndSet). To avoid confusion over plain or volatile memory effects it is recommended that the method weakCompareAndSetPlain be used instead.*
 
-Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)`.
+Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetPlain.
 
 | Parameters ||
 |---|---|
@@ -659,7 +659,7 @@ Possibly atomically sets the element at index `i` to `newValue` if the element's
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/AtomicLongArray#weakCompareAndSetPlain(kotlin.Int,%20kotlin.Long,%20kotlin.Long)`
+- weakCompareAndSetPlain
 
 ### weakCompareAndSetAcquire
 
@@ -673,7 +673,7 @@ fun weakCompareAndSetAcquire(
 ): Boolean
 ```
 
-Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(kotlin.Any)`.
+Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetAcquire.
 
 | Parameters ||
 |---|---|
@@ -698,7 +698,7 @@ fun weakCompareAndSetPlain(
 ): Boolean
 ```
 
-Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(kotlin.Any)`.
+Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetPlain.
 
 | Parameters ||
 |---|---|
@@ -723,7 +723,7 @@ fun weakCompareAndSetRelease(
 ): Boolean
 ```
 
-Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(kotlin.Any)`.
+Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSetRelease.
 
 | Parameters ||
 |---|---|
@@ -748,7 +748,7 @@ fun weakCompareAndSetVolatile(
 ): Boolean
 ```
 
-Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#weakCompareAndSet(kotlin.Any)`.
+Possibly atomically sets the element at index `i` to `newValue` if the element's current value `== expectedValue`, with memory effects as specified by weakCompareAndSet.
 
 | Parameters ||
 |---|---|

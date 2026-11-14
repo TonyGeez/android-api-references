@@ -10,13 +10,13 @@ class SubscribeConfig : Parcelable
 | --- | --- |
 | ↳ | [android.net.wifi.aware.SubscribeConfig](SubscribeConfig.md) |
 
-Defines the configuration of an Aware subscribe session. Built using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder`. Subscribe is done using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#subscribe(android.net.wifi.aware.SubscribeConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeDiscoverySession#updateSubscribe(android.net.wifi.aware.SubscribeConfig)`.
+Defines the configuration of an Aware subscribe session. Built using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder`. Subscribe is done using subscribe or updateSubscribe.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder` Builder used to build `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder` Builder used to build SubscribeConfig objects. |
 
 | Constants ||
 |---|---|
@@ -25,32 +25,32 @@ Defines the configuration of an Aware subscribe session. Built using `https://de
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getEgressDistanceMm()()` Get the egress distance in mm. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getEgressDistanceMm Get the egress distance in mm. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getIngressDistanceMm()()` Get the ingress distance in mm. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getInstantCommunicationBand()()` Check if enable instant mode on 5G for this subscribe session |
-| [AwarePairingConfig](AwarePairingConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getPairingConfig()()` Get the Aware Pairing config for this subscribe session |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIngressDistanceMm Get the ingress distance in mm. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInstantCommunicationBand Check if enable instant mode on 5G for this subscribe session |
+| [AwarePairingConfig](AwarePairingConfig.md)? | getPairingConfig Get the Aware Pairing config for this subscribe session |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#isFrameworkOffloadedPairingEnabled()()` Get whether framework offloaded pairing is enabled for this subscribe config. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#isInstantCommunicationModeEnabled()()` Check if instant mode is enabled for this subscribe session. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFrameworkOffloadedPairingEnabled Get whether framework offloaded pairing is enabled for this subscribe config. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInstantCommunicationModeEnabled Check if instant mode is enabled for this subscribe session. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -66,7 +66,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val SUBSCRIBE_TYPE_ACTIVE: Int
 ```
 
-Defines an active subscribe session - a subscribe session where subscribe packets are transmitted over-the-air. Configuration is done using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setSubscribeType(kotlin.Int)`.
+Defines an active subscribe session - a subscribe session where subscribe packets are transmitted over-the-air. Configuration is done using setSubscribeType.
 
  Value: 1
 
@@ -78,7 +78,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val SUBSCRIBE_TYPE_PASSIVE: Int
 ```
 
-Defines a passive subscribe session - a subscribe session where subscribe packets are not transmitted over-the-air and the device listens and matches to transmitted publish packets. Configuration is done using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setSubscribeType(kotlin.Int)`.
+Defines a passive subscribe session - a subscribe session where subscribe packets are not transmitted over-the-air and the device listens and matches to transmitted publish packets. Configuration is done using setSubscribeType.
 
  Value: 0
 
@@ -92,7 +92,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -134,7 +134,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getEgressDistanceMm(): Int
 ```
 
-Get the egress distance in mm. See `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setEgressDistanceMm(kotlin.Int)`.
+Get the egress distance in mm. See setEgressDistanceMm.
 
 | Return ||
 |---|---|
@@ -152,7 +152,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getIngressDistanceMm(): Int
 ```
 
-Get the ingress distance in mm. See `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setIngressDistanceMm(kotlin.Int)`.
+Get the ingress distance in mm. See setIngressDistanceMm.
 
 | Return ||
 |---|---|
@@ -178,7 +178,7 @@ Check if enable instant mode on 5G for this subscribe session
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setInstantCommunicationModeEnabled(kotlin.Boolean,%20kotlin.Int)`
+- setInstantCommunicationModeEnabled
 
 ### getPairingConfig
 
@@ -192,11 +192,11 @@ Get the Aware Pairing config for this subscribe session
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig?` | A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig` specified in this config. This value may be `null`. |
+| AwarePairingConfig | A AwarePairingConfig specified in this config. This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setPairingConfig(android.net.wifi.aware.AwarePairingConfig)`
+- setPairingConfig
 
 ### hashCode
 
@@ -211,8 +211,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -230,7 +230,7 @@ Get whether framework offloaded pairing is enabled for this subscribe config.
 
 If this is enabled, the wifi framework will attempt to perform Wi-Fi Aware pairing automatically before starting the NAN datapath. When pairing happens for the first time, user authorization may be required (such as entering a pincode or password on the system UI).
 
-As a result, apps are highly recommended to increase their connection timeout to at least 30 seconds when starting a datapath with this field enabled. Additionally, if the app is using framework offloaded pairing, the framework will override the `https://developer.android.com/reference/kotlin/android/net/wifi/aware/AwarePairingConfig` with a framework managed configuration.
+As a result, apps are highly recommended to increase their connection timeout to at least 30 seconds when starting a datapath with this field enabled. Additionally, if the app is using framework offloaded pairing, the framework will override the AwarePairingConfig with a framework managed configuration.
 
 | Return ||
 |---|---|
@@ -252,7 +252,7 @@ Check if instant mode is enabled for this subscribe session.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder#setInstantCommunicationModeEnabled(kotlin.Boolean,%20kotlin.Int)`
+- setInstantCommunicationModeEnabled
 
 ### toString
 

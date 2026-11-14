@@ -16,38 +16,38 @@ This class encapsulates a completion offered by an application that wants it to 
 
 Most applications who want to send completions to an IME should use `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.html#` as this class makes this process easy. In this case, the application would not have to deal directly with this class.
 
-An application who implements its own editor and wants direct control over this would create an array of CompletionInfo objects, and send it to the IME using `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#displayCompletions(android.view.View,%20kotlin.Array)`. The IME would present the completions however they see fit, and call back to the editor through `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitCompletion(android.view.inputmethod.CompletionInfo)`. The application can then pick up the commit event by overriding `https://developer.android.com/reference/kotlin/android/widget/TextView.html#onCommitCompletion(android.view.inputmethod.CompletionInfo)`.
+An application who implements its own editor and wants direct control over this would create an array of CompletionInfo objects, and send it to the IME using displayCompletions. The IME would present the completions however they see fit, and call back to the editor through commitCompletion. The application can then pick up the commit event by overriding onCommitCompletion.
 
 ## Summary
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#CompletionInfo(kotlin.Long,%20kotlin.Int,%20kotlin.CharSequence)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Create a simple completion with just text, no label. |
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#CompletionInfo(kotlin.Long,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.CharSequence)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Create a full completion with both text and label. |
+| CompletionInfo Create a simple completion with just text, no label. |
+| CompletionInfo Create a full completion with both text and label. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getId()()` Return the abstract identifier for this completion, typically corresponding to the id associated with it in the original adapter. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getLabel()()` Return the user-visible label for the completion, or null if the plain text should be shown. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getId Return the abstract identifier for this completion, typically corresponding to the id associated with it in the original adapter. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getLabel Return the user-visible label for the completion, or null if the plain text should be shown. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getPosition()()` Return the original position of this completion, typically corresponding to its position in the original adapter. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#getText()()` Return the actual text associated with this completion. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#toString()()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPosition Return the original position of this completion, typically corresponding to its position in the original adapter. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getText Return the actual text associated with this completion. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 | Properties ||
 |---|---|
@@ -107,7 +107,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

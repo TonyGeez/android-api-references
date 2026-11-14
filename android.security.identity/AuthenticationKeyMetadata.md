@@ -22,8 +22,8 @@ Data about authentication keys.
 
 | Public methods ||
 |---|---|
-| [Instant](../java.time/Instant.md) | `https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata#getExpirationDate()()` Gets expiration date for the authentication key. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/AuthenticationKeyMetadata#getUsageCount()()` Gets usage count for the authentication key. |
+| [Instant](../java.time/Instant.md) | getExpirationDate Gets expiration date for the authentication key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUsageCount Gets usage count for the authentication key. |
 
 ## Public methods
 

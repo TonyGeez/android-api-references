@@ -14,8 +14,8 @@ Listener to monitor serial port connections and disconnections.
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPortListener#onSerialPortConnected(android.hardware.serial.SerialPort)(port: https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort)` Called when a supported serial port is connected. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPortListener#onSerialPortDisconnected(android.hardware.serial.SerialPort)(port: https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort)` Called when a supported serial port is disconnected. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSerialPortConnected Called when a supported serial port is connected. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSerialPortDisconnected Called when a supported serial port is disconnected. |
 
 ## Public methods
 

@@ -17,7 +17,7 @@ Implementors of this interface can add themselves as update listeners to an `Val
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/ValueAnimator.AnimatorUpdateListener#onAnimationUpdate(android.animation.ValueAnimator)(animation: https://developer.android.com/reference/kotlin/android/animation/ValueAnimator)` Notifies the occurrence of another frame of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onAnimationUpdate Notifies the occurrence of another frame of the animation. |
 
 ## Public methods
 

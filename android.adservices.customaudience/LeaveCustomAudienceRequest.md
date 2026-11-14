@@ -23,15 +23,15 @@ The request object is used to leave a custom audience.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest.Builder` Builder for LeaveCustomAudienceRequest objects. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` objects contain the same information. |
-| [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#getBuyer()()` Gets the buyer's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`, as identified by a domain in the form "buyerexample. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#getName()()` Gets the arbitrary string provided by the owner and buyer on creation of the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience` object that represents a single custom audience. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks whether two LeaveCustomAudienceRequest objects contain the same information. |
+| [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | getBuyer Gets the buyer's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`, as identified by a domain in the form "buyerexample. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName Gets the arbitrary string provided by the owner and buyer on creation of the CustomAudience object that represents a single custom audience. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` object's data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hash of the LeaveCustomAudienceRequest object's data. |
 
 ## Public methods
 
@@ -46,7 +46,7 @@ fun equals(other: Any?): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` objects contain the same information.
+Checks whether two LeaveCustomAudienceRequest objects contain the same information.
 
 | Parameters ||
 |---|---|
@@ -86,7 +86,7 @@ fun getName(): String
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the arbitrary string provided by the owner and buyer on creation of the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience` object that represents a single custom audience.
+Gets the arbitrary string provided by the owner and buyer on creation of the CustomAudience object that represents a single custom audience.
 
 | Return ||
 |---|---|
@@ -103,7 +103,7 @@ fun hashCode(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/LeaveCustomAudienceRequest#` object's data.
+Returns the hash of the LeaveCustomAudienceRequest object's data.
 
 | Return ||
 |---|---|

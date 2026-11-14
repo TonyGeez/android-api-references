@@ -16,61 +16,61 @@ This class represents the set of symbols (such as the decimal separator, the gro
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#DecimalFormatSymbols()()` Create a DecimalFormatSymbols object for the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#` locale. |
-| `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#DecimalFormatSymbols(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Create a DecimalFormatSymbols object for the given locale. |
+| DecimalFormatSymbols Create a DecimalFormatSymbols object for the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#` locale. |
+| DecimalFormatSymbols Create a DecimalFormatSymbols object for the given locale. |
 
 | Public methods ||
 |---|---|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#clone()()` Standard override. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Override equals. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getAvailableLocales()()` Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Standard override. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Override equals. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | getAvailableLocales Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
 | --- | --- |
-| open [Currency](../java.util/Currency.md)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getCurrency()()` Gets the currency of these DecimalFormatSymbols. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getCurrencySymbol()()` Returns the currency symbol for the currency of these DecimalFormatSymbols in their locale. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getDecimalSeparator()()` Gets the character used for decimal sign. |
+| open [Currency](../java.util/Currency.md)! | getCurrency Gets the currency of these DecimalFormatSymbols. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getCurrencySymbol Returns the currency symbol for the currency of these DecimalFormatSymbols in their locale. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getDecimalSeparator Gets the character used for decimal sign. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getDigit()()` Gets the character used for a digit in a pattern. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getExponentSeparator()()` Returns the string used to separate the mantissa from the exponent. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getGroupingSeparator()()` Gets the character used for grouping separator. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getDigit Gets the character used for a digit in a pattern. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getExponentSeparator Returns the string used to separate the mantissa from the exponent. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getGroupingSeparator Gets the character used for grouping separator. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInfinity()()` Gets the string used to represent infinity. |
-| static [DecimalFormatSymbols](DecimalFormatSymbols.md)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance()()` Gets the `DecimalFormatSymbols` instance for the default locale. |
-| static [DecimalFormatSymbols](DecimalFormatSymbols.md)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the `DecimalFormatSymbols` instance for the specified locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getInfinity Gets the string used to represent infinity. |
+| static [DecimalFormatSymbols](DecimalFormatSymbols.md)! | getInstance Gets the `DecimalFormatSymbols` instance for the default locale. |
+| static [DecimalFormatSymbols](DecimalFormatSymbols.md)! | getInstance Gets the `DecimalFormatSymbols` instance for the specified locale. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInternationalCurrencySymbol()()` Returns the ISO 4217 currency code of the currency of these DecimalFormatSymbols. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getMinusSign()()` Gets the character used to represent minus sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getMonetaryDecimalSeparator()()` Returns the monetary decimal separator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getInternationalCurrencySymbol Returns the ISO 4217 currency code of the currency of these DecimalFormatSymbols. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getMinusSign Gets the character used to represent minus sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getMonetaryDecimalSeparator Returns the monetary decimal separator. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getMonetaryGroupingSeparator()()` Gets the character used for grouping separator for currencies. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getNaN()()` Gets the string used to represent "not a number". |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getPatternSeparator()()` Gets the character used to separate positive and negative subpatterns in a pattern. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getMonetaryGroupingSeparator Gets the character used for grouping separator for currencies. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNaN Gets the string used to represent "not a number". |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getPatternSeparator Gets the character used to separate positive and negative subpatterns in a pattern. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getPerMill()()` Gets the character used for per mille sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getPercent()()` Gets the character used for percent sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getZeroDigit()()` Gets the character used for zero. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getPerMill Gets the character used for per mille sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getPercent Gets the character used for percent sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getZeroDigit Gets the character used for zero. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#hashCode()()` Override hashCode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setCurrency(java.util.Currency)(currency: https://developer.android.com/reference/kotlin/java/util/Currency.html#!)` Sets the currency of these DecimalFormatSymbols. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setCurrencySymbol(kotlin.String)(currency: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the currency symbol for the currency of these DecimalFormatSymbols in their locale. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Override hashCode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCurrency Sets the currency of these DecimalFormatSymbols. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCurrencySymbol Sets the currency symbol for the currency of these DecimalFormatSymbols in their locale. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setDecimalSeparator(kotlin.Char)(decimalSeparator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for decimal sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setDigit(kotlin.Char)(digit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for a digit in a pattern. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setExponentSeparator(kotlin.String)(exp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the string used to separate the mantissa from the exponent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDecimalSeparator Sets the character used for decimal sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDigit Sets the character used for a digit in a pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExponentSeparator Sets the string used to separate the mantissa from the exponent. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setGroupingSeparator(kotlin.Char)(groupingSeparator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for grouping separator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setInfinity(kotlin.String)(infinity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the string used to represent infinity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setInternationalCurrencySymbol(kotlin.String)(currencyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the ISO 4217 currency code of the currency of these DecimalFormatSymbols. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setGroupingSeparator Sets the character used for grouping separator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInfinity Sets the string used to represent infinity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInternationalCurrencySymbol Sets the ISO 4217 currency code of the currency of these DecimalFormatSymbols. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setMinusSign(kotlin.Char)(minusSign: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used to represent minus sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setMonetaryDecimalSeparator(kotlin.Char)(sep: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the monetary decimal separator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setMonetaryGroupingSeparator(kotlin.Char)(monetaryGroupingSeparator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for grouping separator for currencies. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMinusSign Sets the character used to represent minus sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMonetaryDecimalSeparator Sets the monetary decimal separator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMonetaryGroupingSeparator Sets the character used for grouping separator for currencies. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setNaN(kotlin.String)(NaN: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the string used to represent "not a number". |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setPatternSeparator(kotlin.Char)(patternSeparator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used to separate positive and negative subpatterns in a pattern. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setPerMill(kotlin.Char)(perMill: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for per mille sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNaN Sets the string used to represent "not a number". |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPatternSeparator Sets the character used to separate positive and negative subpatterns in a pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPerMill Sets the character used for per mille sign. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setPercent(kotlin.Char)(percent: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for percent sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setZeroDigit(kotlin.Char)(zeroDigit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Sets the character used for zero. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPercent Sets the character used for percent sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setZeroDigit Sets the character used for zero. |
 
 ## Public constructors
 
@@ -82,12 +82,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DecimalFormatSymbols()
 ```
 
-Create a DecimalFormatSymbols object for the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#` locale. It is recommended that the `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance(java.util.Locale)` method is used instead.
+Create a DecimalFormatSymbols object for the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#` locale. It is recommended that the getInstance method is used instead.
 
-This is equivalent to calling `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#DecimalFormatSymbols(java.util.Locale)`.
+This is equivalent to calling DecimalFormatSymbols.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category)`
+- getDefault
 - `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#`
 
 ### DecimalFormatSymbols
@@ -98,7 +98,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DecimalFormatSymbols(locale: Locale!)
 ```
 
-Create a DecimalFormatSymbols object for the given locale. It is recommended that the `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance(java.util.Locale)` method is used instead. If the specified locale contains the `https://developer.android.com/reference/kotlin/java/util/Locale.html#UNICODE_LOCALE_EXTENSION:kotlin.Char` for the numbering system, the instance is initialized with the specified numbering system if the JRE implementation supports it. For example,
+Create a DecimalFormatSymbols object for the given locale. It is recommended that the getInstance method is used instead. If the specified locale contains the `https://developer.android.com/reference/kotlin/java/util/Locale.html#UNICODE_LOCALE_EXTENSION:kotlin.Char` for the numbering system, the instance is initialized with the specified numbering system if the JRE implementation supports it. For example,
 
 ```kotlin
 NumberFormat.getNumberInstance(Locale.forLanguageTag("th-TH-u-nu-thai"))
@@ -240,7 +240,7 @@ Returns the string used to separate the mantissa from the exponent. Examples: "x
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setExponentSeparator(kotlin.String)`
+- setExponentSeparator
 
 ### getGroupingSeparator
 
@@ -280,7 +280,7 @@ static fun getInstance(): DecimalFormatSymbols!
 
 Gets the `DecimalFormatSymbols` instance for the default locale.
 
-This is equivalent to calling `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getInstance(java.util.Locale)`.
+This is equivalent to calling getInstance.
 
 | Return ||
 |---|---|
@@ -288,7 +288,7 @@ This is equivalent to calling `https://developer.android.com/reference/kotlin/ja
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category)`
+- getDefault
 - `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#`
 
 ### getInstance
@@ -481,8 +481,8 @@ Sets the currency of these DecimalFormatSymbols. This also sets the currency sym
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setCurrencySymbol(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setInternationalCurrencySymbol(kotlin.String)`
+- setCurrencySymbol
+- setInternationalCurrencySymbol
 
 ### setCurrencySymbol
 
@@ -546,7 +546,7 @@ Sets the string used to separate the mantissa from the exponent. Examples: "x10\
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#getExponentSeparator()`
+- getExponentSeparator
 
 ### setGroupingSeparator
 
@@ -584,7 +584,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setInternationalCurrencySymbol(currencyCode: String!): Unit
 ```
 
-Sets the ISO 4217 currency code of the currency of these DecimalFormatSymbols. If the currency code is valid (as defined by `https://developer.android.com/reference/kotlin/java/util/Currency.html#getInstance(kotlin.String)`), this also sets the currency attribute to the corresponding Currency instance and the currency symbol attribute to the currency's symbol in the DecimalFormatSymbols' locale. If the currency code is not valid, then the currency attribute is set to null and the currency symbol attribute is not modified.
+Sets the ISO 4217 currency code of the currency of these DecimalFormatSymbols. If the currency code is valid (as defined by getInstance), this also sets the currency attribute to the corresponding Currency instance and the currency symbol attribute to the currency's symbol in the DecimalFormatSymbols' locale. If the currency code is not valid, then the currency attribute is set to null and the currency symbol attribute is not modified.
 
 | Parameters ||
 |---|---|
@@ -592,8 +592,8 @@ Sets the ISO 4217 currency code of the currency of these DecimalFormatSymbols. I
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setCurrency(java.util.Currency)`
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setCurrencySymbol(kotlin.String)`
+- setCurrency
+- setCurrencySymbol
 
 ### setMinusSign
 
@@ -639,7 +639,7 @@ Sets the character used for grouping separator for currencies. Invocation of thi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/text/DecimalFormatSymbols#setGroupingSeparator(kotlin.Char)`
+- setGroupingSeparator
 
 ### setNaN
 

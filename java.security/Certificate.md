@@ -23,15 +23,15 @@ In particular, this interface is intended to be a common abstraction for constru
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Certificate#decode(java.io.InputStream)(stream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Decodes a certificate from an input stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Certificate#encode(java.io.OutputStream)(stream: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!)` Encodes the certificate to an output stream in a format that can be decoded by the `decode` method. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getFormat()()` Returns the name of the coding format. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | decode Decodes a certificate from an input stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | encode Encodes the certificate to an output stream in a format that can be decoded by the `decode` method. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getFormat Returns the name of the coding format. |
 | --- | --- |
-| abstract [Principal](Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getGuarantor()()` Returns the guarantor of the certificate, that is, the principal guaranteeing that the public key associated with this certificate is that of the principal associated with this certificate. |
-| abstract [Principal](Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getPrincipal()()` Returns the principal of the principal-key pair being guaranteed by the guarantor. |
-| abstract [PublicKey](PublicKey.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getPublicKey()()` Returns the key of the principal-key pair being guaranteed by the guarantor. |
+| abstract [Principal](Principal.md)! | getGuarantor Returns the guarantor of the certificate, that is, the principal guaranteeing that the public key associated with this certificate is that of the principal associated with this certificate. |
+| abstract [Principal](Principal.md)! | getPrincipal Returns the principal of the principal-key pair being guaranteed by the guarantor. |
+| abstract [PublicKey](PublicKey.md)! | getPublicKey Returns the key of the principal-key pair being guaranteed by the guarantor. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#toString(kotlin.Boolean)(detailed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a string that represents the contents of the certificate. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | toString Returns a string that represents the contents of the certificate. |
 
 ## Public methods
 
@@ -58,8 +58,8 @@ Decodes a certificate from an input stream. The format should be that returned b
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Certificate#encode(java.io.OutputStream)`
-- `https://developer.android.com/reference/kotlin/java/security/Certificate#getFormat()`
+- encode
+- getFormat
 
 ### encode
 
@@ -84,8 +84,8 @@ Encodes the certificate to an output stream in a format that can be decoded by t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Certificate#decode(java.io.InputStream)`
-- `https://developer.android.com/reference/kotlin/java/security/Certificate#getFormat()`
+- decode
+- getFormat
 
 ### getFormat
 

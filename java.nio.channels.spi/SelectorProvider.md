@@ -12,9 +12,9 @@ abstract class SelectorProvider
 
 Service-provider class for selectors and selectable channels.
 
-A selector provider is a concrete subclass of this class that has a zero-argument constructor and implements the abstract methods specified below. A given invocation of the Java virtual machine maintains a single system-wide default provider instance, which is returned by the `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#provider()` method. The first invocation of that method will locate the default provider as specified below.
+A selector provider is a concrete subclass of this class that has a zero-argument constructor and implements the abstract methods specified below. A given invocation of the Java virtual machine maintains a single system-wide default provider instance, which is returned by the provider method. The first invocation of that method will locate the default provider as specified below.
 
-The system-wide default provider is used by the static `open` methods of the java.nio.channels.DatagramChannel#open, `https://developer.android.com/reference/kotlin/java/nio/channels/Pipe.html#open()`, `https://developer.android.com/reference/kotlin/java/nio/channels/Selector.html#open()`, `https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#open()`, and java.nio.channels.SocketChannel#open classes. It is also used by the `https://developer.android.com/reference/kotlin/java/lang/System.html#inheritedChannel()` method. A program may make use of a provider other than the default provider by instantiating that provider and then directly invoking the `open` methods defined in this class.
+The system-wide default provider is used by the static `open` methods of the java.nio.channels.DatagramChannel#open, open, open, open, and java.nio.channels.SocketChannel#open classes. It is also used by the inheritedChannel method. A program may make use of a provider other than the default provider by instantiating that provider and then directly invoking the `open` methods defined in this class.
 
 All of the methods in this class are safe for use by multiple concurrent threads.
 
@@ -22,20 +22,20 @@ All of the methods in this class are safe for use by multiple concurrent threads
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#SelectorProvider()()` Initializes a new instance of this class. |
+| SelectorProvider Initializes a new instance of this class. |
 
 | Public methods ||
 |---|---|
-| open [Channel](../java.nio.channels/Channel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#inheritedChannel()()` Returns the channel inherited from the entity that created this Java virtual machine. |
-| abstract [DatagramChannel](../java.nio.channels/DatagramChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openDatagramChannel()()` Opens a datagram channel. |
-| abstract [DatagramChannel](../java.nio.channels/DatagramChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openDatagramChannel(java.net.ProtocolFamily)(family: https://developer.android.com/reference/kotlin/java/net/ProtocolFamily.html#!)` Opens a datagram channel. |
+| open [Channel](../java.nio.channels/Channel.md)! | inheritedChannel Returns the channel inherited from the entity that created this Java virtual machine. |
+| abstract [DatagramChannel](../java.nio.channels/DatagramChannel.md)! | openDatagramChannel Opens a datagram channel. |
+| abstract [DatagramChannel](../java.nio.channels/DatagramChannel.md)! | openDatagramChannel Opens a datagram channel. |
 | --- | --- |
-| abstract [Pipe](../java.nio.channels/Pipe.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openPipe()()` Opens a pipe. |
-| abstract [AbstractSelector](AbstractSelector.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openSelector()()` Opens a selector. |
-| abstract [ServerSocketChannel](../java.nio.channels/ServerSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openServerSocketChannel()()` Opens a server-socket channel. |
+| abstract [Pipe](../java.nio.channels/Pipe.md)! | openPipe Opens a pipe. |
+| abstract [AbstractSelector](AbstractSelector.md)! | openSelector Opens a selector. |
+| abstract [ServerSocketChannel](../java.nio.channels/ServerSocketChannel.md)! | openServerSocketChannel Opens a server-socket channel. |
 | --- | --- |
-| abstract [SocketChannel](../java.nio.channels/SocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#openSocketChannel()()` Opens a socket channel. |
-| open static [SelectorProvider](SelectorProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/SelectorProvider#provider()()` Returns the system-wide default selector provider for this invocation of the Java virtual machine. |
+| abstract [SocketChannel](../java.nio.channels/SocketChannel.md)! | openSocketChannel Opens a socket channel. |
+| open static [SelectorProvider](SelectorProvider.md)! | provider Returns the system-wide default selector provider for this invocation of the Java virtual machine. |
 
 ## Protected constructors
 

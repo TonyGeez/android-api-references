@@ -20,92 +20,92 @@ In general, if sb refers to an instance of a `StringBuilder`, then `sb.append(x)
 
 Every string builder has a capacity. As long as the length of the character sequence contained in the string builder does not exceed the capacity, it is not necessary to allocate a new internal buffer. If the internal buffer overflows, it is automatically made larger.
 
-Instances of `StringBuilder` are not safe for use by multiple threads. If such synchronization is required then it is recommended that `https://developer.android.com/reference/kotlin/java/lang/StringBuffer` be used.
+Instances of `StringBuilder` are not safe for use by multiple threads. If such synchronization is required then it is recommended that StringBuffer be used.
 
-Unless otherwise noted, passing a `null` argument to a constructor or method in this class will cause a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException` to be thrown.
+Unless otherwise noted, passing a `null` argument to a constructor or method in this class will cause a NullPointerException to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#StringBuilder()()` Constructs a string builder with no characters in it and an initial capacity of 16 characters. |
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#StringBuilder(kotlin.Int)(capacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a string builder with no characters in it and an initial capacity specified by the `capacity` argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#StringBuilder(kotlin.CharSequence)(seq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Constructs a string builder that contains the same characters as the specified `CharSequence`. |
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#StringBuilder(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a string builder initialized to the contents of the specified string. |
+| StringBuilder Constructs a string builder with no characters in it and an initial capacity of 16 characters. |
+| StringBuilder Constructs a string builder with no characters in it and an initial capacity specified by the `capacity` argument. |
+| StringBuilder Constructs a string builder that contains the same characters as the specified `CharSequence`. |
+| StringBuilder Constructs a string builder initialized to the contents of the specified string. |
 
 | Public methods ||
 |---|---|
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends the specified character to this `Appendable`. |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.CharArray)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` <br /> |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | append Appends the specified character to this `Appendable`. |
+| [StringBuilder](StringBuilder.md) | append <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | append <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Appends the specified character sequence to this `Appendable`. |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | append Appends the specified character sequence to this `Appendable`. |
+| [StringBuilder](StringBuilder.md) | append <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(java.lang.StringBuffer)(sb: https://developer.android.com/reference/kotlin/java/lang/StringBuffer?)` Appends the specified `StringBuffer` to this sequence. |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | append Appends the specified `StringBuffer` to this sequence. |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#append(kotlin.Long)(lng: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#appendCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#capacity()()` Returns the current capacity. |
+| [StringBuilder](StringBuilder.md) | append <br /> |
+| [StringBuilder](StringBuilder.md) | appendCodePoint <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | capacity Returns the current capacity. |
 | --- | --- |
-| [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#codePointAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character (Unicode code point) at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#codePointBefore(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character (Unicode code point) before the specified index. |
+| [IntStream](../java.util.stream/IntStream.md) | chars Returns a stream of `int` zero-extending the `char` values from this sequence. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointAt Returns the character (Unicode code point) at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointBefore Returns the character (Unicode code point) before the specified index. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#codePointCount(kotlin.Int,%20kotlin.Int)(beginIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the number of Unicode code points in the specified text range of this sequence. |
-| [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#codePoints()()` Returns a stream of code point values from this sequence. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#compareTo(java.lang.StringBuilder)(other: https://developer.android.com/reference/kotlin/java/lang/StringBuilder#)` Compares two `StringBuilder` instances lexicographically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointCount Returns the number of Unicode code points in the specified text range of this sequence. |
+| [IntStream](../java.util.stream/IntStream.md) | codePoints Returns a stream of code point values from this sequence. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares two `StringBuilder` instances lexicographically. |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#delete(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#deleteCharAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#ensureCapacity(kotlin.Int)(minimumCapacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensures that the capacity is at least equal to the specified minimum. |
+| [StringBuilder](StringBuilder.md) | delete <br /> |
+| [StringBuilder](StringBuilder.md) | deleteCharAt <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | ensureCapacity Ensures that the capacity is at least equal to the specified minimum. |
 | --- | --- |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `char` value in this sequence at the specified index. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies characters from this sequence into the given destination array. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#indexOf(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | get Returns the `char` value in this sequence at the specified index. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChars Copies characters from this sequence into the given destination array. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#indexOf(kotlin.String,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Boolean)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Char)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.CharArray)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Double)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Float)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.CharSequence)(dstOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(dstOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Any)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.String)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#insert(kotlin.Int,%20kotlin.Long)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#lastIndexOf(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#lastIndexOf(kotlin.String,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [StringBuilder](StringBuilder.md) | insert <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#offsetByCodePoints(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, codePointOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this sequence that is offset from the given `index` by `codePointOffset` code points. |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#repeat(kotlin.Int,%20kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#repeat(kotlin.CharSequence,%20kotlin.Int)(cs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | offsetByCodePoints Returns the index within this sequence that is offset from the given `index` by `codePointOffset` code points. |
+| [StringBuilder](StringBuilder.md) | repeat <br /> |
+| [StringBuilder](StringBuilder.md) | repeat <br /> |
 | --- | --- |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#replace(kotlin.Int,%20kotlin.Int,%20kotlin.String)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| [StringBuilder](StringBuilder.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#reverse()()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#setCharAt(kotlin.Int,%20kotlin.Char)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` The character at the specified index is set to `ch`. |
+| [StringBuilder](StringBuilder.md) | replace <br /> |
+| [StringBuilder](StringBuilder.md) | reverse <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCharAt The character at the specified index is set to `ch`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#setLength(kotlin.Int)(newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the length of the character sequence. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#subSequence(kotlin.Int,%20kotlin.Int)(startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new character sequence that is a subsequence of this sequence. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#substring(kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new `String` that contains a subsequence of characters currently contained in this character sequence. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLength Sets the length of the character sequence. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | subSequence Returns a new character sequence that is a subsequence of this sequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | substring Returns a new `String` that contains a subsequence of characters currently contained in this character sequence. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#substring(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new `String` that contains a subsequence of characters currently contained in this sequence. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#trimToSize()()` Attempts to reduce storage used for the character sequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | substring Returns a new `String` that contains a subsequence of characters currently contained in this sequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | trimToSize Attempts to reduce storage used for the character sequence. |
 | --- | --- |
 
 | Properties ||
@@ -196,7 +196,7 @@ Appends the specified character to this `Appendable`.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#` | A reference to this `Appendable` |
+| StringBuilder | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -268,7 +268,7 @@ Depending on which class implements the character sequence `csq`, the entire seq
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#` | A reference to this `Appendable` |
+| StringBuilder | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -295,7 +295,7 @@ fun append(
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#` | A reference to this `Appendable` |
+| StringBuilder | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -338,7 +338,7 @@ Let *n* be the length of this character sequence just prior to execution of the 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#` | a reference to this object. |
+| StringBuilder | a reference to this object. |
 
 ### append
 
@@ -982,7 +982,7 @@ behaves in exactly the same way as the invocation
 ```kotlin
 <code>sb.substring(begin,&amp;nbsp;end)</code>
 ```
-This method is provided so that this class can implement the `https://developer.android.com/reference/kotlin/java/lang/CharSequence` interface.
+This method is provided so that this class can implement the CharSequence interface.
 
 | Parameters ||
 |---|---|
@@ -1067,7 +1067,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun trimToSize(): Unit
 ```
 
-Attempts to reduce storage used for the character sequence. If the buffer is larger than necessary to hold its current sequence of characters, then it may be resized to become more space efficient. Calling this method may, but is not required to, affect the value returned by a subsequent call to the `https://developer.android.com/reference/kotlin/java/lang/StringBuilder#capacity()` method.
+Attempts to reduce storage used for the character sequence. If the buffer is larger than necessary to hold its current sequence of characters, then it may be resized to become more space efficient. Calling this method may, but is not required to, affect the value returned by a subsequent call to the capacity method.
 
 ## Properties
 

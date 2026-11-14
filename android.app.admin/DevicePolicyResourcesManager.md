@@ -16,16 +16,16 @@ Class containing required APIs to set, reset, and get device policy related reso
 
 | Public methods ||
 |---|---|
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20kotlin.String,%20java.util.function.Supplier)(drawableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableSource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultDrawableLoader: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!>)` Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`, but also accepts a `drawableSource` which could result in returning a different drawable than `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)` if an override was set for that specific source. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)(drawableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultDrawableLoader: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!>)` Returns the appropriate updated drawable for the `drawableId` with style `drawableStyle` if one was set using `setDrawables`, otherwise returns the drawable from `defaultDrawableLoader`. |
-| open [Icon](../android.graphics.drawable/Icon.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawableAsIcon(kotlin.String,%20kotlin.String,%20android.graphics.drawable.Icon)(drawableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultIcon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#?)` Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)` but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getDrawable Similar to getDrawable, but also accepts a `drawableSource` which could result in returning a different drawable than getDrawable if an override was set for that specific source. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getDrawable Returns the appropriate updated drawable for the `drawableId` with style `drawableStyle` if one was set using `setDrawables`, otherwise returns the drawable from `defaultDrawableLoader`. |
+| open [Icon](../android.graphics.drawable/Icon.md)? | getDrawableAsIcon Similar to getDrawable but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. |
 | --- | --- |
-| open [Icon](../android.graphics.drawable/Icon.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawableAsIcon(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.graphics.drawable.Icon)(drawableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableSource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultIcon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#?)` Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20kotlin.String,%20java.util.function.Supplier)` but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawableForDensity(kotlin.String,%20kotlin.String,%20kotlin.Int,%20java.util.function.Supplier)(drawableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultDrawableLoader: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!>)` Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`, but also accepts `density`. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawableForDensity(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20java.util.function.Supplier)(drawableId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, drawableSource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultDrawableLoader: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!>)` Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`, but also accepts `density`. |
+| open [Icon](../android.graphics.drawable/Icon.md)? | getDrawableAsIcon Similar to getDrawable but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getDrawableForDensity Similar to getDrawable, but also accepts `density`. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getDrawableForDensity Similar to getDrawable, but also accepts `density`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getString(kotlin.String,%20java.util.function.Supplier)(stringId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultStringLoader: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Returns the appropriate updated string for the `stringId` (see `DevicePolicyResources.Strings`) if one was set using `setStrings`, otherwise returns the string from `defaultStringLoader`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getString(kotlin.String,%20java.util.function.Supplier,%20kotlin.Any)(stringId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultStringLoader: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, vararg formatArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getString(kotlin.String,%20java.util.function.Supplier)` but accepts `formatArgs` and returns a localized formatted string, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getString Returns the appropriate updated string for the `stringId` (see `DevicePolicyResources.Strings`) if one was set using `setStrings`, otherwise returns the string from `defaultStringLoader`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getString Similar to getString but accepts `formatArgs` and returns a localized formatted string, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java. |
 
 ## Public methods
 
@@ -42,9 +42,9 @@ open fun getDrawable(
 ): Drawable?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`, but also accepts a `drawableSource` which could result in returning a different drawable than `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)` if an override was set for that specific source.
+Similar to getDrawable, but also accepts a `drawableSource` which could result in returning a different drawable than getDrawable if an override was set for that specific source.
 
-If `drawableSource` is `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResources#UNDEFINED:kotlin.String`, it returns the appropriate string for `drawableId` and `drawableStyle` similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`.
+If `drawableSource` is `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResources#UNDEFINED:kotlin.String`, it returns the appropriate string for `drawableId` and `drawableStyle` similar to getDrawable.
 
 Calls to this API will not return `null` unless no updated drawable was found and the call to `defaultDrawableLoader` returned `null`.
 
@@ -76,7 +76,7 @@ Also returns the drawable from `defaultDrawableLoader` if `drawableId` is `https
 
 Calls to this API will not return `null` unless no updated drawable was found and the call to `defaultDrawableLoader` returned `null`.
 
-This API uses the screen density returned from `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getConfiguration()`, to set a different value use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawableForDensity(kotlin.String,%20kotlin.String,%20kotlin.Int,%20java.util.function.Supplier)`.
+This API uses the screen density returned from getConfiguration, to set a different value use getDrawableForDensity.
 
 Callers should register for `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_DEVICE_POLICY_RESOURCE_UPDATED:kotlin.String` to get notified when a resource has been updated.
 
@@ -101,7 +101,7 @@ open fun getDrawableAsIcon(
 ): Icon?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)` but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`.
+Similar to getDrawable but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`.
 
 | Parameters ||
 |---|---|
@@ -127,7 +127,7 @@ open fun getDrawableAsIcon(
 ): Icon?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20kotlin.String,%20java.util.function.Supplier)` but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`.
+Similar to getDrawable but returns an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` instead of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`.
 
 | Parameters ||
 |---|---|
@@ -154,7 +154,7 @@ open fun getDrawableForDensity(
 ): Drawable?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`, but also accepts `density`. See `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getDrawableForDensity(kotlin.Int,%20kotlin.Int,%20android.content.res.Resources.Theme)`.
+Similar to getDrawable, but also accepts `density`. See getDrawableForDensity.
 
 Calls to this API will not return `null` unless no updated drawable was found and the call to `defaultDrawableLoader` returned `null`.
 
@@ -164,7 +164,7 @@ Callers should register for `https://developer.android.com/reference/kotlin/andr
 |---|---|
 | `drawableId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The drawable ID to get the updated resource for. This value cannot be `null`. |
 | `drawableStyle` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The drawable style to use. This value cannot be `null`. |
-| `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired screen density indicated by the resource as found in `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. A value of 0 means to use the density returned from `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getConfiguration()`. |
+| `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired screen density indicated by the resource as found in `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. A value of 0 means to use the density returned from getConfiguration. |
 | --- | --- |
 | `defaultDrawableLoader` | [Supplier](../java.util.function/Supplier.md)\< [Drawable](../android.graphics.drawable/Drawable.md)!\>: To get the default drawable if no updated drawable was set for the provided params. This value cannot be `null`. |
 
@@ -182,7 +182,7 @@ open fun getDrawableForDensity(
 ): Drawable?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getDrawable(kotlin.String,%20kotlin.String,%20kotlin.String,%20java.util.function.Supplier)`, but also accepts `density`. See `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getDrawableForDensity(kotlin.Int,%20kotlin.Int,%20android.content.res.Resources.Theme)`.
+Similar to getDrawable, but also accepts `density`. See getDrawableForDensity.
 
 Calls to this API will not return `null` unless no updated drawable was found and the call to `defaultDrawableLoader` returned `null`.
 
@@ -194,7 +194,7 @@ Callers should register for `https://developer.android.com/reference/kotlin/andr
 | `drawableStyle` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The drawable style to use. This value cannot be `null`. |
 | `drawableSource` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The source for the caller. This value cannot be `null`. |
 | --- | --- |
-| `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired screen density indicated by the resource as found in `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. A value of 0 means to use the density returned from `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getConfiguration()`. |
+| `density` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired screen density indicated by the resource as found in `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`. A value of 0 means to use the density returned from getConfiguration. |
 | `defaultDrawableLoader` | [Supplier](../java.util.function/Supplier.md)\< [Drawable](../android.graphics.drawable/Drawable.md)!\>: To get the default drawable if no updated drawable was set for the provided params. This value cannot be `null`. |
 
 ### getString
@@ -235,7 +235,7 @@ open fun getString(
 ): String?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager#getString(kotlin.String,%20java.util.function.Supplier)` but accepts `formatArgs` and returns a localized formatted string, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java.lang.String#format, (see `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#getString(kotlin.Int,%20kotlin.Any)`).
+Similar to getString but accepts `formatArgs` and returns a localized formatted string, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java.lang.String#format, (see getString).
 
 Calls to this API will not return `null` unless no updated drawable was found and the call to `defaultStringLoader` returned `null`.
 

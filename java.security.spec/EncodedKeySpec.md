@@ -19,17 +19,17 @@ This class represents a public or private key in encoded format.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#EncodedKeySpec(kotlin.ByteArray)(encodedKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Creates a new `EncodedKeySpec` with the given encoded key. |
+| EncodedKeySpec Creates a new `EncodedKeySpec` with the given encoded key. |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#EncodedKeySpec(kotlin.ByteArray,%20kotlin.String)(encodedKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new `EncodedKeySpec` with the given encoded key. |
+| EncodedKeySpec Creates a new `EncodedKeySpec` with the given encoded key. |
 
 | Public methods ||
 |---|---|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#getAlgorithm()()` Returns the name of the algorithm of the encoded key. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#getEncoded()()` Returns the encoded key. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/spec/EncodedKeySpec#getFormat()()` Returns the name of the encoding format associated with this key specification. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getAlgorithm Returns the name of the algorithm of the encoded key. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getEncoded Returns the encoded key. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getFormat Returns the name of the encoding format associated with this key specification. |
 | --- | --- |
 
 ## Public constructors

@@ -46,12 +46,12 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |---|---|
-| [VirtualDevice](VirtualDevice.md)? | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#getVirtualDevice(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the details of the virtual device with the given ID, if any. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VirtualDevice](VirtualDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#getVirtualDevices()()` Returns the details of all available virtual devices. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#isVirtualCameraSupported()()` Returns true if virtual cameras can be added to virtual devices on this device. |
+| [VirtualDevice](VirtualDevice.md)? | getVirtualDevice Returns the details of the virtual device with the given ID, if any. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VirtualDevice](VirtualDevice.md)!\> | getVirtualDevices Returns the details of all available virtual devices. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVirtualCameraSupported Returns true if virtual cameras can be added to virtual devices on this device. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#registerVirtualDeviceListener(java.util.concurrent.Executor,%20android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener)` Registers a virtual device listener to receive notifications when virtual devices are created or closed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#unregisterVirtualDeviceListener(android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)(listener: https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener)` Unregisters a virtual device listener previously registered with `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#registerVirtualDeviceListener(java.util.concurrent.Executor,%20android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerVirtualDeviceListener Registers a virtual device listener to receive notifications when virtual devices are created or closed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterVirtualDeviceListener Unregisters a virtual device listener previously registered with registerVirtualDeviceListener. |
 
 ## Public methods
 
@@ -71,7 +71,7 @@ Note that if the virtual device is closed and becomes invalid, the returned obje
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice?` | the virtual device with the requested ID, or `null` if no such device exists or it has already been closed. |
+| VirtualDevice | the virtual device with the requested ID, or `null` if no such device exists or it has already been closed. |
 
 ### getVirtualDevices
 
@@ -116,12 +116,12 @@ Registers a virtual device listener to receive notifications when virtual device
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor where the listener is executed on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor where the listener is executed on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [VirtualDeviceManager.VirtualDeviceListener](../android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.md): The listener to add. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#unregisterVirtualDeviceListener(android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)`
+- unregisterVirtualDeviceListener
 
 ### unregisterVirtualDeviceListener
 
@@ -131,7 +131,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun unregisterVirtualDeviceListener(listener: VirtualDeviceManager.VirtualDeviceListener): Unit
 ```
 
-Unregisters a virtual device listener previously registered with `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#registerVirtualDeviceListener(java.util.concurrent.Executor,%20android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)`.
+Unregisters a virtual device listener previously registered with registerVirtualDeviceListener.
 
 | Parameters ||
 |---|---|
@@ -139,4 +139,4 @@ Unregisters a virtual device listener previously registered with `https://develo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager#registerVirtualDeviceListener(java.util.concurrent.Executor,%20android.companion.virtual.VirtualDeviceManager.VirtualDeviceListener)`
+- registerVirtualDeviceListener

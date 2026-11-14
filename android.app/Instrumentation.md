@@ -13,7 +13,7 @@ open class Instrumentation
 | --- | --- |
 | ↳ | [android.app.Instrumentation](Instrumentation.md) |
 
-| Known Direct Subclasses [InstrumentationTestRunner](../android.test/InstrumentationTestRunner.md), [LaunchPerformanceBase](../android.test/LaunchPerformanceBase.md) |---|---| | [InstrumentationTestRunner](../android.test/InstrumentationTestRunner.md) | An `https://developer.android.com/reference/kotlin/android/app/Instrumentation#` that runs various types of junit. | | [LaunchPerformanceBase](../android.test/LaunchPerformanceBase.md) | Base class for all launch performance Instrumentation classes. | |
+| Known Direct Subclasses [InstrumentationTestRunner](../android.test/InstrumentationTestRunner.md), [LaunchPerformanceBase](../android.test/LaunchPerformanceBase.md) |---|---| | [InstrumentationTestRunner](../android.test/InstrumentationTestRunner.md) | An Instrumentation that runs various types of junit. | | [LaunchPerformanceBase](../android.test/LaunchPerformanceBase.md) | Base class for all launch performance Instrumentation classes. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base class for implementing application instrumentation code. When running with instrumentation turned on, this class will be instantiated for you before any of the application code, allowing you to monitor all of the interaction the system has with the application. An Instrumentation implementation is described to the system through an AndroidManifest.xml's \<instrumentation\> tag.
@@ -32,103 +32,103 @@ Base class for implementing application instrumentation code. When running with 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/Instrumentation#Instrumentation()()` <br /> |
+| Instrumentation <br /> |
 
 | Public methods ||
 |---|---|
-| open [TestLooperManager](../android.os/TestLooperManager.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#acquireLooperManager(android.os.Looper)(looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#!)` Takes control of the execution of messages on the specified looper until `https://developer.android.com/reference/kotlin/android/os/TestLooperManager.html#release()` is called. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)(monitor: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor!)` Add a new `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` that will be checked whenever an activity is started. |
-| open [Instrumentation.ActivityMonitor](../android/app/Instrumentation.ActivityMonitor.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.content.IntentFilter,%20android.app.Instrumentation.ActivityResult,%20kotlin.Boolean)(filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!, result: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityResult!, block: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` A convenience wrapper for `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)` that creates an intent filter matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it. |
+| open [TestLooperManager](../android.os/TestLooperManager.md)! | acquireLooperManager Takes control of the execution of messages on the specified looper until release is called. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addMonitor Add a new `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` that will be checked whenever an activity is started. |
+| open [Instrumentation.ActivityMonitor](../android/app/Instrumentation.ActivityMonitor.md)! | addMonitor A convenience wrapper for addMonitor that creates an intent filter matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it. |
 | --- | --- |
-| open [Instrumentation.ActivityMonitor](../android/app/Instrumentation.ActivityMonitor.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(kotlin.String,%20android.app.Instrumentation.ActivityResult,%20kotlin.Boolean)(cls: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, result: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityResult!, block: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` A convenience wrapper for `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)` that creates a class matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addResults(android.os.Bundle)(results: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Report some results in the middle of instrumentation execution. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnCreate(android.app.Activity,%20android.os.Bundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, icicle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Perform calling of an activity's android. |
+| open [Instrumentation.ActivityMonitor](../android/app/Instrumentation.ActivityMonitor.md)! | addMonitor A convenience wrapper for addMonitor that creates a class matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addResults Report some results in the middle of instrumentation execution. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnCreate Perform calling of an activity's android. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnCreate(android.app.Activity,%20android.os.Bundle,%20android.os.PersistableBundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, icicle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, persistentState: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnDestroy(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnNewIntent(android.app.Activity,%20android.content.Intent)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnCreate Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnDestroy <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnNewIntent Perform calling of an activity's android. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnNewIntent(android.app.Activity,%20android.content.Intent,%20android.app.ComponentCaller)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, caller: https://developer.android.com/reference/kotlin/android/app/ComponentCaller)` Same as `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnNewIntent(android.app.Activity,%20android.content.Intent)`, but with an extra parameter for the `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance associated with the app that sent the intent. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnPause(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()` method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnPictureInPictureRequested(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onPictureInPictureRequested()` method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnNewIntent Same as callActivityOnNewIntent, but with an extra parameter for the ComponentCaller instance associated with the app that sent the intent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnPause Perform calling of an activity's onPause method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnPictureInPictureRequested Perform calling of an activity's onPictureInPictureRequested method. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnPostCreate(android.app.Activity,%20android.os.Bundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnPostCreate(android.app.Activity,%20android.os.Bundle,%20android.os.PersistableBundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, persistentState: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#?)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnRestart(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onRestart()` method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnPostCreate Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnPostCreate Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnRestart Perform calling of an activity's onRestart method. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnRestoreInstanceState(android.app.Activity,%20android.os.Bundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnRestoreInstanceState(android.app.Activity,%20android.os.Bundle,%20android.os.PersistableBundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, persistentState: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#?)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnResume(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onResume()` method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnRestoreInstanceState Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnRestoreInstanceState Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnResume Perform calling of an activity's onResume method. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnSaveInstanceState(android.app.Activity,%20android.os.Bundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnSaveInstanceState(android.app.Activity,%20android.os.Bundle,%20android.os.PersistableBundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity, outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, outPersistentState: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` Perform calling of an activity's android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnStart(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onStart()` method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnSaveInstanceState Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnSaveInstanceState Perform calling of an activity's android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnStart Perform calling of an activity's onStart method. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnStop(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onStop()` method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnUserLeaving(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!)` Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onUserLeaveHint()` method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callApplicationOnCreate(android.app.Application)(app: https://developer.android.com/reference/kotlin/android/app/Application!)` Perform calling of the application's `https://developer.android.com/reference/kotlin/android/app/Application#onCreate()` method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnStop Perform calling of an activity's onStop method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callActivityOnUserLeaving Perform calling of an activity's onUserLeaveHint method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | callApplicationOnCreate Perform calling of the application's onCreate method. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#checkMonitorHit(android.app.Instrumentation.ActivityMonitor,%20kotlin.Int)(monitor: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor!, minHits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Test whether an existing `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` has been hit. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#endPerformanceSnapshot()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#finish(kotlin.Int,%20android.os.Bundle)(resultCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, results: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Terminate instrumentation of the application. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | checkMonitorHit Test whether an existing `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` has been hit. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | endPerformanceSnapshot <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finish Terminate instrumentation of the application. |
 | --- | --- |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getAllocCounts()()` Returns a bundle with the current results from the allocation counting. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getBinderCounts()()` Returns a bundle with the counts for various binder counts for this process. |
-| open [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getComponentName()()` Returns complete component name of this instrumentation. |
+| open [Bundle](../android.os/Bundle.md)! | getAllocCounts Returns a bundle with the current results from the allocation counting. |
+| open [Bundle](../android.os/Bundle.md)! | getBinderCounts Returns a bundle with the counts for various binder counts for this process. |
+| open [ComponentName](../android.content/ComponentName.md)! | getComponentName Returns complete component name of this instrumentation. |
 | --- | --- |
-| open [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getContext()()` Return the Context of this instrumentation's package. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getProcessName()()` Return the name of the process this instrumentation is running in. |
-| open [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getTargetContext()()` Return a Context for the target application being instrumented. |
+| open [Context](../android.content/Context.md)! | getContext Return the Context of this instrumentation's package. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getProcessName Return the name of the process this instrumentation is running in. |
+| open [Context](../android.content/Context.md)! | getTargetContext Return a Context for the target application being instrumented. |
 | --- | --- |
-| open [UiAutomation](UiAutomation.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getUiAutomation()()` Gets the `https://developer.android.com/reference/kotlin/android/app/UiAutomation` instance with no flags set. |
-| open [UiAutomation](UiAutomation.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getUiAutomation(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the `https://developer.android.com/reference/kotlin/android/app/UiAutomation` instance with flags set. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#invokeContextMenuAction(android.app.Activity,%20kotlin.Int,%20kotlin.Int)(targetActivity: https://developer.android.com/reference/kotlin/android/app/Activity!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Show the context menu for the currently focused view and executes a particular context menu item. |
+| open [UiAutomation](UiAutomation.md)! | getUiAutomation Gets the UiAutomation instance with no flags set. |
+| open [UiAutomation](UiAutomation.md)! | getUiAutomation Gets the UiAutomation instance with flags set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | invokeContextMenuAction Show the context menu for the currently focused view and executes a particular context menu item. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#invokeMenuActionSync(android.app.Activity,%20kotlin.Int,%20kotlin.Int)(targetActivity: https://developer.android.com/reference/kotlin/android/app/Activity!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Execute a particular menu item. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#isProfiling()()` Check whether this instrumentation was started with profiling enabled. |
-| open [Activity](Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#newActivity(java.lang.Class,%20android.content.Context,%20android.os.IBinder,%20android.app.Application,%20android.content.Intent,%20android.content.pm.ActivityInfo,%20kotlin.CharSequence,%20android.app.Activity,%20kotlin.String,%20kotlin.Any)(clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!, context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, token: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!, application: https://developer.android.com/reference/kotlin/android/app/Application!, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, info: https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, parent: https://developer.android.com/reference/kotlin/android/app/Activity!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lastNonConfigurationInstance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Perform instantiation of an `https://developer.android.com/reference/kotlin/android/app/Activity` object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | invokeMenuActionSync Execute a particular menu item. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isProfiling Check whether this instrumentation was started with profiling enabled. |
+| open [Activity](Activity.md)! | newActivity Perform instantiation of an Activity object. |
 | --- | --- |
-| open [Activity](Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#newActivity(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Perform instantiation of the process's `https://developer.android.com/reference/kotlin/android/app/Activity` object. |
-| open [Application](Application.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#newApplication(java.lang.ClassLoader,%20kotlin.String,%20android.content.Context)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Perform instantiation of the process's `https://developer.android.com/reference/kotlin/android/app/Application` object. |
-| open static [Application](Application.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#newApplication(java.lang.Class,%20android.content.Context)(clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!, context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Perform instantiation of the process's `https://developer.android.com/reference/kotlin/android/app/Application` object. |
+| open [Activity](Activity.md)! | newActivity Perform instantiation of the process's Activity object. |
+| open [Application](Application.md)! | newApplication Perform instantiation of the process's Application object. |
+| open static [Application](Application.md)! | newApplication Perform instantiation of the process's Application object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onCreate(android.os.Bundle)(arguments: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Called when the instrumentation is starting, before any application code has been loaded. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onDestroy()()` Called when the instrumented application is stopping, after all of the normal application cleanup has occurred. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onException(kotlin.Any,%20kotlin.Throwable)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, e: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` This is called whenever the system captures an unhandled exception that was thrown by the application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCreate Called when the instrumentation is starting, before any application code has been loaded. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onDestroy Called when the instrumented application is stopping, after all of the normal application cleanup has occurred. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onException This is called whenever the system captures an unhandled exception that was thrown by the application. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onStart()()` Method where the instrumentation thread enters execution. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#removeMonitor(android.app.Instrumentation.ActivityMonitor)(monitor: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor!)` Remove an `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` that was previously added with #addMonitor. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#resetInTouchMode()()` Resets the `https://developer.android.com/reference/kotlin/android/app/Instrumentation#setInTouchMode(kotlin.Boolean)` to the device default. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onStart Method where the instrumentation thread enters execution. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeMonitor Remove an `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` that was previously added with #addMonitor. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | resetInTouchMode Resets the setInTouchMode to the device default. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#runOnMainSync(java.lang.Runnable)(runner: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Execute a call on the application's main thread, blocking until it is complete. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendCharacterSync(kotlin.Int)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sends up and down key events with the given key code to the currently focused window, and waits for it to be processed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeyDownUpSync(kotlin.Int)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sends up and down key events with the given key code to the currently focused window, and waits for it to be processed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | runOnMainSync Execute a call on the application's main thread, blocking until it is complete. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendCharacterSync Sends up and down key events with the given key code to the currently focused window, and waits for it to be processed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendKeyDownUpSync Sends up and down key events with the given key code to the currently focused window, and waits for it to be processed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeySync(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Sends a key event to the currently focused window, and waits for it to be processed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendPointerSync(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Dispatches a pointer event into a window owned by the instrumented application, and waits for it to be processed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendStatus(kotlin.Int,%20android.os.Bundle)(resultCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, results: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Provide a status report about the application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendKeySync Sends a key event to the currently focused window, and waits for it to be processed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendPointerSync Dispatches a pointer event into a window owned by the instrumented application, and waits for it to be processed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStatus Provide a status report about the application. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendStringSync(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sends the key events that result in the given text being typed into the currently focused window, and waits for it to be processed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendTrackballEventSync(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Dispatches a trackball event into the currently focused window, and waits for it to be processed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#setAutomaticPerformanceSnapshots()()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStringSync Sends the key events that result in the given text being typed into the currently focused window, and waits for it to be processed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendTrackballEventSync Dispatches a trackball event into the currently focused window, and waits for it to be processed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAutomaticPerformanceSnapshots <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#setInTouchMode(kotlin.Boolean)(inTouch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Force the global system in or out of touch mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#start()()` Create and start a new thread in which to run instrumentation. |
-| open [Activity](Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#startActivitySync(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Start a new activity and wait for it to begin running before returning. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInTouchMode Force the global system in or out of touch mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start Create and start a new thread in which to run instrumentation. |
+| open [Activity](Activity.md)! | startActivitySync Start a new activity and wait for it to begin running before returning. |
 | --- | --- |
-| open [Activity](Activity.md) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#startActivitySync(android.content.Intent,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Start a new activity and wait for it to begin running before returning. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#startAllocCounting()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#startPerformanceSnapshot()()` <br /> |
+| open [Activity](Activity.md) | startActivitySync Start a new activity and wait for it to begin running before returning. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startAllocCounting <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startPerformanceSnapshot <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#startProfiling()()` This method will start profiling if isProfiling() returns true. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#stopAllocCounting()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#stopProfiling()()` Stops profiling if isProfiling() returns true. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startProfiling This method will start profiling if isProfiling() returns true. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopAllocCounting <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopProfiling Stops profiling if isProfiling() returns true. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#waitForIdle(java.lang.Runnable)(recipient: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Schedule a callback for when the application's main thread goes idle (has no more events to process). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#waitForIdleSync()()` Synchronously wait for the application to be idle. |
-| open [Activity](Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#waitForMonitor(android.app.Instrumentation.ActivityMonitor)(monitor: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor!)` Wait for an existing `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` to be hit. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | waitForIdle Schedule a callback for when the application's main thread goes idle (has no more events to process). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | waitForIdleSync Synchronously wait for the application to be idle. |
+| open [Activity](Activity.md)! | waitForMonitor Wait for an existing `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` to be hit. |
 | --- | --- |
-| open [Activity](Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/Instrumentation#waitForMonitorWithTimeout(android.app.Instrumentation.ActivityMonitor,%20kotlin.Long)(monitor: https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor!, timeOut: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Wait for an existing `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` to be hit till the timeout expires. |
+| open [Activity](Activity.md)! | waitForMonitorWithTimeout Wait for an existing `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` to be hit till the timeout expires. |
 
 ## Constants
 
@@ -176,7 +176,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun acquireLooperManager(looper: Looper!): TestLooperManager!
 ```
 
-Takes control of the execution of messages on the specified looper until `https://developer.android.com/reference/kotlin/android/os/TestLooperManager.html#release()` is called.
+Takes control of the execution of messages on the specified looper until release is called.
 
 ### addMonitor
 
@@ -194,8 +194,8 @@ Add a new `https://developer.android.com/reference/kotlin/android/app/Instrument
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.content.IntentFilter,%20android.app.Instrumentation.ActivityResult,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#checkMonitorHit(android.app.Instrumentation.ActivityMonitor,%20kotlin.Int)`
+- addMonitor
+- checkMonitorHit
 
 ### addMonitor
 
@@ -209,7 +209,7 @@ open fun addMonitor(
 ): Instrumentation.ActivityMonitor!
 ```
 
-A convenience wrapper for `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)` that creates an intent filter matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it.
+A convenience wrapper for addMonitor that creates an intent filter matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it.
 
 | Parameters ||
 |---|---|
@@ -224,8 +224,8 @@ A convenience wrapper for `https://developer.android.com/reference/kotlin/androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)`
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#checkMonitorHit(android.app.Instrumentation.ActivityMonitor,%20kotlin.Int)`
+- addMonitor
+- checkMonitorHit
 
 ### addMonitor
 
@@ -239,7 +239,7 @@ open fun addMonitor(
 ): Instrumentation.ActivityMonitor!
 ```
 
-A convenience wrapper for `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)` that creates a class matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it.
+A convenience wrapper for addMonitor that creates a class matching `https://developer.android.com/reference/kotlin/android/app/Instrumentation.ActivityMonitor` for you and returns it.
 
 | Parameters ||
 |---|---|
@@ -254,8 +254,8 @@ A convenience wrapper for `https://developer.android.com/reference/kotlin/androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#addMonitor(android.app.Instrumentation.ActivityMonitor)`
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#checkMonitorHit(android.app.Instrumentation.ActivityMonitor,%20kotlin.Int)`
+- addMonitor
+- checkMonitorHit
 
 ### addResults
 
@@ -265,7 +265,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun addResults(results: Bundle!): Unit
 ```
 
-Report some results in the middle of instrumentation execution. Later results (including those provided by `https://developer.android.com/reference/kotlin/android/app/Instrumentation#finish(kotlin.Int,%20android.os.Bundle)`) will be combined with android.os.Bundle#putAll.
+Report some results in the middle of instrumentation execution. Later results (including those provided by finish) will be combined with android.os.Bundle#putAll.
 
 ### callActivityOnCreate
 
@@ -344,13 +344,13 @@ open fun callActivityOnNewIntent(
 ): Unit
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/app/Instrumentation#callActivityOnNewIntent(android.app.Activity,%20android.content.Intent)`, but with an extra parameter for the `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance associated with the app that sent the intent.
+Same as callActivityOnNewIntent, but with an extra parameter for the ComponentCaller instance associated with the app that sent the intent.
 
 | Parameters ||
 |---|---|
 | `activity` | [Activity](Activity.md): The activity receiving a new Intent. This value cannot be `null`. |
 | `intent` | [Intent](../android.content/Intent.md): The new intent being received. This value cannot be `null`. |
-| `caller` | [ComponentCaller](ComponentCaller.md): The `https://developer.android.com/reference/kotlin/android/app/ComponentCaller` instance that launched the activity with the new intent. This value cannot be `null`. |
+| `caller` | [ComponentCaller](ComponentCaller.md): The ComponentCaller instance that launched the activity with the new intent. This value cannot be `null`. |
 | --- | --- |
 
 ### callActivityOnPause
@@ -361,7 +361,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun callActivityOnPause(activity: Activity!): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onPause()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onPause method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -375,7 +375,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun callActivityOnPictureInPictureRequested(activity: Activity): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onPictureInPictureRequested()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onPictureInPictureRequested method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -428,7 +428,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun callActivityOnRestart(activity: Activity!): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onRestart()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onRestart method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -481,7 +481,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun callActivityOnResume(activity: Activity!): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onResume()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onResume method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -534,7 +534,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun callActivityOnStart(activity: Activity!): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onStart()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onStart method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -548,7 +548,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun callActivityOnStop(activity: Activity!): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onStop()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onStop method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -562,7 +562,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun callActivityOnUserLeaving(activity: Activity!): Unit
 ```
 
-Perform calling of an activity's `https://developer.android.com/reference/kotlin/android/app/Activity#onUserLeaveHint()` method. The default implementation simply calls through to that method.
+Perform calling of an activity's onUserLeaveHint method. The default implementation simply calls through to that method.
 
 | Parameters ||
 |---|---|
@@ -576,9 +576,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun callApplicationOnCreate(app: Application!): Unit
 ```
 
-Perform calling of the application's `https://developer.android.com/reference/kotlin/android/app/Application#onCreate()` method. The default implementation simply calls through to that method.
+Perform calling of the application's onCreate method. The default implementation simply calls through to that method.
 
-Note: This method will be called immediately after `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onCreate(android.os.Bundle)`. Often instrumentation tests start their test thread in onCreate(); you need to be careful of races between these. (Well between it and everything else, but let's start here.)
+Note: This method will be called immediately after onCreate. Often instrumentation tests start their test thread in onCreate(); you need to be careful of races between these. (Well between it and everything else, but let's start here.)
 
 | Parameters ||
 |---|---|
@@ -676,7 +676,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getContext(): Context!
 ```
 
-Return the Context of this instrumentation's package. Note that this is often different than the Context of the application being instrumentated, since the instrumentation code often lives is a different package than that of the application it is running against. See `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getTargetContext()` to retrieve a Context for the target application.
+Return the Context of this instrumentation's package. Note that this is often different than the Context of the application being instrumentated, since the instrumentation code often lives is a different package than that of the application it is running against. See getTargetContext to retrieve a Context for the target application.
 
 | Return ||
 |---|---|
@@ -684,7 +684,7 @@ Return the Context of this instrumentation's package. Note that this is often di
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getTargetContext()`
+- getTargetContext
 
 ### getProcessName
 
@@ -704,7 +704,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getTargetContext(): Context!
 ```
 
-Return a Context for the target application being instrumented. Note that this is often different than the Context of the instrumentation code, since the instrumentation code often lives is a different package than that of the application it is running against. See `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getContext()` to retrieve a Context for the instrumentation code.
+Return a Context for the target application being instrumented. Note that this is often different than the Context of the instrumentation code, since the instrumentation code often lives is a different package than that of the application it is running against. See getContext to retrieve a Context for the instrumentation code.
 
 | Return ||
 |---|---|
@@ -712,7 +712,7 @@ Return a Context for the target application being instrumented. Note that this i
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getContext()`
+- getContext
 
 ### getUiAutomation
 
@@ -722,15 +722,15 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun getUiAutomation(): UiAutomation!
 ```
 
-Gets the `https://developer.android.com/reference/kotlin/android/app/UiAutomation` instance with no flags set.
+Gets the UiAutomation instance with no flags set.
 
-**Note:** The APIs exposed via the returned `https://developer.android.com/reference/kotlin/android/app/UiAutomation` work across application boundaries while the APIs exposed by the instrumentation do not. For example, `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendPointerSync(android.view.MotionEvent)` will not allow you to inject the event in an app different from the instrumentation target, while `https://developer.android.com/reference/kotlin/android/app/UiAutomation#injectInputEvent(android.view.InputEvent,%20kotlin.Boolean)` will work regardless of the current application.
+**Note:** The APIs exposed via the returned UiAutomation work across application boundaries while the APIs exposed by the instrumentation do not. For example, sendPointerSync will not allow you to inject the event in an app different from the instrumentation target, while injectInputEvent will work regardless of the current application.
 
-A typical test case should be using either the `https://developer.android.com/reference/kotlin/android/app/UiAutomation` or `https://developer.android.com/reference/kotlin/android/app/Instrumentation#` APIs. Using both APIs at the same time is not a mistake by itself but a client has to be aware of the APIs limitations.
+A typical test case should be using either the UiAutomation or Instrumentation APIs. Using both APIs at the same time is not a mistake by itself but a client has to be aware of the APIs limitations.
 
-Equivalent to `getUiAutomation(0)`. If a `https://developer.android.com/reference/kotlin/android/app/UiAutomation` exists with different flags, the flags on that instance will be changed, and then it will be returned.
+Equivalent to `getUiAutomation(0)`. If a UiAutomation exists with different flags, the flags on that instance will be changed, and then it will be returned.
 
-Compatibility mode: This method is infallible for apps targeted for `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and earlier versions; for apps targeted for later versions, it will return null if `https://developer.android.com/reference/kotlin/android/app/UiAutomation` fails to connect. The caller can check the return value and retry on error.
+Compatibility mode: This method is infallible for apps targeted for `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and earlier versions; for apps targeted for later versions, it will return null if UiAutomation fails to connect. The caller can check the return value and retry on error.
 
 | Return ||
 |---|---|
@@ -738,7 +738,7 @@ Compatibility mode: This method is infallible for apps targeted for `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/UiAutomation`
+- UiAutomation
 
 ### getUiAutomation
 
@@ -748,15 +748,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getUiAutomation(flags: Int): UiAutomation!
 ```
 
-Gets the `https://developer.android.com/reference/kotlin/android/app/UiAutomation` instance with flags set.
+Gets the UiAutomation instance with flags set.
 
-**Note:** The APIs exposed via the returned `https://developer.android.com/reference/kotlin/android/app/UiAutomation` work across application boundaries while the APIs exposed by the instrumentation do not. For example, `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendPointerSync(android.view.MotionEvent)` will not allow you to inject the event in an app different from the instrumentation target, while `https://developer.android.com/reference/kotlin/android/app/UiAutomation#injectInputEvent(android.view.InputEvent,%20kotlin.Boolean)` will work regardless of the current application.
+**Note:** The APIs exposed via the returned UiAutomation work across application boundaries while the APIs exposed by the instrumentation do not. For example, sendPointerSync will not allow you to inject the event in an app different from the instrumentation target, while injectInputEvent will work regardless of the current application.
 
-A typical test case should be using either the `https://developer.android.com/reference/kotlin/android/app/UiAutomation` or `https://developer.android.com/reference/kotlin/android/app/Instrumentation#` APIs. Using both APIs at the same time is not a mistake by itself but a client has to be aware of the APIs limitations.
+A typical test case should be using either the UiAutomation or Instrumentation APIs. Using both APIs at the same time is not a mistake by itself but a client has to be aware of the APIs limitations.
 
-If a `https://developer.android.com/reference/kotlin/android/app/UiAutomation` exists with different flags, the flags on that instance will be changed, and then it will be returned.
+If a UiAutomation exists with different flags, the flags on that instance will be changed, and then it will be returned.
 
-Compatibility mode: This method is infallible for apps targeted for `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and earlier versions; for apps targeted for later versions, it will return null if `https://developer.android.com/reference/kotlin/android/app/UiAutomation` fails to connect. The caller can check the return value and retry on error.
+Compatibility mode: This method is infallible for apps targeted for `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and earlier versions; for apps targeted for later versions, it will return null if UiAutomation fails to connect. The caller can check the return value and retry on error.
 
 | Parameters ||
 |---|---|
@@ -768,7 +768,7 @@ Compatibility mode: This method is infallible for apps targeted for `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/UiAutomation`
+- UiAutomation
 
 ### invokeContextMenuAction
 
@@ -853,7 +853,7 @@ open fun newActivity(
 ): Activity!
 ```
 
-Perform instantiation of an `https://developer.android.com/reference/kotlin/android/app/Activity` object. This method is intended for use with unit tests, such as android.test.ActivityUnitTestCase. The activity will be useable locally but will be missing some of the linkages necessary for use within the system.
+Perform instantiation of an Activity object. This method is intended for use with unit tests, such as android.test.ActivityUnitTestCase. The activity will be useable locally but will be missing some of the linkages necessary for use within the system.
 
 | Parameters ||
 |---|---|
@@ -869,7 +869,7 @@ Perform instantiation of an `https://developer.android.com/reference/kotlin/andr
 | `parent` | [Activity](Activity.md)!: The parent Activity (if any) |
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The embedded Id (if any) |
 | --- | --- |
-| `lastNonConfigurationInstance` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arbitrary object that will be available via `https://developer.android.com/reference/kotlin/android/app/Activity#getLastNonConfigurationInstance()`. |
+| `lastNonConfigurationInstance` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arbitrary object that will be available via getLastNonConfigurationInstance. |
 
 | Return ||
 |---|---|
@@ -892,7 +892,7 @@ open fun newActivity(
 ): Activity!
 ```
 
-Perform instantiation of the process's `https://developer.android.com/reference/kotlin/android/app/Activity` object. The default implementation provides the normal system behavior.
+Perform instantiation of the process's Activity object. The default implementation provides the normal system behavior.
 
 | Parameters ||
 |---|---|
@@ -917,7 +917,7 @@ open fun newApplication(
 ): Application!
 ```
 
-Perform instantiation of the process's `https://developer.android.com/reference/kotlin/android/app/Application` object. The default implementation provides the normal system behavior.
+Perform instantiation of the process's Application object. The default implementation provides the normal system behavior.
 
 | Parameters ||
 |---|---|
@@ -941,7 +941,7 @@ open static fun newApplication(
 ): Application!
 ```
 
-Perform instantiation of the process's `https://developer.android.com/reference/kotlin/android/app/Application` object. The default implementation provides the normal system behavior.
+Perform instantiation of the process's Application object. The default implementation provides the normal system behavior.
 
 | Parameters ||
 |---|---|
@@ -960,7 +960,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onCreate(arguments: Bundle!): Unit
 ```
 
-Called when the instrumentation is starting, before any application code has been loaded. Usually this will be implemented to simply call `https://developer.android.com/reference/kotlin/android/app/Instrumentation#start()` to begin the instrumentation thread, which will then continue execution in `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onStart()`.
+Called when the instrumentation is starting, before any application code has been loaded. Usually this will be implemented to simply call start to begin the instrumentation thread, which will then continue execution in onStart.
 
 If you do not need your own thread -- that is you are writing your instrumentation to be completely asynchronous (returning to the event loop so that the application can run), you can simply begin your instrumentation here, for example call android.content.Context#startActivity to begin the appropriate first activity of the application.
 
@@ -1008,7 +1008,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onStart(): Unit
 ```
 
-Method where the instrumentation thread enters execution. This allows you to run your instrumentation code in a separate thread than the application, so that it can perform blocking operation such as `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeySync(android.view.KeyEvent)` or #startActivitySync.
+Method where the instrumentation thread enters execution. This allows you to run your instrumentation code in a separate thread than the application, so that it can perform blocking operation such as sendKeySync or #startActivitySync.
 
 You will typically want to call finish() when this function is done, to end your instrumentation.
 
@@ -1036,7 +1036,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun resetInTouchMode(): Unit
 ```
 
-Resets the `https://developer.android.com/reference/kotlin/android/app/Instrumentation#setInTouchMode(kotlin.Boolean)` to the device default.
+Resets the setInTouchMode to the device default.
 
 ### runOnMainSync
 
@@ -1062,7 +1062,7 @@ open fun sendCharacterSync(keyCode: Int): Unit
 
 Sends up and down key events with the given key code to the currently focused window, and waits for it to be processed.
 
-Equivalent to `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeyDownUpSync(kotlin.Int)`.
+Equivalent to sendKeyDownUpSync.
 
 | Parameters ||
 |---|---|
@@ -1070,7 +1070,7 @@ Equivalent to `https://developer.android.com/reference/kotlin/android/app/Instru
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeySync(android.view.KeyEvent)`
+- sendKeySync
 
 ### sendKeyDownUpSync
 
@@ -1088,7 +1088,7 @@ Sends up and down key events with the given key code to the currently focused wi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeySync(android.view.KeyEvent)`
+- sendKeySync
 
 ### sendKeySync
 
@@ -1116,13 +1116,13 @@ open fun sendPointerSync(event: MotionEvent!): Unit
 
 Dispatches a pointer event into a window owned by the instrumented application, and waits for it to be processed.
 
-If the motion event being injected is targeted at a window that is not owned by the instrumented application, the input injection will fail. See `https://developer.android.com/reference/kotlin/android/app/Instrumentation#getUiAutomation()` for injecting events into all windows.
+If the motion event being injected is targeted at a window that is not owned by the instrumented application, the input injection will fail. See getUiAutomation for injecting events into all windows.
 
 This method blocks until the recipient has finished handling the event. Note that the recipient may *not* have completely finished reacting from the event when this method returns. For example, it may still be in the process of updating its display or UI contents upon reacting to the injected event.
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android.view/MotionEvent.md)!: A motion event describing the pointer action. (As noted in `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#obtain(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)`, be sure to use `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` as the timebase. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: A motion event describing the pointer action. (As noted in obtain, be sure to use uptimeMillis as the timebase. |
 
 ### sendStatus
 
@@ -1158,7 +1158,7 @@ Sends the key events that result in the given text being typed into the currentl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#sendKeySync(android.view.KeyEvent)`
+- sendKeySync
 
 ### sendTrackballEventSync
 
@@ -1174,7 +1174,7 @@ This method blocks until the recipient has finished handling the event. Note tha
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android.view/MotionEvent.md)!: A motion event describing the trackball action. (As noted in `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#obtain(kotlin.Long,%20kotlin.Long,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)`, be sure to use `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` as the timebase. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: A motion event describing the trackball action. (As noted in obtain, be sure to use uptimeMillis as the timebase. |
 
 ### setAutomaticPerformanceSnapshots
 
@@ -1208,7 +1208,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun start(): Unit
 ```
 
-Create and start a new thread in which to run instrumentation. This new thread will call to `https://developer.android.com/reference/kotlin/android/app/Instrumentation#onStart()` where you can implement the instrumentation.
+Create and start a new thread in which to run instrumentation. This new thread will call to onStart where you can implement the instrumentation.
 
 ### startActivitySync
 
@@ -1220,7 +1220,7 @@ open fun startActivitySync(intent: Intent!): Activity!
 
 Start a new activity and wait for it to begin running before returning. In addition to being synchronous, this method as some semantic differences from the standard android.content.Context#startActivity call: the activity component is resolved before talking with the activity manager (its class name is specified in the Intent that this method ultimately starts), and it does not allow you to start activities that run in a different process. In addition, if the given Intent resolves to multiple activities, instead of displaying a dialog for the user to select an activity, an exception will be thrown.
 
-The function returns as soon as the activity goes idle following the call to its android.app.Activity#onCreate. Generally this means it has gone through the full initialization including `https://developer.android.com/reference/kotlin/android/app/Activity#onResume()` and drawn and displayed its initial window.
+The function returns as soon as the activity goes idle following the call to its android.app.Activity#onCreate. Generally this means it has gone through the full initialization including onResume and drawn and displayed its initial window.
 
 | Parameters ||
 |---|---|
@@ -1228,7 +1228,7 @@ The function returns as soon as the activity goes idle following the call to its
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Instrumentation#startActivitySync(android.content.Intent,%20android.os.Bundle)`
+- startActivitySync
 
 ### startActivitySync
 
@@ -1243,20 +1243,20 @@ open fun startActivitySync(
 
 Start a new activity and wait for it to begin running before returning. In addition to being synchronous, this method as some semantic differences from the standard android.content.Context#startActivity call: the activity component is resolved before talking with the activity manager (its class name is specified in the Intent that this method ultimately starts), and it does not allow you to start activities that run in a different process. In addition, if the given Intent resolves to multiple activities, instead of displaying a dialog for the user to select an activity, an exception will be thrown.
 
-The function returns as soon as the activity goes idle following the call to its android.app.Activity#onCreate. Generally this means it has gone through the full initialization including `https://developer.android.com/reference/kotlin/android/app/Activity#onResume()` and drawn and displayed its initial window.
+The function returns as soon as the activity goes idle following the call to its android.app.Activity#onCreate. Generally this means it has gone through the full initialization including onResume and drawn and displayed its initial window.
 
 | Parameters ||
 |---|---|
 | `intent` | [Intent](../android.content/Intent.md): Description of the activity to start. This value cannot be `null`. |
-| `options` | [Bundle](../android.os/Bundle.md)?: Additional options for how the Activity should be started. May be null if there are no options. See `https://developer.android.com/reference/kotlin/android/app/ActivityOptions` for how to build the Bundle supplied here; there are no supported definitions for building it manually. |
+| `options` | [Bundle](../android.os/Bundle.md)?: Additional options for how the Activity should be started. May be null if there are no options. See ActivityOptions for how to build the Bundle supplied here; there are no supported definitions for building it manually. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/Activity` | This value cannot be `null`. |
+| Activity | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)`
+- startActivity
 
 ### startAllocCounting
 
@@ -1330,7 +1330,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun waitForIdleSync(): Unit
 ```
 
-Synchronously wait for the application to be idle. Can not be called from the main application thread -- use `https://developer.android.com/reference/kotlin/android/app/Instrumentation#start()` to execute instrumentation in its own thread.
+Synchronously wait for the application to be idle. Can not be called from the main application thread -- use start to execute instrumentation in its own thread.
 
 ### waitForMonitor
 

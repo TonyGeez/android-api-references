@@ -16,8 +16,8 @@ Instantiates `https://developer.android.com/reference/kotlin/android/os/Vibratio
 
 | Public methods ||
 |---|---|
-| static [VibrationEffectInflater](VibrationEffectInflater.md) | `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#from(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Obtains the `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#` associated with the given context. |
-| [VibrationEffect](../android.os/VibrationEffect.md) | `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#inflate(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Inflates a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` from an Android XML resource containing a vibration pattern (e.g., stored inside |
+| static [VibrationEffectInflater](VibrationEffectInflater.md) | from Obtains the VibrationEffectInflater associated with the given context. |
+| [VibrationEffect](../android.os/VibrationEffect.md) | inflate Inflates a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` from an Android XML resource containing a vibration pattern (e.g., stored inside |
 
 ## Public methods
 
@@ -29,7 +29,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static fun from(context: Context): VibrationEffectInflater
 ```
 
-Obtains the `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#` associated with the given context.
+Obtains the VibrationEffectInflater associated with the given context.
 
 | Parameters ||
 |---|---|
@@ -37,7 +37,7 @@ Obtains the `https://developer.android.com/reference/kotlin/android/view/Vibrati
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#` | The `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater#` instance. This value cannot be `null`. |
+| VibrationEffectInflater | The VibrationEffectInflater instance. This value cannot be `null`. |
 
 ### inflate
 
@@ -49,7 +49,7 @@ fun inflate(resId: Int): VibrationEffect
 
 Inflates a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#` from an Android XML resource containing a vibration pattern (e.g., stored inside `res/xml/`).
 
-For dynamic vibration patterns, see `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.html#parseFromXml(java.io.InputStream)`.
+For dynamic vibration patterns, see parseFromXml.
 
 | Parameters ||
 |---|---|

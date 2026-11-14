@@ -21,9 +21,9 @@ A callback class for use when the application is in a group call. The middleware
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onBroadcastSignalStrengthUpdated(kotlin.Int)(signalStrength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Broadcast Signal Strength updated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onError(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Called by the middleware when it has detected an error condition in this group call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/GroupCallCallback#onGroupCallStateChanged(kotlin.Int,%20kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called to indicate this call has changed state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onBroadcastSignalStrengthUpdated Broadcast Signal Strength updated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onError Called by the middleware when it has detected an error condition in this group call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onGroupCallStateChanged Called to indicate this call has changed state. |
 | --- | --- |
 
 ## Constants
@@ -67,7 +67,7 @@ open fun onError(
 ): Unit
 ```
 
-Called by the middleware when it has detected an error condition in this group call. The possible error codes are listed in `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors`.
+Called by the middleware when it has detected an error condition in this group call. The possible error codes are listed in MbmsErrors.
 
 | Parameters ||
 |---|---|

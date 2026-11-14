@@ -24,23 +24,23 @@ MediaScannerConnection provides a way for applications to pass a newly created o
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#MediaScannerConnection(android.content.Context,%20android.media.MediaScannerConnection.MediaScannerConnectionClient)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, client: https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient!)` Constructs a new MediaScannerConnection object. |
+| MediaScannerConnection Constructs a new MediaScannerConnection object. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#connect()()` Initiates a connection to the media scanner service. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#disconnect()()` Releases the connection to the media scanner service. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#isConnected()()` Returns whether we are connected to the media scanner service |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | connect Initiates a connection to the media scanner service. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disconnect Releases the connection to the media scanner service. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isConnected Returns whether we are connected to the media scanner service |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#onServiceConnected(android.content.ComponentName,%20android.os.IBinder)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, service: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!)` Part of the ServiceConnection interface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#onServiceDisconnected(android.content.ComponentName)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Part of the ServiceConnection interface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(kotlin.String,%20kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Requests the media scanner to scan a file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onServiceConnected Part of the ServiceConnection interface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onServiceDisconnected Part of the ServiceConnection interface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | scanFile Requests the media scanner to scan a file. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(android.content.Context,%20kotlin.Array,%20kotlin.Array,%20android.media.MediaScannerConnection.OnScanCompletedListener)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, paths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, mimeTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, callback: https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener!)` Convenience for constructing a `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#`, calling `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#connect()` on it, and calling `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(kotlin.String,%20kotlin.String)` with the given path and mimeType when the connection is established. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | scanFile Convenience for constructing a MediaScannerConnection, calling connect on it, and calling scanFile with the given path and mimeType when the connection is established. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#onBindingDied(android.content.ComponentName)(name: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Called when the binding to this connection is dead. This means the interface will never receive another connection. The application will need to unbind and rebind the connection to activate it again. This may happen, for example, if the application hosting the service it is bound to has been updated. **Note:** The app that requested the binding must call `https://developer.android.com/reference/kotlin/android/content/Context.html#unbindService(android.content.ServiceConnection)` to release the tracking resources associated with this ServiceConnection even if this callback was invoked following android.content.Context#bindService. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#onNullBinding(android.content.ComponentName)(name: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Called when the service being bound has returned `null` from its `https://developer.android.com/reference/kotlin/android/app/Service.html#onBind(android.content.Intent)` method. This indicates that the attempted service binding represented by this ServiceConnection will never become usable. **Note:** The app that requested the binding must still call `https://developer.android.com/reference/kotlin/android/content/Context.html#unbindService(android.content.ServiceConnection)` to release the tracking resources associated with this ServiceConnection even if this callback was invoked following android.content.Context#bindService. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | onBindingDied Called when the binding to this connection is dead. This means the interface will never receive another connection. The application will need to unbind and rebind the connection to activate it again. This may happen, for example, if the application hosting the service it is bound to has been updated. **Note:** The app that requested the binding must call unbindService to release the tracking resources associated with this ServiceConnection even if this callback was invoked following android.content.Context#bindService. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | onNullBinding Called when the service being bound has returned `null` from its onBind method. This indicates that the attempted service binding represented by this ServiceConnection will never become usable. **Note:** The app that requested the binding must still call unbindService to release the tracking resources associated with this ServiceConnection even if this callback was invoked following android.content.Context#bindService. <br /> | ||
 
 ## Public constructors
 
@@ -71,7 +71,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun connect(): Unit
 ```
 
-Initiates a connection to the media scanner service. `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.MediaScannerConnectionClient#onMediaScannerConnected()` will be called when the connection is established.
+Initiates a connection to the media scanner service. onMediaScannerConnected will be called when the connection is established.
 
 ### disconnect
 
@@ -140,7 +140,7 @@ open fun scanFile(
 ): Unit
 ```
 
-Requests the media scanner to scan a file. Success or failure of the scanning operation cannot be determined until `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#onScanCompleted(kotlin.String,%20android.net.Uri)` is called.
+Requests the media scanner to scan a file. Success or failure of the scanning operation cannot be determined until onScanCompleted is called.
 
 | Parameters ||
 |---|---|
@@ -160,11 +160,11 @@ open static fun scanFile(
 ): Unit
 ```
 
-Convenience for constructing a `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#`, calling `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#connect()` on it, and calling `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(kotlin.String,%20kotlin.String)` with the given path and mimeType when the connection is established.
+Convenience for constructing a MediaScannerConnection, calling connect on it, and calling scanFile with the given path and mimeType when the connection is established.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md)!: The caller's Context, required for establishing a connection to the media scanner service. Success or failure of the scanning operation cannot be determined until `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#onScanCompleted(kotlin.String,%20android.net.Uri)` is called. |
+| `context` | [Context](../android.content/Context.md)!: The caller's Context, required for establishing a connection to the media scanner service. Success or failure of the scanning operation cannot be determined until onScanCompleted is called. |
 | `paths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Array of paths to be scanned. |
 | `mimeTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Optional array of MIME types for each path. If mimeType is null, then the mimeType will be inferred from the file extension. |
 | --- | --- |
@@ -172,4 +172,4 @@ Convenience for constructing a `https://developer.android.com/reference/kotlin/a
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection#scanFile(kotlin.String,%20kotlin.String)`
+- scanFile

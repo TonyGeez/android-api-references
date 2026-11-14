@@ -31,34 +31,34 @@ Exception thrown when an egress request fails inside the PCC sandbox. Contains t
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#PccEgressException(kotlin.Int)(statusCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new PccEgressException with a given android. |
-| `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#PccEgressException(kotlin.Int,%20android.app.privatecompute.PccEgressException.SensitiveCategoryInfo)(statusCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sensitiveCategoryInfo: https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo)` Creates a new PccEgressException with a given android. |
-| `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#PccEgressException(kotlin.Int,%20kotlin.String)(statusCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new PccEgressException with a given android. |
-| `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#PccEgressException(kotlin.Int,%20kotlin.String,%20android.app.privatecompute.PccEgressException.SensitiveCategoryInfo)(statusCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sensitiveCategoryInfo: https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo)` Creates a new PccEgressException with a given android. |
+| PccEgressException Creates a new PccEgressException with a given android. |
+| PccEgressException Creates a new PccEgressException with a given android. |
+| PccEgressException Creates a new PccEgressException with a given android. |
+| PccEgressException Creates a new PccEgressException with a given android. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [PccEgressException.SensitiveCategoryInfo](../android/app/privatecompute/PccEgressException.SensitiveCategoryInfo.md)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#getSensitiveCategoryInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo` detailing the sensitive content detected during egress screening. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#getStatusCode()()` Returns the status code detailing the egress failure. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [PccEgressException.SensitiveCategoryInfo](../android/app/privatecompute/PccEgressException.SensitiveCategoryInfo.md)? | getSensitiveCategoryInfo Returns the `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException.SensitiveCategoryInfo` detailing the sensitive content detected during egress screening. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStatusCode Returns the status code detailing the egress failure. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PccEgressException](PccEgressException.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#CREATOR:android.os.Parcelable.Creator` Standard parcelable creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PccEgressException](PccEgressException.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#CREATOR:android.os.Parcelable.Creator` Standard parcelable creator for PccEgressException. |
 
 ## Constants
 
@@ -190,7 +190,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -252,4 +252,4 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val CREATOR: Parcelable.Creator<PccEgressException!>
 ```
 
-Standard parcelable creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#`.
+Standard parcelable creator for PccEgressException.

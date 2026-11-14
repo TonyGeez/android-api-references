@@ -17,21 +17,21 @@ A piped output stream can be connected to a piped input stream to create a commu
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#PipedOutputStream()()` Creates a piped output stream that is not yet connected to a piped input stream. |
-| `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#PipedOutputStream(java.io.PipedInputStream)(snk: https://developer.android.com/reference/kotlin/java/io/PipedInputStream!)` Creates a piped output stream connected to the specified piped input stream. |
+| PipedOutputStream Creates a piped output stream that is not yet connected to a piped input stream. |
+| PipedOutputStream Creates a piped output stream connected to the specified piped input stream. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#close()()` Closes this piped output stream and releases any system resources associated with this stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)(snk: https://developer.android.com/reference/kotlin/java/io/PipedInputStream!)` Connects this piped output stream to a receiver. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#flush()()` Flushes this output stream and forces any buffered output bytes to be written out. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes this piped output stream and releases any system resources associated with this stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | connect Connects this piped output stream to a receiver. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flushes this output stream and forces any buffered output bytes to be written out. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes `len` bytes from the specified byte array starting at offset `off` to this piped output stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#write(kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes the specified `byte` to the piped output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes `len` bytes from the specified byte array starting at offset `off` to this piped output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes the specified `byte` to the piped output stream. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/io/OutputStream` |---|---| | `https://developer.android.com/reference/kotlin/java/io/OutputStream!` | `https://developer.android.com/reference/kotlin/java/io/OutputStream#nullOutputStream()()` Returns a new `OutputStream` which discards all bytes. The returned stream is initially open. The stream is closed by calling the `close()` method. Subsequent calls to `close()` have no effect. While the stream is open, the `write(int)`, `write(byte[])`, and `write(byte[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`. The `flush()` method does nothing. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/io/OutputStream#write(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Writes `b.length` bytes from the specified byte array to this output stream. The general contract for `write(b)` is that it should have exactly the same effect as the call `write(b, 0, b.length)`. <br /> | ||
+| From class OutputStream |---|---| | `https://developer.android.com/reference/kotlin/java/io/OutputStream!` | nullOutputStream Returns a new `OutputStream` which discards all bytes. The returned stream is initially open. The stream is closed by calling the `close()` method. Subsequent calls to `close()` have no effect. While the stream is open, the `write(int)`, `write(byte[])`, and `write(byte[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`. The `flush()` method does nothing. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | write Writes `b.length` bytes from the specified byte array to this output stream. The general contract for `write(b)` is that it should have exactly the same effect as the call `write(b, 0, b.length)`. <br /> | ||
 
 ## Public constructors
 
@@ -46,8 +46,8 @@ PipedOutputStream()
 Creates a piped output stream that is not yet connected to a piped input stream. It must be connected to a piped input stream, either by the receiver or the sender, before being used.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/PipedInputStream#connect(java.io.PipedOutputStream)`
-- `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`
+- connect
+- connect
 
 ### PipedOutputStream
 
@@ -151,7 +151,7 @@ Writes `len` bytes from the specified byte array starting at offset `off` to thi
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if the pipe is [broken](PipedOutputStream.md), `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`, closed, or if an I/O error occurs. |
+| `java.io.IOException` | if the pipe is [broken](PipedOutputStream.md), connect, closed, or if an I/O error occurs. |
 
 ### write
 
@@ -171,4 +171,4 @@ Implements the `write` method of `OutputStream`.
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if the pipe is [broken](PipedOutputStream.md), `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`, closed, or if an I/O error occurs. |
+| `java.io.IOException` | if the pipe is [broken](PipedOutputStream.md), connect, closed, or if an I/O error occurs. |

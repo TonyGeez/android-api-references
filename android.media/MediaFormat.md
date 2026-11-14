@@ -238,8 +238,8 @@ Image formats have the following keys:
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_OUTPUT_REORDER_DEPTH:kotlin.String` An optional key describing the maximum number of non-display-order coded frames. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PCM_ENCODING:kotlin.String` A key describing the raw audio sample encoding/format. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_PROFILE_ID:kotlin.String` A key describing the picture profile ID to be applied to `https://developer.android.com/reference/kotlin/android/media/MediaCodec`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_PROFILE_INSTANCE:kotlin.String` A key describing the picture profile instance to be applied to `https://developer.android.com/reference/kotlin/android/media/MediaCodec`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_PROFILE_ID:kotlin.String` A key describing the picture profile ID to be applied to MediaCodec. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_PROFILE_INSTANCE:kotlin.String` A key describing the picture profile instance to be applied to MediaCodec. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PICTURE_TYPE:kotlin.String` A key describing the picture type of the encoded frame. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PIXEL_ASPECT_RATIO_HEIGHT:kotlin.String` A key describing the pixel aspect ratio height. |
@@ -377,50 +377,50 @@ Image formats have the following keys:
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MediaFormat()()` Creates an empty MediaFormat |
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MediaFormat(android.media.MediaFormat)(other: https://developer.android.com/reference/kotlin/android/media/MediaFormat#)` Create a copy of a media format object. |
+| MediaFormat Creates an empty MediaFormat |
+| MediaFormat Create a copy of a media format object. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#containsFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true iff a feature of the given name exists in the format. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#containsKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true iff a key of the given name exists in the format. |
-| static [MediaFormat](MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createAudioFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sampleRate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, channelCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal audio format. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | containsFeature Returns true iff a feature of the given name exists in the format. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | containsKey Returns true iff a key of the given name exists in the format. |
+| static [MediaFormat](MediaFormat.md) | createAudioFormat Creates a minimal audio format. |
 | --- | --- |
-| static [MediaFormat](MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createSubtitleFormat(kotlin.String,%20kotlin.String)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a minimal subtitle format. |
-| static [MediaFormat](MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#createVideoFormat(kotlin.String,%20kotlin.Int,%20kotlin.Int)(mime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a minimal video format. |
-| [ByteBuffer](../java.nio/ByteBuffer.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a ByteBuffer key. |
+| static [MediaFormat](MediaFormat.md) | createSubtitleFormat Creates a minimal subtitle format. |
+| static [MediaFormat](MediaFormat.md) | createVideoFormat Creates a minimal video format. |
+| [ByteBuffer](../java.nio/ByteBuffer.md)? | getByteBuffer Returns the value of a ByteBuffer key. |
 | --- | --- |
-| [ByteBuffer](../java.nio/ByteBuffer.md) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getByteBuffer(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Returns the value of a ByteBuffer key, or the default value if the key is missing. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFeatureEnabled(kotlin.String)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns whether a feature is to be enabled (`true`) or disabled (`false`). |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFeatures()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the features contained in this MediaFormat. |
+| [ByteBuffer](../java.nio/ByteBuffer.md) | getByteBuffer Returns the value of a ByteBuffer key, or the default value if the key is missing. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getFeatureEnabled Returns whether a feature is to be enabled (`true`) or disabled (`false`). |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getFeatures Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the features contained in this MediaFormat. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFloat(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a float key. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getFloat(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the value of a float key, or the default value if the key is missing. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getInteger(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of an integer key. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getFloat Returns the value of a float key. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getFloat Returns the value of a float key, or the default value if the key is missing. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInteger Returns the value of an integer key. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getInteger(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of an integer key, or the default value if the key is missing. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getKeys()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the keys contained in this MediaFormat. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getLong(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a long key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInteger Returns the value of an integer key, or the default value if the key is missing. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getKeys Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the keys contained in this MediaFormat. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Returns the value of a long key. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getLong(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the value of a long key, or the default value if the key is missing. |
-| [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getNumber(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a numeric key. |
-| [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getNumber(kotlin.String,%20kotlin.Number)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)` Returns the value of a numeric key, or the default value if the key is missing. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Returns the value of a long key, or the default value if the key is missing. |
+| [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | getNumber Returns the value of a numeric key. |
+| [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) | getNumber Returns the value of a numeric key, or the default value if the key is missing. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getString(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a string key. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getString(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value of a string key, or the default value if the key is missing. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#getValueTypeForKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the value type for a key. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getString Returns the value of a string key. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getString Returns the value of a string key, or the default value if the key is missing. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getValueTypeForKey Returns the value type for a key. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#removeFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a given feature setting if present. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#removeKey(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a value of a given key if present. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setByteBuffer(kotlin.String,%20java.nio.ByteBuffer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, bytes: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#?)` Sets the value of a ByteBuffer key. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeFeature Removes a given feature setting if present. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeKey Removes a value of a given key if present. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setByteBuffer Sets the value of a ByteBuffer key. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setFeatureEnabled(kotlin.String,%20kotlin.Boolean)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether a feature is to be enabled (`true`) or disabled (`false`). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setFloat(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the value of a float key. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setInteger(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the value of an integer key. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFeatureEnabled Sets whether a feature is to be enabled (`true`) or disabled (`false`). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFloat Sets the value of a float key. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInteger Sets the value of an integer key. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setLong(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the value of a long key. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setString(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the value of a string key. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaFormat#toString()()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLong Sets the value of a long key. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setString Sets the value of a string key. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Constants
@@ -823,7 +823,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_ALLOW_FRAME_DROP: String
 ```
 
-A key for applications to opt out of allowing a Surface to discard undisplayed/unconsumed frames as means to catch up after falling behind. This value is an integer. The value 0 indicates the surface is not allowed to drop frames. The value 1 indicates the surface is allowed to drop frames. `https://developer.android.com/reference/kotlin/android/media/MediaCodec` describes the semantics.
+A key for applications to opt out of allowing a Surface to discard undisplayed/unconsumed frames as means to catch up after falling behind. This value is an integer. The value 0 indicates the surface is not allowed to drop frames. The value 1 indicates the surface is allowed to drop frames. MediaCodec describes the semantics.
 
  Value: "allow-frame-drop"
 
@@ -847,7 +847,7 @@ The associated value is a long.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPresentation`
+- AudioPresentation
 
 ### KEY_AUDIO_SESSION_ID
 
@@ -879,7 +879,7 @@ A key describing the desired bitrate mode to be used by an encoder. Constants ar
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.EncoderCapabilities#isBitrateModeSupported(kotlin.Int)`
+- isBitrateModeSupported
 
 ### KEY_BIT_RATE
 
@@ -989,7 +989,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CHANNEL_MASK: String
 ```
 
-A key describing the channel composition of audio content. This mask is composed of bits drawn from channel mask definitions in `https://developer.android.com/reference/kotlin/android/media/AudioFormat`. The associated value is an integer.
+A key describing the channel composition of audio content. This mask is composed of bits drawn from channel mask definitions in AudioFormat. The associated value is an integer.
 
  Value: "channel-mask"
 
@@ -1001,7 +1001,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CODECS_STRING: String
 ```
 
-A key describing the codecs string of the MediaFormat. See RFC 6381 section 3.2 for the syntax of the value. The value does not hold `https://developer.android.com/reference/kotlin/android/media/MediaCodec`-exposed codec names. The associated value is a string.
+A key describing the codecs string of the MediaFormat. See RFC 6381 section 3.2 for the syntax of the value. The value does not hold MediaCodec-exposed codec names. The associated value is a string.
 
  Value: "codecs-string"
 
@@ -1083,7 +1083,7 @@ A key describing the encoding complexity. The associated value is an integer. Th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.EncoderCapabilities#getComplexityRange()`
+- getComplexityRange
 
 ### KEY_CREATE_INPUT_SURFACE_SUSPENDED
 
@@ -1105,7 +1105,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CROP_BOTTOM: String
 ```
 
-A key describing the bottom-coordinate (y) of the crop rectangle. This is the bottom-most row included in the crop frame, where row indices start at 0. Additional information on the crop rectangle semantics can be found at `https://developer.android.com/reference/kotlin/android/media/MediaCodec`.
+A key describing the bottom-coordinate (y) of the crop rectangle. This is the bottom-most row included in the crop frame, where row indices start at 0. Additional information on the crop rectangle semantics can be found at MediaCodec.
 
  Value: "crop-bottom"
 
@@ -1117,7 +1117,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CROP_LEFT: String
 ```
 
-A key describing the left-coordinate (x) of the crop rectangle. This is the left-most column included in the crop frame, where column indices start at 0. Additional information on the crop rectangle semantics can be found at `https://developer.android.com/reference/kotlin/android/media/MediaCodec`.
+A key describing the left-coordinate (x) of the crop rectangle. This is the left-most column included in the crop frame, where column indices start at 0. Additional information on the crop rectangle semantics can be found at MediaCodec.
 
  Value: "crop-left"
 
@@ -1129,7 +1129,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CROP_RIGHT: String
 ```
 
-A key describing the right-coordinate (x) of the crop rectangle. This is the right-most column included in the crop frame, where column indices start at 0. Additional information on the crop rectangle semantics can be found at `https://developer.android.com/reference/kotlin/android/media/MediaCodec`.
+A key describing the right-coordinate (x) of the crop rectangle. This is the right-most column included in the crop frame, where column indices start at 0. Additional information on the crop rectangle semantics can be found at MediaCodec.
 
  Value: "crop-right"
 
@@ -1141,7 +1141,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_CROP_TOP: String
 ```
 
-A key describing the top-coordinate (y) of the crop rectangle. This is the top-most row included in the crop frame, where row indices start at 0. Additional information on the crop rectangle semantics can be found at `https://developer.android.com/reference/kotlin/android/media/MediaCodec`.
+A key describing the top-coordinate (y) of the crop rectangle. This is the top-most row included in the crop frame, where row indices start at 0. Additional information on the crop rectangle semantics can be found at MediaCodec.
 
  Value: "crop-top"
 
@@ -1203,13 +1203,13 @@ static val KEY_FRAME_RATE: String
 
 A key describing the frame rate of a video format in frames/sec.
 
-The associated value is normally an integer when the value is used by the platform, but video codecs also accept float configuration values. Specifically, `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getTrackFormat(kotlin.Int)` provides an integer value corresponding to the frame rate information of the track if specified and non-zero. Otherwise, this key is not present. android.media.MediaCodec#configure accepts both float and integer values.
+The associated value is normally an integer when the value is used by the platform, but video codecs also accept float configuration values. Specifically, getTrackFormat provides an integer value corresponding to the frame rate information of the track if specified and non-zero. Otherwise, this key is not present. android.media.MediaCodec#configure accepts both float and integer values.
 
 This represents the desired operating frame rate if the `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_OPERATING_RATE:kotlin.String` is not present and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_PRIORITY:kotlin.String` is `0` (realtime). Otherwise, this is just informational.
 
 For video encoders this value corresponds to the intended frame rate (the rate at which the application intends to send frames to the encoder, as calculated by the buffer timestamps, and not from the actual real-time rate that the frames are sent to the encoder). Encoders use this hint for rate control, specifically for the initial frames, as encoders are expected to support variable frame rate (for rate control) based on the actual `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo#presentationTimeUs:kotlin.Long` of subsequent frames.
 
-This key is not used in the `MediaCodec` `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputFormat()`/android.media.MediaCodec#getOutputFormat formats, nor by `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#addTrack(android.media.MediaFormat)`.
+This key is not used in the `MediaCodec` getInputFormat/android.media.MediaCodec#getOutputFormat formats, nor by addTrack.
 
  Value: "frame-rate"
 
@@ -1275,7 +1275,7 @@ A key describing the hardware AV sync id. The associated value is an integer
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaFormat#`
+- MediaFormat
 
 ### KEY_HDR10_PLUS_INFO
 
@@ -1350,7 +1350,7 @@ The resource manager may use the codec importance, along with other factors when
 The codec importance can be set:
 
 - through android.media.MediaCodec#configure.
-- through `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)` if the codec has been configured already, which allows the users to change the codec importance multiple times.
+- through setParameters if the codec has been configured already, which allows the users to change the codec importance multiple times.
 
 Any change/update in codec importance is guaranteed upon the completion of the function call that sets the codec importance. So, in case of concurrent codec operations, make sure to wait for the change in codec importance, before using another codec. Note that unless specified, by default the codecs will have highest importance (of value 0).
 
@@ -1670,7 +1670,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_OUTPUT_REORDER_DEPTH: String
 ```
 
-An optional key describing the maximum number of non-display-order coded frames. This is an optional parameter that applies only to video encoders. Application should check the value for this key in the output format to see if codec will produce non-display-order coded frames. If encoder supports it, the output frames' order will be different from the display order and each frame's display order could be retrived from `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo#presentationTimeUs:kotlin.Long`. Before API level 27, application may receive non-display-order coded frames even though the application did not request it. Note: Application should not rearrange the frames to display order before feeding them to `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)`.
+An optional key describing the maximum number of non-display-order coded frames. This is an optional parameter that applies only to video encoders. Application should check the value for this key in the output format to see if codec will produce non-display-order coded frames. If encoder supports it, the output frames' order will be different from the display order and each frame's display order could be retrived from `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo#presentationTimeUs:kotlin.Long`. Before API level 27, application may receive non-display-order coded frames even though the application did not request it. Note: Application should not rearrange the frames to display order before feeding them to writeSampleData.
 
 The default value is 0.
 
@@ -1686,11 +1686,11 @@ static val KEY_PCM_ENCODING: String
 
 A key describing the raw audio sample encoding/format.
 
-The associated value is an integer, using one of the `https://developer.android.com/reference/kotlin/android/media/AudioFormat`.ENCODING_PCM_ values.
+The associated value is an integer, using one of the AudioFormat.ENCODING_PCM_ values.
 
-This is an optional key for audio decoders and encoders specifying the desired raw audio sample format during android.media.MediaCodec#configure call. Use `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputFormat()`/android.media.MediaCodec#getOutputFormat to confirm the actual format. For the PCM decoder this key specifies both input and output sample encodings.
+This is an optional key for audio decoders and encoders specifying the desired raw audio sample format during android.media.MediaCodec#configure call. Use getInputFormat/android.media.MediaCodec#getOutputFormat to confirm the actual format. For the PCM decoder this key specifies both input and output sample encodings.
 
-This key is also used by `https://developer.android.com/reference/kotlin/android/media/MediaExtractor` to specify the sample format of audio data, if it is specified.
+This key is also used by MediaExtractor to specify the sample format of audio data, if it is specified.
 
 If this key is missing, the raw audio sample format is signed 16-bit short.
 
@@ -1704,7 +1704,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PICTURE_PROFILE_ID: String
 ```
 
-A key describing the picture profile ID to be applied to `https://developer.android.com/reference/kotlin/android/media/MediaCodec`.
+A key describing the picture profile ID to be applied to MediaCodec.
 
 The associated value is a string.
 
@@ -1714,8 +1714,8 @@ The associated value is a string.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile`
-- `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile#getProfileId()`
+- PictureProfile
+- getProfileId
 
 ### KEY_PICTURE_PROFILE_INSTANCE
 
@@ -1725,9 +1725,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val KEY_PICTURE_PROFILE_INSTANCE: String
 ```
 
-A key describing the picture profile instance to be applied to `https://developer.android.com/reference/kotlin/android/media/MediaCodec`.
+A key describing the picture profile instance to be applied to MediaCodec.
 
-The associated value is an instance of `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile`.
+The associated value is an instance of PictureProfile.
 
 <br />
 
@@ -1735,7 +1735,7 @@ The associated value is an instance of `https://developer.android.com/reference/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile`
+- PictureProfile
 
 ### KEY_PICTURE_TYPE
 
@@ -1817,7 +1817,7 @@ A key describing the desired profile to be used by an encoder.
 
 The associated value is an integer. Constants are declared in `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecProfileLevel`. This key is used as a hint, and is only supported for codecs that specify a profile. When configuring profile, encoder configuration may fail if other parameters are not compatible with the desired profile or if the desired profile is not supported, but it may also fail silently (where the encoder ends up using a different, compatible profile.)
 
-It is recommended that the profile is set for all encoders. For more information, see the *Encoder Profiles* section of the `https://developer.android.com/reference/kotlin/android/media/MediaCodec` API reference.
+It is recommended that the profile is set for all encoders. For more information, see the *Encoder Profiles* section of the MediaCodec API reference.
 
 **Note:** Codecs are free to use all the available coding tools at the specified profile, but may ultimately choose to not do so.
 
@@ -1855,7 +1855,7 @@ A key describing the desired encoding quality. The associated value is an intege
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.EncoderCapabilities#getQualityRange()`
+- getQualityRange
 
 ### KEY_REPEAT_PREVIOUS_FRAME_AFTER
 
@@ -1909,7 +1909,7 @@ A key describing the requested security model as flags.
 
 The associated value is a flag of the following values: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#FLAG_SECURITY_MODEL_SANDBOXED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#FLAG_SECURITY_MODEL_MEMORY_SAFE:kotlin.Int`. The default value is `https://developer.android.com/reference/kotlin/android/media/MediaFormat#FLAG_SECURITY_MODEL_SANDBOXED:kotlin.Int`.
 
-When passed to `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findDecoderForFormat(android.media.MediaFormat)` or `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findEncoderForFormat(android.media.MediaFormat)`, MediaCodecList filters the security model of the codecs according to this flag value.
+When passed to findDecoderForFormat or findEncoderForFormat, MediaCodecList filters the security model of the codecs according to this flag value.
 
 When passed to android.media.MediaCodec#configure, MediaCodec verifies the security model matches the flag value passed, and throws `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` if the model does not match.
 
@@ -1919,9 +1919,9 @@ When passed to android.media.MediaCodec#configure, MediaCodec verifies the secur
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getSecurityModel()`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findDecoderForFormat(android.media.MediaFormat)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findEncoderForFormat(android.media.MediaFormat)`
+- getSecurityModel
+- findDecoderForFormat
+- findEncoderForFormat
 
 ### KEY_SLICE_HEIGHT
 
@@ -2059,7 +2059,7 @@ static val KEY_TRACK_ID: String
 
 A key describing a unique ID for the content of a media track.
 
-This key is used by `https://developer.android.com/reference/kotlin/android/media/MediaExtractor`. Some extractors provide multiple encodings of the same track (e.g. float audio tracks for FLAC and WAV may be expressed as two tracks via MediaExtractor: a normal PCM track for backward compatibility, and a float PCM track for added fidelity. Similarly, Dolby Vision extractor may provide a baseline SDR version of a DV track.) This key can be used to identify which MediaExtractor tracks refer to the same underlying content.
+This key is used by MediaExtractor. Some extractors provide multiple encodings of the same track (e.g. float audio tracks for FLAC and WAV may be expressed as two tracks via MediaExtractor: a normal PCM track for backward compatibility, and a float PCM track for added fidelity. Similarly, Dolby Vision extractor may provide a baseline SDR version of a DV track.) This key can be used to identify which MediaExtractor tracks refer to the same underlying content.
 The associated value is an integer.
 
  Value: "track-id"
@@ -2082,7 +2082,7 @@ For example, if there are 3 temporal layers and the total bitrate is 1000kbps, a
 - Layer 0 + Layer 1: 60% of total bitrate (600kbps), so Layer 1 gets 30% (300kbps)
 - Layer 0 + Layer 1 + Layer 2: 100% of total bitrate (1000kbps), so Layer 2 gets 40% (400kbps)
 
-The ratios must be monotonically increasing. See `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+The ratios must be monotonically increasing. See setParameters
 
  Value: "video-bitrate-layering"
 
@@ -2226,7 +2226,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val LOG_SESSION_ID: String
 ```
 
-A key describing the log session ID for MediaCodec. The log session ID is a random 32-byte hexadecimal string that is used to associate metrics from multiple media codec instances to the same playback or recording session. The value is created as `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId`. Sessions are created in `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager`. The associated value is a string.
+A key describing the log session ID for MediaCodec. The log session ID is a random 32-byte hexadecimal string that is used to associate metrics from multiple media codec instances to the same playback or recording session. The value is created as LogSessionId. Sessions are created in MediaMetricsManager. The associated value is a string.
 
  Value: "log-session-id"
 
@@ -2640,7 +2640,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val MIMETYPE_IMAGE_ANDROID_HEIC: String
 ```
 
-MIME type for HEIF still image data encoded in HEVC. To decode such an image, `https://developer.android.com/reference/kotlin/android/media/MediaCodec` decoder for `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_HEVC:kotlin.String` shall be used. The client needs to form the correct #MediaFormat based on additional information in the track format (shown in the next paragraph), and send it to android.media.MediaCodec#configure. The track's MediaFormat will come with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` keys, which describes the width and height of the image. If the image doesn't contain grid (i.e. none of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` are present), the track will contain a single sample of coded data for the entire image, and the image width and height should be used to set up the decoder. If the image does come with grid, each sample from the track will contain one tile in the grid, of which the size is described by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`. This size (instead of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`) should be used to set up the decoder. The track contains `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String` by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` samples in row-major, top-row first, left-to-right order. The output image should be reconstructed by first tiling the decoding results of the tiles in the correct order, then trimming (before rotation is applied) on the bottom and right side, if the tiled area is larger than the image width and height.
+MIME type for HEIF still image data encoded in HEVC. To decode such an image, MediaCodec decoder for `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_HEVC:kotlin.String` shall be used. The client needs to form the correct #MediaFormat based on additional information in the track format (shown in the next paragraph), and send it to android.media.MediaCodec#configure. The track's MediaFormat will come with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` keys, which describes the width and height of the image. If the image doesn't contain grid (i.e. none of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` are present), the track will contain a single sample of coded data for the entire image, and the image width and height should be used to set up the decoder. If the image does come with grid, each sample from the track will contain one tile in the grid, of which the size is described by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`. This size (instead of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`) should be used to set up the decoder. The track contains `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String` by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` samples in row-major, top-row first, left-to-right order. The output image should be reconstructed by first tiling the decoding results of the tiles in the correct order, then trimming (before rotation is applied) on the bottom and right side, if the tiled area is larger than the image width and height.
 
  Value: "image/vnd.android.heic"
 
@@ -2652,7 +2652,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val MIMETYPE_IMAGE_AVIF: String
 ```
 
-MIME type for AVIF still image data encoded in AV1. To decode such an image, `https://developer.android.com/reference/kotlin/android/media/MediaCodec` decoder for `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_AV1:kotlin.String` shall be used. The client needs to form the correct #MediaFormat based on additional information in the track format (shown in the next paragraph), and send it to android.media.MediaCodec#configure. The track's MediaFormat will come with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` keys, which describes the width and height of the image. If the image doesn't contain grid (i.e. none of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` are present), the track will contain a single sample of coded data for the entire image, and the image width and height should be used to set up the decoder. If the image does come with grid, each sample from the track will contain one tile in the grid, of which the size is described by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`. This size (instead of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`) should be used to set up the decoder. The track contains `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String` by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` samples in row-major, top-row first, left-to-right order. The output image should be reconstructed by first tiling the decoding results of the tiles in the correct order, then trimming (before rotation is applied) on the bottom and right side, if the tiled area is larger than the image width and height.
+MIME type for AVIF still image data encoded in AV1. To decode such an image, MediaCodec decoder for `https://developer.android.com/reference/kotlin/android/media/MediaFormat#MIMETYPE_VIDEO_AV1:kotlin.String` shall be used. The client needs to form the correct #MediaFormat based on additional information in the track format (shown in the next paragraph), and send it to android.media.MediaCodec#configure. The track's MediaFormat will come with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String` keys, which describes the width and height of the image. If the image doesn't contain grid (i.e. none of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` are present), the track will contain a single sample of coded data for the entire image, and the image width and height should be used to set up the decoder. If the image does come with grid, each sample from the track will contain one tile in the grid, of which the size is described by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_TILE_HEIGHT:kotlin.String`. This size (instead of `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`) should be used to set up the decoder. The track contains `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_ROWS:kotlin.String` by `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_GRID_COLUMNS:kotlin.String` samples in row-major, top-row first, left-to-right order. The output image should be reconstructed by first tiling the decoding results of the tiles in the correct order, then trimming (before rotation is applied) on the bottom and right side, if the tiled area is larger than the image width and height.
 
  Value: "image/avif"
 
@@ -3045,7 +3045,7 @@ Creates a minimal audio format.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat#` | This value cannot be `null`. |
+| MediaFormat | This value cannot be `null`. |
 
 ### createSubtitleFormat
 
@@ -3067,7 +3067,7 @@ Creates a minimal subtitle format.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat#` | This value cannot be `null`. |
+| MediaFormat | This value cannot be `null`. |
 
 ### createVideoFormat
 
@@ -3092,7 +3092,7 @@ Creates a minimal video format.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat#` | This value cannot be `null`. |
+| MediaFormat | This value cannot be `null`. |
 
 ### getByteBuffer
 
@@ -3501,9 +3501,9 @@ Sets whether a feature is to be enabled (`true`) or disabled (`false`). If `enab
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findDecoderForFormat(android.media.MediaFormat)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findEncoderForFormat(android.media.MediaFormat)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#isFormatSupported(android.media.MediaFormat)`
+- findDecoderForFormat
+- findEncoderForFormat
+- isFormatSupported
 
 ### setFloat
 

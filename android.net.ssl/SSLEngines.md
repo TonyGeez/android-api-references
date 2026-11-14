@@ -16,11 +16,11 @@ Static utility methods for accessing additional functionality of supported insta
 
 | Public methods ||
 |---|---|
-| open static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLEngines#exportKeyingMaterial(javax.net.ssl.SSLEngine,%20kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(engine: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine.html#, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, context: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Exports a value derived from the TLS master secret as described in RFC 5705. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLEngines#isSupportedEngine(javax.net.ssl.SSLEngine)(engine: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine.html#)` Returns whether the given engine can be used with the methods in this class. |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLEngines#setEchConfigList(javax.net.ssl.SSLEngine,%20android.net.ssl.EchConfigList)(engine: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine.html#, echConfigList: https://developer.android.com/reference/kotlin/android/net/ssl/EchConfigList)` Sets an EchConfigList to be used to establish ECH on the TLS handshake. |
+| open static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | exportKeyingMaterial Exports a value derived from the TLS master secret as described in RFC 5705. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSupportedEngine Returns whether the given engine can be used with the methods in this class. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEchConfigList Sets an EchConfigList to be used to establish ECH on the TLS handshake. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ssl/SSLEngines#setUseSessionTickets(javax.net.ssl.SSLEngine,%20kotlin.Boolean)(engine: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine.html#, useSessionTickets: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the use of session tickets. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUseSessionTickets Enables or disables the use of session tickets. |
 
 ## Public methods
 

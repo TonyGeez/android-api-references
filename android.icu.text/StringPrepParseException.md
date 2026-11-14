@@ -42,21 +42,21 @@ Exception that signals an error has occurred while parsing the input to StringPr
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#StringPrepParseException(kotlin.String,%20kotlin.Int)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Construct a ParseException object with the given message and error code |
-| `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#StringPrepParseException(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.Int)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rules: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Construct a ParseException object with the given message and error code |
-| `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#StringPrepParseException(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rules: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, pos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, lineNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Construct a ParseException object with the given message and error code |
+| StringPrepParseException Construct a ParseException object with the given message and error code |
+| StringPrepParseException Construct a ParseException object with the given message and error code |
+| StringPrepParseException Construct a ParseException object with the given message and error code |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare this ParseException to another and evaluate if they are equal. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#getError()()` Returns the error code of this exception. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#hashCode()()` Mock implementation of hashCode(). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compare this ParseException to another and evaluate if they are equal. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getError Returns the error code of this exception. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Mock implementation of hashCode(). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/StringPrepParseException#toString()()` Returns the position of error in the rules string |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns the position of error in the rules string |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/text/ParseException.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/text/ParseException.html#getErrorOffset()()` Returns the position where the error was found. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/text/ParseException.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getErrorOffset Returns the position where the error was found. <br /> | ||
 
 ## Constants
 

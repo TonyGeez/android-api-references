@@ -21,36 +21,36 @@ Session used when notifying the Android system about events associated with view
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#close()()` Closes this resource, relinquishing any underlying resources. |
-| [ContentCaptureSession](ContentCaptureSession.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#createContentCaptureSession(android.view.contentcapture.ContentCaptureContext)(context: https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext)` Creates a new `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#destroy()()` Destroys this session, flushing out all pending notifications to the service. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes this resource, relinquishing any underlying resources. |
+| [ContentCaptureSession](ContentCaptureSession.md) | createContentCaptureSession Creates a new ContentCaptureSession. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | destroy Destroys this session, flushing out all pending notifications to the service. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#flush()()` Flushes an internal buffer of UI events and signals System Intelligence (SI) that a semantically meaningful state has been reached. |
-| [ContentCaptureContext](ContentCaptureContext.md)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureContext()()` Gets the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext` associated with the session. |
-| [ContentCaptureSessionId](ContentCaptureSessionId.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureSessionId()()` Gets the id used to identify this session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flushes an internal buffer of UI events and signals System Intelligence (SI) that a semantically meaningful state has been reached. |
+| [ContentCaptureContext](ContentCaptureContext.md)? | getContentCaptureContext Gets the ContentCaptureContext associated with the session. |
+| [ContentCaptureSessionId](ContentCaptureSessionId.md) | getContentCaptureSessionId Gets the id used to identify this session. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()()` Gets the Content Capture version enabled for this session. |
-| open [AutofillId](../android.view.autofill/AutofillId.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newAutofillId(android.view.autofill.AutofillId,%20kotlin.Long)(hostId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#, virtualChildId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` for a virtual child, so it can be used to uniquely identify the children in the session. |
-| [ViewStructure](../android.view/ViewStructure.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newViewStructure(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#)` Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "standard" view. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getContentCaptureVersion Gets the Content Capture version enabled for this session. |
+| open [AutofillId](../android.view.autofill/AutofillId.md) | newAutofillId Creates a new `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` for a virtual child, so it can be used to uniquely identify the children in the session. |
+| [ViewStructure](../android.view/ViewStructure.md) | newViewStructure Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "standard" view. |
 | --- | --- |
-| [ViewStructure](../android.view/ViewStructure.md) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newVirtualViewStructure(android.view.autofill.AutofillId,%20kotlin.Long)(parentId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#, virtualId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "virtual" view, so it can be passed to `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewAppeared(android.view.ViewStructure)` by the view managing the virtual view hierarchy. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyContentInteractionEvent(android.view.autofill.AutofillId)(autofillId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)` Notifies the Intelligence Service that a view has been interacted. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeAppearedOrChanged(android.view.autofill.AutofillId,%20android.view.contentcapture.ContentCaptureNodeProperties)(id: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#, properties: https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties?)` Creates a new node or updates an existing one according to the changes in properties. |
+| [ViewStructure](../android.view/ViewStructure.md) | newVirtualViewStructure Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "virtual" view, so it can be passed to notifyViewAppeared by the view managing the virtual view hierarchy. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyContentInteractionEvent Notifies the Intelligence Service that a view has been interacted. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyNodeAppearedOrChanged Creates a new node or updates an existing one according to the changes in properties. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeDisappeared(android.view.autofill.AutofillId)(id: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)` Removes a node from the active content capture hierarchy. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifySessionPaused()()` Notifies the Content Capture Service that a session has paused. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifySessionResumed()()` Notifies the Content Capture Service that a session has resumed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyNodeDisappeared Removes a node from the active content capture hierarchy. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifySessionPaused Notifies the Content Capture Service that a session has paused. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifySessionResumed Notifies the Content Capture Service that a session has resumed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewAppeared(android.view.ViewStructure)(node: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#)` Notifies the Content Capture Service that a node has been added to the view structure. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewDisappeared(android.view.autofill.AutofillId)(id: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#)` Notifies the Content Capture Service that a node has been removed from the view structure. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewInsetsChanged(android.graphics.Insets)(viewInsets: https://developer.android.com/reference/kotlin/android/graphics/Insets.html#)` Notifies the Intelligence Service that the insets of a view have changed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyViewAppeared Notifies the Content Capture Service that a node has been added to the view structure. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyViewDisappeared Notifies the Content Capture Service that a node has been removed from the view structure. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyViewInsetsChanged Notifies the Intelligence Service that the insets of a view have changed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewTextChanged(android.view.autofill.AutofillId,%20kotlin.CharSequence)(id: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Notifies the Intelligence Service that the value of a text node has been changed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewsAppeared(kotlin.collections.MutableList)(appearedNodes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#!>)` Notifies the Content Capture Service that a list of nodes has appeared in the view structure. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewsDisappeared(android.view.autofill.AutofillId,%20kotlin.LongArray)(hostId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#, virtualIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Notifies the Content Capture Service that many nodes has been removed from a virtual view structure. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyViewTextChanged Notifies the Intelligence Service that the value of a text node has been changed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyViewsAppeared Notifies the Content Capture Service that a list of nodes has appeared in the view structure. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyViewsDisappeared Notifies the Content Capture Service that many nodes has been removed from a virtual view structure. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#setContentCaptureContext(android.view.contentcapture.ContentCaptureContext)(context: https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext?)` Sets the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext` associated with the session. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#toString()()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentCaptureContext Sets the ContentCaptureContext associated with the session. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -64,26 +64,26 @@ static val VERSION_1: Int
 
 Content Capture Version 1.
 
-The first Content Capture version is an information rich, event based system that attempts to transfer the current view hierarchy from the application process to a system intelligence service through periodic event dumps, e.g. `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#flush()`. However, this system can also be resource heavy due to the large number of events it generates.
+The first Content Capture version is an information rich, event based system that attempts to transfer the current view hierarchy from the application process to a system intelligence service through periodic event dumps, e.g. flush. However, this system can also be resource heavy due to the large number of events it generates.
 
-When this version is returned by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`, developers should use Version 1 APIs to notify the system of view hierarchy changes. Calling Version 2 APIs when the session is configured for Version 1 will result in no-ops.
+When this version is returned by getContentCaptureVersion, developers should use Version 1 APIs to notify the system of view hierarchy changes. Calling Version 2 APIs when the session is configured for Version 1 will result in no-ops.
 
 A list of functions that belong explicitly to Content Capture Version 1:
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewAppeared(android.view.ViewStructure)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewDisappeared(android.view.autofill.AutofillId)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewsAppeared(kotlin.collections.MutableList)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewsDisappeared(android.view.autofill.AutofillId,%20kotlin.LongArray)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewTextChanged(android.view.autofill.AutofillId,%20kotlin.CharSequence)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#flush()`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newViewStructure(android.view.View)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newVirtualViewStructure(android.view.autofill.AutofillId,%20kotlin.Long)`
+- notifyViewAppeared
+- notifyViewDisappeared
+- notifyViewsAppeared
+- notifyViewsDisappeared
+- notifyViewTextChanged
+- flush
+- newViewStructure
+- newVirtualViewStructure
 
  Value: 1
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 - `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#VERSION_2:kotlin.Int`
 
 ### VERSION_2
@@ -98,18 +98,18 @@ Content Capture Version 2.
 
 The second and newer Content Capture takes a more focused and leaner approach to passing the view hierarchy from the application to a system intelligence service. The required information is mostly limited to text on screen and bounding boxes of these text nodes. This version of Content Capture is also significantly more efficient at resource usage and recommended to be the default one for various system intelligence services to use.
 
-When this version is returned by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`, developers should use Version 2 APIs to report node lifecycle and property updates. Calling Version 1 APIs when the session is configured for Version 2 will result in no-ops.
+When this version is returned by getContentCaptureVersion, developers should use Version 2 APIs to report node lifecycle and property updates. Calling Version 1 APIs when the session is configured for Version 2 will result in no-ops.
 
 A list of functions that belong explicitly to Content Capture Version 2:
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeAppearedOrChanged(android.view.autofill.AutofillId,%20android.view.contentcapture.ContentCaptureNodeProperties)`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeDisappeared(android.view.autofill.AutofillId)`
+- notifyNodeAppearedOrChanged
+- notifyNodeDisappeared
 
  Value: 2
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 - `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#VERSION_1:kotlin.Int`
 
 ## Public methods
@@ -136,9 +136,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun createContentCaptureSession(context: ContentCaptureContext): ContentCaptureSession
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#`.
+Creates a new ContentCaptureSession.
 
-See `https://developer.android.com/reference/kotlin/android/view/View.html#setContentCaptureSession(android.view.contentcapture.ContentCaptureSession)` for more info.
+See setContentCaptureSession for more info.
 
 | Parameters ||
 |---|---|
@@ -146,7 +146,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setCo
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#` | This value cannot be `null`. |
+| ContentCaptureSession | This value cannot be `null`. |
 
 ### destroy
 
@@ -181,7 +181,7 @@ It is crucial to call `flush()` after completing a semantic batch to ensure SI c
 Note; This function belongs to Content Capture Version 1.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 
 ### getContentCaptureContext
 
@@ -191,11 +191,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getContentCaptureContext(): ContentCaptureContext?
 ```
 
-Gets the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext` associated with the session.
+Gets the ContentCaptureContext associated with the session.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext?` | context set on constructor or by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#setContentCaptureContext(android.view.contentcapture.ContentCaptureContext)`, or `null` if never explicitly set. |
+| ContentCaptureContext | context set on constructor or by setContentCaptureContext, or `null` if never explicitly set. |
 
 ### getContentCaptureSessionId
 
@@ -209,7 +209,7 @@ Gets the id used to identify this session.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSessionId` | This value cannot be `null`. |
+| ContentCaptureSessionId | This value cannot be `null`. |
 
 ### getContentCaptureVersion
 
@@ -249,7 +249,7 @@ Creates a new `https://developer.android.com/reference/kotlin/android/view/autof
 
 | Parameters ||
 |---|---|
-| `hostId` | [AutofillId](../android.view.autofill/AutofillId.md): id of the non-virtual view hosting the virtual view hierarchy (it can be obtained by calling `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#getAutofillId()`). This value cannot be `null`. |
+| `hostId` | [AutofillId](../android.view.autofill/AutofillId.md): id of the non-virtual view hosting the virtual view hierarchy (it can be obtained by calling getAutofillId). This value cannot be `null`. |
 | `virtualChildId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): id of the virtual child, relative to the parent. |
 
 | Return ||
@@ -270,28 +270,28 @@ fun newViewStructure(view: View): ViewStructure
 
 Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "standard" view.
 
-This method should be called after a visible view is laid out; the view then must populate the structure and pass it to `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewAppeared(android.view.ViewStructure)`. **Note:** views that manage a virtual structure under this view must populate just the node representing this view and return right away, then asynchronously report (not necessarily in the UI thread) when the children nodes appear, disappear or have their text changed by calling `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewAppeared(android.view.ViewStructure)`, `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewDisappeared(android.view.autofill.AutofillId)`, and `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewTextChanged(android.view.autofill.AutofillId,%20kotlin.CharSequence)` respectively. The structure for the a child must be created using `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newVirtualViewStructure(android.view.autofill.AutofillId,%20kotlin.Long)`, and the `autofillId` for a child can be obtained either through `childStructure.getAutofillId()` or `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newAutofillId(android.view.autofill.AutofillId,%20kotlin.Long)`.
+This method should be called after a visible view is laid out; the view then must populate the structure and pass it to notifyViewAppeared. **Note:** views that manage a virtual structure under this view must populate just the node representing this view and return right away, then asynchronously report (not necessarily in the UI thread) when the children nodes appear, disappear or have their text changed by calling notifyViewAppeared, notifyViewDisappeared, and notifyViewTextChanged respectively. The structure for the a child must be created using newVirtualViewStructure, and the `autofillId` for a child can be obtained either through `childStructure.getAutofillId()` or newAutofillId.
 
 When the virtual view hierarchy represents a web page, you should also:
 
-- Call `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager#getContentCaptureConditions()` to infer content capture events should be generate for that URL.
-- Create a new `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#` child for every HTML element that renders a new URL (like an `IFRAME`) and use that session to notify events from that subtree.
+- Call getContentCaptureConditions to infer content capture events should be generate for that URL.
+- Create a new ContentCaptureSession child for every HTML element that renders a new URL (like an `IFRAME`) and use that session to notify events from that subtree.
 
 **Note:** the following methods of the `structure` will be ignored:
 
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setChildCount(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#addChildCount(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#getChildCount()`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#newChild(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#asyncNewChild(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#asyncCommit()`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setWebDomain(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#newHtmlInfoBuilder(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setHtmlInfo(android.view.ViewStructure.HtmlInfo)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setDataIsSensitive(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setAlpha(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setElevation(kotlin.Float)`
-- `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#setTransformation(android.graphics.Matrix)`
+- setChildCount
+- addChildCount
+- getChildCount
+- newChild
+- asyncNewChild
+- asyncCommit
+- setWebDomain
+- newHtmlInfoBuilder
+- setHtmlInfo
+- setDataIsSensitive
+- setAlpha
+- setElevation
+- setTransformation
 
 Note: This function belongs to Content Capture Version 1.
 
@@ -305,7 +305,7 @@ Note: This function belongs to Content Capture Version 1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 
 ### newVirtualViewStructure
 
@@ -318,13 +318,13 @@ fun newVirtualViewStructure(
 ): ViewStructure
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "virtual" view, so it can be passed to `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewAppeared(android.view.ViewStructure)` by the view managing the virtual view hierarchy.
+Creates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for a "virtual" view, so it can be passed to notifyViewAppeared by the view managing the virtual view hierarchy.
 
 Note: This function belongs to Content Capture Version 1.
 
 | Parameters ||
 |---|---|
-| `parentId` | [AutofillId](../android.view.autofill/AutofillId.md): id of the virtual view parent (it can be obtained by calling `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#getAutofillId()` on the parent). This value cannot be `null`. |
+| `parentId` | [AutofillId](../android.view.autofill/AutofillId.md): id of the virtual view parent (it can be obtained by calling getAutofillId on the parent). This value cannot be `null`. |
 | `virtualId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): id of the virtual child, relative to the parent. |
 
 | Return ||
@@ -333,8 +333,8 @@ Note: This function belongs to Content Capture Version 1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
+- getContentCaptureVersion
 
 ### notifyContentInteractionEvent
 
@@ -367,11 +367,11 @@ Creates a new node or updates an existing one according to the changes in proper
 
 This is the primary method to construct and report the UI hierarchy in Content Capture Version 2. It unifies the reporting of both standard `https://developer.android.com/reference/kotlin/android/view/View.html#` and virtual views (e.g., inside a Webview) into a single, cohesive API. Call this method when a node is attached, laid out, and ready to be drawn in the active UI hierarchy, or when its properties (like text or bounds) change.
 
-For standard views, the `id` can be obtained via `https://developer.android.com/reference/kotlin/android/view/View.html#getAutofillId()`. For virtual views, the `id` must be created using `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newAutofillId(android.view.autofill.AutofillId,%20kotlin.Long)`.
+For standard views, the `id` can be obtained via getAutofillId. For virtual views, the `id` must be created using newAutofillId.
 
-To minimize memory allocations, applications should reuse a single `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties` instance, calling `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#clear()` before populating it for a new node.
+To minimize memory allocations, applications should reuse a single ContentCaptureNodeProperties instance, calling clear before populating it for a new node.
 
-If the node already exists, only the properties explicitly set in the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties` payload will be updated. The parent-child relationship is modified based on the parent ID configuration:
+If the node already exists, only the properties explicitly set in the ContentCaptureNodeProperties payload will be updated. The parent-child relationship is modified based on the parent ID configuration:
 
 - **Setting parent ID to `null`:** Guarantees that this node is treated as a root node with no parent.
 - **Not setting parent ID at all:** Leaves the existing parent unchanged. If the node is appearing for the first time, it defaults to a root node.
@@ -385,13 +385,13 @@ This method must be called on the thread that originally created this UI element
 | Parameters ||
 |---|---|
 | `id` | [AutofillId](../android.view.autofill/AutofillId.md): The `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the node. This value cannot be `null`. |
-| `properties` | [ContentCaptureNodeProperties](ContentCaptureNodeProperties.md)?: The `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties` holding the attributes for this node. This value may be `null`. |
+| `properties` | [ContentCaptureNodeProperties](ContentCaptureNodeProperties.md)?: The ContentCaptureNodeProperties holding the attributes for this node. This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeDisappeared(android.view.autofill.AutofillId)`
+- getContentCaptureVersion
+- ContentCaptureNodeProperties
+- notifyNodeDisappeared
 
 ### notifyNodeDisappeared
 
@@ -422,8 +422,8 @@ This method must be called on the thread that originally created this UI element
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeAppearedOrChanged(android.view.autofill.AutofillId,%20android.view.contentcapture.ContentCaptureNodeProperties)`
+- getContentCaptureVersion
+- notifyNodeAppearedOrChanged
 
 ### notifySessionPaused
 
@@ -455,9 +455,9 @@ fun notifyViewAppeared(node: ViewStructure): Unit
 
 Notifies the Content Capture Service that a node has been added to the view structure.
 
-Typically called "manually" by views that handle their own virtual view hierarchy, or automatically by the Android System for views that return `true` on `https://developer.android.com/reference/kotlin/android/view/View.html#onProvideContentCaptureStructure(android.view.ViewStructure,%20kotlin.Int)`.
+Typically called "manually" by views that handle their own virtual view hierarchy, or automatically by the Android System for views that return `true` on onProvideContentCaptureStructure.
 
-Consider use `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewsAppeared(kotlin.collections.MutableList)` which has a better performance when notifying a list of nodes has appeared.
+Consider use notifyViewsAppeared which has a better performance when notifying a list of nodes has appeared.
 
 Note; This function belongs to Content Capture Version 1.
 
@@ -477,7 +477,7 @@ Notifies the Content Capture Service that a node has been removed from the view 
 
 Typically called "manually" by views that handle their own virtual view hierarchy, or automatically by the Android System for standard views.
 
-Consider use `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyViewsDisappeared(android.view.autofill.AutofillId,%20kotlin.LongArray)` which has a better performance when notifying a list of nodes has disappeared.
+Consider use notifyViewsDisappeared which has a better performance when notifying a list of nodes has disappeared.
 
 Note; This function belongs to Content Capture Version 1.
 
@@ -487,7 +487,7 @@ Note; This function belongs to Content Capture Version 1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 
 ### notifyViewInsetsChanged
 
@@ -525,8 +525,8 @@ Note; This function belongs to Content Capture Version 1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
+- getContentCaptureVersion
 
 ### notifyViewsAppeared
 
@@ -548,7 +548,7 @@ Note; This function belongs to Content Capture Version 1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 
 ### notifyViewsDisappeared
 
@@ -571,7 +571,7 @@ Note; This function belongs to Content Capture Version 1.
 
 | Parameters ||
 |---|---|
-| `hostId` | [AutofillId](../android.view.autofill/AutofillId.md): id of the non-virtual view hosting the virtual view hierarchy (it can be obtained by calling `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#getAutofillId()`). This value cannot be `null`. |
+| `hostId` | [AutofillId](../android.view.autofill/AutofillId.md): id of the non-virtual view hosting the virtual view hierarchy (it can be obtained by calling getAutofillId). This value cannot be `null`. |
 | `virtualIds` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): ids of the virtual children. This value cannot be `null`. |
 
 | Exceptions ||
@@ -580,7 +580,7 @@ Note; This function belongs to Content Capture Version 1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#getContentCaptureVersion()`
+- getContentCaptureVersion
 
 ### setContentCaptureContext
 
@@ -590,7 +590,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun setContentCaptureContext(context: ContentCaptureContext?): Unit
 ```
 
-Sets the `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureContext` associated with the session.
+Sets the ContentCaptureContext associated with the session.
 
 Typically used to change the context associated with the default session from an activity.
 

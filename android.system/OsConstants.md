@@ -10,33 +10,33 @@ class OsConstants
 | --- | --- |
 | ↳ | [android.system.OsConstants](OsConstants.md) |
 
-Constants and helper functions for use with `https://developer.android.com/reference/kotlin/android/system/Os`.
+Constants and helper functions for use with Os.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISBLK(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a block device. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISCHR(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a character device. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISDIR(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a directory. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISBLK Tests whether the given mode is a block device. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISCHR Tests whether the given mode is a character device. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISDIR Tests whether the given mode is a directory. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISFIFO(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a FIFO. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISLNK(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a symbolic link. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISREG(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a regular file. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISFIFO Tests whether the given mode is a FIFO. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISLNK Tests whether the given mode is a symbolic link. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISREG Tests whether the given mode is a regular file. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#S_ISSOCK(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the given mode is a socket. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WCOREDUMP(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the child dumped core. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WEXITSTATUS(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Extracts the exit status of a child. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | S_ISSOCK Tests whether the given mode is a socket. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | WCOREDUMP Tests whether the child dumped core. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | WEXITSTATUS Extracts the exit status of a child. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WIFEXITED(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the child exited normally. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WIFSIGNALED(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the child was terminated by a signal. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WIFSTOPPED(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests whether the child was stopped (not terminated) by a signal. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | WIFEXITED Tests whether the child exited normally. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | WIFSIGNALED Tests whether the child was terminated by a signal. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | WIFSTOPPED Tests whether the child was stopped (not terminated) by a signal. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WSTOPSIG(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the signal that cause the child to stop. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#WTERMSIG(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the signal that caused the child to exit. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/system/OsConstants#errnoName(kotlin.Int)(errno: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string name of an errno value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | WSTOPSIG Returns the signal that cause the child to stop. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | WTERMSIG Returns the signal that caused the child to exit. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | errnoName Returns the string name of an errno value. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/system/OsConstants#gaiName(kotlin.Int)(error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string name of a getaddrinfo(3) error value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | gaiName Returns the string name of a getaddrinfo(3) error value. |
 
 | Properties ||
 |---|---|
@@ -526,10 +526,10 @@ Constants and helper functions for use with `https://developer.android.com/refer
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SIOCGIFDSTADDR:kotlin.Int` <br /> |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SIOCGIFNETMASK:kotlin.Int` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_CLOEXEC:kotlin.Int` Set the close-on-exec (`FD_CLOEXEC`) flag on the new file descriptor created by `https://developer.android.com/reference/kotlin/android/system/Os#socket(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/system/Os#socketpair(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.io.FileDescriptor,%20java.io.FileDescriptor)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_CLOEXEC:kotlin.Int` Set the close-on-exec (`FD_CLOEXEC`) flag on the new file descriptor created by socket or socketpair. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_DGRAM:kotlin.Int` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_NONBLOCK:kotlin.Int` Set the O_NONBLOCK file status flag on the file descriptor created by `https://developer.android.com/reference/kotlin/android/system/Os#socket(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/system/Os#socketpair(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.io.FileDescriptor,%20java.io.FileDescriptor)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_NONBLOCK:kotlin.Int` Set the O_NONBLOCK file status flag on the file descriptor created by socket or socketpair. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_RAW:kotlin.Int` <br /> |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/system/OsConstants#SOCK_SEQPACKET:kotlin.Int` <br /> |
@@ -901,7 +901,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static fun errnoName(errno: Int): String!
 ```
 
-Returns the string name of an errno value. For example, "EACCES". See `https://developer.android.com/reference/kotlin/android/system/Os#strerror(kotlin.Int)` for human-readable errno descriptions. The errno value 95 should map to "ENOTSUP" instead of "EOPNOTSUPP" to preserve the legacy behavior of this function.
+Returns the string name of an errno value. For example, "EACCES". See strerror for human-readable errno descriptions. The errno value 95 should map to "ENOTSUP" instead of "EOPNOTSUPP" to preserve the legacy behavior of this function.
 
 ### gaiName
 
@@ -974,7 +974,7 @@ static val AF_VSOCK: Int
 The virt-vsock address family, linux specific. It is used with `struct sockaddr_vm` from uapi/linux/vm_sockets.h.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/system/VmSocketAddress`
+- VmSocketAddress
 
 ### AI_ADDRCONFIG
 
@@ -3857,7 +3857,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val SOCK_CLOEXEC: Int
 ```
 
-Set the close-on-exec (`FD_CLOEXEC`) flag on the new file descriptor created by `https://developer.android.com/reference/kotlin/android/system/Os#socket(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/system/Os#socketpair(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.io.FileDescriptor,%20java.io.FileDescriptor)`. See the description of the O_CLOEXEC flag in [open(2)](http://man7.org/linux/man-pages/man2/open.2.html) for reasons why this may be useful.
+Set the close-on-exec (`FD_CLOEXEC`) flag on the new file descriptor created by socket or socketpair. See the description of the O_CLOEXEC flag in [open(2)](http://man7.org/linux/man-pages/man2/open.2.html) for reasons why this may be useful.
 
 Applications wishing to make use of this flag on older API versions may use `https://developer.android.com/reference/kotlin/android/system/OsConstants#O_CLOEXEC:kotlin.Int` instead. On Android, `O_CLOEXEC` and `SOCK_CLOEXEC` are the same value.
 
@@ -3877,7 +3877,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val SOCK_NONBLOCK: Int
 ```
 
-Set the O_NONBLOCK file status flag on the file descriptor created by `https://developer.android.com/reference/kotlin/android/system/Os#socket(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/system/Os#socketpair(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20java.io.FileDescriptor,%20java.io.FileDescriptor)`.
+Set the O_NONBLOCK file status flag on the file descriptor created by socket or socketpair.
 
 Applications wishing to make use of this flag on older API versions may use `https://developer.android.com/reference/kotlin/android/system/OsConstants#O_NONBLOCK:kotlin.Int` instead. On Android, `O_NONBLOCK` and `SOCK_NONBLOCK` are the same value.
 
@@ -4396,7 +4396,7 @@ static val VMADDR_CID_ANY: Int
 The virtio-vsock `svmCid` value to listens for all CIDs.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/system/VmSocketAddress`
+- VmSocketAddress
 
 ### VMADDR_CID_HOST
 
@@ -4409,7 +4409,7 @@ static val VMADDR_CID_HOST: Int
 The virtio-vsock `svmCid` value for loopback communication.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/system/VmSocketAddress`
+- VmSocketAddress
 
 ### VMADDR_CID_LOCAL
 
@@ -4422,7 +4422,7 @@ static val VMADDR_CID_LOCAL: Int
 The virtio-vsock `svmCid` value for host communication.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/system/VmSocketAddress`
+- VmSocketAddress
 
 ### VMADDR_PORT_ANY
 
@@ -4435,7 +4435,7 @@ static val VMADDR_PORT_ANY: Int
 The virtio-vsock `svmPort` value to bind for any available port.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/system/VmSocketAddress`
+- VmSocketAddress
 
 ### WCONTINUED
 

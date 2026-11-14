@@ -24,7 +24,7 @@ They are constructed using `https://developer.android.com/reference/kotlin/andro
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/slice/Slice.Builder` A Builder used to construct `https://developer.android.com/reference/kotlin/android/app/slice/Slice#`s |
+| | `https://developer.android.com/reference/kotlin/android/app/slice/Slice.Builder` A Builder used to construct Slices |
 
 | Constants ||
 |---|---|
@@ -71,32 +71,32 @@ They are constructed using `https://developer.android.com/reference/kotlin/andro
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/slice/Slice#Slice(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
+| Slice <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getHints()()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SliceItem](SliceItem.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getItems()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getHints <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SliceItem](SliceItem.md)!\>! | getItems <br /> |
 | --- | --- |
-| [SliceSpec](SliceSpec.md)? | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getSpec()()` <br /> |
-| [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#getUri()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#isCallerNeeded()()` Returns whether the caller for this slice matters. |
+| [SliceSpec](SliceSpec.md)? | getSpec <br /> |
+| [Uri](../android.net/Uri.md)! | getUri <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCallerNeeded Returns whether the caller for this slice matters. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#toString()()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/slice/Slice#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -550,7 +550,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -582,7 +582,7 @@ fun getItems(): MutableList<SliceItem!>!
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/slice/SliceItem!>!` | All child `https://developer.android.com/reference/kotlin/android/app/slice/SliceItem`s that this Slice contains. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/slice/SliceItem!>!` | All child SliceItems that this Slice contains. |
 
 ### getSpec
 
@@ -596,7 +596,7 @@ fun getSpec(): SliceSpec?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/slice/SliceSpec?` | The spec for this slice. This value may be `null`. |
+| SliceSpec | The spec for this slice. This value may be `null`. |
 
 ### getUri
 
@@ -625,7 +625,7 @@ fun isCallerNeeded(): Boolean
 Returns whether the caller for this slice matters.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/slice/Slice.Builder#setCallerNeeded(kotlin.Boolean)`
+- setCallerNeeded
 
 ### toString
 

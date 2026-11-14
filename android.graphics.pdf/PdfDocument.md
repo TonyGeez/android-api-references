@@ -56,20 +56,20 @@ A typical use of the APIs looks like this:
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#PdfDocument()()` Creates a new instance. |
+| PdfDocument Creates a new instance. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#close()()` Closes this document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)(page: https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.Page!)` Finishes a started page. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfDocument.PageInfo](../android/graphics/pdf/PdfDocument.PageInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#getPages()()` Gets the pages of the document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes this document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishPage Finishes a started page. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfDocument.PageInfo](../android/graphics/pdf/PdfDocument.PageInfo.md)!\>! | getPages Gets the pages of the document. |
 | --- | --- |
-| open [PdfDocument.Page](../android/graphics/pdf/PdfDocument.Page.md)! | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#startPage(android.graphics.pdf.PdfDocument.PageInfo)(pageInfo: https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo!)` Starts a page using the provided `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#writeTo(java.io.OutputStream)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!)` Writes the document to an output stream. |
+| open [PdfDocument.Page](../android/graphics/pdf/PdfDocument.Page.md)! | startPage Starts a page using the provided `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTo Writes the document to an output stream. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public constructors
 
@@ -95,7 +95,7 @@ open fun close(): Unit
 
 Closes this document. This method should be called after you are done working with the document. After this call the document is considered closed and none of its methods should be called.
 
-**Note:** Do not call this method if the page returned by `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#startPage(android.graphics.pdf.PdfDocument.PageInfo)` is not finished by calling `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)`.
+**Note:** Do not call this method if the page returned by startPage is not finished by calling finishPage.
 
 ### finishPage
 
@@ -107,7 +107,7 @@ open fun finishPage(page: PdfDocument.Page!): Unit
 
 Finishes a started page. You should always finish the last started page.
 
-**Note:** Do not call this method after `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#close()`. You should not finish the same page more than once.
+**Note:** Do not call this method after close. You should not finish the same page more than once.
 
 | Parameters ||
 |---|---|
@@ -115,7 +115,7 @@ Finishes a started page. You should always finish the last started page.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#startPage(android.graphics.pdf.PdfDocument.PageInfo)`
+- startPage
 
 ### getPages
 
@@ -139,9 +139,9 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun startPage(pageInfo: PdfDocument.PageInfo!): PdfDocument.Page!
 ```
 
-Starts a page using the provided `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo`. After the page is created you can draw arbitrary content on the page's canvas which you can get by calling `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.Page#getCanvas()`. After you are done drawing the content you should finish the page by calling `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)`. After the page is finished you should no longer access the page or its canvas.
+Starts a page using the provided `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument.PageInfo`. After the page is created you can draw arbitrary content on the page's canvas which you can get by calling getCanvas. After you are done drawing the content you should finish the page by calling finishPage. After the page is finished you should no longer access the page or its canvas.
 
-**Note:** Do not call this method after `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#close()`. Also do not call this method if the last page returned by this method is not finished by calling `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)`.
+**Note:** Do not call this method after close. Also do not call this method if the last page returned by this method is not finished by calling finishPage.
 
 | Parameters ||
 |---|---|
@@ -153,7 +153,7 @@ Starts a page using the provided `https://developer.android.com/reference/kotlin
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)`
+- finishPage
 
 ### writeTo
 
@@ -165,7 +165,7 @@ open fun writeTo(out: OutputStream!): Unit
 
 Writes the document to an output stream. You can call this method multiple times.
 
-**Note:** Do not call this method after `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#close()`. Also do not call this method if a page returned by `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#startPage(android.graphics.pdf.PdfDocument.PageInfo)` is not finished by calling `https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfDocument#finishPage(android.graphics.pdf.PdfDocument.Page)`.
+**Note:** Do not call this method after close. Also do not call this method if a page returned by startPage is not finished by calling finishPage.
 
 | Parameters ||
 |---|---|

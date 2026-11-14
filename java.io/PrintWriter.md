@@ -11,11 +11,11 @@ open class PrintWriter : Writer
 | ↳ | [java.io.Writer](Writer.md) ||
 | | ↳ | [java.io.PrintWriter](PrintWriter.md) |
 
-Prints formatted representations of objects to a text-output stream. This class implements all of the `print` methods found in `https://developer.android.com/reference/kotlin/java/io/PrintStream`. It does not contain methods for writing raw bytes, for which a program should use unencoded byte streams.
+Prints formatted representations of objects to a text-output stream. This class implements all of the `print` methods found in PrintStream. It does not contain methods for writing raw bytes, for which a program should use unencoded byte streams.
 
-Unlike the `https://developer.android.com/reference/kotlin/java/io/PrintStream` class, if automatic flushing is enabled it will be done only when one of the `println`, `printf`, or `format` methods is invoked, rather than whenever a newline character happens to be output. These methods use the platform's own notion of line separator rather than the newline character.
+Unlike the PrintStream class, if automatic flushing is enabled it will be done only when one of the `println`, `printf`, or `format` methods is invoked, rather than whenever a newline character happens to be output. These methods use the platform's own notion of line separator rather than the newline character.
 
-Methods in this class never throw I/O exceptions, although some of its constructors may. The client may inquire as to whether any errors have occurred by invoking `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()`.
+Methods in this class never throw I/O exceptions, although some of its constructors may. The client may inquire as to whether any errors have occurred by invoking checkError.
 
 This class always replaces malformed and unmappable character sequences with the charset's default replacement string. The [java.nio.charset.CharsetEncoder](../java.nio.charset/CharsetEncoder.md) class should be used when more control over the encoding process is required.
 
@@ -23,74 +23,74 @@ This class always replaces malformed and unmappable character sequences with the
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.File)(file: https://developer.android.com/reference/kotlin/java/io/File)` Creates a new PrintWriter, without automatic line flushing, with the specified file. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.File,%20kotlin.String)(file: https://developer.android.com/reference/kotlin/java/io/File, csn: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.File,%20java.nio.charset.Charset)(file: https://developer.android.com/reference/kotlin/java/io/File, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)` Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.OutputStream)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream)` Creates a new PrintWriter, without automatic line flushing, from an existing OutputStream. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.OutputStream,%20kotlin.Boolean)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream, autoFlush: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new PrintWriter from an existing OutputStream. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.OutputStream,%20kotlin.Boolean,%20java.nio.charset.Charset)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream, autoFlush: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)` Creates a new PrintWriter from an existing OutputStream. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.Writer)(out: https://developer.android.com/reference/kotlin/java/io/Writer)` Creates a new PrintWriter, without automatic line flushing. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(java.io.Writer,%20kotlin.Boolean)(out: https://developer.android.com/reference/kotlin/java/io/Writer, autoFlush: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new PrintWriter. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(kotlin.String)(fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new PrintWriter, without automatic line flushing, with the specified file name. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(kotlin.String,%20kotlin.String)(fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, csn: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. |
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#PrintWriter(kotlin.String,%20java.nio.charset.Charset)(fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)` Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, with the specified file. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, from an existing OutputStream. |
+| PrintWriter Creates a new PrintWriter from an existing OutputStream. |
+| PrintWriter Creates a new PrintWriter from an existing OutputStream. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing. |
+| PrintWriter Creates a new PrintWriter. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, with the specified file name. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. |
+| PrintWriter Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. |
 
 | Public methods ||
 |---|---|
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends the specified character to this writer. |
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.CharSequence)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Appends the specified character sequence to this writer. |
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends a subsequence of the specified character sequence to this writer. |
+| open [PrintWriter](PrintWriter.md) | append Appends the specified character to this writer. |
+| open [PrintWriter](PrintWriter.md) | append Appends the specified character sequence to this writer. |
+| open [PrintWriter](PrintWriter.md) | append Appends a subsequence of the specified character sequence to this writer. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()()` Flushes the stream if it's not closed and checks its error state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#close()()` Closes the stream and releases any system resources associated with it. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#flush()()` Flushes the stream. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | checkError Flushes the stream if it's not closed and checks its error state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes the stream and releases any system resources associated with it. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flushes the stream. |
 | --- | --- |
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#format(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Writes a formatted string to this writer using the specified format string and arguments. |
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#format(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#?, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Writes a formatted string to this writer using the specified format string and arguments. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Prints a boolean value. |
+| open [PrintWriter](PrintWriter.md) | format Writes a formatted string to this writer using the specified format string and arguments. |
+| open [PrintWriter](PrintWriter.md) | format Writes a formatted string to this writer using the specified format string and arguments. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints a boolean value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Prints a character. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.CharArray)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Prints an array of characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Prints a double-precision floating-point number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints a character. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints an array of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints a double-precision floating-point number. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Prints a floating-point number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Prints an integer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Prints an object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints a floating-point number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints an integer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints an object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Prints a string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Long)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Prints a long integer. |
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#printf(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` A convenience method to write a formatted string to this writer using the specified format string and arguments. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints a string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | print Prints a long integer. |
+| open [PrintWriter](PrintWriter.md) | printf A convenience method to write a formatted string to this writer using the specified format string and arguments. |
 | --- | --- |
-| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#printf(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#?, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` A convenience method to write a formatted string to this writer using the specified format string and arguments. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()()` Terminates the current line by writing the line separator string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Boolean)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Prints a boolean value and then terminates the line. |
+| open [PrintWriter](PrintWriter.md) | printf A convenience method to write a formatted string to this writer using the specified format string and arguments. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Terminates the current line by writing the line separator string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints a boolean value and then terminates the line. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Char)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Prints a character and then terminates the line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.CharArray)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Prints an array of characters and then terminates the line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Prints a double-precision floating-point number and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints a character and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints an array of characters and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints a double-precision floating-point number and then terminates the line. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Prints a floating-point number and then terminates the line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Prints an integer and then terminates the line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Any)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Prints an Object and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints a floating-point number and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints an integer and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints an Object and then terminates the line. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.String)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Prints a String and then terminates the line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Prints a long integer and then terminates the line. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.CharArray)(buf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Writes an array of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints a String and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Prints a long integer and then terminates the line. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes an array of characters. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(buf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes A Portion of an array of characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a single character. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Writes a string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes A Portion of an array of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes a single character. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes a string. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.String,%20kotlin.Int,%20kotlin.Int)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a portion of a string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes a portion of a string. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#clearError()()` Clears the error state of this stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#setError()()` Indicates that an error has occurred. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearError Clears the error state of this stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setError Indicates that an error has occurred. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/io/Writer` |---|---| | `https://developer.android.com/reference/kotlin/java/io/Writer!` | `https://developer.android.com/reference/kotlin/java/io/Writer#nullWriter()()` Returns a new `Writer` which discards all characters. The returned stream is initially open. The stream is closed by calling the `close()` method. Subsequent calls to `close()` have no effect. While the stream is open, the `append(char)`, `append(CharSequence)`, `append(CharSequence, int, int)`, `flush()`, `write(int)`, `write(char[])`, and `write(char[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`. The `https://developer.android.com/reference/kotlin/java/io/Writer#lock:kotlin.Any` used to synchronize operations on the returned `Writer` is not specified. <br /> | ||
+| From class Writer |---|---| | `https://developer.android.com/reference/kotlin/java/io/Writer!` | nullWriter Returns a new `Writer` which discards all characters. The returned stream is initially open. The stream is closed by calling the `close()` method. Subsequent calls to `close()` have no effect. While the stream is open, the `append(char)`, `append(CharSequence)`, `append(CharSequence, int, int)`, `flush()`, `write(int)`, `write(char[])`, and `write(char[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`. The `https://developer.android.com/reference/kotlin/java/io/Writer#lock:kotlin.Any` used to synchronize operations on the returned `Writer` is not specified. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -98,7 +98,7 @@ This class always replaces malformed and unmappable character sequences with the
 
 | Inherited properties ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/io/Writer` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!` | `https://developer.android.com/reference/kotlin/java/io/Writer#lock:kotlin.Any` The object used to synchronize operations on this stream. For efficiency, a character-stream object may use an object other than itself to protect critical sections. A subclass should therefore use the object in this field rather than `this` or a synchronized method. <br /> | ||
+| From class Writer |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!` | `https://developer.android.com/reference/kotlin/java/io/Writer#lock:kotlin.Any` The object used to synchronize operations on this stream. For efficiency, a character-stream object may use an object other than itself to protect critical sections. A subclass should therefore use the object in this field rather than `this` or a synchronized method. <br /> | ||
 
 ## Public constructors
 
@@ -110,7 +110,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 PrintWriter(file: File)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the [default charset](../java.nio.charset/Charset.md)) for this instance of the Java virtual machine.
+Creates a new PrintWriter, without automatic line flushing, with the specified file. This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the [default charset](../java.nio.charset/Charset.md)) for this instance of the Java virtual machine.
 
 | Parameters ||
 |---|---|
@@ -131,7 +131,7 @@ PrintWriter(
     csn: String)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the provided charset.
+Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the provided charset.
 
 | Parameters ||
 |---|---|
@@ -155,7 +155,7 @@ PrintWriter(
     charset: Charset)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the provided charset.
+Creates a new PrintWriter, without automatic line flushing, with the specified file and charset. This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the provided charset.
 
 | Parameters ||
 |---|---|
@@ -183,7 +183,7 @@ Creates a new PrintWriter, without automatic line flushing, from an existing Out
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter#OutputStreamWriter(java.io.OutputStream)`
+- OutputStreamWriter
 
 ### PrintWriter
 
@@ -204,7 +204,7 @@ Creates a new PrintWriter from an existing OutputStream. This convenience constr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter#OutputStreamWriter(java.io.OutputStream)`
+- OutputStreamWriter
 
 ### PrintWriter
 
@@ -265,7 +265,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 PrintWriter(fileName: String)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file name. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the [default charset](../java.nio.charset/Charset.md)) for this instance of the Java virtual machine.
+Creates a new PrintWriter, without automatic line flushing, with the specified file name. This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the [default charset](../java.nio.charset/Charset.md)) for this instance of the Java virtual machine.
 
 | Parameters ||
 |---|---|
@@ -286,7 +286,7 @@ PrintWriter(
     csn: String)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the provided charset.
+Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the provided charset.
 
 | Parameters ||
 |---|---|
@@ -310,7 +310,7 @@ PrintWriter(
     charset: Charset)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the provided charset.
+Creates a new PrintWriter, without automatic line flushing, with the specified file name and charset. This convenience constructor creates the necessary intermediate OutputStreamWriter, which will encode characters using the provided charset.
 
 | Parameters ||
 |---|---|
@@ -347,7 +347,7 @@ An invocation of this method of the form `out.append(c)` behaves in exactly the 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -378,7 +378,7 @@ Depending on the specification of `toString` for the character sequence `csq`, t
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -414,7 +414,7 @@ An invocation of this method of the form `out.append(csq, start, end)` when `csq
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -452,7 +452,7 @@ Closes the stream and releases any system resources associated with it. Closing 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()`
+- checkError
 
 ### flush
 
@@ -470,7 +470,7 @@ Flushes the stream.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()`
+- checkError
 
 ### format
 
@@ -485,7 +485,7 @@ open fun format(
 
 Writes a formatted string to this writer using the specified format string and arguments. If automatic flushing is enabled, calls to this method will flush the output buffer.
 
-The locale always used is the one returned by `https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault()`, regardless of any previous invocations of other formatting methods on this object.
+The locale always used is the one returned by getDefault, regardless of any previous invocations of other formatting methods on this object.
 
 | Parameters ||
 |---|---|
@@ -494,7 +494,7 @@ The locale always used is the one returned by `https://developer.android.com/ref
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -524,7 +524,7 @@ Writes a formatted string to this writer using the specified format string and a
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -539,7 +539,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(b: Boolean): Unit
 ```
 
-Prints a boolean value. The string produced by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Boolean)` is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints a boolean value. The string produced by valueOf is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -553,7 +553,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(c: Char): Unit
 ```
 
-Prints a character. The character is translated into one or more bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints a character. The character is translated into one or more bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -567,7 +567,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(s: CharArray!): Unit
 ```
 
-Prints an array of characters. The characters are converted into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints an array of characters. The characters are converted into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -585,7 +585,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(d: Double): Unit
 ```
 
-Prints a double-precision floating-point number. The string produced by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Double)` is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints a double-precision floating-point number. The string produced by valueOf is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -593,7 +593,7 @@ Prints a double-precision floating-point number. The string produced by `https:/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Double.html#toString(kotlin.Double)`
+- toString
 
 ### print
 
@@ -603,7 +603,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(f: Float): Unit
 ```
 
-Prints a floating-point number. The string produced by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Float)` is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints a floating-point number. The string produced by valueOf is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -611,7 +611,7 @@ Prints a floating-point number. The string produced by `https://developer.androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float.html#toString(kotlin.Float)`
+- toString
 
 ### print
 
@@ -621,7 +621,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(i: Int): Unit
 ```
 
-Prints an integer. The string produced by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Int)` is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints an integer. The string produced by valueOf is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -629,7 +629,7 @@ Prints an integer. The string produced by `https://developer.android.com/referen
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Integer.html#toString(kotlin.Int)`
+- toString
 
 ### print
 
@@ -639,7 +639,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(obj: Any?): Unit
 ```
 
-Prints an object. The string produced by the `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)` method is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints an object. The string produced by the valueOf method is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -647,7 +647,7 @@ Prints an object. The string produced by the `https://developer.android.com/refe
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object.html#toString()`
+- toString
 
 ### print
 
@@ -657,7 +657,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(s: String?): Unit
 ```
 
-Prints a string. If the argument is `null` then the string `"null"` is printed. Otherwise, the string's characters are converted into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints a string. If the argument is `null` then the string `"null"` is printed. Otherwise, the string's characters are converted into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -671,7 +671,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun print(l: Long): Unit
 ```
 
-Prints a long integer. The string produced by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Long)` is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the `https://developer.android.com/reference/kotlin/java/io/PrintWriter#write(kotlin.Int)` method.
+Prints a long integer. The string produced by valueOf is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write method.
 
 | Parameters ||
 |---|---|
@@ -679,7 +679,7 @@ Prints a long integer. The string produced by `https://developer.android.com/ref
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Long.html#toString(kotlin.Long)`
+- toString
 
 ### printf
 
@@ -708,7 +708,7 @@ An invocation of this method of the form `out.printf(format, args)` behaves in e
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -745,7 +745,7 @@ An invocation of this method of the form `out.printf(l, format, args)` behaves i
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/PrintWriter#` | This writer |
+| PrintWriter | This writer |
 
 | Exceptions ||
 |---|---|
@@ -770,7 +770,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Boolean): Unit
 ```
 
-Prints a boolean value and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Boolean)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints a boolean value and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -784,7 +784,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Char): Unit
 ```
 
-Prints a character and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Char)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints a character and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -798,7 +798,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: CharArray!): Unit
 ```
 
-Prints an array of characters and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.CharArray)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints an array of characters and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -812,7 +812,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Double): Unit
 ```
 
-Prints a double-precision floating-point number and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Double)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints a double-precision floating-point number and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -826,7 +826,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Float): Unit
 ```
 
-Prints a floating-point number and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Float)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints a floating-point number and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -840,7 +840,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Int): Unit
 ```
 
-Prints an integer and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Int)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints an integer and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -854,7 +854,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Any?): Unit
 ```
 
-Prints an Object and then terminates the line. This method calls at first String.valueOf(x) to get the printed object's string value, then behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.String)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints an Object and then terminates the line. This method calls at first String.valueOf(x) to get the printed object's string value, then behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -868,7 +868,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: String?): Unit
 ```
 
-Prints a String and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.String)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints a String and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -882,7 +882,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun println(x: Long): Unit
 ```
 
-Prints a long integer and then terminates the line. This method behaves as though it invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Long)` and then `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()`.
+Prints a long integer and then terminates the line. This method behaves as though it invokes print and then println.
 
 | Parameters ||
 |---|---|
@@ -1010,7 +1010,7 @@ protected open fun clearError(): Unit
 
 Clears the error state of this stream.
 
-This method will cause subsequent invocations of `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()` to return `false` until another write operation fails and invokes `https://developer.android.com/reference/kotlin/java/io/PrintWriter#setError()`.
+This method will cause subsequent invocations of checkError to return `false` until another write operation fails and invokes setError.
 
 ### setError
 
@@ -1022,7 +1022,7 @@ protected open fun setError(): Unit
 
 Indicates that an error has occurred.
 
-This method will cause subsequent invocations of `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()` to return `true` until `https://developer.android.com/reference/kotlin/java/io/PrintWriter#clearError()` is invoked.
+This method will cause subsequent invocations of checkError to return `true` until clearError is invoked.
 
 ## Properties
 

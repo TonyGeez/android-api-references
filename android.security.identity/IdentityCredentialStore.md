@@ -46,15 +46,15 @@ The Identity Credential API is designed to be able to evolve and change over tim
 
 | Public methods ||
 |---|---|
-| abstract [WritableIdentityCredential](WritableIdentityCredential.md) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createCredential(kotlin.String,%20kotlin.String)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, docType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a new credential. |
-| open [PresentationSession](PresentationSession.md) | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createPresentationSession(kotlin.Int)(cipherSuite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new presentation session. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#deleteCredentialByName(kotlin.String)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Delete a named credential. |
+| abstract [WritableIdentityCredential](WritableIdentityCredential.md) | createCredential Creates a new credential. |
+| open [PresentationSession](PresentationSession.md) | createPresentationSession Creates a new presentation session. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | deleteCredentialByName Delete a named credential. |
 | --- | --- |
-| abstract [IdentityCredential](IdentityCredential.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getCredentialByName(kotlin.String,%20kotlin.Int)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cipherSuite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a named credential. |
-| open static [IdentityCredentialStore](IdentityCredentialStore.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getDirectAccessInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#` for direct access. |
-| open static [IdentityCredentialStore](IdentityCredentialStore.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets the default `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#`. |
+| abstract [IdentityCredential](IdentityCredential.md)? | getCredentialByName Retrieve a named credential. |
+| open static [IdentityCredentialStore](IdentityCredentialStore.md)? | getDirectAccessInstance Gets the IdentityCredentialStore for direct access. |
+| open static [IdentityCredentialStore](IdentityCredentialStore.md)? | getInstance Gets the default IdentityCredentialStore. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#getSupportedDocTypes()()` Gets a list of supported document types. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSupportedDocTypes Gets a list of supported document types. |
 
 ## Constants
 
@@ -100,7 +100,7 @@ abstract fun createCredential(
 
 Creates a new credential.
 
-When a credential is created, a cryptographic key-pair - CredentialKey - is created which is used to authenticate the store to the Issuing Authority. The private part of this key-pair never leaves secure hardware and the public part can be obtained using `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#getCredentialKeyCertificateChain(kotlin.ByteArray)` on the returned object.
+When a credential is created, a cryptographic key-pair - CredentialKey - is created which is used to authenticate the store to the Issuing Authority. The private part of this key-pair never leaves secure hardware and the public part can be obtained using getCredentialKeyCertificateChain on the returned object.
 
 In addition, all of the Credential data content is imported and a certificate for the CredentialKey and a signature produced with the CredentialKey are created. These latter values may be checked by an issuing authority to verify that the data was imported into secure hardware and that it was imported unmodified.
 
@@ -111,7 +111,7 @@ In addition, all of the Credential data content is imported and a certificate fo
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential` | A `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential` that can be used to create a new credential. This value cannot be `null`. |
+| WritableIdentityCredential | A WritableIdentityCredential that can be used to create a new credential. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -141,7 +141,7 @@ This is only implemented in feature version 202201 or later. If not implemented,
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession` | The presentation session. This value cannot be `null`. |
+| PresentationSession | The presentation session. This value cannot be `null`. |
 
 ### deleteCredentialByName
 
@@ -152,7 +152,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 abstract fun deleteCredentialByName(credentialName: String): ByteArray?
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#delete(kotlin.ByteArray)` instead.*
+**Deprecated:** *Use delete instead.*
 
 Delete a named credential.
 
@@ -200,7 +200,7 @@ The cipher suite used to communicate with the remote verifier must also be speci
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential?` | The named credential, or null if not found. |
+| IdentityCredential | The named credential, or null if not found. |
 
 ### getDirectAccessInstance
 
@@ -212,7 +212,7 @@ open static fun getDirectAccessInstance(context: Context): IdentityCredentialSt
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Gets the `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#` for direct access.
+Gets the IdentityCredentialStore for direct access.
 
 Direct access requires specialized NFC hardware and may not be supported on all devices even if default store is available. Credentials provisioned to the direct access store should **always** use reader authentication to protect data elements.
 
@@ -222,7 +222,7 @@ Direct access requires specialized NFC hardware and may not be supported on all 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#?` | the `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#` or `null` if direct access is not supported on this device. |
+| `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#?` | the IdentityCredentialStore or `null` if direct access is not supported on this device. |
 
 ### getInstance
 
@@ -234,7 +234,7 @@ open static fun getInstance(context: Context): IdentityCredentialStore?
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Gets the default `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#`.
+Gets the default IdentityCredentialStore.
 
 | Parameters ||
 |---|---|
@@ -242,7 +242,7 @@ Gets the default `https://developer.android.com/reference/kotlin/android/securit
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#?` | the `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#` or `null` if the device doesn't have hardware-backed support for secure storage of user identity documents. |
+| `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#?` | the IdentityCredentialStore or `null` if the device doesn't have hardware-backed support for secure storage of user identity documents. |
 
 ### getSupportedDocTypes
 

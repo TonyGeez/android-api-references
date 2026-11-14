@@ -23,24 +23,24 @@ Creates Bitmap objects from various sources, including files, streams, and byte-
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#BitmapFactory()()` <br /> |
+| BitmapFactory <br /> |
 
 | Public methods ||
 |---|---|
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeByteArray(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Decode an immutable bitmap from the specified byte array. |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeByteArray(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20android.graphics.BitmapFactory.Options)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options!)` Decode an immutable bitmap from the specified byte array. |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeFile(kotlin.String)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Decode a file path into a bitmap. |
+| open static [Bitmap](Bitmap.md)! | decodeByteArray Decode an immutable bitmap from the specified byte array. |
+| open static [Bitmap](Bitmap.md)! | decodeByteArray Decode an immutable bitmap from the specified byte array. |
+| open static [Bitmap](Bitmap.md)! | decodeFile Decode a file path into a bitmap. |
 | --- | --- |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeFile(kotlin.String,%20android.graphics.BitmapFactory.Options)(pathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options!)` Decode a file path into a bitmap. |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeFileDescriptor(java.io.FileDescriptor)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!)` Decode a bitmap from the file descriptor. |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeFileDescriptor(java.io.FileDescriptor,%20android.graphics.Rect,%20android.graphics.BitmapFactory.Options)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, outPadding: https://developer.android.com/reference/kotlin/android/graphics/Rect!, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options!)` Decode a bitmap from the file descriptor. |
+| open static [Bitmap](Bitmap.md)! | decodeFile Decode a file path into a bitmap. |
+| open static [Bitmap](Bitmap.md)! | decodeFileDescriptor Decode a bitmap from the file descriptor. |
+| open static [Bitmap](Bitmap.md)! | decodeFileDescriptor Decode a bitmap from the file descriptor. |
 | --- | --- |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResource(android.content.res.Resources,%20kotlin.Int)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Synonym for `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResource(android.content.res.Resources,%20kotlin.Int,%20android.graphics.BitmapFactory.Options)` with null Options. |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResource(android.content.res.Resources,%20kotlin.Int,%20android.graphics.BitmapFactory.Options)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options!)` Synonym for opening the given resource and calling `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResourceStream(android.content.res.Resources,%20android.util.TypedValue,%20java.io.InputStream,%20android.graphics.Rect,%20android.graphics.BitmapFactory.Options)`. |
-| open static [Bitmap](Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResourceStream(android.content.res.Resources,%20android.util.TypedValue,%20java.io.InputStream,%20android.graphics.Rect,%20android.graphics.BitmapFactory.Options)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#?, value: https://developer.android.com/reference/kotlin/android/util/TypedValue.html#?, is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?, pad: https://developer.android.com/reference/kotlin/android/graphics/Rect?, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options?)` Decode a new Bitmap from an InputStream. |
+| open static [Bitmap](Bitmap.md)! | decodeResource Synonym for decodeResource with null Options. |
+| open static [Bitmap](Bitmap.md)! | decodeResource Synonym for opening the given resource and calling decodeResourceStream. |
+| open static [Bitmap](Bitmap.md)? | decodeResourceStream Decode a new Bitmap from an InputStream. |
 | --- | --- |
-| open static [Bitmap](Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeStream(java.io.InputStream)(is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Decode an input stream into a bitmap. |
-| open static [Bitmap](Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeStream(java.io.InputStream,%20android.graphics.Rect,%20android.graphics.BitmapFactory.Options)(is: https://developer.android.com/reference/kotlin/java/io/InputStream.html#?, outPadding: https://developer.android.com/reference/kotlin/android/graphics/Rect?, opts: https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options?)` Decode an input stream into a bitmap. |
+| open static [Bitmap](Bitmap.md)! | decodeStream Decode an input stream into a bitmap. |
+| open static [Bitmap](Bitmap.md)? | decodeStream Decode an input stream into a bitmap. |
 
 ## Public constructors
 
@@ -210,7 +210,7 @@ open static fun decodeResource(
 ): Bitmap!
 ```
 
-Synonym for `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResource(android.content.res.Resources,%20kotlin.Int,%20android.graphics.BitmapFactory.Options)` with null Options.
+Synonym for decodeResource with null Options.
 
 | Parameters ||
 |---|---|
@@ -233,7 +233,7 @@ open static fun decodeResource(
 ): Bitmap!
 ```
 
-Synonym for opening the given resource and calling `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory#decodeResourceStream(android.content.res.Resources,%20android.util.TypedValue,%20java.io.InputStream,%20android.graphics.Rect,%20android.graphics.BitmapFactory.Options)`.
+Synonym for opening the given resource and calling decodeResourceStream.
 
 | Parameters ||
 |---|---|
@@ -277,7 +277,7 @@ Decode a new Bitmap from an InputStream. This InputStream was obtained from reso
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/Bitmap?` | This value may be `null`. |
+| Bitmap | This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -324,8 +324,8 @@ Decode an input stream into a bitmap. If the input stream is null, or cannot be 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/Bitmap?` | The decoded bitmap, or null if the image data could not be decoded, or, if opts is non-null, if opts requested only the size be returned (in opts.outWidth and opts.outHeight) |
+| Bitmap | The decoded bitmap, or null if the image data could not be decoded, or, if opts is non-null, if opts requested only the size be returned (in opts.outWidth and opts.outHeight) |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options#inPreferredConfig:android.graphics.Bitmap.Config` is `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` and `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options#inMutable:kotlin.Boolean` is set, if the specified color space is not `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model`, or if the specified color space's transfer function is not an `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb.TransferParameters` Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, if `https://developer.android.com/reference/kotlin/java/io/InputStream.html#markSupported()` returns true, `is.mark(1024)` would be called. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, this is no longer the case. |
+| `java.lang.IllegalArgumentException` | if `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options#inPreferredConfig:android.graphics.Bitmap.Config` is `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` and `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.Options#inMutable:kotlin.Boolean` is set, if the specified color space is not `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Model`, or if the specified color space's transfer function is not an `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Rgb.TransferParameters` Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, if markSupported returns true, `is.mark(1024)` would be called. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, this is no longer the case. |

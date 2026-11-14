@@ -23,27 +23,27 @@ Represents data specific to an ad that is necessary for ad selection and renderi
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData.Builder` Builder for AdData objects. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` objects contain the same information. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdCounterKeys()()` Gets the set of keys used in counting events. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks whether two AdData objects contain the same information. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getAdCounterKeys Gets the set of keys used in counting events. |
 | --- | --- |
-| [AdFilters](AdFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdFilters()()` Gets all `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters` associated with the ad. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getAdRenderId()()` Gets the ad render id for server auctions. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getMetadata()()` Gets the buyer ad metadata used during the ad selection process. |
+| [AdFilters](AdFilters.md)? | getAdFilters Gets all AdFilters associated with the ad. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getAdRenderId Gets the ad render id for server auctions. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getMetadata Gets the buyer ad metadata used during the ad selection process. |
 | --- | --- |
-| [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#getRenderUri()()` Gets the URI that points to the ad's rendering assets. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` object's data. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#toString()()` Returns a string representation of the object. |
+| [Uri](../android.net/Uri.md) | getRenderUri Gets the URI that points to the ad's rendering assets. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hash of the AdData object's data. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -62,7 +62,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -79,7 +79,7 @@ fun equals(other: Any?): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether two `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` objects contain the same information.
+Checks whether two AdData objects contain the same information.
 
 | Parameters ||
 |---|---|
@@ -125,7 +125,7 @@ fun getAdFilters(): AdFilters?
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets all `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters` associated with the ad.
+Gets all AdFilters associated with the ad.
 
 The filters, if met or exceeded, exclude the associated ad from participating in ad selection. They are optional and if `null` specify that no filters apply to this ad.
 
@@ -143,11 +143,11 @@ fun getAdRenderId(): String?
 
 Gets the ad render id for server auctions.
 
-Ad render id is collected for each `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` when server auction request is received.
+Ad render id is collected for each AdData when server auction request is received.
 
-Any `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` without ad render id will be ineligible for server-side auction.
+Any AdData without ad render id will be ineligible for server-side auction.
 
-The overall size of the CA is limited. The size of this field is considered using `https://developer.android.com/reference/kotlin/java/lang/String.html#getBytes()` in `UTF-8` encoding.
+The overall size of the CA is limited. The size of this field is considered using getBytes in `UTF-8` encoding.
 
 | Return ||
 |---|---|
@@ -204,7 +204,7 @@ fun hashCode(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdData#` object's data.
+Returns the hash of the AdData object's data.
 
 | Return ||
 |---|---|

@@ -19,23 +19,23 @@ An immutable class that describes the event data for an app widget interaction e
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getAppWidgetId()()` The app widget ID of the widget that generated this event. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getClickedIds()()` This returns the set of View IDs of the views which have been clicked during the event time range. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAppWidgetId The app widget ID of the widget that generated this event. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | getClickedIds This returns the set of View IDs of the views which have been clicked during the event time range. |
 | --- | --- |
-| [Instant](../java.time/Instant.md) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getEnd()()` Describes the end of the time range that this event contains data for. |
-| [Rect](../android.graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getPosition()()` This rect with describes the global coordinates of the widget at the end of the event time range. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getScrolledIds()()` This returns the set of View IDs of the views which have been scrolled during the event time range. |
+| [Instant](../java.time/Instant.md) | getEnd Describes the end of the time range that this event contains data for. |
+| [Rect](../android.graphics/Rect.md)? | getPosition This rect with describes the global coordinates of the widget at the end of the event time range. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | getScrolledIds This returns the set of View IDs of the views which have been scrolled during the event time range. |
 | --- | --- |
-| [Instant](../java.time/Instant.md) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getStart()()` Describes the start of the time range that this event contains data for. |
-| [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getVisibleDuration()()` Describes the total duration of time during which the widget was visible. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#toString()()` Returns a string representation of the object. |
+| [Instant](../java.time/Instant.md) | getStart Describes the start of the time range that this event contains data for. |
+| [Duration](../java.time/Duration.md) | getVisibleDuration Describes the total duration of time during which the widget was visible. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -51,7 +51,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -68,7 +68,7 @@ fun getAppWidgetId(): Int
 The app widget ID of the widget that generated this event.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager#getAppWidgetInfo(kotlin.Int)`
+- getAppWidgetInfo
 
 ### getClickedIds
 
@@ -78,7 +78,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getClickedIds(): IntArray?
 ```
 
-This returns the set of View IDs of the views which have been clicked during the event time range. Use `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setAppWidgetEventTag(kotlin.Int,%20kotlin.Int)` to set a custom integer tag on a view for reporting clicks. If the tag is set, it will be used here instead of the View ID.
+This returns the set of View IDs of the views which have been clicked during the event time range. Use setAppWidgetEventTag to set a custom integer tag on a view for reporting clicks. If the tag is set, it will be used here instead of the View ID.
 
 | Return ||
 |---|---|
@@ -120,7 +120,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getScrolledIds(): IntArray?
 ```
 
-This returns the set of View IDs of the views which have been scrolled during the event time range. Use `https://developer.android.com/reference/kotlin/android/widget/RemoteViews.html#setAppWidgetEventTag(kotlin.Int,%20kotlin.Int)` to set a custom integer tag on a view for reporting scrolls. If the tag is set, it will be used here instead of the View ID.
+This returns the set of View IDs of the views which have been scrolled during the event time range. Use setAppWidgetEventTag to set a custom integer tag on a view for reporting scrolls. If the tag is set, it will be used here instead of the View ID.
 
 | Return ||
 |---|---|
@@ -148,7 +148,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getVisibleDuration(): Duration
 ```
 
-Describes the total duration of time during which the widget was visible. This may be different than the event time range (between `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getStart()` and `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetEvent#getEnd()` if the widget was hidden and shown multiple times during the event time range.
+Describes the total duration of time during which the widget was visible. This may be different than the event time range (between getStart and getEnd if the widget was hidden and shown multiple times during the event time range.
 
 | Return ||
 |---|---|

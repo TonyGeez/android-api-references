@@ -17,24 +17,24 @@ Represents a device that acts as a source of health and fitness data.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#DeviceDataSource(android.health.connect.datatypes.DataOrigin,%20android.health.connect.datatypes.Device,%20kotlin.collections.MutableSet)(deviceDataOrigin: https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin, device: https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device, dataTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataTypeSource!>)` <br /> |
+| DeviceDataSource <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Device](../android.health.connect.datatypes/Device.md) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device` metadata. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Device](../android.health.connect.datatypes/Device.md) | getDevice Returns the Device metadata. |
 | --- | --- |
-| [DataOrigin](../android.health.connect.datatypes/DataOrigin.md) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataOrigin()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` of the device, containing the synthetic package name. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DeviceDataTypeSource](../android/health/connect/DeviceDataTypeSource.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataTypeSources()()` Returns the set of data types provided by this device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#hashCode()()` Returns a hash code value for the object. |
+| [DataOrigin](../android.health.connect.datatypes/DataOrigin.md) | getDeviceDataOrigin Returns the DataOrigin of the device, containing the synthetic package name. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DeviceDataTypeSource](../android/health/connect/DeviceDataTypeSource.md)!\> | getDeviceDataTypeSources Returns the set of data types provided by this device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -71,7 +71,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -114,11 +114,11 @@ Also in [U Extensions 22](https://developer.android.com/sdkExtensions)
 fun getDevice(): Device
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device` metadata.
+Returns the Device metadata.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device` | This value cannot be `null`. |
+| Device | This value cannot be `null`. |
 
 ### getDeviceDataOrigin
 
@@ -129,11 +129,11 @@ Also in [U Extensions 22](https://developer.android.com/sdkExtensions)
 fun getDeviceDataOrigin(): DataOrigin
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` of the device, containing the synthetic package name.
+Returns the DataOrigin of the device, containing the synthetic package name.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` | This value cannot be `null`. |
+| DataOrigin | This value cannot be `null`. |
 
 ### getDeviceDataTypeSources
 
@@ -163,8 +163,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

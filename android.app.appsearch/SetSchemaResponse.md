@@ -10,28 +10,28 @@ class SetSchemaResponse : Parcelable
 | --- | --- |
 | ↳ | [android.app.appsearch.SetSchemaResponse](SetSchemaResponse.md) |
 
-The response class of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
+The response class of setSchema
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.Builder` Builder for `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#` objects. |
-| | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` The class represents a post-migrated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument` that failed to be saved by `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`. |
+| | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.Builder` Builder for SetSchemaResponse objects. |
+| | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` The class represents a post-migrated GenericDocument that failed to be saved by setSchema. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getDeletedTypes()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of deleted schema types. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getIncompatibleTypes()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type whose new definitions set in the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call were incompatible with the pre-existing schema. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getDeletedTypes Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of deleted schema types. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getIncompatibleTypes Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type whose new definitions set in the setSchema call were incompatible with the pre-existing schema. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getMigratedTypes()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type that were migrated by the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SetSchemaResponse.MigrationFailure](../android/app/appsearch/SetSchemaResponse.MigrationFailure.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getMigrationFailures()()` Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` of all failed `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getMigratedTypes Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type that were migrated by the setSchema call. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SetSchemaResponse.MigrationFailure](../android/app/appsearch/SetSchemaResponse.MigrationFailure.md)!\> | getMigrationFailures Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` of all failed `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -48,7 +48,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -64,7 +64,7 @@ fun getDeletedTypes(): MutableSet<String!>
 
 Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of deleted schema types.
 
-A "deleted" type is a schema type that was previously a part of the database schema but was not present in the `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaRequest` object provided in the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call.
+A "deleted" type is a schema type that was previously a part of the database schema but was not present in the SetSchemaRequest object provided in the setSchema call.
 
 Documents for a deleted type are removed from the database.
 
@@ -80,9 +80,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getIncompatibleTypes(): MutableSet<String!>
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type whose new definitions set in the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call were incompatible with the pre-existing schema.
+Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type whose new definitions set in the setSchema call were incompatible with the pre-existing schema.
 
-If a `https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator` is provided for this type and the migration is success triggered. The type will also appear in `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse#getMigratedTypes()`.
+If a Migrator is provided for this type and the migration is success triggered. The type will also appear in getMigratedTypes.
 
 | Return ||
 |---|---|
@@ -90,9 +90,9 @@ If a `https://developer.android.com/reference/kotlin/android/app/appsearch/Migra
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaRequest`
-- `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
-- `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaRequest.Builder#setForceOverride(kotlin.Boolean)`
+- SetSchemaRequest
+- setSchema
+- setForceOverride
 
 ### getMigratedTypes
 
@@ -102,9 +102,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getMigratedTypes(): MutableSet<String!>
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type that were migrated by the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` call.
+Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` of schema type that were migrated by the setSchema call.
 
-A "migrated" type is a schema type that has triggered a `https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator` instance to migrate documents of the schema type to another schema type, or to another version of the schema type.
+A "migrated" type is a schema type that has triggered a Migrator instance to migrate documents of the schema type to another schema type, or to another version of the schema type.
 
 If a document fails to be migrated, a `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` will be generated for that document.
 
@@ -114,7 +114,7 @@ If a document fails to be migrated, a `https://developer.android.com/reference/k
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appsearch/Migrator`
+- Migrator
 
 ### getMigrationFailures
 
@@ -126,9 +126,9 @@ fun getMigrationFailures(): MutableList<SetSchemaResponse.MigrationFailure!>
 
 Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` of all failed `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure`.
 
-A `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` will be generated if the system trying to save a post-migrated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument` but fail.
+A `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` will be generated if the system trying to save a post-migrated GenericDocument but fail.
 
-`https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` contains the namespace, id and schemaType of the post-migrated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument` and the error reason. Mostly it will be mismatch the schema it migrated to.
+`https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaResponse.MigrationFailure` contains the namespace, id and schemaType of the post-migrated GenericDocument and the error reason. Mostly it will be mismatch the schema it migrated to.
 
 | Return ||
 |---|---|

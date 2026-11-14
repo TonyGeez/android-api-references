@@ -20,24 +20,24 @@ Represents a collection of HTTP protocol and framework parameters.
 
 | Public methods ||
 |---|---|
-| abstract [HttpParams](HttpParams.md)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#copy()()` Creates a copy of these parameters. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#getBooleanParameter(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/lang/Boolean.html#` parameter value with the given name. |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#getDoubleParameter(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/lang/Double.html#` parameter value with the given name. |
+| abstract [HttpParams](HttpParams.md)! | copy Creates a copy of these parameters. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getBooleanParameter Returns a `https://developer.android.com/reference/kotlin/java/lang/Boolean.html#` parameter value with the given name. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getDoubleParameter Returns a `https://developer.android.com/reference/kotlin/java/lang/Double.html#` parameter value with the given name. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#getIntParameter(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an `https://developer.android.com/reference/kotlin/java/lang/Integer.html#` parameter value with the given name. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#getLongParameter(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/lang/Long.html#` parameter value with the given name. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#getParameter(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Obtains the value of the given parameter. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIntParameter Returns an `https://developer.android.com/reference/kotlin/java/lang/Integer.html#` parameter value with the given name. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLongParameter Returns a `https://developer.android.com/reference/kotlin/java/lang/Long.html#` parameter value with the given name. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getParameter Obtains the value of the given parameter. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#isParameterFalse(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks if a boolean parameter is not set or `false`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#isParameterTrue(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks if a boolean parameter is set to `true`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#removeParameter(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Removes the parameter with the specified name. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isParameterFalse Checks if a boolean parameter is not set or `false`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isParameterTrue Checks if a boolean parameter is set to `true`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeParameter Removes the parameter with the specified name. |
 | --- | --- |
-| abstract [HttpParams](HttpParams.md)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setBooleanParameter(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Assigns a `https://developer.android.com/reference/kotlin/java/lang/Boolean.html#` to the parameter with the given name |
-| abstract [HttpParams](HttpParams.md)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setDoubleParameter(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Assigns a `https://developer.android.com/reference/kotlin/java/lang/Double.html#` to the parameter with the given name |
-| abstract [HttpParams](HttpParams.md)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setIntParameter(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Assigns an `https://developer.android.com/reference/kotlin/java/lang/Integer.html#` to the parameter with the given name |
+| abstract [HttpParams](HttpParams.md)! | setBooleanParameter Assigns a `https://developer.android.com/reference/kotlin/java/lang/Boolean.html#` to the parameter with the given name |
+| abstract [HttpParams](HttpParams.md)! | setDoubleParameter Assigns a `https://developer.android.com/reference/kotlin/java/lang/Double.html#` to the parameter with the given name |
+| abstract [HttpParams](HttpParams.md)! | setIntParameter Assigns an `https://developer.android.com/reference/kotlin/java/lang/Integer.html#` to the parameter with the given name |
 | --- | --- |
-| abstract [HttpParams](HttpParams.md)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setLongParameter(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Assigns a `https://developer.android.com/reference/kotlin/java/lang/Long.html#` to the parameter with the given name |
-| abstract [HttpParams](HttpParams.md)! | `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setParameter(kotlin.String,%20kotlin.Any)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Assigns the value to the parameter with the given name. |
+| abstract [HttpParams](HttpParams.md)! | setLongParameter Assigns a `https://developer.android.com/reference/kotlin/java/lang/Long.html#` to the parameter with the given name |
+| abstract [HttpParams](HttpParams.md)! | setParameter Assigns the value to the parameter with the given name. |
 
 ## Public methods
 
@@ -83,7 +83,7 @@ Returns a `https://developer.android.com/reference/kotlin/java/lang/Boolean.html
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setBooleanParameter(kotlin.String,%20kotlin.Boolean)`
+- setBooleanParameter
 
 ### getDoubleParameter
 
@@ -111,7 +111,7 @@ Returns a `https://developer.android.com/reference/kotlin/java/lang/Double.html#
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setDoubleParameter(kotlin.String,%20kotlin.Double)`
+- setDoubleParameter
 
 ### getIntParameter
 
@@ -139,7 +139,7 @@ Returns an `https://developer.android.com/reference/kotlin/java/lang/Integer.htm
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setIntParameter(kotlin.String,%20kotlin.Int)`
+- setIntParameter
 
 ### getLongParameter
 
@@ -167,7 +167,7 @@ Returns a `https://developer.android.com/reference/kotlin/java/lang/Long.html#` 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setLongParameter(kotlin.String,%20kotlin.Long)`
+- setLongParameter
 
 ### getParameter
 
@@ -191,7 +191,7 @@ Obtains the value of the given parameter.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/apache/http/params/HttpParams#setParameter(kotlin.String,%20kotlin.Any)`
+- setParameter
 
 ### isParameterFalse
 

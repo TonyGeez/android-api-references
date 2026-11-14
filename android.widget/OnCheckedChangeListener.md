@@ -17,7 +17,7 @@ Interface definition for a callback to be invoked when the checked state of a co
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/CompoundButton.OnCheckedChangeListener#onCheckedChanged(android.widget.CompoundButton,%20kotlin.Boolean)(buttonView: https://developer.android.com/reference/kotlin/android/widget/CompoundButton, isChecked: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when the checked state of a compound button has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCheckedChanged Called when the checked state of a compound button has changed. |
 
 ## Public methods
 

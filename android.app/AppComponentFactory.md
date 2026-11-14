@@ -19,17 +19,17 @@ Interface used to control the instantiation of manifest elements.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#AppComponentFactory()()` <br /> |
+| AppComponentFactory <br /> |
 
 | Public methods ||
 |---|---|
-| open [Activity](Activity.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateActivity(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of activities. |
-| open [Application](Application.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateApplication(java.lang.ClassLoader,%20kotlin.String)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Allows application to override the creation of the application object. |
-| open [ClassLoader](../java.lang/ClassLoader.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateClassLoader(java.lang.ClassLoader,%20android.content.pm.ApplicationInfo)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, aInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Selects the class loader which will be used by the platform to instantiate app components. |
+| open [Activity](Activity.md) | instantiateActivity Allows application to override the creation of activities. |
+| open [Application](Application.md) | instantiateApplication Allows application to override the creation of the application object. |
+| open [ClassLoader](../java.lang/ClassLoader.md) | instantiateClassLoader Selects the class loader which will be used by the platform to instantiate app components. |
 | --- | --- |
-| open [ContentProvider](../android.content/ContentProvider.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateProvider(java.lang.ClassLoader,%20kotlin.String)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Allows application to override the creation of providers. |
-| open [BroadcastReceiver](../android.content/BroadcastReceiver.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateReceiver(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of receivers. |
-| open [Service](Service.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateService(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of services. |
+| open [ContentProvider](../android.content/ContentProvider.md) | instantiateProvider Allows application to override the creation of providers. |
+| open [BroadcastReceiver](../android.content/BroadcastReceiver.md) | instantiateReceiver Allows application to override the creation of receivers. |
+| open [Service](Service.md) | instantiateService Allows application to override the creation of services. |
 | --- | --- |
 
 ## Public constructors
@@ -67,7 +67,7 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/Activity` | This value cannot be `null`. |
+| Activity | This value cannot be `null`. |
 
 ### instantiateApplication
 
@@ -91,7 +91,7 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/Application` | This value cannot be `null`. |
+| Application | This value cannot be `null`. |
 
 ### instantiateClassLoader
 
@@ -195,4 +195,4 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/Service` | This value cannot be `null`. |
+| Service | This value cannot be `null`. |

@@ -10,13 +10,13 @@ class EmbeddedBiometricPrompt
 | --- | --- |
 | ↳ | [android.hardware.biometrics.EmbeddedBiometricPrompt](EmbeddedBiometricPrompt.md) |
 
-The embedded version of `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt` that allows client apps to pass in content to display above the biometric prompt as a connected sheet.
+The embedded version of BiometricPrompt that allows client apps to pass in content to display above the biometric prompt as a connected sheet.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback` Callback structure provided to `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#startAuthenticationSession(android.os.CancellationSignal,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.hardware.biometrics.EmbeddedBiometricPrompt.AuthenticationCallback)`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback` Callback structure provided to startAuthenticationSession. |
 | | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder` A builder for the embedded version of BiometricPrompt that collects arguments to be shown on the system-provided biometric dialog. |
 | abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.EmbeddedContentFactory` A factory that produces the custom embedded content view for the biometric prompt. |
 | --- | --- |
@@ -30,39 +30,39 @@ The embedded version of `https://developer.android.com/reference/kotlin/android/
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getAllowedAuthenticators()()` Gets the type(s) of authenticators that may be invoked by the prompt. |
-| [EmbeddedBiometricPrompt.AuthenticationCallback](../android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getAuthenticationCallback()()` Gets the authentication callback used for the prompt. |
-| [Executor](../java.util.concurrent/Executor.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getAuthenticationExecutor()()` Gets the executor used for the authentication callback. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAllowedAuthenticators Gets the type(s) of authenticators that may be invoked by the prompt. |
+| [EmbeddedBiometricPrompt.AuthenticationCallback](../android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback.md)? | getAuthenticationCallback Gets the authentication callback used for the prompt. |
+| [Executor](../java.util.concurrent/Executor.md)? | getAuthenticationExecutor Gets the executor used for the authentication callback. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getAuthenticationPurpose()()` Gets the authentication purpose for the prompt. |
-| [PromptContentView](PromptContentView.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getContentView()()` Gets the content view, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setContentView(android.hardware.biometrics.PromptContentView)`. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getDescription()()` Gets the description, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setDescription(kotlin.CharSequence)`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAuthenticationPurpose Gets the authentication purpose for the prompt. |
+| [PromptContentView](PromptContentView.md)? | getContentView Gets the content view, as set by setContentView. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getDescription Gets the description, as set by setDescription. |
 | --- | --- |
-| [EmbeddedBiometricPrompt.EmbeddedContentFactory](../android/hardware/biometrics/EmbeddedBiometricPrompt.EmbeddedContentFactory.md) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getEmbeddedContentFactory()()` Gets the factory that will create the content to display above the biometric prompt as a connected sheet. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getExistingAuthSessionId()()` Returns the existing auth session id for BiometricPrompt. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FallbackOption](FallbackOption.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getFallbackOptions()()` Gets the fallback options for the prompt. |
+| [EmbeddedBiometricPrompt.EmbeddedContentFactory](../android/hardware/biometrics/EmbeddedBiometricPrompt.EmbeddedContentFactory.md) | getEmbeddedContentFactory Gets the factory that will create the content to display above the biometric prompt as a connected sheet. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getExistingAuthSessionId Returns the existing auth session id for BiometricPrompt. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FallbackOption](FallbackOption.md)!\> | getFallbackOptions Gets the fallback options for the prompt. |
 | --- | --- |
-| [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getLogoBitmap()()` Gets the logo bitmap, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setLogoBitmap(android.graphics.Bitmap)`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getLogoDescription()()` Gets the logo description, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setLogoDescription(kotlin.String)`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getLogoRes()()` Gets the drawable resource of the logo, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setLogoRes(kotlin.Int)`. |
+| [Bitmap](../android.graphics/Bitmap.md)? | getLogoBitmap Gets the logo bitmap, as set by setLogoBitmap. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getLogoDescription Gets the logo description, as set by setLogoDescription. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLogoRes Gets the drawable resource of the logo, as set by setLogoRes. |
 | --- | --- |
-| [DialogInterface.OnClickListener](../android/content/DialogInterface.OnClickListener.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getNegativeButton()()` Gets the negative button listener, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. |
-| [Executor](../java.util.concurrent/Executor.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getNegativeButtonExecutor()()` Gets the executor used for the negative button listener, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getNegativeButtonText()()` Gets the negative button text, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. |
+| [DialogInterface.OnClickListener](../android/content/DialogInterface.OnClickListener.md)? | getNegativeButton Gets the negative button listener, as set by setNegativeButton. |
+| [Executor](../java.util.concurrent/Executor.md)? | getNegativeButtonExecutor Gets the executor used for the negative button listener, as set by setNegativeButton. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getNegativeButtonText Gets the negative button text, as set by setNegativeButton. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getNextTranslationOffset()()` Gets the ending target layout translation offset in pixels (px) for the disappear (exit) animation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getPreviousTranslationOffset()()` Gets the starting layout translation offset in pixels (px) for the appear (entry) animation. |
-| [BiometricPromptStyleSpec](BiometricPromptStyleSpec.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getStyleSpec()()` Returns a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPromptStyleSpec` containing the style specifications of BiometricPrompt |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNextTranslationOffset Gets the ending target layout translation offset in pixels (px) for the disappear (exit) animation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPreviousTranslationOffset Gets the starting layout translation offset in pixels (px) for the appear (entry) animation. |
+| [BiometricPromptStyleSpec](BiometricPromptStyleSpec.md)? | getStyleSpec Returns a BiometricPromptStyleSpec containing the style specifications of BiometricPrompt |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getSubtitle()()` Gets the subtitle, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setSubtitle(kotlin.CharSequence)`. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#getTitle()()` Gets the title, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setTitle(kotlin.CharSequence)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#isConfirmationRequired()()` Determines if explicit user confirmation is required by the prompt. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSubtitle Gets the subtitle, as set by setSubtitle. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTitle Gets the title, as set by setTitle. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isConfirmationRequired Determines if explicit user confirmation is required by the prompt. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#pauseAuthentication()()` Pauses biometric authentication and collapses the biometric prompt to the delayed state, displaying a button in its place. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#resumeAuthentication()()` Activates biometric authentication and starts the biometric sensor scanning if delayed authentication was configured. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#setNextTranslationOffset(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the ending target layout translation offset in pixels (px) for the disappear (exit) animation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | pauseAuthentication Pauses biometric authentication and collapses the biometric prompt to the delayed state, displaying a button in its place. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | resumeAuthentication Activates biometric authentication and starts the biometric sensor scanning if delayed authentication was configured. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNextTranslationOffset Sets the ending target layout translation offset in pixels (px) for the disappear (exit) animation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#startAuthenticationSession(android.os.CancellationSignal,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.hardware.biometrics.EmbeddedBiometricPrompt.AuthenticationCallback)(cancel: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, startMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback)` Starts an authentication session for embedded BiometricPrompt. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startAuthenticationSession Starts an authentication session for embedded BiometricPrompt. |
 
 ## Constants
 
@@ -74,7 +74,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val START_MODE_DEFERRED: Int
 ```
 
-The prompt should be collapsed and display in the deferred/paused state. A shorter bottom sheet with a down arrow button is shown in place of the full prompt, and biometric sensors are not activated. Apps can call `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#resumeAuthentication()` when ready to expand the bottom sheet to the full prompt and activate biometric sensors to begin authenticating.
+The prompt should be collapsed and display in the deferred/paused state. A shorter bottom sheet with a down arrow button is shown in place of the full prompt, and biometric sensors are not activated. Apps can call resumeAuthentication when ready to expand the bottom sheet to the full prompt and activate biometric sensors to begin authenticating.
 
  Value: 2
 
@@ -98,7 +98,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val START_MODE_IMMEDIATE_UNLESS_OCCLUDED: Int
 ```
 
-Start authentication immediately unless the embedded content height exceeds the maximum allowed dimensions. If authentication is started and the provided embedded content exceeds the maximum available space, the prompt displays in the deferred/paused state, where it shows a shorter bottom sheet with a down arrow button in place of the full prompt, and biometric sensors are not activated. Apps can listen for `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback#onAuthenticationPaused()` in this case, and respond by calling `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#resumeAuthentication()` when ready to expand the bottom sheet to the full prompt and activate biometric sensors to begin authenticating.
+Start authentication immediately unless the embedded content height exceeds the maximum allowed dimensions. If authentication is started and the provided embedded content exceeds the maximum available space, the prompt displays in the deferred/paused state, where it shows a shorter bottom sheet with a down arrow button in place of the full prompt, and biometric sensors are not activated. Apps can listen for onAuthenticationPaused in this case, and respond by calling resumeAuthentication when ready to expand the bottom sheet to the full prompt and activate biometric sensors to begin authenticating.
 
  Value: 1
 
@@ -168,11 +168,11 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getContentView(): PromptContentView?
 ```
 
-Gets the content view, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setContentView(android.hardware.biometrics.PromptContentView)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
+Gets the content view, as set by setContentView. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentView?` | The content view for the prompt, or null if the prompt has no content view. |
+| PromptContentView | The content view for the prompt, or null if the prompt has no content view. |
 
 ### getDescription
 
@@ -182,7 +182,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getDescription(): CharSequence?
 ```
 
-Gets the description, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setDescription(kotlin.CharSequence)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
+Gets the description, as set by setDescription. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
 
 | Return ||
 |---|---|
@@ -214,7 +214,7 @@ Returns the existing auth session id for BiometricPrompt.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The existing auth session id, or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#` if none has been set. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The existing auth session id, or EmbeddedBiometricPrompt if none has been set. |
 
 ### getFallbackOptions
 
@@ -238,7 +238,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getLogoBitmap(): Bitmap?
 ```
 
-Gets the logo bitmap, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setLogoBitmap(android.graphics.Bitmap)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password). 
+Gets the logo bitmap, as set by setLogoBitmap. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_BIOMETRIC_DIALOG_ADVANCED:kotlin.String`
 
 | Return ||
@@ -253,7 +253,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getLogoDescription(): String?
 ```
 
-Gets the logo description, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setLogoDescription(kotlin.String)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password). 
+Gets the logo description, as set by setLogoDescription. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_BIOMETRIC_DIALOG_ADVANCED:kotlin.String`
 
 | Return ||
@@ -268,7 +268,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getLogoRes(): Int
 ```
 
-Gets the drawable resource of the logo, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setLogoRes(kotlin.Int)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password). 
+Gets the drawable resource of the logo, as set by setLogoRes. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_BIOMETRIC_DIALOG_ADVANCED:kotlin.String`
 
 | Return ||
@@ -283,7 +283,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getNegativeButton(): DialogInterface.OnClickListener?
 ```
 
-Gets the negative button listener, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`.
+Gets the negative button listener, as set by setNegativeButton.
 
 | Return ||
 |---|---|
@@ -297,7 +297,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getNegativeButtonExecutor(): Executor?
 ```
 
-Gets the executor used for the negative button listener, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`.
+Gets the executor used for the negative button listener, as set by setNegativeButton.
 
 | Return ||
 |---|---|
@@ -311,7 +311,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getNegativeButtonText(): CharSequence?
 ```
 
-Gets the negative button text, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`.
+Gets the negative button text, as set by setNegativeButton.
 
 | Return ||
 |---|---|
@@ -359,11 +359,11 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getStyleSpec(): BiometricPromptStyleSpec?
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPromptStyleSpec` containing the style specifications of BiometricPrompt
+Returns a BiometricPromptStyleSpec containing the style specifications of BiometricPrompt
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPromptStyleSpec?` | the style specifications of BiometricPrompt. This value may be `null`. |
+| BiometricPromptStyleSpec | the style specifications of BiometricPrompt. This value may be `null`. |
 
 ### getSubtitle
 
@@ -373,7 +373,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getSubtitle(): CharSequence?
 ```
 
-Gets the subtitle, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setSubtitle(kotlin.CharSequence)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
+Gets the subtitle, as set by setSubtitle. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
 
 | Return ||
 |---|---|
@@ -387,7 +387,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getTitle(): CharSequence?
 ```
 
-Gets the title, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#setTitle(kotlin.CharSequence)`. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
+Gets the title, as set by setTitle. This is only applicable to the device credential fallback page (when the user is authenticating with PIN/pattern/password).
 
 | Return ||
 |---|---|
@@ -460,12 +460,12 @@ fun startAuthenticationSession(
 ): Unit
 ```
 
-Starts an authentication session for embedded BiometricPrompt. This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. Authentication starts when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback#onSessionStarted(kotlin.Long)` is called, terminates when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)` is called, when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback#onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt.AuthenticationResult)` is called, or when the user dismisses the system-provided dialog. This operation can be canceled by using the provided cancel object. The application will receive authentication errors through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback`, and button events through the corresponding callback set in `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.Builder#addFallbackOption(kotlin.CharSequence,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`.
+Starts an authentication session for embedded BiometricPrompt. This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. Authentication starts when onSessionStarted is called, terminates when onAuthenticationError is called, when onAuthenticationSucceeded is called, or when the user dismisses the system-provided dialog. This operation can be canceled by using the provided cancel object. The application will receive authentication errors through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback`, and button events through the corresponding callback set in addFallbackOption.
 
 | Parameters ||
 |---|---|
 | `cancel` | [CancellationSignal](../android.os/CancellationSignal.md): An object that can be used to cancel authentication. This value cannot be `null`. |
 | `startMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The mode determining when authentication starts (e.g. `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#START_MODE_IMMEDIATE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#START_MODE_IMMEDIATE_UNLESS_OCCLUDED:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#START_MODE_DEFERRED:kotlin.Int`). Value is one of the following: - `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#START_MODE_IMMEDIATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#START_MODE_IMMEDIATE_UNLESS_OCCLUDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/biometrics/EmbeddedBiometricPrompt#START_MODE_DEFERRED:kotlin.Int` |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): An executor to handle callback events. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): An executor to handle callback events. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `callback` | [EmbeddedBiometricPrompt.AuthenticationCallback](../android/hardware/biometrics/EmbeddedBiometricPrompt.AuthenticationCallback.md): An object to receive authentication events. This value cannot be `null`. |

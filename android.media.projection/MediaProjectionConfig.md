@@ -10,7 +10,7 @@ class MediaProjectionConfig : Parcelable
 | --- | --- |
 | ↳ | [android.media.projection.MediaProjectionConfig](MediaProjectionConfig.md) |
 
-Configure the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection` session requested from `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent(android.media.projection.MediaProjectionConfig)`.
+Configure the MediaProjection session requested from createScreenCaptureIntent.
 
 This configuration should be used to provide the user with options for choosing the content to be shared with the requesting application.
 
@@ -29,27 +29,27 @@ This configuration should be used to provide the user with options for choosing 
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| static [MediaProjectionConfig](MediaProjectionConfig.md) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForDefaultDisplay()()` Returns an instance which restricts the user to capturing the default display. |
-| static [MediaProjectionConfig](MediaProjectionConfig.md) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#createConfigForUserChoice()()` Returns an instance which allows the user to decide which region is captured. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| static [MediaProjectionConfig](MediaProjectionConfig.md) | createConfigForDefaultDisplay Returns an instance which restricts the user to capturing the default display. |
+| static [MediaProjectionConfig](MediaProjectionConfig.md) | createConfigForUserChoice Returns an instance which allows the user to decide which region is captured. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getInitiallySelectedSource()()` Returns a bit mask of one, and only one, of the projection type flag. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getProjectionSources()()` A bitmask representing of requested projection sources. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInitiallySelectedSource Returns a bit mask of one, and only one, of the projection type flag. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProjectionSources A bitmask representing of requested projection sources. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getRequesterHint()()` A hint set by the requesting app indicating who the requester of this `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection` session is. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#isAudioRequested()()` Returns true if the application requesting the media projection session is requesting to capture audio as well. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getRequesterHint A hint set by the requesting app indicating who the requester of this MediaProjection session is. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAudioRequested Returns true if the application requesting the media projection session is requesting to capture audio as well. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#isOwnAppContentProvided()()` Returns true if the application requesting the media projection session is offering its own content to be picked in the UI picker. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#isSourceEnabled(kotlin.Int)(projectionSource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the provided source should be enabled. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOwnAppContentProvided Returns true if the application requesting the media projection session is offering its own content to be picked in the UI picker. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSourceEnabled Returns true if the provided source should be enabled. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -107,7 +107,7 @@ Returns an instance which restricts the user to capturing the default display.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#` | This value cannot be `null`. |
+| MediaProjectionConfig | This value cannot be `null`. |
 
 ### createConfigForUserChoice
 
@@ -119,11 +119,11 @@ static fun createConfigForUserChoice(): MediaProjectionConfig
 
 Returns an instance which allows the user to decide which region is captured. The consent dialog presents the user with all possible options. If the user selects display capture, then only the `https://developer.android.com/reference/kotlin/android/view/Display.html#DEFAULT_DISPLAY:kotlin.Int` is supported.
 
-When passed in to `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent(android.media.projection.MediaProjectionConfig)`, the consent dialog shown to the user will be the same as if just `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager#createScreenCaptureIntent()` was invoked.
+When passed in to createScreenCaptureIntent, the consent dialog shown to the user will be the same as if just createScreenCaptureIntent was invoked.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#` | This value cannot be `null`. |
+| MediaProjectionConfig | This value cannot be `null`. |
 
 ### describeContents
 
@@ -133,7 +133,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -206,7 +206,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getRequesterHint(): CharSequence?
 ```
 
-A hint set by the requesting app indicating who the requester of this `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection` session is.
+A hint set by the requesting app indicating who the requester of this MediaProjection session is.
 
 The UI component prompting the user for the permission to start the session can use this hint to provide more information about the origin of the request (e.g. a browser tab title, a meeting id if sharing to a video conferencing app, a player name if sharing the screen within a game).
 
@@ -227,8 +227,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -246,10 +246,10 @@ Returns true if the application requesting the media projection session is reque
 
 If true, the UI component should display an option for the user to enable audio sharing.
 
-The audio source will depend on the projection source (`https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#getProjectionSources()`) chosen by the user.
+The audio source will depend on the projection source (getProjectionSources) chosen by the user.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig.Builder#setAudioRequested(kotlin.Boolean)`
+- setAudioRequested
 
 ### isOwnAppContentProvided
 
@@ -266,8 +266,8 @@ The requester must also have enabled `https://developer.android.com/reference/ko
 If set, the requesting app's content will replace any other app content that might have been enabled.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig.Builder#setOwnAppContentProvided(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig.Builder#setSourceEnabled(kotlin.Int,%20kotlin.Boolean)`
+- setOwnAppContentProvided
+- setSourceEnabled
 - `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionConfig#PROJECTION_SOURCE_APP_CONTENT:kotlin.Int`
 
 ### isSourceEnabled

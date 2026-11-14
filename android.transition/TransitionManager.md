@@ -10,31 +10,31 @@ open class TransitionManager
 | --- | --- |
 | ↳ | [android.transition.TransitionManager](TransitionManager.md) |
 
-This class manages the set of transitions that fire when there is a change of `https://developer.android.com/reference/kotlin/android/transition/Scene`. To use the manager, add scenes along with transition objects with calls to `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#setTransition(android.transition.Scene,%20android.transition.Transition)` or `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#setTransition(android.transition.Scene,%20android.transition.Scene,%20android.transition.Transition)`. Setting specific transitions for scene changes is not required; by default, a Scene change will use `https://developer.android.com/reference/kotlin/android/transition/AutoTransition` to do something reasonable for most situations. Specifying other transitions for particular scene changes is only necessary if the application wants different transition behavior in these situations.
+This class manages the set of transitions that fire when there is a change of Scene. To use the manager, add scenes along with transition objects with calls to setTransition or setTransition. Setting specific transitions for scene changes is not required; by default, a Scene change will use AutoTransition to do something reasonable for most situations. Specifying other transitions for particular scene changes is only necessary if the application wants different transition behavior in these situations.
 
 TransitionManagers can be declared in XML resource files inside the `res/transition` directory. TransitionManager resources consist of the `transitionManager`tag name, containing one or more `transition` tags, each of which describe the relationship of that transition to the from/to scene information in that tag. For example, here is a resource file that declares several scene transitions:
 
-For each of the `fromScene` and `toScene` attributes, there is a reference to a standard XML layout file. This is equivalent to creating a scene from a layout in code by calling `https://developer.android.com/reference/kotlin/android/transition/Scene#getSceneForLayout(android.view.ViewGroup,%20kotlin.Int,%20android.content.Context)`. For the `transition` attribute, there is a reference to a resource file in the `res/transition` directory which describes that transition.
+For each of the `fromScene` and `toScene` attributes, there is a reference to a standard XML layout file. This is equivalent to creating a scene from a layout in code by calling getSceneForLayout. For the `transition` attribute, there is a reference to a resource file in the `res/transition` directory which describes that transition.
 Information on XML resource descriptions for transitions can be found for `https://developer.android.com/reference/kotlin/android/R.styleable.html#Transition:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionSet:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionTarget:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#Fade:kotlin.IntArray`, and `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionManager:kotlin.IntArray`.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#TransitionManager()()` <br /> |
+| TransitionManager <br /> |
 
 | Public methods ||
 |---|---|
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#beginDelayedTransition(android.view.ViewGroup)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Convenience method to animate, using the default transition, to a new scene defined by all changes within the given scene root between calling this method and the next rendering frame. |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#beginDelayedTransition(android.view.ViewGroup,%20android.transition.Transition)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, transition: https://developer.android.com/reference/kotlin/android/transition/Transition!)` Convenience method to animate to a new scene defined by all changes within the given scene root between calling this method and the next rendering frame. |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#endTransitions(android.view.ViewGroup)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!)` Ends all pending and ongoing transitions on the specified scene root. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginDelayedTransition Convenience method to animate, using the default transition, to a new scene defined by all changes within the given scene root between calling this method and the next rendering frame. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginDelayedTransition Convenience method to animate to a new scene defined by all changes within the given scene root between calling this method and the next rendering frame. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | endTransitions Ends all pending and ongoing transitions on the specified scene root. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#go(android.transition.Scene)(scene: https://developer.android.com/reference/kotlin/android/transition/Scene!)` Convenience method to simply change to the given scene using the default transition for TransitionManager. |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#go(android.transition.Scene,%20android.transition.Transition)(scene: https://developer.android.com/reference/kotlin/android/transition/Scene!, transition: https://developer.android.com/reference/kotlin/android/transition/Transition!)` Convenience method to simply change to the given scene using the given transition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#setTransition(android.transition.Scene,%20android.transition.Scene,%20android.transition.Transition)(fromScene: https://developer.android.com/reference/kotlin/android/transition/Scene!, toScene: https://developer.android.com/reference/kotlin/android/transition/Scene!, transition: https://developer.android.com/reference/kotlin/android/transition/Transition!)` Sets a specific transition to occur when the given pair of scenes is exited/entered. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | go Convenience method to simply change to the given scene using the default transition for TransitionManager. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | go Convenience method to simply change to the given scene using the given transition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTransition Sets a specific transition to occur when the given pair of scenes is exited/entered. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#setTransition(android.transition.Scene,%20android.transition.Transition)(scene: https://developer.android.com/reference/kotlin/android/transition/Scene!, transition: https://developer.android.com/reference/kotlin/android/transition/Transition!)` Sets a specific transition to occur when the given scene is entered. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#transitionTo(android.transition.Scene)(scene: https://developer.android.com/reference/kotlin/android/transition/Scene!)` Change to the given scene, using the appropriate transition for this particular scene change (as specified to the TransitionManager, or the default if no such transition exists). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTransition Sets a specific transition to occur when the given scene is entered. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | transitionTo Change to the given scene, using the appropriate transition for this particular scene change (as specified to the TransitionManager, or the default if no such transition exists). |
 
 ## Public constructors
 
@@ -56,7 +56,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open static fun beginDelayedTransition(sceneRoot: ViewGroup!): Unit
 ```
 
-Convenience method to animate, using the default transition, to a new scene defined by all changes within the given scene root between calling this method and the next rendering frame. Equivalent to calling `https://developer.android.com/reference/kotlin/android/transition/TransitionManager#beginDelayedTransition(android.view.ViewGroup,%20android.transition.Transition)` with a value of `null` for the `transition` parameter.
+Convenience method to animate, using the default transition, to a new scene defined by all changes within the given scene root between calling this method and the next rendering frame. Equivalent to calling beginDelayedTransition with a value of `null` for the `transition` parameter.
 
 | Parameters ||
 |---|---|
@@ -125,7 +125,7 @@ open static fun go(
 
 Convenience method to simply change to the given scene using the given transition.
 
-Passing in `null` for the transition parameter will result in the scene changing without any transition running, and is equivalent to calling `https://developer.android.com/reference/kotlin/android/transition/Scene#exit()` on the scene root's current scene, followed by `https://developer.android.com/reference/kotlin/android/transition/Scene#enter()` on the scene specified by the `scene` parameter.
+Passing in `null` for the transition parameter will result in the scene changing without any transition running, and is equivalent to calling exit on the scene root's current scene, followed by enter on the scene specified by the `scene` parameter.
 
 | Parameters ||
 |---|---|

@@ -16,21 +16,21 @@ class WebTriggerOutput
 >
 > The ODP APIs are deprecated and will not be supported in future Android releases. There is no direct replacement API available. Developers currently integrated with these APIs must cease further integration efforts. For comprehensive details regarding this deprecation and the future roadmap of Privacy Sandbox on Android, please consult the official Privacy Sandbox developer documentation and announcements: <https://privacysandbox.google.com>
 
-The result that should be returned by `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onWebTrigger(android.adservices.ondevicepersonalization.WebTriggerInput,%20android.os.OutcomeReceiver)`. This class contains data that should be written to the REQUESTS or EVENTS tables. The contents of these tables can be consumed by Federated Learning facilitated model training, or Federated Analytics facilitated cross-device statistical analysis.
+The result that should be returned by onWebTrigger. This class contains data that should be written to the REQUESTS or EVENTS tables. The contents of these tables can be consumed by Federated Learning facilitated model training, or Federated Analytics facilitated cross-device statistical analysis.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput.Builder` A builder for `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#` |
+| | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput.Builder` A builder for WebTriggerOutput |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](EventLogRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#getEventLogRecords()()` A list of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord` objects to be written to the EVENTS table. |
-| [RequestLogRecord](RequestLogRecord.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#getRequestLogRecord()()` Persistent data to be written to the REQUESTS table after `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onWebTrigger(android.adservices.ondevicepersonalization.WebTriggerInput,%20android.os.OutcomeReceiver)` completes. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](EventLogRecord.md)!\> | getEventLogRecords A list of EventLogRecord objects to be written to the EVENTS table. |
+| [RequestLogRecord](RequestLogRecord.md)? | getRequestLogRecord Persistent data to be written to the REQUESTS table after onWebTrigger completes. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/WebTriggerOutput#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Public methods
 
@@ -75,7 +75,7 @@ fun getEventLogRecords(): MutableList<EventLogRecord!>
 
 **Deprecated:** *Deprecated in Java.*
 
-A list of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord` objects to be written to the EVENTS table. Each `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord` must be associated with an existing `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord` in the REQUESTS table, specified using `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord.Builder#setRequestLogRecord(android.adservices.ondevicepersonalization.RequestLogRecord)`. If the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestLogRecord` is not specified, the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventLogRecord` will not be written. The list can be empty if no data needs to be written to the EVENTS table.
+A list of EventLogRecord objects to be written to the EVENTS table. Each EventLogRecord must be associated with an existing RequestLogRecord in the REQUESTS table, specified using setRequestLogRecord. If the RequestLogRecord is not specified, the EventLogRecord will not be written. The list can be empty if no data needs to be written to the EVENTS table.
 
 | Return ||
 |---|---|
@@ -91,7 +91,7 @@ fun getRequestLogRecord(): RequestLogRecord?
 
 **Deprecated:** *Deprecated in Java.*
 
-Persistent data to be written to the REQUESTS table after `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker#onWebTrigger(android.adservices.ondevicepersonalization.WebTriggerInput,%20android.os.OutcomeReceiver)` completes. This can be `null` if no data needs to be written to the REQUESTS table.
+Persistent data to be written to the REQUESTS table after onWebTrigger completes. This can be `null` if no data needs to be written to the REQUESTS table.
 
 ### hashCode
 
@@ -108,8 +108,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

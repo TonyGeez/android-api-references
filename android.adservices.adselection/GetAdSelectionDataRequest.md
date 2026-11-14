@@ -16,19 +16,19 @@ class GetAdSelectionDataRequest
 
 Represents a request containing the information to get ad selection data.
 
-Instances of this class are created by SDKs to be provided as arguments to the `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` methods in `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager`.
+Instances of this class are created by SDKs to be provided as arguments to the getAdSelectionData methods in AdSelectionManager.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest.Builder` Builder for GetAdSelectionDataRequest objects. |
 
 | Public methods ||
 |---|---|
-| [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getCoordinatorOriginUri()()` <br /> |
-| [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSeller()()` <br /> |
-| [SellerConfiguration](SellerConfiguration.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSellerConfiguration()()` Returns the seller ad tech's requested payload configuration, set by the calling SDK, to optimize the payload. |
+| [Uri](../android.net/Uri.md)? | getCoordinatorOriginUri <br /> |
+| [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md)? | getSeller <br /> |
+| [SellerConfiguration](SellerConfiguration.md)? | getSellerConfiguration Returns the seller ad tech's requested payload configuration, set by the calling SDK, to optimize the payload. |
 | --- | --- |
 
 ## Public methods
@@ -44,7 +44,7 @@ fun getCoordinatorOriginUri(): Uri?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/Uri.html#?` | the coordinator origin Uri where the public keys for encryption are fetched from See `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest.Builder#setCoordinatorOriginUri(android.net.Uri)` for more details on the coordinator origin. This value may be `null`. |
+| `https://developer.android.com/reference/kotlin/android/net/Uri.html#?` | the coordinator origin Uri where the public keys for encryption are fetched from See setCoordinatorOriginUri for more details on the coordinator origin. This value may be `null`. |
 
 ### getSeller
 

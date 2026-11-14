@@ -10,7 +10,7 @@ class IpSecAlgorithm : Parcelable
 | --- | --- |
 | ↳ | [android.net.IpSecAlgorithm](IpSecAlgorithm.md) |
 
-This class represents a single algorithm that can be used by an `https://developer.android.com/reference/kotlin/android/net/IpSecTransform`.
+This class represents a single algorithm that can be used by an IpSecTransform.
 
 ## Summary
 
@@ -33,32 +33,32 @@ This class represents a single algorithm that can be used by an `https://develop
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#IpSecAlgorithm(kotlin.String,%20kotlin.ByteArray)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Creates an IpSecAlgorithm of one of the supported types. |
-| `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#IpSecAlgorithm(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, truncLenBits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates an IpSecAlgorithm of one of the supported types. |
+| IpSecAlgorithm Creates an IpSecAlgorithm of one of the supported types. |
+| IpSecAlgorithm Creates an IpSecAlgorithm of one of the supported types. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#describeContents()()` Parcelable Implementation |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getKey()()` Get the key for this algorithm |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getName()()` Get the algorithm name |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Parcelable Implementation |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getKey Get the key for this algorithm |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName Get the algorithm name |
 | --- | --- |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()()` Returns supported IPsec algorithms for the current device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getTruncationLengthBits()()` Get the truncation length of this algorithm, in bits |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#toString()()` Returns a string representation of the object. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSupportedAlgorithms Returns supported IPsec algorithms for the current device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTruncationLengthBits Get the truncation length of this algorithm, in bits |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write to parcel |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Write to parcel |
 
 | Properties ||
 |---|---|
@@ -80,13 +80,13 @@ Keys for this algorithm must be 128 bits in length.
 
 The only valid truncation length is 96 bits.
 
-This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()` and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
+This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling getSupportedAlgorithms and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
 
  Value: "cmac(aes)"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()`
+- getSupportedAlgorithms
 
 ### AUTH_AES_XCBC
 
@@ -102,13 +102,13 @@ Keys for this algorithm must be 128 bits in length.
 
 The only valid truncation length is 96 bits.
 
-This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()` and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
+This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling getSupportedAlgorithms and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
 
  Value: "xcbc(aes)"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()`
+- getSupportedAlgorithms
 
 ### AUTH_CRYPT_AES_GCM
 
@@ -144,13 +144,13 @@ As per [RFC7634 (Section 2)](https://tools.ietf.org/html/rfc7634#section-2), key
 
 The only valid ICV (truncation) length is 128 bits.
 
-This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()` and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
+This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling getSupportedAlgorithms and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
 
  Value: "rfc7539esp(chacha20,poly1305)"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()`
+- getSupportedAlgorithms
 
 ### AUTH_HMAC_MD5
 
@@ -260,13 +260,13 @@ Valid lengths for keying material are {160, 224, 288}.
 
 As per [RFC3686 (Section 5.1)](https://tools.ietf.org/html/rfc3686#section-5.1), keying material consists of a 128, 192, or 256 bit AES key followed by a 32-bit nonce. RFC compliance requires that the nonce must be unique per security association.
 
-This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()` and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
+This algorithm may be available on the device. Caller MUST check if it is supported before using it by calling getSupportedAlgorithms and checking if this algorithm is included in the returned algorithm set. The returned algorithm set will not change unless the device is rebooted. `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if this algorithm is requested on an unsupported device.
 
  Value: "rfc3686(ctr(aes))"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#getSupportedAlgorithms()`
+- getSupportedAlgorithms
 
 ## Public constructors
 
@@ -282,7 +282,7 @@ IpSecAlgorithm(
 
 Creates an IpSecAlgorithm of one of the supported types. Supported algorithm names are defined as constants in this class.
 
-For algorithms that produce an integrity check value, the truncation length is a required parameter. See `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#IpSecAlgorithm(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)`
+For algorithms that produce an integrity check value, the truncation length is a required parameter. See IpSecAlgorithm
 
 | Parameters ||
 |---|---|

@@ -21,7 +21,7 @@ Exception thrown when an app interaction operation fails.
 
 | Public methods ||
 |---|---|
-| open [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionException#getExtras()()` Returns the additional metadata for this exception. |
+| open [Bundle](../android.os/Bundle.md) | getExtras Returns the additional metadata for this exception. |
 
 ## Public methods
 

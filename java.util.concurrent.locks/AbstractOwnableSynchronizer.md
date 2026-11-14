@@ -10,7 +10,7 @@ abstract class AbstractOwnableSynchronizer : Serializable
 | --- | --- |
 | ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](AbstractOwnableSynchronizer.md) |
 
-Known Direct Subclasses [AbstractQueuedLongSynchronizer](AbstractQueuedLongSynchronizer.md), [AbstractQueuedSynchronizer](AbstractQueuedSynchronizer.md) [AbstractQueuedLongSynchronizer](AbstractQueuedLongSynchronizer.md) A version of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` in which synchronization state is maintained as a `long`.
+Known Direct Subclasses [AbstractQueuedLongSynchronizer](AbstractQueuedLongSynchronizer.md), [AbstractQueuedSynchronizer](AbstractQueuedSynchronizer.md) [AbstractQueuedLongSynchronizer](AbstractQueuedLongSynchronizer.md) A version of AbstractQueuedSynchronizer in which synchronization state is maintained as a `long`.
 [AbstractQueuedSynchronizer](AbstractQueuedSynchronizer.md) Provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues.
 
 A synchronizer that may be exclusively owned by a thread. This class provides a basis for creating locks and related synchronizers that may entail a notion of ownership. The `AbstractOwnableSynchronizer` class itself does not manage or use this information. However, subclasses and tools may use appropriately maintained values to help control and monitor access and provide diagnostics.
@@ -19,12 +19,12 @@ A synchronizer that may be exclusively owned by a thread. This class provides a 
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#AbstractOwnableSynchronizer()()` Empty constructor for use by subclasses. |
+| AbstractOwnableSynchronizer Empty constructor for use by subclasses. |
 
 | Protected methods ||
 |---|---|
-| [Thread](../java.lang/Thread.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#getExclusiveOwnerThread()()` Returns the thread last set by `setExclusiveOwnerThread`, or `null` if never set. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#setExclusiveOwnerThread(java.lang.Thread)(thread: https://developer.android.com/reference/kotlin/java/lang/Thread.html#!)` Sets the thread that currently owns exclusive access. |
+| [Thread](../java.lang/Thread.md)! | getExclusiveOwnerThread Returns the thread last set by `setExclusiveOwnerThread`, or `null` if never set. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExclusiveOwnerThread Sets the thread that currently owns exclusive access. |
 
 ## Protected constructors
 

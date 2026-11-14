@@ -13,26 +13,26 @@ class BluetoothManager
 | --- | --- |
 | ↳ | [android.bluetooth.BluetoothManager](BluetoothManager.md) |
 
-High level manager used to obtain an instance of an `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter` and to conduct overall Bluetooth Management.
+High level manager used to obtain an instance of an BluetoothAdapter and to conduct overall Bluetooth Management.
 
-Use `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/content/Context.html#BLUETOOTH_SERVICE:kotlin.String` to create an `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#`, then call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getAdapter()` to obtain the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter`.
+Use getSystemService with `https://developer.android.com/reference/kotlin/android/content/Context.html#BLUETOOTH_SERVICE:kotlin.String` to create an BluetoothManager, then call getAdapter to obtain the BluetoothAdapter.
 |
 | ### Developer Guides
 |
 | For more information about using BLUETOOTH, read the [Bluetooth](https://developer.android.com/guide/topics/connectivity/bluetooth.html) developer guide.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| [BluetoothAdapter](BluetoothAdapter.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getAdapter()()` Get the BluetoothAdapter for this device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectedDevices(kotlin.Int)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get connected devices for the specified profile. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getConnectionState(android.bluetooth.BluetoothDevice,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the current connection state of the profile to the remote device. |
+| [BluetoothAdapter](BluetoothAdapter.md)! | getAdapter Get the BluetoothAdapter for this device. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | getConnectedDevices Get connected devices for the specified profile. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getConnectionState Get the current connection state of the profile to the remote device. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#getDevicesMatchingConnectionStates(kotlin.Int,%20kotlin.IntArray)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Get a list of devices that match any of the given connection states. |
-| [BluetoothGattServer](BluetoothGattServer.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager#openGattServer(android.content.Context,%20android.bluetooth.BluetoothGattServerCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback!)` Open a GATT Server The callback is used to deliver results to Caller, such as connection status as well as the results of any other GATT server operations. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | getDevicesMatchingConnectionStates Get a list of devices that match any of the given connection states. |
+| [BluetoothGattServer](BluetoothGattServer.md)! | openGattServer Open a GATT Server The callback is used to deliver results to Caller, such as connection status as well as the results of any other GATT server operations. |
 
 ## Public methods
 
@@ -64,7 +64,7 @@ Return the set of devices which are in state `https://developer.android.com/refe
 
 This is not specific to any application configuration but represents the connection state of Bluetooth for this profile. This can be used by applications like status bar which would just like to know the state of Bluetooth. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -90,7 +90,7 @@ Get the current connection state of the profile to the remote device.
 
 This is not specific to any application configuration but represents the connection state of the local Bluetooth adapter for certain profile. This can be used by applications like status bar which would just like to know the state of Bluetooth. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -119,7 +119,7 @@ If none of the devices match any of the given states, an empty list will be retu
 
 This is not specific to any application configuration but represents the connection state of the local Bluetooth adapter for this profile. This can be used by applications like status bar which would just like to know the state of the local adapter. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -143,7 +143,7 @@ fun openGattServer(
 ```
 
 Open a GATT Server The callback is used to deliver results to Caller, such as connection status as well as the results of any other GATT server operations. The method returns a BluetoothGattServer instance. You can use BluetoothGattServer to conduct GATT server operations. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||

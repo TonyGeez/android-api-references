@@ -10,7 +10,7 @@ class DisconnectCause : Parcelable
 | --- | --- |
 | ↳ | [android.telecom.DisconnectCause](DisconnectCause.md) |
 
-Describes the cause of a disconnected call. This always includes a code describing the generic cause of the disconnect. Optionally, it may include a label and/or description to display to the user. It is the responsibility of the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to provide localized versions of the label and description. It also may contain a reason for the disconnect, which is intended for logging and not for display to the user.
+Describes the cause of a disconnected call. This always includes a code describing the generic cause of the disconnect. Optionally, it may include a label and/or description to display to the user. It is the responsibility of the ConnectionService to provide localized versions of the label and description. It also may contain a reason for the disconnect, which is intended for logging and not for display to the user.
 
 ## Summary
 
@@ -28,12 +28,12 @@ Describes the cause of a disconnected call. This always includes a code describi
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#MISSED:kotlin.Int` Disconnected because there was no response to an incoming call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#OTHER:kotlin.Int` Disconnected for reason not described by other disconnect codes. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_EMERGENCY_CALL_PLACED:kotlin.String` This reason is set when a call is ended in order to place an emergency call when a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` doesn't support holding an ongoing call to place an emergency call. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_EMULATING_SINGLE_CALL:kotlin.String` Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`), which indicates that the connection service is setting the call's state to `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_DISCONNECTED:kotlin.Int` because it is internally changing the representation of an IMS conference call to simulate a single-party call. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_IMS_ACCESS_BLOCKED:kotlin.String` Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`), which indicates that the call was disconnected because IMS access is blocked. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_EMERGENCY_CALL_PLACED:kotlin.String` This reason is set when a call is ended in order to place an emergency call when a PhoneAccount doesn't support holding an ongoing call to place an emergency call. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_EMULATING_SINGLE_CALL:kotlin.String` Reason code (returned via getReason), which indicates that the connection service is setting the call's state to `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_DISCONNECTED:kotlin.Int` because it is internally changing the representation of an IMS conference call to simulate a single-party call. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_IMS_ACCESS_BLOCKED:kotlin.String` Reason code (returned via getReason), which indicates that the call was disconnected because IMS access is blocked. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_UNWANTED:kotlin.String` Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`), which indicates that the call was disconnected because it was marked as unwanted. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_WIFI_ON_BUT_WFC_OFF:kotlin.String` Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`) which indicates that a call could not be completed because the cellular radio is off or out of service, the device is connected to a wifi network, but the user has not enabled wifi calling. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_UNWANTED:kotlin.String` Reason code (returned via getReason), which indicates that the call was disconnected because it was marked as unwanted. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REASON_WIFI_ON_BUT_WFC_OFF:kotlin.String` Reason code (returned via getReason) which indicates that a call could not be completed because the cellular radio is off or out of service, the device is connected to a wifi network, but the user has not enabled wifi calling. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REJECTED:kotlin.Int` Disconnected because the user rejected an incoming call. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#REMOTE:kotlin.Int` Disconnected because the remote party hung up an ongoing call, or because an outgoing call was not answered by the remote party. |
@@ -43,38 +43,38 @@ Describes the cause of a disconnected call. This always includes a code describi
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#DisconnectCause(kotlin.Int)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new DisconnectCause. |
-| `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#DisconnectCause(kotlin.Int,%20kotlin.CharSequence,%20kotlin.CharSequence,%20kotlin.String)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new DisconnectCause. |
-| `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#DisconnectCause(kotlin.Int,%20kotlin.CharSequence,%20kotlin.CharSequence,%20kotlin.String,%20kotlin.Int)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, toneToPlay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new DisconnectCause. |
-| `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#DisconnectCause(kotlin.Int,%20kotlin.String)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new DisconnectCause. |
+| DisconnectCause Creates a new DisconnectCause. |
+| DisconnectCause Creates a new DisconnectCause. |
+| DisconnectCause Creates a new DisconnectCause. |
+| DisconnectCause Creates a new DisconnectCause. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getCode()()` Returns the code for the reason for this disconnect. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCode Returns the code for the reason for this disconnect. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getDescription()()` Returns a description which explains the reason for the disconnect cause and is for display in the user interface. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getLabel()()` Returns a short label which explains the reason for the disconnect cause and is for display in the user interface. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()()` Returns an explanation of the reason for the disconnect. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getDescription Returns a description which explains the reason for the disconnect cause and is for display in the user interface. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getLabel Returns a short label which explains the reason for the disconnect cause and is for display in the user interface. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getReason Returns an explanation of the reason for the disconnect. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getTone()()` Returns the tone to play when disconnected. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#toString()()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTone Returns the tone to play when disconnected. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#writeToParcel(android.os.Parcel,%20kotlin.Int)(destination: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -198,7 +198,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_EMERGENCY_CALL_PLACED: String
 ```
 
-This reason is set when a call is ended in order to place an emergency call when a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` doesn't support holding an ongoing call to place an emergency call. This reason string should only be associated with the `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#LOCAL:kotlin.Int` disconnect code returned from `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getCode()`.
+This reason is set when a call is ended in order to place an emergency call when a PhoneAccount doesn't support holding an ongoing call to place an emergency call. This reason string should only be associated with the `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#LOCAL:kotlin.Int` disconnect code returned from getCode.
 
  Value: "REASON_EMERGENCY_CALL_PLACED"
 
@@ -210,7 +210,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_EMULATING_SINGLE_CALL: String
 ```
 
-Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`), which indicates that the connection service is setting the call's state to `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_DISCONNECTED:kotlin.Int` because it is internally changing the representation of an IMS conference call to simulate a single-party call. This reason code is only used for communication between a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` and Telecom and should not be surfaced to the user.
+Reason code (returned via getReason), which indicates that the connection service is setting the call's state to `https://developer.android.com/reference/kotlin/android/telecom/Call#STATE_DISCONNECTED:kotlin.Int` because it is internally changing the representation of an IMS conference call to simulate a single-party call. This reason code is only used for communication between a ConnectionService and Telecom and should not be surfaced to the user.
 
  Value: "EMULATING_SINGLE_CALL"
 
@@ -222,7 +222,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_IMS_ACCESS_BLOCKED: String
 ```
 
-Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`), which indicates that the call was disconnected because IMS access is blocked.
+Reason code (returned via getReason), which indicates that the call was disconnected because IMS access is blocked.
 
  Value: "REASON_IMS_ACCESS_BLOCKED"
 
@@ -234,7 +234,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val REASON_UNWANTED: String
 ```
 
-Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`), which indicates that the call was disconnected because it was marked as unwanted.
+Reason code (returned via getReason), which indicates that the call was disconnected because it was marked as unwanted.
 
  Value: "REASON_UNWANTED"
 
@@ -246,7 +246,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_WIFI_ON_BUT_WFC_OFF: String
 ```
 
-Reason code (returned via `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getReason()`) which indicates that a call could not be completed because the cellular radio is off or out of service, the device is connected to a wifi network, but the user has not enabled wifi calling.
+Reason code (returned via getReason) which indicates that a call could not be completed because the cellular radio is off or out of service, the device is connected to a wifi network, but the user has not enabled wifi calling.
 
  Value: "REASON_WIFI_ON_BUT_WFC_OFF"
 
@@ -387,7 +387,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -443,7 +443,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getDescription(): CharSequence!
 ```
 
-Returns a description which explains the reason for the disconnect cause and is for display in the user interface. This optional text is generally a longer and more descriptive version of `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getLabel()`, however it can exist even if `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause#getLabel()` is empty. The In-Call UI should display this relatively prominently; the traditional implementation displays this as an alert dialog. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` is responsible for providing and localizing this message. If there is no string provided, returns null.
+Returns a description which explains the reason for the disconnect cause and is for display in the user interface. This optional text is generally a longer and more descriptive version of getLabel, however it can exist even if getLabel is empty. The In-Call UI should display this relatively prominently; the traditional implementation displays this as an alert dialog. The ConnectionService is responsible for providing and localizing this message. If there is no string provided, returns null.
 
 | Return ||
 |---|---|
@@ -457,7 +457,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getLabel(): CharSequence!
 ```
 
-Returns a short label which explains the reason for the disconnect cause and is for display in the user interface. If not null, it is expected that the In-Call UI should display this text where it would normally display the call state ("Dialing", "Disconnected") and is therefore expected to be relatively small. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` is responsible for providing and localizing this label. If there is no string provided, returns null.
+Returns a short label which explains the reason for the disconnect cause and is for display in the user interface. If not null, it is expected that the In-Call UI should display this text where it would normally display the call state ("Dialing", "Disconnected") and is therefore expected to be relatively small. The ConnectionService is responsible for providing and localizing this label. If there is no string provided, returns null.
 
 | Return ||
 |---|---|
@@ -504,8 +504,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

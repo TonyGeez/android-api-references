@@ -32,13 +32,13 @@ Exception thrown when cross-device authentication fails.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#CrossDeviceAuthenticationException(kotlin.Int)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#CrossDeviceAuthenticationException(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#CrossDeviceAuthenticationException(kotlin.Int,%20kotlin.String,%20kotlin.Throwable)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` <br /> |
+| CrossDeviceAuthenticationException <br /> |
+| CrossDeviceAuthenticationException <br /> |
+| CrossDeviceAuthenticationException <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException#getErrorCode()()` Returns the error code associated with this exception. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getErrorCode Returns the error code associated with this exception. |
 
 ## Constants
 

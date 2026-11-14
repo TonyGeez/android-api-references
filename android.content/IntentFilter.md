@@ -17,7 +17,7 @@ Structured description of Intent values to be matched. An IntentFilter can match
 
 IntentFilter objects are often created in XML as part of a package's `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest:kotlin.IntArray` file, using `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestIntentFilter:kotlin.IntArray` tags.
 
-There are three Intent characteristics you can filter on: the *action* , *data* , and *categories* . For each of these characteristics you can provide multiple possible matching values (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addAction(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataType(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataSchemeSpecificPart(kotlin.String,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)`, `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataPath(kotlin.String,%20kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addCategory(kotlin.String)`, respectively). For actions, if no data characteristics are specified, then the filter will only match intents that contain no data.
+There are three Intent characteristics you can filter on: the *action* , *data* , and *categories* . For each of these characteristics you can provide multiple possible matching values (via addAction, addDataType, addDataScheme, addDataSchemeSpecificPart, addDataAuthority, addDataPath, and addCategory, respectively). For actions, if no data characteristics are specified, then the filter will only match intents that contain no data.
 
 The data characteristic is itself divided into three attributes: type, scheme, authority, and path. Any that are specified must match the contents of the Intent. If you specify a scheme but no type, only Intent that does not have a type (such as mailto:) will match; a content: URI will never match because they always have a MIME type that is supplied by their content provider. Specifying a type with no scheme has somewhat special meaning: it will match either an Intent with no URI field, or an Intent with a content: or file: URI. If you specify neither, then only an Intent with no data or type will match. To specify an authority, you must also specify one or more schemes that it is associated with. To specify a path, you also must specify both one or more authorities and one or more schemes it is associated with.
 |
@@ -27,19 +27,19 @@ The data characteristic is itself divided into three attributes: type, scheme, a
 
 ### Filter Rules
 
-A match is based on the following rules. Note that for an IntentFilter to match an Intent, three conditions must hold: the **action** and **category** must match, and the data (both the **data type** and **data scheme+authority+path** if specified) must match (see `https://developer.android.com/reference/kotlin/android/content/IntentFilter#match(android.content.ContentResolver,%20android.content.Intent,%20kotlin.Boolean,%20kotlin.String)` for more details on how the data fields match).
+A match is based on the following rules. Note that for an IntentFilter to match an Intent, three conditions must hold: the **action** and **category** must match, and the data (both the **data type** and **data scheme+authority+path** if specified) must match (see match for more details on how the data fields match).
 
 **Action** matches if any of the given values match the Intent action; if the filter specifies no actions, then it will only match Intents that do not contain an action.
 
 **Data Type** matches if any of the given values match the Intent type. The Intent type is determined by calling android.content.Intent#resolveType. A wildcard can be used for the MIME sub-type, in both the Intent and IntentFilter, so that the type "audio/\*" will match "audio/mpeg", "audio/aiff", "audio/\*", etc. *Note that MIME type matching here is **case sensitive**, unlike formal RFC MIME types!* You should thus always use lower case letters for your MIME types.
 
-**Data Scheme** matches if any of the given values match the Intent data's scheme. The Intent scheme is determined by calling `https://developer.android.com/reference/kotlin/android/content/Intent#getData()` and `https://developer.android.com/reference/kotlin/android/net/Uri.html#getScheme()` on that URI. *Note that scheme matching here is **case sensitive**, unlike formal RFC schemes!* You should thus always use lower case letters for your schemes.
+**Data Scheme** matches if any of the given values match the Intent data's scheme. The Intent scheme is determined by calling getData and getScheme on that URI. *Note that scheme matching here is **case sensitive**, unlike formal RFC schemes!* You should thus always use lower case letters for your schemes.
 
-**Data Scheme Specific Part** matches if any of the given values match the Intent's data scheme specific part *and* one of the data schemes in the filter has matched the Intent, *or* no scheme specific parts were supplied in the filter. The Intent scheme specific part is determined by calling `https://developer.android.com/reference/kotlin/android/content/Intent#getData()` and `https://developer.android.com/reference/kotlin/android/net/Uri.html#getSchemeSpecificPart()` on that URI. *Note that scheme specific part matching is **case sensitive**.*
+**Data Scheme Specific Part** matches if any of the given values match the Intent's data scheme specific part *and* one of the data schemes in the filter has matched the Intent, *or* no scheme specific parts were supplied in the filter. The Intent scheme specific part is determined by calling getData and getSchemeSpecificPart on that URI. *Note that scheme specific part matching is **case sensitive**.*
 
-**Data Authority** matches if any of the given values match the Intent's data authority *and* one of the data schemes in the filter has matched the Intent, *or* no authorities were supplied in the filter. The Intent authority is determined by calling `https://developer.android.com/reference/kotlin/android/content/Intent#getData()` and `https://developer.android.com/reference/kotlin/android/net/Uri.html#getAuthority()` on that URI. *Note that authority matching here is **case sensitive**, unlike formal RFC host names!* You should thus always use lower case letters for your authority.
+**Data Authority** matches if any of the given values match the Intent's data authority *and* one of the data schemes in the filter has matched the Intent, *or* no authorities were supplied in the filter. The Intent authority is determined by calling getData and getAuthority on that URI. *Note that authority matching here is **case sensitive**, unlike formal RFC host names!* You should thus always use lower case letters for your authority.
 
-**Data Path** matches if any of the given values match the Intent's data path *and* both a scheme and authority in the filter has matched against the Intent, *or* no paths were supplied in the filter. The Intent authority is determined by calling `https://developer.android.com/reference/kotlin/android/content/Intent#getData()` and `https://developer.android.com/reference/kotlin/android/net/Uri.html#getPath()` on that URI.
+**Data Path** matches if any of the given values match the Intent's data path *and* both a scheme and authority in the filter has matched against the Intent, *or* no paths were supplied in the filter. The Intent authority is determined by calling getData and getPath on that URI.
 
 **Categories** match if *all* of the categories in the Intent match categories given in the filter. Extra categories in the filter that are not in the Intent will not cause the match to fail. Note that unlike the action, an IntentFilter with no categories will only match an Intent that does not have any categories.
 
@@ -47,7 +47,7 @@ A match is based on the following rules. Note that for an IntentFilter to match 
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/content/IntentFilter.AuthorityEntry` This is an entry for a single authority in the Iterator returned by `https://developer.android.com/reference/kotlin/android/content/IntentFilter#authoritiesIterator()`. |
+| | `https://developer.android.com/reference/kotlin/android/content/IntentFilter.AuthorityEntry` This is an entry for a single authority in the Iterator returned by authoritiesIterator. |
 | open | `https://developer.android.com/reference/kotlin/android/content/IntentFilter.MalformedMimeTypeException` This exception is thrown when a given MIME type does not have a valid syntax. |
 
 | Constants ||
@@ -70,96 +70,96 @@ A match is based on the following rules. Note that for an IntentFilter to match 
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#NO_MATCH_DATA:kotlin.Int` The filter didn't match due to different data URIs. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#NO_MATCH_TYPE:kotlin.Int` The filter didn't match due to different MIME types. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#SYSTEM_HIGH_PRIORITY:kotlin.Int` The filter `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)` value at which system high-priority receivers are placed; that is, receivers that should execute before application code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#SYSTEM_HIGH_PRIORITY:kotlin.Int` The filter setPriority value at which system high-priority receivers are placed; that is, receivers that should execute before application code. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#SYSTEM_LOW_PRIORITY:kotlin.Int` The filter `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)` value at which system low-priority receivers are placed; that is, receivers that should execute after application code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#SYSTEM_LOW_PRIORITY:kotlin.Int` The filter setPriority value at which system low-priority receivers are placed; that is, receivers that should execute after application code. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/IntentFilter#IntentFilter()()` New empty IntentFilter. |
-| `https://developer.android.com/reference/kotlin/android/content/IntentFilter#IntentFilter(android.content.IntentFilter)(o: https://developer.android.com/reference/kotlin/android/content/IntentFilter#!)` New IntentFilter containing a copy of an existing filter. |
-| `https://developer.android.com/reference/kotlin/android/content/IntentFilter#IntentFilter(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` New IntentFilter that matches a single action with no data. |
-| `https://developer.android.com/reference/kotlin/android/content/IntentFilter#IntentFilter(kotlin.String,%20kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dataType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` New IntentFilter that matches a single action and data type. |
+| IntentFilter New empty IntentFilter. |
+| IntentFilter New IntentFilter containing a copy of an existing filter. |
+| IntentFilter New IntentFilter that matches a single action with no data. |
+| IntentFilter New IntentFilter that matches a single action and data type. |
 
 | Public methods ||
 |---|---|
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#actionsIterator()()` Return an iterator over the filter's actions. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addAction(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new Intent action to match against. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new Intent category to match against. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | actionsIterator Return an iterator over the filter's actions. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addAction Add a new Intent action to match against. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addCategory Add a new Intent category to match against. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new Intent data authority to match against. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataPath(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add a new Intent data path to match against. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)(scheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new Intent data scheme to match against. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addDataAuthority Add a new Intent data authority to match against. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addDataPath Add a new Intent data path to match against. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addDataScheme Add a new Intent data scheme to match against. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataSchemeSpecificPart(kotlin.String,%20kotlin.Int)(ssp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add a new Intent data "scheme specific part" to match against. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Add a new Intent data type to match against. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addUriRelativeFilterGroup(android.content.UriRelativeFilterGroup)(group: https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup)` Add a new URI relative filter group to match against the Intent data. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addDataSchemeSpecificPart Add a new Intent data "scheme specific part" to match against. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addDataType Add a new Intent data type to match against. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addUriRelativeFilterGroup Add a new URI relative filter group to match against the Intent data. |
 | --- | --- |
-| open [Predicate](../java.util.function/Predicate.md)\< [Intent](Intent.md)!\> | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#asPredicate()()` Return a `https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#` which tests whether this filter matches the given intent. |
-| open [Predicate](../java.util.function/Predicate.md)\< [Intent](Intent.md)!\> | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#asPredicateWithTypeResolution(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver)` Return a `https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#` which tests whether this filter matches the given intent. |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [IntentFilter.AuthorityEntry](../android/content/IntentFilter.AuthorityEntry.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#authoritiesIterator()()` Return an iterator over the filter's data authorities. |
+| open [Predicate](../java.util.function/Predicate.md)\< [Intent](Intent.md)!\> | asPredicate Return a `https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#` which tests whether this filter matches the given intent. |
+| open [Predicate](../java.util.function/Predicate.md)\< [Intent](Intent.md)!\> | asPredicateWithTypeResolution Return a `https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#` which tests whether this filter matches the given intent. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [IntentFilter.AuthorityEntry](../android/content/IntentFilter.AuthorityEntry.md)!\>! | authoritiesIterator Return an iterator over the filter's data authorities. |
 | --- | --- |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#categoriesIterator()()` Return an iterator over the filter's categories. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#clearUriRelativeFilterGroups()()` Removes all existing URI relative filter groups in the intent filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countActions()()` Return the number of actions in the filter. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | categoriesIterator Return an iterator over the filter's categories. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearUriRelativeFilterGroups Removes all existing URI relative filter groups in the intent filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countActions Return the number of actions in the filter. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countCategories()()` Return the number of categories in the filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countDataAuthorities()()` Return the number of data authorities in the filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countDataPaths()()` Return the number of data paths in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countCategories Return the number of categories in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countDataAuthorities Return the number of data authorities in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countDataPaths Return the number of data paths in the filter. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countDataSchemeSpecificParts()()` Return the number of data scheme specific parts in the filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countDataSchemes()()` Return the number of data schemes in the filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countDataTypes()()` Return the number of data types in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countDataSchemeSpecificParts Return the number of data scheme specific parts in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countDataSchemes Return the number of data schemes in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countDataTypes Return the number of data types in the filter. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#countUriRelativeFilterGroups()()` Return the number of URI relative filter groups in the intent filter. |
-| open static [IntentFilter](IntentFilter.md)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#create(kotlin.String,%20kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dataType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new IntentFilter instance with a specified action and MIME type, where you know the MIME type is correctly formatted. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countUriRelativeFilterGroups Return the number of URI relative filter groups in the intent filter. |
+| open static [IntentFilter](IntentFilter.md)! | create Create a new IntentFilter instance with a specified action and MIME type, where you know the MIME type is correctly formatted. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#dump(android.util.Printer,%20kotlin.String)(du: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getAction(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an action in the filter. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getCategory(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a category in the filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getAction Return an action in the filter. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getCategory Return a category in the filter. |
 | --- | --- |
-| [IntentFilter.AuthorityEntry](../android/content/IntentFilter.AuthorityEntry.md)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getDataAuthority(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a data authority in the filter. |
-| [PatternMatcher](../android.os/PatternMatcher.md)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getDataPath(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a data path in the filter. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getDataScheme(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a data scheme in the filter. |
+| [IntentFilter.AuthorityEntry](../android/content/IntentFilter.AuthorityEntry.md)! | getDataAuthority Return a data authority in the filter. |
+| [PatternMatcher](../android.os/PatternMatcher.md)! | getDataPath Return a data path in the filter. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDataScheme Return a data scheme in the filter. |
 | --- | --- |
-| [PatternMatcher](../android.os/PatternMatcher.md)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getDataSchemeSpecificPart(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a data scheme specific part in the filter. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getDataType(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a data type in the filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getPriority()()` Return the priority of this filter. |
+| [PatternMatcher](../android.os/PatternMatcher.md)! | getDataSchemeSpecificPart Return a data scheme specific part in the filter. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDataType Return a data type in the filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPriority Return the priority of this filter. |
 | --- | --- |
-| [UriRelativeFilterGroup](UriRelativeFilterGroup.md) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getUriRelativeFilterGroup(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a URI relative filter group in the intent filter. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasAction(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Is the given action included in the filter? Note that if the filter does not include any actions, false will *always* be returned. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Is the given category included in the filter? |
+| [UriRelativeFilterGroup](UriRelativeFilterGroup.md) | getUriRelativeFilterGroup Return a URI relative filter group in the intent filter. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasAction Is the given action included in the filter? Note that if the filter does not include any actions, false will *always* be returned. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCategory Is the given category included in the filter? |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasDataAuthority(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Is the given data authority included in the filter? Note that if the filter does not include any authorities, false will *always* be returned. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasDataPath(kotlin.String)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Is the given data path included in the filter? Note that if the filter does not include any paths, false will *always* be returned. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasDataScheme(kotlin.String)(scheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Is the given data scheme included in the filter? Note that if the filter does not include any scheme, false will *always* be returned. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDataAuthority Is the given data authority included in the filter? Note that if the filter does not include any authorities, false will *always* be returned. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDataPath Is the given data path included in the filter? Note that if the filter does not include any paths, false will *always* be returned. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDataScheme Is the given data scheme included in the filter? Note that if the filter does not include any scheme, false will *always* be returned. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasDataSchemeSpecificPart(kotlin.String)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Is the given data scheme specific part included in the filter? Note that if the filter does not include any scheme specific parts, false will *always* be returned. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#hasDataType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Is the given data type included in the filter? Note that if the filter does not include any type, false will *always* be returned. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#match(android.content.ContentResolver,%20android.content.Intent,%20kotlin.Boolean,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver!, intent: https://developer.android.com/reference/kotlin/android/content/Intent!, resolve: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, logTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Test whether this filter matches the given intent. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDataSchemeSpecificPart Is the given data scheme specific part included in the filter? Note that if the filter does not include any scheme specific parts, false will *always* be returned. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDataType Is the given data type included in the filter? Note that if the filter does not include any type, false will *always* be returned. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | match Test whether this filter matches the given intent. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#match(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.net.Uri,%20kotlin.collections.MutableSet,%20kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, scheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, data: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, categories: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, logTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Test whether this filter matches the given intent data. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchAction(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Match this filter against an Intent's action. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchCategories(kotlin.collections.MutableSet)(categories: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Match this filter against an Intent's categories. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | match Test whether this filter matches the given intent data. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | matchAction Match this filter against an Intent's action. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | matchCategories Match this filter against an Intent's categories. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, scheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, data: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Match this filter against an Intent's data (type, scheme and path). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchDataAuthority(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Match this intent filter against the given Intent data. |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PatternMatcher](../android.os/PatternMatcher.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#pathsIterator()()` Return an iterator over the filter's data paths. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | matchData Match this filter against an Intent's data (type, scheme and path). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | matchDataAuthority Match this intent filter against the given Intent data. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PatternMatcher](../android.os/PatternMatcher.md)!\>! | pathsIterator Return an iterator over the filter's data paths. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#readFromXml(org.xmlpull.v1.XmlPullParser)(parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#!)` <br /> |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PatternMatcher](../android.os/PatternMatcher.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#schemeSpecificPartsIterator()()` Return an iterator over the filter's data scheme specific parts. |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#schemesIterator()()` Return an iterator over the filter's data schemes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFromXml <br /> |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PatternMatcher](../android.os/PatternMatcher.md)!\>! | schemeSpecificPartsIterator Return an iterator over the filter's data scheme specific parts. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | schemesIterator Return an iterator over the filter's data schemes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)(priority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Modify priority of this filter. |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#typesIterator()()` Return an iterator over the filter's data types. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPriority Modify priority of this filter. |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | typesIterator Return an iterator over the filter's data types. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/IntentFilter#writeToXml(org.xmlpull.v1.XmlSerializer)(serializer: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlSerializer.html#!)` Write the contents of the IntentFilter as an XML stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToXml Write the contents of the IntentFilter as an XML stream. |
 
 | Properties ||
 |---|---|
@@ -343,13 +343,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYSTEM_HIGH_PRIORITY: Int
 ```
 
-The filter `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)` value at which system high-priority receivers are placed; that is, receivers that should execute before application code. Applications should never use filters with this or higher priorities.
+The filter setPriority value at which system high-priority receivers are placed; that is, receivers that should execute before application code. Applications should never use filters with this or higher priorities.
 
  Value: 1000
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)`
+- setPriority
 
 ### SYSTEM_LOW_PRIORITY
 
@@ -359,13 +359,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYSTEM_LOW_PRIORITY: Int
 ```
 
-The filter `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)` value at which system low-priority receivers are placed; that is, receivers that should execute after application code. Applications should never use filters with this or lower priorities.
+The filter setPriority value at which system low-priority receivers are placed; that is, receivers that should execute after application code. Applications should never use filters with this or lower priorities.
 
  Value: -1000
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)`
+- setPriority
 
 ## Public constructors
 
@@ -479,7 +479,7 @@ fun addDataAuthority(
 ): Unit
 ```
 
-Add a new Intent data authority to match against. The filter must include one or more schemes (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`) for the authority to be considered. If any authorities are included in the filter, then an Intent's data must match one of them. If no authorities are included, then only the scheme must match.
+Add a new Intent data authority to match against. The filter must include one or more schemes (via addDataScheme) for the authority to be considered. If any authorities are included in the filter, then an Intent's data must match one of them. If no authorities are included, then only the scheme must match.
 
 *Note: host name in the Android framework is case-sensitive, unlike formal RFC host names. As a result, you should always write your host names with lower case letters, and any host names you receive from outside of Android should be converted to lower case before supplying them here.*
 
@@ -490,8 +490,8 @@ Add a new Intent data authority to match against. The filter must include one or
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`
+- matchData
+- addDataScheme
 
 ### addDataPath
 
@@ -504,7 +504,7 @@ fun addDataPath(
 ): Unit
 ```
 
-Add a new Intent data path to match against. The filter must include one or more schemes (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`) *and* one or more authorities (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)`) for the path to be considered. If any paths are included in the filter, then an Intent's data must match one of them. If no paths are included, then only the scheme/authority must match.
+Add a new Intent data path to match against. The filter must include one or more schemes (via addDataScheme) *and* one or more authorities (via addDataAuthority) for the path to be considered. If any paths are included in the filter, then an Intent's data must match one of them. If no paths are included, then only the scheme/authority must match.
 
 The path given here can either be a literal that must directly match or match against a prefix, or it can be a simple globbing pattern. If the latter, you can use '\*' anywhere in the pattern to match zero or more instances of the previous character, '.' as a wildcard to match any character, and '\\' to escape the next character.
 
@@ -515,9 +515,9 @@ The path given here can either be a literal that must directly match or match ag
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)`
+- matchData
+- addDataScheme
+- addDataAuthority
 
 ### addDataScheme
 
@@ -537,7 +537,7 @@ Add a new Intent data scheme to match against. If any schemes are included in th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
+- matchData
 
 ### addDataSchemeSpecificPart
 
@@ -550,9 +550,9 @@ fun addDataSchemeSpecificPart(
 ): Unit
 ```
 
-Add a new Intent data "scheme specific part" to match against. The filter must include one or more schemes (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`) for the scheme specific part to be considered. If any scheme specific parts are included in the filter, then an Intent's data must match one of them. If no scheme specific parts are included, then only the scheme must match.
+Add a new Intent data "scheme specific part" to match against. The filter must include one or more schemes (via addDataScheme) for the scheme specific part to be considered. If any scheme specific parts are included in the filter, then an Intent's data must match one of them. If no scheme specific parts are included, then only the scheme must match.
 
-The "scheme specific part" that this matches against is the string returned by `https://developer.android.com/reference/kotlin/android/net/Uri.html#getSchemeSpecificPart()`. For Uris that contain a path, this kind of matching is not generally of interest, since `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataPath(kotlin.String,%20kotlin.Int)` can provide a better mechanism for matching them. However, for Uris that do not contain a path, the authority and path are empty, so this is the only way to match against the non-scheme part.
+The "scheme specific part" that this matches against is the string returned by getSchemeSpecificPart. For Uris that contain a path, this kind of matching is not generally of interest, since addDataAuthority and addDataPath can provide a better mechanism for matching them. However, for Uris that do not contain a path, the authority and path are empty, so this is the only way to match against the non-scheme part.
 
 | Parameters ||
 |---|---|
@@ -561,8 +561,8 @@ The "scheme specific part" that this matches against is the string returned by `
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`
+- matchData
+- addDataScheme
 
 ### addDataType
 
@@ -584,7 +584,7 @@ Throws `https://developer.android.com/reference/kotlin/android/content/IntentFil
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
+- matchData
 
 ### addUriRelativeFilterGroup
 
@@ -594,20 +594,20 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun addUriRelativeFilterGroup(group: UriRelativeFilterGroup): Unit
 ```
 
-Add a new URI relative filter group to match against the Intent data. The intent filter must include one or more schemes (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`) *and* one or more authorities (via `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)`) for the group to be considered.
+Add a new URI relative filter group to match against the Intent data. The intent filter must include one or more schemes (via addDataScheme) *and* one or more authorities (via addDataAuthority) for the group to be considered.
 
 Groups will be matched in the order they were added and matching will only be done if no data paths match or if none are included. If both data paths and groups are not included, then only the scheme/authority must match.
 
 | Parameters ||
 |---|---|
-| `group` | [UriRelativeFilterGroup](UriRelativeFilterGroup.md): A `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup` to match the URI. This value cannot be `null`. |
+| `group` | [UriRelativeFilterGroup](UriRelativeFilterGroup.md): A UriRelativeFilterGroup to match the URI. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataScheme(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#addDataAuthority(kotlin.String,%20kotlin.String)`
+- UriRelativeFilterGroup
+- matchData
+- addDataScheme
+- addDataAuthority
 
 ### asPredicate
 
@@ -619,7 +619,7 @@ open fun asPredicate(): Predicate<Intent!>
 
 Return a `https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#` which tests whether this filter matches the given intent.
 
-The intent's type will always be tested using a simple `https://developer.android.com/reference/kotlin/android/content/Intent#getType()` check. To instead perform a detailed type resolution before matching, use `https://developer.android.com/reference/kotlin/android/content/IntentFilter#asPredicateWithTypeResolution(android.content.ContentResolver)`.
+The intent's type will always be tested using a simple getType check. To instead perform a detailed type resolution before matching, use asPredicateWithTypeResolution.
 
 | Return ||
 |---|---|
@@ -635,11 +635,11 @@ open fun asPredicateWithTypeResolution(resolver: ContentResolver): Predicate<In
 
 Return a `https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#` which tests whether this filter matches the given intent.
 
-The intent's type will always be resolved by calling `https://developer.android.com/reference/kotlin/android/content/Intent#resolveType(android.content.ContentResolver)` before matching.
+The intent's type will always be resolved by calling resolveType before matching.
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](ContentResolver.md): to be used when calling `https://developer.android.com/reference/kotlin/android/content/Intent#resolveType(android.content.ContentResolver)` before matching. This value cannot be `null`. |
+| `resolver` | [ContentResolver](ContentResolver.md): to be used when calling resolveType before matching. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -783,7 +783,7 @@ Create a new IntentFilter instance with a specified action and MIME type, where 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#IntentFilter(kotlin.String,%20kotlin.String)`
+- IntentFilter
 
 ### describeContents
 
@@ -793,7 +793,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -896,7 +896,7 @@ Return the priority of this filter.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#setPriority(kotlin.Int)`
+- setPriority
 
 ### getUriRelativeFilterGroup
 
@@ -916,7 +916,7 @@ Note: use of this method will result in a NullPointerException if no groups exis
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup` | This value cannot be `null`. |
+| UriRelativeFilterGroup | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1076,7 +1076,7 @@ Test whether this filter matches the given intent.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#match(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.net.Uri,%20kotlin.collections.MutableSet,%20kotlin.String)`
+- match
 
 ### match
 
@@ -1093,7 +1093,7 @@ fun match(
 ): Int
 ```
 
-Test whether this filter matches the given intent data. A match is only successful if the actions and categories in the Intent match against the filter, as described in `https://developer.android.com/reference/kotlin/android/content/IntentFilter#`; in that case, the match result returned will be as per `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`.
+Test whether this filter matches the given intent data. A match is only successful if the actions and categories in the Intent match against the filter, as described in IntentFilter; in that case, the match result returned will be as per matchData.
 
 | Parameters ||
 |---|---|
@@ -1112,11 +1112,11 @@ Test whether this filter matches the given intent data. A match is only successf
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/content/Intent#getAction()`
-- `https://developer.android.com/reference/kotlin/android/content/Intent#getScheme()`
-- `https://developer.android.com/reference/kotlin/android/content/Intent#getData()`
-- `https://developer.android.com/reference/kotlin/android/content/Intent#getCategories()`
+- matchData
+- getAction
+- getScheme
+- getData
+- getCategories
 
 ### matchAction
 
@@ -1193,7 +1193,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun matchDataAuthority(data: Uri!): Int
 ```
 
-Match this intent filter against the given Intent data. This ignores the data scheme -- unlike `https://developer.android.com/reference/kotlin/android/content/IntentFilter#matchData(kotlin.String,%20kotlin.String,%20android.net.Uri)`, the authority will match regardless of whether there is a matching scheme.
+Match this intent filter against the given Intent data. This ignores the data scheme -- unlike matchData, the authority will match regardless of whether there is a matching scheme.
 
 | Parameters ||
 |---|---|
@@ -1257,7 +1257,7 @@ Modify priority of this filter. This only affects receiver filters. The priority
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/IntentFilter#getPriority()`
+- getPriority
 - `https://developer.android.com/reference/kotlin/android/content/IntentFilter#SYSTEM_LOW_PRIORITY:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/IntentFilter#SYSTEM_HIGH_PRIORITY:kotlin.Int`
 

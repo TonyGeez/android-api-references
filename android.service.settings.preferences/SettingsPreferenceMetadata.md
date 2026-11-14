@@ -16,7 +16,7 @@ Data object representation of a Settings Preference definition and state.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata.Builder` Builder to construct `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#`. |
+| | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata.Builder` Builder to construct SettingsPreferenceMetadata. |
 
 | Constants ||
 |---|---|
@@ -28,35 +28,35 @@ Data object representation of a Settings Preference definition and state.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getExtras()()` Returns any additional fields specific to this preference. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getKey()()` Returns the key of Preference. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Bundle](../android.os/Bundle.md) | getExtras Returns any additional fields specific to this preference. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getKey Returns the key of Preference. |
 | --- | --- |
-| [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getLaunchIntent()()` Returns the intent to launch the host app page for this Preference. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getReadPermissions()()` Returns the permissions required to read this Preference's value. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getScreenKey()()` Returns the screen key of Preference. |
+| [Intent](../android.content/Intent.md)? | getLaunchIntent Returns the intent to launch the host app page for this Preference. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getReadPermissions Returns the permissions required to read this Preference's value. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getScreenKey Returns the screen key of Preference. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getSummary()()` Returns the summary of Preference. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getTitle()()` Returns the title of Preference. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getWritePermissions()()` Returns the permissions required to write this Preference's value. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSummary Returns the summary of Preference. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getTitle Returns the title of Preference. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getWritePermissions Returns the permissions required to write this Preference's value. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getWriteSensitivity()()` Returns the write-level sensitivity of Preference. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isAvailable()()` Returns whether Preference is available. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isEnabled()()` Returns whether Preference is enabled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWriteSensitivity Returns the write-level sensitivity of Preference. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAvailable Returns whether Preference is available. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnabled Returns whether Preference is enabled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isRestricted()()` Returns whether Preference is restricted. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#isWritable()()` Returns whether Preference is writable. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRestricted Returns whether Preference is restricted. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWritable Returns whether Preference is writable. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SettingsPreferenceMetadata](SettingsPreferenceMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SettingsPreferenceMetadata](SettingsPreferenceMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for SettingsPreferenceMetadata. |
 
 ## Constants
 
@@ -70,7 +70,7 @@ static val DEEPLINK_ONLY: Int
 
 Indicates preference is write-sensitive.
 
-This preference cannot be changed through this API; instead a deeplink to the Preference's page should be used instead, accessible via `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#getLaunchIntent()`.
+This preference cannot be changed through this API; instead a deeplink to the Preference's page should be used instead, accessible via getLaunchIntent.
 
  Value: 2
 
@@ -126,7 +126,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -316,4 +316,4 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val CREATOR: Parcelable.Creator<SettingsPreferenceMetadata!>
 ```
 
-Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceMetadata#`.
+Parcelable Creator for SettingsPreferenceMetadata.

@@ -26,31 +26,31 @@ Read-only device representation exposing the properties of an existing virtual d
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getDeviceId()()` Returns the unique ID of the virtual device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getDeviceProfile()()` Returns the device profile of the virtual device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDeviceId Returns the unique ID of the virtual device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDeviceProfile Returns the device profile of the virtual device. |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getDisplayIds()()` Returns the IDs of all virtual displays that belong to this device, if any. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getDisplayName()()` Returns the human-readable name of the virtual device, if defined, which is suitable to be shown in UI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getName()()` Returns the name of the virtual device (optionally) provided during its creation. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getDisplayIds Returns the IDs of all virtual displays that belong to this device, if any. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getDisplayName Returns the human-readable name of the virtual device, if defined, which is suitable to be shown in UI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getName Returns the name of the virtual device (optionally) provided during its creation. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getPersistentDeviceId()()` Returns the persistent identifier of this virtual device, if any. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#hasCustomSensorSupport()()` Returns whether this device may have custom sensors. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getPersistentDeviceId Returns the persistent identifier of this virtual device, if any. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCustomSensorSupport Returns whether this device may have custom sensors. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -122,7 +122,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -138,13 +138,13 @@ fun getDeviceId(): Int
 
 Returns the unique ID of the virtual device.
 
-This identifier corresponds to `https://developer.android.com/reference/kotlin/android/content/Context.html#getDeviceId()` and can be used to access device-specific system capabilities.
+This identifier corresponds to getDeviceId and can be used to access device-specific system capabilities.
 
 This identifier is ephemeral and should not be used for persisting any data per device.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#createDeviceContext(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice#getPersistentDeviceId()`
+- createDeviceContext
+- getPersistentDeviceId
 
 ### getDeviceProfile
 
@@ -168,7 +168,7 @@ fun getDisplayIds(): IntArray
 
 Returns the IDs of all virtual displays that belong to this device, if any.
 
-The actual `https://developer.android.com/reference/kotlin/android/view/Display.html#` objects can be obtained by passing the returned IDs to `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)`.
+The actual `https://developer.android.com/reference/kotlin/android/view/Display.html#` objects can be obtained by passing the returned IDs to getDisplay.
 
 | Return ||
 |---|---|
@@ -231,8 +231,8 @@ Returns whether this device may have custom sensors.
 Returning `true` does not necessarily mean that this device has sensors, it only means that a `https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#` instance created from a `https://developer.android.com/reference/kotlin/android/content/Context.html#` associated with this device will return this device's sensors, if any.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#getDeviceId()`
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#createDeviceContext(kotlin.Int)`
+- getDeviceId
+- createDeviceContext
 
 ### toString
 

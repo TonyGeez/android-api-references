@@ -10,7 +10,7 @@ class IkeSessionParams
 | --- | --- |
 | ↳ | [android.net.ipsec.ike.IkeSessionParams](IkeSessionParams.md) |
 
-IkeSessionParams contains all user provided configurations for negotiating an `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession`.
+IkeSessionParams contains all user provided configurations for negotiating an IkeSession.
 
 Note that all negotiated configurations will be reused during rekey including SA Proposal and lifetime.
 
@@ -18,7 +18,7 @@ Note that all negotiated configurations will be reused during rekey including SA
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder` This class can be used to incrementally construct a `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#`. |
+| | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder` This class can be used to incrementally construct a IkeSessionParams. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig` This class contains common information of an IKEv2 authentication configuration. |
 | | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig` This class represents the configuration to support IKEv2 public-key-signature-based authentication of the local side. |
 | --- | --- |
@@ -40,27 +40,27 @@ Note that all negotiated configurations will be reused during rekey including SA
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getDpdDelaySeconds()()` Retrieves the Dead Peer Detection(DPD) delay in seconds |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getHardLifetimeSeconds()()` Retrieves hard lifetime in seconds |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDpdDelaySeconds Retrieves the Dead Peer Detection(DPD) delay in seconds |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHardLifetimeSeconds Retrieves hard lifetime in seconds |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeOptions()()` Return all the enabled IKE Options |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeSaProposal](IkeSaProposal.md)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getIkeSaProposals()()` Retrieves all IkeSaProposals configured |
-| [IkeSessionParams.IkeAuthConfig](../android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalAuthConfig()()` Retrieves the local (client) authentication configuration |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getIkeOptions Return all the enabled IKE Options |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeSaProposal](IkeSaProposal.md)!\> | getIkeSaProposals Retrieves all IkeSaProposals configured |
+| [IkeSessionParams.IkeAuthConfig](../android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.md) | getLocalAuthConfig Retrieves the local (client) authentication configuration |
 | --- | --- |
-| [IkeIdentification](IkeIdentification.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getLocalIdentification()()` Retrieves the local (client) identity |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNattKeepAliveDelaySeconds()()` Retrieves the Network Address Translation Traversal (NATT) keepalive delay in seconds |
-| [Network](../android.net/Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getNetwork()()` Retrieves the configured `https://developer.android.com/reference/kotlin/android/net/Network.html#`, or null if was not set. |
+| [IkeIdentification](IkeIdentification.md) | getLocalIdentification Retrieves the local (client) identity |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNattKeepAliveDelaySeconds Retrieves the Network Address Translation Traversal (NATT) keepalive delay in seconds |
+| [Network](../android.net/Network.md)? | getNetwork Retrieves the configured `https://developer.android.com/reference/kotlin/android/net/Network.html#`, or null if was not set. |
 | --- | --- |
-| [IkeSessionParams.IkeAuthConfig](../android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteAuthConfig()()` Retrieves the remote (server) authentication configuration |
-| [IkeIdentification](IkeIdentification.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRemoteIdentification()()` Retrieves the required remote (server) identity |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getRetransmissionTimeoutsMillis()()` Retrieves the relative retransmission timeout list in milliseconds |
+| [IkeSessionParams.IkeAuthConfig](../android/net/ipsec/ike/IkeSessionParams.IkeAuthConfig.md) | getRemoteAuthConfig Retrieves the remote (server) authentication configuration |
+| [IkeIdentification](IkeIdentification.md) | getRemoteIdentification Retrieves the required remote (server) identity |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getRetransmissionTimeoutsMillis Retrieves the relative retransmission timeout list in milliseconds |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getServerHostname()()` Retrieves the configured server hostname |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#getSoftLifetimeSeconds()()` Retrieves soft lifetime in seconds |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#hasIkeOption(kotlin.Int)(ikeOption: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the given IKE Session negotiation option is set |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getServerHostname Retrieves the configured server hostname |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSoftLifetimeSeconds Retrieves soft lifetime in seconds |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasIkeOption Checks if the given IKE Session negotiation option is set |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Constants
 
@@ -74,7 +74,7 @@ static val IKE_DPD_DELAY_SEC_DISABLED: Int
 
 Setting timer to this value will disable the Dead Peer Detection(DPD).
 
-@see `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#setDpdDelaySeconds(kotlin.Int)`
+@see setDpdDelaySeconds
 
  Value: 2147483647
 
@@ -88,7 +88,7 @@ static val IKE_OPTION_ACCEPT_ANY_REMOTE_ID: Int
 
 If set, the IKE library will accept any remote (server) identity, even if it does not match the configured remote identity
 
-See `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#setRemoteIdentification(android.net.ipsec.ike.IkeIdentification)`
+See setRemoteIdentification
 
  Value: 0
 
@@ -102,7 +102,7 @@ static val IKE_OPTION_EAP_ONLY_AUTH: Int
 
 If set, and EAP has been configured as the authentication method, the IKE library will request that the remote (also) use an EAP-only authentication flow.
 
-@see `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#setAuthEap(java.security.cert.X509Certificate,%20android.net.eap.EapSessionConfig)`
+@see setAuthEap
 
  Value: 1
 
@@ -134,7 +134,7 @@ If this option is set, the INITIAL_CONTACT notification payload is sent in IKE_A
 
 @see "https://tools.ietf.org/html/rfc7296#section-2.4" RFC 7296, Internet Key Exchange Protocol Version 2 (IKEv2)
 
-@see `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#addIkeOption(kotlin.Int)`
+@see addIkeOption
 
  Value: 4
 
@@ -152,13 +152,13 @@ Upon IP address changes (including Network changes), the IKE session will initia
 
 The IKE library will first attempt to enable MOBIKE to handle the changes of underlying network and addresses. For callers targeting SDK `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S_V2:kotlin.Int` and earlier, this option will implicitly enable the support for rekey-based mobility, and thus if the server does not support MOBIKE, the IKE Session will try migration by rekeying all associated IPsec SAs. This rekey-based mobility feature is not best-practice and has technical issues; accordingly, it will no longer be enabled for callers targeting SDK `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int` and above.
 
-Checking whether or not MOBIKE is supported by both the IKE library and the server in an IKE Session is done via `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionConfiguration#isIkeExtensionEnabled(kotlin.Int)`.
+Checking whether or not MOBIKE is supported by both the IKE library and the server in an IKE Session is done via isIkeExtensionEnabled.
 
 It is recommended that IKE_OPTION_MOBIKE be enabled unless precluded for compatibility reasons.
 
 If this option is set for an IKE Session, Transport-mode SAs will not be allowed in that Session.
 
-Callers that need to perform migration of IPsec transforms and tunnels MUST implement migration specific methods in `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback` and `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback`.
+Callers that need to perform migration of IPsec transforms and tunnels MUST implement migration specific methods in IkeSessionCallback and ChildSessionCallback.
 
  Value: 2
 
@@ -232,7 +232,7 @@ Return all the enabled IKE Options
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>` | A Set of enabled IKE options that have been added using `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#addIkeOption(kotlin.Int)` This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_ACCEPT_ANY_REMOTE_ID:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_EAP_ONLY_AUTH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_MOBIKE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_FORCE_PORT_4500:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_INITIAL_CONTACT:kotlin.Int` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>` | A Set of enabled IKE options that have been added using addIkeOption This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_ACCEPT_ANY_REMOTE_ID:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_EAP_ONLY_AUTH:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_MOBIKE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_FORCE_PORT_4500:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams#IKE_OPTION_INITIAL_CONTACT:kotlin.Int` |
 
 ### getIkeSaProposals
 
@@ -274,7 +274,7 @@ Retrieves the local (client) identity
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification` | This value cannot be `null`. |
+| IkeIdentification | This value cannot be `null`. |
 
 ### getNattKeepAliveDelaySeconds
 
@@ -300,7 +300,7 @@ fun getNetwork(): Network?
 
 Retrieves the configured `https://developer.android.com/reference/kotlin/android/net/Network.html#`, or null if was not set.
 
-@see `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#setNetwork(android.net.Network)`
+@see setNetwork
 
 ### getRemoteAuthConfig
 
@@ -328,7 +328,7 @@ Retrieves the required remote (server) identity
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIdentification` | This value cannot be `null`. |
+| IkeIdentification | This value cannot be `null`. |
 
 ### getRetransmissionTimeoutsMillis
 
@@ -340,7 +340,7 @@ fun getRetransmissionTimeoutsMillis(): IntArray
 
 Retrieves the relative retransmission timeout list in milliseconds
 
-@see `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams.Builder#setRetransmissionTimeoutsMillis(kotlin.IntArray)`
+@see setRetransmissionTimeoutsMillis
 
 | Return ||
 |---|---|
@@ -407,8 +407,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

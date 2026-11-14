@@ -16,38 +16,38 @@ class PlannedExerciseSessionRecord : IntervalRecord
 
 Captures a planned exercise session, also commonly referred to as a training plan.
 
-Each record contains a start time, end time, an exercise type and a list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock` which describe the details of the planned session. The start and end times may be in the future.
+Each record contains a start time, end time, an exercise type and a list of PlannedExerciseBlock which describe the details of the planned session. The start and end times may be in the future.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#`. |
+| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord.Builder` Builder class for PlannedExerciseSessionRecord. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
+| From class Record |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseBlock](PlannedExerciseBlock.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getBlocks()()` Returns the exercise blocks for this step. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getCompletedExerciseSessionId()()` Returns the id of exercise session that completed this planned session. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseBlock](PlannedExerciseBlock.md)!\> | getBlocks Returns the exercise blocks for this step. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getCompletedExerciseSessionId Returns the id of exercise session that completed this planned session. |
 | --- | --- |
-| [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getDuration()()` Returns the expected duration of the planned session. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getExerciseType()()` Returns the exercise type of this planned session. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getNotes()()` Returns notes for this planned session. |
+| [Duration](../java.time/Duration.md) | getDuration Returns the expected duration of the planned session. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExerciseType Returns the exercise type of this planned session. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getNotes Returns notes for this planned session. |
 | --- | --- |
-| [LocalDate](../java.time/LocalDate.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getStartDate()()` Returns the start date of the planned session. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getTitle()()` Returns title of this planned session. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#hasExplicitTime()()` Returns whether this planned session has an explicit time. |
+| [LocalDate](../java.time/LocalDate.md) | getStartDate Returns the start date of the planned session. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTitle Returns title of this planned session. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasExplicitTime Returns whether this planned session has an explicit time. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord` |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndZoneOffset()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartZoneOffset()()` <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#getMetadata()()` <br /> | ||
+| From class IntervalRecord |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getEndTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getEndZoneOffset <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getStartTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getStartZoneOffset <br /> | ||
+| From class Record |---|---| | Metadata | getMetadata <br /> | ||
 
 ## Public methods
 
@@ -85,7 +85,7 @@ Returns the exercise blocks for this step.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock!>` | An unmodifiable list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock`. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseBlock!>` | An unmodifiable list of PlannedExerciseBlock. This value cannot be `null`. |
 
 ### getCompletedExerciseSessionId
 

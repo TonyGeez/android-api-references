@@ -23,19 +23,19 @@ If the highlight color is not explicitly set using #setColor(android.graphics.Co
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#HighlightAnnotation(kotlin.collections.MutableList)(boundsList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/RectF.html#!>)` Creates a new highlight annotation with the specified bounds list. |
+| HighlightAnnotation Creates a new highlight annotation with the specified bounds list. |
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android.graphics/RectF.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getBoundsList()()` Returns the bounding rectangles of the highlight annotation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getColor()()` Returns the highlight color of the annotation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#setBoundsList(kotlin.collections.MutableList)(boundsList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/RectF.html#!>)` Sets the bounding rectangles of the highlight annotation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android.graphics/RectF.md)!\> | getBoundsList Returns the bounding rectangles of the highlight annotation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColor Returns the highlight color of the annotation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBoundsList Sets the bounding rectangles of the highlight annotation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#setColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the highlight color of the annotation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setColor Sets the highlight color of the annotation. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfAnnotation` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfAnnotation#getPdfAnnotationType()()` Returns the type of the annotation. <br /> | ||
+| From class PdfAnnotation |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getPdfAnnotationType Returns the type of the annotation. <br /> | ||
 
 ## Public constructors
 

@@ -107,72 +107,72 @@ This table shows that numbers higher than 1024 lose all fractional precision.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/Half#Half(kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Constructs a newly allocated `Half` object that represents the argument converted to a half-precision float. |
-| `https://developer.android.com/reference/kotlin/android/util/Half#Half(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Constructs a newly allocated `Half` object that represents the argument converted to a half-precision float. |
-| `https://developer.android.com/reference/kotlin/android/util/Half#Half(kotlin.String)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a newly allocated `Half` object that represents the half-precision float value represented by the string. |
-| `https://developer.android.com/reference/kotlin/android/util/Half#Half(kotlin.Short)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Constructs a newly allocated `Half` object that represents the half-precision float type argument. |
+| Half Constructs a newly allocated `Half` object that represents the argument converted to a half-precision float. |
+| Half Constructs a newly allocated `Half` object that represents the argument converted to a half-precision float. |
+| Half Constructs a newly allocated `Half` object that represents the half-precision float value represented by the string. |
+| Half Constructs a newly allocated `Half` object that represents the half-precision float type argument. |
 
 | Public methods ||
 |---|---|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#abs(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the absolute value of the specified half-precision float. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#ceil(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the smallest half-precision float value toward negative infinity greater than or equal to the specified half-precision float value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#compare(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Compares the two specified half-precision float values. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | abs Returns the absolute value of the specified half-precision float. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | ceil Returns the smallest half-precision float value toward negative infinity greater than or equal to the specified half-precision float value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare Compares the two specified half-precision float values. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#compareTo(android.util.Half)(other: https://developer.android.com/reference/kotlin/android/util/Half#)` Compares the two specified half-precision float values. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#copySign(kotlin.Short,%20kotlin.Short)(magnitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, sign: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the first parameter with the sign of the second parameter. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this object against the specified object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares the two specified half-precision float values. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | copySign Returns the first parameter with the sign of the second parameter. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this object against the specified object. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#equals(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the two half-precision float values are equal. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#floor(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the largest half-precision float value toward positive infinity less than or equal to the specified half-precision float value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#getExponent(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the unbiased exponent used in the representation of the specified half-precision float value. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Returns true if the two half-precision float values are equal. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | floor Returns the largest half-precision float value toward positive infinity less than or equal to the specified half-precision float value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExponent Returns the unbiased exponent used in the representation of the specified half-precision float value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#getSign(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the sign of the specified half-precision float. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#getSignificand(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the significand, or mantissa, used in the representation of the specified half-precision float value. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#greater(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the first half-precision float value is greater (larger toward positive infinity) than the second half-precision float value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSign Returns the sign of the specified half-precision float. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSignificand Returns the significand, or mantissa, used in the representation of the specified half-precision float value. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | greater Returns true if the first half-precision float value is greater (larger toward positive infinity) than the second half-precision float value. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#greaterEquals(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the first half-precision float value is greater (larger toward positive infinity) than or equal to the second half-precision float value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a representation of the specified half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#halfToRawIntBits(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a representation of the specified half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | greaterEquals Returns true if the first half-precision float value is greater (larger toward positive infinity) than or equal to the second half-precision float value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | halfToIntBits Returns a representation of the specified half-precision float value according to the bit layout described in Half. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | halfToRawIntBits Returns a representation of the specified half-precision float value according to the bit layout described in Half. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#halfToShortBits(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a representation of the specified half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#halfValue()()` Returns the half-precision value of this `Half` as a `short` containing the bit representation described in `https://developer.android.com/reference/kotlin/android/util/Half#`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#hashCode()()` Returns a hash code for this `Half` object. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | halfToShortBits Returns a representation of the specified half-precision float value according to the bit layout described in Half. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | halfValue Returns the half-precision value of this `Half` as a `short` containing the bit representation described in Half. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this `Half` object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#hashCode(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a hash code for a half-precision float value. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#intBitsToHalf(kotlin.Int)(bits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the half-precision float value corresponding to a given bit representation. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#isInfinite(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the specified half-precision float value represents infinity, false otherwise. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for a half-precision float value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | intBitsToHalf Returns the half-precision float value corresponding to a given bit representation. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInfinite Returns true if the specified half-precision float value represents infinity, false otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#isNaN()()` Returns true if this `Half` value represents a Not-a-Number, false otherwise. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#isNaN(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the specified half-precision float value represents a Not-a-Number, false otherwise. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#isNormalized(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the specified half-precision float value is normalized (does not have a subnormal representation). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNaN Returns true if this `Half` value represents a Not-a-Number, false otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNaN Returns true if the specified half-precision float value represents a Not-a-Number, false otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNormalized Returns true if the specified half-precision float value is normalized (does not have a subnormal representation). |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#less(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the first half-precision float value is less (smaller toward negative infinity) than the second half-precision float value. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#lessEquals(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns true if the first half-precision float value is less (smaller toward negative infinity) than or equal to the second half-precision float value. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#max(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the larger of two half-precision float values (the value closest to positive infinity). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | less Returns true if the first half-precision float value is less (smaller toward negative infinity) than the second half-precision float value. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | lessEquals Returns true if the first half-precision float value is less (smaller toward negative infinity) than or equal to the second half-precision float value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | max Returns the larger of two half-precision float values (the value closest to positive infinity). |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#min(kotlin.Short,%20kotlin.Short)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the smaller of two half-precision float values (the value closest to negative infinity). |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#parseHalf(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the half-precision float value represented by the specified string. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#round(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the closest integral half-precision float value to the specified half-precision float value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | min Returns the smaller of two half-precision float values (the value closest to negative infinity). |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | parseHalf Returns the half-precision float value represented by the specified string. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | round Returns the closest integral half-precision float value to the specified half-precision float value. |
 | --- | --- |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toByte()()` Returns the value of this `Half` as a `byte` after a narrowing primitive conversion. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toDouble()()` Returns the value of this `Half` as a `double` after a widening primitive conversion. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toFloat()()` Returns the value of this `Half` as a `float` after a widening primitive conversion. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | toByte Returns the value of this `Half` as a `byte` after a narrowing primitive conversion. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toDouble Returns the value of this `Half` as a `double` after a widening primitive conversion. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | toFloat Returns the value of this `Half` as a `float` after a widening primitive conversion. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toFloat(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Converts the specified half-precision float value into a single-precision float value. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toHalf(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts the specified single-precision float value into a half-precision float value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toHexString(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a hexadecimal string representation of the specified half-precision float value. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | toFloat Converts the specified half-precision float value into a single-precision float value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | toHalf Converts the specified single-precision float value into a half-precision float value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toHexString Returns a hexadecimal string representation of the specified half-precision float value. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toInt()()` Returns the value of this `Half` as a `int` after a narrowing primitive conversion. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toLong()()` Returns the value of this `Half` as a `long` after a narrowing primitive conversion. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toShort()()` Returns the value of this `Half` as a `short` after a narrowing primitive conversion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toInt Returns the value of this `Half` as a `int` after a narrowing primitive conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toLong Returns the value of this `Half` as a `long` after a narrowing primitive conversion. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | toShort Returns the value of this `Half` as a `short` after a narrowing primitive conversion. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toString()()` Returns a string representation of the specified half-precision float value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toString(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a string representation of the specified half-precision float value. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#trunc(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the truncated half-precision float value of the specified half-precision float value. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the specified half-precision float value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the specified half-precision float value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | trunc Returns the truncated half-precision float value of the specified half-precision float value. |
 | --- | --- |
-| static [Half](Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a `Half` instance representing the specified float value. |
-| static [Half](Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Half` instance representing the specified string value. |
-| static [Half](Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a `Half` instance representing the specified half-precision float value. |
+| static [Half](Half.md) | valueOf Returns a `Half` instance representing the specified float value. |
+| static [Half](Half.md) | valueOf Returns a `Half` instance representing the specified string value. |
+| static [Half](Half.md) | valueOf Returns a `Half` instance representing the specified half-precision float value. |
 | --- | --- |
 
 ## Constants
@@ -351,7 +351,7 @@ Constructs a newly allocated `Half` object that represents the argument converte
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Half#toHalf(kotlin.Float)`
+- toHalf
 
 ### Half
 
@@ -369,7 +369,7 @@ Constructs a newly allocated `Half` object that represents the argument converte
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Half#toHalf(kotlin.Float)`
+- toHalf
 
 ### Half
 
@@ -379,7 +379,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 Half(value: String)
 ```
 
-Constructs a newly allocated `Half` object that represents the half-precision float value represented by the string. The string is converted to a half-precision float value as if by the `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.String)` method.
+Constructs a newly allocated `Half` object that represents the half-precision float value represented by the string. The string is converted to a half-precision float value as if by the valueOf method.
 
 Calling this constructor is equivalent to calling:
 
@@ -398,8 +398,8 @@ new Half(Float.parseFloat(value))
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float.html#valueOf(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/util/Half#toHalf(kotlin.Float)`
+- valueOf
+- toHalf
 
 ### Half
 
@@ -547,7 +547,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun equals(other: Any?): Boolean
 ```
 
-Compares this object against the specified object. The result is `true` if and only if the argument is not `null` and is a `Half` object that represents the same half-precision value as the this object. Two half-precision values are considered to be the same if and only if the method `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)` returns an identical `int` value for both.
+Compares this object against the specified object. The result is `true` if and only if the argument is not `null` and is a `Half` object that represents the same half-precision value as the this object. Two half-precision values are considered to be the same if and only if the method halfToIntBits returns an identical `int` value for both.
 
 | Parameters ||
 |---|---|
@@ -560,7 +560,7 @@ Compares this object against the specified object. The result is `true` if and o
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)`
+- halfToIntBits
 
 ### equals
 
@@ -714,9 +714,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun halfToIntBits(h: Short): Int
 ```
 
-Returns a representation of the specified half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`.
+Returns a representation of the specified half-precision float value according to the bit layout described in Half.
 
-Unlike `https://developer.android.com/reference/kotlin/android/util/Half#halfToRawIntBits(kotlin.Short)`, this method collapses all possible Not-a-Number values to a single canonical Not-a-Number value defined by `https://developer.android.com/reference/kotlin/android/util/Half#NaN:kotlin.Short`.
+Unlike halfToRawIntBits, this method collapses all possible Not-a-Number values to a single canonical Not-a-Number value defined by `https://developer.android.com/reference/kotlin/android/util/Half#NaN:kotlin.Short`.
 
 | Parameters ||
 |---|---|
@@ -728,9 +728,9 @@ Unlike `https://developer.android.com/reference/kotlin/android/util/Half#halfToR
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Half#halfToRawIntBits(kotlin.Short)`
-- `https://developer.android.com/reference/kotlin/android/util/Half#halfToShortBits(kotlin.Short)`
-- `https://developer.android.com/reference/kotlin/android/util/Half#intBitsToHalf(kotlin.Int)`
+- halfToRawIntBits
+- halfToShortBits
+- intBitsToHalf
 
 ### halfToRawIntBits
 
@@ -740,9 +740,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun halfToRawIntBits(h: Short): Int
 ```
 
-Returns a representation of the specified half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`.
+Returns a representation of the specified half-precision float value according to the bit layout described in Half.
 
-The argument is considered to be a representation of a half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`. The 16 most significant bits of the returned value are set to 0.
+The argument is considered to be a representation of a half-precision float value according to the bit layout described in Half. The 16 most significant bits of the returned value are set to 0.
 
 | Parameters ||
 |---|---|
@@ -754,8 +754,8 @@ The argument is considered to be a representation of a half-precision float valu
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)`
-- `https://developer.android.com/reference/kotlin/android/util/Half#intBitsToHalf(kotlin.Int)`
+- halfToIntBits
+- intBitsToHalf
 
 ### halfToShortBits
 
@@ -765,9 +765,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun halfToShortBits(h: Short): Short
 ```
 
-Returns a representation of the specified half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`.
+Returns a representation of the specified half-precision float value according to the bit layout described in Half.
 
-Similar to `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)`, this method collapses all possible Not-a-Number values to a single canonical Not-a-Number value defined by `https://developer.android.com/reference/kotlin/android/util/Half#NaN:kotlin.Short`.
+Similar to halfToIntBits, this method collapses all possible Not-a-Number values to a single canonical Not-a-Number value defined by `https://developer.android.com/reference/kotlin/android/util/Half#NaN:kotlin.Short`.
 
 | Parameters ||
 |---|---|
@@ -779,7 +779,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/util/Half#hal
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)`
+- halfToIntBits
 
 ### halfValue
 
@@ -789,7 +789,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun halfValue(): Short
 ```
 
-Returns the half-precision value of this `Half` as a `short` containing the bit representation described in `https://developer.android.com/reference/kotlin/android/util/Half#`.
+Returns the half-precision value of this `Half` as a `short` containing the bit representation described in Half.
 
 | Return ||
 |---|---|
@@ -803,7 +803,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code for this `Half` object. The result is the integer bit representation, exactly as produced by the method `https://developer.android.com/reference/kotlin/android/util/Half#halfToIntBits(kotlin.Short)`, of the primitive half-precision float value represented by this `Half` object.
+Returns a hash code for this `Half` object. The result is the integer bit representation, exactly as produced by the method halfToIntBits, of the primitive half-precision float value represented by this `Half` object.
 
 | Return ||
 |---|---|
@@ -837,7 +837,7 @@ static fun intBitsToHalf(bits: Int): Short
 
 Returns the half-precision float value corresponding to a given bit representation.
 
-The argument is considered to be a representation of a half-precision float value according to the bit layout described in `https://developer.android.com/reference/kotlin/android/util/Half#`. The 16 most significant bits of the argument are ignored.
+The argument is considered to be a representation of a half-precision float value according to the bit layout described in Half. The 16 most significant bits of the argument are ignored.
 
 | Parameters ||
 |---|---|
@@ -1021,7 +1021,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun parseHalf(s: String): Short
 ```
 
-Returns the half-precision float value represented by the specified string. Calling this method is equivalent to calling `toHalf(Float.parseString(h))`. See `https://developer.android.com/reference/kotlin/java/lang/Float.html#valueOf(kotlin.String)` for more information on the format of the string representation.
+Returns the half-precision float value represented by the specified string. Calling this method is equivalent to calling `toHalf(Float.parseString(h))`. See valueOf for more information on the format of the string representation.
 
 | Parameters ||
 |---|---|
@@ -1136,7 +1136,7 @@ static fun toHalf(f: Float): Short
 
 Converts the specified single-precision float value into a half-precision float value. The following special cases are handled:
 
-- If the input is NaN (see `https://developer.android.com/reference/kotlin/java/lang/Float.html#isNaN(kotlin.Float)`), the returned value is `https://developer.android.com/reference/kotlin/android/util/Half#NaN:kotlin.Short`
+- If the input is NaN (see isNaN), the returned value is `https://developer.android.com/reference/kotlin/android/util/Half#NaN:kotlin.Short`
 - If the input is `https://developer.android.com/reference/kotlin/java/lang/Float.html#POSITIVE_INFINITY:kotlin.Float` or `https://developer.android.com/reference/kotlin/java/lang/Float.html#NEGATIVE_INFINITY:kotlin.Float`, the returned value is respectively `https://developer.android.com/reference/kotlin/android/util/Half#POSITIVE_INFINITY:kotlin.Short` or `https://developer.android.com/reference/kotlin/android/util/Half#NEGATIVE_INFINITY:kotlin.Short`
 - If the input is 0 (positive or negative), the returned value is `https://developer.android.com/reference/kotlin/android/util/Half#POSITIVE_ZERO:kotlin.Short` or `https://developer.android.com/reference/kotlin/android/util/Half#NEGATIVE_ZERO:kotlin.Short`
 - If the input is a less than `https://developer.android.com/reference/kotlin/android/util/Half#MIN_VALUE:kotlin.Short`, the returned value is flushed to `https://developer.android.com/reference/kotlin/android/util/Half#POSITIVE_ZERO:kotlin.Short` or `https://developer.android.com/reference/kotlin/android/util/Half#NEGATIVE_ZERO:kotlin.Short`
@@ -1226,7 +1226,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun toString(): String
 ```
 
-Returns a string representation of the specified half-precision float value. See `https://developer.android.com/reference/kotlin/android/util/Half#toString(kotlin.Short)` for more information.
+Returns a string representation of the specified half-precision float value. See toString for more information.
 
 | Return ||
 |---|---|
@@ -1240,7 +1240,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun toString(h: Short): String
 ```
 
-Returns a string representation of the specified half-precision float value. Calling this method is equivalent to calling `Float.toString(toFloat(h))`. See `https://developer.android.com/reference/kotlin/java/lang/Float.html#toString(kotlin.Float)` for more information on the format of the string representation.
+Returns a string representation of the specified half-precision float value. Calling this method is equivalent to calling `Float.toString(toFloat(h))`. See toString for more information on the format of the string representation.
 
 | Parameters ||
 |---|---|
@@ -1290,7 +1290,7 @@ Returns a `Half` instance representing the specified float value.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/Half#` | a `Half` instance representing `f` This value cannot be `null`. |
+| Half | a `Half` instance representing `f` This value cannot be `null`. |
 
 ### valueOf
 
@@ -1300,7 +1300,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun valueOf(s: String): Half
 ```
 
-Returns a `Half` instance representing the specified string value. Calling this method is equivalent to calling `toHalf(Float.parseString(h))`. See `https://developer.android.com/reference/kotlin/java/lang/Float.html#valueOf(kotlin.String)` for more information on the format of the string representation.
+Returns a `Half` instance representing the specified string value. Calling this method is equivalent to calling `toHalf(Float.parseString(h))`. See valueOf for more information on the format of the string representation.
 
 | Parameters ||
 |---|---|
@@ -1308,7 +1308,7 @@ Returns a `Half` instance representing the specified string value. Calling this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/Half#` | a `Half` instance representing `h` This value cannot be `null`. |
+| Half | a `Half` instance representing `h` This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1330,4 +1330,4 @@ Returns a `Half` instance representing the specified half-precision float value.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/Half#` | a `Half` instance representing `h` This value cannot be `null`. |
+| Half | a `Half` instance representing `h` This value cannot be `null`. |

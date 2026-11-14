@@ -51,51 +51,51 @@ Tools for managing OS processes.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Process#Process()()` <br /> |
+| Process <br /> |
 
 | Public methods ||
 |---|---|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#areUidsForSameApplication(kotlin.Int,%20kotlin.Int)(uid1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the two UIDs belong to the same application, taking mathematically mapped UIDs (such as Private Compute Core sandbox) into account. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getAppUidForPrivateComputeCoreUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the app UID corresponding to a Private Compute Core UID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getAppUidForSdkSandboxUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the app uid corresponding to an sdk sandbox uid. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | areUidsForSameApplication Returns true if the two UIDs belong to the same application, taking mathematically mapped UIDs (such as Private Compute Core sandbox) into account. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAppUidForPrivateComputeCoreUid Returns the app UID corresponding to a Private Compute Core UID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAppUidForSdkSandboxUid Returns the app uid corresponding to an sdk sandbox uid. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getElapsedCpuTime()()` Returns elapsed milliseconds of the time this process has run. |
-| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Process#getExclusiveCores()()` On some devices, the foreground process may have one or more CPU cores exclusively reserved for it. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getGidForName(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the GID assigned to a particular user name, or -1 if there is none. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getElapsedCpuTime Returns elapsed milliseconds of the time this process has run. |
+| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getExclusiveCores On some devices, the foreground process may have one or more CPU cores exclusively reserved for it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGidForName Returns the GID assigned to a particular user name, or -1 if there is none. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getPrivateComputeCoreUidForAppUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the Private Compute Core UID corresponding to an app UID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getSdkSandboxUidForAppUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the sdk sandbox uid corresponding to an app uid. |
-| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getStartElapsedRealtime()()` Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` at which this process was started, but before any of the application code was executed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPrivateComputeCoreUidForAppUid Returns the Private Compute Core UID corresponding to an app UID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSdkSandboxUidForAppUid Returns the sdk sandbox uid corresponding to an app uid. |
+| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartElapsedRealtime Return the elapsedRealtime at which this process was started, but before any of the application code was executed. |
 | --- | --- |
-| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getStartRequestedElapsedRealtime()()` Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` at which the system was about to start this process. |
-| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getStartRequestedUptimeMillis()()` Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` at which the system was about to start this process. |
-| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getStartUptimeMillis()()` Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` at which this process was started, but before any of the application code was executed. |
+| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartRequestedElapsedRealtime Return the elapsedRealtime at which the system was about to start this process. |
+| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartRequestedUptimeMillis Return the uptimeMillis at which the system was about to start this process. |
+| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartUptimeMillis Return the uptimeMillis at which this process was started, but before any of the application code was executed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getThreadPriority(kotlin.Int)(tid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the current priority of a thread, based on Linux priorities. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#getUidForName(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the UID assigned to a particular user name, or -1 if there is none. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#is64Bit()()` Returns true if the current process is a 64-bit runtime. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getThreadPriority Return the current priority of a thread, based on Linux priorities. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUidForName Returns the UID assigned to a particular user name, or -1 if there is none. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | is64Bit Returns true if the current process is a 64-bit runtime. |
 | --- | --- |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#isApplicationUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the given uid belongs to an application. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#isIsolated()()` Returns whether the current process is in an isolated sandbox. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#isIsolatedUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the process with the given `uid` is an isolated sandbox. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isApplicationUid Returns whether the given uid belongs to an application. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isIsolated Returns whether the current process is in an isolated sandbox. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isIsolatedUid Returns whether the process with the given `uid` is an isolated sandbox. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#isPrivateComputeCoreUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the provided UID belongs to components running in a Private Compute Core sandbox process. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#isSdkSandbox()()` Returns whether the current process is a sdk sandbox process. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#isSdkSandboxUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the provided UID belongs to an sdk sandbox process |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPrivateComputeCoreUid Returns whether the provided UID belongs to components running in a Private Compute Core sandbox process. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSdkSandbox Returns whether the current process is a sdk sandbox process. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSdkSandboxUid Returns whether the provided UID belongs to an sdk sandbox process |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#killProcess(kotlin.Int)(pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Kill the process with the given PID. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#myPid()()` Returns the identifier of this process, which can be used with `https://developer.android.com/reference/kotlin/android/os/Process#killProcess(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#sendSignal(kotlin.Int,%20kotlin.Int)`. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#myProcessName()()` Return the name of this process. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | killProcess Kill the process with the given PID. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | myPid Returns the identifier of this process, which can be used with killProcess and sendSignal. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | myProcessName Return the name of this process. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#myTid()()` Returns the identifier of the calling thread, which be used with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#myUid()()` Returns the identifier of this process's uid. |
-| open static [UserHandle](UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/os/Process#myUserHandle()()` Returns this process's user handle. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | myTid Returns the identifier of the calling thread, which be used with setThreadPriority. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | myUid Returns the identifier of this process's uid. |
+| open static [UserHandle](UserHandle.md)! | myUserHandle Returns this process's user handle. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#sendSignal(kotlin.Int,%20kotlin.Int)(pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, signal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Send a signal to the given process. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)(priority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the priority of the calling thread, based on Linux niceness priorities. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)(tid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, priority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the OS priority of a thread, using Linux niceness priorities. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendSignal Send a signal to the given process. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setThreadPriority Set the priority of the calling thread, based on Linux niceness priorities. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setThreadPriority Set the OS priority of a thread, using Linux niceness priorities. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Process#supportsProcesses()()` Determine whether the current environment supports multiple processes. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsProcesses Determine whether the current environment supports multiple processes. |
 
 ## Constants
 
@@ -245,7 +245,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_AUDIO: Int
 ```
 
-Standard priority of audio threads. Applications should not normally change to this priority. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of audio threads. Applications should not normally change to this priority. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: -16
 
@@ -257,7 +257,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_BACKGROUND: Int
 ```
 
-Standard priority background threads. This gives your thread a significantly lower than normal priority, so that it will have less chance of impacting the responsiveness of the user interface. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority background threads. This gives your thread a significantly lower than normal priority, so that it will have less chance of impacting the responsiveness of the user interface. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: 10
 
@@ -269,7 +269,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_DEFAULT: Int
 ```
 
-Standard priority of application threads. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of application threads. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: 0
 
@@ -281,7 +281,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_DISPLAY: Int
 ```
 
-Standard priority of system display threads, involved in updating the user interface. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of system display threads, involved in updating the user interface. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: -4
 
@@ -293,7 +293,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_FOREGROUND: Int
 ```
 
-Standard priority of threads that are currently running a user interface that the user is interacting with. Applications do not normally change to this priority; the system will automatically adjust your application threads as the user moves through the UI. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of threads that are currently running a user interface that the user is interacting with. Applications do not normally change to this priority; the system will automatically adjust your application threads as the user moves through the UI. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: -2
 
@@ -317,7 +317,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_LOWEST: Int
 ```
 
-Lowest available thread priority. Only for those who really, really don't want to run if anything else is happening. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Lowest available thread priority. Only for those who really, really don't want to run if anything else is happening. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: 19
 
@@ -341,7 +341,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_URGENT_AUDIO: Int
 ```
 
-Standard priority of the most important audio threads. Applications should not normally change to this priority. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of the most important audio threads. Applications should not normally change to this priority. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: -19
 
@@ -353,7 +353,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val THREAD_PRIORITY_URGENT_DISPLAY: Int
 ```
 
-Standard priority of the most important display threads, for compositing the screen and retrieving input events. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of the most important display threads, for compositing the screen and retrieving input events. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: -8
 
@@ -365,7 +365,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val THREAD_PRIORITY_VIDEO: Int
 ```
 
-Standard priority of video threads. Applications should not normally change to this priority. Use with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
+Standard priority of video threads. Applications should not normally change to this priority. Use with setThreadPriority and setThreadPriority, **not** with the normal `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` class.
 
  Value: -10
 
@@ -548,12 +548,12 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getStartElapsedRealtime(): Long
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` at which this process was started, but before any of the application code was executed. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` time base.
+Return the elapsedRealtime at which this process was started, but before any of the application code was executed. 
+Value is a non-negative timestamp in the elapsedRealtime time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the elapsedRealtime time base. |
 
 ### getStartRequestedElapsedRealtime
 
@@ -563,14 +563,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open static fun getStartRequestedElapsedRealtime(): Long
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` at which the system was about to start this process. i.e. before a zygote fork.
+Return the elapsedRealtime at which the system was about to start this process. i.e. before a zygote fork.
 
 More precisely, the system may start app processes before there's a start request, in order to reduce the process start up latency, in which case this is set when the system decides to "specialize" the process into a requested app. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` time base.
+Value is a non-negative timestamp in the elapsedRealtime time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#elapsedRealtime()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the elapsedRealtime time base. |
 
 ### getStartRequestedUptimeMillis
 
@@ -580,14 +580,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open static fun getStartRequestedUptimeMillis(): Long
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` at which the system was about to start this process. i.e. before a zygote fork.
+Return the uptimeMillis at which the system was about to start this process. i.e. before a zygote fork.
 
 More precisely, the system may start app processes before there's a start request, in order to reduce the process start up latency, in which case this is set when the system decides to "specialize" the process into a requested app. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` time base.
+Value is a non-negative timestamp in the uptimeMillis time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the uptimeMillis time base. |
 
 ### getStartUptimeMillis
 
@@ -597,12 +597,12 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getStartUptimeMillis(): Long
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` at which this process was started, but before any of the application code was executed. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` time base.
+Return the uptimeMillis at which this process was started, but before any of the application code was executed. 
+Value is a non-negative timestamp in the uptimeMillis time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock#uptimeMillis()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Value is a non-negative timestamp in the uptimeMillis time base. |
 
 ### getThreadPriority
 
@@ -735,7 +735,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun myPid(): Int
 ```
 
-Returns the identifier of this process, which can be used with `https://developer.android.com/reference/kotlin/android/os/Process#killProcess(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Process#sendSignal(kotlin.Int,%20kotlin.Int)`.
+Returns the identifier of this process, which can be used with killProcess and sendSignal.
 
 ### myProcessName
 
@@ -759,7 +759,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun myTid(): Int
 ```
 
-Returns the identifier of the calling thread, which be used with `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)`.
+Returns the identifier of the calling thread, which be used with setThreadPriority.
 
 ### myUid
 
@@ -769,7 +769,7 @@ Added in [API level 2](https://developer.android.com/guide/topics/manifest/uses-
 static fun myUid(): Int
 ```
 
-Returns the identifier of this process's uid. This is the kernel uid that the process is running under, which is the identity of its app-specific sandbox. It is different from `https://developer.android.com/reference/kotlin/android/os/Process#myUserHandle()` in that a uid identifies a specific app sandbox in a specific user.
+Returns the identifier of this process's uid. This is the kernel uid that the process is running under, which is the identity of its app-specific sandbox. It is different from myUserHandle in that a uid identifies a specific app sandbox in a specific user.
 
 ### myUserHandle
 
@@ -779,7 +779,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open static fun myUserHandle(): UserHandle!
 ```
 
-Returns this process's user handle. This is the user the process is running under. It is distinct from `https://developer.android.com/reference/kotlin/android/os/Process#myUid()` in that a particular user will have multiple distinct apps running under it each with their own uid.
+Returns this process's user handle. This is the user the process is running under. It is distinct from myUid in that a particular user will have multiple distinct apps running under it each with their own uid.
 
 ### sendSignal
 
@@ -807,7 +807,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun setThreadPriority(priority: Int): Unit
 ```
 
-Set the priority of the calling thread, based on Linux niceness priorities. See `https://developer.android.com/reference/kotlin/android/os/Process#setThreadPriority(kotlin.Int,%20kotlin.Int)` for more information. This is preferred over the two argument version when possible. The new priority is not inherited by Java child threads.
+Set the priority of the calling thread, based on Linux niceness priorities. See setThreadPriority for more information. This is preferred over the two argument version when possible. The new priority is not inherited by Java child threads.
 
 | Parameters ||
 |---|---|

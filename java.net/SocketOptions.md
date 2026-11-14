@@ -42,8 +42,8 @@ The methods and constants which specify options in this interface are for implem
 
 | Public methods ||
 |---|---|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#getOption(kotlin.Int)(optID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Fetch the value of an option. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/SocketOptions#setOption(kotlin.Int,%20kotlin.Any)(optID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Enable/disable the option specified by *optID*. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getOption Fetch the value of an option. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOption Enable/disable the option specified by *optID*. |
 
 ## Constants
 
@@ -63,8 +63,8 @@ Valid for Multicast: DatagramSocketImpl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setInterface(java.net.InetAddress)`
-- `https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getInterface()`
+- setInterface
+- getInterface
 
 ### IP_MULTICAST_IF2
 
@@ -80,8 +80,8 @@ Same as above. This option is introduced so that the behaviour with IP_MULTICAST
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/MulticastSocket#setNetworkInterface(java.net.NetworkInterface)`
-- `https://developer.android.com/reference/kotlin/java/net/MulticastSocket#getNetworkInterface()`
+- setNetworkInterface
+- getNetworkInterface
 
 ### IP_MULTICAST_LOOP
 
@@ -125,8 +125,8 @@ Valid for: SocketImpl, DatagramSocketImpl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getLocalAddress()`
-- `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getLocalAddress()`
+- getLocalAddress
+- getLocalAddress
 
 ### SO_BROADCAST
 
@@ -154,8 +154,8 @@ When the keepalive option is set for a TCP socket and no data has been exchanged
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setKeepAlive(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getKeepAlive()`
+- setKeepAlive
+- getKeepAlive
 
 ### SO_LINGER
 
@@ -173,8 +173,8 @@ Valid only for TCP: SocketImpl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setSoLinger(kotlin.Boolean,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getSoLinger()`
+- setSoLinger
+- getSoLinger
 
 ### SO_OOBINLINE
 
@@ -190,8 +190,8 @@ When the OOBINLINE option is set, any TCP urgent data received on the socket wil
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setOOBInline(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getOOBInline()`
+- setOOBInline
+- getOOBInline
 
 ### SO_RCVBUF
 
@@ -207,10 +207,10 @@ Set a hint the size of the underlying buffers used by the platform for incoming 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setReceiveBufferSize(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getReceiveBufferSize()`
-- `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setReceiveBufferSize(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getReceiveBufferSize()`
+- setReceiveBufferSize
+- getReceiveBufferSize
+- setReceiveBufferSize
+- getReceiveBufferSize
 
 ### SO_REUSEADDR
 
@@ -258,10 +258,10 @@ Set a hint the size of the underlying buffers used by the platform for outgoing 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setSendBufferSize(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getSendBufferSize()`
-- `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setSendBufferSize(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getSendBufferSize()`
+- setSendBufferSize
+- getSendBufferSize
+- setSendBufferSize
+- getSendBufferSize
 
 ### SO_TIMEOUT
 
@@ -290,9 +290,9 @@ Valid for all sockets: SocketImpl, DatagramSocketImpl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setSoTimeout(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/ServerSocket#setSoTimeout(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setSoTimeout(kotlin.Int)`
+- setSoTimeout
+- setSoTimeout
+- setSoTimeout
 
 ### TCP_NODELAY
 
@@ -310,8 +310,8 @@ Valid for TCP only: SocketImpl.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/Socket#setTcpNoDelay(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/net/Socket#getTcpNoDelay()`
+- setTcpNoDelay
+- getTcpNoDelay
 
 ## Public methods
 
@@ -364,7 +364,7 @@ Object o = s.getOption(SO_LINGER);
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/SocketOptions#setOption(kotlin.Int,%20kotlin.Any)`
+- setOption
 
 ### setOption
 
@@ -422,4 +422,4 @@ Throws SocketException if the option is unrecognized, the socket is closed, or s
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/SocketOptions#getOption(kotlin.Int)`
+- getOption

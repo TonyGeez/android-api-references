@@ -20,14 +20,14 @@ open class InvalidRequestMessageException : IdentityCredentialException
 >
 > Use `java.security.KeyStore` with the Android hardware-backed keystore instead.
 
-Thrown if message with the request doesn't satisfy the requirements documented in `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getEntries(kotlin.ByteArray,%20kotlin.collections.MutableMap,%20kotlin.ByteArray,%20kotlin.ByteArray)`.
+Thrown if message with the request doesn't satisfy the requirements documented in getEntries.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/InvalidRequestMessageException#InvalidRequestMessageException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidRequestMessageException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/InvalidRequestMessageException#InvalidRequestMessageException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidRequestMessageException#` exception. |
+| InvalidRequestMessageException Constructs a new InvalidRequestMessageException exception. |
+| InvalidRequestMessageException Constructs a new InvalidRequestMessageException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ InvalidRequestMessageException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidRequestMessageException#` exception.
+Constructs a new InvalidRequestMessageException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ InvalidRequestMessageException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidRequestMessageException#` exception.
+Constructs a new InvalidRequestMessageException exception.
 
 | Parameters ||
 |---|---|

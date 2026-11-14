@@ -26,8 +26,8 @@ Thrown if the reader signature is invalid, or it doesn't contain a certificate c
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/InvalidReaderSignatureException#InvalidReaderSignatureException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidReaderSignatureException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/InvalidReaderSignatureException#InvalidReaderSignatureException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidReaderSignatureException#` exception. |
+| InvalidReaderSignatureException Constructs a new InvalidReaderSignatureException exception. |
+| InvalidReaderSignatureException Constructs a new InvalidReaderSignatureException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ InvalidReaderSignatureException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidReaderSignatureException#` exception.
+Constructs a new InvalidReaderSignatureException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ InvalidReaderSignatureException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/InvalidReaderSignatureException#` exception.
+Constructs a new InvalidReaderSignatureException exception.
 
 | Parameters ||
 |---|---|

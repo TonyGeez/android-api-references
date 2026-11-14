@@ -16,7 +16,7 @@ The system service through which system components can interact with time and ti
 
 | Public methods ||
 |---|---|
-| [TimeZone](../java.util/TimeZone.md)? | `https://developer.android.com/reference/kotlin/android/app/time/TimeManager#getHomeTimeZone()()` Returns the current home time zone. |
+| [TimeZone](../java.util/TimeZone.md)? | getHomeTimeZone Returns the current home time zone. |
 
 ## Public methods
 

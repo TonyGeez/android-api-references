@@ -16,11 +16,11 @@ open class ZoomButtonsController : View.OnTouchListener
 >
 > This functionality and UI is better handled with custom views and layouts rather than a dedicated zoom-control widget
 
-The `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#` handles showing and hiding the zoom controls and positioning it relative to an owner view. It also gives the client access to the zoom controls container, allowing for additional accessory buttons to be shown in the zoom controls window.
+The ZoomButtonsController handles showing and hiding the zoom controls and positioning it relative to an owner view. It also gives the client access to the zoom controls container, allowing for additional accessory buttons to be shown in the zoom controls window.
 
-Typically, clients should call `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setVisible(kotlin.Boolean)` on a touch down or move (no need to call `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setVisible(kotlin.Boolean)` since it will time out on its own). Also, whenever the owner cannot be zoomed further, the client should update `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomInEnabled(kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomOutEnabled(kotlin.Boolean)`.
+Typically, clients should call setVisible on a touch down or move (no need to call setVisible since it will time out on its own). Also, whenever the owner cannot be zoomed further, the client should update setZoomInEnabled and setZoomOutEnabled.
 
-If you are using this with a custom View, please call `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setVisible(kotlin.Boolean)` from `https://developer.android.com/reference/kotlin/android/view/View.html#onDetachedFromWindow()` and from `https://developer.android.com/reference/kotlin/android/view/View.html#onVisibilityChanged(android.view.View,%20kotlin.Int)` when `visibility != View.VISIBLE`.
+If you are using this with a custom View, please call setVisible from onDetachedFromWindow and from onVisibilityChanged when `visibility != View.VISIBLE`.
 
 ## Summary
 
@@ -30,25 +30,25 @@ If you are using this with a custom View, please call `https://developer.android
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#ZoomButtonsController(android.view.View)(ownerView: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Constructor for the `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#`. |
+| ZoomButtonsController Constructor for the ZoomButtonsController. |
 
 | Public methods ||
 |---|---|
-| open [ViewGroup](../android.view/ViewGroup.md)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getContainer()()` Gets the container that is the parent of the zoom controls. |
-| open [View](../android.view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#getZoomControls()()` Gets the view for the zoom controls. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#isAutoDismissed()()` Whether the zoom controls will be automatically dismissed after showing. |
+| open [ViewGroup](../android.view/ViewGroup.md)! | getContainer Gets the container that is the parent of the zoom controls. |
+| open [View](../android.view/View.md)! | getZoomControls Gets the view for the zoom controls. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAutoDismissed Whether the zoom controls will be automatically dismissed after showing. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#isVisible()()` Whether the zoom controls are visible to the user. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#onTouch(android.view.View,%20android.view.MotionEvent)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!, event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` The ZoomButtonsController implements the OnTouchListener, but this does not need to be shown in its public API. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setAutoDismissed(kotlin.Boolean)(autoDismiss: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the zoom controls will be automatically dismissed after showing. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVisible Whether the zoom controls are visible to the user. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onTouch The ZoomButtonsController implements the OnTouchListener, but this does not need to be shown in its public API. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAutoDismissed Sets whether the zoom controls will be automatically dismissed after showing. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setFocusable(kotlin.Boolean)(focusable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the zoom controls should be focusable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setOnZoomListener(android.widget.ZoomButtonsController.OnZoomListener)(listener: https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener!)` Sets the `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener` listener that receives callbacks to zoom. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setVisible(kotlin.Boolean)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the zoom controls should be visible to the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFocusable Sets whether the zoom controls should be focusable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnZoomListener Sets the `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController.OnZoomListener` listener that receives callbacks to zoom. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVisible Sets whether the zoom controls should be visible to the user. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomInEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to enable the zoom in control. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomOutEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to enable the zoom out control. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#setZoomSpeed(kotlin.Long)(speed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the delay between zoom callbacks as the user holds a zoom button. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setZoomInEnabled Whether to enable the zoom in control. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setZoomOutEnabled Whether to enable the zoom out control. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setZoomSpeed Sets the delay between zoom callbacks as the user holds a zoom button. |
 | --- | --- |
 
 ## Public constructors
@@ -61,7 +61,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 ZoomButtonsController(ownerView: View!)
 ```
 
-Constructor for the `https://developer.android.com/reference/kotlin/android/widget/ZoomButtonsController#`.
+Constructor for the ZoomButtonsController.
 
 | Parameters ||
 |---|---|

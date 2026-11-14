@@ -44,7 +44,7 @@ A SSL socket must choose to operate in the client or server mode. This will dete
 
 ### Default configuration for different Android versions
 
-`SSLSocket` instances obtained from default `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocketFactory`, `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLServerSocketFactory`, and `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLContext` are configured as follows:
+`SSLSocket` instances obtained from default SSLSocketFactory, SSLServerSocketFactory, and SSLContext are configured as follows:
 
 #### Protocols
 
@@ -72,7 +72,7 @@ Server socket:
 
 #### Cipher suites
 
-Methods that operate with cipher suite names (for example, `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedCipherSuites()`, `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledCipherSuites(kotlin.Array)`) have used standard names for cipher suites since API Level 9, as listed in the table below. Prior to API Level 9, non-standard (OpenSSL) names had been used (see the table following this table).
+Methods that operate with cipher suite names (for example, getSupportedCipherSuites, setEnabledCipherSuites) have used standard names for cipher suites since API Level 9, as listed in the table below. Prior to API Level 9, non-standard (OpenSSL) names had been used (see the table following this table).
 
 | Cipher suite | Supported (API Levels) | Enabled by default (API Levels) |
 |---|---|---|
@@ -249,50 +249,50 @@ API Levels 1 to 8 use OpenSSL names for cipher suites. The table below lists the
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#SSLSocket()()` Used only by subclasses. |
-| `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#SSLSocket(kotlin.String,%20kotlin.Int)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used only by subclasses. |
-| `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#SSLSocket(kotlin.String,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, clientAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!, clientPort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used only by subclasses. |
-| `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#SSLSocket(java.net.InetAddress,%20kotlin.Int)(address: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used only by subclasses. |
-| `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#SSLSocket(java.net.InetAddress,%20kotlin.Int,%20java.net.InetAddress,%20kotlin.Int)(address: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, clientAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!, clientPort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used only by subclasses. |
+| SSLSocket Used only by subclasses. |
+| SSLSocket Used only by subclasses. |
+| SSLSocket Used only by subclasses. |
+| SSLSocket Used only by subclasses. |
+| SSLSocket Used only by subclasses. |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)(listener: https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedListener!)` Registers an event listener to receive notifications that an SSL handshake has completed on this connection. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getApplicationProtocol()()` Returns the most recent application protocol value negotiated for this connection. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnableSessionCreation()()` Returns true if new SSL sessions may be established by this socket. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addHandshakeCompletedListener Registers an event listener to receive notifications that an SSL handshake has completed on this connection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getApplicationProtocol Returns the most recent application protocol value negotiated for this connection. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getEnableSessionCreation Returns true if new SSL sessions may be established by this socket. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledCipherSuites()()` Returns the names of the SSL cipher suites which are currently enabled for use on this connection. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledProtocols()()` Returns the names of the protocol versions which are currently enabled for use on this connection. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocol()()` Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getEnabledCipherSuites Returns the names of the SSL cipher suites which are currently enabled for use on this connection. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getEnabledProtocols Returns the names of the protocol versions which are currently enabled for use on this connection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getHandshakeApplicationProtocol Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
 | --- | --- |
-| open [BiFunction](../java.util.function/BiFunction.md)\< [SSLSocket](SSLSocket.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocolSelector()()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
-| open [SSLSession](SSLSession.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeSession()()` Returns the `SSLSession` being constructed during a SSL/TLS handshake. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getNeedClientAuth()()` Returns true if the socket will *require* client authentication. |
+| open [BiFunction](../java.util.function/BiFunction.md)\< [SSLSocket](SSLSocket.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getHandshakeApplicationProtocolSelector Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
+| open [SSLSession](SSLSession.md)! | getHandshakeSession Returns the `SSLSession` being constructed during a SSL/TLS handshake. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getNeedClientAuth Returns true if the socket will *require* client authentication. |
 | --- | --- |
-| open [SSLParameters](SSLParameters.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSSLParameters()()` Returns the SSLParameters in effect for this SSLSocket. |
-| abstract [SSLSession](SSLSession.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSession()()` Returns the SSL Session in use by this connection. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedCipherSuites()()` Returns the names of the cipher suites which could be enabled for use on this connection. |
+| open [SSLParameters](SSLParameters.md)! | getSSLParameters Returns the SSLParameters in effect for this SSLSocket. |
+| abstract [SSLSession](SSLSession.md)! | getSession Returns the SSL Session in use by this connection. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getSupportedCipherSuites Returns the names of the cipher suites which could be enabled for use on this connection. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedProtocols()()` Returns the names of the protocols which could be enabled for use on an SSL connection. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getUseClientMode()()` Returns true if the socket is set to use client mode when handshaking. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getWantClientAuth()()` Returns true if the socket will *request* client authentication. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getSupportedProtocols Returns the names of the protocols which could be enabled for use on an SSL connection. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getUseClientMode Returns true if the socket is set to use client mode when handshaking. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getWantClientAuth Returns true if the socket will *request* client authentication. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)(listener: https://developer.android.com/reference/kotlin/javax/net/ssl/HandshakeCompletedListener!)` Removes a previously registered handshake completion listener. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnableSessionCreation(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether new SSL sessions may be established by this socket. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledCipherSuites(kotlin.Array)(suites: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Sets the cipher suites enabled for use on this connection. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeHandshakeCompletedListener Removes a previously registered handshake completion listener. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEnableSessionCreation Controls whether new SSL sessions may be established by this socket. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEnabledCipherSuites Sets the cipher suites enabled for use on this connection. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledProtocols(kotlin.Array)(protocols: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Sets the protocol versions enabled for use on this connection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)(selector: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Registers a callback function that selects an application protocol value for a SSL/TLS handshake. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)(need: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Configures the socket to *require* client authentication. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEnabledProtocols Sets the protocol versions enabled for use on this connection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHandshakeApplicationProtocolSelector Registers a callback function that selects an application protocol value for a SSL/TLS handshake. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNeedClientAuth Configures the socket to *require* client authentication. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setSSLParameters(javax.net.ssl.SSLParameters)(params: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters!)` Applies SSLParameters to this socket. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Configures the socket to use client (or server) mode when handshaking. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)(want: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Configures the socket to *request* client authentication. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSSLParameters Applies SSLParameters to this socket. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUseClientMode Configures the socket to use client (or server) mode when handshaking. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWantClientAuth Configures the socket to *request* client authentication. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#startHandshake()()` Starts an SSL handshake on this connection. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#toString()()` Converts this socket to a `String`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startHandshake Starts an SSL handshake on this connection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Converts this socket to a `String`. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/java/net/Socket.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#bind(java.net.SocketAddress)(bindpoint: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)`
+Inherited functions From class `https://developer.android.com/reference/kotlin/java/net/Socket.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` bind
 
 Binds the socket to a local address.
 
@@ -300,7 +300,7 @@ If the address is `null`, then the system will pick up an ephemeral port and a v
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#close()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` close
 
 Closes this socket.
 
@@ -314,27 +314,27 @@ If this socket has an associated channel then the channel is closed as well.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#connect(java.net.SocketAddress)(endpoint: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` connect
 
 Connects this socket to the server.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#connect(java.net.SocketAddress,%20kotlin.Int)(endpoint: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` connect
 
 Connects this socket to the server with a specified timeout value. A timeout of zero is interpreted as an infinite timeout. The connection will then block until established or an error occurs.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getChannel()()`
+`https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#!` getChannel
 
 Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/SocketChannel.html#` object associated with this socket, if any.
 
-A socket will have a channel if, and only if, the channel itself was created via the java.nio.channels.SocketChannel#open or `https://developer.android.com/reference/kotlin/java/nio/channels/ServerSocketChannel.html#accept()` methods.
+A socket will have a channel if, and only if, the channel itself was created via the java.nio.channels.SocketChannel#open or accept methods.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getInetAddress()()`
+`https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!` getInetAddress
 
 Returns the address to which the socket is connected.
 
@@ -342,7 +342,7 @@ If the socket was connected prior to being #close, then this method will continu
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/io/InputStream.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getInputStream()()`
+`https://developer.android.com/reference/kotlin/java/io/InputStream.html#!` getInputStream
 
 Returns an input stream for this socket.
 
@@ -352,27 +352,27 @@ Under abnormal conditions the underlying connection may be broken by the remote 
 
 - The network software may discard bytes that are buffered by the socket. Bytes that aren't discarded by the network software can be read using java.io.InputStream#read.
 - If there are no bytes buffered on the socket, or all buffered bytes have been consumed by java.io.InputStream#read, then all subsequent calls to java.io.InputStream#read will throw an `https://developer.android.com/reference/kotlin/java/io/IOException.html#`.
-- If there are no bytes buffered on the socket, and the socket has not been closed using #close, then `https://developer.android.com/reference/kotlin/java/io/InputStream.html#available()` will return `0`.
+- If there are no bytes buffered on the socket, and the socket has not been closed using #close, then available will return `0`.
 
 Closing the returned `https://developer.android.com/reference/kotlin/java/io/InputStream.html#` will close the associated socket.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getKeepAlive()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getKeepAlive
 
 Tests if `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_KEEPALIVE:kotlin.Int` is enabled.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getLocalAddress()()`
+`https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!` getLocalAddress
 
 Gets the local address to which the socket is bound.
 
-If there is a security manager set, its `checkConnect` method is called with the local address and `-1` as its arguments to see if the operation is allowed. If the operation is not allowed, the `https://developer.android.com/reference/kotlin/java/net/InetAddress.html#getLoopbackAddress()` address is returned.
+If there is a security manager set, its `checkConnect` method is called with the local address and `-1` as its arguments to see if the operation is allowed. If the operation is not allowed, the getLoopbackAddress address is returned.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getLocalPort()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getLocalPort
 
 Returns the local port number to which this socket is bound.
 
@@ -380,29 +380,29 @@ If the socket was bound prior to being #close, then this method will continue to
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getLocalSocketAddress()()`
+`https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!` getLocalSocketAddress
 
 Returns the address of the endpoint this socket is bound to.
 
-If a socket bound to an endpoint represented by an `InetSocketAddress ` is #close, then this method will continue to return an `InetSocketAddress` after the socket is closed. In that case the returned `InetSocketAddress`'s address is the `https://developer.android.com/reference/kotlin/java/net/InetAddress.html#isAnyLocalAddress()` address and its port is the local port that it was bound to.
+If a socket bound to an endpoint represented by an `InetSocketAddress ` is #close, then this method will continue to return an `InetSocketAddress` after the socket is closed. In that case the returned `InetSocketAddress`'s address is the isAnyLocalAddress address and its port is the local port that it was bound to.
 
-If there is a security manager set, its `checkConnect` method is called with the local address and `-1` as its arguments to see if the operation is allowed. If the operation is not allowed, a `SocketAddress` representing the `https://developer.android.com/reference/kotlin/java/net/InetAddress.html#getLoopbackAddress()` address and the local port to which this socket is bound is returned.
+If there is a security manager set, its `checkConnect` method is called with the local address and `-1` as its arguments to see if the operation is allowed. If the operation is not allowed, a `SocketAddress` representing the getLoopbackAddress address and the local port to which this socket is bound is returned.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getOOBInline()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getOOBInline
 
 Tests if `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_OOBINLINE:kotlin.Int` is enabled.
 
 <br />
 
-`T` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!)`
+`T` getOption
 
 Returns the value of a socket option.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getOutputStream()()`
+`https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!` getOutputStream
 
 Returns an output stream for this socket.
 
@@ -412,7 +412,7 @@ Closing the returned `https://developer.android.com/reference/kotlin/java/io/Out
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getPort()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getPort
 
 Returns the remote port number to which this socket is connected.
 
@@ -420,13 +420,13 @@ If the socket was connected prior to being #close, then this method will continu
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getReceiveBufferSize()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getReceiveBufferSize
 
 Gets the value of the `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_RCVBUF:kotlin.Int` option for this `Socket`, that is the buffer size used by the platform for input on this `Socket`.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getRemoteSocketAddress()()`
+`https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!` getRemoteSocketAddress
 
 Returns the address of the endpoint this socket is connected to, or `null` if it is unconnected.
 
@@ -434,91 +434,91 @@ If the socket was connected prior to being #close, then this method will continu
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getReuseAddress()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getReuseAddress
 
 Tests if `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` is enabled.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getSendBufferSize()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getSendBufferSize
 
 Get value of the `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_SNDBUF:kotlin.Int` option for this `Socket`, that is the buffer size used by the platform for output on this `Socket`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getSoLinger()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getSoLinger
 
 Returns setting for `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_LINGER:kotlin.Int`. -1 returns implies that the option is disabled. The setting only affects socket close.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getSoTimeout()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getSoTimeout
 
 Returns setting for `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_TIMEOUT:kotlin.Int`. 0 returns implies that the option is disabled (i.e., timeout of infinity).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getTcpNoDelay()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getTcpNoDelay
 
 Tests if `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#TCP_NODELAY:kotlin.Int` is enabled.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#getTrafficClass()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTrafficClass
 
 Gets traffic class or type-of-service in the IP header for packets sent from this Socket
 
-As the underlying network implementation may ignore the traffic class or type-of-service set using `https://developer.android.com/reference/kotlin/java/net/Socket.html#setTrafficClass(kotlin.Int)` this method may return a different value than was previously set using the `https://developer.android.com/reference/kotlin/java/net/Socket.html#setTrafficClass(kotlin.Int)` method on this Socket.
+As the underlying network implementation may ignore the traffic class or type-of-service set using setTrafficClass this method may return a different value than was previously set using the setTrafficClass method on this Socket.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#isBound()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isBound
 
 Returns the binding state of the socket.
 
-Note: Closing a socket doesn't clear its binding state, which means this method will return `true` for a closed socket (see `https://developer.android.com/reference/kotlin/java/net/Socket.html#isClosed()`) if it was successfuly bound prior to being closed.
+Note: Closing a socket doesn't clear its binding state, which means this method will return `true` for a closed socket (see isClosed) if it was successfuly bound prior to being closed.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#isClosed()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isClosed
 
 Returns the closed state of the socket.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#isConnected()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isConnected
 
 Returns the connection state of the socket.
 
-Note: Closing a socket doesn't clear its connection state, which means this method will return `true` for a closed socket (see `https://developer.android.com/reference/kotlin/java/net/Socket.html#isClosed()`) if it was successfuly connected prior to being closed.
+Note: Closing a socket doesn't clear its connection state, which means this method will return `true` for a closed socket (see isClosed) if it was successfuly connected prior to being closed.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#isInputShutdown()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isInputShutdown
 
 Returns whether the read-half of the socket connection is closed.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#isOutputShutdown()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isOutputShutdown
 
 Returns whether the write-half of the socket connection is closed.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#sendUrgentData(kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` sendUrgentData
 
 Send one byte of urgent data on the socket. The byte to be sent is the lowest eight bits of the data parameter. The urgent byte is sent after any preceding writes to the socket OutputStream and before any future writes to the OutputStream.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setKeepAlive(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setKeepAlive
 
 Enable/disable `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_KEEPALIVE:kotlin.Int`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setOOBInline(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setOOBInline
 
 Enable/disable `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_OOBINLINE:kotlin.Int` (receipt of TCP urgent data) By default, this option is disabled and TCP urgent data received on a socket is silently discarded. If the user wishes to receive urgent data, then this option must be enabled. When enabled, urgent data is received inline with normal data.
 
@@ -526,13 +526,13 @@ Note, only limited support is provided for handling incoming urgent data. In par
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/net/Socket.html#!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setOption(java.net.SocketOption,%20java.net.Socket.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!, value: T)`
+`https://developer.android.com/reference/kotlin/java/net/Socket.html#!` setOption
 
 Sets the value of a socket option.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setPerformancePreferences(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(connectionTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, latency: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bandwidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setPerformancePreferences
 
 Sets performance preferences for this socket.
 
@@ -544,56 +544,56 @@ Invoking this method after this socket has been connected will have no effect.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setReceiveBufferSize(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setReceiveBufferSize
 
 Sets the `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_RCVBUF:kotlin.Int` option to the specified value for this `Socket`. The `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_RCVBUF:kotlin.Int` option is used by the platform's networking code as a hint for the size to set the underlying network I/O buffers.
 
 Increasing the receive buffer size can increase the performance of network I/O for high-volume connection, while decreasing it can help reduce the backlog of incoming data.
 
-Because `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_RCVBUF:kotlin.Int` is a hint, applications that want to verify what size the buffers were set to should call `https://developer.android.com/reference/kotlin/java/net/Socket.html#getReceiveBufferSize()`.
+Because `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_RCVBUF:kotlin.Int` is a hint, applications that want to verify what size the buffers were set to should call getReceiveBufferSize.
 
 The value of `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_RCVBUF:kotlin.Int` is also used to set the TCP receive window that is advertized to the remote peer. Generally, the window size can be modified at any time when a socket is connected. However, if a receive window larger than 64K is required then this must be requested **before** the socket is connected to the remote peer. There are two cases to be aware of:
 
-1. For sockets accepted from a ServerSocket, this must be done by calling `https://developer.android.com/reference/kotlin/java/net/ServerSocket.html#setReceiveBufferSize(kotlin.Int)` before the ServerSocket is bound to a local address.
+1. For sockets accepted from a ServerSocket, this must be done by calling setReceiveBufferSize before the ServerSocket is bound to a local address.
 2. For client sockets, setReceiveBufferSize() must be called before connecting the socket to its remote peer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setReuseAddress(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setReuseAddress
 
 Enable/disable the `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` socket option.
 
 When a TCP connection is closed the connection may remain in a timeout state for a period of time after the connection is closed (typically known as the `TIME_WAIT` state or `2MSL` wait state). For applications using a well known socket address or port it may not be possible to bind a socket to the required `SocketAddress` if there is a connection in the timeout state involving the socket address or port.
 
-Enabling `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` prior to binding the socket using `https://developer.android.com/reference/kotlin/java/net/Socket.html#bind(java.net.SocketAddress)` allows the socket to be bound even though a previous connection is in a timeout state.
+Enabling `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` prior to binding the socket using bind allows the socket to be bound even though a previous connection is in a timeout state.
 
 When a `Socket` is created the initial setting of `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` is disabled.
 
-The behaviour when `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` is enabled or disabled after a socket is bound (See `https://developer.android.com/reference/kotlin/java/net/Socket.html#isBound()`) is not defined.
+The behaviour when `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_REUSEADDR:kotlin.Int` is enabled or disabled after a socket is bound (See isBound) is not defined.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setSendBufferSize(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSendBufferSize
 
 Sets the `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_SNDBUF:kotlin.Int` option to the specified value for this `Socket`. The `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_SNDBUF:kotlin.Int` option is used by the platform's networking code as a hint for the size to set the underlying network I/O buffers.
 
-Because `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_SNDBUF:kotlin.Int` is a hint, applications that want to verify what size the buffers were set to should call `https://developer.android.com/reference/kotlin/java/net/Socket.html#getSendBufferSize()`.
+Because `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_SNDBUF:kotlin.Int` is a hint, applications that want to verify what size the buffers were set to should call getSendBufferSize.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setSoLinger(kotlin.Boolean,%20kotlin.Int)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, linger: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSoLinger
 
 Enable/disable `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_LINGER:kotlin.Int` with the specified linger time in seconds. The maximum timeout value is platform specific. The setting only affects socket close.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setSoTimeout(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSoTimeout
 
 Enable/disable `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#SO_TIMEOUT:kotlin.Int` with the specified timeout, in milliseconds. With this option set to a non-zero timeout, a read() call on the InputStream associated with this Socket will block for only this amount of time. If the timeout expires, a **java.net.SocketTimeoutException** is raised, though the Socket is still valid. The option **must** be enabled prior to entering the blocking operation to have effect. The timeout must be `> 0`. A timeout of zero is interpreted as an infinite timeout.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)(fac: https://developer.android.com/reference/kotlin/java/net/SocketImplFactory.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSocketImplFactory
 
 Sets the client socket implementation factory for the application. The factory can be specified only once.
 
@@ -605,13 +605,13 @@ If there is a security manager, this method first calls the security manager's `
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setTcpNoDelay(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTcpNoDelay
 
 Enable/disable `https://developer.android.com/reference/kotlin/java/net/SocketOptions.html#TCP_NODELAY:kotlin.Int` (disable/enable Nagle's algorithm).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#setTrafficClass(kotlin.Int)(tc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTrafficClass
 
 Sets traffic class or type-of-service octet in the IP header for packets sent from this Socket. As the underlying network implementation may ignore this value applications should consider it a hint.
 
@@ -636,7 +636,7 @@ For Internet Protocol v6 `tc` is the value that would be placed into the sin6_fl
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#shutdownInput()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` shutdownInput
 
 Places the input stream for this socket at "end of stream". Any data sent to the input stream side of the socket is acknowledged and then silently discarded.
 
@@ -644,13 +644,13 @@ If you read from a socket input stream after invoking this method on the socket,
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/net/Socket.html#shutdownOutput()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` shutdownOutput
 
 Disables the output stream for this socket. For a TCP socket, any previously written data will be sent followed by TCP's normal connection termination sequence. If you write to a socket output stream after invoking shutdownOutput() on the socket, the stream will throw an IOException.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<*>!>!` `https://developer.android.com/reference/kotlin/java/net/Socket.html#supportedOptions()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<*>!>!` supportedOptions
 
 Returns a set of the socket options supported by this socket. This method will continue to return the set of options even after the socket has been closed.
 
@@ -816,8 +816,8 @@ Registers an event listener to receive notifications that an SSL handshake has c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#startHandshake()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)`
+- startHandshake
+- removeHandshakeCompletedListener
 
 ### getApplicationProtocol
 
@@ -857,7 +857,7 @@ Returns true if new SSL sessions may be established by this socket.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnableSessionCreation(kotlin.Boolean)`
+- setEnableSessionCreation
 
 ### getEnabledCipherSuites
 
@@ -877,8 +877,8 @@ Even if a suite has been enabled, it might never be used. (For example, the peer
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedCipherSuites()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledCipherSuites(kotlin.Array)`
+- getSupportedCipherSuites
+- setEnabledCipherSuites
 
 ### getEnabledProtocols
 
@@ -896,7 +896,7 @@ Returns the names of the protocol versions which are currently enabled for use o
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledProtocols(kotlin.Array)`
+- setEnabledProtocols
 
 ### getHandshakeApplicationProtocol
 
@@ -908,7 +908,7 @@ open fun getHandshakeApplicationProtocol(): String!
 
 Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress.
 
-Like `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeSession()`, a connection may be in the middle of a handshake. The application protocol may or may not yet be available.
+Like getHandshakeSession, a connection may be in the middle of a handshake. The application protocol may or may not yet be available.
 
 <br />
 
@@ -928,7 +928,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getHandshakeApplicationProtocolSelector(): BiFunction<SSLSocket!, MutableList<String!>!, String!>!
 ```
 
-Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. See `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)` for the function's type parameters.
+Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. See setHandshakeApplicationProtocolSelector for the function's type parameters.
 
 | Return ||
 |---|---|
@@ -952,7 +952,7 @@ TLS protocols may negotiate parameters that are needed when using an instance of
 
 This method provides early access to the `SSLSession` being constructed. Depending on how far the handshake has progressed, some data may not yet be available for use. For example, if a remote server will be sending a Certificate chain, but that chain has yet not been processed, the `getPeerCertificates` method of `SSLSession` will throw a SSLPeerUnverifiedException. Once that chain has been processed, `getPeerCertificates` will return the proper value.
 
-Unlike `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSession()`, this method does not initiate the initial handshake and does not block until handshaking is complete.
+Unlike getSession, this method does not initiate the initial handshake and does not block until handshaking is complete.
 
 | Return ||
 |---|---|
@@ -964,11 +964,11 @@ Unlike `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#g
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/ExtendedSSLSession`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedKeyManager`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/X509ExtendedTrustManager`
+- SSLEngine
+- SSLSession
+- ExtendedSSLSession
+- X509ExtendedKeyManager
+- X509ExtendedTrustManager
 
 ### getNeedClientAuth
 
@@ -986,10 +986,10 @@ Returns true if the socket will *require* client authentication. This option is 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getWantClientAuth()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)`
+- setNeedClientAuth
+- setWantClientAuth
+- getWantClientAuth
+- setUseClientMode
 
 ### getSSLParameters
 
@@ -1043,8 +1043,8 @@ The proper way to use this method is to either check if a specific cipher suite 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledCipherSuites()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setEnabledCipherSuites(kotlin.Array)`
+- getEnabledCipherSuites
+- setEnabledCipherSuites
 
 ### getSupportedProtocols
 
@@ -1076,7 +1076,7 @@ Returns true if the socket is set to use client mode when handshaking.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)`
+- setUseClientMode
 
 ### getWantClientAuth
 
@@ -1094,10 +1094,10 @@ Returns true if the socket will *request* client authentication. This option is 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getNeedClientAuth()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)`
+- setNeedClientAuth
+- getNeedClientAuth
+- setWantClientAuth
+- setUseClientMode
 
 ### removeHandshakeCompletedListener
 
@@ -1119,7 +1119,7 @@ Removes a previously registered handshake completion listener.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)`
+- addHandshakeCompletedListener
 
 ### setEnableSessionCreation
 
@@ -1137,7 +1137,7 @@ Controls whether new SSL sessions may be established by this socket. If session 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnableSessionCreation()`
+- getEnableSessionCreation
 
 ### setEnabledCipherSuites
 
@@ -1153,7 +1153,7 @@ Each cipher suite in the `suites` parameter must have been listed by getSupporte
 
 On Android 10 (API level 29) and higher, when TLS 1.3 is enabled, its supported cipher suites are always enabled and cannot be individually disabled using this method. Attempts to disable TLS 1.3 cipher suites are ignored.
 
-See `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledCipherSuites()` for more information on why a specific ciphersuite may never be used on a connection.
+See getEnabledCipherSuites for more information on why a specific ciphersuite may never be used on a connection.
 
 | Parameters ||
 |---|---|
@@ -1165,8 +1165,8 @@ See `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getE
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedCipherSuites()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledCipherSuites()`
+- getSupportedCipherSuites
+- getEnabledCipherSuites
 
 ### setEnabledProtocols
 
@@ -1192,7 +1192,7 @@ Because of the way the protocol version is negotiated, connections will only be 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledProtocols()`
+- getEnabledProtocols
 
 ### setHandshakeApplicationProtocolSelector
 
@@ -1202,7 +1202,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun setHandshakeApplicationProtocolSelector(selector: BiFunction<SSLSocket!, MutableList<String!>!, String!>!): Unit
 ```
 
-Registers a callback function that selects an application protocol value for a SSL/TLS handshake. The function overrides any values supplied using `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#setApplicationProtocols(kotlin.Array)` and it supports the following type parameters:
+Registers a callback function that selects an application protocol value for a SSL/TLS handshake. The function overrides any values supplied using setApplicationProtocols and it supports the following type parameters:
 
 `SSLSocket`
 : The function's first argument allows the current `SSLSocket` to be inspected, including the handshake session and configuration settings.
@@ -1253,9 +1253,9 @@ A socket's client authentication setting is one of the following:
 - client authentication requested
 - no client authentication desired
 
-Unlike `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)`, if this option is set and the client chooses not to provide authentication information about itself, *the negotiations will stop and the connection will be dropped*.
+Unlike setWantClientAuth, if this option is set and the client chooses not to provide authentication information about itself, *the negotiations will stop and the connection will be dropped*.
 
-Calling this method overrides any previous setting made by this method or `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)`.
+Calling this method overrides any previous setting made by this method or setWantClientAuth.
 
 | Parameters ||
 |---|---|
@@ -1263,10 +1263,10 @@ Calling this method overrides any previous setting made by this method or `https
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getNeedClientAuth()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setWantClientAuth(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getWantClientAuth()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)`
+- getNeedClientAuth
+- setWantClientAuth
+- getWantClientAuth
+- setUseClientMode
 
 ### setSSLParameters
 
@@ -1318,7 +1318,7 @@ Servers normally authenticate themselves, and clients are not required to do so.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getUseClientMode()`
+- getUseClientMode
 
 ### setWantClientAuth
 
@@ -1336,9 +1336,9 @@ A socket's client authentication setting is one of the following:
 - client authentication requested
 - no client authentication desired
 
-Unlike `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)`, if this option is set and the client chooses not to provide authentication information about itself, *the negotiations will continue*.
+Unlike setNeedClientAuth, if this option is set and the client chooses not to provide authentication information about itself, *the negotiations will continue*.
 
-Calling this method overrides any previous setting made by this method or `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)`.
+Calling this method overrides any previous setting made by this method or setNeedClientAuth.
 
 | Parameters ||
 |---|---|
@@ -1346,10 +1346,10 @@ Calling this method overrides any previous setting made by this method or `https
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getWantClientAuth()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setNeedClientAuth(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getNeedClientAuth()`
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#setUseClientMode(kotlin.Boolean)`
+- getWantClientAuth
+- setNeedClientAuth
+- getNeedClientAuth
+- setUseClientMode
 
 ### startHandshake
 
@@ -1369,7 +1369,7 @@ If data has already been sent on the connection, it continues to flow during thi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)`
+- addHandshakeCompletedListener
 
 ### toString
 

@@ -8,11 +8,11 @@ interface ErrorListener
 
 | [javax.xml.transform.ErrorListener](ErrorListener.md) |
 
-To provide customized error handling, implement this interface and use the `setErrorListener` method to register an instance of the implementation with the `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer`. The `Transformer` then reports all errors and warnings through this interface.
+To provide customized error handling, implement this interface and use the `setErrorListener` method to register an instance of the implementation with the Transformer. The `Transformer` then reports all errors and warnings through this interface.
 
 If an application does *not* register its own custom `ErrorListener`, the default `ErrorListener` is used which reports all warnings and errors to `System.err` and does not throw any `Exception`s. Applications are *strongly* encouraged to register and use `ErrorListener`s that insure proper behavior for warnings and errors.
 
-For transformation errors, a `Transformer` must use this interface instead of throwing an `Exception`: it is up to the application to decide whether to throw an `Exception` for different types of errors and warnings. Note however that the `Transformer` is not required to continue with the transformation after a call to `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#fatalError(javax.xml.transform.TransformerException)`.
+For transformation errors, a `Transformer` must use this interface instead of throwing an `Exception`: it is up to the application to decide whether to throw an `Exception` for different types of errors and warnings. Note however that the `Transformer` is not required to continue with the transformation after a call to fatalError.
 
 `Transformer`s may use this mechanism to report XML parsing errors as well as transformation errors.
 
@@ -20,9 +20,9 @@ For transformation errors, a `Transformer` must use this interface instead of th
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#error(javax.xml.transform.TransformerException)(exception: https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException!)` Receive notification of a recoverable error. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#fatalError(javax.xml.transform.TransformerException)(exception: https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException!)` Receive notification of a non-recoverable error. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/ErrorListener#warning(javax.xml.transform.TransformerException)(exception: https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException!)` Receive notification of a warning. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | error Receive notification of a recoverable error. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | fatalError Receive notification of a non-recoverable error. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | warning Receive notification of a warning. |
 | --- | --- |
 
 ## Public methods
@@ -49,7 +49,7 @@ The transformer must continue to try and provide normal transformation after inv
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException`
+- TransformerException
 
 ### fatalError
 
@@ -73,7 +73,7 @@ The `Transformer` must continue to try and provide normal transformation after i
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException`
+- TransformerException
 
 ### warning
 
@@ -85,7 +85,7 @@ abstract fun warning(exception: TransformerException!): Unit
 
 Receive notification of a warning.
 
-`https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer` can use this method to report conditions that are not errors or fatal errors. The default behavior is to take no action.
+Transformer can use this method to report conditions that are not errors or fatal errors. The default behavior is to take no action.
 
 After invoking this method, the Transformer must continue with the transformation. It should still be possible for the application to process the document through to the end.
 
@@ -99,4 +99,4 @@ After invoking this method, the Transformer must continue with the transformatio
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerException`
+- TransformerException

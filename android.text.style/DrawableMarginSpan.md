@@ -32,18 +32,18 @@ Text with a drawable and a padding.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#DrawableMarginSpan(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#` from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. |
-| `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#DrawableMarginSpan(android.graphics.drawable.Drawable,%20kotlin.Int)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, pad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#` from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` and a padding, in pixels. |
+| DrawableMarginSpan Creates a DrawableMarginSpan from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. |
+| DrawableMarginSpan Creates a DrawableMarginSpan from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` and a padding, in pixels. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#chooseHeight(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Paint.FontMetricsInt)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, istartv: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fm: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#)` Classes that implement this should define how the height is being calculated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#drawLeadingMargin(android.graphics.Canvas,%20android.graphics.Paint,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.text.Layout)(c: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#, p: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dir: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, baseline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, layout: https://developer.android.com/reference/kotlin/android/text/Layout.html#)` Renders the leading margin. |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#getDrawable()()` Returns the drawable used. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | chooseHeight Classes that implement this should define how the height is being calculated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | drawLeadingMargin Renders the leading margin. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getDrawable Returns the drawable used. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#getLeadingMargin(kotlin.Boolean)(first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the amount by which to adjust the leading margin. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#getPadding()()` Returns a distance between the drawable and text in pixel. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#toString()()` Returns a string representation of the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeadingMargin Returns the amount by which to adjust the leading margin. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPadding Returns a distance between the drawable and text in pixel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Public constructors
@@ -56,7 +56,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DrawableMarginSpan(drawable: Drawable)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#` from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. The pad width will be 0.
+Creates a DrawableMarginSpan from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`. The pad width will be 0.
 
 | Parameters ||
 |---|---|
@@ -72,7 +72,7 @@ DrawableMarginSpan(
     pad: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/DrawableMarginSpan#` from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` and a padding, in pixels.
+Creates a DrawableMarginSpan from a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` and a padding, in pixels.
 
 | Parameters ||
 |---|---|
@@ -130,7 +130,7 @@ open fun drawLeadingMargin(
 ): Unit
 ```
 
-Renders the leading margin. This is called before the margin has been adjusted by the value returned by `https://developer.android.com/reference/kotlin/android/text/style/LeadingMarginSpan#getLeadingMargin(kotlin.Boolean)`.
+Renders the leading margin. This is called before the margin has been adjusted by the value returned by getLeadingMargin.
 
 | Parameters ||
 |---|---|

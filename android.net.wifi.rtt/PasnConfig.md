@@ -24,7 +24,7 @@ The keys derived during the PASN process are used to protect the LTFs exchanged 
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder` Builder for `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#` |
+| | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder` Builder for PasnConfig |
 
 | Constants ||
 |---|---|
@@ -49,25 +49,25 @@ The keys derived during the PASN process are used to protect the LTFs exchanged 
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getBaseAkms()()` Return base AKMs (Authentication and Key Management). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBaseAkms Return base AKMs (Authentication and Key Management). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getCiphers()()` Return pairwise ciphers. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPasnComebackCookie()()` Get PASN comeback cookie. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()()` Get password used by base AKM. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCiphers Return pairwise ciphers. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getPasnComebackCookie Get PASN comeback cookie. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getPassword Get password used by base AKM. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPmk()()` Get the PMK (pairwise master key). |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getProximityDetectionSeekerDeviceIdentityKey()()` Get the Seeker device identity key. |
-| [WifiSsid](../android.net.wifi/WifiSsid.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getWifiSsid()()` Get Wifi SSID which is used to retrieve saved network profile if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()` is null. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getPmk Get the PMK (pairwise master key). |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getProximityDetectionSeekerDeviceIdentityKey Get the Seeker device identity key. |
+| [WifiSsid](../android.net.wifi/WifiSsid.md)? | getWifiSsid Get Wifi SSID which is used to retrieve saved network profile if getPassword is null. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -254,7 +254,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -324,7 +324,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getPasnComebackCookie(): ByteArray?
 ```
 
-Get PASN comeback cookie. See `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder#setPasnComebackCookie(kotlin.ByteArray)`.
+Get PASN comeback cookie. See setPasnComebackCookie.
 
 | Return ||
 |---|---|
@@ -338,7 +338,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getPassword(): String?
 ```
 
-Get password used by base AKM. If null, password is retrieved from the saved network profile for the PASN authentication. See `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getWifiSsid()` on retrieving saved network profile.
+Get password used by base AKM. If null, password is retrieved from the saved network profile for the PASN authentication. See getWifiSsid on retrieving saved network profile.
 
 ### getPmk
 
@@ -348,7 +348,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getPmk(): ByteArray?
 ```
 
-Get the PMK (pairwise master key). See `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder#setPmk(kotlin.ByteArray)`. see `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder`
+Get the PMK (pairwise master key). See setPmk. see `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder`
 
 | Return ||
 |---|---|
@@ -362,7 +362,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun getProximityDetectionSeekerDeviceIdentityKey(): ByteArray?
 ```
 
-Get the Seeker device identity key. See `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder#setProximityDetectionSeekerDeviceIdentityKey(kotlin.ByteArray)`. see `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder`
+Get the Seeker device identity key. See setProximityDetectionSeekerDeviceIdentityKey. see `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig.Builder`
 
 | Return ||
 |---|---|
@@ -376,7 +376,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getWifiSsid(): WifiSsid?
 ```
 
-Get Wifi SSID which is used to retrieve saved network profile if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()` is null. If Wifi SSID and password are not set and there is no saved profile corresponding to the responder, unauthenticated PASN will be used if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingRequest#getSecurityMode()` allows. See `SECURITY_MODE_*` for more details.
+Get Wifi SSID which is used to retrieve saved network profile if getPassword is null. If Wifi SSID and password are not set and there is no saved profile corresponding to the responder, unauthenticated PASN will be used if getSecurityMode allows. See `SECURITY_MODE_*` for more details.
 
 ### hashCode
 
@@ -391,8 +391,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

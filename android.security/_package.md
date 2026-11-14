@@ -28,6 +28,6 @@
 | [ConfirmationAlreadyPresentingException](ConfirmationAlreadyPresentingException.md) | This exception is thrown when presenting a prompt fails because another prompt is already being presented. |
 | --- | --- |
 | [ConfirmationNotAvailableException](ConfirmationNotAvailableException.md) | This exception is thrown when presenting a prompt fails because the environment lacks facilities for showing confirmations. |
-| [KeyChainException](KeyChainException.md) | Thrown on problems accessing the `https://developer.android.com/reference/kotlin/android/security/KeyChain`. |
+| [KeyChainException](KeyChainException.md) | Thrown on problems accessing the KeyChain. |
 | [KeyStoreException](KeyStoreException.md) | Exception containing information about the failure at the Keystore / KeyMint layer while generating or using a key. |
 | --- | --- |

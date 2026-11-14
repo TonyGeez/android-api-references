@@ -20,14 +20,14 @@ An interpolator where the change starts backward then flings forward and oversho
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/animation/AnticipateOvershootInterpolator#AnticipateOvershootInterpolator()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/view/animation/AnticipateOvershootInterpolator#AnticipateOvershootInterpolator(android.content.Context,%20android.util.AttributeSet)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` <br /> |
-| `https://developer.android.com/reference/kotlin/android/view/animation/AnticipateOvershootInterpolator#AnticipateOvershootInterpolator(kotlin.Float)(tension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
-| `https://developer.android.com/reference/kotlin/android/view/animation/AnticipateOvershootInterpolator#AnticipateOvershootInterpolator(kotlin.Float,%20kotlin.Float)(tension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, extraTension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
+| AnticipateOvershootInterpolator <br /> |
+| AnticipateOvershootInterpolator <br /> |
+| AnticipateOvershootInterpolator <br /> |
+| AnticipateOvershootInterpolator <br /> |
 
 | Public methods ||
 |---|---|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/AnticipateOvershootInterpolator#getInterpolation(kotlin.Float)(t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Maps a value representing the elapsed fraction of an animation to a value that represents the interpolated fraction. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getInterpolation Maps a value representing the elapsed fraction of an animation to a value that represents the interpolated fraction. |
 
 ## Public constructors
 

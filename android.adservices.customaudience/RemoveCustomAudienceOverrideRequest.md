@@ -17,7 +17,7 @@ open class RemoveCustomAudienceOverrideRequest
 >
 > The Rubidium (Rb) Relevance APIs, including those in android.adservices.customaudience, are being deprecated. Relevance APIs have no direct replacement. Developers should stop using them, as calls will be rejected in future Android releases. Please refer to official Privacy Sandbox documentation for deprecation and roadmap details: https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
 
-This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/customaudience/TestCustomAudienceManager#removeCustomAudienceRemoteInfoOverride(android.adservices.customaudience.RemoveCustomAudienceOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` request.
+This POJO represents the removeCustomAudienceRemoteInfoOverride request.
 
 It contains fields `buyer` and `name` which will serve as the identifier for the overrides to be removed.
 
@@ -25,16 +25,16 @@ It contains fields `buyer` and `name` which will serve as the identifier for the
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.Builder` Builder for RemoveCustomAudienceOverrideRequest objects. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#RemoveCustomAudienceOverrideRequest(android.adservices.common.AdTechIdentifier,%20kotlin.String)(buyer: https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| RemoveCustomAudienceOverrideRequest <br /> |
 
 | Public methods ||
 |---|---|
-| open [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#getBuyer()()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#getName()()` <br /> |
+| open [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | getBuyer <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName <br /> |
 
 ## Public constructors
 

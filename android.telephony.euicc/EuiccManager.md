@@ -15,12 +15,12 @@ open class EuiccManager
 
 EuiccManager is the application interface to eUICCs, or eSIMs/embedded SIMs.
 
-You do not instantiate this class directly; instead, you retrieve an instance through `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` and `https://developer.android.com/reference/kotlin/android/content/Context.html#EUICC_SERVICE:kotlin.String`. This instance will be created using the default eUICC.
+You do not instantiate this class directly; instead, you retrieve an instance through getSystemService and `https://developer.android.com/reference/kotlin/android/content/Context.html#EUICC_SERVICE:kotlin.String`. This instance will be created using the default eUICC.
 
-On a device with multiple eUICCs, you may want to create multiple EuiccManagers. To do this you can call `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#createForCardId(kotlin.Int)`.
+On a device with multiple eUICCs, you may want to create multiple EuiccManagers. To do this you can call createForCardId.
 
-See `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isEnabled()` before attempting to use these APIs. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+See isEnabled before attempting to use these APIs. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
@@ -87,21 +87,21 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [EuiccManager](EuiccManager.md) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#createForCardId(kotlin.Int)(cardId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new EuiccManager object pinned to the given card ID. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#deleteSubscription(kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Deletes the given subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#downloadSubscription(android.telephony.euicc.DownloadableSubscription,%20kotlin.Boolean,%20android.app.PendingIntent)(subscription: https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription!, switchAfterDownload: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Attempt to download the given `https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription`. |
+| open [EuiccManager](EuiccManager.md) | createForCardId Create a new EuiccManager object pinned to the given card ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteSubscription Deletes the given subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | downloadSubscription Attempt to download the given DownloadableSubscription. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getAvailableMemoryInBytes()()` Returns the available memory in bytes of the eUICC. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEid()()` Returns the EID identifying the eUICC hardware. |
-| open [EuiccInfo](EuiccInfo.md)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEuiccInfo()()` Returns information about the eUICC chip/device. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAvailableMemoryInBytes Returns the available memory in bytes of the eUICC. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getEid Returns the EID identifying the eUICC hardware. |
+| open [EuiccInfo](EuiccInfo.md)? | getEuiccInfo Returns information about the eUICC chip/device. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isEnabled()()` Whether embedded subscriptions are currently enabled. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isSimPortAvailable(kotlin.Int)(portIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the passing portIndex is available. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#startResolutionActivity(android.app.Activity,%20kotlin.Int,%20android.content.Intent,%20android.app.PendingIntent)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, resultIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Start an activity to resolve a user-resolvable error. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnabled Whether embedded subscriptions are currently enabled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSimPortAvailable Returns whether the passing portIndex is available. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startResolutionActivity Start an activity to resolve a user-resolvable error. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Switch to (enable) the given subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, portIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Switch to (enable) the given subscription. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#updateSubscriptionNickname(kotlin.Int,%20kotlin.String,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nickname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Update the nickname for the given subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | switchToSubscription Switch to (enable) the given subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | switchToSubscription Switch to (enable) the given subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateSubscriptionNickname Update the nickname for the given subscription. |
 | --- | --- |
 
 ## Constants
@@ -118,7 +118,7 @@ Intent action to launch the embedded SIM (eUICC) management settings screen.
 
 This screen shows a list of embedded profiles and offers the user the ability to switch between them, download new profiles, and delete unused profiles.
 
-The activity will immediately finish with `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` if `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isEnabled()` is false. This is ued by non-LPA app to bring up LUI.
+The activity will immediately finish with `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` if isEnabled is false. This is ued by non-LPA app to bring up LUI.
 
  Value: "android.telephony.euicc.action.MANAGE_EMBEDDED_SUBSCRIPTIONS"
 
@@ -198,7 +198,7 @@ Result code for an operation indicating that the user must take some action befo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#startResolutionActivity(android.app.Activity,%20kotlin.Int,%20android.content.Intent,%20android.app.PendingIntent)`
+- startResolutionActivity
 
 ### ERROR_ADDRESS_MISSING
 
@@ -390,7 +390,7 @@ Failure due to target port is not supported.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)`
+- switchToSubscription
 
 ### ERROR_INVALID_RESPONSE
 
@@ -797,7 +797,7 @@ Create a new EuiccManager object pinned to the given card ID.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#` | an EuiccManager that uses the given card ID for all calls. This value cannot be `null`. |
+| EuiccManager | an EuiccManager that uses the given card ID for all calls. This value cannot be `null`. |
 
 ### deleteSubscription
 
@@ -838,7 +838,7 @@ open fun downloadSubscription(
 ): Unit
 ```
 
-Attempt to download the given `https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription`.
+Attempt to download the given DownloadableSubscription.
 
 Requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` or the calling app must be authorized to manage both the currently-active subscription on the current eUICC and the subscription to be downloaded according to the subscription metadata. Without the former, an `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int` will be returned in the callback intent to prompt the user to accept the download.
 
@@ -850,7 +850,7 @@ If device support `https://developer.android.com/reference/kotlin/android/conten
 
 - In SS(Single SIM) mode, if the embedded slot already has an active port, then download and enable the subscription on this port.
 - In SS mode, if the embedded slot is not active, then try to download and enable the subscription on the default port 0 of eUICC.
-- In DSDS mode, find first available port to download and enable the subscription. (see `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isSimPortAvailable(kotlin.Int)`)
+- In DSDS mode, find first available port to download and enable the subscription. (see isSimPortAvailable)
 
 If there is no available port, an `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int` will be returned in the callback intent to prompt the user to disable an already-active subscription. 
 Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_MANAGED_SUBSCRIPTIONS:kotlin.String`
@@ -875,11 +875,11 @@ open fun getAvailableMemoryInBytes(): Long
 ```
 
 Returns the available memory in bytes of the eUICC. 
-Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`
+Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or hasCarrierPrivileges
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | the available memory in bytes. May be `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EUICC_MEMORY_FIELD_UNAVAILABLE:kotlin.Long` if the eUICC is not ready. Check `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isEnabled()` for more information. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | the available memory in bytes. May be `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EUICC_MEMORY_FIELD_UNAVAILABLE:kotlin.Long` if the eUICC is not ready. Check isEnabled for more information. |
 
 | Exceptions ||
 |---|---|
@@ -917,7 +917,7 @@ Returns information about the eUICC chip/device.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccInfo?` | the `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccInfo`. May be null if the eUICC is not ready. |
+| EuiccInfo | the EuiccInfo. May be null if the eUICC is not ready. |
 
 | Exceptions ||
 |---|---|
@@ -1015,19 +1015,19 @@ Requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permissi
 
 On a multi-active SIM device, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or a calling app only if the targeted eUICC does not currently have an active subscription or the calling app is authorized to manage the active subscription on the target eUICC, and the calling app is authorized to manage any active subscription on any SIM. Without it, an `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int` will be returned in the callback intent to prompt the user to accept the download. The caller should also be authorized to manage the subscription to be enabled.
 
-From Android T, devices might support `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC_MEP:kotlin.String`, the subscription can be installed on different port from the eUICC. Calling apps with carrier privilege (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`) over the currently active subscriptions can use `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)` to specify which port to enable the subscription. Otherwise, use this API to enable the subscription on the eUICC and the platform will internally resolve a port based on following rules:
+From Android T, devices might support `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC_MEP:kotlin.String`, the subscription can be installed on different port from the eUICC. Calling apps with carrier privilege (see hasCarrierPrivileges) over the currently active subscriptions can use switchToSubscription to specify which port to enable the subscription. Otherwise, use this API to enable the subscription on the eUICC and the platform will internally resolve a port based on following rules:
 
 - always use the default port 0 is eUICC does not support MEP or the apps are not targeting on Android T.
 - In SS(Single SIM) mode, if the embedded slot already has an active port, then enable the subscription on this port.
 - In SS mode, if the embedded slot is not active, then try to enable the subscription on the default port 0 of eUICC.
-- In DSDS mode, find first available port to enable the subscription. (see `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isSimPortAvailable(kotlin.Int)`)
+- In DSDS mode, find first available port to enable the subscription. (see isSimPortAvailable)
 
 If there is no available port, an `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int` will be returned in the callback intent to prompt the user to disable an already-active subscription. 
 Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 
 | Parameters ||
 |---|---|
-| `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. Calling apps targeting on android T must use `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)` API for disable profile, port index can be found from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getPortIndex()`. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. |
+| `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. Calling apps targeting on android T must use switchToSubscription API for disable profile, port index can be found from getPortIndex. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. |
 | `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
 
 | Exceptions ||
@@ -1048,11 +1048,11 @@ open fun switchToSubscription(
 
 Switch to (enable) the given subscription.
 
-Requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the caller must be having both the carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`) over any currently active subscriptions and the subscription to be enabled according to the subscription metadata. Without the former permissions, an SecurityException is thrown.
+Requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the caller must be having both the carrier privileges (see hasCarrierPrivileges) over any currently active subscriptions and the subscription to be enabled according to the subscription metadata. Without the former permissions, an SecurityException is thrown.
 
 If the caller is passing invalid port index, an `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_ERROR:kotlin.Int` with detailed error code `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#ERROR_INVALID_PORT:kotlin.Int` will be returned. The port index is invalid if one of the following requirements is met:
 
-- index is beyond the range of `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo.html#getPorts()`.
+- index is beyond the range of getPorts.
 - In SS(Single SIM) mode, the embedded slot already has an active port with different port index.
 - In DSDS mode, if the psim slot is active and the embedded slot already has an active empty port with different port index.
 
@@ -1061,7 +1061,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 
 | Parameters ||
 |---|---|
-| `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. From Android T, multiple enabled profiles is supported. Calling apps targeting on android T must use `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)` API for disable profile, port index can be found from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getPortIndex()`. |
+| `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. From Android T, multiple enabled profiles is supported. Calling apps targeting on android T must use switchToSubscription API for disable profile, port index can be found from getPortIndex. |
 | `portIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the port to target for the enabled subscription |
 | `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
 | --- | --- |

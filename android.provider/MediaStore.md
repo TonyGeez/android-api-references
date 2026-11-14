@@ -127,68 +127,68 @@ The media provider provides an indexed collection of common media types, such as
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES:kotlin.String` Flag that requests android. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_LATEST_SELECTION_ONLY:kotlin.String` Flag that indicates if only the latest selection in the photoPicker for the calling app should be returned. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_FAVORITE:kotlin.String` Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` items should be filtered when performing a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` operation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_FAVORITE:kotlin.String` Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` items should be filtered when performing a MediaStore operation. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_PENDING:kotlin.String` Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_PENDING:kotlin.String` items should be filtered when performing a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` operation. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_TRASHED:kotlin.String` Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` items should be filtered when performing a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` operation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_PENDING:kotlin.String` Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_PENDING:kotlin.String` items should be filtered when performing a MediaStore operation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_TRASHED:kotlin.String` Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` items should be filtered when performing a MediaStore operation. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MEDIA_STANDARD_SORT_ORDER:kotlin.String` Flag that requests android. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_RELATED_URI:kotlin.String` Specify a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` that is "related" to the current operation being performed. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#UNKNOWN_STRING:kotlin.String` The string that is used when a media attribute is not known. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String` Synthetic volume name that provides a view of all content across the "external" storage of the device. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL_PRIMARY:kotlin.String` Specific volume name that represents the primary external storage device at `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageDirectory()`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL_PRIMARY:kotlin.String` Specific volume name that represents the primary external storage device at getExternalStorageDirectory. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_INTERNAL:kotlin.String` Synthetic volume name that provides a view of all content across the "internal" storage of the device. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/provider/MediaStore#MediaStore()()` <br /> |
+| MediaStore <br /> |
 
 | Public methods ||
 |---|---|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#canManageMedia(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns whether the calling app is granted `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_MEDIA:kotlin.String` or not. |
-| static [PendingIntent](../android.app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createDeleteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to permanently delete the requested media items. |
-| static [PendingIntent](../android.app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createFavoriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to favorite the requested media items. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canManageMedia Returns whether the calling app is granted `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_MEDIA:kotlin.String` or not. |
+| static [PendingIntent](../android.app/PendingIntent.md) | createDeleteRequest Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to permanently delete the requested media items. |
+| static [PendingIntent](../android.app/PendingIntent.md) | createFavoriteRequest Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to favorite the requested media items. |
 | --- | --- |
-| static [PendingIntent](../android.app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createTrashRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to trash the requested media items. |
-| static [PendingIntent](../android.app/PendingIntent.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createWriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to grant your app write access for the requested media items. |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getDocumentUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, mediaUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri. |
+| static [PendingIntent](../android.app/PendingIntent.md) | createTrashRequest Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to trash the requested media items. |
+| static [PendingIntent](../android.app/PendingIntent.md) | createWriteRequest Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to grant your app write access for the requested media items. |
+| static [Uri](../android.net/Uri.md)? | getDocumentUri Return a DocumentsProvider Uri that is an equivalent to the given MediaStore Uri. |
 | --- | --- |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Return list of all specific volume names that make up `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getGeneration(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, volumeName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the latest generation value for the given volume. |
-| static [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaScannerUri()()` Uri for querying the state of the media scanner. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getExternalVolumeNames Return list of all specific volume names that make up `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getGeneration Return the latest generation value for the given volume. |
+| static [Uri](../android.net/Uri.md)! | getMediaScannerUri Uri for querying the state of the media scanner. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaUri(android.content.Context,%20android.net.Uri)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, documentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri. |
-| static [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getOriginalMediaFormatFileDescriptor(android.content.Context,%20android.os.ParcelFileDescriptor)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, fileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#)` Returns `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#` representing the original media file format for `fileDescriptor`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getPackageForSearchMediaService(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#)` Gets the package name of the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` that client apps use to connect. |
+| static [Uri](../android.net/Uri.md)? | getMediaUri Return a MediaStore Uri that is an equivalent to the given DocumentsProvider Uri. |
+| static [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) | getOriginalMediaFormatFileDescriptor Returns `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#` representing the original media file format for `fileDescriptor`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getPackageForSearchMediaService Gets the package name of the MediaStore that client apps use to connect. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getPickImagesMaxLimit()()` The maximum limit for the number of items that can be selected using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String` when launched in multiple selection mode. |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRecentExternalVolumeNames(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Return list of all recent volume names that have been part of `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. |
-| static [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20android.net.Uri)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Returns an EXIF redacted version of `uri` i. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPickImagesMaxLimit The maximum limit for the number of items that can be selected using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String` when launched in multiple selection mode. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getRecentExternalVolumeNames Return list of all recent volume names that have been part of `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. |
+| static [Uri](../android.net/Uri.md)? | getRedactedUri Returns an EXIF redacted version of `uri` i. |
 | --- | --- |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\> | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20kotlin.collections.MutableList)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>)` Returns a list of EXIF redacted version of `uris` i. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRequireOriginal(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return if the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Return an opaque version string describing the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` state. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\> | getRedactedUri Returns a list of EXIF redacted version of `uris` i. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getRequireOriginal Return if the caller requires the original file contents when calling openFileDescriptor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getVersion Return an opaque version string describing the MediaStore state. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, volumeName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return an opaque version string describing the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` state. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVolumeName(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Return the volume name that the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` references. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if and only if the caller with `authority` is the currently enabled `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getVersion Return an opaque version string describing the MediaStore state. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getVolumeName Return the volume name that the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` references. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCurrentCloudMediaProviderAuthority Returns `true` if and only if the caller with `authority` is the currently enabled CloudMediaProvider. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isCurrentSystemGallery(android.content.ContentResolver,%20kotlin.Int,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns true if the given application is the current system gallery of the device. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if and only if the caller with `authority` is a supported `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#markIsFavoriteStatus(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, areFavorites: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the media isFavorite status if the calling app has wider read permission on media files for given type. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCurrentSystemGallery Returns true if the given application is the current system gallery of the device. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSupportedCloudMediaProviderAuthority Returns `true` if and only if the caller with `authority` is a supported CloudMediaProvider. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | markIsFavoriteStatus Sets the media isFavorite status if the calling app has wider read permission on media files for given type. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#notifyCloudMediaChangedEvent(android.content.ContentResolver,%20kotlin.String,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, currentMediaCollectionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Notifies the OS about a cloud media event requiring a full or incremental media collection sync for the currently enabled cloud provider, `authority`. |
-| static [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
-| static [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyCloudMediaChangedEvent Notifies the OS about a cloud media event requiring a full or incremental media collection sync for the currently enabled cloud provider, `authority`. |
+| static [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | openAssetFileDescriptor Works exactly the same as openAssetFileDescriptor, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
+| static [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | openFileDescriptor Works exactly the same as openFileDescriptor, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
 | --- | --- |
-| static [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openTypedAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
-| static [Cursor](../android.database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#queryDeletedFiles(android.content.ContentResolver,%20android.os.Bundle,%20android.os.CancellationSignal)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, queryArgs: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, signal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Returns a cursor of deleted items matching the given query arguments. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#restoreFileFromTrash(android.content.ContentResolver,%20kotlin.String,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, targetPath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Restores a file or directory from a trashed state. |
+| static [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | openTypedAssetFileDescriptor Works exactly the same as openTypedAssetFileDescriptor, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. |
+| static [Cursor](../android.database/Cursor.md)? | queryDeletedFiles Returns a cursor of deleted items matching the given query arguments. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | restoreFileFromTrash Restores a file or directory from a trashed state. |
 | --- | --- |
-| static [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setIncludePending(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to also include any pending media items from calls such as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`. |
-| static [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setRequireOriginal(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to indicate that the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore#trashFile(android.content.ContentResolver,%20kotlin.String)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#, path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Moves a file or directory to a trashed state. |
+| static [Uri](../android.net/Uri.md) | setIncludePending Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to also include any pending media items from calls such as query. |
+| static [Uri](../android.net/Uri.md) | setRequireOriginal Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to indicate that the caller requires the original file contents when calling openFileDescriptor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | trashFile Moves a file or directory to a trashed state. |
 | --- | --- |
 
 | Properties ||
@@ -232,7 +232,7 @@ static val ACTION_IMAGE_CAPTURE: String
 
 Standard Intent action that can be sent to have the camera application capture an image and return it.
 
-The caller may pass an extra EXTRA_OUTPUT to control where this image will be written. If the EXTRA_OUTPUT is not present, then a small sized image is returned as a Bitmap object in the extra field. This is useful for applications that only need a small image. If the EXTRA_OUTPUT is present, then the full-sized image will be written to the Uri value of EXTRA_OUTPUT. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this uri can also be supplied through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. If using this approach, you still must supply the uri through the EXTRA_OUTPUT field for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+The caller may pass an extra EXTRA_OUTPUT to control where this image will be written. If the EXTRA_OUTPUT is not present, then a small sized image is returned as a Bitmap object in the extra field. This is useful for applications that only need a small image. If the EXTRA_OUTPUT is present, then the full-sized image will be written to the Uri value of EXTRA_OUTPUT. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this uri can also be supplied through setClipData. If using this approach, you still must supply the uri through the EXTRA_OUTPUT field for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
 Regardless of whether or not EXTRA_OUTPUT is present, when an image is captured via this intent, `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_PICTURE:kotlin.String` won't be broadcasted.
 
@@ -253,9 +253,9 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_IMAGE_CAPTURE_SECURE: String
 ```
 
-Intent action that can be sent to have the camera application capture an image and return it when the device is secured (e.g. with a pin, password, pattern, or face unlock). Applications responding to this intent must not expose any personal content like existing photos or videos on the device. The applications should be careful not to share any photo or video with other applications or Internet. The activity should use `https://developer.android.com/reference/kotlin/android/app/Activity.html#setShowWhenLocked(kotlin.Boolean)` to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
+Intent action that can be sent to have the camera application capture an image and return it when the device is secured (e.g. with a pin, password, pattern, or face unlock). Applications responding to this intent must not expose any personal content like existing photos or videos on the device. The applications should be careful not to share any photo or video with other applications or Internet. The activity should use setShowWhenLocked to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
 
-The caller may pass an extra EXTRA_OUTPUT to control where this image will be written. If the EXTRA_OUTPUT is not present, then a small sized image is returned as a Bitmap object in the extra field. This is useful for applications that only need a small image. If the EXTRA_OUTPUT is present, then the full-sized image will be written to the Uri value of EXTRA_OUTPUT. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this uri can also be supplied through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. If using this approach, you still must supply the uri through the EXTRA_OUTPUT field for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+The caller may pass an extra EXTRA_OUTPUT to control where this image will be written. If the EXTRA_OUTPUT is not present, then a small sized image is returned as a Bitmap object in the extra field. This is useful for applications that only need a small image. If the EXTRA_OUTPUT is present, then the full-sized image will be written to the Uri value of EXTRA_OUTPUT. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this uri can also be supplied through setClipData. If using this approach, you still must supply the uri through the EXTRA_OUTPUT field for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
 Regardless of whether or not EXTRA_OUTPUT is present, when an image is captured via this intent, `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_PICTURE:kotlin.String` won't be broadcasted.
 
@@ -277,7 +277,7 @@ static val ACTION_MOTION_PHOTO_CAPTURE: String
 
 Standard Intent action that can be sent to have the camera application capture a [motion photo](https://developer.android.com/media/platform/motion-photo-format) and return it.
 
-The caller must either pass an extra EXTRA_OUTPUT to control where the image will be written, or a uri through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+The caller must either pass an extra EXTRA_OUTPUT to control where the image will be written, or a uri through setClipData. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
 When an image is captured via this intent, `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_PICTURE:kotlin.String` won't be broadcasted.
 
@@ -297,9 +297,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_MOTION_PHOTO_CAPTURE_SECURE: String
 ```
 
-Intent action that can be sent to have the camera application capture a [motion photo](https://developer.android.com/media/platform/motion-photo-format) and return it when the device is secured (e.g. with a pin, password, pattern, or face unlock). Applications responding to this intent must not expose any personal content like existing photos or videos on the device. The applications should be careful not to share any photo or video with other applications or Internet. The activity should use `https://developer.android.com/reference/kotlin/android/app/Activity.html#setShowWhenLocked(kotlin.Boolean)` to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
+Intent action that can be sent to have the camera application capture a [motion photo](https://developer.android.com/media/platform/motion-photo-format) and return it when the device is secured (e.g. with a pin, password, pattern, or face unlock). Applications responding to this intent must not expose any personal content like existing photos or videos on the device. The applications should be careful not to share any photo or video with other applications or Internet. The activity should use setShowWhenLocked to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
 
-The caller must either pass an extra EXTRA_OUTPUT to control where the image will be written, or a uri through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+The caller must either pass an extra EXTRA_OUTPUT to control where the image will be written, or a uri through setClipData. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
 When an image is captured via this intent, `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_PICTURE:kotlin.String` won't be broadcasted.
 
@@ -327,11 +327,11 @@ Activity Action: Allow the user to select images or videos provided by system an
 
 <br />
 
-Callers can optionally specify MIME type (such as `image/*` or `video/*`), resulting in a range of content selection that the caller is interested in. The optional MIME type can be requested with `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)`.
+Callers can optionally specify MIME type (such as `image/*` or `video/*`), resulting in a range of content selection that the caller is interested in. The optional MIME type can be requested with setType.
 
 If the caller needs multiple returned items (or caller wants to allow multiple selection), then it can specify `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_PICK_IMAGES_MAX:kotlin.String` to indicate this.
 
-When the caller requests multiple selection, the value of `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_PICK_IMAGES_MAX:kotlin.String` must be a positive integer greater than 1 and less than or equal to `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getPickImagesMaxLimit()`, otherwise `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` is returned. Use `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_PICK_IMAGES_IN_ORDER:kotlin.String` in multiple selection mode to allow the user to pick images in order.
+When the caller requests multiple selection, the value of `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_PICK_IMAGES_MAX:kotlin.String` must be a positive integer greater than 1 and less than or equal to getPickImagesMaxLimit, otherwise `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` is returned. Use `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_PICK_IMAGES_IN_ORDER:kotlin.String` in multiple selection mode to allow the user to pick images in order.
 
 If the caller needs to specify the `https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities.html#` that should be used while picking video files, use `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_MEDIA_CAPABILITIES:kotlin.String` to indicate this.
 
@@ -339,7 +339,7 @@ When the requested file format does not match the capabilities specified by call
 
 Callers may use `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_LOCAL_ONLY:kotlin.String` to limit content selection to local data.
 
-For system stability, it is preferred to open the URIs obtained from using this action by calling `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)` or `https://developer.android.com/reference/kotlin/android/provider/MediaStore#openTypedAssetFileDescriptor(android.content.ContentResolver,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)` instead of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` open APIs.
+For system stability, it is preferred to open the URIs obtained from using this action by calling openFileDescriptor, openAssetFileDescriptor or openTypedAssetFileDescriptor instead of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` open APIs.
 
 Output: MediaStore content URI(s) of the item(s) that was picked. Unlike other MediaStore URIs, these are referred to as 'picker' URIs and expose a limited set of read-only operations. Specifically, picker URIs can only be opened for read and queried for columns in `https://developer.android.com/reference/kotlin/android/provider/MediaStore.PickerMediaColumns`.
 
@@ -356,14 +356,14 @@ Also in [R Extensions 3](https://developer.android.com/sdkExtensions)
 static val ACTION_PICK_IMAGES_SETTINGS: String
 ```
 
-Activity Action: Launch settings controlling images or videos selection with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`. The settings page allows a user to change the enabled `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` on the device and other media selection configurations.
+Activity Action: Launch settings controlling images or videos selection with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`. The settings page allows a user to change the enabled CloudMediaProvider on the device and other media selection configurations.
 
  Value: "android.provider.action.PICK_IMAGES_SETTINGS"
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,%20kotlin.String)`
+- isCurrentCloudMediaProviderAuthority
 
 ### ACTION_REVIEW
 
@@ -377,7 +377,7 @@ Standard action that can be sent to review the given media file.
 
 The launched application is expected to provide a large-scale view of the given media file, while allowing the user to quickly access other recently captured media files.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of the primary media item to initially display.
+Input: getData is URI of the primary media item to initially display.
 
  Value: "android.provider.action.REVIEW"
 
@@ -394,11 +394,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_REVIEW_SECURE: String
 ```
 
-Standard action that can be sent to review the given media file when the device is secured (e.g. with a pin, password, pattern, or face unlock). The applications should be careful not to share any media with other applications or Internet. The activity should use `https://developer.android.com/reference/kotlin/android/app/Activity.html#setShowWhenLocked(kotlin.Boolean)` to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
+Standard action that can be sent to review the given media file when the device is secured (e.g. with a pin, password, pattern, or face unlock). The applications should be careful not to share any media with other applications or Internet. The activity should use setShowWhenLocked to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
 
 The launched application is expected to provide a large-scale view of the given primary media file, while only allowing the user to quickly access other media from an explicit secondary list.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of the primary media item to initially display. `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()` is the limited list of secondary media items that the user is allowed to review. If `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()` is undefined, then no other media access should be allowed.
+Input: getData is URI of the primary media item to initially display. getClipData is the limited list of secondary media items that the user is allowed to review. If getClipData is undefined, then no other media access should be allowed.
 
  Value: "android.provider.action.REVIEW_SECURE"
 
@@ -421,7 +421,7 @@ The caller may pass in an extra EXTRA_VIDEO_QUALITY to control the video quality
 The caller may pass in an extra EXTRA_OUTPUT to control where the video is written.
 
 - If EXTRA_OUTPUT is not present, the video will be written to the standard location for videos, and the Uri of that location will be returned in the data field of the Uri. `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_VIDEO:kotlin.String` will also be broadcasted when the video is recorded.
-- If EXTRA_OUTPUT is assigned a Uri value, no `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_VIDEO:kotlin.String` will be broadcasted. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this uri can also be supplied through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. If using this approach, you still must supply the uri through the EXTRA_OUTPUT field for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+- If EXTRA_OUTPUT is assigned a Uri value, no `https://developer.android.com/reference/kotlin/android/hardware/Camera.html#ACTION_NEW_VIDEO:kotlin.String` will be broadcasted. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this uri can also be supplied through setClipData. If using this approach, you still must supply the uri through the EXTRA_OUTPUT field for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
 Note: if you app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int` and above and declares as using the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CAMERA:kotlin.String` permission which is not granted, then atempting to use this action will result in a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`.
 
@@ -455,7 +455,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT: String
 ```
 
-/\*\* Specify that the caller wants to receive the original media format without transcoding. **Caution: using this flag can cause app compatibility issues whenever Android adds support for new media formats.** Clients should instead specify their supported media capabilities explicitly in their manifest or with the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_MEDIA_CAPABILITIES:kotlin.String` `open` flag. This option is useful for apps that don't attempt to parse the actual byte contents of media files, such as playback using `https://developer.android.com/reference/kotlin/android/media/MediaPlayer.html#` or for off-device backup. Note that the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_MEDIA_LOCATION:kotlin.String` permission will still be required to avoid sensitive metadata redaction, similar to `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setRequireOriginal(android.net.Uri)`. Note that this flag overrides any explicitly declared `media_capabilities.xml` or `https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities.html#` extras specified in the same `open` request.
+/\*\* Specify that the caller wants to receive the original media format without transcoding. **Caution: using this flag can cause app compatibility issues whenever Android adds support for new media formats.** Clients should instead specify their supported media capabilities explicitly in their manifest or with the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_MEDIA_CAPABILITIES:kotlin.String` `open` flag. This option is useful for apps that don't attempt to parse the actual byte contents of media files, such as playback using `https://developer.android.com/reference/kotlin/android/media/MediaPlayer.html#` or for off-device backup. Note that the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_MEDIA_LOCATION:kotlin.String` permission will still be required to avoid sensitive metadata redaction, similar to setRequireOriginal. Note that this flag overrides any explicitly declared `media_capabilities.xml` or `https://developer.android.com/reference/kotlin/android/media/ApplicationMediaCapabilities.html#` extras specified in the same `open` request.
 
 This option can be added to the `opts` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` in various `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` `open` methods.
 
@@ -463,10 +463,10 @@ This option can be added to the `opts` `https://developer.android.com/reference/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setRequireOriginal(android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getOriginalMediaFormatFileDescriptor(android.content.Context,%20android.os.ParcelFileDescriptor)`
+- openTypedAssetFileDescriptor
+- openTypedAssetFile
+- setRequireOriginal
+- getOriginalMediaFormatFileDescriptor
 
 ### EXTRA_BRIGHTNESS
 
@@ -560,8 +560,8 @@ When used while picking media files, add this option to the intent-extra of `htt
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`
+- openTypedAssetFileDescriptor
+- openTypedAssetFile
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
 
 ### EXTRA_MEDIA_CAPABILITIES_UID
@@ -760,7 +760,7 @@ static val EXTRA_PICK_IMAGES_MAX: String
 
 The name of an optional intent-extra used to allow multiple selection of items and constrain maximum number of items that can be returned by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`, action may still return nothing (0 items) if the user chooses to cancel.
 
-The value of this intent-extra should be a positive integer greater than 1 and less than or equal to `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getPickImagesMaxLimit()`, otherwise `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` is returned.
+The value of this intent-extra should be a positive integer greater than 1 and less than or equal to getPickImagesMaxLimit, otherwise `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` is returned.
 
 If `https://developer.android.com/reference/kotlin/android/provider/MediaStore#EXTRA_PICKER_PRE_SELECTION_URIS:kotlin.String` is also provided, the number of URIs in that list must not exceed this value, otherwise an `IllegalIntentExtraException` will be thrown.
 
@@ -778,7 +778,7 @@ The name of an optional intent-extra used to pass `https://developer.android.com
 
 The `https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerSelectionParams.html#` object allows the calling app to set constraints on the media items that can be selected by the user. Media items that fail to satisfy these constraints will be disabled for selection.
 
-Not passing this EXTRA, means the photo picker will not apply any restrictions on what media items users can select (except for the MIME type specified in the `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)` extra).
+Not passing this EXTRA, means the photo picker will not apply any restrictions on what media items users can select (except for the MIME type specified in the setType extra).
 
 To use this key, calling apps should construct a `https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerSelectionParams.html#` object using its `https://developer.android.com/reference/kotlin/android/widget/photopicker/PhotoPickerSelectionParams.Builder.html#` and pass it as the value. 
 Example: If the calling app wants to allow selection of only those media items that have a maximum size of 10,000 bytes and a minimum resolution of 500 pixels:
@@ -969,7 +969,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE: String
 ```
 
-The name of the Intent action used to launch a camera in still image mode for use when the device is secured (e.g. with a pin, password, pattern, or face unlock). Applications responding to this intent must not expose any personal content like existing photos or videos on the device. The applications should be careful not to share any photo or video with other applications or internet. The activity should use `https://developer.android.com/reference/kotlin/android/app/Activity.html#setShowWhenLocked(kotlin.Boolean)` to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
+The name of the Intent action used to launch a camera in still image mode for use when the device is secured (e.g. with a pin, password, pattern, or face unlock). Applications responding to this intent must not expose any personal content like existing photos or videos on the device. The applications should be careful not to share any photo or video with other applications or internet. The activity should use setShowWhenLocked to display on top of the lock screen while secured. There is no activity stack when this flag is used, so launching more than one activity is strongly discouraged.
 
  Value: "android.media.action.STILL_IMAGE_CAMERA_SECURE"
 
@@ -1326,7 +1326,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_MATCH_FAVORITE: String
 ```
 
-Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` items should be filtered when performing a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` operation.
+Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` items should be filtered when performing a MediaStore operation.
 
 This key can be placed in a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` of extras and passed to android.content.ContentResolver#query, android.content.ContentResolver#update, or android.content.ContentResolver#delete.
 
@@ -1344,7 +1344,7 @@ Value is either `0` or a combination of the following:
 
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_FAVORITE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createFavoriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)`
+- createFavoriteRequest
 
 ### QUERY_ARG_MATCH_PENDING
 
@@ -1354,7 +1354,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_MATCH_PENDING: String
 ```
 
-Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_PENDING:kotlin.String` items should be filtered when performing a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` operation.
+Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_PENDING:kotlin.String` items should be filtered when performing a MediaStore operation.
 
 This key can be placed in a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` of extras and passed to android.content.ContentResolver#query, android.content.ContentResolver#update, or android.content.ContentResolver#delete.
 
@@ -1376,7 +1376,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val QUERY_ARG_MATCH_TRASHED: String
 ```
 
-Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` items should be filtered when performing a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` operation.
+Specify how `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` items should be filtered when performing a MediaStore operation.
 
 This key can be placed in a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` of extras and passed to android.content.ContentResolver#query, android.content.ContentResolver#update, or android.content.ContentResolver#delete.
 
@@ -1394,7 +1394,7 @@ Value is either `0` or a combination of the following:
 
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_TRASHED:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createTrashRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)`
+- createTrashRequest
 
 ### QUERY_ARG_MEDIA_STANDARD_SORT_ORDER
 
@@ -1453,7 +1453,7 @@ Synthetic volume name that provides a view of all content across the "external" 
 
 This synthetic volume provides a merged view of all media across all currently attached external storage devices.
 
-Because this is a synthetic volume, you can't insert new content into this volume. Instead, you can insert content into a specific storage volume obtained from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`.
+Because this is a synthetic volume, you can't insert new content into this volume. Instead, you can insert content into a specific storage volume obtained from getExternalVolumeNames.
 
  Value: "external"
 
@@ -1465,9 +1465,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val VOLUME_EXTERNAL_PRIMARY: String
 ```
 
-Specific volume name that represents the primary external storage device at `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageDirectory()`.
+Specific volume name that represents the primary external storage device at getExternalStorageDirectory.
 
-This volume may not always be available, such as when the user has ejected the device. You can find a list of all specific volume names using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`.
+This volume may not always be available, such as when the user has ejected the device. You can find a list of all specific volume names using getExternalVolumeNames.
 
  Value: "external_primary"
 
@@ -1525,9 +1525,9 @@ To request access, use `https://developer.android.com/reference/kotlin/android/p
 
 - `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_MEDIA:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_REQUEST_MANAGE_MEDIA:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createDeleteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createTrashRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createWriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection)`
+- createDeleteRequest
+- createTrashRequest
+- createWriteRequest
 
 ### createDeleteRequest
 
@@ -1542,15 +1542,15 @@ static fun createDeleteRequest(
 
 Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to permanently delete the requested media items. When the user approves this request, android.content.ContentResolver#delete will be called on these items.
 
-This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()`. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
+This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with getIntentSender. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
 
-The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use `https://developer.android.com/reference/kotlin/android/content/Context.html#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
+The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use checkUriPermission with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
 
 Note: if your app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int` and above, you can send a maximum of 2000 uris in each request. Attempting to send more than 2000 uris will result in a `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is getContentResolver, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using wrap. This value cannot be `null`. |
 | `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android.net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 
 | Return ||
@@ -1571,15 +1571,15 @@ static fun createFavoriteRequest(
 
 Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to favorite the requested media items. When the user approves this request, `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` is set on these items.
 
-This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()`. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
+This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with getIntentSender. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
 
-The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use `https://developer.android.com/reference/kotlin/android/content/Context.html#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
+The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use checkUriPermission with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
 
 Note: if your app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int` and above, you can send a maximum of 2000 uris in each request. Attempting to send more than 2000 uris will result in a `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is getContentResolver, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using wrap. This value cannot be `null`. |
 | `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android.net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 | `value` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String` value to apply. |
 | --- | --- |
@@ -1607,15 +1607,15 @@ static fun createTrashRequest(
 
 Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to trash the requested media items. When the user approves this request, `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` is set on these items.
 
-This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()`. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
+This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with getIntentSender. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
 
-The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use `https://developer.android.com/reference/kotlin/android/content/Context.html#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
+The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use checkUriPermission with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
 
 Note: if your app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int` and above, you can send a maximum of 2000 uris in each request. Attempting to send more than 2000 uris will result in a `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is getContentResolver, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using wrap. This value cannot be `null`. |
 | `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android.net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 | `value` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String` value to apply. |
 | --- | --- |
@@ -1642,11 +1642,11 @@ static fun createWriteRequest(
 
 Create a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that will prompt the user to grant your app write access for the requested media items.
 
-This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getIntentSender()`. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
+This call only generates the request for a prompt; to display the prompt, call android.app.Activity#startIntentSenderForResult with getIntentSender. You can then determine if the user granted your request by testing for `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` in android.app.Activity#onActivityResult. The requested operation will have completely finished before this activity result is delivered.
 
-Permissions granted through this mechanism are tied to the lifecycle of the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that requests them. If you need to retain longer-term access for background actions, you can place items into a `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can then be passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)` or `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder.html#setClipData(android.content.ClipData,%20kotlin.Int)`. Be sure to include any relevant access modes you want to retain, such as `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
+Permissions granted through this mechanism are tied to the lifecycle of the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that requests them. If you need to retain longer-term access for background actions, you can place items into a `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can then be passed to startService or setClipData. Be sure to include any relevant access modes you want to retain, such as `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
 
-The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use `https://developer.android.com/reference/kotlin/android/content/Context.html#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
+The displayed prompt will reflect all the media items you're requesting, including those for which you already hold write access. If you want to determine if you already hold write access before requesting access, use checkUriPermission with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`.
 
 For security and performance reasons this method does not support `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PREFIX_URI_PERMISSION:kotlin.Int`.
 
@@ -1656,7 +1656,7 @@ Note: if your app targets `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#wrap(android.content.ContentProviderClient)`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): Used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is getContentResolver, but if you need more explicit lifecycle controls, you can obtain a `https://developer.android.com/reference/kotlin/android/content/ContentProviderClient.html#` and wrap it using wrap. This value cannot be `null`. |
 | `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android.net/Uri.md)!\>: The set of media items to include in this request. Each item must be hosted by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String` and must reference a specific media item by `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String`. This value cannot be `null`. |
 
 | Return ||
@@ -1674,22 +1674,22 @@ static fun getDocumentUri(
 ): Uri?
 ```
 
-Return a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri.
+Return a DocumentsProvider Uri that is an equivalent to the given MediaStore Uri.
 
-This allows apps with Storage Access Framework permissions to convert between `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` and `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uris that refer to the same underlying item. Note that this method doesn't grant any new permissions; callers must already hold permissions obtained with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT:kotlin.String` or related APIs.
+This allows apps with Storage Access Framework permissions to convert between MediaStore and DocumentsProvider Uris that refer to the same underlying item. Note that this method doesn't grant any new permissions; callers must already hold permissions obtained with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT:kotlin.String` or related APIs.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
-| `mediaUri` | [Uri](../android.net/Uri.md): The `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri to convert. This value cannot be `null`. |
+| `mediaUri` | [Uri](../android.net/Uri.md): The MediaStore Uri to convert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/Uri.html#?` | An equivalent `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri. Returns `null` if no equivalent was found. |
+| `https://developer.android.com/reference/kotlin/android/net/Uri.html#?` | An equivalent DocumentsProvider Uri. Returns `null` if no equivalent was found. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getMediaUri(android.content.Context,%20android.net.Uri)`
+- getMediaUri
 
 ### getExternalVolumeNames
 
@@ -1701,7 +1701,7 @@ static fun getExternalVolumeNames(context: Context): MutableSet<String!>
 
 Return list of all specific volume names that make up `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL:kotlin.String`. This includes a unique volume name for each shared storage device that is currently attached, which typically includes `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL_PRIMARY:kotlin.String`.
 
-Each specific volume name can be passed to APIs like `https://developer.android.com/reference/kotlin/android/provider/MediaStore.Images.Media#getContentUri(kotlin.String)` to interact with media on that storage device.
+Each specific volume name can be passed to APIs like getContentUri to interact with media on that storage device.
 
 | Parameters ||
 |---|---|
@@ -1727,14 +1727,14 @@ Return the latest generation value for the given volume.
 
 Generation numbers are useful for apps that are attempting to quickly identify exactly which media items have been added or changed since a previous point in time. Generation numbers are monotonically increasing over time, and can be safely arithmetically compared.
 
-Detecting media changes using generation numbers is more robust than using `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_ADDED:kotlin.String` or `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_MODIFIED:kotlin.String`, since those values may change in unexpected ways when apps use `https://developer.android.com/reference/kotlin/java/io/File.html#setLastModified(kotlin.Long)` or when the system clock is set incorrectly.
+Detecting media changes using generation numbers is more robust than using `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_ADDED:kotlin.String` or `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_MODIFIED:kotlin.String`, since those values may change in unexpected ways when apps use setLastModified or when the system clock is set incorrectly.
 
-Note that before comparing these detailed generation values, you should first confirm that the overall version hasn't changed by checking `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context,%20kotlin.String)`, since that indicates when a more radical change has occurred. If the overall version changes, you should assume that generation numbers have been reset and perform a full synchronization pass.
+Note that before comparing these detailed generation values, you should first confirm that the overall version hasn't changed by checking getVersion, since that indicates when a more radical change has occurred. If the overall version changes, you should assume that generation numbers have been reset and perform a full synchronization pass.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
-| `volumeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): specific volume to obtain an generation value for. Must be one of the values returned from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`. This value cannot be `null`. |
+| `volumeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): specific volume to obtain an generation value for. Must be one of the values returned from getExternalVolumeNames. This value cannot be `null`. |
 
 **See Also**
 
@@ -1762,22 +1762,22 @@ static fun getMediaUri(
 ): Uri?
 ```
 
-Return a `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri that is an equivalent to the given `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri. This only supports `ExternalStorageProvider` and `MediaDocumentsProvider` Uris.
+Return a MediaStore Uri that is an equivalent to the given DocumentsProvider Uri. This only supports `ExternalStorageProvider` and `MediaDocumentsProvider` Uris.
 
-This allows apps with Storage Access Framework permissions to convert between `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` and `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uris that refer to the same underlying item. Note that this method doesn't grant any new permissions, but it grants the same access to the Media Store Uri as the caller has to the given DocumentsProvider Uri; callers must already hold permissions for documentUri obtained with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT:kotlin.String` or related APIs.
+This allows apps with Storage Access Framework permissions to convert between MediaStore and DocumentsProvider Uris that refer to the same underlying item. Note that this method doesn't grant any new permissions, but it grants the same access to the Media Store Uri as the caller has to the given DocumentsProvider Uri; callers must already hold permissions for documentUri obtained with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_OPEN_DOCUMENT:kotlin.String` or related APIs.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
-| `documentUri` | [Uri](../android.net/Uri.md): The `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider` Uri to convert. This value cannot be `null`. |
+| `documentUri` | [Uri](../android.net/Uri.md): The DocumentsProvider Uri to convert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/Uri.html#?` | An equivalent `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` Uri. Returns `null` if no equivalent was found. |
+| `https://developer.android.com/reference/kotlin/android/net/Uri.html#?` | An equivalent MediaStore Uri. Returns `null` if no equivalent was found. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getDocumentUri(android.content.Context,%20android.net.Uri)`
+- getDocumentUri
 
 ### getOriginalMediaFormatFileDescriptor
 
@@ -1794,7 +1794,7 @@ Returns `https://developer.android.com/reference/kotlin/android/os/ParcelFileDes
 
 Media files may get transcoded based on an application's media capabilities requirements. However, in various cases, when the application needs access to the original media file, or doesn't attempt to parse the actual byte contents of media files, such as playback using `https://developer.android.com/reference/kotlin/android/media/MediaPlayer.html#` or for off-device backup, this method can be useful.
 
-This method is applicable only for media files managed by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#`.
+This method is applicable only for media files managed by MediaStore.
 
 The method returns the original file descriptor with the same permission that the caller has for the input file descriptor.
 
@@ -1824,7 +1824,7 @@ Also in [T Extensions 22](https://developer.android.com/sdkExtensions)
 static fun getPackageForSearchMediaService(resolver: ContentResolver): String
 ```
 
-Gets the package name of the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` that client apps use to connect. If the package name is an empty string, it indicates that search service is not supported or there are no valid implementations of the service.
+Gets the package name of the MediaStore that client apps use to connect. If the package name is an empty string, it indicates that search service is not supported or there are no valid implementations of the service.
 
 | Parameters ||
 |---|---|
@@ -1857,7 +1857,7 @@ Return list of all recent volume names that have been part of `https://developer
 
 These volume names are not currently mounted, but they're likely to reappear in the future, so apps are encouraged to preserve any indexed metadata related to these volumes to optimize user experiences.
 
-Each specific volume name can be passed to APIs like `https://developer.android.com/reference/kotlin/android/provider/MediaStore.Images.Media#getContentUri(kotlin.String)` to interact with media on that storage device.
+Each specific volume name can be passed to APIs like getContentUri to interact with media on that storage device.
 
 | Parameters ||
 |---|---|
@@ -1884,7 +1884,7 @@ A redacted Uri can be used to share a file with another application wherein expo
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from getContentResolver This value cannot be `null`. |
 | `uri` | [Uri](../android.net/Uri.md): the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` Uri to convert. This value cannot be `null`. |
 
 | Return ||
@@ -1897,7 +1897,7 @@ A redacted Uri can be used to share a file with another application wherein expo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20kotlin.collections.MutableList)`
+- getRedactedUri
 
 ### getRedactedUri
 
@@ -1916,7 +1916,7 @@ A redacted Uri can be used to share a file with another application wherein expo
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from getContentResolver This value cannot be `null`. |
 | `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>: the list of `https://developer.android.com/reference/kotlin/android/net/Uri.html#` Uri to convert. This value cannot be `null`. |
 
 | Return ||
@@ -1930,7 +1930,7 @@ A redacted Uri can be used to share a file with another application wherein expo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRedactedUri(android.content.ContentResolver,%20android.net.Uri)`
+- getRedactedUri
 
 ### getRequireOriginal
 
@@ -1940,7 +1940,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static fun getRequireOriginal(uri: Uri): Boolean
 ```
 
-Return if the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`.
+Return if the caller requires the original file contents when calling openFileDescriptor.
 
 | Parameters ||
 |---|---|
@@ -1948,7 +1948,7 @@ Return if the caller requires the original file contents when calling `https://d
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#setRequireOriginal(android.net.Uri)`
+- setRequireOriginal
 
 ### getVersion
 
@@ -1958,13 +1958,13 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static fun getVersion(context: Context): String
 ```
 
-Return an opaque version string describing the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` state.
+Return an opaque version string describing the MediaStore state.
 
-Applications that import data from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` into their own caches can use this to detect that `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` has undergone substantial changes, and that data should be rescanned.
+Applications that import data from MediaStore into their own caches can use this to detect that MediaStore has undergone substantial changes, and that data should be rescanned.
 
-No other assumptions should be made about the meaning of the version. It can return null if external primary volume is not mounted. Apps should check for volume to be present in `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)` before using this API.
+No other assumptions should be made about the meaning of the version. It can return null if external primary volume is not mounted. Apps should check for volume to be present in getExternalVolumeNames before using this API.
 
-This method returns the version for `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL_PRIMARY:kotlin.String`; to obtain a version for a different volume, use `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context,%20kotlin.String)`.
+This method returns the version for `https://developer.android.com/reference/kotlin/android/provider/MediaStore#VOLUME_EXTERNAL_PRIMARY:kotlin.String`; to obtain a version for a different volume, use getVersion.
 
 | Parameters ||
 |---|---|
@@ -1981,16 +1981,16 @@ static fun getVersion(
 ): String
 ```
 
-Return an opaque version string describing the `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` state.
+Return an opaque version string describing the MediaStore state.
 
-Applications that import data from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` into their own caches can use this to detect that `https://developer.android.com/reference/kotlin/android/provider/MediaStore#` has undergone substantial changes, and that data should be rescanned.
+Applications that import data from MediaStore into their own caches can use this to detect that MediaStore has undergone substantial changes, and that data should be rescanned.
 
-No other assumptions should be made about the meaning of the version. It can return null if requested volume is not mounted. Apps should check for volume to be present in `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)` before using this API.
+No other assumptions should be made about the meaning of the version. It can return null if requested volume is not mounted. Apps should check for volume to be present in getExternalVolumeNames before using this API.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
-| `volumeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): specific volume to obtain an opaque version string for. Must be one of the values returned from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`. This value cannot be `null`. |
+| `volumeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): specific volume to obtain an opaque version string for. Must be one of the values returned from getExternalVolumeNames. This value cannot be `null`. |
 
 ### getVolumeName
 
@@ -2022,7 +2022,7 @@ static fun isCurrentCloudMediaProviderAuthority(
 ): Boolean
 ```
 
-Returns `true` if and only if the caller with `authority` is the currently enabled `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. More specifically, `false` is also returned if the calling uid doesn't match the uid of the `authority`.
+Returns `true` if and only if the caller with `authority` is the currently enabled CloudMediaProvider. More specifically, `false` is also returned if the calling uid doesn't match the uid of the `authority`.
 
 | Parameters ||
 |---|---|
@@ -2031,8 +2031,8 @@ Returns `true` if and only if the caller with `authority` is the currently enabl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,%20kotlin.String)`
+- CloudMediaProvider
+- isSupportedCloudMediaProviderAuthority
 
 ### isCurrentSystemGallery
 
@@ -2052,7 +2052,7 @@ The system gallery is one app chosen by the OEM that has read \& write access to
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()`. This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is getContentResolver. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid to be checked if it is the current system gallery. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name to be checked if it is the current system gallery. This value cannot be `null`. |
 | --- | --- |
@@ -2069,7 +2069,7 @@ static fun isSupportedCloudMediaProviderAuthority(
 ): Boolean
 ```
 
-Returns `true` if and only if the caller with `authority` is a supported `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. More specifically, `false` is also returned if the calling uid doesn't match the uid of the `authority`.
+Returns `true` if and only if the caller with `authority` is a supported CloudMediaProvider. More specifically, `false` is also returned if the calling uid doesn't match the uid of the `authority`.
 
 | Parameters ||
 |---|---|
@@ -2078,8 +2078,8 @@ Returns `true` if and only if the caller with `authority` is a supported `https:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,%20kotlin.String)`
+- CloudMediaProvider
+- isCurrentCloudMediaProviderAuthority
 
 ### markIsFavoriteStatus
 
@@ -2116,7 +2116,7 @@ static fun notifyCloudMediaChangedEvent(
 ): Unit
 ```
 
-Notifies the OS about a cloud media event requiring a full or incremental media collection sync for the currently enabled cloud provider, `authority`. The OS will schedule the sync in the background and will attempt to batch frequent notifications into a single sync event. If the caller is not the currently enabled cloud provider as returned by `https://developer.android.com/reference/kotlin/android/provider/MediaStore#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,%20kotlin.String)`, the request will be unsuccessful.
+Notifies the OS about a cloud media event requiring a full or incremental media collection sync for the currently enabled cloud provider, `authority`. The OS will schedule the sync in the background and will attempt to batch frequent notifications into a single sync event. If the caller is not the currently enabled cloud provider as returned by isCurrentCloudMediaProviderAuthority, the request will be unsuccessful.
 
 | Parameters ||
 |---|---|
@@ -2143,13 +2143,13 @@ static fun openAssetFileDescriptor(
 ): AssetFileDescriptor?
 ```
 
-Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`.
+Works exactly the same as openAssetFileDescriptor, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`.
 
-This API is preferred over `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)` when opening media Uri for ensuring system stability especially when opening URIs returned as a result of using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
+This API is preferred over openAssetFileDescriptor when opening media Uri for ensuring system stability especially when opening URIs returned as a result of using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from getContentResolver This value cannot be `null`. |
 | `uri` | [Uri](../android.net/Uri.md): The desired URI to open. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
 | --- | --- |
@@ -2178,13 +2178,13 @@ static fun openFileDescriptor(
 ): ParcelFileDescriptor?
 ```
 
-Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`.
+Works exactly the same as openFileDescriptor, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`.
 
-This API is preferred over `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.CancellationSignal)` when opening media Uri for ensuring system stability especially when opening URIs returned as a result of using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
+This API is preferred over openFileDescriptor when opening media Uri for ensuring system stability especially when opening URIs returned as a result of using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from getContentResolver This value cannot be `null`. |
 | `uri` | [Uri](../android.net/Uri.md): The desired URI to open. This value cannot be `null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be `null`. |
 | --- | --- |
@@ -2214,13 +2214,13 @@ static fun openTypedAssetFileDescriptor(
 ): AssetFileDescriptor?
 ```
 
-Works exactly the same as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)`, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`.
+Works exactly the same as openTypedAssetFileDescriptor, but only works for `https://developer.android.com/reference/kotlin/android/net/Uri.html#` whose scheme is `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#SCHEME_CONTENT:kotlin.String` and its authority is `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`.
 
-This API is preferred over `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.os.CancellationSignal)` when opening media Uri for ensuring system stability especially when opening URIs returned as a result of using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
+This API is preferred over openTypedAssetFileDescriptor when opening media Uri for ensuring system stability especially when opening URIs returned as a result of using `https://developer.android.com/reference/kotlin/android/provider/MediaStore#ACTION_PICK_IMAGES:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from `https://developer.android.com/reference/kotlin/android/content/Context.html#getContentResolver()` This value cannot be `null`. |
+| `resolver` | [ContentResolver](../android.content/ContentResolver.md): The `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` used to connect with `https://developer.android.com/reference/kotlin/android/provider/MediaStore#AUTHORITY:kotlin.String`. Typically this value is gotten from getContentResolver This value cannot be `null`. |
 | `uri` | [Uri](../android.net/Uri.md): The desired URI to open. This value cannot be `null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The desired MIME type of the returned data. This can be a pattern such as \*/\*, which will allow the content provider to select a type, though there is no way for you to determine what type it is returning. This value cannot be `null`. |
 | --- | --- |
@@ -2311,7 +2311,7 @@ Apps using this API must declare the `https://developer.android.com/reference/ko
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#trashFile(android.content.ContentResolver,%20kotlin.String)`
+- trashFile
 
 ### setIncludePending
 
@@ -2324,7 +2324,7 @@ static fun setIncludePending(uri: Uri): Uri
 
 **Deprecated:** *consider migrating to `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_PENDING:kotlin.String` which is more expressive.*
 
-Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to also include any pending media items from calls such as `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`. By default no pending items are returned.
+Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to also include any pending media items from calls such as query. By default no pending items are returned.
 
 | Parameters ||
 |---|---|
@@ -2346,7 +2346,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static fun setRequireOriginal(uri: Uri): Uri
 ```
 
-Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to indicate that the caller requires the original file contents when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`.
+Update the given `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to indicate that the caller requires the original file contents when calling openFileDescriptor.
 
 This can be useful when the caller wants to ensure they're backing up the exact bytes of the underlying media, without any Exif redaction being performed.
 
@@ -2362,7 +2362,7 @@ If the original file contents cannot be provided, a `https://developer.android.c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getRequireOriginal(android.net.Uri)`
+- getRequireOriginal
 
 ### trashFile
 
@@ -2400,7 +2400,7 @@ Apps using this API must declare the `https://developer.android.com/reference/ko
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#restoreFileFromTrash(android.content.ContentResolver,%20kotlin.String,%20kotlin.String)`
+- restoreFileFromTrash
 
 ## Properties
 

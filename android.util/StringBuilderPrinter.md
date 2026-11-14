@@ -13,17 +13,17 @@ open class StringBuilderPrinter : Printer
 | --- | --- |
 | ↳ | [android.util.StringBuilderPrinter](StringBuilderPrinter.md) |
 
-Implementation of a `https://developer.android.com/reference/kotlin/android/util/Printer` that sends its output to a `https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#`.
+Implementation of a Printer that sends its output to a `https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#`.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/StringBuilderPrinter#StringBuilderPrinter(java.lang.StringBuilder)(builder: https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#!)` Create a new Printer that sends to a StringBuilder object. |
+| StringBuilderPrinter Create a new Printer that sends to a StringBuilder object. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/StringBuilderPrinter#println(kotlin.String)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Write a line of text to the output. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | println Write a line of text to the output. |
 
 ## Public constructors
 

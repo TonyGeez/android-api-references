@@ -22,7 +22,7 @@ Known Direct Subclasses [Base64DataException](../android.util/Base64DataExceptio
 [FileLockInterruptionException](../java.nio.channels/FileLockInterruptionException.md) Checked exception received by a thread when another thread interrupts it while it is waiting to acquire a file lock.
 [FileNotFoundException](FileNotFoundException.md) Signals that an attempt to open the file denoted by a specified pathname has failed.
 [FileSystemException](../java.nio.file/FileSystemException.md) Thrown when a file system operation fails on one or two files.
-[HttpException](../android.net.http/HttpException.md) Base exception passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)`.
+[HttpException](../android.net.http/HttpException.md) Base exception passed to onFailed.
 [HttpRetryException](../java.net/HttpRetryException.md) Thrown to indicate that a HTTP request needs to be retried but cannot be retried automatically, due to streaming mode being enabled.
 [IkeTimeoutException](../android.net.ipsec.ike.exceptions/IkeTimeoutException.md) This exception is thrown when there is an IKE retransmission timeout.
 [ImageDecoder.DecodeException](../android/graphics/ImageDecoder.DecodeException.md) Information about an interrupted decode.
@@ -32,7 +32,7 @@ Known Direct Subclasses [Base64DataException](../android.util/Base64DataExceptio
 [MalformedJsonException](../android.util/MalformedJsonException.md) Thrown when a reader encounters malformed JSON.
 [MalformedURLException](../java.net/MalformedURLException.md) Thrown to indicate that a malformed URL has occurred.
 [MediaParser.ParsingException](../android/media/MediaParser.ParsingException.md) Thrown when an error occurs while parsing a media stream.
-[MediaParser.UnrecognizedInputFormatException](../android/media/MediaParser.UnrecognizedInputFormatException.md) Thrown if all parser implementations provided to `https://developer.android.com/reference/kotlin/android/media/MediaParser.html#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)` failed to sniff the input content.
+[MediaParser.UnrecognizedInputFormatException](../android/media/MediaParser.UnrecognizedInputFormatException.md) Thrown if all parser implementations provided to create failed to sniff the input content.
 [ObjectStreamException](ObjectStreamException.md) Superclass of all exceptions specific to Object Stream classes.
 [ParcelFileDescriptor.FileDescriptorDetachedException](../android/os/ParcelFileDescriptor.FileDescriptorDetachedException.md) Exception that indicates that the file descriptor was detached.
 [ProtocolException](../java.net/ProtocolException.md) Thrown to indicate that there is an error in the underlying protocol, such as a TCP error.
@@ -52,7 +52,7 @@ Known Indirect Subclasses [AccessDeniedException](../java.nio.file/AccessDeniedE
 [AsynchronousCloseException](../java.nio.channels/AsynchronousCloseException.md) Checked exception received by a thread when another thread closes the channel or the part of the channel upon which it is blocked in an I/O operation.
 [AtomicMoveNotSupportedException](../java.nio.file/AtomicMoveNotSupportedException.md) Checked exception thrown when a file cannot be moved as an atomic file system operation.
 [BindException](../java.net/BindException.md) Signals that an error occurred while attempting to bind a socket to a local address and port.
-[CallbackException](../android.net.http/CallbackException.md) Exception passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` when `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#` or `https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider.html#` method throws an exception.
+[CallbackException](../android.net.http/CallbackException.md) Exception passed to onFailed when `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#` or `https://developer.android.com/reference/kotlin/android/net/http/UploadDataProvider.html#` method throws an exception.
 [ClosedByInterruptException](../java.nio.channels/ClosedByInterruptException.md) Checked exception received by a thread when another thread interrupts it while it is blocked in an I/O operation upon a channel.
 [ConnectException](../java.net/ConnectException.md) Signals that an error occurred while attempting to connect a socket to a remote address and port.
 [ConnectTimeoutException](../org.apache.http.conn/ConnectTimeoutException.md) A timeout while connecting to an HTTP server or waiting for an available connection from an HttpConnectionManager.
@@ -65,7 +65,7 @@ Known Indirect Subclasses [AccessDeniedException](../java.nio.file/AccessDeniedE
 [InvalidObjectException](InvalidObjectException.md) Indicates that one or more deserialized objects failed validation tests.
 [JarException](../java.util.jar/JarException.md) Signals that an error of some sort has occurred while reading from or writing to a JAR file.
 [MalformedInputException](../java.nio.charset/MalformedInputException.md) Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence.
-[NetworkException](../android.net.http/NetworkException.md) Exception passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` when the HTTP stack fails to process a network request.
+[NetworkException](../android.net.http/NetworkException.md) Exception passed to onFailed when the HTTP stack fails to process a network request.
 [NoRouteToHostException](../java.net/NoRouteToHostException.md) Signals that an error occurred while attempting to connect a socket to a remote address and port.
 [NoSuchFileException](../java.nio.file/NoSuchFileException.md) Checked exception thrown when an attempt is made to access a file that does not exist.
 [NotActiveException](NotActiveException.md) Thrown when serialization or deserialization is not active.
@@ -90,10 +90,10 @@ Signals that an I/O exception of some sort has occurred. This class is the gener
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/IOException#IOException()()` Constructs an `IOException` with `null` as its error detail message. |
-| `https://developer.android.com/reference/kotlin/java/io/IOException#IOException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs an `IOException` with the specified detail message. |
-| `https://developer.android.com/reference/kotlin/java/io/IOException#IOException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs an `IOException` with the specified detail message and cause. |
-| `https://developer.android.com/reference/kotlin/java/io/IOException#IOException(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs an `IOException` with the specified cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
+| IOException Constructs an `IOException` with `null` as its error detail message. |
+| IOException Constructs an `IOException` with the specified detail message. |
+| IOException Constructs an `IOException` with the specified detail message and cause. |
+| IOException Constructs an `IOException` with the specified cause and a detail message of `(cause==null ? null : cause.toString())` (which typically contains the class and detail message of `cause`). |
 
 ## Public constructors
 
@@ -119,7 +119,7 @@ Constructs an `IOException` with the specified detail message.
 
 | Parameters ||
 |---|---|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The detail message (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage()` method) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The detail message (which is saved for later retrieval by the getMessage method) |
 
 ### IOException
 
@@ -137,8 +137,8 @@ Note that the detail message associated with `cause` is *not* automatically inco
 
 | Parameters ||
 |---|---|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The detail message (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getMessage()` method) |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: The cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The detail message (which is saved for later retrieval by the getMessage method) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: The cause (which is saved for later retrieval by the getCause method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### IOException
 
@@ -152,4 +152,4 @@ Constructs an `IOException` with the specified cause and a detail message of `(c
 
 | Parameters ||
 |---|---|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: The cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: The cause (which is saved for later retrieval by the getCause method). (A null value is permitted, and indicates that the cause is nonexistent or unknown.) |

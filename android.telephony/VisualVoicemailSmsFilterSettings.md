@@ -17,7 +17,7 @@ Class to represent various settings for the visual voicemail SMS filter. When th
 
 \[clientPrefix\]:\[prefix\]:(\[key\]=\[value\];)\*
 
-will be regarded as a visual voicemail SMS, and removed before reaching the SMS provider. The `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService` in the current default dialer will be bound and `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onSmsReceived(android.telephony.VisualVoicemailService.VisualVoicemailTask,%20android.telephony.VisualVoicemailSms)` will called with the information extracted from the SMS.
+will be regarded as a visual voicemail SMS, and removed before reaching the SMS provider. The VisualVoicemailService in the current default dialer will be bound and onSmsReceived will called with the information extracted from the SMS.
 
 Use `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings.Builder` to construct this class.
 
@@ -25,7 +25,7 @@ Use `https://developer.android.com/reference/kotlin/android/telephony/VisualVoic
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings.Builder` Builder class for VisualVoicemailSmsFilterSettings objects. |
 
 | Constants ||
 |---|---|
@@ -34,13 +34,13 @@ Use `https://developer.android.com/reference/kotlin/android/telephony/VisualVoic
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -87,7 +87,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

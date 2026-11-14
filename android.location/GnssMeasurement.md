@@ -16,13 +16,13 @@ A class representing a GNSS satellite measurement, containing raw and computed i
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_CYCLE_SLIP:kotlin.Int` The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has a cycle slip detected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_CYCLE_SLIP:kotlin.Int` The state of the getAccumulatedDeltaRangeMeters has a cycle slip detected. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_REPORTED:kotlin.Int` Reports whether the flag `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_RESOLVED:kotlin.Int` has been reported by the GNSS hardware. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_RESOLVED:kotlin.Int` Reports whether the value `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has resolved the half cycle ambiguity. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_RESOLVED:kotlin.Int` Reports whether the value getAccumulatedDeltaRangeMeters has resolved the half cycle ambiguity. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_RESET:kotlin.Int` The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has detected a reset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_UNKNOWN:kotlin.Int` The state of the value `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` is invalid or unknown. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_VALID:kotlin.Int` The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` is valid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_RESET:kotlin.Int` The state of the getAccumulatedDeltaRangeMeters has detected a reset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_UNKNOWN:kotlin.Int` The state of the value getAccumulatedDeltaRangeMeters is invalid or unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_VALID:kotlin.Int` The state of the getAccumulatedDeltaRangeMeters is valid. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_A:kotlin.String` Code type for: GALILEO E1A, GALILEO E6A, NavIC L5A SPS, NavIC SA SPS, GLONASS G1a L1OCd, GLONASS G2a L2CSI. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CODE_TYPE_B:kotlin.String` Code type for: GALILEO E1B, GALILEO E6B, NavIC L5B RS (D), NavIC SB RS (D), GLONASS G1a L1OCp, GLONASS G2a L2OCp, QZSS L1Sb. |
@@ -77,63 +77,63 @@ A class representing a GNSS satellite measurement, containing raw and computed i
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()()` Gets the accumulated delta range since the last channel reset, in meters. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()()` Gets 'Accumulated Delta Range' state. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getAccumulatedDeltaRangeMeters Gets the accumulated delta range since the last channel reset, in meters. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAccumulatedDeltaRangeState Gets 'Accumulated Delta Range' state. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()()` Gets the accumulated delta range's uncertainty (1-Sigma) in meters. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAutomaticGainControlLevelDb()()` Gets the Automatic Gain Control level in dB. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getBasebandCn0DbHz()()` Gets the baseband carrier-to-noise density in dB-Hz. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getAccumulatedDeltaRangeUncertaintyMeters Gets the accumulated delta range's uncertainty (1-Sigma) in meters. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getAutomaticGainControlLevelDb Gets the Automatic Gain Control level in dB. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getBasebandCn0DbHz Gets the baseband carrier-to-noise density in dB-Hz. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierCycles()()` The number of full carrier cycles between the satellite and the receiver. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()()` Gets the carrier frequency of the tracked signal. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhase()()` Gets the RF phase detected by the receiver. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getCarrierCycles The number of full carrier cycles between the satellite and the receiver. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getCarrierFrequencyHz Gets the carrier frequency of the tracked signal. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getCarrierPhase Gets the RF phase detected by the receiver. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhaseUncertainty()()` Gets the carrier-phase's uncertainty (1-Sigma). |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCn0DbHz()()` Gets the Carrier-to-noise density in dB-Hz. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()()` Gets the GNSS measurement's code type. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getCarrierPhaseUncertainty Gets the carrier-phase's uncertainty (1-Sigma). |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getCn0DbHz Gets the Carrier-to-noise density in dB-Hz. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getCodeType Gets the GNSS measurement's code type. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getConstellationType()()` Gets the constellation type. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasNanos()()` Gets the GNSS measurement's inter-signal bias in nanoseconds with sub-nanosecond accuracy. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasUncertaintyNanos()()` Gets the GNSS measurement's inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getConstellationType Gets the constellation type. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getFullInterSignalBiasNanos Gets the GNSS measurement's inter-signal bias in nanoseconds with sub-nanosecond accuracy. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getFullInterSignalBiasUncertaintyNanos Gets the GNSS measurement's inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getMultipathIndicator()()` Gets a value indicating the 'multipath' state of the event. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getPseudorangeRateMetersPerSecond()()` Gets the Pseudorange rate at the timestamp in m/s. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getPseudorangeRateUncertaintyMetersPerSecond()()` Gets the pseudorange's rate uncertainty (1-Sigma) in m/s. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMultipathIndicator Gets a value indicating the 'multipath' state of the event. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getPseudorangeRateMetersPerSecond Gets the Pseudorange rate at the timestamp in m/s. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getPseudorangeRateUncertaintyMetersPerSecond Gets the pseudorange's rate uncertainty (1-Sigma) in m/s. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getReceivedSvTimeNanos()()` Gets the received GNSS satellite time, at the measurement time, in nanoseconds. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getReceivedSvTimeUncertaintyNanos()()` Gets the error estimate (1-sigma) for the received GNSS time, in nanoseconds. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasNanos()()` Gets the GNSS measurement's satellite inter-signal bias in nanoseconds with sub-nanosecond accuracy. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getReceivedSvTimeNanos Gets the received GNSS satellite time, at the measurement time, in nanoseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getReceivedSvTimeUncertaintyNanos Gets the error estimate (1-sigma) for the received GNSS time, in nanoseconds. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getSatelliteInterSignalBiasNanos Gets the GNSS measurement's satellite inter-signal bias in nanoseconds with sub-nanosecond accuracy. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasUncertaintyNanos()()` Gets the GNSS measurement's satellite inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSnrInDb()()` Gets the (post-correlation \& integration) Signal-to-Noise ratio (SNR) in dB. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getState()()` Gets per-satellite-signal sync state. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getSatelliteInterSignalBiasUncertaintyNanos Gets the GNSS measurement's satellite inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getSnrInDb Gets the (post-correlation \& integration) Signal-to-Noise ratio (SNR) in dB. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getState Gets per-satellite-signal sync state. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSvid()()` Gets the satellite ID. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getTimeOffsetNanos()()` Gets the time offset at which the measurement was taken in nanoseconds. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasAutomaticGainControlLevelDb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAutomaticGainControlLevelDb()` is available, `false` otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSvid Gets the satellite ID. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getTimeOffsetNanos Gets the time offset at which the measurement was taken in nanoseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasAutomaticGainControlLevelDb Returns `true` if getAutomaticGainControlLevelDb is available, `false` otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasBasebandCn0DbHz()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getBasebandCn0DbHz()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierCycles()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierCycles()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierFrequencyHz()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()` is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasBasebandCn0DbHz Returns `true` if getBasebandCn0DbHz is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCarrierCycles Returns `true` if getCarrierCycles is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCarrierFrequencyHz Returns `true` if getCarrierFrequencyHz is available, `false` otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierPhase()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhase()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierPhaseUncertainty()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhaseUncertainty()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCodeType()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()` is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCarrierPhase Returns `true` if getCarrierPhase is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCarrierPhaseUncertainty Returns `true` if getCarrierPhaseUncertainty is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCodeType Returns `true` if getCodeType is available, `false` otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasFullInterSignalBiasNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasNanos()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasFullInterSignalBiasUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasUncertaintyNanos()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSatelliteInterSignalBiasNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasNanos()` is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasFullInterSignalBiasNanos Returns `true` if getFullInterSignalBiasNanos is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasFullInterSignalBiasUncertaintyNanos Returns `true` if getFullInterSignalBiasUncertaintyNanos is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSatelliteInterSignalBiasNanos Returns `true` if getSatelliteInterSignalBiasNanos is available, `false` otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSatelliteInterSignalBiasUncertaintyNanos()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasUncertaintyNanos()` is available, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSnrInDb()()` Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSnrInDb()` is available, `false` otherwise. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSatelliteInterSignalBiasUncertaintyNanos Returns `true` if getSatelliteInterSignalBiasUncertaintyNanos is available, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSnrInDb Returns `true` if getSnrInDb is available, `false` otherwise. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -149,7 +149,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ADR_STATE_CYCLE_SLIP: Int
 ```
 
-The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has a cycle slip detected.
+The state of the getAccumulatedDeltaRangeMeters has a cycle slip detected.
 
  Value: 4
 
@@ -163,9 +163,9 @@ static val ADR_STATE_HALF_CYCLE_REPORTED: Int
 
 Reports whether the flag `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#ADR_STATE_HALF_CYCLE_RESOLVED:kotlin.Int` has been reported by the GNSS hardware.
 
-When this bit is set, the value of `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()` can be low (centimeter level) whether or not the half cycle ambiguity is resolved.
+When this bit is set, the value of getAccumulatedDeltaRangeUncertaintyMeters can be low (centimeter level) whether or not the half cycle ambiguity is resolved.
 
-When this bit is unset, the value of `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()` is larger, to cover the potential error due to half cycle ambiguity being unresolved.
+When this bit is unset, the value of getAccumulatedDeltaRangeUncertaintyMeters is larger, to cover the potential error due to half cycle ambiguity being unresolved.
 
  Value: 16
 
@@ -177,11 +177,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val ADR_STATE_HALF_CYCLE_RESOLVED: Int
 ```
 
-Reports whether the value `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has resolved the half cycle ambiguity.
+Reports whether the value getAccumulatedDeltaRangeMeters has resolved the half cycle ambiguity.
 
-When this bit is set, the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` corresponds to the carrier phase measurement plus an accumulated integer number of carrier full cycles.
+When this bit is set, the getAccumulatedDeltaRangeMeters corresponds to the carrier phase measurement plus an accumulated integer number of carrier full cycles.
 
-When this bit is unset, the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` corresponds to the carrier phase measurement plus an accumulated integer number of carrier half cycles.
+When this bit is unset, the getAccumulatedDeltaRangeMeters corresponds to the carrier phase measurement plus an accumulated integer number of carrier half cycles.
 
 For signals that have databits, the carrier phase tracking loops typically use a costas loop discriminator. This type of tracking loop introduces a half-cycle ambiguity that is resolved by searching through the received data for known patterns of databits (e.g. GPS uses the TLM word) which then determines the polarity of the incoming data and resolves the half-cycle ambiguity.
 
@@ -200,7 +200,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ADR_STATE_RESET: Int
 ```
 
-The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` has detected a reset.
+The state of the getAccumulatedDeltaRangeMeters has detected a reset.
 
  Value: 2
 
@@ -212,7 +212,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ADR_STATE_UNKNOWN: Int
 ```
 
-The state of the value `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` is invalid or unknown.
+The state of the value getAccumulatedDeltaRangeMeters is invalid or unknown.
 
  Value: 0
 
@@ -224,7 +224,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ADR_STATE_VALID: Int
 ```
 
-The state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` is valid.
+The state of the getAccumulatedDeltaRangeMeters is valid.
 
  Value: 1
 
@@ -694,7 +694,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -710,11 +710,11 @@ fun getAccumulatedDeltaRangeMeters(): Double
 
 Gets the accumulated delta range since the last channel reset, in meters.
 
-The error estimate for this value is `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()`.
+The error estimate for this value is getAccumulatedDeltaRangeUncertaintyMeters.
 
-The availability of the value is represented by `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()`.
+The availability of the value is represented by getAccumulatedDeltaRangeState.
 
-A positive value indicates that the SV is moving away from the receiver. The sign of `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` and its relation to the sign of `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhase()` is given by the equation:
+A positive value indicates that the SV is moving away from the receiver. The sign of getAccumulatedDeltaRangeMeters and its relation to the sign of getCarrierPhase is given by the equation:
 
 ```kotlin
 accumulated delta range = -k * carrier phase    (where k is a constant)
@@ -734,7 +734,7 @@ fun getAccumulatedDeltaRangeState(): Int
 
 Gets 'Accumulated Delta Range' state.
 
-This indicates the state of the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` measurement. See the table below for a detailed interpretation of each state.
+This indicates the state of the getAccumulatedDeltaRangeMeters measurement. See the table below for a detailed interpretation of each state.
 
 | ADR_STATE | Time of relevance | Interpretation |
 |---|---|---|
@@ -763,7 +763,7 @@ Gets the accumulated delta range's uncertainty (1-Sigma) in meters.
 
 The uncertainty is represented as an absolute (single sided) value.
 
-The status of the value is represented by `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()`.
+The status of the value is represented by getAccumulatedDeltaRangeState.
 
 ### getAutomaticGainControlLevelDb
 
@@ -774,7 +774,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun getAutomaticGainControlLevelDb(): Double
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#getGnssAutomaticGainControls()` instead.*
+**Deprecated:** *Use getGnssAutomaticGainControls instead.*
 
 Gets the Automatic Gain Control level in dB.
 
@@ -784,7 +784,7 @@ Note: Different hardware designs (e.g. antenna, pre-amplification, or other RF H
 
 This field is part of the GnssMeasurement object so it is only reported when the GNSS measurement is reported. E.g., when a GNSS signal is too weak to be acquired, the AGC value is not reported.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasAutomaticGainControlLevelDb()` is `true`
+The value is only available if hasAutomaticGainControlLevelDb is `true`
 
 ### getBasebandCn0DbHz
 
@@ -798,7 +798,7 @@ Gets the baseband carrier-to-noise density in dB-Hz.
 
 Typical range: 10-50 dB-Hz. The range of possible baseband C/N0 values is 0-63 dB-Hz to handle some edge cases.
 
-The value contains the measured C/N0 for the signal at the baseband. This is typically a few dB weaker than the value estimated for C/N0 at the antenna port, which is reported in `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCn0DbHz()`.
+The value contains the measured C/N0 for the signal at the baseband. This is typically a few dB weaker than the value estimated for C/N0 at the antenna port, which is reported in getCn0DbHz.
 
 | Return ||
 |---|---|
@@ -813,13 +813,13 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun getCarrierCycles(): Long
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` instead.*
+**Deprecated:** *use getAccumulatedDeltaRangeMeters instead.*
 
 The number of full carrier cycles between the satellite and the receiver.
 
-The reference frequency is given by the value of `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()`.
+The reference frequency is given by the value of getCarrierFrequencyHz.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierCycles()` is `true`.
+The value is only available if hasCarrierCycles is `true`.
 
 ### getCarrierFrequencyHz
 
@@ -833,7 +833,7 @@ Gets the carrier frequency of the tracked signal.
 
 For example it can be the GPS central frequency for L1 = 1575.45 MHz, or L2 = 1227.60 MHz, L5 = 1176.45 MHz, varying GLO channels, etc.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierFrequencyHz()` is `true`.
+The value is only available if hasCarrierFrequencyHz is `true`.
 
 | Return ||
 |---|---|
@@ -848,7 +848,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun getCarrierPhase(): Double
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeMeters()` instead.*
+**Deprecated:** *use getAccumulatedDeltaRangeMeters instead.*
 
 Gets the RF phase detected by the receiver.
 
@@ -856,11 +856,11 @@ Range: \[0.0, 1.0\].
 
 This is the fractional part of the complete carrier phase measurement.
 
-The reference frequency is given by the value of `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()`.
+The reference frequency is given by the value of getCarrierFrequencyHz.
 
-The error estimate for this value is `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhaseUncertainty()`.
+The error estimate for this value is getCarrierPhaseUncertainty.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierPhase()` is `true`.
+The value is only available if hasCarrierPhase is `true`.
 
 ### getCarrierPhaseUncertainty
 
@@ -871,13 +871,13 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun getCarrierPhaseUncertainty(): Double
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeUncertaintyMeters()` instead.*
+**Deprecated:** *use getAccumulatedDeltaRangeUncertaintyMeters instead.*
 
 Gets the carrier-phase's uncertainty (1-Sigma).
 
 The uncertainty is represented as an absolute (single sided) value.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasCarrierPhaseUncertainty()` is `true`.
+The value is only available if hasCarrierPhaseUncertainty is `true`.
 
 ### getCn0DbHz
 
@@ -929,7 +929,7 @@ fun getConstellationType(): Int
 
 Gets the constellation type.
 
-The return value is one of those constants with `CONSTELLATION_` prefix in `https://developer.android.com/reference/kotlin/android/location/GnssStatus`.
+The return value is one of those constants with `CONSTELLATION_` prefix in GnssStatus.
 
 | Return ||
 |---|---|
@@ -947,15 +947,15 @@ Gets the GNSS measurement's inter-signal bias in nanoseconds with sub-nanosecond
 
 This value is the sum of the estimated receiver-side and the space-segment-side inter-system bias, inter-frequency bias and inter-code bias, including:
 
-- Receiver inter-constellation bias (with respect to the constellation in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
-- Receiver inter-frequency bias (with respect to the carrier frequency in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
-- Receiver inter-code bias (with respect to the code type in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
-- Master clock bias (e.g., GPS-GAL Time Offset (GGTO), GPS-UTC Time Offset (TauGps), BDS-GLO Time Offset (BGTO))(with respect to the constellation in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
+- Receiver inter-constellation bias (with respect to the constellation in getReferenceConstellationTypeForIsb
+- Receiver inter-frequency bias (with respect to the carrier frequency in getReferenceConstellationTypeForIsb
+- Receiver inter-code bias (with respect to the code type in getReferenceConstellationTypeForIsb
+- Master clock bias (e.g., GPS-GAL Time Offset (GGTO), GPS-UTC Time Offset (TauGps), BDS-GLO Time Offset (BGTO))(with respect to the constellation in getReferenceConstellationTypeForIsb
 - Group delay (e.g., Total Group Delay (TGD))
-- Satellite inter-frequency bias (GLO only) (with respect to the carrier frequency in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
-- Satellite inter-code bias (e.g., Differential Code Bias (DCB)) (with respect to the code type in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
+- Satellite inter-frequency bias (GLO only) (with respect to the carrier frequency in getReferenceConstellationTypeForIsb
+- Satellite inter-code bias (e.g., Differential Code Bias (DCB)) (with respect to the code type in getReferenceConstellationTypeForIsb
 
-If a component of the above is already compensated in the provided `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getReceivedSvTimeNanos()`, then it must not be included in the reported full ISB.
+If a component of the above is already compensated in the provided getReceivedSvTimeNanos, then it must not be included in the reported full ISB.
 
 The value does not include the inter-frequency Ionospheric bias.
 
@@ -965,7 +965,7 @@ The sign of the value is defined by the following equation:
 corrected pseudorange = raw pseudorange - FullInterSignalBiasNanos
 ```
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasFullInterSignalBiasNanos()` is `true`.
+The value is only available if hasFullInterSignalBiasNanos is `true`.
 
 ### getFullInterSignalBiasUncertaintyNanos
 
@@ -977,7 +977,7 @@ fun getFullInterSignalBiasUncertaintyNanos(): Double
 
 Gets the GNSS measurement's inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasFullInterSignalBiasUncertaintyNanos()` is `true`.
+The value is only available if hasFullInterSignalBiasUncertaintyNanos is `true`.
 
 | Return ||
 |---|---|
@@ -1007,7 +1007,7 @@ fun getPseudorangeRateMetersPerSecond(): Double
 
 Gets the Pseudorange rate at the timestamp in m/s.
 
-The error estimate for this value is `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getPseudorangeRateUncertaintyMetersPerSecond()`.
+The error estimate for this value is getPseudorangeRateUncertaintyMetersPerSecond.
 
 The value is uncorrected, i.e. corrections for receiver and satellite clock frequency errors are not included.
 
@@ -1041,7 +1041,7 @@ Gets the received GNSS satellite time, at the measurement time, in nanoseconds.
 
 The received satellite time is relative to the beginning of the system week for all constellations except for Glonass where it is relative to the beginning of the Glonass system day.
 
-The table below indicates the valid range of the received GNSS satellite time. These ranges depend on the constellation and code being tracked and the state of the tracking algorithms given by the `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getState()` method. The minimum value of this field is zero. The maximum value of this field is determined by looking across all of the state flags that are set, for the given constellation and code type, and finding the the maximum value in this table.
+The table below indicates the valid range of the received GNSS satellite time. These ranges depend on the constellation and code being tracked and the state of the tracking algorithms given by the getState method. The minimum value of this field is zero. The maximum value of this field is determined by looking across all of the state flags that are set, for the given constellation and code type, and finding the the maximum value in this table.
 
 For example, for GPS L1 C/A, if STATE_TOW_KNOWN is set, this field can be any value from 0 to 1 week (in nanoseconds), and for GAL E1B code, if only STATE_GAL_E1BC_CODE_LOCK is set, then this field can be any value from 0 to 4 milliseconds (in nanoseconds.)
 
@@ -1106,10 +1106,10 @@ Gets the GNSS measurement's satellite inter-signal bias in nanoseconds with sub-
 
 This value is the space-segment-side inter-system bias, inter-frequency bias and inter-code bias, including:
 
-- Master clock bias (e.g., GPS-GAL Time Offset (GGTO), GPS-UTC Time Offset (TauGps), BDS-GLO Time Offset (BGTO))(with respect to the constellation in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
+- Master clock bias (e.g., GPS-GAL Time Offset (GGTO), GPS-UTC Time Offset (TauGps), BDS-GLO Time Offset (BGTO))(with respect to the constellation in getReferenceConstellationTypeForIsb
 - Group delay (e.g., Total Group Delay (TGD))
-- Satellite inter-frequency bias (GLO only) (with respect to the carrier frequency in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
-- Satellite inter-code bias (e.g., Differential Code Bias (DCB)) (with respect to the code type in `https://developer.android.com/reference/kotlin/android/location/GnssClock#getReferenceConstellationTypeForIsb()`
+- Satellite inter-frequency bias (GLO only) (with respect to the carrier frequency in getReferenceConstellationTypeForIsb
+- Satellite inter-code bias (e.g., Differential Code Bias (DCB)) (with respect to the code type in getReferenceConstellationTypeForIsb
 
 The sign of the value is defined by the following equation:
 
@@ -1117,7 +1117,7 @@ The sign of the value is defined by the following equation:
 corrected pseudorange = raw pseudorange - SatelliteInterSignalBiasNanos
 ```
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSatelliteInterSignalBiasNanos()` is `true`.
+The value is only available if hasSatelliteInterSignalBiasNanos is `true`.
 
 ### getSatelliteInterSignalBiasUncertaintyNanos
 
@@ -1129,7 +1129,7 @@ fun getSatelliteInterSignalBiasUncertaintyNanos(): Double
 
 Gets the GNSS measurement's satellite inter-signal bias uncertainty (1 sigma) in nanoseconds with sub-nanosecond accuracy.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSatelliteInterSignalBiasUncertaintyNanos()` is `true`.
+The value is only available if hasSatelliteInterSignalBiasUncertaintyNanos is `true`.
 
 | Return ||
 |---|---|
@@ -1145,7 +1145,7 @@ fun getSnrInDb(): Double
 
 Gets the (post-correlation \& integration) Signal-to-Noise ratio (SNR) in dB.
 
-The value is only available if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#hasSnrInDb()` is `true`.
+The value is only available if hasSnrInDb is `true`.
 
 ### getState
 
@@ -1159,7 +1159,7 @@ Gets per-satellite-signal sync state.
 
 It represents the current sync state for the associated satellite signal.
 
-This value helps interpret `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getReceivedSvTimeNanos()`.
+This value helps interpret getReceivedSvTimeNanos.
 
 | Return ||
 |---|---|
@@ -1175,7 +1175,7 @@ fun getSvid(): Int
 
 Gets the satellite ID.
 
-Interpretation depends on `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getConstellationType()`. See `https://developer.android.com/reference/kotlin/android/location/GnssStatus#getSvid(kotlin.Int)`.
+Interpretation depends on getConstellationType. See getSvid.
 
 ### getTimeOffsetNanos
 
@@ -1187,7 +1187,7 @@ fun getTimeOffsetNanos(): Double
 
 Gets the time offset at which the measurement was taken in nanoseconds.
 
-The reference receiver's time from which this is offset is specified by `https://developer.android.com/reference/kotlin/android/location/GnssClock#getTimeNanos()`.
+The reference receiver's time from which this is offset is specified by getTimeNanos.
 
 The sign of this value is given by the following equation:
 
@@ -1206,9 +1206,9 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun hasAutomaticGainControlLevelDb(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurementsEvent#getGnssAutomaticGainControls()` instead.*
+**Deprecated:** *Use getGnssAutomaticGainControls instead.*
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAutomaticGainControlLevelDb()` is available, `false` otherwise.
+Returns `true` if getAutomaticGainControlLevelDb is available, `false` otherwise.
 
 ### hasBasebandCn0DbHz
 
@@ -1218,7 +1218,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun hasBasebandCn0DbHz(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getBasebandCn0DbHz()` is available, `false` otherwise.
+Returns `true` if getBasebandCn0DbHz is available, `false` otherwise.
 
 ### hasCarrierCycles
 
@@ -1229,9 +1229,9 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun hasCarrierCycles(): Boolean
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()` instead.*
+**Deprecated:** *use getAccumulatedDeltaRangeState instead.*
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierCycles()` is available, `false` otherwise.
+Returns `true` if getCarrierCycles is available, `false` otherwise.
 
 ### hasCarrierFrequencyHz
 
@@ -1241,7 +1241,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun hasCarrierFrequencyHz(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierFrequencyHz()` is available, `false` otherwise.
+Returns `true` if getCarrierFrequencyHz is available, `false` otherwise.
 
 ### hasCarrierPhase
 
@@ -1252,9 +1252,9 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun hasCarrierPhase(): Boolean
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()` instead.*
+**Deprecated:** *use getAccumulatedDeltaRangeState instead.*
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhase()` is available, `false` otherwise.
+Returns `true` if getCarrierPhase is available, `false` otherwise.
 
 ### hasCarrierPhaseUncertainty
 
@@ -1265,9 +1265,9 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun hasCarrierPhaseUncertainty(): Boolean
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getAccumulatedDeltaRangeState()` instead.*
+**Deprecated:** *use getAccumulatedDeltaRangeState instead.*
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCarrierPhaseUncertainty()` is available, `false` otherwise.
+Returns `true` if getCarrierPhaseUncertainty is available, `false` otherwise.
 
 ### hasCodeType
 
@@ -1277,7 +1277,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun hasCodeType(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getCodeType()` is available, `false` otherwise.
+Returns `true` if getCodeType is available, `false` otherwise.
 
 ### hasFullInterSignalBiasNanos
 
@@ -1287,7 +1287,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun hasFullInterSignalBiasNanos(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasNanos()` is available, `false` otherwise.
+Returns `true` if getFullInterSignalBiasNanos is available, `false` otherwise.
 
 ### hasFullInterSignalBiasUncertaintyNanos
 
@@ -1297,7 +1297,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun hasFullInterSignalBiasUncertaintyNanos(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getFullInterSignalBiasUncertaintyNanos()` is available, `false` otherwise.
+Returns `true` if getFullInterSignalBiasUncertaintyNanos is available, `false` otherwise.
 
 ### hasSatelliteInterSignalBiasNanos
 
@@ -1307,7 +1307,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun hasSatelliteInterSignalBiasNanos(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasNanos()` is available, `false` otherwise.
+Returns `true` if getSatelliteInterSignalBiasNanos is available, `false` otherwise.
 
 ### hasSatelliteInterSignalBiasUncertaintyNanos
 
@@ -1317,7 +1317,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun hasSatelliteInterSignalBiasUncertaintyNanos(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSatelliteInterSignalBiasUncertaintyNanos()` is available, `false` otherwise.
+Returns `true` if getSatelliteInterSignalBiasUncertaintyNanos is available, `false` otherwise.
 
 ### hasSnrInDb
 
@@ -1327,7 +1327,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun hasSnrInDb(): Boolean
 ```
 
-Returns `true` if `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#getSnrInDb()` is available, `false` otherwise.
+Returns `true` if getSnrInDb is available, `false` otherwise.
 
 ### toString
 

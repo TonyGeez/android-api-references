@@ -20,21 +20,21 @@ Represents the list of selected content on a particular page of the PDF document
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#PageSelection(kotlin.Int,%20android.graphics.pdf.models.selection.SelectionBoundary,%20android.graphics.pdf.models.selection.SelectionBoundary,%20kotlin.collections.MutableList)(page: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, start: https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary, stop: https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary, selectedContents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/pdf/content/PdfPageTextContent.html#!>)` Creates a new instance of `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#` for the specified page, the start and stop selection boundary, and the selected text content. |
+| PageSelection Creates a new instance of PageSelection for the specified page, the start and stop selection boundary, and the selected text content. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getPage()()` Gets the particular page for which the selection is highlighted. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](../android.graphics.pdf.content/PdfPageTextContent.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getSelectedTextContents()()` Returns the text content within the selection boundaries on the page. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPage Gets the particular page for which the selection is highlighted. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](../android.graphics.pdf.content/PdfPageTextContent.md)!\> | getSelectedTextContents Returns the text content within the selection boundaries on the page. |
 | --- | --- |
-| [SelectionBoundary](SelectionBoundary.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStart()()` Gets the edge from where the selection starts- index is inclusive. |
-| [SelectionBoundary](SelectionBoundary.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStop()()` Gets the edge where the selection stops - index is inclusive. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [SelectionBoundary](SelectionBoundary.md) | getStart Gets the edge from where the selection starts- index is inclusive. |
+| [SelectionBoundary](SelectionBoundary.md) | getStop Gets the edge where the selection stops - index is inclusive. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -56,7 +56,7 @@ PageSelection(
     selectedContents: MutableList<PdfPageTextContent!>)
 ```
 
-Creates a new instance of `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#` for the specified page, the start and stop selection boundary, and the selected text content.
+Creates a new instance of PageSelection for the specified page, the start and stop selection boundary, and the selected text content.
 
 | Parameters ||
 |---|---|
@@ -81,7 +81,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -130,7 +130,7 @@ Gets the edge from where the selection starts- index is inclusive.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary` | The starting edge of the selection. This value cannot be `null`. |
+| SelectionBoundary | The starting edge of the selection. This value cannot be `null`. |
 
 ### getStop
 
@@ -145,7 +145,7 @@ Gets the edge where the selection stops - index is inclusive.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/SelectionBoundary` | The stopping edge of the selection. This value cannot be `null`. |
+| SelectionBoundary | The stopping edge of the selection. This value cannot be `null`. |
 
 ### writeToParcel
 

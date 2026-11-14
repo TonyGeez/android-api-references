@@ -12,27 +12,27 @@ open class DOMSource : Source
 
 Acts as a holder for a transformation Source tree in the form of a Document Object Model (DOM) tree.
 
-Note that XSLT requires namespace support. Attempting to transform a DOM that was not contructed with a namespace-aware parser may result in errors. Parsers can be made namespace aware by calling `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilderFactory.html#setNamespaceAware(kotlin.Boolean)`.
+Note that XSLT requires namespace support. Attempting to transform a DOM that was not contructed with a namespace-aware parser may result in errors. Parsers can be made namespace aware by calling setNamespaceAware.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#FEATURE:kotlin.String` If `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#getFeature(kotlin.String)` returns true when passed this value as an argument, the Transformer supports Source input of this type. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#FEATURE:kotlin.String` If getFeature returns true when passed this value as an argument, the Transformer supports Source input of this type. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#DOMSource()()` Zero-argument default constructor. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#DOMSource(org.w3c.dom.Node)(n: https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html!)` Create a new input source with a DOM node. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#DOMSource(org.w3c.dom.Node,%20kotlin.String)(node: https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html!, systemID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a new input source with a DOM node, and with the system ID also passed in as the base URI. |
+| DOMSource Zero-argument default constructor. |
+| DOMSource Create a new input source with a DOM node. |
+| DOMSource Create a new input source with a DOM node, and with the system ID also passed in as the base URI. |
 
 | Public methods ||
 |---|---|
-| open [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#getNode()()` Get the node that represents a Source DOM tree. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#getSystemId()()` Get the base ID (URL or system ID) from where URLs will be resolved. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#setNode(org.w3c.dom.Node)(node: https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html!)` Set the node that will represents a Source DOM tree. |
+| open [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | getNode Get the node that represents a Source DOM tree. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSystemId Get the base ID (URL or system ID) from where URLs will be resolved. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNode Set the node that will represents a Source DOM tree. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#setSystemId(kotlin.String)(systemID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the base ID (URL or system ID) from where URLs will be resolved. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSystemId Set the base ID (URL or system ID) from where URLs will be resolved. |
 
 ## Constants
 
@@ -44,7 +44,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val FEATURE: String
 ```
 
-If `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#getFeature(kotlin.String)` returns true when passed this value as an argument, the Transformer supports Source input of this type.
+If getFeature returns true when passed this value as an argument, the Transformer supports Source input of this type.
 
  Value: "http://javax.xml.transform.dom.DOMSource/feature"
 
@@ -58,10 +58,10 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 DOMSource()
 ```
 
-Zero-argument default constructor. If this constructor is used, and no DOM source is set using `https://developer.android.com/reference/kotlin/javax/xml/transform/dom/DOMSource#setNode(org.w3c.dom.Node)` , then the `Transformer` will create an empty source `https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html` using `https://developer.android.com/reference/kotlin/javax/xml/parsers/DocumentBuilder.html#newDocument()`.
+Zero-argument default constructor. If this constructor is used, and no DOM source is set using setNode , then the `Transformer` will create an empty source `https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html` using newDocument.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,%20javax.xml.transform.Result)`
+- transform
 
 ### DOMSource
 

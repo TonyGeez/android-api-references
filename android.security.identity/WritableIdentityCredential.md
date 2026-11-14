@@ -18,14 +18,14 @@ abstract class WritableIdentityCredential
 
 Class used to personalize a new identity credential.
 
-Credentials cannot be updated or modified after creation; any changes require deletion and re-creation. Use `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore#createCredential(kotlin.String,%20kotlin.String)` to create a new credential.
+Credentials cannot be updated or modified after creation; any changes require deletion and re-creation. Use createCredential to create a new credential.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#getCredentialKeyCertificateChain(kotlin.ByteArray)(challenge: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Generates and returns an X. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#personalize(android.security.identity.PersonalizationData)(personalizationData: https://developer.android.com/reference/kotlin/android/security/identity/PersonalizationData)` Stores all of the data in the credential, with the specified access control profiles. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\> | getCredentialKeyCertificateChain Generates and returns an X. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | personalize Stores all of the data in the credential, with the specified access control profiles. |
 
 ## Public methods
 
@@ -45,7 +45,7 @@ Additionally, the attestation extension will contain the tag Tag::IDENTITY_CREDE
 
 The issuer **MUST** carefully examine this certificate chain including (but not limited to) checking that the root certificate is well-known, the tag Tag::IDENTITY_CREDENTIAL_KEY present, the passed in challenge is present, the tag Tag::ATTESTATION_APPLICATION_ID is set to the expected Android application, the device has verified boot enabled, each certificate in the chain is signed by its successor, none of the certificates have been revoked, and so on.
 
-It is not strictly necessary to use this method to provision a credential if the issuing authority doesn't care about the nature of the security hardware. If called, however, this method must be called before `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#personalize(android.security.identity.PersonalizationData)`.
+It is not strictly necessary to use this method to provision a credential if the issuing authority doesn't care about the nature of the security hardware. If called, however, this method must be called before personalize.
 
 | Parameters ||
 |---|---|
@@ -102,7 +102,7 @@ ProofOfProvisioning = [
   
 ```
 
-This data structure provides a guarantee to the issuer about the data which may be returned in the CBOR returned by `https://developer.android.com/reference/kotlin/android/security/identity/ResultData#getAuthenticatedData()` during a credential presentation.
+This data structure provides a guarantee to the issuer about the data which may be returned in the CBOR returned by getAuthenticatedData during a credential presentation.
 
 | Parameters ||
 |---|---|

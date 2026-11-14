@@ -22,20 +22,20 @@ Ad networks may use `AdId` to monetize for Interest Based Advertising (IBA), i.e
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#ZERO_OUT:kotlin.String` A zeroed-out `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#getAdId()` that is returned when the user has `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#isLimitAdTrackingEnabled()`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#ZERO_OUT:kotlin.String` A zeroed-out getAdId that is returned when the user has isLimitAdTrackingEnabled. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#AdId(kotlin.String,%20kotlin.Boolean)(adId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, limitAdTrackingEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates an instance of `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#` |
+| AdId Creates an instance of AdId |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#getAdId()()` The advertising ID. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#hashCode()()` Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getAdId The advertising ID. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#isLimitAdTrackingEnabled()()` Retrieves the limit ad tracking enabled setting. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#toString()()` Returns a string representation of the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLimitAdTrackingEnabled Retrieves the limit ad tracking enabled setting. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -48,7 +48,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 static val ZERO_OUT: String
 ```
 
-A zeroed-out `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#getAdId()` that is returned when the user has `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#isLimitAdTrackingEnabled()`.
+A zeroed-out getAdId that is returned when the user has isLimitAdTrackingEnabled.
 
  Value: "00000000-0000-0000-0000-000000000000"
 
@@ -65,7 +65,7 @@ AdId(
     limitAdTrackingEnabled: Boolean)
 ```
 
-Creates an instance of `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#`
+Creates an instance of AdId
 
 | Parameters ||
 |---|---|
@@ -113,9 +113,9 @@ open fun getAdId(): String
 
 The advertising ID.
 
-The value of advertising Id depends on a combination of `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#isLimitAdTrackingEnabled()` and `https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_AD_ID:kotlin.String`.
+The value of advertising Id depends on a combination of isLimitAdTrackingEnabled and `https://developer.android.com/reference/kotlin/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_AD_ID:kotlin.String`.
 
-When the user is `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#isLimitAdTrackingEnabled()`, the API returns `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#ZERO_OUT:kotlin.String`. This disallows a caller to track the user for monetization purposes.
+When the user is isLimitAdTrackingEnabled, the API returns `https://developer.android.com/reference/kotlin/android/adservices/adid/AdId#ZERO_OUT:kotlin.String`. This disallows a caller to track the user for monetization purposes.
 
 Otherwise, a string unique to the device and user is returned, which can be used to track users for advertising.
 
@@ -136,8 +136,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

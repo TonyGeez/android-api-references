@@ -13,7 +13,7 @@ class CloudMediaProviderContract
 
 Defines the contract between a cloud media provider and the OS.
 
-To create a cloud media provider, extend `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`, which provides a foundational implementation of this contract.
+To create a cloud media provider, extend CloudMediaProvider, which provides a foundational implementation of this contract.
 
 ## Summary
 
@@ -27,7 +27,7 @@ To create a cloud media provider, extend `https://developer.android.com/referenc
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaColumns` Constants related to a media item, including `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` column names |
 | | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaSetColumns` MediaSet represents a cohesive collection of related unique media items, sharing a common meaningful context or theme. |
 | --- | --- |
-| | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.SearchSuggestionColumns` Represents a search suggestion provided by the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. |
+| | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.SearchSuggestionColumns` Represents a search suggestion provided by the CloudMediaProvider. |
 
 | Constants ||
 |---|---|
@@ -37,17 +37,17 @@ To create a cloud media provider, extend `https://developer.android.com/referenc
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_SIZE:kotlin.String` The maximum number of query results that should be included in a batch when syncing metadata with cloud provider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` Opaque pagination token to retrieve the next page (cursor) from a media or album query. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PREVIEW_THUMBNAIL:kotlin.String` Forces the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenPreview(kotlin.String,%20android.graphics.Point,%20android.os.Bundle,%20android.os.CancellationSignal)` file descriptor to return a thumbnail image. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PREVIEW_THUMBNAIL:kotlin.String` Forces the onOpenPreview file descriptor to return a thumbnail image. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` Extra used to specify the sorting behavior when querying from `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SORT_ORDER:kotlin.String` Extra used to specify the sorting behavior when querying from CloudMediaProvider. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SURFACE_CONTROLLER_AUDIO_MUTE_ENABLED:kotlin.String` Indicates whether to mute audio during preview of media items. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` Generation number to fetch the latest media or album metadata changes from the media collection. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSION:kotlin.String` Permission required to protect `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` instances. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSION:kotlin.String` Permission required to protect CloudMediaProvider instances. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MEDIA_CATEGORY_TYPE_PEOPLE_AND_PETS:kotlin.String` Represents media category related to faces of people and pets. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#MEDIA_CATEGORY_TYPE_USER_ALBUMS:kotlin.String` Represents media category related to a user's custom albums. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#PROVIDER_INTERFACE:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to identify `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` instances. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#PROVIDER_INTERFACE:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to identify CloudMediaProvider instances. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_ALBUM:kotlin.String` Suggestion based on user albums. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#SEARCH_SUGGESTION_DATE:kotlin.String` Suggestion based on the date photos were taken. |
 | --- | --- |
@@ -70,13 +70,13 @@ static val EXTRA_ALBUM_ID: String
 
 Limits the query results to only media items matching the given album id.
 
-If the provider handled the album filter, they must also add the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` key to the array of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_HONORED_ARGS:kotlin.String` as part of the returned `https://developer.android.com/reference/kotlin/android/database/Cursor.html#setExtras(android.os.Bundle)` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`.
+If the provider handled the album filter, they must also add the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_ALBUM_ID:kotlin.String` key to the array of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_HONORED_ARGS:kotlin.String` as part of the returned setExtras `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`.
 
  Value: "android.provider.extra.ALBUM_ID"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)`
+- onQueryMedia
 
 ### EXTRA_LOOPING_PLAYBACK_ENABLED
 
@@ -95,8 +95,8 @@ In case this is not present, the default value should be false.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onCreateCloudMediaSurfaceController(android.os.Bundle,%20android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController#onConfigChange(android.os.Bundle)`
+- onCreateCloudMediaSurfaceController
+- onConfigChange
 
 ### EXTRA_MEDIA_COLLECTION_ID
 
@@ -109,15 +109,15 @@ static val EXTRA_MEDIA_COLLECTION_ID: String
 
 `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCollectionInfo#MEDIA_COLLECTION_ID:kotlin.String` on which the media or album query occurred.
 
-Providers must set this token as part of the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#setExtras(android.os.Bundle)` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` returned from the cursors on query. This allows the OS to verify that the returned results match the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCollectionInfo#MEDIA_COLLECTION_ID:kotlin.String` queried via `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetMediaCollectionInfo(android.os.Bundle)`. If the collection differs, the OS will ignore the result and may try again.
+Providers must set this token as part of the setExtras `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` returned from the cursors on query. This allows the OS to verify that the returned results match the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCollectionInfo#MEDIA_COLLECTION_ID:kotlin.String` queried via onGetMediaCollectionInfo. If the collection differs, the OS will ignore the result and may try again.
 
  Value: "android.provider.extra.MEDIA_COLLECTION_ID"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryDeletedMedia(android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryAlbums(android.os.Bundle)`
+- onQueryMedia
+- onQueryDeletedMedia
+- onQueryAlbums
 
 ### EXTRA_PAGE_SIZE
 
@@ -134,8 +134,8 @@ The maximum number of query results that should be included in a batch when sync
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryAlbums(android.os.Bundle)`
+- onQueryMedia
+- onQueryAlbums
 
 ### EXTRA_PAGE_TOKEN
 
@@ -148,16 +148,16 @@ static val EXTRA_PAGE_TOKEN: String
 
 Opaque pagination token to retrieve the next page (cursor) from a media or album query.
 
-Providers can optionally set this token as part of the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#setExtras(android.os.Bundle)` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`. If a token is set, the OS can pass it as a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` parameter when querying for media or albums to fetch subsequent pages. The provider can keep returning pagination tokens until the last page at which point it should not set a token on the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`.
+Providers can optionally set this token as part of the setExtras `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`. If a token is set, the OS can pass it as a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` parameter when querying for media or albums to fetch subsequent pages. The provider can keep returning pagination tokens until the last page at which point it should not set a token on the `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`.
 
-If the provider handled the page token as part of the query, they must add the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` key to the array of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_HONORED_ARGS:kotlin.String` as part of the returned `https://developer.android.com/reference/kotlin/android/database/Cursor.html#setExtras(android.os.Bundle)` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`.
+If the provider handled the page token as part of the query, they must add the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_PAGE_TOKEN:kotlin.String` key to the array of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_HONORED_ARGS:kotlin.String` as part of the returned setExtras `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`.
 
  Value: "android.provider.extra.PAGE_TOKEN"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryAlbums(android.os.Bundle)`
+- onQueryMedia
+- onQueryAlbums
 
 ### EXTRA_PREVIEW_THUMBNAIL
 
@@ -168,13 +168,13 @@ Also in [R Extensions 3](https://developer.android.com/sdkExtensions)
 static val EXTRA_PREVIEW_THUMBNAIL: String
 ```
 
-Forces the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenPreview(kotlin.String,%20android.graphics.Point,%20android.os.Bundle,%20android.os.CancellationSignal)` file descriptor to return a thumbnail image. This is only useful for videos where the OS can either request a video or image for preview. If false or not specified, CloudMediaProvider#onOpenPreview should return the media item's file descriptor instead.
+Forces the onOpenPreview file descriptor to return a thumbnail image. This is only useful for videos where the OS can either request a video or image for preview. If false or not specified, CloudMediaProvider#onOpenPreview should return the media item's file descriptor instead.
 
  Value: "android.provider.extra.PREVIEW_THUMBNAIL"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onOpenPreview(kotlin.String,%20android.graphics.Point,%20android.os.Bundle,%20android.os.CancellationSignal)`
+- onOpenPreview
 
 ### EXTRA_SORT_ORDER
 
@@ -185,7 +185,7 @@ Also in [R Extensions 16](https://developer.android.com/sdkExtensions)
 static val EXTRA_SORT_ORDER: String
 ```
 
-Extra used to specify the sorting behavior when querying from `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider`. The value associated with this extra should be one of the integer constants defined in the SortOrders.
+Extra used to specify the sorting behavior when querying from CloudMediaProvider. The value associated with this extra should be one of the integer constants defined in the SortOrders.
 
 Type: INTEGER
 
@@ -208,8 +208,8 @@ Indicates whether to mute audio during preview of media items.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onCreateCloudMediaSurfaceController(android.os.Bundle,%20android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider.CloudMediaSurfaceController#onConfigChange(android.os.Bundle)`
+- onCreateCloudMediaSurfaceController
+- onConfigChange
 
 ### EXTRA_SYNC_GENERATION
 
@@ -230,17 +230,17 @@ Note that multiple media (or album) items can share a sync generation as long as
 
 This extra can be passed as a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` parameter to the media or album query methods and the provider should only return items with a sync generation that is strictly greater than the one provided in the filter.
 
-If the provider supports this filter, it must support the respective `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onGetMediaCollectionInfo(android.os.Bundle)` methods to return the `count` and `max generation` for media or albums.
+If the provider supports this filter, it must support the respective onGetMediaCollectionInfo methods to return the `count` and `max generation` for media or albums.
 
-If the provider handled the generation, they must add the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` key to the array of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_HONORED_ARGS:kotlin.String` as part of the returned `https://developer.android.com/reference/kotlin/android/database/Cursor.html#setExtras(android.os.Bundle)` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`.
+If the provider handled the generation, they must add the `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract#EXTRA_SYNC_GENERATION:kotlin.String` key to the array of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_HONORED_ARGS:kotlin.String` as part of the returned setExtras `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`.
 
  Value: "android.provider.extra.SYNC_GENERATION"
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProviderContract.MediaCollectionInfo#LAST_MEDIA_SYNC_GENERATION:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryMedia(android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider#onQueryAlbums(android.os.Bundle)`
+- onQueryMedia
+- onQueryAlbums
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#GENERATION_MODIFIED:kotlin.String`
 
 ### MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSION
@@ -252,7 +252,7 @@ Also in [R Extensions 3](https://developer.android.com/sdkExtensions)
 static val MANAGE_CLOUD_MEDIA_PROVIDERS_PERMISSION: String
 ```
 
-Permission required to protect `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` instances. Providers should require this in the `permission` attribute in their `<provider>` tag. The OS will not connect to a provider without this protection.
+Permission required to protect CloudMediaProvider instances. Providers should require this in the `permission` attribute in their `<provider>` tag. The OS will not connect to a provider without this protection.
 
  Value: "com.android.providers.media.permission.MANAGE_CLOUD_MEDIA_PROVIDERS"
 
@@ -299,7 +299,7 @@ Also in [R Extensions 3](https://developer.android.com/sdkExtensions)
 static val PROVIDER_INTERFACE: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to identify `https://developer.android.com/reference/kotlin/android/provider/CloudMediaProvider` instances. This is used in the `<intent-filter>` of the `<provider>`.
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` action used to identify CloudMediaProvider instances. This is used in the `<intent-filter>` of the `<provider>`.
 
  Value: "android.content.action.CLOUD_MEDIA_PROVIDER"
 

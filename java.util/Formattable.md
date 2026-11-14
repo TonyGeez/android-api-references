@@ -8,7 +8,7 @@ interface Formattable
 
 | [java.util.Formattable](Formattable.md) |
 
-The `Formattable` interface must be implemented by any class that needs to perform custom formatting using the `'s'` conversion specifier of `https://developer.android.com/reference/kotlin/java/util/Formatter`. This interface allows basic control for formatting arbitrary objects. For example, the following class prints out different representations of a stock's name depending on the flags and length constraints:
+The `Formattable` interface must be implemented by any class that needs to perform custom formatting using the `'s'` conversion specifier of Formatter. This interface allows basic control for formatting arbitrary objects. For example, the following class prints out different representations of a stock's name depending on the flags and length constraints:
 
 ```kotlin
 <code>import java.nio.CharBuffer;
@@ -68,7 +68,7 @@ The `Formattable` interface must be implemented by any class that needs to perfo
 
 <br />
 
-When used in conjunction with the `https://developer.android.com/reference/kotlin/java/util/Formatter`, the above class produces the following output for various format strings.
+When used in conjunction with the Formatter, the above class produces the following output for various format strings.
 
 ```kotlin
 <code>Formatter fmt = new Formatter();
@@ -91,7 +91,7 @@ Unless otherwise specified, passing a `null` argument to any method in this inte
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Formattable#formatTo(java.util.Formatter,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(formatter: https://developer.android.com/reference/kotlin/java/util/Formatter!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, precision: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Formats the object using the provided `https://developer.android.com/reference/kotlin/java/util/Formatter`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | formatTo Formats the object using the provided Formatter. |
 
 ## Public methods
 
@@ -108,11 +108,11 @@ abstract fun formatTo(
 ): Unit
 ```
 
-Formats the object using the provided `https://developer.android.com/reference/kotlin/java/util/Formatter`.
+Formats the object using the provided Formatter.
 
 | Parameters ||
 |---|---|
-| `formatter` | [Formatter](Formatter.md)!: The `https://developer.android.com/reference/kotlin/java/util/Formatter`. Implementing classes may call `https://developer.android.com/reference/kotlin/java/util/Formatter#out()` or `https://developer.android.com/reference/kotlin/java/util/Formatter#locale()` to obtain the `https://developer.android.com/reference/kotlin/java/lang/Appendable.html#` or `https://developer.android.com/reference/kotlin/java/util/Locale` used by this `formatter` respectively. |
+| `formatter` | [Formatter](Formatter.md)!: The Formatter. Implementing classes may call out or locale to obtain the `https://developer.android.com/reference/kotlin/java/lang/Appendable.html#` or Locale used by this `formatter` respectively. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags modify the output format. The value is interpreted as a bitmask. Any combination of the following flags may be set: `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#LEFT_JUSTIFY:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#UPPERCASE:kotlin.Int`, and `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#ALTERNATE:kotlin.Int`. If no flags are set, the default formatting of the implementing class will apply. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The minimum number of characters to be written to the output. If the length of the converted value is less than the `width` then the output will be padded by `' '` until the total number of characters equals width. The padding is at the beginning by default. If the `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#LEFT_JUSTIFY:kotlin.Int` flag is set then the padding will be at the end. If `width` is `-1` then there is no minimum. |
 | --- | --- |

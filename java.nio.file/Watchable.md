@@ -13,14 +13,14 @@ interface Watchable
 
 An object that may be registered with a watch service so that it can be *watched* for changes and events.
 
-This interface defines the #register method to register the object with a `https://developer.android.com/reference/kotlin/java/nio/file/WatchService` returning a `https://developer.android.com/reference/kotlin/java/nio/file/WatchKey` to represent the registration. An object may be registered with more than one watch service. Registration with a watch service is cancelled by invoking the key's `https://developer.android.com/reference/kotlin/java/nio/file/WatchKey#cancel()` method.
+This interface defines the #register method to register the object with a WatchService returning a WatchKey to represent the registration. An object may be registered with more than one watch service. Registration with a watch service is cancelled by invoking the key's cancel method.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [WatchKey](WatchKey.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/Watchable#register(java.nio.file.WatchService,%20java.nio.file.WatchEvent.Kind)(watcher: https://developer.android.com/reference/kotlin/java/nio/file/WatchService!, vararg events: https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind<*>!)` Registers an object with a watch service. |
-| abstract [WatchKey](WatchKey.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/Watchable#register(java.nio.file.WatchService,%20kotlin.Array,%20java.nio.file.WatchEvent.Modifier)(watcher: https://developer.android.com/reference/kotlin/java/nio/file/WatchService!, events: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Kind<*>!>!, vararg modifiers: https://developer.android.com/reference/kotlin/java/nio/file/WatchEvent.Modifier!)` Registers an object with a watch service. |
+| abstract [WatchKey](WatchKey.md)! | register Registers an object with a watch service. |
+| abstract [WatchKey](WatchKey.md)! | register Registers an object with a watch service. |
 
 ## Public methods
 

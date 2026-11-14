@@ -10,11 +10,11 @@ class BluetoothDevice : Parcelable
 | --- | --- |
 | ↳ | [android.bluetooth.BluetoothDevice](BluetoothDevice.md) |
 
-Represents a remote Bluetooth device. A `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#` lets you create a connection with the respective device or query information about it, such as the name, address, class, and bonding state.
+Represents a remote Bluetooth device. A BluetoothDevice lets you create a connection with the respective device or query information about it, such as the name, address, class, and bonding state.
 
-This class is really just a thin wrapper for a Bluetooth hardware address. Objects of this class are immutable. Operations on this class are performed on the remote Bluetooth hardware address, using the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter` that was used to create this `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#`.
+This class is really just a thin wrapper for a Bluetooth hardware address. Objects of this class are immutable. Operations on this class are performed on the remote Bluetooth hardware address, using the BluetoothAdapter that was used to create this BluetoothDevice.
 
-To get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#`, use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteDevice(kotlin.String)` to create one representing a device of a known MAC address (which you can get through device discovery with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter`) or get one from the set of bonded devices returned by `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBondedDevices()`. You can then open a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` for communication with the remote device, using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createRfcommSocketToServiceRecord(java.util.UUID)` over Bluetooth BR/EDR or using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createL2capChannel(kotlin.Int)` over Bluetooth LE.
+To get a BluetoothDevice, use getRemoteDevice to create one representing a device of a known MAC address (which you can get through device discovery with BluetoothAdapter) or get one from the set of bonded devices returned by getBondedDevices. You can then open a BluetoothSocket for communication with the remote device, using createRfcommSocketToServiceRecord over Bluetooth BR/EDR or using createL2capChannel over Bluetooth LE.
 
 <br />
 
@@ -80,8 +80,8 @@ To get a `https://developer.android.com/reference/kotlin/android/bluetooth/Bluet
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_BOND_LOSS_REASON:kotlin.String` Contains the reason for the bond loss. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_BOND_STATE:kotlin.String` Used as an int extra field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_BOND_STATE_CHANGED:kotlin.String` intents. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_CLASS:kotlin.String` Used as a Parcelable `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass` extra field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_FOUND:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_CLASS_CHANGED:kotlin.String` intents. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String` Used as a Parcelable `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#` extra field in every intent broadcast by this class. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_CLASS:kotlin.String` Used as a Parcelable BluetoothClass extra field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_FOUND:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_CLASS_CHANGED:kotlin.String` intents. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String` Used as a Parcelable BluetoothDevice extra field in every intent broadcast by this class. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DISCOVERY_RESULT_TYPE:kotlin.String` Used as an integer field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_FOUND:kotlin.String` intents. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_ENCRYPTION_ALGORITHM:kotlin.String` Used as an int extra field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_ENCRYPTION_CHANGE:kotlin.String` intents as the algorithm used for encryption. |
@@ -140,71 +140,71 @@ To get a `https://developer.android.com/reference/kotlin/android/bluetooth/Bluet
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#cancelBondProcess()()` Cancel an in-progress bonding request started with #createBond. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connect()()` Connects all user enabled and supported bluetooth profiles between the local and remote device. |
-| [BluetoothGatt](BluetoothGatt.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)(gattConnectionSettings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattConnectionSettings, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback)` Connect to the GATT Server hosted by the given device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | cancelBondProcess Cancel an in-progress bonding request started with #createBond. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | connect Connects all user enabled and supported bluetooth profiles between the local and remote device. |
+| [BluetoothGatt](BluetoothGatt.md)? | connectGatt Connect to the GATT Server hosted by the given device. |
 | --- | --- |
-| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!)` Connect to GATT Server hosted by this device. |
-| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connect to GATT Server hosted by this device. |
-| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | connectGatt Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | connectGatt Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | connectGatt Connect to GATT Server hosted by this device. |
 | --- | --- |
-| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int,%20kotlin.Int,%20android.os.Handler)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Connect to GATT Server hosted by this device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createBond()()` Start the bonding (pairing) process with the remote device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createBond(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start the bonding (pairing) process with the remote device using the specified transport. |
+| [BluetoothGatt](BluetoothGatt.md)! | connectGatt Connect to GATT Server hosted by this device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | createBond Start the bonding (pairing) process with the remote device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | createBond Start the bonding (pairing) process with the remote device using the specified transport. |
 | --- | --- |
-| [BluetoothSocket](BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureL2capChannel(kotlin.Int)(psm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
-| [BluetoothSocket](BluetoothSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureRfcommSocketToServiceRecord(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` socket ready to start an insecure outgoing connection to this remote device using SDP lookup of uuid. |
-| [BluetoothSocket](BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createL2capChannel(kotlin.Int)(psm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
+| [BluetoothSocket](BluetoothSocket.md) | createInsecureL2capChannel Create a Bluetooth L2CAP Connection-oriented Channel (CoC) BluetoothSocket that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
+| [BluetoothSocket](BluetoothSocket.md)! | createInsecureRfcommSocketToServiceRecord Create an RFCOMM BluetoothSocket socket ready to start an insecure outgoing connection to this remote device using SDP lookup of uuid. |
+| [BluetoothSocket](BluetoothSocket.md) | createL2capChannel Create a Bluetooth L2CAP Connection-oriented Channel (CoC) BluetoothSocket that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
 | --- | --- |
-| [BluetoothSocket](BluetoothSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createRfcommSocketToServiceRecord(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` ready to start a secure outgoing connection to this remote device using SDP lookup of uuid. |
-| [BluetoothSocket](BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)(settings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings)` Creates a client socket to connect to a remote Bluetooth server with the specified socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings` This API is used to connect to a remote server hosted using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [BluetoothSocket](BluetoothSocket.md)! | createRfcommSocketToServiceRecord Create an RFCOMM BluetoothSocket ready to start a secure outgoing connection to this remote device using SDP lookup of uuid. |
+| [BluetoothSocket](BluetoothSocket.md) | createUsingSocketSettings Creates a client socket to connect to a remote Bluetooth server with the specified socket settings BluetoothSocketSettings This API is used to connect to a remote server hosted using listenUsingSocketSettings. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#disconnect()()` Disconnects all connected bluetooth profiles between the local and remote device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#disconnectAcl(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Disconnects ACL links for this device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | disconnect Disconnects all connected bluetooth profiles between the local and remote device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | disconnectAcl Disconnects ACL links for this device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#fetchUuids(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Performs a service discovery on the remote device to get the UUIDs supported, allowing the caller to specify the transport. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#fetchUuidsWithSdp()()` Performs a service discovery on the remote device to get the UUIDs supported. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getAddress()()` Returns the hardware address of this BluetoothDevice. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | fetchUuids Performs a service discovery on the remote device to get the UUIDs supported, allowing the caller to specify the transport. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | fetchUuidsWithSdp Performs a service discovery on the remote device to get the UUIDs supported. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getAddress Returns the hardware address of this BluetoothDevice. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getAddressType()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getAlias()()` Get the locally modifiable name (alias) of the remote Bluetooth device. |
-| [BluetoothClass](BluetoothClass.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBluetoothClass()()` Get the Bluetooth class of the remote device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAddressType <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getAlias Get the locally modifiable name (alias) of the remote Bluetooth device. |
+| [BluetoothClass](BluetoothClass.md)! | getBluetoothClass Get the Bluetooth class of the remote device. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBondState()()` This API returns the bond state of the remote device. |
-| [BondStatus](../android/bluetooth/BondStatus.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBondStatus(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the bond status of this device. |
-| [EncryptionStatus](EncryptionStatus.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getEncryptionStatus(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the encryption status of the connected device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBondState This API returns the bond state of the remote device. |
+| [BondStatus](../android/bluetooth/BondStatus.md)? | getBondStatus Returns the bond status of this device. |
+| [EncryptionStatus](EncryptionStatus.md)? | getEncryptionStatus Get the encryption status of the connected device. |
 | --- | --- |
-| [BluetoothDevice.BluetoothAddress](../android/bluetooth/BluetoothDevice.BluetoothAddress.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getIdentityAddressWithType()()` Returns the identity address and identity address type of this BluetoothDevice. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getKeyMissingCount()()` Get the number of times `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_KEY_MISSING:kotlin.String` intent was thrown for this device since the last successful encrypted connection. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getLeAppearance()()` Get the Bluetooth LE Appearance of the remote device. |
+| [BluetoothDevice.BluetoothAddress](../android/bluetooth/BluetoothDevice.BluetoothAddress.md) | getIdentityAddressWithType Returns the identity address and identity address type of this BluetoothDevice. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getKeyMissingCount Get the number of times `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_KEY_MISSING:kotlin.String` intent was thrown for this device since the last successful encrypted connection. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeAppearance Get the Bluetooth LE Appearance of the remote device. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getName()()` Get the friendly Bluetooth name of the remote device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getType()()` Get the Bluetooth device type of the remote device. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelUuid](../android.os/ParcelUuid.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getUuids()()` Returns the supported features (UUIDs) of the remote device. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Get the friendly Bluetooth name of the remote device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType Get the Bluetooth device type of the remote device. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelUuid](../android.os/ParcelUuid.md)!\>! | getUuids Returns the supported features (UUIDs) of the remote device. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#isConnected(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether there is an open connection to this device on the given transport. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#setAlias(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the locally modifiable name (alias) of the remote Bluetooth device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isConnected Returns whether there is an open connection to this device on the given transport. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | setAlias Sets the locally modifiable name (alias) of the remote Bluetooth device. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#setPairingConfirmation(kotlin.Boolean)(confirm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Confirm passkey for `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PAIRING_VARIANT_PASSKEY_CONFIRMATION:kotlin.Int` pairing. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#setPin(kotlin.ByteArray)(pin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Set the pin during pairing when the pairing method is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PAIRING_VARIANT_PIN:kotlin.Int` |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#toString()()` Returns a string representation of this BluetoothDevice. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPairingConfirmation Confirm passkey for `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PAIRING_VARIANT_PASSKEY_CONFIRMATION:kotlin.Int` pairing. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPin Set the pin during pairing when the pairing method is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PAIRING_VARIANT_PIN:kotlin.Int` |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of this BluetoothDevice. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -226,7 +226,7 @@ Always contains the extra fields `https://developer.android.com/reference/kotlin
 
 ACL connections are managed automatically by the Android Bluetooth stack. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.ACL_CONNECTED"
@@ -245,7 +245,7 @@ Always contains the extra fields `https://developer.android.com/reference/kotlin
 
 ACL connections are managed automatically by the Android Bluetooth stack. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.ACL_DISCONNECTED"
@@ -264,7 +264,7 @@ This is useful for graceful disconnection. Applications should use this intent a
 
 Always contains the extra field `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"
@@ -281,7 +281,7 @@ Broadcast Action: Indicates the alias of a remote device has been changed.
 
 Always contains the extra field `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.ALIAS_CHANGED"
@@ -298,7 +298,7 @@ Broadcast Action: Indicates a change in the bond state of a remote device. For e
 
 Always contains the extra fields `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_BOND_STATE:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_PREVIOUS_BOND_STATE:kotlin.String`. From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_PAIRING_CONTEXT:kotlin.String` will be available. An extra field #EXTRA_UNBOND_REASON will be present, if the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_BOND_STATE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#BOND_NONE:kotlin.Int`. From the next SDK release post `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_TRANSPORT:kotlin.String` will be available which indicates the transport(s) for which the new bond state applies. `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_AUTO:kotlin.Int` will be used if the bond update is applicable for both BREDR and LE transport, while the specific transport will be used if the bond update is applicable for only one of the transports. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.BOND_STATE_CHANGED"
@@ -315,14 +315,14 @@ Broadcast Action: Bluetooth class of a remote device has changed.
 
 Always contains the extra fields `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_CLASS:kotlin.String`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.CLASS_CHANGED"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass`
+- BluetoothClass
 
 ### ACTION_ENCRYPTION_CHANGE
 
@@ -375,7 +375,7 @@ From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CO
 
 `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_LE_APPEARANCE:kotlin.String` includes the LE Appearance value in the BLE advertising data (AD). Specifically, it includes the appearance data type, as defined by Bluetooth Core Specification Supplement (CSS). An `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#LE_APPEARANCE_UNKNOWN:kotlin.Int` or absent `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_LE_APPEARANCE:kotlin.String` indicates the AD does not include appearance data. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 In addition, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission. For apps targeting Build.VERSION_CODES#S or higher, an alternative is a strong assertion that you will never derive the physical location of the device, made by declaring `usesPermissionFlags="neverForLocation"` on the relevant `<uses-permission>` manifest tag. However, this assertion may restrict the types of Bluetooth devices you can interact with. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String`
 
@@ -416,7 +416,7 @@ static val ACTION_LE_APPEARANCE_CHANGED: String
 This intent will be broadcasted for bonded devices after LE connection is established, if the LE Appearance value was not known already or changed.
 
 Always contains the extra fields `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_LE_APPEARANCE:kotlin.String`. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.LE_APPEARANCE_CHANGED"
@@ -433,7 +433,7 @@ Broadcast Action: Indicates the friendly name of a remote device has been retrie
 
 Always contains the extra fields `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_DEVICE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_NAME:kotlin.String`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.NAME_CHANGED"
@@ -457,7 +457,7 @@ It will contain the following extra fields:
 
 . 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.PAIRING_REQUEST"
@@ -478,7 +478,7 @@ Always contains the extra field `https://developer.android.com/reference/kotlin/
 
 Always contains the extra field `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_UUID:kotlin.String` 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
  Value: "android.bluetooth.device.action.UUID"
@@ -786,7 +786,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_CLASS: String
 ```
 
-Used as a Parcelable `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothClass` extra field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_FOUND:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_CLASS_CHANGED:kotlin.String` intents.
+Used as a Parcelable BluetoothClass extra field in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_FOUND:kotlin.String` and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_CLASS_CHANGED:kotlin.String` intents.
 
  Value: "android.bluetooth.device.extra.CLASS"
 
@@ -798,7 +798,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_DEVICE: String
 ```
 
-Used as a Parcelable `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#` extra field in every intent broadcast by this class. It contains the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#` that the intent applies to.
+Used as a Parcelable BluetoothDevice extra field in every intent broadcast by this class. It contains the BluetoothDevice that the intent applies to.
 
  Value: "android.bluetooth.device.extra.DEVICE"
 
@@ -1325,7 +1325,7 @@ fun cancelBondProcess(): Boolean
 Cancel an in-progress bonding request started with #createBond.
 
 BLUETOOTH_PRIVILEGED is enforced only if the calling app didn't initiate bonding. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Return ||
 |---|---|
@@ -1341,8 +1341,8 @@ fun connect(): Int
 
 Connects all user enabled and supported bluetooth profiles between the local and remote device. If no profiles are user enabled (e.g. first connection), we connect all supported profiles. If the device is not already connected, this will page the device before initiating profile connections. Connection is asynchronous and you should listen to each profile's broadcast intent ACTION_CONNECTION_STATE_CHANGED to verify whether connection was successful. For example, to verify a2dp is connected, you would listen for `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothA2dp#ACTION_CONNECTION_STATE_CHANGED:kotlin.String`
 
-This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` permission or be associated with the Companion Device manager (see `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,%20android.companion.CompanionDeviceManager.Callback,%20android.os.Handler)`). 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` permission or be associated with the Companion Device manager (see associate). 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Return ||
 |---|---|
@@ -1364,20 +1364,20 @@ fun connectGatt(
 ): BluetoothGatt?
 ```
 
-Connect to the GATT Server hosted by the given device. Caller acts as a GATT client. `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback` of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattConnectionSettings` will deliver results to the Caller, such as connection updates and GATT client operation results. The method returns a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt` instance. The application can use BluetoothGatt to conduct GATT client operations. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+Connect to the GATT Server hosted by the given device. Caller acts as a GATT client. BluetoothGattCallback of BluetoothGattConnectionSettings will deliver results to the Caller, such as connection updates and GATT client operation results. The method returns a BluetoothGatt instance. The application can use BluetoothGatt to conduct GATT client operations. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `gattConnectionSettings` | [BluetoothGattConnectionSettings](../android/bluetooth/BluetoothGattConnectionSettings.md): `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattConnectionSettings` objects with required gatt settings for the GATT connection. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to use for the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `gattConnectionSettings` | [BluetoothGattConnectionSettings](../android/bluetooth/BluetoothGattConnectionSettings.md): BluetoothGattConnectionSettings objects with required gatt settings for the GATT connection. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to use for the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [BluetoothGattCallback](BluetoothGattCallback.md): GATT callback handler that will receive asynchronous callbacks. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGatt?` | A BluetoothGatt instance. You can use BluetoothGatt to conduct GATT client operations. This value may be `null`. |
+| BluetoothGatt | A BluetoothGatt instance. You can use BluetoothGatt to conduct GATT client operations. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1396,10 +1396,10 @@ fun connectGatt(
 ): BluetoothGatt!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)`.*
+**Deprecated:** *Use connectGatt.*
 
 Connect to GATT Server hosted by this device. Caller acts as GATT client. The callback is used to deliver results to Caller, such as connection status as well as any further GATT client operations. The method returns a BluetoothGatt instance. You can use BluetoothGatt to conduct GATT client operations. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1425,10 +1425,10 @@ fun connectGatt(
 ): BluetoothGatt!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)`.*
+**Deprecated:** *Use connectGatt.*
 
 Connect to GATT Server hosted by this device. Caller acts as GATT client. The callback is used to deliver results to Caller, such as connection status as well as any further GATT client operations. The method returns a BluetoothGatt instance. You can use BluetoothGatt to conduct GATT client operations. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1457,10 +1457,10 @@ fun connectGatt(
 ): BluetoothGatt!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)`.*
+**Deprecated:** *Use connectGatt.*
 
 Connect to GATT Server hosted by this device. Caller acts as GATT client. The callback is used to deliver results to Caller, such as connection status as well as any further GATT client operations. The method returns a BluetoothGatt instance. You can use BluetoothGatt to conduct GATT client operations. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1491,10 +1491,10 @@ fun connectGatt(
 ): BluetoothGatt!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)`.*
+**Deprecated:** *Use connectGatt.*
 
 Connect to GATT Server hosted by this device. Caller acts as GATT client. The callback is used to deliver results to Caller, such as connection status as well as any further GATT client operations. The method returns a BluetoothGatt instance. You can use BluetoothGatt to conduct GATT client operations. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1524,7 +1524,7 @@ This is an asynchronous call, it will return immediately. Register for `https://
 
 Android system services will handle the necessary user interactions to confirm and complete the bonding process. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -1545,7 +1545,7 @@ This is an asynchronous call, it will return immediately. Register for `https://
 
 Android system services will handle the necessary user interactions to confirm and complete the bonding process. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1568,15 +1568,15 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun createInsecureL2capChannel(psm: Int): BluetoothSocket
 ```
 
-Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. The supported Bluetooth transport is LE only.
+Create a Bluetooth L2CAP Connection-oriented Channel (CoC) BluetoothSocket that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. The supported Bluetooth transport is LE only.
 
-This is designed to be used with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingInsecureL2capChannel()` for peer-peer Bluetooth applications.
+This is designed to be used with listenUsingInsecureL2capChannel for peer-peer Bluetooth applications.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#connect()` to initiate the outgoing connection.
+Use connect to initiate the outgoing connection.
 
 Application using this API is responsible for obtaining PSM value from remote device.
 
-The communication channel may not have an authenticated link key, i.e. it may be subject to person-in-the-middle attacks. Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createL2capChannel(kotlin.Int)` if an encrypted and authenticated communication channel is possible.
+The communication channel may not have an authenticated link key, i.e. it may be subject to person-in-the-middle attacks. Use createL2capChannel if an encrypted and authenticated communication channel is possible.
 
 | Parameters ||
 |---|---|
@@ -1584,7 +1584,7 @@ The communication channel may not have an authenticated link key, i.e. it may be
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` | a CoC #BluetoothSocket ready for an outgoing connection. This value cannot be `null`. |
+| BluetoothSocket | a CoC #BluetoothSocket ready for an outgoing connection. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1598,13 +1598,13 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun createInsecureRfcommSocketToServiceRecord(uuid: UUID!): BluetoothSocket!
 ```
 
-Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` socket ready to start an insecure outgoing connection to this remote device using SDP lookup of uuid.
+Create an RFCOMM BluetoothSocket socket ready to start an insecure outgoing connection to this remote device using SDP lookup of uuid.
 
-The communication channel will not have an authenticated link key i.e. it will be subject to person-in-the-middle attacks. For Bluetooth 2.1 devices, the link key will be encrypted, as encryption is mandatory. For legacy devices (pre Bluetooth 2.1 devices) the link key will be not be encrypted. Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createRfcommSocketToServiceRecord(java.util.UUID)` if an encrypted and authenticated communication channel is desired.
+The communication channel will not have an authenticated link key i.e. it will be subject to person-in-the-middle attacks. For Bluetooth 2.1 devices, the link key will be encrypted, as encryption is mandatory. For legacy devices (pre Bluetooth 2.1 devices) the link key will be not be encrypted. Use createRfcommSocketToServiceRecord if an encrypted and authenticated communication channel is desired.
 
-This is designed to be used with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingInsecureRfcommWithServiceRecord(kotlin.String,%20java.util.UUID)` for peer-peer Bluetooth applications.
+This is designed to be used with listenUsingInsecureRfcommWithServiceRecord for peer-peer Bluetooth applications.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#connect()` to initiate the outgoing connection. This will also perform an SDP lookup of the given uuid to determine which channel to connect to.
+Use connect to initiate the outgoing connection. This will also perform an SDP lookup of the given uuid to determine which channel to connect to.
 
 The remote device will be authenticated and communication on this socket will be encrypted.
 
@@ -1630,11 +1630,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun createL2capChannel(psm: Int): BluetoothSocket
 ```
 
-Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. The supported Bluetooth transport is LE only.
+Create a Bluetooth L2CAP Connection-oriented Channel (CoC) BluetoothSocket that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. The supported Bluetooth transport is LE only.
 
-This is designed to be used with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingL2capChannel()` for peer-peer Bluetooth applications.
+This is designed to be used with listenUsingL2capChannel for peer-peer Bluetooth applications.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#connect()` to initiate the outgoing connection.
+Use connect to initiate the outgoing connection.
 
 Application using this API is responsible for obtaining PSM value from remote device.
 
@@ -1648,7 +1648,7 @@ Use this socket if an authenticated socket link is possible. Authentication refe
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` | a CoC #BluetoothSocket ready for an outgoing connection. This value cannot be `null`. |
+| BluetoothSocket | a CoC #BluetoothSocket ready for an outgoing connection. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1662,15 +1662,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun createRfcommSocketToServiceRecord(uuid: UUID!): BluetoothSocket!
 ```
 
-Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` ready to start a secure outgoing connection to this remote device using SDP lookup of uuid.
+Create an RFCOMM BluetoothSocket ready to start a secure outgoing connection to this remote device using SDP lookup of uuid.
 
-This is designed to be used with `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingRfcommWithServiceRecord(kotlin.String,%20java.util.UUID)` for peer-peer Bluetooth applications.
+This is designed to be used with listenUsingRfcommWithServiceRecord for peer-peer Bluetooth applications.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#connect()` to initiate the outgoing connection. This will also perform an SDP lookup of the given uuid to determine which channel to connect to.
+Use connect to initiate the outgoing connection. This will also perform an SDP lookup of the given uuid to determine which channel to connect to.
 
 The remote device will be authenticated and communication on this socket will be encrypted.
 
-Use this socket only if an authenticated socket link is possible. Authentication refers to the authentication of the link key to prevent person-in-the-middle type of attacks. For example, for Bluetooth 2.1 devices, if any of the devices does not have an input and output capability or just has the ability to display a numeric key, a secure socket connection is not possible. In such a case, use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureRfcommSocketToServiceRecord(java.util.UUID)`. For more details, refer to the Security Model section 5.2 (vol 3) of Bluetooth Core Specification version 2.1 + EDR.
+Use this socket only if an authenticated socket link is possible. Authentication refers to the authentication of the link key to prevent person-in-the-middle type of attacks. For example, for Bluetooth 2.1 devices, if any of the devices does not have an input and output capability or just has the ability to display a numeric key, a secure socket connection is not possible. In such a case, use createInsecureRfcommSocketToServiceRecord. For more details, refer to the Security Model section 5.2 (vol 3) of Bluetooth Core Specification version 2.1 + EDR.
 
 Hint: If you are connecting to a Bluetooth serial board then try using the well-known SPP UUID 00001101-0000-1000-8000-00805F9B34FB. However if you are connecting to an Android peer then please generate your own unique UUID.
 
@@ -1694,7 +1694,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun createUsingSocketSettings(settings: BluetoothSocketSettings): BluetoothSocket
 ```
 
-Creates a client socket to connect to a remote Bluetooth server with the specified socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings` This API is used to connect to a remote server hosted using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)`.
+Creates a client socket to connect to a remote Bluetooth server with the specified socket settings BluetoothSocketSettings This API is used to connect to a remote server hosted using listenUsingSocketSettings.
 
 - For \`BluetoothSocket.TYPE_RFCOMM\`: The RFCOMM UUID must be provided using android.bluetooth.BluetoothSocketSettings#setRfcommUuid().
 - For \`BluetoothSocket.TYPE_LE\`: The L2cap protocol/service multiplexer (PSM) value must be provided using android.bluetooth.BluetoothSocketSettings#setL2capPsm().
@@ -1703,15 +1703,15 @@ Creates a client socket to connect to a remote Bluetooth server with the specifi
 
 Application using this API is responsible for obtaining protocol/service multiplexer (psm) value from remote device.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket#connect()` to initiate the outgoing connection.
+Use connect to initiate the outgoing connection.
 
 | Parameters ||
 |---|---|
-| `settings` | [BluetoothSocketSettings](BluetoothSocketSettings.md): Bluetooth socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. This value cannot be `null`. |
+| `settings` | [BluetoothSocketSettings](BluetoothSocketSettings.md): Bluetooth socket settings BluetoothSocketSettings. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` | a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` ready for an outgoing connection. This value cannot be `null`. |
+| BluetoothSocket | a BluetoothSocket ready for an outgoing connection. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1726,7 +1726,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -1744,8 +1744,8 @@ Disconnects all connected bluetooth profiles between the local and remote device
 
 In the rare event that one or more profiles fail to disconnect, call this method again to send another request to disconnect each connected profile.
 
-This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have both `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or be associated with the Companion Device manager (see `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,%20android.companion.CompanionDeviceManager.Callback,%20android.os.Handler)`). 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have both `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or be associated with the Companion Device manager (see associate). 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Return ||
 |---|---|
@@ -1769,8 +1769,8 @@ If `transport` is `https://developer.android.com/reference/kotlin/android/blueto
 
 Disconnection is asynchronous, so apps should listen to `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_ACL_DISCONNECTED:kotlin.String` to verify whether disconnection was successful.
 
-This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or have a Companion Device Manager association with this device (see `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,%20android.companion.CompanionDeviceManager.Callback,%20android.os.Handler)`). 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or have a Companion Device Manager association with this device (see associate). 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Parameters ||
 |---|---|
@@ -1823,10 +1823,10 @@ fun fetchUuids(transport: Int): Boolean
 
 Performs a service discovery on the remote device to get the UUIDs supported, allowing the caller to specify the transport.
 
-This API is asynchronous. When discovery completes, the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_UUID:kotlin.String` intent is sent, containing the UUIDs supported by the remote device for the specified transport(s). Cached UUIDs may be sent if an error occurs or if discovery is lengthy. Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getUuids()` to retrieve cached UUIDs without initiating discovery.
+This API is asynchronous. When discovery completes, the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_UUID:kotlin.String` intent is sent, containing the UUIDs supported by the remote device for the specified transport(s). Cached UUIDs may be sent if an error occurs or if discovery is lengthy. Use getUuids to retrieve cached UUIDs without initiating discovery.
 
 The implementation already handles invalid transport arguments by throwing IllegalArgumentException and returns false when Bluetooth is disabled, covering the contract verification points. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1843,11 +1843,11 @@ fun fetchUuidsWithSdp(): Boolean
 
 Performs a service discovery on the remote device to get the UUIDs supported.
 
-This API is asynchronous and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_UUID:kotlin.String` intent is sent, with the UUIDs supported by the remote end. If there is an error in getting the SDP records or if the process takes a long time, or the device is bonding and we have its UUIDs cached, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_UUID:kotlin.String` intent is sent with the UUIDs that is currently present in the cache. Clients should use the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getUuids()` to get UUIDs if service discovery is not to be performed. If there is an ongoing bonding process, service discovery or device inquiry, the request will be queued.
+This API is asynchronous and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_UUID:kotlin.String` intent is sent, with the UUIDs supported by the remote end. If there is an error in getting the SDP records or if the process takes a long time, or the device is bonding and we have its UUIDs cached, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_UUID:kotlin.String` intent is sent with the UUIDs that is currently present in the cache. Clients should use the getUuids to get UUIDs if service discovery is not to be performed. If there is an ongoing bonding process, service discovery or device inquiry, the request will be queued.
 
-To explicitly fetch UUIDs across all transports, use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#fetchUuids(kotlin.Int)` by calling `fetchUuids(BluetoothDevice.TRANSPORT_AUTO)`. 
+To explicitly fetch UUIDs across all transports, use fetchUuids by calling `fetchUuids(BluetoothDevice.TRANSPORT_AUTO)`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -1892,7 +1892,7 @@ fun getAlias(): String?
 
 Get the locally modifiable name (alias) of the remote Bluetooth device. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -1909,7 +1909,7 @@ fun getBluetoothClass(): BluetoothClass!
 
 Get the Bluetooth class of the remote device. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -1926,11 +1926,11 @@ fun getBondState(): Int
 
 This API returns the bond state of the remote device.
 
-Note: The bond state returned by this API may not correctly represent the actual bond state for all transports. To get the correct bond status for a specific transport, use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBondStatus(kotlin.Int)`
+Note: The bond state returned by this API may not correctly represent the actual bond state for all transports. To get the correct bond status for a specific transport, use getBondStatus
 
 Possible values for the bond state are: `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#BOND_NONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#BOND_BONDING:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#BOND_BONDED:kotlin.Int`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -1946,7 +1946,7 @@ fun getBondStatus(transport: Int): BondStatus?
 ```
 
 Returns the bond status of this device. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1955,7 +1955,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BondStatus?` | The bond status of this device, or null if the device is not bonded. |
+| BondStatus | The bond status of this device, or null if the device is not bonded. |
 
 ### getEncryptionStatus
 
@@ -1965,8 +1965,8 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getEncryptionStatus(transport: Int): EncryptionStatus?
 ```
 
-Get the encryption status of the connected device. This API will return the encryption state (if connected). The encryption details are enclosed in a `https://developer.android.com/reference/kotlin/android/bluetooth/EncryptionStatus` object, which can be null if the device is not encrypted (or not connected). 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+Get the encryption status of the connected device. This API will return the encryption state (if connected). The encryption details are enclosed in a EncryptionStatus object, which can be null if the device is not encrypted (or not connected). 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -1975,7 +1975,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/EncryptionStatus?` | the encryption status of the device, null if the device is not encrypted or not connected. |
+| EncryptionStatus | the encryption status of the device, null if the device is not encrypted or not connected. |
 
 ### getIdentityAddressWithType
 
@@ -1986,7 +1986,7 @@ fun getIdentityAddressWithType(): BluetoothDevice.BluetoothAddress
 ```
 
 Returns the identity address and identity address type of this BluetoothDevice. An identity address is a public or static random Bluetooth LE device address that serves as a unique identifier. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String`
 
 | Return ||
@@ -2002,7 +2002,7 @@ fun getKeyMissingCount(): Int
 ```
 
 Get the number of times `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_KEY_MISSING:kotlin.String` intent was thrown for this device since the last successful encrypted connection. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -2027,7 +2027,7 @@ The cache is populated either by extracting Appearance AD type from LE advertise
 
 According to the Bluetooth SIG GAP specifications, the Appearance characteristic does not support GATT notifications/indications. The changes to a device's appearance are only broadcasted for bonded devices using the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_LE_APPEARANCE_CHANGED:kotlin.String` intent containing the new `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#EXTRA_LE_APPEARANCE:kotlin.String` value. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -2046,7 +2046,7 @@ Get the friendly Bluetooth name of the remote device.
 
 The local adapter will automatically retrieve remote names when performing a device scan, and will cache them. This method just returns the name for this device from the cache. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -2063,7 +2063,7 @@ fun getType(): Int
 
 Get the Bluetooth device type of the remote device. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -2082,9 +2082,9 @@ Returns the supported features (UUIDs) of the remote device.
 
 This method does not start a service discovery procedure to retrieve the UUIDs from the remote device. Instead, the local cached copy of the service UUIDs are returned.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#fetchUuidsWithSdp()` if fresh UUIDs are desired. 
+Use fetchUuidsWithSdp if fresh UUIDs are desired. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Return ||
@@ -2104,8 +2104,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -2120,7 +2120,7 @@ fun isConnected(transport: Int): Boolean
 ```
 
 Returns whether there is an open connection to this device on the given transport. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -2141,9 +2141,9 @@ fun setAlias(alias: String?): Int
 
 Sets the locally modifiable name (alias) of the remote Bluetooth device. This method overwrites the previously stored alias. The new alias is saved in local storage so that the change is preserved over power cycles.
 
-This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or be associated with the Companion Device manager (see `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,%20android.companion.CompanionDeviceManager.Callback,%20android.os.Handler)`). 
+This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission. Additionally, an app must either have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` or be associated with the Companion Device manager (see associate). 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Parameters ||
 |---|---|
@@ -2166,7 +2166,7 @@ fun setPairingConfirmation(confirm: Boolean): Boolean
 ```
 
 Confirm passkey for `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PAIRING_VARIANT_PASSKEY_CONFIRMATION:kotlin.Int` pairing. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String`
 
 | Return ||
@@ -2188,7 +2188,7 @@ Set the pin during pairing when the pairing method is `https://developer.android
 
 When the calling application targets API level 37 or higher, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` is required. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`.
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with requestPermissions.
 
 | Return ||
 |---|---|
@@ -2206,7 +2206,7 @@ Returns a string representation of this BluetoothDevice.
 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` (API level 34) or higher, this returns the MAC address of the device redacted by replacing the hexadecimal digits of leftmost 4 bytes (in big endian order) with "XX", e.g., "XX:XX:XX:XX:12:34". For apps targeting earlier versions, the MAC address is returned without redaction.
 
-Warning: The return value of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#toString()` may change in the future. It is intended to be used in logging statements. Thus apps should never rely on the return value of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#toString()` in their logic. Always use other appropriate APIs instead (e.g., use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getAddress()` to get the MAC address).
+Warning: The return value of toString may change in the future. It is intended to be used in logging statements. Thus apps should never rely on the return value of toString in their logic. Always use other appropriate APIs instead (e.g., use getAddress to get the MAC address).
 
 | Return ||
 |---|---|

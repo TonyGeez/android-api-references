@@ -13,7 +13,7 @@ abstract class RangingResultCallback
 | --- | --- |
 | ↳ | [android.net.wifi.rtt.RangingResultCallback](RangingResultCallback.md) |
 
-Base class for ranging result callbacks. Should be extended by applications and set when calling `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`. If the ranging operation fails in whole (not attempted) then `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingFailure(kotlin.Int)` will be called with a failure code. If the ranging operation is performed for each of the requested peers then the `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingResults(kotlin.collections.MutableList)` will be called with the set of results (@link `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult`, each of which has its own success/failure code `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult#getStatus()`.
+Base class for ranging result callbacks. Should be extended by applications and set when calling startRanging. If the ranging operation fails in whole (not attempted) then onRangingFailure will be called with a failure code. If the ranging operation is performed for each of the requested peers then the onRangingResults will be called with the set of results (@link RangingResult, each of which has its own success/failure code getStatus.
 
 ## Summary
 
@@ -24,12 +24,12 @@ Base class for ranging result callbacks. Should be extended by applications and 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#RangingResultCallback()()` <br /> |
+| RangingResultCallback <br /> |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingFailure(kotlin.Int)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a ranging operation failed in whole - i. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResultCallback#onRangingResults(kotlin.collections.MutableList)(results: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/wifi/rtt/RangingResult!>)` Called when a ranging operation was executed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onRangingFailure Called when a ranging operation failed in whole - i. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onRangingResults Called when a ranging operation was executed. |
 
 ## Constants
 
@@ -53,7 +53,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_CODE_FAIL_RTT_NOT_AVAILABLE: Int
 ```
 
-A failure code for the whole ranging request operation. Indicates that the request failed due to RTT not being available - e.g. Wi-Fi was disabled. Use the `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#isAvailable()` and `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#ACTION_WIFI_RTT_STATE_CHANGED:kotlin.String` to track RTT availability.
+A failure code for the whole ranging request operation. Indicates that the request failed due to RTT not being available - e.g. Wi-Fi was disabled. Use the isAvailable and `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#ACTION_WIFI_RTT_STATE_CHANGED:kotlin.String` to track RTT availability.
 
  Value: 2
 

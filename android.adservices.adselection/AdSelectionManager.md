@@ -23,19 +23,19 @@ AdSelection Manager provides APIs for app and ad-SDKs to run ad selection proces
 
 | Public methods ||
 |---|---|
-| open static [AdSelectionManager](AdSelectionManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method for creating an instance of AdSelectionManager. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Collects custom audience data from device. |
-| open [TestAdSelectionManager](TestAdSelectionManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getTestAdSelectionManager()()` <br /> |
+| open static [AdSelectionManager](AdSelectionManager.md) | get Factory method for creating an instance of AdSelectionManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getAdSelectionData Collects custom audience data from device. |
+| open [TestAdSelectionManager](TestAdSelectionManager.md) | getTestAdSelectionManager <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#persistAdSelectionResult(android.adservices.adselection.PersistAdSelectionResultRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Persists the ad selection results from the server-side. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#reportEvent(android.adservices.adselection.ReportEventRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Notifies the service that there is a new ad event to report for the ad selected by the ad-selection run identified by `adSelectionId`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#reportImpression(android.adservices.adselection.ReportImpressionRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Notifies the service that there is a new impression to report for the ad selected by the ad-selection run identified by `adSelectionId`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | persistAdSelectionResult Persists the ad selection results from the server-side. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reportEvent Notifies the service that there is a new ad event to report for the ad selected by the ad-selection run identified by `adSelectionId`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reportImpression Notifies the service that there is a new impression to report for the ad selected by the ad-selection run identified by `adSelectionId`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(adSelectionConfig: https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Runs the ad selection process on device to select a remarketing ad for the caller application. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionFromOutcomesConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(adSelectionFromOutcomesConfig: https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Selects an ad from the results of previously ran ad selections. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#setAppInstallAdvertisers(android.adservices.adselection.SetAppInstallAdvertisersRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/adservices/adselection/SetAppInstallAdvertisersRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Gives the provided list of adtechs the ability to do app install filtering on the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | selectAds Runs the ad selection process on device to select a remarketing ad for the caller application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | selectAds Selects an ad from the results of previously ran ad selections. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAppInstallAdvertisers Gives the provided list of adtechs the ability to do app install filtering on the calling app. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#updateAdCounterHistogram(android.adservices.adselection.UpdateAdCounterHistogramRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(updateAdCounterHistogramRequest: https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, outcomeReceiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Updates the counter histograms for an ad which was previously selected by a call to `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAdCounterHistogram Updates the counter histograms for an ad which was previously selected by a call to selectAds. |
 
 ## Public methods
 
@@ -59,7 +59,7 @@ Factory method for creating an instance of AdSelectionManager.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#` | A `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#` instance. This value cannot be `null`. |
+| AdSelectionManager | A AdSelectionManager instance. This value cannot be `null`. |
 
 ### getAdSelectionData
 
@@ -81,9 +81,9 @@ Collects custom audience data from device. Returns a compressed and encrypted bl
 
 Custom audience ads must have a `ad_render_id` to be eligible for to be collected.
 
-See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#persistAdSelectionResult(android.adservices.adselection.PersistAdSelectionResultRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` for how to process the results of the ad selection run on server-side with the blob generated by this API.
+See persistAdSelectionResult for how to process the results of the ad selection run on server-side with the blob generated by this API.
 
-The output is passed by the receiver, which either returns an `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataOutcome` for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
+The output is passed by the receiver, which either returns an GetAdSelectionDataOutcome for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
 
 If the `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` is thrown, it is caused by invalid input argument the API received to run the ad selection.
 
@@ -99,7 +99,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 | Parameters ||
 |---|---|
 | `request` | [GetAdSelectionDataRequest](GetAdSelectionDataRequest.md): This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetAdSelectionDataOutcome](GetAdSelectionDataOutcome.md)!, [Exception](../java.lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
@@ -117,7 +117,7 @@ open fun getTestAdSelectionManager(): TestAdSelectionManager
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager` | This value cannot be `null`. |
+| TestAdSelectionManager | This value cannot be `null`. |
 
 ### persistAdSelectionResult
 
@@ -137,9 +137,9 @@ open fun persistAdSelectionResult(
 
 Persists the ad selection results from the server-side. For more details, please visit [Bidding and Auction Services Explainer](https://developer.android.com/design-for-safety/privacy-sandbox/protected-audience-bidding-and-auction-services)
 
-See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` for how to generate an encrypted blob to run an ad selection on the server side.
+See getAdSelectionData for how to generate an encrypted blob to run an ad selection on the server side.
 
-The output is passed by the receiver, which either returns an `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome` for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message. The `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome#getAdSelectionId()` is not guaranteed to be the same as the `https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#getAdSelectionDataId()` or the deprecated `https://developer.android.com/reference/kotlin/android/adservices/adselection/PersistAdSelectionResultRequest#getAdSelectionId()`.
+The output is passed by the receiver, which either returns an AdSelectionOutcome for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message. The getAdSelectionId is not guaranteed to be the same as the getAdSelectionDataId or the deprecated getAdSelectionId.
 
 If the `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` is thrown, it is caused by invalid input argument the API received to run the ad selection.
 
@@ -155,7 +155,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 | Parameters ||
 |---|---|
 | `request` | [PersistAdSelectionResultRequest](PersistAdSelectionResultRequest.md): This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AdSelectionOutcome](AdSelectionOutcome.md)!, [Exception](../java.lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
@@ -177,7 +177,7 @@ open fun reportEvent(
 
 Notifies the service that there is a new ad event to report for the ad selected by the ad-selection run identified by `adSelectionId`. An ad event is any occurrence that happens to an ad associated with the given `adSelectionId`. There is no guarantee about when the ad event will be reported. The event reporting could be delayed and reports could be batched.
 
-Using `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getKey()`, the service will fetch the `reportingUri` that was registered in `registerAdBeacon`. See documentation of `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#reportImpression(android.adservices.adselection.ReportImpressionRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` for more details regarding `registerAdBeacon`. Then, the service will attach `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getData()` to the request body of a POST request and send the request. The body of the POST request will have the `content-type` of `text/plain`, and the data will be transmitted in `charset=UTF-8`.
+Using getKey, the service will fetch the `reportingUri` that was registered in `registerAdBeacon`. See documentation of reportImpression for more details regarding `registerAdBeacon`. Then, the service will attach getData to the request body of a POST request and send the request. The body of the POST request will have the `content-type` of `text/plain`, and the data will be transmitted in `charset=UTF-8`.
 
 The output is passed by the receiver, which either returns an empty `https://developer.android.com/reference/kotlin/java/lang/Object.html#` for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
 
@@ -217,13 +217,13 @@ open fun reportImpression(
 
 Notifies the service that there is a new impression to report for the ad selected by the ad-selection run identified by `adSelectionId`. There is no guarantee about when the impression will be reported. The impression reporting could be delayed and reports could be batched.
 
-To calculate the winning seller reporting URL, the service fetches the seller's JavaScript logic from the `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getDecisionLogicUri()` found at `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#getAdSelectionConfig()`. Then, the service executes one of the functions found in the seller JS called `reportResult`, providing on-device signals as well as `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#getAdSelectionConfig()` as input parameters.
+To calculate the winning seller reporting URL, the service fetches the seller's JavaScript logic from the getDecisionLogicUri found at getAdSelectionConfig. Then, the service executes one of the functions found in the seller JS called `reportResult`, providing on-device signals as well as getAdSelectionConfig as input parameters.
 
 The function definition of `reportResult` is:
 
 `function reportResult(ad_selection_config, render_url, bid, contextual_signals) { return { 'status': status, 'results': {'signals_for_buyer': signals_for_buyer, 'reporting_url': reporting_url } }; } `
 
-To calculate the winning buyer reporting URL, the service fetches the winning buyer's JavaScript logic which is fetched via the buyer's `https://developer.android.com/reference/kotlin/android/adservices/customaudience/CustomAudience.html#getBiddingLogicUri()`. Then, the service executes one of the functions found in the buyer JS called `reportWin`, providing on-device signals, `signals_for_buyer` calculated by `reportResult`, and specific fields from `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#getAdSelectionConfig()` as input parameters.
+To calculate the winning buyer reporting URL, the service fetches the winning buyer's JavaScript logic which is fetched via the buyer's getBiddingLogicUri. Then, the service executes one of the functions found in the buyer JS called `reportWin`, providing on-device signals, `signals_for_buyer` calculated by `reportResult`, and specific fields from getAdSelectionConfig as input parameters.
 
 The function definition of `reportWin` is:
 
@@ -235,7 +235,7 @@ The function definition of `registerBeacon` is:
 
 `function registerAdBeacon(beacons)`, where `beacons` is a dict of string to string pairs
 
-For each ad event a buyer/seller is interested in reports for, they would add an `event_key`: `event_reporting_uri` pair to the `beacons` dict, where `event_key` is an identifier for that specific event. This `event_key` should match `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportEventRequest#getKey()` when the SDK invokes `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#reportEvent(android.adservices.adselection.ReportEventRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. In addition, each `event_reporting_uri` should parse properly into a `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. This will be the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` reported to when the SDK invokes `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#reportEvent(android.adservices.adselection.ReportEventRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+For each ad event a buyer/seller is interested in reports for, they would add an `event_key`: `event_reporting_uri` pair to the `beacons` dict, where `event_key` is an identifier for that specific event. This `event_key` should match getKey when the SDK invokes reportEvent. In addition, each `event_reporting_uri` should parse properly into a `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. This will be the `https://developer.android.com/reference/kotlin/android/net/Uri.html#` reported to when the SDK invokes reportEvent.
 
 When the buyer/seller has added all the pairings they want to receive events for, they can invoke `registerAdBeacon(beacons)`, where `beacons` is the name of the dict they added the pairs to.
 
@@ -283,7 +283,7 @@ open fun selectAds(
 
 Runs the ad selection process on device to select a remarketing ad for the caller application.
 
-The input `adSelectionConfig` is provided by the Ads SDK and the `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` object is transferred via a Binder call. For this reason, the total size of these objects is bound to the Android IPC limitations. Failures to transfer the `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` will throws an `https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException.html#`.
+The input `adSelectionConfig` is provided by the Ads SDK and the AdSelectionConfig object is transferred via a Binder call. For this reason, the total size of these objects is bound to the Android IPC limitations. Failures to transfer the AdSelectionConfig will throws an `https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException.html#`.
 
 The input `adSelectionConfig` contains `Decision Logic Uri` that could follow either the HTTPS or Ad Selection Prebuilt schemas.
 
@@ -295,9 +295,9 @@ Prebuilt URIs are a way of substituting a generic pre-built logics for the requi
 
 If an unsupported prebuilt URI is passed or prebuilt URI feature is disabled by the service then `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown.
 
-See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig.Builder#setDecisionLogicUri(android.net.Uri)` for supported `<name>` and required `<script-generation-parameters>`.
+See setDecisionLogicUri for supported `<name>` and required `<script-generation-parameters>`.
 
-The output is passed by the receiver, which either returns an `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome` for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
+The output is passed by the receiver, which either returns an AdSelectionOutcome for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
 
 If the `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` is thrown, it is caused by invalid input argument the API received to run the ad selection.
 
@@ -313,7 +313,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 | Parameters ||
 |---|---|
 | `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AdSelectionOutcome](AdSelectionOutcome.md)!, [Exception](../java.lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
@@ -335,9 +335,9 @@ open fun selectAds(
 
 Selects an ad from the results of previously ran ad selections.
 
-The input `adSelectionFromOutcomesConfig` is provided by the Ads SDK and the `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig` object is transferred via a Binder call. For this reason, the total size of these objects is bound to the Android IPC limitations. Failures to transfer the `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig` will throws an `https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException.html#`.
+The input `adSelectionFromOutcomesConfig` is provided by the Ads SDK and the AdSelectionFromOutcomesConfig object is transferred via a Binder call. For this reason, the total size of these objects is bound to the Android IPC limitations. Failures to transfer the AdSelectionFromOutcomesConfig will throws an `https://developer.android.com/reference/kotlin/android/os/TransactionTooLargeException.html#`.
 
-The output is passed by the receiver, which either returns an `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome` for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
+The output is passed by the receiver, which either returns an AdSelectionOutcome for a successful run, or an `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` includes the type of the exception thrown and the corresponding error message.
 
 The input `adSelectionFromOutcomesConfig` contains:
 
@@ -352,7 +352,7 @@ The input `adSelectionFromOutcomesConfig` contains:
 
  If an unsupported prebuilt URI is passed or prebuilt URI feature is disabled by the service then `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown.
 
- See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionFromOutcomesConfig.Builder#setSelectionLogicUri(android.net.Uri)` for supported `<name>` and required `<script-generation-parameters>`.
+ See setSelectionLogicUri for supported `<name>` and required `<script-generation-parameters>`.
 
 If the `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` is thrown, it is caused by invalid input argument the API received to run the ad selection.
 
@@ -368,7 +368,7 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 | Parameters ||
 |---|---|
 | `adSelectionFromOutcomesConfig` | [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md): This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AdSelectionOutcome](AdSelectionOutcome.md)!, [Exception](../java.lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
@@ -426,7 +426,7 @@ open fun updateAdCounterHistogram(
 
 **Deprecated:** *Deprecated in Java.*
 
-Updates the counter histograms for an ad which was previously selected by a call to `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+Updates the counter histograms for an ad which was previously selected by a call to selectAds.
 
 The counter histograms are used in ad selection to inform frequency cap filtering on candidate ads, where ads whose frequency caps are met or exceeded are removed from the bidding process during ad selection.
 
@@ -447,6 +447,6 @@ Requires `https://developer.android.com/reference/kotlin/android/adservices/comm
 | Parameters ||
 |---|---|
 | `updateAdCounterHistogramRequest` | [UpdateAdCounterHistogramRequest](UpdateAdCounterHistogramRequest.md): This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `outcomeReceiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Exception](../java.lang/Exception.md)!\>: This value cannot be `null`. |
 | --- | --- |

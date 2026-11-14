@@ -38,7 +38,7 @@ Common media metadata columns.
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_ADDED:kotlin.String` The time the media item was first added. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_EXPIRES:kotlin.String` The time the media item should be considered expired. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_MODIFIED:kotlin.String` Indexed value of `https://developer.android.com/reference/kotlin/java/io/File.html#lastModified()` extracted from this media item. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_MODIFIED:kotlin.String` Indexed value of lastModified extracted from this media item. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_TAKEN:kotlin.String` Indexed value of `https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever.html#METADATA_KEY_DATE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/ExifInterface.html#TAG_DATETIME_ORIGINAL:kotlin.String` extracted from this media item. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DISC_NUMBER:kotlin.String` Indexed value of `https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever.html#METADATA_KEY_DISC_NUMBER:kotlin.Int` extracted from this media item. |
@@ -72,7 +72,7 @@ Common media metadata columns.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#RELATIVE_PATH:kotlin.String` Relative path of this media item within the storage device where it is persisted. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#RESOLUTION:kotlin.String` Calculated value that combines `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#HEIGHT:kotlin.String` into a user-presentable string. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#SIZE:kotlin.String` Indexed value of `https://developer.android.com/reference/kotlin/java/io/File.html#length()` extracted from this media item. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#SIZE:kotlin.String` Indexed value of length extracted from this media item. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#TITLE:kotlin.String` Indexed value of `https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever.html#METADATA_KEY_TITLE:kotlin.Int` extracted from this media item. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#VOLUME_NAME:kotlin.String` Volume name of the specific storage device where this media item is persisted. |
 | --- | --- |
@@ -84,7 +84,7 @@ Common media metadata columns.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/provider/BaseColumns` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_COUNT:kotlin.String` The count of rows in a directory. Type: INTEGER <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String` The unique ID for a row. Type: INTEGER (long) <br /> | ||
+| From class BaseColumns |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_COUNT:kotlin.String` The count of rows in a directory. Type: INTEGER <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/android/provider/BaseColumns#_ID:kotlin.String` The unique ID for a row. Type: INTEGER (long) <br /> | ||
 
 ## Constants
 
@@ -245,7 +245,7 @@ Apps may use this path to do file operations. However, they should not assume th
 
 From Android 11 onwards, this column is read-only for apps that target `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and higher. On those devices, when creating or updating a uri, this column's value is not accepted. Instead, to update the filesystem location of a file, use the values of the `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DISPLAY_NAME:kotlin.String` and `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#RELATIVE_PATH:kotlin.String` columns.
 
-Though direct file operations are supported, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)` API is recommended for better performance. 
+Though direct file operations are supported, openFileDescriptor API is recommended for better performance. 
 This constant represents a column name that can be used with a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` through a `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` or `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` object. The values stored in this column are `https://developer.android.com/reference/kotlin/android/database/Cursor.html#FIELD_TYPE_STRING:kotlin.Int` .
 
  Value: "_data"
@@ -290,7 +290,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DATE_MODIFIED: String
 ```
 
-Indexed value of `https://developer.android.com/reference/kotlin/java/io/File.html#lastModified()` extracted from this media item. 
+Indexed value of lastModified extracted from this media item. 
 Value is a non-negative timestamp measured as the number of seconds since 1970-01-01T00:00:00Z. 
 This constant represents a column name that can be used with a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` through a `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` or `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` object. The values stored in this column are `https://developer.android.com/reference/kotlin/android/database/Cursor.html#FIELD_TYPE_INTEGER:kotlin.Int` , and are read-only and cannot be mutated.
 
@@ -379,16 +379,16 @@ static val GENERATION_ADDED: String
 
 Generation number at which metadata for this media item was first inserted. This is useful for apps that are attempting to quickly identify exactly which media items have been added since a previous point in time. Generation numbers are monotonically increasing over time, and can be safely arithmetically compared.
 
-Detecting media additions using generation numbers is more robust than using `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_ADDED:kotlin.String`, since those values may change in unexpected ways when apps use `https://developer.android.com/reference/kotlin/java/io/File.html#setLastModified(kotlin.Long)` or when the system clock is set incorrectly.
+Detecting media additions using generation numbers is more robust than using `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_ADDED:kotlin.String`, since those values may change in unexpected ways when apps use setLastModified or when the system clock is set incorrectly.
 
-Note that before comparing these detailed generation values, you should first confirm that the overall version hasn't changed by checking `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context,%20kotlin.String)`, since that indicates when a more radical change has occurred. If the overall version changes, you should assume that generation numbers have been reset and perform a full synchronization pass. 
+Note that before comparing these detailed generation values, you should first confirm that the overall version hasn't changed by checking getVersion, since that indicates when a more radical change has occurred. If the overall version changes, you should assume that generation numbers have been reset and perform a full synchronization pass. 
 This constant represents a column name that can be used with a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` through a `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` or `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` object. The values stored in this column are `https://developer.android.com/reference/kotlin/android/database/Cursor.html#FIELD_TYPE_INTEGER:kotlin.Int` , and are read-only and cannot be mutated.
 
  Value: "generation_added"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getGeneration(android.content.Context,%20kotlin.String)`
+- getGeneration
 
 ### GENERATION_MODIFIED
 
@@ -400,16 +400,16 @@ static val GENERATION_MODIFIED: String
 
 Generation number at which metadata for this media item was last changed. This is useful for apps that are attempting to quickly identify exactly which media items have changed since a previous point in time. Generation numbers are monotonically increasing over time, and can be safely arithmetically compared.
 
-Detecting media changes using generation numbers is more robust than using `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_MODIFIED:kotlin.String`, since those values may change in unexpected ways when apps use `https://developer.android.com/reference/kotlin/java/io/File.html#setLastModified(kotlin.Long)` or when the system clock is set incorrectly.
+Detecting media changes using generation numbers is more robust than using `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#DATE_MODIFIED:kotlin.String`, since those values may change in unexpected ways when apps use setLastModified or when the system clock is set incorrectly.
 
-Note that before comparing these detailed generation values, you should first confirm that the overall version hasn't changed by checking `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getVersion(android.content.Context,%20kotlin.String)`, since that indicates when a more radical change has occurred. If the overall version changes, you should assume that generation numbers have been reset and perform a full synchronization pass. 
+Note that before comparing these detailed generation values, you should first confirm that the overall version hasn't changed by checking getVersion, since that indicates when a more radical change has occurred. If the overall version changes, you should assume that generation numbers have been reset and perform a full synchronization pass. 
 This constant represents a column name that can be used with a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` through a `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` or `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` object. The values stored in this column are `https://developer.android.com/reference/kotlin/android/database/Cursor.html#FIELD_TYPE_INTEGER:kotlin.Int` , and are read-only and cannot be mutated.
 
  Value: "generation_modified"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getGeneration(android.content.Context,%20kotlin.String)`
+- getGeneration
 
 ### GENRE
 
@@ -513,7 +513,7 @@ This constant represents a column name that can be used with a `https://develope
 
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_FAVORITE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_FAVORITE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createFavoriteRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)`
+- createFavoriteRequest
 
 ### IS_PENDING
 
@@ -553,7 +553,7 @@ This constant represents a column name that can be used with a `https://develope
 
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns#IS_TRASHED:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/provider/MediaStore#QUERY_ARG_MATCH_TRASHED:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/provider/MediaStore#createTrashRequest(android.content.ContentResolver,%20kotlin.collections.MutableCollection,%20kotlin.Boolean)`
+- createTrashRequest
 
 ### MIME_TYPE
 
@@ -658,7 +658,7 @@ static val RELATIVE_PATH: String
 
 Relative path of this media item within the storage device where it is persisted. For example, an item stored at `/storage/0000-0000/DCIM/Vacation/IMG1024.JPG` would have a path of `DCIM/Vacation/`.
 
-This value should only be used for organizational purposes, and you should not attempt to construct or access a raw filesystem path using this value. If you need to open a media item, use an API like `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`.
+This value should only be used for organizational purposes, and you should not attempt to construct or access a raw filesystem path using this value. If you need to open a media item, use an API like openFileDescriptor.
 
 When this value is set to `NULL` during an android.content.ContentResolver#insert operation, the newly created item will be placed in a relevant default location based on the type of media being inserted. For example, a `image/jpeg` item will be placed under `https://developer.android.com/reference/kotlin/android/os/Environment.html#DIRECTORY_PICTURES:kotlin.String`.
 
@@ -690,7 +690,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SIZE: String
 ```
 
-Indexed value of `https://developer.android.com/reference/kotlin/java/io/File.html#length()` extracted from this media item. 
+Indexed value of length extracted from this media item. 
 Value is a non-negative number of bytes. 
 This constant represents a column name that can be used with a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` through a `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` or `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` object. The values stored in this column are `https://developer.android.com/reference/kotlin/android/database/Cursor.html#FIELD_TYPE_INTEGER:kotlin.Int` , and are read-only and cannot be mutated.
 
@@ -717,7 +717,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val VOLUME_NAME: String
 ```
 
-Volume name of the specific storage device where this media item is persisted. The value is typically one of the volume names returned from `https://developer.android.com/reference/kotlin/android/provider/MediaStore#getExternalVolumeNames(android.content.Context)`.
+Volume name of the specific storage device where this media item is persisted. The value is typically one of the volume names returned from getExternalVolumeNames.
 
 This is a read-only column that is automatically computed. 
 This constant represents a column name that can be used with a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` through a `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` or `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` object. The values stored in this column are `https://developer.android.com/reference/kotlin/android/database/Cursor.html#FIELD_TYPE_STRING:kotlin.Int` , and are read-only and cannot be mutated.

@@ -10,7 +10,7 @@ abstract class VibrationEffect : Parcelable
 | --- | --- |
 | ↳ | [android.os.VibrationEffect](VibrationEffect.md) |
 
-A VibrationEffect describes a haptic effect to be performed by a `https://developer.android.com/reference/kotlin/android/os/Vibrator`.
+A VibrationEffect describes a haptic effect to be performed by a Vibrator.
 
 These effects may be any number of things, from single shot vibrations to complex waveforms.
 
@@ -20,7 +20,7 @@ These effects may be any number of things, from single shot vibrations to comple
 |---|---|
 | | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.BasicEnvelopeBuilder` A builder for waveform effects defined by their envelope, designed to provide a consistent haptic perception across devices with varying capabilities. |
 | | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Builder` A builder for composing haptic effects by sequencing various haptic elements. |
-| | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition` A composition of haptic elements that are combined to be playable as a single `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#`. |
+| | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition` A composition of haptic elements that are combined to be playable as a single VibrationEffect. |
 | --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Envelope` Represents a haptic effect defined by an envelope, to be used within a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Builder`. |
 | | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Event` Represents a single event in a vibration composition with a start time relative to the start of the composition. |
@@ -38,35 +38,35 @@ These effects may be any number of things, from single shot vibrations to comple
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#EFFECT_HEAVY_CLICK:kotlin.Int` A heavy click effect. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#EFFECT_TICK:kotlin.Int` A tick effect. |
 
-Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
+Inherited constants From class Parcelable `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| open static [VibrationEffect](VibrationEffect.md)! | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createOneShot(kotlin.Long,%20kotlin.Int)(milliseconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, amplitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a one shot vibration. |
-| open static [VibrationEffect](VibrationEffect.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createPredefined(kotlin.Int)(effectId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a predefined vibration effect. |
-| open static [VibrationEffect](VibrationEffect.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createRepeatingEffect(android.os.VibrationEffect)(effect: https://developer.android.com/reference/kotlin/android/os/VibrationEffect#)` Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` that repeats the given effect indefinitely. |
+| open static [VibrationEffect](VibrationEffect.md)! | createOneShot Create a one shot vibration. |
+| open static [VibrationEffect](VibrationEffect.md) | createPredefined Create a predefined vibration effect. |
+| open static [VibrationEffect](VibrationEffect.md) | createRepeatingEffect Creates a new VibrationEffect that repeats the given effect indefinitely. |
 | --- | --- |
-| open static [VibrationEffect](VibrationEffect.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createRepeatingEffect(android.os.VibrationEffect,%20android.os.VibrationEffect)(preamble: https://developer.android.com/reference/kotlin/android/os/VibrationEffect#, repeatingEffect: https://developer.android.com/reference/kotlin/android/os/VibrationEffect#)` Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` by merging the preamble and repeating vibration effect. |
-| open static [VibrationEffect](VibrationEffect.md)! | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createWaveform(kotlin.LongArray,%20kotlin.Int)(timings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a waveform vibration, using only off/on transitions at the provided time intervals, and potentially repeating. |
-| open static [VibrationEffect](VibrationEffect.md)! | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createWaveform(kotlin.LongArray,%20kotlin.IntArray,%20kotlin.Int)(timings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!, amplitudes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a waveform vibration. |
+| open static [VibrationEffect](VibrationEffect.md) | createRepeatingEffect Creates a new VibrationEffect by merging the preamble and repeating vibration effect. |
+| open static [VibrationEffect](VibrationEffect.md)! | createWaveform Create a waveform vibration, using only off/on transitions at the provided time intervals, and potentially repeating. |
+| open static [VibrationEffect](VibrationEffect.md)! | createWaveform Create a waveform vibration. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VibrationEffect.Event](../android/os/VibrationEffect.Event.md)!\> | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#getEvents()()` Returns a list of `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Event`s that make up this effect. |
-| open static [VibrationEffect](VibrationEffect.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#parseFromXml(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#)` Parses a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` from an XML input stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VibrationEffect.Event](../android/os/VibrationEffect.Event.md)!\> | getEvents Returns a list of `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Event`s that make up this effect. |
+| open static [VibrationEffect](VibrationEffect.md) | parseFromXml Parses a VibrationEffect from an XML input stream. |
 | --- | --- |
-| open static [VibrationEffect.Composition](../android/os/VibrationEffect.Composition.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#startComposition()()` Start composing a haptic effect. |
+| open static [VibrationEffect.Composition](../android/os/VibrationEffect.Composition.md) | startComposition Start composing a haptic effect. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/os/Parcelable` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+Inherited functions From class Parcelable `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` writeToParcel
 
 Flatten this object in to a Parcel.
 
@@ -184,7 +184,7 @@ This will fallback to a generic pattern if one exists and there does not exist a
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` | The desired effect. This value cannot be `null`. |
+| VibrationEffect | The desired effect. This value cannot be `null`. |
 
 ### createRepeatingEffect
 
@@ -194,17 +194,17 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open static fun createRepeatingEffect(effect: VibrationEffect): VibrationEffect
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` that repeats the given effect indefinitely.
+Creates a new VibrationEffect that repeats the given effect indefinitely.
 
 The input vibration must not be a repeating vibration. If it is, an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown.
 
 | Parameters ||
 |---|---|
-| `effect` | [VibrationEffect](VibrationEffect.md): The `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` that will be repeated. This value cannot be `null`. |
+| `effect` | [VibrationEffect](VibrationEffect.md): The VibrationEffect that will be repeated. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` | A `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` that repeats the effect indefinitely. This value cannot be `null`. |
+| VibrationEffect | A VibrationEffect that repeats the effect indefinitely. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -221,11 +221,11 @@ open static fun createRepeatingEffect(
 ): VibrationEffect
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` by merging the preamble and repeating vibration effect.
+Creates a new VibrationEffect by merging the preamble and repeating vibration effect.
 
 Neither input vibration may already be repeating. An `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown if either input vibration is set to repeat indefinitely.
 
-If this method is invoked with mixed effects (one timelined and one legacy), the legacy effect will be converted into a timelined effect. When converting, the effect's duration is estimated, but this estimation is best-effort and may lead to hardware-dependent timing variations. In such cases, the `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Builder#setRepeatingEffect(kotlin.Long,%20android.os.VibrationEffect,%20kotlin.Long)` method is preferred as it allows for explicit control over the timing of the repeating part.
+If this method is invoked with mixed effects (one timelined and one legacy), the legacy effect will be converted into a timelined effect. When converting, the effect's duration is estimated, but this estimation is best-effort and may lead to hardware-dependent timing variations. In such cases, the setRepeatingEffect method is preferred as it allows for explicit control over the timing of the repeating part.
 
 | Parameters ||
 |---|---|
@@ -234,7 +234,7 @@ If this method is invoked with mixed effects (one timelined and one legacy), the
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` | A `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` that plays the preamble once followed by the \`repeatingEffect\` indefinitely. This value cannot be `null`. |
+| VibrationEffect | A VibrationEffect that plays the preamble once followed by the \`repeatingEffect\` indefinitely. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -255,9 +255,9 @@ Create a waveform vibration, using only off/on transitions at the provided time 
 
 In effect, the timings array represents the number of milliseconds *before* turning the vibrator on, followed by the number of milliseconds to keep the vibrator on, then the number of milliseconds turned off, and so on. Consequently, the first timing value will often be 0, so that the effect will start vibrating immediately.
 
-This method is equivalent to calling `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#createWaveform(kotlin.LongArray,%20kotlin.IntArray,%20kotlin.Int)` with corresponding amplitude values alternating between 0 and `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#DEFAULT_AMPLITUDE:kotlin.Int`, beginning with 0.
+This method is equivalent to calling createWaveform with corresponding amplitude values alternating between 0 and `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#DEFAULT_AMPLITUDE:kotlin.Int`, beginning with 0.
 
-To cause the pattern to repeat, pass the index into the timings array at which to start the repetition, or -1 to disable repeating. Repeating effects will be played indefinitely and should be cancelled via `https://developer.android.com/reference/kotlin/android/os/Vibrator#cancel()`.
+To cause the pattern to repeat, pass the index into the timings array at which to start the repetition, or -1 to disable repeating. Repeating effects will be played indefinitely and should be cancelled via cancel.
 
 | Parameters ||
 |---|---|
@@ -284,7 +284,7 @@ Create a waveform vibration.
 
 Waveform vibrations are a potentially repeating series of timing and amplitude pairs, provided in separate arrays. For each pair, the value in the amplitude array determines the strength of the vibration and the value in the timing array determines how long it vibrates for, in milliseconds.
 
-To cause the pattern to repeat, pass the index into the timings array at which to start the repetition, or -1 to disable repeating. Repeating effects will be played indefinitely and should be cancelled via `https://developer.android.com/reference/kotlin/android/os/Vibrator#cancel()`.
+To cause the pattern to repeat, pass the index into the timings array at which to start the repetition, or -1 to disable repeating. Repeating effects will be played indefinitely and should be cancelled via cancel.
 
 | Parameters ||
 |---|---|
@@ -305,7 +305,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -321,7 +321,7 @@ abstract fun getEvents(): MutableList<VibrationEffect.Event!>
 
 Returns a list of `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Event`s that make up this effect. This effect must NOT be a repeating effect.
 
-This method is used to retrieve the constituent events from a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#`, primarily for use with `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Builder`.
+This method is used to retrieve the constituent events from a VibrationEffect, primarily for use with `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Builder`.
 
 If this effect was created via the `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition` API, then each primitive will be converted into an event. The start time for each event is calculated using the primitive delay and an estimated duration for all preceding primitives. These estimates are based on the recommended primitive duration targets from [Android Haptics Constants](https://source.android.com/docs/core/interaction/haptics/haptics-constants-primitives). The estimates used are: - 12ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_CLICK:kotlin.Int`, - 5ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_TICK:kotlin.Int`, - 12ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_LOW_TICK:kotlin.Int`, - 500ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_SLOW_RISE:kotlin.Int`, - 150ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_QUICK_RISE:kotlin.Int`, - 100ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_QUICK_FALL:kotlin.Int`, - 300ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_THUD:kotlin.Int`, - 150ms for `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.Composition#PRIMITIVE_SPIN:kotlin.Int`.
 
@@ -344,11 +344,11 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 open static fun parseFromXml(inputStream: InputStream): VibrationEffect
 ```
 
-Parses a `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` from an XML input stream.
+Parses a VibrationEffect from an XML input stream.
 
 This method is suitable for dynamic or real-time use cases, such as loading vibration patterns from a network download, external storage, or strings generated on the fly in memory.
 
-For static vibration patterns bundled inside the application package, see `https://developer.android.com/reference/kotlin/android/view/VibrationEffectInflater.html#from(android.content.Context)`. 
+For static vibration patterns bundled inside the application package, see from. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -357,7 +357,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#` | Parsed `https://developer.android.com/reference/kotlin/android/os/VibrationEffect#`. This value cannot be `null`. |
+| VibrationEffect | Parsed VibrationEffect. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

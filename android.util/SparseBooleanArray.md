@@ -14,40 +14,40 @@ SparseBooleanArrays map integers to booleans. Unlike a normal array of booleans 
 
 Note that this container keeps its mappings in an array data structure, using a binary search to find keys. The implementation is not intended to be appropriate for data structures that may contain large numbers of items. It is generally slower than a traditional HashMap, since lookups require a binary search and adds and removes require inserting and deleting entries in the array. For containers holding up to hundreds of items, the performance difference is not significant, less than 50%.
 
-It is possible to iterate over the items in this container using `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#keyAt(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#valueAt(kotlin.Int)`. Iterating over the keys using `keyAt(int)` with ascending values of the index will return the keys in ascending order, or the values corresponding to the keys in ascending order in the case of `valueAt(int)`.
+It is possible to iterate over the items in this container using keyAt and valueAt. Iterating over the keys using `keyAt(int)` with ascending values of the index will return the keys in ascending order, or the values corresponding to the keys in ascending order in the case of `valueAt(int)`.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#SparseBooleanArray()()` Creates a new SparseBooleanArray containing no mappings. |
-| `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#SparseBooleanArray(kotlin.Int)(initialCapacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new SparseBooleanArray containing no mappings that will not require any additional memory allocation to store the specified number of mappings. |
+| SparseBooleanArray Creates a new SparseBooleanArray containing no mappings. |
+| SparseBooleanArray Creates a new SparseBooleanArray containing no mappings that will not require any additional memory allocation to store the specified number of mappings. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#append(kotlin.Int,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#clear()()` Removes all key-value mappings from this SparseBooleanArray. |
-| open [SparseBooleanArray](SparseBooleanArray.md) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#clone()()` Creates and returns a copy of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | append Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Removes all key-value mappings from this SparseBooleanArray. |
+| open [SparseBooleanArray](SparseBooleanArray.md) | clone Creates and returns a copy of this object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#compute(kotlin.Int,%20java.util.function.IntBinaryOperator)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, function: https://developer.android.com/reference/kotlin/java/util/function/IntBinaryOperator.html#)` Attempts to compute a new mapped value for the specified key based on its current mapped value (or false if there is no current mapping). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#delete(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping from the specified key, if there was any. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | compute Attempts to compute a new mapped value for the specified key based on its current mapped value (or false if there is no current mapping). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | delete Removes the mapping from the specified key, if there was any. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#get(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the boolean mapped from the specified key, or `false` if no such mapping has been made. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#get(kotlin.Int,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, valueIfKeyNotFound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Gets the boolean mapped from the specified key, or the specified value if no such mapping has been made. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#hashCode()()` Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | get Gets the boolean mapped from the specified key, or `false` if no such mapping has been made. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | get Gets the boolean mapped from the specified key, or the specified value if no such mapping has been made. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#indexOfKey(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index for which `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#keyAt(kotlin.Int)` would return the specified key, or a negative number if the specified key is not mapped. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#indexOfValue(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns an index for which `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#valueAt(kotlin.Int)` would return the specified key, or a negative number if no keys map to the specified value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#keyAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given an index in the range `0...size()-1`, returns the key from the `index`th key-value mapping that this SparseBooleanArray stores. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOfKey Returns the index for which keyAt would return the specified key, or a negative number if the specified key is not mapped. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOfValue Returns an index for which valueAt would return the specified key, or a negative number if no keys map to the specified value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | keyAt Given an index in the range `0...size()-1`, returns the key from the `index`th key-value mapping that this SparseBooleanArray stores. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#put(kotlin.Int,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Adds a mapping from the specified key to the specified value, replacing the previous mapping from the specified key if there was one. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#removeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping at the specified index. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#setValueAt(kotlin.Int,%20kotlin.Boolean)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Directly set the value at a particular index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | put Adds a mapping from the specified key to the specified value, replacing the previous mapping from the specified key if there was one. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeAt Removes the mapping at the specified index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setValueAt Directly set the value at a particular index. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#size()()` Returns the number of key-value mappings that this SparseBooleanArray currently stores. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#toString()()` Returns a string representation of the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#valueAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given an index in the range `0...size()-1`, returns the value from the `index`th key-value mapping that this SparseBooleanArray stores. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Returns the number of key-value mappings that this SparseBooleanArray currently stores. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | valueAt Given an index in the range `0...size()-1`, returns the value from the `index`th key-value mapping that this SparseBooleanArray stores. |
 | --- | --- |
 
 ## Public constructors
@@ -130,7 +130,7 @@ By convention, the object returned by this method should be independent of this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#` | a clone of this instance. |
+| SparseBooleanArray | a clone of this instance. |
 
 | Exceptions ||
 |---|---|
@@ -233,8 +233,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -248,7 +248,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun indexOfKey(key: Int): Int
 ```
 
-Returns the index for which `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#keyAt(kotlin.Int)` would return the specified key, or a negative number if the specified key is not mapped.
+Returns the index for which keyAt would return the specified key, or a negative number if the specified key is not mapped.
 
 ### indexOfValue
 
@@ -258,7 +258,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun indexOfValue(value: Boolean): Int
 ```
 
-Returns an index for which `https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray#valueAt(kotlin.Int)` would return the specified key, or a negative number if no keys map to the specified value. Beware that this is a linear search, unlike lookups by key, and that multiple keys can map to the same value and this will find only one of them.
+Returns an index for which valueAt would return the specified key, or a negative number if no keys map to the specified value. Beware that this is a linear search, unlike lookups by key, and that multiple keys can map to the same value and this will find only one of them.
 
 ### keyAt
 

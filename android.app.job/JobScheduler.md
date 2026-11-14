@@ -12,7 +12,7 @@ abstract class JobScheduler
 
 This is an API for scheduling various types of jobs against the framework that will be executed in your application's own process.
 
-See `https://developer.android.com/reference/kotlin/android/app/job/JobInfo` for more description of the types of jobs that can be run and how to construct them. You will construct these JobInfo objects and pass them to the JobScheduler with `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)`. When the criteria declared are met, the system will execute this job on your application's `https://developer.android.com/reference/kotlin/android/app/job/JobService`. You identify the service component that implements the logic for your job when you construct the JobInfo using `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#Builder(kotlin.Int,%20android.content.ComponentName)`.
+See JobInfo for more description of the types of jobs that can be run and how to construct them. You will construct these JobInfo objects and pass them to the JobScheduler with schedule. When the criteria declared are met, the system will execute this job on your application's JobService. You identify the service component that implements the logic for your job when you construct the JobInfo using Builder.
 
 The framework will be intelligent about when it executes jobs, and attempt to batch and defer them as much as possible. Typically, if you don't specify a deadline on a job, it can be run at any moment depending on the current state of the JobScheduler's internal queue.
 
@@ -26,7 +26,7 @@ Prior to Android version `https://developer.android.com/reference/kotlin/android
 
 In Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, jobs had a maximum execution time of one minute. Starting with Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int` and ending with Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, jobs had a maximum execution time of 10 minutes. Starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, jobs will still be stopped after 10 minutes if the system is busy or needs the resources, but if not, jobs may continue running longer than 10 minutes.
 
-**Note:** Beginning with API 30 (`https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`), JobScheduler will throttle runaway applications. Calling `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` and other such methods with very high frequency can have a high cost and so, to make sure the system doesn't get overwhelmed, JobScheduler will begin to throttle apps, regardless of target SDK version.
+**Note:** Beginning with API 30 (`https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`), JobScheduler will throttle runaway applications. Calling schedule and other such methods with very high frequency can have a high cost and so, to make sure the system doesn't get overwhelmed, JobScheduler will begin to throttle apps, regardless of target SDK version.
 
 ## Summary
 
@@ -57,35 +57,35 @@ In Android version `https://developer.android.com/reference/kotlin/android/os/Bu
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_UNDEFINED:kotlin.Int` There is no known reason why the job is pending. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#PENDING_JOB_REASON_USER:kotlin.Int` JobScheduler is respecting one of the user's actions (eg. force stop or adb shell commands) to defer this job. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#RESULT_FAILURE:kotlin.Int` Returned from `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` if a job wasn't scheduled successfully. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#RESULT_SUCCESS:kotlin.Int` Returned from `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` if this job has been successfully scheduled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#RESULT_FAILURE:kotlin.Int` Returned from schedule if a job wasn't scheduled successfully. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#RESULT_SUCCESS:kotlin.Int` Returned from schedule if this job has been successfully scheduled. |
 | --- | --- |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#JobScheduler()()` <br /> |
+| JobScheduler <br /> |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#canRunUserInitiatedJobs()()` Returns `true` if the calling app currently holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#RUN_USER_INITIATED_JOBS:kotlin.String` permission, allowing it to run user-initiated jobs. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancel(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Cancel the specified job. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancelAll()()` Cancel all jobs that have been scheduled in the current namespace by the calling application. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canRunUserInitiatedJobs Returns `true` if the calling app currently holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#RUN_USER_INITIATED_JOBS:kotlin.String` permission, allowing it to run user-initiated jobs. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancel the specified job. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancelAll Cancel all jobs that have been scheduled in the current namespace by the calling application. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancelInAllNamespaces()()` Cancel *all* jobs that have been scheduled by the calling application, regardless of namespace. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#enqueue(android.app.job.JobInfo,%20android.app.job.JobWorkItem)(job: https://developer.android.com/reference/kotlin/android/app/job/JobInfo, work: https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem)` Similar to `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)`, but allows you to enqueue work for a new *or existing* job. |
-| open [JobScheduler](JobScheduler.md) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#forNamespace(kotlin.String)(namespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get a JobScheduler instance that is dedicated to a specific namespace. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancelInAllNamespaces Cancel *all* jobs that have been scheduled by the calling application, regardless of namespace. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | enqueue Similar to schedule, but allows you to enqueue work for a new *or existing* job. |
+| open [JobScheduler](JobScheduler.md) | forNamespace Get a JobScheduler instance that is dedicated to a specific namespace. |
 | --- | --- |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [JobInfo](JobInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getAllPendingJobs()()` Retrieve all jobs that have been scheduled by the calling application. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getNamespace()()` Get the namespace this JobScheduler instance is operating in. |
-| abstract [JobInfo](JobInfo.md)? | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJob(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Look up the description of a scheduled job. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [JobInfo](JobInfo.md)!\> | getAllPendingJobs Retrieve all jobs that have been scheduled by the calling application. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getNamespace Get the namespace this JobScheduler instance is operating in. |
+| abstract [JobInfo](JobInfo.md)? | getPendingJob Look up the description of a scheduled job. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReason(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a reason why the job is pending and not currently executing. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Duration](../java.time/Duration.md)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonStats(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For the given `jobId`, returns an aggregated view of why the job has been pending execution over its lifetime. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasons(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns potential reasons why the job with the given `jobId` may be pending and not currently executing. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPendingJobReason Returns a reason why the job is pending and not currently executing. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Duration](../java.time/Duration.md)!\> | getPendingJobReasonStats For the given `jobId`, returns an aggregated view of why the job has been pending execution over its lifetime. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getPendingJobReasons Returns potential reasons why the job with the given `jobId` may be pending and not currently executing. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PendingJobReasonsInfo](PendingJobReasonsInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonsHistory(kotlin.Int)(jobId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For the given `jobId`, returns a limited historical view of why the job may have been pending execution. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [JobInfo](JobInfo.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobsInAllNamespaces()()` Retrieve all jobs that have been scheduled by the calling application within the current namespace. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)(job: https://developer.android.com/reference/kotlin/android/app/job/JobInfo)` Schedule a job to be executed. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PendingJobReasonsInfo](PendingJobReasonsInfo.md)!\> | getPendingJobReasonsHistory For the given `jobId`, returns a limited historical view of why the job may have been pending execution. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [JobInfo](JobInfo.md)!\>!\> | getPendingJobsInAllNamespaces Retrieve all jobs that have been scheduled by the calling application within the current namespace. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | schedule Schedule a job to be executed. |
 | --- | --- |
 
 ## Constants
@@ -98,7 +98,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PENDING_JOB_REASON_APP: Int
 ```
 
-The app is in a state that prevents the job from running (eg. the `https://developer.android.com/reference/kotlin/android/app/job/JobService` component is disabled).
+The app is in a state that prevents the job from running (eg. the JobService component is disabled).
 
  Value: 1
 
@@ -132,8 +132,8 @@ The app is restricted from running in the background.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#isBackgroundRestricted()`
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isInstantApp()`
+- isBackgroundRestricted
+- isInstantApp
 
 ### PENDING_JOB_REASON_CONSTRAINT_BATTERY_NOT_LOW
 
@@ -149,7 +149,7 @@ The requested battery-not-low constraint is not satisfied.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresBatteryNotLow(kotlin.Boolean)`
+- setRequiresBatteryNotLow
 
 ### PENDING_JOB_REASON_CONSTRAINT_CHARGING
 
@@ -165,7 +165,7 @@ The requested charging constraint is not satisfied.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresCharging(kotlin.Boolean)`
+- setRequiresCharging
 
 ### PENDING_JOB_REASON_CONSTRAINT_CONNECTIVITY
 
@@ -181,8 +181,8 @@ The requested connectivity constraint is not satisfied.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiredNetwork(android.net.NetworkRequest)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiredNetworkType(kotlin.Int)`
+- setRequiredNetwork
+- setRequiredNetworkType
 
 ### PENDING_JOB_REASON_CONSTRAINT_CONTENT_TRIGGER
 
@@ -198,7 +198,7 @@ The requested content trigger constraint is not satisfied.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#addTriggerContentUri(android.app.job.JobInfo.TriggerContentUri)`
+- addTriggerContentUri
 
 ### PENDING_JOB_REASON_CONSTRAINT_DEADLINE
 
@@ -214,7 +214,7 @@ The override deadline has not transpired.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setOverrideDeadline(kotlin.Long)`
+- setOverrideDeadline
 
 ### PENDING_JOB_REASON_CONSTRAINT_DEVICE_IDLE
 
@@ -230,7 +230,7 @@ The requested idle constraint is not satisfied.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresDeviceIdle(kotlin.Boolean)`
+- setRequiresDeviceIdle
 
 ### PENDING_JOB_REASON_CONSTRAINT_MINIMUM_LATENCY
 
@@ -246,7 +246,7 @@ The minimum latency has not transpired.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setMinimumLatency(kotlin.Long)`
+- setMinimumLatency
 
 ### PENDING_JOB_REASON_CONSTRAINT_PREFETCH
 
@@ -262,8 +262,8 @@ The system's estimate of when the app will be launched is far away enough to war
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo#isPrefetch()`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setPrefetch(kotlin.Boolean)`
+- isPrefetch
+- setPrefetch
 
 ### PENDING_JOB_REASON_CONSTRAINT_STORAGE_NOT_LOW
 
@@ -279,7 +279,7 @@ The requested storage-not-low constraint is not satisfied.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setRequiresStorageNotLow(kotlin.Boolean)`
+- setRequiresStorageNotLow
 
 ### PENDING_JOB_REASON_DEVICE_STATE
 
@@ -345,7 +345,7 @@ The app has consumed all of its current quota.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#getAppStandbyBucket()`
+- getAppStandbyBucket
 - `https://developer.android.com/reference/kotlin/android/app/job/JobParameters#STOP_REASON_QUOTA:kotlin.Int`
 
 ### PENDING_JOB_REASON_UNDEFINED
@@ -380,9 +380,9 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val RESULT_FAILURE: Int
 ```
 
-Returned from `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` if a job wasn't scheduled successfully. Scheduling can fail for a variety of reasons, including, but not limited to:
+Returned from schedule if a job wasn't scheduled successfully. Scheduling can fail for a variety of reasons, including, but not limited to:
 
-- an invalid parameter was supplied (eg. the run-time for your job is too short, or the system can't resolve the requisite `https://developer.android.com/reference/kotlin/android/app/job/JobService` in your package)
+- an invalid parameter was supplied (eg. the run-time for your job is too short, or the system can't resolve the requisite JobService in your package)
 - the app has too many jobs scheduled
 - the app has tried to schedule too many jobs in a short amount of time
 
@@ -400,7 +400,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val RESULT_SUCCESS: Int
 ```
 
-Returned from `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)` if this job has been successfully scheduled.
+Returned from schedule if this job has been successfully scheduled.
 
  Value: 1
 
@@ -432,11 +432,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 abstract fun cancel(jobId: Int): Unit
 ```
 
-Cancel the specified job. If the job is currently executing, it is stopped immediately and the return value from its `https://developer.android.com/reference/kotlin/android/app/job/JobService#onStopJob(android.app.job.JobParameters)` method is ignored.
+Cancel the specified job. If the job is currently executing, it is stopped immediately and the return value from its onStopJob method is ignored.
 
 | Parameters ||
 |---|---|
-| `jobId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): unique identifier for the job to be canceled, as supplied to `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#Builder(kotlin.Int,%20android.content.ComponentName)`. |
+| `jobId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): unique identifier for the job to be canceled, as supplied to Builder. |
 
 ### cancelAll
 
@@ -448,7 +448,7 @@ abstract fun cancelAll(): Unit
 
 Cancel all jobs that have been scheduled in the current namespace by the calling application.
 
-Starting with Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, this will only cancel within the current namespace. If a namespace hasn't been explicitly set with `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#forNamespace(kotlin.String)`, then this will cancel jobs in the default namespace. To cancel all jobs scheduled by the application, use `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#cancelInAllNamespaces()` instead.
+Starting with Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, this will only cancel within the current namespace. If a namespace hasn't been explicitly set with forNamespace, then this will cancel jobs in the default namespace. To cancel all jobs scheduled by the application, use cancelInAllNamespaces instead.
 
 ### cancelInAllNamespaces
 
@@ -471,17 +471,17 @@ abstract fun enqueue(
 ): Int
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#schedule(android.app.job.JobInfo)`, but allows you to enqueue work for a new *or existing* job. If a job with the same ID is already scheduled, it will be replaced with the new `https://developer.android.com/reference/kotlin/android/app/job/JobInfo`, but any previously enqueued work will remain and be dispatched the next time it runs. If a job with the same ID is already running, the new work will be enqueued for it without stopping the job.
+Similar to schedule, but allows you to enqueue work for a new *or existing* job. If a job with the same ID is already scheduled, it will be replaced with the new JobInfo, but any previously enqueued work will remain and be dispatched the next time it runs. If a job with the same ID is already running, the new work will be enqueued for it without stopping the job.
 
-The work you enqueue is later retrieved through `https://developer.android.com/reference/kotlin/android/app/job/JobParameters#dequeueWork()`. Be sure to see there about how to process work; the act of enqueueing work changes how you should handle the overall lifecycle of an executing job.
+The work you enqueue is later retrieved through dequeueWork. Be sure to see there about how to process work; the act of enqueueing work changes how you should handle the overall lifecycle of an executing job.
 
-It is strongly encouraged that you use the same `https://developer.android.com/reference/kotlin/android/app/job/JobInfo` for all work you enqueue. This will allow the system to optimally schedule work along with any pending and/or currently running work. If the JobInfo changes from the last time the job was enqueued, the system will need to update the associated JobInfo, which can cause a disruption in execution. In particular, this can result in any currently running job that is processing previous work to be stopped and restarted with the new JobInfo.
+It is strongly encouraged that you use the same JobInfo for all work you enqueue. This will allow the system to optimally schedule work along with any pending and/or currently running work. If the JobInfo changes from the last time the job was enqueued, the system will need to update the associated JobInfo, which can cause a disruption in execution. In particular, this can result in any currently running job that is processing previous work to be stopped and restarted with the new JobInfo.
 
-It is recommended that you avoid using `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setExtras(android.os.PersistableBundle)` or `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setTransientExtras(android.os.Bundle)` with a JobInfo you are using to enqueue work. The system will try to compare these extras with the previous JobInfo, but there are situations where it may get this wrong and count the JobInfo as changing. (That said, you should be relatively safe with a simple set of consistent data in these fields.) You should never use `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder#setClipData(android.content.ClipData,%20kotlin.Int)` with work you are enqueuing, since currently this will always be treated as a different JobInfo, even if the ClipData contents are exactly the same.
+It is recommended that you avoid using setExtras or setTransientExtras with a JobInfo you are using to enqueue work. The system will try to compare these extras with the previous JobInfo, but there are situations where it may get this wrong and count the JobInfo as changing. (That said, you should be relatively safe with a simple set of consistent data in these fields.) You should never use setClipData with work you are enqueuing, since currently this will always be treated as a different JobInfo, even if the ClipData contents are exactly the same.
 
 **Note:** Scheduling a job can have a high cost, even if it's rescheduling the same job and the job didn't execute, especially on platform versions before version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`. As such, the system may throttle calls to this API if calls are made too frequently in a short amount of time.
 
-**Note:** Prior to Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, JobWorkItems could not be persisted. Apps were not allowed to enqueue JobWorkItems with persisted jobs and the system would throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` if they attempted to do so. Starting with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, JobWorkItems can be persisted alongside the hosting job. However, Intents cannot be persisted. Set a `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` using `https://developer.android.com/reference/kotlin/android/app/job/JobWorkItem.Builder#setExtras(android.os.PersistableBundle)` for any information that needs to be persisted.
+**Note:** Prior to Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, JobWorkItems could not be persisted. Apps were not allowed to enqueue JobWorkItems with persisted jobs and the system would throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` if they attempted to do so. Starting with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, JobWorkItems can be persisted alongside the hosting job. However, Intents cannot be persisted. Set a `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` using setExtras for any information that needs to be persisted.
 
 Note: The JobService component needs to be enabled in order to successfully schedule a job.
 
@@ -496,7 +496,7 @@ Note: The JobService component needs to be enabled in order to successfully sche
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the specified `https://developer.android.com/reference/kotlin/android/app/job/JobService` doesn't exist or is disabled. |
+| `java.lang.IllegalArgumentException` | if the specified JobService doesn't exist or is disabled. |
 
 ### forNamespace
 
@@ -508,7 +508,7 @@ open fun forNamespace(namespace: String): JobScheduler
 
 Get a JobScheduler instance that is dedicated to a specific namespace. Any API calls using this instance will interact with jobs in that namespace, unless the API documentation says otherwise. Attempting to update a job scheduled in another namespace will not be possible but will instead create or update the job inside the current namespace. A JobScheduler instance dedicated to a namespace must be used to schedule or update jobs in that namespace.
 
-Since leading and trailing whitespace can lead to hard-to-debug issues, they will be `https://developer.android.com/reference/kotlin/java/lang/String.html#trim()`. An empty String (after trimming) is not allowed.
+Since leading and trailing whitespace can lead to hard-to-debug issues, they will be trim. An empty String (after trimming) is not allowed.
 
 | Parameters ||
 |---|---|
@@ -516,11 +516,11 @@ Since leading and trailing whitespace can lead to hard-to-debug issues, they wil
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#` | This value cannot be `null`. |
+| JobScheduler | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getNamespace()`
+- getNamespace
 
 ### getAllPendingJobs
 
@@ -558,7 +558,7 @@ Look up the description of a scheduled job.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/job/JobInfo?` | The `https://developer.android.com/reference/kotlin/android/app/job/JobInfo` description of the given scheduled job, or `null` if the supplied job ID does not correspond to any job. |
+| JobInfo | The JobInfo description of the given scheduled job, or `null` if the supplied job ID does not correspond to any job. |
 
 ### getPendingJobReason
 
@@ -590,7 +590,7 @@ These pending job reasons represent either explicitly set constraints on the job
 
 If the returned map is empty, it could indicate that the job was executed immediately and never had to wait for any constraints to be met.
 
-To get a more detailed and historical view of why a job was pending at a certain time, use `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonsHistory(kotlin.Int)` instead.
+To get a more detailed and historical view of why a job was pending at a certain time, use getPendingJobReasonsHistory instead.
 
 Note: The pending job reason stats are not persisted across device reboots. The stats are also cleared when the job successfully completes or is canceled. Apps should query this information when they observe a scheduled job is not executing as expected to understand the reasons for the delay.
 
@@ -610,8 +610,8 @@ Note: The pending job reason stats are not persisted across device reboots. The 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasons(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonsHistory(kotlin.Int)`
+- getPendingJobReasons
+- getPendingJobReasonsHistory
 
 ### getPendingJobReasons
 
@@ -631,8 +631,8 @@ The returned array will include reasons composed of both explicitly set constrai
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonsHistory(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonStats(kotlin.Int)`
+- getPendingJobReasonsHistory
+- getPendingJobReasonStats
 
 ### getPendingJobReasonsHistory
 
@@ -642,13 +642,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getPendingJobReasonsHistory(jobId: Int): MutableList<PendingJobReasonsInfo!>
 ```
 
-For the given `jobId`, returns a limited historical view of why the job may have been pending execution. The returned list is composed of `https://developer.android.com/reference/kotlin/android/app/job/PendingJobReasonsInfo` objects, each of which include a timestamp since epoch along with an array of unsatisfied constraints represented by `PENDING_JOB_REASON_*` constants.
+For the given `jobId`, returns a limited historical view of why the job may have been pending execution. The returned list is composed of PendingJobReasonsInfo objects, each of which include a timestamp since epoch along with an array of unsatisfied constraints represented by `PENDING_JOB_REASON_*` constants.
 
 These constants could either be explicitly set constraints on the job or implicit constraints imposed by the system due to various reasons. The results can be used to debug why a given job may have been pending execution.
 
 If `PENDING_JOB_REASON_UNDEFINED` is the only reason for the timestamp, it could mean that the job was ready to be executed at that point in time.
 
-The length of the history returned is truncated so it's recommended to query this API periodically for debugging purposes. To get a holistic view of why the job has been pending, use `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonStats(kotlin.Int)`.
+The length of the history returned is truncated so it's recommended to query this API periodically for debugging purposes. To get a holistic view of why the job has been pending, use getPendingJobReasonStats.
 
 Note: there is no set interval for the timestamps in the returned list since constraint changes occur based on device status and various other factors.
 
@@ -666,8 +666,8 @@ Note: the pending job reasons history is not persisted across device reboots.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasons(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#getPendingJobReasonStats(kotlin.Int)`
+- getPendingJobReasons
+- getPendingJobReasonStats
 
 ### getPendingJobsInAllNamespaces
 
@@ -681,7 +681,7 @@ Retrieve all jobs that have been scheduled by the calling application within the
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/job/JobInfo!>!>` | a list of all of the app's scheduled jobs scheduled with the current namespace. If a namespace hasn't been explicitly set with `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler#forNamespace(kotlin.String)`, then this will return jobs in the default namespace. This includes jobs that are currently started as well as those that are still waiting to run. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/job/JobInfo!>!>` | a list of all of the app's scheduled jobs scheduled with the current namespace. If a namespace hasn't been explicitly set with forNamespace, then this will return jobs in the default namespace. This includes jobs that are currently started as well as those that are still waiting to run. This value cannot be `null`. |
 
 ### schedule
 
@@ -691,7 +691,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 abstract fun schedule(job: JobInfo): Int
 ```
 
-Schedule a job to be executed. Will replace any currently scheduled job with the same ID with the new information in the `https://developer.android.com/reference/kotlin/android/app/job/JobInfo`. If a job with the given ID is currently running, it will be stopped.
+Schedule a job to be executed. Will replace any currently scheduled job with the same ID with the new information in the JobInfo. If a job with the given ID is currently running, it will be stopped.
 
 **Note:** Scheduling a job can have a high cost, even if it's rescheduling the same job and the job didn't execute, especially on platform versions before version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`. As such, the system may throttle calls to this API if calls are made too frequently in a short amount of time.
 
@@ -707,4 +707,4 @@ Note: The JobService component needs to be enabled in order to successfully sche
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the specified `https://developer.android.com/reference/kotlin/android/app/job/JobService` doesn't exist or is disabled. |
+| `java.lang.IllegalArgumentException` | if the specified JobService doesn't exist or is disabled. |

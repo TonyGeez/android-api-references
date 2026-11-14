@@ -13,19 +13,19 @@ open class MbmsStreamingSessionCallback
 | --- | --- |
 | ↳ | [android.telephony.mbms.MbmsStreamingSessionCallback](MbmsStreamingSessionCallback.md) |
 
-A callback class that is used to receive information from the middleware on MBMS streaming services. An instance of this object should be passed into `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsStreamingSessionCallback)`.
+A callback class that is used to receive information from the middleware on MBMS streaming services. An instance of this object should be passed into create.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#MbmsStreamingSessionCallback()()` <br /> |
+| MbmsStreamingSessionCallback <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onError(kotlin.Int,%20kotlin.String)(errorCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Called by the middleware when it has detected an error condition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onMiddlewareReady()()` Called to indicate that the middleware has been initialized and is ready. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onStreamingServicesUpdated(kotlin.collections.MutableList)(services: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo!>!)` Called to indicate published Streaming Services have changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onError Called by the middleware when it has detected an error condition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onMiddlewareReady Called to indicate that the middleware has been initialized and is ready. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onStreamingServicesUpdated Called to indicate published Streaming Services have changed. |
 | --- | --- |
 
 ## Public constructors
@@ -49,7 +49,7 @@ open fun onError(
 ): Unit
 ```
 
-Called by the middleware when it has detected an error condition. The possible error codes are listed in `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors`.
+Called by the middleware when it has detected an error condition. The possible error codes are listed in MbmsErrors.
 
 | Parameters ||
 |---|---|
@@ -64,7 +64,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun onMiddlewareReady(): Unit
 ```
 
-Called to indicate that the middleware has been initialized and is ready. Before this method is called, calling any method on an instance of `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#` will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` or an error delivered via `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsStreamingSessionCallback#onError(kotlin.Int,%20kotlin.String)` with error code `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_NOT_YET_READY:kotlin.Int`.
+Called to indicate that the middleware has been initialized and is ready. Before this method is called, calling any method on an instance of `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#` will result in an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` or an error delivered via onError with error code `https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsErrors.GeneralErrors#ERROR_MIDDLEWARE_NOT_YET_READY:kotlin.Int`.
 
 ### onStreamingServicesUpdated
 

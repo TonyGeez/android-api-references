@@ -52,101 +52,101 @@ Information you can retrieve about a particular application service. This corres
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#ServiceInfo()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#ServiceInfo(android.content.pm.ServiceInfo)(orig: https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#!)` <br /> |
+| ServiceInfo <br /> |
+| ServiceInfo <br /> |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#getForegroundServiceType()()` Return foreground service type specified in the manifest. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getForegroundServiceType Return foreground service type specified in the manifest. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel <br /> |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#dumpFront(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+Inherited functions From class ComponentInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpBack
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getBannerResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpFront
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getBannerResource
 
 Return the banner resource identifier to use for this component. If the component defines a banner, that is used; else, the application banner is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getIconResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getIconResource
 
 Return the icon resource identifier to use for this component. If the component defines an icon, that is used; else, the application icon is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getLogoResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getLogoResource
 
 Return the logo resource identifier to use for this component. If the component defines a logo, that is used; else, the application logo is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#isEnabled()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isEnabled
 
 Return whether this component and its enclosing application are enabled.
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+From class PackageItemInfo `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadBanner
 
 Retrieve the current graphical banner associated with this item. This will call back on the given PackageManager to load the banner from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadIcon
 
 Retrieve the current graphical icon associated with this item. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` loadLabel
 
 Retrieve the current textual label associated with this item. This will call back on the given PackageManager to load the label from the application.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadLogo
 
 Retrieve the current graphical logo associated with this item. This will call back on the given PackageManager to load the logo from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadUnbadgedIcon
 
 Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` loadXmlMetaData
 
 Load an XML resource attached to the meta-data of this item. This will retrieved the name meta-data entry, and if defined call back on the given PackageManager to load its XML file from the application.
 
@@ -159,7 +159,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#permission:kotlin.String` Optional name of a permission required to be able to access this Service. |
 | --- | --- |
 
-Inherited properties From class `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo` `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo`
+Inherited properties From class ComponentInfo `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo`
 
 Global information about the application/package this component is a part of.
 
@@ -169,7 +169,7 @@ Global information about the application/package this component is a part of.
 
 Set of attribution tags that should be automatically applied to this component.
 
-When this component represents an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` or `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, each instance will be automatically configured with `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` using the first attribution tag contained here.
+When this component represents an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` or `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, each instance will be automatically configured with createAttributionContext using the first attribution tag contained here.
 
 Additionally, when this component represents a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` and the sender of a broadcast requires the receiver to hold one or more specific permissions, those permission checks will be performed using each of the attributions tags contained here.
 
@@ -189,7 +189,7 @@ Indicates if this component is aware of direct boot lifecycle, and can be safely
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#enabled:kotlin.Boolean`
 
-Indicates whether or not this component may be instantiated. Note that this value can be overridden by the one in its parent `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo`.
+Indicates whether or not this component may be instantiated. Note that this value can be overridden by the one in its parent ApplicationInfo.
 
 <br />
 
@@ -211,7 +211,7 @@ The name of the split in which this component is declared. Null if the component
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
+From class PackageItemInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
 
 A drawable resource identifier (in the package's resources) of this component's banner. From the "banner" attribute or, if not set, 0.
 
@@ -227,7 +227,7 @@ A drawable resource identifier (in the package's resources) of this component's 
 
 Whether the package is currently in an archived state.
 
-Packages can be archived through `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestArchive(kotlin.String,%20android.content.IntentSender)` and do not have any APKs stored on the device, but do keep the data directory.
+Packages can be archived through requestArchive and do not have any APKs stored on the device, but do keep the data directory.
 
 <br />
 
@@ -257,7 +257,7 @@ Public name of this item. From the "android:name" attribute.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#nonLocalizedLabel:kotlin.CharSequence`
 
-The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)`
+The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want getApplicationLabel
 
 <br />
 
@@ -361,7 +361,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val FOREGROUND_SERVICE_TYPE_CAMERA: Int
 ```
 
-Constant corresponding to `camera` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Use the camera device or record video. For apps with `targetSdkVersion` `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and above, a foreground service will not be able to access the camera if this type is not specified in the manifest and in `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification,%20kotlin.Int)`.
+Constant corresponding to `camera` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Use the camera device or record video. For apps with `targetSdkVersion` `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and above, a foreground service will not be able to access the camera if this type is not specified in the manifest and in startForeground.
 
 Starting foreground service with this type from apps targeting API level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and later, will require permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#FOREGROUND_SERVICE_CAMERA:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CAMERA:kotlin.String`.
 
@@ -391,17 +391,17 @@ static val FOREGROUND_SERVICE_TYPE_DATA_SYNC: Int
 
 Constant corresponding to `dataSync` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Data(photo, file, account) upload/download, backup/restore, import/export, fetch, transfer over network between device and cloud.
 
-This type has time limit of 6 hours starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`. A foreground service of this type must be stopped within the timeout by `https://developer.android.com/reference/kotlin/android/app/Service.html#stopSelf()`, `https://developer.android.com/reference/kotlin/android/content/Context.html#stopService(android.content.Intent)` or their overloads). `https://developer.android.com/reference/kotlin/android/app/Service.html#stopForeground(kotlin.Int)` will also work, which will demote the service to a "background" service, which will soon be stopped by the system.
+This type has time limit of 6 hours starting from Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`. A foreground service of this type must be stopped within the timeout by stopSelf, stopService or their overloads). stopForeground will also work, which will demote the service to a "background" service, which will soon be stopped by the system.
 
-If the service isn't stopped within the timeout, `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)` will be called.
+If the service isn't stopped within the timeout, onTimeout will be called.
 
-Also note, even though `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_DATA_SYNC:kotlin.Int` can be used on Android versions prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, since `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)` did not exist on such versions, it will never be called. Because of this, developers must make sure to stop the foreground service even if `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)` is not called on such versions.
+Also note, even though `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_DATA_SYNC:kotlin.Int` can be used on Android versions prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, since onTimeout did not exist on such versions, it will never be called. Because of this, developers must make sure to stop the foreground service even if onTimeout is not called on such versions.
 
  Value: 1
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)`
+- onTimeout
 
 ### FOREGROUND_SERVICE_TYPE_HEALTH
 
@@ -466,18 +466,18 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING: Int
 ```
 
-Constant corresponding to `mediaProcessing` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Media processing use cases such as video or photo editing and processing. This type has time limit of 6 hours. A foreground service of this type must be stopped within the timeout by `https://developer.android.com/reference/kotlin/android/app/Service.html#stopSelf()`, `https://developer.android.com/reference/kotlin/android/content/Context.html#stopService(android.content.Intent)` or their overloads). `https://developer.android.com/reference/kotlin/android/app/Service.html#stopForeground(kotlin.Int)` will also work, which will demote the service to a "background" service, which will soon be stopped by the system.
+Constant corresponding to `mediaProcessing` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Media processing use cases such as video or photo editing and processing. This type has time limit of 6 hours. A foreground service of this type must be stopped within the timeout by stopSelf, stopService or their overloads). stopForeground will also work, which will demote the service to a "background" service, which will soon be stopped by the system.
 
-If the service isn't stopped within the timeout, `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)` will be called.
+If the service isn't stopped within the timeout, onTimeout will be called.
 
-Also note, even though `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING:kotlin.Int` was added in Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, it can be also used on prior android versions (just like other new foreground service types can be used). However, because `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)` did not exist on prior versions, it will never be called on such versions. Because of this, developers must make sure to stop the foreground service even if `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)` is not called on such versions. 
+Also note, even though `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING:kotlin.Int` was added in Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, it can be also used on prior android versions (just like other new foreground service types can be used). However, because onTimeout did not exist on prior versions, it will never be called on such versions. Because of this, developers must make sure to stop the foreground service even if onTimeout is not called on such versions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#FOREGROUND_SERVICE_MEDIA_PROCESSING:kotlin.String`
 
  Value: 8192
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int,%20kotlin.Int)`
+- onTimeout
 
 ### FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION
 
@@ -489,7 +489,7 @@ static val FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION: Int
 
 Constant corresponding to `mediaProjection` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute.
 
-To capture through `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#`, an app must start a foreground service with the type corresponding to this constant. This type should only be used for `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#`. Capturing screen contents via `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20android.hardware.display.VirtualDisplay.Callback,%20android.os.Handler)` conveniently allows recording, presenting screen contents into a meeting, taking screenshots, or several other scenarios.
+To capture through `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#`, an app must start a foreground service with the type corresponding to this constant. This type should only be used for `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#`. Capturing screen contents via createVirtualDisplay conveniently allows recording, presenting screen contents into a meeting, taking screenshots, or several other scenarios.
 
 Starting foreground service with this type from apps targeting API level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and later, will require permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#FOREGROUND_SERVICE_MEDIA_PROJECTION:kotlin.String`, and the user must have allowed the screen capture request from this app.
 
@@ -503,7 +503,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val FOREGROUND_SERVICE_TYPE_MICROPHONE: Int
 ```
 
-Constant corresponding to `microphone` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Use the microphone device or record audio. For apps with `targetSdkVersion` `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and above, a foreground service will not be able to access the microphone if this type is not specified in the manifest and in `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification,%20kotlin.Int)`.
+Constant corresponding to `microphone` in the `https://developer.android.com/reference/kotlin/android/R.attr.html#foregroundServiceType:kotlin.Int` attribute. Use the microphone device or record audio. For apps with `targetSdkVersion` `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` and above, a foreground service will not be able to access the microphone if this type is not specified in the manifest and in startForeground.
 
 Starting foreground service with this type from apps targeting API level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and later, will require permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#FOREGROUND_SERVICE_MICROPHONE:kotlin.String` and one of the following permissions: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CAPTURE_AUDIO_OUTPUT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#RECORD_AUDIO:kotlin.String`.
 
@@ -522,7 +522,7 @@ static val FOREGROUND_SERVICE_TYPE_NONE: Int
 
 The default foreground service type if not been set in manifest file.
 
-Apps targeting API level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and later should NOT use this type, calling `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification,%20kotlin.Int)` with this type will get a `https://developer.android.com/reference/kotlin/android/app/InvalidForegroundServiceTypeException.html#`.
+Apps targeting API level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and later should NOT use this type, calling startForeground with this type will get a `https://developer.android.com/reference/kotlin/android/app/InvalidForegroundServiceTypeException.html#`.
 
  Value: 0
 
@@ -565,9 +565,9 @@ A foreground service type for "short-lived" services, which corresponds to `shor
 
 Unlike other foreground service types, this type is not associated with a specific use case, and it will not require any special permissions (besides `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#FOREGROUND_SERVICE:kotlin.String`). However, this type has the following restrictions.
 
-- The type has a 3 minute timeout. A foreground service of this type must be stopped within the timeout by `https://developer.android.com/reference/kotlin/android/app/Service.html#stopSelf()`, `https://developer.android.com/reference/kotlin/android/content/Context.html#stopService(android.content.Intent)` or their overloads). `https://developer.android.com/reference/kotlin/android/app/Service.html#stopForeground(kotlin.Int)` will also work, which will demote the service to a "background" service, which will soon be stopped by the system.
+- The type has a 3 minute timeout. A foreground service of this type must be stopped within the timeout by stopSelf, stopService or their overloads). stopForeground will also work, which will demote the service to a "background" service, which will soon be stopped by the system.
 
- If the service isn't stopped within the timeout, `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int)` will be called. Note, even when the system calls this callback, it will not stop the service automatically. You still need to stop the service using one of the aforementioned ways even when you get this callback.
+ If the service isn't stopped within the timeout, onTimeout will be called. Note, even when the system calls this callback, it will not stop the service automatically. You still need to stop the service using one of the aforementioned ways even when you get this callback.
 
  If the service is still not stopped after the callback, the app will be declared an ANR, after a short grace period of several seconds.
 - A foreground service of this type cannot be made "sticky" (see `https://developer.android.com/reference/kotlin/android/app/Service.html#START_STICKY:kotlin.Int`). That is, if an app is killed due to a crash or out-of memory while it's running a short foregorund-service, the system will not restart the service.
@@ -580,13 +580,13 @@ Unlike other foreground service types, this type is not associated with a specif
  combine
  <code><a docref=). with other types as well. However, `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_SHORT_SERVICE:kotlin.Int` is for situations where you have no other valid foreground services to use and the timeout is long enough for the task, and if you can use other types, there's no point using this type. For this reason, if `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_SHORT_SERVICE:kotlin.Int` is combined with other foreground service types, the system will simply ignore it, and as a result, none of the above restrictions will apply (e.g. there'll be no timeout).
 
-Also note, even though `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_SHORT_SERVICE:kotlin.Int` was added on Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, it can be also used on on prior android versions (just like other new foreground service types can be used). However, because `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int)` did not exist on prior versions, it will never called on such versions. Because of this, developers must make sure to stop the foreground service even if `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int)` is not called on such versions.
+Also note, even though `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#FOREGROUND_SERVICE_TYPE_SHORT_SERVICE:kotlin.Int` was added on Android version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, it can be also used on on prior android versions (just like other new foreground service types can be used). However, because onTimeout did not exist on prior versions, it will never called on such versions. Because of this, developers must make sure to stop the foreground service even if onTimeout is not called on such versions.
 
  Value: 2048
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Service.html#onTimeout(kotlin.Int)`
+- onTimeout
 
 ### FOREGROUND_SERVICE_TYPE_SPECIAL_USE
 
@@ -696,7 +696,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

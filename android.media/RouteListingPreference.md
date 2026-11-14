@@ -16,33 +16,33 @@ Allows applications to customize the list of routes used for media routing (for 
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Builder` Builder for `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#`. |
-| | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` Holds preference information for a specific route in a `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#`. |
+| | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Builder` Builder for RouteListingPreference. |
+| | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` Holds preference information for a specific route in a RouteListingPreference. |
 
 | Constants ||
 |---|---|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_RESOLVE_MISSING_PERMISSIONS:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action for apps to handle issues with missing permissions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action that the system uses to take the user the app when the user selects an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` whose `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#getSelectionBehavior()` is `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action that the system uses to take the user the app when the user selects an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` whose getSelectionBehavior is `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#EXTRA_MISSING_PERMISSIONS:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` string extra key that contains missing permissions. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#EXTRA_ROUTE_ID:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` string extra key that contains the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#getRouteId()` of the route to transfer to, as part of an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String` intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#EXTRA_ROUTE_ID:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` string extra key that contains the getRouteId of the route to transfer to, as part of an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String` intent. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RouteListingPreference.Item](../android/media/RouteListingPreference.Item.md)!\> | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getItems()()` Returns an unmodifiable list containing the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` that the app wants to be listed for media routing. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RouteListingPreference.Item](../android/media/RouteListingPreference.Item.md)!\> | getItems Returns an unmodifiable list containing the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` that the app wants to be listed for media routing. |
 | --- | --- |
-| [ComponentName](../android.content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getLinkedItemComponentName()()` Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application. |
-| [ComponentName](../android.content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getMissingPermissionsComponentName()()` Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application to fix missing permissions. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getUseSystemOrdering()()` Returns true if the application would like media route listing to use the system's ordering strategy, or false if the application would like route listing to respect the ordering obtained from `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getItems()`. |
+| [ComponentName](../android.content/ComponentName.md)? | getLinkedItemComponentName Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application. |
+| [ComponentName](../android.content/ComponentName.md)? | getMissingPermissionsComponentName Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application to fix missing permissions. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getUseSystemOrdering Returns true if the application would like media route listing to use the system's ordering strategy, or false if the application would like route listing to respect the ordering obtained from getItems. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#hashCode()()` Returns a hash code value for the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -60,7 +60,7 @@ static val ACTION_RESOLVE_MISSING_PERMISSIONS: String
 
 `https://developer.android.com/reference/kotlin/android/content/Intent.html#` action for apps to handle issues with missing permissions.
 
-The system uses this action to take the user to the app when a `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference` set by the app cannot be satisfied due to missing permissions, and the user has triggered a UI flow to fix the issue.
+The system uses this action to take the user to the app when a RouteDiscoveryPreference set by the app cannot be satisfied due to missing permissions, and the user has triggered a UI flow to fix the issue.
 
 The launched intent will identify the missing permissions using the extra identified by `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#EXTRA_MISSING_PERMISSIONS:kotlin.String`.
 
@@ -68,7 +68,7 @@ The launched intent will identify the missing permissions using the extra identi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getMissingPermissionsComponentName()`
+- getMissingPermissionsComponentName
 
 ### ACTION_TRANSFER_MEDIA
 
@@ -78,7 +78,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_TRANSFER_MEDIA: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` action that the system uses to take the user the app when the user selects an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` whose `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#getSelectionBehavior()` is `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`.
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` action that the system uses to take the user the app when the user selects an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` whose getSelectionBehavior is `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`.
 
 The launched intent will identify the selected item using the extra identified by `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#EXTRA_ROUTE_ID:kotlin.String`.
 
@@ -86,7 +86,7 @@ The launched intent will identify the selected item using the extra identified b
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getLinkedItemComponentName()`
+- getLinkedItemComponentName
 - `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`
 
 ### EXTRA_MISSING_PERMISSIONS
@@ -99,13 +99,13 @@ static val EXTRA_MISSING_PERMISSIONS: String
 
 `https://developer.android.com/reference/kotlin/android/content/Intent.html#` string extra key that contains missing permissions.
 
-This is part of an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_RESOLVE_MISSING_PERMISSIONS:kotlin.String` intent. The value can be obtained through `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringArrayListExtra(kotlin.String)`. It is the list of permissions which the app has requested in its AndroidManifest.xml but were not granted, and are part of the required permissions for some routes.
+This is part of an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_RESOLVE_MISSING_PERMISSIONS:kotlin.String` intent. The value can be obtained through getStringArrayListExtra. It is the list of permissions which the app has requested in its AndroidManifest.xml but were not granted, and are part of the required permissions for some routes.
 
  Value: "android.media.extra.MISSING_PERMISSIONS"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getMissingPermissionsComponentName()`
+- getMissingPermissionsComponentName
 
 ### EXTRA_ROUTE_ID
 
@@ -115,13 +115,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ROUTE_ID: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` string extra key that contains the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#getRouteId()` of the route to transfer to, as part of an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String` intent.
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` string extra key that contains the getRouteId of the route to transfer to, as part of an `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String` intent.
 
  Value: "android.media.extra.ROUTE_ID"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getLinkedItemComponentName()`
+- getLinkedItemComponentName
 - `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`
 
 ## Public methods
@@ -134,7 +134,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -192,7 +192,7 @@ fun getLinkedItemComponentName(): ComponentName?
 
 Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application.
 
-Must not be null if any of the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getItems()` of this route listing preference has `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#getSelectionBehavior()` `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`.
+Must not be null if any of the getItems of this route listing preference has getSelectionBehavior `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int`.
 
 The system navigates to the application when the user selects `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` with `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item#SELECTION_BEHAVIOR_GO_TO_APP:kotlin.Int` by launching an intent to the returned `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#`, using action `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#ACTION_TRANSFER_MEDIA:kotlin.String`, with the extra `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#EXTRA_ROUTE_ID:kotlin.String`.
 
@@ -222,7 +222,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getUseSystemOrdering(): Boolean
 ```
 
-Returns true if the application would like media route listing to use the system's ordering strategy, or false if the application would like route listing to respect the ordering obtained from `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getItems()`.
+Returns true if the application would like media route listing to use the system's ordering strategy, or false if the application would like route listing to respect the ordering obtained from getItems.
 
 The system's ordering strategy is implementation-dependent, but may take into account each route's recency or frequency of use in order to rank them.
 
@@ -239,8 +239,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

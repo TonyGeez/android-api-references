@@ -14,21 +14,21 @@ class BlendModeColorFilter : ColorFilter
 | ↳ | [android.graphics.ColorFilter](ColorFilter.md) ||
 | | ↳ | [android.graphics.BlendModeColorFilter](BlendModeColorFilter.md) |
 
-A color filter that can be used to tint the source pixels using a single color and a specific `https://developer.android.com/reference/kotlin/android/graphics/BlendMode`.
+A color filter that can be used to tint the source pixels using a single color and a specific BlendMode.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#BlendModeColorFilter(kotlin.Int,%20android.graphics.BlendMode)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode)` <br /> |
+| BlendModeColorFilter <br /> |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#getColor()()` Returns the ARGB color used to tint the source pixels when this filter is applied. |
-| [BlendMode](BlendMode.md)! | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#getMode()()` Returns the Porter-Duff mode used to composite this color filter's color with the source pixel when this filter is applied. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColor Returns the ARGB color used to tint the source pixels when this filter is applied. |
+| [BlendMode](BlendMode.md)! | getMode Returns the Porter-Duff mode used to composite this color filter's color with the source pixel when this filter is applied. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/BlendModeColorFilter#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Public constructors
 
@@ -87,7 +87,7 @@ fun getColor(): Int
 Returns the ARGB color used to tint the source pixels when this filter is applied.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Color`
+- Color
 
 ### getMode
 
@@ -100,7 +100,7 @@ fun getMode(): BlendMode!
 Returns the Porter-Duff mode used to composite this color filter's color with the source pixel when this filter is applied.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/BlendMode`
+- BlendMode
 
 ### hashCode
 
@@ -115,8 +115,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

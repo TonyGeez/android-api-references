@@ -15,7 +15,7 @@ open class SdkExtensions
 
 Methods for interacting with the extension SDK.
 
-This class provides information about the extension SDK versions present on this device. Use the `https://developer.android.com/reference/kotlin/android/os/ext/SdkExtensions#getExtensionVersion(kotlin.Int)` method to lookup the version of a given extension.
+This class provides information about the extension SDK versions present on this device. Use the getExtensionVersion method to lookup the version of a given extension.
 
 The extension version advances as the platform evolves and new APIs are added, so is suitable to use for determining API availability at runtime.
 
@@ -27,8 +27,8 @@ The extension version advances as the platform evolves and new APIs are added, s
 
 | Public methods ||
 |---|---|
-| open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/ext/SdkExtensions#getAllExtensionVersions()()` Return all extension versions that exist on this device. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ext/SdkExtensions#getExtensionVersion(kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the version of the specified extensions. |
+| open static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getAllExtensionVersions Return all extension versions that exist on this device. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExtensionVersion Return the version of the specified extensions. |
 
 ## Constants
 

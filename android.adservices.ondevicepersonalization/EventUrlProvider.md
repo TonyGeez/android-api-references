@@ -22,8 +22,8 @@ Generates event tracking URLs for a request. The service can embed these URLs wi
 
 | Public methods ||
 |---|---|
-| open [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithRedirect(android.os.PersistableBundle,%20android.net.Uri)(eventParams: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#, destinationUrl: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)` Creates an event tracking URL that redirects to the provided destination URL when it is clicked in an ODP webview. |
-| open [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,%20kotlin.ByteArray,%20kotlin.String)(eventParams: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#, responseData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Creates an event tracking URL that returns the provided response. |
+| open [Uri](../android.net/Uri.md) | createEventTrackingUrlWithRedirect Creates an event tracking URL that redirects to the provided destination URL when it is clicked in an ODP webview. |
+| open [Uri](../android.net/Uri.md) | createEventTrackingUrlWithResponse Creates an event tracking URL that returns the provided response. |
 
 ## Public methods
 

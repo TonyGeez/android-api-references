@@ -18,30 +18,30 @@ In addition, this class provides many methods for converting a `boolean` to a `S
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Boolean#Boolean(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Allocates a `Boolean` object representing the `value` argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/Boolean#Boolean(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Allocates a `Boolean` object representing the value `true` if the string argument is not `null` and is equal, ignoring case, to the string `"true"`. |
+| Boolean Allocates a `Boolean` object representing the `value` argument. |
+| Boolean Allocates a `Boolean` object representing the value `true` if the string argument is not `null` and is equal, ignoring case, to the string `"true"`. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#booleanValue()()` Returns the value of this `Boolean` object as a boolean primitive. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#compare(kotlin.Boolean,%20kotlin.Boolean)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Compares two `boolean` values. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#compareTo(kotlin.Boolean)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Compares this `Boolean` instance with another. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | booleanValue Returns the value of this `Boolean` object as a boolean primitive. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare Compares two `boolean` values. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this `Boolean` instance with another. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns `true` if and only if the argument is not `null` and is a `Boolean` object that represents the same `boolean` value as this object. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#getBoolean(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns `true` if and only if the system property named by the argument exists and is equal to, ignoring case, the string `"true"`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#hashCode()()` Returns a hash code for this `Boolean` object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Returns `true` if and only if the argument is not `null` and is a `Boolean` object that represents the same `boolean` value as this object. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getBoolean Returns `true` if and only if the system property named by the argument exists and is equal to, ignoring case, the string `"true"`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this `Boolean` object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#hashCode(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a hash code for a `boolean` value; compatible with `Boolean.hashCode()`. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#logicalAnd(kotlin.Boolean,%20kotlin.Boolean)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the result of applying the logical AND operator to the specified `boolean` operands. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#logicalOr(kotlin.Boolean,%20kotlin.Boolean)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the result of applying the logical OR operator to the specified `boolean` operands. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for a `boolean` value; compatible with `Boolean.hashCode()`. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | logicalAnd Returns the result of applying the logical AND operator to the specified `boolean` operands. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | logicalOr Returns the result of applying the logical OR operator to the specified `boolean` operands. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#logicalXor(kotlin.Boolean,%20kotlin.Boolean)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the result of applying the logical XOR operator to the specified `boolean` operands. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#parseBoolean(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Parses the string argument as a boolean. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#toString()()` Returns a `String` object representing this Boolean's value. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | logicalXor Returns the result of applying the logical XOR operator to the specified `boolean` operands. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | parseBoolean Parses the string argument as a boolean. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a `String` object representing this Boolean's value. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#toString(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a `String` object representing the specified boolean. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#valueOf(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a `Boolean` instance representing the specified `boolean` value. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Boolean#valueOf(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns a `Boolean` with a value represented by the specified string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a `String` object representing the specified boolean. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | valueOf Returns a `Boolean` instance representing the specified `boolean` value. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | valueOf Returns a `Boolean` with a value represented by the specified string. |
 | --- | --- |
 
 | Properties ||
@@ -61,7 +61,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Boolean(value: Boolean)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory `https://developer.android.com/reference/kotlin/java/lang/Boolean#valueOf(kotlin.Boolean)` is generally a better choice, as it is likely to yield significantly better space and time performance. Also consider using the final fields `https://developer.android.com/reference/kotlin/java/lang/Boolean#TRUE:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/java/lang/Boolean#FALSE:kotlin.Boolean` if possible.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory valueOf is generally a better choice, as it is likely to yield significantly better space and time performance. Also consider using the final fields `https://developer.android.com/reference/kotlin/java/lang/Boolean#TRUE:kotlin.Boolean` and `https://developer.android.com/reference/kotlin/java/lang/Boolean#FALSE:kotlin.Boolean` if possible.*
 
 Allocates a `Boolean` object representing the `value` argument.
 
@@ -77,7 +77,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Boolean(s: String?)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use `https://developer.android.com/reference/kotlin/java/lang/Boolean#parseBoolean(kotlin.String)` to convert a string to a `boolean` primitive, or use `https://developer.android.com/reference/kotlin/java/lang/Boolean#valueOf(kotlin.String)` to convert a string to a `Boolean` object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use parseBoolean to convert a string to a `boolean` primitive, or use valueOf to convert a string to a `Boolean` object.*
 
 Allocates a `Boolean` object representing the value `true` if the string argument is not `null` and is equal, ignoring case, to the string `"true"`. Otherwise, allocates a `Boolean` object representing the value `false`.
 
@@ -156,7 +156,7 @@ Compares this `Boolean` instance with another.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Comparable`
+- Comparable
 
 ### equals
 
@@ -198,12 +198,12 @@ If there is no property with the specified name, or if the specified name is emp
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | for the same reasons as `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)` |
+| `java.lang.SecurityException` | for the same reasons as getProperty |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/System#getProperty(kotlin.String,%20kotlin.String)`
+- getProperty
+- getProperty
 
 ### hashCode
 
@@ -376,7 +376,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(b: Boolean): Boolean
 ```
 
-Returns a `Boolean` instance representing the specified `boolean` value. If the specified `boolean` value is `true`, this method returns `Boolean.TRUE`; if it is `false`, this method returns `Boolean.FALSE`. If a new `Boolean` instance is not required, this method should generally be used in preference to the constructor `https://developer.android.com/reference/kotlin/java/lang/Boolean#Boolean(kotlin.Boolean)`, as this method is likely to yield significantly better space and time performance.
+Returns a `Boolean` instance representing the specified `boolean` value. If the specified `boolean` value is `true`, this method returns `Boolean.TRUE`; if it is `false`, this method returns `Boolean.FALSE`. If a new `Boolean` instance is not required, this method should generally be used in preference to the constructor Boolean, as this method is likely to yield significantly better space and time performance.
 
 | Parameters ||
 |---|---|

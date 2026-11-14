@@ -17,19 +17,19 @@ open class RemoveAdSelectionOverrideRequest
 >
 > The Rubidium (Rb) Relevance APIs, including those in android.adservices.adselection, are being deprecated. Relevance APIs have no direct replacement. Developers should stop using them, as calls will be rejected in future Android releases. Please refer to official Privacy Sandbox documentation for deprecation and roadmap details: https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
 
-This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager#removeAdSelectionConfigRemoteInfoOverride(android.adservices.adselection.RemoveAdSelectionOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` request
+This POJO represents the removeAdSelectionConfigRemoteInfoOverride request
 
-It contains one field, a `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` which serves as the identifier of the override to be removed
+It contains one field, a AdSelectionConfig which serves as the identifier of the override to be removed
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#RemoveAdSelectionOverrideRequest(android.adservices.adselection.AdSelectionConfig)(adSelectionConfig: https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig)` Builds a `https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#` instance. |
+| RemoveAdSelectionOverrideRequest Builds a RemoveAdSelectionOverrideRequest instance. |
 
 | Public methods ||
 |---|---|
-| open [AdSelectionConfig](AdSelectionConfig.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#getAdSelectionConfig()()` <br /> |
+| open [AdSelectionConfig](AdSelectionConfig.md) | getAdSelectionConfig <br /> |
 
 ## Public constructors
 
@@ -42,7 +42,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 RemoveAdSelectionOverrideRequest(adSelectionConfig: AdSelectionConfig)
 ```
 
-Builds a `https://developer.android.com/reference/kotlin/android/adservices/adselection/RemoveAdSelectionOverrideRequest#` instance.
+Builds a RemoveAdSelectionOverrideRequest instance.
 
 | Parameters ||
 |---|---|
@@ -64,4 +64,4 @@ open fun getAdSelectionConfig(): AdSelectionConfig
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` | AdSelectionConfig, the configuration of the ad selection process. This value cannot be `null`. |
+| AdSelectionConfig | AdSelectionConfig, the configuration of the ad selection process. This value cannot be `null`. |

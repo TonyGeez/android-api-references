@@ -14,15 +14,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 | Known Indirect Subclasses [RuleBasedCollator](../java.text/RuleBasedCollator.md), [RuleBasedCollator](../android.icu.text/RuleBasedCollator.md) |---|---| | [RuleBasedCollator](../java.text/RuleBasedCollator.md) | The class is a concrete subclass of `Collator` that provides a simple, data-driven, table collator. | | [RuleBasedCollator](../android.icu.text/RuleBasedCollator.md) | RuleBasedCollator is a concrete subclass of Collator. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A comparison function, which imposes a *total ordering* on some collection of objects. Comparators can be passed to a sort method (such as `https://developer.android.com/reference/kotlin/java/util/Collections#sort(kotlin.collections.MutableList,%20java.util.Comparator)` or `https://developer.android.com/reference/kotlin/java/util/Arrays#sort(kotlin.Array,%20java.util.Comparator)`) to allow precise control over the sort order. Comparators can also be used to control the order of certain data structures (such as [sorted sets](SortedSet.md) or [sorted maps](SortedMap.md)), or to provide an ordering for collections of objects that don't have a [natural ordering](../java.lang/Comparable.md).
+A comparison function, which imposes a *total ordering* on some collection of objects. Comparators can be passed to a sort method (such as sort or sort) to allow precise control over the sort order. Comparators can also be used to control the order of certain data structures (such as [sorted sets](SortedSet.md) or [sorted maps](SortedMap.md)), or to provide an ordering for collections of objects that don't have a [natural ordering](../java.lang/Comparable.md).
 
 The ordering imposed by a comparator `c` on a set of elements `S` is said to be *consistent with equals* if and only if `c.compare(e1, e2)==0` has the same boolean value as `e1.equals(e2)` for every `e1` and `e2` in `S`.
 
 Caution should be exercised when using a comparator capable of imposing an ordering inconsistent with equals to order a sorted set (or sorted map). Suppose a sorted set (or sorted map) with an explicit comparator `c` is used with elements (or keys) drawn from a set `S`. If the ordering imposed by `c` on `S` is inconsistent with equals, the sorted set (or sorted map) will behave "strangely." In particular the sorted set (or sorted map) will violate the general contract for set (or map), which is defined in terms of `equals`.
 
-For example, suppose one adds two elements `a` and `b` such that `(a.equals(b) && c.compare(a, b) != 0)` to an empty `TreeSet` with comparator `c`. The second `add` operation will return true (and the size of the tree set will increase) because `a` and `b` are not equivalent from the tree set's perspective, even though this is contrary to the specification of the `https://developer.android.com/reference/kotlin/java/util/Set#add(java.util.Set.E)` method.
+For example, suppose one adds two elements `a` and `b` such that `(a.equals(b) && c.compare(a, b) != 0)` to an empty `TreeSet` with comparator `c`. The second `add` operation will return true (and the size of the tree set will increase) because `a` and `b` are not equivalent from the tree set's perspective, even though this is contrary to the specification of the add method.
 
-Note: It is generally a good idea for comparators to also implement `java.io.Serializable`, as they may be used as ordering methods in serializable data structures (like `https://developer.android.com/reference/kotlin/java/util/TreeSet`, `https://developer.android.com/reference/kotlin/java/util/TreeMap`). In order for the data structure to serialize successfully, the comparator (if provided) must implement `Serializable`.
+Note: It is generally a good idea for comparators to also implement `java.io.Serializable`, as they may be used as ordering methods in serializable data structures (like TreeSet, TreeMap). In order for the data structure to serialize successfully, the comparator (if provided) must implement `Serializable`.
 
 For the mathematically inclined, the *relation* that defines the *imposed ordering* that a given comparator `c` imposes on a given set of objects `S` is:
 
@@ -36,7 +36,7 @@ The *quotient* for this total order is:
 {(x, y) such that c.compare(x, y) == 0}.
   
 ```
-It follows immediately from the contract for `compare` that the quotient is an *equivalence relation* on `S`, and that the imposed ordering is a *total order* on `S`. When we say that the ordering imposed by `c` on `S` is *consistent with equals* , we mean that the quotient for the ordering is the equivalence relation defined by the objects' `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method(s):
+It follows immediately from the contract for `compare` that the quotient is an *equivalence relation* on `S`, and that the imposed ordering is a *total order* on `S`. When we say that the ordering imposed by `c` on `S` is *consistent with equals* , we mean that the quotient for the ordering is the equivalence relation defined by the objects' equals method(s):
 
 ```kotlin
 {(x, y) such that x.equals(y)}. 
@@ -51,28 +51,28 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |---|---|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Comparator#compare(java.util.Comparator.T,%20java.util.Comparator.T)(o1: T, o2: T)` Compares its two arguments for order. |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/Function<in T, out U>!)` Accepts a function that extracts a `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function,%20java.util.Comparator)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/Function<in T, out U>!, keyComparator: https://developer.android.com/reference/kotlin/java/util/Comparator#<in U>!)` Accepts a function that extracts a sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key using the specified `https://developer.android.com/reference/kotlin/java/util/Comparator#`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare Compares its two arguments for order. |
+| open static [Comparator](Comparator.md)\<T\>! | comparing Accepts a function that extracts a `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
+| open static [Comparator](Comparator.md)\<T\>! | comparing Accepts a function that extracts a sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key using the specified Comparator. |
 | --- | --- |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#comparingDouble(java.util.function.ToDoubleFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction<in T>!)` Accepts a function that extracts a `double` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#comparingInt(java.util.function.ToIntFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction<in T>!)` Accepts a function that extracts an `int` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#comparingLong(java.util.function.ToLongFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction<in T>!)` Accepts a function that extracts a `long` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
+| open static [Comparator](Comparator.md)\<T\>! | comparingDouble Accepts a function that extracts a `double` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
+| open static [Comparator](Comparator.md)\<T\>! | comparingInt Accepts a function that extracts an `int` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
+| open static [Comparator](Comparator.md)\<T\>! | comparingLong Accepts a function that extracts a `long` sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key. |
 | --- | --- |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#naturalOrder()()` Returns a comparator that compares `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` objects in natural order. |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#nullsFirst(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator#<in T>!)` Returns a null-friendly comparator that considers `null` to be less than non-null. |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#nullsLast(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator#<in T>!)` Returns a null-friendly comparator that considers `null` to be greater than non-null. |
+| open static [Comparator](Comparator.md)\<T\>! | naturalOrder Returns a comparator that compares `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` objects in natural order. |
+| open static [Comparator](Comparator.md)\<T\>! | nullsFirst Returns a null-friendly comparator that considers `null` to be less than non-null. |
+| open static [Comparator](Comparator.md)\<T\>! | nullsLast Returns a null-friendly comparator that considers `null` to be greater than non-null. |
 | --- | --- |
-| open static [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#reverseOrder()()` Returns a comparator that imposes the reverse of the *natural ordering*. |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#reversed()()` Returns a comparator that imposes the reverse ordering of this comparator. |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.Comparator)(other: https://developer.android.com/reference/kotlin/java/util/Comparator#<in T>!)` Returns a lexicographic-order comparator with another comparator. |
+| open static [Comparator](Comparator.md)\<T\>! | reverseOrder Returns a comparator that imposes the reverse of the *natural ordering*. |
+| open [Comparator](Comparator.md)\<T\>! | reversed Returns a comparator that imposes the reverse ordering of this comparator. |
+| open [Comparator](Comparator.md)\<T\>! | thenComparing Returns a lexicographic-order comparator with another comparator. |
 | --- | --- |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.function.Function)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/Function<in T, out U>!)` Returns a lexicographic-order comparator with a function that extracts a `Comparable` sort key. |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.function.Function,%20java.util.Comparator)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/Function<in T, out U>!, keyComparator: https://developer.android.com/reference/kotlin/java/util/Comparator#<in U>!)` Returns a lexicographic-order comparator with a function that extracts a key to be compared with the given `Comparator`. |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparingDouble(java.util.function.ToDoubleFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction<in T>!)` Returns a lexicographic-order comparator with a function that extracts a `double` sort key. |
+| open [Comparator](Comparator.md)\<T\>! | thenComparing Returns a lexicographic-order comparator with a function that extracts a `Comparable` sort key. |
+| open [Comparator](Comparator.md)\<T\>! | thenComparing Returns a lexicographic-order comparator with a function that extracts a key to be compared with the given `Comparator`. |
+| open [Comparator](Comparator.md)\<T\>! | thenComparingDouble Returns a lexicographic-order comparator with a function that extracts a `double` sort key. |
 | --- | --- |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparingInt(java.util.function.ToIntFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction<in T>!)` Returns a lexicographic-order comparator with a function that extracts an `int` sort key. |
-| open [Comparator](Comparator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparingLong(java.util.function.ToLongFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction<in T>!)` Returns a lexicographic-order comparator with a function that extracts a `long` sort key. |
+| open [Comparator](Comparator.md)\<T\>! | thenComparingInt Returns a lexicographic-order comparator with a function that extracts an `int` sort key. |
+| open [Comparator](Comparator.md)\<T\>! | thenComparingLong Returns a lexicographic-order comparator with a function that extracts a `long` sort key. |
 
 ## Public methods
 
@@ -89,7 +89,7 @@ abstract fun compare(
 
 Compares its two arguments for order. Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
 
-The implementor must ensure that `https://developer.android.com/reference/kotlin/java/lang/Integer.html#signum(kotlin.Int)``(compare(x, y)) == -signum(compare(y, x))` for all `x` and `y`. (This implies that `compare(x, y)` must throw an exception if and only if `compare(y, x)` throws an exception.)
+The implementor must ensure that signum`(compare(x, y)) == -signum(compare(y, x))` for all `x` and `y`. (This implies that `compare(x, y)` must throw an exception if and only if `compare(y, x)` throws an exception.)
 
 The implementor must also ensure that the relation is transitive: `((compare(x, y)>0) && (compare(y, z)>0))` implies `compare(x, z)>0`.
 
@@ -147,7 +147,7 @@ open static fun <T : Any!, U : Any!> comparing(
 ): Comparator<T>!
 ```
 
-Accepts a function that extracts a sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key using the specified `https://developer.android.com/reference/kotlin/java/util/Comparator#`.
+Accepts a function that extracts a sort key from a type `T`, and returns a `Comparator<T>` that compares by that sort key using the specified Comparator.
 
 The returned comparator is serializable if the specified function and comparator are both serializable.
 
@@ -194,7 +194,7 @@ The returned comparator is serializable if the specified function is also serial
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function)`
+- comparing
 
 ### comparingInt
 
@@ -223,7 +223,7 @@ The returned comparator is serializable if the specified function is also serial
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function)`
+- comparing
 
 ### comparingLong
 
@@ -252,7 +252,7 @@ The returned comparator is serializable if the specified function is also serial
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function)`
+- comparing
 
 ### naturalOrder
 
@@ -407,8 +407,8 @@ Returns a lexicographic-order comparator with a function that extracts a `Compar
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function)`
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.Comparator)`
+- comparing
+- thenComparing
 
 ### thenComparing
 
@@ -440,8 +440,8 @@ Returns a lexicographic-order comparator with a function that extracts a key to 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparing(java.util.function.Function,%20java.util.Comparator)`
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.Comparator)`
+- comparing
+- thenComparing
 
 ### thenComparingDouble
 
@@ -467,8 +467,8 @@ Returns a lexicographic-order comparator with a function that extracts a `double
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparingDouble(java.util.function.ToDoubleFunction)`
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.Comparator)`
+- comparingDouble
+- thenComparing
 
 ### thenComparingInt
 
@@ -494,8 +494,8 @@ Returns a lexicographic-order comparator with a function that extracts an `int` 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparingInt(java.util.function.ToIntFunction)`
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.Comparator)`
+- comparingInt
+- thenComparing
 
 ### thenComparingLong
 
@@ -521,5 +521,5 @@ Returns a lexicographic-order comparator with a function that extracts a `long` 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#comparingLong(java.util.function.ToLongFunction)`
-- `https://developer.android.com/reference/kotlin/java/util/Comparator#thenComparing(java.util.Comparator)`
+- comparingLong
+- thenComparing

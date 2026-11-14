@@ -26,7 +26,7 @@ Example use case:
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View.CalledFromWrongThreadListener#onCalledFromWrongThread()()` Called when a View API is called from the wrong thread. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCalledFromWrongThread Called when a View API is called from the wrong thread. |
 
 ## Public methods
 

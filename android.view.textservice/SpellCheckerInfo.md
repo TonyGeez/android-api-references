@@ -22,24 +22,24 @@ This class is used to specify meta information of a spell checker. The XML file 
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#describeContents()()` Used to make this class parcelable. |
-| [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getComponent()()` Return the component of the service that implements. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getId()()` Return a unique ID for this spell checker. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Used to make this class parcelable. |
+| [ComponentName](../android.content/ComponentName.md)! | getComponent Return the component of the service that implements. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getId Return a unique ID for this spell checker. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getPackageName()()` Return the . |
-| [ServiceInfo](../android.content.pm/ServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getServiceInfo()()` Return the raw information about the Service implementing this spell checker. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getSettingsActivity()()` Return the class name of an activity that provides a settings UI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPackageName Return the . |
+| [ServiceInfo](../android.content.pm/ServiceInfo.md)! | getServiceInfo Return the raw information about the Service implementing this spell checker. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSettingsActivity Return the class name of an activity that provides a settings UI. |
 | --- | --- |
-| [SpellCheckerSubtype](SpellCheckerSubtype.md)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getSubtypeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the subtype at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getSubtypeCount()()` Return the count of the subtypes. |
-| [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed icon for this spell checker. |
+| [SpellCheckerSubtype](SpellCheckerSubtype.md)! | getSubtypeAt Return the subtype at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSubtypeCount Return the count of the subtypes. |
+| [Drawable](../android.graphics.drawable/Drawable.md)! | loadIcon Load the user-displayed icon for this spell checker. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed label for this spell checker. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | loadLabel Load the user-displayed label for this spell checker. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 | Properties ||
 |---|---|
@@ -109,7 +109,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getSettingsActivity(): String!
 ```
 
-Return the class name of an activity that provides a settings UI. You can launch this activity be starting it with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` whose action is MAIN and with an explicit `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` composed of `https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerInfo#getPackageName()` and the class name returned here.
+Return the class name of an activity that provides a settings UI. You can launch this activity be starting it with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` whose action is MAIN and with an explicit `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` composed of getPackageName and the class name returned here.
 
 A null will be returned if there is no settings activity.
 

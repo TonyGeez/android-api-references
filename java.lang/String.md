@@ -38,11 +38,11 @@ System.out.println("abc");
   
 ```
 
-The class `String` includes methods for examining individual characters of the sequence, for comparing strings, for searching strings, for extracting substrings, and for creating a copy of a string with all characters translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by the `https://developer.android.com/reference/kotlin/java/lang/Character` class.
+The class `String` includes methods for examining individual characters of the sequence, for comparing strings, for searching strings, for extracting substrings, and for creating a copy of a string with all characters translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by the Character class.
 
 The Java language provides special support for the string concatenation operator ( + ), and for conversion of other objects to strings. For additional information on string concatenation and conversion, see *The Java™ Language Specification*.
 
-Unless otherwise noted, passing a `null` argument to a constructor or method in this class will cause a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException` to be thrown.
+Unless otherwise noted, passing a `null` argument to a constructor or method in this class will cause a NullPointerException to be thrown.
 
 A `String` represents a string in the UTF-16 format in which *supplementary characters* are represented by *surrogate pairs* (see the section [Unicode Character Representations](Character.md) in the `Character` class for more information). Index values refer to `char` code units, so a supplementary character uses two positions in a `String`.
 
@@ -54,129 +54,129 @@ Unless otherwise noted, methods for comparing Strings do not take locale into ac
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/String#String()()` Initializes a newly created `String` object so that it represents an empty character sequence. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Constructs a new `String` by decoding the specified array of bytes using the platform's default charset. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int)(ascii: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, hibyte: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allocates a new `String` containing characters constructed from an array of 8-bit integer values. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a new `String` by decoding the specified subarray of bytes using the platform's default charset. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(ascii: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, hibyte: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allocates a new `String` constructed from a subarray of an array of 8-bit integer values. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.nio.charset.Charset)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)` Constructs a new `String` by decoding the specified subarray of bytes using the specified [charset](../java.nio.charset/Charset.md). |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.String)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `String` by decoding the specified array of bytes using the specified [charset](../java.nio.charset/Charset.md). |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20java.nio.charset.Charset)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)` Constructs a new `String` by decoding the specified array of bytes using the specified [charset](../java.nio.charset/Charset.md). |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.CharArray)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Allocates a new `String` so that it represents the sequence of characters currently contained in the character array argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allocates a new `String` that contains characters from a subarray of the character array argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(codePoints: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allocates a new `String` that contains characters from a subarray of the [Unicode code point](Character.md) array argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.String)(original: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Initializes a newly created `String` object so that it represents the same sequence of characters as the argument; in other words, the newly created string is a copy of the argument string. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(java.lang.StringBuffer)(buffer: https://developer.android.com/reference/kotlin/java/lang/StringBuffer)` Allocates a new string that contains the sequence of characters currently contained in the string buffer argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/String#String(java.lang.StringBuilder)(builder: https://developer.android.com/reference/kotlin/java/lang/StringBuilder)` Allocates a new string that contains the sequence of characters currently contained in the string builder argument. |
+| String Initializes a newly created `String` object so that it represents an empty character sequence. |
+| String Constructs a new `String` by decoding the specified array of bytes using the platform's default charset. |
+| String Allocates a new `String` containing characters constructed from an array of 8-bit integer values. |
+| String Constructs a new `String` by decoding the specified subarray of bytes using the platform's default charset. |
+| String Allocates a new `String` constructed from a subarray of an array of 8-bit integer values. |
+| String <br /> |
+| String Constructs a new `String` by decoding the specified subarray of bytes using the specified [charset](../java.nio.charset/Charset.md). |
+| String Constructs a new `String` by decoding the specified array of bytes using the specified [charset](../java.nio.charset/Charset.md). |
+| String Constructs a new `String` by decoding the specified array of bytes using the specified [charset](../java.nio.charset/Charset.md). |
+| String Allocates a new `String` so that it represents the sequence of characters currently contained in the character array argument. |
+| String Allocates a new `String` that contains characters from a subarray of the character array argument. |
+| String Allocates a new `String` that contains characters from a subarray of the [Unicode code point](Character.md) array argument. |
+| String Initializes a newly created `String` object so that it represents the same sequence of characters as the argument; in other words, the newly created string is a copy of the argument string. |
+| String Allocates a new string that contains the sequence of characters currently contained in the string buffer argument. |
+| String Allocates a new string that contains the sequence of characters currently contained in the string builder argument. |
 
 | Public methods ||
 |---|---|
-| [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/String#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#codePointAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character (Unicode code point) at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#codePointBefore(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character (Unicode code point) before the specified index. |
+| [IntStream](../java.util.stream/IntStream.md) | chars Returns a stream of `int` zero-extending the `char` values from this sequence. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointAt Returns the character (Unicode code point) at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointBefore Returns the character (Unicode code point) before the specified index. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#codePointCount(kotlin.Int,%20kotlin.Int)(beginIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the number of Unicode code points in the specified text range of this `String`. |
-| [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/String#codePoints()()` Returns a stream of code point values from this sequence. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#compareTo(kotlin.String)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Compares two strings lexicographically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointCount Returns the number of Unicode code points in the specified text range of this `String`. |
+| [IntStream](../java.util.stream/IntStream.md) | codePoints Returns a stream of code point values from this sequence. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares two strings lexicographically. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#compareToIgnoreCase(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Compares two strings lexicographically, ignoring case differences. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#concat(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Concatenates the specified string to the end of this string. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#contains(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Returns true if and only if this string contains the specified sequence of char values. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareToIgnoreCase Compares two strings lexicographically, ignoring case differences. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | concat Concatenates the specified string to the end of this string. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contains Returns true if and only if this string contains the specified sequence of char values. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#contentEquals(kotlin.CharSequence)(cs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Compares this string to the specified `CharSequence`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#contentEquals(java.lang.StringBuffer)(sb: https://developer.android.com/reference/kotlin/java/lang/StringBuffer)` Compares this string to the specified `StringBuffer`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#copyValueOf(kotlin.CharArray)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Equivalent to `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.CharArray)`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contentEquals Compares this string to the specified `CharSequence`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contentEquals Compares this string to the specified `StringBuffer`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | copyValueOf Equivalent to valueOf. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#copyValueOf(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Equivalent to `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#endsWith(kotlin.String)(suffix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Tests if this string ends with the specified suffix. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this string to the specified object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | copyValueOf Equivalent to valueOf. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | endsWith Tests if this string ends with the specified suffix. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this string to the specified object. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#equalsIgnoreCase(kotlin.String)(anotherString: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Compares this `String` to another `String`, ignoring case considerations. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#format(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a formatted string using the specified format string and arguments. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#format(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a formatted string using the specified locale, format string, and arguments. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equalsIgnoreCase Compares this `String` to another `String`, ignoring case considerations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | format Returns a formatted string using the specified format string and arguments. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | format Returns a formatted string using the specified locale, format string, and arguments. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#formatted(kotlin.Any)(vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Formats using this string as the format string, and the supplied arguments. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `char` value at the specified index. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/String#getBytes()()` Encodes this `String` into a sequence of bytes using the platform's default charset, storing the result into a new byte array. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | formatted Formats using this string as the format string, and the supplied arguments. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | get Returns the `char` value at the specified index. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getBytes Encodes this `String` into a sequence of bytes using the platform's default charset, storing the result into a new byte array. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#getBytes(kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies characters from this string into the destination byte array. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/String#getBytes(kotlin.String)(charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Encodes this `String` into a sequence of bytes using the named charset, storing the result into a new byte array. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/String#getBytes(java.nio.charset.Charset)(charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#)` Encodes this `String` into a sequence of bytes using the given [charset](../java.nio.charset/Charset.md), storing the result into a new byte array. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getBytes Copies characters from this string into the destination byte array. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getBytes Encodes this `String` into a sequence of bytes using the named charset, storing the result into a new byte array. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getBytes Encodes this `String` into a sequence of bytes using the given [charset](../java.nio.charset/Charset.md), storing the result into a new byte array. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#hashCode()()` Returns a hash code for this string. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#indent(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adjusts the indentation of each line of this string based on the value of `n`, and normalizes line termination characters. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChars <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | indent Adjusts the indentation of each line of this string based on the value of `n`, and normalizes line termination characters. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#indexOf(kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this string of the first occurrence of the specified character. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#indexOf(kotlin.Int,%20kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#indexOf(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the index within this string of the first occurrence of the specified substring. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf Returns the index within this string of the first occurrence of the specified character. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf Returns the index within this string of the first occurrence of the specified substring. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#indexOf(kotlin.String,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this string of the first occurrence of the specified substring, starting at the specified index. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#intern()()` Returns a canonical representation for the string object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#isBlank()()` Returns `true` if the string is empty or contains only `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` codepoints, otherwise `false`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf Returns the index within this string of the first occurrence of the specified substring, starting at the specified index. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | intern Returns a canonical representation for the string object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBlank Returns `true` if the string is empty or contains only isWhitespace codepoints, otherwise `false`. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#isEmpty()()` Returns `true` if, and only if, `https://developer.android.com/reference/kotlin/java/lang/String#length:kotlin.Int` is `0`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#join(kotlin.CharSequence,%20kotlin.CharSequence)(delimiter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, vararg elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns a new String composed of copies of the `CharSequence elements` joined together with a copy of the specified `delimiter`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#join(kotlin.CharSequence,%20kotlin.collections.MutableIterable)(delimiter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>)` Returns a new `String` composed of copies of the `CharSequence elements` joined together with a copy of the specified `delimiter`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEmpty Returns `true` if, and only if, `https://developer.android.com/reference/kotlin/java/lang/String#length:kotlin.Int` is `0`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | join Returns a new String composed of copies of the `CharSequence elements` joined together with a copy of the specified `delimiter`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | join Returns a new `String` composed of copies of the `CharSequence elements` joined together with a copy of the specified `delimiter`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#lastIndexOf(kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this string of the last occurrence of the specified character. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#lastIndexOf(kotlin.Int,%20kotlin.Int)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this string of the last occurrence of the specified character, searching backward starting at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#lastIndexOf(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the index within this string of the last occurrence of the specified substring. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf Returns the index within this string of the last occurrence of the specified character. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf Returns the index within this string of the last occurrence of the specified character, searching backward starting at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf Returns the index within this string of the last occurrence of the specified substring. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#lastIndexOf(kotlin.String,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this string of the last occurrence of the specified substring, searching backward starting at the specified index. |
-| [Stream](../java.util.stream/Stream.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/String#lines()()` Returns a stream of lines extracted from this string, separated by line terminators. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#matches(kotlin.String)(regex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Tells whether or not this string matches the given [regular expression](../java.util.regex/Pattern.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf Returns the index within this string of the last occurrence of the specified substring, searching backward starting at the specified index. |
+| [Stream](../java.util.stream/Stream.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | lines Returns a stream of lines extracted from this string, separated by line terminators. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | matches Tells whether or not this string matches the given [regular expression](../java.util.regex/Pattern.md). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#offsetByCodePoints(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, codePointOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the index within this `String` that is offset from the given `index` by `codePointOffset` code points. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#regionMatches(kotlin.Boolean,%20kotlin.Int,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)(ignoreCase: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, toffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, ooffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests if two string regions are equal. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#regionMatches(kotlin.Int,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)(toffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, ooffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests if two string regions are equal. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | offsetByCodePoints Returns the index within this `String` that is offset from the given `index` by `codePointOffset` code points. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | regionMatches Tests if two string regions are equal. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | regionMatches Tests if two string regions are equal. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#repeat(kotlin.Int)(count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a string whose value is the concatenation of this string repeated `count` times. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#replace(kotlin.Char,%20kotlin.Char)(oldChar: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html, newChar: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns a string resulting from replacing all occurrences of `oldChar` in this string with `newChar`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#replace(kotlin.CharSequence,%20kotlin.CharSequence)(target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, replacement: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Replaces each substring of this string that matches the literal target sequence with the specified literal replacement sequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | repeat Returns a string whose value is the concatenation of this string repeated `count` times. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | replace Returns a string resulting from replacing all occurrences of `oldChar` in this string with `newChar`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | replace Replaces each substring of this string that matches the literal target sequence with the specified literal replacement sequence. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#replaceAll(kotlin.String,%20kotlin.String)(regex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, replacement: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Replaces each substring of this string that matches the given [regular expression](../java.util.regex/Pattern.md) with the given replacement. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#replaceFirst(kotlin.String,%20kotlin.String)(regex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, replacement: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Replaces the first substring of this string that matches the given [regular expression](../java.util.regex/Pattern.md) with the given replacement. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/String#split(kotlin.String)(regex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Splits this string around matches of the given [regular expression](../java.util.regex/Pattern.md). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | replaceAll Replaces each substring of this string that matches the given [regular expression](../java.util.regex/Pattern.md) with the given replacement. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | replaceFirst Replaces the first substring of this string that matches the given [regular expression](../java.util.regex/Pattern.md) with the given replacement. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | split Splits this string around matches of the given [regular expression](../java.util.regex/Pattern.md). |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/String#split(kotlin.String,%20kotlin.Int)(regex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Splits this string around matches of the given [regular expression](../java.util.regex/Pattern.md). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#startsWith(kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Tests if this string starts with the specified prefix. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#startsWith(kotlin.String,%20kotlin.Int)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, toffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests if the substring of this string beginning at the specified index starts with the specified prefix. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | split Splits this string around matches of the given [regular expression](../java.util.regex/Pattern.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | startsWith Tests if this string starts with the specified prefix. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | startsWith Tests if the substring of this string beginning at the specified index starts with the specified prefix. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#strip()()` Returns a string whose value is this string, with all leading and trailing `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` removed. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#stripIndent()()` Returns a string whose value is this string, with incidental removed from the beginning and end of every line. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#stripLeading()()` Returns a string whose value is this string, with all leading `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` removed. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | strip Returns a string whose value is this string, with all leading and trailing isWhitespace removed. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | stripIndent Returns a string whose value is this string, with incidental removed from the beginning and end of every line. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | stripLeading Returns a string whose value is this string, with all leading isWhitespace removed. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#stripTrailing()()` Returns a string whose value is this string, with all trailing `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` removed. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#subSequence(kotlin.Int,%20kotlin.Int)(startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a character sequence that is a subsequence of this sequence. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#substring(kotlin.Int)(beginIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a string that is a substring of this string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | stripTrailing Returns a string whose value is this string, with all trailing isWhitespace removed. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | subSequence Returns a character sequence that is a subsequence of this sequence. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | substring Returns a string that is a substring of this string. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#substring(kotlin.Int,%20kotlin.Int)(beginIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a string that is a substring of this string. |
-| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | `https://developer.android.com/reference/kotlin/java/lang/String#toCharArray()()` Converts this string to a new character array. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase()()` Converts all of the characters in this `String` to lower case using the rules of the default locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | substring Returns a string that is a substring of this string. |
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | toCharArray Converts this string to a new character array. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toLowerCase Converts all of the characters in this `String` to lower case using the rules of the default locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#)` Converts all of the characters in this `String` to lower case using the rules of the given `Locale`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#toString()()` This object (which is already a string!) is itself returned. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase()()` Converts all of the characters in this `String` to upper case using the rules of the default locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toLowerCase Converts all of the characters in this `String` to lower case using the rules of the given `Locale`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString This object (which is already a string!) is itself returned. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toUpperCase Converts all of the characters in this `String` to upper case using the rules of the default locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#)` Converts all of the characters in this `String` to upper case using the rules of the given `Locale`. |
-| R | `https://developer.android.com/reference/kotlin/java/lang/String#transform(java.util.function.Function)(f: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, out R>)` This method allows the application of a function to `this` string. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#translateEscapes()()` Returns a string whose value is this string, with escape sequences translated as if in a string literal. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toUpperCase Converts all of the characters in this `String` to upper case using the rules of the given `Locale`. |
+| R | transform This method allows the application of a function to `this` string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | translateEscapes Returns a string whose value is this string, with escape sequences translated as if in a string literal. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#trim()()` Returns a string whose value is this string, with all leading and trailing space removed, where space is defined as any character whose codepoint is less than or equal to `'U+0020'` (the space character). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the string representation of the `boolean` argument. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns the string representation of the `char` argument. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | trim Returns a string whose value is this string, with all leading and trailing space removed, where space is defined as any character whose codepoint is less than or equal to `'U+0020'` (the space character). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `boolean` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `char` argument. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.CharArray)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns the string representation of the `char` array argument. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a specific subarray of the `char` array argument. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the string representation of the `double` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `char` array argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of a specific subarray of the `char` array argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `double` argument. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the string representation of the `float` argument. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of the `int` argument. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns the string representation of the `Object` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `float` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `int` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `Object` argument. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.Long)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the string representation of the `long` argument. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | valueOf Returns the string representation of the `long` argument. |
 
 | Properties ||
 |---|---|
@@ -240,12 +240,12 @@ Allocates a new `String` containing characters constructed from an array of 8-bi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.nio.charset.Charset)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20java.nio.charset.Charset)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray)`
+- String
+- String
+- String
+- String
+- String
+- String
 
 ### String
 
@@ -291,7 +291,7 @@ Allocates a new `String` constructed from a subarray of an array of 8-bit intege
 
 The `offset` argument is the index of the first byte of the subarray, and the `count` argument specifies the length of the subarray.
 
-Each `byte` in the subarray is converted to a `char` as specified in the `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int)` constructor.
+Each `byte` in the subarray is converted to a `char` as specified in the String constructor.
 
 | Parameters ||
 |---|---|
@@ -307,13 +307,13 @@ Each `byte` in the subarray is converted to a `char` as specified in the `https:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20java.nio.charset.Charset)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray,%20java.nio.charset.Charset)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#String(kotlin.ByteArray)`
+- String
+- String
+- String
+- String
+- String
+- String
+- String
 
 ### String
 
@@ -552,7 +552,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun codePointBefore(index: Int): Int
 ```
 
-Returns the character (Unicode code point) before the specified index. The index refers to `char` values (Unicode code units) and ranges from `1` to `https://developer.android.com/reference/kotlin/java/lang/CharSequence#length()`.
+Returns the character (Unicode code point) before the specified index. The index refers to `char` values (Unicode code units) and ranges from `1` to length.
 
 If the `char` value at `(index - 1)` is in the low-surrogate range, `(index - 2)` is not negative, and the `char` value at `(index - 2)` is in the high-surrogate range, then the supplementary code point value of the surrogate pair is returned. If the `char` value at `index - 1` is an unpaired low-surrogate or a high-surrogate, the surrogate value is returned.
 
@@ -616,7 +616,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun compareTo(other: String): Int
 ```
 
-Compares two strings lexicographically. The comparison is based on the Unicode value of each character in the strings. The character sequence represented by this `String` object is compared lexicographically to the character sequence represented by the argument string. The result is a negative integer if this `String` object lexicographically precedes the argument string. The result is a positive integer if this `String` object lexicographically follows the argument string. The result is zero if the strings are equal; returns `0` exactly when the `https://developer.android.com/reference/kotlin/java/lang/String#equals(kotlin.Any)` method would return `true`.
+Compares two strings lexicographically. The comparison is based on the Unicode value of each character in the strings. The character sequence represented by this `String` object is compared lexicographically to the character sequence represented by the argument string. The result is a negative integer if this `String` object lexicographically precedes the argument string. The result is a positive integer if this `String` object lexicographically follows the argument string. The result is zero if the strings are equal; returns `0` exactly when the equals method would return `true`.
 
 This is the definition of lexicographic ordering. If two strings are different, then either they have different characters at some index that is a valid index for both strings, or their lengths are different, or both. If they have different characters at one or more index positions, let *k* be the smallest such index; then the string whose character at position *k* has the smaller value, as determined by using the `<` operator, lexicographically precedes the other string. In this case, `compareTo` returns the difference of the two character values at position `k` in the two string -- that is, the value:
 
@@ -765,7 +765,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun copyValueOf(data: CharArray!): String
 ```
 
-Equivalent to `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.CharArray)`.
+Equivalent to valueOf.
 
 | Parameters ||
 |---|---|
@@ -787,7 +787,7 @@ static fun copyValueOf(
 ): String
 ```
 
-Equivalent to `https://developer.android.com/reference/kotlin/java/lang/String#valueOf(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)`.
+Equivalent to valueOf.
 
 | Parameters ||
 |---|---|
@@ -820,7 +820,7 @@ Tests if this string ends with the specified suffix.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the character sequence represented by the argument is a suffix of the character sequence represented by this object; `false` otherwise. Note that the result will be `true` if the argument is the empty string or is equal to this `String` object as determined by the `https://developer.android.com/reference/kotlin/java/lang/String#equals(kotlin.Any)` method. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the character sequence represented by the argument is a suffix of the character sequence represented by this object; `false` otherwise. Note that the result will be `true` if the argument is the empty string or is equal to this `String` object as determined by the equals method. |
 
 ### equals
 
@@ -845,8 +845,8 @@ For finer-grained String comparison, refer to `https://developer.android.com/ref
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#compareTo(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/String#equalsIgnoreCase(kotlin.String)`
+- compareTo
+- equalsIgnoreCase
 
 ### equalsIgnoreCase
 
@@ -875,7 +875,7 @@ Note that this method does *not* take locale into account, and will result in un
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#equals(kotlin.Any)`
+- equals
 
 ### format
 
@@ -890,7 +890,7 @@ static fun format(
 
 Returns a formatted string using the specified format string and arguments.
 
-The locale always used is the one returned by `https://developer.android.com/reference/kotlin/java/util/Locale.html#getDefault(java.util.Locale.Category)` with `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#` category specified.
+The locale always used is the one returned by getDefault with `https://developer.android.com/reference/kotlin/java/util/Locale.Category.html#` category specified.
 
 | Parameters ||
 |---|---|
@@ -962,7 +962,7 @@ Formats using this string as the format string, and the supplied arguments.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#format(kotlin.String,%20kotlin.Any)`
+- format
 - `https://developer.android.com/reference/kotlin/java/util/Formatter.html#`
 
 ### get
@@ -1019,7 +1019,7 @@ fun getBytes(
 ): Unit
 ```
 
-**Deprecated:** *This method does not properly convert characters into bytes. As of JDK 1.1, the preferred way to do this is via the `https://developer.android.com/reference/kotlin/java/lang/String#getBytes()` method, which uses the platform's default charset.*
+**Deprecated:** *This method does not properly convert characters into bytes. As of JDK 1.1, the preferred way to do this is via the getBytes method, which uses the platform's default charset.*
 
 Copies characters from this string into the destination byte array. Each byte receives the 8 low-order bits of the corresponding character. The eight high-order bits of each character are not copied and do not participate in the transfer in any way.
 
@@ -1143,7 +1143,7 @@ fun indent(n: Int): String
 
 Adjusts the indentation of each line of this string based on the value of `n`, and normalizes line termination characters.
 
-This string is conceptually separated into lines using `https://developer.android.com/reference/kotlin/java/lang/String#lines()`. Each line is then adjusted as described below and then suffixed with a line feed `"\n"` (U+000A). The resulting lines are then concatenated and returned.
+This string is conceptually separated into lines using lines. Each line is then adjusted as described below and then suffixed with a line feed `"\n"` (U+000A). The resulting lines are then concatenated and returned.
 
 If `n > 0` then `n` spaces (U+0020) are inserted at the beginning of each line.
 
@@ -1161,9 +1161,9 @@ If `n == 0` then the line remains unchanged. However, line terminators are still
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#lines()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#isBlank()`
-- `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`
+- lines
+- isBlank
+- isWhitespace
 
 ### indexOf
 
@@ -1306,7 +1306,7 @@ Returns a canonical representation for the string object.
 
 A pool of strings, initially empty, is maintained privately by the class `String`.
 
-When the intern method is invoked, if the pool already contains a string equal to this `String` object as determined by the `https://developer.android.com/reference/kotlin/java/lang/String#equals(kotlin.Any)` method, then the string from the pool is returned. Otherwise, this `String` object is added to the pool and a reference to this `String` object is returned.
+When the intern method is invoked, if the pool already contains a string equal to this `String` object as determined by the equals method, then the string from the pool is returned. Otherwise, this `String` object is added to the pool and a reference to this `String` object is returned.
 
 It follows that for any two strings `s` and `t`, `s.intern() == t.intern()` is `true` if and only if `s.equals(t)` is `true`.
 
@@ -1324,15 +1324,15 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun isBlank(): Boolean
 ```
 
-Returns `true` if the string is empty or contains only `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` codepoints, otherwise `false`.
+Returns `true` if the string is empty or contains only isWhitespace codepoints, otherwise `false`.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the string is empty or contains only `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` codepoints, otherwise `false` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the string is empty or contains only isWhitespace codepoints, otherwise `false` |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`
+- isWhitespace
 
 ### isEmpty
 
@@ -1430,7 +1430,7 @@ Note that if an individual element is `null`, then `"null"` is added.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#join(kotlin.CharSequence,%20kotlin.CharSequence)`
+- join
 - `https://developer.android.com/reference/kotlin/java/util/StringJoiner.html#`
 
 ### lastIndexOf
@@ -1591,7 +1591,7 @@ fun matches(regex: String): Boolean
 Tells whether or not this string matches the given [regular expression](../java.util.regex/Pattern.md).
 
 An invocation of this method of the form *str* `.matches(`*regex* `)` yields exactly the same result as the expression
-`https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.`https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#matches(kotlin.String,%20kotlin.CharSequence)`
+`https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.matches
 
 | Parameters ||
 |---|---|
@@ -1820,9 +1820,9 @@ fun replaceAll(
 Replaces each substring of this string that matches the given [regular expression](../java.util.regex/Pattern.md) with the given replacement.
 
 An invocation of this method of the form *str* `.replaceAll(`*regex* `,` *repl* `)` yields exactly the same result as the expression
-`` `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.java.util.regex.Pattern#compile(regex).`https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#matcher(kotlin.CharSequence)`(str).java.util.regex.Matcher#replaceAll(repl) ``
+`` `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.java.util.regex.Pattern#compile(regex).matcher(str).java.util.regex.Matcher#replaceAll(repl) ``
 
-Note that backslashes (`\`) and dollar signs (`$`) in the replacement string may cause the results to be different than if it were being treated as a literal replacement string; see java.util.regex.Matcher#replaceAll. Use `https://developer.android.com/reference/kotlin/java/util/regex/Matcher.html#quoteReplacement(kotlin.String)` to suppress the special meaning of these characters, if desired.
+Note that backslashes (`\`) and dollar signs (`$`) in the replacement string may cause the results to be different than if it were being treated as a literal replacement string; see java.util.regex.Matcher#replaceAll. Use quoteReplacement to suppress the special meaning of these characters, if desired.
 
 | Parameters ||
 |---|---|
@@ -1855,9 +1855,9 @@ fun replaceFirst(
 Replaces the first substring of this string that matches the given [regular expression](../java.util.regex/Pattern.md) with the given replacement.
 
 An invocation of this method of the form *str* `.replaceFirst(`*regex* `,` *repl* `)` yields exactly the same result as the expression
-`` `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.java.util.regex.Pattern#compile(regex).`https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#matcher(kotlin.CharSequence)`(str).java.util.regex.Matcher#replaceFirst(repl) ``
+`` `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.java.util.regex.Pattern#compile(regex).matcher(str).java.util.regex.Matcher#replaceFirst(repl) ``
 
-Note that backslashes (`\`) and dollar signs (`$`) in the replacement string may cause the results to be different than if it were being treated as a literal replacement string; see java.util.regex.Matcher#replaceFirst. Use `https://developer.android.com/reference/kotlin/java/util/regex/Matcher.html#quoteReplacement(kotlin.String)` to suppress the special meaning of these characters, if desired.
+Note that backslashes (`\`) and dollar signs (`$`) in the replacement string may cause the results to be different than if it were being treated as a literal replacement string; see java.util.regex.Matcher#replaceFirst. Use quoteReplacement to suppress the special meaning of these characters, if desired.
 
 | Parameters ||
 |---|---|
@@ -1886,7 +1886,7 @@ fun split(regex: String): Array<String!>
 
 Splits this string around matches of the given [regular expression](../java.util.regex/Pattern.md).
 
-This method works as if by invoking the two-argument `https://developer.android.com/reference/kotlin/java/lang/String#split(kotlin.String,%20kotlin.Int)` method with the given expression and a limit argument of zero. Trailing empty strings are therefore not included in the resulting array.
+This method works as if by invoking the two-argument split method with the given expression and a limit argument of zero. Trailing empty strings are therefore not included in the resulting array.
 
 The string `"boo:and:foo"`, for example, yields the following results with these expressions:
 
@@ -1949,7 +1949,7 @@ The string `"boo:and:foo"`, for example, yields the following results with these
 |---|---|---|
 
 An invocation of this method of the form *str.* `split(`*regex* `,` *n* `)` yields the same result as the expression
-`` `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.java.util.regex.Pattern#compile(regex).`https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#split(kotlin.CharSequence,%20kotlin.Int)`(str, n) ``
+`` `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#`.java.util.regex.Pattern#compile(regex).split(str, n) ``
 
 | Parameters ||
 |---|---|
@@ -1984,7 +1984,7 @@ Tests if this string starts with the specified prefix.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the character sequence represented by the argument is a prefix of the character sequence represented by this string; `false` otherwise. Note also that `true` will be returned if the argument is an empty string or is equal to this `String` object as determined by the `https://developer.android.com/reference/kotlin/java/lang/String#equals(kotlin.Any)` method. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the character sequence represented by the argument is a prefix of the character sequence represented by this string; `false` otherwise. Note also that `true` will be returned if the argument is an empty string or is equal to this `String` object as determined by the equals method. |
 
 ### startsWith
 
@@ -2016,13 +2016,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun strip(): String
 ```
 
-Returns a string whose value is this string, with all leading and trailing `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` removed.
+Returns a string whose value is this string, with all leading and trailing isWhitespace removed.
 
-If this `String` object represents an empty string, or if all code points in this string are `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`, then an empty string is returned.
+If this `String` object represents an empty string, or if all code points in this string are isWhitespace, then an empty string is returned.
 
-Otherwise, returns a substring of this string beginning with the first code point that is not a `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` up to and including the last code point that is not a `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`.
+Otherwise, returns a substring of this string beginning with the first code point that is not a isWhitespace up to and including the last code point that is not a isWhitespace.
 
-This method may be used to strip `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` from the beginning and end of a string.
+This method may be used to strip isWhitespace from the beginning and end of a string.
 
 | Return ||
 |---|---|
@@ -2030,7 +2030,7 @@ This method may be used to strip `https://developer.android.com/reference/kotlin
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`
+- isWhitespace
 
 ### stripIndent
 
@@ -2069,7 +2069,7 @@ First, the individual lines of this string are extracted. A *line* is a sequence
 
 Then, the *minimum indentation* (min) is determined as follows:
 
-- For each non-blank line (as defined by `https://developer.android.com/reference/kotlin/java/lang/String#isBlank()`), the leading [white space](Character.md)) characters are counted.
+- For each non-blank line (as defined by isBlank), the leading [white space](Character.md)) characters are counted.
 
 - The leading [white space](Character.md)) characters on the last line are also counted even if [blank](String.md)).
 
@@ -2085,10 +2085,10 @@ Finally, the lines are joined into a new string, using the LF character `"\n"` (
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#lines()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#isBlank()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#indent(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`
+- lines
+- isBlank
+- indent
+- isWhitespace
 
 ### stripLeading
 
@@ -2098,13 +2098,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun stripLeading(): String
 ```
 
-Returns a string whose value is this string, with all leading `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` removed.
+Returns a string whose value is this string, with all leading isWhitespace removed.
 
-If this `String` object represents an empty string, or if all code points in this string are `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`, then an empty string is returned.
+If this `String` object represents an empty string, or if all code points in this string are isWhitespace, then an empty string is returned.
 
-Otherwise, returns a substring of this string beginning with the first code point that is not a `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` up to to and including the last code point of this string.
+Otherwise, returns a substring of this string beginning with the first code point that is not a isWhitespace up to to and including the last code point of this string.
 
-This method may be used to trim `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` from the beginning of a string.
+This method may be used to trim isWhitespace from the beginning of a string.
 
 | Return ||
 |---|---|
@@ -2112,7 +2112,7 @@ This method may be used to trim `https://developer.android.com/reference/kotlin/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`
+- isWhitespace
 
 ### stripTrailing
 
@@ -2122,13 +2122,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun stripTrailing(): String
 ```
 
-Returns a string whose value is this string, with all trailing `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` removed.
+Returns a string whose value is this string, with all trailing isWhitespace removed.
 
-If this `String` object represents an empty string, or if all characters in this string are `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`, then an empty string is returned.
+If this `String` object represents an empty string, or if all characters in this string are isWhitespace, then an empty string is returned.
 
-Otherwise, returns a substring of this string beginning with the first code point of this string up to and including the last code point that is not a `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`.
+Otherwise, returns a substring of this string beginning with the first code point of this string up to and including the last code point that is not a isWhitespace.
 
-This method may be used to trim `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` from the end of a string.
+This method may be used to trim isWhitespace from the end of a string.
 
 | Return ||
 |---|---|
@@ -2136,7 +2136,7 @@ This method may be used to trim `https://developer.android.com/reference/kotlin/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)`
+- isWhitespace
 
 ### subSequence
 
@@ -2275,7 +2275,7 @@ Converts all of the characters in this `String` to lower case using the rules of
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase(java.util.Locale)`
+- toLowerCase
 
 ### toLowerCase
 
@@ -2285,7 +2285,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toLowerCase(locale: Locale): String
 ```
 
-Converts all of the characters in this `String` to lower case using the rules of the given `Locale`. Case mapping is based on the Unicode Standard version specified by the `https://developer.android.com/reference/kotlin/java/lang/Character` class. Since case mappings are not always 1:1 char mappings, the resulting `String` may be a different length than the original `String`.
+Converts all of the characters in this `String` to lower case using the rules of the given `Locale`. Case mapping is based on the Unicode Standard version specified by the Character class. Since case mappings are not always 1:1 char mappings, the resulting `String` may be a different length than the original `String`.
 
 Examples of lowercase mappings are in the following table:
 
@@ -2307,9 +2307,9 @@ Examples of lowercase mappings are in the following table:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase(java.util.Locale)`
+- toLowerCase
+- toUpperCase
+- toUpperCase
 
 ### toString
 
@@ -2343,7 +2343,7 @@ Converts all of the characters in this `String` to upper case using the rules of
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase(java.util.Locale)`
+- toUpperCase
 
 ### toUpperCase
 
@@ -2353,7 +2353,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toUpperCase(locale: Locale): String
 ```
 
-Converts all of the characters in this `String` to upper case using the rules of the given `Locale`. Case mapping is based on the Unicode Standard version specified by the `https://developer.android.com/reference/kotlin/java/lang/Character` class. Since case mappings are not always 1:1 char mappings, the resulting `String` may be a different length than the original `String`.
+Converts all of the characters in this `String` to upper case using the rules of the given `Locale`. Case mapping is based on the Unicode Standard version specified by the Character class. Since case mappings are not always 1:1 char mappings, the resulting `String` may be a different length than the original `String`.
 
 Examples of locale-sensitive and 1:M case mappings are in the following table.
 
@@ -2375,9 +2375,9 @@ Examples of locale-sensitive and 1:M case mappings are in the following table.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase()`
-- `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase(java.util.Locale)`
+- toUpperCase
+- toLowerCase
+- toLowerCase
 
 ### transform
 
@@ -2571,7 +2571,7 @@ The representation is exactly the one returned by the `Double.toString` method o
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Double#toString(kotlin.Double)`
+- toString
 
 ### valueOf
 
@@ -2595,7 +2595,7 @@ The representation is exactly the one returned by the `Float.toString` method of
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float#toString(kotlin.Float)`
+- toString
 
 ### valueOf
 
@@ -2619,7 +2619,7 @@ The representation is exactly the one returned by the `Integer.toString` method 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int,%20kotlin.Int)`
+- toString
 
 ### valueOf
 
@@ -2641,7 +2641,7 @@ Returns the string representation of the `Object` argument.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#toString()`
+- toString
 
 ### valueOf
 
@@ -2665,7 +2665,7 @@ The representation is exactly the one returned by the `Long.toString` method of 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Long#toString(kotlin.Long)`
+- toString
 
 ## Properties
 

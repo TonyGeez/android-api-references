@@ -16,39 +16,39 @@ Note that this container keeps its mappings in an array data structure, using a 
 
 To help with performance, the container includes an optimization when removing keys: instead of compacting its array immediately, it leaves the removed entry marked as deleted. The entry can then be re-used for the same key, or compacted later in a single garbage collection step of all removed entries. This garbage collection will need to be performed at any time the array needs to be grown or the the map size or entry values are retrieved.
 
-It is possible to iterate over the items in this container using `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#keyAt(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#valueAt(kotlin.Int)`. Iterating over the keys using `keyAt(int)` with ascending values of the index will return the keys in ascending order, or the values corresponding to the keys in ascending order in the case of `valueAt(int)`.
+It is possible to iterate over the items in this container using keyAt and valueAt. Iterating over the keys using `keyAt(int)` with ascending values of the index will return the keys in ascending order, or the values corresponding to the keys in ascending order in the case of `valueAt(int)`.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#LongSparseArray()()` Creates a new LongSparseArray containing no mappings. |
-| `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#LongSparseArray(kotlin.Int)(initialCapacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new LongSparseArray containing no mappings that will not require any additional memory allocation to store the specified number of mappings. |
+| LongSparseArray Creates a new LongSparseArray containing no mappings. |
+| LongSparseArray Creates a new LongSparseArray containing no mappings that will not require any additional memory allocation to store the specified number of mappings. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#append(kotlin.Long,%20android.util.LongSparseArray.E)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, value: E)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#clear()()` Removes all key-value mappings from this LongSparseArray. |
-| open [LongSparseArray](LongSparseArray.md)\<E\> | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#clone()()` Creates and returns a copy of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | append Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Removes all key-value mappings from this LongSparseArray. |
+| open [LongSparseArray](LongSparseArray.md)\<E\> | clone Creates and returns a copy of this object. |
 | --- | --- |
-| open E? | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#compute(kotlin.Long,%20android.util.function.LongObjFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, function: https://developer.android.com/reference/kotlin/android/util/function/LongObjFunction<in E, out E>)` Attempts to compute a new mapped value for the specified key based on its current mapping (or null if there is no current mapping). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#delete(kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Removes the mapping from the specified key, if there was any. |
-| open E | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#get(kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Gets the Object mapped from the specified key, or `null` if no such mapping has been made. |
+| open E? | compute Attempts to compute a new mapped value for the specified key based on its current mapping (or null if there is no current mapping). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | delete Removes the mapping from the specified key, if there was any. |
+| open E | get Gets the Object mapped from the specified key, or `null` if no such mapping has been made. |
 | --- | --- |
-| open E | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#get(kotlin.Long,%20android.util.LongSparseArray.E)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, valueIfKeyNotFound: E)` Gets the Object mapped from the specified key, or the specified Object if no such mapping has been made. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#indexOfKey(kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the index for which `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#keyAt(kotlin.Int)` would return the specified key, or a negative number if the specified key is not mapped. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#indexOfValue(android.util.LongSparseArray.E)(value: E)` Returns an index for which `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#valueAt(kotlin.Int)` would return the specified key, or a negative number if no keys map to the specified value. |
+| open E | get Gets the Object mapped from the specified key, or the specified Object if no such mapping has been made. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOfKey Returns the index for which keyAt would return the specified key, or a negative number if the specified key is not mapped. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOfValue Returns an index for which valueAt would return the specified key, or a negative number if no keys map to the specified value. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#keyAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given an index in the range `0...size()-1`, returns the key from the `index`th key-value mapping that this LongSparseArray stores. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#put(kotlin.Long,%20android.util.LongSparseArray.E)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, value: E)` Adds a mapping from the specified key to the specified value, replacing the previous mapping from the specified key if there was one. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#remove(kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Alias for `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#delete(kotlin.Long)`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | keyAt Given an index in the range `0...size()-1`, returns the key from the `index`th key-value mapping that this LongSparseArray stores. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | put Adds a mapping from the specified key to the specified value, replacing the previous mapping from the specified key if there was one. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | remove Alias for delete. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#removeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the mapping at the specified index. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#setValueAt(kotlin.Int,%20android.util.LongSparseArray.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: E)` Given an index in the range `0...size()-1`, sets a new value for the `index`th key-value mapping that this LongSparseArray stores. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#size()()` Returns the number of key-value mappings that this LongSparseArray currently stores. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeAt Removes the mapping at the specified index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setValueAt Given an index in the range `0...size()-1`, sets a new value for the `index`th key-value mapping that this LongSparseArray stores. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Returns the number of key-value mappings that this LongSparseArray currently stores. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#toString()()` Returns a string representation of the object. |
-| open E | `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#valueAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Given an index in the range `0...size()-1`, returns the value from the `index`th key-value mapping that this LongSparseArray stores. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open E | valueAt Given an index in the range `0...size()-1`, returns the value from the `index`th key-value mapping that this LongSparseArray stores. |
 
 ## Public constructors
 
@@ -199,7 +199,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun indexOfKey(key: Long): Int
 ```
 
-Returns the index for which `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#keyAt(kotlin.Int)` would return the specified key, or a negative number if the specified key is not mapped.
+Returns the index for which keyAt would return the specified key, or a negative number if the specified key is not mapped.
 
 ### indexOfValue
 
@@ -209,7 +209,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun indexOfValue(value: E): Int
 ```
 
-Returns an index for which `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#valueAt(kotlin.Int)` would return the specified key, or a negative number if no keys map to the specified value. Beware that this is a linear search, unlike lookups by key, and that multiple keys can map to the same value and this will find only one of them.
+Returns an index for which valueAt would return the specified key, or a negative number if no keys map to the specified value. Beware that this is a linear search, unlike lookups by key, and that multiple keys can map to the same value and this will find only one of them.
 
 Note also that unlike most collections' `indexOf` methods, this method compares values using `==` rather than `equals`.
 
@@ -248,7 +248,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun remove(key: Long): Unit
 ```
 
-Alias for `https://developer.android.com/reference/kotlin/android/util/LongSparseArray#delete(kotlin.Long)`.
+Alias for delete.
 
 ### removeAt
 

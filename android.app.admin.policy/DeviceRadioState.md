@@ -69,6 +69,6 @@ Policy that controls whether outgoing transfer is allowed for managed embedded s
 | --- | --- |
 | Policy value | `Integer`, value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/policy/DeviceRadioState#MANAGED_ESIM_OUTGOING_TRANSFER_ALLOWED:kotlin.Int` (default) - `https://developer.android.com/reference/kotlin/android/app/admin/policy/DeviceRadioState#MANAGED_ESIM_OUTGOING_TRANSFER_DISALLOWED:kotlin.Int` |
 
-See also: `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setPolicy(android.app.admin.PolicyIdentifier,%20kotlin.Int,%20android.app.admin.DevicePolicyManager.setPolicy.T)`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getPolicy(android.app.admin.PolicyIdentifier,%20kotlin.Int)`
+See also: setPolicy, getPolicy
 
 <br />

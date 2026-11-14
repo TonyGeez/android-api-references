@@ -25,17 +25,17 @@ The ad counter histograms, which are historical logs of events which are associa
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest.Builder` Builder for UpdateAdCounterHistogramRequest objects. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` objects contain the same information. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getAdEventType()()` Gets the ad event type which, along with an ad's counter keys, identifies which histogram should be updated. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getAdSelectionId()()` Gets the ad selection ID with which the rendered ad's events are associated. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks whether the UpdateAdCounterHistogramRequest objects contain the same information. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAdEventType Gets the ad event type which, along with an ad's counter keys, identifies which histogram should be updated. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAdSelectionId Gets the ad selection ID with which the rendered ad's events are associated. |
 | --- | --- |
-| open [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getCallerAdTech()()` Gets the caller adtech entity's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` object's data. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#toString()()` Returns a string representation of the object. |
+| open [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | getCallerAdTech Gets the caller adtech entity's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hash of the UpdateAdCounterHistogramRequest object's data. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Public methods
@@ -51,7 +51,7 @@ open fun equals(other: Any?): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` objects contain the same information.
+Checks whether the UpdateAdCounterHistogramRequest objects contain the same information.
 
 | Parameters ||
 |---|---|
@@ -93,9 +93,9 @@ open fun getAdSelectionId(): Long
 
 Gets the ad selection ID with which the rendered ad's events are associated.
 
-For more information about the ad selection ID, see `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionOutcome`.
+For more information about the ad selection ID, see AdSelectionOutcome.
 
-The ad must have been selected from Protected Audience ad selection in the last 24 hours, and the ad selection call must have been initiated from the same app as the current calling app. Event histograms for all ad counter keys associated with the ad specified by the ad selection ID will be updated for the ad event type from `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getAdEventType()`, to be used in Protected Audience frequency cap filtering.
+The ad must have been selected from Protected Audience ad selection in the last 24 hours, and the ad selection call must have been initiated from the same app as the current calling app. Event histograms for all ad counter keys associated with the ad specified by the ad selection ID will be updated for the ad event type from getAdEventType, to be used in Protected Audience frequency cap filtering.
 
 ### getCallerAdTech
 
@@ -111,9 +111,9 @@ open fun getCallerAdTech(): AdTechIdentifier
 
 Gets the caller adtech entity's `https://developer.android.com/reference/kotlin/android/adservices/common/AdTechIdentifier.html#`.
 
-The adtech using this `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` object must have enrolled with the Privacy Sandbox and be allowed to act on behalf of the calling app. The specified adtech is not required to be the same adtech as either the buyer which owns the rendered ad or the seller which initiated the ad selection associated with the ID returned by `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#getAdSelectionId()`.
+The adtech using this UpdateAdCounterHistogramRequest object must have enrolled with the Privacy Sandbox and be allowed to act on behalf of the calling app. The specified adtech is not required to be the same adtech as either the buyer which owns the rendered ad or the seller which initiated the ad selection associated with the ID returned by getAdSelectionId.
 
-For more information about API requirements and exceptions, see `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#updateAdCounterHistogram(android.adservices.adselection.UpdateAdCounterHistogramRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+For more information about API requirements and exceptions, see updateAdCounterHistogram.
 
 | Return ||
 |---|---|
@@ -130,7 +130,7 @@ open fun hashCode(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/UpdateAdCounterHistogramRequest#` object's data.
+Returns the hash of the UpdateAdCounterHistogramRequest object's data.
 
 | Return ||
 |---|---|

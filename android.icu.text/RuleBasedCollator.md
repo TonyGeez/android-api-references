@@ -120,79 +120,79 @@ This class is not subclassable
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/icu/text/Collator` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#CANONICAL_DECOMPOSITION:kotlin.Int` Decomposition mode value. With CANONICAL_DECOMPOSITION set, characters that are canonical variants according to the Unicode standard will be decomposed for collation. CANONICAL_DECOMPOSITION corresponds to Normalization Form D as described in [Unicode Technical Report #15](https://www.unicode.org/reports/tr15/). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#FULL_DECOMPOSITION:kotlin.Int` **\[icu\] Note:** This is for backwards compatibility with Java APIs only. It should not be used, IDENTICAL should be used instead. ICU's collation does not support Java's FULL_DECOMPOSITION mode. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#IDENTICAL:kotlin.Int` Smallest Collator strength value. When all other strengths are equal, the IDENTICAL strength is used as a tiebreaker. The Unicode code point values of the NFD form of each string are compared, just in case there is no difference. See class documentation for more explanation. Note this value is different from JDK's <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#NO_DECOMPOSITION:kotlin.Int` Decomposition mode value. With NO_DECOMPOSITION set, Strings will not be decomposed for collation. This is the default decomposition setting unless otherwise specified by the locale used to create the Collator. **Note** this value is different from the JDK's. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#PRIMARY:kotlin.Int` Strongest collator strength value. Typically used to denote differences between base characters. See class documentation for more explanation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#QUATERNARY:kotlin.Int` **\[icu\]** Fourth level collator strength value. When punctuation is ignored (see [Ignoring Punctuation in the User Guide](https://unicode-org.github.io/icu/userguide/collation/concepts#ignoring-punctuation)) at PRIMARY to TERTIARY strength, an additional strength level can be used to distinguish words with and without punctuation. See class documentation for more explanation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#SECONDARY:kotlin.Int` Second level collator strength value. Accents in the characters are considered secondary differences. Other differences between letters can also be considered secondary differences, depending on the language. See class documentation for more explanation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#TERTIARY:kotlin.Int` Third level collator strength value. Upper and lower case differences in characters are distinguished at this strength level. In addition, a variant of a letter differs from the base form on the tertiary level. See class documentation for more explanation. <br /> | ||
+| From class Collator |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#CANONICAL_DECOMPOSITION:kotlin.Int` Decomposition mode value. With CANONICAL_DECOMPOSITION set, characters that are canonical variants according to the Unicode standard will be decomposed for collation. CANONICAL_DECOMPOSITION corresponds to Normalization Form D as described in [Unicode Technical Report #15](https://www.unicode.org/reports/tr15/). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#FULL_DECOMPOSITION:kotlin.Int` **\[icu\] Note:** This is for backwards compatibility with Java APIs only. It should not be used, IDENTICAL should be used instead. ICU's collation does not support Java's FULL_DECOMPOSITION mode. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#IDENTICAL:kotlin.Int` Smallest Collator strength value. When all other strengths are equal, the IDENTICAL strength is used as a tiebreaker. The Unicode code point values of the NFD form of each string are compared, just in case there is no difference. See class documentation for more explanation. Note this value is different from JDK's <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#NO_DECOMPOSITION:kotlin.Int` Decomposition mode value. With NO_DECOMPOSITION set, Strings will not be decomposed for collation. This is the default decomposition setting unless otherwise specified by the locale used to create the Collator. **Note** this value is different from the JDK's. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#PRIMARY:kotlin.Int` Strongest collator strength value. Typically used to denote differences between base characters. See class documentation for more explanation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#QUATERNARY:kotlin.Int` **\[icu\]** Fourth level collator strength value. When punctuation is ignored (see [Ignoring Punctuation in the User Guide](https://unicode-org.github.io/icu/userguide/collation/concepts#ignoring-punctuation)) at PRIMARY to TERTIARY strength, an additional strength level can be used to distinguish words with and without punctuation. See class documentation for more explanation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#SECONDARY:kotlin.Int` Second level collator strength value. Accents in the characters are considered secondary differences. Other differences between letters can also be considered secondary differences, depending on the language. See class documentation for more explanation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#TERTIARY:kotlin.Int` Third level collator strength value. Upper and lower case differences in characters are distinguished at this strength level. In addition, a variant of a letter differs from the base form on the tertiary level. See class documentation for more explanation. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#RuleBasedCollator(kotlin.String)(rules: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructor that takes the argument rules for customization. |
+| RuleBasedCollator Constructor that takes the argument rules for customization. |
 
 | Public methods ||
 |---|---|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#clone()()` Clones the RuleBasedCollator |
-| [RuleBasedCollator](RuleBasedCollator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#cloneAsThawed()()` Provides for the clone operation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#compare(kotlin.String,%20kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compares the source text String to the target text String according to the collation rules, strength and decomposition mode for this RuleBasedCollator. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Clones the RuleBasedCollator |
+| [RuleBasedCollator](RuleBasedCollator.md)! | cloneAsThawed Provides for the clone operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare Compares the source text String to the target text String according to the collation rules, strength and decomposition mode for this RuleBasedCollator. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the equality of two Collator objects. |
-| [Collator](Collator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#freeze()()` Freezes the collator. |
-| [CollationElementIterator](CollationElementIterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getCollationElementIterator(android.icu.text.UCharacterIterator)(source: https://developer.android.com/reference/kotlin/android/icu/text/UCharacterIterator!)` Return a CollationElementIterator for the given UCharacterIterator. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares the equality of two Collator objects. |
+| [Collator](Collator.md)! | freeze Freezes the collator. |
+| [CollationElementIterator](CollationElementIterator.md)! | getCollationElementIterator Return a CollationElementIterator for the given UCharacterIterator. |
 | --- | --- |
-| [CollationElementIterator](CollationElementIterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getCollationElementIterator(kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a CollationElementIterator for the given String. |
-| [CollationElementIterator](CollationElementIterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getCollationElementIterator(java.text.CharacterIterator)(source: https://developer.android.com/reference/kotlin/java/text/CharacterIterator.html#!)` Return a CollationElementIterator for the given CharacterIterator. |
-| [CollationKey](CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getCollationKey(kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get a Collation key for the argument String source from this RuleBasedCollator. |
+| [CollationElementIterator](CollationElementIterator.md)! | getCollationElementIterator Return a CollationElementIterator for the given String. |
+| [CollationElementIterator](CollationElementIterator.md)! | getCollationElementIterator Return a CollationElementIterator for the given CharacterIterator. |
+| [CollationKey](CollationKey.md)! | getCollationKey Get a Collation key for the argument String source from this RuleBasedCollator. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getContractionsAndExpansions(android.icu.text.UnicodeSet,%20android.icu.text.UnicodeSet,%20kotlin.Boolean)(contractions: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet!, expansions: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet!, addPrefixes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Gets unicode sets containing contractions and/or expansions of a collator |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getDecomposition()()` Returns the decomposition mode of this Collator. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getMaxVariable()()` **\[icu\]** Returns the maximum reordering group whose characters are affected by the alternate handling behavior. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getContractionsAndExpansions Gets unicode sets containing contractions and/or expansions of a collator |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDecomposition Returns the decomposition mode of this Collator. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxVariable **\[icu\]** Returns the maximum reordering group whose characters are affected by the alternate handling behavior. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getNumericCollation()()` Method to retrieve the numeric collation value. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getReorderCodes()()` Retrieves the reordering codes for this collator. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getRules()()` Gets the collation tailoring rules for this RuleBasedCollator. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getNumericCollation Method to retrieve the numeric collation value. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getReorderCodes Retrieves the reordering codes for this collator. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getRules Gets the collation tailoring rules for this RuleBasedCollator. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getRules(kotlin.Boolean)(fullrules: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns current rules. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getStrength()()` Returns this Collator's strength attribute. |
-| [UnicodeSet](UnicodeSet.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getTailoredSet()()` Get a UnicodeSet that contains all the characters and sequences tailored in this collator. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getRules Returns current rules. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStrength Returns this Collator's strength attribute. |
+| [UnicodeSet](UnicodeSet.md)! | getTailoredSet Get a UnicodeSet that contains all the characters and sequences tailored in this collator. |
 | --- | --- |
-| [VersionInfo](../android.icu.util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getUCAVersion()()` Get the UCA version of this collator object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getVariableTop()()` **\[icu\]** Gets the variable top value of a Collator. |
-| [VersionInfo](../android.icu.util/VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getVersion()()` Get the version of this collator object. |
+| [VersionInfo](../android.icu.util/VersionInfo.md)! | getUCAVersion Get the UCA version of this collator object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVariableTop **\[icu\]** Gets the variable top value of a Collator. |
+| [VersionInfo](../android.icu.util/VersionInfo.md)! | getVersion Get the version of this collator object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#hashCode()()` Generates a unique hash code for this RuleBasedCollator. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isAlternateHandlingShifted()()` Checks if the alternate handling behavior is the UCA defined SHIFTED or NON_IGNORABLE. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isCaseLevel()()` Checks if case level is set to true. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Generates a unique hash code for this RuleBasedCollator. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAlternateHandlingShifted Checks if the alternate handling behavior is the UCA defined SHIFTED or NON_IGNORABLE. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCaseLevel Checks if case level is set to true. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isFrenchCollation()()` Checks if French Collation is set to true. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isFrozen()()` Determines whether the object has been frozen or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isLowerCaseFirst()()` Return true if a lowercase character is sorted before the corresponding uppercase character. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFrenchCollation Checks if French Collation is set to true. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFrozen Determines whether the object has been frozen or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLowerCaseFirst Return true if a lowercase character is sorted before the corresponding uppercase character. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isUpperCaseFirst()()` Return true if an uppercase character is sorted before the corresponding lowercase character. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setAlternateHandlingDefault()()` Sets the alternate handling mode to the initial mode set during construction of the RuleBasedCollator. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setAlternateHandlingShifted(kotlin.Boolean)(shifted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the alternate handling for QUATERNARY strength to be either shifted or non-ignorable. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUpperCaseFirst Return true if an uppercase character is sorted before the corresponding lowercase character. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAlternateHandlingDefault Sets the alternate handling mode to the initial mode set during construction of the RuleBasedCollator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAlternateHandlingShifted Sets the alternate handling for QUATERNARY strength to be either shifted or non-ignorable. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseFirstDefault()()` Sets the case first mode to the initial mode set during construction of the RuleBasedCollator. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseLevel(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` When case level is set to true, an additional weight is formed between the SECONDARY and TERTIARY weight, known as the case level. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseLevelDefault()()` Sets the case level mode to the initial mode set during construction of the RuleBasedCollator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCaseFirstDefault Sets the case first mode to the initial mode set during construction of the RuleBasedCollator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCaseLevel When case level is set to true, an additional weight is formed between the SECONDARY and TERTIARY weight, known as the case level. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCaseLevelDefault Sets the case level mode to the initial mode set during construction of the RuleBasedCollator. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setDecomposition(kotlin.Int)(decomposition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the decomposition mode of this Collator. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setDecompositionDefault()()` Sets the decomposition mode to the initial mode set during construction of the RuleBasedCollator. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setFrenchCollation(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the mode for the direction of SECONDARY weights to be used in French collation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDecomposition Sets the decomposition mode of this Collator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDecompositionDefault Sets the decomposition mode to the initial mode set during construction of the RuleBasedCollator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFrenchCollation Sets the mode for the direction of SECONDARY weights to be used in French collation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setFrenchCollationDefault()()` Sets the French collation mode to the initial mode set during construction of the RuleBasedCollator. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setLowerCaseFirst(kotlin.Boolean)(lowerfirst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the orders of lower cased characters to sort before upper cased characters, in strength TERTIARY. |
-| [RuleBasedCollator](RuleBasedCollator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setMaxVariable(kotlin.Int)(group: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **\[icu\]** Sets the variable top to the top of the specified reordering group. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFrenchCollationDefault Sets the French collation mode to the initial mode set during construction of the RuleBasedCollator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLowerCaseFirst Sets the orders of lower cased characters to sort before upper cased characters, in strength TERTIARY. |
+| [RuleBasedCollator](RuleBasedCollator.md)! | setMaxVariable **\[icu\]** Sets the variable top to the top of the specified reordering group. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setNumericCollation(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` **\[icu\]** When numeric collation is turned on, this Collator makes substrings of digits sort according to their numeric values. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setNumericCollationDefault()()` Method to set numeric collation to its default value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setReorderCodes(kotlin.Int)(vararg order: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the reordering codes for this collator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNumericCollation **\[icu\]** When numeric collation is turned on, this Collator makes substrings of digits sort according to their numeric values. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNumericCollationDefault Method to set numeric collation to its default value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setReorderCodes Sets the reordering codes for this collator. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setStrength(kotlin.Int)(newStrength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets this Collator's strength attribute. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setStrengthDefault()()` Sets the collation strength to the initial mode set during the construction of the RuleBasedCollator. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setUpperCaseFirst(kotlin.Boolean)(upperfirst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether uppercase characters sort before lowercase characters or vice versa, in strength TERTIARY. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStrength Sets this Collator's strength attribute. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStrengthDefault Sets the collation strength to the initial mode set during the construction of the RuleBasedCollator. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUpperCaseFirst Sets whether uppercase characters sort before lowercase characters or vice versa, in strength TERTIARY. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/icu/text/Collator` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#compare(kotlin.Any,%20kotlin.Any)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Compares the source Object to the target Object. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#equals(kotlin.String,%20kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compares the equality of two text Strings using this Collator's rules, strength and decomposition mode. Convenience method. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.html#!>!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getAvailableLocales()()` Returns the set of locales, as Locale objects, for which collators are installed. Note that Locale objects do not support RFC 3066. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!>!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getAvailableULocales()()` **\[icu\]** Returns the set of locales, as ULocale objects, for which collators are installed. ULocale objects support RFC 3066. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(android.icu.util.ULocale)(objectLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the default `DISPLAY` locale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(android.icu.util.ULocale,%20android.icu.util.ULocale)(objectLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, displayLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the displayLocale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(java.util.Locale)(objectLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the default `DISPLAY` locale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getDisplayName(java.util.Locale,%20java.util.Locale)(objectLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!, displayLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns the name of the collator for the objectLocale, localized for the displayLocale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getEquivalentReorderCodes(kotlin.Int)(reorderCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves all the reorder codes that are grouped with the given reorder code. Some reorder codes are grouped and must reorder together. Beginning with ICU 55, scripts only reorder together if they are primary-equal, for example Hiragana and Katakana. <br /> | | `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getFunctionalEquivalent(kotlin.String,%20android.icu.util.ULocale)(keyword: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locID: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the functionally equivalent locale for the given requested locale, with respect to given keyword, for the collation service. <br /> | | `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getFunctionalEquivalent(kotlin.String,%20android.icu.util.ULocale,%20kotlin.BooleanArray)(keyword: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locID: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, isAvailable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html!)` **\[icu\]** Returns the functionally equivalent locale for the given requested locale, with respect to given keyword, for the collation service. If two locales return the same result, then collators instantiated for these locales will behave equivalently. The converse is not always true; two collators may in fact be equivalent, but return different results, due to internal details. The return result has no other meaning than that stated above, and implies nothing as to the relationship between the two locales. This is intended for use by applications who wish to cache collators, or otherwise reuse collators when possible. The functional equivalent may change over time. For more information, please see the [Locales and Services](https://unicode-org.github.io/icu/userguide/locale#locales-and-services) section of the ICU User Guide. <br /> | | `https://developer.android.com/reference/kotlin/android/icu/text/Collator!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getInstance()()` Returns the Collator for the current default locale. The default locale is determined by java.util.Locale.getDefault(). <br /> | | `https://developer.android.com/reference/kotlin/android/icu/text/Collator!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` **\[icu\]** Returns the Collator for the desired locale. For some languages, multiple collation types are available; for example, "de@collation=phonebook". Starting with ICU 54, collation attributes can be specified via locale keywords as well, in the old locale extension syntax ("el@colCaseFirst=upper") or in language tag syntax ("el-u-kf-upper"). See [User Guide: Collation API](https://unicode-org.github.io/icu/userguide/collation/api). <br /> | | `https://developer.android.com/reference/kotlin/android/icu/text/Collator!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the Collator for the desired locale. For some languages, multiple collation types are available; for example, "de-u-co-phonebk". Starting with ICU 54, collation attributes can be specified via locale keywords as well, in the old locale extension syntax ("el@colCaseFirst=upper", only with `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#`) or in language tag syntax ("el-u-kf-upper"). See [User Guide: Collation API](https://unicode-org.github.io/icu/userguide/collation/api). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getKeywordValues(kotlin.String)(keyword: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Given a keyword, returns an array of all values for that keyword that are currently in use. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getKeywordValuesForLocale(kotlin.String,%20android.icu.util.ULocale,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, commonlyUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` **\[icu\]** Given a key and a locale, returns an array of string values in a preferred order that would make a difference. These are all and only those values where the open (creation) of the service with the locale formed from the input locale plus input keyword and that value has different behavior than creation with the input locale alone. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getKeywords()()` **\[icu\]** Returns an array of all possible keywords that are relevant to collation. At this point, the only recognized keyword for this service is "collation". <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#reversed()()` Returns a comparator that imposes the reverse ordering of this comparator. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#thenComparing(java.util.Comparator)(other: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in T>!)` Returns a lexicographic-order comparator with another comparator. If this `Comparator` considers two elements equal, i.e. `compare(a, b) == 0`, `other` is used to determine the order. The returned comparator is serializable if the specified comparator is also serializable. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#thenComparing(java.util.function.Function)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a lexicographic-order comparator with a function that extracts a `Comparable` sort key. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#thenComparing(java.util.function.Function,%20java.util.Comparator)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, keyComparator: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in U>!)` Returns a lexicographic-order comparator with a function that extracts a key to be compared with the given `Comparator`. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a lexicographic-order comparator with a function that extracts a `double` sort key. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a lexicographic-order comparator with a function that extracts an `int` sort key. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)(keyExtractor: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a lexicographic-order comparator with a function that extracts a `long` sort key. <br /> | ||
+| From class Collator |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | compare Compares the source Object to the target Object. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | equals Compares the equality of two text Strings using this Collator's rules, strength and decomposition mode. Convenience method. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.html#!>!` | getAvailableLocales Returns the set of locales, as Locale objects, for which collators are installed. Note that Locale objects do not support RFC 3066. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!>!` | getAvailableULocales **\[icu\]** Returns the set of locales, as ULocale objects, for which collators are installed. ULocale objects support RFC 3066. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getDisplayName **\[icu\]** Returns the name of the collator for the objectLocale, localized for the default `DISPLAY` locale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getDisplayName **\[icu\]** Returns the name of the collator for the objectLocale, localized for the displayLocale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getDisplayName **\[icu\]** Returns the name of the collator for the objectLocale, localized for the default `DISPLAY` locale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getDisplayName **\[icu\]** Returns the name of the collator for the objectLocale, localized for the displayLocale. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!` | getEquivalentReorderCodes Retrieves all the reorder codes that are grouped with the given reorder code. Some reorder codes are grouped and must reorder together. Beginning with ICU 55, scripts only reorder together if they are primary-equal, for example Hiragana and Katakana. <br /> | | `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!` | getFunctionalEquivalent **\[icu\]** Returns the functionally equivalent locale for the given requested locale, with respect to given keyword, for the collation service. <br /> | | `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!` | getFunctionalEquivalent **\[icu\]** Returns the functionally equivalent locale for the given requested locale, with respect to given keyword, for the collation service. If two locales return the same result, then collators instantiated for these locales will behave equivalently. The converse is not always true; two collators may in fact be equivalent, but return different results, due to internal details. The return result has no other meaning than that stated above, and implies nothing as to the relationship between the two locales. This is intended for use by applications who wish to cache collators, or otherwise reuse collators when possible. The functional equivalent may change over time. For more information, please see the [Locales and Services](https://unicode-org.github.io/icu/userguide/locale#locales-and-services) section of the ICU User Guide. <br /> | | `https://developer.android.com/reference/kotlin/android/icu/text/Collator!` | getInstance Returns the Collator for the current default locale. The default locale is determined by java.util.Locale.getDefault(). <br /> | | `https://developer.android.com/reference/kotlin/android/icu/text/Collator!` | getInstance **\[icu\]** Returns the Collator for the desired locale. For some languages, multiple collation types are available; for example, "de@collation=phonebook". Starting with ICU 54, collation attributes can be specified via locale keywords as well, in the old locale extension syntax ("el@colCaseFirst=upper") or in language tag syntax ("el-u-kf-upper"). See [User Guide: Collation API](https://unicode-org.github.io/icu/userguide/collation/api). <br /> | | `https://developer.android.com/reference/kotlin/android/icu/text/Collator!` | getInstance Returns the Collator for the desired locale. For some languages, multiple collation types are available; for example, "de-u-co-phonebk". Starting with ICU 54, collation attributes can be specified via locale keywords as well, in the old locale extension syntax ("el@colCaseFirst=upper", only with `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#`) or in language tag syntax ("el-u-kf-upper"). See [User Guide: Collation API](https://unicode-org.github.io/icu/userguide/collation/api). <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | getKeywordValues **\[icu\]** Given a keyword, returns an array of all values for that keyword that are currently in use. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | getKeywordValuesForLocale **\[icu\]** Given a key and a locale, returns an array of string values in a preferred order that would make a difference. These are all and only those values where the open (creation) of the service with the locale formed from the input locale plus input keyword and that value has different behavior than creation with the input locale alone. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | getKeywords **\[icu\]** Returns an array of all possible keywords that are relevant to collation. At this point, the only recognized keyword for this service is "collation". <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` |---|---| | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | reversed Returns a comparator that imposes the reverse ordering of this comparator. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | thenComparing Returns a lexicographic-order comparator with another comparator. If this `Comparator` considers two elements equal, i.e. `compare(a, b) == 0`, `other` is used to determine the order. The returned comparator is serializable if the specified comparator is also serializable. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | thenComparing Returns a lexicographic-order comparator with a function that extracts a `Comparable` sort key. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | thenComparing Returns a lexicographic-order comparator with a function that extracts a key to be compared with the given `Comparator`. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | thenComparingDouble Returns a lexicographic-order comparator with a function that extracts a `double` sort key. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | thenComparingInt Returns a lexicographic-order comparator with a function that extracts an `int` sort key. <br /> | | `https://developer.android.com/reference/kotlin/java/util/Comparator.html#<T>!` | thenComparingLong Returns a lexicographic-order comparator with a function that extracts a `long` sort key. <br /> | ||
 
 ## Public constructors
 
@@ -277,8 +277,8 @@ If comparison are to be done to the same String multiple times, it would be more
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getCollationKey(kotlin.String)`
+- CollationKey
+- getCollationKey
 
 ### equals
 
@@ -325,7 +325,7 @@ fun getCollationElementIterator(source: UCharacterIterator!): CollationElementI
 Return a CollationElementIterator for the given UCharacterIterator. The source iterator's integrity will be preserved since a new copy will be created for use.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator`
+- CollationElementIterator
 
 ### getCollationElementIterator
 
@@ -338,7 +338,7 @@ fun getCollationElementIterator(source: String!): CollationElementIterator!
 Return a CollationElementIterator for the given String.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator`
+- CollationElementIterator
 
 ### getCollationElementIterator
 
@@ -351,7 +351,7 @@ fun getCollationElementIterator(source: CharacterIterator!): CollationElementIt
 Return a CollationElementIterator for the given CharacterIterator. The source iterator's integrity will be preserved since a new copy will be created for use.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationElementIterator`
+- CollationElementIterator
 
 ### getCollationKey
 
@@ -378,8 +378,8 @@ See the class documentation for an explanation about CollationKeys.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#compare(kotlin.String,%20kotlin.String)`
+- CollationKey
+- compare
 
 ### getContractionsAndExpansions
 
@@ -424,7 +424,7 @@ See the Collator class description for more details.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setDecomposition(kotlin.Int)`
+- setDecomposition
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#NO_DECOMPOSITION:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#CANONICAL_DECOMPOSITION:kotlin.Int`
 
@@ -444,7 +444,7 @@ fun getMaxVariable(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setMaxVariable(kotlin.Int)`
+- setMaxVariable
 
 ### getNumericCollation
 
@@ -462,8 +462,8 @@ Method to retrieve the numeric collation value. When numeric collation is turned
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setNumericCollation(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setNumericCollationDefault()`
+- setNumericCollation
+- setNumericCollationDefault
 
 ### getReorderCodes
 
@@ -481,8 +481,8 @@ Retrieves the reordering codes for this collator. These reordering codes are a c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setReorderCodes(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getEquivalentReorderCodes(kotlin.Int)`
+- setReorderCodes
+- getEquivalentReorderCodes
 
 ### getRules
 
@@ -494,7 +494,7 @@ fun getRules(): String!
 
 Gets the collation tailoring rules for this RuleBasedCollator. Equivalent to String getRules(false).
 
-On Android, the returned string will be empty unless this instance was constructed using `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#RuleBasedCollator(kotlin.String)`.
+On Android, the returned string will be empty unless this instance was constructed using RuleBasedCollator.
 
 | Return ||
 |---|---|
@@ -502,7 +502,7 @@ On Android, the returned string will be empty unless this instance was construct
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getRules(kotlin.Boolean)`
+- getRules
 
 ### getRules
 
@@ -516,7 +516,7 @@ Returns current rules. The argument defines whether full rules (root collation +
 
 The root collation rules are an *approximation* of the root collator's sort order. They are almost never used or useful at runtime and can be removed from the data. See [User Guide: Collation Customization, Building on Existing Locales](https://unicode-org.github.io/icu/userguide/collation/customization#building-on-existing-locales)
 
-`https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getRules()` should normally be used instead.
+getRules should normally be used instead.
 
 | Parameters ||
 |---|---|
@@ -528,7 +528,7 @@ The root collation rules are an *approximation* of the root collator's sort orde
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getRules()`
+- getRules
 
 ### getStrength
 
@@ -550,7 +550,7 @@ See the Collator class description for more details.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setStrength(kotlin.Int)`
+- setStrength
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#PRIMARY:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#SECONDARY:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#TERTIARY:kotlin.Int`
@@ -601,7 +601,7 @@ fun getVariableTop(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getMaxVariable()`
+- getMaxVariable
 
 ### getVersion
 
@@ -647,8 +647,8 @@ Checks if the alternate handling behavior is the UCA defined SHIFTED or NON_IGNO
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setAlternateHandlingShifted(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setAlternateHandlingDefault()`
+- setAlternateHandlingShifted
+- setAlternateHandlingDefault
 
 ### isCaseLevel
 
@@ -666,9 +666,9 @@ Checks if case level is set to true. See setCaseLevel(boolean) for details.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseLevelDefault()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isCaseLevel()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseLevel(kotlin.Boolean)`
+- setCaseLevelDefault
+- isCaseLevel
+- setCaseLevel
 
 ### isFrenchCollation
 
@@ -686,8 +686,8 @@ Checks if French Collation is set to true. See setFrenchCollation(boolean) for d
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setFrenchCollation(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setFrenchCollationDefault()`
+- setFrenchCollation
+- setFrenchCollationDefault
 
 ### isFrozen
 
@@ -717,10 +717,10 @@ Return true if a lowercase character is sorted before the corresponding uppercas
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setUpperCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setLowerCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isUpperCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseFirstDefault()`
+- setUpperCaseFirst
+- setLowerCaseFirst
+- isUpperCaseFirst
+- setCaseFirstDefault
 
 ### isUpperCaseFirst
 
@@ -738,10 +738,10 @@ Return true if an uppercase character is sorted before the corresponding lowerca
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setUpperCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setLowerCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isLowerCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseFirstDefault()`
+- setUpperCaseFirst
+- setLowerCaseFirst
+- isLowerCaseFirst
+- setCaseFirstDefault
 
 ### setAlternateHandlingDefault
 
@@ -754,8 +754,8 @@ fun setAlternateHandlingDefault(): Unit
 Sets the alternate handling mode to the initial mode set during construction of the RuleBasedCollator. See setAlternateHandling(boolean) for more details.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setAlternateHandlingShifted(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isAlternateHandlingShifted()`
+- setAlternateHandlingShifted
+- isAlternateHandlingShifted
 
 ### setAlternateHandlingShifted
 
@@ -773,8 +773,8 @@ Sets the alternate handling for QUATERNARY strength to be either shifted or non-
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isAlternateHandlingShifted()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setAlternateHandlingDefault()`
+- isAlternateHandlingShifted
+- setAlternateHandlingDefault
 
 ### setCaseFirstDefault
 
@@ -787,10 +787,10 @@ fun setCaseFirstDefault(): Unit
 Sets the case first mode to the initial mode set during construction of the RuleBasedCollator. See setUpperCaseFirst(boolean) and setLowerCaseFirst(boolean) for more details.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isLowerCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isUpperCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setLowerCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setUpperCaseFirst(kotlin.Boolean)`
+- isLowerCaseFirst
+- isUpperCaseFirst
+- setLowerCaseFirst
+- setUpperCaseFirst
 
 ### setCaseLevel
 
@@ -810,8 +810,8 @@ See the section on [case level](https://unicode-org.github.io/icu/userguide/coll
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseLevelDefault()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isCaseLevel()`
+- setCaseLevelDefault
+- isCaseLevel
 
 ### setCaseLevelDefault
 
@@ -824,8 +824,8 @@ fun setCaseLevelDefault(): Unit
 Sets the case level mode to the initial mode set during construction of the RuleBasedCollator. See setCaseLevel(boolean) for more details.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseLevel(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isCaseLevel()`
+- setCaseLevel
+- isCaseLevel
 
 ### setDecomposition
 
@@ -851,7 +851,7 @@ See getDecomposition for a description of decomposition mode.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getDecomposition()`
+- getDecomposition
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#NO_DECOMPOSITION:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#CANONICAL_DECOMPOSITION:kotlin.Int`
 
@@ -866,8 +866,8 @@ fun setDecompositionDefault(): Unit
 Sets the decomposition mode to the initial mode set during construction of the RuleBasedCollator. See setDecomposition(int) for more details.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getDecomposition()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setDecomposition(kotlin.Int)`
+- getDecomposition
+- setDecomposition
 
 ### setFrenchCollation
 
@@ -885,8 +885,8 @@ Sets the mode for the direction of SECONDARY weights to be used in French collat
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isFrenchCollation()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setFrenchCollationDefault()`
+- isFrenchCollation
+- setFrenchCollationDefault
 
 ### setFrenchCollationDefault
 
@@ -899,8 +899,8 @@ fun setFrenchCollationDefault(): Unit
 Sets the French collation mode to the initial mode set during construction of the RuleBasedCollator. See setFrenchCollation(boolean) for more details.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isFrenchCollation()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setFrenchCollation(kotlin.Boolean)`
+- isFrenchCollation
+- setFrenchCollation
 
 ### setLowerCaseFirst
 
@@ -918,10 +918,10 @@ Sets the orders of lower cased characters to sort before upper cased characters,
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isLowerCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isUpperCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setUpperCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseFirstDefault()`
+- isLowerCaseFirst
+- isUpperCaseFirst
+- setUpperCaseFirst
+- setCaseFirstDefault
 
 ### setMaxVariable
 
@@ -943,7 +943,7 @@ fun setMaxVariable(group: Int): RuleBasedCollator!
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getMaxVariable()`
+- getMaxVariable
 
 ### setNumericCollation
 
@@ -965,8 +965,8 @@ A "digit" in this sense is a code point with General_Category=Nd, which does not
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getNumericCollation()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setNumericCollationDefault()`
+- getNumericCollation
+- setNumericCollationDefault
 
 ### setNumericCollationDefault
 
@@ -979,8 +979,8 @@ fun setNumericCollationDefault(): Unit
 Method to set numeric collation to its default value.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getNumericCollation()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setNumericCollation(kotlin.Boolean)`
+- getNumericCollation
+- setNumericCollation
 
 ### setReorderCodes
 
@@ -1010,8 +1010,8 @@ The special reorder code `https://developer.android.com/reference/kotlin/android
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getReorderCodes()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/Collator#getEquivalentReorderCodes(kotlin.Int)`
+- getReorderCodes
+- getEquivalentReorderCodes
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator.ReorderCodes`
 - `https://developer.android.com/reference/kotlin/android/icu/lang/UScript.html#`
 
@@ -1037,8 +1037,8 @@ See the Collator class description for an example of use.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getStrength()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setStrengthDefault()`
+- getStrength
+- setStrengthDefault
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#PRIMARY:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#SECONDARY:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/text/Collator#TERTIARY:kotlin.Int`
@@ -1056,8 +1056,8 @@ fun setStrengthDefault(): Unit
 Sets the collation strength to the initial mode set during the construction of the RuleBasedCollator. See setStrength(int) for more details.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setStrength(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#getStrength()`
+- setStrength
+- getStrength
 
 ### setUpperCaseFirst
 
@@ -1075,7 +1075,7 @@ Sets whether uppercase characters sort before lowercase characters or vice versa
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isLowerCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#isUpperCaseFirst()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setLowerCaseFirst(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/text/RuleBasedCollator#setCaseFirstDefault()`
+- isLowerCaseFirst
+- isUpperCaseFirst
+- setLowerCaseFirst
+- setCaseFirstDefault

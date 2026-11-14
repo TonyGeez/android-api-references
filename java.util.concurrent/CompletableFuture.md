@@ -10,20 +10,20 @@ open class CompletableFuture<T : Any!> : CompletionStage<T>, Future<T>
 | --- | --- |
 | ↳ | [java.util.concurrent.CompletableFuture](CompletableFuture.md) |
 
-A `https://developer.android.com/reference/kotlin/java/util/concurrent/Future` that may be explicitly completed (setting its value and status), and may be used as a `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`, supporting dependent functions and actions that trigger upon its completion.
+A Future that may be explicitly completed (setting its value and status), and may be used as a CompletionStage, supporting dependent functions and actions that trigger upon its completion.
 
-When two or more threads attempt to `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#complete(java.util.concurrent.CompletableFuture.T)`, `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completeExceptionally(kotlin.Throwable)`, or `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#cancel(kotlin.Boolean)` a CompletableFuture, only one of them succeeds.
+When two or more threads attempt to complete, completeExceptionally, or cancel a CompletableFuture, only one of them succeeds.
 
-In addition to these and related methods for directly manipulating status and results, CompletableFuture implements interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` with the following policies:
+In addition to these and related methods for directly manipulating status and results, CompletableFuture implements interface CompletionStage with the following policies:
 
 - Actions supplied for dependent completions of *non-async* methods may be performed by the thread that completes the current CompletableFuture, or by any other caller of a completion method.
-- All *async* methods without an explicit Executor argument are performed using the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` (unless it does not support a parallelism level of at least two, in which case, a new Thread is created to run each task). To simplify monitoring, debugging, and tracking, all generated asynchronous tasks are instances of the marker interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask`. Operations with time-delays can use adapter methods defined in this class, for example: `supplyAsync(supplier, delayedExecutor(timeout, timeUnit))`. To support methods with delays and timeouts, this class maintains at most one daemon thread for triggering and cancelling actions, not for running them.
+- All *async* methods without an explicit Executor argument are performed using the commonPool (unless it does not support a parallelism level of at least two, in which case, a new Thread is created to run each task). To simplify monitoring, debugging, and tracking, all generated asynchronous tasks are instances of the marker interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask`. Operations with time-delays can use adapter methods defined in this class, for example: `supplyAsync(supplier, delayedExecutor(timeout, timeUnit))`. To support methods with delays and timeouts, this class maintains at most one daemon thread for triggering and cancelling actions, not for running them.
 - All CompletionStage methods are implemented independently of other public methods, so the behavior of one method is not impacted by overrides of others in subclasses.
 
-CompletableFuture also implements `https://developer.android.com/reference/kotlin/java/util/concurrent/Future` with the following policies:
+CompletableFuture also implements Future with the following policies:
 
-- Since (unlike `https://developer.android.com/reference/kotlin/java/util/concurrent/FutureTask`) this class has no direct control over the computation that causes it to be completed, cancellation is treated as just another form of exceptional completion. Method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#cancel(kotlin.Boolean)` has the same effect as `completeExceptionally(new CancellationException())`. Method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#isCompletedExceptionally()` can be used to determine if a CompletableFuture completed in any exceptional fashion.
-- In case of exceptional completion with a CompletionException, methods `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get(kotlin.Long,%20java.util.concurrent.TimeUnit)` throw an `https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutionException` with the same cause as held in the corresponding CompletionException. To simplify usage in most contexts, this class also defines methods `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#join()` and `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#getNow(java.util.concurrent.CompletableFuture.T)` that instead throw the CompletionException directly in these cases.
+- Since (unlike FutureTask) this class has no direct control over the computation that causes it to be completed, cancellation is treated as just another form of exceptional completion. Method cancel has the same effect as `completeExceptionally(new CancellationException())`. Method isCompletedExceptionally can be used to determine if a CompletableFuture completed in any exceptional fashion.
+- In case of exceptional completion with a CompletionException, methods get and get throw an ExecutionException with the same cause as held in the corresponding CompletionException. To simplify usage in most contexts, this class also defines methods join and getNow that instead throw the CompletionException directly in these cases.
 
 Arguments used to pass a completion result (that is, for parameters of type `T`) for methods accepting them may be null, but passing a null value for any other parameter will result in a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` being thrown.
 
@@ -35,116 +35,116 @@ Arguments used to pass a completion result (that is, for parameters of type `T`)
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#CompletableFuture()()` Creates a new incomplete CompletableFuture. |
+| CompletableFuture Creates a new incomplete CompletableFuture. |
 
 | Public methods ||
 |---|---|
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#acceptEither(java.util.concurrent.CompletionStage,%20java.util.function.Consumer)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out T>!, action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in T>!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#acceptEitherAsync(java.util.concurrent.CompletionStage,%20java.util.function.Consumer)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out T>!, action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in T>!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#acceptEitherAsync(java.util.concurrent.CompletionStage,%20java.util.function.Consumer,%20java.util.concurrent.Executor)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out T>!, action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in T>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | acceptEither Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | acceptEitherAsync Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | acceptEitherAsync Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied action. |
 | --- | --- |
-| open static [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#allOf(java.util.concurrent.CompletableFuture)(vararg cfs: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#<*>!)` Returns a new CompletableFuture that is completed when all of the given CompletableFutures complete. |
-| open static [CompletableFuture](CompletableFuture.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#anyOf(java.util.concurrent.CompletableFuture)(vararg cfs: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#<*>!)` Returns a new CompletableFuture that is completed when any of the given CompletableFutures complete, with the same result. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#applyToEither(java.util.concurrent.CompletionStage,%20java.util.function.Function)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out T>!, fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, U>!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied function. |
+| open static [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | allOf Returns a new CompletableFuture that is completed when all of the given CompletableFutures complete. |
+| open static [CompletableFuture](CompletableFuture.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | anyOf Returns a new CompletableFuture that is completed when any of the given CompletableFutures complete, with the same result. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | applyToEither Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied function. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#applyToEitherAsync(java.util.concurrent.CompletionStage,%20java.util.function.Function)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out T>!, fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, U>!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#applyToEitherAsync(java.util.concurrent.CompletionStage,%20java.util.function.Function,%20java.util.concurrent.Executor)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out T>!, fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, U>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied function. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#cancel(kotlin.Boolean)(mayInterruptIfRunning: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If not already completed, completes this CompletableFuture with a `https://developer.android.com/reference/kotlin/java/util/concurrent/CancellationException`. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | applyToEitherAsync Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | applyToEitherAsync Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied function. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | cancel If not already completed, completes this CompletableFuture with a CancellationException. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#complete(java.util.concurrent.CompletableFuture.T)(value: T)` If not already completed, sets the value returned by `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods to the given value. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completeAsync(java.util.function.Supplier)(supplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<out T>!)` Completes this CompletableFuture with the result of the given Supplier function invoked from an asynchronous task using the default executor. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completeAsync(java.util.function.Supplier,%20java.util.concurrent.Executor)(supplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<out T>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Completes this CompletableFuture with the result of the given Supplier function invoked from an asynchronous task using the given executor. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | complete If not already completed, sets the value returned by get and related methods to the given value. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | completeAsync Completes this CompletableFuture with the result of the given Supplier function invoked from an asynchronous task using the default executor. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | completeAsync Completes this CompletableFuture with the result of the given Supplier function invoked from an asynchronous task using the given executor. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completeExceptionally(kotlin.Throwable)(ex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` If not already completed, causes invocations of `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods to throw the given exception. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completeOnTimeout(java.util.concurrent.CompletableFuture.T,%20kotlin.Long,%20java.util.concurrent.TimeUnit)(value: T, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Completes this CompletableFuture with the given value if not otherwise completed before the given timeout. |
-| open static [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completedFuture(java.util.concurrent.CompletableFuture.completedFuture.U)(value: U)` Returns a new CompletableFuture that is already completed with the given value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | completeExceptionally If not already completed, causes invocations of get and related methods to throw the given exception. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | completeOnTimeout Completes this CompletableFuture with the given value if not otherwise completed before the given timeout. |
+| open static [CompletableFuture](CompletableFuture.md)\<U\>! | completedFuture Returns a new CompletableFuture that is already completed with the given value. |
 | --- | --- |
-| open static [CompletionStage](CompletionStage.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#completedStage(java.util.concurrent.CompletableFuture.completedStage.U)(value: U)` Returns a new CompletionStage that is already completed with the given value and supports only those methods in interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#copy()()` Returns a new CompletableFuture that is completed normally with the same value as this CompletableFuture when it completes normally. |
-| open [Executor](Executor.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#defaultExecutor()()` Returns the default Executor used for async methods that do not specify an Executor. |
+| open static [CompletionStage](CompletionStage.md)\<U\>! | completedStage Returns a new CompletionStage that is already completed with the given value and supports only those methods in interface CompletionStage. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | copy Returns a new CompletableFuture that is completed normally with the same value as this CompletableFuture when it completes normally. |
+| open [Executor](Executor.md)! | defaultExecutor Returns the default Executor used for async methods that do not specify an Executor. |
 | --- | --- |
-| open static [Executor](Executor.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#delayedExecutor(kotlin.Long,%20java.util.concurrent.TimeUnit)(delay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Returns a new Executor that submits a task to the default executor after the given delay (or no delay if non-positive). |
-| open static [Executor](Executor.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#delayedExecutor(kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.Executor)(delay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new Executor that submits a task to the given base executor after the given delay (or no delay if non-positive). |
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionNow()()` Returns the exception thrown by the task, without waiting. |
+| open static [Executor](Executor.md)! | delayedExecutor Returns a new Executor that submits a task to the default executor after the given delay (or no delay if non-positive). |
+| open static [Executor](Executor.md)! | delayedExecutor Returns a new Executor that submits a task to the given base executor after the given delay (or no delay if non-positive). |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | exceptionNow Returns the exception thrown by the task, without waiting. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionally(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out T>!)` Returns a new CompletionStage that, when this stage completes exceptionally, is executed with this stage's exception as the argument to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionallyAsync(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out T>!)` Returns a new CompletionStage that, when this stage completes exceptionally, is executed with this stage's exception as the argument to the supplied function, using this stage's default asynchronous execution facility. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionallyAsync(java.util.function.Function,%20java.util.concurrent.Executor)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out T>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this stage completes exceptionally, is executed with this stage's exception as the argument to the supplied function, using the supplied Executor. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | exceptionally Returns a new CompletionStage that, when this stage completes exceptionally, is executed with this stage's exception as the argument to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | exceptionallyAsync Returns a new CompletionStage that, when this stage completes exceptionally, is executed with this stage's exception as the argument to the supplied function, using this stage's default asynchronous execution facility. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | exceptionallyAsync Returns a new CompletionStage that, when this stage completes exceptionally, is executed with this stage's exception as the argument to the supplied function, using the supplied Executor. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionallyCompose(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<T>!>!)` Returns a new CompletionStage that, when this stage completes exceptionally, is composed using the results of the supplied function applied to this stage's exception. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionallyComposeAsync(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<T>!>!)` Returns a new CompletionStage that, when this stage completes exceptionally, is composed using the results of the supplied function applied to this stage's exception, using this stage's default asynchronous execution facility. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#exceptionallyComposeAsync(java.util.function.Function,%20java.util.concurrent.Executor)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<T>!>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this stage completes exceptionally, is composed using the results of the supplied function applied to this stage's exception, using the supplied Executor. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | exceptionallyCompose Returns a new CompletionStage that, when this stage completes exceptionally, is composed using the results of the supplied function applied to this stage's exception. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | exceptionallyComposeAsync Returns a new CompletionStage that, when this stage completes exceptionally, is composed using the results of the supplied function applied to this stage's exception, using this stage's default asynchronous execution facility. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | exceptionallyComposeAsync Returns a new CompletionStage that, when this stage completes exceptionally, is composed using the results of the supplied function applied to this stage's exception, using the supplied Executor. |
 | --- | --- |
-| open static [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#failedFuture(kotlin.Throwable)(ex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Returns a new CompletableFuture that is already completed exceptionally with the given exception. |
-| open static [CompletionStage](CompletionStage.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#failedStage(kotlin.Throwable)(ex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Returns a new CompletionStage that is already completed exceptionally with the given exception and supports only those methods in interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`. |
-| open T | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()()` Waits if necessary for this future to complete, and then returns its result. |
+| open static [CompletableFuture](CompletableFuture.md)\<U\>! | failedFuture Returns a new CompletableFuture that is already completed exceptionally with the given exception. |
+| open static [CompletionStage](CompletionStage.md)\<U\>! | failedStage Returns a new CompletionStage that is already completed exceptionally with the given exception and supports only those methods in interface CompletionStage. |
+| open T | get Waits if necessary for this future to complete, and then returns its result. |
 | --- | --- |
-| open T | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Waits if necessary for at most the given time for this future to complete, and then returns its result, if available. |
-| open T | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#getNow(java.util.concurrent.CompletableFuture.T)(valueIfAbsent: T)` Returns the result value (or throws any encountered exception) if completed, else returns the given valueIfAbsent. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#getNumberOfDependents()()` Returns the estimated number of CompletableFutures whose completions are awaiting completion of this CompletableFuture. |
+| open T | get Waits if necessary for at most the given time for this future to complete, and then returns its result, if available. |
+| open T | getNow Returns the result value (or throws any encountered exception) if completed, else returns the given valueIfAbsent. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNumberOfDependents Returns the estimated number of CompletableFutures whose completions are awaiting completion of this CompletableFuture. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#handle(java.util.function.BiFunction)(fn: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in T, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out U>!)` Returns a new CompletionStage that, when this stage completes either normally or exceptionally, is executed with this stage's result and exception as arguments to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#handleAsync(java.util.function.BiFunction)(fn: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in T, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out U>!)` Returns a new CompletionStage that, when this stage completes either normally or exceptionally, is executed using this stage's default asynchronous execution facility, with this stage's result and exception as arguments to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#handleAsync(java.util.function.BiFunction,%20java.util.concurrent.Executor)(fn: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in T, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!, out U>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this stage completes either normally or exceptionally, is executed using the supplied executor, with this stage's result and exception as arguments to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | handle Returns a new CompletionStage that, when this stage completes either normally or exceptionally, is executed with this stage's result and exception as arguments to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | handleAsync Returns a new CompletionStage that, when this stage completes either normally or exceptionally, is executed using this stage's default asynchronous execution facility, with this stage's result and exception as arguments to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | handleAsync Returns a new CompletionStage that, when this stage completes either normally or exceptionally, is executed using the supplied executor, with this stage's result and exception as arguments to the supplied function. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#isCancelled()()` Returns `true` if this CompletableFuture was cancelled before it completed normally. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#isCompletedExceptionally()()` Returns `true` if this CompletableFuture completed exceptionally, in any way. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#isDone()()` Returns `true` if completed in any fashion: normally, exceptionally, or via cancellation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCancelled Returns `true` if this CompletableFuture was cancelled before it completed normally. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCompletedExceptionally Returns `true` if this CompletableFuture completed exceptionally, in any way. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDone Returns `true` if completed in any fashion: normally, exceptionally, or via cancellation. |
 | --- | --- |
-| open T | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#join()()` Returns the result value when complete, or throws an (unchecked) exception if completed exceptionally. |
-| open [CompletionStage](CompletionStage.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#minimalCompletionStage()()` Returns a new CompletionStage that is completed normally with the same value as this CompletableFuture when it completes normally, and cannot be independently completed or otherwise used in ways not defined by the methods of interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#newIncompleteFuture()()` Returns a new incomplete CompletableFuture of the type to be returned by a CompletionStage method. |
+| open T | join Returns the result value when complete, or throws an (unchecked) exception if completed exceptionally. |
+| open [CompletionStage](CompletionStage.md)\<T\>! | minimalCompletionStage Returns a new CompletionStage that is completed normally with the same value as this CompletableFuture when it completes normally, and cannot be independently completed or otherwise used in ways not defined by the methods of interface CompletionStage. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | newIncompleteFuture Returns a new incomplete CompletableFuture of the type to be returned by a CompletionStage method. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#obtrudeException(kotlin.Throwable)(ex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Forcibly causes subsequent invocations of method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods to throw the given exception, whether or not already completed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#obtrudeValue(java.util.concurrent.CompletableFuture.T)(value: T)` Forcibly sets or resets the value subsequently returned by method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods, whether or not already completed. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#orTimeout(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Exceptionally completes this CompletableFuture with a `https://developer.android.com/reference/kotlin/java/util/concurrent/TimeoutException` if not otherwise completed before the given timeout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | obtrudeException Forcibly causes subsequent invocations of method get and related methods to throw the given exception, whether or not already completed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | obtrudeValue Forcibly sets or resets the value subsequently returned by method get and related methods, whether or not already completed. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | orTimeout Exceptionally completes this CompletableFuture with a TimeoutException if not otherwise completed before the given timeout. |
 | --- | --- |
-| open T | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#resultNow()()` Returns the computed result, without waiting. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAfterBoth(java.util.concurrent.CompletionStage,%20java.lang.Runnable)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<*>!, action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAfterBothAsync(java.util.concurrent.CompletionStage,%20java.lang.Runnable)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<*>!, action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using this stage's default asynchronous execution facility. |
+| open T | resultNow Returns the computed result, without waiting. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAfterBoth Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAfterBothAsync Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using this stage's default asynchronous execution facility. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAfterBothAsync(java.util.concurrent.CompletionStage,%20java.lang.Runnable,%20java.util.concurrent.Executor)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<*>!, action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using the supplied executor. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAfterEither(java.util.concurrent.CompletionStage,%20java.lang.Runnable)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<*>!, action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAfterEitherAsync(java.util.concurrent.CompletionStage,%20java.lang.Runnable)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<*>!, action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using this stage's default asynchronous execution facility. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAfterBothAsync Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using the supplied executor. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAfterEither Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAfterEitherAsync Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using this stage's default asynchronous execution facility. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAfterEitherAsync(java.util.concurrent.CompletionStage,%20java.lang.Runnable,%20java.util.concurrent.Executor)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<*>!, action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using the supplied executor. |
-| open static [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAsync(java.lang.Runnable)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletableFuture that is asynchronously completed by a task running in the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` after it runs the given action. |
-| open static [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#runAsync(java.lang.Runnable,%20java.util.concurrent.Executor)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletableFuture that is asynchronously completed by a task running in the given executor after it runs the given action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAfterEitherAsync Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using the supplied executor. |
+| open static [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAsync Returns a new CompletableFuture that is asynchronously completed by a task running in the commonPool after it runs the given action. |
+| open static [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | runAsync Returns a new CompletableFuture that is asynchronously completed by a task running in the given executor after it runs the given action. |
 | --- | --- |
-| open [Future.State](../java/util/concurrent/Future.State.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#state()()` {@return the computation state} |
-| open static [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#supplyAsync(java.util.function.Supplier)(supplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<U>!)` Returns a new CompletableFuture that is asynchronously completed by a task running in the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` with the value obtained by calling the given Supplier. |
-| open static [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#supplyAsync(java.util.function.Supplier,%20java.util.concurrent.Executor)(supplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<U>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletableFuture that is asynchronously completed by a task running in the given executor with the value obtained by calling the given Supplier. |
+| open [Future.State](../java/util/concurrent/Future.State.md)! | state {@return the computation state} |
+| open static [CompletableFuture](CompletableFuture.md)\<U\>! | supplyAsync Returns a new CompletableFuture that is asynchronously completed by a task running in the commonPool with the value obtained by calling the given Supplier. |
+| open static [CompletableFuture](CompletableFuture.md)\<U\>! | supplyAsync Returns a new CompletableFuture that is asynchronously completed by a task running in the given executor with the value obtained by calling the given Supplier. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenAccept(java.util.function.Consumer)(action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in T>!)` Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenAcceptAsync(java.util.function.Consumer)(action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in T>!)` Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenAcceptAsync(java.util.function.Consumer,%20java.util.concurrent.Executor)(action: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<in T>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenAccept Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenAcceptAsync Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenAcceptAsync Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied action. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenAcceptBoth(java.util.concurrent.CompletionStage,%20java.util.function.BiConsumer)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out U>!, action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in T, in U>!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenAcceptBothAsync(java.util.concurrent.CompletionStage,%20java.util.function.BiConsumer)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out U>!, action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in T, in U>!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenAcceptBothAsync(java.util.concurrent.CompletionStage,%20java.util.function.BiConsumer,%20java.util.concurrent.Executor)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out U>!, action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in T, in U>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenAcceptBoth Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenAcceptBothAsync Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenAcceptBothAsync Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied action. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenApply(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenApplyAsync(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenApplyAsync(java.util.function.Function,%20java.util.concurrent.Executor)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | thenApply Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | thenApplyAsync Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | thenApplyAsync Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied function. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<V\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenCombine(java.util.concurrent.CompletionStage,%20java.util.function.BiFunction)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out U>!, fn: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in T, in U, out V>!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<V\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenCombineAsync(java.util.concurrent.CompletionStage,%20java.util.function.BiFunction)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out U>!, fn: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in T, in U, out V>!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied function. |
-| open [CompletableFuture](CompletableFuture.md)\<V\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenCombineAsync(java.util.concurrent.CompletionStage,%20java.util.function.BiFunction,%20java.util.concurrent.Executor)(other: https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<out U>!, fn: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in T, in U, out V>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<V\>! | thenCombine Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<V\>! | thenCombineAsync Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied function. |
+| open [CompletableFuture](CompletableFuture.md)\<V\>! | thenCombineAsync Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied function. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenCompose(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<U>!>!)` Returns a new CompletionStage that is completed with the same value as the CompletionStage returned by the given function. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenComposeAsync(java.util.function.Function)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<U>!>!)` Returns a new CompletionStage that is completed with the same value as the CompletionStage returned by the given function, executed using this stage's default asynchronous execution facility. |
-| open [CompletableFuture](CompletableFuture.md)\<U\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenComposeAsync(java.util.function.Function,%20java.util.concurrent.Executor)(fn: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage<U>!>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that is completed with the same value as the CompletionStage returned by the given function, executed using the supplied Executor. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | thenCompose Returns a new CompletionStage that is completed with the same value as the CompletionStage returned by the given function. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | thenComposeAsync Returns a new CompletionStage that is completed with the same value as the CompletionStage returned by the given function, executed using this stage's default asynchronous execution facility. |
+| open [CompletableFuture](CompletableFuture.md)\<U\>! | thenComposeAsync Returns a new CompletionStage that is completed with the same value as the CompletionStage returned by the given function, executed using the supplied Executor. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenRun(java.lang.Runnable)(action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletionStage that, when this stage completes normally, executes the given action. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenRunAsync(java.lang.Runnable)(action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Returns a new CompletionStage that, when this stage completes normally, executes the given action using this stage's default asynchronous execution facility. |
-| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#thenRunAsync(java.lang.Runnable,%20java.util.concurrent.Executor)(action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage that, when this stage completes normally, executes the given action using the supplied Executor. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenRun Returns a new CompletionStage that, when this stage completes normally, executes the given action. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenRunAsync Returns a new CompletionStage that, when this stage completes normally, executes the given action using this stage's default asynchronous execution facility. |
+| open [CompletableFuture](CompletableFuture.md)\< [Void](../java.lang/Void.md)!\>! | thenRunAsync Returns a new CompletionStage that, when this stage completes normally, executes the given action using the supplied Executor. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#toCompletableFuture()()` Returns this CompletableFuture. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#toString()()` Returns a string identifying this CompletableFuture, as well as its completion state. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#whenComplete(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in T, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!>!)` Returns a new CompletionStage with the same result or exception as this stage, that executes the given action when this stage completes. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | toCompletableFuture Returns this CompletableFuture. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string identifying this CompletableFuture, as well as its completion state. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | whenComplete Returns a new CompletionStage with the same result or exception as this stage, that executes the given action when this stage completes. |
 | --- | --- |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#whenCompleteAsync(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in T, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!>!)` Returns a new CompletionStage with the same result or exception as this stage, that executes the given action using this stage's default asynchronous execution facility when this stage completes. |
-| open [CompletableFuture](CompletableFuture.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#whenCompleteAsync(java.util.function.BiConsumer,%20java.util.concurrent.Executor)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in T, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!>!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor!)` Returns a new CompletionStage with the same result or exception as this stage, that executes the given action using the supplied Executor when this stage completes. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | whenCompleteAsync Returns a new CompletionStage with the same result or exception as this stage, that executes the given action using this stage's default asynchronous execution facility when this stage completes. |
+| open [CompletableFuture](CompletableFuture.md)\<T\>! | whenCompleteAsync Returns a new CompletionStage with the same result or exception as this stage, that executes the given action using the supplied Executor when this stage completes. |
 
 ## Public constructors
 
@@ -171,7 +171,7 @@ open fun acceptEither(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -193,7 +193,7 @@ open fun acceptEitherAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -216,7 +216,7 @@ open fun acceptEitherAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -286,7 +286,7 @@ open fun <U : Any!> applyToEither(
 ): CompletableFuture<U>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed with the corresponding result as argument to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -310,7 +310,7 @@ open fun <U : Any!> applyToEitherAsync(
 ): CompletableFuture<U>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using this stage's default asynchronous execution facility, with the corresponding result as argument to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -335,7 +335,7 @@ open fun <U : Any!> applyToEitherAsync(
 ): CompletableFuture<U>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, is executed using the supplied executor, with the corresponding result as argument to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -357,7 +357,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun cancel(mayInterruptIfRunning: Boolean): Boolean
 ```
 
-If not already completed, completes this CompletableFuture with a `https://developer.android.com/reference/kotlin/java/util/concurrent/CancellationException`. Dependent CompletableFutures that have not already completed will also complete exceptionally, with a `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException` caused by this `CancellationException`.
+If not already completed, completes this CompletableFuture with a CancellationException. Dependent CompletableFutures that have not already completed will also complete exceptionally, with a CompletionException caused by this `CancellationException`.
 
 | Parameters ||
 |---|---|
@@ -375,7 +375,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun complete(value: T): Boolean
 ```
 
-If not already completed, sets the value returned by `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods to the given value.
+If not already completed, sets the value returned by get and related methods to the given value.
 
 | Parameters ||
 |---|---|
@@ -433,7 +433,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun completeExceptionally(ex: Throwable!): Boolean
 ```
 
-If not already completed, causes invocations of `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods to throw the given exception.
+If not already completed, causes invocations of get and related methods to throw the given exception.
 
 | Parameters ||
 |---|---|
@@ -495,7 +495,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun <U : Any!> completedStage(value: U): CompletionStage<U>!
 ```
 
-Returns a new CompletionStage that is already completed with the given value and supports only those methods in interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`.
+Returns a new CompletionStage that is already completed with the given value and supports only those methods in interface CompletionStage.
 
 | Parameters ||
 |---|---|
@@ -528,7 +528,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun defaultExecutor(): Executor!
 ```
 
-Returns the default Executor used for async methods that do not specify an Executor. This class uses the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` if it supports more than one parallel thread, or else an Executor using one thread per async task. This method may be overridden in subclasses to return an Executor that provides at least one independent thread.
+Returns the default Executor used for async methods that do not specify an Executor. This class uses the commonPool if it supports more than one parallel thread, or else an Executor using one thread per async task. This method may be overridden in subclasses to return an Executor that provides at least one independent thread.
 
 | Return ||
 |---|---|
@@ -744,7 +744,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun <U : Any!> failedStage(ex: Throwable!): CompletionStage<U>!
 ```
 
-Returns a new CompletionStage that is already completed exceptionally with the given exception and supports only those methods in interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`.
+Returns a new CompletionStage that is already completed exceptionally with the given exception and supports only those methods in interface CompletionStage.
 
 | Parameters ||
 |---|---|
@@ -961,7 +961,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun join(): T
 ```
 
-Returns the result value when complete, or throws an (unchecked) exception if completed exceptionally. To better conform with the use of common functional forms, if a computation involved in the completion of this CompletableFuture threw an exception, this method throws an (unchecked) `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionException` with the underlying exception as its cause.
+Returns the result value when complete, or throws an (unchecked) exception if completed exceptionally. To better conform with the use of common functional forms, if a computation involved in the completion of this CompletableFuture threw an exception, this method throws an (unchecked) CompletionException with the underlying exception as its cause.
 
 | Return ||
 |---|---|
@@ -980,9 +980,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun minimalCompletionStage(): CompletionStage<T>!
 ```
 
-Returns a new CompletionStage that is completed normally with the same value as this CompletableFuture when it completes normally, and cannot be independently completed or otherwise used in ways not defined by the methods of interface `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage`. If this CompletableFuture completes exceptionally, then the returned CompletionStage completes exceptionally with a CompletionException with this exception as cause.
+Returns a new CompletionStage that is completed normally with the same value as this CompletableFuture when it completes normally, and cannot be independently completed or otherwise used in ways not defined by the methods of interface CompletionStage. If this CompletableFuture completes exceptionally, then the returned CompletionStage completes exceptionally with a CompletionException with this exception as cause.
 
-Unless overridden by a subclass, a new non-minimal CompletableFuture with all methods available can be obtained from a minimal CompletionStage via `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#toCompletableFuture()`. For example, completion of a minimal stage can be awaited by
+Unless overridden by a subclass, a new non-minimal CompletableFuture with all methods available can be obtained from a minimal CompletionStage via toCompletableFuture. For example, completion of a minimal stage can be awaited by
 
 ```kotlin
 <code>minimalStage.toCompletableFuture().join(); </code>
@@ -1018,7 +1018,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun obtrudeException(ex: Throwable!): Unit
 ```
 
-Forcibly causes subsequent invocations of method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods to throw the given exception, whether or not already completed. This method is designed for use only in error recovery actions, and even in such situations may result in ongoing dependent completions using established versus overwritten outcomes.
+Forcibly causes subsequent invocations of method get and related methods to throw the given exception, whether or not already completed. This method is designed for use only in error recovery actions, and even in such situations may result in ongoing dependent completions using established versus overwritten outcomes.
 
 | Parameters ||
 |---|---|
@@ -1036,7 +1036,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun obtrudeValue(value: T): Unit
 ```
 
-Forcibly sets or resets the value subsequently returned by method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletableFuture#get()` and related methods, whether or not already completed. This method is designed for use only in error recovery actions, and even in such situations may result in ongoing dependent completions using established versus overwritten outcomes.
+Forcibly sets or resets the value subsequently returned by method get and related methods, whether or not already completed. This method is designed for use only in error recovery actions, and even in such situations may result in ongoing dependent completions using established versus overwritten outcomes.
 
 | Parameters ||
 |---|---|
@@ -1053,7 +1053,7 @@ open fun orTimeout(
 ): CompletableFuture<T>!
 ```
 
-Exceptionally completes this CompletableFuture with a `https://developer.android.com/reference/kotlin/java/util/concurrent/TimeoutException` if not otherwise completed before the given timeout.
+Exceptionally completes this CompletableFuture with a TimeoutException if not otherwise completed before the given timeout.
 
 | Parameters ||
 |---|---|
@@ -1095,7 +1095,7 @@ open fun runAfterBoth(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1117,7 +1117,7 @@ open fun runAfterBothAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using this stage's default asynchronous execution facility. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using this stage's default asynchronous execution facility. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1140,7 +1140,7 @@ open fun runAfterBothAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using the supplied executor. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, executes the given action using the supplied executor. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1164,7 +1164,7 @@ open fun runAfterEither(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1186,7 +1186,7 @@ open fun runAfterEitherAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using this stage's default asynchronous execution facility. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using this stage's default asynchronous execution facility. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1209,7 +1209,7 @@ open fun runAfterEitherAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using the supplied executor. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when either this or the other given stage complete normally, executes the given action using the supplied executor. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1230,7 +1230,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun runAsync(runnable: Runnable!): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletableFuture that is asynchronously completed by a task running in the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` after it runs the given action.
+Returns a new CompletableFuture that is asynchronously completed by a task running in the commonPool after it runs the given action.
 
 | Parameters ||
 |---|---|
@@ -1280,7 +1280,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun <U : Any!> supplyAsync(supplier: Supplier<U>!): CompletableFuture<U>!
 ```
 
-Returns a new CompletableFuture that is asynchronously completed by a task running in the `https://developer.android.com/reference/kotlin/java/util/concurrent/ForkJoinPool#commonPool()` with the value obtained by calling the given Supplier.
+Returns a new CompletableFuture that is asynchronously completed by a task running in the commonPool with the value obtained by calling the given Supplier.
 
 | Parameters ||
 |---|---|
@@ -1323,7 +1323,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun thenAccept(action: Consumer<in T>!): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1341,7 +1341,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun thenAcceptAsync(action: Consumer<in T>!): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1362,7 +1362,7 @@ open fun thenAcceptAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1384,7 +1384,7 @@ open fun <U : Any!> thenAcceptBoth(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1408,7 +1408,7 @@ open fun <U : Any!> thenAcceptBothAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1433,7 +1433,7 @@ open fun <U : Any!> thenAcceptBothAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1457,9 +1457,9 @@ open fun <U : Any!> thenApply(fn: Function<in T, out U>!): CompletableFutu
 
 Returns a new CompletionStage that, when this stage completes normally, is executed with this stage's result as the argument to the supplied function.
 
-This method is analogous to `https://developer.android.com/reference/kotlin/java/util/Optional.html#map(java.util.function.Function)` and `https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#map(java.util.function.Function)`.
+This method is analogous to map and map.
 
-See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1478,7 +1478,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun <U : Any!> thenApplyAsync(fn: Function<in T, out U>!): CompletableFuture<U>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, is executed using this stage's default asynchronous execution facility, with this stage's result as the argument to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1500,7 +1500,7 @@ open fun <U : Any!> thenApplyAsync(
 ): CompletableFuture<U>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, is executed using the supplied Executor, with this stage's result as the argument to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1524,7 +1524,7 @@ open fun <U : Any!, V : Any!> thenCombine(
 ): CompletableFuture<V>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed with the two results as arguments to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1549,7 +1549,7 @@ open fun <U : Any!, V : Any!> thenCombineAsync(
 ): CompletableFuture<V>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using this stage's default asynchronous execution facility, with the two results as arguments to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1575,7 +1575,7 @@ open fun <U : Any!, V : Any!> thenCombineAsync(
 ): CompletableFuture<V>!
 ```
 
-Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied function. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this and the other given stage both complete normally, is executed using the supplied executor, with the two results as arguments to the supplied function. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1604,9 +1604,9 @@ When this stage completes normally, the given function is invoked with this stag
 
 To ensure progress, the supplied function must arrange eventual completion of its result.
 
-This method is analogous to `https://developer.android.com/reference/kotlin/java/util/Optional.html#flatMap(java.util.function.Function)` and `https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#flatMap(java.util.function.Function)`.
+This method is analogous to flatMap and flatMap.
 
-See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1631,7 +1631,7 @@ When this stage completes normally, the given function is invoked with this stag
 
 To ensure progress, the supplied function must arrange eventual completion of its result.
 
-See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1659,7 +1659,7 @@ When this stage completes normally, the given function is invoked with this stag
 
 To ensure progress, the supplied function must arrange eventual completion of its result.
 
-See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1680,7 +1680,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun thenRun(action: Runnable!): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, executes the given action. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, executes the given action. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1698,7 +1698,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun thenRunAsync(action: Runnable!): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, executes the given action using this stage's default asynchronous execution facility. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, executes the given action using this stage's default asynchronous execution facility. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1719,7 +1719,7 @@ open fun thenRunAsync(
 ): CompletableFuture<Void!>!
 ```
 
-Returns a new CompletionStage that, when this stage completes normally, executes the given action using the supplied Executor. See the `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage` documentation for rules covering exceptional completion.
+Returns a new CompletionStage that, when this stage completes normally, executes the given action using the supplied Executor. See the CompletionStage documentation for rules covering exceptional completion.
 
 | Parameters ||
 |---|---|
@@ -1770,7 +1770,7 @@ Returns a new CompletionStage with the same result or exception as this stage, t
 
 When this stage is complete, the given action is invoked with the result (or `null` if none) and the exception (or `null` if none) of this stage as arguments. The returned stage is completed when the action returns.
 
-Unlike method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage#handle(java.util.function.BiFunction)`, this method is not designed to translate completion outcomes, so the supplied action should not throw an exception. However, if it does, the following rules apply: if this stage completed normally but the supplied action throws an exception, then the returned stage completes exceptionally with the supplied action's exception. Or, if this stage completed exceptionally and the supplied action throws an exception, then the returned stage completes exceptionally with this stage's exception.
+Unlike method handle, this method is not designed to translate completion outcomes, so the supplied action should not throw an exception. However, if it does, the following rules apply: if this stage completed normally but the supplied action throws an exception, then the returned stage completes exceptionally with the supplied action's exception. Or, if this stage completed exceptionally and the supplied action throws an exception, then the returned stage completes exceptionally with this stage's exception.
 
 | Parameters ||
 |---|---|
@@ -1792,7 +1792,7 @@ Returns a new CompletionStage with the same result or exception as this stage, t
 
 When this stage is complete, the given action is invoked with the result (or `null` if none) and the exception (or `null` if none) of this stage as arguments. The returned stage is completed when the action returns.
 
-Unlike method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage#handleAsync(java.util.function.BiFunction)`, this method is not designed to translate completion outcomes, so the supplied action should not throw an exception. However, if it does, the following rules apply: If this stage completed normally but the supplied action throws an exception, then the returned stage completes exceptionally with the supplied action's exception. Or, if this stage completed exceptionally and the supplied action throws an exception, then the returned stage completes exceptionally with this stage's exception.
+Unlike method handleAsync, this method is not designed to translate completion outcomes, so the supplied action should not throw an exception. However, if it does, the following rules apply: If this stage completed normally but the supplied action throws an exception, then the returned stage completes exceptionally with the supplied action's exception. Or, if this stage completed exceptionally and the supplied action throws an exception, then the returned stage completes exceptionally with this stage's exception.
 
 | Parameters ||
 |---|---|
@@ -1817,7 +1817,7 @@ Returns a new CompletionStage with the same result or exception as this stage, t
 
 When this stage is complete, the given action is invoked with the result (or `null` if none) and the exception (or `null` if none) of this stage as arguments. The returned stage is completed when the action returns.
 
-Unlike method `https://developer.android.com/reference/kotlin/java/util/concurrent/CompletionStage#handleAsync(java.util.function.BiFunction,%20java.util.concurrent.Executor)`, this method is not designed to translate completion outcomes, so the supplied action should not throw an exception. However, if it does, the following rules apply: If this stage completed normally but the supplied action throws an exception, then the returned stage completes exceptionally with the supplied action's exception. Or, if this stage completed exceptionally and the supplied action throws an exception, then the returned stage completes exceptionally with this stage's exception.
+Unlike method handleAsync, this method is not designed to translate completion outcomes, so the supplied action should not throw an exception. However, if it does, the following rules apply: If this stage completed normally but the supplied action throws an exception, then the returned stage completes exceptionally with the supplied action's exception. Or, if this stage completed exceptionally and the supplied action throws an exception, then the returned stage completes exceptionally with this stage's exception.
 
 | Parameters ||
 |---|---|

@@ -5,7 +5,7 @@ Kotlin | [Java](_package.md)
 
 ## Interfaces
 
-| [DisplayHashResultCallback](DisplayHashResultCallback.md) | Use when calling `https://developer.android.com/reference/kotlin/android/view/View.html#generateDisplayHash(kotlin.String,%20android.graphics.Rect,%20java.util.concurrent.Executor,%20android.view.displayhash.DisplayHashResultCallback)`. |
+| [DisplayHashResultCallback](DisplayHashResultCallback.md) | Use when calling generateDisplayHash. |
 | --- | --- |
 
 ## Classes

@@ -113,11 +113,11 @@ Other tables include:
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#ContactsContract()()` <br /> |
+| ContactsContract <br /> |
 
 | Public methods ||
 |---|---|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/ContactsContract#isProfileId(kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` This method can be used to identify whether the given ID is associated with profile data. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isProfileId This method can be used to identify whether the given ID is associated with profile data. |
 
 | Properties ||
 |---|---|
@@ -145,7 +145,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val CALLER_IS_SYNCADAPTER: String
 ```
 
-An optional URI parameter for insert, update, or delete queries that allows the caller to specify that it is a sync adapter. The default value is false. If true `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SyncColumns#DIRTY:kotlin.String` is not automatically set and the "syncToNetwork" parameter is set to false when calling `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#notifyChange(android.net.Uri,%20android.database.ContentObserver,%20kotlin.Boolean)`. This prevents an unnecessary extra synchronization, see the discussion of the delete operation in `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.RawContacts`.
+An optional URI parameter for insert, update, or delete queries that allows the caller to specify that it is a sync adapter. The default value is false. If true `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.SyncColumns#DIRTY:kotlin.String` is not automatically set and the "syncToNetwork" parameter is set to false when calling notifyChange. This prevents an unnecessary extra synchronization, see the discussion of the delete operation in `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.RawContacts`.
 
  Value: "caller_is_syncadapter"
 
@@ -206,7 +206,7 @@ A query parameter that limits the number of results returned for supported URIs.
 
 This parameter is not supported by all URIs. Supported URIs include, but not limited to, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Contacts#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.RawContacts#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.Data#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Phone#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Callable#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Email#CONTENT_URI:android.net.Uri`, `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.CommonDataKinds.Contactables#CONTENT_URI:android.net.Uri`,
 
-In order to limit the number of rows returned by a non-supported URI, you can implement a `https://developer.android.com/reference/kotlin/android/database/CursorWrapper.html#` and override the `https://developer.android.com/reference/kotlin/android/database/CursorWrapper.html#getCount()` methods.
+In order to limit the number of rows returned by a non-supported URI, you can implement a `https://developer.android.com/reference/kotlin/android/database/CursorWrapper.html#` and override the getCount methods.
 
  Value: "limit"
 

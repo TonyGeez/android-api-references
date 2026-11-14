@@ -26,8 +26,8 @@ Thrown if trying to certify an unknown dynamic authentication key.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#UnknownAuthenticationKeyException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#UnknownAuthenticationKeyException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#` exception. |
+| UnknownAuthenticationKeyException Constructs a new UnknownAuthenticationKeyException exception. |
+| UnknownAuthenticationKeyException Constructs a new UnknownAuthenticationKeyException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ UnknownAuthenticationKeyException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#` exception.
+Constructs a new UnknownAuthenticationKeyException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ UnknownAuthenticationKeyException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/UnknownAuthenticationKeyException#` exception.
+Constructs a new UnknownAuthenticationKeyException exception.
 
 | Parameters ||
 |---|---|

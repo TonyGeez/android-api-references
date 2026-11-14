@@ -16,9 +16,9 @@ Allows an app to control the status bar.
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_DISABLED:kotlin.Int` Result returned in a callback when a call to `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` cannot be completed due to the Power Menu being currently disabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` Result returned in a callback when a call to `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` has succeeded and the Power Menu is currently showing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_UNKNOWN:kotlin.Int` Unknwown result of calling `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_DISABLED:kotlin.Int` Result returned in a callback when a call to showPowerMenu cannot be completed due to the Power Menu being currently disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` Result returned in a callback when a call to showPowerMenu has succeeded and the Power Menu is currently showing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_UNKNOWN:kotlin.Int` Unknwown result of calling showPowerMenu. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_APP_NOT_IN_FOREGROUND:kotlin.Int` Indicates that the requesting application is not in the foreground. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#TILE_ADD_REQUEST_ERROR_BAD_COMPONENT:kotlin.Int` Indicates that the component does not match an enabled exported `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` for the current user. |
@@ -35,9 +35,9 @@ Allows an app to control the status bar.
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#canLaunchCaptureContentActivityForNote(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity)` Checks whether the supplied activity can `https://developer.android.com/reference/kotlin/android/app/Activity#startActivityForResult(android.content.Intent,%20kotlin.Int)` a system activity that captures content on the screen to take a screenshot. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#requestAddTileService(android.content.ComponentName,%20kotlin.CharSequence,%20android.graphics.drawable.Icon,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(tileServiceComponentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, tileLabel: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#, resultExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Request to the user to add a `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` to the set of current QS tiles. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!>)` Request to show the Power Menu. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canLaunchCaptureContentActivityForNote Checks whether the supplied activity can startActivityForResult a system activity that captures content on the screen to take a screenshot. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestAddTileService Request to the user to add a `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` to the set of current QS tiles. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | showPowerMenu Request to show the Power Menu. |
 | --- | --- |
 
 ## Constants
@@ -50,7 +50,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val SHOW_POWER_MENU_RESULT_DISABLED: Int
 ```
 
-Result returned in a callback when a call to `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` cannot be completed due to the Power Menu being currently disabled.
+Result returned in a callback when a call to showPowerMenu cannot be completed due to the Power Menu being currently disabled.
 
  Value: 1
 
@@ -66,7 +66,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val SHOW_POWER_MENU_RESULT_SHOWING: Int
 ```
 
-Result returned in a callback when a call to `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` has succeeded and the Power Menu is currently showing.
+Result returned in a callback when a call to showPowerMenu has succeeded and the Power Menu is currently showing.
 
  Value: 0
 
@@ -78,7 +78,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val SHOW_POWER_MENU_RESULT_UNKNOWN: Int
 ```
 
-Unknwown result of calling `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#showPowerMenu(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. Used for compatibility purposes.
+Unknwown result of calling showPowerMenu. Used for compatibility purposes.
 
  Value: -1
 
@@ -200,13 +200,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun canLaunchCaptureContentActivityForNote(activity: Activity): Boolean
 ```
 
-Checks whether the supplied activity can `https://developer.android.com/reference/kotlin/android/app/Activity#startActivityForResult(android.content.Intent,%20kotlin.Int)` a system activity that captures content on the screen to take a screenshot.
+Checks whether the supplied activity can startActivityForResult a system activity that captures content on the screen to take a screenshot.
 
 Note: The result should not be cached.
 
 The system activity displays an editing tool that allows user to edit the screenshot, save it on device, and return the edited screenshot as `https://developer.android.com/reference/kotlin/android/net/Uri.html#` to the calling activity. User interaction is required to return the edited screenshot to the calling activity.
 
-When `true`, callers can use `https://developer.android.com/reference/kotlin/android/app/Activity#startActivityForResult(android.content.Intent,%20kotlin.Int)` to start start the content capture activity using `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE:kotlin.String`. 
+When `true`, callers can use startActivityForResult to start start the content capture activity using `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE:kotlin.String`. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE:kotlin.String`
 
 | Parameters ||
@@ -277,16 +277,16 @@ Request to show the Power Menu.
 
 The Power Menu is the dialog that contains options like Power off, Restart, etc. Also known as Global Actions
 
-Showing this dialog may be restricted by the system, for example by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager`, if `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_GLOBAL_ACTIONS:kotlin.Int` is set.
+Showing this dialog may be restricted by the system, for example by DevicePolicyManager, if `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_GLOBAL_ACTIONS:kotlin.Int` is set.
 
 The `receiver` will indicate when the Power Menu is visible (if possible) in its result, or whether the Power Menu is currently disabled. If the Power Menu is currently visible when the request is made, `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` will be returned through the callback immediately.
 
-Alternatively, if the request could not be completed due to an error, it will be returned with `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)`. This error can be `https://developer.android.com/reference/kotlin/java/util/concurrent/TimeoutException.html#` if the request times out after a few seconds without a response, or a different `https://developer.android.com/reference/kotlin/java/lang/Exception.html#`. In these error cases, it usually means that there's an underlying issue with the system and retrying will not succeed.
+Alternatively, if the request could not be completed due to an error, it will be returned with onError. This error can be `https://developer.android.com/reference/kotlin/java/util/concurrent/TimeoutException.html#` if the request times out after a few seconds without a response, or a different `https://developer.android.com/reference/kotlin/java/lang/Exception.html#`. In these error cases, it usually means that there's an underlying issue with the system and retrying will not succeed.
 
 This callback can be reused for multiple requests. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SHOW_POWER_MENU:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SHOW_POWER_MENU_PRIVILEGED:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` in which the methods of `callback` will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` in which the methods of `callback` will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!\>: will call back with the result of the request, or a possible error. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_SHOWING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager#SHOW_POWER_MENU_RESULT_DISABLED:kotlin.Int` |

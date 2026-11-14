@@ -10,19 +10,19 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 Represents a predicate (boolean-valued function) of one argument.
 
-This is a [functional interface](_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/Predicate#test(java.util.function.Predicate.T)`.
+This is a [functional interface](_package.md) whose functional method is test.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open [Predicate](Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#and(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open static [Predicate](Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#isEqual(kotlin.Any)(targetRef: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a predicate that tests if two arguments are equal according to `https://developer.android.com/reference/kotlin/java/util/Objects.html#equals(kotlin.Any,%20kotlin.Any)`. |
-| open [Predicate](Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#negate()()` Returns a predicate that represents the logical negation of this predicate. |
+| open [Predicate](Predicate.md)\<T\>! | and Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open static [Predicate](Predicate.md)\<T\>! | isEqual Returns a predicate that tests if two arguments are equal according to equals. |
+| open [Predicate](Predicate.md)\<T\>! | negate Returns a predicate that represents the logical negation of this predicate. |
 | --- | --- |
-| open static [Predicate](Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#not(java.util.function.Predicate)(target: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a predicate that is the negation of the supplied predicate. |
-| open [Predicate](Predicate.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#or(java.util.function.Predicate)(other: https://developer.android.com/reference/kotlin/java/util/function/Predicate#<in T>!)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/function/Predicate#test(java.util.function.Predicate.T)(t: T)` Evaluates this predicate on the given argument. |
+| open static [Predicate](Predicate.md)\<T\>! | not Returns a predicate that is the negation of the supplied predicate. |
+| open [Predicate](Predicate.md)\<T\>! | or Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | test Evaluates this predicate on the given argument. |
 | --- | --- |
 
 ## Public methods
@@ -59,7 +59,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun <T : Any!> isEqual(targetRef: Any!): Predicate<T>!
 ```
 
-Returns a predicate that tests if two arguments are equal according to `https://developer.android.com/reference/kotlin/java/util/Objects.html#equals(kotlin.Any,%20kotlin.Any)`.
+Returns a predicate that tests if two arguments are equal according to equals.
 
 | Parameters ||
 |---|---|
@@ -68,7 +68,7 @@ Returns a predicate that tests if two arguments are equal according to `https://
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/function/Predicate#<T>!` | a predicate that tests if two arguments are equal according to `https://developer.android.com/reference/kotlin/java/util/Objects.html#equals(kotlin.Any,%20kotlin.Any)` |
+| `https://developer.android.com/reference/kotlin/java/util/function/Predicate#<T>!` | a predicate that tests if two arguments are equal according to equals |
 
 ### negate
 

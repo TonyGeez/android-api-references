@@ -12,13 +12,13 @@ class TemporalQueries
 
 Common implementations of `TemporalQuery`.
 
-This class provides common implementations of `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery`. These are defined here as they must be constants, and the definition of lambdas does not guarantee that. By assigning them once here, they become 'normal' Java constants.
+This class provides common implementations of TemporalQuery. These are defined here as they must be constants, and the definition of lambdas does not guarantee that. By assigning them once here, they become 'normal' Java constants.
 
 Queries are a key tool for extracting information from temporal objects. They exist to externalize the process of querying, permitting different approaches, as per the strategy design pattern. Examples might be a query that checks if the date is the day before February 29th in a leap year, or calculates the number of days to your next birthday.
 
-The `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField` interface provides another mechanism for querying temporal objects. That interface is limited to returning a `long`. By contrast, queries can return any type.
+The TemporalField interface provides another mechanism for querying temporal objects. That interface is limited to returning a `long`. By contrast, queries can return any type.
 
-There are two equivalent ways of using a `TemporalQuery`. The first is to invoke the method on this interface directly. The second is to use `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor#query(java.time.temporal.TemporalQuery)`:
+There are two equivalent ways of using a `TemporalQuery`. The first is to invoke the method on this interface directly. The second is to use query:
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -42,15 +42,15 @@ The most common implementations are method references, such as `LocalDate::from`
 
 | Public methods ||
 |---|---|
-| static [TemporalQuery](TemporalQuery.md)\< [Chronology](../java.time.chrono/Chronology.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#chronology()()` A query for the `Chronology`. |
-| static [TemporalQuery](TemporalQuery.md)\< [LocalDate](../java.time/LocalDate.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localDate()()` A query for `LocalDate` returning null if not found. |
-| static [TemporalQuery](TemporalQuery.md)\< [LocalTime](../java.time/LocalTime.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localTime()()` A query for `LocalTime` returning null if not found. |
+| static [TemporalQuery](TemporalQuery.md)\< [Chronology](../java.time.chrono/Chronology.md)!\>! | chronology A query for the `Chronology`. |
+| static [TemporalQuery](TemporalQuery.md)\< [LocalDate](../java.time/LocalDate.md)!\>! | localDate A query for `LocalDate` returning null if not found. |
+| static [TemporalQuery](TemporalQuery.md)\< [LocalTime](../java.time/LocalTime.md)!\>! | localTime A query for `LocalTime` returning null if not found. |
 | --- | --- |
-| static [TemporalQuery](TemporalQuery.md)\< [ZoneOffset](../java.time/ZoneOffset.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#offset()()` A query for `ZoneOffset` returning null if not found. |
-| static [TemporalQuery](TemporalQuery.md)\< [TemporalUnit](TemporalUnit.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#precision()()` A query for the smallest supported unit. |
-| static [TemporalQuery](TemporalQuery.md)\< [ZoneId](../java.time/ZoneId.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zone()()` A lenient query for the `ZoneId`, falling back to the `ZoneOffset`. |
+| static [TemporalQuery](TemporalQuery.md)\< [ZoneOffset](../java.time/ZoneOffset.md)!\>! | offset A query for `ZoneOffset` returning null if not found. |
+| static [TemporalQuery](TemporalQuery.md)\< [TemporalUnit](TemporalUnit.md)!\>! | precision A query for the smallest supported unit. |
+| static [TemporalQuery](TemporalQuery.md)\< [ZoneId](../java.time/ZoneId.md)!\>! | zone A lenient query for the `ZoneId`, falling back to the `ZoneOffset`. |
 | --- | --- |
-| static [TemporalQuery](TemporalQuery.md)\< [ZoneId](../java.time/ZoneId.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zoneId()()` A strict query for the `ZoneId`. |
+| static [TemporalQuery](TemporalQuery.md)\< [ZoneId](../java.time/ZoneId.md)!\>! | zoneId A strict query for the `ZoneId`. |
 
 ## Public methods
 
@@ -85,7 +85,7 @@ The result from JDK classes implementing `TemporalAccessor` is as follows:
 `ZoneOffset` returns null (does not represent a date) 
 `Instant` returns null (does not represent a date) 
 
-The method `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)` can be used as a `TemporalQuery` via a method reference, `Chronology::from`. That method is equivalent to this query, except that it throws an exception if a chronology cannot be obtained.
+The method from can be used as a `TemporalQuery` via a method reference, `Chronology::from`. That method is equivalent to this query, except that it throws an exception if a chronology cannot be obtained.
 
 | Return ||
 |---|---|
@@ -103,7 +103,7 @@ A query for `LocalDate` returning null if not found.
 
 This returns a `TemporalQuery` that can be used to query a temporal object for the local date. The query will return null if the temporal object cannot supply a local date.
 
-The query implementation examines the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` field and uses it to create a `LocalDate`.
+The query implementation examines the ChronoField field and uses it to create a `LocalDate`.
 
 The method java.time.LocalDate#from(java.time.temporal.TemporalAccessor) can be used as a `TemporalQuery` via a method reference, `LocalDate::from`. This query and `LocalDate::from` will return the same result if the temporal object contains a date. If the temporal object does not contain a date, then the method reference will throw an exception, whereas this query will return null.
 
@@ -123,9 +123,9 @@ A query for `LocalTime` returning null if not found.
 
 This returns a `TemporalQuery` that can be used to query a temporal object for the local time. The query will return null if the temporal object cannot supply a local time.
 
-The query implementation examines the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` field and uses it to create a `LocalTime`.
+The query implementation examines the ChronoField field and uses it to create a `LocalTime`.
 
-The method `https://developer.android.com/reference/kotlin/java/time/LocalTime.html#from(java.time.temporal.TemporalAccessor)` can be used as a `TemporalQuery` via a method reference, `LocalTime::from`. This query and `LocalTime::from` will return the same result if the temporal object contains a time. If the temporal object does not contain a time, then the method reference will throw an exception, whereas this query will return null.
+The method from can be used as a `TemporalQuery` via a method reference, `LocalTime::from`. This query and `LocalTime::from` will return the same result if the temporal object contains a time. If the temporal object does not contain a time, then the method reference will throw an exception, whereas this query will return null.
 
 | Return ||
 |---|---|
@@ -143,9 +143,9 @@ A query for `ZoneOffset` returning null if not found.
 
 This returns a `TemporalQuery` that can be used to query a temporal object for the offset. The query will return null if the temporal object cannot supply an offset.
 
-The query implementation examines the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` field and uses it to create a `ZoneOffset`.
+The query implementation examines the ChronoField field and uses it to create a `ZoneOffset`.
 
-The method `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#from(java.time.temporal.TemporalAccessor)` can be used as a `TemporalQuery` via a method reference, `ZoneOffset::from`. This query and `ZoneOffset::from` will return the same result if the temporal object contains an offset. If the temporal object does not contain an offset, then the method reference will throw an exception, whereas this query will return null.
+The method from can be used as a `TemporalQuery` via a method reference, `ZoneOffset::from`. This query and `ZoneOffset::from` will return the same result if the temporal object contains an offset. If the temporal object does not contain an offset, then the method reference will throw an exception, whereas this query will return null.
 
 | Return ||
 |---|---|
@@ -196,11 +196,11 @@ static fun zone(): TemporalQuery<ZoneId!>!
 
 A lenient query for the `ZoneId`, falling back to the `ZoneOffset`.
 
-This queries a `TemporalAccessor` for the zone. It first tries to obtain the zone, using `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zoneId()`. If that is not found it tries to obtain the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#offset()`. Thus a `https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#` will return the result of `getZone()`, while an `https://developer.android.com/reference/kotlin/java/time/OffsetDateTime.html#` will return the result of `getOffset()`.
+This queries a `TemporalAccessor` for the zone. It first tries to obtain the zone, using zoneId. If that is not found it tries to obtain the offset. Thus a `https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#` will return the result of `getZone()`, while an `https://developer.android.com/reference/kotlin/java/time/OffsetDateTime.html#` will return the result of `getOffset()`.
 
 In most cases, applications should use this query rather than `zoneId()`.
 
-The method `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)` can be used as a `TemporalQuery` via a method reference, `ZoneId::from`. That method is equivalent to this query, except that it throws an exception if a zone cannot be obtained.
+The method from can be used as a `TemporalQuery` via a method reference, `ZoneId::from`. That method is equivalent to this query, except that it throws an exception if a zone cannot be obtained.
 
 | Return ||
 |---|---|
@@ -218,7 +218,7 @@ A strict query for the `ZoneId`.
 
 This queries a `TemporalAccessor` for the zone. The zone is only returned if the date-time conceptually contains a `ZoneId`. It will not be returned if the date-time only conceptually has an `ZoneOffset`. Thus a `https://developer.android.com/reference/kotlin/java/time/ZonedDateTime.html#` will return the result of `getZone()`, but an `https://developer.android.com/reference/kotlin/java/time/OffsetDateTime.html#` will return null.
 
-In most cases, applications should use `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zone()` as this query is too strict.
+In most cases, applications should use zone as this query is too strict.
 
 The result from JDK classes implementing `TemporalAccessor` is as follows: 
 `LocalDate` returns null 

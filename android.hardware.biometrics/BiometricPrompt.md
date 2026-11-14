@@ -16,8 +16,8 @@ A class that manages a system-provided biometric dialog.
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback` Callback structure provided to `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)` or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.hardware.biometrics.BiometricPrompt.CryptoObject,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)`. |
-| open | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationResult` Container for callback data from `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)` and `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.hardware.biometrics.BiometricPrompt.CryptoObject,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback` Callback structure provided to authenticate or authenticate. |
+| open | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationResult` Container for callback data from authenticate and authenticate. |
 | open | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder` A builder that collects arguments to be shown on the system-provided biometric dialog. |
 | --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.CryptoObject` A wrapper class for the cryptographic operations supported by BiometricPrompt. |
@@ -53,31 +53,31 @@ A class that manages a system-provided biometric dialog.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#BIOMETRIC_ERROR_UNABLE_TO_PROCESS:kotlin.Int` Error state returned when the sensor was unable to process the current image. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#BIOMETRIC_ERROR_USER_CANCELED:kotlin.Int` The user canceled the operation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#BIOMETRIC_ERROR_VENDOR:kotlin.Int` OEMs should use this constant if there are conditions that do not fit under any of the other publicly defined constants, and must provide appropriate strings for these errors to the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)` callback. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Returned from `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)` when there has been no successful authentication for the given authenticator since boot. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#BIOMETRIC_ERROR_VENDOR:kotlin.Int` OEMs should use this constant if there are conditions that do not fit under any of the other publicly defined constants, and must provide appropriate strings for these errors to the onAuthenticationError callback. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#BIOMETRIC_NO_AUTHENTICATION:kotlin.Long` Returned from getLastAuthenticationTime when there has been no successful authentication for the given authenticator since boot. |
 | --- | --- |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.hardware.biometrics.BiometricPrompt.CryptoObject,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)(crypto: https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.CryptoObject, cancel: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback)` This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)(cancel: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback)` This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getAllowedAuthenticators()()` Gets the type(s) of authenticators that may be invoked by the prompt to authenticate the user, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setAllowedAuthenticators(kotlin.Int)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | authenticate This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | authenticate This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAllowedAuthenticators Gets the type(s) of authenticators that may be invoked by the prompt to authenticate the user, as set by setAllowedAuthenticators. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getAuthenticationPurpose()()` Gets the authentication purpose for the prompt. |
-| open [PromptContentView](PromptContentView.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getContentView()()` Gets the content view for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setContentView(android.hardware.biometrics.PromptContentView)`. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getDescription()()` Gets the description for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setDescription(kotlin.CharSequence)`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAuthenticationPurpose Gets the authentication purpose for the prompt. |
+| open [PromptContentView](PromptContentView.md)? | getContentView Gets the content view for the prompt, as set by setContentView. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getDescription Gets the description for the prompt, as set by setDescription. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FallbackOption](FallbackOption.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getFallbackOptions()()` Gets the fallback options for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#addFallbackOption(kotlin.CharSequence,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. |
-| open [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getLogoBitmap()()` Gets the logo bitmap for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setLogoBitmap(android.graphics.Bitmap)`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getLogoDescription()()` Gets the logo description for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setLogoDescription(kotlin.String)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FallbackOption](FallbackOption.md)!\> | getFallbackOptions Gets the fallback options for the prompt, as set by addFallbackOption. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | getLogoBitmap Gets the logo bitmap for the prompt, as set by setLogoBitmap. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getLogoDescription Gets the logo description for the prompt, as set by setLogoDescription. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getLogoRes()()` Gets the drawable resource of the logo for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setLogoRes(kotlin.Int)`. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getMaxFallbackOptions()()` <br /> |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getNegativeButtonText()()` Gets the negative button text for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLogoRes Gets the drawable resource of the logo for the prompt, as set by setLogoRes. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxFallbackOptions <br /> |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getNegativeButtonText Gets the negative button text for the prompt, as set by setNegativeButton. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getSubtitle()()` Gets the subtitle for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setSubtitle(kotlin.CharSequence)`. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#getTitle()()` Gets the title for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setTitle(kotlin.CharSequence)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#isConfirmationRequired()()` Determines if explicit user confirmation is required by the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setConfirmationRequired(kotlin.Boolean)`. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSubtitle Gets the subtitle for the prompt, as set by setSubtitle. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | getTitle Gets the title for the prompt, as set by setTitle. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isConfirmationRequired Determines if explicit user confirmation is required by the prompt, as set by setConfirmationRequired. |
 | --- | --- |
 
 ## Constants
@@ -282,7 +282,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val BIOMETRIC_ERROR_NO_DEVICE_CREDENTIAL: Int
 ```
 
-The device does not have pin, pattern, or password set up. See `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setAllowedAuthenticators(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#DEVICE_CREDENTIAL:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#canAuthenticate(kotlin.Int)`.
+The device does not have pin, pattern, or password set up. See setAllowedAuthenticators, `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#DEVICE_CREDENTIAL:kotlin.Int`, and canAuthenticate.
 
  Value: 14
 
@@ -354,7 +354,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val BIOMETRIC_ERROR_VENDOR: Int
 ```
 
-OEMs should use this constant if there are conditions that do not fit under any of the other publicly defined constants, and must provide appropriate strings for these errors to the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)` callback. OEMs should expect that the error message will be shown to users.
+OEMs should use this constant if there are conditions that do not fit under any of the other publicly defined constants, and must provide appropriate strings for these errors to the onAuthenticationError callback. OEMs should expect that the error message will be shown to users.
 
  Value: 8
 
@@ -366,7 +366,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val BIOMETRIC_NO_AUTHENTICATION: Long
 ```
 
-Returned from `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager#getLastAuthenticationTime(kotlin.Int)` when there has been no successful authentication for the given authenticator since boot.
+Returned from getLastAuthenticationTime when there has been no successful authentication for the given authenticator since boot.
 
  Value: -1L
 
@@ -385,24 +385,24 @@ open fun authenticate(
 ): Unit
 ```
 
-This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. It terminates when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)` is called, when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt.AuthenticationResult)`, or when the user dismisses the system-provided dialog, at which point the crypto object becomes invalid. This operation can be canceled by using the provided cancel object. The application will receive authentication errors through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback`, and button events through the corresponding callback set in `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)` or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#addFallbackOption(kotlin.CharSequence,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. It is safe to reuse the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#` object, and calling `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)` while an existing authentication attempt is occurring will stop the previous client and start a new authentication. The interrupted client will receive a cancelled notification through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)`.
+This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. It terminates when onAuthenticationError is called, when onAuthenticationSucceeded, or when the user dismisses the system-provided dialog, at which point the crypto object becomes invalid. This operation can be canceled by using the provided cancel object. The application will receive authentication errors through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback`, and button events through the corresponding callback set in setNegativeButton or addFallbackOption. It is safe to reuse the BiometricPrompt object, and calling authenticate while an existing authentication attempt is occurring will stop the previous client and start a new authentication. The interrupted client will receive a cancelled notification through onAuthenticationError.
 
 Note: Applications generally should not cancel and start authentication in quick succession. For example, to properly handle authentication across configuration changes, it's recommended to use BiometricPrompt in a fragment with setRetainInstance(true). By doing so, the application will not need to cancel/restart authentication during the configuration change.
 
-Per the Android CDD, only biometric authenticators that meet or exceed the requirements for **Strong** are permitted to integrate with Keystore to perform related cryptographic operations. Therefore, it is an error to call this method after explicitly calling `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setAllowedAuthenticators(kotlin.Int)` with any biometric strength other than `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int`. 
+Per the Android CDD, only biometric authenticators that meet or exceed the requirements for **Strong** are permitted to integrate with Keystore to perform related cryptographic operations. Therefore, it is an error to call this method after explicitly calling setAllowedAuthenticators with any biometric strength other than `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_STRONG:kotlin.Int`. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_BIOMETRIC:kotlin.String`
 
 | Parameters ||
 |---|---|
 | `crypto` | [BiometricPrompt.CryptoObject](../android/hardware/biometrics/BiometricPrompt.CryptoObject.md): A cryptographic operation to be unlocked after successful authentication. This value cannot be `null`. |
 | `cancel` | [CancellationSignal](../android.os/CancellationSignal.md): An object that can be used to cancel authentication. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): An executor to handle callback events. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): An executor to handle callback events. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `callback` | [BiometricPrompt.AuthenticationCallback](../android/hardware/biometrics/BiometricPrompt.AuthenticationCallback.md): An object to receive authentication events. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | If any argument is null, or if the allowed biometric authenticator strength is explicitly set to `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int`. Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, this exception is also thrown if `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setDeviceCredentialAllowed(kotlin.Boolean)` was explicitly set to true. |
+| `java.lang.IllegalArgumentException` | If any argument is null, or if the allowed biometric authenticator strength is explicitly set to `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators#BIOMETRIC_WEAK:kotlin.Int`. Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, this exception is also thrown if setDeviceCredentialAllowed was explicitly set to true. |
 
 ### authenticate
 
@@ -416,7 +416,7 @@ open fun authenticate(
 ): Unit
 ```
 
-This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. It terminates when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)` is called, when `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationSucceeded(android.hardware.biometrics.BiometricPrompt.AuthenticationResult)` is called, or when the user dismisses the system-provided dialog. This operation can be canceled by using the provided cancel object. The application will receive authentication errors through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback`, and button events through the corresponding callback set in `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)` or `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#addFallbackOption(kotlin.CharSequence,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`. It is safe to reuse the `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#` object, and calling `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt#authenticate(android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)` while an existing authentication attempt is occurring will stop the previous client and start a new authentication. The interrupted client will receive a cancelled notification through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback#onAuthenticationError(kotlin.Int,%20kotlin.CharSequence)`.
+This call warms up the biometric hardware, displays a system-provided dialog, and starts scanning for a biometric. It terminates when onAuthenticationError is called, when onAuthenticationSucceeded is called, or when the user dismisses the system-provided dialog. This operation can be canceled by using the provided cancel object. The application will receive authentication errors through `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.AuthenticationCallback`, and button events through the corresponding callback set in setNegativeButton or addFallbackOption. It is safe to reuse the BiometricPrompt object, and calling authenticate while an existing authentication attempt is occurring will stop the previous client and start a new authentication. The interrupted client will receive a cancelled notification through onAuthenticationError.
 
 Note: Applications generally should not cancel and start authentication in quick succession. For example, to properly handle authentication across configuration changes, it's recommended to use BiometricPrompt in a fragment with setRetainInstance(true). By doing so, the application will not need to cancel/restart authentication during the configuration change. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_BIOMETRIC:kotlin.String`
@@ -424,7 +424,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `cancel` | [CancellationSignal](../android.os/CancellationSignal.md): An object that can be used to cancel authentication. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): An executor to handle callback events. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): An executor to handle callback events. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [BiometricPrompt.AuthenticationCallback](../android/hardware/biometrics/BiometricPrompt.AuthenticationCallback.md): An object to receive authentication events. This value cannot be `null`. |
 | --- | --- |
 
@@ -440,7 +440,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getAllowedAuthenticators(): Int
 ```
 
-Gets the type(s) of authenticators that may be invoked by the prompt to authenticate the user, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setAllowedAuthenticators(kotlin.Int)`.
+Gets the type(s) of authenticators that may be invoked by the prompt to authenticate the user, as set by setAllowedAuthenticators.
 
 | Return ||
 |---|---|
@@ -468,11 +468,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getContentView(): PromptContentView?
 ```
 
-Gets the content view for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setContentView(android.hardware.biometrics.PromptContentView)`.
+Gets the content view for the prompt, as set by setContentView.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/biometrics/PromptContentView?` | The content view for the prompt, or null if the prompt has no content view. |
+| PromptContentView | The content view for the prompt, or null if the prompt has no content view. |
 
 ### getDescription
 
@@ -482,7 +482,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getDescription(): CharSequence?
 ```
 
-Gets the description for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setDescription(kotlin.CharSequence)`.
+Gets the description for the prompt, as set by setDescription.
 
 | Return ||
 |---|---|
@@ -496,7 +496,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 open fun getFallbackOptions(): MutableList<FallbackOption!>
 ```
 
-Gets the fallback options for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#addFallbackOption(kotlin.CharSequence,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`.
+Gets the fallback options for the prompt, as set by addFallbackOption.
 
 | Return ||
 |---|---|
@@ -510,7 +510,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getLogoBitmap(): Bitmap?
 ```
 
-Gets the logo bitmap for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setLogoBitmap(android.graphics.Bitmap)`. Currently for system applications use only. 
+Gets the logo bitmap for the prompt, as set by setLogoBitmap. Currently for system applications use only. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_BIOMETRIC_DIALOG_ADVANCED:kotlin.String`
 
 | Return ||
@@ -525,7 +525,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getLogoDescription(): String?
 ```
 
-Gets the logo description for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setLogoDescription(kotlin.String)`. Currently for system applications use only. 
+Gets the logo description for the prompt, as set by setLogoDescription. Currently for system applications use only. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_BIOMETRIC_DIALOG_ADVANCED:kotlin.String`
 
 | Return ||
@@ -540,7 +540,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getLogoRes(): Int
 ```
 
-Gets the drawable resource of the logo for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setLogoRes(kotlin.Int)`. Currently for system applications use only. 
+Gets the drawable resource of the logo for the prompt, as set by setLogoRes. Currently for system applications use only. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_BIOMETRIC_DIALOG_ADVANCED:kotlin.String`
 
 | Return ||
@@ -567,7 +567,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getNegativeButtonText(): CharSequence?
 ```
 
-Gets the negative button text for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setNegativeButton(kotlin.CharSequence,%20java.util.concurrent.Executor,%20android.content.DialogInterface.OnClickListener)`.
+Gets the negative button text for the prompt, as set by setNegativeButton.
 
 | Return ||
 |---|---|
@@ -581,7 +581,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getSubtitle(): CharSequence?
 ```
 
-Gets the subtitle for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setSubtitle(kotlin.CharSequence)`.
+Gets the subtitle for the prompt, as set by setSubtitle.
 
 | Return ||
 |---|---|
@@ -595,7 +595,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getTitle(): CharSequence
 ```
 
-Gets the title for the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setTitle(kotlin.CharSequence)`.
+Gets the title for the prompt, as set by setTitle.
 
 | Return ||
 |---|---|
@@ -609,7 +609,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun isConfirmationRequired(): Boolean
 ```
 
-Determines if explicit user confirmation is required by the prompt, as set by `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt.Builder#setConfirmationRequired(kotlin.Boolean)`.
+Determines if explicit user confirmation is required by the prompt, as set by setConfirmationRequired.
 
 | Return ||
 |---|---|

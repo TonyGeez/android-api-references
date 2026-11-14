@@ -4,13 +4,13 @@
 
 | [Callback](../android/view/ActionMode.Callback.md) | Callback interface for action modes. |
 | --- | --- |
-| [VisibilityListener](../android/view/ActionProvider.VisibilityListener.md) | Listens to changes in visibility as reported by `https://developer.android.com/reference/kotlin/android/view/ActionProvider#refreshVisibility()`. |
+| [VisibilityListener](../android/view/ActionProvider.VisibilityListener.md) | Listens to changes in visibility as reported by refreshVisibility. |
 | [AttachedSurfaceControl](AttachedSurfaceControl.md) | Provides an interface to the root-Surface of a View Hierarchy or Window. |
 | [FrameCallback](../android/view/Choreographer.FrameCallback.md) | Implement this interface to receive a callback when a new display frame is being rendered. |
 | --- | --- |
 | [VsyncCallback](../android/view/Choreographer.VsyncCallback.md) | Implement this interface to receive a callback to start the next frame. |
-| [CollapsibleActionView](CollapsibleActionView.md) | When a `https://developer.android.com/reference/kotlin/android/view/View` implements this interface it will receive callbacks when expanded or collapsed as an action view alongside the optional, app-specified callbacks to `https://developer.android.com/reference/kotlin/android/view/MenuItem.OnActionExpandListener`. |
-| [ContextMenu](ContextMenu.md) | Extension of `https://developer.android.com/reference/kotlin/android/view/Menu` for context menus providing functionality to modify the header of the context menu. |
+| [CollapsibleActionView](CollapsibleActionView.md) | When a View implements this interface it will receive callbacks when expanded or collapsed as an action view alongside the optional, app-specified callbacks to `https://developer.android.com/reference/kotlin/android/view/MenuItem.OnActionExpandListener`. |
+| [ContextMenu](ContextMenu.md) | Extension of Menu for context menus providing functionality to modify the header of the context menu. |
 | --- | --- |
 | [OnContextClickListener](../android/view/GestureDetector.OnContextClickListener.md) | The listener that is used to notify when a context click occurs. |
 | [OnDoubleTapListener](../android/view/GestureDetector.OnDoubleTapListener.md) | The listener that is used to notify when a double-tap or a confirmed single-tap occur. |
@@ -30,11 +30,11 @@
 | --- | --- |
 | [OnScaleGestureListener](../android/view/ScaleGestureDetector.OnScaleGestureListener.md) | The listener for receiving notifications when gestures occur. |
 | [ScrollCaptureCallback](ScrollCaptureCallback.md) | A ScrollCaptureCallback is responsible for providing rendered snapshots of scrolling content for the scroll capture system. |
-| [ScrollFeedbackProvider](ScrollFeedbackProvider.md) | Provides feedback to the user for scroll events on a `https://developer.android.com/reference/kotlin/android/view/View`. |
+| [ScrollFeedbackProvider](ScrollFeedbackProvider.md) | Provides feedback to the user for scroll events on a View. |
 | --- | --- |
-| [SubMenu](SubMenu.md) | Subclass of `https://developer.android.com/reference/kotlin/android/view/Menu` for sub menus. |
+| [SubMenu](SubMenu.md) | Subclass of Menu for sub menus. |
 | [OnJankDataListener](../android/view/SurfaceControl.OnJankDataListener.md) | Listener interface to be informed about SurfaceFlinger's jank classification for a specific surface. |
-| [TransactionCommittedListener](../android/view/SurfaceControl.TransactionCommittedListener.md) | Interface to handle request to `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction#addTransactionCommittedListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.TransactionCommittedListener)` |
+| [TransactionCommittedListener](../android/view/SurfaceControl.TransactionCommittedListener.md) | Interface to handle request to addTransactionCommittedListener |
 | --- | --- |
 | [SurfaceControlInputReceiver](SurfaceControlInputReceiver.md) | Provides a mechanism for a SurfaceControl to receive input events. |
 | [SurfaceHolder](SurfaceHolder.md) | Abstract interface to someone holding a display surface. |
@@ -88,7 +88,7 @@
 | [OnRestrictedCaptionAreaChangedListener](../android/view/Window.OnRestrictedCaptionAreaChangedListener.md) | Callback for clients that want to be aware of where caption draws content. |
 | [WindowInsetsAnimationController](WindowInsetsAnimationController.md) | Controller for app-driven animation of system windows. |
 | --- | --- |
-| [WindowInsetsAnimationControlListener](WindowInsetsAnimationControlListener.md) | Listener that encapsulates a request to `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController#controlWindowInsetsAnimation(kotlin.Int,%20kotlin.Long,%20android.view.animation.Interpolator,%20android.os.CancellationSignal,%20android.view.WindowInsetsAnimationControlListener)`. |
+| [WindowInsetsAnimationControlListener](WindowInsetsAnimationControlListener.md) | Listener that encapsulates a request to controlWindowInsetsAnimation. |
 | [WindowInsetsController](WindowInsetsController.md) | Interface to control windows that generate insets. |
 | [WindowManager](WindowManager.md) | The interface that apps use to talk to the window manager. |
 | --- | --- |
@@ -102,14 +102,14 @@
 | [BlurRegion](../android/view/BlurRegion.md) | The abstract base class defining a region on the SurfaceView that should have a blur applied. |
 | --- | --- |
 | [Choreographer](Choreographer.md) | Coordinates the timing of animations, input and drawing. |
-| [ContentInfo](ContentInfo.md) | Holds all the relevant data for a request to `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)`. |
+| [ContentInfo](ContentInfo.md) | Holds all the relevant data for a request to performReceiveContent. |
 | [ContextThemeWrapper](ContextThemeWrapper.md) | A context wrapper that allows you to modify or replace the theme of the wrapped context. |
 | --- | --- |
 | [Display](Display.md) | Provides information about the size and density of a logical display. |
 | [DisplayCutout](DisplayCutout.md) | Represents the area of the display that is not functional for displaying content. |
 | [DisplayShape](DisplayShape.md) | A class representing the shape of a display. |
 | --- | --- |
-| [DragAndDropPermissions](DragAndDropPermissions.md) | `https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions` controls the access permissions for the content URIs associated with a `https://developer.android.com/reference/kotlin/android/view/DragEvent`. |
+| [DragAndDropPermissions](DragAndDropPermissions.md) | DragAndDropPermissions controls the access permissions for the content URIs associated with a DragEvent. |
 | [DragEvent](DragEvent.md) | Represents an event that is sent out by the system at various times during a drag and drop operation. |
 | [FocusFinder](FocusFinder.md) | The algorithm used for finding the next focusable view in a given direction from a view that currently has focus. |
 | --- | --- |
@@ -117,20 +117,20 @@
 | [FrameRateVelocityPoint](../android/view/FrameRateVelocityPoint.md) | Contains the frame rate / velocity values. |
 | [FrameStats](FrameStats.md) | This is the base class for frame statistics. |
 | --- | --- |
-| [GestureDetector](GestureDetector.md) | Detects various gestures and events using the supplied `https://developer.android.com/reference/kotlin/android/view/MotionEvent`s. |
+| [GestureDetector](GestureDetector.md) | Detects various gestures and events using the supplied MotionEvents. |
 | [Gravity](Gravity.md) | Standard constants and tools for placing an object within a potentially larger container. |
-| [HapticFeedbackConstants](HapticFeedbackConstants.md) | Constants to be used to perform haptic feedback effects via `https://developer.android.com/reference/kotlin/android/view/View#performHapticFeedback(kotlin.Int)` |
+| [HapticFeedbackConstants](HapticFeedbackConstants.md) | Constants to be used to perform haptic feedback effects via performHapticFeedback |
 | --- | --- |
 | [InputDevice](InputDevice.md) | Describes the capabilities of a particular input device. |
 | [InputEvent](InputEvent.md) | Common base class for input events. |
 | [InputQueue](InputQueue.md) | An input queue provides a mechanism for an application to receive incoming input events. |
 | --- | --- |
-| [KeyboardShortcutGroup](KeyboardShortcutGroup.md) | A group of `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo`. |
+| [KeyboardShortcutGroup](KeyboardShortcutGroup.md) | A group of KeyboardShortcutInfo. |
 | [KeyboardShortcutInfo](KeyboardShortcutInfo.md) | Information about a Keyboard Shortcut. |
 | [KeyCharacterMap](KeyCharacterMap.md) | Describes the keys provided by a keyboard device and their associated labels. |
 | --- | --- |
 | [KeyEvent](KeyEvent.md) | Object used to report key and button events. |
-| [LayoutInflater](LayoutInflater.md) | Instantiates a layout XML file into its corresponding `https://developer.android.com/reference/kotlin/android/view/View` objects. |
+| [LayoutInflater](LayoutInflater.md) | Instantiates a layout XML file into its corresponding View objects. |
 | [MenuInflater](MenuInflater.md) | This class is used to instantiate menu XML files into Menu objects. |
 | --- | --- |
 | [MotionEvent](MotionEvent.md) | Object used to report movement (mouse, pen, finger, trackball) events. |
@@ -138,22 +138,22 @@
 | [OrientationEventListener](OrientationEventListener.md) | Helper class for receiving notifications from the SensorManager when the orientation of the device has changed. |
 | --- | --- |
 | [OrientationListener](OrientationListener.md) | Helper class for receiving notifications from the SensorManager when the orientation of the device has changed. |
-| [PixelCopy](PixelCopy.md) | Provides a mechanisms to issue pixel copy requests to allow for copy operations from `https://developer.android.com/reference/kotlin/android/view/Surface` to `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` |
+| [PixelCopy](PixelCopy.md) | Provides a mechanisms to issue pixel copy requests to allow for copy operations from Surface to `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` |
 | [PointerIcon](PointerIcon.md) | Represents an icon that can be used as a mouse pointer. |
 | --- | --- |
 | [RoundedCorner](RoundedCorner.md) | Represents a rounded corner of the display. |
 | [RoundedRectBlurRegion](RoundedRectBlurRegion.md) | Defines a rounded rectangular blur region on the SurfaceView. |
-| [ScaleGestureDetector](ScaleGestureDetector.md) | Detects scaling transformation gestures using the supplied `https://developer.android.com/reference/kotlin/android/view/MotionEvent`s. |
+| [ScaleGestureDetector](ScaleGestureDetector.md) | Detects scaling transformation gestures using the supplied MotionEvents. |
 | --- | --- |
-| [ScrollCaptureSession](ScrollCaptureSession.md) | A session represents the scope of interaction between a `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureCallback` and the system during an active scroll capture operation. |
-| [ScrollCaptureTarget](ScrollCaptureTarget.md) | A target collects the set of contextual information for a ScrollCaptureHandler discovered during a `https://developer.android.com/reference/kotlin/android/view/View#dispatchScrollCaptureSearch(android.graphics.Rect,%20android.graphics.Point,%20java.util.function.Consumer)`. |
+| [ScrollCaptureSession](ScrollCaptureSession.md) | A session represents the scope of interaction between a ScrollCaptureCallback and the system during an active scroll capture operation. |
+| [ScrollCaptureTarget](ScrollCaptureTarget.md) | A target collects the set of contextual information for a ScrollCaptureHandler discovered during a dispatchScrollCaptureSearch. |
 | [SearchEvent](SearchEvent.md) | Class that contains information about an event that triggers a search. |
 | --- | --- |
-| [SoundEffectConstants](SoundEffectConstants.md) | Constants to be used to play sound effects via `https://developer.android.com/reference/kotlin/android/view/View#playSoundEffect(kotlin.Int)` |
+| [SoundEffectConstants](SoundEffectConstants.md) | Constants to be used to play sound effects via playSoundEffect |
 | [Surface](Surface.md) | Handle onto a raw buffer that is being managed by the screen compositor. |
 | [SurfaceControl](SurfaceControl.md) | Handle to an on-screen Surface managed by the system compositor. |
 | --- | --- |
-| [SurfaceControlViewHost](SurfaceControlViewHost.md) | Utility class for adding a View hierarchy to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl`. |
+| [SurfaceControlViewHost](SurfaceControlViewHost.md) | Utility class for adding a View hierarchy to a SurfaceControl. |
 | [SurfaceView](SurfaceView.md) | Provides a dedicated drawing surface embedded inside of a view hierarchy. |
 | [TextureView](TextureView.md) | A TextureView can be used to display a content stream, such as that coming from a camera preview, a video, or an OpenGL scene. |
 | --- | --- |
@@ -169,7 +169,7 @@
 | [ViewAnimationUtils](ViewAnimationUtils.md) | Defines common utilities for working with View's animations. |
 | [ViewConfiguration](ViewConfiguration.md) | Contains methods to standard constants used in the UI for timeouts, sizes, and distances. |
 | --- | --- |
-| [ViewDebug](ViewDebug.md) | Various debugging/tracing tools related to `https://developer.android.com/reference/kotlin/android/view/View` and the view hierarchy. |
+| [ViewDebug](ViewDebug.md) | Various debugging/tracing tools related to View and the view hierarchy. |
 | [ViewGroup](ViewGroup.md) | A `ViewGroup` is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers. |
 | [ViewGroupOverlay](ViewGroupOverlay.md) | A group overlay is an extra layer that sits on top of a ViewGroup (the "host view") which is drawn after all other content in that view (including the view group's children). |
 | --- | --- |
@@ -177,7 +177,7 @@
 | [ViewOverlay](ViewOverlay.md) | An overlay is an extra layer that sits on top of a View (the "host view") which is drawn after all other content in that view (including children, if the view is a ViewGroup). |
 | [ViewPropertyAnimator](ViewPropertyAnimator.md) | This class enables automatic and optimized animation of select properties on View objects. |
 | --- | --- |
-| [ViewStructure](ViewStructure.md) | `ViewStructure` is a container for storing additional per-view data generated by `https://developer.android.com/reference/kotlin/android/view/View#onProvideStructure(android.view.ViewStructure)` and `https://developer.android.com/reference/kotlin/android/view/View#onProvideAutofillStructure(android.view.ViewStructure,%20kotlin.Int)`. |
+| [ViewStructure](ViewStructure.md) | `ViewStructure` is a container for storing additional per-view data generated by onProvideStructure and onProvideAutofillStructure. |
 | [ViewStub](ViewStub.md) | A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime. |
 | [ViewTreeObserver](ViewTreeObserver.md) | A view tree observer is used to register listeners that can be notified of global changes in the view tree. |
 | --- | --- |
@@ -189,7 +189,7 @@
 | [WindowInsets](WindowInsets.md) | Describes a set of insets for window content. |
 | [WindowInsetsAnimation](WindowInsetsAnimation.md) | Class representing an animation of a set of windows that cause insets. |
 | --- | --- |
-| [WindowMetrics](WindowMetrics.md) | Metrics about a Window, consisting of the bounds and `https://developer.android.com/reference/kotlin/android/view/WindowInsets`. |
+| [WindowMetrics](WindowMetrics.md) | Metrics about a Window, consisting of the bounds and WindowInsets. |
 
 ## Exceptions
 

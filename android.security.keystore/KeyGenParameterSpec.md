@@ -12,19 +12,19 @@ class KeyGenParameterSpec : AlgorithmParameterSpec
 
 `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` for initializing a `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#` or a `https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator.html#` of the [Android Keystore system](https://developer.android.com/training/articles/keystore.html). The spec determines authorized uses of the key, such as whether user authentication is required for using the key, what operations are authorized (e.g., signing, but not decryption), with what parameters (e.g., only with a particular padding scheme or digest), and the key's validity start and end dates. Key use authorizations expressed in the spec apply only to secret keys and private keys -- public keys can be used for any supported operations.
 
-To generate an asymmetric key pair or a symmetric key, create an instance of this class using the `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder`, initialize a `KeyPairGenerator` or a `KeyGenerator` of the desired key type (e.g., `EC` or `AES` -- see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`KEY_ALGORITHM` constants) from the `AndroidKeyStore` provider with the `KeyGenParameterSpec` instance, and then generate a key or key pair using `https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator.html#generateKey()` or `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#generateKeyPair()`.
+To generate an asymmetric key pair or a symmetric key, create an instance of this class using the `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder`, initialize a `KeyPairGenerator` or a `KeyGenerator` of the desired key type (e.g., `EC` or `AES` -- see KeyProperties.`KEY_ALGORITHM` constants) from the `AndroidKeyStore` provider with the `KeyGenParameterSpec` instance, and then generate a key or key pair using generateKey or generateKeyPair.
 
-The generated key pair or key will be returned by the generator and also stored in the Android Keystore under the alias specified in this spec. To obtain the secret or private key from the Android Keystore use `https://developer.android.com/reference/kotlin/java/security/KeyStore.html#getKey(kotlin.String,%20kotlin.CharArray)` or `https://developer.android.com/reference/kotlin/java/security/KeyStore.html#getEntry(kotlin.String,%20java.security.KeyStore.ProtectionParameter)`. To obtain the public key from the Android Keystore use `https://developer.android.com/reference/kotlin/java/security/KeyStore.html#getCertificate(kotlin.String)` and then `https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#getPublicKey()`.
+The generated key pair or key will be returned by the generator and also stored in the Android Keystore under the alias specified in this spec. To obtain the secret or private key from the Android Keystore use getKey or getEntry. To obtain the public key from the Android Keystore use getCertificate and then getPublicKey.
 
 To help obtain algorithm-specific public parameters of key pairs stored in the Android Keystore, generated private keys implement `https://developer.android.com/reference/kotlin/java/security/interfaces/ECKey.html#` or `https://developer.android.com/reference/kotlin/java/security/interfaces/RSAKey.html#` interfaces whereas public keys implement `https://developer.android.com/reference/kotlin/java/security/interfaces/ECPublicKey.html#` or `https://developer.android.com/reference/kotlin/java/security/interfaces/RSAPublicKey.html#` interfaces.
 
 For asymmetric key pairs, a X.509 certificate will be also generated and stored in the Android Keystore. This is because the `https://developer.android.com/reference/kotlin/java/security/KeyStore.html#` abstraction does not support storing key pairs without a certificate. The subject, serial number, and validity dates of the certificate can be customized in this spec. The certificate may be replaced at a later time by a certificate signed by a Certificate Authority (CA).
 
-NOTE: If attestation is not requested using `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setAttestationChallenge(kotlin.ByteArray)`, generated certificate may be self-signed. If a private key is not authorized to sign the certificate, then the certificate will be created with an invalid signature which will not verify. Such a certificate is still useful because it provides access to the public key. To generate a valid signature for the certificate the key needs to be authorized for all of the following:
+NOTE: If attestation is not requested using setAttestationChallenge, generated certificate may be self-signed. If a private key is not authorized to sign the certificate, then the certificate will be created with an invalid signature which will not verify. Such a certificate is still useful because it provides access to the public key. To generate a valid signature for the certificate the key needs to be authorized for all of the following:
 
 - `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_SIGN:kotlin.Int`,
-- operation without requiring the user to be authenticated (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationRequired(kotlin.Boolean)`),
-- signing/origination at this moment in time (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setKeyValidityStart(java.util.Date)` and `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setKeyValidityForOriginationEnd(java.util.Date)`),
+- operation without requiring the user to be authenticated (see setUserAuthenticationRequired),
+- signing/origination at this moment in time (see setKeyValidityStart and setKeyValidityForOriginationEnd),
 - suitable digest,
 - (RSA keys only) padding scheme `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#SIGNATURE_PADDING_RSA_PKCS1:kotlin.String`.
 
@@ -307,52 +307,52 @@ In both cases, it is not required to set the `AlgorithmParameterSpec` or digest 
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder` Builder of `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#` instances. |
+| | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder` Builder of KeyGenParameterSpec instances. |
 
 | Public methods ||
 |---|---|
-| [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)? | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getAlgorithmParameterSpec()()` Returns the key algorithm-specific `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` that will be used for creation of the key or `null` if algorithm-specific defaults should be used. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getAttestKeyAlias()()` Returns the alias of the attestation key that will be used to sign the attestation certificate of the generated key. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getAttestationChallenge()()` Returns the attestation challenge value that will be placed in attestation certificate for this key pair. |
+| [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)? | getAlgorithmParameterSpec Returns the key algorithm-specific `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` that will be used for creation of the key or `null` if algorithm-specific defaults should be used. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getAttestKeyAlias Returns the alias of the attestation key that will be used to sign the attestation certificate of the generated key. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getAttestationChallenge Returns the attestation challenge value that will be placed in attestation certificate for this key pair. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getBlockModes()()` Gets the set of block modes (e.g., |
-| [Date](../java.util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getCertificateNotAfter()()` Returns the end date to be used on the X. |
-| [Date](../java.util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getCertificateNotBefore()()` Returns the start date to be used on the X. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getBlockModes Gets the set of block modes (e.g., |
+| [Date](../java.util/Date.md) | getCertificateNotAfter Returns the end date to be used on the X. |
+| [Date](../java.util/Date.md) | getCertificateNotBefore Returns the start date to be used on the X. |
 | --- | --- |
-| [BigInteger](../java.math/BigInteger.md) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getCertificateSerialNumber()()` Returns the serial number to be used on the X. |
-| [X500Principal](../javax.security.auth.x500/X500Principal.md) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getCertificateSubject()()` Returns the subject distinguished name to be used on the X. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getDigests()()` Returns the set of digest algorithms (e.g., |
+| [BigInteger](../java.math/BigInteger.md) | getCertificateSerialNumber Returns the serial number to be used on the X. |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md) | getCertificateSubject Returns the subject distinguished name to be used on the X. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getDigests Returns the set of digest algorithms (e.g., |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getEncryptionPaddings()()` Returns the set of padding schemes (e.g., |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getKeySize()()` Returns the requested key size. |
-| [Date](../java.util/Date.md)? | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getKeyValidityForConsumptionEnd()()` Returns the time instant after which the key is no longer valid for decryption and verification or `null` if not restricted. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getEncryptionPaddings Returns the set of padding schemes (e.g., |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getKeySize Returns the requested key size. |
+| [Date](../java.util/Date.md)? | getKeyValidityForConsumptionEnd Returns the time instant after which the key is no longer valid for decryption and verification or `null` if not restricted. |
 | --- | --- |
-| [Date](../java.util/Date.md)? | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getKeyValidityForOriginationEnd()()` Returns the time instant after which the key is no longer valid for encryption and signing or `null` if not restricted. |
-| [Date](../java.util/Date.md)? | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getKeyValidityStart()()` Returns the time instant before which the key is not yet valid or `null` if not restricted. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getKeystoreAlias()()` Returns the alias that will be used in the `java.security.KeyStore` in conjunction with the `AndroidKeyStore`. |
+| [Date](../java.util/Date.md)? | getKeyValidityForOriginationEnd Returns the time instant after which the key is no longer valid for encryption and signing or `null` if not restricted. |
+| [Date](../java.util/Date.md)? | getKeyValidityStart Returns the time instant before which the key is not yet valid or `null` if not restricted. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getKeystoreAlias Returns the alias that will be used in the `java.security.KeyStore` in conjunction with the `AndroidKeyStore`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getMaxUsageCount()()` Returns the maximum number of times the limited use key is allowed to be used or `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#UNRESTRICTED_USAGE_COUNT:kotlin.Int` if there's no restriction on the number of times the key can be used. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getMgf1Digests()()` Returns the set of digests that can be used by the MGF1 mask generation function (e.g., |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getPurposes()()` Returns the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxUsageCount Returns the maximum number of times the limited use key is allowed to be used or `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#UNRESTRICTED_USAGE_COUNT:kotlin.Int` if there's no restriction on the number of times the key can be used. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getMgf1Digests Returns the set of digests that can be used by the MGF1 mask generation function (e.g., |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPurposes Returns the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getSignaturePaddings()()` Gets the set of padding schemes (e.g., |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getUserAuthenticationType()()` Gets the modes of authentication that can authorize use of this key. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getUserAuthenticationValidityDurationSeconds()()` Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSignaturePaddings Gets the set of padding schemes (e.g., |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUserAuthenticationType Gets the modes of authentication that can authorize use of this key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUserAuthenticationValidityDurationSeconds Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isDevicePropertiesAttestationIncluded()()` Returns `true` if attestation for the base device properties (`https://developer.android.com/reference/kotlin/android/os/Build.html#BRAND:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#DEVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MANUFACTURER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MODEL:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#PRODUCT:kotlin.String`) was requested to be added in the attestation certificate for the generated key. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isDigestsSpecified()()` Returns `true` if the set of digest algorithms with which the key can be used has been specified. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isInvalidatedByBiometricEnrollment()()` Returns `true` if the key is irreversibly invalidated when a new biometric is enrolled or all enrolled biometrics are removed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDevicePropertiesAttestationIncluded Returns `true` if attestation for the base device properties (`https://developer.android.com/reference/kotlin/android/os/Build.html#BRAND:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#DEVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MANUFACTURER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MODEL:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#PRODUCT:kotlin.String`) was requested to be added in the attestation certificate for the generated key. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDigestsSpecified Returns `true` if the set of digest algorithms with which the key can be used has been specified. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInvalidatedByBiometricEnrollment Returns `true` if the key is irreversibly invalidated when a new biometric is enrolled or all enrolled biometrics are removed. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isMgf1DigestsSpecified()()` Returns `true` if the set of digests for the MGF1 mask generation function, with which the key can be used, has been specified. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isRandomizedEncryptionRequired()()` Returns `true` if encryption using this key must be sufficiently randomized to produce different ciphertexts for the same plaintext every time. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isStrongBoxBacked()()` Returns `true` if the key is protected by a Strongbox security chip. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMgf1DigestsSpecified Returns `true` if the set of digests for the MGF1 mask generation function, with which the key can be used, has been specified. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRandomizedEncryptionRequired Returns `true` if encryption using this key must be sufficiently randomized to produce different ciphertexts for the same plaintext every time. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStrongBoxBacked Returns `true` if the key is protected by a Strongbox security chip. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUnlockedDeviceRequired()()` Returns `true` if the key is authorized to be used only while the device is unlocked. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()()` Returns `true` if the key is authorized to be used only if the user has been authenticated. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationValidWhileOnBody()()` Returns `true` if the key will remain authorized only until the device is removed from the user's body, up to the validity duration. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUnlockedDeviceRequired Returns `true` if the key is authorized to be used only while the device is unlocked. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserAuthenticationRequired Returns `true` if the key is authorized to be used only if the user has been authenticated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserAuthenticationValidWhileOnBody Returns `true` if the key will remain authorized only until the device is removed from the user's body, up to the validity duration. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserConfirmationRequired()()` Returns `true` if the key is authorized to be used only for messages confirmed by the user. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserPresenceRequired()()` Returns `true` if the key is authorized to be used only if a test of user presence has been performed between the `Signature.initSign()` and `Signature.sign()` calls. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserConfirmationRequired Returns `true` if the key is authorized to be used only for messages confirmed by the user. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserPresenceRequired Returns `true` if the key is authorized to be used only if a test of user presence has been performed between the `Signature.initSign()` and `Signature.sign()` calls. |
 
 ## Public methods
 
@@ -382,7 +382,7 @@ Returns the alias of the attestation key that will be used to sign the attestati
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setAttestKeyAlias(kotlin.String)`
+- setAttestKeyAlias
 
 ### getAttestationChallenge
 
@@ -398,10 +398,10 @@ If this method returns non-`null`, the public key certificate for this key pair 
 
 If this method returns `null`, and the spec is used to generate an asymmetric (RSA or EC) key pair, the public key will have a self-signed certificate if it has purpose `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_SIGN:kotlin.Int`. If does not have purpose `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#PURPOSE_SIGN:kotlin.Int`, it will have a fake certificate.
 
-Symmetric keys, such as AES and HMAC keys, do not have public key certificates. If a KeyGenParameterSpec with getAttestationChallenge returning non-null is used to generate a symmetric (AES or HMAC) key, `https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator.html#generateKey()` will throw `https://developer.android.com/reference/kotlin/java/security/InvalidAlgorithmParameterException.html#`.
+Symmetric keys, such as AES and HMAC keys, do not have public key certificates. If a KeyGenParameterSpec with getAttestationChallenge returning non-null is used to generate a symmetric (AES or HMAC) key, generateKey will throw `https://developer.android.com/reference/kotlin/java/security/InvalidAlgorithmParameterException.html#`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setAttestationChallenge(kotlin.ByteArray)`
+- setAttestationChallenge
 
 ### getBlockModes
 
@@ -413,7 +413,7 @@ fun getBlockModes(): Array<String!>
 
 Gets the set of block modes (e.g., `GCM`, `CBC`) with which the key can be used when encrypting/decrypting. Attempts to use the key with any other block modes will be rejected.
 
-See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`BLOCK_MODE` constants.
+See KeyProperties.`BLOCK_MODE` constants.
 
 | Return ||
 |---|---|
@@ -485,7 +485,7 @@ fun getDigests(): Array<String!>
 
 Returns the set of digest algorithms (e.g., `SHA-256`, `SHA-384` with which the key can be used.
 
-See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`DIGEST` constants.
+See KeyProperties.`DIGEST` constants.
 
 | Return ||
 |---|---|
@@ -497,7 +497,7 @@ See `https://developer.android.com/reference/kotlin/android/security/keystore/Ke
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isDigestsSpecified()`
+- isDigestsSpecified
 
 ### getEncryptionPaddings
 
@@ -509,7 +509,7 @@ fun getEncryptionPaddings(): Array<String!>
 
 Returns the set of padding schemes (e.g., `PKCS7Padding`, `OEAPPadding`, `PKCS1Padding`, `NoPadding`) with which the key can be used when encrypting/decrypting. Attempts to use the key with any other padding scheme will be rejected.
 
-See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`ENCRYPTION_PADDING` constants.
+See KeyProperties.`ENCRYPTION_PADDING` constants.
 
 | Return ||
 |---|---|
@@ -523,7 +523,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getKeySize(): Int
 ```
 
-Returns the requested key size. If `-1`, the size should be looked up from `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getAlgorithmParameterSpec()`, if provided, otherwise an algorithm-specific default size should be used.
+Returns the requested key size. If `-1`, the size should be looked up from getAlgorithmParameterSpec, if provided, otherwise an algorithm-specific default size should be used.
 
 ### getKeyValidityForConsumptionEnd
 
@@ -580,7 +580,7 @@ fun getMaxUsageCount(): Int
 Returns the maximum number of times the limited use key is allowed to be used or `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties#UNRESTRICTED_USAGE_COUNT:kotlin.Int` if there's no restriction on the number of times the key can be used.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setMaxUsageCount(kotlin.Int)`
+- setMaxUsageCount
 
 ### getMgf1Digests
 
@@ -592,7 +592,7 @@ fun getMgf1Digests(): MutableSet<String!>
 
 Returns the set of digests that can be used by the MGF1 mask generation function (e.g., `SHA-256`, `SHA-384`) with the key. Useful with the `RSA-OAEP` scheme. If not explicitly specified during key generation, the default `SHA-1` digest is used and may be specified when using the key.
 
-See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`DIGEST` constants.
+See KeyProperties.`DIGEST` constants.
 
 | Return ||
 |---|---|
@@ -604,7 +604,7 @@ See `https://developer.android.com/reference/kotlin/android/security/keystore/Ke
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isMgf1DigestsSpecified()`
+- isMgf1DigestsSpecified
 
 ### getPurposes
 
@@ -616,7 +616,7 @@ fun getPurposes(): Int
 
 Returns the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. Attempts to use the key for any other purpose will be rejected.
 
-See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`PURPOSE` flags.
+See KeyProperties.`PURPOSE` flags.
 
 | Return ||
 |---|---|
@@ -632,7 +632,7 @@ fun getSignaturePaddings(): Array<String!>
 
 Gets the set of padding schemes (e.g., `PSS`, `PKCS#1`) with which the key can be used when signing/verifying. Attempts to use the key with any other padding scheme will be rejected.
 
-See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyProperties`.`SIGNATURE_PADDING` constants.
+See KeyProperties.`SIGNATURE_PADDING` constants.
 
 | Return ||
 |---|---|
@@ -646,7 +646,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getUserAuthenticationType(): Int
 ```
 
-Gets the modes of authentication that can authorize use of this key. This has effect only if user authentication is required (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()`).
+Gets the modes of authentication that can authorize use of this key. This has effect only if user authentication is required (see isUserAuthenticationRequired).
 
 This authorization applies only to secret key and private key operations. Public key operations are not restricted.
 
@@ -656,8 +656,8 @@ This authorization applies only to secret key and private key operations. Public
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationParameters(kotlin.Int,%20kotlin.Int)`
+- isUserAuthenticationRequired
+- setUserAuthenticationParameters
 
 ### getUserAuthenticationValidityDurationSeconds
 
@@ -667,7 +667,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getUserAuthenticationValidityDurationSeconds(): Int
 ```
 
-Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. This has effect only if user authentication is required (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()`).
+Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. This has effect only if user authentication is required (see isUserAuthenticationRequired).
 
 This authorization applies only to secret key and private key operations. Public key operations are not restricted.
 
@@ -677,8 +677,8 @@ This authorization applies only to secret key and private key operations. Public
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationValidityDurationSeconds(kotlin.Int)`
+- isUserAuthenticationRequired
+- setUserAuthenticationValidityDurationSeconds
 
 ### isDevicePropertiesAttestationIncluded
 
@@ -688,10 +688,10 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun isDevicePropertiesAttestationIncluded(): Boolean
 ```
 
-Returns `true` if attestation for the base device properties (`https://developer.android.com/reference/kotlin/android/os/Build.html#BRAND:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#DEVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MANUFACTURER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MODEL:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#PRODUCT:kotlin.String`) was requested to be added in the attestation certificate for the generated key. `https://developer.android.com/reference/kotlin/javax/crypto/KeyGenerator.html#generateKey()` will throw `https://developer.android.com/reference/kotlin/java/security/ProviderException.html#` if device properties attestation fails or is not supported.
+Returns `true` if attestation for the base device properties (`https://developer.android.com/reference/kotlin/android/os/Build.html#BRAND:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#DEVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MANUFACTURER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#MODEL:kotlin.String`, `https://developer.android.com/reference/kotlin/android/os/Build.html#PRODUCT:kotlin.String`) was requested to be added in the attestation certificate for the generated key. generateKey will throw `https://developer.android.com/reference/kotlin/java/security/ProviderException.html#` if device properties attestation fails or is not supported.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setDevicePropertiesAttestationIncluded(kotlin.Boolean)`
+- setDevicePropertiesAttestationIncluded
 
 ### isDigestsSpecified
 
@@ -709,7 +709,7 @@ Returns `true` if the set of digest algorithms with which the key can be used ha
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getDigests()`
+- getDigests
 
 ### isInvalidatedByBiometricEnrollment
 
@@ -722,9 +722,9 @@ fun isInvalidatedByBiometricEnrollment(): Boolean
 Returns `true` if the key is irreversibly invalidated when a new biometric is enrolled or all enrolled biometrics are removed. This has effect only for keys that require biometric user authentication for every use.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getUserAuthenticationValidityDurationSeconds()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setInvalidatedByBiometricEnrollment(kotlin.Boolean)`
+- isUserAuthenticationRequired
+- getUserAuthenticationValidityDurationSeconds
+- setInvalidatedByBiometricEnrollment
 
 ### isMgf1DigestsSpecified
 
@@ -742,7 +742,7 @@ Returns `true` if the set of digests for the MGF1 mask generation function, with
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getMgf1Digests()`
+- getMgf1Digests
 
 ### isRandomizedEncryptionRequired
 
@@ -775,7 +775,7 @@ fun isUnlockedDeviceRequired(): Boolean
 Returns `true` if the key is authorized to be used only while the device is unlocked.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUnlockedDeviceRequired(kotlin.Boolean)`
+- setUnlockedDeviceRequired
 
 ### isUserAuthenticationRequired
 
@@ -790,8 +790,8 @@ Returns `true` if the key is authorized to be used only if the user has been aut
 This authorization applies only to secret key and private key operations. Public key operations are not restricted.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getUserAuthenticationValidityDurationSeconds()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationRequired(kotlin.Boolean)`
+- getUserAuthenticationValidityDurationSeconds
+- setUserAuthenticationRequired
 
 ### isUserAuthenticationValidWhileOnBody
 
@@ -806,9 +806,9 @@ Returns `true` if the key will remain authorized only until the device is remove
 Authorization applies only to secret key and private key operations. Public key operations are not restricted.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#isUserAuthenticationRequired()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec#getUserAuthenticationValidityDurationSeconds()`
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationValidWhileOnBody(kotlin.Boolean)`
+- isUserAuthenticationRequired
+- getUserAuthenticationValidityDurationSeconds
+- setUserAuthenticationValidWhileOnBody
 
 ### isUserConfirmationRequired
 
@@ -818,12 +818,12 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun isUserConfirmationRequired(): Boolean
 ```
 
-Returns `true` if the key is authorized to be used only for messages confirmed by the user. Confirmation is separate from user authentication (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserAuthenticationRequired(kotlin.Boolean)`). Keys can be created that require confirmation but not user authentication, or user authentication but not confirmation, or both. Confirmation verifies that some user with physical possession of the device has approved a displayed message. User authentication verifies that the correct user is present and has authenticated.
+Returns `true` if the key is authorized to be used only for messages confirmed by the user. Confirmation is separate from user authentication (see setUserAuthenticationRequired). Keys can be created that require confirmation but not user authentication, or user authentication but not confirmation, or both. Confirmation verifies that some user with physical possession of the device has approved a displayed message. User authentication verifies that the correct user is present and has authenticated.
 
 This authorization applies only to secret key and private key operations. Public key operations are not restricted.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setUserConfirmationRequired(kotlin.Boolean)`
+- setUserConfirmationRequired
 
 ### isUserPresenceRequired
 

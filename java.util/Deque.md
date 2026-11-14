@@ -8,7 +8,7 @@ interface Deque<E : Any!> : Queue<E>, SequencedCollection<E>
 
 | [java.util.Deque](Deque.md) |
 
-| Known Direct Subclasses [ArrayDeque](ArrayDeque.md), [BlockingDeque](../java.util.concurrent/BlockingDeque.md), [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md), [LinkedList](LinkedList.md) |---|---| | [ArrayDeque](ArrayDeque.md) | Resizable-array implementation of the `https://developer.android.com/reference/kotlin/java/util/Deque#` interface. | | [BlockingDeque](../java.util.concurrent/BlockingDeque.md) | A `https://developer.android.com/reference/kotlin/java/util/Deque#` that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. | | [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](Deque.md) based on linked nodes. | | [LinkedList](LinkedList.md) | Doubly-linked list implementation of the `List` and `Deque` interfaces. | |
+| Known Direct Subclasses [ArrayDeque](ArrayDeque.md), [BlockingDeque](../java.util.concurrent/BlockingDeque.md), [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md), [LinkedList](LinkedList.md) |---|---| | [ArrayDeque](ArrayDeque.md) | Resizable-array implementation of the Deque interface. | | [BlockingDeque](../java.util.concurrent/BlockingDeque.md) | A Deque that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. | | [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](Deque.md) based on linked nodes. | | [LinkedList](LinkedList.md) | Doubly-linked list implementation of the `List` and `Deque` interfaces. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [LinkedBlockingDeque](../java.util.concurrent/LinkedBlockingDeque.md) |---|---| | [LinkedBlockingDeque](../java.util.concurrent/LinkedBlockingDeque.md) | An optionally-bounded [blocking deque](../java.util.concurrent/BlockingDeque.md) based on linked nodes. | |
@@ -24,33 +24,33 @@ The twelve methods described above are summarized in the following table:
 | --- | --- | --- | --- | --- |
 | |
 
-This interface extends the `https://developer.android.com/reference/kotlin/java/util/Queue` interface. When a deque is used as a queue, FIFO (First-In-First-Out) behavior results. Elements are added at the end of the deque and removed from the beginning. The methods inherited from the `Queue` interface are precisely equivalent to `Deque` methods as indicated in the following table:
+This interface extends the Queue interface. When a deque is used as a queue, FIFO (First-In-First-Out) behavior results. Elements are added at the end of the deque and removed from the beginning. The methods inherited from the `Queue` interface are precisely equivalent to `Deque` methods as indicated in the following table:
 
 | `Queue` Method | Equivalent `Deque` Method |
 | --- | --- |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#add(java.util.Deque.E)` | `https://developer.android.com/reference/kotlin/java/util/Deque#addLast(java.util.Deque.E)` |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#offer(java.util.Deque.E)` | `https://developer.android.com/reference/kotlin/java/util/Deque#offerLast(java.util.Deque.E)` |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#remove()` | `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirst()` |
+| add | addLast |
+| offer | offerLast |
+| remove | removeFirst |
 | --- | --- |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#poll()` | `https://developer.android.com/reference/kotlin/java/util/Deque#pollFirst()` |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#element()` | `https://developer.android.com/reference/kotlin/java/util/Deque#getFirst()` |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#peek()` | `https://developer.android.com/reference/kotlin/java/util/Deque#peekFirst()` |
+| poll | pollFirst |
+| element | getFirst |
+| peek | peekFirst |
 |---|---|
 
-Deques can also be used as LIFO (Last-In-First-Out) stacks. This interface should be used in preference to the legacy `https://developer.android.com/reference/kotlin/java/util/Stack` class. When a deque is used as a stack, elements are pushed and popped from the beginning of the deque. Stack methods are equivalent to `Deque` methods as indicated in the table below:
+Deques can also be used as LIFO (Last-In-First-Out) stacks. This interface should be used in preference to the legacy Stack class. When a deque is used as a stack, elements are pushed and popped from the beginning of the deque. Stack methods are equivalent to `Deque` methods as indicated in the table below:
 
 | Stack Method | Equivalent `Deque` Method |
 | --- | --- |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#push(java.util.Deque.E)` | `https://developer.android.com/reference/kotlin/java/util/Deque#addFirst(java.util.Deque.E)` |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#pop()` | `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirst()` |
-| `https://developer.android.com/reference/kotlin/java/util/Deque#peek()` | `https://developer.android.com/reference/kotlin/java/util/Deque#peekFirst()` |
+| push | addFirst |
+| pop | removeFirst |
+| peek | peekFirst |
 |---|---|
 
-Note that the `https://developer.android.com/reference/kotlin/java/util/Deque#peek()` method works equally well when a deque is used as a queue or a stack; in either case, elements are drawn from the beginning of the deque.
+Note that the peek method works equally well when a deque is used as a queue or a stack; in either case, elements are drawn from the beginning of the deque.
 
-This interface provides two methods to remove interior elements, `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirstOccurrence(kotlin.Any)` and `https://developer.android.com/reference/kotlin/java/util/Deque#removeLastOccurrence(kotlin.Any)`.
+This interface provides two methods to remove interior elements, removeFirstOccurrence and removeLastOccurrence.
 
-Unlike the `https://developer.android.com/reference/kotlin/java/util/List` interface, this interface does not provide support for indexed access to elements.
+Unlike the List interface, this interface does not provide support for indexed access to elements.
 
 While `Deque` implementations are not strictly required to prohibit the insertion of null elements, they are strongly encouraged to do so. Users of any `Deque` implementations that do allow null elements are strongly encouraged *not* to take advantage of the ability to insert nulls. This is so because `null` is used as a special return value by various methods to indicate that the deque is empty.
 
@@ -60,43 +60,43 @@ While `Deque` implementations are not strictly required to prohibit the insertio
 
 | Public methods ||
 |---|---|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#add(java.util.Deque.E)(element: E)` Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and throwing an `IllegalStateException` if no space is currently available. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#addAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Adds all of the elements in the specified collection at the end of this deque, as if by calling `https://developer.android.com/reference/kotlin/java/util/Deque#addLast(java.util.Deque.E)` on each one, in the order that they are returned by the collection's iterator. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#addFirst(java.util.Deque.E)(e: E)` Inserts the specified element at the front of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | add Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and throwing an `IllegalStateException` if no space is currently available. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | addAll Adds all of the elements in the specified collection at the end of this deque, as if by calling addLast on each one, in the order that they are returned by the collection's iterator. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addFirst Inserts the specified element at the front of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#addLast(java.util.Deque.E)(e: E)` Inserts the specified element at the end of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#contains(java.util.Deque.E)(element: E?)` Returns `true` if this deque contains the specified element. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/Deque#descendingIterator()()` Returns an iterator over the elements in this deque in reverse sequential order. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addLast Inserts the specified element at the end of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contains Returns `true` if this deque contains the specified element. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | descendingIterator Returns an iterator over the elements in this deque in reverse sequential order. |
 | --- | --- |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#element()()` Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque). |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#getFirst()()` Retrieves, but does not remove, the first element of this deque. |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#getLast()()` Retrieves, but does not remove, the last element of this deque. |
+| abstract E | element Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque). |
+| abstract E | getFirst Retrieves, but does not remove, the first element of this deque. |
+| abstract E | getLast Retrieves, but does not remove, the last element of this deque. |
 | --- | --- |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/Deque#iterator()()` Returns an iterator over the elements in this deque in proper sequence. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#offer(java.util.Deque.E)(e: E)` Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and `false` if no space is currently available. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#offerFirst(java.util.Deque.E)(e: E)` Inserts the specified element at the front of this deque unless it would violate capacity restrictions. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | iterator Returns an iterator over the elements in this deque in proper sequence. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offer Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and `false` if no space is currently available. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offerFirst Inserts the specified element at the front of this deque unless it would violate capacity restrictions. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#offerLast(java.util.Deque.E)(e: E)` Inserts the specified element at the end of this deque unless it would violate capacity restrictions. |
-| abstract E? | `https://developer.android.com/reference/kotlin/java/util/Deque#peek()()` Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
-| abstract E? | `https://developer.android.com/reference/kotlin/java/util/Deque#peekFirst()()` Retrieves, but does not remove, the first element of this deque, or returns `null` if this deque is empty. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | offerLast Inserts the specified element at the end of this deque unless it would violate capacity restrictions. |
+| abstract E? | peek Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
+| abstract E? | peekFirst Retrieves, but does not remove, the first element of this deque, or returns `null` if this deque is empty. |
 | --- | --- |
-| abstract E? | `https://developer.android.com/reference/kotlin/java/util/Deque#peekLast()()` Retrieves, but does not remove, the last element of this deque, or returns `null` if this deque is empty. |
-| abstract E? | `https://developer.android.com/reference/kotlin/java/util/Deque#poll()()` Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
-| abstract E? | `https://developer.android.com/reference/kotlin/java/util/Deque#pollFirst()()` Retrieves and removes the first element of this deque, or returns `null` if this deque is empty. |
+| abstract E? | peekLast Retrieves, but does not remove, the last element of this deque, or returns `null` if this deque is empty. |
+| abstract E? | poll Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty. |
+| abstract E? | pollFirst Retrieves and removes the first element of this deque, or returns `null` if this deque is empty. |
 | --- | --- |
-| abstract E? | `https://developer.android.com/reference/kotlin/java/util/Deque#pollLast()()` Retrieves and removes the last element of this deque, or returns `null` if this deque is empty. |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#pop()()` Pops an element from the stack represented by this deque. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#push(java.util.Deque.E)(e: E)` Pushes an element onto the stack represented by this deque (in other words, at the head of this deque) if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. |
+| abstract E? | pollLast Retrieves and removes the last element of this deque, or returns `null` if this deque is empty. |
+| abstract E | pop Pops an element from the stack represented by this deque. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | push Pushes an element onto the stack represented by this deque (in other words, at the head of this deque) if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. |
 | --- | --- |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#remove()()` Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#remove(java.util.Deque.E)(element: E?)` Removes the first occurrence of the specified element from this deque. |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirst()()` Retrieves and removes the first element of this deque. |
+| abstract E | remove Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | remove Removes the first occurrence of the specified element from this deque. |
+| abstract E | removeFirst Retrieves and removes the first element of this deque. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirstOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the first occurrence of the specified element from this deque. |
-| abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#removeLast()()` Retrieves and removes the last element of this deque. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#removeLastOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the last occurrence of the specified element from this deque. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeFirstOccurrence Removes the first occurrence of the specified element from this deque. |
+| abstract E | removeLast Retrieves and removes the last element of this deque. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeLastOccurrence Removes the last occurrence of the specified element from this deque. |
 | --- | --- |
-| open [Deque](Deque.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/Deque#reversed()()` Returns a reverse-ordered [view](Collection.md) of this collection. |
+| open [Deque](Deque.md)\<E\> | reversed Returns a reverse-ordered [view](Collection.md) of this collection. |
 
 | Properties ||
 |---|---|
@@ -112,9 +112,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun add(element: E): Boolean
 ```
 
-Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and throwing an `IllegalStateException` if no space is currently available. When using a capacity-restricted deque, it is generally preferable to use `https://developer.android.com/reference/kotlin/java/util/Deque#offer(java.util.Deque.E)`.
+Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and throwing an `IllegalStateException` if no space is currently available. When using a capacity-restricted deque, it is generally preferable to use offer.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#addLast(java.util.Deque.E)`.
+This method is equivalent to addLast.
 
 | Parameters ||
 |---|---|
@@ -122,7 +122,7 @@ This method is equivalent to `https://developer.android.com/reference/kotlin/jav
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by `https://developer.android.com/reference/kotlin/java/util/Collection#add(java.util.Collection.E)`) |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` (as specified by add) |
 
 | Exceptions ||
 |---|---|
@@ -141,9 +141,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun addAll(elements: Collection<E>): Boolean
 ```
 
-Adds all of the elements in the specified collection at the end of this deque, as if by calling `https://developer.android.com/reference/kotlin/java/util/Deque#addLast(java.util.Deque.E)` on each one, in the order that they are returned by the collection's iterator.
+Adds all of the elements in the specified collection at the end of this deque, as if by calling addLast on each one, in the order that they are returned by the collection's iterator.
 
-When using a capacity-restricted deque, it is generally preferable to call `https://developer.android.com/reference/kotlin/java/util/Deque#offer(java.util.Deque.E)` separately on each element.
+When using a capacity-restricted deque, it is generally preferable to call offer separately on each element.
 
 An exception encountered while trying to add an element may result in only some of the elements having been successfully added when the associated exception is thrown.
 
@@ -172,7 +172,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun addFirst(e: E): Unit
 ```
 
-Inserts the specified element at the front of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. When using a capacity-restricted deque, it is generally preferable to use method `https://developer.android.com/reference/kotlin/java/util/Deque#offerFirst(java.util.Deque.E)`.
+Inserts the specified element at the front of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. When using a capacity-restricted deque, it is generally preferable to use method offerFirst.
 
 | Parameters ||
 |---|---|
@@ -195,9 +195,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun addLast(e: E): Unit
 ```
 
-Inserts the specified element at the end of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. When using a capacity-restricted deque, it is generally preferable to use method `https://developer.android.com/reference/kotlin/java/util/Deque#offerLast(java.util.Deque.E)`.
+Inserts the specified element at the end of this deque if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available. When using a capacity-restricted deque, it is generally preferable to use method offerLast.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#add(java.util.Deque.E)`.
+This method is equivalent to add.
 
 | Parameters ||
 |---|---|
@@ -257,9 +257,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun element(): E
 ```
 
-Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque). This method differs from `https://developer.android.com/reference/kotlin/java/util/Deque#peek()` only in that it throws an exception if this deque is empty.
+Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque). This method differs from peek only in that it throws an exception if this deque is empty.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#getFirst()`.
+This method is equivalent to getFirst.
 
 | Return ||
 |---|---|
@@ -277,7 +277,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getFirst(): E
 ```
 
-Retrieves, but does not remove, the first element of this deque. This method differs from `https://developer.android.com/reference/kotlin/java/util/Deque#peekFirst()` only in that it throws an exception if this deque is empty.
+Retrieves, but does not remove, the first element of this deque. This method differs from peekFirst only in that it throws an exception if this deque is empty.
 
 | Return ||
 |---|---|
@@ -295,7 +295,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getLast(): E
 ```
 
-Retrieves, but does not remove, the last element of this deque. This method differs from `https://developer.android.com/reference/kotlin/java/util/Deque#peekLast()` only in that it throws an exception if this deque is empty.
+Retrieves, but does not remove, the last element of this deque. This method differs from peekLast only in that it throws an exception if this deque is empty.
 
 | Return ||
 |---|---|
@@ -327,9 +327,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun offer(e: E): Boolean
 ```
 
-Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and `false` if no space is currently available. When using a capacity-restricted deque, this method is generally preferable to the `https://developer.android.com/reference/kotlin/java/util/Deque#add(java.util.Deque.E)` method, which can fail to insert an element only by throwing an exception.
+Inserts the specified element into the queue represented by this deque (in other words, at the tail of this deque) if it is possible to do so immediately without violating capacity restrictions, returning `true` upon success and `false` if no space is currently available. When using a capacity-restricted deque, this method is generally preferable to the add method, which can fail to insert an element only by throwing an exception.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#offerLast(java.util.Deque.E)`.
+This method is equivalent to offerLast.
 
 | Parameters ||
 |---|---|
@@ -354,7 +354,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun offerFirst(e: E): Boolean
 ```
 
-Inserts the specified element at the front of this deque unless it would violate capacity restrictions. When using a capacity-restricted deque, this method is generally preferable to the `https://developer.android.com/reference/kotlin/java/util/Deque#addFirst(java.util.Deque.E)` method, which can fail to insert an element only by throwing an exception.
+Inserts the specified element at the front of this deque unless it would violate capacity restrictions. When using a capacity-restricted deque, this method is generally preferable to the addFirst method, which can fail to insert an element only by throwing an exception.
 
 | Parameters ||
 |---|---|
@@ -379,7 +379,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun offerLast(e: E): Boolean
 ```
 
-Inserts the specified element at the end of this deque unless it would violate capacity restrictions. When using a capacity-restricted deque, this method is generally preferable to the `https://developer.android.com/reference/kotlin/java/util/Deque#addLast(java.util.Deque.E)` method, which can fail to insert an element only by throwing an exception.
+Inserts the specified element at the end of this deque unless it would violate capacity restrictions. When using a capacity-restricted deque, this method is generally preferable to the addLast method, which can fail to insert an element only by throwing an exception.
 
 | Parameters ||
 |---|---|
@@ -406,7 +406,7 @@ abstract fun peek(): E?
 
 Retrieves, but does not remove, the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#peekFirst()`.
+This method is equivalent to peekFirst.
 
 | Return ||
 |---|---|
@@ -450,7 +450,7 @@ abstract fun poll(): E?
 
 Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque), or returns `null` if this deque is empty.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#pollFirst()`.
+This method is equivalent to pollFirst.
 
 | Return ||
 |---|---|
@@ -494,7 +494,7 @@ abstract fun pop(): E
 
 Pops an element from the stack represented by this deque. In other words, removes and returns the first element of this deque.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirst()`.
+This method is equivalent to removeFirst.
 
 | Return ||
 |---|---|
@@ -514,7 +514,7 @@ abstract fun push(e: E): Unit
 
 Pushes an element onto the stack represented by this deque (in other words, at the head of this deque) if it is possible to do so immediately without violating capacity restrictions, throwing an `IllegalStateException` if no space is currently available.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#addFirst(java.util.Deque.E)`.
+This method is equivalent to addFirst.
 
 | Parameters ||
 |---|---|
@@ -536,9 +536,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun remove(): E
 ```
 
-Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque). This method differs from `https://developer.android.com/reference/kotlin/java/util/Deque#poll()` only in that it throws an exception if this deque is empty.
+Retrieves and removes the head of the queue represented by this deque (in other words, the first element of this deque). This method differs from poll only in that it throws an exception if this deque is empty.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirst()`.
+This method is equivalent to removeFirst.
 
 | Return ||
 |---|---|
@@ -558,7 +558,7 @@ abstract fun remove(element: E?): Boolean
 
 Removes the first occurrence of the specified element from this deque. If the deque does not contain the element, it is unchanged. More formally, removes the first element `e` such that `Objects.equals(o, e)` (if such an element exists). Returns `true` if this deque contained the specified element (or equivalently, if this deque changed as a result of the call).
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Deque#removeFirstOccurrence(kotlin.Any)`.
+This method is equivalent to removeFirstOccurrence.
 
 | Parameters ||
 |---|---|
@@ -583,7 +583,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun removeFirst(): E
 ```
 
-Retrieves and removes the first element of this deque. This method differs from `https://developer.android.com/reference/kotlin/java/util/Deque#pollFirst()` only in that it throws an exception if this deque is empty.
+Retrieves and removes the first element of this deque. This method differs from pollFirst only in that it throws an exception if this deque is empty.
 
 | Return ||
 |---|---|
@@ -625,7 +625,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun removeLast(): E
 ```
 
-Retrieves and removes the last element of this deque. This method differs from `https://developer.android.com/reference/kotlin/java/util/Deque#pollLast()` only in that it throws an exception if this deque is empty.
+Retrieves and removes the last element of this deque. This method differs from pollLast only in that it throws an exception if this deque is empty.
 
 | Return ||
 |---|---|

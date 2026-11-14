@@ -17,7 +17,7 @@ HealthConnect is an offline, on-device storage that unifies data from multiple d
 
 - APIs to insert data of various types into the system.
 
-The basic unit of data in HealthConnect is represented as a `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` object, which is the base class for all the other data types such as `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/StepsRecord`.
+The basic unit of data in HealthConnect is represented as a Record object, which is the base class for all the other data types such as StepsRecord.
 
 ## Summary
 
@@ -34,39 +34,39 @@ The basic unit of data in HealthConnect is represented as a `https://developer.a
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregate(android.health.connect.AggregateRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest<T>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsResponse<T>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Get aggregations corresponding to `request`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregateGroupByDuration(android.health.connect.AggregateRecordsRequest,%20java.time.Duration,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest<T>, duration: https://developer.android.com/reference/kotlin/java/time/Duration.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByDurationResponse<T>!>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Get aggregations corresponding to `request`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregateGroupByPeriod(android.health.connect.AggregateRecordsRequest,%20java.time.Period,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsRequest<T>, period: https://developer.android.com/reference/kotlin/java/time/Period.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByPeriodResponse<T>!>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Get aggregations corresponding to `request`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | aggregate Get aggregations corresponding to `request`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | aggregateGroupByDuration Get aggregations corresponding to `request`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | aggregateGroupByPeriod Get aggregations corresponding to `request`. |
 | --- | --- |
-| open [Intent](../android.content/Intent.md) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)(request: https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest)` Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to launch a Health Connect flow where users can: - **Discover compatible data sources:** See other installed data sources that have not yet granted permissions to write some of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` classes the calling app can read. - **Grant missing permissions:** Easily grant these discovered data sources the necessary write permissions for health data record types that haven't been granted yet. Only `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` types the calling package is permitted to read are being considered. This flow helps users connect new data sources to Health Connect, by matching record types readable by the calling package to appropriate writing data sources. <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMedicalDataSource(android.health.connect.CreateMedicalDataSourceRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Creates a `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` in HealthConnect based on the `https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest` request values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#deleteMedicalDataSourceWithData(kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Deletes a `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` and all data linked to it. |
+| open [Intent](../android.content/Intent.md) | createMatchmakingIntent Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to launch a Health Connect flow where users can: - **Discover compatible data sources:** See other installed data sources that have not yet granted permissions to write some of the Record classes the calling app can read. - **Grant missing permissions:** Easily grant these discovered data sources the necessary write permissions for health data record types that haven't been granted yet. Only Record types the calling package is permitted to read are being considered. This flow helps users connect new data sources to Health Connect, by matching record types readable by the calling package to appropriate writing data sources. <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createMedicalDataSource Creates a MedicalDataSource in HealthConnect based on the CreateMedicalDataSourceRequest request values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteMedicalDataSourceWithData Deletes a MedicalDataSource and all data linked to it. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#deleteMedicalResources(android.health.connect.DeleteMedicalResourcesRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Deletes `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s based on given filters in `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest` |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#deleteMedicalResources(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(ids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Deletes a list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s by the provided list of `https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId`s. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#deleteRecords(java.lang.Class,%20android.health.connect.TimeRangeFilter,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(recordType: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record!>, timeRangeFilter: https://developer.android.com/reference/kotlin/android/health/connect/TimeRangeFilter, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Deletes records based on the `https://developer.android.com/reference/kotlin/android/health/connect/TimeRangeFilter`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteMedicalResources Deletes MedicalResources based on given filters in DeleteMedicalResourcesRequest |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteMedicalResources Deletes a list of MedicalResources by the provided list of MedicalResourceIds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteRecords Deletes records based on the TimeRangeFilter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#deleteRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(recordIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Deletes records based on `https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogTokenResponse!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Get token for {HealthConnectManager#getChangeLogs}. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(changeLogsRequest: https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/changelog/ChangeLogsResponse!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Get change logs post the time when `token` was generated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | deleteRecords Deletes records based on RecordIdFilter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChangeLogToken Get token for {HealthConnectManager#getChangeLogs}. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChangeLogs Get change logs post the time when `token` was generated. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getCurrentDeviceDataSource(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Retrieves the `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource` for the current device. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getDeviceDataSourceCapabilities(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSourceCapabilities!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Returns a set of record type classes that device data sources are capable of providing. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getDeviceDataSources(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/GetDeviceDataSourcesResponse!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Retrieves the list of all `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource`s. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getCurrentDeviceDataSource Retrieves the DeviceDataSource for the current device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getDeviceDataSourceCapabilities Returns a set of record type classes that device data sources are capable of providing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getDeviceDataSources Retrieves the list of all DeviceDataSources. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getMedicalDataSources(android.health.connect.GetMedicalDataSourcesRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/GetMedicalDataSourcesRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource!>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Returns the requested `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource`s. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getMedicalDataSources(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(ids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource!>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Returns `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource`s for the provided list of IDs. |
-| open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java.lang/Class.md)\<out [Record](../android.health.connect.datatypes/Record.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getPermissionSensitiveDeviceDataSourceCapabilities()()` Returns the set of data types which are excluded from the output of #getDeviceDataSourceCapabilities unless the caller holds the read permission for those data types. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getMedicalDataSources Returns the requested MedicalDataSources. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getMedicalDataSources Returns MedicalDataSources for the provided list of IDs. |
+| open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Class](../java.lang/Class.md)\<out [Record](../android.health.connect.datatypes/Record.md)!\>!\> | getPermissionSensitiveDeviceDataSourceCapabilities Returns the set of data types which are excluded from the output of #getDeviceDataSourceCapabilities unless the caller holds the read permission for those data types. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#insertRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(records: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/InsertRecordsResponse!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Inserts `records` into the HealthConnect database. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#isMatchmakingPossible(android.health.connect.MatchmakingRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingResponse!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Checks if launching the intent returned by `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)` with the same arguments will result in showing at least one matching data source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readMedicalResources(android.health.connect.ReadMedicalResourcesRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Reads `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s based on `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest` or `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | insertRecords Inserts `records` into the HealthConnect database. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | isMatchmakingPossible Checks if launching the intent returned by createMatchmakingIntent with the same arguments will result in showing at least one matching data source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readMedicalResources Reads MedicalResources based on ReadMedicalResourcesInitialRequest or ReadMedicalResourcesPageRequest. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readMedicalResources(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(ids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource!>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Reads `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s based on a list of `https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId`s. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequest<T>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsResponse<T>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` API to read records based on `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters` or `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingIds` |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#updateRecords(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(records: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Updates `records` into the HealthConnect database. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readMedicalResources Reads MedicalResources based on a list of MedicalResourceIds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readRecords API to read records based on ReadRecordsRequestUsingFilters or ReadRecordsRequestUsingIds |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateRecords Updates `records` into the HealthConnect database. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#upsertMedicalResources(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(requests: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource!>!, https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException!>)` Inserts or updates a list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s into the HealthConnect database using `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | upsertMedicalResources Inserts or updates a list of MedicalResources into the HealthConnect database using UpsertMedicalResourceRequest. |
 
 ## Constants
 
@@ -185,15 +185,15 @@ Get aggregations corresponding to `request`.
 
 | Parameters ||
 |---|---|
-| `<T>` | Result type of the aggregation. Note: This type is embedded in the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType` as `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType` are typed in nature. Only `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType`s that are of same type T can be queried together |
+| `<T>` | Result type of the aggregation. Note: This type is embedded in the AggregationType as AggregationType are typed in nature. Only AggregationTypes that are of same type T can be queried together |
 | `request` | [AggregateRecordsRequest](AggregateRecordsRequest.md)\<T\>: request for different aggregation. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AggregateRecordsResponse](AggregateRecordsResponse.md)\<T\>!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsResponse#get(android.health.connect.datatypes.AggregationType)`
+- get
 
 ### aggregateGroupByDuration
 
@@ -213,16 +213,16 @@ Get aggregations corresponding to `request`. Use this API if results are to be g
 
 | Parameters ||
 |---|---|
-| `<T>` | Result type of the aggregation. Note: This type is embedded in the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType` as `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType` are typed in nature. Only `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType`s that are of same type T can be queried together |
+| `<T>` | Result type of the aggregation. Note: This type is embedded in the AggregationType as AggregationType are typed in nature. Only AggregationTypes that are of same type T can be queried together |
 | `request` | [AggregateRecordsRequest](AggregateRecordsRequest.md)\<T\>: request for different aggregation. This value cannot be `null`. |
 | `duration` | [Duration](../java.time/Duration.md): Duration on which to group by results. This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AggregateRecordsGroupedByDurationResponse](AggregateRecordsGroupedByDurationResponse.md)\<T\>!\>!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregateGroupByPeriod(android.health.connect.AggregateRecordsRequest,%20java.time.Period,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+- aggregateGroupByPeriod
 
 ### aggregateGroupByPeriod
 
@@ -242,17 +242,17 @@ Get aggregations corresponding to `request`. Use this API if results are to be g
 
 | Parameters ||
 |---|---|
-| `<T>` | Result type of the aggregation. Note: This type is embedded in the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType` as `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType` are typed in nature. Only `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/AggregationType`s that are of same type T can be queried together |
+| `<T>` | Result type of the aggregation. Note: This type is embedded in the AggregationType as AggregationType are typed in nature. Only AggregationTypes that are of same type T can be queried together |
 | `request` | [AggregateRecordsRequest](AggregateRecordsRequest.md)\<T\>: Request for different aggregation. This value cannot be `null`. |
 | `period` | [Period](../java.time/Period.md): Period on which to group by results. This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AggregateRecordsGroupedByPeriodResponse](AggregateRecordsGroupedByPeriodResponse.md)\<T\>!\>!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/health/connect/AggregateRecordsGroupedByPeriodResponse#get(android.health.connect.datatypes.AggregationType)`
-- `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#aggregateGroupByDuration(android.health.connect.AggregateRecordsRequest,%20java.time.Duration,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+- get
+- aggregateGroupByDuration
 
 ### createMatchmakingIntent
 
@@ -265,23 +265,23 @@ open fun createMatchmakingIntent(request: MatchmakingRequest): Intent
 
 Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to launch a Health Connect flow where users can:
 
-- **Discover compatible data sources:** See other installed data sources that have not yet granted permissions to write some of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` classes the calling app can read.
-- **Grant missing permissions:** Easily grant these discovered data sources the necessary write permissions for health data record types that haven't been granted yet. Only `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` types the calling package is permitted to read are being considered.
+- **Discover compatible data sources:** See other installed data sources that have not yet granted permissions to write some of the Record classes the calling app can read.
+- **Grant missing permissions:** Easily grant these discovered data sources the necessary write permissions for health data record types that haven't been granted yet. Only Record types the calling package is permitted to read are being considered.
 
 This flow helps users connect new data sources to Health Connect, by matching record types readable by the calling package to appropriate writing data sources.
 
 <br />
 
-**How to launch this Intent** This intent must be launched using the androidx.activity.result.ActivityResultLauncher with an appropriate contract (e.g., androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult), or the `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` API. It is not designed to be used with a android.app.Activity#startActivity(android.content.Intent) call. The launched activity may return a result code (e.g., `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`) indicating the user's interaction with the flow:
+**How to launch this Intent** This intent must be launched using the androidx.activity.result.ActivityResultLauncher with an appropriate contract (e.g., androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult), or the startActivityForResult API. It is not designed to be used with a android.app.Activity#startActivity(android.content.Intent) call. The launched activity may return a result code (e.g., `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`) indicating the user's interaction with the flow:
 
 - `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`: The user has successfully granted permissions to at least one application.
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`: The user has canceled the flow, either by closing the activity or by not granting any permissions. `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` can also occur if the intent was launched in a discouraged way when no matching apps are available. This can be avoided by ensuring `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#isMatchmakingPossible(android.health.connect.MatchmakingRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` returns `true` before launching the intent.
+- `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`: The user has canceled the flow, either by closing the activity or by not granting any permissions. `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` can also occur if the intent was launched in a discouraged way when no matching apps are available. This can be avoided by ensuring isMatchmakingPossible returns `true` before launching the intent.
 
 The launched flow will only show packages that have declared, but not yet been granted write permissions (that have not been denied by the user twice) for at least one of the relevant `recordTypes`, and for the relevant included/excluded data sources:
 
 - **If `recordTypes` is not empty:** The launched screen will focus on data sources capable of writing data for at least one of the specified health `recordTypes`. The user can then grant write permissions to these discovered data sources specifically for these types. Record types the calling app does not have permission to read are considered ignored.
 - **If `recordTypes` is empty:** The system first determines all health data record types for which the calling package has already been granted read permission. The launched flow will then display data sources capable of writing any of these record types, where the user can grant write permissions for these types.
-- **If `includedDataSources` is not empty:** Only data sources whose package names are present in this set are considered for matchmaking. If a data source is an app, the calling app must have visibility of the package name (e.g. declared in the manifest inside `<queries>`). If a data source is a device, the calling app does not need to declare it in the manifest, but should identify available devices via `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getDeviceDataSources(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+- **If `includedDataSources` is not empty:** Only data sources whose package names are present in this set are considered for matchmaking. If a data source is an app, the calling app must have visibility of the package name (e.g. declared in the manifest inside `<queries>`). If a data source is a device, the calling app does not need to declare it in the manifest, but should identify available devices via getDeviceDataSources.
 - **If `excludedDataSources` is not empty:** Data sources whose package names are present in this set are excluded from matchmaking. As with inclusion, app data sources must be visible to the calling app, while device data sources do not require manifest declaration.
 - **If both are empty:** All compatible data sources are considered.
 
@@ -289,11 +289,11 @@ Note: `includedDataSources` and `excludedDataSources` cannot both be non-empty a
 
 | Parameters ||
 |---|---|
-| `request` | [MatchmakingRequest](MatchmakingRequest.md): A `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest` that contains: - A non-null set of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` classes. If non-empty, the flow focuses on these specific types. If empty, the flow focuses on types for which the calling package has permission to read. - A non-null set of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` to include in matchmaking. If non-empty, only specified data origins are considered. App data origins must be visible to the calling app (declared in `<queries>`). Device data origins (from `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getDeviceDataSources(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`) do not require manifest declaration. - A non-null set of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` to exclude from matchmaking. If non-empty, specified data origins are EXCLUDED. App data origins must be visible to the calling app. Device data origins do not require manifest declaration. |
+| `request` | [MatchmakingRequest](MatchmakingRequest.md): A MatchmakingRequest that contains: - A non-null set of Record classes. If non-empty, the flow focuses on these specific types. If empty, the flow focuses on types for which the calling package has permission to read. - A non-null set of DataOrigin to include in matchmaking. If non-empty, only specified data origins are considered. App data origins must be visible to the calling app (declared in `<queries>`). Device data origins (from getDeviceDataSources) do not require manifest declaration. - A non-null set of DataOrigin to exclude from matchmaking. If non-empty, specified data origins are EXCLUDED. App data origins must be visible to the calling app. Device data origins do not require manifest declaration. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Intent.html#` | An `https://developer.android.com/reference/kotlin/android/content/Intent.html#` configured to show the flow for discovering and managing write permissions for matching data origins. This intent must be launched using `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)`. This value cannot be `null`. |
+| `https://developer.android.com/reference/kotlin/android/content/Intent.html#` | An `https://developer.android.com/reference/kotlin/android/content/Intent.html#` configured to show the flow for discovering and managing write permissions for matching data origins. This intent must be launched using startActivityForResult. This value cannot be `null`. |
 
 **See Also**
 
@@ -310,13 +310,13 @@ open fun createMedicalDataSource(
 ): Unit
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` in HealthConnect based on the `https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest` request values.
+Creates a MedicalDataSource in HealthConnect based on the CreateMedicalDataSourceRequest request values.
 
 Medical data is represented using the [Fast Healthcare Interoperability Resources (FHIR)](https://hl7.org/fhir/) standard.
 
-A `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` needs to be created before any `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s for that source can be inserted. Separate `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource`s should be created for medical records coming from different sources (e.g. different FHIR endpoints, different healthcare systems), unless the data has been reconciled and all records have a unique combination of resource type and resource id.
+A MedicalDataSource needs to be created before any MedicalResources for that source can be inserted. Separate MedicalDataSources should be created for medical records coming from different sources (e.g. different FHIR endpoints, different healthcare systems), unless the data has been reconciled and all records have a unique combination of resource type and resource id.
 
-The `https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest.Builder#setDisplayName(kotlin.String)` must be unique per app, and `https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest.Builder#setFhirVersion(android.health.connect.datatypes.FhirVersion)` FHIR version} must be a version supported by Health Connect, as documented on the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion`. See `https://developer.android.com/reference/kotlin/android/health/connect/CreateMedicalDataSourceRequest.Builder#setFhirBaseUri(android.net.Uri)` for more details on the FHIR base URI. 
+The setDisplayName must be unique per app, and setFhirVersion FHIR version} must be a version supported by Health Connect, as documented on the FhirVersion. See setFhirBaseUri for more details on the FHIR base URI. 
 Requires `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#WRITE_MEDICAL_DATA:kotlin.String`
 
 | Parameters ||
@@ -343,7 +343,7 @@ open fun deleteMedicalDataSourceWithData(
 ): Unit
 ```
 
-Deletes a `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` and all data linked to it.
+Deletes a MedicalDataSource and all data linked to it.
 
 If the provided data source `id` is either invalid, or does not exist, or owned by another apps, the caller will receive an exception with code `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INVALID_ARGUMENT:kotlin.Int` via `callback.onError()`.
 
@@ -375,7 +375,7 @@ open fun deleteMedicalResources(
 ): Unit
 ```
 
-Deletes `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s based on given filters in `https://developer.android.com/reference/kotlin/android/health/connect/DeleteMedicalResourcesRequest`
+Deletes MedicalResources based on given filters in DeleteMedicalResourcesRequest
 
 Regarding permissions:
 
@@ -394,7 +394,7 @@ Requires `https://developer.android.com/reference/kotlin/android/health/connect/
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `request` contains unsupported medical resource types or invalid `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` IDs. |
+| `java.lang.IllegalArgumentException` | if `request` contains unsupported medical resource types or invalid MedicalDataSource IDs. |
 
 ### deleteMedicalResources
 
@@ -409,7 +409,7 @@ open fun deleteMedicalResources(
 ): Unit
 ```
 
-Deletes a list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s by the provided list of `https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId`s.
+Deletes a list of MedicalResources by the provided list of MedicalResourceIds.
 
 - If any ID in `ids` is invalid, the API will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`, and nothing will be deleted.
 - If any ID in `ids` does not exist, that ID will be ignored, while deletion on other IDs will be performed.
@@ -445,7 +445,7 @@ open fun deleteRecords(
 ): Unit
 ```
 
-Deletes records based on the `https://developer.android.com/reference/kotlin/android/health/connect/TimeRangeFilter`.
+Deletes records based on the TimeRangeFilter.
 
 Deletions are performed in a transaction i.e. either all will be deleted or none
 
@@ -470,7 +470,7 @@ open fun deleteRecords(
 ): Unit
 ```
 
-Deletes records based on `https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter`.
+Deletes records based on RecordIdFilter.
 
 Deletions are performed in a transaction i.e. either all will be deleted or none
 
@@ -528,14 +528,14 @@ Get change logs post the time when `token` was generated.
 
 | Parameters ||
 |---|---|
-| `changeLogsRequest` | [ChangeLogsRequest](../android.health.connect.changelog/ChangeLogsRequest.md): The token from `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `changeLogsRequest` | [ChangeLogsRequest](../android.health.connect.changelog/ChangeLogsRequest.md): The token from getChangeLogToken. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ChangeLogsResponse](../android.health.connect.changelog/ChangeLogsResponse.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+- getChangeLogToken
 
 ### getCurrentDeviceDataSource
 
@@ -549,13 +549,13 @@ open fun getCurrentDeviceDataSource(
 ): Unit
 ```
 
-Retrieves the `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource` for the current device.
+Retrieves the DeviceDataSource for the current device.
 
 The caller must hold at least one Health Connect read permission in order to call this method.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [DeviceDataSource](DeviceDataSource.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 
 ### getDeviceDataSourceCapabilities
@@ -574,11 +574,11 @@ Returns a set of record type classes that device data sources are capable of pro
 
 Use this method to avoid making unnecessary permission requests when reading device data in case the data type is not provided by any device data sources.
 
-This will filter out any permission sensitive data types the caller does not hold read permissions for. Data types belonging to `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#getPermissionSensitiveDeviceDataSourceCapabilities()` are excluded from the response unless the caller holds read permissions for those data types.
+This will filter out any permission sensitive data types the caller does not hold read permissions for. Data types belonging to getPermissionSensitiveDeviceDataSourceCapabilities are excluded from the response unless the caller holds read permissions for those data types.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [DeviceDataSourceCapabilities](../android/health/connect/DeviceDataSourceCapabilities.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 
 ### getDeviceDataSources
@@ -593,13 +593,13 @@ open fun getDeviceDataSources(
 ): Unit
 ```
 
-Retrieves the list of all `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource`s.
+Retrieves the list of all DeviceDataSources.
 
 The returned list includes all devices that have been advertised by device data providers, filtered based on the caller's permissions. A device is included if the caller holds the READ permission for at least one of the data types supported by the device. Other data types supported by the device that the caller does not have permission for will nonetheless be included.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetDeviceDataSourcesResponse](../android/health/connect/GetDeviceDataSourcesResponse.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 
 ### getMedicalDataSources
@@ -615,13 +615,13 @@ open fun getMedicalDataSources(
 ): Unit
 ```
 
-Returns the requested `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource`s.
+Returns the requested MedicalDataSources.
 
 Number of data sources returned by this API will depend based on below factors:
 
-- If an empty `https://developer.android.com/reference/kotlin/android/health/connect/GetMedicalDataSourcesRequest#getPackageNames()` is passed, all permitted data sources from all apps will be returned. See below.
-- If any package name in the `https://developer.android.com/reference/kotlin/android/health/connect/GetMedicalDataSourcesRequest#getPackageNames()` is invalid, the API will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
-- If a non-empty `https://developer.android.com/reference/kotlin/android/health/connect/GetMedicalDataSourcesRequest#getPackageNames()` is specified in the request, then only the permitted data sources created by those packages will be returned. See below.
+- If an empty getPackageNames is passed, all permitted data sources from all apps will be returned. See below.
+- If any package name in the getPackageNames is invalid, the API will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
+- If a non-empty getPackageNames is specified in the request, then only the permitted data sources created by those packages will be returned. See below.
 
 There is no specific read permission for getting data sources. Instead permission to read data sources is based on whether the caller has permission to read the data currently linked to that data source. Being permitted to get data sources is dependent on the following logic, in priority order, earlier statements take precedence.
 
@@ -656,7 +656,7 @@ open fun getMedicalDataSources(
 ): Unit
 ```
 
-Returns `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource`s for the provided list of IDs.
+Returns MedicalDataSources for the provided list of IDs.
 
 The number and order of medical data sources returned by this API is not guaranteed. The number will depend on the factors below:
 
@@ -713,12 +713,12 @@ open fun insertRecords(
 ): Unit
 ```
 
-Inserts `records` into the HealthConnect database. The records returned in `https://developer.android.com/reference/kotlin/android/health/connect/InsertRecordsResponse` contains the unique IDs of the input records. The values are in same order as `records`. In case of an error or a permission failure the HealthConnect service, `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)` will be invoked with a `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException`.
+Inserts `records` into the HealthConnect database. The records returned in InsertRecordsResponse contains the unique IDs of the input records. The values are in same order as `records`. In case of an error or a permission failure the HealthConnect service, onError will be invoked with a HealthConnectException.
 
 | Parameters ||
 |---|---|
 | `records` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](../android.health.connect.datatypes/Record.md)!\>: list of records to be inserted. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [InsertRecordsResponse](InsertRecordsResponse.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 | --- | --- |
 
@@ -739,23 +739,23 @@ open fun isMatchmakingPossible(
 ): Unit
 ```
 
-Checks if launching the intent returned by `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)` with the same arguments will result in showing at least one matching data source.
+Checks if launching the intent returned by createMatchmakingIntent with the same arguments will result in showing at least one matching data source.
 
-- Returns `true` if the flow launched by the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` from `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)` would display at least one matching data source, allowing the user to take action.
+- Returns `true` if the flow launched by the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` from createMatchmakingIntent would display at least one matching data source, allowing the user to take action.
 - Returns `false` if the launched flow would immediately return `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` because there are no relevant data sources to show.
 
 <br />
 
 | Parameters ||
 |---|---|
-| `request` | [MatchmakingRequest](MatchmakingRequest.md): A non-null `https://developer.android.com/reference/kotlin/android/health/connect/MatchmakingRequest` that contains a set of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` classes. See description at `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): A non-null `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the `callback` will be invoked. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `request` | [MatchmakingRequest](MatchmakingRequest.md): A non-null MatchmakingRequest that contains a set of Record classes. See description at createMatchmakingIntent. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): A non-null `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the `callback` will be invoked. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MatchmakingResponse](../android/health/connect/MatchmakingResponse.md)!, [HealthConnectException](HealthConnectException.md)!\>: A non-null `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` to receive the result. The `onResult` method will be called with a boolean indicating if there are matching writing data sources to show. The `onError` method will be called if an error occurs. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMatchmakingIntent(android.health.connect.MatchmakingRequest)`
+- createMatchmakingIntent
 
 ### readMedicalResources
 
@@ -770,7 +770,7 @@ open fun readMedicalResources(
 ): Unit
 ```
 
-Reads `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s based on `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest` or `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest`.
+Reads MedicalResources based on ReadMedicalResourcesInitialRequest or ReadMedicalResourcesPageRequest.
 
 Being permitted to read medical resources is dependent on the following logic, in priority order, earlier statements take precedence.
 
@@ -782,14 +782,14 @@ Being permitted to read medical resources is dependent on the following logic, i
 
 | Parameters ||
 |---|---|
-| `request` | [ReadMedicalResourcesRequest](ReadMedicalResourcesRequest.md): The read request `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest` or `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest`. This value cannot be `null`. |
+| `request` | [ReadMedicalResourcesRequest](ReadMedicalResourcesRequest.md): The read request ReadMedicalResourcesInitialRequest or ReadMedicalResourcesPageRequest. This value cannot be `null`. |
 | `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ReadMedicalResourcesResponse](ReadMedicalResourcesResponse.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `request` has set page size to be less than 1 or more than 5000; or if contains unsupported medical resource type or invalid `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` IDs when using `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest`. |
+| `java.lang.IllegalArgumentException` | if `request` has set page size to be less than 1 or more than 5000; or if contains unsupported medical resource type or invalid MedicalDataSource IDs when using ReadMedicalResourcesInitialRequest. |
 
 ### readMedicalResources
 
@@ -804,7 +804,7 @@ open fun readMedicalResources(
 ): Unit
 ```
 
-Reads `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s based on a list of `https://developer.android.com/reference/kotlin/android/health/connect/MedicalResourceId`s.
+Reads MedicalResources based on a list of MedicalResourceIds.
 
 The number and order of medical resources returned by this API is not guaranteed. The number will depend on the factors below:
 
@@ -822,7 +822,7 @@ Being permitted to read medical resources is dependent on the following logic, i
 4. For any given medical resource, a caller can get that medical resource in the foreground if the caller has the corresponding read permission, or in the background if it also has `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_HEALTH_DATA_IN_BACKGROUND:kotlin.String`.
 5. In all other cases the caller is not permitted to get the given medical resource and it will not be returned.
 
-Each returned `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource` has passed the Health Connect FHIR validation checks at write time, but is not guaranteed to meet all requirements of the [Fast Healthcare Interoperability Resources (FHIR) spec](https://hl7.org/fhir/resourcelist.html). If required, clients should perform their own checks on the data.
+Each returned MedicalResource has passed the Health Connect FHIR validation checks at write time, but is not guaranteed to meet all requirements of the [Fast Healthcare Interoperability Resources (FHIR) spec](https://hl7.org/fhir/resourcelist.html). If required, clients should perform their own checks on the data.
 
 | Parameters ||
 |---|---|
@@ -848,7 +848,7 @@ open fun <T : Record!> readRecords(
 ): Unit
 ```
 
-API to read records based on `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters` or `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingIds`
+API to read records based on ReadRecordsRequestUsingFilters or ReadRecordsRequestUsingIds
 
 Number of records returned by this API will depend based on below factors:
 
@@ -862,14 +862,14 @@ An app without both read and write permissions will not be able to read any reco
 
 | Parameters ||
 |---|---|
-| `request` | [ReadRecordsRequest](ReadRecordsRequest.md)\<T\>: Read request based on `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters` or `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingIds` This value cannot be `null`. |
+| `request` | [ReadRecordsRequest](ReadRecordsRequest.md)\<T\>: Read request based on ReadRecordsRequestUsingFilters or ReadRecordsRequestUsingIds This value cannot be `null`. |
 | `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ReadRecordsResponse](ReadRecordsResponse.md)\<T\>!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if request page size set is more than 5000 in `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequestUsingFilters` |
+| `java.lang.IllegalArgumentException` | if request page size set is more than 5000 in ReadRecordsRequestUsingFilters |
 | `java.lang.SecurityException` | if app without read or write permission tries to read. |
 
 ### updateRecords
@@ -885,14 +885,14 @@ open fun updateRecords(
 ): Unit
 ```
 
-Updates `records` into the HealthConnect database. In case of an error or a permission failure the HealthConnect service, `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)` will be invoked with a `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException`.
+Updates `records` into the HealthConnect database. In case of an error or a permission failure the HealthConnect service, onError will be invoked with a HealthConnectException.
 
 In case the input record to be updated does not exist in the database or the caller is not the owner of the record then `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INVALID_ARGUMENT:kotlin.Int` will be thrown.
 
 | Parameters ||
 |---|---|
 | `records` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](../android.health.connect.datatypes/Record.md)!\>: list of records to be updated. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 | --- | --- |
 
@@ -913,41 +913,41 @@ open fun upsertMedicalResources(
 ): Unit
 ```
 
-Inserts or updates a list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s into the HealthConnect database using `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest`.
+Inserts or updates a list of MedicalResources into the HealthConnect database using UpsertMedicalResourceRequest.
 
-For each `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest`, one `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource` will be returned. The returned list of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s will be in the same order as the `requests`.
+For each UpsertMedicalResourceRequest, one MedicalResource will be returned. The returned list of MedicalResources will be in the same order as the `requests`.
 
-Note that a `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` needs to be created using `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#createMedicalDataSource(android.health.connect.CreateMedicalDataSourceRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` before any `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource`s can be upserted for this source.
+Note that a MedicalDataSource needs to be created using createMedicalDataSource before any MedicalResources can be upserted for this source.
 
-Medical data is represented using the [Fast Healthcare Interoperability Resources (FHIR)](https://hl7.org/fhir/) standard. The FHIR resource provided in `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getData()` is expected to be valid FHIR in JSON representation for the specified `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getFhirVersion()` according to the [FHIR spec](https://hl7.org/fhir/resourcelist.html). Structural validation checks such as resource structure, field types and presence of required fields are performed, but these checks may not cover all FHIR spec requirements and may change in future versions.
+Medical data is represented using the [Fast Healthcare Interoperability Resources (FHIR)](https://hl7.org/fhir/) standard. The FHIR resource provided in getData is expected to be valid FHIR in JSON representation for the specified getFhirVersion according to the [FHIR spec](https://hl7.org/fhir/resourcelist.html). Structural validation checks such as resource structure, field types and presence of required fields are performed, but these checks may not cover all FHIR spec requirements and may change in future versions.
 
 Data written to Health Connect should be for a single individual only. However, the API allows for multiple Patient resources to be written to account for the possibility of multiple Patient resources being present in one individual's medical record.
 
-Each `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest` also has to meet the following requirements.
+Each UpsertMedicalResourceRequest also has to meet the following requirements.
 
 - The FHIR resource contains an "id" and "resourceType" field.
-- The FHIR resource type is in our accepted list of resource types. See `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirResource` for the accepted types.
+- The FHIR resource type is in our accepted list of resource types. See FhirResource for the accepted types.
 - The FHIR resource does not contain any "contained" resources.
-- The resource can be mapped to one of the READ_MEDICAL_DATA_ `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions` categories.
-- The `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getDataSourceId()` is valid.
-- The `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getFhirVersion()` matches the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FhirVersion` of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource`.
+- The resource can be mapped to one of the READ_MEDICAL_DATA_ HealthPermissions categories.
+- The getDataSourceId is valid.
+- The getFhirVersion matches the FhirVersion of the MedicalDataSource.
 
-If any request contains invalid `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` IDs, the API will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`, and none of the `requests` will be upserted into the HealthConnect database.
+If any request contains invalid MedicalDataSource IDs, the API will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`, and none of the `requests` will be upserted into the HealthConnect database.
 
 If any request is deemed invalid for any other reasons, the caller will receive an exception with code `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectException#ERROR_INVALID_ARGUMENT:kotlin.Int` via `callback.onError()`, and none of the `requests` will be upserted into the HealthConnect database.
 
-If data for any `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest` fails to be upserted, then no data from any `requests` will be upserted into the database.
+If data for any UpsertMedicalResourceRequest fails to be upserted, then no data from any `requests` will be upserted into the database.
 
-The uniqueness of each request is calculated comparing the combination of `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getDataSourceId()`, FHIR resource type and FHIR resource ID extracted from the provided `https://developer.android.com/reference/kotlin/android/health/connect/UpsertMedicalResourceRequest#getData()`. If the above combination does not match with an existing one in Health Connect, then a new `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalResource` is inserted, otherwise the existing one is updated. 
+The uniqueness of each request is calculated comparing the combination of getDataSourceId, FHIR resource type and FHIR resource ID extracted from the provided getData. If the above combination does not match with an existing one in Health Connect, then a new MedicalResource is inserted, otherwise the existing one is updated. 
 Requires `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#WRITE_MEDICAL_DATA:kotlin.String`
 
 | Parameters ||
 |---|---|
 | `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UpsertMedicalResourceRequest](UpsertMedicalResourceRequest.md)!\>: List of upsert requests. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MedicalResource](../android.health.connect.datatypes/MedicalResource.md)!\>!, [HealthConnectException](HealthConnectException.md)!\>: Callback to receive result of performing this operation. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if any `requests` contains invalid `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` IDs. |
+| `java.lang.IllegalArgumentException` | if any `requests` contains invalid MedicalDataSource IDs. |

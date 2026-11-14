@@ -19,11 +19,11 @@ A class containing utility methods related to time zones.
 
 | Public methods ||
 |---|---|
-| open static [TimeZone](../java.util/TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#getTimeZone(kotlin.Int,%20kotlin.Boolean,%20kotlin.Long,%20kotlin.String)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Tries to return a time zone that would have had the specified offset and DST value at the specified moment in the specified country. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#getTimeZoneDatabaseVersion()()` Returns a String indicating the version of the time zone database currently in use. |
-| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#getTimeZoneIdsForCountryCode(kotlin.String)(countryCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns time zone IDs for time zones known to be associated with a country. |
+| open static [TimeZone](../java.util/TimeZone.md)! | getTimeZone Tries to return a time zone that would have had the specified offset and DST value at the specified moment in the specified country. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getTimeZoneDatabaseVersion Returns a String indicating the version of the time zone database currently in use. |
+| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getTimeZoneIdsForCountryCode Returns time zone IDs for time zones known to be associated with a country. |
 | --- | --- |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/TimeUtils#isTimeBetween(java.time.LocalTime,%20java.time.LocalTime,%20java.time.LocalTime)(reference: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#, start: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#, end: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#)` This method is used to find if a clock time is inclusively between two other clock times |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTimeBetween This method is used to find if a clock time is inclusively between two other clock times |
 
 ## Public methods
 
@@ -66,15 +66,15 @@ open static fun getTimeZoneIdsForCountryCode(countryCode: String): MutableList<
 
 Returns time zone IDs for time zones known to be associated with a country.
 
-The list returned may be different from other on-device sources like `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.html#getRegion(kotlin.String)` as it can be curated to avoid contentious or obsolete mappings.
+The list returned may be different from other on-device sources like getRegion as it can be curated to avoid contentious or obsolete mappings.
 
 | Parameters ||
 |---|---|
-| `countryCode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the ISO 3166-1 alpha-2 code for the country as can be obtained using `https://developer.android.com/reference/kotlin/java/util/Locale.html#getCountry()` This value cannot be `null`. |
+| `countryCode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the ISO 3166-1 alpha-2 code for the country as can be obtained using getCountry This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?` | IDs that can be passed to `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#getTimeZone(kotlin.String)` or similar methods, or `null` if the countryCode is unrecognized |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?` | IDs that can be passed to getTimeZone or similar methods, or `null` if the countryCode is unrecognized |
 
 ### isTimeBetween
 

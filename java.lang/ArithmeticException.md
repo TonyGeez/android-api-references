@@ -20,8 +20,8 @@ Thrown when an exceptional arithmetic condition has occurred. For example, an in
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/ArithmeticException#ArithmeticException()()` Constructs an `ArithmeticException` with no detail message. |
-| `https://developer.android.com/reference/kotlin/java/lang/ArithmeticException#ArithmeticException(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs an `ArithmeticException` with the specified detail message. |
+| ArithmeticException Constructs an `ArithmeticException` with no detail message. |
+| ArithmeticException Constructs an `ArithmeticException` with the specified detail message. |
 
 ## Public constructors
 

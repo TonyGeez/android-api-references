@@ -26,8 +26,8 @@ Thrown if trying to create a credential which already exists.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/AlreadyPersonalizedException#AlreadyPersonalizedException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/AlreadyPersonalizedException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/AlreadyPersonalizedException#AlreadyPersonalizedException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/AlreadyPersonalizedException#` exception. |
+| AlreadyPersonalizedException Constructs a new AlreadyPersonalizedException exception. |
+| AlreadyPersonalizedException Constructs a new AlreadyPersonalizedException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ AlreadyPersonalizedException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/AlreadyPersonalizedException#` exception.
+Constructs a new AlreadyPersonalizedException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ AlreadyPersonalizedException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/AlreadyPersonalizedException#` exception.
+Constructs a new AlreadyPersonalizedException exception.
 
 | Parameters ||
 |---|---|

@@ -10,7 +10,7 @@ interface WindowManager : ViewManager
 
 The interface that apps use to talk to the window manager.
 
-Each window manager instance is bound to a `https://developer.android.com/reference/kotlin/android/view/Display`. To obtain the `WindowManager` associated with a display, call `https://developer.android.com/reference/kotlin/android/content/Context.html#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)` to get the display's UI context, then call `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(java.lang.Class)` on the UI context.
+Each window manager instance is bound to a Display. To obtain the `WindowManager` associated with a display, call createWindowContext to get the display's UI context, then call getSystemService or getSystemService on the UI context.
 
 The simplest way to show a window on a particular display is to create a `https://developer.android.com/reference/kotlin/android/app/Presentation.html#`, which automatically obtains a `WindowManager` and context for the display.
 
@@ -20,7 +20,7 @@ The simplest way to show a window on a particular display is to create a `https:
 |---|---|
 | open | `https://developer.android.com/reference/kotlin/android/view/WindowManager.BadTokenException` Exception that is thrown when trying to add view whose `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams` `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` is invalid. |
 | | `https://developer.android.com/reference/kotlin/android/view/WindowManager.DisplayEngagementModeState` A class that holds information about the display engagement mode. |
-| open | `https://developer.android.com/reference/kotlin/android/view/WindowManager.InvalidDisplayException` Exception that is thrown when calling `https://developer.android.com/reference/kotlin/android/view/ViewManager#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)` to a secondary display that cannot be found. |
+| open | `https://developer.android.com/reference/kotlin/android/view/WindowManager.InvalidDisplayException` Exception that is thrown when calling addView to a secondary display that cannot be found. |
 | --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams` <br /> |
 
@@ -42,19 +42,19 @@ The simplest way to show a window on a particular display is to create a `https:
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_DISPLAY_ORIENTATION_OVERRIDE:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app should be opted-out from the compatibility override that fixes display orientation to landscape natural orientation when an activity is fullscreen. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_EXCLUDE_CAPTION_INSETS:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that it needs to be opted-out from the compatibility treatment that sandboxes the `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#` API when caption insets are force consumed. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTED:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-out from the compatibility treatment that avoids `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` loops. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTED:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-out from the compatibility treatment that avoids setRequestedOrientation loops. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app should be opted-out from the compatibility override that changes the min aspect ratio. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app should be excluded from the compatibility override for orientation set by the device manufacturer. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app should be opted-out from the compatibility overrides that change the resizability of the app. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APIS:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that it needs to be opted-out from the compatibility treatment that sandboxes the `https://developer.android.com/reference/kotlin/android/view/View` API. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APIS:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that it needs to be opted-out from the compatibility treatment that sandboxes the View API. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREEN:kotlin.String` Application or Activity level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` to provide any preferences for showing all or specific Activities on small cover displays of foldable style devices. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` tag that (when set to false) informs the system the app has opted out of the full-screen option of the user aspect ratio compatibility override settings. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` tag that (when set to false) informs the system the app has opted out of the user-facing aspect ratio compatibility override. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_ENABLE_FAKE_FOCUS:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the application can be opted-in or opted-out from the compatibility treatment that enables sending a fake focus event for unfocused resumed split-screen activities. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-in or opted-out from the compatibility treatment that avoids `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` loops. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION:kotlin.String` Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-in or opted-out from the compatibility treatment that avoids setRequestedOrientation loops. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI:kotlin.String` Activity or Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to declare that System UI should be shown for this app/component to allow it to be launched as multiple instances. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#SCREEN_RECORDING_STATE_NOT_VISIBLE:kotlin.Int` Indicates the app that registered the callback is not visible in screen recording. |
 | --- | --- |
@@ -62,51 +62,51 @@ The simplest way to show a window on a particular display is to create a `https:
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#addCrossWindowBlurEnabledListener(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#addCrossWindowBlurEnabledListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#addProposedRotationListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Adds a listener to start monitoring the proposed rotation of the current associated context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addCrossWindowBlurEnabledListener Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addCrossWindowBlurEnabledListener Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addProposedRotationListener Adds a listener to start monitoring the proposed rotation of the current associated context. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#addScreenRecordingCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Adds a screen recording callback. |
-| open [WindowMetrics](WindowMetrics.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics()()` Returns the `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` according to the current system state. |
-| abstract [Display](Display.md)! | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getDefaultDisplay()()` Returns the `https://developer.android.com/reference/kotlin/android/view/Display` upon which this `https://developer.android.com/reference/kotlin/android/view/WindowManager#` instance will create new windows. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | addScreenRecordingCallback Adds a screen recording callback. |
+| open [WindowMetrics](WindowMetrics.md) | getCurrentWindowMetrics Returns the WindowMetrics according to the current system state. |
+| abstract [Display](Display.md)! | getDefaultDisplay Returns the Display upon which this WindowManager instance will create new windows. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getDisplayEngagementMode(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the user engagement mode for a specific display. |
-| open [WindowMetrics](WindowMetrics.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()()` Returns the largest `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` an app may expect in the current system state. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#isCrossWindowBlurEnabled()()` Returns whether cross-window blur is currently enabled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDisplayEngagementMode Gets the user engagement mode for a specific display. |
+| open [WindowMetrics](WindowMetrics.md) | getMaximumWindowMetrics Returns the largest WindowMetrics an app may expect in the current system state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCrossWindowBlurEnabled Returns whether cross-window blur is currently enabled. |
 | --- | --- |
-| open [InputTransferToken](../android.window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)(hostInputTransferToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl, choreographer: https://developer.android.com/reference/kotlin/android/view/Choreographer, receiver: https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive batched input event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerDisplayEngagementModeCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/WindowManager.DisplayEngagementModeState!>)` Registers a callback for display engagement mode changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerTrustedPresentationListener(android.os.IBinder,%20android.window.TrustedPresentationThresholds,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(window: https://developer.android.com/reference/kotlin/android/os/IBinder.html#, thresholds: https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Sets a callback to receive feedback about the presentation of a `https://developer.android.com/reference/kotlin/android/view/Window`. |
+| open [InputTransferToken](../android.window/InputTransferToken.md) | registerBatchedSurfaceControlInputReceiver Registers a SurfaceControlInputReceiver for a SurfaceControl that will receive batched input event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerDisplayEngagementModeCallback Registers a callback for display engagement mode changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerTrustedPresentationListener Sets a callback to receive feedback about the presentation of a Window. |
 | --- | --- |
-| open [InputTransferToken](../android.window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.os.Looper,%20android.view.SurfaceControlInputReceiver)(hostInputTransferToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl, looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#, receiver: https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive every input event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Removes a listener, previously added with #addCrossWindowBlurEnabledListener |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeProposedRotationListener(java.util.function.IntConsumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Removes a listener, previously added with `https://developer.android.com/reference/kotlin/android/view/WindowManager#addProposedRotationListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)`. |
+| open [InputTransferToken](../android.window/InputTransferToken.md) | registerUnbatchedSurfaceControlInputReceiver Registers a SurfaceControlInputReceiver for a SurfaceControl that will receive every input event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeCrossWindowBlurEnabledListener Removes a listener, previously added with #addCrossWindowBlurEnabledListener |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeProposedRotationListener Removes a listener, previously added with addProposedRotationListener. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeScreenRecordingCallback(java.util.function.Consumer)(callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Removes a screen recording callback. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeViewImmediate(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)` Special variation of `https://developer.android.com/reference/kotlin/android/view/ViewManager#removeView(android.view.View)` that immediately invokes the given view hierarchy's `https://developer.android.com/reference/kotlin/android/view/View#onDetachedFromWindow()` methods before returning. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#requestEngagementControlState(kotlin.Int)(engagementControlFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Requests an engagement control state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeScreenRecordingCallback Removes a screen recording callback. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeViewImmediate Special variation of removeView that immediately invokes the given view hierarchy's onDetachedFromWindow methods before returning. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestEngagementControlState Requests an engagement control state. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#transferTouchGesture(android.window.InputTransferToken,%20android.window.InputTransferToken)(transferFromToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, transferToToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#)` Transfer the currently in progress touch gesture from the transferFromToken to the transferToToken. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#unregisterDisplayEngagementModeCallback(java.util.function.Consumer)(callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/WindowManager.DisplayEngagementModeState!>)` Unregisters a callback for display engagement mode changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#unregisterSurfaceControlInputReceiver(android.view.SurfaceControl)(surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl)` Unregisters and cleans up the registered `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for the specified token. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | transferTouchGesture Transfer the currently in progress touch gesture from the transferFromToken to the transferToToken. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterDisplayEngagementModeCallback Unregisters a callback for display engagement mode changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterSurfaceControlInputReceiver Unregisters and cleans up the registered SurfaceControlInputReceiver for the specified token. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#unregisterTrustedPresentationListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Removes a presentation listener associated with a window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterTrustedPresentationListener Removes a presentation listener associated with a window. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewManager` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewManager#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)`
+Inherited functions From class ViewManager `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` addView
 
 Assign the passed LayoutParams to the passed View and add the view to the window.
 
 Throws `https://developer.android.com/reference/kotlin/android/view/WindowManager.BadTokenException` for certain programming errors, such as adding a second view to a window without removing the first view.
 
-Throws `https://developer.android.com/reference/kotlin/android/view/WindowManager.InvalidDisplayException` if the window is on a secondary `https://developer.android.com/reference/kotlin/android/view/Display` and the specified display can't be found (see `https://developer.android.com/reference/kotlin/android/app/Presentation.html#`).
+Throws `https://developer.android.com/reference/kotlin/android/view/WindowManager.InvalidDisplayException` if the window is on a secondary Display and the specified display can't be found (see `https://developer.android.com/reference/kotlin/android/app/Presentation.html#`).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewManager#removeView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` removeView
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewManager#updateViewLayout(android.view.View,%20android.view.ViewGroup.LayoutParams)(view: https://developer.android.com/reference/kotlin/android/view/View!, params: https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` updateViewLayout
 
 <br />
 
@@ -407,7 +407,7 @@ static val PROPERTY_COMPAT_ALLOW_EXCLUDE_CAPTION_INSETS: String
 
 Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that it needs to be opted-out from the compatibility treatment that sandboxes the `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#` API when caption insets are force consumed.
 
-The treatment can be enabled by device manufacturers for applications that don't handle consumption of `https://developer.android.com/reference/kotlin/android/view/WindowInsets.Type#captionBar()` insets which can lead to top or bottom UI elements being cropped. The treatment will sandbox `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#screenHeightDp:kotlin.Int` to exclude caption insets.
+The treatment can be enabled by device manufacturers for applications that don't handle consumption of captionBar insets which can lead to top or bottom UI elements being cropped. The treatment will sandbox `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#screenHeightDp:kotlin.Int` to exclude caption insets.
 
 Setting this property to `false` informs the system that the application must be opted-out from the exclude caption insets from app bounds treatment even if the device manufacturer has opted the app into the treatment.
 
@@ -434,9 +434,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTED: String
 ```
 
-Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-out from the compatibility treatment that avoids `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` loops. Loops can be triggered by the OEM-configured ignore requested orientation display setting (on Android 12 (API level 31) and higher) or by the landscape natural orientation of the device.
+Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-out from the compatibility treatment that avoids setRequestedOrientation loops. Loops can be triggered by the OEM-configured ignore requested orientation display setting (on Android 12 (API level 31) and higher) or by the landscape natural orientation of the device.
 
-The system could ignore `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` call from an app if both of the following conditions are true:
+The system could ignore setRequestedOrientation call from an app if both of the following conditions are true:
 
 - Activity has requested orientation more than two times within one-second timer
 - Activity is not letterboxed for fixed-orientation apps
@@ -504,7 +504,7 @@ Application level `https://developer.android.com/reference/kotlin/android/conten
 
 <br />
 
-This property is different from `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION:kotlin.String` (which is used to avoid orientation loops caused by the incorrect use of `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)`) because this property overrides the app to an orientation selected by the device manufacturer rather than ignoring one of orientation requests coming from the app while respecting the previous one.
+This property is different from `https://developer.android.com/reference/kotlin/android/view/WindowManager#PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION:kotlin.String` (which is used to avoid orientation loops caused by the incorrect use of setRequestedOrientation) because this property overrides the app to an orientation selected by the device manufacturer rather than ignoring one of orientation requests coming from the app while respecting the previous one.
 
 With this property set to `true` or unset, device manufacturers can override orientation for the app using their discretion to improve display compatibility.
 
@@ -560,9 +560,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APIS: String
 ```
 
-Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that it needs to be opted-out from the compatibility treatment that sandboxes the `https://developer.android.com/reference/kotlin/android/view/View` API.
+Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that it needs to be opted-out from the compatibility treatment that sandboxes the View API.
 
-The treatment can be enabled by device manufacturers for applications which misuse `https://developer.android.com/reference/kotlin/android/view/View` APIs by expecting that `https://developer.android.com/reference/kotlin/android/view/View#getLocationOnScreen(kotlin.IntArray)` and `https://developer.android.com/reference/kotlin/android/view/View#getWindowVisibleDisplayFrame(android.graphics.Rect)` return coordinates as if an activity is positioned in the top-left corner of the screen, with left coordinate equal to 0. This may not be the case for applications in multi-window and letterbox modes.
+The treatment can be enabled by device manufacturers for applications which misuse View APIs by expecting that getLocationOnScreen and getWindowVisibleDisplayFrame return coordinates as if an activity is positioned in the top-left corner of the screen, with left coordinate equal to 0. This may not be the case for applications in multi-window and letterbox modes.
 
 Setting this property to `false` informs the system that the application must be opted-out from the "Sandbox View API to Activity bounds" treatment even if the device manufacturer has opted the app into the treatment.
 
@@ -714,13 +714,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION: String
 ```
 
-Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-in or opted-out from the compatibility treatment that avoids `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` loops. Loops can be triggered by the OEM-configured ignore requested orientation display setting (on Android 12 (API level 31) and higher) or by the landscape natural orientation of the device.
+Application level `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` for an app to inform the system that the app can be opted-in or opted-out from the compatibility treatment that avoids setRequestedOrientation loops. Loops can be triggered by the OEM-configured ignore requested orientation display setting (on Android 12 (API level 31) and higher) or by the landscape natural orientation of the device.
 
 The treatment is disabled by default but device manufacturers can enable the treatment using their discretion to improve display compatibility.
 
-With this property set to `true`, the system could ignore `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` call from an app if one of the following conditions are true:
+With this property set to `true`, the system could ignore setRequestedOrientation call from an app if one of the following conditions are true:
 
-- Activity is relaunching due to the previous `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)` call.
+- Activity is relaunching due to the previous setRequestedOrientation call.
 - Camera compatibility force rotation treatment is active for the package.
 
 Setting this property to `false` informs the system that the app must be opted-out from the compatibility treatment even if the device manufacturer has opted the app into the treatment.
@@ -798,7 +798,7 @@ open fun addCrossWindowBlurEnabledListener(
 ): Unit
 ```
 
-Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. This affects both window blur behind (see `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`) and window background blur (see `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)`).
+Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. This affects both window blur behind (see setBlurBehindRadius) and window background blur (see setBackgroundBlurRadius).
 
 Cross-window blur might not be supported by some devices due to GPU limitations. It can also be disabled at runtime, e.g. during battery saving mode, when multimedia tunneling is used or when minimal post processing is requested. In such situations, no blur will be computed or drawn, so the blur target area will not be blurred. To handle this, the app might want to change its theme to one that does not use blurs.
 
@@ -806,15 +806,15 @@ If the listener is added successfully, it will be called immediately with the cu
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be added. It will be called back with a boolean parameter, which is true if cross-window blur is enabled and false if it is disabled. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#isCrossWindowBlurEnabled()`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)`
+- removeCrossWindowBlurEnabledListener
+- isCrossWindowBlurEnabled
+- setBlurBehindRadius
+- setBackgroundBlurRadius
 
 ### addCrossWindowBlurEnabledListener
 
@@ -824,7 +824,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun addCrossWindowBlurEnabledListener(listener: Consumer<Boolean!>): Unit
 ```
 
-Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. This affects both window blur behind (see `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`) and window background blur (see `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)`).
+Adds a listener, which will be called when cross-window blurs are enabled/disabled at runtime. This affects both window blur behind (see setBlurBehindRadius) and window background blur (see setBackgroundBlurRadius).
 
 Cross-window blur might not be supported by some devices due to GPU limitations. It can also be disabled at runtime, e.g. during battery saving mode, when multimedia tunneling is used or when minimal post processing is requested. In such situations, no blur will be computed or drawn, so the blur target area will not be blurred. To handle this, the app might want to change its theme to one that does not use blurs.
 
@@ -838,10 +838,10 @@ If the listener is added successfully, it will be called immediately with the cu
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#isCrossWindowBlurEnabled()`
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)`
+- removeCrossWindowBlurEnabledListener
+- isCrossWindowBlurEnabled
+- setBlurBehindRadius
+- setBackgroundBlurRadius
 
 ### addProposedRotationListener
 
@@ -854,11 +854,11 @@ open fun addProposedRotationListener(
 ): Unit
 ```
 
-Adds a listener to start monitoring the proposed rotation of the current associated context. It reports the current recommendation for the rotation that takes various factors (e.g. sensor, context, device state, etc) into account. The proposed rotation might not be applied by the system automatically due to the application's active preference to lock the orientation (e.g. with `https://developer.android.com/reference/kotlin/android/app/Activity.html#setRequestedOrientation(kotlin.Int)`). This listener gives application an opportunity to selectively react to device orientation changes. The newly added listener will be called with current proposed rotation. Note that the context of this window manager instance must be a `UiContext`.
+Adds a listener to start monitoring the proposed rotation of the current associated context. It reports the current recommendation for the rotation that takes various factors (e.g. sensor, context, device state, etc) into account. The proposed rotation might not be applied by the system automatically due to the application's active preference to lock the orientation (e.g. with setRequestedOrientation). This listener gives application an opportunity to selectively react to device orientation changes. The newly added listener will be called with current proposed rotation. Note that the context of this window manager instance must be a `UiContext`.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [IntConsumer](../java.util.function/IntConsumer.md): Called when the proposed rotation for the context is being delivered. The reported rotation can be `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_0:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_90:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_180:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_270:kotlin.Int`. This value cannot be `null`. |
 
 | Exceptions ||
@@ -893,7 +893,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: The callback that will be invoked when screen recording visibility changes. This value cannot be `null`. |
 
 | Return ||
@@ -913,22 +913,22 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getCurrentWindowMetrics(): WindowMetrics
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` according to the current system state.
+Returns the WindowMetrics according to the current system state.
 
-The metrics describe the size of the area the window would occupy with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams#MATCH_PARENT:kotlin.Int` width and height, and the `https://developer.android.com/reference/kotlin/android/view/WindowInsets` such a window would have. The `https://developer.android.com/reference/kotlin/android/view/WindowInsets` are not deducted from the bounds.
+The metrics describe the size of the area the window would occupy with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams#MATCH_PARENT:kotlin.Int` width and height, and the WindowInsets such a window would have. The WindowInsets are not deducted from the bounds.
 
 The value of this is based on the **current** windowing state of the system. For example, for activities in multi-window mode, the metrics returned are based on the current bounds that the user has selected for the `https://developer.android.com/reference/kotlin/android/app/Activity.html#`'s task.
 
-In most scenarios, `https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics()` rather than `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()` is the correct API to use, since it ensures values reflect window size when the app is not fullscreen.
+In most scenarios, getCurrentWindowMetrics rather than getMaximumWindowMetrics is the correct API to use, since it ensures values reflect window size when the app is not fullscreen.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` | This value cannot be `null`. |
+| WindowMetrics | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()`
-- `https://developer.android.com/reference/kotlin/android/view/WindowMetrics`
+- getMaximumWindowMetrics
+- WindowMetrics
 
 ### getDefaultDisplay
 
@@ -939,13 +939,13 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 abstract fun getDefaultDisplay(): Display!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/content/Context.html#getDisplay()` instead.*
+**Deprecated:** *Use getDisplay instead.*
 
-Returns the `https://developer.android.com/reference/kotlin/android/view/Display` upon which this `https://developer.android.com/reference/kotlin/android/view/WindowManager#` instance will create new windows.
+Returns the Display upon which this WindowManager instance will create new windows.
 
-Despite the name of this method, the display that is returned is not necessarily the primary display of the system (see `https://developer.android.com/reference/kotlin/android/view/Display#DEFAULT_DISPLAY:kotlin.Int`). The returned display could instead be a secondary display that this window manager instance is managing. Think of it as the display that this `https://developer.android.com/reference/kotlin/android/view/WindowManager#` instance uses by default.
+Despite the name of this method, the display that is returned is not necessarily the primary display of the system (see `https://developer.android.com/reference/kotlin/android/view/Display#DEFAULT_DISPLAY:kotlin.Int`). The returned display could instead be a secondary display that this window manager instance is managing. Think of it as the display that this WindowManager instance uses by default.
 
-To create windows on a different display, you need to obtain a `https://developer.android.com/reference/kotlin/android/view/WindowManager#` for that `https://developer.android.com/reference/kotlin/android/view/Display`. (See the `https://developer.android.com/reference/kotlin/android/view/WindowManager#` class documentation for more information.)
+To create windows on a different display, you need to obtain a WindowManager for that Display. (See the WindowManager class documentation for more information.)
 
 | Return ||
 |---|---|
@@ -982,25 +982,25 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getMaximumWindowMetrics(): WindowMetrics
 ```
 
-Returns the largest `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` an app may expect in the current system state.
+Returns the largest WindowMetrics an app may expect in the current system state.
 
 The value of this is based on the largest **potential** windowing state of the system. For example, for activities in multi-window mode, the metrics returned are based on the what the bounds would be if the user expanded the `https://developer.android.com/reference/kotlin/android/app/Activity.html#`'s task to cover the entire screen.
 
-The metrics describe the size of the largest potential area the window might occupy with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams#MATCH_PARENT:kotlin.Int` width and height, and the `https://developer.android.com/reference/kotlin/android/view/WindowInsets` such a window would have. The `https://developer.android.com/reference/kotlin/android/view/WindowInsets` are not deducted from the bounds.
+The metrics describe the size of the largest potential area the window might occupy with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams#MATCH_PARENT:kotlin.Int` width and height, and the WindowInsets such a window would have. The WindowInsets are not deducted from the bounds.
 
-Note that this might still be smaller than the size of the physical display if certain areas of the display are not available to windows created in this `https://developer.android.com/reference/kotlin/android/content/Context.html#`. For example, given that there's a device which have a multi-task mode to limit activities to a half screen. In this case, `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()` reports the bounds of the half screen which the activity is located.
+Note that this might still be smaller than the size of the physical display if certain areas of the display are not available to windows created in this `https://developer.android.com/reference/kotlin/android/content/Context.html#`. For example, given that there's a device which have a multi-task mode to limit activities to a half screen. In this case, getMaximumWindowMetrics reports the bounds of the half screen which the activity is located.
 
-**Generally `https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics()` is the correct API to use** for choosing UI layouts. `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()` are only appropriate when the application needs to know the largest possible size it can occupy if the user expands/maximizes it on the screen.
+**Generally getCurrentWindowMetrics is the correct API to use** for choosing UI layouts. getMaximumWindowMetrics are only appropriate when the application needs to know the largest possible size it can occupy if the user expands/maximizes it on the screen.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` | This value cannot be `null`. |
+| WindowMetrics | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics()`
-- `https://developer.android.com/reference/kotlin/android/view/WindowMetrics`
-- `https://developer.android.com/reference/kotlin/android/view/Display#getRealSize(android.graphics.Point)`
+- getCurrentWindowMetrics
+- WindowMetrics
+- getRealSize
 
 ### isCrossWindowBlurEnabled
 
@@ -1010,13 +1010,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun isCrossWindowBlurEnabled(): Boolean
 ```
 
-Returns whether cross-window blur is currently enabled. This affects both window blur behind (see `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`) and window background blur (see `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)`).
+Returns whether cross-window blur is currently enabled. This affects both window blur behind (see setBlurBehindRadius) and window background blur (see setBackgroundBlurRadius).
 
 Cross-window blur might not be supported by some devices due to GPU limitations. It can also be disabled at runtime, e.g. during battery saving mode, when multimedia tunneling is used or when minimal post processing is requested. In such situations, no blur will be computed or drawn, so the blur target area will not be blurred. To handle this, the app might want to change its theme to one that does not use blurs. To listen for cross-window blur enabled/disabled events, use #addCrossWindowBlurEnabledListener.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#setBlurBehindRadius(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/Window#setBackgroundBlurRadius(kotlin.Int)`
+- setBlurBehindRadius
+- setBackgroundBlurRadius
 
 ### registerBatchedSurfaceControlInputReceiver
 
@@ -1031,7 +1031,7 @@ open fun registerBatchedSurfaceControlInputReceiver(
 ): InputTransferToken
 ```
 
-Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive batched input event. For those events that are batched, the invocation will happen once per `https://developer.android.com/reference/kotlin/android/view/Choreographer` frame, and other input events will be delivered immediately. This is different from #registerUnbatchedSurfaceControlInputReceiver(int,android.window.InputTransferToken,android.view.SurfaceControl,android.os.Looper,android.view.SurfaceControlInputReceiver) in that the input events are received batched. The caller must invoke `https://developer.android.com/reference/kotlin/android/view/WindowManager#unregisterSurfaceControlInputReceiver(android.view.SurfaceControl)` to clean up the resources when no longer needing to use the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver`
+Registers a SurfaceControlInputReceiver for a SurfaceControl that will receive batched input event. For those events that are batched, the invocation will happen once per Choreographer frame, and other input events will be delivered immediately. This is different from #registerUnbatchedSurfaceControlInputReceiver(int,android.window.InputTransferToken,android.view.SurfaceControl,android.os.Looper,android.view.SurfaceControlInputReceiver) in that the input events are received batched. The caller must invoke unregisterSurfaceControlInputReceiver to clean up the resources when no longer needing to use the SurfaceControlInputReceiver
 
 | Parameters ||
 |---|---|
@@ -1060,7 +1060,7 @@ Registers a callback for display engagement mode changes. The callback will be i
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [Consumer](../java.util.function/Consumer.md)\< [WindowManager.DisplayEngagementModeState](../android/view/WindowManager.DisplayEngagementModeState.md)!\>: The callback to register. This value cannot be `null`. |
 
 ### registerTrustedPresentationListener
@@ -1076,7 +1076,7 @@ open fun registerTrustedPresentationListener(
 ): Unit
 ```
 
-Sets a callback to receive feedback about the presentation of a `https://developer.android.com/reference/kotlin/android/view/Window`. When the `https://developer.android.com/reference/kotlin/android/view/Window` is presented according to the passed in `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#`, it is said to "enter the state", and receives the callback with `true`. When the conditions fall out of thresholds, it is then said to leave the state and the caller will receive a callback with `false`. The callbacks be sent for every state transition thereafter.
+Sets a callback to receive feedback about the presentation of a Window. When the Window is presented according to the passed in `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#`, it is said to "enter the state", and receives the callback with `true`. When the conditions fall out of thresholds, it is then said to leave the state and the caller will receive a callback with `false`. The callbacks be sent for every state transition thereafter.
 
 There are a few simple thresholds:
 
@@ -1103,7 +1103,7 @@ Notice that this is not completely accurate, as we have double counted the regio
 
 | Parameters ||
 |---|---|
-| `window` | [IBinder](../android.os/IBinder.md): The Window to add the trusted presentation listener for. This can be retrieved from `https://developer.android.com/reference/kotlin/android/view/View#getWindowToken()`. This value cannot be `null`. |
+| `window` | [IBinder](../android.os/IBinder.md): The Window to add the trusted presentation listener for. This can be retrieved from getWindowToken. This value cannot be `null`. |
 | `thresholds` | [TrustedPresentationThresholds](../android.window/TrustedPresentationThresholds.md): The `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#` that will specify when the to invoke the callback. This value cannot be `null`. |
 | `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` where the callback will be invoked on. This value cannot be `null`. |
 | --- | --- |
@@ -1126,7 +1126,7 @@ open fun registerUnbatchedSurfaceControlInputReceiver(
 ): InputTransferToken
 ```
 
-Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive every input event. This is different than calling `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)` in that the input events are received unbatched. The caller must invoke `https://developer.android.com/reference/kotlin/android/view/WindowManager#unregisterSurfaceControlInputReceiver(android.view.SurfaceControl)` to clean up the resources when no longer needing to use the `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver`
+Registers a SurfaceControlInputReceiver for a SurfaceControl that will receive every input event. This is different than calling registerBatchedSurfaceControlInputReceiver in that the input events are received unbatched. The caller must invoke unregisterSurfaceControlInputReceiver to clean up the resources when no longer needing to use the SurfaceControlInputReceiver
 
 | Parameters ||
 |---|---|
@@ -1164,7 +1164,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun removeProposedRotationListener(listener: IntConsumer): Unit
 ```
 
-Removes a listener, previously added with `https://developer.android.com/reference/kotlin/android/view/WindowManager#addProposedRotationListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)`. It is recommended to call when the associated context no longer has visible components. No-op if the provided listener is not registered.
+Removes a listener, previously added with addProposedRotationListener. It is recommended to call when the associated context no longer has visible components. No-op if the provided listener is not registered.
 
 | Parameters ||
 |---|---|
@@ -1187,7 +1187,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#addScreenRecordingCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)`
+- addScreenRecordingCallback
 
 ### removeViewImmediate
 
@@ -1197,7 +1197,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun removeViewImmediate(view: View!): Unit
 ```
 
-Special variation of `https://developer.android.com/reference/kotlin/android/view/ViewManager#removeView(android.view.View)` that immediately invokes the given view hierarchy's `https://developer.android.com/reference/kotlin/android/view/View#onDetachedFromWindow()` methods before returning. This is not for normal applications; using it correctly requires great care.
+Special variation of removeView that immediately invokes the given view hierarchy's onDetachedFromWindow methods before returning. This is not for normal applications; using it correctly requires great care.
 
 | Parameters ||
 |---|---|
@@ -1234,14 +1234,14 @@ Transfer the currently in progress touch gesture from the transferFromToken to t
 
 This requires that the fromToken and toToken are associated with each other. The association can be done different ways, depending on how the embedded window is created.
 
-- Creating a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost` and passing the host's `https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#` for `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost#SurfaceControlViewHost(android.content.Context,%20android.view.Display,%20android.window.InputTransferToken)`.
-- Registering a SurfaceControl for input and passing the host's token to either `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)` or `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.os.Looper,%20android.view.SurfaceControlInputReceiver)`.
+- Creating a SurfaceControlViewHost and passing the host's `https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#` for SurfaceControlViewHost.
+- Registering a SurfaceControl for input and passing the host's token to either registerBatchedSurfaceControlInputReceiver or registerUnbatchedSurfaceControlInputReceiver.
 
-The host is likely to be an `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl` so the host token can be retrieved via `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#getInputTransferToken()`.
+The host is likely to be an AttachedSurfaceControl so the host token can be retrieved via getInputTransferToken.
 
 <br />
 
-When the host wants to transfer touch gesture to the embedded, it can retrieve the embedded token via `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage#getInputTransferToken()` or use the value returned from either `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)` or `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.os.Looper,%20android.view.SurfaceControlInputReceiver)` and pass its own token as the transferFromToken.
+When the host wants to transfer touch gesture to the embedded, it can retrieve the embedded token via getInputTransferToken or use the value returned from either registerBatchedSurfaceControlInputReceiver or registerUnbatchedSurfaceControlInputReceiver and pass its own token as the transferFromToken.
 
 When the embedded wants to transfer touch gesture to the host, it can pass in its own token as the transferFromToken and use the associated host's `https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#` as the transferToToken
 
@@ -1258,7 +1258,7 @@ The transferTouchGesture API only works for the current gesture. When a new gest
 The call can fail for the following reasons:
 
 - Caller attempts to transfer touch gesture from a token that doesn't have an active gesture.
-- The gesture is transferred to a token that is not associated with the transferFromToken. For example, if the caller transfers to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost` not attached to the host window via android.view.SurfaceView#setChildSurfacePackage(SurfacePackage).
+- The gesture is transferred to a token that is not associated with the transferFromToken. For example, if the caller transfers to a SurfaceControlViewHost not attached to the host window via android.view.SurfaceView#setChildSurfacePackage(SurfacePackage).
 - The active gesture completes before the transfer is complete, such as in the case of a fling.
 
 <br />
@@ -1274,8 +1274,8 @@ The call can fail for the following reasons:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.SurfacePackage#getInputTransferToken()`
-- `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#getInputTransferToken()`
+- getInputTransferToken
+- getInputTransferToken
 
 ### unregisterDisplayEngagementModeCallback
 
@@ -1299,9 +1299,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterSurfaceControlInputReceiver(surfaceControl: SurfaceControl): Unit
 ```
 
-Unregisters and cleans up the registered `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for the specified token.
+Unregisters and cleans up the registered SurfaceControlInputReceiver for the specified token.
 
-Must be called on the same `https://developer.android.com/reference/kotlin/android/os/Looper.html#` thread to which was passed to the `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)` or `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.os.Looper,%20android.view.SurfaceControlInputReceiver)`
+Must be called on the same `https://developer.android.com/reference/kotlin/android/os/Looper.html#` thread to which was passed to the registerBatchedSurfaceControlInputReceiver or registerUnbatchedSurfaceControlInputReceiver
 
 | Parameters ||
 |---|---|
@@ -1323,4 +1323,4 @@ Removes a presentation listener associated with a window. If the listener was no
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerTrustedPresentationListener(android.os.IBinder,%20android.window.TrustedPresentationThresholds,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
+- registerTrustedPresentationListener

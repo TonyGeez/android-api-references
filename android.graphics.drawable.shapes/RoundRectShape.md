@@ -24,25 +24,25 @@ The rounded rectangle can be drawn to a Canvas with its own draw() method, but m
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#RoundRectShape(kotlin.FloatArray,%20android.graphics.RectF,%20kotlin.FloatArray)(outerRadii: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, inset: https://developer.android.com/reference/kotlin/android/graphics/RectF.html#?, innerRadii: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` RoundRectShape constructor. |
+| RoundRectShape RoundRectShape constructor. |
 
 | Public methods ||
 |---|---|
-| open [RoundRectShape](RoundRectShape.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#clone()()` Creates and returns a copy of this object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#draw(android.graphics.Canvas,%20android.graphics.Paint)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#!, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#!)` Draws this shape into the provided Canvas, with the provided Paint. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| open [RoundRectShape](RoundRectShape.md) | clone Creates and returns a copy of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | draw Draws this shape into the provided Canvas, with the provided Paint. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Computes the Outline of the shape and return it in the supplied Outline parameter. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#hashCode()()` Returns a hash code value for the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getOutline Computes the Outline of the shape and return it in the supplied Outline parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#onResize(kotlin.Float,%20kotlin.Float)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Callback method called when `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#resize(kotlin.Float,%20kotlin.Float)` is executed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onResize Callback method called when resize is executed. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getHeight()()` Returns the height of the Shape. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#getWidth()()` Returns the width of the Shape. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#hasAlpha()()` Checks whether the Shape is opaque. Default impl returns `true`. Override if your subclass can be opaque. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#resize(kotlin.Float,%20kotlin.Float)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Resizes the dimensions of this shape. Must be called before `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#draw(android.graphics.Canvas,%20android.graphics.Paint)`. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape` |---|---| | `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#!` | `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RectShape#rect()()` Returns the RectF that defines this rectangle's bounds. <br /> | ||
+| From class Shape |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` | getHeight Returns the height of the Shape. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` | getWidth Returns the width of the Shape. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | hasAlpha Checks whether the Shape is opaque. Default impl returns `true`. Override if your subclass can be opaque. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | resize Resizes the dimensions of this shape. Must be called before draw. <br /> | ||
+| From class RectShape |---|---| | `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#!` | rect Returns the RectF that defines this rectangle's bounds. <br /> | ||
 
 ## Public constructors
 
@@ -103,7 +103,7 @@ By convention, the object returned by this method should be independent of this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/RoundRectShape#` | a clone of this instance. |
+| RoundRectShape | a clone of this instance. |
 
 | Exceptions ||
 |---|---|
@@ -122,7 +122,7 @@ open fun draw(
 
 Draws this shape into the provided Canvas, with the provided Paint.
 
-Before calling this, you must call `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#resize(kotlin.Float,%20kotlin.Float)`.
+Before calling this, you must call resize.
 
 | Parameters ||
 |---|---|
@@ -184,8 +184,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -204,7 +204,7 @@ protected open fun onResize(
 ): Unit
 ```
 
-Callback method called when `https://developer.android.com/reference/kotlin/android/graphics/drawable/shapes/Shape#resize(kotlin.Float,%20kotlin.Float)` is executed.
+Callback method called when resize is executed.
 
 | Parameters ||
 |---|---|

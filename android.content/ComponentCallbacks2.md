@@ -24,7 +24,7 @@ Known Indirect Subclasses [AbstractInputMethodService](../android.inputmethodser
 [AppFunctionService](../android.app.appfunctions/AppFunctionService.md) Extend this class to implement app functions, that can be executed by android.
 [AutofillService](../android.service.autofill/AutofillService.md) An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
 [CallRedirectionService](../android.telecom/CallRedirectionService.md) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
-[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
+[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see getDefaultDialerPackage) or a third party app to allow or disallow incoming calls before they are shown to a user.
 [CameraPrewarmService](../android.service.media/CameraPrewarmService.md) Extend this class to implement a camera prewarm service.
 [CarrierMessagingClientService](../android.service.carrier/CarrierMessagingClientService.md) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
 [CarrierMessagingService](../android.service.carrier/CarrierMessagingService.md) A service that receives calls from the system when new SMS and MMS are sent or received.
@@ -56,7 +56,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [HostNfcFService](../android.nfc.cardemulation/HostNfcFService.md) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
 [InCallService](../android.telecom/InCallService.md) This service is implemented by an app that wishes to provide functionality for managing phone calls.
 [InputMethodService](../android.inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
-[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent`s) on demand.
+[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as Intents) on demand.
 [IsolatedService](../android.adservices.ondevicepersonalization/IsolatedService.md) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
 [JobService](../android.app.job/JobService.md) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`.
 [LauncherActivity](../android.app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
@@ -84,7 +84,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [SettingsPreferenceService](../android.service.settings.preferences/SettingsPreferenceService.md) Base class for a service that exposes its settings preferences to external access.
 [SliceProvider](../android.app.slice/SliceProvider.md) A SliceProvider allows an app to provide content to be displayed in system spaces.
 [SpellCheckerService](../android.service.textservice/SpellCheckerService.md) SpellCheckerService provides an abstract base class for a spell checker.
-[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
+[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new newTab and related APIs for placing tabs within their action bar area.
 [TextToSpeechService](../android.speech.tts/TextToSpeechService.md) Abstract base class for TTS engine implementations.
 [TileService](../android.service.quicksettings/TileService.md) A TileService provides the user a tile that can be added to Quick Settings.
 [TvAdService](../android.media.tv.ad/TvAdService.md) The TvAdService class represents a TV client-side advertisement service.
@@ -98,9 +98,9 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [WallpaperService](../android.service.wallpaper/WallpaperService.md) A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it.
 [WebViewFragment](../android.webkit/WebViewFragment.md) A fragment that displays a WebView.
 
-Callbacks for app state transitions that can be used to improve background memory management. This interface is available in all application components (`https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentProvider`, and `https://developer.android.com/reference/kotlin/android/app/Application.html#`).
+Callbacks for app state transitions that can be used to improve background memory management. This interface is available in all application components (`https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, ContentProvider, and `https://developer.android.com/reference/kotlin/android/app/Application.html#`).
 
-You should implement `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)` to release memory when your app goes to background states. Doing so helps the system keep your app's process cached in memory for longer, such that the next time that the user brings your app to the foreground, the app will perform a [warm or hot start](https://developer.android.com/topic/performance/vitals/launch-time), resuming faster and retaining state.
+You should implement onTrimMemory to release memory when your app goes to background states. Doing so helps the system keep your app's process cached in memory for longer, such that the next time that the user brings your app to the foreground, the app will perform a [warm or hot start](https://developer.android.com/topic/performance/vitals/launch-time), resuming faster and retaining state.
 
 ## Trim memory levels and how to handle them
 
@@ -111,7 +111,7 @@ You should implement `https://developer.android.com/reference/kotlin/android/con
 
 Apps that continue to do work for the user when they're not visible can respond to the `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_UI_HIDDEN:kotlin.Int` callback by changing their behavior to favor lower memory usage. For example, a music player may keep full-sized album art for all tracks in the currently playing playlist as Bitmaps cached in memory. When the app is backgrounded but music playback continues, the app can change the caching behavior to cache fewer, or smaller, Bitmaps in memory.
 
-The ordinal values for trim levels represent an escalating series of memory pressure events, with incrementing values accordingly. More states may be added in the future. As such, it's important not to check for specific values, but rather check if the level passed to `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)` is greater than or equal to the levels that your application handles. For example:
+The ordinal values for trim levels represent an escalating series of memory pressure events, with incrementing values accordingly. More states may be added in the future. As such, it's important not to check for specific values, but rather check if the level passed to onTrimMemory is greater than or equal to the levels that your application handles. For example:
 
 ```kotlin
 <code>public void onTrimMemory(int level) {
@@ -133,21 +133,21 @@ The ordinal values for trim levels represent an escalating series of memory pres
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_BACKGROUND:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process has gone on to the LRU list. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_COMPLETE:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is nearing the end of the background LRU list, and if more memory isn't found soon it will be killed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_MODERATE:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is around the middle of the background LRU list; freeing memory can help the system keep other processes running later in the list for better overall performance. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_BACKGROUND:kotlin.Int` Level for onTrimMemory: the process has gone on to the LRU list. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_COMPLETE:kotlin.Int` Level for onTrimMemory: the process is nearing the end of the background LRU list, and if more memory isn't found soon it will be killed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_MODERATE:kotlin.Int` Level for onTrimMemory: the process is around the middle of the background LRU list; freeing memory can help the system keep other processes running later in the list for better overall performance. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_RUNNING_CRITICAL:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is not an expendable background process, but the device is running extremely low on memory and is about to not be able to keep any background processes running. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_RUNNING_LOW:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is not an expendable background process, but the device is running low on memory. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_RUNNING_MODERATE:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is not an expendable background process, but the device is running moderately low on memory. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_RUNNING_CRITICAL:kotlin.Int` Level for onTrimMemory: the process is not an expendable background process, but the device is running extremely low on memory and is about to not be able to keep any background processes running. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_RUNNING_LOW:kotlin.Int` Level for onTrimMemory: the process is not an expendable background process, but the device is running low on memory. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_RUNNING_MODERATE:kotlin.Int` Level for onTrimMemory: the process is not an expendable background process, but the device is running moderately low on memory. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_UI_HIDDEN:kotlin.Int` Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process had been showing a user interface, and is no longer doing so. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#TRIM_MEMORY_UI_HIDDEN:kotlin.Int` Level for onTrimMemory: the process had been showing a user interface, and is no longer doing so. |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the operating system has determined that it is a good time for a process to trim unneeded memory from its process. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onTrimMemory Called when the operating system has determined that it is a good time for a process to trim unneeded memory from its process. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration)`
+Inherited functions From class ComponentCallbacks `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` onConfigurationChanged
 
 Called by the system when the device configuration changes while your component is running. Note that, unlike activities, other components are never restarted when a configuration changes: they must always deal with the results of the change, such as by re-retrieving resources.
 
@@ -157,7 +157,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onLowMemory()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` onLowMemory
 
 This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. While the exact point at which this will be called is not defined, generally it will happen when all background process have been killed. That is, before reaching the point of killing processes hosting service and foreground UI that we would like to avoid killing.
 
@@ -173,7 +173,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val TRIM_MEMORY_BACKGROUND: Int
 ```
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process has gone on to the LRU list. This is a good opportunity to clean up resources that can efficiently and quickly be re-built if the user returns to the app.
+Level for onTrimMemory: the process has gone on to the LRU list. This is a good opportunity to clean up resources that can efficiently and quickly be re-built if the user returns to the app.
 
  Value: 40
 
@@ -188,7 +188,7 @@ static val TRIM_MEMORY_COMPLETE: Int
 
 **Deprecated:** *Apps are not notified of this level since API level 34*
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is nearing the end of the background LRU list, and if more memory isn't found soon it will be killed.
+Level for onTrimMemory: the process is nearing the end of the background LRU list, and if more memory isn't found soon it will be killed.
 
  Value: 80
 
@@ -203,7 +203,7 @@ static val TRIM_MEMORY_MODERATE: Int
 
 **Deprecated:** *Apps are not notified of this level since API level 34*
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is around the middle of the background LRU list; freeing memory can help the system keep other processes running later in the list for better overall performance.
+Level for onTrimMemory: the process is around the middle of the background LRU list; freeing memory can help the system keep other processes running later in the list for better overall performance.
 
  Value: 60
 
@@ -218,7 +218,7 @@ static val TRIM_MEMORY_RUNNING_CRITICAL: Int
 
 **Deprecated:** *Apps are not notified of this level since API level 34*
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is not an expendable background process, but the device is running extremely low on memory and is about to not be able to keep any background processes running. Your running process should free up as many non-critical resources as it can to allow that memory to be used elsewhere. The next thing that will happen after this is `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onLowMemory()` called to report that nothing at all can be kept in the background, a situation that can start to notably impact the user.
+Level for onTrimMemory: the process is not an expendable background process, but the device is running extremely low on memory and is about to not be able to keep any background processes running. Your running process should free up as many non-critical resources as it can to allow that memory to be used elsewhere. The next thing that will happen after this is onLowMemory called to report that nothing at all can be kept in the background, a situation that can start to notably impact the user.
 
  Value: 15
 
@@ -233,7 +233,7 @@ static val TRIM_MEMORY_RUNNING_LOW: Int
 
 **Deprecated:** *Apps are not notified of this level since API level 34*
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is not an expendable background process, but the device is running low on memory. Your running process should free up unneeded resources to allow that memory to be used elsewhere.
+Level for onTrimMemory: the process is not an expendable background process, but the device is running low on memory. Your running process should free up unneeded resources to allow that memory to be used elsewhere.
 
  Value: 10
 
@@ -248,7 +248,7 @@ static val TRIM_MEMORY_RUNNING_MODERATE: Int
 
 **Deprecated:** *Apps are not notified of this level since API level 34*
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process is not an expendable background process, but the device is running moderately low on memory. Your running process may want to release some unneeded resources for use elsewhere.
+Level for onTrimMemory: the process is not an expendable background process, but the device is running moderately low on memory. Your running process may want to release some unneeded resources for use elsewhere.
 
  Value: 5
 
@@ -260,7 +260,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val TRIM_MEMORY_UI_HIDDEN: Int
 ```
 
-Level for `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`: the process had been showing a user interface, and is no longer doing so. Large allocations with the UI should be released at this point to allow memory to be better managed.
+Level for onTrimMemory: the process had been showing a user interface, and is no longer doing so. Large allocations with the UI should be released at this point to allow memory to be better managed.
 
  Value: 20
 
@@ -276,7 +276,7 @@ abstract fun onTrimMemory(level: Int): Unit
 
 Called when the operating system has determined that it is a good time for a process to trim unneeded memory from its process. You should never compare to exact values of the level, since new intermediate values may be added -- you will typically want to compare if the value is greater or equal to a level you are interested in.
 
-To retrieve the processes current trim level at any point, you can use `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#getMyMemoryState(android.app.ActivityManager.RunningAppProcessInfo)`.
+To retrieve the processes current trim level at any point, you can use getMyMemoryState.
 
 | Parameters ||
 |---|---|

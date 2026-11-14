@@ -10,7 +10,7 @@ open class AccessibilityServiceInfo : Parcelable
 | --- | --- |
 | ↳ | [android.accessibilityservice.AccessibilityServiceInfo](AccessibilityServiceInfo.md) |
 
-This class describes an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService`. The system notifies an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`s according to the information encapsulated in this class.
+This class describes an AccessibilityService. The system notifies an AccessibilityService for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`s according to the information encapsulated in this class.
 
 > [!NOTE]
 >
@@ -66,7 +66,7 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_RETRIEVE_WINDOW_CONTENT:kotlin.Int` Capability: This accessibility service can retrieve the active window content. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CAPABILITY_CAN_TAKE_SCREENSHOT:kotlin.Int` Capability: This accessibility service can take screenshot. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#DEFAULT:kotlin.Int` If an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is the default for a given type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#DEFAULT:kotlin.Int` If an AccessibilityService is the default for a given type. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_ALL_MASK:kotlin.Int` Mask for all feedback types. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FEEDBACK_AUDIBLE:kotlin.Int` Denotes audible (not spoken) feedback. |
@@ -81,7 +81,7 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:kotlin.Int` If this flag is set the system will regard views that are not important for accessibility in addition to the ones that are important for accessibility. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_INPUT_METHOD_EDITOR:kotlin.Int` This flag makes the AccessibilityService an input method editor with a subset of input method editor capabilities: get the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection.html#` and get text selection change notifications. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REPORT_VIEW_IDS:kotlin.Int` This flag requests that the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#`s obtained by an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` contain the id of the source view. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REPORT_VIEW_IDS:kotlin.Int` This flag requests that the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#`s obtained by an AccessibilityService contain the id of the source view. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_2_FINGER_PASSTHROUGH:kotlin.Int` This flag requests that when `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_MULTI_FINGER_GESTURES:kotlin.Int` is enabled, two-finger passthrough gestures are re-enabled. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#FLAG_REQUEST_ACCESSIBILITY_BUTTON:kotlin.Int` This flag indicates to the system that the accessibility service requests that an accessibility button be shown within the system's navigation area, if available. |
@@ -100,57 +100,57 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#AccessibilityServiceInfo()()` Creates a new instance. |
+| AccessibilityServiceInfo Creates a new instance. |
 
 | Public methods ||
 |---|---|
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#capabilityToString(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a capability. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | capabilityToString Returns the string representation of a capability. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#feedbackTypeToString(kotlin.Int)(feedbackType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a feedback type. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#flagToString(kotlin.Int)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the string representation of a flag. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getCanRetrieveWindowContent()()` Whether this service can retrieve the current window's content. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | feedbackTypeToString Returns the string representation of a feedback type. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | flagToString Returns the string representation of a flag. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getCanRetrieveWindowContent Whether this service can retrieve the current window's content. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getCapabilities()()` Returns the bit mask of capabilities this accessibility service has such as being able to retrieve the active window content, etc. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getDescription()()` Gets the non-localized description of the accessibility service. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getId()()` The accessibility service id. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCapabilities Returns the bit mask of capabilities this accessibility service has such as being able to retrieve the active window content, etc. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDescription Gets the non-localized description of the accessibility service. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getId The accessibility service id. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getInteractiveUiTimeoutMillis()()` Get the recommended timeout for interactive controls. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getMotionEventSources()()` Returns the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getNonInteractiveUiTimeoutMillis()()` Get the recommended timeout for non-interactive controls. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInteractiveUiTimeoutMillis Get the recommended timeout for interactive controls. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMotionEventSources Returns the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNonInteractiveUiTimeoutMillis Get the recommended timeout for non-interactive controls. |
 | --- | --- |
-| open [ResolveInfo](../android.content.pm/ResolveInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getResolveInfo()()` The service `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getSettingsActivityName()()` The settings activity name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getTileServiceName()()` Gets the name of `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` is associated with this accessibility service. |
+| open [ResolveInfo](../android.content.pm/ResolveInfo.md)! | getResolveInfo The service `https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSettingsActivityName The settings activity name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getTileServiceName Gets the name of `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService.html#` is associated with this accessibility service. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#hashCode()()` Returns a hash code value for the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#isAccessibilityTool()()` Indicates if the service is used to assist users with disabilities. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadDescription(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` The localized description of the accessibility service. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAccessibilityTool Indicates if the service is used to assist users with disabilities. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | loadDescription The localized description of the accessibility service. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadIntro(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#)` The localized intro of the accessibility service. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadSummary(android.content.pm.PackageManager)(packageManager: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` The localized summary of the accessibility service. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setInteractiveUiTimeoutMillis(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the recommended time that interactive controls need to remain on the screen to support the user. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | loadIntro The localized intro of the accessibility service. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | loadSummary The localized summary of the accessibility service. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInteractiveUiTimeoutMillis Set the recommended time that interactive controls need to remain on the screen to support the user. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setMotionEventSources(kotlin.Int)(motionEventSources: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setNonInteractiveUiTimeoutMillis(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the recommended time that non-interactive controls need to remain on the screen to support the user. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#toString()()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMotionEventSources Sets the bit mask of `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources that the accessibility service wants to listen to for generic `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNonInteractiveUiTimeoutMillis Set the recommended time that non-interactive controls need to remain on the screen to support the user. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flagz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
 | static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AccessibilityServiceInfo](AccessibilityServiceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#eventTypes:kotlin.Int` The event types an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#feedbackType:kotlin.Int` The feedback type an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` provides. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#eventTypes:kotlin.Int` The event types an AccessibilityService is interested in. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#feedbackType:kotlin.Int` The feedback type an AccessibilityService provides. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#flags:kotlin.Int` This field represents a set of flags used for configuring an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#notificationTimeout:kotlin.Long` The timeout, in milliseconds, after the most recent event of a given type before an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is notified. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#packageNames:kotlin.Array` The package names an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#flags:kotlin.Int` This field represents a set of flags used for configuring an AccessibilityService. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#notificationTimeout:kotlin.Long` The timeout, in milliseconds, after the most recent event of a given type before an AccessibilityService is notified. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#packageNames:kotlin.Array` The package names an AccessibilityService is interested in. |
 | --- | --- |
 
 ## XML attributes
@@ -160,7 +160,7 @@ This class describes an `https://developer.android.com/reference/kotlin/android/
 ```
 android:accessibilityEventTypes
 ```
-The event types this service would like to receive as specified in `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+The event types this service would like to receive as specified in `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`. This setting can be changed at runtime by calling setServiceInfo.
 
 Must be one or more (separated by '|') of the following constant values.
 | --- | --- |
@@ -209,7 +209,7 @@ Must be one or more (separated by '|') of the following constant values.
 ```
 android:accessibilityFeedbackType
 ```
-The feedback types this service provides as specified in `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#`. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+The feedback types this service provides as specified in AccessibilityServiceInfo. This setting can be changed at runtime by calling setServiceInfo.
 
 Must be one or more (separated by '|') of the following constant values.
 | --- | --- |
@@ -230,7 +230,7 @@ Must be one or more (separated by '|') of the following constant values.
 ```
 android:accessibilityFlags
 ```
-Additional flags as specified in `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#`. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+Additional flags as specified in AccessibilityServiceInfo. This setting can be changed at runtime by calling setServiceInfo.
 
 Must be one or more (separated by '|') of the following constant values.
 | --- | --- |
@@ -362,7 +362,7 @@ May be a reference to another resource, in the form "`@[+][package:]type/name`" 
 ```
 android:interactiveUiTimeout
 ```
-A recommended timeout in milliseconds used in `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#getRecommendedTimeoutMillis(kotlin.Int,%20kotlin.Int)` to return a suitable value for interactive controls. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+A recommended timeout in milliseconds used in getRecommendedTimeoutMillis to return a suitable value for interactive controls. This setting can be changed at runtime by calling setServiceInfo.
 
 May be an integer value, such as "`100`".
 
@@ -391,7 +391,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:nonInteractiveUiTimeout
 ```
-A recommended timeout in milliseconds used in `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#getRecommendedTimeoutMillis(kotlin.Int,%20kotlin.Int)` to return a suitable value for UIs that do not include interactive controls. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+A recommended timeout in milliseconds used in getRecommendedTimeoutMillis to return a suitable value for UIs that do not include interactive controls. This setting can be changed at runtime by calling setServiceInfo.
 
 May be an integer value, such as "`100`".
 
@@ -400,7 +400,7 @@ May be an integer value, such as "`100`".
 ```
 android:notificationTimeout
 ```
-The minimal period in milliseconds between two accessibility events of the same type are sent to this service. This setting can be changed at runtime by calling `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+The minimal period in milliseconds between two accessibility events of the same type are sent to this service. This setting can be changed at runtime by calling setServiceInfo.
 
 May be an integer value, such as "`100`".
 
@@ -409,7 +409,7 @@ May be an integer value, such as "`100`".
 ```
 android:packageNames
 ```
-Comma separated package names from which this service would like to receive events (leave out for all packages). `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.
+Comma separated package names from which this service would like to receive events (leave out for all packages). setServiceInfo.
 
 May be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character;
 
@@ -575,7 +575,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val DEFAULT: Int
 ```
 
-If an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is the default for a given type. Default service is invoked only if no package specific one exists. In case of more than one package specific service only the earlier registered is notified.
+If an AccessibilityService is the default for a given type. Default service is invoked only if no package specific one exists. In case of more than one package specific service only the earlier registered is notified.
 
  Value: 1
 
@@ -714,7 +714,7 @@ This flag makes the AccessibilityService an input method editor with a subset of
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getInputMethod()`
+- getInputMethod
 
 ### FLAG_REPORT_VIEW_IDS
 
@@ -724,7 +724,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_REPORT_VIEW_IDS: Int
 ```
 
-This flag requests that the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#`s obtained by an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` contain the id of the source view. The source view id will be a fully qualified resource name of the form "package:id/name", for example "foo.bar:id/my_list", and it is useful for UI test automation. This flag is not set by default.
+This flag requests that the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#`s obtained by an AccessibilityService contain the id of the source view. The source view id will be a fully qualified resource name of the form "package:id/name", for example "foo.bar:id/my_list", and it is useful for UI test automation. This flag is not set by default.
 
  Value: 16
 
@@ -806,7 +806,7 @@ Services that want to set this flag have to declare the capability to retrieve w
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/R.styleable.html#AccessibilityService_canRequestFingerprintGestures:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getFingerprintGestureController()`
+- getFingerprintGestureController
 
 ### FLAG_REQUEST_MULTI_FINGER_GESTURES
 
@@ -864,7 +864,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_RETRIEVE_INTERACTIVE_WINDOWS: Int
 ```
 
-This flag indicates to the system that the accessibility service wants to access content of all interactive windows. An interactive window is a window that has input focus or can be touched by a sighted user when explore by touch is not enabled. If this flag is not set your service will not receive `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED:kotlin.Int` events, calling AccessibilityService`https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getWindows()` will return an empty list, and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#getWindow()` will return null.
+This flag indicates to the system that the accessibility service wants to access content of all interactive windows. An interactive window is a window that has input focus or can be touched by a sighted user when explore by touch is not enabled. If this flag is not set your service will not receive `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#TYPE_WINDOWS_CHANGED:kotlin.Int` events, calling AccessibilityServicegetWindows will return an empty list, and getWindow will return null.
 
 Services that want to set this flag have to declare the capability to retrieve window content in their meta-data by setting the attribute `https://developer.android.com/reference/kotlin/android/R.attr.html#canRetrieveWindowContent:kotlin.Int` to true, otherwise this flag will be ignored. For how to declare the meta-data of a service refer to {@value AccessibilityService#SERVICE_META_DATA}.
 
@@ -946,7 +946,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -1025,7 +1025,7 @@ Deprecated in [API level 18](https://developer.android.com/guide/topics/manifest
 open fun getCanRetrieveWindowContent(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#getCapabilities()`.*
+**Deprecated:** *Use getCapabilities.*
 
 Whether this service can retrieve the current window's content.
 
@@ -1067,7 +1067,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 open fun getDescription(): String!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#loadDescription(android.content.pm.PackageManager)`.*
+**Deprecated:** *Use loadDescription.*
 
 Gets the non-localized description of the accessibility service.
 
@@ -1109,7 +1109,7 @@ Get the recommended timeout for interactive controls.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setInteractiveUiTimeoutMillis(kotlin.Int)`
+- setInteractiveUiTimeoutMillis
 
 ### getMotionEventSources
 
@@ -1141,7 +1141,7 @@ Get the recommended timeout for non-interactive controls.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo#setNonInteractiveUiTimeoutMillis(kotlin.Int)`
+- setNonInteractiveUiTimeoutMillis
 
 ### getResolveInfo
 
@@ -1202,8 +1202,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -1285,7 +1285,7 @@ open fun setInteractiveUiTimeoutMillis(timeout: Int): Unit
 
 Set the recommended time that interactive controls need to remain on the screen to support the user.
 
-**This value can be dynamically set at runtime by `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.**
+**This value can be dynamically set at runtime by setServiceInfo.**
 
 | Parameters ||
 |---|---|
@@ -1307,7 +1307,7 @@ Sets the bit mask of `https://developer.android.com/reference/kotlin/android/vie
 
 Including an `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` source that does not send `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#`s is effectively a no-op for that source, since you will not receive any events from that source.
 
-See `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` for complete source definitions. Many input devices send `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#`s from more than one type of source so you may need to include multiple `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` sources here, in addition to using `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onKeyEvent(android.view.KeyEvent)` to listen to `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`s.
+See `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` for complete source definitions. Many input devices send `https://developer.android.com/reference/kotlin/android/view/InputEvent.html#`s from more than one type of source so you may need to include multiple `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#` sources here, in addition to using onKeyEvent to listen to `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`s.
 
 **Note:** `https://developer.android.com/reference/kotlin/android/view/InputDevice.html#` sources contain source class bits that complicate bitwise flag removal operations. To remove a specific source you should rebuild the entire value using bitwise OR operations on the individual source constants.
 
@@ -1317,7 +1317,7 @@ See `https://developer.android.com/reference/kotlin/android/view/InputDevice.htm
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onMotionEvent(android.view.MotionEvent)`
+- onMotionEvent
 
 ### setNonInteractiveUiTimeoutMillis
 
@@ -1329,7 +1329,7 @@ open fun setNonInteractiveUiTimeoutMillis(timeout: Int): Unit
 
 Set the recommended time that non-interactive controls need to remain on the screen to support the user.
 
-**This value can be dynamically set at runtime by `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)`.**
+**This value can be dynamically set at runtime by setServiceInfo.**
 
 | Parameters ||
 |---|---|
@@ -1392,7 +1392,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 var eventTypes: Int
 ```
 
-The event types an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in.
+The event types an AccessibilityService is interested in.
 
 **Can be dynamically set at runtime.**
 **See Also**
@@ -1429,7 +1429,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 var feedbackType: Int
 ```
 
-The feedback type an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` provides.
+The feedback type an AccessibilityService provides.
 
 **Can be dynamically set at runtime.**
 . 
@@ -1459,7 +1459,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 var flags: Int
 ```
 
-This field represents a set of flags used for configuring an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService`.
+This field represents a set of flags used for configuring an AccessibilityService.
 
 **Can be dynamically set at runtime.**
 
@@ -1486,7 +1486,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 var notificationTimeout: Long
 ```
 
-The timeout, in milliseconds, after the most recent event of a given type before an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is notified.
+The timeout, in milliseconds, after the most recent event of a given type before an AccessibilityService is notified.
 
 **Can be dynamically set at runtime.**
 
@@ -1500,6 +1500,6 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 var packageNames: Array<String!>!
 ```
 
-The package names an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService` is interested in. Setting to `null` is equivalent to all packages.
+The package names an AccessibilityService is interested in. Setting to `null` is equivalent to all packages.
 
 **Can be dynamically set at runtime.**

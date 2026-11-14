@@ -18,31 +18,31 @@ Acts as an holder for a transformation Source in the form of a stream of XML mar
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#FEATURE:kotlin.String` If `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#getFeature(kotlin.String)` returns true when passed this value as an argument, the Transformer supports Source input of this type. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#FEATURE:kotlin.String` If getFeature returns true when passed this value as an argument, the Transformer supports Source input of this type. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource()()` Zero-argument default constructor. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource(java.io.File)(f: https://developer.android.com/reference/kotlin/java/io/File.html#!)` Construct a StreamSource from a File. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Construct a StreamSource from a byte stream. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource(java.io.InputStream,%20kotlin.String)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!, systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Construct a StreamSource from a byte stream. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource(java.io.Reader)(reader: https://developer.android.com/reference/kotlin/java/io/Reader.html#!)` Construct a StreamSource from a character reader. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource(java.io.Reader,%20kotlin.String)(reader: https://developer.android.com/reference/kotlin/java/io/Reader.html#!, systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Construct a StreamSource from a character reader. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#StreamSource(kotlin.String)(systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Construct a StreamSource from a URL. |
+| StreamSource Zero-argument default constructor. |
+| StreamSource Construct a StreamSource from a File. |
+| StreamSource Construct a StreamSource from a byte stream. |
+| StreamSource Construct a StreamSource from a byte stream. |
+| StreamSource Construct a StreamSource from a character reader. |
+| StreamSource Construct a StreamSource from a character reader. |
+| StreamSource Construct a StreamSource from a URL. |
 
 | Public methods ||
 |---|---|
-| open [InputStream](../java.io/InputStream.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getInputStream()()` Get the byte stream that was set with setByteStream. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getPublicId()()` Get the public identifier that was set with setPublicId. |
-| open [Reader](../java.io/Reader.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getReader()()` Get the character stream that was set with setReader. |
+| open [InputStream](../java.io/InputStream.md)! | getInputStream Get the byte stream that was set with setByteStream. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPublicId Get the public identifier that was set with setPublicId. |
+| open [Reader](../java.io/Reader.md)! | getReader Get the character stream that was set with setReader. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#getSystemId()()` Get the system identifier that was set with setSystemId. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setInputStream(java.io.InputStream)(inputStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Set the byte stream to be used as input. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setPublicId(kotlin.String)(publicId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the public identifier for this Source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSystemId Get the system identifier that was set with setSystemId. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInputStream Set the byte stream to be used as input. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPublicId Set the public identifier for this Source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setReader(java.io.Reader)(reader: https://developer.android.com/reference/kotlin/java/io/Reader.html#!)` Set the input to be a character reader. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setSystemId(java.io.File)(f: https://developer.android.com/reference/kotlin/java/io/File.html#!)` Set the system ID from a File reference. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setSystemId(kotlin.String)(systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the system identifier for this Source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setReader Set the input to be a character reader. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSystemId Set the system ID from a File reference. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSystemId Set the system identifier for this Source. |
 | --- | --- |
 
 ## Constants
@@ -55,7 +55,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val FEATURE: String
 ```
 
-If `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#getFeature(kotlin.String)` returns true when passed this value as an argument, the Transformer supports Source input of this type.
+If getFeature returns true when passed this value as an argument, the Transformer supports Source input of this type.
 
  Value: "http://javax.xml.transform.stream.StreamSource/feature"
 
@@ -69,10 +69,10 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 StreamSource()
 ```
 
-Zero-argument default constructor. If this constructor is used, and no Stream source is set using `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setInputStream(java.io.InputStream)` or `https://developer.android.com/reference/kotlin/javax/xml/transform/stream/StreamSource#setReader(java.io.Reader)`, then the `Transformer` will create an empty source `https://developer.android.com/reference/kotlin/java/io/InputStream.html#` using `https://developer.android.com/reference/kotlin/java/io/InputStream.html#InputStream()`.
+Zero-argument default constructor. If this constructor is used, and no Stream source is set using setInputStream or setReader, then the `Transformer` will create an empty source `https://developer.android.com/reference/kotlin/java/io/InputStream.html#` using InputStream.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,%20javax.xml.transform.Result)`
+- transform
 
 ### StreamSource
 

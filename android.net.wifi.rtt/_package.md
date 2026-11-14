@@ -9,7 +9,7 @@ Kotlin | [Java](_package.md)
 | --- | --- |
 | [PasnConfig](PasnConfig.md) | Pre-association security negotiation (PASN) configuration. |
 | [RangingRequest](RangingRequest.md) | Defines the ranging request to other devices. |
-| [RangingResult](RangingResult.md) | Ranging result for a request started by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`. |
+| [RangingResult](RangingResult.md) | Ranging result for a request started by startRanging. |
 | --- | --- |
 | [RangingResultCallback](RangingResultCallback.md) | Base class for ranging result callbacks. |
 | [ResponderConfig](ResponderConfig.md) | Defines the configuration of an IEEE 802. |

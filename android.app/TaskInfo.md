@@ -19,9 +19,9 @@ Stores information about a particular Task.
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#getDisplayId()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#isVisible()()` Whether this task is visible. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/TaskInfo#toString()()` Returns a string representation of the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDisplayId <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVisible Whether this task is visible. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 | Properties ||
@@ -135,7 +135,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 var taskDescription: ActivityManager.TaskDescription?
 ```
 
-The recent activity values for the highest activity in the stack to have set the values. `https://developer.android.com/reference/kotlin/android/app/Activity#setTaskDescription(android.app.ActivityManager.TaskDescription)`.
+The recent activity values for the highest activity in the stack to have set the values. setTaskDescription.
 
 ### taskId
 

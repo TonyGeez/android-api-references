@@ -10,9 +10,9 @@ open class SpeechRecognizer
 | --- | --- |
 | ↳ | [android.speech.SpeechRecognizer](SpeechRecognizer.md) |
 
-This class provides access to the speech recognition service. This service allows access to the speech recognizer. Do not instantiate this class directly, instead, call `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)`. This class's methods must be invoked only from the main application thread.
+This class provides access to the speech recognition service. This service allows access to the speech recognizer. Do not instantiate this class directly, instead, call createSpeechRecognizer. This class's methods must be invoked only from the main application thread.
 
-**Important:** the caller MUST invoke `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#destroy()` on a SpeechRecognizer object when it is no longer needed.
+**Important:** the caller MUST invoke destroy on a SpeechRecognizer object when it is no longer needed.
 
 The implementation of this API is likely to stream audio to remote servers to perform speech recognition. As such this API is not intended to be used for continuous recognition, which would consume a significant amount of battery and bandwidth.
 
@@ -22,7 +22,7 @@ Please note that the application must have `https://developer.android.com/refere
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#CONFIDENCE_SCORES:kotlin.String` Key used to retrieve a float array from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)` methods. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#CONFIDENCE_SCORES:kotlin.String` Key used to retrieve a float array from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onPartialResults methods. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String` Key used to retrieve a `https://developer.android.com/reference/kotlin/java/lang/String.html#` representation of the IETF language tag (as defined by BCP 47, e.g., "en-US", "de-DE") of the detected language of the most recent audio chunk. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#ERROR_AUDIO:kotlin.Int` Audio recording error. |
 | --- | --- |
@@ -58,31 +58,31 @@ Please note that the application must have `https://developer.android.com/refere
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#LANGUAGE_SWITCH_RESULT_SKIPPED_NO_MODEL:kotlin.Int` Switch skipped because the language model is missing or the language is not allowlisted for auto switch. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#LANGUAGE_SWITCH_RESULT_SUCCEEDED:kotlin.Int` Switch attempted and succeeded. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RECOGNITION_PARTS:kotlin.String` Key used to receive an ArrayList\<`https://developer.android.com/reference/kotlin/android/speech/RecognitionPart`\> object from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onSegmentResults(android.os.Bundle)` methods. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_ALTERNATIVES:kotlin.String` Key used to retrieve an ArrayList\<`https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans`\> from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)` methods. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` Key used to retrieve an `ArrayList<String>` from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)` methods. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RECOGNITION_PARTS:kotlin.String` Key used to receive an ArrayList\<RecognitionPart\> object from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onSegmentResults methods. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_ALTERNATIVES:kotlin.String` Key used to retrieve an ArrayList\<AlternativeSpans\> from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onPartialResults methods. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String` Key used to retrieve an `ArrayList<String>` from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onPartialResults methods. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#TOP_LOCALE_ALTERNATIVES:kotlin.String` Key used to retrieve an ArrayList\<`https://developer.android.com/reference/kotlin/java/lang/String.html#`\> containing representations of the IETF language tags (as defined by BCP 47, e.g., "en-US", "en-UK") denoting the alternative locales for the same language retrieved by the key |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#cancel()()` Cancels the speech recognition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#checkRecognitionSupport(android.content.Intent,%20java.util.concurrent.Executor,%20android.speech.RecognitionSupportCallback)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, supportListener: https://developer.android.com/reference/kotlin/android/speech/RecognitionSupportCallback)` Checks whether `recognizerIntent` is supported by `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#startListening(android.content.Intent)`. |
-| open static [SpeechRecognizer](SpeechRecognizer.md) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createOnDeviceSpeechRecognizer(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method to create a new `SpeechRecognizer`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancels the speech recognition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | checkRecognitionSupport Checks whether `recognizerIntent` is supported by startListening. |
+| open static [SpeechRecognizer](SpeechRecognizer.md) | createOnDeviceSpeechRecognizer Factory method to create a new `SpeechRecognizer`. |
 | --- | --- |
-| open static [SpeechRecognizer](SpeechRecognizer.md)! | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Factory method to create a new `SpeechRecognizer`. |
-| open static [SpeechRecognizer](SpeechRecognizer.md)! | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context,%20android.content.ComponentName)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, serviceComponent: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Factory method to create a new `SpeechRecognizer`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#destroy()()` Destroys the `SpeechRecognizer` object. |
+| open static [SpeechRecognizer](SpeechRecognizer.md)! | createSpeechRecognizer Factory method to create a new `SpeechRecognizer`. |
+| open static [SpeechRecognizer](SpeechRecognizer.md)! | createSpeechRecognizer Factory method to create a new `SpeechRecognizer`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | destroy Destroys the `SpeechRecognizer` object. |
 | --- | --- |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#isOnDeviceRecognitionAvailable(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Checks whether an on-device speech recognition service is available on the system. |
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#isRecognitionAvailable(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Checks whether a speech recognition service is available on the system. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)(listener: https://developer.android.com/reference/kotlin/android/speech/RecognitionListener!)` Sets the listener that will receive all the callbacks. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOnDeviceRecognitionAvailable Checks whether an on-device speech recognition service is available on the system. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRecognitionAvailable Checks whether a speech recognition service is available on the system. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRecognitionListener Sets the listener that will receive all the callbacks. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#startListening(android.content.Intent)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Starts listening for speech. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#stopListening()()` Stops listening for speech. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#triggerModelDownload(android.content.Intent)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Attempts to download the support for the given `recognizerIntent`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startListening Starts listening for speech. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopListening Stops listening for speech. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | triggerModelDownload Attempts to download the support for the given `recognizerIntent`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#triggerModelDownload(android.content.Intent,%20java.util.concurrent.Executor,%20android.speech.ModelDownloadListener)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener)` Attempts to download the support for the given `recognizerIntent`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | triggerModelDownload Attempts to download the support for the given `recognizerIntent`. |
 
 ## Constants
 
@@ -94,7 +94,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val CONFIDENCE_SCORES: String
 ```
 
-Key used to retrieve a float array from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)` methods. The array should be the same size as the ArrayList provided in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String`, and should contain values ranging from 0.0 to 1.0, or -1 to represent an unavailable confidence score.
+Key used to retrieve a float array from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onPartialResults methods. The array should be the same size as the ArrayList provided in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String`, and should contain values ranging from 0.0 to 1.0, or -1 to represent an unavailable confidence score.
 
 Confidence values close to 1.0 indicate high confidence (the speech recognizer is confident that the recognition result is correct), while values close to 0.0 indicate low confidence.
 
@@ -112,7 +112,7 @@ static val DETECTED_LANGUAGE: String
 
 Key used to retrieve a `https://developer.android.com/reference/kotlin/java/lang/String.html#` representation of the IETF language tag (as defined by BCP 47, e.g., "en-US", "de-DE") of the detected language of the most recent audio chunk.
 
-This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onLanguageDetection(android.os.Bundle)` only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_DETECTION:kotlin.String` is set. Additionally, if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_LANGUAGE_DETECTION_ALLOWED_LANGUAGES:kotlin.String` are listed, the detected language is constrained to be one from the list.
+This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to onLanguageDetection only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_DETECTION:kotlin.String` is set. Additionally, if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_LANGUAGE_DETECTION_ALLOWED_LANGUAGES:kotlin.String` are listed, the detected language is constrained to be one from the list.
 
  Value: "detected_language"
 
@@ -306,7 +306,7 @@ static val LANGUAGE_DETECTION_CONFIDENCE_LEVEL: String
 
 Key used to retrieve the level of confidence of the detected language of the most recent audio chunk, represented by an `int` value prefixed by `LANGUAGE_DETECTION_CONFIDENCE_LEVEL_`.
 
-This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onLanguageDetection(android.os.Bundle)` only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_DETECTION:kotlin.String` is set.
+This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to onLanguageDetection only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_DETECTION:kotlin.String` is set.
 
  Value: "language_detection_confidence_level"
 
@@ -360,7 +360,7 @@ static val LANGUAGE_SWITCH_RESULT: String
 
 Key used to retrieve the result of the language switch of the most recent audio chunk, represented by an `int` value prefixed by `LANGUAGE_SWITCH_`.
 
-This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onLanguageDetection(android.os.Bundle)` only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_SWITCH:kotlin.String` is set.
+This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onLanguageDetection only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_SWITCH:kotlin.String` is set.
 
  Value: "language_switch_result"
 
@@ -420,9 +420,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val RECOGNITION_PARTS: String
 ```
 
-Key used to receive an ArrayList\<`https://developer.android.com/reference/kotlin/android/speech/RecognitionPart`\> object from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onSegmentResults(android.os.Bundle)` methods.
+Key used to receive an ArrayList\<RecognitionPart\> object from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onSegmentResults methods.
 
-A single `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#` result is represented as a `https://developer.android.com/reference/kotlin/java/lang/String.html#`. Each word of the resulting String, as well as any potential adjacent punctuation, is represented by a `https://developer.android.com/reference/kotlin/android/speech/RecognitionPart` item from the ArrayList retrieved by this key.
+A single SpeechRecognizer result is represented as a `https://developer.android.com/reference/kotlin/java/lang/String.html#`. Each word of the resulting String, as well as any potential adjacent punctuation, is represented by a RecognitionPart item from the ArrayList retrieved by this key.
 
  Value: "recognition_parts"
 
@@ -434,9 +434,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val RESULTS_ALTERNATIVES: String
 ```
 
-Key used to retrieve an ArrayList\<`https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans`\> from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)` methods. The list should be the same size as the ArrayList provided in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String`.
+Key used to retrieve an ArrayList\<AlternativeSpans\> from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onPartialResults methods. The list should be the same size as the ArrayList provided in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String`.
 
-A single `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#` result is represented as a `https://developer.android.com/reference/kotlin/java/lang/String.html#`. For a specific span (substring) of the originally recognized result string the recognizer provides a list of alternative hypotheses in the form of an `https://developer.android.com/reference/kotlin/android/speech/AlternativeSpan` object. Alternatives for different spans of a result string are listed in an `https://developer.android.com/reference/kotlin/android/speech/AlternativeSpans` object. Each item from the ArrayList retrieved by this key corresponds to a single result string provided in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String`.
+A single SpeechRecognizer result is represented as a `https://developer.android.com/reference/kotlin/java/lang/String.html#`. For a specific span (substring) of the originally recognized result string the recognizer provides a list of alternative hypotheses in the form of an AlternativeSpan object. Alternatives for different spans of a result string are listed in an AlternativeSpans object. Each item from the ArrayList retrieved by this key corresponds to a single result string provided in `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#RESULTS_RECOGNITION:kotlin.String`.
 
 This value is optional and might not be provided.
 
@@ -450,7 +450,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val RESULTS_RECOGNITION: String
 ```
 
-Key used to retrieve an `ArrayList<String>` from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` and `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onPartialResults(android.os.Bundle)` methods. These strings are the possible recognition results, where the first element is the most likely candidate.
+Key used to retrieve an `ArrayList<String>` from the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to the onResults and onPartialResults methods. These strings are the possible recognition results, where the first element is the most likely candidate.
 
  Value: "results_recognition"
 
@@ -462,7 +462,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TOP_LOCALE_ALTERNATIVES: String
 ```
 
-Key used to retrieve an ArrayList\<`https://developer.android.com/reference/kotlin/java/lang/String.html#`\> containing representations of the IETF language tags (as defined by BCP 47, e.g., "en-US", "en-UK") denoting the alternative locales for the same language retrieved by the key `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String`. This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onLanguageDetection(android.os.Bundle)` only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_DETECTION:kotlin.String` is set.
+Key used to retrieve an ArrayList\<`https://developer.android.com/reference/kotlin/java/lang/String.html#`\> containing representations of the IETF language tags (as defined by BCP 47, e.g., "en-US", "en-UK") denoting the alternative locales for the same language retrieved by the key `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#DETECTED_LANGUAGE:kotlin.String`. This info is returned to the client in the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` passed to onLanguageDetection only if `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent#EXTRA_ENABLE_LANGUAGE_DETECTION:kotlin.String` is set.
 
  Value: "top_locale_alternatives"
 
@@ -476,7 +476,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun cancel(): Unit
 ```
 
-Cancels the speech recognition. Please note that `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)` should be called beforehand, otherwise no notifications will be received. 
+Cancels the speech recognition. Please note that setRecognitionListener should be called beforehand, otherwise no notifications will be received. 
 This method must be called from the main thread of your app.
 
 ### checkRecognitionSupport
@@ -491,12 +491,12 @@ open fun checkRecognitionSupport(
 ): Unit
 ```
 
-Checks whether `recognizerIntent` is supported by `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#startListening(android.content.Intent)`.
+Checks whether `recognizerIntent` is supported by startListening.
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras. See `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent` for the list of supported extras, any unlisted extra might be ignored. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras. See RecognizerIntent for the list of supported extras, any unlisted extra might be ignored. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `supportListener` | [RecognitionSupportCallback](RecognitionSupportCallback.md): the listener on which to receive the support query results. This value cannot be `null`. |
 | --- | --- |
 
@@ -510,9 +510,9 @@ open static fun createOnDeviceSpeechRecognizer(context: Context): SpeechRecogni
 
 Factory method to create a new `SpeechRecognizer`.
 
-Please note that `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)` should be called before dispatching any command to the created `SpeechRecognizer`, otherwise no notifications will be received.
+Please note that setRecognitionListener should be called before dispatching any command to the created `SpeechRecognizer`, otherwise no notifications will be received.
 
-**Important:** the caller MUST invoke `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#destroy()` on a SpeechRecognizer object when it is no longer needed. 
+**Important:** the caller MUST invoke destroy on a SpeechRecognizer object when it is no longer needed. 
 This method must be called from the main thread of your app.
 
 | Parameters ||
@@ -521,11 +521,11 @@ This method must be called from the main thread of your app.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#` | a new on-device `SpeechRecognizer`. This value cannot be `null`. |
+| SpeechRecognizer | a new on-device `SpeechRecognizer`. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.UnsupportedOperationException` | iff `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#isOnDeviceRecognitionAvailable(android.content.Context)` is false |
+| `java.lang.UnsupportedOperationException` | iff isOnDeviceRecognitionAvailable is false |
 
 ### createSpeechRecognizer
 
@@ -535,9 +535,9 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open static fun createSpeechRecognizer(context: Context!): SpeechRecognizer!
 ```
 
-Factory method to create a new `SpeechRecognizer`. Please note that `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)` should be called before dispatching any command to the created `SpeechRecognizer`, otherwise no notifications will be received.
+Factory method to create a new `SpeechRecognizer`. Please note that setRecognitionListener should be called before dispatching any command to the created `SpeechRecognizer`, otherwise no notifications will be received.
 
-**Important:** the caller MUST invoke `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#destroy()` on a SpeechRecognizer object when it is no longer needed.
+**Important:** the caller MUST invoke destroy on a SpeechRecognizer object when it is no longer needed.
 
 For apps targeting Android 11 (API level 30) interaction with a speech recognition service requires element to be added to the manifest file:
 
@@ -572,11 +572,11 @@ open static fun createSpeechRecognizer(
 ): SpeechRecognizer!
 ```
 
-Factory method to create a new `SpeechRecognizer`. Please note that `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)` should be called before dispatching any command to the created `SpeechRecognizer`, otherwise no notifications will be received. Use this version of the method to specify a specific service to direct this `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#` to.
+Factory method to create a new `SpeechRecognizer`. Please note that setRecognitionListener should be called before dispatching any command to the created `SpeechRecognizer`, otherwise no notifications will be received. Use this version of the method to specify a specific service to direct this SpeechRecognizer to.
 
-**Important:** the caller MUST invoke `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#destroy()` on a SpeechRecognizer object when it is no longer needed.
+**Important:** the caller MUST invoke destroy on a SpeechRecognizer object when it is no longer needed.
 
-**Important** : before calling this method, please check via `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent,%20kotlin.Int)` that `serviceComponent` actually exists and provides `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#SERVICE_INTERFACE:kotlin.String`. Normally you would not use this; call `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)` to use the system default recognition service instead.
+**Important** : before calling this method, please check via queryIntentServices that `serviceComponent` actually exists and provides `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#SERVICE_INTERFACE:kotlin.String`. Normally you would not use this; call createSpeechRecognizer to use the system default recognition service instead.
 
 For apps targeting Android 11 (API level 30) interaction with a speech recognition service requires element to be added to the manifest file:
 
@@ -619,7 +619,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun isOnDeviceRecognitionAvailable(context: Context): Boolean
 ```
 
-Checks whether an on-device speech recognition service is available on the system. If this method returns `false`, `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createOnDeviceSpeechRecognizer(android.content.Context)` will fail.
+Checks whether an on-device speech recognition service is available on the system. If this method returns `false`, createOnDeviceSpeechRecognizer will fail.
 
 | Parameters ||
 |---|---|
@@ -637,7 +637,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open static fun isRecognitionAvailable(context: Context): Boolean
 ```
 
-Checks whether a speech recognition service is available on the system. If this method returns `false`, `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)` will fail.
+Checks whether a speech recognition service is available on the system. If this method returns `false`, createSpeechRecognizer will fail.
 
 | Parameters ||
 |---|---|
@@ -660,7 +660,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `listener` | [RecognitionListener](RecognitionListener.md)!: listener that will receive all the callbacks from the created `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#`, this must not be null. |
+| `listener` | [RecognitionListener](RecognitionListener.md)!: listener that will receive all the callbacks from the created SpeechRecognizer, this must not be null. |
 
 ### startListening
 
@@ -670,12 +670,12 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun startListening(recognizerIntent: Intent!): Unit
 ```
 
-Starts listening for speech. Please note that `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)` should be called beforehand, otherwise no notifications will be received. 
+Starts listening for speech. Please note that setRecognitionListener should be called beforehand, otherwise no notifications will be received. 
 This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android.content/Intent.md)!: contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. If these values are not set explicitly, default values will be used by the recognizer. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md)!: contains parameters for the recognition to be performed. The intent may also contain optional extras, see RecognizerIntent. If these values are not set explicitly, default values will be used by the recognizer. |
 
 ### stopListening
 
@@ -687,11 +687,11 @@ open fun stopListening(): Unit
 
 Stops listening for speech. Speech captured so far will be recognized as if the user had stopped speaking at this point.
 
-Note that in the default case, this does not need to be called, as the speech endpointer will automatically stop the recognizer listening when it determines speech has completed. However, you can manipulate endpointer parameters directly using the intent extras defined in `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`, in which case you may sometimes want to manually call this method to stop listening sooner.
+Note that in the default case, this does not need to be called, as the speech endpointer will automatically stop the recognizer listening when it determines speech has completed. However, you can manipulate endpointer parameters directly using the intent extras defined in RecognizerIntent, in which case you may sometimes want to manually call this method to stop listening sooner.
 
-Upon invocation clients must wait until `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onResults(android.os.Bundle)` or `https://developer.android.com/reference/kotlin/android/speech/RecognitionListener#onError(kotlin.Int)` are invoked before calling `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#startListening(android.content.Intent)` again. Otherwise such an attempt would be rejected by recognition service.
+Upon invocation clients must wait until onResults or onError are invoked before calling startListening again. Otherwise such an attempt would be rejected by recognition service.
 
-Please note that `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#setRecognitionListener(android.speech.RecognitionListener)` should be called beforehand, otherwise no notifications will be received. 
+Please note that setRecognitionListener should be called beforehand, otherwise no notifications will be received. 
 This method must be called from the main thread of your app.
 
 ### triggerModelDownload
@@ -702,11 +702,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun triggerModelDownload(recognizerIntent: Intent): Unit
 ```
 
-Attempts to download the support for the given `recognizerIntent`. This might trigger user interaction to approve the download. Callers can verify the status of the request via `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#checkRecognitionSupport(android.content.Intent,%20java.util.concurrent.Executor,%20android.speech.RecognitionSupportCallback)`.
+Attempts to download the support for the given `recognizerIntent`. This might trigger user interaction to approve the download. Callers can verify the status of the request via checkRecognitionSupport.
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see RecognizerIntent. This value cannot be `null`. |
 
 ### triggerModelDownload
 
@@ -720,17 +720,17 @@ open fun triggerModelDownload(
 ): Unit
 ```
 
-Attempts to download the support for the given `recognizerIntent`. This might trigger user interaction to approve the download. Callers can verify the status of the request via `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#checkRecognitionSupport(android.content.Intent,%20java.util.concurrent.Executor,%20android.speech.RecognitionSupportCallback)`.
+Attempts to download the support for the given `recognizerIntent`. This might trigger user interaction to approve the download. Callers can verify the status of the request via checkRecognitionSupport.
 
-The updates about the model download request are received via the given `https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener`:
-- If the model is already available, `https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onSuccess()` will be called directly. The model can be safely used afterwards.
-- If the `https://developer.android.com/reference/kotlin/android/speech/RecognitionService` has started the download, `https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onProgress(kotlin.Int)` will be called an unspecified (zero or more) number of times until the download is complete. When the download finishes, `https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onSuccess()` will be called. The model can be safely used afterwards.
-- If the `https://developer.android.com/reference/kotlin/android/speech/RecognitionService` has only scheduled the download, but won't satisfy it immediately, `https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onScheduled()` will be called. There will be no further updates on this listener.
-- If the request fails at any time due to a network or scheduling error, `https://developer.android.com/reference/kotlin/android/speech/ModelDownloadListener#onError(kotlin.Int)` will be called.
+The updates about the model download request are received via the given ModelDownloadListener:
+- If the model is already available, onSuccess will be called directly. The model can be safely used afterwards.
+- If the RecognitionService has started the download, onProgress will be called an unspecified (zero or more) number of times until the download is complete. When the download finishes, onSuccess will be called. The model can be safely used afterwards.
+- If the RecognitionService has only scheduled the download, but won't satisfy it immediately, onScheduled will be called. There will be no further updates on this listener.
+- If the request fails at any time due to a network or scheduling error, onError will be called.
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): for dispatching listener callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see RecognizerIntent. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): for dispatching listener callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [ModelDownloadListener](ModelDownloadListener.md): on which to receive updates about the model download request. This value cannot be `null`. |
 | --- | --- |

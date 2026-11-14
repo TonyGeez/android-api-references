@@ -35,7 +35,7 @@ Certificate input bytes: the input bytes represent the SHA256 output of an encod
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)`: This component or application is in its default enabled state (as specified in its manifest).
+Flag for setApplicationEnabledSetting and setComponentEnabledSetting: This component or application is in its default enabled state (as specified in its manifest).
 
 Explicitly setting the component state to this value restores it's enabled state to whatever is set in the manifest.
 
@@ -43,43 +43,43 @@ Explicitly setting the component state to this value restores it's enabled state
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DISABLED:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)`: This component or application has been explicitly disabled, regardless of what it has specified in its manifest.
+Flag for setApplicationEnabledSetting and setComponentEnabledSetting: This component or application has been explicitly disabled, regardless of what it has specified in its manifest.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DISABLED_UNTIL_USED:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)` only: This application should be considered, until the point where the user actually wants to use it. This means that it will not normally show up to the user (such as in the launcher), but various parts of the user interface can use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#GET_DISABLED_UNTIL_USED_COMPONENTS:kotlin.Int` to still see it and allow the user to select it (as for example an IME, device admin, etc). Such code, once the user has selected the app, should at that point also make it enabled. This option currently **can not** be used with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)`.
+Flag for setApplicationEnabledSetting only: This application should be considered, until the point where the user actually wants to use it. This means that it will not normally show up to the user (such as in the launcher), but various parts of the user interface can use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#GET_DISABLED_UNTIL_USED_COMPONENTS:kotlin.Int` to still see it and allow the user to select it (as for example an IME, device admin, etc). Such code, once the user has selected the app, should at that point also make it enabled. This option currently **can not** be used with setComponentEnabledSetting.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DISABLED_USER:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)` only: The user has explicitly disabled the application, regardless of what it has specified in its manifest. Because this is due to the user's request, they may re-enable it if desired through the appropriate system UI. This option currently **cannot** be used with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)`.
+Flag for setApplicationEnabledSetting only: The user has explicitly disabled the application, regardless of what it has specified in its manifest. Because this is due to the user's request, they may re-enable it if desired through the appropriate system UI. This option currently **cannot** be used with setComponentEnabledSetting.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_ENABLED:kotlin.Int`
 
-Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)`: This component or application has been explictily enabled, regardless of what it has specified in its manifest.
+Flag for setApplicationEnabledSetting and setComponentEnabledSetting: This component or application has been explictily enabled, regardless of what it has specified in its manifest.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#DELETE_ARCHIVE:kotlin.Int`
 
-Flag parameter for `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,%20kotlin.Int,%20android.content.IntentSender)` to indicate that the deletion is an archival. This flag is only for internal usage as part of `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#requestArchive(kotlin.String,%20android.content.IntentSender)`.
+Flag parameter for uninstall to indicate that the deletion is an archival. This flag is only for internal usage as part of requestArchive.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#DONT_KILL_APP:kotlin.Int`
 
-Flag parameter for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)` to indicate that you don't want to kill the app containing the component. Be careful when you set this since changing component states can make the containing application's behavior unpredictable.
+Flag parameter for setComponentEnabledSetting to indicate that you don't want to kill the app containing the component. Be careful when you set this since changing component states can make the containing application's behavior unpredictable.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#EXTRA_VERIFICATION_ID:kotlin.String`
 
-Extra field name for the ID of a package pending verification. Passed to a package verifier and is used to call back to `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#verifyPendingInstall(kotlin.Int,%20kotlin.Int)`
+Extra field name for the ID of a package pending verification. Passed to a package verifier and is used to call back to verifyPendingInstall
 
 <br />
 
@@ -91,277 +91,277 @@ Extra field name for the result of a verification, either `https://developer.and
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_ACTIVITIES_ON_SECONDARY_DISPLAYS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports running activities on secondary displays. Displays here refers to both physical and virtual displays. Disabling this feature can impact support for application projection use-cases and support for virtual devices on the device.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports running activities on secondary displays. Displays here refers to both physical and virtual displays. Disabling this feature can impact support for application projection use-cases and support for virtual devices on the device.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_APP_WIDGETS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports app widgets.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports app widgets.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUDIO_LOW_LATENCY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's audio pipeline is low-latency, more suitable for audio applications sensitive to delays or lag in sound input or output.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's audio pipeline is low-latency, more suitable for audio applications sensitive to delays or lag in sound input or output.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUDIO_OUTPUT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes at least one form of audio output, as defined in the Android Compatibility Definition Document (CDD) [section 7.8 Audio](https://source.android.com/compatibility/android-cdd#7_8_audio).
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes at least one form of audio output, as defined in the Android Compatibility Definition Document (CDD) [section 7.8 Audio](https://source.android.com/compatibility/android-cdd#7_8_audio).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUDIO_PRO:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has professional audio level of functionality and performance.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has professional audio level of functionality and performance.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUDIO_SPATIAL_HEADTRACKING_LOW_LATENCY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature which indicates whether head tracking for spatial audio operates with low-latency, as defined by the CDD criteria for the feature.
+Feature for getSystemAvailableFeatures and #hasSystemFeature which indicates whether head tracking for spatial audio operates with low-latency, as defined by the CDD criteria for the feature.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUTOFILL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports autofill of user credentials, addresses, credit cards, etc via integration with `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports autofill of user credentials, addresses, credit cards, etc via integration with `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#`.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUTOMOTIVE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This is a device dedicated to showing UI on a vehicle headunit. A headunit here is defined to be inside a vehicle that may or may not be moving. A headunit uses either a primary display in the center console and/or additional displays in the instrument cluster or elsewhere in the vehicle. Headunit display(s) have limited size and resolution. The user will likely be focused on driving so limiting driver distraction is a primary concern. User input can be a variety of hard buttons, touch, rotary controllers and even mouse- like interfaces.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This is a device dedicated to showing UI on a vehicle headunit. A headunit here is defined to be inside a vehicle that may or may not be moving. A headunit uses either a primary display in the center console and/or additional displays in the instrument cluster or elsewhere in the vehicle. Headunit display(s) have limited size and resolution. The user will likely be focused on driving so limiting driver distraction is a primary concern. User input can be a variety of hard buttons, touch, rotary controllers and even mouse- like interfaces.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_BACKUP:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device can perform backup and restore operations on installed applications.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device can perform backup and restore operations on installed applications.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is capable of communicating with other devices via Bluetooth.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is capable of communicating with other devices via Bluetooth.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH_LE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is capable of communicating with other devices via Bluetooth Low Energy radio.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is capable of communicating with other devices via Bluetooth Low Energy radio.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH_LE_CHANNEL_SOUNDING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is capable of ranging with other devices using channel sounding via Bluetooth Low Energy radio.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is capable of ranging with other devices using channel sounding via Bluetooth Low Energy radio.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a camera facing away from the screen.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a camera facing away from the screen.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_ANY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has at least one camera pointing in some direction, or can support an external or a `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice.html#` camera being connected to it.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has at least one camera pointing in some direction, or can support an external or a `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDevice.html#` camera being connected to it.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_AR:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MOTION_TRACKING:kotlin.Int` capability level.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MOTION_TRACKING:kotlin.Int` capability level.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_AUTOFOCUS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's camera supports auto-focus.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's camera supports auto-focus.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_CAPABILITY_MANUAL_POST_PROCESSING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MANUAL_POST_PROCESSING:kotlin.Int` capability level.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MANUAL_POST_PROCESSING:kotlin.Int` capability level.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_CAPABILITY_MANUAL_SENSOR:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MANUAL_SENSOR:kotlin.Int` capability level.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_MANUAL_SENSOR:kotlin.Int` capability level.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_CAPABILITY_RAW:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_RAW:kotlin.Int` capability level.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_RAW:kotlin.Int` capability level.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_CONCURRENT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's main front and back cameras can stream concurrently as described in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#getConcurrentCameraIds()`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's main front and back cameras can stream concurrently as described in getConcurrentCameraIds.
 
 <br />
 
-While `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#getConcurrentCameraIds()` and associated APIs are only available on API level 30 or newer, this feature flag may be advertised by devices on API levels below 30. If present on such a device, the same guarantees hold: The main front and main back camera can be used at the same time, with guaranteed stream configurations as defined in the table for concurrent streaming at `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`.
+While getConcurrentCameraIds and associated APIs are only available on API level 30 or newer, this feature flag may be advertised by devices on API levels below 30. If present on such a device, the same guarantees hold: The main front and main back camera can be used at the same time, with guaranteed stream configurations as defined in the table for concurrent streaming at createCaptureSession.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_EXTERNAL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device can support having an external camera connected to it. The external camera may not always be connected or available to applications to use.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device can support having an external camera connected to it. The external camera may not always be connected or available to applications to use.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_FLASH:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's camera supports flash.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's camera supports flash.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_FRONT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a front facing camera.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a front facing camera.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CAMERA_LEVEL_FULL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` capability level.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: At least one of the cameras on the device supports the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` capability level.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CANT_SAVE_STATE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports the `https://developer.android.com/reference/kotlin/android/R.attr.html#cantSaveState:kotlin.Int` API.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports the `https://developer.android.com/reference/kotlin/android/R.attr.html#cantSaveState:kotlin.Int` API.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports android.companion.CompanionDeviceManager#associate with devices via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports android.companion.CompanionDeviceManager#associate with devices via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CONNECTION_SERVICE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The Connection Service API is enabled on the device.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The Connection Service API is enabled on the device.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CONSUMER_IR:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is capable of communicating with consumer IR devices.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is capable of communicating with consumer IR devices.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CONTROLS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports a system interface for the user to select and bind device control services provided by applications.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports a system interface for the user to select and bind device control services provided by applications.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_CREDENTIALS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports retrieval of user credentials, via integration with credential providers.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports retrieval of user credentials, via integration with credential providers.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_DEVICE_ADMIN:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports device policy enforcement via device admins.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports device policy enforcement via device admins.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_DEVICE_ID_ATTESTATION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a KeyMint (or Keymaster) implementation that supports device ID attestation. See [the public documentation](https://source.android.com/docs/security/features/keystore/attestation#id-attestation) for more information about device ID attestation.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a KeyMint (or Keymaster) implementation that supports device ID attestation. See [the public documentation](https://source.android.com/docs/security/features/keystore/attestation#id-attestation) for more information about device ID attestation.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_DEVICE_LOCK:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports locking (for example, by a financing provider in case of a missed payment).
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports locking (for example, by a financing provider in case of a missed payment).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_EMBEDDED:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This is a device for IoT and may not have an UI. An embedded device is defined as a full stack Android device with or without a display and no user-installable apps.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This is a device for IoT and may not have an UI. An embedded device is defined as a full stack Android device with or without a display and no user-installable apps.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_ETHERNET:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This device supports ethernet.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This device supports ethernet.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_EXPANDED_PICTURE_IN_PICTURE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports expanded picture-in-picture multi-window mode.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports expanded picture-in-picture multi-window mode.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FACE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has biometric hardware to perform face authentication.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has biometric hardware to perform face authentication.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device does not have a touch screen, but does support touch emulation for basic events. For instance, the device might use a mouse or remote control to drive a cursor, and emulate basic touch pointer events like down, up, drag, etc. All devices that support android.hardware.touchscreen or a sub-feature are presumed to also support faketouch.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device does not have a touch screen, but does support touch emulation for basic events. For instance, the device might use a mouse or remote control to drive a cursor, and emulate basic touch pointer events like down, up, drag, etc. All devices that support android.hardware.touchscreen or a sub-feature are presumed to also support faketouch.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH_MULTITOUCH_DISTINCT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device does not have a touch screen, but does support touch emulation for basic events that supports distinct tracking of two or more fingers. This is an extension of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH:kotlin.String` for input devices with this capability. Note that unlike a distinct multitouch screen as defined by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT:kotlin.String`, these kinds of input devices will not actually provide full two-finger gestures since the input is being transformed to cursor movement on the screen. That is, single finger gestures will move a cursor; two-finger swipes will result in single-finger touch events; other two-finger gestures will result in the corresponding two-finger touch event.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device does not have a touch screen, but does support touch emulation for basic events that supports distinct tracking of two or more fingers. This is an extension of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH:kotlin.String` for input devices with this capability. Note that unlike a distinct multitouch screen as defined by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT:kotlin.String`, these kinds of input devices will not actually provide full two-finger gestures since the input is being transformed to cursor movement on the screen. That is, single finger gestures will move a cursor; two-finger swipes will result in single-finger touch events; other two-finger gestures will result in the corresponding two-finger touch event.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH_MULTITOUCH_JAZZHAND:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device does not have a touch screen, but does support touch emulation for basic events that supports tracking a hand of fingers (5 or more fingers) fully independently. This is an extension of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH:kotlin.String` for input devices with this capability. Note that unlike a multitouch screen as defined by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH_JAZZHAND:kotlin.String`, not all two finger gestures can be detected due to the limitations described for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH_MULTITOUCH_DISTINCT:kotlin.String`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device does not have a touch screen, but does support touch emulation for basic events that supports tracking a hand of fingers (5 or more fingers) fully independently. This is an extension of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH:kotlin.String` for input devices with this capability. Note that unlike a multitouch screen as defined by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH_JAZZHAND:kotlin.String`, not all two finger gestures can be detected due to the limitations described for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FAKETOUCH_MULTITOUCH_DISTINCT:kotlin.String`.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FINGERPRINT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has biometric hardware to detect a fingerprint.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has biometric hardware to detect a fingerprint.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FREEFORM_WINDOW_MANAGEMENT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports freeform window management. Windows have title bars and can be moved and resized.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports freeform window management. Windows have title bars and can be moved and resized.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_GAMEPAD:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has all of the inputs necessary to be considered a compatible game controller, or includes a compatible game controller in the box.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has all of the inputs necessary to be considered a compatible game controller, or includes a compatible game controller in the box.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_HARDWARE_KEYSTORE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the device implements the Android Keystore backed by an isolated execution environment. The version indicates which features are implemented in the isolated execution environment:
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the device implements the Android Keystore backed by an isolated execution environment. The version indicates which features are implemented in the isolated execution environment:
 
 - 500: Hardware support for ML-DSA signature generation.
 - 400: Inclusion of module information (via tag MODULE_HASH) in the attestation record.
 - 300: Ability to include a second IMEI in the ID attestation record, see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#ID_TYPE_IMEI:kotlin.Int`.
 - 200: Hardware support for Curve 25519 (including both Ed25519 signature generation and X25519 key agreement).
-- 100: Hardware support for ECDH (see `https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement.html#`) and support for app-generated attestation keys (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setAttestKeyAlias(kotlin.String)`).
-- 41: Hardware enforcement of device-unlocked keys (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setUnlockedDeviceRequired(kotlin.Boolean)`).
-- 40: Support for wrapped key import (see `https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry.html#`), optional support for ID attestation (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setDevicePropertiesAttestationIncluded(kotlin.Boolean)`), attestation (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setAttestationChallenge(kotlin.ByteArray)`), AES, HMAC, ECDSA and RSA support where the secret or private key never leaves secure hardware, and support for requiring user authentication before a key can be used.
+- 100: Hardware support for ECDH (see `https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement.html#`) and support for app-generated attestation keys (see setAttestKeyAlias).
+- 41: Hardware enforcement of device-unlocked keys (see setUnlockedDeviceRequired).
+- 40: Support for wrapped key import (see `https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry.html#`), optional support for ID attestation (see setDevicePropertiesAttestationIncluded), attestation (see setAttestationChallenge), AES, HMAC, ECDSA and RSA support where the secret or private key never leaves secure hardware, and support for requiring user authentication before a key can be used.
 
 This feature version is guaranteed to be set for all devices launching with Android 12 and may be set on devices launching with an earlier version. If the feature version is set, it will at least have the value 40. If it's not set the device may have a version of hardware-backed keystore but it may not support all features listed above.
 
@@ -371,19 +371,19 @@ This feature version is guaranteed to be set for all devices launching with Andr
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_HIFI_SENSORS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports high fidelity sensor processing capabilities.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports high fidelity sensor processing capabilities.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_HOME_SCREEN:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports a home screen that is replaceable by third party applications.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports a home screen that is replaceable by third party applications.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IDENTITY_CREDENTIAL_HARDWARE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the device supports `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore.html#` implemented in secure hardware at the given feature version.
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the device supports `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore.html#` implemented in secure hardware at the given feature version.
 
 Known feature versions include:
 
@@ -395,19 +395,19 @@ Known feature versions include:
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IDENTITY_CREDENTIAL_HARDWARE_DIRECT_ACCESS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the device supports `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore.html#` implemented in secure hardware with direct access at the given feature version. See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IDENTITY_CREDENTIAL_HARDWARE:kotlin.String` for known feature versions.
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the device supports `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredentialStore.html#` implemented in secure hardware with direct access at the given feature version. See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IDENTITY_CREDENTIAL_HARDWARE:kotlin.String` for known feature versions.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_INPUT_METHODS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports adding new input methods implemented with the `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#` API.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports adding new input methods implemented with the `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#` API.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IPSEC_TUNNELS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has the requisite kernel support for multinetworking-capable IPsec tunnels.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has the requisite kernel support for multinetworking-capable IPsec tunnels.
 
 This feature implies that the device supports XFRM Interfaces (CONFIG_XFRM_INTERFACE), or VTIs with kernel patches allowing updates of output/set mark via UPDSA.
 
@@ -415,7 +415,7 @@ This feature implies that the device supports XFRM Interfaces (CONFIG_XFRM_INTER
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IPSEC_TUNNEL_MIGRATION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has the requisite kernel support for migrating IPsec tunnels to new source/destination addresses.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has the requisite kernel support for migrating IPsec tunnels to new source/destination addresses.
 
 This feature implies that the device supports XFRM Migration (CONFIG_XFRM_MIGRATE) and has the kernel fixes to support cross-address-family IPsec tunnel migration
 
@@ -423,133 +423,133 @@ This feature implies that the device supports XFRM Migration (CONFIG_XFRM_MIGRAT
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_IRIS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has biometric hardware to perform iris authentication.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has biometric hardware to perform iris authentication.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_KEYSTORE_APP_ATTEST_KEY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a Keystore implementation that can create application-specific attestation keys. See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setAttestKeyAlias(kotlin.String)`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a Keystore implementation that can create application-specific attestation keys. See setAttestKeyAlias.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_KEYSTORE_LIMITED_USE_KEY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a Keystore implementation that can enforce limited use key in hardware with any max usage count (including count equals to 1).
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a Keystore implementation that can enforce limited use key in hardware with any max usage count (including count equals to 1).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_KEYSTORE_SINGLE_USE_KEY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a Keystore implementation that can only enforce limited use key in hardware with max usage count equals to 1.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a Keystore implementation that can only enforce limited use key in hardware with max usage count equals to 1.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LEANBACK:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports leanback UI. This is typically used in a living room television experience, but is a software feature unlike `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEVISION:kotlin.String`. Devices running with this feature will use resources associated with the "television" UI mode.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports leanback UI. This is typically used in a living room television experience, but is a software feature unlike `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEVISION:kotlin.String`. Devices running with this feature will use resources associated with the "television" UI mode.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LEANBACK_ONLY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports only leanback UI. Only applications designed for this experience should be run, though this is not enforced by the system.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports only leanback UI. Only applications designed for this experience should be run, though this is not enforced by the system.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LIVE_TV:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports live TV and can display contents from TV inputs implemented with the `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.html#` API.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports live TV and can display contents from TV inputs implemented with the `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.html#` API.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LIVE_WALLPAPER:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports live wallpapers.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports live wallpapers.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LOCATION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports one or more methods of reporting current location.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports one or more methods of reporting current location.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LOCATION_GPS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a Global Positioning System receiver and can report precise location.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a Global Positioning System receiver and can report precise location.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_LOCATION_NETWORK:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device can report location with coarse accuracy using a network-based geolocation system.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device can report location with coarse accuracy using a network-based geolocation system.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_MANAGED_USERS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports creating secondary users and managed profiles via `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports creating secondary users and managed profiles via `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#`.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_MICROPHONE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device can record audio via a microphone.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device can record audio via a microphone.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_MIDI:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a full implementation of the android.media.midi.\* APIs.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a full implementation of the android.media.midi.\* APIs.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NEURAL_PROCESSING_UNIT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This device has a NPU (Neural Processing Unit) or similar hardware for accelerating AI workloads.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This device has a NPU (Neural Processing Unit) or similar hardware for accelerating AI workloads.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NFC:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device can communicate using Near-Field Communications (NFC), acting as a reader.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device can communicate using Near-Field Communications (NFC), acting as a reader.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NFC_BEAM:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The Beam API is enabled on the device.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The Beam API is enabled on the device.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NFC_HOST_CARD_EMULATION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports host- based NFC card emulation.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports host- based NFC card emulation.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NFC_HOST_CARD_EMULATION_NFCF:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports host- based NFC-F card emulation.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports host- based NFC-F card emulation.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NFC_OFF_HOST_CARD_EMULATION_ESE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports eSE- based NFC card emulation.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports eSE- based NFC card emulation.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_NFC_OFF_HOST_CARD_EMULATION_UICC:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports uicc- based NFC card emulation.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports uicc- based NFC card emulation.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_OPENGLES_DEQP_LEVEL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the feature version specifies a date such that the device is known to pass the OpenGLES dEQP test suite associated with that date. The date is encoded as follows:
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the feature version specifies a date such that the device is known to pass the OpenGLES dEQP test suite associated with that date. The date is encoded as follows:
 
 - Year in bits 31-16
 - Month in bits 15-8
@@ -563,67 +563,67 @@ Example: 2021-03-01 is encoded as 0x07E50301, and would indicate that the device
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_OPENGLES_EXTENSION_PACK:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports the OpenGL ES [Android Extension Pack](http://www.khronos.org/registry/gles/extensions/ANDROID/ANDROID_extension_pack_es31a.txt).
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports the OpenGL ES [Android Extension Pack](http://www.khronos.org/registry/gles/extensions/ANDROID/ANDROID_extension_pack_es31a.txt).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_PC:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This is a device dedicated to be primarily used with keyboard, mouse or touchpad. This includes traditional desktop computers, laptops and variants such as convertibles or detachables. Due to the larger screen, the device will most likely use the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FREEFORM_WINDOW_MANAGEMENT:kotlin.String` feature as well.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This is a device dedicated to be primarily used with keyboard, mouse or touchpad. This includes traditional desktop computers, laptops and variants such as convertibles or detachables. Due to the larger screen, the device will most likely use the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_FREEFORM_WINDOW_MANAGEMENT:kotlin.String` feature as well.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_PICTURE_IN_PICTURE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports picture-in-picture multi-window mode.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports picture-in-picture multi-window mode.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_PRINTING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports printing.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports printing.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_RAM_LOW:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#isLowRamDevice()` method returns true.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's isLowRamDevice method returns true.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_RAM_NORMAL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#isLowRamDevice()` method returns false.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's isLowRamDevice method returns false.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SCREEN_LANDSCAPE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports landscape orientation screens. For backwards compatibility, you can assume that if neither this nor `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SCREEN_PORTRAIT:kotlin.String` is set then the device supports both portrait and landscape.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports landscape orientation screens. For backwards compatibility, you can assume that if neither this nor `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SCREEN_PORTRAIT:kotlin.String` is set then the device supports both portrait and landscape.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SCREEN_PORTRAIT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports portrait orientation screens. For backwards compatibility, you can assume that if neither this nor `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SCREEN_LANDSCAPE:kotlin.String` is set then the device supports both portrait and landscape.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports portrait orientation screens. For backwards compatibility, you can assume that if neither this nor `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SCREEN_LANDSCAPE:kotlin.String` is set then the device supports both portrait and landscape.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SECURELY_REMOVES_USERS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports secure removal of users. When a user is deleted the data associated with that user is securely deleted and no longer available.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports secure removal of users. When a user is deleted the data associated with that user is securely deleted and no longer available.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SECURE_LOCK_SCREEN:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a secure implementation of keyguard, meaning the device supports PIN, pattern and password as defined in Android CDD
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a secure implementation of keyguard, meaning the device supports PIN, pattern and password as defined in Android CDD
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SECURITY_MODEL_COMPATIBLE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is compatible with Android's security model.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is compatible with Android's security model.
 
 See sections 2 and 9 in the [Android CDD](https://source.android.com/compatibility/android-cdd) for more details.
 
@@ -631,158 +631,158 @@ See sections 2 and 9 in the [Android CDD](https://source.android.com/compatibili
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_ACCELEROMETER:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes an accelerometer.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes an accelerometer.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_ACCELEROMETER_LIMITED_AXES:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a limited axes accelerometer.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a limited axes accelerometer.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_ACCELEROMETER_LIMITED_AXES_UNCALIBRATED:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes an uncalibrated limited axes accelerometer.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes an uncalibrated limited axes accelerometer.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_AMBIENT_TEMPERATURE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes an ambient temperature sensor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes an ambient temperature sensor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_BAROMETER:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a barometer (air pressure sensor.)
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a barometer (air pressure sensor.)
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_COMPASS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a magnetometer (compass).
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a magnetometer (compass).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_DYNAMIC_HEAD_TRACKER:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports exposing head tracker sensors from peripheral devices via the dynamic sensors API.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports exposing head tracker sensors from peripheral devices via the dynamic sensors API.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_GYROSCOPE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a gyroscope.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a gyroscope.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_GYROSCOPE_LIMITED_AXES:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a limited axes gyroscope.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a limited axes gyroscope.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_GYROSCOPE_LIMITED_AXES_UNCALIBRATED:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes an uncalibrated limited axes gyroscope.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes an uncalibrated limited axes gyroscope.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_HEADING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a heading sensor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a heading sensor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_HEART_RATE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a heart rate monitor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a heart rate monitor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_HEART_RATE_ECG:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The heart rate sensor on this device is an Electrocardiogram.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The heart rate sensor on this device is an Electrocardiogram.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_HINGE_ANGLE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a hinge angle sensor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a hinge angle sensor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_LIGHT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a light sensor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a light sensor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_PROXIMITY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a proximity sensor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a proximity sensor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_RELATIVE_HUMIDITY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a relative humidity sensor.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a relative humidity sensor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_STEP_COUNTER:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a hardware step counter.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a hardware step counter.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SENSOR_STEP_DETECTOR:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device includes a hardware step detector.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device includes a hardware step detector.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SE_OMAPI_ESE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Open Mobile API capable eSE-based secure elements.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Open Mobile API capable eSE-based secure elements.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SE_OMAPI_SD:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Open Mobile API capable SD-based secure elements.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Open Mobile API capable SD-based secure elements.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SE_OMAPI_UICC:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Open Mobile API capable UICC-based secure elements.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Open Mobile API capable UICC-based secure elements.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SIP:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The SIP API is enabled on the device.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The SIP API is enabled on the device.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_SIP_VOIP:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports SIP-based VOIP.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports SIP-based VOIP.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_STRONGBOX_KEYSTORE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()`, `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`, and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the device implements the Android Keystore backed by a dedicated secure processor referred to as [StrongBox](https://source.android.com/security/best-practices/hardware#strongbox-keymaster). If this feature has a version, the version number indicates which features are implemented in StrongBox:
+Feature for getSystemAvailableFeatures, hasSystemFeature, and hasSystemFeature: If this feature is supported, the device implements the Android Keystore backed by a dedicated secure processor referred to as [StrongBox](https://source.android.com/security/best-practices/hardware#strongbox-keymaster). If this feature has a version, the version number indicates which features are implemented in StrongBox:
 
 - 400: Inclusion of module information (via tag MODULE_HASH) in the attestation record.
 - 300: Ability to include a second IMEI in the ID attestation record, see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#ID_TYPE_IMEI:kotlin.Int`.
 - 200: No new features for StrongBox (the Android Keystore environment backed by an isolated execution environment has gained support for Curve 25519 in this version, but the implementation backed by a dedicated secure processor is not expected to implement it).
-- 100: Hardware support for ECDH (see `https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement.html#`) and support for app-generated attestation keys (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setAttestKeyAlias(kotlin.String)`).
-- 41: Hardware enforcement of device-unlocked keys (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setUnlockedDeviceRequired(kotlin.Boolean)`).
-- 40: Support for wrapped key import (see `https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry.html#`), optional support for ID attestation (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setDevicePropertiesAttestationIncluded(kotlin.Boolean)`), attestation (see `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder.html#setAttestationChallenge(kotlin.ByteArray)`), AES, HMAC, ECDSA and RSA support where the secret or private key never leaves secure hardware, and support for requiring user authentication before a key can be used.
+- 100: Hardware support for ECDH (see `https://developer.android.com/reference/kotlin/javax/crypto/KeyAgreement.html#`) and support for app-generated attestation keys (see setAttestKeyAlias).
+- 41: Hardware enforcement of device-unlocked keys (see setUnlockedDeviceRequired).
+- 40: Support for wrapped key import (see `https://developer.android.com/reference/kotlin/android/security/keystore/WrappedKeyEntry.html#`), optional support for ID attestation (see setDevicePropertiesAttestationIncluded), attestation (see setAttestationChallenge), AES, HMAC, ECDSA and RSA support where the secret or private key never leaves secure hardware, and support for requiring user authentication before a key can be used.
 
 If a device has StrongBox, this feature version number is guaranteed to be set for all devices launching with Android 12 and may be set on devices launching with an earlier version. If the feature version is set, it will at least have the value 40. If it's not set the device may have StrongBox but it may not support all features listed above.
 
@@ -792,19 +792,19 @@ If a device has StrongBox, this feature version number is guaranteed to be set f
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Telecom Service APIs.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Telecom Service APIs.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a telephony radio with data communication support.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a telephony radio with data communication support.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Telephony APIs for calling service.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Telephony APIs for calling service.
 
 This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELECOM:kotlin.String` have been defined.
 
@@ -812,7 +812,7 @@ This feature should only be defined if `https://developer.android.com/reference/
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a CDMA telephony stack.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a CDMA telephony stack.
 
 This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` has been defined.
 
@@ -820,7 +820,7 @@ This feature should only be defined if `https://developer.android.com/reference/
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Telephony APIs for data service.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Telephony APIs for data service.
 
 This feature should only be defined if both `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` have been defined.
 
@@ -828,21 +828,21 @@ This feature should only be defined if both `https://developer.android.com/refer
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports embedded subscriptions on eUICCs. This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` has been defined.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports embedded subscriptions on eUICCs. This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` has been defined.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC_MEP:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports multiple enabled profiles on eUICCs.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports multiple enabled profiles on eUICCs.
 
-Devices declaring this feature must have an implementation of the `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo.html#getPorts()`, `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo.html#isMultipleEnabledProfilesSupported()` and android.telephony.euicc.EuiccManager#switchToSubscription. This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String` have been defined.
+Devices declaring this feature must have an implementation of the getPorts, isMultipleEnabledProfilesSupported and android.telephony.euicc.EuiccManager#switchToSubscription. This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String` have been defined.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_GSM:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a GSM telephony stack.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a GSM telephony stack.
 
 This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` has been defined.
 
@@ -850,7 +850,7 @@ This feature should only be defined if `https://developer.android.com/reference/
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_IMS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports attaching to IMS implementations using the ImsService API in telephony.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports attaching to IMS implementations using the ImsService API in telephony.
 
 This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` has been defined.
 
@@ -858,7 +858,7 @@ This feature should only be defined if `https://developer.android.com/reference/
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MBMS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports cell-broadcast reception using the MBMS APIs.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports cell-broadcast reception using the MBMS APIs.
 
 This feature should only be defined if both `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` have been defined.
 
@@ -866,7 +866,7 @@ This feature should only be defined if both `https://developer.android.com/refer
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Telephony APIs for SMS and MMS.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Telephony APIs for SMS and MMS.
 
 This feature should only be defined if both `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` have been defined.
 
@@ -874,7 +874,7 @@ This feature should only be defined if both `https://developer.android.com/refer
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Telephony APIs for the radio access.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Telephony APIs for the radio access.
 
 This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` has been defined.
 
@@ -882,7 +882,7 @@ This feature should only be defined if `https://developer.android.com/reference/
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Telephony APIs for the subscription.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Telephony APIs for the subscription.
 
 This feature should only be defined if `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` has been defined.
 
@@ -890,85 +890,85 @@ This feature should only be defined if `https://developer.android.com/reference/
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEVISION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This is a device dedicated to showing UI on a television. Television here is defined to be a typical living room television experience: displayed on a big screen, where the user is sitting far away from it, and the dominant form of input will be something like a DPAD, not through touch or mouse.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This is a device dedicated to showing UI on a television. Television here is defined to be a typical living room television experience: displayed on a big screen, where the user is sitting far away from it, and the dominant form of input will be something like a DPAD, not through touch or mouse.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_THREAD_NETWORK:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is capable of communicating with other devices via [Thread](https://www.threadgroup.org) networking protocol.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is capable of communicating with other devices via [Thread](https://www.threadgroup.org) networking protocol.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's display has a touch screen.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's display has a touch screen.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's touch screen supports multitouch sufficient for basic two-finger gesture detection.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's touch screen supports multitouch sufficient for basic two-finger gesture detection.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's touch screen is capable of tracking two or more fingers fully independently.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's touch screen is capable of tracking two or more fingers fully independently.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN_MULTITOUCH_JAZZHAND:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device's touch screen is capable of tracking a full hand of fingers fully independently -- that is, 5 or more simultaneous independent pointers.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device's touch screen is capable of tracking a full hand of fingers fully independently -- that is, 5 or more simultaneous independent pointers.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_USB_ACCESSORY:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports connecting to USB accessories.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports connecting to USB accessories.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_USB_HOST:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports connecting to USB devices as the USB host.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports connecting to USB devices as the USB host.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_UWB:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device is capable of communicating with other devices via ultra wideband.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device is capable of communicating with other devices via ultra wideband.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VERIFIED_BOOT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports verified boot.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports verified boot.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VR_HEADTRACKING:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device implements headtracking suitable for a VR device.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device implements headtracking suitable for a VR device.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VR_MODE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device implements an optimized mode for virtual reality (VR) applications that handles stereoscopic rendering of notifications, and disables most monocular system UI components while a VR application has user focus. Devices declaring this feature must include an application implementing a `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#` that can be targeted by VR applications via `https://developer.android.com/reference/kotlin/android/app/Activity.html#setVrModeEnabled(kotlin.Boolean,%20android.content.ComponentName)`.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device implements an optimized mode for virtual reality (VR) applications that handles stereoscopic rendering of notifications, and disables most monocular system UI components while a VR application has user focus. Devices declaring this feature must include an application implementing a `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#` that can be targeted by VR applications via setVrModeEnabled.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VR_MODE_HIGH_PERFORMANCE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device implements an optimized mode for virtual reality (VR) applications that handles stereoscopic rendering of notifications, disables most monocular system UI components while a VR application has user focus and meets extra CDD requirements to provide a high-quality VR experience. Devices declaring this feature must include an application implementing a `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#` that can be targeted by VR applications via `https://developer.android.com/reference/kotlin/android/app/Activity.html#setVrModeEnabled(kotlin.Boolean,%20android.content.ComponentName)`. and must meet CDD requirements to provide a high-quality VR experience.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device implements an optimized mode for virtual reality (VR) applications that handles stereoscopic rendering of notifications, disables most monocular system UI components while a VR application has user focus and meets extra CDD requirements to provide a high-quality VR experience. Devices declaring this feature must include an application implementing a `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService.html#` that can be targeted by VR applications via setVrModeEnabled. and must meet CDD requirements to provide a high-quality VR experience.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VULKAN_DEQP_LEVEL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the feature version specifies a date such that the device is known to pass the Vulkan dEQP test suite associated with that date. The date is encoded as follows:
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the feature version specifies a date such that the device is known to pass the Vulkan dEQP test suite associated with that date. The date is encoded as follows:
 
 - Year in bits 31-16
 - Month in bits 15-8
@@ -982,7 +982,7 @@ Example: 2019-03-01 is encoded as 0x07E30301, and would indicate that the device
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VULKAN_HARDWARE_COMPUTE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the Vulkan implementation on this device is hardware accelerated, and the Vulkan native API will enumerate at least one `VkPhysicalDevice`, and the feature version will indicate what level of optional compute features that device supports beyond the Vulkan 1.0 requirements.
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the Vulkan implementation on this device is hardware accelerated, and the Vulkan native API will enumerate at least one `VkPhysicalDevice`, and the feature version will indicate what level of optional compute features that device supports beyond the Vulkan 1.0 requirements.
 
 Compute level 0 indicates:
 
@@ -993,7 +993,7 @@ Compute level 0 indicates:
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VULKAN_HARDWARE_LEVEL:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the Vulkan implementation on this device is hardware accelerated, and the Vulkan native API will enumerate at least one `VkPhysicalDevice`, and the feature version will indicate what level of optional hardware features limits it supports.
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the Vulkan implementation on this device is hardware accelerated, and the Vulkan native API will enumerate at least one `VkPhysicalDevice`, and the feature version will indicate what level of optional hardware features limits it supports.
 
 Level 0 includes the base Vulkan requirements as well as:
 
@@ -1017,7 +1017,7 @@ Level 1 additionally includes:
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VULKAN_HARDWARE_VERSION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)`: If this feature is supported, the Vulkan implementation on this device is hardware accelerated, and the feature version will indicate the highest `VkPhysicalDeviceProperties::apiVersion` supported by the physical devices that support the hardware level indicated by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VULKAN_HARDWARE_LEVEL:kotlin.String`. The feature version uses the same encoding as Vulkan version numbers:
+Feature for getSystemAvailableFeatures and hasSystemFeature: If this feature is supported, the Vulkan implementation on this device is hardware accelerated, and the feature version will indicate the highest `VkPhysicalDeviceProperties::apiVersion` supported by the physical devices that support the hardware level indicated by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_VULKAN_HARDWARE_LEVEL:kotlin.String`. The feature version uses the same encoding as Vulkan version numbers:
 
 - Major version number in bits 31-22
 - Minor version number in bits 21-12
@@ -1039,55 +1039,55 @@ A subset of devices that support Vulkan 1.1 do so via software emulation. For mo
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WALLET_LOCATION_BASED_SUGGESTIONS:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports showing location-based suggestions for wallet cards provided by the default payment app.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports showing location-based suggestions for wallet cards provided by the default payment app.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WATCH:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: This is a device dedicated to showing UI on a watch. A watch here is defined to be a device worn on the body, perhaps on the wrist. The user is very close when interacting with the device.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: This is a device dedicated to showing UI on a watch. A watch here is defined to be a device worn on the body, perhaps on the wrist. The user is very close when interacting with the device.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WEBVIEW:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device has a full implementation of the android.webkit.\* APIs. Devices lacking this feature will not have a functioning WebView implementation.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device has a full implementation of the android.webkit.\* APIs. Devices lacking this feature will not have a functioning WebView implementation.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports WiFi (802.11) networking.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports WiFi (802.11) networking.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI_AWARE:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Wi-Fi Aware.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Wi-Fi Aware.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI_DIRECT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Wi-Fi Direct networking.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Wi-Fi Direct networking.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI_PASSPOINT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Wi-Fi Passpoint and all Passpoint related APIs in `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#` are supported. Refer to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#addOrUpdatePasspointConfiguration(android.net.wifi.hotspot2.PasspointConfiguration)` for more info.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Wi-Fi Passpoint and all Passpoint related APIs in `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#` are supported. Refer to addOrUpdatePasspointConfiguration for more info.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WIFI_RTT:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports Wi-Fi RTT (IEEE 802.11mc).
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports Wi-Fi RTT (IEEE 802.11mc).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_WINDOW_MAGNIFICATION:kotlin.String`
 
-Feature for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()` and #hasSystemFeature: The device supports window magnification.
+Feature for getSystemAvailableFeatures and #hasSystemFeature: The device supports window magnification.
 
 <br />
 
@@ -1305,7 +1305,7 @@ Querying flag: if set and if the platform is doing any filtering of the results,
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_ARCHIVED_PACKAGES:kotlin.Long`
 
-Flag parameter to also retrieve some information about archived packages. Packages can be archived through `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#requestArchive(kotlin.String,%20android.content.IntentSender)` and do not have any APKs stored on the device, but do keep the data directory.
+Flag parameter to also retrieve some information about archived packages. Packages can be archived through requestArchive and do not have any APKs stored on the device, but do keep the data directory.
 
 Note: Archived apps are a subset of apps returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_UNINSTALLED_PACKAGES:kotlin.Int`.
 
@@ -1327,7 +1327,7 @@ Querying flag: automatically match components based on their Direct Boot awarene
 
 Since the default behavior is to automatically apply the current user state, this is effectively a sentinel value that doesn't change the output of any queries based on its presence or absence.
 
-Instead, this value can be useful in conjunction with `https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy.Builder.html#detectImplicitDirectBoot()` to detect when a caller is relying on implicit automatic matching, instead of confirming the explicit behavior they want, using a combination of these flags:
+Instead, this value can be useful in conjunction with detectImplicitDirectBoot to detect when a caller is relying on implicit automatic matching, instead of confirming the explicit behavior they want, using a combination of these flags:
 
 - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DIRECT_BOOT_AWARE:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DIRECT_BOOT_UNAWARE:kotlin.Int`
@@ -1381,19 +1381,19 @@ Note: use of this flag requires the android.permission.QUERY_ALL_PACKAGES permis
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MAXIMUM_VERIFICATION_TIMEOUT:kotlin.Long`
 
-Can be used as the `millisecondsToDelay` argument for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#extendVerificationTimeout(kotlin.Int,%20kotlin.Int,%20kotlin.Long)`. This is the maximum time `PackageManager` waits for the verification agent to return (in milliseconds).
+Can be used as the `millisecondsToDelay` argument for extendVerificationTimeout. This is the maximum time `PackageManager` waits for the verification agent to return (in milliseconds).
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#PERMISSION_DENIED:kotlin.Int`
 
-Permission check result: this is returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#checkPermission(kotlin.String,%20kotlin.String)` if the permission has not been granted to the given package.
+Permission check result: this is returned by checkPermission if the permission has not been granted to the given package.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#PERMISSION_GRANTED:kotlin.Int`
 
-Permission check result: this is returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#checkPermission(kotlin.String,%20kotlin.String)` if the permission has been granted to the given package.
+Permission check result: this is returned by checkPermission if the permission has been granted to the given package.
 
 <br />
 
@@ -1539,19 +1539,19 @@ Signature check result: this is returned by #checkSignatures if either of the pa
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#SYNCHRONOUS:kotlin.Int`
 
-Flag parameter for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)` to indicate that the given user's package restrictions state will be serialised to disk after the component state has been updated. Note that this is synchronous disk access, so calls using this flag should be run on a background thread.
+Flag parameter for setComponentEnabledSetting to indicate that the given user's package restrictions state will be serialised to disk after the component state has been updated. Note that this is synchronous disk access, so calls using this flag should be run on a background thread.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERIFICATION_ALLOW:kotlin.Int`
 
-Used as the `verificationCode` argument for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#verifyPendingInstall(kotlin.Int,%20kotlin.Int)` to indicate that the calling package verifier allows the installation to proceed.
+Used as the `verificationCode` argument for verifyPendingInstall to indicate that the calling package verifier allows the installation to proceed.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERIFICATION_REJECT:kotlin.Int`
 
-Used as the `verificationCode` argument for `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#verifyPendingInstall(kotlin.Int,%20kotlin.Int)` to indicate the calling package verifier does not vote to allow the installation to proceed.
+Used as the `verificationCode` argument for verifyPendingInstall to indicate the calling package verifier does not vote to allow the installation to proceed.
 
 <br />
 
@@ -1563,152 +1563,152 @@ Constant for specifying the highest installed package version code.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#MockPackageManager()()` <br /> |
+| MockPackageManager <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#addPackageToPreferred(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#addPermission(android.content.pm.PermissionInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo.html#)` Add a new dynamic permission to the system. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#addPermissionAsync(android.content.pm.PermissionInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/PermissionInfo.html#)` Like `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPermission(android.content.pm.PermissionInfo)` but asynchronously persists the package manager state after returning from the call, allowing it to return quicker and batch a series of adds at the expense of no guarantee the added permission will be retained if the device is rebooted before it is written. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addPackageToPreferred <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | addPermission Add a new dynamic permission to the system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | addPermissionAsync Like addPermission but asynchronously persists the package manager state after returning from the call, allowing it to return quicker and batch a series of adds at the expense of no guarantee the added permission will be retained if the device is rebooted before it is written. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)(filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#, match: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, set: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!>?, activity: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Add a new preferred activity mapping to the system. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#addWhitelistedRestrictedPermission(kotlin.String,%20kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds a whitelisted restricted permission for an app. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#canRequestPackageInstalls()()` Checks whether the calling package is allowed to request package installs through package installer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addPreferredActivity Add a new preferred activity mapping to the system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | addWhitelistedRestrictedPermission Adds a whitelisted restricted permission for an app. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canRequestPackageInstalls Checks whether the calling package is allowed to request package installs through package installer. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#canonicalToCurrentPackageNames(kotlin.Array)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Map from a packages canonical name to the current name in use on the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#checkPermission(kotlin.String,%20kotlin.String)(permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, pkgName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether a particular package has been granted a particular permission. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#checkSignatures(kotlin.Int,%20kotlin.Int)(uid1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Like `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#checkSignatures(kotlin.String,%20kotlin.String)`, but takes UIDs of the two packages to be checked. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | canonicalToCurrentPackageNames Map from a packages canonical name to the current name in use on the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkPermission Check whether a particular package has been granted a particular permission. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkSignatures Like checkSignatures, but takes UIDs of the two packages to be checked. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#checkSignatures(kotlin.String,%20kotlin.String)(pkg1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, pkg2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Compare the signatures of two packages to determine if the same signature appears in both of them. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#clearInstantAppCookie()()` Clears the instant application cookie for the calling app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#clearPackagePreferredActivities(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Remove all preferred activity mappings, previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)`, from the system whose activities are implemented in the given package name. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkSignatures Compare the signatures of two packages to determine if the same signature appears in both of them. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearInstantAppCookie Clears the instant application cookie for the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearPackagePreferredActivities Remove all preferred activity mappings, previously added with addPreferredActivity, from the system whose activities are implemented in the given package name. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#currentToCanonicalPackageNames(kotlin.Array)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Map from the current package names in use on the device to whatever the current canonical name of that package is. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#extendVerificationTimeout(kotlin.Int,%20kotlin.Int,%20kotlin.Long)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, verificationCodeAtTimeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, millisecondsToDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to extend the default timeout for a response and declare what action to perform after the timeout occurs. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityBanner(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the banner associated with an activity. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | currentToCanonicalPackageNames Map from the current package names in use on the device to whatever the current canonical name of that package is. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | extendVerificationTimeout Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to extend the default timeout for a response and declare what action to perform after the timeout occurs. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getActivityBanner Retrieve the banner associated with an activity. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityBanner(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the banner associated with an Intent. |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityIcon(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the icon associated with an activity. |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityIcon(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the icon associated with an Intent. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getActivityBanner Retrieve the banner associated with an Intent. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getActivityIcon Retrieve the icon associated with an activity. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getActivityIcon Retrieve the icon associated with an Intent. |
 | --- | --- |
-| open [ActivityInfo](../android.content.pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular activity class. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityLogo(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the logo associated with an activity. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getActivityLogo(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Retrieve the logo associated with an Intent. |
+| open [ActivityInfo](../android.content.pm/ActivityInfo.md) | getActivityInfo Retrieve all of the information we know about a particular activity class. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getActivityLogo Retrieve the logo associated with an activity. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getActivityLogo Retrieve the logo associated with an Intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](../android.content/IntentFilter.md)!\>! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getAllIntentFilters(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionGroupInfo](../android.content.pm/PermissionGroupInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getAllPermissionGroups(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the known permission groups in the system. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationBanner(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the banner associated with an application. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IntentFilter](../android.content/IntentFilter.md)!\>! | getAllIntentFilters <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionGroupInfo](../android.content.pm/PermissionGroupInfo.md)!\> | getAllPermissionGroups Retrieve all of the known permission groups in the system. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getApplicationBanner Retrieve the banner associated with an application. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationBanner(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the banner associated with an application. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationEnabledSetting(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the enabled setting for an application. |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the icon associated with an application. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getApplicationBanner Retrieve the banner associated with an application. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getApplicationEnabledSetting Return the enabled setting for an application. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getApplicationIcon Retrieve the icon associated with an application. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationIcon(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the icon associated with an application. |
-| open [ApplicationInfo](../android.content.pm/ApplicationInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular package/application. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Return the label to use for this application. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getApplicationIcon Retrieve the icon associated with an application. |
+| open [ApplicationInfo](../android.content.pm/ApplicationInfo.md) | getApplicationInfo Retrieve all of the information we know about a particular package/application. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | getApplicationLabel Return the label to use for this application. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLogo(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the logo associated with an application. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getApplicationLogo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the logo associated with an application. |
-| open [ChangedPackages](../android.content.pm/ChangedPackages.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getChangedPackages(kotlin.Int)(sequenceNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the names of the packages that have been changed \[eg. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getApplicationLogo Retrieve the logo associated with an application. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getApplicationLogo Retrieve the logo associated with an application. |
+| open [ChangedPackages](../android.content.pm/ChangedPackages.md)? | getChangedPackages Returns the names of the packages that have been changed \[eg. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getComponentEnabledSetting(android.content.ComponentName)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Return the enabled setting for a package component (activity, receiver, service, provider). |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getDefaultActivityIcon()()` Return the generic icon for an activity that is used when no specific icon is defined. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getDrawable(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve an image from a package. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getComponentEnabledSetting Return the enabled setting for a package component (activity, receiver, service, provider). |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getDefaultActivityIcon Return the generic icon for an activity that is used when no specific icon is defined. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | getDrawable Retrieve an image from a package. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](../android.content.pm/ApplicationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstalledApplications(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all application packages that are installed for the current user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android.content.pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstalledPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all packages that are installed for the current user. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstallerPackageName(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the package name of the application that installed a package. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApplicationInfo](../android.content.pm/ApplicationInfo.md)!\> | getInstalledApplications Return a List of all application packages that are installed for the current user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android.content.pm/PackageInfo.md)!\> | getInstalledPackages Return a List of all packages that are installed for the current user. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getInstallerPackageName Retrieve the package name of the application that installed a package. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstantAppCookie()()` Gets the instant application cookie for this app. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstantAppCookieMaxBytes()()` Gets the maximum size in bytes of the cookie data an instant app can store on the device. |
-| open [InstrumentationInfo](../android.content.pm/InstrumentationInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getInstrumentationInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular instrumentation class. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getInstantAppCookie Gets the instant application cookie for this app. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInstantAppCookieMaxBytes Gets the maximum size in bytes of the cookie data an instant app can store on the device. |
+| open [InstrumentationInfo](../android.content.pm/InstrumentationInfo.md) | getInstrumentationInfo Retrieve all of the information we know about a particular instrumentation class. |
 | --- | --- |
-| open [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a "good" intent to launch a front-door activity in a package. |
-| open [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getLeanbackLaunchIntentForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return a "good" intent to launch a front-door Leanback activity in a package, for use for example to implement an "open" button when browsing through packages. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MemoryBudgetInfo](../android.content.pm/MemoryBudgetInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getMemoryBudgets(android.content.pm.ApplicationInfo)(info: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Return the memory budgets for the application described by the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#`. |
+| open [Intent](../android.content/Intent.md)? | getLaunchIntentForPackage Returns a "good" intent to launch a front-door activity in a package. |
+| open [Intent](../android.content/Intent.md)? | getLeanbackLaunchIntentForPackage Return a "good" intent to launch a front-door Leanback activity in a package, for use for example to implement an "open" button when browsing through packages. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MemoryBudgetInfo](../android.content.pm/MemoryBudgetInfo.md)!\> | getMemoryBudgets Return the memory budgets for the application described by the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getNameForUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the official name associated with a uid. |
-| open [PackageInfo](../android.content.pm/PackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package defined in a package archive file Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageGids(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getNameForUid Retrieve the official name associated with a uid. |
+| open [PackageInfo](../android.content.pm/PackageInfo.md)? | getPackageArchiveInfo Retrieve overall information about an application package defined in a package archive file Use getPackageArchiveInfo when long flags are needed. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getPackageGids Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
 | --- | --- |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageGids(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
-| open [PackageInfo](../android.content.pm/PackageInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
-| open [PackageInfo](../android.content.pm/PackageInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve overall information about an application package that is installed on the system. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getPackageGids Return an array of all of the POSIX secondary group IDs that have been assigned to the given package. |
+| open [PackageInfo](../android.content.pm/PackageInfo.md)! | getPackageInfo Retrieve overall information about an application package that is installed on the system. |
+| open [PackageInfo](../android.content.pm/PackageInfo.md)! | getPackageInfo Retrieve overall information about an application package that is installed on the system. |
 | --- | --- |
-| open [PackageInstaller](../android.content.pm/PackageInstaller.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageInstaller()()` Return interface that offers the ability to install, upgrade, and remove applications on the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackageUid(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the UID associated with the given package name. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackagesForUid(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the names of all packages that are associated with a particular user id. |
+| open [PackageInstaller](../android.content.pm/PackageInstaller.md) | getPackageInstaller Return interface that offers the ability to install, upgrade, and remove applications on the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPackageUid Return the UID associated with the given package name. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getPackagesForUid Retrieve the names of all packages that are associated with a particular user id. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android.content.pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a List of all installed packages that are currently holding any of the given permissions. |
-| open [PermissionGroupInfo](../android.content.pm/PermissionGroupInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPermissionGroupInfo(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular group of permissions. |
-| open [PermissionInfo](../android.content.pm/PermissionInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPermissionInfo(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular permission. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android.content.pm/PackageInfo.md)!\> | getPackagesHoldingPermissions Return a List of all installed packages that are currently holding any of the given permissions. |
+| open [PermissionGroupInfo](../android.content.pm/PermissionGroupInfo.md) | getPermissionGroupInfo Retrieve all of the information we know about a particular group of permissions. |
+| open [PermissionInfo](../android.content.pm/PermissionInfo.md)! | getPermissionInfo Retrieve all of the information we know about a particular permission. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPreferredActivities(kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.String)(outFilters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!>, outActivities: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!>, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Retrieve all preferred activities, previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)`, that are currently registered with the system. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android.content.pm/PackageInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getPreferredPackages(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the list of all currently configured preferred packages. |
-| open [ProviderInfo](../android.content.pm/ProviderInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getProviderInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular content provider class. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPreferredActivities Retrieve all preferred activities, previously added with addPreferredActivity, that are currently registered with the system. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PackageInfo](../android.content.pm/PackageInfo.md)!\> | getPreferredPackages Retrieve the list of all currently configured preferred packages. |
+| open [ProviderInfo](../android.content.pm/ProviderInfo.md) | getProviderInfo Retrieve all of the information we know about a particular content provider class. |
 | --- | --- |
-| open [ActivityInfo](../android.content.pm/ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular receiver class. |
-| open [Resources](../android.content.res/Resources.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForActivity(android.content.ComponentName)(activityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve the resources associated with an activity. |
-| open [Resources](../android.content.res/Resources.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForApplication(android.content.pm.ApplicationInfo)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Retrieve the resources for an application. |
+| open [ActivityInfo](../android.content.pm/ActivityInfo.md) | getReceiverInfo Retrieve all of the information we know about a particular receiver class. |
+| open [Resources](../android.content.res/Resources.md) | getResourcesForActivity Retrieve the resources associated with an activity. |
+| open [Resources](../android.content.res/Resources.md) | getResourcesForApplication Retrieve the resources for an application. |
 | --- | --- |
-| open [Resources](../android.content.res/Resources.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getResourcesForApplication(kotlin.String)(appPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieve the resources associated with an application. |
-| open [ServiceInfo](../android.content.pm/ServiceInfo.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getServiceInfo(android.content.ComponentName,%20kotlin.Int)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all of the information we know about a particular service class. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](../android.content.pm/SharedLibraryInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSharedLibraries(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of shared libraries on the device. |
+| open [Resources](../android.content.res/Resources.md) | getResourcesForApplication Retrieve the resources associated with an application. |
+| open [ServiceInfo](../android.content.pm/ServiceInfo.md) | getServiceInfo Retrieve all of the information we know about a particular service class. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SharedLibraryInfo](../android.content.pm/SharedLibraryInfo.md)!\> | getSharedLibraries Get a list of shared libraries on the device. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FeatureInfo](../android.content.pm/FeatureInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSystemAvailableFeatures()()` Get a list of features that are available on the system. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getSystemSharedLibraryNames()()` Get a list of shared libraries that are available on the system. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getText(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve text from a package. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FeatureInfo](../android.content.pm/FeatureInfo.md)!\> | getSystemAvailableFeatures Get a list of features that are available on the system. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getSystemSharedLibraryNames Get a list of shared libraries that are available on the system. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getText Retrieve text from a package. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,%20android.os.UserHandle,%20android.graphics.Rect,%20kotlin.Int)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, badgeLocation: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?, badgeDensity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. |
-| open [Drawable](../android.graphics.drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedIcon(android.graphics.drawable.Drawable,%20android.os.UserHandle)(icon: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getUserBadgedLabel(kotlin.CharSequence,%20android.os.UserHandle)(label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a copy of the label with badging for accessibility services like talkback. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getUserBadgedDrawableForDensity If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. |
+| open [Drawable](../android.graphics.drawable/Drawable.md) | getUserBadgedIcon If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | getUserBadgedLabel If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a copy of the label with badging for accessibility services like talkback. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getWhitelistedRestrictedPermissions(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the restricted permissions that have been whitelisted and the app is allowed to have them granted in their full form. |
-| open [XmlResourceParser](../android.content.res/XmlResourceParser.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#getXml(kotlin.String,%20kotlin.Int,%20android.content.pm.ApplicationInfo)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, appInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#?)` Retrieve an XML file from a package. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#hasSigningCertificate(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, certificate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the set of signing certificates by which the package(s) for the given uid has proven to have been signed. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getWhitelistedRestrictedPermissions Gets the restricted permissions that have been whitelisted and the app is allowed to have them granted in their full form. |
+| open [XmlResourceParser](../android.content.res/XmlResourceParser.md)? | getXml Retrieve an XML file from a package. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSigningCertificate Searches the set of signing certificates by which the package(s) for the given uid has proven to have been signed. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#hasSigningCertificate(kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, certificate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches the set of signing certificates by which the given package has proven to have been signed. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#hasSystemFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether the given feature name is one of the available features as returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#hasSystemFeature(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check whether the given feature name and version is one of the available features as returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSigningCertificate Searches the set of signing certificates by which the given package has proven to have been signed. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSystemFeature Check whether the given feature name is one of the available features as returned by getSystemAvailableFeatures. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSystemFeature Check whether the given feature name and version is one of the available features as returned by getSystemAvailableFeatures. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isDeviceUpgrading()()` Returns true if the device is upgrading, such as first boot after OTA. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isInstantApp()()` Gets whether this application is an instant app. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isInstantApp(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets whether the given package is an instant app. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceUpgrading Returns true if the device is upgrading, such as first boot after OTA. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInstantApp Gets whether this application is an instant app. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInstantApp Gets whether the given package is an instant app. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isPermissionRevokedByPolicy(kotlin.String,%20kotlin.String)(permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, pkgName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks whether a particular permissions has been revoked for a package by policy. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#isSafeMode()()` Return whether the device has been booted into safe mode. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all receivers that can handle a broadcast of the given intent. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPermissionRevokedByPolicy Checks whether a particular permissions has been revoked for a package by policy. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSafeMode Return whether the device has been booted into safe mode. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | queryBroadcastReceivers Retrieve all receivers that can handle a broadcast of the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](../android.content.pm/ProviderInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve content provider information. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InstrumentationInfo](../android.content.pm/InstrumentationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryInstrumentation(kotlin.String,%20kotlin.Int)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve information about available instrumentation code. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentActivities(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all activities that can be performed for the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProviderInfo](../android.content.pm/ProviderInfo.md)!\> | queryContentProviders Retrieve content provider information. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InstrumentationInfo](../android.content.pm/InstrumentationInfo.md)!\> | queryInstrumentation Retrieve information about available instrumentation code. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | queryIntentActivities Retrieve all activities that can be performed for the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve a set of activities that should be presented to the user as similar options. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all providers that can match the given intent. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryIntentServices(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve all services that can match the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | queryIntentActivityOptions Retrieve a set of activities that should be presented to the user as similar options. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | queryIntentContentProviders Retrieve all providers that can match the given intent. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ResolveInfo](../android.content.pm/ResolveInfo.md)!\> | queryIntentServices Retrieve all services that can match the given intent. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionInfo](../android.content.pm/PermissionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#queryPermissionsByGroup(kotlin.String,%20kotlin.Int)(group: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for all of the permissions associated with a particular group. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#removePackageFromPreferred(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#removePermission(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes a permission that was previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPermission(android.content.pm.PermissionInfo)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PermissionInfo](../android.content.pm/PermissionInfo.md)!\> | queryPermissionsByGroup Query for all of the permissions associated with a particular group. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removePackageFromPreferred <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removePermission Removes a permission that was previously added with addPermission. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#removeWhitelistedRestrictedPermission(kotlin.String,%20kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelistFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a whitelisted restricted permission for an app. |
-| open [ResolveInfo](../android.content.pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveActivity(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best action to perform for a given Intent. |
-| open [ProviderInfo](../android.content.pm/ProviderInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveContentProvider(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find a single content provider by its authority. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeWhitelistedRestrictedPermission Removes a whitelisted restricted permission for an app. |
+| open [ResolveInfo](../android.content.pm/ResolveInfo.md)? | resolveActivity Determine the best action to perform for a given Intent. |
+| open [ProviderInfo](../android.content.pm/ProviderInfo.md)? | resolveContentProvider Find a single content provider by its authority. |
 | --- | --- |
-| open [ResolveInfo](../android.content.pm/ResolveInfo.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveService(android.content.Intent,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine the best service to handle for a given Intent. |
-| open [ResolveInfo](../android.content.pm/ResolveInfo.md)! | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#resolveServiceAsUser(android.content.Intent,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, userId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setApplicationCategoryHint(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, categoryHint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Provide a hint of what the `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#category:kotlin.Int` value should be for the given package. |
+| open [ResolveInfo](../android.content.pm/ResolveInfo.md)? | resolveService Determine the best service to handle for a given Intent. |
+| open [ResolveInfo](../android.content.pm/ResolveInfo.md)! | resolveServiceAsUser <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setApplicationCategoryHint Provide a hint of what the `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#category:kotlin.Int` value should be for the given package. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the enabled setting for an application This setting will override any enabled state which may have been set by the application in its manifest. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)(componentName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the enabled setting for a package component (activity, receiver, service, provider). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setInstallerPackageName(kotlin.String,%20kotlin.String)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, installerPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Change the installer associated with a given package. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setApplicationEnabledSetting Set the enabled setting for an application This setting will override any enabled state which may have been set by the application in its manifest. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setComponentEnabledSetting Set the enabled setting for a package component (activity, receiver, service, provider). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInstallerPackageName Change the installer associated with a given package. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#setInstantAppCookie(kotlin.ByteArray)(cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#updateInstantAppCookie(kotlin.ByteArray)(cookie: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Updates the instant application cookie for the calling app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockPackageManager#verifyPendingInstall(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, verificationCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to respond to the package manager. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setInstantAppCookie <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateInstantAppCookie Updates the instant application cookie for the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verifyPendingInstall Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to respond to the package manager. |
 | --- | --- |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#canPackageQuery(kotlin.String,%20kotlin.String)(sourcePackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, targetPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` canPackageQuery
 
 Returns `true` if the source package is able to query for details about the target package. Applications that share details about other applications should use this API to determine if those details should be withheld from callers that do not otherwise have visibility of them.
 
@@ -1716,37 +1716,37 @@ Note: The caller must be able to query for details about the source and target p
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#canPackageQuery(kotlin.String,%20kotlin.Array)(sourcePackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, targetPackageNames: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html` canPackageQuery
 
-Same as `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#canPackageQuery(kotlin.String,%20kotlin.String)` but accepts an array of target packages to be queried.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getActivityInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getActivityInfo(android.content.ComponentName,%20kotlin.Int)`.
+Same as canPackageQuery but accepts an array of target packages to be queried.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getAppUidForPrivateComputeCoreUid(kotlin.Int)(pccUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#` getActivityInfo
+
+See getActivityInfo.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getAppUidForPrivateComputeCoreUid
 
 Maps a Private Compute Core (PCC) UID to its corresponding application UID.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationInfo(kotlin.String,%20android.content.pm.PackageManager.ApplicationInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#` getApplicationInfo
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationInfo(kotlin.String,%20kotlin.Int)`.
+See getApplicationInfo.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getArchivedPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ArchivedPackageInfo.html#?` getArchivedPackage
 
 Return archived package info for the package or null if the package is not installed.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getBackgroundPermissionOptionLabel()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` getBackgroundPermissionOptionLabel
 
 Gets the localized label that corresponds to the option in settings for granting background access.
 
@@ -1754,7 +1754,7 @@ The intended use is for apps to reference this label in its instruction for user
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?` getEnableAppLockIntentForPackage
 
 Returns a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to launch an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that allows the caller to set App Lock for the specified package. Returns null if the App Lock state of the package cannot be set, either because App Lock is not supported for that package, or because it is already set to that value.
 
@@ -1773,145 +1773,145 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getGroupOfPlatformPermission(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(permissionName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getGroupOfPlatformPermission
 
 Get the platform-defined permission group of a particular permission, if the permission is a platform-defined permission.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstallSourceInfo(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo.html#` getInstallSourceInfo
 
 Retrieves information about how a package was installed or updated.
 
-If the calling application does not hold the INSTALL_PACKAGES permission then the result will always return `null` from `https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo.html#getOriginatingPackageName()`.
+If the calling application does not hold the INSTALL_PACKAGES permission then the result will always return `null` from getOriginatingPackageName.
 
-If the package that requested the install has been uninstalled, then information about it will only be returned from `https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo.html#getInitiatingPackageName()` and `https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo.html#getInitiatingPackageSigningInfo()` if the calling package is requesting its own install information and is not an instant app.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledApplications(android.content.pm.PackageManager.ApplicationInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ApplicationInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledApplications(kotlin.Int)`
+If the package that requested the install has been uninstalled, then information about it will only be returned from getInitiatingPackageName and getInitiatingPackageSigningInfo if the calling package is requesting its own install information and is not an instant app.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledModules(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#!>` getInstalledApplications
+
+See getInstalledApplications
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo.html#!>` getInstalledModules
 
 Return a List of all modules that are installed.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledPackages(android.content.pm.PackageManager.PackageInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#!>` getInstalledPackages
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledPackages(kotlin.Int)`.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getLaunchIntentSenderForPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
-
-Returns an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` that can be used to launch a front-door activity in a package. This is used, for example, to implement an "open" button when browsing through packages. The current implementation is the same with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getLaunchIntentForPackage(kotlin.String)`. Instead of returning the `https://developer.android.com/reference/kotlin/android/content/Intent.html#`, it returns the `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which is not restricted by the package visibility.
-
-The caller can invoke `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#sendIntent(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20android.content.IntentSender.OnFinished,%20android.os.Handler)` to launch the activity. An `https://developer.android.com/reference/kotlin/android/content/IntentSender.SendIntentException.html#` is thrown if the package does not contain such an activity, or if *packageName* is not recognized.
+See getInstalledPackages.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getMimeGroup(kotlin.String)(mimeGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` getLaunchIntentSenderForPackage
+
+Returns an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` that can be used to launch a front-door activity in a package. This is used, for example, to implement an "open" button when browsing through packages. The current implementation is the same with getLaunchIntentForPackage. Instead of returning the `https://developer.android.com/reference/kotlin/android/content/Intent.html#`, it returns the `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` which is not restricted by the package visibility.
+
+The caller can invoke sendIntent to launch the activity. An `https://developer.android.com/reference/kotlin/android/content/IntentSender.SendIntentException.html#` is thrown if the package does not contain such an activity, or if *packageName* is not recognized.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>` getMimeGroup
 
 Gets all MIME types contained by MIME group. Libraries should use a reverse-DNS prefix followed by a ':' character and library-specific group name to avoid namespace collisions, e.g. "com.example:myFeature".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getModuleInfo(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ModuleInfo.html#` getModuleInfo
 
 Retrieve information for a particular module.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(archiveFilePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#?` getPackageArchiveInfo
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20kotlin.Int)`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageGids(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageGids(kotlin.String,%20kotlin.Int)`.
+See getPackageArchiveInfo.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageInfo(android.content.pm.VersionedPackage,%20android.content.pm.PackageManager.PackageInfoFlags)(versionedPackage: https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?` getPackageGids
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageInfo(android.content.pm.VersionedPackage,%20kotlin.Int)`
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageInfo(kotlin.String,%20kotlin.Int)`
+See getPackageGids.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageUid(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#` getPackageInfo
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageUid(kotlin.String,%20kotlin.Int)`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackagesHoldingPermissions(kotlin.Array,%20android.content.pm.PackageManager.PackageInfoFlags)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackagesHoldingPermissions(kotlin.Array,%20kotlin.Int)`.
+See getPackageInfo
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPlatformPermissionsForGroup(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(permissionGroupName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>)`
+`https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#` getPackageInfo
+
+See getPackageInfo
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getPackageUid
+
+See getPackageUid.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo.html#!>` getPackagesHoldingPermissions
+
+See getPackagesHoldingPermissions.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getPlatformPermissionsForGroup
 
 Get the platform-defined permissions which belong to a particular permission group.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getProperty(kotlin.String,%20android.content.ComponentName)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` getProperty
 
 Returns the property defined in the given component declaration.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getProperty(kotlin.String,%20kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#` getProperty
 
 Returns the property defined in the given package's \<application\> tag.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getProviderInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#` getProviderInfo
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getProviderInfo(android.content.ComponentName,%20kotlin.Int)`.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getReceiverInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getReceiverInfo(android.content.ComponentName,%20kotlin.Int)`.
+See getProviderInfo.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/res/Resources.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getResourcesForApplication(android.content.pm.ApplicationInfo,%20android.content.res.Configuration)(app: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#, configuration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#` getReceiverInfo
+
+See getReceiverInfo.
+
+<br />
+
+`https://developer.android.com/reference/kotlin/android/content/res/Resources.html#` getResourcesForApplication
 
 Retrieve the resources for an application for the provided configuration.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getServiceInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo.html#` getServiceInfo
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getServiceInfo(android.content.ComponentName,%20kotlin.Int)`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSharedLibraries(android.content.pm.PackageManager.PackageInfoFlags)(flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.PackageInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSharedLibraries(kotlin.Int)`.
+See getServiceInfo.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/Bundle.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSuspendedPackageAppExtras()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/SharedLibraryInfo.html#!>` getSharedLibraries
+
+See getSharedLibraries.
+
+<br />
+
+`https://developer.android.com/reference/kotlin/android/os/Bundle.html#?` getSuspendedPackageAppExtras
 
 Returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` of extras that was meant to be sent to the calling app when it was suspended. An app with the permission `android.permission.SUSPEND_APPS` can supply this to the system at the time of suspending an app.
 
@@ -1921,35 +1921,35 @@ Note: These extras are optional, so if no extras were supplied to the system, th
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSyntheticAppDetailsActivityEnabled(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getSyntheticAppDetailsActivityEnabled
 
 Return whether a synthetic app details activity will be generated if the app has no enabled launcher activity.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getTargetSdkVersion(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTargetSdkVersion
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getVerifiedSigningInfo(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, minAppSigningSchemeVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#` getVerifiedSigningInfo
 
-Verifies and returns the [app signing](https://source.android.com/docs/security/features/apksigning) information of the file at the given path. This operation takes a few milliseconds. Unlike `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#GET_SIGNING_CERTIFICATES:kotlin.Int`, this method does not require the file to be a package archive file.
+Verifies and returns the [app signing](https://source.android.com/docs/security/features/apksigning) information of the file at the given path. This operation takes a few milliseconds. Unlike getPackageArchiveInfo with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#GET_SIGNING_CERTIFICATES:kotlin.Int`, this method does not require the file to be a package archive file.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isAppArchivable(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isAppArchivable
 
 Returns true if an app is archivable.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isAutoRevokeWhitelisted()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isAutoRevokeWhitelisted
 
 **Note:**In retrospect it would have been preferred to use more inclusive terminology when naming this API. Similar APIs added will refrain from using the term "whitelist".
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isAutoRevokeWhitelisted(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isAutoRevokeWhitelisted
 
 Checks whether an application is exempt from having its permissions be automatically revoked when the app is unused for an extended period of time. Only the installer on record that installed the given package, or a holder of `WHITELIST_AUTO_REVOKE_PERMISSIONS` is allowed to call this.
 
@@ -1957,19 +1957,19 @@ Checks whether an application is exempt from having its permissions be automatic
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isDefaultApplicationIcon(android.graphics.drawable.Drawable)(drawable: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isDefaultApplicationIcon
 
 Returns if the provided drawable represents the default activity icon provided by the system. PackageManager silently returns a default application icon for any package/activity if the app itself does not define one or if the system encountered any error when loading the icon. Developers can use this to check implement app specific logic around retrying or caching.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isPackageStopped(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isPackageStopped
 
 Query if an app is currently stopped.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isPackageSuspended()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isPackageSuspended
 
 Apps can query this to know if they have been suspended. A system app with the permission `android.permission.SUSPEND_APPS` can put any app on the device into a suspended state.
 
@@ -1979,20 +1979,20 @@ When an app is put into this state, the broadcast action `https://developer.andr
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#isPackageSuspended(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isPackageSuspended
 
 Query if an app is currently suspended.
 
 <br />
 
-`T` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#parseAndroidManifest(android.os.ParcelFileDescriptor,%20java.util.function.Function)(apkFileDescriptor: https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#, parserFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!, T>)`
+`T` parseAndroidManifest
 
-Similar to `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#parseAndroidManifest(java.io.File,%20java.util.function.Function)`, but accepting a file descriptor instead of a File object. 
+Similar to parseAndroidManifest, but accepting a file descriptor instead of a File object. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 <br />
 
-`T` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#parseAndroidManifest(java.io.File,%20java.util.function.Function)(apkFile: https://developer.android.com/reference/kotlin/java/io/File.html#, parserFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!, T>)`
+`T` parseAndroidManifest
 
 Retrieve AndroidManifest.xml information for the given application apk file.
 
@@ -2034,7 +2034,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryActivityProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` queryActivityProperty
 
 Returns the property definition for all \<activity\> and \<activity-alias\> tags.
 
@@ -2042,7 +2042,7 @@ If the property is not defined with any \<activity\> and \<activity-alias\> tag,
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryApplicationProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` queryApplicationProperty
 
 Returns the property definition for all \<application\> tags.
 
@@ -2050,43 +2050,43 @@ If the property is not defined with any \<application\> tag, returns and empty l
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` queryBroadcastReceivers
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent,%20kotlin.Int)`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryContentProviders(kotlin.String,%20kotlin.Int,%20android.content.pm.PackageManager.ComponentInfoFlags)(processName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryContentProviders(kotlin.String,%20kotlin.Int,%20kotlin.Int)`.
+See queryBroadcastReceivers.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#!>` queryContentProviders
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent,%20kotlin.Int)`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.collections.MutableList,%20android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(caller: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, specifics: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/Intent.html#!>?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.Array,%20android.content.Intent,%20kotlin.Int)`.
+See queryContentProviders.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentContentProviders(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` queryIntentActivities
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentContentProviders(android.content.Intent,%20kotlin.Int)`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent,%20kotlin.Int)`.
+See queryIntentActivities.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryProviderProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` queryIntentActivityOptions
+
+See queryIntentActivityOptions.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` queryIntentContentProviders
+
+See queryIntentContentProviders.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!>` queryIntentServices
+
+See queryIntentServices.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` queryProviderProperty
 
 Returns the property definition for all \<provider\> tags.
 
@@ -2094,7 +2094,7 @@ If the property is not defined with any \<provider\> tag, returns and empty list
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryReceiverProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` queryReceiverProperty
 
 Returns the property definition for all \<receiver\> tags.
 
@@ -2102,7 +2102,7 @@ If the property is not defined with any \<receiver\> tag, returns and empty list
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryServiceProperty(kotlin.String)(propertyName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.Property.html#!>` queryServiceProperty
 
 Returns the property definition for all \<service\> tags.
 
@@ -2110,37 +2110,37 @@ If the property is not defined with any \<service\> tag, returns and empty list.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#relinquishUpdateOwnership(kotlin.String)(targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` relinquishUpdateOwnership
 
 Attempt to relinquish the update ownership of the given package. Only the current update owner of the given package can use this API.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#requestChecksums(kotlin.String,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.collections.MutableList,%20android.content.pm.PackageManager.OnChecksumsReadyListener)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, includeSplits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, required: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, trustedInstallers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#!>, onChecksumsReadyListener: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.OnChecksumsReadyListener.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` requestChecksums
 
 Requests the checksums for APKs within a package. The checksums will be returned asynchronously via onChecksumsReadyListener. By default returns all readily available checksums: - enforced by platform, - enforced by installer. If caller needs a specific checksum kind, they can specify it as required. **Caution: Android can not verify installer-provided checksums. Make sure you specify trusted installers.**
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveActivity(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#?` resolveActivity
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveActivity(android.content.Intent,%20kotlin.Int)`.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveContentProvider(kotlin.String,%20android.content.pm.PackageManager.ComponentInfoFlags)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentInfoFlags.html#)`
-
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveContentProvider(kotlin.String,%20kotlin.Int)`.
+See resolveActivity.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#?` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveService(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ResolveInfoFlags.html#)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#?` resolveContentProvider
 
-See `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveService(android.content.Intent,%20kotlin.Int)`.
+See resolveContentProvider.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setAutoRevokeWhitelisted(kotlin.String,%20kotlin.Boolean)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whitelisted: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#?` resolveService
+
+See resolveService.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` setAutoRevokeWhitelisted
 
 Marks an application exempt from having its permissions be automatically revoked when the app is unused for an extended period of time. Only the installer on record that installed the given package is allowed to call this. Packages start in whitelisted state, and it is the installer's responsibility to un-whitelist the packages it installs, unless auto-revoking permissions from that package would cause breakages beyond having to re-request the permission(s).
 
@@ -2148,7 +2148,7 @@ Marks an application exempt from having its permissions be automatically revoked
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSettings(kotlin.collections.MutableList)(settings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.ComponentEnabledSetting.html#!>)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setComponentEnabledSettings
 
 Set the enabled settings for package components such as activities, receivers, services and providers. This setting will override any enabled state which may have been set by the component in its manifest.
 
@@ -2158,7 +2158,7 @@ The permission is not required if target components are running under the same u
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setMimeGroup(kotlin.String,%20kotlin.collections.MutableSet)(mimeGroup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, mimeTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setMimeGroup
 
 Sets MIME group's MIME types. Libraries should use a reverse-DNS prefix followed by a ':' character and library-specific group name to avoid namespace collisions, e.g. "com.example:myFeature".
 
@@ -2239,7 +2239,7 @@ open fun addPermissionAsync(info: PermissionInfo): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Like `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPermission(android.content.pm.PermissionInfo)` but asynchronously persists the package manager state after returning from the call, allowing it to return quicker and batch a series of adds at the expense of no guarantee the added permission will be retained if the device is rebooted before it is written.
+Like addPermission but asynchronously persists the package manager state after returning from the call, allowing it to return quicker and batch a series of adds at the expense of no guarantee the added permission will be retained if the device is rebooted before it is written.
 
 | Parameters ||
 |---|---|
@@ -2260,7 +2260,7 @@ open fun addPreferredActivity(
 
 **Deprecated:** *Deprecated in Java.*
 
-Add a new preferred activity mapping to the system. This will be used to automatically select the given activity component when `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` finds multiple matching activities and also matches the given filter.
+Add a new preferred activity mapping to the system. This will be used to automatically select the given activity component when startActivity finds multiple matching activities and also matches the given filter.
 
 | Parameters ||
 |---|---|
@@ -2369,7 +2369,7 @@ open fun checkPermission(
 
 Check whether a particular package has been granted a particular permission.
 
-**Note:** This API returns the underlying permission state as-is and is mostly intended for permission managing system apps. To perform an access check for a certain app, please use the `https://developer.android.com/reference/kotlin/android/content/Context.html#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)` APIs instead.
+**Note:** This API returns the underlying permission state as-is and is mostly intended for permission managing system apps. To perform an access check for a certain app, please use the checkPermission APIs instead.
 
 | Parameters ||
 |---|---|
@@ -2394,7 +2394,7 @@ open fun checkSignatures(
 
 **Deprecated:** *Deprecated in Java.*
 
-Like `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#checkSignatures(kotlin.String,%20kotlin.String)`, but takes UIDs of the two packages to be checked. This can be useful, for example, when doing the check in an IPC, where the UID is the only identity available. It is functionally identical to determining the package associated with the UIDs and checking their signatures.
+Like checkSignatures, but takes UIDs of the two packages to be checked. This can be useful, for example, when doing the check in an IPC, where the UID is the only identity available. It is functionally identical to determining the package associated with the UIDs and checking their signatures.
 
 | Parameters ||
 |---|---|
@@ -2452,7 +2452,7 @@ open fun clearPackagePreferredActivities(packageName: String): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Remove all preferred activity mappings, previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)`, from the system whose activities are implemented in the given package name. An application can only clear its own package(s).
+Remove all preferred activity mappings, previously added with addPreferredActivity, from the system whose activities are implemented in the given package name. An application can only clear its own package(s).
 
 | Parameters ||
 |---|---|
@@ -2494,7 +2494,7 @@ open fun extendVerificationTimeout(
 
 **Deprecated:** *Deprecated in Java.*
 
-Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to extend the default timeout for a response and declare what action to perform after the timeout occurs. The response must include the `verificationCodeAtTimeout` which is one of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERIFICATION_ALLOW:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERIFICATION_REJECT:kotlin.Int`. This method can be called multiple times, but the total amount of time extension time will be limited to `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MAXIMUM_VERIFICATION_TIMEOUT:kotlin.Long`. If the method is called multiple times with different `verificationCodeAtTimeout`, then previous `verificationCodeAtTimeout` will be ignored and only the latest one will take effect. If this method is called after calling `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#verifyPendingInstall(kotlin.Int,%20kotlin.Int)`, it may nullify the result set by verifyPendingInstall.
+Allows a package listening to the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_NEEDS_VERIFICATION:kotlin.String` to extend the default timeout for a response and declare what action to perform after the timeout occurs. The response must include the `verificationCodeAtTimeout` which is one of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERIFICATION_ALLOW:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERIFICATION_REJECT:kotlin.Int`. This method can be called multiple times, but the total amount of time extension time will be limited to `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MAXIMUM_VERIFICATION_TIMEOUT:kotlin.Long`. If the method is called multiple times with different `verificationCodeAtTimeout`, then previous `verificationCodeAtTimeout` will be ignored and only the latest one will take effect. If this method is called after calling verifyPendingInstall, it may nullify the result set by verifyPendingInstall.
 
 | Parameters ||
 |---|---|
@@ -2518,9 +2518,9 @@ open fun getActivityBanner(activityName: ComponentName): Drawable?
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve the banner associated with an activity. Given the full name of an activity, retrieves the information about it and calls `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo.html#loadIcon(android.content.pm.PackageManager)` to return its banner. If the activity cannot be found, NameNotFoundException is thrown.
+Retrieve the banner associated with an activity. Given the full name of an activity, retrieves the information about it and calls loadIcon to return its banner. If the activity cannot be found, NameNotFoundException is thrown.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -2569,9 +2569,9 @@ open fun getActivityIcon(activityName: ComponentName): Drawable
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve the icon associated with an activity. Given the full name of an activity, retrieves the information about it and calls `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo.html#loadIcon(android.content.pm.PackageManager)` to return its icon. If the activity cannot be found, NameNotFoundException is thrown.
+Retrieve the icon associated with an activity. Given the full name of an activity, retrieves the information about it and calls loadIcon to return its icon. If the activity cannot be found, NameNotFoundException is thrown.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -2622,7 +2622,7 @@ open fun getActivityInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all of the information we know about a particular activity class. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getActivityInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)` when long flags are needed.
+Retrieve all of the information we know about a particular activity class. Use getActivityInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -2648,9 +2648,9 @@ open fun getActivityLogo(activityName: ComponentName): Drawable?
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve the logo associated with an activity. Given the full name of an activity, retrieves the information about it and calls `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo.html#loadLogo(android.content.pm.PackageManager)` to return its logo. If the activity cannot be found, NameNotFoundException is thrown.
+Retrieve the logo associated with an activity. Given the full name of an activity, retrieves the information about it and calls loadLogo to return its logo. If the activity cannot be found, NameNotFoundException is thrown.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -2754,7 +2754,7 @@ open fun getApplicationBanner(packageName: String): Drawable?
 
 Retrieve the banner associated with an application. Given the name of the application's package, retrieves the information about it and calls getApplicationIcon() to return its banner. If the application cannot be found, NameNotFoundException is thrown.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -2778,7 +2778,7 @@ open fun getApplicationEnabledSetting(packageName: String): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Return the enabled setting for an application. This returns the last value set by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setApplicationEnabledSetting(kotlin.String,%20kotlin.Int,%20kotlin.Int)`; in most cases this value will be `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int` since the value originally specified in the manifest has not been modified.
+Return the enabled setting for an application. This returns the last value set by setApplicationEnabledSetting; in most cases this value will be `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int` since the value originally specified in the manifest has not been modified.
 
 | Parameters ||
 |---|---|
@@ -2853,7 +2853,7 @@ open fun getApplicationInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all of the information we know about a particular package/application. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationInfo(kotlin.String,%20android.content.pm.PackageManager.ApplicationInfoFlags)` when long flags are needed.
+Retrieve all of the information we know about a particular package/application. Use getApplicationInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -2922,7 +2922,7 @@ open fun getApplicationLogo(packageName: String): Drawable?
 
 Retrieve the logo associated with an application. Given the name of the application's package, retrieves the information about it and calls getApplicationLogo() to return its logo. If the application cannot be found, NameNotFoundException is thrown.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -2967,7 +2967,7 @@ open fun getComponentEnabledSetting(componentName: ComponentName): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Return the enabled setting for a package component (activity, receiver, service, provider). This returns the last value set by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)`; in most cases this value will be `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int` since the value originally specified in the manifest has not been modified.
+Return the enabled setting for a package component (activity, receiver, service, provider). This returns the last value set by setComponentEnabledSetting; in most cases this value will be `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#COMPONENT_ENABLED_STATE_DEFAULT:kotlin.Int` since the value originally specified in the manifest has not been modified.
 
 | Parameters ||
 |---|---|
@@ -3030,7 +3030,7 @@ open fun getInstalledApplications(flags: Int): MutableList<ApplicationInfo!>
 
 **Deprecated:** *Deprecated in Java.*
 
-Return a List of all application packages that are installed for the current user. If flag GET_UNINSTALLED_PACKAGES has been set, a list of all applications including those deleted with `DELETE_KEEP_DATA` (partially installed apps with data directory) will be returned. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledApplications(android.content.pm.PackageManager.ApplicationInfoFlags)` when long flags are needed.
+Return a List of all application packages that are installed for the current user. If flag GET_UNINSTALLED_PACKAGES has been set, a list of all applications including those deleted with `DELETE_KEEP_DATA` (partially installed apps with data directory) will be returned. Use getInstalledApplications when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3050,7 +3050,7 @@ open fun getInstalledPackages(flags: Int): MutableList<PackageInfo!>
 
 **Deprecated:** *Deprecated in Java.*
 
-Return a List of all packages that are installed for the current user. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstalledPackages(android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Return a List of all packages that are installed for the current user. Use getInstalledPackages when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3160,7 +3160,7 @@ open fun getLaunchIntentForPackage(packageName: String): Intent?
 
 Returns a "good" intent to launch a front-door activity in a package. This is used, for example, to implement an "open" button when browsing through packages. The current implementation looks first for a main activity in the category `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_INFO:kotlin.String`, and next for a main activity in the category `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`. Returns `null` if neither are found.
 
-Consider using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getLaunchIntentSenderForPackage(kotlin.String)` if the caller is not allowed to query for the `packageName`.
+Consider using getLaunchIntentSenderForPackage if the caller is not allowed to query for the `packageName`.
 
 | Parameters ||
 |---|---|
@@ -3245,7 +3245,7 @@ open fun getPackageArchiveInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve overall information about an application package defined in a package archive file Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageArchiveInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Retrieve overall information about an application package defined in a package archive file Use getPackageArchiveInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3298,7 +3298,7 @@ open fun getPackageGids(
 
 Return an array of all of the POSIX secondary group IDs that have been assigned to the given package.
 
-Note that the same package may have different GIDs under different `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` on the same device. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageGids(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Note that the same package may have different GIDs under different `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` on the same device. Use getPackageGids when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3326,7 +3326,7 @@ open fun getPackageInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve overall information about an application package that is installed on the system. This method can be used for retrieving information about packages for which multiple versions can be installed at the time. Currently only packages hosting static shared libraries can have multiple installed versions. The method can also be used to get info for a package that has a single version installed by passing `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERSION_CODE_HIGHEST:kotlin.Int` in the `https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#` constructor. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageInfo(android.content.pm.VersionedPackage,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Retrieve overall information about an application package that is installed on the system. This method can be used for retrieving information about packages for which multiple versions can be installed at the time. Currently only packages hosting static shared libraries can have multiple installed versions. The method can also be used to get info for a package that has a single version installed by passing `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#VERSION_CODE_HIGHEST:kotlin.Int` in the `https://developer.android.com/reference/kotlin/android/content/pm/VersionedPackage.html#` constructor. Use getPackageInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3354,7 +3354,7 @@ open fun getPackageInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve overall information about an application package that is installed on the system. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageInfo(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Retrieve overall information about an application package that is installed on the system. Use getPackageInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3402,7 +3402,7 @@ open fun getPackageUid(
 
 Return the UID associated with the given package name.
 
-Note that the same package will have different UIDs under different `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` on the same device. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackageUid(kotlin.String,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Note that the same package will have different UIDs under different `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` on the same device. Use getPackageUid when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3450,7 +3450,7 @@ open fun getPackagesHoldingPermissions(
 
 **Deprecated:** *Deprecated in Java.*
 
-Return a List of all installed packages that are currently holding any of the given permissions. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getPackagesHoldingPermissions(kotlin.Array,%20android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Return a List of all installed packages that are currently holding any of the given permissions. Use getPackagesHoldingPermissions when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3531,7 +3531,7 @@ open fun getPreferredActivities(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all preferred activities, previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPreferredActivity(android.content.IntentFilter,%20kotlin.Int,%20kotlin.Array,%20android.content.ComponentName)`, that are currently registered with the system.
+Retrieve all preferred activities, previously added with addPreferredActivity, that are currently registered with the system.
 
 | Parameters ||
 |---|---|
@@ -3578,7 +3578,7 @@ open fun getProviderInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all of the information we know about a particular content provider class. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getProviderInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)` when long flags are needed.
+Retrieve all of the information we know about a particular content provider class. Use getProviderInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3606,7 +3606,7 @@ open fun getReceiverInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all of the information we know about a particular receiver class. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getReceiverInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)` when long flags are needed.
+Retrieve all of the information we know about a particular receiver class. Use getReceiverInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3706,7 +3706,7 @@ open fun getServiceInfo(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all of the information we know about a particular service class. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getServiceInfo(android.content.ComponentName,%20android.content.pm.PackageManager.ComponentInfoFlags)` when long flags are needed.
+Retrieve all of the information we know about a particular service class. Use getServiceInfo when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3732,7 +3732,7 @@ open fun getSharedLibraries(flags: Int): MutableList<SharedLibraryInfo!>
 
 **Deprecated:** *Deprecated in Java.*
 
-Get a list of shared libraries on the device. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSharedLibraries(android.content.pm.PackageManager.PackageInfoFlags)` when long flags are needed.
+Get a list of shared libraries on the device. Use getSharedLibraries when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -3821,7 +3821,7 @@ open fun getUserBadgedDrawableForDensity(
 
 If the target user is a managed profile of the calling user or the caller is itself a managed profile, then this returns a badged copy of the given drawable allowing the user to distinguish it from the original drawable. The caller can specify the location in the bounds of the drawable to be badged where the badge should be applied as well as the density of the badge to be used.
 
-If the original drawable is a BitmapDrawable and the backing bitmap is mutable as per `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#isMutable()`, the badging is performed in place and the original drawable is returned.
+If the original drawable is a BitmapDrawable and the backing bitmap is mutable as per isMutable, the badging is performed in place and the original drawable is returned.
 
 | Parameters ||
 |---|---|
@@ -3849,9 +3849,9 @@ open fun getUserBadgedIcon(
 
 **Deprecated:** *Deprecated in Java.*
 
-If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. For badging an arbitrary drawable use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getUserBadgedDrawableForDensity(android.graphics.drawable.Drawable,%20android.os.UserHandle,%20android.graphics.Rect,%20kotlin.Int)`.
+If the target user is a managed profile, then this returns a badged copy of the given icon to be able to distinguish it from the original icon. For badging an arbitrary drawable use getUserBadgedDrawableForDensity.
 
-If the original drawable is a BitmapDrawable and the backing bitmap is mutable as per `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#isMutable()`, the badging is performed in place and the original drawable is returned.
+If the original drawable is a BitmapDrawable and the backing bitmap is mutable as per isMutable, the badging is performed in place and the original drawable is returned.
 
 | Parameters ||
 |---|---|
@@ -4023,7 +4023,7 @@ open fun hasSystemFeature(name: String): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Check whether the given feature name is one of the available features as returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()`. This tests for the presence of *any* version of the given feature name; use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String,%20kotlin.Int)` to check for a minimum version.
+Check whether the given feature name is one of the available features as returned by getSystemAvailableFeatures. This tests for the presence of *any* version of the given feature name; use hasSystemFeature to check for a minimum version.
 
 | Parameters ||
 |---|---|
@@ -4047,7 +4047,7 @@ open fun hasSystemFeature(
 
 **Deprecated:** *Deprecated in Java.*
 
-Check whether the given feature name and version is one of the available features as returned by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getSystemAvailableFeatures()`. Since features are defined to always be backwards compatible, this returns true if the available feature version is greater than or equal to the requested version.
+Check whether the given feature name and version is one of the available features as returned by getSystemAvailableFeatures. Since features are defined to always be backwards compatible, this returns true if the available feature version is greater than or equal to the requested version.
 
 | Parameters ||
 |---|---|
@@ -4159,7 +4159,7 @@ open fun queryBroadcastReceivers(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all receivers that can handle a broadcast of the given intent. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+Retrieve all receivers that can handle a broadcast of the given intent. Use queryBroadcastReceivers when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4186,7 +4186,7 @@ open fun queryContentProviders(
 
 Retrieve content provider information.
 
-*Note: unlike most other methods, an empty result set is indicated by a null return instead of an empty list.* Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryContentProviders(kotlin.String,%20kotlin.Int,%20android.content.pm.PackageManager.ComponentInfoFlags)` when long flags are needed.
+*Note: unlike most other methods, an empty result set is indicated by a null return instead of an empty list.* Use queryContentProviders when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4236,7 +4236,7 @@ open fun queryIntentActivities(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all activities that can be performed for the given intent. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+Retrieve all activities that can be performed for the given intent. Use queryIntentActivities when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4262,7 +4262,7 @@ open fun queryIntentActivityOptions(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve a set of activities that should be presented to the user as similar options. This is like #queryIntentActivities, except it also allows you to supply a list of more explicit Intents that you would like to resolve to particular options, and takes care of returning the final ResolveInfo list in a reasonable order, with no duplicates, based on those inputs. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentActivityOptions(android.content.ComponentName,%20kotlin.collections.MutableList,%20android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+Retrieve a set of activities that should be presented to the user as similar options. This is like #queryIntentActivities, except it also allows you to supply a list of more explicit Intents that you would like to resolve to particular options, and takes care of returning the final ResolveInfo list in a reasonable order, with no duplicates, based on those inputs. Use queryIntentActivityOptions when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4290,7 +4290,7 @@ open fun queryIntentContentProviders(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all providers that can match the given intent. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentContentProviders(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+Retrieve all providers that can match the given intent. Use queryIntentContentProviders when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4314,7 +4314,7 @@ open fun queryIntentServices(
 
 **Deprecated:** *Deprecated in Java.*
 
-Retrieve all services that can match the given intent. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+Retrieve all services that can match the given intent. Use queryIntentServices when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4377,7 +4377,7 @@ open fun removePermission(name: String): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Removes a permission that was previously added with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#addPermission(android.content.pm.PermissionInfo)`. The same ownership rules apply -- you are only allowed to remove permissions that you are allowed to add.
+Removes a permission that was previously added with addPermission. The same ownership rules apply -- you are only allowed to remove permissions that you are allowed to add.
 
 | Parameters ||
 |---|---|
@@ -4447,10 +4447,10 @@ open fun resolveActivity(
 
 **Deprecated:** *Deprecated in Java.*
 
-Determine the best action to perform for a given Intent. This is how `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager)` finds an activity if a class has not been explicitly specified.
+Determine the best action to perform for a given Intent. This is how resolveActivity finds an activity if a class has not been explicitly specified.
 
-*Note:* if using an implicit Intent (without an explicit ComponentName specified), be sure to consider whether to set the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int` only flag. You need to do so to resolve the activity in the same way that `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager)` do.
-Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveActivity(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+*Note:* if using an implicit Intent (without an explicit ComponentName specified), be sure to consider whether to set the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int` only flag. You need to do so to resolve the activity in the same way that startActivity and resolveActivity do.
+Use resolveActivity when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4483,7 +4483,7 @@ Uri uri = Uri.parse("content://com.example.app.provider/table1");
   ProviderInfo info = packageManager.resolveContentProvider(uri.getAuthority(), flags);
   
 ```
-Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveContentProvider(kotlin.String,%20android.content.pm.PackageManager.ComponentInfoFlags)` when long flags are needed.
+Use resolveContentProvider when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4507,7 +4507,7 @@ open fun resolveService(
 
 **Deprecated:** *Deprecated in Java.*
 
-Determine the best service to handle for a given Intent. Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#resolveService(android.content.Intent,%20android.content.pm.PackageManager.ResolveInfoFlags)` when long flags are needed.
+Determine the best service to handle for a given Intent. Use resolveService when long flags are needed.
 
 | Parameters ||
 |---|---|
@@ -4549,7 +4549,7 @@ open fun setApplicationCategoryHint(
 
 Provide a hint of what the `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#category:kotlin.Int` value should be for the given package.
 
-This hint can only be set by the app which installed this package, as determined by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstallerPackageName(kotlin.String)`.
+This hint can only be set by the app which installed this package, as determined by getInstallerPackageName.
 
 | Parameters ||
 |---|---|
@@ -4570,7 +4570,7 @@ open fun setApplicationEnabledSetting(
 
 **Deprecated:** *Deprecated in Java.*
 
-Set the enabled setting for an application This setting will override any enabled state which may have been set by the application in its manifest. It also overrides the enabled state set in the manifest for any of the application's components. It does not override any enabled state set by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSetting(android.content.ComponentName,%20kotlin.Int,%20kotlin.Int)` for any of the application's components.
+Set the enabled setting for an application This setting will override any enabled state which may have been set by the application in its manifest. It also overrides the enabled state set in the manifest for any of the application's components. It does not override any enabled state set by setComponentEnabledSetting for any of the application's components.
 
 | Parameters ||
 |---|---|
@@ -4595,7 +4595,7 @@ open fun setComponentEnabledSetting(
 
 Set the enabled setting for a package component (activity, receiver, service, provider). This setting will override any enabled state which may have been set by the component in its manifest.
 
-Consider using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#setComponentEnabledSettings(kotlin.collections.MutableList)` if multiple components need to be updated atomically.
+Consider using setComponentEnabledSettings if multiple components need to be updated atomically.
 
 | Parameters ||
 |---|---|
@@ -4656,7 +4656,7 @@ open fun updateInstantAppCookie(cookie: ByteArray!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Updates the instant application cookie for the calling app. Non instant apps and apps that were instant but were upgraded to normal apps can still access this API. For instant apps this cookie is cached for some time after uninstall while for normal apps the cookie is deleted after the app is uninstalled. The cookie is always present while the app is installed. The cookie size is limited by `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#getInstantAppCookieMaxBytes()`. Passing `null` or an empty array clears the cookie.
+Updates the instant application cookie for the calling app. Non instant apps and apps that were instant but were upgraded to normal apps can still access this API. For instant apps this cookie is cached for some time after uninstall while for normal apps the cookie is deleted after the app is uninstalled. The cookie is always present while the app is installed. The cookie size is limited by getInstantAppCookieMaxBytes. Passing `null` or an empty array clears the cookie.
 
 <br />
 

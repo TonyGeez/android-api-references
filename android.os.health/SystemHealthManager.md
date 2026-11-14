@@ -16,21 +16,21 @@ Provides access to data about how various system resources are used by applicati
 
 | Public methods ||
 |---|---|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)(params: https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams.html#?)` Provides an estimate of available CPU capacity headroom of the device. |
-| open [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroomCalculationWindowRange()()` Gets the range of the calculation window size for CPU headroom. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroomMinIntervalMillis()()` Gets minimum polling interval for calling `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)` in milliseconds. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getCpuHeadroom Provides an estimate of available CPU capacity headroom of the device. |
+| open [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getCpuHeadroomCalculationWindowRange Gets the range of the calculation window size for CPU headroom. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getCpuHeadroomMinIntervalMillis Gets minimum polling interval for calling getCpuHeadroom in milliseconds. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)(params: https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams.html#?)` Provides an estimate of available GPU capacity headroom of the device. |
-| open [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroomCalculationWindowRange()()` Gets the range of the calculation window size for GPU headroom. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroomMinIntervalMillis()()` Gets minimum polling interval for calling `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)` in milliseconds. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getGpuHeadroom Provides an estimate of available GPU capacity headroom of the device. |
+| open [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getGpuHeadroomCalculationWindowRange Gets the range of the calculation window size for GPU headroom. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getGpuHeadroomMinIntervalMillis Gets minimum polling interval for calling getGpuHeadroom in milliseconds. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getMaxCpuHeadroomTidsSize()()` Gets the maximum number of TIDs this device supports for getting CPU headroom. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getPowerMonitorReadings(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(powerMonitors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, onResult: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/os/PowerMonitorReadings.html#!, https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#!>)` Asynchronously retrieves the accumulated power consumption reported by the specified power monitors. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getSupportedPowerMonitors(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, onResult: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#!>!>)` Asynchronously retrieves a list of supported `https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#`'s, which include raw ODPM (on-device power rail monitor) rails and modeled energy consumers. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxCpuHeadroomTidsSize Gets the maximum number of TIDs this device supports for getting CPU headroom. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getPowerMonitorReadings Asynchronously retrieves the accumulated power consumption reported by the specified power monitors. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getSupportedPowerMonitors Asynchronously retrieves a list of supported `https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#`'s, which include raw ODPM (on-device power rail monitor) rails and modeled energy consumers. |
 | --- | --- |
-| open [HealthStats](HealthStats.md)! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeMyUidSnapshot()()` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the application calling this API. |
-| open [HealthStats](HealthStats.md)! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshot(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uid (user-id, which in usually corresponds to application). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [HealthStats](HealthStats.md)!\>! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshots(kotlin.IntArray)(uids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uids (user-id, which in usually corresponds to application). |
+| open [HealthStats](HealthStats.md)! | takeMyUidSnapshot Return a HealthStats object containing a snapshot of system health metrics for the application calling this API. |
+| open [HealthStats](HealthStats.md)! | takeUidSnapshot Return a HealthStats object containing a snapshot of system health metrics for the given uid (user-id, which in usually corresponds to application). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [HealthStats](HealthStats.md)!\>! | takeUidSnapshots Return a HealthStats object containing a snapshot of system health metrics for the given uids (user-id, which in usually corresponds to application). |
 | --- | --- |
 
 ## Public methods
@@ -75,7 +75,7 @@ open fun getCpuHeadroomCalculationWindowRange(): Pair<Int!, Int!>
 
 Gets the range of the calculation window size for CPU headroom.
 
-See `https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams.Builder.html#setCalculationWindowMillis(kotlin.Int)`.
+See setCalculationWindowMillis.
 
 | Return ||
 |---|---|
@@ -93,9 +93,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getCpuHeadroomMinIntervalMillis(): Long
 ```
 
-Gets minimum polling interval for calling `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)` in milliseconds.
+Gets minimum polling interval for calling getCpuHeadroom in milliseconds.
 
-The `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)` API may return cached result if called more frequent than the interval.
+The getCpuHeadroom API may return cached result if called more frequent than the interval.
 
 | Exceptions ||
 |---|---|
@@ -138,7 +138,7 @@ open fun getGpuHeadroomCalculationWindowRange(): Pair<Int!, Int!>
 
 Gets the range of the calculation window size for GPU headroom.
 
-See `https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams.Builder.html#setCalculationWindowMillis(kotlin.Int)`.
+See setCalculationWindowMillis.
 
 | Return ||
 |---|---|
@@ -156,9 +156,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getGpuHeadroomMinIntervalMillis(): Long
 ```
 
-Gets minimum polling interval for calling `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)` in milliseconds.
+Gets minimum polling interval for calling getGpuHeadroom in milliseconds.
 
-The `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)` API may return cached result if called more frequent than the interval.
+The getGpuHeadroom API may return cached result if called more frequent than the interval.
 
 | Exceptions ||
 |---|---|
@@ -174,7 +174,7 @@ open fun getMaxCpuHeadroomTidsSize(): Int
 
 Gets the maximum number of TIDs this device supports for getting CPU headroom.
 
-See `https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams.Builder.html#setTids(kotlin.Int)`.
+See setTids.
 
 | Return ||
 |---|---|
@@ -231,11 +231,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun takeMyUidSnapshot(): HealthStats!
 ```
 
-Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the application calling this API. This method is the same as calling `takeUidSnapshot(Process.myUid())`.
+Return a HealthStats object containing a snapshot of system health metrics for the application calling this API. This method is the same as calling `takeUidSnapshot(Process.myUid())`.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/health/HealthStats!` | A `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing the metrics for this application. The keys for this HealthStats object will be from the `https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats` class. |
+| `https://developer.android.com/reference/kotlin/android/os/health/HealthStats!` | A HealthStats object containing the metrics for this application. The keys for this HealthStats object will be from the UidHealthStats class. |
 
 ### takeUidSnapshot
 
@@ -245,7 +245,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun takeUidSnapshot(uid: Int): HealthStats!
 ```
 
-Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uid (user-id, which in usually corresponds to application).
+Return a HealthStats object containing a snapshot of system health metrics for the given uid (user-id, which in usually corresponds to application).
 
 | Parameters ||
 |---|---|
@@ -253,7 +253,7 @@ Return a `https://developer.android.com/reference/kotlin/android/os/health/Healt
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/health/HealthStats!` | A `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing the metrics for the requested application. The keys for this HealthStats object will be from the `https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats` class. |
+| `https://developer.android.com/reference/kotlin/android/os/health/HealthStats!` | A HealthStats object containing the metrics for the requested application. The keys for this HealthStats object will be from the UidHealthStats class. |
 
 | Exceptions ||
 |---|---|
@@ -261,7 +261,7 @@ Return a `https://developer.android.com/reference/kotlin/android/os/health/Healt
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Process.html#myUid()`
+- myUid
 
 ### takeUidSnapshots
 
@@ -271,7 +271,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun takeUidSnapshots(uids: IntArray!): Array<HealthStats!>!
 ```
 
-Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uids (user-id, which in usually corresponds to application).
+Return a HealthStats object containing a snapshot of system health metrics for the given uids (user-id, which in usually corresponds to application).
 
 | Parameters ||
 |---|---|
@@ -279,4 +279,4 @@ Return a `https://developer.android.com/reference/kotlin/android/os/health/Healt
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/health/HealthStats!>!` | An array of `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` objects containing the metrics for each of the requested uids. The keys for this HealthStats object will be from the `https://developer.android.com/reference/kotlin/android/os/health/UidHealthStats` class. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/health/HealthStats!>!` | An array of HealthStats objects containing the metrics for each of the requested uids. The keys for this HealthStats object will be from the UidHealthStats class. |

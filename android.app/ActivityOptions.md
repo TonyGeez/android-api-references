@@ -10,7 +10,7 @@ open class ActivityOptions
 | --- | --- |
 | ↳ | [android.app.ActivityOptions](ActivityOptions.md) |
 
-Helper class for building an options Bundle that can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` and related methods.
+Helper class for building an options Bundle that can be used with startActivity and related methods.
 
 ## Summary
 
@@ -20,67 +20,67 @@ Helper class for building an options Bundle that can be used with `https://devel
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#EXTRA_USAGE_TIME_REPORT:kotlin.String` A long in the extras delivered by `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#requestUsageTimeReport(android.app.PendingIntent)` that contains the total time (in ms) the user spent in the app flow. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#EXTRA_USAGE_TIME_REPORT_PACKAGES:kotlin.String` A Bundle in the extras delivered by `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#requestUsageTimeReport(android.app.PendingIntent)` that contains detailed information about the time spent in each package associated with the app; each key is a package name, whose value is a long containing the time (in ms). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOWED:kotlin.Int` Grants the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` background activity start privileges. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#EXTRA_USAGE_TIME_REPORT:kotlin.String` A long in the extras delivered by requestUsageTimeReport that contains the total time (in ms) the user spent in the app flow. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#EXTRA_USAGE_TIME_REPORT_PACKAGES:kotlin.String` A Bundle in the extras delivered by requestUsageTimeReport that contains detailed information about the time spent in each package associated with the app; each key is a package name, whose value is a long containing the time (in ms). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOWED:kotlin.Int` Grants the PendingIntent background activity start privileges. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS:kotlin.Int` Grants the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` all background activity start privileges, including those normally reserved for privileged contexts (e.g., companion apps or those with the |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE:kotlin.Int` Grants the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` background activity start privileges only when the app has a visible window (i.e., is visible to the user). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_DENIED:kotlin.Int` Denies the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` any background activity start privileges. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS:kotlin.Int` Grants the PendingIntent all background activity start privileges, including those normally reserved for privileged contexts (e.g., companion apps or those with the |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE:kotlin.Int` Grants the PendingIntent background activity start privileges only when the app has a visible window (i.e., is visible to the user). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_DENIED:kotlin.Int` Denies the PendingIntent any background activity start privileges. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_SYSTEM_DEFINED:kotlin.Int` The system determines whether to grant background activity start privileges. |
 
 | Public methods ||
 |---|---|
-| open [Rect](../android.graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchBounds()()` Returns the bounds that should be used to launch the activity. |
-| open [ActivityOptions.LaunchCookie](../android/app/ActivityOptions.LaunchCookie.md)? | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchCookie()()` Gets the launch cookie associated with these options, if set. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLaunchDisplayId()()` Gets the id of the display where activity should be launched. |
+| open [Rect](../android.graphics/Rect.md)? | getLaunchBounds Returns the bounds that should be used to launch the activity. |
+| open [ActivityOptions.LaunchCookie](../android/app/ActivityOptions.LaunchCookie.md)? | getLaunchCookie Gets the launch cookie associated with these options, if set. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLaunchDisplayId Gets the id of the display where activity should be launched. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getLockTaskMode()()` Gets whether the activity is to be launched into LockTask mode. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getPendingIntentBackgroundActivityStartMode()()` Get the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getPendingIntentCreatorBackgroundActivityStartMode()()` Returns the mode to start background activities granted by the creator of the `https://developer.android.com/reference/kotlin/android/app/PendingIntent`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getLockTaskMode Gets whether the activity is to be launched into LockTask mode. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPendingIntentBackgroundActivityStartMode Get the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPendingIntentCreatorBackgroundActivityStartMode Returns the mode to start background activities granted by the creator of the PendingIntent. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getSplashScreenStyle()()` Gets the style can be used for cold-launching an activity. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#isAllowPassThroughOnTouchOutside()()` Returns whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#isMovableTaskRequired()()` Gets whether a task in which the activity will be launched is required to be movable right after launch using the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSplashScreenStyle Gets the style can be used for cold-launching an activity. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAllowPassThroughOnTouchOutside Returns whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMovableTaskRequired Gets whether a task in which the activity will be launched is required to be movable right after launch using the moveTaskTo method. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#isPendingIntentBackgroundActivityLaunchAllowed()()` Get PendingIntent activity is allowed to be started in the background if the caller can start background activities. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#isShareIdentityEnabled()()` Returns whether the launching app has opted-in to sharing its identity with the launched activity. |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeBasic()()` Create a basic ActivityOptions that has no special animation associated with it. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPendingIntentBackgroundActivityLaunchAllowed Get PendingIntent activity is allowed to be started in the background if the caller can start background activities. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isShareIdentityEnabled Returns whether the launching app has opted-in to sharing its identity with the launched activity. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeBasic Create a basic ActivityOptions that has no special animation associated with it. |
 | --- | --- |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeClipRevealAnimation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where the new activity is revealed from a small originating area of the screen to its final full representation. |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeCustomAnimation(android.content.Context,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, enterResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exitResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
-| open static [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeCustomAnimation(android.content.Context,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, enterResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exitResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backgroundColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeClipRevealAnimation Create an ActivityOptions specifying an animation where the new activity is revealed from a small originating area of the screen to its final full representation. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeCustomAnimation Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
+| open static [ActivityOptions](ActivityOptions.md) | makeCustomAnimation Create an ActivityOptions specifying a custom animation to run when the activity is displayed. |
 | --- | --- |
-| open static [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeLaunchIntoPip(android.app.PictureInPictureParams)(pictureInPictureParams: https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams)` Creates an `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance that launch into picture-in-picture. |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeScaleUpAnimation(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where the new activity is scaled from a small originating area of the screen to its final full representation. |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeSceneTransitionAnimation(android.app.Activity,%20android.util.Pair)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, vararg sharedElements: https://developer.android.com/reference/kotlin/android/util/Pair.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
+| open static [ActivityOptions](ActivityOptions.md) | makeLaunchIntoPip Creates an ActivityOptions instance that launch into picture-in-picture. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeScaleUpAnimation Create an ActivityOptions specifying an animation where the new activity is scaled from a small originating area of the screen to its final full representation. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeSceneTransitionAnimation Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
 | --- | --- |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeSceneTransitionAnimation(android.app.Activity,%20android.view.View,%20kotlin.String)(activity: https://developer.android.com/reference/kotlin/android/app/Activity!, sharedElement: https://developer.android.com/reference/kotlin/android/view/View.html#!, sharedElementName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeTaskLaunchBehind()()` If set along with Intent. |
-| open static [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#makeThumbnailScaleUpAnimation(android.view.View,%20android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!, thumbnail: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!, startX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, startY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create an ActivityOptions specifying an animation where a thumbnail is scaled from a given position to the new activity window that is being started. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeSceneTransitionAnimation Create an ActivityOptions to transition between Activities using cross-Activity scene animations. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeTaskLaunchBehind If set along with Intent. |
+| open static [ActivityOptions](ActivityOptions.md)! | makeThumbnailScaleUpAnimation Create an ActivityOptions specifying an animation where a thumbnail is scaled from a given position to the new activity window that is being started. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#requestUsageTimeReport(android.app.PendingIntent)(receiver: https://developer.android.com/reference/kotlin/android/app/PendingIntent!)` Ask the system track that time the user spends in the app being launched, and report it back once done. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setAllowPassThroughOnTouchOutside(kotlin.Boolean)(allowed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window. |
-| open [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setAppVerificationBundle(android.os.Bundle)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` that is provided to the app installer for additional verification if the call to android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestUsageTimeReport Ask the system track that time the user spends in the app being launched, and report it back once done. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAllowPassThroughOnTouchOutside Sets whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window. |
+| open [ActivityOptions](ActivityOptions.md)! | setAppVerificationBundle Set the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` that is provided to the app installer for additional verification if the call to android. |
 | --- | --- |
-| open [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchBounds(android.graphics.Rect)(screenSpacePixelRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Sets the bounds (window size and position) that the activity should be launched in. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchCookie(android.app.ActivityOptions.LaunchCookie)(launchCookie: https://developer.android.com/reference/kotlin/android/app/ActivityOptions.LaunchCookie?)` Sets a launch cookie to track the `https://developer.android.com/reference/kotlin/android/app/Activity` and task launched as a result of these options. |
-| open [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchDisplayId(kotlin.Int)(launchDisplayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the id of the display where the activity should be launched. |
+| open [ActivityOptions](ActivityOptions.md)! | setLaunchBounds Sets the bounds (window size and position) that the activity should be launched in. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLaunchCookie Sets a launch cookie to track the Activity and task launched as a result of these options. |
+| open [ActivityOptions](ActivityOptions.md)! | setLaunchDisplayId Sets the id of the display where the activity should be launched. |
 | --- | --- |
-| open [ActivityOptions](ActivityOptions.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLockTaskEnabled(kotlin.Boolean)(lockTaskMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the activity is to be launched into LockTask mode. |
-| open [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setMovableTaskRequired(kotlin.Boolean)(movableTaskRequired: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether a task in which the activity will be launched is required to be movable right after launch using the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentBackgroundActivityLaunchAllowed(kotlin.Boolean)(allowed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set PendingIntent activity is allowed to be started in the background if the caller can start background activities. |
+| open [ActivityOptions](ActivityOptions.md)! | setLockTaskEnabled Sets whether the activity is to be launched into LockTask mode. |
+| open [ActivityOptions](ActivityOptions.md) | setMovableTaskRequired Sets whether a task in which the activity will be launched is required to be movable right after launch using the moveTaskTo method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPendingIntentBackgroundActivityLaunchAllowed Set PendingIntent activity is allowed to be started in the background if the caller can start background activities. |
 | --- | --- |
-| open [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentBackgroundActivityStartMode(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. |
-| open [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentCreatorBackgroundActivityStartMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Allow a `https://developer.android.com/reference/kotlin/android/app/PendingIntent` to use the privilege of its creator to start background activities. |
-| open [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setShareIdentityEnabled(kotlin.Boolean)(shareIdentity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the identity of the launching app should be shared with the activity. |
+| open [ActivityOptions](ActivityOptions.md) | setPendingIntentBackgroundActivityStartMode Sets the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. |
+| open [ActivityOptions](ActivityOptions.md) | setPendingIntentCreatorBackgroundActivityStartMode Allow a PendingIntent to use the privilege of its creator to start background activities. |
+| open [ActivityOptions](ActivityOptions.md) | setShareIdentityEnabled Sets whether the identity of the launching app should be shared with the activity. |
 | --- | --- |
-| open [ActivityOptions](ActivityOptions.md) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setSplashScreenStyle(kotlin.Int)(style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the preferred splash screen style of the opening activities. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#toBundle()()` Returns the created options as a Bundle, which can be passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` and related methods. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#toString()()` Returns a string representation of the object. |
+| open [ActivityOptions](ActivityOptions.md) | setSplashScreenStyle Sets the preferred splash screen style of the opening activities. |
+| open [Bundle](../android.os/Bundle.md)! | toBundle Returns the created options as a Bundle, which can be passed to startActivity and related methods. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#update(android.app.ActivityOptions)(otherOptions: https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!)` Update the current values in this ActivityOptions from those supplied in otherOptions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | update Update the current values in this ActivityOptions from those supplied in otherOptions. |
 
 ## Constants
 
@@ -92,7 +92,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_USAGE_TIME_REPORT: String
 ```
 
-A long in the extras delivered by `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#requestUsageTimeReport(android.app.PendingIntent)` that contains the total time (in ms) the user spent in the app flow.
+A long in the extras delivered by requestUsageTimeReport that contains the total time (in ms) the user spent in the app flow.
 
  Value: "android.activity.usage_time"
 
@@ -104,7 +104,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_USAGE_TIME_REPORT_PACKAGES: String
 ```
 
-A Bundle in the extras delivered by `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#requestUsageTimeReport(android.app.PendingIntent)` that contains detailed information about the time spent in each package associated with the app; each key is a package name, whose value is a long containing the time (in ms).
+A Bundle in the extras delivered by requestUsageTimeReport that contains detailed information about the time spent in each package associated with the app; each key is a package name, whose value is a long containing the time (in ms).
 
  Value: "android.usage_time_packages"
 
@@ -119,7 +119,7 @@ static val MODE_BACKGROUND_ACTIVITY_START_ALLOWED: Int
 
 **Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE:kotlin.Int` to allow starts only when the app is visible or `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS:kotlin.Int` to allow starts at any time (see [Restrictions on starting activities from the background](https://developer.android.com/guide/components/activities/background-starts)).*
 
-Grants the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` background activity start privileges. This behaves the same as `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS:kotlin.Int`, except it does not grant background activity launch permissions based on the privileged permission `START_ACTIVITIES_FROM_BACKGROUND`.
+Grants the PendingIntent background activity start privileges. This behaves the same as `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS:kotlin.Int`, except it does not grant background activity launch permissions based on the privileged permission `START_ACTIVITIES_FROM_BACKGROUND`.
 
  Value: 1
 
@@ -131,7 +131,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val MODE_BACKGROUND_ACTIVITY_START_ALLOW_ALWAYS: Int
 ```
 
-Grants the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` all background activity start privileges, including those normally reserved for privileged contexts (e.g., companion apps or those with the `START_ACTIVITIES_FROM_BACKGROUND` permission).
+Grants the PendingIntent all background activity start privileges, including those normally reserved for privileged contexts (e.g., companion apps or those with the `START_ACTIVITIES_FROM_BACKGROUND` permission).
 
 **Caution:** This mode should be used sparingly. Most apps should use `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE:kotlin.Int` instead, relying on notifications or foreground services for background interactions to minimize user disruption. However, this mode is necessary for specific use cases, such as companion apps responding to prompts from a connected device.
 
@@ -147,7 +147,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val MODE_BACKGROUND_ACTIVITY_START_ALLOW_IF_VISIBLE: Int
 ```
 
-Grants the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` background activity start privileges only when the app has a visible window (i.e., is visible to the user). This is the recommended mode for most apps to minimize disruption to the user experience.
+Grants the PendingIntent background activity start privileges only when the app has a visible window (i.e., is visible to the user). This is the recommended mode for most apps to minimize disruption to the user experience.
 
 For more information on background activity start restrictions, see: [Restrictions on starting activities from the background](https://developer.android.com/guide/components/activities/background-starts)
 
@@ -161,7 +161,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val MODE_BACKGROUND_ACTIVITY_START_DENIED: Int
 ```
 
-Denies the `https://developer.android.com/reference/kotlin/android/app/PendingIntent` any background activity start privileges.
+Denies the PendingIntent any background activity start privileges.
 
  Value: 2
 
@@ -195,7 +195,7 @@ Returns the bounds that should be used to launch the activity.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchBounds(android.graphics.Rect)`
+- setLaunchBounds
 
 ### getLaunchCookie
 
@@ -227,7 +227,7 @@ Gets the id of the display where activity should be launched.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setLaunchDisplayId(kotlin.Int)`
+- setLaunchDisplayId
 
 ### getLockTaskMode
 
@@ -245,8 +245,8 @@ Gets whether the activity is to be launched into LockTask mode.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity#startLockTask()`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setLockTaskPackages(android.content.ComponentName,%20kotlin.Array)`
+- startLockTask
+- setLockTaskPackages
 
 ### getPendingIntentBackgroundActivityStartMode
 
@@ -264,7 +264,7 @@ Get the mode for allowing or denying the senders privileges to start background 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setPendingIntentBackgroundActivityStartMode(kotlin.Int)`
+- setPendingIntentBackgroundActivityStartMode
 
 ### getPendingIntentCreatorBackgroundActivityStartMode
 
@@ -274,7 +274,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getPendingIntentCreatorBackgroundActivityStartMode(): Int
 ```
 
-Returns the mode to start background activities granted by the creator of the `https://developer.android.com/reference/kotlin/android/app/PendingIntent`.
+Returns the mode to start background activities granted by the creator of the PendingIntent.
 
 | Return ||
 |---|---|
@@ -296,7 +296,7 @@ Gets the style can be used for cold-launching an activity.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setSplashScreenStyle(kotlin.Int)`
+- setSplashScreenStyle
 
 ### isAllowPassThroughOnTouchOutside
 
@@ -309,7 +309,7 @@ open fun isAllowPassThroughOnTouchOutside(): Boolean
 Returns whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setAllowPassThroughOnTouchOutside(kotlin.Boolean)`
+- setAllowPassThroughOnTouchOutside
 
 ### isMovableTaskRequired
 
@@ -319,10 +319,10 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 open fun isMovableTaskRequired(): Boolean
 ```
 
-Gets whether a task in which the activity will be launched is required to be movable right after launch using the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method.
+Gets whether a task in which the activity will be launched is required to be movable right after launch using the moveTaskTo method.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setMovableTaskRequired(kotlin.Boolean)`
+- setMovableTaskRequired
 
 ### isPendingIntentBackgroundActivityLaunchAllowed
 
@@ -333,7 +333,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 open fun isPendingIntentBackgroundActivityLaunchAllowed(): Boolean
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#getPendingIntentBackgroundActivityStartMode()` since for apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher this value might not match the actual behavior if the value was not explicitly set.*
+**Deprecated:** *use getPendingIntentBackgroundActivityStartMode since for apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher this value might not match the actual behavior if the value was not explicitly set.*
 
 Get PendingIntent activity is allowed to be started in the background if the caller can start background activities.
 
@@ -353,9 +353,9 @@ Returns whether the launching app has opted-in to sharing its identity with the 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#setShareIdentityEnabled(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/app/Activity#getLaunchedFromUid()`
-- `https://developer.android.com/reference/kotlin/android/app/Activity#getLaunchedFromPackage()`
+- setShareIdentityEnabled
+- getLaunchedFromUid
+- getLaunchedFromPackage
 
 ### makeBasic
 
@@ -446,7 +446,7 @@ Create an ActivityOptions specifying a custom animation to run when the activity
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | Returns a new ActivityOptions object that you can use to supply these options as the options Bundle when starting an activity. This value cannot be `null`. |
+| ActivityOptions | Returns a new ActivityOptions object that you can use to supply these options as the options Bundle when starting an activity. This value cannot be `null`. |
 
 ### makeLaunchIntoPip
 
@@ -456,15 +456,15 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open static fun makeLaunchIntoPip(pictureInPictureParams: PictureInPictureParams): ActivityOptions
 ```
 
-Creates an `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance that launch into picture-in-picture. This is normally used by a Host activity to start another activity that will directly enter picture-in-picture upon its creation.
+Creates an ActivityOptions instance that launch into picture-in-picture. This is normally used by a Host activity to start another activity that will directly enter picture-in-picture upon its creation.
 
 | Parameters ||
 |---|---|
-| `pictureInPictureParams` | [PictureInPictureParams](PictureInPictureParams.md): `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams` for launching the Activity to picture-in-picture mode. This value cannot be `null`. |
+| `pictureInPictureParams` | [PictureInPictureParams](PictureInPictureParams.md): PictureInPictureParams for launching the Activity to picture-in-picture mode. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | This value cannot be `null`. |
+| ActivityOptions | This value cannot be `null`. |
 
 ### makeScaleUpAnimation
 
@@ -482,7 +482,7 @@ open static fun makeScaleUpAnimation(
 
 Create an ActivityOptions specifying an animation where the new activity is scaled from a small originating area of the screen to its final full representation.
 
-If the Intent this is being used with has not set its `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSourceBounds(android.graphics.Rect)`, those bounds will be filled in for you based on the initial bounds passed in here.
+If the Intent this is being used with has not set its setSourceBounds, those bounds will be filled in for you based on the initial bounds passed in here.
 
 | Parameters ||
 |---|---|
@@ -523,7 +523,7 @@ This requires `https://developer.android.com/reference/kotlin/android/view/Windo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition.html#setEpicenterCallback(android.transition.Transition.EpicenterCallback)`
+- setEpicenterCallback
 
 ### makeSceneTransitionAnimation
 
@@ -554,7 +554,7 @@ This requires `https://developer.android.com/reference/kotlin/android/view/Windo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition.html#setEpicenterCallback(android.transition.Transition.EpicenterCallback)`
+- setEpicenterCallback
 
 ### makeTaskLaunchBehind
 
@@ -565,7 +565,7 @@ Deprecated in [API level 37.2](https://developer.android.com/guide/topics/manife
 open static fun makeTaskLaunchBehind(): ActivityOptions!
 ```
 
-**Deprecated:** *This method is deprecated because starting an Activity behind the current task lacks transparency and violates user expectations. **Alternative:** Start the target Activity, then immediately call `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveToFront()` on the **caller's task** to restore its foreground focus.*
+**Deprecated:** *This method is deprecated because starting an Activity behind the current task lacks transparency and violates user expectations. **Alternative:** Start the target Activity, then immediately call moveToFront on the **caller's task** to restore its foreground focus.*
 
 If set along with Intent.FLAG_ACTIVITY_NEW_DOCUMENT then the task being launched will not be presented to the user but will instead be only available through the recents task list. In addition, the new task wil be affiliated with the launching activity's task. Affiliated tasks are grouped together in the recents task list.
 
@@ -586,7 +586,7 @@ open static fun makeThumbnailScaleUpAnimation(
 
 Create an ActivityOptions specifying an animation where a thumbnail is scaled from a given position to the new activity window that is being started.
 
-If the Intent this is being used with has not set its `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSourceBounds(android.graphics.Rect)`, those bounds will be filled in for you based on the initial thumbnail location and size provided here.
+If the Intent this is being used with has not set its setSourceBounds, those bounds will be filled in for you based on the initial thumbnail location and size provided here.
 
 | Parameters ||
 |---|---|
@@ -628,7 +628,7 @@ open fun setAllowPassThroughOnTouchOutside(allowed: Boolean): Unit
 
 Sets whether the source activity allows the overlaying activities from the to-be-launched app to pass through touch events to it when touches fall outside the content window.
 
-By default, touches that fall on a translucent non-touchable area of an overlaying activity window may be blocked from passing through to the activity below (source activity), unless the overlaying activity is from the same UID as the source activity. The source activity may use this method to opt in and allow the overlaying activities from the to-be-launched app to pass through touches to itself. The source activity needs to ensure that it trusts the overlaying activity and its content is not vulnerable to UI redressing attacks. The flag is ignored if the context calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` is not an activity.
+By default, touches that fall on a translucent non-touchable area of an overlaying activity window may be blocked from passing through to the activity below (source activity), unless the overlaying activity is from the same UID as the source activity. The source activity may use this method to opt in and allow the overlaying activities from the to-be-launched app to pass through touches to itself. The source activity needs to ensure that it trusts the overlaying activity and its content is not vulnerable to UI redressing attacks. The flag is ignored if the context calling startActivity is not an activity.
 
 Apps with target SDK 36 and above that depend on cross-uid pass-through touches must opt in to ensure that pass-through touches work correctly.
 
@@ -662,7 +662,7 @@ Sets the bounds (window size and position) that the activity should be launched 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!` | `this` `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance |
+| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!` | `this` ActivityOptions instance |
 
 ### setLaunchCookie
 
@@ -672,7 +672,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 open fun setLaunchCookie(launchCookie: ActivityOptions.LaunchCookie?): Unit
 ```
 
-Sets a launch cookie to track the `https://developer.android.com/reference/kotlin/android/app/Activity` and task launched as a result of these options.
+Sets a launch cookie to track the Activity and task launched as a result of these options.
 
 If the launched activity is a trampoline that starts another activity immediately, the cookie will be transferred to the next activity.
 
@@ -688,7 +688,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun setLaunchDisplayId(launchDisplayId: Int): ActivityOptions!
 ```
 
-Sets the id of the display where the activity should be launched. An app can launch activities on public displays or displays where the app already has activities. Otherwise, trying to launch on a display for which `https://developer.android.com/reference/kotlin/android/app/ActivityManager#isActivityStartAllowedOnDisplay(android.content.Context,%20kotlin.Int,%20android.content.Intent)` returns `false` (such as a private display or providing an invalid display id) will result in an exception.
+Sets the id of the display where the activity should be launched. An app can launch activities on public displays or displays where the app already has activities. Otherwise, trying to launch on a display for which isActivityStartAllowedOnDisplay returns `false` (such as a private display or providing an invalid display id) will result in an exception.
 
 Setting launch display id will be ignored on devices that don't have `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_ACTIVITIES_ON_SECONDARY_DISPLAYS:kotlin.String`.
 
@@ -698,7 +698,7 @@ Setting launch display id will be ignored on devices that don't have `https://de
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!` | `this` `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance. |
+| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!` | `this` ActivityOptions instance. |
 
 ### setLockTaskEnabled
 
@@ -708,7 +708,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun setLockTaskEnabled(lockTaskMode: Boolean): ActivityOptions!
 ```
 
-Sets whether the activity is to be launched into LockTask mode. Use this option to start an activity in LockTask mode. Note that only apps permitted by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` can run in LockTask mode. Therefore, if `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isLockTaskPermitted(kotlin.String)` returns `false` for the package of the target activity, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown during `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)`. This method doesn't affect activities that are already running --- relaunch the activity to run in lock task mode. Defaults to `false` if not set.
+Sets whether the activity is to be launched into LockTask mode. Use this option to start an activity in LockTask mode. Note that only apps permitted by DevicePolicyManager can run in LockTask mode. Therefore, if isLockTaskPermitted returns `false` for the package of the target activity, a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown during startActivity. This method doesn't affect activities that are already running --- relaunch the activity to run in lock task mode. Defaults to `false` if not set.
 
 | Parameters ||
 |---|---|
@@ -716,12 +716,12 @@ Sets whether the activity is to be launched into LockTask mode. Use this option 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!` | `this` `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance. |
+| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#!` | `this` ActivityOptions instance. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity#startLockTask()`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setLockTaskPackages(android.content.ComponentName,%20kotlin.Array)`
+- startLockTask
+- setLockTaskPackages
 
 ### setMovableTaskRequired
 
@@ -731,20 +731,20 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 open fun setMovableTaskRequired(movableTaskRequired: Boolean): ActivityOptions
 ```
 
-Sets whether a task in which the activity will be launched is required to be movable right after launch using the `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method. If the system cannot guarantee this, the android.content.Context#startActivity call will throw an `https://developer.android.com/reference/kotlin/android/app/InfeasibleActivityOptionsException`.
+Sets whether a task in which the activity will be launched is required to be movable right after launch using the moveTaskTo method. If the system cannot guarantee this, the android.content.Context#startActivity call will throw an InfeasibleActivityOptionsException.
 
 Defaults to `false`, if not set.
 
-This option will cause the android.content.Context#startActivity call to throw an `https://developer.android.com/reference/kotlin/android/app/InfeasibleActivityOptionsException` if the activity is not launched in a new task. For more information about how the host task of a new activity is determined, see the [guide on task management](https://developer.android.com/guide/components/activities/tasks-and-back-stack#ManagingTasks). 
+This option will cause the android.content.Context#startActivity call to throw an InfeasibleActivityOptionsException if the activity is not launched in a new task. For more information about how the host task of a new activity is determined, see the [guide on task management](https://developer.android.com/guide/components/activities/tasks-and-back-stack#ManagingTasks). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REPOSITION_SELF_WINDOWS:kotlin.String`
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | This value cannot be `null`. |
+| ActivityOptions | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityManager.AppTask#moveTaskTo(android.app.TaskLocation,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+- moveTaskTo
 
 ### setPendingIntentBackgroundActivityLaunchAllowed
 
@@ -767,7 +767,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun setPendingIntentBackgroundActivityStartMode(state: Int): ActivityOptions
 ```
 
-Sets the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. This is typically used in when executing `https://developer.android.com/reference/kotlin/android/app/PendingIntent#send(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20android.app.PendingIntent.OnFinished,%20android.os.Handler,%20kotlin.String,%20android.os.Bundle)` or similar methods. A privileged sender of a PendingIntent should only grant `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOWED:kotlin.Int` if the PendingIntent is from a trusted source and/or executed on behalf the user.
+Sets the mode for allowing or denying the senders privileges to start background activities to the PendingIntent. This is typically used in when executing send or similar methods. A privileged sender of a PendingIntent should only grant `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#MODE_BACKGROUND_ACTIVITY_START_ALLOWED:kotlin.Int` if the PendingIntent is from a trusted source and/or executed on behalf the user.
 
 | Parameters ||
 |---|---|
@@ -775,7 +775,7 @@ Sets the mode for allowing or denying the senders privileges to start background
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | This value cannot be `null`. |
+| ActivityOptions | This value cannot be `null`. |
 
 ### setPendingIntentCreatorBackgroundActivityStartMode
 
@@ -785,7 +785,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun setPendingIntentCreatorBackgroundActivityStartMode(mode: Int): ActivityOptions
 ```
 
-Allow a `https://developer.android.com/reference/kotlin/android/app/PendingIntent` to use the privilege of its creator to start background activities.
+Allow a PendingIntent to use the privilege of its creator to start background activities.
 
 | Parameters ||
 |---|---|
@@ -793,7 +793,7 @@ Allow a `https://developer.android.com/reference/kotlin/android/app/PendingInten
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | This value cannot be `null`. |
+| ActivityOptions | This value cannot be `null`. |
 
 ### setShareIdentityEnabled
 
@@ -809,7 +809,7 @@ Use this option when starting an activity that needs to know the identity of the
 
 Defaults to `false` if not set.
 
-Note, even if the launching app does not explicitly enable sharing of its identity, if the activity is started with `Activity#startActivityForResult`, then `https://developer.android.com/reference/kotlin/android/app/Activity#getCallingPackage()` will still return the launching app's package name to allow validation of the result's recipient. Also, an activity running within a package signed by the same key used to sign the platform (some system apps such as Settings will be signed with the platform's key) will have access to the launching app's identity.
+Note, even if the launching app does not explicitly enable sharing of its identity, if the activity is started with `Activity#startActivityForResult`, then getCallingPackage will still return the launching app's package name to allow validation of the result's recipient. Also, an activity running within a package signed by the same key used to sign the platform (some system apps such as Settings will be signed with the platform's key) will have access to the launching app's identity.
 
 | Parameters ||
 |---|---|
@@ -817,12 +817,12 @@ Note, even if the launching app does not explicitly enable sharing of its identi
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | `this` `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` instance. This value cannot be `null`. |
+| ActivityOptions | `this` ActivityOptions instance. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity#getLaunchedFromPackage()`
-- `https://developer.android.com/reference/kotlin/android/app/Activity#getLaunchedFromUid()`
+- getLaunchedFromPackage
+- getLaunchedFromUid
 
 ### setSplashScreenStyle
 
@@ -840,7 +840,7 @@ Sets the preferred splash screen style of the opening activities. This only appl
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/ActivityOptions#` | This value cannot be `null`. |
+| ActivityOptions | This value cannot be `null`. |
 
 ### toBundle
 
@@ -850,7 +850,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun toBundle(): Bundle!
 ```
 
-Returns the created options as a Bundle, which can be passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent,%20android.os.Bundle)` and related methods. Note that the returned Bundle is still owned by the ActivityOptions object; you must not modify it, but can supply it to the startActivity methods that take an options Bundle.
+Returns the created options as a Bundle, which can be passed to startActivity and related methods. Note that the returned Bundle is still owned by the ActivityOptions object; you must not modify it, but can supply it to the startActivity methods that take an options Bundle.
 
 ### toString
 

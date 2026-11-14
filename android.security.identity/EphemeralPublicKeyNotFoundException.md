@@ -20,14 +20,14 @@ open class EphemeralPublicKeyNotFoundException : IdentityCredentialException
 >
 > Use `java.security.KeyStore` with the Android hardware-backed keystore instead.
 
-Thrown if the ephemeral public key was not found in the session transcript passed to `https://developer.android.com/reference/kotlin/android/security/identity/IdentityCredential#getEntries(kotlin.ByteArray,%20kotlin.collections.MutableMap,%20kotlin.ByteArray,%20kotlin.ByteArray)`.
+Thrown if the ephemeral public key was not found in the session transcript passed to getEntries.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/EphemeralPublicKeyNotFoundException#EphemeralPublicKeyNotFoundException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/EphemeralPublicKeyNotFoundException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/EphemeralPublicKeyNotFoundException#EphemeralPublicKeyNotFoundException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/EphemeralPublicKeyNotFoundException#` exception. |
+| EphemeralPublicKeyNotFoundException Constructs a new EphemeralPublicKeyNotFoundException exception. |
+| EphemeralPublicKeyNotFoundException Constructs a new EphemeralPublicKeyNotFoundException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ EphemeralPublicKeyNotFoundException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/EphemeralPublicKeyNotFoundException#` exception.
+Constructs a new EphemeralPublicKeyNotFoundException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ EphemeralPublicKeyNotFoundException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/EphemeralPublicKeyNotFoundException#` exception.
+Constructs a new EphemeralPublicKeyNotFoundException exception.
 
 | Parameters ||
 |---|---|

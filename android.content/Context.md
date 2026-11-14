@@ -11,7 +11,7 @@ abstract class Context
 | ↳ | [android.content.Context](Context.md) |
 
 Known Direct Subclasses [ContextWrapper](ContextWrapper.md), [MockContext](../android.test.mock/MockContext.md) [ContextWrapper](ContextWrapper.md) Proxying implementation of Context that simply delegates all of its calls to another Context.
-[MockContext](../android.test.mock/MockContext.md) A mock `https://developer.android.com/reference/kotlin/android/content/Context#` class.
+[MockContext](../android.test.mock/MockContext.md) A mock Context class.
 Known Indirect Subclasses [AbstractInputMethodService](../android.inputmethodservice/AbstractInputMethodService.md), [AccessibilityService](../android.accessibilityservice/AccessibilityService.md), [AccountAuthenticatorActivity](../android.accounts/AccountAuthenticatorActivity.md), [Activity](../android.app/Activity.md), [ActivityGroup](../android.app/ActivityGroup.md), [AliasActivity](../android.app/AliasActivity.md), [AlternativeMessageTransportService](../android/service/messaging/AlternativeMessageTransportService.md), [AppContentProjectionService](../android/media/projection/AppContentProjectionService.md), [AppFunctionService](../android.app.appfunctions/AppFunctionService.md), [Application](../android.app/Application.md), [AutofillService](../android.service.autofill/AutofillService.md), [BackupAgent](../android.app.backup/BackupAgent.md), and 63 others. [AbstractInputMethodService](../android.inputmethodservice/AbstractInputMethodService.md) AbstractInputMethodService provides a abstract base class for input methods.
 [AccessibilityService](../android.accessibilityservice/AccessibilityService.md) Accessibility services should only be used to assist users with disabilities in using Android devices and apps.
 [AccountAuthenticatorActivity](../android.accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
@@ -26,7 +26,7 @@ Known Indirect Subclasses [AbstractInputMethodService](../android.inputmethodser
 [BackupAgent](../android.app.backup/BackupAgent.md) Provides the central interface between an application and Android's data backup infrastructure.
 [BackupAgentHelper](../android.app.backup/BackupAgentHelper.md) A convenient `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent.html#` wrapper class that automatically manages heterogeneous data sets within the backup data, each identified by a unique key prefix.
 [CallRedirectionService](../android.telecom/CallRedirectionService.md) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
-[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
+[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see getDefaultDialerPackage) or a third party app to allow or disallow incoming calls before they are shown to a user.
 [CameraPrewarmService](../android.service.media/CameraPrewarmService.md) Extend this class to implement a camera prewarm service.
 [CarrierMessagingClientService](../android.service.carrier/CarrierMessagingClientService.md) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
 [CarrierMessagingService](../android.service.carrier/CarrierMessagingService.md) A service that receives calls from the system when new SMS and MMS are sent or received.
@@ -56,7 +56,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [HostNfcFService](../android.nfc.cardemulation/HostNfcFService.md) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
 [InCallService](../android.telecom/InCallService.md) This service is implemented by an app that wishes to provide functionality for managing phone calls.
 [InputMethodService](../android.inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
-[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent`s) on demand.
+[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as Intents) on demand.
 [IsolatedContext](../android.test/IsolatedContext.md) A mock context which prevents its users from talking to the rest of the device while stubbing enough methods to satify code that tries to talk to other packages.
 [IsolatedService](../android.adservices.ondevicepersonalization/IsolatedService.md) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
 [JobService](../android.app.job/JobService.md) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`.
@@ -68,7 +68,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [MidiDeviceService](../android.media.midi/MidiDeviceService.md) A service that implements a virtual MIDI device.
 [MidiUmpDeviceService](../android.media.midi/MidiUmpDeviceService.md) A service that implements a virtual MIDI device for Universal MIDI Packets (UMP).
 [MockApplication](../android.test.mock/MockApplication.md) A mock `https://developer.android.com/reference/kotlin/android/app/Application.html#` class.
-[MutableContextWrapper](MutableContextWrapper.md) Special version of `https://developer.android.com/reference/kotlin/android/content/ContextWrapper` that allows the base context to be modified after it is initially set.
+[MutableContextWrapper](MutableContextWrapper.md) Special version of ContextWrapper that allows the base context to be modified after it is initially set.
 [NativeActivity](../android.app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
 [NotificationListenerService](../android.service.notification/NotificationListenerService.md) A service that receives calls from the system when new notifications are posted or removed, or their ranking changed.
 [OffHostApduService](../android.nfc.cardemulation/OffHostApduService.md) OffHostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC.
@@ -83,7 +83,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [SettingInjectorService](../android.location/SettingInjectorService.md) Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
 [SettingsPreferenceService](../android.service.settings.preferences/SettingsPreferenceService.md) Base class for a service that exposes its settings preferences to external access.
 [SpellCheckerService](../android.service.textservice/SpellCheckerService.md) SpellCheckerService provides an abstract base class for a spell checker.
-[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
+[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new newTab and related APIs for placing tabs within their action bar area.
 [TextToSpeechService](../android.speech.tts/TextToSpeechService.md) Abstract base class for TTS engine implementations.
 [TileService](../android.service.quicksettings/TileService.md) A TileService provides the user a tile that can be added to Quick Settings.
 [TvAdService](../android.media.tv.ad/TvAdService.md) The TvAdService class represents a TV client-side advertisement service.
@@ -107,24 +107,24 @@ Interface to global information about an application environment. This is an abs
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ACCESSIBILITY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#` for giving the user feedback for UI events through the registered event listeners. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ACCOUNT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#` for receiving intents at a time of your choosing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ACTIVITY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#` for interacting with the global system state. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ACCESSIBILITY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#` for giving the user feedback for UI events through the registered event listeners. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ACCOUNT_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#` for receiving intents at a time of your choosing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ACTIVITY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#` for interacting with the global system state. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ADVANCED_PROTECTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.html#` |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ALARM_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#` for receiving intents at a time of your choosing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APPWIDGET_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager.html#` for accessing AppWidgets. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ADVANCED_PROTECTION_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.html#` |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ALARM_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#` for receiving intents at a time of your choosing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APPWIDGET_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager.html#` for accessing AppWidgets. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_FUNCTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#` for executing app functions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_INTERACTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager.html#` for managing app interactions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_OPS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` for tracking application operations on the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_FUNCTION_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#` for executing app functions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_INTERACTION_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager.html#` for managing app interactions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_OPS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` for tracking application operations on the device. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_SEARCH_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchManager.html#` for indexing and querying app data managed by the system. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#AUDIO_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#` for handling management of volume, ringer modes and audio routing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#AUTHENTICATION_POLICY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#APP_SEARCH_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchManager.html#` for indexing and querying app data managed by the system. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#AUDIO_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#` for handling management of volume, ringer modes and audio routing. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#AUTHENTICATION_POLICY_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager.html#`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#AUTOFILL_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BATTERY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#` for managing battery state. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#AUTOFILL_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BATTERY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#` for managing battery state. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ABOVE_CLIENT:kotlin.Int` Flag for #bindService: indicates that the client application binding to this service considers the service to be more important than the app itself. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` Flag for #bindService: If binding from an activity, allow the target service's process importance to be raised based on whether the activity is visible to the user, regardless whether another flag is used to reduce the amount that the client process's overall importance is used to impact it. |
@@ -145,82 +145,82 @@ Interface to global information about an application environment. This is an abs
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BIND_SHARED_ISOLATED_PROCESS:kotlin.Int` Flag for #bindIsolatedService: Bind the service into a shared isolated process. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BIND_WAIVE_PRIORITY:kotlin.Int` Flag for #bindService: don't impact the scheduling or memory management priority of the target service's hosting process. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BIOMETRIC_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.html#` for handling biometric and PIN/pattern/password authentication. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BIOMETRIC_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.html#` for handling biometric and PIN/pattern/password authentication. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BLOB_STORE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager.html#` for contributing and accessing data blobs from the blob store maintained by the system. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BLUETOOTH_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager.html#` for using Bluetooth. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BLOB_STORE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager.html#` for contributing and accessing data blobs from the blob store maintained by the system. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BLUETOOTH_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager.html#` for using Bluetooth. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#BUGREPORT_SERVICE:kotlin.String` Service to capture a bugreport. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CAMERA_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#` for interacting with camera devices. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CAPTIONING_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/CaptioningManager.html#` for obtaining captioning properties and listening for changes in captioning preferences. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CARRIER_CONFIG_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#` for reading carrier configuration values. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CAMERA_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#` for interacting with camera devices. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CAPTIONING_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/CaptioningManager.html#` for obtaining captioning properties and listening for changes in captioning preferences. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CARRIER_CONFIG_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#` for reading carrier configuration values. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CHOOSER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CLIPBOARD_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/ClipboardManager` for accessing and modifying the contents of the global clipboard. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#COMPANION_DEVICE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#` for managing companion devices |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CHOOSER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CLIPBOARD_SERVICE:kotlin.String` Use with getSystemService to retrieve a ClipboardManager for accessing and modifying the contents of the global clipboard. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#COMPANION_DEVICE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#` for managing companion devices |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONNECTIVITY_DIAGNOSTICS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.html#` for performing network connectivity diagnostics as well as receiving network connectivity information from the system. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONNECTIVITY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` for handling management of network connections. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONSUMER_IR_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.html#` for transmitting infrared signals from the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONNECTIVITY_DIAGNOSTICS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.html#` for performing network connectivity diagnostics as well as receiving network connectivity information from the system. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONNECTIVITY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` for handling management of network connections. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONSUMER_IR_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.html#` for transmitting infrared signals from the device. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTACT_KEYS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/provider/E2eeContactKeysManager.html#` to managing contact keys. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTENT_RESTRICTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager.html#`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_IGNORE_SECURITY:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)`: ignore any security restrictions on the Context being requested, allowing it to always be loaded. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTACT_KEYS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/provider/E2eeContactKeysManager.html#` to managing contact keys. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTENT_RESTRICTION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager.html#`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_IGNORE_SECURITY:kotlin.Int` Flag for use with createPackageContext: ignore any security restrictions on the Context being requested, allowing it to always be loaded. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_INCLUDE_CODE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)`: include the application code with the context. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_RESTRICTED:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)`: a restricted context may disable specific features. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CREDENTIAL_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#` to authenticate a user to your app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_INCLUDE_CODE:kotlin.Int` Flag for use with createPackageContext: include the application code with the context. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_RESTRICTED:kotlin.Int` Flag for use with createPackageContext: a restricted context may disable specific features. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CREDENTIAL_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#` to authenticate a user to your app. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CROSS_PROFILE_APPS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/CrossProfileApps` for cross profile operations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#CROSS_PROFILE_APPS_SERVICE:kotlin.String` Use with getSystemService to retrieve a CrossProfileApps for cross profile operations. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_ID_DEFAULT:kotlin.Int` The default device ID, which is the ID of the primary (non-virtual) device. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_ID_INVALID:kotlin.Int` Invalid device ID. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_LOCK_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/devicelock/DeviceLockManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_POLICY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` for working with global device policy management. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DISPLAY_HASH_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to access `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` to handle display hashes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_LOCK_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/devicelock/DeviceLockManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_POLICY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` for working with global device policy management. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DISPLAY_HASH_SERVICE:kotlin.String` Use with getSystemService to access `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` to handle display hashes. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DISPLAY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#` for interacting with display devices. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DOMAIN_VERIFICATION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to access `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager` to retrieve approval and user state for declared web domains. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DOWNLOAD_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/DownloadManager.html#` for requesting HTTP downloads. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DISPLAY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#` for interacting with display devices. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DOMAIN_VERIFICATION_SERVICE:kotlin.String` Use with getSystemService to access DomainVerificationManager to retrieve approval and user state for declared web domains. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DOWNLOAD_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/DownloadManager.html#` for requesting HTTP downloads. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DROPBOX_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/DropBoxManager.html#` instance for recording diagnostic logs. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#EUICC_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager.html#` to manage the device eUICC (embedded SIM). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#FILE_INTEGRITY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#DROPBOX_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/DropBoxManager.html#` instance for recording diagnostic logs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#EUICC_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager.html#` to manage the device eUICC (embedded SIM). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#FILE_INTEGRITY_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager.html#`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#FILE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/FileManager.html#` for handling file operations. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#GAME_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/GameManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#GRAMMATICAL_INFLECTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#FILE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/FileManager.html#` for handling file operations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#GAME_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/GameManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#GRAMMATICAL_INFLECTION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager.html#`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#HARDWARE_PROPERTIES_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/HardwarePropertiesManager.html#` for accessing the hardware properties service. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#HEALTHCONNECT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#HID_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager.html#` for interacting with HID devices. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#HARDWARE_PROPERTIES_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/HardwarePropertiesManager.html#` for accessing the hardware properties service. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#HEALTHCONNECT_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#HID_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager.html#` for interacting with HID devices. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#INPUT_METHOD_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager.html#` for accessing input methods. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#INPUT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.html#` for interacting with input devices. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#IPSEC_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/IpSecManager.html#` for encrypting Sockets or Networks with IPSec. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#INPUT_METHOD_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager.html#` for accessing input methods. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#INPUT_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.html#` for interacting with input devices. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#IPSEC_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/IpSecManager.html#` for encrypting Sockets or Networks with IPSec. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#JOB_SCHEDULER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` instance for managing occasional background tasks. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#KEYCHAIN_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#` for managing KeyChain certificates and grants. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#KEYGUARD_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#` for controlling keyguard. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#JOB_SCHEDULER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` instance for managing occasional background tasks. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#KEYCHAIN_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#` for managing KeyChain certificates and grants. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#KEYGUARD_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#` for controlling keyguard. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#KEYSTORE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LAUNCHER_APPS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps` for querying and monitoring launchable apps across profiles of a user. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LAYOUT_INFLATER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` for inflating layout resources in this context. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#KEYSTORE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LAUNCHER_APPS_SERVICE:kotlin.String` Use with getSystemService to retrieve a LauncherApps for querying and monitoring launchable apps across profiles of a user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LAYOUT_INFLATER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` for inflating layout resources in this context. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LOCALE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/LocaleManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LOCATION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#` for controlling location updates. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_COMMUNICATION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager.html#` for managing `https://developer.android.com/reference/kotlin/android/media/MediaSession2.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LOCALE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/LocaleManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#LOCATION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#` for controlling location updates. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_COMMUNICATION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager.html#` for managing `https://developer.android.com/reference/kotlin/android/media/MediaSession2.html#`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_METRICS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager.html#` for interacting with media metrics on the device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_PROJECTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager.html#` instance for managing media projection sessions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_QUALITY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.html#` for standardize picture and audio API parameters. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_METRICS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager.html#` for interacting with media metrics on the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_PROJECTION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager.html#` instance for managing media projection sessions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_QUALITY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.html#` for standardize picture and audio API parameters. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_ROUTER_SERVICE:kotlin.String` Use with #getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/MediaRouter.html#` for controlling and managing routing of media. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_SESSION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.html#` for managing media Sessions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEMORY_BUDGET_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.html#` for monitoring memory budgets. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEDIA_SESSION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.html#` for managing media Sessions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MEMORY_BUDGET_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.html#` for monitoring memory budgets. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MIDI_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.html#` for accessing the MIDI service. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MODE_APPEND:kotlin.Int` File creation mode: for use with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`, if the file already exists then write data to the end of the existing file instead of erasing it. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MIDI_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.html#` for accessing the MIDI service. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MODE_APPEND:kotlin.Int` File creation mode: for use with openFileOutput, if the file already exists then write data to the end of the existing file instead of erasing it. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MODE_ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` Database open flag: when set, the database is opened with write-ahead logging enabled by default. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MODE_MULTI_PROCESS:kotlin.Int` SharedPreference loading flag: when set, the file on disk will be checked for modification even if the shared preferences instance is already loaded in this process. |
@@ -229,295 +229,295 @@ Interface to global information about an application environment. This is an abs
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MODE_WORLD_READABLE:kotlin.Int` File creation mode: allow all other applications to have read access to the created file. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MODE_WORLD_WRITEABLE:kotlin.Int` File creation mode: allow all other applications to have write access to the created file. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MULTISENSORY_MANAGER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve the service that plays multisensory feedback. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#MULTISENSORY_MANAGER_SERVICE:kotlin.String` Use with getSystemService to retrieve the service that plays multisensory feedback. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NETWORK_STATS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#` for querying network usage stats. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NFC_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/nfc/NfcManager.html#` for using NFC. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NOTIFICATION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#` for informing the user of background events. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NETWORK_STATS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#` for querying network usage stats. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NFC_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/nfc/NfcManager.html#` for using NFC. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NOTIFICATION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#` for informing the user of background events. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NPU_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/Context#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NSD_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.html#` for handling management of network service discovery |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#OVERLAY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager` for managing overlay packages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NPU_SERVICE:kotlin.String` Use with getSystemService to retrieve a Context. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#NSD_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.html#` for handling management of network service discovery |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#OVERLAY_SERVICE:kotlin.String` Use with getSystemService to retrieve a OverlayManager for managing overlay packages. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PCC_SANDBOX_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PEOPLE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to access a `https://developer.android.com/reference/kotlin/android/app/people/PeopleManager.html#` to interact with your published conversations. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PERFORMANCE_HINT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.html#` for accessing the performance hinting service. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PCC_SANDBOX_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PEOPLE_SERVICE:kotlin.String` Use with getSystemService to access a `https://developer.android.com/reference/kotlin/android/app/people/PeopleManager.html#` to interact with your published conversations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PERFORMANCE_HINT_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.html#` for accessing the performance hinting service. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PERSISTENT_DATA_BLOCK_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager.html#` instance for interacting with a storage device that lives across factory resets. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#POWER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#` for controlling power management, including "wake locks," which let you keep the device on while you're running long tasks. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PERSISTENT_DATA_BLOCK_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager.html#` instance for interacting with a storage device that lives across factory resets. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#POWER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#` for controlling power management, including "wake locks," which let you keep the device on while you're running long tasks. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PRINT_SERVICE:kotlin.String` `https://developer.android.com/reference/kotlin/android/print/PrintManager.html#` for printing and managing printers and print tasks. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PROFILING_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/os/ProfilingManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#PROFILING_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/os/ProfilingManager.html#`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` Flag for #registerReceiver: The receiver can receive broadcasts from other Apps. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` Flag for #registerReceiver: The receiver cannot receive broadcasts from other Apps. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` Flag for #registerReceiver: The receiver can receive broadcasts from Instant Apps. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#RESTRICTIONS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager` for retrieving application restrictions and requesting permissions for restricted operations. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ROLE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#` for managing roles. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#RESTRICTIONS_SERVICE:kotlin.String` Use with getSystemService to retrieve a RestrictionsManager for retrieving application restrictions and requesting permissions for restricted operations. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#ROLE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#` for managing roles. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SATELLITE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager.html#` for accessing satellite functionality. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SEARCH_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#` for handling searches. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SECURITY_STATE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager.html#` for accessing the security state manager service. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SATELLITE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager.html#` for accessing satellite functionality. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SEARCH_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#` for handling searches. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SECURITY_STATE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager.html#` for accessing the security state manager service. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SENSOR_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#` for accessing sensors. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SERIAL_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialManager.html#` for access to serial ports. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SHORTCUT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager` for accessing the launcher shortcut service. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SENSOR_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#` for accessing sensors. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SERIAL_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialManager.html#` for access to serial ports. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SHORTCUT_SERVICE:kotlin.String` Use with getSystemService to retrieve a ShortcutManager for accessing the launcher shortcut service. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#STATUS_BAR_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/StatusBarManager.html#` for interacting with the status bar and quick settings. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#STORAGE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#` for accessing system storage functions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#STORAGE_STATS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager.html#` for accessing system storage statistics. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#STATUS_BAR_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/StatusBarManager.html#` for interacting with the status bar and quick settings. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#STORAGE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#` for accessing system storage functions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#STORAGE_STATS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager.html#` for accessing system storage statistics. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SYSTEM_HEALTH_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager.html#` for accessing system health (battery, power, memory, etc) metrics. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELECOM_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#` to manage telecom-related features of the device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_IMS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#SYSTEM_HEALTH_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager.html#` for accessing system health (battery, power, memory, etc) metrics. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELECOM_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#` to manage telecom-related features of the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_IMS_SERVICE:kotlin.String` Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager.html#`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_PHONE_NUMBER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager.html#` for parsing phone numbers. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#` for handling management the telephony features of the device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_SUBSCRIPTION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#` for handling management the telephony subscriptions of the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_PHONE_NUMBER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager.html#` for parsing phone numbers. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#` for handling management the telephony features of the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TELEPHONY_SUBSCRIPTION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#` for handling management the telephony subscriptions of the device. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TETHERING_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/TetheringManager.html#` for managing tethering functions. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TEXT_CLASSIFICATION_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager.html#` for text classification services. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TEXT_SERVICES_MANAGER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager.html#` for accessing text services. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TETHERING_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/TetheringManager.html#` for managing tethering functions. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TEXT_CLASSIFICATION_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager.html#` for text classification services. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TEXT_SERVICES_MANAGER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager.html#` for accessing text services. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TIME_MANAGER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/time/TimeManager.html#`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TV_AD_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.html#` for interacting with TV client-side advertisement services on the device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TV_INPUT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#` for interacting with TV inputs on the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TIME_MANAGER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/time/TimeManager.html#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TV_AD_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.html#` for interacting with TV client-side advertisement services on the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TV_INPUT_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#` for interacting with TV inputs on the device. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TV_INTERACTIVE_APP_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.html#` for interacting with TV interactive applications on the device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#UI_MODE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/UiModeManager.html#` for controlling UI modes. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#USAGE_STATS_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#` for querying device usage stats. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#TV_INTERACTIVE_APP_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.html#` for interacting with TV interactive applications on the device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#UI_MODE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/UiModeManager.html#` for controlling UI modes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#USAGE_STATS_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#` for querying device usage stats. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#USB_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#` for access to USB devices (as a USB host) and for controlling this device's behavior as a USB device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#USER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for managing users on devices that support multiple users. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VIBRATOR_MANAGER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#` for accessing the device vibrators, interacting with individual ones and playing synchronized effects on multiple vibrators. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#USB_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#` for access to USB devices (as a USB host) and for controlling this device's behavior as a USB device. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#USER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for managing users on devices that support multiple users. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VIBRATOR_MANAGER_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#` for accessing the device vibrators, interacting with individual ones and playing synchronized effects on multiple vibrators. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VIBRATOR_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#` for interacting with the vibration hardware. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VIRTUAL_DEVICE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.html#` for managing virtual devices. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VPN_MANAGEMENT_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/VpnManager.html#` to manage profiles for the platform built-in VPN. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VIBRATOR_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#` for interacting with the vibration hardware. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VIRTUAL_DEVICE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.html#` for managing virtual devices. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#VPN_MANAGEMENT_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/VpnManager.html#` to manage profiles for the platform built-in VPN. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a com. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WEB_APP_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/webapp/WebAppManager`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_AWARE_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager.html#` for handling management of Wi-Fi Aware. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String` Use with getSystemService to retrieve a com. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WEB_APP_SERVICE:kotlin.String` Use with getSystemService to retrieve a WebAppManager. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_AWARE_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager.html#` for handling management of Wi-Fi Aware. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_P2P_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#` for handling management of Wi-Fi peer-to-peer connections. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_RTT_RANGING_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager.html#` for ranging devices with wifi. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#` for handling management of Wi-Fi access. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_P2P_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#` for handling management of Wi-Fi peer-to-peer connections. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_RTT_RANGING_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager.html#` for ranging devices with wifi. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#` for handling management of Wi-Fi access. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WINDOW_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` for accessing the system's window manager. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#WINDOW_SERVICE:kotlin.String` Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` for accessing the system's window manager. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#Context()()` <br /> |
+| Context <br /> |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindIsolatedService(android.content.Intent,%20android.content.Context.BindServiceFlags,%20kotlin.String,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)(service: https://developer.android.com/reference/kotlin/android/content/Intent, flags: https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags, instanceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection)` See `https://developer.android.com/reference/kotlin/android/content/Context#bindIsolatedService(android.content.Intent,%20kotlin.Int,%20kotlin.String,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindIsolatedService(android.content.Intent,%20kotlin.Int,%20kotlin.String,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)(service: https://developer.android.com/reference/kotlin/android/content/Intent, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, instanceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection)` Variation of #bindService that, in the specific case of isolated services, allows the caller to generate multiple instances of a service from a single component declaration. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.Context.BindServiceFlags,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)(service: https://developer.android.com/reference/kotlin/android/content/Intent, flags: https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection)` See `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindIsolatedService See bindIsolatedService Call of to obtain a BindServiceFlags object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindIsolatedService Variation of #bindService that, in the specific case of isolated services, allows the caller to generate multiple instances of a service from a single component declaration. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindService See bindService Call of to obtain a BindServiceFlags object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20android.content.Context.BindServiceFlags)(service: https://developer.android.com/reference/kotlin/android/content/Intent, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, flags: https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags)` See `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)(service: https://developer.android.com/reference/kotlin/android/content/Intent, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connects to an application service, creating it if needed. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)(service: https://developer.android.com/reference/kotlin/android/content/Intent, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection)` Same as `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)` with executor to control ServiceConnection callbacks. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindService See bindService Call of to obtain a BindServiceFlags object. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindService Connects to an application service, creating it if needed. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindService Same as bindService with executor to control ServiceConnection callbacks. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindServiceAsUser(android.content.Intent,%20android.content.ServiceConnection,%20android.content.Context.BindServiceFlags,%20android.os.UserHandle)(service: https://developer.android.com/reference/kotlin/android/content/Intent, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, flags: https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` See `https://developer.android.com/reference/kotlin/android/content/Context#bindServiceAsUser(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int,%20android.os.UserHandle)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#bindServiceAsUser(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int,%20android.os.UserHandle)(service: https://developer.android.com/reference/kotlin/android/content/Intent, conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Binds to a service in the given `user` in the same manner as #bindService. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfPermission(kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Determine whether the calling process of an IPC *or you* have been granted a particular permission. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindServiceAsUser See bindServiceAsUser Call of to obtain a BindServiceFlags object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | bindServiceAsUser Binds to a service in the given `user` in the same manner as #bindService. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkCallingOrSelfPermission Determine whether the calling process of an IPC *or you* have been granted a particular permission. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfUriPermission(android.net.Uri,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether the calling process of an IPC *or you* has been granted permission to access a specific URI. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfUriPermissions(kotlin.collections.MutableList,%20kotlin.Int)(uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether the calling process of an IPC *or you* has been granted permission to access a list of URIs. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingPermission(kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Determine whether the calling process of an IPC you are handling has been granted a particular permission. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkCallingOrSelfUriPermission Determine whether the calling process of an IPC *or you* has been granted permission to access a specific URI. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | checkCallingOrSelfUriPermissions Determine whether the calling process of an IPC *or you* has been granted permission to access a list of URIs. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkCallingPermission Determine whether the calling process of an IPC you are handling has been granted a particular permission. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether the calling process and uid has been granted permission to access a specific URI. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermissions(kotlin.collections.MutableList,%20kotlin.Int)(uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether the calling process and uid has been granted permission to access a list of URIs. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkContentUriPermissionFull(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether a particular process and uid has been granted permission to access a specific content URI. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkCallingUriPermission Determine whether the calling process and uid has been granted permission to access a specific URI. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | checkCallingUriPermissions Determine whether the calling process and uid has been granted permission to access a list of URIs. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkContentUriPermissionFull Determine whether a particular process and uid has been granted permission to access a specific content URI. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether the given permission is allowed for a particular process and user ID running in the system. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkSelfPermission(kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Determine whether *you* have been granted a particular permission. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether a particular process and uid has been granted permission to access a specific URI. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkPermission Determine whether the given permission is allowed for a particular process and user ID running in the system. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkSelfPermission Determine whether *you* have been granted a particular permission. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkUriPermission Determine whether a particular process and uid has been granted permission to access a specific URI. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, readPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, writePermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check both a Uri and normal permission. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermissions(kotlin.collections.MutableList,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether a particular process and uid has been granted permission to access a list of URIs. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#clearWallpaper()()` <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkUriPermission Check both a Uri and normal permission. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | checkUriPermissions Determine whether a particular process and uid has been granted permission to access a list of URIs. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearWallpaper <br /> |
 | --- | --- |
-| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/Context#createAttributionContext(kotlin.String)(attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Return a new Context object for the current Context but attribute to a different tag. |
-| abstract [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#createConfigurationContext(android.content.res.Configuration)(overrideConfiguration: https://developer.android.com/reference/kotlin/android/content/res/Configuration)` Return a new Context object for the current Context but whose resources are adjusted to match the given Configuration. |
-| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams)(contextParams: https://developer.android.com/reference/kotlin/android/content/ContextParams)` Creates a context with specific properties and behaviors. |
+| open [Context](Context.md) | createAttributionContext Return a new Context object for the current Context but attribute to a different tag. |
+| abstract [Context](Context.md)! | createConfigurationContext Return a new Context object for the current Context but whose resources are adjusted to match the given Configuration. |
+| open [Context](Context.md) | createContext Creates a context with specific properties and behaviors. |
 | --- | --- |
-| abstract [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#createContextForSplit(kotlin.String)(splitName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a new Context object for the given split name. |
-| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceContext(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new `Context` object from the current context but with device association given by the `deviceId`. |
-| abstract [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceProtectedStorageContext()()` Return a new Context object for the current Context but whose storage APIs are backed by device-protected storage. |
+| abstract [Context](Context.md)! | createContextForSplit Return a new Context object for the given split name. |
+| open [Context](Context.md) | createDeviceContext Returns a new `Context` object from the current context but with device association given by the `deviceId`. |
+| abstract [Context](Context.md)! | createDeviceProtectedStorageContext Return a new Context object for the current Context but whose storage APIs are backed by device-protected storage. |
 | --- | --- |
-| abstract [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#createDisplayContext(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Returns a new `Context` object from the current context but with resources adjusted to match the metrics of `display`. |
-| abstract [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a new Context object for the given application name. |
-| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`. |
+| abstract [Context](Context.md)! | createDisplayContext Returns a new `Context` object from the current context but with resources adjusted to match the metrics of `display`. |
+| abstract [Context](Context.md)! | createPackageContext Return a new Context object for the given application name. |
+| open [Context](Context.md) | createWindowContext Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`. |
 | --- | --- |
-| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a Context for a non-activity window. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/Context#databaseList()()` Returns an array of strings naming the private databases associated with this Context's application package. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#deleteDatabase(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Delete an existing private SQLiteDatabase associated with this Context's application package. |
+| open [Context](Context.md) | createWindowContext Creates a Context for a non-activity window. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | databaseList Returns an array of strings naming the private databases associated with this Context's application package. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteDatabase Delete an existing private SQLiteDatabase associated with this Context's application package. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#deleteFile(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Delete the given private file associated with this Context's application package. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#deleteSharedPreferences(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Delete an existing shared preferences file. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingOrSelfPermission(kotlin.String,%20kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` If neither you nor the calling process of an IPC you are handling has been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteFile Delete the given private file associated with this Context's application package. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteSharedPreferences Delete an existing shared preferences file. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceCallingOrSelfPermission If neither you nor the calling process of an IPC you are handling has been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingOrSelfUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` If the calling process of an IPC *or you* has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingPermission(kotlin.String,%20kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` If the calling process of an IPC you are handling has not been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` If the calling process and uid has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceCallingOrSelfUriPermission If the calling process of an IPC *or you* has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceCallingPermission If the calling process of an IPC you are handling has not been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceCallingUriPermission If the calling process and uid has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforcePermission(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` If the given permission is not allowed for a particular process and user ID running in the system, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforceUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` If a particular process and uid has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#enforceUriPermission(android.net.Uri,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, readPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, writePermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Enforce both a Uri and normal permission. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforcePermission If the given permission is not allowed for a particular process and user ID running in the system, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceUriPermission If a particular process and uid has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceUriPermission Enforce both a Uri and normal permission. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/Context#fileList()()` Returns an array of strings naming the private files associated with this Context's application package. |
-| abstract [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getApplicationContext()()` Return the context of the single, global Application object of the current process. |
-| abstract [ApplicationInfo](../android.content.pm/ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getApplicationInfo()()` Return the full application info for this context's package. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | fileList Returns an array of strings naming the private files associated with this Context's application package. |
+| abstract [Context](Context.md)! | getApplicationContext Return the context of the single, global Application object of the current process. |
+| abstract [ApplicationInfo](../android.content.pm/ApplicationInfo.md)! | getApplicationInfo Return the full application info for this context's package. |
 | --- | --- |
-| abstract [AssetManager](../android.content.res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getAssets()()` Returns an AssetManager instance for the application's package. |
-| open [AttributionSource](AttributionSource.md) | `https://developer.android.com/reference/kotlin/android/content/Context#getAttributionSource()()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Context#getAttributionTag()()` Attribution can be used in complex apps to logically separate parts of the app. |
+| abstract [AssetManager](../android.content.res/AssetManager.md)! | getAssets Returns an AssetManager instance for the application's package. |
+| open [AttributionSource](AttributionSource.md) | getAttributionSource <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getAttributionTag Attribution can be used in complex apps to logically separate parts of the app. |
 | --- | --- |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()()` Returns the absolute path to the application specific cache directory on the filesystem. |
-| abstract [ClassLoader](../java.lang/ClassLoader.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getClassLoader()()` Return a class loader you can use to retrieve classes in this package. |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getCodeCacheDir()()` Returns the absolute path to the application specific cache directory on the filesystem designed for storing cached code. |
+| abstract [File](../java.io/File.md)! | getCacheDir Returns the absolute path to the application specific cache directory on the filesystem. |
+| abstract [ClassLoader](../java.lang/ClassLoader.md)! | getClassLoader Return a class loader you can use to retrieve classes in this package. |
+| abstract [File](../java.io/File.md)! | getCodeCacheDir Returns the absolute path to the application specific cache directory on the filesystem designed for storing cached code. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getColor(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a color associated with a particular resource ID and styled for the current theme. |
-| [ColorStateList](../android.content.res/ColorStateList.md) | `https://developer.android.com/reference/kotlin/android/content/Context#getColorStateList(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a color state list associated with a particular resource ID and styled for the current theme. |
-| abstract [ContentResolver](ContentResolver.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getContentResolver()()` Return a ContentResolver instance for your application's package. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColor Returns a color associated with a particular resource ID and styled for the current theme. |
+| [ColorStateList](../android.content.res/ColorStateList.md) | getColorStateList Returns a color state list associated with a particular resource ID and styled for the current theme. |
+| abstract [ContentResolver](ContentResolver.md)! | getContentResolver Return a ContentResolver instance for your application's package. |
 | --- | --- |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getDataDir()()` Returns the absolute path to the directory on the filesystem where all private files belonging to this app are stored. |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getDatabasePath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a database created with #openOrCreateDatabase is stored. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getDeviceId()()` Gets the device ID this context is associated with. |
+| abstract [File](../java.io/File.md)! | getDataDir Returns the absolute path to the directory on the filesystem where all private files belonging to this app are stored. |
+| abstract [File](../java.io/File.md)! | getDatabasePath Returns the absolute path on the filesystem where a database created with #openOrCreateDatabase is stored. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDeviceId Gets the device ID this context is associated with. |
 | --- | --- |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getDir(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve, creating if needed, a new directory in which the application can place its own custom data files. |
-| open [Display](../android.view/Display.md) | `https://developer.android.com/reference/kotlin/android/content/Context#getDisplay()()` Get the display this context is associated with. |
-| [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#getDrawable(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a drawable object associated with a particular resource ID and styled for the current theme. |
+| abstract [File](../java.io/File.md)! | getDir Retrieve, creating if needed, a new directory in which the application can place its own custom data files. |
+| open [Display](../android.view/Display.md) | getDisplay Get the display this context is associated with. |
+| [Drawable](../android.graphics.drawable/Drawable.md)? | getDrawable Returns a drawable object associated with a particular resource ID and styled for the current theme. |
 | --- | --- |
-| abstract [File](../java.io/File.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#getExternalCacheDir()()` Returns absolute path to application-specific directory on the primary shared/external storage device where the application can place cache files it owns. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/Context#getExternalCacheDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place cache files it owns. |
-| abstract [File](../java.io/File.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#getExternalFilesDir(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the absolute path to the directory on the primary shared/external storage device where the application can place persistent files it owns. |
+| abstract [File](../java.io/File.md)? | getExternalCacheDir Returns absolute path to application-specific directory on the primary shared/external storage device where the application can place cache files it owns. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | getExternalCacheDirs Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place cache files it owns. |
+| abstract [File](../java.io/File.md)? | getExternalFilesDir Returns the absolute path to the directory on the primary shared/external storage device where the application can place persistent files it owns. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/Context#getExternalFilesDirs(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place persistent files it owns. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/Context#getExternalMediaDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place media files. |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getFileStreamPath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a file created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` is stored. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | getExternalFilesDirs Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place persistent files it owns. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | getExternalMediaDirs Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place media files. |
+| abstract [File](../java.io/File.md)! | getFileStreamPath Returns the absolute path on the filesystem where a file created with openFileOutput is stored. |
 | --- | --- |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()()` Returns the absolute path to the directory on the filesystem where files created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` are stored. |
-| open [Executor](../java.util.concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()()` Return an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that will run enqueued tasks on the main thread associated with this context. |
-| abstract [Looper](../android.os/Looper.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getMainLooper()()` Return the Looper for the main thread of the current process. |
+| abstract [File](../java.io/File.md)! | getFilesDir Returns the absolute path to the directory on the filesystem where files created with openFileOutput are stored. |
+| open [Executor](../java.util.concurrent/Executor.md)! | getMainExecutor Return an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that will run enqueued tasks on the main thread associated with this context. |
+| abstract [Looper](../android.os/Looper.md)! | getMainLooper Return the Looper for the main thread of the current process. |
 | --- | --- |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getNoBackupFilesDir()()` Returns the absolute path to the directory on the filesystem similar to `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`. |
-| abstract [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getObbDir()()` Return the primary shared/external storage directory where this application's OBB files (if there are any) can be found. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/Context#getObbDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application's OBB files (if there are any) can be found. |
+| abstract [File](../java.io/File.md)! | getNoBackupFilesDir Returns the absolute path to the directory on the filesystem similar to getFilesDir. |
+| abstract [File](../java.io/File.md)! | getObbDir Return the primary shared/external storage directory where this application's OBB files (if there are any) can be found. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | getObbDirs Returns absolute paths to application-specific directories on all shared/external storage devices where the application's OBB files (if there are any) can be found. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getOpPackageName()()` Return the package name that should be used for `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` calls from this context, so that app ops manager's uid verification will work with the name. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/Context#getPackageCodePath()()` Return the full path to this context's primary Android package. |
-| abstract [PackageManager](../android.content.pm/PackageManager.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getPackageManager()()` Return PackageManager instance to find global package information. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getOpPackageName Return the package name that should be used for `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` calls from this context, so that app ops manager's uid verification will work with the name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPackageCodePath Return the full path to this context's primary Android package. |
+| abstract [PackageManager](../android.content.pm/PackageManager.md)! | getPackageManager Return PackageManager instance to find global package information. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/Context#getPackageName()()` Return the name of this application's package. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/Context#getPackageResourcePath()()` Return the full path to this context's primary Android package. |
-| open [ContextParams](ContextParams.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#getParams()()` Return the set of parameters which this Context was created with, if it was created via `https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams)`. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPackageName Return the name of this application's package. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPackageResourcePath Return the full path to this context's primary Android package. |
+| open [ContextParams](ContextParams.md)? | getParams Return the set of parameters which this Context was created with, if it was created via createContext. |
 | --- | --- |
-| abstract [Resources](../android.content.res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getResources()()` Returns a Resources instance for the application's package. |
-| abstract [SharedPreferences](SharedPreferences.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getSharedPreferences(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve and hold the contents of the preferences file 'name', returning a SharedPreferences through which you can retrieve and modify its values. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getString(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a localized string from the application's package's default string table. |
+| abstract [Resources](../android.content.res/Resources.md)! | getResources Returns a Resources instance for the application's package. |
+| abstract [SharedPreferences](SharedPreferences.md)! | getSharedPreferences Retrieve and hold the contents of the preferences file 'name', returning a SharedPreferences through which you can retrieve and modify its values. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getString Returns a localized string from the application's package's default string table. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getString(kotlin.Int,%20kotlin.Any)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg formatArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns a localized formatted string from the application's package's default string table, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java. |
-| T | `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(java.lang.Class)(serviceClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Return the handle to a system-level service by class. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getString Returns a localized formatted string from the application's package's default string table, substituting the format arguments as defined in `https://developer.android.com/reference/kotlin/java/util/Formatter.html#` and java. |
+| T | getSystemService Return the handle to a system-level service by class. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getSystemService Return the handle to a system-level service by name. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/Context#getSystemServiceName(java.lang.Class)(serviceClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>)` Gets the name of the system-level service that is represented by the specified class. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getText(kotlin.Int)(resId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a localized, styled CharSequence from the application's package's default string table. |
-| abstract [Resources.Theme](../android/content/res/Resources.Theme.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getTheme()()` Return the Theme object associated with this Context. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSystemServiceName Gets the name of the system-level service that is represented by the specified class. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | getText Return a localized, styled CharSequence from the application's package's default string table. |
+| abstract [Resources.Theme](../android/content/res/Resources.Theme.md)! | getTheme Return the Theme object associated with this Context. |
 | --- | --- |
-| open [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md) | `https://developer.android.com/reference/kotlin/android/content/Context#getUpdateableFlags()()` Gets the list of bind flags that may be updated (i.e. added or removed) for an existing connection. |
-| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#getWallpaper()()` <br /> |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getWallpaperDesiredMinimumHeight()()` <br /> |
+| open [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md) | getUpdateableFlags Gets the list of bind flags that may be updated (i.e. added or removed) for an existing connection. |
+| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | getWallpaper <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWallpaperDesiredMinimumHeight <br /> |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#getWallpaperDesiredMinimumWidth()()` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)(toPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Grant permission to access a specific Uri to another package, regardless of whether that package has general permission to access the Uri's content provider. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#isDeviceProtectedStorage()()` Indicates if the storage APIs of this Context are backed by device-protected storage. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWallpaperDesiredMinimumWidth <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | grantUriPermission Grant permission to access a specific Uri to another package, regardless of whether that package has general permission to access the Uri's content provider. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceProtectedStorage Indicates if the storage APIs of this Context are backed by device-protected storage. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#isRestricted()()` Indicates whether this Context is restricted. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#isUiContext()()` Returns `true` if the context is a UI context which can access UI components such as `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`, `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` or `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#moveDatabaseFrom(android.content.Context,%20kotlin.String)(sourceContext: https://developer.android.com/reference/kotlin/android/content/Context#!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Move an existing database file from the given source storage context to this context. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRestricted Indicates whether this Context is restricted. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUiContext Returns `true` if the context is a UI context which can access UI components such as `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`, `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` or `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | moveDatabaseFrom Move an existing database file from the given source storage context to this context. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#moveSharedPreferencesFrom(android.content.Context,%20kotlin.String)(sourceContext: https://developer.android.com/reference/kotlin/android/content/Context#!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Move an existing shared preferences file from the given source storage context to this context. |
-| [TypedArray](../android.content.res/TypedArray.md) | `https://developer.android.com/reference/kotlin/android/content/Context#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray)(set: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#?, attrs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Retrieve styled attribute information in this Context's theme. |
-| [TypedArray](../android.content.res/TypedArray.md) | `https://developer.android.com/reference/kotlin/android/content/Context#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)(set: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#?, attrs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, defStyleAttr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defStyleRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve styled attribute information in this Context's theme. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | moveSharedPreferencesFrom Move an existing shared preferences file from the given source storage context to this context. |
+| [TypedArray](../android.content.res/TypedArray.md) | obtainStyledAttributes Retrieve styled attribute information in this Context's theme. |
+| [TypedArray](../android.content.res/TypedArray.md) | obtainStyledAttributes Retrieve styled attribute information in this Context's theme. |
 | --- | --- |
-| [TypedArray](../android.content.res/TypedArray.md) | `https://developer.android.com/reference/kotlin/android/content/Context#obtainStyledAttributes(kotlin.Int,%20kotlin.IntArray)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, attrs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Retrieve styled attribute information in this Context's theme. |
-| [TypedArray](../android.content.res/TypedArray.md) | `https://developer.android.com/reference/kotlin/android/content/Context#obtainStyledAttributes(kotlin.IntArray)(attrs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Retrieve styled attribute information in this Context's theme. |
-| abstract [FileInputStream](../java.io/FileInputStream.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#openFileInput(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Open a private file associated with this Context's application package for reading. |
+| [TypedArray](../android.content.res/TypedArray.md) | obtainStyledAttributes Retrieve styled attribute information in this Context's theme. |
+| [TypedArray](../android.content.res/TypedArray.md) | obtainStyledAttributes Retrieve styled attribute information in this Context's theme. |
+| abstract [FileInputStream](../java.io/FileInputStream.md)! | openFileInput Open a private file associated with this Context's application package for reading. |
 | --- | --- |
-| abstract [FileOutputStream](../java.io/FileOutputStream.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a private file associated with this Context's application package for writing. |
-| abstract [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!)` Open a new private SQLiteDatabase associated with this Context's application package. |
-| abstract [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Open a new private SQLiteDatabase associated with this Context's application package. |
+| abstract [FileOutputStream](../java.io/FileOutputStream.md)! | openFileOutput Open a private file associated with this Context's application package for writing. |
+| abstract [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | openOrCreateDatabase Open a new private SQLiteDatabase associated with this Context's application package. |
+| abstract [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | openOrCreateDatabase Open a new private SQLiteDatabase associated with this Context's application package. |
 | --- | --- |
-| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/Context#peekWallpaper()()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#rebindService(android.content.ServiceConnection,%20android.content.Context.BindServiceFlags)(conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, flags: https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags)` Rebind an application service with updated bind service flags |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#registerComponentCallbacks(android.content.ComponentCallbacks)(callback: https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks!)` Add a new `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` to the base application of the Context, which will be called at the same times as the ComponentCallbacks methods of activities and other components are called. |
+| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | peekWallpaper <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | rebindService Rebind an application service with updated bind service flags |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerComponentCallbacks Add a new ComponentCallbacks to the base application of the Context, which will be called at the same times as the ComponentCallbacks methods of activities and other components are called. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#registerDeviceIdChangeListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Adds a new device ID changed listener to the `Context`, which will be called when the device association is changed by the system. |
-| abstract [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!)` Register a BroadcastReceiver to be run in the main activity thread. |
-| abstract [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.Int)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register to receive intent broadcasts, with the receiver optionally being exposed to Instant Apps. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerDeviceIdChangeListener Adds a new device ID changed listener to the `Context`, which will be called when the device association is changed by the system. |
+| abstract [Intent](Intent.md)? | registerReceiver Register a BroadcastReceiver to be run in the main activity thread. |
+| abstract [Intent](Intent.md)? | registerReceiver Register to receive intent broadcasts, with the receiver optionally being exposed to Instant Apps. |
 | --- | --- |
-| abstract [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver!, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, broadcastPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Register to receive intent broadcasts, to run in the context of scheduler. |
-| abstract [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler,%20kotlin.Int)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver!, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, broadcastPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register to receive intent broadcasts, to run in the context of scheduler. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#removeStickyBroadcast(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!)` Remove the data previously sent with #sendStickyBroadcast, so that it is as if the sticky broadcast had never happened. |
+| abstract [Intent](Intent.md)? | registerReceiver Register to receive intent broadcasts, to run in the context of scheduler. |
+| abstract [Intent](Intent.md)? | registerReceiver Register to receive intent broadcasts, to run in the context of scheduler. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeStickyBroadcast Remove the data previously sent with #sendStickyBroadcast, so that it is as if the sticky broadcast had never happened. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#removeStickyBroadcastAsUser(android.content.Intent,%20android.os.UserHandle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#removeStickyBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#revokeSelfPermissionOnKill(kotlin.String)(permName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Triggers the asynchronous revocation of a runtime permission. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#revokeSelfPermissionsOnKill(kotlin.collections.MutableCollection)(permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Triggers the revocation of one or more permissions for the calling package. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeStickyBroadcastAsUser Version of removeStickyBroadcast that allows you to specify the user the broadcast will be sent to. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | revokeSelfPermissionOnKill Triggers the asynchronous revocation of a runtime permission. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | revokeSelfPermissionsOnKill Triggers the revocation of one or more permissions for the calling package. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#revokeUriPermission(android.net.Uri,%20kotlin.Int)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove all permissions to access a particular content provider Uri that were previously added with `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)` or *any other* mechanism. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#revokeUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)(toPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove permissions to access a particular content provider Uri that were previously added with `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)` for a specific target package. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!)` Broadcast the given intent to all interested BroadcastReceivers. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | revokeUriPermission Remove all permissions to access a particular content provider Uri that were previously added with grantUriPermission or *any other* mechanism. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | revokeUriPermission Remove permissions to access a particular content provider Uri that were previously added with grantUriPermission for a specific target package. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendBroadcast Broadcast the given intent to all interested BroadcastReceivers. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcastAsUser(android.content.Intent,%20android.os.UserHandle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendBroadcast Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendBroadcast Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendBroadcastAsUser Version of sendBroadcast that allows you to specify the user the broadcast will be sent to. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcastAsUser(android.content.Intent,%20android.os.UserHandle,%20kotlin.String)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)` that allows you to specify the user the broadcast will be sent to. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcastWithMultiplePermissions(android.content.Intent,%20kotlin.Array)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, receiverPermissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Broadcast the given intent to all interested BroadcastReceivers, allowing an array of required permissions to be enforced. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendBroadcastAsUser Version of sendBroadcast that allows you to specify the user the broadcast will be sent to. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendBroadcastWithMultiplePermissions Broadcast the given intent to all interested BroadcastReceivers, allowing an array of required permissions to be enforced. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendOrderedBroadcast Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, resultReceiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, initialCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, initialData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that allows you to receive data back from the broadcast. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.os.Bundle,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, resultReceiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, initialCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, initialData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that allows you to receive data back from the broadcast. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendOrderedBroadcast Version of sendBroadcast that allows you to receive data back from the broadcast. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendOrderedBroadcast Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendOrderedBroadcast Version of sendBroadcast that allows you to receive data back from the broadcast. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, receiverAppOp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, resultReceiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, initialCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, initialData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)` that allows you to specify the App Op to enforce restrictions on which receivers the broadcast will be sent to. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcastAsUser(android.content.Intent,%20android.os.UserHandle,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!, receiverPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, resultReceiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver!, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, initialCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, initialData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)` that allows you to specify the user the broadcast will be sent to. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcast(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!)` Perform a `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendOrderedBroadcast Version of sendOrderedBroadcast that allows you to specify the App Op to enforce restrictions on which receivers the broadcast will be sent to. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendOrderedBroadcastAsUser Version of sendOrderedBroadcast that allows you to specify the user the broadcast will be sent to. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStickyBroadcast Perform a sendBroadcast that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcast(android.content.Intent,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Perform a `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcastAsUser(android.content.Intent,%20android.os.UserHandle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcast(android.content.Intent,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, resultReceiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver!, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, initialCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, initialData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Version of #sendStickyBroadcast that allows you to receive data back from the broadcast. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStickyBroadcast Perform a sendBroadcast that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStickyBroadcastAsUser Version of sendStickyBroadcast that allows you to specify the user the broadcast will be sent to. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStickyOrderedBroadcast Version of #sendStickyBroadcast that allows you to receive data back from the broadcast. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcastAsUser(android.content.Intent,%20android.os.UserHandle,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!, resultReceiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver!, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, initialCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, initialData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialExtras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcast(android.content.Intent,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)` that allows you to specify the user the broadcast will be sent to. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#setTheme(kotlin.Int)(resid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the base theme for this context. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#setWallpaper(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendStickyOrderedBroadcastAsUser Version of sendStickyOrderedBroadcast that allows you to specify the user the broadcast will be sent to. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTheme Set the base theme for this context. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWallpaper <br /> |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#setWallpaper(java.io.InputStream)(data: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#shouldShowRequestPermissionRationale(kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets whether you should show UI with rationale before requesting a permission. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startActivities(kotlin.Array)(intents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent!>!)` Same as `https://developer.android.com/reference/kotlin/android/content/Context#startActivities(kotlin.Array,%20android.os.Bundle)` with no options specified. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWallpaper <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | shouldShowRequestPermissionRationale Gets whether you should show UI with rationale before requesting a permission. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startActivities Same as startActivities with no options specified. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startActivities(kotlin.Array,%20android.os.Bundle)(intents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/Intent!>!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Launch multiple new activities. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!)` Same as `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)` with no options specified. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Launch a new activity. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startActivities Launch multiple new activities. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startActivity Same as startActivity with no options specified. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startActivity Launch a new activity. |
 | --- | --- |
-| abstract [ComponentName](ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#startForegroundService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Similar to `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`, but with an implicit promise that the Service will call `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification)` once it begins running. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startInstrumentation(android.content.ComponentName,%20kotlin.String,%20android.os.Bundle)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName, profileFile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, arguments: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Start executing an `https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#` class. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/IntentSender!, fillInIntent: https://developer.android.com/reference/kotlin/android/content/Intent?, flagsMask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flagsValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extraFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Same as `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)` with no options specified. |
+| abstract [ComponentName](ComponentName.md)? | startForegroundService Similar to startService, but with an implicit promise that the Service will call startForeground once it begins running. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | startInstrumentation Start executing an `https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#` class. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startIntentSender Same as startIntentSender with no options specified. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/IntentSender!, fillInIntent: https://developer.android.com/reference/kotlin/android/content/Intent?, flagsMask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flagsValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extraFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Like `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)`, but taking a IntentSender to start. |
-| abstract [ComponentName](ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Request that a given application service be started. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#stopService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Request that a given application service be stopped. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startIntentSender Like startActivity, but taking a IntentSender to start. |
+| abstract [ComponentName](ComponentName.md)? | startService Request that a given application service be started. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | stopService Request that a given application service be stopped. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)(conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection)` Disconnect from an application service. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#unregisterComponentCallbacks(android.content.ComponentCallbacks)(callback: https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks!)` Remove a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` object that was previously registered with `https://developer.android.com/reference/kotlin/android/content/Context#registerComponentCallbacks(android.content.ComponentCallbacks)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#unregisterDeviceIdChangeListener(java.util.function.IntConsumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Removes a device ID changed listener from the Context. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unbindService Disconnect from an application service. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterComponentCallbacks Remove a ComponentCallbacks object that was previously registered with registerComponentCallbacks. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterDeviceIdChangeListener Removes a device ID changed listener from the Context. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#unregisterReceiver(android.content.BroadcastReceiver)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver!)` Unregister a previously registered BroadcastReceiver. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#updateServiceBindings(kotlin.collections.MutableCollection)(params: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/content/Context.UpdateBindingParams!>)` Perform a batch update of existing bindings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/Context#updateServiceGroup(android.content.ServiceConnection,%20kotlin.Int,%20kotlin.Int)(conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, group: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, importance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` For a service previously bound with #bindService or a related method, change how the system manages that service's process in relation to other processes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterReceiver Unregister a previously registered BroadcastReceiver. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateServiceBindings Perform a batch update of existing bindings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateServiceGroup For a service previously bound with #bindService or a related method, change how the system manages that service's process in relation to other processes. |
 | --- | --- |
 
 ## Constants
@@ -530,13 +530,13 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val ACCESSIBILITY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#` for giving the user feedback for UI events through the registered event listeners.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#` for giving the user feedback for UI events through the registered event listeners.
 
  Value: "accessibility"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityManager.html#`
 
 ### ACCOUNT_SERVICE
@@ -547,13 +547,13 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val ACCOUNT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#` for receiving intents at a time of your choosing.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#` for receiving intents at a time of your choosing.
 
  Value: "account"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#`
 
 ### ACTIVITY_SERVICE
@@ -564,13 +564,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTIVITY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#` for interacting with the global system state.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#` for interacting with the global system state.
 
  Value: "activity"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#`
 
 ### ADVANCED_PROTECTION_SERVICE
@@ -581,13 +581,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val ADVANCED_PROTECTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.html#`
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.html#`
 
  Value: "advanced_protection"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.html#`
 
 ### ALARM_SERVICE
@@ -598,13 +598,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ALARM_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#` for receiving intents at a time of your choosing.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#` for receiving intents at a time of your choosing.
 
  Value: "alarm"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#`
 
 ### APPWIDGET_SERVICE
@@ -615,13 +615,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val APPWIDGET_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager.html#` for accessing AppWidgets.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetManager.html#` for accessing AppWidgets.
 
  Value: "appwidget"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### APP_FUNCTION_SERVICE
 
@@ -631,13 +631,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val APP_FUNCTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#` for executing app functions.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#` for executing app functions.
 
  Value: "app_function"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### APP_INTERACTION_SERVICE
 
@@ -647,13 +647,13 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val APP_INTERACTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager.html#` for managing app interactions.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager.html#` for managing app interactions.
 
  Value: "app_interaction"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### APP_OPS_SERVICE
 
@@ -663,13 +663,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val APP_OPS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` for tracking application operations on the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` for tracking application operations on the device.
 
  Value: "appops"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#`
 
 ### APP_SEARCH_SERVICE
@@ -680,13 +680,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val APP_SEARCH_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchManager.html#` for indexing and querying app data managed by the system.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchManager.html#` for indexing and querying app data managed by the system.
 
  Value: "app_search"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### AUDIO_SERVICE
 
@@ -696,13 +696,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val AUDIO_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#` for handling management of volume, ringer modes and audio routing.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#` for handling management of volume, ringer modes and audio routing.
 
  Value: "audio"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#`
 
 ### AUTHENTICATION_POLICY_SERVICE
@@ -713,7 +713,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val AUTHENTICATION_POLICY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager.html#`.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager.html#`.
 
  Value: "authentication_policy"
 
@@ -729,13 +729,13 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val AUTOFILL_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager.html#`.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager.html#`.
 
  Value: "autofill"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### BATTERY_SERVICE
 
@@ -745,13 +745,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val BATTERY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#` for managing battery state.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#` for managing battery state.
 
  Value: "batterymanager"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### BIND_ABOVE_CLIENT
 
@@ -809,7 +809,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val BIND_AUTO_CREATE: Int
 ```
 
-Flag for #bindService: automatically create the service as long as the binding exists. Note that while this will create the service, its `https://developer.android.com/reference/kotlin/android/app/Service.html#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)` method will still only be called due to an explicit call to `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`. Even without that, though, this still provides you with access to the service object while the service is created.
+Flag for #bindService: automatically create the service as long as the binding exists. Note that while this will create the service, its onStartCommand method will still only be called due to an explicit call to startService. Even without that, though, this still provides you with access to the service object while the service is created.
 
 Note that prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, not supplying this flag would also impact how important the system consider's the target service's process to be. When set, the only way for it to be raised was by binding from a service in which case it will only be important when that activity is in the foreground. Now to achieve this behavior you must explicitly supply the new flag `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int`. For compatibility, old applications that don't specify `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int` will automatically have the flags `https://developer.android.com/reference/kotlin/android/content/Context#BIND_WAIVE_PRIORITY:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` set for them in order to achieve the same result.
 
@@ -823,7 +823,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val BIND_DEBUG_UNBIND: Int
 ```
 
-Flag for #bindService: include debugging help for mismatched calls to unbind. When this flag is set, the callstack of the following `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)` call is retained, to be printed if a later incorrect unbind call is made. Note that doing this requires retaining information about the binding that was made for the lifetime of the app, resulting in a leak -- this should only be used for debugging.
+Flag for #bindService: include debugging help for mismatched calls to unbind. When this flag is set, the callstack of the following unbindService call is retained, to be printed if a later incorrect unbind call is made. Note that doing this requires retaining information about the binding that was made for the lifetime of the app, resulting in a leak -- this should only be used for debugging.
 
  Value: 2
 
@@ -928,7 +928,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val BIND_SHARED_ISOLATED_PROCESS: Int
 ```
 
-Flag for #bindIsolatedService: Bind the service into a shared isolated process. Specifying this flag allows multiple isolated services to be running in a single shared isolated process. The shared isolated process instance is identified by the instanceName parameter in `https://developer.android.com/reference/kotlin/android/content/Context#bindIsolatedService(android.content.Intent,%20kotlin.Int,%20kotlin.String,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)`. Subsequent calls to #bindIsolatedService with the same instanceName will cause the isolated service to be co-located in the same shared isolated process. Note that the shared isolated process is scoped to the calling app; once created, only the calling app can bind additional isolated services into the shared process. However, the services themselves can come from different APKs and therefore different vendors. Only services that set the `https://developer.android.com/reference/kotlin/android/R.attr.html#allowSharedIsolatedProcess:kotlin.Int` attribute to `true` are allowed to be bound into a shared isolated process.
+Flag for #bindIsolatedService: Bind the service into a shared isolated process. Specifying this flag allows multiple isolated services to be running in a single shared isolated process. The shared isolated process instance is identified by the instanceName parameter in bindIsolatedService. Subsequent calls to #bindIsolatedService with the same instanceName will cause the isolated service to be co-located in the same shared isolated process. Note that the shared isolated process is scoped to the calling app; once created, only the calling app can bind additional isolated services into the shared process. However, the services themselves can come from different APKs and therefore different vendors. Only services that set the `https://developer.android.com/reference/kotlin/android/R.attr.html#allowSharedIsolatedProcess:kotlin.Int` attribute to `true` are allowed to be bound into a shared isolated process.
 
  Value: 8192
 
@@ -952,7 +952,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val BIOMETRIC_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.html#` for handling biometric and PIN/pattern/password authentication.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.html#` for handling biometric and PIN/pattern/password authentication.
 
  Value: "biometric"
 
@@ -968,13 +968,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val BLOB_STORE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager.html#` for contributing and accessing data blobs from the blob store maintained by the system.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager.html#` for contributing and accessing data blobs from the blob store maintained by the system.
 
  Value: "blob_store"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager.html#`
 
 ### BLUETOOTH_SERVICE
@@ -985,13 +985,13 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static val BLUETOOTH_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager.html#` for using Bluetooth.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothManager.html#` for using Bluetooth.
 
  Value: "bluetooth"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### BUGREPORT_SERVICE
 
@@ -1007,7 +1007,7 @@ Service to capture a bugreport.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/BugreportManager.html#`
 
 ### CAMERA_SERVICE
@@ -1018,13 +1018,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val CAMERA_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#` for interacting with camera devices.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#` for interacting with camera devices.
 
  Value: "camera"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.html#`
 
 ### CAPTIONING_SERVICE
@@ -1035,13 +1035,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val CAPTIONING_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/CaptioningManager.html#` for obtaining captioning properties and listening for changes in captioning preferences.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/accessibility/CaptioningManager.html#` for obtaining captioning properties and listening for changes in captioning preferences.
 
  Value: "captioning"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/CaptioningManager.html#`
 
 ### CARRIER_CONFIG_SERVICE
@@ -1052,13 +1052,13 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val CARRIER_CONFIG_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#` for reading carrier configuration values.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#` for reading carrier configuration values.
 
  Value: "carrier_config"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#`
 
 ### CHOOSER_SERVICE
@@ -1069,7 +1069,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val CHOOSER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserManager.html#`.
 
 **Note:** This service is not available on Wear OS, Android TV, or Android Auto devices. On these form factors, calls to `getSystemService` for this service will return `null`.
 
@@ -1077,7 +1077,7 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserManager.html#`
 
 ### CLIPBOARD_SERVICE
@@ -1088,14 +1088,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CLIPBOARD_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/ClipboardManager` for accessing and modifying the contents of the global clipboard.
+Use with getSystemService to retrieve a ClipboardManager for accessing and modifying the contents of the global clipboard.
 
  Value: "clipboard"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/ClipboardManager`
+- getSystemService
+- ClipboardManager
 
 ### COMPANION_DEVICE_SERVICE
 
@@ -1105,13 +1105,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val COMPANION_DEVICE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#` for managing companion devices
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#` for managing companion devices
 
  Value: "companiondevice"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`
 
 ### CONNECTIVITY_DIAGNOSTICS_SERVICE
@@ -1122,13 +1122,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val CONNECTIVITY_DIAGNOSTICS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.html#` for performing network connectivity diagnostics as well as receiving network connectivity information from the system.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.html#` for performing network connectivity diagnostics as well as receiving network connectivity information from the system.
 
  Value: "connectivity_diagnostics"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/ConnectivityDiagnosticsManager.html#`
 
 ### CONNECTIVITY_SERVICE
@@ -1139,13 +1139,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CONNECTIVITY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` for handling management of network connections.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#` for handling management of network connections.
 
  Value: "connectivity"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#`
 
 ### CONSUMER_IR_SERVICE
@@ -1156,13 +1156,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val CONSUMER_IR_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.html#` for transmitting infrared signals from the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.html#` for transmitting infrared signals from the device.
 
  Value: "consumer_ir"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/ConsumerIrManager.html#`
 
 ### CONTACT_KEYS_SERVICE
@@ -1173,13 +1173,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CONTACT_KEYS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/provider/E2eeContactKeysManager.html#` to managing contact keys.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/provider/E2eeContactKeysManager.html#` to managing contact keys.
 
  Value: "contact_keys"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/provider/E2eeContactKeysManager.html#`
 
 ### CONTENT_RESTRICTION_SERVICE
@@ -1190,13 +1190,13 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val CONTENT_RESTRICTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager.html#`.
 
  Value: "content_restriction"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager.html#`
 
 ### CONTEXT_IGNORE_SECURITY
@@ -1207,7 +1207,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTEXT_IGNORE_SECURITY: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)`: ignore any security restrictions on the Context being requested, allowing it to always be loaded. For use with `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_INCLUDE_CODE:kotlin.Int` to allow code to be loaded into a process even when it isn't safe to do so. Use with extreme care!
+Flag for use with createPackageContext: ignore any security restrictions on the Context being requested, allowing it to always be loaded. For use with `https://developer.android.com/reference/kotlin/android/content/Context#CONTEXT_INCLUDE_CODE:kotlin.Int` to allow code to be loaded into a process even when it isn't safe to do so. Use with extreme care!
 
  Value: 2
 
@@ -1219,7 +1219,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTEXT_INCLUDE_CODE: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)`: include the application code with the context. This means loading code into the caller's process, so that `https://developer.android.com/reference/kotlin/android/content/Context#getClassLoader()` can be used to instantiate the application's classes. Setting this flags imposes security restrictions on what application context you can access; if the requested application can not be safely loaded into your process, java.lang.SecurityException will be thrown. If this flag is not set, there will be no restrictions on the packages that can be loaded, but `https://developer.android.com/reference/kotlin/android/content/Context#getClassLoader()` will always return the default system class loader.
+Flag for use with createPackageContext: include the application code with the context. This means loading code into the caller's process, so that getClassLoader can be used to instantiate the application's classes. Setting this flags imposes security restrictions on what application context you can access; if the requested application can not be safely loaded into your process, java.lang.SecurityException will be thrown. If this flag is not set, there will be no restrictions on the packages that can be loaded, but getClassLoader will always return the default system class loader.
 
  Value: 1
 
@@ -1231,7 +1231,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTEXT_RESTRICTED: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/content/Context#createPackageContext(kotlin.String,%20kotlin.Int)`: a restricted context may disable specific features. For instance, a View associated with a restricted context would ignore particular XML attributes.
+Flag for use with createPackageContext: a restricted context may disable specific features. For instance, a View associated with a restricted context would ignore particular XML attributes.
 
  Value: 4
 
@@ -1243,13 +1243,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CREDENTIAL_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#` to authenticate a user to your app.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#` to authenticate a user to your app.
 
  Value: "credential"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#`
 
 ### CROSS_PROFILE_APPS_SERVICE
@@ -1260,13 +1260,13 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val CROSS_PROFILE_APPS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/CrossProfileApps` for cross profile operations.
+Use with getSystemService to retrieve a CrossProfileApps for cross profile operations.
 
  Value: "crossprofileapps"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### DEVICE_ID_DEFAULT
 
@@ -1300,13 +1300,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val DEVICE_LOCK_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/devicelock/DeviceLockManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/devicelock/DeviceLockManager.html#`.
 
  Value: "device_lock"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### DEVICE_POLICY_SERVICE
 
@@ -1316,13 +1316,13 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val DEVICE_POLICY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` for working with global device policy management.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` for working with global device policy management.
 
  Value: "device_policy"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### DISPLAY_HASH_SERVICE
 
@@ -1332,13 +1332,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val DISPLAY_HASH_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to access `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` to handle display hashes.
+Use with getSystemService to access `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` to handle display hashes.
 
  Value: "display_hash"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### DISPLAY_SERVICE
 
@@ -1348,13 +1348,13 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val DISPLAY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#` for interacting with display devices.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#` for interacting with display devices.
 
  Value: "display"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#`
 
 ### DOMAIN_VERIFICATION_SERVICE
@@ -1365,14 +1365,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val DOMAIN_VERIFICATION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to access `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager` to retrieve approval and user state for declared web domains.
+Use with getSystemService to access DomainVerificationManager to retrieve approval and user state for declared web domains.
 
  Value: "domain_verification"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager`
+- getSystemService
+- DomainVerificationManager
 
 ### DOWNLOAD_SERVICE
 
@@ -1382,13 +1382,13 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val DOWNLOAD_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/DownloadManager.html#` for requesting HTTP downloads.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/DownloadManager.html#` for requesting HTTP downloads.
 
  Value: "download"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### DROPBOX_SERVICE
 
@@ -1398,13 +1398,13 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val DROPBOX_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/DropBoxManager.html#` instance for recording diagnostic logs.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/DropBoxManager.html#` instance for recording diagnostic logs.
 
  Value: "dropbox"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### EUICC_SERVICE
 
@@ -1414,13 +1414,13 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EUICC_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager.html#` to manage the device eUICC (embedded SIM).
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager.html#` to manage the device eUICC (embedded SIM).
 
  Value: "euicc"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager.html#`
 
 ### FILE_INTEGRITY_SERVICE
@@ -1431,13 +1431,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val FILE_INTEGRITY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager.html#`.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager.html#`.
 
  Value: "file_integrity"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/security/FileIntegrityManager.html#`
 
 ### FILE_SERVICE
@@ -1448,13 +1448,13 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val FILE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/FileManager.html#` for handling file operations.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/FileManager.html#` for handling file operations.
 
  Value: "file"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/storage/FileManager.html#`
 
 ### GAME_SERVICE
@@ -1465,13 +1465,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val GAME_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/GameManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/GameManager.html#`.
 
  Value: "game"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### GRAMMATICAL_INFLECTION_SERVICE
 
@@ -1481,13 +1481,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val GRAMMATICAL_INFLECTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/GrammaticalInflectionManager.html#`.
 
  Value: "grammatical_inflection"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### HARDWARE_PROPERTIES_SERVICE
 
@@ -1497,13 +1497,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val HARDWARE_PROPERTIES_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/HardwarePropertiesManager.html#` for accessing the hardware properties service.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/HardwarePropertiesManager.html#` for accessing the hardware properties service.
 
  Value: "hardware_properties"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### HEALTHCONNECT_SERVICE
 
@@ -1513,13 +1513,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HEALTHCONNECT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`.
 
  Value: "healthconnect"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`
 
 ### HID_SERVICE
@@ -1530,13 +1530,13 @@ Added in [API level 37.1](https://developer.android.com/guide/topics/manifest/us
 static val HID_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager.html#` for interacting with HID devices.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager.html#` for interacting with HID devices.
 
  Value: "hid"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager.html#`
 
 ### INPUT_METHOD_SERVICE
@@ -1547,13 +1547,13 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val INPUT_METHOD_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager.html#` for accessing input methods.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager.html#` for accessing input methods.
 
  Value: "input_method"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### INPUT_SERVICE
 
@@ -1563,13 +1563,13 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.html#` for interacting with input devices.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.html#` for interacting with input devices.
 
  Value: "input"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/input/InputManager.html#`
 
 ### IPSEC_SERVICE
@@ -1580,13 +1580,13 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val IPSEC_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/IpSecManager.html#` for encrypting Sockets or Networks with IPSec.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/IpSecManager.html#` for encrypting Sockets or Networks with IPSec.
 
  Value: "ipsec"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### JOB_SCHEDULER_SERVICE
 
@@ -1596,13 +1596,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val JOB_SCHEDULER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` instance for managing occasional background tasks.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` instance for managing occasional background tasks.
 
  Value: "jobscheduler"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`
 
 ### KEYCHAIN_SERVICE
@@ -1613,13 +1613,13 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val KEYCHAIN_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#` for managing KeyChain certificates and grants.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#` for managing KeyChain certificates and grants.
 
  Value: "keychain_manager"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#`
 
 ### KEYGUARD_SERVICE
@@ -1630,13 +1630,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KEYGUARD_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#` for controlling keyguard.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#` for controlling keyguard.
 
  Value: "keyguard"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#`
 
 ### KEYSTORE_SERVICE
@@ -1647,13 +1647,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val KEYSTORE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#` for accessing [Android Keystore](../privacy-and-security/keystore.md) functions.
 
  Value: "keystore"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/security/keystore/KeyStoreManager.html#`
 
 ### LAUNCHER_APPS_SERVICE
@@ -1664,14 +1664,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val LAUNCHER_APPS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps` for querying and monitoring launchable apps across profiles of a user.
+Use with getSystemService to retrieve a LauncherApps for querying and monitoring launchable apps across profiles of a user.
 
  Value: "launcherapps"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps`
+- getSystemService
+- LauncherApps
 
 ### LAYOUT_INFLATER_SERVICE
 
@@ -1681,13 +1681,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LAYOUT_INFLATER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` for inflating layout resources in this context.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` for inflating layout resources in this context.
 
  Value: "layout_inflater"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`
 
 ### LOCALE_SERVICE
@@ -1698,13 +1698,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val LOCALE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/LocaleManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/LocaleManager.html#`.
 
  Value: "locale"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### LOCATION_SERVICE
 
@@ -1714,13 +1714,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LOCATION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#` for controlling location updates.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#` for controlling location updates.
 
  Value: "location"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#`
 
 ### MEDIA_COMMUNICATION_SERVICE
@@ -1731,13 +1731,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val MEDIA_COMMUNICATION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager.html#` for managing `https://developer.android.com/reference/kotlin/android/media/MediaSession2.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager.html#` for managing `https://developer.android.com/reference/kotlin/android/media/MediaSession2.html#`.
 
  Value: "media_communication"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/MediaCommunicationManager.html#`
 
 ### MEDIA_METRICS_SERVICE
@@ -1748,13 +1748,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val MEDIA_METRICS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager.html#` for interacting with media metrics on the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager.html#` for interacting with media metrics on the device.
 
  Value: "media_metrics"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager.html#`
 
 ### MEDIA_PROJECTION_SERVICE
@@ -1765,13 +1765,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val MEDIA_PROJECTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager.html#` instance for managing media projection sessions.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager.html#` instance for managing media projection sessions.
 
  Value: "media_projection"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager.html#`
 
 ### MEDIA_QUALITY_SERVICE
@@ -1782,13 +1782,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val MEDIA_QUALITY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.html#` for standardize picture and audio API parameters.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.html#` for standardize picture and audio API parameters.
 
  Value: "media_quality"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.html#`
 
 ### MEDIA_ROUTER_SERVICE
@@ -1805,7 +1805,7 @@ Use with #getSystemService to retrieve a `https://developer.android.com/referenc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/MediaRouter.html#`
 
 ### MEDIA_SESSION_SERVICE
@@ -1816,13 +1816,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val MEDIA_SESSION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.html#` for managing media Sessions.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.html#` for managing media Sessions.
 
  Value: "media_session"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/session/MediaSessionManager.html#`
 
 ### MEMORY_BUDGET_SERVICE
@@ -1833,13 +1833,13 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val MEMORY_BUDGET_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.html#` for monitoring memory budgets.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.html#` for monitoring memory budgets.
 
  Value: "memory_budget"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.html#`
 
 ### MIDI_SERVICE
@@ -1850,13 +1850,13 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val MIDI_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.html#` for accessing the MIDI service.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/midi/MidiManager.html#` for accessing the MIDI service.
 
  Value: "midi"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### MODE_APPEND
 
@@ -1866,13 +1866,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val MODE_APPEND: Int
 ```
 
-File creation mode: for use with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`, if the file already exists then write data to the end of the existing file instead of erasing it.
+File creation mode: for use with openFileOutput, if the file already exists then write data to the end of the existing file instead of erasing it.
 
  Value: 32768
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
+- openFileOutput
 
 ### MODE_ENABLE_WRITE_AHEAD_LOGGING
 
@@ -1888,9 +1888,9 @@ Database open flag: when set, the database is opened with write-ahead logging en
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)`
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.html#enableWriteAheadLogging()`
+- openOrCreateDatabase
+- openOrCreateDatabase
+- enableWriteAheadLogging
 
 ### MODE_MULTI_PROCESS
 
@@ -1901,7 +1901,7 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 static val MODE_MULTI_PROCESS: Int
 ```
 
-**Deprecated:** *MODE_MULTI_PROCESS does not work reliably in some versions of Android, and furthermore does not provide any mechanism for reconciling concurrent modifications across processes. Applications should not attempt to use it. Instead, they should use an explicit cross-process data management approach such as `https://developer.android.com/reference/kotlin/android/content/ContentProvider`.*
+**Deprecated:** *MODE_MULTI_PROCESS does not work reliably in some versions of Android, and furthermore does not provide any mechanism for reconciling concurrent modifications across processes. Applications should not attempt to use it. Instead, they should use an explicit cross-process data management approach such as ContentProvider.*
 
 SharedPreference loading flag: when set, the file on disk will be checked for modification even if the shared preferences instance is already loaded in this process. This behavior is sometimes desired in cases where the application has multiple processes, all writing to the same SharedPreferences file. Generally there are better forms of communication between processes, though.
 
@@ -1911,7 +1911,7 @@ This was the legacy (but undocumented) behavior in and before Gingerbread (Andro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSharedPreferences(kotlin.String,%20kotlin.Int)`
+- getSharedPreferences
 
 ### MODE_NO_LOCALIZED_COLLATORS
 
@@ -1927,8 +1927,8 @@ Database open flag: when set, the database is opened without support for localiz
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)`
+- openOrCreateDatabase
+- openOrCreateDatabase
 - `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.html#NO_LOCALIZED_COLLATORS:kotlin.Int`
 
 ### MODE_PRIVATE
@@ -1952,7 +1952,7 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val MODE_WORLD_READABLE: Int
 ```
 
-**Deprecated:** *Creating world-readable files is very dangerous, and likely to cause security holes in applications. It is strongly discouraged; instead, applications should use more formal mechanism for interactions such as `https://developer.android.com/reference/kotlin/android/content/ContentProvider`, `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`, and `https://developer.android.com/reference/kotlin/android/app/Service.html#`. There are no guarantees that this access mode will remain on a file, such as when it goes through a backup and restore.*
+**Deprecated:** *Creating world-readable files is very dangerous, and likely to cause security holes in applications. It is strongly discouraged; instead, applications should use more formal mechanism for interactions such as ContentProvider, BroadcastReceiver, and `https://developer.android.com/reference/kotlin/android/app/Service.html#`. There are no guarantees that this access mode will remain on a file, such as when it goes through a backup and restore.*
 
 File creation mode: allow all other applications to have read access to the created file.
 
@@ -1973,7 +1973,7 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val MODE_WORLD_WRITEABLE: Int
 ```
 
-**Deprecated:** *Creating world-writable files is very dangerous, and likely to cause security holes in applications. It is strongly discouraged; instead, applications should use more formal mechanism for interactions such as `https://developer.android.com/reference/kotlin/android/content/ContentProvider`, `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`, and `https://developer.android.com/reference/kotlin/android/app/Service.html#`. There are no guarantees that this access mode will remain on a file, such as when it goes through a backup and restore.*
+**Deprecated:** *Creating world-writable files is very dangerous, and likely to cause security holes in applications. It is strongly discouraged; instead, applications should use more formal mechanism for interactions such as ContentProvider, BroadcastReceiver, and `https://developer.android.com/reference/kotlin/android/app/Service.html#`. There are no guarantees that this access mode will remain on a file, such as when it goes through a backup and restore.*
 
 File creation mode: allow all other applications to have write access to the created file.
 
@@ -1993,7 +1993,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val MULTISENSORY_MANAGER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve the service that plays multisensory feedback.
+Use with getSystemService to retrieve the service that plays multisensory feedback.
 
  Value: "multisensory_manager"
 
@@ -2005,13 +2005,13 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val NETWORK_STATS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#` for querying network usage stats.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#` for querying network usage stats.
 
  Value: "netstats"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#`
 
 ### NFC_SERVICE
@@ -2022,13 +2022,13 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static val NFC_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/nfc/NfcManager.html#` for using NFC.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/nfc/NfcManager.html#` for using NFC.
 
  Value: "nfc"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### NOTIFICATION_SERVICE
 
@@ -2038,13 +2038,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NOTIFICATION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#` for informing the user of background events.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#` for informing the user of background events.
 
  Value: "notification"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#`
 
 ### NPU_SERVICE
@@ -2055,13 +2055,13 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val NPU_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/Context#`.
+Use with getSystemService to retrieve a Context.
 
  Value: "npu"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### NSD_SERVICE
 
@@ -2071,13 +2071,13 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val NSD_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.html#` for handling management of network service discovery
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.html#` for handling management of network service discovery
 
  Value: "servicediscovery"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/nsd/NsdManager.html#`
 
 ### OVERLAY_SERVICE
@@ -2088,14 +2088,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val OVERLAY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager` for managing overlay packages.
+Use with getSystemService to retrieve a OverlayManager for managing overlay packages.
 
  Value: "overlay"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager`
+- getSystemService
+- OverlayManager
 
 ### PCC_SANDBOX_SERVICE
 
@@ -2105,7 +2105,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val PCC_SANDBOX_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager.html#`.
 
  Value: "pcc_sandbox"
 
@@ -2117,13 +2117,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val PEOPLE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to access a `https://developer.android.com/reference/kotlin/android/app/people/PeopleManager.html#` to interact with your published conversations.
+Use with getSystemService to access a `https://developer.android.com/reference/kotlin/android/app/people/PeopleManager.html#` to interact with your published conversations.
 
  Value: "people"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### PERFORMANCE_HINT_SERVICE
 
@@ -2133,13 +2133,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val PERFORMANCE_HINT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.html#` for accessing the performance hinting service.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.html#` for accessing the performance hinting service.
 
  Value: "performance_hint"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### PERSISTENT_DATA_BLOCK_SERVICE
 
@@ -2149,13 +2149,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PERSISTENT_DATA_BLOCK_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager.html#` instance for interacting with a storage device that lives across factory resets.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager.html#` instance for interacting with a storage device that lives across factory resets.
 
  Value: "persistent_data_block"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/service/persistentdata/PersistentDataBlockManager.html#`
 
 ### POWER_SERVICE
@@ -2166,7 +2166,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val POWER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#` for controlling power management, including "wake locks," which let you keep the device on while you're running long tasks.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#` for controlling power management, including "wake locks," which let you keep the device on while you're running long tasks.
 
  Value: "power"
 
@@ -2184,7 +2184,7 @@ static val PRINT_SERVICE: String
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/print/PrintManager.html#`
 
 ### PROFILING_SERVICE
@@ -2195,13 +2195,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PROFILING_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/os/ProfilingManager.html#`.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/os/ProfilingManager.html#`.
 
  Value: "profiling"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### RECEIVER_EXPORTED
 
@@ -2247,14 +2247,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val RESTRICTIONS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager` for retrieving application restrictions and requesting permissions for restricted operations.
+Use with getSystemService to retrieve a RestrictionsManager for retrieving application restrictions and requesting permissions for restricted operations.
 
  Value: "restrictions"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/RestrictionsManager`
+- getSystemService
+- RestrictionsManager
 
 ### ROLE_SERVICE
 
@@ -2264,13 +2264,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ROLE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#` for managing roles.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#` for managing roles.
 
  Value: "role"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#`
 
 ### SATELLITE_SERVICE
@@ -2281,13 +2281,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val SATELLITE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager.html#` for accessing satellite functionality.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager.html#` for accessing satellite functionality.
 
  Value: "satellite"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telephony/satellite/SatelliteManager.html#`
 
 ### SEARCH_SERVICE
@@ -2298,7 +2298,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SEARCH_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#` for handling searches.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#` for handling searches.
 
 `https://developer.android.com/reference/kotlin/android/content/res/Configuration#UI_MODE_TYPE_WATCH:kotlin.Int` does not support `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#`.
 
@@ -2316,13 +2316,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SECURITY_STATE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager.html#` for accessing the security state manager service.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager.html#` for accessing the security state manager service.
 
  Value: "security_state"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager.html#`
 
 ### SENSOR_SERVICE
@@ -2333,13 +2333,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SENSOR_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#` for accessing sensors.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#` for accessing sensors.
 
  Value: "sensor"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/SensorManager.html#`
 
 ### SERIAL_SERVICE
@@ -2350,13 +2350,13 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val SERIAL_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialManager.html#` for access to serial ports.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialManager.html#` for access to serial ports.
 
  Value: "serial"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialManager.html#`
 
 ### SHORTCUT_SERVICE
@@ -2367,14 +2367,14 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 static val SHORTCUT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager` for accessing the launcher shortcut service.
+Use with getSystemService to retrieve a ShortcutManager for accessing the launcher shortcut service.
 
  Value: "shortcut"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`
+- getSystemService
+- ShortcutManager
 
 ### STATUS_BAR_SERVICE
 
@@ -2384,13 +2384,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val STATUS_BAR_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/StatusBarManager.html#` for interacting with the status bar and quick settings.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/StatusBarManager.html#` for interacting with the status bar and quick settings.
 
  Value: "statusbar"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/StatusBarManager.html#`
 
 ### STORAGE_SERVICE
@@ -2401,13 +2401,13 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val STORAGE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#` for accessing system storage functions.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#` for accessing system storage functions.
 
  Value: "storage"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#`
 
 ### STORAGE_STATS_SERVICE
@@ -2418,13 +2418,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val STORAGE_STATS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager.html#` for accessing system storage statistics.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager.html#` for accessing system storage statistics.
 
  Value: "storagestats"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/usage/StorageStatsManager.html#`
 
 ### SYSTEM_HEALTH_SERVICE
@@ -2435,13 +2435,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val SYSTEM_HEALTH_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager.html#` for accessing system health (battery, power, memory, etc) metrics.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager.html#` for accessing system health (battery, power, memory, etc) metrics.
 
  Value: "systemhealth"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### TELECOM_SERVICE
 
@@ -2451,13 +2451,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TELECOM_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#` to manage telecom-related features of the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#` to manage telecom-related features of the device.
 
  Value: "telecom"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#`
 
 ### TELEPHONY_IMS_SERVICE
@@ -2468,7 +2468,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val TELEPHONY_IMS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager.html#`.
+Use with getSystemService to retrieve an `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsManager.html#`.
 
  Value: "telephony_ims"
 
@@ -2480,13 +2480,13 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val TELEPHONY_PHONE_NUMBER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager.html#` for parsing phone numbers.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager.html#` for parsing phone numbers.
 
  Value: "telephony_phone_number"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberManager.html#`
 
 ### TELEPHONY_SERVICE
@@ -2497,13 +2497,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TELEPHONY_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#` for handling management the telephony features of the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#` for handling management the telephony features of the device.
 
  Value: "phone"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#`
 
 ### TELEPHONY_SUBSCRIPTION_SERVICE
@@ -2514,13 +2514,13 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 static val TELEPHONY_SUBSCRIPTION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#` for handling management the telephony subscriptions of the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#` for handling management the telephony subscriptions of the device.
 
  Value: "telephony_subscription_service"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#`
 
 ### TETHERING_SERVICE
@@ -2531,7 +2531,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TETHERING_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/TetheringManager.html#` for managing tethering functions.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/TetheringManager.html#` for managing tethering functions.
 
  Value: "tethering"
 
@@ -2547,13 +2547,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val TEXT_CLASSIFICATION_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager.html#` for text classification services.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager.html#` for text classification services.
 
  Value: "textclassification"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationManager.html#`
 
 ### TEXT_SERVICES_MANAGER_SERVICE
@@ -2564,13 +2564,13 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val TEXT_SERVICES_MANAGER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager.html#` for accessing text services.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/textservice/TextServicesManager.html#` for accessing text services.
 
  Value: "textservices"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### TIME_MANAGER_SERVICE
 
@@ -2580,13 +2580,13 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val TIME_MANAGER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/time/TimeManager.html#`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/time/TimeManager.html#`.
 
  Value: "time_manager"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### TV_AD_SERVICE
 
@@ -2596,13 +2596,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val TV_AD_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.html#` for interacting with TV client-side advertisement services on the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.html#` for interacting with TV client-side advertisement services on the device.
 
  Value: "tv_ad"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdManager.html#`
 
 ### TV_INPUT_SERVICE
@@ -2613,13 +2613,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TV_INPUT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#` for interacting with TV inputs on the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#` for interacting with TV inputs on the device.
 
  Value: "tv_input"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#`
 
 ### TV_INTERACTIVE_APP_SERVICE
@@ -2630,13 +2630,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val TV_INTERACTIVE_APP_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.html#` for interacting with TV interactive applications on the device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.html#` for interacting with TV interactive applications on the device.
 
  Value: "tv_interactive_app"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppManager.html#`
 
 ### UI_MODE_SERVICE
@@ -2647,13 +2647,13 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val UI_MODE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/UiModeManager.html#` for controlling UI modes.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/UiModeManager.html#` for controlling UI modes.
 
  Value: "uimode"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### USAGE_STATS_SERVICE
 
@@ -2663,13 +2663,13 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 static val USAGE_STATS_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#` for querying device usage stats.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#` for querying device usage stats.
 
  Value: "usagestats"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#`
 
 ### USB_SERVICE
@@ -2680,13 +2680,13 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val USB_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#` for access to USB devices (as a USB host) and for controlling this device's behavior as a USB device.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#` for access to USB devices (as a USB host) and for controlling this device's behavior as a USB device.
 
  Value: "usb"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbManager.html#`
 
 ### USER_SERVICE
@@ -2697,13 +2697,13 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static val USER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for managing users on devices that support multiple users.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` for managing users on devices that support multiple users.
 
  Value: "user"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#`
 
 ### VIBRATOR_MANAGER_SERVICE
@@ -2714,13 +2714,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val VIBRATOR_MANAGER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#` for accessing the device vibrators, interacting with individual ones and playing synchronized effects on multiple vibrators.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#` for accessing the device vibrators, interacting with individual ones and playing synchronized effects on multiple vibrators.
 
  Value: "vibrator_manager"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#`
 
 ### VIBRATOR_SERVICE
@@ -2734,13 +2734,13 @@ static val VIBRATOR_SERVICE: String
 
 **Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/VibratorManager.html#` to retrieve the default system vibrator.*
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#` for interacting with the vibration hardware.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#` for interacting with the vibration hardware.
 
  Value: "vibrator"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#`
 
 ### VIRTUAL_DEVICE_SERVICE
@@ -2751,13 +2751,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val VIRTUAL_DEVICE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.html#` for managing virtual devices. On devices without `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` system feature the `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` will return `null`.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.html#` for managing virtual devices. On devices without `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` system feature the getSystemService will return `null`.
 
  Value: "virtualdevice"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.html#`
 
 ### VPN_MANAGEMENT_SERVICE
@@ -2768,13 +2768,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val VPN_MANAGEMENT_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/VpnManager.html#` to manage profiles for the platform built-in VPN.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/VpnManager.html#` to manage profiles for the platform built-in VPN.
 
  Value: "vpn_management"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### WALLPAPER_SERVICE
 
@@ -2784,13 +2784,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val WALLPAPER_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a com.android.server.WallpaperService for accessing wallpapers.
+Use with getSystemService to retrieve a com.android.server.WallpaperService for accessing wallpapers.
 
  Value: "wallpaper"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### WEB_APP_SERVICE
 
@@ -2800,13 +2800,13 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val WEB_APP_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/content/pm/webapp/WebAppManager`.
+Use with getSystemService to retrieve a WebAppManager.
 
  Value: "web_app"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 
 ### WIFI_AWARE_SERVICE
 
@@ -2816,13 +2816,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val WIFI_AWARE_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager.html#` for handling management of Wi-Fi Aware.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager.html#` for handling management of Wi-Fi Aware.
 
  Value: "wifiaware"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareManager.html#`
 
 ### WIFI_P2P_SERVICE
@@ -2833,13 +2833,13 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val WIFI_P2P_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#` for handling management of Wi-Fi peer-to-peer connections.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#` for handling management of Wi-Fi peer-to-peer connections.
 
  Value: "wifip2p"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#`
 
 ### WIFI_RTT_RANGING_SERVICE
@@ -2850,13 +2850,13 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val WIFI_RTT_RANGING_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager.html#` for ranging devices with wifi.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager.html#` for ranging devices with wifi.
 
  Value: "wifirtt"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager.html#`
 
 ### WIFI_SERVICE
@@ -2867,13 +2867,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val WIFI_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#` for handling management of Wi-Fi access.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#` for handling management of Wi-Fi access.
 
  Value: "wifi"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#`
 
 ### WINDOW_SERVICE
@@ -2884,13 +2884,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val WINDOW_SERVICE: String
 ```
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` to retrieve a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` for accessing the system's window manager.
+Use with getSystemService to retrieve a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` for accessing the system's window manager.
 
  Value: "window"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`
 
 ## Public constructors
@@ -2917,7 +2917,7 @@ open fun bindIsolatedService(
 ): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/content/Context#bindIsolatedService(android.content.Intent,%20kotlin.Int,%20kotlin.String,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object.
+See bindIsolatedService Call of to obtain a BindServiceFlags object.
 
 | Parameters ||
 |---|---|
@@ -2925,7 +2925,7 @@ See `https://developer.android.com/reference/kotlin/android/content/Context#bind
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 
 ### bindIsolatedService
@@ -2942,7 +2942,7 @@ open fun bindIsolatedService(
 ): Boolean
 ```
 
-Variation of #bindService that, in the specific case of isolated services, allows the caller to generate multiple instances of a service from a single component declaration. In other words, you can use this to bind to a service that has specified `https://developer.android.com/reference/kotlin/android/R.attr.html#isolatedProcess:kotlin.Int` and, in addition to the existing behavior of running in an isolated process, you can also through the arguments here have the system bring up multiple concurrent processes hosting their own instances of that service. The instanceName you provide here identifies the different instances, and you can use `https://developer.android.com/reference/kotlin/android/content/Context#updateServiceGroup(android.content.ServiceConnection,%20kotlin.Int,%20kotlin.Int)` to tell the system how it should manage each of these instances.
+Variation of #bindService that, in the specific case of isolated services, allows the caller to generate multiple instances of a service from a single component declaration. In other words, you can use this to bind to a service that has specified `https://developer.android.com/reference/kotlin/android/R.attr.html#isolatedProcess:kotlin.Int` and, in addition to the existing behavior of running in an isolated process, you can also through the arguments here have the system bring up multiple concurrent processes hosting their own instances of that service. The instanceName you provide here identifies the different instances, and you can use updateServiceGroup to tell the system how it should manage each of these instances.
 
 | Parameters ||
 |---|---|
@@ -2950,7 +2950,7 @@ Variation of #bindService that, in the specific case of isolated services, allow
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding as per #bindService. |
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Unique identifier for the service instance. Each unique name here will result in a different service instance being created. Identifiers must only contain ASCII letters, digits, underscores, and periods. This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `conn` | [ServiceConnection](ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
 
 | Return ||
@@ -2964,7 +2964,7 @@ Variation of #bindService that, in the specific case of isolated services, allow
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#updateServiceGroup(android.content.ServiceConnection,%20kotlin.Int,%20kotlin.Int)`
+- updateServiceGroup
 - `https://developer.android.com/reference/kotlin/android/R.attr.html#isolatedProcess:kotlin.Int`
 
 ### bindService
@@ -2980,13 +2980,13 @@ open fun bindService(
 ): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object.
+See bindService Call of to obtain a BindServiceFlags object.
 
 | Parameters ||
 |---|---|
 | `service` | [Intent](Intent.md): This value cannot be `null`. |
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 
@@ -3002,7 +3002,7 @@ open fun bindService(
 ): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object.
+See bindService Call of to obtain a BindServiceFlags object.
 
 | Parameters ||
 |---|---|
@@ -3025,11 +3025,11 @@ abstract fun bindService(
 
 Connects to an application service, creating it if needed. This defines a dependency between your application and the service. The given conn will receive the service object when it is created and be told if it dies and restarts. The service will be considered required by the system only for as long as the calling context exists. For example, if this Context is an Activity that is stopped, the service will not be required to continue running until the Activity is resumed.
 
-If the service does not support binding, it may return `null` from its `https://developer.android.com/reference/kotlin/android/app/Service.html#onBind(android.content.Intent)` method. If it does, then the ServiceConnection's `https://developer.android.com/reference/kotlin/android/content/ServiceConnection#onNullBinding(android.content.ComponentName)` method will be invoked instead of `https://developer.android.com/reference/kotlin/android/content/ServiceConnection#onServiceConnected(android.content.ComponentName,%20android.os.IBinder)`.
+If the service does not support binding, it may return `null` from its onBind method. If it does, then the ServiceConnection's onNullBinding method will be invoked instead of onServiceConnected.
 
-**Note:** This method *cannot* be called from a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` component. A pattern you can use to communicate from a BroadcastReceiver to a Service is to call `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)` with the arguments containing the command to be sent, with the service calling its `https://developer.android.com/reference/kotlin/android/app/Service.html#stopSelf(kotlin.Int)` method when done executing that command. See the API demo App/Service/Service Start Arguments Controller for an illustration of this. It is okay, however, to use this method from a BroadcastReceiver that has been registered with #registerReceiver, since the lifetime of this BroadcastReceiver is tied to another object (the one that registered it).
+**Note:** This method *cannot* be called from a BroadcastReceiver component. A pattern you can use to communicate from a BroadcastReceiver to a Service is to call startService with the arguments containing the command to be sent, with the service calling its stopSelf method when done executing that command. See the API demo App/Service/Service Start Arguments Controller for an illustration of this. It is okay, however, to use this method from a BroadcastReceiver that has been registered with #registerReceiver, since the lifetime of this BroadcastReceiver is tied to another object (the one that registered it).
 
-This method only accepts a int type flag, to pass in a long type flag, call `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20android.content.Context.BindServiceFlags)` instead.
+This method only accepts a int type flag, to pass in a long type flag, call bindService instead.
 
 | Parameters ||
 |---|---|
@@ -3040,16 +3040,16 @@ This method only accepts a int type flag, to pass in a long type flag, call `htt
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the system is in the process of bringing up a service that your client has permission to bind to; `false` if the system couldn't find the service or if your client doesn't have permission to bind to it. Regardless of the return value, you should later call `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)` to release the connection. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the system is in the process of bringing up a service that your client has permission to bind to; `false` if the system couldn't find the service or if your client doesn't have permission to bind to it. Regardless of the return value, you should later call unbindService to release the connection. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If the caller does not have permission to access the service or the service cannot be found. Call `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)` to release the connection when this exception is thrown. |
+| `java.lang.SecurityException` | If the caller does not have permission to access the service or the service cannot be found. Call unbindService to release the connection when this exception is thrown. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`
+- unbindService
+- startService
 
 ### bindService
 
@@ -3064,21 +3064,21 @@ open fun bindService(
 ): Boolean
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)` with executor to control ServiceConnection callbacks.
+Same as bindService with executor to control ServiceConnection callbacks.
 
-This method only accepts a 32 bits flag, to pass in a 64 bits flag, call `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.Context.BindServiceFlags,%20java.util.concurrent.Executor,%20android.content.ServiceConnection)` instead.
+This method only accepts a 32 bits flag, to pass in a 64 bits flag, call bindService instead.
 
 | Parameters ||
 |---|---|
 | `service` | [Intent](Intent.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_DEBUG_UNBIND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ABOVE_CLIENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_WAIVE_PRIORITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_IMPORTANT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_PERCEPTIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ALLOW_ACTIVITY_STARTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_INCLUDE_CAPABILITIES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_SHARED_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_PACKAGE_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_EXTERNAL_SERVICE:kotlin.Int` |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | The result of the binding as described in `https://developer.android.com/reference/kotlin/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | The result of the binding as described in bindService. |
 
 ### bindServiceAsUser
 
@@ -3093,7 +3093,7 @@ open fun bindServiceAsUser(
 ): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/content/Context#bindServiceAsUser(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int,%20android.os.UserHandle)` Call `https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags#of(kotlin.Long)` to obtain a BindServiceFlags object.
+See bindServiceAsUser Call of to obtain a BindServiceFlags object.
 
 | Parameters ||
 |---|---|
@@ -3135,7 +3135,7 @@ Requires that one of the following conditions are met:
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the system is in the process of bringing up a service that your client has permission to bind to; `false` if the system couldn't find the service. You should call `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)` to release the connection even if this method returned `false`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the system is in the process of bringing up a service that your client has permission to bind to; `false` if the system couldn't find the service. You should call unbindService to release the connection even if this method returned `false`. |
 
 | Exceptions ||
 |---|---|
@@ -3149,7 +3149,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun checkCallingOrSelfPermission(permission: String): Int
 ```
 
-Determine whether the calling process of an IPC *or you* have been granted a particular permission. This is the same as `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingPermission(kotlin.String)`, except it grants your own permissions if you are not currently processing an IPC. Use with care!
+Determine whether the calling process of an IPC *or you* have been granted a particular permission. This is the same as checkCallingPermission, except it grants your own permissions if you are not currently processing an IPC. Use with care!
 
 | Parameters ||
 |---|---|
@@ -3161,9 +3161,9 @@ Determine whether the calling process of an IPC *or you* have been granted a par
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#checkPermission(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingPermission(kotlin.String)`
+- checkPermission
+- checkPermission
+- checkCallingPermission
 
 ### checkCallingOrSelfUriPermission
 
@@ -3176,7 +3176,7 @@ abstract fun checkCallingOrSelfUriPermission(
 ): Int
 ```
 
-Determine whether the calling process of an IPC *or you* has been granted permission to access a specific URI. This is the same as `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`, except it grants your own permissions if you are not currently processing an IPC. Use with care!
+Determine whether the calling process of an IPC *or you* has been granted permission to access a specific URI. This is the same as checkCallingUriPermission, except it grants your own permissions if you are not currently processing an IPC. Use with care!
 
 | Parameters ||
 |---|---|
@@ -3189,7 +3189,7 @@ Determine whether the calling process of an IPC *or you* has been granted permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`
+- checkCallingUriPermission
 
 ### checkCallingOrSelfUriPermissions
 
@@ -3202,7 +3202,7 @@ open fun checkCallingOrSelfUriPermissions(
 ): IntArray
 ```
 
-Determine whether the calling process of an IPC *or you* has been granted permission to access a list of URIs. This is the same as `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`, except it grants your own permissions if you are not currently processing an IPC. Use with care!
+Determine whether the calling process of an IPC *or you* has been granted permission to access a list of URIs. This is the same as checkCallingUriPermission, except it grants your own permissions if you are not currently processing an IPC. Use with care!
 
 | Parameters ||
 |---|---|
@@ -3215,7 +3215,7 @@ Determine whether the calling process of an IPC *or you* has been granted permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`
+- checkCallingUriPermission
 
 ### checkCallingPermission
 
@@ -3225,7 +3225,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun checkCallingPermission(permission: String): Int
 ```
 
-Determine whether the calling process of an IPC you are handling has been granted a particular permission. This is basically the same as calling `https://developer.android.com/reference/kotlin/android/content/Context#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)` with the pid and uid returned by `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingPid()` and `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingUid()`. One important difference is that if you are not currently processing an IPC, this function will always fail. This is done to protect against accidentally leaking permissions; you can use `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfPermission(kotlin.String)` to avoid this protection.
+Determine whether the calling process of an IPC you are handling has been granted a particular permission. This is basically the same as calling checkPermission with the pid and uid returned by getCallingPid and getCallingUid. One important difference is that if you are not currently processing an IPC, this function will always fail. This is done to protect against accidentally leaking permissions; you can use checkCallingOrSelfPermission to avoid this protection.
 
 | Parameters ||
 |---|---|
@@ -3237,9 +3237,9 @@ Determine whether the calling process of an IPC you are handling has been grante
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#checkPermission(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfPermission(kotlin.String)`
+- checkPermission
+- checkPermission
+- checkCallingOrSelfPermission
 
 ### checkCallingUriPermission
 
@@ -3252,7 +3252,7 @@ abstract fun checkCallingUriPermission(
 ): Int
 ```
 
-Determine whether the calling process and uid has been granted permission to access a specific URI. This is basically the same as calling `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with the pid and uid returned by `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingPid()` and `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingUid()`. One important difference is that if you are not currently processing an IPC, this function will always fail.
+Determine whether the calling process and uid has been granted permission to access a specific URI. This is basically the same as calling checkUriPermission with the pid and uid returned by getCallingPid and getCallingUid. One important difference is that if you are not currently processing an IPC, this function will always fail.
 
 | Parameters ||
 |---|---|
@@ -3265,7 +3265,7 @@ Determine whether the calling process and uid has been granted permission to acc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- checkUriPermission
 
 ### checkCallingUriPermissions
 
@@ -3278,7 +3278,7 @@ open fun checkCallingUriPermissions(
 ): IntArray
 ```
 
-Determine whether the calling process and uid has been granted permission to access a list of URIs. This is basically the same as calling `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermissions(kotlin.collections.MutableList,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` with the pid and uid returned by `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingPid()` and `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingUid()`. One important difference is that if you are not currently processing an IPC, this function will always fail.
+Determine whether the calling process and uid has been granted permission to access a list of URIs. This is basically the same as calling checkUriPermissions with the pid and uid returned by getCallingPid and getCallingUid. One important difference is that if you are not currently processing an IPC, this function will always fail.
 
 | Parameters ||
 |---|---|
@@ -3291,7 +3291,7 @@ Determine whether the calling process and uid has been granted permission to acc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- checkUriPermission
 
 ### checkContentUriPermissionFull
 
@@ -3308,7 +3308,7 @@ open fun checkContentUriPermissionFull(
 
 Determine whether a particular process and uid has been granted permission to access a specific content URI.
 
-Unlike `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, this method checks for general access to the URI's content provider, as well as explicitly granted permissions.
+Unlike checkUriPermission, this method checks for general access to the URI's content provider, as well as explicitly granted permissions.
 
 Note, this check will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` for non-content URIs.
 
@@ -3326,7 +3326,7 @@ Note, this check will throw an `https://developer.android.com/reference/kotlin/j
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- checkUriPermission
 
 ### checkPermission
 
@@ -3355,8 +3355,8 @@ Determine whether the given permission is allowed for a particular process and u
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#checkPermission(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingPermission(kotlin.String)`
+- checkPermission
+- checkCallingPermission
 
 ### checkSelfPermission
 
@@ -3378,8 +3378,8 @@ Determine whether *you* have been granted a particular permission.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#checkPermission(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingPermission(kotlin.String)`
+- checkPermission
+- checkCallingPermission
 
 ### checkUriPermission
 
@@ -3410,7 +3410,7 @@ Determine whether a particular process and uid has been granted permission to ac
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`
+- checkCallingUriPermission
 
 ### checkUriPermission
 
@@ -3427,7 +3427,7 @@ abstract fun checkUriPermission(
 ): Int
 ```
 
-Check both a Uri and normal permission. This allows you to perform both `https://developer.android.com/reference/kotlin/android/content/Context#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)` and #checkUriPermission in one call.
+Check both a Uri and normal permission. This allows you to perform both checkPermission and #checkUriPermission in one call.
 
 | Parameters ||
 |---|---|
@@ -3473,7 +3473,7 @@ Determine whether a particular process and uid has been granted permission to ac
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`
+- checkCallingUriPermission
 
 ### clearWallpaper
 
@@ -3506,11 +3506,11 @@ Return a new Context object for the current Context but attribute to a different
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#` | A `https://developer.android.com/reference/kotlin/android/content/Context#` that is tagged for the new attribution. This value cannot be `null`. |
+| Context | A Context that is tagged for the new attribution. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getAttributionTag()`
+- getAttributionTag
 
 ### createConfigurationContext
 
@@ -3524,11 +3524,11 @@ Return a new Context object for the current Context but whose resources are adju
 
 | Parameters ||
 |---|---|
-| `overrideConfiguration` | [Configuration](../android.content.res/Configuration.md): A `https://developer.android.com/reference/kotlin/android/content/res/Configuration` specifying what values to modify in the base Configuration of the original Context's resources. If the base configuration changes (such as due to an orientation change), the resources of this context will also change except for those that have been explicitly overridden with a value here. This value cannot be `null`. |
+| `overrideConfiguration` | [Configuration](../android.content.res/Configuration.md): A Configuration specifying what values to modify in the base Configuration of the original Context's resources. If the base configuration changes (such as due to an orientation change), the resources of this context will also change except for those that have been explicitly overridden with a value here. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#!` | A `https://developer.android.com/reference/kotlin/android/content/Context#` with the given configuration override. |
+| `https://developer.android.com/reference/kotlin/android/content/Context#!` | A Context with the given configuration override. |
 
 ### createContext
 
@@ -3546,11 +3546,11 @@ Creates a context with specific properties and behaviors.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#` | A context with the specified behaviors. This value cannot be `null`. |
+| Context | A context with the specified behaviors. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ContextParams`
+- ContextParams
 
 ### createContextForSplit
 
@@ -3568,7 +3568,7 @@ Return a new Context object for the given split name. The new Context has a Clas
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#!` | A `https://developer.android.com/reference/kotlin/android/content/Context#` with the given split's code and/or resources loaded. |
+| `https://developer.android.com/reference/kotlin/android/content/Context#!` | A Context with the given split's code and/or resources loaded. |
 
 ### createDeviceContext
 
@@ -3590,7 +3590,7 @@ Note that the newly created instance will be associated with the same display as
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#` | A context associated with the given device ID. This value cannot be `null`. |
+| Context | A context associated with the given device ID. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3598,8 +3598,8 @@ Note that the newly created instance will be associated with the same display as
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDeviceId()`
-- `https://developer.android.com/reference/kotlin/android/companion/virtual/VirtualDeviceManager.html#getVirtualDevices()`
+- getDeviceId
+- getVirtualDevices
 
 ### createDeviceProtectedStorageContext
 
@@ -3620,7 +3620,7 @@ If the underlying device does not have the ability to store device-protected and
 Each call to this method returns a new instance of a Context object; Context objects are not shared, however common state (ClassLoader, other Resources for the same configuration) may be so the Context itself can be fairly lightweight.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#isDeviceProtectedStorage()`
+- isDeviceProtectedStorage
 
 ### createDisplayContext
 
@@ -3636,7 +3636,7 @@ Returns a new `Context` object from the current context but with resources adjus
 
 This `Context` is **not** a UI context, do not use it to access UI components or obtain a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` instance.
 
-To obtain an instance of `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` configured to show windows on the given display, call `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)` on the returned display context, then call `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(java.lang.Class)` on the returned window context.
+To obtain an instance of `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` configured to show windows on the given display, call createWindowContext on the returned display context, then call getSystemService or getSystemService on the returned window context.
 
 | Parameters ||
 |---|---|
@@ -3670,7 +3670,7 @@ Throws `https://developer.android.com/reference/kotlin/java/lang/SecurityExcepti
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#!` | A `https://developer.android.com/reference/kotlin/android/content/Context#` for the application. |
+| `https://developer.android.com/reference/kotlin/android/content/Context#!` | A Context for the application. |
 
 | Exceptions ||
 |---|---|
@@ -3691,7 +3691,7 @@ open fun createWindowContext(
 
 Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`.
 
-Similar to `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)`, but the `display` is passed in, instead of implicitly using the `https://developer.android.com/reference/kotlin/android/content/Context#getDisplay()`.
+Similar to createWindowContext, but the `display` is passed in, instead of implicitly using the getDisplay.
 
 | Parameters ||
 |---|---|
@@ -3702,7 +3702,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#` | A `https://developer.android.com/reference/kotlin/android/content/Context#` that can be used to create non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` windows. This value cannot be `null`. |
+| Context | A Context that can be used to create non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` windows. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3710,8 +3710,8 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(java.lang.Class)`
+- getSystemService
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/content/Context#WINDOW_SERVICE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/content/Context#LAYOUT_INFLATER_SERVICE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String`
@@ -3729,9 +3729,9 @@ open fun createWindowContext(
 
 Creates a Context for a non-activity window.
 
-A window context is a context that can be used to add non-activity windows, such as `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY:kotlin.Int`. A window context must be created from a context that has an associated `https://developer.android.com/reference/kotlin/android/view/Display.html#`, such as `https://developer.android.com/reference/kotlin/android/app/Activity.html#` or a context created with `https://developer.android.com/reference/kotlin/android/content/Context#createDisplayContext(android.view.Display)`.
+A window context is a context that can be used to add non-activity windows, such as `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY:kotlin.Int`. A window context must be created from a context that has an associated `https://developer.android.com/reference/kotlin/android/view/Display.html#`, such as `https://developer.android.com/reference/kotlin/android/app/Activity.html#` or a context created with createDisplayContext.
 
-The window context is created with the appropriate `https://developer.android.com/reference/kotlin/android/content/res/Configuration` for the area of the display that the windows created with it can occupy; it must be used when `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` views, such that they can be inflated with proper `https://developer.android.com/reference/kotlin/android/content/res/Resources`. Below is a sample code to **add an application overlay window on the primary display:**
+The window context is created with the appropriate Configuration for the area of the display that the windows created with it can occupy; it must be used when `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` views, such that they can be inflated with proper Resources. Below is a sample code to **add an application overlay window on the primary display:**
 
 ```kotlin
 ...
@@ -3755,7 +3755,7 @@ This context's configuration and resources are adjusted to an area of the displa
 
 Creating a window context is an expensive operation. Misuse of this API may lead to a huge performance drop. The best practice is to use the same window context when possible. An approach is to create one window context with specific window type and display and use it everywhere it's needed.
 
-After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, window context provides the capability to receive configuration changes for existing token by overriding the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#token:android.os.IBinder` of the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#` passed in `https://developer.android.com/reference/kotlin/android/view/ViewManager.html#addView(android.view.View,%20android.view.ViewGroup.LayoutParams)`. This is useful when an application needs to attach its window to an existing activity for window token sharing use-case.
+After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, window context provides the capability to receive configuration changes for existing token by overriding the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#token:android.os.IBinder` of the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#` passed in addView. This is useful when an application needs to attach its window to an existing activity for window token sharing use-case.
 
 Note that the window context in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` didn't have this capability. This is a no-op for the window context in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`.
 Below is sample code to **attach an existing token to a window context:**
@@ -3780,9 +3780,9 @@ final DisplayManager dm = anyContext.getSystemService(DisplayManager.class);
   
 ```
 
-After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, window context provides the capability to listen to its `https://developer.android.com/reference/kotlin/android/content/res/Configuration` changes by calling `https://developer.android.com/reference/kotlin/android/content/Context#registerComponentCallbacks(android.content.ComponentCallbacks)`, while other kinds of `https://developer.android.com/reference/kotlin/android/content/Context#` will register the `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` to `https://developer.android.com/reference/kotlin/android/content/Context#getApplicationContext()`. Note that window context only propagate `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onConfigurationChanged(android.content.res.Configuration)` callback. `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onLowMemory()` or other callbacks in `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` won't be invoked.
+After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, window context provides the capability to listen to its Configuration changes by calling registerComponentCallbacks, while other kinds of Context will register the ComponentCallbacks to getApplicationContext. Note that window context only propagate onConfigurationChanged callback. onLowMemory or other callbacks in ComponentCallbacks2 won't be invoked.
 
-Note that using `https://developer.android.com/reference/kotlin/android/app/Application.html#` or `https://developer.android.com/reference/kotlin/android/app/Service.html#` context for UI-related queries may result in layout or continuity issues on devices with variable screen sizes (e.g. foldables) or in multi-window modes, since these non-UI contexts may not reflect the `https://developer.android.com/reference/kotlin/android/content/res/Configuration` changes for the visual container.
+Note that using `https://developer.android.com/reference/kotlin/android/app/Application.html#` or `https://developer.android.com/reference/kotlin/android/app/Service.html#` context for UI-related queries may result in layout or continuity issues on devices with variable screen sizes (e.g. foldables) or in multi-window modes, since these non-UI contexts may not reflect the Configuration changes for the visual container.
 
 | Parameters ||
 |---|---|
@@ -3791,16 +3791,16 @@ Note that using `https://developer.android.com/reference/kotlin/android/app/Appl
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Context#` | A `https://developer.android.com/reference/kotlin/android/content/Context#` that can be used to create non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` windows. |
+| Context | A Context that can be used to create non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` windows. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.UnsupportedOperationException` | if this `https://developer.android.com/reference/kotlin/android/content/Context#` does not attach to a display, such as `https://developer.android.com/reference/kotlin/android/app/Application.html#` or `https://developer.android.com/reference/kotlin/android/app/Service.html#`. |
+| `java.lang.UnsupportedOperationException` | if this Context does not attach to a display, such as `https://developer.android.com/reference/kotlin/android/app/Application.html#` or `https://developer.android.com/reference/kotlin/android/app/Service.html#`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(java.lang.Class)`
+- getSystemService
+- getSystemService
 - `https://developer.android.com/reference/kotlin/android/content/Context#WINDOW_SERVICE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/content/Context#LAYOUT_INFLATER_SERVICE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String`
@@ -3821,7 +3821,7 @@ Returns an array of strings naming the private databases associated with this Co
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#deleteDatabase(kotlin.String)`
+- deleteDatabase
 
 ### deleteDatabase
 
@@ -3863,10 +3863,10 @@ Delete the given private file associated with this Context's application package
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileInput(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#fileList()`
-- `https://developer.android.com/reference/kotlin/java/io/File.html#delete()`
+- openFileInput
+- openFileOutput
+- fileList
+- delete
 
 ### deleteSharedPreferences
 
@@ -3888,7 +3888,7 @@ Delete an existing shared preferences file.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSharedPreferences(kotlin.String,%20kotlin.Int)`
+- getSharedPreferences
 
 ### enforceCallingOrSelfPermission
 
@@ -3901,7 +3901,7 @@ abstract fun enforceCallingOrSelfPermission(
 ): Unit
 ```
 
-If neither you nor the calling process of an IPC you are handling has been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is the same as `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingPermission(kotlin.String,%20kotlin.String)`, except it grants your own permissions if you are not currently processing an IPC. Use with care!
+If neither you nor the calling process of an IPC you are handling has been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is the same as enforceCallingPermission, except it grants your own permissions if you are not currently processing an IPC. Use with care!
 
 | Parameters ||
 |---|---|
@@ -3910,7 +3910,7 @@ If neither you nor the calling process of an IPC you are handling has been grant
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfPermission(kotlin.String)`
+- checkCallingOrSelfPermission
 
 ### enforceCallingOrSelfUriPermission
 
@@ -3924,7 +3924,7 @@ abstract fun enforceCallingOrSelfUriPermission(
 ): Unit
 ```
 
-If the calling process of an IPC *or you* has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is the same as `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.String)`, except it grants your own permissions if you are not currently processing an IPC. Use with care!
+If the calling process of an IPC *or you* has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is the same as enforceCallingUriPermission, except it grants your own permissions if you are not currently processing an IPC. Use with care!
 
 | Parameters ||
 |---|---|
@@ -3935,7 +3935,7 @@ If the calling process of an IPC *or you* has not been granted permission to acc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingOrSelfUriPermission(android.net.Uri,%20kotlin.Int)`
+- checkCallingOrSelfUriPermission
 
 ### enforceCallingPermission
 
@@ -3948,7 +3948,7 @@ abstract fun enforceCallingPermission(
 ): Unit
 ```
 
-If the calling process of an IPC you are handling has not been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is basically the same as calling `https://developer.android.com/reference/kotlin/android/content/Context#enforcePermission(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)` with the pid and uid returned by `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingPid()` and `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingUid()`. One important difference is that if you are not currently processing an IPC, this function will always throw the SecurityException. This is done to protect against accidentally leaking permissions; you can use `https://developer.android.com/reference/kotlin/android/content/Context#enforceCallingOrSelfPermission(kotlin.String,%20kotlin.String)` to avoid this protection.
+If the calling process of an IPC you are handling has not been granted a particular permission, throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is basically the same as calling enforcePermission with the pid and uid returned by getCallingPid and getCallingUid. One important difference is that if you are not currently processing an IPC, this function will always throw the SecurityException. This is done to protect against accidentally leaking permissions; you can use enforceCallingOrSelfPermission to avoid this protection.
 
 | Parameters ||
 |---|---|
@@ -3957,7 +3957,7 @@ If the calling process of an IPC you are handling has not been granted a particu
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingPermission(kotlin.String)`
+- checkCallingPermission
 
 ### enforceCallingUriPermission
 
@@ -3971,7 +3971,7 @@ abstract fun enforceCallingUriPermission(
 ): Unit
 ```
 
-If the calling process and uid has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is basically the same as calling `https://developer.android.com/reference/kotlin/android/content/Context#enforceUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)` with the pid and uid returned by `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingPid()` and `https://developer.android.com/reference/kotlin/android/os/Binder.html#getCallingUid()`. One important difference is that if you are not currently processing an IPC, this function will always throw a SecurityException.
+If the calling process and uid has not been granted permission to access a specific URI, throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`. This is basically the same as calling enforceUriPermission with the pid and uid returned by getCallingPid and getCallingUid. One important difference is that if you are not currently processing an IPC, this function will always throw a SecurityException.
 
 | Parameters ||
 |---|---|
@@ -3982,7 +3982,7 @@ If the calling process and uid has not been granted permission to access a speci
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkCallingUriPermission(android.net.Uri,%20kotlin.Int)`
+- checkCallingUriPermission
 
 ### enforcePermission
 
@@ -4009,7 +4009,7 @@ If the given permission is not allowed for a particular process and user ID runn
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkPermission(kotlin.String,%20kotlin.Int,%20kotlin.Int)`
+- checkPermission
 
 ### enforceUriPermission
 
@@ -4038,7 +4038,7 @@ If a particular process and uid has not been granted permission to access a spec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- checkUriPermission
 
 ### enforceUriPermission
 
@@ -4056,7 +4056,7 @@ abstract fun enforceUriPermission(
 ): Unit
 ```
 
-Enforce both a Uri and normal permission. This allows you to perform both `https://developer.android.com/reference/kotlin/android/content/Context#enforcePermission(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)` and #enforceUriPermission in one call.
+Enforce both a Uri and normal permission. This allows you to perform both enforcePermission and #enforceUriPermission in one call.
 
 | Parameters ||
 |---|---|
@@ -4072,7 +4072,7 @@ Enforce both a Uri and normal permission. This allows you to perform both `https
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#checkUriPermission(android.net.Uri,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- checkUriPermission
 
 ### fileList
 
@@ -4090,9 +4090,9 @@ Returns an array of strings naming the private files associated with this Contex
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileInput(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#deleteFile(kotlin.String)`
+- openFileInput
+- openFileOutput
+- deleteFile
 
 ### getApplicationContext
 
@@ -4104,7 +4104,7 @@ abstract fun getApplicationContext(): Context!
 
 Return the context of the single, global Application object of the current process. This generally should only be used if you need a Context whose lifecycle is separate from the current context, that is tied to the lifetime of the process rather than the current component.
 
-Consider for example how this interacts with `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`:
+Consider for example how this interacts with registerReceiver:
 
 - If used from an Activity context, the receiver is being registered within that activity. This means that you are expected to unregister before the activity is done being destroyed; in fact if you do not do so, the framework will clean up your leaked registration as it removes the activity and log an error. Thus, if you use the Activity context to register a receiver that is static (global to the process, not associated with an Activity instance) then that registration will be removed on you at whatever point the activity you used is destroyed.
 
@@ -4130,7 +4130,7 @@ abstract fun getAssets(): AssetManager!
 
 Returns an AssetManager instance for the application's package.
 
-**Note:** Implementations of this method should return an AssetManager instance that is consistent with the Resources instance returned by `https://developer.android.com/reference/kotlin/android/content/Context#getResources()`. For example, they should share the same `https://developer.android.com/reference/kotlin/android/content/res/Configuration` object.
+**Note:** Implementations of this method should return an AssetManager instance that is consistent with the Resources instance returned by getResources. For example, they should share the same Configuration object.
 
 | Return ||
 |---|---|
@@ -4138,7 +4138,7 @@ Returns an AssetManager instance for the application's package.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getResources()`
+- getResources
 
 ### getAttributionSource
 
@@ -4150,11 +4150,11 @@ open fun getAttributionSource(): AttributionSource
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/AttributionSource` | The identity of this context for permission purposes. This value cannot be `null`. |
+| AttributionSource | The identity of this context for permission purposes. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/AttributionSource`
+- AttributionSource
 
 ### getAttributionTag
 
@@ -4180,9 +4180,9 @@ abstract fun getCacheDir(): File!
 
 Returns the absolute path to the application specific cache directory on the filesystem.
 
-The system will automatically delete files in this directory as disk space is needed elsewhere on the device. The system will always delete older files first, as reported by `https://developer.android.com/reference/kotlin/java/io/File.html#lastModified()`. If desired, you can exert more control over how files are deleted using `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#setCacheBehaviorGroup(java.io.File,%20kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#setCacheBehaviorTombstone(java.io.File,%20kotlin.Boolean)`.
+The system will automatically delete files in this directory as disk space is needed elsewhere on the device. The system will always delete older files first, as reported by lastModified. If desired, you can exert more control over how files are deleted using setCacheBehaviorGroup and setCacheBehaviorTombstone.
 
-Apps are strongly encouraged to keep their usage of cache space below the quota returned by `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#getCacheQuotaBytes(java.util.UUID)`. If your app goes above this quota, your cached files will be some of the first to be deleted when additional disk space is needed. Conversely, if your app stays under this quota, your cached files will be some of the last to be deleted when additional disk space is needed.
+Apps are strongly encouraged to keep their usage of cache space below the quota returned by getCacheQuotaBytes. If your app goes above this quota, your cached files will be some of the first to be deleted when additional disk space is needed. Conversely, if your app stays under this quota, your cached files will be some of the last to be deleted when additional disk space is needed.
 
 Note that your cache quota will change over time depending on how frequently the user interacts with your app, and depending on how much system-wide disk space is used.
 
@@ -4196,10 +4196,10 @@ Apps require no extra permissions to read or write to the returned path, since t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getFileStreamPath(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDir(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getExternalCacheDir()`
+- openFileOutput
+- getFileStreamPath
+- getDir
+- getExternalCacheDir
 
 ### getClassLoader
 
@@ -4271,7 +4271,7 @@ Returns a color state list associated with a particular resource ID and styled f
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList` | A color state list. This value cannot be `null`. |
+| ColorStateList | A color state list. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4295,7 +4295,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getDataDir(): File!
 ```
 
-Returns the absolute path to the directory on the filesystem where all private files belonging to this app are stored. Apps should not use this path directly; they should instead use `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`, `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()`, `https://developer.android.com/reference/kotlin/android/content/Context#getDir(kotlin.String,%20kotlin.Int)`, or other storage APIs on this class.
+Returns the absolute path to the directory on the filesystem where all private files belonging to this app are stored. Apps should not use this path directly; they should instead use getFilesDir, getCacheDir, getDir, or other storage APIs on this class.
 
 The returned path may change over time if the calling app is moved to an adopted storage device, so only relative paths should be persisted.
 
@@ -4336,9 +4336,9 @@ open fun getDeviceId(): Int
 
 Gets the device ID this context is associated with. Applications can use this method to determine whether they are running on a virtual device and identify that device. The device ID of the host device is `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_ID_DEFAULT:kotlin.Int`
 
-If the underlying device ID is changed by the system, for example, when an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` is moved to a different virtual device, applications can register to listen to changes by calling `https://developer.android.com/reference/kotlin/android/content/Context#registerDeviceIdChangeListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)`.
+If the underlying device ID is changed by the system, for example, when an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` is moved to a different virtual device, applications can register to listen to changes by calling registerDeviceIdChangeListener.
 
-This method will only return a reliable value for this instance if it was created with `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceContext(kotlin.Int)`, or if this instance is a UI or Display Context. Contexts created with `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceContext(kotlin.Int)` will have an explicit device association, which will never change, even if the underlying device is closed or is removed. UI Contexts and Display Contexts are already associated with a display, so if the device association is not explicitly given, `https://developer.android.com/reference/kotlin/android/content/Context#getDeviceId()` will return the ID of the device associated with the associated display. The system can assign an arbitrary device id value for Contexts not logically associated with a device.
+This method will only return a reliable value for this instance if it was created with createDeviceContext, or if this instance is a UI or Display Context. Contexts created with createDeviceContext will have an explicit device association, which will never change, even if the underlying device is closed or is removed. UI Contexts and Display Contexts are already associated with a display, so if the device association is not explicitly given, getDeviceId will return the ID of the device associated with the associated display. The system can assign an arbitrary device id value for Contexts not logically associated with a device.
 
 | Return ||
 |---|---|
@@ -4346,9 +4346,9 @@ This method will only return a reliable value for this instance if it was create
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceContext(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerDeviceIdChangeListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#isUiContext()`
+- createDeviceContext
+- registerDeviceIdChangeListener
+- isUiContext
 
 ### getDir
 
@@ -4378,7 +4378,7 @@ Apps require no extra permissions to read or write to the returned path, since t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
+- openFileOutput
 
 ### getDisplay
 
@@ -4388,7 +4388,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getDisplay(): Display
 ```
 
-Get the display this context is associated with. Applications should use this method with `https://developer.android.com/reference/kotlin/android/app/Activity.html#` or a context associated with a `https://developer.android.com/reference/kotlin/android/view/Display.html#` via `https://developer.android.com/reference/kotlin/android/content/Context#createDisplayContext(android.view.Display)` to get a display object associated with a Context, or `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)` to get a display object by id.
+Get the display this context is associated with. Applications should use this method with `https://developer.android.com/reference/kotlin/android/app/Activity.html#` or a context associated with a `https://developer.android.com/reference/kotlin/android/view/Display.html#` via createDisplayContext to get a display object associated with a Context, or getDisplay to get a display object by id.
 
 | Return ||
 |---|---|
@@ -4430,13 +4430,13 @@ abstract fun getExternalCacheDir(): File?
 
 Returns absolute path to application-specific directory on the primary shared/external storage device where the application can place cache files it owns. These files are internal to the application, and not typically visible to the user as media.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getCacheDir in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- The platform does not always monitor the space available in shared storage, and thus may not automatically delete these files. Apps should always manage the maximum space used in this location. Currently the only time files here will be deleted by the platform is when running on `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR1:kotlin.Int` or later and `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)` returns true.
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- The platform does not always monitor the space available in shared storage, and thus may not automatically delete these files. Apps should always manage the maximum space used in this location. Currently the only time files here will be deleted by the platform is when running on `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR1:kotlin.Int` or later and isExternalStorageEmulated returns true.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
-If a shared storage device is emulated (as determined by `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directory returned by `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()`.
+If a shared storage device is emulated (as determined by isExternalStorageEmulated), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directory returned by getCacheDir.
 
 Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, no permissions are required to read or write to the returned path; it's always accessible to the calling app. This only applies to paths generated for package name of the calling application. To access paths belonging to other packages, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` and/or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` are required.
 
@@ -4450,11 +4450,11 @@ The returned path may change over time if different shared storage media is inse
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getExternalCacheDirs()`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getCacheDir
+- getExternalCacheDirs
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getExternalCacheDirs
 
@@ -4466,13 +4466,13 @@ abstract fun getExternalCacheDirs(): Array<File!>!
 
 Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place cache files it owns. These files are internal to the application, and not typically visible to the user as media.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getCacheDir in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- The platform does not always monitor the space available in shared storage, and thus may not automatically delete these files. Apps should always manage the maximum space used in this location. Currently the only time files here will be deleted by the platform is when running on `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR1:kotlin.Int` or later and `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)` returns true.
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- The platform does not always monitor the space available in shared storage, and thus may not automatically delete these files. Apps should always manage the maximum space used in this location. Currently the only time files here will be deleted by the platform is when running on `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR1:kotlin.Int` or later and isExternalStorageEmulated returns true.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
-If a shared storage device is emulated (as determined by `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directory returned by `https://developer.android.com/reference/kotlin/android/content/Context#getCacheDir()`.
+If a shared storage device is emulated (as determined by isExternalStorageEmulated), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directory returned by getCacheDir.
 
 Shared storage devices returned here are considered a stable part of the device, including physical media slots under a protective cover. The returned paths do not include transient devices, such as USB flash drives connected to handheld devices.
 
@@ -4484,14 +4484,14 @@ The returned paths may change over time if different shared storage media is ins
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/io/File.html#!>!` | the absolute paths to application-specific directories. Some individual paths may be `null` if that shared storage is not currently available. The first path returned is the same as `https://developer.android.com/reference/kotlin/android/content/Context#getExternalCacheDir()`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/io/File.html#!>!` | the absolute paths to application-specific directories. Some individual paths may be `null` if that shared storage is not currently available. The first path returned is the same as getExternalCacheDir. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getExternalCacheDir()`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getExternalCacheDir
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getExternalFilesDir
 
@@ -4503,12 +4503,12 @@ abstract fun getExternalFilesDir(type: String?): File?
 
 Returns the absolute path to the directory on the primary shared/external storage device where the application can place persistent files it owns. These files are internal to the applications, and not typically visible to the user as media.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getFilesDir in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
-If a shared storage device is emulated (as determined by `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directories returned by `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`, etc.
+If a shared storage device is emulated (as determined by isExternalStorageEmulated), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directories returned by getFilesDir, etc.
 
 Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, no permissions are required to read or write to the returned path; it's always accessible to the calling app. This only applies to paths generated for package name of the calling application. To access paths belonging to other packages, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` and/or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` are required.
 
@@ -4518,7 +4518,7 @@ The returned path may change over time if different shared storage media is inse
 
 Here is an example of typical code to manipulate a file in an application's shared storage:
 
-If you supply a non-null type to this function, the returned file will be a path to a sub-directory of the given type. Though these files are not automatically scanned by the media scanner, you can explicitly add them to the media database with `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.html#scanFile(android.content.Context,%20kotlin.Array,%20kotlin.Array,%20android.media.MediaScannerConnection.OnScanCompletedListener)`. Note that this is not the same as `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStoragePublicDirectory(kotlin.String)`, which provides directories of media shared by all applications. The directories returned here are owned by the application, and their contents will be removed when the application is uninstalled. Unlike `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStoragePublicDirectory(kotlin.String)`, the directory returned here will be automatically created for you.
+If you supply a non-null type to this function, the returned file will be a path to a sub-directory of the given type. Though these files are not automatically scanned by the media scanner, you can explicitly add them to the media database with scanFile. Note that this is not the same as getExternalStoragePublicDirectory, which provides directories of media shared by all applications. The directories returned here are owned by the application, and their contents will be removed when the application is uninstalled. Unlike getExternalStoragePublicDirectory, the directory returned here will be automatically created for you.
 
 Here is an example of typical code to manipulate a picture in an application's shared storage and add it to the media database:
 
@@ -4532,11 +4532,11 @@ Here is an example of typical code to manipulate a picture in an application's s
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getExternalFilesDirs(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getFilesDir
+- getExternalFilesDirs
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getExternalFilesDirs
 
@@ -4548,12 +4548,12 @@ abstract fun getExternalFilesDirs(type: String!): Array<File!>!
 
 Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place persistent files it owns. These files are internal to the application, and not typically visible to the user as media.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getFilesDir in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
-If a shared storage device is emulated (as determined by `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directories returned by `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`, etc.
+If a shared storage device is emulated (as determined by isExternalStorageEmulated), its contents are backed by a private user data partition, which means there is little benefit to storing data here instead of the private directories returned by getFilesDir, etc.
 
 Shared storage devices returned here are considered a stable part of the device, including physical media slots under a protective cover. The returned paths do not include transient devices, such as USB flash drives connected to handheld devices.
 
@@ -4569,14 +4569,14 @@ The returned path may change over time if different shared storage media is inse
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/io/File.html#!>!` | the absolute paths to application-specific directories. Some individual paths may be `null` if that shared storage is not currently available. The first path returned is the same as `https://developer.android.com/reference/kotlin/android/content/Context#getExternalFilesDir(kotlin.String)`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/io/File.html#!>!` | the absolute paths to application-specific directories. Some individual paths may be `null` if that shared storage is not currently available. The first path returned is the same as getExternalFilesDir. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getExternalFilesDir(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getExternalFilesDir
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getExternalMediaDirs
 
@@ -4591,9 +4591,9 @@ abstract fun getExternalMediaDirs(): Array<File!>!
 
 Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place media files. These files are scanned and made available to other apps through `https://developer.android.com/reference/kotlin/android/provider/MediaStore.html#`.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getExternalFilesDirs(kotlin.String)` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getExternalFilesDirs in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
 Shared storage devices returned here are considered a stable part of the device, including physical media slots under a protective cover. The returned paths do not include transient devices, such as USB flash drives connected to handheld devices.
@@ -4610,9 +4610,9 @@ The returned paths may change over time if different shared storage media is ins
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getFileStreamPath
 
@@ -4622,7 +4622,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getFileStreamPath(name: String!): File!
 ```
 
-Returns the absolute path on the filesystem where a file created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` is stored.
+Returns the absolute path on the filesystem where a file created with openFileOutput is stored.
 
 The returned path may change over time if the calling app is moved to an adopted storage device, so only relative paths should be persisted.
 
@@ -4636,9 +4636,9 @@ The returned path may change over time if the calling app is moved to an adopted
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDir(kotlin.String,%20kotlin.Int)`
+- openFileOutput
+- getFilesDir
+- getDir
 
 ### getFilesDir
 
@@ -4648,7 +4648,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getFilesDir(): File!
 ```
 
-Returns the absolute path to the directory on the filesystem where files created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` are stored.
+Returns the absolute path to the directory on the filesystem where files created with openFileOutput are stored.
 
 The returned path may change over time if the calling app is moved to an adopted storage device, so only relative paths should be persisted.
 
@@ -4660,9 +4660,9 @@ No additional permissions are required for the calling app to read or write file
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getFileStreamPath(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDir(kotlin.String,%20kotlin.Int)`
+- openFileOutput
+- getFileStreamPath
+- getDir
 
 ### getMainExecutor
 
@@ -4684,7 +4684,7 @@ abstract fun getMainLooper(): Looper!
 
 Return the Looper for the main thread of the current process. This is the thread used to dispatch calls to application components (activities, services, etc).
 
-By definition, this method returns the same result as would be obtained by calling `https://developer.android.com/reference/kotlin/android/os/Looper.html#getMainLooper()`.
+By definition, this method returns the same result as would be obtained by calling getMainLooper.
 
 | Return ||
 |---|---|
@@ -4698,7 +4698,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getNoBackupFilesDir(): File!
 ```
 
-Returns the absolute path to the directory on the filesystem similar to `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`. The difference is that files placed under this directory will be excluded from automatic backup to remote storage. See `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent.html#` for a full discussion of the automatic backup mechanism in Android.
+Returns the absolute path to the directory on the filesystem similar to getFilesDir. The difference is that files placed under this directory will be excluded from automatic backup to remote storage. See `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent.html#` for a full discussion of the automatic backup mechanism in Android.
 
 The returned path may change over time if the calling app is moved to an adopted storage device, so only relative paths should be persisted.
 
@@ -4710,9 +4710,9 @@ No additional permissions are required for the calling app to read or write file
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getFileStreamPath(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDir(kotlin.String,%20kotlin.Int)`
+- openFileOutput
+- getFileStreamPath
+- getDir
 - `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent.html#`
 
 ### getObbDir
@@ -4725,9 +4725,9 @@ abstract fun getObbDir(): File!
 
 Return the primary shared/external storage directory where this application's OBB files (if there are any) can be found. Note if the application does not have any OBB files, this directory may not exist.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getFilesDir in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
 Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int`, no permissions are required to read or write to the path that this method returns. However, starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, to read the OBB expansion files, you must declare the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_EXTERNAL_STORAGE:kotlin.String` permission in the app manifest and ask for permission at runtime as follows:
@@ -4764,10 +4764,10 @@ On devices with multiple users (as described by `https://developer.android.com/r
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getObbDirs()`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getObbDirs
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getObbDirs
 
@@ -4779,9 +4779,9 @@ abstract fun getObbDirs(): Array<File!>!
 
 Returns absolute paths to application-specific directories on all shared/external storage devices where the application's OBB files (if there are any) can be found. Note if the application does not have any OBB files, these directories may not exist.
 
-This is like `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()` in that these files will be deleted when the application is uninstalled, however there are some important differences:
+This is like getFilesDir in that these files will be deleted when the application is uninstalled, however there are some important differences:
 
-- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`.
+- Shared storage may not always be available, since removable media can be ejected by the user. Media state can be checked using getExternalStorageState.
 - There is no security enforced with these files. For example, any application holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE:kotlin.String` can write to these files.
 
 Shared storage devices returned here are considered a stable part of the device, including physical media slots under a protective cover. The returned paths do not include transient devices, such as USB flash drives connected to handheld devices.
@@ -4792,14 +4792,14 @@ No additional permissions are required for the calling app to read or write file
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/io/File.html#!>!` | the absolute paths to application-specific directories. Some individual paths may be `null` if that shared storage is not currently available. The first path returned is the same as `https://developer.android.com/reference/kotlin/android/content/Context#getObbDir()` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/io/File.html#!>!` | the absolute paths to application-specific directories. Some individual paths may be `null` if that shared storage is not currently available. The first path returned is the same as getObbDir |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getObbDir()`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#getExternalStorageState(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageEmulated(java.io.File)`
-- `https://developer.android.com/reference/kotlin/android/os/Environment.html#isExternalStorageRemovable(java.io.File)`
+- getObbDir
+- getExternalStorageState
+- isExternalStorageEmulated
+- isExternalStorageRemovable
 
 ### getOpPackageName
 
@@ -4877,11 +4877,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getParams(): ContextParams?
 ```
 
-Return the set of parameters which this Context was created with, if it was created via `https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams)`.
+Return the set of parameters which this Context was created with, if it was created via createContext.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/ContextParams?` | This value may be `null`. |
+| ContextParams | This value may be `null`. |
 
 ### getResources
 
@@ -4893,7 +4893,7 @@ abstract fun getResources(): Resources!
 
 Returns a Resources instance for the application's package.
 
-**Note:** Implementations of this method should return a Resources instance that is consistent with the AssetManager instance returned by `https://developer.android.com/reference/kotlin/android/content/Context#getAssets()`. For example, they should share the same `https://developer.android.com/reference/kotlin/android/content/res/Configuration` object.
+**Note:** Implementations of this method should return a Resources instance that is consistent with the AssetManager instance returned by getAssets. For example, they should share the same Configuration object.
 
 | Return ||
 |---|---|
@@ -4901,7 +4901,7 @@ Returns a Resources instance for the application's package.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getAssets()`
+- getAssets
 
 ### getSharedPreferences
 
@@ -4920,7 +4920,7 @@ This method is thread-safe.
 
 If the preferences directory does not already exist, it will be created when this method is called.
 
-If a preferences file by this name does not exist, it will be created when you retrieve an editor (`https://developer.android.com/reference/kotlin/android/content/SharedPreferences#edit()`) and then commit changes (`https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor#commit()` or `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor#apply()`).
+If a preferences file by this name does not exist, it will be created when you retrieve an editor (edit) and then commit changes (commit or apply).
 
 | Parameters ||
 |---|---|
@@ -4929,7 +4929,7 @@ If a preferences file by this name does not exist, it will be created when you r
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/SharedPreferences!` | The single `https://developer.android.com/reference/kotlin/android/content/SharedPreferences` instance that can be used to retrieve and modify the preference values. |
+| `https://developer.android.com/reference/kotlin/android/content/SharedPreferences!` | The single SharedPreferences instance that can be used to retrieve and modify the preference values. |
 
 **See Also**
 
@@ -4985,11 +4985,11 @@ fun <T : Any!> getSystemService(serviceClass: Class<T>): T
 
 Return the handle to a system-level service by class.
 
-Currently available classes are: `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`, `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`, `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#`, `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#`, `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#`, `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#`, `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#`, `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#`, `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#`, `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#`, `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#`, `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#`, `https://developer.android.com/reference/kotlin/android/media/MediaRouter.html#`, `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#`, `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager.html#`, `https://developer.android.com/reference/kotlin/android/app/UiModeManager.html#`, `https://developer.android.com/reference/kotlin/android/app/DownloadManager.html#`, `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#`, `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`, `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#`, `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager`, `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager.html#`.
+Currently available classes are: `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`, `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`, `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#`, `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#`, `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#`, `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#`, `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.html#`, `https://developer.android.com/reference/kotlin/android/location/LocationManager.html#`, `https://developer.android.com/reference/kotlin/android/app/SearchManager.html#`, `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#`, `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#`, `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#`, `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#`, `https://developer.android.com/reference/kotlin/android/media/MediaRouter.html#`, `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#`, `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager.html#`, `https://developer.android.com/reference/kotlin/android/app/UiModeManager.html#`, `https://developer.android.com/reference/kotlin/android/app/DownloadManager.html#`, `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#`, `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`, `https://developer.android.com/reference/kotlin/android/app/usage/NetworkStatsManager.html#`, DomainVerificationManager, `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager.html#`.
 
 Note: System services obtained via this API may be closely associated with the Context in which they are obtained from. In general, do not share the service objects between various different contexts (Activities, Applications, Services, Providers, etc.)
 
-Note: Instant apps, for which `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#isInstantApp()` returns true, don't have access to the following system services: `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_POLICY_SERVICE:kotlin.String`, #FINGERPRINT_SERVICE, `https://developer.android.com/reference/kotlin/android/content/Context#KEYGUARD_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#SHORTCUT_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#USB_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_P2P_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_AWARE_SERVICE:kotlin.String`. For these services this method will return `null`. Generally, if you are running as an instant app you should always check whether the result of this method is `null`.
+Note: Instant apps, for which isInstantApp returns true, don't have access to the following system services: `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_POLICY_SERVICE:kotlin.String`, #FINGERPRINT_SERVICE, `https://developer.android.com/reference/kotlin/android/content/Context#KEYGUARD_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#SHORTCUT_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#USB_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_P2P_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_AWARE_SERVICE:kotlin.String`. For these services this method will return `null`. Generally, if you are running as an instant app you should always check whether the result of this method is `null`.
 
 | Parameters ||
 |---|---|
@@ -5010,16 +5010,16 @@ abstract fun getSystemService(name: String): Any!
 Return the handle to a system-level service by name. The class of the returned object varies by the requested name. Currently available names are:
 
 `https://developer.android.com/reference/kotlin/android/content/Context#WINDOW_SERVICE:kotlin.String` ("window")
-: The top-level window manager in which you can place custom windows. The returned object is a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`. Must only be obtained from a visual context such as Activity or a Context created with `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)`, which are adjusted to the configuration and visual bounds of an area on screen.
+: The top-level window manager in which you can place custom windows. The returned object is a `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`. Must only be obtained from a visual context such as Activity or a Context created with createWindowContext, which are adjusted to the configuration and visual bounds of an area on screen.
 
 `https://developer.android.com/reference/kotlin/android/content/Context#LAYOUT_INFLATER_SERVICE:kotlin.String` ("layout_inflater")
-: A `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` for inflating layout resources in this context. Must only be obtained from a visual context such as Activity or a Context created with `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)`, which are adjusted to the configuration and visual bounds of an area on screen.
+: A `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` for inflating layout resources in this context. Must only be obtained from a visual context such as Activity or a Context created with createWindowContext, which are adjusted to the configuration and visual bounds of an area on screen.
 
 `https://developer.android.com/reference/kotlin/android/content/Context#ACTIVITY_SERVICE:kotlin.String` ("activity")
 : A `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#` for interacting with the global activity state of the system.
 
 `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String` ("wallpaper")
-: A `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.html#` for accessing wallpapers in this context. Must only be obtained from a visual context such as Activity or a Context created with `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)`, which are adjusted to the configuration and visual bounds of an area on screen.
+: A `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.html#` for accessing wallpapers in this context. Must only be obtained from a visual context such as Activity or a Context created with createWindowContext, which are adjusted to the configuration and visual bounds of an area on screen.
 
 `https://developer.android.com/reference/kotlin/android/content/Context#POWER_SERVICE:kotlin.String` ("power")
 : A `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#` for controlling power management.
@@ -5085,7 +5085,7 @@ Return the handle to a system-level service by name. The class of the returned o
 : A `https://developer.android.com/reference/kotlin/android/os/HardwarePropertiesManager.html#` for accessing hardware properties.
 
 `https://developer.android.com/reference/kotlin/android/content/Context#DOMAIN_VERIFICATION_SERVICE:kotlin.String` ("domain_verification")
-: A `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager` for accessing web domain approval state.
+: A DomainVerificationManager for accessing web domain approval state.
 
 `https://developer.android.com/reference/kotlin/android/content/Context#DISPLAY_HASH_SERVICE:kotlin.String` ("display_hash")
 : A `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#` for management of display hashes.
@@ -5097,7 +5097,7 @@ Return the handle to a system-level service by name. The class of the returned o
 
 Note: System services obtained via this API may be closely associated with the Context in which they are obtained from. In general, do not share the service objects between various different contexts (Activities, Applications, Services, Providers, etc.)
 
-Note: Instant apps, for which `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#isInstantApp()` returns true, don't have access to the following system services: `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_POLICY_SERVICE:kotlin.String`, #FINGERPRINT_SERVICE, `https://developer.android.com/reference/kotlin/android/content/Context#KEYGUARD_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#SHORTCUT_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#USB_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_P2P_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_AWARE_SERVICE:kotlin.String`. For these services this method will return `null`. Generally, if you are running as an instant app you should always check whether the result of this method is `null`.
+Note: Instant apps, for which isInstantApp returns true, don't have access to the following system services: `https://developer.android.com/reference/kotlin/android/content/Context#DEVICE_POLICY_SERVICE:kotlin.String`, #FINGERPRINT_SERVICE, `https://developer.android.com/reference/kotlin/android/content/Context#KEYGUARD_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#SHORTCUT_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#USB_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WALLPAPER_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_P2P_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_SERVICE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Context#WIFI_AWARE_SERVICE:kotlin.String`. For these services this method will return `null`. Generally, if you are running as an instant app you should always check whether the result of this method is `null`.
 
 Note: When implementing this method, keep in mind that new services can be added on newer Android releases, so if you're looking for just the explicit names mentioned above, make sure to return `null` when you don't recognize the name --- if you throw a `https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#` exception instead, your app might break on new Android releases.
 
@@ -5170,7 +5170,7 @@ Note: When implementing this method, keep in mind that new services can be added
 - `https://developer.android.com/reference/kotlin/android/os/HardwarePropertiesManager.html#`
 - `https://developer.android.com/reference/kotlin/android/content/Context#HARDWARE_PROPERTIES_SERVICE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/content/Context#DOMAIN_VERIFICATION_SERVICE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationManager`
+- DomainVerificationManager
 - `https://developer.android.com/reference/kotlin/android/content/Context#DISPLAY_HASH_SERVICE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager.html#`
 - `https://developer.android.com/reference/kotlin/android/content/Context#AUTHENTICATION_POLICY_SERVICE:kotlin.String`
@@ -5266,7 +5266,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 abstract fun getWallpaperDesiredMinimumHeight(): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#getDesiredMinimumHeight()` instead.*
+**Deprecated:** *Use getDesiredMinimumHeight instead.*
 
 ### getWallpaperDesiredMinimumWidth
 
@@ -5277,7 +5277,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 abstract fun getWallpaperDesiredMinimumWidth(): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#getDesiredMinimumWidth()` instead.*
+**Deprecated:** *Use getDesiredMinimumWidth instead.*
 
 ### grantUriPermission
 
@@ -5317,7 +5317,7 @@ abstract fun isDeviceProtectedStorage(): Boolean
 Indicates if the storage APIs of this Context are backed by device-protected storage.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceProtectedStorageContext()`
+- createDeviceProtectedStorageContext
 
 ### isRestricted
 
@@ -5345,16 +5345,16 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun isUiContext(): Boolean
 ```
 
-Returns `true` if the context is a UI context which can access UI components such as `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`, `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` or `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#`. Accessing UI components from non-UI contexts throws `https://developer.android.com/reference/kotlin/android/os/strictmode/Violation.html#` if `https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy.Builder.html#detectIncorrectContextUse()` is enabled.
+Returns `true` if the context is a UI context which can access UI components such as `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#`, `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#` or `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#`. Accessing UI components from non-UI contexts throws `https://developer.android.com/reference/kotlin/android/os/strictmode/Violation.html#` if detectIncorrectContextUse is enabled.
 
-Examples of UI contexts are an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, a context created from `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)` or `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#`
+Examples of UI contexts are an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, a context created from createWindowContext or `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#`
 
 Note that even if it is allowed programmatically, it is not suggested to override this method to bypass `https://developer.android.com/reference/kotlin/android/os/strictmode/IncorrectContextUseViolation.html#` verification.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDisplay()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#getSystemService(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy.Builder.html#detectIncorrectContextUse()`
+- getDisplay
+- getSystemService
+- detectIncorrectContextUse
 
 ### moveDatabaseFrom
 
@@ -5382,7 +5382,7 @@ The database must be closed before being moved.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceProtectedStorageContext()`
+- createDeviceProtectedStorageContext
 
 ### moveSharedPreferencesFrom
 
@@ -5408,7 +5408,7 @@ Move an existing shared preferences file from the given source storage context t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceProtectedStorageContext()`
+- createDeviceProtectedStorageContext
 
 ### obtainStyledAttributes
 
@@ -5421,7 +5421,7 @@ fun obtainStyledAttributes(
 ): TypedArray
 ```
 
-Retrieve styled attribute information in this Context's theme. See `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)` for more information.
+Retrieve styled attribute information in this Context's theme. See obtainStyledAttributes for more information.
 
 | Parameters ||
 |---|---|
@@ -5430,11 +5430,11 @@ Retrieve styled attribute information in this Context's theme. See `https://deve
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/res/TypedArray` | This value cannot be `null`. |
+| TypedArray | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)`
+- obtainStyledAttributes
 
 ### obtainStyledAttributes
 
@@ -5449,7 +5449,7 @@ fun obtainStyledAttributes(
 ): TypedArray
 ```
 
-Retrieve styled attribute information in this Context's theme. See `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)` for more information.
+Retrieve styled attribute information in this Context's theme. See obtainStyledAttributes for more information.
 
 | Parameters ||
 |---|---|
@@ -5458,11 +5458,11 @@ Retrieve styled attribute information in this Context's theme. See `https://deve
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/res/TypedArray` | This value cannot be `null`. |
+| TypedArray | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int)`
+- obtainStyledAttributes
 
 ### obtainStyledAttributes
 
@@ -5475,7 +5475,7 @@ fun obtainStyledAttributes(
 ): TypedArray
 ```
 
-Retrieve styled attribute information in this Context's theme. See `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(kotlin.Int,%20kotlin.IntArray)` for more information.
+Retrieve styled attribute information in this Context's theme. See obtainStyledAttributes for more information.
 
 | Parameters ||
 |---|---|
@@ -5483,11 +5483,11 @@ Retrieve styled attribute information in this Context's theme. See `https://deve
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/res/TypedArray` | This value cannot be `null`. |
+| TypedArray | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(kotlin.Int,%20kotlin.IntArray)`
+- obtainStyledAttributes
 
 ### obtainStyledAttributes
 
@@ -5497,7 +5497,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun obtainStyledAttributes(attrs: IntArray): TypedArray
 ```
 
-Retrieve styled attribute information in this Context's theme. See `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(kotlin.IntArray)` for more information.
+Retrieve styled attribute information in this Context's theme. See obtainStyledAttributes for more information.
 
 | Parameters ||
 |---|---|
@@ -5505,11 +5505,11 @@ Retrieve styled attribute information in this Context's theme. See `https://deve
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/res/TypedArray` | This value cannot be `null`. |
+| TypedArray | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(kotlin.IntArray)`
+- obtainStyledAttributes
 
 ### openFileInput
 
@@ -5531,10 +5531,10 @@ Open a private file associated with this Context's application package for readi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#fileList()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#deleteFile(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/io/FileInputStream.html#FileInputStream(kotlin.String)`
+- openFileOutput
+- fileList
+- deleteFile
+- FileInputStream
 
 ### openFileOutput
 
@@ -5564,10 +5564,10 @@ No additional permissions are required for the calling app to read or write the 
 
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_APPEND:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_PRIVATE:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/content/Context#openFileInput(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#fileList()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#deleteFile(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#FileOutputStream(kotlin.String)`
+- openFileInput
+- fileList
+- deleteFile
+- FileOutputStream
 
 ### openOrCreateDatabase
 
@@ -5603,7 +5603,7 @@ Open a new private SQLiteDatabase associated with this Context's application pac
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_PRIVATE:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_NO_LOCALIZED_COLLATORS:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/content/Context#deleteDatabase(kotlin.String)`
+- deleteDatabase
 
 ### openOrCreateDatabase
 
@@ -5643,7 +5643,7 @@ Accepts input param: a concrete instance of `https://developer.android.com/refer
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_PRIVATE:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_NO_LOCALIZED_COLLATORS:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/content/Context#deleteDatabase(kotlin.String)`
+- deleteDatabase
 
 ### peekWallpaper
 
@@ -5672,11 +5672,11 @@ Rebind an application service with updated bind service flags
 | Parameters ||
 |---|---|
 | `conn` | [ServiceConnection](ServiceConnection.md): The connection interface previously supplied to bindService(). This parameter must not be null. |
-| `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): Updated flags for the binding as per #bindService. Only flags returned from `https://developer.android.com/reference/kotlin/android/content/Context#getUpdateableFlags()` may be added or removed. This value cannot be `null`. |
+| `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): Updated flags for the binding as per #bindService. Only flags returned from getUpdateableFlags may be added or removed. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#updateServiceBindings(kotlin.collections.MutableCollection)`
+- updateServiceBindings
 
 ### registerComponentCallbacks
 
@@ -5686,21 +5686,21 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun registerComponentCallbacks(callback: ComponentCallbacks!): Unit
 ```
 
-Add a new `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` to the base application of the Context, which will be called at the same times as the ComponentCallbacks methods of activities and other components are called. Note that you *must* be sure to use `https://developer.android.com/reference/kotlin/android/content/Context#unregisterComponentCallbacks(android.content.ComponentCallbacks)` when appropriate in the future; this will not be removed for you.
+Add a new ComponentCallbacks to the base application of the Context, which will be called at the same times as the ComponentCallbacks methods of activities and other components are called. Note that you *must* be sure to use unregisterComponentCallbacks when appropriate in the future; this will not be removed for you.
 
-After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, registering the ComponentCallbacks to Context created via `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)` or `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)` will receive `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onConfigurationChanged(android.content.res.Configuration)` from Window Context rather than its base application. It is helpful if you want to handle UI components that associated with the Window Context when the Window Context has configuration changes.
+After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, registering the ComponentCallbacks to Context created via createWindowContext or createWindowContext will receive onConfigurationChanged from Window Context rather than its base application. It is helpful if you want to handle UI components that associated with the Window Context when the Window Context has configuration changes.
 
-After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`, registering the ComponentCallbacks to `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context will receive `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onConfigurationChanged(android.content.res.Configuration)` from `https://developer.android.com/reference/kotlin/android/app/Activity.html#onConfigurationChanged(android.content.res.Configuration)` rather than its base application.
+After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`, registering the ComponentCallbacks to `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context will receive onConfigurationChanged from onConfigurationChanged rather than its base application.
 
-After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, registering the ComponentCallbacks to `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#` will receive `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onConfigurationChanged(android.content.res.Configuration)` from InputmethodService rather than its base application. It is helpful if you want to handle UI components when the IME has configuration changes.
+After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, registering the ComponentCallbacks to `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#` will receive onConfigurationChanged from InputmethodService rather than its base application. It is helpful if you want to handle UI components when the IME has configuration changes.
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` interface. |
+| `callback` | [ComponentCallbacks](ComponentCallbacks.md)!: The interface to call. This can be either a ComponentCallbacks or ComponentCallbacks2 interface. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#createWindowContext(kotlin.Int,%20android.os.Bundle)`
+- createWindowContext
 
 ### registerDeviceIdChangeListener
 
@@ -5717,19 +5717,19 @@ Adds a new device ID changed listener to the `Context`, which will be called whe
 
 The callback can be called when an app is moved to a different device and the `Context` is not explicitly associated with a specific device.
 
-When an application receives a device id update callback, this Context is guaranteed to also have an updated display ID(if any) and `https://developer.android.com/reference/kotlin/android/content/res/Configuration`.
+When an application receives a device id update callback, this Context is guaranteed to also have an updated display ID(if any) and Configuration.
 
 <br />
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor on whose thread to execute the callbacks of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor on whose thread to execute the callbacks of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [IntConsumer](../java.util.function/IntConsumer.md): The listener `IntConsumer` to call which will receive the updated device ID. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDeviceId()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#createDeviceContext(kotlin.Int)`
+- getDeviceId
+- createDeviceContext
 
 ### registerReceiver
 
@@ -5750,15 +5750,15 @@ There may be multiple sticky Intents that match filter, in which case each of th
 
 If you know the Intent you are registering for is sticky, you can supply null for your receiver. In this case, no receiver is registered -- the function simply returns the sticky Intent that matches filter. In the case of multiple matches, the same rules as described above apply.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, the system can [place context-registered broadcasts in a queue while the app is in the](https://developer.android.com/develop/background-work/background-tasks/broadcasts#android-14) [cached state](https://developer.android.com/guide/components/activities/process-lifecycle). When the app leaves the cached state, such as returning to the foreground, the system delivers any queued broadcasts. Multiple instances of certain broadcasts might be merged into one broadcast.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the `https://developer.android.com/reference/kotlin/android/content/Intent#setPackage(kotlin.String)` specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the setPackage specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, either `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` must be specified if the receiver is not being registered for [system broadcasts](https://developer.android.com/guide/components/broadcasts#system-broadcasts) or a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. See `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.Int)` to register a receiver with flags.
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, either `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` must be specified if the receiver is not being registered for [system broadcasts](https://developer.android.com/guide/components/broadcasts#system-broadcasts) or a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. See registerReceiver to register a receiver with flags.
 
-Note: this method *cannot be called from a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` component;* that is, from a BroadcastReceiver that is declared in an application's manifest. It is okay, however, to call this method from another BroadcastReceiver that has itself been registered at run time with #registerReceiver, since the lifetime of such a registered BroadcastReceiver is tied to the object that registered it.
+Note: this method *cannot be called from a BroadcastReceiver component;* that is, from a BroadcastReceiver that is declared in an application's manifest. It is okay, however, to call this method from another BroadcastReceiver that has itself been registered at run time with #registerReceiver, since the lifetime of such a registered BroadcastReceiver is tied to the object that registered it.
 
 | Parameters ||
 |---|---|
@@ -5767,12 +5767,12 @@ Note: this method *cannot be called from a `https://developer.android.com/refere
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Intent?` | The first sticky intent found that matches filter, or null if there are none. |
+| Intent | The first sticky intent found that matches filter, or null if there are none. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#unregisterReceiver(android.content.BroadcastReceiver)`
+- registerReceiver
+- unregisterReceiver
 
 ### registerReceiver
 
@@ -5786,13 +5786,13 @@ abstract fun registerReceiver(
 ): Intent?
 ```
 
-Register to receive intent broadcasts, with the receiver optionally being exposed to Instant Apps. See `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)` for more information. By default Instant Apps cannot interact with receivers in other applications, this allows you to expose a receiver that Instant Apps can interact with.
+Register to receive intent broadcasts, with the receiver optionally being exposed to Instant Apps. See registerReceiver for more information. By default Instant Apps cannot interact with receivers in other applications, this allows you to expose a receiver that Instant Apps can interact with.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, the system can [place context-registered broadcasts in a queue while the app is in the](https://developer.android.com/develop/background-work/background-tasks/broadcasts#android-14) [cached state](https://developer.android.com/guide/components/activities/process-lifecycle). When the app leaves the cached state, such as returning to the foreground, the system delivers any queued broadcasts. Multiple instances of certain broadcasts might be merged into one broadcast.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the `https://developer.android.com/reference/kotlin/android/content/Intent#setPackage(kotlin.String)` specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the setPackage specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
 
 | Parameters ||
 |---|---|
@@ -5803,12 +5803,12 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Intent?` | The first sticky intent found that matches filter, or null if there are none. |
+| Intent | The first sticky intent found that matches filter, or null if there are none. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#unregisterReceiver(android.content.BroadcastReceiver)`
+- registerReceiver
+- unregisterReceiver
 
 ### registerReceiver
 
@@ -5823,15 +5823,15 @@ abstract fun registerReceiver(
 ): Intent?
 ```
 
-Register to receive intent broadcasts, to run in the context of scheduler. See `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)` for more information. This allows you to enforce permissions on who can broadcast intents to your receiver, or have the receiver run in a different thread than the main application thread.
+Register to receive intent broadcasts, to run in the context of scheduler. See registerReceiver for more information. This allows you to enforce permissions on who can broadcast intents to your receiver, or have the receiver run in a different thread than the main application thread.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, the system can [place context-registered broadcasts in a queue while the app is in the](https://developer.android.com/develop/background-work/background-tasks/broadcasts#android-14) [cached state](https://developer.android.com/guide/components/activities/process-lifecycle). When the app leaves the cached state, such as returning to the foreground, the system delivers any queued broadcasts. Multiple instances of certain broadcasts might be merged into one broadcast.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the `https://developer.android.com/reference/kotlin/android/content/Intent#setPackage(kotlin.String)` specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the setPackage specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, either `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` must be specified if the receiver is not being registered for [system broadcasts](https://developer.android.com/guide/components/broadcasts#system-broadcasts) or a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. See `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler,%20kotlin.Int)` to register a receiver with flags.
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, either `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` must be specified if the receiver is not being registered for [system broadcasts](https://developer.android.com/guide/components/broadcasts#system-broadcasts) or a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. See registerReceiver to register a receiver with flags.
 
 | Parameters ||
 |---|---|
@@ -5843,12 +5843,12 @@ For apps targeting `https://developer.android.com/reference/kotlin/android/os/Bu
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Intent?` | The first sticky intent found that matches filter, or null if there are none. |
+| Intent | The first sticky intent found that matches filter, or null if there are none. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#unregisterReceiver(android.content.BroadcastReceiver)`
+- registerReceiver
+- unregisterReceiver
 
 ### registerReceiver
 
@@ -5864,13 +5864,13 @@ abstract fun registerReceiver(
 ): Intent?
 ```
 
-Register to receive intent broadcasts, to run in the context of scheduler. See `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler)` for more information.
+Register to receive intent broadcasts, to run in the context of scheduler. See registerReceiver and registerReceiver for more information.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, the system can [place context-registered broadcasts in a queue while the app is in the](https://developer.android.com/develop/background-work/background-tasks/broadcasts#android-14) [cached state](https://developer.android.com/guide/components/activities/process-lifecycle). When the app leaves the cached state, such as returning to the foreground, the system delivers any queued broadcasts. Multiple instances of certain broadcasts might be merged into one broadcast.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the `https://developer.android.com/reference/kotlin/android/content/Intent#setPackage(kotlin.String)` specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int`, receivers registered with this method will correctly respect the setPackage specified for an Intent being broadcast. Prior to that, it would be ignored and delivered to all matching registered receivers. Be careful if using this for security.
 
 | Parameters ||
 |---|---|
@@ -5883,13 +5883,13 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/Intent?` | The first sticky intent found that matches filter, or null if there are none. |
+| Intent | The first sticky intent found that matches filter, or null if there are none. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#unregisterReceiver(android.content.BroadcastReceiver)`
+- registerReceiver
+- registerReceiver
+- unregisterReceiver
 
 ### removeStickyBroadcast
 
@@ -5925,7 +5925,7 @@ abstract fun removeStickyBroadcastAsUser(
 
 **Deprecated:** *Sticky broadcasts should not be used. They provide no security (anyone can access them), no protection (anyone can modify them), and many other problems. The recommended pattern is to use a non-sticky broadcast to report that *something* has changed, with another mechanism for apps to retrieve the current value whenever desired.*
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#removeStickyBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image.
+Version of removeStickyBroadcast that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image.
 
 You must hold the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String` permission in order to use this API. If you do not hold that permission, `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. 
 Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String`
@@ -5937,7 +5937,7 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://develope
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcastAsUser(android.content.Intent,%20android.os.UserHandle)`
+- sendStickyBroadcastAsUser
 
 ### revokeSelfPermissionOnKill
 
@@ -5959,7 +5959,7 @@ Triggers the asynchronous revocation of a runtime permission. If the permission 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#revokeSelfPermissionsOnKill(kotlin.collections.MutableCollection)`
+- revokeSelfPermissionsOnKill
 
 ### revokeSelfPermissionsOnKill
 
@@ -5977,7 +5977,7 @@ The revocation happens asynchronously and kills all processes running in the cal
 
 If you want to revoke the permissions right away, you could call `System.exit()` in `Handler.postDelayed` with a delay to allow completion of async IPC, But `System.exit()` could affect other apps that are accessing your app at the moment. For example, apps accessing a content provider in your app will all crash.
 
-Note that the settings UI shows a permission group as granted as long as at least one permission in the group is granted. If you want the user to observe the revocation in the settings, you should revoke every permission in the target group. To learn the current list of permissions in a group, you may use `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getGroupOfPlatformPermission(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` and `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPlatformPermissionsForGroup(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`. This list of permissions may evolve over time, so it is recommended to check whether it contains any permission you wish to retain before trying to revoke an entire group.
+Note that the settings UI shows a permission group as granted as long as at least one permission in the group is granted. If you want the user to observe the revocation in the settings, you should revoke every permission in the target group. To learn the current list of permissions in a group, you may use getGroupOfPlatformPermission and getPlatformPermissionsForGroup. This list of permissions may evolve over time, so it is recommended to check whether it contains any permission you wish to retain before trying to revoke an entire group.
 
 | Parameters ||
 |---|---|
@@ -5989,8 +5989,8 @@ Note that the settings UI shows a permission group as granted as long as at leas
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getGroupOfPlatformPermission(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getPlatformPermissionsForGroup(kotlin.String,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
+- getGroupOfPlatformPermission
+- getPlatformPermissionsForGroup
 
 ### revokeUriPermission
 
@@ -6003,11 +6003,11 @@ abstract fun revokeUriPermission(
 ): Unit
 ```
 
-Remove all permissions to access a particular content provider Uri that were previously added with `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)` or *any other* mechanism. The given Uri will match all previously granted Uris that are the same or a sub-path of the given Uri. That is, revoking "content://foo/target" will revoke both "content://foo/target" and "content://foo/target/sub", but not "content://foo". It will not remove any prefix grants that exist at a higher level.
+Remove all permissions to access a particular content provider Uri that were previously added with grantUriPermission or *any other* mechanism. The given Uri will match all previously granted Uris that are the same or a sub-path of the given Uri. That is, revoking "content://foo/target" will revoke both "content://foo/target" and "content://foo/target/sub", but not "content://foo". It will not remove any prefix grants that exist at a higher level.
 
 Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, if you did not have regular permission access to a Uri, but had received access to it through a specific Uri permission grant, you could not revoke that grant with this function and a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` would be thrown. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, this function will not throw a security exception, but will remove whatever permission grants to the Uri had been given to the app (or none).
 
-Unlike `https://developer.android.com/reference/kotlin/android/content/Context#revokeUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)`, this method impacts all permission grants matching the given Uri, for any package they had been granted to, through any mechanism this had happened (such as indirectly through the clipboard, activity launch, service start, etc). That means this can be potentially dangerous to use, as it can revoke grants that another app could be strongly expecting to stick around.
+Unlike revokeUriPermission, this method impacts all permission grants matching the given Uri, for any package they had been granted to, through any mechanism this had happened (such as indirectly through the clipboard, activity launch, service start, etc). That means this can be potentially dangerous to use, as it can revoke grants that another app could be strongly expecting to stick around.
 
 | Parameters ||
 |---|---|
@@ -6016,7 +6016,7 @@ Unlike `https://developer.android.com/reference/kotlin/android/content/Context#r
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)`
+- grantUriPermission
 
 ### revokeUriPermission
 
@@ -6030,9 +6030,9 @@ abstract fun revokeUriPermission(
 ): Unit
 ```
 
-Remove permissions to access a particular content provider Uri that were previously added with `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)` for a specific target package. The given Uri will match all previously granted Uris that are the same or a sub-path of the given Uri. That is, revoking "content://foo/target" will revoke both "content://foo/target" and "content://foo/target/sub", but not "content://foo". It will not remove any prefix grants that exist at a higher level.
+Remove permissions to access a particular content provider Uri that were previously added with grantUriPermission for a specific target package. The given Uri will match all previously granted Uris that are the same or a sub-path of the given Uri. That is, revoking "content://foo/target" will revoke both "content://foo/target" and "content://foo/target/sub", but not "content://foo". It will not remove any prefix grants that exist at a higher level.
 
-Unlike `https://developer.android.com/reference/kotlin/android/content/Context#revokeUriPermission(android.net.Uri,%20kotlin.Int)`, this method will *only* revoke permissions that had been explicitly granted through `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)` and only for the package specified. Any matching grants that have happened through other mechanisms (clipboard, activity launching, service starting, etc) will not be removed.
+Unlike revokeUriPermission, this method will *only* revoke permissions that had been explicitly granted through grantUriPermission and only for the package specified. Any matching grants that have happened through other mechanisms (clipboard, activity launching, service starting, etc) will not be removed.
 
 | Parameters ||
 |---|---|
@@ -6043,7 +6043,7 @@ Unlike `https://developer.android.com/reference/kotlin/android/content/Context#r
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#grantUriPermission(kotlin.String,%20android.net.Uri,%20kotlin.Int)`
+- grantUriPermission
 
 ### sendBroadcast
 
@@ -6053,9 +6053,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun sendBroadcast(intent: Intent!): Unit
 ```
 
-Broadcast the given intent to all interested BroadcastReceivers. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Broadcast the given intent to all interested BroadcastReceivers. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using sendOrderedBroadcast.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6063,10 +6063,10 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- BroadcastReceiver
+- sendBroadcast
+- sendOrderedBroadcast
+- sendOrderedBroadcast
 
 ### sendBroadcast
 
@@ -6079,9 +6079,9 @@ abstract fun sendBroadcast(
 ): Unit
 ```
 
-Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using sendOrderedBroadcast.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6090,10 +6090,10 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- BroadcastReceiver
+- sendBroadcast
+- sendOrderedBroadcast
+- sendOrderedBroadcast
 
 ### sendBroadcast
 
@@ -6107,9 +6107,9 @@ open fun sendBroadcast(
 ): Unit
 ```
 
-Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Broadcast the given intent to all interested BroadcastReceivers, allowing an optional required permission to be enforced. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using sendOrderedBroadcast.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6120,10 +6120,10 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- BroadcastReceiver
+- sendBroadcast
+- sendOrderedBroadcast
+- sendOrderedBroadcast
 
 ### sendBroadcastAsUser
 
@@ -6136,7 +6136,7 @@ abstract fun sendBroadcastAsUser(
 ): Unit
 ```
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image. 
+Version of sendBroadcast that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image. 
 Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 | Parameters ||
@@ -6146,7 +6146,7 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
+- sendBroadcast
 
 ### sendBroadcastAsUser
 
@@ -6160,7 +6160,7 @@ abstract fun sendBroadcastAsUser(
 ): Unit
 ```
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)` that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image. 
+Version of sendBroadcast that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image. 
 Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 | Parameters ||
@@ -6172,7 +6172,7 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)`
+- sendBroadcast
 
 ### sendBroadcastWithMultiplePermissions
 
@@ -6185,9 +6185,9 @@ open fun sendBroadcastWithMultiplePermissions(
 ): Unit
 ```
 
-Broadcast the given intent to all interested BroadcastReceivers, allowing an array of required permissions to be enforced. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Broadcast the given intent to all interested BroadcastReceivers, allowing an array of required permissions to be enforced. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run. No results are propagated from receivers and receivers can not abort the broadcast. If you want to allow receivers to propagate results or abort the broadcast, you must send an ordered broadcast using sendOrderedBroadcast.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6196,10 +6196,10 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- BroadcastReceiver
+- sendBroadcast
+- sendOrderedBroadcast
+- sendOrderedBroadcast
 
 ### sendOrderedBroadcast
 
@@ -6214,7 +6214,7 @@ abstract fun sendOrderedBroadcast(
 
 Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6223,9 +6223,9 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- BroadcastReceiver
+- sendBroadcast
+- sendOrderedBroadcast
 
 ### sendOrderedBroadcast
 
@@ -6243,11 +6243,11 @@ abstract fun sendOrderedBroadcast(
 ): Unit
 ```
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that allows you to receive data back from the broadcast. This is accomplished by supplying your own BroadcastReceiver when calling, which will be treated as a final receiver at the end of the broadcast -- its `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver#onReceive(android.content.Context,%20android.content.Intent)` method will be called with the result values collected from the other receivers. The broadcast will be serialized in the same way as calling `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Version of sendBroadcast that allows you to receive data back from the broadcast. This is accomplished by supplying your own BroadcastReceiver when calling, which will be treated as a final receiver at the end of the broadcast -- its onReceive method will be called with the result values collected from the other receivers. The broadcast will be serialized in the same way as calling sendOrderedBroadcast.
 
-Like `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`, this method is asynchronous; it will return before resultReceiver.onReceive() is called.
+Like sendBroadcast, this method is asynchronous; it will return before resultReceiver.onReceive() is called.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6263,10 +6263,10 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
+- sendBroadcast
+- sendBroadcast
+- sendOrderedBroadcast
+- BroadcastReceiver
 - `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`
 
 ### sendOrderedBroadcast
@@ -6283,7 +6283,7 @@ open fun sendOrderedBroadcast(
 
 Broadcast the given intent to all interested BroadcastReceivers, delivering them one at a time to allow more preferred receivers to consume the broadcast before it is delivered to less preferred receivers. This call is asynchronous; it returns immediately, and you will continue executing while the receivers are run.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6294,9 +6294,9 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- BroadcastReceiver
+- sendBroadcast
+- sendOrderedBroadcast
 
 ### sendOrderedBroadcast
 
@@ -6315,11 +6315,11 @@ open fun sendOrderedBroadcast(
 ): Unit
 ```
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that allows you to receive data back from the broadcast. This is accomplished by supplying your own BroadcastReceiver when calling, which will be treated as a final receiver at the end of the broadcast -- its `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver#onReceive(android.content.Context,%20android.content.Intent)` method will be called with the result values collected from the other receivers. The broadcast will be serialized in the same way as calling `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Version of sendBroadcast that allows you to receive data back from the broadcast. This is accomplished by supplying your own BroadcastReceiver when calling, which will be treated as a final receiver at the end of the broadcast -- its onReceive method will be called with the result values collected from the other receivers. The broadcast will be serialized in the same way as calling sendOrderedBroadcast.
 
-Like `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`, this method is asynchronous; it will return before resultReceiver.onReceive() is called.
+Like sendBroadcast, this method is asynchronous; it will return before resultReceiver.onReceive() is called.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6336,10 +6336,10 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
+- sendBroadcast
+- sendBroadcast
+- sendOrderedBroadcast
+- BroadcastReceiver
 - `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`
 
 ### sendOrderedBroadcast
@@ -6359,9 +6359,9 @@ open fun sendOrderedBroadcast(
 ): Unit
 ```
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)` that allows you to specify the App Op to enforce restrictions on which receivers the broadcast will be sent to.
+Version of sendOrderedBroadcast that allows you to specify the App Op to enforce restrictions on which receivers the broadcast will be sent to.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts.
+See BroadcastReceiver for more information on Intent broadcasts.
 
 | Parameters ||
 |---|---|
@@ -6378,7 +6378,7 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- sendOrderedBroadcast
 
 ### sendOrderedBroadcastAsUser
 
@@ -6397,9 +6397,9 @@ abstract fun sendOrderedBroadcastAsUser(
 ): Unit
 ```
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)` that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image.
+Version of sendOrderedBroadcast that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts. 
+See BroadcastReceiver for more information on Intent broadcasts. 
 Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 | Parameters ||
@@ -6417,7 +6417,7 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- sendOrderedBroadcast
 
 ### sendStickyBroadcast
 
@@ -6430,7 +6430,7 @@ abstract fun sendStickyBroadcast(intent: Intent!): Unit
 
 **Deprecated:** *Sticky broadcasts should not be used. They provide no security (anyone can access them), no protection (anyone can modify them), and many other problems. The recommended pattern is to use a non-sticky broadcast to report that *something* has changed, with another mechanism for apps to retrieve the current value whenever desired.*
 
-Perform a `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. In all other ways, this behaves the same as `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`. 
+Perform a sendBroadcast that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver. In all other ways, this behaves the same as sendBroadcast. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String`
 
 | Parameters ||
@@ -6439,8 +6439,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcast(android.content.Intent,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- sendBroadcast
+- sendStickyOrderedBroadcast
 
 ### sendStickyBroadcast
 
@@ -6456,7 +6456,7 @@ open fun sendStickyBroadcast(
 
 **Deprecated:** *Sticky broadcasts should not be used. They provide no security (anyone can access them), no protection (anyone can modify them), and many other problems. The recommended pattern is to use a non-sticky broadcast to report that *something* has changed, with another mechanism for apps to retrieve the current value whenever desired.*
 
-Perform a `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)` that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of `https://developer.android.com/reference/kotlin/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. In all other ways, this behaves the same as `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`. 
+Perform a sendBroadcast that is "sticky," meaning the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver. In all other ways, this behaves the same as sendBroadcast. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String`
 
 | Parameters ||
@@ -6466,8 +6466,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcast(android.content.Intent,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- sendBroadcast
+- sendStickyOrderedBroadcast
 
 ### sendStickyBroadcastAsUser
 
@@ -6483,7 +6483,7 @@ abstract fun sendStickyBroadcastAsUser(
 
 **Deprecated:** *Sticky broadcasts should not be used. They provide no security (anyone can access them), no protection (anyone can modify them), and many other problems. The recommended pattern is to use a non-sticky broadcast to report that *something* has changed, with another mechanism for apps to retrieve the current value whenever desired.*
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image. 
+Version of sendStickyBroadcast that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image. 
 Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String`
 
 | Parameters ||
@@ -6493,7 +6493,7 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://develope
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
+- sendBroadcast
 
 ### sendStickyOrderedBroadcast
 
@@ -6513,11 +6513,11 @@ abstract fun sendStickyOrderedBroadcast(
 
 **Deprecated:** *Sticky broadcasts should not be used. They provide no security (anyone can access them), no protection (anyone can modify them), and many other problems. The recommended pattern is to use a non-sticky broadcast to report that *something* has changed, with another mechanism for apps to retrieve the current value whenever desired.*
 
-Version of #sendStickyBroadcast that allows you to receive data back from the broadcast. This is accomplished by supplying your own BroadcastReceiver when calling, which will be treated as a final receiver at the end of the broadcast -- its `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver#onReceive(android.content.Context,%20android.content.Intent)` method will be called with the result values collected from the other receivers. The broadcast will be serialized in the same way as calling `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`.
+Version of #sendStickyBroadcast that allows you to receive data back from the broadcast. This is accomplished by supplying your own BroadcastReceiver when calling, which will be treated as a final receiver at the end of the broadcast -- its onReceive method will be called with the result values collected from the other receivers. The broadcast will be serialized in the same way as calling sendOrderedBroadcast.
 
-Like `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`, this method is asynchronous; it will return before resultReceiver.onReceive() is called. Note that the sticky data stored is only the data you initially supply to the broadcast, not the result of any changes made by the receivers.
+Like sendBroadcast, this method is asynchronous; it will return before resultReceiver.onReceive() is called. Note that the sticky data stored is only the data you initially supply to the broadcast, not the result of any changes made by the receivers.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts. 
+See BroadcastReceiver for more information on Intent broadcasts. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String`
 
 | Parameters ||
@@ -6533,11 +6533,11 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyBroadcast(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver`
+- sendBroadcast
+- sendBroadcast
+- sendOrderedBroadcast
+- sendStickyBroadcast
+- BroadcastReceiver
 - `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`
 
 ### sendStickyOrderedBroadcastAsUser
@@ -6559,9 +6559,9 @@ abstract fun sendStickyOrderedBroadcastAsUser(
 
 **Deprecated:** *Sticky broadcasts should not be used. They provide no security (anyone can access them), no protection (anyone can modify them), and many other problems. The recommended pattern is to use a non-sticky broadcast to report that *something* has changed, with another mechanism for apps to retrieve the current value whenever desired.*
 
-Version of `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcast(android.content.Intent,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)` that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image.
+Version of sendStickyOrderedBroadcast that allows you to specify the user the broadcast will be sent to. This is not available to applications that are not pre-installed on the system image.
 
-See `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver` for more information on Intent broadcasts. 
+See BroadcastReceiver for more information on Intent broadcasts. 
 Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BROADCAST_STICKY:kotlin.String`
 
 | Parameters ||
@@ -6578,7 +6578,7 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://develope
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#sendStickyOrderedBroadcast(android.content.Intent,%20android.content.BroadcastReceiver,%20android.os.Handler,%20kotlin.Int,%20kotlin.String,%20android.os.Bundle)`
+- sendStickyOrderedBroadcast
 
 ### setTheme
 
@@ -6603,7 +6603,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 abstract fun setWallpaper(bitmap: Bitmap!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#setBitmap(android.graphics.Bitmap)` instead.*
+**Deprecated:** *Use setBitmap instead.*
 
 *This method requires the caller to hold the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_WALLPAPER:kotlin.String`.*
 
@@ -6618,7 +6618,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 abstract fun setWallpaper(data: InputStream!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/WallpaperManager.html#setStream(java.io.InputStream)` instead.*
+**Deprecated:** *Use setStream instead.*
 
 *This method requires the caller to hold the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SET_WALLPAPER:kotlin.String`.*
 
@@ -6644,9 +6644,9 @@ Gets whether you should show UI with rationale before requesting a permission. I
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#checkSelfPermission(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#onRequestPermissionsResult(kotlin.Int,%20kotlin.Array,%20kotlin.IntArray)`
+- checkSelfPermission
+- requestPermissions
+- onRequestPermissionsResult
 
 ### startActivities
 
@@ -6656,7 +6656,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 abstract fun startActivities(intents: Array<Intent!>!): Unit
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/content/Context#startActivities(kotlin.Array,%20android.os.Bundle)` with no options specified.
+Same as startActivities with no options specified.
 
 | Parameters ||
 |---|---|
@@ -6668,7 +6668,7 @@ Same as `https://developer.android.com/reference/kotlin/android/content/Context#
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startActivities(kotlin.Array,%20android.os.Bundle)`
+- startActivities
 
 ### startActivities
 
@@ -6681,14 +6681,14 @@ abstract fun startActivities(
 ): Unit
 ```
 
-Launch multiple new activities. This is generally the same as calling `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)` for the first Intent in the array, that activity during its creation calling `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)` for the second entry, etc. Note that unlike that approach, generally none of the activities except the last in the array will be created at this point, but rather will be created when the user first visits them (due to pressing back from the activity on top).
+Launch multiple new activities. This is generally the same as calling startActivity for the first Intent in the array, that activity during its creation calling startActivity for the second entry, etc. Note that unlike that approach, generally none of the activities except the last in the array will be created at this point, but rather will be created when the user first visits them (due to pressing back from the activity on top).
 
-This method throws `https://developer.android.com/reference/kotlin/android/content/ActivityNotFoundException` if there was no Activity found for *any* given Intent. In this case the state of the activity stack is undefined (some Intents in the list may be on it, some not), so you probably want to avoid such situations.
+This method throws ActivityNotFoundException if there was no Activity found for *any* given Intent. In this case the state of the activity stack is undefined (some Intents in the list may be on it, some not), so you probably want to avoid such situations.
 
 | Parameters ||
 |---|---|
 | `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](Intent.md)!\>!: An array of Intents to be started. |
-| `options` | [Bundle](../android.os/Bundle.md)!: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. |
+| `options` | [Bundle](../android.os/Bundle.md)!: Additional options for how the Activity should be started. See startActivity Context.startActivity(Intent, Bundle)} for more details. |
 
 | Exceptions ||
 |---|---|
@@ -6696,7 +6696,7 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startActivities(kotlin.Array)`
+- startActivities
 
 ### startActivity
 
@@ -6706,7 +6706,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun startActivity(intent: Intent!): Unit
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)` with no options specified.
+Same as startActivity with no options specified.
 
 | Parameters ||
 |---|---|
@@ -6718,7 +6718,7 @@ Same as `https://developer.android.com/reference/kotlin/android/content/Context#
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)`
+- startActivity
 
 ### startActivity
 
@@ -6735,7 +6735,7 @@ Launch a new activity. You will not receive any information about when the activ
 
 Note that if this method is being called from outside of an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` Context, then the Intent must include the `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` launch flag. This is because, without being started from an existing Activity, there is no existing task in which to place the new activity and thus it needs to be placed in its own separate task.
 
-This method throws `https://developer.android.com/reference/kotlin/android/content/ActivityNotFoundException` if there was no Activity found to run the given Intent.
+This method throws ActivityNotFoundException if there was no Activity found to run the given Intent.
 
 | Parameters ||
 |---|---|
@@ -6748,7 +6748,7 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)`
+- startActivity
 
 ### startForegroundService
 
@@ -6758,9 +6758,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun startForegroundService(service: Intent!): ComponentName?
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`, but with an implicit promise that the Service will call `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification)` once it begins running. The service is given an amount of time comparable to the ANR interval to do this, otherwise the system will automatically crash the process, in which case an internal exception `ForegroundServiceDidNotStartInTimeException` is logged on logcat on devices running SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or later. On older Android versions, an internal exception `RemoteServiceException` is logged instead, with a corresponding message.
+Similar to startService, but with an implicit promise that the Service will call startForeground once it begins running. The service is given an amount of time comparable to the ANR interval to do this, otherwise the system will automatically crash the process, in which case an internal exception `ForegroundServiceDidNotStartInTimeException` is logged on logcat on devices running SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or later. On older Android versions, an internal exception `RemoteServiceException` is logged instead, with a corresponding message.
 
-Unlike the ordinary `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
+Unlike the ordinary startService, this method can be used at any time, regardless of whether the app hosting the service is in a foreground state.
 
 **Note:** Beginning with SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, apps targeting SDK Version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or higher are not allowed to start foreground services from the background. See [Behavior changes: Apps targeting Android 12](../about/versions/12/behavior-changes-12.md) for more details.
 
@@ -6772,7 +6772,7 @@ Unlike the ordinary `https://developer.android.com/reference/kotlin/android/cont
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/ComponentName?` | If the service is being started or is already running, the `https://developer.android.com/reference/kotlin/android/content/ComponentName` of the actual service that was started is returned; else if the service does not exist null is returned. |
+| ComponentName | If the service is being started or is already running, the ComponentName of the actual service that was started is returned; else if the service does not exist null is returned. |
 
 | Exceptions ||
 |---|---|
@@ -6781,8 +6781,8 @@ Unlike the ordinary `https://developer.android.com/reference/kotlin/android/cont
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#stopService(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification)`
+- stopService
+- startForeground
 
 ### startInstrumentation
 
@@ -6827,7 +6827,7 @@ abstract fun startIntentSender(
 ): Unit
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)` with no options specified.
+Same as startIntentSender with no options specified.
 
 | Parameters ||
 |---|---|
@@ -6840,8 +6840,8 @@ Same as `https://developer.android.com/reference/kotlin/android/content/Context#
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)`
+- startActivity
+- startIntentSender
 
 ### startIntentSender
 
@@ -6858,7 +6858,7 @@ abstract fun startIntentSender(
 ): Unit
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)`, but taking a IntentSender to start. If the IntentSender is for an activity, that activity will be started as if you had called the regular `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent)` here; otherwise, its associated action will be executed (such as sending a broadcast) as if you had called android.content.IntentSender#sendIntent on it.
+Like startActivity, but taking a IntentSender to start. If the IntentSender is for an activity, that activity will be started as if you had called the regular startActivity here; otherwise, its associated action will be executed (such as sending a broadcast) as if you had called android.content.IntentSender#sendIntent on it.
 
 | Parameters ||
 |---|---|
@@ -6868,13 +6868,13 @@ Like `https://developer.android.com/reference/kotlin/android/content/Context#sta
 | --- | --- |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_FROM_BACKGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DEBUG_LOG_RESOLUTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MATCH_EXTERNAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_SINGLE_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MULTIPLE_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_FORWARD_RESULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_PREVIOUS_IS_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_BROUGHT_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RESET_TASK_IF_NEEDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_REORDER_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_ANIMATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_TASK_ON_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REGISTERED_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REPLACE_PENDING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_NO_ABORT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` |
 | `extraFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Always set to 0. |
-| `options` | [Bundle](../android.os/Bundle.md)?: Additional options for how the Activity should be started. See `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)` Context.startActivity(Intent, Bundle)} for more details. If options have also been supplied by the IntentSender, options given here will override any that conflict with those given by the IntentSender. This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: Additional options for how the Activity should be started. See startActivity Context.startActivity(Intent, Bundle)} for more details. If options have also been supplied by the IntentSender, options given here will override any that conflict with those given by the IntentSender. This value may be `null`. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- startActivity
+- startIntentSender
 
 ### startService
 
@@ -6886,9 +6886,9 @@ abstract fun startService(service: Intent!): ComponentName?
 
 Request that a given application service be started. The Intent should either contain the complete class name of a specific service implementation to start, or a specific package name to target. If the Intent is less specified, it logs a warning about this. In this case any of the multiple matching services may be used. If this service is not already running, it will be instantiated and started (creating a process for it if needed); if it is running then it remains running.
 
-Every call to this method will result in a corresponding call to the target service's `https://developer.android.com/reference/kotlin/android/app/Service.html#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)` method, with the intent given here. This provides a convenient way to submit jobs to a service without having to bind and call on to its interface.
+Every call to this method will result in a corresponding call to the target service's onStartCommand method, with the intent given here. This provides a convenient way to submit jobs to a service without having to bind and call on to its interface.
 
-Using startService() overrides the default service lifetime that is managed by #bindService: it requires the service to remain running until `https://developer.android.com/reference/kotlin/android/content/Context#stopService(android.content.Intent)` is called, regardless of whether any clients are connected to it. Note that calls to startService() do not nest: no matter how many times you call startService(), a single call to `https://developer.android.com/reference/kotlin/android/content/Context#stopService(android.content.Intent)` will stop it.
+Using startService() overrides the default service lifetime that is managed by #bindService: it requires the service to remain running until stopService is called, regardless of whether any clients are connected to it. Note that calls to startService() do not nest: no matter how many times you call startService(), a single call to stopService will stop it.
 
 The system attempts to keep running services around as much as possible. The only time they should be stopped is if the current foreground application is using so many resources that the service needs to be killed. If any errors happen in the service's process, it will automatically be restarted.
 
@@ -6907,7 +6907,7 @@ Beginning with SDK Version `https://developer.android.com/reference/kotlin/andro
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/ComponentName?` | If the service is being started or is already running, the `https://developer.android.com/reference/kotlin/android/content/ComponentName` of the actual service that was started is returned; else if the service does not exist null is returned. |
+| ComponentName | If the service is being started or is already running, the ComponentName of the actual service that was started is returned; else if the service does not exist null is returned. |
 
 | Exceptions ||
 |---|---|
@@ -6918,8 +6918,8 @@ Beginning with SDK Version `https://developer.android.com/reference/kotlin/andro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startForegroundService(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/content/Context#stopService(android.content.Intent)`
+- startForegroundService
+- stopService
 
 ### stopService
 
@@ -6931,9 +6931,9 @@ abstract fun stopService(service: Intent!): Boolean
 
 Request that a given application service be stopped. If the service is not running, nothing happens. Otherwise it is stopped. Note that calls to startService() are not counted -- this stops the service no matter how many times it was started.
 
-If the service is running as a foreground service when it is stopped, its associated notification will be removed. To avoid this, apps can use `https://developer.android.com/reference/kotlin/android/app/Service.html#stopForeground(kotlin.Int)` to decouple the notification from the service's lifecycle before stopping it.
+If the service is running as a foreground service when it is stopped, its associated notification will be removed. To avoid this, apps can use stopForeground to decouple the notification from the service's lifecycle before stopping it.
 
-Note that if a stopped service still has `https://developer.android.com/reference/kotlin/android/content/ServiceConnection` objects bound to it with the `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int` set, it will not be destroyed until all of these bindings are removed. See the `https://developer.android.com/reference/kotlin/android/app/Service.html#` documentation for more details on a service's lifecycle.
+Note that if a stopped service still has ServiceConnection objects bound to it with the `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int` set, it will not be destroyed until all of these bindings are removed. See the `https://developer.android.com/reference/kotlin/android/app/Service.html#` documentation for more details on a service's lifecycle.
 
 This function will throw `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` if you do not have permission to stop the given service.
 
@@ -6952,7 +6952,7 @@ This function will throw `https://developer.android.com/reference/kotlin/java/la
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`
+- startService
 
 ### unbindService
 
@@ -6978,7 +6978,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterComponentCallbacks(callback: ComponentCallbacks!): Unit
 ```
 
-Remove a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` object that was previously registered with `https://developer.android.com/reference/kotlin/android/content/Context#registerComponentCallbacks(android.content.ComponentCallbacks)`.
+Remove a ComponentCallbacks object that was previously registered with registerComponentCallbacks.
 
 ### unregisterDeviceIdChangeListener
 
@@ -6996,8 +6996,8 @@ Removes a device ID changed listener from the Context. It's a no-op if the liste
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context#getDeviceId()`
-- `https://developer.android.com/reference/kotlin/android/content/Context#registerDeviceIdChangeListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)`
+- getDeviceId
+- registerDeviceIdChangeListener
 
 ### unregisterReceiver
 
@@ -7027,9 +7027,9 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 open fun updateServiceBindings(params: MutableCollection<Context.UpdateBindingParams!>): Unit
 ```
 
-Perform a batch update of existing bindings. Existing bindings can be rebound with an updated set of flags, or unbound. Only flags returned from `https://developer.android.com/reference/kotlin/android/content/Context#getUpdateableFlags()` may be added or removed.
+Perform a batch update of existing bindings. Existing bindings can be rebound with an updated set of flags, or unbound. Only flags returned from getUpdateableFlags may be added or removed.
 
-This API behaves as if the `https://developer.android.com/reference/kotlin/android/content/Context#rebindService(android.content.ServiceConnection,%20android.content.Context.BindServiceFlags)` and `https://developer.android.com/reference/kotlin/android/content/Context#unbindService(android.content.ServiceConnection)` API are called in the same order as the params are iterated.
+This API behaves as if the rebindService and unbindService API are called in the same order as the params are iterated.
 
 | Parameters ||
 |---|---|

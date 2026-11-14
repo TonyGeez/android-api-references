@@ -12,7 +12,7 @@ class CompanionDeviceManager
 
 Public interfaces for managing companion devices.
 
-The interfaces in this class allow companion apps to `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#associate(android.companion.AssociationRequest,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.Callback)` discover and request device profiles} for companion devices, `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startObservingDevicePresence(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)` and more.
+The interfaces in this class allow companion apps to associate discover and request device profiles} for companion devices, startObservingDevicePresence, startSystemDataTransfer via attachSystemDataTransport and more.
 
 > [!NOTE]
 >
@@ -21,14 +21,14 @@ The interfaces in this class allow companion apps to `https://developer.android.
 > For more information about managing companion devices, read the [Companion Device Pairing](https://developer.android.com/guide/topics/connectivity/companion-device-pairing) developer guide.
 
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback` Callback for applications to receive updates about and the outcome of `https://developer.android.com/reference/kotlin/android/companion/AssociationRequest` issued via `associate()` call. |
-| abstract | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback` Callback for applications to receive updates about and the outcome of `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#requestDeviceTrustPairing(kotlin.Int,%20android.companion.OutOfBandPairingRequest,%20kotlin.IntArray,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.TrustPairingCallback)` |
+| abstract | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback` Callback for applications to receive updates about and the outcome of AssociationRequest issued via `associate()` call. |
+| abstract | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback` Callback for applications to receive updates about and the outcome of requestDeviceTrustPairing |
 
 | Constants ||
 |---|---|
@@ -42,21 +42,21 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_RESUMPTION_FAILED:kotlin.Int` The trust resumption failed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#ERROR_TRUST_UNKNOWN:kotlin.Int` Unknown error for trust pairing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#EXTRA_ASSOCIATION:kotlin.String` Extra field name for the `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` object, included into `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which application receive in `https://developer.android.com/reference/kotlin/android/app/Activity.html#onActivityResult(kotlin.Int,%20kotlin.Int,%20android.content.Intent)` after the application's `https://developer.android.com/reference/kotlin/android/companion/AssociationRequest` was successfully processed and an association was created. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#EXTRA_ASSOCIATION:kotlin.String` Extra field name for the AssociationInfo object, included into `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which application receive in onActivityResult after the application's AssociationRequest was successfully processed and an association was created. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#EXTRA_DEVICE:kotlin.String` A device, returned in the activity result of the `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` received in `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback#onDeviceFound(android.content.IntentSender)` Type is: - for classic Bluetooth - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#` - for Bluetooth LE - `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult.html#` - for WiFi - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_AIRPLANE_MODE:kotlin.Int` Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_CALL_METADATA:kotlin.Int` Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#EXTRA_DEVICE:kotlin.String` A device, returned in the activity result of the `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` received in onDeviceFound Type is: - for classic Bluetooth - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#` - for Bluetooth LE - `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult.html#` - for WiFi - `https://developer.android.com/reference/kotlin/android/net/wifi/ScanResult.html#` <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_AIRPLANE_MODE:kotlin.Int` Used by enableSystemDataSyncForTypes}. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_CALL_METADATA:kotlin.Int` Used by enableSystemDataSyncForTypes}. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_TASK_CONTINUITY:kotlin.Int` Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_UNIVERSAL_MODES:kotlin.Int` Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_TASK_CONTINUITY:kotlin.Int` Used by enableSystemDataSyncForTypes}. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#FLAG_UNIVERSAL_MODES:kotlin.Int` Used by enableSystemDataSyncForTypes}. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_CANCELED:kotlin.Int` The result code to propagate back to the user activity, indicates if the association dialog is implicitly cancelled. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_DISCOVERY_TIMEOUT:kotlin.Int` The result code to propagate back to the user activity, indicates the association dialog is dismissed if there's no device found after 20 seconds. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_INTERNAL_ERROR:kotlin.Int` The result code to propagate back to the user activity, indicates the internal error in CompanionDeviceManager. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_OK:kotlin.Int` The result code to propagate back to the user activity, indicates the association is created successfully. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_SECURITY_ERROR:kotlin.Int` The result code to propagate back to the user activity and `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback#onFailure(kotlin.Int,%20kotlin.CharSequence)`, indicates app is not allow to create the association due to the security issue. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_SECURITY_ERROR:kotlin.Int` The result code to propagate back to the user activity and onFailure, indicates app is not allow to create the association due to the security issue. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#RESULT_USER_REJECTED:kotlin.Int` The result code to propagate back to the user activity, indicates the association dialog is explicitly declined by the users. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#TRUST_TYPE_CROSS_DEVICE_AUTHENTICATION:kotlin.Int` Trust type for platform-level cross-device authentication. |
 | --- | --- |
@@ -65,40 +65,40 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#associate(android.companion.AssociationRequest,%20android.companion.CompanionDeviceManager.Callback,%20android.os.Handler)(request: https://developer.android.com/reference/kotlin/android/companion/AssociationRequest, callback: https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Request to associate this app with a companion device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#associate(android.companion.AssociationRequest,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.Callback)(request: https://developer.android.com/reference/kotlin/android/companion/AssociationRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback)` Request to associate this app with a companion device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, in: https://developer.android.com/reference/kotlin/java/io/InputStream.html#, out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#)` Attach a bidirectional communication stream to be used as a transport channel for transporting system data between associated devices. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | associate Request to associate this app with a companion device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | associate Request to associate this app with a companion device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | attachSystemDataTransport Attach a bidirectional communication stream to be used as a transport channel for transporting system data between associated devices. |
 | --- | --- |
-| [IntentSender](../android.content/IntentSender.md)? | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#buildAssociationCancellationIntent()()` Cancel the current association activity. |
-| [IntentSender](../android.content/IntentSender.md)? | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#buildPermissionTransferUserConsentIntent(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Build a permission sync user consent dialog. |
-| [DeviceId](DeviceId.md)? | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#createAndSetDeviceId(kotlin.Int,%20android.companion.DeviceId)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceId: https://developer.android.com/reference/kotlin/android/companion/DeviceId?)` Returns a new `https://developer.android.com/reference/kotlin/android/companion/DeviceId` which can be passed to device manufacturers' apps, allowing them to fetch `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` or observe device presence for this associated device. |
+| [IntentSender](../android.content/IntentSender.md)? | buildAssociationCancellationIntent Cancel the current association activity. |
+| [IntentSender](../android.content/IntentSender.md)? | buildPermissionTransferUserConsentIntent Build a permission sync user consent dialog. |
+| [DeviceId](DeviceId.md)? | createAndSetDeviceId Returns a new DeviceId which can be passed to device manufacturers' apps, allowing them to fetch AssociationInfo or observe device presence for this associated device. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#detachSystemDataTransport(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Detach the transport channel that's previously attached for the associated device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Disable system data sync for an associated device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove an association. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | detachSystemDataTransport Detach the transport channel that's previously attached for the associated device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disableSystemDataSyncForTypes Disable system data sync for an associated device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disassociate Remove an association. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.String)(deviceMacAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Remove the association between this app and the device with the given mac address. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Enable system data sync for an associated device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getAssociations()()` Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disassociate Remove the association between this app and the device with the given mac address. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enableSystemDataSyncForTypes Enable system data sync for an associated device. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getAssociations Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AssociationInfo](AssociationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getMyAssociations()()` Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#hasNotificationAccess(android.content.ComponentName)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Check whether the given component can access the notifications via a `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` Your app must have an association with a device before calling this API |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#isPermissionTransferUserConsented(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the current state of consent for permission transfer for the association. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AssociationInfo](AssociationInfo.md)!\> | getMyAssociations Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasNotificationAccess Check whether the given component can access the notifications via a `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` Your app must have an association with a device before calling this API |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPermissionTransferUserConsented Return the current state of consent for permission transfer for the association. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#isSystemDataTransportAttached(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if a transport is currently attached for a given association id. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#notifyActionResult(kotlin.Int,%20android.companion.ActionResult)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, result: https://developer.android.com/reference/kotlin/android/companion/ActionResult)` Allows a companion app to report the result of an action that was requested by the system. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#removeBond(kotlin.Int)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove bonding between this device and an associated companion device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSystemDataTransportAttached Checks if a transport is currently attached for a given association id. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyActionResult Allows a companion app to report the result of an action that was requested by the system. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeBond Remove bonding between this device and an associated companion device. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#requestDeviceTrustPairing(kotlin.Int,%20android.companion.OutOfBandPairingRequest,%20kotlin.IntArray,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.TrustPairingCallback)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, requestOobPairing: https://developer.android.com/reference/kotlin/android/companion/OutOfBandPairingRequest?, trustTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback)` Request the system to initiate a trusted pairing process for the given association. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#requestNotificationAccess(android.content.ComponentName)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Request notification access for the given component. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#setDeviceId(kotlin.Int,%20android.companion.DeviceId)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceId: https://developer.android.com/reference/kotlin/android/companion/DeviceId?)` Sets the `https://developer.android.com/reference/kotlin/android/companion/DeviceId` for this association. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestDeviceTrustPairing Request the system to initiate a trusted pairing process for the given association. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestNotificationAccess Request notification access for the given component. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDeviceId Sets the DeviceId for this association. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startObservingDevicePresence(android.companion.ObservingDevicePresenceRequest)(request: https://developer.android.com/reference/kotlin/android/companion/ObservingDevicePresenceRequest)` Register to receive callbacks whenever the associated device's presence changes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startObservingDevicePresence(kotlin.String)(deviceAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Register to receive callbacks whenever the associated device comes in and out of range. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(associationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, result: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/companion/CompanionException!>)` Start system data transfer which has been previously approved by the user. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startObservingDevicePresence Register to receive callbacks whenever the associated device's presence changes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startObservingDevicePresence Register to receive callbacks whenever the associated device comes in and out of range. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startSystemDataTransfer Start system data transfer which has been previously approved by the user. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#stopObservingDevicePresence(android.companion.ObservingDevicePresenceRequest)(request: https://developer.android.com/reference/kotlin/android/companion/ObservingDevicePresenceRequest)` Unregister for receiving callbacks whenever the associated device comes in and out of range. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#stopObservingDevicePresence(kotlin.String)(deviceAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Unregister for receiving callbacks whenever the associated device comes in and out of range. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopObservingDevicePresence Unregister for receiving callbacks whenever the associated device comes in and out of range. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopObservingDevicePresence Unregister for receiving callbacks whenever the associated device comes in and out of range. |
 
 ## Constants
 
@@ -210,7 +210,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ASSOCIATION: String
 ```
 
-Extra field name for the `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` object, included into `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which application receive in `https://developer.android.com/reference/kotlin/android/app/Activity.html#onActivityResult(kotlin.Int,%20kotlin.Int,%20android.content.Intent)` after the application's `https://developer.android.com/reference/kotlin/android/companion/AssociationRequest` was successfully processed and an association was created.
+Extra field name for the AssociationInfo object, included into `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which application receive in onActivityResult after the application's AssociationRequest was successfully processed and an association was created.
 
  Value: "android.companion.extra.ASSOCIATION"
 
@@ -223,9 +223,9 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val EXTRA_DEVICE: String
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociatedDevice()` instead.*
+**Deprecated:** *use getAssociatedDevice instead.*
 
-A device, returned in the activity result of the `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` received in `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback#onDeviceFound(android.content.IntentSender)` Type is:
+A device, returned in the activity result of the `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` received in onDeviceFound Type is:
 
 - for classic Bluetooth - `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#`
 - for Bluetooth LE - `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanResult.html#`
@@ -243,7 +243,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_AIRPLANE_MODE: Int
 ```
 
-Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. Synchronize airplane mode state across devices. Disabled by default.
+Used by enableSystemDataSyncForTypes}. Synchronize airplane mode state across devices. Disabled by default.
 
  Value: 16
 
@@ -255,7 +255,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_CALL_METADATA: Int
 ```
 
-Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. Sync call metadata like muting, ending and silencing a call. Enabled by default.
+Used by enableSystemDataSyncForTypes}. Sync call metadata like muting, ending and silencing a call. Enabled by default.
 
  Value: 1
 
@@ -267,7 +267,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_TASK_CONTINUITY: Int
 ```
 
-Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. Synchronize task continuity data like open tasks, and enable this transport for Handoff. Disabled by default.
+Used by enableSystemDataSyncForTypes}. Synchronize task continuity data like open tasks, and enable this transport for Handoff. Disabled by default.
 
  Value: 2
 
@@ -279,7 +279,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_UNIVERSAL_MODES: Int
 ```
 
-Used by `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#enableSystemDataSyncForTypes(kotlin.Int,%20kotlin.Int)`}. Synchronize user settings like contextual modes across devices. Disabled by default.
+Used by enableSystemDataSyncForTypes}. Synchronize user settings like contextual modes across devices. Disabled by default.
 
  Value: 4
 
@@ -339,7 +339,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val RESULT_SECURITY_ERROR: Int
 ```
 
-The result code to propagate back to the user activity and `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.Callback#onFailure(kotlin.Int,%20kotlin.CharSequence)`, indicates app is not allow to create the association due to the security issue. E.g. There are missing necessary permissions when creating association.
+The result code to propagate back to the user activity and onFailure, indicates app is not allow to create the association due to the security issue. E.g. There are missing necessary permissions when creating association.
 
  Value: 4
 
@@ -373,7 +373,7 @@ When this trust type is requested and granted during Companion Device Manager (C
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#requestDeviceTrustPairing(kotlin.Int,%20android.companion.OutOfBandPairingRequest,%20kotlin.IntArray,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.TrustPairingCallback)`
+- requestDeviceTrustPairing
 
 ### TRUST_TYPE_PROACTIVE_ASSISTANCE
 
@@ -389,7 +389,7 @@ Trust type for proactive assistance. E.g. agents can use your app's screen conte
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#requestDeviceTrustPairing(kotlin.Int,%20android.companion.OutOfBandPairingRequest,%20kotlin.IntArray,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.TrustPairingCallback)`
+- requestDeviceTrustPairing
 
 ### TRUST_TYPE_SCREEN_AUTOMATION
 
@@ -405,7 +405,7 @@ Trust type for screen automation. E.g. allowing agents to see and interact with 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#requestDeviceTrustPairing(kotlin.Int,%20android.companion.OutOfBandPairingRequest,%20kotlin.IntArray,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.TrustPairingCallback)`
+- requestDeviceTrustPairing
 
 ## Public methods
 
@@ -427,9 +427,9 @@ Note that before creating establishing association the system may need to show U
 
 If the app needs to be excluded from battery optimizations (run in the background) or to have unrestricted data access (use data in the background) it should declare use of `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_COMPANION_RUN_IN_BACKGROUND:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_COMPANION_USE_DATA_IN_BACKGROUND:kotlin.String` in its AndroidManifest.xml respectively. Note that these special capabilities have a negative effect on the device's battery and user's data usage, therefore you should request them when absolutely necessary.
 
-Application can use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getMyAssociations()` for retrieving the list of currently `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` objects, that represent their existing associations. Applications can also use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.Int)` to remove an association, and are recommended to do when an association is no longer relevant to avoid unnecessary battery and/or data drain resulting from special privileges that the association provides
+Application can use getMyAssociations for retrieving the list of currently AssociationInfo objects, that represent their existing associations. Applications can also use disassociate to remove an association, and are recommended to do when an association is no longer relevant to avoid unnecessary battery and/or data drain resulting from special privileges that the association provides
 
-If this API is used to associate with a Bluetooth device, initiating Bluetooth bonding (e.g. via `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#createBond()`) within 10 minutes of the association being approved allows the device to skip the Bluetooth pairing confirmation dialog (if its pairing variant is android.bluetooth.BluetoothDevice#PAIRING_VARIANT_CONSENT).
+If this API is used to associate with a Bluetooth device, initiating Bluetooth bonding (e.g. via createBond) within 10 minutes of the association being approved allows the device to skip the Bluetooth pairing confirmation dialog (if its pairing variant is android.bluetooth.BluetoothDevice#PAIRING_VARIANT_CONSENT).
 
 Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest
 
@@ -443,10 +443,10 @@ Calling this API requires a uses-feature `https://developer.android.com/referenc
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/companion/AssociationRequest.Builder`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getMyAssociations()`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#associate(android.companion.AssociationRequest,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.Callback)`
-- `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#createBond()`
+- getMyAssociations
+- disassociate
+- associate
+- createBond
 
 ### associate
 
@@ -466,11 +466,11 @@ Note that before creating establishing association the system may need to show U
 
 If the app needs to be excluded from battery optimizations (run in the background) or to have unrestricted data access (use data in the background) it should declare use of `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_COMPANION_RUN_IN_BACKGROUND:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_COMPANION_USE_DATA_IN_BACKGROUND:kotlin.String` in its AndroidManifest.xml respectively. Note that these special capabilities have a negative effect on the device's battery and user's data usage, therefore you should request them when absolutely necessary.
 
-Application can use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getMyAssociations()` for retrieving the list of currently `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` objects, that represent their existing associations. Applications can also use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.Int)` to remove an association, and are recommended to do when an association is no longer relevant to avoid unnecessary battery and/or data drain resulting from special privileges that the association provides
+Application can use getMyAssociations for retrieving the list of currently AssociationInfo objects, that represent their existing associations. Applications can also use disassociate to remove an association, and are recommended to do when an association is no longer relevant to avoid unnecessary battery and/or data drain resulting from special privileges that the association provides
 
 Note that if you use this api to associate with a Bluetooth device, please make sure to cancel your own Bluetooth discovery before calling this api, otherwise the callback may fail to return the desired device.
 
-If this API is used to associate with a Bluetooth device, initiating Bluetooth bonding (e.g. via `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#createBond()`) within 10 minutes of the association being approved allows the device to skip the Bluetooth pairing confirmation dialog (if its pairing variant is android.bluetooth.BluetoothDevice#PAIRING_VARIANT_CONSENT).
+If this API is used to associate with a Bluetooth device, initiating Bluetooth bonding (e.g. via createBond) within 10 minutes of the association being approved allows the device to skip the Bluetooth pairing confirmation dialog (if its pairing variant is android.bluetooth.BluetoothDevice#PAIRING_VARIANT_CONSENT).
 
 Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest
 
@@ -484,10 +484,10 @@ Calling this API requires a uses-feature `https://developer.android.com/referenc
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/companion/AssociationRequest.Builder`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getMyAssociations()`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()`
-- `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#createBond()`
+- getMyAssociations
+- disassociate
+- cancelDiscovery
+- createBond
 
 ### attachSystemDataTransport
 
@@ -517,9 +517,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#buildPermissionTransferUserConsentIntent(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#detachSystemDataTransport(kotlin.Int)`
+- buildPermissionTransferUserConsentIntent
+- startSystemDataTransfer
+- detachSystemDataTransport
 
 ### buildAssociationCancellationIntent
 
@@ -531,7 +531,7 @@ fun buildAssociationCancellationIntent(): IntentSender?
 
 Cancel the current association activity.
 
-The app should launch the returned `intentSender` by calling `https://developer.android.com/reference/kotlin/android/app/Activity.html#startIntentSenderForResult(android.content.IntentSender,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` to cancel the current association activity
+The app should launch the returned `intentSender` by calling startIntentSenderForResult to cancel the current association activity
 
 Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest
 
@@ -549,13 +549,13 @@ fun buildPermissionTransferUserConsentIntent(associationId: Int): IntentSender?
 
 Build a permission sync user consent dialog.
 
-Only the companion app which owns the association can call this method. Otherwise a null IntentSender will be returned from this method and an error will be logged. The app should launch the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` in the returned `intentSender` `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` by calling `https://developer.android.com/reference/kotlin/android/app/Activity.html#startIntentSenderForResult(android.content.IntentSender,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`.
+Only the companion app which owns the association can call this method. Otherwise a null IntentSender will be returned from this method and an error will be logged. The app should launch the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` in the returned `intentSender` `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` by calling startIntentSenderForResult.
 
-The permission transfer doesn't happen immediately after the call or when the user consents. The app needs to call `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)` to attach a transport channel and `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` to trigger the system data transfer}.
+The permission transfer doesn't happen immediately after the call or when the user consents. The app needs to call attachSystemDataTransport to attach a transport channel and startSystemDataTransfer to trigger the system data transfer}.
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` assigned to the association of the companion device recorded by CompanionDeviceManager |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique getId assigned to the association of the companion device recorded by CompanionDeviceManager |
 
 | Return ||
 |---|---|
@@ -563,8 +563,8 @@ The permission transfer doesn't happen immediately after the call or when the us
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+- attachSystemDataTransport
+- startSystemDataTransfer
 
 ### createAndSetDeviceId
 
@@ -577,11 +577,11 @@ fun createAndSetDeviceId(
 ): DeviceId?
 ```
 
-Returns a new `https://developer.android.com/reference/kotlin/android/companion/DeviceId` which can be passed to device manufacturers' apps, allowing them to fetch `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo` or observe device presence for this associated device. This method creates a new object and does not mutate any existing `https://developer.android.com/reference/kotlin/android/companion/DeviceId`.
+Returns a new DeviceId which can be passed to device manufacturers' apps, allowing them to fetch AssociationInfo or observe device presence for this associated device. This method creates a new object and does not mutate any existing DeviceId.
 
-The system will generate and assign a new, random 128-bit key to this returned `https://developer.android.com/reference/kotlin/android/companion/DeviceId`. Each call to this method generates a new key, any previously associated key will be obsoleted. Therefore, the returned `https://developer.android.com/reference/kotlin/android/companion/DeviceId` is the one that contains the newly assigned key and should be used for subsequent operations.
+The system will generate and assign a new, random 128-bit key to this returned DeviceId. Each call to this method generates a new key, any previously associated key will be obsoleted. Therefore, the returned DeviceId is the one that contains the newly assigned key and should be used for subsequent operations.
 
-Calling this method also refreshes the association's `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociationToken()`.
+Calling this method also refreshes the association's getAssociationToken.
 
 This device id also helps the system uniquely identify your device for efficient device management and prevents duplicate entries.
 
@@ -589,17 +589,17 @@ WARNING: Do not pass the returned DeviceId to apps you do not trust.
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` assigned to the Association of the companion device recorded by CompanionDeviceManager. |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique getId assigned to the Association of the companion device recorded by CompanionDeviceManager. |
 | `deviceId` | [DeviceId](DeviceId.md)?: to be used as device identifier to represent the associated device. This value may be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/companion/DeviceId?` | This value may be `null`. |
+| DeviceId | This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceId()`
-- `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociationToken()`
+- getDeviceId
+- getAssociationToken
 
 ### detachSystemDataTransport
 
@@ -622,7 +622,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)`
+- attachSystemDataTransport
 
 ### disableSystemDataSyncForTypes
 
@@ -679,8 +679,8 @@ Calling this API requires a uses-feature `https://developer.android.com/referenc
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#associate(android.companion.AssociationRequest,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.Callback)`
-- `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()`
+- associate
+- getId
 
 ### disassociate
 
@@ -691,7 +691,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun disassociate(deviceMacAddress: String): Unit
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#disassociate(kotlin.Int)`*
+**Deprecated:** *use disassociate*
 
 Remove the association between this app and the device with the given mac address.
 
@@ -749,7 +749,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun getAssociations(): MutableList<String!>
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#getMyAssociations()`*
+**Deprecated:** *use getMyAssociations*
 
 Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest
 
@@ -780,7 +780,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun hasNotificationAccess(component: ComponentName!): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#isNotificationListenerAccessGranted(android.content.ComponentName)` instead.*
+**Deprecated:** *Use isNotificationListenerAccessGranted instead.*
 
 Check whether the given component can access the notifications via a `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` Your app must have an association with a device before calling this API
 
@@ -804,11 +804,11 @@ fun isPermissionTransferUserConsented(associationId: Int): Boolean
 
 Return the current state of consent for permission transfer for the association. True if the user has allowed permission transfer for the association, false otherwise.
 
-Note: The initial user consent is collected via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#buildPermissionTransferUserConsentIntent(kotlin.Int)`. After the user has made their initial selection, they can toggle the permission transfer feature in the settings. This method always returns the state of the toggle setting.
+Note: The initial user consent is collected via buildPermissionTransferUserConsentIntent. After the user has made their initial selection, they can toggle the permission transfer feature in the settings. This method always returns the state of the toggle setting.
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` assigned to the association of the companion device recorded by CompanionDeviceManager |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique getId assigned to the association of the companion device recorded by CompanionDeviceManager |
 
 | Return ||
 |---|---|
@@ -828,18 +828,18 @@ fun isSystemDataTransportAttached(associationId: Int): Boolean
 
 Checks if a transport is currently attached for a given association id.
 
-A transport is considered attached if `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)` has been successfully called for the given `associationId`, and `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#detachSystemDataTransport(kotlin.Int)` has not yet been called.
+A transport is considered attached if attachSystemDataTransport has been successfully called for the given `associationId`, and detachSystemDataTransport has not yet been called.
 
-This is useful for determining if the system is ready to handle data transfers before calling `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+This is useful for determining if the system is ready to handle data transfers before calling startSystemDataTransfer.
 
 The caller must meet one of the following requirements:
 
 - It is the package that originally created the association.
-- It holds the `android.permission.ACCESS_COMPANION_MESSAGE_PCC` permission and the association must be verified as a `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isTrusted()`
+- It holds the `android.permission.ACCESS_COMPANION_MESSAGE_PCC` permission and the association must be verified as a isTrusted
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` of the device association |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique getId of the device association |
 
 | Return ||
 |---|---|
@@ -847,10 +847,10 @@ The caller must meet one of the following requirements:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#detachSystemDataTransport(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startSystemDataTransfer(kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
-- `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#isTrusted()`
+- attachSystemDataTransport
+- detachSystemDataTransport
+- startSystemDataTransfer
+- isTrusted
 
 ### notifyActionResult
 
@@ -865,14 +865,14 @@ fun notifyActionResult(
 
 Allows a companion app to report the result of an action that was requested by the system.
 
-This API should be called after the app has received a request via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onActionRequested(android.companion.AssociationInfo,%20android.companion.ActionRequest)`. For example:
+This API should be called after the app has received a request via onActionRequested. For example:
 
 - After receiving `https://developer.android.com/reference/kotlin/android/companion/ActionRequest#OP_ACTIVATE:kotlin.Int`, the app should call this method with `https://developer.android.com/reference/kotlin/android/companion/ActionResult#RESULT_ACTIVATED:kotlin.Int` upon success or `https://developer.android.com/reference/kotlin/android/companion/ActionResult#RESULT_FAILED_TO_ACTIVATE:kotlin.Int` upon failure.
 - If a previously activated feature later fails or stops for any reason, the app should proactively call this method with `https://developer.android.com/reference/kotlin/android/companion/ActionResult#RESULT_DEACTIVATED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
-| `result` | [ActionResult](ActionResult.md): The `https://developer.android.com/reference/kotlin/android/companion/ActionResult` to report to the system. This value cannot be `null`. |
+| `result` | [ActionResult](ActionResult.md): The ActionResult to report to the system. This value cannot be `null`. |
 
 ### removeBond
 
@@ -886,7 +886,7 @@ Remove bonding between this device and an associated companion device.
 
 This is an asynchronous call, it will return immediately. Register for `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#ACTION_BOND_STATE_CHANGED:kotlin.String` intents to be notified when the bond removal process completes, and its result.
 
-This API should be used to remove a bluetooth bond that was created either by using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#createBond()` or by a direct user action. The association must already exist with this device before calling this method, but this may be done retroactively to remove a bond that was created outside of the CompanionDeviceManager. 
+This API should be used to remove a bluetooth bond that was created either by using createBond or by a direct user action. The association must already exist with this device before calling this method, but this may be done retroactively to remove a bond that was created outside of the CompanionDeviceManager. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String`
 
 | Parameters ||
@@ -913,11 +913,11 @@ fun requestDeviceTrustPairing(
 
 Request the system to initiate a trusted pairing process for the given association. This process is required to enable certain features that demand a higher level of trust between the devices.
 
-The outcome of the pairing process will be delivered via the provided `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback`. The callback will first receive `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback#onTrustPairingPending(android.content.IntentSender)` with an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` to launch a user confirmation dialog. Upon user confirmation and successful pairing, `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback#onDeviceTrusted(android.companion.AssociationInfo)` will be invoked. If the process fails or is canceled, `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback#onFailure(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback#onTrustPairingCanceledFromRemote(android.companion.AssociationInfo,%20android.content.IntentSender)` will be called.
+The outcome of the pairing process will be delivered via the provided `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.TrustPairingCallback`. The callback will first receive onTrustPairingPending with an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` to launch a user confirmation dialog. Upon user confirmation and successful pairing, onDeviceTrusted will be invoked. If the process fails or is canceled, onFailure or onTrustPairingCanceledFromRemote will be called.
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` assigned to the Association recorded by CompanionDeviceManager |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the unique getId assigned to the Association recorded by CompanionDeviceManager |
 | `requestOobPairing` | [OutOfBandPairingRequest](OutOfBandPairingRequest.md)?: request for out-of-band pairing. This value may be `null`. |
 | `trustTypes` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): list of trust types to be enabled that require trust pairing (or an empty array if no trust types are requested). This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#TRUST_TYPE_SCREEN_AUTOMATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#TRUST_TYPE_PROACTIVE_ASSISTANCE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#TRUST_TYPE_CROSS_DEVICE_AUTHENTICATION:kotlin.Int` |
 | --- | --- |
@@ -932,7 +932,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun requestNotificationAccess(component: ComponentName!): Unit
 ```
 
-Request notification access for the given component. The given component must follow the protocol specified in `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` Only components from the same `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#getPackageName()` as the calling app are allowed. Your app must have an association with a device before calling this API. Side-loaded apps must allow restricted settings before requesting notification access.
+Request notification access for the given component. The given component must follow the protocol specified in `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` Only components from the same getPackageName as the calling app are allowed. Your app must have an association with a device before calling this API. Side-loaded apps must allow restricted settings before requesting notification access.
 
 Calling this API requires a uses-feature `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` declaration in the manifest
 
@@ -948,15 +948,15 @@ fun setDeviceId(
 ): Unit
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#createAndSetDeviceId(kotlin.Int,%20android.companion.DeviceId)` instead.*
+**Deprecated:** *use createAndSetDeviceId instead.*
 
-Sets the `https://developer.android.com/reference/kotlin/android/companion/DeviceId` for this association.
+Sets the DeviceId for this association.
 
 This device id helps the system uniquely identify your device for efficient device management and prevents duplicate entries.
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` assigned to the Association of the companion device recorded by CompanionDeviceManager. |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique getId assigned to the Association of the companion device recorded by CompanionDeviceManager. |
 | `deviceId` | [DeviceId](DeviceId.md)?: to be used as device identifier to represent the associated device. This value may be `null`. |
 
 ### startObservingDevicePresence
@@ -974,7 +974,7 @@ Register to receive callbacks whenever the associated device's presence changes.
 
 <br />
 
-Caller app must implement the `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService` to receive callbacks via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent)`. The system will bind to the implemented `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService` to deliver the callbacks.
+Caller app must implement the CompanionDeviceService to receive callbacks via onDevicePresenceEvent. The system will bind to the implemented CompanionDeviceService to deliver the callbacks.
 
 Calling app must check for feature presence of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` before calling this API.
 
@@ -995,7 +995,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/companion/ObservingDevicePresenceRequest.Builder`
-- `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService#onDevicePresenceEvent(android.companion.DevicePresenceEvent)`
+- onDevicePresenceEvent
 
 ### startObservingDevicePresence
 
@@ -1006,13 +1006,13 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 fun startObservingDevicePresence(deviceAddress: String): Unit
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#startObservingDevicePresence(android.companion.ObservingDevicePresenceRequest)` instead.*
+**Deprecated:** *use startObservingDevicePresence instead.*
 
 Register to receive callbacks whenever the associated device comes in and out of range.
 
 The provided device must be #associate with the calling app before calling this method.
 
-Caller must implement a single `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceService` which will be bound to and receive callbacks to android.companion.CompanionDeviceService#onDeviceAppeared and android.companion.CompanionDeviceService#onDeviceDisappeared. The app doesn't need to remain running in order to receive its callbacks.
+Caller must implement a single CompanionDeviceService which will be bound to and receive callbacks to android.companion.CompanionDeviceService#onDeviceAppeared and android.companion.CompanionDeviceService#onDeviceDisappeared. The app doesn't need to remain running in order to receive its callbacks.
 
 Calling app must declare uses-permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE:kotlin.String`.
 
@@ -1048,11 +1048,11 @@ fun startSystemDataTransfer(
 
 Start system data transfer which has been previously approved by the user.
 
-Before calling this method, the app needs to make sure `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#attachSystemDataTransport(kotlin.Int,%20java.io.InputStream,%20java.io.OutputStream)`, and `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#buildPermissionTransferUserConsentIntent(kotlin.Int)`. The transfer will fail if the transport channel is disconnected or `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#detachSystemDataTransport(kotlin.Int)` during the transfer.
+Before calling this method, the app needs to make sure attachSystemDataTransport, and buildPermissionTransferUserConsentIntent. The transfer will fail if the transport channel is disconnected or detachSystemDataTransport during the transfer.
 
 | Parameters ||
 |---|---|
-| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getId()` assigned to the Association of the companion device recorded by CompanionDeviceManager |
+| `associationId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The unique getId assigned to the Association of the companion device recorded by CompanionDeviceManager |
 | `executor` | [Executor](../java.util.concurrent/Executor.md): The executor which will be used to invoke the result callback. This value cannot be `null`. |
 | `result` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [CompanionException](CompanionException.md)!\>: The callback to notify the app of the result of the system data transfer. This value cannot be `null`. |
 | --- | --- |
@@ -1085,7 +1085,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 fun stopObservingDevicePresence(deviceAddress: String): Unit
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager#stopObservingDevicePresence(android.companion.ObservingDevicePresenceRequest)` instead.*
+**Deprecated:** *use stopObservingDevicePresence instead.*
 
 Unregister for receiving callbacks whenever the associated device comes in and out of range. The provided device must be #associate with the calling app before calling this method. Calling app must declare uses-permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE:kotlin.String`. Calling app must check for feature presence of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_COMPANION_DEVICE_SETUP:kotlin.String` before calling this API. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE:kotlin.String`

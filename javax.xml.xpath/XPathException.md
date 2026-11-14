@@ -27,14 +27,14 @@ open class XPathException : Exception
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#XPathException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs a new `XPathException` with the specified detail `message`. |
-| `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#XPathException(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` Constructs a new `XPathException` with the specified `cause`. |
+| XPathException Constructs a new `XPathException` with the specified detail `message`. |
+| XPathException Constructs a new `XPathException` with the specified `cause`. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#printStackTrace()()` Prints this throwable and its backtrace to the standard error stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#printStackTrace(java.io.PrintStream)(s: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#)` Prints this throwable and its backtrace to the specified print stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/xpath/XPathException#printStackTrace(java.io.PrintWriter)(s: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)` Prints this throwable and its backtrace to the specified print writer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | printStackTrace Prints this throwable and its backtrace to the standard error stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | printStackTrace Prints this throwable and its backtrace to the specified print stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | printStackTrace Prints this throwable and its backtrace to the specified print writer. |
 | --- | --- |
 
 | Properties ||
@@ -91,7 +91,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun printStackTrace(): Unit
 ```
 
-Prints this throwable and its backtrace to the standard error stream. This method prints a stack trace for this `Throwable` object on the error output stream that is the value of the field `System.err`. The first line of output contains the result of the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#toString()` method for this object. Remaining lines represent data previously recorded by the method `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#fillInStackTrace()`. The format of this information depends on the implementation, but the following example may be regarded as typical:
+Prints this throwable and its backtrace to the standard error stream. This method prints a stack trace for this `Throwable` object on the error output stream that is the value of the field `System.err`. The first line of output contains the result of the toString method for this object. Remaining lines represent data previously recorded by the method fillInStackTrace. The format of this information depends on the implementation, but the following example may be regarded as typical:
 
 ```kotlin
 java.lang.NullPointerException
@@ -267,7 +267,7 @@ open val cause: Throwable?
 
 Returns the cause of this throwable or `null` if the cause is nonexistent or unknown. (The cause is the throwable that caused this throwable to get thrown.)
 
-This implementation returns the cause that was supplied via one of the constructors requiring a `Throwable`, or that was set after creation with the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#initCause(kotlin.Throwable)` method. While it is typically unnecessary to override this method, a subclass can override it to return a cause set by some other means. This is appropriate for a "legacy chained throwable" that predates the addition of chained exceptions to `Throwable`. Note that it is *not* necessary to override any of the `PrintStackTrace` methods, all of which invoke the `getCause` method to determine the cause of a throwable.
+This implementation returns the cause that was supplied via one of the constructors requiring a `Throwable`, or that was set after creation with the initCause method. While it is typically unnecessary to override this method, a subclass can override it to return a cause set by some other means. This is appropriate for a "legacy chained throwable" that predates the addition of chained exceptions to `Throwable`. Note that it is *not* necessary to override any of the `PrintStackTrace` methods, all of which invoke the `getCause` method to determine the cause of a throwable.
 
 | Return ||
 |---|---|

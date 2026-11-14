@@ -17,17 +17,17 @@ The total assembled results of a single image capture from the image sensor.
 
 Contains the final configuration for the capture hardware (sensor, lens, flash), the processing pipeline, the control algorithms, and the output buffers.
 
-A `TotalCaptureResult` is produced by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice` after processing a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest`. All properties listed for capture requests can also be queried on the capture result, to determine the final values used for capture. The result also includes additional metadata about the state of the camera device during the capture.
+A `TotalCaptureResult` is produced by a CameraDevice after processing a CaptureRequest. All properties listed for capture requests can also be queried on the capture result, to determine the final values used for capture. The result also includes additional metadata about the state of the camera device during the capture.
 
-All properties returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureResultKeys()` are available (that is `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#get(android.hardware.camera2.CaptureResult.Key)` will return non-`null`, if and only if that key that was enabled by the request. A few keys such as `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#STATISTICS_FACES:android.hardware.camera2.CaptureResult.Key` are disabled by default unless enabled with a switch (such as `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#STATISTICS_FACE_DETECT_MODE:android.hardware.camera2.CaptureRequest.Key`). Refer to each key documentation on a case-by-case basis.
+All properties returned by getAvailableCaptureResultKeys are available (that is get will return non-`null`, if and only if that key that was enabled by the request. A few keys such as `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#STATISTICS_FACES:android.hardware.camera2.CaptureResult.Key` are disabled by default unless enabled with a switch (such as `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#STATISTICS_FACE_DETECT_MODE:android.hardware.camera2.CaptureRequest.Key`). Refer to each key documentation on a case-by-case basis.
 
-For a logical multi-camera device, if the CaptureRequest contains a surface for an underlying physical camera, the corresponding `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#` object will include the metadata for that physical camera. And the mapping between the physical camera id and result metadata can be accessed via `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraResults()`. If all requested surfaces are for the logical camera, no metadata for physical camera will be included.
+For a logical multi-camera device, if the CaptureRequest contains a surface for an underlying physical camera, the corresponding TotalCaptureResult object will include the metadata for that physical camera. And the mapping between the physical camera id and result metadata can be accessed via getPhysicalCameraResults. If all requested surfaces are for the logical camera, no metadata for physical camera will be included.
 
-`https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#` objects are immutable.
+TotalCaptureResult objects are immutable.
 
 ## Summary
 
-Inherited constants From class `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#AUTOMOTIVE_LENS_FACING_EXTERIOR_FRONT:kotlin.Int`
+Inherited constants From class CameraMetadata `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#AUTOMOTIVE_LENS_FACING_EXTERIOR_FRONT:kotlin.Int`
 
 <br />
 
@@ -1237,7 +1237,7 @@ If SCENE_MODE_HDR is used with unsupported output types or capture intents, the 
 
 <br />
 
-This is deprecated, please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#createHighSpeedRequestList(android.hardware.camera2.CaptureRequest)` for high speed video recording.
+This is deprecated, please use createConstrainedHighSpeedCaptureSession and createHighSpeedRequestList for high speed video recording.
 
 Optimized for high speed video recording (frame rate \>=60fps) use case.
 
@@ -1937,7 +1937,7 @@ Devices with the DEPTH_OUTPUT capability might not list this capability, indicat
 
 The camera device supports capturing high-resolution images at \>= 20 frames per second, in at least the uncompressed YUV format, when post-processing settings are set to FAST. Additionally, all image resolutions less than 24 megapixels can be captured at \>= 10 frames per second. Here, 'high resolution' means at least 8 megapixels, or the maximum resolution of the device, whichever is smaller.
 
-More specifically, this means that a size matching the camera device's active array size is listed as a supported size for the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` format in either android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes or `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)`, with a minimum frame duration for that format and size of either \<= 1/20 s, or \<= 1/10 s if the image size is less than 24 megapixels, respectively; and the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES:android.hardware.camera2.CameraCharacteristics.Key` entry lists at least one FPS range where the minimum FPS is \>= 1 / minimumFrameDuration for the maximum-size YUV_420_888 format. If that maximum size is listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)`, then the list of resolutions for YUV_420_888 from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes contains at least one resolution \>= 8 megapixels, with a minimum frame duration of \<= 1/20 s.
+More specifically, this means that a size matching the camera device's active array size is listed as a supported size for the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` format in either android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes or getHighResolutionOutputSizes, with a minimum frame duration for that format and size of either \<= 1/20 s, or \<= 1/10 s if the image size is less than 24 megapixels, respectively; and the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES:android.hardware.camera2.CameraCharacteristics.Key` entry lists at least one FPS range where the minimum FPS is \>= 1 / minimumFrameDuration for the maximum-size YUV_420_888 format. If that maximum size is listed in getHighResolutionOutputSizes, then the list of resolutions for YUV_420_888 from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes contains at least one resolution \>= 8 megapixels, with a minimum frame duration of \<= 1/20 s.
 
 If the device supports the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW10:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW12:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW14:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#Y8:kotlin.Int`, then those can also be captured at the same rate as the maximum-size YUV_420_888 resolution is.
 
@@ -1951,9 +1951,9 @@ In addition, the `https://developer.android.com/reference/kotlin/android/hardwar
 
 <br />
 
-The device supports querying the possible combinations of color spaces, image formats, and dynamic range profiles supported by the camera and requesting a particular color space for a session via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setColorSpace(android.graphics.ColorSpace.Named)`.
+The device supports querying the possible combinations of color spaces, image formats, and dynamic range profiles supported by the camera and requesting a particular color space for a session via setColorSpace.
 
-Cameras that enable this capability may or may not also implement dynamic range profiles. If they don't, `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedDynamicRangeProfiles(android.graphics.ColorSpace.Named,%20kotlin.Int)` will return only `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#STANDARD:kotlin.Long` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpacesForDynamicRange(kotlin.Int,%20kotlin.Long)` will assume support of the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#STANDARD:kotlin.Long` profile in all combinations of color spaces and image formats.
+Cameras that enable this capability may or may not also implement dynamic range profiles. If they don't, getSupportedDynamicRangeProfiles will return only `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#STANDARD:kotlin.Long` and getSupportedColorSpacesForDynamicRange will assume support of the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#STANDARD:kotlin.Long` profile in all combinations of color spaces and image formats.
 
 <br />
 
@@ -1961,11 +1961,11 @@ Cameras that enable this capability may or may not also implement dynamic range 
 
 <br />
 
-The device supports constrained high speed video recording (frame rate \>=120fps) use case. The camera device will support high speed capture session created by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`, which only accepts high speed request lists created by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#createHighSpeedRequestList(android.hardware.camera2.CaptureRequest)`.
+The device supports constrained high speed video recording (frame rate \>=120fps) use case. The camera device will support high speed capture session created by createConstrainedHighSpeedCaptureSession, which only accepts high speed request lists created by createHighSpeedRequestList.
 
 A camera device can still support high speed video streaming by advertising the high speed FPS ranges in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES:android.hardware.camera2.CameraCharacteristics.Key`. For this case, all normal capture request per frame control and synchronization requirements will apply to the high speed fps ranges, the same as all other fps ranges. This capability describes the capability of a specialized operating mode with many limitations (see below), which is only targeted at high speed video recording.
 
-The supported high speed video sizes and fps ranges are specified in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()`. To get desired output frame rates, the application is only allowed to select video size and FPS range combinations provided by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()`. The fps range can be controlled via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_AE_TARGET_FPS_RANGE:android.hardware.camera2.CaptureRequest.Key`.
+The supported high speed video sizes and fps ranges are specified in getHighSpeedVideoFpsRanges. To get desired output frame rates, the application is only allowed to select video size and FPS range combinations provided by getHighSpeedVideoSizes. The fps range can be controlled via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_AE_TARGET_FPS_RANGE:android.hardware.camera2.CaptureRequest.Key`.
 
 In this capability, the camera device will override aeMode, awbMode, and afMode to ON, AUTO, and CONTINUOUS_VIDEO, respectively. All post-processing block mode controls will be overridden to be FAST. Therefore, no manual control of capture and post-processing parameters is possible. All other controls operate the same as when `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_MODE:android.hardware.camera2.CaptureRequest.Key` == AUTO. This means that all other android.control.\* fields continue to work, such as
 
@@ -1992,11 +1992,11 @@ For high speed recording use case, the actual maximum supported frame rate may b
 
 The camera device will only support up to 2 high speed simultaneous output surfaces (preview and recording surfaces) in this mode. Above controls will be effective only if all of below conditions are true:
 
-- The application creates a camera capture session with no more than 2 surfaces via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`. The targeted surfaces must be preview surface (either from `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` or `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`) or recording surface(either from `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#getSurface()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#createInputSurface()`).
-- The stream sizes are selected from the sizes reported by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()`.
-- The FPS ranges are selected from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()`.
+- The application creates a camera capture session with no more than 2 surfaces via createConstrainedHighSpeedCaptureSession. The targeted surfaces must be preview surface (either from `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` or `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`) or recording surface(either from getSurface or createInputSurface).
+- The stream sizes are selected from the sizes reported by getHighSpeedVideoSizes.
+- The FPS ranges are selected from getHighSpeedVideoFpsRanges.
 
-When above conditions are NOT satisfied, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)` will fail.
+When above conditions are NOT satisfied, createConstrainedHighSpeedCaptureSession will fail.
 
 Switching to a FPS range that has different maximum FPS may trigger some camera device reconfigurations, which may introduce extra latency. It is recommended that the application avoids unnecessary maximum target FPS changes as much as possible during high speed streaming.
 
@@ -2012,7 +2012,7 @@ This capability requires the camera device to support the following:
 
 - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH16:kotlin.Int` is supported as an output format.
 - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_POINT_CLOUD:kotlin.Int` is optionally supported as an output format.
-- This camera device, and all camera devices with the same `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_FACING:android.hardware.camera2.CameraCharacteristics.Key`, will list the following calibration metadata entries in both `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult`:
+- This camera device, and all camera devices with the same `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_FACING:android.hardware.camera2.CameraCharacteristics.Key`, will list the following calibration metadata entries in both CameraCharacteristics and CaptureResult:
  - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_POSE_TRANSLATION:android.hardware.camera2.CameraCharacteristics.Key`
  - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_POSE_ROTATION:android.hardware.camera2.CameraCharacteristics.Key`
  - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_INTRINSIC_CALIBRATION:android.hardware.camera2.CameraCharacteristics.Key`
@@ -2029,11 +2029,11 @@ Generally, depth output operates at a slower frame rate than standard color capt
 
 <br />
 
-The device supports one or more 10-bit camera outputs according to the dynamic range profiles specified in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getSupportedProfiles()`. They can be configured as part of the capture session initialization via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)`. Cameras that enable this capability must also support the following:
+The device supports one or more 10-bit camera outputs according to the dynamic range profiles specified in getSupportedProfiles. They can be configured as part of the capture session initialization via setDynamicRangeProfile. Cameras that enable this capability must also support the following:
 
 - Profile `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#HLG10:kotlin.Long`
 - All mandatory stream combinations for this specific capability as per [documentation](CameraDevice.md)
-- In case the device is not able to capture some combination of supported standard 8-bit and/or 10-bit dynamic range profiles within the same capture request, then those constraints must be listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getProfileCaptureRequestConstraints(kotlin.Long)`
+- In case the device is not able to capture some combination of supported standard 8-bit and/or 10-bit dynamic range profiles within the same capture request, then those constraints must be listed in getProfileCaptureRequestConstraints
 - Recommended dynamic range profile listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_RECOMMENDED_TEN_BIT_DYNAMIC_RANGE_PROFILE:android.hardware.camera2.CameraCharacteristics.Key`.
 
 <br />
@@ -2044,21 +2044,21 @@ The device supports one or more 10-bit camera outputs according to the dynamic r
 
 The camera device is a logical camera backed by two or more physical cameras.
 
-In API level 28, the physical cameras must also be exposed to the application via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraIdList()`.
+In API level 28, the physical cameras must also be exposed to the application via getCameraIdList.
 
 Starting from API level 29:
 
-- Some or all physical cameras may not be independently exposed to the application, in which case the physical camera IDs will not be available in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraIdList()`. But the application can still query the physical cameras' characteristics by calling `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraCharacteristics(kotlin.String)`.
-- If a physical camera is hidden from camera ID list, the mandatory stream combinations for that physical camera must be supported through the logical camera using physical streams. One exception is that in API level 30, a physical camera may become unavailable via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager.AvailabilityCallback#onPhysicalCameraUnavailable(kotlin.String,%20kotlin.String)` callback.
+- Some or all physical cameras may not be independently exposed to the application, in which case the physical camera IDs will not be available in getCameraIdList. But the application can still query the physical cameras' characteristics by calling getCameraCharacteristics.
+- If a physical camera is hidden from camera ID list, the mandatory stream combinations for that physical camera must be supported through the logical camera using physical streams. One exception is that in API level 30, a physical camera may become unavailable via onPhysicalCameraUnavailable callback.
 
-Combinations of logical and physical streams, or physical streams from different physical cameras are not guaranteed. However, if the camera device supports `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)`, application must be able to query whether a stream combination involving physical streams is supported by calling `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)`.
+Combinations of logical and physical streams, or physical streams from different physical cameras are not guaranteed. However, if the camera device supports isSessionConfigurationSupported, application must be able to query whether a stream combination involving physical streams is supported by calling isSessionConfigurationSupported.
 
 Camera application shouldn't assume that there are at most 1 rear camera and 1 front camera in the system. For an application that switches between front and back cameras, the recommendation is to switch between the first rear camera and the first front camera in the list of supported camera devices.
 
 This capability requires the camera device to support the following:
 
-- The IDs of underlying physical cameras are returned via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getPhysicalCameraIds()`.
-- This camera device must list static metadata `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LOGICAL_MULTI_CAMERA_SENSOR_SYNC_TYPE:android.hardware.camera2.CameraCharacteristics.Key` in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics`.
+- The IDs of underlying physical cameras are returned via getPhysicalCameraIds.
+- This camera device must list static metadata `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LOGICAL_MULTI_CAMERA_SENSOR_SYNC_TYPE:android.hardware.camera2.CameraCharacteristics.Key` in CameraCharacteristics.
 - The underlying physical cameras' static metadata must list the following entries, so that the application can correlate pixels from the physical streams:
  - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_POSE_REFERENCE:android.hardware.camera2.CameraCharacteristics.Key`
  - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_POSE_ROTATION:android.hardware.camera2.CameraCharacteristics.Key`
@@ -2109,7 +2109,7 @@ Typically the physical stream of active physical camera has the same field-of-vi
 For a logical camera, typically the underlying physical cameras have different RAW capabilities (such as resolution or CFA pattern). There are two ways for the application to capture RAW images from the logical camera:
 
 - If the logical camera has RAW capability, the application can create and use RAW streams in the same way as before. In case a RAW stream is configured, to maintain backward compatibility, the camera device makes sure the default active physical camera remains active and does not switch to other physical cameras. (One exception is that, if the logical camera consists of identical image sensors and advertises multiple focalLength due to different lenses, the camera device may generate RAW images from different physical cameras based on the focalLength being set by the application.) This backward-compatible approach usually results in loss of optical zoom, to telephoto lens or to ultrawide lens.
-- Alternatively, if supported by the device, `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` can be used to capture RAW images from one of the underlying physical cameras ( depending on current zoom level). Because different physical cameras may have different RAW characteristics, the application needs to use the characteristics and result metadata of the active physical camera for the relevant RAW metadata.
+- Alternatively, if supported by the device, MultiResolutionImageReader can be used to capture RAW images from one of the underlying physical cameras ( depending on current zoom level). Because different physical cameras may have different RAW characteristics, the application needs to use the characteristics and result metadata of the active physical camera for the relevant RAW metadata.
 
 The capture request and result metadata tags required for backward compatible camera functionalities will be solely based on the logical camera capability. On the other hand, the use of manual capture controls (sensor or post-processing) with a logical camera may result in unexpected behavior when the HAL decides to switch between physical cameras with different characteristics under the hood. For example, when the application manually sets exposure time and sensitivity while zooming in, the brightness of the camera images may suddenly change because HAL switches from one physical camera to the other.
 
@@ -2238,9 +2238,9 @@ While the camera device is processing offline requests, it might not be able to 
 The camera device supports the Zero Shutter Lag reprocessing use case.
 
 - One input stream is supported, that is, `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_MAX_NUM_INPUT_STREAMS:android.hardware.camera2.CameraCharacteristics.Key` == 1 ``.
-- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` is supported as an output/input format, that is, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` is included in the lists of formats returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()`.
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)` returns non-empty int\[\] for each supported input format returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()`.
-- Each size returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)` is also included in android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes
+- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` is supported as an output/input format, that is, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` is included in the lists of formats returned by getInputFormats and getOutputFormats.
+- getValidOutputFormatsForInput returns non-empty int\[\] for each supported input format returned by getInputFormats.
+- Each size returned by getInputSizes is also included in android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes
 - Using `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` does not cause a frame rate drop relative to the sensor's maximum capture rate (at that resolution).
 - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` will be reprocessable into both `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` formats.
 - For a MONOCHROME camera supporting Y8 format, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` will be reprocessable into `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#Y8:kotlin.Int`.
@@ -2296,15 +2296,15 @@ The device supports reprocessing from the `RAW_SENSOR` format with a bayer patte
 
 This capability will only be present for devices with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability. When `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` devices do not advertise this capability, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` images will already have a regular bayer pattern.
 
-If a `RAW_SENSOR` stream is requested along with another non-RAW stream in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` (if multiple streams are supported when `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`), the `RAW_SENSOR` stream will have a regular bayer pattern.
+If a `RAW_SENSOR` stream is requested along with another non-RAW stream in a CaptureRequest (if multiple streams are supported when `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`), the `RAW_SENSOR` stream will have a regular bayer pattern.
 
 This capability requires the camera device to support the following :
 
-- The `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap` mentioned below refers to the one, described by `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` ``.
+- The StreamConfigurationMap mentioned below refers to the one, described by `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` ``.
 - One input stream is supported, that is, `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_MAX_NUM_INPUT_STREAMS:android.hardware.camera2.CameraCharacteristics.Key` == 1 ``.
-- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` is supported as an output/input format, that is, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` is included in the lists of formats returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()`.
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)` returns non-empty int\[\] for each supported input format returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()`.
-- Each size returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)` is also included in android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes
+- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` is supported as an output/input format, that is, `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` is included in the lists of formats returned by getInputFormats and getOutputFormats.
+- getValidOutputFormatsForInput returns non-empty int\[\] for each supported input format returned by getInputFormats.
+- Each size returned by getInputSizes is also included in android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes
 - Using `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` does not cause a frame rate drop relative to the sensor's maximum capture rate (at that resolution).
 - No CaptureRequest controls will be applicable when a request has an input target with `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` format.
 
@@ -2322,7 +2322,7 @@ The camera device is capable of writing image data into a region of memory inacc
 
 <br />
 
-The camera device supports selecting a per-stream use case via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setStreamUseCase(kotlin.Long)` so that the device can optimize camera pipeline parameters such as tuning, sensor mode, or ISP settings for a specific user scenario. Some sample usages of this capability are:
+The camera device supports selecting a per-stream use case via setStreamUseCase so that the device can optimize camera pipeline parameters such as tuning, sensor mode, or ISP settings for a specific user scenario. Some sample usages of this capability are:
 
 - Distinguish high quality YUV captures from a regular YUV stream where the image quality may not be as good as the JPEG stream, or
 - Use one stream to serve multiple purposes: viewfinder, video recording and still capture. This is common with applications that wish to apply edits equally to preview, saved images, and saved videos.
@@ -2338,7 +2338,7 @@ This capability requires the camera device to support the following stream use c
 
 `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_AVAILABLE_STREAM_USE_CASES:android.hardware.camera2.CameraCharacteristics.Key` lists all of the supported stream use cases.
 
-Refer to the [guideline](CameraDevice.md) for the mandatory stream combinations involving stream use cases, which can also be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination`.
+Refer to the [guideline](CameraDevice.md) for the mandatory stream combinations involving stream use cases, which can also be queried via MandatoryStreamCombination.
 
 <br />
 
@@ -2365,9 +2365,9 @@ This camera device is capable of producing ultra high resolution images in addit
 The camera device supports the YUV_420_888 reprocessing use case, similar as PRIVATE_REPROCESSING, This capability requires the camera device to support the following:
 
 - One input stream is supported, that is, `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_MAX_NUM_INPUT_STREAMS:android.hardware.camera2.CameraCharacteristics.Key` == 1 ``.
-- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` is supported as an output/input format, that is, YUV_420_888 is included in the lists of formats returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()`.
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)` returns non-empty int\[\] for each supported input format returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()`.
-- Each size returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)` is also included in android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes
+- `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` is supported as an output/input format, that is, YUV_420_888 is included in the lists of formats returned by getInputFormats and getOutputFormats.
+- getValidOutputFormatsForInput returns non-empty int\[\] for each supported input format returned by getInputFormats.
+- Each size returned by getInputSizes is also included in android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes
 - Using `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` does not cause a frame rate drop relative to the sensor's maximum capture rate (at that resolution).
 - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` will be reprocessable into both `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` formats.
 - The maximum available resolution for `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` streams (both input/output) will match the maximum available resolution of `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` streams.
@@ -2579,9 +2579,9 @@ Sensor is not Bayer; output has 3 16-bit values for each pixel, instead of just 
 
 <br />
 
-Timestamps from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#SENSOR_TIMESTAMP:android.hardware.camera2.CaptureResult.Key` are in the same timebase as `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtimeNanos()`, and they can be compared to other timestamps using that base.
+Timestamps from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#SENSOR_TIMESTAMP:android.hardware.camera2.CaptureResult.Key` are in the same timebase as elapsedRealtimeNanos, and they can be compared to other timestamps using that base.
 
-When buffers from a REALTIME device are passed directly to a video encoder from the camera, automatic compensation is done to account for differing timebases of the audio and camera subsystems. If the application is receiving buffers and then later sending them to a video encoder or other application where they are compared with audio subsystem timestamps or similar, this compensation is not present. In those cases, applications need to adjust the timestamps themselves. Since `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtimeNanos()` and `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` only diverge while the device is asleep, an offset between the two sources can be measured once per active session and applied to timestamps for sufficient accuracy for A/V sync.
+When buffers from a REALTIME device are passed directly to a video encoder from the camera, automatic compensation is done to account for differing timebases of the audio and camera subsystems. If the application is receiving buffers and then later sending them to a video encoder or other application where they are compared with audio subsystem timestamps or similar, this compensation is not present. In those cases, applications need to adjust the timestamps themselves. Since elapsedRealtimeNanos and uptimeMillis only diverge while the device is asleep, an offset between the two sources can be measured once per active session and applied to timestamps for sufficient accuracy for A/V sync.
 
 <br />
 
@@ -2589,7 +2589,7 @@ When buffers from a REALTIME device are passed directly to a video encoder from 
 
 <br />
 
-Timestamps from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#SENSOR_TIMESTAMP:android.hardware.camera2.CaptureResult.Key` are in nanoseconds and monotonic, but can not be compared to timestamps from other subsystems (e.g. accelerometer, gyro etc.), or other instances of the same or different camera devices in the same system with accuracy. However, the timestamps are roughly in the same timebase as `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`. The accuracy is sufficient for tasks like A/V synchronization for video recording, at least, and the timestamps can be directly used together with timestamps from the audio subsystem for that task.
+Timestamps from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#SENSOR_TIMESTAMP:android.hardware.camera2.CaptureResult.Key` are in nanoseconds and monotonic, but can not be compared to timestamps from other subsystems (e.g. accelerometer, gyro etc.), or other instances of the same or different camera devices in the same system with accuracy. However, the timestamps are roughly in the same timebase as uptimeMillis. The accuracy is sufficient for tasks like A/V synchronization for video recording, at least, and the timestamps can be directly used together with timestamps from the audio subsystem for that task.
 
 Timestamps between streams and results for a single camera instance are comparable, and the timestamps for all buffers and the result metadata generated by a single capture are identical.
 
@@ -3036,32 +3036,32 @@ Tonemapping curve is defined by sRGB
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureResult](CaptureResult.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPartialResults()()` Get the read-only list of partial results that compose this total result. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [CaptureResult](CaptureResult.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraResults()()` Get the map between physical camera ids and their capture result metadata |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [TotalCaptureResult](TotalCaptureResult.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraTotalResults()()` Get the map between physical camera ids and their total capture result metadata |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureResult](CaptureResult.md)!\> | getPartialResults Get the read-only list of partial results that compose this total result. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [CaptureResult](CaptureResult.md)!\>! | getPhysicalCameraResults Get the map between physical camera ids and their capture result metadata |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [TotalCaptureResult](TotalCaptureResult.md)!\> | getPhysicalCameraTotalResults Get the map between physical camera ids and their total capture result metadata |
 | --- | --- |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult` `T?` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#get(android.hardware.camera2.CaptureResult.Key)(key: https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key<T>!)`
+Inherited functions From class CaptureResult `T?` get
 
 <br />
 
 Get a capture result field value.
 
-The field definitions can be found in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult`.
+The field definitions can be found in CaptureResult.
 
 Querying the value for the same key more than once will return a value which is equal to the previous queried value.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#getCameraId()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` getCameraId
 
 <br />
 
-Get the camera ID of the camera that produced this capture result. For a logical multi-camera, the ID may be the logical or the physical camera ID, depending on whether the capture result was obtained from `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraResults()` or not.
+Get the camera ID of the camera that produced this capture result. For a logical multi-camera, the ID may be the logical or the physical camera ID, depending on whether the capture result was obtained from getPhysicalCameraResults or not.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#getFrameNumber()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` getFrameNumber
 
 <br />
 
@@ -3069,11 +3069,11 @@ Get the frame number associated with this result.
 
 Whenever a request has been processed, regardless of failure or success, it gets a unique frame number assigned to its future result/failure.
 
-For the same type of request (capturing from the camera device or reprocessing), this value monotonically increments, starting with 0, for every new result or failure and the scope is the lifetime of the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`. Between different types of requests, the frame number may not monotonically increment. For example, the frame number of a newer reprocess result may be smaller than the frame number of an older result of capturing new images from the camera device, but the frame number of a newer reprocess result will never be smaller than the frame number of an older reprocess result.
+For the same type of request (capturing from the camera device or reprocessing), this value monotonically increments, starting with 0, for every new result or failure and the scope is the lifetime of the CameraDevice. Between different types of requests, the frame number may not monotonically increment. For example, the frame number of a newer reprocess result may be smaller than the frame number of an older result of capturing new images from the camera device, but the frame number of a newer reprocess result will never be smaller than the frame number of an older reprocess result.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key<*>!>` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#getKeys()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key<*>!>` getKeys
 
 <br />
 
@@ -3085,13 +3085,13 @@ All values retrieved by a key from this list with `get` are guaranteed to be non
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#getRequest()()`
+CaptureRequest getRequest
 
 <br />
 
 Get the request associated with this result.
 
-Whenever a request has been fully or partially captured, with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.CaptureCallback#onCaptureCompleted(android.hardware.camera2.CameraCaptureSession,%20android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.TotalCaptureResult)` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.CaptureCallback#onCaptureProgressed(android.hardware.camera2.CameraCaptureSession,%20android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CaptureResult)`, the `result`'s `getRequest()` will return that `request`.
+Whenever a request has been fully or partially captured, with onCaptureCompleted or onCaptureProgressed, the `result`'s `getRequest()` will return that `request`.
 
 For example,
 
@@ -3109,17 +3109,17 @@ For example,
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#getSequenceId()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getSequenceId
 
 <br />
 
-The sequence ID for this failure that was returned by the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#capture(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)` family of functions.
+The sequence ID for this failure that was returned by the capture family of functions.
 
 The sequence ID is a unique monotonically increasing value starting from 0, incremented every time a new group of requests is submitted to the CameraDevice.
 
 <br />
 
-Inherited properties From class `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#BLACK_LEVEL_LOCK:android.hardware.camera2.CaptureResult.Key`
+Inherited properties From class CaptureResult `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult.Key<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#BLACK_LEVEL_LOCK:android.hardware.camera2.CaptureResult.Key`
 
 <br />
 
@@ -3508,7 +3508,7 @@ When setting the AE metering regions, the application must consider the addition
 
 Starting from API level 30, the coordinate system of activeArraySize or preCorrectionActiveArraySize is used to represent post-zoomRatio field of view, not pre-zoom field of view. This means that the same aeRegions values at different `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` represent different parts of the scene. The aeRegions coordinates are relative to the activeArray/preCorrectionActiveArray representing the zoomed field of view. If `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` is set to 1.0 (default), the same aeRegions at different `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` still represent the same parts of the scene as they do before. See `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for details. Whether to use activeArraySize or preCorrectionActiveArraySize still depends on distortion correction mode.
 
-For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()` lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
+For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where getAvailableCaptureRequestKeys lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
 
 **Units** : Pixel coordinates within `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` depending on distortion correction capability and mode
 
@@ -3570,7 +3570,7 @@ Only constrains auto-exposure (AE) algorithm, not manual control of `https://dev
 
 Note that the actual achievable max framerate also depends on the minimum frame duration of the output streams. The max frame rate will be `min(aeTargetFpsRange.maxFps, 1 / max(individual stream min durations))`. For example, if the application sets this key to `{60, 60}`, but the maximum minFrameDuration among all configured streams is 33ms, the maximum framerate won't be 60fps, but will be 30fps.
 
-To start a CaptureSession with a target FPS range different from the capture request template's default value, the application is strongly recommended to call `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setSessionParameters(android.hardware.camera2.CaptureRequest)` with the target fps range before creating the capture session. The aeTargetFpsRange is typically a session parameter. Specifying it at session creation time helps avoid session reconfiguration delays in cases like 60fps or high speed recording.
+To start a CaptureSession with a target FPS range different from the capture request template's default value, the application is strongly recommended to call setSessionParameters with the target fps range before creating the capture session. The aeTargetFpsRange is typically a session parameter. Specifying it at session creation time helps avoid session reconfiguration delays in cases like 60fps or high speed recording.
 
 **Units**: Frames per second (FPS)
 
@@ -3634,7 +3634,7 @@ When setting the AF metering regions, the application must consider the addition
 
 Starting from API level 30, the coordinate system of activeArraySize or preCorrectionActiveArraySize is used to represent post-zoomRatio field of view, not pre-zoom field of view. This means that the same afRegions values at different `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` represent different parts of the scene. The afRegions coordinates are relative to the activeArray/preCorrectionActiveArray representing the zoomed field of view. If `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` is set to 1.0 (default), the same afRegions at different `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` still represent the same parts of the scene as they do before. See `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for details. Whether to use activeArraySize or preCorrectionActiveArraySize still depends on distortion correction mode.
 
-For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()` lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
+For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where getAvailableCaptureRequestKeys lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
 
 **Units** : Pixel coordinates within `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` depending on distortion correction capability and mode
 
@@ -3654,7 +3654,7 @@ Whether a significant scene change is detected within the currently-set AF regio
 
 When the camera focus routine detects a change in the scene it is looking at, such as a large shift in camera viewpoint, significant motion in the scene, or a significant illumination change, this value will be set to DETECTED for a single capture result. Otherwise the value will be NOT_DETECTED. The threshold for detection is similar to what would trigger a new passive focus scan to begin in CONTINUOUS autofocus modes.
 
-This key will be available if the camera device advertises this key via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureResultKeys()`.
+This key will be available if the camera device advertises this key via getAvailableCaptureResultKeys.
 
 **Possible values:**
 
@@ -3866,7 +3866,7 @@ When setting the AWB metering regions, the application must consider the additio
 
 Starting from API level 30, the coordinate system of activeArraySize or preCorrectionActiveArraySize is used to represent post-zoomRatio field of view, not pre-zoom field of view. This means that the same awbRegions values at different `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` represent different parts of the scene. The awbRegions coordinates are relative to the activeArray/preCorrectionActiveArray representing the zoomed field of view. If `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` is set to 1.0 (default), the same awbRegions at different `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` still represent the same parts of the scene as they do before. See `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for details. Whether to use activeArraySize or preCorrectionActiveArraySize still depends on distortion correction mode.
 
-For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()` lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
+For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where getAvailableCaptureRequestKeys lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
 
 **Units** : Pixel coordinates within `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` depending on distortion correction capability and mode
 
@@ -4013,7 +4013,7 @@ When set to BOKEH_STILL_CAPTURE mode with PREVIEW capture intent,
 
 When set to BOKEH_CONTINUOUS mode, configured streams dimension should not exceed this mode's maximum streaming dimension in order to have bokeh effect applied. Bokeh effect may not be available for streams larger than the maximum streaming dimension.
 
-Switching between different extended scene modes may involve reconfiguration of the camera pipeline, resulting in long latency. The application should check this key against the available session keys queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableSessionKeys()`.
+Switching between different extended scene modes may involve reconfiguration of the camera pipeline, resulting in long latency. The application should check this key against the available session keys queried via getAvailableSessionKeys.
 
 For a logical multi-camera, bokeh may be implemented by stereo vision from sub-cameras with different field of view. As a result, when bokeh mode is enabled, the camera device may override `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key`, and the field of view may be smaller than when bokeh mode is off.
 
@@ -4058,7 +4058,7 @@ This is a top-level 3A control switch. When set to OFF, all 3A control by the ca
 
 When set to AUTO, the individual algorithm controls in android.control.\* are in effect, such as `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_AF_MODE:android.hardware.camera2.CaptureRequest.Key`.
 
-When set to USE_SCENE_MODE or USE_EXTENDED_SCENE_MODE, the individual controls in android.control.\* are mostly disabled, and the camera device implements one of the scene mode or extended scene mode settings (such as ACTION, SUNSET, PARTY, or BOKEH) as it wishes. The camera device scene mode 3A settings are provided by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult`.
+When set to USE_SCENE_MODE or USE_EXTENDED_SCENE_MODE, the individual controls in android.control.\* are mostly disabled, and the camera device implements one of the scene mode or extended scene mode settings (such as ACTION, SUNSET, PARTY, or BOKEH) as it wishes. The camera device scene mode 3A settings are provided by CaptureResult.
 
 When set to OFF_KEEP_STATE, it is similar to OFF mode, the only difference is that this frame will not be used by camera device background 3A statistics update, as if this frame is never captured. This mode can be used in the scenario where the application doesn't want a 3A manual control capture to affect the subsequent auto 3A capture results.
 
@@ -4217,11 +4217,11 @@ Switching between different video stabilization modes may take several frames to
 
 In addition, not all recording sizes or frame rates may be supported for stabilization by a device that reports stabilization support. It is guaranteed that an output targeting a MediaRecorder or MediaCodec will be stabilized if the recording resolution is less than or equal to 1920 x 1080 (width less than or equal to 1920, height less than or equal to 1080), and the recording frame rate is less than or equal to 30fps. At other sizes, the CaptureResult `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_VIDEO_STABILIZATION_MODE:android.hardware.camera2.CaptureRequest.Key` field will return OFF if the recording output is not stabilized, or if there are no output Surface types that can be stabilized.
 
-The application is strongly recommended to call `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setSessionParameters(android.hardware.camera2.CaptureRequest)` with the desired video stabilization mode before creating the capture session. Video stabilization mode is a session parameter on many devices. Specifying it at session creation time helps avoid reconfiguration delay caused by difference between the default value and the first CaptureRequest.
+The application is strongly recommended to call setSessionParameters with the desired video stabilization mode before creating the capture session. Video stabilization mode is a session parameter on many devices. Specifying it at session creation time helps avoid reconfiguration delay caused by difference between the default value and the first CaptureRequest.
 
 If a camera device supports both this mode and OIS (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#LENS_OPTICAL_STABILIZATION_MODE:android.hardware.camera2.CaptureRequest.Key`), turning both modes on may produce undesirable interaction, so it is recommended not to enable both at the same time.
 
-If video stabilization is set to "PREVIEW_STABILIZATION", `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#LENS_OPTICAL_STABILIZATION_MODE:android.hardware.camera2.CaptureRequest.Key` is overridden. The camera sub-system may choose to turn on hardware based image stabilization in addition to software based stabilization if it deems that appropriate. This key may be a part of the available session keys, which camera clients may query via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableSessionKeys()`. If this is the case, changing this key over the life-time of a capture session may cause delays / glitches.
+If video stabilization is set to "PREVIEW_STABILIZATION", `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#LENS_OPTICAL_STABILIZATION_MODE:android.hardware.camera2.CaptureRequest.Key` is overridden. The camera sub-system may choose to turn on hardware based image stabilization in addition to software based stabilization if it deems that appropriate. This key may be a part of the available session keys, which camera clients may query via getAvailableSessionKeys. If this is the case, changing this key over the life-time of a capture session may cause delays / glitches.
 
 **Possible values:**
 
@@ -4389,11 +4389,11 @@ For YUV_REPROCESSING, these FAST/HIGH_QUALITY modes both mean that the camera de
 
 Contains the extension type of the currently active extension
 
-The capture result will only be supported and included by camera extension `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession`. In case the extension session was configured to use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_AUTOMATIC:kotlin.Int`, then the extension type value will indicate the currently active extension like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_HDR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` etc. , and will never return `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_AUTOMATIC:kotlin.Int`. In case the extension session was configured to use an extension different from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_AUTOMATIC:kotlin.Int`, then the result type will always match with the configured extension type.
+The capture result will only be supported and included by camera extension CameraExtensionSession. In case the extension session was configured to use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_AUTOMATIC:kotlin.Int`, then the extension type value will indicate the currently active extension like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_HDR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` etc. , and will never return `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_AUTOMATIC:kotlin.Int`. In case the extension session was configured to use an extension different from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_AUTOMATIC:kotlin.Int`, then the result type will always match with the configured extension type.
 
 **Range of valid values:** 
 
-Extension type value listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics`
+Extension type value listed in CameraExtensionCharacteristics
 
 **Optional** - The value for this key may be `null` on some devices.
 
@@ -4407,9 +4407,9 @@ Indicates when to activate Night Mode Camera Extension for high-quality still ca
 
 Provides awareness to the application when the current scene can benefit from using a Night Mode Camera Extension to take a high-quality photo.
 
-Support for this capture result can be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureResultKeys()`.
+Support for this capture result can be queried via getAvailableCaptureResultKeys.
 
-If the device supports this capability then it will also support `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` and will be available in both `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession`.
+If the device supports this capability then it will also support `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` and will be available in both CameraCaptureSession and CameraExtensionSession.
 
 The value will be `UNKNOWN` in the following auto exposure modes: ON_AUTO_FLASH, ON_ALWAYS_FLASH, ON_AUTO_FLASH_REDEYE, or ON_EXTERNAL_FLASH.
 
@@ -4435,7 +4435,7 @@ This control allows Camera extension clients to configure the strength of the ap
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_HDR:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` - the strength can control the amount of images fused and the brightness of the final image.
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_FACE_RETOUCH:kotlin.Int` - the strength value will control the amount of cosmetic enhancement and skin smoothing.
 
-The control will be supported if the capture request key is part of the list generated by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getAvailableCaptureRequestKeys(kotlin.Int)`. The control is only defined and available to clients sending capture requests via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession`. If the client doesn't specify the extension strength value, then a default value will be set by the extension. Clients can retrieve the default value by checking the corresponding capture result.
+The control will be supported if the capture request key is part of the list generated by getAvailableCaptureRequestKeys. The control is only defined and available to clients sending capture requests via CameraExtensionSession. If the client doesn't specify the extension strength value, then a default value will be set by the extension. Clients can retrieve the default value by checking the corresponding capture result.
 
 **Range of valid values:** 
 
@@ -4557,7 +4557,7 @@ However, it is increasingly possible for camera devices to not be restricted to 
 
 This key provides a basic classification of the type of camera this camera ID represents, so that applications may decide on the appropriate level of trust to extend to the image data produced by it.
 
-Note that in some cases, it is possible for the user to swap the definition of a camera ID to a different one, such as when connecting a remote camera to act as the front camera of the device. This is normally transparent to the camera-using application to minimize user friction, but applications that care about this possibility should always verify the value of this key in the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics` before opening a camera, instead of caching it, and should also watch the value of this key in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult` as well, since it may change mid-session.
+Note that in some cases, it is possible for the user to swap the definition of a camera ID to a different one, such as when connecting a remote camera to act as the front camera of the device. This is normally transparent to the camera-using application to minimize user friction, but applications that care about this possibility should always verify the value of this key in the CameraCharacteristics before opening a camera, instead of caching it, and should also watch the value of this key in CaptureResult as well, since it may change mid-session.
 
 **Possible values:**
 
@@ -4592,7 +4592,7 @@ The orientation for a JPEG image.
 
 The clockwise rotation angle in degrees, relative to the orientation to the camera, that the JPEG picture needs to be rotated by, to be viewed upright.
 
-Camera devices may either encode this value into the JPEG EXIF header, or rotate the image data to match this orientation. When the image data is rotated, the thumbnail data will also be rotated. Additionally, in the case where the image data is rotated, `https://developer.android.com/reference/kotlin/android/media/Image.html#getWidth()` and `https://developer.android.com/reference/kotlin/android/media/Image.html#getHeight()` will not be updated to reflect the height and width of the rotated image.
+Camera devices may either encode this value into the JPEG EXIF header, or rotate the image data to match this orientation. When the image data is rotated, the thumbnail data will also be rotated. Additionally, in the case where the image data is rotated, getWidth and getHeight will not be updated to reflect the height and width of the rotated image.
 
 Note that this orientation is relative to the orientation of the camera sensor, given by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_ORIENTATION:android.hardware.camera2.CameraCharacteristics.Key`.
 
@@ -4798,7 +4798,7 @@ where:
 - `sw` is the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PHYSICAL_SIZE:android.hardware.camera2.CameraCharacteristics.Key` width,
 - `fl` is `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#LENS_FOCAL_LENGTH:android.hardware.camera2.CaptureRequest.Key`.
 
-Using this control to switch between lenses is not supported on most devices. Starting from API level 30, the application is strongly recommended to use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for combined optical and digital zoom. To exclusively use a particular focal length lens in a logical multi-camera, applications can iterate over the physical cameras exposed by the logical multi-camera device via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getPhysicalCameraIds()` and select the one with the desired focal length.
+Using this control to switch between lenses is not supported on most devices. Starting from API level 30, the application is strongly recommended to use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for combined optical and digital zoom. To exclusively use a particular focal length lens in a logical multi-camera, applications can iterate over the physical cameras exposed by the logical multi-camera device via getPhysicalCameraIds and select the one with the desired focal length.
 
 **Units**: Millimeters
 
@@ -5086,7 +5086,7 @@ The ID of the active physical camera that's backing the logical camera. All came
 
 For a logical camera made up of physical cameras where each camera's lenses have different characteristics, the camera device may choose to switch between the physical cameras when application changes FOCAL_LENGTH or SCALER_CROP_REGION. At the time of lens switch, this result metadata reflects the new active physical camera ID.
 
-This key will be available if the camera device advertises this key via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureResultKeys()`. When available, this must be one of valid physical IDs backing this logical multi-camera. If this key is not available for a logical multi-camera, the camera device implementation may still switch between different active physical cameras based on use case, but the current active physical camera information won't be available to the application.
+This key will be available if the camera device advertises this key via getAvailableCaptureResultKeys. When available, this must be one of valid physical IDs backing this logical multi-camera. If this key is not available for a logical multi-camera, the camera device implementation may still switch between different active physical cameras based on use case, but the current active physical camera information won't be available to the application.
 
 **Optional** - The value for this key may be `null` on some devices.
 
@@ -5100,7 +5100,7 @@ The current region of the active physical sensor that will be read out for this 
 
 This capture result matches with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` on non-logical single camera sensor devices. In case of logical cameras that can switch between several physical devices in response to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key`, this capture result will not behave like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key`, where the combination of both reflects the effective zoom and crop of the logical camera output. Instead, this capture result value will describe the zoom and crop of the active physical device. Some examples of when the value of this capture result will change include switches between different physical lenses, switches between regular and maximum resolution pixel mode and going through the device digital or optical range. This capture result is similar to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SCALER_CROP_REGION:android.hardware.camera2.CaptureRequest.Key` with respect to distortion correction. When the distortion correction mode is OFF, the coordinate system follows `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key`, with (0, 0) being the top-left pixel of the pre-correction active array. When the distortion correction mode is not OFF, the coordinate system follows `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key`, with (0, 0) being the top-left pixel of the active array.
 
-For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()` lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, the current active physical device `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
+For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where getAvailableCaptureRequestKeys lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, the current active physical device `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
 
 **Units** : Pixel coordinates relative to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` of the currently `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_ID:android.hardware.camera2.CaptureResult.Key` depending on distortion correction capability and mode
 
@@ -5114,7 +5114,7 @@ For camera devices with the `https://developer.android.com/reference/kotlin/andr
 
 Controls whether the camera device could also return additional physical cameras' metadata in the results.
 
-This control must only be turned on when device is using logical camera, which are devices that have `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_LOGICAL_MULTI_CAMERA:kotlin.Int` capability and the key is supported in the device's `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()`. Once this key is set to ON, if the camera device has multiple physical cameras active, the TotalCaptureResult will contain additional physical camera metadata in the result. One of such scenario is at the time of lens switch during zoom, where in addition to the active physical camera, a secondary physical camera runs as a "follower" and produces an additional physical camera CaptureResult. The application can call `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraTotalResults()` to get the additional results.
+This control must only be turned on when device is using logical camera, which are devices that have `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_LOGICAL_MULTI_CAMERA:kotlin.Int` capability and the key is supported in the device's getAvailableCaptureRequestKeys. Once this key is set to ON, if the camera device has multiple physical cameras active, the TotalCaptureResult will contain additional physical camera metadata in the result. One of such scenario is at the time of lens switch during zoom, where in addition to the active physical camera, a secondary physical camera runs as a "follower" and produces an additional physical camera CaptureResult. The application can call getPhysicalCameraTotalResults to get the additional results.
 
 **Optional** - The value for this key may be `null` on some devices.
 
@@ -5261,7 +5261,7 @@ The camera sensor output aspect ratio depends on factors such as output stream c
 
 Starting from API level 30, it's strongly recommended to use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` to take advantage of better support for zoom with logical multi-camera. The benefits include better precision with optical-digital zoom combination, and ability to do zoom-out from 1.0x. When using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for zoom, the crop region in the capture request should be left as the default activeArray size. The coordinate system is post-zoom, meaning that the activeArraySize or preCorrectionActiveArraySize covers the camera device's field of view "after" zoom. See `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureRequest.Key` for details.
 
-For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()` lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
+For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where getAvailableCaptureRequestKeys lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` / `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` must be used as the coordinate system for requests where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` is set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
 
 **Units** : Pixel coordinates relative to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PRE_CORRECTION_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key` depending on distortion correction capability and mode
 
@@ -5374,7 +5374,7 @@ The values are given in the same order as channels listed for the CFA layout key
 
 For a MONOCHROME camera, all of the 2x2 channels must have the same values.
 
-This key will be available if `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_OPTICAL_BLACK_REGIONS:android.hardware.camera2.CameraCharacteristics.Key` is available or the camera device advertises this key via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureResultKeys()`.
+This key will be available if `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_OPTICAL_BLACK_REGIONS:android.hardware.camera2.CameraCharacteristics.Key` is available or the camera device advertises this key via getAvailableCaptureResultKeys.
 
 **Range of valid values:** 
 
@@ -5392,7 +5392,7 @@ Maximum raw value output by sensor for this frame.
 
 Since the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_BLACK_LEVEL_PATTERN:android.hardware.camera2.CameraCharacteristics.Key` may change for different capture settings (e.g., `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_SENSITIVITY:android.hardware.camera2.CaptureRequest.Key`), the white level will change accordingly. This key is similar to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_WHITE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key`, but specifies the camera device estimated white level for each frame.
 
-This key will be available if `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_OPTICAL_BLACK_REGIONS:android.hardware.camera2.CameraCharacteristics.Key` is available or the camera device advertises this key via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()`.
+This key will be available if `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_OPTICAL_BLACK_REGIONS:android.hardware.camera2.CameraCharacteristics.Key` is available or the camera device advertises this key via getAvailableCaptureRequestKeys.
 
 **Range of valid values:** 
 
@@ -5467,7 +5467,7 @@ This control is only effective if `https://developer.android.com/reference/kotli
 
 **Range of valid values:** 
 
-See `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_MAX_FRAME_DURATION:android.hardware.camera2.CameraCharacteristics.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`. The duration is capped to `max(duration, exposureTime + overhead)`.
+See `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_MAX_FRAME_DURATION:android.hardware.camera2.CameraCharacteristics.Key`, StreamConfigurationMap. The duration is capped to `max(duration, exposureTime + overhead)`.
 
 **Optional** - The value for this key may be `null` on some devices.
 
@@ -5552,7 +5552,7 @@ For a MONOCHROME camera, there is only one color channel. So the noise model coe
 
 Switches sensor pixel mode between maximum resolution mode and default mode.
 
-This key controls whether the camera sensor operates in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int` mode or not. By default, all camera devices operate in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_DEFAULT:kotlin.Int` mode. When operating in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_DEFAULT:kotlin.Int` mode, sensors would typically perform pixel binning in order to improve low light performance, noise reduction etc. However, in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int` mode, sensors typically operate in unbinned mode allowing for a larger image size. The stream configurations supported in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int` mode are also different from those of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_DEFAULT:kotlin.Int` mode. They can be queried through `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#get(android.hardware.camera2.CameraCharacteristics.Key)` with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key`. Unless reported by both `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`s, the outputs from `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` `` and `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP:android.hardware.camera2.CameraCharacteristics.Key` `` must not be mixed in the same CaptureRequest. In other words, these outputs are exclusive to each other. This key does not need to be set for reprocess requests. This key will be be present on devices supporting the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability. It may also be present on devices which do not support the aforementioned capability. In that case:
+This key controls whether the camera sensor operates in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int` mode or not. By default, all camera devices operate in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_DEFAULT:kotlin.Int` mode. When operating in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_DEFAULT:kotlin.Int` mode, sensors would typically perform pixel binning in order to improve low light performance, noise reduction etc. However, in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int` mode, sensors typically operate in unbinned mode allowing for a larger image size. The stream configurations supported in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int` mode are also different from those of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_DEFAULT:kotlin.Int` mode. They can be queried through get with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key`. Unless reported by both StreamConfigurationMaps, the outputs from `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` `` and `` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_STREAM_CONFIGURATION_MAP:android.hardware.camera2.CameraCharacteristics.Key` `` must not be mixed in the same CaptureRequest. In other words, these outputs are exclusive to each other. This key does not need to be set for reprocess requests. This key will be be present on devices supporting the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability. It may also be present on devices which do not support the aforementioned capability. In that case:
 
 - The mandatory stream combinations listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_MANDATORY_MAXIMUM_RESOLUTION_STREAM_COMBINATIONS:android.hardware.camera2.CameraCharacteristics.Key` would not apply.
 
@@ -5691,7 +5691,7 @@ The timestamps are also included in all image buffers produced for the same capt
 
 When `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_TIMESTAMP_SOURCE:android.hardware.camera2.CameraCharacteristics.Key` `==` UNKNOWN, the timestamps measure time since an unspecified starting point, and are monotonically increasing. They can be compared with the timestamps for other captures from the same camera device, but are not guaranteed to be comparable to any other time source.
 
-When `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_TIMESTAMP_SOURCE:android.hardware.camera2.CameraCharacteristics.Key` `==` REALTIME, the timestamps measure time in the same timebase as `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtimeNanos()`, and they can be compared to other timestamps from other subsystems that are using that base.
+When `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_TIMESTAMP_SOURCE:android.hardware.camera2.CameraCharacteristics.Key` `==` REALTIME, the timestamps measure time in the same timebase as elapsedRealtimeNanos, and they can be compared to other timestamps from other subsystems that are using that base.
 
 For reprocessing, the timestamp will match the start of exposure of the input image, i.e. `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#SENSOR_TIMESTAMP:android.hardware.camera2.CaptureResult.Key` in the TotalCaptureResult that was used to create the reprocess capture request.
 
@@ -5783,7 +5783,7 @@ List of `(x, y)` coordinates of hot/defective pixels on the sensor.
 
 A coordinate `(x, y)` must lie between `(0, 0)`, and `(width - 1, height - 1)` (inclusive), which are the top-left and bottom-right of the pixel array, respectively. The width and height dimensions are given in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PIXEL_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key`. This may include hot pixels that lie outside of the active array bounds given by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_ACTIVE_ARRAY_SIZE:android.hardware.camera2.CameraCharacteristics.Key`.
 
-For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureRequestKeys()` lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PIXEL_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` will be used as the pixel array size if the corresponding request sets `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
+For camera devices with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_ULTRA_HIGH_RESOLUTION_SENSOR:kotlin.Int` capability or devices where getAvailableCaptureRequestKeys lists `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SENSOR_INFO_PIXEL_ARRAY_SIZE_MAXIMUM_RESOLUTION:android.hardware.camera2.CameraCharacteristics.Key` will be used as the pixel array size if the corresponding request sets `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#SENSOR_PIXEL_MODE:android.hardware.camera2.CaptureRequest.Key` to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#SENSOR_PIXEL_MODE_MAXIMUM_RESOLUTION:kotlin.Int`.
 
 **Range of valid values:** 
 
@@ -5814,7 +5814,7 @@ If set to `true`, a hot pixel map is returned in `https://developer.android.com/
 
 An array of intra-frame lens intrinsic samples.
 
-Contains an array of intra-frame `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_INTRINSIC_CALIBRATION:android.hardware.camera2.CameraCharacteristics.Key` updates. This must not be confused or compared to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#STATISTICS_OIS_SAMPLES:android.hardware.camera2.CaptureResult.Key`. Although OIS could be the main driver, all relevant factors such as focus distance and focal length must also be included. Do note that OIS samples must not be applied on top of the lens intrinsic samples. Support for this capture result can be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getAvailableCaptureResultKeys()`. If available, clients can expect multiple samples per capture result. The specific amount will depend on current frame duration and sampling rate. Generally a sampling rate greater than or equal to 200Hz is considered sufficient for high quality results.
+Contains an array of intra-frame `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#LENS_INTRINSIC_CALIBRATION:android.hardware.camera2.CameraCharacteristics.Key` updates. This must not be confused or compared to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#STATISTICS_OIS_SAMPLES:android.hardware.camera2.CaptureResult.Key`. Although OIS could be the main driver, all relevant factors such as focus distance and focal length must also be included. Do note that OIS samples must not be applied on top of the lens intrinsic samples. Support for this capture result can be queried via getAvailableCaptureResultKeys. If available, clients can expect multiple samples per capture result. The specific amount will depend on current frame duration and sampling rate. Generally a sampling rate greater than or equal to 200Hz is considered sufficient for high quality results.
 
 **Optional** - The value for this key may be `null` on some devices.
 
@@ -6138,7 +6138,7 @@ Get the read-only list of partial results that compose this total result.
 
 The list is returned is unmodifiable; attempting to modify it will result in a `UnsupportedOperationException` being thrown.
 
-The list size will be inclusive between `0` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_PARTIAL_RESULT_COUNT:android.hardware.camera2.CameraCharacteristics.Key`, with elements in ascending order of when `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.CaptureCallback#onCaptureProgressed(android.hardware.camera2.CameraCaptureSession,%20android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CaptureResult)` was invoked.
+The list size will be inclusive between `0` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_PARTIAL_RESULT_COUNT:android.hardware.camera2.CameraCharacteristics.Key`, with elements in ascending order of when onCaptureProgressed was invoked.
 
 | Return ||
 |---|---|
@@ -6155,13 +6155,13 @@ fun getPhysicalCameraResults(): MutableMap<String!, CaptureResult!>!
 
 **Deprecated:**
 
-*Please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraTotalResults()` instead to get the physical cameras' `TotalCaptureResult`.*
+*Please use getPhysicalCameraTotalResults instead to get the physical cameras' `TotalCaptureResult`.*
 
 <br />
 
 Get the map between physical camera ids and their capture result metadata
 
-This function can be called for logical multi-camera devices, which are devices that have REQUEST_AVAILABLE_CAPABILITIES_LOGICAL_MULTI_CAMERA capability and calls to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#getPhysicalCameraIds()` return a non-empty set of physical devices that are backing the logical camera.
+This function can be called for logical multi-camera devices, which are devices that have REQUEST_AVAILABLE_CAPABILITIES_LOGICAL_MULTI_CAMERA capability and calls to getPhysicalCameraIds return a non-empty set of physical devices that are backing the logical camera.
 
 If one or more streams from the underlying physical cameras were requested by the corresponding capture request, this function returns the result metadata for those physical cameras. Otherwise, an empty map is returned.
 
@@ -6183,9 +6183,9 @@ This function can be called for logical multi-camera devices, which are devices 
 
 If one or more streams from the underlying physical cameras were requested by the corresponding capture request, this function returns the total result metadata for those physical cameras. Otherwise, an empty map is returned.
 
-This function replaces the deprecated `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#getPhysicalCameraResults()`, and its return value is a map of TotalCaptureResult rather than CaptureResult.
+This function replaces the deprecated getPhysicalCameraResults, and its return value is a map of TotalCaptureResult rather than CaptureResult.
 
-To reprocess an image from a physical camera stream, typically returned from a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader`, the application must look up this map to get the `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult#` from the physical camera and pass it to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessCaptureRequest(android.hardware.camera2.TotalCaptureResult)`.
+To reprocess an image from a physical camera stream, typically returned from a MultiResolutionImageReader, the application must look up this map to get the TotalCaptureResult from the physical camera and pass it to createReprocessCaptureRequest.
 
 | Return ||
 |---|---|

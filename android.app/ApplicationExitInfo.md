@@ -12,7 +12,7 @@ class ApplicationExitInfo : Parcelable
 
 Describes the information of an application process's death.
 
-Application process could die for many reasons, for example `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int` when it was killed by the system because it was running low on memory. Reason of the death can be retrieved via `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getReason()`. Besides the reason, there are a few other auxiliary APIs like `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getImportance()` to help the caller with additional diagnostic information.
+Application process could die for many reasons, for example `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int` when it was killed by the system because it was running low on memory. Reason of the death can be retrieved via getReason. Besides the reason, there are a few other auxiliary APIs like getStatus and getImportance to help the caller with additional diagnostic information.
 
 ## Summary
 
@@ -30,19 +30,19 @@ Application process could die for many reasons, for example `https://developer.a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_DEPENDENCY_DIED:kotlin.Int` Application process was killed because its dependency was going away, for example, a stable content provider connection's client will be killed if the provider is killed. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_EXCESSIVE_RESOURCE_USAGE:kotlin.Int` Application process was killed by the system due to excessive resource usage. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_EXIT_SELF:kotlin.Int` Application process exit normally by itself, for example, via `https://developer.android.com/reference/kotlin/java/lang/System.html#exit(kotlin.Int)`; `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()` will specify the exit code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_EXIT_SELF:kotlin.Int` Application process exit normally by itself, for example, via exit; getStatus will specify the exit code. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_FREEZER:kotlin.Int` Application process was killed by App Freezer, for example, because it receives sync binder transactions while being frozen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_INITIALIZATION_FAILURE:kotlin.Int` Application process was killed because of initialization failure, for example, it took too long to attach to the system during the start, or there was an error during initialization. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int` Application process was killed by the system low memory killer, meaning the system was under memory pressure at the time of kill. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_MEMORY_LIMITER:kotlin.Int` Application process was killed because it exceeded the system memory limits. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_OTHER:kotlin.Int` Application process was killed by the system for various other reasons which are not by problems in apps and not actionable by apps, for example, the system just finished updates; `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getDescription()` will specify the cause given by the system. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_OTHER:kotlin.Int` Application process was killed by the system for various other reasons which are not by problems in apps and not actionable by apps, for example, the system just finished updates; getDescription will specify the cause given by the system. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_PACKAGE_STATE_CHANGE:kotlin.Int` Application process was killed because the app was disabled, or any of its component states have changed without `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#DONT_KILL_APP:kotlin.Int` |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_PACKAGE_UPDATED:kotlin.Int` Application process was killed because it was updated. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_PERMISSION_CHANGE:kotlin.Int` Application process was killed due to a runtime permission change. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_SIGNALED:kotlin.Int` Application process died due to the result of an OS signal; for example, `https://developer.android.com/reference/kotlin/android/system/OsConstants.html#SIGKILL:kotlin.Int`; `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()` will specify the signal number. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_SIGNALED:kotlin.Int` Application process died due to the result of an OS signal; for example, `https://developer.android.com/reference/kotlin/android/system/OsConstants.html#SIGKILL:kotlin.Int`; getStatus will specify the signal number. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_UNKNOWN:kotlin.Int` Application process died due to unknown reason. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_USER_REQUESTED:kotlin.Int` Application process was killed because of the user request, for example, user clicked the "Force stop" button of the application in the Settings, or removed the application away from Recents. |
 | --- | --- |
@@ -50,45 +50,45 @@ Application process could die for many reasons, for example `https://developer.a
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ApplicationExitInfo.AnrInfo](../android/app/ApplicationExitInfo.AnrInfo.md)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getAnrInfo()()` Populated only when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [ApplicationExitInfo.AnrInfo](../android/app/ApplicationExitInfo.AnrInfo.md)? | getAnrInfo Populated only when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getDefiningUid()()` Return the defining kernel user identifier, maybe different from `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getRealUid()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getPackageUid()`, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to `true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getDescription()()` The human readable description of the process's death, given by the system; could be null. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getImportance()()` The importance of the process that it used to have before the death. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefiningUid Return the defining kernel user identifier, maybe different from getRealUid and getPackageUid, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to `true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getDescription The human readable description of the process's death, given by the system; could be null. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getImportance The importance of the process that it used to have before the death. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getPackageUid()()` Similar to `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getRealUid()`, it's the kernel user identifier that is assigned at the package installation time. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getPid()()` The process id of the process that died. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getProcessName()()` The actual process name it was running with. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPackageUid Similar to getRealUid, it's the kernel user identifier that is assigned at the package installation time. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPid The process id of the process that died. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getProcessName The actual process name it was running with. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getProcessStateSummary()()` Return the state data set by calling `https://developer.android.com/reference/kotlin/android/app/ActivityManager#setProcessStateSummary(kotlin.ByteArray)` from the process before its death. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getPss()()` Last proportional set size of the memory that the process had used in kB. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getRealUid()()` The kernel user identifier of the process, most of the time the system uses this to do access control checks. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getProcessStateSummary Return the state data set by calling setProcessStateSummary from the process before its death. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPss Last proportional set size of the memory that the process had used in kB. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRealUid The kernel user identifier of the process, most of the time the system uses this to do access control checks. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getReason()()` The reason code of the process's death. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getRss()()` Last resident set size of the memory that the process had used in kB. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()()` The exit status argument of exit() if the application calls it, or the signal number if the application is signaled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getReason The reason code of the process's death. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getRss Last resident set size of the memory that the process had used in kB. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStatus The exit status argument of exit() if the application calls it, or the signal number if the application is signaled. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getTimestamp()()` The timestamp of the process's death, in milliseconds since the epoch, as returned by `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
-| [InputStream](../java.io/InputStream.md)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getTraceInputStream()()` Return the InputStream to the traces that was taken by the system prior to the death of the process; typically it'll be available when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`, though if the process gets an ANR but recovers, and dies for another reason later, this trace will be included in the record of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#` still. |
-| [UserHandle](../android.os/UserHandle.md) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getUserHandle()()` Return the user id of the record on a multi-user system. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimestamp The timestamp of the process's death, in milliseconds since the epoch, as returned by currentTimeMillis. |
+| [InputStream](../java.io/InputStream.md)? | getTraceInputStream Return the InputStream to the traces that was taken by the system prior to the death of the process; typically it'll be available when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`, though if the process gets an ANR but recovers, and dies for another reason later, this trace will be included in the record of ApplicationExitInfo still. |
+| [UserHandle](../android.os/UserHandle.md) | getUserHandle Return the user id of the record on a multi-user system. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -177,7 +177,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_EXIT_SELF: Int
 ```
 
-Application process exit normally by itself, for example, via `https://developer.android.com/reference/kotlin/java/lang/System.html#exit(kotlin.Int)`; `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()` will specify the exit code.
+Application process exit normally by itself, for example, via exit; getStatus will specify the exit code.
 
 Applications should normally not do this, as the system has a better knowledge in terms of process management.
 
@@ -217,7 +217,7 @@ static val REASON_LOW_MEMORY: Int
 
 Application process was killed by the system low memory killer, meaning the system was under memory pressure at the time of kill.
 
-Not all devices support reporting `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int`; on a device with no such support, when a process is killed due to memory pressure, the `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getReason()` will return `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_SIGNALED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()` will return the value `https://developer.android.com/reference/kotlin/android/system/OsConstants.html#SIGKILL:kotlin.Int`. Application should use `https://developer.android.com/reference/kotlin/android/app/ActivityManager#isLowMemoryKillReportSupported()` to check if the device supports reporting `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int` or not.
+Not all devices support reporting `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int`; on a device with no such support, when a process is killed due to memory pressure, the getReason will return `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_SIGNALED:kotlin.Int` and getStatus will return the value `https://developer.android.com/reference/kotlin/android/system/OsConstants.html#SIGKILL:kotlin.Int`. Application should use isLowMemoryKillReportSupported to check if the device supports reporting `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_LOW_MEMORY:kotlin.Int` or not.
 
  Value: 3
 
@@ -241,7 +241,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_OTHER: Int
 ```
 
-Application process was killed by the system for various other reasons which are not by problems in apps and not actionable by apps, for example, the system just finished updates; `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getDescription()` will specify the cause given by the system.
+Application process was killed by the system for various other reasons which are not by problems in apps and not actionable by apps, for example, the system just finished updates; getDescription will specify the cause given by the system.
 
  Value: 13
 
@@ -293,7 +293,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_SIGNALED: Int
 ```
 
-Application process died due to the result of an OS signal; for example, `https://developer.android.com/reference/kotlin/android/system/OsConstants.html#SIGKILL:kotlin.Int`; `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()` will specify the signal number.
+Application process died due to the result of an OS signal; for example, `https://developer.android.com/reference/kotlin/android/system/OsConstants.html#SIGKILL:kotlin.Int`; getStatus will specify the signal number.
 
  Value: 2
 
@@ -345,7 +345,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -402,7 +402,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getDefiningUid(): Int
 ```
 
-Return the defining kernel user identifier, maybe different from `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getRealUid()` and `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getPackageUid()`, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to `true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider.
+Return the defining kernel user identifier, maybe different from getRealUid and getPackageUid, if an external service has the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestService_useAppZygote:kotlin.Int` set to `true` and was bound with the flag `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` - in this case, this field here will be the kernel user identifier of the external service provider.
 
 ### getDescription
 
@@ -438,7 +438,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getPackageUid(): Int
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getRealUid()`, it's the kernel user identifier that is assigned at the package installation time.
+Similar to getRealUid, it's the kernel user identifier that is assigned at the package installation time.
 
 ### getPid
 
@@ -472,7 +472,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getProcessStateSummary(): ByteArray?
 ```
 
-Return the state data set by calling `https://developer.android.com/reference/kotlin/android/app/ActivityManager#setProcessStateSummary(kotlin.ByteArray)` from the process before its death.
+Return the state data set by calling setProcessStateSummary from the process before its death.
 
 | Return ||
 |---|---|
@@ -480,7 +480,7 @@ Return the state data set by calling `https://developer.android.com/reference/ko
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/ActivityManager#setProcessStateSummary(kotlin.ByteArray)`
+- setProcessStateSummary
 
 ### getPss
 
@@ -502,7 +502,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getRealUid(): Int
 ```
 
-The kernel user identifier of the process, most of the time the system uses this to do access control checks. It's typically the uid of the package where the component is running from, except the case of isolated process, where this field identifies the kernel user identifier that this process is actually running with, while the `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getPackageUid()` identifies the kernel user identifier that is assigned at the package installation time.
+The kernel user identifier of the process, most of the time the system uses this to do access control checks. It's typically the uid of the package where the component is running from, except the case of isolated process, where this field identifies the kernel user identifier that this process is actually running with, while the getPackageUid identifies the kernel user identifier that is assigned at the package installation time.
 
 ### getReason
 
@@ -548,7 +548,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getTimestamp(): Long
 ```
 
-The timestamp of the process's death, in milliseconds since the epoch, as returned by `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. 
+The timestamp of the process's death, in milliseconds since the epoch, as returned by currentTimeMillis. 
 Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z.
 
 | Return ||
@@ -563,7 +563,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getTraceInputStream(): InputStream?
 ```
 
-Return the InputStream to the traces that was taken by the system prior to the death of the process; typically it'll be available when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`, though if the process gets an ANR but recovers, and dies for another reason later, this trace will be included in the record of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#` still. Beginning with API 31, tombstone traces will be returned for `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_CRASH_NATIVE:kotlin.Int`, with an InputStream containing a protobuf with [this schema](https://android.googlesource.com/platform/system/core/+/refs/heads/master/debuggerd/proto/tombstone.proto). Note that because these traces are kept in a separate global circular buffer, crashes may be overwritten by newer crashes (including from other applications), so this may still return null.
+Return the InputStream to the traces that was taken by the system prior to the death of the process; typically it'll be available when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`, though if the process gets an ANR but recovers, and dies for another reason later, this trace will be included in the record of ApplicationExitInfo still. Beginning with API 31, tombstone traces will be returned for `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_CRASH_NATIVE:kotlin.Int`, with an InputStream containing a protobuf with [this schema](https://android.googlesource.com/platform/system/core/+/refs/heads/master/debuggerd/proto/tombstone.proto). Note that because these traces are kept in a separate global circular buffer, crashes may be overwritten by newer crashes (including from other applications), so this may still return null.
 
 | Return ||
 |---|---|
@@ -596,8 +596,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

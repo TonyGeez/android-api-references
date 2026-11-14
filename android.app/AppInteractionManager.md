@@ -27,7 +27,7 @@ Provides access to App Interaction access control APIs.
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionManager#createSession(android.app.AppInteractionSession.CreateParams,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(params: https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.CreateParams, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/AppInteractionSession!, https://developer.android.com/reference/kotlin/android/app/AppInteractionException!>)` Creates an app interaction session for the given params. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createSession Creates an app interaction session for the given params. |
 
 ## Constants
 
@@ -163,6 +163,6 @@ Example usage:
 | Parameters ||
 |---|---|
 | `params` | [AppInteractionSession.CreateParams](../android/app/AppInteractionSession.CreateParams.md): The params to create the session. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AppInteractionSession](AppInteractionSession.md)!, [AppInteractionException](AppInteractionException.md)!\>: The callback to be called when the session is created or an error occurs. This value cannot be `null`. |
 | --- | --- |

@@ -10,12 +10,12 @@ open class GenericDocument
 | --- | --- |
 | ↳ | [android.app.appsearch.GenericDocument](GenericDocument.md) |
 
-| Known Direct Subclasses [AppSearchAccount](../android/app/appsearch/AppSearchAccount.md) |---|---| | [AppSearchAccount](../android/app/appsearch/AppSearchAccount.md) | Encapsulates a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` representing an `https://developer.android.com/reference/kotlin/android/accounts/Account.html#`. | |
+| Known Direct Subclasses [AppSearchAccount](../android/app/appsearch/AppSearchAccount.md) |---|---| | [AppSearchAccount](../android/app/appsearch/AppSearchAccount.md) | Encapsulates a GenericDocument representing an `https://developer.android.com/reference/kotlin/android/accounts/Account.html#`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Represents a document unit.
 
-Documents contain structured data conforming to their `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema` type. Each document is uniquely identified by a namespace and a String ID within that namespace.
+Documents contain structured data conforming to their AppSearchSchema type. Each document is uniquely identified by a namespace and a String ID within that namespace.
 
 Documents are constructed by using the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder`.
 
@@ -23,51 +23,51 @@ Documents are constructed by using the `https://developer.android.com/reference/
 
 | Nested classes ||
 |---|---|
-| open | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder` The builder class for `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`. |
+| open | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder` The builder class for GenericDocument. |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#GenericDocument(android.app.appsearch.GenericDocument)(document: https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#)` Creates a new `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` from an existing instance. |
+| GenericDocument Creates a new GenericDocument from an existing instance. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getCreationTimestampMillis()()` Returns the creation timestamp of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`, in milliseconds. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getId()()` Returns the unique identifier of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getCreationTimestampMillis Returns the creation timestamp of the GenericDocument, in milliseconds. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getId Returns the unique identifier of the GenericDocument. |
 | --- | --- |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getMaxIndexedProperties()()` The maximum number of indexed properties a document can have. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getNamespace()()` Returns the namespace of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves the property value with the given path as `https://developer.android.com/reference/kotlin/java/lang/Object.html#`. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxIndexedProperties The maximum number of indexed properties a document can have. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getNamespace Returns the namespace of the GenericDocument. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | getProperty Retrieves the property value with the given path as `https://developer.android.com/reference/kotlin/java/lang/Object.html#`. |
 | --- | --- |
-| open [AppSearchBlobHandle](AppSearchBlobHandle.md)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyBlobHandle(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves an `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle` property by path. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AppSearchBlobHandle](AppSearchBlobHandle.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyBlobHandleArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `AppSearchBlobHandle[]` property by path. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyBoolean(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `boolean` property by path. |
+| open [AppSearchBlobHandle](AppSearchBlobHandle.md)? | getPropertyBlobHandle Retrieves an AppSearchBlobHandle property by path. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AppSearchBlobHandle](AppSearchBlobHandle.md)!\>? | getPropertyBlobHandleArray Retrieves a repeated `AppSearchBlobHandle[]` property by path. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getPropertyBoolean Retrieves a `boolean` property by path. |
 | --- | --- |
-| open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyBooleanArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `boolean` property by path. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyBytes(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `byte[]` property by path. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyBytesArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `byte[][]` property by path. |
+| open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)? | getPropertyBooleanArray Retrieves a repeated `boolean` property by path. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getPropertyBytes Retrieves a `byte[]` property by path. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>? | getPropertyBytesArray Retrieves a `byte[][]` property by path. |
 | --- | --- |
-| open [GenericDocument](GenericDocument.md)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyDocument(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` property by path. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [GenericDocument](GenericDocument.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyDocumentArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` property by path. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyDouble(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `double` property by path. |
+| open [GenericDocument](GenericDocument.md)? | getPropertyDocument Retrieves a GenericDocument property by path. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [GenericDocument](GenericDocument.md)!\>? | getPropertyDocumentArray Retrieves a repeated GenericDocument property by path. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getPropertyDouble Retrieves a `double` property by path. |
 | --- | --- |
-| open [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyDoubleArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `double` property by path. |
-| open [EmbeddingVector](EmbeddingVector.md)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyEmbedding(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves an `EmbeddingVector` property by path. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [EmbeddingVector](EmbeddingVector.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyEmbeddingArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `EmbeddingVector[]` property by path. |
+| open [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)? | getPropertyDoubleArray Retrieves a repeated `double` property by path. |
+| open [EmbeddingVector](EmbeddingVector.md)? | getPropertyEmbedding Retrieves an `EmbeddingVector` property by path. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [EmbeddingVector](EmbeddingVector.md)!\>? | getPropertyEmbeddingArray Retrieves a repeated `EmbeddingVector[]` property by path. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyLong(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `long` property by path. |
-| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyLongArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `long[]` property by path. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyNames()()` Returns the names of all properties defined in this document. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPropertyLong Retrieves a `long` property by path. |
+| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | getPropertyLongArray Retrieves a repeated `long[]` property by path. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getPropertyNames Returns the names of all properties defined in this document. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyString(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a `https://developer.android.com/reference/kotlin/java/lang/String.html#` property by path. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyStringArray(kotlin.String)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Retrieves a repeated `String` property by path. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getSchemaType()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema` type of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getPropertyString Retrieves a `https://developer.android.com/reference/kotlin/java/lang/String.html#` property by path. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getPropertyStringArray Retrieves a repeated `String` property by path. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getSchemaType Returns the AppSearchSchema type of the GenericDocument. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getScore()()` Returns the score of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getTtlMillis()()` Returns the TTL (time-to-live) of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`, in milliseconds. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#hashCode()()` Returns a hash code value for the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getScore Returns the score of the GenericDocument. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTtlMillis Returns the TTL (time-to-live) of the GenericDocument, in milliseconds. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#toString()()` Returns a string representation of the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Protected constructors
 
@@ -79,7 +79,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 protected GenericDocument(document: GenericDocument)
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` from an existing instance.
+Creates a new GenericDocument from an existing instance.
 
 This method should be only used by constructor of a subclass.
 
@@ -126,9 +126,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getCreationTimestampMillis(): Long
 ```
 
-Returns the creation timestamp of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`, in milliseconds.
+Returns the creation timestamp of the GenericDocument, in milliseconds.
 
-The value is in the `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()` time base. 
+The value is in the currentTimeMillis time base. 
 Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z.
 
 | Return ||
@@ -143,7 +143,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getId(): String
 ```
 
-Returns the unique identifier of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`.
+Returns the unique identifier of the GenericDocument.
 
 | Return ||
 |---|---|
@@ -159,7 +159,7 @@ open static fun getMaxIndexedProperties(): Int
 
 The maximum number of indexed properties a document can have.
 
-Indexed properties are properties which are strings where the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.StringPropertyConfig#getIndexingType()` value is anything other than `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.StringPropertyConfig#INDEXING_TYPE_NONE:kotlin.Int`, as well as long properties where the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.LongPropertyConfig#getIndexingType()` value is `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.LongPropertyConfig#INDEXING_TYPE_RANGE:kotlin.Int`.
+Indexed properties are properties which are strings where the getIndexingType value is anything other than `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.StringPropertyConfig#INDEXING_TYPE_NONE:kotlin.Int`, as well as long properties where the getIndexingType value is `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema.LongPropertyConfig#INDEXING_TYPE_RANGE:kotlin.Int`.
 
 ### getNamespace
 
@@ -169,7 +169,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getNamespace(): String
 ```
 
-Returns the namespace of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`.
+Returns the namespace of the GenericDocument.
 
 | Return ||
 |---|---|
@@ -185,9 +185,9 @@ open fun getProperty(path: String): Any?
 
 Retrieves the property value with the given path as `https://developer.android.com/reference/kotlin/java/lang/Object.html#`.
 
-A path can be a simple property name, such as those returned by `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyNames()`. It may also be a dot-delimited path through the nested document hierarchy, with nested `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` properties accessed via `'.'` and repeated properties optionally indexed into via `[n]`.
+A path can be a simple property name, such as those returned by getPropertyNames. It may also be a dot-delimited path through the nested document hierarchy, with nested GenericDocument properties accessed via `'.'` and repeated properties optionally indexed into via `[n]`.
 
-For example, given the following `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`:
+For example, given the following GenericDocument:
 
 ```kotlin
 (Message) {
@@ -208,17 +208,17 @@ For example, given the following `https://developer.android.com/reference/kotlin
 Here are some example paths and their results:
 
 - `"from"` returns `"sender@example.com"` as a `https://developer.android.com/reference/kotlin/java/lang/String.html#` array with one element
-- `"to"` returns the two nested documents containing contact information as a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` array with two elements
-- `"to[1]"` returns the second nested document containing Marie Curie's contact information as a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` array with one element
+- `"to"` returns the two nested documents containing contact information as a GenericDocument array with two elements
+- `"to[1]"` returns the second nested document containing Marie Curie's contact information as a GenericDocument array with one element
 - `"to[1].email"` returns `"curie@example.com"`
 - `"to[100].email"` returns `null` as this particular document does not have that many elements in its `"to"` array.
 - `"to.email"` aggregates emails across all nested documents that have them, returning `["einstein@example.com", "curie@example.com"]` as a `https://developer.android.com/reference/kotlin/java/lang/String.html#` array with two elements.
 
-If you know the expected type of the property you are retrieving, it is recommended to use one of the typed versions of this method instead, such as `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyString(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getPropertyStringArray(kotlin.String)`.
+If you know the expected type of the property you are retrieving, it is recommended to use one of the typed versions of this method instead, such as getPropertyString or getPropertyStringArray.
 
 If the property was assigned as an empty array using one of the `Builder#setProperty` functions, this method will return an empty array. If no such property exists at all, this method returns `null`.
 
-Note: If the property is an empty `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`\[\] or `byte[][]`, this method will return a `null` value in versions of Android prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`. Starting in Android T it will return an empty array if the property has been set as an empty array, matching the behavior of other property types.
+Note: If the property is an empty GenericDocument\[\] or `byte[][]`, this method will return a `null` value in versions of Android prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`. Starting in Android T it will return an empty array if the property has been set as an empty array, matching the behavior of other property types.
 
 | Parameters ||
 |---|---|
@@ -237,11 +237,11 @@ Also in [T Extensions 17](https://developer.android.com/sdkExtensions)
 open fun getPropertyBlobHandle(path: String): AppSearchBlobHandle?
 ```
 
-Retrieves an `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle` property by path.
+Retrieves an AppSearchBlobHandle property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#openBlobForRead(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` for how to use `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle` to retrieve blob data.
+See openBlobForRead for how to use AppSearchBlobHandle to retrieve blob data.
 
 | Parameters ||
 |---|---|
@@ -249,7 +249,7 @@ See `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSea
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle?` | The first `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle` associated with the given path or `null` if there is no such value or the value is of a different type. |
+| AppSearchBlobHandle | The first AppSearchBlobHandle associated with the given path or `null` if there is no such value or the value is of a different type. |
 
 ### getPropertyBlobHandleArray
 
@@ -262,11 +262,11 @@ open fun getPropertyBlobHandleArray(path: String): Array<AppSearchBlobHandle!>?
 
 Retrieves a repeated `AppSearchBlobHandle[]` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyBlobHandle(kotlin.String,%20android.app.appsearch.AppSearchBlobHandle)`, this method returns `null`.
+If the property has not been set via setPropertyBlobHandle, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyBlobHandle(kotlin.String,%20android.app.appsearch.AppSearchBlobHandle)` to an empty `AppSearchBlobHandle[]`, this method returns an empty `AppSearchBlobHandle[]`.
+If it has been set via setPropertyBlobHandle to an empty `AppSearchBlobHandle[]`, this method returns an empty `AppSearchBlobHandle[]`.
 
 | Parameters ||
 |---|---|
@@ -286,7 +286,7 @@ open fun getPropertyBoolean(path: String): Boolean
 
 Retrieves a `boolean` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -306,11 +306,11 @@ open fun getPropertyBooleanArray(path: String): BooleanArray?
 
 Retrieves a repeated `boolean` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyBoolean(kotlin.String,%20kotlin.Boolean)`, this method returns `null`.
+If the property has not been set via setPropertyBoolean, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyBoolean(kotlin.String,%20kotlin.Boolean)` to an empty `boolean[]`, this method returns an empty `boolean[]`.
+If it has been set via setPropertyBoolean to an empty `boolean[]`, this method returns an empty `boolean[]`.
 
 | Parameters ||
 |---|---|
@@ -330,7 +330,7 @@ open fun getPropertyBytes(path: String): ByteArray?
 
 Retrieves a `byte[]` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -350,11 +350,11 @@ open fun getPropertyBytesArray(path: String): Array<ByteArray!>?
 
 Retrieves a `byte[][]` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyBytes(kotlin.String,%20kotlin.ByteArray)`, this method returns `null`.
+If the property has not been set via setPropertyBytes, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyBytes(kotlin.String,%20kotlin.ByteArray)` to an empty `byte[][]`, this method returns an empty `byte[][]` starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int` and `null` in earlier versions of Android.
+If it has been set via setPropertyBytes to an empty `byte[][]`, this method returns an empty `byte[][]` starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int` and `null` in earlier versions of Android.
 
 | Parameters ||
 |---|---|
@@ -372,9 +372,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getPropertyDocument(path: String): GenericDocument?
 ```
 
-Retrieves a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` property by path.
+Retrieves a GenericDocument property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -382,7 +382,7 @@ See `https://developer.android.com/reference/kotlin/android/app/appsearch/Generi
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#?` | The first `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` associated with the given path or `null` if there is no such value or the value is of a different type. |
+| `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#?` | The first GenericDocument associated with the given path or `null` if there is no such value or the value is of a different type. |
 
 ### getPropertyDocumentArray
 
@@ -392,13 +392,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getPropertyDocumentArray(path: String): Array<GenericDocument!>?
 ```
 
-Retrieves a repeated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` property by path.
+Retrieves a repeated GenericDocument property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyDocument(kotlin.String,%20android.app.appsearch.GenericDocument)`, this method returns `null`.
+If the property has not been set via setPropertyDocument, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyDocument(kotlin.String,%20android.app.appsearch.GenericDocument)` to an empty `GenericDocument[]`, this method returns an empty `GenericDocument[]` starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int` and `null` in earlier versions of Android.
+If it has been set via setPropertyDocument to an empty `GenericDocument[]`, this method returns an empty `GenericDocument[]` starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int` and `null` in earlier versions of Android.
 
 | Parameters ||
 |---|---|
@@ -406,7 +406,7 @@ If it has been set via `https://developer.android.com/reference/kotlin/android/a
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#!>?` | The `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`\[\] associated with the given path, or `null` if no value is set or the value is of a different type. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#!>?` | The GenericDocument\[\] associated with the given path, or `null` if no value is set or the value is of a different type. |
 
 ### getPropertyDouble
 
@@ -418,7 +418,7 @@ open fun getPropertyDouble(path: String): Double
 
 Retrieves a `double` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -438,11 +438,11 @@ open fun getPropertyDoubleArray(path: String): DoubleArray?
 
 Retrieves a repeated `double` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyDouble(kotlin.String,%20kotlin.Double)`, this method returns `null`.
+If the property has not been set via setPropertyDouble, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyDouble(kotlin.String,%20kotlin.Double)` to an empty `double[]`, this method returns an empty `double[]`.
+If it has been set via setPropertyDouble to an empty `double[]`, this method returns an empty `double[]`.
 
 | Parameters ||
 |---|---|
@@ -463,7 +463,7 @@ open fun getPropertyEmbedding(path: String): EmbeddingVector?
 
 Retrieves an `EmbeddingVector` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -471,7 +471,7 @@ See `https://developer.android.com/reference/kotlin/android/app/appsearch/Generi
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/appsearch/EmbeddingVector?` | The first `EmbeddingVector[]` associated with the given path or `null` if there is no such value or the value is of a different type. |
+| EmbeddingVector | The first `EmbeddingVector[]` associated with the given path or `null` if there is no such value or the value is of a different type. |
 
 ### getPropertyEmbeddingArray
 
@@ -484,11 +484,11 @@ open fun getPropertyEmbeddingArray(path: String): Array<EmbeddingVector!>?
 
 Retrieves a repeated `EmbeddingVector[]` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyEmbedding(kotlin.String,%20android.app.appsearch.EmbeddingVector)`, this method returns `null`.
+If the property has not been set via setPropertyEmbedding, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyEmbedding(kotlin.String,%20android.app.appsearch.EmbeddingVector)` to an empty `EmbeddingVector[]`, this method returns an empty `EmbeddingVector[]`.
+If it has been set via setPropertyEmbedding to an empty `EmbeddingVector[]`, this method returns an empty `EmbeddingVector[]`.
 
 | Parameters ||
 |---|---|
@@ -508,7 +508,7 @@ open fun getPropertyLong(path: String): Long
 
 Retrieves a `long` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -528,11 +528,11 @@ open fun getPropertyLongArray(path: String): LongArray?
 
 Retrieves a repeated `long[]` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyLong(kotlin.String,%20kotlin.Long)`, this method returns `null`.
+If the property has not been set via setPropertyLong, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyLong(kotlin.String,%20kotlin.Long)` to an empty `long[]`, this method returns an empty `long[]`.
+If it has been set via setPropertyLong to an empty `long[]`, this method returns an empty `long[]`.
 
 | Parameters ||
 |---|---|
@@ -566,7 +566,7 @@ open fun getPropertyString(path: String): String?
 
 Retrieves a `https://developer.android.com/reference/kotlin/java/lang/String.html#` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
 | Parameters ||
 |---|---|
@@ -586,11 +586,11 @@ open fun getPropertyStringArray(path: String): Array<String!>?
 
 Retrieves a repeated `String` property by path.
 
-See `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getProperty(kotlin.String)` for a detailed description of the path syntax.
+See getProperty for a detailed description of the path syntax.
 
-If the property has not been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyString(kotlin.String,%20kotlin.String)`, this method returns `null`.
+If the property has not been set via setPropertyString, this method returns `null`.
 
-If it has been set via `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.Builder#setPropertyString(kotlin.String,%20kotlin.String)` to an empty `String[]`, this method returns an empty `String[]`.
+If it has been set via setPropertyString to an empty `String[]`, this method returns an empty `String[]`.
 
 | Parameters ||
 |---|---|
@@ -608,7 +608,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getSchemaType(): String
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema` type of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`.
+Returns the AppSearchSchema type of the GenericDocument.
 
 | Return ||
 |---|---|
@@ -622,9 +622,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getScore(): Int
 ```
 
-Returns the score of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`.
+Returns the score of the GenericDocument.
 
-The score is a query-independent measure of the document's quality, relative to other `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#` objects of the same `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSchema` type.
+The score is a query-independent measure of the document's quality, relative to other GenericDocument objects of the same AppSearchSchema type.
 
 Results may be sorted by score using android.app.appsearch.SearchSpec.Builder#setRankingStrategy. Documents with higher scores are considered better than documents with lower scores.
 
@@ -638,9 +638,9 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getTtlMillis(): Long
 ```
 
-Returns the TTL (time-to-live) of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#`, in milliseconds.
+Returns the TTL (time-to-live) of the GenericDocument, in milliseconds.
 
-The TTL is measured against `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument#getCreationTimestampMillis()`. At the timestamp of `creationTimestampMillis + ttlMillis`, measured in the `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()` time base, the document will be auto-deleted.
+The TTL is measured against getCreationTimestampMillis. At the timestamp of `creationTimestampMillis + ttlMillis`, measured in the currentTimeMillis time base, the document will be auto-deleted.
 
 The default value is 0, which means the document is permanent and won't be auto-deleted until the app is uninstalled or android.app.appsearch.AppSearchSession#remove is called.
 
@@ -657,8 +657,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

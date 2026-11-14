@@ -14,34 +14,34 @@ class VerifiedMotionEvent : VerifiedInputEvent, Parcelable
 | ↳ | [android.view.VerifiedInputEvent](VerifiedInputEvent.md) ||
 | | ↳ | [android.view.VerifiedMotionEvent](VerifiedMotionEvent.md) |
 
-MotionEvent that has been verified by the system. The data contained in this class is always a subset of a `https://developer.android.com/reference/kotlin/android/view/MotionEvent`. Use this class to check which data has been confirmed by the system to be authentic. Most applications do not need to use this class.
+MotionEvent that has been verified by the system. The data contained in this class is always a subset of a MotionEvent. Use this class to check which data has been confirmed by the system to be authentic. Most applications do not need to use this class.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getActionMasked()()` The masked action being performed, without pointer index information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActionMasked The masked action being performed, without pointer index information. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getButtonState()()` The state of all buttons that are pressed such as a mouse or stylus button. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getDownTimeNanos()()` The time that the gesture started, in nanoseconds. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getFlag(kotlin.Int)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a specific flag of this motion event, if possible. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getButtonState The state of all buttons that are pressed such as a mouse or stylus button. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getDownTimeNanos The time that the gesture started, in nanoseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)? | getFlag Get a specific flag of this motion event, if possible. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getMetaState()()` The state of any meta / modifier keys that were in effect when the event was generated. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getRawX()()` The raw X coordinate of the primary pointer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#getRawY()()` The raw Y coordinate of the primary pointer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMetaState The state of any meta / modifier keys that were in effect when the event was generated. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRawX The raw X coordinate of the primary pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRawY The raw Y coordinate of the primary pointer. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#hashCode()()` Returns a hash code value for the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getDeviceId()()` Get the id of the device that generated this event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getDisplayId()()` Get the display id that is associated with this event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getEventTimeNanos()()` Get the time this event occurred, in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/view/VerifiedInputEvent#getSource()()` Get the source of the event. <br /> | ||
+| From class VerifiedInputEvent |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getDeviceId Get the id of the device that generated this event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getDisplayId Get the display id that is associated with this event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | getEventTimeNanos Get the time this event occurred, in the uptimeMillis time base. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getSource Get the source of the event. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -57,7 +57,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -108,7 +108,7 @@ The masked action being performed, without pointer index information.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getActionMasked()`
+- getActionMasked
 
 ### getButtonState
 
@@ -121,7 +121,7 @@ fun getButtonState(): Int
 The state of all buttons that are pressed such as a mouse or stylus button.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getButtonState()`
+- getButtonState
 
 ### getDownTimeNanos
 
@@ -131,10 +131,10 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getDownTimeNanos(): Long
 ```
 
-The time that the gesture started, in nanoseconds. Uses the same time base as `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()`
+The time that the gesture started, in nanoseconds. Uses the same time base as uptimeMillis
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getDownTime()`
+- getDownTime
 
 ### getFlag
 
@@ -170,7 +170,7 @@ fun getMetaState(): Int
 The state of any meta / modifier keys that were in effect when the event was generated.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getMetaState()`
+- getMetaState
 
 ### getRawX
 
@@ -183,7 +183,7 @@ fun getRawX(): Float
 The raw X coordinate of the primary pointer.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getRawX()`
+- getRawX
 
 ### getRawY
 
@@ -196,7 +196,7 @@ fun getRawY(): Float
 The raw Y coordinate of the primary pointer.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getRawY()`
+- getRawY
 
 ### hashCode
 
@@ -211,8 +211,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

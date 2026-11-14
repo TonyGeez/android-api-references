@@ -16,33 +16,33 @@ This class consists of `static` utility methods for operating on objects, or che
 
 | Public methods ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromIndexSize(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `fromIndex + size` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromIndexSize(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `fromIndex + size` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromToIndex(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `toIndex` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkFromIndexSize Checks if the sub-range from `fromIndex` (inclusive) to `fromIndex + size` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | checkFromIndexSize Checks if the sub-range from `fromIndex` (inclusive) to `fromIndex + size` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkFromToIndex Checks if the sub-range from `fromIndex` (inclusive) to `toIndex` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkFromToIndex(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the sub-range from `fromIndex` (inclusive) to `toIndex` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkIndex(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if the `index` is within the bounds of the range from `0` (inclusive) to `length` (exclusive). |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#checkIndex(kotlin.Long,%20kotlin.Long)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Checks if the `index` is within the bounds of the range from `0` (inclusive) to `length` (exclusive). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | checkFromToIndex Checks if the sub-range from `fromIndex` (inclusive) to `toIndex` (exclusive) is within the bounds of range from `0` (inclusive) to `length` (exclusive). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkIndex Checks if the `index` is within the bounds of the range from `0` (inclusive) to `length` (exclusive). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | checkIndex Checks if the `index` is within the bounds of the range from `0` (inclusive) to `length` (exclusive). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#compare(java.util.Objects.compare.T,%20java.util.Objects.compare.T,%20java.util.Comparator)(a: T, b: T, c: https://developer.android.com/reference/kotlin/java/util/Comparator<in T>)` {@return 0 if the arguments are identical and {@code \* c. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#deepEquals(kotlin.Any,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the arguments are deeply equal to each other \* and {@code false} otherwise} Two `null` values are deeply equal. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#equals(kotlin.Any,%20kotlin.Any)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the arguments are equal to each other \* and {@code false} otherwise} Consequently, if both arguments are `null`, `true` is returned. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare {@return 0 if the arguments are identical and {@code \* c. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deepEquals {@return {@code true} if the arguments are deeply equal to each other \* and {@code false} otherwise} Two `null` values are deeply equal. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals {@return {@code true} if the arguments are equal to each other \* and {@code false} otherwise} Consequently, if both arguments are `null`, `true` is returned. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#hash(kotlin.Any)(vararg values: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` {@return a hash code for a sequence of input values} The hash code is generated as if all the input values were placed into an array, and that array were hashed by calling `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.Array)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#hashCode(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return the hash code of a non-{@code null} argument and 0 for \* a {@code null} argument} |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#isNull(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the provided reference is {@code \* null}; {@code false} otherwise} |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hash {@return a hash code for a sequence of input values} The hash code is generated as if all the input values were placed into an array, and that array were hashed by calling hashCode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode {@return the hash code of a non-{@code null} argument and 0 for \* a {@code null} argument} |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNull {@return {@code true} if the provided reference is {@code \* null}; {@code false} otherwise} |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#nonNull(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return {@code true} if the provided reference is non-{@code null}; \* {@code false} otherwise} |
-| static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T)(obj: T?)` Checks that the specified object reference is not `null`. |
-| static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T,%20kotlin.String)(obj: T?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | nonNull {@return {@code true} if the provided reference is non-{@code null}; \* {@code false} otherwise} |
+| static T | requireNonNull Checks that the specified object reference is not `null`. |
+| static T | requireNonNull Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is. |
 | --- | --- |
-| static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T,%20java.util.function.Supplier)(obj: T?, messageSupplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is. |
-| static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNullElse(java.util.Objects.requireNonNullElse.T,%20java.util.Objects.requireNonNullElse.T)(obj: T?, defaultObj: T)` {@return the first argument if it is non-{@code null} and \* otherwise the second argument if it is non-{@code null}} |
-| static T | `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNullElseGet(java.util.Objects.requireNonNullElseGet.T,%20java.util.function.Supplier)(obj: T?, supplier: https://developer.android.com/reference/kotlin/java/util/function/Supplier<out T>)` {@return the first argument if it is non-{@code null} and \* otherwise the value from {@code supplier. |
+| static T | requireNonNull Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is. |
+| static T | requireNonNullElse {@return the first argument if it is non-{@code null} and \* otherwise the second argument if it is non-{@code null}} |
+| static T | requireNonNullElseGet {@return the first argument if it is non-{@code null} and \* otherwise the value from {@code supplier. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#toIdentityString(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)` {@return a string equivalent to the string returned by {@code \* Object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#toString(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` {@return the result of calling {@code toString} for a \* non-{@code null} argument and {@code "null"} for a \* {@code null} argument} |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Objects#toString(kotlin.Any,%20kotlin.String)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, nullDefault: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` {@return the result of calling {@code toString} on the first \* argument if the first argument is not {@code null} and the \* second argument otherwise} |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toIdentityString {@return a string equivalent to the string returned by {@code \* Object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString {@return the result of calling {@code toString} for a \* non-{@code null} argument and {@code "null"} for a \* {@code null} argument} |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString {@return the result of calling {@code toString} on the first \* argument if the first argument is not {@code null} and the \* second argument otherwise} |
 | --- | --- |
 
 ## Public methods
@@ -269,7 +269,7 @@ static fun <T : Any!> compare(
 
 {@return 0 if the arguments are identical and {@code \* c.compare(a, b)} otherwise} Consequently, if both arguments are `null` 0 is returned.
 
-Note that if one of the arguments is `null`, a `NullPointerException` may or may not be thrown depending on what ordering policy, if any, the `https://developer.android.com/reference/kotlin/java/util/Comparator` chooses to have for `null` values.
+Note that if one of the arguments is `null`, a `NullPointerException` may or may not be thrown depending on what ordering policy, if any, the Comparator chooses to have for `null` values.
 
 | Parameters ||
 |---|---|
@@ -282,7 +282,7 @@ Note that if one of the arguments is `null`, a `NullPointerException` may or may
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#`
-- `https://developer.android.com/reference/kotlin/java/util/Comparator`
+- Comparator
 
 ### deepEquals
 
@@ -295,7 +295,7 @@ static fun deepEquals(
 ): Boolean
 ```
 
-{@return {@code true} if the arguments are deeply equal to each other \* and {@code false} otherwise} Two `null` values are deeply equal. If both arguments are arrays, the algorithm in `https://developer.android.com/reference/kotlin/java/util/Arrays#deepEquals(kotlin.Array,%20kotlin.Array)` is used to determine equality. Otherwise, equality is determined by using the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method of the first argument.
+{@return {@code true} if the arguments are deeply equal to each other \* and {@code false} otherwise} Two `null` values are deeply equal. If both arguments are arrays, the algorithm in deepEquals is used to determine equality. Otherwise, equality is determined by using the equals method of the first argument.
 
 | Parameters ||
 |---|---|
@@ -304,8 +304,8 @@ static fun deepEquals(
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Arrays#deepEquals(kotlin.Array,%20kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/java/util/Objects#equals(kotlin.Any,%20kotlin.Any)`
+- deepEquals
+- equals
 
 ### equals
 
@@ -318,7 +318,7 @@ static fun equals(
 ): Boolean
 ```
 
-{@return {@code true} if the arguments are equal to each other \* and {@code false} otherwise} Consequently, if both arguments are `null`, `true` is returned. Otherwise, if the first argument is not `null`, equality is determined by calling the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method of the first argument with the second argument of this method. Otherwise, `false` is returned.
+{@return {@code true} if the arguments are equal to each other \* and {@code false} otherwise} Consequently, if both arguments are `null`, `true` is returned. Otherwise, if the first argument is not `null`, equality is determined by calling the equals method of the first argument with the second argument of this method. Otherwise, `false` is returned.
 
 | Parameters ||
 |---|---|
@@ -327,7 +327,7 @@ static fun equals(
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)`
+- equals
 
 ### hash
 
@@ -337,9 +337,9 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static fun hash(vararg values: Any!): Int
 ```
 
-{@return a hash code for a sequence of input values} The hash code is generated as if all the input values were placed into an array, and that array were hashed by calling `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.Array)`.
+{@return a hash code for a sequence of input values} The hash code is generated as if all the input values were placed into an array, and that array were hashed by calling hashCode.
 
-This method is useful for implementing `https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()` on objects containing multiple fields. For example, if an object that has three fields, `x`, `y`, and `z`, one could write:
+This method is useful for implementing hashCode on objects containing multiple fields. For example, if an object that has three fields, `x`, `y`, and `z`, one could write:
 
 ```kotlin
 @Override public int hashCode() {
@@ -347,7 +347,7 @@ This method is useful for implementing `https://developer.android.com/reference/
   }
   
 ```
-**Warning: When a single object reference is supplied, the returned value does not equal the hash code of that object reference.** This value can be computed by calling `https://developer.android.com/reference/kotlin/java/util/Objects#hashCode(kotlin.Any)`.
+**Warning: When a single object reference is supplied, the returned value does not equal the hash code of that object reference.** This value can be computed by calling hashCode.
 
 | Parameters ||
 |---|---|
@@ -355,7 +355,7 @@ This method is useful for implementing `https://developer.android.com/reference/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Arrays#hashCode(kotlin.Array)`
+- hashCode
 
 ### hashCode
 
@@ -373,7 +373,7 @@ static fun hashCode(o: Any?): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()`
+- hashCode
 
 ### isNull
 
@@ -391,7 +391,7 @@ static fun isNull(obj: Any?): Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/function/Predicate`
+- Predicate
 
 ### nonNull
 
@@ -409,7 +409,7 @@ static fun nonNull(obj: Any?): Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/function/Predicate`
+- Predicate
 
 ### requireNonNull
 
@@ -494,7 +494,7 @@ static fun <T : Any!> requireNonNull(
 
 Checks that the specified object reference is not `null` and throws a customized `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` if it is.
 
-Unlike the method `https://developer.android.com/reference/kotlin/java/util/Objects#requireNonNull(java.util.Objects.requireNonNull.T,%20kotlin.String)`, this method allows creation of the message to be deferred until after the null check is made. While this may confer a performance advantage in the non-null case, when deciding to call this method care should be taken that the costs of creating the message supplier are less than the cost of just creating the string message directly.
+Unlike the method requireNonNull, this method allows creation of the message to be deferred until after the null check is made. While this may confer a performance advantage in the non-null case, when deciding to call this method care should be taken that the costs of creating the message supplier are less than the cost of just creating the string message directly.
 
 | Parameters ||
 |---|---|
@@ -579,8 +579,8 @@ static fun toIdentityString(o: Any): String
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object.html#toString()`
-- `https://developer.android.com/reference/kotlin/java/lang/System.html#identityHashCode(kotlin.Any)`
+- toString
+- identityHashCode
 
 ### toString
 
@@ -598,8 +598,8 @@ static fun toString(o: Any?): String
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object.html#toString()`
-- `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)`
+- toString
+- valueOf
 
 ### toString
 
@@ -621,4 +621,4 @@ static fun toString(
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Objects#toString(kotlin.Any)`
+- toString

@@ -31,44 +31,44 @@ MediaRouter2 allows applications to control the routing of media channels and st
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#cancelScanRequest(android.media.MediaRouter2.ScanToken)(token: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanToken)` Releases the active scan request linked to the provided `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanToken`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#clearDeviceSuggestions()()` Clears the `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` provided by this router. |
-| [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getController(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` whose ID is equal to the given ID. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancelScanRequest Releases the active scan request linked to the provided `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanToken`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearDeviceSuggestions Clears the SuggestedDeviceInfo provided by this router. |
+| [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md)? | getController Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` whose ID is equal to the given ID. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getControllers()()` Gets the list of currently active `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` on which media can be played. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getDeviceSuggestions()()` Gets the current suggested devices. |
-| static [MediaRouter2](MediaRouter2.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets an instance of the media router associated with the context. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md)!\> | getControllers Gets the list of currently active `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` on which media can be played. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\>!\> | getDeviceSuggestions Gets the current suggested devices. |
+| static [MediaRouter2](MediaRouter2.md) | getInstance Gets an instance of the media router associated with the context. |
 | --- | --- |
-| static [MediaRouter2](MediaRouter2.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context,%20kotlin.String,%20java.util.concurrent.Executor,%20java.lang.Runnable)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, clientPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, onInstanceInvalidatedListener: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Returns a proxy MediaRouter2 instance that allows you to control the routing of an app specified by `clientPackageName`. |
-| [RouteListingPreference](RouteListingPreference.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getRouteListingPreference()()` Returns the current `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the target router. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRoute2Info](MediaRoute2Info.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getRoutes()()` Gets the unmodifiable list of `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info` currently known to the media router. |
+| static [MediaRouter2](MediaRouter2.md) | getInstance Returns a proxy MediaRouter2 instance that allows you to control the routing of an app specified by `clientPackageName`. |
+| [RouteListingPreference](RouteListingPreference.md)? | getRouteListingPreference Returns the current RouteListingPreference of the target router. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRoute2Info](MediaRoute2Info.md)!\> | getRoutes Gets the unmodifiable list of MediaRoute2Info currently known to the media router. |
 | --- | --- |
-| [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getSystemController()()` Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` which can control the routes provided by system. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerControllerCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.ControllerCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback)` Registers a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerDeviceSuggestionsUpdatesCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.DeviceSuggestionsUpdatesCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, deviceSuggestionsUpdatesCallback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.DeviceSuggestionsUpdatesCallback)` Registers the given callback to be invoked when the `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` of the target router changes. |
+| [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md) | getSystemController Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` which can control the routes provided by system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerControllerCallback Registers a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerDeviceSuggestionsUpdatesCallback Registers the given callback to be invoked when the SuggestedDeviceInfo of the target router changes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.RouteCallback,%20android.media.RouteDiscoveryPreference)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, routeCallback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback, preference: https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference)` Registers a callback to discover routes and to receive events when they change. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteListingPreferenceUpdatedCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, routeListingPreferenceCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/media/RouteListingPreference!>)` Registers the given callback to be invoked when the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the target router changes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerTransferCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.TransferCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.TransferCallback)` Registers a callback to get the result of `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#transferTo(android.media.MediaRoute2Info)`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerRouteCallback Registers a callback to discover routes and to receive events when they change. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerRouteListingPreferenceUpdatedCallback Registers the given callback to be invoked when the RouteListingPreference of the target router changes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerTransferCallback Registers a callback to get the result of transferTo. |
 | --- | --- |
-| [MediaRouter2.ScanToken](../android/media/MediaRouter2.ScanToken.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#requestScan(android.media.MediaRouter2.ScanRequest)(scanRequest: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanRequest)` Requests the system to actively scan for routes based on the router's `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setDeviceSuggestions(kotlin.collections.MutableList)(suggestedDeviceInfo: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo!>)` Sets a list of `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setOnGetControllerHintsListener(android.media.MediaRouter2.OnGetControllerHintsListener)(listener: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener?)` Sets an `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener` to send hints when creating a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController`. |
+| [MediaRouter2.ScanToken](../android/media/MediaRouter2.ScanToken.md) | requestScan Requests the system to actively scan for routes based on the router's RouteDiscoveryPreference. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDeviceSuggestions Sets a list of SuggestedDeviceInfo. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnGetControllerHintsListener Sets an `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener` to send hints when creating a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setRouteListingPreference(android.media.RouteListingPreference)(routeListingPreference: https://developer.android.com/reference/kotlin/android/media/RouteListingPreference?)` Sets the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the app associated to this media router. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setRouteVolume(android.media.MediaRoute2Info,%20kotlin.Int)(route: https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info, volume: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the volume for a specific route. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#showSystemOutputSwitcher()()` Shows the system output switcher dialog. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRouteListingPreference Sets the RouteListingPreference of the app associated to this media router. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRouteVolume Sets the volume for a specific route. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | showSystemOutputSwitcher Shows the system output switcher dialog. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#showSystemOutputSwitcher(android.media.session.MediaSession.Token)(sessionToken: https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token)` Shows the system output switcher dialog for a specific `https://developer.android.com/reference/kotlin/android/media/session/MediaSession`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#stop()()` Stops the current media routing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#transferTo(android.media.MediaRoute2Info)(route: https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info)` Transfers the current media to the given route. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | showSystemOutputSwitcher Shows the system output switcher dialog for a specific MediaSession. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stop Stops the current media routing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | transferTo Transfers the current media to the given route. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterControllerCallback(android.media.MediaRouter2.ControllerCallback)(callback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback)` Unregisters a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterDeviceSuggestionsUpdatesCallback(android.media.MediaRouter2.DeviceSuggestionsUpdatesCallback)(callback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.DeviceSuggestionsUpdatesCallback)` Unregisters the given callback to not receive `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` change events. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterRouteCallback(android.media.MediaRouter2.RouteCallback)(routeCallback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback)` Unregisters the given callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterControllerCallback Unregisters a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterDeviceSuggestionsUpdatesCallback Unregisters the given callback to not receive SuggestedDeviceInfo change events. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterRouteCallback Unregisters the given callback. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterRouteListingPreferenceUpdatedCallback(java.util.function.Consumer)(callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/media/RouteListingPreference!>)` Unregisters the given callback to not receive `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` change events. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterTransferCallback(android.media.MediaRouter2.TransferCallback)(callback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.TransferCallback)` Unregisters the given callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterRouteListingPreferenceUpdatedCallback Unregisters the given callback to not receive RouteListingPreference change events. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterTransferCallback Unregisters the given callback. |
 
 ## Public methods
 
@@ -92,7 +92,7 @@ Releases the active scan request linked to the provided `https://developer.andro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#requestScan(android.media.MediaRouter2.ScanRequest)`
+- requestScan
 
 ### clearDeviceSuggestions
 
@@ -102,7 +102,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun clearDeviceSuggestions(): Unit
 ```
 
-Clears the `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` provided by this router.
+Clears the SuggestedDeviceInfo provided by this router.
 
 Use this method to tell the system that this router is not currently providing any suggestions.
 
@@ -132,7 +132,7 @@ fun getControllers(): MutableList<MediaRouter2.RoutingController!>
 
 Gets the list of currently active `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` on which media can be played.
 
-Note: The list returned here will never be empty. The first element in the list is always the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getSystemController()`.
+Note: The list returned here will never be empty. The first element in the list is always the getSystemController.
 
 | Return ||
 |---|---|
@@ -168,7 +168,7 @@ Gets an instance of the media router associated with the context.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#` | This value cannot be `null`. |
+| MediaRouter2 | This value cannot be `null`. |
 
 ### getInstance
 
@@ -187,15 +187,15 @@ Returns a proxy MediaRouter2 instance that allows you to control the routing of 
 
 Proxy MediaRouter2 instances operate differently than regular MediaRouter2 instances:
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.RouteCallback,%20android.media.RouteDiscoveryPreference)` ignores any `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference` passed by a proxy router. Use android.media.RouteDiscoveryPreference#EMPTY when setting a route callback.
+- registerRouteCallback ignores any RouteDiscoveryPreference passed by a proxy router. Use android.media.RouteDiscoveryPreference#EMPTY when setting a route callback.
 
-- Methods returning non-system `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` always return new instances with the latest data. Do not attempt to compare or store them. Instead, use `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getController(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getControllers()` to query the most up-to-date state.
+- Methods returning non-system `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` always return new instances with the latest data. Do not attempt to compare or store them. Instead, use getController or getControllers to query the most up-to-date state.
 
-- Calls to `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setOnGetControllerHintsListener(android.media.MediaRouter2.OnGetControllerHintsListener)` are ignored.
+- Calls to setOnGetControllerHintsListener are ignored.
 
 Use this method when you only hold a revocable version of `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String` (e.g. acquired via the `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#`). Otherwise, use #getInstance(android.content.Context,java.lang.String).
 
-`onInstanceInvalidatedListener` is called when the instance is invalidated because the calling app has lost `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String` and does not hold `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String`. Do not use the invalidated instance after receiving this callback, as the system will ignore all operations. Call `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context,%20kotlin.String,%20java.util.concurrent.Executor,%20java.lang.Runnable)` again after reacquiring the relevant permissions. 
+`onInstanceInvalidatedListener` is called when the instance is invalidated because the calling app has lost `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String` and does not hold `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String`. Do not use the invalidated instance after receiving this callback, as the system will ignore all operations. Call getInstance again after reacquiring the relevant permissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String`
 
 | Parameters ||
@@ -204,11 +204,11 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | `clientPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app you want to control the routing of, or `"android"` to control the routing of the whole system. This value cannot be `null`. |
 | `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke `onInstanceInvalidatedListener`. This value cannot be `null`. |
 | --- | --- |
-| `onInstanceInvalidatedListener` | [Runnable](../java.lang/Runnable.md): Callback for when the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#` instance is invalidated due to lost permissions. This value cannot be `null`. |
+| `onInstanceInvalidatedListener` | [Runnable](../java.lang/Runnable.md): Callback for when the MediaRouter2 instance is invalidated due to lost permissions. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#` | This value cannot be `null`. |
+| MediaRouter2 | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -222,17 +222,17 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRouteListingPreference(): RouteListingPreference?
 ```
 
-Returns the current `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the target router.
+Returns the current RouteListingPreference of the target router.
 
-If this instance was created using `getInstance(Context, String)`, then it returns the last `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` set by the process this router was created for.
+If this instance was created using `getInstance(Context, String)`, then it returns the last RouteListingPreference set by the process this router was created for.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference?` | This value may be `null`. |
+| RouteListingPreference | This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setRouteListingPreference(android.media.RouteListingPreference)`
+- setRouteListingPreference
 
 ### getRoutes
 
@@ -242,11 +242,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getRoutes(): MutableList<MediaRoute2Info!>
 ```
 
-Gets the unmodifiable list of `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info` currently known to the media router.
+Gets the unmodifiable list of MediaRoute2Info currently known to the media router.
 
 Please note that the list can be changed before callbacks are invoked.
 
-This method returns routes available to the routing framework that contain at least one of the `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference#getPreferredFeatures()` registered by the application through `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.RouteCallback,%20android.media.RouteDiscoveryPreference)`. As a result, you need to register at least one `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback` (associated with the features that you are interested in), in order for this method to return a non-empty list.
+This method returns routes available to the routing framework that contain at least one of the getPreferredFeatures registered by the application through registerRouteCallback. As a result, you need to register at least one `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback` (associated with the features that you are interested in), in order for this method to return a non-empty list.
 
 | Return ||
 |---|---|
@@ -262,7 +262,7 @@ fun getSystemController(): MediaRouter2.RoutingController
 
 Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` which can control the routes provided by system. e.g. Phone speaker, wired headset, Bluetooth, etc.
 
-Note: The system controller can't be released. Calling `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController#release()` will be ignored.
+Note: The system controller can't be released. Calling release will be ignored.
 
 This method always returns the same instance.
 
@@ -285,12 +285,12 @@ Registers a `https://developer.android.com/reference/kotlin/android/media/MediaR
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaRouter2.ControllerCallback](../android/media/MediaRouter2.ControllerCallback.md): This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterControllerCallback(android.media.MediaRouter2.ControllerCallback)`
+- unregisterControllerCallback
 
 ### registerDeviceSuggestionsUpdatesCallback
 
@@ -303,13 +303,13 @@ fun registerDeviceSuggestionsUpdatesCallback(
 ): Unit
 ```
 
-Registers the given callback to be invoked when the `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` of the target router changes.
+Registers the given callback to be invoked when the SuggestedDeviceInfo of the target router changes.
 
 Calls using a previously registered callback will overwrite the previous executor.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `deviceSuggestionsUpdatesCallback` | [MediaRouter2.DeviceSuggestionsUpdatesCallback](../android/media/MediaRouter2.DeviceSuggestionsUpdatesCallback.md): This value cannot be `null`. |
 
 ### registerRouteCallback
@@ -326,17 +326,17 @@ fun registerRouteCallback(
 
 Registers a callback to discover routes and to receive events when they change.
 
-Clients can register multiple callbacks, as long as the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback` instances are different. Each callback can provide a unique `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference` and will only receive updates related to that set preference.
+Clients can register multiple callbacks, as long as the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback` instances are different. Each callback can provide a unique RouteDiscoveryPreference and will only receive updates related to that set preference.
 
-If the specified callback is already registered, its registration will be updated for the given `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` and `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference`.
+If the specified callback is already registered, its registration will be updated for the given `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` and RouteDiscoveryPreference.
 
-`https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context)` must register a route callback to register in the system and start receiving updates. Otherwise, all operations will be no-ops.
+getInstance must register a route callback to register in the system and start receiving updates. Otherwise, all operations will be no-ops.
 
 Any discovery preference passed by a #getInstance(android.content.Context,java.lang.String) will be ignored and will receive route updates based on the preference set by its matching local router.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `routeCallback` | [MediaRouter2.RouteCallback](../android/media/MediaRouter2.RouteCallback.md): This value cannot be `null`. |
 | `preference` | [RouteDiscoveryPreference](RouteDiscoveryPreference.md): This value cannot be `null`. |
 | --- | --- |
@@ -352,18 +352,18 @@ fun registerRouteListingPreferenceUpdatedCallback(
 ): Unit
 ```
 
-Registers the given callback to be invoked when the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the target router changes.
+Registers the given callback to be invoked when the RouteListingPreference of the target router changes.
 
 Calls using a previously registered callback will overwrite the previous executor.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `routeListingPreferenceCallback` | [Consumer](../java.util.function/Consumer.md)\< [RouteListingPreference](RouteListingPreference.md)!\>: This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#setRouteListingPreference(android.media.RouteListingPreference)`
+- setRouteListingPreference
 
 ### registerTransferCallback
 
@@ -376,16 +376,16 @@ fun registerTransferCallback(
 ): Unit
 ```
 
-Registers a callback to get the result of `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#transferTo(android.media.MediaRoute2Info)`. If you register the same callback twice or more, it will be ignored.
+Registers a callback to get the result of transferTo. If you register the same callback twice or more, it will be ignored.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to execute the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to execute the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaRouter2.TransferCallback](../android/media/MediaRouter2.TransferCallback.md): the callback to register. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#unregisterTransferCallback(android.media.MediaRouter2.TransferCallback)`
+- unregisterTransferCallback
 
 ### requestScan
 
@@ -395,13 +395,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun requestScan(scanRequest: MediaRouter2.ScanRequest): MediaRouter2.ScanToken
 ```
 
-Requests the system to actively scan for routes based on the router's `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference`.
+Requests the system to actively scan for routes based on the router's RouteDiscoveryPreference.
 
-You must call `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#cancelScanRequest(android.media.MediaRouter2.ScanToken)` promptly to preserve system resources like battery. Avoid scanning unless there is clear intention from the user to start routing their media.
+You must call cancelScanRequest promptly to preserve system resources like battery. Avoid scanning unless there is clear intention from the user to start routing their media.
 
 `scanRequest` specifies relevant scanning options, like whether the system should scan with the screen off. Screen off scanning requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String`.
 
-Proxy routers use the registered `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference` of their target routers.
+Proxy routers use the registered RouteDiscoveryPreference of their target routers.
 
 | Parameters ||
 |---|---|
@@ -413,7 +413,7 @@ Proxy routers use the registered `https://developer.android.com/reference/kotlin
 
 | Exceptions ||
 |---|---|
-| `java.lang.SecurityException` | If a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanRequest` with `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanRequest.Builder#setScreenOffScan(kotlin.Boolean)` true is passed, while not holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String`. |
+| `java.lang.SecurityException` | If a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ScanRequest` with setScreenOffScan true is passed, while not holding `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String`. |
 
 ### setDeviceSuggestions
 
@@ -423,7 +423,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun setDeviceSuggestions(suggestedDeviceInfo: MutableList<SuggestedDeviceInfo!>): Unit
 ```
 
-Sets a list of `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo`.
+Sets a list of SuggestedDeviceInfo.
 
 Use this method to tell the system about device suggestions for the current router. The system may use these suggestions to populate system UI such as Output Switcher and media controls.
 
@@ -431,7 +431,7 @@ Suggestions will be expired automatically by the system, at which point you shou
 
 | Parameters ||
 |---|---|
-| `suggestedDeviceInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\>: The `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` the router suggests should be provided to the user. This value cannot be `null`. |
+| `suggestedDeviceInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\>: The SuggestedDeviceInfo the router suggests should be provided to the user. This value cannot be `null`. |
 
 ### setOnGetControllerHintsListener
 
@@ -441,7 +441,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun setOnGetControllerHintsListener(listener: MediaRouter2.OnGetControllerHintsListener?): Unit
 ```
 
-Sets an `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener` to send hints when creating a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController`. To send the hints, listener should be set *BEFORE* calling `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#transferTo(android.media.MediaRoute2Info)`.
+Sets an `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener` to send hints when creating a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController`. To send the hints, listener should be set *BEFORE* calling transferTo.
 
 | Parameters ||
 |---|---|
@@ -455,23 +455,23 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun setRouteListingPreference(routeListingPreference: RouteListingPreference?): Unit
 ```
 
-Sets the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the app associated to this media router.
+Sets the RouteListingPreference of the app associated to this media router.
 
 Use this method to inform the system UI of the routes that you would like to list for media routing, via the Output Switcher.
 
-You should call this method before `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.RouteCallback,%20android.media.RouteDiscoveryPreference)` and immediately after receiving any `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback#onRoutesUpdated(kotlin.collections.MutableList)` in order to keep the system UI in a consistent state. You can also call this method at any other point to update the listing preference dynamically.
+You should call this method before registerRouteCallback and immediately after receiving any onRoutesUpdated in order to keep the system UI in a consistent state. You can also call this method at any other point to update the listing preference dynamically.
 
 Calling this method on a proxy router instance will throw an `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`.
 
 Notes:
 
-1. You should not include the ids of two or more routes with a match in their `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getDeduplicationIds()`. If you do, the system will deduplicate them using its own criteria.
+1. You should not include the ids of two or more routes with a match in their getDeduplicationIds. If you do, the system will deduplicate them using its own criteria.
 2. You can use this method to rank routes in the output switcher, placing the more important routes first. The system might override the proposed ranking.
 3. You can use this method to avoid listing routes using dynamic criteria. For example, you can limit access to a specific type of device according to runtime criteria.
 
 | Parameters ||
 |---|---|
-| `routeListingPreference` | [RouteListingPreference](RouteListingPreference.md)?: The `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` for the system to use for route listing. When null, the system uses its default listing criteria. |
+| `routeListingPreference` | [RouteListingPreference](RouteListingPreference.md)?: The RouteListingPreference for the system to use for route listing. When null, the system uses its default listing criteria. |
 
 ### setRouteVolume
 
@@ -488,18 +488,18 @@ Sets the volume for a specific route.
 
 The call may have no effect if the route is currently not selected.
 
-This method is only supported by #getInstance(android.content.Context,java.lang.String). Use `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController#setVolume(kotlin.Int)` instead for `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context)`.
+This method is only supported by #getInstance(android.content.Context,java.lang.String). Use setVolume instead for getInstance.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_ROUTING_CONTROL:kotlin.String`
 
 | Parameters ||
 |---|---|
 | `route` | [MediaRoute2Info](MediaRoute2Info.md): This value cannot be `null`. |
-| `volume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new volume value between 0 and `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getVolumeMax()`. |
+| `volume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new volume value between 0 and getVolumeMax. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.UnsupportedOperationException` | If called on a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context)`. |
+| `java.lang.UnsupportedOperationException` | If called on a getInstance. |
 
 ### showSystemOutputSwitcher
 
@@ -529,11 +529,11 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun showSystemOutputSwitcher(sessionToken: MediaSession.Token): Boolean
 ```
 
-Shows the system output switcher dialog for a specific `https://developer.android.com/reference/kotlin/android/media/session/MediaSession`.
+Shows the system output switcher dialog for a specific MediaSession.
 
-The `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token` argument allows the system to identify which `https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo` to display as active. This is done via `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#setPlaybackToRemote(android.media.VolumeProvider)` and `https://developer.android.com/reference/kotlin/android/media/VolumeProvider#getVolumeControlId()` when playing remotely, and `https://developer.android.com/reference/kotlin/android/media/session/MediaSession#setPlaybackToLocal(android.media.AudioAttributes)` when playing on this device.
+The `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token` argument allows the system to identify which RoutingSessionInfo to display as active. This is done via setPlaybackToRemote and getVolumeControlId when playing remotely, and setPlaybackToLocal when playing on this device.
 
-This method is preferred over `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#showSystemOutputSwitcher()` to prevent the system from making wrong inferences about where playback is happening.
+This method is preferred over showSystemOutputSwitcher to prevent the system from making wrong inferences about where playback is happening.
 
 | Parameters ||
 |---|---|
@@ -555,7 +555,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun stop(): Unit
 ```
 
-Stops the current media routing. If the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getSystemController()` controls the media routing, this method is a no-op.
+Stops the current media routing. If the getSystemController controls the media routing, this method is a no-op.
 
 ### transferTo
 
@@ -573,8 +573,8 @@ Transfers the current media to the given route. If it's necessary a new `https:/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.TransferCallback#onTransfer(android.media.MediaRouter2.RoutingController,%20android.media.MediaRouter2.RoutingController)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.TransferCallback#onTransferFailure(android.media.MediaRoute2Info)`
+- onTransfer
+- onTransferFailure
 
 ### unregisterControllerCallback
 
@@ -592,7 +592,7 @@ Unregisters a `https://developer.android.com/reference/kotlin/android/media/Medi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerControllerCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.ControllerCallback)`
+- registerControllerCallback
 
 ### unregisterDeviceSuggestionsUpdatesCallback
 
@@ -602,7 +602,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun unregisterDeviceSuggestionsUpdatesCallback(callback: MediaRouter2.DeviceSuggestionsUpdatesCallback): Unit
 ```
 
-Unregisters the given callback to not receive `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` change events.
+Unregisters the given callback to not receive SuggestedDeviceInfo change events.
 
 | Parameters ||
 |---|---|
@@ -610,7 +610,7 @@ Unregisters the given callback to not receive `https://developer.android.com/ref
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerDeviceSuggestionsUpdatesCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.DeviceSuggestionsUpdatesCallback)`
+- registerDeviceSuggestionsUpdatesCallback
 
 ### unregisterRouteCallback
 
@@ -628,7 +628,7 @@ Unregisters the given callback. The callback will no longer receive events. If t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.RouteCallback,%20android.media.RouteDiscoveryPreference)`
+- registerRouteCallback
 
 ### unregisterRouteListingPreferenceUpdatedCallback
 
@@ -638,7 +638,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun unregisterRouteListingPreferenceUpdatedCallback(callback: Consumer<RouteListingPreference!>): Unit
 ```
 
-Unregisters the given callback to not receive `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` change events.
+Unregisters the given callback to not receive RouteListingPreference change events.
 
 | Parameters ||
 |---|---|
@@ -646,7 +646,7 @@ Unregisters the given callback to not receive `https://developer.android.com/ref
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerRouteListingPreferenceUpdatedCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)`
+- registerRouteListingPreferenceUpdatedCallback
 
 ### unregisterTransferCallback
 
@@ -664,4 +664,4 @@ Unregisters the given callback. The callback will no longer receive events. If t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerTransferCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.TransferCallback)`
+- registerTransferCallback

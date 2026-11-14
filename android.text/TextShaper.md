@@ -161,7 +161,7 @@ Provides text shaping for multi-styled text. Here is an example of animating tex
 
 | Public methods ||
 |---|---|
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextShaper#shapeText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.text.TextDirectionHeuristic,%20android.text.TextPaint,%20android.text.TextShaper.GlyphsConsumer)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dir: https://developer.android.com/reference/kotlin/android/text/TextDirectionHeuristic, paint: https://developer.android.com/reference/kotlin/android/text/TextPaint, consumer: https://developer.android.com/reference/kotlin/android/text/TextShaper.GlyphsConsumer)` Shape multi-styled text. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | shapeText Shape multi-styled text. |
 
 ## Public methods
 

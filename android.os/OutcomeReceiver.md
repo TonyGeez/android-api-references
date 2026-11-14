@@ -17,8 +17,8 @@ Callback interface intended for use when an asynchronous operation may result in
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver#onError(android.os.OutcomeReceiver.E)(error: E)` Called when the asynchronous operation fails. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver#onResult(android.os.OutcomeReceiver.R)(result: R)` Called when the asynchronous operation succeeds and delivers a result value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onError Called when the asynchronous operation fails. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onResult Called when the asynchronous operation succeeds and delivers a result value. |
 
 ## Public methods
 

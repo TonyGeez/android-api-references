@@ -25,36 +25,36 @@ If your process exits, any vibration you started will stop.
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#areAllEffectsSupported(kotlin.Int)(vararg effectIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query whether the vibrator supports all the given effects. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#areAllPrimitivesSupported(kotlin.Int)(vararg primitiveIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query whether the vibrator supports all of the given primitives. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#areEffectsSupported(kotlin.Int)(vararg effectIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query whether the vibrator natively supports the given effects. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | areAllEffectsSupported Query whether the vibrator supports all the given effects. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | areAllPrimitivesSupported Query whether the vibrator supports all of the given primitives. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | areEffectsSupported Query whether the vibrator natively supports the given effects. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#areEnvelopeEffectsSupported()()` Checks whether the vibrator supports the creation of envelope effects. |
-| open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#arePrimitivesSupported(kotlin.Int)(vararg primitiveIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query whether the vibrator supports the given primitives. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#cancel()()` Turn the vibrator off. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | areEnvelopeEffectsSupported Checks whether the vibrator supports the creation of envelope effects. |
+| open [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html) | arePrimitivesSupported Query whether the vibrator supports the given primitives. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Turn the vibrator off. |
 | --- | --- |
-| open [VibratorEnvelopeEffectInfo](../android.os.vibrator/VibratorEnvelopeEffectInfo.md) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getEnvelopeEffectInfo()()` Retrieves the vibrator's capabilities and limitations for envelope effects. |
-| open [VibratorFrequencyProfile](../android.os.vibrator/VibratorFrequencyProfile.md)? | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getFrequencyProfile()()` Gets the profile that describes the vibrator output across the supported frequency range. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getId()()` Return the ID of this vibrator. |
+| open [VibratorEnvelopeEffectInfo](../android.os.vibrator/VibratorEnvelopeEffectInfo.md) | getEnvelopeEffectInfo Retrieves the vibrator's capabilities and limitations for envelope effects. |
+| open [VibratorFrequencyProfile](../android.os.vibrator/VibratorFrequencyProfile.md)? | getFrequencyProfile Gets the profile that describes the vibrator output across the supported frequency range. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId Return the ID of this vibrator. |
 | --- | --- |
-| open [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getPresetDuration(kotlin.Int)(presetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query the estimated duration of the given preset. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getPrimitiveDurations(kotlin.Int)(vararg primitiveIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query the estimated durations of the given primitives. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getQFactor()()` Gets the [Q factor](https://en.wikipedia.org/wiki/Q_factor) of the vibrator. |
+| open [Duration](../java.time/Duration.md) | getPresetDuration Query the estimated duration of the given preset. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getPrimitiveDurations Query the estimated durations of the given primitives. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getQFactor Gets the [Q factor](https://en.wikipedia.org/wiki/Q_factor) of the vibrator. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#getResonantFrequency()()` Gets the resonant frequency of the vibrator, if applicable. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#hasAmplitudeControl()()` Check whether the vibrator has amplitude control. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#hasVibrator()()` Check whether the hardware has a vibrator. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getResonantFrequency Gets the resonant frequency of the vibrator, if applicable. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasAmplitudeControl Check whether the vibrator has amplitude control. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasVibrator Check whether the hardware has a vibrator. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#isPresetSupported(kotlin.Int)(presetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query whether the vibrator supports the given preset. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect)(vibe: https://developer.android.com/reference/kotlin/android/os/VibrationEffect!)` Vibrate with a given effect. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect,%20android.media.AudioAttributes)(vibe: https://developer.android.com/reference/kotlin/android/os/VibrationEffect!, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#!)` Vibrate with a given effect. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPresetSupported Query whether the vibrator supports the given preset. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate with a given effect. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate with a given effect. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect,%20android.os.VibrationAttributes)(vibe: https://developer.android.com/reference/kotlin/android/os/VibrationEffect, attributes: https://developer.android.com/reference/kotlin/android/os/VibrationAttributes)` Vibrate with a given effect. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(kotlin.Long)(milliseconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Vibrate constantly for the specified period of time. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(kotlin.Long,%20android.media.AudioAttributes)(milliseconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#!)` Vibrate constantly for the specified period of time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate with a given effect. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate constantly for the specified period of time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate constantly for the specified period of time. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(kotlin.LongArray,%20kotlin.Int)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Vibrate with a given pattern. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(kotlin.LongArray,%20kotlin.Int,%20android.media.AudioAttributes)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html!, repeat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#!)` Vibrate with a given pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate with a given pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | vibrate Vibrate with a given pattern. |
 
 ## Constants
 
@@ -120,7 +120,7 @@ If the result is `https://developer.android.com/reference/kotlin/android/os/Vibr
 
 If the result is `https://developer.android.com/reference/kotlin/android/os/Vibrator#VIBRATION_EFFECT_SUPPORT_UNKNOWN:kotlin.Int`, the system doesn't know whether all the effects are supported. It may support any or all of the queried effects, but there's no way to programmatically know whether a #vibrate call will successfully cause a vibration. It's guaranteed, however, that none of the queried effects are definitively unsupported by the hardware.
 
-Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#areEffectsSupported(kotlin.Int)` to get individual results for each effect.
+Use areEffectsSupported to get individual results for each effect.
 
 | Parameters ||
 |---|---|
@@ -142,7 +142,7 @@ Query whether the vibrator supports all of the given primitives. If no argument 
 
 If a primitive is not supported by the device, then *no vibration* will occur if it is played.
 
-Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#arePrimitivesSupported(kotlin.Int)` to get individual results for each primitive.
+Use arePrimitivesSupported to get individual results for each primitive.
 
 | Parameters ||
 |---|---|
@@ -166,7 +166,7 @@ If an effect is not supported, the system may still automatically fall back to p
 
 The returned array will be the same length as the query array and the value at a given index will contain `https://developer.android.com/reference/kotlin/android/os/Vibrator#VIBRATION_EFFECT_SUPPORT_YES:kotlin.Int` if the effect at that same index in the querying array is supported, `https://developer.android.com/reference/kotlin/android/os/Vibrator#VIBRATION_EFFECT_SUPPORT_NO:kotlin.Int` if it isn't supported, or `https://developer.android.com/reference/kotlin/android/os/Vibrator#VIBRATION_EFFECT_SUPPORT_UNKNOWN:kotlin.Int` if the system can't determine whether it's supported or not, as some hardware doesn't report its effect capabilities.
 
-Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#areAllEffectsSupported(kotlin.Int)` to get a single combined result, or for convenience when querying exactly one effect.
+Use areAllEffectsSupported to get a single combined result, or for convenience when querying exactly one effect.
 
 | Parameters ||
 |---|---|
@@ -202,7 +202,7 @@ Query whether the vibrator supports the given primitives. The returned array wil
 
 If a primitive is not supported by the device, then *no vibration* will occur if it is played.
 
-Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#areAllPrimitivesSupported(kotlin.Int)` to get a single combined result, or for convenience when querying exactly one primitive.
+Use areAllPrimitivesSupported to get a single combined result, or for convenience when querying exactly one primitive.
 
 | Parameters ||
 |---|---|
@@ -237,7 +237,7 @@ These parameters can be used with `https://developer.android.com/reference/kotli
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo` | The vibrator's envelope effect information, or null if not supported. If this vibrator is a composite of multiple physical devices then this will return a profile supported in all devices, or null if the intersection is empty or not available. |
+| VibratorEnvelopeEffectInfo | The vibrator's envelope effect information, or null if not supported. If this vibrator is a composite of multiple physical devices then this will return a profile supported in all devices, or null if the intersection is empty or not available. |
 
 **See Also**
 
@@ -257,7 +257,7 @@ The profile describes the output acceleration that the device can reach when it 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile?` | The frequency profile for this vibrator, or null if the vibrator does not have frequency control. If this vibrator is a composite of multiple physical devices then this will return a profile supported in all devices, or null if the intersection is empty or not available. |
+| VibratorFrequencyProfile | The frequency profile for this vibrator, or null if the vibrator does not have frequency control. If this vibrator is a composite of multiple physical devices then this will return a profile supported in all devices, or null if the intersection is empty or not available. |
 
 ### getId
 
@@ -307,7 +307,7 @@ Query the estimated durations of the given primitives.
 
 The returned array will be the same length as the query array and the value at a given index will contain the duration in milliseconds of the effect at the same index in the querying array.
 
-The duration will be positive for primitives that are supported and zero for the unsupported ones, in correspondence with `https://developer.android.com/reference/kotlin/android/os/Vibrator#arePrimitivesSupported(kotlin.Int)`.
+The duration will be positive for primitives that are supported and zero for the unsupported ones, in correspondence with arePrimitivesSupported.
 
 | Parameters ||
 |---|---|
@@ -407,7 +407,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `vibe` | [VibrationEffect](VibrationEffect.md)!: `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. |
+| `vibe` | [VibrationEffect](VibrationEffect.md)!: VibrationEffect describing the vibration to be performed. |
 
 ### vibrate
 
@@ -421,7 +421,7 @@ open fun vibrate(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect,%20android.os.VibrationAttributes)` instead.*
+**Deprecated:** *Use vibrate instead.*
 
 Vibrate with a given effect.
 
@@ -431,7 +431,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `vibe` | [VibrationEffect](VibrationEffect.md)!: `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. |
+| `vibe` | [VibrationEffect](VibrationEffect.md)!: VibrationEffect describing the vibration to be performed. |
 | `attributes` | [AudioAttributes](../android.media/AudioAttributes.md)!: `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#USAGE_NOTIFICATION_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. |
 
 ### vibrate
@@ -453,8 +453,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `vibe` | [VibrationEffect](VibrationEffect.md): `https://developer.android.com/reference/kotlin/android/os/VibrationEffect` describing the vibration to be performed. This value cannot be `null`. |
-| `attributes` | [VibrationAttributes](VibrationAttributes.md): `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes` corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. This value cannot be `null`. |
+| `vibe` | [VibrationEffect](VibrationEffect.md): VibrationEffect describing the vibration to be performed. This value cannot be `null`. |
+| `attributes` | [VibrationAttributes](VibrationAttributes.md): VibrationAttributes corresponding to the vibration. For example, specify `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_ALARM:kotlin.Int` for alarm vibrations or `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#USAGE_RINGTONE:kotlin.Int` for vibrations associated with incoming calls. This value cannot be `null`. |
 
 ### vibrate
 
@@ -465,7 +465,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun vibrate(milliseconds: Long): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect)` instead.*
+**Deprecated:** *Use vibrate instead.*
 
 Vibrate constantly for the specified period of time.
 
@@ -489,7 +489,7 @@ open fun vibrate(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect,%20android.os.VibrationAttributes)` instead.*
+**Deprecated:** *Use vibrate instead.*
 
 Vibrate constantly for the specified period of time.
 
@@ -514,7 +514,7 @@ open fun vibrate(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect)` instead.*
+**Deprecated:** *Use vibrate instead.*
 
 Vibrate with a given pattern.
 
@@ -544,7 +544,7 @@ open fun vibrate(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/os/Vibrator#vibrate(android.os.VibrationEffect,%20android.os.VibrationAttributes)` instead.*
+**Deprecated:** *Use vibrate instead.*
 
 Vibrate with a given pattern.
 

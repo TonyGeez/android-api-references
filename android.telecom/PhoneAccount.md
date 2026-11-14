@@ -10,51 +10,51 @@ class PhoneAccount : Parcelable
 | --- | --- |
 | ↳ | [android.telecom.PhoneAccount](PhoneAccount.md) |
 
-Represents a distinct method to place or receive a phone call. Apps which can place calls and want those calls to be integrated into the dialer and in-call UI should build an instance of this class and register it with the system using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager`.
+Represents a distinct method to place or receive a phone call. Apps which can place calls and want those calls to be integrated into the dialer and in-call UI should build an instance of this class and register it with the system using TelecomManager.
 
-`https://developer.android.com/reference/kotlin/android/telecom/TelecomManager` uses registered `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`s to present the user with alternative options when placing a phone call. When building a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`, the app should supply a valid `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` that references the connection service implementation Telecom will use to interact with the app.
+TelecomManager uses registered PhoneAccounts to present the user with alternative options when placing a phone call. When building a PhoneAccount, the app should supply a valid PhoneAccountHandle that references the connection service implementation Telecom will use to interact with the app.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount.Builder` Helper class for creating a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`. |
+| | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount.Builder` Helper class for creating a PhoneAccount. |
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_ADHOC_CONFERENCE_CALLING:kotlin.Int` An adhoc conference call is established by providing a list of addresses to `TelecomManager#startConference(List<Uri>, int videoState)` where the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` is responsible for connecting all indicated participants to a conference simultaneously. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_COMPOSER:kotlin.Int` Flag indicating whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of supporting the call composer functionality for enriched calls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_ADHOC_CONFERENCE_CALLING:kotlin.Int` An adhoc conference call is established by providing a list of addresses to `TelecomManager#startConference(List<Uri>, int videoState)` where the ConnectionService is responsible for connecting all indicated participants to a conference simultaneously. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_COMPOSER:kotlin.Int` Flag indicating whether this PhoneAccount is capable of supporting the call composer functionality for enriched calls. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_PROVIDER:kotlin.Int` Flag indicating that this `PhoneAccount` can make phone calls in place of traditional SIM-based telephony calls. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CALL_SUBJECT:kotlin.Int` Flag indicating that this `PhoneAccount` supports a subject for Calls. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CHANGE_RTT_CALL_TO_AUDIO_CALL:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of changing an RTT (Real-time text) call to a voice call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CHANGE_RTT_CALL_TO_AUDIO_CALL:kotlin.Int` Flag indicating that this PhoneAccount is capable of changing an RTT (Real-time text) call to a voice call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` Flag indicating that this `PhoneAccount` can act as a connection manager for other connections. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_OPT_OUT_OF_PREMIUM_NETWORK:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` should be opted out of automatic requests for premium network capabilities. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_OPT_OUT_OF_PREMIUM_NETWORK:kotlin.Int` Flag indicating that this PhoneAccount should be opted out of automatic requests for premium network capabilities. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_PLACE_EMERGENCY_CALLS:kotlin.Int` Flag indicating that this `PhoneAccount` is capable of placing emergency calls. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_RTT:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of making a call with an RTT (Real-time text) session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_RTT:kotlin.Int` Flag indicating that this PhoneAccount is capable of making a call with an RTT (Real-time text) session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is responsible for managing its own `https://developer.android.com/reference/kotlin/android/telecom/Connection`s. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int` Flag indicating that this PhoneAccount is responsible for managing its own Connections. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int` Flag indicating that this `PhoneAccount` represents a built-in PSTN SIM subscription. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_CALL_STREAMING:kotlin.Int` Flag indicating that this voip app `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports the call streaming session to stream call audio to another remote device via streaming app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_CALL_STREAMING:kotlin.Int` Flag indicating that this voip app PhoneAccount supports the call streaming session to stream call audio to another remote device via streaming app. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports the transactional `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback)` API for adding calls. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports video calling. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` provides SIM-based voice calls, potentially as an over-the-top solution such as wi-fi calling. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS:kotlin.Int` Flag indicating that this PhoneAccount supports the transactional addCall API for adding calls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int` Flag indicating that this PhoneAccount supports video calling. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS:kotlin.Int` Flag indicating that this PhoneAccount provides SIM-based voice calls, potentially as an over-the-top solution such as wi-fi calling. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int` Flag indicating that this `PhoneAccount` is currently able to place video calls. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING_RELIES_ON_PRESENCE:kotlin.Int` Flag indicating that for this `PhoneAccount`, the ability to make a video call to a number relies on presence. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int` Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is *currently* able to place SIM-based voice calls, similar to `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int` Flag indicating that this PhoneAccount is *currently* able to place SIM-based voice calls, similar to `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_ADD_SELF_MANAGED_CALLS_TO_INCALLSERVICE:kotlin.String` Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether a Self-managed `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` want to expose its calls to all `https://developer.android.com/reference/kotlin/android/telecom/InCallService` which declares the metadata `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_SELF_MANAGED_CALLS:kotlin.String`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_ALWAYS_USE_VOIP_AUDIO_MODE:kotlin.String` Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates that all calls from this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` should be treated as VoIP calls rather than cellular calls by the Telecom audio handling logic. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_CALL_SUBJECT_CHARACTER_ENCODING:kotlin.String` `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which determines the character encoding to be used when determining the length of messages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_ADD_SELF_MANAGED_CALLS_TO_INCALLSERVICE:kotlin.String` Boolean PhoneAccount extras key (see getExtras) which indicates whether a Self-managed PhoneAccount want to expose its calls to all InCallService which declares the metadata `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_SELF_MANAGED_CALLS:kotlin.String`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_ALWAYS_USE_VOIP_AUDIO_MODE:kotlin.String` Boolean PhoneAccount extras key (see getExtras) which indicates that all calls from this PhoneAccount should be treated as VoIP calls rather than cellular calls by the Telecom audio handling logic. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_CALL_SUBJECT_CHARACTER_ENCODING:kotlin.String` PhoneAccount extras key (see getExtras) which determines the character encoding to be used when determining the length of messages. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_CALL_SUBJECT_MAX_LENGTH:kotlin.String` `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which determines the maximum permitted length of a call subject specified via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_SUBJECT:kotlin.String` extra on an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_LOG_SELF_MANAGED_CALLS:kotlin.String` Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether a Self-Managed `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` should log its calls to the call log. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_FROM:kotlin.String` Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of supporting a request to handover a connection from this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` to another `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_CALL_SUBJECT_MAX_LENGTH:kotlin.String` PhoneAccount extras key (see getExtras) which determines the maximum permitted length of a call subject specified via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_SUBJECT:kotlin.String` extra on an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_LOG_SELF_MANAGED_CALLS:kotlin.String` Boolean PhoneAccount extras key (see getExtras) which indicates whether a Self-Managed PhoneAccount should log its calls to the call log. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_FROM:kotlin.String` Boolean PhoneAccount extras key (see getExtras) which indicates whether this PhoneAccount is capable of supporting a request to handover a connection from this PhoneAccount to another PhoneAccount. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_TO:kotlin.String` Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of supporting a request to handover a connection (see `android.telecom.Call#handoverTo()`) to this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` from a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` specifying `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_FROM:kotlin.String`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_TO:kotlin.String` Boolean PhoneAccount extras key (see getExtras) which indicates whether this PhoneAccount is capable of supporting a request to handover a connection (see `android.telecom.Call#handoverTo()`) to this PhoneAccount from a PhoneAccount specifying `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_FROM:kotlin.String`. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#LOW_BATTERY_ALERT_DISABLED:kotlin.Int` Default value indicating that the low battery alert feature is disabled. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#NO_HIGHLIGHT_COLOR:kotlin.Int` Indicating no hightlight color is set. |
 | --- | --- |
@@ -66,39 +66,39 @@ Represents a distinct method to place or receive a phone call. Apps which can pl
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| static [PhoneAccount.Builder](../android/telecom/PhoneAccount.Builder.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#builder(android.telecom.PhoneAccountHandle,%20kotlin.CharSequence)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| static [PhoneAccount.Builder](../android/telecom/PhoneAccount.Builder.md)! | builder <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [PhoneAccountHandle](PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAccountHandle()()` The unique identifier of this `PhoneAccount`. |
-| [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()()` The address (e.g., a phone number) associated with this |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()()` The capabilities of this `PhoneAccount`. |
+| [PhoneAccountHandle](PhoneAccountHandle.md)! | getAccountHandle The unique identifier of this `PhoneAccount`. |
+| [Uri](../android.net/Uri.md)! | getAddress The address (e.g., a phone number) associated with this |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCapabilities The capabilities of this `PhoneAccount`. |
 | --- | --- |
-| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()()` The extras associated with this `PhoneAccount`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getHighlightColor()()` A highlight color to use in displaying information about this `PhoneAccount`. |
-| [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getIcon()()` The icon to represent this `PhoneAccount`. |
+| [Bundle](../android.os/Bundle.md)! | getExtras The extras associated with this `PhoneAccount`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHighlightColor A highlight color to use in displaying information about this `PhoneAccount`. |
+| [Icon](../android.graphics.drawable/Icon.md)! | getIcon The icon to represent this `PhoneAccount`. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getLabel()()` A short label describing a `PhoneAccount`. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getShortDescription()()` A short paragraph describing this `PhoneAccount`. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSimultaneousCallingRestriction()()` If a restriction is set (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()`), this method returns the Set of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s that are allowed to support calls simultaneously with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getLabel A short label describing a `PhoneAccount`. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getShortDescription A short paragraph describing this `PhoneAccount`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | getSimultaneousCallingRestriction If a restriction is set (see hasSimultaneousCallingRestriction), this method returns the Set of PhoneAccountHandles that are allowed to support calls simultaneously with this PhoneAccount. |
 | --- | --- |
-| [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSubscriptionAddress()()` The raw callback number used for this `PhoneAccount`, as distinct from `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSupportedUriSchemes()()` The URI schemes supported by this `PhoneAccount`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasCapabilities(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if this `PhoneAccount` has a capabilities specified by the passed in bit mask. |
+| [Uri](../android.net/Uri.md)! | getSubscriptionAddress The raw callback number used for this `PhoneAccount`, as distinct from getAddress. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getSupportedUriSchemes The URI schemes supported by this `PhoneAccount`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCapabilities Determines if this `PhoneAccount` has a capabilities specified by the passed in bit mask. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()()` Whether or not this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` contains a simultaneous calling restriction on it. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#isEnabled()()` Indicates whether the user has enabled this `PhoneAccount` or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSimultaneousCallingRestriction Whether or not this PhoneAccount contains a simultaneous calling restriction on it. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnabled Indicates whether the user has enabled this `PhoneAccount` or not. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#supportsUriScheme(kotlin.String)(uriScheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Determines if the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports calls to/from addresses with a specified URI scheme. |
-| [PhoneAccount.Builder](../android/telecom/PhoneAccount.Builder.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#toBuilder()()` Returns a builder initialized with the current `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` instance. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsUriScheme Determines if the PhoneAccount supports calls to/from addresses with a specified URI scheme. |
+| [PhoneAccount.Builder](../android/telecom/PhoneAccount.Builder.md)! | toBuilder Returns a builder initialized with the current PhoneAccount instance. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -114,7 +114,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_ADHOC_CONFERENCE_CALLING: Int
 ```
 
-An adhoc conference call is established by providing a list of addresses to `TelecomManager#startConference(List<Uri>, int videoState)` where the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` is responsible for connecting all indicated participants to a conference simultaneously. This is in contrast to conferences formed by merging calls together (e.g. using `https://developer.android.com/reference/kotlin/android/telecom/Call#mergeConference()`).
+An adhoc conference call is established by providing a list of addresses to `TelecomManager#startConference(List<Uri>, int videoState)` where the ConnectionService is responsible for connecting all indicated participants to a conference simultaneously. This is in contrast to conferences formed by merging calls together (e.g. using mergeConference).
 
  Value: 16384
 
@@ -126,7 +126,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_CALL_COMPOSER: Int
 ```
 
-Flag indicating whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of supporting the call composer functionality for enriched calls.
+Flag indicating whether this PhoneAccount is capable of supporting the call composer functionality for enriched calls.
 
  Value: 32768
 
@@ -140,7 +140,7 @@ static val CAPABILITY_CALL_PROVIDER: Int
 
 Flag indicating that this `PhoneAccount` can make phone calls in place of traditional SIM-based telephony calls. This account will be treated as a distinct method for placing calls alongside the traditional SIM-based telephony stack. This flag is distinct from `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` in that it is not allowed to manage or place calls from the built-in telephony stack.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
 <br />
 
@@ -156,7 +156,7 @@ static val CAPABILITY_CALL_SUBJECT: Int
 
 Flag indicating that this `PhoneAccount` supports a subject for Calls. This means a caller is able to specify a short subject line for an outgoing call. A capable receiving device displays the call subject on the incoming call screen.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 64
 
@@ -168,7 +168,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_CHANGE_RTT_CALL_TO_AUDIO_CALL: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of changing an RTT (Real-time text) call to a voice call.
+Flag indicating that this PhoneAccount is capable of changing an RTT (Real-time text) call to a voice call.
 
 When set, the in-call app will display the "change to voice" option.
 
@@ -184,11 +184,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_CONNECTION_MANAGER: Int
 ```
 
-Flag indicating that this `PhoneAccount` can act as a connection manager for other connections. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` associated with this `PhoneAccount` will be allowed to manage phone calls including using its own proprietary phone-call implementation (like VoIP calling) to make calls instead of the telephony stack.
+Flag indicating that this `PhoneAccount` can act as a connection manager for other connections. The ConnectionService associated with this `PhoneAccount` will be allowed to manage phone calls including using its own proprietary phone-call implementation (like VoIP calling) to make calls instead of the telephony stack.
 
-When a user opts to place a call using the SIM-based telephony stack, the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` associated with this `PhoneAccount` will be attempted first if the user has explicitly selected it to be used as the default connection manager.
+When a user opts to place a call using the SIM-based telephony stack, the ConnectionService associated with this `PhoneAccount` will be attempted first if the user has explicitly selected it to be used as the default connection manager.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 1
 
@@ -200,7 +200,7 @@ Added in [API level 37.1](https://developer.android.com/guide/topics/manifest/us
 static val CAPABILITY_OPT_OUT_OF_PREMIUM_NETWORK: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` should be opted out of automatic requests for premium network capabilities.
+Flag indicating that this PhoneAccount should be opted out of automatic requests for premium network capabilities.
 
 By default, the system may automatically request a premium network slice (such as a slice for unified communications) on behalf of an application with android.telecom.Call#PROPERTY_IS_TRANSACTIONAL, when a call is being established. Setting this capability would allow an application to opt-out of this behaviour and manage its own network requests, giving it more granular control over its networking.
 
@@ -210,7 +210,7 @@ This is intended for applications with sophisticated, custom network management 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+- getCapabilities
 
 ### CAPABILITY_PLACE_EMERGENCY_CALLS
 
@@ -222,7 +222,7 @@ static val CAPABILITY_PLACE_EMERGENCY_CALLS: Int
 
 Flag indicating that this `PhoneAccount` is capable of placing emergency calls. By default all PSTN `PhoneAccount`s are capable of placing emergency calls.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 16
 
@@ -234,7 +234,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_RTT: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of making a call with an RTT (Real-time text) session. When set, Telecom will attempt to open an RTT session on outgoing calls that specify that they should be placed with an RTT session , and the in-call app will be displayed with text entry fields for RTT. Likewise, the in-call app can request that an RTT session be opened during a call if this bit is set.
+Flag indicating that this PhoneAccount is capable of making a call with an RTT (Real-time text) session. When set, Telecom will attempt to open an RTT session on outgoing calls that specify that they should be placed with an RTT session , and the in-call app will be displayed with text entry fields for RTT. Likewise, the in-call app can request that an RTT session be opened during a call if this bit is set.
 
  Value: 4096
 
@@ -249,11 +249,11 @@ static val CAPABILITY_SELF_MANAGED: Int
 
 **Deprecated:** *VoIP applications that want to integrate with the Telecom framework should transition to the new Telecom VoIP APIs which are wrapped by the*
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is responsible for managing its own `https://developer.android.com/reference/kotlin/android/telecom/Connection`s. This type of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is ideal for use with standalone calling apps which do not wish to use the default phone app for `https://developer.android.com/reference/kotlin/android/telecom/Connection` UX, but which want to leverage the call and audio routing capabilities of the Telecom framework.
+Flag indicating that this PhoneAccount is responsible for managing its own Connections. This type of PhoneAccount is ideal for use with standalone calling apps which do not wish to use the default phone app for Connection UX, but which want to leverage the call and audio routing capabilities of the Telecom framework.
 
-When set, `https://developer.android.com/reference/kotlin/android/telecom/Connection`s created by the self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` will not be surfaced to implementations of the `https://developer.android.com/reference/kotlin/android/telecom/InCallService` API. Thus it is the responsibility of a self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to provide a user interface for its `https://developer.android.com/reference/kotlin/android/telecom/Connection`s.
+When set, Connections created by the self-managed ConnectionService will not be surfaced to implementations of the InCallService API. Thus it is the responsibility of a self-managed ConnectionService to provide a user interface for its Connections.
 
-Self-managed `https://developer.android.com/reference/kotlin/android/telecom/Connection`s will, however, be displayed on connected Bluetooth devices.
+Self-managed Connections will, however, be displayed on connected Bluetooth devices.
 
  Value: 2048
 
@@ -269,7 +269,7 @@ Flag indicating that this `PhoneAccount` represents a built-in PSTN SIM subscrip
 
 Only the Android framework can register a `PhoneAccount` having this capability.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 4
 
@@ -281,13 +281,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_SUPPORTS_CALL_STREAMING: Int
 ```
 
-Flag indicating that this voip app `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports the call streaming session to stream call audio to another remote device via streaming app.
+Flag indicating that this voip app PhoneAccount supports the call streaming session to stream call audio to another remote device via streaming app.
 
  Value: 524288
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+- getCapabilities
 
 ### CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS
 
@@ -297,19 +297,19 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports the transactional `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback)` API for adding calls.
+Flag indicating that this PhoneAccount supports the transactional addCall API for adding calls.
 
-An app that declares this capability is indicating its support for a newer, more flexible call registration mechanism. When this capability is set on a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`, the Telecom framework will amend its capabilities to include `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`. This allows the app to manage its own call UI and lifecycle, while still integrating with the Android system for audio routing and call management.
+An app that declares this capability is indicating its support for a newer, more flexible call registration mechanism. When this capability is set on a PhoneAccount, the Telecom framework will amend its capabilities to include `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`. This allows the app to manage its own call UI and lifecycle, while still integrating with the Android system for audio routing and call management.
 
-This capability should **only** be added if your application is using the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback)` method to report new incoming and outgoing calls. If your app uses the legacy methods `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingCall(android.telecom.PhoneAccountHandle,%20android.os.Bundle)` or `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)`, this capability **must not** be used.
+This capability should **only** be added if your application is using the addCall method to report new incoming and outgoing calls. If your app uses the legacy methods addNewIncomingCall or placeCall, this capability **must not** be used.
 
  Value: 262144
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addCall(android.telecom.CallAttributes,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver,%20android.telecom.CallControlCallback,%20android.telecom.CallEventCallback)`
+- addCall
 - `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SELF_MANAGED:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+- getCapabilities
 
 ### CAPABILITY_SUPPORTS_VIDEO_CALLING
 
@@ -319,11 +319,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_SUPPORTS_VIDEO_CALLING: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports video calling. This is not an indication that the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is currently able to make a video call, but rather that it has the ability to make video calls (but not necessarily at this time).
+Flag indicating that this PhoneAccount supports video calling. This is not an indication that the PhoneAccount is currently able to make a video call, but rather that it has the ability to make video calls (but not necessarily at this time).
 
-Whether a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` can make a video call is ultimately controlled by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`, which indicates whether the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is currently capable of making a video call. Consider a case where, for example, a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports making video calls (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int`), but a current lack of network connectivity prevents video calls from being made (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`).
+Whether a PhoneAccount can make a video call is ultimately controlled by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`, which indicates whether the PhoneAccount is currently capable of making a video call. Consider a case where, for example, a PhoneAccount supports making video calls (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int`), but a current lack of network connectivity prevents video calls from being made (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`).
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 1024
 
@@ -335,18 +335,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` provides SIM-based voice calls, potentially as an over-the-top solution such as wi-fi calling.
+Flag indicating that this PhoneAccount provides SIM-based voice calls, potentially as an over-the-top solution such as wi-fi calling.
 
-Similar to `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int`, this capability indicates this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` has the ability to make voice calls (but not necessarily at this time). Whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` can make a voice call is ultimately controlled by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int`, which indicates whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is currently capable of making a voice call. Consider a case where, for example, a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports making voice calls (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS:kotlin.Int`), but a current lack of network connectivity prevents voice calls from being made (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int`).
+Similar to `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int`, this capability indicates this PhoneAccount has the ability to make voice calls (but not necessarily at this time). Whether this PhoneAccount can make a voice call is ultimately controlled by `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int`, which indicates whether this PhoneAccount is currently capable of making a voice call. Consider a case where, for example, a PhoneAccount supports making voice calls (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS:kotlin.Int`), but a current lack of network connectivity prevents voice calls from being made (e.g. `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int`).
 
-In order to declare this capability, this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` must also declare `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` and satisfy the associated requirements.
+In order to declare this capability, this PhoneAccount must also declare `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` and satisfy the associated requirements.
 
  Value: 65536
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VOICE_CALLING_AVAILABLE:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+- getCapabilities
 
 ### CAPABILITY_VIDEO_CALLING
 
@@ -360,7 +360,7 @@ Flag indicating that this `PhoneAccount` is currently able to place video calls.
 
 See also `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VIDEO_CALLING:kotlin.Int` which indicates whether the `PhoneAccount` supports placing video calls.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 8
 
@@ -376,7 +376,7 @@ Flag indicating that for this `PhoneAccount`, the ability to make a video call t
 
 Note: As of Android 12, using the `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DataColumns.html#CARRIER_PRESENCE_VT_CAPABLE:kotlin.Int` bit on the `https://developer.android.com/reference/kotlin/android/provider/ContactsContract.DataColumns.html#CARRIER_PRESENCE:kotlin.String` column to indicate whether a contact's phone number supports video calling has been deprecated and should only be used on devices where `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager.html#KEY_USE_RCS_PRESENCE_BOOL:kotlin.String` is set. On newer devices, applications must use `https://developer.android.com/reference/kotlin/android/telephony/ims/RcsUceAdapter.html#` instead to determine whether or not a contact's phone number supports carrier video calling.
 
-See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+See getCapabilities
 
  Value: 256
 
@@ -388,18 +388,18 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_VOICE_CALLING_AVAILABLE: Int
 ```
 
-Flag indicating that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is *currently* able to place SIM-based voice calls, similar to `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`.
+Flag indicating that this PhoneAccount is *currently* able to place SIM-based voice calls, similar to `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_VIDEO_CALLING:kotlin.Int`.
 
 See also `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS:kotlin.Int`, which indicates whether the `PhoneAccount` supports placing SIM-based voice calls or not.
 
-In order to declare this capability, this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` must also declare `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` and satisfy the associated requirements.
+In order to declare this capability, this PhoneAccount must also declare `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SIM_SUBSCRIPTION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int` and satisfy the associated requirements.
 
  Value: 131072
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_SUPPORTS_VOICE_CALLING_INDICATIONS:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()`
+- getCapabilities
 
 ### EXTRA_ADD_SELF_MANAGED_CALLS_TO_INCALLSERVICE
 
@@ -409,7 +409,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ADD_SELF_MANAGED_CALLS_TO_INCALLSERVICE: String
 ```
 
-Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether a Self-managed `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` want to expose its calls to all `https://developer.android.com/reference/kotlin/android/telecom/InCallService` which declares the metadata `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_SELF_MANAGED_CALLS:kotlin.String`.
+Boolean PhoneAccount extras key (see getExtras) which indicates whether a Self-managed PhoneAccount want to expose its calls to all InCallService which declares the metadata `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_INCLUDE_SELF_MANAGED_CALLS:kotlin.String`.
 
  Value: "android.telecom.extra.ADD_SELF_MANAGED_CALLS_TO_INCALLSERVICE"
 
@@ -421,7 +421,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ALWAYS_USE_VOIP_AUDIO_MODE: String
 ```
 
-Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates that all calls from this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` should be treated as VoIP calls rather than cellular calls by the Telecom audio handling logic.
+Boolean PhoneAccount extras key (see getExtras) which indicates that all calls from this PhoneAccount should be treated as VoIP calls rather than cellular calls by the Telecom audio handling logic.
 
  Value: "android.telecom.extra.ALWAYS_USE_VOIP_AUDIO_MODE"
 
@@ -433,7 +433,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CALL_SUBJECT_CHARACTER_ENCODING: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which determines the character encoding to be used when determining the length of messages. The user interface can use this when determining the number of characters the user may type in a call subject. If empty-string, the call subject message size limit will be enforced on a 1:1 basis. That is, each character will count towards the messages size limit as a single character. If a character encoding is specified, the message size limit will be based on the number of bytes in the message per the specified encoding. See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_CALL_SUBJECT_MAX_LENGTH:kotlin.String` for more information on the call subject maximum length.
+PhoneAccount extras key (see getExtras) which determines the character encoding to be used when determining the length of messages. The user interface can use this when determining the number of characters the user may type in a call subject. If empty-string, the call subject message size limit will be enforced on a 1:1 basis. That is, each character will count towards the messages size limit as a single character. If a character encoding is specified, the message size limit will be based on the number of bytes in the message per the specified encoding. See `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_CALL_SUBJECT_MAX_LENGTH:kotlin.String` for more information on the call subject maximum length.
 
  Value: "android.telecom.extra.CALL_SUBJECT_CHARACTER_ENCODING"
 
@@ -445,7 +445,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CALL_SUBJECT_MAX_LENGTH: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which determines the maximum permitted length of a call subject specified via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_SUBJECT:kotlin.String` extra on an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent. Ultimately a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` is responsible for enforcing the maximum call subject length when sending the message, however this extra is provided so that the user interface can proactively limit the length of the call subject as the user types it.
+PhoneAccount extras key (see getExtras) which determines the maximum permitted length of a call subject specified via the `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#EXTRA_CALL_SUBJECT:kotlin.String` extra on an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` intent. Ultimately a ConnectionService is responsible for enforcing the maximum call subject length when sending the message, however this extra is provided so that the user interface can proactively limit the length of the call subject as the user types it.
 
  Value: "android.telecom.extra.CALL_SUBJECT_MAX_LENGTH"
 
@@ -460,11 +460,11 @@ static val EXTRA_LOG_SELF_MANAGED_CALLS: String
 
 **Deprecated:** *Register `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#ACTION_CALL_BACK:kotlin.String` instead.*
 
-Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether a Self-Managed `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` should log its calls to the call log. Self-Managed `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`s are responsible for their own notifications, so the system will not create a notification when a missed call is logged.
+Boolean PhoneAccount extras key (see getExtras) which indicates whether a Self-Managed PhoneAccount should log its calls to the call log. Self-Managed PhoneAccounts are responsible for their own notifications, so the system will not create a notification when a missed call is logged.
 
-By default, Self-Managed `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`s do not log their calls to the call log. Setting this extra to `true` provides a means for them to log their calls.
+By default, Self-Managed PhoneAccounts do not log their calls to the call log. Setting this extra to `true` provides a means for them to log their calls.
 
-Note: Only calls where the `https://developer.android.com/reference/kotlin/android/telecom/Call.Details#getHandle()` `https://developer.android.com/reference/kotlin/android/net/Uri.html#getScheme()` is `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#SCHEME_SIP:kotlin.String` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#SCHEME_TEL:kotlin.String` will be logged at the current time.
+Note: Only calls where the getHandle getScheme is `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#SCHEME_SIP:kotlin.String` or `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#SCHEME_TEL:kotlin.String` will be logged at the current time.
 
  Value: "android.telecom.extra.LOG_SELF_MANAGED_CALLS"
 
@@ -476,9 +476,9 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SUPPORTS_HANDOVER_FROM: String
 ```
 
-Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of supporting a request to handover a connection from this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` to another `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`. (see `android.telecom.Call#handoverTo()`) which specifies `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_TO:kotlin.String`.
+Boolean PhoneAccount extras key (see getExtras) which indicates whether this PhoneAccount is capable of supporting a request to handover a connection from this PhoneAccount to another PhoneAccount. (see `android.telecom.Call#handoverTo()`) which specifies `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_TO:kotlin.String`.
 
-A handover request is initiated by the user from the default dialer app to indicate a desire to handover a call from one `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`/`https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to another.
+A handover request is initiated by the user from the default dialer app to indicate a desire to handover a call from one PhoneAccount/ConnectionService to another.
 
  Value: "android.telecom.extra.SUPPORTS_HANDOVER_FROM"
 
@@ -490,9 +490,9 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SUPPORTS_HANDOVER_TO: String
 ```
 
-Boolean `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` extras key (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()`) which indicates whether this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is capable of supporting a request to handover a connection (see `android.telecom.Call#handoverTo()`) to this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` from a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` specifying `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_FROM:kotlin.String`.
+Boolean PhoneAccount extras key (see getExtras) which indicates whether this PhoneAccount is capable of supporting a request to handover a connection (see `android.telecom.Call#handoverTo()`) to this PhoneAccount from a PhoneAccount specifying `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#EXTRA_SUPPORTS_HANDOVER_FROM:kotlin.String`.
 
-A handover request is initiated by the user from the default dialer app to indicate a desire to handover a call from one `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`/`https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` to another.
+A handover request is initiated by the user from the default dialer app to indicate a desire to handover a call from one PhoneAccount/ConnectionService to another.
 
  Value: "android.telecom.extra.SUPPORTS_HANDOVER_TO"
 
@@ -589,7 +589,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -675,7 +675,7 @@ fun getExtras(): Bundle!
 
 The extras associated with this `PhoneAccount`.
 
-A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService` may provide implementation specific information about the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` via the extras.
+A ConnectionService may provide implementation specific information about the PhoneAccount via the extras.
 
 | Return ||
 |---|---|
@@ -745,19 +745,19 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getSimultaneousCallingRestriction(): MutableSet<PhoneAccountHandle!>
 ```
 
-If a restriction is set (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()`), this method returns the Set of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s that are allowed to support calls simultaneously with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`.
+If a restriction is set (see hasSimultaneousCallingRestriction), this method returns the Set of PhoneAccountHandles that are allowed to support calls simultaneously with this PhoneAccount.
 
-If this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` is busy with one or more ongoing calls, a restriction is set on this PhoneAccount (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()` to check), and a new incoming or outgoing call is received or placed on a PhoneAccount that is not in this Set, Telecom will reject or cancel the pending call in favor of keeping the ongoing call alive.
+If this PhoneAccount is busy with one or more ongoing calls, a restriction is set on this PhoneAccount (see hasSimultaneousCallingRestriction to check), and a new incoming or outgoing call is received or placed on a PhoneAccount that is not in this Set, Telecom will reject or cancel the pending call in favor of keeping the ongoing call alive.
 
-Note: Simultaneous calling restrictions can only be placed on `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`s that were registered by the same application. Simultaneous calling across applications is always possible as long as the `https://developer.android.com/reference/kotlin/android/telecom/Connection` supports hold.
+Note: Simultaneous calling restrictions can only be placed on PhoneAccounts that were registered by the same application. Simultaneous calling across applications is always possible as long as the Connection supports hold.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!>` | the Set of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s that this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports simultaneous calls with. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!>` | the Set of PhoneAccountHandles that this PhoneAccount supports simultaneous calls with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If there is no restriction set on this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` and this method is called. Whether or not there is a restriction can be checked using `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()`. |
+| `java.lang.IllegalStateException` | If there is no restriction set on this PhoneAccount and this method is called. Whether or not there is a restriction can be checked using hasSimultaneousCallingRestriction. |
 
 ### getSubscriptionAddress
 
@@ -767,7 +767,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getSubscriptionAddress(): Uri!
 ```
 
-The raw callback number used for this `PhoneAccount`, as distinct from `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()`. For the majority of `PhoneAccount`s this should be registered as `null`. It is used by the system for SIM-based `PhoneAccount` registration where `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#setLine1NumberForDisplay(kotlin.String,%20kotlin.String)` has been used to alter the callback number.
+The raw callback number used for this `PhoneAccount`, as distinct from getAddress. For the majority of `PhoneAccount`s this should be registered as `null`. It is used by the system for SIM-based `PhoneAccount` registration where setLine1NumberForDisplay has been used to alter the callback number.
 
 <br />
 
@@ -815,15 +815,15 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun hasSimultaneousCallingRestriction(): Boolean
 ```
 
-Whether or not this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` contains a simultaneous calling restriction on it.
+Whether or not this PhoneAccount contains a simultaneous calling restriction on it.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if this PhoneAccount contains a simultaneous calling restriction, `false` if it does not. Use `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSimultaneousCallingRestriction()` to query which other `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`s support simultaneous calling with this one. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if this PhoneAccount contains a simultaneous calling restriction, `false` if it does not. Use getSimultaneousCallingRestriction to query which other PhoneAccounts support simultaneous calling with this one. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSimultaneousCallingRestriction()`
+- getSimultaneousCallingRestriction
 
 ### hashCode
 
@@ -838,8 +838,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -853,7 +853,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun isEnabled(): Boolean
 ```
 
-Indicates whether the user has enabled this `PhoneAccount` or not. This value is only populated for `PhoneAccount`s returned by `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)`.
+Indicates whether the user has enabled this `PhoneAccount` or not. This value is only populated for `PhoneAccount`s returned by getPhoneAccount.
 
 | Return ||
 |---|---|
@@ -867,7 +867,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun supportsUriScheme(uriScheme: String!): Boolean
 ```
 
-Determines if the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` supports calls to/from addresses with a specified URI scheme.
+Determines if the PhoneAccount supports calls to/from addresses with a specified URI scheme.
 
 | Parameters ||
 |---|---|
@@ -885,7 +885,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun toBuilder(): PhoneAccount.Builder!
 ```
 
-Returns a builder initialized with the current `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#` instance.
+Returns a builder initialized with the current PhoneAccount instance.
 
 | Return ||
 |---|---|

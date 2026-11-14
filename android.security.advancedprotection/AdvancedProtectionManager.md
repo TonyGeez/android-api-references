@@ -25,9 +25,9 @@ This class provides methods to query and control the advanced protection mode fo
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#isAdvancedProtectionEnabled()()` Checks if advanced protection is enabled on the device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#registerAdvancedProtectionCallback(java.util.concurrent.Executor,%20android.security.advancedprotection.AdvancedProtectionManager.Callback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback)` Registers a `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` to be notified of changes to the Advanced Protection state. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager#unregisterAdvancedProtectionCallback(android.security.advancedprotection.AdvancedProtectionManager.Callback)(callback: https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback)` Unregister an existing `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAdvancedProtectionEnabled Checks if advanced protection is enabled on the device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerAdvancedProtectionCallback Registers a `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` to be notified of changes to the Advanced Protection state. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterAdvancedProtectionCallback Unregister an existing `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback`. |
 | --- | --- |
 
 ## Public methods
@@ -65,7 +65,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [AdvancedProtectionManager.Callback](../android/security/advancedprotection/AdvancedProtectionManager.Callback.md): The `https://developer.android.com/reference/kotlin/android/security/advancedprotection/AdvancedProtectionManager.Callback` object to register.. This value cannot be `null`. |
 
 ### unregisterAdvancedProtectionCallback

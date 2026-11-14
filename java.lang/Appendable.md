@@ -26,9 +26,9 @@ Since this interface may be implemented by existing classes with different style
 
 | Public methods ||
 |---|---|
-| abstract [Appendable](Appendable.md) | `https://developer.android.com/reference/kotlin/java/lang/Appendable#append(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends the specified character to this `Appendable`. |
-| abstract [Appendable](Appendable.md) | `https://developer.android.com/reference/kotlin/java/lang/Appendable#append(kotlin.CharSequence)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Appends the specified character sequence to this `Appendable`. |
-| abstract [Appendable](Appendable.md) | `https://developer.android.com/reference/kotlin/java/lang/Appendable#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends a subsequence of the specified character sequence to this `Appendable`. |
+| abstract [Appendable](Appendable.md) | append Appends the specified character to this `Appendable`. |
+| abstract [Appendable](Appendable.md) | append Appends the specified character sequence to this `Appendable`. |
+| abstract [Appendable](Appendable.md) | append Appends a subsequence of the specified character sequence to this `Appendable`. |
 | --- | --- |
 
 ## Public methods
@@ -49,7 +49,7 @@ Appends the specified character to this `Appendable`.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Appendable#` | A reference to this `Appendable` |
+| Appendable | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -73,7 +73,7 @@ Depending on which class implements the character sequence `csq`, the entire seq
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Appendable#` | A reference to this `Appendable` |
+| Appendable | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -108,7 +108,7 @@ out.append(csq.subSequence(start, end))
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Appendable#` | A reference to this `Appendable` |
+| Appendable | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|

@@ -12,13 +12,13 @@ interface StatusListener
 
 | [android.net.http.UrlRequest.StatusListener](../android/net/http/UrlRequest.StatusListener.md) |
 
-Listener interface used with `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getStatus(android.net.http.UrlRequest.StatusListener)` to receive the status of a `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest`.
+Listener interface used with getStatus to receive the status of a UrlRequest.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener#onStatus(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Invoked on `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest`'s `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`'s thread when request status is obtained. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onStatus Invoked on UrlRequest's `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`'s thread when request status is obtained. |
 
 ## Public methods
 
@@ -31,7 +31,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun onStatus(status: Int): Unit
 ```
 
-Invoked on `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest`'s `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`'s thread when request status is obtained.
+Invoked on UrlRequest's `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`'s thread when request status is obtained.
 
 | Parameters ||
 |---|---|

@@ -32,7 +32,7 @@ To control access the app-op can be set to a mode to:
 `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`
 : Throw a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` on access. This can be suppressed by using a `...noThrow` method to check the mode
 
-API providers need to check the mode returned by #noteOp if they are are allowing access to operations gated by the app-op. `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` should be used to check the mode if no access is granted. E.g. this can be used for displaying app-op state in the UI or when checking the state before later calling #noteOp anyway.
+API providers need to check the mode returned by #noteOp if they are are allowing access to operations gated by the app-op. unsafeCheckOp should be used to check the mode if no access is granted. E.g. this can be used for displaying app-op state in the UI or when checking the state before later calling #noteOp anyway.
 
 If an operation refers to a time span (e.g. a audio-recording session) the API provider should use #startOp and #finishOp instead of #noteOp.
 
@@ -50,7 +50,7 @@ This functionality allows to grant access by default to apps fulfilling the requ
 
 App-ops track many important events, including all accesses to runtime permission protected APIs. This is done by tracking when an app-op was #noteOp or #startOp. The tracked data can only be read by system components.
 
-**Only #noteOp/#startOp are tracked; `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` is not tracked. Hence it is important to eventually call #noteOp or #startOp when providing access to protected operations or data.**
+**Only #noteOp/#startOp are tracked; unsafeCheckOp is not tracked. Hence it is important to eventually call #noteOp or #startOp when providing access to protected operations or data.**
 
 Some apps are forwarding access to other apps. E.g. an app might get the location from the system's location provider and then send the location further to a 3rd app. In this case the app passing on the data needs to call #noteProxyOp to signal the access proxying. This might also make sense inside of a single app if the access is forwarded between two parts of the tagged with different attribution tags.
 
@@ -83,7 +83,7 @@ An app can register an `https://developer.android.com/reference/kotlin/android/a
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_COARSE_LOCATION:kotlin.String` Access to coarse location information. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_FINE_LOCATION:kotlin.String` Access to fine location information. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_GET_USAGE_STATS:kotlin.String` Access to `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_GET_USAGE_STATS:kotlin.String` Access to UsageStatsManager. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_MANAGE_CONTACTS:kotlin.String` Allows an application to manage the user's contacts data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_MOCK_LOCATION:kotlin.String` Inject mock location into the system. |
 | --- | --- |
@@ -121,60 +121,60 @@ An app can register an `https://developer.android.com/reference/kotlin/android/a
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OPSTR_WRITE_SETTINGS:kotlin.String` Required to write/modify/update system settings. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` Ignores async op noted events. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#WATCH_FOREGROUND_CHANGES:kotlin.Int` Flag for `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20kotlin.Int,%20android.app.AppOpsManager.OnOpChangedListener)`: Also get reports if the foreground state of an op's uid changes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#WATCH_FOREGROUND_CHANGES:kotlin.Int` Flag for startWatchingMode: Also get reports if the foreground state of an op's uid changes. |
 | --- | --- |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether an application can perform an operation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Check whether an application can perform an operation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkOp Check whether an application can perform an operation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkOp Check whether an application can perform an operation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkOpNoThrow Like checkOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpRawNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but returns the *raw* mode associated with the op. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkPackage(kotlin.Int,%20kotlin.String)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkOpNoThrow Like checkOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | checkOpRawNoThrow Like checkOp but returns the *raw* mode associated with the op. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | checkPackage <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application is no longer performing an operation that had previously been started with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application is no longer performing an operation that had previously been started with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishOp <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishOp Report that an application is no longer performing an operation that had previously been started with startOp. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishProxyOp Report that an application is no longer performing an operation that had previously been started with startProxyOp. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#isOpActive(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks whether the given op for a package is active, i. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Make note of an application performing an operation and check if the application is allowed to perform it. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOpActive Checks whether the given op for a package is active, i. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteOp <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteOp Make note of an application performing an operation and check if the application is allowed to perform it. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteOpNoThrow <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteOpNoThrow Like noteOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteProxyOp <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Make note of an application performing an operation on behalf of another application when handling an IPC. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String,%20kotlin.Int)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteProxyOp Make note of an application performing an operation on behalf of another application when handling an IPC. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteProxyOpNoThrow <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteProxyOpNoThrow <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#permissionToOp(kotlin.String)(permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the app-op name associated with a given permission. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#setOnOpNotedCallback(java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpNotedCallback)(asyncExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback?)` Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | noteProxyOpNoThrow Like noteProxyOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | permissionToOp Gets the app-op name associated with a given permission. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnOpNotedCallback Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#setOnOpNotedCallback(java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpNotedCallback,%20kotlin.Int)(asyncExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application has started executing a long-running operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnOpNotedCallback Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startOp <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startOp Report that an application has started executing a long-running operation. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Report that an application has started executing a long-running operation on behalf of another application when handling an IPC. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startOpNoThrow <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startOpNoThrow Like startOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startProxyOp Report that an application has started executing a long-running operation on behalf of another application when handling an IPC. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedUid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, proxiedPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, proxiedAttributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingActive(kotlin.Array,%20java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpActiveChangedListener)(ops: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener)` Start watching for changes to the active state of app-ops. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20android.app.AppOpsManager.OnOpChangedListener)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener)` Monitor for changes to the operating mode for the given op in the given app package. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startProxyOpNoThrow Like startProxyOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startWatchingActive Start watching for changes to the active state of app-ops. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startWatchingMode Monitor for changes to the operating mode for the given op in the given app package. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20kotlin.Int,%20android.app.AppOpsManager.OnOpChangedListener)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener)` Monitor for changes to the operating mode for the given op in the given app package. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#stopWatchingActive(android.app.AppOpsManager.OnOpActiveChangedListener)(callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpActiveChangedListener)` Stop watching for changes to the active state of an app-op. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#stopWatchingMode(android.app.AppOpsManager.OnOpChangedListener)(callback: https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpChangedListener)` Stop monitoring that was previously started with #startWatchingMode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startWatchingMode Monitor for changes to the operating mode for the given op in the given app package. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopWatchingActive Stop watching for changes to the active state of an app-op. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopWatchingMode Stop monitoring that was previously started with #startWatchingMode. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether an application might be able to perform an operation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpRaw(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like #checkOp but returns the *raw* mode associated with the op. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | unsafeCheckOp Check whether an application might be able to perform an operation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | unsafeCheckOpNoThrow Like unsafeCheckOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | unsafeCheckOpRaw Like #checkOp but returns the *raw* mode associated with the op. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpRawNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)(op: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Like #checkOp but returns the *raw* mode associated with the op. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | unsafeCheckOpRawNoThrow Like #checkOp but returns the *raw* mode associated with the op. |
 
 ## Constants
 
@@ -222,9 +222,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val MODE_FOREGROUND: Int
 ```
 
-Special mode that means "allow only when app is in foreground." This is **not** returned from `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)`, #noteOp, #startOp. Rather, `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` will always return `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` (because it is always possible for it to be ultimately allowed, depending on the app's background state), and #noteOp and #startOp will return `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` when the app being checked is currently in the foreground, otherwise `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_IGNORED:kotlin.Int`.
+Special mode that means "allow only when app is in foreground." This is **not** returned from unsafeCheckOp, #noteOp, #startOp. Rather, unsafeCheckOp will always return `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` (because it is always possible for it to be ultimately allowed, depending on the app's background state), and #noteOp and #startOp will return `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` when the app being checked is currently in the foreground, otherwise `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_IGNORED:kotlin.Int`.
 
-The only place you will this normally see this value is through `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOpRaw(kotlin.String,%20kotlin.Int,%20kotlin.String)`, which returns the actual raw mode of the op. Note that because you can't know the current state of the app being checked (and it can change at any point), you can only treat the result here as an indication that it will vary between `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_IGNORED:kotlin.Int` depending on changes in the background state of the app. You thus must always use #noteOp or #startOp to do the actual check for access to the op.
+The only place you will this normally see this value is through unsafeCheckOpRaw, which returns the actual raw mode of the op. Note that because you can't know the current state of the app being checked (and it can change at any point), you can only treat the result here as an indication that it will vary between `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ALLOWED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_IGNORED:kotlin.Int` depending on changes in the background state of the app. You thus must always use #noteOp or #startOp to do the actual check for access to the op.
 
  Value: 4
 
@@ -332,7 +332,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val OPSTR_GET_USAGE_STATS: String
 ```
 
-Access to `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager`.
+Access to UsageStatsManager.
 
  Value: "android:get_usage_stats"
 
@@ -680,7 +680,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val WATCH_FOREGROUND_CHANGES: Int
 ```
 
-Flag for `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingMode(kotlin.String,%20kotlin.String,%20kotlin.Int,%20android.app.AppOpsManager.OnOpChangedListener)`: Also get reports if the foreground state of an op's uid changes. This only works when watching a particular op, not when watching a package.
+Flag for startWatchingMode: Also get reports if the foreground state of an op's uid changes. This only works when watching a particular op, not when watching a package.
 
  Value: 1
 
@@ -700,9 +700,9 @@ open fun checkOp(
 
 Check whether an application can perform an operation.
 
-For platform versions before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this is *not* a security check; you must use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` or `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` for your actual security checks. This function can just be used for a quick check to see if an operation has been disabled for the application, as an early reject of some work.
+For platform versions before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this is *not* a security check; you must use noteOp or startOp for your actual security checks. This function can just be used for a quick check to see if an operation has been disabled for the application, as an early reject of some work.
 
-For platform versions equal to or after `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, it does the same security check as `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`, and should be preferred to use.
+For platform versions equal to or after `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, it does the same security check as noteOp and startOp, and should be preferred to use.
 
 This API does not modify the time stamp or other data about the operation.
 
@@ -734,7 +734,7 @@ open fun checkOp(
 ): Int
 ```
 
-Check whether an application can perform an operation. It does the same security check as `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`, but does not modify the time stamp or other data about the operation.
+Check whether an application can perform an operation. It does the same security check as noteOp and startOp, but does not modify the time stamp or other data about the operation.
 
 | Parameters ||
 |---|---|
@@ -742,7 +742,7 @@ Check whether an application can perform an operation. It does the same security
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the application attempting to perform the operation. This value cannot be `null`. |
 | --- | --- |
-| `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` of the calling context or `null` for default attribution |
+| `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The createAttributionContext of the calling context or `null` for default attribution |
 
 | Return ||
 |---|---|
@@ -764,7 +764,7 @@ open fun checkOpNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like checkOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -784,7 +784,7 @@ open fun checkOpNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like checkOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -806,7 +806,7 @@ open fun checkOpRawNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but returns the *raw* mode associated with the op. Does not throw a security exception, does not translate `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_FOREGROUND:kotlin.Int`.
+Like checkOp but returns the *raw* mode associated with the op. Does not throw a security exception, does not translate `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_FOREGROUND:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -846,7 +846,7 @@ open fun finishOp(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use finishOp instead*
 
 | Parameters ||
 |---|---|
@@ -866,7 +866,7 @@ open fun finishOp(
 ): Unit
 ```
 
-Report that an application is no longer performing an operation that had previously been started with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. There is no validation of input or result; the parameters supplied here must be the exact same ones previously passed in when starting the operation.
+Report that an application is no longer performing an operation that had previously been started with startOp. There is no validation of input or result; the parameters supplied here must be the exact same ones previously passed in when starting the operation.
 
 | Parameters ||
 |---|---|
@@ -888,7 +888,7 @@ open fun finishProxyOp(
 ): Unit
 ```
 
-Report that an application is no longer performing an operation that had previously been started with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. There is no validation of input or result; the parameters supplied here must be the exact same ones previously passed in when starting the operation.
+Report that an application is no longer performing an operation that had previously been started with startProxyOp. There is no validation of input or result; the parameters supplied here must be the exact same ones previously passed in when starting the operation.
 
 | Parameters ||
 |---|---|
@@ -921,8 +921,8 @@ If you don't hold the `android.Manifest.permission#WATCH_APPOPS` permission you 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#finishOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`
+- finishOp
+- startOp
 
 ### noteOp
 
@@ -937,7 +937,7 @@ open fun noteOp(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use noteOp instead*
 
 | Parameters ||
 |---|---|
@@ -960,19 +960,19 @@ open fun noteOp(
 
 Make note of an application performing an operation and check if the application is allowed to perform it.
 
-If this is a check that is not preceding the protected operation, use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` instead.
+If this is a check that is not preceding the protected operation, use unsafeCheckOp instead.
 
-The identity of the package the app-op is noted for is specified by the `uid` and `packageName` parameters. If this is noted for a regular app both should be set and the package needs to be part of the uid. In the very rare case that an app-op is noted for an entity that does not have a package name, the package can be `null`. As it is possible that a single process contains more than one package the `packageName` should be `https://developer.android.com/reference/kotlin/android/content/Context.html#getPackageName()` from the context of the caller of the API (in the app process) that eventually triggers this check. If this op is not noted for a running process the `packageName` cannot be read from the context, but it should be clear which package the note is for.
+The identity of the package the app-op is noted for is specified by the `uid` and `packageName` parameters. If this is noted for a regular app both should be set and the package needs to be part of the uid. In the very rare case that an app-op is noted for an entity that does not have a package name, the package can be `null`. As it is possible that a single process contains more than one package the `packageName` should be getPackageName from the context of the caller of the API (in the app process) that eventually triggers this check. If this op is not noted for a running process the `packageName` cannot be read from the context, but it should be clear which package the note is for.
 
 If the `uid` and `packageName` do not match this return `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_IGNORED:kotlin.Int`.
 
-Beside the access check this method also records the access. While the access check is based on `uid` and/or `packageName` the access recording is done based on the `packageName` and `attributionTag`. The `attributionTag` should be `https://developer.android.com/reference/kotlin/android/content/Context.html#getAttributionTag()` from the same context the package name is read from. In the case the check is not related to an API call, the `attributionTag` should be `null`. Please note that e.g. registering a callback for later is still an API call and the code should store the attribution tag along the package name for being used in this method later.
+Beside the access check this method also records the access. While the access check is based on `uid` and/or `packageName` the access recording is done based on the `packageName` and `attributionTag`. The `attributionTag` should be getAttributionTag from the same context the package name is read from. In the case the check is not related to an API call, the `attributionTag` should be `null`. Please note that e.g. registering a callback for later is still an API call and the code should store the attribution tag along the package name for being used in this method later.
 
 The `message` parameter only needs to be set when this method is
 
 not
 
-called in a two-way binder call from the client. In this case the message is a free form text that is meant help the app developer determine what part of the app's code triggered the note. This message is passed back to the app in the `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` callback. A good example of a useful message is including the `https://developer.android.com/reference/kotlin/java/lang/System.html#identityHashCode(kotlin.Any)` of the listener that will receive data or the name of the manifest-receiver.
+called in a two-way binder call from the client. In this case the message is a free form text that is meant help the app developer determine what part of the app's code triggered the note. This message is passed back to the app in the onAsyncNoted callback. A good example of a useful message is including the identityHashCode of the listener that will receive data or the name of the manifest-receiver.
 
 | Parameters ||
 |---|---|
@@ -980,7 +980,7 @@ called in a two-way binder call from the client. In this case the message is a f
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application attempting to perform the operation. This value may be `null`. |
 | --- | --- |
-| `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` of the calling context or `null` for default attribution |
+| `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The createAttributionContext of the calling context or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A message describing why the op was noted. This value may be `null`. |
 
 | Return ||
@@ -1004,7 +1004,7 @@ open fun noteOpNoThrow(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use noteOpNoThrow instead*
 
 | Parameters ||
 |---|---|
@@ -1025,7 +1025,7 @@ open fun noteOpNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like noteOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -1037,7 +1037,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#n
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`
+- noteOp
 
 ### noteProxyOp
 
@@ -1051,7 +1051,7 @@ open fun noteProxyOp(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use noteProxyOp instead*
 
 | Parameters ||
 |---|---|
@@ -1080,7 +1080,7 @@ Make note of an application performing an operation on behalf of another applica
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application calling into the proxy application. This value may be `null`. |
 | `proxiedUid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the proxied application |
 | --- | --- |
-| `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` or `null` for default attribution |
+| `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied createAttributionContext or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A message describing the reason the op was noted. This value may be `null`. |
 
 | Return ||
@@ -1103,7 +1103,7 @@ open fun noteProxyOpNoThrow(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use noteProxyOpNoThrow instead*
 
 | Parameters ||
 |---|---|
@@ -1123,7 +1123,7 @@ open fun noteProxyOpNoThrow(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOpNoThrow(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use noteProxyOpNoThrow instead*
 
 | Parameters ||
 |---|---|
@@ -1144,7 +1144,7 @@ open fun noteProxyOpNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteProxyOp(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like noteProxyOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -1156,7 +1156,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#n
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`
+- noteOpNoThrow
 
 ### permissionToOp
 
@@ -1193,11 +1193,11 @@ Set a new `https://developer.android.com/reference/kotlin/android/app/AppOpsMana
 
 There can only ever be one collector per process. If there currently is another callback set, this will fail.
 
-Note that if an app has multiple processes registering for this callback, the system would fan out async op noted callbacks to each of the processes, resulting in the same data being delivered multiple times to an app, which is usually undesired. To avoid this, consider listening to async ops only in one process. See `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#setOnOpNotedCallback(java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpNotedCallback,%20kotlin.Int)` for how to do this.
+Note that if an app has multiple processes registering for this callback, the system would fan out async op noted callbacks to each of the processes, resulting in the same data being delivered multiple times to an app, which is usually undesired. To avoid this, consider listening to async ops only in one process. See setOnOpNotedCallback for how to do this.
 
 | Parameters ||
 |---|---|
-| `asyncExecutor` | [Executor](../java.util.concurrent/Executor.md)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `asyncExecutor` | [Executor](../java.util.concurrent/Executor.md)?: executor to execute onAsyncNoted on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [AppOpsManager.OnOpNotedCallback](../android/app/AppOpsManager.OnOpNotedCallback.md)?: listener to set, `null` to unset |
 
 | Exceptions ||
@@ -1225,11 +1225,11 @@ This API allows the caller to listen only to sync and self op noted events, and 
 - op 1: process A, sync
 - op 2: process A, async
 - op 3: process B, sync
-- op 4: process B, async Any process that listens to async op noted events gets events originating from across ALL processes (op 2 and op 4 in this example). So if both process A and B register as listeners, both of them get op 2 and 4 which is not ideal. To avoid duplicates, one of the two processes should set `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int`. For example process A sets `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` and would then only get its own sync event (op 1). The other process would then listen to all types of events and get op 2, 3 and 4. Note that even with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` may still be invoked. This happens for sync events that were collected before a callback is registered.
+- op 4: process B, async Any process that listens to async op noted events gets events originating from across ALL processes (op 2 and op 4 in this example). So if both process A and B register as listeners, both of them get op 2 and 4 which is not ideal. To avoid duplicates, one of the two processes should set `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int`. For example process A sets `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` and would then only get its own sync event (op 1). The other process would then listen to all types of events and get op 2, 3 and 4. Note that even with `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int`, onAsyncNoted may still be invoked. This happens for sync events that were collected before a callback is registered.
 
 | Parameters ||
 |---|---|
-| `asyncExecutor` | [Executor](../java.util.concurrent/Executor.md)?: executor to execute `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback#onAsyncNoted(android.app.AsyncNotedAppOp)` on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `asyncExecutor` | [Executor](../java.util.concurrent/Executor.md)?: executor to execute onAsyncNoted on, `null` to unset. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [AppOpsManager.OnOpNotedCallback](../android/app/AppOpsManager.OnOpNotedCallback.md)?: listener to set, `null` to unset |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): additional flags to modify the callback behavior, such as `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` Value is either `0` or - `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#OP_NOTED_CALLBACK_FLAG_IGNORE_ASYNC:kotlin.Int` |
 | --- | --- |
@@ -1251,7 +1251,7 @@ open fun startOp(
 ): Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *use startOp instead*
 
 | Parameters ||
 |---|---|
@@ -1274,7 +1274,7 @@ open fun startOp(
 
 Report that an application has started executing a long-running operation.
 
-For more details how to determine the `callingPackageName`, `callingAttributionTag`, and `message`, please check the description in `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`
+For more details how to determine the `callingPackageName`, `callingAttributionTag`, and `message`, please check the description in noteOp
 
 | Parameters ||
 |---|---|
@@ -1282,7 +1282,7 @@ For more details how to determine the `callingPackageName`, `callingAttributionT
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The user id of the application attempting to perform the operation. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The name of the application attempting to perform the operation. This value may be `null`. |
 | --- | --- |
-| `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` or `null` for default attribution |
+| `attributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The createAttributionContext or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Description why op was started. This value may be `null`. |
 
 | Return ||
@@ -1306,7 +1306,7 @@ open fun startOpNoThrow(
 ): Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *use startOpNoThrow instead*
 
 | Parameters ||
 |---|---|
@@ -1327,7 +1327,7 @@ open fun startOpNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like startOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -1339,7 +1339,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#s
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`
+- startOp
 
 ### startProxyOp
 
@@ -1363,7 +1363,7 @@ Report that an application has started executing a long-running operation on beh
 | `proxiedUid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid to note the op for `null` |
 | `proxiedPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name the uid belongs to. This value cannot be `null`. |
 | --- | --- |
-| `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` or `null` for default attribution |
+| `proxiedAttributionTag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The proxied createAttributionContext or `null` for default attribution |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A message describing the reason the op was noted. This value may be `null`. |
 
 | Return ||
@@ -1388,7 +1388,7 @@ open fun startProxyOpNoThrow(
 ): Int
 ```
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like startProxyOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -1400,7 +1400,7 @@ Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#s
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startProxyOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`
+- startProxyOp
 
 ### startWatchingActive
 
@@ -1421,13 +1421,13 @@ If you don't hold the `android.Manifest.permission#WATCH_APPOPS` permission you 
 | Parameters ||
 |---|---|
 | `ops` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The operations to watch. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
 | `callback` | [AppOpsManager.OnOpActiveChangedListener](../android/app/AppOpsManager.OnOpActiveChangedListener.md): Where to report changes. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#stopWatchingActive(android.app.AppOpsManager.OnOpActiveChangedListener)`
+- stopWatchingActive
 
 ### startWatchingMode
 
@@ -1489,7 +1489,7 @@ Stop watching for changes to the active state of an app-op. An app-op may be lon
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startWatchingActive(kotlin.Array,%20java.util.concurrent.Executor,%20android.app.AppOpsManager.OnOpActiveChangedListener)`
+- startWatchingActive
 
 ### stopWatchingMode
 
@@ -1518,13 +1518,13 @@ open fun unsafeCheckOp(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)`*
+**Deprecated:** *Use checkOp*
 
 Check whether an application might be able to perform an operation.
 
-For platform versions before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this is *not* a security check; you must use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` or `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` for your actual security checks. This function can just be used for a quick check to see if an operation has been disabled for the application, as an early reject of some work.
+For platform versions before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this is *not* a security check; you must use noteOp or startOp for your actual security checks. This function can just be used for a quick check to see if an operation has been disabled for the application, as an early reject of some work.
 
-For platform versions equal to or after `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this is no longer an unsafe check, and it does the same security check as `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#startOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)`. However, it's preferred to use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOp(kotlin.String,%20kotlin.Int,%20kotlin.String)`, since the word "unsafe" in the name of this API is no longer accurate.
+For platform versions equal to or after `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this is no longer an unsafe check, and it does the same security check as noteOp and startOp. However, it's preferred to use checkOp, since the word "unsafe" in the name of this API is no longer accurate.
 
 This API does not modify the time stamp or other data about the operation.
 
@@ -1556,9 +1556,9 @@ open fun unsafeCheckOpNoThrow(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String)`*
+**Deprecated:** *Use checkOpNoThrow*
 
-Like `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#unsafeCheckOp(kotlin.String,%20kotlin.Int,%20kotlin.String)` but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
+Like unsafeCheckOp but instead of throwing a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` it returns `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_ERRORED:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -1578,7 +1578,7 @@ open fun unsafeCheckOpRaw(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpRawNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use checkOpRawNoThrow instead*
 
 Like #checkOp but returns the *raw* mode associated with the op. Does not throw a security exception, does not translate `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_FOREGROUND:kotlin.Int`.
 
@@ -1600,7 +1600,7 @@ open fun unsafeCheckOpRawNoThrow(
 ): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#checkOpRawNoThrow(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String)` instead*
+**Deprecated:** *Use checkOpRawNoThrow instead*
 
 Like #checkOp but returns the *raw* mode associated with the op. Does not throw a security exception, does not translate `https://developer.android.com/reference/kotlin/android/app/AppOpsManager#MODE_FOREGROUND:kotlin.Int`.
 

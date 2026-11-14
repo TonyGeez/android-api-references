@@ -27,7 +27,7 @@ Each provider has a name and a version number, and is configured in each runtime
 
 See [The Provider Class](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#Provider) in the "Java Cryptography Architecture API Specification \& Reference" for information about how a particular type of provider, the cryptographic service provider, works and is installed. However, please note that a provider can be used to implement any security service in Java that uses a pluggable architecture with a choice of implementations that fit underneath.
 
-Some provider implementations may encounter unrecoverable internal errors during their operation, for example a failure to communicate with a security token. A `https://developer.android.com/reference/kotlin/java/security/ProviderException` should be used to indicate such errors.
+Some provider implementations may encounter unrecoverable internal errors during their operation, for example a failure to communicate with a security token. A ProviderException should be used to indicate such errors.
 
 The service type `Provider` is reserved for use by the security framework. Services of this type cannot be added, removed, or modified by applications. The following attributes are automatically placed in each Provider object:
 **Attributes Automatically Placed in a Provider Object**
@@ -48,115 +48,115 @@ The service type `Provider` is reserved for use by the security framework. Servi
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/Provider#Provider(kotlin.String,%20kotlin.Double,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, info: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs a provider with the specified name, version number, and information. |
+| Provider Constructs a provider with the specified name, version number, and information. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#clear()()` Clears this provider so that it no longer contains the properties used to look up facilities implemented by the provider. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#compute(kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, *>)` Attempts to compute a mapping for the specified key and its current mapped value (or `null` if there is no current mapping). |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#computeIfAbsent(kotlin.Any,%20java.util.function.Function)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, *>)` If the specified key is not already associated with a value (or is mapped to `null`), attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Clears this provider so that it no longer contains the properties used to look up facilities implemented by the provider. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | compute Attempts to compute a mapping for the specified key and its current mapped value (or `null` if there is no current mapping). |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | computeIfAbsent If the specified key is not already associated with a value (or is mapped to `null`), attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#computeIfPresent(kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
-| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#elements()()` Returns an enumeration of the values in this hashtable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | computeIfPresent If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | elements Returns an enumeration of the values in this hashtable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | forEach <br /> |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#get(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getInfo()()` Returns a human-readable description of the provider and its services. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getName()()` Returns the name of this provider. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | get Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getInfo Returns a human-readable description of the provider and its services. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Returns the name of this provider. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getOrDefault(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Searches for the property with the specified key in this property list. |
-| open [Provider.Service](../java/security/Provider.Service.md)! | `https://developer.android.com/reference/kotlin/java/security/Provider#getService(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get the service describing this Provider's implementation of the specified type of this algorithm or alias. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getOrDefault <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getProperty Searches for the property with the specified key in this property list. |
+| open [Provider.Service](../java/security/Provider.Service.md)! | getService Get the service describing this Provider's implementation of the specified type of this algorithm or alias. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Provider.Service](../java/security/Provider.Service.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#getServices()()` Get an unmodifiable Set of all services supported by this Provider. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#getVersion()()` Returns the version number for this provider. |
-| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/Provider#keys()()` Returns an enumeration of the keys in this hashtable. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Provider.Service](../java/security/Provider.Service.md)!\>! | getServices Get an unmodifiable Set of all services supported by this Provider. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getVersion Returns the version number for this provider. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | keys Returns an enumeration of the keys in this hashtable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#load(java.io.InputStream)(inStream: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Reads a property list (key and element pairs) from the input stream. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#merge(kotlin.Any,%20kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the specified key is not already associated with a value or is associated with null, associates it with the given value. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#put(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Sets the `key` property to have the specified `value`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | load Reads a property list (key and element pairs) from the input stream. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | merge If the specified key is not already associated with a value or is associated with null, associates it with the given value. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | put Sets the `key` property to have the specified `value`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<*, *>)` Copies all of the mappings from the specified Map to this provider. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#putIfAbsent(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` If the specified key is not already associated with a value (or is mapped to `null`) associates it with the given value and returns `null`, else returns the current value. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#remove(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Removes the `key` property (and its corresponding `value`). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putAll Copies all of the mappings from the specified Map to this provider. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | putIfAbsent If the specified key is not already associated with a value (or is mapped to `null`) associates it with the given value and returns `null`, else returns the current value. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | remove Removes the `key` property (and its corresponding `value`). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#remove(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/security/Provider#replace(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Replaces the entry for the specified key only if it is currently mapped to some value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#replace(kotlin.Any,%20kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, oldValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Replaces the entry for the specified key only if currently mapped to the specified value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | remove Removes the entry for the specified key only if it is currently mapped to the specified value. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | replace Replaces the entry for the specified key only if it is currently mapped to some value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | replace Replaces the entry for the specified key only if currently mapped to the specified value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, *>)` Replaces each entry's value with the result of invoking the given function on that entry, in the order entries are returned by an entry set iterator, until all entries have been processed or the function throws an exception. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#toString()()` Returns a string with the name and the version number of this provider. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | replaceAll Replaces each entry's value with the result of invoking the given function on that entry, in the order entries are returned by an entry set iterator, until all entries have been processed or the function throws an exception. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string with the name and the version number of this provider. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#putService(java.security.Provider.Service)(s: https://developer.android.com/reference/kotlin/java/security/Provider.Service!)` Add a service. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Provider#removeService(java.security.Provider.Service)(s: https://developer.android.com/reference/kotlin/java/security/Provider.Service!)` Remove a service previously added using `https://developer.android.com/reference/kotlin/java/security/Provider#putService(java.security.Provider.Service)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putService Add a service. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeService Remove a service previously added using putService. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/java/util/Properties.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#clone()()`
+Inherited functions From class `https://developer.android.com/reference/kotlin/java/util/Properties.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html` clone
 
 Creates a shallow copy of this hashtable. All the structure of the hashtable itself is copied, but the keys and values are not cloned. This is a relatively expensive operation.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#contains(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` contains
 
-Tests if some key maps into the specified value in this hashtable. This operation is more expensive than the `https://developer.android.com/reference/kotlin/java/util/Hashtable.html#containsKey(java.util.Hashtable.K)` method.
+Tests if some key maps into the specified value in this hashtable. This operation is more expensive than the containsKey method.
 
-Note that this method is identical in functionality to `https://developer.android.com/reference/kotlin/java/util/Hashtable.html#containsValue(java.util.Hashtable.V)`, (which is part of the `https://developer.android.com/reference/kotlin/java/util/Map.html#` interface in the collections framework).
+Note that this method is identical in functionality to containsValue, (which is part of the `https://developer.android.com/reference/kotlin/java/util/Map.html#` interface in the collections framework).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#containsKey(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` containsKey
 
 Tests if the specified object is a key in this hashtable.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#containsValue(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` containsValue
 
 Returns true if this hashtable maps one or more keys to this value.
 
-Note that this method is identical in functionality to `https://developer.android.com/reference/kotlin/java/util/Hashtable.html#contains(kotlin.Any)` (which predates the `https://developer.android.com/reference/kotlin/java/util/Map.html#` interface).
+Note that this method is identical in functionality to contains (which predates the `https://developer.android.com/reference/kotlin/java/util/Map.html#` interface).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` equals
 
 Compares the specified Object with this Map for equality, as per the definition in the Map interface.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/java/util/Properties.html#getProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` getProperty
 
 Searches for the property with the specified key in this property list. If the key is not found in this property list, the default property list, and its defaults, recursively, are then checked. The method returns the default value argument if the property is not found.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#hashCode()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` hashCode
 
 Returns the hash code value for this Map as per the definition in the Map interface.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#isEmpty()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isEmpty
 
 Tests if this hashtable maps no keys to values.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#list(java.io.PrintStream)(out: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` list
 
 Prints this property list out to the specified output stream. This method is useful for debugging.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#list(java.io.PrintWriter)(out: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` list
 
 Prints this property list out to the specified output stream. This method is useful for debugging.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#load(java.io.Reader)(reader: https://developer.android.com/reference/kotlin/java/io/Reader.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` load
 
 Reads a property list (key and element pairs) from the input character stream in a simple line-oriented format.
 
@@ -215,7 +215,7 @@ The specified stream remains open after this method returns.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#loadFromXML(java.io.InputStream)(in: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` loadFromXML
 
 Loads all of the properties represented by the XML document on the specified input stream into this properties table.
 
@@ -233,37 +233,37 @@ The specified stream is closed after this method returns.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/Enumeration.html#<*>!` `https://developer.android.com/reference/kotlin/java/util/Properties.html#propertyNames()()`
+`https://developer.android.com/reference/kotlin/java/util/Enumeration.html#<*>!` propertyNames
 
 Returns an enumeration of all the keys in this property list, including distinct keys in the default property list if a key of the same name has not already been found from the main properties list.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#rehash()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` rehash
 
 Increases the capacity of and internally reorganizes this hashtable, in order to accommodate and access its entries more efficiently. This method is called automatically when the number of keys in the hashtable exceeds this hashtable's capacity and load factor.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#save(java.io.OutputStream,%20kotlin.String)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comments: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` save
 
 Calls the `store(OutputStream out, String comments)` method and suppresses IOExceptions that were thrown.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!` `https://developer.android.com/reference/kotlin/java/util/Properties.html#setProperty(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!` setProperty
 
 Calls the `Hashtable` method `put`. Provided for parallelism with the `getProperty` method. Enforces use of strings for property keys and values. The value returned is the result of the `Hashtable` call to `put`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#store(java.io.OutputStream,%20kotlin.String)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comments: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` store
 
-Writes this property list (key and element pairs) in this `Properties` table to the output stream in a format suitable for loading into a `Properties` table using the `https://developer.android.com/reference/kotlin/java/util/Properties.html#load(java.io.InputStream)` method.
+Writes this property list (key and element pairs) in this `Properties` table to the output stream in a format suitable for loading into a `Properties` table using the load method.
 
 Properties from the defaults table of this `Properties` table (if any) are *not* written out by this method.
 
-This method outputs the comments, properties keys and values in the same format as specified in `https://developer.android.com/reference/kotlin/java/util/Properties.html#store(java.io.Writer,%20kotlin.String)`, with the following differences:
+This method outputs the comments, properties keys and values in the same format as specified in store, with the following differences:
 
 - The stream is written using the ISO 8859-1 character encoding.
 - Characters not in Latin-1 in the comments are written as `\u005Cu`*xxxx* for their appropriate unicode hexadecimal value *xxxx*.
@@ -273,9 +273,9 @@ After the entries have been written, the output stream is flushed. The output st
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#store(java.io.Writer,%20kotlin.String)(writer: https://developer.android.com/reference/kotlin/java/io/Writer.html#!, comments: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` store
 
-Writes this property list (key and element pairs) in this `Properties` table to the output character stream in a format suitable for using the `https://developer.android.com/reference/kotlin/java/util/Properties.html#load(java.io.Reader)` method.
+Writes this property list (key and element pairs) in this `Properties` table to the output character stream in a format suitable for using the load method.
 
 Properties from the defaults table of this `Properties` table (if any) are *not* written out by this method.
 
@@ -289,7 +289,7 @@ After the entries have been written, the output stream is flushed. The output st
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#storeToXML(java.io.OutputStream,%20kotlin.String)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` storeToXML
 
 Emits an XML document representing all of the properties contained in this table.
 
@@ -297,7 +297,7 @@ An invocation of this method of the form `props.storeToXML(os, comment)` behaves
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#storeToXML(java.io.OutputStream,%20kotlin.String,%20kotlin.String)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, encoding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` storeToXML
 
 Emits an XML document representing all of the properties contained in this table, using the specified encoding.
 
@@ -318,7 +318,7 @@ This method behaves the same as [storeToXML(OutputStream,String,Charset)](../jav
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/Properties.html#storeToXML(java.io.OutputStream,%20kotlin.String,%20java.nio.charset.Charset)(os: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!, comment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, charset: https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` storeToXML
 
 Emits an XML document representing all of the properties contained in this table, using the specified encoding.
 
@@ -339,7 +339,7 @@ The specified stream remains open after this method returns.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` `https://developer.android.com/reference/kotlin/java/util/Properties.html#stringPropertyNames()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` stringPropertyNames
 
 Returns an unmodifiable set of keys from this property list where the key and its corresponding value are strings, including distinct keys in the default property list if a key of the same name has not already been found from the main properties list. Properties whose key or value is not of type `String` are omitted.
 
@@ -405,7 +405,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | Exceptions ||
 |---|---|
 | `java.lang.UnsupportedOperationException` | if the `clear` operation is not supported by this map |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to clear this provider |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to clear this provider |
 
 ### compute
 
@@ -439,7 +439,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `compute` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values or remove properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values or remove properties. |
 | --- | --- |
 
 ### computeIfAbsent
@@ -474,7 +474,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `computeIfAbsent` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the mapping function modified this map |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values and remove properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values and remove properties. |
 | --- | --- |
 
 ### computeIfPresent
@@ -509,7 +509,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `computeIfPresent` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values or remove properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values or remove properties. |
 | --- | --- |
 
 ### elements
@@ -650,7 +650,7 @@ open fun getService(
 ): Provider.Service!
 ```
 
-Get the service describing this Provider's implementation of the specified type of this algorithm or alias. If no such implementation exists, this method returns null. If there are two matching services, one added to this provider using `https://developer.android.com/reference/kotlin/java/security/Provider#putService(java.security.Provider.Service)` and one added via #put, the service added via `https://developer.android.com/reference/kotlin/java/security/Provider#putService(java.security.Provider.Service)` is returned.
+Get the service describing this Provider's implementation of the specified type of this algorithm or alias. If no such implementation exists, this method returns null. If there are two matching services, one added to this provider using putService and one added via #put, the service added via putService is returned.
 
 | Parameters ||
 |---|---|
@@ -765,7 +765,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `merge` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if it is detected that the remapping function modified this map |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values or remove properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values or remove properties. |
 | --- | --- |
 
 ### put
@@ -799,7 +799,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | `java.lang.IllegalArgumentException` | if some property of the specified key or value prevents it from being stored in this map |
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `put` operation is not supported by this map |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values. |
 
 ### putAll
 
@@ -855,7 +855,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `putIfAbsent` operation is not supported by this map (java.util.Collection#) |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values. |
 
 ### remove
 
@@ -883,7 +883,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | `java.lang.ClassCastException` | if the key is of an inappropriate type for this map (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map |
 | --- | --- |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to remove this provider's properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to remove this provider's properties. |
 
 ### remove
 
@@ -915,7 +915,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values (java.util.Collection#) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this map (java.util.Collection#) |
 | --- | --- |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to remove this provider's properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to remove this provider's properties. |
 
 ### replace
 
@@ -948,7 +948,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | `java.lang.NullPointerException` | if the specified key or value is null, and this map does not permit null keys or values |
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replace` operation is not supported by this map (java.util.Collection#) |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values. |
 
 ### replace
 
@@ -984,7 +984,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | `java.lang.NullPointerException` | if oldValue is null and this map does not permit null values (java.util.Collection#) |
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replace` operation is not supported by this map (java.util.Collection#) |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values. |
 
 ### replaceAll
 
@@ -1010,7 +1010,7 @@ If a security manager is enabled, its `checkSecurityAccess` method is called wit
 | --- | --- |
 | `java.lang.UnsupportedOperationException` | if the `replaceAll` operation is not supported by this map (java.util.Collection#) |
 | `java.util.ConcurrentModificationException` | if an entry is found to be removed during iteration |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values. |
 | --- | --- |
 
 ### toString
@@ -1037,7 +1037,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun putService(s: Provider.Service!): Unit
 ```
 
-Add a service. If a service of the same type with the same algorithm name exists and it was added using `https://developer.android.com/reference/kotlin/java/security/Provider#putService(java.security.Provider.Service)`, it is replaced by the new service. This method also places information about this service in the provider's Hashtable values in the format described in the [Java Cryptography Architecture API Specification \& Reference](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html).
+Add a service. If a service of the same type with the same algorithm name exists and it was added using putService, it is replaced by the new service. This method also places information about this service in the provider's Hashtable values in the format described in the [Java Cryptography Architecture API Specification \& Reference](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html).
 
 Also, if there is a security manager, its `checkSecurityAccess` method is called with the string `"putProviderProperty."+name`, where `name` is the provider name, to see if it's ok to set this provider's property values. If the default implementation of `checkSecurityAccess` is used (that is, that method is not overriden), then this results in a call to the security manager's `checkPermission` method with a `SecurityPermission("putProviderProperty."+name)` permission.
 
@@ -1048,7 +1048,7 @@ Also, if there is a security manager, its `checkSecurityAccess` method is called
 | Exceptions ||
 |---|---|
 | `java.lang.NullPointerException` | if s is null |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to set property values. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to set property values. |
 
 ### removeService
 
@@ -1058,7 +1058,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun removeService(s: Provider.Service!): Unit
 ```
 
-Remove a service previously added using `https://developer.android.com/reference/kotlin/java/security/Provider#putService(java.security.Provider.Service)`. The specified service is removed from this provider. It will no longer be returned by `https://developer.android.com/reference/kotlin/java/security/Provider#getService(kotlin.String,%20kotlin.String)` and its information will be removed from this provider's Hashtable.
+Remove a service previously added using putService. The specified service is removed from this provider. It will no longer be returned by getService and its information will be removed from this provider's Hashtable.
 
 Also, if there is a security manager, its `checkSecurityAccess` method is called with the string `"removeProviderProperty."+name`, where `name` is the provider name, to see if it's ok to remove this provider's properties. If the default implementation of `checkSecurityAccess` is used (that is, that method is not overriden), then this results in a call to the security manager's `checkPermission` method with a `SecurityPermission("removeProviderProperty."+name)` permission.
 
@@ -1069,7 +1069,7 @@ Also, if there is a security manager, its `checkSecurityAccess` method is called
 | Exceptions ||
 |---|---|
 | `java.lang.NullPointerException` | if s is null |
-| `java.lang.SecurityException` | if a security manager exists and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSecurityAccess(kotlin.String)` method denies access to remove this provider's properties. |
+| `java.lang.SecurityException` | if a security manager exists and its checkSecurityAccess method denies access to remove this provider's properties. |
 
 ## Properties
 

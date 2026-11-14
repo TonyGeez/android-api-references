@@ -48,24 +48,24 @@ Customized `QuoteSpan`.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#QuoteSpan()()` Creates a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` with the default values. |
-| `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#QuoteSpan(android.os.Parcel)(src: https://developer.android.com/reference/kotlin/android/os/Parcel.html#)` Create a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` from a parcel. |
-| `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#QuoteSpan(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` based on a color. |
-| `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#QuoteSpan(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, stripeWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, gapWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` based on a color, a stripe width and the width of the gap between the stripe and the text. |
+| QuoteSpan Creates a QuoteSpan with the default values. |
+| QuoteSpan Create a QuoteSpan from a parcel. |
+| QuoteSpan Creates a QuoteSpan based on a color. |
+| QuoteSpan Creates a QuoteSpan based on a color, a stripe width and the width of the gap between the stripe and the text. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#drawLeadingMargin(android.graphics.Canvas,%20android.graphics.Paint,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.text.Layout)(c: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#, p: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dir: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, baseline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, layout: https://developer.android.com/reference/kotlin/android/text/Layout.html#)` Renders the leading margin. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getColor()()` Get the color of the quote stripe. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | drawLeadingMargin Renders the leading margin. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColor Get the color of the quote stripe. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getGapWidth()()` Get the width of the gap between the stripe and the text. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getLeadingMargin(kotlin.Boolean)(first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the amount by which to adjust the leading margin. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGapWidth Get the width of the gap between the stripe and the text. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeadingMargin Returns the amount by which to adjust the leading margin. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpanTypeId Return a special type identifier for this span class. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#getStripeWidth()()` Get the width of the quote stripe. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStripeWidth Get the width of the quote stripe. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 ## Constants
@@ -116,7 +116,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 QuoteSpan()
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` with the default values.
+Creates a QuoteSpan with the default values.
 
 ### QuoteSpan
 
@@ -126,7 +126,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 QuoteSpan(src: Parcel)
 ```
 
-Create a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` from a parcel.
+Create a QuoteSpan from a parcel.
 
 | Parameters ||
 |---|---|
@@ -140,7 +140,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 QuoteSpan(color: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` based on a color.
+Creates a QuoteSpan based on a color.
 
 | Parameters ||
 |---|---|
@@ -157,7 +157,7 @@ QuoteSpan(
     gapWidth: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/QuoteSpan#` based on a color, a stripe width and the width of the gap between the stripe and the text.
+Creates a QuoteSpan based on a color, a stripe width and the width of the gap between the stripe and the text.
 
 | Parameters ||
 |---|---|
@@ -176,7 +176,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -203,7 +203,7 @@ open fun drawLeadingMargin(
 ): Unit
 ```
 
-Renders the leading margin. This is called before the margin has been adjusted by the value returned by `https://developer.android.com/reference/kotlin/android/text/style/LeadingMarginSpan#getLeadingMargin(kotlin.Boolean)`.
+Renders the leading margin. This is called before the margin has been adjusted by the value returned by getLeadingMargin.
 
 | Parameters ||
 |---|---|

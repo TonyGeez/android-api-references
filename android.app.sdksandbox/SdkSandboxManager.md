@@ -31,12 +31,12 @@ The app first needs to declare SDKs it depends on in its manifest using the `<us
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_DISPLAY_ID:kotlin.String` The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should define the integer ID of the logical display to display the SurfacePackage. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_HEIGHT_IN_PIXELS:kotlin.String` The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should define the integer height of the SurfacePackage in pixels. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_HOST_TOKEN:kotlin.String` The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should present the token returned by `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#getHostToken()` once the `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` has been added to the view hierarchy. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_DISPLAY_ID:kotlin.String` The name of key to be used in the Bundle fields of requestSurfacePackage, its value should define the integer ID of the logical display to display the SurfacePackage. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_HEIGHT_IN_PIXELS:kotlin.String` The name of key to be used in the Bundle fields of requestSurfacePackage, its value should define the integer height of the SurfacePackage in pixels. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_HOST_TOKEN:kotlin.String` The name of key to be used in the Bundle fields of requestSurfacePackage, its value should present the token returned by getHostToken once the `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` has been added to the view hierarchy. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` The name of key in the Bundle which is passed to the `onResult` function of the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` which is field of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value presents the requested SurfacePackage. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_WIDTH_IN_PIXELS:kotlin.String` The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should define the integer width of the SurfacePackage in pixels. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` The name of key in the Bundle which is passed to the `onResult` function of the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` which is field of requestSurfacePackage, its value presents the requested SurfacePackage. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_WIDTH_IN_PIXELS:kotlin.String` The name of key to be used in the Bundle fields of requestSurfacePackage, its value should define the integer width of the SurfacePackage in pixels. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#LOAD_SDK_ALREADY_LOADED:kotlin.Int` SDK is already loaded. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#LOAD_SDK_INTERNAL_ERROR:kotlin.Int` Internal error while loading SDK. |
@@ -48,31 +48,31 @@ The app first needs to declare SDKs it depends on in its manifest using the `<us
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#REQUEST_SURFACE_PACKAGE_SDK_NOT_LOADED:kotlin.Int` SDK is not loaded while requesting a SurfacePackage. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#SDK_SANDBOX_PROCESS_NOT_AVAILABLE:kotlin.Int` SDK sandbox process is not available. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#SDK_SANDBOX_SERVICE:kotlin.String` Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#` for interacting with the SDKs belonging to this client application. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#SDK_SANDBOX_SERVICE:kotlin.String` Use with getSystemService to retrieve an SdkSandboxManager for interacting with the SDKs belonging to this client application. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#SDK_SANDBOX_STATE_DISABLED:kotlin.Int` SDK sandbox is disabled. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#SDK_SANDBOX_STATE_ENABLED_PROCESS_ISOLATION:kotlin.Int` SDK sandbox is enabled. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)(callbackExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback)` Adds a callback which gets registered for SDK sandbox lifecycle events, such as SDK sandbox death. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSyncedSharedPreferencesKeys(kotlin.collections.MutableSet)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Adds keys to set of keys being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppOwnedSdkSandboxInterface](AppOwnedSdkSandboxInterface.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getAppOwnedSdkSandboxInterfaces()()` Fetches a list of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` registered for an app |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addSdkSandboxProcessDeathCallback Adds a callback which gets registered for SDK sandbox lifecycle events, such as SDK sandbox death. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addSyncedSharedPreferencesKeys Adds keys to set of keys being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppOwnedSdkSandboxInterface](AppOwnedSdkSandboxInterface.md)!\> | getAppOwnedSdkSandboxInterfaces Fetches a list of AppOwnedSdkSandboxInterface registered for an app |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SandboxedSdk](SandboxedSdk.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSandboxedSdks()()` Fetches information about SDKs that are loaded in the sandbox. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSdkSandboxState()()` Returns the current state of the availability of the SDK sandbox feature. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#getSyncedSharedPreferencesKeys()()` Returns the set keys that are being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SandboxedSdk](SandboxedSdk.md)!\> | getSandboxedSdks Fetches information about SDKs that are loaded in the sandbox. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSdkSandboxState Returns the current state of the availability of the SDK sandbox feature. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSyncedSharedPreferencesKeys Returns the set keys that are being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(sdkName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk!, https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException!>)` Loads SDK in an SDK sandbox java process. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#registerAppOwnedSdkSandboxInterface(android.app.sdksandbox.AppOwnedSdkSandboxInterface)(appOwnedSdkSandboxInterface: https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface)` Registers `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` for an app process. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#removeSdkSandboxProcessDeathCallback(android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)(callback: https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback)` Removes an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` that was previously added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)` |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | loadSdk Loads SDK in an SDK sandbox java process. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerAppOwnedSdkSandboxInterface Registers AppOwnedSdkSandboxInterface for an app process. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeSdkSandboxProcessDeathCallback Removes an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` that was previously added using addSdkSandboxProcessDeathCallback |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#removeSyncedSharedPreferencesKeys(kotlin.collections.MutableSet)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Removes keys from set of keys that have been added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSyncedSharedPreferencesKeys(kotlin.collections.MutableSet)` |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(sdkName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, callbackExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, https://developer.android.com/reference/kotlin/android/app/sdksandbox/RequestSurfacePackageException!>)` Sends a request for a surface package to the SDK. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#startSdkSandboxActivity(android.app.Activity,%20android.os.IBinder)(fromActivity: https://developer.android.com/reference/kotlin/android/app/Activity.html#, sdkActivityToken: https://developer.android.com/reference/kotlin/android/os/IBinder.html#)` Starts an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` in the SDK sandbox. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeSyncedSharedPreferencesKeys Removes keys from set of keys that have been added using addSyncedSharedPreferencesKeys |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestSurfacePackage Sends a request for a surface package to the SDK. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startSdkSandboxActivity Starts an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` in the SDK sandbox. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#unloadSdk(kotlin.String)(sdkName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Unloads an SDK that has been previously loaded by the caller. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#unregisterAppOwnedSdkSandboxInterface(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Unregisters `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface`s for an app process. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unloadSdk Unloads an SDK that has been previously loaded by the caller. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterAppOwnedSdkSandboxInterface Unregisters AppOwnedSdkSandboxInterfaces for an app process. |
 
 ## Constants
 
@@ -86,9 +86,9 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val EXTRA_DISPLAY_ID: String
 ```
 
-**Deprecated:** *Parameter for `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is getting deprecated.*
+**Deprecated:** *Parameter for requestSurfacePackage which is getting deprecated.*
 
-The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should define the integer ID of the logical display to display the SurfacePackage.
+The name of key to be used in the Bundle fields of requestSurfacePackage, its value should define the integer ID of the logical display to display the SurfacePackage.
 
  Value: "android.app.sdksandbox.extra.DISPLAY_ID"
 
@@ -102,9 +102,9 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val EXTRA_HEIGHT_IN_PIXELS: String
 ```
 
-**Deprecated:** *Parameter for `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is getting deprecated.*
+**Deprecated:** *Parameter for requestSurfacePackage which is getting deprecated.*
 
-The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should define the integer height of the SurfacePackage in pixels.
+The name of key to be used in the Bundle fields of requestSurfacePackage, its value should define the integer height of the SurfacePackage in pixels.
 
  Value: "android.app.sdksandbox.extra.HEIGHT_IN_PIXELS"
 
@@ -118,9 +118,9 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val EXTRA_HOST_TOKEN: String
 ```
 
-**Deprecated:** *Parameter for `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is getting deprecated.*
+**Deprecated:** *Parameter for requestSurfacePackage which is getting deprecated.*
 
-The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should present the token returned by `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#getHostToken()` once the `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` has been added to the view hierarchy. Only a non-null value is accepted to enable ANR reporting.
+The name of key to be used in the Bundle fields of requestSurfacePackage, its value should present the token returned by getHostToken once the `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` has been added to the view hierarchy. Only a non-null value is accepted to enable ANR reporting.
 
  Value: "android.app.sdksandbox.extra.HOST_TOKEN"
 
@@ -134,9 +134,9 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val EXTRA_SURFACE_PACKAGE: String
 ```
 
-**Deprecated:** *Parameter for `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is getting deprecated.*
+**Deprecated:** *Parameter for requestSurfacePackage which is getting deprecated.*
 
-The name of key in the Bundle which is passed to the `onResult` function of the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` which is field of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value presents the requested SurfacePackage.
+The name of key in the Bundle which is passed to the `onResult` function of the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` which is field of requestSurfacePackage, its value presents the requested SurfacePackage.
 
  Value: "android.app.sdksandbox.extra.SURFACE_PACKAGE"
 
@@ -150,9 +150,9 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val EXTRA_WIDTH_IN_PIXELS: String
 ```
 
-**Deprecated:** *Parameter for `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is getting deprecated.*
+**Deprecated:** *Parameter for requestSurfacePackage which is getting deprecated.*
 
-The name of key to be used in the Bundle fields of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`, its value should define the integer width of the SurfacePackage in pixels.
+The name of key to be used in the Bundle fields of requestSurfacePackage, its value should define the integer width of the SurfacePackage in pixels.
 
  Value: "android.app.sdksandbox.extra.WIDTH_IN_PIXELS"
 
@@ -170,7 +170,7 @@ static val LOAD_SDK_ALREADY_LOADED: Int
 
 SDK is already loaded.
 
-This indicates that client application tried to reload the same SDK by calling `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` after being successfully loaded.
+This indicates that client application tried to reload the same SDK by calling loadSdk after being successfully loaded.
 
  Value: 101
 
@@ -206,7 +206,7 @@ static val LOAD_SDK_NOT_FOUND: Int
 
 SDK not found.
 
-This indicates that client application tried to load a non-existing SDK by calling `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+This indicates that client application tried to load a non-existing SDK by calling loadSdk.
 
  Value: 100
 
@@ -224,7 +224,7 @@ static val LOAD_SDK_SDK_DEFINED_ERROR: Int
 
 SDK error after being loaded.
 
-This indicates that the SDK encountered an error during post-load initialization. The details of this can be obtained from the Bundle returned in `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException` through the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` passed in to `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+This indicates that the SDK encountered an error during post-load initialization. The details of this can be obtained from the Bundle returned in LoadSdkException through the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` passed in to loadSdk.
 
  Value: 102
 
@@ -312,7 +312,7 @@ static val SDK_SANDBOX_SERVICE: String
 
 **Deprecated:** *Deprecated in Java.*
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Context.html#getSystemService(kotlin.String)` to retrieve an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#` for interacting with the SDKs belonging to this client application.
+Use with getSystemService to retrieve an SdkSandboxManager for interacting with the SDKs belonging to this client application.
 
  Value: "sdk_sandbox"
 
@@ -330,7 +330,7 @@ static val SDK_SANDBOX_STATE_DISABLED: Int
 
 SDK sandbox is disabled.
 
-`https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#` APIs are hidden. Attempts at calling them will result in `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`.
+SdkSandboxManager APIs are hidden. Attempts at calling them will result in `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`.
 
  Value: 0
 
@@ -348,7 +348,7 @@ static val SDK_SANDBOX_STATE_ENABLED_PROCESS_ISOLATION: Int
 
 SDK sandbox is enabled.
 
-App can use `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#` APIs to load `SDKs` it depends on into the corresponding SDK sandbox process.
+App can use SdkSandboxManager APIs to load `SDKs` it depends on into the corresponding SDK sandbox process.
 
  Value: 2
 
@@ -373,7 +373,7 @@ Adds a callback which gets registered for SDK sandbox lifecycle events, such as 
 
 | Parameters ||
 |---|---|
-| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](../android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback.md): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which will receive SDK sandbox lifecycle events. This value cannot be `null`. |
 
 ### addSyncedSharedPreferencesKeys
@@ -390,9 +390,9 @@ fun addSyncedSharedPreferencesKeys(keys: MutableSet<String!>): Unit
 
 Adds keys to set of keys being synced from app's default `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` to the SDK sandbox.
 
-Synced data will be available for SDKs to read using the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getClientSharedPreferences()` API.
+Synced data will be available for SDKs to read using the getClientSharedPreferences API.
 
-To stop syncing any key that has been added using this API, use `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#removeSyncedSharedPreferencesKeys(kotlin.collections.MutableSet)`.
+To stop syncing any key that has been added using this API, use removeSyncedSharedPreferencesKeys.
 
 The sync breaks if the app restarts and user must call this API again to rebuild the pool of keys for syncing.
 
@@ -414,11 +414,11 @@ fun getAppOwnedSdkSandboxInterfaces(): MutableList<AppOwnedSdkSandboxInterface!>
 
 **Deprecated:** *Deprecated in Java.*
 
-Fetches a list of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` registered for an app
+Fetches a list of AppOwnedSdkSandboxInterface registered for an app
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface!>` | empty list if callingInfo not found in map otherwise a list of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface!>` | empty list if callingInfo not found in map otherwise a list of AppOwnedSdkSandboxInterface This value cannot be `null`. |
 
 ### getSandboxedSdks
 
@@ -436,7 +436,7 @@ Fetches information about SDKs that are loaded in the sandbox.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk!>` | List of `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk` containing all currently loaded SDKs. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk!>` | List of SandboxedSdk containing all currently loaded SDKs. This value cannot be `null`. |
 
 ### getSdkSandboxState
 
@@ -499,15 +499,15 @@ The caller should already declare `SDKs` it depends on in its manifest using `<u
 
 When the client application loads the first SDK, a new SDK sandbox process will be created. If a sandbox has already been created for the client application, additional SDKs will be loaded into the same sandbox.
 
-This API may only be called while the caller is running in the foreground. Calls from the background will result in returning `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException` in the `receiver`.
+This API may only be called while the caller is running in the foreground. Calls from the background will result in returning LoadSdkException in the `receiver`.
 
 | Parameters ||
 |---|---|
 | `sdkName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the SDK to be loaded. This value cannot be `null`. |
 | `params` | [Bundle](../android.os/Bundle.md): additional parameters to be passed to the SDK in the form of a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` as agreed between the client and the SDK. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the receiver. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the receiver. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [SandboxedSdk](SandboxedSdk.md)!, [LoadSdkException](LoadSdkException.md)!\>: This either receives a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk` on a successful run, or `https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException`. This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [SandboxedSdk](SandboxedSdk.md)!, [LoadSdkException](LoadSdkException.md)!\>: This either receives a SandboxedSdk on a successful run, or LoadSdkException. This value cannot be `null`. |
 
 ### registerAppOwnedSdkSandboxInterface
 
@@ -521,11 +521,11 @@ fun registerAppOwnedSdkSandboxInterface(appOwnedSdkSandboxInterface: AppOwnedSd
 
 **Deprecated:** *Deprecated in Java.*
 
-Registers `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` for an app process.
+Registers AppOwnedSdkSandboxInterface for an app process.
 
-Registering an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface` that has same name as a previously registered interface will result in `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
+Registering an AppOwnedSdkSandboxInterface that has same name as a previously registered interface will result in `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 
-`https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface#getName()` refers to the name of the interface.
+getName refers to the name of the interface.
 
 | Parameters ||
 |---|---|
@@ -543,11 +543,11 @@ fun removeSdkSandboxProcessDeathCallback(callback: SdkSandboxManager.SdkSandbox
 
 **Deprecated:** *Deprecated in Java.*
 
-Removes an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` that was previously added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)`
+Removes an `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` that was previously added using addSdkSandboxProcessDeathCallback
 
 | Parameters ||
 |---|---|
-| `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](../android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback.md): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which was previously added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,%20android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)` This value cannot be `null`. |
+| `callback` | [SdkSandboxManager.SdkSandboxProcessDeathCallback](../android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback.md): the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback` which was previously added using addSdkSandboxProcessDeathCallback This value cannot be `null`. |
 
 ### removeSyncedSharedPreferencesKeys
 
@@ -561,7 +561,7 @@ fun removeSyncedSharedPreferencesKeys(keys: MutableSet<String!>): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Removes keys from set of keys that have been added using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#addSyncedSharedPreferencesKeys(kotlin.collections.MutableSet)`
+Removes keys from set of keys that have been added using addSyncedSharedPreferencesKeys
 
 Removed keys will be erased from the SDK sandbox if they have been synced already.
 
@@ -584,13 +584,13 @@ fun requestSurfacePackage(
 ): Unit
 ```
 
-**Deprecated:** *This method will no longer be supported through `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#`. Please consider using androidx.privacysandbox library as an alternative*
+**Deprecated:** *This method will no longer be supported through SdkSandboxManager. Please consider using androidx.privacysandbox library as an alternative*
 
 Sends a request for a surface package to the SDK.
 
 After the client application receives a signal about a successful SDK loading, and has added a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` to the view hierarchy, it may asynchronously request a SurfacePackage to render a view from the SDK.
 
-When the SurfacePackage is ready, the `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onResult(android.os.OutcomeReceiver.R)` callback of the passed `receiver` will be invoked. This callback will contain a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` object, which will contain the key `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` whose associated value is the requested SurfacePackage.
+When the SurfacePackage is ready, the onResult callback of the passed `receiver` will be invoked. This callback will contain a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` object, which will contain the key `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` whose associated value is the requested SurfacePackage.
 
 The passed `params` must contain the following keys: `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_WIDTH_IN_PIXELS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_HEIGHT_IN_PIXELS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_DISPLAY_ID:kotlin.String` and `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_HOST_TOKEN:kotlin.String`. If any of these keys are missing or invalid, an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown.
 
@@ -600,9 +600,9 @@ This API may only be called while the caller is running in the foreground. Calls
 |---|---|
 | `sdkName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the SDK loaded into the SDK sandbox. This value cannot be `null`. |
 | `params` | [Bundle](../android.os/Bundle.md): the parameters which the client application passes to the SDK. This value cannot be `null`. |
-| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Bundle](../android.os/Bundle.md)!, [RequestSurfacePackageException](RequestSurfacePackageException.md)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` on success which will contain the key `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` with a SurfacePackage value, or `https://developer.android.com/reference/kotlin/android/app/sdksandbox/RequestSurfacePackageException` on failure. This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Bundle](../android.os/Bundle.md)!, [RequestSurfacePackageException](RequestSurfacePackageException.md)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` on success which will contain the key `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#EXTRA_SURFACE_PACKAGE:kotlin.String` with a SurfacePackage value, or RequestSurfacePackageException on failure. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -660,7 +660,7 @@ fun unloadSdk(sdkName: String): Unit
 
 Unloads an SDK that has been previously loaded by the caller.
 
-It is not guaranteed that the memory allocated for this SDK will be freed immediately. All subsequent calls to `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` for the given `sdkName` will fail.
+It is not guaranteed that the memory allocated for this SDK will be freed immediately. All subsequent calls to requestSurfacePackage for the given `sdkName` will fail.
 
 This API may only be called while the caller is running in the foreground. Calls from the background will result in a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` being thrown.
 
@@ -680,7 +680,7 @@ fun unregisterAppOwnedSdkSandboxInterface(name: String): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Unregisters `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface`s for an app process.
+Unregisters AppOwnedSdkSandboxInterfaces for an app process.
 
 | Parameters ||
 |---|---|

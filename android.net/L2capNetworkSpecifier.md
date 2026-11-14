@@ -12,7 +12,7 @@ class L2capNetworkSpecifier : NetworkSpecifier, Parcelable
 | ↳ | [android.net.NetworkSpecifier](NetworkSpecifier.md) ||
 | | ↳ | [android.net.L2capNetworkSpecifier](L2capNetworkSpecifier.md) |
 
-A `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` used to identify an L2CAP network over BLE. An L2CAP network is not symmetrical, meaning there exists both a server (Bluetooth peripheral) and a client (Bluetooth central) node. This specifier contains the information required to request a client L2CAP network using android.net.ConnectivityManager#requestNetwork while specifying the remote MAC address, and Protocol/Service Multiplexer (PSM). It can also contain information allocated by the system when reserving a server network using `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#reserveNetwork(android.net.NetworkRequest,%20android.os.Handler,%20android.net.ConnectivityManager.NetworkCallback)` such as the Protocol/Service Multiplexer (PSM). In both cases, the header compression option must be specified. An L2CAP server network allocates a Protocol/Service Multiplexer (PSM) to be advertised to the client. A new server network must always be reserved using `ConnectivityManager#reserveNetwork`. The subsequent `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onReserved(android.net.NetworkCapabilities)` callback includes an `L2CapNetworkSpecifier`. The `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getPsm()` method will return the Protocol/Service Multiplexer (PSM) of the reserved network so that the server can advertise it to the client and the client can connect. An L2CAP server network is backed by a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket.html#` which can, in theory, accept many connections. However, before SDK version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` Bluetooth APIs do not expose the channel ID, so these connections are indistinguishable. In practice, this means that the network matching semantics in ConnectivityService will tear down all but the first connection. When the connection between client and server completes, a `https://developer.android.com/reference/kotlin/android/net/Network` whose capabilities satisfy this `L2capNetworkSpecifier` will connect and the usual callbacks, such as NetworkCallback#onAvailable, will be called on the callback object passed to `ConnectivityManager#reserveNetwork` or `ConnectivityManager#requestNetwork`.
+A NetworkSpecifier used to identify an L2CAP network over BLE. An L2CAP network is not symmetrical, meaning there exists both a server (Bluetooth peripheral) and a client (Bluetooth central) node. This specifier contains the information required to request a client L2CAP network using android.net.ConnectivityManager#requestNetwork while specifying the remote MAC address, and Protocol/Service Multiplexer (PSM). It can also contain information allocated by the system when reserving a server network using reserveNetwork such as the Protocol/Service Multiplexer (PSM). In both cases, the header compression option must be specified. An L2CAP server network allocates a Protocol/Service Multiplexer (PSM) to be advertised to the client. A new server network must always be reserved using `ConnectivityManager#reserveNetwork`. The subsequent onReserved callback includes an `L2CapNetworkSpecifier`. The getPsm method will return the Protocol/Service Multiplexer (PSM) of the reserved network so that the server can advertise it to the client and the client can connect. An L2CAP server network is backed by a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket.html#` which can, in theory, accept many connections. However, before SDK version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` Bluetooth APIs do not expose the channel ID, so these connections are indistinguishable. In practice, this means that the network matching semantics in ConnectivityService will tear down all but the first connection. When the connection between client and server completes, a Network whose capabilities satisfy this `L2capNetworkSpecifier` will connect and the usual callbacks, such as NetworkCallback#onAvailable, will be called on the callback object passed to `ConnectivityManager#reserveNetwork` or `ConnectivityManager#requestNetwork`.
 
 ## Summary
 
@@ -34,24 +34,24 @@ A `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` 
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#canBeSatisfiedBy(android.net.NetworkSpecifier)(other: https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier!)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canBeSatisfiedBy <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getHeaderCompression()()` Returns the compression mechanism for this network. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getPsm()()` Returns the Protocol/Service Multiplexer (PSM) for this network to connect to. |
-| [MacAddress](MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRemoteAddress()()` Returns the remote MAC address for this network to connect to. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHeaderCompression Returns the compression mechanism for this network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPsm Returns the Protocol/Service Multiplexer (PSM) for this network to connect to. |
+| [MacAddress](MacAddress.md)? | getRemoteAddress Returns the remote MAC address for this network to connect to. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRole()()` Returns the role to be used for this network. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#hashCode()()` Returns a hash code value for the object. |
-| [NetworkSpecifier](NetworkSpecifier.md)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#redact()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRole Returns the role to be used for this network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [NetworkSpecifier](NetworkSpecifier.md)? | redact <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -81,7 +81,7 @@ Also in [U Extensions 17](https://developer.android.com/sdkExtensions)
 static val HEADER_COMPRESSION_ANY: Int
 ```
 
-Accept any form of header compression. This option is only meaningful in `https://developer.android.com/reference/kotlin/android/net/NetworkRequest`s. Specifiers for actual L2CAP networks never have this option set.
+Accept any form of header compression. This option is only meaningful in NetworkRequests. Specifiers for actual L2CAP networks never have this option set.
 
  Value: 0
 
@@ -107,7 +107,7 @@ Also in [U Extensions 17](https://developer.android.com/sdkExtensions)
 static val PSM_ANY: Int
 ```
 
-Match any Protocol/Service Multiplexer (PSM). This PSM value is only meaningful in `https://developer.android.com/reference/kotlin/android/net/NetworkRequest`s. Specifiers for actual L2CAP networks never have this value set.
+Match any Protocol/Service Multiplexer (PSM). This PSM value is only meaningful in NetworkRequests. Specifiers for actual L2CAP networks never have this value set.
 
  Value: 0
 
@@ -120,7 +120,7 @@ Also in [U Extensions 17](https://developer.android.com/sdkExtensions)
 static val ROLE_ANY: Int
 ```
 
-Match any role. This role is only meaningful in `https://developer.android.com/reference/kotlin/android/net/NetworkRequest`s. Specifiers for actual L2CAP networks never have this role set.
+Match any role. This role is only meaningful in NetworkRequests. Specifiers for actual L2CAP networks never have this role set.
 
  Value: 0
 
@@ -169,7 +169,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -238,11 +238,11 @@ Also in [U Extensions 17](https://developer.android.com/sdkExtensions)
 fun getRemoteAddress(): MacAddress?
 ```
 
-Returns the remote MAC address for this network to connect to. The remote address is only meaningful for networks that have ROLE_CLIENT. When receiving this `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#` from Connectivity APIs such as a `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback`, the MAC address is redacted.
+Returns the remote MAC address for this network to connect to. The remote address is only meaningful for networks that have ROLE_CLIENT. When receiving this L2capNetworkSpecifier from Connectivity APIs such as a `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback`, the MAC address is redacted.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/MacAddress?` | This value may be `null`. |
+| MacAddress | This value may be `null`. |
 
 ### getRole
 
@@ -272,8 +272,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -290,7 +290,7 @@ fun redact(): NetworkSpecifier?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier?` | This value may be `null`. |
+| NetworkSpecifier | This value may be `null`. |
 
 ### toString
 

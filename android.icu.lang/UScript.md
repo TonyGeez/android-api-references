@@ -323,24 +323,24 @@ Starting with ICU 55, script codes are only added when their scripts have been o
 
 | Public methods ||
 |---|---|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#breaksBetweenLetters(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the script allows line breaks between letters (excluding hyphenation). |
-| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCode(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Gets a script codes associated with the given locale or ISO 15924 abbreviation or name. |
-| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCode(kotlin.String)(nameOrAbbrOrLocale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the script codes associated with the given locale or ISO 15924 abbreviation or name. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | breaksBetweenLetters Returns true if the script allows line breaks between letters (excluding hyphenation). |
+| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getCode Gets a script codes associated with the given locale or ISO 15924 abbreviation or name. |
+| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getCode Gets the script codes associated with the given locale or ISO 15924 abbreviation or name. |
 | --- | --- |
-| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCode(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets a script codes associated with the given locale or ISO 15924 abbreviation or name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCodeFromName(kotlin.String)(nameOrAbbr: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the script code associated with the given Unicode script property alias (name or abbreviation). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getName(kotlin.Int)(scriptCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the long Unicode script name, if there is one. |
+| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getCode Gets a script codes associated with the given locale or ISO 15924 abbreviation or name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCodeFromName Returns the script code associated with the given Unicode script property alias (name or abbreviation). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Returns the long Unicode script name, if there is one. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getSampleString(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the script sample character string. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getScript(kotlin.Int)(codepoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the script code associated with the given codepoint. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getScriptExtensions(kotlin.Int,%20java.util.BitSet)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, set: https://developer.android.com/reference/kotlin/java/util/BitSet.html#!)` Sets code point c's Script_Extensions as script code integers into the output BitSet. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSampleString Returns the script sample character string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getScript Gets the script code associated with the given codepoint. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getScriptExtensions Sets code point c's Script_Extensions as script code integers into the output BitSet. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getShortName(kotlin.Int)(scriptCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the 4-letter ISO 15924 script code, which is the same as the short Unicode script name if Unicode has names for the script. |
-| static [UScript.ScriptUsage](../android/icu/lang/UScript.ScriptUsage.md)! | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getUsage(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the script usage according to UAX #31 Unicode Identifier and Pattern Syntax. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#hasScript(kotlin.Int,%20kotlin.Int)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Do the Script_Extensions of code point c contain script sc? If c does not have explicit Script_Extensions, then this tests whether c has the Script property value sc. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getShortName Returns the 4-letter ISO 15924 script code, which is the same as the short Unicode script name if Unicode has names for the script. |
+| static [UScript.ScriptUsage](../android/icu/lang/UScript.ScriptUsage.md)! | getUsage Returns the script usage according to UAX #31 Unicode Identifier and Pattern Syntax. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasScript Do the Script_Extensions of code point c contain script sc? If c does not have explicit Script_Extensions, then this tests whether c has the Script property value sc. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#isCased(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if in modern (or most recent) usage of the script case distinctions are customary. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#isRightToLeft(kotlin.Int)(script: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the script is written right-to-left. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCased Returns true if in modern (or most recent) usage of the script case distinctions are customary. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRightToLeft Returns true if the script is written right-to-left. |
 
 ## Constants
 
@@ -2952,7 +2952,7 @@ static fun getCode(nameOrAbbrOrLocale: String!): IntArray!
 
 Gets the script codes associated with the given locale or ISO 15924 abbreviation or name. Returns MALAYAM given "Malayam" OR "Mlym". Returns LATIN given "en" OR "en_US"
 
-Note: To search by short or long script alias only, use `https://developer.android.com/reference/kotlin/android/icu/lang/UScript#getCodeFromName(kotlin.String)` instead. That does a fast lookup with no access of the locale data.
+Note: To search by short or long script alias only, use getCodeFromName instead. That does a fast lookup with no access of the locale data.
 
 | Parameters ||
 |---|---|

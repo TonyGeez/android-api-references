@@ -13,7 +13,7 @@ class NetworkSecurityConfig
 
 The security configuration to use when performing network communications.
 
-A `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` can specify security requirements for all network communications, or for communications with a specific domain or localhost connections.
+A NetworkSecurityConfig can specify security requirements for all network communications, or for communications with a specific domain or localhost connections.
 
 ## Summary
 
@@ -23,12 +23,12 @@ A `https://developer.android.com/reference/kotlin/android/security/net/config/Ne
 
 | Public methods ||
 |---|---|
-| static [NetworkSecurityConfig](NetworkSecurityConfig.md)? | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createBaseConfig(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Returns a base `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` using the provided app's defaults. |
-| static [NetworkSecurityConfig](NetworkSecurityConfig.md) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#createLocalhostConfig()()` Returns a `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` for localhost. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#getDomainEncryptionMode()()` <br /> |
+| static [NetworkSecurityConfig](NetworkSecurityConfig.md)? | createBaseConfig Returns a base NetworkSecurityConfig using the provided app's defaults. |
+| static [NetworkSecurityConfig](NetworkSecurityConfig.md) | createLocalhostConfig Returns a NetworkSecurityConfig for localhost. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDomainEncryptionMode <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#isCertificateTransparencyVerificationRequired()()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#isCleartextTrafficPermitted()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCertificateTransparencyVerificationRequired <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCleartextTrafficPermitted <br /> |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ Also in [C Extensions 24](https://developer.android.com/sdkExtensions)
 static fun createBaseConfig(context: Context): NetworkSecurityConfig?
 ```
 
-Returns a base `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` using the provided app's defaults.
+Returns a base NetworkSecurityConfig using the provided app's defaults.
 
 An app default configuration has the following properties:
 
@@ -58,7 +58,7 @@ An app default configuration has the following properties:
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#?` | the application `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#`, or `null` if the config cannot be found. |
+| `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#?` | the application NetworkSecurityConfig, or `null` if the config cannot be found. |
 
 ### createLocalhostConfig
 
@@ -69,7 +69,7 @@ Also in [C Extensions 24](https://developer.android.com/sdkExtensions)
 static fun createLocalhostConfig(): NetworkSecurityConfig
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` for localhost.
+Returns a NetworkSecurityConfig for localhost.
 
 The localhost configuration has the following properties:
 
@@ -78,7 +78,7 @@ The localhost configuration has the following properties:
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#` | the `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#`. This value cannot be `null`. |
+| NetworkSecurityConfig | the NetworkSecurityConfig. This value cannot be `null`. |
 
 ### getDomainEncryptionMode
 
@@ -91,7 +91,7 @@ fun getDomainEncryptionMode(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the domain encryption mode. For possible values see `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#getDomainEncryptionMode(kotlin.String)`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_OPPORTUNISTIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_REQUIRED:kotlin.Int` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the domain encryption mode. For possible values see getDomainEncryptionMode. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_OPPORTUNISTIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#DOMAIN_ENCRYPTION_MODE_REQUIRED:kotlin.Int` |
 
 ### isCertificateTransparencyVerificationRequired
 
@@ -104,7 +104,7 @@ fun isCertificateTransparencyVerificationRequired(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if Certificate Transparency is required for this `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if Certificate Transparency is required for this NetworkSecurityConfig. |
 
 ### isCleartextTrafficPermitted
 
@@ -117,4 +117,4 @@ fun isCleartextTrafficPermitted(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if cleartext traffic is permitted for this `https://developer.android.com/reference/kotlin/android/security/net/config/NetworkSecurityConfig#`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if cleartext traffic is permitted for this NetworkSecurityConfig. |

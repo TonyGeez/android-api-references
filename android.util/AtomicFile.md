@@ -23,21 +23,21 @@ Atomic file does not confer any file locking semantics. Do not use this class wh
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/AtomicFile#AtomicFile(java.io.File)(baseName: https://developer.android.com/reference/kotlin/java/io/File.html#!)` Create a new AtomicFile for a file located at the given File path. |
+| AtomicFile Create a new AtomicFile for a file located at the given File path. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#delete()()` Delete the atomic file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#failWrite(java.io.FileOutputStream)(str: https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#!)` Call when you have failed for some reason at writing to the stream returned by `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#finishWrite(java.io.FileOutputStream)(str: https://developer.android.com/reference/kotlin/java/io/FileOutputStream.html#!)` Call when you have successfully finished writing to the stream returned by `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | delete Delete the atomic file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | failWrite Call when you have failed for some reason at writing to the stream returned by startWrite. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishWrite Call when you have successfully finished writing to the stream returned by startWrite. |
 | --- | --- |
-| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#getBaseFile()()` Return the path to the base file. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#getLastModifiedTime()()` Gets the last modified time of the atomic file. |
-| open [FileInputStream](../java.io/FileInputStream.md)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#openRead()()` Open the atomic file for reading. |
+| open [File](../java.io/File.md)! | getBaseFile Return the path to the base file. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastModifiedTime Gets the last modified time of the atomic file. |
+| open [FileInputStream](../java.io/FileInputStream.md)! | openRead Open the atomic file for reading. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#readFully()()` A convenience for `https://developer.android.com/reference/kotlin/android/util/AtomicFile#openRead()` that also reads all of the file contents into a byte array which is returned. |
-| open [FileOutputStream](../java.io/FileOutputStream.md)! | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()()` Start a new write operation on the file. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/AtomicFile#toString()()` Returns a string representation of the object. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | readFully A convenience for openRead that also reads all of the file contents into a byte array which is returned. |
+| open [FileOutputStream](../java.io/FileOutputStream.md)! | startWrite Start a new write operation on the file. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Public constructors
@@ -72,7 +72,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun failWrite(str: FileOutputStream!): Unit
 ```
 
-Call when you have failed for some reason at writing to the stream returned by `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()`. This will close the current write stream, and delete the new file.
+Call when you have failed for some reason at writing to the stream returned by startWrite. This will close the current write stream, and delete the new file.
 
 ### finishWrite
 
@@ -82,7 +82,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun finishWrite(str: FileOutputStream!): Unit
 ```
 
-Call when you have successfully finished writing to the stream returned by `https://developer.android.com/reference/kotlin/android/util/AtomicFile#startWrite()`. This will close, sync, and commit the new data. The next attempt to read the atomic file will return the new file stream.
+Call when you have successfully finished writing to the stream returned by startWrite. This will close, sync, and commit the new data. The next attempt to read the atomic file will return the new file stream.
 
 ### getBaseFile
 
@@ -129,7 +129,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun readFully(): ByteArray!
 ```
 
-A convenience for `https://developer.android.com/reference/kotlin/android/util/AtomicFile#openRead()` that also reads all of the file contents into a byte array which is returned.
+A convenience for openRead that also reads all of the file contents into a byte array which is returned.
 
 ### startWrite
 
@@ -139,7 +139,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 open fun startWrite(): FileOutputStream!
 ```
 
-Start a new write operation on the file. This returns a FileOutputStream to which you can write the new file data. The existing file is replaced with the new data. You *must not* directly close the given FileOutputStream; instead call either `https://developer.android.com/reference/kotlin/android/util/AtomicFile#finishWrite(java.io.FileOutputStream)` or `https://developer.android.com/reference/kotlin/android/util/AtomicFile#failWrite(java.io.FileOutputStream)`.
+Start a new write operation on the file. This returns a FileOutputStream to which you can write the new file data. The existing file is replaced with the new data. You *must not* directly close the given FileOutputStream; instead call either finishWrite or failWrite.
 
 Note that if another thread is currently performing a write, this will simply replace whatever that thread is writing with the new file being written by this thread, and when the other thread finishes the write the new write operation will no longer be safe (or will be lost). You must do your own threading protection for access to AtomicFile.
 

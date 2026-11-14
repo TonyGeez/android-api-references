@@ -11,19 +11,19 @@ class AssistantQueryRequest : EgressRequest<AssistantQueryResponse!>, Parcelab
 | ↳ | [android.app.privatecompute.EgressRequest](EgressRequest.md)\< [android.app.privatecompute.AssistantQueryResponse](AssistantQueryResponse.md)\> ||
 | | ↳ | [android.app.privatecompute.AssistantQueryRequest](AssistantQueryRequest.md) |
 
-Request object specifically for Assistant Query Egress operations. Binds this request to the `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse` type.
+Request object specifically for Assistant Query Egress operations. Binds this request to the AssistantQueryResponse type.
 
 These requests are subject to system validations, rate limits, and user consent. If the non-PCC process does not return the response in a reasonable timeframe, the platform will unbind from the non-PCC process and return `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException#ERROR_NO_RESPONSE_FROM_EGRESS_SERVICE:kotlin.Int` via the callback.
 
-A request is considered invalid and will cause `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#egressData(android.app.privatecompute.EgressRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` to throw `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` synchronously if:
+A request is considered invalid and will cause egressData to throw `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` synchronously if:
 
 - The request or its `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Query` payload is null.
-- The `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Query#getSessionId()` or `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Query#getQueryString()` is null.
+- The getSessionId or getQueryString is null.
 - The session ID has already been used (reused/replayed).
 - The query string size exceeds the maximum allowed limit (10 KB).
 - The calling package does not contain the user-chosen default Assistant.
 
-A request will cause `https://developer.android.com/reference/kotlin/android/app/privatecompute/PccSandboxManager#egressData(android.app.privatecompute.EgressRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` to throw `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` synchronously if:
+A request will cause egressData to throw `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` synchronously if:
 
 - The user has not consented to egress for the Assistant service.
 - The egress rate limit has been exceeded. The system enforces two limits:
@@ -34,19 +34,19 @@ A request will cause `https://developer.android.com/reference/kotlin/android/app
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#`. |
+| | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Builder` Builder for AssistantQueryRequest. |
 | | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest.Query` Payload containing the raw query details to be routed to the non-PCC assistant process. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [AssistantQueryRequest.Query](../android/app/privatecompute/AssistantQueryRequest.Query.md) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#getQuery()()` Returns the query payload associated with this request. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [AssistantQueryRequest.Query](../android/app/privatecompute/AssistantQueryRequest.Query.md) | getQuery Returns the query payload associated with this request. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistantQueryRequest](AssistantQueryRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#` instance. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistantQueryRequest](AssistantQueryRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#CREATOR:android.os.Parcelable.Creator` Creator for AssistantQueryRequest instance. |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -106,4 +106,4 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val CREATOR: Parcelable.Creator<AssistantQueryRequest!>
 ```
 
-Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest#` instance.
+Creator for AssistantQueryRequest instance.

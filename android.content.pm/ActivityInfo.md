@@ -119,103 +119,103 @@ Information you can retrieve about a particular application activity or receiver
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#ActivityInfo()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#ActivityInfo(android.content.pm.ActivityInfo)(orig: https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#!)` <br /> |
+| ActivityInfo <br /> |
+| ActivityInfo <br /> |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#getKnownActivityEmbeddingCerts()()` Gets the trusted host certificate digests of apps that are allowed to embed this activity. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump <br /> |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getKnownActivityEmbeddingCerts Gets the trusted host certificate digests of apps that are allowed to embed this activity. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#getThemeResource()()` Return the theme resource identifier to use for this activity. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getThemeResource Return the theme resource identifier to use for this activity. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel <br /> |
 | --- | --- |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+Inherited functions From class ComponentInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpBack
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#dumpFront(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpFront
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getBannerResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getBannerResource
 
 Return the banner resource identifier to use for this component. If the component defines a banner, that is used; else, the application banner is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getIconResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getIconResource
 
 Return the icon resource identifier to use for this component. If the component defines an icon, that is used; else, the application icon is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#getLogoResource()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getLogoResource
 
 Return the logo resource identifier to use for this component. If the component defines a logo, that is used; else, the application logo is used.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#isEnabled()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isEnabled
 
 Return whether this component and its enclosing application are enabled.
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+From class PackageItemInfo `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadBanner
 
 Retrieve the current graphical banner associated with this item. This will call back on the given PackageManager to load the banner from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadIcon
 
 Retrieve the current graphical icon associated with this item. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` loadLabel
 
 Retrieve the current textual label associated with this item. This will call back on the given PackageManager to load the label from the application.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadLogo
 
 Retrieve the current graphical logo associated with this item. This will call back on the given PackageManager to load the logo from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadUnbadgedIcon
 
 Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` loadXmlMetaData
 
 Load an XML resource attached to the meta-data of this item. This will retrieved the name meta-data entry, and if defined call back on the given PackageManager to load its XML file from the application.
 
@@ -248,7 +248,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | [ActivityInfo.WindowLayout](../android/content/pm/ActivityInfo.WindowLayout.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#windowLayout:android.content.pm.ActivityInfo.WindowLayout` Information about desired position and size of activity on the display when it is first started. |
 | --- | --- |
 
-Inherited properties From class `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo` `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo`
+Inherited properties From class ComponentInfo `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo!` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#applicationInfo:android.content.pm.ApplicationInfo`
 
 Global information about the application/package this component is a part of.
 
@@ -258,7 +258,7 @@ Global information about the application/package this component is a part of.
 
 Set of attribution tags that should be automatically applied to this component.
 
-When this component represents an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` or `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, each instance will be automatically configured with `https://developer.android.com/reference/kotlin/android/content/Context.html#createAttributionContext(kotlin.String)` using the first attribution tag contained here.
+When this component represents an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` or `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, each instance will be automatically configured with createAttributionContext using the first attribution tag contained here.
 
 Additionally, when this component represents a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` and the sender of a broadcast requires the receiver to hold one or more specific permissions, those permission checks will be performed using each of the attributions tags contained here.
 
@@ -278,7 +278,7 @@ Indicates if this component is aware of direct boot lifecycle, and can be safely
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/ComponentInfo#enabled:kotlin.Boolean`
 
-Indicates whether or not this component may be instantiated. Note that this value can be overridden by the one in its parent `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo`.
+Indicates whether or not this component may be instantiated. Note that this value can be overridden by the one in its parent ApplicationInfo.
 
 <br />
 
@@ -300,7 +300,7 @@ The name of the split in which this component is declared. Null if the component
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
+From class PackageItemInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
 
 A drawable resource identifier (in the package's resources) of this component's banner. From the "banner" attribute or, if not set, 0.
 
@@ -316,7 +316,7 @@ A drawable resource identifier (in the package's resources) of this component's 
 
 Whether the package is currently in an archived state.
 
-Packages can be archived through `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestArchive(kotlin.String,%20android.content.IntentSender)` and do not have any APKs stored on the device, but do keep the data directory.
+Packages can be archived through requestArchive and do not have any APKs stored on the device, but do keep the data directory.
 
 <br />
 
@@ -346,7 +346,7 @@ Public name of this item. From the "android:name" attribute.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#nonLocalizedLabel:kotlin.CharSequence`
 
-The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)`
+The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want getApplicationLabel
 
 <br />
 
@@ -588,7 +588,7 @@ static val CONFIG_RESOURCES_UNUSED: Int
 
 This is probably not the constant you want, the resources compiler supports a less dangerous version of it, 'allKnown', that only suppresses all currently existing configuration change restarts depending on your target SDK rather than whatever the latest SDK supports, allowing the application to work with resources on future Platform versions.
 
-Bit in `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#configChanges:kotlin.Int` that indicates that the activity doesn't use Android Resources at all and doesn't need to be restarted on any configuration changes. This bit disables all restarts for configuration dimensions available in the current target SDK as well as dimensions introduced in future SDKs. Use it only if the activity doesn't need anything from its resources, and doesn't depend on any libraries that may provide resources and need to respond to configuration changes. When set, `https://developer.android.com/reference/kotlin/android/app/Activity.html#onConfigurationChanged(android.content.res.Configuration)` will be called instead of a restart, and it's up to the implementation to ensure that no stale resource values remain loaded anywhere in the code.
+Bit in `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#configChanges:kotlin.Int` that indicates that the activity doesn't use Android Resources at all and doesn't need to be restarted on any configuration changes. This bit disables all restarts for configuration dimensions available in the current target SDK as well as dimensions introduced in future SDKs. Use it only if the activity doesn't need anything from its resources, and doesn't depend on any libraries that may provide resources and need to respond to configuration changes. When set, onConfigurationChanged will be called instead of a restart, and it's up to the implementation to ensure that no stale resource values remain loaded anywhere in the code.
 
 This overrides all other bits, and this is recommended to be used individually.
 
@@ -778,7 +778,7 @@ Bit in `https://developer.android.com/reference/kotlin/android/content/pm/Activi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#setVrModeEnabled(kotlin.Boolean,%20android.content.ComponentName)`
+- setVrModeEnabled
 
 ### FLAG_EXCLUDE_FROM_RECENTS
 
@@ -836,14 +836,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_IMMERSIVE: Int
 ```
 
-Bit in `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#flags:kotlin.Int` corresponding to an immersive activity that wishes not to be interrupted by notifications. Applications that hide the system notification bar with `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#FLAG_FULLSCREEN:kotlin.Int` may still be interrupted by high-priority notifications; for example, an incoming phone call may use `https://developer.android.com/reference/kotlin/android/app/Notification.html#fullScreenIntent:android.app.PendingIntent` to present a full-screen in-call activity to the user, pausing the current activity as a side-effect. An activity with `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#FLAG_IMMERSIVE:kotlin.Int` set, however, will not be interrupted; the notification may be shown in some other way (such as a small floating "toast" window). Note that this flag will always reflect the Activity's `android:immersive` manifest definition, even if the Activity's immersive state is changed at runtime via `https://developer.android.com/reference/kotlin/android/app/Activity.html#setImmersive(kotlin.Boolean)`.
+Bit in `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#flags:kotlin.Int` corresponding to an immersive activity that wishes not to be interrupted by notifications. Applications that hide the system notification bar with `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#FLAG_FULLSCREEN:kotlin.Int` may still be interrupted by high-priority notifications; for example, an incoming phone call may use `https://developer.android.com/reference/kotlin/android/app/Notification.html#fullScreenIntent:android.app.PendingIntent` to present a full-screen in-call activity to the user, pausing the current activity as a side-effect. An activity with `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#FLAG_IMMERSIVE:kotlin.Int` set, however, will not be interrupted; the notification may be shown in some other way (such as a small floating "toast" window). Note that this flag will always reflect the Activity's `android:immersive` manifest definition, even if the Activity's immersive state is changed at runtime via setImmersive.
 
  Value: 2048
 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/app/Notification.html#FLAG_HIGH_PRIORITY:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#setImmersive(kotlin.Boolean)`
+- setImmersive
 
 ### FLAG_MULTIPROCESS
 
@@ -1259,7 +1259,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

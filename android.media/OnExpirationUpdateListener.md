@@ -17,7 +17,7 @@ Interface definition for a callback to be invoked when a drm session expiration 
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDrm.OnExpirationUpdateListener#onExpirationUpdate(android.media.MediaDrm,%20kotlin.ByteArray,%20kotlin.Long)(md: https://developer.android.com/reference/kotlin/android/media/MediaDrm, sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, expirationTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Called when a session expiration update occurs, to inform the app about the change in expiration time |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onExpirationUpdate Called when a session expiration update occurs, to inform the app about the change in expiration time |
 
 ## Public methods
 

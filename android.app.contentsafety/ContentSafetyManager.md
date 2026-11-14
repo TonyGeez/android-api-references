@@ -21,9 +21,9 @@ The ContentSafetyManager provides access to content safety features.
 
 | Public methods ||
 |---|---|
-| [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager#createContentRestrictedIntent(android.content.LocusId)(locusId: https://developer.android.com/reference/kotlin/android/content/LocusId.html#)` Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` to display a dialog about the restricted content. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager#isContentSafetyEnabled()()` Returns whether content safety is currently enabled for the user. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentSafetyManager#requestContentClassification(android.app.contentsafety.ClassifiableContent,%20java.util.concurrent.Executor,%20android.app.contentsafety.ContentClassificationCallback)(content: https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationCallback)` Requests classification of the specified content. |
+| [Intent](../android.content/Intent.md)? | createContentRestrictedIntent Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that can be used with startActivity to display a dialog about the restricted content. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isContentSafetyEnabled Returns whether content safety is currently enabled for the user. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestContentClassification Requests classification of the specified content. |
 | --- | --- |
 
 ## Constants
@@ -64,7 +64,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun createContentRestrictedIntent(locusId: LocusId): Intent?
 ```
 
-Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` to display a dialog about the restricted content.
+Creates an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` that can be used with startActivity to display a dialog about the restricted content.
 
 | Parameters ||
 |---|---|
@@ -109,6 +109,6 @@ If the content is classified, the result provided to the callback will have a cl
 | Parameters ||
 |---|---|
 | `content` | [ClassifiableContent](ClassifiableContent.md): the content to be classified. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [ContentClassificationCallback](ContentClassificationCallback.md): the callback to receive the classification result. This value cannot be `null`. |
 | --- | --- |

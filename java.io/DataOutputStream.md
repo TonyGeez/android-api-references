@@ -19,35 +19,35 @@ A data output stream lets an application write primitive Java data types to an o
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#DataOutputStream(java.io.OutputStream)(out: https://developer.android.com/reference/kotlin/java/io/OutputStream!)` Creates a new data output stream to write data to the specified underlying output stream. |
+| DataOutputStream Creates a new data output stream to write data to the specified underlying output stream. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#flush()()` Flushes this data output stream. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#size()()` Returns the current value of the counter `written`, the number of bytes written to this data output stream so far. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes `len` bytes from the specified byte array starting at offset `off` to the underlying output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flushes this data output stream. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Returns the current value of the counter `written`, the number of bytes written to this data output stream so far. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes `len` bytes from the specified byte array starting at offset `off` to the underlying output stream. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#write(kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes the specified byte (the low eight bits of the argument `b`) to the underlying output stream. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeBoolean(kotlin.Boolean)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Writes a `boolean` to the underlying output stream as a 1-byte value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeByte(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes out a `byte` to the underlying output stream as a 1-byte value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes the specified byte (the low eight bits of the argument `b`) to the underlying output stream. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBoolean Writes a `boolean` to the underlying output stream as a 1-byte value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeByte Writes out a `byte` to the underlying output stream as a 1-byte value. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeBytes(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes out the string to the underlying output stream as a sequence of bytes. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeChar(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `char` to the underlying output stream as a 2-byte value, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeChars(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the underlying output stream as a sequence of characters. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBytes Writes out the string to the underlying output stream as a sequence of bytes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeChar Writes a `char` to the underlying output stream as a 2-byte value, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeChars Writes a string to the underlying output stream as a sequence of characters. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeDouble(kotlin.Double)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Converts the double argument to a `long` using the `doubleToLongBits` method in class `Double`, and then writes that `long` value to the underlying output stream as an 8-byte quantity, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeFloat(kotlin.Float)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts the float argument to an `int` using the `floatToIntBits` method in class `Float`, and then writes that `int` value to the underlying output stream as a 4-byte quantity, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeInt(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes an `int` to the underlying output stream as four bytes, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeDouble Converts the double argument to a `long` using the `doubleToLongBits` method in class `Double`, and then writes that `long` value to the underlying output stream as an 8-byte quantity, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeFloat Converts the float argument to an `int` using the `floatToIntBits` method in class `Float`, and then writes that `int` value to the underlying output stream as a 4-byte quantity, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeInt Writes an `int` to the underlying output stream as four bytes, high byte first. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeLong(kotlin.Long)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Writes a `long` to the underlying output stream as eight bytes, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeShort(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `short` to the underlying output stream as two bytes, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeUTF(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the underlying output stream using [modified UTF-8](DataInput.md) encoding in a machine-independent manner. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeLong Writes a `long` to the underlying output stream as eight bytes, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeShort Writes a `short` to the underlying output stream as two bytes, high byte first. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeUTF Writes a string to the underlying output stream using [modified UTF-8](DataInput.md) encoding in a machine-independent manner. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#close()()` Closes this output stream and releases any system resources associated with the stream. When not already closed, the `close` method of `FilterOutputStream` calls its `flush` method, and then calls the `close` method of its underlying output stream. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#write(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Writes `b.length` bytes to this output stream. The `write` method of `FilterOutputStream` calls its `write` method of three arguments with the arguments `b`, `0`, and `b.length`. Note that this method does not call the one-argument `write` method of its underlying output stream with the single argument `b`. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/java/io/OutputStream` |---|---| | `https://developer.android.com/reference/kotlin/java/io/OutputStream!` | `https://developer.android.com/reference/kotlin/java/io/OutputStream#nullOutputStream()()` Returns a new `OutputStream` which discards all bytes. The returned stream is initially open. The stream is closed by calling the `close()` method. Subsequent calls to `close()` have no effect. While the stream is open, the `write(int)`, `write(byte[])`, and `write(byte[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`. The `flush()` method does nothing. <br /> | ||
+| From class FilterOutputStream |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | close Closes this output stream and releases any system resources associated with the stream. When not already closed, the `close` method of `FilterOutputStream` calls its `flush` method, and then calls the `close` method of its underlying output stream. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | write Writes `b.length` bytes to this output stream. The `write` method of `FilterOutputStream` calls its `write` method of three arguments with the arguments `b`, `0`, and `b.length`. Note that this method does not call the one-argument `write` method of its underlying output stream with the single argument `b`. <br /> | ||
+| From class OutputStream |---|---| | `https://developer.android.com/reference/kotlin/java/io/OutputStream!` | nullOutputStream Returns a new `OutputStream` which discards all bytes. The returned stream is initially open. The stream is closed by calling the `close()` method. Subsequent calls to `close()` have no effect. While the stream is open, the `write(int)`, `write(byte[])`, and `write(byte[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`. The `flush()` method does nothing. <br /> | ||
 
 | Properties ||
 |---|---|
@@ -55,7 +55,7 @@ A data output stream lets an application write primitive Java data types to an o
 
 | Inherited properties ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream` |---|---| | `https://developer.android.com/reference/kotlin/java/io/OutputStream!` | `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#out:java.io.OutputStream` The underlying output stream to be filtered. <br /> | ||
+| From class FilterOutputStream |---|---| | `https://developer.android.com/reference/kotlin/java/io/OutputStream!` | `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#out:java.io.OutputStream` The underlying output stream to be filtered. <br /> | ||
 
 ## Public constructors
 
@@ -98,7 +98,7 @@ The `flush` method of `DataOutputStream` calls the `flush` method of its underly
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#out:java.io.OutputStream`
-- `https://developer.android.com/reference/kotlin/java/io/OutputStream#flush()`
+- flush
 
 ### size
 
@@ -279,7 +279,7 @@ Writes a string to the underlying output stream as a sequence of characters. Eac
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeChar(kotlin.Int)`
+- writeChar
 - `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#out:java.io.OutputStream`
 
 ### writeDouble
@@ -303,7 +303,7 @@ Converts the double argument to a `long` using the `doubleToLongBits` method in 
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#out:java.io.OutputStream`
-- `https://developer.android.com/reference/kotlin/java/lang/Double.html#doubleToLongBits(kotlin.Double)`
+- doubleToLongBits
 
 ### writeFloat
 
@@ -326,7 +326,7 @@ Converts the float argument to an `int` using the `floatToIntBits` method in cla
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/io/FilterOutputStream#out:java.io.OutputStream`
-- `https://developer.android.com/reference/kotlin/java/lang/Float.html#floatToIntBits(kotlin.Float)`
+- floatToIntBits
 
 ### writeInt
 

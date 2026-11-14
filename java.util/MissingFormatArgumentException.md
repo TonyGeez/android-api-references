@@ -25,11 +25,11 @@ Unless otherwise specified, passing a `null` argument to any method or construct
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/MissingFormatArgumentException#MissingFormatArgumentException(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs an instance of this class with the unmatched format specifier. |
+| MissingFormatArgumentException Constructs an instance of this class with the unmatched format specifier. |
 
 | Public methods ||
 |---|---|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/util/MissingFormatArgumentException#getFormatSpecifier()()` Returns the unmatched format specifier. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getFormatSpecifier Returns the unmatched format specifier. |
 
 | Properties ||
 |---|---|

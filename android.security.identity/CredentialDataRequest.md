@@ -22,19 +22,19 @@ An object representing a request for credential data.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest.Builder` A builder for `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#`. |
+| | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest.Builder` A builder for CredentialDataRequest. |
 
 | Public methods ||
 |---|---|
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#getDeviceSignedEntriesToRequest()()` Gets the device-signed entries to request. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#getIssuerSignedEntriesToRequest()()` Gets the issuer-signed entries to request. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#getReaderSignature()()` Gets the reader signature. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | getDeviceSignedEntriesToRequest Gets the device-signed entries to request. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | getIssuerSignedEntriesToRequest Gets the issuer-signed entries to request. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getReaderSignature Gets the reader signature. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#getRequestMessage()()` Gets the request message CBOR. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#isAllowUsingExhaustedKeys()()` Gets whether to allow using an authentication key which use count has been exceeded. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#isAllowUsingExpiredKeys()()` Gets whether to allow using an authentication key which is expired. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getRequestMessage Gets the request message CBOR. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAllowUsingExhaustedKeys Gets whether to allow using an authentication key which use count has been exceeded. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAllowUsingExpiredKeys Gets whether to allow using an authentication key which is expired. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest#isIncrementUseCount()()` Gets whether to increment the use-count for the authentication key used. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isIncrementUseCount Gets whether to increment the use-count for the authentication key used. |
 
 ## Public methods
 
@@ -82,7 +82,7 @@ open fun getReaderSignature(): ByteArray?
 
 Gets the reader signature.
 
-This data structure is described in the documentation for the `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getCredentialData(kotlin.String,%20android.security.identity.CredentialDataRequest)` method.
+This data structure is described in the documentation for the getCredentialData method.
 
 | Return ||
 |---|---|
@@ -100,7 +100,7 @@ open fun getRequestMessage(): ByteArray?
 
 Gets the request message CBOR.
 
-This data structure is described in the documentation for the `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getCredentialData(kotlin.String,%20android.security.identity.CredentialDataRequest)` method.
+This data structure is described in the documentation for the getCredentialData method.
 
 | Return ||
 |---|---|

@@ -18,16 +18,16 @@ A HID report contains structured data defined by the device's report descriptor.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#Report(kotlin.Int,%20java.nio.ByteBuffer)(reportId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Creates a new `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#` instance with a specified report ID and binary data payload. |
-| `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#Report(java.nio.ByteBuffer)(data: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Constructor for a report that does not use report ID. |
+| Report Creates a new Report instance with a specified report ID and binary data payload. |
+| Report Constructor for a report that does not use report ID. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ByteBuffer](../java.nio/ByteBuffer.md) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#getData()()` Returns the data provided by the device for the report ID. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#getReportId()()` Accessor for the report ID. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [ByteBuffer](../java.nio/ByteBuffer.md) | getData Returns the data provided by the device for the report ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getReportId Accessor for the report ID. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#hashCode()()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ Report(
     data: ByteBuffer)
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#` instance with a specified report ID and binary data payload.
+Creates a new Report instance with a specified report ID and binary data payload.
 
 To prevent external modification, the provided `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` is copied into an internal payload buffer.
 
@@ -104,7 +104,7 @@ fun getData(): ByteBuffer
 
 Returns the data provided by the device for the report ID.
 
-The data format is specified in the device descriptor, provided by `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice#getReportDescriptor()`.
+The data format is specified in the device descriptor, provided by getReportDescriptor.
 
 | Return ||
 |---|---|
@@ -137,8 +137,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

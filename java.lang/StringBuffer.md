@@ -10,7 +10,7 @@ class StringBuffer : Appendable, CharSequence, Comparable<StringBuffer!>, Seri
 | --- | --- |
 | ↳ | [java.lang.StringBuffer](StringBuffer.md) |
 
-A thread-safe, mutable sequence of characters. A string buffer is like a `https://developer.android.com/reference/kotlin/java/lang/String`, but can be modified. At any point in time it contains some particular sequence of characters, but the length and content of the sequence can be changed through certain method calls.
+A thread-safe, mutable sequence of characters. A string buffer is like a String, but can be modified. At any point in time it contains some particular sequence of characters, but the length and content of the sequence can be changed through certain method calls.
 
 String buffers are safe for use by multiple threads. The methods are synchronized where necessary so that all the operations on any particular instance behave as if they occur in some serial order that is consistent with the order of the method calls made by each of the individual threads involved.
 
@@ -24,92 +24,92 @@ Whenever an operation occurs involving a source sequence (such as appending or i
 
 Every string buffer has a capacity. As long as the length of the character sequence contained in the string buffer does not exceed the capacity, it is not necessary to allocate a new internal buffer array. If the internal buffer overflows, it is automatically made larger.
 
-Unless otherwise noted, passing a `null` argument to a constructor or method in this class will cause a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException` to be thrown.
+Unless otherwise noted, passing a `null` argument to a constructor or method in this class will cause a NullPointerException to be thrown.
 
-As of release JDK 5, this class has been supplemented with an equivalent class designed for use by a single thread, `https://developer.android.com/reference/kotlin/java/lang/StringBuilder`. The `StringBuilder` class should generally be used in preference to this one, as it supports all of the same operations but it is faster, as it performs no synchronization.
+As of release JDK 5, this class has been supplemented with an equivalent class designed for use by a single thread, StringBuilder. The `StringBuilder` class should generally be used in preference to this one, as it supports all of the same operations but it is faster, as it performs no synchronization.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#StringBuffer()()` Constructs a string buffer with no characters in it and an initial capacity of 16 characters. |
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#StringBuffer(kotlin.Int)(capacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a string buffer with no characters in it and the specified initial capacity. |
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#StringBuffer(kotlin.CharSequence)(seq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Constructs a string buffer that contains the same characters as the specified `CharSequence`. |
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#StringBuffer(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a string buffer initialized to the contents of the specified string. |
+| StringBuffer Constructs a string buffer with no characters in it and an initial capacity of 16 characters. |
+| StringBuffer Constructs a string buffer with no characters in it and the specified initial capacity. |
+| StringBuffer Constructs a string buffer that contains the same characters as the specified `CharSequence`. |
+| StringBuffer Constructs a string buffer initialized to the contents of the specified string. |
 
 | Public methods ||
 |---|---|
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends the specified character to this `Appendable`. |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.CharArray)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | append Appends the specified character to this `Appendable`. |
+| [StringBuffer](StringBuffer.md) | append <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Int)(i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.CharSequence)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Appends the specified `CharSequence` to this sequence. |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | append Appends the specified `CharSequence` to this sequence. |
+| [StringBuffer](StringBuffer.md) | append <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(java.lang.StringBuffer)(sb: https://developer.android.com/reference/kotlin/java/lang/StringBuffer#?)` Appends the specified `StringBuffer` to this sequence. |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | append Appends the specified `StringBuffer` to this sequence. |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#append(kotlin.Long)(lng: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#appendCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#capacity()()` <br /> |
+| [StringBuffer](StringBuffer.md) | append <br /> |
+| [StringBuffer](StringBuffer.md) | appendCodePoint <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | capacity <br /> |
 | --- | --- |
-| [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#codePointAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#codePointBefore(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [IntStream](../java.util.stream/IntStream.md) | chars Returns a stream of `int` zero-extending the `char` values from this sequence. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointAt <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointBefore <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#codePointCount(kotlin.Int,%20kotlin.Int)(beginIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#codePoints()()` Returns a stream of code point values from this sequence. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#compareTo(java.lang.StringBuffer)(other: https://developer.android.com/reference/kotlin/java/lang/StringBuffer#)` Compares two `StringBuffer` instances lexicographically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | codePointCount <br /> |
+| [IntStream](../java.util.stream/IntStream.md) | codePoints Returns a stream of code point values from this sequence. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares two `StringBuffer` instances lexicographically. |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#delete(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#deleteCharAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#ensureCapacity(kotlin.Int)(minimumCapacity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [StringBuffer](StringBuffer.md) | delete <br /> |
+| [StringBuffer](StringBuffer.md) | deleteCharAt <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | ensureCapacity <br /> |
 | --- | --- |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#indexOf(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | get <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getChars <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#indexOf(kotlin.String,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Boolean)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Char)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | indexOf <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.CharArray)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Double)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Float)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, i: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.CharSequence)(dstOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(dstOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Any)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.String)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#insert(kotlin.Int,%20kotlin.Long)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#lastIndexOf(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#lastIndexOf(kotlin.String,%20kotlin.Int)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [StringBuffer](StringBuffer.md) | insert <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | lastIndexOf <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#offsetByCodePoints(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, codePointOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#repeat(kotlin.Int,%20kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#repeat(kotlin.CharSequence,%20kotlin.Int)(cs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | offsetByCodePoints <br /> |
+| [StringBuffer](StringBuffer.md) | repeat <br /> |
+| [StringBuffer](StringBuffer.md) | repeat <br /> |
 | --- | --- |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#replace(kotlin.Int,%20kotlin.Int,%20kotlin.String)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` <br /> |
-| [StringBuffer](StringBuffer.md) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#reverse()()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#setCharAt(kotlin.Int,%20kotlin.Char)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` <br /> |
+| [StringBuffer](StringBuffer.md) | replace <br /> |
+| [StringBuffer](StringBuffer.md) | reverse <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCharAt <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#setLength(kotlin.Int)(newLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#subSequence(kotlin.Int,%20kotlin.Int)(startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#substring(kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLength <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | subSequence <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | substring <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#substring(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#trimToSize()()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | substring <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | trimToSize <br /> |
 | --- | --- |
 
 | Properties ||
@@ -202,7 +202,7 @@ Appends the specified character to this `Appendable`.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#` | A reference to this `Appendable` |
+| StringBuffer | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -281,7 +281,7 @@ If `s` is `null`, then the four characters `"null"` are appended.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#` | a reference to this object. |
+| StringBuffer | a reference to this object. |
 
 | Exceptions ||
 |---|---|
@@ -308,7 +308,7 @@ fun append(
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#` | A reference to this `Appendable` |
+| StringBuffer | A reference to this `Appendable` |
 
 | Exceptions ||
 |---|---|
@@ -353,7 +353,7 @@ This method synchronizes on `this`, the destination object, but does not synchro
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/StringBuffer#` | a reference to this object. |
+| StringBuffer | a reference to this object. |
 
 ### append
 

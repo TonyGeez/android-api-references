@@ -68,39 +68,39 @@ The layout file for a keyboard contains XML that looks like the following snippe
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#Keyboard(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, xmlLayoutResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a keyboard from the given xml key layout file. |
-| `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#Keyboard(android.content.Context,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, xmlLayoutResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a keyboard from the given xml key layout file. |
-| `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#Keyboard(android.content.Context,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, xmlLayoutResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a keyboard from the given xml key layout file. |
-| `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#Keyboard(android.content.Context,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, layoutTemplateResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, characters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, horizontalPadding: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a blank keyboard from the given resource file and populates it with the specified characters in left-to-right, top-to-bottom fashion, using the specified number of columns. |
+| Keyboard Creates a keyboard from the given xml key layout file. |
+| Keyboard Creates a keyboard from the given xml key layout file. |
+| Keyboard Creates a keyboard from the given xml key layout file. |
+| Keyboard Creates a blank keyboard from the given resource file and populates it with the specified characters in left-to-right, top-to-bottom fashion, using the specified number of columns. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getHeight()()` Returns the total height of the keyboard |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)!\>! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getKeys()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getMinWidth()()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHeight Returns the total height of the keyboard |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)!\>! | getKeys <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinWidth <br /> |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)!\>! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getModifierKeys()()` <br /> |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getNearestKeys(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the indices of the keys that are closest to the given point. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getShiftKeyIndex()()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)!\>! | getModifierKeys <br /> |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | getNearestKeys Returns the indices of the keys that are closest to the given point. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getShiftKeyIndex <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#isShifted()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#setShifted(kotlin.Boolean)(shiftState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isShifted <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setShifted <br /> |
 
 | Protected methods ||
 |---|---|
-| open [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#createKeyFromXml(android.content.res.Resources,%20android.inputmethodservice.Keyboard.Row,%20kotlin.Int,%20kotlin.Int,%20android.content.res.XmlResourceParser)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, parent: https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.Row!, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!)` <br /> |
-| open [Keyboard.Row](../android/inputmethodservice/Keyboard.Row.md)! | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#createRowFromXml(android.content.res.Resources,%20android.content.res.XmlResourceParser)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#!, parser: https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getHorizontalGap()()` <br /> |
+| open [Keyboard.Key](../android/inputmethodservice/Keyboard.Key.md)! | createKeyFromXml <br /> |
+| open [Keyboard.Row](../android/inputmethodservice/Keyboard.Row.md)! | createRowFromXml <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHorizontalGap <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getKeyHeight()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getKeyWidth()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#getVerticalGap()()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getKeyHeight <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getKeyWidth <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVerticalGap <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#setHorizontalGap(kotlin.Int)(gap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#setKeyHeight(kotlin.Int)(height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#setKeyWidth(kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHorizontalGap <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setKeyHeight <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setKeyWidth <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard#setVerticalGap(kotlin.Int)(gap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVerticalGap <br /> |
 
 ## XML attributes
 

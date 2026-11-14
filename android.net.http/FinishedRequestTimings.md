@@ -11,7 +11,7 @@ class FinishedRequestTimings
 | --- | --- |
 | ↳ | [android.net.http.FinishedRequestTimings](FinishedRequestTimings.md) |
 
-Metrics collected for a single request. Most of these metrics are timestamps for events during the lifetime of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream` or `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest`, which can be used to build a detailed timeline for investigating performance.
+Metrics collected for a single request. Most of these metrics are timestamps for events during the lifetime of the BidirectionalStream or UrlRequest, which can be used to build a detailed timeline for investigating performance.
 
 Timestamps are derived from a monotonic clock.
 
@@ -23,23 +23,23 @@ A metric can be null if it's unavailable (e.g. SSL metrics are null if the host 
 
 | Public methods ||
 |---|---|
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getConnectingEnd()()` Returns the timestamp for when the connection establishment ended. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getConnectingStart()()` Returns the timestamp for when the connection attempt began. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getDnsEnd()()` Returns the timestamp when the DNS lookup finished. |
+| [Instant](../java.time/Instant.md)? | getConnectingEnd Returns the timestamp for when the connection establishment ended. |
+| [Instant](../java.time/Instant.md)? | getConnectingStart Returns the timestamp for when the connection attempt began. |
+| [Instant](../java.time/Instant.md)? | getDnsEnd Returns the timestamp when the DNS lookup finished. |
 | --- | --- |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getDnsStart()()` Returns the timestamp when DNS lookup started. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getReceivedByteCount()()` Returns total bytes received. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestEnd()()` Returns the timestamp when the request finished. |
+| [Instant](../java.time/Instant.md)? | getDnsStart Returns the timestamp when DNS lookup started. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getReceivedByteCount Returns total bytes received. |
+| [Instant](../java.time/Instant.md)? | getRequestEnd Returns the timestamp when the request finished. |
 | --- | --- |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestStart()()` Returns the timestamp when the request started. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingEnd()()` Returns the timestamp when sending the request finished. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingStart()()` Returns the timestamp when sending the request started. |
+| [Instant](../java.time/Instant.md)? | getRequestStart Returns the timestamp when the request started. |
+| [Instant](../java.time/Instant.md)? | getSendingEnd Returns the timestamp when sending the request finished. |
+| [Instant](../java.time/Instant.md)? | getSendingStart Returns the timestamp when sending the request started. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSentByteCount()()` Returns total bytes sent. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getTlsHandshakeEnd()()` Returns the timestamp when TLS handshake finished. |
-| [Instant](../java.time/Instant.md)? | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getTlsHandshakeStart()()` Returns the timestamp when TLS handshake started. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getSentByteCount Returns total bytes sent. |
+| [Instant](../java.time/Instant.md)? | getTlsHandshakeEnd Returns the timestamp when TLS handshake finished. |
+| [Instant](../java.time/Instant.md)? | getTlsHandshakeStart Returns the timestamp when TLS handshake started. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#wasSocketReused()()` Returns whether the socket was reused from a previous request. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | wasSocketReused Returns whether the socket was reused from a previous request. |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ See the documentation on RequestFinishedTimings for more information.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/time/Instant.html#?` | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` representing when the connection establishment finished. If using HTTPS, TLS handshake is completed. In some cases, such as 0-RTT, the stack may start sending data before connection establishment is considered complete; in such cases, this timestamp may occur after `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getSendingStart()`. |
+| `https://developer.android.com/reference/kotlin/java/time/Instant.html#?` | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` representing when the connection establishment finished. If using HTTPS, TLS handshake is completed. In some cases, such as 0-RTT, the stack may start sending data before connection establishment is considered complete; in such cases, this timestamp may occur after getSendingStart. |
 
 ### getConnectingStart
 
@@ -139,7 +139,7 @@ fun getRequestEnd(): Instant?
 
 Returns the timestamp when the request finished.
 
-This value is `null` if the request failed to start, as documented in `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings#getRequestStart()`. If the request started successfully, this reflects the time it reached a terminal state, including success, failure, or cancellation.
+This value is `null` if the request failed to start, as documented in getRequestStart. If the request started successfully, this reflects the time it reached a terminal state, including success, failure, or cancellation.
 
 See RequestFinishedTimings for more information.
 
@@ -158,7 +158,7 @@ fun getRequestStart(): Instant?
 
 Returns the timestamp when the request started.
 
-This value is `null` if the request fails initial validation checks during `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#start()` or org.chromium.net.BidirectionalStream#start() (for example, if an invalid header is provided).
+This value is `null` if the request fails initial validation checks during start or org.chromium.net.BidirectionalStream#start() (for example, if an invalid header is provided).
 
 See RequestFinishedTimings for more information.
 

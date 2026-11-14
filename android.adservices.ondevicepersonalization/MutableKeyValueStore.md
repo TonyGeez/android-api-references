@@ -20,12 +20,12 @@ An interface to a read-write key-value store. Used as a Data Access Object for t
 
 | Public methods ||
 |---|---|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/MutableKeyValueStore#put(kotlin.String,%20kotlin.ByteArray)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Associates the specified value with the specified key. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/MutableKeyValueStore#remove(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Removes the mapping for the specified key. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | put Associates the specified value with the specified key. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | remove Removes the mapping for the specified key. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?` | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore#get(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Looks up a key in a read-only store. This method may take several seconds to complete, so it should only be called from a worker thread. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>` | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore#keySet()()` Returns a Set view of the keys contained in the REMOTE_DATA table. This method may take several seconds to complete, so it should only be called from a worker thread. <br /> | ||
+| From class KeyValueStore |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?` | get Looks up a key in a read-only store. This method may take several seconds to complete, so it should only be called from a worker thread. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>` | keySet Returns a Set view of the keys contained in the REMOTE_DATA table. This method may take several seconds to complete, so it should only be called from a worker thread. <br /> | ||
 
 ## Public methods
 

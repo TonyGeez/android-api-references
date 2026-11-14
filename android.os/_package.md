@@ -16,7 +16,7 @@ Kotlin | [Java](_package.md)
 | [OnFileDescriptorEventListener](../android/os/MessageQueue.OnFileDescriptorEventListener.md) | A listener which is invoked when file descriptor related events occur. |
 | --- | --- |
 | [OutcomeReceiver](OutcomeReceiver.md) | Callback interface intended for use when an asynchronous operation may result in a failure. |
-| [Parcelable](Parcelable.md) | Interface for classes whose instances can be written to and restored from a `https://developer.android.com/reference/kotlin/android/os/Parcel`. |
+| [Parcelable](Parcelable.md) | Interface for classes whose instances can be written to and restored from a Parcel. |
 | [OnCloseListener](../android/os/ParcelFileDescriptor.OnCloseListener.md) | Callback indicating that a ParcelFileDescriptor has been closed. |
 | --- | --- |
 | [OnThermalHeadroomChangedListener](../android/os/PowerManager.OnThermalHeadroomChangedListener.md) | Listener passed to android. |
@@ -24,8 +24,8 @@ Kotlin | [Java](_package.md)
 | [WakeLockStateListener](../android/os/PowerManager.WakeLockStateListener.md) | A listener interface to get notified when the wakelock is enabled/disabled. |
 | --- | --- |
 | [ProgressListener](../android/os/RecoverySystem.ProgressListener.md) | Interface definition for a callback to be invoked regularly as verification proceeds. |
-| [OnThreadViolationListener](../android/os/StrictMode.OnThreadViolationListener.md) | When #`https://developer.android.com/reference/kotlin/android/os/StrictMode.ThreadPolicy.Builder#penaltyListener(java.util.concurrent.Executor,%20android.os.StrictMode.OnThreadViolationListener)` is enabled, the listener is called on the provided executor when a Thread violation occurs. |
-| [OnVmViolationListener](../android/os/StrictMode.OnVmViolationListener.md) | When #`https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy.Builder#penaltyListener(java.util.concurrent.Executor,%20android.os.StrictMode.OnVmViolationListener)` is enabled, the listener is called on the provided executor when a VM violation occurs. |
+| [OnThreadViolationListener](../android/os/StrictMode.OnThreadViolationListener.md) | When #penaltyListener is enabled, the listener is called on the provided executor when a Thread violation occurs. |
+| [OnVmViolationListener](../android/os/StrictMode.OnVmViolationListener.md) | When #penaltyListener is enabled, the listener is called on the provided executor when a VM violation occurs. |
 | --- | --- |
 
 ## Classes
@@ -34,18 +34,18 @@ Kotlin | [Java](_package.md)
 | --- | --- |
 | [BaseBundle](BaseBundle.md) | A mapping from String keys to values of various types. |
 | [BatteryManager](BatteryManager.md) | The BatteryManager class contains strings and constants used for values in the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_CHANGED:kotlin.String` Intent, and provides a method for querying battery and charging properties. |
-| [Binder](Binder.md) | Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by `https://developer.android.com/reference/kotlin/android/os/IBinder`. |
+| [Binder](Binder.md) | Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by IBinder. |
 | --- | --- |
 | [BugreportManager](BugreportManager.md) | Class that provides a privileged API to capture and consume bugreports. |
 | [Build](Build.md) | Information about the current build, extracted from system properties. |
-| [Bundle](Bundle.md) | A mapping from String keys to various `https://developer.android.com/reference/kotlin/android/os/Parcelable` values. |
+| [Bundle](Bundle.md) | A mapping from String keys to various Parcelable values. |
 | --- | --- |
 | [CancellationSignal](CancellationSignal.md) | Provides the ability to cancel an operation in progress. |
-| [CombinedVibration](CombinedVibration.md) | A CombinedVibration describes a combination of haptic effects to be performed by one or more `https://developer.android.com/reference/kotlin/android/os/Vibrator`. |
+| [CombinedVibration](CombinedVibration.md) | A CombinedVibration describes a combination of haptic effects to be performed by one or more Vibrator. |
 | [ConditionVariable](ConditionVariable.md) | Class that implements the condition variable locking paradigm. |
 | --- | --- |
 | [CountDownTimer](CountDownTimer.md) | Schedule a countdown until a time in the future, with regular notifications on intervals along the way. |
-| [CpuHeadroomParams](CpuHeadroomParams.md) | Headroom request params used by `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)`. |
+| [CpuHeadroomParams](CpuHeadroomParams.md) | Headroom request params used by getCpuHeadroom. |
 | [CpuUsageInfo](CpuUsageInfo.md) | CPU usage information per core. |
 | --- | --- |
 | [Debug](Debug.md) | Provides various debugging methods for Android applications, including tracing and allocation counts. |
@@ -54,22 +54,22 @@ Kotlin | [Java](_package.md)
 | --- | --- |
 | [FileObserver](FileObserver.md) | Monitors files (using [inotify](http://en.wikipedia.org/wiki/Inotify)) to fire an event after files are accessed or changed by any process on the device (including this one). |
 | [FileUtils](FileUtils.md) | Utility methods useful for working with files. |
-| [GpuHeadroomParams](GpuHeadroomParams.md) | Headroom request params used by `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)`. |
+| [GpuHeadroomParams](GpuHeadroomParams.md) | Headroom request params used by getGpuHeadroom. |
 | --- | --- |
-| [Handler](Handler.md) | A Handler allows you to send and process `https://developer.android.com/reference/kotlin/android/os/Message` and Runnable objects associated with a thread's `https://developer.android.com/reference/kotlin/android/os/MessageQueue`. |
-| [HandlerThread](HandlerThread.md) | A `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` that has a `https://developer.android.com/reference/kotlin/android/os/Looper`. |
+| [Handler](Handler.md) | A Handler allows you to send and process Message and Runnable objects associated with a thread's MessageQueue. |
+| [HandlerThread](HandlerThread.md) | A `https://developer.android.com/reference/kotlin/java/lang/Thread.html#` that has a Looper. |
 | [HardwarePropertiesManager](HardwarePropertiesManager.md) | The HardwarePropertiesManager class provides a mechanism of accessing hardware state of a device: CPU, GPU and battery temperatures, CPU usage per core, fan speed, etc. |
 | --- | --- |
 | [LocaleList](LocaleList.md) | LocaleList is an immutable list of Locales, typically used to keep an ordered list of user preferences for locales. |
 | [Looper](Looper.md) | Class used to run a message loop for a thread. |
-| [MemoryFile](MemoryFile.md) | MemoryFile is a wrapper for `https://developer.android.com/reference/kotlin/android/os/SharedMemory` which can optionally be set to purgeable. |
+| [MemoryFile](MemoryFile.md) | MemoryFile is a wrapper for SharedMemory which can optionally be set to purgeable. |
 | --- | --- |
-| [Message](Message.md) | Defines a message containing a description and arbitrary data object that can be sent to a `https://developer.android.com/reference/kotlin/android/os/Handler`. |
-| [MessageQueue](MessageQueue.md) | Low-level class holding the list of messages to be dispatched by a `https://developer.android.com/reference/kotlin/android/os/Looper`. |
+| [Message](Message.md) | Defines a message containing a description and arbitrary data object that can be sent to a Handler. |
+| [MessageQueue](MessageQueue.md) | Low-level class holding the list of messages to be dispatched by a Looper. |
 | [Messenger](Messenger.md) | Reference to a Handler, which others can use to send messages to it. |
 | --- | --- |
 | [Parcel](Parcel.md) | Container for a message (data and object references) that can be sent through an IBinder. |
-| [ParcelFileDescriptor](ParcelFileDescriptor.md) | The FileDescriptor returned by `https://developer.android.com/reference/kotlin/android/os/Parcel#readFileDescriptor()`, allowing you to close it when done with it. |
+| [ParcelFileDescriptor](ParcelFileDescriptor.md) | The FileDescriptor returned by readFileDescriptor, allowing you to close it when done with it. |
 | [ParcelUuid](ParcelUuid.md) | This class is a Parcelable wrapper around `https://developer.android.com/reference/kotlin/java/util/UUID.html#` which is an immutable representation of a 128-bit universally unique identifier. |
 | --- | --- |
 | [PatternMatcher](PatternMatcher.md) | A simple pattern matcher, which is safe to use on untrusted data: it does not provide full reg-exp support, only simple globbing that can not be used maliciously. |
@@ -98,24 +98,24 @@ Kotlin | [Java](_package.md)
 | --- | --- |
 | [SystemClock](SystemClock.md) | Core timekeeping facilities. |
 | [TestLooperManager](TestLooperManager.md) | Blocks a looper from executing any messages, and allows the holder of this object to control when and which messages get executed until it is released. |
-| [TokenWatcher](TokenWatcher.md) | A TokenWatcher watches a collection of `https://developer.android.com/reference/kotlin/android/os/IBinder`s. |
+| [TokenWatcher](TokenWatcher.md) | A TokenWatcher watches a collection of IBinders. |
 | --- | --- |
 | [Trace](Trace.md) | Writes trace events to the system trace buffer. |
 | [UserHandle](UserHandle.md) | Representation of a user on the device. |
 | [UserManager](UserManager.md) | Manages users and user details on a multi-user system. |
 | --- | --- |
 | [VibrationAttributes](VibrationAttributes.md) | Encapsulates a collection of attributes describing information about a vibration. |
-| [VibrationEffect](VibrationEffect.md) | A VibrationEffect describes a haptic effect to be performed by a `https://developer.android.com/reference/kotlin/android/os/Vibrator`. |
+| [VibrationEffect](VibrationEffect.md) | A VibrationEffect describes a haptic effect to be performed by a Vibrator. |
 | [Vibrator](Vibrator.md) | Class that operates the vibrator on the device. |
 | --- | --- |
 | [VibratorManager](VibratorManager.md) | Provides access to all vibrators from the device, as well as the ability to run them in a synchronized fashion. |
-| [WorkDuration](WorkDuration.md) | WorkDuration contains the measured time in nano seconds of the workload in each component, see `https://developer.android.com/reference/kotlin/android/os/PerformanceHintManager.Session#reportActualWorkDuration(android.os.WorkDuration)`. |
+| [WorkDuration](WorkDuration.md) | WorkDuration contains the measured time in nano seconds of the workload in each component, see reportActualWorkDuration. |
 | [WorkSource](WorkSource.md) | Describes the source of some work that may be done by someone else. |
 | --- | --- |
 
 ## Exceptions
 
-| [BadParcelableException](BadParcelableException.md) | Exception thrown when a `https://developer.android.com/reference/kotlin/android/os/Parcelable` is malformed or otherwise invalid. |
+| [BadParcelableException](BadParcelableException.md) | Exception thrown when a Parcelable is malformed or otherwise invalid. |
 | --- | --- |
 | [DeadObjectException](DeadObjectException.md) | The object you are calling has died, because its hosting process no longer exists, or there has been a low-level binder error. |
 | [DeadSystemException](DeadSystemException.md) | The core Android system has died and is going through a runtime restart. |

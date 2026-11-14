@@ -17,7 +17,7 @@ Immutable class with information about supported color space profiles.
 
 An instance of this class can be queried by retrieving the value of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#REQUEST_AVAILABLE_COLOR_SPACE_PROFILES:android.hardware.camera2.CameraCharacteristics.Key`.
 
-All camera devices supporting the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_COLOR_SPACE_PROFILES:kotlin.Int` capability must advertise the supported color space profiles in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpaces(kotlin.Int)`
+All camera devices supporting the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata.html#REQUEST_AVAILABLE_CAPABILITIES_COLOR_SPACE_PROFILES:kotlin.Int` capability must advertise the supported color space profiles in getSupportedColorSpaces
 
 ## Summary
 
@@ -27,15 +27,15 @@ All camera devices supporting the `https://developer.android.com/reference/kotli
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#ColorSpaceProfiles(kotlin.LongArray)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` Create a new immutable ColorSpaceProfiles instance. |
+| ColorSpaceProfiles Create a new immutable ColorSpaceProfiles instance. |
 
 | Public methods ||
 |---|---|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](../android/graphics/ColorSpace.Named.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpaces(kotlin.Int)(imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of color spaces that are compatible with an ImageFormat. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](../android/graphics/ColorSpace.Named.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpacesForDynamicRange(kotlin.Int,%20kotlin.Long)(imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dynamicRangeProfile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Return a list of color spaces that are compatible with an ImageFormat and a dynamic range profile. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedDynamicRangeProfiles(android.graphics.ColorSpace.Named,%20kotlin.Int)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#, imageFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a list of dynamic range profiles that are compatible with a color space and ImageFormat. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](../android/graphics/ColorSpace.Named.md)!\> | getSupportedColorSpaces Return a list of color spaces that are compatible with an ImageFormat. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ColorSpace.Named](../android/graphics/ColorSpace.Named.md)!\> | getSupportedColorSpacesForDynamicRange Return a list of color spaces that are compatible with an ImageFormat and a dynamic range profile. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | getSupportedDynamicRangeProfiles Return a list of dynamic range profiles that are compatible with a color space and ImageFormat. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedImageFormatsForColorSpace(android.graphics.ColorSpace.Named)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#)` Return a list of image formats that are compatible with a color space. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getSupportedImageFormatsForColorSpace Return a list of image formats that are compatible with a color space. |
 
 ## Constants
 
@@ -96,7 +96,7 @@ Return a list of color spaces that are compatible with an ImageFormat. If ImageF
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setColorSpace(android.graphics.ColorSpace.Named)`
+- setColorSpace
 - `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#`
 
 ### getSupportedColorSpacesForDynamicRange
@@ -123,10 +123,10 @@ Return a list of color spaces that are compatible with an ImageFormat and a dyna
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setColorSpace(android.graphics.ColorSpace.Named)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)`
+- setColorSpace
+- setDynamicRangeProfile
 - `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles`
+- DynamicRangeProfiles
 
 ### getSupportedDynamicRangeProfiles
 
@@ -152,10 +152,10 @@ Return a list of dynamic range profiles that are compatible with a color space a
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setColorSpace(android.graphics.ColorSpace.Named)`
+- setDynamicRangeProfile
+- setColorSpace
 - `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles`
+- DynamicRangeProfiles
 
 ### getSupportedImageFormatsForColorSpace
 
@@ -177,5 +177,5 @@ Return a list of image formats that are compatible with a color space. Color spa
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setColorSpace(android.graphics.ColorSpace.Named)`
+- setColorSpace
 - `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#`

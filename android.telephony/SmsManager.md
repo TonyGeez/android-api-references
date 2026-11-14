@@ -10,10 +10,10 @@ class SmsManager
 | --- | --- |
 | ↳ | [android.telephony.SmsManager](SmsManager.md) |
 
-Manages SMS operations such as sending data, text, and pdu SMS messages. Get this object by calling the static method `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`. To create an instance of `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` associated with a specific subscription ID, call `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)`. This is typically used for devices that support multiple active subscriptions at once.
+Manages SMS operations such as sending data, text, and pdu SMS messages. Get this object by calling the static method getDefault. To create an instance of SmsManager associated with a specific subscription ID, call getSmsManagerForSubscriptionId. This is typically used for devices that support multiple active subscriptions at once.
 
 For information about how to behave as the default SMS app on Android 4.4 (API level 19) and higher, see `https://developer.android.com/reference/kotlin/android/provider/Telephony.html#`. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
@@ -230,39 +230,39 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#createAppSpecificSmsToken(android.app.PendingIntent)(intent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Create a single use app specific incoming SMS request for the calling package. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#createAppSpecificSmsTokenWithPackageInfo(kotlin.String,%20android.app.PendingIntent)(prefixes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, intent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Create a single use app specific incoming SMS request for the calling package. |
-| [SmsManager](SmsManager.md) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#createForSubscriptionId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the instance of the SmsManager associated with a particular subscription ID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | createAppSpecificSmsToken Create a single use app specific incoming SMS request for the calling package. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | createAppSpecificSmsTokenWithPackageInfo Create a single use app specific incoming SMS request for the calling package. |
+| [SmsManager](SmsManager.md) | createForSubscriptionId Get the instance of the SmsManager associated with a particular subscription ID. |
 | --- | --- |
-| [ArrayList](../java.util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#divideMessage(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Divide a message text into several fragments, none bigger than the maximum SMS message size. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#downloadMultimediaMessage(android.content.Context,%20kotlin.String,%20android.net.Uri,%20android.os.Bundle,%20android.app.PendingIntent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, locationUrl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, contentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, configOverrides: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, downloadedIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Download an MMS message from carrier by a given location URL |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#downloadMultimediaMessage(android.content.Context,%20kotlin.String,%20android.net.Uri,%20android.os.Bundle,%20android.app.PendingIntent,%20kotlin.Long)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, locationUrl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, contentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, configOverrides: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, downloadedIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?, messageId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Download an MMS message from carrier by a given location URL Same as `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#downloadMultimediaMessage(android.content.Context,%20kotlin.String,%20android.net.Uri,%20android.os.Bundle,%20android.app.PendingIntent)`, but adds an optional messageId. |
+| [ArrayList](../java.util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | divideMessage Divide a message text into several fragments, none bigger than the maximum SMS message size. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | downloadMultimediaMessage Download an MMS message from carrier by a given location URL |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | downloadMultimediaMessage Download an MMS message from carrier by a given location URL Same as downloadMultimediaMessage, but adds an optional messageId. |
 | --- | --- |
-| [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getCarrierConfigValues()()` Get carrier-dependent MMS configuration values. |
-| static [SmsManager](SmsManager.md)! | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()()` Get the SmsManager associated with the default subscription id. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefaultSmsSubscriptionId()()` Get default sms subscription id. |
+| [Bundle](../android.os/Bundle.md) | getCarrierConfigValues Get carrier-dependent MMS configuration values. |
+| static [SmsManager](SmsManager.md)! | getDefault Get the SmsManager associated with the default subscription id. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefaultSmsSubscriptionId Get default sms subscription id. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsCapacityOnIcc()()` Gets the total capacity of SMS storage on the SIM card. |
-| static [SmsManager](SmsManager.md)! | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the instance of the SmsManager associated with a particular subscription ID. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsMessagesForFinancialApp(android.os.Bundle,%20java.util.concurrent.Executor,%20android.telephony.SmsManager.FinancialSmsCallback)(params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/SmsManager.FinancialSmsCallback)` Get SMS messages for the calling financial app. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSmsCapacityOnIcc Gets the total capacity of SMS storage on the SIM card. |
+| static [SmsManager](SmsManager.md)! | getSmsManagerForSubscriptionId Get the instance of the SmsManager associated with a particular subscription ID. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getSmsMessagesForFinancialApp Get SMS messages for the calling financial app. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmscAddress()()` Gets the SMSC address from (U)SIM. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSubscriptionId()()` Get the associated subscription id. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#injectSmsPdu(kotlin.ByteArray,%20kotlin.String,%20android.app.PendingIntent)(pdu: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, receivedIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Inject an SMS PDU into the android application framework. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSmscAddress Gets the SMSC address from (U)SIM. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSubscriptionId Get the associated subscription id. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | injectSmsPdu Inject an SMS PDU into the android application framework. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendDataMessage(kotlin.String,%20kotlin.String,%20kotlin.Short,%20kotlin.ByteArray,%20android.app.PendingIntent,%20android.app.PendingIntent)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, destinationPort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!, deliveryIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Send a data based SMS to a specific application port. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultimediaMessage(android.content.Context,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.app.PendingIntent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, contentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!, locationUrl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, configOverrides: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Send an MMS message |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultimediaMessage(android.content.Context,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.app.PendingIntent,%20kotlin.Long)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, contentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, locationUrl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, configOverrides: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?, messageId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Send an MMS message Same as `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultimediaMessage(android.content.Context,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.app.PendingIntent)`, but adds an optional messageId. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendDataMessage Send a data based SMS to a specific application port. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendMultimediaMessage Send an MMS message |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendMultimediaMessage Send an MMS message Same as sendMultimediaMessage, but adds an optional messageId. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultipartTextMessage(kotlin.String,%20kotlin.String,%20java.util.ArrayList,%20java.util.ArrayList,%20java.util.ArrayList)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parts: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, sentIntents: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!>!, deliveryIntents: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!>!)` Send a multi-part text based SMS. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultipartTextMessage(kotlin.String,%20kotlin.String,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.String,%20kotlin.String)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, parts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, sentIntents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!>?, deliveryIntents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!>?, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Similar method as #sendMultipartTextMessage(String, String, ArrayList, ArrayList, ArrayList) With an additional argument. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultipartTextMessage(kotlin.String,%20kotlin.String,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.Long)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, parts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, sentIntents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!>?, deliveryIntents: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!>?, messageId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Send a multi-part text based SMS. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendMultipartTextMessage Send a multi-part text based SMS. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendMultipartTextMessage Similar method as #sendMultipartTextMessage(String, String, ArrayList, ArrayList, ArrayList) With an additional argument. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendMultipartTextMessage Send a multi-part text based SMS. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendTextMessage(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.app.PendingIntent,%20android.app.PendingIntent)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!, deliveryIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Send a text based SMS. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendTextMessage(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.app.PendingIntent,%20android.app.PendingIntent,%20kotlin.Long)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?, deliveryIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#?, messageId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Send a text based SMS. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendTextMessageWithoutPersisting(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.app.PendingIntent,%20android.app.PendingIntent)(destinationAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, scAddress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!, deliveryIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Send a text based SMS without writing it into the SMS Provider. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendTextMessage Send a text based SMS. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendTextMessage Send a text based SMS. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendTextMessageWithoutPersisting Send a text based SMS without writing it into the SMS Provider. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#setSmscAddress(kotlin.String)(smsc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Sets the SMSC address on (U)SIM. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setSmscAddress Sets the SMSC address on (U)SIM. |
 
 ## Constants
 
@@ -2117,9 +2117,9 @@ fun createAppSpecificSmsToken(intent: PendingIntent!): String!
 
 Create a single use app specific incoming SMS request for the calling package. This method returns a token that if included in a subsequent incoming SMS message will cause `intent` to be sent with the SMS data. The token is only good for one use, after an SMS has been received containing the token all subsequent SMS messages with the token will be routed as normal. An app can only have one request at a time, if the app already has a request pending it will be replaced with a new request.
 
-**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -2132,7 +2132,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/provider/Telephony.Sms.Intents.html#getMessagesFromIntent(android.content.Intent)`
+- getMessagesFromIntent
 
 ### createAppSpecificSmsTokenWithPackageInfo
 
@@ -2147,9 +2147,9 @@ fun createAppSpecificSmsTokenWithPackageInfo(
 
 Create a single use app specific incoming SMS request for the calling package. This method returns a token that if included in a subsequent incoming SMS message, and the SMS message has a prefix from the given prefixes list, the provided `intent` will be sent with the SMS data to the calling package. The token is only good for one use within a reasonable amount of time. After an SMS has been received containing the token all subsequent SMS messages with the token will be routed as normal. An app can only have one request at a time, if the app already has a request pending it will be replaced with a new request.
 
-**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2174,22 +2174,22 @@ fun createForSubscriptionId(subId: Int): SmsManager
 
 Get the instance of the SmsManager associated with a particular subscription ID.
 
-**Note:** Constructing an `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` in this manner will never cause an SMS disambiguation dialog to appear, unlike `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`.
+**Note:** Constructing an SmsManager in this manner will never cause an SMS disambiguation dialog to appear, unlike getDefault.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
-| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an SMS subscription ID, typically accessed using `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager` |
+| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an SMS subscription ID, typically accessed using SubscriptionManager |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` | the instance of the SmsManager associated with subscription. This value cannot be `null`. |
+| SmsManager | the instance of the SmsManager associated with subscription. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoList()`
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSmsSubscriptionId()`
+- getActiveSubscriptionInfoList
+- getDefaultSmsSubscriptionId
 
 ### divideMessage
 
@@ -2200,7 +2200,7 @@ fun divideMessage(text: String!): ArrayList<String!>!
 ```
 
 Divide a message text into several fragments, none bigger than the maximum SMS message size. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2230,9 +2230,9 @@ fun downloadMultimediaMessage(
 
 Download an MMS message from carrier by a given location URL
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail downloading the MMS message because no suitable default subscription could be found. In this case, if `downloadedIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail downloading the MMS message because no suitable default subscription could be found. In this case, if `downloadedIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2263,11 +2263,11 @@ fun downloadMultimediaMessage(
 ): Unit
 ```
 
-Download an MMS message from carrier by a given location URL Same as `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#downloadMultimediaMessage(android.content.Context,%20kotlin.String,%20android.net.Uri,%20android.os.Bundle,%20android.app.PendingIntent)`, but adds an optional messageId.
+Download an MMS message from carrier by a given location URL Same as downloadMultimediaMessage, but adds an optional messageId.
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail downloading the MMS message because no suitable default subscription could be found. In this case, if `downloadedIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail downloading the MMS message because no suitable default subscription could be found. In this case, if `downloadedIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2295,9 +2295,9 @@ fun getCarrierConfigValues(): Bundle
 
 Get carrier-dependent MMS configuration values.
 
-**Note:** This method is intended for internal use by carrier applications or the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method is intended for internal use by carrier applications or the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -2320,17 +2320,17 @@ static fun getDefault(): SmsManager!
 
 Get the SmsManager associated with the default subscription id. The instance will always be associated with the default subscription id, even if the default subscription id changes.
 
-**Note:** For devices that support multiple active subscriptions at a time, SmsManager will track the subscription set by the user as the default SMS subscription. If the user has not set a default, `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` may start an activity to kick off a subscription disambiguation dialog. Most operations will not complete until the user has chosen the subscription that will be associated with the operation. If the user cancels the dialog without choosing a subscription, one of the following will happen, depending on the target SDK version of the application. For compatibility purposes, if the target SDK level is \<= 28, telephony will still send the SMS over the first available subscription. If the target SDK level is \> 28, the operation will fail to complete.
+**Note:** For devices that support multiple active subscriptions at a time, SmsManager will track the subscription set by the user as the default SMS subscription. If the user has not set a default, SmsManager may start an activity to kick off a subscription disambiguation dialog. Most operations will not complete until the user has chosen the subscription that will be associated with the operation. If the user cancels the dialog without choosing a subscription, one of the following will happen, depending on the target SDK version of the application. For compatibility purposes, if the target SDK level is \<= 28, telephony will still send the SMS over the first available subscription. If the target SDK level is \> 28, the operation will fail to complete.
 
-**Note:** If this method is used to perform an operation on a device that has multiple active subscriptions, the user has not set a default SMS subscription, and the operation is being performed while the application is not in the foreground, the SMS disambiguation dialog will not be shown. The result of the operation will conclude as if the user cancelled the disambiguation dialog and the operation will finish as outlined above, depending on the target SDK version of the calling application. It is safer to use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` if the application will perform the operation while in the background because this can cause unpredictable results, such as the operation being sent over the wrong subscription or failing completely, depending on the user's default SMS subscription setting.
+**Note:** If this method is used to perform an operation on a device that has multiple active subscriptions, the user has not set a default SMS subscription, and the operation is being performed while the application is not in the foreground, the SMS disambiguation dialog will not be shown. The result of the operation will conclude as if the user cancelled the disambiguation dialog and the operation will finish as outlined above, depending on the target SDK version of the calling application. It is safer to use getSmsManagerForSubscriptionId if the application will perform the operation while in the background because this can cause unpredictable results, such as the operation being sent over the wrong subscription or failing completely, depending on the user's default SMS subscription setting.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#!` | the `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` associated with the default subscription id. |
+| `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#!` | the SmsManager associated with the default subscription id. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSmsSubscriptionId()`
+- getDefaultSmsSubscriptionId
 
 ### getDefaultSmsSubscriptionId
 
@@ -2342,8 +2342,8 @@ static fun getDefaultSmsSubscriptionId(): Int
 
 Get default sms subscription id.
 
-**Note:** This returns a value different from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSmsSubscriptionId()` if the user has not chosen a default. In this case it returns the active subscription id if there's only one active subscription available. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+**Note:** This returns a value different from getDefaultSmsSubscriptionId if the user has not chosen a default. In this case it returns the active subscription id if there's only one active subscription available. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -2365,10 +2365,10 @@ Gets the total capacity of SMS storage on the SIM card.
 
 This is the number of 176 byte EF-SMS records which can be stored on the SIM card. See 3GPP TS 31.102 - 4.2.25 - EF-SMS for more information.
 
-**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this method will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this method will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -2387,17 +2387,17 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static fun getSmsManagerForSubscriptionId(subId: Int): SmsManager!
 ```
 
-**Deprecated:** *Use android.content.Context#getSystemService .`https://developer.android.com/reference/kotlin/android/telephony/SmsManager#createForSubscriptionId(kotlin.Int)` instead*
+**Deprecated:** *Use android.content.Context#getSystemService .createForSubscriptionId instead*
 
 Get the instance of the SmsManager associated with a particular subscription ID.
 
-**Note:** Constructing an `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` in this manner will never cause an SMS disambiguation dialog to appear, unlike `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`.
+**Note:** Constructing an SmsManager in this manner will never cause an SMS disambiguation dialog to appear, unlike getDefault.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
-| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an SMS subscription ID, typically accessed using `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager` |
+| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an SMS subscription ID, typically accessed using SubscriptionManager |
 
 | Return ||
 |---|---|
@@ -2405,8 +2405,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveSubscriptionInfoList()`
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSmsSubscriptionId()`
+- getActiveSubscriptionInfoList
+- getDefaultSmsSubscriptionId
 
 ### getSmsMessagesForFinancialApp
 
@@ -2422,14 +2422,14 @@ fun getSmsMessagesForFinancialApp(
 
 Get SMS messages for the calling financial app. The result will be delivered asynchronously in the passing in callback interface.
 
-**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SMS_FINANCIAL_TRANSACTIONS:kotlin.String`
 
 | Parameters ||
 |---|---|
 | `params` | [Bundle](../android.os/Bundle.md)!: the parameters to filter SMS messages returned. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [SmsManager.FinancialSmsCallback](../android/telephony/SmsManager.FinancialSmsCallback.md): a callback to receive CursorWindow with SMS messages. This value cannot be `null`. |
 | --- | --- |
 
@@ -2445,10 +2445,10 @@ Gets the SMSC address from (U)SIM.
 
 **Note:** Using this method requires that your app is the default SMS application, or READ_PRIVILEGED_PHONE_STATE permission, or has the carrier privileges.
 
-**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this method will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this method will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -2466,11 +2466,11 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 fun getSubscriptionId(): Int
 ```
 
-Get the associated subscription id. If the instance was returned by `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, then this method may return different values at different points in time (if the user changes the default subscription id).
+Get the associated subscription id. If the instance was returned by getDefault, then this method may return different values at different points in time (if the user changes the default subscription id).
 
 **Note:** This method used to display a disambiguation dialog to the user asking them to choose a default subscription to send SMS messages over if they haven't chosen yet. Starting in API level 29, we allow the user to not have a default set as a valid option for the default SMS subscription on multi-SIM devices. We no longer show the disambiguation dialog and return `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#INVALID_SUBSCRIPTION_ID:kotlin.Int` if the device has multiple active subscriptions and no default is set.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -2494,11 +2494,11 @@ fun injectSmsPdu(
 
 Inject an SMS PDU into the android application framework.
 
-Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or carrier privileges per `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`.
+Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or carrier privileges per hasCarrierPrivileges.
 
-**Note:** This method is intended for internal use by carrier applications or the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the SMS being injected on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the SMS is delivered to the correct subscription.
+**Note:** This method is intended for internal use by carrier applications or the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the SMS being injected on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the SMS is delivered to the correct subscription.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2531,9 +2531,9 @@ Send a data based SMS to a specific application port.
 
 **Note:** Using this method requires that your app has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SEND_SMS:kotlin.String` permission.
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail sending the SMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_ERROR_GENERIC_FAILURE` and an extra string `"noDefault"` containing the boolean value `true`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail sending the SMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_ERROR_GENERIC_FAILURE` and an extra string `"noDefault"` containing the boolean value `true`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2567,9 +2567,9 @@ fun sendMultimediaMessage(
 
 Send an MMS message
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail sending the MMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail sending the MMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2600,11 +2600,11 @@ fun sendMultimediaMessage(
 ): Unit
 ```
 
-Send an MMS message Same as `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendMultimediaMessage(android.content.Context,%20android.net.Uri,%20kotlin.String,%20android.os.Bundle,%20android.app.PendingIntent)`, but adds an optional messageId.
+Send an MMS message Same as sendMultimediaMessage, but adds an optional messageId.
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail sending the MMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail sending the MMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_NO_DEFAULT_SMS_APP`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2642,9 +2642,9 @@ Send a multi-part text based SMS. The callee should have already divided the mes
 
 **Note:** Beginning with Android 4.4 (API level 19), if *and only if* an app is not selected as the default SMS app, the system automatically writes messages sent using this method to the SMS Provider (the default SMS app is always responsible for writing its sent messages to the SMS Provider). For information about how to behave as the default SMS app, see `https://developer.android.com/reference/kotlin/android/provider/Telephony.html#`.
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail sending the SMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_ERROR_GENERIC_FAILURE` and an extra string `"noDefault"` containing the boolean value `true`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail sending the SMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_ERROR_GENERIC_FAILURE` and an extra string `"noDefault"` containing the boolean value `true`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2678,9 +2678,9 @@ fun sendMultipartTextMessage(
 
 Similar method as #sendMultipartTextMessage(String, String, ArrayList, ArrayList, ArrayList) With an additional argument.
 
-**Note:** This method is intended for internal use the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the SMS being sent on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the SMS is sent on the correct subscription.
+**Note:** This method is intended for internal use the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the SMS being sent on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the SMS is sent on the correct subscription.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2714,7 +2714,7 @@ fun sendMultipartTextMessage(
 ```
 
 Send a multi-part text based SMS. Same as #sendMultipartTextMessage(String, String, ArrayList, ArrayList, ArrayList), but adds an optional messageId. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2752,9 +2752,9 @@ Send a text based SMS.
 
 **Note:** Beginning with Android 4.4 (API level 19), if *and only if* an app is not selected as the default SMS app, the system automatically writes messages sent using this method to the SMS Provider (the default SMS app is always responsible for writing its sent messages to the SMS Provider). For information about how to behave as the default SMS app, see `https://developer.android.com/reference/kotlin/android/provider/Telephony.html#`.
 
-**Note:** If `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` is used to instantiate this manager on a multi-SIM device, this operation may fail sending the SMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_ERROR_GENERIC_FAILURE` and an extra string `"noDefault"` containing the boolean value `true`. See `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()` for more information on the conditions where this operation may fail.
+**Note:** If getDefault is used to instantiate this manager on a multi-SIM device, this operation may fail sending the SMS message because no suitable default subscription could be found. In this case, if `sentIntent` is non-null, then the `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` will be sent with an error code `RESULT_ERROR_GENERIC_FAILURE` and an extra string `"noDefault"` containing the boolean value `true`. See getDefault for more information on the conditions where this operation may fail.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2785,8 +2785,8 @@ fun sendTextMessage(
 ): Unit
 ```
 
-Send a text based SMS. Same as `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendTextMessage(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.app.PendingIntent,%20android.app.PendingIntent)`, but adds an optional messageId. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Send a text based SMS. Same as sendTextMessage, but adds an optional messageId. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -2822,12 +2822,12 @@ Send a text based SMS without writing it into the SMS Provider.
 
 The message will be sent directly over the network and will not be visible in SMS applications. Intended for internal carrier use only.
 
-Requires Permission: Both `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SEND_SMS:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`, or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`), or that the calling app is the default IMS app (see `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING:kotlin.String`).
+Requires Permission: Both `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SEND_SMS:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`, or that the calling app has carrier privileges (see hasCarrierPrivileges), or that the calling app is the default IMS app (see `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING:kotlin.String`).
 
-**Note:** This method is intended for internal use by carrier applications or the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the SMS being sent on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the SMS is sent on the correct subscription.
+**Note:** This method is intended for internal use by carrier applications or the Telephony framework and will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this message will be INVALID, which will result in the SMS being sent on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the SMS is sent on the correct subscription.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SEND_SMS:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -2835,7 +2835,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendTextMessage(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.app.PendingIntent,%20android.app.PendingIntent)`
+- sendTextMessage
 
 ### setSmscAddress
 
@@ -2849,10 +2849,10 @@ Sets the SMSC address on (U)SIM.
 
 **Note:** Using this method requires that your app is the default SMS application, or has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` permission, or has the carrier privileges.
 
-**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#` instance has been created with `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getDefault()`, and no user-defined default subscription is defined, the subscription ID associated with this method will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#getSmsManagerForSubscriptionId(kotlin.Int)` to ensure the operation is performed on the correct subscription.
+**Note:** This method will never trigger an SMS disambiguation dialog. If this method is called on a device that has multiple active subscriptions, this SmsManager instance has been created with getDefault, and no user-defined default subscription is defined, the subscription ID associated with this method will be INVALID, which will result in the operation being completed on the subscription associated with logical slot 0. Use getSmsManagerForSubscriptionId to ensure the operation is performed on the correct subscription.
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|

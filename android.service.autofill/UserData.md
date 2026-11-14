@@ -19,28 +19,28 @@ Defines the user data used for [field classification](AutofillService.md).
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder` A builder for `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder` A builder for UserData objects. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getFieldClassificationAlgorithm()()` Gets the name of the default algorithm that is used to calculate `https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification.Match#getScore()` match scores}. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getFieldClassificationAlgorithmForCategory(kotlin.String)(categoryId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the name of the algorithm corresponding to the specific autofill category that is used to calculate `https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification.Match#getScore()` |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getFieldClassificationAlgorithm Gets the name of the default algorithm that is used to calculate getScore match scores}. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getFieldClassificationAlgorithmForCategory Gets the name of the algorithm corresponding to the specific autofill category that is used to calculate getScore |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getId()()` Gets the id. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxCategoryCount()()` Gets the maximum number of unique category ids that can be passed to the builder's constructor and `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxFieldClassificationIdsSize()()` Gets the maximum number of ids that can be passed to `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setFieldClassificationIds(android.view.autofill.AutofillId)`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getId Gets the id. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxCategoryCount Gets the maximum number of unique category ids that can be passed to the builder's constructor and add. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxFieldClassificationIdsSize Gets the maximum number of ids that can be passed to setFieldClassificationIds. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxUserDataSize()()` Gets the maximum number of values that can be added to a `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMaxValueLength()()` Gets the maximum length of values passed to the builder's constructor or or `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#getMinValueLength()()` Gets the minimum length of values passed to the builder's constructor or or `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxUserDataSize Gets the maximum number of values that can be added to a UserData. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxValueLength Gets the maximum length of values passed to the builder's constructor or or add. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinValueLength Gets the minimum length of values passed to the builder's constructor or or add. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -56,7 +56,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -70,7 +70,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun getFieldClassificationAlgorithm(): String?
 ```
 
-Gets the name of the default algorithm that is used to calculate `https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification.Match#getScore()` match scores}.
+Gets the name of the default algorithm that is used to calculate getScore match scores}.
 
 | Return ||
 |---|---|
@@ -84,7 +84,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getFieldClassificationAlgorithmForCategory(categoryId: String): String?
 ```
 
-Gets the name of the algorithm corresponding to the specific autofill category that is used to calculate `https://developer.android.com/reference/kotlin/android/service/autofill/FieldClassification.Match#getScore()`
+Gets the name of the algorithm corresponding to the specific autofill category that is used to calculate getScore
 
 | Parameters ||
 |---|---|
@@ -112,7 +112,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMaxCategoryCount(): Int
 ```
 
-Gets the maximum number of unique category ids that can be passed to the builder's constructor and `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`.
+Gets the maximum number of unique category ids that can be passed to the builder's constructor and add.
 
 ### getMaxFieldClassificationIdsSize
 
@@ -122,7 +122,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMaxFieldClassificationIdsSize(): Int
 ```
 
-Gets the maximum number of ids that can be passed to `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse.Builder#setFieldClassificationIds(android.view.autofill.AutofillId)`.
+Gets the maximum number of ids that can be passed to setFieldClassificationIds.
 
 ### getMaxUserDataSize
 
@@ -132,7 +132,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMaxUserDataSize(): Int
 ```
 
-Gets the maximum number of values that can be added to a `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#`.
+Gets the maximum number of values that can be added to a UserData.
 
 ### getMaxValueLength
 
@@ -142,7 +142,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMaxValueLength(): Int
 ```
 
-Gets the maximum length of values passed to the builder's constructor or or `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`.
+Gets the maximum length of values passed to the builder's constructor or or add.
 
 ### getMinValueLength
 
@@ -152,7 +152,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMinValueLength(): Int
 ```
 
-Gets the minimum length of values passed to the builder's constructor or or `https://developer.android.com/reference/kotlin/android/service/autofill/UserData.Builder#add(kotlin.String,%20kotlin.String)`.
+Gets the minimum length of values passed to the builder's constructor or or add.
 
 ### toString
 

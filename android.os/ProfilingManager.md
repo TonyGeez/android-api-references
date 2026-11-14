@@ -17,16 +17,16 @@ This class allows the caller to:
 
 <br />
 
-The `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` API can be used to begin profiling. Profiling may be ended manually using the CancellationSignal provided in the request, or as a result of a timeout. The timeout may be either the system default or caller defined in the parameter bundle for select types.
+The requestProfiling API can be used to begin profiling. Profiling may be ended manually using the CancellationSignal provided in the request, or as a result of a timeout. The timeout may be either the system default or caller defined in the parameter bundle for select types.
 
 The profiling results are delivered to the requesting app's data directory and a pointer to the file will be received using the app provided listeners.
 
 Apps can provide listeners in one or both of two ways:
 
 - A request-specific listener included with the request. This will trigger only with a result from the request it was provided with.
-- A global listener provided by `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)`. This will be triggered for all results belonging to your app. This listener is the only way to receive results from system triggered profiling instances set up with `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#addProfilingTriggers(kotlin.collections.MutableList)`.
+- A global listener provided by registerForAllProfilingResults. This will be triggered for all results belonging to your app. This listener is the only way to receive results from system triggered profiling instances set up with addProfilingTriggers.
 
-Requests are rate limited and not guaranteed to be filled. Rate limiting can be disabled for local testing of `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` using the shell command `device_config put profiling_testing rate_limiter.disabled true`
+Requests are rate limited and not guaranteed to be filled. Rate limiting can be disabled for local testing of requestProfiling using the shell command `device_config put profiling_testing rate_limiter.disabled true`
 
 For local testing, profiling results can be accessed more easily by enabling debug mode. This will retain output files in a temporary system directory. The locations of the retained files will be available in logcat. The behavior and command varies by version:
 
@@ -46,24 +46,24 @@ Note: Check out [Capture Real User Data Using ProfilingManager](https://develope
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_HEAP_PROFILE:kotlin.Int` Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a heap profile. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_JAVA_HEAP_DUMP:kotlin.Int` Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a java heap dump. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_STACK_SAMPLING:kotlin.Int` Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a stack sample. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_HEAP_PROFILE:kotlin.Int` Profiling type for requestProfiling to request a heap profile. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_JAVA_HEAP_DUMP:kotlin.Int` Profiling type for requestProfiling to request a java heap dump. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_STACK_SAMPLING:kotlin.Int` Profiling type for requestProfiling to request a stack sample. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_SYSTEM_TRACE:kotlin.Int` Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a system trace. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_SYSTEM_TRACE:kotlin.Int` Profiling type for requestProfiling to request a system trace. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#addAllProfilingTriggers()()` Register this process for all triggers. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#addProfilingTriggers(kotlin.collections.MutableList)(triggers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger!>)` Register the provided list of triggers for this process. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#clearProfilingTriggers()()` Remove all triggers for this process. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addAllProfilingTriggers Register this process for all triggers. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addProfilingTriggers Register the provided list of triggers for this process. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearProfilingTriggers Remove all triggers for this process. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/os/ProfilingResult!>)` Register a listener to be called for all profiling results for this uid. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#removeProfilingTriggersByType(kotlin.IntArray)(triggers: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Remove triggers for this process with trigger types in the provided list. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(profilingType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parameters: https://developer.android.com/reference/kotlin/android/os/Bundle?, tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal?, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/os/ProfilingResult!>?)` Request system profiling. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerForAllProfilingResults Register a listener to be called for all profiling results for this uid. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeProfilingTriggersByType Remove triggers for this process with trigger types in the provided list. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestProfiling Request system profiling. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestRunningSystemTrace(kotlin.String)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Request a snapshot of a background trace, if one is running. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#unregisterForAllProfilingResults(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/os/ProfilingResult!>?)` Unregister a listener that was to be called for all profiling results. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestRunningSystemTrace Request a snapshot of a background trace, if one is running. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterForAllProfilingResults Unregister a listener that was to be called for all profiling results. |
 
 ## Constants
 
@@ -75,7 +75,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PROFILING_TYPE_HEAP_PROFILE: Int
 ```
 
-Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a heap profile.
+Profiling type for requestProfiling to request a heap profile.
 
  Value: 2
 
@@ -87,7 +87,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PROFILING_TYPE_JAVA_HEAP_DUMP: Int
 ```
 
-Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a java heap dump.
+Profiling type for requestProfiling to request a java heap dump.
 
  Value: 1
 
@@ -99,7 +99,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PROFILING_TYPE_STACK_SAMPLING: Int
 ```
 
-Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a stack sample.
+Profiling type for requestProfiling to request a stack sample.
 
  Value: 3
 
@@ -111,7 +111,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PROFILING_TYPE_SYSTEM_TRACE: Int
 ```
 
-Profiling type for `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#requestProfiling(kotlin.Int,%20android.os.Bundle,%20kotlin.String,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to request a system trace.
+Profiling type for requestProfiling to request a system trace.
 
  Value: 4
 
@@ -129,7 +129,7 @@ Register this process for all triggers.
 
 Registering for all triggers is in addition to any specific triggers registered. Any triggers already registered when this is called, along with their parameters, will not be impacted. Any triggers specifically registered after calling this, along with any parameters set on them, will take precedence over what is set here.
 
-See `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#addProfilingTriggers(kotlin.collections.MutableList)` for more on triggers.
+See addProfilingTriggers for more on triggers.
 
 ### addProfilingTriggers
 
@@ -141,16 +141,16 @@ fun addProfilingTriggers(triggers: MutableList<ProfilingTrigger!>): Unit
 
 Register the provided list of triggers for this process.
 
-Profiling triggers are system events that an app can register interest in, and then receive profiling data when any of the registered triggers occur. There is no guarantee that these triggers will be filled. Results, if available, will be delivered only to a global listener added using `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+Profiling triggers are system events that an app can register interest in, and then receive profiling data when any of the registered triggers occur. There is no guarantee that these triggers will be filled. Results, if available, will be delivered only to a global listener added using registerForAllProfilingResults.
 
 Only one of each trigger type can be added at a time.
 
 - If the provided list contains a trigger type that is already registered then the new one will replace the existing one.
 - If the provided list contains more than one trigger object for a trigger type then only one will be kept.
 
-The filename of the file placed in app storage will contain the trigger type for which it was collected in the form: "trigger-type-x", where x is equal to the API value of the trigger type, found in `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger`. Example filename for `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_ANR:kotlin.Int`: profile_trigger-type-2_2025-01-23-04-56-12.perfetto-trace
+The filename of the file placed in app storage will contain the trigger type for which it was collected in the form: "trigger-type-x", where x is equal to the API value of the trigger type, found in ProfilingTrigger. Example filename for `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_ANR:kotlin.Int`: profile_trigger-type-2_2025-01-23-04-56-12.perfetto-trace
 
-Apps can define their own per-trigger rate limiting to help ensure they receive results aligned with their needs. More details can be found at `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger.Builder#setRateLimitingPeriodHours(kotlin.Int)`.
+Apps can define their own per-trigger rate limiting to help ensure they receive results aligned with their needs. More details can be found at setRateLimitingPeriodHours.
 
 | Parameters ||
 |---|---|
@@ -221,7 +221,7 @@ Request system profiling.
 
 Note: use of this API directly is not recommended for most use cases. Consider using the [higher level wrappers provided by AndroidX](../androidx/core/os/Profiling.md) that will construct the request correctly, supporting available options with simplified request parameters.
 
-Both a listener and an executor must be set at the time of the request for the request to be considered for fulfillment. Listener/executor pairs can be set in this method, with `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)`, or both. The listener and executor must be set together, in the same call. If no listener and executor combination is set, the request will be discarded and no callback will be received.
+Both a listener and an executor must be set at the time of the request for the request to be considered for fulfillment. Listener/executor pairs can be set in this method, with registerForAllProfilingResults, or both. The listener and executor must be set together, in the same call. If no listener and executor combination is set, the request will be discarded and no callback will be received.
 
 Requests will be rate limited and are not guaranteed to be filled.
 
@@ -237,7 +237,7 @@ The provided executor may also be used to perform a cleanup of old delivered pro
 | --- | --- |
 | `cancellationSignal` | [CancellationSignal](CancellationSignal.md)?: for caller requested cancellation. Results will be returned if available. If this is null, the requesting app will not be able to stop the collection. The collection will stop after timing out with either the provided configurations or with system defaults |
 | `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor to call back with. Will only be used for the listener provided in this method. If this is null, and no global executor and listener combinations are registered at the time of the request, the request will be dropped. |
-| `listener` | [Consumer](../java.util.function/Consumer.md)\< [ProfilingResult](ProfilingResult.md)!\>?: Listener to be triggered with result. Any global listeners registered via `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)` will also be triggered. If this is null, and no global listener and executor combinations are registered at the time of the request, the request will be dropped. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [ProfilingResult](ProfilingResult.md)!\>?: Listener to be triggered with result. Any global listeners registered via registerForAllProfilingResults will also be triggered. If this is null, and no global listener and executor combinations are registered at the time of the request, the request will be dropped. |
 | --- | --- |
 
 ### requestRunningSystemTrace
@@ -250,7 +250,7 @@ fun requestRunningSystemTrace(tag: String?): Unit
 
 Request a snapshot of a background trace, if one is running.
 
-This request sends a `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_APP_REQUEST_RUNNING_TRACE:kotlin.Int` trigger. Apps must register interest in this trigger in order to receive the result using either `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#addProfilingTriggers(kotlin.collections.MutableList)` or `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#addAllProfilingTriggers()`.
+This request sends a `https://developer.android.com/reference/kotlin/android/os/ProfilingTrigger#TRIGGER_TYPE_APP_REQUEST_RUNNING_TRACE:kotlin.Int` trigger. Apps must register interest in this trigger in order to receive the result using either addProfilingTriggers or addAllProfilingTriggers.
 
 | Parameters ||
 |---|---|

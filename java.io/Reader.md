@@ -22,26 +22,26 @@ Abstract class for reading character streams. The only methods that a subclass m
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/Reader#Reader()()` Creates a new character-stream reader whose critical sections will synchronize on the reader itself. |
-| `https://developer.android.com/reference/kotlin/java/io/Reader#Reader(kotlin.Any)(lock: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Creates a new character-stream reader whose critical sections will synchronize on the given object. |
+| Reader Creates a new character-stream reader whose critical sections will synchronize on the reader itself. |
+| Reader Creates a new character-stream reader whose critical sections will synchronize on the given object. |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#close()()` Closes the stream and releases any system resources associated with it. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#mark(kotlin.Int)(readAheadLimit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Marks the present position in the stream. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#markSupported()()` Tells whether this stream supports the mark() operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes the stream and releases any system resources associated with it. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | mark Marks the present position in the stream. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | markSupported Tells whether this stream supports the mark() operation. |
 | --- | --- |
-| open static [Reader](Reader.md)! | `https://developer.android.com/reference/kotlin/java/io/Reader#nullReader()()` Returns a new `Reader` that reads no characters. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read()()` Reads a single character. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(kotlin.CharArray)(cbuf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Reads characters into an array. |
+| open static [Reader](Reader.md)! | nullReader Returns a new `Reader` that reads no characters. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Reads a single character. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Reads characters into an array. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(cbuf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, off: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reads characters into a portion of an array. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(java.nio.CharBuffer)(target: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Attempts to read characters into the specified character buffer. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#ready()()` Tells whether this stream is ready to be read. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Reads characters into a portion of an array. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | read Attempts to read characters into the specified character buffer. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | ready Tells whether this stream is ready to be read. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#reset()()` Resets the stream. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#skip(kotlin.Long)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Skips characters. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#transferTo(java.io.Writer)(out: https://developer.android.com/reference/kotlin/java/io/Writer!)` Reads all characters from this reader and writes the characters to the given writer in the order that they are read. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reset Resets the stream. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | skip Skips characters. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | transferTo Reads all characters from this reader and writes the characters to the given writer in the order that they are read. |
 | --- | --- |
 
 | Properties ||

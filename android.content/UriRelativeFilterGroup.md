@@ -26,19 +26,19 @@ For example, given a URI that contains path, query and fragment parts, a group c
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#UriRelativeFilterGroup(kotlin.Int)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` New UriRelativeFilterGroup that matches a Intent data. |
+| UriRelativeFilterGroup New UriRelativeFilterGroup that matches a Intent data. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#addUriRelativeFilter(android.content.UriRelativeFilter)(uriRelativeFilter: https://developer.android.com/reference/kotlin/android/content/UriRelativeFilter)` Add a filter to the group. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#getAction()()` Return `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#ACTION_ALLOW:kotlin.Int` if a URI is allowed when matched and `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#ACTION_BLOCK:kotlin.Int` if a URI is blacked when matched. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addUriRelativeFilter Add a filter to the group. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAction Return `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#ACTION_ALLOW:kotlin.Int` if a URI is allowed when matched and `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#ACTION_BLOCK:kotlin.Int` if a URI is blacked when matched. |
 | --- | --- |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [UriRelativeFilter](UriRelativeFilter.md)!\> | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#getUriRelativeFilters()()` Returns a unmodifiable view of the UriRelativeFilters list in this group. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#matchData(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Match all URI filter in this group against `https://developer.android.com/reference/kotlin/android/content/Intent#getData()`. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [UriRelativeFilter](UriRelativeFilter.md)!\> | getUriRelativeFilters Returns a unmodifiable view of the UriRelativeFilters list in this group. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | matchData Match all URI filter in this group against getData. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/UriRelativeFilterGroup#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -168,8 +168,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -183,7 +183,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun matchData(data: Uri): Boolean
 ```
 
-Match all URI filter in this group against `https://developer.android.com/reference/kotlin/android/content/Intent#getData()`.
+Match all URI filter in this group against getData.
 
 | Parameters ||
 |---|---|

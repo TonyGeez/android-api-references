@@ -20,8 +20,8 @@ AppSetIdManager provides APIs for app and ad-SDKs to access appSetId for non-mon
 
 | Public methods ||
 |---|---|
-| open static [AppSetIdManager](AppSetIdManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetIdManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method for creating an instance of AppSetIdManager. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetIdManager#getAppSetId(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetId!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Retrieve the AppSetId. |
+| open static [AppSetIdManager](AppSetIdManager.md) | get Factory method for creating an instance of AppSetIdManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getAppSetId Retrieve the AppSetId. |
 
 ## Public methods
 
@@ -42,7 +42,7 @@ Factory method for creating an instance of AppSetIdManager.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetIdManager#` | A `https://developer.android.com/reference/kotlin/android/adservices/appsetid/AppSetIdManager#` instance. This value cannot be `null`. |
+| AppSetIdManager | A AppSetIdManager instance. This value cannot be `null`. |
 
 ### getAppSetId
 
@@ -60,7 +60,7 @@ Retrieve the AppSetId.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AppSetId](AppSetId.md)!, [Exception](../java.lang/Exception.md)!\>: The callback that's called after appsetid are available or an error occurs. This value cannot be `null`. |
 
 | Return ||

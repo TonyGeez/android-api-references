@@ -17,24 +17,24 @@ open class AddAdSelectionOverrideRequest
 >
 > The Rubidium (Rb) Relevance APIs, including those in android.adservices.adselection, are being deprecated. Relevance APIs have no direct replacement. Developers should stop using them, as calls will be rejected in future Android releases. Please refer to official Privacy Sandbox documentation for deprecation and roadmap details: https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
 
-This POJO represents the `https://developer.android.com/reference/kotlin/android/adservices/adselection/TestAdSelectionManager#overrideAdSelectionConfigRemoteInfo(android.adservices.adselection.AddAdSelectionOverrideRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` request
+This POJO represents the overrideAdSelectionConfigRemoteInfo request
 
-It contains, a `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` which will serve as the identifier for the specific override, a `String` decisionLogicJs and `String` trustedScoringSignals field representing the override value
+It contains, a AdSelectionConfig which will serve as the identifier for the specific override, a `String` decisionLogicJs and `String` trustedScoringSignals field representing the override value
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#AddAdSelectionOverrideRequest(android.adservices.adselection.AdSelectionConfig,%20kotlin.String,%20android.adservices.common.AdSelectionSignals)(adSelectionConfig: https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig, decisionLogicJs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, trustedScoringSignals: https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#)` Builds a `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#` instance. |
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#AddAdSelectionOverrideRequest(android.adservices.adselection.AdSelectionConfig,%20kotlin.String,%20android.adservices.common.AdSelectionSignals,%20android.adservices.adselection.PerBuyerDecisionLogic)(adSelectionConfig: https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig, decisionLogicJs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, trustedScoringSignals: https://developer.android.com/reference/kotlin/android/adservices/common/AdSelectionSignals.html#, perBuyerDecisionLogic: https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic)` Builds a `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#` instance. |
+| AddAdSelectionOverrideRequest Builds a AddAdSelectionOverrideRequest instance. |
+| AddAdSelectionOverrideRequest Builds a AddAdSelectionOverrideRequest instance. |
 
 | Public methods ||
 |---|---|
-| open [AdSelectionConfig](AdSelectionConfig.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getAdSelectionConfig()()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getDecisionLogicJs()()` <br /> |
-| open [PerBuyerDecisionLogic](PerBuyerDecisionLogic.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getPerBuyerDecisionLogic()()` <br /> |
+| open [AdSelectionConfig](AdSelectionConfig.md) | getAdSelectionConfig <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDecisionLogicJs <br /> |
+| open [PerBuyerDecisionLogic](PerBuyerDecisionLogic.md) | getPerBuyerDecisionLogic <br /> |
 | --- | --- |
-| open [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#getTrustedScoringSignals()()` <br /> |
+| open [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md) | getTrustedScoringSignals <br /> |
 
 ## Public constructors
 
@@ -50,13 +50,13 @@ AddAdSelectionOverrideRequest(
     trustedScoringSignals: AdSelectionSignals)
 ```
 
-Builds a `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#` instance.
+Builds a AddAdSelectionOverrideRequest instance.
 
 | Parameters ||
 |---|---|
-| `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): configuration for ad selection. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` This value cannot be `null`. |
-| `decisionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): override for scoring logic. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getDecisionLogicUri()` This value cannot be `null`. |
-| `trustedScoringSignals` | [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md): override for trusted seller signals. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getTrustedScoringSignalsUri()` This value cannot be `null`. |
+| `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): configuration for ad selection. See AdSelectionConfig This value cannot be `null`. |
+| `decisionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): override for scoring logic. See getDecisionLogicUri This value cannot be `null`. |
+| `trustedScoringSignals` | [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md): override for trusted seller signals. See getTrustedScoringSignalsUri This value cannot be `null`. |
 | --- | --- |
 
 ### AddAdSelectionOverrideRequest
@@ -72,15 +72,15 @@ AddAdSelectionOverrideRequest(
     perBuyerDecisionLogic: PerBuyerDecisionLogic)
 ```
 
-Builds a `https://developer.android.com/reference/kotlin/android/adservices/adselection/AddAdSelectionOverrideRequest#` instance.
+Builds a AddAdSelectionOverrideRequest instance.
 
 | Parameters ||
 |---|---|
-| `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): configuration for ad selection. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` This value cannot be `null`. |
-| `decisionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): override for scoring logic. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getDecisionLogicUri()` This value cannot be `null`. |
-| `trustedScoringSignals` | [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md): override for trusted seller signals. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig#getTrustedScoringSignalsUri()` This value cannot be `null`. |
+| `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): configuration for ad selection. See AdSelectionConfig This value cannot be `null`. |
+| `decisionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): override for scoring logic. See getDecisionLogicUri This value cannot be `null`. |
+| `trustedScoringSignals` | [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md): override for trusted seller signals. See getTrustedScoringSignalsUri This value cannot be `null`. |
 | --- | --- |
-| `perBuyerDecisionLogic` | [PerBuyerDecisionLogic](PerBuyerDecisionLogic.md): override for buyer's reporting logic for contextual ads. See `https://developer.android.com/reference/kotlin/android/adservices/adselection/SignedContextualAds#getDecisionLogicUri()` This value cannot be `null`. |
+| `perBuyerDecisionLogic` | [PerBuyerDecisionLogic](PerBuyerDecisionLogic.md): override for buyer's reporting logic for contextual ads. See getDecisionLogicUri This value cannot be `null`. |
 
 ## Public methods
 
@@ -98,7 +98,7 @@ open fun getAdSelectionConfig(): AdSelectionConfig
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` | an instance of `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig`, the configuration of the ad selection process. This configuration provides the data necessary to run Ad Selection flow that generates bids and scores to find a wining ad for rendering. This value cannot be `null`. |
+| AdSelectionConfig | an instance of AdSelectionConfig, the configuration of the ad selection process. This configuration provides the data necessary to run Ad Selection flow that generates bids and scores to find a wining ad for rendering. This value cannot be `null`. |
 
 ### getDecisionLogicJs
 
@@ -130,7 +130,7 @@ open fun getPerBuyerDecisionLogic(): PerBuyerDecisionLogic
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/PerBuyerDecisionLogic` | The override for the decision logic for each buyer that is used by contextual ads for reporting, which may be extended to updating bid values for contextual ads in the future. This value cannot be `null`. |
+| PerBuyerDecisionLogic | The override for the decision logic for each buyer that is used by contextual ads for reporting, which may be extended to updating bid values for contextual ads in the future. This value cannot be `null`. |
 
 ### getTrustedScoringSignals
 

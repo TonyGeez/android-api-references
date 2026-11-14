@@ -8,16 +8,16 @@ interface SharedPreferences
 
 | [android.content.SharedPreferences](SharedPreferences.md) |
 
-Interface for accessing and modifying preference data returned by `https://developer.android.com/reference/kotlin/android/content/Context#getSharedPreferences(kotlin.String,%20kotlin.Int)`. For any particular set of preferences, there is a single instance of this class that all clients share. Modifications to the preferences must go through an `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor` object to ensure the preference values remain in a consistent state and control when they are committed to storage. Objects that are returned from the various `get` methods must be treated as immutable by the application.
+Interface for accessing and modifying preference data returned by getSharedPreferences. For any particular set of preferences, there is a single instance of this class that all clients share. Modifications to the preferences must go through an `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor` object to ensure the preference values remain in a consistent state and control when they are committed to storage. Objects that are returned from the various `get` methods must be treated as immutable by the application.
 
 **Note: The Android team strongly recommends against using `SharedPreferences` for new data storage needs.** Instead, consider using [Jetpack DataStore](https://d.android.com/datastore) for storing small amounts of data, or [Room](https://d.android.com/room) for relational data and larger datasets.
 
 There are several significant drawbacks to using `SharedPreferences`:
 
-- **UI Thread Blocking and ANRs:** Since `SharedPreferences` provides a synchronous API, reading and writing to disk can block the UI thread, leading to jank and StrictMode violations. Additionally, pending `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor#apply()` calls will block the main thread during component lifecycle transitions (such as when Activities or Services start or stop) to ensure data is persisted. This is a common source of Application Not Responding (ANR) errors.
-- **Error Handling:** The asynchronous `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor#apply()` method has no mechanism to signal errors to the caller. The synchronous `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor#commit()` method only returns a boolean, providing no detailed information about failures, and can sometimes return `false` even when a write succeeds.
+- **UI Thread Blocking and ANRs:** Since `SharedPreferences` provides a synchronous API, reading and writing to disk can block the UI thread, leading to jank and StrictMode violations. Additionally, pending apply calls will block the main thread during component lifecycle transitions (such as when Activities or Services start or stop) to ensure data is persisted. This is a common source of Application Not Responding (ANR) errors.
+- **Error Handling:** The asynchronous apply method has no mechanism to signal errors to the caller. The synchronous commit method only returns a boolean, providing no detailed information about failures, and can sometimes return `false` even when a write succeeds.
 - **Durability and Consistency:** Changes are reflected in memory immediately, before being successfully persisted to disk. This can result in data loss if the app crashes or is terminated. For instance, a user might change a privacy-sensitive preference, but if the app terminates before the change is durably written, the app will load the old value upon restart. Furthermore, the lack of transactional semantics makes operations like incrementing a counter unsafe without external locking.
-- **Data Safety:** Data corruption can lead to silent failures or uncatchable exceptions. Additionally, writing malformed UTF-16 strings (such as unpaired surrogates) can result in silent data corruption. Modifying the collections returned by methods like `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getStringSet(kotlin.String,%20kotlin.collections.MutableSet)` can also lead to unexpected behavior and crashes.
+- **Data Safety:** Data corruption can lead to silent failures or uncatchable exceptions. Additionally, writing malformed UTF-16 strings (such as unpaired surrogates) can result in silent data corruption. Modifying the collections returned by methods like getStringSet can also lead to unexpected behavior and crashes.
 
 *Note: This class does not support use across multiple processes.*
 
@@ -31,25 +31,25 @@ There are several significant drawbacks to using `SharedPreferences`:
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor` Interface used for modifying values in a `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#` object. |
+| abstract | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor` Interface used for modifying values in a SharedPreferences object. |
 | abstract | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.OnSharedPreferenceChangeListener` Interface definition for a callback to be invoked when a shared preference is changed. |
 
 | Public methods ||
 |---|---|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#contains(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks whether the preferences contains a preference. |
-| abstract [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md)! | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#edit()()` Create a new Editor for these preferences, through which you can make modifications to the data in the preferences and atomically commit those changes back to the SharedPreferences object. |
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>! | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getAll()()` Retrieve all values from the preferences. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contains Checks whether the preferences contains a preference. |
+| abstract [SharedPreferences.Editor](../android/content/SharedPreferences.Editor.md)! | edit Create a new Editor for these preferences, through which you can make modifications to the data in the preferences and atomically commit those changes back to the SharedPreferences object. |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>! | getAll Retrieve all values from the preferences. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieve a boolean value from the preferences. |
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getFloat(kotlin.String,%20kotlin.Float)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Retrieve a float value from the preferences. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getInt(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve an int value from the preferences. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getBoolean Retrieve a boolean value from the preferences. |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getFloat Retrieve a float value from the preferences. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInt Retrieve an int value from the preferences. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getLong(kotlin.String,%20kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Retrieve a long value from the preferences. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getString(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Retrieve a String value from the preferences. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#getStringSet(kotlin.String,%20kotlin.collections.MutableSet)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Retrieve a set of String values from the preferences. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Retrieve a long value from the preferences. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getString Retrieve a String value from the preferences. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getStringSet Retrieve a set of String values from the preferences. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)(listener: https://developer.android.com/reference/kotlin/android/content/SharedPreferences.OnSharedPreferenceChangeListener!)` Registers a callback to be invoked when a change happens to a preference. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)(listener: https://developer.android.com/reference/kotlin/android/content/SharedPreferences.OnSharedPreferenceChangeListener!)` Unregisters a previous callback. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerOnSharedPreferenceChangeListener Registers a callback to be invoked when a change happens to a preference. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterOnSharedPreferenceChangeListener Unregisters a previous callback. |
 
 ## Public methods
 
@@ -81,7 +81,7 @@ abstract fun edit(): SharedPreferences.Editor!
 
 Create a new Editor for these preferences, through which you can make modifications to the data in the preferences and atomically commit those changes back to the SharedPreferences object.
 
-Note that you *must* call `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor#commit()` to have any changes you perform in the Editor actually show up in the SharedPreferences.
+Note that you *must* call commit to have any changes you perform in the Editor actually show up in the SharedPreferences.
 
 | Return ||
 |---|---|
@@ -283,7 +283,7 @@ Registers a callback to be invoked when a change happens to a preference.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)`
+- unregisterOnSharedPreferenceChangeListener
 
 ### unregisterOnSharedPreferenceChangeListener
 
@@ -301,4 +301,4 @@ Unregisters a previous callback.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/SharedPreferences#registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)`
+- registerOnSharedPreferenceChangeListener

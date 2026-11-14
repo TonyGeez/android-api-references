@@ -14,7 +14,7 @@ open class KemParameterSpec : NamedParameterSpec
 
 Specifies algorithm parameters for the KEM component of an HPKE suite which are determined by standard names as per RFC 9180.
 
-These parameters can be composed into a full HKPE suite name using `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getSuiteName(android.crypto.hpke.KemParameterSpec,%20android.crypto.hpke.KdfParameterSpec,%20android.crypto.hpke.AeadParameterSpec)`.
+These parameters can be composed into a full HKPE suite name using getSuiteName.
 
 Note that currently only `DHKEM_X25519_HKDF_SHA256` is implemented.
 
@@ -22,7 +22,7 @@ Note that currently only `DHKEM_X25519_HKDF_SHA256` is implemented.
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec.html#getName()()` Returns the standard name that determines the algorithm parameters. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/security/spec/NamedParameterSpec.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | getName Returns the standard name that determines the algorithm parameters. <br /> | ||
 
 | Properties ||
 |---|---|

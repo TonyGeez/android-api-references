@@ -14,9 +14,9 @@ class AnimatorSet : Animator
 | ↳ | [android.animation.Animator](Animator.md) ||
 | | ↳ | [android.animation.AnimatorSet](AnimatorSet.md) |
 
-This class plays a set of `https://developer.android.com/reference/kotlin/android/animation/Animator` objects in the specified order. Animations can be set up to play together, in sequence, or after a specified delay.
+This class plays a set of Animator objects in the specified order. Animations can be set up to play together, in sequence, or after a specified delay.
 
-There are two different approaches to adding animations to a `AnimatorSet`: either the `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#playTogether(android.animation.Animator)` or `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#playSequentially(android.animation.Animator)` methods can be called to add a set of animations all at once, or the `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#play(android.animation.Animator)` can be used in conjunction with methods in the `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.Builder` class to add animations one by one.
+There are two different approaches to adding animations to a `AnimatorSet`: either the playTogether or playSequentially methods can be called to add a set of animations all at once, or the play can be used in conjunction with methods in the `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.Builder` class to add animations one by one.
 
 It is possible to set up a `AnimatorSet` with circular dependencies between its animations. For example, an animation a1 could be set up to start before animation a2, a2 before a3, and a3 before a1. The results of this configuration are undefined, but will typically result in none of the affected animations being played. Because of this (and because circular dependencies do not make logical sense anyway), circular dependencies should be avoided, and the dependency flow of animations should only be in one direction.
 |
@@ -32,55 +32,55 @@ It is possible to set up a `AnimatorSet` with circular dependencies between its 
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/animation/Animator` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long` The value used to indicate infinite duration (e.g. when Animators repeat infinitely). <br /> | ||
+| From class Animator |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long` The value used to indicate infinite duration (e.g. when Animators repeat infinitely). <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#AnimatorSet()()` <br /> |
+| AnimatorSet <br /> |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#cancel()()` Cancels the animation. |
-| [AnimatorSet](AnimatorSet.md) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#clone()()` Creates and returns a copy of this object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#end()()` Ends the animation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancels the animation. |
+| [AnimatorSet](AnimatorSet.md) | clone Creates and returns a copy of this object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | end Ends the animation. |
 | --- | --- |
-| [ArrayList](../java.util/ArrayList.md)\< [Animator](Animator.md)!\>! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()()` Returns the current list of child Animator objects controlled by this AnimatorSet. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getCurrentPlayTime()()` Returns the milliseconds elapsed since the start of the animation. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getDuration()()` Gets the length of each of the child animations of this AnimatorSet. |
+| [ArrayList](../java.util/ArrayList.md)\< [Animator](Animator.md)!\>! | getChildAnimations Returns the current list of child Animator objects controlled by this AnimatorSet. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getCurrentPlayTime Returns the milliseconds elapsed since the start of the animation. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getDuration Gets the length of each of the child animations of this AnimatorSet. |
 | --- | --- |
-| [TimeInterpolator](TimeInterpolator.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getInterpolator()()` Returns the timing interpolator that this animation uses. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getStartDelay()()` The amount of time, in milliseconds, to delay starting the animation after `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getTotalDuration()()` Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. |
+| [TimeInterpolator](TimeInterpolator.md)! | getInterpolator Returns the timing interpolator that this animation uses. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartDelay The amount of time, in milliseconds, to delay starting the animation after start is called. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTotalDuration Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#isRunning()()` Returns true if any of the child animations of this AnimatorSet have been started and have not yet ended. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#isStarted()()` Returns whether this Animator has been started and not yet ended. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#pause()()` Pauses a running animation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRunning Returns true if any of the child animations of this AnimatorSet have been started and have not yet ended. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStarted Returns whether this Animator has been started and not yet ended. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | pause Pauses a running animation. |
 | --- | --- |
-| [AnimatorSet.Builder](../android/animation/AnimatorSet.Builder.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#play(android.animation.Animator)(anim: https://developer.android.com/reference/kotlin/android/animation/Animator!)` This method creates a `Builder` object, which is used to set up playing constraints. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#playSequentially(android.animation.Animator)(vararg items: https://developer.android.com/reference/kotlin/android/animation/Animator!)` Sets up this AnimatorSet to play each of the supplied animations when the previous animation ends. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#playSequentially(kotlin.collections.MutableList)(items: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/animation/Animator!>!)` Sets up this AnimatorSet to play each of the supplied animations when the previous animation ends. |
+| [AnimatorSet.Builder](../android/animation/AnimatorSet.Builder.md)! | play This method creates a `Builder` object, which is used to set up playing constraints. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | playSequentially Sets up this AnimatorSet to play each of the supplied animations when the previous animation ends. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | playSequentially Sets up this AnimatorSet to play each of the supplied animations when the previous animation ends. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#playTogether(android.animation.Animator)(vararg items: https://developer.android.com/reference/kotlin/android/animation/Animator!)` Sets up this AnimatorSet to play all of the supplied animations at the same time. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#playTogether(kotlin.collections.MutableCollection)(items: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/animation/Animator!>!)` Sets up this AnimatorSet to play all of the supplied animations at the same time. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#resume()()` Resumes a paused animation, causing the animator to pick up where it left off when it was paused. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | playTogether Sets up this AnimatorSet to play all of the supplied animations at the same time. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | playTogether Sets up this AnimatorSet to play all of the supplied animations at the same time. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | resume Resumes a paused animation, causing the animator to pick up where it left off when it was paused. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#reverse()()` Plays the AnimatorSet in reverse. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setCurrentPlayTime(kotlin.Long)(playTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the position of the animation to the specified point in time. |
-| [AnimatorSet](AnimatorSet.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setDuration(kotlin.Long)(duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the length of each of the current child animations of this AnimatorSet. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reverse Plays the AnimatorSet in reverse. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCurrentPlayTime Sets the position of the animation to the specified point in time. |
+| [AnimatorSet](AnimatorSet.md)! | setDuration Sets the length of each of the current child animations of this AnimatorSet. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setInterpolator(android.animation.TimeInterpolator)(interpolator: https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator!)` Sets the TimeInterpolator for all current `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()` of this AnimatorSet. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setStartDelay(kotlin.Long)(startDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` The amount of time, in milliseconds, to delay starting the animation after `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setTarget(kotlin.Any)(target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Sets the target object for all current `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()` of this AnimatorSet that take targets (`https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator` and AnimatorSet). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInterpolator Sets the TimeInterpolator for all current getChildAnimations of this AnimatorSet. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStartDelay The amount of time, in milliseconds, to delay starting the animation after start is called. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTarget Sets the target object for all current getChildAnimations of this AnimatorSet that take targets (ObjectAnimator and AnimatorSet). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setupEndValues()()` This method tells the object to use appropriate information to extract ending values for the animation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setupStartValues()()` This method tells the object to use appropriate information to extract starting values for the animation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()()` Starts this animation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setupEndValues This method tells the object to use appropriate information to extract ending values for the animation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setupStartValues This method tells the object to use appropriate information to extract starting values for the animation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start Starts this animation. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/animation/Animator` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#addListener(android.animation.Animator.AnimatorListener)(listener: https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener!)` Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#addPauseListener(android.animation.Animator.AnimatorPauseListener)(listener: https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener!)` Adds a pause listener to this animator. <br /> | | `https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener!>!` | `https://developer.android.com/reference/kotlin/android/animation/Animator#getListeners()()` Gets the set of `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener` objects that are currently listening for events on this `Animator` object. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#isPaused()()` Returns whether this animator is currently in a paused state. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#removeAllListeners()()` Removes all `https://developer.android.com/reference/kotlin/android/animation/Animator#addListener(android.animation.Animator.AnimatorListener)` and `https://developer.android.com/reference/kotlin/android/animation/Animator#addPauseListener(android.animation.Animator.AnimatorPauseListener)` from this object. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#removeListener(android.animation.Animator.AnimatorListener)(listener: https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener!)` Removes a listener from the set listening to this animation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/animation/Animator#removePauseListener(android.animation.Animator.AnimatorPauseListener)(listener: https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorPauseListener!)` Removes a pause listener from the set listening to this animation. <br /> | ||
+| From class Animator |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | addListener Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | addPauseListener Adds a pause listener to this animator. <br /> | | `https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener!>!` | getListeners Gets the set of `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener` objects that are currently listening for events on this `Animator` object. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | isPaused Returns whether this animator is currently in a paused state. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | removeAllListeners Removes all addListener and addPauseListener from this object. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | removeListener Removes a listener from the set listening to this animation. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | removePauseListener Removes a pause listener from the set listening to this animation. <br /> | ||
 
 ## Public constructors
 
@@ -102,7 +102,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun cancel(): Unit
 ```
 
-Cancels the animation. Unlike `https://developer.android.com/reference/kotlin/android/animation/Animator#end()`, `cancel()` causes the animation to stop in its tracks, sending an `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationCancel(android.animation.Animator)` to its listeners, followed by an `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator)` message.
+Cancels the animation. Unlike end, `cancel()` causes the animation to stop in its tracks, sending an onAnimationCancel to its listeners, followed by an onAnimationEnd message.
 
 This method must be called on the thread that is running the animation.
 
@@ -141,7 +141,7 @@ By convention, the object returned by this method should be independent of this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#` | a clone of this instance. |
+| AnimatorSet | a clone of this instance. |
 
 | Exceptions ||
 |---|---|
@@ -155,7 +155,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun end(): Unit
 ```
 
-Ends the animation. This causes the animation to assign the end value of the property being animated, then calling the `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator)` method on its listeners.
+Ends the animation. This causes the animation to assign the end value of the property being animated, then calling the onAnimationEnd method on its listeners.
 
 This method must be called on the thread that is running the animation.
 
@@ -185,7 +185,7 @@ fun getCurrentPlayTime(): Long
 
 Returns the milliseconds elapsed since the start of the animation.
 
-For ongoing animations, this method returns the current progress of the animation in terms of play time. For an animation that has not yet been started: if the animation has been seeked to a certain time via `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setCurrentPlayTime(kotlin.Long)`, the seeked play time will be returned; otherwise, this method will return 0.
+For ongoing animations, this method returns the current progress of the animation in terms of play time. For an animation that has not yet been started: if the animation has been seeked to a certain time via setCurrentPlayTime, the seeked play time will be returned; otherwise, this method will return 0.
 
 | Return ||
 |---|---|
@@ -227,7 +227,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun getStartDelay(): Long
 ```
 
-The amount of time, in milliseconds, to delay starting the animation after `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called.
+The amount of time, in milliseconds, to delay starting the animation after start is called.
 
 | Return ||
 |---|---|
@@ -245,7 +245,7 @@ Gets the total duration of the animation, accounting for animation sequences, st
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Total time an animation takes to finish, starting from the time `https://developer.android.com/reference/kotlin/android/animation/Animator#start()` is called. `https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long` will be returned if the animation or any child animation repeats infinite times. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Total time an animation takes to finish, starting from the time start is called. `https://developer.android.com/reference/kotlin/android/animation/Animator#DURATION_INFINITE:kotlin.Long` will be returned if the animation or any child animation repeats infinite times. |
 
 ### isRunning
 
@@ -255,7 +255,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun isRunning(): Boolean
 ```
 
-Returns true if any of the child animations of this AnimatorSet have been started and have not yet ended. Child animations will not be started until the AnimatorSet has gone past its initial delay set through `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setStartDelay(kotlin.Long)`.
+Returns true if any of the child animations of this AnimatorSet have been started and have not yet ended. Child animations will not be started until the AnimatorSet has gone past its initial delay set through setStartDelay.
 
 | Return ||
 |---|---|
@@ -269,7 +269,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun isStarted(): Boolean
 ```
 
-Returns whether this Animator has been started and not yet ended. For reusable Animators (which most Animators are, apart from the one-shot animator produced by `https://developer.android.com/reference/kotlin/android/view/ViewAnimationUtils.html#createCircularReveal(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float)`), this state is a superset of `https://developer.android.com/reference/kotlin/android/animation/Animator#isRunning()`, because an Animator with a nonzero `https://developer.android.com/reference/kotlin/android/animation/Animator#getStartDelay()` will return true for `https://developer.android.com/reference/kotlin/android/animation/Animator#isStarted()` during the delay phase, whereas `https://developer.android.com/reference/kotlin/android/animation/Animator#isRunning()` will return true only after the delay phase is complete. Non-reusable animators will always return true after they have been started, because they cannot return to a non-started state.
+Returns whether this Animator has been started and not yet ended. For reusable Animators (which most Animators are, apart from the one-shot animator produced by createCircularReveal), this state is a superset of isRunning, because an Animator with a nonzero getStartDelay will return true for isStarted during the delay phase, whereas isRunning will return true only after the delay phase is complete. Non-reusable animators will always return true after they have been started, because they cannot return to a non-started state.
 
 | Return ||
 |---|---|
@@ -283,7 +283,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun pause(): Unit
 ```
 
-Pauses a running animation. This method should only be called on the same thread on which the animation was started. If the animation has not yet been `https://developer.android.com/reference/kotlin/android/animation/Animator#isStarted()` or has since ended, then the call is ignored. Paused animations can be resumed by calling `https://developer.android.com/reference/kotlin/android/animation/Animator#resume()`.
+Pauses a running animation. This method should only be called on the same thread on which the animation was started. If the animation has not yet been isStarted or has since ended, then the call is ignored. Paused animations can be resumed by calling resume.
 
 ### play
 
@@ -341,7 +341,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun playTogether(vararg items: Animator!): Unit
 ```
 
-Sets up this AnimatorSet to play all of the supplied animations at the same time. This is equivalent to calling `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#play(android.animation.Animator)` with the first animator in the set and then `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.Builder#with(android.animation.Animator)` with each of the other animators. Note that an Animator with a `https://developer.android.com/reference/kotlin/android/animation/Animator#setStartDelay(kotlin.Long)` will not actually start until that delay elapses, which means that if the first animator in the list supplied to this constructor has a startDelay, none of the other animators will start until that first animator's startDelay has elapsed.
+Sets up this AnimatorSet to play all of the supplied animations at the same time. This is equivalent to calling play with the first animator in the set and then with with each of the other animators. Note that an Animator with a setStartDelay will not actually start until that delay elapses, which means that if the first animator in the list supplied to this constructor has a startDelay, none of the other animators will start until that first animator's startDelay has elapsed.
 
 | Parameters ||
 |---|---|
@@ -379,7 +379,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun reverse(): Unit
 ```
 
-Plays the AnimatorSet in reverse. If the animation has been seeked to a specific play time using `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setCurrentPlayTime(kotlin.Long)`, it will play backwards from the point seeked when reverse was called. Otherwise, then it will start from the end and play backwards. This behavior is only set for the current animation; future playing of the animation will use the default behavior of playing forward.
+Plays the AnimatorSet in reverse. If the animation has been seeked to a specific play time using setCurrentPlayTime, it will play backwards from the point seeked when reverse was called. Otherwise, then it will start from the end and play backwards. This behavior is only set for the current animation; future playing of the animation will use the default behavior of playing forward.
 
 Note: reverse is not supported for infinite AnimatorSet.
 
@@ -391,7 +391,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun setCurrentPlayTime(playTime: Long): Unit
 ```
 
-Sets the position of the animation to the specified point in time. This time should be between 0 and the total duration of the animation, including any repetition. If the animation has not yet been started, then it will not advance forward after it is set to this time; it will simply set the time to this value and perform any appropriate actions based on that time. If the animation is already running, then setCurrentPlayTime() will set the current playing time to this value and continue playing from that point. On `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and above, an AnimatorSet that hasn't been `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()`ed, will issue `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationStart(android.animation.Animator,%20kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationEnd(android.animation.Animator,%20kotlin.Boolean)` events.
+Sets the position of the animation to the specified point in time. This time should be between 0 and the total duration of the animation, including any repetition. If the animation has not yet been started, then it will not advance forward after it is set to this time; it will simply set the time to this value and perform any appropriate actions based on that time. If the animation is already running, then setCurrentPlayTime() will set the current playing time to this value and continue playing from that point. On `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` and above, an AnimatorSet that hasn't been started, will issue onAnimationStart and onAnimationEnd events.
 
 | Parameters ||
 |---|---|
@@ -419,7 +419,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun setInterpolator(interpolator: TimeInterpolator!): Unit
 ```
 
-Sets the TimeInterpolator for all current `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()` of this AnimatorSet. The default value is null, which means that no interpolator is set on this AnimatorSet. Setting the interpolator to any non-null value will cause that interpolator to be set on the child animations when the set is started.
+Sets the TimeInterpolator for all current getChildAnimations of this AnimatorSet. The default value is null, which means that no interpolator is set on this AnimatorSet. Setting the interpolator to any non-null value will cause that interpolator to be set on the child animations when the set is started.
 
 | Parameters ||
 |---|---|
@@ -434,7 +434,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun setStartDelay(startDelay: Long): Unit
 ```
 
-The amount of time, in milliseconds, to delay starting the animation after `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called. Note that the start delay should always be non-negative. Any negative start delay will be clamped to 0 on N and above.
+The amount of time, in milliseconds, to delay starting the animation after start is called. Note that the start delay should always be non-negative. Any negative start delay will be clamped to 0 on N and above.
 
 | Parameters ||
 |---|---|
@@ -448,7 +448,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun setTarget(target: Any?): Unit
 ```
 
-Sets the target object for all current `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()` of this AnimatorSet that take targets (`https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator` and AnimatorSet).
+Sets the target object for all current getChildAnimations of this AnimatorSet that take targets (ObjectAnimator and AnimatorSet).
 
 | Parameters ||
 |---|---|
@@ -482,11 +482,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun start(): Unit
 ```
 
-Starts this animation. If the animation has a nonzero startDelay, the animation will start running after that delay elapses. A non-delayed animation will have its initial value(s) set immediately, followed by calls to `https://developer.android.com/reference/kotlin/android/animation/Animator.AnimatorListener#onAnimationStart(android.animation.Animator)` for any listeners of this animator.
+Starts this animation. If the animation has a nonzero startDelay, the animation will start running after that delay elapses. A non-delayed animation will have its initial value(s) set immediately, followed by calls to onAnimationStart for any listeners of this animator.
 
 The animation started by calling this method will be run on the thread that called this method. This thread should have a Looper on it (a runtime exception will be thrown if this is not the case). Also, if the animation will animate properties of objects in the view hierarchy, then the calling thread should be the UI thread for that view hierarchy.
 
-Starting this `AnimatorSet` will, in turn, start the animations for which it is responsible. The details of when exactly those animations are started depends on the dependency relationships that have been set up between the animations. **Note:** Manipulating AnimatorSet's lifecycle in the child animators' listener callbacks will lead to undefined behaviors. Also, AnimatorSet will ignore any seeking in the child animators once `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called.
+Starting this `AnimatorSet` will, in turn, start the animations for which it is responsible. The details of when exactly those animations are started depends on the dependency relationships that have been set up between the animations. **Note:** Manipulating AnimatorSet's lifecycle in the child animators' listener callbacks will lead to undefined behaviors. Also, AnimatorSet will ignore any seeking in the child animators once start is called.
 
 ### toString
 

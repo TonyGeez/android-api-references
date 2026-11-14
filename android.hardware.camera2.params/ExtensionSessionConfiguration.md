@@ -16,24 +16,24 @@ A class that aggregates all supported arguments for `https://developer.android.c
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#ExtensionSessionConfiguration(kotlin.Int,%20kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.StateCallback)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.StateCallback.html#)` Create a new ExtensionSessionConfiguration |
+| ExtensionSessionConfiguration Create a new ExtensionSessionConfiguration |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#clearColorSpace()()` Clear the color space, such that the default color space will be used. |
-| [ColorSpace](../android.graphics/ColorSpace.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getColorSpace()()` Return the current color space. |
-| [Executor](../java.util.concurrent/Executor.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getExecutor()()` Retrieve the Executor for the CameraExtensionSession instance. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearColorSpace Clear the color space, such that the default color space will be used. |
+| [ColorSpace](../android.graphics/ColorSpace.md)? | getColorSpace Return the current color space. |
+| [Executor](../java.util.concurrent/Executor.md) | getExecutor Retrieve the Executor for the CameraExtensionSession instance. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getExtension()()` Retrieve the extension type. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getOutputConfigurations()()` Retrieve the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` list for the capture session. |
-| [OutputConfiguration](OutputConfiguration.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getPostviewOutputConfiguration()()` Get the postview for still capture output configuration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExtension Retrieve the extension type. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](OutputConfiguration.md)!\> | getOutputConfigurations Retrieve the OutputConfiguration list for the capture session. |
+| [OutputConfiguration](OutputConfiguration.md)? | getPostviewOutputConfiguration Get the postview for still capture output configuration. |
 | --- | --- |
-| [CaptureRequest](../android.hardware.camera2/CaptureRequest.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getSessionWideParams()()` Retrieve the session wide camera parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#`). |
-| [CameraExtensionSession.StateCallback](../android/hardware/camera2/CameraExtensionSession.StateCallback.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#getStateCallback()()` Retrieve the CameraCaptureSession. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#setColorSpace(android.graphics.ColorSpace.Named)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.Named.html#)` Set a specific device-supported color space. |
+| [CaptureRequest](../android.hardware.camera2/CaptureRequest.md)? | getSessionWideParams Retrieve the session wide camera parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#`). |
+| [CameraExtensionSession.StateCallback](../android/hardware/camera2/CameraExtensionSession.StateCallback.md) | getStateCallback Retrieve the CameraCaptureSession. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setColorSpace Set a specific device-supported color space. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#setPostviewOutputConfiguration(android.hardware.camera2.params.OutputConfiguration)(postviewOutput: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration?)` Set the postview for still capture output configuration. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration#setSessionWideParams(android.hardware.camera2.CaptureRequest)(sessionCaptureParams: https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#)` Sets the session wide camera parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#`). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPostviewOutputConfiguration Set the postview for still capture output configuration. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSessionWideParams Sets the session wide camera parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#`). |
 
 ## Public constructors
 
@@ -121,7 +121,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getOutputConfigurations(): MutableList<OutputConfiguration!>
 ```
 
-Retrieve the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` list for the capture session.
+Retrieve the OutputConfiguration list for the capture session.
 
 | Return ||
 |---|---|
@@ -139,11 +139,11 @@ Get the postview for still capture output configuration.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration?` | output configuration for postview. This value may be `null`. |
+| OutputConfiguration | output configuration for postview. This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics.html#isPostviewAvailable(kotlin.Int)`
+- isPostviewAvailable
 
 ### getSessionWideParams
 
@@ -183,7 +183,7 @@ fun setColorSpace(colorSpace: ColorSpace.Named): Unit
 
 Set a specific device-supported color space.
 
-Clients can choose from any profile advertised as supported in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#REQUEST_AVAILABLE_COLOR_SPACE_PROFILES:android.hardware.camera2.CameraCharacteristics.Key` queried using `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceProfiles#getSupportedColorSpaces(kotlin.Int)`. When set, the colorSpace will override the default color spaces of the output targets, or the color space implied by the dataSpace passed into an `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#`'s constructor.
+Clients can choose from any profile advertised as supported in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#REQUEST_AVAILABLE_COLOR_SPACE_PROFILES:android.hardware.camera2.CameraCharacteristics.Key` queried using getSupportedColorSpaces. When set, the colorSpace will override the default color spaces of the output targets, or the color space implied by the dataSpace passed into an `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#`'s constructor.
 
 | Parameters ||
 |---|---|
@@ -205,7 +205,7 @@ Set the postview for still capture output configuration.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics.html#isPostviewAvailable(kotlin.Int)`
+- isPostviewAvailable
 
 ### setSessionWideParams
 
@@ -215,8 +215,8 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun setSessionWideParams(sessionCaptureParams: CaptureRequest): Unit
 ```
 
-Sets the session wide camera parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#`). This argument can be set for every supported session type and will be passed to the camera device as part of the capture session initialization. Session parameters are a subset of the available capture request parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#getAvailableSessionKeys()`) and their application can introduce internal camera delays. To improve camera performance it is suggested to change them sparingly within the lifetime of the capture session and to pass their initial values as part of this method.
+Sets the session wide camera parameters (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#`). This argument can be set for every supported session type and will be passed to the camera device as part of the capture session initialization. Session parameters are a subset of the available capture request parameters (see getAvailableSessionKeys) and their application can introduce internal camera delays. To improve camera performance it is suggested to change them sparingly within the lifetime of the capture session and to pass their initial values as part of this method.
 
 | Parameters ||
 |---|---|
-| `sessionCaptureParams` | [CaptureRequest](../android.hardware.camera2/CaptureRequest.md): A capture request that includes the initial values for any available session wide capture keys. Tags (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder.html#setTag(kotlin.Any)`) and output targets (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder.html#addTarget(android.view.Surface)`) are ignored if set. Parameter values not part of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#getAvailableSessionKeys()` will also be ignored. It is recommended to build the session parameters using the same template type as the initial capture request, so that the session and initial request parameters match as much as possible. This value cannot be `null`. |
+| `sessionCaptureParams` | [CaptureRequest](../android.hardware.camera2/CaptureRequest.md): A capture request that includes the initial values for any available session wide capture keys. Tags (see setTag) and output targets (see addTarget) are ignored if set. Parameter values not part of getAvailableSessionKeys will also be ignored. It is recommended to build the session parameters using the same template type as the initial capture request, so that the session and initial request parameters match as much as possible. This value cannot be `null`. |

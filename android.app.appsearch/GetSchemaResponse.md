@@ -10,33 +10,33 @@ class GetSchemaResponse : Parcelable
 | --- | --- |
 | ↳ | [android.app.appsearch.GetSchemaResponse](GetSchemaResponse.md) |
 
-The response class of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#getSchema(java.util.concurrent.Executor,%20java.util.function.Consumer)`
+The response class of getSchema
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse.Builder` Builder for `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse.Builder` Builder for GetSchemaResponse objects. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [PackageIdentifier](PackageIdentifier.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getPubliclyVisibleSchemas()()` Returns a mapping of publicly visible schemas to the `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier` specifying the package the schemas are from. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getRequiredPermissionsForSchemaTypeVisibility()()` Returns a mapping of schema types to the set of `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#` combination sets that querier must hold to access that schema type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [PackageIdentifier](PackageIdentifier.md)!\> | getPubliclyVisibleSchemas Returns a mapping of publicly visible schemas to the PackageIdentifier specifying the package the schemas are from. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>!\> | getRequiredPermissionsForSchemaTypeVisibility Returns a mapping of schema types to the set of `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#` combination sets that querier must hold to access that schema type. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getSchemaTypesNotDisplayedBySystem()()` Returns all the schema types that are opted out of being displayed and visible on any system UI surface. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SchemaVisibilityConfig](SchemaVisibilityConfig.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getSchemaTypesVisibleToConfigs()()` Returns a mapping of schema types to the set of `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig` that have access to that schema type. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PackageIdentifier](PackageIdentifier.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getSchemaTypesVisibleToPackages()()` Returns a mapping of schema types to the set of packages that have access to that schema type. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSchemaTypesNotDisplayedBySystem Returns all the schema types that are opted out of being displayed and visible on any system UI surface. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SchemaVisibilityConfig](SchemaVisibilityConfig.md)!\>!\> | getSchemaTypesVisibleToConfigs Returns a mapping of schema types to the set of SchemaVisibilityConfig that have access to that schema type. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PackageIdentifier](PackageIdentifier.md)!\>!\> | getSchemaTypesVisibleToPackages Returns a mapping of schema types to the set of packages that have access to that schema type. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppSearchSchema](AppSearchSchema.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getSchemas()()` Return the schemas most recently successfully provided to `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PropertyPath](PropertyPath.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getSchemasWipeoutAccountPropertyPaths()()` Returns a map containing all schema types that have been configured for account wipeout, mapped to the specific property paths within those schemas that hold the account identifiers. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#getVersion()()` Returns the overall database schema version. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppSearchSchema](AppSearchSchema.md)!\> | getSchemas Return the schemas most recently successfully provided to setSchema. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PropertyPath](PropertyPath.md)!\>!\> | getSchemasWipeoutAccountPropertyPaths Returns a map containing all schema types that have been configured for account wipeout, mapped to the specific property paths within those schemas that hold the account identifiers. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVersion Returns the overall database schema version. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/GetSchemaResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -52,7 +52,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -67,7 +67,7 @@ Also in [T Extensions 13](https://developer.android.com/sdkExtensions)
 fun getPubliclyVisibleSchemas(): MutableMap<String!, PackageIdentifier!>
 ```
 
-Returns a mapping of publicly visible schemas to the `https://developer.android.com/reference/kotlin/android/app/appsearch/PackageIdentifier` specifying the package the schemas are from.
+Returns a mapping of publicly visible schemas to the PackageIdentifier specifying the package the schemas are from.
 
 If no schemas have been set as publicly visible, an empty set will be returned.
 
@@ -86,7 +86,7 @@ fun getRequiredPermissionsForSchemaTypeVisibility(): MutableMap<String!, Mutabl
 
 Returns a mapping of schema types to the set of `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#` combination sets that querier must hold to access that schema type.
 
-The querier could read the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument` objects under the `schemaType` if they holds ALL required permissions of ANY of the individual value sets.
+The querier could read the GenericDocument objects under the `schemaType` if they holds ALL required permissions of ANY of the individual value sets.
 
 For example, if the Map contains `{{permissionA, PermissionB}, { PermissionC, PermissionD}, {PermissionE}}`.
 
@@ -125,7 +125,7 @@ Also in [T Extensions 13](https://developer.android.com/sdkExtensions)
 fun getSchemaTypesVisibleToConfigs(): MutableMap<String!, MutableSet<SchemaVisibilityConfig!>!>
 ```
 
-Returns a mapping of schema types to the set of `https://developer.android.com/reference/kotlin/android/app/appsearch/SchemaVisibilityConfig` that have access to that schema type.
+Returns a mapping of schema types to the set of SchemaVisibilityConfig that have access to that schema type.
 
 | Return ||
 |---|---|
@@ -133,7 +133,7 @@ Returns a mapping of schema types to the set of `https://developer.android.com/r
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/appsearch/SetSchemaRequest.Builder#addSchemaTypeVisibleToConfig(kotlin.String,%20android.app.appsearch.SchemaVisibilityConfig)`
+- addSchemaTypeVisibleToConfig
 
 ### getSchemaTypesVisibleToPackages
 
@@ -158,7 +158,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getSchemas(): MutableSet<AppSearchSchema!>
 ```
 
-Return the schemas most recently successfully provided to `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+Return the schemas most recently successfully provided to setSchema.
 
 | Return ||
 |---|---|
@@ -179,7 +179,7 @@ This method performs a deep copy to ensure the returned map and its contained se
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath!>!>` | A map where keys are schema type names, and values are sets of `https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath` strings configured for account wipeout for that schema type. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/android/app/appsearch/PropertyPath!>!>` | A map where keys are schema type names, and values are sets of PropertyPath strings configured for account wipeout for that schema type. This value cannot be `null`. |
 
 ### getVersion
 

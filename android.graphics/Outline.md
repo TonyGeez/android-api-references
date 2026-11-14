@@ -18,36 +18,36 @@ Can be computed for a View, or computed by a Drawable, to drive the shape of sha
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/Outline#Outline()()` Constructs an empty Outline. |
-| `https://developer.android.com/reference/kotlin/android/graphics/Outline#Outline(android.graphics.Outline)(src: https://developer.android.com/reference/kotlin/android/graphics/Outline#)` Constructs an Outline with a copy of the data in src. |
+| Outline Constructs an empty Outline. |
+| Outline Constructs an Outline with a copy of the data in src. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#canClip()()` Returns whether the outline can be used to clip a View. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#getAlpha()()` Returns the alpha represented by the Outline. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#getRadius()()` Returns the rounded rect radius, if set, or a value less than 0 if a path has been set via `https://developer.android.com/reference/kotlin/android/graphics/Outline#setPath(android.graphics.Path)`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canClip Returns whether the outline can be used to clip a View. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getAlpha Returns the alpha represented by the Outline. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRadius Returns the rounded rect radius, if set, or a value less than 0 if a path has been set via setPath. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#getRect(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Populates `outBounds` with the outline bounds, if set, and returns `true`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#isEmpty()()` Returns whether the Outline is empty. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#isOuterShadowOnly()()` Returns whether the shadow cast by this Outline is only drawn outside the outline. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getRect Populates `outBounds` with the outline bounds, if set, and returns `true`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEmpty Returns whether the Outline is empty. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOuterShadowOnly Returns whether the shadow cast by this Outline is only drawn outside the outline. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#offset(kotlin.Int,%20kotlin.Int)(dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Offsets the Outline by (dx,dy). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#set(android.graphics.Outline)(src: https://developer.android.com/reference/kotlin/android/graphics/Outline#)` Replace the contents of this Outline with the contents of src. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setAlpha(kotlin.Float)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the alpha represented by the Outline - the degree to which the producer is guaranteed to be opaque over the Outline's shape. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | offset Offsets the Outline by (dx,dy). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Replace the contents of this Outline with the contents of src. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAlpha Sets the alpha represented by the Outline - the degree to which the producer is guaranteed to be opaque over the Outline's shape. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setConvexPath(android.graphics.Path)(convexPath: https://developer.android.com/reference/kotlin/android/graphics/Path)` Sets the Outline to a `https://developer.android.com/reference/kotlin/android/graphics/Path#isConvex()`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setEmpty()()` Sets the outline to be empty. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setOuterShadowOnly(kotlin.Boolean)(outerShadowOnly: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the shadow cast by this Outline should only be drawn outside the outline. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setConvexPath Sets the Outline to a isConvex. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEmpty Sets the outline to be empty. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOuterShadowOnly Sets whether the shadow cast by this Outline should only be drawn outside the outline. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setOval(android.graphics.Rect)(rect: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Convenience for `https://developer.android.com/reference/kotlin/android/graphics/Outline#setOval(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setOval(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the outline to the oval defined by input rect. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setPath(android.graphics.Path)(path: https://developer.android.com/reference/kotlin/android/graphics/Path)` Sets the Outline to a `https://developer.android.com/reference/kotlin/android/graphics/Path`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOval Convenience for setOval |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOval Sets the outline to the oval defined by input rect. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPath Sets the Outline to a Path. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRect(android.graphics.Rect)(rect: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Convenience for `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the Outline to the rect defined by the input coordinates. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRoundRect(android.graphics.Rect,%20kotlin.Float)(rect: https://developer.android.com/reference/kotlin/android/graphics/Rect, radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Convenience for `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRoundRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float)` |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRect Convenience for setRect |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRect Sets the Outline to the rect defined by the input coordinates. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRoundRect Convenience for setRoundRect |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRoundRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the Outline to the rounded rect defined by the input coordinates and corner radius. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRoundRect Sets the Outline to the rounded rect defined by the input coordinates and corner radius. |
 
 ## Public constructors
 
@@ -90,7 +90,7 @@ Returns whether the outline can be used to clip a View.
 As of API 33, all Outline shapes support clipping. Prior to API 33, only Outlines that could be represented as a rectangle, circle, or round rect supported clipping.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setClipToOutline(kotlin.Boolean)`
+- setClipToOutline
 
 ### getAlpha
 
@@ -110,7 +110,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getRadius(): Float
 ```
 
-Returns the rounded rect radius, if set, or a value less than 0 if a path has been set via `https://developer.android.com/reference/kotlin/android/graphics/Outline#setPath(android.graphics.Path)`. A return value of `0` indicates a non-rounded rect.
+Returns the rounded rect radius, if set, or a value less than 0 if a path has been set via setPath. A return value of `0` indicates a non-rounded rect.
 
 | Return ||
 |---|---|
@@ -124,7 +124,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getRect(outRect: Rect): Boolean
 ```
 
-Populates `outBounds` with the outline bounds, if set, and returns `true`. If no outline bounds are set, or if a path has been set via `https://developer.android.com/reference/kotlin/android/graphics/Outline#setPath(android.graphics.Path)`, returns `false`.
+Populates `outBounds` with the outline bounds, if set, and returns `true`. If no outline bounds are set, or if a path has been set via setPath, returns `false`.
 
 | Parameters ||
 |---|---|
@@ -144,10 +144,10 @@ fun isEmpty(): Boolean
 
 Returns whether the Outline is empty.
 
-Outlines are empty when constructed, or if `https://developer.android.com/reference/kotlin/android/graphics/Outline#setEmpty()` is called, until a setter method is called
+Outlines are empty when constructed, or if setEmpty is called, until a setter method is called
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Outline#setEmpty()`
+- setEmpty
 
 ### isOuterShadowOnly
 
@@ -217,9 +217,9 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 fun setConvexPath(convexPath: Path): Unit
 ```
 
-**Deprecated:** *As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, the restriction that the path must be convex is removed. However, the API is misnamed until `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, when `https://developer.android.com/reference/kotlin/android/graphics/Outline#setPath(android.graphics.Path)` is introduced. Use `https://developer.android.com/reference/kotlin/android/graphics/Outline#setPath(android.graphics.Path)` instead.*
+**Deprecated:** *As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, the restriction that the path must be convex is removed. However, the API is misnamed until `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, when setPath is introduced. Use setPath instead.*
 
-Sets the Outline to a `https://developer.android.com/reference/kotlin/android/graphics/Path#isConvex()`.
+Sets the Outline to a isConvex.
 
 | Parameters ||
 |---|---|
@@ -236,7 +236,7 @@ fun setEmpty(): Unit
 Sets the outline to be empty.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Outline#isEmpty()`
+- isEmpty
 
 ### setOuterShadowOnly
 
@@ -262,7 +262,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun setOval(rect: Rect): Unit
 ```
 
-Convenience for `https://developer.android.com/reference/kotlin/android/graphics/Outline#setOval(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+Convenience for setOval
 
 | Parameters ||
 |---|---|
@@ -291,7 +291,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun setPath(path: Path): Unit
 ```
 
-Sets the Outline to a `https://developer.android.com/reference/kotlin/android/graphics/Path`.
+Sets the Outline to a Path.
 
 | Parameters ||
 |---|---|
@@ -305,7 +305,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun setRect(rect: Rect): Unit
 ```
 
-Convenience for `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+Convenience for setRect
 
 | Parameters ||
 |---|---|
@@ -337,7 +337,7 @@ fun setRoundRect(
 ): Unit
 ```
 
-Convenience for `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRoundRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float)`
+Convenience for setRoundRect
 
 | Parameters ||
 |---|---|
@@ -359,4 +359,4 @@ fun setRoundRect(
 
 Sets the Outline to the rounded rect defined by the input coordinates and corner radius.
 
-Passing a zero radius is equivalent to calling `https://developer.android.com/reference/kotlin/android/graphics/Outline#setRect(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+Passing a zero radius is equivalent to calling setRect

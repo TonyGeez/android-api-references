@@ -21,34 +21,34 @@ abstract class FragmentHostCallback<E : Any!> : FragmentContainer
 
 Integration points with the Fragment host.
 
-Fragments may be hosted by any object; such as an `https://developer.android.com/reference/kotlin/android/app/Activity`. In order to host fragments, implement `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#`, overriding the methods applicable to the host.
+Fragments may be hosted by any object; such as an Activity. In order to host fragments, implement FragmentHostCallback, overriding the methods applicable to the host.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#FragmentHostCallback(android.content.Context,%20android.os.Handler,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!, windowAnimations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| FragmentHostCallback <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onAttachFragment(android.app.Fragment)(fragment: https://developer.android.com/reference/kotlin/android/app/Fragment!)` Called when a `https://developer.android.com/reference/kotlin/android/app/Fragment` is being attached to this host, immediately after the call to its `https://developer.android.com/reference/kotlin/android/app/Fragment#onAttach(android.content.Context)` method and before `https://developer.android.com/reference/kotlin/android/app/Fragment#onCreate(android.os.Bundle)`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onDump(kotlin.String,%20java.io.FileDescriptor,%20java.io.PrintWriter,%20kotlin.Array)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#!, writer: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!, args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Print internal state into the given stream. |
-| open T? | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onFindViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the view with the given resource ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onAttachFragment Called when a Fragment is being attached to this host, immediately after the call to its onAttach method and before onCreate. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onDump Print internal state into the given stream. |
+| open T? | onFindViewById Return the view with the given resource ID. |
 | --- | --- |
-| abstract E? | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetHost()()` Return the object that's currently hosting the fragment. |
-| open [LayoutInflater](../android.view/LayoutInflater.md)! | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetLayoutInflater()()` Return a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onGetWindowAnimations()()` Return the window animations. |
+| abstract E? | onGetHost Return the object that's currently hosting the fragment. |
+| open [LayoutInflater](../android.view/LayoutInflater.md)! | onGetLayoutInflater Return a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | onGetWindowAnimations Return the window animations. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onHasView()()` Return `true` if the container holds any view. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onHasWindowAnimations()()` Return `true` if there are window animations. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onInvalidateOptionsMenu()()` Invalidates the activity's options menu. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onHasView Return `true` if the container holds any view. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onHasWindowAnimations Return `true` if there are window animations. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onInvalidateOptionsMenu Invalidates the activity's options menu. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onRequestPermissionsFromFragment(android.app.Fragment,%20kotlin.Array,%20kotlin.Int)(fragment: https://developer.android.com/reference/kotlin/android/app/Fragment, permissions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Requests permissions from the given fragment. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onShouldSaveFragmentState(android.app.Fragment)(fragment: https://developer.android.com/reference/kotlin/android/app/Fragment!)` Return `true` if the fragment's state needs to be saved. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onStartActivityFromFragment(android.app.Fragment,%20android.content.Intent,%20kotlin.Int,%20android.os.Bundle)(fragment: https://developer.android.com/reference/kotlin/android/app/Fragment!, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Starts a new `https://developer.android.com/reference/kotlin/android/app/Activity` from the given fragment. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onRequestPermissionsFromFragment Requests permissions from the given fragment. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onShouldSaveFragmentState Return `true` if the fragment's state needs to be saved. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onStartActivityFromFragment Starts a new Activity from the given fragment. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onStartIntentSenderFromFragment(android.app.Fragment,%20android.content.IntentSender,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)(fragment: https://developer.android.com/reference/kotlin/android/app/Fragment!, intent: https://developer.android.com/reference/kotlin/android/content/IntentSender.html#!, requestCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, fillInIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?, flagsMask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flagsValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extraFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Starts a new `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` from the given fragment. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/FragmentHostCallback#onUseFragmentManagerInflaterFactory()()` Return `true` if the FragmentManager's LayoutInflaterFactory should be used. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onStartIntentSenderFromFragment Starts a new `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` from the given fragment. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onUseFragmentManagerInflaterFactory Return `true` if the FragmentManager's LayoutInflaterFactory should be used. |
 
 ## Public constructors
 
@@ -75,7 +75,7 @@ open fun onAttachFragment(fragment: Fragment!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called when a `https://developer.android.com/reference/kotlin/android/app/Fragment` is being attached to this host, immediately after the call to its `https://developer.android.com/reference/kotlin/android/app/Fragment#onAttach(android.content.Context)` method and before `https://developer.android.com/reference/kotlin/android/app/Fragment#onCreate(android.os.Bundle)`.
+Called when a Fragment is being attached to this host, immediately after the call to its onAttach method and before onCreate.
 
 ### onDump
 
@@ -128,7 +128,7 @@ abstract fun onGetHost(): E?
 
 **Deprecated:** *Deprecated in Java.*
 
-Return the object that's currently hosting the fragment. If a `https://developer.android.com/reference/kotlin/android/app/Fragment` is hosted by a `https://developer.android.com/reference/kotlin/android/app/Activity`, the object returned here should be the same object returned from `https://developer.android.com/reference/kotlin/android/app/Fragment#getActivity()`.
+Return the object that's currently hosting the fragment. If a Fragment is hosted by a Activity, the object returned here should be the same object returned from getActivity.
 
 | Return ||
 |---|---|
@@ -144,7 +144,7 @@ open fun onGetLayoutInflater(): LayoutInflater!
 
 **Deprecated:** *Deprecated in Java.*
 
-Return a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`. See `https://developer.android.com/reference/kotlin/android/app/Activity#getLayoutInflater()`.
+Return a `https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#`. See getLayoutInflater.
 
 ### onGetWindowAnimations
 
@@ -192,7 +192,7 @@ open fun onInvalidateOptionsMenu(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Invalidates the activity's options menu. See `https://developer.android.com/reference/kotlin/android/app/Activity#invalidateOptionsMenu()`
+Invalidates the activity's options menu. See invalidateOptionsMenu
 
 ### onRequestPermissionsFromFragment
 
@@ -208,7 +208,7 @@ open fun onRequestPermissionsFromFragment(
 
 **Deprecated:** *Deprecated in Java.*
 
-Requests permissions from the given fragment. See `https://developer.android.com/reference/kotlin/android/app/Activity#requestPermissions(kotlin.Array,%20kotlin.Int)`
+Requests permissions from the given fragment. See requestPermissions
 
 | Parameters ||
 |---|---|
@@ -242,7 +242,7 @@ open fun onStartActivityFromFragment(
 
 **Deprecated:** *Deprecated in Java.*
 
-Starts a new `https://developer.android.com/reference/kotlin/android/app/Activity` from the given fragment. See `https://developer.android.com/reference/kotlin/android/app/Activity#startActivityForResult(android.content.Intent,%20kotlin.Int)`.
+Starts a new Activity from the given fragment. See startActivityForResult.
 
 ### onStartIntentSenderFromFragment
 

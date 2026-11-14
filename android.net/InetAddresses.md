@@ -19,8 +19,8 @@ Utility methods for `https://developer.android.com/reference/kotlin/java/net/Ine
 
 | Public methods ||
 |---|---|
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/InetAddresses#isNumericAddress(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks to see if the `address` is a numeric address (such as `"192.0.2.1"` or `"2001:db8::1:2"`). |
-| open static [InetAddress](../java.net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/InetAddresses#parseNumericAddress(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an InetAddress corresponding to the given numeric address (such as `"192.168.0.1"` or `"2001:4860:800d::68"`). |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNumericAddress Checks to see if the `address` is a numeric address (such as `"192.0.2.1"` or `"2001:db8::1:2"`). |
+| open static [InetAddress](../java.net/InetAddress.md) | parseNumericAddress Returns an InetAddress corresponding to the given numeric address (such as `"192.168.0.1"` or `"2001:4860:800d::68"`). |
 
 ## Public methods
 
@@ -56,7 +56,7 @@ open static fun parseNumericAddress(address: String): InetAddress
 
 Returns an InetAddress corresponding to the given numeric address (such as `"192.168.0.1"` or `"2001:4860:800d::68"`).
 
-See `https://developer.android.com/reference/kotlin/android/net/InetAddresses#isNumericAddress(kotlin.String)` (String)} for a definition as to what constitutes a numeric address.
+See isNumericAddress (String)} for a definition as to what constitutes a numeric address.
 
 This method will never do a DNS lookup.
 

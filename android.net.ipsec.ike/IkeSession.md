@@ -22,17 +22,17 @@ This class provides methods for initiating IKE procedures, such as the Creation 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#IkeSession(android.content.Context,%20android.net.ipsec.ike.IkeSessionParams,%20android.net.ipsec.ike.ChildSessionParams,%20java.util.concurrent.Executor,%20android.net.ipsec.ike.IkeSessionCallback,%20android.net.ipsec.ike.ChildSessionCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, ikeSessionParams: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams, firstChildSessionParams: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams, userCbExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, ikeSessionCallback: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback, firstChildSessionCallback: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback)` Constructs a new IKE session. |
+| IkeSession Constructs a new IKE session. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#close()()` Close the IKE session gracefully. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#closeChildSession(android.net.ipsec.ike.ChildSessionCallback)(childSessionCallback: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback)` Delete a Child Session. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#dump(java.io.PrintWriter)(pw: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#)` Dumps the state of `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` information for the clients |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Close the IKE session gracefully. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | closeChildSession Delete a Child Session. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump Dumps the state of IkeSession information for the clients |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#kill()()` Terminate (forcibly close) the IKE session. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#openChildSession(android.net.ipsec.ike.ChildSessionParams,%20android.net.ipsec.ike.ChildSessionCallback)(childSessionParams: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams, childSessionCallback: https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback)` Request a new Child Session. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | kill Terminate (forcibly close) the IKE session. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | openChildSession Request a new Child Session. |
 | --- | --- |
 
 ## Public constructors
@@ -53,24 +53,24 @@ IkeSession(
 
 Constructs a new IKE session.
 
-This method will immediately return an instance of `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` and asynchronously initiate the setup procedure of `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` as well as its first Child Session. Callers will be notified of these two setup results via the callback arguments.
+This method will immediately return an instance of IkeSession and asynchronously initiate the setup procedure of IkeSession as well as its first Child Session. Callers will be notified of these two setup results via the callback arguments.
 
 FEATURE_IPSEC_TUNNELS is required for setting up a tunnel mode Child SA.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md): a valid `https://developer.android.com/reference/kotlin/android/content/Context.html#` instance. This value cannot be `null`. |
-| `ikeSessionParams` | [IkeSessionParams](IkeSessionParams.md): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionParams` that contains a set of valid `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` configurations. This value cannot be `null`. |
-| `firstChildSessionParams` | [ChildSessionParams](ChildSessionParams.md): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams` that contains a set of valid configurations for the first Child Session. This value cannot be `null`. |
+| `ikeSessionParams` | [IkeSessionParams](IkeSessionParams.md): the IkeSessionParams that contains a set of valid IkeSession configurations. This value cannot be `null`. |
+| `firstChildSessionParams` | [ChildSessionParams](ChildSessionParams.md): the ChildSessionParams that contains a set of valid configurations for the first Child Session. This value cannot be `null`. |
 | --- | --- |
-| `userCbExecutor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` upon which all callbacks will be posted. For security and consistency, the callbacks posted to this executor MUST be executed serially and in the order they were posted, as guaranteed by executors such as `https://developer.android.com/reference/kotlin/java/util/concurrent/Executors.html#newSingleThreadExecutor()` This value cannot be `null`. |
-| `ikeSessionCallback` | [IkeSessionCallback](IkeSessionCallback.md): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback` interface to notify callers of state changes within the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#`. This value cannot be `null`. |
-| `firstChildSessionCallback` | [ChildSessionCallback](ChildSessionCallback.md): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback` interface to notify callers of state changes within the first Child Session. This value cannot be `null`. |
+| `userCbExecutor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` upon which all callbacks will be posted. For security and consistency, the callbacks posted to this executor MUST be executed serially and in the order they were posted, as guaranteed by executors such as newSingleThreadExecutor This value cannot be `null`. |
+| `ikeSessionCallback` | [IkeSessionCallback](IkeSessionCallback.md): the IkeSessionCallback interface to notify callers of state changes within the IkeSession. This value cannot be `null`. |
+| `firstChildSessionCallback` | [ChildSessionCallback](ChildSessionCallback.md): the ChildSessionCallback interface to notify callers of state changes within the first Child Session. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
 |---|---|
-| | an instance of `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#`. |
+| | an instance of IkeSession. |
 
 ## Public methods
 
@@ -84,9 +84,9 @@ fun close(): Unit
 
 Close the IKE session gracefully.
 
-Implements `https://developer.android.com/reference/kotlin/java/lang/AutoCloseable.html#close()`
+Implements close
 
-Upon closure, `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onClosed()` or `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onClosedWithException(android.net.ipsec.ike.exceptions.IkeException)` will be fired.
+Upon closure, onClosed or onClosedWithException will be fired.
 
 Closing an IKE Session implicitly closes any remaining Child Sessions negotiated under it. Users SHOULD stop all outbound traffic that uses these Child Sessions (`https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#` pairs) before calling this method. Otherwise IPsec packets will be dropped due to the lack of a valid `https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#`.
 
@@ -106,11 +106,11 @@ fun closeChildSession(childSessionCallback: ChildSessionCallback): Unit
 
 Delete a Child Session.
 
-Upon closure, `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onClosed()` will be fired.
+Upon closure, onClosed will be fired.
 
 | Parameters ||
 |---|---|
-| `childSessionCallback` | [ChildSessionCallback](ChildSessionCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback` instance that uniquely identify the Child Session. This value cannot be `null`. |
+| `childSessionCallback` | [ChildSessionCallback](ChildSessionCallback.md): The ChildSessionCallback instance that uniquely identify the Child Session. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -124,7 +124,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun dump(pw: PrintWriter): Unit
 ```
 
-Dumps the state of `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#` information for the clients
+Dumps the state of IkeSession information for the clients
 
 | Parameters ||
 |---|---|
@@ -166,7 +166,7 @@ fun kill(): Unit
 
 Terminate (forcibly close) the IKE session.
 
-Upon closing, `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSessionCallback#onClosed()` will be fired.
+Upon closing, onClosed will be fired.
 
 Closing an IKE Session implicitly closes any remaining Child Sessions negotiated under it. Users SHOULD stop all outbound traffic that uses these Child Sessions (`https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#` pairs) before calling this method. Otherwise IPsec packets will be dropped due to the lack of a valid `https://developer.android.com/reference/kotlin/android/net/IpSecTransform.html#`.
 
@@ -185,16 +185,16 @@ fun openChildSession(
 
 Request a new Child Session.
 
-Users MUST provide a unique `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback` instance for each new Child Session.
+Users MUST provide a unique ChildSessionCallback instance for each new Child Session.
 
-Upon setup, `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback#onOpened(android.net.ipsec.ike.ChildSessionConfiguration)` will be fired.
+Upon setup, onOpened will be fired.
 
 FEATURE_IPSEC_TUNNELS is required for setting up a tunnel mode Child SA.
 
 | Parameters ||
 |---|---|
-| `childSessionParams` | [ChildSessionParams](ChildSessionParams.md): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionParams` that contains the Child Session configurations to negotiate. This value cannot be `null`. |
-| `childSessionCallback` | [ChildSessionCallback](ChildSessionCallback.md): the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/ChildSessionCallback` interface to notify users the state changes of the Child Session. It will be posted to the callback `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` of this `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeSession#`. This value cannot be `null`. |
+| `childSessionParams` | [ChildSessionParams](ChildSessionParams.md): the ChildSessionParams that contains the Child Session configurations to negotiate. This value cannot be `null`. |
+| `childSessionCallback` | [ChildSessionCallback](ChildSessionCallback.md): the ChildSessionCallback interface to notify users the state changes of the Child Session. It will be posted to the callback `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` of this IkeSession. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

@@ -65,21 +65,21 @@ The TextClassifier may be used to understand the meaning of text, as well as gen
 
 | Public methods ||
 |---|---|
-| open [TextClassification](TextClassification.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(android.view.textclassifier.TextClassification.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification.Request)` Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text. |
-| open [TextClassification](TextClassification.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#destroy()()` Destroys this TextClassifier. |
+| open [TextClassification](TextClassification.md) | classifyText Classifies the specified text and returns a TextClassification object that can be used to generate a widget for handling the classified text. |
+| open [TextClassification](TextClassification.md) | classifyText Classifies the specified text and returns a TextClassification object that can be used to generate a widget for handling the classified text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | destroy Destroys this TextClassifier. |
 | --- | --- |
-| open [TextLanguage](TextLanguage.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#detectLanguage(android.view.textclassifier.TextLanguage.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage.Request)` Detects the language of the text in the given request. |
-| open [TextLinks](TextLinks.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#generateLinks(android.view.textclassifier.TextLinks.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.Request)` Generates and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks` that may be applied to the text to annotate it with links information. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#getMaxGenerateLinksTextLength()()` Returns the maximal length of text that can be processed by generateLinks. |
+| open [TextLanguage](TextLanguage.md) | detectLanguage Detects the language of the text in the given request. |
+| open [TextLinks](TextLinks.md) | generateLinks Generates and returns a TextLinks that may be applied to the text to annotate it with links information. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxGenerateLinksTextLength Returns the maximal length of text that can be processed by generateLinks. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()()` Returns whether or not this TextClassifier has been destroyed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onSelectionEvent(android.view.textclassifier.SelectionEvent)(event: https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent)` **NOTE:** Use `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onTextClassifierEvent(android.view.textclassifier.TextClassifierEvent)` instead. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onTextClassifierEvent(android.view.textclassifier.TextClassifierEvent)(event: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent)` Reports a text classifier event. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDestroyed Returns whether or not this TextClassifier has been destroyed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSelectionEvent **NOTE:** Use onTextClassifierEvent instead. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onTextClassifierEvent Reports a text classifier event. |
 | --- | --- |
-| open [ConversationActions](ConversationActions.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestConversationActions(android.view.textclassifier.ConversationActions.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions.Request)` Suggests and returns a list of actions according to the given conversation. |
-| open [TextSelection](TextSelection.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(android.view.textclassifier.TextSelection.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection.Request)` Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
-| open [TextSelection](TextSelection.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, selectionStartIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, selectionEndIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
+| open [ConversationActions](ConversationActions.md) | suggestConversationActions Suggests and returns a list of actions according to the given conversation. |
+| open [TextSelection](TextSelection.md) | suggestSelection Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
+| open [TextSelection](TextSelection.md) | suggestSelection Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
 | --- | --- |
 
 | Properties ||
@@ -112,7 +112,7 @@ static val EXTRA_FROM_TEXT_CLASSIFIER: String
 
 Extra that is included on activity intents coming from a TextClassifier when it suggests actions to its caller.
 
-All `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#` implementations should make sure this extra exists in their generated intents.
+All TextClassifier implementations should make sure this extra exists in their generated intents.
 
  Value: "android.view.textclassifier.extra.FROM_TEXT_CLASSIFIER"
 
@@ -462,11 +462,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun classifyText(request: TextClassification.Request): TextClassification
 ```
 
-Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text.
+Classifies the specified text and returns a TextClassification object that can be used to generate a widget for handling the classified text.
 
 **NOTE:**Call on a worker thread.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`. 
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -475,7 +475,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` | This value cannot be `null`. |
+| TextClassification | This value cannot be `null`. |
 
 ### classifyText
 
@@ -490,13 +490,13 @@ open fun classifyText(
 ): TextClassification
 ```
 
-Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text.
+Classifies the specified text and returns a TextClassification object that can be used to generate a widget for handling the classified text.
 
 **NOTE:**Call on a worker thread.
 
-**NOTE:** Do not implement. The default implementation of this method calls `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(android.view.textclassifier.TextClassification.Request)`. If that method calls this method, a stack overflow error will happen.
+**NOTE:** Do not implement. The default implementation of this method calls classifyText. If that method calls this method, a stack overflow error will happen.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`. 
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -509,7 +509,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` | This value cannot be `null`. |
+| TextClassification | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -517,7 +517,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(android.view.textclassifier.TextClassification.Request)`
+- classifyText
 
 ### destroy
 
@@ -529,7 +529,7 @@ open fun destroy(): Unit
 
 Destroys this TextClassifier.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to its methods should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`.
+**NOTE:** If a TextClassifier has been destroyed, calls to its methods should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed.
 
 Subsequent calls to this method are no-ops.
 
@@ -545,16 +545,16 @@ Detects the language of the text in the given request.
 
 **NOTE:**Call on a worker thread.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`. 
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
 |---|---|
-| `request` | [TextLanguage.Request](../android/view/textclassifier/TextLanguage.Request.md): the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage` request. This value cannot be `null`. |
+| `request` | [TextLanguage.Request](../android/view/textclassifier/TextLanguage.Request.md): the TextLanguage request. This value cannot be `null`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage` | the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage` result. This value cannot be `null`. |
+| TextLanguage | the TextLanguage result. This value cannot be `null`. |
 
 ### generateLinks
 
@@ -564,11 +564,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun generateLinks(request: TextLinks.Request): TextLinks
 ```
 
-Generates and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks` that may be applied to the text to annotate it with links information.
+Generates and returns a TextLinks that may be applied to the text to annotate it with links information.
 
 **NOTE:**Call on a worker thread.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`. 
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -577,11 +577,11 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks` | This value cannot be `null`. |
+| TextLinks | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#getMaxGenerateLinksTextLength()`
+- getMaxGenerateLinksTextLength
 
 ### getMaxGenerateLinksTextLength
 
@@ -593,11 +593,11 @@ open fun getMaxGenerateLinksTextLength(): Int
 
 Returns the maximal length of text that can be processed by generateLinks.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`. 
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#generateLinks(android.view.textclassifier.TextLinks.Request)`
+- generateLinks
 
 ### isDestroyed
 
@@ -612,7 +612,7 @@ Returns whether or not this TextClassifier has been destroyed.
 **NOTE:** If a TextClassifier has been destroyed, caller should not interact with the classifier and an attempt to do so would throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. However, this method should never throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#destroy()`
+- destroy
 
 ### onSelectionEvent
 
@@ -622,11 +622,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun onSelectionEvent(event: SelectionEvent): Unit
 ```
 
-**NOTE:** Use `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onTextClassifierEvent(android.view.textclassifier.TextClassifierEvent)` instead.
+**NOTE:** Use onTextClassifierEvent instead.
 
 Reports a selection event.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`.
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed.
 
 | Parameters ||
 |---|---|
@@ -654,7 +654,7 @@ Reports a text classifier event.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`
+- isDestroyed
 
 ### suggestConversationActions
 
@@ -673,7 +673,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions` | This value cannot be `null`. |
+| ConversationActions | This value cannot be `null`. |
 
 ### suggestSelection
 
@@ -687,7 +687,7 @@ Returns suggested text selection start and end indices, recognized entity types,
 
 **NOTE:**Call on a worker thread.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`. 
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -696,7 +696,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection` | This value cannot be `null`. |
+| TextSelection | This value cannot be `null`. |
 
 ### suggestSelection
 
@@ -715,9 +715,9 @@ Returns suggested text selection start and end indices, recognized entity types,
 
 **NOTE:**Call on a worker thread.
 
-**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()`.
+**NOTE:** If a TextClassifier has been destroyed, calls to this method should throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. See isDestroyed.
 
-**NOTE:** Do not implement. The default implementation of this method calls `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(android.view.textclassifier.TextSelection.Request)`. If that method calls this method, a stack overflow error will happen. 
+**NOTE:** Do not implement. The default implementation of this method calls suggestSelection. If that method calls this method, a stack overflow error will happen. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -730,7 +730,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection` | This value cannot be `null`. |
+| TextSelection | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -738,7 +738,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(android.view.textclassifier.TextSelection.Request)`
+- suggestSelection
 
 ## Properties
 

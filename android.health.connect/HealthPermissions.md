@@ -39,7 +39,7 @@ Apps must support `https://developer.android.com/reference/kotlin/android/conten
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_ELEVATION_GAINED:kotlin.String` Allows an application to read the user's elevation gained data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_EXERCISE:kotlin.String` Allows an application to read the user's exercise data. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_EXERCISE_ROUTES:kotlin.String` Allows an application to read `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_EXERCISE_ROUTES:kotlin.String` Allows an application to read ExerciseRoute. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_FLOORS_CLIMBED:kotlin.String` Allows an application to read the user's floors climbed data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/HealthPermissions#READ_HEALTH_DATA_HISTORY:kotlin.String` Allows an application to read the entire history of health data (of any type). |
 | --- | --- |
@@ -548,11 +548,11 @@ Also in [U Extensions 12](https://developer.android.com/sdkExtensions)
 static val READ_EXERCISE_ROUTES: String
 ```
 
-Allows an application to read `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute`.
+Allows an application to read ExerciseRoute.
 
 This permission can only be granted manually by a user in Health Connect settings or in the route request activity which can be launched using ACTION_REQUEST_EXERCISE_ROUTE. Attempts to request the permission by applications will be ignored.
 
-Applications should check if the permission has been granted before reading `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseRoute`.
+Applications should check if the permission has been granted before reading ExerciseRoute.
 
 Protection level: dangerous.
 

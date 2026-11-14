@@ -16,27 +16,27 @@ Class `Object` is the root of the class hierarchy. Every class has `Object` as a
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Object#Object()()` Constructs a new object. |
+| Object Constructs a new object. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Object#getClass()()` Returns the runtime class of this `Object`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()()` Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Class](Class.md)\<\*\> | getClass Returns the runtime class of this `Object`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#notify()()` Wakes up a single thread that is waiting on this object's monitor. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#notifyAll()()` Wakes up all threads that are waiting on this object's monitor. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#toString()()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notify Wakes up a single thread that is waiting on this object's monitor. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | notifyAll Wakes up all threads that are waiting on this object's monitor. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#wait()()` Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long)(timeoutMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int)(timeoutMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | wait Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | wait Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | wait Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#clone()()` Creates and returns a copy of this object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Creates and returns a copy of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public constructors
 
@@ -82,7 +82,7 @@ An equivalence relation partitions the elements it operates on into *equivalence
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()`
+- hashCode
 - `https://developer.android.com/reference/kotlin/java/util/HashMap.html#`
 
 ### getClass
@@ -118,8 +118,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -127,8 +127,8 @@ The general contract of `hashCode` is:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)`
-- `https://developer.android.com/reference/kotlin/java/lang/System#identityHashCode(kotlin.Any)`
+- equals
+- identityHashCode
 
 ### notify
 
@@ -156,8 +156,8 @@ Only one thread at a time can own an object's monitor.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notifyAll()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait()`
+- notifyAll
+- wait
 
 ### notifyAll
 
@@ -179,8 +179,8 @@ This method should only be called by a thread that is the owner of this object's
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notify()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait()`
+- notify
+- wait
 
 ### toString
 
@@ -206,7 +206,7 @@ fun wait(): Unit
 
 Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*.
 
-In all respects, this method behaves as if `wait(0L, 0)` had been called. See the specification of the `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int)` method for details.
+In all respects, this method behaves as if `wait(0L, 0)` had been called. See the specification of the wait method for details.
 
 | Exceptions ||
 |---|---|
@@ -215,10 +215,10 @@ In all respects, this method behaves as if `wait(0L, 0)` had been called. See th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notify()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notifyAll()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int)`
+- notify
+- notifyAll
+- wait
+- wait
 
 ### wait
 
@@ -230,7 +230,7 @@ fun wait(timeoutMillis: Long): Unit
 
 Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed.
 
-In all respects, this method behaves as if `wait(timeoutMillis, 0)` had been called. See the specification of the `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int)` method for details.
+In all respects, this method behaves as if `wait(timeoutMillis, 0)` had been called. See the specification of the wait method for details.
 
 | Parameters ||
 |---|---|
@@ -245,10 +245,10 @@ In all respects, this method behaves as if `wait(timeoutMillis, 0)` had been cal
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notify()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notifyAll()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long,%20kotlin.Int)`
+- notify
+- notifyAll
+- wait
+- wait
 
 ### wait
 
@@ -263,7 +263,7 @@ fun wait(
 
 Causes the current thread to wait until it is awakened, typically by being *notified* or *interrupted*, or until a certain amount of real time has elapsed.
 
-The current thread must own this object's monitor lock. See the `https://developer.android.com/reference/kotlin/java/lang/Object#notify()` method for a description of the ways in which a thread can become the owner of a monitor lock.
+The current thread must own this object's monitor lock. See the notify method for a description of the ways in which a thread can become the owner of a monitor lock.
 
 This method causes the current thread (referred to here as T) to place itself in the wait set for this object and then to relinquish any and all synchronization claims on this object. Note that only the locks on this object are relinquished; any other objects on which the current thread may be synchronized remain locked while the thread waits.
 
@@ -297,10 +297,10 @@ If the current thread is [interrupted](Thread.md)) by any thread before or while
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notify()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#notifyAll()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait()`
-- `https://developer.android.com/reference/kotlin/java/lang/Object#wait(kotlin.Long)`
+- notify
+- notifyAll
+- wait
+- wait
 
 ## Protected methods
 
@@ -345,7 +345,7 @@ By convention, the object returned by this method should be independent of this 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Cloneable`
+- Cloneable
 
 ### finalize
 
@@ -375,5 +375,5 @@ Any exception thrown by the `finalize` method causes the finalization of this ob
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference`
-- `https://developer.android.com/reference/kotlin/java/lang/ref/PhantomReference`
+- WeakReference
+- PhantomReference

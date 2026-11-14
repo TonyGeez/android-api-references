@@ -10,7 +10,7 @@ class DexFile
 | --- | --- |
 | ↳ | [dalvik.system.DexFile](DexFile.md) |
 
-Loads DEX files. This class is meant for internal use and should not be used by applications. Applications should not instantiate this class. It will hurt performance in most cases and will lead to incorrect execution of bytecode in the worst case. Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **Non-static APIs will be removed in a future Android release**.
+Loads DEX files. This class is meant for internal use and should not be used by applications. Applications should not instantiate this class. It will hurt performance in most cases and will lead to incorrect execution of bytecode in the worst case. Applications should use one of the standard classloaders such as PathClassLoader instead. **Non-static APIs will be removed in a future Android release**.
 
 ## Summary
 
@@ -20,24 +20,24 @@ Loads DEX files. This class is meant for internal use and should not be used by 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#DexFile(java.io.File)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!)` Opens a DEX file from a given File object. |
-| `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#DexFile(kotlin.String)(fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Opens a DEX file from a given filename. |
+| DexFile Opens a DEX file from a given File object. |
+| DexFile Opens a DEX file from a given filename. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#close()()` Closes the DEX file. |
-| [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#entries()()` Enumerate the names of the classes in this DEX file. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#getName()()` Gets the name of the (already opened) DEX file. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Closes the DEX file. |
+| [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | entries Enumerate the names of the classes in this DEX file. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Gets the name of the (already opened) DEX file. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#isDexOptNeeded(kotlin.String)(fileName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the VM believes that the apk/jar file is out of date and should be passed through "dexopt" again. |
-| [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#loadClass(kotlin.String,%20java.lang.ClassLoader)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Loads a class. |
-| static [DexFile](DexFile.md)! | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#loadDex(kotlin.String,%20kotlin.String,%20kotlin.Int)(sourcePathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, outputPathName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a DEX file, specifying the file in which the optimized DEX data should be written. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDexOptNeeded Returns true if the VM believes that the apk/jar file is out of date and should be passed through "dexopt" again. |
+| [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | loadClass Loads a class. |
+| static [DexFile](DexFile.md)! | loadDex Open a DEX file, specifying the file in which the optimized DEX data should be written. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/dalvik/system/DexFile#finalize()()` Called when the class is finalized. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called when the class is finalized. |
 
 ## Public constructors
 
@@ -49,7 +49,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DexFile(file: File!)
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Opens a DEX file from a given File object.
 
@@ -61,7 +61,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 DexFile(fileName: String!)
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Opens a DEX file from a given filename.
 
@@ -76,7 +76,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 fun close(): Unit
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Closes the DEX file.
 
@@ -95,7 +95,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 fun entries(): Enumeration<String!>!
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Enumerate the names of the classes in this DEX file.
 
@@ -112,7 +112,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 fun getName(): String!
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Gets the name of the (already opened) DEX file.
 
@@ -160,11 +160,11 @@ fun loadClass(
 ): Class<Any!>!
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Loads a class. Returns the class on success, or a `null` reference on failure.
 
-If you are not calling this from a class loader, this is most likely not going to do what you want. Use `https://developer.android.com/reference/kotlin/java/lang/Class.html#forName(kotlin.String)` instead.
+If you are not calling this from a class loader, this is most likely not going to do what you want. Use forName instead.
 
 The method does not throw `https://developer.android.com/reference/kotlin/java/lang/ClassNotFoundException.html#` if the class isn't found because it isn't reasonable to throw exceptions wildly every time a class is not found in the first DEX file we look at.
 
@@ -190,7 +190,7 @@ static fun loadDex(
 ): DexFile!
 ```
 
-**Deprecated:** *Applications should use one of the standard classloaders such as `https://developer.android.com/reference/kotlin/dalvik/system/PathClassLoader` instead. **This API will be removed in a future Android release**.*
+**Deprecated:** *Applications should use one of the standard classloaders such as PathClassLoader instead. **This API will be removed in a future Android release**.*
 
 Open a DEX file, specifying the file in which the optimized DEX data should be written. If the optimized form exists and appears to be current, it will be used; if not, the VM will attempt to regenerate it.
 

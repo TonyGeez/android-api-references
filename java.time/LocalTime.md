@@ -24,79 +24,79 @@ This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.
 
 | Public methods ||
 |---|---|
-| [Temporal](../java.time.temporal/Temporal.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have the same time as this object. |
-| [LocalDateTime](LocalDateTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#atDate(java.time.LocalDate)(date: https://developer.android.com/reference/kotlin/java/time/LocalDate!)` Combines this time with a date to create a `LocalDateTime`. |
-| [OffsetTime](OffsetTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#atOffset(java.time.ZoneOffset)(offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Combines this time with an offset to create an `OffsetTime`. |
+| [Temporal](../java.time.temporal/Temporal.md)! | adjustInto Adjusts the specified temporal object to have the same time as this object. |
+| [LocalDateTime](LocalDateTime.md)! | atDate Combines this time with a date to create a `LocalDateTime`. |
+| [OffsetTime](OffsetTime.md)! | atOffset Combines this time with an offset to create an `OffsetTime`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#compareTo(java.time.LocalTime)(other: https://developer.android.com/reference/kotlin/java/time/LocalTime#!)` Compares this time to another time. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this time is equal to another time. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#format(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Formats this time using the specified formatter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this time to another time. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks if this time is equal to another time. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | format Formats this time using the specified formatter. |
 | --- | --- |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `LocalTime` from a temporal object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this time as an `int`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#getHour()()` Gets the hour-of-day field. |
+| static [LocalTime](LocalTime.md)! | from Obtains an instance of `LocalTime` from a temporal object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get Gets the value of the specified field from this time as an `int`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHour Gets the hour-of-day field. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this time as a `long`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#getMinute()()` Gets the minute-of-hour field. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#getNano()()` Gets the nano-of-second field. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Gets the value of the specified field from this time as a `long`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinute Gets the minute-of-hour field. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNano Gets the nano-of-second field. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#getSecond()()` Gets the second-of-minute field. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#hashCode()()` A hash code for this time. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#isAfter(java.time.LocalTime)(other: https://developer.android.com/reference/kotlin/java/time/LocalTime#!)` Checks if this time is after the specified time. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSecond Gets the second-of-minute field. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode A hash code for this time. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAfter Checks if this time is after the specified time. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#isBefore(java.time.LocalTime)(other: https://developer.android.com/reference/kotlin/java/time/LocalTime#!)` Checks if this time is before the specified time. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#isSupported(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Checks if the specified field is supported. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#isSupported(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Checks if the specified unit is supported. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isBefore Checks if this time is before the specified time. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSupported Checks if the specified field is supported. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSupported Checks if the specified unit is supported. |
 | --- | --- |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#minus(java.time.temporal.TemporalAmount)(amountToSubtract: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this time with the specified amount subtracted. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this time with the specified amount subtracted. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#minusHours(kotlin.Long)(hoursToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of hours subtracted. |
+| [LocalTime](LocalTime.md)! | minus Returns a copy of this time with the specified amount subtracted. |
+| [LocalTime](LocalTime.md)! | minus Returns a copy of this time with the specified amount subtracted. |
+| [LocalTime](LocalTime.md)! | minusHours Returns a copy of this `LocalTime` with the specified number of hours subtracted. |
 | --- | --- |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#minusMinutes(kotlin.Long)(minutesToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of minutes subtracted. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#minusNanos(kotlin.Long)(nanosToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of nanoseconds subtracted. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#minusSeconds(kotlin.Long)(secondsToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of seconds subtracted. |
+| [LocalTime](LocalTime.md)! | minusMinutes Returns a copy of this `LocalTime` with the specified number of minutes subtracted. |
+| [LocalTime](LocalTime.md)! | minusNanos Returns a copy of this `LocalTime` with the specified number of nanoseconds subtracted. |
+| [LocalTime](LocalTime.md)! | minusSeconds Returns a copy of this `LocalTime` with the specified number of seconds subtracted. |
 | --- | --- |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#now()()` Obtains the current time from the system clock in the default time-zone. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current time from the specified clock. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains the current time from the system clock in the specified time-zone. |
+| static [LocalTime](LocalTime.md)! | now Obtains the current time from the system clock in the default time-zone. |
+| static [LocalTime](LocalTime.md)! | now Obtains the current time from the specified clock. |
+| static [LocalTime](LocalTime.md)! | now Obtains the current time from the system clock in the specified time-zone. |
 | --- | --- |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#of(kotlin.Int,%20kotlin.Int)(hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalTime` from an hour and minute. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalTime` from an hour, minute and second. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `LocalTime` from an hour, minute, second and nanosecond. |
+| static [LocalTime](LocalTime.md)! | of Obtains an instance of `LocalTime` from an hour and minute. |
+| static [LocalTime](LocalTime.md)! | of Obtains an instance of `LocalTime` from an hour, minute and second. |
+| static [LocalTime](LocalTime.md)! | of Obtains an instance of `LocalTime` from an hour, minute, second and nanosecond. |
 | --- | --- |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#ofInstant(java.time.Instant,%20java.time.ZoneId)(instant: https://developer.android.com/reference/kotlin/java/time/Instant!, zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains an instance of `LocalTime` from an `Instant` and zone ID. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#ofNanoOfDay(kotlin.Long)(nanoOfDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an instance of `LocalTime` from a nanos-of-day value. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#ofSecondOfDay(kotlin.Long)(secondOfDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Obtains an instance of `LocalTime` from a second-of-day value. |
+| static [LocalTime](LocalTime.md)! | ofInstant Obtains an instance of `LocalTime` from an `Instant` and zone ID. |
+| static [LocalTime](LocalTime.md)! | ofNanoOfDay Obtains an instance of `LocalTime` from a nanos-of-day value. |
+| static [LocalTime](LocalTime.md)! | ofSecondOfDay Obtains an instance of `LocalTime` from a second-of-day value. |
 | --- | --- |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `LocalTime` from a text string such as `10:15`. |
-| static [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Obtains an instance of `LocalTime` from a text string using a specific formatter. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#plus(java.time.temporal.TemporalAmount)(amountToAdd: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this time with the specified amount added. |
+| static [LocalTime](LocalTime.md)! | parse Obtains an instance of `LocalTime` from a text string such as `10:15`. |
+| static [LocalTime](LocalTime.md)! | parse Obtains an instance of `LocalTime` from a text string using a specific formatter. |
+| [LocalTime](LocalTime.md)! | plus Returns a copy of this time with the specified amount added. |
 | --- | --- |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this time with the specified amount added. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusHours(kotlin.Long)(hoursToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of hours added. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusMinutes(kotlin.Long)(minutesToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of minutes added. |
+| [LocalTime](LocalTime.md)! | plus Returns a copy of this time with the specified amount added. |
+| [LocalTime](LocalTime.md)! | plusHours Returns a copy of this `LocalTime` with the specified number of hours added. |
+| [LocalTime](LocalTime.md)! | plusMinutes Returns a copy of this `LocalTime` with the specified number of minutes added. |
 | --- | --- |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusNanos(kotlin.Long)(nanosToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of nanoseconds added. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusSeconds(kotlin.Long)(secondstoAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `LocalTime` with the specified number of seconds added. |
-| R | `https://developer.android.com/reference/kotlin/java/time/LocalTime#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this time using the specified query. |
+| [LocalTime](LocalTime.md)! | plusNanos Returns a copy of this `LocalTime` with the specified number of nanoseconds added. |
+| [LocalTime](LocalTime.md)! | plusSeconds Returns a copy of this `LocalTime` with the specified number of seconds added. |
+| R | query Queries this time using the specified query. |
 | --- | --- |
-| [ValueRange](../java.time.temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#toEpochSecond(java.time.LocalDate,%20java.time.ZoneOffset)(date: https://developer.android.com/reference/kotlin/java/time/LocalDate!, offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset!)` Converts this `LocalTime` to the number of seconds since the epoch of 1970-01-01T00:00:00Z. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#toNanoOfDay()()` Extracts the time as nanos of day, from `0` to `24 * 60 * 60 * 1,000,000,000 - 1`. |
+| [ValueRange](../java.time.temporal/ValueRange.md)! | range Gets the range of valid values for the specified field. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toEpochSecond Converts this `LocalTime` to the number of seconds since the epoch of 1970-01-01T00:00:00Z. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toNanoOfDay Extracts the time as nanos of day, from `0` to `24 * 60 * 60 * 1,000,000,000 - 1`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#toSecondOfDay()()` Extracts the time as seconds of day, from `0` to `24 * 60 * 60 - 1`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#toString()()` Outputs this time as a `String`, such as `10:15`. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#truncatedTo(java.time.temporal.TemporalUnit)(unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this `LocalTime` with the time truncated. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toSecondOfDay Extracts the time as seconds of day, from `0` to `24 * 60 * 60 - 1`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Outputs this time as a `String`, such as `10:15`. |
+| [LocalTime](LocalTime.md)! | truncatedTo Returns a copy of this `LocalTime` with the time truncated. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/LocalTime#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit)(endExclusive: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Calculates the amount of time until another time in terms of the specified unit. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster!)` Returns an adjusted copy of this time. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this time with the specified field set to a new value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | until Calculates the amount of time until another time in terms of the specified unit. |
+| [LocalTime](LocalTime.md)! | with Returns an adjusted copy of this time. |
+| [LocalTime](LocalTime.md)! | with Returns a copy of this time with the specified field set to a new value. |
 | --- | --- |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#withHour(kotlin.Int)(hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalTime` with the hour-of-day altered. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#withMinute(kotlin.Int)(minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalTime` with the minute-of-hour altered. |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#withNano(kotlin.Int)(nanoOfSecond: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalTime` with the nano-of-second altered. |
+| [LocalTime](LocalTime.md)! | withHour Returns a copy of this `LocalTime` with the hour-of-day altered. |
+| [LocalTime](LocalTime.md)! | withMinute Returns a copy of this `LocalTime` with the minute-of-hour altered. |
+| [LocalTime](LocalTime.md)! | withNano Returns a copy of this `LocalTime` with the nano-of-second altered. |
 | --- | --- |
-| [LocalTime](LocalTime.md)! | `https://developer.android.com/reference/kotlin/java/time/LocalTime#withSecond(kotlin.Int)(second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `LocalTime` with the second-of-minute altered. |
+| [LocalTime](LocalTime.md)! | withSecond Returns a copy of this `LocalTime` with the second-of-minute altered. |
 
 | Properties ||
 |---|---|
@@ -120,9 +120,9 @@ Adjusts the specified temporal object to have the same time as this object.
 
 This returns a temporal object of the same observable type as the input with the time changed to be the same as this.
 
-The adjustment is equivalent to using `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalField,%20kotlin.Long)` passing `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` as the field.
+The adjustment is equivalent to using with passing ChronoField as the field.
 
-In most cases, it is clearer to reverse the calling pattern by using `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal#with(java.time.temporal.TemporalAdjuster)`:
+In most cases, it is clearer to reverse the calling pattern by using with:
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -214,8 +214,8 @@ The comparison is based on the time-line position of the local times within a da
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/LocalTime#isBefore(java.time.LocalTime)`
-- `https://developer.android.com/reference/kotlin/java/time/LocalTime#isAfter(java.time.LocalTime)`
+- isBefore
+- isAfter
 
 ### equals
 
@@ -229,7 +229,7 @@ Checks if this time is equal to another time.
 
 The comparison is based on the time-line position of the time within a day.
 
-Only objects of type `LocalTime` are compared, other types return false. To compare the date of two `TemporalAccessor` instances, use `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` as a comparator.
+Only objects of type `LocalTime` are compared, other types return false. To compare the date of two `TemporalAccessor` instances, use ChronoField as a comparator.
 
 | Parameters ||
 |---|---|
@@ -275,9 +275,9 @@ Obtains an instance of `LocalTime` from a temporal object.
 
 This obtains a local time based on the specified temporal. A `TemporalAccessor` represents an arbitrary set of date and time information, which this factory converts to an instance of `LocalTime`.
 
-The conversion uses the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localTime()` query, which relies on extracting the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` field.
+The conversion uses the localTime query, which relies on extracting the ChronoField field.
 
-This method matches the signature of the functional interface `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery` allowing it to be used as a query via method reference, `LocalTime::from`.
+This method matches the signature of the functional interface TemporalQuery allowing it to be used as a query via method reference, `LocalTime::from`.
 
 | Parameters ||
 |---|---|
@@ -303,7 +303,7 @@ Gets the value of the specified field from this time as an `int`.
 
 This queries this time for the value of the specified field. The returned value will always be within the valid range of values for the field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `https://developer.android.com/reference/kotlin/java/time/LocalTime#isSupported(java.time.temporal.TemporalField)` will return valid values based on this time, except `NANO_OF_DAY` and `MICRO_OF_DAY` which are too large to fit in an `int` and throw an `UnsupportedTemporalTypeException`. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a ChronoField then the query is implemented here. The isSupported will return valid values based on this time, except `NANO_OF_DAY` and `MICRO_OF_DAY` which are too large to fit in an `int` and throw an `UnsupportedTemporalTypeException`. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.getFrom(TemporalAccessor)` passing `this` as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
@@ -348,7 +348,7 @@ Gets the value of the specified field from this time as a `long`.
 
 This queries this time for the value of the specified field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `https://developer.android.com/reference/kotlin/java/time/LocalTime#isSupported(java.time.temporal.TemporalField)` will return valid values based on this time. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a ChronoField then the query is implemented here. The isSupported will return valid values based on this time. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.getFrom(TemporalAccessor)` passing `this` as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
@@ -481,9 +481,9 @@ fun isSupported(field: TemporalField!): Boolean
 
 Checks if the specified field is supported.
 
-This checks if this time can be queried for the specified field. If false, then calling the `https://developer.android.com/reference/kotlin/java/time/LocalTime#range(java.time.temporal.TemporalField)`, `https://developer.android.com/reference/kotlin/java/time/LocalTime#get(java.time.temporal.TemporalField)` and `https://developer.android.com/reference/kotlin/java/time/LocalTime#with(java.time.temporal.TemporalField,%20kotlin.Long)` methods will throw an exception.
+This checks if this time can be queried for the specified field. If false, then calling the range, get and with methods will throw an exception.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The supported fields are:
+If the field is a ChronoField then the query is implemented here. The supported fields are:
 
 - `NANO_OF_SECOND`
 - `NANO_OF_DAY`
@@ -523,9 +523,9 @@ fun isSupported(unit: TemporalUnit!): Boolean
 
 Checks if the specified unit is supported.
 
-This checks if the specified unit can be added to, or subtracted from, this time. If false, then calling the `https://developer.android.com/reference/kotlin/java/time/LocalTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)` and `https://developer.android.com/reference/kotlin/java/time/LocalTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)` methods will throw an exception.
+This checks if the specified unit can be added to, or subtracted from, this time. If false, then calling the plus and minus methods will throw an exception.
 
-If the unit is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` then the query is implemented here. The supported units are:
+If the unit is a ChronoUnit then the query is implemented here. The supported units are:
 
 - `NANOS`
 - `MICROS`
@@ -557,9 +557,9 @@ fun minus(amountToSubtract: TemporalAmount!): LocalTime!
 
 Returns a copy of this time with the specified amount subtracted.
 
-This returns a `LocalTime`, based on this one, with the specified amount subtracted. The amount is typically `https://developer.android.com/reference/kotlin/java/time/Duration` but may be any other type implementing the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount` interface.
+This returns a `LocalTime`, based on this one, with the specified amount subtracted. The amount is typically Duration but may be any other type implementing the TemporalAmount interface.
 
-The calculation is delegated to the amount object by calling `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#subtractFrom(java.time.temporal.Temporal)`. The amount implementation is free to implement the subtraction in any way it wishes, however it typically calls back to `https://developer.android.com/reference/kotlin/java/time/LocalTime#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)`. Consult the documentation of the amount implementation to determine if it can be successfully subtracted.
+The calculation is delegated to the amount object by calling subtractFrom. The amount implementation is free to implement the subtraction in any way it wishes, however it typically calls back to minus. Consult the documentation of the amount implementation to determine if it can be successfully subtracted.
 
 This instance is immutable and unaffected by this method call.
 
@@ -592,7 +592,7 @@ Returns a copy of this time with the specified amount subtracted.
 
 This returns a `LocalTime`, based on this one, with the amount in terms of the unit subtracted. If it is not possible to subtract the amount, because the unit is not supported or for some other reason, an exception is thrown.
 
-This method is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)` with the amount negated. See that method for a full description of how addition, and thus subtraction, works.
+This method is equivalent to plus with the amount negated. See that method for a full description of how addition, and thus subtraction, works.
 
 This instance is immutable and unaffected by this method call.
 
@@ -710,7 +710,7 @@ static fun now(): LocalTime!
 
 Obtains the current time from the system clock in the default time-zone.
 
-This will query the `https://developer.android.com/reference/kotlin/java/time/Clock#systemDefaultZone()` in the default time-zone to obtain the current time.
+This will query the systemDefaultZone in the default time-zone to obtain the current time.
 
 Using this method will prevent the ability to use an alternate clock for testing because the clock is hard-coded.
 
@@ -728,7 +728,7 @@ static fun now(clock: Clock!): LocalTime!
 
 Obtains the current time from the specified clock.
 
-This will query the specified clock to obtain the current time. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using `https://developer.android.com/reference/kotlin/java/time/Clock`.
+This will query the specified clock to obtain the current time. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using Clock.
 
 | Parameters ||
 |---|---|
@@ -748,7 +748,7 @@ static fun now(zone: ZoneId!): LocalTime!
 
 Obtains the current time from the system clock in the specified time-zone.
 
-This will query the `https://developer.android.com/reference/kotlin/java/time/Clock#system(java.time.ZoneId)` to obtain the current time. Specifying the time-zone avoids dependence on the default time-zone.
+This will query the system to obtain the current time. Specifying the time-zone avoids dependence on the default time-zone.
 
 Using this method will prevent the ability to use an alternate clock for testing because the clock is hard-coded.
 
@@ -986,9 +986,9 @@ fun plus(amountToAdd: TemporalAmount!): LocalTime!
 
 Returns a copy of this time with the specified amount added.
 
-This returns a `LocalTime`, based on this one, with the specified amount added. The amount is typically `https://developer.android.com/reference/kotlin/java/time/Duration` but may be any other type implementing the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount` interface.
+This returns a `LocalTime`, based on this one, with the specified amount added. The amount is typically Duration but may be any other type implementing the TemporalAmount interface.
 
-The calculation is delegated to the amount object by calling `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount#addTo(java.time.temporal.Temporal)`. The amount implementation is free to implement the addition in any way it wishes, however it typically calls back to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)`. Consult the documentation of the amount implementation to determine if it can be successfully added.
+The calculation is delegated to the amount object by calling addTo. The amount implementation is free to implement the addition in any way it wishes, however it typically calls back to plus. Consult the documentation of the amount implementation to determine if it can be successfully added.
 
 This instance is immutable and unaffected by this method call.
 
@@ -1021,15 +1021,15 @@ Returns a copy of this time with the specified amount added.
 
 This returns a `LocalTime`, based on this one, with the amount in terms of the unit added. If it is not possible to add the amount, because the unit is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` then the addition is implemented here. The supported fields behave as follows:
+If the field is a ChronoUnit then the addition is implemented here. The supported fields behave as follows:
 
-- `NANOS` - Returns a `LocalTime` with the specified number of nanoseconds added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusNanos(kotlin.Long)`.
-- `MICROS` - Returns a `LocalTime` with the specified number of microseconds added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusNanos(kotlin.Long)` with the amount multiplied by 1,000.
-- `MILLIS` - Returns a `LocalTime` with the specified number of milliseconds added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusNanos(kotlin.Long)` with the amount multiplied by 1,000,000.
-- `SECONDS` - Returns a `LocalTime` with the specified number of seconds added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusSeconds(kotlin.Long)`.
-- `MINUTES` - Returns a `LocalTime` with the specified number of minutes added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusMinutes(kotlin.Long)`.
-- `HOURS` - Returns a `LocalTime` with the specified number of hours added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusHours(kotlin.Long)`.
-- `HALF_DAYS` - Returns a `LocalTime` with the specified number of half-days added. This is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#plusHours(kotlin.Long)` with the amount multiplied by 12.
+- `NANOS` - Returns a `LocalTime` with the specified number of nanoseconds added. This is equivalent to plusNanos.
+- `MICROS` - Returns a `LocalTime` with the specified number of microseconds added. This is equivalent to plusNanos with the amount multiplied by 1,000.
+- `MILLIS` - Returns a `LocalTime` with the specified number of milliseconds added. This is equivalent to plusNanos with the amount multiplied by 1,000,000.
+- `SECONDS` - Returns a `LocalTime` with the specified number of seconds added. This is equivalent to plusSeconds.
+- `MINUTES` - Returns a `LocalTime` with the specified number of minutes added. This is equivalent to plusMinutes.
+- `HOURS` - Returns a `LocalTime` with the specified number of hours added. This is equivalent to plusHours.
+- `HALF_DAYS` - Returns a `LocalTime` with the specified number of half-days added. This is equivalent to plusHours with the amount multiplied by 12.
 
 All other `ChronoUnit` instances will throw an `UnsupportedTemporalTypeException`.
 
@@ -1153,7 +1153,7 @@ Queries this time using the specified query.
 
 This queries this time using the specified query strategy object. The `TemporalQuery` object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be.
 
-The result of this method is obtained by invoking the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery#queryFrom(java.time.temporal.TemporalAccessor)` method on the specified query passing `this` as the argument.
+The result of this method is obtained by invoking the queryFrom method on the specified query passing `this` as the argument.
 
 | Parameters ||
 |---|---|
@@ -1181,7 +1181,7 @@ Gets the range of valid values for the specified field.
 
 The range object expresses the minimum and maximum valid values for a field. This time is used to enhance the accuracy of the returned range. If it is not possible to return the range, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the query is implemented here. The `https://developer.android.com/reference/kotlin/java/time/LocalTime#isSupported(java.time.temporal.TemporalField)` will return appropriate range instances. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a ChronoField then the query is implemented here. The isSupported will return appropriate range instances. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.rangeRefinedBy(TemporalAccessor)` passing `this` as the argument. Whether the range can be obtained is determined by the field.
 
@@ -1284,9 +1284,9 @@ fun truncatedTo(unit: TemporalUnit!): LocalTime!
 
 Returns a copy of this `LocalTime` with the time truncated.
 
-Truncation returns a copy of the original time with fields smaller than the specified unit set to zero. For example, truncating with the `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` unit will set the second-of-minute and nano-of-second field to zero.
+Truncation returns a copy of the original time with fields smaller than the specified unit set to zero. For example, truncating with the ChronoUnit unit will set the second-of-minute and nano-of-second field to zero.
 
-The unit must have a [duration](../java.time.temporal/TemporalUnit.md)) that divides into the length of a standard day without remainder. This includes all supplied time units on `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit` and `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit`. Other units throw an exception.
+The unit must have a [duration](../java.time.temporal/TemporalUnit.md)) that divides into the length of a standard day without remainder. This includes all supplied time units on ChronoUnit and ChronoUnit. Other units throw an exception.
 
 This instance is immutable and unaffected by this method call.
 
@@ -1316,11 +1316,11 @@ fun until(
 
 Calculates the amount of time until another time in terms of the specified unit.
 
-This calculates the amount of time between two `LocalTime` objects in terms of a single `TemporalUnit`. The start and end points are `this` and the specified time. The result will be negative if the end is before the start. The `Temporal` passed to this method is converted to a `LocalTime` using `https://developer.android.com/reference/kotlin/java/time/LocalTime#from(java.time.temporal.TemporalAccessor)`. For example, the amount in hours between two times can be calculated using `startTime.until(endTime, HOURS)`.
+This calculates the amount of time between two `LocalTime` objects in terms of a single `TemporalUnit`. The start and end points are `this` and the specified time. The result will be negative if the end is before the start. The `Temporal` passed to this method is converted to a `LocalTime` using from. For example, the amount in hours between two times can be calculated using `startTime.until(endTime, HOURS)`.
 
 The calculation returns a whole number, representing the number of complete units between the two times. For example, the amount in hours between 11:30 and 13:29 will only be one hour as it is one minute short of two hours.
 
-There are two equivalent ways of using this method. The first is to invoke this method. The second is to use `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit#between(java.time.temporal.Temporal,%20java.time.temporal.Temporal)`:
+There are two equivalent ways of using this method. The first is to invoke this method. The second is to use between:
 
 ```kotlin
 // these two lines are equivalent
@@ -1330,7 +1330,7 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 The choice should be made based on which makes the code more readable.
 
-The calculation is implemented in this method for `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoUnit`. The units `NANOS`, `MICROS`, `MILLIS`, `SECONDS`, `MINUTES`, `HOURS` and `HALF_DAYS` are supported. Other `ChronoUnit` values will throw an exception.
+The calculation is implemented in this method for ChronoUnit. The units `NANOS`, `MICROS`, `MILLIS`, `SECONDS`, `MINUTES`, `HOURS` and `HALF_DAYS` are supported. Other `ChronoUnit` values will throw an exception.
 
 If the unit is not a `ChronoUnit`, then the result of this method is obtained by invoking `TemporalUnit.between(Temporal, Temporal)` passing `this` as the first argument and the converted input temporal as the second argument.
 
@@ -1366,7 +1366,7 @@ This returns a `LocalTime`, based on this one, with the time adjusted. The adjus
 
 A simple adjuster might simply set the one of the fields, such as the hour field. A more complex adjuster might set the time to the last hour of the day.
 
-The result of this method is obtained by invoking the `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster#adjustInto(java.time.temporal.Temporal)` method on the specified adjuster passing `this` as the argument.
+The result of this method is obtained by invoking the adjustInto method on the specified adjuster passing `this` as the argument.
 
 This instance is immutable and unaffected by this method call.
 
@@ -1398,14 +1398,14 @@ Returns a copy of this time with the specified field set to a new value.
 
 This returns a `LocalTime`, based on this one, with the value for the specified field changed. This can be used to change any supported field, such as the hour, minute or second. If it is not possible to set the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField` then the adjustment is implemented here. The supported fields behave as follows:
+If the field is a ChronoField then the adjustment is implemented here. The supported fields behave as follows:
 
 - `NANO_OF_SECOND` - Returns a `LocalTime` with the specified nano-of-second. The hour, minute and second will be unchanged.
-- `NANO_OF_DAY` - Returns a `LocalTime` with the specified nano-of-day. This completely replaces the time and is equivalent to `https://developer.android.com/reference/kotlin/java/time/LocalTime#ofNanoOfDay(kotlin.Long)`.
+- `NANO_OF_DAY` - Returns a `LocalTime` with the specified nano-of-day. This completely replaces the time and is equivalent to ofNanoOfDay.
 - `MICRO_OF_SECOND` - Returns a `LocalTime` with the nano-of-second replaced by the specified micro-of-second multiplied by 1,000. The hour, minute and second will be unchanged.
-- `MICRO_OF_DAY` - Returns a `LocalTime` with the specified micro-of-day. This completely replaces the time and is equivalent to using `https://developer.android.com/reference/kotlin/java/time/LocalTime#ofNanoOfDay(kotlin.Long)` with the micro-of-day multiplied by 1,000.
+- `MICRO_OF_DAY` - Returns a `LocalTime` with the specified micro-of-day. This completely replaces the time and is equivalent to using ofNanoOfDay with the micro-of-day multiplied by 1,000.
 - `MILLI_OF_SECOND` - Returns a `LocalTime` with the nano-of-second replaced by the specified milli-of-second multiplied by 1,000,000. The hour, minute and second will be unchanged.
-- `MILLI_OF_DAY` - Returns a `LocalTime` with the specified milli-of-day. This completely replaces the time and is equivalent to using `https://developer.android.com/reference/kotlin/java/time/LocalTime#ofNanoOfDay(kotlin.Long)` with the milli-of-day multiplied by 1,000,000.
+- `MILLI_OF_DAY` - Returns a `LocalTime` with the specified milli-of-day. This completely replaces the time and is equivalent to using ofNanoOfDay with the milli-of-day multiplied by 1,000,000.
 - `SECOND_OF_MINUTE` - Returns a `LocalTime` with the specified second-of-minute. The hour, minute and nano-of-second will be unchanged.
 - `SECOND_OF_DAY` - Returns a `LocalTime` with the specified second-of-day. The nano-of-second will be unchanged.
 - `MINUTE_OF_HOUR` - Returns a `LocalTime` with the specified minute-of-hour. The hour, second-of-minute and nano-of-second will be unchanged.

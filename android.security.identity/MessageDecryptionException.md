@@ -26,8 +26,8 @@ Thrown when failing to decrypt a message from the reader device.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/identity/MessageDecryptionException#MessageDecryptionException(kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/MessageDecryptionException#` exception. |
-| `https://developer.android.com/reference/kotlin/android/security/identity/MessageDecryptionException#MessageDecryptionException(kotlin.String,%20kotlin.Throwable)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)` Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/MessageDecryptionException#` exception. |
+| MessageDecryptionException Constructs a new MessageDecryptionException exception. |
+| MessageDecryptionException Constructs a new MessageDecryptionException exception. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ MessageDecryptionException(message: String)
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/MessageDecryptionException#` exception.
+Constructs a new MessageDecryptionException exception.
 
 | Parameters ||
 |---|---|
@@ -59,7 +59,7 @@ MessageDecryptionException(
 
 **Deprecated:** *Use `java.security.KeyStore` with the Android hardware-backed keystore instead.*
 
-Constructs a new `https://developer.android.com/reference/kotlin/android/security/identity/MessageDecryptionException#` exception.
+Constructs a new MessageDecryptionException exception.
 
 | Parameters ||
 |---|---|

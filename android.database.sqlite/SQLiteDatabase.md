@@ -28,7 +28,7 @@ In addition to SQLite's default `BINARY` collator, Android supplies two more, `L
 | Nested classes ||
 |---|---|
 | abstract | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory` Used to allow returning sub-classes of `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` when calling query. |
-| | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams` Wrapper for configuration parameters that are used for opening `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#` |
+| | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams` Wrapper for configuration parameters that are used for opening SQLiteDatabase |
 
 | Constants ||
 |---|---|
@@ -50,7 +50,7 @@ In addition to SQLite's default `BINARY` collator, Android supplies two more, `L
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#JOURNAL_MODE_TRUNCATE:kotlin.String` The `TRUNCATE` journaling mode commits transactions by truncating the rollback journal to zero-length instead of deleting it. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#JOURNAL_MODE_WAL:kotlin.String` The `WAL` journaling mode uses a write-ahead log instead of a rollback journal to implement transactions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#MAX_SQL_CACHE_SIZE:kotlin.Int` Absolute max value that can be set by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setMaxSqlCacheSize(kotlin.Int)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#MAX_SQL_CACHE_SIZE:kotlin.Int` Absolute max value that can be set by setMaxSqlCacheSize. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int` Open flag: Flag for #openDatabase to open the database without support for localized collators. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int` Open flag: Flag for #openDatabase to open the database for reading only. |
@@ -65,138 +65,138 @@ In addition to SQLite's default `BINARY` collator, Android supplies two more, `L
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransaction()()` Begins a transaction in EXCLUSIVE mode. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionNonExclusive()()` Begins a transaction in IMMEDIATE mode. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionReadOnly()()` Begins a transaction in DEFERRED mode, with the android-specific constraint that the transaction is read-only. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginTransaction Begins a transaction in EXCLUSIVE mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginTransactionNonExclusive Begins a transaction in IMMEDIATE mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginTransactionReadOnly Begins a transaction in DEFERRED mode, with the android-specific constraint that the transaction is read-only. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)(transactionListener: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener?)` Begins a transaction in EXCLUSIVE mode. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)(transactionListener: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener?)` Begins a transaction in IMMEDIATE mode. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionWithListenerReadOnly(android.database.sqlite.SQLiteTransactionListener)(transactionListener: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener?)` Begins a transaction in read-only mode with a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener` listener. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginTransactionWithListener Begins a transaction in EXCLUSIVE mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginTransactionWithListenerNonExclusive Begins a transaction in IMMEDIATE mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beginTransactionWithListenerReadOnly Begins a transaction in read-only mode with a SQLiteTransactionListener listener. |
 | --- | --- |
-| [SQLiteStatement](SQLiteStatement.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#compileStatement(kotlin.String)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Compiles an SQL statement into a reusable pre-compiled statement object. |
-| static [SQLiteDatabase](SQLiteDatabase.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#create(android.database.sqlite.SQLiteDatabase.CursorFactory)(factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?)` Create a memory backed SQLite database. |
-| static [SQLiteDatabase](SQLiteDatabase.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#createInMemory(android.database.sqlite.SQLiteDatabase.OpenParams)(openParams: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams)` Create a memory backed SQLite database. |
+| [SQLiteStatement](SQLiteStatement.md)! | compileStatement Compiles an SQL statement into a reusable pre-compiled statement object. |
+| static [SQLiteDatabase](SQLiteDatabase.md) | create Create a memory backed SQLite database. |
+| static [SQLiteDatabase](SQLiteDatabase.md) | createInMemory Create a memory backed SQLite database. |
 | --- | --- |
-| [SQLiteRawStatement](SQLiteRawStatement.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#createRawStatement(kotlin.String)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement` connected to the database. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#delete(kotlin.String,%20kotlin.String,%20kotlin.Array)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, whereClause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, whereArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Convenience method for deleting rows in the database. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#deleteDatabase(java.io.File)(file: https://developer.android.com/reference/kotlin/java/io/File.html#)` Deletes a database including its journal file and other auxiliary files that may have been created by the database engine. |
+| [SQLiteRawStatement](SQLiteRawStatement.md) | createRawStatement Return a SQLiteRawStatement connected to the database. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | delete Convenience method for deleting rows in the database. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteDatabase Deletes a database including its journal file and other auxiliary files that may have been created by the database engine. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#disableWriteAheadLogging()()` This method disables the features enabled by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()()` Write-ahead logging enables parallel execution of queries from multiple threads on the same database, and reduces the likelihood of stalling on filesystem syncs. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#endTransaction()()` End a transaction. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disableWriteAheadLogging This method disables the features enabled by enableWriteAheadLogging. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | enableWriteAheadLogging Write-ahead logging enables parallel execution of queries from multiple threads on the same database, and reduces the likelihood of stalling on filesystem syncs. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | endTransaction End a transaction. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#execPerConnectionSQL(kotlin.String,%20kotlin.Array)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, bindArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Execute the given SQL statement on all connections to this database. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#execSQL(kotlin.String)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Execute a single SQL statement that is NOT a SELECT or any other SQL statement that returns data. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#execSQL(kotlin.String,%20kotlin.Array)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, bindArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` Execute a single SQL statement that is NOT a SELECT/INSERT/UPDATE/DELETE. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | execPerConnectionSQL Execute the given SQL statement on all connections to this database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | execSQL Execute a single SQL statement that is NOT a SELECT or any other SQL statement that returns data. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | execSQL Execute a single SQL statement that is NOT a SELECT/INSERT/UPDATE/DELETE. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#findEditTable(kotlin.String)(tables: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds the name of the first table, which is editable. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](../android.util/Pair.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getAttachedDbs()()` Returns list of full pathnames of all attached databases including the main database by executing 'pragma database_list' on the database. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getLastChangedRowCount()()` Return the number of database rows that were inserted, updated, or deleted by the most recent SQL statement within the current transaction. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | findEditTable Finds the name of the first table, which is editable. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](../android.util/Pair.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | getAttachedDbs Returns list of full pathnames of all attached databases including the main database by executing 'pragma database_list' on the database. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastChangedRowCount Return the number of database rows that were inserted, updated, or deleted by the most recent SQL statement within the current transaction. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getLastInsertRowId()()` Return the "rowid" of the last row to be inserted on the current connection. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getMaximumSize()()` Returns the maximum size the database may grow to. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getPageSize()()` Returns the current database page size, in bytes. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastInsertRowId Return the "rowid" of the last row to be inserted on the current connection. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMaximumSize Returns the maximum size the database may grow to. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPageSize Returns the current database page size, in bytes. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getPath()()` Gets the path to the database file. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getSyncedTables()()` Deprecated. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getTotalChangedRowCount()()` Return the total number of database rows that have been inserted, updated, or deleted on the current connection since it was created. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPath Gets the path to the database file. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getSyncedTables Deprecated. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTotalChangedRowCount Return the total number of database rows that have been inserted, updated, or deleted on the current connection since it was created. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#getVersion()()` Gets the database version. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#inTransaction()()` Returns true if the current thread has a transaction pending. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insert(kotlin.String,%20kotlin.String,%20android.content.ContentValues)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, nullColumnHack: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Convenience method for inserting a row into the database. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVersion Gets the database version. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | inTransaction Returns true if the current thread has a transaction pending. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | insert Convenience method for inserting a row into the database. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insertOrThrow(kotlin.String,%20kotlin.String,%20android.content.ContentValues)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, nullColumnHack: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Convenience method for inserting a row into the database. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insertWithOnConflict(kotlin.String,%20kotlin.String,%20android.content.ContentValues,%20kotlin.Int)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, nullColumnHack: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialValues: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?, conflictAlgorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` General method for inserting a row into the database. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isDatabaseIntegrityOk()()` Runs 'pragma integrity_check' on the given database (and all the attached databases) and returns true if the given database (and all its attached databases) pass integrity_check, false otherwise. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | insertOrThrow Convenience method for inserting a row into the database. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | insertWithOnConflict General method for inserting a row into the database. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDatabaseIntegrityOk Runs 'pragma integrity_check' on the given database (and all the attached databases) and returns true if the given database (and all its attached databases) pass integrity_check, false otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isDbLockedByCurrentThread()()` Returns true if the current thread is holding an active connection to the database. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isDbLockedByOtherThreads()()` Always returns false. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isOpen()()` Returns true if the database is currently open. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDbLockedByCurrentThread Returns true if the current thread is holding an active connection to the database. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDbLockedByOtherThreads Always returns false. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOpen Returns true if the database is currently open. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isReadOnly()()` Returns true if the database is opened as read only. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isWriteAheadLoggingEnabled()()` Returns true if write-ahead logging has been enabled for this database. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#markTableSyncable(kotlin.String,%20kotlin.String)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, deletedTable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Mark this table as syncable. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isReadOnly Returns true if the database is opened as read only. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWriteAheadLoggingEnabled Returns true if write-ahead logging has been enabled for this database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | markTableSyncable Mark this table as syncable. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#markTableSyncable(kotlin.String,%20kotlin.String,%20kotlin.String)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, foreignKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, updateTable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Mark this table as syncable, with the _sync_dirty residing in another table. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#needUpgrade(kotlin.Int)(newVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the new version code is greater than the current database version. |
-| static [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#openDatabase(java.io.File,%20android.database.sqlite.SQLiteDatabase.OpenParams)(path: https://developer.android.com/reference/kotlin/java/io/File.html#, openParams: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams)` Open the database according to the specified `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams` |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | markTableSyncable Mark this table as syncable, with the _sync_dirty residing in another table. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | needUpgrade Returns true if the new version code is greater than the current database version. |
+| static [SQLiteDatabase](SQLiteDatabase.md)! | openDatabase Open the database according to the specified `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams` |
 | --- | --- |
-| static [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#openDatabase(kotlin.String,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open the database according to the flags `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READWRITE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int`. |
-| static [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#openDatabase(kotlin.String,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Int,%20android.database.DatabaseErrorHandler)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Open the database according to the flags `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READWRITE:kotlin.Int``https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int``https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int`. |
-| static [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#openOrCreateDatabase(java.io.File,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(file: https://developer.android.com/reference/kotlin/java/io/File.html#, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?)` Equivalent to openDatabase(file.getPath(), factory, CREATE_IF_NECESSARY). |
+| static [SQLiteDatabase](SQLiteDatabase.md)! | openDatabase Open the database according to the flags `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READWRITE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int`. |
+| static [SQLiteDatabase](SQLiteDatabase.md)! | openDatabase Open the database according to the flags `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READWRITE:kotlin.Int``https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int``https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int`. |
+| static [SQLiteDatabase](SQLiteDatabase.md)! | openOrCreateDatabase Equivalent to openDatabase(file.getPath(), factory, CREATE_IF_NECESSARY). |
 | --- | --- |
-| static [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#openOrCreateDatabase(kotlin.String,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?)` Equivalent to openDatabase(path, factory, CREATE_IF_NECESSARY). |
-| static [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#openOrCreateDatabase(kotlin.String,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Equivalent to openDatabase(path, factory, CREATE_IF_NECESSARY, errorHandler). |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#query(kotlin.Boolean,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)(distinct: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, groupBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, having: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, orderBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| static [SQLiteDatabase](SQLiteDatabase.md)! | openOrCreateDatabase Equivalent to openDatabase(path, factory, CREATE_IF_NECESSARY). |
+| static [SQLiteDatabase](SQLiteDatabase.md)! | openOrCreateDatabase Equivalent to openDatabase(path, factory, CREATE_IF_NECESSARY, errorHandler). |
+| [Cursor](../android.database/Cursor.md) | query Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
 | --- | --- |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#query(kotlin.Boolean,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.CancellationSignal)(distinct: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, groupBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, having: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, orderBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#query(kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.String)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, groupBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, having: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, orderBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Query the given table, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#query(kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, groupBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, having: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, orderBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Query the given table, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | query Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | query Query the given table, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | query Query the given table, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
 | --- | --- |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Boolean,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)(cursorFactory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, distinct: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, groupBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, having: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, orderBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Boolean,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20android.os.CancellationSignal)(cursorFactory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, distinct: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, columns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, groupBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, having: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, orderBy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#rawQuery(kotlin.String,%20kotlin.Array)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Runs the provided SQL and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | queryWithFactory Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | queryWithFactory Query the given URL, returning a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | rawQuery Runs the provided SQL and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
 | --- | --- |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#rawQuery(kotlin.String,%20kotlin.Array,%20android.os.CancellationSignal)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Runs the provided SQL and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(cursorFactory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, editTable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Runs the provided SQL and returns a cursor over the result set. |
-| [Cursor](../android.database/Cursor.md) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.String,%20kotlin.Array,%20kotlin.String,%20android.os.CancellationSignal)(cursorFactory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, editTable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Runs the provided SQL and returns a cursor over the result set. |
+| [Cursor](../android.database/Cursor.md) | rawQuery Runs the provided SQL and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` over the result set. |
+| [Cursor](../android.database/Cursor.md) | rawQueryWithFactory Runs the provided SQL and returns a cursor over the result set. |
+| [Cursor](../android.database/Cursor.md) | rawQueryWithFactory Runs the provided SQL and returns a cursor over the result set. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#releaseMemory()()` Attempts to release memory that SQLite holds but does not require to operate properly. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#replace(kotlin.String,%20kotlin.String,%20android.content.ContentValues)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, nullColumnHack: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialValues: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Convenience method for replacing a row in the database. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#replaceOrThrow(kotlin.String,%20kotlin.String,%20android.content.ContentValues)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, nullColumnHack: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, initialValues: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Convenience method for replacing a row in the database. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | releaseMemory Attempts to release memory that SQLite holds but does not require to operate properly. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | replace Convenience method for replacing a row in the database. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | replaceOrThrow Convenience method for replacing a row in the database. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setCustomAggregateFunction(kotlin.String,%20java.util.function.BinaryOperator)(functionName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, aggregateFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Register a custom aggregate function that can be called from SQL expressions. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setCustomScalarFunction(kotlin.String,%20java.util.function.UnaryOperator)(functionName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scalarFunction: https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Register a custom scalar function that can be called from SQL expressions. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setForeignKeyConstraintsEnabled(kotlin.Boolean)(enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether foreign key constraints are enabled for the database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCustomAggregateFunction Register a custom aggregate function that can be called from SQL expressions. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCustomScalarFunction Register a custom scalar function that can be called from SQL expressions. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setForeignKeyConstraintsEnabled Sets whether foreign key constraints are enabled for the database. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Sets the locale for this database. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLockingEnabled(kotlin.Boolean)(lockingEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control whether or not the SQLiteDatabase is made thread-safe by using locks around critical sections. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setMaxSqlCacheSize(kotlin.Int)(cacheSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the maximum size of the prepared-statement cache for this database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLocale Sets the locale for this database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLockingEnabled Control whether or not the SQLiteDatabase is made thread-safe by using locks around critical sections. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMaxSqlCacheSize Sets the maximum size of the prepared-statement cache for this database. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setMaximumSize(kotlin.Long)(numBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the maximum size the database will grow to. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setPageSize(kotlin.Long)(numBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the database page size. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setTransactionSuccessful()()` Marks the current transaction as successful. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | setMaximumSize Sets the maximum size the database will grow to. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPageSize Sets the database page size. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTransactionSuccessful Marks the current transaction as successful. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setVersion(kotlin.Int)(version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the database version. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#toString()()` Returns a string representation of the object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#update(kotlin.String,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?, whereClause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, whereArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Convenience method for updating rows in the database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVersion Sets the database version. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | update Convenience method for updating rows in the database. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#updateWithOnConflict(kotlin.String,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array,%20kotlin.Int)(table: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?, whereClause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, whereArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, conflictAlgorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convenience method for updating rows in the database. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#validateSql(kotlin.String,%20android.os.CancellationSignal)(sql: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Verifies that a SQL SELECT statement is valid by compiling it. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#yieldIfContended()()` Temporarily end the transaction to let other threads run. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | updateWithOnConflict Convenience method for updating rows in the database. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | validateSql Verifies that a SQL SELECT statement is valid by compiling it. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | yieldIfContended Temporarily end the transaction to let other threads run. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#yieldIfContendedSafely()()` Temporarily end the transaction to let other threads run. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#yieldIfContendedSafely(kotlin.Long)(sleepAfterYieldDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Temporarily end the transaction to let other threads run. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | yieldIfContendedSafely Temporarily end the transaction to let other threads run. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | yieldIfContendedSafely Temporarily end the transaction to let other threads run. |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#onAllReferencesReleased()()` Called when the last reference to the object was released by a call to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference()` or #close(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onAllReferencesReleased Called when the last reference to the object was released by a call to releaseReference or #close(). |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#acquireReference()()`
+Inherited functions From class SQLiteClosable `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` acquireReference
 
 Acquires a reference to the object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#close()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` close
 
-Releases a reference to the object, closing the object if the last reference was released. Calling this method is equivalent to calling `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference()`.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#onAllReferencesReleasedFromContainer()()`
-
-Called when the last reference to the object was released by a call to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer()`.
+Releases a reference to the object, closing the object if the last reference was released. Calling this method is equivalent to calling releaseReference.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` onAllReferencesReleasedFromContainer
+
+Called when the last reference to the object was released by a call to releaseReferenceFromContainer.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` releaseReference
 
 Releases a reference to the object, closing the object if the last reference was released.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReferenceFromContainer()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` releaseReferenceFromContainer
 
 Releases a reference to the object that was owned by the container of the object, closing the object if the last reference was released.
 
@@ -296,13 +296,13 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val ENABLE_WRITE_AHEAD_LOGGING: Int
 ```
 
-Open flag: Flag for #openDatabase to open the database file with write-ahead logging enabled by default. Using this flag is more efficient than calling `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`. Write-ahead logging cannot be used with read-only databases so the value of this flag is ignored if the database is opened read-only.
+Open flag: Flag for #openDatabase to open the database file with write-ahead logging enabled by default. Using this flag is more efficient than calling enableWriteAheadLogging. Write-ahead logging cannot be used with read-only databases so the value of this flag is ignored if the database is opened read-only.
 
  Value: 536870912
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`
+- enableWriteAheadLogging
 
 ### JOURNAL_MODE_DELETE
 
@@ -396,7 +396,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val MAX_SQL_CACHE_SIZE: Int
 ```
 
-Absolute max value that can be set by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setMaxSqlCacheSize(kotlin.Int)`. Each prepared-statement is between 1K - 6K, depending on the complexity of the SQL statement \& schema. A large SQL cache may use a significant amount of memory.
+Absolute max value that can be set by setMaxSqlCacheSize. Each prepared-statement is between 1K - 6K, depending on the complexity of the SQL statement \& schema. A large SQL cache may use a significant amount of memory.
 
  Value: 100
 
@@ -408,7 +408,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NO_LOCALIZED_COLLATORS: Int
 ```
 
-Open flag: Flag for #openDatabase to open the database without support for localized collators. {@more} This causes the collator `LOCALIZED` not to be created. You must be consistent when using this flag to use the setting the database was created with. If this is set, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)` will do nothing.
+Open flag: Flag for #openDatabase to open the database without support for localized collators. {@more} This causes the collator `LOCALIZED` not to be created. You must be consistent when using this flag to use the setting the database was created with. If this is set, setLocale will do nothing.
 
  Value: 16
 
@@ -566,7 +566,7 @@ fun beginTransactionReadOnly(): Unit
 
 Begins a transaction in DEFERRED mode, with the android-specific constraint that the transaction is read-only. The database may not be modified inside a read-only transaction.
 
-Read-only transactions may run concurrently with other read-only transactions, and if the database is in WAL mode, they may also run concurrently with IMMEDIATE or EXCLUSIVE transactions. The `temp` schema may be modified during a read-only transaction; if the transaction is `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setTransactionSuccessful()`, modifications to temp tables may be visible to some subsequent transactions.
+Read-only transactions may run concurrently with other read-only transactions, and if the database is in WAL mode, they may also run concurrently with IMMEDIATE or EXCLUSIVE transactions. The `temp` schema may be modified during a read-only transaction; if the transaction is setTransactionSuccessful, modifications to temp tables may be visible to some subsequent transactions.
 
 Transactions can be nested. However, the behavior of the transaction is not altered by nested transactions. A nested transaction may be any of the three transaction types but if the outermost type is read-only then nested transactions remain read-only, regardless of how they are started.
 
@@ -646,7 +646,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun beginTransactionWithListenerReadOnly(transactionListener: SQLiteTransactionListener?): Unit
 ```
 
-Begins a transaction in read-only mode with a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteTransactionListener` listener. The database may not be updated inside a read-only transaction.
+Begins a transaction in read-only mode with a SQLiteTransactionListener listener. The database may not be updated inside a read-only transaction.
 
 Transactions can be nested. However, the behavior of the transaction is not altered by nested transactions. A nested transaction may be any of the three transaction types but if the outermost type is read-only then nested transactions remain read-only, regardless of how they are started.
 
@@ -674,9 +674,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun compileStatement(sql: String!): SQLiteStatement!
 ```
 
-Compiles an SQL statement into a reusable pre-compiled statement object. The parameters are identical to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#execSQL(kotlin.String)`. You may put ?s in the statement and fill in those values with `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindString(kotlin.Int,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram#bindLong(kotlin.Int,%20kotlin.Long)` each time you want to run the statement. Statements may not return result sets larger than 1x1.
+Compiles an SQL statement into a reusable pre-compiled statement object. The parameters are identical to execSQL. You may put ?s in the statement and fill in those values with bindString and bindLong each time you want to run the statement. Statements may not return result sets larger than 1x1.
 
-No two threads should be using the same `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement` at the same time.
+No two threads should be using the same SQLiteStatement at the same time.
 
 | Parameters ||
 |---|---|
@@ -684,7 +684,7 @@ No two threads should be using the same `https://developer.android.com/reference
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement!` | A pre-compiled `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement` object. Note that `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement`s are not synchronized, see the documentation for more details. |
+| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement!` | A pre-compiled SQLiteStatement object. Note that SQLiteStatements are not synchronized, see the documentation for more details. |
 
 ### create
 
@@ -696,7 +696,7 @@ static fun create(factory: SQLiteDatabase.CursorFactory?): SQLiteDatabase
 
 Create a memory backed SQLite database. Its contents will be destroyed when the database is closed.
 
-Sets the locale of the database to the system's current locale. Call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)` if you would like something else.
+Sets the locale of the database to the system's current locale. Call setLocale if you would like something else.
 
 | Parameters ||
 |---|---|
@@ -704,7 +704,7 @@ Sets the locale of the database to the system's current locale. Call `https://de
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#` | a SQLiteDatabase instance. This value cannot be `null`. |
+| SQLiteDatabase | a SQLiteDatabase instance. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -720,7 +720,7 @@ static fun createInMemory(openParams: SQLiteDatabase.OpenParams): SQLiteDatabas
 
 Create a memory backed SQLite database. Its contents will be destroyed when the database is closed.
 
-Sets the locale of the database to the system's current locale. Call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)` if you would like something else.
+Sets the locale of the database to the system's current locale. Call setLocale if you would like something else.
 
 | Parameters ||
 |---|---|
@@ -728,7 +728,7 @@ Sets the locale of the database to the system's current locale. Call `https://de
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#` | a SQLiteDatabase instance. This value cannot be `null`. |
+| SQLiteDatabase | a SQLiteDatabase instance. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -742,7 +742,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun createRawStatement(sql: String): SQLiteRawStatement
 ```
 
-Return a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement` connected to the database. A transaction must be in progress or an exception will be thrown. The resulting object will be closed automatically when the current transaction closes.
+Return a SQLiteRawStatement connected to the database. A transaction must be in progress or an exception will be thrown. The resulting object will be closed automatically when the current transaction closes.
 
 | Parameters ||
 |---|---|
@@ -750,7 +750,7 @@ Return a `https://developer.android.com/reference/kotlin/android/database/sqlite
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement` | A `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement` holding the compiled SQL. This value cannot be `null`. |
+| SQLiteRawStatement | A SQLiteRawStatement holding the compiled SQL. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -808,7 +808,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 fun disableWriteAheadLogging(): Unit
 ```
 
-This method disables the features enabled by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`.
+This method disables the features enabled by enableWriteAheadLogging.
 
 | Exceptions ||
 |---|---|
@@ -816,7 +816,7 @@ This method disables the features enabled by `https://developer.android.com/refe
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`
+- enableWriteAheadLogging
 
 ### enableWriteAheadLogging
 
@@ -838,7 +838,7 @@ When write-ahead logging is enabled, write operations occur in a separate log fi
 
 Another benefit of write-ahead logging is that it reduces the number of `fsync` calls to the underlying file system. Calling `fsync` may block on system locks and has poor tail latency on devices with slow filesystems.
 
-The most efficient way to enable write-ahead logging is to pass the `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` flag to #openDatabase. This is more efficient than calling `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`.
+The most efficient way to enable write-ahead logging is to pass the `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` flag to #openDatabase. This is more efficient than calling enableWriteAheadLogging.
 
 ```kotlin
 <code>
@@ -850,23 +850,23 @@ The most efficient way to enable write-ahead logging is to pass the `https://dev
 
 ### Disabling Write-ahead Logging
 
-If the database has any attached databases, then execution of queries in parallel is NOT possible. Likewise, write-ahead logging is not supported for read-only databases or memory databases. In such cases, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()` returns false.
+If the database has any attached databases, then execution of queries in parallel is NOT possible. Likewise, write-ahead logging is not supported for read-only databases or memory databases. In such cases, enableWriteAheadLogging returns false.
 
-When write-ahead logging is not enabled (the default, or after calling `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#disableWriteAheadLogging()`), it is not possible for reads and writes to occur on the database at the same time. Before modifying the database, the writer implicitly acquires an exclusive lock on the database which prevents readers from accessing the database until the write is completed.
+When write-ahead logging is not enabled (the default, or after calling disableWriteAheadLogging), it is not possible for reads and writes to occur on the database at the same time. Before modifying the database, the writer implicitly acquires an exclusive lock on the database which prevents readers from accessing the database until the write is completed.
 
 Write-ahead logging slightly increases the memory usage by SQLite. You can measure the impact on memory using tools like [meminfo](https://developer.android.com/tools/dumpsys#meminfo).
 
 ### Usage
 
-After opening a database with the `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` flag or by calling this method, execution of queries in parallel is enabled as long as the database remains open. To disable execution of queries in parallel, either call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#disableWriteAheadLogging()` or close the database and reopen it.
+After opening a database with the `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` flag or by calling this method, execution of queries in parallel is enabled as long as the database remains open. To disable execution of queries in parallel, either call disableWriteAheadLogging or close the database and reopen it.
 
 Parallel execution of queries is performed by opening multiple connections to the database and using a different database connection for each query. The database journal mode is also changed to enable writes to proceed concurrently with reads. The maximum number of connections used to execute queries in parallel is dependent upon the device memory and possibly other properties.
 
 If a query is part of a transaction, then it is executed on the same database handle the transaction was begun.
 
-Writers should use `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionNonExclusive()` or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#beginTransactionWithListenerNonExclusive(android.database.sqlite.SQLiteTransactionListener)` to start a transaction. Non-exclusive mode allows database file to be in readable by other threads executing queries.
+Writers should use beginTransactionNonExclusive or beginTransactionWithListenerNonExclusive to start a transaction. Non-exclusive mode allows database file to be in readable by other threads executing queries.
 
-If the database has any attached databases, then execution of queries in parallel is NOT possible. Likewise, write-ahead logging is not supported for read-only databases or memory databases. In such cases, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()` returns false.
+If the database has any attached databases, then execution of queries in parallel is NOT possible. Likewise, write-ahead logging is not supported for read-only databases or memory databases. In such cases, enableWriteAheadLogging returns false.
 
 See also [SQLite Write-Ahead Logging](http://sqlite.org/wal.html) for more details about how write-ahead logging works.
 
@@ -881,7 +881,7 @@ See also [SQLite Write-Ahead Logging](http://sqlite.org/wal.html) for more detai
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#disableWriteAheadLogging()`
+- disableWriteAheadLogging
 
 ### endTransaction
 
@@ -925,11 +925,11 @@ fun execSQL(sql: String!): Unit
 
 Execute a single SQL statement that is NOT a SELECT or any other SQL statement that returns data.
 
-It has no means to return any data (such as the number of affected rows). Instead, you're encouraged to use `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insert(kotlin.String,%20kotlin.String,%20android.content.ContentValues)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#update(kotlin.String,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)`, et al, when possible.
+It has no means to return any data (such as the number of affected rows). Instead, you're encouraged to use insert, update, et al, when possible.
 
-When using `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`, journal_mode is automatically managed by this class. So, do not set journal_mode using "PRAGMA journal_mode'" statement if your app is using `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`
+When using enableWriteAheadLogging, journal_mode is automatically managed by this class. So, do not set journal_mode using "PRAGMA journal_mode'" statement if your app is using enableWriteAheadLogging
 
-Note that `PRAGMA` values which apply on a per-connection basis should *not* be configured using this method; you should instead use `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#execPerConnectionSQL(kotlin.String,%20kotlin.Array)` to ensure that they are uniformly applied to all current and future connections.
+Note that `PRAGMA` values which apply on a per-connection basis should *not* be configured using this method; you should instead use execPerConnectionSQL to ensure that they are uniformly applied to all current and future connections.
 
 | Parameters ||
 |---|---|
@@ -954,18 +954,18 @@ Execute a single SQL statement that is NOT a SELECT/INSERT/UPDATE/DELETE.
 
 For INSERT statements, use any of the following instead.
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insert(kotlin.String,%20kotlin.String,%20android.content.ContentValues)`
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insertOrThrow(kotlin.String,%20kotlin.String,%20android.content.ContentValues)`
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#insertWithOnConflict(kotlin.String,%20kotlin.String,%20android.content.ContentValues,%20kotlin.Int)`
+- insert
+- insertOrThrow
+- insertWithOnConflict
 
 For UPDATE statements, use any of the following instead.
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#update(kotlin.String,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#updateWithOnConflict(kotlin.String,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array,%20kotlin.Int)`
+- update
+- updateWithOnConflict
 
 For DELETE statements, use any of the following instead.
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#delete(kotlin.String,%20kotlin.String,%20kotlin.Array)`
+- delete
 
 For example, the following are good candidates for using this method:
 
@@ -978,9 +978,9 @@ For example, the following are good candidates for using this method:
 
 <br />
 
-When using `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`, journal_mode is automatically managed by this class. So, do not set journal_mode using "PRAGMA journal_mode'" statement if your app is using `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`
+When using enableWriteAheadLogging, journal_mode is automatically managed by this class. So, do not set journal_mode using "PRAGMA journal_mode'" statement if your app is using enableWriteAheadLogging
 
-Note that `PRAGMA` values which apply on a per-connection basis should *not* be configured using this method; you should instead use `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#execPerConnectionSQL(kotlin.String,%20kotlin.Array)` to ensure that they are uniformly applied to all current and future connections.
+Note that `PRAGMA` values which apply on a per-connection basis should *not* be configured using this method; you should instead use execPerConnectionSQL to ensure that they are uniformly applied to all current and future connections.
 
 | Parameters ||
 |---|---|
@@ -1360,7 +1360,7 @@ Returns true if write-ahead logging has been enabled for this database.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`
+- enableWriteAheadLogging
 - `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int`
 
 ### markTableSyncable
@@ -1441,8 +1441,8 @@ Open the database according to the specified `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `path` | [File](../java.io/File.md): path to database file to open and/or create. **Important:** The file should be constructed either from an absolute path or by using `https://developer.android.com/reference/kotlin/android/content/Context.html#getDatabasePath(kotlin.String)`. This value cannot be `null`. |
-| `openParams` | [SQLiteDatabase.OpenParams](../android/database/sqlite/SQLiteDatabase.OpenParams.md): configuration parameters that are used for opening `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#` This value cannot be `null`. |
+| `path` | [File](../java.io/File.md): path to database file to open and/or create. **Important:** The file should be constructed either from an absolute path or by using getDatabasePath. This value cannot be `null`. |
+| `openParams` | [SQLiteDatabase.OpenParams](../android/database/sqlite/SQLiteDatabase.OpenParams.md): configuration parameters that are used for opening SQLiteDatabase This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1466,7 +1466,7 @@ static fun openDatabase(
 
 Open the database according to the flags `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READWRITE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int`.
 
-Sets the locale of the database to the system's current locale. Call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)` if you would like something else.
+Sets the locale of the database to the system's current locale. Call setLocale if you would like something else.
 
 | Parameters ||
 |---|---|
@@ -1498,7 +1498,7 @@ static fun openDatabase(
 
 Open the database according to the flags `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READWRITE:kotlin.Int``https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#OPEN_READONLY:kotlin.Int``https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#NO_LOCALIZED_COLLATORS:kotlin.Int`.
 
-Sets the locale of the database to the system's current locale. Call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)` if you would like something else.
+Sets the locale of the database to the system's current locale. Call setLocale if you would like something else.
 
 Accepts input param: a concrete instance of `https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#` to be used to handle corruption when sqlite reports database corruption.
 
@@ -2019,7 +2019,7 @@ Register a custom aggregate function that can be called from SQL expressions.
 
 For example, registering a custom aggregation function named `LONGEST` could be used in a query like `SELECT LONGEST(name) FROM employees`.
 
-The implementation of this method follows the reduction flow outlined in `https://developer.android.com/reference/kotlin/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)`, and the custom aggregation function is expected to be an associative accumulation function, as defined by that class.
+The implementation of this method follows the reduction flow outlined in reduce, and the custom aggregation function is expected to be an associative accumulation function, as defined by that class.
 
 When attempting to register multiple functions with the same function name, SQLite will replace any previously defined functions with the latest definition, regardless of what function type they are. SQLite does not support unregistering functions.
 
@@ -2034,7 +2034,7 @@ When attempting to register multiple functions with the same function name, SQLi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setCustomScalarFunction(kotlin.String,%20java.util.function.UnaryOperator)`
+- setCustomScalarFunction
 
 ### setCustomScalarFunction
 
@@ -2064,7 +2064,7 @@ When attempting to register multiple functions with the same function name, SQLi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setCustomAggregateFunction(kotlin.String,%20java.util.function.BinaryOperator)`
+- setCustomAggregateFunction
 
 ### setForeignKeyConstraintsEnabled
 
@@ -2078,9 +2078,9 @@ Sets whether foreign key constraints are enabled for the database.
 
 By default, foreign key constraints are not enforced by the database. This method allows an application to enable foreign key constraints. It must be called each time the database is opened to ensure that foreign key constraints are enabled for the session.
 
-A good time to call this method is right after calling #openOrCreateDatabase or in the `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onConfigure(android.database.sqlite.SQLiteDatabase)` callback.
+A good time to call this method is right after calling #openOrCreateDatabase or in the onConfigure callback.
 
-When foreign key constraints are disabled, the database does not check whether changes to the database will violate foreign key constraints. Likewise, when foreign key constraints are disabled, the database will not execute cascade delete or update triggers. As a result, it is possible for the database state to become inconsistent. To perform a database integrity check, call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isDatabaseIntegrityOk()`.
+When foreign key constraints are disabled, the database does not check whether changes to the database will violate foreign key constraints. Likewise, when foreign key constraints are disabled, the database will not execute cascade delete or update triggers. As a result, it is possible for the database state to become inconsistent. To perform a database integrity check, call isDatabaseIntegrityOk.
 
 This method must not be called while a transaction is in progress.
 
@@ -2292,7 +2292,7 @@ fun validateSql(
 ): Unit
 ```
 
-Verifies that a SQL SELECT statement is valid by compiling it. If the SQL statement is not valid, this method will throw a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteException`.
+Verifies that a SQL SELECT statement is valid by compiling it. If the SQL statement is not valid, this method will throw a SQLiteException.
 
 | Parameters ||
 |---|---|
@@ -2362,4 +2362,4 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected fun onAllReferencesReleased(): Unit
 ```
 
-Called when the last reference to the object was released by a call to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteClosable#releaseReference()` or #close().
+Called when the last reference to the object was released by a call to releaseReference or #close().

@@ -12,7 +12,7 @@ class OverlayManagerTransaction : Parcelable
 
 A container for a batch of requests to the OverlayManager.
 
-An app can get an `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#` with the specified `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager` to handle the transaction. The app can register multiple overlays and unregister multiple registered overlays in one transaction commitment.
+An app can get an OverlayManagerTransaction with the specified OverlayManager to handle the transaction. The app can register multiple overlays and unregister multiple registered overlays in one transaction commitment.
 
 The below example is registering a `updatingOverlay` and unregistering a `deprecatedOverlay` in one transaction commitment.
 
@@ -29,25 +29,25 @@ The below example is registering a `updatingOverlay` and unregistering a `deprec
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| static [OverlayManagerTransaction](OverlayManagerTransaction.md) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#newInstance()()` Get an overlay manager transaction. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#registerFabricatedOverlay(android.content.om.FabricatedOverlay)(overlay: https://developer.android.com/reference/kotlin/android/content/om/FabricatedOverlay)` Registers the fabricated overlays with the overlay manager so it can be used to overlay the app resources in runtime. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| static [OverlayManagerTransaction](OverlayManagerTransaction.md) | newInstance Get an overlay manager transaction. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerFabricatedOverlay Registers the fabricated overlays with the overlay manager so it can be used to overlay the app resources in runtime. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#unregisterFabricatedOverlay(android.content.om.OverlayIdentifier)(overlay: https://developer.android.com/reference/kotlin/android/content/om/OverlayIdentifier)` Unregisters the registered overlays from the overlay manager. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterFabricatedOverlay Unregisters the registered overlays from the overlay manager. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -64,7 +64,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -82,7 +82,7 @@ Get an overlay manager transaction.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#` | a new `https://developer.android.com/reference/kotlin/android/content/om/OverlayManagerTransaction#` instance. This value cannot be `null`. |
+| OverlayManagerTransaction | a new OverlayManagerTransaction instance. This value cannot be `null`. |
 
 ### registerFabricatedOverlay
 
@@ -138,8 +138,8 @@ Unregisters the registered overlays from the overlay manager.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/om/OverlayManager#getOverlayInfosForTarget(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/om/OverlayInfo#getOverlayIdentifier()`
+- getOverlayInfosForTarget
+- getOverlayIdentifier
 
 ### writeToParcel
 

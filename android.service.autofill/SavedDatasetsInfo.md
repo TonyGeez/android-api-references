@@ -10,7 +10,7 @@ class SavedDatasetsInfo
 | --- | --- |
 | ↳ | [android.service.autofill.SavedDatasetsInfo](SavedDatasetsInfo.md) |
 
-A result returned from `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSavedDatasetsInfoRequest(android.service.autofill.SavedDatasetsInfoCallback)`.
+A result returned from onSavedDatasetsInfoRequest.
 
 ## Summary
 
@@ -21,16 +21,16 @@ A result returned from `https://developer.android.com/reference/kotlin/android/s
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#SavedDatasetsInfo(kotlin.String,%20kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new SavedDatasetsInfo. |
+| SavedDatasetsInfo Creates a new SavedDatasetsInfo. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getCount()()` The number of datasets of `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getType()` that the user has saved to the service. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getType()()` The type of the datasets that this info is about. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCount The number of datasets of getType that the user has saved to the service. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getType The type of the datasets that this info is about. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#toString()()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -75,7 +75,7 @@ Creates a new SavedDatasetsInfo.
 | Parameters ||
 |---|---|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The type of the datasets that this info is about. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#TYPE_OTHER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#TYPE_PASSWORDS:kotlin.String` |
-| `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of datasets of `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getType()` that the user has saved to the service. Value is 0 or greater |
+| `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of datasets of getType that the user has saved to the service. Value is 0 or greater |
 
 ## Public methods
 
@@ -116,7 +116,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getCount(): Int
 ```
 
-The number of datasets of `https://developer.android.com/reference/kotlin/android/service/autofill/SavedDatasetsInfo#getType()` that the user has saved to the service.
+The number of datasets of getType that the user has saved to the service.
 
 | Return ||
 |---|---|
@@ -149,8 +149,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

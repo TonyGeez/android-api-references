@@ -15,33 +15,33 @@ An identifier to represent a blob in AppSearch.
 
 A "blob" is a large binary object. It is used to store a significant amount of data that is not searchable, such as images, videos, audio files, or other binary data. Unlike other fields in AppSearch, blobs are stored as blob files on disk rather than in memory, and use `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor.html#` to read and write. This allows for efficient handling of large, non-searchable content.
 
-`https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` is a light-weight `Property` of `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`, which is a pointer to the heavy-weight blob data.
+AppSearchBlobHandle is a light-weight `Property` of GenericDocument, which is a pointer to the heavy-weight blob data.
 
-The blob data could be written via `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#openBlobForWrite(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` and read via `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#openBlobForRead(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+The blob data could be written via openBlobForWrite and read via openBlobForRead.
 
-A `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument` with `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` `Property` could be put and read without the large blob data. This offers lazy retrieval to blob data when searching `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument` in AppSearch.
+A GenericDocument with AppSearchBlobHandle `Property` could be put and read without the large blob data. This offers lazy retrieval to blob data when searching GenericDocument in AppSearch.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| static [AppSearchBlobHandle](AppSearchBlobHandle.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.String,%20kotlin.String,%20kotlin.String)(digest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, databaseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, namespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new AppSearch blob identifier with given digest, package, database and namespace. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| static [AppSearchBlobHandle](AppSearchBlobHandle.md) | createWithSha256 Create a new AppSearch blob identifier with given digest, package, database and namespace. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getDatabaseName()()` Returns the name of database stored the blob that this object is representing. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getNamespace()()` Returns the app-defined namespace this blob resides in. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getPackageName()()` Returns the package name indicating the owner app of the blob that this object is representing. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDatabaseName Returns the name of database stored the blob that this object is representing. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getNamespace Returns the app-defined namespace this blob resides in. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getPackageName Returns the package name indicating the owner app of the blob that this object is representing. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#getSha256Digest()()` Returns the SHA-256 hash of the blob that this object is representing. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#toString()()` Returns a string representation of the object. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getSha256Digest Returns the SHA-256 hash of the blob that this object is representing. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -65,9 +65,9 @@ static fun createWithSha256(
 
 Create a new AppSearch blob identifier with given digest, package, database and namespace.
 
-The package name and database name indicated where this blob will be stored. To write, commit or read this blob via `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession`, it must match the package name and database name of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession`.
+The package name and database name indicated where this blob will be stored. To write, commit or read this blob via AppSearchSession, it must match the package name and database name of AppSearchSession.
 
-For two objects of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
+For two objects of AppSearchBlobHandle to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
 
 | Parameters ||
 |---|---|
@@ -79,7 +79,7 @@ For two objects of `https://developer.android.com/reference/kotlin/android/app/a
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` | a new instance of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` object. This value cannot be `null`. |
+| AppSearchBlobHandle | a new instance of AppSearchBlobHandle object. This value cannot be `null`. |
 
 ### describeContents
 
@@ -89,7 +89,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -135,7 +135,7 @@ fun getDatabaseName(): String
 
 Returns the name of database stored the blob that this object is representing.
 
-For two objects of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
+For two objects of AppSearchBlobHandle to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
 
 | Return ||
 |---|---|
@@ -152,7 +152,7 @@ fun getNamespace(): String
 
 Returns the app-defined namespace this blob resides in.
 
-For two objects of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
+For two objects of AppSearchBlobHandle to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
 
 | Return ||
 |---|---|
@@ -169,7 +169,7 @@ fun getPackageName(): String
 
 Returns the package name indicating the owner app of the blob that this object is representing.
 
-For two objects of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
+For two objects of AppSearchBlobHandle to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
 
 | Return ||
 |---|---|
@@ -186,7 +186,7 @@ fun getSha256Digest(): ByteArray
 
 Returns the SHA-256 hash of the blob that this object is representing.
 
-For two objects of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#` to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
+For two objects of AppSearchBlobHandle to be considered equal, the `packageName`, `database`, `namespace` and `digest` must be equal.
 
 | Return ||
 |---|---|
@@ -205,8 +205,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

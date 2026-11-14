@@ -8,16 +8,16 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 | [java.util.function.BiConsumer](BiConsumer.md) |
 
-Represents an operation that accepts two input arguments and returns no result. This is the two-arity specialization of `https://developer.android.com/reference/kotlin/java/util/function/Consumer`. Unlike most other functional interfaces, `BiConsumer` is expected to operate via side-effects.
+Represents an operation that accepts two input arguments and returns no result. This is the two-arity specialization of Consumer. Unlike most other functional interfaces, `BiConsumer` is expected to operate via side-effects.
 
-This is a [functional interface](_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/BiConsumer#accept(java.util.function.BiConsumer.T,%20java.util.function.BiConsumer.U)`.
+This is a [functional interface](_package.md) whose functional method is accept.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/function/BiConsumer#accept(java.util.function.BiConsumer.T,%20java.util.function.BiConsumer.U)(t: T, u: U)` Performs this operation on the given arguments. |
-| open [BiConsumer](BiConsumer.md)\<T, U\>! | `https://developer.android.com/reference/kotlin/java/util/function/BiConsumer#andThen(java.util.function.BiConsumer)(after: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer#<in T, in U>!)` Returns a composed `BiConsumer` that performs, in sequence, this operation followed by the `after` operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | accept Performs this operation on the given arguments. |
+| open [BiConsumer](BiConsumer.md)\<T, U\>! | andThen Returns a composed `BiConsumer` that performs, in sequence, this operation followed by the `after` operation. |
 
 ## Public methods
 

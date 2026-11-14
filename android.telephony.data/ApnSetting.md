@@ -20,7 +20,7 @@ Use `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSe
 
 | Nested classes ||
 |---|---|
-| open | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder` Provides a convenient way to set the fields of a `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#` when creating a new instance. |
+| open | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder` Provides a convenient way to set the fields of a ApnSetting when creating a new instance. |
 
 | Constants ||
 |---|---|
@@ -69,59 +69,59 @@ Use `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSe
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getApnName()()` Returns the name of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getApnName Returns the name of the APN. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getApnTypeBitmask()()` Returns the bitmask of APN types. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getAuthType()()` Returns the authentication type of the APN. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getCarrierId()()` Returns the carrier id for this APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getApnTypeBitmask Returns the bitmask of APN types. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAuthType Returns the authentication type of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCarrierId Returns the carrier id for this APN. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getEntryName()()` Gets the human-readable name that describes the APN. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getId()()` Returns the unique database id for this entry. |
-| open [InetAddress](../java.net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddress()()` Gets the MMS proxy address configured for the APN. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getEntryName Gets the human-readable name that describes the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId Returns the unique database id for this entry. |
+| open [InetAddress](../java.net/InetAddress.md)! | getMmsProxyAddress Gets the MMS proxy address configured for the APN. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddressAsString()()` Returns the MMS proxy address of the APN. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyPort()()` Returns the MMS proxy port of the APN. |
-| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsc()()` Returns the MMSC Uri of the APN. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getMmsProxyAddressAsString Returns the MMS proxy address of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMmsProxyPort Returns the MMS proxy port of the APN. |
+| open [Uri](../android.net/Uri.md)! | getMmsc Returns the MMSC Uri of the APN. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMtuV4()()` Returns the default MTU (Maximum Transmission Unit) size in bytes of the IPv4 routes brought up by this APN setting. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMtuV6()()` Returns the MTU size of the IPv6 mobile interface to which the APN connected. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMvnoType()()` Returns the MVNO match type for this APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMtuV4 Returns the default MTU (Maximum Transmission Unit) size in bytes of the IPv4 routes brought up by this APN setting. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMtuV6 Returns the MTU size of the IPv6 mobile interface to which the APN connected. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMvnoType Returns the MVNO match type for this APN. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getNetworkTypeBitmask()()` Returns a bitmask describing the Radio Technologies (Network Types) which this APN may use. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getOperatorNumeric()()` Returns the numeric operator ID for the APN. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getPassword()()` Returns the APN password of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNetworkTypeBitmask Returns a bitmask describing the Radio Technologies (Network Types) which this APN may use. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getOperatorNumeric Returns the numeric operator ID for the APN. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPassword Returns the APN password of the APN. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProfileId()()` Returns the profile id to which the APN saved in modem. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProtocol()()` Returns the protocol to use to connect to this APN. |
-| open [InetAddress](../java.net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddress()()` Gets the HTTP proxy address configured for the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProfileId Returns the profile id to which the APN saved in modem. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProtocol Returns the protocol to use to connect to this APN. |
+| open [InetAddress](../java.net/InetAddress.md)! | getProxyAddress Gets the HTTP proxy address configured for the APN. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddressAsString()()` Returns the proxy address of the APN. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyPort()()` Returns the proxy address of the APN. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getRoamingProtocol()()` Returns the protocol to use to connect to this APN while the device is roaming. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getProxyAddressAsString Returns the proxy address of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProxyPort Returns the proxy address of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRoamingProtocol Returns the protocol to use to connect to this APN while the device is roaming. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getUser()()` Returns the APN username of the APN. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#hashCode()()` Returns a hash code value for the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#isAlwaysOn()()` Returns whether User Plane resources have to be activated during every transition from CM-IDLE mode to CM-CONNECTED state for this APN See 3GPP TS 23. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getUser Returns the APN username of the APN. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAlwaysOn Returns whether User Plane resources have to be activated during every transition from CM-IDLE mode to CM-CONNECTED state for this APN See 3GPP TS 23. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#isEnabled()()` Returns the current status of APN. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#isPersistent()()` Returns if the APN setting is persistent on the modem. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#toString()()` Returns the string representation of ApnSetting. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnabled Returns the current status of APN. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPersistent Returns if the APN setting is persistent on the modem. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns the string representation of ApnSetting. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -523,7 +523,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -583,7 +583,7 @@ Returns the bitmask of APN types.
 
 Apn types are usage categories for an APN entry. One APN entry may support multiple APN types, eg, a single APN may service regular internet traffic ("default") as well as MMS-specific connections.
 
-The bitmask of APN types is calculated from APN types defined in `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#`.
+The bitmask of APN types is calculated from APN types defined in ApnSetting.
 
 | Return ||
 |---|---|
@@ -591,7 +591,7 @@ The bitmask of APN types is calculated from APN types defined in `https://develo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder#setApnTypeBitmask(kotlin.Int)`
+- setApnTypeBitmask
 
 ### getAuthType
 
@@ -623,7 +623,7 @@ Returns the carrier id for this APN.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder#setCarrierId(kotlin.Int)`
+- setCarrierId
 
 ### getEntryName
 
@@ -662,7 +662,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun getMmsProxyAddress(): InetAddress!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddressAsString()` instead.*
+**Deprecated:** *use getMmsProxyAddressAsString instead.*
 
 Gets the MMS proxy address configured for the APN. The MMS proxy address might be an IP address or hostname. This method returns `null` if system networking (typically DNS) isn't available to resolve a hostname value---values set as IP addresses don't have this restriction. This is a known problem and will be addressed in a future release.
 
@@ -756,7 +756,7 @@ Returns the MVNO match type for this APN.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder#setMvnoType(kotlin.Int)`
+- setMvnoType
 
 ### getNetworkTypeBitmask
 
@@ -832,7 +832,7 @@ Protocol is one of the `PDP_type` values in TS 27.007 section 10.1.1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder#setProtocol(kotlin.Int)`
+- setProtocol
 
 ### getProxyAddress
 
@@ -843,7 +843,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun getProxyAddress(): InetAddress!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddressAsString()` instead.*
+**Deprecated:** *use getProxyAddressAsString instead.*
 
 Gets the HTTP proxy address configured for the APN. The proxy address might be an IP address or hostname. This method returns `null` if system networking (typically DNS) isn't available to resolve a hostname value---values set as IP addresses don't have this restriction. This is a known problem and will be addressed in a future release.
 
@@ -897,7 +897,7 @@ Roaming protocol is one of the `PDP_type` values in TS 27.007 section 10.1.1.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting.Builder#setRoamingProtocol(kotlin.Int)`
+- setRoamingProtocol
 
 ### getUser
 
@@ -926,8 +926,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

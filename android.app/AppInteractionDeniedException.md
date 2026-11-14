@@ -27,14 +27,14 @@ Exception thrown when an app interaction is denied.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#AppInteractionDeniedException(kotlin.String,%20kotlin.Int)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructor for `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#`. |
-| `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#AppInteractionDeniedException(kotlin.String,%20kotlin.Int,%20android.os.Bundle)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Constructor for `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#`. |
+| AppInteractionDeniedException Constructor for AppInteractionDeniedException. |
+| AppInteractionDeniedException Constructor for AppInteractionDeniedException. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#getReason()()` Returns the reason for interaction denied. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getReason Returns the reason for interaction denied. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/AppInteractionException` `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` `https://developer.android.com/reference/kotlin/android/app/AppInteractionException#getExtras()()`
+Inherited functions From class AppInteractionException `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` getExtras
 
 Returns the additional metadata for this exception.
 
@@ -94,7 +94,7 @@ AppInteractionDeniedException(
     reason: Int)
 ```
 
-Constructor for `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#`.
+Constructor for AppInteractionDeniedException.
 
 | Parameters ||
 |---|---|
@@ -112,7 +112,7 @@ AppInteractionDeniedException(
     extras: Bundle)
 ```
 
-Constructor for `https://developer.android.com/reference/kotlin/android/app/AppInteractionDeniedException#`.
+Constructor for AppInteractionDeniedException.
 
 | Parameters ||
 |---|---|

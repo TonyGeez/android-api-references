@@ -42,51 +42,51 @@ The class `java.lang.Double` has a [discussion of equality, equivalence, and com
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/Float#Float(kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Constructs a newly allocated `Float` object that represents the argument converted to type `float`. |
-| `https://developer.android.com/reference/kotlin/java/lang/Float#Float(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Constructs a newly allocated `Float` object that represents the primitive `float` argument. |
-| `https://developer.android.com/reference/kotlin/java/lang/Float#Float(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Constructs a newly allocated `Float` object that represents the floating-point value of type `float` represented by the string. |
+| Float Constructs a newly allocated `Float` object that represents the argument converted to type `float`. |
+| Float Constructs a newly allocated `Float` object that represents the primitive `float` argument. |
+| Float Constructs a newly allocated `Float` object that represents the floating-point value of type `float` represented by the string. |
 
 | Public methods ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#compare(kotlin.Float,%20kotlin.Float)(f1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, f2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Compares the two specified `float` values. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#compareTo(kotlin.Float)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Compares two `Float` objects numerically. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this object against the specified object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compare Compares the two specified `float` values. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares two `Float` objects numerically. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this object against the specified object. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#float16ToFloat(kotlin.Short)(floatBinary16: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` {@return the {@code float} value closest to the numerical value \* of the argument, a floating-point binary16 value encoded in a \* {@code short}} The conversion is exact; all binary16 values can be exactly represented in `float`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToFloat16(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` {@return the floating-point binary16 value, encoded in a {@code \* short}, closest in value to the argument} The conversion is computed under the [round to nearest even rounding](../java.math/RoundingMode.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToIntBits(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "single format" bit layout. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | float16ToFloat {@return the {@code float} value closest to the numerical value \* of the argument, a floating-point binary16 value encoded in a \* {@code short}} The conversion is exact; all binary16 values can be exactly represented in `float`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | floatToFloat16 {@return the floating-point binary16 value, encoded in a {@code \* short}, closest in value to the argument} The conversion is computed under the [round to nearest even rounding](../java.math/RoundingMode.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floatToIntBits Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "single format" bit layout. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#floatToRawIntBits(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "single format" bit layout, preserving Not-a-Number (NaN) values. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#hashCode()()` Returns a hash code for this `Float` object. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#hashCode(kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a hash code for a `float` value; compatible with `Float.hashCode()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floatToRawIntBits Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "single format" bit layout, preserving Not-a-Number (NaN) values. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this `Float` object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for a `float` value; compatible with `Float.hashCode()`. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#intBitsToFloat(kotlin.Int)(bits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `float` value corresponding to a given bit representation. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#isFinite(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns `true` if the argument is a finite floating-point value; returns `false` otherwise (for NaN and infinity arguments). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#isInfinite()()` Returns `true` if this `Float` value is infinitely large in magnitude, `false` otherwise. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | intBitsToFloat Returns the `float` value corresponding to a given bit representation. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFinite Returns `true` if the argument is a finite floating-point value; returns `false` otherwise (for NaN and infinity arguments). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInfinite Returns `true` if this `Float` value is infinitely large in magnitude, `false` otherwise. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#isInfinite(kotlin.Float)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns `true` if the specified number is infinitely large in magnitude, `false` otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#isNaN()()` Returns `true` if this `Float` value is a Not-a-Number (NaN), `false` otherwise. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#isNaN(kotlin.Float)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns `true` if the specified number is a Not-a-Number (NaN) value, `false` otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInfinite Returns `true` if the specified number is infinitely large in magnitude, `false` otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNaN Returns `true` if this `Float` value is a Not-a-Number (NaN), `false` otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNaN Returns `true` if the specified number is a Not-a-Number (NaN) value, `false` otherwise. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#max(kotlin.Float,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the greater of two `float` values as if by calling `https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Float,%20kotlin.Float)`. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#min(kotlin.Float,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the smaller of two `float` values as if by calling `https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Float,%20kotlin.Float)`. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#parseFloat(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a new `float` initialized to the value represented by the specified `String`, as performed by the `valueOf` method of class `Float`. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | max Returns the greater of two `float` values as if by calling max. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | min Returns the smaller of two `float` values as if by calling min. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | parseFloat Returns a new `float` initialized to the value represented by the specified `String`, as performed by the `valueOf` method of class `Float`. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#sum(kotlin.Float,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Adds two `float` values together as per the + operator. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toByte()()` Returns the value of this `Float` as a `byte` after a narrowing primitive conversion. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toDouble()()` Returns the value of this `Float` as a `double` after a widening primitive conversion. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | sum Adds two `float` values together as per the + operator. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | toByte Returns the value of this `Float` as a `byte` after a narrowing primitive conversion. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toDouble Returns the value of this `Float` as a `double` after a widening primitive conversion. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toFloat()()` Returns the `float` value of this `Float` object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toHexString(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a hexadecimal string representation of the `float` argument. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toInt()()` Returns the value of this `Float` as an `int` after a narrowing primitive conversion. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | toFloat Returns the `float` value of this `Float` object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toHexString Returns a hexadecimal string representation of the `float` argument. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toInt Returns the value of this `Float` as an `int` after a narrowing primitive conversion. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toLong()()` Returns value of this `Float` as a `long` after a narrowing primitive conversion. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toShort()()` Returns the value of this `Float` as a `short` after a narrowing primitive conversion. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toString()()` Returns a string representation of this `Float` object. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toLong Returns value of this `Float` as a `long` after a narrowing primitive conversion. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | toShort Returns the value of this `Float` as a `short` after a narrowing primitive conversion. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of this `Float` object. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#toString(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a string representation of the `float` argument. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#valueOf(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a `Float` instance representing the specified `float` value. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Float#valueOf(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a object holding the value represented by the argument string . |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the `float` argument. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | valueOf Returns a `Float` instance representing the specified `float` value. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | valueOf Returns a object holding the value represented by the argument string . |
 | --- | --- |
 
 | Properties ||
@@ -237,7 +237,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Float(value: Double)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Instead, use the static factory method `https://developer.android.com/reference/kotlin/java/lang/Float#valueOf(kotlin.Float)` method as follows: `Float.valueOf((float)value)`.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Instead, use the static factory method valueOf method as follows: `Float.valueOf((float)value)`.*
 
 Constructs a newly allocated `Float` object that represents the argument converted to type `float`.
 
@@ -253,7 +253,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Float(value: Float)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory `https://developer.android.com/reference/kotlin/java/lang/Float#valueOf(kotlin.Float)` is generally a better choice, as it is likely to yield significantly better space and time performance.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory valueOf is generally a better choice, as it is likely to yield significantly better space and time performance.*
 
 Constructs a newly allocated `Float` object that represents the primitive `float` argument.
 
@@ -269,7 +269,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Float(s: String)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use `https://developer.android.com/reference/kotlin/java/lang/Float#parseFloat(kotlin.String)` to convert a string to a `float` primitive, or use `https://developer.android.com/reference/kotlin/java/lang/Float#valueOf(kotlin.String)` to convert a string to a `Float` object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use parseFloat to convert a string to a `float` primitive, or use valueOf to convert a string to a `Float` object.*
 
 Constructs a newly allocated `Float` object that represents the floating-point value of type `float` represented by the string. The string is converted to a `float` value as if by the `valueOf` method.
 
@@ -351,7 +351,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun equals(other: Any?): Boolean
 ```
 
-Compares this object against the specified object. The result is `true` if and only if the argument is not `null` and is a `Float` object that represents a `float` with the same value as the `float` represented by this object. For this purpose, two `float` values are considered to be the same if and only if the method `https://developer.android.com/reference/kotlin/java/lang/Float#floatToIntBits(kotlin.Float)` returns the identical `int` value when applied to each.
+Compares this object against the specified object. The result is `true` if and only if the argument is not `null` and is a `Float` object that represents a `float` with the same value as the `float` represented by this object. For this purpose, two `float` values are considered to be the same if and only if the method floatToIntBits returns the identical `int` value when applied to each.
 
 | Parameters ||
 |---|---|
@@ -363,7 +363,7 @@ Compares this object against the specified object. The result is `true` if and o
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float#floatToIntBits(kotlin.Float)`
+- floatToIntBits
 
 ### float16ToFloat
 
@@ -403,7 +403,7 @@ static fun floatToFloat16(f: Float): Short
 - If the argument is infinite, the result is an infinity with the same sign as the argument.
 - If the argument is a NaN, the result is a NaN.
 
-The [binary16 format](Float.md) is discussed in more detail in the `https://developer.android.com/reference/kotlin/java/lang/Float#float16ToFloat(kotlin.Short)` method.
+The [binary16 format](Float.md) is discussed in more detail in the float16ToFloat method.
 
 <br />
 
@@ -429,7 +429,7 @@ If the argument is negative infinity, the result is `0xff800000`.
 
 If the argument is NaN, the result is `0x7fc00000`.
 
-In all cases, the result is an integer that, when given to the `https://developer.android.com/reference/kotlin/java/lang/Float#intBitsToFloat(kotlin.Int)` method, will produce a floating-point value the same as the argument to `floatToIntBits` (except all NaN values are collapsed to a single "canonical" NaN value).
+In all cases, the result is an integer that, when given to the intBitsToFloat method, will produce a floating-point value the same as the argument to `floatToIntBits` (except all NaN values are collapsed to a single "canonical" NaN value).
 
 | Parameters ||
 |---|---|
@@ -457,7 +457,7 @@ If the argument is negative infinity, the result is `0xff800000`.
 
 If the argument is NaN, the result is the integer representing the actual NaN value. Unlike the `floatToIntBits` method, `floatToRawIntBits` does not collapse all the bit patterns encoding a NaN to a single "canonical" NaN value.
 
-In all cases, the result is an integer that, when given to the `https://developer.android.com/reference/kotlin/java/lang/Float#intBitsToFloat(kotlin.Int)` method, will produce a floating-point value the same as the argument to `floatToRawIntBits`.
+In all cases, the result is an integer that, when given to the intBitsToFloat method, will produce a floating-point value the same as the argument to `floatToRawIntBits`.
 
 | Parameters ||
 |---|---|
@@ -475,7 +475,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun hashCode(): Int
 ```
 
-Returns a hash code for this `Float` object. The result is the integer bit representation, exactly as produced by the method `https://developer.android.com/reference/kotlin/java/lang/Float#floatToIntBits(kotlin.Float)`, of the primitive `float` value represented by this `Float` object.
+Returns a hash code for this `Float` object. The result is the integer bit representation, exactly as produced by the method floatToIntBits, of the primitive `float` value represented by this `Float` object.
 
 | Return ||
 |---|---|
@@ -621,7 +621,7 @@ static fun max(
 ): Float
 ```
 
-Returns the greater of two `float` values as if by calling `https://developer.android.com/reference/kotlin/java/lang/Math#max(kotlin.Float,%20kotlin.Float)`.
+Returns the greater of two `float` values as if by calling max.
 
 | Parameters ||
 |---|---|
@@ -647,7 +647,7 @@ static fun min(
 ): Float
 ```
 
-Returns the smaller of two `float` values as if by calling `https://developer.android.com/reference/kotlin/java/lang/Math#min(kotlin.Float,%20kotlin.Float)`.
+Returns the smaller of two `float` values as if by calling min.
 
 | Parameters ||
 |---|---|
@@ -687,7 +687,7 @@ Returns a new `float` initialized to the value represented by the specified `Str
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float#valueOf(kotlin.String)`
+- valueOf
 
 ### sum
 
@@ -771,7 +771,7 @@ Returns a hexadecimal string representation of the `float` argument. All charact
 - Otherwise, the result is a string that represents the sign and magnitude (absolute value) of the argument. If the sign is negative, the first character of the result is '`-`' (`'\u005Cu002D'`); if the sign is positive, no sign character appears in the result. As for the magnitude *m* :
  - If *m* is infinity, it is represented by the string `"Infinity"`; thus, positive infinity produces the result `"Infinity"` and negative infinity produces the result `"-Infinity"`.
  - If *m* is zero, it is represented by the string `"0x0.0p0"`; thus, negative zero produces the result `"-0x0.0p0"` and positive zero produces the result `"0x0.0p0"`.
- - If *m* is a `float` value with a normalized representation, substrings are used to represent the significand and exponent fields. The significand is represented by the characters `"0x1."` followed by a lowercase hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed unless all the digits are zero, in which case a single zero is used. Next, the exponent is represented by `"p"` followed by a decimal string of the unbiased exponent as if produced by a call to `https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int)` on the exponent value.
+ - If *m* is a `float` value with a normalized representation, substrings are used to represent the significand and exponent fields. The significand is represented by the characters `"0x1."` followed by a lowercase hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed unless all the digits are zero, in which case a single zero is used. Next, the exponent is represented by `"p"` followed by a decimal string of the unbiased exponent as if produced by a call to toString on the exponent value.
  - If *m* is a `float` value with a subnormal representation, the significand is represented by the characters `"0x0."` followed by a hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed. Next, the exponent is represented by `"p-126"`. Note that there must be at least one nonzero digit in a subnormal significand.
 
 | Floating-point Value | Hexadecimal String |
@@ -859,7 +859,7 @@ Returns a string representation of this `Float` object. The primitive `float` va
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Float#toString(kotlin.Float)`
+- toString
 
 ### toString
 
@@ -896,7 +896,7 @@ The (uniquely) selected decimal *d* *m* is then formatted. Let *s* , *i* and *n*
 - Case 0 ≤ *e* \< 7:
  - Subcase *i* ≥ 0: *d* *m* is formatted as *s* 1...*s* *n* `0`...`0.0`, where there are exactly *i* zeroes between *s* *n* and the decimal point. For example, 123 × 102 is formatted as `12300.0`.
  - Subcase *i* \< 0: *d* *m* is formatted as *s* 1...*s* *n* +*i* `.`*s* *n* +*i* +1...*s* *n* , where there are exactly -*i* digits to the right of the decimal point. For example, 123 × 10-1 is formatted as `12.3`.
-- Case *e* \< -3 or *e* ≥ 7: computerized scientific notation is used to format *d* *m* . Here *e* is formatted as by `https://developer.android.com/reference/kotlin/java/lang/Integer#toString(kotlin.Int)`.
+- Case *e* \< -3 or *e* ≥ 7: computerized scientific notation is used to format *d* *m* . Here *e* is formatted as by toString.
  - Subcase *n* = 1: *d* *m* is formatted as *s* 1`.0E`*e* . For example, 1 × 1023 is formatted as `1.0E23`.
  - Subcase *n* \> 1: *d* *m* is formatted as *s* 1`.`*s* 2...*s* *n* `E`*e* . For example, 123 × 10-21 is formatted as `1.23E-19`.
 
@@ -918,7 +918,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(f: Float): Float
 ```
 
-Returns a `Float` instance representing the specified `float` value. If a new `Float` instance is not required, this method should generally be used in preference to the constructor `https://developer.android.com/reference/kotlin/java/lang/Float#Float(kotlin.Float)`, as this method is likely to yield significantly better space and time performance by caching frequently requested values.
+Returns a `Float` instance representing the specified `float` value. If a new `Float` instance is not required, this method should generally be used in preference to the constructor Float, as this method is likely to yield significantly better space and time performance by caching frequently requested values.
 
 | Parameters ||
 |---|---|
@@ -940,7 +940,7 @@ Returns a object holding the value represented by the argument string .
 
 If `s` is `null`, then a `NullPointerException` is thrown.
 
-Leading and trailing whitespace characters in `s` are ignored. Whitespace is removed as if by the `https://developer.android.com/reference/kotlin/java/lang/String#trim()` method; that is, both ASCII space and control characters are removed. The rest of `s` should constitute a *FloatValue* as described by the lexical syntax rules:
+Leading and trailing whitespace characters in `s` are ignored. Whitespace is removed as if by the trim method; that is, both ASCII space and control characters are removed. The rest of `s` should constitute a *FloatValue* as described by the lexical syntax rules:
 
 *FloatValue:*
 : *Signopt* `NaN`
@@ -964,7 +964,7 @@ Leading and trailing whitespace characters in `s` are ignored. Whitespace is rem
 *BinaryExponentIndicator:*
 : `p`
 : `P`
-where *Sign* , *FloatingPointLiteral* , *HexNumeral* , *HexDigits* , *SignedInteger* and *FloatTypeSuffix* are as defined in the lexical structure sections of The Java Language Specification, except that underscores are not accepted between digits. If `s` does not have the form of a *FloatValue* , then a `NumberFormatException` is thrown. Otherwise, `s` is regarded as representing an exact decimal value in the usual "computerized scientific notation" or as an exact hexadecimal value; this exact numerical value is then conceptually converted to an "infinitely precise" binary value that is then rounded to type `float` by the usual round-to-nearest rule of IEEE 754 floating-point arithmetic, which includes preserving the sign of a zero value. Note that the round-to-nearest rule also implies overflow and underflow behaviour; if the exact value of `s` is large enough in magnitude (greater than or equal to (`https://developer.android.com/reference/kotlin/java/lang/Float#MAX_VALUE:kotlin.Float` + `https://developer.android.com/reference/kotlin/java/lang/Math#ulp(kotlin.Float)`/2), rounding to `float` will result in an infinity and if the exact value of `s` is small enough in magnitude (less than or equal to `https://developer.android.com/reference/kotlin/java/lang/Float#MIN_VALUE:kotlin.Float`/2), rounding to float will result in a zero. Finally, after rounding a `Float` object representing this `float` value is returned.
+where *Sign* , *FloatingPointLiteral* , *HexNumeral* , *HexDigits* , *SignedInteger* and *FloatTypeSuffix* are as defined in the lexical structure sections of The Java Language Specification, except that underscores are not accepted between digits. If `s` does not have the form of a *FloatValue* , then a `NumberFormatException` is thrown. Otherwise, `s` is regarded as representing an exact decimal value in the usual "computerized scientific notation" or as an exact hexadecimal value; this exact numerical value is then conceptually converted to an "infinitely precise" binary value that is then rounded to type `float` by the usual round-to-nearest rule of IEEE 754 floating-point arithmetic, which includes preserving the sign of a zero value. Note that the round-to-nearest rule also implies overflow and underflow behaviour; if the exact value of `s` is large enough in magnitude (greater than or equal to (`https://developer.android.com/reference/kotlin/java/lang/Float#MAX_VALUE:kotlin.Float` + ulp/2), rounding to `float` will result in an infinity and if the exact value of `s` is small enough in magnitude (less than or equal to `https://developer.android.com/reference/kotlin/java/lang/Float#MIN_VALUE:kotlin.Float`/2), rounding to float will result in a zero. Finally, after rounding a `Float` object representing this `float` value is returned.
 
 To interpret localized string representations of a floating-point value, use subclasses of `https://developer.android.com/reference/kotlin/java/text/NumberFormat.html#`.
 

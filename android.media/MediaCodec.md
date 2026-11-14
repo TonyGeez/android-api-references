@@ -10,7 +10,7 @@ class MediaCodec
 | --- | --- |
 | ↳ | [android.media.MediaCodec](MediaCodec.md) |
 
-MediaCodec class can be used to access low-level media codecs, i.e. encoder/decoder components. It is part of the Android low-level multimedia support infrastructure (normally used together with `https://developer.android.com/reference/kotlin/android/media/MediaExtractor`, `https://developer.android.com/reference/kotlin/android/media/MediaSync`, `https://developer.android.com/reference/kotlin/android/media/MediaMuxer`, `https://developer.android.com/reference/kotlin/android/media/MediaCrypto`, `https://developer.android.com/reference/kotlin/android/media/MediaDrm`, `https://developer.android.com/reference/kotlin/android/media/Image`, `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, and `https://developer.android.com/reference/kotlin/android/media/AudioTrack`.)
+MediaCodec class can be used to access low-level media codecs, i.e. encoder/decoder components. It is part of the Android low-level multimedia support infrastructure (normally used together with MediaExtractor, MediaSync, MediaMuxer, MediaCrypto, MediaDrm, Image, `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, and AudioTrack.)
 
 In broad terms, a codec processes input data to generate output data. It processes data asynchronously and uses a set of input and output buffers. At a simplistic level, you request (or receive) an empty input buffer, fill it up with data and send it to the codec for processing. The codec uses up the data and transforms it into one of its empty output buffers. Finally, you request (or receive) a filled output buffer, consume its contents and release it back to the codec.
 
@@ -26,7 +26,7 @@ This quality floor will not impact content captured at high bitrates (a high bit
 
 ### Data Types
 
-Codecs operate on three kinds of data: compressed data, raw audio data and raw video data. All three kinds of data can be processed using `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#`, but you should use a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for raw video data to improve codec performance. Surface uses native video buffers without mapping or copying them to ByteBuffers; thus, it is much more efficient. You normally cannot access the raw video data when using a Surface, but you can use the `https://developer.android.com/reference/kotlin/android/media/ImageReader` class to access unsecured decoded (raw) video frames. This may still be more efficient than using ByteBuffers, as some native buffers may be mapped into [direct](../java.nio/ByteBuffer.md)) ByteBuffers. When using ByteBuffer mode, you can access raw video frames using the `https://developer.android.com/reference/kotlin/android/media/Image` class and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)`.
+Codecs operate on three kinds of data: compressed data, raw audio data and raw video data. All three kinds of data can be processed using `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#`, but you should use a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for raw video data to improve codec performance. Surface uses native video buffers without mapping or copying them to ByteBuffers; thus, it is much more efficient. You normally cannot access the raw video data when using a Surface, but you can use the ImageReader class to access unsecured decoded (raw) video frames. This may still be more efficient than using ByteBuffers, as some native buffers may be mapped into [direct](../java.nio/ByteBuffer.md)) ByteBuffers. When using ByteBuffer mode, you can access raw video frames using the Image class and getInputImage/getOutputImage.
 
 #### Compressed Buffers
 
@@ -34,7 +34,7 @@ Input buffers (for decoders) and output buffers (for encoders) contain compresse
 
 #### Raw Audio Buffers
 
-Raw audio buffers contain entire frames of PCM audio data, which is one sample for each channel in channel order. Each PCM audio sample is either a 16 bit signed integer or a float, in native byte order. Raw audio buffers in the float PCM encoding are only possible if the MediaFormat's [MediaFormat.KEY_PCM_ENCODING](MediaFormat.md) is set to [AudioFormat.ENCODING_PCM_FLOAT](AudioFormat.md) during MediaCodec #configure and confirmed by #getOutputFormat for decoders or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputFormat()` for encoders. A sample method to check for float PCM in the MediaFormat is as follows:
+Raw audio buffers contain entire frames of PCM audio data, which is one sample for each channel in channel order. Each PCM audio sample is either a 16 bit signed integer or a float, in native byte order. Raw audio buffers in the float PCM encoding are only possible if the MediaFormat's [MediaFormat.KEY_PCM_ENCODING](MediaFormat.md) is set to [AudioFormat.ENCODING_PCM_FLOAT](AudioFormat.md) during MediaCodec #configure and confirmed by #getOutputFormat for decoders or getInputFormat for encoders. A sample method to check for float PCM in the MediaFormat is as follows:
 
 ```kotlin
 static boolean isPcmFloat(MediaFormat format) {
@@ -64,17 +64,17 @@ In order to extract, in a short array, one channel of a buffer containing 16 bit
 
 #### Raw Video Buffers
 
-In ByteBuffer mode video buffers are laid out according to their [color format](MediaFormat.md). You can get the supported color formats as an array from `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getCodecInfo()``.``https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo#getCapabilitiesForType(kotlin.String)``.``https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#colorFormats:kotlin.IntArray`. Video codecs may support three kinds of color formats:
+In ByteBuffer mode video buffers are laid out according to their [color format](MediaFormat.md). You can get the supported color formats as an array from getCodecInfo`.getCapabilitiesForType.``https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#colorFormats:kotlin.IntArray`. Video codecs may support three kinds of color formats:
 
 - **native raw video format:** This is marked by `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#COLOR_FormatSurface:kotlin.Int` and it can be used with an input or output Surface.
-- **flexible YUV buffers** (such as `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#COLOR_FormatYUV420Flexible:kotlin.Int`): These can be used with an input/output Surface, as well as in ByteBuffer mode, by using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)`.
-- **other, specific formats:** These are normally only supported in ByteBuffer mode. Some color formats are vendor specific. Others are defined in `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities`. For color formats that are equivalent to a flexible format, you can still use `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)`.
+- **flexible YUV buffers** (such as `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#COLOR_FormatYUV420Flexible:kotlin.Int`): These can be used with an input/output Surface, as well as in ByteBuffer mode, by using getInputImage/getOutputImage.
+- **other, specific formats:** These are normally only supported in ByteBuffer mode. Some color formats are vendor specific. Others are defined in `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities`. For color formats that are equivalent to a flexible format, you can still use getInputImage/getOutputImage.
 
 All video codecs support flexible YUV 4:2:0 buffers since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP_MR1:kotlin.Int`.
 
 #### Accessing Raw Video ByteBuffers on Older Devices
 
-Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/media/Image` support, you need to use the `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_STRIDE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SLICE_HEIGHT:kotlin.String` output format values to understand the layout of the raw output buffers.
+Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` and Image support, you need to use the `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_STRIDE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SLICE_HEIGHT:kotlin.String` output format values to understand the layout of the raw output buffers.
 
 Note that on some devices the slice-height is advertised as 0. This could mean either that the slice-height is the same as the frame height, or that the slice-height is the frame height aligned to some value (usually a power of 2). Unfortunately, there is no standard and simple way to tell the actual slice height in this case. Furthermore, the vertical stride of the `U` plane in planar formats is also not specified or defined, though usually it is half of the slice height.
 
@@ -116,37 +116,37 @@ Also note that the meaning of `https://developer.android.com/reference/kotlin/an
 
 During its life a codec conceptually exists in one of three states: Stopped, Executing or Released. The Stopped collective state is actually the conglomeration of three states: Uninitialized, Configured and Error, whereas the Executing state conceptually progresses through three sub-states: Flushed, Running and End-of-Stream.
 
-When you create a codec using one of the factory methods, the codec is in the Uninitialized state. First, you need to configure it via #configure, which brings it to the Configured state, then call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` to move it to the Executing state. In this state you can process data through the buffer queue manipulation described above.
+When you create a codec using one of the factory methods, the codec is in the Uninitialized state. First, you need to configure it via #configure, which brings it to the Configured state, then call start to move it to the Executing state. In this state you can process data through the buffer queue manipulation described above.
 
-The Executing state has three sub-states: Flushed, Running and End-of-Stream. Immediately after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` the codec is in the Flushed sub-state, where it holds all the buffers. As soon as the first input buffer is dequeued, the codec moves to the Running sub-state, where it spends most of its life. When you queue an input buffer with the [end-of-stream marker](MediaCodec.md), the codec transitions to the End-of-Stream sub-state. In this state the codec no longer accepts further input buffers, but still generates output buffers until the end-of-stream is reached on the output. For decoders, you can move back to the Flushed sub-state at any time while in the Executing state using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()`.
+The Executing state has three sub-states: Flushed, Running and End-of-Stream. Immediately after start the codec is in the Flushed sub-state, where it holds all the buffers. As soon as the first input buffer is dequeued, the codec moves to the Running sub-state, where it spends most of its life. When you queue an input buffer with the [end-of-stream marker](MediaCodec.md), the codec transitions to the End-of-Stream sub-state. In this state the codec no longer accepts further input buffers, but still generates output buffers until the end-of-stream is reached on the output. For decoders, you can move back to the Flushed sub-state at any time while in the Executing state using flush.
 
 **Note:** Going back to Flushed state is only supported for decoders, and may not work for encoders (the behavior is undefined).
 
-Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()` to return the codec to the Uninitialized state, whereupon it may be configured again. When you are done using a codec, you must release it by calling `https://developer.android.com/reference/kotlin/android/media/MediaCodec#release()`.
+Call stop to return the codec to the Uninitialized state, whereupon it may be configured again. When you are done using a codec, you must release it by calling release.
 
-On rare occasions the codec may encounter an error and move to the Error state. This is communicated using an invalid return value from a queuing operation, or sometimes via an exception. Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#reset()` to make the codec usable again. You can call it from any state to move the codec back to the Uninitialized state. Otherwise, call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#release()` to move to the terminal Released state.
+On rare occasions the codec may encounter an error and move to the Error state. This is communicated using an invalid return value from a queuing operation, or sometimes via an exception. Call reset to make the codec usable again. You can call it from any state to move the codec back to the Uninitialized state. Otherwise, call release to move to the terminal Released state.
 
 ### Creation
 
-Use `https://developer.android.com/reference/kotlin/android/media/MediaCodecList` to create a MediaCodec for a specific `https://developer.android.com/reference/kotlin/android/media/MediaFormat`. When decoding a file or a stream, you can get the desired format from `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getTrackFormat(kotlin.Int)`. Inject any specific features that you want to add using `https://developer.android.com/reference/kotlin/android/media/MediaFormat#setFeatureEnabled(kotlin.String,%20kotlin.Boolean)`, then call `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findDecoderForFormat(android.media.MediaFormat)` to get the name of a codec that can handle that specific media format. Finally, create the codec using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)`.
+Use MediaCodecList to create a MediaCodec for a specific MediaFormat. When decoding a file or a stream, you can get the desired format from getTrackFormat. Inject any specific features that you want to add using setFeatureEnabled, then call findDecoderForFormat to get the name of a codec that can handle that specific media format. Finally, create the codec using createByCodecName.
 
 **Note:** On `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, the format to `MediaCodecList.findDecoder`/`EncoderForFormat` must not contain a [frame rate](MediaFormat.md). Use `format.setString(MediaFormat.KEY_FRAME_RATE, null)` to clear any existing frame rate setting in the format.
 
-You can also create the preferred codec for a specific MIME type using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createDecoderByType(kotlin.String)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#createEncoderByType(kotlin.String)`. This, however, cannot be used to inject features, and may create a codec that cannot handle the specific desired media format.
+You can also create the preferred codec for a specific MIME type using createDecoderByType/createEncoderByType. This, however, cannot be used to inject features, and may create a codec that cannot handle the specific desired media format.
 
 #### Creating secure decoders
 
-On versions `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` and earlier, secure codecs might not be listed in `https://developer.android.com/reference/kotlin/android/media/MediaCodecList`, but may still be available on the system. Secure codecs that exist can be instantiated by name only, by appending `".secure"` to the name of a regular codec (the name of all secure codecs must end in `".secure"`.) `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)` will throw an `IOException` if the codec is not present on the system.
+On versions `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` and earlier, secure codecs might not be listed in MediaCodecList, but may still be available on the system. Secure codecs that exist can be instantiated by name only, by appending `".secure"` to the name of a regular codec (the name of all secure codecs must end in `".secure"`.) createByCodecName will throw an `IOException` if the codec is not present on the system.
 
 From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` onwards, you should use the `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#FEATURE_SecurePlayback:kotlin.String` feature in the media format to create a secure decoder.
 
 ### Initialization
 
-After creating the codec, you can set a callback using #setCallback if you want to process data asynchronously. Then, #configure the codec using the specific media format. This is when you can specify the output `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for video producers -- codecs that generate raw video data (e.g. video decoders). This is also when you can set the decryption parameters for secure codecs (see `https://developer.android.com/reference/kotlin/android/media/MediaCrypto`). Finally, since some codecs can operate in multiple modes, you must specify whether you want it to work as a decoder or an encoder.
+After creating the codec, you can set a callback using #setCallback if you want to process data asynchronously. Then, #configure the codec using the specific media format. This is when you can specify the output `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for video producers -- codecs that generate raw video data (e.g. video decoders). This is also when you can set the decryption parameters for secure codecs (see MediaCrypto). Finally, since some codecs can operate in multiple modes, you must specify whether you want it to work as a decoder or an encoder.
 
 Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, you can query the resulting input and output format in the Configured state. You can use this to verify the resulting configuration, e.g. color formats, before starting the codec.
 
-If you want to process raw input video buffers natively with a video consumer -- a codec that processes raw video input, such as a video encoder -- create a destination Surface for your input data using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createInputSurface()` after configuration. Alternately, set up the codec to use a previously created [persistent input](MediaCodec.md)) by calling `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setInputSurface(android.view.Surface)`.
+If you want to process raw input video buffers natively with a video consumer -- a codec that processes raw video input, such as a video encoder -- create a destination Surface for your input data using createInputSurface after configuration. Alternately, set up the codec to use a previously created [persistent input](MediaCodec.md)) by calling setInputSurface.
 
 #### Encoder Profiles
 
@@ -169,11 +169,11 @@ To ensure backward compatibility, the following guarantees are provided by Andro
 
 #### Codec-specific Data
 
-Some formats, notably AAC audio and MPEG4, H.264 and H.265 video formats require the actual data to be prefixed by a number of buffers containing setup data, or codec specific data. When processing such compressed formats, this data must be submitted to the codec after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` and before any frame data. Such data must be marked using the flag `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int` in a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)`.
+Some formats, notably AAC audio and MPEG4, H.264 and H.265 video formats require the actual data to be prefixed by a number of buffers containing setup data, or codec specific data. When processing such compressed formats, this data must be submitted to the codec after start and before any frame data. Such data must be marked using the flag `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int` in a call to queueInputBuffer.
 
-Codec-specific data can also be included in the format passed to #configure in ByteBuffer entries with keys "csd-0", "csd-1", etc. These keys are always included in the track `https://developer.android.com/reference/kotlin/android/media/MediaFormat` obtained from the `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getTrackFormat(kotlin.Int)`. Codec-specific data in the format is automatically submitted to the codec upon `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`; you **MUST NOT** submit this data explicitly. If the format did not contain codec specific data, you can choose to submit it using the specified number of buffers in the correct order, according to the format requirements. In case of H.264 AVC, you can also concatenate all codec-specific data and submit it as a single codec-config buffer.
+Codec-specific data can also be included in the format passed to #configure in ByteBuffer entries with keys "csd-0", "csd-1", etc. These keys are always included in the track MediaFormat obtained from the getTrackFormat. Codec-specific data in the format is automatically submitted to the codec upon start; you **MUST NOT** submit this data explicitly. If the format did not contain codec specific data, you can choose to submit it using the specified number of buffers in the correct order, according to the format requirements. In case of H.264 AVC, you can also concatenate all codec-specific data and submit it as a single codec-config buffer.
 
-Android uses the following codec-specific data buffers. These are also required to be set in the track format for proper `https://developer.android.com/reference/kotlin/android/media/MediaMuxer` track configuration. Each parameter set and the codec-specific-data sections marked with (\*) must start with a start code of `"\x00\x00\x00\x01"`.
+Android uses the following codec-specific data buffers. These are also required to be set in the track format for proper MediaMuxer track configuration. Each parameter set and the codec-specific-data sections marked with (\*) must start with a start code of `"\x00\x00\x00\x01"`.
 
 | Format | CSD buffer #0 | CSD buffer #1 | CSD buffer #2 |
 |---|---|---|---|
@@ -196,11 +196,11 @@ Encoders (or codecs that generate compressed data) will create and return the co
 
 ### Data Processing
 
-Each codec maintains a set of input and output buffers that are referred to by a buffer-ID in API calls. After a successful call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` the client "owns" neither input nor output buffers. In synchronous mode, call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` to obtain (get ownership of) an input or output buffer from the codec. In asynchronous mode, you will automatically receive available buffers via the `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onInputBufferAvailable(android.media.MediaCodec,%20kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` callbacks.
+Each codec maintains a set of input and output buffers that are referred to by a buffer-ID in API calls. After a successful call to start the client "owns" neither input nor output buffers. In synchronous mode, call dequeueInputBuffer/dequeueOutputBuffer to obtain (get ownership of) an input or output buffer from the codec. In asynchronous mode, you will automatically receive available buffers via the onInputBufferAvailable/onOutputBufferAvailable callbacks.
 
-Upon obtaining an input buffer, fill it with data and submit it to the codec using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)` -- or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueSecureInputBuffer(kotlin.Int,%20kotlin.Int,%20android.media.MediaCodec.CryptoInfo,%20kotlin.Long,%20kotlin.Int)` if using decryption. Do not submit multiple input buffers with the same timestamp (unless it is [codec-specific data](MediaCodec.md) marked as such).
+Upon obtaining an input buffer, fill it with data and submit it to the codec using queueInputBuffer -- or queueSecureInputBuffer if using decryption. Do not submit multiple input buffers with the same timestamp (unless it is [codec-specific data](MediaCodec.md) marked as such).
 
-The codec in turn will return a read-only output buffer via the `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` callback in asynchronous mode, or in response to a `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` call in synchronous mode. After the output buffer has been processed, call one of the #releaseOutputBuffer methods to return the buffer to the codec.
+The codec in turn will return a read-only output buffer via the onOutputBufferAvailable callback in asynchronous mode, or in response to a dequeueOutputBuffer call in synchronous mode. After the output buffer has been processed, call one of the #releaseOutputBuffer methods to return the buffer to the codec.
 
 While you are not required to resubmit/release buffers immediately to the codec, holding onto input and/or output buffers may stall the codec, and this behavior is device dependent. **Specifically, it is possible that a codec may hold off on generating output buffers until *all* outstanding buffers have been released/resubmitted.** Therefore, try to hold onto to available buffers as little as possible.
 
@@ -215,7 +215,7 @@ Depending on the API version, you can process data in three ways:
 
 #### Asynchronous Processing using Buffers
 
-Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, the preferred method is to process data asynchronously by setting a callback before calling #configure. Asynchronous mode changes the state transitions slightly, because you must call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` to transition the codec to the Running sub-state and start receiving input buffers. Similarly, upon an initial call to `start` the codec will move directly to the Running sub-state and start passing available input buffers via the callback.
+Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, the preferred method is to process data asynchronously by setting a callback before calling #configure. Asynchronous mode changes the state transitions slightly, because you must call start after flush to transition the codec to the Running sub-state and start receiving input buffers. Similarly, upon an initial call to `start` the codec will move directly to the Running sub-state and start passing available input buffers via the callback.
 
 MediaCodec is typically used like this in asynchronous mode:
 
@@ -267,9 +267,9 @@ MediaCodec codec = MediaCodec.createByCodecName(name);
 
 #### Synchronous Processing using Buffers
 
-Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, you should retrieve input and output buffers using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffer(kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)` and/or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)` even when using the codec in synchronous mode. This allows certain optimizations by the framework, e.g. when processing dynamic content. This optimization is disabled if you call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()`.
+Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`, you should retrieve input and output buffers using getInputBuffer/getOutputBuffer and/or getInputImage/getOutputImage even when using the codec in synchronous mode. This allows certain optimizations by the framework, e.g. when processing dynamic content. This optimization is disabled if you call getInputBuffers/getOutputBuffers.
 
-**Note:** do not mix the methods of using buffers and buffer arrays at the same time. Specifically, only call `getInput`/`OutputBuffers` directly after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` or after having dequeued an output buffer ID with the value of `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int`.
+**Note:** do not mix the methods of using buffers and buffer arrays at the same time. Specifically, only call `getInput`/`OutputBuffers` directly after start or after having dequeued an output buffer ID with the value of `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int`.
 
 MediaCodec is typically used like this in synchronous mode:
 
@@ -306,7 +306,7 @@ MediaCodec codec = MediaCodec.createByCodecName(name);
 
 #### Synchronous Processing using Buffer Arrays (deprecated)
 
-In versions `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` and before, the set of input and output buffers are represented by the `ByteBuffer[]` arrays. After a successful call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`, retrieve the buffer arrays using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()`. Use the buffer ID-s as indices into these arrays (when non-negative), as demonstrated in the sample below. Note that there is no inherent correlation between the size of the arrays and the number of input and output buffers used by the system, although the array size provides an upper bound.
+In versions `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` and before, the set of input and output buffers are represented by the `ByteBuffer[]` arrays. After a successful call to start, retrieve the buffer arrays using getInputBuffers/getOutputBuffers. Use the buffer ID-s as indices into these arrays (when non-negative), as demonstrated in the sample below. Note that there is no inherent correlation between the size of the arrays and the number of input and output buffers used by the system, although the array size provides an upper bound.
 
 ```kotlin
 MediaCodec codec = MediaCodec.createByCodecName(name);
@@ -339,25 +339,25 @@ MediaCodec codec = MediaCodec.createByCodecName(name);
 
 #### End-of-stream Handling
 
-When you reach the end of the input data, you must signal it to the codec by specifying the `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` flag in the call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)`. You can do this on the last valid input buffer, or by submitting an additional empty input buffer with the end-of-stream flag set. If using an empty buffer, the timestamp will be ignored.
+When you reach the end of the input data, you must signal it to the codec by specifying the `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` flag in the call to queueInputBuffer. You can do this on the last valid input buffer, or by submitting an additional empty input buffer with the end-of-stream flag set. If using an empty buffer, the timestamp will be ignored.
 
-The codec will continue to return output buffers until it eventually signals the end of the output stream by specifying the same end-of-stream flag in the `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` set in `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` or returned via `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)`. This can be set on the last valid output buffer, or on an empty buffer after the last valid output buffer. The timestamp of such empty buffer should be ignored.
+The codec will continue to return output buffers until it eventually signals the end of the output stream by specifying the same end-of-stream flag in the `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` set in dequeueOutputBuffer or returned via onOutputBufferAvailable. This can be set on the last valid output buffer, or on an empty buffer after the last valid output buffer. The timestamp of such empty buffer should be ignored.
 
 Do not submit additional input buffers after signaling the end of the input stream, unless the codec has been flushed, or stopped and restarted.
 
 #### Using an Output Surface
 
-The data processing is nearly identical to the ByteBuffer mode when using an output `https://developer.android.com/reference/kotlin/android/view/Surface.html#`; however, the output buffers will not be accessible, and are represented as `null` values. E.g. `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)` will return `null` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()` will return an array containing only `null`-s.
+The data processing is nearly identical to the ByteBuffer mode when using an output `https://developer.android.com/reference/kotlin/android/view/Surface.html#`; however, the output buffers will not be accessible, and are represented as `null` values. E.g. getOutputBuffer/getOutputImage will return `null` and getOutputBuffers will return an array containing only `null`-s.
 
 When using an output Surface, you can select whether or not to render each output buffer on the surface. You have three choices:
 
-- **Do not render the buffer:** Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Boolean)`.
-- **Render the buffer with the default timestamp:** Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Boolean)`.
-- **Render the buffer with a specific timestamp:** Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Long)`.
+- **Do not render the buffer:** Call releaseOutputBuffer.
+- **Render the buffer with the default timestamp:** Call releaseOutputBuffer.
+- **Render the buffer with a specific timestamp:** Call releaseOutputBuffer.
 
 Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, the default timestamp is the [presentation timestamp](../android/media/MediaCodec.BufferInfo.md) of the buffer (converted to nanoseconds). It was not defined prior to that.
 
-Also since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, you can change the output Surface dynamically using `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setOutputSurface(android.view.Surface)`.
+Also since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, you can change the output Surface dynamically using setOutputSurface.
 
 When rendering output to a Surface, the Surface may be configured to drop excessive frames (that are not consumed by the Surface in a timely manner). Or it may be configured to not drop excessive frames. In the latter mode if the Surface is not consuming output frames fast enough, it will eventually block the decoder. Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` the exact behavior was undefined, with the exception that View surfaces (SurfaceView or TextureView) always dropped excessive frames. Since `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` the default behavior is to drop excessive frames. Applications can opt out of this behavior for non-View surfaces (such as ImageReader or SurfaceTexture) by targeting SDK `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` and setting the key `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_ALLOW_FRAME_DROP:kotlin.String` to `0` in their configure format.
 
@@ -377,17 +377,17 @@ When setting the video scaling mode, note that it must be reset after each time 
 
 #### Using an Input Surface
 
-When using an input Surface, there are no accessible input buffers, as buffers are automatically passed from the input surface to the codec. Calling `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)` will throw an `IllegalStateException`, and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()` returns a bogus `ByteBuffer[]` array that **MUST NOT** be written into.
+When using an input Surface, there are no accessible input buffers, as buffers are automatically passed from the input surface to the codec. Calling dequeueInputBuffer will throw an `IllegalStateException`, and getInputBuffers returns a bogus `ByteBuffer[]` array that **MUST NOT** be written into.
 
-Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#signalEndOfInputStream()` to signal end-of-stream. The input surface will stop submitting data to the codec immediately after this call.
+Call signalEndOfInputStream to signal end-of-stream. The input surface will stop submitting data to the codec immediately after this call.
 
 ### Seeking \& Adaptive Playback Support
 
-Video decoders (and in general codecs that consume compressed video data) behave differently regarding seek and format change whether or not they support and are configured for adaptive playback. You can check if a decoder supports [adaptive playback](../android/media/MediaCodecInfo.CodecCapabilities.md) via `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#isFeatureSupported(kotlin.String)`. Adaptive playback support for video decoders is only activated if you configure the codec to decode onto a `https://developer.android.com/reference/kotlin/android/view/Surface.html#`.
+Video decoders (and in general codecs that consume compressed video data) behave differently regarding seek and format change whether or not they support and are configured for adaptive playback. You can check if a decoder supports [adaptive playback](../android/media/MediaCodecInfo.CodecCapabilities.md) via isFeatureSupported. Adaptive playback support for video decoders is only activated if you configure the codec to decode onto a `https://developer.android.com/reference/kotlin/android/view/Surface.html#`.
 
 #### Stream Boundary and Key Frames
 
-It is important that the input data after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` starts at a suitable stream boundary: the first frame must be a key frame. A *key frame* can be decoded completely on its own (for most codecs this means an I-frame), and no frames that are to be displayed after a key frame refer to frames before the key frame.
+It is important that the input data after start or flush starts at a suitable stream boundary: the first frame must be a key frame. A *key frame* can be decoded completely on its own (for most codecs this means an I-frame), and no frames that are to be displayed after a key frame refer to frames before the key frame.
 
 The following table summarizes suitable key frames for various video formats.
 
@@ -403,9 +403,9 @@ The following table summarizes suitable key frames for various video formats.
 
 In order to start decoding data that is not adjacent to previously submitted data (i.e. after a seek) you **MUST** flush the decoder. Since all output buffers are immediately revoked at the point of the flush, you may want to first signal then wait for the end-of-stream before you call `flush`. It is important that the input data after a flush starts at a suitable stream boundary/key frame.
 
-**Note:** the format of the data submitted after a flush must not change; `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` does not support format discontinuities; for that, a full `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()` - #configure - `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` cycle is necessary.
+**Note:** the format of the data submitted after a flush must not change; flush does not support format discontinuities; for that, a full stop - #configure - start cycle is necessary.
 
-**Also note:** if you flush the codec too soon after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` -- generally, before the first output buffer or output format change is received -- you will need to resubmit the codec-specific-data to the codec. See the [codec-specific-data section](MediaCodec.md) for more info.
+**Also note:** if you flush the codec too soon after start -- generally, before the first output buffer or output format change is received -- you will need to resubmit the codec-specific-data to the codec. See the [codec-specific-data section](MediaCodec.md) for more info.
 
 #### For decoders that support and are configured for adaptive playback
 
@@ -413,17 +413,17 @@ In order to start decoding data that is not adjacent to previously submitted dat
 
 For some video formats - namely H.264, H.265, VP8 and VP9 - it is also possible to change the picture size or configuration mid-stream. To do this you must package the entire new codec-specific configuration data together with the key frame into a single buffer (including any start codes), and submit it as a **regular** input buffer.
 
-You will receive an `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` return value from `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` or a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputFormatChanged(android.media.MediaCodec,%20android.media.MediaFormat)` callback just after the picture-size change takes place and before any frames with the new size have been returned.
+You will receive an `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` return value from dequeueOutputBuffer or a onOutputFormatChanged callback just after the picture-size change takes place and before any frames with the new size have been returned.
 
-**Note:** just as the case for codec-specific data, be careful when calling `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` shortly after you have changed the picture size. If you have not received confirmation of the picture size change, you will need to repeat the request for the new picture size.
+**Note:** just as the case for codec-specific data, be careful when calling flush shortly after you have changed the picture size. If you have not received confirmation of the picture size change, you will need to repeat the request for the new picture size.
 
 ### Error handling
 
-The factory methods `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createDecoderByType(kotlin.String)`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#createEncoderByType(kotlin.String)` throw `IOException` on failure which you must catch or declare to pass up. MediaCodec methods throw `IllegalStateException` when the method is called from a codec state that does not allow it; this is typically due to incorrect application API usage. Methods involving secure buffers may throw `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoException`, which has further error information obtainable from `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoException#getErrorCode()`.
+The factory methods createByCodecName and createDecoderByType/createEncoderByType throw `IOException` on failure which you must catch or declare to pass up. MediaCodec methods throw `IllegalStateException` when the method is called from a codec state that does not allow it; this is typically due to incorrect application API usage. Methods involving secure buffers may throw `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoException`, which has further error information obtainable from getErrorCode.
 
-Internal codec errors result in a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException`, which may be due to media content corruption, hardware failure, resource exhaustion, and so forth, even when the application is correctly using the API. The recommended action when receiving a `CodecException` can be determined by calling `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException#isRecoverable()` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException#isTransient()`:
+Internal codec errors result in a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException`, which may be due to media content corruption, hardware failure, resource exhaustion, and so forth, even when the application is correctly using the API. The recommended action when receiving a `CodecException` can be determined by calling isRecoverable and isTransient:
 
-- **recoverable errors:** If `isRecoverable()` returns true, then call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()`, #configure, and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` to recover.
+- **recoverable errors:** If `isRecoverable()` returns true, then call stop, #configure, and start to recover.
 - **transient errors:** If `isTransient()` returns true, then resources are temporarily unavailable and the method may be retried at a later time.
 - **fatal errors:** If both `isRecoverable()` and `isTransient()` return false, then the `CodecException` is fatal and the codec must be [reset](MediaCodec.md)) or [released](MediaCodec.md)).
 
@@ -453,53 +453,53 @@ This sections summarizes the valid API calls in each state and the API history o
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | State ||||||| Method | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| | | | | | | | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)` | ● | ● | ● | ● | ● | ● | ● | ● |
-| | | | | | | | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createDecoderByType(kotlin.String)` | ● | ● | ● | ● | ● | ● | ● | ● |
-| | | | | | | | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createEncoderByType(kotlin.String)` | ● | ● | ● | ● | ● | ● | ● | ● |
+| | | | | | | | createByCodecName | ● | ● | ● | ● | ● | ● | ● | ● |
+| | | | | | | | createDecoderByType | ● | ● | ● | ● | ● | ● | ● | ● |
+| | | | | | | | createEncoderByType | ● | ● | ● | ● | ● | ● | ● | ● |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createPersistentInputSurface()` | | | | | | | | ● |
+| | | | | | | | createPersistentInputSurface | | | | | | | | ● |
 | 16+ | - | - | - | - | - | - | configure | ● | ● | ● | ● | ● | ⁕ | ● | ● |
-| - | 18+ | - | - | - | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createInputSurface()` | | | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ |
+| - | 18+ | - | - | - | - | - | createInputSurface | | | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | - | 16+ | 16+ | (16+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)` | ● | ● | ▧ | ▧ | ▧ | ⁕▧↩ | ▧↩ | ▧↩ |
-| - | - | 16+ | 16+ | 16+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` | ● | ● | ● | ● | ● | ⁕↩ | ↩ | ↩ |
-| - | - | 16+ | 16+ | 16+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` | ● | ● | ● | ● | ● | ● | ● | ● |
+| - | - | 16+ | 16+ | (16+) | - | - | dequeueInputBuffer | ● | ● | ▧ | ▧ | ▧ | ⁕▧↩ | ▧↩ | ▧↩ |
+| - | - | 16+ | 16+ | 16+ | - | - | dequeueOutputBuffer | ● | ● | ● | ● | ● | ⁕↩ | ↩ | ↩ |
+| - | - | 16+ | 16+ | 16+ | - | - | flush | ● | ● | ● | ● | ● | ● | ● | ● |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18+ | 18+ | 18+ | 18+ | 18+ | 18+ | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getCodecInfo()` | | | ● | ● | ● | ● | ● | ● |
-| - | - | (21+) | 21+ | (21+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffer(kotlin.Int)` | | | | | | ● | ● | ● |
-| - | - | 16+ | (16+) | (16+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()` | ● | ● | ● | ● | ● | \[⁕↩\] | \[↩\] | \[↩\] |
+| 18+ | 18+ | 18+ | 18+ | 18+ | 18+ | - | getCodecInfo | | | ● | ● | ● | ● | ● | ● |
+| - | - | (21+) | 21+ | (21+) | - | - | getInputBuffer | | | | | | ● | ● | ● |
+| - | - | 16+ | (16+) | (16+) | - | - | getInputBuffers | ● | ● | ● | ● | ● | \[⁕↩\] | \[↩\] | \[↩\] |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | 21+ | (21+) | (21+) | (21+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputFormat()` | | | | | | ● | ● | ● |
-| - | - | (21+) | 21+ | (21+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)` | | | | | | ○ | ● | ● |
-| 18+ | 18+ | 18+ | 18+ | 18+ | 18+ | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getName()` | | | ● | ● | ● | ● | ● | ● |
+| - | 21+ | (21+) | (21+) | (21+) | - | - | getInputFormat | | | | | | ● | ● | ● |
+| - | - | (21+) | 21+ | (21+) | - | - | getInputImage | | | | | | ○ | ● | ● |
+| 18+ | 18+ | 18+ | 18+ | 18+ | 18+ | - | getName | | | ● | ● | ● | ● | ● | ● |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | - | (21+) | 21+ | 21+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)` | | | | | | ● | ● | ● |
-| - | - | 16+ | 16+ | 16+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()` | ● | ● | ● | ● | ● | \[⁕↩\] | \[↩\] | \[↩\] |
-| - | 21+ | 16+ | 16+ | 16+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFormat()` | ● | ● | ● | ● | ● | ● | ● | ● |
+| - | - | (21+) | 21+ | 21+ | - | - | getOutputBuffer | | | | | | ● | ● | ● |
+| - | - | 16+ | 16+ | 16+ | - | - | getOutputBuffers | ● | ● | ● | ● | ● | \[⁕↩\] | \[↩\] | \[↩\] |
+| - | 21+ | 16+ | 16+ | 16+ | - | - | getOutputFormat | ● | ● | ● | ● | ● | ● | ● | ● |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | - | (21+) | 21+ | 21+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFormat(kotlin.Int)` | | | | | | ● | ● | ● |
-| - | - | (21+) | 21+ | 21+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)` | | | | | | ○ | ● | ● |
-| - | - | - | 16+ | (16+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)` | ● | ● | ● | ● | ● | ⁕ | ● | ● |
+| - | - | (21+) | 21+ | 21+ | - | - | getOutputFormat | | | | | | ● | ● | ● |
+| - | - | (21+) | 21+ | 21+ | - | - | getOutputImage | | | | | | ○ | ● | ● |
+| - | - | - | 16+ | (16+) | - | - | queueInputBuffer | ● | ● | ● | ● | ● | ⁕ | ● | ● |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | - | - | 16+ | (16+) | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueSecureInputBuffer(kotlin.Int,%20kotlin.Int,%20android.media.MediaCodec.CryptoInfo,%20kotlin.Long,%20kotlin.Int)` | ● | ● | ● | ● | ● | ⁕ | ● | ● |
-| 16+ | 16+ | 16+ | 16+ | 16+ | 16+ | 16+ | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#release()` | ● | ● | ● | ● | ● | ● | ● | ● |
-| - | - | - | 16+ | 16+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Boolean)` | ● | ● | ● | ● | ● | ⁕ | ● | ⁕ |
+| - | - | - | 16+ | (16+) | - | - | queueSecureInputBuffer | ● | ● | ● | ● | ● | ⁕ | ● | ● |
+| 16+ | 16+ | 16+ | 16+ | 16+ | 16+ | 16+ | release | ● | ● | ● | ● | ● | ● | ● | ● |
+| - | - | - | 16+ | 16+ | - | - | releaseOutputBuffer | ● | ● | ● | ● | ● | ⁕ | ● | ⁕ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | - | - | 21+ | 21+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Long)` | | | | | | ⎆ | ⎆ | ⎆ |
-| 21+ | 21+ | 21+ | 21+ | 21+ | 21+ | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#reset()` | | | | | | ● | ● | ● |
-| 21+ | - | - | - | - | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setCallback(android.media.MediaCodec.Callback)` | | | | | | ● | ● | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setCallback(android.media.MediaCodec.Callback,%20android.os.Handler)` |
+| - | - | - | 21+ | 21+ | - | - | releaseOutputBuffer | | | | | | ⎆ | ⎆ | ⎆ |
+| 21+ | 21+ | 21+ | 21+ | 21+ | 21+ | - | reset | | | | | | ● | ● | ● |
+| 21+ | - | - | - | - | - | - | setCallback | | | | | | ● | ● | setCallback |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | 23+ | - | - | - | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setInputSurface(android.view.Surface)` | | | | | | | | ⎋ |
-| 23+ | 23+ | 23+ | 23+ | 23+ | (23+) | (23+) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setOnFrameRenderedListener(android.media.MediaCodec.OnFrameRenderedListener,%20android.os.Handler)` | | | | | | | | ○ ⎆ |
-| - | 23+ | 23+ | 23+ | 23+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setOutputSurface(android.view.Surface)` | | | | | | | | ⎆ |
+| - | 23+ | - | - | - | - | - | setInputSurface | | | | | | | | ⎋ |
+| 23+ | 23+ | 23+ | 23+ | 23+ | (23+) | (23+) | setOnFrameRenderedListener | | | | | | | | ○ ⎆ |
+| - | 23+ | 23+ | 23+ | 23+ | - | - | setOutputSurface | | | | | | | | ⎆ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 19+ | 19+ | 19+ | 19+ | 19+ | (19+) | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)` | | | | ● | ● | ● | ● | ● |
-| - | (16+) | (16+) | 16+ | (16+) | (16+) | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setVideoScalingMode(kotlin.Int)` | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ |
-| (29+) | 29+ | 29+ | 29+ | (29+) | (29+) | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setAudioPresentation(android.media.AudioPresentation)` | | | | | | | | |
+| 19+ | 19+ | 19+ | 19+ | 19+ | (19+) | - | setParameters | | | | ● | ● | ● | ● | ● |
+| - | (16+) | (16+) | 16+ | (16+) | (16+) | - | setVideoScalingMode | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ | ⎆ |
+| (29+) | 29+ | 29+ | 29+ | (29+) | (29+) | - | setAudioPresentation | | | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| - | - | 18+ | 18+ | - | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#signalEndOfInputStream()` | | | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ |
-| - | 16+ | 21+(⇄) | - | - | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` | ● | ● | ● | ● | ● | ⁕ | ● | ● |
-| - | - | 16+ | 16+ | 16+ | - | - | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()` | ● | ● | ● | ● | ● | ● | ● | ● |
+| - | - | 18+ | 18+ | - | - | - | signalEndOfInputStream | | | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ | ⎋ |
+| - | 16+ | 21+(⇄) | - | - | - | - | start | ● | ● | ● | ● | ● | ⁕ | ● | ● |
+| - | - | 16+ | 16+ | 16+ | - | - | stop | ● | ● | ● | ● | ● | ● | ● | ● |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
@@ -544,10 +544,10 @@ This sections summarizes the valid API calls in each state and the API history o
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#CRYPTO_MODE_AES_CTR:kotlin.Int` <br /> |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#CRYPTO_MODE_UNENCRYPTED:kotlin.Int` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_BUFFERS_CHANGED:kotlin.Int` The output buffers have changed, the client must refer to the new set of output buffers returned by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()` from this point on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_BUFFERS_CHANGED:kotlin.Int` The output buffers have changed, the client must refer to the new set of output buffers returned by getOutputBuffers from this point on. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` The output format has changed, subsequent data will follow the new format. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_TRY_AGAIN_LATER:kotlin.Int` If a non-negative timeout had been specified in the call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`, indicates that the call timed out. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_TRY_AGAIN_LATER:kotlin.Int` If a non-negative timeout had been specified in the call to dequeueOutputBuffer, indicates that the call timed out. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_HDR10_PLUS_INFO:kotlin.String` Set the HDR10+ metadata on the next queued input frame. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_LOW_LATENCY:kotlin.String` Enable/disable low latency decoding mode. |
 | --- | --- |
@@ -559,7 +559,7 @@ This sections summarizes the valid API calls in each state and the API history o
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_SUSPEND:kotlin.String` Temporarily suspend/resume encoding of input data. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_SUSPEND_TIME:kotlin.String` When `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_SUSPEND:kotlin.String` is present, the client can also optionally use this key to specify the timestamp (in micro-second) at which the suspend/resume operation takes effect. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_TUNNEL_PEEK:kotlin.String` Control video peek of the first frame when a codec is configured for tunnel mode with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_SESSION_ID:kotlin.String` while the `https://developer.android.com/reference/kotlin/android/media/AudioTrack` is paused. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_TUNNEL_PEEK:kotlin.String` Control video peek of the first frame when a codec is configured for tunnel mode with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_SESSION_ID:kotlin.String` while the AudioTrack is paused. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PARAMETER_KEY_VIDEO_BITRATE:kotlin.String` Change a video encoder's target bitrate on the fly. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#VIDEO_SCALING_MODE_SCALE_TO_FIT:kotlin.Int` The content is scaled to the surface dimensions |
 | --- | --- |
@@ -567,78 +567,78 @@ This sections summarizes the valid API calls in each state and the API history o
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#configure(android.media.MediaFormat,%20android.view.Surface,%20android.media.MediaCrypto,%20kotlin.Int)(format: https://developer.android.com/reference/kotlin/android/media/MediaFormat?, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, crypto: https://developer.android.com/reference/kotlin/android/media/MediaCrypto?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Configures a component. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#configure(android.media.MediaFormat,%20android.view.Surface,%20kotlin.Int,%20android.media.MediaDescrambler)(format: https://developer.android.com/reference/kotlin/android/media/MediaFormat?, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, descrambler: https://developer.android.com/reference/kotlin/android/media/MediaDescrambler?)` Configure a component to be used with a descrambler. |
-| static [MediaCodec](MediaCodec.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` If you know the exact name of the component you want to instantiate use this method to instantiate it. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | configure Configures a component. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | configure Configure a component to be used with a descrambler. |
+| static [MediaCodec](MediaCodec.md) | createByCodecName If you know the exact name of the component you want to instantiate use this method to instantiate it. |
 | --- | --- |
-| static [MediaCodec](MediaCodec.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createDecoderByType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Instantiate the preferred decoder supporting input data of the given mime type. |
-| static [MediaCodec](MediaCodec.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createEncoderByType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Instantiate the preferred encoder supporting output data of the given mime type. |
-| [Surface](../android.view/Surface.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createInputSurface()()` Requests a Surface to use as the input to an encoder, in place of input buffers. |
+| static [MediaCodec](MediaCodec.md) | createDecoderByType Instantiate the preferred decoder supporting input data of the given mime type. |
+| static [MediaCodec](MediaCodec.md) | createEncoderByType Instantiate the preferred encoder supporting output data of the given mime type. |
+| [Surface](../android.view/Surface.md) | createInputSurface Requests a Surface to use as the input to an encoder, in place of input buffers. |
 | --- | --- |
-| static [Surface](../android.view/Surface.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createPersistentInputSurface()()` Create a persistent input surface that can be used with codecs that normally have an input surface, such as video encoders. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)(timeoutUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the index of an input buffer to be filled with valid data or -1 if no such buffer is currently available. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)(info: https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo, timeoutUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Dequeue an output buffer, block at most "timeoutUs" microseconds. |
+| static [Surface](../android.view/Surface.md) | createPersistentInputSurface Create a persistent input surface that can be used with codecs that normally have an input surface, such as video encoders. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | dequeueInputBuffer Returns the index of an input buffer to be filled with valid data or -1 if no such buffer is currently available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | dequeueOutputBuffer Dequeue an output buffer, block at most "timeoutUs" microseconds. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#detachOutputSurface()()` Detach the current output surface of a codec. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()()` Flush both input and output ports of the component. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getCanonicalName()()` Retrieve the underlying codec name. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | detachOutputSurface Detach the current output surface of a codec. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flush both input and output ports of the component. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getCanonicalName Retrieve the underlying codec name. |
 | --- | --- |
-| [MediaCodecInfo](MediaCodecInfo.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getCodecInfo()()` Get the codec info. |
-| [ByteBuffer](../java.nio/ByteBuffer.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffer(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `https://developer.android.com/reference/kotlin/java/nio/Buffer.html#clear()`, writable ByteBuffer object for a dequeued input buffer index to contain the input data. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()()` Retrieve the set of input buffers. |
+| [MediaCodecInfo](MediaCodecInfo.md) | getCodecInfo Get the codec info. |
+| [ByteBuffer](../java.nio/ByteBuffer.md)? | getInputBuffer Returns a clear, writable ByteBuffer object for a dequeued input buffer index to contain the input data. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\> | getInputBuffers Retrieve the set of input buffers. |
 | --- | --- |
-| [MediaFormat](MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputFormat()()` Call this after #configure returns successfully to get the input format accepted by the codec. |
-| [Image](Image.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a writable Image object for a dequeued input buffer index to contain the raw input video frame. |
-| [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getMetrics()()` Return Metrics data about the current codec instance. |
+| [MediaFormat](MediaFormat.md) | getInputFormat Call this after #configure returns successfully to get the input format accepted by the codec. |
+| [Image](Image.md)? | getInputImage Returns a writable Image object for a dequeued input buffer index to contain the raw input video frame. |
+| [PersistableBundle](../android.os/PersistableBundle.md)! | getMetrics Return Metrics data about the current codec instance. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getName()()` Retrieve the codec name. |
-| [ByteBuffer](../java.nio/ByteBuffer.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a read-only ByteBuffer for a dequeued output buffer index. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()()` Retrieve the set of output buffers. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getName Retrieve the codec name. |
+| [ByteBuffer](../java.nio/ByteBuffer.md)? | getOutputBuffer Returns a read-only ByteBuffer for a dequeued output buffer index. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\> | getOutputBuffers Retrieve the set of output buffers. |
 | --- | --- |
-| [MediaFormat](MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFormat()()` Call this after dequeueOutputBuffer signals a format change by returning `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int`. |
-| [MediaFormat](MediaFormat.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFormat(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the output format for a specific output buffer. |
-| [MediaCodec.OutputFrame](../android/media/MediaCodec.OutputFrame.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFrame(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OutputFrame` object. |
+| [MediaFormat](MediaFormat.md) | getOutputFormat Call this after dequeueOutputBuffer signals a format change by returning `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int`. |
+| [MediaFormat](MediaFormat.md) | getOutputFormat Returns the output format for a specific output buffer. |
+| [MediaCodec.OutputFrame](../android/media/MediaCodec.OutputFrame.md) | getOutputFrame Returns an `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OutputFrame` object. |
 | --- | --- |
-| [Image](Image.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a read-only Image object for a dequeued output buffer index that contains the raw video frame. |
-| [MediaCodec.ParameterDescriptor](../android/media/MediaCodec.ParameterDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getParameterDescriptor(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Describe a parameter with the name. |
-| [MediaCodec.QueueRequest](../android/media/MediaCodec.QueueRequest.md) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getQueueRequest(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.QueueRequest` object for an input slot index. |
+| [Image](Image.md)? | getOutputImage Returns a read-only Image object for a dequeued output buffer index that contains the raw video frame. |
+| [MediaCodec.ParameterDescriptor](../android/media/MediaCodec.ParameterDescriptor.md)? | getParameterDescriptor Describe a parameter with the name. |
+| [MediaCodec.QueueRequest](../android/media/MediaCodec.QueueRequest.md) | getQueueRequest Return a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.QueueRequest` object for an input slot index. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getSupportedVendorParameters()()` Returns a list of vendor parameter names. |
-| static [Image](Image.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#mapHardwareBuffer(android.hardware.HardwareBuffer)(hardwareBuffer: https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#)` Map a `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#` object into `https://developer.android.com/reference/kotlin/android/media/Image`, so that the content of the buffer is accessible. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, presentationTimeUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` After filling a range of the input buffer at the specified index submit it to the component. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSupportedVendorParameters Returns a list of vendor parameter names. |
+| static [Image](Image.md)? | mapHardwareBuffer Map a `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#` object into Image, so that the content of the buffer is accessible. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queueInputBuffer After filling a range of the input buffer at the specified index submit it to the component. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffers(kotlin.Int,%20java.util.ArrayDeque)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bufferInfos: https://developer.android.com/reference/kotlin/java/util/ArrayDeque.html#<https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo!>)` Submit multiple access units to the codec along with multiple `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` describing the contents of the buffer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueSecureInputBuffer(kotlin.Int,%20kotlin.Int,%20android.media.MediaCodec.CryptoInfo,%20kotlin.Long,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, info: https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo, presentationTimeUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Similar to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)` but submits a buffer that is potentially encrypted. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueSecureInputBuffers(kotlin.Int,%20java.util.ArrayDeque,%20java.util.ArrayDeque)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bufferInfos: https://developer.android.com/reference/kotlin/java/util/ArrayDeque.html#<https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo!>, cryptoInfos: https://developer.android.com/reference/kotlin/java/util/ArrayDeque.html#<https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo!>)` Similar to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffers(kotlin.Int,%20java.util.ArrayDeque)` but submits multiple access units in a buffer that is potentially encrypted. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queueInputBuffers Submit multiple access units to the codec along with multiple `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` describing the contents of the buffer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queueSecureInputBuffer Similar to queueInputBuffer but submits a buffer that is potentially encrypted. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queueSecureInputBuffers Similar to queueInputBuffers but submits multiple access units in a buffer that is potentially encrypted. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#release()()` Free up resources used by the codec instance. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Boolean)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, render: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If you are done with a buffer, use this call to return the buffer to the codec or to render it on the output surface. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Long)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, renderTimestampNs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` If you are done with a buffer, use this call to update its surface timestamp and return it to the codec to render it on the output surface. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | release Free up resources used by the codec instance. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | releaseOutputBuffer If you are done with a buffer, use this call to return the buffer to the codec or to render it on the output surface. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | releaseOutputBuffer If you are done with a buffer, use this call to update its surface timestamp and return it to the codec to render it on the output surface. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#reset()()` Returns the codec to its initial (Uninitialized) state. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setAudioPresentation(android.media.AudioPresentation)(presentation: https://developer.android.com/reference/kotlin/android/media/AudioPresentation)` Sets the audio presentation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setCallback(android.media.MediaCodec.Callback)(cb: https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback?)` Sets an asynchronous callback for actionable MediaCodec events on the default looper. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reset Returns the codec to its initial (Uninitialized) state. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAudioPresentation Sets the audio presentation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCallback Sets an asynchronous callback for actionable MediaCodec events on the default looper. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setCallback(android.media.MediaCodec.Callback,%20android.os.Handler)(cb: https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Sets an asynchronous callback for actionable MediaCodec events. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setInputSurface(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Configures the codec (e.g. encoder) to use a persistent input surface in place of input buffers. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setOnFirstTunnelFrameReadyListener(android.os.Handler,%20android.media.MediaCodec.OnFirstTunnelFrameReadyListener)(handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, listener: https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFirstTunnelFrameReadyListener?)` Registers a callback to be invoked when the first output frame has been decoded and is ready to be rendered on a codec configured for tunnel mode with `KEY_AUDIO_SESSION_ID`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCallback Sets an asynchronous callback for actionable MediaCodec events. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInputSurface Configures the codec (e.g. encoder) to use a persistent input surface in place of input buffers. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnFirstTunnelFrameReadyListener Registers a callback to be invoked when the first output frame has been decoded and is ready to be rendered on a codec configured for tunnel mode with `KEY_AUDIO_SESSION_ID`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setOnFrameRenderedListener(android.media.MediaCodec.OnFrameRenderedListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFrameRenderedListener?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Registers a callback to be invoked when an output frame is rendered on the output surface. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setOutputSurface(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Dynamically sets the output surface of a codec. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)(params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Communicate additional parameter changes to the component instance. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnFrameRenderedListener Registers a callback to be invoked when an output frame is rendered on the output surface. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOutputSurface Dynamically sets the output surface of a codec. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setParameters Communicate additional parameter changes to the component instance. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setVideoScalingMode(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` If a surface has been specified in a previous call to #configure specifies the scaling mode to use. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#signalEndOfInputStream()()` Signals end-of-stream on input. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()()` After successfully configuring the component, call `start`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVideoScalingMode If a surface has been specified in a previous call to #configure specifies the scaling mode to use. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | signalEndOfInputStream Signals end-of-stream on input. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start After successfully configuring the component, call `start`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()()` Finish the decode/encode session, note that the codec instance remains active and ready to be `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`ed again. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#subscribeToVendorParameters(kotlin.collections.MutableList)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Subscribe to vendor parameters, so that these parameters will be present in #getOutputFormat and changes to these parameters generate output format change event. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#unsubscribeFromVendorParameters(kotlin.collections.MutableList)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Unsubscribe from vendor parameters, so that these parameters will not be present in #getOutputFormat and changes to these parameters no longer generate output format change event. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stop Finish the decode/encode session, note that the codec instance remains active and ready to be started again. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | subscribeToVendorParameters Subscribe to vendor parameters, so that these parameters will be present in #getOutputFormat and changes to these parameters generate output format change event. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unsubscribeFromVendorParameters Unsubscribe from vendor parameters, so that these parameters will not be present in #getOutputFormat and changes to these parameters no longer generate output format change event. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaCodec#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Constants
 
@@ -662,7 +662,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val BUFFER_FLAG_DECODE_ONLY: Int
 ```
 
-This indicates that the buffer is decoded and updates the internal state of the decoder, but does not produce any output buffer. When a buffer has this flag set, `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFrameRenderedListener#onFrameRendered(android.media.MediaCodec,%20kotlin.Long,%20kotlin.Long)` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` will not be called for that given buffer. For example, when seeking to a certain frame, that frame may need to reference previous frames in order for it to produce output. The preceding frames can be marked with this flag so that they are only decoded and their data is used when decoding the latter frame that should be initially displayed post-seek. Another example would be trick play, trick play is when a video is fast-forwarded and only a subset of the frames is to be rendered on the screen. The frames not to be rendered can be marked with this flag for the same reason as the above one. Marking frames with this flag improves the overall performance of playing a video stream as fewer frames need to be passed back to the app. In `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#FEATURE_TunneledPlayback:kotlin.String`, buffers marked with this flag are not rendered on the output surface. A frame should not be marked with this flag and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` simultaneously, doing so will produce a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.InvalidBufferFlagsException`
+This indicates that the buffer is decoded and updates the internal state of the decoder, but does not produce any output buffer. When a buffer has this flag set, onFrameRendered and onOutputBufferAvailable will not be called for that given buffer. For example, when seeking to a certain frame, that frame may need to reference previous frames in order for it to produce output. The preceding frames can be marked with this flag so that they are only decoded and their data is used when decoding the latter frame that should be initially displayed post-seek. Another example would be trick play, trick play is when a video is fast-forwarded and only a subset of the frames is to be rendered on the screen. The frames not to be rendered can be marked with this flag for the same reason as the above one. Marking frames with this flag improves the overall performance of playing a video stream as fewer frames need to be passed back to the app. In `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo.CodecCapabilities#FEATURE_TunneledPlayback:kotlin.String`, buffers marked with this flag are not rendered on the output surface. A frame should not be marked with this flag and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` simultaneously, doing so will produce a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.InvalidBufferFlagsException`
 
  Value: 32
 
@@ -674,7 +674,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val BUFFER_FLAG_END_OF_STREAM: Int
 ```
 
-This signals the end of stream, i.e. no buffers will be available after this, unless of course, `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` follows.
+This signals the end of stream, i.e. no buffers will be available after this, unless of course, flush follows.
 
  Value: 4
 
@@ -757,16 +757,16 @@ If this codec is to be used with `https://developer.android.com/reference/kotlin
 
 When this flag is set, the following APIs throw `https://developer.android.com/reference/kotlin/android/media/MediaCodec.IncompatibleWithBlockModelException`.
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffer(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputImage(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputImage(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueSecureInputBuffer(kotlin.Int,%20kotlin.Int,%20android.media.MediaCodec.CryptoInfo,%20kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`
+- getInputBuffer
+- getInputImage
+- getInputBuffers
+- getOutputBuffer
+- getOutputImage
+- getOutputBuffers
+- queueInputBuffer
+- queueSecureInputBuffer
+- dequeueInputBuffer
+- dequeueOutputBuffer
 
  Value: 2
 
@@ -821,9 +821,9 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 static val INFO_OUTPUT_BUFFERS_CHANGED: Int
 ```
 
-**Deprecated:** *This return value can be ignored as `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()` has been deprecated. Client should request a current buffer using on of the get-buffer or get-image methods each time one has been dequeued.*
+**Deprecated:** *This return value can be ignored as getOutputBuffers has been deprecated. Client should request a current buffer using on of the get-buffer or get-image methods each time one has been dequeued.*
 
-The output buffers have changed, the client must refer to the new set of output buffers returned by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()` from this point on.
+The output buffers have changed, the client must refer to the new set of output buffers returned by getOutputBuffers from this point on.
 
 Additionally, this event signals that the video scaling mode may have been reset to the default.
 
@@ -837,7 +837,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val INFO_OUTPUT_FORMAT_CHANGED: Int
 ```
 
-The output format has changed, subsequent data will follow the new format. `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFormat()` returns the new format. Note, that you can also use the new `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputFormat(kotlin.Int)` method to get the format for a specific output buffer. This frees you from having to track output format changes.
+The output format has changed, subsequent data will follow the new format. getOutputFormat returns the new format. Note, that you can also use the new getOutputFormat method to get the format for a specific output buffer. This frees you from having to track output format changes.
 
  Value: -2
 
@@ -849,7 +849,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val INFO_TRY_AGAIN_LATER: Int
 ```
 
-If a non-negative timeout had been specified in the call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`, indicates that the call timed out.
+If a non-negative timeout had been specified in the call to dequeueOutputBuffer, indicates that the call timed out.
 
  Value: -1
 
@@ -897,7 +897,7 @@ Enable/disable low latency decoding mode. When enabled, the decoder doesn't hold
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 - `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_LOW_LATENCY:kotlin.String`
 
 ### PARAMETER_KEY_OFFSET_TIME
@@ -914,7 +914,7 @@ Specify an offset (in micro-second) to be added on top of the timestamps onward.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_QP_OFFSET_MAP
 
@@ -938,7 +938,7 @@ The scope of this key is throughout the encoding session until it is reconfigure
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_QP_OFFSET_RECTS
 
@@ -964,7 +964,7 @@ The maximum number of contours (rectangles) that can be specified for a given in
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_REQUEST_SYNC_FRAME
 
@@ -980,7 +980,7 @@ Request that the encoder produce a sync frame "soon". Provide an Integer with th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_SUSPEND
 
@@ -996,7 +996,7 @@ Temporarily suspend/resume encoding of input data. While suspended input data is
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_SUSPEND_TIME
 
@@ -1012,7 +1012,7 @@ When `https://developer.android.com/reference/kotlin/android/media/MediaCodec#PA
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_TUNNEL_PEEK
 
@@ -1022,15 +1022,15 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val PARAMETER_KEY_TUNNEL_PEEK: String
 ```
 
-Control video peek of the first frame when a codec is configured for tunnel mode with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_SESSION_ID:kotlin.String` while the `https://developer.android.com/reference/kotlin/android/media/AudioTrack` is paused.
+Control video peek of the first frame when a codec is configured for tunnel mode with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_AUDIO_SESSION_ID:kotlin.String` while the AudioTrack is paused.
 
-When disabled (1) after a `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`, (2) while the corresponding `https://developer.android.com/reference/kotlin/android/media/AudioTrack` is paused and (3) before any buffers are queued, the first frame is not to be rendered until either this parameter is enabled or the corresponding `https://developer.android.com/reference/kotlin/android/media/AudioTrack` has begun playback. Once the frame is decoded and ready to be rendered, `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFirstTunnelFrameReadyListener#onFirstTunnelFrameReady(android.media.MediaCodec)` is called but the frame is not rendered. The surface continues to show the previously-rendered content, or black if the surface is new. A subsequent call to `https://developer.android.com/reference/kotlin/android/media/AudioTrack#play()` renders this frame and triggers a callback to `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFrameRenderedListener#onFrameRendered(android.media.MediaCodec,%20kotlin.Long,%20kotlin.Long)`, and video playback begins.
+When disabled (1) after a flush or start, (2) while the corresponding AudioTrack is paused and (3) before any buffers are queued, the first frame is not to be rendered until either this parameter is enabled or the corresponding AudioTrack has begun playback. Once the frame is decoded and ready to be rendered, onFirstTunnelFrameReady is called but the frame is not rendered. The surface continues to show the previously-rendered content, or black if the surface is new. A subsequent call to play renders this frame and triggers a callback to onFrameRendered, and video playback begins.
 
-**Note** : To clear any previously rendered content and show black, configure the MediaCodec with `KEY_PUSH_BLANK_BUFFERS_ON_STOP(1)`, and call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()` before pushing new video frames to the codec.
+**Note** : To clear any previously rendered content and show black, configure the MediaCodec with `KEY_PUSH_BLANK_BUFFERS_ON_STOP(1)`, and call stop before pushing new video frames to the codec.
 
-When enabled (1) after a `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` and (2) while the corresponding `https://developer.android.com/reference/kotlin/android/media/AudioTrack` is paused, the first frame is rendered as soon as it is decoded, or immediately, if it has already been decoded. If not already decoded, when the frame is decoded and ready to be rendered, `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFirstTunnelFrameReadyListener#onFirstTunnelFrameReady(android.media.MediaCodec)` is called. The frame is then immediately rendered and `https://developer.android.com/reference/kotlin/android/media/MediaCodec.OnFrameRenderedListener#onFrameRendered(android.media.MediaCodec,%20kotlin.Long,%20kotlin.Long)` is subsequently called.
+When enabled (1) after a flush or start and (2) while the corresponding AudioTrack is paused, the first frame is rendered as soon as it is decoded, or immediately, if it has already been decoded. If not already decoded, when the frame is decoded and ready to be rendered, onFirstTunnelFrameReady is called. The frame is then immediately rendered and onFrameRendered is subsequently called.
 
-The value is an Integer object containing the value 1 to enable or the value 0 to disable. Once a frame has been rendered, changing this parameter has no effect until a subsequent `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#stop()`/`https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`.
+The value is an Integer object containing the value 1 to enable or the value 0 to disable. Once a frame has been rendered, changing this parameter has no effect until a subsequent flush or stop/start.
 
 If this parameter isn't set, the OEM determines the behavior for the device.
 
@@ -1038,7 +1038,7 @@ If this parameter isn't set, the OEM determines the behavior for the device.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### PARAMETER_KEY_VIDEO_BITRATE
 
@@ -1054,7 +1054,7 @@ Change a video encoder's target bitrate on the fly. The value is an Integer obje
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)`
+- setParameters
 
 ### VIDEO_SCALING_MODE_SCALE_TO_FIT
 
@@ -1105,7 +1105,7 @@ Configures a component.
 |---|---|
 | `format` | [MediaFormat](MediaFormat.md)?: The format of the input data (decoder) or the desired format of the output data (encoder). Passing `null` as `format` is equivalent to passing an android.media.MediaFormat#MediaFormat. |
 | `surface` | [Surface](../android.view/Surface.md)?: Specify a surface on which to render the output of this decoder. Pass `null` as `surface` if the codec does not generate raw video output (e.g. not a video decoder) and/or if you want to configure the codec for `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` output. |
-| `crypto` | [MediaCrypto](MediaCrypto.md)?: Specify a crypto object to facilitate secure decryption of the media data. Pass `null` as `crypto` for non-secure codecs. Please note that `https://developer.android.com/reference/kotlin/android/media/MediaCodec#` does NOT take ownership of the `https://developer.android.com/reference/kotlin/android/media/MediaCrypto` object; it is the application's responsibility to properly cleanup the `https://developer.android.com/reference/kotlin/android/media/MediaCrypto` object when not in use. |
+| `crypto` | [MediaCrypto](MediaCrypto.md)?: Specify a crypto object to facilitate secure decryption of the media data. Pass `null` as `crypto` for non-secure codecs. Please note that MediaCodec does NOT take ownership of the MediaCrypto object; it is the application's responsibility to properly cleanup the MediaCrypto object when not in use. |
 | --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specify `https://developer.android.com/reference/kotlin/android/media/MediaCodec#CONFIGURE_FLAG_ENCODE:kotlin.Int` to configure the component as an encoder. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/media/MediaCodec#CONFIGURE_FLAG_ENCODE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec#CONFIGURE_FLAG_USE_BLOCK_MODEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec#CONFIGURE_FLAG_USE_CRYPTO_ASYNC:kotlin.Int` |
 
@@ -1156,7 +1156,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static fun createByCodecName(name: String): MediaCodec
 ```
 
-If you know the exact name of the component you want to instantiate use this method to instantiate it. Use with caution. Likely to be used with information obtained from `https://developer.android.com/reference/kotlin/android/media/MediaCodecList`
+If you know the exact name of the component you want to instantiate use this method to instantiate it. Use with caution. Likely to be used with information obtained from MediaCodecList
 
 | Parameters ||
 |---|---|
@@ -1164,7 +1164,7 @@ If you know the exact name of the component you want to instantiate use this met
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaCodec#` | This value cannot be `null`. |
+| MediaCodec | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1197,7 +1197,7 @@ Instantiate the preferred decoder supporting input data of the given mime type. 
 - "audio/g711-alaw" - G.711 alaw audio
 - "audio/g711-mlaw" - G.711 ulaw audio
 
-**Note:** It is preferred to use `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findDecoderForFormat(android.media.MediaFormat)` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)` to ensure that the resulting codec can handle a given format.
+**Note:** It is preferred to use findDecoderForFormat and createByCodecName to ensure that the resulting codec can handle a given format.
 
 <br />
 
@@ -1207,7 +1207,7 @@ Instantiate the preferred decoder supporting input data of the given mime type. 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaCodec#` | This value cannot be `null`. |
+| MediaCodec | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1224,7 +1224,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static fun createEncoderByType(type: String): MediaCodec
 ```
 
-Instantiate the preferred encoder supporting output data of the given mime type. **Note:** It is preferred to use `https://developer.android.com/reference/kotlin/android/media/MediaCodecList#findEncoderForFormat(android.media.MediaFormat)` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)` to ensure that the resulting codec can handle a given format.
+Instantiate the preferred encoder supporting output data of the given mime type. **Note:** It is preferred to use findEncoderForFormat and createByCodecName to ensure that the resulting codec can handle a given format.
 
 | Parameters ||
 |---|---|
@@ -1232,7 +1232,7 @@ Instantiate the preferred encoder supporting output data of the given mime type.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaCodec#` | This value cannot be `null`. |
+| MediaCodec | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1249,11 +1249,11 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun createInputSurface(): Surface
 ```
 
-Requests a Surface to use as the input to an encoder, in place of input buffers. This may only be called after #configure and before `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`.
+Requests a Surface to use as the input to an encoder, in place of input buffers. This may only be called after #configure and before start.
 
 The application is responsible for calling release() on the Surface when done.
 
-The Surface must be rendered with a hardware-accelerated API, such as OpenGL ES. `https://developer.android.com/reference/kotlin/android/view/Surface.html#lockCanvas(android.graphics.Rect)` may fail or produce unexpected results.
+The Surface must be rendered with a hardware-accelerated API, such as OpenGL ES. lockCanvas may fail or produce unexpected results.
 
 | Return ||
 |---|---|
@@ -1271,13 +1271,13 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static fun createPersistentInputSurface(): Surface
 ```
 
-Create a persistent input surface that can be used with codecs that normally have an input surface, such as video encoders. A persistent input can be reused by subsequent `https://developer.android.com/reference/kotlin/android/media/MediaCodec#` or `https://developer.android.com/reference/kotlin/android/media/MediaRecorder` instances, but can only be used by at most one codec or recorder instance concurrently.
+Create a persistent input surface that can be used with codecs that normally have an input surface, such as video encoders. A persistent input can be reused by subsequent MediaCodec or MediaRecorder instances, but can only be used by at most one codec or recorder instance concurrently.
 
 The application is responsible for calling release() on the Surface when done.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/Surface.html#` | an input surface that can be used with `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setInputSurface(android.view.Surface)`. This value cannot be `null`. |
+| `https://developer.android.com/reference/kotlin/android/view/Surface.html#` | an input surface that can be used with setInputSurface. This value cannot be `null`. |
 
 ### dequeueInputBuffer
 
@@ -1355,11 +1355,11 @@ fun flush(): Unit
 
 Flush both input and output ports of the component.
 
-Upon return, all indices previously returned in calls to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` --- or obtained via `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onInputBufferAvailable(android.media.MediaCodec,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` callbacks --- become invalid, and all buffers are owned by the codec.
+Upon return, all indices previously returned in calls to dequeueInputBuffer and dequeueOutputBuffer --- or obtained via onInputBufferAvailable or onOutputBufferAvailable callbacks --- become invalid, and all buffers are owned by the codec.
 
-If the codec is configured in asynchronous mode, call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` after `flush` has returned to resume codec operations. The codec will not request input buffers until this has happened. **Note, however, that there may still be outstanding `onOutputBufferAvailable` callbacks that were not handled prior to calling `flush`. The indices returned via these callbacks also become invalid upon calling `flush` and should be discarded.**
+If the codec is configured in asynchronous mode, call start after `flush` has returned to resume codec operations. The codec will not request input buffers until this has happened. **Note, however, that there may still be outstanding `onOutputBufferAvailable` callbacks that were not handled prior to calling `flush`. The indices returned via these callbacks also become invalid upon calling `flush` and should be discarded.**
 
-If the codec is configured in synchronous mode, codec will resume automatically if it is configured with an input surface. Otherwise, it will resume when `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)` is called.
+If the codec is configured in synchronous mode, codec will resume automatically if it is configured with an input surface. Otherwise, it will resume when dequeueInputBuffer is called.
 
 | Exceptions ||
 |---|---|
@@ -1374,7 +1374,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getCanonicalName(): String
 ```
 
-Retrieve the underlying codec name. This method is similar to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getName()`, except that it returns the underlying component name even if an alias was used to create this MediaCodec object by name,
+Retrieve the underlying codec name. This method is similar to getName, except that it returns the underlying component name even if an alias was used to create this MediaCodec object by name,
 
 | Return ||
 |---|---|
@@ -1396,7 +1396,7 @@ Get the codec info. If the codec was created by createDecoderByType or createEnc
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaCodecInfo` | This value cannot be `null`. |
+| MediaCodecInfo | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1410,11 +1410,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getInputBuffer(index: Int): ByteBuffer?
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/java/nio/Buffer.html#clear()`, writable ByteBuffer object for a dequeued input buffer index to contain the input data. After calling this method any ByteBuffer or Image object previously returned for the same input index MUST no longer be used.
+Returns a clear, writable ByteBuffer object for a dequeued input buffer index to contain the input data. After calling this method any ByteBuffer or Image object previously returned for the same input index MUST no longer be used.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`, or received via an onInputBufferAvailable callback. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned from a call to dequeueInputBuffer, or received via an onInputBufferAvailable callback. |
 
 | Return ||
 |---|---|
@@ -1434,7 +1434,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 fun getInputBuffers(): Array<ByteBuffer!>
 ```
 
-**Deprecated:** *Use the new `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffer(kotlin.Int)` method instead each time an input buffer is dequeued. **Note:** As of API 21, dequeued input buffers are automatically `https://developer.android.com/reference/kotlin/java/nio/Buffer.html#clear()`. *Do not use this method if using an input surface.**
+**Deprecated:** *Use the new getInputBuffer method instead each time an input buffer is dequeued. **Note:** As of API 21, dequeued input buffers are automatically clear. *Do not use this method if using an input surface.**
 
 Retrieve the set of input buffers. Call this after start() returns. After calling this method, any ByteBuffers previously returned by an earlier call to this method MUST no longer be used.
 
@@ -1459,7 +1459,7 @@ Call this after #configure returns successfully to get the input format accepted
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat` | This value cannot be `null`. |
+| MediaFormat | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1478,11 +1478,11 @@ Returns a writable Image object for a dequeued input buffer index to contain the
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`, or received via an onInputBufferAvailable callback. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned from a call to dequeueInputBuffer, or received via an onInputBufferAvailable callback. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Image?` | the input image, or null if the index is not a dequeued input buffer, or not a ByteBuffer that contains a raw image. |
+| Image | the input image, or null if the index is not a dequeued input buffer, or not a ByteBuffer that contains a raw image. |
 
 | Exceptions ||
 |---|---|
@@ -1501,7 +1501,7 @@ Return Metrics data about the current codec instance.
 
 Call this method after configuration, during execution, or after the codec has been already stopped.
 
-Beginning with android.os.Build.VERSION_CODES#B this method can be used to get the Metrics data prior to an error. (e.g. in `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onError(android.media.MediaCodec,%20android.media.MediaCodec.CodecException)` or after a method throws `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException`.) Before that, the Metrics data was cleared on error, resulting in a null return value.
+Beginning with android.os.Build.VERSION_CODES#B this method can be used to get the Metrics data prior to an error. (e.g. in onError or after a method throws `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException`.) Before that, the Metrics data was cleared on error, resulting in a null return value.
 
 | Return ||
 |---|---|
@@ -1515,7 +1515,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun getName(): String
 ```
 
-Retrieve the codec name. If the codec was created by createDecoderByType or createEncoderByType, what component is chosen is not known beforehand. This method returns the name of the codec that was selected by the platform. **Note:** Implementations may provide multiple aliases (codec names) for the same underlying codec, any of which can be used to instantiate the same underlying codec in `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createByCodecName(kotlin.String)`. This method returns the name used to create the codec in this case.
+Retrieve the codec name. If the codec was created by createDecoderByType or createEncoderByType, what component is chosen is not known beforehand. This method returns the name of the codec that was selected by the platform. **Note:** Implementations may provide multiple aliases (codec names) for the same underlying codec, any of which can be used to instantiate the same underlying codec in createByCodecName. This method returns the name used to create the codec in this case.
 
 | Return ||
 |---|---|
@@ -1537,7 +1537,7 @@ Returns a read-only ByteBuffer for a dequeued output buffer index. The position 
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`, or received via an onOutputBufferAvailable callback. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to dequeueOutputBuffer, or received via an onOutputBufferAvailable callback. |
 
 | Return ||
 |---|---|
@@ -1557,7 +1557,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 fun getOutputBuffers(): Array<ByteBuffer!>
 ```
 
-**Deprecated:** *Use the new `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)` method instead each time an output buffer is dequeued. This method is not supported if codec is configured in asynchronous mode. **Note:** As of API 21, the position and limit of output buffers that are dequeued will be set to the valid data range. *Do not use this method if using an output surface.**
+**Deprecated:** *Use the new getOutputBuffer method instead each time an output buffer is dequeued. This method is not supported if codec is configured in asynchronous mode. **Note:** As of API 21, the position and limit of output buffers that are dequeued will be set to the valid data range. *Do not use this method if using an output surface.**
 
 Retrieve the set of output buffers. Call this after start() returns and whenever dequeueOutputBuffer signals an output buffer change by returning `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_BUFFERS_CHANGED:kotlin.Int`. After calling this method, any ByteBuffers previously returned by an earlier call to this method MUST no longer be used.
 
@@ -1582,7 +1582,7 @@ Call this after dequeueOutputBuffer signals a format change by returning `https:
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat` | This value cannot be `null`. |
+| MediaFormat | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1601,11 +1601,11 @@ Returns the output format for a specific output buffer.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned from a call to dequeueInputBuffer. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaFormat` | the format for the output buffer, or null if the index is not a dequeued output buffer. |
+| MediaFormat | the format for the output buffer, or null if the index is not a dequeued output buffer. |
 
 ### getOutputFrame
 
@@ -1619,7 +1619,7 @@ Returns an `https://developer.android.com/reference/kotlin/android/media/MediaCo
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): output buffer index from `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): output buffer index from onOutputBufferAvailable |
 
 | Return ||
 |---|---|
@@ -1642,11 +1642,11 @@ Returns a read-only Image object for a dequeued output buffer index that contain
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`, or received via an onOutputBufferAvailable callback. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to dequeueOutputBuffer, or received via an onOutputBufferAvailable callback. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Image?` | the output image, or null if the index is not a dequeued output buffer, not a raw video frame, or if the codec was configured with an output surface. |
+| Image | the output image, or null if the index is not a dequeued output buffer, not a raw video frame, or if the codec was configured with an output surface. |
 
 | Exceptions ||
 |---|---|
@@ -1667,7 +1667,7 @@ This method can be called in any codec state except for released state.
 
 | Parameters ||
 |---|---|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the parameter to describe, typically one from `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getSupportedVendorParameters()`. This value cannot be `null`. |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the parameter to describe, typically one from getSupportedVendorParameters. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1689,7 +1689,7 @@ Return a `https://developer.android.com/reference/kotlin/android/media/MediaCode
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): input slot index from `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onInputBufferAvailable(android.media.MediaCodec,%20kotlin.Int)` |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): input slot index from onInputBufferAvailable |
 
 | Return ||
 |---|---|
@@ -1728,7 +1728,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static fun mapHardwareBuffer(hardwareBuffer: HardwareBuffer): Image?
 ```
 
-Map a `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#` object into `https://developer.android.com/reference/kotlin/android/media/Image`, so that the content of the buffer is accessible. Depending on the usage and pixel format of the hardware buffer, it may not be mappable; this method returns null in that case.
+Map a `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#` object into Image, so that the content of the buffer is accessible. Depending on the usage and pixel format of the hardware buffer, it may not be mappable; this method returns null in that case.
 
 | Parameters ||
 |---|---|
@@ -1736,7 +1736,7 @@ Map a `https://developer.android.com/reference/kotlin/android/hardware/HardwareB
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Image?` | Mapped `https://developer.android.com/reference/kotlin/android/media/Image` object, or null if the buffer is not mappable. |
+| Image | Mapped Image object, or null if the buffer is not mappable. |
 
 ### queueInputBuffer
 
@@ -1752,23 +1752,23 @@ fun queueInputBuffer(
 ): Unit
 ```
 
-After filling a range of the input buffer at the specified index submit it to the component. Once an input buffer is queued to the codec, it MUST NOT be used until it is later retrieved by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffer(kotlin.Int)` in response to a `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)` return value or a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onInputBufferAvailable(android.media.MediaCodec,%20kotlin.Int)` callback.
+After filling a range of the input buffer at the specified index submit it to the component. Once an input buffer is queued to the codec, it MUST NOT be used until it is later retrieved by getInputBuffer in response to a dequeueInputBuffer return value or a onInputBufferAvailable callback.
 
-Many decoders require the actual compressed data stream to be preceded by "codec specific data", i.e. setup data used to initialize the codec such as PPS/SPS in the case of AVC video or code tables in the case of vorbis audio. The class `https://developer.android.com/reference/kotlin/android/media/MediaExtractor` provides codec specific data as part of the returned track format in entries named "csd-0", "csd-1" ...
+Many decoders require the actual compressed data stream to be preceded by "codec specific data", i.e. setup data used to initialize the codec such as PPS/SPS in the case of AVC video or code tables in the case of vorbis audio. The class MediaExtractor provides codec specific data as part of the returned track format in entries named "csd-0", "csd-1" ...
 
-These buffers can be submitted directly after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` by specifying the flag `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int`. However, if you configure the codec with a `https://developer.android.com/reference/kotlin/android/media/MediaFormat` containing these keys, they will be automatically submitted by MediaCodec directly after start. Therefore, the use of `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int` flag is discouraged and is recommended only for advanced users.
+These buffers can be submitted directly after start or flush by specifying the flag `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int`. However, if you configure the codec with a MediaFormat containing these keys, they will be automatically submitted by MediaCodec directly after start. Therefore, the use of `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int` flag is discouraged and is recommended only for advanced users.
 
 To indicate that this is the final piece of input data (or rather that no more input data follows unless the decoder is subsequently flushed) specify the flag `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int`.
 
-**Note:** Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, `presentationTimeUs` was not propagated to the frame timestamp of (rendered) Surface output buffers, and the resulting frame timestamp was undefined. Use `https://developer.android.com/reference/kotlin/android/media/MediaCodec#releaseOutputBuffer(kotlin.Int,%20kotlin.Long)` to ensure a specific frame timestamp is set. Similarly, since frame timestamps can be used by the destination surface for rendering synchronization, **care must be taken to normalize presentationTimeUs so as to not be mistaken for a system time. (See [SurfaceView specifics](MediaCodec.md))).**
+**Note:** Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, `presentationTimeUs` was not propagated to the frame timestamp of (rendered) Surface output buffers, and the resulting frame timestamp was undefined. Use releaseOutputBuffer to ensure a specific frame timestamp is set. Similarly, since frame timestamps can be used by the destination surface for rendering synchronization, **care must be taken to normalize presentationTimeUs so as to not be mistaken for a system time. (See [SurfaceView specifics](MediaCodec.md))).**
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to dequeueInputBuffer. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The byte offset into the input buffer at which the data starts. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of bytes of valid input data. |
 | --- | --- |
-| `presentationTimeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The presentation timestamp in microseconds for this buffer. This is normally the media time at which this buffer should be presented (rendered). When using an output surface, this will be propagated as the `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#getTimestamp()` for the frame (after conversion to nanoseconds). |
+| `presentationTimeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The presentation timestamp in microseconds for this buffer. This is normally the media time at which this buffer should be presented (rendered). When using an output surface, this will be propagated as the getTimestamp for the frame (after conversion to nanoseconds). |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A bitmask of flags `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int`. While not prohibited, most codecs do not use the `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_KEY_FRAME:kotlin.Int` flag for input buffers. |
 
 | Exceptions ||
@@ -1791,13 +1791,13 @@ fun queueInputBuffers(
 
 Submit multiple access units to the codec along with multiple `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` describing the contents of the buffer. This method is supported only in asynchronous mode. While this method can be used for all codecs, it is meant for buffer batching, which is only supported by codecs that advertise FEATURE_MultipleFrames. Other codecs will not output large output buffers via onOutputBuffersAvailable, and instead will output single-access-unit output via onOutputBufferAvailable.
 
-Output buffer size can be configured using the following MediaFormat keys. `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE:kotlin.String`. Details for each access unit present in the buffer should be described using `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo`. Access units must be laid out contiguously (without any gaps) and in order. Multiple access units in the output if present, will be available in `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBuffersAvailable(android.media.MediaCodec,%20kotlin.Int,%20java.util.ArrayDeque)` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` in case of single-access-unit output or when output does not contain any buffers, such as flags.
+Output buffer size can be configured using the following MediaFormat keys. `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE:kotlin.String`. Details for each access unit present in the buffer should be described using `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo`. Access units must be laid out contiguously (without any gaps) and in order. Multiple access units in the output if present, will be available in onOutputBuffersAvailable or onOutputBufferAvailable in case of single-access-unit output or when output does not contain any buffers, such as flags.
 
-All other details for populating `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` is the same as described in `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)`.
+All other details for populating `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` is the same as described in queueInputBuffer.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to dequeueInputBuffer. |
 | `bufferInfos` | [ArrayDeque](../java.util/ArrayDeque.md)\< [MediaCodec.BufferInfo](../android/media/MediaCodec.BufferInfo.md)!\>: ArrayDeque of `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` that describes the contents in the buffer. The ArrayDeque and the BufferInfo objects provided can be recycled by the caller for re-use. This value cannot be `null`. |
 
 | Exceptions ||
@@ -1822,11 +1822,11 @@ fun queueSecureInputBuffer(
 ): Unit
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)` but submits a buffer that is potentially encrypted. **Check out further notes at `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffer(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20kotlin.Int)`.**
+Similar to queueInputBuffer but submits a buffer that is potentially encrypted. **Check out further notes at queueInputBuffer.**
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to dequeueInputBuffer. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The byte offset into the input buffer at which the data starts. |
 | `info` | [MediaCodec.CryptoInfo](../android/media/MediaCodec.CryptoInfo.md): Metadata required to facilitate decryption, the object can be reused immediately after this call returns. This value cannot be `null`. |
 | --- | --- |
@@ -1852,11 +1852,11 @@ fun queueSecureInputBuffers(
 ): Unit
 ```
 
-Similar to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffers(kotlin.Int,%20java.util.ArrayDeque)` but submits multiple access units in a buffer that is potentially encrypted. **Check out further notes at `https://developer.android.com/reference/kotlin/android/media/MediaCodec#queueInputBuffers(kotlin.Int,%20java.util.ArrayDeque)`.**
+Similar to queueInputBuffers but submits multiple access units in a buffer that is potentially encrypted. **Check out further notes at queueInputBuffers.**
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned input buffer previously returned in a call to dequeueInputBuffer. |
 | `bufferInfos` | [ArrayDeque](../java.util/ArrayDeque.md)\< [MediaCodec.BufferInfo](../android/media/MediaCodec.BufferInfo.md)!\>: ArrayDeque of `https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo` that describes the contents in the buffer. The ArrayDeque and the BufferInfo objects provided can be recycled by the caller for re-use. This value cannot be `null`. |
 | `cryptoInfos` | [ArrayDeque](../java.util/ArrayDeque.md)\< [MediaCodec.CryptoInfo](../android/media/MediaCodec.CryptoInfo.md)!\>: ArrayDeque of `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CryptoInfo` objects to facilitate the decryption of the contents. The ArrayDeque and the CryptoInfo objects provided can be reused immediately after the call returns. These objects should correspond to bufferInfo objects to ensure correct decryption. This value cannot be `null`. |
 | --- | --- |
@@ -1890,11 +1890,11 @@ fun releaseOutputBuffer(
 ): Unit
 ```
 
-If you are done with a buffer, use this call to return the buffer to the codec or to render it on the output surface. If you configured the codec with an output surface, setting `render` to `true` will first send the buffer to that output surface. The surface will release the buffer back to the codec once it is no longer used/displayed. Once an output buffer is released to the codec, it MUST NOT be used until it is later retrieved by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)` in response to a `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` return value or a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` callback.
+If you are done with a buffer, use this call to return the buffer to the codec or to render it on the output surface. If you configured the codec with an output surface, setting `render` to `true` will first send the buffer to that output surface. The surface will release the buffer back to the codec once it is no longer used/displayed. Once an output buffer is released to the codec, it MUST NOT be used until it is later retrieved by getOutputBuffer in response to a dequeueOutputBuffer return value or a onOutputBufferAvailable callback.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to dequeueOutputBuffer. |
 | `render` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If a valid surface was specified when configuring the codec, passing true renders this output buffer to the surface. |
 
 | Exceptions ||
@@ -1919,13 +1919,13 @@ The timestamp may have special meaning depending on the destination surface.
 
 | SurfaceView specifics |
 |---|
-| If you render your buffer on a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#`, you can use the timestamp to render the buffer at a specific time (at the VSYNC at or after the buffer timestamp). For this to work, the timestamp needs to be *reasonably close* to the current `https://developer.android.com/reference/kotlin/java/lang/System.html#nanoTime()`. Currently, this is set as within one (1) second. A few notes: - the buffer will not be returned to the codec until the timestamp has passed and the buffer is no longer used by the `https://developer.android.com/reference/kotlin/android/view/Surface.html#`. - buffers are processed sequentially, so you may block subsequent buffers to be displayed on the `https://developer.android.com/reference/kotlin/android/view/Surface.html#`. This is important if you want to react to user action, e.g. stop the video or seek. - if multiple buffers are sent to the `https://developer.android.com/reference/kotlin/android/view/Surface.html#` to be rendered at the same VSYNC, the last one will be shown, and the other ones will be dropped. - if the timestamp is *not* "reasonably close" to the current system time, the `https://developer.android.com/reference/kotlin/android/view/Surface.html#` will ignore the timestamp, and display the buffer at the earliest feasible time. In this mode it will not drop frames. - for best performance and quality, call this method when you are about two VSYNCs' time before the desired render time. For 60Hz displays, this is about 33 msec. |
+| If you render your buffer on a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#`, you can use the timestamp to render the buffer at a specific time (at the VSYNC at or after the buffer timestamp). For this to work, the timestamp needs to be *reasonably close* to the current nanoTime. Currently, this is set as within one (1) second. A few notes: - the buffer will not be returned to the codec until the timestamp has passed and the buffer is no longer used by the `https://developer.android.com/reference/kotlin/android/view/Surface.html#`. - buffers are processed sequentially, so you may block subsequent buffers to be displayed on the `https://developer.android.com/reference/kotlin/android/view/Surface.html#`. This is important if you want to react to user action, e.g. stop the video or seek. - if multiple buffers are sent to the `https://developer.android.com/reference/kotlin/android/view/Surface.html#` to be rendered at the same VSYNC, the last one will be shown, and the other ones will be dropped. - if the timestamp is *not* "reasonably close" to the current system time, the `https://developer.android.com/reference/kotlin/android/view/Surface.html#` will ignore the timestamp, and display the buffer at the earliest feasible time. In this mode it will not drop frames. - for best performance and quality, call this method when you are about two VSYNCs' time before the desired render time. For 60Hz displays, this is about 33 msec. |
 
-Once an output buffer is released to the codec, it MUST NOT be used until it is later retrieved by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffer(kotlin.Int)` in response to a `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)` return value or a `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputBufferAvailable(android.media.MediaCodec,%20kotlin.Int,%20android.media.MediaCodec.BufferInfo)` callback.
+Once an output buffer is released to the codec, it MUST NOT be used until it is later retrieved by getOutputBuffer in response to a dequeueOutputBuffer return value or a onOutputBufferAvailable callback.
 
 | Parameters ||
 |---|---|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of a client-owned output buffer previously returned from a call to dequeueOutputBuffer. |
 | `renderTimestampNs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The timestamp to associate with this buffer when it is sent to the Surface. |
 
 | Exceptions ||
@@ -1941,7 +1941,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun reset(): Unit
 ```
 
-Returns the codec to its initial (Uninitialized) state. Call this if an `https://developer.android.com/reference/kotlin/android/media/MediaCodec.CodecException#isRecoverable()` error has occured to reset the codec to its initial state after creation.
+Returns the codec to its initial (Uninitialized) state. Call this if an isRecoverable error has occured to reset the codec to its initial state after creation.
 
 | Exceptions ||
 |---|---|
@@ -1960,7 +1960,7 @@ Sets the audio presentation.
 
 | Parameters ||
 |---|---|
-| `presentation` | [AudioPresentation](AudioPresentation.md): see `https://developer.android.com/reference/kotlin/android/media/AudioPresentation`. In particular, id should be set. This value cannot be `null`. |
+| `presentation` | [AudioPresentation](AudioPresentation.md): see AudioPresentation. In particular, id should be set. This value cannot be `null`. |
 
 ### setCallback
 
@@ -1972,7 +1972,7 @@ fun setCallback(cb: MediaCodec.Callback?): Unit
 
 Sets an asynchronous callback for actionable MediaCodec events on the default looper.
 
-Same as `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setCallback(android.media.MediaCodec.Callback,%20android.os.Handler)` with handler set to null.
+Same as setCallback with handler set to null.
 
 | Parameters ||
 |---|---|
@@ -1980,7 +1980,7 @@ Same as `https://developer.android.com/reference/kotlin/android/media/MediaCodec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setCallback(android.media.MediaCodec.Callback,%20android.os.Handler)`
+- setCallback
 
 ### setCallback
 
@@ -1993,9 +1993,9 @@ fun setCallback(
 ): Unit
 ```
 
-Sets an asynchronous callback for actionable MediaCodec events. If the client intends to use the component in asynchronous mode, a valid callback should be provided before #configure is called. When asynchronous callback is enabled, the client should not call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getInputBuffers()`, `https://developer.android.com/reference/kotlin/android/media/MediaCodec#getOutputBuffers()`, `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueInputBuffer(kotlin.Long)` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,%20kotlin.Long)`.
+Sets an asynchronous callback for actionable MediaCodec events. If the client intends to use the component in asynchronous mode, a valid callback should be provided before #configure is called. When asynchronous callback is enabled, the client should not call getInputBuffers, getOutputBuffers, dequeueInputBuffer or dequeueOutputBuffer.
 
-Also, `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` behaves differently in asynchronous mode. After calling `flush`, you must call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()` to "resume" receiving input buffers, even if an input surface was created.
+Also, flush behaves differently in asynchronous mode. After calling `flush`, you must call start to "resume" receiving input buffers, even if an input surface was created.
 
 | Parameters ||
 |---|---|
@@ -2010,15 +2010,15 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun setInputSurface(surface: Surface): Unit
 ```
 
-Configures the codec (e.g. encoder) to use a persistent input surface in place of input buffers. This may only be called after #configure and before `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`, in lieu of `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createInputSurface()`.
+Configures the codec (e.g. encoder) to use a persistent input surface in place of input buffers. This may only be called after #configure and before start, in lieu of createInputSurface.
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android.view/Surface.md): a persistent input surface created by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createPersistentInputSurface()` This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): a persistent input surface created by createPersistentInputSurface This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the surface was not created by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createPersistentInputSurface()`. |
+| `java.lang.IllegalArgumentException` | if the surface was not created by createPersistentInputSurface. |
 | `java.lang.IllegalStateException` | if not in the Configured state or does not require an input surface. |
 
 ### setOnFirstTunnelFrameReadyListener
@@ -2131,7 +2131,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun signalEndOfInputStream(): Unit
 ```
 
-Signals end-of-stream on input. Equivalent to submitting an empty buffer with `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` set. This may only be used with encoders receiving input from a Surface created by `https://developer.android.com/reference/kotlin/android/media/MediaCodec#createInputSurface()`.
+Signals end-of-stream on input. Equivalent to submitting an empty buffer with `https://developer.android.com/reference/kotlin/android/media/MediaCodec#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` set. This may only be used with encoders receiving input from a Surface created by createInputSurface.
 
 | Exceptions ||
 |---|---|
@@ -2153,7 +2153,7 @@ Call `start` also if the codec is configured in asynchronous mode, and it has ju
 | Exceptions ||
 |---|---|
 | `android.media.MediaCodec.CodecException` | upon codec error. Note that some codec errors for start may be attributed to future method calls. |
-| `java.lang.IllegalStateException` | if not in the Configured state or just after `https://developer.android.com/reference/kotlin/android/media/MediaCodec#flush()` for a codec that is configured in asynchronous mode. |
+| `java.lang.IllegalStateException` | if not in the Configured state or just after flush for a codec that is configured in asynchronous mode. |
 
 ### stop
 
@@ -2163,7 +2163,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 fun stop(): Unit
 ```
 
-Finish the decode/encode session, note that the codec instance remains active and ready to be `https://developer.android.com/reference/kotlin/android/media/MediaCodec#start()`ed again. To ensure that it is available to other client call `https://developer.android.com/reference/kotlin/android/media/MediaCodec#release()` and don't just rely on garbage collection to eventually do this for you.
+Finish the decode/encode session, note that the codec instance remains active and ready to be started again. To ensure that it is available to other client call release and don't just rely on garbage collection to eventually do this for you.
 
 | Exceptions ||
 |---|---|
@@ -2179,13 +2179,13 @@ fun subscribeToVendorParameters(names: MutableList<String!>): Unit
 
 Subscribe to vendor parameters, so that these parameters will be present in #getOutputFormat and changes to these parameters generate output format change event.
 
-Unrecognized parameter names or standard (non-vendor) parameter names will be ignored. `https://developer.android.com/reference/kotlin/android/media/MediaCodec#reset()` also resets the list of subscribed parameters. If a parameter in `names` is already subscribed, it will remain subscribed.
+Unrecognized parameter names or standard (non-vendor) parameter names will be ignored. reset also resets the list of subscribed parameters. If a parameter in `names` is already subscribed, it will remain subscribed.
 
 This method can be called in any codec state except for released state. When called in running state with newly subscribed parameters, it takes effect no later than the processing of the subsequently queued buffer. For the new parameters, the codec will generate output format change event.
 
-Note that any vendor parameters set in a #configure or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)` call are automatically subscribed.
+Note that any vendor parameters set in a #configure or setParameters call are automatically subscribed.
 
-See also `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputFormatChanged(android.media.MediaCodec,%20android.media.MediaFormat)` for output format change events.
+See also `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` or onOutputFormatChanged for output format change events.
 
 | Parameters ||
 |---|---|
@@ -2205,13 +2205,13 @@ fun unsubscribeFromVendorParameters(names: MutableList<String!>): Unit
 
 Unsubscribe from vendor parameters, so that these parameters will not be present in #getOutputFormat and changes to these parameters no longer generate output format change event.
 
-Unrecognized parameter names, standard (non-vendor) parameter names will be ignored. `https://developer.android.com/reference/kotlin/android/media/MediaCodec#reset()` also resets the list of subscribed parameters. If a parameter in `names` is already unsubscribed, it will remain unsubscribed.
+Unrecognized parameter names, standard (non-vendor) parameter names will be ignored. reset also resets the list of subscribed parameters. If a parameter in `names` is already unsubscribed, it will remain unsubscribed.
 
 This method can be called in any codec state except for released state. When called in running state with newly unsubscribed parameters, it takes effect no later than the processing of the subsequently queued buffer. For the removed parameters, the codec will generate output format change event.
 
-Note that any vendor parameters set in a #configure or `https://developer.android.com/reference/kotlin/android/media/MediaCodec#setParameters(android.os.Bundle)` call are automatically subscribed, and with this method they can be unsubscribed.
+Note that any vendor parameters set in a #configure or setParameters call are automatically subscribed, and with this method they can be unsubscribed.
 
-See also `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec.Callback#onOutputFormatChanged(android.media.MediaCodec,%20android.media.MediaFormat)` for output format change events.
+See also `https://developer.android.com/reference/kotlin/android/media/MediaCodec#INFO_OUTPUT_FORMAT_CHANGED:kotlin.Int` or onOutputFormatChanged for output format change events.
 
 | Parameters ||
 |---|---|

@@ -15,6 +15,6 @@ abstract class CustomizationAction
 
 Represents an action that can be associated with a peripheral customization trigger.
 
-This is an abstract class that serves as the base for all customization actions, such as `https://developer.android.com/reference/kotlin/android/hardware/input/SimpleCustomizationAction`, `https://developer.android.com/reference/kotlin/android/hardware/input/AppCustomizationAction` and `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction`.
+This is an abstract class that serves as the base for all customization actions, such as SimpleCustomizationAction, AppCustomizationAction and UriCustomizationAction.
 
 ## Summary

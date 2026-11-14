@@ -21,18 +21,18 @@ This matrix maps a transform from one color space to another. For the particular
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#ColorSpaceTransform(kotlin.Array)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/util/Rational.html#!>!)` Create a new immutable `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` instance from a `https://developer.android.com/reference/kotlin/android/util/Rational.html#` array. |
-| `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#ColorSpaceTransform(kotlin.IntArray)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Create a new immutable `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` instance from an `int` array. |
+| ColorSpaceTransform Create a new immutable ColorSpaceTransform instance from a `https://developer.android.com/reference/kotlin/android/util/Rational.html#` array. |
+| ColorSpaceTransform Create a new immutable ColorSpaceTransform instance from an `int` array. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#copyElements(kotlin.Array,%20kotlin.Int)(destination: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/util/Rational.html#!>!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.html#` elements in row-major order from this matrix into the destination. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#copyElements(kotlin.IntArray,%20kotlin.Int)(destination: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.html#` elements in row-major order from this matrix into the destination. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` is equal to another `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyElements Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.html#` elements in row-major order from this matrix into the destination. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | copyElements Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.html#` elements in row-major order from this matrix into the destination. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Check if this ColorSpaceTransform is equal to another ColorSpaceTransform. |
 | --- | --- |
-| [Rational](../android.util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#getElement(kotlin.Int,%20kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, row: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get an element of this matrix by its row and column. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#toString()()` Return the color space transform as a string representation. |
+| [Rational](../android.util/Rational.md)! | getElement Get an element of this matrix by its row and column. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Return the color space transform as a string representation. |
 | --- | --- |
 
 ## Public constructors
@@ -45,7 +45,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 ColorSpaceTransform(elements: Array<Rational!>!)
 ```
 
-Create a new immutable `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` instance from a `https://developer.android.com/reference/kotlin/android/util/Rational.html#` array.
+Create a new immutable ColorSpaceTransform instance from a `https://developer.android.com/reference/kotlin/android/util/Rational.html#` array.
 
 The elements must be stored in a row-major order.
 
@@ -66,7 +66,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 ColorSpaceTransform(elements: IntArray!)
 ```
 
-Create a new immutable `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` instance from an `int` array.
+Create a new immutable ColorSpaceTransform instance from an `int` array.
 
 The elements must be stored in a row-major order. Each rational is stored contiguously as a `(numerator, denominator)` pair.
 
@@ -132,7 +132,7 @@ fun copyElements(
 
 Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.html#` elements in row-major order from this matrix into the destination.
 
-Each element is stored as a contiguous rational packed as a `(numerator, denominator)` pair of ints, identical to the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#ColorSpaceTransform(kotlin.IntArray)`.
+Each element is stored as a contiguous rational packed as a `(numerator, denominator)` pair of ints, identical to the ColorSpaceTransform.
 
 | Parameters ||
 |---|---|
@@ -146,7 +146,7 @@ Each element is stored as a contiguous rational packed as a `(numerator, denomin
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#ColorSpaceTransform(kotlin.IntArray)`
+- ColorSpaceTransform
 
 ### equals
 
@@ -156,9 +156,9 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun equals(other: Any?): Boolean
 ```
 
-Check if this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` is equal to another `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#`.
+Check if this ColorSpaceTransform is equal to another ColorSpaceTransform.
 
-Two color space transforms are equal if and only if all of their elements are `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)`.
+Two color space transforms are equal if and only if all of their elements are equals.
 
 | Parameters ||
 |---|---|
@@ -204,8 +204,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

@@ -19,34 +19,34 @@ Class representing Passpoint configuration. This contains configurations specifi
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#PasspointConfiguration()()` Constructor for creating PasspointConfiguration with default values. |
-| `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#PasspointConfiguration(android.net.wifi.hotspot2.PasspointConfiguration)(source: https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#!)` Copy constructor. |
+| PasspointConfiguration Constructor for creating PasspointConfiguration with default values. |
+| PasspointConfiguration Copy constructor. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Credential](../android.net.wifi.hotspot2.pps/Credential.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getCredential()()` Get the credential information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Credential](../android.net.wifi.hotspot2.pps/Credential.md)! | getCredential Get the credential information. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getDecoratedIdentityPrefix()()` Get the decorated identity prefix. |
-| [HomeSp](../android.net.wifi.hotspot2.pps/HomeSp.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getHomeSp()()` Get the Home SP (Service Provider) information. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getSubscriptionExpirationTimeMillis()()` Utility method to get the time this subscription will expire. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getDecoratedIdentityPrefix Get the decorated identity prefix. |
+| [HomeSp](../android.net.wifi.hotspot2.pps/HomeSp.md)! | getHomeSp Get the Home SP (Service Provider) information. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getSubscriptionExpirationTimeMillis Utility method to get the time this subscription will expire. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#getUniqueId()()` Get a unique identifier for a PasspointConfiguration object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#isOsuProvisioned()()` Indicates if the Passpoint Configuration was provisioned by a subscription (OSU) server, which means that it's an R2 (or R3) profile. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getUniqueId Get a unique identifier for a PasspointConfiguration object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOsuProvisioned Indicates if the Passpoint Configuration was provisioned by a subscription (OSU) server, which means that it's an R2 (or R3) profile. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setCredential(android.net.wifi.hotspot2.pps.Credential)(credential: https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/Credential!)` Set the credential information. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setDecoratedIdentityPrefix(kotlin.String)(decoratedIdentityPrefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set a prefix for a decorated identity as per RFC 7542. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setHomeSp(android.net.wifi.hotspot2.pps.HomeSp)(homeSp: https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/pps/HomeSp!)` Set the Home SP (Service Provider) information. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCredential Set the credential information. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDecoratedIdentityPrefix Set a prefix for a decorated identity as per RFC 7542. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHomeSp Set the Home SP (Service Provider) information. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#setSubscriptionExpirationTimeInMillis(kotlin.Long)(subscriptionExpirationTimeInMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Utility method to set the time this subscription will expire. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/hotspot2/PasspointConfiguration#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSubscriptionExpirationTimeInMillis Utility method to set the time this subscription will expire. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -89,7 +89,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -207,8 +207,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -250,7 +250,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun setDecoratedIdentityPrefix(decoratedIdentityPrefix: String?): Unit
 ```
 
-Set a prefix for a decorated identity as per RFC 7542. This prefix must contain a list of realms (could be a list of 1) delimited by a '!' character. e.g. homerealm.example.org! or proxyrealm.example.net!homerealm.example.org! A prefix of "homerealm.example.org!" will generate a decorated identity that looks like: homerealm.example.org!user@otherrealm.example.net Calling with a null parameter will clear the decorated prefix. Note: Caller must verify that the device supports this feature by calling `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#isDecoratedIdentitySupported()`
+Set a prefix for a decorated identity as per RFC 7542. This prefix must contain a list of realms (could be a list of 1) delimited by a '!' character. e.g. homerealm.example.org! or proxyrealm.example.net!homerealm.example.org! A prefix of "homerealm.example.org!" will generate a decorated identity that looks like: homerealm.example.org!user@otherrealm.example.net Calling with a null parameter will clear the decorated prefix. Note: Caller must verify that the device supports this feature by calling isDecoratedIdentitySupported
 
 | Parameters ||
 |---|---|

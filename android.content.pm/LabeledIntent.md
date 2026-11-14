@@ -49,7 +49,7 @@ Output: nothing.
 
 Broadcast Action: Locale of a particular app has changed.
 
-This broadcast is explicitly sent to the `https://developer.android.com/reference/kotlin/android/content/pm/InstallSourceInfo#getInstallingPackageName()` installer of the app whose locale has changed.
+This broadcast is explicitly sent to the getInstallingPackageName installer of the app whose locale has changed.
 
 The broadcast could also be received by manifest-declared receivers with `android.permission.READ_APP_SPECIFIC_LOCALES`
 
@@ -98,7 +98,7 @@ Input: `https://developer.android.com/reference/kotlin/android/content/Intent.ht
 
 Used to indicate that some piece of data should be attached to some other place. For example, image data could be attached to a contact. It is up to the recipient to decide where the data should be attached; the intent does not specify the ultimate destination.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of data to be attached.
+Input: getData is URI of data to be attached.
 
 Output: nothing.
 
@@ -108,7 +108,7 @@ Output: nothing.
 
 Activity action: Launch UI to manage auto-revoke state. This is equivalent to Intent#ACTION_APPLICATION_DETAILS_SETTINGS
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)` should be a `package`-scheme `https://developer.android.com/reference/kotlin/android/net/Uri.html#` with a package name, whose auto-revoke state will be reviewed (mandatory). E.g. `Uri.fromParts("package", packageName, null) `
+Input: setData should be a `package`-scheme `https://developer.android.com/reference/kotlin/android/net/Uri.html#` with a package name, whose auto-revoke state will be reviewed (mandatory). E.g. `Uri.fromParts("package", packageName, null) `
 
 Output: Nothing.
 
@@ -118,7 +118,7 @@ Output: Nothing.
 
 Broadcast Action: This is a *sticky broadcast* containing the charging state, level, and other information about the battery. See `https://developer.android.com/reference/kotlin/android/os/BatteryManager.html#` for documentation on the contents of the Intent.
 
-You *cannot* receive this through components declared in manifests, only by explicitly registering for it with `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. See `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_LOW:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_OKAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_POWER_CONNECTED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_POWER_DISCONNECTED:kotlin.String` for distinct battery-related broadcasts that are sent and can be received through manifest receivers.
+You *cannot* receive this through components declared in manifests, only by explicitly registering for it with registerReceiver. See `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_LOW:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_BATTERY_OKAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_POWER_CONNECTED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_POWER_DISCONNECTED:kotlin.String` for distinct battery-related broadcasts that are sent and can be received through manifest receivers.
 
 This is a protected intent that can only be sent by the system.
 
@@ -166,7 +166,7 @@ Output: Nothing.
 
 Activity Action: Perform a call to someone specified by the data.
 
-Input: If nothing, an empty dialer is started; else `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of a phone number to be dialed or a tel: URI of an explicit phone number.
+Input: If nothing, an empty dialer is started; else getData is URI of a phone number to be dialed or a tel: URI of an explicit phone number.
 
 Output: nothing.
 
@@ -176,7 +176,7 @@ Note: this Intent **cannot** be used to call emergency numbers. Applications can
 
 Note: This Intent can only be used to dial call forwarding MMI codes if the application using this intent is set as the default or system dialer. The system will treat any other application using this Intent for the purpose of dialing call forwarding MMI codes as if the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` Intent was used instead.
 
-Note: An app filling the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` role should use `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#placeCall(android.net.Uri,%20android.os.Bundle)` to place calls rather than relying on this intent.
+Note: An app filling the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` role should use placeCall to place calls rather than relying on this intent.
 
 Note: If your app targets `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int` or higher and declares as using the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CALL_PHONE:kotlin.String` permission which is not granted, then attempting to use this action will result in a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`.
 
@@ -202,7 +202,7 @@ Broadcast Action: The "Camera Button" was pressed. Includes a single extra field
 
 Activity Action: Main entry point for carrier setup apps.
 
-Carrier apps that provide an implementation for this action may be invoked to configure carrier service and typically require `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()` to fulfill their duties.
+Carrier apps that provide an implementation for this action may be invoked to configure carrier service and typically require hasCarrierPrivileges to fulfill their duties.
 
 <br />
 
@@ -219,7 +219,7 @@ This action should be used when the user will naturally expect to select an acti
 
 In contrast, if the user is selecting a menu item to send a picture they are viewing to someone else, there are many different things they may want to do at this point: send it through e-mail, upload it to a web service, etc. In this case the CHOOSER action should be used, to always present to the user a list of the things they can do, with a nice title given by the caller such as "Send this photo with:".
 
-If you need to grant URI permissions through a chooser, you must specify the permissions to be granted on the ACTION_CHOOSER Intent *in addition* to the EXTRA_INTENT inside. This means using `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)` to specify the URIs to be granted as well as `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` as appropriate.
+If you need to grant URI permissions through a chooser, you must specify the permissions to be granted on the ACTION_CHOOSER Intent *in addition* to the EXTRA_INTENT inside. This means using setClipData to specify the URIs to be granted as well as `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` as appropriate.
 
 As a convenience, an Intent of this form can be created with the #createChooser function.
 
@@ -240,7 +240,7 @@ Requires android.Manifest.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
 
 Broadcast Action: The current device `https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#` (orientation, locale, etc) has changed. When such a change happens, the UIs (view hierarchy) will need to be rebuilt based on this new information; for the most part, applications don't need to worry about this, because the system will take care of stopping and restarting the application to make sure it sees the new changes. Some system code that can not be restarted will need to watch for this action and handle it appropriately.
 
-You *cannot* receive this through components declared in manifests, only by explicitly registering for it with `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`.
+You *cannot* receive this through components declared in manifests, only by explicitly registering for it with registerReceiver.
 
 This is a protected intent that can only be sent by the system.
 
@@ -250,13 +250,13 @@ This is a protected intent that can only be sent by the system.
 
 Activity Action: Allow the user to create a new document. When invoked, the system will display the various `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#` instances installed on the device, letting the user navigate through them. The returned document may be a newly created document with no content, or it may be an existing document with the requested MIME type.
 
-Each document is represented as a `content://` URI backed by a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#`, which can be opened as a stream with `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`, or queried for `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document.html#` metadata.
+Each document is represented as a `content://` URI backed by a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#`, which can be opened as a stream with openFileDescriptor, or queried for `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document.html#` metadata.
 
-Callers must indicate the concrete MIME type of the document being created by setting `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)`. This MIME type cannot be changed after the document is created.
+Callers must indicate the concrete MIME type of the document being created by setting setType. This MIME type cannot be changed after the document is created.
 
 Callers can provide an initial display name through `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TITLE:kotlin.String`, but the user may change this value before creating the file.
 
-Callers must include `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String` in the Intent to obtain URIs that can be opened with `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`.
+Callers must include `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String` in the Intent to obtain URIs that can be opened with openFileDescriptor.
 
 Callers can set a document URI through `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.html#EXTRA_INITIAL_URI:kotlin.String` to indicate the initial location of documents navigator. System will do its best to launch the navigator in the specified document if it's a folder, or the folder that contains the specified document if not.
 
@@ -286,7 +286,7 @@ Activity Action: Creates a shortcut.
 
 Input: Nothing.
 
-Output: An Intent representing the `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo` result.
+Output: An Intent representing the ShortcutInfo result.
 
 For compatibility with older versions of android the intent may also contain three extras: SHORTCUT_INTENT (value: Intent), SHORTCUT_NAME (value: String), and SHORTCUT_ICON (value: Bitmap) or SHORTCUT_ICON_RESOURCE (value: ShortcutIconResource).
 
@@ -318,7 +318,7 @@ Output: nothing.
 
 Activity Action: Delete the given data from its container.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of data to be deleted.
+Input: getData is URI of data to be deleted.
 
 Output: nothing.
 
@@ -344,7 +344,7 @@ This is a protected intent that can only be sent by the system.
 
 Activity Action: Dial a number as specified by the data. This shows a UI with the number being dialed, allowing the user to explicitly initiate the call.
 
-Input: If nothing, an empty dialer is started; else `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of a phone number to be dialed or a tel: URI of an explicit phone number.
+Input: If nothing, an empty dialer is started; else getData is URI of a phone number to be dialed or a tel: URI of an explicit phone number.
 
 Output: nothing.
 
@@ -382,7 +382,7 @@ This is a protected intent that can only be sent by the system. It is only sent 
 
 Activity Action: Provide explicit editable access to the given data.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of data to be edited.
+Input: getData is URI of data to be edited.
 
 Output: nothing.
 
@@ -426,7 +426,7 @@ Output: nothing
 
 Activity Action: Allow the user to select a particular kind of data and return it. This is different than `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PICK:kotlin.String` in that here we just say what kind of data is desired, not a URI of existing data from which the user can pick. An ACTION_GET_CONTENT could allow the user to create the data as it runs (for example taking a picture or recording a sound), let them browse over the web and download the desired data, etc.
 
-There are two main ways to use this action: if you want a specific kind of data, such as a person contact, you set the MIME type to the kind of data you want and launch it with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`. The system will then launch the best application to select that kind of data for you.
+There are two main ways to use this action: if you want a specific kind of data, such as a person contact, you set the MIME type to the kind of data you want and launch it with startActivity. The system will then launch the best application to select that kind of data for you.
 
 You may also be interested in any of a set of types of content the user can pick. For example, an e-mail application that wants to allow the user to add an attachment to an e-mail message can use this action to bring up a list of all of the types of content the user can attach.
 
@@ -438,7 +438,7 @@ Callers can optionally specify `https://developer.android.com/reference/kotlin/a
 
 If the caller can handle multiple returned items (the user performing multiple selection), then it can specify `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALLOW_MULTIPLE:kotlin.String` to indicate this.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getType()` is the desired MIME type to retrieve. Note that no URI is supplied in the intent, as there are no constraints on where the returned data originally comes from. You may also include the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String` if you can only accept data that can be opened as a stream. You may use `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_LOCAL_ONLY:kotlin.String` to limit content selection to local data. You may use `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALLOW_MULTIPLE:kotlin.String` to allow the user to select multiple items.
+Input: getType is the desired MIME type to retrieve. Note that no URI is supplied in the intent, as there are no constraints on where the returned data originally comes from. You may also include the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String` if you can only accept data that can be opened as a stream. You may use `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_LOCAL_ONLY:kotlin.String` to limit content selection to local data. You may use `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALLOW_MULTIPLE:kotlin.String` to allow the user to select multiple items.
 
 Output: The URI of the item that was picked. This must be a content: URI so that any receiver can access it.
 
@@ -499,7 +499,7 @@ Broadcast Action: An input method has been changed.
 
 Activity Action: Insert an empty item into the given container.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of the directory (vnd.android.cursor.dir/\*) in which to place the data.
+Input: getData is URI of the directory (vnd.android.cursor.dir/\*) in which to place the data.
 
 Output: URI of the new data that was created.
 
@@ -509,7 +509,7 @@ Output: URI of the new data that was created.
 
 Activity Action: Pick an existing item, or insert a new item, and then edit it.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getType()` is the desired MIME type of the item to create or edit. The extras can contain type specific data to pass through to the editing/creating activity.
+Input: getType is the desired MIME type of the item to create or edit. The extras can contain type specific data to pass through to the editing/creating activity.
 
 Output: The URI of the item that was picked. This must be a content: URI so that any receiver can access it.
 
@@ -541,9 +541,9 @@ Output: If `https://developer.android.com/reference/kotlin/android/content/Inten
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE:kotlin.String`
 
-Activity Action: Use with startActivityForResult to start a system activity that captures content on the screen to take a screenshot and present it to the user for editing. The edited screenshot is saved on device and returned to the calling activity as a through `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`. User interaction is required to return the edited screenshot to the calling activity.
+Activity Action: Use with startActivityForResult to start a system activity that captures content on the screen to take a screenshot and present it to the user for editing. The edited screenshot is saved on device and returned to the calling activity as a through getData. User interaction is required to return the edited screenshot to the calling activity.
 
-The response `https://developer.android.com/reference/kotlin/android/content/Intent.html#` may include additional data to "backlink" directly back to the application for which the screenshot was captured. If present, the application "backlink" can be retrieved via `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()`. The data is present only if the user accepted to include the link information with the screenshot. The data can contain one of the following:
+The response `https://developer.android.com/reference/kotlin/android/content/Intent.html#` may include additional data to "backlink" directly back to the application for which the screenshot was captured. If present, the application "backlink" can be retrieved via getClipData. The data is present only if the user accepted to include the link information with the screenshot. The data can contain one of the following:
 
 - A deeplinking `https://developer.android.com/reference/kotlin/android/net/Uri.html#` or an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` if the captured app integrates with `https://developer.android.com/reference/kotlin/android/app/assist/AssistContent.html#`.
 - Otherwise, a main launcher intent that launches the screenshotted application to its home screen.
@@ -552,7 +552,7 @@ The "backlink" to the screenshotted application will be set within `https://deve
 
 This intent action requires the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE:kotlin.String`.
 
-Callers should query `https://developer.android.com/reference/kotlin/android/app/StatusBarManager.html#canLaunchCaptureContentActivityForNote(android.app.Activity)` before showing a UI element that allows users to trigger this flow.
+Callers should query canLaunchCaptureContentActivityForNote before showing a UI element that allows users to trigger this flow.
 
 Callers should query for `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CAPTURE_CONTENT_FOR_NOTE_STATUS_CODE:kotlin.String` in the response `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to check if the request was a success. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE:kotlin.String`
@@ -561,7 +561,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_LOCALE_CHANGED:kotlin.String`
 
-Broadcast Action: The receiver's effective locale has changed. This happens when the device locale, the receiving app's locale (set via `https://developer.android.com/reference/kotlin/android/app/LocaleManager.html#setApplicationLocales(android.os.LocaleList)`) or language tags of Regional preferences changed. Can be received by manifest-declared receivers.
+Broadcast Action: The receiver's effective locale has changed. This happens when the device locale, the receiving app's locale (set via setApplicationLocales) or language tags of Regional preferences changed. Can be received by manifest-declared receivers.
 
 If only the app locale changed, includes the following extras:
 
@@ -708,7 +708,7 @@ Broadcast Action: The media scanner has finished scanning a directory. The path 
 
 Broadcast Action: Request the media scanner to scan a file and add it to the media database.
 
-The path to the file is contained in `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`.
+The path to the file is contained in getData.
 
 <br />
 
@@ -800,19 +800,19 @@ If the user has chosen a `https://developer.android.com/reference/kotlin/android
 
 Activity Action: Allow the user to select and return one or more existing documents. When invoked, the system will display the various `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#` instances installed on the device, letting the user interactively navigate through them. These documents include local media, such as photos and video, and documents provided by installed cloud storage providers.
 
-Each document is represented as a `content://` URI backed by a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#`, which can be opened as a stream with `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`, or queried for `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document.html#` metadata.
+Each document is represented as a `content://` URI backed by a `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#`, which can be opened as a stream with openFileDescriptor, or queried for `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.Document.html#` metadata.
 
-All selected documents are returned to the calling application with persistable read and write permission grants. If you want to maintain access to the documents across device reboots, you need to explicitly take the persistable permissions using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#takePersistableUriPermission(android.net.Uri,%20kotlin.Int)`.
+All selected documents are returned to the calling application with persistable read and write permission grants. If you want to maintain access to the documents across device reboots, you need to explicitly take the persistable permissions using takePersistableUriPermission.
 
-Callers must indicate the acceptable document MIME types through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)`. For example, to select photos, use `image/*`. If multiple disjoint MIME types are acceptable, define them in `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)` to \*/\*.
+Callers must indicate the acceptable document MIME types through setType. For example, to select photos, use `image/*`. If multiple disjoint MIME types are acceptable, define them in `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_MIME_TYPES:kotlin.String` and setType to \*/\*.
 
 If the caller can handle multiple returned items (the user performing multiple selection), then you can specify `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALLOW_MULTIPLE:kotlin.String` to indicate this.
 
-Callers must include `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String` in the Intent to obtain URIs that can be opened with `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`.
+Callers must include `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String` in the Intent to obtain URIs that can be opened with openFileDescriptor.
 
 Callers can set a document URI through `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.html#EXTRA_INITIAL_URI:kotlin.String` to indicate the initial location of documents navigator. System will do its best to launch the navigator in the specified document if it's a folder, or the folder that contains the specified document if not.
 
-Output: The URI of the item that was picked, returned in `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`. This must be a `content://` URI so that any receiver can access it. If multiple documents were selected, they are returned in `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()`.
+Output: The URI of the item that was picked, returned in getData. This must be a `content://` URI so that any receiver can access it. If multiple documents were selected, they are returned in getClipData.
 
 <br />
 
@@ -820,7 +820,7 @@ Output: The URI of the item that was picked, returned in `https://developer.andr
 
 Activity Action: Allow the user to pick a directory subtree. When invoked, the system will display the various `https://developer.android.com/reference/kotlin/android/provider/DocumentsProvider.html#` instances installed on the device, letting the user navigate through them. Apps can fully manage documents within the returned directory.
 
-To gain access to descendant (child, grandchild, etc) documents, use `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.html#buildDocumentUriUsingTree(android.net.Uri,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.html#buildChildDocumentsUriUsingTree(android.net.Uri,%20kotlin.String)` with the returned URI.
+To gain access to descendant (child, grandchild, etc) documents, use buildDocumentUriUsingTree and buildChildDocumentsUriUsingTree with the returned URI.
 
 Callers can set a document URI through `https://developer.android.com/reference/kotlin/android/provider/DocumentsContract.html#EXTRA_INITIAL_URI:kotlin.String` to indicate the initial location of documents navigator. System will do its best to launch the navigator in the specified document if it's a folder, or the folder that contains the specified document if not.
 
@@ -928,7 +928,7 @@ This is a protected intent that can only be sent by the system.
 
 Broadcast Action: Trigger the download and eventual installation of a package.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is the URI of the package file to download.
+Input: getData is the URI of the package file to download.
 
 This is a protected intent that can only be sent by the system.
 
@@ -979,7 +979,7 @@ Broadcast Action: The user has restarted a package, and all of its processes hav
 
 This is a protected intent that can only be sent by the system.
 
-Starting in Android V, an extra timestamp `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TIME:kotlin.String` is included with this broadcast to indicate the exact time the package was restarted, in `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()`.
+Starting in Android V, an extra timestamp `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TIME:kotlin.String` is included with this broadcast to indicate the exact time the package was restarted, in elapsedRealtime.
 
 <br />
 
@@ -990,7 +990,7 @@ Broadcast Action: An application package that was previously in the stopped stat
 When a package is force-stopped, the `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_RESTARTED:kotlin.String` broadcast is sent and the package in the stopped state cannot self-start for any reason unless there's an explicit request to start a component in the package. The `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PACKAGE_UNSTOPPED:kotlin.String` broadcast is sent when such an explicit process start occurs and the package is taken out of the stopped state. The data contains the name of the package.
 
 - `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_UID:kotlin.String` containing the integer uid assigned to the package.
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TIME:kotlin.String` containing the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` of when the package was unstopped.
+- `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TIME:kotlin.String` containing the elapsedRealtime of when the package was unstopped.
 
 This is a protected intent that can only be sent by the system.
 
@@ -1008,7 +1008,7 @@ This is a protected intent that can only be sent by the system.
 
 Activity Action: Create a new item in the given container, initializing it from the current contents of the clipboard.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI of the directory (vnd.android.cursor.dir/\*) in which to place the data.
+Input: getData is URI of the directory (vnd.android.cursor.dir/\*) in which to place the data.
 
 Output: URI of the new data that was created.
 
@@ -1018,7 +1018,7 @@ Output: URI of the new data that was created.
 
 Activity Action: Pick an item from the data, returning what was selected.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI containing a directory of data (vnd.android.cursor.dir/\*) from which to pick an item.
+Input: getData is URI containing a directory of data (vnd.android.cursor.dir/\*) from which to pick an item.
 
 Output: The URI of the item that was picked.
 
@@ -1090,7 +1090,7 @@ Only applications (for example Launchers) that need to display merged content ac
 
 Broadcast sent to the primary user when an associated profile has become available. This is sent when a user disables quiet mode for the profile. Carries an extra `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_USER:kotlin.String` that specifies the `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the profile. When quiet mode is changed, this broadcast will carry a boolean extra `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_QUIET_MODE:kotlin.String` indicating the new state of quiet mode. This is only sent to registered receivers, not manifest receivers.
 
-This broadcast is similar to `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_AVAILABLE:kotlin.String` but functions as a generic broadcast for all users of type `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isProfile()`}. In case of a managed profile, both `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_AVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_AVAILABLE:kotlin.String` broadcasts are sent.
+This broadcast is similar to `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_AVAILABLE:kotlin.String` but functions as a generic broadcast for all users of type isProfile}. In case of a managed profile, both `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_AVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_AVAILABLE:kotlin.String` broadcasts are sent.
 
 <br />
 
@@ -1114,7 +1114,7 @@ Only applications (for example Launchers) that need to display merged content ac
 
 Broadcast sent to the primary user when an associated profile has become unavailable. This is sent when a user enables quiet mode for the profile. Carries an extra `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_USER:kotlin.String` that specifies the `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the profile. When quiet mode is changed, this broadcast will carry a boolean extra `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_QUIET_MODE:kotlin.String` indicating the new state of quiet mode. This is only sent to registered receivers, not manifest receivers.
 
-This broadcast is similar to `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_UNAVAILABLE:kotlin.String` but functions as a generic broadcast for all users of type `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isProfile()`}. In case of a managed profile, both `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_UNAVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_UNAVAILABLE:kotlin.String` broadcasts are sent.
+This broadcast is similar to `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_UNAVAILABLE:kotlin.String` but functions as a generic broadcast for all users of type isProfile}. In case of a managed profile, both `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MANAGED_PROFILE_UNAVAILABLE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_PROFILE_UNAVAILABLE:kotlin.String` broadcasts are sent.
 
 <br />
 
@@ -1146,7 +1146,7 @@ Activities handling this intent action should handle the vast majority of MIME t
 
 Quick viewers must render the quick view image locally, and must not send file content outside current device.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is a mandatory content URI of the item to preview. `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()` contains an optional list of content URIs if there is more than one item to preview. `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INDEX:kotlin.String` is an optional index of the URI in the clip data to show first. `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_QUICK_VIEW_FEATURES:kotlin.String` is an optional extra indicating the features that can be shown in the quick view UI.
+Input: getData is a mandatory content URI of the item to preview. getClipData contains an optional list of content URIs if there is more than one item to preview. `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INDEX:kotlin.String` is an optional index of the URI in the clip data to show first. `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_QUICK_VIEW_FEATURES:kotlin.String` is an optional extra indicating the features that can be shown in the quick view UI.
 
 Output: nothing.
 
@@ -1182,10 +1182,10 @@ Broadcast Action: Sent when the device goes to sleep and becomes non-interactive
 
 For historical reasons, the name of this broadcast action refers to the power state of the screen but it is actually sent in response to changes in the overall interactive state of the device.
 
-This broadcast is sent when the device becomes non-interactive which may have nothing to do with the screen turning off. To determine the actual state of the screen, use `https://developer.android.com/reference/kotlin/android/view/Display.html#getState()`.
+This broadcast is sent when the device becomes non-interactive which may have nothing to do with the screen turning off. To determine the actual state of the screen, use getState.
 
-See `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#isInteractive()` for details.
-You *cannot* receive this through components declared in manifests, only by explicitly registering for it with `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`.
+See isInteractive for details.
+You *cannot* receive this through components declared in manifests, only by explicitly registering for it with registerReceiver.
 
 This is a protected intent that can only be sent by the system.
 
@@ -1197,10 +1197,10 @@ Broadcast Action: Sent when the device wakes up and becomes interactive.
 
 For historical reasons, the name of this broadcast action refers to the power state of the screen but it is actually sent in response to changes in the overall interactive state of the device.
 
-This broadcast is sent when the device becomes interactive which may have nothing to do with the screen turning on. To determine the actual state of the screen, use `https://developer.android.com/reference/kotlin/android/view/Display.html#getState()`.
+This broadcast is sent when the device becomes interactive which may have nothing to do with the screen turning on. To determine the actual state of the screen, use getState.
 
-See `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#isInteractive()` for details.
-You *cannot* receive this through components declared in manifests, only by explicitly registering for it with `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`.
+See isInteractive for details.
+You *cannot* receive this through components declared in manifests, only by explicitly registering for it with registerReceiver.
 
 This is a protected intent that can only be sent by the system.
 
@@ -1232,11 +1232,11 @@ Activity Action: Deliver some data to someone else. Who the data is being delive
 
 When launching a SEND intent, you should usually wrap it in a chooser (through #createChooser), which will give the proper interface for the user to pick how to send your data and allow you to specify a prompt indicating what they are doing.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getType()` is the MIME type of the data being sent. get\*Extra can have either a `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` field, containing the data to be sent. If using EXTRA_TEXT, the MIME type should be "text/plain"; otherwise it should be the MIME type of the data in EXTRA_STREAM. Use \*/\* if the MIME type is unknown (this will only allow senders that can handle generic data streams). If using `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String`, you can also optionally supply `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_HTML_TEXT:kotlin.String` for clients to retrieve your text with HTML formatting.
+Input: getType is the MIME type of the data being sent. get\*Extra can have either a `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` field, containing the data to be sent. If using EXTRA_TEXT, the MIME type should be "text/plain"; otherwise it should be the MIME type of the data in EXTRA_STREAM. Use \*/\* if the MIME type is unknown (this will only allow senders that can handle generic data streams). If using `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String`, you can also optionally supply `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_HTML_TEXT:kotlin.String` for clients to retrieve your text with HTML formatting.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int`, the data being sent can be supplied through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. This allows you to use `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` when sharing content: URIs and other advanced features of `https://developer.android.com/reference/kotlin/android/content/ClipData.html#`. If using this approach, you still must supply the same data through the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` fields described below for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int`, the data being sent can be supplied through setClipData. This allows you to use `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` when sharing content: URIs and other advanced features of `https://developer.android.com/reference/kotlin/android/content/ClipData.html#`. If using this approach, you still must supply the same data through the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` fields described below for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
-Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, if `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_TYPED_OPENABLE:kotlin.String` is passed, then the Uris passed in either `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` or via `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)` may be openable only as asset typed files using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`.
+Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, if `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_TYPED_OPENABLE:kotlin.String` is passed, then the Uris passed in either `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` or via setClipData may be openable only as asset typed files using openTypedAssetFileDescriptor.
 
 Optional standard extras, which may be interpreted by some recipients as appropriate, are: `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_EMAIL:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CC:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_BCC:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_SUBJECT:kotlin.String`.
 
@@ -1248,7 +1248,7 @@ Output: nothing.
 
 Activity Action: Send a message to someone specified by the data.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI describing the target.
+Input: getData is URI describing the target.
 
 Output: nothing.
 
@@ -1260,15 +1260,15 @@ Activity Action: Deliver multiple data to someone else.
 
 Like `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String`, except the data is multiple.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getType()` is the MIME type of the data being sent. get\*ArrayListExtra can have either a `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` field, containing the data to be sent. If using `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String`, you can also optionally supply `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_HTML_TEXT:kotlin.String` for clients to retrieve your text with HTML formatting.
+Input: getType is the MIME type of the data being sent. get\*ArrayListExtra can have either a `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` field, containing the data to be sent. If using `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String`, you can also optionally supply `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_HTML_TEXT:kotlin.String` for clients to retrieve your text with HTML formatting.
 
 Multiple types are supported, and receivers should handle mixed types whenever possible. The right way for the receiver to check them is to use the content resolver on each URI. The intent sender should try to put the most concrete mime type in the intent type, but it can fall back to \<type\>/\* or \*/\* as needed.
 
 e.g. if you are sending image/jpg and image/jpg, the intent's type can be image/jpg, but if you are sending image/jpg and image/png, then the intent's type should be image/\*.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int`, the data being sent can be supplied through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`. This allows you to use `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` when sharing content: URIs and other advanced features of `https://developer.android.com/reference/kotlin/android/content/ClipData.html#`. If using this approach, you still must supply the same data through the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` fields described below for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)`.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int`, the data being sent can be supplied through setClipData. This allows you to use `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` when sharing content: URIs and other advanced features of `https://developer.android.com/reference/kotlin/android/content/ClipData.html#`. If using this approach, you still must supply the same data through the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` fields described below for compatibility with old applications. If you don't set a ClipData, it will be copied there for you when calling startActivity.
 
-Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, if `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_TYPED_OPENABLE:kotlin.String` is passed, then the Uris passed in either `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` or via `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)` may be openable only as asset typed files using `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`.
+Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, if `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_TYPED_OPENABLE:kotlin.String` is passed, then the Uris passed in either `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` or via setClipData may be openable only as asset typed files using openTypedAssetFileDescriptor.
 
 Optional standard extras, which may be interpreted by some recipients as appropriate, are: `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_EMAIL:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CC:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_BCC:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_SUBJECT:kotlin.String`.
 
@@ -1310,7 +1310,7 @@ Output: nothing.
 
 Broadcast Action: This is broadcast when the user is being shut down. Once the broadcast is complete, the final shutdown will proceed and all unsaved data lost. Apps will not normally need to handle this, since the foreground activity will be paused as well.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#P:kotlin.Int` this broadcast is only sent to receivers registered through `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#P:kotlin.Int` this broadcast is only sent to receivers registered through registerReceiver.
 
 This is a protected intent that can only be sent by the system.
 
@@ -1329,7 +1329,7 @@ The intent will have the following extra values.
 - *`https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#EXTRA_DEVICE:kotlin.String`* indicates the BluetoothDevice which initiated this request.
 - *`https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String`* indicates the profile (e.g., `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#HEADSET:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#LE_AUDIO:kotlin.Int`) which triggered this request.
 
-Additionally, if the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#HEADSET:kotlin.Int`, the app should call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset.html#stopVoiceRecognition(android.bluetooth.BluetoothDevice)` to stop voice assistant session. If the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#LE_AUDIO:kotlin.Int`, the app should call `https://developer.android.com/reference/kotlin/android/media/AudioRecord.html#stop()` to stop voice assistant session.
+Additionally, if the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#HEADSET:kotlin.Int`, the app should call stopVoiceRecognition to stop voice assistant session. If the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#LE_AUDIO:kotlin.Int`, the app should call stop to stop voice assistant session.
 
 This is a protected intent that can only be sent by the system.
 
@@ -1388,7 +1388,7 @@ Broadcast Action: The time was set.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_TIME_TICK:kotlin.String`
 
-Broadcast Action: The current time has changed. Sent every minute. You *cannot* receive this through components declared in manifests, only by explicitly registering for it with `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`.
+Broadcast Action: The current time has changed. Sent every minute. You *cannot* receive this through components declared in manifests, only by explicitly registering for it with registerReceiver.
 
 This is a protected intent that can only be sent by the system.
 
@@ -1444,13 +1444,13 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_USER_BACKGROUND:kotlin.String`
 
-Sent after a user switch is complete, if the switch caused the process's user to be sent to the background. This is only sent to receivers registered through `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. It is sent to the user that is going to the background. This is sent as a foreground broadcast, since it is part of a visible user interaction; be as quick as possible when handling it.
+Sent after a user switch is complete, if the switch caused the process's user to be sent to the background. This is only sent to receivers registered through registerReceiver. It is sent to the user that is going to the background. This is sent as a foreground broadcast, since it is part of a visible user interaction; be as quick as possible when handling it.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_USER_FOREGROUND:kotlin.String`
 
-Sent after a user switch is complete, if the switch caused the process's user to be brought to the foreground. This is only sent to receivers registered through `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. It is sent to the user that is going to the foreground. This is sent as a foreground broadcast, since it is part of a visible user interaction; be as quick as possible when handling it.
+Sent after a user switch is complete, if the switch caused the process's user to be brought to the foreground. This is only sent to receivers registered through registerReceiver. It is sent to the user that is going to the foreground. This is sent as a foreground broadcast, since it is part of a visible user interaction; be as quick as possible when handling it.
 
 <br />
 
@@ -1482,7 +1482,7 @@ Broadcast Action: Sent when the credential-encrypted private storage has become 
 
 Activity Action: Display the data to the user. This is the most common action performed on data -- it is the generic action you can use on a piece of data to get the most reasonable thing to occur. For example, when used on a contacts entry it will view the entry; when used on a mailto: URI it will bring up a compose window filled with the information supplied by the URI; when used with a tel: URI it will invoke the dialer.
 
-Input: `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` is URI from which to retrieve data.
+Input: getData is URI from which to retrieve data.
 
 Output: nothing.
 
@@ -1547,14 +1547,14 @@ Information about the extras is below.
 
 Additionally, if the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#HEADSET:kotlin.Int`, the app should call the following APIs to start voice assistant session.
 
-- `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset.html#startVoiceRecognition(android.bluetooth.BluetoothDevice)`
+- startVoiceRecognition
 - android.media.AudioRecord#setPreferredDevice() for the `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo.html#TYPE_BLUETOOTH_SCO:kotlin.Int` device whose MAC address matches the address received in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#EXTRA_DEVICE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/media/AudioRecord.html#startRecording()`
+- startRecording
 
 If the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#EXTRA_PROFILE:kotlin.String` is `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.html#LE_AUDIO:kotlin.Int`, the app should call the following APIs to start voice assistant session.
 
 - android.media.AudioRecord#setPreferredDevice() for the `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo.html#TYPE_BLE_HEADSET:kotlin.Int` device whose MAC address matches the address received in `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#EXTRA_DEVICE:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/media/AudioRecord.html#startRecording()`
+- startRecording
 
 Output: Nothing.
 
@@ -1596,7 +1596,7 @@ A response code used with `https://developer.android.com/reference/kotlin/androi
 
 This code will only be returned after the user has interacted with the system screenshot activity to consent to sharing the data with the note.
 
-The captured screenshot is returned as a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` through `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`.
+The captured screenshot is returned as a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` through getData.
 
 <br />
 
@@ -1672,7 +1672,7 @@ The action of IntentFilter with this category is important in that it describes 
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the browser application. The activity should be able to browse the Internet.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1680,7 +1680,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the calculator application. The activity should be able to perform standard arithmetic operations.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1688,7 +1688,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the calendar application. The activity should be able to view and manipulate calendar entries.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1696,7 +1696,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the contacts application. The activity should be able to view and manipulate address book entries.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1704,7 +1704,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the email application. The activity should be able to send and receive email.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1712,7 +1712,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the files application. The activity should be able to browse and manage files stored on the device.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1720,7 +1720,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the fitness application. The activity should be able to give the user fitness information and manage workouts
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1728,7 +1728,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the gallery application. The activity should be able to view and manipulate image and video files stored on the device.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1736,7 +1736,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the maps application. The activity should be able to show the user's current location and surroundings.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1750,7 +1750,7 @@ This activity allows the user to browse and download new applications.
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the messaging application. The activity should be able to send and receive text messages.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1758,7 +1758,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the music application. The activity should be able to play, browse, or manipulate music files stored on the device.
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1766,7 +1766,7 @@ NOTE: This should not be used as the primary key of an Intent, since it will not
 
 Used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` to launch the weather application. The activity should be able to give the user information about the weather
 
-NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)` to generate a main Intent with this category in the selector.
+NOTE: This should not be used as the primary key of an Intent, since it will not result in the app launching with the correct action and category. Instead, use this with makeMainSelectorActivity to generate a main Intent with this category in the selector.
 
 <br />
 
@@ -1862,7 +1862,7 @@ This activity may be exercised by the monkey or other automated test tools.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_OPENABLE:kotlin.String`
 
-Used to indicate that an intent only wants URIs that can be opened with `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`. Openable URIs must support at least the columns defined in `https://developer.android.com/reference/kotlin/android/provider/OpenableColumns.html#` when queried.
+Used to indicate that an intent only wants URIs that can be opened with openFileDescriptor. Openable URIs must support at least the columns defined in `https://developer.android.com/reference/kotlin/android/provider/OpenableColumns.html#` when queried.
 
 <br />
 
@@ -1904,7 +1904,7 @@ To be used as a test (not part of the normal user experience).
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_TYPED_OPENABLE:kotlin.String`
 
-Used to indicate that an intent filter can accept files which are not necessarily openable by `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openFileDescriptor(android.net.Uri,%20kotlin.String)`, but at least streamable via `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)` using one of the stream types exposed via `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#getStreamTypes(android.net.Uri,%20kotlin.String)`.
+Used to indicate that an intent filter can accept files which are not necessarily openable by openFileDescriptor, but at least streamable via openTypedAssetFileDescriptor using one of the stream types exposed via getStreamTypes.
 
 <br />
 
@@ -1942,7 +1942,7 @@ Note: You must supply a **mutable** `https://developer.android.com/reference/kot
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALLOW_MULTIPLE:kotlin.String`
 
-Extra used to indicate that an intent can allow the user to select and return multiple items. This is a boolean extra; the default is false. If true, an implementation is allowed to present the user with a UI where they can pick multiple items that are all returned to the caller. When this happens, they should be returned as the `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()` part of the result Intent.
+Extra used to indicate that an intent can allow the user to select and return multiple items. This is a boolean extra; the default is false. If true, an implementation is allowed to present the user with a UI where they can pick multiple items that are all returned to the caller. When this happens, they should be returned as the getClipData part of the result Intent.
 
 <br />
 
@@ -2076,17 +2076,17 @@ Optional argument used to provide a `https://developer.android.com/reference/kot
 
 For example, this could be used to show photos being shared in the context of the user's entire photo roll, with the option to change the set of photos being shared.
 
-When this is provided in an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND_MULTIPLE:kotlin.String` target Intent, the sharesheet will query (see `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)`) this URI to retrieve a set of additional items available for selection. The set of items returned by the content provider is expected to contain all the items from the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` argument, in their relative order, which will be marked as selected. The URI's authority must be different from any shared items URI provided in `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` or returned by the provider.
+When this is provided in an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND_MULTIPLE:kotlin.String` target Intent, the sharesheet will query (see query) this URI to retrieve a set of additional items available for selection. The set of items returned by the content provider is expected to contain all the items from the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` argument, in their relative order, which will be marked as selected. The URI's authority must be different from any shared items URI provided in `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` or returned by the provider.
 
-The `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` argument of the `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)` method will contains the original intent Chooser has been launched with under the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String` key as a context for the current sharing session. The returned `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` should contain:
+The `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` argument of the query method will contains the original intent Chooser has been launched with under the `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String` key as a context for the current sharing session. The returned `https://developer.android.com/reference/kotlin/android/database/Cursor.html#` should contain:
 
 - `https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.Columns.html#URI:kotlin.String` column for the item URI.
-- Optional columns `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns.html#WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns.html#HEIGHT:kotlin.String` for the dimensions of the preview image. These columns can also be returned for each `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` item metadata `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)` call.
+- Optional columns `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns.html#WIDTH:kotlin.String` and `https://developer.android.com/reference/kotlin/android/provider/MediaStore.MediaColumns.html#HEIGHT:kotlin.String` for the dimensions of the preview image. These columns can also be returned for each `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_STREAM:kotlin.String` item metadata query call.
 - Optional `https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.CursorExtraKeys.html#POSITION:kotlin.String` extra that specifies the cursor starting position; the item at this position is expected to match the item specified by `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_FOCUSED_ITEM_POSITION:kotlin.String`.
 
 <br />
 
-When the user makes a selection change, `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)` method will be invoked with the "method" argument set to `https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.MethodNames.html#ON_SELECTION_CHANGED:kotlin.String`, the "arg" argument set to this argument's value, and the "extras" `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` argument containing `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String` key containing the original intent Chooser has been launched with but with the modified target intent --Chooser will modify the target intent according to the selection changes made by the user. Applications may implement this method to change any of the following Chooser arguments by returning new values in the result bundle: `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_TARGETS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALTERNATE_INTENTS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_CUSTOM_ACTIONS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_MODIFY_SHARE_ACTION:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_METADATA_TEXT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_RESULT_INTENT_SENDER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_EXCLUDE_COMPONENTS:kotlin.String`.
+When the user makes a selection change, call method will be invoked with the "method" argument set to `https://developer.android.com/reference/kotlin/android/service/chooser/AdditionalContentContract.MethodNames.html#ON_SELECTION_CHANGED:kotlin.String`, the "arg" argument set to this argument's value, and the "extras" `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` argument containing `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String` key containing the original intent Chooser has been launched with but with the modified target intent --Chooser will modify the target intent according to the selection changes made by the user. Applications may implement this method to change any of the following Chooser arguments by returning new values in the result bundle: `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_TARGETS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALTERNATE_INTENTS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_CUSTOM_ACTIONS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_MODIFY_SHARE_ACTION:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_METADATA_TEXT:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_RESULT_INTENT_SENDER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_EXCLUDE_COMPONENTS:kotlin.String`.
 
 <br />
 
@@ -2134,7 +2134,7 @@ When sent, this IntentSender may be filled in with the following extras:
 
 A `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserResult.html#` which describes how the sharing session completed.
 
-An instance is supplied to the optional IntentSender provided to `https://developer.android.com/reference/kotlin/android/content/Intent.html#createChooser(android.content.Intent,%20kotlin.CharSequence,%20android.content.IntentSender)` when the session completes.
+An instance is supplied to the optional IntentSender provided to createChooser when the session completes.
 
 <br />
 
@@ -2304,7 +2304,7 @@ Extra that can be included on activity intents coming from the storage UI when i
 
 Extra sent with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_HOME_TIME_ZONE_CHANGED:kotlin.String` specifying the new home time zone of the device.
 
-Type: String, the same as returned by `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#getID()` to identify time zones. This extra will be `null` if the user disables the home time zone feature.
+Type: String, the same as returned by getID to identify time zones. This extra will be `null` if the user disables the home time zone feature.
 
 <br />
 
@@ -2324,7 +2324,7 @@ The value must be an integer greater or equal to 0.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INITIAL_INTENTS:kotlin.String`
 
-A Parcelable\[\] of `https://developer.android.com/reference/kotlin/android/content/Intent.html#` or `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#` objects as set with `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Array)` to place at the front of the list of choices, when shown to the user with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String`. You can choose up to two additional activities to show before the app suggestions (the limit of two additional activities starts in Android 10).
+A Parcelable\[\] of `https://developer.android.com/reference/kotlin/android/content/Intent.html#` or LabeledIntent objects as set with putExtra to place at the front of the list of choices, when shown to the user with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String`. You can choose up to two additional activities to show before the app suggestions (the limit of two additional activities starts in Android 10).
 
 <br />
 
@@ -2440,7 +2440,7 @@ A String holding the phone number originally entered in `https://developer.andro
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_PROCESS_TEXT:kotlin.String`
 
-The name of the extra used to define the text to be processed, as a CharSequence. Note that this may be a styled CharSequence, so you must use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getCharSequence(kotlin.String)` to retrieve it.
+The name of the extra used to define the text to be processed, as a CharSequence. Note that this may be a styled CharSequence, so you must use getCharSequence to retrieve it.
 
 <br />
 
@@ -2471,7 +2471,7 @@ Optional boolean extra indicating whether quiet mode has been switched on or off
 
 This extra can be used with any Intent used to launch an activity, supplying information about who is launching that activity. This field contains a `https://developer.android.com/reference/kotlin/android/net/Uri.html#` object, typically an http: or https: URI of the web site that the referral came from; it can also use the `https://developer.android.com/reference/kotlin/android/content/Intent.html#URI_ANDROID_APP_SCHEME:kotlin.Int` scheme to identify a native application that it came from.
 
-To retrieve this value in a client, use `https://developer.android.com/reference/kotlin/android/app/Activity.html#getReferrer()` instead of directly retrieving the extra. It is also valid for applications to instead supply `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_REFERRER_NAME:kotlin.String` for cases where they can only create a string, not a Uri; the field here, if supplied, will always take precedence, however.
+To retrieve this value in a client, use getReferrer instead of directly retrieving the extra. It is also valid for applications to instead supply `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_REFERRER_NAME:kotlin.String` for cases where they can only create a string, not a Uri; the field here, if supplied, will always take precedence, however.
 
 <br />
 
@@ -2532,9 +2532,9 @@ A `https://developer.android.com/reference/kotlin/android/os/ResultReceiver.html
 
 Used to complete an app-specific `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String` for `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String`.
 
-If `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String` is present in the intent used to start a `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` activity this extra will be `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to that `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` and sent when the user selects a target component from the chooser. It is up to the recipient to send a result to this ResultReceiver to signal that disambiguation is complete and that the chooser should invoke the user's choice.
+If `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String` is present in the intent used to start a `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` activity this extra will be fillIn to that `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` and sent when the user selects a target component from the chooser. It is up to the recipient to send a result to this ResultReceiver to signal that disambiguation is complete and that the chooser should invoke the user's choice.
 
-The disambiguator should provide a Bundle to the ResultReceiver with an intent assigned to the key `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String`. This supplied intent will be used by the chooser to match and fill in the final Intent or ChooserTarget before starting it. The supplied intent must `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)` one of the intents from `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALTERNATE_INTENTS:kotlin.String` passed to `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String` to be accepted.
+The disambiguator should provide a Bundle to the ResultReceiver with an intent assigned to the key `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String`. This supplied intent will be used by the chooser to match and fill in the final Intent or ChooserTarget before starting it. The supplied intent must filterEquals one of the intents from `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_INTENT:kotlin.String` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_ALTERNATE_INTENTS:kotlin.String` passed to `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER:kotlin.String` to be accepted.
 
 The result code passed to the ResultReceiver should be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` if the refinement succeeded and the supplied intent's target in the chooser should be started, or `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` if the chooser should finish without starting a target.
 
@@ -2624,7 +2624,7 @@ The initial data to place in a newly created record. Use with `https://developer
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String`
 
-A constant CharSequence that is associated with the Intent, used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String` to supply the literal data to be sent. Note that this may be a styled CharSequence, so you must use `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getCharSequence(kotlin.String)` to retrieve it.
+A constant CharSequence that is associated with the Intent, used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_SEND:kotlin.String` to supply the literal data to be sent. Note that this may be a styled CharSequence, so you must use getCharSequence to retrieve it.
 
 <br />
 
@@ -2640,7 +2640,7 @@ Type: long
 
 Extra sent with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_TIMEZONE_CHANGED:kotlin.String` specifying the new time zone of the device.
 
-Type: String, the same as returned by `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#getID()` to identify time zones.
+Type: String, the same as returned by getID to identify time zones.
 
 <br />
 
@@ -2691,55 +2691,55 @@ Has an effect only on `https://developer.android.com/reference/kotlin/android/co
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_ACTION:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current action value to be overwritten, even if it is already set.
+Use with fillIn to allow the current action value to be overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_CATEGORIES:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current categories to be overwritten, even if they are already set.
+Use with fillIn to allow the current categories to be overwritten, even if they are already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_CLIP_DATA:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current ClipData to be overwritten, even if it is already set.
+Use with fillIn to allow the current ClipData to be overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_COMPONENT:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current component value to be overwritten, even if it is already set.
+Use with fillIn to allow the current component value to be overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_DATA:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current data or type value overwritten, even if it is already set.
+Use with fillIn to allow the current data or type value overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_IDENTIFIER:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current identifier value to be overwritten, even if it is already set.
+Use with fillIn to allow the current identifier value to be overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_PACKAGE:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current package value to be overwritten, even if it is already set.
+Use with fillIn to allow the current package value to be overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_SELECTOR:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current selector to be overwritten, even if it is already set.
+Use with fillIn to allow the current selector to be overwritten, even if it is already set.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FILL_IN_SOURCE_BOUNDS:kotlin.Int`
 
-Use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)` to allow the current bounds rectangle to be overwritten, even if it is already set.
+Use with fillIn to allow the current bounds rectangle to be overwritten, even if it is already set.
 
 <br />
 
@@ -2803,12 +2803,12 @@ If set in an Intent passed to android.content.Context#startActivity, this flag w
 
 When attempting to resolve instant apps externally, the following `https://developer.android.com/reference/kotlin/android/content/Intent.html#` properties are supported:
 
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#setAction(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#addCategory(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)`
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#setPackage(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/content/Intent.html#addFlags(kotlin.Int)`
+- setAction
+- addCategory
+- setData
+- setType
+- setPackage
+- addFlags
 
 In the case that no instant app can be found, the installer will be launched to notify the user that the intent could not be resolved. On devices that do not support instant apps, the flag will be ignored.
 
@@ -2866,7 +2866,7 @@ If set, android.app.Activity#onActivityResult is never invoked when the current 
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NO_USER_ACTION:kotlin.Int`
 
-If set, this flag will prevent the normal `https://developer.android.com/reference/kotlin/android/app/Activity.html#onUserLeaveHint()` callback from occurring on the current frontmost activity before it is paused as the newly-started activity is brought to the front.
+If set, this flag will prevent the normal onUserLeaveHint callback from occurring on the current frontmost activity before it is paused as the newly-started activity is brought to the front.
 
 Typically, an activity can rely on that callback to indicate that an explicit user action has caused their activity to be moved out of the foreground. The callback marks an appropriate point in the activity's lifecycle for it to dismiss any notifications that it intends to display "until the user has seen them," such as a blinking LED.
 
@@ -2910,7 +2910,7 @@ If set, and this activity is either being started in a new task or bringing to t
 
 By default a document created by `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` will have its entry in recent tasks removed when the user closes it (with back or however else it may finish()). If you would like to instead allow the document to be kept in recents so that it can be re-launched, you can use this flag. When set and the task's activity is finished, the recents entry will remain in the interface for the user to re-launch it, like a recents entry for a top-level application.
 
-The receiving activity can override this request with `https://developer.android.com/reference/kotlin/android/R.attr.html#autoRemoveFromRecents:kotlin.Int` or by explcitly calling `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAndRemoveTask()`.
+The receiving activity can override this request with `https://developer.android.com/reference/kotlin/android/R.attr.html#autoRemoveFromRecents:kotlin.Int` or by explcitly calling finishAndRemoveTask.
 
 <br />
 
@@ -2938,7 +2938,7 @@ Flag used to automatically match intents based on their Direct Boot awareness an
 
 Since the default behavior is to automatically apply the current user state, this is effectively a sentinel value that doesn't change the output of any queries based on its presence or absence.
 
-Instead, this value can be useful in conjunction with `https://developer.android.com/reference/kotlin/android/os/StrictMode.VmPolicy.Builder.html#detectImplicitDirectBoot()` to detect when a caller is relying on implicit automatic matching, instead of confirming the explicit behavior they want.
+Instead, this value can be useful in conjunction with detectImplicitDirectBoot to detect when a caller is relying on implicit automatic matching, instead of confirming the explicit behavior they want.
 
 <br />
 
@@ -2956,7 +2956,7 @@ Can be set by the caller to indicate that this Intent is coming from a backgroun
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int`
 
-When combined with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, the URI permission grant can be persisted across device reboots until explicitly revoked with `https://developer.android.com/reference/kotlin/android/content/Context.html#revokeUriPermission(android.net.Uri,%20kotlin.Int)`. This flag only offers the grant for possible persisting; the receiving application must call `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#takePersistableUriPermission(android.net.Uri,%20kotlin.Int)` to actually persist.
+When combined with `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, the URI permission grant can be persisted across device reboots until explicitly revoked with revokeUriPermission. This flag only offers the grant for possible persisting; the receiving application must call takePersistableUriPermission to actually persist.
 
 <br />
 
@@ -3004,7 +3004,7 @@ If set, when sending a broadcast only registered receivers will be called -- no 
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_RECEIVER_REPLACE_PENDING:kotlin.Int`
 
-If set, when sending a broadcast the new broadcast will replace any existing pending broadcast that matches it. Matching is defined by `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)` returning true for the intents of the two broadcasts. When a match is found, the new broadcast (and receivers associated with it) will replace the existing one in the pending broadcast list, remaining at the same position in the list.
+If set, when sending a broadcast the new broadcast will replace any existing pending broadcast that matches it. Matching is defined by filterEquals returning true for the intents of the two broadcasts. When a match is found, the new broadcast (and receivers associated with it) will replace the existing one in the pending broadcast list, remaining at the same position in the list.
 
 This flag is most typically used with sticky broadcasts, which only care about delivering the most recent values of the broadcast to their receivers.
 
@@ -3024,7 +3024,7 @@ Boolean that can be supplied as meta-data with a dock activity, to indicate that
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#URI_ALLOW_UNSAFE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseUri(kotlin.String,%20kotlin.Int)`: allow parsing of unsafe information. In particular, the flags `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PREFIX_URI_PERMISSION:kotlin.Int` flags can not be set, so that the generated Intent can not cause unexpected data access to happen.
+Flag for use with toUri and parseUri: allow parsing of unsafe information. In particular, the flags `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_PREFIX_URI_PERMISSION:kotlin.Int` flags can not be set, so that the generated Intent can not cause unexpected data access to happen.
 
 If you do not trust the source of the URI being parsed, you should still do further processing to protect yourself from it. In particular, when using it to start an activity you should usually add in `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_BROWSABLE:kotlin.String` to limit the activities that can handle it.
 
@@ -3032,7 +3032,7 @@ If you do not trust the source of the URI being parsed, you should still do furt
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#URI_ANDROID_APP_SCHEME:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseUri(kotlin.String,%20kotlin.Int)`: the URI string always has the "android-app:" scheme. This is a variation of `https://developer.android.com/reference/kotlin/android/content/Intent.html#URI_INTENT_SCHEME:kotlin.Int` whose format is simpler for the case of an http/https URI being delivered to a specific package name. The format is:
+Flag for use with toUri and parseUri: the URI string always has the "android-app:" scheme. This is a variation of `https://developer.android.com/reference/kotlin/android/content/Intent.html#URI_INTENT_SCHEME:kotlin.Int` whose format is simpler for the case of an http/https URI being delivered to a specific package name. The format is:
 
 ```kotlin
 android-app://{package_id}[/{scheme}[/{host}[/{path}]]][#Intent;{...}]
@@ -3040,7 +3040,7 @@ android-app://{package_id}[/{scheme}[/{host}[/{path}]]][#Intent;{...}]
 
 <br />
 
-In this scheme, only the `package_id` is required. If you include a host, you must also include a scheme; including a path also requires both a host and a scheme. The final #Intent; fragment can be used without a scheme, host, or path. Note that this can not be used with intents that have a `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSelector(android.content.Intent)`, since the base intent will always have an explicit package name.
+In this scheme, only the `package_id` is required. If you include a host, you must also include a scheme; including a path also requires both a host and a scheme. The final #Intent; fragment can be used without a scheme, host, or path. Note that this can not be used with intents that have a setSelector, since the base intent will always have an explicit package name.
 
 Some examples of how this scheme maps to Intent objects:
 URI Intent `android-app://com.example.app` Action: `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` Package: `com.example.app` `android-app://com.example.app/http/example.com` Action: `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_VIEW:kotlin.String` Data: `http://example.com/` Package: `com.example.app` `android-app://com.example.app/http/example.com/foo?1234` Action: `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_VIEW:kotlin.String` Data: `http://example.com/foo?1234` Package: `com.example.app` `android-app://com.example.app/
@@ -3054,55 +3054,55 @@ some_str=(String)hello`
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#URI_INTENT_SCHEME:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseUri(kotlin.String,%20kotlin.Int)`: the URI string always has the "intent:" scheme. This syntax can be used when you want to later disambiguate between URIs that are intended to describe an Intent vs. all others that should be treated as raw URIs. When used with `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseUri(kotlin.String,%20kotlin.Int)`, any other scheme will result in a generic VIEW action for that raw URI.
+Flag for use with toUri and parseUri: the URI string always has the "intent:" scheme. This syntax can be used when you want to later disambiguate between URIs that are intended to describe an Intent vs. all others that should be treated as raw URIs. When used with parseUri, any other scheme will result in a generic VIEW action for that raw URI.
 
 <br />
 
 From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#LabeledIntent(android.content.Intent,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)(origIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, sourcePackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, labelRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, icon: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a labeled intent from the given intent, supplying the label and icon resources for it. |
-| `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#LabeledIntent(android.content.Intent,%20kotlin.String,%20kotlin.CharSequence,%20kotlin.Int)(origIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, sourcePackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, nonLocalizedLabel: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, icon: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a labeled intent from the given intent, supplying a textual label and icon resource for it. |
-| `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#LabeledIntent(kotlin.String,%20kotlin.Int,%20kotlin.Int)(sourcePackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, labelRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, icon: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a labeled intent with no intent data but supplying the label and icon resources for it. |
-| `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#LabeledIntent(kotlin.String,%20kotlin.CharSequence,%20kotlin.Int)(sourcePackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, nonLocalizedLabel: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, icon: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a labeled intent with no intent data but supplying a textual label and icon resource for it. |
+| LabeledIntent Create a labeled intent from the given intent, supplying the label and icon resources for it. |
+| LabeledIntent Create a labeled intent from the given intent, supplying a textual label and icon resource for it. |
+| LabeledIntent Create a labeled intent with no intent data but supplying the label and icon resources for it. |
+| LabeledIntent Create a labeled intent with no intent data but supplying a textual label and icon resource for it. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getIconResource()()` Return any resource identifier that has been given for the label icon. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getLabelResource()()` Return any resource identifier that has been given for the label text. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getNonLocalizedLabel()()` Return any concrete text that has been given for the label text. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIconResource Return any resource identifier that has been given for the label icon. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLabelResource Return any resource identifier that has been given for the label text. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getNonLocalizedLabel Return any concrete text that has been given for the label text. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#getSourcePackage()()` Return the name of the package holding label and icon resources. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the icon associated with this object. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the label associated with this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSourcePackage Return the name of the package holding label and icon resources. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | loadIcon Retrieve the icon associated with this object. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | loadLabel Retrieve the label associated with this object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#readFromParcel(android.os.Parcel)(in: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LabeledIntent#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFromParcel <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#addCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#` addCategory
 
 Add a new category to the intent. Categories provide additional detail about the action the intent performs. When resolving an intent, only activities that provide *all* of the requested categories will be used.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#addFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` addFlags
 
 Add additional flags to the intent (or with existing flags value).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#clone()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html` clone
 
 Creates and returns a copy of this object. The precise meaning of "copy" may depend on the class of the object. The general intent is that, for any object `x`, the expression:
 
@@ -3129,49 +3129,49 @@ By convention, the object returned by this method should be independent of this 
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#cloneFilter()()`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` cloneFilter
 
 Make a clone of only the parts of the Intent that are relevant for filter matching: the action, data, type, component, and categories.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#createChooser(android.content.Intent,%20kotlin.CharSequence)(target: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` createChooser
 
 Convenience function for creating a `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent.
 
-Builds a new `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent that wraps the given target intent, also optionally supplying a title. If the target intent has specified `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, then these flags will also be set in the returned chooser intent, with its ClipData set appropriately: either a direct reflection of `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()` if that is non-null, or a new ClipData built from `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`.
+Builds a new `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent that wraps the given target intent, also optionally supplying a title. If the target intent has specified `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, then these flags will also be set in the returned chooser intent, with its ClipData set appropriately: either a direct reflection of getClipData if that is non-null, or a new ClipData built from getData.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#createChooser(android.content.Intent,%20kotlin.CharSequence,%20android.content.IntentSender)(target: https://developer.android.com/reference/kotlin/android/content/Intent.html#!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, sender: https://developer.android.com/reference/kotlin/android/content/IntentSender.html#!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` createChooser
 
 Convenience function for creating a `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent.
 
-Builds a new `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent that wraps the given target intent, also optionally supplying a title. If the target intent has specified `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, then these flags will also be set in the returned chooser intent, with its ClipData set appropriately: either a direct reflection of `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()` if that is non-null, or a new ClipData built from `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`.
+Builds a new `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CHOOSER:kotlin.String` Intent that wraps the given target intent, also optionally supplying a title. If the target intent has specified `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int`, then these flags will also be set in the returned chooser intent, with its ClipData set appropriately: either a direct reflection of getClipData if that is non-null, or a new ClipData built from getData.
 
 The caller may optionally supply an `https://developer.android.com/reference/kotlin/android/content/IntentSender.html#` to receive a callback when the user makes a choice. This can be useful if the calling application wants to remember the last chosen target and surface it as a more prominent or one-touch affordance elsewhere in the UI for next time.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#describeContents()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` describeContents
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#fillIn(android.content.Intent,%20kotlin.Int)(other: https://developer.android.com/reference/kotlin/android/content/Intent.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` fillIn
 
 Copy the contents of other in to this object, but only where fields are not defined by this object. For purposes of a field being defined, the following pieces of data in the Intent are considered to be separate fields:
 
-- action, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setAction(kotlin.String)`.
-- data Uri and MIME type, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)`, `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)`, or `https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndType(android.net.Uri,%20kotlin.String)`.
-- identifier, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setIdentifier(kotlin.String)`.
-- categories, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#addCategory(kotlin.String)`.
-- package, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setPackage(kotlin.String)`.
-- component, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)` or related methods.
-- source bounds, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSourceBounds(android.graphics.Rect)`.
-- selector, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSelector(android.content.Intent)`.
-- clip data, as set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)`.
+- action, as set by setAction.
+- data Uri and MIME type, as set by setData, setType, or setDataAndType.
+- identifier, as set by setIdentifier.
+- categories, as set by addCategory.
+- package, as set by setPackage.
+- component, as set by setComponent or related methods.
+- source bounds, as set by setSourceBounds.
+- selector, as set by setSelector.
+- clip data, as set by setClipData.
 - each top-level name in the associated extras.
 
 <br />
@@ -3186,239 +3186,239 @@ Calling A.fillIn(B, Intent.FILL_IN_DATA) will result in A now containing: {actio
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)(other: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` filterEquals
 
 Determine if two intents are the same for the purposes of intent resolution (filtering). That is, if their action, data, type, identity, class, and categories are the same. This does *not* compare any extra data included in the intents. Note that technically when actually matching against an `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#` the identifier is ignored, while here it is directly compared for equality like the other fields.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterHashCode()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` filterHashCode
 
 Generate hash code that matches semantics of filterEquals().
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getAction
 
-Retrieve the general action to be performed, such as `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_VIEW:kotlin.String`. The action describes the general way the rest of the information in the intent should be interpreted -- most importantly, what to do with the data returned by `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`.
+Retrieve the general action to be performed, such as `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_VIEW:kotlin.String`. The action describes the general way the rest of the information in the intent should be interpreted -- most importantly, what to do with the data returned by getData.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getBooleanArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?` getBooleanArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getBooleanExtra(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getBooleanExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/Bundle.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getBundleExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/os/Bundle.html#?` getBundleExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getByteArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?` getByteArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getByteExtra(kotlin.String,%20kotlin.Byte)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html` getByteExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getCategories()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` getCategories
 
 Return the set of all categories in the intent. If there are no categories, returns NULL.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getCharArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?` getCharArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getCharExtra(kotlin.String,%20kotlin.Char)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html` getCharExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getCharSequenceArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?` getCharSequenceArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getCharSequenceArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?` getCharSequenceArrayListExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getCharSequenceExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?` getCharSequenceExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/ClipData.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getClipData()()`
+`https://developer.android.com/reference/kotlin/android/content/ClipData.html#?` getClipData
 
-Return the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` associated with this Intent. If there is none, returns null. See `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)` for more information.
+Return the `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` associated with this Intent. If there is none, returns null. See setClipData for more information.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getComponent()()`
+`https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?` getComponent
 
 Retrieve the concrete component associated with the intent. When receiving an intent, this is the component that was found to best handle it (that is, yourself) and will always be non-null; in all other cases it will be null unless explicitly set.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/net/Uri.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()()`
+`https://developer.android.com/reference/kotlin/android/net/Uri.html#?` getData
 
 Retrieve data this intent is operating on. This URI specifies the name of the data; often it uses the content: scheme, specifying data in a content provider. Other schemes may be handled by specific activities, such as http: by the web browser.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getDataString()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getDataString
 
-The same as `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`, but returns the URI as an encoded String.
+The same as getData, but returns the URI as an encoded String.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getDoubleArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?` getDoubleArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getDoubleExtra(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` getDoubleExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/Bundle.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getExtras()()`
+`https://developer.android.com/reference/kotlin/android/os/Bundle.html#?` getExtras
 
 Retrieves a map of extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getFlags()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getFlags
 
-Retrieve any special flags associated with this intent. You will normally just set them with `https://developer.android.com/reference/kotlin/android/content/Intent.html#setFlags(kotlin.Int)` and let the system take the appropriate action with them.
+Retrieve any special flags associated with this intent. You will normally just set them with setFlags and let the system take the appropriate action with them.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getFloatArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?` getFloatArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getFloatExtra(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getFloatExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIdentifier()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getIdentifier
 
 Retrieve the identifier for this Intent. If non-null, this is an arbitrary identity of the Intent to distinguish it from other Intents.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?` getIntArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getIntExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntegerArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?` getIntegerArrayListExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntent(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` getIntent
 
-Call `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseUri(kotlin.String,%20kotlin.Int)` with 0 flags.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntentOld(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+Call parseUri with 0 flags.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getLongArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` getIntentOld
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?` getLongArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getLongExtra(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` getLongExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getPackage()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getPackage
 
 Retrieve the application package name this Intent is limited to. When resolving an Intent, if non-null this limits the resolution to only components in the given application package.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?` getParcelableArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableArrayExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?` getParcelableArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<T>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<T>?` getParcelableArrayListExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<T>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableArrayListExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)`
+`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<T>?` getParcelableArrayListExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`T?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`T?` getParcelableExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`T?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)`
+`T?` getParcelableExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getScheme()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getScheme
 
 Return the scheme portion of the intent's data. If the data is null or does not include a scheme, null is returned. Otherwise, the scheme prefix without the final ':' is returned, i.e. "http".
 
@@ -3426,125 +3426,125 @@ This is the same as calling getData().getScheme() (and checking for null data).
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getSelector()()`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#?` getSelector
 
-Return the specific selector associated with this Intent. If there is none, returns null. See `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSelector(android.content.Intent)` for more information.
+Return the specific selector associated with this Intent. If there is none, returns null. See setSelector for more information.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/io/Serializable.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getSerializableExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/java/io/Serializable.html#?` getSerializableExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`T?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getSerializableExtra(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)`
+`T?` getSerializableExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getShortArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?` getShortArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getShortExtra(kotlin.String,%20kotlin.Short)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html` getShortExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getSourceBounds()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?` getSourceBounds
 
 Get the bounds of the sender of this intent, in screen coordinates. This can be used as a hint to the receiver for animations and the like. Null means that there is no source bounds.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringArrayExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?` getStringArrayExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringArrayListExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?` getStringArrayListExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getStringExtra
 
 Retrieve extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getType()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getType
 
 Retrieve any explicit MIME type included in the intent. This is usually null, as the type is determined by the intent data.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` hasCategory
 
 Check if a category exists in the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` hasExtra
 
 Returns true if an extra value is associated with the given name.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasFileDescriptors()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` hasFileDescriptors
 
 Returns true if the Intent's extras contain a parcelled file descriptor.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#isMismatchingFilter()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isMismatchingFilter
 
 Whether the intent mismatches all intent filters declared in the receiving component.
 
 When a component receives an intent, normally obtainable through the following methods:
 
-- `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#onReceive(android.content.Context,%20android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#getIntent()`
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#onNewIntent(android.content.Intent)`
-- `https://developer.android.com/reference/kotlin/android/app/Service.html#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/app/Service.html#onBind(android.content.Intent)`
+- onReceive
+- getIntent
+- onNewIntent
+- onStartCommand
+- onBind
 
-The developer can call this method to check if this intent does not match any of its declared intent filters. A non-matching intent can be delivered when the intent sender explicitly set the component through `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)` or #setClassName.
+The developer can call this method to check if this intent does not match any of its declared intent filters. A non-matching intent can be delivered when the intent sender explicitly set the component through setComponent or #setClassName.
 
 This method always returns `false` if the intent originated from within the same application or the system, because these cases are always exempted from security checks.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainActivity(android.content.ComponentName)(mainActivity: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` makeMainActivity
 
 Create an intent to launch the main (root) activity of a task. This is the Intent that is started when the application's is launched from Home. For anything else that wants to launch an application in the same way, it is important that they use an Intent structured the same way, and can use this function to ensure this is the case.
 
-The returned Intent has the given Activity component as its explicit component, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` as its action, and includes the category `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`. This does *not* have `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` set, though typically you will want to do that through `https://developer.android.com/reference/kotlin/android/content/Intent.html#addFlags(kotlin.Int)` on the returned Intent.
+The returned Intent has the given Activity component as its explicit component, `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` as its action, and includes the category `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`. This does *not* have `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` set, though typically you will want to do that through addFlags on the returned Intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainSelectorActivity(kotlin.String,%20kotlin.String)(selectorAction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectorCategory: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` makeMainSelectorActivity
 
 Make an Intent for the main activity of an application, without specifying a specific activity to run but giving a selector to find the activity. This results in a final Intent that is structured the same as when the application is launched from Home. For anything else that wants to launch an application in the same way, it is important that they use an Intent structured the same way, and can use this function to ensure this is the case.
 
-The returned Intent has `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` as its action, and includes the category `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`. This does *not* have `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` set, though typically you will want to do that through `https://developer.android.com/reference/kotlin/android/content/Intent.html#addFlags(kotlin.Int)` on the returned Intent.
+The returned Intent has `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` as its action, and includes the category `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String`. This does *not* have `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` set, though typically you will want to do that through addFlags on the returned Intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeRestartActivityTask(android.content.ComponentName)(mainActivity: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` makeRestartActivityTask
 
-Make an Intent that can be used to re-launch an application's task in its base state. This is like `https://developer.android.com/reference/kotlin/android/content/Intent.html#makeMainActivity(android.content.ComponentName)`, but also sets the flags `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int`.
+Make an Intent that can be used to re-launch an application's task in its base state. This is like makeMainActivity, but also sets the flags `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#normalizeMimeType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` normalizeMimeType
 
 Normalize a MIME data type.
 
@@ -3556,251 +3556,251 @@ All MIME types received from outside Android (such as user input, or external so
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseIntent(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet)(resources: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` parseIntent
 
 Parses the "intent" element (and its children) from XML and instantiates an Intent object. The given XML parser should be located at the tag where parsing should start (often named "intent"), from which the basic action, data, type, and package and class name will be retrieved. The function will then parse in to any child elements, looking for tags to add categories and to attach extra data to the intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#parseUri(kotlin.String,%20kotlin.Int)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#!` parseUri
 
-Create an intent from a URI. This URI may encode the action, category, and other intent fields, if it was returned by `https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)`. If the Intent was not generated by toUri(), its data will be the entire URI and its action will be ACTION_VIEW.
+Create an intent from a URI. This URI may encode the action, category, and other intent fields, if it was returned by toUri. If the Intent was not generated by toUri(), its data will be the entire URI and its action will be ACTION_VIEW.
 
 The URI given here must not be relative -- that is, it must include the scheme and full path.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putCharSequenceArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putCharSequenceArrayListExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20android.os.Bundle)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20android.os.Parcelable)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.BooleanArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Byte)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.ByteArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Char)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.CharArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Double)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.DoubleArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Float)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.FloatArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.IntArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20java.io.Serializable)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/io/Serializable.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.CharSequence)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Array)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Long)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.LongArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.Short)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.ShortArray)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtras(android.content.Intent)(src: https://developer.android.com/reference/kotlin/android/content/Intent.html#)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtras
 
 Copy all extras in 'src' in to this intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putExtras
 
 Add a set of extended data to the intent. The keys must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putIntegerArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putIntegerArrayListExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putParcelableArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<out https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putParcelableArrayListExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#putStringArrayListExtra(kotlin.String,%20java.util.ArrayList)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` putStringArrayListExtra
 
 Add extended data to the intent. The name must include a package prefix, for example the app com.android.contacts would use names like "com.android.contacts.ShowAll".
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#removeCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` removeCategory
 
 Remove a category from an intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#removeExtra(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` removeExtra
 
 Remove extended data from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#removeFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` removeFlags
 
 Remove these flags from the intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#removeLaunchSecurityProtection()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` removeLaunchSecurityProtection
 
 When an intent comes from another app or component as an embedded extra intent, the system creates a token to identify the creator of this foreign intent. If this token is missing or invalid, the system will block the launch of this intent. If it contains a valid token, the system will perform verification against the creator to block launching target it has no permission to launch or block it from granting URI access to the tagert it cannot access. This method provides a way to opt out this feature.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#replaceExtras(android.content.Intent)(src: https://developer.android.com/reference/kotlin/android/content/Intent.html#)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` replaceExtras
 
 Completely replace the extras in the Intent with the extras in the given Intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#replaceExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` replaceExtras
 
 Completely replace the extras in the Intent with the given Bundle of extras.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)`
+`https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!` resolveActivity
 
 Return the Activity component that should be used to handle this intent. The appropriate component is determined based on the information in the intent, evaluated as follows:
 
-If `https://developer.android.com/reference/kotlin/android/content/Intent.html#getComponent()` returns an explicit class, that is returned without any further consideration.
+If getComponent returns an explicit class, that is returned without any further consideration.
 
 The activity must handle the `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String` Intent category to be considered.
 
-If `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()` is non-NULL, the activity must handle this action.
+If getAction is non-NULL, the activity must handle this action.
 
 If #resolveType returns non-NULL, the activity must handle this type.
 
-If `https://developer.android.com/reference/kotlin/android/content/Intent.html#addCategory(kotlin.String)` has added any categories, the activity must handle ALL of the categories specified.
+If addCategory has added any categories, the activity must handle ALL of the categories specified.
 
-If `https://developer.android.com/reference/kotlin/android/content/Intent.html#getPackage()` is non-NULL, only activity components in that application package will be considered.
+If getPackage is non-NULL, only activity components in that application package will be considered.
 
 If there are no activities that satisfy all of these conditions, a null string is returned.
 
@@ -3812,55 +3812,55 @@ This API is called for you as part of starting an activity from an intent. You d
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveActivityInfo(android.content.pm.PackageManager,%20kotlin.Int)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo!` resolveActivityInfo
 
-Resolve the Intent into an `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo` describing the activity that should execute the intent. Resolution follows the same rules as described for `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager)`, but you get back the completely information about the resolved activity instead of just its class name.
+Resolve the Intent into an ActivityInfo describing the activity that should execute the intent. Resolution follows the same rules as described for resolveActivity, but you get back the completely information about the resolved activity instead of just its class name.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveType(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` resolveType
 
 Return the MIME data type of this intent. If the type field is explicitly set, that is simply returned. Otherwise, if the data is set, the type of that data is returned. If neither fields are set, a null is returned.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveType(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` resolveType
 
 Return the MIME data type of this intent. If the type field is explicitly set, that is simply returned. Otherwise, if the data is set, the type of that data is returned. If neither fields are set, a null is returned.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveTypeIfNeeded(android.content.ContentResolver)(resolver: https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` resolveTypeIfNeeded
 
 Return the MIME data type of this intent, only if it will be needed for intent resolution. This is not generally useful for application code; it is used by the frameworks for communicating with back-end system services.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setAction(kotlin.String)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setAction
 
 Set the general action to be performed.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClass(android.content.Context,%20java.lang.Class)(packageContext: https://developer.android.com/reference/kotlin/android/content/Context.html#, cls: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setClass
 
-Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)` with the name returned by a `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClassName(android.content.Context,%20kotlin.String)(packageContext: https://developer.android.com/reference/kotlin/android/content/Context.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
-
-Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)` with an explicit class name.
+Convenience for calling setComponent with the name returned by a `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClassName(kotlin.String,%20kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setClassName
 
-Convenience for calling `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)` with an explicit application package name and class name.
+Convenience for calling setComponent with an explicit class name.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setClipData(android.content.ClipData)(clip: https://developer.android.com/reference/kotlin/android/content/ClipData.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setClassName
+
+Convenience for calling setComponent with an explicit application package name and class name.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setClipData
 
 Set a `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` associated with this Intent. This replaces any previously set ClipData.
 
@@ -3872,27 +3872,27 @@ The MIME type, label, and icon in the ClipData object are not directly used by I
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setComponent
 
 (Usually optional) Explicitly set the component to handle the intent. If left with the default value of null, the system will determine the appropriate class to use based on the other fields (action, data, type, categories) in the Intent. If this class is defined, the specified class will always be used regardless of the other fields. You should only set this value when you know you absolutely want a specific class to be used; otherwise it is better to let the system find the appropriate class so that you will respect the installed applications and user preferences.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setData
 
-Set the data this intent is operating on. This method automatically clears any type that was previously set by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#setTypeAndNormalize(kotlin.String)`.
+Set the data this intent is operating on. This method automatically clears any type that was previously set by setType or setTypeAndNormalize.
 
-*Note: scheme matching in the Android framework is case-sensitive, unlike the formal RFC. As a result, you should always write your Uri with a lower case scheme, or use `https://developer.android.com/reference/kotlin/android/net/Uri.html#normalizeScheme()` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndNormalize(android.net.Uri)` to ensure that the scheme is converted to lower case.*
+*Note: scheme matching in the Android framework is case-sensitive, unlike the formal RFC. As a result, you should always write your Uri with a lower case scheme, or use normalizeScheme or setDataAndNormalize to ensure that the scheme is converted to lower case.*
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndNormalize(android.net.Uri)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setDataAndNormalize
 
 Normalize and set the data this intent is operating on.
 
-This method automatically clears any type that was previously set (for example, by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)`).
+This method automatically clears any type that was previously set (for example, by setType).
 
-The data Uri is normalized using `https://developer.android.com/reference/kotlin/android/net/Uri.html#normalizeScheme()` before it is set, so really this is just a convenience method for
+The data Uri is normalized using normalizeScheme before it is set, so really this is just a convenience method for
 
 ```kotlin
 setData(data.normalize())
@@ -3901,19 +3901,19 @@ setData(data.normalize())
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndType(android.net.Uri,%20kotlin.String)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setDataAndType
 
 (Usually optional) Set the data for the intent along with an explicit MIME data type. This method should very rarely be used -- it allows you to override the MIME type that would ordinarily be inferred from the data with your own type given here.
 
-*Note: MIME type and Uri scheme matching in the Android framework is case-sensitive, unlike the formal RFC definitions. As a result, you should always write these elements with lower case letters, or use `https://developer.android.com/reference/kotlin/android/content/Intent.html#normalizeMimeType(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/net/Uri.html#normalizeScheme()` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndTypeAndNormalize(android.net.Uri,%20kotlin.String)` to ensure that they are converted to lower case.*
+*Note: MIME type and Uri scheme matching in the Android framework is case-sensitive, unlike the formal RFC definitions. As a result, you should always write these elements with lower case letters, or use normalizeMimeType or normalizeScheme or setDataAndTypeAndNormalize to ensure that they are converted to lower case.*
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setDataAndTypeAndNormalize(android.net.Uri,%20kotlin.String)(data: https://developer.android.com/reference/kotlin/android/net/Uri.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setDataAndTypeAndNormalize
 
 (Usually optional) Normalize and set both the data Uri and an explicit MIME data type. This method should very rarely be used -- it allows you to override the MIME type that would ordinarily be inferred from the data with your own type given here.
 
-The data Uri and the MIME type are normalize using `https://developer.android.com/reference/kotlin/android/net/Uri.html#normalizeScheme()` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#normalizeMimeType(kotlin.String)` before they are set, so really this is just a convenience method for
+The data Uri and the MIME type are normalize using normalizeScheme and normalizeMimeType before they are set, so really this is just a convenience method for
 
 ```kotlin
 setDataAndType(data.normalize(), Intent.normalizeMimeType(type))
@@ -3922,73 +3922,73 @@ setDataAndType(data.normalize(), Intent.normalizeMimeType(type))
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setExtrasClassLoader(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setExtrasClassLoader
 
 Sets the ClassLoader that will be used when unmarshalling any Parcelable values from the extras of this Intent.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setFlags
 
-Set special flags controlling how this intent is handled. Most values here depend on the type of component being executed by the Intent, specifically the FLAG_ACTIVITY_\* flags are all for use with android.content.Context#startActivity and the FLAG_RECEIVER_\* flags are all for use with `https://developer.android.com/reference/kotlin/android/content/Context.html#sendBroadcast(android.content.Intent)`.
+Set special flags controlling how this intent is handled. Most values here depend on the type of component being executed by the Intent, specifically the FLAG_ACTIVITY_\* flags are all for use with android.content.Context#startActivity and the FLAG_RECEIVER_\* flags are all for use with sendBroadcast.
 
 See the [Tasks and Back Stack](https://developer.android.com/guide/topics/fundamentals/tasks-and-back-stack.html) documentation for important information on how some of these options impact the behavior of your application.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setIdentifier(kotlin.String)(identifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setIdentifier
 
-Set an identifier for this Intent. If set, this provides a unique identity for this Intent, allowing it to be unique from other Intents that would otherwise look the same. In particular, this will be used by `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)` to determine if two Intents are the same as with other fields like `https://developer.android.com/reference/kotlin/android/content/Intent.html#setAction(kotlin.String)`. However, unlike those fields, the identifier is *never* used for matching against an `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#`; it is as if the identifier has not been set on the Intent.
+Set an identifier for this Intent. If set, this provides a unique identity for this Intent, allowing it to be unique from other Intents that would otherwise look the same. In particular, this will be used by filterEquals to determine if two Intents are the same as with other fields like setAction. However, unlike those fields, the identifier is *never* used for matching against an `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#`; it is as if the identifier has not been set on the Intent.
 
 This can be used, for example, to make this Intent unique from other Intents that are otherwise the same, for use in creating a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#`. (Be aware however that the receiver of the PendingIntent will see whatever you put in here.) The structure of this string is completely undefined by the platform, however if you are going to be exposing identifier strings across different applications you may need to define your own structure if there is no central party defining the contents of this field.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setPackage(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setPackage
 
 (Usually optional) Set an explicit application package name that limits the components this Intent will resolve to. If left to the default value of null, all components in all applications will considered. If non-null, the Intent can only match the components in the given application package.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSelector(android.content.Intent)(selector: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSelector
 
 Set a selector for this Intent. This is a modification to the kinds of things the Intent will match. If the selector is set, it will be used when trying to find entities that can handle the Intent, instead of the main contents of the Intent. This allows you build an Intent containing a generic protocol while targeting it more specifically.
 
-An example of where this may be used is with things like `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_APP_BROWSER:kotlin.String`. This category allows you to build an Intent that will launch the Browser application. However, the correct main entry point of an application is actually `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String` with `https://developer.android.com/reference/kotlin/android/content/Intent.html#setComponent(android.content.ComponentName)` used to specify the actual Activity to launch. If you launch the browser with something different, undesired behavior may happen if the user has previously or later launches it the normal way, since they do not match. Instead, you can build an Intent with the MAIN action (but no ComponentName yet specified) and set a selector with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_APP_BROWSER:kotlin.String` to point it specifically to the browser activity.
+An example of where this may be used is with things like `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_APP_BROWSER:kotlin.String`. This category allows you to build an Intent that will launch the Browser application. However, the correct main entry point of an application is actually `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_LAUNCHER:kotlin.String` with setComponent used to specify the actual Activity to launch. If you launch the browser with something different, undesired behavior may happen if the user has previously or later launches it the normal way, since they do not match. Instead, you can build an Intent with the MAIN action (but no ComponentName yet specified) and set a selector with `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MAIN:kotlin.String` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_APP_BROWSER:kotlin.String` to point it specifically to the browser activity.
 
-Setting a selector does not impact the behavior of `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)` and `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterHashCode()`. This is part of the desired behavior of a selector -- it does not impact the base meaning of the Intent, just what kinds of things will be matched against it when determining who can handle it.
+Setting a selector does not impact the behavior of filterEquals and filterHashCode. This is part of the desired behavior of a selector -- it does not impact the base meaning of the Intent, just what kinds of things will be matched against it when determining who can handle it.
 
-You can not use both a selector and `https://developer.android.com/reference/kotlin/android/content/Intent.html#setPackage(kotlin.String)` on the same base Intent.
+You can not use both a selector and setPackage on the same base Intent.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setSourceBounds(android.graphics.Rect)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSourceBounds
 
 Set the bounds of the sender of this intent, in screen coordinates. This can be used as a hint to the receiver for animations and the like. Null means that there is no source bounds.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setType
 
 Set an explicit MIME data type.
 
 This is used to create intents that only specify a type and not data, for example to indicate the type of data to return.
 
-This method automatically clears any data that was previously set (for example by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)`).
+This method automatically clears any data that was previously set (for example by setData).
 
-*Note: MIME type matching in the Android framework is case-sensitive, unlike formal RFC MIME types. As a result, you should always write your MIME types with lower case letters, or use `https://developer.android.com/reference/kotlin/android/content/Intent.html#normalizeMimeType(kotlin.String)` or `https://developer.android.com/reference/kotlin/android/content/Intent.html#setTypeAndNormalize(kotlin.String)` to ensure that it is converted to lower case.*
+*Note: MIME type matching in the Android framework is case-sensitive, unlike formal RFC MIME types. As a result, you should always write your MIME types with lower case letters, or use normalizeMimeType or setTypeAndNormalize to ensure that it is converted to lower case.*
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#` `https://developer.android.com/reference/kotlin/android/content/Intent.html#setTypeAndNormalize(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://developer.android.com/reference/kotlin/android/content/Intent.html#` setTypeAndNormalize
 
 Normalize and set an explicit MIME data type.
 
 This is used to create intents that only specify a type and not data, for example to indicate the type of data to return.
 
-This method automatically clears any data that was previously set (for example by `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)`).
+This method automatically clears any data that was previously set (for example by setData).
 
-The MIME type is normalized using `https://developer.android.com/reference/kotlin/android/content/Intent.html#normalizeMimeType(kotlin.String)` before it is set, so really this is just a convenience method for
+The MIME type is normalized using normalizeMimeType before it is set, so really this is just a convenience method for
 
 ```kotlin
 setType(Intent.normalizeMimeType(type))
@@ -3997,23 +3997,23 @@ setType(Intent.normalizeMimeType(type))
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` `https://developer.android.com/reference/kotlin/android/content/Intent.html#toString()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` toString
 
 Returns a string representation of the object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#toURI()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` toURI
 
-Call `https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)` with 0 flags.
+Call toUri with 0 flags.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/android/content/Intent.html#toUri(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` toUri
 
-Convert this Intent into a String holding a URI representation of it. The returned URI string has been properly URI encoded, so it can be used with `https://developer.android.com/reference/kotlin/android/net/Uri.html#parse(kotlin.String)`. The URI contains the Intent's data as the base URI, with an additional fragment describing the action, categories, type, flags, package, component, and extras.
+Convert this Intent into a String holding a URI representation of it. The returned URI string has been properly URI encoded, so it can be used with parse. The URI contains the Intent's data as the base URI, with an additional fragment describing the action, categories, type, flags, package, component, and extras.
 
-You can convert the returned string back to an Intent with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntent(kotlin.String)`.
+You can convert the returned string back to an Intent with getIntent.
 
 <br />
 
@@ -4159,7 +4159,7 @@ open fun loadIcon(pm: PackageManager!): Drawable!
 
 Retrieve the icon associated with this object. If the object does not have a icon, null will be returned, in which case you will probably want to load the icon from the underlying resolved info for the Intent.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 ### loadLabel
 

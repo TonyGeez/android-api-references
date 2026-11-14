@@ -25,27 +25,27 @@ Represents the cell location on a GSM phone.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#GsmCellLocation()()` Empty constructor. |
-| `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#GsmCellLocation(android.os.Bundle)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Initialize the object from a bundle. |
+| GsmCellLocation Empty constructor. |
+| GsmCellLocation Initialize the object from a bundle. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#fillInNotifierBundle(android.os.Bundle)(m: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Set intent notifier Bundle based on service state |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#getCid()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | fillInNotifierBundle Set intent notifier Bundle based on service state |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCid <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#getLac()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#getPsc()()` On a UMTS network, returns the primary scrambling code of the serving cell. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#hashCode()()` Returns a hash code value for the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLac <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPsc On a UMTS network, returns the primary scrambling code of the serving cell. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#setLacAndCid(kotlin.Int,%20kotlin.Int)(lac: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the location area code and the cell id. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#setStateInvalid()()` Invalidate this object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/gsm/GsmCellLocation#toString()()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLacAndCid Set the location area code and the cell id. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStateInvalid Invalidate this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#` |---|---| | `https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#!` | `https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#getEmpty()()` Return a new CellLocation object representing an unknown location, or null for unknown/none phone radio types. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#requestLocationUpdate()()` Request an updated CellLocation for callers targeting SDK 30 or older. Whenever Android is aware of location changes, a callback will automatically be sent to all registrants of `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener.html#LISTEN_CELL_LOCATION:kotlin.Int`. This API requests an additional location update for cases where power saving might cause location updates to be missed. This method is a no-op for callers targeting SDK level 31 or greater. This method is a no-op for callers that target SDK level 29 or 30 and lack `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. This method is a no-op for callers that target SDK level 28 or below and lack `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String`. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#` |---|---| | `https://developer.android.com/reference/kotlin/android/telephony/CellLocation.html#!` | getEmpty Return a new CellLocation object representing an unknown location, or null for unknown/none phone radio types. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | requestLocationUpdate Request an updated CellLocation for callers targeting SDK 30 or older. Whenever Android is aware of location changes, a callback will automatically be sent to all registrants of `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener.html#LISTEN_CELL_LOCATION:kotlin.Int`. This API requests an additional location update for cases where power saving might cause location updates to be missed. This method is a no-op for callers targeting SDK level 31 or greater. This method is a no-op for callers that target SDK level 29 or 30 and lack `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. This method is a no-op for callers that target SDK level 28 or below and lack `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String`. <br /> | ||
 
 ## Public constructors
 
@@ -177,8 +177,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

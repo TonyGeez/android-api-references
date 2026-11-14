@@ -10,7 +10,7 @@ class DisconnectCause
 | --- | --- |
 | ↳ | [android.telephony.DisconnectCause](DisconnectCause.md) |
 
-Describes the cause of a disconnected call. Those disconnect causes can be converted into a more generic `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause.html#` object. Used in `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#onCallDisconnectCauseChanged(kotlin.Int,%20kotlin.Int)`.
+Describes the cause of a disconnected call. Those disconnect causes can be converted into a more generic `https://developer.android.com/reference/kotlin/android/telecom/DisconnectCause.html#` object. Used in onCallDisconnectCauseChanged.
 
 ## Summary
 

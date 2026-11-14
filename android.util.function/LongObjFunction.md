@@ -14,7 +14,7 @@ Represents a function that accepts a `long`-valued argument and an object-valued
 
 | Public methods ||
 |---|---|
-| abstract R | `https://developer.android.com/reference/kotlin/android/util/function/LongObjFunction#apply(kotlin.Long,%20android.util.function.LongObjFunction.T)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, t: T)` Performs this operation on the given arguments. |
+| abstract R | apply Performs this operation on the given arguments. |
 
 ## Public methods
 

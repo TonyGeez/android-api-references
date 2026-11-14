@@ -27,17 +27,17 @@ Some prime examples include `NET_CAPABILITY_MMS`, which means that the network i
 
 The `NET_CAPABILITY_INTERNET` capability means that the network is configured to reach the general Internet. It may or may not actually provide connectivity ; the `NET_CAPABILITY_VALIDATED` bit indicates that the system found actual connectivity to the general Internet the last time it checked. Apps interested in actual connectivity should usually look at both these capabilities.
 
-The `NET_CAPABILITY_NOT_METERED` capability is set for networks that do not bill the user for consumption of bytes. Applications are encouraged to consult this to determine appropriate usage, and to limit usage of metered network where possible, including deferring big downloads until such a time that an unmetered network is connected. Also see `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` to help with scheduling such downloads, in particular `https://developer.android.com/reference/kotlin/android/app/job/JobInfo.Builder.html#setRequiredNetwork(android.net.NetworkRequest)`.
+The `NET_CAPABILITY_NOT_METERED` capability is set for networks that do not bill the user for consumption of bytes. Applications are encouraged to consult this to determine appropriate usage, and to limit usage of metered network where possible, including deferring big downloads until such a time that an unmetered network is connected. Also see `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` to help with scheduling such downloads, in particular setRequiredNetwork.
 
 NetworkCapabilities contain a number of other capabilities that represent what modern networks can and can't do. Look up the individual capabilities in this class to learn about each of them.
 
-NetworkCapabilities typically represent attributes that can apply to any network. The attributes that apply only to specific transports like cellular or Wi-Fi can be found in the specifier (for requestable attributes) or in the transport info (for non-requestable ones). See `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getNetworkSpecifier()` and `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getTransportInfo()`. An app would downcast these to the specific class for the transport they need if they are interested in transport-specific attributes. Also see `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier` or `https://developer.android.com/reference/kotlin/android/net/wifi/WifiInfo` for some examples of each of these.
+NetworkCapabilities typically represent attributes that can apply to any network. The attributes that apply only to specific transports like cellular or Wi-Fi can be found in the specifier (for requestable attributes) or in the transport info (for non-requestable ones). See getNetworkSpecifier and getTransportInfo. An app would downcast these to the specific class for the transport they need if they are interested in transport-specific attributes. Also see WifiNetworkSpecifier or WifiInfo for some examples of each of these.
 
 NetworkCapabilities also contains other attributes like the estimated upstream and downstream bandwidth and the specific transport of that network (e.g. `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#TRANSPORT_CELLULAR:kotlin.Int`). Generally, apps should normally have little reason to check for the type of transport ; for example, to query whether a network costs money to the user, do not look at the transport, but instead look at the absence or presence of `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NET_CAPABILITY_NOT_METERED:kotlin.Int` which will correctly account for metered Wi-Fis and free of charge cell connections.
 
-The system communicates with apps about connected networks and uses NetworkCapabilities to express these capabilities about these networks. Apps should register callbacks with the android.net.ConnectivityManager#requestNetwork or android.net.ConnectivityManager#registerNetworkCallback family of methods to learn about the capabilities of a network on a continuous basis and be able to react to changes to capabilities. For quick debugging Android also provides `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkCapabilities(android.net.Network)`, but the dynamic nature of networking makes this ill-suited to production code since capabilities obtained in this way can go stale immediately.
+The system communicates with apps about connected networks and uses NetworkCapabilities to express these capabilities about these networks. Apps should register callbacks with the android.net.ConnectivityManager#requestNetwork or android.net.ConnectivityManager#registerNetworkCallback family of methods to learn about the capabilities of a network on a continuous basis and be able to react to changes to capabilities. For quick debugging Android also provides getNetworkCapabilities, but the dynamic nature of networking makes this ill-suited to production code since capabilities obtained in this way can go stale immediately.
 
-Also see `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` which uses the same capabilities together with android.net.ConnectivityManager#requestNetwork for how to request the system brings up the kind of network your application needs.
+Also see NetworkRequest which uses the same capabilities together with android.net.ConnectivityManager#requestNetwork for how to request the system brings up the kind of network your application needs.
 
 ## Summary
 
@@ -110,37 +110,37 @@ Also see `https://developer.android.com/reference/kotlin/android/net/NetworkRequ
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NetworkCapabilities()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#NetworkCapabilities(android.net.NetworkCapabilities)(nc: https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#!)` <br /> |
+| NetworkCapabilities <br /> |
+| NetworkCapabilities <br /> |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getCapabilities()()` Gets all the capabilities set on this `NetworkCapability` instance. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getCapabilities Gets all the capabilities set on this `NetworkCapability` instance. |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getEnterpriseIds()()` Get enteprise identifiers set. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkDownstreamBandwidthKbps()()` Retrieves the downstream bandwidth for this network in Kbps. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkUpstreamBandwidthKbps()()` Retrieves the upstream bandwidth for this network in Kbps. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | getEnterpriseIds Get enteprise identifiers set. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLinkDownstreamBandwidthKbps Retrieves the downstream bandwidth for this network in Kbps. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLinkUpstreamBandwidthKbps Retrieves the upstream bandwidth for this network in Kbps. |
 | --- | --- |
-| [NetworkSpecifier](NetworkSpecifier.md)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getNetworkSpecifier()()` Gets the optional bearer specific network specifier. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getOwnerUid()()` Retrieves the UID of the app that owns this network. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getSignalStrength()()` Retrieves the signal strength. |
+| [NetworkSpecifier](NetworkSpecifier.md)? | getNetworkSpecifier Gets the optional bearer specific network specifier. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOwnerUid Retrieves the UID of the app that owns this network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSignalStrength Retrieves the signal strength. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getSubscriptionIds()()` Gets the subscription ID set that associated to this network or request. |
-| [TransportInfo](TransportInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getTransportInfo()()` Returns a transport-specific information container. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasCapability(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of a capability on this instance. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getSubscriptionIds Gets the subscription ID set that associated to this network or request. |
+| [TransportInfo](TransportInfo.md)? | getTransportInfo Returns a transport-specific information container. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCapability Tests for the presence of a capability on this instance. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasEnterpriseId(kotlin.Int)(enterpriseId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of an enterprise capability identifier on this instance. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hasTransport(kotlin.Int)(transportType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tests for the presence of a transport on this instance. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#hashCode()()` Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasEnterpriseId Tests for the presence of an enterprise capability identifier on this instance. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasTransport Tests for the presence of a transport on this instance. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -348,7 +348,7 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 static val NET_CAPABILITY_NOT_BANDWIDTH_CONSTRAINED: Int
 ```
 
-Indicates that this is not a bandwidth-constrained network. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, this capability is by default set in `https://developer.android.com/reference/kotlin/android/net/NetworkRequest`s and true for most networks. If a network lacks this capability, it is bandwidth-constrained. Bandwidth constrained networks cannot support high-bandwidth data transfers and applications that request and use them must ensure that they limit bandwidth usage to below the values returned by `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkDownstreamBandwidthKbps()` and `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities#getLinkUpstreamBandwidthKbps()` and limit the frequency of their network usage. If applications perform high-bandwidth data transfers on constrained networks or perform network access too frequently, the system may block the app's access to the network. The system may take other measures to reduce network usage on constrained networks, such as disabling network access to apps that are not in the foreground.
+Indicates that this is not a bandwidth-constrained network. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, this capability is by default set in NetworkRequests and true for most networks. If a network lacks this capability, it is bandwidth-constrained. Bandwidth constrained networks cannot support high-bandwidth data transfers and applications that request and use them must ensure that they limit bandwidth usage to below the values returned by getLinkDownstreamBandwidthKbps and getLinkUpstreamBandwidthKbps and limit the frequency of their network usage. If applications perform high-bandwidth data transfers on constrained networks or perform network access too frequently, the system may block the app's access to the network. The system may take other measures to reduce network usage on constrained networks, such as disabling network access to apps that are not in the foreground.
 
  Value: 37
 
@@ -436,7 +436,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val NET_CAPABILITY_PRIORITIZE_BANDWIDTH: Int
 ```
 
-Indicates that this network should be able to prioritize bandwidth for the internet. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher, requesting this capability with android.net.ConnectivityManager#requestNetwork requires declaration in the self-certified network capabilities. See `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` for the self-certification documentation.
+Indicates that this network should be able to prioritize bandwidth for the internet. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher, requesting this capability with android.net.ConnectivityManager#requestNetwork requires declaration in the self-certified network capabilities. See NetworkRequest for the self-certification documentation.
 
  Value: 35
 
@@ -448,7 +448,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val NET_CAPABILITY_PRIORITIZE_LATENCY: Int
 ```
 
-Indicates that this network should be able to prioritize latency for the internet. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher, requesting this capability with android.net.ConnectivityManager#requestNetwork requires declaration in the self-certified network capabilities. See `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` for the self-certification documentation.
+Indicates that this network should be able to prioritize latency for the internet. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher, requesting this capability with android.net.ConnectivityManager#requestNetwork requires declaration in the self-certified network capabilities. See NetworkRequest for the self-certification documentation.
 
  Value: 34
 
@@ -469,7 +469,7 @@ This capability signals to the system that the network may offer a dedicated sli
 - The system can request a network with this capability on behalf of an eligible application when it detects an active OTT call to improve Quality of Service (QoS).
 - An ott application can request a network with this capability directly using android.net.ConnectivityManager#requestNetwork.
 
-This capability is a hint from the network and does not guarantee that it will be used for any given call. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher, requesting this capability with android.net.ConnectivityManager#requestNetwork requires declaration in the self-certified network capabilities. See `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` for the self-certification documentation.
+This capability is a hint from the network and does not guarantee that it will be used for any given call. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` or higher, requesting this capability with android.net.ConnectivityManager#requestNetwork requires declaration in the self-certified network capabilities. See NetworkRequest for the self-certification documentation.
 
  Value: 38
 
@@ -781,7 +781,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -883,7 +883,7 @@ Gets the optional bearer specific network specifier. May be `null` if not set.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier?` | The optional `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` specifying the bearer specific network specifier or `null`. |
+| NetworkSpecifier | The optional NetworkSpecifier specifying the bearer specific network specifier or `null`. |
 
 ### getOwnerUid
 
@@ -909,7 +909,7 @@ OR:
 
 Instances of NetworkCapabilities sent to apps without the appropriate permissions will have this field cleared out.
 
-This field will only be populated for VPN and wifi network suggestor apps (i.e using `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion`), and only for the network they own. In the case of wifi network suggestors apps, this field is also location sensitive, so the app needs to hold `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission. If the app targets SDK version greater than or equal to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, then they also need to use `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#FLAG_INCLUDE_LOCATION_INFO:kotlin.Int` to get the info in their callback. If the apps targets SDK version equal to {`https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, this field will always be included. The app will be blamed for location access if this field is included.
+This field will only be populated for VPN and wifi network suggestor apps (i.e using WifiNetworkSuggestion), and only for the network they own. In the case of wifi network suggestors apps, this field is also location sensitive, so the app needs to hold `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission. If the app targets SDK version greater than or equal to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int`, then they also need to use `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#FLAG_INCLUDE_LOCATION_INFO:kotlin.Int` to get the info in their callback. If the apps targets SDK version equal to {`https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int`, this field will always be included. The app will be blamed for location access if this field is included.
 
 ### getSignalStrength
 
@@ -954,7 +954,7 @@ Returns a transport-specific information container. The application may cast thi
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/TransportInfo?` | A concrete implementation of the `https://developer.android.com/reference/kotlin/android/net/TransportInfo` class or null if not available for the network. |
+| TransportInfo | A concrete implementation of the TransportInfo class or null if not available for the network. |
 
 ### hasCapability
 
@@ -1023,8 +1023,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

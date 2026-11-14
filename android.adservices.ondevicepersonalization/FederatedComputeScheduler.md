@@ -13,7 +13,7 @@ open class FederatedComputeScheduler
 | --- | --- |
 | ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduler](FederatedComputeScheduler.md) |
 
-Handles scheduling federated compute jobs. See `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)`.
+Handles scheduling federated compute jobs. See getFederatedComputeScheduler.
 
 ## Summary
 
@@ -23,9 +23,9 @@ Handles scheduling federated compute jobs. See `https://developer.android.com/re
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler#cancel(android.adservices.ondevicepersonalization.FederatedComputeInput)(input: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeInput)` Cancels a federated compute job with input training params. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler#schedule(android.adservices.ondevicepersonalization.FederatedComputeScheduler.Params,%20android.adservices.ondevicepersonalization.FederatedComputeInput)(params: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler.Params, input: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeInput)` Schedules a federated compute job. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler#schedule(android.adservices.ondevicepersonalization.FederatedComputeScheduleRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(federatedComputeScheduleRequest: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, outcomeReceiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Schedules a federated compute job. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancels a federated compute job with input training params. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | schedule Schedules a federated compute job. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | schedule Schedules a federated compute job. |
 | --- | --- |
 
 ## Public methods
@@ -40,7 +40,7 @@ open fun cancel(input: FederatedComputeInput): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Cancels a federated compute job with input training params. In `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onRequest(android.adservices.ondevicepersonalization.RequestToken)`, the app can call `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)` to pass scheduler when constructing the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker`. 
+Cancels a federated compute job with input training params. In onRequest, the app can call getFederatedComputeScheduler to pass scheduler when constructing the IsolatedWorker. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -60,7 +60,7 @@ open fun schedule(
 
 **Deprecated:** *Deprecated in Java.*
 
-Schedules a federated compute job. In `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onRequest(android.adservices.ondevicepersonalization.RequestToken)`, the app can call `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)` to pass the scheduler when constructing the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker`. 
+Schedules a federated compute job. In onRequest, the app can call getFederatedComputeScheduler to pass the scheduler when constructing the IsolatedWorker. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
@@ -82,12 +82,12 @@ open fun schedule(
 
 **Deprecated:** *Deprecated in Java.*
 
-Schedules a federated compute job. In `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onRequest(android.adservices.ondevicepersonalization.RequestToken)`, the app can call `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)` to pass the scheduler when constructing the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker`. 
+Schedules a federated compute job. In onRequest, the app can call getFederatedComputeScheduler to pass the scheduler when constructing the IsolatedWorker. 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
 | Parameters ||
 |---|---|
 | `federatedComputeScheduleRequest` | [FederatedComputeScheduleRequest](FederatedComputeScheduleRequest.md): input parameters related to job scheduling. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `outcomeReceiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [FederatedComputeScheduleResponse](FederatedComputeScheduleResponse.md)!, [Exception](../java.lang/Exception.md)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse` on success, or `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` on failure. The exception type is `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException` with error code `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_INVALID_TRAINING_MANIFEST:kotlin.Int` if the manifest is missing the federated compute server URL or `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_SCHEDULE_TRAINING_FAILED:kotlin.Int` when scheduling fails for other reasons. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `outcomeReceiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [FederatedComputeScheduleResponse](FederatedComputeScheduleResponse.md)!, [Exception](../java.lang/Exception.md)!\>: This either returns a FederatedComputeScheduleResponse on success, or `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` on failure. The exception type is OnDevicePersonalizationException with error code `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_INVALID_TRAINING_MANIFEST:kotlin.Int` if the manifest is missing the federated compute server URL or `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_SCHEDULE_TRAINING_FAILED:kotlin.Int` when scheduling fails for other reasons. This value cannot be `null`. |
 | --- | --- |

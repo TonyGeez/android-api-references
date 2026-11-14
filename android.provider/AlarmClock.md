@@ -49,7 +49,7 @@ The AlarmClock provider contains an Intent action and extras that can be used to
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#AlarmClock()()` <br /> |
+| AlarmClock <br /> |
 
 ## Constants
 
@@ -77,7 +77,7 @@ If neither of the above are given then:
 
 <br />
 
-If the extra `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_ALARM_SEARCH_MODE:kotlin.String` is used, and the search results contain two or more matching alarms, then the implementation should show an UI with the results and allow the user to select the alarm to dismiss. If the implementation supports `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_VOICE:kotlin.String` and the activity is started in Voice Interaction mode (i.e. check `https://developer.android.com/reference/kotlin/android/app/Activity.html#isVoiceInteraction()`), then the implementation should additionally use `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.PickOptionRequest.html#` to start a voice interaction follow-on flow to help the user disambiguate the alarm by voice.
+If the extra `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#EXTRA_ALARM_SEARCH_MODE:kotlin.String` is used, and the search results contain two or more matching alarms, then the implementation should show an UI with the results and allow the user to select the alarm to dismiss. If the implementation supports `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_VOICE:kotlin.String` and the activity is started in Voice Interaction mode (i.e. check isVoiceInteraction), then the implementation should additionally use `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.PickOptionRequest.html#` to start a voice interaction follow-on flow to help the user disambiguate the alarm by voice.
 
 If the specified alarm is a single occurrence alarm, then dismissing it effectively disables the alarm; it will never ring again unless explicitly re-enabled.
 
@@ -123,7 +123,7 @@ This action requests an alarm to be set for a given time of day. If no time of d
 
 This action always enables the alarm.
 
-This activity could also be started in Voice Interaction mode. The activity should check `https://developer.android.com/reference/kotlin/android/app/Activity.html#isVoiceInteraction()`, and if true, the implementation should report a deeplink of the created/enabled alarm using `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CompleteVoiceRequest.html#`. This allows follow-on voice actions such as `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_DISMISS_ALARM:kotlin.String` to dismiss the alarm that was just enabled.
+This activity could also be started in Voice Interaction mode. The activity should check isVoiceInteraction, and if true, the implementation should report a deeplink of the created/enabled alarm using `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.CompleteVoiceRequest.html#`. This allows follow-on voice actions such as `https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_DISMISS_ALARM:kotlin.String` to dismiss the alarm that was just enabled.
 
 ### Request parameters
 

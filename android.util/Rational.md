@@ -22,31 +22,31 @@ Contains a pair of `int`s representing the numerator and denominator of a Ration
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/Rational#Rational(kotlin.Int,%20kotlin.Int)(numerator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, denominator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `Rational` with a given numerator and denominator. |
+| Rational Create a `Rational` with a given numerator and denominator. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#compareTo(android.util.Rational)(other: https://developer.android.com/reference/kotlin/android/util/Rational#!)` Compare this rational to the specified rational to determine their natural order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare this Rational to another object and see if they are equal. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#getDenominator()()` Gets the denominator of the rational |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compare this rational to the specified rational to determine their natural order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compare this Rational to another object and see if they are equal. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDenominator Gets the denominator of the rational |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#getNumerator()()` Gets the numerator of the rational. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isFinite()()` Indicates whether this rational represents a finite value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNumerator Gets the numerator of the rational. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFinite Indicates whether this rational represents a finite value. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isInfinite()()` Indicates whether this rational represents an infinite value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isNaN()()` Indicates whether this rational is a *Not-a-Number (NaN)* value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isZero()()` Indicates whether this rational represents a zero value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInfinite Indicates whether this rational represents an infinite value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNaN Indicates whether this rational is a *Not-a-Number (NaN)* value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isZero Indicates whether this rational represents a zero value. |
 | --- | --- |
-| static [Rational](Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#parseRational(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses the specified string as a rational value. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toDouble()()` Returns the value of the specified number as a `double`. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toFloat()()` Returns the value of the specified number as a `float`. |
+| static [Rational](Rational.md)! | parseRational Parses the specified string as a rational value. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toDouble Returns the value of the specified number as a `double`. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | toFloat Returns the value of the specified number as a `float`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toInt()()` Returns the value of the specified number as a `int`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toLong()()` Returns the value of the specified number as a `long`. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toShort()()` Returns the value of the specified number as a `short`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toInt Returns the value of the specified number as a `int`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toLong Returns the value of the specified number as a `long`. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | toShort Returns the value of the specified number as a `short`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toString()()` Return a string representation of this rational, e. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Return a string representation of this rational, e. |
 
 | Properties ||
 |---|---|
@@ -70,7 +70,7 @@ Rational(
 
 Create a `Rational` with a given numerator and denominator.
 
-The signs of the numerator and the denominator may be flipped such that the denominator is always positive. Both the numerator and denominator will be converted to their reduced forms (see `https://developer.android.com/reference/kotlin/android/util/Rational#equals(kotlin.Any)` for more details).
+The signs of the numerator and the denominator may be flipped such that the denominator is always positive. Both the numerator and denominator will be converted to their reduced forms (see equals for more details).
 
 For example,
 
@@ -88,7 +88,7 @@ For example,
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/util/Rational#equals(kotlin.Any)`
+- equals
 
 ## Public methods
 
@@ -102,7 +102,7 @@ fun compareTo(other: Rational!): Int
 
 Compare this rational to the specified rational to determine their natural order.
 
-`https://developer.android.com/reference/kotlin/android/util/Rational#NaN:android.util.Rational` is considered to be equal to itself and greater than all other `Rational` values. Otherwise, if the objects are not `https://developer.android.com/reference/kotlin/android/util/Rational#equals(kotlin.Any)`, then the following rules apply:
+`https://developer.android.com/reference/kotlin/android/util/Rational#NaN:android.util.Rational` is considered to be equal to itself and greater than all other `Rational` values. Otherwise, if the objects are not equals, then the following rules apply:
 
 - Positive infinity is greater than any other finite number (or negative infinity)
 - Negative infinity is less than any other finite number (or positive infinity)
@@ -199,8 +199,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -264,7 +264,7 @@ fun isZero(): Boolean
 
 Indicates whether this rational represents a zero value.
 
-A zero value is a `https://developer.android.com/reference/kotlin/android/util/Rational#isFinite()` rational with a numerator of `0`.
+A zero value is a isFinite rational with a numerator of `0`.
 
 | Return ||
 |---|---|
@@ -348,7 +348,7 @@ fun toInt(): Int
 
 Returns the value of the specified number as a `int`.
 
-`https://developer.android.com/reference/kotlin/android/util/Rational#isInfinite()` rationals are converted to an `int` value by dividing the numerator by the denominator; conversion for non-finite values happens identically to casting a floating point value to an `int`, in particular:
+isInfinite rationals are converted to an `int` value by dividing the numerator by the denominator; conversion for non-finite values happens identically to casting a floating point value to an `int`, in particular:
 
 - Positive infinity saturates to the largest maximum integer `https://developer.android.com/reference/kotlin/java/lang/Integer.html#MAX_VALUE:kotlin.Int`
 - Negative infinity saturates to the smallest maximum integer `https://developer.android.com/reference/kotlin/java/lang/Integer.html#MIN_VALUE:kotlin.Int`
@@ -370,7 +370,7 @@ fun toLong(): Long
 
 Returns the value of the specified number as a `long`.
 
-`https://developer.android.com/reference/kotlin/android/util/Rational#isInfinite()` rationals are converted to an `long` value by dividing the numerator by the denominator; conversion for non-finite values happens identically to casting a floating point value to a `long`, in particular:
+isInfinite rationals are converted to an `long` value by dividing the numerator by the denominator; conversion for non-finite values happens identically to casting a floating point value to a `long`, in particular:
 
 - Positive infinity saturates to the largest maximum long `https://developer.android.com/reference/kotlin/java/lang/Long.html#MAX_VALUE:kotlin.Long`
 - Negative infinity saturates to the smallest maximum long `https://developer.android.com/reference/kotlin/java/lang/Long.html#MIN_VALUE:kotlin.Long`
@@ -392,7 +392,7 @@ fun toShort(): Short
 
 Returns the value of the specified number as a `short`.
 
-`https://developer.android.com/reference/kotlin/android/util/Rational#isInfinite()` rationals are converted to a `short` value identically to `https://developer.android.com/reference/kotlin/android/util/Rational#toInt()`; the `int` result is then truncated to a `short` before returning the value.
+isInfinite rationals are converted to a `short` value identically to toInt; the `int` result is then truncated to a `short` before returning the value.
 
 | Return ||
 |---|---|

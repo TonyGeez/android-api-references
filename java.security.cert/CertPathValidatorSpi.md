@@ -10,7 +10,7 @@ abstract class CertPathValidatorSpi
 | --- | --- |
 | ↳ | [java.security.cert.CertPathValidatorSpi](CertPathValidatorSpi.md) |
 
-The *Service Provider Interface* (**SPI** ) for the `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidator` class. All `CertPathValidator` implementations must include a class (the SPI class) that extends this class (`CertPathValidatorSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the `CertPathValidator` class. For details, see the Java Cryptography Architecture.
+The *Service Provider Interface* (**SPI** ) for the CertPathValidator class. All `CertPathValidator` implementations must include a class (the SPI class) that extends this class (`CertPathValidatorSpi`) and implements all of its methods. In general, instances of this class should only be accessed through the `CertPathValidator` class. For details, see the Java Cryptography Architecture.
 
 **Concurrent Access**
 
@@ -22,12 +22,12 @@ However, implementations of `CertPathValidatorSpi` may still encounter concurren
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#CertPathValidatorSpi()()` The default constructor. |
+| CertPathValidatorSpi The default constructor. |
 
 | Public methods ||
 |---|---|
-| open [CertPathChecker](CertPathChecker.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#engineGetRevocationChecker()()` Returns a `CertPathChecker` that this implementation uses to check the revocation status of certificates. |
-| abstract [CertPathValidatorResult](CertPathValidatorResult.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/CertPathValidatorSpi#engineValidate(java.security.cert.CertPath,%20java.security.cert.CertPathParameters)(certPath: https://developer.android.com/reference/kotlin/java/security/cert/CertPath!, params: https://developer.android.com/reference/kotlin/java/security/cert/CertPathParameters!)` Validates the specified certification path using the specified algorithm parameter set. |
+| open [CertPathChecker](CertPathChecker.md)! | engineGetRevocationChecker Returns a `CertPathChecker` that this implementation uses to check the revocation status of certificates. |
+| abstract [CertPathValidatorResult](CertPathValidatorResult.md)! | engineValidate Validates the specified certification path using the specified algorithm parameter set. |
 
 ## Public constructors
 

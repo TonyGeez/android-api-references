@@ -14,11 +14,11 @@ Allows clients to query availability and supported resolutions of camera extensi
 
 Camera extensions give camera clients access to device-specific algorithms and sequences that can improve the overall image quality of snapshots in various cases such as low light, selfies, portraits, and scenes that can benefit from enhanced dynamic range. Often such sophisticated processing sequences will rely on multiple camera frames as input and will produce a single output.
 
-Camera extensions are not guaranteed to be present on all devices so camera clients must query for their availability via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getSupportedExtensions()`.
+Camera extensions are not guaranteed to be present on all devices so camera clients must query for their availability via getSupportedExtensions.
 
-In order to use any available camera extension, camera clients must create a corresponding `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession` via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createExtensionSession(android.hardware.camera2.params.ExtensionSessionConfiguration)`
+In order to use any available camera extension, camera clients must create a corresponding CameraExtensionSession via createExtensionSession
 
-Camera clients must be aware that device-specific camera extensions may support only a subset of the available camera resolutions. Starting from API level 37.1, extensions may also choose to not advertise any supported capture resolutions for still capture requests, effectively not supporting still capture functionality. Clients must first query `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getExtensionSupportedSizes(kotlin.Int,%20kotlin.Int)` for supported single high-quality request output sizes and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getExtensionSupportedSizes(kotlin.Int,%20java.lang.Class)` for supported repeating request output sizes.
+Camera clients must be aware that device-specific camera extensions may support only a subset of the available camera resolutions. Starting from API level 37.1, extensions may also choose to not advertise any supported capture resolutions for still capture requests, effectively not supporting still capture functionality. Clients must first query getExtensionSupportedSizes for supported single high-quality request output sizes and getExtensionSupportedSizes for supported repeating request output sizes.
 
 The extension characteristics for a given device are expected to remain static under normal operating conditions.
 
@@ -37,21 +37,21 @@ The extension characteristics for a given device are expected to remain static u
 
 | Public methods ||
 |---|---|
-| T | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#get(kotlin.Int,%20android.hardware.camera2.CameraCharacteristics.Key)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, key: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.Key<T>)` Gets an extension specific camera characteristics field value. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CaptureRequest.Key](../android/hardware/camera2/CaptureRequest.Key.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getAvailableCaptureRequestKeys(kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the set of keys supported by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` submitted in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession` with a given extension type. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CaptureResult.Key](../android/hardware/camera2/CaptureResult.Key.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getAvailableCaptureResultKeys(kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the set of keys supported by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult` passed as an argument to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback#onCaptureResultAvailable(android.hardware.camera2.CameraExtensionSession,%20android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.TotalCaptureResult)`. |
+| T | get Gets an extension specific camera characteristics field value. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CaptureRequest.Key](../android/hardware/camera2/CaptureRequest.Key.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\> | getAvailableCaptureRequestKeys Returns the set of keys supported by a CaptureRequest submitted in a CameraExtensionSession with a given extension type. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CaptureResult.Key](../android/hardware/camera2/CaptureResult.Key.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\> | getAvailableCaptureResultKeys Returns the set of keys supported by a CaptureResult passed as an argument to onCaptureResultAvailable. |
 | --- | --- |
-| [Range](../android.util/Range.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getEstimatedCaptureLatencyRangeMillis(kotlin.Int,%20android.util.Size,%20kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, captureOutputSize: https://developer.android.com/reference/kotlin/android/util/Size.html#, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the estimated capture latency range in milliseconds for the target capture resolution during the calls to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Size](../android.util/Size.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getExtensionSupportedSizes(kotlin.Int,%20kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check whether a given extension is available and return the supported output surface resolutions that can be used for high-quality capture requests via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Size](../android.util/Size.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getExtensionSupportedSizes(kotlin.Int,%20java.lang.Class)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Get a list of sizes compatible with `klass` to use as an output for the repeating request `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)`. |
+| [Range](../android.util/Range.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>? | getEstimatedCaptureLatencyRangeMillis Returns the estimated capture latency range in milliseconds for the target capture resolution during the calls to capture. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Size](../android.util/Size.md)!\> | getExtensionSupportedSizes Check whether a given extension is available and return the supported output surface resolutions that can be used for high-quality capture requests via capture. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Size](../android.util/Size.md)!\> | getExtensionSupportedSizes Get a list of sizes compatible with `klass` to use as an output for the repeating request setRepeatingRequest. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CameraCharacteristics.Key](../android/hardware/camera2/CameraCharacteristics.Key.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getKeys(kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics` keys that have extension-specific values. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Size](../android.util/Size.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getPostviewSupportedSizes(kotlin.Int,%20android.util.Size,%20kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, captureSize: https://developer.android.com/reference/kotlin/android/util/Size.html#, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of the postview sizes supported for a still capture, using its capture size `captureSize`, to use as an output for the postview request. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getSupportedExtensions()()` Return a list of supported device-specific extensions for a given camera device. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CameraCharacteristics.Key](../android/hardware/camera2/CameraCharacteristics.Key.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\> | getKeys Returns the CameraCharacteristics keys that have extension-specific values. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Size](../android.util/Size.md)!\> | getPostviewSupportedSizes Get a list of the postview sizes supported for a still capture, using its capture size `captureSize`, to use as an output for the postview request. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getSupportedExtensions Return a list of supported device-specific extensions for a given camera device. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#isCaptureProcessProgressAvailable(kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve support for capture progress callbacks via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback#onCaptureProcessProgressed(android.hardware.camera2.CameraExtensionSession,%20android.hardware.camera2.CaptureRequest,%20kotlin.Int)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#isExtensionSupported(kotlin.Int)(extensionType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks if a given camera extension is available for a specific camera device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#isPostviewAvailable(kotlin.Int)(extension: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Checks for postview support of still capture. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCaptureProcessProgressAvailable Retrieve support for capture progress callbacks via onCaptureProcessProgressed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isExtensionSupported Checks if a given camera extension is available for a specific camera device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPostviewAvailable Checks for postview support of still capture. |
 | --- | --- |
 
 ## Constants
@@ -169,7 +169,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getAvailableCaptureRequestKeys(extension: Int): MutableSet<CaptureRequest.Key<Any!>!>
 ```
 
-Returns the set of keys supported by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` submitted in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession` with a given extension type.
+Returns the set of keys supported by a CaptureRequest submitted in a CameraExtensionSession with a given extension type.
 
 The set returned is not modifiable, so any attempts to modify it will throw a `UnsupportedOperationException`.
 
@@ -195,11 +195,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getAvailableCaptureResultKeys(extension: Int): MutableSet<CaptureResult.Key<Any!>!>
 ```
 
-Returns the set of keys supported by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult` passed as an argument to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback#onCaptureResultAvailable(android.hardware.camera2.CameraExtensionSession,%20android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.TotalCaptureResult)`.
+Returns the set of keys supported by a CaptureResult passed as an argument to onCaptureResultAvailable.
 
 The set returned is not modifiable, so any attempts to modify it will throw a `UnsupportedOperationException`.
 
-In case the set is empty, then the extension is not able to support any capture results and the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback#onCaptureResultAvailable(android.hardware.camera2.CameraExtensionSession,%20android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.TotalCaptureResult)` callback will not be fired.
+In case the set is empty, then the extension is not able to support any capture results and the onCaptureResultAvailable callback will not be fired.
 
 Devices launching on Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` or newer versions are required to support `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#CONTROL_AF_MODE:android.hardware.camera2.CaptureResult.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#CONTROL_AF_REGIONS:android.hardware.camera2.CaptureResult.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#CONTROL_AF_TRIGGER:android.hardware.camera2.CaptureResult.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#CONTROL_AF_STATE:android.hardware.camera2.CaptureResult.Key`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureResult#CONTROL_ZOOM_RATIO:android.hardware.camera2.CaptureResult.Key` for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int`.
 
@@ -227,7 +227,7 @@ fun getEstimatedCaptureLatencyRangeMillis(
 ): Range<Long!>?
 ```
 
-Returns the estimated capture latency range in milliseconds for the target capture resolution during the calls to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)`. This includes the time spent processing the multi-frame capture request along with any additional time for encoding of the processed buffer if necessary.
+Returns the estimated capture latency range in milliseconds for the target capture resolution during the calls to capture. This includes the time spent processing the multi-frame capture request along with any additional time for encoding of the processed buffer if necessary.
 
 | Parameters ||
 |---|---|
@@ -255,7 +255,7 @@ fun getExtensionSupportedSizes(
 ): MutableList<Size!>
 ```
 
-Check whether a given extension is available and return the supported output surface resolutions that can be used for high-quality capture requests via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#capture(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)`.
+Check whether a given extension is available and return the supported output surface resolutions that can be used for high-quality capture requests via capture.
 
 Note that device-specific extensions are allowed to support only a subset of the camera resolutions advertised by android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes.
 
@@ -285,11 +285,11 @@ fun <T : Any!> getExtensionSupportedSizes(
 ): MutableList<Size!>
 ```
 
-Get a list of sizes compatible with `klass` to use as an output for the repeating request `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)`.
+Get a list of sizes compatible with `klass` to use as an output for the repeating request setRepeatingRequest.
 
 Note that device-specific extensions are allowed to support only a subset of the camera output surfaces and resolutions. The `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` class is guaranteed at least one size for backward compatible cameras whereas other output classes are not guaranteed to be supported.
 
-Starting with Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` classes are also guaranteed to be supported and include the same resolutions as `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`. Clients must set the desired SurfaceView resolution by calling `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#setFixedSize(kotlin.Int,%20kotlin.Int)`.
+Starting with Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` classes are also guaranteed to be supported and include the same resolutions as `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`. Clients must set the desired SurfaceView resolution by calling setFixedSize.
 
 | Parameters ||
 |---|---|
@@ -313,9 +313,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getKeys(extension: Int): MutableSet<CameraCharacteristics.Key<Any!>!>
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics` keys that have extension-specific values.
+Returns the CameraCharacteristics keys that have extension-specific values.
 
-An application can query the value from the key using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#get(kotlin.Int,%20android.hardware.camera2.CameraCharacteristics.Key)` API.
+An application can query the value from the key using get API.
 
 | Parameters ||
 |---|---|
@@ -386,7 +386,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun isCaptureProcessProgressAvailable(extension: Int): Boolean
 ```
 
-Retrieve support for capture progress callbacks via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback#onCaptureProcessProgressed(android.hardware.camera2.CameraExtensionSession,%20android.hardware.camera2.CaptureRequest,%20kotlin.Int)`.
+Retrieve support for capture progress callbacks via onCaptureProcessProgressed.
 
 | Parameters ||
 |---|---|
@@ -412,7 +412,7 @@ Checks if a given camera extension is available for a specific camera device.
 
 An extension may not be available on all devices. Even if a device supports extensions in general, a specific extension might not be implemented for a particular camera ID.
 
-In contrast to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getSupportedExtensions()` this method can also be used to query the available device specific extension modes.
+In contrast to getSupportedExtensions this method can also be used to query the available device specific extension modes.
 
 | Parameters ||
 |---|---|
@@ -440,7 +440,7 @@ fun isPostviewAvailable(extension: Int): Boolean
 
 Checks for postview support of still capture.
 
-A postview is a preview version of the still capture that is available before the final image. For example, it can be used as a temporary placeholder for the requested capture while the final image is being processed. The supported sizes for a still capture's postview can be retrieved using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getPostviewSupportedSizes(kotlin.Int,%20android.util.Size,%20kotlin.Int)`.
+A postview is a preview version of the still capture that is available before the final image. For example, it can be used as a temporary placeholder for the requested capture while the final image is being processed. The supported sizes for a still capture's postview can be retrieved using getPostviewSupportedSizes.
 
 Starting with Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, the formats of the still capture and postview are not required to be equivalent upon capture request.
 

@@ -14,7 +14,7 @@ This class represents a node of the window content as well as actions that can b
 
 <br />
 
-Once an accessibility node info is delivered to an accessibility service it is made immutable and calling a state mutation method generates an error. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setQueryFromAppProcessEnabled(android.view.View,%20kotlin.Boolean)` if you would like to inspect the node tree from the app process for testing or debugging tools.
+Once an accessibility node info is delivered to an accessibility service it is made immutable and calling a state mutation method generates an error. See setQueryFromAppProcessEnabled if you would like to inspect the node tree from the app process for testing or debugging tools.
 
 Please refer to `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` for details about how to obtain a handle to window content as a tree of accessibility node info as well as details about the security model.
 
@@ -30,7 +30,7 @@ Please refer to `https://developer.android.com/reference/kotlin/android/accessib
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction` A class defining an action that can be performed on an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`. |
+| | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction` A class defining an action that can be performed on an AccessibilityNodeInfo. |
 | | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo` Class with information if a node is a collection. |
 | | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo` Class with information if a node is a collection item. |
 | --- | --- |
@@ -38,11 +38,11 @@ Please refer to `https://developer.android.com/reference/kotlin/android/accessib
 | | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.MathInfo` A class that holds information about a node that represents a mathematical expression. |
 | | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.RangeInfo` Class with information if a node is a range. |
 | --- | --- |
-| | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.Selection` Represents a selection of content that may extend across more than one `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` instance. |
+| | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.Selection` Represents a selection of content that may extend across more than one AccessibilityNodeInfo instance. |
 | | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.SelectionPosition` A class which defines either the start or end of a selection that can span across multiple AccessibilityNodeInfo objects. |
 | abstract | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.StructuredDataInfo` An abstract base class for holding structured semantic information about a node. |
 | --- | --- |
-| | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` Class with information of touch delegated views and regions from `https://developer.android.com/reference/kotlin/android/view/TouchDelegate.html#` for the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`. |
+| | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` Class with information of touch delegated views and regions from `https://developer.android.com/reference/kotlin/android/view/TouchDelegate.html#` for the AccessibilityNodeInfo. |
 
 | Constants ||
 |---|---|
@@ -135,258 +135,258 @@ Please refer to `https://developer.android.com/reference/kotlin/android/accessib
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo()()` Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`. |
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#)` Copy constructor. |
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo(android.view.View)(source: https://developer.android.com/reference/kotlin/android/view/View.html#)` Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` with the given `source`. |
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` with the given `source`. |
+| AccessibilityNodeInfo Creates a new AccessibilityNodeInfo. |
+| AccessibilityNodeInfo Copy constructor. |
+| AccessibilityNodeInfo Creates a new AccessibilityNodeInfo with the given `source`. |
+| AccessibilityNodeInfo Creates a new AccessibilityNodeInfo with the given `source`. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addAction(android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction)(action: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction!)` Adds an action that can be performed on the node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addAction(kotlin.Int)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds an action that can be performed on the node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addChild(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Adds a child. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addAction Adds an action that can be performed on the node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addAction Adds an action that can be performed on the node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addChild Adds a child. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addChild(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds a virtual child which is a descendant of the given `root`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View)(label: https://developer.android.com/reference/kotlin/android/view/View.html#)` Adds the view which serves as the label of the view represented by this info for accessibility purposes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds the view which serves as the label of the view represented by this info for accessibility purposes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addChild Adds a virtual child which is a descendant of the given `root`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addLabeledBy Adds the view which serves as the label of the view represented by this info for accessibility purposes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | addLabeledBy Adds the view which serves as the label of the view represented by this info for accessibility purposes. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#canOpenPopup()()` Gets if this node opens a popup or a dialog. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canOpenPopup Gets if this node opens a popup or a dialog. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](AccessibilityNodeInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#findAccessibilityNodeInfosByText(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`s by text. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](AccessibilityNodeInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#findAccessibilityNodeInfosByViewId(kotlin.String)(viewId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`s by the fully qualified view id's resource name where a fully qualified id is of the from "package:id/id_resource_name". |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#findFocus(kotlin.Int)(focus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the view that has the specified focus type. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](AccessibilityNodeInfo.md)!\>! | findAccessibilityNodeInfosByText Finds AccessibilityNodeInfos by text. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](AccessibilityNodeInfo.md)!\>! | findAccessibilityNodeInfosByViewId Finds AccessibilityNodeInfos by the fully qualified view id's resource name where a fully qualified id is of the from "package:id/id_resource_name". |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | findFocus Find the view that has the specified focus type. |
 | --- | --- |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#focusSearch(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Searches for the nearest view in the specified direction that can take the input focus. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo.AccessibilityAction](../android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getActionList()()` Gets the actions that can be performed on the node. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getActions()()` Gets the actions that can be performed on the node. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | focusSearch Searches for the nearest view in the specified direction that can take the input focus. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo.AccessibilityAction](../android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.md)!\>! | getActionList Gets the actions that can be performed on the node. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActions Gets the actions that can be performed on the node. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getAvailableExtraData()()` Get the extra data available for this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getBoundsInParent(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Gets the node bounds in the viewParent's coordinates. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getBoundsInScreen(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Gets the node bounds in screen coordinates. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableExtraData Get the extra data available for this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getBoundsInParent Gets the node bounds in the viewParent's coordinates. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getBoundsInScreen Gets the node bounds in screen coordinates. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getBoundsInWindow(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Gets the node bounds in window coordinates. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChecked()()` Gets the checked state of this node. |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChild(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the child at given index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getBoundsInWindow Gets the node bounds in window coordinates. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getChecked Gets the checked state of this node. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getChild Get the child at given index. |
 | --- | --- |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChild(kotlin.Int,%20kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the child at given index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChildCount()()` Gets the number of children. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getClassName()()` Gets the class this node comes from. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | getChild Get the child at given index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getChildCount Gets the number of children. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getClassName Gets the class this node comes from. |
 | --- | --- |
-| open [AccessibilityNodeInfo.CollectionInfo](../android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getCollectionInfo()()` Gets the collection info if the node is a collection. |
-| open [AccessibilityNodeInfo.CollectionItemInfo](../android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getCollectionItemInfo()()` Gets the collection item info if the node is a collection item. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getContainerTitle()()` Returns the container title. |
+| open [AccessibilityNodeInfo.CollectionInfo](../android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.md)! | getCollectionInfo Gets the collection info if the node is a collection. |
+| open [AccessibilityNodeInfo.CollectionItemInfo](../android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.md)! | getCollectionItemInfo Gets the collection item info if the node is a collection item. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getContainerTitle Returns the container title. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getContentDescription()()` Gets the content description of this node. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getDrawingOrder()()` Get the drawing order of the view corresponding it this node. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getError()()` Gets the error text of this node. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getContentDescription Gets the content description of this node. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDrawingOrder Get the drawing order of the view corresponding it this node. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getError Gets the error text of this node. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExpandedState()()` Gets the expanded state for this node. |
-| open [AccessibilityNodeInfo.ExtraRenderingInfo](../android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtraRenderingInfo()()` Gets the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo` if the node is meant to be refreshed with extra data to examine rendering related accessibility issues. |
-| open [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtras()()` Gets an optional bundle with extra data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExpandedState Gets the expanded state for this node. |
+| open [AccessibilityNodeInfo.ExtraRenderingInfo](../android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo.md)? | getExtraRenderingInfo Gets the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo` if the node is meant to be refreshed with extra data to examine rendering related accessibility issues. |
+| open [Bundle](../android.os/Bundle.md)! | getExtras Gets an optional bundle with extra data. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getHintText()()` Gets the hint text of this node. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getInputType()()` Gets the input type of the source as defined by `https://developer.android.com/reference/kotlin/android/text/InputType.html#`. |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabelFor()()` Gets the node info for which the view represented by this info serves as a label for accessibility purposes. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getHintText Gets the hint text of this node. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInputType Gets the input type of the source as defined by `https://developer.android.com/reference/kotlin/android/text/InputType.html#`. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getLabelFor Gets the node info for which the view represented by this info serves as a label for accessibility purposes. |
 | --- | --- |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledBy()()` Gets the node info which serves as the label of the view represented by this info for accessibility purposes. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](AccessibilityNodeInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledByList()()` Gets the list of node infos which serve as the labels of the view represented by this info for accessibility purposes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLiveRegion()()` Gets the node's live region mode. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getLabeledBy Gets the node info which serves as the label of the view represented by this info for accessibility purposes. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo](AccessibilityNodeInfo.md)!\> | getLabeledByList Gets the list of node infos which serve as the labels of the view represented by this info for accessibility purposes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLiveRegion Gets the node's live region mode. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getMaxTextLength()()` Returns the maximum text length for this node. |
-| open [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getMinDurationBetweenContentChanges()()` Gets the minimum time duration between two content change events. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getMovementGranularities()()` Gets the movement granularities for traversing the text of this node. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxTextLength Returns the maximum text length for this node. |
+| open [Duration](../java.time/Duration.md) | getMinDurationBetweenContentChanges Gets the minimum time duration between two content change events. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMovementGranularities Gets the movement granularities for traversing the text of this node. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getPackageName()()` Gets the package this node comes from. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getPaneTitle()()` Get the title of the pane represented by this node. |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent()()` Gets the parent. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getPackageName Gets the package this node comes from. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getPaneTitle Get the title of the pane represented by this node. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getParent Gets the parent. |
 | --- | --- |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent(kotlin.Int)(prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the parent. |
-| open [AccessibilityNodeInfo.RangeInfo](../android/view/accessibility/AccessibilityNodeInfo.RangeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getRangeInfo()()` Gets the range info if this node is a range. |
-| open [AccessibilityNodeInfo.Selection](../android/view/accessibility/AccessibilityNodeInfo.Selection.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getSelection()()` Gets the extended selection, which is a representation of selection that spans multiple nodes that exist within the subtree of the node defining selection. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | getParent Gets the parent. |
+| open [AccessibilityNodeInfo.RangeInfo](../android/view/accessibility/AccessibilityNodeInfo.RangeInfo.md)! | getRangeInfo Gets the range info if this node is a range. |
+| open [AccessibilityNodeInfo.Selection](../android/view/accessibility/AccessibilityNodeInfo.Selection.md)? | getSelection Gets the extended selection, which is a representation of selection that spans multiple nodes that exist within the subtree of the node defining selection. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getStateDescription()()` Get the state description of this node. |
-| open [AccessibilityNodeInfo.StructuredDataInfo](../android/view/accessibility/AccessibilityNodeInfo.StructuredDataInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getStructuredDataInfo()()` Gets additional structured data properties of this node. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getSupplementalDescription()()` Gets the supplemental description of this node. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getStateDescription Get the state description of this node. |
+| open [AccessibilityNodeInfo.StructuredDataInfo](../android/view/accessibility/AccessibilityNodeInfo.StructuredDataInfo.md)? | getStructuredDataInfo Gets additional structured data properties of this node. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSupplementalDescription Gets the supplemental description of this node. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getText()()` Gets the text of this node. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTextSelectionEnd()()` Gets the text selection end if text is selected. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTextSelectionStart()()` Gets the text selection start or the cursor position. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getText Gets the text of this node. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTextSelectionEnd Gets the text selection end if text is selected. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTextSelectionStart Gets the text selection start or the cursor position. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTooltipText()()` Gets the tooltip text of this node. |
-| open [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTouchDelegateInfo()()` Get the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` for touch delegate behavior with the represented view. |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTraversalAfter()()` Gets the node after which this one is visited in accessibility traversal. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTooltipText Gets the tooltip text of this node. |
+| open [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md)? | getTouchDelegateInfo Get the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` for touch delegate behavior with the represented view. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getTraversalAfter Gets the node after which this one is visited in accessibility traversal. |
 | --- | --- |
-| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTraversalBefore()()` Gets the node before which this one is visited during traversal. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getUniqueId()()` Gets the unique id of the node. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getViewIdResourceName()()` Gets the fully qualified resource name of the source view's id. |
+| open [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getTraversalBefore Gets the node before which this one is visited during traversal. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getUniqueId Gets the unique id of the node. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getViewIdResourceName Gets the fully qualified resource name of the source view's id. |
 | --- | --- |
-| open [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getWindow()()` Gets the window to which this node belongs. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getWindowId()()` Returns the id of the window that created this node. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#hasRequestInitialAccessibilityFocus()()` Gets whether the node has `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setRequestInitialAccessibilityFocus(kotlin.Boolean)`. |
+| open [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | getWindow Gets the window to which this node belongs. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWindowId Returns the id of the window that created this node. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasRequestInitialAccessibilityFocus Gets whether the node has setRequestInitialAccessibilityFocus. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#hashCode()()` Returns a hash code value for the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isAccessibilityDataSensitive()()` Gets if the node's accessibility data is considered sensitive. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isAccessibilityFocused()()` Gets whether this node is accessibility focused. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAccessibilityDataSensitive Gets if the node's accessibility data is considered sensitive. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAccessibilityFocused Gets whether this node is accessibility focused. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()()` Gets whether this node is checkable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isChecked()()` Gets whether this node is checked. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isClickable()()` Gets whether this node is clickable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCheckable Gets whether this node is checkable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isChecked Gets whether this node is checked. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isClickable Gets whether this node is clickable. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isContentInvalid()()` Gets if the content of this node is invalid. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isContextClickable()()` Gets whether this node is context clickable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isDismissable()()` Gets if the node can be dismissed. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isContentInvalid Gets if the content of this node is invalid. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isContextClickable Gets whether this node is context clickable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDismissable Gets if the node can be dismissed. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isEditable()()` Gets if the node is editable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isEnabled()()` Gets whether this node is enabled. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFieldRequired()()` Gets whether a node representing a form field requires input or selection. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEditable Gets if the node is editable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnabled Gets whether this node is enabled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFieldRequired Gets whether a node representing a form field requires input or selection. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFocusable()()` Gets whether this node is focusable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFocused()()` Gets whether this node is focused. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isGranularScrollingSupported()()` Gets if the node supports granular scrolling. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFocusable Gets whether this node is focusable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFocused Gets whether this node is focused. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isGranularScrollingSupported Gets if the node supports granular scrolling. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isHeading()()` Returns whether node represents a heading. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isImportantForAccessibility()()` Returns whether the node originates from a view considered important for accessibility. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isLongClickable()()` Gets whether this node is long clickable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isHeading Returns whether node represents a heading. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isImportantForAccessibility Returns whether the node originates from a view considered important for accessibility. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLongClickable Gets whether this node is long clickable. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isMultiLine()()` Gets if the node is a multi line editable text. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isPassword()()` Gets whether this node is a password. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isScreenReaderFocusable()()` Returns whether the node is explicitly marked as a focusable unit by a screen reader. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMultiLine Gets if the node is a multi line editable text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPassword Gets whether this node is a password. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isScreenReaderFocusable Returns whether the node is explicitly marked as a focusable unit by a screen reader. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isScrollable()()` Gets if the node is scrollable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isSelected()()` Gets whether this node is selected. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isShowingHintText()()` Returns whether the node's text represents a hint for the user to enter text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isScrollable Gets if the node is scrollable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSelected Gets whether this node is selected. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isShowingHintText Returns whether the node's text represents a hint for the user to enter text. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isTextEntryKey()()` Returns whether node represents a text entry key that is part of a keyboard or keypad. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isTextSelectable()()` Gets if the node has selectable text. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isVisibleToUser()()` Gets whether this node is visible to the user. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTextEntryKey Returns whether node represents a text entry key that is part of a keyboard or keypad. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTextSelectable Gets if the node has selectable text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVisibleToUser Gets whether this node is visible to the user. |
 | --- | --- |
-| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#obtain()()` Instantiates a new AccessibilityNodeInfo. |
-| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#obtain(android.view.accessibility.AccessibilityNodeInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#!)` Instantiates a new AccessibilityNodeInfo initialized from the given `info`. |
-| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#obtain(android.view.View)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Returns a cached instance if such is available otherwise a new one and sets the source. |
+| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | obtain Instantiates a new AccessibilityNodeInfo. |
+| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | obtain Instantiates a new AccessibilityNodeInfo initialized from the given `info`. |
+| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | obtain Returns a cached instance if such is available otherwise a new one and sets the source. |
 | --- | --- |
-| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#obtain(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a cached instance if such is available otherwise a new one and sets the source. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#performAction(kotlin.Int)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Performs an action on the node. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#performAction(kotlin.Int,%20android.os.Bundle)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, arguments: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Performs an action on the node. |
+| open static [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | obtain Returns a cached instance if such is available otherwise a new one and sets the source. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performAction Performs an action on the node. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performAction Performs an action on the node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#recycle()()` Would previously return an instance back to be reused. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refresh()()` Refreshes this info with the latest state of the view it represents. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)(extraDataKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Refreshes this info with the latest state of the view it represents, and request new data be added by the View. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | recycle Would previously return an instance back to be reused. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | refresh Refreshes this info with the latest state of the view it represents. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | refreshWithExtraData Refreshes this info with the latest state of the view it represents, and request new data be added by the View. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeAction(android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction)(action: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction!)` Removes an action that can be performed on the node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeAction(kotlin.Int)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes an action that can be performed on the node. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeChild(android.view.View)(child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Removes a child. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeAction Removes an action that can be performed on the node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | removeAction Removes an action that can be performed on the node. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeChild Removes a child. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeChild(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a virtual child which is a descendant of the given `root`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeLabeledBy(android.view.View)(label: https://developer.android.com/reference/kotlin/android/view/View.html#)` Removes a label. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeLabeledBy(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes a label which is a virtual descendant of the given `root`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeChild Removes a virtual child which is a descendant of the given `root`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeLabeledBy Removes a label. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeLabeledBy Removes a label which is a virtual descendant of the given `root`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setAccessibilityDataSensitive(kotlin.Boolean)(accessibilityDataSensitive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node's accessibility data is considered sensitive. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setAccessibilityFocused(kotlin.Boolean)(focused: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is accessibility focused. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setAvailableExtraData(kotlin.collections.MutableList)(extraDataKeys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Set the extra data available for this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAccessibilityDataSensitive Sets whether this node's accessibility data is considered sensitive. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAccessibilityFocused Sets whether this node is accessibility focused. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAvailableExtraData Set the extra data available for this node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setBoundsInParent(android.graphics.Rect)(bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Sets the node bounds in the viewParent's coordinates. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setBoundsInScreen(android.graphics.Rect)(bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Sets the node bounds in screen coordinates. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setBoundsInWindow(android.graphics.Rect)(bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Sets the node bounds in window coordinates. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBoundsInParent Sets the node bounds in the viewParent's coordinates. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBoundsInScreen Sets the node bounds in screen coordinates. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBoundsInWindow Sets the node bounds in window coordinates. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setCanOpenPopup(kotlin.Boolean)(opensPopup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if this node opens a popup or a dialog. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setCheckable(kotlin.Boolean)(checkable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is checkable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setChecked(kotlin.Boolean)(checked: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is checked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCanOpenPopup Sets if this node opens a popup or a dialog. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCheckable Sets whether this node is checkable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setChecked Sets whether this node is checked. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setChecked(kotlin.Int)(checked: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the checked state of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setClassName(kotlin.CharSequence)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the class this node comes from. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setClickable(kotlin.Boolean)(clickable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is clickable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setChecked Sets the checked state of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setClassName Sets the class this node comes from. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setClickable Sets whether this node is clickable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setCollectionInfo(android.view.accessibility.AccessibilityNodeInfo.CollectionInfo)(collectionInfo: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo!)` Sets the collection info if the node is a collection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setCollectionItemInfo(android.view.accessibility.AccessibilityNodeInfo.CollectionItemInfo)(collectionItemInfo: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo!)` Sets the collection item info if the node is a collection item. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContainerTitle(kotlin.CharSequence)(containerTitle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the container title for app-developer-defined container which can be any type of ViewGroup or layout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCollectionInfo Sets the collection info if the node is a collection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCollectionItemInfo Sets the collection item info if the node is a collection item. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContainerTitle Sets the container title for app-developer-defined container which can be any type of ViewGroup or layout. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContentDescription(kotlin.CharSequence)(contentDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the content description of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContentInvalid(kotlin.Boolean)(contentInvalid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if the content of this node is invalid. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContextClickable(kotlin.Boolean)(contextClickable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is context clickable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentDescription Sets the content description of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentInvalid Sets if the content of this node is invalid. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContextClickable Sets whether this node is context clickable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setDismissable(kotlin.Boolean)(dismissable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if the node can be dismissed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setDrawingOrder(kotlin.Int)(drawingOrderInParent: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the drawing order of the view corresponding it this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setEditable(kotlin.Boolean)(editable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is editable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDismissable Sets if the node can be dismissed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDrawingOrder Set the drawing order of the view corresponding it this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEditable Sets whether this node is editable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is enabled. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setError(kotlin.CharSequence)(error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the error text of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setExpandedState(kotlin.Int)(state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the expanded state of the node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEnabled Sets whether this node is enabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setError Sets the error text of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExpandedState Sets the expanded state of the node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setExtraRenderingInfo(android.view.accessibility.AccessibilityNodeInfo.ExtraRenderingInfo)(extraRenderingInfo: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo?)` Sets the extra rendering info, `extraRenderingInfo, if the node is meant to be refreshed with extra data. ` `` Note: Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService. `` ` ` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setFieldRequired(kotlin.Boolean)(required: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether `this` node represents a form field that requires input or selection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setFocusable(kotlin.Boolean)(focusable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is focusable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExtraRenderingInfo Sets the extra rendering info, `extraRenderingInfo, if the node is meant to be refreshed with extra data. ` `` Note: Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService. `` ` ` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFieldRequired Sets whether `this` node represents a form field that requires input or selection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFocusable Sets whether this node is focusable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setFocused(kotlin.Boolean)(focused: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is focused. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setGranularScrollingSupported(kotlin.Boolean)(granularScrollingSupported: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if the node supports granular scrolling. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setHeading(kotlin.Boolean)(isHeading: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the node represents a heading. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFocused Sets whether this node is focused. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setGranularScrollingSupported Sets if the node supports granular scrolling. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHeading Sets whether the node represents a heading. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setHintText(kotlin.CharSequence)(hintText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the hint text of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setImportantForAccessibility(kotlin.Boolean)(important: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the node is considered important for accessibility. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setInputType(kotlin.Int)(inputType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the input type of the source as defined by `https://developer.android.com/reference/kotlin/android/text/InputType.html#`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setHintText Sets the hint text of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setImportantForAccessibility Sets whether the node is considered important for accessibility. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInputType Sets the input type of the source as defined by `https://developer.android.com/reference/kotlin/android/text/InputType.html#`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setLabelFor(android.view.View)(labeled: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the view for which the view represented by this info serves as a label for accessibility purposes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setLabelFor(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the view for which the view represented by this info serves as a label for accessibility purposes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setLabeledBy(android.view.View)(label: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the view which serves as the label of the view represented by this info for accessibility purposes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLabelFor Sets the view for which the view represented by this info serves as a label for accessibility purposes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLabelFor Sets the view for which the view represented by this info serves as a label for accessibility purposes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLabeledBy Sets the view which serves as the label of the view represented by this info for accessibility purposes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setLabeledBy(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the view which serves as the label of the view represented by this info for accessibility purposes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setLiveRegion(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the node's live region mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setLongClickable(kotlin.Boolean)(longClickable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is long clickable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLabeledBy Sets the view which serves as the label of the view represented by this info for accessibility purposes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLiveRegion Sets the node's live region mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLongClickable Sets whether this node is long clickable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMaxTextLength(kotlin.Int)(max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the maximum text length, or -1 for no limit. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMinDurationBetweenContentChanges(java.time.Duration)(duration: https://developer.android.com/reference/kotlin/java/time/Duration.html#)` Sets the minimum time duration between two content change events, which is used in throttling content change events in accessibility services. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMovementGranularities(kotlin.Int)(granularities: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the movement granularities for traversing the text of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMaxTextLength Sets the maximum text length, or -1 for no limit. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMinDurationBetweenContentChanges Sets the minimum time duration between two content change events, which is used in throttling content change events in accessibility services. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMovementGranularities Sets the movement granularities for traversing the text of this node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMultiLine(kotlin.Boolean)(multiLine: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if the node is a multi line editable text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setPackageName(kotlin.CharSequence)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the package this node comes from. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setPaneTitle(kotlin.CharSequence)(paneTitle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` If this node represents a visually distinct region of the screen that may update separately from the rest of the window, it is considered a pane. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMultiLine Sets if the node is a multi line editable text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPackageName Sets the package this node comes from. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPaneTitle If this node represents a visually distinct region of the screen that may update separately from the rest of the window, it is considered a pane. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setParent(android.view.View)(parent: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the parent. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setParent(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the parent to be a virtual descendant of the given `root`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setPassword(kotlin.Boolean)(password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is a password. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setParent Sets the parent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setParent Sets the parent to be a virtual descendant of the given `root`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPassword Sets whether this node is a password. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setQueryFromAppProcessEnabled(android.view.View,%20kotlin.Boolean)(view: https://developer.android.com/reference/kotlin/android/view/View.html#, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Connects this node to the View's root so that operations on this node can query the entire `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` tree and perform accessibility actions on nodes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setRangeInfo(android.view.accessibility.AccessibilityNodeInfo.RangeInfo)(rangeInfo: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.RangeInfo!)` Sets the range info if this node is a range. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setRequestInitialAccessibilityFocus(kotlin.Boolean)(requestInitialAccessibilityFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the node has requested initial accessibility focus. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setQueryFromAppProcessEnabled Connects this node to the View's root so that operations on this node can query the entire AccessibilityNodeInfo tree and perform accessibility actions on nodes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRangeInfo Sets the range info if this node is a range. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRequestInitialAccessibilityFocus Sets whether the node has requested initial accessibility focus. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setScreenReaderFocusable(kotlin.Boolean)(screenReaderFocusable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the node should be considered a focusable unit by a screen reader. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setScrollable(kotlin.Boolean)(scrollable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if the node is scrollable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSelected(kotlin.Boolean)(selected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is selected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setScreenReaderFocusable Sets whether the node should be considered a focusable unit by a screen reader. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setScrollable Sets if the node is scrollable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSelected Sets whether this node is selected. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSelection(android.view.accessibility.AccessibilityNodeInfo.Selection)(selection: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.Selection?)` Sets the extended selection, which is a representation of selection that spans multiple nodes that exist within the subtree of the node defining selection. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setShowingHintText(kotlin.Boolean)(showingHintText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the node's text represents a hint for the user to enter text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSource(android.view.View)(source: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSelection Sets the extended selection, which is a representation of selection that spans multiple nodes that exist within the subtree of the node defining selection. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setShowingHintText Sets whether the node's text represents a hint for the user to enter text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSource Sets the source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSource(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the source to be a virtual descendant of the given `root`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setStateDescription(kotlin.CharSequence)(stateDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the state description of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setStructuredDataInfo(android.view.accessibility.AccessibilityNodeInfo.StructuredDataInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.StructuredDataInfo?)` Sets additional structured data properties of this node, such as for a mathematical expression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSource Sets the source to be a virtual descendant of the given `root`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStateDescription Sets the state description of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStructuredDataInfo Sets additional structured data properties of this node, such as for a mathematical expression. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSupplementalDescription(kotlin.CharSequence)(supplementalDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the supplemental description of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setText(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Sets the text of this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTextEntryKey(kotlin.Boolean)(isTextEntryKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the node represents a text entry key that is part of a keyboard or keypad. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSupplementalDescription Sets the supplemental description of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setText Sets the text of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTextEntryKey Sets whether the node represents a text entry key that is part of a keyboard or keypad. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTextSelectable(kotlin.Boolean)(selectableText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets if the node has selectable text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTextSelection(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the text selection start and end. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTooltipText(kotlin.CharSequence)(tooltipText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the tooltip text of this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTextSelectable Sets if the node has selectable text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTextSelection Sets the text selection start and end. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTooltipText Sets the tooltip text of this node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTouchDelegateInfo(android.view.accessibility.AccessibilityNodeInfo.TouchDelegateInfo)(delegatedInfo: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo)` Set touch delegate info if the represented view has a `https://developer.android.com/reference/kotlin/android/view/TouchDelegate.html#`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalAfter(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the view whose node is visited after this one in accessibility traversal. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalAfter(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the node after which this one is visited in accessibility traversal. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTouchDelegateInfo Set touch delegate info if the represented view has a `https://developer.android.com/reference/kotlin/android/view/TouchDelegate.html#`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTraversalAfter Sets the view whose node is visited after this one in accessibility traversal. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTraversalAfter Sets the node after which this one is visited in accessibility traversal. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalBefore(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the view before whose node this one should be visited during traversal. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalBefore(android.view.View,%20kotlin.Int)(root: https://developer.android.com/reference/kotlin/android/view/View.html#!, virtualDescendantId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the node before which this one is visited during traversal. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setUniqueId(kotlin.String)(uniqueId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Sets the unique id to act as a key to identify the node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTraversalBefore Sets the view before whose node this one should be visited during traversal. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTraversalBefore Sets the node before which this one is visited during traversal. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUniqueId Sets the unique id to act as a key to identify the node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setViewIdResourceName(kotlin.String)(viewIdResName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the fully qualified resource name of the source view's id. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setVisibleToUser(kotlin.Boolean)(visibleToUser: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this node is visible to the user. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#toString()()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setViewIdResourceName Sets the fully qualified resource name of the source view's id. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVisibleToUser Sets whether this node is visible to the user. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -658,7 +658,7 @@ This argument should not be used with the following scroll actions, which don't 
 
 <br />
 
-Views that support this argument should set `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setGranularScrollingSupported(kotlin.Boolean)` to true. Clients should use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isGranularScrollingSupported()` to check if granular scrolling is supported.
+Views that support this argument should set setGranularScrollingSupported to true. Clients should use isGranularScrollingSupported to check if granular scrolling is supported.
 
  Value: "android.view.accessibility.action.ARGUMENT_SCROLL_AMOUNT_FLOAT"
 
@@ -915,8 +915,8 @@ Action that requests to go to the next entity in this node's text at a given mov
 
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMovementGranularities(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getMovementGranularities()`
+- setMovementGranularities
+- getMovementGranularities
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MOVEMENT_GRANULARITY_CHARACTER:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MOVEMENT_GRANULARITY_WORD:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MOVEMENT_GRANULARITY_LINE:kotlin.Int`
@@ -985,8 +985,8 @@ Action that requests to go to the previous entity in this node's text at a given
 
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMovementGranularities(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getMovementGranularities()`
+- setMovementGranularities
+- getMovementGranularities
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MOVEMENT_GRANULARITY_CHARACTER:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MOVEMENT_GRANULARITY_WORD:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MOVEMENT_GRANULARITY_LINE:kotlin.Int`
@@ -1148,8 +1148,8 @@ Expanded state for a collapsed expandable element.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExpandedState()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setExpandedState(kotlin.Int)`
+- getExpandedState
+- setExpandedState
 
 ### EXPANDED_STATE_FULL
 
@@ -1165,8 +1165,8 @@ Expanded state for a expanded expandable element that cannot be expanded further
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExpandedState()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setExpandedState(kotlin.Int)`
+- getExpandedState
+- setExpandedState
 
 ### EXPANDED_STATE_PARTIAL
 
@@ -1182,8 +1182,8 @@ Expanded state for an expanded expandable element that can still be expanded fur
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExpandedState()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setExpandedState(kotlin.Int)`
+- getExpandedState
+- setExpandedState
 
 ### EXPANDED_STATE_UNDEFINED
 
@@ -1199,8 +1199,8 @@ Expanded state for a non-expandable element
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExpandedState()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setExpandedState(kotlin.Int)`
+- getExpandedState
+- setExpandedState
 
 ### EXTRA_DATA_RENDERING_INFO_KEY
 
@@ -1210,15 +1210,15 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DATA_RENDERING_INFO_KEY: String
 ```
 
-Key used to request extra data for the rendering information. The key requests that a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo` be added to this info. This request is made with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)` without argument.
+Key used to request extra data for the rendering information. The key requests that a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo` be added to this info. This request is made with refreshWithExtraData without argument.
 
-The data can be retrieved from the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo` returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtraRenderingInfo()` using `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo#getLayoutSize()`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo#getTextSizeInPx()` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo#getTextSizeUnit()`. For layout params, it is supported by both `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` and `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#`. For text size and unit, it is only supported by `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
+The data can be retrieved from the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo` returned by getExtraRenderingInfo using getLayoutSize, getTextSizeInPx and getTextSizeUnit. For layout params, it is supported by both `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` and `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#`. For text size and unit, it is only supported by `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
 
  Value: "android.view.accessibility.extra.DATA_RENDERING_INFO_KEY"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`
+- refreshWithExtraData
 
 ### EXTRA_DATA_REQUEST_LAYOUT_BASED_ACTIONS_KEY
 
@@ -1228,21 +1228,21 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DATA_REQUEST_LAYOUT_BASED_ACTIONS_KEY: String
 ```
 
-Key used to request that the node source re-evaluate and update this node's layout-dependent actions. This request is made with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)` and takes no arguments.
+Key used to request that the node source re-evaluate and update this node's layout-dependent actions. This request is made with refreshWithExtraData and takes no arguments.
 
 Some actions may depend on the on-screen layout of a node. In complex or dynamic UIs, it may be difficult for a source to determine if a node is truly actionable without more intensive inspection. For example, a node may be misreported as clickable despite being occluded, requiring a hit-test to confirm the availability of the action.
 
-Using this key requests that the source perform a more intensive, layout-based analysis to determine which actions are available to the user. After this request, the source will update the actions and related properties of this node. For example, for clickability, this may result in changes to the value returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isClickable()` and the presence of `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction#ACTION_CLICK:android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction` in the node's `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getActionList()`.
+Using this key requests that the source perform a more intensive, layout-based analysis to determine which actions are available to the user. After this request, the source will update the actions and related properties of this node. For example, for clickability, this may result in changes to the value returned by isClickable and the presence of `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction#ACTION_CLICK:android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction` in the node's getActionList.
 
 This analysis can be computationally expensive and should only be requested when needed to resolve ambiguous or inaccurate actions.
 
-Providers may advertise that they support this request using `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setAvailableExtraData(kotlin.collections.MutableList)`. Services may check for support with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getAvailableExtraData()`.
+Providers may advertise that they support this request using setAvailableExtraData. Services may check for support with getAvailableExtraData.
 
  Value: "android.view.accessibility.extra.DATA_REQUEST_LAYOUT_BASED_ACTIONS_KEY"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`
+- refreshWithExtraData
 
 ### EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_LENGTH
 
@@ -1280,7 +1280,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX: String
 ```
 
-Integer argument specifying the start index of the requested text location data. Must be valid inside the CharSequence returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getText()`.
+Integer argument specifying the start index of the requested text location data. Must be valid inside the CharSequence returned by getText.
 
  Value: "android.view.accessibility.extra.DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX"
 
@@ -1296,11 +1296,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DATA_TEXT_CHARACTER_LOCATION_IN_WINDOW_KEY: String
 ```
 
-Key used to request and locate extra data for text character location in window coordinates. This key requests that an array of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#`s be added to the extras. This request is made with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`. The arguments taken by this request are two integers: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX:kotlin.String` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_LENGTH:kotlin.String`. The starting index must be valid inside the CharSequence returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getText()`, and the length must be positive.
+Key used to request and locate extra data for text character location in window coordinates. This key requests that an array of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#`s be added to the extras. This request is made with refreshWithExtraData. The arguments taken by this request are two integers: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX:kotlin.String` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_LENGTH:kotlin.String`. The starting index must be valid inside the CharSequence returned by getText, and the length must be positive.
 
-Providers may advertise that they support text characters in window coordinates using `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setAvailableExtraData(kotlin.collections.MutableList)`. Services may check if an implementation supports text characters in window coordinates with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getAvailableExtraData()`.
+Providers may advertise that they support text characters in window coordinates using setAvailableExtraData. Services may check if an implementation supports text characters in window coordinates with getAvailableExtraData.
 
-The data can be retrieved from the `Bundle` returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtras()` using this string as a key for `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getParcelableArray(kotlin.String,%20java.lang.Class)`. The `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` will be `null` for characters that either do not exist or are outside of the window bounds.
+The data can be retrieved from the `Bundle` returned by getExtras using this string as a key for getParcelableArray. The `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` will be `null` for characters that either do not exist or are outside of the window bounds.
 
 Note that character locations in window bounds are not modified by changes in display magnification.
 
@@ -1308,7 +1308,7 @@ Note that character locations in window bounds are not modified by changes in di
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`
+- refreshWithExtraData
 
 ### EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY
 
@@ -1318,9 +1318,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY: String
 ```
 
-Key used to request and locate extra data for text character location. This key requests that an array of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#`s be added to the extras. This request is made with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`. The arguments taken by this request are two integers: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX:kotlin.String` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_LENGTH:kotlin.String`. The starting index must be valid inside the CharSequence returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getText()`, and the length must be positive.
+Key used to request and locate extra data for text character location. This key requests that an array of `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#`s be added to the extras. This request is made with refreshWithExtraData. The arguments taken by this request are two integers: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_START_INDEX:kotlin.String` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_ARG_LENGTH:kotlin.String`. The starting index must be valid inside the CharSequence returned by getText, and the length must be positive.
 
-The data can be retrieved from the `Bundle` returned by `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtras()` using this string as a key for `https://developer.android.com/reference/kotlin/android/os/Bundle.html#getParcelableArray(kotlin.String,%20java.lang.Class)`. The `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` will be `null` for characters that either do not exist or are off the screen.
+The data can be retrieved from the `Bundle` returned by getExtras using this string as a key for getParcelableArray. The `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` will be `null` for characters that either do not exist or are off the screen.
 
 Note that character locations returned are modified by changes in display magnification.
 
@@ -1328,7 +1328,7 @@ Note that character locations returned are modified by changes in display magnif
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`
+- refreshWithExtraData
 
 ### FLAG_PREFETCH_ANCESTORS
 
@@ -1346,11 +1346,11 @@ Ancestors will be prefetched before siblings and descendants.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChild(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#getRootInActiveWindow(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityRecord#getSource(kotlin.Int)`
+- getChild
+- getParent
+- getRoot
+- getRootInActiveWindow
+- getSource
 
 ### FLAG_PREFETCH_DESCENDANTS_BREADTH_FIRST
 
@@ -1536,7 +1536,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityNodeInfo()
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`.
+Creates a new AccessibilityNodeInfo.
 
 ### AccessibilityNodeInfo
 
@@ -1546,7 +1546,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityNodeInfo(info: AccessibilityNodeInfo)
 ```
 
-Copy constructor. Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`, and this new instance is initialized from the given `info`.
+Copy constructor. Creates a new AccessibilityNodeInfo, and this new instance is initialized from the given `info`.
 
 | Parameters ||
 |---|---|
@@ -1560,7 +1560,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityNodeInfo(source: View)
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` with the given `source`.
+Creates a new AccessibilityNodeInfo with the given `source`.
 
 | Parameters ||
 |---|---|
@@ -1576,7 +1576,7 @@ AccessibilityNodeInfo(
     virtualDescendantId: Int)
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` with the given `source`.
+Creates a new AccessibilityNodeInfo with the given `source`.
 
 | Parameters ||
 |---|---|
@@ -1618,7 +1618,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun addAction(action: Int): Unit
 ```
 
-**Deprecated:** *This has been deprecated for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addAction(android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction)`*
+**Deprecated:** *This has been deprecated for addAction*
 
 Adds an action that can be performed on the node.
 
@@ -1735,7 +1735,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -1778,9 +1778,9 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun findAccessibilityNodeInfosByText(text: String!): MutableList<AccessibilityNodeInfo!>!
 ```
 
-Finds `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`s by text. The match is case insensitive containment. The search is relative to this info i.e. this info is the root of the traversed tree.
+Finds AccessibilityNodeInfos by text. The match is case insensitive containment. The search is relative to this info i.e. this info is the root of the traversed tree.
 
-**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)`, there is a limitation that this API won't be able to find the node for the view on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node.
+**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via setChildSurfacePackage, there is a limitation that this API won't be able to find the node for the view on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node.
 
 | Parameters ||
 |---|---|
@@ -1798,11 +1798,11 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun findAccessibilityNodeInfosByViewId(viewId: String): MutableList<AccessibilityNodeInfo!>!
 ```
 
-Finds `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#`s by the fully qualified view id's resource name where a fully qualified id is of the from "package:id/id_resource_name". For example, if the target application's package is "foo.bar" and the id resource name is "baz", the fully qualified resource id is "foo.bar:id/baz".
+Finds AccessibilityNodeInfos by the fully qualified view id's resource name where a fully qualified id is of the from "package:id/id_resource_name". For example, if the target application's package is "foo.bar" and the id resource name is "baz", the fully qualified resource id is "foo.bar:id/baz".
 
-**Note:** The primary usage of this API is for UI test automation and in order to report the fully qualified view id if an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` the client has to set the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REPORT_VIEW_IDS:kotlin.Int` flag when configuring the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`.
+**Note:** The primary usage of this API is for UI test automation and in order to report the fully qualified view id if an AccessibilityNodeInfo the client has to set the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REPORT_VIEW_IDS:kotlin.Int` flag when configuring the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`.
 
-**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)`, there is a limitation that this API won't be able to find the node for the view on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node.
+**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via setChildSurfacePackage, there is a limitation that this API won't be able to find the node for the view on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node.
 
 | Parameters ||
 |---|---|
@@ -1822,7 +1822,7 @@ open fun findFocus(focus: Int): AccessibilityNodeInfo!
 
 Find the view that has the specified focus type. The search starts from the view represented by this node info.
 
-**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)`, there is a limitation that this API won't be able to find the node for the view on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node. Or, use `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#findFocus(kotlin.Int)` for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FOCUS_ACCESSIBILITY:kotlin.Int` only since it has no such limitation.
+**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via setChildSurfacePackage, there is a limitation that this API won't be able to find the node for the view on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node. Or, use findFocus for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FOCUS_ACCESSIBILITY:kotlin.Int` only since it has no such limitation.
 
 | Parameters ||
 |---|---|
@@ -1847,7 +1847,7 @@ open fun focusSearch(direction: Int): AccessibilityNodeInfo!
 
 Searches for the nearest view in the specified direction that can take the input focus.
 
-**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#setChildSurfacePackage(android.view.SurfaceControlViewHost.SurfacePackage)`, there is a limitation that this API won't be able to find the node for the view in the specified direction on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node.
+**Note:** If this view hierarchy has a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` embedding another view hierarchy via setChildSurfacePackage, there is a limitation that this API won't be able to find the node for the view in the specified direction on the embedded view hierarchy. It's because views don't know about the embedded hierarchies. Instead, you could traverse all the children to find the node.
 
 | Parameters ||
 |---|---|
@@ -1876,7 +1876,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun getActions(): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getActionList()`.*
+**Deprecated:** *Use getActionList.*
 
 Gets the actions that can be performed on the node.
 
@@ -1911,7 +1911,7 @@ open fun getAvailableExtraData(): MutableList<String!>!
 
 Get the extra data available for this node.
 
-Some data that is useful for some accessibility services is expensive to compute, and would place undue overhead on apps to compute all the time. That data can be requested with `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`.
+Some data that is useful for some accessibility services is expensive to compute, and would place undue overhead on apps to compute all the time. That data can be requested with refreshWithExtraData.
 
 | Return ||
 |---|---|
@@ -1931,9 +1931,9 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun getBoundsInParent(outBounds: Rect!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getBoundsInScreen(android.graphics.Rect)` instead.*
+**Deprecated:** *Use getBoundsInScreen instead.*
 
-Gets the node bounds in the viewParent's coordinates. `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent()` does not represent the source's viewParent. Instead it represents the result of `https://developer.android.com/reference/kotlin/android/view/View.html#getParentForAccessibility()`, which returns the closest ancestor where `https://developer.android.com/reference/kotlin/android/view/View.html#isImportantForAccessibility()` is true. So this method is not reliable.
+Gets the node bounds in the viewParent's coordinates. getParent does not represent the source's viewParent. Instead it represents the result of getParentForAccessibility, which returns the closest ancestor where isImportantForAccessibility is true. So this method is not reliable.
 
 When magnification is enabled, the bounds in parent are also scaled up by magnification scale. For example, it returns Rect(20, 20, 200, 200) for original bounds Rect(10, 10, 100, 100), when the magnification scale is 2.
 
@@ -1987,7 +1987,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getChecked(): Int
 ```
 
-Gets the checked state of this node. This is only meaningful when `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()` returns `true`.
+Gets the checked state of this node. This is only meaningful when isCheckable returns `true`.
 
 | Return ||
 |---|---|
@@ -1995,9 +1995,9 @@ Gets the checked state of this node. This is only meaningful when `https://devel
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setCheckable(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setChecked(kotlin.Int)`
+- setCheckable
+- isCheckable
+- setChecked
 
 ### getChild
 
@@ -2019,7 +2019,7 @@ Get the child at given index.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setQueryFromAppProcessEnabled(android.view.View,%20kotlin.Boolean)`. |
+| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling setQueryFromAppProcessEnabled. |
 
 ### getChild
 
@@ -2034,7 +2034,7 @@ open fun getChild(
 
 Get the child at given index.
 
-See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent(kotlin.Int)` for a description of prefetching.
+See getParent for a description of prefetching.
 
 | Parameters ||
 |---|---|
@@ -2047,7 +2047,7 @@ See `https://developer.android.com/reference/kotlin/android/view/accessibility/A
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setQueryFromAppProcessEnabled(android.view.View,%20kotlin.Boolean)`. |
+| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling setQueryFromAppProcessEnabled. |
 
 ### getChildCount
 
@@ -2121,7 +2121,7 @@ Returns the container title.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContainerTitle(kotlin.CharSequence)`
+- setContainerTitle
 
 ### getContentDescription
 
@@ -2200,7 +2200,7 @@ Gets the `https://developer.android.com/reference/kotlin/android/view/accessibil
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_RENDERING_INFO_KEY:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#refreshWithExtraData(kotlin.String,%20android.os.Bundle)`
+- refreshWithExtraData
 
 ### getExtras
 
@@ -2255,7 +2255,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun getLabelFor(): AccessibilityNodeInfo!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledByList()` on the labeled node instead, since calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View)` or `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View,%20kotlin.Int)` on the labeled node do not automatically provide that node from this method.*
+**Deprecated:** *Use getLabeledByList on the labeled node instead, since calling addLabeledBy or addLabeledBy on the labeled node do not automatically provide that node from this method.*
 
 Gets the node info for which the view represented by this info serves as a label for accessibility purposes.
 
@@ -2272,7 +2272,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun getLabeledBy(): AccessibilityNodeInfo!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledByList()` instead.*
+**Deprecated:** *Use getLabeledByList instead.*
 
 Gets the node info which serves as the label of the view represented by this info for accessibility purposes.
 
@@ -2314,7 +2314,7 @@ It is the responsibility of the accessibility service to monitor `https://develo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#getAccessibilityLiveRegion()`
+- getAccessibilityLiveRegion
 
 ### getMaxTextLength
 
@@ -2332,7 +2332,7 @@ Returns the maximum text length for this node.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setMaxTextLength(kotlin.Int)`
+- setMaxTextLength
 
 ### getMinDurationBetweenContentChanges
 
@@ -2406,7 +2406,7 @@ Gets the parent.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setQueryFromAppProcessEnabled(android.view.View,%20kotlin.Boolean)`. |
+| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling setQueryFromAppProcessEnabled. |
 
 ### getParent
 
@@ -2418,7 +2418,7 @@ open fun getParent(prefetchingStrategy: Int): AccessibilityNodeInfo?
 
 Gets the parent.
 
-Use `prefetchingStrategy` to determine the types of nodes prefetched from the app if the requested node is not in the cache and must be retrieved by the app. The default strategy for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent()` is a combination of ancestor and sibling strategies. The app will prefetch until all nodes fulfilling the strategies are fetched, another node request is sent, or the maximum prefetch batch size of `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MAX_NUMBER_OF_PREFETCHED_NODES:kotlin.Int` nodes is reached. To prevent interruption by another request and to force prefetching of the max batch size, use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_UNINTERRUPTIBLE:kotlin.Int`.
+Use `prefetchingStrategy` to determine the types of nodes prefetched from the app if the requested node is not in the cache and must be retrieved by the app. The default strategy for getParent is a combination of ancestor and sibling strategies. The app will prefetch until all nodes fulfilling the strategies are fetched, another node request is sent, or the maximum prefetch batch size of `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#MAX_NUMBER_OF_PREFETCHED_NODES:kotlin.Int` nodes is reached. To prevent interruption by another request and to force prefetching of the max batch size, use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#FLAG_PREFETCH_UNINTERRUPTIBLE:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -2430,7 +2430,7 @@ Use `prefetchingStrategy` to determine the types of nodes prefetched from the ap
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setQueryFromAppProcessEnabled(android.view.View,%20kotlin.Boolean)`. |
+| `java.lang.IllegalStateException` | If called outside of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` and before calling setQueryFromAppProcessEnabled. |
 
 **See Also**
 
@@ -2465,7 +2465,7 @@ open fun getSelection(): AccessibilityNodeInfo.Selection?
 
 Gets the extended selection, which is a representation of selection that spans multiple nodes that exist within the subtree of the node defining selection.
 
-**Note:** Nodes that are candidates to contain a selection should return `true` from `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFocusable()` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFocused()`. The start and end `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.SelectionPosition`s of this `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.Selection` should exist within `this` node or its descendants.
+**Note:** Nodes that are candidates to contain a selection should return `true` from isFocusable and isFocused. The start and end `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.SelectionPosition`s of this `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.Selection` should exist within `this` node or its descendants.
 
 | Return ||
 |---|---|
@@ -2501,7 +2501,7 @@ Gets additional structured data properties of this node. This is only populated 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setStructuredDataInfo(android.view.accessibility.AccessibilityNodeInfo.StructuredDataInfo)`
+- setStructuredDataInfo
 
 ### getSupplementalDescription
 
@@ -2511,7 +2511,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getSupplementalDescription(): CharSequence?
 ```
 
-Gets the supplemental description of this node. A supplemental description provides brief supplemental information for this node, such as the purpose of the node when that purpose is not conveyed within its textual representation. For example, if a dropdown select has a purpose of setting font family, the supplemental description could be "font family". If this node has children, its supplemental description serves as additional information and is not intended to replace any existing information in the subtree. This is different from the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getContentDescription()` in that this description is purely supplemental while a content description may be used to replace a description for a node or its subtree that an assistive technology would otherwise compute based on other properties of the node and its descendants.
+Gets the supplemental description of this node. A supplemental description provides brief supplemental information for this node, such as the purpose of the node when that purpose is not conveyed within its textual representation. For example, if a dropdown select has a purpose of setting font family, the supplemental description could be "font family". If this node has children, its supplemental description serves as additional information and is not intended to replace any existing information in the subtree. This is different from the getContentDescription in that this description is purely supplemental while a content description may be used to replace a description for a node or its subtree that an assistive technology would otherwise compute based on other properties of the node and its descendants.
 
 | Return ||
 |---|---|
@@ -2519,8 +2519,8 @@ Gets the supplemental description of this node. A supplemental description provi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSupplementalDescription(kotlin.CharSequence)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getContentDescription()`
+- setSupplementalDescription
+- getContentDescription
 
 ### getText
 
@@ -2532,9 +2532,9 @@ open fun getText(): CharSequence!
 
 Gets the text of this node.
 
-**Note:** If the text contains `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#`s or `https://developer.android.com/reference/kotlin/android/text/style/URLSpan.html#`s, these spans will have been replaced with ones whose `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#onClick(android.view.View)` can be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. When called from a service, the `https://developer.android.com/reference/kotlin/android/view/View.html#` argument is ignored and the corresponding span will be found on the view that this `AccessibilityNodeInfo` represents and called with that view as its argument.
+**Note:** If the text contains `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#`s or `https://developer.android.com/reference/kotlin/android/text/style/URLSpan.html#`s, these spans will have been replaced with ones whose onClick can be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. When called from a service, the `https://developer.android.com/reference/kotlin/android/view/View.html#` argument is ignored and the corresponding span will be found on the view that this `AccessibilityNodeInfo` represents and called with that view as its argument.
 
-This treatment of `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#`s means that the text returned from this method may different slightly one passed to `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setText(kotlin.CharSequence)`, although they will be equivalent according to `https://developer.android.com/reference/kotlin/android/text/TextUtils.html#equals(kotlin.CharSequence,%20kotlin.CharSequence)`. The `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#onClick(android.view.View)` of any spans, however, will generally not work outside of an accessibility service.
+This treatment of `https://developer.android.com/reference/kotlin/android/text/style/ClickableSpan.html#`s means that the text returned from this method may different slightly one passed to setText, although they will be equivalent according to equals. The onClick of any spans, however, will generally not work outside of an accessibility service.
 
 | Return ||
 |---|---|
@@ -2550,7 +2550,7 @@ open fun getTextSelectionEnd(): Int
 
 Gets the text selection end if text is selected.
 
-If no text is selected, both this method and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTextSelectionStart()` return the same value: the current location of the cursor.
+If no text is selected, both this method and getTextSelectionStart return the same value: the current location of the cursor.
 
 | Return ||
 |---|---|
@@ -2566,7 +2566,7 @@ open fun getTextSelectionStart(): Int
 
 Gets the text selection start or the cursor position.
 
-If no text is selected, both this method and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTextSelectionEnd()` return the same value: the current location of the cursor.
+If no text is selected, both this method and getTextSelectionEnd return the same value: the current location of the cursor.
 
 | Return ||
 |---|---|
@@ -2594,7 +2594,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getTouchDelegateInfo(): AccessibilityNodeInfo.TouchDelegateInfo?
 ```
 
-Get the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` for touch delegate behavior with the represented view. It is possible for the same node to be pointed to by several regions. Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo#getRegionAt(kotlin.Int)` to get touch delegate target `https://developer.android.com/reference/kotlin/android/graphics/Region.html#`, and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo#getTargetForRegion(android.graphics.Region)` for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` from the given region.
+Get the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` for touch delegate behavior with the represented view. It is possible for the same node to be pointed to by several regions. Use getRegionAt to get touch delegate target `https://developer.android.com/reference/kotlin/android/graphics/Region.html#`, and getTargetForRegion for AccessibilityNodeInfo from the given region.
 
 | Return ||
 |---|---|
@@ -2616,8 +2616,8 @@ Gets the node after which this one is visited in accessibility traversal. A scre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalAfter(android.view.View)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalAfter(android.view.View,%20kotlin.Int)`
+- setTraversalAfter
+- setTraversalAfter
 
 ### getTraversalBefore
 
@@ -2635,8 +2635,8 @@ Gets the node before which this one is visited during traversal. A screen-reader
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalBefore(android.view.View)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setTraversalBefore(android.view.View,%20kotlin.Int)`
+- setTraversalBefore
+- setTraversalBefore
 
 ### getUniqueId
 
@@ -2662,7 +2662,7 @@ open fun getViewIdResourceName(): String!
 
 Gets the fully qualified resource name of the source view's id.
 
-**Note:** The primary usage of this API is for UI test automation and in order to report the source view id of an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` the client has to set the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REPORT_VIEW_IDS:kotlin.Int` flag when configuring the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`.
+**Note:** The primary usage of this API is for UI test automation and in order to report the source view id of an AccessibilityNodeInfo the client has to set the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REPORT_VIEW_IDS:kotlin.Int` flag when configuring the `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`.
 
 | Return ||
 |---|---|
@@ -2684,7 +2684,7 @@ Gets the window to which this node belongs.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#getWindows()`
+- getWindows
 
 ### getWindowId
 
@@ -2710,7 +2710,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun hasRequestInitialAccessibilityFocus(): Boolean
 ```
 
-Gets whether the node has `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setRequestInitialAccessibilityFocus(kotlin.Boolean)`.
+Gets whether the node has setRequestInitialAccessibilityFocus.
 
 | Return ||
 |---|---|
@@ -2729,8 +2729,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -2752,7 +2752,7 @@ Gets if the node's accessibility data is considered sensitive.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#isAccessibilityDataSensitive()`
+- isAccessibilityDataSensitive
 
 ### isAccessibilityFocused
 
@@ -2764,7 +2764,7 @@ open fun isAccessibilityFocused(): Boolean
 
 Gets whether this node is accessibility focused.
 
-This is distinct from `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFocused()`, which is used to track system focus. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#ACTION_ACCESSIBILITY_FOCUS:kotlin.Int` for details.
+This is distinct from isFocused, which is used to track system focus. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#ACTION_ACCESSIBILITY_FOCUS:kotlin.Int` for details.
 
 | Return ||
 |---|---|
@@ -2793,9 +2793,9 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun isChecked(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChecked()` instead.*
+**Deprecated:** *Use getChecked instead.*
 
-Gets whether this node is checked. This is only meaningful when `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()` returns `true`.
+Gets whether this node is checked. This is only meaningful when isCheckable returns `true`.
 
 | Return ||
 |---|---|
@@ -2909,7 +2909,7 @@ open fun isFocusable(): Boolean
 
 Gets whether this node is focusable.
 
-In the View system, this typically maps to `https://developer.android.com/reference/kotlin/android/view/View.html#isFocusable()`.
+In the View system, this typically maps to isFocusable.
 
 | Return ||
 |---|---|
@@ -2925,7 +2925,7 @@ open fun isFocused(): Boolean
 
 Gets whether this node is focused.
 
-This is distinct from `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isAccessibilityFocused()`, which is used by screen readers. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction#ACTION_ACCESSIBILITY_FOCUS:android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction` for details.
+This is distinct from isAccessibilityFocused, which is used by screen readers. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction#ACTION_ACCESSIBILITY_FOCUS:android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction` for details.
 
 | Return ||
 |---|---|
@@ -2955,7 +2955,7 @@ open fun isHeading(): Boolean
 
 Returns whether node represents a heading.
 
-**Note:** Returns `true` if either `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setHeading(kotlin.Boolean)` marks this node as a heading or if the node has a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo` that marks it as such, to accomodate apps that use the now-deprecated API.
+**Note:** Returns `true` if either setHeading marks this node as a heading or if the node has a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo` that marks it as such, to accomodate apps that use the now-deprecated API.
 
 | Return ||
 |---|---|
@@ -2977,7 +2977,7 @@ Returns whether the node originates from a view considered important for accessi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#isImportantForAccessibility()`
+- isImportantForAccessibility
 
 ### isLongClickable
 
@@ -3029,7 +3029,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun isScreenReaderFocusable(): Boolean
 ```
 
-Returns whether the node is explicitly marked as a focusable unit by a screen reader. Note that `false` indicates that it is not explicitly marked, not that the node is not a focusable unit. Screen readers should generally use other signals, such as `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isFocusable()`, or the presence of text in a node, to determine what should receive focus.
+Returns whether the node is explicitly marked as a focusable unit by a screen reader. Note that `false` indicates that it is not explicitly marked, not that the node is not a focusable unit. Screen readers should generally use other signals, such as isFocusable, or the presence of text in a node, to determine what should receive focus.
 
 | Return ||
 |---|---|
@@ -3037,7 +3037,7 @@ Returns whether the node is explicitly marked as a focusable unit by a screen re
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#isScreenReaderFocusable()`
+- isScreenReaderFocusable
 
 ### isScrollable
 
@@ -3114,7 +3114,7 @@ Services should use `https://developer.android.com/reference/kotlin/android/view
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isEditable()`
+- isEditable
 
 ### isVisibleToUser
 
@@ -3141,7 +3141,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open static fun obtain(): AccessibilityNodeInfo!
 ```
 
-**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo()` instead.*
+**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor AccessibilityNodeInfo instead.*
 
 Instantiates a new AccessibilityNodeInfo.
 
@@ -3158,7 +3158,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open static fun obtain(info: AccessibilityNodeInfo!): AccessibilityNodeInfo!
 ```
 
-**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo)` instead.*
+**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor AccessibilityNodeInfo instead.*
 
 Instantiates a new AccessibilityNodeInfo initialized from the given `info`.
 
@@ -3179,7 +3179,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open static fun obtain(source: View!): AccessibilityNodeInfo!
 ```
 
-**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo(android.view.View)` instead.*
+**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor AccessibilityNodeInfo instead.*
 
 Returns a cached instance if such is available otherwise a new one and sets the source.
 
@@ -3193,7 +3193,7 @@ Returns a cached instance if such is available otherwise a new one and sets the 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSource(android.view.View)`
+- setSource
 
 ### obtain
 
@@ -3207,7 +3207,7 @@ open static fun obtain(
 ): AccessibilityNodeInfo!
 ```
 
-**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#AccessibilityNodeInfo(android.view.View,%20kotlin.Int)` instead.*
+**Deprecated:** *Object pooling has been discontinued. Create a new instance using the constructor AccessibilityNodeInfo instead.*
 
 Returns a cached instance if such is available otherwise a new one and sets the source.
 
@@ -3222,7 +3222,7 @@ Returns a cached instance if such is available otherwise a new one and sets the 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setSource(android.view.View,%20kotlin.Int)`
+- setSource
 
 ### performAction
 
@@ -3318,7 +3318,7 @@ Refreshes this info with the latest state of the view it represents, and request
 
 | Parameters ||
 |---|---|
-| `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The extra data requested. Data that must be requested with this mechanism is generally expensive to retrieve, so should only be requested when needed. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_RENDERING_INFO_KEY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getAvailableExtraData()` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtraRenderingInfo()`. |
+| `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The extra data requested. Data that must be requested with this mechanism is generally expensive to retrieve, so should only be requested when needed. See `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_RENDERING_INFO_KEY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY:kotlin.String`, getAvailableExtraData and getExtraRenderingInfo. |
 | `args` | [Bundle](../android.os/Bundle.md)!: A bundle of arguments for the request. These depend on the particular request. |
 
 | Return ||
@@ -3358,7 +3358,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun removeAction(action: Int): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeAction(android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction)`*
+**Deprecated:** *Use removeAction*
 
 Removes an action that can be performed on the node. If the action was not already added to the node, calling this method has no effect.
 
@@ -3420,7 +3420,7 @@ Removes a virtual child which is a descendant of the given `root`. If the child 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addChild(android.view.View,%20kotlin.Int)`
+- addChild
 
 ### removeLabeledBy
 
@@ -3444,7 +3444,7 @@ Removes a label. If the label was not previously added to the node, calling this
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View)`
+- addLabeledBy
 
 ### removeLabeledBy
 
@@ -3470,7 +3470,7 @@ Removes a label which is a virtual descendant of the given `root`. If `virtualDe
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View,%20kotlin.Int)`
+- addLabeledBy
 
 ### setAccessibilityDataSensitive
 
@@ -3494,7 +3494,7 @@ Sets whether this node's accessibility data is considered sensitive.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setAccessibilityDataSensitive(kotlin.Int)`
+- setAccessibilityDataSensitive
 
 ### setAccessibilityFocused
 
@@ -3528,7 +3528,7 @@ open fun setAvailableExtraData(extraDataKeys: MutableList<String!>!): Unit
 
 Set the extra data available for this node.
 
-**Note:** When a `View` passes in a non-empty list, it promises that it will populate the node's extras with corresponding pieces of information in `https://developer.android.com/reference/kotlin/android/view/View.html#addExtraDataToAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo,%20kotlin.String,%20android.os.Bundle)`.
+**Note:** When a `View` passes in a non-empty list, it promises that it will populate the node's extras with corresponding pieces of information in addExtraDataToAccessibilityNodeInfo.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -3542,7 +3542,7 @@ Set the extra data available for this node.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getAvailableExtraData()`
+- getAvailableExtraData
 
 ### setBoundsInParent
 
@@ -3555,7 +3555,7 @@ open fun setBoundsInParent(bounds: Rect!): Unit
 
 **Deprecated:** *Accessibility services should not care about these bounds.*
 
-Sets the node bounds in the viewParent's coordinates. `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent()` does not represent the source's viewParent. Instead it represents the result of `https://developer.android.com/reference/kotlin/android/view/View.html#getParentForAccessibility()`, which returns the closest ancestor where `https://developer.android.com/reference/kotlin/android/view/View.html#isImportantForAccessibility()` is true. So this method is not reliable.
+Sets the node bounds in the viewParent's coordinates. getParent does not represent the source's viewParent. Instead it represents the result of getParentForAccessibility, which returns the closest ancestor where isImportantForAccessibility is true. So this method is not reliable.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -3652,9 +3652,9 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun setChecked(checked: Boolean): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setChecked(kotlin.Int)` instead.*
+**Deprecated:** *Use setChecked instead.*
 
-Sets whether this node is checked. This is only meaningful when `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()` returns `true`.
+Sets whether this node is checked. This is only meaningful when isCheckable returns `true`.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -3674,7 +3674,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun setChecked(checked: Int): Unit
 ```
 
-Sets the checked state of this node. This is only meaningful when `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()` returns `true`.
+Sets the checked state of this node. This is only meaningful when isCheckable returns `true`.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -3689,9 +3689,9 @@ Sets the checked state of this node. This is only meaningful when `https://devel
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setCheckable(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isCheckable()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChecked()`
+- setCheckable
+- isCheckable
+- getChecked
 
 ### setClassName
 
@@ -3773,7 +3773,7 @@ Sets the container title for app-developer-defined container which can be any ty
 
 Container title helps to assist in navigation across containers and other groups. For example, a screen reader may use this to determine where to put accessibility focus.
 
-Container title is different from pane title`https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setPaneTitle(kotlin.CharSequence)` which indicates that the node represents a window or activity.
+Container title is different from pane titlesetPaneTitle which indicates that the node represents a window or activity.
 
 Example: An app can set container titles on several non-modal menus, containing TextViews or ImageButtons that have content descriptions, text, etc. Screen readers can quickly switch accessibility focus among menus instead of child views. Other accessibility-services can easily find the menu.
 
@@ -4007,7 +4007,7 @@ Sets whether this node is focusable.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
-To mark a node as explicitly focusable for a screen reader, consider using `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setScreenReaderFocusable(kotlin.Boolean)` instead.
+To mark a node as explicitly focusable for a screen reader, consider using setScreenReaderFocusable instead.
 
 | Parameters ||
 |---|---|
@@ -4138,7 +4138,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun setLabelFor(labeled: View!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View)` on the labeled node instead, since `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledByList()` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledBy()` on the labeled node are not automatically populated when this method is used.*
+**Deprecated:** *Use addLabeledBy on the labeled node instead, since getLabeledByList and getLabeledBy on the labeled node are not automatically populated when this method is used.*
 
 Sets the view for which the view represented by this info serves as a label for accessibility purposes.
 
@@ -4158,7 +4158,7 @@ open fun setLabelFor(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View)` on the labeled node instead, since `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledByList()` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getLabeledBy()` on the labeled node are not automatically populated when this method is used.*
+**Deprecated:** *Use addLabeledBy on the labeled node instead, since getLabeledByList and getLabeledBy on the labeled node are not automatically populated when this method is used.*
 
 Sets the view for which the view represented by this info serves as a label for accessibility purposes. If `virtualDescendantId` is `https://developer.android.com/reference/kotlin/android/view/View.html#NO_ID:kotlin.Int` the root is set as the labeled.
 
@@ -4180,7 +4180,7 @@ Deprecated in [API level 36](https://developer.android.com/guide/topics/manifest
 open fun setLabeledBy(label: View!): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View)` or `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeLabeledBy(android.view.View)` instead.*
+**Deprecated:** *Use addLabeledBy or removeLabeledBy instead.*
 
 Sets the view which serves as the label of the view represented by this info for accessibility purposes.
 
@@ -4200,7 +4200,7 @@ open fun setLabeledBy(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#addLabeledBy(android.view.View,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#removeLabeledBy(android.view.View,%20kotlin.Int)` instead.*
+**Deprecated:** *Use addLabeledBy or removeLabeledBy instead.*
 
 Sets the view which serves as the label of the view represented by this info for accessibility purposes. If `virtualDescendantId` is `https://developer.android.com/reference/kotlin/android/view/View.html#NO_ID:kotlin.Int` the root is set as the label.
 
@@ -4231,7 +4231,7 @@ Sets the node's live region mode.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#setAccessibilityLiveRegion(kotlin.Int)`
+- setAccessibilityLiveRegion
 
 ### setLongClickable
 
@@ -4277,7 +4277,7 @@ Typically used to indicate that an editable text field has a limit on the number
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getMaxTextLength()`
+- getMaxTextLength
 
 ### setMinDurationBetweenContentChanges
 
@@ -4300,7 +4300,7 @@ Example UI elements that frequently update and may benefit from a duration are p
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#TYPE_WINDOW_CONTENT_CHANGED:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#getContentChangeTypes()`
+- getContentChangeTypes
 
 ### setMovementGranularities
 
@@ -4447,18 +4447,18 @@ open fun setQueryFromAppProcessEnabled(
 ): Unit
 ```
 
-Connects this node to the View's root so that operations on this node can query the entire `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` tree and perform accessibility actions on nodes.
+Connects this node to the View's root so that operations on this node can query the entire AccessibilityNodeInfo tree and perform accessibility actions on nodes.
 
-Testing or debugging tools should create this `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` node using `https://developer.android.com/reference/kotlin/android/view/View.html#createAccessibilityNodeInfo()` or `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeProvider` and call this method, then navigate and interact with the node tree by calling methods on the node. Calling this method more than once on the same node is a no-op. After calling this method, all nodes linked to this node (children, ancestors, etc.) are also queryable.
+Testing or debugging tools should create this AccessibilityNodeInfo node using createAccessibilityNodeInfo or AccessibilityNodeProvider and call this method, then navigate and interact with the node tree by calling methods on the node. Calling this method more than once on the same node is a no-op. After calling this method, all nodes linked to this node (children, ancestors, etc.) are also queryable.
 
 Here "query" refers to the following node operations:
-- check properties of this node (example: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isScrollable()`)
-- find and query children (example: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getChild(kotlin.Int)`)
-- find and query the parent (example: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent()`)
-- find focus (examples: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#findFocus(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#focusSearch(kotlin.Int)`)
-- find and query other nodes (example: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#findAccessibilityNodeInfosByText(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#findAccessibilityNodeInfosByViewId(kotlin.String)`)
-- perform actions (example: `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#performAction(kotlin.Int)`)
-- This is intended for short-lived inspections from testing or debugging tools in the app process, as operations on this node tree will only succeed as long as the associated view hierarchy remains attached to a window. `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#` objects can quickly become out of sync with their corresponding `https://developer.android.com/reference/kotlin/android/view/View.html#` objects; if you wish to inspect a changed or different view hierarchy then create a new node from any view in that hierarchy and call this method on that new node, instead of disabling \& re-enabling the connection on the previous node.
+- check properties of this node (example: isScrollable)
+- find and query children (example: getChild)
+- find and query the parent (example: getParent)
+- find focus (examples: findFocus, focusSearch)
+- find and query other nodes (example: findAccessibilityNodeInfosByText, findAccessibilityNodeInfosByViewId)
+- perform actions (example: performAction)
+- This is intended for short-lived inspections from testing or debugging tools in the app process, as operations on this node tree will only succeed as long as the associated view hierarchy remains attached to a window. AccessibilityNodeInfo objects can quickly become out of sync with their corresponding `https://developer.android.com/reference/kotlin/android/view/View.html#` objects; if you wish to inspect a changed or different view hierarchy then create a new node from any view in that hierarchy and call this method on that new node, instead of disabling \& re-enabling the connection on the previous node.
 
 | Parameters ||
 |---|---|
@@ -4495,7 +4495,7 @@ open fun setRequestInitialAccessibilityFocus(requestInitialAccessibilityFocus: 
 
 Sets whether the node has requested initial accessibility focus.
 
-If the node `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#hasRequestInitialAccessibilityFocus()`, this node would be one of candidates to be accessibility focused when the window appears.
+If the node hasRequestInitialAccessibilityFocus, this node would be one of candidates to be accessibility focused when the window appears.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -4577,7 +4577,7 @@ Sets the extended selection, which is a representation of selection that spans m
 
 **Note:** The start and end `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.SelectionPosition` of the provided `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.Selection` should be constructed with `this` node or a descendant of it.
 
-**Note:** `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setFocusable(kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setFocused(kotlin.Boolean)` should both be called with `true` before setting the selection in order to make `this` node a candidate to contain a selection.
+**Note:** setFocusable and setFocused should both be called with `true` before setting the selection in order to make `this` node a candidate to contain a selection.
 
 **Note:** Cannot be called from an AccessibilityService. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -4683,7 +4683,7 @@ Sets additional structured data properties of this node, such as for a mathemati
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getStructuredDataInfo()`
+- getStructuredDataInfo
 
 ### setSupplementalDescription
 
@@ -4693,7 +4693,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun setSupplementalDescription(supplementalDescription: CharSequence?): Unit
 ```
 
-Sets the supplemental description of this node. A supplemental description provides brief supplemental information for this node, such as the purpose of the node when that purpose is not conveyed within its textual representation. For example, if a dropdown select has a purpose of setting font family, the supplemental description could be "font family". If this node has children, its supplemental description serves as additional information and is not intended to replace any existing information in the subtree. This is different from the `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContentDescription(kotlin.CharSequence)` in that this description is purely supplemental while a content description may be used to replace a description for a node or its subtree that an assistive technology would otherwise compute based on other properties of the node and its descendants.
+Sets the supplemental description of this node. A supplemental description provides brief supplemental information for this node, such as the purpose of the node when that purpose is not conveyed within its textual representation. For example, if a dropdown select has a purpose of setting font family, the supplemental description could be "font family". If this node has children, its supplemental description serves as additional information and is not intended to replace any existing information in the subtree. This is different from the setContentDescription in that this description is purely supplemental while a content description may be used to replace a description for a node or its subtree that an assistive technology would otherwise compute based on other properties of the node and its descendants.
 
 **Note:** Cannot be called from an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. This class is made immutable before being delivered to an AccessibilityService.
 
@@ -4707,8 +4707,8 @@ Sets the supplemental description of this node. A supplemental description provi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getSupplementalDescription()`
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#setContentDescription(kotlin.CharSequence)`
+- getSupplementalDescription
+- setContentDescription
 
 ### setText
 
@@ -4824,7 +4824,7 @@ Set touch delegate info if the represented view has a `https://developer.android
 
 | Parameters ||
 |---|---|
-| `delegatedInfo` | [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md): `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` returned from `https://developer.android.com/reference/kotlin/android/view/TouchDelegate.html#getTouchDelegateInfo()`. This value cannot be `null`. |
+| `delegatedInfo` | [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md): `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo` returned from getTouchDelegateInfo. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4848,7 +4848,7 @@ Sets the view whose node is visited after this one in accessibility traversal. A
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTraversalAfter()`
+- getTraversalAfter
 
 ### setTraversalAfter
 
@@ -4890,7 +4890,7 @@ Sets the view before whose node this one should be visited during traversal. A s
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getTraversalBefore()`
+- getTraversalBefore
 
 ### setTraversalBefore
 

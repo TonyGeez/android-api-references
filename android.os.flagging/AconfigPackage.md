@@ -17,14 +17,14 @@ An `aconfig` package containing the enabled state of its flags.
 
 **Note: this is intended only to be used by generated code. To determine if a given flag is enabled in app code, the generated android flags should be used.**
 
-This class is used to read the flag from Aconfig Package.Each instance of this class will cache information related to one package. To read flags from a different package, a new instance of this class should be `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#load(kotlin.String)`.
+This class is used to read the flag from Aconfig Package.Each instance of this class will cache information related to one package. To read flags from a different package, a new instance of this class should be load.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#getBooleanFlagValue(kotlin.String,%20kotlin.Boolean)(flagName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieves the value of a boolean flag. |
-| open static [AconfigPackage](AconfigPackage.md) | `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#load(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads an Aconfig Package from Aconfig Storage. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getBooleanFlagValue Retrieves the value of a boolean flag. |
+| open static [AconfigPackage](AconfigPackage.md) | load Loads an Aconfig Package from Aconfig Storage. |
 
 ## Public methods
 
@@ -70,8 +70,8 @@ This method attempts to load the specified Aconfig package.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#` | An instance of `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#`, which may be empty if the package is not found in the container. This value cannot be `null`. |
+| AconfigPackage | An instance of AconfigPackage, which may be empty if the package is not found in the container. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `android.os.flagging.AconfigStorageReadException` | if there is an error reading from Aconfig Storage, such as if the storage system is not found, the package is not found, or there is an error reading the storage file. The specific error code can be obtained using `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigStorageReadException#getErrorCode()`. |
+| `android.os.flagging.AconfigStorageReadException` | if there is an error reading from Aconfig Storage, such as if the storage system is not found, the package is not found, or there is an error reading the storage file. The specific error code can be obtained using getErrorCode. |

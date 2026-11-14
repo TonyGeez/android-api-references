@@ -29,32 +29,32 @@ Overall information about the contents of a package. This corresponds to all of 
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#PackageInfo()()` <br /> |
+| PackageInfo <br /> |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#getApexPackageName()()` If the package is an APEX package (i.e. the value of |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#getArchiveTimeMillis()()` Returns the time at which the app was archived for the user. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getApexPackageName If the package is an APEX package (i.e. the value of |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getArchiveTimeMillis Returns the time at which the app was archived for the user. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#getLongVersionCode()()` Return `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCodeMajor:kotlin.Int` combined together as a single long value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#isAppMetadataVerified()()` Returns the verification status of the App Metadata of the package. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#setLongVersionCode(kotlin.Long)(longVersionCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Set the full version code in this PackageInfo, updating `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#versionCode:kotlin.Int` with the lower bits. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLongVersionCode Return `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCodeMajor:kotlin.Int` combined together as a single long value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAppMetadataVerified Returns the verification status of the App Metadata of the package. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLongVersionCode Set the full version code in this PackageInfo, updating `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#versionCode:kotlin.Int` with the lower bits. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -179,7 +179,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val REQUESTED_PERMISSION_ONLY_FOR_LOCATION_BUTTON: Int
 ```
 
-Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#requestedPermissionsFlags:kotlin.IntArray`: It only applies to `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. When this flag is set, apps cannot request that permission through `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`, and can only use location button to obtain it temporarily.
+Flag for `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#requestedPermissionsFlags:kotlin.IntArray`: It only applies to `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. When this flag is set, apps cannot request that permission through requestPermissions, and can only use location button to obtain it temporarily.
 
  Value: 131072
 
@@ -215,7 +215,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -239,7 +239,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getArchiveTimeMillis(): Long
 ```
 
-Returns the time at which the app was archived for the user. Units are as per `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. 
+Returns the time at which the app was archived for the user. Units are as per currentTimeMillis. 
 Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z.
 
 | Return ||
@@ -277,7 +277,7 @@ open fun setLongVersionCode(longVersionCode: Long): Unit
 Set the full version code in this PackageInfo, updating `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#versionCode:kotlin.Int` with the lower bits.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#getLongVersionCode()`
+- getLongVersionCode
 
 ### toString
 
@@ -392,7 +392,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 var firstInstallTime: Long
 ```
 
-The time at which the app was first installed. Units are as per `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+The time at which the app was first installed. Units are as per currentTimeMillis.
 
 ### gids
 
@@ -442,7 +442,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 var lastUpdateTime: Long
 ```
 
-The time at which the app was last updated. Units are as per `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+The time at which the app was last updated. Units are as per currentTimeMillis.
 
 ### packageName
 
@@ -568,7 +568,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 var signingInfo: SigningInfo?
 ```
 
-Signing information read from the package file, potentially including past signing certificates no longer used after signing certificate rotation. This is only filled in if the flag `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_SIGNING_CERTIFICATES:kotlin.Int` was set. Use this field instead of the deprecated `signatures` field. See `https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo` for more information on its contents.
+Signing information read from the package file, potentially including past signing certificates no longer used after signing certificate rotation. This is only filled in if the flag `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_SIGNING_CERTIFICATES:kotlin.Int` was set. Use this field instead of the deprecated `signatures` field. See SigningInfo for more information on its contents.
 
 ### splitNames
 
@@ -599,10 +599,10 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 var versionCode: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#getLongVersionCode()` instead, which includes both this and the additional `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCodeMajor:kotlin.Int` attribute. The version number of this package, as specified by the \<manifest\> tag's `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int` attribute.*
+**Deprecated:** *Use getLongVersionCode instead, which includes both this and the additional `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCodeMajor:kotlin.Int` attribute. The version number of this package, as specified by the \<manifest\> tag's `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifest_versionCode:kotlin.Int` attribute.*
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/PackageInfo#getLongVersionCode()`
+- getLongVersionCode
 
 ### versionName
 

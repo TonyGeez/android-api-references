@@ -18,12 +18,12 @@ Such keys can be obtained by calling android.app.admin.DevicePolicyManager#gener
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/security/AttestedKeyPair#AttestedKeyPair(java.security.KeyPair,%20kotlin.collections.MutableList)(keyPair: https://developer.android.com/reference/kotlin/java/security/KeyPair.html#?, attestationRecord: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/security/cert/Certificate.html#!>)` Public constructor for creating a new instance (useful for testing). |
+| AttestedKeyPair Public constructor for creating a new instance (useful for testing). |
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/security/AttestedKeyPair#getAttestationRecord()()` Returns the attestation record for the key pair in this instance. |
-| [KeyPair](../java.security/KeyPair.md)? | `https://developer.android.com/reference/kotlin/android/security/AttestedKeyPair#getKeyPair()()` Returns the generated key pair associated with the attestation record in this instance. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\> | getAttestationRecord Returns the attestation record for the key pair in this instance. |
+| [KeyPair](../java.security/KeyPair.md)? | getKeyPair Returns the generated key pair associated with the attestation record in this instance. |
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun getAttestationRecord(): MutableList<Certificate!>
 ```
 
-Returns the attestation record for the key pair in this instance. The attestation record is a chain of certificates. The leaf certificate links to the public key of this key pair and other properties of the key or the device. If the key is in secure hardware, and if the secure hardware supports attestation, the leaf certificate will be signed by a chain of certificates rooted at a trustworthy CA key. Otherwise the chain will be rooted at an untrusted certificate. The attestation record could be for properties of the key, or include device identifiers. See `https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.Builder#setAttestationChallenge(kotlin.ByteArray)` and [Key Attestation](https://developer.android.com/training/articles/security-key-attestation.html) for the format of the attestation record inside the certificate.
+Returns the attestation record for the key pair in this instance. The attestation record is a chain of certificates. The leaf certificate links to the public key of this key pair and other properties of the key or the device. If the key is in secure hardware, and if the secure hardware supports attestation, the leaf certificate will be signed by a chain of certificates rooted at a trustworthy CA key. Otherwise the chain will be rooted at an untrusted certificate. The attestation record could be for properties of the key, or include device identifiers. See setAttestationChallenge and [Key Attestation](https://developer.android.com/training/articles/security-key-attestation.html) for the format of the attestation record inside the certificate.
 
 | Return ||
 |---|---|

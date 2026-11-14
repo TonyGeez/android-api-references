@@ -13,34 +13,34 @@ class TranslationContext : Parcelable
 | --- | --- |
 | ↳ | [android.view.translation.TranslationContext](TranslationContext.md) |
 
-Info class holding information for `https://developer.android.com/reference/kotlin/android/view/translation/Translator`s and used by `https://developer.android.com/reference/kotlin/android/view/translation/TranslationManager#createOnDeviceTranslator(android.view.translation.TranslationContext,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+Info class holding information for Translators and used by createOnDeviceTranslator.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext.Builder` A builder for `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#` |
+| | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext.Builder` A builder for TranslationContext |
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_DEFINITIONS:kotlin.Int` This context will enable the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` to return dictionary definitions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_DEFINITIONS:kotlin.Int` This context will enable the Translator to return dictionary definitions. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_LOW_LATENCY:kotlin.Int` This context will perform translations in low latency mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_TRANSLITERATION:kotlin.Int` This context will enable the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` to return transliteration results. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_TRANSLITERATION:kotlin.Int` This context will enable the Translator to return transliteration results. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [TranslationSpec](TranslationSpec.md) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getSourceSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the source data to be translated. |
-| [TranslationSpec](TranslationSpec.md) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTargetSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the target translated data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [TranslationSpec](TranslationSpec.md) | getSourceSpec TranslationSpec describing the source data to be translated. |
+| [TranslationSpec](TranslationSpec.md) | getTargetSpec TranslationSpec describing the target translated data. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTranslationFlags()()` Translation flags to be used by the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTranslationFlags Translation flags to be used by the Translator |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -57,7 +57,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_DEFINITIONS: Int
 ```
 
-This context will enable the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` to return dictionary definitions. 
+This context will enable the Translator to return dictionary definitions. 
 Value is either `0` or a combination of the following:
 
 - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_LOW_LATENCY:kotlin.Int`
@@ -95,7 +95,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_TRANSLITERATION: Int
 ```
 
-This context will enable the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` to return transliteration results. 
+This context will enable the Translator to return transliteration results. 
 Value is either `0` or a combination of the following:
 
 - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#FLAG_LOW_LATENCY:kotlin.Int`
@@ -116,7 +116,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -130,11 +130,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getSourceSpec(): TranslationSpec
 ```
 
-`https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the source data to be translated.
+TranslationSpec describing the source data to be translated.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` | This value cannot be `null`. |
+| TranslationSpec | This value cannot be `null`. |
 
 ### getTargetSpec
 
@@ -144,11 +144,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getTargetSpec(): TranslationSpec
 ```
 
-`https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the target translated data.
+TranslationSpec describing the target translated data.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` | This value cannot be `null`. |
+| TranslationSpec | This value cannot be `null`. |
 
 ### getTranslationFlags
 
@@ -158,7 +158,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getTranslationFlags(): Int
 ```
 
-Translation flags to be used by the `https://developer.android.com/reference/kotlin/android/view/translation/Translator`
+Translation flags to be used by the Translator
 
 | Return ||
 |---|---|

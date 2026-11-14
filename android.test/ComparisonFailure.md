@@ -28,7 +28,7 @@ Thrown when an assert equals for Strings failed.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/test/ComparisonFailure#ComparisonFailure(kotlin.String,%20kotlin.String,%20kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, expected: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, actual: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
+| ComparisonFailure <br /> |
 
 | Properties ||
 |---|---|

@@ -155,17 +155,17 @@ A span that supplies additional meta-data for the associated text intended for t
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TtsSpan(android.os.Parcel)(src: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
-| `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TtsSpan(kotlin.String,%20android.os.PersistableBundle)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, args: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` <br /> |
+| TtsSpan <br /> |
+| TtsSpan <br /> |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getArgs()()` Returns a bundle of the arguments set. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)! | getArgs Returns a bundle of the arguments set. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpanTypeId Return a special type identifier for this span class. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getType()()` Returns the type. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getType Returns the type. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 ## Constants
 
@@ -1113,7 +1113,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

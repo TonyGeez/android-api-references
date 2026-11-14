@@ -20,13 +20,13 @@ Represents a unit of blood glucose level (glycaemia). Supported units: mmol/L
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#compareTo(android.health.connect.datatypes.units.BloodGlucose)(other: https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| static [BloodGlucose](BloodGlucose.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#fromMillimolesPerLiter(kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Creates a BloodGlucose object with the specified value in mmol/L |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| static [BloodGlucose](BloodGlucose.md) | fromMillimolesPerLiter Creates a BloodGlucose object with the specified value in mmol/L |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#getInMillimolesPerLiter()()` Returns blood glucose in millimoles per liter |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#toString()()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getInMillimolesPerLiter Returns blood glucose in millimoles per liter |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString <br /> |
 | --- | --- |
 
 ## Public methods
@@ -92,7 +92,7 @@ Creates a BloodGlucose object with the specified value in mmol/L
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/BloodGlucose#` | This value cannot be `null`. |
+| BloodGlucose | This value cannot be `null`. |
 
 ### getInMillimolesPerLiter
 

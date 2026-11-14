@@ -17,11 +17,11 @@ class EncryptedTopic
 >
 > The Rubidium (Rb) Relevance APIs, including those in android.adservices.topics, are being deprecated. Relevance APIs have no direct replacement. Developers should stop using them, as calls will be rejected in future Android releases. Please refer to official Privacy Sandbox documentation for deprecation and roadmap details: https://privacysandbox.com/news/update-on-plans-for-privacy-sandbox-technologies/
 
-Encrypted form of `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic`. This object will be used to return encrypted topic cipher text along with necessary fields required to decrypt it.
+Encrypted form of Topic. This object will be used to return encrypted topic cipher text along with necessary fields required to decrypt it.
 
-Decryption of `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getEncryptedTopic()` should give json string for `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic`. Example of decrypted json string: `{ "taxonomy_version": 5, "model_version": 2, "topic_id": 10010 }`
+Decryption of getEncryptedTopic should give json string for Topic. Example of decrypted json string: `{ "taxonomy_version": 5, "model_version": 2, "topic_id": 10010 }`
 
-Decryption of cipher text is expected to happen on the server with the corresponding algorithm and private key for the public key `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getKeyIdentifier()`}.
+Decryption of cipher text is expected to happen on the server with the corresponding algorithm and private key for the public key getKeyIdentifier}.
 
 Detailed steps on decryption can be found on [Developer Guide](https://developer.android.com/design-for-safety/privacy-sandbox/guides/topics).
 
@@ -29,17 +29,17 @@ Detailed steps on decryption can be found on [Developer Guide](https://developer
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#EncryptedTopic(kotlin.ByteArray,%20kotlin.String,%20kotlin.ByteArray)(encryptedTopic: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, keyIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, encapsulatedKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Creates encrypted version of the `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` object. |
+| EncryptedTopic Creates encrypted version of the Topic object. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getEncapsulatedKey()()` Returns the encapsulated key generated during HPKE setup. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getEncryptedTopic()()` Returns encrypted bytes for the JSON version of the `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` object as cipher text. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getEncapsulatedKey Returns the encapsulated key generated during HPKE setup. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getEncryptedTopic Returns encrypted bytes for the JSON version of the Topic object as cipher text. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#getKeyIdentifier()()` Returns key identifier for the used encryption key. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/topics/EncryptedTopic#toString()()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getKeyIdentifier Returns key identifier for the used encryption key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Public constructors
@@ -56,11 +56,11 @@ EncryptedTopic(
     encapsulatedKey: ByteArray)
 ```
 
-Creates encrypted version of the `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` object.
+Creates encrypted version of the Topic object.
 
 | Parameters ||
 |---|---|
-| `encryptedTopic` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): byte array cipher text containing encrypted `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` json string. This value cannot be `null`. |
+| `encryptedTopic` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): byte array cipher text containing encrypted Topic json string. This value cannot be `null`. |
 | `keyIdentifier` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): key used to identify the public key used for encryption. This value cannot be `null`. |
 | `encapsulatedKey` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): encapsulated key generated during HPKE setup. This value cannot be `null`. |
 | --- | --- |
@@ -128,7 +128,7 @@ fun getEncryptedTopic(): ByteArray
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns encrypted bytes for the JSON version of the `https://developer.android.com/reference/kotlin/android/adservices/topics/Topic` object as cipher text.
+Returns encrypted bytes for the JSON version of the Topic object as cipher text.
 
 | Return ||
 |---|---|
@@ -168,8 +168,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

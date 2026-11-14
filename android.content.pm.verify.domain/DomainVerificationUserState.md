@@ -12,11 +12,11 @@ class DomainVerificationUserState : Parcelable
 
 Contains the user selection state for a package. This means all web HTTP(S) domains declared by a package in its manifest, whether or not they were marked for auto verification.
 
-Applications should use `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getHostToStateMap()` if necessary to check if/how they are verified for a domain, which is required starting from platform `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` in order to open `https://developer.android.com/reference/kotlin/android/content/Intent.html#`s which declare `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_BROWSABLE:kotlin.String` or no category and also match against `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#`s, either through an explicit declaration of `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String` or through the use of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int`, which is usually added for the caller when using `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` and similar.
+Applications should use getHostToStateMap if necessary to check if/how they are verified for a domain, which is required starting from platform `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` in order to open `https://developer.android.com/reference/kotlin/android/content/Intent.html#`s which declare `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_BROWSABLE:kotlin.String` or no category and also match against `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#`s, either through an explicit declaration of `https://developer.android.com/reference/kotlin/android/content/Intent.html#CATEGORY_DEFAULT:kotlin.String` or through the use of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#MATCH_DEFAULT_ONLY:kotlin.Int`, which is usually added for the caller when using startActivity and similar.
 
-By default, all apps are allowed to automatically open links for the above case for domains that they've successfully verified against. This is reflected by `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#isLinkHandlingAllowed()`. The user can decide to disable this, disallowing the application from opening all links. Note that the toggle affects **all** links and is not based on the verification state of the domains.
+By default, all apps are allowed to automatically open links for the above case for domains that they've successfully verified against. This is reflected by isLinkHandlingAllowed. The user can decide to disable this, disallowing the application from opening all links. Note that the toggle affects **all** links and is not based on the verification state of the domains.
 
-Assuming the toggle is enabled, the user can also select additional unverified domains to grant to the application to open, which is reflected in `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getHostToStateMap()`. But only a single application can be approved for a domain unless the applications are both approved. If another application is approved, the user will not be allowed to enable the domain.
+Assuming the toggle is enabled, the user can also select additional unverified domains to grant to the application to open, which is reflected in getHostToStateMap. But only a single application can be approved for a domain unless the applications are both approved. If another application is approved, the user will not be allowed to enable the domain.
 
 ## Summary
 
@@ -31,7 +31,7 @@ Inherited constants From class `https://developer.android.com/reference/kotlin/a
 
 <br />
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
@@ -39,23 +39,23 @@ Descriptor bit used with `https://developer.android.com/reference/kotlin/android
 
 <br />
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getHostToStateMap()()` Mapping of domain host to state, as defined by android. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getHostToStateMap Mapping of domain host to state, as defined by android. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getPackageName()()` The package name that this data corresponds to. |
-| [UserHandle](../android.os/UserHandle.md) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#getUser()()` The user that this data corresponds to. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#hashCode()()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getPackageName The package name that this data corresponds to. |
+| [UserHandle](../android.os/UserHandle.md) | getUser The user that this data corresponds to. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#isLinkHandlingAllowed()()` Whether or not this package is allowed to open links. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/verify/domain/DomainVerificationUserState#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLinkHandlingAllowed Whether or not this package is allowed to open links. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -110,7 +110,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -200,8 +200,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

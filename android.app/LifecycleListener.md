@@ -14,7 +14,7 @@ Listener for session lifecycle events.
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession.LifecycleListener#onAppInteractionSessionClosed(android.app.AppInteractionSession,%20kotlin.Int)(session: https://developer.android.com/reference/kotlin/android/app/AppInteractionSession, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the session is closed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onAppInteractionSessionClosed Called when the session is closed. |
 
 ## Public methods
 
@@ -31,7 +31,7 @@ open fun onAppInteractionSessionClosed(
 
 Called when the session is closed.
 
-A session may be closed explicitly via `https://developer.android.com/reference/kotlin/android/app/AppInteractionSession#close()` or implicitly by the system when the session reaches its maximum duration timeout.
+A session may be closed explicitly via close or implicitly by the system when the session reaches its maximum duration timeout.
 
 If the session is already closed, the listener will be invoked immediately.
 

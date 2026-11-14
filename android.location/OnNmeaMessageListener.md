@@ -11,13 +11,13 @@ interface OnNmeaMessageListener
 
 | [android.location.OnNmeaMessageListener](OnNmeaMessageListener.md) |
 
-Used for receiving NMEA sentences from the GNSS. NMEA 0183 is a standard for communicating with marine electronic devices and is a common method for receiving data from a GNSS, typically over a serial port. See [NMEA 0183](http://en.wikipedia.org/wiki/NMEA_0183) for more details. You can implement this interface and call `https://developer.android.com/reference/kotlin/android/location/LocationManager#addNmeaListener(java.util.concurrent.Executor,%20android.location.OnNmeaMessageListener)` to receive NMEA data from the GNSS engine.
+Used for receiving NMEA sentences from the GNSS. NMEA 0183 is a standard for communicating with marine electronic devices and is a common method for receiving data from a GNSS, typically over a serial port. See [NMEA 0183](http://en.wikipedia.org/wiki/NMEA_0183) for more details. You can implement this interface and call addNmeaListener to receive NMEA data from the GNSS engine.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/location/OnNmeaMessageListener#onNmeaMessage(kotlin.String,%20kotlin.Long)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, timestamp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Called when an NMEA message is received. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onNmeaMessage Called when an NMEA message is received. |
 
 ## Public methods
 

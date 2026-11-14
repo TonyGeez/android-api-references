@@ -10,7 +10,7 @@ open class BackupDataInput
 | --- | --- |
 | ↳ | [android.app.backup.BackupDataInput](BackupDataInput.md) |
 
-Provides the structured interface through which a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` reads information from the backup data set, via its `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent#onRestore(android.app.backup.BackupDataInput,%20kotlin.Int,%20android.os.ParcelFileDescriptor)` method. The data is presented as a set of "entities," each representing one named record as previously stored by the agent's android.app.backup.BackupAgent#onBackup(ParcelFileDescriptor,android.app.backup.BackupDataOutput,ParcelFileDescriptor) implementation. An entity is composed of a descriptive header plus a byte array that holds the raw data saved in the remote backup.
+Provides the structured interface through which a BackupAgent reads information from the backup data set, via its onRestore method. The data is presented as a set of "entities," each representing one named record as previously stored by the agent's android.app.backup.BackupAgent#onBackup(ParcelFileDescriptor,android.app.backup.BackupDataOutput,ParcelFileDescriptor) implementation. An entity is composed of a descriptive header plus a byte array that holds the raw data saved in the remote backup.
 
 The agent must consume every entity in the data stream, otherwise the restored state of the application will be incomplete.
 
@@ -45,16 +45,16 @@ public void onRestore(BackupDataInput data, int appVersionCode,
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#getDataSize()()` Report the size in bytes of the data associated with the current entity in the restore stream. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#getKey()()` Report the key associated with the current entity in the restore stream |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#readEntityData(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read a record's raw data from the restore stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDataSize Report the size in bytes of the data associated with the current entity in the restore stream. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getKey Report the key associated with the current entity in the restore stream |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | readEntityData Read a record's raw data from the restore stream. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#readNextHeader()()` Extract the next entity header from the restore stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#skipEntityData()()` Consume the current entity's data without extracting it into a buffer for further processing. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | readNextHeader Extract the next entity header from the restore stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | skipEntityData Consume the current entity's data without extracting it into a buffer for further processing. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public methods
 
@@ -106,7 +106,7 @@ open fun readEntityData(
 ): Int
 ```
 
-Read a record's raw data from the restore stream. The record's header must first have been processed by the `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#readNextHeader()` method. Multiple calls to this method may be made in order to process the data in chunks; not all of it must be read in a single call. Once all of the raw data for the current entity has been read, further calls to this method will simply return zero.
+Read a record's raw data from the restore stream. The record's header must first have been processed by the readNextHeader method. Multiple calls to this method may be made in order to process the data in chunks; not all of it must be read in a single call. Once all of the raw data for the current entity has been read, further calls to this method will simply return zero.
 
 | Parameters ||
 |---|---|
@@ -131,7 +131,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun readNextHeader(): Boolean
 ```
 
-Extract the next entity header from the restore stream. After this method return success, the `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#getKey()` and `https://developer.android.com/reference/kotlin/android/app/backup/BackupDataInput#getDataSize()` methods can be used to inspect the entity that is now available for processing.
+Extract the next entity header from the restore stream. After this method return success, the getKey and getDataSize methods can be used to inspect the entity that is now available for processing.
 
 | Return ||
 |---|---|
@@ -149,7 +149,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun skipEntityData(): Unit
 ```
 
-Consume the current entity's data without extracting it into a buffer for further processing. This allows a `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` to efficiently discard obsolete or otherwise uninteresting records during the restore operation.
+Consume the current entity's data without extracting it into a buffer for further processing. This allows a BackupAgent to efficiently discard obsolete or otherwise uninteresting records during the restore operation.
 
 | Exceptions ||
 |---|---|

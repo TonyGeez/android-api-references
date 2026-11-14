@@ -15,7 +15,7 @@ abstract class SQLiteOpenHelper : AutoCloseable
 
 A helper class to manage database creation and version management.
 
-You create a subclass implementing `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onCreate(android.database.sqlite.SQLiteDatabase)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` and optionally `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onOpen(android.database.sqlite.SQLiteDatabase)`, and this class takes care of opening the database if it exists, creating it if it does not, and upgrading it as necessary. Transactions are used to make sure the database is always in a sensible state.
+You create a subclass implementing onCreate, onUpgrade and optionally onOpen, and this class takes care of opening the database if it exists, creating it if it does not, and upgrading it as necessary. Transactions are used to make sure the database is always in a sensible state.
 
 This class makes it easy for `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` implementations to defer opening and upgrading the database until first use, to avoid blocking application startup with long-running database upgrades.
 
@@ -29,29 +29,29 @@ For an example, see the NotePadProvider class in the NotePad sample application,
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#SQLiteOpenHelper(android.content.Context,%20kotlin.String,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#?, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a helper object to create, open, and/or manage a database. |
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#SQLiteOpenHelper(android.content.Context,%20kotlin.String,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20kotlin.Int,%20android.database.DatabaseErrorHandler)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#?, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory?, version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Create a helper object to create, open, and/or manage a database. |
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#SQLiteOpenHelper(android.content.Context,%20kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.OpenParams)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#?, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, openParams: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams)` Create a helper object to create, open, and/or manage a database. |
+| SQLiteOpenHelper Create a helper object to create, open, and/or manage a database. |
+| SQLiteOpenHelper Create a helper object to create, open, and/or manage a database. |
+| SQLiteOpenHelper Create a helper object to create, open, and/or manage a database. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#close()()` Close any open database object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getDatabaseName()()` Return the name of the SQLite database being opened, as given to the constructor. |
-| open [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getReadableDatabase()()` Create and/or open a database. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Close any open database object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDatabaseName Return the name of the SQLite database being opened, as given to the constructor. |
+| open [SQLiteDatabase](SQLiteDatabase.md)! | getReadableDatabase Create and/or open a database. |
 | --- | --- |
-| open [SQLiteDatabase](SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()()` Create and/or open a database that will be used for reading and writing. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onConfigure(android.database.sqlite.SQLiteDatabase)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!)` Called when the database connection is being configured, to enable features such as write-ahead logging or foreign key support. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onCreate(android.database.sqlite.SQLiteDatabase)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!)` Called when the database is created for the first time. |
+| open [SQLiteDatabase](SQLiteDatabase.md)! | getWritableDatabase Create and/or open a database that will be used for reading and writing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onConfigure Called when the database connection is being configured, to enable features such as write-ahead logging or foreign key support. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCreate Called when the database is created for the first time. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onDowngrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!, oldVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the database needs to be downgraded. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onOpen(android.database.sqlite.SQLiteDatabase)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!)` Called when the database has been opened. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!, oldVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the database needs to be upgraded. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onDowngrade Called when the database needs to be downgraded. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onOpen Called when the database has been opened. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onUpgrade Called when the database needs to be upgraded. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#setIdleConnectionTimeout(kotlin.Long)(idleConnectionTimeoutMs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the maximum number of milliseconds that SQLite connection is allowed to be idle before it is closed and removed from the pool. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#setLookasideConfig(kotlin.Int,%20kotlin.Int)(slotSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, slotCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Configures [lookaside memory allocator](https://sqlite.org/malloc.html#lookaside) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#setOpenParams(android.database.sqlite.SQLiteDatabase.OpenParams)(openParams: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams)` Sets configuration parameters that are used for opening `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setIdleConnectionTimeout Sets the maximum number of milliseconds that SQLite connection is allowed to be idle before it is closed and removed from the pool. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLookasideConfig Configures [lookaside memory allocator](https://sqlite.org/malloc.html#lookaside) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOpenParams Sets configuration parameters that are used for opening SQLiteDatabase. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#setWriteAheadLoggingEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enables or disables the use of write-ahead logging for the database. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWriteAheadLoggingEnabled Enables or disables the use of write-ahead logging for the database. |
 
 ## Public constructors
 
@@ -67,7 +67,7 @@ SQLiteOpenHelper(
     version: Int)
 ```
 
-Create a helper object to create, open, and/or manage a database. This method always returns very quickly. The database is not actually created or opened until one of `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()` or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getReadableDatabase()` is called.
+Create a helper object to create, open, and/or manage a database. This method always returns very quickly. The database is not actually created or opened until one of getWritableDatabase or getReadableDatabase is called.
 
 | Parameters ||
 |---|---|
@@ -75,7 +75,7 @@ Create a helper object to create, open, and/or manage a database. This method al
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: of the database file, or null for an in-memory database |
 | `factory` | [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)?: to use for creating cursor objects, or null for the default |
 | --- | --- |
-| `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the database (starting at 1); if the database is older, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` will be used to upgrade the database; if the database is newer, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onDowngrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` will be used to downgrade the database |
+| `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the database (starting at 1); if the database is older, onUpgrade will be used to upgrade the database; if the database is newer, onDowngrade will be used to downgrade the database |
 
 ### SQLiteOpenHelper
 
@@ -90,7 +90,7 @@ SQLiteOpenHelper(
     errorHandler: DatabaseErrorHandler?)
 ```
 
-Create a helper object to create, open, and/or manage a database. The database is not actually created or opened until one of `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()` or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getReadableDatabase()` is called.
+Create a helper object to create, open, and/or manage a database. The database is not actually created or opened until one of getWritableDatabase or getReadableDatabase is called.
 
 Accepts input param: a concrete instance of `https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#` to be used to handle corruption when sqlite reports database corruption.
 
@@ -100,7 +100,7 @@ Accepts input param: a concrete instance of `https://developer.android.com/refer
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: of the database file, or null for an in-memory database |
 | `factory` | [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)?: to use for creating cursor objects, or null for the default |
 | --- | --- |
-| `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the database (starting at 1); if the database is older, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` will be used to upgrade the database; if the database is newer, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onDowngrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` will be used to downgrade the database |
+| `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the database (starting at 1); if the database is older, onUpgrade will be used to upgrade the database; if the database is newer, onDowngrade will be used to downgrade the database |
 | `errorHandler` | [DatabaseErrorHandler](../android.database/DatabaseErrorHandler.md)?: the `https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#` to be used when sqlite reports database corruption, or null to use the default error handler. |
 
 ### SQLiteOpenHelper
@@ -115,15 +115,15 @@ SQLiteOpenHelper(
     openParams: SQLiteDatabase.OpenParams)
 ```
 
-Create a helper object to create, open, and/or manage a database. This method always returns very quickly. The database is not actually created or opened until one of `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()` or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getReadableDatabase()` is called.
+Create a helper object to create, open, and/or manage a database. This method always returns very quickly. The database is not actually created or opened until one of getWritableDatabase or getReadableDatabase is called.
 
 | Parameters ||
 |---|---|
 | `context` | [Context](../android.content/Context.md)?: to use for locating paths to the the database. This value may be `null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: of the database file, or null for an in-memory database |
-| `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the database (starting at 1); if the database is older, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` will be used to upgrade the database; if the database is newer, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onDowngrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` will be used to downgrade the database |
+| `version` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the database (starting at 1); if the database is older, onUpgrade will be used to upgrade the database; if the database is newer, onDowngrade will be used to downgrade the database |
 | --- | --- |
-| `openParams` | [SQLiteDatabase.OpenParams](../android/database/sqlite/SQLiteDatabase.OpenParams.md): configuration parameters that are used for opening `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`. Please note that `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` flag will always be set when the helper opens the database. This value cannot be `null`. |
+| `openParams` | [SQLiteDatabase.OpenParams](../android/database/sqlite/SQLiteDatabase.OpenParams.md): configuration parameters that are used for opening SQLiteDatabase. Please note that `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` flag will always be set when the helper opens the database. This value cannot be `null`. |
 
 ## Public methods
 
@@ -159,13 +159,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getReadableDatabase(): SQLiteDatabase!
 ```
 
-Create and/or open a database. This will be the same object returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()` unless some problem, such as a full disk, requires the database to be opened read-only. In that case, a read-only database object will be returned. If the problem is fixed, a future call to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()` may succeed, in which case the read-only database object will be closed and the read/write object will be returned in the future.
+Create and/or open a database. This will be the same object returned by getWritableDatabase unless some problem, such as a full disk, requires the database to be opened read-only. In that case, a read-only database object will be returned. If the problem is fixed, a future call to getWritableDatabase may succeed, in which case the read-only database object will be closed and the read/write object will be returned in the future.
 
-Like `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()`, this method may take a long time to return, so you should not call it from the application main thread, including from `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#onCreate()`.
+Like getWritableDatabase, this method may take a long time to return, so you should not call it from the application main thread, including from onCreate.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!` | a database object valid until `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#getWritableDatabase()` or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#close()` is called. |
+| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!` | a database object valid until getWritableDatabase or close is called. |
 
 | Exceptions ||
 |---|---|
@@ -179,15 +179,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getWritableDatabase(): SQLiteDatabase!
 ```
 
-Create and/or open a database that will be used for reading and writing. The first time this is called, the database will be opened and `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onCreate(android.database.sqlite.SQLiteDatabase)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` and/or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onOpen(android.database.sqlite.SQLiteDatabase)` will be called.
+Create and/or open a database that will be used for reading and writing. The first time this is called, the database will be opened and onCreate, onUpgrade and/or onOpen will be called.
 
-Once opened successfully, the database is cached, so you can call this method every time you need to write to the database. (Make sure to call `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#close()` when you no longer need the database.) Errors such as bad permissions or a full disk may cause this method to fail, but future attempts may succeed if the problem is fixed.
+Once opened successfully, the database is cached, so you can call this method every time you need to write to the database. (Make sure to call close when you no longer need the database.) Errors such as bad permissions or a full disk may cause this method to fail, but future attempts may succeed if the problem is fixed.
 
-Database upgrade may take a long time, you should not call this method from the application main thread, including from `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#onCreate()`.
+Database upgrade may take a long time, you should not call this method from the application main thread, including from onCreate.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!` | a read/write database object valid until `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#close()` is called |
+| `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!` | a read/write database object valid until close is called |
 
 | Exceptions ||
 |---|---|
@@ -203,9 +203,9 @@ open fun onConfigure(db: SQLiteDatabase!): Unit
 
 Called when the database connection is being configured, to enable features such as write-ahead logging or foreign key support.
 
-This method is called before `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onCreate(android.database.sqlite.SQLiteDatabase)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onDowngrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)`, or `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onOpen(android.database.sqlite.SQLiteDatabase)` are called. It should not modify the database except to configure the database connection as required.
+This method is called before onCreate, onUpgrade, onDowngrade, or onOpen are called. It should not modify the database except to configure the database connection as required.
 
-This method should only call methods that configure the parameters of the database connection, such as `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()` `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setForeignKeyConstraintsEnabled(kotlin.Boolean)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setLocale(java.util.Locale)`, `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#setMaximumSize(kotlin.Long)`, or executing PRAGMA statements.
+This method should only call methods that configure the parameters of the database connection, such as enableWriteAheadLogging setForeignKeyConstraintsEnabled, setLocale, setMaximumSize, or executing PRAGMA statements.
 
 | Parameters ||
 |---|---|
@@ -237,7 +237,7 @@ open fun onDowngrade(
 ): Unit
 ```
 
-Called when the database needs to be downgraded. This is strictly similar to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onUpgrade(android.database.sqlite.SQLiteDatabase,%20kotlin.Int,%20kotlin.Int)` method, but is called whenever current version is newer than requested one. However, this method is not abstract, so it is not mandatory for a customer to implement it. If not overridden, default implementation will reject downgrade and throws SQLiteException
+Called when the database needs to be downgraded. This is strictly similar to onUpgrade method, but is called whenever current version is newer than requested one. However, this method is not abstract, so it is not mandatory for a customer to implement it. If not overridden, default implementation will reject downgrade and throws SQLiteException
 
 This method executes within a transaction. If an exception is thrown, all changes will automatically be rolled back.
 
@@ -256,9 +256,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun onOpen(db: SQLiteDatabase!): Unit
 ```
 
-Called when the database has been opened. The implementation should check `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#isReadOnly()` before updating the database.
+Called when the database has been opened. The implementation should check isReadOnly before updating the database.
 
-This method is called after the database connection has been configured and after the database schema has been created, upgraded or downgraded as necessary. If the database connection must be configured in some way before the schema is created, upgraded, or downgraded, do it in `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteOpenHelper#onConfigure(android.database.sqlite.SQLiteDatabase)` instead.
+This method is called after the database connection has been configured and after the database schema has been created, upgraded or downgraded as necessary. If the database connection must be configured in some way before the schema is created, upgraded, or downgraded, do it in onConfigure instead.
 
 | Parameters ||
 |---|---|
@@ -302,13 +302,13 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun setIdleConnectionTimeout(idleConnectionTimeoutMs: Long): Unit
 ```
 
-**Deprecated:** *DO NOT USE this method. See the javadoc of `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams.Builder#setIdleConnectionTimeout(kotlin.Long)` for the details.*
+**Deprecated:** *DO NOT USE this method. See the javadoc of setIdleConnectionTimeout for the details.*
 
 Sets the maximum number of milliseconds that SQLite connection is allowed to be idle before it is closed and removed from the pool.
 
 This method should be called from the constructor of the subclass, before opening the database
 
-**DO NOT USE** this method. This feature has negative side effects that are very hard to foresee. See the javadoc of `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams.Builder#setIdleConnectionTimeout(kotlin.Long)` for the details.
+**DO NOT USE** this method. This feature has negative side effects that are very hard to foresee. See the javadoc of setIdleConnectionTimeout for the details.
 
 | Parameters ||
 |---|---|
@@ -316,7 +316,7 @@ This method should be called from the constructor of the subclass, before openin
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.OpenParams.Builder#setIdleConnectionTimeout(kotlin.Long)`
+- setIdleConnectionTimeout
 
 ### setLookasideConfig
 
@@ -350,13 +350,13 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun setOpenParams(openParams: SQLiteDatabase.OpenParams): Unit
 ```
 
-Sets configuration parameters that are used for opening `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`.
+Sets configuration parameters that are used for opening SQLiteDatabase.
 
 Please note that `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#CREATE_IF_NECESSARY:kotlin.Int` flag will always be set when opening the database
 
 | Parameters ||
 |---|---|
-| `openParams` | [SQLiteDatabase.OpenParams](../android/database/sqlite/SQLiteDatabase.OpenParams.md): configuration parameters that are used for opening `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase`. This value cannot be `null`. |
+| `openParams` | [SQLiteDatabase.OpenParams](../android/database/sqlite/SQLiteDatabase.OpenParams.md): configuration parameters that are used for opening SQLiteDatabase. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -378,4 +378,4 @@ Enables or disables the use of write-ahead logging for the database. Write-ahead
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase#enableWriteAheadLogging()`
+- enableWriteAheadLogging

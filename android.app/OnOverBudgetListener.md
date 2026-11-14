@@ -14,7 +14,7 @@ The callback that is notified when a budget is exceeded.
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener#onOverBudget(kotlin.Long)(budget: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Invoked when the application or process exceeds it budget. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onOverBudget Invoked when the application or process exceeds it budget. |
 
 ## Public methods
 

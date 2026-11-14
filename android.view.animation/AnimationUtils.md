@@ -16,19 +16,19 @@ Defines common utilities for working with animations.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#AnimationUtils()()` <br /> |
+| AnimationUtils <br /> |
 
 | Public methods ||
 |---|---|
-| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#currentAnimationTimeMillis()()` Returns the current animation time in milliseconds. |
-| open static [Animation](Animation.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#loadAnimation(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads an `https://developer.android.com/reference/kotlin/android/view/animation/Animation` object from a resource |
-| open static [Interpolator](Interpolator.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#loadInterpolator(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads an `https://developer.android.com/reference/kotlin/android/view/animation/Interpolator` object from a resource |
+| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | currentAnimationTimeMillis Returns the current animation time in milliseconds. |
+| open static [Animation](Animation.md)! | loadAnimation Loads an Animation object from a resource |
+| open static [Interpolator](Interpolator.md)! | loadInterpolator Loads an Interpolator object from a resource |
 | --- | --- |
-| open static [LayoutAnimationController](LayoutAnimationController.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#loadLayoutAnimation(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Loads a `https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController` object from a resource |
-| open static [Animation](Animation.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#makeInAnimation(android.content.Context,%20kotlin.Boolean)(c: https://developer.android.com/reference/kotlin/android/content/Context.html#!, fromLeft: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Make an animation for objects becoming visible. |
-| open static [Animation](Animation.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#makeInChildBottomAnimation(android.content.Context)(c: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Make an animation for objects becoming visible. |
+| open static [LayoutAnimationController](LayoutAnimationController.md)! | loadLayoutAnimation Loads a LayoutAnimationController object from a resource |
+| open static [Animation](Animation.md)! | makeInAnimation Make an animation for objects becoming visible. |
+| open static [Animation](Animation.md)! | makeInChildBottomAnimation Make an animation for objects becoming visible. |
 | --- | --- |
-| open static [Animation](Animation.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#makeOutAnimation(android.content.Context,%20kotlin.Boolean)(c: https://developer.android.com/reference/kotlin/android/content/Context.html#!, toRight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Make an animation for objects becoming invisible. |
+| open static [Animation](Animation.md)! | makeOutAnimation Make an animation for objects becoming invisible. |
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun currentAnimationTimeMillis(): Long
 ```
 
-Returns the current animation time in milliseconds. This time should be used when invoking `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setStartTime(kotlin.Long)`. Refer to `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#` for more information about the different available clocks. The clock used by this method is *not* the "wall" clock (it is not `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`).
+Returns the current animation time in milliseconds. This time should be used when invoking setStartTime. Refer to `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#` for more information about the different available clocks. The clock used by this method is *not* the "wall" clock (it is not currentTimeMillis).
 
 Do not use this method for animation progress or with `https://developer.android.com/reference/kotlin/android/animation/Animator.html#`. Using this timestamp for animations will introduce undersirable animation skips after missed frames. Use #getAnimationTimeNanos() instead.
 
@@ -71,7 +71,7 @@ open static fun loadAnimation(
 ): Animation!
 ```
 
-Loads an `https://developer.android.com/reference/kotlin/android/view/animation/Animation` object from a resource
+Loads an Animation object from a resource
 
 | Parameters ||
 |---|---|
@@ -97,7 +97,7 @@ open static fun loadInterpolator(
 ): Interpolator!
 ```
 
-Loads an `https://developer.android.com/reference/kotlin/android/view/animation/Interpolator` object from a resource
+Loads an Interpolator object from a resource
 
 | Parameters ||
 |---|---|
@@ -123,7 +123,7 @@ open static fun loadLayoutAnimation(
 ): LayoutAnimationController!
 ```
 
-Loads a `https://developer.android.com/reference/kotlin/android/view/animation/LayoutAnimationController` object from a resource
+Loads a LayoutAnimationController object from a resource
 
 | Parameters ||
 |---|---|

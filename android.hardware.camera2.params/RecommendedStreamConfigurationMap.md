@@ -13,13 +13,13 @@ class RecommendedStreamConfigurationMap
 | --- | --- |
 | ↳ | [android.hardware.camera2.params.RecommendedStreamConfigurationMap](RecommendedStreamConfigurationMap.md) |
 
-Immutable class to store the recommended stream configurations to set up `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for creating a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.html#` with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`.
+Immutable class to store the recommended stream configurations to set up `https://developer.android.com/reference/kotlin/android/view/Surface.html#` for creating a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.html#` with createCaptureSession.
 
-The recommended list does not replace or deprecate the exhaustive complete list found in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`. It is a suggestion about available power and performance efficient stream configurations for a specific use case. Per definition it is only a subset of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap` and can be considered by developers for optimization purposes.
+The recommended list does not replace or deprecate the exhaustive complete list found in StreamConfigurationMap. It is a suggestion about available power and performance efficient stream configurations for a specific use case. Per definition it is only a subset of StreamConfigurationMap and can be considered by developers for optimization purposes.
 
-This also duplicates the minimum frame durations and stall durations from the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap` for each format/size combination that can be used to calculate effective frame rate when submitting multiple captures.
+This also duplicates the minimum frame durations and stall durations from the StreamConfigurationMap for each format/size combination that can be used to calculate effective frame rate when submitting multiple captures.
 
-An instance of this object is available by invoking `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics.html#getRecommendedStreamConfigurationMap(kotlin.Int)` and passing a respective usecase id. For more information about supported use case constants see `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#USECASE_PREVIEW:kotlin.Int`.
+An instance of this object is available by invoking getRecommendedStreamConfigurationMap and passing a respective usecase id. For more information about supported use case constants see `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#USECASE_PREVIEW:kotlin.Int`.
 
 ```kotlin
 <code><code>CameraCharacteristics characteristics = cameraManager.getCameraCharacteristics(cameraId); RecommendedStreamConfigurationMap configs = characteristics.getRecommendedStreamConfigurationMap( RecommendedStreamConfigurationMap.USECASE_PREVIEW); </code></code>
@@ -42,29 +42,29 @@ An instance of this object is available by invoking `https://developer.android.c
 
 | Public methods ||
 |---|---|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of supported high resolution sizes, which cannot operate at full BURST_CAPTURE rate. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Range](../android.util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighSpeedVideoFpsRanges()()` Get a list of supported high speed video recording FPS ranges. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Range](../android.util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighSpeedVideoFpsRangesFor(android.util.Size)(size: https://developer.android.com/reference/kotlin/android/util/Size.html#)` Get the frame per second ranges (fpsMin, fpsMax) for input high speed video size. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | getHighResolutionOutputSizes Get a list of supported high resolution sizes, which cannot operate at full BURST_CAPTURE rate. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Range](../android.util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>? | getHighSpeedVideoFpsRanges Get a list of supported high speed video recording FPS ranges. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Range](../android.util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>? | getHighSpeedVideoFpsRangesFor Get the frame per second ranges (fpsMin, fpsMax) for input high speed video size. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighSpeedVideoSizes()()` Get a list of supported high speed video recording sizes. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighSpeedVideoSizesFor(android.util.Range)(fpsRange: https://developer.android.com/reference/kotlin/android/util/Range.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Get the supported video sizes for an input high speed FPS range. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getInputFormats()()` Get the image `format` input formats in this stream configuration. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | getHighSpeedVideoSizes Get a list of supported high speed video recording sizes. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | getHighSpeedVideoSizesFor Get the supported video sizes for an input high speed FPS range. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | getInputFormats Get the image `format` input formats in this stream configuration. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getInputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the supported input sizes for this input format. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputFormats()()` Get the image `format` output formats in this stream configuration. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputMinFrameDuration(kotlin.Int,%20android.util.Size)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://developer.android.com/reference/kotlin/android/util/Size.html#)` Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the format/size combination (in nanoseconds). |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | getInputSizes Get the supported input sizes for this input format. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | getOutputFormats Get the image `format` output formats in this stream configuration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getOutputMinFrameDuration Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the format/size combination (in nanoseconds). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputMinFrameDuration(java.lang.Class,%20android.util.Size)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>, size: https://developer.android.com/reference/kotlin/android/util/Size.html#)` Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the class/size combination (in nanoseconds). |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputSizes(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a list of sizes compatible with the requested image `format`. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputSizes(java.lang.Class)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Get a list of sizes compatible with `klass` to use as an output. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getOutputMinFrameDuration Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the class/size combination (in nanoseconds). |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | getOutputSizes Get a list of sizes compatible with the requested image `format`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Size](../android.util/Size.md)!\>? | getOutputSizes Get a list of sizes compatible with `klass` to use as an output. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputStallDuration(kotlin.Int,%20android.util.Size)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, size: https://developer.android.com/reference/kotlin/android/util/Size.html#)` Get the stall duration for the format/size combination (in nanoseconds). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputStallDuration(java.lang.Class,%20android.util.Size)(klass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>, size: https://developer.android.com/reference/kotlin/android/util/Size.html#)` Get the stall duration for the class/size combination (in nanoseconds). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getRecommendedUseCase()()` Get the use case value for the recommended stream configurations. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getOutputStallDuration Get the stall duration for the format/size combination (in nanoseconds). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getOutputStallDuration Get the stall duration for the class/size combination (in nanoseconds). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRecommendedUseCase Get the use case value for the recommended stream configurations. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)(inputFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the image `format` output formats for a reprocessing input format. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#isOutputSupportedFor(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Determine whether or not the `surface` in its current state is suitable to be included in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` as an output. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#isOutputSupportedFor(kotlin.Int)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether or not output surfaces with a particular user-defined format can be passed `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | getValidOutputFormatsForInput Get the image `format` output formats for a reprocessing input format. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOutputSupportedFor Determine whether or not the `surface` in its current state is suitable to be included in a createCaptureSession as an output. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOutputSupportedFor Determine whether or not output surfaces with a particular user-defined format can be passed createCaptureSession. |
 | --- | --- |
 
 ## Constants
@@ -77,7 +77,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val USECASE_10BIT_OUTPUT: Int
 ```
 
-If supported, the recommended 10-bit output stream configurations must include a subset of the advertised `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` outputs that are optimized for power and performance when registered along with a supported 10-bit dynamic range profile. See `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)` for details.
+If supported, the recommended 10-bit output stream configurations must include a subset of the advertised `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` outputs that are optimized for power and performance when registered along with a supported 10-bit dynamic range profile. See setDynamicRangeProfile for details.
 
  Value: 8
 
@@ -177,7 +177,7 @@ fun getHighResolutionOutputSizes(format: Int): MutableSet<Size!>?
 
 Get a list of supported high resolution sizes, which cannot operate at full BURST_CAPTURE rate.
 
-For further information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)`.
+For further information refer to getHighResolutionOutputSizes.
 
 | Parameters ||
 |---|---|
@@ -197,7 +197,7 @@ fun getHighSpeedVideoFpsRanges(): MutableSet<Range<Int!>!>?
 
 Get a list of supported high speed video recording FPS ranges.
 
-For further information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRanges()`.
+For further information refer to getHighSpeedVideoFpsRanges.
 
 | Return ||
 |---|---|
@@ -213,11 +213,11 @@ fun getHighSpeedVideoFpsRangesFor(size: Size): MutableSet<Range<Int!>!>?
 
 Get the frame per second ranges (fpsMin, fpsMax) for input high speed video size.
 
-For further information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRangesFor(android.util.Size)`.
+For further information refer to getHighSpeedVideoFpsRangesFor.
 
 | Parameters ||
 |---|---|
-| `size` | [Size](../android.util/Size.md): one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighSpeedVideoSizes()` This value cannot be `null`. |
+| `size` | [Size](../android.util/Size.md): one of the sizes returned by getHighSpeedVideoSizes This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -237,7 +237,7 @@ fun getHighSpeedVideoSizes(): MutableSet<Size!>?
 
 Get a list of supported high speed video recording sizes.
 
-For more information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()`.
+For more information refer to getHighSpeedVideoSizes.
 
 | Return ||
 |---|---|
@@ -253,11 +253,11 @@ fun getHighSpeedVideoSizesFor(fpsRange: Range<Int!>): MutableSet<Size!>?
 
 Get the supported video sizes for an input high speed FPS range.
 
-For further information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizesFor(android.util.Range)`.
+For further information refer to getHighSpeedVideoSizesFor.
 
 | Parameters ||
 |---|---|
-| `fpsRange` | [Range](../android.util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: one of the FPS ranges returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getHighSpeedVideoFpsRanges()` This value cannot be `null`. |
+| `fpsRange` | [Range](../android.util/Range.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: one of the FPS ranges returned by getHighSpeedVideoFpsRanges This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -293,11 +293,11 @@ fun getInputSizes(format: Int): MutableSet<Size!>?
 
 Get the supported input sizes for this input format.
 
-The format must have come from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getInputFormats()`; otherwise `null` is returned.
+The format must have come from getInputFormats; otherwise `null` is returned.
 
 | Parameters ||
 |---|---|
-| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a format from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getInputFormats()` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RGB_565:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YV12:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#Y8:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P210:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV21:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUY2:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_JPEG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_422_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_444_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW10:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW12:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW14:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_POINT_CLOUD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC_ULTRAHDR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG_R:kotlin.Int` |
+| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a format from getInputFormats Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RGB_565:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YV12:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#Y8:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P210:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV21:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUY2:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_JPEG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_422_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_444_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#FLEX_RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW10:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW12:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW14:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#DEPTH_POINT_CLOUD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC_ULTRAHDR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG_R:kotlin.Int` |
 
 | Return ||
 |---|---|
@@ -313,7 +313,7 @@ fun getOutputFormats(): MutableSet<Int!>
 
 Get the image `format` output formats in this stream configuration.
 
-For more information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()`.
+For more information refer to getOutputFormats.
 
 | Return ||
 |---|---|
@@ -360,11 +360,11 @@ fun <T : Any!> getOutputMinFrameDuration(
 
 Get the minimum `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.html#SENSOR_FRAME_DURATION:android.hardware.camera2.CaptureRequest.Key` for the class/size combination (in nanoseconds).
 
-For more information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputMinFrameDuration(java.lang.Class,%20android.util.Size)`.
+For more information refer to getOutputMinFrameDuration.
 
 | Parameters ||
 |---|---|
-| `klass` | [Class](../java.lang/Class.md)\<T\>: a class which has a non-empty array returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputSizes(java.lang.Class)` This value cannot be `null`. |
+| `klass` | [Class](../java.lang/Class.md)\<T\>: a class which has a non-empty array returned by getOutputSizes This value cannot be `null`. |
 | `size` | [Size](../android.util/Size.md): an output-compatible size. This value cannot be `null`. |
 
 | Return ||
@@ -405,7 +405,7 @@ fun <T : Any!> getOutputSizes(klass: Class<T>): MutableSet<Size!>?
 
 Get a list of sizes compatible with `klass` to use as an output.
 
-For further information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)`.
+For further information refer to getOutputSizes.
 
 | Parameters ||
 |---|---|
@@ -456,11 +456,11 @@ fun <T : Any!> getOutputStallDuration(
 
 Get the stall duration for the class/size combination (in nanoseconds).
 
-For more information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputStallDuration(java.lang.Class,%20android.util.Size)`.
+For more information refer to getOutputStallDuration.
 
 | Parameters ||
 |---|---|
-| `klass` | [Class](../java.lang/Class.md)\<T\>: a class which has a non-empty array returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/RecommendedStreamConfigurationMap#getOutputSizes(java.lang.Class)`. This value cannot be `null`. |
+| `klass` | [Class](../java.lang/Class.md)\<T\>: a class which has a non-empty array returned by getOutputSizes. This value cannot be `null`. |
 | `size` | [Size](../android.util/Size.md): an output-compatible size. This value cannot be `null`. |
 
 | Return ||
@@ -495,7 +495,7 @@ fun getValidOutputFormatsForInput(inputFormat: Int): MutableSet<Int!>?
 
 Get the image `format` output formats for a reprocessing input format.
 
-For more information refer to `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)`.
+For more information refer to getValidOutputFormatsForInput.
 
 | Parameters ||
 |---|---|
@@ -513,7 +513,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun isOutputSupportedFor(surface: Surface): Boolean
 ```
 
-Determine whether or not the `surface` in its current state is suitable to be included in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` as an output.
+Determine whether or not the `surface` in its current state is suitable to be included in a createCaptureSession as an output.
 
 For more information refer to android.hardware.camera2.params.StreamConfigurationMap#isOutputSupportedFor.
 
@@ -537,7 +537,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun isOutputSupportedFor(format: Int): Boolean
 ```
 
-Determine whether or not output surfaces with a particular user-defined format can be passed `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`.
+Determine whether or not output surfaces with a particular user-defined format can be passed createCaptureSession.
 
 For further information refer to android.hardware.camera2.params.StreamConfigurationMap#isOutputSupportedFor.
 
@@ -547,7 +547,7 @@ For further information refer to android.hardware.camera2.params.StreamConfigura
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if using a `surface` with this `format` will be supported with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.html#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if using a `surface` with this `format` will be supported with createCaptureSession |
 
 | Exceptions ||
 |---|---|

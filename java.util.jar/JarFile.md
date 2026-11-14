@@ -13,7 +13,7 @@ open class JarFile : ZipFile
 
 The `JarFile` class is used to read the contents of a jar file from any file that can be opened with `java.io.RandomAccessFile`. It extends the class `java.util.zip.ZipFile` with support for reading an optional `Manifest` entry. The `Manifest` can be used to specify meta-information about the jar file and its entries.
 
-Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` to be thrown. If the verify flag is on when opening a signed jar file, the content of the file is verified against its signature embedded inside the file. Please note that the verification process does not include validating the signer's certificate. A caller should inspect the return value of `https://developer.android.com/reference/kotlin/java/util/jar/JarEntry#getCodeSigners()` to further determine if the signature can be trusted.
+Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#` to be thrown. If the verify flag is on when opening a signed jar file, the content of the file is verified against its signature embedded inside the file. Please note that the verification process does not include validating the signer's certificate. A caller should inspect the return value of getCodeSigners to further determine if the signature can be trusted.
 
 ## Summary
 
@@ -27,26 +27,26 @@ Unless otherwise noted, passing a null argument to a constructor or method in th
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#JarFile(java.io.File)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!)` Creates a new `JarFile` to read from the specified `File` object. |
-| `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#JarFile(java.io.File,%20kotlin.Boolean)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, verify: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new `JarFile` to read from the specified `File` object. |
-| `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#JarFile(java.io.File,%20kotlin.Boolean,%20kotlin.Int)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, verify: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `JarFile` to read from the specified `File` object in the specified mode. |
-| `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#JarFile(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a new `JarFile` to read from the specified file `name`. |
-| `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#JarFile(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, verify: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates a new `JarFile` to read from the specified file `name`. |
+| JarFile Creates a new `JarFile` to read from the specified `File` object. |
+| JarFile Creates a new `JarFile` to read from the specified `File` object. |
+| JarFile Creates a new `JarFile` to read from the specified `File` object in the specified mode. |
+| JarFile Creates a new `JarFile` to read from the specified file `name`. |
+| JarFile Creates a new `JarFile` to read from the specified file `name`. |
 
 | Public methods ||
 |---|---|
-| open [Enumeration](../java.util/Enumeration.md)\< [JarEntry](JarEntry.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#entries()()` Returns an enumeration of the zip file entries. |
-| open [ZipEntry](../java.util.zip/ZipEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `ZipEntry` for the given entry name or `null` if not found. |
-| open [InputStream](../java.io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getInputStream(java.util.zip.ZipEntry)(ze: https://developer.android.com/reference/kotlin/java/util/zip/ZipEntry.html#!)` Returns an input stream for reading the contents of the specified zip file entry. |
+| open [Enumeration](../java.util/Enumeration.md)\< [JarEntry](JarEntry.md)!\>! | entries Returns an enumeration of the zip file entries. |
+| open [ZipEntry](../java.util.zip/ZipEntry.md)! | getEntry Returns the `ZipEntry` for the given entry name or `null` if not found. |
+| open [InputStream](../java.io/InputStream.md)! | getInputStream Returns an input stream for reading the contents of the specified zip file entry. |
 | --- | --- |
-| open [JarEntry](JarEntry.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getJarEntry(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the `JarEntry` for the given entry name or `null` if not found. |
-| open [Manifest](Manifest.md)! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#getManifest()()` Returns the jar file manifest, or `null` if none. |
-| open [Stream](../java.util.stream/Stream.md)\< [JarEntry](JarEntry.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/jar/JarFile#stream()()` Returns an ordered `Stream` over the ZIP file entries. |
+| open [JarEntry](JarEntry.md)! | getJarEntry Returns the `JarEntry` for the given entry name or `null` if not found. |
+| open [Manifest](Manifest.md)! | getManifest Returns the jar file manifest, or `null` if none. |
+| open [Stream](../java.util.stream/Stream.md)\< [JarEntry](JarEntry.md)!\>! | stream Returns an ordered `Stream` over the ZIP file entries. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#close()()` Closes the ZIP file. Closing this ZIP file will close all of the input streams previously returned by invocations of the `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)` method. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#getComment()()` Returns the zip file comment, or null if none. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#getName()()` Returns the path name of the ZIP file. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#size()()` Returns the number of entries in the ZIP file. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/util/zip/ZipFile.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | close Closes the ZIP file. Closing this ZIP file will close all of the input streams previously returned by invocations of the getInputStream method. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getComment Returns the zip file comment, or null if none. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` | getName Returns the path name of the ZIP file. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | size Returns the number of entries in the ZIP file. <br /> | ||
 
 ## Constants
 
@@ -271,7 +271,7 @@ Returns the `JarEntry` for the given entry name or `null` if not found.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/jar/JarEntry`
+- JarEntry
 
 ### getManifest
 

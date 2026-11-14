@@ -30,15 +30,15 @@ Describes a face detected in an image.
 
 | Public methods ||
 |---|---|
-| [Rect](../android.graphics/Rect.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getBounds()()` Bounds of the face. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getId()()` An unique id per face while the face is visible to the tracker. |
-| [Point](../android.graphics/Point.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getLeftEyePosition()()` The coordinates of the center of the left eye. |
+| [Rect](../android.graphics/Rect.md)! | getBounds Bounds of the face. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId An unique id per face while the face is visible to the tracker. |
+| [Point](../android.graphics/Point.md)! | getLeftEyePosition The coordinates of the center of the left eye. |
 | --- | --- |
-| [Point](../android.graphics/Point.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getMouthPosition()()` The coordinates of the center of the mouth. |
-| [Point](../android.graphics/Point.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getRightEyePosition()()` The coordinates of the center of the right eye. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getScore()()` The confidence level for the detection of the face. |
+| [Point](../android.graphics/Point.md)! | getMouthPosition The coordinates of the center of the mouth. |
+| [Point](../android.graphics/Point.md)! | getRightEyePosition The coordinates of the center of the right eye. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getScore The confidence level for the detection of the face. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#toString()()` Represent the Face as a string for debugging purposes. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Represent the Face as a string for debugging purposes. |
 
 ## Constants
 
@@ -56,7 +56,7 @@ The ID is `-1` when the optional set of fields is unsupported.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getId()`
+- getId
 
 ### SCORE_MAX
 
@@ -72,7 +72,7 @@ The maximum possible value for the confidence level.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getScore()`
+- getScore
 
 ### SCORE_MIN
 
@@ -88,7 +88,7 @@ The minimum possible value for the confidence level.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getScore()`
+- getScore
 
 ## Public methods
 
@@ -135,7 +135,7 @@ fun getLeftEyePosition(): Point!
 
 The coordinates of the center of the left eye.
 
-The coordinates are in the same space as the ones for `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getBounds()`. This is an optional field and may not be supported on all devices. If not supported, the value will always be set to null. This value will always be null only if `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getId()` returns {@value #ID_UNSUPPORTED}.
+The coordinates are in the same space as the ones for getBounds. This is an optional field and may not be supported on all devices. If not supported, the value will always be set to null. This value will always be null only if getId returns {@value #ID_UNSUPPORTED}.
 
 | Return ||
 |---|---|
@@ -151,7 +151,7 @@ fun getMouthPosition(): Point!
 
 The coordinates of the center of the mouth.
 
-The coordinates are in the same space as the ones for `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getBounds()`. This is an optional field and may not be supported on all devices. If not supported, the value will always be set to null. This value will always be null only if `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getId()` returns {@value #ID_UNSUPPORTED}.
+The coordinates are in the same space as the ones for getBounds. This is an optional field and may not be supported on all devices. If not supported, the value will always be set to null. This value will always be null only if getId returns {@value #ID_UNSUPPORTED}.
 
 <br />
 
@@ -169,7 +169,7 @@ fun getRightEyePosition(): Point!
 
 The coordinates of the center of the right eye.
 
-The coordinates are in the same space as the ones for `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getBounds()`.This is an optional field and may not be supported on all devices. If not supported, the value will always be set to null. This value will always be null only if `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/Face#getId()` returns {@value #ID_UNSUPPORTED}.
+The coordinates are in the same space as the ones for getBounds.This is an optional field and may not be supported on all devices. If not supported, the value will always be set to null. This value will always be null only if getId returns {@value #ID_UNSUPPORTED}.
 
 | Return ||
 |---|---|

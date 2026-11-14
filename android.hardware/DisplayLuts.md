@@ -34,13 +34,13 @@ Importantly: the LUT is applied on colors in linear space, in the source content
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#DisplayLuts()()` Create a `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#` instance. |
+| DisplayLuts Create a DisplayLuts instance. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#set(android.hardware.DisplayLuts.Entry)(entry: https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry)` Set a Lut to be applied. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#set(android.hardware.DisplayLuts.Entry,%20android.hardware.DisplayLuts.Entry)(first: https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry, second: https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts.Entry)` Set Luts in order to be applied. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#toString()()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Set a Lut to be applied. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Set Luts in order to be applied. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Public constructors
@@ -53,7 +53,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 DisplayLuts()
 ```
 
-Create a `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#` instance.
+Create a DisplayLuts instance.
 
 ## Public methods
 
@@ -67,7 +67,7 @@ fun set(entry: DisplayLuts.Entry): Unit
 
 Set a Lut to be applied.
 
-Use either this or `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#set(android.hardware.DisplayLuts.Entry,%20android.hardware.DisplayLuts.Entry)`. The function will replace any previously set lut(s).
+Use either this or set. The function will replace any previously set lut(s).
 
 | Parameters ||
 |---|---|
@@ -86,7 +86,7 @@ fun set(
 
 Set Luts in order to be applied.
 
-An 1D Lut and 3D Lut will be applied in order. Use either this or `https://developer.android.com/reference/kotlin/android/hardware/DisplayLuts#set(android.hardware.DisplayLuts.Entry)`. The function will replace any previously set lut(s)
+An 1D Lut and 3D Lut will be applied in order. Use either this or set. The function will replace any previously set lut(s)
 
 | Parameters ||
 |---|---|

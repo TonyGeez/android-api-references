@@ -10,7 +10,7 @@ open class ClipDescription : Parcelable
 | --- | --- |
 | ↳ | [android.content.ClipDescription](ClipDescription.md) |
 
-Meta-data describing the contents of a `https://developer.android.com/reference/kotlin/android/content/ClipData`. Provides enough information to know if you can handle the ClipData, but not the data itself.
+Meta-data describing the contents of a ClipData. Provides enough information to know if you can handle the ClipData, but not the data itself.
 
 > [!NOTE]
 >
@@ -24,9 +24,9 @@ Meta-data describing the contents of a `https://developer.android.com/reference/
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` Value returned by `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` if text classification has been completed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_COMPLETE:kotlin.Int` Value returned by `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` if text classification has not been completed on the associated clip. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_PERFORMED:kotlin.Int` Value returned by `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` if text classification was not and will not be performed on the associated clip. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` Value returned by getConfidenceScore if text classification has been completed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_COMPLETE:kotlin.Int` Value returned by getConfidenceScore if text classification has not been completed on the associated clip. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_PERFORMED:kotlin.Int` Value returned by getConfidenceScore if text classification was not and will not be performed on the associated clip. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#EXTRA_IS_REMOTE_DEVICE:kotlin.String` Indicates that a ClipData's source is a remote device. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#EXTRA_IS_SENSITIVE:kotlin.String` Indicates that a ClipData contains potentially sensitive information, such as a password or credit card number. |
@@ -40,48 +40,48 @@ Meta-data describing the contents of a `https://developer.android.com/reference/
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/ClipDescription#ClipDescription(android.content.ClipDescription)(o: https://developer.android.com/reference/kotlin/android/content/ClipDescription#!)` Create a copy of a ClipDescription. |
-| `https://developer.android.com/reference/kotlin/android/content/ClipDescription#ClipDescription(kotlin.CharSequence,%20kotlin.Array)(label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, mimeTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a new clip. |
+| ClipDescription Create a copy of a ClipDescription. |
+| ClipDescription Create a new clip. |
 
 | Public methods ||
 |---|---|
-| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#compareMimeTypes(kotlin.String,%20kotlin.String)(concreteType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, desiredType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Helper to compare two MIME types, where one may be a pattern. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#filterMimeTypes(kotlin.String)(mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Filter the clip description MIME types by the given MIME type. |
+| open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | compareMimeTypes Helper to compare two MIME types, where one may be a pattern. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | filterMimeTypes Filter the clip description MIME types by the given MIME type. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getClassificationStatus()()` Returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` if text classification has been performed on the associated `https://developer.android.com/reference/kotlin/android/content/ClipData`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)(entity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a score indicating confidence that an instance of the given entity is present in the first item of the clip data, if that item is plain text and text classification has been performed. |
-| open [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getExtras()()` Retrieve extended data from the clip description. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getClassificationStatus Returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` if text classification has been performed on the associated ClipData. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getConfidenceScore Returns a score indicating confidence that an instance of the given entity is present in the first item of the clip data, if that item is plain text and text classification has been performed. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)! | getExtras Retrieve extended data from the clip description. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getLabel()()` Return the label for this clip. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getMimeType(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return one of the possible clip MIME types. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getMimeTypeCount()()` Return the number of MIME types the clip is available in. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getLabel Return the label for this clip. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getMimeType Return one of the possible clip MIME types. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMimeTypeCount Return the number of MIME types the clip is available in. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getSourceDeviceName()()` Returns the name of the source device where the clip originated from. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getTimestamp()()` Return the timestamp at which the associated `https://developer.android.com/reference/kotlin/android/content/ClipData` is copied to global clipboard in the `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()` time base. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#hasMimeType(kotlin.String)(mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Check whether the clip description contains the given MIME type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getSourceDeviceName Returns the name of the source device where the clip originated from. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimestamp Return the timestamp at which the associated ClipData is copied to global clipboard in the currentTimeMillis time base. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasMimeType Check whether the clip description contains the given MIME type. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#isExcludedFromRemoteClipboard()()` Returns true if this ClipData should be excluded from remote clipboard syncing. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#isRemoteClipboard()()` Returns true if this ClipData was set by a remote clipboard. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#isStyledText()()` Returns true if the first item of the associated `https://developer.android.com/reference/kotlin/android/content/ClipData` contains styled text, i. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isExcludedFromRemoteClipboard Returns true if this ClipData should be excluded from remote clipboard syncing. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRemoteClipboard Returns true if this ClipData was set by a remote clipboard. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isStyledText Returns true if the first item of the associated ClipData contains styled text, i. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#setExcludedFromRemoteClipboard(kotlin.Boolean)(excludeFromRemoteClipboard: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether this ClipData should be excluded from remote clipboard syncing. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#setExtras(android.os.PersistableBundle)(extras: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` Add extended data to the clip description. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#toString()()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExcludedFromRemoteClipboard Sets whether this ClipData should be excluded from remote clipboard syncing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setExtras Add extended data to the clip description. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ClipDescription#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -97,7 +97,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val CLASSIFICATION_COMPLETE: Int
 ```
 
-Value returned by `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` if text classification has been completed.
+Value returned by getConfidenceScore if text classification has been completed.
 
  Value: 3
 
@@ -109,7 +109,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val CLASSIFICATION_NOT_COMPLETE: Int
 ```
 
-Value returned by `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` if text classification has not been completed on the associated clip. This will be always be the case if the clip has not been copied to clipboard, or if there is no associated clip.
+Value returned by getConfidenceScore if text classification has not been completed on the associated clip. This will be always be the case if the clip has not been copied to clipboard, or if there is no associated clip.
 
  Value: 1
 
@@ -121,7 +121,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val CLASSIFICATION_NOT_PERFORMED: Int
 ```
 
-Value returned by `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` if text classification was not and will not be performed on the associated clip. This may be the case if the clip does not contain text in its first item, or if the text is too long.
+Value returned by getConfidenceScore if text classification was not and will not be performed on the associated clip. This may be the case if the clip does not contain text in its first item, or if the text is too long.
 
  Value: 2
 
@@ -282,7 +282,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -314,7 +314,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getClassificationStatus(): Int
 ```
 
-Returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` if text classification has been performed on the associated `https://developer.android.com/reference/kotlin/android/content/ClipData`. If this is the case then `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getConfidenceScore(kotlin.String)` may be used to retrieve information about entities within the text. Otherwise, returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_COMPLETE:kotlin.Int` if classification has not yet returned results, or `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_PERFORMED:kotlin.Int` if classification was not attempted (e.g. because the text was too long).
+Returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` if text classification has been performed on the associated ClipData. If this is the case then getConfidenceScore may be used to retrieve information about entities within the text. Otherwise, returns `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_COMPLETE:kotlin.Int` if classification has not yet returned results, or `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_NOT_PERFORMED:kotlin.Int` if classification was not attempted (e.g. because the text was too long).
 
 | Return ||
 |---|---|
@@ -332,7 +332,7 @@ Returns a score indicating confidence that an instance of the given entity is pr
 
 Entities should be as defined in the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` class, such as `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#TYPE_ADDRESS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#TYPE_URL:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#TYPE_EMAIL:kotlin.String`.
 
-If the result is positive for any entity, the full classification result as a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.html#` object may be obtained using the `https://developer.android.com/reference/kotlin/android/content/ClipData.Item#getTextLinks()` method.
+If the result is positive for any entity, the full classification result as a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.html#` object may be obtained using the getTextLinks method.
 
 | Parameters ||
 |---|---|
@@ -344,7 +344,7 @@ If the result is positive for any entity, the full classification result as a `h
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getClassificationStatus()` is not `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` |
+| `java.lang.IllegalStateException` | if getClassificationStatus is not `https://developer.android.com/reference/kotlin/android/content/ClipDescription#CLASSIFICATION_COMPLETE:kotlin.Int` |
 
 ### getExtras
 
@@ -358,11 +358,11 @@ Retrieve extended data from the clip description.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!` | the bundle containing extended data previously set with `https://developer.android.com/reference/kotlin/android/content/ClipDescription#setExtras(android.os.PersistableBundle)`, or null if no extras have been set. |
+| `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!` | the bundle containing extended data previously set with setExtras, or null if no extras have been set. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ClipDescription#setExtras(android.os.PersistableBundle)`
+- setExtras
 
 ### getLabel
 
@@ -416,11 +416,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getTimestamp(): Long
 ```
 
-Return the timestamp at which the associated `https://developer.android.com/reference/kotlin/android/content/ClipData` is copied to global clipboard in the `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()` time base.
+Return the timestamp at which the associated ClipData is copied to global clipboard in the currentTimeMillis time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | timestamp at which the associated `https://developer.android.com/reference/kotlin/android/content/ClipData` is copied to global clipboard or `0` if it is not copied to clipboard. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | timestamp at which the associated ClipData is copied to global clipboard or `0` if it is not copied to clipboard. |
 
 ### hasMimeType
 
@@ -468,7 +468,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun isStyledText(): Boolean
 ```
 
-Returns true if the first item of the associated `https://developer.android.com/reference/kotlin/android/content/ClipData` contains styled text, i.e. if it contains spans such as `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle.html#`, `https://developer.android.com/reference/kotlin/android/text/style/ParagraphStyle.html#`, or `https://developer.android.com/reference/kotlin/android/text/style/UpdateAppearance.html#`. Returns false if it does not, or if there is no associated clip data.
+Returns true if the first item of the associated ClipData contains styled text, i.e. if it contains spans such as `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle.html#`, `https://developer.android.com/reference/kotlin/android/text/style/ParagraphStyle.html#`, or `https://developer.android.com/reference/kotlin/android/text/style/UpdateAppearance.html#`. Returns false if it does not, or if there is no associated clip data.
 
 ### setExcludedFromRemoteClipboard
 
@@ -491,7 +491,7 @@ open fun setExtras(extras: PersistableBundle!): Unit
 Add extended data to the clip description.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ClipDescription#getExtras()`
+- getExtras
 
 ### toString
 

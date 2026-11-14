@@ -10,7 +10,7 @@ class Sensor
 | --- | --- |
 | ↳ | [android.hardware.Sensor](Sensor.md) |
 
-Class representing a sensor. Use `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getSensorList(kotlin.Int)` to get the list of available sensors. For more information about Android sensors, read the [Motion Sensors guide](../guide/topics/sensors/sensors_motion.md).
+Class representing a sensor. Use getSensorList to get the list of available sensors. For more information about Android sensors, read the [Motion Sensors guide](../guide/topics/sensors/sensors_motion.md).
 
 <br />
 
@@ -18,7 +18,7 @@ Class representing a sensor. Use `https://developer.android.com/reference/kotlin
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_CONTINUOUS:kotlin.Int` Events are reported at a constant rate which is set by the rate parameter of `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_CONTINUOUS:kotlin.Int` Events are reported at a constant rate which is set by the rate parameter of registerListener. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_ONE_SHOT:kotlin.Int` Events are reported in one-shot mode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#REPORTING_MODE_ON_CHANGE:kotlin.Int` Events are reported only when the value changes. |
 | --- | --- |
@@ -119,32 +119,32 @@ Class representing a sensor. Use `https://developer.android.com/reference/kotlin
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getFifoMaxEventCount()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getFifoReservedEventCount()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getHighestDirectReportRateLevel()()` Get the highest supported direct report mode rate level of the sensor. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFifoMaxEventCount <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFifoReservedEventCount <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getHighestDirectReportRateLevel Get the highest supported direct report mode rate level of the sensor. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getId()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMaxDelay()()` This value is defined only for continuous and on-change sensors. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMaximumRange()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxDelay This value is defined only for continuous and on-change sensors. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getMaximumRange <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getMinDelay()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getName()()` <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getPower()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinDelay <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getPower <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getReportingMode()()` Each sensor has exactly one reporting mode associated with it. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getResolution()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getStringType()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getReportingMode Each sensor has exactly one reporting mode associated with it. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getResolution <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getStringType <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getType()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getVendor()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#getVersion()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getVendor <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVersion <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isAdditionalInfoSupported()()` Returns true if the sensor supports sensor additional information API |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isDirectChannelTypeSupported(kotlin.Int)(sharedMemType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Test if a sensor supports a specified direct channel type. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isDynamicSensor()()` Returns true if the sensor is a dynamic sensor. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAdditionalInfoSupported Returns true if the sensor supports sensor additional information API |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDirectChannelTypeSupported Test if a sensor supports a specified direct channel type. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDynamicSensor Returns true if the sensor is a dynamic sensor. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor()()` Returns true if the sensor is a wake-up sensor. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/Sensor#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWakeUpSensor Returns true if the sensor is a wake-up sensor. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -156,7 +156,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val REPORTING_MODE_CONTINUOUS: Int
 ```
 
-Events are reported at a constant rate which is set by the rate parameter of `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)`. Note: If other applications are requesting a higher rate, the sensor data might be delivered at faster rates than requested.
+Events are reported at a constant rate which is set by the rate parameter of registerListener. Note: If other applications are requesting a higher rate, the sensor data might be delivered at faster rates than requested.
 
  Value: 0
 
@@ -168,7 +168,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val REPORTING_MODE_ONE_SHOT: Int
 ```
 
-Events are reported in one-shot mode. Upon detection of an event, the sensor deactivates itself and then sends a single event. Sensors of this reporting mode must be registered to using `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#requestTriggerSensor(android.hardware.TriggerEventListener,%20android.hardware.Sensor)`.
+Events are reported in one-shot mode. Upon detection of an event, the sensor deactivates itself and then sends a single event. Sensors of this reporting mode must be registered to using requestTriggerSensor.
 
  Value: 2
 
@@ -180,7 +180,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val REPORTING_MODE_ON_CHANGE: Int
 ```
 
-Events are reported only when the value changes. Event delivery rate can be limited by setting appropriate value for rate parameter of `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int)` Note: If other applications are requesting a higher rate, the sensor data might be delivered at faster rates than requested.
+Events are reported only when the value changes. Event delivery rate can be limited by setting appropriate value for rate parameter of registerListener Note: If other applications are requesting a higher rate, the sensor data might be delivered at faster rates than requested.
 
  Value: 1
 
@@ -198,7 +198,7 @@ Events are reported as described in the description of the sensor. The rate pass
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int)`
+- registerListener
 
 ### STRING_TYPE_ACCELEROMETER
 
@@ -573,7 +573,7 @@ Deprecated in [API level 20](https://developer.android.com/guide/topics/manifest
 static val STRING_TYPE_ORIENTATION: String
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray)` instead.*
+**Deprecated:** *use getOrientation instead.*
 
 A constant string describing an orientation sensor type.
 
@@ -986,7 +986,7 @@ A constant describing a heart rate monitor.
 
 The reported value is the heart rate in beats per minute.
 
-The reported accuracy represents the status of the monitor during the reading. See the `SENSOR_STATUS_*` constants in `https://developer.android.com/reference/kotlin/android/hardware/SensorManager` for more details on accuracy/status values. In particular, when the accuracy is `SENSOR_STATUS_UNRELIABLE` or `SENSOR_STATUS_NO_CONTACT`, the heart rate value should be discarded.
+The reported accuracy represents the status of the monitor during the reading. See the `SENSOR_STATUS_*` constants in SensorManager for more details on accuracy/status values. In particular, when the accuracy is `SENSOR_STATUS_UNRELIABLE` or `SENSOR_STATUS_NO_CONTACT`, the heart rate value should be discarded.
 
 This sensor requires permission `android.permission.BODY_SENSORS` for SDK \< 36 and `android.permission.health.READ_HEART_RATE` for SDK \>= 36. The sensor will be returned by `SensorManager.getSensorList` and `SensorManager.getDefaultSensor`, but the application must hold this permission in order to successfully register a listener and receive data.
 
@@ -1097,7 +1097,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val TYPE_ORIENTATION: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#getOrientation(kotlin.FloatArray,%20kotlin.FloatArray)` instead.*
+**Deprecated:** *use getOrientation instead.*
 
 A constant describing an orientation sensor type.
 
@@ -1147,7 +1147,7 @@ See `https://developer.android.com/reference/kotlin/android/hardware/SensorEvent
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor()`
+- isWakeUpSensor
 
 ### TYPE_RELATIVE_HUMIDITY
 
@@ -1189,13 +1189,13 @@ A constant describing a significant motion trigger sensor.
 
 It triggers when an event occurs and then automatically disables itself. The sensor continues to operate while the device is asleep and will automatically wake the device to notify when significant motion is detected. The application does not need to hold any wake locks for this sensor to trigger. This is a wake up sensor.
 
-See `https://developer.android.com/reference/kotlin/android/hardware/TriggerEvent` for more details.
+See TriggerEvent for more details.
 
  Value: 17
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/Sensor#isWakeUpSensor()`
+- isWakeUpSensor
 
 ### TYPE_STATIONARY_DETECT
 
@@ -1478,7 +1478,7 @@ Returns true if the sensor supports sensor additional information API
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/SensorAdditionalInfo`
+- SensorAdditionalInfo
 
 ### isDirectChannelTypeSupported
 
@@ -1546,7 +1546,7 @@ Non-wake-up sensors are sensors that do not wake the AP out of suspend to report
 
 **Wake-up sensors**
 
-In opposition to non-wake-up sensors, wake-up sensors ensure that their data is delivered independently of the state of the AP. While the AP is awake, the wake-up sensors behave like non-wake-up-sensors. When the AP is asleep, wake-up sensors wake up the AP to deliver events. That is, the AP will wake up and the sensor will deliver the events before the maximum reporting latency is elapsed or the hardware FIFO gets full. See `https://developer.android.com/reference/kotlin/android/hardware/SensorManager#registerListener(android.hardware.SensorEventListener,%20android.hardware.Sensor,%20kotlin.Int,%20kotlin.Int)` for more details.
+In opposition to non-wake-up sensors, wake-up sensors ensure that their data is delivered independently of the state of the AP. While the AP is awake, the wake-up sensors behave like non-wake-up-sensors. When the AP is asleep, wake-up sensors wake up the AP to deliver events. That is, the AP will wake up and the sensor will deliver the events before the maximum reporting latency is elapsed or the hardware FIFO gets full. See registerListener for more details.
 
 | Return ||
 |---|---|

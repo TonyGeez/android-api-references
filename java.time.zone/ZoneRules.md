@@ -12,7 +12,7 @@ class ZoneRules : Serializable
 
 The rules defining how the zone offset varies for a single time-zone.
 
-The rules model all the historic and future transitions for a time-zone. `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition` is used for known transitions, typically historic. `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransitionRule` is used for future transitions that are based on the result of an algorithm.
+The rules model all the historic and future transitions for a time-zone. ZoneOffsetTransition is used for known transitions, typically historic. ZoneOffsetTransitionRule is used for future transitions that are based on the result of an algorithm.
 
 The same rules may be shared internally between multiple zone IDs.
 
@@ -24,29 +24,29 @@ A rule implementation may or may not store full information about historic and f
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this set of rules equals another. |
-| [Duration](../java.time/Duration.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getDaylightSavings(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Gets the amount of daylight savings in use for the specified instant in this zone. |
-| [ZoneOffset](../java.time/ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getOffset(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Gets the offset applicable at the specified instant in these rules. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks if this set of rules equals another. |
+| [Duration](../java.time/Duration.md)! | getDaylightSavings Gets the amount of daylight savings in use for the specified instant in this zone. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | getOffset Gets the offset applicable at the specified instant in these rules. |
 | --- | --- |
-| [ZoneOffset](../java.time/ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getOffset(java.time.LocalDateTime)(localDateTime: https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#!)` Gets a suitable offset for the specified local date-time in these rules. |
-| [ZoneOffset](../java.time/ZoneOffset.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getStandardOffset(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Gets the standard offset for the specified instant in this zone. |
-| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getTransition(java.time.LocalDateTime)(localDateTime: https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#!)` Gets the offset transition applicable at the specified local date-time in these rules. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | getOffset Gets a suitable offset for the specified local date-time in these rules. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | getStandardOffset Gets the standard offset for the specified instant in this zone. |
+| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | getTransition Gets the offset transition applicable at the specified local date-time in these rules. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ZoneOffsetTransitionRule](ZoneOffsetTransitionRule.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getTransitionRules()()` Gets the list of transition rules for years beyond those defined in the transition list. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ZoneOffsetTransition](ZoneOffsetTransition.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getTransitions()()` Gets the complete list of fully defined transitions. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ZoneOffset](../java.time/ZoneOffset.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getValidOffsets(java.time.LocalDateTime)(localDateTime: https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#!)` Gets the offset applicable at the specified local date-time in these rules. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ZoneOffsetTransitionRule](ZoneOffsetTransitionRule.md)!\>! | getTransitionRules Gets the list of transition rules for years beyond those defined in the transition list. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ZoneOffsetTransition](ZoneOffsetTransition.md)!\>! | getTransitions Gets the complete list of fully defined transitions. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ZoneOffset](../java.time/ZoneOffset.md)!\>! | getValidOffsets Gets the offset applicable at the specified local date-time in these rules. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#hashCode()()` Returns a suitable hash code given the definition of `equals`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#isDaylightSavings(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Checks if the specified instant is in daylight savings. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#isFixedOffset()()` Checks of the zone rules are fixed, such that the offset never varies. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a suitable hash code given the definition of `equals`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDaylightSavings Checks if the specified instant is in daylight savings. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFixedOffset Checks of the zone rules are fixed, such that the offset never varies. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#isValidOffset(java.time.LocalDateTime,%20java.time.ZoneOffset)(localDateTime: https://developer.android.com/reference/kotlin/java/time/LocalDateTime.html#!, offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!)` Checks if the offset date-time is valid for these rules. |
-| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#nextTransition(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Gets the next transition after the specified instant. |
-| static [ZoneRules](ZoneRules.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#of(java.time.ZoneOffset)(offset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!)` Obtains an instance of ZoneRules that has fixed zone rules. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isValidOffset Checks if the offset date-time is valid for these rules. |
+| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | nextTransition Gets the next transition after the specified instant. |
+| static [ZoneRules](ZoneRules.md)! | of Obtains an instance of ZoneRules that has fixed zone rules. |
 | --- | --- |
-| static [ZoneRules](ZoneRules.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#of(java.time.ZoneOffset,%20java.time.ZoneOffset,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList,%20kotlin.collections.MutableList)(baseStandardOffset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!, baseWallOffset: https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#!, standardOffsetTransitionList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition!>!, transitionList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransition!>!, lastRules: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransitionRule!>!)` Obtains an instance of a ZoneRules. |
-| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#previousTransition(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Gets the previous transition before the specified instant. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#toString()()` Returns a string describing this object. |
+| static [ZoneRules](ZoneRules.md)! | of Obtains an instance of a ZoneRules. |
+| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | previousTransition Gets the previous transition before the specified instant. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string describing this object. |
 | --- | --- |
 
 ## Public methods
@@ -86,7 +86,7 @@ Gets the amount of daylight savings in use for the specified instant in this zon
 
 This provides access to historic information on how the amount of daylight savings has changed over time. This is the difference between the standard offset and the actual offset. Typically the amount is zero during winter and one hour during summer. Time-zones are second-based, so the nanosecond part of the duration will be zero.
 
-This default implementation calculates the duration from the `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getOffset(java.time.Instant)` and `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getStandardOffset(java.time.Instant)` offsets.
+This default implementation calculates the duration from the getOffset and getStandardOffset offsets.
 
 | Parameters ||
 |---|---|
@@ -134,7 +134,7 @@ The mapping from a local date-time to an offset is not straightforward. There ar
 
 Thus, for any given local date-time there can be zero, one or two valid offsets. This method returns the single offset in the Normal case, and in the Gap or Overlap case it returns the offset before the transition.
 
-Since, in the case of Gap and Overlap, the offset returned is a "best" value, rather than the "correct" value, it should be treated with care. Applications that care about the correct offset should use a combination of this method, `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getValidOffsets(java.time.LocalDateTime)` and `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getTransition(java.time.LocalDateTime)`.
+Since, in the case of Gap and Overlap, the offset returned is a "best" value, rather than the "correct" value, it should be treated with care. Applications that care about the correct offset should use a combination of this method, getValidOffsets and getTransition.
 
 | Parameters ||
 |---|---|
@@ -213,7 +213,7 @@ fun getTransitionRules(): MutableList<ZoneOffsetTransitionRule!>!
 
 Gets the list of transition rules for years beyond those defined in the transition list.
 
-The complete set of transitions for this rules instance is defined by this method and `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getTransitions()`. This method returns instances of `https://developer.android.com/reference/kotlin/java/time/zone/ZoneOffsetTransitionRule` that define an algorithm for when transitions will occur.
+The complete set of transitions for this rules instance is defined by this method and getTransitions. This method returns instances of ZoneOffsetTransitionRule that define an algorithm for when transitions will occur.
 
 For any given `ZoneRules`, this list contains the transition rules for years beyond those years that have been fully defined. These rules typically refer to future daylight saving time rule changes.
 
@@ -235,7 +235,7 @@ fun getTransitions(): MutableList<ZoneOffsetTransition!>!
 
 Gets the complete list of fully defined transitions.
 
-The complete set of transitions for this rules instance is defined by this method and `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getTransitionRules()`. This method returns those transitions that have been fully defined. These are typically historical, but may be in the future.
+The complete set of transitions for this rules instance is defined by this method and getTransitionRules. This method returns those transitions that have been fully defined. These are typically historical, but may be in the future.
 
 The list will be empty for fixed offset rules and for any time-zone where there has only ever been a single offset. The list will also be empty if the transition rules are unknown.
 
@@ -311,7 +311,7 @@ Checks if the specified instant is in daylight savings.
 
 This checks if the standard offset and the actual offset are the same for the specified instant. If they are not, it is assumed that daylight savings is in operation.
 
-This default implementation compares the `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getOffset(java.time.Instant)` and `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getStandardOffset(java.time.Instant)` offsets.
+This default implementation compares the getOffset and getStandardOffset offsets.
 
 | Parameters ||
 |---|---|
@@ -350,7 +350,7 @@ Checks if the offset date-time is valid for these rules.
 
 To be valid, the local date-time must not be in a gap and the offset must match one of the valid offsets.
 
-This default implementation checks if `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#getValidOffsets(java.time.LocalDateTime)` contains the specified offset.
+This default implementation checks if getValidOffsets contains the specified offset.
 
 | Parameters ||
 |---|---|
@@ -401,7 +401,7 @@ Obtains an instance of ZoneRules that has fixed zone rules.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/zone/ZoneRules#isFixedOffset()`
+- isFixedOffset
 
 ### of
 

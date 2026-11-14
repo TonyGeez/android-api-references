@@ -17,11 +17,11 @@
 | [Attribution](Attribution.md) | Information about an attribution declared by a package. |
 | [Capability](Capability.md) | Represents a capability that can be performed by an app, also known as App Action. |
 | --- | --- |
-| [CapabilityParams](CapabilityParams.md) | Represents the parameters and its matching names which can be associated with a `https://developer.android.com/reference/kotlin/android/content/pm/Capability`. |
+| [CapabilityParams](CapabilityParams.md) | Represents the parameters and its matching names which can be associated with a Capability. |
 | [ChangedPackages](ChangedPackages.md) | Packages that have been changed since the last time they were requested. |
 | [Checksum](Checksum.md) | A typed checksum. |
 | --- | --- |
-| [ComponentInfo](ComponentInfo.md) | Base class containing information common to all application components (`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo`, `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo`). |
+| [ComponentInfo](ComponentInfo.md) | Base class containing information common to all application components (ActivityInfo, ServiceInfo). |
 | [ConfigurationInfo](ConfigurationInfo.md) | Information you can retrieve about hardware configuration preferences declared by an application. |
 | [CrossProfileApps](CrossProfileApps.md) | Class for handling cross profile operations. |
 | --- | --- |
@@ -33,7 +33,7 @@
 | [LabeledIntent](LabeledIntent.md) | A special subclass of Intent that can have a custom label/icon associated with it. |
 | [LauncherActivityInfo](LauncherActivityInfo.md) | A representation of an activity that can belong to this user or a managed profile associated with this user. |
 | --- | --- |
-| [LauncherApps](LauncherApps.md) | Class for retrieving a list of launchable activities for the current user and any associated managed profiles that are visible to the current user, which can be retrieved with `https://developer.android.com/reference/kotlin/android/content/pm/LauncherApps#getProfiles()`. |
+| [LauncherApps](LauncherApps.md) | Class for retrieving a list of launchable activities for the current user and any associated managed profiles that are visible to the current user, which can be retrieved with getProfiles. |
 | [LauncherUserInfo](LauncherUserInfo.md) | The LauncherUserInfo object holds information about an Android user that is required to display the Launcher related UI elements specific to the user (like badges). |
 | [MemoryBudgetInfo](MemoryBudgetInfo.md) | Memory budget information for an application. |
 | --- | --- |
@@ -45,7 +45,7 @@
 | [PackageManager](PackageManager.md) | Class for retrieving various kinds of information related to the application packages that are currently installed on the device. |
 | [PackageStats](PackageStats.md) | implementation of PackageStats associated with a application package. |
 | --- | --- |
-| [PathPermission](PathPermission.md) | Description of permissions needed to access a particular path in a `https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo`. |
+| [PathPermission](PathPermission.md) | Description of permissions needed to access a particular path in a ProviderInfo. |
 | [PermissionGroupInfo](PermissionGroupInfo.md) | Information you can retrieve about a particular security permission group known to the system. |
 | [PermissionInfo](PermissionInfo.md) | Information you can retrieve about a particular security permission known to the system. |
 | --- | --- |
@@ -54,7 +54,7 @@
 | [ServiceInfo](ServiceInfo.md) | Information you can retrieve about a particular application service. |
 | --- | --- |
 | [SharedLibraryInfo](SharedLibraryInfo.md) | This class provides information for a shared library. |
-| [ShortcutInfo](ShortcutInfo.md) | Represents a shortcut that can be published via `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutManager`. |
+| [ShortcutInfo](ShortcutInfo.md) | Represents a shortcut that can be published via ShortcutManager. |
 | [ShortcutManager](ShortcutManager.md) | `ShortcutManager` executes operations on an app's set of *shortcuts*, which represent specific tasks and actions that users can perform within your app. |
 | --- | --- |
 | [Signature](Signature.md) | Opaque, immutable representation of a signing certificate associated with an application package. |

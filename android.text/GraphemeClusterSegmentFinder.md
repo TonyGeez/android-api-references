@@ -22,19 +22,19 @@ For example, the text "a pot" would be divided into five text segments: "a", " "
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/text/SegmentFinder` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/text/SegmentFinder#DONE:kotlin.Int` Return value of previousStartBoundary(int), previousEndBoundary(int), nextStartBoundary(int), and nextEndBoundary(int) when there are no boundaries of the specified type in the specified direction. <br /> | ||
+| From class SegmentFinder |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/text/SegmentFinder#DONE:kotlin.Int` Return value of previousStartBoundary(int), previousEndBoundary(int), nextStartBoundary(int), and nextEndBoundary(int) when there are no boundaries of the specified type in the specified direction. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder#GraphemeClusterSegmentFinder(kotlin.CharSequence,%20android.text.TextPaint)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, textPaint: https://developer.android.com/reference/kotlin/android/text/TextPaint)` Constructs a GraphemeClusterSegmentFinder instance for the specified text which uses the provided TextPaint to determine grapheme cluster boundaries. |
+| GraphemeClusterSegmentFinder Constructs a GraphemeClusterSegmentFinder instance for the specified text which uses the provided TextPaint to determine grapheme cluster boundaries. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder#nextEndBoundary(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character offset of the next text segment end boundary after the specified character offset, or `DONE` if there are none. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder#nextStartBoundary(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character offset of the next text segment start boundary after the specified character offset, or `DONE` if there are none. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder#previousEndBoundary(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character offset of the previous text segment end boundary before the specified character offset, or `DONE` if there are none. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | nextEndBoundary Returns the character offset of the next text segment end boundary after the specified character offset, or `DONE` if there are none. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | nextStartBoundary Returns the character offset of the next text segment start boundary after the specified character offset, or `DONE` if there are none. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | previousEndBoundary Returns the character offset of the previous text segment end boundary before the specified character offset, or `DONE` if there are none. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/GraphemeClusterSegmentFinder#previousStartBoundary(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the character offset of the previous text segment start boundary before the specified character offset, or `DONE` if there are none. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | previousStartBoundary Returns the character offset of the previous text segment start boundary before the specified character offset, or `DONE` if there are none. |
 
 ## Public constructors
 

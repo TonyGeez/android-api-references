@@ -14,7 +14,7 @@ class ReadMedicalResourcesInitialRequest : ReadMedicalResourcesRequest
 
 An initial read request with specified filters for android.health.connect.HealthConnectManager#readMedicalResources.
 
-On receiving the response, if `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesResponse#getNextPageToken()` is not `null`, then use the next token with `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesPageRequest` to read the next page.
+On receiving the response, if getNextPageToken is not `null`, then use the next token with ReadMedicalResourcesPageRequest to read the next page.
 
 Example usage:
 
@@ -36,20 +36,20 @@ Example usage:
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#`. |
+| | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest.Builder` Builder class for ReadMedicalResourcesInitialRequest. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#getDataSourceIds()()` Returns the set of IDs of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` filter to read from, or an empty set for no filter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#getMedicalResourceType()()` Returns the medical resource type. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getDataSourceIds Returns the set of IDs of the MedicalDataSource filter to read from, or an empty set for no filter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMedicalResourceType Returns the medical resource type. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesInitialRequest#toString()()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/ReadMedicalResourcesRequest#getPageSize()()` Returns maximum number of `MedicalResource`s to be returned by the read operation if set, 1000 otherwise. <br /> | ||
+| From class ReadMedicalResourcesRequest |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getPageSize Returns maximum number of `MedicalResource`s to be returned by the read operation if set, 1000 otherwise. <br /> | ||
 
 ## Public methods
 
@@ -90,7 +90,7 @@ Also in [U Extensions 16](https://developer.android.com/sdkExtensions)
 fun getDataSourceIds(): MutableSet<String!>
 ```
 
-Returns the set of IDs of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MedicalDataSource` filter to read from, or an empty set for no filter.
+Returns the set of IDs of the MedicalDataSource filter to read from, or an empty set for no filter.
 
 | Return ||
 |---|---|
@@ -120,8 +120,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

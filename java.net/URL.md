@@ -67,52 +67,52 @@ http://foo.com/hello world/ and http://foo.com/hello%20world
 ```
 would be considered not equal to each other.
 
-Note, the `https://developer.android.com/reference/kotlin/java/net/URI` class does perform escaping of its component fields in certain circumstances. The recommended way to manage the encoding and decoding of URLs is to use `https://developer.android.com/reference/kotlin/java/net/URI`, and to convert between these two classes using `https://developer.android.com/reference/kotlin/java/net/URL#toURI()` and `https://developer.android.com/reference/kotlin/java/net/URI#toURL()`.
+Note, the URI class does perform escaping of its component fields in certain circumstances. The recommended way to manage the encoding and decoding of URLs is to use URI, and to convert between these two classes using toURI and toURL.
 
-The `https://developer.android.com/reference/kotlin/java/net/URLEncoder` and `https://developer.android.com/reference/kotlin/java/net/URLDecoder` classes can also be used, but only for HTML form encoding, which is not the same as the encoding scheme defined in RFC2396.
+The URLEncoder and URLDecoder classes can also be used, but only for HTML form encoding, which is not the same as the encoding scheme defined in RFC2396.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String)(spec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a `URL` object from the `String` representation. |
-| `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)(protocol: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, file: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a `URL` object from the specified `protocol`, `host`, `port` number, and `file`. |
-| `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String,%20java.net.URLStreamHandler)(protocol: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, file: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, handler: https://developer.android.com/reference/kotlin/java/net/URLStreamHandler!)` Creates a `URL` object from the specified `protocol`, `host`, `port` number, `file`, and `handler`. |
-| `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.String)(protocol: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, file: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a URL from the specified `protocol` name, `host` name, and `file` name. |
-| `https://developer.android.com/reference/kotlin/java/net/URL#URL(java.net.URL,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/java/net/URL#!, spec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a URL by parsing the given spec within a specified context. |
-| `https://developer.android.com/reference/kotlin/java/net/URL#URL(java.net.URL,%20kotlin.String,%20java.net.URLStreamHandler)(context: https://developer.android.com/reference/kotlin/java/net/URL#!, spec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, handler: https://developer.android.com/reference/kotlin/java/net/URLStreamHandler!)` Creates a URL by parsing the given spec with the specified handler within a specified context. |
+| URL Creates a `URL` object from the `String` representation. |
+| URL Creates a `URL` object from the specified `protocol`, `host`, `port` number, and `file`. |
+| URL Creates a `URL` object from the specified `protocol`, `host`, `port` number, `file`, and `handler`. |
+| URL Creates a URL from the specified `protocol` name, `host` name, and `file` name. |
+| URL Creates a URL by parsing the given spec within a specified context. |
+| URL Creates a URL by parsing the given spec with the specified handler within a specified context. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this URL for equality with another object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getAuthority()()` Gets the authority part of this `URL`. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getContent()()` Gets the contents of this URL. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this URL for equality with another object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getAuthority Gets the authority part of this `URL`. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getContent Gets the contents of this URL. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getContent(kotlin.Array)(classes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/lang/Class.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>!>!)` Gets the contents of this URL. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#getDefaultPort()()` Gets the default port number of the protocol associated with this `URL`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getFile()()` Gets the file name of this `URL`. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | getContent Gets the contents of this URL. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefaultPort Gets the default port number of the protocol associated with this `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getFile Gets the file name of this `URL`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getHost()()` Gets the host name of this `URL`, if applicable. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getPath()()` Gets the path part of this `URL`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#getPort()()` Gets the port number of this `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getHost Gets the host name of this `URL`, if applicable. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPath Gets the path part of this `URL`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPort Gets the port number of this `URL`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getProtocol()()` Gets the protocol name of this `URL`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getQuery()()` Gets the query part of this `URL`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getRef()()` Gets the anchor (also known as the "reference") of this `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getProtocol Gets the protocol name of this `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getQuery Gets the query part of this `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getRef Gets the anchor (also known as the "reference") of this `URL`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getUserInfo()()` Gets the userInfo part of this `URL`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#hashCode()()` Creates an integer suitable for hash table indexing. |
-| [URLConnection](URLConnection.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()()` Returns a `https://developer.android.com/reference/kotlin/java/net/URLConnection` instance that represents a connection to the remote object referred to by the `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getUserInfo Gets the userInfo part of this `URL`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Creates an integer suitable for hash table indexing. |
+| [URLConnection](URLConnection.md)! | openConnection Returns a URLConnection instance that represents a connection to the remote object referred to by the `URL`. |
 | --- | --- |
-| [URLConnection](URLConnection.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openConnection(java.net.Proxy)(proxy: https://developer.android.com/reference/kotlin/java/net/Proxy!)` Same as `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()`, except that the connection will be made through the specified proxy; Protocol handlers that do not support proxing will ignore the proxy parameter and make a normal connection. |
-| [InputStream](../java.io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openStream()()` Opens a connection to this `URL` and returns an `InputStream` for reading from that connection. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#sameFile(java.net.URL)(other: https://developer.android.com/reference/kotlin/java/net/URL#!)` Compares two URLs, excluding the fragment component. |
+| [URLConnection](URLConnection.md)! | openConnection Same as openConnection, except that the connection will be made through the specified proxy; Protocol handlers that do not support proxing will ignore the proxy parameter and make a normal connection. |
+| [InputStream](../java.io/InputStream.md)! | openStream Opens a connection to this `URL` and returns an `InputStream` for reading from that connection. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | sameFile Compares two URLs, excluding the fragment component. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)(fac: https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory!)` Sets an application's `URLStreamHandlerFactory`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#toExternalForm()()` Constructs a string representation of this `URL`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#toString()()` Constructs a string representation of this `URL`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setURLStreamHandlerFactory Sets an application's `URLStreamHandlerFactory`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | toExternalForm Constructs a string representation of this `URL`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Constructs a string representation of this `URL`. |
 | --- | --- |
-| [URI](URI.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#toURI()()` Returns a `https://developer.android.com/reference/kotlin/java/net/URI` equivalent to this URL. |
+| [URI](URI.md)! | toURI Returns a URI equivalent to this URL. |
 
 ## Public constructors
 
@@ -138,7 +138,7 @@ This constructor is equivalent to a call to the two-argument constructor with a 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(java.net.URL,%20kotlin.String)`
+- URL
 
 ### URL
 
@@ -207,10 +207,10 @@ No validation of the inputs is performed by this constructor.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System.html#getProperty(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URL#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory#createURLStreamHandler(kotlin.String)`
+- getProperty
+- setURLStreamHandlerFactory
+- URLStreamHandler
+- createURLStreamHandler
 
 ### URL
 
@@ -245,11 +245,11 @@ If the handler is not null and there is a security manager, the security manager
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/System.html#getProperty(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URL#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory#createURLStreamHandler(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/NetPermission`
+- getProperty
+- setURLStreamHandlerFactory
+- URLStreamHandler
+- createURLStreamHandler
+- NetPermission
 
 ### URL
 
@@ -279,7 +279,7 @@ This method is equivalent to calling the four-argument constructor with the argu
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
+- URL
 
 ### URL
 
@@ -322,9 +322,9 @@ For a more detailed description of URL parsing, refer to RFC2396.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#parseURL(java.net.URL,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)`
+- URL
+- URLStreamHandler
+- parseURL
 
 ### URL
 
@@ -353,9 +353,9 @@ Creates a URL by parsing the given spec with the specified handler within a spec
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#parseURL(java.net.URL,%20kotlin.String,%20kotlin.Int,%20kotlin.Int)`
+- URL
+- URLStreamHandler
+- parseURL
 
 ## Public methods
 
@@ -435,7 +435,7 @@ openConnection().getContent()
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent()`
+- getContent
 
 ### getContent
 
@@ -468,7 +468,7 @@ openConnection().getContent(Class[])
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URLConnection#getContent(kotlin.Array)`
+- getContent
 
 ### getDefaultPort
 
@@ -622,7 +622,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun openConnection(): URLConnection!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/java/net/URLConnection` instance that represents a connection to the remote object referred to by the `URL`.
+Returns a URLConnection instance that represents a connection to the remote object referred to by the `URL`.
 
 A new instance of [URLConnection](URLConnection.md) is created every time when invoking the [URLStreamHandler.openConnection(URL)](URLStreamHandler.md)) method of the protocol handler for this URL.
 
@@ -632,7 +632,7 @@ If for the URL's protocol (such as HTTP or JAR), there exists a public, speciali
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/net/URLConnection!` | a `https://developer.android.com/reference/kotlin/java/net/URLConnection` linking to the URL. |
+| `https://developer.android.com/reference/kotlin/java/net/URLConnection!` | a URLConnection linking to the URL. |
 
 | Exceptions ||
 |---|---|
@@ -640,7 +640,7 @@ If for the URL's protocol (such as HTTP or JAR), there exists a public, speciali
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
+- URL
 
 ### openConnection
 
@@ -650,7 +650,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun openConnection(proxy: Proxy!): URLConnection!
 ```
 
-Same as `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()`, except that the connection will be made through the specified proxy; Protocol handlers that do not support proxing will ignore the proxy parameter and make a normal connection. Invoking this method preempts the system's default ProxySelector settings.
+Same as openConnection, except that the connection will be made through the specified proxy; Protocol handlers that do not support proxing will ignore the proxy parameter and make a normal connection. Invoking this method preempts the system's default ProxySelector settings.
 
 | Parameters ||
 |---|---|
@@ -670,9 +670,9 @@ Same as `https://developer.android.com/reference/kotlin/java/net/URL#openConnect
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URLConnection`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#openConnection(java.net.URL,%20java.net.Proxy)`
+- URL
+- URLConnection
+- openConnection
 
 ### openStream
 
@@ -701,8 +701,8 @@ openConnection().getInputStream()
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()`
-- `https://developer.android.com/reference/kotlin/java/net/URLConnection#getInputStream()`
+- openConnection
+- getInputStream
 
 ### sameFile
 
@@ -749,9 +749,9 @@ If there is a security manager, this method first calls the security manager's `
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory`
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkSetFactory()`
+- URL
+- URLStreamHandlerFactory
+- checkSetFactory
 
 ### toExternalForm
 
@@ -769,8 +769,8 @@ Constructs a string representation of this `URL`. The string is created by calli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#toExternalForm(java.net.URL)`
+- URL
+- toExternalForm
 
 ### toString
 
@@ -788,8 +788,8 @@ Constructs a string representation of this `URL`. The string is created by calli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/net/URL#URL(kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/net/URLStreamHandler#toExternalForm(java.net.URL)`
+- URL
+- toExternalForm
 
 ### toURI
 
@@ -799,7 +799,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toURI(): URI!
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/java/net/URI` equivalent to this URL. This method functions in the same way as `new URI (this.toString())`.
+Returns a URI equivalent to this URL. This method functions in the same way as `new URI (this.toString())`.
 
 Note, any URL instance that complies with RFC 2396 can be converted to a URI. However, some URLs that are not strictly in compliance can not be converted to a URI.
 

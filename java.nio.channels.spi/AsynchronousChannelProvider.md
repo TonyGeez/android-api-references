@@ -12,7 +12,7 @@ abstract class AsynchronousChannelProvider
 
 Service-provider class for asynchronous channels.
 
-An asynchronous channel provider is a concrete subclass of this class that has a zero-argument constructor and implements the abstract methods specified below. A given invocation of the Java virtual machine maintains a single system-wide default provider instance, which is returned by the `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#provider()` method. The first invocation of that method will locate the default provider as specified below.
+An asynchronous channel provider is a concrete subclass of this class that has a zero-argument constructor and implements the abstract methods specified below. A given invocation of the Java virtual machine maintains a single system-wide default provider instance, which is returned by the provider method. The first invocation of that method will locate the default provider as specified below.
 
 All of the methods in this class are safe for use by multiple concurrent threads.
 
@@ -20,16 +20,16 @@ All of the methods in this class are safe for use by multiple concurrent threads
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#AsynchronousChannelProvider()()` Initializes a new instance of this class. |
+| AsynchronousChannelProvider Initializes a new instance of this class. |
 
 | Public methods ||
 |---|---|
-| abstract [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousChannelGroup(kotlin.Int,%20java.util.concurrent.ThreadFactory)(nThreads: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, threadFactory: https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory.html#!)` Constructs a new asynchronous channel group with a fixed thread pool. |
-| abstract [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,%20kotlin.Int)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#!, initialSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a new asynchronous channel group with the given thread pool. |
-| abstract [AsynchronousServerSocketChannel](../java.nio.channels/AsynchronousServerSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#!)` Opens an asynchronous server-socket channel. |
+| abstract [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)! | openAsynchronousChannelGroup Constructs a new asynchronous channel group with a fixed thread pool. |
+| abstract [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)! | openAsynchronousChannelGroup Constructs a new asynchronous channel group with the given thread pool. |
+| abstract [AsynchronousServerSocketChannel](../java.nio.channels/AsynchronousServerSocketChannel.md)! | openAsynchronousServerSocketChannel Opens an asynchronous server-socket channel. |
 | --- | --- |
-| abstract [AsynchronousSocketChannel](../java.nio.channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#!)` Opens an asynchronous socket channel. |
-| open static [AsynchronousChannelProvider](AsynchronousChannelProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#provider()()` Returns the system-wide default asynchronous channel provider for this invocation of the Java virtual machine. |
+| abstract [AsynchronousSocketChannel](../java.nio.channels/AsynchronousSocketChannel.md)! | openAsynchronousSocketChannel Opens an asynchronous socket channel. |
+| open static [AsynchronousChannelProvider](AsynchronousChannelProvider.md)! | provider Returns the system-wide default asynchronous channel provider for this invocation of the Java virtual machine. |
 
 ## Protected constructors
 
@@ -78,7 +78,7 @@ Constructs a new asynchronous channel group with a fixed thread pool.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(kotlin.Int,%20java.util.concurrent.ThreadFactory)`
+- withFixedThreadPool
 
 ### openAsynchronousChannelGroup
 
@@ -108,7 +108,7 @@ Constructs a new asynchronous channel group with the given thread pool.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#withCachedThreadPool(java.util.concurrent.ExecutorService,%20kotlin.Int)`
+- withCachedThreadPool
 
 ### openAsynchronousServerSocketChannel
 

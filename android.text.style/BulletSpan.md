@@ -44,25 +44,25 @@ Customized BulletSpan.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#BulletSpan()()` Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` with the default values. |
-| `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#BulletSpan(android.os.Parcel)(src: https://developer.android.com/reference/kotlin/android/os/Parcel.html#)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` from a parcel. |
-| `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#BulletSpan(kotlin.Int)(gapWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` based on a gap width |
-| `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#BulletSpan(kotlin.Int,%20kotlin.Int)(gapWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` based on a gap width and a color integer. |
-| `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#BulletSpan(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(gapWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bulletRadius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` based on a gap width and a color integer. |
+| BulletSpan Creates a BulletSpan with the default values. |
+| BulletSpan Creates a BulletSpan from a parcel. |
+| BulletSpan Creates a BulletSpan based on a gap width |
+| BulletSpan Creates a BulletSpan based on a gap width and a color integer. |
+| BulletSpan Creates a BulletSpan based on a gap width and a color integer. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#drawLeadingMargin(android.graphics.Canvas,%20android.graphics.Paint,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.text.Layout)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#, paint: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dir: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, baseline: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, layout: https://developer.android.com/reference/kotlin/android/text/Layout.html#?)` Renders the leading margin. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#getBulletRadius()()` Get the radius, in pixels, of the bullet point. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | drawLeadingMargin Renders the leading margin. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBulletRadius Get the radius, in pixels, of the bullet point. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#getColor()()` Get the bullet point color. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#getGapWidth()()` Get the distance, in pixels, between the bullet point and the paragraph. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#getLeadingMargin(kotlin.Boolean)(first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the amount by which to adjust the leading margin. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColor Get the bullet point color. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGapWidth Get the distance, in pixels, between the bullet point and the paragraph. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeadingMargin Returns the amount by which to adjust the leading margin. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpanTypeId Return a special type identifier for this span class. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 ## Constants
@@ -87,7 +87,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 BulletSpan()
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` with the default values.
+Creates a BulletSpan with the default values.
 
 ### BulletSpan
 
@@ -97,7 +97,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 BulletSpan(src: Parcel)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` from a parcel.
+Creates a BulletSpan from a parcel.
 
 | Parameters ||
 |---|---|
@@ -111,7 +111,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 BulletSpan(gapWidth: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` based on a gap width
+Creates a BulletSpan based on a gap width
 
 | Parameters ||
 |---|---|
@@ -127,7 +127,7 @@ BulletSpan(
     color: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` based on a gap width and a color integer.
+Creates a BulletSpan based on a gap width and a color integer.
 
 | Parameters ||
 |---|---|
@@ -147,7 +147,7 @@ BulletSpan(
     bulletRadius: Int)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/BulletSpan#` based on a gap width and a color integer.
+Creates a BulletSpan based on a gap width and a color integer.
 
 | Parameters ||
 |---|---|
@@ -168,7 +168,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -195,7 +195,7 @@ open fun drawLeadingMargin(
 ): Unit
 ```
 
-Renders the leading margin. This is called before the margin has been adjusted by the value returned by `https://developer.android.com/reference/kotlin/android/text/style/LeadingMarginSpan#getLeadingMargin(kotlin.Boolean)`.
+Renders the leading margin. This is called before the margin has been adjusted by the value returned by getLeadingMargin.
 
 | Parameters ||
 |---|---|

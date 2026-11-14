@@ -27,33 +27,33 @@ A class representing a Wi-Fi P2p group. A p2p group consists of a single group o
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#WifiP2pGroup()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#WifiP2pGroup(android.net.wifi.p2p.WifiP2pGroup)(source: https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#!)` copy constructor |
+| WifiP2pGroup <br /> |
+| WifiP2pGroup copy constructor |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#describeContents()()` Implement the Parcelable interface |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [WifiP2pDevice](WifiP2pDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getClientList()()` Get the list of clients currently part of the p2p group |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getFrequency()()` Get the operating frequency (in MHz) of the p2p group |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Implement the Parcelable interface |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [WifiP2pDevice](WifiP2pDevice.md)!\>! | getClientList Get the list of clients currently part of the p2p group |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFrequency Get the operating frequency (in MHz) of the p2p group |
 | --- | --- |
-| open [MacAddress](../android.net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getGroupOwnerBssid()()` Returns the BSSID, if this device is the group owner of the P2P group supporting Wi-Fi Direct R2 protocol. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getInterface()()` Get the interface name on which the group is created |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkId()()` The network ID of the P2P group in wpa_supplicant. |
+| open [MacAddress](../android.net/MacAddress.md)? | getGroupOwnerBssid Returns the BSSID, if this device is the group owner of the P2P group supporting Wi-Fi Direct R2 protocol. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getInterface Get the interface name on which the group is created |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNetworkId The network ID of the P2P group in wpa_supplicant. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkName()()` Get the network name (SSID) of the group. |
-| open [WifiP2pDevice](WifiP2pDevice.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getOwner()()` Get the details of the group owner as a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice` object |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getPassphrase()()` Get the passphrase of the group. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNetworkName Get the network name (SSID) of the group. |
+| open [WifiP2pDevice](WifiP2pDevice.md)! | getOwner Get the details of the group owner as a WifiP2pDevice object |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPassphrase Get the passphrase of the group. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getSecurityType()()` Get the security type of the group. |
-| open [WifiP2pConnectionInfo](WifiP2pConnectionInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getWifiP2pGroupClientConnectionInfo()()` Gets the P2P connection information for this device if it is a client in the group. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#isGroupOwner()()` Check whether this device is the group owner of the created p2p group |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSecurityType Get the security type of the group. |
+| open [WifiP2pConnectionInfo](WifiP2pConnectionInfo.md)? | getWifiP2pGroupClientConnectionInfo Gets the P2P connection information for this device if it is a client in the group. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isGroupOwner Check whether this device is the group owner of the created p2p group |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Implement the Parcelable interface |
 
 | Properties ||
 |---|---|
@@ -75,7 +75,7 @@ The persistent network id. If a matching persistent profile is found, use it. Ot
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkId()`
+- getNetworkId
 
 ### NETWORK_ID_TEMPORARY
 
@@ -91,7 +91,7 @@ The temporary network id.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkId()`
+- getNetworkId
 
 ### SECURITY_TYPE_UNKNOWN
 
@@ -253,7 +253,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun getOwner(): WifiP2pDevice!
 ```
 
-Get the details of the group owner as a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice` object
+Get the details of the group owner as a WifiP2pDevice object
 
 ### getPassphrase
 
@@ -263,7 +263,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 open fun getPassphrase(): String!
 ```
 
-Get the passphrase of the group. This function will return a valid passphrase only at the group owner. Legacy Wi-Fi clients will need this passphrase alongside network name obtained from `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkName()` to join the group
+Get the passphrase of the group. This function will return a valid passphrase only at the group owner. Legacy Wi-Fi clients will need this passphrase alongside network name obtained from getNetworkName to join the group
 
 ### getSecurityType
 
@@ -291,11 +291,11 @@ Gets the P2P connection information for this device if it is a client in the gro
 
 To get the most up-to-date information, an application should listen for the `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#WIFI_P2P_CONNECTION_CHANGED_ACTION:kotlin.String` broadcast. When this device joins a group as a client, the system updates the connection information and broadcasts the new group details in the `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#EXTRA_WIFI_P2P_GROUP:kotlin.String` extra.
 
-Alternatively, an application can call `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#requestGroupInfo(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.GroupInfoListener)` to get the latest group details.
+Alternatively, an application can call requestGroupInfo to get the latest group details.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConnectionInfo?` | A `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConnectionInfo` object if this device is a client, or `null` if it is the Group Owner. |
+| WifiP2pConnectionInfo | A WifiP2pConnectionInfo object if this device is a client, or `null` if it is the Group Owner. |
 
 ### isGroupOwner
 

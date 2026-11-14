@@ -19,16 +19,16 @@ This exception is thrown to signal XML Pull Parser related faults.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#XmlPullParserException(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#XmlPullParserException(kotlin.String,%20org.xmlpull.v1.XmlPullParser,%20kotlin.Throwable)(msg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser!, chain: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html!)` <br /> |
+| XmlPullParserException <br /> |
+| XmlPullParserException <br /> |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#getColumnNumber()()` <br /> |
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#getDetail()()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#getLineNumber()()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColumnNumber <br /> |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | getDetail <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLineNumber <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParserException#printStackTrace()()` Prints this throwable and its backtrace to the standard error stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | printStackTrace Prints this throwable and its backtrace to the standard error stream. |
 
 | Properties ||
 |---|---|
@@ -92,7 +92,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun printStackTrace(): Unit
 ```
 
-Prints this throwable and its backtrace to the standard error stream. This method prints a stack trace for this `Throwable` object on the error output stream that is the value of the field `System.err`. The first line of output contains the result of the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#toString()` method for this object. Remaining lines represent data previously recorded by the method `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#fillInStackTrace()`. The format of this information depends on the implementation, but the following example may be regarded as typical:
+Prints this throwable and its backtrace to the standard error stream. This method prints a stack trace for this `Throwable` object on the error output stream that is the value of the field `System.err`. The first line of output contains the result of the toString method for this object. Remaining lines represent data previously recorded by the method fillInStackTrace. The format of this information depends on the implementation, but the following example may be regarded as typical:
 
 ```kotlin
 java.lang.NullPointerException

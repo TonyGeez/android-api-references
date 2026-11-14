@@ -26,7 +26,7 @@ If a tunnel fails to connect, or otherwise encounters a fatal error, the VCN wil
 The VCN Safe Mode ensures that users (and carriers) have a fallback to restore system connectivity to update profiles, diagnose issues, contact support, or perform other remediation tasks. In Safe Mode, the system will allow underlying cellular networks to be used as default. Additionally, during Safe Mode, the VCN will continue to retry the connections, and will automatically exit Safe Mode if all active tunnels connect successfully.
 
 Apps targeting Android 15 or newer should check the existence of `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` before querying the service. If the feature is absent, android.content.Context#getSystemService may return null. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
@@ -48,12 +48,12 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#clearVcnConfig(android.os.ParcelUuid)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#)` Clears the VCN configuration for a given subscription group. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](../android.os/ParcelUuid.md)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#getConfiguredSubscriptionGroups()()` Retrieves the list of Subscription Groups for which a VCN Configuration has been set. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#registerVcnStatusCallback(android.os.ParcelUuid,%20java.util.concurrent.Executor,%20android.net.vcn.VcnManager.VcnStatusCallback)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback)` Registers the given callback to receive status updates for the specified subscription. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearVcnConfig Clears the VCN configuration for a given subscription group. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParcelUuid](../android.os/ParcelUuid.md)!\> | getConfiguredSubscriptionGroups Retrieves the list of Subscription Groups for which a VCN Configuration has been set. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerVcnStatusCallback Registers the given callback to receive status updates for the specified subscription. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#setVcnConfig(android.os.ParcelUuid,%20android.net.vcn.VcnConfig)(subscriptionGroup: https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#, config: https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig)` Sets the VCN configuration for a given subscription group. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#unregisterVcnStatusCallback(android.net.vcn.VcnManager.VcnStatusCallback)(callback: https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback)` Unregisters the given callback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVcnConfig Sets the VCN configuration for a given subscription group. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterVcnStatusCallback Unregisters the given callback. |
 
 ## Constants
 
@@ -107,7 +107,7 @@ static val VCN_STATUS_CODE_ACTIVE: Int
 
 Value indicating that the VCN for the subscription group is active.
 
-A VCN is active if a `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig` is present for the subscription, the provisioning package is privileged, and the VCN is not in Safe Mode. In other words, a VCN is considered active while it is connecting, fully connected, and disconnecting.
+A VCN is active if a VcnConfig is present for the subscription, the provisioning package is privileged, and the VCN is not in Safe Mode. In other words, a VCN is considered active while it is connecting, fully connected, and disconnecting.
 
  Value: 2
 
@@ -121,7 +121,7 @@ static val VCN_STATUS_CODE_INACTIVE: Int
 
 Value indicating that the VCN for the subscription group is inactive.
 
-A VCN is inactive if a `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig` is present for the subscription group, but the provisioning package is not privileged.
+A VCN is inactive if a VcnConfig is present for the subscription group, but the provisioning package is not privileged.
 
  Value: 1
 
@@ -164,7 +164,7 @@ open fun clearVcnConfig(subscriptionGroup: ParcelUuid): Unit
 Clears the VCN configuration for a given subscription group.
 
 An app that has carrier privileges for any of the subscriptions in the given group may clear a VCN configuration. This API is ONLY permitted for callers running as the primary user. Any active VCN associated with this configuration will be torn down. 
-Requires `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`
+Requires hasCarrierPrivileges
 
 | Parameters ||
 |---|---|
@@ -185,7 +185,7 @@ open fun getConfiguredSubscriptionGroups(): MutableList<ParcelUuid!>
 
 Retrieves the list of Subscription Groups for which a VCN Configuration has been set.
 
-The returned list will include only subscription groups for which an associated `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig` exists, and the app is either:
+The returned list will include only subscription groups for which an associated VcnConfig exists, and the app is either:
 
 - Carrier privileged for that subscription group, or
 - Is the provisioning package of the config
@@ -212,7 +212,7 @@ open fun registerVcnStatusCallback(
 
 Registers the given callback to receive status updates for the specified subscription.
 
-Callbacks can be registered for a subscription before `https://developer.android.com/reference/kotlin/android/net/vcn/VcnConfig`s are set for it.
+Callbacks can be registered for a subscription before VcnConfigs are set for it.
 
 A `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback` may only be registered for one subscription at a time. `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback`s may be reused once unregistered.
 
@@ -220,7 +220,7 @@ A `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.Vcn
 
 A `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback` is eligible to begin receiving callbacks once it is registered and there is a VCN active for its specified subscription group (this may happen after the callback is registered).
 
-`https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager.VcnStatusCallback#onStatusChanged(kotlin.Int)` will be invoked on registration with the current status for the specified subscription group's VCN. If the registrant is not privileged for this subscription group, `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_STATUS_CODE_NOT_CONFIGURED:kotlin.Int` will be returned.
+onStatusChanged will be invoked on registration with the current status for the specified subscription group's VCN. If the registrant is not privileged for this subscription group, `https://developer.android.com/reference/kotlin/android/net/vcn/VcnManager#VCN_STATUS_CODE_NOT_CONFIGURED:kotlin.Int` will be returned.
 
 | Parameters ||
 |---|---|
@@ -249,7 +249,7 @@ Sets the VCN configuration for a given subscription group.
 An app that has carrier privileges for any of the subscriptions in the given group may set a VCN configuration. If a configuration already exists for the given subscription group, it will be overridden. Any active VCN(s) may be forced to restart to use the new configuration.
 
 This API is ONLY permitted for callers running as the primary user. 
-Requires `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#hasCarrierPrivileges()`
+Requires hasCarrierPrivileges
 
 | Parameters ||
 |---|---|

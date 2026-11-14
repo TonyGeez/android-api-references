@@ -9,17 +9,17 @@ Kotlin | [Java](_package.md)
 | --- | --- |
 | [ChannelListener](../android/net/wifi/p2p/WifiP2pManager.ChannelListener.md) | Interface for callback invocation when framework channel is lost |
 | [ConnectionInfoListener](../android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.md) | Interface for callback invocation when connection info is available |
-| [DeviceInfoListener](../android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener.md) | Interface for callback invocation when `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice` is available in response to `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#requestDeviceInfo(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.DeviceInfoListener)`. |
+| [DeviceInfoListener](../android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener.md) | Interface for callback invocation when WifiP2pDevice is available in response to requestDeviceInfo. |
 | --- | --- |
-| [DiscoveryStateListener](../android/net/wifi/p2p/WifiP2pManager.DiscoveryStateListener.md) | Interface for callback invocation when p2p state is available in response to `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#requestDiscoveryState(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.DiscoveryStateListener)`. |
+| [DiscoveryStateListener](../android/net/wifi/p2p/WifiP2pManager.DiscoveryStateListener.md) | Interface for callback invocation when p2p state is available in response to requestDiscoveryState. |
 | [DnsSdServiceResponseListener](../android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.md) | Interface for callback invocation when Bonjour service discovery response is received |
 | [DnsSdTxtRecordListener](../android/net/wifi/p2p/WifiP2pManager.DnsSdTxtRecordListener.md) | Interface for callback invocation when Bonjour TXT record is available for a service |
 | --- | --- |
 | [ExternalApproverRequestListener](../android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.md) | Interface for callback invocation when an incoming request is received. |
 | [GroupInfoListener](../android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.md) | Interface for callback invocation when group info is available |
-| [NetworkInfoListener](../android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.md) | Interface for callback invocation when `https://developer.android.com/reference/kotlin/android/net/NetworkInfo.html#` is available in response to `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#requestNetworkInfo(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.NetworkInfoListener)`. |
+| [NetworkInfoListener](../android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.md) | Interface for callback invocation when `https://developer.android.com/reference/kotlin/android/net/NetworkInfo.html#` is available in response to requestNetworkInfo. |
 | --- | --- |
-| [P2pStateListener](../android/net/wifi/p2p/WifiP2pManager.P2pStateListener.md) | Interface for callback invocation when p2p state is available in response to `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#requestP2pState(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.WifiP2pManager.P2pStateListener)`. |
+| [P2pStateListener](../android/net/wifi/p2p/WifiP2pManager.P2pStateListener.md) | Interface for callback invocation when p2p state is available in response to requestP2pState. |
 | [PeerListListener](../android/net/wifi/p2p/WifiP2pManager.PeerListListener.md) | Interface for callback invocation when peer list is available |
 | [ServiceResponseListener](../android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.md) | Interface for callback invocation when service discovery response other than Upnp or Bonjour is received |
 | --- | --- |

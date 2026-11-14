@@ -8,7 +8,7 @@ interface Parcelable
 
 | [android.os.Parcelable](Parcelable.md) |
 
-Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md), [AccessibilityGestureEvent](../android.accessibilityservice/AccessibilityGestureEvent.md), [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md), [AccessibilityNodeInfo.AccessibilityAction](../android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.md), [AccessibilityNodeInfo.ExtraRenderingInfo](../android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo.md), [AccessibilityNodeInfo.MathInfo](../android/view/accessibility/AccessibilityNodeInfo.MathInfo.md), [AccessibilityNodeInfo.Selection](../android/view/accessibility/AccessibilityNodeInfo.Selection.md), [AccessibilityNodeInfo.SelectionPosition](../android/view/accessibility/AccessibilityNodeInfo.SelectionPosition.md), [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md), [AccessibilityServiceInfo](../android.accessibilityservice/AccessibilityServiceInfo.md), [AccessibilityWindowInfo](../android.view.accessibility/AccessibilityWindowInfo.md), and 873 others. [AbsSavedState](../android.view/AbsSavedState.md) A `https://developer.android.com/reference/kotlin/android/os/Parcelable#` implementation that should be used by inheritance hierarchies to ensure the state of all classes along the chain is saved.
+Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md), [AccessibilityGestureEvent](../android.accessibilityservice/AccessibilityGestureEvent.md), [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md), [AccessibilityNodeInfo.AccessibilityAction](../android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.md), [AccessibilityNodeInfo.ExtraRenderingInfo](../android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo.md), [AccessibilityNodeInfo.MathInfo](../android/view/accessibility/AccessibilityNodeInfo.MathInfo.md), [AccessibilityNodeInfo.Selection](../android/view/accessibility/AccessibilityNodeInfo.Selection.md), [AccessibilityNodeInfo.SelectionPosition](../android/view/accessibility/AccessibilityNodeInfo.SelectionPosition.md), [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md), [AccessibilityServiceInfo](../android.accessibilityservice/AccessibilityServiceInfo.md), [AccessibilityWindowInfo](../android.view.accessibility/AccessibilityWindowInfo.md), and 873 others. [AbsSavedState](../android.view/AbsSavedState.md) A Parcelable implementation that should be used by inheritance hierarchies to ensure the state of all classes along the chain is saved.
 [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md) This class represents accessibility events that are sent by the system when something notable happens in the user interface.
 [AccessibilityGestureEvent](../android.accessibilityservice/AccessibilityGestureEvent.md) This class describes the gesture event including gesture id and which display it happens on.
 [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md) This class represents a node of the window content as well as actions that can be requested from its source.
@@ -27,7 +27,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [ActionResult](../android.companion/ActionResult.md) A result reported by a companion app in response to an `https://developer.android.com/reference/kotlin/android/companion/ActionRequest.html#`.
 [ActiveProcessingPicture](../android.media.quality/ActiveProcessingPicture.md) Active picture represents an image or video undergoing picture processing which uses a picture profile.
 [ActivityInfo](../android.content.pm/ActivityInfo.md) Information you can retrieve about a particular application activity or receiver.
-[ActivityManager.MemoryInfo](../android/app/ActivityManager.MemoryInfo.md) Information you can retrieve about the available memory through `https://developer.android.com/reference/kotlin/android/app/ActivityManager.html#getMemoryInfo(android.app.ActivityManager.MemoryInfo)`.
+[ActivityManager.MemoryInfo](../android/app/ActivityManager.MemoryInfo.md) Information you can retrieve about the available memory through getMemoryInfo.
 [ActivityManager.ProcessErrorStateInfo](../android/app/ActivityManager.ProcessErrorStateInfo.md) Information you can retrieve about any processes that are in an error condition.
 [ActivityManager.RecentTaskInfo](../android/app/ActivityManager.RecentTaskInfo.md) Information you can retrieve about tasks that the user has most recently started or visited.
 [ActivityManager.RunningAppProcessInfo](../android/app/ActivityManager.RunningAppProcessInfo.md) Information you can retrieve about a running process.
@@ -61,14 +61,14 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [ApkChecksum](../android.content.pm/ApkChecksum.md) A typed checksum of an APK.
 [ApnSetting](../android.telephony.data/ApnSetting.md) An Access Point Name (APN) configuration for a carrier data connection.
 [AppFunctionActivityId](../android/app/appfunctions/AppFunctionActivityId.md) An identifier of an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` an app function can be associated with.
-[AppFunctionActivityState](../android.app.appfunctions/AppFunctionActivityState.md) The state of an activity from the perspective of app functions, retrieved using `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#getAppFunctionActivityStates(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+[AppFunctionActivityState](../android.app.appfunctions/AppFunctionActivityState.md) The state of an activity from the perspective of app functions, retrieved using getAppFunctionActivityStates.
 [AppFunctionException](../android.app.appfunctions/AppFunctionException.md) App function related error.
-[AppFunctionMetadata](../android.app.appfunctions/AppFunctionMetadata.md) Contains an app function's metadata, essential for its invocation and discovery, retrieved using `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#searchAppFunctions(android.app.appfunctions.AppFunctionSearchSpec,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+[AppFunctionMetadata](../android.app.appfunctions/AppFunctionMetadata.md) Contains an app function's metadata, essential for its invocation and discovery, retrieved using searchAppFunctions.
 [AppFunctionName](../android/app/appfunctions/AppFunctionName.md) Globally unique identifier for an app function.
 [AppFunctionPackageMetadata](../android/app/appfunctions/AppFunctionPackageMetadata.md) Contains metadata about a package providing app functions.
 [AppFunctionSchemaMetadata](../android.app.appfunctions/AppFunctionSchemaMetadata.md) Contains identifying metadata for a predefined schema, which can describe well-known function signatures.
-[AppFunctionSearchSpec](../android.app.appfunctions/AppFunctionSearchSpec.md) Filter criteria for `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#searchAppFunctions(android.app.appfunctions.AppFunctionSearchSpec,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
-[AppFunctionState](../android/app/appfunctions/AppFunctionState.md) Runtime state of an app function, retrieved using `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#getAppFunctionStates(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+[AppFunctionSearchSpec](../android.app.appfunctions/AppFunctionSearchSpec.md) Filter criteria for searchAppFunctions.
+[AppFunctionState](../android/app/appfunctions/AppFunctionState.md) Runtime state of an app function, retrieved using getAppFunctionStates.
 [AppFunctionUriGrant](../android.app.appfunctions/AppFunctionUriGrant.md) `https://developer.android.com/reference/kotlin/android/net/Uri.html#` for which access permission is to be granted to the caller of android.
 [AppInfo](../android.adservices.ondevicepersonalization/AppInfo.md) Information about apps.
 [AppInstallFilters](../android.adservices.common/AppInstallFilters.md) A container for the ad filters that are based on app install state.
@@ -98,7 +98,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [AssociatedDevice](../android.companion/AssociatedDevice.md) Container for device info from an association that is not self-managed.
 [AssociationInfo](../android.companion/AssociationInfo.md) Details for a specific "association" that has been established between an app and companion device.
 [AssociationRequest](../android.companion/AssociationRequest.md) A request for the user to select a companion device to associate with.
-[AsyncNotedAppOp](../android.app/AsyncNotedAppOp.md) When an `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#noteOp(kotlin.String,%20kotlin.Int,%20kotlin.String,%20kotlin.String,%20kotlin.String)` and the app the app-op is noted for has a `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback.html#` registered the note-event needs to be delivered to the callback.
+[AsyncNotedAppOp](../android.app/AsyncNotedAppOp.md) When an noteOp and the app the app-op is noted for has a `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.OnOpNotedCallback.html#` registered the note-event needs to be delivered to the callback.
 [Attribution](../android.content.pm/Attribution.md) Information about an attribution declared by a package.
 [AttributionSource](../android.content/AttributionSource.md) This class represents a source to which access to permission protected data should be attributed.
 [AudioAttributes](../android.media/AudioAttributes.md) A class to encapsulate a collection of attributes describing information about an audio stream.
@@ -111,12 +111,12 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [AudioRecordingConfiguration](../android.media/AudioRecordingConfiguration.md) The AudioRecordingConfiguration class collects the information describing an audio recording session.
 [AudioTimestamp](../android.media/AudioTimestamp.md) Structure that groups a position in frame units relative to an assumed audio stream, together with the estimated time when that frame enters or leaves the audio processing pipeline on that device.
 [AuthenticationRequiredException](../android.app/AuthenticationRequiredException.md) Specialization of `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` that is thrown when authentication is needed from the end user before viewing the content.
-[AuthenticatorDescription](../android.accounts/AuthenticatorDescription.md) A `https://developer.android.com/reference/kotlin/android/os/Parcelable#` value type that contains information about an account authenticator.
+[AuthenticatorDescription](../android.accounts/AuthenticatorDescription.md) A Parcelable value type that contains information about an account authenticator.
 [AutofillId](../android.view.autofill/AutofillId.md) A unique identifier for an autofill node inside an `https://developer.android.com/reference/kotlin/android/app/Activity.html#`.
 [AutofillNoiseInjectedData](../android/view/autofill/AutofillNoiseInjectedData.md) Represents the noise-injected version of a text field's content, generated using a differential privacy algorithm.
 [AutofillValue](../android.view.autofill/AutofillValue.md) Abstracts how a `https://developer.android.com/reference/kotlin/android/view/View.html#` can be autofilled by an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#`.
 [AutomaticZenRule](../android.app/AutomaticZenRule.md) Rule instance information for a zen (aka DND or Attention Management) mode.
-[AvailableNetworkInfo](../android.telephony/AvailableNetworkInfo.md) Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#updateAvailableNetworks(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
+[AvailableNetworkInfo](../android.telephony/AvailableNetworkInfo.md) Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through updateAvailableNetworks
 [AvailableNfcAntenna](../android.nfc/AvailableNfcAntenna.md) Represents a single available Nfc antenna on an Android device.
 [AwareDataPathRequest](../android/net/wifi/aware/AwareDataPathRequest.md) A request to set up a data path for a Wi-Fi Aware network.
 [AwarePairingConfig](../android.net.wifi.aware/AwarePairingConfig.md) The config for the Aware Pairing.
@@ -138,7 +138,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [BleRssiRangingParams](../android.ranging.ble.rssi/BleRssiRangingParams.md) BleRssiRangingParams encapsulates the parameters required for a bluetooth rssi based ranging session.
 [BleSpecificData](../android.ranging.ble/BleSpecificData.md) Represents the `https://developer.android.com/reference/kotlin/android/ranging/RangingManager.html#BLE_CS:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/ranging/RangingManager.html#BLE_RSSI:kotlin.Int` specific data.
 [BlobHandle](../android.app.blob/BlobHandle.md) An identifier to represent a blob.
-[BlockingOption](../android.net.wifi/BlockingOption.md) Options for blocking a network through `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#disallowCurrentSuggestedNetwork(android.net.wifi.BlockingOption)`
+[BlockingOption](../android.net.wifi/BlockingOption.md) Options for blocking a network through disallowCurrentSuggestedNetwork
 [BluetoothClass](../android.bluetooth/BluetoothClass.md) Represents a Bluetooth class, which describes general characteristics and capabilities of a device.
 [BluetoothCodecConfig](../android.bluetooth/BluetoothCodecConfig.md) Represents the codec configuration for a Bluetooth A2DP source device.
 [BluetoothCodecStatus](../android.bluetooth/BluetoothCodecStatus.md) Represents the codec status (configuration and capability) for a Bluetooth A2DP source device.
@@ -155,12 +155,12 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [BluetoothLeAudioCodecStatus](../android.bluetooth/BluetoothLeAudioCodecStatus.md) Represents the codec status (configuration and capability) for a Bluetooth Le Audio source device.
 [BroadcastInfoRequest](../android.media.tv/BroadcastInfoRequest.md) A request for the information retrieved from broadcast signal.
 [BroadcastInfoResponse](../android.media.tv/BroadcastInfoResponse.md) A response of `https://developer.android.com/reference/kotlin/android/media/tv/BroadcastInfoRequest.html#` for information retrieved from broadcast signal.
-[Bundle](Bundle.md) A mapping from String keys to various `https://developer.android.com/reference/kotlin/android/os/Parcelable#` values.
+[Bundle](Bundle.md) A mapping from String keys to various Parcelable values.
 [CallAttributes](../android.telecom/CallAttributes.md) CallAttributes represents a set of properties that define a new Call.
 [CallAudioState](../android.telecom/CallAudioState.md) Encapsulates the telecom audio state, including the current audio routing, supported audio routing and mute.
 [CallEndpoint](../android.telecom/CallEndpoint.md) Encapsulates the endpoint where call media can flow
 [CallEndpointException](../android.telecom/CallEndpointException.md) This class represents a set of exceptions that can occur when requesting a `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint.html#` change.
-[CallException](../android.telecom/CallException.md) This class defines exceptions that can be thrown when using Telecom APIs with `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver`s.
+[CallException](../android.telecom/CallException.md) This class defines exceptions that can be thrown when using Telecom APIs with OutcomeReceivers.
 [CallingAppInfo](../android.service.credentials/CallingAppInfo.md) Information pertaining to the calling application, including the package name and a list of app signatures.
 [Capability](../android.content.pm/Capability.md) Represents a capability that can be performed by an app, also known as App Action.
 [CapabilityParams](../android.content.pm/CapabilityParams.md) Represents the parameters and its matching names which can be associated with a `https://developer.android.com/reference/kotlin/android/content/pm/Capability.html#`.
@@ -180,10 +180,10 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [CellSignalStrengthNr](../android.telephony/CellSignalStrengthNr.md) 5G NR signal strength related information.
 [CellSignalStrengthTdscdma](../android.telephony/CellSignalStrengthTdscdma.md) Tdscdma signal strength related information.
 [CellSignalStrengthWcdma](../android.telephony/CellSignalStrengthWcdma.md) Wcdma signal strength related information.
-[ChangeLogTokenRequest](../android.health.connect.changelog/ChangeLogTokenRequest.md) A class to request changelog token using `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
-[ChangeLogTokenResponse](../android.health.connect.changelog/ChangeLogTokenResponse.md) Response class for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogToken(android.health.connect.changelog.ChangeLogTokenRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`}
-[ChangeLogsRequest](../android.health.connect.changelog/ChangeLogsRequest.md) Request class for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
-[ChangeLogsResponse](../android.health.connect.changelog/ChangeLogsResponse.md) Response class for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#getChangeLogs(android.health.connect.changelog.ChangeLogsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` This is the response to clients fetching changes.
+[ChangeLogTokenRequest](../android.health.connect.changelog/ChangeLogTokenRequest.md) A class to request changelog token using getChangeLogToken
+[ChangeLogTokenResponse](../android.health.connect.changelog/ChangeLogTokenResponse.md) Response class for getChangeLogToken}
+[ChangeLogsRequest](../android.health.connect.changelog/ChangeLogsRequest.md) Request class for getChangeLogs
+[ChangeLogsResponse](../android.health.connect.changelog/ChangeLogsResponse.md) Response class for getChangeLogs This is the response to clients fetching changes.
 [ChangedPackages](../android.content.pm/ChangedPackages.md) Packages that have been changed since the last time they were requested.
 [CharSequenceTransformation](../android.service.autofill/CharSequenceTransformation.md) Replaces a `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` child of a `https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription.html#` with the contents of one or more regular expressions (regexs).
 [Characteristics](../android.net.wifi.aware/Characteristics.md) The characteristics of the Wi-Fi Aware implementation.
@@ -201,10 +201,10 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [CloudMediaProviderContract.Capabilities](../android/provider/CloudMediaProviderContract.Capabilities.md) Information about what capabilities a CloudMediaProvider can support.
 [ColorSequence](../android/hardware/lights/ColorSequence.md) Models a sequence of colors and their relative timing to create a light effect.
 [ColorStateList](../android.content.res/ColorStateList.md) Lets you map `https://developer.android.com/reference/kotlin/android/view/View.html#` state sets to colors.
-[CombinedVibration](CombinedVibration.md) A CombinedVibration describes a combination of haptic effects to be performed by one or more `https://developer.android.com/reference/kotlin/android/os/Vibrator`.
+[CombinedVibration](CombinedVibration.md) A CombinedVibration describes a combination of haptic effects to be performed by one or more Vibrator.
 [CommandRequest](../android.media.tv/CommandRequest.md) A request for command from broadcast signal.
 [CommandResponse](../android.media.tv/CommandResponse.md) A response for command from broadcast signal.
-[CommitBlobResponse](../android.app.appsearch/CommitBlobResponse.md) The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#commitBlob(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[CommitBlobResponse](../android.app.appsearch/CommitBlobResponse.md) The response to provide batch operation results of commitBlob.
 [CompletionInfo](../android.view.inputmethod/CompletionInfo.md) Information about a single text completion that an editor has reported to an input method.
 [ComponentAdData](../android.adservices.common/ComponentAdData.md) Represents data specific to a component ad that is necessary for ad selection and rendering.
 [ComponentName](../android.content/ComponentName.md) Identifier for a specific application component (`https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#`, or `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`) that is available.
@@ -221,7 +221,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [ContentCaptureContext](../android.view.contentcapture/ContentCaptureContext.md) Context associated with a `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession.html#` - see `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager.html#` for more info.
 [ContentCaptureSessionId](../android.view.contentcapture/ContentCaptureSessionId.md) Identifier for a Content Capture session.
 [ContentClassificationResult](../android.app.contentsafety/ContentClassificationResult.md) A result reported by a Content Safety app in response to a content classification request.
-[ContentInfo](../android.view/ContentInfo.md) Holds all the relevant data for a request to `https://developer.android.com/reference/kotlin/android/view/View.html#performReceiveContent(android.view.ContentInfo)`.
+[ContentInfo](../android.view/ContentInfo.md) Holds all the relevant data for a request to performReceiveContent.
 [ContentProviderOperation](../android.content/ContentProviderOperation.md) Represents a single operation to be performed as part of a batch of operations.
 [ContentProviderResult](../android.content/ContentProviderResult.md) Contains the result of the application of a `https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.html#`.
 [ContentValues](../android.content/ContentValues.md) This class is used to store a set of values that the `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#` can process.
@@ -239,7 +239,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [CreateCredentialRequest](../android.credentials/CreateCredentialRequest.md) A request to register a specific type of user credential, potentially launching UI flows to collect user consent and any other operation needed.
 [CreateCredentialResponse](../android.credentials/CreateCredentialResponse.md) A response object that encapsulates the result of a successful credential creation execution.
 [CreateEntry](../android.service.credentials/CreateEntry.md) An entry to be shown on the UI.
-[CreateMedicalDataSourceRequest](../android.health.connect/CreateMedicalDataSourceRequest.md) A create request for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#createMedicalDataSource(android.health.connect.CreateMedicalDataSourceRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+[CreateMedicalDataSourceRequest](../android.health.connect/CreateMedicalDataSourceRequest.md) A create request for createMedicalDataSource.
 [Credential](../android.net.wifi.hotspot2.pps/Credential.md) Class representing Credential subtree in the PerProviderSubscription (PPS) Management Object (MO) tree.
 [Credential](../android.credentials/Credential.md) Represents a user credential that can be used to authenticate to your app.
 [Credential.CertificateCredential](../android/net/wifi/hotspot2/pps/Credential.CertificateCredential.md) Certificate based credential.
@@ -257,7 +257,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [DataRemovalRequest](../android.view.contentcapture/DataRemovalRequest.md) Class used by apps to request the content capture service to remove data associated with `https://developer.android.com/reference/kotlin/android/content/LocusId.html#`.
 [DataShareRequest](../android.view.contentcapture/DataShareRequest.md) Container class representing a request to share data with Content Capture service.
 [Dataset](../android.service.autofill/Dataset.md) A `Dataset` object represents a group of fields (key / value pairs) used to autofill parts of a screen.
-[DateTransformation](../android.service.autofill/DateTransformation.md) Replaces a `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` child of a `https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription.html#` with the contents of a field that is expected to have a `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#forDate(kotlin.Long)`.
+[DateTransformation](../android.service.autofill/DateTransformation.md) Replaces a `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` child of a `https://developer.android.com/reference/kotlin/android/service/autofill/CustomDescription.html#` with the contents of a field that is expected to have a forDate.
 [DateValueSanitizer](../android.service.autofill/DateValueSanitizer.md) Sanitizes a date `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue.html#` using a `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.html#`.
 [Debug.MemoryInfo](../android/os/Debug.MemoryInfo.md) This class is used to retrieved various statistics about the memory mappings for this process.
 [DecisionLogic](../android.adservices.adselection/DecisionLogic.md) Generic Decision logic that could be provided by the buyer or seller.
@@ -292,7 +292,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [DocumentsContract.Path](../android/provider/DocumentsContract.Path.md) Holds a path from a document to a particular document under it.
 [DomainVerificationUserState](../android.content.pm.verify.domain/DomainVerificationUserState.md) Contains the user selection state for a package.
 [DownloadRequest](../android.telephony.mbms/DownloadRequest.md) Describes a request to download files over cell-broadcast.
-[DownloadableSubscription](../android.telephony.euicc/DownloadableSubscription.md) Information about a subscription which is downloadable to an eUICC using `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,%20kotlin.Boolean,%20android.app.PendingIntent)`.
+[DownloadableSubscription](../android.telephony.euicc/DownloadableSubscription.md) Information about a subscription which is downloadable to an eUICC using downloadSubscription.
 [DragAndDropPermissions](../android.view/DragAndDropPermissions.md) `https://developer.android.com/reference/kotlin/android/view/DragAndDropPermissions.html#` controls the access permissions for the content URIs associated with a `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#`.
 [DragEvent](../android.view/DragEvent.md) Represents an event that is sent out by the system at various times during a drag and drop operation.
 [DropBoxManager.Entry](../android/os/DropBoxManager.Entry.md) A single entry retrieved from the drop box.
@@ -320,7 +320,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [ExecuteAppFunctionResponse](../android.app.appfunctions/ExecuteAppFunctionResponse.md) The response to an app function execution, returned by android.
 [ExerciseRoute](../android.health.connect.datatypes/ExerciseRoute.md) Route of the exercise session.
 [ExerciseRoute.Location](../android/health/connect/datatypes/ExerciseRoute.Location.md) Point in the time and space.
-[ExternalStorageStats](../android.app.usage/ExternalStorageStats.md) Shared/external storage statistics for a `https://developer.android.com/reference/kotlin/android/os/UserHandle` on a single storage volume.
+[ExternalStorageStats](../android.app.usage/ExternalStorageStats.md) Shared/external storage statistics for a UserHandle on a single storage volume.
 [ExtractedText](../android.view.inputmethod/ExtractedText.md) Information about text that has been extracted for use by an input method.
 [ExtractedTextRequest](../android.view.inputmethod/ExtractedTextRequest.md) Description of what an input method would like from an application when extract text from its input editor.
 [FactoryResetProtectionPolicy](../android.app.admin/FactoryResetProtectionPolicy.md) The factory reset protection policy determines which accounts can unlock a device that has gone through untrusted factory reset.
@@ -335,14 +335,14 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [FileOperationRequest](../android/os/storage/operations/FileOperationRequest.md) Encapsulates a request to Move, or Copy files.
 [FileOperationResult](../android/os/storage/operations/FileOperationResult.md) Represents the result of a file operation.
 [FileServiceInfo](../android.telephony.mbms/FileServiceInfo.md) Describes a file service available from the carrier from which files can be downloaded via cell-broadcast.
-[FillContext](../android.service.autofill/FillContext.md) This class represents a context for each fill request made via `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)`.
-[FillEventHistory](../android.service.autofill/FillEventHistory.md) Describes what happened after the last `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)` call.
+[FillContext](../android.service.autofill/FillContext.md) This class represents a context for each fill request made via onFillRequest.
+[FillEventHistory](../android.service.autofill/FillEventHistory.md) Describes what happened after the last onFillRequest call.
 [FillRequest](../android.service.autofill/FillRequest.md) This class represents a request to an autofill service to interpret the screen and provide information to the system which views are interesting for saving and what are the possible ways to fill the inputs on the screen if applicable.
-[FillResponse](../android.service.autofill/FillResponse.md) Response for an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)`.
+[FillResponse](../android.service.autofill/FillResponse.md) Response for an onFillRequest.
 [ForegroundServiceStartNotAllowedException](../android.app/ForegroundServiceStartNotAllowedException.md) Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service.html#` when it's not allowed to do so.
 [FormEditRecord](../android.graphics.pdf.models/FormEditRecord.md) Record of a form filling operation that has been executed on a single form field in a PDF.
 [FormWidgetInfo](../android.graphics.pdf.models/FormWidgetInfo.md) Information about a form widget of a PDF document.
-[Fragment.SavedState](../android/app/Fragment.SavedState.md) State information that has been retrieved from a fragment instance through `https://developer.android.com/reference/kotlin/android/app/FragmentManager.html#saveFragmentInstanceState(android.app.Fragment)`.
+[Fragment.SavedState](../android/app/Fragment.SavedState.md) State information that has been retrieved from a fragment instance through saveFragmentInstanceState.
 [FrameRateVelocityPoint](../android/view/FrameRateVelocityPoint.md) Contains the frame rate / velocity values.
 [FrequencyCapFilters](../android.adservices.common/FrequencyCapFilters.md) A container for the ad filters that are based on frequency caps.
 [Gainmap](../android.graphics/Gainmap.md) Gainmap represents a mechanism for augmenting an SDR image to produce an HDR one with variable display adjustment capability.
@@ -355,7 +355,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [GetCredentialResponse](../android.credentials/GetCredentialResponse.md) A response object that encapsulates the credential successfully retrieved from the user.
 [GetDeviceDataSourcesResponse](../android/health/connect/GetDeviceDataSourcesResponse.md) Response containing the list of `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource.html#`.
 [GetMedicalDataSourcesRequest](../android.health.connect/GetMedicalDataSourcesRequest.md) A create request for android.
-[GetSchemaResponse](../android.app.appsearch/GetSchemaResponse.md) The response class of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#getSchema(java.util.concurrent.Executor,%20java.util.function.Consumer)`
+[GetSchemaResponse](../android.app.appsearch/GetSchemaResponse.md) The response class of getSchema
 [GetValueRequest](../android.service.settings.preferences/GetValueRequest.md) Request parameters to retrieve the current value of a Settings Preference.
 [GetValueResult](../android.service.settings.preferences/GetValueResult.md) Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueRequest.html#`.
 [GetWalletCardsError](../android.service.quickaccesswallet/GetWalletCardsError.md) Error response for an `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest.html#`.
@@ -415,7 +415,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [JobInfo](../android.app.job/JobInfo.md) Container of data passed to the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#` fully encapsulating the parameters required to schedule work against the calling application.
 [JobInfo.TriggerContentUri](../android/app/job/JobInfo.TriggerContentUri.md) Information about a content URI modification that a job would like to trigger on.
 [JobParameters](../android.app.job/JobParameters.md) Contains the parameters used to configure/identify your job.
-[JobWorkItem](../android.app.job/JobWorkItem.md) A unit of work that can be enqueued for a job using `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#enqueue(android.app.job.JobInfo,%20android.app.job.JobWorkItem)`.
+[JobWorkItem](../android.app.job/JobWorkItem.md) A unit of work that can be enqueued for a job using enqueue.
 [JoinOrSplitGesture](../android.view.inputmethod/JoinOrSplitGesture.md) A subclass of `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture.html#` for deleting or inserting whitespace in text.
 [JoinSpec](../android.app.appsearch/JoinSpec.md) This class represents the specifications for the joining operation in search.
 [KeyCharacterMap](../android.view/KeyCharacterMap.md) Describes the keys provided by a keyboard device and their associated labels.
@@ -432,7 +432,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [LinkAddress](../android.net/LinkAddress.md) Identifies an IP address on a network link.
 [LinkProperties](../android.net/LinkProperties.md) Describes the properties of a network link.
 [ListItem](../android.graphics.pdf.models/ListItem.md) Represents a single option in a combo box or list box PDF form widget.
-[LoadSdkException](../android.app.sdksandbox/LoadSdkException.md) Exception thrown by `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager.html#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+[LoadSdkException](../android.app.sdksandbox/LoadSdkException.md) Exception thrown by loadSdk
 [LocaleConfig](../android.app/LocaleConfig.md) The LocaleConfig of an application.
 [LocaleList](LocaleList.md) LocaleList is an immutable list of Locales, typically used to keep an ordered list of user preferences for locales.
 [Location](../android.location/Location.md) A data class representing a geographic location.
@@ -444,7 +444,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [MagnificationConfig](../android.accessibilityservice/MagnificationConfig.md) This class describes the magnification config for `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#` to control the magnification.
 [ManagedSubscriptionsPolicy](../android.app.admin/ManagedSubscriptionsPolicy.md) A policy class that describes how managed SIM subscriptions should behave on the device.
 [MatchmakingRequest](../android.health.connect/MatchmakingRequest.md) Represents a request to determine if there are matching data sources for a given set of record types.
-[MatchmakingResponse](../android/health/connect/MatchmakingResponse.md) A response for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#isMatchmakingPossible(android.health.connect.MatchmakingRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+[MatchmakingResponse](../android/health/connect/MatchmakingResponse.md) A response for isMatchmakingPossible.
 [MediaBrowser.MediaItem](../android/media/browse/MediaBrowser.MediaItem.md) A class with information on a single media item for use in browsing/searching media.
 [MediaController.PlaybackInfo](../android/media/session/MediaController.PlaybackInfo.md) Holds information about the current playback and how audio is handled for this session.
 [MediaDescription](../android.media/MediaDescription.md) A simple set of metadata for a media item suitable for display.
@@ -452,7 +452,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [MediaMetadata](../android.media/MediaMetadata.md) Contains metadata about an item, such as the title, artist, etc.
 [MediaPlayer.TrackInfo](../android/media/MediaPlayer.TrackInfo.md) Class for MediaPlayer to return each audio/video/subtitle track's metadata.
 [MediaProjectionAppContent](../android/media/projection/MediaProjectionAppContent.md) Holds information about content an app can share via the MediaProjection APIs.
-[MediaProjectionConfig](../android.media.projection/MediaProjectionConfig.md) Configure the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#` session requested from `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionManager.html#createScreenCaptureIntent(android.media.projection.MediaProjectionConfig)`.
+[MediaProjectionConfig](../android.media.projection/MediaProjectionConfig.md) Configure the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjection.html#` session requested from createScreenCaptureIntent.
 [MediaQualityManager.ProfileQueryParams](../android/media/quality/MediaQualityManager.ProfileQueryParams.md) Options for profile queries.
 [MediaRoute2Info](../android.media/MediaRoute2Info.md) Describes the properties of a route.
 [MediaSession.QueueItem](../android/media/session/MediaSession.QueueItem.md) A single item that is part of the play queue.
@@ -462,7 +462,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [MedicalResource](../android.health.connect.datatypes/MedicalResource.md) A class to capture the user's medical data.
 [MedicalResourceId](../android.health.connect/MedicalResourceId.md) A class to represent a unique identifier of a medical resource.
 [MemoryBudgetInfo](../android.content.pm/MemoryBudgetInfo.md) Memory budget information for an application.
-[Message](Message.md) Defines a message containing a description and arbitrary data object that can be sent to a `https://developer.android.com/reference/kotlin/android/os/Handler`.
+[Message](Message.md) Defines a message containing a description and arbitrary data object that can be sent to a Handler.
 [MessagePdu](../android.service.carrier/MessagePdu.md) A parcelable list of PDUs representing contents of a possibly multi-part SMS.
 [Messenger](Messenger.md) Reference to a Handler, which others can use to send messages to it.
 [MetadataRequest](../android.service.settings.preferences/MetadataRequest.md) Request parameters to retrieve all metadata for all available settings preferences within this application.
@@ -505,8 +505,8 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [ObservingDevicePresenceRequest](../android.companion/ObservingDevicePresenceRequest.md) A request for setting the types of device for observing device presence.
 [OobInitiatorRangingConfig](../android.ranging.oob/OobInitiatorRangingConfig.md) Represents the configuration for an Out-of-Band (OOB) initiator in a ranging session.
 [OobResponderRangingConfig](../android.ranging.oob/OobResponderRangingConfig.md) Represents the configuration for an Out-of-Band (OOB) responder in a ranging session.
-[OpenBlobForReadResponse](../android.app.appsearch/OpenBlobForReadResponse.md) The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#openBlobForRead(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
-[OpenBlobForWriteResponse](../android.app.appsearch/OpenBlobForWriteResponse.md) The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#openBlobForWrite(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[OpenBlobForReadResponse](../android.app.appsearch/OpenBlobForReadResponse.md) The response to provide batch operation results of openBlobForRead.
+[OpenBlobForWriteResponse](../android.app.appsearch/OpenBlobForWriteResponse.md) The response to provide batch operation results of openBlobForWrite.
 [OutOfBandPairingRequest](../android.companion/OutOfBandPairingRequest.md) Represents a request for out-of-band pairing.
 [OutputConfiguration](../android.hardware.camera2.params/OutputConfiguration.md) A class for describing camera output, which contains a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` and its specific configuration for creating capture session.
 [OverlayIdentifier](../android.content.om/OverlayIdentifier.md) A key used to uniquely identify a Runtime Resource Overlay (RRO).
@@ -515,7 +515,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [OverlayProperties](../android.hardware/OverlayProperties.md) Provides supported overlay properties of the device.
 [PackageInfo](../android.content.pm/PackageInfo.md) Overall information about the contents of a package.
 [PackageInstaller.InstallConstraints](../android/content/pm/PackageInstaller.InstallConstraints.md) A class to encapsulate constraints for installation.
-[PackageInstaller.InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md) The callback result of `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.html#checkInstallConstraints(kotlin.collections.MutableList,%20android.content.pm.PackageInstaller.InstallConstraints,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[PackageInstaller.InstallConstraintsResult](../android/content/pm/PackageInstaller.InstallConstraintsResult.md) The callback result of checkInstallConstraints.
 [PackageInstaller.PreapprovalDetails](../android/content/pm/PackageInstaller.PreapprovalDetails.md) Details for requesting the pre-commit install approval.
 [PackageInstaller.SessionInfo](../android/content/pm/PackageInstaller.SessionInfo.md) Details for an active install session.
 [PackageInstaller.SessionParams](../android/content/pm/PackageInstaller.SessionParams.md) Parameters for creating a new `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller.Session.html#`.
@@ -527,9 +527,9 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [PageRange](../android.print/PageRange.md) Represents a range of pages.
 [PageSelection](../android.graphics.pdf.models.selection/PageSelection.md) Represents the list of selected content on a particular page of the PDF document.
 [ParameterCapability](../android.media.quality/ParameterCapability.md) Capability info of media quality parameters
-[ParcelFileDescriptor](ParcelFileDescriptor.md) The FileDescriptor returned by `https://developer.android.com/reference/kotlin/android/os/Parcel#readFileDescriptor()`, allowing you to close it when done with it.
+[ParcelFileDescriptor](ParcelFileDescriptor.md) The FileDescriptor returned by readFileDescriptor, allowing you to close it when done with it.
 [ParcelUuid](ParcelUuid.md) This class is a Parcelable wrapper around `https://developer.android.com/reference/kotlin/java/util/UUID.html#` which is an immutable representation of a 128-bit universally unique identifier.
-[ParcelableColorSpace](../android.graphics/ParcelableColorSpace.md) A `https://developer.android.com/reference/kotlin/android/os/Parcelable#` wrapper for a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.html#`.
+[ParcelableColorSpace](../android.graphics/ParcelableColorSpace.md) A Parcelable wrapper for a `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.html#`.
 [ParcelablePeerHandle](../android.net.wifi.aware/ParcelablePeerHandle.md) A Parcelable `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PeerHandle.html#`.
 [ParcelableSpan](../android.text/ParcelableSpan.md) A special kind of Parcelable for objects that will serve as text spans.
 [ParsedPhoneNumber](../android.telephony/ParsedPhoneNumber.md) Handles the results from PhoneNumberManager by providing Phone number, error code, and is valid number.
@@ -564,7 +564,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [PhotoPickerUiCustomizationParams](../android.widget.photopicker/PhotoPickerUiCustomizationParams.md) Defines UI customization options for the system's Photo Picker interface.
 [PhysicalChannelConfig](../android.telephony/PhysicalChannelConfig.md) Information describing the physical channel configuration.
 [PictureInPictureParams](../android.app/PictureInPictureParams.md) Represents a set of parameters used to initialize and update an Activity in picture-in-picture mode.
-[PictureInPictureUiState](../android.app/PictureInPictureUiState.md) Used by `https://developer.android.com/reference/kotlin/android/app/Activity.html#onPictureInPictureUiStateChanged(android.app.PictureInPictureUiState)`.
+[PictureInPictureUiState](../android.app/PictureInPictureUiState.md) Used by onPictureInPictureUiStateChanged.
 [PictureProfile](../android.media.quality/PictureProfile.md) Profile for picture quality.
 [PlaybackErrorEvent](../android.media.metrics/PlaybackErrorEvent.md) Playback error event.
 [PlaybackMetrics](../android.media.metrics/PlaybackMetrics.md) This class is used to store playback data.
@@ -596,7 +596,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [ProviderProperties](../android.location.provider/ProviderProperties.md) Location provider properties.
 [ProxyInfo](../android.net/ProxyInfo.md) Describes a proxy configuration.
 [PublishConfig](../android.net.wifi.aware/PublishConfig.md) Defines the configuration of an Aware publish session.
-[QueryLocationException](../android.telecom/QueryLocationException.md) This class represents a set of exceptions that can occur when requesting a `https://developer.android.com/reference/kotlin/android/telecom/Connection.html#queryLocationForEmergency(kotlin.Long,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+[QueryLocationException](../android.telecom/QueryLocationException.md) This class represents a set of exceptions that can occur when requesting a queryLocationForEmergency
 [RadioAccessSpecifier](../android.telephony/RadioAccessSpecifier.md) Describes a particular radio access network to be scanned.
 [RangingCapabilities](../android.ranging/RangingCapabilities.md) Represents the capabilities and availability of various ranging technologies.
 [RangingConfig](../android.ranging/RangingConfig.md) Abstract class to represent type of ranging configuration.
@@ -606,7 +606,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [RangingMeasurement](../android.ranging/RangingMeasurement.md) Represents a ranging measurement.
 [RangingPreference](../android.ranging/RangingPreference.md) Represents the configuration preferences for a ranging session.
 [RangingRequest](../android.net.wifi.rtt/RangingRequest.md) Defines the ranging request to other devices.
-[RangingResult](../android.net.wifi.rtt/RangingResult.md) Ranging result for a request started by `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/WifiRttManager.html#startRanging(android.net.wifi.rtt.RangingRequest,%20java.util.concurrent.Executor,%20android.net.wifi.rtt.RangingResultCallback)`.
+[RangingResult](../android.net.wifi.rtt/RangingResult.md) Ranging result for a request started by startRanging.
 [Rating](../android.media/Rating.md) A class to encapsulate rating information used as content metadata.
 [RawDtTagRangingConfig](../android/ranging/raw/RawDtTagRangingConfig.md) <br />
 
@@ -628,12 +628,12 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [RemoteInput](../android.app/RemoteInput.md) A `RemoteInput` object specifies input to be collected from a user to be passed along with an intent inside a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` that is sent.
 [RemoteViews](../android.widget/RemoteViews.md) A class that describes a view hierarchy that can be displayed in another process.
 [RemoteViews.RemoteCollectionItems](../android/widget/RemoteViews.RemoteCollectionItems.md) Representation of a fixed list of items to be displayed in a RemoteViews collection.
-[RemoveBlobResponse](../android.app.appsearch/RemoveBlobResponse.md) Results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#removeBlob(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`, containing the outcome of the removal of each handles.
+[RemoveBlobResponse](../android.app.appsearch/RemoveBlobResponse.md) Results of removeBlob, containing the outcome of the removal of each handles.
 [RemoveByDocumentIdRequest](../android.app.appsearch/RemoveByDocumentIdRequest.md) Encapsulates a request to remove documents by namespace and IDs from the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#` database.
 [RemoveSpaceGesture](../android.view.inputmethod/RemoveSpaceGesture.md) A subclass of `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture.html#` for removing whitespace from text.
-[RenderingConfig](../android.adservices.ondevicepersonalization/RenderingConfig.md) Information returned by `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker.html#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)` that is used in a subesequent call to `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker.html#onRender(android.adservices.ondevicepersonalization.RenderInput,%20android.os.OutcomeReceiver)` to identify the content to be displayed in a single `https://developer.android.com/reference/kotlin/android/view/View.html#`.
+[RenderingConfig](../android.adservices.ondevicepersonalization/RenderingConfig.md) Information returned by onExecute that is used in a subesequent call to onRender to identify the content to be displayed in a single `https://developer.android.com/reference/kotlin/android/view/View.html#`.
 [ReportUsageRequest](../android.app.appsearch/ReportUsageRequest.md) A request to report usage of a document.
-[RequestLogRecord](../android.adservices.ondevicepersonalization/RequestLogRecord.md) Contains data that will be written to the REQUESTS table at the end of a call to `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker.html#onExecute(android.adservices.ondevicepersonalization.ExecuteInput,%20android.os.OutcomeReceiver)`.
+[RequestLogRecord](../android.adservices.ondevicepersonalization/RequestLogRecord.md) Contains data that will be written to the REQUESTS table at the end of a call to onExecute.
 [ResolveInfo](../android.content.pm/ResolveInfo.md) Information that is returned from resolving an intent against an IntentFilter.
 [ResponderConfig](../android.net.wifi.rtt/ResponderConfig.md) Defines the configuration of an IEEE 802.
 [ResponderLocation](../android.net.wifi.rtt/ResponderLocation.md) ResponderLocation is both a Location Configuration Information (LCI) decoder and a Location Civic Report (LCR) decoder for information received from a Wi-Fi Access Point (AP) during Wi-Fi RTT ranging process.
@@ -650,7 +650,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [RttRangingParams](../android.ranging.wifi.rtt/RttRangingParams.md) Represents the parameters required to perform Wi-Fi Round Trip Time (RTT) ranging.
 [RttStationRangingParams](../android.ranging.wifi.rtt/RttStationRangingParams.md) Represents the parameters required to perform Wi-Fi Station-AP Round Trip Time (RTT) ranging.
 [SandboxedSdk](../android.app.sdksandbox/SandboxedSdk.md) Represents an SDK loaded in the sandbox process.
-[SaveInfo](../android.service.autofill/SaveInfo.md) Information used to indicate that an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` is interested on saving the user-inputed data for future use, through a `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#onSaveRequest(android.service.autofill.SaveRequest,%20android.service.autofill.SaveCallback)` call.
+[SaveInfo](../android.service.autofill/SaveInfo.md) Information used to indicate that an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` is interested on saving the user-inputed data for future use, through a onSaveRequest call.
 [SaveRequest](../android.service.autofill/SaveRequest.md) This class represents a request to an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` to save applicable data entered by the user.
 [ScanFilter](../android.bluetooth.le/ScanFilter.md) Criteria for filtering result from Bluetooth LE scans.
 [ScanResult](../android.net.wifi/ScanResult.md) Describes information about a detected access point.
@@ -664,7 +664,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [SearchResult.MatchRange](../android/app/appsearch/SearchResult.MatchRange.md) Class providing the position range of a text match information.
 [SearchResult.TextMatchInfo](../android/app/appsearch/SearchResult.TextMatchInfo.md) This class represents match objects for any text match snippets that might be present in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResults.html#` from a string query.
 [SearchSpec](../android.app.appsearch/SearchSpec.md) This class represents the specification logic for AppSearch.
-[SearchSuggestionResult](../android.app.appsearch/SearchSuggestionResult.md) The result class of the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#searchSuggestion(kotlin.String,%20android.app.appsearch.SearchSuggestionSpec,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[SearchSuggestionResult](../android.app.appsearch/SearchSuggestionResult.md) The result class of the searchSuggestion.
 [SearchSuggestionSpec](../android.app.appsearch/SearchSuggestionSpec.md) This class represents the specification logic for AppSearch.
 [SearchableInfo](../android.app/SearchableInfo.md) Searchability meta-data for an activity.
 [SectionRequest](../android.media.tv/SectionRequest.md) A request for Section from broadcast signal.
@@ -676,7 +676,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [SelectWalletCardRequest](../android.service.quickaccesswallet/SelectWalletCardRequest.md) Represents a request to a `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService.html#` to select a particular `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/WalletCard.html#`.
 [SelectionBoundary](../android.graphics.pdf.models.selection/SelectionBoundary.md) Represents one edge of the selected content.
 [SelectionEvent](../android.view.textclassifier/SelectionEvent.md) A selection event.
-[SellerConfiguration](../android.adservices.adselection/SellerConfiguration.md) This object will be part of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest.html#` and will be constructed and used by the SDK to influence the size of the response of `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager.html#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+[SellerConfiguration](../android.adservices.adselection/SellerConfiguration.md) This object will be part of the `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest.html#` and will be constructed and used by the SDK to influence the size of the response of getAdSelectionData
 [SensorFusionParams](../android.ranging/SensorFusionParams.md) Configuration for the sensor fusion algorithm to use in a ranging session.
 [SentenceSuggestionsInfo](../android.view.textservice/SentenceSuggestionsInfo.md) This class contains a metadata of suggestions returned from a text service (e.g.
 [ServiceInfo](../android.content.pm/ServiceInfo.md) Information you can retrieve about a particular application service.
@@ -686,8 +686,8 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [Session2Token](../android.media/Session2Token.md) This API is not generally intended for third party application developers.
 [SessionConfig](../android.ranging/SessionConfig.md) Defines the ranging session configurations.
 [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md) A helper class that aggregates all supported arguments for capture session initialization.
-[SetSchemaResponse](../android.app.appsearch/SetSchemaResponse.md) The response class of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`
-[SetSchemaResponse.MigrationFailure](../android/app/appsearch/SetSchemaResponse.MigrationFailure.md) The class represents a post-migrated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#` that failed to be saved by `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession.html#setSchema(android.app.appsearch.SetSchemaRequest,%20java.util.concurrent.Executor,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[SetSchemaResponse](../android.app.appsearch/SetSchemaResponse.md) The response class of setSchema
+[SetSchemaResponse.MigrationFailure](../android/app/appsearch/SetSchemaResponse.MigrationFailure.md) The class represents a post-migrated `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#` that failed to be saved by setSchema.
 [SetValueRequest](../android.service.settings.preferences/SetValueRequest.md) Request parameters to set the current value to a Settings Preference.
 [SetValueResult](../android.service.settings.preferences/SetValueResult.md) Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest.html#`.
 [SettingsPreferenceMetadata](../android.service.settings.preferences/SettingsPreferenceMetadata.md) Data object representation of a Settings Preference definition and state.
@@ -720,7 +720,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [StatusBarNotification](../android.service.notification/StatusBarNotification.md) Class encapsulating a Notification.
 [StatusHints](../android.telecom/StatusHints.md) Contains status label and icon displayed in the in-call UI.
 [StorageInfo](../android.app.appsearch/StorageInfo.md) The response class of `AppSearchSession#getStorageInfo`.
-[StorageStats](../android.app.usage/StorageStats.md) Storage statistics for a UID, package, or `https://developer.android.com/reference/kotlin/android/os/UserHandle` on a single storage volume.
+[StorageStats](../android.app.usage/StorageStats.md) Storage statistics for a UID, package, or UserHandle on a single storage volume.
 [StorageVolume](../android.os.storage/StorageVolume.md) Information about a shared/external storage volume for a specific user.
 [StreamEventRequest](../android.media.tv/StreamEventRequest.md) A request for Stream Event from broadcast signal.
 [StreamEventResponse](../android.media.tv/StreamEventResponse.md) A response for Stream Event from broadcast signal.
@@ -745,14 +745,14 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [SyncStats](../android.content/SyncStats.md) Used to record various statistics about the result of a sync operation.
 [SystemUpdateInfo](../android.app.admin/SystemUpdateInfo.md) A class containing information about a pending system update.
 [SystemUpdatePolicy](../android.app.admin/SystemUpdatePolicy.md) Determines when over-the-air system updates are installed on a device.
-[SystemUpdatePolicy.ValidationFailedException](../android/app/admin/SystemUpdatePolicy.ValidationFailedException.md) An exception class that represents various validation errors thrown from `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy.html#setFreezePeriods(kotlin.collections.MutableList)` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#setSystemUpdatePolicy(android.content.ComponentName,%20android.app.admin.SystemUpdatePolicy)`
+[SystemUpdatePolicy.ValidationFailedException](../android/app/admin/SystemUpdatePolicy.ValidationFailedException.md) An exception class that represents various validation errors thrown from setFreezePeriods and setSystemUpdatePolicy
 [TableRequest](../android.media.tv/TableRequest.md) A request for Table from broadcast signal.
 [TableResponse](../android.media.tv/TableResponse.md) A response for Table from broadcast signal.
 [Tag](../android.nfc/Tag.md) Represents an NFC tag that has been discovered.
 [TelephonyDisplayInfo](../android.telephony/TelephonyDisplayInfo.md) TelephonyDisplayInfo contains telephony-related information used for display purposes only.
 [TelephonyNetworkSpecifier](../android.net/TelephonyNetworkSpecifier.md) NetworkSpecifier object for cellular network request.
 [TetheringInterface](../android.net/TetheringInterface.md) The mapping of tethering interface and type.
-[TetheringManager.TetheringRequest](../android/net/TetheringManager.TetheringRequest.md) Use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager.html#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)` to specify additional parameters when starting tethering.
+[TetheringManager.TetheringRequest](../android/net/TetheringManager.TetheringRequest.md) Use with startTethering to specify additional parameters when starting tethering.
 [TextAppearanceInfo](../android.view.inputmethod/TextAppearanceInfo.md) Information about text appearance in an editor, passed through `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo.html#` for use by `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#`.
 [TextAttribute](../android.view.inputmethod/TextAttribute.md) The data class that IME can take extra information to applications when setting the text.
 [TextBoundsInfo](../android.view.inputmethod/TextBoundsInfo.md) The text bounds information of a slice of text in the editor.
@@ -783,7 +783,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [TrafficDescriptor](../android.telephony.data/TrafficDescriptor.md) A traffic descriptor, as defined in 3GPP TS 24.
 [TrainingExampleRecord](../android.adservices.ondevicepersonalization/TrainingExampleRecord.md) One record of `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingExamplesOutput.html#`.
 [TranslationCapability](../android.view.translation/TranslationCapability.md) Capability class holding information for a pair of `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec.html#`s.
-[TranslationContext](../android.view.translation/TranslationContext.md) Info class holding information for `https://developer.android.com/reference/kotlin/android/view/translation/Translator.html#`s and used by `https://developer.android.com/reference/kotlin/android/view/translation/TranslationManager.html#createOnDeviceTranslator(android.view.translation.TranslationContext,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
+[TranslationContext](../android.view.translation/TranslationContext.md) Info class holding information for `https://developer.android.com/reference/kotlin/android/view/translation/Translator.html#`s and used by createOnDeviceTranslator.
 [TranslationRequest](../android.view.translation/TranslationRequest.md) Translation request sent to the translation service by the `https://developer.android.com/reference/kotlin/android/view/translation/Translator.html#` which contains the text to be translated.
 [TranslationRequestValue](../android.view.translation/TranslationRequestValue.md) A value to be translated via `https://developer.android.com/reference/kotlin/android/view/translation/Translator.html#`.
 [TranslationResponse](../android.view.translation/TranslationResponse.md) Response from the translation service, which contains the translated result.
@@ -804,11 +804,11 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [UiccPortInfo](../android.telephony/UiccPortInfo.md) UiccPortInfo class represents information about a single port contained on `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo.html#`.
 [UnregisterCredentialDescriptionRequest](../android.credentials/UnregisterCredentialDescriptionRequest.md) A request to unregister a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` that contains an actively provisioned `https://developer.android.com/reference/kotlin/android/credentials/Credential.html#` represented by a `https://developer.android.com/reference/kotlin/android/credentials/CredentialDescription.html#`.
 [UnsafeStateException](../android.app.admin/UnsafeStateException.md) Exception thrown when a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` operation failed because it was not safe to be executed at that moment.
-[UpsertMedicalResourceRequest](../android.health.connect/UpsertMedicalResourceRequest.md) An upsert request for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#upsertMedicalResources(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
+[UpsertMedicalResourceRequest](../android.health.connect/UpsertMedicalResourceRequest.md) An upsert request for upsertMedicalResources.
 [Uri](../android.net/Uri.md) Immutable URI reference.
 [UriPermission](../android.content/UriPermission.md) Description of a single Uri permission grant.
 [UrspRule](../android.telephony.data/UrspRule.md) Represents a single URSP rule as defined in 3GPP TS 24.
-[UsageEvents](../android.app.usage/UsageEvents.md) A result returned from `https://developer.android.com/reference/kotlin/android/app/usage/UsageStatsManager.html#queryEvents(kotlin.Long,%20kotlin.Long)` from which to read `https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event.html#` objects.
+[UsageEvents](../android.app.usage/UsageEvents.md) A result returned from queryEvents from which to read `https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.Event.html#` objects.
 [UsageEventsQuery](../android.app.usage/UsageEventsQuery.md) An Object-Oriented representation for a `https://developer.android.com/reference/kotlin/android/app/usage/UsageEvents.html#` query.
 [UsageStats](../android.app.usage/UsageStats.md) Contains usage statistics for an app package for a specific time range.
 [UsbAccessory](../android.hardware.usb/UsbAccessory.md) A class representing a USB accessory, which is an external hardware component that communicates with an android application over USB.
@@ -831,7 +831,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [VerifiedMotionEvent](../android.view/VerifiedMotionEvent.md) MotionEvent that has been verified by the system.
 [VersionedPackage](../android.content.pm/VersionedPackage.md) Encapsulates a package and its version code.
 [VibrationAttributes](VibrationAttributes.md) Encapsulates a collection of attributes describing information about a vibration.
-[VibrationEffect](VibrationEffect.md) A VibrationEffect describes a haptic effect to be performed by a `https://developer.android.com/reference/kotlin/android/os/Vibrator`.
+[VibrationEffect](VibrationEffect.md) A VibrationEffect describes a haptic effect to be performed by a Vibrator.
 [VibratorEnvelopeEffectInfo](../android.os.vibrator/VibratorEnvelopeEffectInfo.md) Provides information about the vibrator hardware capabilities and limitations regarding waveform envelope effects.
 [VideoProfile](../android.telecom/VideoProfile.md) Represents attributes of video calls.
 [VideoProfile.CameraCapabilities](../android/telecom/VideoProfile.CameraCapabilities.md) Represents the camera capabilities important to a Video Telephony provider.
@@ -867,7 +867,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [WifiConfiguration](../android.net.wifi/WifiConfiguration.md) A class representing a configured Wi-Fi network, including the security configuration.
 [WifiEnterpriseConfig](../android.net.wifi/WifiEnterpriseConfig.md) Enterprise configuration details for Wi-Fi.
 [WifiInfo](../android.net.wifi/WifiInfo.md) Describes the state of any Wi-Fi connection that is active or is in the process of being set up.
-[WifiManager.AddNetworkResult](../android/net/wifi/WifiManager.AddNetworkResult.md) Provides the results of a call to `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#addNetworkPrivileged(android.net.wifi.WifiConfiguration)`
+[WifiManager.AddNetworkResult](../android/net/wifi/WifiManager.AddNetworkResult.md) Provides the results of a call to addNetworkPrivileged
 [WifiNetworkSpecifier](../android.net.wifi/WifiNetworkSpecifier.md) Network specifier object used to request a Wi-Fi network.
 [WifiNetworkSuggestion](../android.net.wifi/WifiNetworkSuggestion.md) The Network Suggestion object is used to provide a Wi-Fi network for consideration when auto-connecting to networks.
 [WifiP2pConfig](../android.net.wifi.p2p/WifiP2pConfig.md) A class representing a Wi-Fi P2p configuration for setting up a connection
@@ -880,7 +880,7 @@ Known Direct Subclasses [AbsSavedState](../android.view/AbsSavedState.md), [Acce
 [WifiP2pInfo](../android.net.wifi.p2p/WifiP2pInfo.md) A class representing connection information about a Wi-Fi p2p group
 [WifiP2pPairingBootstrappingConfig](../android.net.wifi.p2p/WifiP2pPairingBootstrappingConfig.md) A class representing Wi-Fi Direct pairing bootstrapping configuration.
 [WifiP2pServiceInfo](../android.net.wifi.p2p.nsd/WifiP2pServiceInfo.md) A class for storing service information that is advertised over a Wi-Fi peer-to-peer setup
-[WifiP2pServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pServiceRequest.md) A class for creating a service discovery request for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)`
+[WifiP2pServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pServiceRequest.md) A class for creating a service discovery request for use with addServiceRequest and removeServiceRequest
 [WifiP2pUsdBasedLocalServiceAdvertisementConfig](../android.net.wifi.p2p/WifiP2pUsdBasedLocalServiceAdvertisementConfig.md) A class representing a Wi-Fi P2P USD based service advertisement configuration for advertising the services.
 [WifiP2pUsdBasedServiceConfig](../android.net.wifi.p2p.nsd/WifiP2pUsdBasedServiceConfig.md) A class for creating a USD based service discovery configuration for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo.html#`.
 [WifiP2pUsdBasedServiceDiscoveryConfig](../android.net.wifi.p2p/WifiP2pUsdBasedServiceDiscoveryConfig.md) A class representing a Wi-Fi P2P USD based service discovery configuration for discovering the services.
@@ -983,7 +983,7 @@ Known Indirect Subclasses [AbsoluteSizeSpan](../android.text.style/AbsoluteSizeS
 [TextClassifierEvent.LanguageDetectionEvent](../android/view/textclassifier/TextClassifierEvent.LanguageDetectionEvent.md) This class represents events that are related to the language detection feature.
 [TextClassifierEvent.TextLinkifyEvent](../android/view/textclassifier/TextClassifierEvent.TextLinkifyEvent.md) This class represents events that are related to the smart linkify feature.
 [TextClassifierEvent.TextSelectionEvent](../android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.md) This class represents events that are related to the smart text selection feature.
-[TextView.SavedState](../android/widget/TextView.SavedState.md) User interface state that is stored by TextView for implementing `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`.
+[TextView.SavedState](../android/widget/TextView.SavedState.md) User interface state that is stored by TextView for implementing onSaveInstanceState.
 [TimelineRequest](../android.media.tv/TimelineRequest.md) A request for Timeline from broadcast signal.
 [TimelineResponse](../android.media.tv/TimelineResponse.md) A response for Timeline from broadcast signal.
 [TsRequest](../android.media.tv/TsRequest.md) A request for TS (transport stream) from broadcast signal.
@@ -994,14 +994,14 @@ Known Indirect Subclasses [AbsoluteSizeSpan](../android.text.style/AbsoluteSizeS
 [UnderlineSpan](../android.text.style/UnderlineSpan.md) A span that underlines the text it's attached to.
 [VerifiedKeyEvent](../android.view/VerifiedKeyEvent.md) KeyEvent that has been verified by the system.
 [VerifiedMotionEvent](../android.view/VerifiedMotionEvent.md) MotionEvent that has been verified by the system.
-[View.BaseSavedState](../android/view/View.BaseSavedState.md) Base class for derived classes that want to save and restore their own state in `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`.
+[View.BaseSavedState](../android/view/View.BaseSavedState.md) Base class for derived classes that want to save and restore their own state in onSaveInstanceState.
 [WifiDeviceFilter](../android.companion/WifiDeviceFilter.md) A filter for Wifi devices
 [WifiP2pDnsSdServiceInfo](../android.net.wifi.p2p.nsd/WifiP2pDnsSdServiceInfo.md) A class for storing Bonjour service information that is advertised over a Wi-Fi peer-to-peer setup.
-[WifiP2pDnsSdServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pDnsSdServiceRequest.md) A class for creating a Bonjour service discovery request for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)`
+[WifiP2pDnsSdServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pDnsSdServiceRequest.md) A class for creating a Bonjour service discovery request for use with addServiceRequest and removeServiceRequest
 [WifiP2pUpnpServiceInfo](../android.net.wifi.p2p.nsd/WifiP2pUpnpServiceInfo.md) A class for storing Upnp service information that is advertised over a Wi-Fi peer-to-peer setup.
-[WifiP2pUpnpServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pUpnpServiceRequest.md) A class for creating a Upnp service discovery request for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)`
+[WifiP2pUpnpServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pUpnpServiceRequest.md) A class for creating a Upnp service discovery request for use with addServiceRequest and removeServiceRequest
 
-Interface for classes whose instances can be written to and restored from a `https://developer.android.com/reference/kotlin/android/os/Parcel`. Classes implementing the Parcelable interface must also have a non-null public static field called `CREATOR` of a type that implements the `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator` interface.
+Interface for classes whose instances can be written to and restored from a Parcel. Classes implementing the Parcelable interface must also have a non-null public static field called `CREATOR` of a type that implements the `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator` interface.
 
 A typical implementation of Parcelable is:
 
@@ -1076,13 +1076,13 @@ public class MyParcelable implements Parcelable {
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". |
 
 | Public methods ||
 |---|---|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcelable#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 ## Constants
 
@@ -1094,13 +1094,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTENTS_FILE_DESCRIPTOR: Int
 ```
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
  Value: 1
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcelable#describeContents()`
+- describeContents
 
 ### PARCELABLE_WRITE_RETURN_VALUE
 
@@ -1110,7 +1110,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PARCELABLE_WRITE_RETURN_VALUE: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
  Value: 1
 
@@ -1124,7 +1124,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

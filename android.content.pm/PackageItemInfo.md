@@ -11,7 +11,7 @@ open class PackageItemInfo
 | ↳ | [android.content.pm.PackageItemInfo](PackageItemInfo.md) |
 
 Known Direct Subclasses [ApplicationInfo](ApplicationInfo.md), [ComponentInfo](ComponentInfo.md), [InstrumentationInfo](InstrumentationInfo.md), [PermissionGroupInfo](PermissionGroupInfo.md), [PermissionInfo](PermissionInfo.md) [ApplicationInfo](ApplicationInfo.md) Information you can retrieve about a particular application.
-[ComponentInfo](ComponentInfo.md) Base class containing information common to all application components (`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo`, `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo`).
+[ComponentInfo](ComponentInfo.md) Base class containing information common to all application components (ActivityInfo, ServiceInfo).
 [InstrumentationInfo](InstrumentationInfo.md) Information you can retrieve about a particular piece of test instrumentation.
 [PermissionGroupInfo](PermissionGroupInfo.md) Information you can retrieve about a particular security permission group known to the system.
 [PermissionInfo](PermissionInfo.md) Information you can retrieve about a particular security permission known to the system.
@@ -29,29 +29,29 @@ Base class containing information common to all package items held by the packag
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#PackageItemInfo()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#PackageItemInfo(android.content.pm.PackageItemInfo)(orig: https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#!)` <br /> |
+| PackageItemInfo <br /> |
+| PackageItemInfo <br /> |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#PackageItemInfo(android.os.Parcel)(source: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` <br /> |
+| PackageItemInfo <br /> |
 
 | Public methods ||
 |---|---|
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical banner associated with this item. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this item. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)` Retrieve the current textual label associated with this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | loadBanner Retrieve the current graphical banner associated with this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | loadIcon Retrieve the current graphical icon associated with this item. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | loadLabel Retrieve the current textual label associated with this item. |
 | --- | --- |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical logo associated with this item. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. |
-| open [XmlResourceParser](../android.content.res/XmlResourceParser.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Load an XML resource attached to the meta-data of this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | loadLogo Retrieve the current graphical logo associated with this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | loadUnbadgedIcon Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. |
+| open [XmlResourceParser](../android.content.res/XmlResourceParser.md)! | loadXmlMetaData Load an XML resource attached to the meta-data of this item. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel <br /> |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#dumpFront(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dumpBack <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dumpFront <br /> |
 
 | Properties ||
 |---|---|
@@ -108,7 +108,7 @@ open fun loadBanner(pm: PackageManager!): Drawable!
 
 Retrieve the current graphical banner associated with this item. This will call back on the given PackageManager to load the banner from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -128,7 +128,7 @@ open fun loadIcon(pm: PackageManager!): Drawable!
 
 Retrieve the current graphical icon associated with this item. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -166,7 +166,7 @@ open fun loadLogo(pm: PackageManager!): Drawable!
 
 Retrieve the current graphical logo associated with this item. This will call back on the given PackageManager to load the logo from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -186,7 +186,7 @@ open fun loadUnbadgedIcon(pm: PackageManager!): Drawable!
 
 Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -285,7 +285,7 @@ var isArchived: Boolean
 
 Whether the package is currently in an archived state.
 
-Packages can be archived through `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestArchive(kotlin.String,%20android.content.IntentSender)` and do not have any APKs stored on the device, but do keep the data directory.
+Packages can be archived through requestArchive and do not have any APKs stored on the device, but do keep the data directory.
 
 ### labelRes
 
@@ -335,7 +335,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 var nonLocalizedLabel: CharSequence!
 ```
 
-The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)`
+The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want getApplicationLabel
 
 ### packageName
 

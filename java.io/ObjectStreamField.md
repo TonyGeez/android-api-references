@@ -16,27 +16,27 @@ A description of a Serializable field from a Serializable class. An array of Obj
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#ObjectStreamField(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, type: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!)` Create a Serializable field with the specified type. |
-| `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#ObjectStreamField(kotlin.String,%20java.lang.Class,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, type: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>!, unshared: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Creates an ObjectStreamField representing a serializable field with the given name and type. |
+| ObjectStreamField Create a Serializable field with the specified type. |
+| ObjectStreamField Creates an ObjectStreamField representing a serializable field with the given name and type. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#compareTo(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Compare this field with another `ObjectStreamField`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getName()()` Get the name of this field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getOffset()()` Offset of field within instance data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compare this field with another `ObjectStreamField`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Get the name of this field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOffset Offset of field within instance data. |
 | --- | --- |
-| open [Class](../java.lang/Class.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getType()()` Get the type of the field. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getTypeCode()()` Returns character encoding of field type. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getTypeString()()` Return the JVM type signature. |
+| open [Class](../java.lang/Class.md)\<\*\>! | getType Get the type of the field. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | getTypeCode Returns character encoding of field type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getTypeString Return the JVM type signature. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#isPrimitive()()` Return true if this field has a primitive type. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#isUnshared()()` Returns boolean value indicating whether or not the serializable field represented by this ObjectStreamField instance is unshared. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#toString()()` Return a string that describes this field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPrimitive Return true if this field has a primitive type. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUnshared Returns boolean value indicating whether or not the serializable field represented by this ObjectStreamField instance is unshared. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Return a string that describes this field. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#setOffset(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Offset within instance data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOffset Offset within instance data. |
 
 ## Public constructors
 
@@ -132,7 +132,7 @@ Offset of field within instance data.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#setOffset(kotlin.Int)`
+- setOffset
 
 ### getType
 
@@ -142,7 +142,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getType(): Class<*>!
 ```
 
-Get the type of the field. If the type is non-primitive and this `ObjectStreamField` was obtained from a deserialized `https://developer.android.com/reference/kotlin/java/io/ObjectStreamClass` instance, then `Object.class` is returned. Otherwise, the `Class` object for the type of the field is returned.
+Get the type of the field. If the type is non-primitive and this `ObjectStreamField` was obtained from a deserialized ObjectStreamClass instance, then `Object.class` is returned. Otherwise, the `Class` object for the type of the field is returned.
 
 | Return ||
 |---|---|
@@ -252,4 +252,4 @@ Offset within instance data.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getOffset()`
+- getOffset

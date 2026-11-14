@@ -16,7 +16,7 @@ UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams.Builder` Builder class for creating instances of `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#` |
+| | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams.Builder` Builder class for creating instances of UwbRangingParams |
 
 | Constants ||
 |---|---|
@@ -35,29 +35,29 @@ UwbRangingParams encapsulates the parameters required for a UWB ranging session.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [UwbComplexChannel](UwbComplexChannel.md) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getComplexChannel()()` Gets the complex channel information for this session. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [UwbComplexChannel](UwbComplexChannel.md) | getComplexChannel Gets the complex channel information for this session. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getConfigId()()` Gets the configuration ID associated with this session. |
-| [UwbAddress](UwbAddress.md) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getDeviceAddress()()` Gets the UWB address of the device. |
-| [UwbAddress](UwbAddress.md) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getPeerAddress()()` Returns the UwbAddress of the peer device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getConfigId Gets the configuration ID associated with this session. |
+| [UwbAddress](UwbAddress.md) | getDeviceAddress Gets the UWB address of the device. |
+| [UwbAddress](UwbAddress.md) | getPeerAddress Returns the UwbAddress of the peer device. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getRangingUpdateRate()()` Returns the update rate for ranging operations. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSessionId()()` Gets the session ID associated with this ranging session. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSessionKeyInfo()()` Gets session key information, if available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRangingUpdateRate Returns the update rate for ranging operations. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSessionId Gets the session ID associated with this ranging session. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getSessionKeyInfo Gets session key information, if available. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSlotDuration()()` Returns slot duration of the session. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSubSessionId()()` Gets the sub-session ID if applicable for the session. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#getSubSessionKeyInfo()()` Gets sub-session key information, if available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSlotDuration Returns slot duration of the session. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSubSessionId Gets the sub-session ID if applicable for the session. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getSubSessionKeyInfo Gets sub-session key information, if available. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbRangingParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -184,7 +184,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -230,7 +230,7 @@ Gets the complex channel information for this session.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel` | A `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbComplexChannel` object containing channel and preamble index. This value cannot be `null`. |
+| UwbComplexChannel | A UwbComplexChannel object containing channel and preamble index. This value cannot be `null`. |
 
 ### getConfigId
 
@@ -258,7 +258,7 @@ Gets the UWB address of the device.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress` | The `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress` of the device. This value cannot be `null`. |
+| UwbAddress | The UwbAddress of the device. This value cannot be `null`. |
 
 ### getPeerAddress
 
@@ -272,7 +272,7 @@ Returns the UwbAddress of the peer device.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress` | A `https://developer.android.com/reference/kotlin/android/ranging/uwb/UwbAddress` corresponding to the peer device to range with. This value cannot be `null`. |
+| UwbAddress | A UwbAddress corresponding to the peer device to range with. This value cannot be `null`. |
 
 ### getRangingUpdateRate
 
@@ -371,8 +371,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

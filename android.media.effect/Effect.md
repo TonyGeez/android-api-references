@@ -15,7 +15,7 @@ abstract class Effect
 
 Effects are high-performance transformations that can be applied to image frames. These are passed in the form of OpenGL ES 2.0 texture names. Typical frames could be images loaded from disk, or frames from the camera or other video streams.
 
-To create an Effect you must first create an EffectContext. You can obtain an instance of the context's EffectFactory by calling `https://developer.android.com/reference/kotlin/android/media/effect/EffectContext#getFactory()`. The EffectFactory allows you to instantiate specific Effects.
+To create an Effect you must first create an EffectContext. You can obtain an instance of the context's EffectFactory by calling getFactory. The EffectFactory allows you to instantiate specific Effects.
 
 The application is responsible for creating an EGL context, and making it current before applying an effect. An effect is bound to a single EffectContext, which in turn is bound to a single EGL context. If your EGL context is destroyed, the EffectContext becomes invalid and any effects bound to this context can no longer be used.
 
@@ -23,16 +23,16 @@ The application is responsible for creating an EGL context, and making it curren
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/effect/Effect#Effect()()` <br /> |
+| Effect <br /> |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#apply(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(inputTexId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, outputTexId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Apply an effect to GL textures. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#getName()()` Get the effect name. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#release()()` Release an effect. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | apply Apply an effect to GL textures. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Get the effect name. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | release Release an effect. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#setParameter(kotlin.String,%20kotlin.Any)(parameterKey: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Set a filter parameter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/effect/Effect#setUpdateListener(android.media.effect.EffectUpdateListener)(listener: https://developer.android.com/reference/kotlin/android/media/effect/EffectUpdateListener!)` Set an effect listener. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setParameter Set a filter parameter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setUpdateListener Set an effect listener. |
 
 ## Public constructors
 

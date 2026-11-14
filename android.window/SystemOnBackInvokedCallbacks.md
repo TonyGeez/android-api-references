@@ -13,11 +13,11 @@ class SystemOnBackInvokedCallbacks
 | --- | --- |
 | ↳ | [android.window.SystemOnBackInvokedCallbacks](SystemOnBackInvokedCallbacks.md) |
 
-Utility class providing `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback`s to override the default behavior when system back is invoked. e.g. `https://developer.android.com/reference/kotlin/android/app/Activity.html#finish()`
+Utility class providing OnBackInvokedCallbacks to override the default behavior when system back is invoked. e.g. finish
 
-By registering these callbacks with the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher`, the system can trigger specific behaviors and play corresponding ahead-of-time animations when the back gesture is invoked.
+By registering these callbacks with the OnBackInvokedDispatcher, the system can trigger specific behaviors and play corresponding ahead-of-time animations when the back gesture is invoked.
 
-For example, to trigger the `https://developer.android.com/reference/kotlin/android/app/Activity.html#moveTaskToBack(kotlin.Boolean)` behavior:
+For example, to trigger the moveTaskToBack behavior:
 
 ```kotlin
 OnBackInvokedDispatcher dispatcher = activity.getOnBackInvokedDispatcher();
@@ -31,8 +31,8 @@ OnBackInvokedDispatcher dispatcher = activity.getOnBackInvokedDispatcher();
 
 | Public methods ||
 |---|---|
-| static [OnBackInvokedCallback](OnBackInvokedCallback.md) | `https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#finishAndRemoveTaskCallback(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#)` Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAndRemoveTask()` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. |
-| static [OnBackInvokedCallback](OnBackInvokedCallback.md) | `https://developer.android.com/reference/kotlin/android/window/SystemOnBackInvokedCallbacks#moveTaskToBackCallback(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#)` Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#moveTaskToBack(kotlin.Boolean)` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, moving the task containing the activity to the background. |
+| static [OnBackInvokedCallback](OnBackInvokedCallback.md) | finishAndRemoveTaskCallback Get a callback to triggers finishAndRemoveTask on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. |
+| static [OnBackInvokedCallback](OnBackInvokedCallback.md) | moveTaskToBackCallback Get a callback to triggers moveTaskToBack on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, moving the task containing the activity to the background. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static fun finishAndRemoveTaskCallback(activity: Activity): OnBackInvokedCallback
 ```
 
-Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAndRemoveTask()` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. If the activity is the root activity of its task, the entire task will be removed from the recents task. The activity will be finished in all cases. The system will play the corresponding transition animation.
+Get a callback to triggers finishAndRemoveTask on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`. If the activity is the root activity of its task, the entire task will be removed from the recents task. The activity will be finished in all cases. The system will play the corresponding transition animation.
 
 | Parameters ||
 |---|---|
@@ -52,11 +52,11 @@ Get a callback to triggers `https://developer.android.com/reference/kotlin/andro
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback` | This value cannot be `null`. |
+| OnBackInvokedCallback | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAndRemoveTask()`
+- finishAndRemoveTask
 
 ### moveTaskToBackCallback
 
@@ -66,7 +66,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static fun moveTaskToBackCallback(activity: Activity): OnBackInvokedCallback
 ```
 
-Get a callback to triggers `https://developer.android.com/reference/kotlin/android/app/Activity.html#moveTaskToBack(kotlin.Boolean)` on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, moving the task containing the activity to the background. The system will play the corresponding transition animation, regardless of whether the activity is the root activity of the task.
+Get a callback to triggers moveTaskToBack on the associated `https://developer.android.com/reference/kotlin/android/app/Activity.html#`, moving the task containing the activity to the background. The system will play the corresponding transition animation, regardless of whether the activity is the root activity of the task.
 
 | Parameters ||
 |---|---|
@@ -74,8 +74,8 @@ Get a callback to triggers `https://developer.android.com/reference/kotlin/andro
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedCallback` | This value cannot be `null`. |
+| OnBackInvokedCallback | This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Activity.html#moveTaskToBack(kotlin.Boolean)`
+- moveTaskToBack

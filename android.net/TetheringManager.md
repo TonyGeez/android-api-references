@@ -18,11 +18,11 @@ The primary responsibilities of this class are to provide the APIs for applicati
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.StartTetheringCallback` Callback for use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)` to find out whether tethering succeeded. |
-| abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.StopTetheringCallback` Callback for use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#stopTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StopTetheringCallback)` to find out whether stop tethering succeeded. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.StartTetheringCallback` Callback for use with startTethering to find out whether tethering succeeded. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.StopTetheringCallback` Callback for use with stopTethering to find out whether stop tethering succeeded. |
 | abstract | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback` Callback for use with registerTetheringEventCallback to find out tethering upstream status. |
 | --- | --- |
-| | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest` Use with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)` to specify additional parameters when starting tethering. |
+| | `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest` Use with startTethering to specify additional parameters when starting tethering. |
 
 | Constants ||
 |---|---|
@@ -57,15 +57,15 @@ The primary responsibilities of this class are to provide the APIs for applicati
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#registerTetheringEventCallback(java.util.concurrent.Executor,%20android.net.TetheringManager.TetheringEventCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback)` Start listening to tethering change events. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)(request: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.StartTetheringCallback)` Starts tethering and runs tether provisioning for the given type if needed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#stopTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StopTetheringCallback)(request: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.StopTetheringCallback)` Stops tethering for the given request. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerTetheringEventCallback Start listening to tethering change events. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startTethering Starts tethering and runs tether provisioning for the given type if needed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopTethering Stops tethering for the given request. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#unregisterTetheringEventCallback(android.net.TetheringManager.TetheringEventCallback)(callback: https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringEventCallback)` Remove tethering event callback previously registered with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#registerTetheringEventCallback(java.util.concurrent.Executor,%20android.net.TetheringManager.TetheringEventCallback)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterTetheringEventCallback Remove tethering event callback previously registered with registerTetheringEventCallback. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/TetheringManager#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Constants
 
@@ -95,7 +95,7 @@ Wifi tethering type.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/TetheringManager#startTethering(android.net.TetheringManager.TetheringRequest,%20java.util.concurrent.Executor,%20android.net.TetheringManager.StartTetheringCallback)`
+- startTethering
 
 ### TETHER_ERROR_DHCPSERVER_ERROR
 
@@ -358,7 +358,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterTetheringEventCallback(callback: TetheringManager.TetheringEventCallback): Unit
 ```
 
-Remove tethering event callback previously registered with `https://developer.android.com/reference/kotlin/android/net/TetheringManager#registerTetheringEventCallback(java.util.concurrent.Executor,%20android.net.TetheringManager.TetheringEventCallback)`. 
+Remove tethering event callback previously registered with registerTetheringEventCallback. 
 Requires android.Manifest.permission#TETHER_PRIVILEGED or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String`
 
 | Parameters ||

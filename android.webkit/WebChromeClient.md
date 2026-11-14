@@ -18,48 +18,48 @@ open class WebChromeClient
 | Nested classes ||
 |---|---|
 | abstract | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.CustomViewCallback` A callback interface used by the host application to notify the current page that its custom view has been dismissed. |
-| abstract | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams` Parameters used in the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowFileChooser(android.webkit.WebView,%20android.webkit.ValueCallback,%20android.webkit.WebChromeClient.FileChooserParams)` method. |
+| abstract | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams` Parameters used in the onShowFileChooser method. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#WebChromeClient()()` <br /> |
+| WebChromeClient <br /> |
 
 | Public methods ||
 |---|---|
-| open [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getDefaultVideoPoster()()` When not playing, video elements are represented by a 'poster' image. |
-| open [View](../android.view/View.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getVideoLoadingProgressView()()` Obtains a View to be displayed while buffering of full screen video is taking place. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#getVisitedHistory(android.webkit.ValueCallback)(callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>!)` Obtains a list of all visited history items, used for link coloring |
+| open [Bitmap](../android.graphics/Bitmap.md)? | getDefaultVideoPoster When not playing, video elements are represented by a 'poster' image. |
+| open [View](../android.view/View.md)? | getVideoLoadingProgressView Obtains a View to be displayed while buffering of full screen video is taking place. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getVisitedHistory Obtains a list of all visited history items, used for link coloring |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onCloseWindow(android.webkit.WebView)(window: https://developer.android.com/reference/kotlin/android/webkit/WebView!)` Notify the host application to close the given WebView and remove it from the view system if necessary. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onConsoleMessage(android.webkit.ConsoleMessage)(consoleMessage: https://developer.android.com/reference/kotlin/android/webkit/ConsoleMessage!)` Report a JavaScript console message to the host application. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onConsoleMessage(kotlin.String,%20kotlin.Int,%20kotlin.String)(message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, lineNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sourceID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Report a JavaScript error message to the host application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCloseWindow Notify the host application to close the given WebView and remove it from the view system if necessary. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onConsoleMessage Report a JavaScript console message to the host application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onConsoleMessage Report a JavaScript error message to the host application. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onCreateWindow(android.webkit.WebView,%20kotlin.Boolean,%20kotlin.Boolean,%20android.os.Message)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, isDialog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, isUserGesture: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, resultMsg: https://developer.android.com/reference/kotlin/android/os/Message.html#!)` Request the host application to create a new window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onExceededDatabaseQuota(kotlin.String,%20kotlin.String,%20kotlin.Long,%20kotlin.Long,%20kotlin.Long,%20android.webkit.WebStorage.QuotaUpdater)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, databaseIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, quota: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, estimatedDatabaseSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, totalQuota: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, quotaUpdater: https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater!)` Tell the client that the quota has been exceeded for the Web SQL Database API for a particular origin and request a new quota. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onGeolocationPermissionsHidePrompt()()` Notify the host application that a request for Geolocation permissions, made with a previous call to `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onGeolocationPermissionsShowPrompt(kotlin.String,%20android.webkit.GeolocationPermissions.Callback)` has been canceled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onCreateWindow Request the host application to create a new window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onExceededDatabaseQuota Tell the client that the quota has been exceeded for the Web SQL Database API for a particular origin and request a new quota. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onGeolocationPermissionsHidePrompt Notify the host application that a request for Geolocation permissions, made with a previous call to onGeolocationPermissionsShowPrompt has been canceled. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onGeolocationPermissionsShowPrompt(kotlin.String,%20android.webkit.GeolocationPermissions.Callback)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions.Callback!)` Notify the host application that web content from the specified origin is attempting to use the Geolocation API, but no permission state is currently set for that origin. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onHideCustomView()()` Notify the host application that the current page has exited full screen mode. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onJsAlert(android.webkit.WebView,%20kotlin.String,%20kotlin.String,%20android.webkit.JsResult)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, result: https://developer.android.com/reference/kotlin/android/webkit/JsResult!)` Notify the host application that the web page wants to display a JavaScript `alert()` dialog. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onGeolocationPermissionsShowPrompt Notify the host application that web content from the specified origin is attempting to use the Geolocation API, but no permission state is currently set for that origin. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onHideCustomView Notify the host application that the current page has exited full screen mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onJsAlert Notify the host application that the web page wants to display a JavaScript `alert()` dialog. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onJsBeforeUnload(android.webkit.WebView,%20kotlin.String,%20kotlin.String,%20android.webkit.JsResult)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, result: https://developer.android.com/reference/kotlin/android/webkit/JsResult!)` Notify the host application that the web page wants to confirm navigation from JavaScript `onbeforeunload`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onJsConfirm(android.webkit.WebView,%20kotlin.String,%20kotlin.String,%20android.webkit.JsResult)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, result: https://developer.android.com/reference/kotlin/android/webkit/JsResult!)` Notify the host application that the web page wants to display a JavaScript `confirm()` dialog. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onJsPrompt(android.webkit.WebView,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20android.webkit.JsPromptResult)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, result: https://developer.android.com/reference/kotlin/android/webkit/JsPromptResult!)` Notify the host application that the web page wants to display a JavaScript `prompt()` dialog. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onJsBeforeUnload Notify the host application that the web page wants to confirm navigation from JavaScript `onbeforeunload`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onJsConfirm Notify the host application that the web page wants to display a JavaScript `confirm()` dialog. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onJsPrompt Notify the host application that the web page wants to display a JavaScript `prompt()` dialog. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onJsTimeout()()` Tell the client that a JavaScript execution timeout has occured. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onPermissionRequest(android.webkit.PermissionRequest)(request: https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest!)` Notify the host application that web content is requesting permission to access the specified resources and the permission currently isn't granted or denied. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onPermissionRequestCanceled(android.webkit.PermissionRequest)(request: https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest!)` Notify the host application that the given permission request has been canceled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onJsTimeout Tell the client that a JavaScript execution timeout has occured. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPermissionRequest Notify the host application that web content is requesting permission to access the specified resources and the permission currently isn't granted or denied. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPermissionRequestCanceled Notify the host application that the given permission request has been canceled. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onProgressChanged(android.webkit.WebView,%20kotlin.Int)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, newProgress: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Tell the host application the current progress of loading a page. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onReceivedIcon(android.webkit.WebView,%20android.graphics.Bitmap)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, icon: https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#!)` Notify the host application of a new favicon for the current page. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onReceivedTitle(android.webkit.WebView,%20kotlin.String)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Notify the host application of a change in the document title. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onProgressChanged Tell the host application the current progress of loading a page. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onReceivedIcon Notify the host application of a new favicon for the current page. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onReceivedTitle Notify the host application of a change in the document title. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onReceivedTouchIconUrl(android.webkit.WebView,%20kotlin.String,%20kotlin.Boolean)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!, url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, precomposed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Notify the host application of the url for an apple-touch-icon. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onRequestFocus(android.webkit.WebView)(view: https://developer.android.com/reference/kotlin/android/webkit/WebView!)` Request display and focus for this WebView. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowCustomView(android.view.View,%20android.webkit.WebChromeClient.CustomViewCallback)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, callback: https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.CustomViewCallback!)` Notify the host application that the current page has entered full screen mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onReceivedTouchIconUrl Notify the host application of the url for an apple-touch-icon. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onRequestFocus Request display and focus for this WebView. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onShowCustomView Notify the host application that the current page has entered full screen mode. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowCustomView(android.view.View,%20kotlin.Int,%20android.webkit.WebChromeClient.CustomViewCallback)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, requestedOrientation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.CustomViewCallback!)` Notify the host application that the current page would like to show a custom View in a particular orientation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowFileChooser(android.webkit.WebView,%20android.webkit.ValueCallback,%20android.webkit.WebChromeClient.FileChooserParams)(webView: https://developer.android.com/reference/kotlin/android/webkit/WebView!, filePathCallback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>!>!, fileChooserParams: https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams!)` Asks the client app to show a file chooser. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onShowCustomView Notify the host application that the current page would like to show a custom View in a particular orientation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | onShowFileChooser Asks the client app to show a file chooser. |
 
 ## Public constructors
 
@@ -119,7 +119,7 @@ open fun onCloseWindow(window: WebView!): Unit
 
 Notify the host application to close the given WebView and remove it from the view system if necessary. At this point, WebCore has stopped any loading in this window and has removed any cross-scripting ability in javascript.
 
-As with `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onCreateWindow(android.webkit.WebView,%20kotlin.Boolean,%20kotlin.Boolean,%20android.os.Message)`, the application should ensure that any URL or security indicator displayed is updated so that the user can tell that the page they were interacting with has been closed.
+As with onCreateWindow, the application should ensure that any URL or security indicator displayed is updated so that the user can tell that the page they were interacting with has been closed.
 
 | Parameters ||
 |---|---|
@@ -156,7 +156,7 @@ open fun onConsoleMessage(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onConsoleMessage(android.webkit.ConsoleMessage)` instead.*
+**Deprecated:** *Use onConsoleMessage instead.*
 
 Report a JavaScript error message to the host application. The ChromeClient should override this to process the log message as they see fit.
 
@@ -194,7 +194,7 @@ Applications should be careful how they display the new window: don't simply ove
 | `isDialog` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the new window should be a dialog, rather than a full-size window. |
 | `isUserGesture` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the request was initiated by a user gesture, such as the user clicking a link. |
 | --- | --- |
-| `resultMsg` | [Message](../android.os/Message.md)!: The message to send when once a new WebView has been created. resultMsg.obj is a `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport` object. This should be used to transport the new WebView, by calling `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport#setWebView(android.webkit.WebView)`. |
+| `resultMsg` | [Message](../android.os/Message.md)!: The message to send when once a new WebView has been created. resultMsg.obj is a `https://developer.android.com/reference/kotlin/android/webkit/WebView.WebViewTransport` object. This should be used to transport the new WebView, by calling setWebView. |
 
 | Return ||
 |---|---|
@@ -218,7 +218,7 @@ open fun onExceededDatabaseQuota(
 
 **Deprecated:** *This method is no longer called; WebView now uses the HTML5 / JavaScript Quota Management API.*
 
-Tell the client that the quota has been exceeded for the Web SQL Database API for a particular origin and request a new quota. The client must respond by invoking the `https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater#updateQuota(kotlin.Long)` method of the supplied `https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater` instance. The minimum value that can be set for the new quota is the current quota. The default implementation responds with the current quota, so the quota will not be increased.
+Tell the client that the quota has been exceeded for the Web SQL Database API for a particular origin and request a new quota. The client must respond by invoking the updateQuota method of the supplied `https://developer.android.com/reference/kotlin/android/webkit/WebStorage.QuotaUpdater` instance. The minimum value that can be set for the new quota is the current quota. The default implementation responds with the current quota, so the quota will not be increased.
 
 | Parameters ||
 |---|---|
@@ -239,7 +239,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open fun onGeolocationPermissionsHidePrompt(): Unit
 ```
 
-Notify the host application that a request for Geolocation permissions, made with a previous call to `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onGeolocationPermissionsShowPrompt(kotlin.String,%20android.webkit.GeolocationPermissions.Callback)` has been canceled. Any related UI should therefore be hidden.
+Notify the host application that a request for Geolocation permissions, made with a previous call to onGeolocationPermissionsShowPrompt has been canceled. Any related UI should therefore be hidden.
 
 ### onGeolocationPermissionsShowPrompt
 
@@ -252,7 +252,7 @@ open fun onGeolocationPermissionsShowPrompt(
 ): Unit
 ```
 
-Notify the host application that web content from the specified origin is attempting to use the Geolocation API, but no permission state is currently set for that origin. The host application should invoke the specified callback with the desired permission state. See `https://developer.android.com/reference/kotlin/android/webkit/GeolocationPermissions` for details.
+Notify the host application that web content from the specified origin is attempting to use the Geolocation API, but no permission state is currently set for that origin. The host application should invoke the specified callback with the desired permission state. See GeolocationPermissions for details.
 
 Note that for applications targeting Android N and later SDKs (API level \> `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`) this method is only called for requests originating from secure origins such as https. On non-secure origins geolocation requests are automatically denied.
 
@@ -269,9 +269,9 @@ Added in [API level 7](https://developer.android.com/guide/topics/manifest/uses-
 open fun onHideCustomView(): Unit
 ```
 
-Notify the host application that the current page has exited full screen mode. The host application must hide the custom View (the View which was previously passed to `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowCustomView(android.view.View,%20android.webkit.WebChromeClient.CustomViewCallback)`). After this call, web content will render in the original WebView again.
+Notify the host application that the current page has exited full screen mode. The host application must hide the custom View (the View which was previously passed to onShowCustomView). After this call, web content will render in the original WebView again.
 
-**Note:** if overriding this method, the application must also override `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowCustomView(android.view.View,%20android.webkit.WebChromeClient.CustomViewCallback)`.
+**Note:** if overriding this method, the application must also override onShowCustomView.
 
 ### onJsAlert
 
@@ -294,7 +294,7 @@ To show a custom dialog, the app should return `true` from this method, in which
 
 To suppress the dialog and allow JavaScript execution to continue, call `JsResult.confirm()` immediately and then return `true`.
 
-Note that if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is set to be `null`, or if `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is not set at all, the default dialog will be suppressed and Javascript execution will continue immediately.
+Note that if the WebChromeClient is set to be `null`, or if WebChromeClient is not set at all, the default dialog will be suppressed and Javascript execution will continue immediately.
 
 Note that the default dialog does not inherit the `https://developer.android.com/reference/kotlin/android/view/Display.html#FLAG_SECURE:kotlin.Int` flag from the parent window.
 
@@ -331,7 +331,7 @@ To show a custom dialog, the app should return `true` from this method, in which
 
 To suppress the dialog and allow JavaScript execution to continue, call `JsResult.confirm()` or `JsResult.cancel()` immediately and then return `true`.
 
-Note that if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is set to be `null`, or if `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is not set at all, the default dialog will be suppressed and the navigation will be resumed immediately.
+Note that if the WebChromeClient is set to be `null`, or if WebChromeClient is not set at all, the default dialog will be suppressed and the navigation will be resumed immediately.
 
 Note that the default dialog does not inherit the `https://developer.android.com/reference/kotlin/android/view/Display.html#FLAG_SECURE:kotlin.Int` flag from the parent window.
 
@@ -368,7 +368,7 @@ To show a custom dialog, the app should return `true` from this method, in which
 
 To suppress the dialog and allow JavaScript execution to continue, call `JsResult.confirm()` or `JsResult.cancel()` immediately and then return `true`.
 
-Note that if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is set to be `null`, or if `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is not set at all, the default dialog will be suppressed and the default value of `false` will be returned to the JavaScript code immediately.
+Note that if the WebChromeClient is set to be `null`, or if WebChromeClient is not set at all, the default dialog will be suppressed and the default value of `false` will be returned to the JavaScript code immediately.
 
 Note that the default dialog does not inherit the `https://developer.android.com/reference/kotlin/android/view/Display.html#FLAG_SECURE:kotlin.Int` flag from the parent window.
 
@@ -406,7 +406,7 @@ To show a custom dialog, the app should return `true` from this method, in which
 
 To suppress the dialog and allow JavaScript execution to continue, call `JsPromptResult.confirm(result)` immediately and then return `true`.
 
-Note that if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is set to be `null`, or if `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#` is not set at all, the default dialog will be suppressed and `null` will be returned to the JavaScript code immediately.
+Note that if the WebChromeClient is set to be `null`, or if WebChromeClient is not set at all, the default dialog will be suppressed and `null` will be returned to the JavaScript code immediately.
 
 Note that the default dialog does not inherit the `https://developer.android.com/reference/kotlin/android/view/Display.html#FLAG_SECURE:kotlin.Int` flag from the parent window.
 
@@ -448,7 +448,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun onPermissionRequest(request: PermissionRequest!): Unit
 ```
 
-Notify the host application that web content is requesting permission to access the specified resources and the permission currently isn't granted or denied. The host application must invoke `https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#grant(kotlin.Array)` or `https://developer.android.com/reference/kotlin/android/webkit/PermissionRequest#deny()`. If this method isn't overridden, the permission is denied.
+Notify the host application that web content is requesting permission to access the specified resources and the permission currently isn't granted or denied. The host application must invoke grant or deny. If this method isn't overridden, the permission is denied.
 
 | Parameters ||
 |---|---|
@@ -570,11 +570,11 @@ open fun onShowCustomView(
 
 Notify the host application that the current page has entered full screen mode. After this call, web content will no longer be rendered in the WebView, but will instead be rendered in `view`. The host application should add this View to a Window which is configured with `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#FLAG_FULLSCREEN:kotlin.Int` flag in order to actually display this web content full screen.
 
-The application may explicitly exit fullscreen mode by invoking `callback` (ex. when the user presses the back button). However, this is generally not necessary as the web page will often show its own UI to close out of fullscreen. Regardless of how the WebView exits fullscreen mode, WebView will invoke `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onHideCustomView()`, signaling for the application to remove the custom View.
+The application may explicitly exit fullscreen mode by invoking `callback` (ex. when the user presses the back button). However, this is generally not necessary as the web page will often show its own UI to close out of fullscreen. Regardless of how the WebView exits fullscreen mode, WebView will invoke onHideCustomView, signaling for the application to remove the custom View.
 
 If this method is not overridden, WebView will report to the web page it does not support fullscreen mode and will not honor the web page's request to run in fullscreen mode.
 
-**Note:** if overriding this method, the application must also override `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onHideCustomView()`.
+**Note:** if overriding this method, the application must also override onHideCustomView.
 
 | Parameters ||
 |---|---|
@@ -619,18 +619,18 @@ open fun onShowFileChooser(
 
 Asks the client app to show a file chooser. The web page has requested to either upload or save a file, such as from a 'file' input in an HTML form or due to a JavaScript API call. The client app can decide whether to show the user a file chooser dialog or to programmatically handle the request. This can be invoked both for uploads and downloads, and it can also be invoked for single files, multiple files, or entire folders. Client apps should check `fileChooserParams` for details about what type of file is being requested.
 
-To show the user a file chooser dialog, override this callback to return `true` and store the `filePathCallback` in a variable. Present the dialog to the user and when they reply, invoke the callback with a URI which points to the file. Make sure to check the `fileChooserParams` in order to show appropriate options in the file chooser dialog, such as automatically filtering by relevant file type (see `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams#getAcceptTypes()`).
+To show the user a file chooser dialog, override this callback to return `true` and store the `filePathCallback` in a variable. Present the dialog to the user and when they reply, invoke the callback with a URI which points to the file. Make sure to check the `fileChooserParams` in order to show appropriate options in the file chooser dialog, such as automatically filtering by relevant file type (see getAcceptTypes).
 
 To handle each request programmatically, respond to this callback with `true`. You can invoke `filePathCallback` with `null` in order to cancel the request or you can invoke the callback with a URI to actual file or folder.
 
 The default behavior is that WebView will cancel all file requests.
 
-**Note:** WebView does not enforce any restrictions on the chosen file(s). WebView can access all files that your app can access. In case the file(s) are chosen through an untrusted source such as a third-party app, it is your own app's responsibility to check what the returned Uris refer to before calling the `filePathCallback`. See `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams#createIntent()` and `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient.FileChooserParams#parseResult(kotlin.Int,%20android.content.Intent)` for more details.
+**Note:** WebView does not enforce any restrictions on the chosen file(s). WebView can access all files that your app can access. In case the file(s) are chosen through an untrusted source such as a third-party app, it is your own app's responsibility to check what the returned Uris refer to before calling the `filePathCallback`. See createIntent and parseResult for more details.
 
 | Parameters ||
 |---|---|
 | `webView` | [WebView](WebView.md)!: The WebView instance that is initiating the request. |
-| `filePathCallback` | [ValueCallback](ValueCallback.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](../android.net/Uri.md)!\>!\>!: Invoke this callback to supply the list of paths to files to upload, or `null` to cancel. Must only be called if the `https://developer.android.com/reference/kotlin/android/webkit/WebChromeClient#onShowFileChooser(android.webkit.WebView,%20android.webkit.ValueCallback,%20android.webkit.WebChromeClient.FileChooserParams)` implementation returns `true`. |
+| `filePathCallback` | [ValueCallback](ValueCallback.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](../android.net/Uri.md)!\>!\>!: Invoke this callback to supply the list of paths to files to upload, or `null` to cancel. Must only be called if the onShowFileChooser implementation returns `true`. |
 | `fileChooserParams` | [WebChromeClient.FileChooserParams](../android/webkit/WebChromeClient.FileChooserParams.md)!: Describes the mode of file chooser to be opened, and options to be used with it. |
 | --- | --- |
 

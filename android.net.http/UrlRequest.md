@@ -11,17 +11,17 @@ abstract class UrlRequest
 | --- | --- |
 | ↳ | [android.net.http.UrlRequest](UrlRequest.md) |
 
-Controls an HTTP request (GET, PUT, POST etc). Created by `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder`, which can be obtained by calling `https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#newUrlRequestBuilder(kotlin.String,%20java.util.concurrent.Executor,%20android.net.http.UrlRequest.Callback)`. Note: All methods must be called on the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed to `https://developer.android.com/reference/kotlin/android/net/http/HttpEngine#newUrlRequestBuilder(kotlin.String,%20java.util.concurrent.Executor,%20android.net.http.UrlRequest.Callback)`.
+Controls an HTTP request (GET, PUT, POST etc). Created by `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder`, which can be obtained by calling newUrlRequestBuilder. Note: All methods must be called on the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed to newUrlRequestBuilder.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#`s. |
-| abstract | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback` Users of the HTTP stack extend this class to receive callbacks indicating the progress of a `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#` being processed. |
-| open | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Status` Request status values returned by `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getStatus(android.net.http.UrlRequest.StatusListener)`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder` Builder for UrlRequests. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback` Users of the HTTP stack extend this class to receive callbacks indicating the progress of a UrlRequest being processed. |
+| open | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Status` Request status values returned by getStatus. |
 | --- | --- |
-| abstract | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener` Listener interface used with `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getStatus(android.net.http.UrlRequest.StatusListener)` to receive the status of a `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener` Listener interface used with getStatus to receive the status of a UrlRequest. |
 
 | Constants ||
 |---|---|
@@ -34,27 +34,27 @@ Controls an HTTP request (GET, PUT, POST etc). Created by `https://developer.and
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#cancel()()` Cancels the request. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#followRedirect()()` Follows a pending redirect. |
-| open [FinishedRequestTimings](FinishedRequestTimings.md) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getFinishedRequestTimings()()` Returns the detailed timing metrics for the request. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancels the request. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | followRedirect Follows a pending redirect. |
+| open [FinishedRequestTimings](FinishedRequestTimings.md) | getFinishedRequestTimings Returns the detailed timing metrics for the request. |
 | --- | --- |
-| abstract [HeaderBlock](HeaderBlock.md) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getHeaders()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#addHeader(kotlin.String,%20kotlin.String)` |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getHttpMethod()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setHttpMethod(kotlin.String)`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getPriority()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)` |
+| abstract [HeaderBlock](HeaderBlock.md) | getHeaders See addHeader |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getHttpMethod See setHttpMethod. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPriority See setPriority |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getStatus(android.net.http.UrlRequest.StatusListener)(listener: https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.StatusListener)` Queries the status of the request. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getTrafficStatsTag()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsTag(kotlin.Int)` |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#getTrafficStatsUid()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsUid(kotlin.Int)` |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getStatus Queries the status of the request. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTrafficStatsTag See setTrafficStatsTag |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTrafficStatsUid See setTrafficStatsUid |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#hasTrafficStatsTag()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsTag(kotlin.Int)` |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#hasTrafficStatsUid()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsUid(kotlin.Int)` |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#isCacheDisabled()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setCacheDisabled(kotlin.Boolean)` |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasTrafficStatsTag See setTrafficStatsTag |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasTrafficStatsUid See setTrafficStatsUid |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isCacheDisabled See setCacheDisabled |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#isDirectExecutorAllowed()()` See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setDirectExecutorAllowed(kotlin.Boolean)` |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#isDone()()` Returns `true` if the request was successfully started and is now finished (completed, canceled, or failed). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#read(java.nio.ByteBuffer)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Attempts to read part of the response body into the provided buffer. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDirectExecutorAllowed See setDirectExecutorAllowed |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDone Returns `true` if the request was successfully started and is now finished (completed, canceled, or failed). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | read Attempts to read part of the response body into the provided buffer. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#start()()` Starts the request, all callbacks go to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start Starts the request, all callbacks go to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. |
 
 ## Constants
 
@@ -67,7 +67,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val REQUEST_PRIORITY_HIGHEST: Int
 ```
 
-Highest request priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)`.
+Highest request priority. Passed to setPriority.
 
  Value: 4
 
@@ -80,7 +80,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val REQUEST_PRIORITY_IDLE: Int
 ```
 
-Lowest request priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)`.
+Lowest request priority. Passed to setPriority.
 
  Value: 0
 
@@ -93,7 +93,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val REQUEST_PRIORITY_LOW: Int
 ```
 
-Low request priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)`.
+Low request priority. Passed to setPriority.
 
  Value: 2
 
@@ -106,7 +106,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val REQUEST_PRIORITY_LOWEST: Int
 ```
 
-Very low request priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)`.
+Very low request priority. Passed to setPriority.
 
  Value: 1
 
@@ -119,7 +119,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val REQUEST_PRIORITY_MEDIUM: Int
 ```
 
-Medium request priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)`. This is the default priority given to the request.
+Medium request priority. Passed to setPriority. This is the default priority given to the request.
 
  Value: 3
 
@@ -134,7 +134,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun cancel(): Unit
 ```
 
-Cancels the request. Can be called at any time. `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onCanceled(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo)` will be invoked when cancellation is complete and no further callback methods will be invoked. If the request has completed or has not started, calling `cancel()` has no effect and `onCanceled()` will not be invoked. If the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed in during `UrlRequest` construction runs tasks on a single thread, and `cancel()` is called on that thread, no callback methods (besides `onCanceled()`) will be invoked after `cancel()` is called. Otherwise, at most one callback method may be invoked after `cancel()` has completed.
+Cancels the request. Can be called at any time. onCanceled will be invoked when cancellation is complete and no further callback methods will be invoked. If the request has completed or has not started, calling `cancel()` has no effect and `onCanceled()` will not be invoked. If the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed in during `UrlRequest` construction runs tasks on a single thread, and `cancel()` is called on that thread, no callback methods (besides `onCanceled()`) will be invoked after `cancel()` is called. Otherwise, at most one callback method may be invoked after `cancel()` has completed.
 
 ### followRedirect
 
@@ -145,7 +145,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun followRedirect(): Unit
 ```
 
-Follows a pending redirect. Must only be called at most once for each invocation of `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onRedirectReceived(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20kotlin.String)`.
+Follows a pending redirect. Must only be called at most once for each invocation of onRedirectReceived.
 
 ### getFinishedRequestTimings
 
@@ -158,11 +158,11 @@ open fun getFinishedRequestTimings(): FinishedRequestTimings
 
 Returns the detailed timing metrics for the request.
 
-This method can be only called when the request has reached a terminal callback. This is defined by the execution of one of the following callbacks: `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onSucceeded(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo)`, `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` or `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onCanceled(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo)`. It's also allowed to call this method in the terminal callback itself.
+This method can be only called when the request has reached a terminal callback. This is defined by the execution of one of the following callbacks: onSucceeded, onFailed or onCanceled. It's also allowed to call this method in the terminal callback itself.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings` | This value cannot be `null`. |
+| FinishedRequestTimings | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -177,11 +177,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getHeaders(): HeaderBlock
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#addHeader(kotlin.String,%20kotlin.String)`
+See addHeader
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock` | This value cannot be `null`. |
+| HeaderBlock | This value cannot be `null`. |
 
 ### getHttpMethod
 
@@ -192,7 +192,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getHttpMethod(): String?
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setHttpMethod(kotlin.String)`.
+See setHttpMethod.
 
 | Return ||
 |---|---|
@@ -207,7 +207,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getPriority(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setPriority(kotlin.Int)`
+See setPriority
 
 ### getStatus
 
@@ -237,7 +237,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getTrafficStatsTag(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsTag(kotlin.Int)`
+See setTrafficStatsTag
 
 ### getTrafficStatsUid
 
@@ -248,7 +248,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getTrafficStatsUid(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsUid(kotlin.Int)`
+See setTrafficStatsUid
 
 ### hasTrafficStatsTag
 
@@ -259,7 +259,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun hasTrafficStatsTag(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsTag(kotlin.Int)`
+See setTrafficStatsTag
 
 ### hasTrafficStatsUid
 
@@ -270,7 +270,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun hasTrafficStatsUid(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setTrafficStatsUid(kotlin.Int)`
+See setTrafficStatsUid
 
 ### isCacheDisabled
 
@@ -281,7 +281,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun isCacheDisabled(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setCacheDisabled(kotlin.Boolean)`
+See setCacheDisabled
 
 ### isDirectExecutorAllowed
 
@@ -292,7 +292,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun isDirectExecutorAllowed(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Builder#setDirectExecutorAllowed(kotlin.Boolean)`
+See setDirectExecutorAllowed
 
 ### isDone
 
@@ -318,7 +318,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun read(buffer: ByteBuffer): Unit
 ```
 
-Attempts to read part of the response body into the provided buffer. Must only be called at most once in response to each invocation of the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onResponseStarted(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo)` and `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onReadCompleted(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer)` methods of the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. Each call will result in an asynchronous call to either the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback` `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onReadCompleted(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer)` method if data is read, its `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onSucceeded(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo)` method if there's no more data to read, or its `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback#onFailed(android.net.http.UrlRequest,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` method if there's an error.
+Attempts to read part of the response body into the provided buffer. Must only be called at most once in response to each invocation of the onResponseStarted and onReadCompleted methods of the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. Each call will result in an asynchronous call to either the `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback` onReadCompleted method if data is read, its onSucceeded method if there's no more data to read, or its onFailed method if there's an error.
 
 | Parameters ||
 |---|---|
@@ -333,4 +333,4 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun start(): Unit
 ```
 
-Starts the request, all callbacks go to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. May only be called once. May not be called if `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest#cancel()` has been called.
+Starts the request, all callbacks go to `https://developer.android.com/reference/kotlin/android/net/http/UrlRequest.Callback`. May only be called once. May not be called if cancel has been called.

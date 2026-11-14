@@ -23,13 +23,13 @@ Represent input parameters to the reportImpression API.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#ReportImpressionRequest(kotlin.Long)(adSelectionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Ctor for auction server ad selection reporting request. |
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#ReportImpressionRequest(kotlin.Long,%20android.adservices.adselection.AdSelectionConfig)(adSelectionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, adSelectionConfig: https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig)` Ctor for on-device ad selection reporting request. |
+| ReportImpressionRequest Ctor for auction server ad selection reporting request. |
+| ReportImpressionRequest Ctor for on-device ad selection reporting request. |
 
 | Public methods ||
 |---|---|
-| open [AdSelectionConfig](AdSelectionConfig.md) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#getAdSelectionConfig()()` Returns the adSelectionConfig, one of the inputs to `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#` |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#getAdSelectionId()()` Returns the adSelectionId, one of the inputs to `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#` |
+| open [AdSelectionConfig](AdSelectionConfig.md) | getAdSelectionConfig Returns the adSelectionConfig, one of the inputs to ReportImpressionRequest |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAdSelectionId Returns the adSelectionId, one of the inputs to ReportImpressionRequest |
 
 ## Public constructors
 
@@ -44,13 +44,13 @@ ReportImpressionRequest(adSelectionId: Long)
 
 Ctor for auction server ad selection reporting request.
 
-If your `adSelectionId` is for a server auction run where device info collected by `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` then your impression reporting request should only include the ad selection id.
+If your `adSelectionId` is for a server auction run where device info collected by getAdSelectionData then your impression reporting request should only include the ad selection id.
 
-`https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#persistAdSelectionResult(android.adservices.adselection.PersistAdSelectionResultRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` must be called with the encrypted result blob from servers before making impression reporting request.
+persistAdSelectionResult must be called with the encrypted result blob from servers before making impression reporting request.
 
 | Parameters ||
 |---|---|
-| `adSelectionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): received from `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` |
+| `adSelectionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): received from getAdSelectionData |
 
 ### ReportImpressionRequest
 
@@ -65,12 +65,12 @@ ReportImpressionRequest(
 
 Ctor for on-device ad selection reporting request.
 
-If your `adSelectionId` is for a on-device auction run using `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` then your impression reporting request must include your `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig`.
+If your `adSelectionId` is for a on-device auction run using selectAds then your impression reporting request must include your AdSelectionConfig.
 
 | Parameters ||
 |---|---|
-| `adSelectionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): received from `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` |
-| `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): same `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` used to trigger `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionManager#selectAds(android.adservices.adselection.AdSelectionConfig,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` This value cannot be `null`. |
+| `adSelectionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): received from selectAds |
+| `adSelectionConfig` | [AdSelectionConfig](AdSelectionConfig.md): same AdSelectionConfig used to trigger selectAds This value cannot be `null`. |
 
 ## Public methods
 
@@ -86,11 +86,11 @@ open fun getAdSelectionConfig(): AdSelectionConfig
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the adSelectionConfig, one of the inputs to `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#`
+Returns the adSelectionConfig, one of the inputs to ReportImpressionRequest
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/adservices/adselection/AdSelectionConfig` | This value cannot be `null`. |
+| AdSelectionConfig | This value cannot be `null`. |
 
 ### getAdSelectionId
 
@@ -104,4 +104,4 @@ open fun getAdSelectionId(): Long
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the adSelectionId, one of the inputs to `https://developer.android.com/reference/kotlin/android/adservices/adselection/ReportImpressionRequest#`
+Returns the adSelectionId, one of the inputs to ReportImpressionRequest

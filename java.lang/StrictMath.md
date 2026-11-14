@@ -15,7 +15,7 @@ The class contains methods for performing basic numeric operations such as the e
 To help ensure portability of Java programs, the definitions of some of the numeric functions in this package require that they produce the same results as certain published algorithms. These algorithms are available from the well-known network library `netlib` as the package "Freely Distributable Math Library," [`fdlibm`](https://www.netlib.org/fdlibm/). These algorithms, which are written in the C programming language, are then to be understood to be transliterated into Java and executed with all floating-point and integer operations following the rules of Java arithmetic. The following transformations are used in the transliteration:
 
 - Extraction and setting of the high and low halves of a 64-bit `double` in C is expressed using Java platform methods that perform bit-wise conversions [from](Double.md)) and [{](Double.md)).
-- Unsigned `int` values in C are mapped to signed `int` values in Java with updates to operations to replicate unsigned semantics where the results on the same textual operation would differ. For example, `>>` shifts on unsigned C values are replaced with `>>>` shifts on signed Java values. Sized comparisons on unsigned C values (`<`, `<=`, `>`, `>=`) are replaced with semantically equivalent calls to `https://developer.android.com/reference/kotlin/java/lang/Integer#compareUnsigned(kotlin.Int,%20kotlin.Int)`.
+- Unsigned `int` values in C are mapped to signed `int` values in Java with updates to operations to replicate unsigned semantics where the results on the same textual operation would differ. For example, `>>` shifts on unsigned C values are replaced with `>>>` shifts on signed Java values. Sized comparisons on unsigned C values (`<`, `<=`, `>`, `>=`) are replaced with semantically equivalent calls to compareUnsigned.
 
 The Java math library is defined with respect to `fdlibm` version 5.3. Where `fdlibm` provides more than one definition for a function (such as `acos`), use the "IEEE 754 core function" version (residing in a file whose name begins with the letter `e`). The methods which require `fdlibm` semantics are `sin`, `cos`, `tan`, `asin`, `acos`, `atan`, `exp`, `log`, `log10`, `cbrt`, `atan2`, `pow`, `sinh`, `cosh`, `tanh`, `hypot`, `expm1`, and `log1p`.
 
@@ -23,7 +23,7 @@ The platform uses signed two's complement integer arithmetic with int and long p
 
 ## IEEE 754 Recommended Operations
 
-The `https://developer.android.com/reference/kotlin/java/lang/Math` class discusses how the shared quality of implementation criteria for selected `Math` and `StrictMath` methods [relate to the IEEE 754 recommended operations](Math.md).
+The Math class discusses how the shared quality of implementation criteria for selected `Math` and `StrictMath` methods [relate to the IEEE 754 recommended operations](Math.md).
 
 ## Summary
 
@@ -36,147 +36,147 @@ The `https://developer.android.com/reference/kotlin/java/lang/Math` class discus
 
 | Public methods ||
 |---|---|
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#IEEEremainder(kotlin.Double,%20kotlin.Double)(f1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, f2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Computes the remainder operation on two arguments as prescribed by the IEEE 754 standard. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#abs(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the absolute value of a `double` value. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#abs(kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the absolute value of a `float` value. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | IEEEremainder Computes the remainder operation on two arguments as prescribed by the IEEE 754 standard. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | abs Returns the absolute value of a `double` value. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | abs Returns the absolute value of a `float` value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#abs(kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the absolute value of an `int` value. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#abs(kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the absolute value of a `long` value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#absExact(kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the mathematical absolute value of an `int` value if it is exactly representable as an `int`, throwing `ArithmeticException` if the result overflows the positive `int` range. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | abs Returns the absolute value of an `int` value. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | abs Returns the absolute value of a `long` value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | absExact Returns the mathematical absolute value of an `int` value if it is exactly representable as an `int`, throwing `ArithmeticException` if the result overflows the positive `int` range. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#absExact(kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the mathematical absolute value of an `long` value if it is exactly representable as an `long`, throwing `ArithmeticException` if the result overflows the positive `long` range. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#acos(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the arc cosine of a value; the returned angle is in the range 0. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#addExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the sum of its arguments, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | absExact Returns the mathematical absolute value of an `long` value if it is exactly representable as an `long`, throwing `ArithmeticException` if the result overflows the positive `long` range. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | acos Returns the arc cosine of a value; the returned angle is in the range 0. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | addExact Returns the sum of its arguments, throwing an exception if the result overflows an `int`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#addExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the sum of its arguments, throwing an exception if the result overflows a `long`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#asin(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the arc sine of a value; the returned angle is in the range −*pi* /2 through *pi*/2. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#atan(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the arc tangent of a value; the returned angle is in the range −*pi* /2 through *pi*/2. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | addExact Returns the sum of its arguments, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | asin Returns the arc sine of a value; the returned angle is in the range −*pi* /2 through *pi*/2. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | atan Returns the arc tangent of a value; the returned angle is in the range −*pi* /2 through *pi*/2. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#atan2(kotlin.Double,%20kotlin.Double)(y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the angle *theta* from the conversion of rectangular coordinates (`x`, `y`) to polar coordinates (r, *theta*). |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#cbrt(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the cube root of a `double` value. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceil(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the smallest (closest to negative infinity) `double` value that is greater than or equal to the argument and is equal to a mathematical integer. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | atan2 Returns the angle *theta* from the conversion of rectangular coordinates (`x`, `y`) to polar coordinates (r, *theta*). |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | cbrt Returns the cube root of a `double` value. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | ceil Returns the smallest (closest to negative infinity) `double` value that is greater than or equal to the argument and is equal to a mathematical integer. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | ceilDiv Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | ceilDiv Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | ceilDiv Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDivExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDivExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the ceiling modulus of the `int` arguments. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | ceilDivExact Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | ceilDivExact Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | ceilMod Returns the ceiling modulus of the `int` arguments. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the ceiling modulus of the `long` and `int` arguments. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the ceiling modulus of the `long` arguments. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#clamp(kotlin.Double,%20kotlin.Double,%20kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Clamps the value to fit between min and max. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | ceilMod Returns the ceiling modulus of the `long` and `int` arguments. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | ceilMod Returns the ceiling modulus of the `long` arguments. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | clamp Clamps the value to fit between min and max. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#clamp(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Clamps the value to fit between min and max. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#clamp(kotlin.Long,%20kotlin.Int,%20kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Clamps the value to fit between min and max. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#clamp(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Clamps the value to fit between min and max. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | clamp Clamps the value to fit between min and max. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | clamp Clamps the value to fit between min and max. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | clamp Clamps the value to fit between min and max. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#copySign(kotlin.Double,%20kotlin.Double)(magnitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, sign: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the first floating-point argument with the sign of the second floating-point argument. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#copySign(kotlin.Float,%20kotlin.Float)(magnitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, sign: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the first floating-point argument with the sign of the second floating-point argument. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#cos(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the trigonometric cosine of an angle. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | copySign Returns the first floating-point argument with the sign of the second floating-point argument. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | copySign Returns the first floating-point argument with the sign of the second floating-point argument. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | cos Returns the trigonometric cosine of an angle. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#cosh(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the hyperbolic cosine of a `double` value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#decrementExact(kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the argument decremented by one, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#decrementExact(kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the argument decremented by one, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | cosh Returns the hyperbolic cosine of a `double` value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | decrementExact Returns the argument decremented by one, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | decrementExact Returns the argument decremented by one, throwing an exception if the result overflows a `long`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#divideExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the quotient of the arguments, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#divideExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the quotient of the arguments, throwing an exception if the result overflows a `long`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#exp(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns Euler's number *e* raised to the power of a `double` value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | divideExact Returns the quotient of the arguments, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | divideExact Returns the quotient of the arguments, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | exp Returns Euler's number *e* raised to the power of a `double` value. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#expm1(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns *e*x −1. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floor(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the largest (closest to positive infinity) `double` value that is less than or equal to the argument and is equal to a mathematical integer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | expm1 Returns *e*x −1. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | floor Returns the largest (closest to positive infinity) `double` value that is less than or equal to the argument and is equal to a mathematical integer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorDiv Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDivExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | floorDiv Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | floorDiv Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorDivExact Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDivExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the floor modulus of the `int` arguments. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the floor modulus of the `long` and `int` arguments. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | floorDivExact Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorMod Returns the floor modulus of the `int` arguments. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorMod Returns the floor modulus of the `long` and `int` arguments. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the floor modulus of the `long` arguments. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#fma(kotlin.Double,%20kotlin.Double,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `double`. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#fma(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `float`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | floorMod Returns the floor modulus of the `long` arguments. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | fma Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `double`. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | fma Returns the fused multiply add of the three arguments; that is, returns the exact product of the first two arguments summed with the third argument and then rounded once to the nearest `float`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#getExponent(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the unbiased exponent used in the representation of a `double`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#getExponent(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the unbiased exponent used in the representation of a `float`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#hypot(kotlin.Double,%20kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns sqrt(*x* 2 +*y*2) without intermediate overflow or underflow. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExponent Returns the unbiased exponent used in the representation of a `double`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExponent Returns the unbiased exponent used in the representation of a `float`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | hypot Returns sqrt(*x* 2 +*y*2) without intermediate overflow or underflow. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#incrementExact(kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the argument incremented by one, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#incrementExact(kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the argument incremented by one, throwing an exception if the result overflows a `long`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#log(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the natural logarithm (base *e* ) of a `double` value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | incrementExact Returns the argument incremented by one, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | incrementExact Returns the argument incremented by one, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | log Returns the natural logarithm (base *e* ) of a `double` value. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#log10(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the base 10 logarithm of a `double` value. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#log1p(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the natural logarithm of the sum of the argument and 1. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#max(kotlin.Double,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the greater of two `double` values. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | log10 Returns the base 10 logarithm of a `double` value. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | log1p Returns the natural logarithm of the sum of the argument and 1. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | max Returns the greater of two `double` values. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#max(kotlin.Float,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the greater of two `float` values. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#max(kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the greater of two `int` values. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#max(kotlin.Long,%20kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the greater of two `long` values. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | max Returns the greater of two `float` values. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | max Returns the greater of two `int` values. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | max Returns the greater of two `long` values. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#min(kotlin.Double,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the smaller of two `double` values. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#min(kotlin.Float,%20kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the smaller of two `float` values. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#min(kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the smaller of two `int` values. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | min Returns the smaller of two `double` values. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | min Returns the smaller of two `float` values. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | min Returns the smaller of two `int` values. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#min(kotlin.Long,%20kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the smaller of two `long` values. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#multiplyExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the product of the arguments, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#multiplyExact(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the product of the arguments, throwing an exception if the result overflows a `long`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | min Returns the smaller of two `long` values. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | multiplyExact Returns the product of the arguments, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | multiplyExact Returns the product of the arguments, throwing an exception if the result overflows a `long`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#multiplyExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the product of the arguments, throwing an exception if the result overflows a `long`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#multiplyFull(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the exact mathematical product of the arguments. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#multiplyHigh(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns as a `long` the most significant 64 bits of the 128-bit product of two 64-bit factors. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | multiplyExact Returns the product of the arguments, throwing an exception if the result overflows a `long`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | multiplyFull Returns the exact mathematical product of the arguments. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | multiplyHigh Returns as a `long` the most significant 64 bits of the 128-bit product of two 64-bit factors. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#negateExact(kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the negation of the argument, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#negateExact(kotlin.Long)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the negation of the argument, throwing an exception if the result overflows a `long`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#nextAfter(kotlin.Double,%20kotlin.Double)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the floating-point number adjacent to the first argument in the direction of the second argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | negateExact Returns the negation of the argument, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | negateExact Returns the negation of the argument, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | nextAfter Returns the floating-point number adjacent to the first argument in the direction of the second argument. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#nextAfter(kotlin.Float,%20kotlin.Double)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the floating-point number adjacent to the first argument in the direction of the second argument. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#nextDown(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the floating-point value adjacent to `d` in the direction of negative infinity. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#nextDown(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the floating-point value adjacent to `f` in the direction of negative infinity. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | nextAfter Returns the floating-point number adjacent to the first argument in the direction of the second argument. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | nextDown Returns the floating-point value adjacent to `d` in the direction of negative infinity. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | nextDown Returns the floating-point value adjacent to `f` in the direction of negative infinity. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#nextUp(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the floating-point value adjacent to `d` in the direction of positive infinity. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#nextUp(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the floating-point value adjacent to `f` in the direction of positive infinity. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#pow(kotlin.Double,%20kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the value of the first argument raised to the power of the second argument. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | nextUp Returns the floating-point value adjacent to `d` in the direction of positive infinity. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | nextUp Returns the floating-point value adjacent to `f` in the direction of positive infinity. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | pow Returns the value of the first argument raised to the power of the second argument. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#powExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `x` raised to the power of `n`, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#powExact(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `x` raised to the power of `n`, throwing an exception if the result overflows a `long`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#random()()` Returns a `double` value with a positive sign, greater than or equal to `0.0` and less than `1.0`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | powExact Returns `x` raised to the power of `n`, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | powExact Returns `x` raised to the power of `n`, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | random Returns a `double` value with a positive sign, greater than or equal to `0.0` and less than `1.0`. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#rint(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the `double` value that is closest in value to the argument and is equal to a mathematical integer. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#round(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the closest `long` to the argument, with ties rounding to positive infinity. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#round(kotlin.Float)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the closest `int` to the argument, with ties rounding to positive infinity. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | rint Returns the `double` value that is closest in value to the argument and is equal to a mathematical integer. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | round Returns the closest `long` to the argument, with ties rounding to positive infinity. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | round Returns the closest `int` to the argument, with ties rounding to positive infinity. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#scalb(kotlin.Double,%20kotlin.Int)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, scaleFactor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `d` × 2`scaleFactor` rounded as if performed by a single correctly rounded floating-point multiply. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#scalb(kotlin.Float,%20kotlin.Int)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, scaleFactor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns `f` × 2`scaleFactor` rounded as if performed by a single correctly rounded floating-point multiply. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#signum(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the signum function of the argument; zero if the argument is zero, 1. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | scalb Returns `d` × 2`scaleFactor` rounded as if performed by a single correctly rounded floating-point multiply. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | scalb Returns `f` × 2`scaleFactor` rounded as if performed by a single correctly rounded floating-point multiply. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | signum Returns the signum function of the argument; zero if the argument is zero, 1. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#signum(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the signum function of the argument; zero if the argument is zero, 1. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#sin(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the trigonometric sine of an angle. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#sinh(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the hyperbolic sine of a `double` value. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | signum Returns the signum function of the argument; zero if the argument is zero, 1. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | sin Returns the trigonometric sine of an angle. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | sinh Returns the hyperbolic sine of a `double` value. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#sqrt(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the correctly rounded positive square root of a `double` value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#subtractExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the difference of the arguments, throwing an exception if the result overflows an `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#subtractExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the difference of the arguments, throwing an exception if the result overflows a `long`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | sqrt Returns the correctly rounded positive square root of a `double` value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | subtractExact Returns the difference of the arguments, throwing an exception if the result overflows an `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | subtractExact Returns the difference of the arguments, throwing an exception if the result overflows a `long`. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#tan(kotlin.Double)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the trigonometric tangent of an angle. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#tanh(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the hyperbolic tangent of a `double` value. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#toDegrees(kotlin.Double)(angrad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Converts an angle measured in radians to an approximately equivalent angle measured in degrees. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | tan Returns the trigonometric tangent of an angle. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | tanh Returns the hyperbolic tangent of a `double` value. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toDegrees Converts an angle measured in radians to an approximately equivalent angle measured in degrees. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#toIntExact(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the value of the `long` argument, throwing an exception if the value overflows an `int`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#toRadians(kotlin.Double)(angdeg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Converts an angle measured in degrees to an approximately equivalent angle measured in radians. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ulp(kotlin.Double)(d: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Returns the size of an ulp of the argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toIntExact Returns the value of the `long` argument, throwing an exception if the value overflows an `int`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toRadians Converts an angle measured in degrees to an approximately equivalent angle measured in radians. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | ulp Returns the size of an ulp of the argument. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ulp(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the size of an ulp of the argument. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedMultiplyExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the product of the unsigned arguments, throwing an exception if the result overflows an unsigned `int`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedMultiplyExact(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the product of the unsigned arguments, throwing an exception if the result overflows an unsigned `long`. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | ulp Returns the size of an ulp of the argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | unsignedMultiplyExact Returns the product of the unsigned arguments, throwing an exception if the result overflows an unsigned `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | unsignedMultiplyExact Returns the product of the unsigned arguments, throwing an exception if the result overflows an unsigned `long`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedMultiplyExact(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the product of the unsigned arguments, throwing an exception if the result overflows an unsigned `long`. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedMultiplyHigh(kotlin.Long,%20kotlin.Long)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns as a `long` the most significant 64 bits of the unsigned 128-bit product of two unsigned 64-bit factors. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedPowExact(kotlin.Int,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns unsigned `x` raised to the power of `n`, throwing an exception if the result overflows an unsigned `int`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | unsignedMultiplyExact Returns the product of the unsigned arguments, throwing an exception if the result overflows an unsigned `long`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | unsignedMultiplyHigh Returns as a `long` the most significant 64 bits of the unsigned 128-bit product of two unsigned 64-bit factors. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | unsignedPowExact Returns unsigned `x` raised to the power of `n`, throwing an exception if the result overflows an unsigned `int`. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedPowExact(kotlin.Long,%20kotlin.Int)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns unsigned `x` raised to the power of `n`, throwing an exception if the result overflows an unsigned `long`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | unsignedPowExact Returns unsigned `x` raised to the power of `n`, throwing an exception if the result overflows an unsigned `long`. |
 
 ## Constants
 
@@ -303,7 +303,7 @@ static fun abs(a: Int): Int
 
 Returns the absolute value of an `int` value. If the argument is not negative, the argument is returned. If the argument is negative, the negation of the argument is returned.
 
-Note that if the argument is equal to the value of `https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int`, the most negative representable `int` value, the result is that same value, which is negative. In contrast, the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#absExact(kotlin.Int)` method throws an `ArithmeticException` for this value.
+Note that if the argument is equal to the value of `https://developer.android.com/reference/kotlin/java/lang/Integer#MIN_VALUE:kotlin.Int`, the most negative representable `int` value, the result is that same value, which is negative. In contrast, the absExact method throws an `ArithmeticException` for this value.
 
 | Parameters ||
 |---|---|
@@ -315,7 +315,7 @@ Note that if the argument is equal to the value of `https://developer.android.co
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#absExact(kotlin.Int)`
+- absExact
 
 ### abs
 
@@ -327,7 +327,7 @@ static fun abs(a: Long): Long
 
 Returns the absolute value of a `long` value. If the argument is not negative, the argument is returned. If the argument is negative, the negation of the argument is returned.
 
-Note that if the argument is equal to the value of `https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long`, the most negative representable `long` value, the result is that same value, which is negative. In contrast, the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#absExact(kotlin.Long)` method throws an `ArithmeticException` for this value.
+Note that if the argument is equal to the value of `https://developer.android.com/reference/kotlin/java/lang/Long#MIN_VALUE:kotlin.Long`, the most negative representable `long` value, the result is that same value, which is negative. In contrast, the absExact method throws an `ArithmeticException` for this value.
 
 | Parameters ||
 |---|---|
@@ -339,7 +339,7 @@ Note that if the argument is equal to the value of `https://developer.android.co
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#absExact(kotlin.Long)`
+- absExact
 
 ### absExact
 
@@ -367,8 +367,8 @@ Since the range of two's complement integers is asymmetric with one additional n
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#abs(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#absExact(kotlin.Int)`
+- abs
+- absExact
 
 ### absExact
 
@@ -396,8 +396,8 @@ Since the range of two's complement integers is asymmetric with one additional n
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#abs(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#absExact(kotlin.Long)`
+- abs
+- absExact
 
 ### acos
 
@@ -450,7 +450,7 @@ Returns the sum of its arguments, throwing an exception if the result overflows 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#addExact(kotlin.Int,%20kotlin.Int)`
+- addExact
 
 ### addExact
 
@@ -480,7 +480,7 @@ Returns the sum of its arguments, throwing an exception if the result overflows 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#addExact(kotlin.Long,%20kotlin.Long)`
+- addExact
 
 ### asin
 
@@ -628,7 +628,7 @@ static fun ceilDiv(
 
 Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Integer.MIN_VALUE](Integer.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Integer.MIN_VALUE`.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See ceilDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -645,8 +645,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceil(kotlin.Double)`
+- ceilDiv
+- ceil
 
 ### ceilDiv
 
@@ -661,7 +661,7 @@ static fun ceilDiv(
 
 Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See ceilDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -678,8 +678,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceil(kotlin.Double)`
+- ceilDiv
+- ceil
 
 ### ceilDiv
 
@@ -694,7 +694,7 @@ static fun ceilDiv(
 
 Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See ceilDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -711,8 +711,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Long,%20kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceil(kotlin.Double)`
+- ceilDiv
+- ceil
 
 ### ceilDivExact
 
@@ -725,11 +725,11 @@ static fun ceilDivExact(
 ): Int
 ```
 
-Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)` except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](Integer.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `int` value that is greater than or equal to the algebraic quotient. This method is identical to ceilDiv except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](Integer.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
 
-The ceil modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Int,%20kotlin.Int)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)` method.
+The ceil modulus method ceilMod is a suitable counterpart both for this method and for the ceilDiv method.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See ceilDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -746,7 +746,7 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)`
+- ceilDiv
 
 ### ceilDivExact
 
@@ -759,11 +759,11 @@ static fun ceilDivExact(
 ): Long
 ```
 
-Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)` except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
+Returns the smallest (closest to negative infinity) `long` value that is greater than or equal to the algebraic quotient. This method is identical to ceilDiv except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
 
-The ceil modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilMod(kotlin.Long,%20kotlin.Long)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)` method.
+The ceil modulus method ceilMod is a suitable counterpart both for this method and for the ceilDiv method.
 
-For examples, see `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)`.
+For examples, see ceilDiv.
 
 | Parameters ||
 |---|---|
@@ -780,8 +780,8 @@ For examples, see `https://developer.android.com/reference/kotlin/java/lang/Math
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilDiv(kotlin.Long,%20kotlin.Long)`
+- ceilDiv
+- ceilDiv
 
 ### ceilMod
 
@@ -802,7 +802,7 @@ The relationship between `ceilDiv` and `ceilMod` is such that:
 
 - `ceilDiv(x, y) * y + ceilMod(x, y) == x`
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the `%` operator.
+See ceilMod for examples and a comparison to the `%` operator.
 
 | Parameters ||
 |---|---|
@@ -819,8 +819,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Int,%20kotlin.Int)`
+- ceilMod
+- ceilDiv
 
 ### ceilMod
 
@@ -841,7 +841,7 @@ The relationship between `ceilDiv` and `ceilMod` is such that:
 
 - `ceilDiv(x, y) * y + ceilMod(x, y) == x`
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the `%` operator.
+See ceilMod for examples and a comparison to the `%` operator.
 
 | Parameters ||
 |---|---|
@@ -858,8 +858,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Int)`
+- ceilMod
+- ceilDiv
 
 ### ceilMod
 
@@ -880,7 +880,7 @@ The relationship between `ceilDiv` and `ceilMod` is such that:
 
 - `ceilDiv(x, y) * y + ceilMod(x, y) == x`
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the `%` operator.
+See ceilMod for examples and a comparison to the `%` operator.
 
 | Parameters ||
 |---|---|
@@ -897,8 +897,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotli
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#ceilMod(kotlin.Long,%20kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceilDiv(kotlin.Long,%20kotlin.Long)`
+- ceilMod
+- ceilDiv
 
 ### clamp
 
@@ -1137,7 +1137,7 @@ Returns the argument decremented by one, throwing an exception if the result ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#decrementExact(kotlin.Int)`
+- decrementExact
 
 ### decrementExact
 
@@ -1163,7 +1163,7 @@ Returns the argument decremented by one, throwing an exception if the result ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#decrementExact(kotlin.Long)`
+- decrementExact
 
 ### divideExact
 
@@ -1197,7 +1197,7 @@ The built-in remainder operator "`%`" is a suitable counterpart both for this me
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#divideExact(kotlin.Int,%20kotlin.Int)`
+- divideExact
 
 ### divideExact
 
@@ -1231,7 +1231,7 @@ The built-in remainder operator "`%`" is a suitable counterpart both for this me
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#divideExact(kotlin.Long,%20kotlin.Long)`
+- divideExact
 
 ### exp
 
@@ -1319,7 +1319,7 @@ static fun floorDiv(
 
 Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Integer.MIN_VALUE](Integer.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Integer.MIN_VALUE`.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See floorDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -1336,8 +1336,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floor(kotlin.Double)`
+- floorDiv
+- floor
 
 ### floorDiv
 
@@ -1352,7 +1352,7 @@ static fun floorDiv(
 
 Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See floorDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -1369,8 +1369,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floor(kotlin.Double)`
+- floorDiv
+- floor
 
 ### floorDiv
 
@@ -1385,7 +1385,7 @@ static fun floorDiv(
 
 Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. There is one special case: if the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1`, then integer overflow occurs and the result is equal to `Long.MIN_VALUE`.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See floorDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -1402,8 +1402,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Long,%20kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floor(kotlin.Double)`
+- floorDiv
+- floor
 
 ### floorDivExact
 
@@ -1416,11 +1416,11 @@ static fun floorDivExact(
 ): Int
 ```
 
-Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)` except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](Integer.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `int` value that is less than or equal to the algebraic quotient. This method is identical to floorDiv except that it throws an `ArithmeticException` when the dividend is [Integer.MIN_VALUE](Integer.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Integer.MIN_VALUE`.
 
-The floor modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Int,%20kotlin.Int)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)` method.
+The floor modulus method floorMod is a suitable counterpart both for this method and for the floorDiv method.
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the integer division `/` operator.
+See floorDiv for examples and a comparison to the integer division `/` operator.
 
 | Parameters ||
 |---|---|
@@ -1437,7 +1437,7 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)`
+- floorDiv
 
 ### floorDivExact
 
@@ -1450,11 +1450,11 @@ static fun floorDivExact(
 ): Long
 ```
 
-Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. This method is identical to `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)` except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
+Returns the largest (closest to positive infinity) `long` value that is less than or equal to the algebraic quotient. This method is identical to floorDiv except that it throws an `ArithmeticException` when the dividend is [Long.MIN_VALUE](Long.md) and the divisor is `-1` instead of ignoring the integer overflow and returning `Long.MIN_VALUE`.
 
-The floor modulus method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorMod(kotlin.Long,%20kotlin.Long)` is a suitable counterpart both for this method and for the `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)` method.
+The floor modulus method floorMod is a suitable counterpart both for this method and for the floorDiv method.
 
-For examples, see `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)`.
+For examples, see floorDiv.
 
 | Parameters ||
 |---|---|
@@ -1471,8 +1471,8 @@ For examples, see `https://developer.android.com/reference/kotlin/java/lang/Math
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorDiv(kotlin.Long,%20kotlin.Long)`
+- floorDiv
+- floorDiv
 
 ### floorMod
 
@@ -1493,7 +1493,7 @@ The relationship between `floorDiv` and `floorMod` is such that:
 
 - `floorDiv(x, y) * y + floorMod(x, y) == x`
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the `%` operator.
+See floorMod for examples and a comparison to the `%` operator.
 
 | Parameters ||
 |---|---|
@@ -1510,8 +1510,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Int,%20kotlin.Int)`
+- floorMod
+- floorDiv
 
 ### floorMod
 
@@ -1532,7 +1532,7 @@ The relationship between `floorDiv` and `floorMod` is such that:
 
 - `floorDiv(x, y) * y + floorMod(x, y) == x`
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the `%` operator.
+See floorMod for examples and a comparison to the `%` operator.
 
 | Parameters ||
 |---|---|
@@ -1549,8 +1549,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Int)`
+- floorMod
+- floorDiv
 
 ### floorMod
 
@@ -1571,7 +1571,7 @@ The relationship between `floorDiv` and `floorMod` is such that:
 
 - `floorDiv(x, y) * y + floorMod(x, y) == x`
 
-See `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotlin.Int,%20kotlin.Int)` for examples and a comparison to the `%` operator.
+See floorMod for examples and a comparison to the `%` operator.
 
 | Parameters ||
 |---|---|
@@ -1588,8 +1588,8 @@ See `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#floorMod(kotlin.Long,%20kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floorDiv(kotlin.Long,%20kotlin.Long)`
+- floorMod
+- floorDiv
 
 ### fma
 
@@ -1755,7 +1755,7 @@ Returns the argument incremented by one, throwing an exception if the result ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#incrementExact(kotlin.Int)`
+- incrementExact
 
 ### incrementExact
 
@@ -1781,7 +1781,7 @@ Returns the argument incremented by one, throwing an exception if the result ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#incrementExact(kotlin.Long)`
+- incrementExact
 
 ### log
 
@@ -2062,7 +2062,7 @@ Returns the product of the arguments, throwing an exception if the result overfl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#multiplyExact(kotlin.Int,%20kotlin.Int)`
+- multiplyExact
 
 ### multiplyExact
 
@@ -2092,7 +2092,7 @@ Returns the product of the arguments, throwing an exception if the result overfl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#multiplyExact(kotlin.Long,%20kotlin.Int)`
+- multiplyExact
 
 ### multiplyExact
 
@@ -2122,7 +2122,7 @@ Returns the product of the arguments, throwing an exception if the result overfl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#multiplyExact(kotlin.Long,%20kotlin.Long)`
+- multiplyExact
 
 ### multiplyFull
 
@@ -2148,7 +2148,7 @@ Returns the exact mathematical product of the arguments.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#multiplyFull(kotlin.Int,%20kotlin.Int)`
+- multiplyFull
 
 ### multiplyHigh
 
@@ -2174,8 +2174,8 @@ Returns as a `long` the most significant 64 bits of the 128-bit product of two 6
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#unsignedMultiplyHigh(kotlin.Long,%20kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#multiplyHigh(kotlin.Long,%20kotlin.Long)`
+- unsignedMultiplyHigh
+- multiplyHigh
 
 ### negateExact
 
@@ -2201,7 +2201,7 @@ Returns the negation of the argument, throwing an exception if the result overfl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#negateExact(kotlin.Int)`
+- negateExact
 
 ### negateExact
 
@@ -2227,7 +2227,7 @@ Returns the negation of the argument, throwing an exception if the result overfl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#negateExact(kotlin.Long)`
+- negateExact
 
 ### nextAfter
 
@@ -2443,7 +2443,7 @@ Returns the value of the first argument raised to the power of the second argume
 
 <br />
 
-(In the foregoing descriptions, a floating-point value is considered to be an integer if and only if it is finite and a fixed point of the method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#ceil(kotlin.Double)` or, equivalently, a fixed point of the method `https://developer.android.com/reference/kotlin/java/lang/StrictMath#floor(kotlin.Double)`. A value is a fixed point of a one-argument method if and only if the result of applying the method to the value is equal to the value.)
+(In the foregoing descriptions, a floating-point value is considered to be an integer if and only if it is finite and a fixed point of the method ceil or, equivalently, a fixed point of the method floor. A value is a fixed point of a one-argument method if and only if the result of applying the method to the value is equal to the value.)
 
 | Parameters ||
 |---|---|
@@ -2527,7 +2527,7 @@ This method is properly synchronized to allow correct use by more than one threa
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Random.html#nextDouble()`
+- nextDouble
 
 ### rint
 
@@ -2813,7 +2813,7 @@ Returns the difference of the arguments, throwing an exception if the result ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#subtractExact(kotlin.Int,%20kotlin.Int)`
+- subtractExact
 
 ### subtractExact
 
@@ -2843,7 +2843,7 @@ Returns the difference of the arguments, throwing an exception if the result ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#subtractExact(kotlin.Long,%20kotlin.Long)`
+- subtractExact
 
 ### tan
 
@@ -2935,7 +2935,7 @@ Returns the value of the `long` argument, throwing an exception if the value ove
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Math#toIntExact(kotlin.Long)`
+- toIntExact
 
 ### toRadians
 
@@ -3107,8 +3107,8 @@ Returns as a `long` the most significant 64 bits of the unsigned 128-bit product
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/StrictMath#multiplyHigh(kotlin.Long,%20kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/java/lang/Math#unsignedMultiplyHigh(kotlin.Long,%20kotlin.Long)`
+- multiplyHigh
+- unsignedMultiplyHigh
 
 ### unsignedPowExact
 

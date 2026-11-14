@@ -18,27 +18,27 @@ Provides information about the vibrator hardware capabilities and limitations re
 
 <br />
 
-This information can be used to help construct waveform envelope effects with `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.WaveformEnvelopeBuilder.html#`. When designing these effects, it is also recommended to check the `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorFrequencyProfile` for information about the supported frequency range and the vibrator's output response.
+This information can be used to help construct waveform envelope effects with `https://developer.android.com/reference/kotlin/android/os/VibrationEffect.WaveformEnvelopeBuilder.html#`. When designing these effects, it is also recommended to check the VibratorFrequencyProfile for information about the supported frequency range and the vibrator's output response.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxControlPointDurationMillis()()` Retrieves the maximum duration supported between two control points within an envelope effect, in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMaxControlPointDurationMillis Retrieves the maximum duration supported between two control points within an envelope effect, in milliseconds. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxDurationMillis()()` Retrieves the maximum duration supported for an envelope effect, in milliseconds. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxSize()()` Retrieves the maximum number of control points supported for an envelope effect. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMinControlPointDurationMillis()()` Retrieves the minimum duration supported between two control points within an envelope effect, in milliseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMaxDurationMillis Retrieves the maximum duration supported for an envelope effect, in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxSize Retrieves the maximum number of control points supported for an envelope effect. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMinControlPointDurationMillis Retrieves the minimum duration supported between two control points within an envelope effect, in milliseconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -55,7 +55,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -99,7 +99,7 @@ fun getMaxControlPointDurationMillis(): Long
 
 Retrieves the maximum duration supported between two control points within an envelope effect, in milliseconds.
 
-If the device supports envelope effects (check `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#areEnvelopeEffectsSupported()`), this value will be positive. Devices with envelope effects capabilities guarantee support for durations up to at least 1 second. If the device does not support envelope effects, this method will return 0.
+If the device supports envelope effects (check areEnvelopeEffectsSupported), this value will be positive. Devices with envelope effects capabilities guarantee support for durations up to at least 1 second. If the device does not support envelope effects, this method will return 0.
 
 | Return ||
 |---|---|
@@ -115,7 +115,7 @@ fun getMaxDurationMillis(): Long
 
 Retrieves the maximum duration supported for an envelope effect, in milliseconds.
 
-If the device supports envelope effects (check `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#areEnvelopeEffectsSupported()`), this value will be positive. Devices with envelope effects capabilities guarantees a maximum duration equivalent to the product of `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxSize()` and `https://developer.android.com/reference/kotlin/android/os/vibrator/VibratorEnvelopeEffectInfo#getMaxControlPointDurationMillis()`. If the device does not support envelope effects, this method will return 0.
+If the device supports envelope effects (check areEnvelopeEffectsSupported), this value will be positive. Devices with envelope effects capabilities guarantees a maximum duration equivalent to the product of getMaxSize and getMaxControlPointDurationMillis. If the device does not support envelope effects, this method will return 0.
 
 | Return ||
 |---|---|
@@ -131,7 +131,7 @@ fun getMaxSize(): Int
 
 Retrieves the maximum number of control points supported for an envelope effect.
 
-If the device supports envelope effects (check `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#areEnvelopeEffectsSupported()`), this value will be positive. Devices with envelope effects capabilities guarantee support for a minimum of 16 control points. If the device does not support envelope effects, this method will return 0.
+If the device supports envelope effects (check areEnvelopeEffectsSupported), this value will be positive. Devices with envelope effects capabilities guarantee support for a minimum of 16 control points. If the device does not support envelope effects, this method will return 0.
 
 | Return ||
 |---|---|
@@ -147,7 +147,7 @@ fun getMinControlPointDurationMillis(): Long
 
 Retrieves the minimum duration supported between two control points within an envelope effect, in milliseconds.
 
-If the device supports envelope effects (check `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#areEnvelopeEffectsSupported()`), this value will be positive. Devices with envelope effects capabilities guarantee support for durations down to at least 20 milliseconds. If the device does not support envelope effects, this method will return 0.
+If the device supports envelope effects (check areEnvelopeEffectsSupported), this value will be positive. Devices with envelope effects capabilities guarantee support for durations down to at least 20 milliseconds. If the device does not support envelope effects, this method will return 0.
 
 | Return ||
 |---|---|
@@ -166,8 +166,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

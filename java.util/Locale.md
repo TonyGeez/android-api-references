@@ -53,7 +53,7 @@ UTS#35, "Unicode Locale Data Markup Language" defines optional attributes and ke
 
 The keywords are mapped to a BCP 47 extension value using the extension key 'u' (`https://developer.android.com/reference/kotlin/java/util/Locale#UNICODE_LOCALE_EXTENSION:kotlin.Char`). The above example, "nu-thai", becomes the extension "u-nu-thai".
 
-Thus, when a `Locale` object contains Unicode locale attributes and keywords, `getExtension(UNICODE_LOCALE_EXTENSION)` will return a String representing this information, for example, "nu-thai". The `Locale` class also provides `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleAttributes()`, `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleKeys()`, and `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleType(kotlin.String)` which allow you to access Unicode locale attributes and key/type pairs directly. When represented as a string, the Unicode Locale Extension lists attributes alphabetically, followed by key/type sequences with keys listed alphabetically (the order of subtags comprising a key's type is fixed when the type is defined)
+Thus, when a `Locale` object contains Unicode locale attributes and keywords, `getExtension(UNICODE_LOCALE_EXTENSION)` will return a String representing this information, for example, "nu-thai". The `Locale` class also provides getUnicodeLocaleAttributes, getUnicodeLocaleKeys, and getUnicodeLocaleType which allow you to access Unicode locale attributes and key/type pairs directly. When represented as a string, the Unicode Locale Extension lists attributes alphabetically, followed by key/type sequences with keys listed alphabetically (the order of subtags comprising a key's type is fixed when the type is defined)
 
 A well-formed locale key has the form `[0-9a-zA-Z]{2}`. A well-formed locale type has the form `"" | [0-9a-zA-Z]{3,8} ('-' [0-9a-zA-Z]{3,8})*` (it can be empty, or a series of subtags 3-8 alphanums in length). A well-formed locale attribute has the form `[0-9a-zA-Z]{3,8}` (it is a single subtag with the same form as a locale type subtag).
 | --- | --- |
@@ -70,7 +70,7 @@ Using `https://developer.android.com/reference/kotlin/java/util/Locale.Builder` 
 
 #### Factory Methods
 
-The method `https://developer.android.com/reference/kotlin/java/util/Locale#forLanguageTag(kotlin.String)` obtains a `Locale` object for a well-formed BCP 47 language tag. The method `https://developer.android.com/reference/kotlin/java/util/Locale#of(kotlin.String,%20kotlin.String,%20kotlin.String)` and its overloads obtain a `Locale` object from given `language`, `country`, and/or `variant` defined above.
+The method forLanguageTag obtains a `Locale` object for a well-formed BCP 47 language tag. The method of and its overloads obtain a `Locale` object from given `language`, `country`, and/or `variant` defined above.
 
 #### Locale Constants
 
@@ -108,7 +108,7 @@ If there is a language tag which matches completely to a language range above, t
 
 `"*"` is the special language range, and it is ignored in lookup.
 
-If multiple language tags match as a result of the subtag `'*'` included in a language range, the first matching language tag returned by an `https://developer.android.com/reference/kotlin/java/util/Iterator` over a `https://developer.android.com/reference/kotlin/java/util/Collection` of language tags is treated as the best matching one.
+If multiple language tags match as a result of the subtag `'*'` included in a language range, the first matching language tag returned by an Iterator over a Collection of language tags is treated as the best matching one.
 
 ### Use of Locale
 
@@ -183,7 +183,7 @@ The default locale is *not* appropriate for machine-readable output. The best ch
 
 A common mistake is to implicitly use the default locale when producing output meant to be machine-readable. This tends to work on the developer's test devices (especially because so many developers use en_US), but fails when run on a device whose user is in a more complex locale.
 
-For example, if you're formatting integers some locales will use non-ASCII decimal digits. As another example, if you're formatting floating-point numbers some locales will use `','` as the decimal point and `'.'` for digit grouping. That's correct for human-readable output, but likely to cause problems if presented to another computer (`https://developer.android.com/reference/kotlin/java/lang/Double.html#parseDouble(kotlin.String)` can't parse such a number, for example). You should also be wary of the java.lang.String#toLowerCase and java.lang.String#toUpperCase overloads that don't take a `Locale`: in Turkey, for example, the characters `'i'` and `'I'` won't be converted to `'I'` and `'i'`. This is the correct behavior for Turkish text (such as user input), but inappropriate for, say, HTTP headers.
+For example, if you're formatting integers some locales will use non-ASCII decimal digits. As another example, if you're formatting floating-point numbers some locales will use `','` as the decimal point and `'.'` for digit grouping. That's correct for human-readable output, but likely to cause problems if presented to another computer (parseDouble can't parse such a number, for example). You should also be wary of the java.lang.String#toLowerCase and java.lang.String#toUpperCase overloads that don't take a `Locale`: in Turkey, for example, the characters `'i'` and `'I'` won't be converted to `'I'` and `'i'`. This is the correct behavior for Turkish text (such as user input), but inappropriate for, say, HTTP headers.
 
 ## Summary
 
@@ -203,74 +203,74 @@ For example, if you're formatting integers some locales will use non-ASCII decim
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#Locale(kotlin.String)(language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Construct a locale from a language code. |
-| `https://developer.android.com/reference/kotlin/java/util/Locale#Locale(kotlin.String,%20kotlin.String)(language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Construct a locale from language and country. |
-| `https://developer.android.com/reference/kotlin/java/util/Locale#Locale(kotlin.String,%20kotlin.String,%20kotlin.String)(language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Construct a locale from language, country and variant. |
+| Locale Construct a locale from a language code. |
+| Locale Construct a locale from language and country. |
+| Locale Construct a locale from language, country and variant. |
 
 | Public methods ||
 |---|---|
-| static [Stream](../java.util.stream/Stream.md)\< [Locale](Locale.md)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#availableLocales()()` {@return a stream of installed locales} At a minimum, the returned stream must contain a `Locale` instance equal to `https://developer.android.com/reference/kotlin/java/util/Locale#US:java.util.Locale`. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#clone()()` Overrides Cloneable. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns true if this Locale is equal to another object. |
+| static [Stream](../java.util.stream/Stream.md)\< [Locale](Locale.md)!\> | availableLocales {@return a stream of installed locales} At a minimum, the returned stream must contain a `Locale` instance equal to `https://developer.android.com/reference/kotlin/java/util/Locale#US:java.util.Locale`. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Overrides Cloneable. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Returns true if this Locale is equal to another object. |
 | --- | --- |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](Locale.md)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#filter(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection)(priorityList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.LanguageRange!>, locales: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/java/util/Locale#!>)` Returns a list of matching `Locale` instances using the filtering mechanism defined in RFC 4647. |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](Locale.md)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#filter(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection,%20java.util.Locale.FilteringMode)(priorityList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.LanguageRange!>, locales: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/java/util/Locale#!>, mode: https://developer.android.com/reference/kotlin/java/util/Locale.FilteringMode)` Returns a list of matching `Locale` instances using the filtering mechanism defined in RFC 4647. |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#filterTags(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection)(priorityList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.LanguageRange!>, tags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Returns a list of matching languages tags using the basic filtering mechanism defined in RFC 4647. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](Locale.md)!\> | filter Returns a list of matching `Locale` instances using the filtering mechanism defined in RFC 4647. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Locale](Locale.md)!\> | filter Returns a list of matching `Locale` instances using the filtering mechanism defined in RFC 4647. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | filterTags Returns a list of matching languages tags using the basic filtering mechanism defined in RFC 4647. |
 | --- | --- |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#filterTags(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection,%20java.util.Locale.FilteringMode)(priorityList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.LanguageRange!>, tags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>, mode: https://developer.android.com/reference/kotlin/java/util/Locale.FilteringMode)` Returns a list of matching languages tags using the basic filtering mechanism defined in RFC 4647. |
-| static [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#forLanguageTag(kotlin.String)(languageTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a locale for the specified IETF BCP 47 language tag string. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](Locale.md)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getAvailableLocales()()` Returns an array of all installed locales. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | filterTags Returns a list of matching languages tags using the basic filtering mechanism defined in RFC 4647. |
+| static [Locale](Locale.md) | forLanguageTag Returns a locale for the specified IETF BCP 47 language tag string. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](Locale.md)!\> | getAvailableLocales Returns an array of all installed locales. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getCountry()()` Returns the country/region code for this locale, which should either be the empty string, an uppercase ISO 3166 2-letter code, or a UN M. |
-| static [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDefault()()` Gets the current value of the default locale for this instance of the Java Virtual Machine. |
-| static [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDefault(java.util.Locale.Category)(category: https://developer.android.com/reference/kotlin/java/util/Locale.Category)` Gets the current value of the default locale for the specified Category for this instance of the Java Virtual Machine. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getCountry Returns the country/region code for this locale, which should either be the empty string, an uppercase ISO 3166 2-letter code, or a UN M. |
+| static [Locale](Locale.md) | getDefault Gets the current value of the default locale for this instance of the Java Virtual Machine. |
+| static [Locale](Locale.md) | getDefault Gets the current value of the default locale for the specified Category for this instance of the Java Virtual Machine. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayCountry()()` Returns a name for the locale's country that is appropriate for display to the user. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayCountry(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Returns the name of this locale's country, localized to `locale`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayLanguage()()` Returns a name for the locale's language that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayCountry Returns a name for the locale's country that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayCountry Returns the name of this locale's country, localized to `locale`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayLanguage Returns a name for the locale's language that is appropriate for display to the user. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayLanguage(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Returns the name of this locale's language, localized to `locale`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayName()()` Returns a name for the locale that is appropriate for display to the user. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayName(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Returns this locale's language name, country name, and variant, localized to `locale`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayLanguage Returns the name of this locale's language, localized to `locale`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayName Returns a name for the locale that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayName Returns this locale's language name, country name, and variant, localized to `locale`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayScript()()` Returns a name for the locale's script that is appropriate for display to the user. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayScript(java.util.Locale)(inLocale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Returns a name for the locale's script that is appropriate for display to the user. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayVariant()()` Returns a name for the locale's variant code that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayScript Returns a name for the locale's script that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayScript Returns a name for the locale's script that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayVariant Returns a name for the locale's variant code that is appropriate for display to the user. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getDisplayVariant(java.util.Locale)(inLocale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Returns a name for the locale's variant code that is appropriate for display to the user. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Locale#getExtension(kotlin.Char)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Returns the extension (or private use) value associated with the specified key, or null if there is no extension associated with the key. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getExtensionKeys()()` Returns the set of extension keys associated with this locale, or the empty set if it has no extensions. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getDisplayVariant Returns a name for the locale's variant code that is appropriate for display to the user. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getExtension Returns the extension (or private use) value associated with the specified key, or null if there is no extension associated with the key. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)!\> | getExtensionKeys Returns the set of extension keys associated with this locale, or the empty set if it has no extensions. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getISO3Country()()` {@return a three-letter abbreviation of this locale's country} If the country matches an ISO 3166-1 alpha-2 code, the corresponding ISO 3166-1 alpha-3 uppercase code is returned. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getISO3Language()()` {@return a three-letter abbreviation of this locale's language} If the language matches an ISO 639-1 two-letter code, the corresponding ISO 639-2/T three-letter lowercase code is returned. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getISOCountries()()` Returns a list of all 2-letter country codes defined in ISO 3166. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getISO3Country {@return a three-letter abbreviation of this locale's country} If the country matches an ISO 3166-1 alpha-2 code, the corresponding ISO 3166-1 alpha-3 uppercase code is returned. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getISO3Language {@return a three-letter abbreviation of this locale's language} If the language matches an ISO 639-1 two-letter code, the corresponding ISO 639-2/T three-letter lowercase code is returned. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getISOCountries Returns a list of all 2-letter country codes defined in ISO 3166. |
 | --- | --- |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getISOCountries(java.util.Locale.IsoCountryCode)(type: https://developer.android.com/reference/kotlin/java/util/Locale.IsoCountryCode)` {@return a {@code Set} of ISO3166 country codes for the specified type} |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getISOLanguages()()` Returns a list of all 2-letter language codes and some of 3-letter codes defined in ISO 639. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getLanguage()()` Returns the language code of this Locale. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getISOCountries {@return a {@code Set} of ISO3166 country codes for the specified type} |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getISOLanguages Returns a list of all 2-letter language codes and some of 3-letter codes defined in ISO 639. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getLanguage Returns the language code of this Locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getScript()()` Returns the script for this locale, which should either be the empty string or an ISO 15924 4-letter script code. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleAttributes()()` Returns the set of unicode locale attributes associated with this locale, or the empty set if it has no attributes. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleKeys()()` Returns the set of Unicode locale keys defined by this locale, or the empty set if this locale has none. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getScript Returns the script for this locale, which should either be the empty string or an ISO 15924 4-letter script code. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getUnicodeLocaleAttributes Returns the set of unicode locale attributes associated with this locale, or the empty set if it has no attributes. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getUnicodeLocaleKeys Returns the set of Unicode locale keys defined by this locale, or the empty set if this locale has none. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleType(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the Unicode locale type associated with the specified Unicode locale key for this locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#getVariant()()` Returns the variant code for this locale. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#hasExtensions()()` Returns `true` if this `Locale` has any #. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getUnicodeLocaleType Returns the Unicode locale type associated with the specified Unicode locale key for this locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getVariant Returns the variant code for this locale. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasExtensions Returns `true` if this `Locale` has any #. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#hashCode()()` Override hashCode. |
-| static [Locale](Locale.md)? | `https://developer.android.com/reference/kotlin/java/util/Locale#lookup(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection)(priorityList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.LanguageRange!>, locales: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/java/util/Locale#!>)` Returns a `Locale` instance for the best-matching language tag using the lookup mechanism defined in RFC 4647. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Locale#lookupTag(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection)(priorityList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/java/util/Locale.LanguageRange!>, tags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Returns the best-matching language tag using the lookup mechanism defined in RFC 4647. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Override hashCode. |
+| static [Locale](Locale.md)? | lookup Returns a `Locale` instance for the best-matching language tag using the lookup mechanism defined in RFC 4647. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | lookupTag Returns the best-matching language tag using the lookup mechanism defined in RFC 4647. |
 | --- | --- |
-| static [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#of(kotlin.String)(language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Obtains a locale from a language code. |
-| static [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#of(kotlin.String,%20kotlin.String)(language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Obtains a locale from language and country. |
-| static [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#of(kotlin.String,%20kotlin.String,%20kotlin.String)(language: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Obtains a locale from language, country and variant. |
+| static [Locale](Locale.md) | of Obtains a locale from a language code. |
+| static [Locale](Locale.md) | of Obtains a locale from language and country. |
+| static [Locale](Locale.md) | of Obtains a locale from language, country and variant. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#setDefault(java.util.Locale)(newLocale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Sets the default locale for this instance of the Java Virtual Machine. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#setDefault(java.util.Locale.Category,%20java.util.Locale)(category: https://developer.android.com/reference/kotlin/java/util/Locale.Category, newLocale: https://developer.android.com/reference/kotlin/java/util/Locale#)` Sets the default locale for the specified Category for this instance of the Java Virtual Machine. |
-| [Locale](Locale.md) | `https://developer.android.com/reference/kotlin/java/util/Locale#stripExtensions()()` Returns a copy of this `Locale` with no #. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDefault Sets the default locale for this instance of the Java Virtual Machine. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDefault Sets the default locale for the specified Category for this instance of the Java Virtual Machine. |
+| [Locale](Locale.md) | stripExtensions Returns a copy of this `Locale` with no #. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#toLanguageTag()()` Returns a well-formed IETF BCP 47 language tag representing this locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Locale#toString()()` Returns a string representation of this `Locale` object, consisting of language, country, variant, script, and extensions as below: language + "_" + country + "_" + (variant + "_#" | "#") + script + "_" + extensions Language is always lower case, country is always upper case, script is always title case, and extensions are always lower case. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toLanguageTag Returns a well-formed IETF BCP 47 language tag representing this locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of this `Locale` object, consisting of language, country, variant, script, and extensions as below: language + "_" + country + "_" + (variant + "_#" | "#") + script + "_" + extensions Language is always lower case, country is always upper case, script is always title case, and extensions are always lower case. |
 
 | Properties ||
 |---|---|
@@ -320,8 +320,8 @@ The key for the private use extension ('x').
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale#getExtension(kotlin.Char)`
-- `https://developer.android.com/reference/kotlin/java/util/Locale.Builder#setExtension(kotlin.Char,%20kotlin.String)`
+- getExtension
+- setExtension
 
 ### UNICODE_LOCALE_EXTENSION
 
@@ -337,8 +337,8 @@ The key for Unicode locale extension ('u').
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale#getExtension(kotlin.Char)`
-- `https://developer.android.com/reference/kotlin/java/util/Locale.Builder#setExtension(kotlin.Char,%20kotlin.String)`
+- getExtension
+- setExtension
 
 ## Public constructors
 
@@ -470,7 +470,7 @@ static fun filter(
 ): MutableList<Locale!>
 ```
 
-Returns a list of matching `Locale` instances using the filtering mechanism defined in RFC 4647. This is equivalent to `https://developer.android.com/reference/kotlin/java/util/Locale#filter(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection,%20java.util.Locale.FilteringMode)` when `mode` is `https://developer.android.com/reference/kotlin/java/util/Locale.FilteringMode`. This filter operation on the given `locales` ensures that only unique matching locale(s) are returned.
+Returns a list of matching `Locale` instances using the filtering mechanism defined in RFC 4647. This is equivalent to filter when `mode` is `https://developer.android.com/reference/kotlin/java/util/Locale.FilteringMode`. This filter operation on the given `locales` ensures that only unique matching locale(s) are returned.
 
 | Parameters ||
 |---|---|
@@ -526,7 +526,7 @@ static fun filterTags(
 ): MutableList<String!>
 ```
 
-Returns a list of matching languages tags using the basic filtering mechanism defined in RFC 4647. This is equivalent to `https://developer.android.com/reference/kotlin/java/util/Locale#filterTags(kotlin.collections.MutableList,%20kotlin.collections.MutableCollection,%20java.util.Locale.FilteringMode)` when `mode` is `https://developer.android.com/reference/kotlin/java/util/Locale.FilteringMode`. This filter operation on the given `tags` ensures that only unique matching tag(s) are returned with preserved case. In case of duplicate matching tags with the case difference, the first matching tag with preserved case is returned. For example, "de-ch" is returned out of the duplicate matching tags "de-ch" and "de-CH", if "de-ch" is checked first for matching in the given `tags`. Note that if the given `tags` is an unordered `Collection`, the returned matching tag out of duplicate tags is subject to change, depending on the implementation of the `Collection`.
+Returns a list of matching languages tags using the basic filtering mechanism defined in RFC 4647. This is equivalent to filterTags when `mode` is `https://developer.android.com/reference/kotlin/java/util/Locale.FilteringMode`. This filter operation on the given `tags` ensures that only unique matching tag(s) are returned with preserved case. In case of duplicate matching tags with the case difference, the first matching tag with preserved case is returned. For example, "de-ch" is returned out of the duplicate matching tags "de-ch" and "de-CH", if "de-ch" is checked first for matching in the given `tags`. Note that if the given `tags` is an unordered `Collection`, the returned matching tag out of duplicate tags is subject to change, depending on the implementation of the `Collection`.
 
 | Parameters ||
 |---|---|
@@ -581,7 +581,7 @@ static fun forLanguageTag(languageTag: String): Locale
 
 Returns a locale for the specified IETF BCP 47 language tag string.
 
-If the specified language tag contains any ill-formed subtags, the first such subtag and all following subtags are ignored. Compare to `https://developer.android.com/reference/kotlin/java/util/Locale.Builder#setLanguageTag(kotlin.String)` which throws an exception in this case.
+If the specified language tag contains any ill-formed subtags, the first such subtag and all following subtags are ignored. Compare to setLanguageTag which throws an exception in this case.
 
 The following **conversions** are performed:
 
@@ -649,7 +649,7 @@ For a list of all legacy tags, see the IANA Language Subtag Registry (search for
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | The locale that best represents the language tag. |
+| Locale | The locale that best represents the language tag. |
 
 | Exceptions ||
 |---|---|
@@ -657,8 +657,8 @@ For a list of all legacy tags, see the IANA Language Subtag Registry (search for
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale#toLanguageTag()`
-- `https://developer.android.com/reference/kotlin/java/util/Locale.Builder#setLanguageTag(kotlin.String)`
+- toLanguageTag
+- setLanguageTag
 
 ### getAvailableLocales
 
@@ -700,11 +700,11 @@ static fun getDefault(): Locale
 
 Gets the current value of the default locale for this instance of the Java Virtual Machine.
 
-The Java Virtual Machine sets the default locale during startup based on the host environment. It is used by many locale-sensitive methods if no locale is explicitly specified. It can be changed using the `https://developer.android.com/reference/kotlin/java/util/Locale#setDefault(java.util.Locale)` method.
+The Java Virtual Machine sets the default locale during startup based on the host environment. It is used by many locale-sensitive methods if no locale is explicitly specified. It can be changed using the setDefault method.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | the default locale for this instance of the Java Virtual Machine |
+| Locale | the default locale for this instance of the Java Virtual Machine |
 
 ### getDefault
 
@@ -724,7 +724,7 @@ The Java Virtual Machine sets the default locale during startup based on the hos
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | the default locale for the specified Category for this instance of the Java Virtual Machine |
+| Locale | the default locale for the specified Category for this instance of the Java Virtual Machine |
 
 | Exceptions ||
 |---|---|
@@ -732,7 +732,7 @@ The Java Virtual Machine sets the default locale during startup based on the hos
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale#setDefault(java.util.Locale.Category,%20java.util.Locale)`
+- setDefault
 
 ### getDisplayCountry
 
@@ -972,11 +972,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getISOCountries(): Array<String!>
 ```
 
-Returns a list of all 2-letter country codes defined in ISO 3166. Can be used to obtain Locales. This method is equivalent to `https://developer.android.com/reference/kotlin/java/util/Locale#getISOCountries(java.util.Locale.IsoCountryCode)` with `type` `https://developer.android.com/reference/kotlin/java/util/Locale.IsoCountryCode`.
+Returns a list of all 2-letter country codes defined in ISO 3166. Can be used to obtain Locales. This method is equivalent to getISOCountries with `type` `https://developer.android.com/reference/kotlin/java/util/Locale.IsoCountryCode`.
 
 **Note:** The `Locale` class also supports other codes for country (region), such as 3-letter numeric UN M.49 area codes. Therefore, the list returned by this method does not contain ALL valid codes that can be used to obtain Locales.
 
-Note that this method does not return obsolete 2-letter country codes. ISO3166-3 codes which designate country codes for those obsolete codes, can be retrieved from `https://developer.android.com/reference/kotlin/java/util/Locale#getISOCountries(java.util.Locale.IsoCountryCode)` with `type` `https://developer.android.com/reference/kotlin/java/util/Locale.IsoCountryCode`.
+Note that this method does not return obsolete 2-letter country codes. ISO3166-3 codes which designate country codes for those obsolete codes, can be retrieved from getISOCountries with `type` `https://developer.android.com/reference/kotlin/java/util/Locale.IsoCountryCode`.
 
 | Return ||
 |---|---|
@@ -1218,7 +1218,7 @@ Obtains a locale from a language code. This method normalizes the language value
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | A `Locale` object |
+| Locale | A `Locale` object |
 
 | Exceptions ||
 |---|---|
@@ -1244,7 +1244,7 @@ Obtains a locale from language and country. This method normalizes the language 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | A `Locale` object |
+| Locale | A `Locale` object |
 
 | Exceptions ||
 |---|---|
@@ -1273,7 +1273,7 @@ Obtains a locale from language, country and variant. This method normalizes the 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | A `Locale` object |
+| Locale | A `Locale` object |
 
 | Exceptions ||
 |---|---|
@@ -1308,7 +1308,7 @@ By setting the default locale with this method, all of the default locales for e
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/PropertyPermission`
+- PropertyPermission
 
 ### setDefault
 
@@ -1341,9 +1341,9 @@ Since changing the default locale may affect many different areas of functionali
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkPermission(java.security.Permission)`
-- `https://developer.android.com/reference/kotlin/java/util/PropertyPermission`
-- `https://developer.android.com/reference/kotlin/java/util/Locale#getDefault(java.util.Locale.Category)`
+- checkPermission
+- PropertyPermission
+- getDefault
 
 ### stripExtensions
 
@@ -1357,7 +1357,7 @@ Returns a copy of this `Locale` with no #. If this `Locale` has no extensions, t
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Locale#` | a copy of this `Locale` with no extensions, or `this` if `this` has no extensions |
+| Locale | a copy of this `Locale` with no extensions, or `this` if `this` has no extensions |
 
 ### toLanguageTag
 
@@ -1393,7 +1393,7 @@ If this `Locale` has a language, country, or variant that does not satisfy the I
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale#forLanguageTag(kotlin.String)`
+- forLanguageTag
 
 ### toString
 
@@ -1403,7 +1403,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toString(): String
 ```
 
-Returns a string representation of this `Locale` object, consisting of language, country, variant, script, and extensions as below: language + "_" + country + "_" + (variant + "_#" | "#") + script + "_" + extensions Language is always lower case, country is always upper case, script is always title case, and extensions are always lower case. Extensions and private use subtags will be in canonical order as explained in `https://developer.android.com/reference/kotlin/java/util/Locale#toLanguageTag()`.
+Returns a string representation of this `Locale` object, consisting of language, country, variant, script, and extensions as below: language + "_" + country + "_" + (variant + "_#" | "#") + script + "_" + extensions Language is always lower case, country is always upper case, script is always title case, and extensions are always lower case. Extensions and private use subtags will be in canonical order as explained in toLanguageTag.
 | --- | --- |
 
 When the locale has neither script nor extensions, the result is the same as in Java 6 and prior.
@@ -1412,7 +1412,7 @@ If both the language and country fields are missing, this function will return t
 
 If script or extensions are present and variant is missing, no underscore is added before the "#".
 
-This behavior is designed to support debugging and to be compatible with previous uses of `toString` that expected language, country, and variant fields only. To represent a Locale as a String for interchange purposes, use `https://developer.android.com/reference/kotlin/java/util/Locale#toLanguageTag()`.
+This behavior is designed to support debugging and to be compatible with previous uses of `toString` that expected language, country, and variant fields only. To represent a Locale as a String for interchange purposes, use toLanguageTag.
 
 Examples:
 
@@ -1431,7 +1431,7 @@ Examples:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale#toLanguageTag()`
+- toLanguageTag
 
 ## Properties
 

@@ -18,7 +18,7 @@ The EAP authentication server decides which EAP method is used, so clients are e
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.Builder` This class can be used to incrementally construct an `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#`. |
+| | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.Builder` This class can be used to incrementally construct an EapSessionConfig. |
 | | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapAkaConfig` EapAkaConfig represents the configs needed for an EAP AKA session. |
 | | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig.EapAkaOption` EapAkaOption represents optional configurations for EAP AKA authentication. |
 | --- | --- |
@@ -31,16 +31,16 @@ The EAP authentication server decides which EAP method is used, so clients are e
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [EapSessionConfig.EapAkaConfig](../android/net/eap/EapSessionConfig.EapAkaConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapAkaConfig()()` Retrieves configuration for EAP AKA |
-| [EapSessionConfig.EapAkaPrimeConfig](../android/net/eap/EapSessionConfig.EapAkaPrimeConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapAkaPrimeConfig()()` Retrieves configuration for EAP AKA' |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [EapSessionConfig.EapAkaConfig](../android/net/eap/EapSessionConfig.EapAkaConfig.md)? | getEapAkaConfig Retrieves configuration for EAP AKA |
+| [EapSessionConfig.EapAkaPrimeConfig](../android/net/eap/EapSessionConfig.EapAkaPrimeConfig.md)? | getEapAkaPrimeConfig Retrieves configuration for EAP AKA' |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapIdentity()()` Retrieves client's EAP Identity |
-| [EapSessionConfig.EapMsChapV2Config](../android/net/eap/EapSessionConfig.EapMsChapV2Config.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapMsChapV2Config()()` Retrieves configuration for EAP MSCHAPV2 |
-| [EapSessionConfig.EapSimConfig](../android/net/eap/EapSessionConfig.EapSimConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapSimConfig()()` Retrieves configuration for EAP SIM |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | getEapIdentity Retrieves client's EAP Identity |
+| [EapSessionConfig.EapMsChapV2Config](../android/net/eap/EapSessionConfig.EapMsChapV2Config.md)? | getEapMsChapV2Config Retrieves configuration for EAP MSCHAPV2 |
+| [EapSessionConfig.EapSimConfig](../android/net/eap/EapSessionConfig.EapSimConfig.md)? | getEapSimConfig Retrieves configuration for EAP SIM |
 | --- | --- |
-| [EapSessionConfig.EapTtlsConfig](../android/net/eap/EapSessionConfig.EapTtlsConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#getEapTtlsConfig()()` Retrieves configuration for EAP-TTLS |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/eap/EapSessionConfig#hashCode()()` Returns a hash code value for the object. |
+| [EapSessionConfig.EapTtlsConfig](../android/net/eap/EapSessionConfig.EapTtlsConfig.md)? | getEapTtlsConfig Retrieves configuration for EAP-TTLS |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 
 ## Public methods
 
@@ -169,8 +169,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

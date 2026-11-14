@@ -12,9 +12,9 @@ class RoleManager
 
 This class provides information about and manages roles.
 
-A role is a unique name within the system associated with certain privileges. The list of available roles might change with a system app update, so apps should not make assumption about the availability of roles. Instead, they should always query if the role is available using `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleAvailable(kotlin.String)` before trying to do anything with it. Some predefined role names are available as constants in this class, and a list of possibly available roles can be found in the [AndroidX Role library](../androidx/core/role/_package.md).
+A role is a unique name within the system associated with certain privileges. The list of available roles might change with a system app update, so apps should not make assumption about the availability of roles. Instead, they should always query if the role is available using isRoleAvailable before trying to do anything with it. Some predefined role names are available as constants in this class, and a list of possibly available roles can be found in the [AndroidX Role library](../androidx/core/role/_package.md).
 
-There can be multiple applications qualifying for a role, but only a subset of them can become role holders. To qualify for a role, an application must meet certain requirements, including defining certain components in its manifest. These requirements can be found in the AndroidX Libraries. Then the application will need user consent to become a role holder, which can be requested using `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` with the `Intent` obtained from `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#createRequestRoleIntent(kotlin.String)`.
+There can be multiple applications qualifying for a role, but only a subset of them can become role holders. To qualify for a role, an application must meet certain requirements, including defining certain components in its manifest. These requirements can be found in the AndroidX Libraries. Then the application will need user consent to become a role holder, which can be requested using startActivityForResult with the `Intent` obtained from createRequestRoleIntent.
 
 Upon becoming a role holder, the application may be granted certain privileges that are role specific. When the application loses its role, these privileges will also be revoked.
 
@@ -42,9 +42,9 @@ Upon becoming a role holder, the application may be granted certain privileges t
 
 | Public methods ||
 |---|---|
-| [Intent](../android.content/Intent.md) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#createRequestRoleIntent(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an `Intent` suitable for passing to `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` which prompts the user to grant a role to this application. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleAvailable(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether a role is available in the system. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleHeld(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether the calling application is holding a particular role. |
+| [Intent](../android.content/Intent.md) | createRequestRoleIntent Returns an `Intent` suitable for passing to startActivityForResult which prompts the user to grant a role to this application. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRoleAvailable Check whether a role is available in the system. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRoleHeld Check whether the calling application is holding a particular role. |
 | --- | --- |
 
 ## Constants
@@ -259,7 +259,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun createRequestRoleIntent(roleName: String): Intent
 ```
 
-Returns an `Intent` suitable for passing to `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` which prompts the user to grant a role to this application.
+Returns an `Intent` suitable for passing to startActivityForResult which prompts the user to grant a role to this application.
 
 If the role is granted, the `resultCode` will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, otherwise it will be `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int`.
 

@@ -16,37 +16,37 @@ Represents ranging data, including distance, azimuth, elevation, and RSSI measur
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [RangingMeasurement](RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getAzimuth()()` Returns the azimuth measurement, or `null` if not available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [RangingMeasurement](RangingMeasurement.md)? | getAzimuth Returns the azimuth measurement, or `null` if not available. |
 | --- | --- |
-| [RangingMeasurement](RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistance()()` Returns the distance measurement. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistanceStandardDeviationMeters()()` Get the standard deviation of distance in meters . |
-| [RangingMeasurement](RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getElevation()()` Returns the elevation measurement, or `null` if not available. |
+| [RangingMeasurement](RangingMeasurement.md)? | getDistance Returns the distance measurement. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getDistanceStandardDeviationMeters Get the standard deviation of distance in meters . |
+| [RangingMeasurement](RangingMeasurement.md)? | getElevation Returns the elevation measurement, or `null` if not available. |
 | --- | --- |
-| [RangingDataExtras](../android/ranging/RangingDataExtras.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRangingDataExtras()()` Gets the extra ranging data associated with this ranging data. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRangingTechnology()()` Returns the ranging technology used. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRssi()()` Returns the RSSI (Received Signal Strength Indicator) value. |
+| [RangingDataExtras](../android/ranging/RangingDataExtras.md)? | getRangingDataExtras Gets the extra ranging data associated with this ranging data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRangingTechnology Returns the ranging technology used. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRssi Returns the RSSI (Received Signal Strength Indicator) value. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getTimestampMillis()()` Returns the timestamp of when the ranging data was collected. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#hasDistanceStandardDeviation()()` Check if the standard deviation of distance is set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#hasRssi()()` Returns whether an RSSI measurement is included with the data. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimestampMillis Returns the timestamp of when the ranging data was collected. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDistanceStandardDeviation Check if the standard deviation of distance is set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasRssi Returns whether an RSSI measurement is included with the data. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -63,7 +63,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -109,7 +109,7 @@ Returns the azimuth measurement, or `null` if not available.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement?` | The `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement` representing the azimuth, or `null`. |
+| RangingMeasurement | The RangingMeasurement representing the azimuth, or `null`. |
 
 ### getDistance
 
@@ -123,7 +123,7 @@ Returns the distance measurement.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement?` | The `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement` representing the distance. This value may be `null`. |
+| RangingMeasurement | The RangingMeasurement representing the distance. This value may be `null`. |
 
 ### getDistanceStandardDeviationMeters
 
@@ -157,7 +157,7 @@ Returns the elevation measurement, or `null` if not available.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement?` | The `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement` representing the elevation, or `null`. |
+| RangingMeasurement | The RangingMeasurement representing the elevation, or `null`. |
 
 ### getRangingDataExtras
 
@@ -171,7 +171,7 @@ Gets the extra ranging data associated with this ranging data.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/ranging/RangingDataExtras?` | `https://developer.android.com/reference/kotlin/android/ranging/RangingDataExtras` This value may be `null`. |
+| RangingDataExtras | RangingDataExtras This value may be `null`. |
 
 ### getRangingTechnology
 
@@ -216,11 +216,11 @@ fun getTimestampMillis(): Long
 ```
 
 Returns the timestamp of when the ranging data was collected. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` time base.
+Value is a non-negative timestamp in the elapsedRealtime time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The timestamp in milliseconds. Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#elapsedRealtime()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The timestamp in milliseconds. Value is a non-negative timestamp in the elapsedRealtime time base. |
 
 ### hasDistanceStandardDeviation
 
@@ -263,8 +263,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

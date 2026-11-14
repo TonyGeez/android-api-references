@@ -66,9 +66,9 @@ Provides automatic line breaking for a *single* paragraph.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Builder` Helper class for creating a `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#`. |
+| | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Builder` Helper class for creating a LineBreaker. |
 | open | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints` Line breaking constraints for single paragraph. |
-| open | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Result` Holds the result of the `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20kotlin.Int)`. |
+| open | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.Result` Holds the result of the computeLineBreaks. |
 | --- | --- |
 
 | Constants ||
@@ -88,7 +88,7 @@ Provides automatic line breaking for a *single* paragraph.
 
 | Public methods ||
 |---|---|
-| open [LineBreaker.Result](../android/graphics/text/LineBreaker.Result.md) | `https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker#computeLineBreaks(android.graphics.text.MeasuredText,%20android.graphics.text.LineBreaker.ParagraphConstraints,%20kotlin.Int)(measuredPara: https://developer.android.com/reference/kotlin/android/graphics/text/MeasuredText, constraints: https://developer.android.com/reference/kotlin/android/graphics/text/LineBreaker.ParagraphConstraints, lineNumber: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Break paragraph into lines. |
+| open [LineBreaker.Result](../android/graphics/text/LineBreaker.Result.md) | computeLineBreaks Break paragraph into lines. |
 
 ## Constants
 

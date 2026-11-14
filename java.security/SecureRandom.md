@@ -26,7 +26,7 @@ SecureRandom r1 = new SecureRandom();
           DrbgParameters.instantiation(128, RESEED_ONLY, null));
 ```
 
-The third statement above returns a `SecureRandom` object of the specific algorithm supporting the specific instantiate parameters. The implementation's effective instantiated parameters must match this minimum request but is not necessarily the same. For example, even if the request does not require a certain feature, the actual instantiation can provide the feature. An implementation may lazily instantiate a `SecureRandom` until it's actually used, but the effective instantiate parameters must be determined right after it's created and `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()` should always return the same result unchanged.
+The third statement above returns a `SecureRandom` object of the specific algorithm supporting the specific instantiate parameters. The implementation's effective instantiated parameters must match this minimum request but is not necessarily the same. For example, even if the request does not require a certain feature, the actual instantiation can provide the feature. An implementation may lazily instantiate a `SecureRandom` until it's actually used, but the effective instantiate parameters must be determined right after it's created and getParameters should always return the same result unchanged.
 
 Typical callers of `SecureRandom` invoke the following methods to retrieve random bytes:
 
@@ -36,19 +36,19 @@ SecureRandom random = new SecureRandom();
   random.nextBytes(bytes);
 ```
 
-Callers may also invoke the `https://developer.android.com/reference/kotlin/java/security/SecureRandom#generateSeed(kotlin.Int)` method to generate a given number of seed bytes (to seed other random number generators, for example):
+Callers may also invoke the generateSeed method to generate a given number of seed bytes (to seed other random number generators, for example):
 
 ```kotlin
 byte[] seed = random.generateSeed(20);
 ```
 
-A newly created PRNG `SecureRandom` object is not seeded (except if it is created by `https://developer.android.com/reference/kotlin/java/security/SecureRandom#SecureRandom(kotlin.ByteArray)`). The first call to `nextBytes` will force it to seed itself from an implementation- specific entropy source. This self-seeding will not occur if `setSeed` was previously called.
+A newly created PRNG `SecureRandom` object is not seeded (except if it is created by SecureRandom). The first call to `nextBytes` will force it to seed itself from an implementation- specific entropy source. This self-seeding will not occur if `setSeed` was previously called.
 
 A `SecureRandom` can be reseeded at any time by calling the `reseed` or `setSeed` method. The `reseed` method reads entropy input from its entropy source to reseed itself. The `setSeed` method requires the caller to provide the seed.
 
 Please note that `reseed` may not be supported by all `SecureRandom` implementations.
 
-Some `SecureRandom` implementations may accept a `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters` parameter in its `https://developer.android.com/reference/kotlin/java/security/SecureRandom#nextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)` and `https://developer.android.com/reference/kotlin/java/security/SecureRandom#reseed(java.security.SecureRandomParameters)` methods to further control the behavior of the methods.
+Some `SecureRandom` implementations may accept a SecureRandomParameters parameter in its nextBytes and reseed methods to further control the behavior of the methods.
 
 Note: Depending on the implementation, the `generateSeed`, `reseed` and `nextBytes` methods may block as entropy is being gathered, for example, if the entropy source is /dev/random on various Unix-like operating systems.
 
@@ -60,56 +60,56 @@ Note: Depending on the implementation, the `generateSeed`, `reseed` and `nextByt
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/SecureRandom#SecureRandom()()` Constructs a secure random number generator (RNG) implementing the default random number algorithm. |
-| `https://developer.android.com/reference/kotlin/java/security/SecureRandom#SecureRandom(kotlin.ByteArray)(seed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Constructs a secure random number generator (RNG) implementing the default random number algorithm. |
+| SecureRandom Constructs a secure random number generator (RNG) implementing the default random number algorithm. |
+| SecureRandom Constructs a secure random number generator (RNG) implementing the default random number algorithm. |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/SecureRandom#SecureRandom(java.security.SecureRandomSpi,%20java.security.Provider)(secureRandomSpi: https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Creates a `SecureRandom` object. |
+| SecureRandom Creates a `SecureRandom` object. |
 
 | Public methods ||
 |---|---|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#generateSeed(kotlin.Int)(numBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the given number of seed bytes, computed using the seed generation algorithm that this class uses to seed itself. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getAlgorithm()()` Returns the name of the algorithm implemented by this `SecureRandom` object. |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | generateSeed Returns the given number of seed bytes, computed using the seed generation algorithm that this class uses to seed itself. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getAlgorithm Returns the name of the algorithm implemented by this `SecureRandom` object. |
+| open static [SecureRandom](SecureRandom.md)! | getInstance Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
 | --- | --- |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.Provider)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
+| open static [SecureRandom](SecureRandom.md)! | getInstance Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
+| open static [SecureRandom](SecureRandom.md)! | getInstance Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm. |
+| open static [SecureRandom](SecureRandom.md)! | getInstance Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
 | --- | --- |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters,%20kotlin.String)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstance(kotlin.String,%20java.security.SecureRandomParameters,%20java.security.Provider)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
-| open static [SecureRandom](SecureRandom.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getInstanceStrong()()` Returns a `SecureRandom` object. |
+| open static [SecureRandom](SecureRandom.md)! | getInstance Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
+| open static [SecureRandom](SecureRandom.md)! | getInstance Returns a `SecureRandom` object that implements the specified Random Number Generator (RNG) algorithm and supports the specified `SecureRandomParameters` request. |
+| open static [SecureRandom](SecureRandom.md)! | getInstanceStrong Returns a `SecureRandom` object. |
 | --- | --- |
-| open [SecureRandomParameters](SecureRandomParameters.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getParameters()()` Returns the effective `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters` for this `SecureRandom` instance. |
-| [Provider](Provider.md)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getProvider()()` Returns the provider of this `SecureRandom` object. |
-| open static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getSeed(kotlin.Int)(numBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the given number of seed bytes, computed using the seed generation algorithm that this class uses to seed itself. |
+| open [SecureRandomParameters](SecureRandomParameters.md)! | getParameters Returns the effective SecureRandomParameters for this `SecureRandom` instance. |
+| [Provider](Provider.md)! | getProvider Returns the provider of this `SecureRandom` object. |
+| open static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | getSeed Returns the given number of seed bytes, computed using the seed generation algorithm that this class uses to seed itself. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#nextBytes(kotlin.ByteArray)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Generates a user-specified number of random bytes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#nextBytes(kotlin.ByteArray,%20java.security.SecureRandomParameters)(bytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!)` Generates a user-specified number of random bytes with additional parameters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#reseed()()` Reseeds this `SecureRandom` with entropy input read from its entropy source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | nextBytes Generates a user-specified number of random bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | nextBytes Generates a user-specified number of random bytes with additional parameters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reseed Reseeds this `SecureRandom` with entropy input read from its entropy source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#reseed(java.security.SecureRandomParameters)(params: https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!)` Reseeds this `SecureRandom` with entropy input read from its entropy source with additional parameters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#setSeed(kotlin.ByteArray)(seed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Reseeds this random object with the given seed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#setSeed(kotlin.Long)(seed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Reseeds this random object, using the eight bytes contained in the given `long seed`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reseed Reseeds this `SecureRandom` with entropy input read from its entropy source with additional parameters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSeed Reseeds this random object with the given seed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSeed Reseeds this random object, using the eight bytes contained in the given `long seed`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#toString()()` Returns a Human-readable string representation of this `SecureRandom`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a Human-readable string representation of this `SecureRandom`. |
 
 | Protected methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/security/SecureRandom#next(kotlin.Int)(numBits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generates an integer containing the user-specified number of pseudo-random bits (right justified, with leading zeros). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | next Generates an integer containing the user-specified number of pseudo-random bits (right justified, with leading zeros). |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/java/util/Random.html#` `https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#doubles()()`
+Inherited functions From class `https://developer.android.com/reference/kotlin/java/util/Random.html#` `https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` doubles
 
 <br />
 
 Returns an effectively unlimited stream of pseudorandom `double` values, each between zero (inclusive) and one (exclusive).
 
-A pseudorandom `double` value is generated as if it's the result of calling the method `https://developer.android.com/reference/kotlin/java/util/Random.html#nextDouble()`.
+A pseudorandom `double` value is generated as if it's the result of calling the method nextDouble.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#doubles(kotlin.Double,%20kotlin.Double)(randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` doubles
 
 <br />
 
@@ -117,17 +117,17 @@ Returns an effectively unlimited stream of pseudorandom `double` values, each co
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#doubles(kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` doubles
 
 <br />
 
 Returns a stream producing the given `streamSize` number of pseudorandom `double` values, each between zero (inclusive) and one (exclusive).
 
-A pseudorandom `double` value is generated as if it's the result of calling the method `https://developer.android.com/reference/kotlin/java/util/Random.html#nextDouble()`.
+A pseudorandom `double` value is generated as if it's the result of calling the method nextDouble.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#doubles(kotlin.Long,%20kotlin.Double,%20kotlin.Double)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` doubles
 
 <br />
 
@@ -135,7 +135,7 @@ Returns a stream producing the given `streamSize` number of pseudorandom `double
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/Random.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#from(java.util.random.RandomGenerator)(generator: https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#!)`
+`https://developer.android.com/reference/kotlin/java/util/Random.html#!` from
 
 <br />
 
@@ -143,17 +143,17 @@ Returns an instance of `Random` that delegates method calls to the `https://deve
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#ints()()`
+`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` ints
 
 <br />
 
 Returns an effectively unlimited stream of pseudorandom `int` values.
 
-A pseudorandom `int` value is generated as if it's the result of calling the method `https://developer.android.com/reference/kotlin/java/util/Random.html#nextInt()`.
+A pseudorandom `int` value is generated as if it's the result of calling the method nextInt.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#ints(kotlin.Int,%20kotlin.Int)(randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` ints
 
 <br />
 
@@ -179,17 +179,17 @@ A pseudorandom `int` value is generated as if it's the result of calling the fol
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#ints(kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` ints
 
 <br />
 
 Returns a stream producing the given `streamSize` number of pseudorandom `int` values.
 
-A pseudorandom `int` value is generated as if it's the result of calling the method `https://developer.android.com/reference/kotlin/java/util/Random.html#nextInt()`.
+A pseudorandom `int` value is generated as if it's the result of calling the method nextInt.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#ints(kotlin.Long,%20kotlin.Int,%20kotlin.Int)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/IntStream.html#!` ints
 
 <br />
 
@@ -215,27 +215,27 @@ A pseudorandom `int` value is generated as if it's the result of calling the fol
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#longs()()`
+`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` longs
 
 <br />
 
 Returns an effectively unlimited stream of pseudorandom `long` values.
 
-A pseudorandom `long` value is generated as if it's the result of calling the method `https://developer.android.com/reference/kotlin/java/util/Random.html#nextLong()`.
+A pseudorandom `long` value is generated as if it's the result of calling the method nextLong.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#longs(kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` longs
 
 <br />
 
 Returns a stream producing the given `streamSize` number of pseudorandom `long` values.
 
-A pseudorandom `long` value is generated as if it's the result of calling the method `https://developer.android.com/reference/kotlin/java/util/Random.html#nextLong()`.
+A pseudorandom `long` value is generated as if it's the result of calling the method nextLong.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#longs(kotlin.Long,%20kotlin.Long)(randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` longs
 
 <br />
 
@@ -266,7 +266,7 @@ A pseudorandom `long` value is generated as if it's the result of calling the fo
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` `https://developer.android.com/reference/kotlin/java/util/Random.html#longs(kotlin.Long,%20kotlin.Long,%20kotlin.Long)(streamSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberOrigin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, randomNumberBound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://developer.android.com/reference/kotlin/java/util/stream/LongStream.html#!` longs
 
 <br />
 
@@ -297,7 +297,7 @@ A pseudorandom `long` value is generated as if it's the result of calling the fo
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextBoolean()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` nextBoolean
 
 <br />
 
@@ -305,7 +305,7 @@ Returns the next pseudorandom, uniformly distributed `boolean` value from this r
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextDouble()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` nextDouble
 
 <br />
 
@@ -315,7 +315,7 @@ The general contract of `nextDouble` is that one `double` value, chosen (approxi
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextFloat()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` nextFloat
 
 <br />
 
@@ -325,7 +325,7 @@ The general contract of `nextFloat` is that one `float` value, chosen (approxima
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextGaussian()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` nextGaussian
 
 <br />
 
@@ -335,7 +335,7 @@ The general contract of `nextGaussian` is that one `double` value, chosen from (
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextInt()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` nextInt
 
 <br />
 
@@ -343,7 +343,7 @@ Returns the next pseudorandom, uniformly distributed `int` value from this rando
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextInt(kotlin.Int)(bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` nextInt
 
 <br />
 
@@ -351,7 +351,7 @@ Returns a pseudorandom, uniformly distributed `int` value between 0 (inclusive) 
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/java/util/Random.html#nextLong()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` nextLong
 
 <br />
 
@@ -359,17 +359,17 @@ Returns the next pseudorandom, uniformly distributed `long` value from this rand
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#` `https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#equiDoubles(kotlin.Double,%20kotlin.Double,%20kotlin.Boolean,%20kotlin.Boolean)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, isLeftIncluded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, isRightIncluded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+From class `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#` `https://developer.android.com/reference/kotlin/java/util/stream/DoubleStream.html#!` equiDoubles
 
 <br />
 
 Returns an effectively unlimited stream of pseudorandomly chosen `double` values, where each value is between the specified `left` boundary and the specified `right` boundary. The `left` boundary is included as indicated by `isLeftIncluded`; similarly, the `right` boundary is included as indicated by `isRightIncluded`.
 
-The stream potentially produces all multiples *k* δ (*k* integer) lying in the interval specified by the parameters, where δ \> 0 is the smallest number for which all these multiples are exact `double`s. They are therefore all equidistant. The uniformity of the distribution of the `double`s produced by the stream depends on the quality of the underlying `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextLong(kotlin.Long)`.
+The stream potentially produces all multiples *k* δ (*k* integer) lying in the interval specified by the parameters, where δ \> 0 is the smallest number for which all these multiples are exact `double`s. They are therefore all equidistant. The uniformity of the distribution of the `double`s produced by the stream depends on the quality of the underlying nextLong.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#isDeprecated()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isDeprecated
 
 <br />
 
@@ -377,7 +377,7 @@ Return true if the implementation of RandomGenerator (algorithm) has been marked
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextDouble(kotlin.Double)(bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` nextDouble
 
 <br />
 
@@ -385,7 +385,7 @@ Returns a pseudorandomly chosen `double` value between zero (inclusive) and the 
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextDouble(kotlin.Double,%20kotlin.Double)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` nextDouble
 
 <br />
 
@@ -393,7 +393,7 @@ Returns a pseudorandomly chosen `double` value between the specified origin (inc
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextExponential()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` nextExponential
 
 <br />
 
@@ -401,7 +401,7 @@ Returns a nonnegative `double` value pseudorandomly chosen from an exponential d
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextFloat(kotlin.Float)(bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` nextFloat
 
 <br />
 
@@ -409,7 +409,7 @@ Returns a pseudorandomly chosen `float` value between zero (inclusive) and the s
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextFloat(kotlin.Float,%20kotlin.Float)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` nextFloat
 
 <br />
 
@@ -417,7 +417,7 @@ Returns a pseudorandomly chosen `float` value between the specified origin (incl
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextGaussian(kotlin.Double,%20kotlin.Double)(mean: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html, stddev: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html` nextGaussian
 
 <br />
 
@@ -425,7 +425,7 @@ Returns a `double` value pseudorandomly chosen from a Gaussian (normal) distribu
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextInt(kotlin.Int,%20kotlin.Int)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` nextInt
 
 <br />
 
@@ -433,7 +433,7 @@ Returns a pseudorandomly chosen `int` value between the specified origin (inclus
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextLong(kotlin.Long)(bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` nextLong
 
 <br />
 
@@ -441,7 +441,7 @@ Returns a pseudorandomly chosen `long` value between zero (inclusive) and the sp
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/java/util/random/RandomGenerator.html#nextLong(kotlin.Long,%20kotlin.Long)(origin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, bound: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` nextLong
 
 <br />
 
@@ -463,7 +463,7 @@ Constructs a secure random number generator (RNG) implementing the default rando
 
 This constructor traverses the list of registered security Providers, starting with the most preferred Provider. A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation from the first Provider that supports a `SecureRandom` (RNG) algorithm is returned. If none of the Providers support a RNG algorithm, then an implementation-specific default is returned.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 See the `SecureRandom` section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#securerandom-number-generation-algorithms) for information about standard RNG algorithm names.
 
@@ -479,7 +479,7 @@ Constructs a secure random number generator (RNG) implementing the default rando
 
 This constructor traverses the list of registered security Providers, starting with the most preferred Provider. A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation from the first Provider that supports a `SecureRandom` (RNG) algorithm is returned. If none of the Providers support a RNG algorithm, then an implementation-specific default is returned.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 See the `SecureRandom` section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#securerandom-number-generation-algorithms) for information about standard RNG algorithm names.
 
@@ -556,7 +556,7 @@ Returns a `SecureRandom` object that implements the specified Random Number Gene
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -573,7 +573,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -590,7 +590,7 @@ Returns a `SecureRandom` object that implements the specified Random Number Gene
 
 A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -611,7 +611,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -646,7 +646,7 @@ A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -663,7 +663,7 @@ Returns a `SecureRandom` object that implements the specified Random Number Gene
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation from the first Provider that supports the specified algorithm and the specified `SecureRandomParameters` is returned.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -683,7 +683,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -701,7 +701,7 @@ Returns a `SecureRandom` object that implements the specified Random Number Gene
 
 A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
+Note that the list of registered providers may be retrieved via the getProviders method.
 
 | Parameters ||
 |---|---|
@@ -724,7 +724,7 @@ Note that the list of registered providers may be retrieved via the `https://dev
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstance
 
@@ -762,7 +762,7 @@ A new `SecureRandom` object encapsulating the `SecureRandomSpi` implementation f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Provider`
+- Provider
 
 ### getInstanceStrong
 
@@ -786,7 +786,7 @@ Every implementation of the Java platform is required to support at least one st
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/Security#getProperty(kotlin.String)`
+- getProperty
 
 ### getParameters
 
@@ -796,7 +796,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getParameters(): SecureRandomParameters!
 ```
 
-Returns the effective `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters` for this `SecureRandom` instance.
+Returns the effective SecureRandomParameters for this `SecureRandom` instance.
 
 The returned value can be different from the `SecureRandomParameters` object passed into a `getInstance` method, but it cannot change during the lifetime of this `SecureRandom` object.
 
@@ -804,11 +804,11 @@ A caller can use the returned value to find out what features this `SecureRandom
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!` | the effective `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters` parameters, or `null` if no parameters were used. |
+| `https://developer.android.com/reference/kotlin/java/security/SecureRandomParameters!` | the effective SecureRandomParameters parameters, or `null` if no parameters were used. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/SecureRandomSpi`
+- SecureRandomSpi
 
 ### getProvider
 
@@ -946,7 +946,7 @@ A PRNG `SecureRandom` will not seed itself automatically if `setSeed` is called 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getSeed(kotlin.Int)`
+- getSeed
 
 ### setSeed
 
@@ -970,7 +970,7 @@ This method is defined for compatibility with `java.util.Random`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/security/SecureRandom#getSeed(kotlin.Int)`
+- getSeed
 
 ### toString
 

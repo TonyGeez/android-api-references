@@ -32,12 +32,12 @@ A class for representing data elements returned.
 
 | Public methods ||
 |---|---|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getEntry(kotlin.String,%20kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the raw CBOR data for the value of an entry. |
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getEntryNames(kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the names of all requested entries in a name space. |
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getNamespaces()()` Gets the names of namespaces with retrieved entries. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getEntry Gets the raw CBOR data for the value of an entry. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getEntryNames Get the names of all requested entries in a name space. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getNamespaces Gets the names of namespaces with retrieved entries. |
 | --- | --- |
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getRetrievedEntryNames(kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Get the names of all entries that was successfully retrieved from a name space. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getStatus(kotlin.String,%20kotlin.String)(namespaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets the status of an entry. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getRetrievedEntryNames Get the names of all entries that was successfully retrieved from a name space. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStatus Gets the status of an entry. |
 
 ## Constants
 
@@ -156,7 +156,7 @@ abstract fun getEntry(
 
 Gets the raw CBOR data for the value of an entry.
 
-This should only be called on an entry for which the `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getStatus(kotlin.String,%20kotlin.String)` method returns `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#STATUS_OK:kotlin.Int`.
+This should only be called on an entry for which the getStatus method returns `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#STATUS_OK:kotlin.Int`.
 
 | Parameters ||
 |---|---|
@@ -217,7 +217,7 @@ abstract fun getRetrievedEntryNames(namespaceName: String): MutableCollection<S
 
 Get the names of all entries that was successfully retrieved from a name space.
 
-This only return entries for which `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#getStatus(kotlin.String,%20kotlin.String)` will return `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#STATUS_OK:kotlin.Int`.
+This only return entries for which getStatus will return `https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataResult.Entries#STATUS_OK:kotlin.Int`.
 
 | Parameters ||
 |---|---|

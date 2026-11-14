@@ -11,111 +11,111 @@ interface InputConnection
 Known Direct Subclasses [BaseInputConnection](BaseInputConnection.md), [InputConnectionWrapper](InputConnectionWrapper.md) [BaseInputConnection](BaseInputConnection.md) Base class for implementors of the InputConnection interface, taking care of most of the common behavior for providing a connection to an Editable.
 [InputConnectionWrapper](InputConnectionWrapper.md) Wrapper class for proxying calls to another InputConnection.
 
-The InputConnection interface is the communication channel from an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod` back to the application that is receiving its input. It is used to perform such things as reading text around the cursor, committing text to the text box, and sending raw key events to the application.
+The InputConnection interface is the communication channel from an InputMethod back to the application that is receiving its input. It is used to perform such things as reading text around the cursor, committing text to the text box, and sending raw key events to the application.
 
 Starting from API Level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`, the system can deal with the situation where the application directly implements this class but one or more of the following methods are not implemented.
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSelectedText(kotlin.Int)`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#GINGERBREAD:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int)`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#GINGERBREAD:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitCorrection(android.view.inputmethod.CorrectionInfo)`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingTextInCodePoints(kotlin.Int,%20kotlin.Int)`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getHandler()`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#closeConnection()`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`.
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)`, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N_MR1:kotlin.Int`.
+- getSelectedText, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#GINGERBREAD:kotlin.Int`.
+- setComposingRegion, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#GINGERBREAD:kotlin.Int`.
+- commitCorrection, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int`.
+- requestCursorUpdates, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int`.
+- deleteSurroundingTextInCodePoints, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`.
+- getHandler, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`.
+- closeConnection, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`.
+- commitContent, which was introduced in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N_MR1:kotlin.Int`.
 
 ### Implementing an IME or an editor
 
-Text input is the result of the synergy of two essential components: an Input Method Engine (IME) and an editor. The IME can be a software keyboard, a handwriting interface, an emoji palette, a speech-to-text engine, and so on. There are typically several IMEs installed on any given Android device. In Android, IMEs extend `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#`. For more information about how to create an IME, see the [Creating an input method](https://developer.android.com/guide/topics/text/creating-input-method.html) guide. The editor is the component that receives text and displays it. Typically, this is an `https://developer.android.com/reference/kotlin/android/widget/EditText.html#` instance, but some applications may choose to implement their own editor for various reasons. This is a large and complicated task, and an application that does this needs to make sure the behavior is consistent with standard EditText behavior in Android. An editor needs to interact with the IME, receiving commands through this InputConnection interface, and sending commands through `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager`. An editor should start by implementing `https://developer.android.com/reference/kotlin/android/view/View.html#onCreateInputConnection(android.view.inputmethod.EditorInfo)` to return its own input connection.
+Text input is the result of the synergy of two essential components: an Input Method Engine (IME) and an editor. The IME can be a software keyboard, a handwriting interface, an emoji palette, a speech-to-text engine, and so on. There are typically several IMEs installed on any given Android device. In Android, IMEs extend `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#`. For more information about how to create an IME, see the [Creating an input method](https://developer.android.com/guide/topics/text/creating-input-method.html) guide. The editor is the component that receives text and displays it. Typically, this is an `https://developer.android.com/reference/kotlin/android/widget/EditText.html#` instance, but some applications may choose to implement their own editor for various reasons. This is a large and complicated task, and an application that does this needs to make sure the behavior is consistent with standard EditText behavior in Android. An editor needs to interact with the IME, receiving commands through this InputConnection interface, and sending commands through InputMethodManager. An editor should start by implementing onCreateInputConnection to return its own input connection.
 
 If you are implementing your own IME, you will need to call the methods in this interface to interact with the application. Be sure to test your IME with a wide range of applications, including browsers and rich text editors, as some may have peculiarities you need to deal with. Remember your IME may not be the only source of changes on the text, and try to be as conservative as possible in the data you send and as liberal as possible in the data you receive.
 
-If you are implementing your own editor, you will probably need to provide your own subclass of `https://developer.android.com/reference/kotlin/android/view/inputmethod/BaseInputConnection` to answer to the commands from IMEs. Please be sure to test your editor with as many IMEs as you can as their behavior can vary a lot. Also be sure to test with various languages, including CJK languages and right-to-left languages like Arabic, as these may have different input requirements. When in doubt about the behavior you should adopt for a particular call, please mimic the default TextView implementation in the latest Android version, and if you decide to drift from it, please consider carefully that inconsistencies in text editor behavior is almost universally felt as a bad thing by users.
+If you are implementing your own editor, you will probably need to provide your own subclass of BaseInputConnection to answer to the commands from IMEs. Please be sure to test your editor with as many IMEs as you can as their behavior can vary a lot. Also be sure to test with various languages, including CJK languages and right-to-left languages like Arabic, as these may have different input requirements. When in doubt about the behavior you should adopt for a particular call, please mimic the default TextView implementation in the latest Android version, and if you decide to drift from it, please consider carefully that inconsistencies in text editor behavior is almost universally felt as a bad thing by users.
 
 ### Cursors, selections and compositions
 
 In Android, the cursor and the selection are one and the same thing. A "cursor" is just the special case of a zero-sized selection. As such, this documentation uses them interchangeably. Any method acting "before the cursor" would act before the start of the selection if there is one, and any method acting "after the cursor" would act after the end of the selection.
 
-An editor needs to be able to keep track of a currently "composing" region, like the standard edition widgets do. The composition is marked in a specific style: see `https://developer.android.com/reference/kotlin/android/text/Spanned.html#SPAN_COMPOSING:kotlin.Int`. IMEs use this to help the user keep track of what part of the text they are currently focusing on, and interact with the editor using `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()`. The composing region and the selection are completely independent of each other, and the IME may use them however they see fit.
+An editor needs to be able to keep track of a currently "composing" region, like the standard edition widgets do. The composition is marked in a specific style: see `https://developer.android.com/reference/kotlin/android/text/Spanned.html#SPAN_COMPOSING:kotlin.Int`. IMEs use this to help the user keep track of what part of the text they are currently focusing on, and interact with the editor using setComposingText, setComposingRegion and finishComposingText. The composing region and the selection are completely independent of each other, and the IME may use them however they see fit.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new character bounds `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getCharacterBounds(kotlin.Int)` whenever cursor/anchor position is changed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo` whenever cursor/anchor position is changed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new Insertion marker info `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerFlags()`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerBaseline()`, etc whenever cursor/anchor position is changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int` The editor is requested to call updateCursorAnchorInfo with new character bounds getCharacterBounds whenever cursor/anchor position is changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int` The editor is requested to call updateCursorAnchorInfo with new EditorBoundsInfo whenever cursor/anchor position is changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int` The editor is requested to call updateCursorAnchorInfo with new Insertion marker info getInsertionMarkerFlags, getInsertionMarkerBaseline, etc whenever cursor/anchor position is changed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new text appearance info `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getTextAppearanceInfo()`} whenever cursor/anchor position is changed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new visible line bounds `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getVisibleLineBounds()` whenever cursor/anchor position is changed, the editor or its parent is scrolled or the line bounds changed due to text updates. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` at once, as soon as possible, regardless of cursor/anchor position changes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int` The editor is requested to call updateCursorAnchorInfo with new text appearance info getTextAppearanceInfo} whenever cursor/anchor position is changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int` The editor is requested to call updateCursorAnchorInfo with new visible line bounds getVisibleLineBounds whenever cursor/anchor position is changed, the editor or its parent is scrolled or the line bounds changed due to text updates. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` The editor is requested to call updateCursorAnchorInfo at once, as soon as possible, regardless of cursor/anchor position changes. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int` The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` whenever cursor/anchor position is changed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)` to indicate you would like to receive updates when the extracted text changes. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_TEXT_WITH_STYLES:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextAfterCursor(kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextBeforeCursor(kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` to have style information returned along with the text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int` The editor is requested to call updateCursorAnchorInfo whenever cursor/anchor position is changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int` Flag for use with getExtractedText to indicate you would like to receive updates when the extracted text changes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_TEXT_WITH_STYLES:kotlin.Int` Flag for use with getTextAfterCursor, getTextBeforeCursor and getSurroundingText to have style information returned along with the text. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_CANCELLED:kotlin.Int` Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` was cancelled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FAILED:kotlin.Int` Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` failed and there was no applicable `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture#getFallbackText()` or it couldn't be applied for any other reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FALLBACK:kotlin.Int` Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` failed but `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture#getFallbackText()` was committed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_CANCELLED:kotlin.Int` Result for performHandwritingGesture when HandwritingGesture was cancelled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FAILED:kotlin.Int` Result for performHandwritingGesture when HandwritingGesture failed and there was no applicable getFallbackText or it couldn't be applied for any other reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FALLBACK:kotlin.Int` Result for performHandwritingGesture when HandwritingGesture failed but getFallbackText was committed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_SUCCESS:kotlin.Int` Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` is successfully executed on text. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNKNOWN:kotlin.Int` Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when editor didn't provide any result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int` Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` is unsupported by the current editor. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_SUCCESS:kotlin.Int` Result for performHandwritingGesture when HandwritingGesture is successfully executed on text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNKNOWN:kotlin.Int` Result for performHandwritingGesture when editor didn't provide any result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int` Result for performHandwritingGesture when HandwritingGesture is unsupported by the current editor. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#INPUT_CONTENT_GRANT_READ_URI_PERMISSION:kotlin.Int` When this flag is used, the editor will be able to request read access to the content URI contained in the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo` object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#INPUT_CONTENT_GRANT_READ_URI_PERMISSION:kotlin.Int` When this flag is used, the editor will be able to request read access to the content URI contained in the InputContentInfo object. |
 
 | Public methods ||
 |---|---|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#beginBatchEdit()()` Tell the editor that you are starting a batch of editor operations. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#clearMetaKeyStates(kotlin.Int)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Clear the given meta key pressed states in the given input connection. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#closeConnection()()` Called by the system up to only once to notify that the system is about to invalidate connection between the input method and the application. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | beginBatchEdit Tell the editor that you are starting a batch of editor operations. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | clearMetaKeyStates Clear the given meta key pressed states in the given input connection. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | closeConnection Called by the system up to only once to notify that the system is about to invalidate connection between the input method and the application. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitCompletion(android.view.inputmethod.CompletionInfo)(text: https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo!)` Commit a completion the user has selected from the possible ones previously reported to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#displayCompletions(kotlin.Array)` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#displayCompletions(android.view.View,%20kotlin.Array)`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)(inputContentInfo: https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called by the input method to commit content such as a PNG image to the editor. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitCorrection(android.view.inputmethod.CorrectionInfo)(correctionInfo: https://developer.android.com/reference/kotlin/android/view/inputmethod/CorrectionInfo!)` Commit a correction automatically performed on the raw user's input. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | commitCompletion Commit a completion the user has selected from the possible ones previously reported to displayCompletions or displayCompletions. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | commitContent Called by the input method to commit content such as a PNG image to the editor. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | commitCorrection Commit a correction automatically performed on the raw user's input. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Commit text to the text box and set the new cursor position. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, textAttribute: https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute?)` The variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int)`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingText(kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Delete beforeLength characters of text before the current cursor position, and delete afterLength characters of text after the current cursor position, excluding the selection. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | commitText Commit text to the text box and set the new cursor position. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | commitText The variant of commitText. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteSurroundingText Delete beforeLength characters of text before the current cursor position, and delete afterLength characters of text after the current cursor position, excluding the selection. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingTextInCodePoints(kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` A variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingText(kotlin.Int,%20kotlin.Int)`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#endBatchEdit()()` Tell the editor that you are done with a batch edit previously initiated with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#beginBatchEdit()`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()()` Have the text editor finish whatever composing text is currently active. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | deleteSurroundingTextInCodePoints A variant of deleteSurroundingText. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | endBatchEdit Tell the editor that you are done with a batch edit previously initiated with beginBatchEdit. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | finishComposingText Have the text editor finish whatever composing text is currently active. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getCursorCapsMode(kotlin.Int)(reqModes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the current capitalization mode in effect at the current cursor position in the text. |
-| abstract [ExtractedText](ExtractedText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)(request: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the current text in the input connection's editor, and monitor for any changes to it. |
-| abstract [Handler](../android.os/Handler.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getHandler()()` Called by the system to enable application developers to specify a dedicated thread on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#` methods are called back. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCursorCapsMode Retrieve the current capitalization mode in effect at the current cursor position in the text. |
+| abstract [ExtractedText](ExtractedText.md)? | getExtractedText Retrieve the current text in the input connection's editor, and monitor for any changes to it. |
+| abstract [Handler](../android.os/Handler.md)? | getHandler Called by the system to enable application developers to specify a dedicated thread on which InputConnection methods are called back. |
 | --- | --- |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSelectedText(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the selected text, if any. |
-| open [SurroundingText](SurroundingText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextAfterCursor(kotlin.Int,%20kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get n characters of text after the current cursor position. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSelectedText Gets the selected text, if any. |
+| open [SurroundingText](SurroundingText.md)? | getSurroundingText Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTextAfterCursor Get n characters of text after the current cursor position. |
 | --- | --- |
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextBeforeCursor(kotlin.Int,%20kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get n characters of text before the current cursor position. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performContextMenuAction(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Perform a context menu action on the field. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performEditorAction(kotlin.Int)(editorAction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Have the editor perform an action it has said it can do. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTextBeforeCursor Get n characters of text before the current cursor position. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performContextMenuAction Perform a context menu action on the field. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performEditorAction Have the editor perform an action it has said it can do. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)(gesture: https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, consumer: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#?)` Perform a handwriting gesture on text. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performPrivateCommand(kotlin.String,%20android.os.Bundle)(action: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, data: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` API to send private commands from an input method to its connected editor. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performSpellCheck()()` Have the editor perform spell checking for the full content. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | performHandwritingGesture Perform a handwriting gesture on text. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performPrivateCommand API to send private commands from an input method to its connected editor. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | performSpellCheck Have the editor perform spell checking for the full content. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#previewHandwritingGesture(android.view.inputmethod.PreviewableHandwritingGesture,%20android.os.CancellationSignal)(gesture: https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#?)` Preview a handwriting gesture on text. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#replaceText(kotlin.Int,%20kotlin.Int,%20kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, textAttribute: https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute?)` Replace the specific range in the editor with suggested text. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#reportFullscreenMode(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called back when the connected IME switches between fullscreen and normal modes. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | previewHandwritingGesture Preview a handwriting gesture on text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | replaceText Replace the specific range in the editor with suggested text. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | reportFullscreenMode Called back when the connected IME switches between fullscreen and normal modes. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)(cursorUpdateMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by the input method to ask the editor for calling back `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` to notify cursor/anchor locations. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int,%20kotlin.Int)(cursorUpdateMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cursorUpdateFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by the input method to ask the editor for calling back `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` to notify cursor/anchor locations. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestTextBoundsInfo(android.graphics.RectF,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(bounds: https://developer.android.com/reference/kotlin/android/graphics/RectF.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, consumer: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult!>)` Called by input method to request the `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo` for a range of text which is covered by or in vicinity of the given `bounds`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestCursorUpdates Called by the input method to ask the editor for calling back updateCursorAnchorInfo to notify cursor/anchor locations. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | requestCursorUpdates Called by the input method to ask the editor for calling back updateCursorAnchorInfo to notify cursor/anchor locations. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestTextBoundsInfo Called by input method to request the TextBoundsInfo for a range of text which is covered by or in vicinity of the given `bounds`. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#sendKeyEvent(android.view.KeyEvent)(event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Send a key event to the process that is currently attached through this input connection. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Mark a certain region of text as composing text. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, textAttribute: https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute?)` The variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int)`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | sendKeyEvent Send a key event to the process that is currently attached through this input connection. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setComposingRegion Mark a certain region of text as composing text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setComposingRegion The variant of setComposingRegion. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Replace the currently composing text with the given text, and set the new cursor position. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, newCursorPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, textAttribute: https://developer.android.com/reference/kotlin/android/view/inputmethod/TextAttribute?)` The variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setImeConsumesInput(kotlin.Boolean)(imeConsumesInput: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called by the input method to indicate that it consumes all input for itself, or no longer does so. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setComposingText Replace the currently composing text with the given text, and set the new cursor position. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setComposingText The variant of setComposingText. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setImeConsumesInput Called by the input method to indicate that it consumes all input for itself, or no longer does so. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setSelection(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the selection of the text editor. |
-| open [TextSnapshot](TextSnapshot.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#takeSnapshot()()` Called by the system when it needs to take a snapshot of multiple text-related data in an atomic manner. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setSelection Set the selection of the text editor. |
+| open [TextSnapshot](TextSnapshot.md)? | takeSnapshot Called by the system when it needs to take a snapshot of multiple text-related data in an atomic manner. |
 
 ## Constants
 
@@ -127,7 +127,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new character bounds `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getCharacterBounds(kotlin.Int)` whenever cursor/anchor position is changed. To disable monitoring, call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)` again with this flag off.
+The editor is requested to call updateCursorAnchorInfo with new character bounds getCharacterBounds whenever cursor/anchor position is changed. To disable monitoring, call requestCursorUpdates again with this flag off.
 
 This flag can be combined with other filters: `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int` and update flags `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
 
@@ -141,7 +141,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_FILTER_EDITOR_BOUNDS: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorBoundsInfo` whenever cursor/anchor position is changed. To disable monitoring, call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)` again with this flag off.
+The editor is requested to call updateCursorAnchorInfo with new EditorBoundsInfo whenever cursor/anchor position is changed. To disable monitoring, call requestCursorUpdates again with this flag off.
 
 This flag can be used together with filters: `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int` and update flags `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
 
@@ -155,7 +155,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_FILTER_INSERTION_MARKER: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new Insertion marker info `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerFlags()`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getInsertionMarkerBaseline()`, etc whenever cursor/anchor position is changed. To disable monitoring, call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)` again with this flag off.
+The editor is requested to call updateCursorAnchorInfo with new Insertion marker info getInsertionMarkerFlags, getInsertionMarkerBaseline, etc whenever cursor/anchor position is changed. To disable monitoring, call requestCursorUpdates again with this flag off.
 
 This flag can be combined with other filters: `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int` and update flags `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
 
@@ -169,7 +169,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_FILTER_TEXT_APPEARANCE: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new text appearance info `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getTextAppearanceInfo()`} whenever cursor/anchor position is changed. To disable monitoring, call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)` again with this flag off.
+The editor is requested to call updateCursorAnchorInfo with new text appearance info getTextAppearanceInfo} whenever cursor/anchor position is changed. To disable monitoring, call requestCursorUpdates again with this flag off.
 
 This flag can be combined with other filters: `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int` and update flags `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
 
@@ -183,7 +183,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` with new visible line bounds `https://developer.android.com/reference/kotlin/android/view/inputmethod/CursorAnchorInfo#getVisibleLineBounds()` whenever cursor/anchor position is changed, the editor or its parent is scrolled or the line bounds changed due to text updates. To disable monitoring, call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)` again with this flag off.
+The editor is requested to call updateCursorAnchorInfo with new visible line bounds getVisibleLineBounds whenever cursor/anchor position is changed, the editor or its parent is scrolled or the line bounds changed due to text updates. To disable monitoring, call requestCursorUpdates again with this flag off.
 
 This flag can be combined with other filters: `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int` and update flags `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
 
@@ -197,7 +197,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_IMMEDIATE: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` at once, as soon as possible, regardless of cursor/anchor position changes. This flag can be used together with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
+The editor is requested to call updateCursorAnchorInfo at once, as soon as possible, regardless of cursor/anchor position changes. This flag can be used together with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_MONITOR:kotlin.Int`.
 
 Note by default all of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_EDITOR_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_VISIBLE_LINE_BOUNDS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_TEXT_APPEARANCE:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_FILTER_INSERTION_MARKER:kotlin.Int`, are included but specifying them can filter-out others. It can be CPU intensive to include all, filtering specific info is recommended.
 
@@ -211,7 +211,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val CURSOR_UPDATE_MONITOR: Int
 ```
 
-The editor is requested to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` whenever cursor/anchor position is changed. To disable monitoring, call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#requestCursorUpdates(kotlin.Int)` again with this flag off.
+The editor is requested to call updateCursorAnchorInfo whenever cursor/anchor position is changed. To disable monitoring, call requestCursorUpdates again with this flag off.
 
 This flag can be used together with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#CURSOR_UPDATE_IMMEDIATE:kotlin.Int`.
 
@@ -227,7 +227,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val GET_EXTRACTED_TEXT_MONITOR: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)` to indicate you would like to receive updates when the extracted text changes.
+Flag for use with getExtractedText to indicate you would like to receive updates when the extracted text changes.
 
  Value: 1
 
@@ -239,7 +239,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val GET_TEXT_WITH_STYLES: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextAfterCursor(kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextBeforeCursor(kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` to have style information returned along with the text. If not set, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextAfterCursor(kotlin.Int,%20kotlin.Int)` sends only the raw text, without style or other spans. If set, it may return a complex CharSequence of both text and style spans. **Editor authors**: you should strive to send text with styles if possible, but it is not required.
+Flag for use with getTextAfterCursor, getTextBeforeCursor and getSurroundingText to have style information returned along with the text. If not set, getTextAfterCursor sends only the raw text, without style or other spans. If set, it may return a complex CharSequence of both text and style spans. **Editor authors**: you should strive to send text with styles if possible, but it is not required.
 
  Value: 1
 
@@ -251,7 +251,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HANDWRITING_GESTURE_RESULT_CANCELLED: Int
 ```
 
-Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` was cancelled. This happens when the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#` is or becomes invalidated while performing the gesture, for example because a new `InputConnection` was started, or due to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#invalidateInput(android.view.View)`.
+Result for performHandwritingGesture when HandwritingGesture was cancelled. This happens when the InputConnection is or becomes invalidated while performing the gesture, for example because a new `InputConnection` was started, or due to invalidateInput.
 
  Value: 4
 
@@ -263,7 +263,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HANDWRITING_GESTURE_RESULT_FAILED: Int
 ```
 
-Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` failed and there was no applicable `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture#getFallbackText()` or it couldn't be applied for any other reason.
+Result for performHandwritingGesture when HandwritingGesture failed and there was no applicable getFallbackText or it couldn't be applied for any other reason.
 
  Value: 3
 
@@ -275,7 +275,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HANDWRITING_GESTURE_RESULT_FALLBACK: Int
 ```
 
-Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` failed but `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture#getFallbackText()` was committed.
+Result for performHandwritingGesture when HandwritingGesture failed but getFallbackText was committed.
 
  Value: 5
 
@@ -287,7 +287,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HANDWRITING_GESTURE_RESULT_SUCCESS: Int
 ```
 
-Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` is successfully executed on text.
+Result for performHandwritingGesture when HandwritingGesture is successfully executed on text.
 
  Value: 1
 
@@ -299,7 +299,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HANDWRITING_GESTURE_RESULT_UNKNOWN: Int
 ```
 
-Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when editor didn't provide any result.
+Result for performHandwritingGesture when editor didn't provide any result.
 
  Value: 0
 
@@ -311,7 +311,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HANDWRITING_GESTURE_RESULT_UNSUPPORTED: Int
 ```
 
-Result for `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)` when `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` is unsupported by the current editor.
+Result for performHandwritingGesture when HandwritingGesture is unsupported by the current editor.
 
  Value: 2
 
@@ -323,11 +323,11 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_CONTENT_GRANT_READ_URI_PERMISSION: Int
 ```
 
-When this flag is used, the editor will be able to request read access to the content URI contained in the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo` object.
+When this flag is used, the editor will be able to request read access to the content URI contained in the InputContentInfo object.
 
-Make sure that the content provider owning the Uri sets the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestProvider_grantUriPermissions:kotlin.Int` attribute in its manifest or included the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestGrantUriPermission:kotlin.IntArray` tag. Otherwise `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#requestPermission()` can fail.
+Make sure that the content provider owning the Uri sets the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestProvider_grantUriPermissions:kotlin.Int` attribute in its manifest or included the `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestGrantUriPermission:kotlin.IntArray` tag. Otherwise requestPermission can fail.
 
-Although calling this API is allowed only for the IME that is currently selected, the client is able to request a temporary read-only access even after the current IME is switched to any other IME as long as the client keeps `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo` object.
+Although calling this API is allowed only for the IME that is currently selected, the client is able to request a temporary read-only access even after the current IME is switched to any other IME as long as the client keeps InputContentInfo object.
 
  Value: 1
 
@@ -341,9 +341,9 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun beginBatchEdit(): Boolean
 ```
 
-Tell the editor that you are starting a batch of editor operations. The editor will try to avoid sending you updates about its state until `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#endBatchEdit()` is called. Batch edits nest.
+Tell the editor that you are starting a batch of editor operations. The editor will try to avoid sending you updates about its state until endBatchEdit is called. Batch edits nest.
 
-**IME authors:** use this to avoid getting calls to `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` corresponding to intermediate state. Also, use this to avoid flickers that may arise from displaying intermediate state. Be sure to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#endBatchEdit()` for each call to this, or you may block updates in the editor.
+**IME authors:** use this to avoid getting calls to onUpdateSelection corresponding to intermediate state. Also, use this to avoid flickers that may arise from displaying intermediate state. Be sure to call endBatchEdit for each call to this, or you may block updates in the editor.
 
 **Editor authors:** while a batch edit is in progress, take care not to send updates to the input method and not to update the display. IMEs use this intensively to this effect. Also please note that batch edits need to nest correctly.
 
@@ -365,7 +365,7 @@ This can be used by the IME to clear the meta key states set by a hardware keybo
 
 | Parameters ||
 |---|---|
-| `states` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The states to be cleared, may be one or more bits as per `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#getMetaState()`. |
+| `states` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The states to be cleared, may be one or more bits as per getMetaState. |
 
 | Return ||
 |---|---|
@@ -381,7 +381,7 @@ abstract fun closeConnection(): Unit
 
 Called by the system up to only once to notify that the system is about to invalidate connection between the input method and the application.
 
-**Editor authors** : You can clear all the nested batch edit right now and you no longer need to handle subsequent callbacks on this connection, including `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#beginBatchEdit()`}. Note that although the system tries to call this method whenever possible, there may be a chance that this method is not called in some exceptional situations.
+**Editor authors** : You can clear all the nested batch edit right now and you no longer need to handle subsequent callbacks on this connection, including beginBatchEdit}. Note that although the system tries to call this method whenever possible, there may be a chance that this method is not called in some exceptional situations.
 
 Note: This does nothing when called from input methods.
 
@@ -393,13 +393,13 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun commitCompletion(text: CompletionInfo!): Boolean
 ```
 
-Commit a completion the user has selected from the possible ones previously reported to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#displayCompletions(kotlin.Array)` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#displayCompletions(android.view.View,%20kotlin.Array)`. This will result in the same behavior as if the user had selected the completion from the actual UI. In all other respects, this behaves like `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int)`.
+Commit a completion the user has selected from the possible ones previously reported to displayCompletions or displayCompletions. This will result in the same behavior as if the user had selected the completion from the actual UI. In all other respects, this behaves like commitText.
 
-**IME authors:** please take care to send the same object that you received through `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onDisplayCompletions(kotlin.Array)`.
+**IME authors:** please take care to send the same object that you received through onDisplayCompletions.
 
-**Editor authors:** if you never call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession#displayCompletions(kotlin.Array)` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#displayCompletions(android.view.View,%20kotlin.Array)` then a well-behaved IME should never call this on your input connection, but be ready to deal with misbehaving IMEs without crashing.
+**Editor authors:** if you never call displayCompletions or displayCompletions then a well-behaved IME should never call this on your input connection, but be ready to deal with misbehaving IMEs without crashing.
 
-Calling this method (with a valid `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo` object) will cause the editor to call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, but be careful to wait until the batch edit is over if one is in progress.
+Calling this method (with a valid CompletionInfo object) will cause the editor to call onUpdateSelection on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling updateSelection, but be careful to wait until the batch edit is over if one is in progress.
 
 | Parameters ||
 |---|---|
@@ -436,7 +436,7 @@ In order to avoid a variety of compatibility issues, this focuses on a simple us
 | Parameters ||
 |---|---|
 | `inputContentInfo` | [InputContentInfo](InputContentInfo.md): Content to be inserted. This value cannot be `null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#INPUT_CONTENT_GRANT_READ_URI_PERMISSION:kotlin.Int` if the content provider allows `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestProvider_grantUriPermissions:kotlin.Int` or `0` if the application does not need to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#requestPermission()`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#INPUT_CONTENT_GRANT_READ_URI_PERMISSION:kotlin.Int` if the content provider allows `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestProvider_grantUriPermissions:kotlin.Int` or `0` if the application does not need to call requestPermission. |
 | `opts` | [Bundle](../android.os/Bundle.md)?: optional bundle data. This can be `null`. |
 | --- | --- |
 
@@ -454,7 +454,7 @@ abstract fun commitCorrection(correctionInfo: CorrectionInfo!): Boolean
 
 Commit a correction automatically performed on the raw user's input. A typical example would be to correct typos using a dictionary.
 
-Calling this method will cause the editor to call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, but be careful to wait until the batch edit is over if one is in progress.
+Calling this method will cause the editor to call onUpdateSelection on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling updateSelection, but be careful to wait until the batch edit is over if one is in progress.
 
 | Parameters ||
 |---|---|
@@ -477,9 +477,9 @@ abstract fun commitText(
 
 Commit text to the text box and set the new cursor position.
 
-This method removes the contents of the currently composing text and replaces it with the passed CharSequence, and then moves the cursor according to `newCursorPosition`. If there is no composing text when this method is called, the new text is inserted at the cursor position, removing text inside the selection if any. This behaves like calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int)` then `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()`.
+This method removes the contents of the currently composing text and replaces it with the passed CharSequence, and then moves the cursor according to `newCursorPosition`. If there is no composing text when this method is called, the new text is inserted at the cursor position, removing text inside the selection if any. This behaves like calling setComposingText then finishComposingText.
 
-Calling this method will cause the editor to call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, but be careful to wait until the batch edit is over if one is in progress.
+Calling this method will cause the editor to call onUpdateSelection on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling updateSelection, but be careful to wait until the batch edit is over if one is in progress.
 
 | Parameters ||
 |---|---|
@@ -502,7 +502,7 @@ open fun commitText(
 ): Boolean
 ```
 
-The variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int)`. This method is used to allow the IME to provide extra information while setting up text.
+The variant of commitText. This method is used to allow the IME to provide extra information while setting up text.
 
 | Parameters ||
 |---|---|
@@ -532,9 +532,9 @@ The lengths are supplied in Java chars, not in code points or in glyphs.
 
 Since this method only operates on text before and after the selection, it can't affect the contents of the selection. This may affect the composing span if the span includes characters that are to be deleted, but otherwise will not change it. If some characters in the composing span are deleted, the composing span will persist but get shortened by however many chars inside it have been removed.
 
-**IME authors:** please be careful not to delete only half of a surrogate pair. Also take care not to delete more characters than are in the editor, as that may have ill effects on the application. Calling this method will cause the editor to call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` on your service after the batch input is over.
+**IME authors:** please be careful not to delete only half of a surrogate pair. Also take care not to delete more characters than are in the editor, as that may have ill effects on the application. Calling this method will cause the editor to call onUpdateSelection on your service after the batch input is over.
 
-**Editor authors:** please be careful of race conditions in implementing this call. An IME can make a change to the text or change the selection position and use this method right away; you need to make sure the effects are consistent with the results of the latest edits. Also, although the IME should not send lengths bigger than the contents of the string, you should check the values for overflows and trim the indices to the size of the contents to avoid crashes. Since this changes the contents of the editor, you need to make the changes known to the input method by calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, but be careful to wait until the batch edit is over if one is in progress.
+**Editor authors:** please be careful of race conditions in implementing this call. An IME can make a change to the text or change the selection position and use this method right away; you need to make sure the effects are consistent with the results of the latest edits. Also, although the IME should not send lengths bigger than the contents of the string, you should check the values for overflows and trim the indices to the size of the contents to avoid crashes. Since this changes the contents of the editor, you need to make the changes known to the input method by calling updateSelection, but be careful to wait until the batch edit is over if one is in progress.
 
 | Parameters ||
 |---|---|
@@ -556,14 +556,14 @@ abstract fun deleteSurroundingTextInCodePoints(
 ): Boolean
 ```
 
-A variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingText(kotlin.Int,%20kotlin.Int)`. Major differences are:
+A variant of deleteSurroundingText. Major differences are:
 
 - The lengths are supplied in code points, not in Java chars or in glyphs.
 - This method does nothing if there are one or more invalid surrogate pairs in the requested range.
 
 <br />
 
-**Editor authors:** In addition to the requirement in `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingText(kotlin.Int,%20kotlin.Int)`, make sure to do nothing when one ore more invalid surrogate pairs are found in the requested range.
+**Editor authors:** In addition to the requirement in deleteSurroundingText, make sure to do nothing when one ore more invalid surrogate pairs are found in the requested range.
 
 | Parameters ||
 |---|---|
@@ -576,7 +576,7 @@ A variant of `https://developer.android.com/reference/kotlin/android/view/inputm
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#deleteSurroundingText(kotlin.Int,%20kotlin.Int)`
+- deleteSurroundingText
 
 ### endBatchEdit
 
@@ -586,11 +586,11 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun endBatchEdit(): Boolean
 ```
 
-Tell the editor that you are done with a batch edit previously initiated with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#beginBatchEdit()`. This ends the latest batch only.
+Tell the editor that you are done with a batch edit previously initiated with beginBatchEdit. This ends the latest batch only.
 
-**IME authors:** make sure you call this exactly once for each call to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#beginBatchEdit()`.
+**IME authors:** make sure you call this exactly once for each call to beginBatchEdit.
 
-**Editor authors:** please be careful about batch edit nesting. Updates still to be held back until the end of the last batch edit. In case you are delegating this API call to the one obtained from `https://developer.android.com/reference/kotlin/android/widget/TextView.html#onCreateInputConnection(android.view.inputmethod.EditorInfo)`, there was an off-by-one that had returned `true` when its nested batch edit count becomes `0` as a result of invoking this API. This bug is fixed in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`.
+**Editor authors:** please be careful about batch edit nesting. Updates still to be held back until the end of the last batch edit. In case you are delegating this API call to the one obtained from onCreateInputConnection, there was an off-by-one that had returned `true` when its nested batch edit count becomes `0` as a result of invoking this API. This bug is fixed in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`.
 
 | Return ||
 |---|---|
@@ -622,7 +622,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getCursorCapsMode(reqModes: Int): Int
 ```
 
-Retrieve the current capitalization mode in effect at the current cursor position in the text. See `https://developer.android.com/reference/kotlin/android/text/TextUtils.html#getCapsMode(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)` for more information.
+Retrieve the current capitalization mode in effect at the current cursor position in the text. See getCapsMode for more information.
 
 This method may fail either if the input connection has become invalid (such as its process crashing) or the client is taking too long to respond with the text (it is given a couple seconds to return). In either case, 0 is returned.
 
@@ -632,7 +632,7 @@ This method does not affect the text in the editor in any way, nor does it affec
 
 | Parameters ||
 |---|---|
-| `reqModes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired modes to retrieve, as defined by `https://developer.android.com/reference/kotlin/android/text/TextUtils.html#getCapsMode(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)`. These constants are defined so that you can simply pass the current `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#inputType:kotlin.Int` value directly in to here. |
+| `reqModes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired modes to retrieve, as defined by getCapsMode. These constants are defined so that you can simply pass the current `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#inputType:kotlin.Int` value directly in to here. |
 
 | Return ||
 |---|---|
@@ -653,16 +653,16 @@ Retrieve the current text in the input connection's editor, and monitor for any 
 
 This method may fail either if the input connection has become invalid (such as its process crashing) or the client is taking too long to respond with the text (it is given a couple seconds to return). In either case, null is returned.
 
-Editor authors: as a general rule, try to comply with the fields in `request` for how many chars to return, but if performance or convenience dictates otherwise, please feel free to do what is most appropriate for your case. Also, if the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int` flag is set, you should be calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateExtractedText(android.view.View,%20kotlin.Int,%20android.view.inputmethod.ExtractedText)` whenever you call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`.
+Editor authors: as a general rule, try to comply with the fields in `request` for how many chars to return, but if performance or convenience dictates otherwise, please feel free to do what is most appropriate for your case. Also, if the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int` flag is set, you should be calling updateExtractedText whenever you call updateSelection.
 
 | Parameters ||
 |---|---|
-| `request` | [ExtractedTextRequest](ExtractedTextRequest.md)!: Description of how the text should be returned. `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest` |
+| `request` | [ExtractedTextRequest](ExtractedTextRequest.md)!: Description of how the text should be returned. ExtractedTextRequest |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional options to control the client, either `0` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int`. |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText?` | an `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedText` object describing the state of the text view and containing the extracted text itself, or null if the input connection is no longer valid of the editor can't comply with the request for some reason. |
+| ExtractedText | an ExtractedText object describing the state of the text view and containing the extracted text itself, or null if the input connection is no longer valid of the editor can't comply with the request for some reason. |
 
 ### getHandler
 
@@ -672,9 +672,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getHandler(): Handler?
 ```
 
-Called by the system to enable application developers to specify a dedicated thread on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#` methods are called back.
+Called by the system to enable application developers to specify a dedicated thread on which InputConnection methods are called back.
 
-**Editor authors** : although you can return your custom subclasses of `https://developer.android.com/reference/kotlin/android/os/Handler.html#`, the system only uses `https://developer.android.com/reference/kotlin/android/os/Looper.html#` returned from `https://developer.android.com/reference/kotlin/android/os/Handler.html#getLooper()`. You cannot intercept or cancel `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#` callbacks by implementing this method.
+**Editor authors** : although you can return your custom subclasses of `https://developer.android.com/reference/kotlin/android/os/Handler.html#`, the system only uses `https://developer.android.com/reference/kotlin/android/os/Looper.html#` returned from getLooper. You cannot intercept or cancel InputConnection callbacks by implementing this method.
 
 **IME authors** : This method is not intended to be called from the IME. You will always receive `null`.
 
@@ -698,7 +698,7 @@ This method must not cause any changes in the editor's state.
 
 If `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_TEXT_WITH_STYLES:kotlin.Int` is supplied as flags, the editor should return a `https://developer.android.com/reference/kotlin/android/text/SpannableString.html#` with all the spans set on the text.
 
-**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. If you are using this to get the initial text around the cursor, you may consider using `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextBeforeCursor(kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSelectedText(kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextAfterCursor(kotlin.Int,%20kotlin.Int)` to prevent IPC costs.
+**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. If you are using this to get the initial text around the cursor, you may consider using getInitialTextBeforeCursor, getInitialSelectedText, and getInitialTextAfterCursor to prevent IPC costs.
 
 **Editor authors:** please be careful of race conditions in implementing this call. An IME can make a change to the text or change the selection position and use this method right away; you need to make sure the returned value is consistent with the results of the latest edits.
 
@@ -730,7 +730,7 @@ This method does not affect the text in the editor in any way, nor does it affec
 
 If `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_TEXT_WITH_STYLES:kotlin.Int` is supplied as flags, the editor should return a `https://developer.android.com/reference/kotlin/android/text/Spanned.html#` with all the spans set on the text.
 
-**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. If you are using this to get the initial surrounding text around the cursor, you may consider using `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextBeforeCursor(kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSelectedText(kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextAfterCursor(kotlin.Int,%20kotlin.Int)` to prevent IPC costs.
+**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. If you are using this to get the initial surrounding text around the cursor, you may consider using getInitialTextBeforeCursor, getInitialSelectedText, and getInitialTextAfterCursor to prevent IPC costs.
 
 | Parameters ||
 |---|---|
@@ -741,7 +741,7 @@ If `https://developer.android.com/reference/kotlin/android/view/inputmethod/Inpu
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText?` | an `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText` object describing the surrounding text and state of selection, or null if the input connection is no longer valid, or the editor can't comply with the request for some reason, or the application does not implement this method. The length of the returned text might be less than the sum of beforeLength and afterLength . |
+| SurroundingText | an SurroundingText object describing the surrounding text and state of selection, or null if the input connection is no longer valid, or the editor can't comply with the request for some reason, or the application does not implement this method. The length of the returned text might be less than the sum of beforeLength and afterLength . |
 
 | Exceptions ||
 |---|---|
@@ -766,7 +766,7 @@ This method does not affect the text in the editor in any way, nor does it affec
 
 If `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_TEXT_WITH_STYLES:kotlin.Int` is supplied as flags, the editor should return a `https://developer.android.com/reference/kotlin/android/text/SpannableString.html#` with all the spans set on the text.
 
-**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. If you are using this to get the initial text around the cursor, you may consider using `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextBeforeCursor(kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSelectedText(kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextAfterCursor(kotlin.Int,%20kotlin.Int)` to prevent IPC costs.
+**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. If you are using this to get the initial text around the cursor, you may consider using getInitialTextBeforeCursor, getInitialSelectedText, and getInitialTextAfterCursor to prevent IPC costs.
 
 **Editor authors:** please be careful of race conditions in implementing this call. An IME can make a change to the text and use this method right away; you need to make sure the returned value is consistent with the result of the latest edits. Also, you may return less than n characters if performance dictates so, but keep in mind IMEs are relying on this for many functions: you should not, for example, limit the returned value to the current line, and specifically do not return 0 characters unless the cursor is really at the end of the text.
 
@@ -800,7 +800,7 @@ This method may fail either if the input connection has become invalid (such as 
 
 If `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_TEXT_WITH_STYLES:kotlin.Int` is supplied as flags, the editor should return a `https://developer.android.com/reference/kotlin/android/text/SpannableString.html#` with all the spans set on the text.
 
-**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. Also, please keep in mind the Editor may choose to return less characters than requested even if they are available for performance reasons. If you are using this to get the initial text around the cursor, you may consider using `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextBeforeCursor(kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialSelectedText(kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getInitialTextAfterCursor(kotlin.Int,%20kotlin.Int)` to prevent IPC costs.
+**IME authors:** please consider this will trigger an IPC round-trip that will take some time. Assume this method consumes a lot of time. Also, please keep in mind the Editor may choose to return less characters than requested even if they are available for performance reasons. If you are using this to get the initial text around the cursor, you may consider using getInitialTextBeforeCursor, getInitialSelectedText, and getInitialTextAfterCursor to prevent IPC costs.
 
 **Editor authors:** please be careful of race conditions in implementing this call. An IME can make a change to the text and use this method right away; you need to make sure the returned value is consistent with the result of the latest edits. Also, you may return less than n characters if performance dictates so, but keep in mind IMEs are relying on this for many functions: you should not, for example, limit the returned value to the current line, and specifically do not return 0 characters unless the cursor is really at the start of the text.
 
@@ -861,18 +861,18 @@ open fun performHandwritingGesture(
 
 Perform a handwriting gesture on text.
 
-Note: A supported gesture `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()` may not have preview supported `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()`.
+Note: A supported gesture getSupportedHandwritingGestures may not have preview supported getSupportedHandwritingGesturePreviews.
 
 | Parameters ||
 |---|---|
 | `gesture` | [HandwritingGesture](HandwritingGesture.md): the gesture to perform. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor to run the callback on. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor to run the callback on. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `consumer` | [IntConsumer](../java.util.function/IntConsumer.md)?: if the caller passes a non-null consumer, the editor must invoke this with one of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNKNOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_SUCCESS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FAILED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_CANCELLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FALLBACK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int` after applying the `gesture` has completed. Will be invoked on the given `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`. Default implementation provides a callback to `https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#` with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int`. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#previewHandwritingGesture(android.view.inputmethod.PreviewableHandwritingGesture,%20android.os.CancellationSignal)`
+- previewHandwritingGesture
 
 ### performPrivateCommand
 
@@ -885,7 +885,7 @@ abstract fun performPrivateCommand(
 ): Boolean
 ```
 
-API to send private commands from an input method to its connected editor. This can be used to provide domain-specific features that are only known between certain input methods and their clients. Note that because the InputConnection protocol is asynchronous, you have no way to get a result back or know if the client understood the command; you can use the information in `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo` to determine if a client supports a particular command.
+API to send private commands from an input method to its connected editor. This can be used to provide domain-specific features that are only known between certain input methods and their clients. Note that because the InputConnection protocol is asynchronous, you have no way to get a result back or know if the client understood the command; you can use the information in EditorInfo to determine if a client supports a particular command.
 
 | Parameters ||
 |---|---|
@@ -923,13 +923,13 @@ open fun previewHandwritingGesture(
 ): Boolean
 ```
 
-Preview a handwriting gesture on text. Provides a real-time preview for a gesture to user for an ongoing gesture. e.g. as user begins to draw a circle around text, resulting selection `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture` is previewed while stylus is moving over applicable text.
+Preview a handwriting gesture on text. Provides a real-time preview for a gesture to user for an ongoing gesture. e.g. as user begins to draw a circle around text, resulting selection SelectGesture is previewed while stylus is moving over applicable text.
 
-Note: A supported gesture `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGestures()` might not have preview supported `https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo#getSupportedHandwritingGesturePreviews()`.
+Note: A supported gesture getSupportedHandwritingGestures might not have preview supported getSupportedHandwritingGesturePreviews.
 
 | Parameters ||
 |---|---|
-| `gesture` | [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md): the gesture to preview. Preview support for a gesture (regardless of whether implemented by editor) can be determined if gesture subclasses `https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture`. Supported previewable gestures include `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
+| `gesture` | [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md): the gesture to preview. Preview support for a gesture (regardless of whether implemented by editor) can be determined if gesture subclasses PreviewableHandwritingGesture. Supported previewable gestures include SelectGesture, SelectRangeGesture, DeleteGesture and DeleteRangeGesture. This value cannot be `null`. |
 | `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: signal to cancel an ongoing preview. This value may be `null`. |
 
 | Return ||
@@ -938,7 +938,7 @@ Note: A supported gesture `https://developer.android.com/reference/kotlin/androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)`
+- performHandwritingGesture
 
 ### replaceText
 
@@ -956,9 +956,9 @@ open fun replaceText(
 
 Replace the specific range in the editor with suggested text.
 
-This method finishes whatever composing text is currently active and leaves the text as-it, replaces the specific range of text with the passed CharSequence, and then moves the cursor according to `newCursorPosition`. This behaves like calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setSelection(kotlin.Int,%20kotlin.Int)`, and then `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitText(kotlin.CharSequence,%20kotlin.Int,%20android.view.inputmethod.TextAttribute)`.
+This method finishes whatever composing text is currently active and leaves the text as-it, replaces the specific range of text with the passed CharSequence, and then moves the cursor according to `newCursorPosition`. This behaves like calling finishComposingText, setSelection, and then commitText.
 
-Similar to `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setSelection(kotlin.Int,%20kotlin.Int)`, the order of start and end is not important. In effect, the region from start to end and the region from end to start is the same. Editor authors, be ready to accept a start that is greater than end.
+Similar to setSelection, the order of start and end is not important. In effect, the region from start to end and the region from end to start is the same. Editor authors, be ready to accept a start that is greater than end.
 
 | Parameters ||
 |---|---|
@@ -985,11 +985,11 @@ Called back when the connected IME switches between fullscreen and normal modes.
 
 <br />
 
-**Editor authors:** There is a bug on `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and later devices that this method is called back on the main thread even when `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getHandler()` is overridden. This bug is fixed in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`.
+**Editor authors:** There is a bug on `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and later devices that this method is called back on the main thread even when getHandler is overridden. This bug is fixed in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`.
 
 <br />
 
-**IME authors:** On `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and later devices, input methods are no longer allowed to directly call this method at any time. To signal this event in the target application, input methods should always call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#updateFullscreenMode()` instead. This approach should work on API `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N_MR1:kotlin.Int` and prior devices.
+**IME authors:** On `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and later devices, input methods are no longer allowed to directly call this method at any time. To signal this event in the target application, input methods should always call updateFullscreenMode instead. This approach should work on API `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N_MR1:kotlin.Int` and prior devices.
 
 | Return ||
 |---|---|
@@ -997,7 +997,7 @@ Called back when the connected IME switches between fullscreen and normal modes.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#isFullscreenMode()`
+- isFullscreenMode
 
 ### requestCursorUpdates
 
@@ -1007,7 +1007,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 abstract fun requestCursorUpdates(cursorUpdateMode: Int): Boolean
 ```
 
-Called by the input method to ask the editor for calling back `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` to notify cursor/anchor locations.
+Called by the input method to ask the editor for calling back updateCursorAnchorInfo to notify cursor/anchor locations.
 
 | Parameters ||
 |---|---|
@@ -1015,7 +1015,7 @@ Called by the input method to ask the editor for calling back `https://developer
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the request is scheduled. `false` to indicate that when the application will not call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)`. Since Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` until `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`, this API returned `false` when the target application does not implement this method. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the request is scheduled. `false` to indicate that when the application will not call updateCursorAnchorInfo. Since Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` until `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`, this API returned `false` when the target application does not implement this method. |
 
 ### requestCursorUpdates
 
@@ -1028,7 +1028,7 @@ open fun requestCursorUpdates(
 ): Boolean
 ```
 
-Called by the input method to ask the editor for calling back `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)` to notify cursor/anchor locations.
+Called by the input method to ask the editor for calling back updateCursorAnchorInfo to notify cursor/anchor locations.
 
 | Parameters ||
 |---|---|
@@ -1037,7 +1037,7 @@ Called by the input method to ask the editor for calling back `https://developer
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the request is scheduled. `false` to indicate that when the application will not call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateCursorAnchorInfo(android.view.View,%20android.view.inputmethod.CursorAnchorInfo)`. Since Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` until `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`, this API returned `false` when the target application does not implement this method. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if the request is scheduled. `false` to indicate that when the application will not call updateCursorAnchorInfo. Since Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` until `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`, this API returned `false` when the target application does not implement this method. |
 
 ### requestTextBoundsInfo
 
@@ -1051,23 +1051,23 @@ open fun requestTextBoundsInfo(
 ): Unit
 ```
 
-Called by input method to request the `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo` for a range of text which is covered by or in vicinity of the given `bounds`. It can be used as a supplementary method to implement the handwriting gesture API - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#performHandwritingGesture(android.view.inputmethod.HandwritingGesture,%20java.util.concurrent.Executor,%20java.util.function.IntConsumer)`.
+Called by input method to request the TextBoundsInfo for a range of text which is covered by or in vicinity of the given `bounds`. It can be used as a supplementary method to implement the handwriting gesture API - performHandwritingGesture.
 
-**Editor authors** : It's preferred that the editor returns a `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo` of all the text lines whose bounds intersect with the given `bounds`.
+**Editor authors** : It's preferred that the editor returns a TextBoundsInfo of all the text lines whose bounds intersect with the given `bounds`.
 
 **IME authors**: This method is expensive when the text is long. Please consider that both the text bounds computation and IPC round-trip to send the data are time consuming. It's preferable to only request text bounds in smaller areas.
 
 | Parameters ||
 |---|---|
 | `bounds` | [RectF](../android.graphics/RectF.md): the interested area where the text bounds are requested, in the screen coordinates. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `consumer` | [Consumer](../java.util.function/Consumer.md)\< [TextBoundsInfoResult](TextBoundsInfoResult.md)!\>: the callback invoked by editor to return the result. It must return a non-null object. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfo`
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextBoundsInfoResult`
+- TextBoundsInfo
+- TextBoundsInfoResult
 
 ### sendKeyEvent
 
@@ -1111,11 +1111,11 @@ abstract fun setComposingRegion(
 ): Boolean
 ```
 
-Mark a certain region of text as composing text. If there was a composing region, the characters are left as they were and the composing span removed, as if `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()` has been called. The default style for composing text is used.
+Mark a certain region of text as composing text. If there was a composing region, the characters are left as they were and the composing span removed, as if finishComposingText has been called. The default style for composing text is used.
 
-The passed indices are clipped to the contents bounds. If the resulting region is zero-sized, no region is marked and the effect is the same as that of calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()`. The order of start and end is not important. In effect, the region from start to end and the region from end to start is the same. Editor authors, be ready to accept a start that is greater than end.
+The passed indices are clipped to the contents bounds. If the resulting region is zero-sized, no region is marked and the effect is the same as that of calling finishComposingText. The order of start and end is not important. In effect, the region from start to end and the region from end to start is the same. Editor authors, be ready to accept a start that is greater than end.
 
-Since this does not change the contents of the text, editors should not call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` and IMEs should not receive `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`.
+Since this does not change the contents of the text, editors should not call updateSelection and IMEs should not receive onUpdateSelection.
 
 This has no impact on the cursor/selection position. It may result in the cursor being anywhere inside or outside the composing region, including cases where the selection and the composing region overlap partially or entirely.
 
@@ -1140,7 +1140,7 @@ open fun setComposingRegion(
 ): Boolean
 ```
 
-The variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingRegion(kotlin.Int,%20kotlin.Int)`. This method is used to allow the IME to provide extra information while setting up text.
+The variant of setComposingRegion. This method is used to allow the IME to provide extra information while setting up text.
 
 | Parameters ||
 |---|---|
@@ -1168,9 +1168,9 @@ Replace the currently composing text with the given text, and set the new cursor
 
 If there is any composing span currently active, all characters that it comprises are removed. The passed text is added in its place, and a composing span is added to this text. If there is no composing span active, the passed text is added at the cursor position (removing selected characters first if any), and a composing span is added on the new text. Finally, the cursor is moved to the location specified by `newCursorPosition`.
 
-This is usually called by IMEs to add or remove or change characters in the composing span. Calling this method will cause the editor to call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` on the current IME after the batch input is over.
+This is usually called by IMEs to add or remove or change characters in the composing span. Calling this method will cause the editor to call onUpdateSelection on the current IME after the batch input is over.
 
-**Editor authors:** please keep in mind the text may be very similar or completely different than what was in the composing span at call time, or there may not be a composing span at all. Please note that although it's not typical use, the string may be empty. Treat this normally, replacing the currently composing text with an empty string. Also, be careful with the cursor position. IMEs rely on this working exactly as described above. Since this changes the contents of the editor, you need to make the changes known to the input method by calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, but be careful to wait until the batch edit is over if one is in progress. Note that this method can set the cursor position on either edge of the composing text or entirely outside it, but the IME may also go on to move the cursor position to within the composing text in a subsequent call so you should make no assumption at all: the composing text and the selection are entirely independent.
+**Editor authors:** please keep in mind the text may be very similar or completely different than what was in the composing span at call time, or there may not be a composing span at all. Please note that although it's not typical use, the string may be empty. Treat this normally, replacing the currently composing text with an empty string. Also, be careful with the cursor position. IMEs rely on this working exactly as described above. Since this changes the contents of the editor, you need to make the changes known to the input method by calling updateSelection, but be careful to wait until the batch edit is over if one is in progress. Note that this method can set the cursor position on either edge of the composing text or entirely outside it, but the IME may also go on to move the cursor position to within the composing text in a subsequent call so you should make no assumption at all: the composing text and the selection are entirely independent.
 
 | Parameters ||
 |---|---|
@@ -1193,7 +1193,7 @@ open fun setComposingText(
 ): Boolean
 ```
 
-The variant of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setComposingText(kotlin.CharSequence,%20kotlin.Int)`. This method is used to allow the IME to provide extra information while setting up composing text.
+The variant of setComposingText. This method is used to allow the IME to provide extra information while setting up composing text.
 
 | Parameters ||
 |---|---|
@@ -1239,7 +1239,7 @@ abstract fun setSelection(
 
 Set the selection of the text editor. To set the cursor position, start and end should have the same value.
 
-Since this moves the cursor, calling this method will cause the editor to call `https://developer.android.com/reference/kotlin/android/inputmethodservice/InputMethodService.html#onUpdateSelection(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#updateSelection(android.view.View,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, but be careful to wait until the batch edit is over if one is in progress.
+Since this moves the cursor, calling this method will cause the editor to call onUpdateSelection on the current IME after the batch input is over. **Editor authors** , for this to happen you need to make the changes known to the input method by calling updateSelection, but be careful to wait until the batch edit is over if one is in progress.
 
 This has no effect on the composing region which must stay unchanged. The order of start and end is not important. In effect, the region from start to end and the region from end to start is the same. Editor authors, be ready to accept a start that is greater than end.
 
@@ -1262,10 +1262,10 @@ open fun takeSnapshot(): TextSnapshot?
 
 Called by the system when it needs to take a snapshot of multiple text-related data in an atomic manner.
 
-**Editor authors** : Supporting this method is strongly encouraged. Atomically taken `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot` is going to be really helpful for the system when optimizing IPCs in a safe and deterministic manner. Return `null` if an atomically taken `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot` is unavailable. The system continues supporting such a scenario gracefully.
+**Editor authors** : Supporting this method is strongly encouraged. Atomically taken TextSnapshot is going to be really helpful for the system when optimizing IPCs in a safe and deterministic manner. Return `null` if an atomically taken TextSnapshot is unavailable. The system continues supporting such a scenario gracefully.
 
 **IME authors** : Currently IMEs cannot call this method directly and always receive `null` as the result.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot?` | `null` if `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot` is unavailable and/or this API is called from IMEs. |
+| TextSnapshot | `null` if TextSnapshot is unavailable and/or this API is called from IMEs. |

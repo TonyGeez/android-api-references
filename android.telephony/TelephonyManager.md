@@ -12,24 +12,24 @@ open class TelephonyManager
 
 Provides access to information about the telephony services on the device. Applications can use the methods in this class to determine telephony services and states, as well as to access some types of subscriber information. Applications can also register a listener to receive notification of telephony state changes.
 
-The returned TelephonyManager will use the default subscription for all calls. To call an API for a specific subscription, use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. e.g. ` telephonyManager = defaultSubTelephonyManager.createForSubscriptionId(subId); `
+The returned TelephonyManager will use the default subscription for all calls. To call an API for a specific subscription, use createForSubscriptionId. e.g. ` telephonyManager = defaultSubTelephonyManager.createForSubscriptionId(subId); `
 
 Note that access to some telephony information is permission-protected. Your application cannot access the protected information unless it has the appropriate permissions declared in its manifest file. Where permissions apply, they are noted in the methods through which you access the protected information.
 
 TelephonyManager is intended for use on devices that implement `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String`. On devices that do not implement this feature, the behavior is not reliable. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
 | open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CallComposerException` Exception that may be supplied to the callback in #uploadCallComposerPicture if something goes awry. |
-| abstract | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CellInfoCallback` Callback for providing asynchronous `https://developer.android.com/reference/kotlin/android/telephony/CellInfo` on request |
-| open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.ModemErrorException` Exception that is supplied to the callback in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` if the modem returned a failure. |
+| abstract | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CellInfoCallback` Callback for providing asynchronous CellInfo on request |
+| open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.ModemErrorException` Exception that is supplied to the callback in getNetworkSlicingConfiguration if the modem returned a failure. |
 | --- | --- |
-| open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.NetworkSlicingException` Exception that may be supplied to the callback in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` if something goes awry. |
-| open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.TimeoutException` Exception that is supplied to the callback in `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` if the system timed out waiting for a response from the Radio. |
-| abstract | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.UssdResponseCallback` Used to notify callers of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#sendUssdRequest(kotlin.String,%20android.telephony.TelephonyManager.UssdResponseCallback,%20android.os.Handler)` when the network either successfully executes a USSD request, or if there was a failure while executing the request. |
+| open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.NetworkSlicingException` Exception that may be supplied to the callback in getNetworkSlicingConfiguration if something goes awry. |
+| open | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.TimeoutException` Exception that is supplied to the callback in getNetworkSlicingConfiguration if the system timed out waiting for a response from the Radio. |
+| abstract | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.UssdResponseCallback` Used to notify callers of sendUssdRequest when the network either successfully executes a USSD request, or if there was a failure while executing the request. |
 | --- | --- |
 
 | Constants ||
@@ -79,7 +79,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_STATE_OFFHOOK:kotlin.Int` Device call state: Off-hook. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_STATE_RINGING:kotlin.Int` Device call state: Ringing. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CAPABILITY_SLICING_CONFIG_SUPPORTED:kotlin.String` Indicates whether `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` is supported. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CAPABILITY_SLICING_CONFIG_SUPPORTED:kotlin.String` Indicates whether getNetworkSlicingConfiguration is supported. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CARRIER_RESTRICTION_STATUS_NOT_RESTRICTED:kotlin.Int` The device is not restricted to a carrier |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CARRIER_RESTRICTION_STATUS_RESTRICTED:kotlin.Int` The device is restricted to a carrier. |
@@ -127,7 +127,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_APN_TYPE:kotlin.String` An integer extra containing the APN type. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_CALL_VOICEMAIL_INTENT:kotlin.String` The intent to call voicemail. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_CARRIER_ID:kotlin.String` An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_CARRIER_ID:kotlin.String` An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated carrier id returned by getSimCarrierId. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_CARRIER_NAME:kotlin.String` An string extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated carrier name of the current subscription. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_DATA_FAIL_CAUSE:kotlin.String` An integer extra containing the data fail cause. |
@@ -150,8 +150,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_PHONE_ACCOUNT_HANDLE:kotlin.String` The extra used with an `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CONFIGURE_VOICEMAIL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SHOW_VOICEMAIL_NOTIFICATION:kotlin.String` `Intent` to specify the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` the configuration or notification is for. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_REDIRECTION_URL:kotlin.String` String extra containing the redirection URL sent with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REDIRECTED:kotlin.String`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_SPECIFIC_CARRIER_ID:kotlin.String` An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_SPECIFIC_CARRIER_NAME:kotlin.String` An string extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier name returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierIdName()`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_SPECIFIC_CARRIER_ID:kotlin.String` An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier id returned by getSimSpecificCarrierId. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_SPECIFIC_CARRIER_NAME:kotlin.String` An string extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier name returned by getSimSpecificCarrierIdName. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE:kotlin.String` The lookup key used with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_PHONE_STATE_CHANGED:kotlin.String` broadcast for a String containing the new call state. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_SUBSCRIPTION_ID:kotlin.String` An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` to indicate the subscription which has changed; or in general whenever a subscription ID needs specified. |
@@ -239,7 +239,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_FEATURE_NOT_SUPPORTED:kotlin.Int` Purchase premium capability failed because the device does not support the feature. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NETWORK_NOT_AVAILABLE:kotlin.Int` Purchase premium capability failed because the network is not available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NOT_DEFAULT_DATA_SUBSCRIPTION:kotlin.Int` Purchase premium capability failed because the request was not made on the default data subscription, indicated by `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NOT_DEFAULT_DATA_SUBSCRIPTION:kotlin.Int` Purchase premium capability failed because the request was not made on the default data subscription, indicated by getDefaultDataSubscriptionId. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NOT_FOREGROUND:kotlin.Int` Purchase premium capability failed because the requesting application is not in the foreground. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_PENDING_NETWORK_SETUP:kotlin.Int` Purchase premium capability was successful and is waiting for the network to setup the slicing configuration. |
@@ -306,199 +306,199 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#canChangeDtmfToneLength()()` Whether the device supports configuring the DTMF tone length. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#clearSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)(request: https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest)` Clear a `https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest` from the system. |
-| open [TelephonyManager](TelephonyManager.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForPhoneAccountHandle(android.telecom.PhoneAccountHandle)(phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!)` Create a new TelephonyManager object pinned to the subscription ID associated with the given phone account. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canChangeDtmfToneLength Whether the device supports configuring the DTMF tone length. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearSignalStrengthUpdateRequest Clear a SignalStrengthUpdateRequest from the system. |
+| open [TelephonyManager](TelephonyManager.md)? | createForPhoneAccountHandle Create a new TelephonyManager object pinned to the subscription ID associated with the given phone account. |
 | --- | --- |
-| open [TelephonyManager](TelephonyManager.md)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new TelephonyManager object pinned to the given subscription ID. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#doesSwitchMultiSimConfigTriggerReboot()()` Get whether making changes to modem configurations by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#switchMultiSimConfig(kotlin.Int)` will trigger device reboot. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getActiveModemCount()()` Returns the number of logical modems currently configured to be activated. |
+| open [TelephonyManager](TelephonyManager.md)! | createForSubscriptionId Create a new TelephonyManager object pinned to the given subscription ID. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | doesSwitchMultiSimConfigTriggerReboot Get whether making changes to modem configurations by switchMultiSimConfig will trigger device reboot. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActiveModemCount Returns the number of logical modems currently configured to be activated. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](CellInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getAllCellInfo()()` Requests all available cell information from all radios on the device including the camped/registered, serving, and neighboring cells. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getAllowedNetworkTypesForReason(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the allowed network types for certain reason. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallComposerStatus()()` Get the user-set status for enriched calling with call composer. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](CellInfo.md)!\>! | getAllCellInfo Requests all available cell information from all radios on the device including the camped/registered, serving, and neighboring cells. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAllowedNetworkTypesForReason Get the allowed network types for certain reason. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCallComposerStatus Get the user-set status for enriched calling with call composer. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallState()()` Returns the state of all calls on the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallStateForSubscription()()` Retrieve the call state for a specific subscription that was specified when this TelephonyManager instance was created. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCardIdForDefaultEuicc()()` Get the card ID of the default eUICC card. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCallState Returns the state of all calls on the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCallStateForSubscription Retrieve the call state for a specific subscription that was specified when this TelephonyManager instance was created. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCardIdForDefaultEuicc Get the card ID of the default eUICC card. |
 | --- | --- |
-| open [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCarrierConfig()()` Returns the carrier config of the subscription ID pinned to the TelephonyManager. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCarrierIdFromSimMccMnc()()` Returns carrier id based on sim MCCMNC (returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimOperator()`) only. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCarrierRestrictionStatus(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultListener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Get the carrier restriction status of the device. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)! | getCarrierConfig Returns the carrier config of the subscription ID pinned to the TelephonyManager. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCarrierIdFromSimMccMnc Returns carrier id based on sim MCCMNC (returned by getSimOperator) only. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getCarrierRestrictionStatus Get the carrier restriction status of the device. |
 | --- | --- |
-| open [CellLocation](CellLocation.md)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCellLocation()()` Returns the current location of the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCurrentTtyMode()()` Returns the current TTY mode of the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDataActivity()()` Returns a constant indicating the type of activity on a data connection (cellular). |
+| open [CellLocation](CellLocation.md)! | getCellLocation Returns the current location of the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCurrentTtyMode Returns the current TTY mode of the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDataActivity Returns a constant indicating the type of activity on a data connection (cellular). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDataNetworkType()()` Returns a constant indicating the radio technology (network type) currently in use on the device for data transmission. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDataState()()` Returns a constant indicating the current data connection state (cellular). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDeviceId()()` Returns the unique device ID, for example, the IMEI for GSM and the MEID or ESN for CDMA phones. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDataNetworkType Returns a constant indicating the radio technology (network type) currently in use on the device for data transmission. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDataState Returns a constant indicating the current data connection state (cellular). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDeviceId Returns the unique device ID, for example, the IMEI for GSM and the MEID or ESN for CDMA phones. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDeviceId(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the unique device ID of a subscription, for example, the IMEI for GSM and the MEID for CDMA phones. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDeviceSoftwareVersion()()` Returns the software version number for the device, for example, the IMEI/SV for GSM phones. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmergencyNumber](../android.telephony.emergency/EmergencyNumber.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getEmergencyNumberList()()` Get the emergency number list based on current locale, sim, default, modem and network. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDeviceId Returns the unique device ID of a subscription, for example, the IMEI for GSM and the MEID for CDMA phones. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getDeviceSoftwareVersion Returns the software version number for the device, for example, the IMEI/SV for GSM phones. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmergencyNumber](../android.telephony.emergency/EmergencyNumber.md)!\>!\> | getEmergencyNumberList Get the emergency number list based on current locale, sim, default, modem and network. |
 | --- | --- |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmergencyNumber](../android.telephony.emergency/EmergencyNumber.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getEmergencyNumberList(kotlin.Int)(categories: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the per-category emergency number list based on current locale, sim, default, modem and network. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getEquivalentHomePlmns()()` Returns a list of the equivalent home PLMNs (EF_EHPLMN) from the USIM app. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getForbiddenPlmns()()` Returns an array of Forbidden PLMNs from the USIM App Returns null if the query fails. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EmergencyNumber](../android.telephony.emergency/EmergencyNumber.md)!\>!\> | getEmergencyNumberList Get the per-category emergency number list based on current locale, sim, default, modem and network. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getEquivalentHomePlmns Returns a list of the equivalent home PLMNs (EF_EHPLMN) from the USIM app. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getForbiddenPlmns Returns an array of Forbidden PLMNs from the USIM App Returns null if the query fails. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getGroupIdLevel1()()` Returns the Group Identifier Level1 for a GSM phone. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getIccAuthentication(kotlin.Int,%20kotlin.Int,%20kotlin.String)(appType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, authType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the response of authentication for the default subscription. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getImei()()` Returns the IMEI (International Mobile Equipment Identity). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getGroupIdLevel1 Returns the Group Identifier Level1 for a GSM phone. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getIccAuthentication Returns the response of authentication for the default subscription. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getImei Returns the IMEI (International Mobile Equipment Identity). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getImei(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the IMEI (International Mobile Equipment Identity). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getLine1Number()()` Returns the phone number string for line 1, for example, the MSISDN for a GSM phone for a particular subscription. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getManualNetworkSelectionPlmn()()` Get the PLMN chosen for Manual Network Selection if active. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getImei Returns the IMEI (International Mobile Equipment Identity). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getLine1Number Returns the phone number string for line 1, for example, the MSISDN for a GSM phone for a particular subscription. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getManualNetworkSelectionPlmn Get the PLMN chosen for Manual Network Selection if active. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getManufacturerCode()()` Returns the Manufacturer Code from the MEID. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getManufacturerCode(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the Manufacturer Code from the MEID. |
-| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getMaximumCallComposerPictureSize()()` Indicates the maximum size of the call composure picture. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getManufacturerCode Returns the Manufacturer Code from the MEID. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getManufacturerCode Returns the Manufacturer Code from the MEID. |
+| open static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getMaximumCallComposerPictureSize Indicates the maximum size of the call composure picture. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getMeid()()` Returns the MEID (Mobile Equipment Identifier). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getMeid(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the MEID (Mobile Equipment Identifier). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getMmsUAProfUrl()()` Returns the MMS user agent profile URL. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getMeid Returns the MEID (Mobile Equipment Identifier). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getMeid Returns the MEID (Mobile Equipment Identifier). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getMmsUAProfUrl Returns the MMS user agent profile URL. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getMmsUserAgent()()` Returns the MMS user agent. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNai()()` Returns the Network Access Identifier (NAI). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso()()` Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getMmsUserAgent Returns the MMS user agent. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNai Returns the Network Access Identifier (NAI). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNetworkCountryIso Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkOperator()()` Returns the numeric name (MCC+MNC) of current registered operator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkOperatorName()()` Returns the alphabetic name of current registered operator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getNetworkCountryIso Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNetworkOperator Returns the numeric name (MCC+MNC) of current registered operator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNetworkOperatorName Returns the alphabetic name of current registered operator. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSelectionMode()()` Get the network selection mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/telephony/data/NetworkSlicingConfig!, https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.NetworkSlicingException!>)` Request to get the current slicing configuration including URSP rules and NSSAIs (configured, allowed and rejected). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSpecifier()()` Returns the network specifier of the subscription ID pinned to the TelephonyManager. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNetworkSelectionMode Get the network selection mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getNetworkSlicingConfiguration Request to get the current slicing configuration including URSP rules and NSSAIs (configured, allowed and rejected). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getNetworkSpecifier Returns the network specifier of the subscription ID pinned to the TelephonyManager. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkType()()` Return the current data network type. |
-| open [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getPhoneAccountHandle()()` Determines the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` associated with this TelephonyManager. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getPhoneCount()()` Returns the number of phones available. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNetworkType Return the current data network type. |
+| open [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)? | getPhoneAccountHandle Determines the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` associated with this TelephonyManager. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPhoneCount Returns the number of phones available. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getPhoneType()()` Returns a constant indicating the device phone type. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getPreferredOpportunisticDataSubscription()()` Get preferred opportunistic data subscription Id |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getPrimaryImei()()` Returns the primary IMEI (International Mobile Equipment Identity) of the device as mentioned in GSMA TS. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPhoneType Returns a constant indicating the device phone type. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPreferredOpportunisticDataSubscription Get preferred opportunistic data subscription Id |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getPrimaryImei Returns the primary IMEI (International Mobile Equipment Identity) of the device as mentioned in GSMA TS. |
 | --- | --- |
-| open [ServiceState](ServiceState.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getServiceState()()` Returns the current `https://developer.android.com/reference/kotlin/android/telephony/ServiceState` information. |
-| open [ServiceState](ServiceState.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getServiceState(kotlin.Int)(includeLocationData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current `https://developer.android.com/reference/kotlin/android/telephony/ServiceState` information. |
-| open [ServiceState](ServiceState.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getServiceStateForSlot(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the service state information on specified SIM slot. |
+| open [ServiceState](ServiceState.md)? | getServiceState Returns the current ServiceState information. |
+| open [ServiceState](ServiceState.md)? | getServiceState Returns the current ServiceState information. |
+| open [ServiceState](ServiceState.md)? | getServiceStateForSlot Returns the service state information on specified SIM slot. |
 | --- | --- |
-| open [SignalStrength](SignalStrength.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSignalStrength()()` Get the most recently available signal strength information. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()()` Returns carrier id of the current subscription. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierIdName()()` Returns carrier id name of the current subscription. |
+| open [SignalStrength](SignalStrength.md)? | getSignalStrength Get the most recently available signal strength information. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSimCarrierId Returns carrier id of the current subscription. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSimCarrierIdName Returns carrier id name of the current subscription. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCountryIso()()` Returns the ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimOperator()()` Returns the MCC+MNC (mobile country code + mobile network code) of the provider of the SIM. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimOperatorName()()` Returns the Service Provider Name (SPN). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSimCountryIso Returns the ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSimOperator Returns the MCC+MNC (mobile country code + mobile network code) of the provider of the SIM. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSimOperatorName Returns the Service Provider Name (SPN). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSerialNumber()()` Returns the serial number of the SIM, if applicable. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()()` Returns fine-grained carrier ID of the current subscription. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierIdName()()` Similar like `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierIdName()`, returns user-facing name of the specific carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSimSerialNumber Returns the serial number of the SIM, if applicable. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSimSpecificCarrierId Returns fine-grained carrier ID of the current subscription. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSimSpecificCarrierIdName Similar like getSimCarrierIdName, returns user-facing name of the specific carrier id returned by getSimSpecificCarrierId. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimState()()` Returns a constant indicating the state of the default SIM card. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimState(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a constant indicating the state of the device SIM card in a logical slot. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSubscriberId()()` Returns the unique subscriber ID, for example, the IMSI for a GSM phone. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSimState Returns a constant indicating the state of the default SIM card. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSimState Returns a constant indicating the state of the device SIM card in a logical slot. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSubscriberId Returns the unique subscriber ID, for example, the IMSI for a GSM phone. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSubscriptionId()()` Return an appropriate subscription ID for any situation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSubscriptionId(android.telecom.PhoneAccountHandle)(phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#)` Returns the subscription ID for the given phone account handle. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSupportedModemCount()()` Return how many logical modem can be potentially active simultaneously, in terms of hardware capability. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSubscriptionId Return an appropriate subscription ID for any situation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSubscriptionId Returns the subscription ID for the given phone account handle. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSupportedModemCount Return how many logical modem can be potentially active simultaneously, in terms of hardware capability. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSupportedRadioAccessFamily()()` Requires android. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getTypeAllocationCode()()` Returns the Type Allocation Code from the IMEI. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getTypeAllocationCode(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the Type Allocation Code from the IMEI. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getSupportedRadioAccessFamily Requires android. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getTypeAllocationCode Returns the Type Allocation Code from the IMEI. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getTypeAllocationCode Returns the Type Allocation Code from the IMEI. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UiccCardInfo](UiccCardInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getUiccCardsInfo()()` Gets information about currently inserted UICCs (Universal Integrated Circuit Cards) and eUICCs (embedded UICCs). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getVisualVoicemailPackageName()()` Returns the package responsible of processing visual voicemail for the subscription ID pinned to the TelephonyManager. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getVoiceMailAlphaTag()()` Retrieves the alphabetic identifier associated with the voice mail number. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UiccCardInfo](UiccCardInfo.md)!\> | getUiccCardsInfo Gets information about currently inserted UICCs (Universal Integrated Circuit Cards) and eUICCs (embedded UICCs). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getVisualVoicemailPackageName Returns the package responsible of processing visual voicemail for the subscription ID pinned to the TelephonyManager. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getVoiceMailAlphaTag Retrieves the alphabetic identifier associated with the voice mail number. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getVoiceMailNumber()()` Returns the voice mail number. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getVoiceNetworkType()()` Returns the NETWORK_TYPE_xxxx for voice |
-| open [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getVoicemailRingtoneUri(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!)` Returns the URI for the per-account voicemail ringtone set in Phone settings. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getVoiceMailNumber Returns the voice mail number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getVoiceNetworkType Returns the NETWORK_TYPE_xxxx for voice |
+| open [Uri](../android.net/Uri.md)? | getVoicemailRingtoneUri Returns the URI for the per-account voicemail ringtone set in Phone settings. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()()` Has the calling application been granted carrier privileges by the carrier. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasIccCard()()` This API is used to check if there is an ICC card present in the device. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccCloseLogicalChannel(kotlin.Int)(channel: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Closes a previously opened logical channel to the ICC card. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasCarrierPrivileges Has the calling application been granted carrier privileges by the carrier. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasIccCard This API is used to check if there is an ICC card present in the device. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | iccCloseLogicalChannel Closes a previously opened logical channel to the ICC card. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccExchangeSimIO(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(fileID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, command: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, filePath: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the response APDU for a command APDU sent through SIM_IO. |
-| open [IccOpenLogicalChannelResponse](IccOpenLogicalChannelResponse.md)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccOpenLogicalChannel(kotlin.String)(AID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Opens a logical channel to the ICC card. |
-| open [IccOpenLogicalChannelResponse](IccOpenLogicalChannelResponse.md)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccOpenLogicalChannel(kotlin.String,%20kotlin.Int)(AID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, p2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Opens a logical channel to the ICC card. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | iccExchangeSimIO Returns the response APDU for a command APDU sent through SIM_IO. |
+| open [IccOpenLogicalChannelResponse](IccOpenLogicalChannelResponse.md)! | iccOpenLogicalChannel Opens a logical channel to the ICC card. |
+| open [IccOpenLogicalChannelResponse](IccOpenLogicalChannelResponse.md)! | iccOpenLogicalChannel Opens a logical channel to the ICC card. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccTransmitApduBasicChannel(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(cla: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, instruction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Transmit an APDU to the ICC card over the basic channel. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccTransmitApduLogicalChannel(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(channel: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cla: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, instruction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, p3: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Transmit an APDU to the ICC card over a logical channel. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isConcurrentVoiceAndDataSupported()()` Whether the device is currently on a technology (e.g. UMTS or LTE) which can support voice and data simultaneously. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | iccTransmitApduBasicChannel Transmit an APDU to the ICC card over the basic channel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | iccTransmitApduLogicalChannel Transmit an APDU to the ICC card over a logical channel. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isConcurrentVoiceAndDataSupported Whether the device is currently on a technology (e.g. UMTS or LTE) which can support voice and data simultaneously. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataCapable()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataConnectionAllowed()()` Checks whether cellular data connection is allowed in the device. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataEnabled()()` Returns whether mobile data is enabled or not per user setting. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDataCapable <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDataConnectionAllowed Checks whether cellular data connection is allowed in the device. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDataEnabled Returns whether mobile data is enabled or not per user setting. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataEnabledForReason(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return whether data is enabled for certain reason . |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataRoamingEnabled()()` Returns whether mobile data roaming is enabled on the subscription. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceSmsCapable()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDataEnabledForReason Return whether data is enabled for certain reason . |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDataRoamingEnabled Returns whether mobile data roaming is enabled on the subscription. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceSmsCapable <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceVoiceCapable()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isEmergencyNumber(kotlin.String)(number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Identifies if the supplied phone number is an emergency number that matches a known emergency number based on current locale, SIM card(s), Android database, modem, network, or defaults. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isHearingAidCompatibilitySupported()()` Whether the phone supports hearing aid compatibility. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceVoiceCapable <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEmergencyNumber Identifies if the supplied phone number is an emergency number that matches a known emergency number based on current locale, SIM card(s), Android database, modem, network, or defaults. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isHearingAidCompatibilitySupported Whether the phone supports hearing aid compatibility. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isManualNetworkSelectionAllowed()()` Checks if manual network selection is allowed. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isModemEnabledForSlot(kotlin.Int)(slotIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Indicates whether or not there is a modem stack enabled for the given SIM slot. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isMultiSimSupported()()` Returns if the usage of multiple SIM cards at the same time to register on the network (e.g. Dual Standby or Dual Active) is supported by the device and by the carrier. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isManualNetworkSelectionAllowed Checks if manual network selection is allowed. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isModemEnabledForSlot Indicates whether or not there is a modem stack enabled for the given SIM slot. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | isMultiSimSupported Returns if the usage of multiple SIM cards at the same time to register on the network (e.g. Dual Standby or Dual Active) is supported by the device and by the carrier. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isNetworkRoaming()()` Returns true if the device is considered roaming on the current network, for GSM purposes. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isPremiumCapabilityAvailableForPurchase(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Check whether the given premium capability is available for purchase from the carrier. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isRadioInterfaceCapabilitySupported(kotlin.String)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Whether the device supports a given capability on the radio interface. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNetworkRoaming Returns true if the device is considered roaming on the current network, for GSM purposes. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPremiumCapabilityAvailableForPurchase Check whether the given premium capability is available for purchase from the carrier. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRadioInterfaceCapabilitySupported Whether the device supports a given capability on the radio interface. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isRttSupported()()` Determines whether the device currently supports RTT (Real-time text). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isSmsCapable()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isTtyModeSupported()()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRttSupported Determines whether the device currently supports RTT (Real-time text). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSmsCapable <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTtyModeSupported <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isVoiceCapable()()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isVoicemailVibrationEnabled(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!)` Returns whether vibration is set for voicemail notification in Phone settings. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isWorldPhone()()` Whether the device is a world phone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVoiceCapable <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVoicemailVibrationEnabled Returns whether vibration is set for voicemail notification in Phone settings. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWorldPhone Whether the device is a world phone. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#listen(android.telephony.PhoneStateListener,%20kotlin.Int)(listener: https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener!, events: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Registers a listener object to receive notification of changes in specified telephony states. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Purchase the given premium capability from the carrier. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#rebootModem()()` Reboot and re-initialize the cellular modem and related subsystems below the OS. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | listen Registers a listener object to receive notification of changes in specified telephony states. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | purchasePremiumCapability Purchase the given premium capability from the carrier. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | rebootModem Reboot and re-initialize the cellular modem and related subsystems below the OS. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#registerTelephonyCallback(kotlin.Int,%20java.util.concurrent.Executor,%20android.telephony.TelephonyCallback)(includeLocationData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback)` Registers a callback object to receive notification of changes in specified telephony states. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#registerTelephonyCallback(java.util.concurrent.Executor,%20android.telephony.TelephonyCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback)` Registers a callback object to receive notification of changes in specified telephony states. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#requestCellInfoUpdate(java.util.concurrent.Executor,%20android.telephony.TelephonyManager.CellInfoCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CellInfoCallback)` Requests all available cell information from the current subscription for observed camped/registered, serving, and neighboring cells. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerTelephonyCallback Registers a callback object to receive notification of changes in specified telephony states. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerTelephonyCallback Registers a callback object to receive notification of changes in specified telephony states. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | requestCellInfoUpdate Requests all available cell information from the current subscription for observed camped/registered, serving, and neighboring cells. |
 | --- | --- |
-| open [NetworkScan](NetworkScan.md)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#requestNetworkScan(android.telephony.NetworkScanRequest,%20java.util.concurrent.Executor,%20android.telephony.TelephonyScanManager.NetworkScanCallback)(request: https://developer.android.com/reference/kotlin/android/telephony/NetworkScanRequest!, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#!, callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyScanManager.NetworkScanCallback!)` Request a network scan. |
-| open [NetworkScan](NetworkScan.md)? | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#requestNetworkScan(kotlin.Int,%20android.telephony.NetworkScanRequest,%20java.util.concurrent.Executor,%20android.telephony.TelephonyScanManager.NetworkScanCallback)(includeLocationData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, request: https://developer.android.com/reference/kotlin/android/telephony/NetworkScanRequest, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyScanManager.NetworkScanCallback)` Request a network scan. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#sendDialerSpecialCode(kotlin.String)(inputCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Send the special dialer code. |
+| open [NetworkScan](NetworkScan.md)! | requestNetworkScan Request a network scan. |
+| open [NetworkScan](NetworkScan.md)? | requestNetworkScan Request a network scan. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendDialerSpecialCode Send the special dialer code. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#sendEnvelopeWithStatus(kotlin.String)(content: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Send ENVELOPE to the SIM and return the response. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#sendUssdRequest(kotlin.String,%20android.telephony.TelephonyManager.UssdResponseCallback,%20android.os.Handler)(ussdRequest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.UssdResponseCallback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Sends an Unstructured Supplementary Service Data (USSD) request to the mobile network and informs the caller of the response via the supplied `callback`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#sendVisualVoicemailSms(kotlin.String,%20kotlin.Int,%20kotlin.String,%20android.app.PendingIntent)(number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, sentIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Send a visual voicemail SMS. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | sendEnvelopeWithStatus Send ENVELOPE to the SIM and return the response. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendUssdRequest Sends an Unstructured Supplementary Service Data (USSD) request to the mobile network and informs the caller of the response via the supplied `callback`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sendVisualVoicemailSms Send a visual voicemail SMS. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setAllowedNetworkTypesForReason(kotlin.Int,%20kotlin.Long)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, allowedNetworkTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Set the allowed network types of the device and provide the reason triggering the allowed network change. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setCallComposerStatus(kotlin.Int)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the user-set status for enriched calling with call composer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setDataEnabled(kotlin.Boolean)(enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Turns mobile data on or off. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAllowedNetworkTypesForReason Set the allowed network types of the device and provide the reason triggering the allowed network change. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCallComposerStatus Set the user-set status for enriched calling with call composer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDataEnabled Turns mobile data on or off. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setDataEnabledForReason(kotlin.Int,%20kotlin.Boolean)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Control of data connection and provide the reason triggering the data connection control. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setForbiddenPlmns(kotlin.collections.MutableList)(fplmns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Replace the contents of the forbidden PLMN SIM file with the provided values. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setLine1NumberForDisplay(kotlin.String,%20kotlin.String)(alphaTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the line 1 phone number string and its alphatag for the current ICCID for display purpose only, for example, displayed in Phone Status. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDataEnabledForReason Control of data connection and provide the reason triggering the data connection control. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | setForbiddenPlmns Replace the contents of the forbidden PLMN SIM file with the provided values. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setLine1NumberForDisplay Set the line 1 phone number string and its alphatag for the current ICCID for display purpose only, for example, displayed in Phone Status. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setNetworkSelectionModeAutomatic()()` Sets the network selection mode to automatic. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setNetworkSelectionModeManual(kotlin.String,%20kotlin.Boolean)(operatorNumeric: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, persistSelection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Ask the radio to connect to the input network and change selection mode to manual. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setNetworkSelectionModeManual(kotlin.String,%20kotlin.Boolean,%20kotlin.Int)(operatorNumeric: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, persistSelection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, ran: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ask the radio to connect to the input network and change selection mode to manual. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNetworkSelectionModeAutomatic Sets the network selection mode to automatic. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setNetworkSelectionModeManual Ask the radio to connect to the input network and change selection mode to manual. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setNetworkSelectionModeManual Ask the radio to connect to the input network and change selection mode to manual. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setOperatorBrandOverride(kotlin.String)(brand: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Override the branding for the current ICCID. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setPreferredNetworkTypeToGlobal()()` Set the preferred network type to global mode which includes NR, LTE, CDMA, EvDo and GSM/WCDMA. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setPreferredOpportunisticDataSubscription(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, needValidation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?)` Set preferred opportunistic data subscription id. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setOperatorBrandOverride Override the branding for the current ICCID. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPreferredNetworkTypeToGlobal Set the preferred network type to global mode which includes NR, LTE, CDMA, EvDo and GSM/WCDMA. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPreferredOpportunisticDataSubscription Set preferred opportunistic data subscription id. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)(request: https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest)` Set a `https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest` to receive notification when signal quality measurements breach the specified thresholds. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setVisualVoicemailSmsFilterSettings(android.telephony.VisualVoicemailSmsFilterSettings)(settings: https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings!)` Set the visual voicemail SMS filter settings for the subscription ID pinned to the TelephonyManager. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setVoiceMailNumber(kotlin.String,%20kotlin.String)(alphaTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, number: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the voice mail number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSignalStrengthUpdateRequest Set a SignalStrengthUpdateRequest to receive notification when signal quality measurements breach the specified thresholds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVisualVoicemailSmsFilterSettings Set the visual voicemail SMS filter settings for the subscription ID pinned to the TelephonyManager. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setVoiceMailNumber Sets the voice mail number. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setVoicemailRingtoneUri(android.telecom.PhoneAccountHandle,%20android.net.Uri)(phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Sets the per-account voicemail ringtone. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setVoicemailVibrationEnabled(android.telecom.PhoneAccountHandle,%20kotlin.Boolean)(phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!, enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the per-account preference whether vibration is enabled for voicemail notifications. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#switchMultiSimConfig(kotlin.Int)(numOfSims: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Switch configs to enable multi-sim or switch back to single-sim |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVoicemailRingtoneUri Sets the per-account voicemail ringtone. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setVoicemailVibrationEnabled Sets the per-account preference whether vibration is enabled for voicemail notifications. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | switchMultiSimConfig Switch configs to enable multi-sim or switch back to single-sim |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#unregisterTelephonyCallback(android.telephony.TelephonyCallback)(callback: https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback)` Unregister an existing `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#updateAvailableNetworks(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(availableNetworks: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/AvailableNetworkInfo!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>?)` Update availability of a list of networks in the current location. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#uploadCallComposerPicture(java.io.InputStream,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(pictureToUpload: https://developer.android.com/reference/kotlin/java/io/InputStream.html#, contentType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#!, https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CallComposerException!>)` Uploads a picture to the carrier network for use with call composer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterTelephonyCallback Unregister an existing TelephonyCallback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateAvailableNetworks Update availability of a list of networks in the current location. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | uploadCallComposerPicture Uploads a picture to the carrier network for use with call composer. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#uploadCallComposerPicture(java.nio.file.Path,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(pictureToUpload: https://developer.android.com/reference/kotlin/java/nio/file/Path.html#, contentType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#!, https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CallComposerException!>)` Uploads a picture to the carrier network for use with call composer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | uploadCallComposerPicture Uploads a picture to the carrier network for use with call composer. |
 
 | Properties ||
 |---|---|
@@ -537,7 +537,7 @@ Broadcast action sent when the availability of the system default network change
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback)`
+- registerDefaultNetworkCallback
 
 ### ACTION_CARRIER_SIGNAL_PCO_VALUE
 
@@ -672,7 +672,7 @@ static val ACTION_NETWORK_COUNTRY_CHANGED: String
 
 Broadcast intent action for network country code changes.
 
-The `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_NETWORK_COUNTRY:kotlin.String` extra indicates the country code of the current network returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso()`.
+The `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_NETWORK_COUNTRY:kotlin.String` extra indicates the country code of the current network returned by getNetworkCountryIso.
 
 There may be a delay of several minutes before reporting that no country is detected.
 
@@ -681,7 +681,7 @@ There may be a delay of several minutes before reporting that no country is dete
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_NETWORK_COUNTRY:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso()`
+- getNetworkCountryIso
 
 ### ACTION_PHONE_STATE_CHANGED
 
@@ -695,9 +695,9 @@ Broadcast intent action indicating that the call state on the device has changed
 
 The `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE:kotlin.String` extra indicates the new call state. If a receiving app has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_CALL_LOG:kotlin.String` permission, a second extra `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` provides the phone number for incoming and outgoing calls as a String.
 
-If the receiving app has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_CALL_LOG:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` permission, it will receive the broadcast twice; one with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` populated with the phone number, and another with it blank. Due to the nature of broadcasts, you cannot assume the order in which these broadcasts will arrive, however you are guaranteed to receive two in this case. Apps which are interested in the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` can ignore the broadcasts where `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` is not present in the extras (e.g. where `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasExtra(kotlin.String)` returns `false`).
+If the receiving app has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_CALL_LOG:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` permission, it will receive the broadcast twice; one with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` populated with the phone number, and another with it blank. Due to the nature of broadcasts, you cannot assume the order in which these broadcasts will arrive, however you are guaranteed to receive two in this case. Apps which are interested in the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` can ignore the broadcasts where `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String` is not present in the extras (e.g. where hasExtra returns `false`).
 
-This was a android.content.Context#sendStickyBroadcast broadcast in version 1.0, but it is no longer sticky. Instead, use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallState()` to synchronously query the current call state. 
+This was a android.content.Context#sendStickyBroadcast broadcast in version 1.0, but it is no longer sticky. Instead, use getCallState to synchronously query the current call state. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
  Value: "android.intent.action.PHONE_STATE"
@@ -706,7 +706,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE:kotlin.String`
 - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_INCOMING_NUMBER:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallState()`
+- getCallState
 
 ### ACTION_RESET_MOBILE_NETWORK_SETTINGS
 
@@ -734,7 +734,7 @@ static val ACTION_RESPOND_VIA_MESSAGE: String
 
 The Phone app sends this intent when a user opts to respond-via-message during an incoming call. By default, the device's default SMS app consumes this message and sends a text message to the caller. A third party app can also provide this functionality by consuming this Intent with a `https://developer.android.com/reference/kotlin/android/app/Service.html#` and sending the message using its own messaging system.
 
-The intent contains a URI (available from `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()`) describing the recipient, using either the `sms:`, `smsto:`, `mms:`, or `mmsto:` URI schema. Each of these URI schema carry the recipient information the same way: the path part of the URI contains the recipient's phone number or a comma-separated set of phone numbers if there are multiple recipients. For example, `smsto:2065551234`.
+The intent contains a URI (available from getData) describing the recipient, using either the `sms:`, `smsto:`, `mms:`, or `mmsto:` URI schema. Each of these URI schema carry the recipient information the same way: the path part of the URI contains the recipient's phone number or a comma-separated set of phone numbers if there are multiple recipients. For example, `smsto:2065551234`.
 
 The intent may also contain extras for the message text (in `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_TEXT:kotlin.String`) and a message subject (in `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_SUBJECT:kotlin.String`).
 
@@ -772,7 +772,7 @@ static val ACTION_SECRET_CODE: String
 
 Broadcast Action: A debug code has been entered in the dialer.
 
-This intent is broadcast by the system and OEM telephony apps may need to receive these broadcasts. And it requires the sender to be default dialer or has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
+This intent is broadcast by the system and OEM telephony apps may need to receive these broadcasts. And it requires the sender to be default dialer or has carrier privileges (see hasCarrierPrivileges).
 
 These "secret codes" are used to activate developer menus by dialing certain codes. And they are of the form `*#*#<code>#*#*`. The intent will have the data URI: `android_secret_code://<code>`. It is possible that a manifest receiver would be woken up even if it is not currently running.
 
@@ -839,7 +839,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED: String
 ```
 
-Broadcast Action: The subscription specific carrier identity has changed. A specific carrier ID returns the fine-grained carrier ID of the current subscription. It can represent the fact that a carrier may be in effect an aggregation of other carriers (ie in an MVNO type scenario) where each of these specific carriers which are used to make up the actual carrier service may have different carrier configurations. A specific carrier ID could also be used, for example, in a scenario where a carrier requires different carrier configuration for different service offering such as a prepaid plan. the specific carrier ID would be used for configuration purposes, but apps wishing to know about the carrier itself should use the regular carrier ID returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`.
+Broadcast Action: The subscription specific carrier identity has changed. A specific carrier ID returns the fine-grained carrier ID of the current subscription. It can represent the fact that a carrier may be in effect an aggregation of other carriers (ie in an MVNO type scenario) where each of these specific carriers which are used to make up the actual carrier service may have different carrier configurations. A specific carrier ID could also be used, for example, in a scenario where a carrier requires different carrier configuration for different service offering such as a prepaid plan. the specific carrier ID would be used for configuration purposes, but apps wishing to know about the carrier itself should use the regular carrier ID returned by getSimCarrierId.
 
 Similar like `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String`, this intent will be sent on the event of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` while its also possible to be sent without `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` when specific carrier ID changes while carrier ID remains the same. e.g, the same subscription switches to different IMSI could potentially change its specific carrier ID while carrier id remains the same.
 
@@ -847,8 +847,8 @@ Similar like `https://developer.android.com/reference/kotlin/android/telephony/T
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`
+- getSimSpecificCarrierId
+- getSimCarrierId
 
 ### ALLOWED_NETWORK_TYPES_REASON_CARRIER
 
@@ -978,7 +978,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val AUTHTYPE_GBA_BOOTSTRAP: Int
 ```
 
-Authentication type for GBA Bootstrap Challenge. Pass this authentication type into the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getIccAuthentication(kotlin.Int,%20kotlin.Int,%20kotlin.String)` API to perform a GBA Bootstrap challenge (BSF), with `data` (generated according to the procedure defined in 3GPP 33.220 Section 5.3.2 step.4) in base64 encoding. This method will return the Bootstrapping response in base64 encoding when ICC authentication is completed. Ref 3GPP 33.220 Section 5.3.2.
+Authentication type for GBA Bootstrap Challenge. Pass this authentication type into the getIccAuthentication API to perform a GBA Bootstrap challenge (BSF), with `data` (generated according to the procedure defined in 3GPP 33.220 Section 5.3.2 step.4) in base64 encoding. This method will return the Bootstrapping response in base64 encoding when ICC authentication is completed. Ref 3GPP 33.220 Section 5.3.2.
 
  Value: 132
 
@@ -990,7 +990,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val AUTHTYPE_GBA_NAF_KEY_EXTERNAL: Int
 ```
 
-Authentication type for GBA Network Application Functions (NAF) key External Challenge. Pass this authentication type into the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getIccAuthentication(kotlin.Int,%20kotlin.Int,%20kotlin.String)` API to perform a GBA Network Applications Functions (NAF) key External challenge using the NAF_ID parameter as the `data` in base64 encoding. This method will return the Ks_Ext_Naf key in base64 encoding when ICC authentication is completed. Ref 3GPP 33.220 Section 5.3.2.
+Authentication type for GBA Network Application Functions (NAF) key External Challenge. Pass this authentication type into the getIccAuthentication API to perform a GBA Network Applications Functions (NAF) key External challenge using the NAF_ID parameter as the `data` in base64 encoding. This method will return the Ks_Ext_Naf key in base64 encoding when ICC authentication is completed. Ref 3GPP 33.220 Section 5.3.2.
 
  Value: 133
 
@@ -1074,7 +1074,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val CAPABILITY_SLICING_CONFIG_SUPPORTED: String
 ```
 
-Indicates whether `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSlicingConfiguration(java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` is supported. See comments on respective methods for more information.
+Indicates whether getNetworkSlicingConfiguration is supported. See comments on respective methods for more information.
 
  Value: "CAPABILITY_SLICING_CONFIG_SUPPORTED"
 
@@ -1314,7 +1314,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DATA_ENABLED_REASON_OVERRIDE: Int
 ```
 
-To indicate data was enabled or disabled due to mobile data policy overrides. Note that this is not a valid reason for `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setDataEnabledForReason(kotlin.Int,%20kotlin.Boolean)` and is only used to indicate that data enabled was changed due to an override.
+To indicate data was enabled or disabled due to mobile data policy overrides. Note that this is not a valid reason for setDataEnabledForReason and is only used to indicate that data enabled was changed due to an override.
 
  Value: 4
 
@@ -1350,7 +1350,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DATA_ENABLED_REASON_UNKNOWN: Int
 ```
 
-To indicate that data was enabled or disabled due to an unknown reason. Note that this is not a valid reason for `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setDataEnabledForReason(kotlin.Int,%20kotlin.Boolean)` and is only used to indicate that data enabled was changed.
+To indicate that data was enabled or disabled due to an unknown reason. Note that this is not a valid reason for setDataEnabledForReason and is only used to indicate that data enabled was changed.
 
  Value: -1
 
@@ -1410,7 +1410,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val DEFAULT_PORT_INDEX: Int
 ```
 
-Default port index for a UICC. On physical SIM cards the only available port is 0. See `https://developer.android.com/reference/kotlin/android/telephony/UiccPortInfo` for more information on ports. See `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isSimPortAvailable(kotlin.Int)` for information on how portIndex is used on eUICCs.
+Default port index for a UICC. On physical SIM cards the only available port is 0. See UiccPortInfo for more information on ports. See isSimPortAvailable for information on how portIndex is used on eUICCs.
 
  Value: 0
 
@@ -1469,7 +1469,7 @@ static val EVENT_DISPLAY_EMERGENCY_MESSAGE: String
 
 Event reported from the Telephony stack to indicate that the `https://developer.android.com/reference/kotlin/android/telecom/Connection.html#` is not able to find any network and likely will not get connected. Upon receiving this event, the dialer app should start the app included in the extras bundle of this event if satellite is provisioned.
 
-The dialer app receives this event via `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback.html#onConnectionEvent(android.telecom.Call,%20kotlin.String,%20android.os.Bundle)`.
+The dialer app receives this event via onConnectionEvent.
 
 The `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` parameter is guaranteed to include the following extras if the below conditions are met:
 
@@ -1490,7 +1490,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ACTIVE_SIM_SUPPORTED_COUNT: String
 ```
 
-The number of active SIM supported by current multi-SIM config. It's not related to how many SIM/subscriptions are currently active. Same value will be returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getActiveModemCount()`. For single SIM mode, it's 1. For DSDS or DSDA mode, it's 2. For triple-SIM mode, it's 3. Extra of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_MULTI_SIM_CONFIG_CHANGED:kotlin.String`. type: integer
+The number of active SIM supported by current multi-SIM config. It's not related to how many SIM/subscriptions are currently active. Same value will be returned by getActiveModemCount. For single SIM mode, it's 1. For DSDS or DSDA mode, it's 2. For triple-SIM mode, it's 3. Extra of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_MULTI_SIM_CONFIG_CHANGED:kotlin.String`. type: integer
 
  Value: "android.telephony.extra.ACTIVE_SIM_SUPPORTED_COUNT"
 
@@ -1502,7 +1502,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_APN_PROTOCOL: String
 ```
 
-An integer extra containing the protocol of the apn connection. Sent with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_PCO_VALUE:kotlin.String` broadcast. See the `PROTOCOL_*` constants in `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting` for a list of possible values.
+An integer extra containing the protocol of the apn connection. Sent with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_PCO_VALUE:kotlin.String` broadcast. See the `PROTOCOL_*` constants in ApnSetting for a list of possible values.
 
  Value: "android.telephony.extra.APN_PROTOCOL"
 
@@ -1514,7 +1514,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_APN_TYPE: String
 ```
 
-An integer extra containing the APN type. Sent with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REQUEST_NETWORK_FAILED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REDIRECTED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_PCO_VALUE:kotlin.String` broadcasts. See the `TYPE_` constants in `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting` for a list of possible values.
+An integer extra containing the APN type. Sent with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REQUEST_NETWORK_FAILED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REDIRECTED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_PCO_VALUE:kotlin.String` broadcasts. See the `TYPE_` constants in ApnSetting for a list of possible values.
 
  Value: "android.telephony.extra.APN_TYPE"
 
@@ -1538,7 +1538,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CARRIER_ID: String
 ```
 
-An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`.
+An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated carrier id returned by getSimCarrierId.
 
 Will be `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNKNOWN_CARRIER_ID:kotlin.Int` if the subscription is unavailable or the carrier cannot be identified.
 
@@ -1558,7 +1558,7 @@ An string extra used with `https://developer.android.com/reference/kotlin/androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierIdName()`
+- getSimCarrierIdName
 
 ### EXTRA_DATA_FAIL_CAUSE
 
@@ -1568,7 +1568,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DATA_FAIL_CAUSE: String
 ```
 
-An integer extra containing the data fail cause. Sent with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REQUEST_NETWORK_FAILED:kotlin.String`. See `https://developer.android.com/reference/kotlin/android/telephony/DataFailCause` for a list of possible values.
+An integer extra containing the data fail cause. Sent with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CARRIER_SIGNAL_REQUEST_NETWORK_FAILED:kotlin.String`. See DataFailCause for a list of possible values.
 
  Value: "android.telephony.extra.DATA_FAIL_CAUSE"
 
@@ -1646,7 +1646,7 @@ This extra is only populated for receivers of the `https://developer.android.com
 
 For incoming calls, the phone number is only guaranteed to be populated when the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE:kotlin.String` changes from `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE_IDLE:kotlin.String` to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE_RINGING:kotlin.String`. If the incoming caller is from an unknown number, the extra will be populated with an empty string. For outgoing calls, the phone number is only guaranteed to be populated when the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE:kotlin.String` changes from `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE_IDLE:kotlin.String` to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_STATE_OFFHOOK:kotlin.String`.
 
-Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)`.
+Retrieve with getStringExtra.
 
 <br />
 
@@ -1674,7 +1674,7 @@ static val EXTRA_LAST_KNOWN_NETWORK_COUNTRY: String
 
 The extra used with an `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_NETWORK_COUNTRY_CHANGED:kotlin.String` to specify the last known the country code in ISO-3166-1 alpha-2 format. This might be an empty string when the country code was never available. The last known country code persists across reboot.
 
-Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)`.
+Retrieve with getStringExtra.
 
  Value: "android.telephony.extra.LAST_KNOWN_NETWORK_COUNTRY"
 
@@ -1698,9 +1698,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NETWORK_COUNTRY: String
 ```
 
-The extra used with an `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_NETWORK_COUNTRY_CHANGED:kotlin.String` to specify the the country code in ISO-3166-1 alpha-2 format. This is the same country code returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso()`. This might be an empty string when the country code is not available.
+The extra used with an `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_NETWORK_COUNTRY_CHANGED:kotlin.String` to specify the the country code in ISO-3166-1 alpha-2 format. This is the same country code returned by getNetworkCountryIso. This might be an empty string when the country code is not available.
 
-Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)`.
+Retrieve with getStringExtra.
 
  Value: "android.telephony.extra.NETWORK_COUNTRY"
 
@@ -1750,7 +1750,7 @@ static val EXTRA_PHONE_ACCOUNT_HANDLE: String
 
 The extra used with an `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_CONFIGURE_VOICEMAIL:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SHOW_VOICEMAIL_NOTIFICATION:kotlin.String` `Intent` to specify the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` the configuration or notification is for.
 
-Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getParcelableExtra(kotlin.String)`.
+Retrieve with getParcelableExtra.
 
  Value: "android.telephony.extra.PHONE_ACCOUNT_HANDLE"
 
@@ -1774,7 +1774,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SPECIFIC_CARRIER_ID: String
 ```
 
-An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()`. Note, its possible specific carrier id changes while `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` remains the same e.g, when subscription switch to different IMSIs.
+An int extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier id returned by getSimSpecificCarrierId. Note, its possible specific carrier id changes while `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_CARRIER_IDENTITY_CHANGED:kotlin.String` remains the same e.g, when subscription switch to different IMSIs.
 
 Will be `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNKNOWN_CARRIER_ID:kotlin.Int` if the subscription is unavailable or the carrier cannot be identified.
 
@@ -1788,7 +1788,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SPECIFIC_CARRIER_NAME: String
 ```
 
-An string extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier name returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierIdName()`.
+An string extra used with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED:kotlin.String` which indicates the updated specific carrier name returned by getSimSpecificCarrierIdName.
 
 it's a user-facing name of the specific carrier id `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#EXTRA_SPECIFIC_CARRIER_ID:kotlin.String` e.g, Tracfone-AT\&T
 
@@ -1804,7 +1804,7 @@ static val EXTRA_STATE: String
 
 The lookup key used with the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ACTION_PHONE_STATE_CHANGED:kotlin.String` broadcast for a String containing the new call state.
 
-Retrieve with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)`.
+Retrieve with getStringExtra.
 
  Value: "state"
 
@@ -1882,7 +1882,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_HIDE_VOICEMAIL_SETTINGS_MENU: String
 ```
 
-A boolean meta-data value indicating whether the voicemail settings should be hidden in the call settings page launched by `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#ACTION_SHOW_CALL_SETTINGS:kotlin.String`. Dialer implementations (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) which would also like to manage voicemail settings should set this meta-data to `true` in the manifest registration of their application.
+A boolean meta-data value indicating whether the voicemail settings should be hidden in the call settings page launched by `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#ACTION_SHOW_CALL_SETTINGS:kotlin.String`. Dialer implementations (see getDefaultDialerPackage) which would also like to manage voicemail settings should set this meta-data to `true` in the manifest registration of their application.
 
  Value: "android.telephony.HIDE_VOICEMAIL_SETTINGS_MENU"
 
@@ -2575,7 +2575,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_CARRIER_ERROR: Int
 ```
 
-Purchase premium capability failed because the carrier app did not indicate success. Subsequent attempts will be throttled for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager` and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
+Purchase premium capability failed because the carrier app did not indicate success. Subsequent attempts will be throttled for the amount of time specified by CarrierConfigManager and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
 
  Value: 8
 
@@ -2587,7 +2587,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_ENTITLEMENT_CHECK_FAILED: Int
 ```
 
-Purchase premium capability failed because the entitlement check failed. Subsequent attempts will be throttled for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager` and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`. Throttling will be reevaluated when the network is no longer congested.
+Purchase premium capability failed because the entitlement check failed. Subsequent attempts will be throttled for the amount of time specified by CarrierConfigManager and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`. Throttling will be reevaluated when the network is no longer congested.
 
  Value: 13
 
@@ -2623,7 +2623,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_NOT_DEFAULT_DATA_SUBSCRIPTION: Int
 ```
 
-Purchase premium capability failed because the request was not made on the default data subscription, indicated by `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()`. Subsequent attempts will return the same error until the request is made on the default data subscription.
+Purchase premium capability failed because the request was not made on the default data subscription, indicated by getDefaultDataSubscriptionId. Subsequent attempts will return the same error until the request is made on the default data subscription.
 
  Value: 14
 
@@ -2683,7 +2683,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED: Int
 ```
 
-Purchase premium capability failed because the request is throttled. If purchasing premium capabilities is throttled, it will be for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager`. If displaying the performance boost notification is throttled, it will be for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager`. We will show the performance boost notification to the user up to the daily and monthly maximum number of times specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT:kotlin.String`. Subsequent attempts will return the same error until the request is no longer throttled or throttling conditions change.
+Purchase premium capability failed because the request is throttled. If purchasing premium capabilities is throttled, it will be for the amount of time specified by CarrierConfigManager. If displaying the performance boost notification is throttled, it will be for the amount of time specified by CarrierConfigManager. We will show the performance boost notification to the user up to the daily and monthly maximum number of times specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT:kotlin.String` and `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_MAXIMUM_MONTHLY_NOTIFICATION_COUNT_INT:kotlin.String`. Subsequent attempts will return the same error until the request is no longer throttled or throttling conditions change.
 
  Value: 2
 
@@ -2695,7 +2695,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_TIMEOUT: Int
 ```
 
-Purchase premium capability failed because we did not receive a response from the user for the performance boost notification within the time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NOTIFICATION_DISPLAY_TIMEOUT_MILLIS_LONG:kotlin.String`. The performance boost notification will be automatically dismissed and subsequent attempts will be throttled for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager` and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
+Purchase premium capability failed because we did not receive a response from the user for the performance boost notification within the time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_PREMIUM_CAPABILITY_NOTIFICATION_DISPLAY_TIMEOUT_MILLIS_LONG:kotlin.String`. The performance boost notification will be automatically dismissed and subsequent attempts will be throttled for the amount of time specified by CarrierConfigManager and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
 
  Value: 9
 
@@ -2707,7 +2707,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_CANCELED: Int
 ```
 
-Purchase premium capability failed because the user canceled the operation. Subsequent attempts will be throttled for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager` and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
+Purchase premium capability failed because the user canceled the operation. Subsequent attempts will be throttled for the amount of time specified by CarrierConfigManager and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
 
  Value: 6
 
@@ -2719,7 +2719,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLED: Int
 ```
 
-Purchase premium capability failed because the user disabled the feature. Subsequent attempts will be throttled for the amount of time specified by `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager` and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
+Purchase premium capability failed because the user disabled the feature. Subsequent attempts will be throttled for the amount of time specified by CarrierConfigManager and return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int`.
 
  Value: 16
 
@@ -2959,7 +2959,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val UNINITIALIZED_CARD_ID: Int
 ```
 
-A UICC card identifier used before the UICC card is loaded. See `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCardIdForDefaultEuicc()` and `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getCardId()`.
+A UICC card identifier used before the UICC card is loaded. See getCardIdForDefaultEuicc and getCardId.
 
 Note that once the UICC card is loaded, the card ID may become `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNSUPPORTED_CARD_ID:kotlin.Int`.
 
@@ -2973,7 +2973,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val UNKNOWN_CARRIER_ID: Int
 ```
 
-An unknown carrier id. It could either be subscription unavailable or the subscription carrier cannot be recognized. Unrecognized carriers here means `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimOperator()` cannot be identified.
+An unknown carrier id. It could either be subscription unavailable or the subscription carrier cannot be recognized. Unrecognized carriers here means getSimOperator cannot be identified.
 
  Value: -1
 
@@ -2985,7 +2985,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val UNSUPPORTED_CARD_ID: Int
 ```
 
-A UICC card identifier used if the device does not support the operation. For example, `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCardIdForDefaultEuicc()` returns this value if the device has no eUICC, or the eUICC cannot be read.
+A UICC card identifier used if the device does not support the operation. For example, getCardIdForDefaultEuicc returns this value if the device has no eUICC, or the eUICC cannot be read.
 
  Value: -1
 
@@ -3143,7 +3143,7 @@ static val USSD_ERROR_NOT_ALLOWED: Int
 
 Failure code returned when a USSD request has failed to execute because the calling app is not allowed to send USSD requests.
 
-Returned via `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.UssdResponseCallback#onReceiveUssdResponseFailed(android.telephony.TelephonyManager,%20kotlin.String,%20kotlin.Int)`.
+Returned via onReceiveUssdResponseFailed.
 
  Value: -3
 
@@ -3157,7 +3157,7 @@ static val USSD_ERROR_SERVICE_UNAVAIL: Int
 
 Failure code returned when a USSD request has failed to execute because the Telephony service is unavailable.
 
-Returned via `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.UssdResponseCallback#onReceiveUssdResponseFailed(android.telephony.TelephonyManager,%20kotlin.String,%20kotlin.Int)`.
+Returned via onReceiveUssdResponseFailed.
 
  Value: -2
 
@@ -3171,7 +3171,7 @@ static val USSD_RETURN_FAILURE: Int
 
 Failed code returned when the mobile network has failed to complete a USSD request.
 
-Returned via `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.UssdResponseCallback#onReceiveUssdResponseFailed(android.telephony.TelephonyManager,%20kotlin.String,%20kotlin.Int)`.
+Returned via onReceiveUssdResponseFailed.
 
  Value: -1
 
@@ -3210,7 +3210,7 @@ open fun canChangeDtmfToneLength(): Boolean
 ```
 
 Whether the device supports configuring the DTMF tone length. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3228,13 +3228,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun clearSignalStrengthUpdateRequest(request: SignalStrengthUpdateRequest): Unit
 ```
 
-Clear a `https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest` from the system.
+Clear a SignalStrengthUpdateRequest from the system.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges).
 
 If the given request was not set before, this operation is a no-op. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -3246,7 +3246,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)`
+- setSignalStrengthUpdateRequest
 
 ### createForPhoneAccountHandle
 
@@ -3284,11 +3284,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun doesSwitchMultiSimConfigTriggerReboot(): Boolean
 ```
 
-Get whether making changes to modem configurations by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#switchMultiSimConfig(kotlin.Int)` will trigger device reboot. The modem configuration change refers to switching from single SIM configuration to DSDS or the other way around.
+Get whether making changes to modem configurations by switchMultiSimConfig will trigger device reboot. The modem configuration change refers to switching from single SIM configuration to DSDS or the other way around.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3325,21 +3325,21 @@ open fun getAllCellInfo(): MutableList<CellInfo!>!
 
 Requests all available cell information from all radios on the device including the camped/registered, serving, and neighboring cells.
 
-The response can include one or more `https://developer.android.com/reference/kotlin/android/telephony/CellInfoGsm`, `https://developer.android.com/reference/kotlin/android/telephony/CellInfoCdma`, `https://developer.android.com/reference/kotlin/android/telephony/CellInfoTdscdma`, `https://developer.android.com/reference/kotlin/android/telephony/CellInfoLte`, and `https://developer.android.com/reference/kotlin/android/telephony/CellInfoWcdma` objects, in any combination. It is typical to see instances of one or more of any these in the list. In addition, zero or more of the returned objects may be considered registered; that is, their `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#isRegistered()` methods may return true, indicating that the cell is being used or would be used for signaling communication if necessary.
+The response can include one or more CellInfoGsm, CellInfoCdma, CellInfoTdscdma, CellInfoLte, and CellInfoWcdma objects, in any combination. It is typical to see instances of one or more of any these in the list. In addition, zero or more of the returned objects may be considered registered; that is, their isRegistered methods may return true, indicating that the cell is being used or would be used for signaling communication if necessary.
 
-Beginning with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, if this API results in a change of the cached CellInfo, that change will be reported via `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener#onCellInfoChanged(kotlin.collections.MutableList)`.
+Beginning with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, if this API results in a change of the cached CellInfo, that change will be reported via onCellInfoChanged.
 
-Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or higher will no longer trigger a refresh of the cached CellInfo by invoking this API. Instead, those apps will receive the latest cached results, which may not be current. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or higher that wish to request updated CellInfo should call `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#requestCellInfoUpdate(java.util.concurrent.Executor,%20android.telephony.TelephonyManager.CellInfoCallback)`; however, in all cases, updates will be rate-limited and are not guaranteed. To determine the recency of CellInfo data, callers should check `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#getTimeStamp()`.
+Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or higher will no longer trigger a refresh of the cached CellInfo by invoking this API. Instead, those apps will receive the latest cached results, which may not be current. Apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` or higher that wish to request updated CellInfo should call requestCellInfoUpdate; however, in all cases, updates will be rate-limited and are not guaranteed. To determine the recency of CellInfo data, callers should check getTimeStamp.
 
 This method returns valid data for devices with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String`. In cases where only partial information is available for a particular CellInfo entry, unavailable fields will be reported as `https://developer.android.com/reference/kotlin/android/telephony/CellInfo#UNAVAILABLE:kotlin.Int`. All reported cells will include at least a valid set of technology-specific identification info and a power level measurement.
 
-This method is preferred over using `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCellLocation()`. 
+This method is preferred over using getCellLocation. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/CellInfo!>!` | List of `https://developer.android.com/reference/kotlin/android/telephony/CellInfo`; null if cell information is unavailable. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/CellInfo!>!` | List of CellInfo; null if cell information is unavailable. |
 
 | Exceptions ||
 |---|---|
@@ -3353,11 +3353,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getAllowedNetworkTypesForReason(reason: Int): Long
 ```
 
-Get the allowed network types for certain reason. `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getAllowedNetworkTypesForReason(kotlin.Int)` returns allowed network type for a specific reason.
+Get the allowed network types for certain reason. getAllowedNetworkTypesForReason returns allowed network type for a specific reason.
 
-Requires permission: android.Manifest.READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires permission: android.Manifest.READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the TelephonyManager#CAPABILITY_USES_ALLOWED_NETWORK_TYPES_BITMASK feature which can be detected using `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isRadioInterfaceCapabilitySupported(kotlin.String)`.
+Requires the TelephonyManager#CAPABILITY_USES_ALLOWED_NETWORK_TYPES_BITMASK feature which can be detected using isRadioInterfaceCapabilitySupported.
 
 | Parameters ||
 |---|---|
@@ -3385,9 +3385,9 @@ open fun getCallComposerStatus(): Int
 
 Get the user-set status for enriched calling with call composer.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()` 
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3407,13 +3407,13 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 open fun getCallState(): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCallStateForSubscription()` to retrieve the call state for a specific telephony subscription (which allows carrier privileged apps), `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener` for real-time call state updates, or `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#isInCall()`, which supplies an aggregate "in call" state for the entire device.*
+**Deprecated:** *Use getCallStateForSubscription to retrieve the call state for a specific telephony subscription (which allows carrier privileged apps), `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener` for real-time call state updates, or isInCall, which supplies an aggregate "in call" state for the entire device.*
 
 Returns the state of all calls on the device.
 
 This method considers not only calls in the Telephony stack, but also calls via other `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService.html#` implementations.
 
-Note: The call state returned via this method may differ from what is reported by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CallStateListener#onCallStateChanged(kotlin.Int)`, as that callback only considers Telephony (mobile) calls.
+Note: The call state returned via this method may differ from what is reported by onCallStateChanged, as that callback only considers Telephony (mobile) calls.
 
 Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` for applications targeting API level 31+.
 
@@ -3431,9 +3431,9 @@ open fun getCallStateForSubscription(): Int
 
 Retrieve the call state for a specific subscription that was specified when this TelephonyManager instance was created.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling application has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling application has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3445,8 +3445,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForPhoneAccountHandle(android.telecom.PhoneAccountHandle)`
+- createForSubscriptionId
+- createForPhoneAccountHandle
 
 ### getCardIdForDefaultEuicc
 
@@ -3459,7 +3459,7 @@ open fun getCardIdForDefaultEuicc(): Int
 Get the card ID of the default eUICC card. If the eUICCs have not yet been loaded, returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNINITIALIZED_CARD_ID:kotlin.Int`. If there is no eUICC or the device does not support card IDs for eUICCs, returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UNSUPPORTED_CARD_ID:kotlin.Int`.
 
 The card ID is a unique identifier associated with a UICC or eUICC card. Card IDs are unique to a device, and always refer to the same UICC or eUICC card unless the device goes through a factory reset. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_EUICC:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3481,10 +3481,10 @@ Returns the carrier config of the subscription ID pinned to the TelephonyManager
 
 This method may take several seconds to complete, so it should only be called from a worker thread.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 This method may take several seconds to complete, so it should only be called from a worker thread. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -3492,9 +3492,9 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForPhoneAccountHandle(android.telecom.PhoneAccountHandle)`
+- getConfigForSubId
+- createForSubscriptionId
+- createForPhoneAccountHandle
 
 ### getCarrierIdFromSimMccMnc
 
@@ -3504,8 +3504,8 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getCarrierIdFromSimMccMnc(): Int
 ```
 
-Returns carrier id based on sim MCCMNC (returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimOperator()`) only. This is used for fallback when configurations/logic for exact carrier id `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()` are not found. Android carrier id table [here](https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/master/assets/latest_carrier_id/carrier_list.textpb) can be updated out-of-band, its possible a MVNO (Mobile Virtual Network Operator) carrier was not fully recognized and assigned to its MNO (Mobile Network Operator) carrier id by default. After carrier id table update, a new carrier id was assigned. If apps don't take the update with the new id, it might be helpful to always fallback by using carrier id based on MCCMNC if there is no match. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Returns carrier id based on sim MCCMNC (returned by getSimOperator) only. This is used for fallback when configurations/logic for exact carrier id getSimCarrierId are not found. Android carrier id table [here](https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/master/assets/latest_carrier_id/carrier_list.textpb) can be updated out-of-band, its possible a MVNO (Mobile Virtual Network Operator) carrier was not fully recognized and assigned to its MNO (Mobile Network Operator) carrier id by default. After carrier id table update, a new carrier id was assigned. If apps don't take the update with the new id, it might be helpful to always fallback by using carrier id based on MCCMNC if there is no match. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3536,7 +3536,7 @@ To fetch the carrier restriction status of the device the calling application ne
 - return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CARRIER_RESTRICTION_STATUS_UNKNOWN:kotlin.Int` if the device locking state is unavailable or radio does not supports the feature
 
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Parameters ||
@@ -3558,7 +3558,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun getCellLocation(): CellLocation!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getAllCellInfo()` instead, which returns a superset of this API.*
+**Deprecated:** *use getAllCellInfo instead, which returns a superset of this API.*
 
 Returns the current location of the device.
 
@@ -3566,7 +3566,7 @@ If there is only one radio in the device and that radio has an LTE connection, t
 
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3585,7 +3585,7 @@ open fun getCurrentTtyMode(): Int
 ```
 
 Returns the current TTY mode of the device. For TTY to be on the user must enable it in settings and have a wired headset plugged in. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature. 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 
 | Return ||
@@ -3601,7 +3601,7 @@ open fun getDataActivity(): Int
 ```
 
 Returns a constant indicating the type of activity on a data connection (cellular). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -3623,11 +3623,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getDataNetworkType(): Int
 ```
 
-Returns a constant indicating the radio technology (network type) currently in use on the device for data transmission. If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveDataSubscriptionId()`. Note: Before `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveDataSubscriptionId()` was introduced in API level 30, it was applied to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()` which may be different now from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getActiveDataSubscriptionId()`, e.g. when opportunistic network is providing cellular internet connection to the user.
+Returns a constant indicating the radio technology (network type) currently in use on the device for data transmission. If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getActiveDataSubscriptionId. Note: Before getActiveDataSubscriptionId was introduced in API level 30, it was applied to getDefaultDataSubscriptionId which may be different now from getActiveDataSubscriptionId, e.g. when opportunistic network is providing cellular internet connection to the user.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3666,7 +3666,7 @@ open fun getDataState(): Int
 ```
 
 Returns a constant indicating the current data connection state (cellular). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -3697,9 +3697,9 @@ Returns the unique device ID, for example, the IMEI for GSM and the MEID or ESN 
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -3725,9 +3725,9 @@ Returns the unique device ID of a subscription, for example, the IMEI for GSM an
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -3753,7 +3753,7 @@ Returns the software version number for the device, for example, the IMEI/SV for
 
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -3769,16 +3769,16 @@ open fun getEmergencyNumberList(): MutableMap<Int!, MutableList<EmergencyNumber
 
 Get the emergency number list based on current locale, sim, default, modem and network.
 
-In each returned list, the emergency number `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber` coming from higher priority sources will be located at the smaller index; the priority order of sources are: `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_NETWORK_SIGNALING:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_SIM:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DATABASE:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DEFAULT:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_MODEM_CONFIG:kotlin.Int`
+In each returned list, the emergency number EmergencyNumber coming from higher priority sources will be located at the smaller index; the priority order of sources are: `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_NETWORK_SIGNALING:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_SIM:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DATABASE:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DEFAULT:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_MODEM_CONFIG:kotlin.Int`
 
 The subscriptions which the returned list would be based on, are all the active subscriptions, no matter which subscription could be used to create TelephonyManager.
 
-Requires permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber!>!>` | Map including the keys as the active subscription IDs (Note: if there is no active subscription, the key is `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`) and the value as the list of `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber`; empty Map if this information is not available; or throw a SecurityException if the caller does not have the permission. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber!>!>` | Map including the keys as the active subscription IDs (Note: if there is no active subscription, the key is getDefaultSubscriptionId) and the value as the list of EmergencyNumber; empty Map if this information is not available; or throw a SecurityException if the caller does not have the permission. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3794,11 +3794,11 @@ open fun getEmergencyNumberList(categories: Int): MutableMap<Int!, MutableList
 
 Get the per-category emergency number list based on current locale, sim, default, modem and network.
 
-In each returned list, the emergency number `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber` coming from higher priority sources will be located at the smaller index; the priority order of sources are: `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_NETWORK_SIGNALING:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_SIM:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DATABASE:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DEFAULT:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_MODEM_CONFIG:kotlin.Int`
+In each returned list, the emergency number EmergencyNumber coming from higher priority sources will be located at the smaller index; the priority order of sources are: `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_NETWORK_SIGNALING:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_SIM:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DATABASE:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_DEFAULT:kotlin.Int` \> `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber#EMERGENCY_NUMBER_SOURCE_MODEM_CONFIG:kotlin.Int`
 
 The subscriptions which the returned list would be based on, are all the active subscriptions, no matter which subscription could be used to create TelephonyManager.
 
-Requires permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`
 
 | Parameters ||
@@ -3807,7 +3807,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber!>!>` | Map including the keys as the active subscription IDs (Note: if there is no active subscription, the key is `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`) and the value as the list of `https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber`; empty Map if this information is not available; or throw a SecurityException if the caller does not have the permission. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telephony/emergency/EmergencyNumber!>!>` | Map including the keys as the active subscription IDs (Note: if there is no active subscription, the key is getDefaultSubscriptionId) and the value as the list of EmergencyNumber; empty Map if this information is not available; or throw a SecurityException if the caller does not have the permission. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3824,9 +3824,9 @@ open fun getEquivalentHomePlmns(): MutableList<String!>
 
 Returns a list of the equivalent home PLMNs (EF_EHPLMN) from the USIM app.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3849,9 +3849,9 @@ open fun getForbiddenPlmns(): Array<String!>!
 
 Returns an array of Forbidden PLMNs from the USIM App Returns null if the query fails.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -3871,9 +3871,9 @@ open fun getGroupIdLevel1(): String!
 
 Returns the Group Identifier Level1 for a GSM phone. Return null if it is unavailable.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -3895,12 +3895,12 @@ Returns the response of authentication for the default subscription. Returns nul
 
 Requires one of the following permissions:
 
-- the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
+- the calling app has carrier privileges (see hasCarrierPrivileges).
 - the calling app has been granted the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER:kotlin.String` permission.
 - the calling app has been granted the android.Manifest.permission#USE_ICC_AUTH permission.
 
 The use of android.Manifest.permission#READ_PRIVILEGED_PHONE_STATE is no longer supported. Use android.Manifest.permission#USE_ICC_AUTH instead. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -3925,7 +3925,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getImei(): String!
 ```
 
-Returns the IMEI (International Mobile Equipment Identity). Return null if IMEI is not available. See `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getImei(kotlin.Int)` for details on the required permissions and behavior when the caller does not hold sufficient permissions. 
+Returns the IMEI (International Mobile Equipment Identity). Return null if IMEI is not available. See getImei for details on the required permissions and behavior when the caller does not hold sufficient permissions. 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 
 ### getImei
@@ -3941,9 +3941,9 @@ Returns the IMEI (International Mobile Equipment Identity). Return null if IMEI 
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
 - If the calling app has been granted the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER:kotlin.String` permission.
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
@@ -3967,15 +3967,15 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 open fun getLine1Number(): String!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getPhoneNumber(kotlin.Int)` instead.*
+**Deprecated:** *use getPhoneNumber instead.*
 
 Returns the phone number string for line 1, for example, the MSISDN for a GSM phone for a particular subscription. Return null if it is unavailable.
 
 The default SMS app can also use this.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_SMS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_NUMBERS:kotlin.String`, that the caller is the default SMS app, or that the caller has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) for any API level. `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` for apps targeting SDK API level 29 and below. 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_SMS:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_NUMBERS:kotlin.String`, that the caller is the default SMS app, or that the caller has carrier privileges (see hasCarrierPrivileges) for any API level. `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` for apps targeting SDK API level 29 and below. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_SMS:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_NUMBERS:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -3991,9 +3991,9 @@ open fun getManualNetworkSelectionPlmn(): String
 
 Get the PLMN chosen for Manual Network Selection if active. Return empty string if in automatic selection.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4015,7 +4015,7 @@ open fun getManufacturerCode(): String?
 **Deprecated:** *Legacy CDMA is unsupported.*
 
 Returns the Manufacturer Code from the MEID. Return null if Manufacturer Code is not available. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4033,7 +4033,7 @@ open fun getManufacturerCode(slotIndex: Int): String?
 **Deprecated:** *Legacy CDMA is unsupported.*
 
 Returns the Manufacturer Code from the MEID. Return null if Manufacturer Code is not available. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4051,7 +4051,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun getMaximumCallComposerPictureSize(): Long
 ```
 
-Indicates the maximum size of the call composure picture. Pictures sent via `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#uploadCallComposerPicture(java.io.InputStream,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#uploadCallComposerPicture(java.nio.file.Path,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` must not exceed this size, or an error will be returned via the callback in those methods. 
+Indicates the maximum size of the call composure picture. Pictures sent via uploadCallComposerPicture or uploadCallComposerPicture must not exceed this size, or an error will be returned via the callback in those methods. 
 Value is a non-negative number of bytes.
 
 | Return ||
@@ -4074,9 +4074,9 @@ Returns the MEID (Mobile Equipment Identifier). Return null if MEID is not avail
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -4086,7 +4086,7 @@ If the calling app does not meet one of these requirements then this method will
 
 . 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4108,9 +4108,9 @@ Returns the MEID (Mobile Equipment Identifier). Return null if MEID is not avail
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -4119,7 +4119,7 @@ If the calling app does not meet one of these requirements then this method will
 
 . 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CDMA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4138,7 +4138,7 @@ open fun getMmsUAProfUrl(): String!
 ```
 
 Returns the MMS user agent profile URL. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4153,7 +4153,7 @@ open fun getMmsUserAgent(): String!
 ```
 
 Returns the MMS user agent. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_MESSAGING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4172,9 +4172,9 @@ Returns the Network Access Identifier (NAI). Return null if NAI is not available
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges).
+- If the calling app is the default SMS role holder (see isRoleHeld).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -4183,7 +4183,7 @@ If the calling app does not meet one of these requirements then this method will
 
 . 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4200,7 +4200,7 @@ open fun getNetworkCountryIso(): String!
 Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available.
 
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4218,8 +4218,8 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getNetworkCountryIso(slotIndex: Int): String
 ```
 
-Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available. This is same as `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkCountryIso()` but allowing specifying the SIM slot index. This is used for accessing network country info from the SIM slot that does not have SIM inserted. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Returns the ISO-3166-1 alpha-2 country code equivalent of the MCC (Mobile Country Code) of the current registered operator or the cell nearby, if available. This is same as getNetworkCountryIso but allowing specifying the SIM slot index. This is used for accessing network country info from the SIM slot that does not have SIM inserted. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4243,7 +4243,7 @@ open fun getNetworkOperator(): String!
 ```
 
 Returns the numeric name (MCC+MNC) of current registered operator. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ### getNetworkOperatorName
 
@@ -4254,7 +4254,7 @@ open fun getNetworkOperatorName(): String!
 ```
 
 Returns the alphabetic name of current registered operator. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ### getNetworkSelectionMode
 
@@ -4266,11 +4266,11 @@ open fun getNetworkSelectionMode(): Int
 
 Get the network selection mode.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4294,17 +4294,17 @@ open fun getNetworkSlicingConfiguration(
 Request to get the current slicing configuration including URSP rules and NSSAIs (configured, allowed and rejected). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
+- If the calling app has carrier privileges (see hasCarrierPrivileges).
 
 This will be invalid if the device does not support android.telephony.TelephonyManager#CAPABILITY_SLICING_CONFIG_SUPPORTED. 
-Requires the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CAPABILITY_SLICING_CONFIG_SUPPORTED:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isRadioInterfaceCapabilitySupported(kotlin.String)`. 
+Requires the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CAPABILITY_SLICING_CONFIG_SUPPORTED:kotlin.String` feature which can be detected using isRadioInterfaceCapabilitySupported. 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 
 <br />
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [NetworkSlicingConfig](../android.telephony.data/NetworkSlicingConfig.md)!, [TelephonyManager.NetworkSlicingException](../android/telephony/TelephonyManager.NetworkSlicingException.md)!\>: a callback to receive the current slicing configuration. This value cannot be `null`. |
 
 | Exceptions ||
@@ -4319,13 +4319,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getNetworkSpecifier(): String!
 ```
 
-Returns the network specifier of the subscription ID pinned to the TelephonyManager. The network specifier is used by `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(kotlin.String)` to create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.html#` that connects through the subscription. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Returns the network specifier of the subscription ID pinned to the TelephonyManager. The network specifier is used by setNetworkSpecifier to create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.html#` that connects through the subscription. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForPhoneAccountHandle(android.telecom.PhoneAccountHandle)`
+- setNetworkSpecifier
+- createForSubscriptionId
+- createForPhoneAccountHandle
 
 ### getNetworkType
 
@@ -4336,11 +4336,11 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun getNetworkType(): Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getDataNetworkType()`*
+**Deprecated:** *use getDataNetworkType*
 
 Return the current data network type. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4360,11 +4360,11 @@ open fun getPhoneAccountHandle(): PhoneAccountHandle?
 
 Determines the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` associated with this TelephonyManager.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId
 
-Requires Permission android.Manifest.permission#READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission android.Manifest.permission#READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4383,7 +4383,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun getPhoneCount(): Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getActiveModemCount()` instead.*
+**Deprecated:** *Use getActiveModemCount instead.*
 
 Returns the number of phones available.
 
@@ -4403,7 +4403,7 @@ open fun getPhoneType(): Int
 ```
 
 Returns a constant indicating the device phone type. This indicates the type of radio used to transmit voice/data calls. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4426,9 +4426,9 @@ open fun getPreferredOpportunisticDataSubscription(): Int
 
 Get preferred opportunistic data subscription Id
 
-Requires that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`), or has either READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` permission. 
+Requires that the calling app has carrier privileges (see hasCarrierPrivileges), or has either READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` permission. 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4446,14 +4446,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getPrimaryImei(): String
 ```
 
-Returns the primary IMEI (International Mobile Equipment Identity) of the device as mentioned in GSMA TS.37. `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getImei(kotlin.Int)` returns the IMEI that belongs to the selected slotID whereas this API `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getPrimaryImei()` returns primary IMEI of the device. A single SIM device with only one IMEI will be set by default as primary IMEI. A multi-SIM device with multiple IMEIs will have one of the IMEIs set as primary as mentioned in GSMA TS37_2.2_REQ_8.
+Returns the primary IMEI (International Mobile Equipment Identity) of the device as mentioned in GSMA TS.37. getImei returns the IMEI that belongs to the selected slotID whereas this API getPrimaryImei returns primary IMEI of the device. A single SIM device with only one IMEI will be set by default as primary IMEI. A multi-SIM device with multiple IMEIs will have one of the IMEIs set as primary as mentioned in GSMA TS37_2.2_REQ_8.
 
 Requires one of the following permissions
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) on any active subscription.
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges) on any active subscription.
+- If the calling app is the default SMS role holder (see isRoleHeld).
 - If the calling app has been granted the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER:kotlin.String` permission.
 
 | Return ||
@@ -4472,13 +4472,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getServiceState(): ServiceState?
 ```
 
-Returns the current `https://developer.android.com/reference/kotlin/android/telephony/ServiceState` information.
+Returns the current ServiceState information.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()` If you want continuous updates of service state info, register a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener` through #registerTelephonyCallback.
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId If you want continuous updates of service state info, register a TelephonyCallback that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener` through #registerTelephonyCallback.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String`. May return `null` when the subscription is inactive or when there was an error communicating with the phone process. 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String`. May return `null` when the subscription is inactive or when there was an error communicating with the phone process. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4492,13 +4492,13 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getServiceState(includeLocationData: Int): ServiceState?
 ```
 
-Returns the current `https://developer.android.com/reference/kotlin/android/telephony/ServiceState` information.
+Returns the current ServiceState information.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()` If you want continuous updates of service state info, register a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener` through #registerTelephonyCallback. There's another way to renounce permissions with a custom context `AttributionSource.Builder#setRenouncedPermissions(Set<String>)` but only for system apps. To avoid confusion, calling this method supersede renouncing permissions with a custom context.
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId If you want continuous updates of service state info, register a TelephonyCallback that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener` through #registerTelephonyCallback. There's another way to renounce permissions with a custom context `AttributionSource.Builder#setRenouncedPermissions(Set<String>)` but only for system apps. To avoid confusion, calling this method supersede renouncing permissions with a custom context.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String`. 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String`. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4506,7 +4506,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/ServiceState?` | This value may be `null`. |
+| ServiceState | This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4520,9 +4520,9 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 open fun getServiceStateForSlot(slotIndex: Int): ServiceState?
 ```
 
-Returns the service state information on specified SIM slot. If you want continuous updates of service state info, register a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener` through #registerTelephonyCallback. May return `null` when the `slotIndex` is invalid or when there was an error communicating with the phone process See `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getActiveModemCount()` to get the total number of slots that are active on the device. 
+Returns the service state information on specified SIM slot. If you want continuous updates of service state info, register a TelephonyCallback that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener` through #registerTelephonyCallback. May return `null` when the `slotIndex` is invalid or when there was an error communicating with the phone process See getActiveModemCount to get the total number of slots that are active on the device. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4530,7 +4530,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/ServiceState?` | ServiceState on specified SIM slot. |
+| ServiceState | ServiceState on specified SIM slot. |
 
 ### getSignalStrength
 
@@ -4541,11 +4541,11 @@ open fun getSignalStrength(): SignalStrength?
 ```
 
 Get the most recently available signal strength information. Get the most recent SignalStrength information reported by the modem. Due to power saving this information may not always be current. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/SignalStrength?` | the most recent cached signal strength info from the modem. This value may be `null`. |
+| SignalStrength | the most recent cached signal strength info from the modem. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4564,7 +4564,7 @@ Returns carrier id of the current subscription.
 To recognize a carrier (including MVNO) as a first-class identity, Android assigns each carrier with a canonical integer a.k.a. carrier id. The carrier ID is an Android platform-wide identifier for a carrier. AOSP maintains carrier ID assignments in [here](https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/master/assets/latest_carrier_id/carrier_list.textpb)
 
 Apps which have carrier-specific configurations or business logic can use the carrier id as an Android platform-wide identifier for carriers. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4584,10 +4584,10 @@ open fun getSimCarrierIdName(): CharSequence?
 
 Returns carrier id name of the current subscription.
 
-Carrier id name is a user-facing name of carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`, usually the brand name of the subsidiary (e.g. T-Mobile). Each carrier could configure multiple `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimOperatorName()` but should have a single carrier name. Carrier name is not a canonical identity, use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()` instead.
+Carrier id name is a user-facing name of carrier id returned by getSimCarrierId, usually the brand name of the subsidiary (e.g. T-Mobile). Each carrier could configure multiple getSimOperatorName but should have a single carrier name. Carrier name is not a canonical identity, use getSimCarrierId instead.
 
 The returned carrier name is unlocalized. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4608,7 +4608,7 @@ open fun getSimCountryIso(): String!
 Returns the ISO-3166-1 alpha-2 country code equivalent for the SIM provider's country code.
 
 The ISO-3166-1 alpha-2 country code is provided in lowercase 2 character format. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4625,7 +4625,7 @@ open fun getSimOperator(): String!
 Returns the MCC+MNC (mobile country code + mobile network code) of the provider of the SIM. 5 or 6 decimal digits.
 
 Availability: SIM state must be `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#SIM_STATE_READY:kotlin.Int` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 **See Also**
 
 ### getSimOperatorName
@@ -4639,7 +4639,7 @@ open fun getSimOperatorName(): String!
 Returns the Service Provider Name (SPN).
 
 Availability: SIM state must be `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#SIM_STATE_READY:kotlin.Int` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 **See Also**
 
 ### getSimSerialNumber
@@ -4655,9 +4655,9 @@ Returns the serial number of the SIM, if applicable. Return null if it is unavai
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges).
+- If the calling app is the default SMS role holder (see isRoleHeld).
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
 
@@ -4666,7 +4666,7 @@ If the calling app does not meet one of these requirements then this method will
 
 . 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4680,12 +4680,12 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getSimSpecificCarrierId(): Int
 ```
 
-Returns fine-grained carrier ID of the current subscription. A specific carrier ID can represent the fact that a carrier may be in effect an aggregation of other carriers (ie in an MVNO type scenario) where each of these specific carriers which are used to make up the actual carrier service may have different carrier configurations. A specific carrier ID could also be used, for example, in a scenario where a carrier requires different carrier configuration for different service offering such as a prepaid plan. the specific carrier ID would be used for configuration purposes, but apps wishing to know about the carrier itself should use the regular carrier ID returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`. e.g, Tracfone SIMs could return different specific carrier ID based on IMSI from current subscription while carrier ID remains the same.
+Returns fine-grained carrier ID of the current subscription. A specific carrier ID can represent the fact that a carrier may be in effect an aggregation of other carriers (ie in an MVNO type scenario) where each of these specific carriers which are used to make up the actual carrier service may have different carrier configurations. A specific carrier ID could also be used, for example, in a scenario where a carrier requires different carrier configuration for different service offering such as a prepaid plan. the specific carrier ID would be used for configuration purposes, but apps wishing to know about the carrier itself should use the regular carrier ID returned by getSimCarrierId. e.g, Tracfone SIMs could return different specific carrier ID based on IMSI from current subscription while carrier ID remains the same.
 
-For carriers without fine-grained specific carrier ids, return `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierId()`
+For carriers without fine-grained specific carrier ids, return getSimCarrierId
 
 Specific carrier ids are defined in the same way as carrier id [here](https://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/master/assets/latest_carrier_id/carrier_list.textpb) except each with a "parent" id linking to its top-level carrier id. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4703,10 +4703,10 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getSimSpecificCarrierIdName(): CharSequence?
 ```
 
-Similar like `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierIdName()`, returns user-facing name of the specific carrier id returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimSpecificCarrierId()`. The specific carrier ID would be used for configuration purposes, but apps wishing to know about the carrier itself should use the regular carrier ID returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getSimCarrierIdName()`.
+Similar like getSimCarrierIdName, returns user-facing name of the specific carrier id returned by getSimSpecificCarrierId. The specific carrier ID would be used for configuration purposes, but apps wishing to know about the carrier itself should use the regular carrier ID returned by getSimCarrierIdName.
 
 The returned name is unlocalized. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4725,7 +4725,7 @@ open fun getSimState(): Int
 ```
 
 Returns a constant indicating the state of the default SIM card. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4757,7 +4757,7 @@ open fun getSimState(slotIndex: Int): Int
 ```
 
 Returns a constant indicating the state of the device SIM card in a logical slot. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4797,9 +4797,9 @@ Returns the unique subscriber ID, for example, the IMSI for a GSM phone. Return 
 Starting with API level 29, persistent device identifiers are guarded behind additional restrictions, and apps are recommended to use resettable identifiers (see [Best practices for unique identifiers](../training/articles/user-data-ids.md)). This method can be invoked if one of the following requirements is met:
 
 - If the calling app has been granted the READ_PRIVILEGED_PHONE_STATE permission; this is a privileged permission that can only be granted to apps preloaded on the device.
-- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#getEnrollmentSpecificId()`).
-- If the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
-- If the calling app is the default SMS role holder (see `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#isRoleHeld(kotlin.String)`).
+- If the calling app is the device owner of a fully-managed device, a profile owner of an organization-owned device, or their delegates (see getEnrollmentSpecificId).
+- If the calling app has carrier privileges (see hasCarrierPrivileges).
+- If the calling app is the default SMS role holder (see isRoleHeld).
 - If the calling app has been granted the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER:kotlin.String` permission.
 
 If the calling app does not meet one of these requirements then this method will behave as follows:
@@ -4809,7 +4809,7 @@ If the calling app does not meet one of these requirements then this method will
 
 . 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4823,8 +4823,8 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getSubscriptionId(): Int
 ```
 
-Return an appropriate subscription ID for any situation. If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, then the provided subscription ID is returned. Otherwise, the default subscription ID will be returned. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Return an appropriate subscription ID for any situation. If this object has been created with createForSubscriptionId, then the provided subscription ID is returned. Otherwise, the default subscription ID will be returned. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ### getSubscriptionId
 
@@ -4836,7 +4836,7 @@ open fun getSubscriptionId(phoneAccountHandle: PhoneAccountHandle): Int
 
 Returns the subscription ID for the given phone account handle. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -4854,7 +4854,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getSupportedModemCount(): Int
 ```
 
-Return how many logical modem can be potentially active simultaneously, in terms of hardware capability. It might return different value from `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getActiveModemCount()`. For example, for a dual-SIM capable device operating in single SIM mode (only one logical modem is turned on), `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getActiveModemCount()` returns 1 while this API returns 2.
+Return how many logical modem can be potentially active simultaneously, in terms of hardware capability. It might return different value from getActiveModemCount. For example, for a dual-SIM capable device operating in single SIM mode (only one logical modem is turned on), getActiveModemCount returns 1 while this API returns 2.
 
 ### getSupportedRadioAccessFamily
 
@@ -4865,11 +4865,11 @@ open fun getSupportedRadioAccessFamily(): Long
 ```
 
 Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Modem supported radio access family bitmask Requires permission: android.Manifest.READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_UNKNOWN:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_GSM:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_GPRS:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EDGE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_CDMA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_1xRTT:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EVDO_0:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EVDO_A:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EVDO_B:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EHRPD:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSUPA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSDPA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSPA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSPAP:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_UMTS:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_TD_SCDMA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_LTE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_LTE_CA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_NR:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_IWLAN:kotlin.Long` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | Modem supported radio access family bitmask Requires permission: android.Manifest.READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see hasCarrierPrivileges). Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_UNKNOWN:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_GSM:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_GPRS:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EDGE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_CDMA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_1xRTT:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EVDO_0:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EVDO_A:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EVDO_B:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_EHRPD:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSUPA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSDPA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSPA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_HSPAP:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_UMTS:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_TD_SCDMA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_LTE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_LTE_CA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_NR:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#NETWORK_TYPE_BITMASK_IWLAN:kotlin.Long` |
 
 | Exceptions ||
 |---|---|
@@ -4910,17 +4910,17 @@ open fun getUiccCardsInfo(): MutableList<UiccCardInfo!>
 
 Gets information about currently inserted UICCs (Universal Integrated Circuit Cards) and eUICCs (embedded UICCs).
 
-The details returned for each `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo` object depend on the permissions held by the calling application. The specific fields populated within each `UiccCardInfo` are determined as follows:
+The details returned for each UiccCardInfo object depend on the permissions held by the calling application. The specific fields populated within each `UiccCardInfo` are determined as follows:
 
-- With `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String`: The `UiccCardInfo` will include whether the card is an eUICC (`https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#isEuicc()`) and its `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getPhysicalSlotIndex()`.
-- With carrier privileges on any active subscription (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`): The `UiccCardInfo` will include the card ID (`https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getCardId()`), whether it's an eUICC (`https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#isEuicc()`), and its `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getPhysicalSlotIndex()`.
-- With carrier privileges on the specific UICC or eUICC card: Sensitive identifiers like the EID (`https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getEid()`) and ICCID (`https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo#getIccId()`) for that particular card can be accessed.
+- With `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String`: The `UiccCardInfo` will include whether the card is an eUICC (isEuicc) and its getPhysicalSlotIndex.
+- With carrier privileges on any active subscription (see hasCarrierPrivileges): The `UiccCardInfo` will include the card ID (getCardId), whether it's an eUICC (isEuicc), and its getPhysicalSlotIndex.
+- With carrier privileges on the specific UICC or eUICC card: Sensitive identifiers like the EID (getEid) and ICCID (getIccId) for that particular card can be accessed.
 
 If an application lacks the necessary permissions for certain details of a card (e.g.,the EID due to missing specific carrier privileges for that card), those fields will not be populated in the `UiccCardInfo` object for that card.
 
-See `https://developer.android.com/reference/kotlin/android/telephony/UiccCardInfo` for a comprehensive description of all possible card attributes and their individual data protection considerations. 
-Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+See UiccCardInfo for a comprehensive description of all possible card attributes and their individual data protection considerations. 
+Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or hasCarrierPrivileges 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -4940,9 +4940,9 @@ open fun getVisualVoicemailPackageName(): String?
 
 Returns the package responsible of processing visual voicemail for the subscription ID pinned to the TelephonyManager. Returns `null` when there is no package responsible for processing visual voicemail for the subscription.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4950,9 +4950,9 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForPhoneAccountHandle(android.telecom.PhoneAccountHandle)`
-- `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService`
+- createForSubscriptionId
+- createForPhoneAccountHandle
+- VisualVoicemailService
 
 ### getVoiceMailAlphaTag
 
@@ -4964,9 +4964,9 @@ open fun getVoiceMailAlphaTag(): String!
 
 Retrieves the alphabetic identifier associated with the voice mail number.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -4982,9 +4982,9 @@ open fun getVoiceMailNumber(): String!
 
 Returns the voice mail number. Return null if it is unavailable.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -5000,9 +5000,9 @@ open fun getVoiceNetworkType(): Int
 
 Returns the NETWORK_TYPE_xxxx for voice
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5021,7 +5021,7 @@ open fun getVoicemailRingtoneUri(accountHandle: PhoneAccountHandle!): Uri?
 ```
 
 Returns the URI for the per-account voicemail ringtone set in Phone settings. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5044,7 +5044,7 @@ open fun hasCarrierPrivileges(): Boolean
 ```
 
 Has the calling application been granted carrier privileges by the carrier. If any of the packages in the calling UID has carrier privileges, the call will return true. This access is granted by the owner of the UICC card and does not depend on the registered carrier. Note that this API applies to both physical and embedded subscriptions and is a superset of the checks done in SubscriptionManager#canManageSubscription. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5063,7 +5063,7 @@ open fun hasIccCard(): Boolean
 ```
 
 This API is used to check if there is an ICC card present in the device. An ICC card is a smart card that contains a subscriber identity module (SIM) and is used to identify and authenticate users to a mobile network. Note: In case of embedded SIM there is an ICC card always present irrespective of whether an active SIM profile is present or not so this API would always return true. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5081,10 +5081,10 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun iccCloseLogicalChannel(channel: Int): Boolean
 ```
 
-Closes a previously opened logical channel to the ICC card. Input parameters equivalent to TS 27.007 AT+CCHC command. It is strongly recommended that callers of this API should firstly create new TelephonyManager instance by calling `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. Failure to do so can result in unpredictable and detrimental behavior like callers can end up talking to the wrong SIM card.
+Closes a previously opened logical channel to the ICC card. Input parameters equivalent to TS 27.007 AT+CCHC command. It is strongly recommended that callers of this API should firstly create new TelephonyManager instance by calling createForSubscriptionId. Failure to do so can result in unpredictable and detrimental behavior like callers can end up talking to the wrong SIM card.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5116,8 +5116,8 @@ open fun iccExchangeSimIO(
 
 Returns the response APDU for a command APDU sent through SIM_IO.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5147,12 +5147,12 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun iccOpenLogicalChannel(AID: String!): IccOpenLogicalChannelResponse!
 ```
 
-**Deprecated:** *Replaced by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#iccOpenLogicalChannel(kotlin.String,%20kotlin.Int)`*
+**Deprecated:** *Replaced by iccOpenLogicalChannel*
 
 Opens a logical channel to the ICC card. Input parameters equivalent to TS 27.007 AT+CCHO command.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5182,12 +5182,12 @@ Opens a logical channel to the ICC card. This operation wraps two APDU instructi
 - MANAGE CHANNEL to open a logical channel
 - SELECT the given `AID` using the given `p2`
 
-Per Open Mobile API Specification v3.2 section 6.2.7.h, only p2 values of 0x00, 0x04, 0x08, and 0x0C are guaranteed to be supported. If the SELECT command's status word is not '9000', '62xx', or '63xx', the status word will be considered an error and the channel shall not be opened. Input parameters equivalent to TS 27.007 AT+CCHO command. It is strongly recommended that callers of this should firstly create a new TelephonyManager instance by calling `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. Failure to do so can result in unpredictable and detrimental behavior like callers can end up talking to the wrong SIM card.
+Per Open Mobile API Specification v3.2 section 6.2.7.h, only p2 values of 0x00, 0x04, 0x08, and 0x0C are guaranteed to be supported. If the SELECT command's status word is not '9000', '62xx', or '63xx', the status word will be considered an error and the channel shall not be opened. Input parameters equivalent to TS 27.007 AT+CCHO command. It is strongly recommended that callers of this should firstly create a new TelephonyManager instance by calling createForSubscriptionId. Failure to do so can result in unpredictable and detrimental behavior like callers can end up talking to the wrong SIM card.
 
 <br />
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5219,8 +5219,8 @@ open fun iccTransmitApduBasicChannel(
 
 Transmit an APDU to the ICC card over the basic channel. Input parameters equivalent to TS 27.007 AT+CSIM command.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5257,10 +5257,10 @@ open fun iccTransmitApduLogicalChannel(
 ): String!
 ```
 
-Transmit an APDU to the ICC card over a logical channel. Input parameters equivalent to TS 27.007 AT+CGLA command. It is strongly recommended that callers of this API should firstly create a new TelephonyManager instance by calling `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. Failure to do so can result in unpredictable and detrimental behavior like callers can end up talking to the wrong SIM card.
+Transmit an APDU to the ICC card over a logical channel. Input parameters equivalent to TS 27.007 AT+CGLA command. It is strongly recommended that callers of this API should firstly create a new TelephonyManager instance by calling createForSubscriptionId. Failure to do so can result in unpredictable and detrimental behavior like callers can end up talking to the wrong SIM card.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5291,7 +5291,7 @@ open fun isConcurrentVoiceAndDataSupported(): Boolean
 ```
 
 Whether the device is currently on a technology (e.g. UMTS or LTE) which can support voice and data simultaneously. This can change based on location or network condition. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5325,14 +5325,14 @@ Checks whether cellular data connection is allowed in the device.
 
 Whether cellular data connection is allowed considers all factors below:
 
-- User turned on data setting `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataEnabled()`.
+- User turned on data setting isDataEnabled.
 - Carrier allows data to be on.
 - Network policy.
 - And possibly others.
 
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5350,13 +5350,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun isDataEnabled(): Boolean
 ```
 
-Returns whether mobile data is enabled or not per user setting. There are other factors that could disable mobile data, but they are not considered here. If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()`
+Returns whether mobile data is enabled or not per user setting. There are other factors that could disable mobile data, but they are not considered here. If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultDataSubscriptionId
 
-Requires one of the following permissions: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`).
+Requires one of the following permissions: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges).
 
-Note that this does not take into account any data restrictions that may be present on the calling app. Such restrictions may be inspected with `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#getRestrictBackgroundStatus()`. 
+Note that this does not take into account any data restrictions that may be present on the calling app. Such restrictions may be inspected with getRestrictBackgroundStatus. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5374,11 +5374,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun isDataEnabledForReason(reason: Int): Boolean
 ```
 
-Return whether data is enabled for certain reason . If `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataEnabledForReason(kotlin.Int)` returns false, it means in data enablement for a specific reason is turned off. If any of the reason is off, then it will result in bypassing user preference and result in data to be turned off. Call `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDataConnectionAllowed()` in order to know whether data connection is allowed on the device.
+Return whether data is enabled for certain reason . If isDataEnabledForReason returns false, it means in data enablement for a specific reason is turned off. If any of the reason is off, then it will result in bypassing user preference and result in data to be turned off. Call isDataConnectionAllowed in order to know whether data connection is allowed on the device.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()` 
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultDataSubscriptionId 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5386,7 +5386,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | whether data is enabled for a reason. Requires Permission: The calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | whether data is enabled for a reason. Requires Permission: The calling app has carrier privileges (see hasCarrierPrivileges) or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` |
 
 | Exceptions ||
 |---|---|
@@ -5403,11 +5403,11 @@ open fun isDataRoamingEnabled(): Boolean
 
 Returns whether mobile data roaming is enabled on the subscription.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()`
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultDataSubscriptionId
 
-Requires one of the following permissions: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires one of the following permissions: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_NETWORK_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5427,11 +5427,11 @@ open fun isDeviceSmsCapable(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the current device supports SMS service. If true, this means that the device supports both sending and receiving SMS via the telephony network. Note: Voicemail waiting SMS, cell broadcasting SMS, and MMS are disabled when device doesn't support SMS. Starting from Android 15, SMS capability may also be overridden by carriers for a given subscription on an SMS capable device. To check if a subscription is "SMS capable", call method `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getServiceCapabilities()` and check if `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#SERVICE_CAPABILITY_SMS:kotlin.Int` is included. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the current device supports SMS service. If true, this means that the device supports both sending and receiving SMS via the telephony network. Note: Voicemail waiting SMS, cell broadcasting SMS, and MMS are disabled when device doesn't support SMS. Starting from Android 15, SMS capability may also be overridden by carriers for a given subscription on an SMS capable device. To check if a subscription is "SMS capable", call method getServiceCapabilities and check if `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#SERVICE_CAPABILITY_SMS:kotlin.Int` is included. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getServiceCapabilities()`
+- getServiceCapabilities
 
 ### isDeviceVoiceCapable
 
@@ -5443,11 +5443,11 @@ open fun isDeviceVoiceCapable(): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the current device is "voice capable". "Voice capable" means that this device supports circuit-switched or IMS packet switched (i.e. voice) phone calls over the telephony network, and is allowed to display the in-call UI while a cellular voice call is active. This will be false on "data only" devices which can't make voice calls and don't support any in-call UI. Note: the meaning of this flag is subtly different from the PackageManager .FEATURE_TELEPHONY system feature, which is available on any device with a telephony radio, even if the device is data-only. Starting from Android 15, voice capability may also be overridden by carrier for a given subscription on a voice capable device. To check if a subscription is "voice capable", call method `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getServiceCapabilities()` and check if `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#SERVICE_CAPABILITY_VOICE:kotlin.Int` is included. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the current device is "voice capable". "Voice capable" means that this device supports circuit-switched or IMS packet switched (i.e. voice) phone calls over the telephony network, and is allowed to display the in-call UI while a cellular voice call is active. This will be false on "data only" devices which can't make voice calls and don't support any in-call UI. Note: the meaning of this flag is subtly different from the PackageManager .FEATURE_TELEPHONY system feature, which is available on any device with a telephony radio, even if the device is data-only. Starting from Android 15, voice capability may also be overridden by carrier for a given subscription on a voice capable device. To check if a subscription is "voice capable", call method getServiceCapabilities and check if `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#SERVICE_CAPABILITY_VOICE:kotlin.Int` is included. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo#getServiceCapabilities()`
+- getServiceCapabilities
 
 ### isEmergencyNumber
 
@@ -5459,7 +5459,7 @@ open fun isEmergencyNumber(number: String): Boolean
 
 Identifies if the supplied phone number is an emergency number that matches a known emergency number based on current locale, SIM card(s), Android database, modem, network, or defaults.
 
-This method assumes that only dialable phone numbers are passed in; non-dialable numbers are not considered emergency numbers. A dialable phone number consists only of characters/digits identified by `https://developer.android.com/reference/kotlin/android/telephony/PhoneNumberUtils#isDialable(kotlin.Char)`.
+This method assumes that only dialable phone numbers are passed in; non-dialable numbers are not considered emergency numbers. A dialable phone number consists only of characters/digits identified by isDialable.
 
 The subscriptions which the identification would be based on, are all the active subscriptions, no matter which subscription could be used to create TelephonyManager.
 
@@ -5485,7 +5485,7 @@ open fun isHearingAidCompatibilitySupported(): Boolean
 ```
 
 Whether the phone supports hearing aid compatibility. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5505,11 +5505,11 @@ open fun isManualNetworkSelectionAllowed(): Boolean
 
 Checks if manual network selection is allowed.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`)
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges)
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`. 
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PRECISE_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5529,9 +5529,9 @@ open fun isModemEnabledForSlot(slotIndex: Int): Boolean
 
 Indicates whether or not there is a modem stack enabled for the given SIM slot.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, READ_PRIVILEGED_PHONE_STATE or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5551,9 +5551,9 @@ open fun isMultiSimSupported(): Int
 
 Returns if the usage of multiple SIM cards at the same time to register on the network (e.g. Dual Standby or Dual Active) is supported by the device and by the carrier.
 
-Requires Permission:`https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission:`https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_PHONE_STATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5574,7 +5574,7 @@ open fun isNetworkRoaming(): Boolean
 Returns true if the device is considered roaming on the current network, for GSM purposes.
 
 Availability: Only when user registered to a network. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 ### isPremiumCapabilityAvailableForPurchase
 
@@ -5584,9 +5584,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun isPremiumCapabilityAvailableForPurchase(capability: Int): Boolean
 ```
 
-Check whether the given premium capability is available for purchase from the carrier. If this is `true`, the capability can be purchased from the carrier using `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#purchasePremiumCapability(kotlin.Int,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`. 
+Check whether the given premium capability is available for purchase from the carrier. If this is `true`, the capability can be purchased from the carrier using purchasePremiumCapability. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5610,7 +5610,7 @@ open fun isRadioInterfaceCapabilitySupported(capability: String): Boolean
 ```
 
 Whether the device supports a given capability on the radio interface. If the capability is not in the set of radio interface capabilities, false is returned. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5633,7 +5633,7 @@ open fun isRttSupported(): Boolean
 ```
 
 Determines whether the device currently supports RTT (Real-time text). Based both on carrier support for the feature and device firmware support. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_IMS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_IMS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5652,7 +5652,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 open fun isSmsCapable(): Boolean
 ```
 
-**Deprecated:** *Replaced by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceSmsCapable()`. Starting from Android 15, SMS capability may also be overridden by carriers for a given subscription. For SMS capable device (when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceSmsCapable()` return `true`), caller should check for subscription-level SMS capability as well. See `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceSmsCapable()` for details.*
+**Deprecated:** *Replaced by isDeviceSmsCapable. Starting from Android 15, SMS capability may also be overridden by carriers for a given subscription. For SMS capable device (when isDeviceSmsCapable return `true`), caller should check for subscription-level SMS capability as well. See isDeviceSmsCapable for details.*
 
 | Return ||
 |---|---|
@@ -5667,7 +5667,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 open fun isTtyModeSupported(): Boolean
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#isTtySupported()` instead Whether the phone supports TTY mode.*
+**Deprecated:** *Use isTtySupported instead Whether the phone supports TTY mode.*
 
 | Return ||
 |---|---|
@@ -5682,7 +5682,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 open fun isVoiceCapable(): Boolean
 ```
 
-**Deprecated:** *Replaced by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceVoiceCapable()`. Starting from Android 15, voice capability may also be overridden by carriers for a given subscription. For voice capable device (when `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceVoiceCapable()` return `true`), caller should check for subscription-level voice capability as well. See `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isDeviceVoiceCapable()` for details.*
+**Deprecated:** *Replaced by isDeviceVoiceCapable. Starting from Android 15, voice capability may also be overridden by carriers for a given subscription. For voice capable device (when isDeviceVoiceCapable return `true`), caller should check for subscription-level voice capability as well. See isDeviceVoiceCapable for details.*
 
 | Return ||
 |---|---|
@@ -5697,7 +5697,7 @@ open fun isVoicemailVibrationEnabled(accountHandle: PhoneAccountHandle!): Boole
 ```
 
 Returns whether vibration is set for voicemail notification in Phone settings. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5720,7 +5720,7 @@ open fun isWorldPhone(): Boolean
 ```
 
 Whether the device is a world phone. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -5742,18 +5742,18 @@ open fun listen(
 ): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#registerTelephonyCallback(java.util.concurrent.Executor,%20android.telephony.TelephonyCallback)`.*
+**Deprecated:** *Use registerTelephonyCallback.*
 
 Registers a listener object to receive notification of changes in specified telephony states.
 
-To register a listener, pass a `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener` and specify at least one telephony state of interest in the events argument. At registration, and when a specified telephony state changes, the telephony manager invokes the appropriate callback method on the listener object and passes the current (updated) values.
+To register a listener, pass a PhoneStateListener and specify at least one telephony state of interest in the events argument. At registration, and when a specified telephony state changes, the telephony manager invokes the appropriate callback method on the listener object and passes the current (updated) values.
 
-To un-register a listener, pass the listener object and set the events argument to `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_NONE:kotlin.Int` (0). If this TelephonyManager object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`. To listen events for multiple subIds, pass a separate listener object to each TelephonyManager object created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. Note: if you call this method while in the middle of a binder transaction, you **must** call `https://developer.android.com/reference/kotlin/android/os/Binder.html#clearCallingIdentity()` before calling this method. A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown otherwise. This API should be used sparingly -- large numbers of listeners will cause system instability. If a process has registered too many listeners without unregistering them, it may encounter an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` when trying to register more listeners.
+To un-register a listener, pass the listener object and set the events argument to `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener#LISTEN_NONE:kotlin.Int` (0). If this TelephonyManager object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId. To listen events for multiple subIds, pass a separate listener object to each TelephonyManager object created with createForSubscriptionId. Note: if you call this method while in the middle of a binder transaction, you **must** call clearCallingIdentity before calling this method. A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown otherwise. This API should be used sparingly -- large numbers of listeners will cause system instability. If a process has registered too many listeners without unregistering them, it may encounter an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` when trying to register more listeners.
 
 | Parameters ||
 |---|---|
-| `listener` | [PhoneStateListener](PhoneStateListener.md)!: The `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener` object to register (or unregister) |
-| `events` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The telephony state(s) of interest to the listener, as a bitwise-OR combination of `https://developer.android.com/reference/kotlin/android/telephony/PhoneStateListener` LISTEN_ flags. |
+| `listener` | [PhoneStateListener](PhoneStateListener.md)!: The PhoneStateListener object to register (or unregister) |
+| `events` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The telephony state(s) of interest to the listener, as a bitwise-OR combination of PhoneStateListener LISTEN_ flags. |
 
 ### purchasePremiumCapability
 
@@ -5769,12 +5769,12 @@ open fun purchasePremiumCapability(
 
 Purchase the given premium capability from the carrier. This requires user action to purchase the boost from the carrier. If this returns `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_SUCCESS:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_ALREADY_PURCHASED:kotlin.Int`, applications can request the premium capability via android.net.ConnectivityManager#requestNetwork. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#READ_BASIC_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#INTERNET:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
 | `capability` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The premium capability to purchase. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PREMIUM_CAPABILITY_PRIORITIZE_LATENCY:kotlin.Int` |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The callback executor for the response. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The callback executor for the response. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: The result of the purchase request. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_SUCCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_THROTTLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_ALREADY_PURCHASED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_ALREADY_IN_PROGRESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_CANCELED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_CARRIER_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_CARRIER_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_TIMEOUT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_FEATURE_NOT_SUPPORTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NETWORK_NOT_AVAILABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_ENTITLEMENT_CHECK_FAILED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_NOT_DEFAULT_DATA_SUBSCRIPTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_PENDING_NETWORK_SETUP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLED:kotlin.Int` |
 | --- | --- |
 
@@ -5785,7 +5785,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isPremiumCapabilityAvailableForPurchase(kotlin.Int)`
+- isPremiumCapabilityAvailableForPurchase
 
 ### rebootModem
 
@@ -5803,9 +5803,9 @@ Device-specific and App-specific support information:
 - On other devices which either do not include hardware support for `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int` or do not declare `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String`, support is likely but not guaranteed.
 - For applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int` or lower, if this method is not supported, it may fail silently.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -5828,17 +5828,17 @@ open fun registerTelephonyCallback(
 
 Registers a callback object to receive notification of changes in specified telephony states.
 
-To register a callback, pass a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` which implements interfaces of events. For example, FakeServiceStateCallback extends `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener`. At registration, and when a specified telephony state changes, the telephony manager invokes the appropriate callback method on the callback object and passes the current (updated) values.
+To register a callback, pass a TelephonyCallback which implements interfaces of events. For example, FakeServiceStateCallback extends TelephonyCallback implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener`. At registration, and when a specified telephony state changes, the telephony manager invokes the appropriate callback method on the callback object and passes the current (updated) values.
 
-If this TelephonyManager object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`. To register events for multiple subIds, pass a separate callback object to each TelephonyManager object created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. Note: if you call this method while in the middle of a binder transaction, you **must** call `https://developer.android.com/reference/kotlin/android/os/Binder.html#clearCallingIdentity()` before calling this method. A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown otherwise. This API should be used sparingly -- large numbers of callbacks will cause system instability. If a process has registered too many callbacks without unregistering them, it may encounter an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` when trying to register more callbacks.
+If this TelephonyManager object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId. To register events for multiple subIds, pass a separate callback object to each TelephonyManager object created with createForSubscriptionId. Note: if you call this method while in the middle of a binder transaction, you **must** call clearCallingIdentity before calling this method. A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown otherwise. This API should be used sparingly -- large numbers of callbacks will cause system instability. If a process has registered too many callbacks without unregistering them, it may encounter an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` when trying to register more callbacks.
 
 There's another way to renounce permissions with a custom context `AttributionSource.Builder#setRenouncedPermissions(Set<String>)` but only for system apps. To avoid confusion, calling this method supersede renouncing permissions with a custom context.
 
 | Parameters ||
 |---|---|
 | `includeLocationData` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Specifies if the caller would like to receive location related information. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#INCLUDE_LOCATION_DATA_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#INCLUDE_LOCATION_DATA_COARSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#INCLUDE_LOCATION_DATA_FINE:kotlin.Int` |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [TelephonyCallback](TelephonyCallback.md): The `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` object to register. The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [TelephonyCallback](TelephonyCallback.md): The TelephonyCallback object to register. The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
 | --- | --- |
 
 ### registerTelephonyCallback
@@ -5854,16 +5854,16 @@ open fun registerTelephonyCallback(
 
 Registers a callback object to receive notification of changes in specified telephony states.
 
-To register a callback, pass a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` which implements interfaces of events. For example, FakeServiceStateCallback extends `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener`. At registration, and when a specified telephony state changes, the telephony manager invokes the appropriate callback method on the callback object and passes the current (updated) values.
+To register a callback, pass a TelephonyCallback which implements interfaces of events. For example, FakeServiceStateCallback extends TelephonyCallback implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.ServiceStateListener`. At registration, and when a specified telephony state changes, the telephony manager invokes the appropriate callback method on the callback object and passes the current (updated) values.
 
-Note: Be aware of the permission requirements stated on the `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` listeners you implement. Your application must be granted these permissions in order to register a `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` which requires them; a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if you do not hold the required permissions for all `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` listeners you implement.
+Note: Be aware of the permission requirements stated on the TelephonyCallback listeners you implement. Your application must be granted these permissions in order to register a TelephonyCallback which requires them; a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown if you do not hold the required permissions for all TelephonyCallback listeners you implement.
 
-If this TelephonyManager object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`. To register events for multiple subIds, pass a separate callback object to each TelephonyManager object created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`. Note: if you call this method while in the middle of a binder transaction, you **must** call `https://developer.android.com/reference/kotlin/android/os/Binder.html#clearCallingIdentity()` before calling this method. A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown otherwise. This API should be used sparingly -- large numbers of callbacks will cause system instability. If a process has registered too many callbacks without unregistering them, it may encounter an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` when trying to register more callbacks.
+If this TelephonyManager object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId. To register events for multiple subIds, pass a separate callback object to each TelephonyManager object created with createForSubscriptionId. Note: if you call this method while in the middle of a binder transaction, you **must** call clearCallingIdentity before calling this method. A `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown otherwise. This API should be used sparingly -- large numbers of callbacks will cause system instability. If a process has registered too many callbacks without unregistering them, it may encounter an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` when trying to register more callbacks.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [TelephonyCallback](TelephonyCallback.md): The `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` object to register. The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [TelephonyCallback](TelephonyCallback.md): The TelephonyCallback object to register. The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
 
 ### requestCellInfoUpdate
 
@@ -5878,15 +5878,15 @@ open fun requestCellInfoUpdate(
 
 Requests all available cell information from the current subscription for observed camped/registered, serving, and neighboring cells.
 
-Any available results from this request will be provided by calls to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.CellInfoListener#onCellInfoChanged(kotlin.collections.MutableList)` for each active subscription.
+Any available results from this request will be provided by calls to onCellInfoChanged for each active subscription.
 
 This method returns valid data for devices with `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY:kotlin.String`. On devices that do not implement this feature, the behavior is not reliable. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [TelephonyManager.CellInfoCallback](../android/telephony/TelephonyManager.CellInfoCallback.md): a callback to receive CellInfo. This value cannot be `null`. |
 
 | Exceptions ||
@@ -5907,7 +5907,7 @@ open fun requestNetworkScan(
 
 Request a network scan. This method is asynchronous, so the network scan results will be returned by callback. The returned NetworkScan will contain a callback method which can be used to stop the scan.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. If the system-wide location switch is off, apps may still call this API, with the following constraints:
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`. If the system-wide location switch is off, apps may still call this API, with the following constraints:
 
 1. The app must hold the `android.permission.NETWORK_SCAN` permission.
 2. The app must not supply any specific bands or channels to scan.
@@ -5916,7 +5916,7 @@ Requires Permission: `https://developer.android.com/reference/kotlin/android/Man
 
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5948,7 +5948,7 @@ open fun requestNetworkScan(
 
 Request a network scan. This method is asynchronous, so the network scan results will be returned by callback. The returned NetworkScan will contain a callback method which can be used to stop the scan.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` if includeLocationData is set to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#INCLUDE_LOCATION_DATA_FINE:kotlin.Int`. If the system-wide location switch is off, apps may still call this API, with the following constraints:
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges) and `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` if includeLocationData is set to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#INCLUDE_LOCATION_DATA_FINE:kotlin.Int`. If the system-wide location switch is off, apps may still call this API, with the following constraints:
 
 1. The app must hold the `android.permission.NETWORK_SCAN` permission.
 2. The app must not supply any specific bands or channels to scan.
@@ -5957,7 +5957,7 @@ Requires Permission: `https://developer.android.com/reference/kotlin/android/Man
 
 . 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -5969,7 +5969,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/telephony/NetworkScan?` | A NetworkScan obj which contains a callback which can be used to stop the scan. This value may be `null`. |
+| NetworkScan | A NetworkScan obj which contains a callback which can be used to stop the scan. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -5983,8 +5983,8 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun sendDialerSpecialCode(inputCode: String!): Unit
 ```
 
-Send the special dialer code. The IPC caller must be the current default dialer or have carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Send the special dialer code. The IPC caller must be the current default dialer or have carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6005,8 +6005,8 @@ open fun sendEnvelopeWithStatus(content: String!): String!
 
 Send ENVELOPE to the SIM and return the response.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6040,7 +6040,7 @@ Note: Call forwarding USSD requests are restricted to protect user security. Cal
 
 Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CALL_PHONE:kotlin.String` 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CALL_PHONE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6066,10 +6066,10 @@ open fun sendVisualVoicemailSms(
 ): Unit
 ```
 
-Send a visual voicemail SMS. The caller must be the current default dialer. A `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService` uses this method to send a command via SMS to the carrier's visual voicemail server. Some examples for carriers using the OMTP standard include activating and deactivating visual voicemail, or requesting the current visual voicemail provisioning status. See the OMTP Visual Voicemail specification for more information on the format of these SMS messages.
+Send a visual voicemail SMS. The caller must be the current default dialer. A VisualVoicemailService uses this method to send a command via SMS to the carrier's visual voicemail server. Some examples for carriers using the OMTP standard include activating and deactivating visual voicemail, or requesting the current visual voicemail provisioning status. See the OMTP Visual Voicemail specification for more information on the format of these SMS messages.
 
 Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#SEND_SMS:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6077,7 +6077,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The destination port for data SMS, or 0 for text SMS. |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The message content. For data sms, it will be encoded as a UTF-8 byte stream. |
 | --- | --- |
-| `sentIntent` | [PendingIntent](../android.app/PendingIntent.md)!: The sent intent passed to the `https://developer.android.com/reference/kotlin/android/telephony/SmsManager` |
+| `sentIntent` | [PendingIntent](../android.app/PendingIntent.md)!: The sent intent passed to the SmsManager |
 
 | Exceptions ||
 |---|---|
@@ -6086,8 +6086,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendDataMessage(kotlin.String,%20kotlin.String,%20kotlin.Short,%20kotlin.ByteArray,%20android.app.PendingIntent,%20android.app.PendingIntent)`
-- `https://developer.android.com/reference/kotlin/android/telephony/SmsManager#sendTextMessage(kotlin.String,%20kotlin.String,%20kotlin.String,%20android.app.PendingIntent,%20android.app.PendingIntent)`
+- sendDataMessage
+- sendTextMessage
 
 ### setAllowedNetworkTypesForReason
 
@@ -6102,14 +6102,14 @@ open fun setAllowedNetworkTypesForReason(
 
 Set the allowed network types of the device and provide the reason triggering the allowed network change.
 
-Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). This can be called for following reasons:
+Requires permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). This can be called for following reasons:
 
 1. Allowed network types control by USER `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ALLOWED_NETWORK_TYPES_REASON_USER:kotlin.Int`
 2. Allowed network types control by carrier `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#ALLOWED_NETWORK_TYPES_REASON_CARRIER:kotlin.Int`
 
 This API will result in allowing an intersection of allowed network types for all reasons, including the configuration done through other reasons. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the TelephonyManager#CAPABILITY_USES_ALLOWED_NETWORK_TYPES_BITMASK feature which can be detected using `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#isRadioInterfaceCapabilitySupported(kotlin.String)`.
+Requires the TelephonyManager#CAPABILITY_USES_ALLOWED_NETWORK_TYPES_BITMASK feature which can be detected using isRadioInterfaceCapabilitySupported.
 
 | Parameters ||
 |---|---|
@@ -6134,11 +6134,11 @@ open fun setCallComposerStatus(status: Int): Unit
 
 Set the user-set status for enriched calling with call composer. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
-| `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): user-set status for enriched calling with call composer. If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_COMPOSER_STATUS_ON:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_COMPOSER_STATUS_OFF:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_COMPOSER_STATUS_BUSINESS_ONLY:kotlin.Int` |
+| `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): user-set status for enriched calling with call composer. If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_COMPOSER_STATUS_ON:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_COMPOSER_STATUS_OFF:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#CALL_COMPOSER_STATUS_BUSINESS_ONLY:kotlin.Int` |
 
 | Exceptions ||
 |---|---|
@@ -6158,11 +6158,11 @@ open fun setDataEnabled(enable: Boolean): Unit
 
 **Deprecated:** *use setDataEnabledForReason with reason DATA_ENABLED_REASON_USER instead.*
 
-Turns mobile data on or off. If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()`
+Turns mobile data on or off. If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultDataSubscriptionId
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6194,14 +6194,14 @@ If any of the reason is off, then it will result in bypassing user preference an
 
 <br />
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultDataSubscriptionId()` 
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultDataSubscriptionId 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the reason the data enable change is taking place. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_POLICY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_CARRIER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_THERMAL:kotlin.Int` |
-| `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if enabling the data, otherwise disabling. Requires Permission: The calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`) if the reason is `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_USER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_CARRIER:kotlin.Int`, or the calling app has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` irrespective of the reason. |
+| `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if enabling the data, otherwise disabling. Requires Permission: The calling app has carrier privileges (see hasCarrierPrivileges) if the reason is `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_USER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#DATA_ENABLED_REASON_CARRIER:kotlin.Int`, or the calling app has `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` irrespective of the reason. |
 
 | Exceptions ||
 |---|---|
@@ -6218,9 +6218,9 @@ open fun setForbiddenPlmns(fplmns: MutableList<String!>): Int
 
 Replace the contents of the forbidden PLMN SIM file with the provided values. Passing an empty list will clear the contents of the EFfplmn file. If the provided list is shorter than the size of EFfplmn, then the list will be padded up to the file size with 'FFFFFF'. (required by 3GPP TS 31.102 spec 4.2.16) If the list is longer than the size of EFfplmn, then the file will be written from the beginning of the list up to the file size.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6246,12 +6246,12 @@ open fun setLine1NumberForDisplay(
 ): Boolean
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#setCarrierPhoneNumber(kotlin.Int,%20kotlin.String)` instead.*
+**Deprecated:** *use setCarrierPhoneNumber instead.*
 
 Set the line 1 phone number string and its alphatag for the current ICCID for display purpose only, for example, displayed in Phone Status. It won't change the actual MSISDN/MDN. To unset alphatag or number, pass in a null value.
 
-Requires that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6276,11 +6276,11 @@ open fun setNetworkSelectionModeAutomatic(): Unit
 
 Sets the network selection mode to automatic.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Exceptions ||
 |---|---|
@@ -6299,16 +6299,16 @@ open fun setNetworkSelectionModeManual(
 
 Ask the radio to connect to the input network and change selection mode to manual.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
 | `operatorNumeric` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the PLMN ID of the network to select. |
-| `persistSelection` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the selection will persist until reboot. If true, only allows attaching to the selected PLMN until reboot; otherwise, attach to the chosen PLMN and resume normal network selection next time. For devices launching with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this API will return `true` if the setting is applied successfully, regardless of whether attaching to the network is successful. Previously this behavior was ambiguous. For all hardware versions callers may always call `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getNetworkSelectionMode()` to unambiguously determine the state of the setting subsequent to calling #setNetworkSelectionModeManual. Regardless of the API level, rather than relying on the result of this method, callers should monitor `https://developer.android.com/reference/kotlin/android/telephony/ServiceState` for the state of network registration; they may also monitor `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getIsManualSelection()` for state changes in real time. |
+| `persistSelection` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the selection will persist until reboot. If true, only allows attaching to the selected PLMN until reboot; otherwise, attach to the chosen PLMN and resume normal network selection next time. For devices launching with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#BAKLAVA:kotlin.Int`, this API will return `true` if the setting is applied successfully, regardless of whether attaching to the network is successful. Previously this behavior was ambiguous. For all hardware versions callers may always call getNetworkSelectionMode to unambiguously determine the state of the setting subsequent to calling #setNetworkSelectionModeManual. Regardless of the API level, rather than relying on the result of this method, callers should monitor ServiceState for the state of network registration; they may also monitor getIsManualSelection for state changes in real time. |
 
 | Return ||
 |---|---|
@@ -6332,11 +6332,11 @@ open fun setNetworkSelectionModeManual(
 
 Ask the radio to connect to the input network and change selection mode to manual.
 
-If this object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`
+If this object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6363,8 +6363,8 @@ open fun setOperatorBrandOverride(brand: String!): Boolean
 
 Override the branding for the current ICCID. Once set, whenever the SIM is present in the device, the service provider name (SPN) and the operator name will both be replaced by the brand value input. To unset the value, the same function should be called with a null brand value.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6388,8 +6388,8 @@ open fun setPreferredNetworkTypeToGlobal(): Boolean
 
 Set the preferred network type to global mode which includes NR, LTE, CDMA, EvDo and GSM/WCDMA.
 
-Requires that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -6414,14 +6414,14 @@ open fun setPreferredOpportunisticDataSubscription(
 
 Set preferred opportunistic data subscription id. Switch internet data to preferred opportunistic data subscription id. This api can result in lose of internet connectivity for short period of time while internet data is handed over.
 
-Requires that the calling app has carrier privileges on both primary and secondary subscriptions (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`), or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires that the calling app has carrier privileges on both primary and secondary subscriptions (see hasCarrierPrivileges), or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_DATA:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
-| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): which opportunistic subscription `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getOpportunisticSubscriptions()` is preferred for cellular data. Pass `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#DEFAULT_SUBSCRIPTION_ID:kotlin.Int` to unset the preference |
+| `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): which opportunistic subscription getOpportunisticSubscriptions is preferred for cellular data. Pass `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#DEFAULT_SUBSCRIPTION_ID:kotlin.Int` to unset the preference |
 | `needValidation` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether validation is needed before switch happens. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor of where the callback will execute. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor of where the callback will execute. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `callback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>?: Callback will be triggered once it succeeds or failed. See the `SET_OPPORTUNISTIC_SUB_*` constants for more details. Pass null if don't care about the result. |
 
@@ -6437,11 +6437,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun setSignalStrengthUpdateRequest(request: SignalStrengthUpdateRequest): Unit
 ```
 
-Set a `https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest` to receive notification when signal quality measurements breach the specified thresholds. To be notified, set the signal strength update request and then register `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener` through #registerTelephonyCallback. The notification will arrive through `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener#onSignalStrengthsChanged(android.telephony.SignalStrength)`. To stop receiving the notification over the specified thresholds, pass the same `https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest` object to `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#clearSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)`. System will clean up the `https://developer.android.com/reference/kotlin/android/telephony/SignalStrengthUpdateRequest` if the caller process died without calling `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#clearSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)`. If this TelephonyManager object has been created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`, applies to the given subId. Otherwise, applies to `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager#getDefaultSubscriptionId()`. To request for multiple subIds, pass a request object to each TelephonyManager object created with `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#createForSubscriptionId(kotlin.Int)`.
+Set a SignalStrengthUpdateRequest to receive notification when signal quality measurements breach the specified thresholds. To be notified, set the signal strength update request and then register TelephonyCallback that implements `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback.SignalStrengthsListener` through #registerTelephonyCallback. The notification will arrive through onSignalStrengthsChanged. To stop receiving the notification over the specified thresholds, pass the same SignalStrengthUpdateRequest object to clearSignalStrengthUpdateRequest. System will clean up the SignalStrengthUpdateRequest if the caller process died without calling clearSignalStrengthUpdateRequest. If this TelephonyManager object has been created with createForSubscriptionId, applies to the given subId. Otherwise, applies to getDefaultSubscriptionId. To request for multiple subIds, pass a request object to each TelephonyManager object created with createForSubscriptionId.
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). Note that the thresholds in the request will be used on a best-effort basis; the system may modify requests to multiplex various request sources or to optimize power consumption. The caller should not expect to be notified with the exactly the same thresholds. 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). Note that the thresholds in the request will be used on a best-effort basis; the system may modify requests to multiplex various request sources or to optimize power consumption. The caller should not expect to be notified with the exactly the same thresholds. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6454,7 +6454,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#clearSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)`
+- clearSignalStrengthUpdateRequest
 
 ### setVisualVoicemailSmsFilterSettings
 
@@ -6464,8 +6464,8 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun setVisualVoicemailSmsFilterSettings(settings: VisualVoicemailSmsFilterSettings!): Unit
 ```
 
-Set the visual voicemail SMS filter settings for the subscription ID pinned to the TelephonyManager. When the filter is enabled, `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onSmsReceived(android.telephony.VisualVoicemailService.VisualVoicemailTask,%20android.telephony.VisualVoicemailSms)` will be called when a SMS matching the settings is received. Caller must be the default dialer, system dialer, or carrier visual voicemail app. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Set the visual voicemail SMS filter settings for the subscription ID pinned to the TelephonyManager. When the filter is enabled, onSmsReceived will be called when a SMS matching the settings is received. Caller must be the default dialer, system dialer, or carrier visual voicemail app. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6477,7 +6477,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`
+- getDefaultDialerPackage
 - `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_CARRIER_VVM_PACKAGE_NAME_STRING_ARRAY:kotlin.String`
 
 ### setVoiceMailNumber
@@ -6493,8 +6493,8 @@ open fun setVoiceMailNumber(
 
 Sets the voice mail number.
 
-Requires that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires that the calling app has carrier privileges (see hasCarrierPrivileges). 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6521,8 +6521,8 @@ open fun setVoicemailRingtoneUri(
 
 Sets the per-account voicemail ringtone.
 
-Requires that the calling app is the default dialer, or has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`, or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires that the calling app is the default dialer, or has carrier privileges (see hasCarrierPrivileges, or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6549,8 +6549,8 @@ open fun setVoicemailVibrationEnabled(
 
 Sets the per-account preference whether vibration is enabled for voicemail notifications.
 
-Requires that the calling app is the default dialer, or has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`, or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires that the calling app is the default dialer, or has carrier privileges (see hasCarrierPrivileges, or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6571,9 +6571,9 @@ open fun switchMultiSimConfig(numOfSims: Int): Unit
 
 Switch configs to enable multi-sim or switch back to single-sim
 
-Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`). Note: with only carrier privileges, it is not allowed to switch from multi-sim to single-sim. 
+Requires Permission: `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` or that the calling app has carrier privileges (see hasCarrierPrivileges). Note: with only carrier privileges, it is not allowed to switch from multi-sim to single-sim. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String` 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
@@ -6592,11 +6592,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterTelephonyCallback(callback: TelephonyCallback): Unit
 ```
 
-Unregister an existing `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback`.
+Unregister an existing TelephonyCallback.
 
 | Parameters ||
 |---|---|
-| `callback` | [TelephonyCallback](TelephonyCallback.md): The `https://developer.android.com/reference/kotlin/android/telephony/TelephonyCallback` object to unregister. This value cannot be `null`. |
+| `callback` | [TelephonyCallback](TelephonyCallback.md): The TelephonyCallback object to unregister. This value cannot be `null`. |
 
 ### updateAvailableNetworks
 
@@ -6610,13 +6610,13 @@ open fun updateAvailableNetworks(
 ): Unit
 ```
 
-Update availability of a list of networks in the current location. This api should be called to inform OpportunisticNetwork Service about the availability of a network at the current location. This information will be used by OpportunisticNetwork service to enable modem stack and to attach to the network. If an empty list is passed, it is assumed that no network is available and will result in disabling the modem stack to save power. This api do not switch internet data once network attach is completed. Use `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#setPreferredOpportunisticDataSubscription(kotlin.Int,%20kotlin.Boolean,%20java.util.concurrent.Executor,%20java.util.function.Consumer)` to switch internet data after network attach is complete. Requires that the calling app has carrier privileges on both primary and secondary subscriptions (see `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#hasCarrierPrivileges()`), or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Update availability of a list of networks in the current location. This api should be called to inform OpportunisticNetwork Service about the availability of a network at the current location. This information will be used by OpportunisticNetwork service to enable modem stack and to attach to the network. If an empty list is passed, it is assumed that no network is available and will result in disabling the modem stack to save power. This api do not switch internet data once network attach is completed. Use setPreferredOpportunisticDataSubscription to switch internet data after network attach is complete. Requires that the calling app has carrier privileges on both primary and secondary subscriptions (see hasCarrierPrivileges), or has permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MODIFY_PHONE_STATE:kotlin.String`. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_RADIO_ACCESS:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
 | `availableNetworks` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AvailableNetworkInfo](AvailableNetworkInfo.md)!\>: is a list of available network information. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor of where the callback will execute. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor of where the callback will execute. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>?: Callback will be triggered once it succeeds or failed. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_SUCCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_UNKNOWN_FAILURE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_ABORTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_INVALID_ARGUMENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_NO_CARRIER_PRIVILEGE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_DISABLE_MODEM_FAIL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_ENABLE_MODEM_FAIL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_MULTIPLE_NETWORKS_NOT_SUPPORTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_NO_OPPORTUNISTIC_SUB_AVAILABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_REMOTE_SERVICE_EXCEPTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_SERVICE_IS_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#UPDATE_AVAILABLE_NETWORKS_SIM_PORT_NOT_AVAILABLE:kotlin.Int` . This value may be `null`. |
 | --- | --- |
 
@@ -6637,14 +6637,14 @@ open fun uploadCallComposerPicture(
 ): Unit
 ```
 
-Uploads a picture to the carrier network for use with call composer. This method allows a dialer app to upload a picture to the carrier network that can then later be attached to an outgoing call. In order to attach the picture to a call, use the `https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#` returned from `callback` upon successful upload as the value to `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#EXTRA_OUTGOING_PICTURE:kotlin.String`. This functionality is only available to the app filling the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` role on the device. This functionality is only available when `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SUPPORTS_CALL_COMPOSER_BOOL:kotlin.String` is set to `true` in the bundle returned from `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getCarrierConfig()`. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Uploads a picture to the carrier network for use with call composer. This method allows a dialer app to upload a picture to the carrier network that can then later be attached to an outgoing call. In order to attach the picture to a call, use the `https://developer.android.com/reference/kotlin/android/os/ParcelUuid.html#` returned from `callback` upon successful upload as the value to `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#EXTRA_OUTGOING_PICTURE:kotlin.String`. This functionality is only available to the app filling the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` role on the device. This functionality is only available when `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#KEY_SUPPORTS_CALL_COMPOSER_BOOL:kotlin.String` is set to `true` in the bundle returned from getCarrierConfig. 
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
-| `pictureToUpload` | [InputStream](../java.io/InputStream.md): An `https://developer.android.com/reference/kotlin/java/io/InputStream.html#` that supplies the bytes representing the picture to upload. The client bears responsibility for closing this stream after `callback` is called with success or failure. Additionally, if the stream supplies more bytes than the return value of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#getMaximumCallComposerPictureSize()`, the upload will be aborted and the callback will be called with an exception containing `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CallComposerException#ERROR_FILE_TOO_LARGE:kotlin.Int`. This value cannot be `null`. |
+| `pictureToUpload` | [InputStream](../java.io/InputStream.md): An `https://developer.android.com/reference/kotlin/java/io/InputStream.html#` that supplies the bytes representing the picture to upload. The client bears responsibility for closing this stream after `callback` is called with success or failure. Additionally, if the stream supplies more bytes than the return value of getMaximumCallComposerPictureSize, the upload will be aborted and the callback will be called with an exception containing `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.CallComposerException#ERROR_FILE_TOO_LARGE:kotlin.Int`. This value cannot be `null`. |
 | `contentType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The MIME type of the picture you're uploading (e.g. image/jpeg). The list of acceptable content types can be found at 3GPP TS 26.141 sections 4.2 and 4.3. This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the `pictureToUpload` stream will be read, as well as on which the callback will be called. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the `pictureToUpload` stream will be read, as well as on which the callback will be called. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
 | --- | --- |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ParcelUuid](../android.os/ParcelUuid.md)!, [TelephonyManager.CallComposerException](../android/telephony/TelephonyManager.CallComposerException.md)!\>: A callback called when the upload operation terminates, either in success or in error. This value cannot be `null`. |
 
@@ -6666,13 +6666,13 @@ open fun uploadCallComposerPicture(
 ```
 
 Uploads a picture to the carrier network for use with call composer. 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_CALLING:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Parameters ||
 |---|---|
 | `pictureToUpload` | [Path](../java.nio.file/Path.md): Path to a local file containing the picture to upload. This value cannot be `null`. |
 | `contentType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The MIME type of the picture you're uploading (e.g. image/jpeg). This value cannot be `null`. |
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the `pictureToUpload` file will be read from disk, as well as on which `callback` will be called. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the `pictureToUpload` file will be read from disk, as well as on which `callback` will be called. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
 | --- | --- |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ParcelUuid](../android.os/ParcelUuid.md)!, [TelephonyManager.CallComposerException](../android/telephony/TelephonyManager.CallComposerException.md)!\>: A callback called when the upload operation terminates, either in success or in error. This value cannot be `null`. |
 
@@ -6682,7 +6682,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager#uploadCallComposerPicture(java.io.InputStream,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
+- uploadCallComposerPicture
 
 ## Properties
 

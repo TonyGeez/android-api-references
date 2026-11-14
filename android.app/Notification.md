@@ -10,7 +10,7 @@ open class Notification : Parcelable
 | --- | --- |
 | ↳ | [android.app.Notification](Notification.md) |
 
-A class that represents how a persistent notification is to be presented to the user using the `https://developer.android.com/reference/kotlin/android/app/NotificationManager`.
+A class that represents how a persistent notification is to be presented to the user using the NotificationManager.
 
 The `https://developer.android.com/reference/kotlin/android/app/Notification.Builder` has been added to make it easier to construct Notifications.
 
@@ -30,14 +30,14 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/app/Notification.BridgedNotificationMetadata` Encapsulates the information needed to display a notification as a bridged notification. |
 | | `https://developer.android.com/reference/kotlin/android/app/Notification.BubbleMetadata` Encapsulates the information needed to display a notification as a bubble. |
-| open | `https://developer.android.com/reference/kotlin/android/app/Notification.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/app/Notification#` objects. |
+| open | `https://developer.android.com/reference/kotlin/android/app/Notification.Builder` Builder class for Notification objects. |
 | --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` Helper class for generating large-format notifications that include a caller and required actions, such as an incoming call with answer / decline. |
 | | `https://developer.android.com/reference/kotlin/android/app/Notification.CarExtender` Helper class to add Android Auto extensions to notifications. |
 | open | `https://developer.android.com/reference/kotlin/android/app/Notification.DecoratedCustomViewStyle` Notification style for custom views that are decorated by the system |
 | --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/app/Notification.DecoratedMediaCustomViewStyle` Notification style for media custom views that are decorated by the system |
-| abstract | `https://developer.android.com/reference/kotlin/android/app/Notification.Extender` Extender interface for use with `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#extend(android.app.Notification.Extender)`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/app/Notification.Extender` Extender interface for use with extend. |
 | open | `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle` Helper class for generating large-format notifications that include a list of (up to 5) strings. |
 | --- | --- |
 | open | `https://developer.android.com/reference/kotlin/android/app/Notification.MediaStyle` Notification style for media playback notifications. |
@@ -56,10 +56,10 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | Constants ||
 |---|---|
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#ACTION_BRIDGED_NOTIFICATION_PREFERENCES:kotlin.String` An activity that provides a user interface for adjusting notification preferences for its bridged notification which originated on another device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#BADGE_ICON_LARGE:kotlin.Int` If this notification is being shown as a badge, use the `https://developer.android.com/reference/kotlin/android/app/Notification#getLargeIcon()` to represent this notification. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#BADGE_ICON_LARGE:kotlin.Int` If this notification is being shown as a badge, use the getLargeIcon to represent this notification. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#BADGE_ICON_NONE:kotlin.Int` If this notification is being shown as a badge, always show as a number. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#BADGE_ICON_SMALL:kotlin.Int` If this notification is being shown as a badge, use the `https://developer.android.com/reference/kotlin/android/app/Notification#getSmallIcon()` to represent this notification. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#BADGE_ICON_SMALL:kotlin.Int` If this notification is being shown as a badge, use the getSmallIcon to represent this notification. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#CATEGORY_ALARM:kotlin.String` Notification category: alarm or timer. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#CATEGORY_CALL:kotlin.String` Notification category: incoming call (voice or video) or similar synchronous communication request. |
 | --- | --- |
@@ -100,7 +100,7 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_AUDIO_CONTENTS_URI:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the audio contents of this notification. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_BACKGROUND_IMAGE_URI:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: flat `https://developer.android.com/reference/kotlin/java/lang/String.html#` representation of a `https://developer.android.com/reference/kotlin/android/content/ContentUris.html#` pointing to an image that can be displayed in the background when the notification is selected. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_BIG_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the longer text shown in the expanded form of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle` notification, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle#bigText(kotlin.CharSequence)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_BIG_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the longer text shown in the expanded form of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle` notification, as supplied to bigText. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_CALL_IS_VIDEO:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification is for a call that will activate video when answered. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_CALL_PERSON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the person to be displayed as calling for the `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. |
@@ -109,7 +109,7 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_CHANNEL_ID:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_CHRONOMETER_COUNT_DOWN:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the chronometer set on the notification should count down instead of counting up. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_COLORIZED:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the notification should be colorized as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setColorized(kotlin.Boolean)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_COLORIZED:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the notification should be colorized as supplied to setColorized. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_COMPACT_ACTIONS:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the indices of actions to be shown in the compact view, as supplied to (e.g.) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_CONVERSATION_TITLE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: a `https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#` to be displayed as the title to a conversation represented by a `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` |
@@ -117,13 +117,13 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_DECLINE_INTENT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users declines a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_HANG_UP_INTENT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users hangs up a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_HISTORIC_MESSAGES:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: an array of `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle#addHistoricMessage(android.app.Notification.MessagingStyle.Message)` `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` bundles provided by a `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_HISTORIC_MESSAGES:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: an array of addHistoricMessage `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` bundles provided by a `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_INFO_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a small piece of additional text as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setContentInfo(kotlin.CharSequence)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_INFO_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a small piece of additional text as supplied to setContentInfo. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_IS_GROUP_CONVERSATION:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification represents a group conversation. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_LARGE_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the small icon when showing the notification payload, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.Bitmap)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_LARGE_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the small icon when showing the notification payload, as supplied to setLargeIcon. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_LARGE_ICON_BIG:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the one from `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.Bitmap)` when the notification is shown in its expanded form, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigLargeIcon(android.graphics.Bitmap)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_LARGE_ICON_BIG:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the one from setLargeIcon when the notification is shown in its expanded form, as supplied to bigLargeIcon. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_MEDIA_SESSION:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: A `https://developer.android.com/reference/kotlin/android/media/session/MediaSession.Token.html#` associated with a `https://developer.android.com/reference/kotlin/android/app/Notification.MediaStyle` notification. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_MESSAGES:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: an array of `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` bundles provided by a `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. |
 | --- | --- |
@@ -131,36 +131,36 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_NOTIFICATION_ID:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_NOTIFICATION_TAG:kotlin.String` Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PEOPLE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: A String array containing the people that this notification relates to, each of which was supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#addPerson(kotlin.String)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PEOPLE_LIST:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An arrayList of `https://developer.android.com/reference/kotlin/android/app/Person` objects containing the people that this notification relates to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PICTURE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.Bitmap)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PEOPLE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: A String array containing the people that this notification relates to, each of which was supplied to addPerson. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PEOPLE_LIST:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An arrayList of Person objects containing the people that this notification relates to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PICTURE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to bigPicture. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PICTURE_CONTENT_DESCRIPTION:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a content description of the big picture supplied from `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.Bitmap)`, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#setContentDescription(kotlin.CharSequence)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PICTURE_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` of an image to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.drawable.Icon)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PICTURE_CONTENT_DESCRIPTION:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a content description of the big picture supplied from bigPicture, supplied to setContentDescription. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PICTURE_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` of an image to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to bigPicture. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PREFER_SMALL_ICON:kotlin.String` A boolean for `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` requesting that the notification card show the small icon instead of the launcher app icon. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PROGRESS:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the progress value supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PROGRESS_INDETERMINATE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the progress bar is indeterminate, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PROGRESS_MAX:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the maximum value supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PROGRESS:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the progress value supplied to setProgress. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PROGRESS_INDETERMINATE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the progress bar is indeterminate, supplied to setProgress. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PROGRESS_MAX:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the maximum value supplied to setProgress. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_REMOTE_INPUT_DRAFT:kotlin.String` If the notification contained an unsent draft for a RemoteInput when the user clicked on it, we're adding the draft as a String extra to the `https://developer.android.com/reference/kotlin/android/app/Notification#contentIntent:android.app.PendingIntent` using this key. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_REMOTE_INPUT_HISTORY:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the remote input history, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setRemoteInputHistory(kotlin.Array)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_REMOTE_INPUT_HISTORY:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the remote input history, as supplied to setRemoteInputHistory. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_REQUEST_PROMOTED_ONGOING:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: If provided, should contain a boolean indicating whether the notification is requesting promoted treatment. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SELF_DISPLAY_NAME:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the username to be displayed for all messages sent by the user including direct replies `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SHOW_BIG_PICTURE_WHEN_COLLAPSED:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a boolean to indicate that the `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.Bitmap)` is to be shown in the collapsed state of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` notification. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SHOW_CHRONOMETER:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown as a count-up timer (specifically a `https://developer.android.com/reference/kotlin/android/widget/Chronometer.html#`) instead of a timestamp, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setUsesChronometer(kotlin.Boolean)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SHOW_BIG_PICTURE_WHEN_COLLAPSED:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a boolean to indicate that the bigPicture is to be shown in the collapsed state of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` notification. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SHOW_CHRONOMETER:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown as a count-up timer (specifically a `https://developer.android.com/reference/kotlin/android/widget/Chronometer.html#`) instead of a timestamp, as supplied to setUsesChronometer. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SHOW_WHEN:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setShowWhen(kotlin.Boolean)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SMALL_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the resource ID of the notification's main small icon, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSmallIcon(kotlin.Int)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SUB_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a third line of text, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSubText(kotlin.CharSequence)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SHOW_WHEN:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown, as supplied to setShowWhen. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SMALL_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the resource ID of the notification's main small icon, as supplied to setSmallIcon. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SUB_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a third line of text, as supplied to setSubText. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_SUMMARY_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a line of summary information intended to be shown alongside expanded notifications, as supplied to (e.g.) |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TEMPLATE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: A string representing the name of the specific `https://developer.android.com/reference/kotlin/android/app/Notification.Style` used to create this notification. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the main text payload, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setContentText(kotlin.CharSequence)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TEXT:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the main text payload, as supplied to setContentText. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TEXT_LINES:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An array of CharSequences to show in `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle` expanded notifications, each of which was supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle#addLine(kotlin.CharSequence)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TITLE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setContentTitle(kotlin.CharSequence)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TEXT_LINES:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An array of CharSequences to show in `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle` expanded notifications, each of which was supplied to addLine. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TITLE:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification, as supplied to setContentTitle. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_TITLE_BIG:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification when shown in expanded form, e. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_VERIFICATION_ICON:kotlin.String` `https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the icon to be displayed as a verification status of the caller on a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. |
@@ -179,16 +179,16 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_ONGOING_EVENT:kotlin.Int` Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set if this notification is in reference to something that is ongoing, like a phone call. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_ONLY_ALERT_ONCE:kotlin.Int` Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set if you would only like the sound, vibrate and ticker to be played if the notification was not already showing. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_PROMOTED_ONGOING:kotlin.Int` Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set by the system if this notification is a promoted ongoing notification, both because it `https://developer.android.com/reference/kotlin/android/app/Notification#hasPromotableCharacteristics()` and the user has not disabled the feature for this app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_PROMOTED_ONGOING:kotlin.Int` Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set by the system if this notification is a promoted ongoing notification, both because it hasPromotableCharacteristics and the user has not disabled the feature for this app. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_SHOW_LIGHTS:kotlin.Int` Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set if you want the LED on for this notification. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFAULT:kotlin.Int` If the Notification associated with starting a foreground service has been built using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setForegroundServiceBehavior(kotlin.Int)` with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFAULT:kotlin.Int` If the Notification associated with starting a foreground service has been built using setForegroundServiceBehavior with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFERRED:kotlin.Int` If the Notification associated with starting a foreground service has been built using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setForegroundServiceBehavior(kotlin.Int)` with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_IMMEDIATE:kotlin.Int` If the Notification associated with starting a foreground service has been built using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setForegroundServiceBehavior(kotlin.Int)` with this behavior, display of the notification will be immediate even if the default behavior would be to defer visibility for a short time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#GROUP_ALERT_ALL:kotlin.Int` Constant for `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroupAlertBehavior(kotlin.Int)`, meaning that all notifications in a group with sound or vibration ought to make sound or vibrate (respectively), so this notification will not be muted when it is in a group. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFERRED:kotlin.Int` If the Notification associated with starting a foreground service has been built using setForegroundServiceBehavior with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_IMMEDIATE:kotlin.Int` If the Notification associated with starting a foreground service has been built using setForegroundServiceBehavior with this behavior, display of the notification will be immediate even if the default behavior would be to defer visibility for a short time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#GROUP_ALERT_ALL:kotlin.Int` Constant for setGroupAlertBehavior, meaning that all notifications in a group with sound or vibration ought to make sound or vibrate (respectively), so this notification will not be muted when it is in a group. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#GROUP_ALERT_CHILDREN:kotlin.Int` Constant for `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroupAlertBehavior(kotlin.Int)`, meaning that the summary notification in a group should be silenced (no sound or vibration) even if they are posted to a `https://developer.android.com/reference/kotlin/android/app/NotificationChannel` that has sound and/or vibration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#GROUP_ALERT_SUMMARY:kotlin.Int` Constant for `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroupAlertBehavior(kotlin.Int)`, meaning that all children notification in a group should be silenced (no sound or vibration) even if they are posted to a `https://developer.android.com/reference/kotlin/android/app/NotificationChannel` that has sound and/or vibration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#GROUP_ALERT_CHILDREN:kotlin.Int` Constant for setGroupAlertBehavior, meaning that the summary notification in a group should be silenced (no sound or vibration) even if they are posted to a NotificationChannel that has sound and/or vibration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#GROUP_ALERT_SUMMARY:kotlin.Int` Constant for setGroupAlertBehavior, meaning that all children notification in a group should be silenced (no sound or vibration) even if they are posted to a NotificationChannel that has sound and/or vibration. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String` An activity that provides a user interface for adjusting notification preferences for its containing application. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#PRIORITY_DEFAULT:kotlin.Int` Default notification `https://developer.android.com/reference/kotlin/android/app/Notification#priority:kotlin.Int`. |
@@ -212,64 +212,64 @@ The `https://developer.android.com/reference/kotlin/android/app/Notification.Bui
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/Notification#Notification()()` Constructs a Notification object with default values. |
-| `https://developer.android.com/reference/kotlin/android/app/Notification#Notification(android.os.Parcel)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!)` Unflatten the notification from a parcel. |
-| `https://developer.android.com/reference/kotlin/android/app/Notification#Notification(kotlin.Int,%20kotlin.CharSequence,%20kotlin.Long)(icon: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, tickerText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Constructs a Notification object with the information needed to have a status bar icon without the standard expanded view. |
+| Notification Constructs a Notification object with default values. |
+| Notification Unflatten the notification from a parcel. |
+| Notification Constructs a Notification object with the information needed to have a status bar icon without the standard expanded view. |
 
 | Public methods ||
 |---|---|
-| open [Notification](Notification.md)! | `https://developer.android.com/reference/kotlin/android/app/Notification#clone()()` Creates and returns a copy of this object. |
-| open static [Annotation](../android.text/Annotation.md) | `https://developer.android.com/reference/kotlin/android/app/Notification#createSemanticStyleAnnotation(kotlin.Int)(semanticStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs an `https://developer.android.com/reference/kotlin/android/text/Annotation.html#` that can be used to span text in a `https://developer.android.com/reference/kotlin/android/text/Spanned.html#` `https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#` in some Notification text fields, and which may then be converted into styling of that section of text in order to indicate the semantic style. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Notification](Notification.md)! | clone Creates and returns a copy of this object. |
+| open static [Annotation](../android.text/Annotation.md) | createSemanticStyleAnnotation Constructs an `https://developer.android.com/reference/kotlin/android/text/Annotation.html#` that can be used to span text in a `https://developer.android.com/reference/kotlin/android/text/Spanned.html#` `https://developer.android.com/reference/kotlin/java/lang/CharSequence.html#` in some Notification text fields, and which may then be converted into styling of that section of text in order to indicate the semantic style. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
-| open [Pair](../android.util/Pair.md)\< [RemoteInput](RemoteInput.md)!, [Notification.Action](../android/app/Notification.Action.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/Notification#findRemoteInputActionPair(kotlin.Boolean)(requiresFreeform: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Finds and returns a remote input and its corresponding action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#getAllowSystemGeneratedContextualActions()()` Returns whether the platform is allowed (by the app developer) to generate contextual actions for this notification. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#getBadgeIconType()()` Returns what icon should be shown for this notification if it is being displayed in a Launcher that supports badging. |
+| open [Pair](../android.util/Pair.md)\< [RemoteInput](RemoteInput.md)!, [Notification.Action](../android/app/Notification.Action.md)!\>? | findRemoteInputActionPair Finds and returns a remote input and its corresponding action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getAllowSystemGeneratedContextualActions Returns whether the platform is allowed (by the app developer) to generate contextual actions for this notification. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBadgeIconType Returns what icon should be shown for this notification if it is being displayed in a Launcher that supports badging. |
 | --- | --- |
-| open [Notification.BridgedNotificationMetadata](../android/app/Notification.BridgedNotificationMetadata.md)? | `https://developer.android.com/reference/kotlin/android/app/Notification#getBridgedNotificationMetadata()()` Returns the metadata associated with a notification originating on another device. |
-| open [Notification.BubbleMetadata](../android/app/Notification.BubbleMetadata.md)? | `https://developer.android.com/reference/kotlin/android/app/Notification#getBubbleMetadata()()` Returns the bubble metadata that will be used to display app content in a floating window over the existing foreground activity. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getChannelId()()` Returns the id of the channel this notification posts to. |
+| open [Notification.BridgedNotificationMetadata](../android/app/Notification.BridgedNotificationMetadata.md)? | getBridgedNotificationMetadata Returns the metadata associated with a notification originating on another device. |
+| open [Notification.BubbleMetadata](../android/app/Notification.BubbleMetadata.md)? | getBubbleMetadata Returns the bubble metadata that will be used to display app content in a floating window over the existing foreground activity. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getChannelId Returns the id of the channel this notification posts to. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Notification.Action](../android/app/Notification.Action.md)!\> | `https://developer.android.com/reference/kotlin/android/app/Notification#getContextualActions()()` Returns the actions that are contextual (that is, suggested because of the content of the notification) out of the actions in this notification. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getGroup()()` Get the key used to group this notification into a cluster or stack with other notifications on devices which support such rendering. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#getGroupAlertBehavior()()` Returns which type of notifications in a group are responsible for audibly alerting the user. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Notification.Action](../android/app/Notification.Action.md)!\> | getContextualActions Returns the actions that are contextual (that is, suggested because of the content of the notification) out of the actions in this notification. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getGroup Get the key used to group this notification into a cluster or stack with other notifications on devices which support such rendering. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGroupAlertBehavior Returns which type of notifications in a group are responsible for audibly alerting the user. |
 | --- | --- |
-| open [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getLargeIcon()()` The large icon shown in this notification's content view. |
-| open [LocusId](../android.content/LocusId.md)? | `https://developer.android.com/reference/kotlin/android/app/Notification#getLocusId()()` Gets the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` associated with this notification. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getSettingsText()()` Returns the settings text provided to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSettingsText(kotlin.CharSequence)`. |
+| open [Icon](../android.graphics.drawable/Icon.md)! | getLargeIcon The large icon shown in this notification's content view. |
+| open [LocusId](../android.content/LocusId.md)? | getLocusId Gets the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` associated with this notification. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getSettingsText Returns the settings text provided to setSettingsText. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/Notification#getShortCriticalText()()` Returns the very short text summarizing the most critical information contained in the notification, or `null` if this field was not set. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getShortcutId()()` Returns the `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId()` that this notification supersedes, if any. |
-| open [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getSmallIcon()()` The small icon representing this notification in the status bar. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getShortCriticalText Returns the very short text summarizing the most critical information contained in the notification, or `null` if this field was not set. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getShortcutId Returns the getId that this notification supersedes, if any. |
+| open [Icon](../android.graphics.drawable/Icon.md)! | getSmallIcon The small icon representing this notification in the status bar. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/Notification#getSortKey()()` Get a sort key that orders this notification among other notifications from the same package. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#getTimeoutAfter()()` Returns the duration from posting after which this notification should be canceled by the system, if it's not canceled already. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#hasImage()()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSortKey Get a sort key that orders this notification among other notifications from the same package. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimeoutAfter Returns the duration from posting after which this notification should be canceled by the system, if it's not canceled already. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasImage <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#hasPromotableCharacteristics()()` Returns whether the notification has all the characteristics that make it eligible for `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_PROMOTED_ONGOING:kotlin.Int`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#hasSummarizedContent()()` Returns whether this notification contains computationally summarized text. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#isRequestPromotedOngoing()()` Returns whether this notification has requested to be a promoted ongoing notification. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasPromotableCharacteristics Returns whether the notification has all the characteristics that make it eligible for `https://developer.android.com/reference/kotlin/android/app/Notification#FLAG_PROMOTED_ONGOING:kotlin.Int`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSummarizedContent Returns whether this notification contains computationally summarized text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isRequestPromotedOngoing Returns whether this notification has requested to be a promoted ongoing notification. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this notification into a parcel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this notification into a parcel. |
 
 | Properties ||
 |---|---|
 | static [AudioAttributes](../android.media/AudioAttributes.md)! | `https://developer.android.com/reference/kotlin/android/app/Notification#AUDIO_ATTRIBUTES_DEFAULT:android.media.AudioAttributes` The default value of `https://developer.android.com/reference/kotlin/android/app/Notification#audioAttributes:android.media.AudioAttributes`. |
 | static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Notification](Notification.md)!\> | `https://developer.android.com/reference/kotlin/android/app/Notification#CREATOR:android.os.Parcelable.Creator` Parcelable. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Notification.Action](../android/app/Notification.Action.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/Notification#actions:kotlin.Array` Array of all `https://developer.android.com/reference/kotlin/android/app/Notification.Action` structures attached to this notification by `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#addAction(kotlin.Int,%20kotlin.CharSequence,%20android.app.PendingIntent)`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Notification.Action](../android/app/Notification.Action.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/Notification#actions:kotlin.Array` Array of all `https://developer.android.com/reference/kotlin/android/app/Notification.Action` structures attached to this notification by addAction. |
 | --- | --- |
 | [AudioAttributes](../android.media/AudioAttributes.md)! | `https://developer.android.com/reference/kotlin/android/app/Notification#audioAttributes:android.media.AudioAttributes` The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` to use when playing the sound. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/Notification#audioStreamType:kotlin.Int` The audio stream type to use when playing the sound. |
@@ -331,7 +331,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val BADGE_ICON_LARGE: Int
 ```
 
-If this notification is being shown as a badge, use the `https://developer.android.com/reference/kotlin/android/app/Notification#getLargeIcon()` to represent this notification.
+If this notification is being shown as a badge, use the getLargeIcon to represent this notification.
 
  Value: 2
 
@@ -355,7 +355,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val BADGE_ICON_SMALL: Int
 ```
 
-If this notification is being shown as a badge, use the `https://developer.android.com/reference/kotlin/android/app/Notification#getSmallIcon()` to represent this notification.
+If this notification is being shown as a badge, use the getSmallIcon to represent this notification.
 
  Value: 1
 
@@ -707,7 +707,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ANSWER_INTENT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users answers a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a `https://developer.android.com/reference/kotlin/android/app/PendingIntent`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users answers a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a PendingIntent.
 
  Value: "android.answerIntent"
 
@@ -725,7 +725,7 @@ This is for use when rendering the notification on an audio-focused interface; t
 
 The data stored under this key should be a String representation of a Uri that contains the audio contents in one of the following formats: WAV, PCM 16-bit, AMR-WB.
 
-This extra is unnecessary if you are using `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` since each `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` has a field for holding data URI. That field can be used for audio. See `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message#setData(kotlin.String,%20android.net.Uri)`.
+This extra is unnecessary if you are using `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` since each `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` has a field for holding data URI. That field can be used for audio. See setData.
 
 Example usage:
 
@@ -745,7 +745,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_BACKGROUND_IMAGE_URI: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: flat `https://developer.android.com/reference/kotlin/java/lang/String.html#` representation of a `https://developer.android.com/reference/kotlin/android/content/ContentUris.html#` pointing to an image that can be displayed in the background when the notification is selected. Used on television platforms. The URI must point to an image stream suitable for passing into `https://developer.android.com/reference/kotlin/android/graphics/BitmapFactory.html#decodeStream(java.io.InputStream)`; all other content types will be ignored.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: flat `https://developer.android.com/reference/kotlin/java/lang/String.html#` representation of a `https://developer.android.com/reference/kotlin/android/content/ContentUris.html#` pointing to an image that can be displayed in the background when the notification is selected. Used on television platforms. The URI must point to an image stream suitable for passing into decodeStream; all other content types will be ignored.
 
  Value: "android.backgroundImageUri"
 
@@ -757,7 +757,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_BIG_TEXT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the longer text shown in the expanded form of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle` notification, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle#bigText(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the longer text shown in the expanded form of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle` notification, as supplied to bigText.
 
  Value: "android.bigText"
 
@@ -781,7 +781,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CALL_PERSON: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the person to be displayed as calling for the `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a `https://developer.android.com/reference/kotlin/android/app/Person`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the person to be displayed as calling for the `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a Person.
 
  Value: "android.callPerson"
 
@@ -805,7 +805,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CHANNEL_GROUP_ID: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain a `https://developer.android.com/reference/kotlin/android/app/NotificationChannelGroup#getId()` that can be used to narrow down what settings should be shown in the target app.
+Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain a getId that can be used to narrow down what settings should be shown in the target app.
 
  Value: "android.intent.extra.CHANNEL_GROUP_ID"
 
@@ -817,7 +817,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CHANNEL_ID: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain a `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getId()` that can be used to narrow down what settings should be shown in the target app.
+Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain a getId that can be used to narrow down what settings should be shown in the target app.
 
  Value: "android.intent.extra.CHANNEL_ID"
 
@@ -841,7 +841,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_COLORIZED: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the notification should be colorized as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setColorized(kotlin.Boolean)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the notification should be colorized as supplied to setColorized.
 
  Value: "android.colorized"
 
@@ -853,7 +853,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_COMPACT_ACTIONS: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the indices of actions to be shown in the compact view, as supplied to (e.g.) `https://developer.android.com/reference/kotlin/android/app/Notification.MediaStyle#setShowActionsInCompactView(kotlin.Int)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the indices of actions to be shown in the compact view, as supplied to (e.g.) setShowActionsInCompactView.
 
  Value: "android.compactActions"
 
@@ -889,7 +889,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_DECLINE_INTENT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users declines a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a `https://developer.android.com/reference/kotlin/android/app/PendingIntent`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users declines a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a PendingIntent.
 
  Value: "android.declineIntent"
 
@@ -901,7 +901,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_HANG_UP_INTENT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users hangs up a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a `https://developer.android.com/reference/kotlin/android/app/PendingIntent`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the intent to be sent when the users hangs up a `https://developer.android.com/reference/kotlin/android/app/Notification.CallStyle` notification. This extra is a PendingIntent.
 
  Value: "android.hangUpIntent"
 
@@ -913,7 +913,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_HISTORIC_MESSAGES: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: an array of `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle#addHistoricMessage(android.app.Notification.MessagingStyle.Message)` `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` bundles provided by a `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. This extra is a parcelable array of bundles.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: an array of addHistoricMessage `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle.Message` bundles provided by a `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. This extra is a parcelable array of bundles.
 
  Value: "android.messages.historic"
 
@@ -925,7 +925,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_INFO_TEXT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a small piece of additional text as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setContentInfo(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a small piece of additional text as supplied to setContentInfo.
 
  Value: "android.infoText"
 
@@ -950,9 +950,9 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 static val EXTRA_LARGE_ICON: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/Notification#getLargeIcon()`, which supports a wider variety of icon sources.*
+**Deprecated:** *Use getLargeIcon, which supports a wider variety of icon sources.*
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the small icon when showing the notification payload, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.Bitmap)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the small icon when showing the notification payload, as supplied to setLargeIcon.
 
  Value: "android.largeIcon"
 
@@ -964,7 +964,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_LARGE_ICON_BIG: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the one from `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.Bitmap)` when the notification is shown in its expanded form, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigLargeIcon(android.graphics.Bitmap)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be used instead of the one from setLargeIcon when the notification is shown in its expanded form, as supplied to bigLargeIcon.
 
  Value: "android.largeIcon.big"
 
@@ -1000,7 +1000,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_MESSAGING_PERSON: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the person to be displayed for all messages sent by the user including direct replies `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. This extra is a `https://developer.android.com/reference/kotlin/android/app/Person`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: the person to be displayed for all messages sent by the user including direct replies `https://developer.android.com/reference/kotlin/android/app/Notification.MessagingStyle` notification. This extra is a Person.
 
  Value: "android.messagingUser"
 
@@ -1012,7 +1012,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NOTIFICATION_ID: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain the id provided to `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notify(kotlin.String,%20kotlin.Int,%20android.app.Notification)` that can be used to narrow down what settings should be shown in the target app.
+Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain the id provided to notify that can be used to narrow down what settings should be shown in the target app.
 
  Value: "android.intent.extra.NOTIFICATION_ID"
 
@@ -1024,7 +1024,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NOTIFICATION_TAG: String
 ```
 
-Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain the tag provided to `https://developer.android.com/reference/kotlin/android/app/NotificationManager#notify(kotlin.String,%20kotlin.Int,%20android.app.Notification)` that can be used to narrow down what settings should be shown in the target app.
+Optional extra for `https://developer.android.com/reference/kotlin/android/app/Notification#INTENT_CATEGORY_NOTIFICATION_PREFERENCES:kotlin.String`. If provided, will contain the tag provided to notify that can be used to narrow down what settings should be shown in the target app.
 
  Value: "android.intent.extra.NOTIFICATION_TAG"
 
@@ -1039,7 +1039,7 @@ static val EXTRA_PEOPLE: String
 
 **Deprecated:** *the actual objects are now in `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_PEOPLE_LIST:kotlin.String`*
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: A String array containing the people that this notification relates to, each of which was supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#addPerson(kotlin.String)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: A String array containing the people that this notification relates to, each of which was supplied to addPerson.
 
  Value: "android.people"
 
@@ -1051,7 +1051,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PEOPLE_LIST: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An arrayList of `https://developer.android.com/reference/kotlin/android/app/Person` objects containing the people that this notification relates to.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An arrayList of Person objects containing the people that this notification relates to.
 
  Value: "android.people.list"
 
@@ -1063,7 +1063,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PICTURE: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.Bitmap)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a bitmap to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to bigPicture.
 
  Value: "android.picture"
 
@@ -1075,7 +1075,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PICTURE_CONTENT_DESCRIPTION: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a content description of the big picture supplied from `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.Bitmap)`, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#setContentDescription(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a content description of the big picture supplied from bigPicture, supplied to setContentDescription.
 
  Value: "android.pictureContentDescription"
 
@@ -1087,7 +1087,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PICTURE_ICON: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` of an image to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.drawable.Icon)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is an `https://developer.android.com/reference/kotlin/android/graphics/drawable/Icon.html#` of an image to be shown in `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` expanded notifications, supplied to bigPicture.
 
  Value: "android.pictureIcon"
 
@@ -1111,7 +1111,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PROGRESS: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the progress value supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the progress value supplied to setProgress.
 
  Value: "android.progress"
 
@@ -1123,7 +1123,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PROGRESS_INDETERMINATE: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the progress bar is indeterminate, supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether the progress bar is indeterminate, supplied to setProgress.
 
  Value: "android.progressIndeterminate"
 
@@ -1135,7 +1135,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PROGRESS_MAX: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the maximum value supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setProgress(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the maximum value supplied to setProgress.
 
  Value: "android.progressMax"
 
@@ -1161,9 +1161,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_REMOTE_INPUT_HISTORY: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the remote input history, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setRemoteInputHistory(kotlin.Array)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the remote input history, as supplied to setRemoteInputHistory.
 
-Apps can fill this through `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setRemoteInputHistory(kotlin.Array)` with the most recent inputs that have been sent through a `https://developer.android.com/reference/kotlin/android/app/RemoteInput` of this Notification and are expected to clear it once the it is no longer relevant (e.g. for chat notifications once the other party has responded).
+Apps can fill this through setRemoteInputHistory with the most recent inputs that have been sent through a RemoteInput of this Notification and are expected to clear it once the it is no longer relevant (e.g. for chat notifications once the other party has responded).
 
 The extra with this key is of type `CharSequence[]` and contains the most recent entry at the 0 index, the second most recent at the 1 index, etc.
 
@@ -1171,7 +1171,7 @@ The extra with this key is of type `CharSequence[]` and contains the most recent
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setRemoteInputHistory(kotlin.Array)`
+- setRemoteInputHistory
 
 ### EXTRA_REQUEST_PROMOTED_ONGOING
 
@@ -1208,7 +1208,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SHOW_BIG_PICTURE_WHEN_COLLAPSED: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a boolean to indicate that the `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle#bigPicture(android.graphics.Bitmap)` is to be shown in the collapsed state of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` notification. This will replace a `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.drawable.Icon)` in that state if one was provided.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a boolean to indicate that the bigPicture is to be shown in the collapsed state of a `https://developer.android.com/reference/kotlin/android/app/Notification.BigPictureStyle` notification. This will replace a setLargeIcon in that state if one was provided.
 
  Value: "android.showBigPictureWhenCollapsed"
 
@@ -1220,7 +1220,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SHOW_CHRONOMETER: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown as a count-up timer (specifically a `https://developer.android.com/reference/kotlin/android/widget/Chronometer.html#`) instead of a timestamp, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setUsesChronometer(kotlin.Boolean)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown as a count-up timer (specifically a `https://developer.android.com/reference/kotlin/android/widget/Chronometer.html#`) instead of a timestamp, as supplied to setUsesChronometer.
 
  Value: "android.showChronometer"
 
@@ -1232,7 +1232,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SHOW_WHEN: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setShowWhen(kotlin.Boolean)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: whether `https://developer.android.com/reference/kotlin/android/app/Notification#when:kotlin.Long` should be shown, as supplied to setShowWhen.
 
  Value: "android.showWhen"
 
@@ -1245,9 +1245,9 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 static val EXTRA_SMALL_ICON: String
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/Notification#getSmallIcon()`, which supports a wider variety of icon sources.*
+**Deprecated:** *Use getSmallIcon, which supports a wider variety of icon sources.*
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the resource ID of the notification's main small icon, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSmallIcon(kotlin.Int)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the resource ID of the notification's main small icon, as supplied to setSmallIcon.
 
  Value: "android.icon"
 
@@ -1259,7 +1259,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SUB_TEXT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a third line of text, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSubText(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a third line of text, as supplied to setSubText.
 
  Value: "android.subText"
 
@@ -1271,7 +1271,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SUMMARY_TEXT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a line of summary information intended to be shown alongside expanded notifications, as supplied to (e.g.) `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle#setSummaryText(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is a line of summary information intended to be shown alongside expanded notifications, as supplied to (e.g.) setSummaryText.
 
  Value: "android.summaryText"
 
@@ -1295,7 +1295,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_TEXT: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the main text payload, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setContentText(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the main text payload, as supplied to setContentText.
 
  Value: "android.text"
 
@@ -1307,7 +1307,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_TEXT_LINES: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An array of CharSequences to show in `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle` expanded notifications, each of which was supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle#addLine(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: An array of CharSequences to show in `https://developer.android.com/reference/kotlin/android/app/Notification.InboxStyle` expanded notifications, each of which was supplied to addLine.
 
  Value: "android.textLines"
 
@@ -1319,7 +1319,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_TITLE: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification, as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setContentTitle(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification, as supplied to setContentTitle.
 
  Value: "android.title"
 
@@ -1331,7 +1331,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_TITLE_BIG: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification when shown in expanded form, e.g. as supplied to `https://developer.android.com/reference/kotlin/android/app/Notification.BigTextStyle#setBigContentTitle(kotlin.CharSequence)`.
+`https://developer.android.com/reference/kotlin/android/app/Notification#extras:android.os.Bundle` key: this is the title of the notification when shown in expanded form, e.g. as supplied to setBigContentTitle.
 
  Value: "android.title.big"
 
@@ -1381,7 +1381,7 @@ static val FLAG_BUBBLE: Int
 
 Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set by the system if this notification is showing as a bubble.
 
-Applications cannot set this flag directly; they should instead call `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setBubbleMetadata(android.app.Notification.BubbleMetadata)` to request that a notification be displayed as a bubble, and then check this flag to see whether that request was honored by the system.
+Applications cannot set this flag directly; they should instead call setBubbleMetadata to request that a notification be displayed as a bubble, and then check this flag to see whether that request was honored by the system.
 
  Value: 4096
 
@@ -1405,7 +1405,7 @@ Added in [API level 20](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_GROUP_SUMMARY: Int
 ```
 
-Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set if this notification is the group summary for a group of notifications. Grouped notifications may display in a cluster or stack on devices which support such rendering. Requires a group key also be set using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroup(kotlin.String)`.
+Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set if this notification is the group summary for a group of notifications. Grouped notifications may display in a cluster or stack on devices which support such rendering. Requires a group key also be set using setGroup.
 
  Value: 512
 
@@ -1494,7 +1494,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_PROMOTED_ONGOING: Int
 ```
 
-Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set by the system if this notification is a promoted ongoing notification, both because it `https://developer.android.com/reference/kotlin/android/app/Notification#hasPromotableCharacteristics()` and the user has not disabled the feature for this app.
+Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set by the system if this notification is a promoted ongoing notification, both because it hasPromotableCharacteristics and the user has not disabled the feature for this app.
 
 Applications cannot set this flag directly, but the posting app and `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` can read it.
 
@@ -1509,7 +1509,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 static val FLAG_SHOW_LIGHTS: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#shouldShowLights()`.*
+**Deprecated:** *use shouldShowLights.*
 
 Bit to be bitwise-ORed into the `https://developer.android.com/reference/kotlin/android/app/Notification#flags:kotlin.Int` field that should be set if you want the LED on for this notification.
 
@@ -1533,7 +1533,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val FOREGROUND_SERVICE_DEFAULT: Int
 ```
 
-If the Notification associated with starting a foreground service has been built using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setForegroundServiceBehavior(kotlin.Int)` with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. 
+If the Notification associated with starting a foreground service has been built using setForegroundServiceBehavior with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. 
 Value is one of the following:
 
 - `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFAULT:kotlin.Int`
@@ -1552,7 +1552,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val FOREGROUND_SERVICE_DEFERRED: Int
 ```
 
-If the Notification associated with starting a foreground service has been built using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setForegroundServiceBehavior(kotlin.Int)` with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. 
+If the Notification associated with starting a foreground service has been built using setForegroundServiceBehavior with this behavior, display of the notification will usually be suppressed for a short time to avoid visual disturbances to the user. 
 Value is one of the following:
 
 - `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFAULT:kotlin.Int`
@@ -1571,7 +1571,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val FOREGROUND_SERVICE_IMMEDIATE: Int
 ```
 
-If the Notification associated with starting a foreground service has been built using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setForegroundServiceBehavior(kotlin.Int)` with this behavior, display of the notification will be immediate even if the default behavior would be to defer visibility for a short time. 
+If the Notification associated with starting a foreground service has been built using setForegroundServiceBehavior with this behavior, display of the notification will be immediate even if the default behavior would be to defer visibility for a short time. 
 Value is one of the following:
 
 - `https://developer.android.com/reference/kotlin/android/app/Notification#FOREGROUND_SERVICE_DEFAULT:kotlin.Int`
@@ -1590,7 +1590,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val GROUP_ALERT_ALL: Int
 ```
 
-Constant for `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroupAlertBehavior(kotlin.Int)`, meaning that all notifications in a group with sound or vibration ought to make sound or vibrate (respectively), so this notification will not be muted when it is in a group.
+Constant for setGroupAlertBehavior, meaning that all notifications in a group with sound or vibration ought to make sound or vibrate (respectively), so this notification will not be muted when it is in a group.
 
  Value: 0
 
@@ -1602,7 +1602,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val GROUP_ALERT_CHILDREN: Int
 ```
 
-Constant for `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroupAlertBehavior(kotlin.Int)`, meaning that the summary notification in a group should be silenced (no sound or vibration) even if they are posted to a `https://developer.android.com/reference/kotlin/android/app/NotificationChannel` that has sound and/or vibration. Use this constant to mute this notification if this notification is a group summary.
+Constant for setGroupAlertBehavior, meaning that the summary notification in a group should be silenced (no sound or vibration) even if they are posted to a NotificationChannel that has sound and/or vibration. Use this constant to mute this notification if this notification is a group summary.
 
 For example, you might want to use this constant if only the children notifications in your group have content and the summary is only used to visually group notifications rather than to alert the user that new information is available.
 
@@ -1616,7 +1616,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val GROUP_ALERT_SUMMARY: Int
 ```
 
-Constant for `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroupAlertBehavior(kotlin.Int)`, meaning that all children notification in a group should be silenced (no sound or vibration) even if they are posted to a `https://developer.android.com/reference/kotlin/android/app/NotificationChannel` that has sound and/or vibration. Use this constant to mute this notification if this notification is a group child. This must be applied to all children notifications you want to mute.
+Constant for setGroupAlertBehavior, meaning that all children notification in a group should be silenced (no sound or vibration) even if they are posted to a NotificationChannel that has sound and/or vibration. Use this constant to mute this notification if this notification is a group child. This must be applied to all children notifications you want to mute.
 
 For example, you might want to use this constant if you post a number of children notifications at once (say, after a periodic sync), and only need to notify the user audibly once.
 
@@ -1786,7 +1786,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 static val STREAM_DEFAULT: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getAudioAttributes()` instead.*
+**Deprecated:** *Use getAudioAttributes instead.*
 
 Use this constant as the value for audioStreamType to request that the default stream type for notifications be used. Currently the default stream type is `https://developer.android.com/reference/kotlin/android/media/AudioManager.html#STREAM_NOTIFICATION:kotlin.Int`.
 
@@ -1947,7 +1947,7 @@ Semantic style will only be applied to text appearance in notifications that are
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/text/Spannable.html#setSpan(kotlin.Any,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- setSpan
 
 ### describeContents
 
@@ -1957,7 +1957,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -2088,8 +2088,8 @@ open fun getLargeIcon(): Icon!
 The large icon shown in this notification's content view.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Notification#getLargeIcon()`
-- `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.drawable.Icon)`
+- getLargeIcon
+- setLargeIcon
 
 ### getLocusId
 
@@ -2115,7 +2115,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getSettingsText(): CharSequence!
 ```
 
-Returns the settings text provided to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSettingsText(kotlin.CharSequence)`.
+Returns the settings text provided to setSettingsText.
 
 ### getShortCriticalText
 
@@ -2135,7 +2135,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun getShortcutId(): String!
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.html#getId()` that this notification supersedes, if any.
+Returns the getId that this notification supersedes, if any.
 
 Used by some Launchers that display notification content to hide shortcuts that duplicate notifications.
 
@@ -2155,8 +2155,8 @@ The small icon representing this notification in the status bar.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Notification#getSmallIcon()`
-- `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSmallIcon(android.graphics.drawable.Icon)`
+- getSmallIcon
+- setSmallIcon
 
 ### getSortKey
 
@@ -2168,10 +2168,10 @@ open fun getSortKey(): String!
 
 Get a sort key that orders this notification among other notifications from the same package. This can be useful if an external sort was already applied and an app would like to preserve this. Notifications will be sorted lexicographically using this value, although providing different priorities in addition to providing sort key may cause this value to be ignored.
 
-This sort key can also be used to order members of a notification group. See `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setGroup(kotlin.String)`.
+This sort key can also be used to order members of a notification group. See setGroup.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/String.html#compareTo(kotlin.String)`
+- compareTo
 
 ### getTimeoutAfter
 
@@ -2227,7 +2227,7 @@ Returns whether this notification has requested to be a promoted ongoing notific
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/app/Notification#EXTRA_REQUEST_PROMOTED_ONGOING:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setRequestPromotedOngoing(kotlin.Boolean)`
+- setRequestPromotedOngoing
 
 ### toString
 
@@ -2291,7 +2291,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 var actions: Array<Notification.Action!>!
 ```
 
-Array of all `https://developer.android.com/reference/kotlin/android/app/Notification.Action` structures attached to this notification by `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#addAction(kotlin.Int,%20kotlin.CharSequence,%20android.app.PendingIntent)`. Mostly useful for instances of `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` that provide an alternative interface for invoking actions.
+Array of all `https://developer.android.com/reference/kotlin/android/app/Notification.Action` structures attached to this notification by addAction. Mostly useful for instances of `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService.html#` that provide an alternative interface for invoking actions.
 
 ### audioAttributes
 
@@ -2302,7 +2302,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var audioAttributes: AudioAttributes!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getAudioAttributes()` instead.*
+**Deprecated:** *use getAudioAttributes instead.*
 
 The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes.html#` to use when playing the sound.
 
@@ -2332,7 +2332,7 @@ var bigContentView: RemoteViews!
 
 A large-format version of `https://developer.android.com/reference/kotlin/android/app/Notification#contentView:android.widget.RemoteViews`, giving the Notification an opportunity to show more detail when expanded. The system UI may choose to show this instead of the normal content view at its discretion.
 
-As of N, this field may be null. The expanded notification view is determined by the inputs to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder`; a custom RemoteViews can optionally be supplied with `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setCustomBigContentView(android.widget.RemoteViews)`.
+As of N, this field may be null. The expanded notification view is determined by the inputs to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder`; a custom RemoteViews can optionally be supplied with setCustomBigContentView.
 
 ### category
 
@@ -2379,7 +2379,7 @@ var contentView: RemoteViews!
 
 The view that will represent this notification in the notification list (which is pulled down from the status bar).
 
-As of N, this field may be null. The notification view is determined by the inputs to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder`; a custom RemoteViews can optionally be supplied with `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setCustomContentView(android.widget.RemoteViews)`.
+As of N, this field may be null. The notification view is determined by the inputs to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder`; a custom RemoteViews can optionally be supplied with setCustomContentView.
 
 ### defaults
 
@@ -2390,7 +2390,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var defaults: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getSound()` and `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#shouldShowLights()` and `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#shouldVibrate()`.*
+**Deprecated:** *use getSound and shouldShowLights and shouldVibrate.*
 
 Specifies which values should be taken from the defaults.
 
@@ -2441,7 +2441,7 @@ An intent to launch instead of posting the notification to the status bar.
 The system UI may choose to display a heads-up notification, instead of launching this intent, while the user is using the device.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setFullScreenIntent(android.app.PendingIntent,%20kotlin.Boolean)`
+- setFullScreenIntent
 
 ### headsUpContentView
 
@@ -2456,7 +2456,7 @@ var headsUpContentView: RemoteViews!
 
 A medium-format version of `https://developer.android.com/reference/kotlin/android/app/Notification#contentView:android.widget.RemoteViews`, providing the Notification an opportunity to add action buttons to contentView. At its discretion, the system UI may choose to show this as a heads-up notification, which will pop up so the user can see it without leaving their current activity.
 
-As of N, this field may be null. The heads-up notification view is determined by the inputs to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder`; a custom RemoteViews can optionally be supplied with `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setCustomHeadsUpContentView(android.widget.RemoteViews)`.
+As of N, this field may be null. The heads-up notification view is determined by the inputs to `https://developer.android.com/reference/kotlin/android/app/Notification.Builder`; a custom RemoteViews can optionally be supplied with setCustomHeadsUpContentView.
 
 ### icon
 
@@ -2467,7 +2467,7 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 var icon: Int
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setSmallIcon(android.graphics.drawable.Icon)` instead.*
+**Deprecated:** *Use setSmallIcon instead.*
 
 The resource id of a drawable to use as the icon in the status bar.
 
@@ -2482,8 +2482,8 @@ var iconLevel: Int
 If the icon in the status bar is to have more than one level, you can set this. Otherwise, leave it at its default value of 0.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/widget/ImageView.html#setImageLevel(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#setLevel(kotlin.Int)`
+- setImageLevel
+- setLevel
 
 ### largeIcon
 
@@ -2494,7 +2494,7 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 var largeIcon: Bitmap!
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setLargeIcon(android.graphics.drawable.Icon)` instead.*
+**Deprecated:** *Use setLargeIcon instead.*
 
 A large bitmap to be shown in the notification content area.
 
@@ -2507,7 +2507,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var ledARGB: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#shouldShowLights()`.*
+**Deprecated:** *use shouldShowLights.*
 
 The color of the led. The hardware will do its best approximation.
 **See Also**
@@ -2524,7 +2524,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var ledOffMS: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#shouldShowLights()`.*
+**Deprecated:** *use shouldShowLights.*
 
 The number of milliseconds for the LED to be off while it's flashing. The hardware will do its best approximation.
 **See Also**
@@ -2541,7 +2541,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var ledOnMS: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#shouldShowLights()`.*
+**Deprecated:** *use shouldShowLights.*
 
 The number of milliseconds for the LED to be on while it's flashing. The hardware will do its best approximation.
 **See Also**
@@ -2570,7 +2570,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var priority: Int
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getImportance()` instead.*
+**Deprecated:** *use getImportance instead.*
 
 Relative priority for this notification.
 
@@ -2605,7 +2605,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var sound: Uri!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getSound()`.*
+**Deprecated:** *use getSound.*
 
 The sound to play.
 
@@ -2652,14 +2652,14 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 var vibrate: LongArray!
 ```
 
-**Deprecated:** *use `https://developer.android.com/reference/kotlin/android/app/NotificationChannel#getVibrationPattern()`.*
+**Deprecated:** *use getVibrationPattern.*
 
 The pattern with which to vibrate.
 
 To vibrate the default pattern, see `https://developer.android.com/reference/kotlin/android/app/Notification#defaults:kotlin.Int`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Vibrator.html#vibrate(kotlin.LongArray,%20kotlin.Int)`
+- vibrate
 
 ### visibility
 
@@ -2673,7 +2673,7 @@ Sphere of visibility of this notification, which affects how and when the System
 
 The default level, `https://developer.android.com/reference/kotlin/android/app/Notification#VISIBILITY_PRIVATE:kotlin.Int`, behaves exactly as notifications have always done on Android: The notification's `https://developer.android.com/reference/kotlin/android/app/Notification#icon:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/Notification#tickerText:kotlin.CharSequence` (if available) are shown in all situations, but the contents are only available if the device is unlocked for the appropriate user and there is no active screen sharing session.
 
-A more permissive policy can be expressed by `https://developer.android.com/reference/kotlin/android/app/Notification#VISIBILITY_PUBLIC:kotlin.Int`; such a notification can be read even in an "insecure" context (that is, above a secure lockscreen or while screen sharing with a remote viewer). To modify the public version of this notification---for example, to redact some portions---see `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setPublicVersion(android.app.Notification)`.
+A more permissive policy can be expressed by `https://developer.android.com/reference/kotlin/android/app/Notification#VISIBILITY_PUBLIC:kotlin.Int`; such a notification can be read even in an "insecure" context (that is, above a secure lockscreen or while screen sharing with a remote viewer). To modify the public version of this notification---for example, to redact some portions---see setPublicVersion.
 
 Finally, a notification can be made `https://developer.android.com/reference/kotlin/android/app/Notification#VISIBILITY_SECRET:kotlin.Int`, which will suppress its icon and ticker until the user has bypassed the lockscreen. 
 Value is one of the following:
@@ -2692,7 +2692,7 @@ var when: Long
 
 A timestamp related to this notification, in milliseconds since the epoch.
 
-Default value: `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+Default value: currentTimeMillis.
 
 Choose a timestamp that will be most relevant to the user. For most finite events, this corresponds to the time the event happened (or will happen, in the case of events that have yet to occur but about which the user is being informed). Indefinite events should be timestamped according to when the activity began.
 
@@ -2705,4 +2705,4 @@ Some examples:
 - Notification of an ongoing stopwatch (increasing timer) should be stamped with the watch's start time.
 - Notification of an ongoing countdown timer should be stamped with the timer's end time.
 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` and above, this time is not shown anymore by default and must be opted into by using `https://developer.android.com/reference/kotlin/android/app/Notification.Builder#setShowWhen(kotlin.Boolean)`
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` and above, this time is not shown anymore by default and must be opted into by using setShowWhen

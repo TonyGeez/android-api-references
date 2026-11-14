@@ -21,7 +21,7 @@ Defines the types of Application Not Responding (ANR) errors.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AnrTypes#ANR_TYPE_BROADCAST_OF_INTENT:kotlin.Int` The app's broadcast receiver took too long to process the message. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AnrTypes#ANR_TYPE_CONTENT_PROVIDER_NOT_RESPONDING:kotlin.Int` The app's content provider took too long to respond. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AnrTypes#ANR_TYPE_EXECUTE_SERVICE:kotlin.Int` The app's service took too long to finish `https://developer.android.com/reference/kotlin/android/app/Service#onCreate()` and `https://developer.android.com/reference/kotlin/android/app/Service#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)` / `https://developer.android.com/reference/kotlin/android/app/Service#onBind(android.content.Intent)` |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AnrTypes#ANR_TYPE_EXECUTE_SERVICE:kotlin.Int` The app's service took too long to finish onCreate and onStartCommand / onBind |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AnrTypes#ANR_TYPE_FOREGROUND_SHORT_SERVICE_TIMEOUT:kotlin.Int` A foreground short service took too long to respond to android. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/AnrTypes#ANR_TYPE_INPUT_DISPATCH:kotlin.Int` The app took too long to respond to an input event. |
@@ -89,7 +89,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val ANR_TYPE_EXECUTE_SERVICE: Int
 ```
 
-The app's service took too long to finish `https://developer.android.com/reference/kotlin/android/app/Service#onCreate()` and `https://developer.android.com/reference/kotlin/android/app/Service#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)` / `https://developer.android.com/reference/kotlin/android/app/Service#onBind(android.content.Intent)`
+The app's service took too long to finish onCreate and onStartCommand / onBind
 
  Value: 5
 

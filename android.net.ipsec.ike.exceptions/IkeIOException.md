@@ -21,11 +21,11 @@ Wrapper for I/O exceptions encountered during IKE operations.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeIOException#IkeIOException(java.io.IOException)(cause: https://developer.android.com/reference/kotlin/java/io/IOException.html#)` Constructs a new exception with the specified cause. |
+| IkeIOException Constructs a new exception with the specified cause. |
 
 | Public methods ||
 |---|---|
-| [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeIOException#initCause(kotlin.Throwable)(cause: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html?)` Initializes the *cause* of this throwable to the specified value. |
+| [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | initCause Initializes the *cause* of this throwable to the specified value. |
 
 | Properties ||
 |---|---|
@@ -61,7 +61,7 @@ fun initCause(cause: Throwable?): Throwable
 
 Initializes the *cause* of this throwable to the specified value. (The cause is the throwable that caused this throwable to get thrown.)
 
-This method can be called at most once. It is generally called from within the constructor, or immediately after creating the throwable. If this throwable was created with `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#Throwable(kotlin.Throwable)` or `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#Throwable(kotlin.String,%20kotlin.Throwable)`, this method cannot be called even once.
+This method can be called at most once. It is generally called from within the constructor, or immediately after creating the throwable. If this throwable was created with Throwable or Throwable, this method cannot be called even once.
 
 An example of using this method on a legacy throwable type without other support for setting the cause is:
 
@@ -77,7 +77,7 @@ try {
 
 | Parameters ||
 |---|---|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?: the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#getCause()` method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?: the cause (which is saved for later retrieval by the getCause method). (A `null` value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 | Return ||
 |---|---|
@@ -86,7 +86,7 @@ try {
 | Exceptions ||
 |---|---|
 | `java.lang.IllegalArgumentException` | if `cause` is this throwable. (A throwable cannot be its own cause.) |
-| `java.lang.IllegalStateException` | if this throwable was created with `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#Throwable(kotlin.Throwable)` or `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#Throwable(kotlin.String,%20kotlin.Throwable)`, or this method has already been called on this throwable. |
+| `java.lang.IllegalStateException` | if this throwable was created with Throwable or Throwable, or this method has already been called on this throwable. |
 
 ## Properties
 
@@ -102,4 +102,4 @@ Returns the cause of this IkeIOException.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/IOException.html#` | the cause of this IkeIOException. It might be a subclass of IOException that represents a specific type of I/O issue. For example, `https://developer.android.com/reference/kotlin/java/net/UnknownHostException.html#` and `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeTimeoutException`. This value cannot be `null`. |
+| `https://developer.android.com/reference/kotlin/java/io/IOException.html#` | the cause of this IkeIOException. It might be a subclass of IOException that represents a specific type of I/O issue. For example, `https://developer.android.com/reference/kotlin/java/net/UnknownHostException.html#` and IkeTimeoutException. This value cannot be `null`. |

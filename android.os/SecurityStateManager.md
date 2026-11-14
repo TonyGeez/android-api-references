@@ -25,7 +25,7 @@ SecurityStateManager provides the functionality to query the security status of 
 
 | Public methods ||
 |---|---|
-| open [Bundle](Bundle.md) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#getGlobalSecurityState()()` Returns the current global security state. |
+| open [Bundle](Bundle.md) | getGlobalSecurityState Returns the current global security state. |
 
 ## Constants
 
@@ -113,4 +113,4 @@ The CVE data is aggregated from `supplemental_security_patches.xml` files locate
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Bundle` | A `Bundle` that contains the global security state information as string-to-string key-value pairs. This value cannot be `null`. |
+| Bundle | A `Bundle` that contains the global security state information as string-to-string key-value pairs. This value cannot be `null`. |

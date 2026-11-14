@@ -19,7 +19,7 @@ This immutable class allows an application to specify visual preferences to opti
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#`. |
+| | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams.Builder` Builder class for EmbeddedPhotoPickerUiCustomizationParams. |
 
 | Constants ||
 |---|---|
@@ -30,15 +30,15 @@ This immutable class allows an application to specify visual preferences to opti
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#getAspectRatio()()` Returns the constant representing the aspect ratio currently configured for thumbnail sizing within the Photo Picker's media grid. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#isSelectionBarVisibleInExpandedMode()()` Returns whether the Selection Bar should be visible in expanded mode in Embedded picker as set by the calling application. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAspectRatio Returns the constant representing the aspect ratio currently configured for thumbnail sizing within the Photo Picker's media grid. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSelectionBarVisibleInExpandedMode Returns whether the Selection Bar should be visible in expanded mode in Embedded picker as set by the calling application. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -95,7 +95,7 @@ Added in [API level 37.1](https://developer.android.com/guide/topics/manifest/us
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -112,7 +112,7 @@ fun getAspectRatio(): Int
 
 Returns the constant representing the aspect ratio currently configured for thumbnail sizing within the Photo Picker's media grid. (e.g., `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#ASPECT_RATIO_SQUARE_1_1:kotlin.Int`).
 
-If the aspect ratio is not set by the caller app using `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams.Builder#setAspectRatio(kotlin.Int)`, this method returns `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#ASPECT_RATIO_UNDEFINED:kotlin.Int`, indicating that the photo picker will use its default 1:1 media grid aspect ratio.
+If the aspect ratio is not set by the caller app using setAspectRatio, this method returns `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams#ASPECT_RATIO_UNDEFINED:kotlin.Int`, indicating that the photo picker will use its default 1:1 media grid aspect ratio.
 
 | Return ||
 |---|---|
@@ -129,7 +129,7 @@ fun isSelectionBarVisibleInExpandedMode(): Boolean
 
 Returns whether the Selection Bar should be visible in expanded mode in Embedded picker as set by the calling application.
 
-If not set by the caller using `https://developer.android.com/reference/kotlin/android/widget/photopicker/EmbeddedPhotoPickerUiCustomizationParams.Builder#setSelectionBarVisibleInExpandedMode(kotlin.Boolean)`, this method returns `true` by default.
+If not set by the caller using setSelectionBarVisibleInExpandedMode, this method returns `true` by default.
 
 | Return ||
 |---|---|

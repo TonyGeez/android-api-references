@@ -31,7 +31,7 @@ Most configuration in this class is only applicable if the built-in DNS resolver
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder` Builder for `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#`. |
+| | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder` Builder for DnsOptions. |
 | | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.StaleDnsOptions` A class configuring the stale DNS functionality. |
 
 | Constants ||
@@ -43,13 +43,13 @@ Most configuration in this class is only applicable if the built-in DNS resolver
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCache()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCache(kotlin.Int)` |
-| [Duration](../java.time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCachePeriod()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCachePeriod(java.time.Duration)` |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPreestablishConnectionsToStaleDnsResults()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPreestablishConnectionsToStaleDnsResults(kotlin.Int)` |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPersistHostCache See setPersistHostCache |
+| [Duration](../java.time/Duration.md)? | getPersistHostCachePeriod See setPersistHostCachePeriod |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPreestablishConnectionsToStaleDnsResults See setPreestablishConnectionsToStaleDnsResults |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getStaleDns()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDns(kotlin.Int)` |
-| [DnsOptions.StaleDnsOptions](../android/net/http/DnsOptions.StaleDnsOptions.md)? | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getStaleDnsOptions()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDnsOptions(android.net.http.DnsOptions.StaleDnsOptions)` |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getUseHttpStackDnsResolver()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setUseHttpStackDnsResolver(kotlin.Int)` |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStaleDns See setStaleDns |
+| [DnsOptions.StaleDnsOptions](../android/net/http/DnsOptions.StaleDnsOptions.md)? | getStaleDnsOptions See setStaleDnsOptions |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getUseHttpStackDnsResolver See setUseHttpStackDnsResolver |
 | --- | --- |
 
 ## Constants
@@ -104,7 +104,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 fun getPersistHostCache(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCache(kotlin.Int)`
+See setPersistHostCache
 
 | Return ||
 |---|---|
@@ -119,7 +119,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 fun getPersistHostCachePeriod(): Duration?
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCachePeriod(java.time.Duration)`
+See setPersistHostCachePeriod
 
 | Return ||
 |---|---|
@@ -134,7 +134,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 fun getPreestablishConnectionsToStaleDnsResults(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPreestablishConnectionsToStaleDnsResults(kotlin.Int)`
+See setPreestablishConnectionsToStaleDnsResults
 
 | Return ||
 |---|---|
@@ -149,7 +149,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 fun getStaleDns(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDns(kotlin.Int)`
+See setStaleDns
 
 | Return ||
 |---|---|
@@ -164,7 +164,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 fun getStaleDnsOptions(): DnsOptions.StaleDnsOptions?
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDnsOptions(android.net.http.DnsOptions.StaleDnsOptions)`
+See setStaleDnsOptions
 
 | Return ||
 |---|---|
@@ -179,7 +179,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 fun getUseHttpStackDnsResolver(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setUseHttpStackDnsResolver(kotlin.Int)`
+See setUseHttpStackDnsResolver
 
 | Return ||
 |---|---|

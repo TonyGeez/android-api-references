@@ -25,24 +25,24 @@ Frequency caps define the maximum rate an event can occur within a given time in
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap.Builder` Builder for creating `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap.Builder` Builder for creating KeyedFrequencyCap objects. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` objects contain the same information. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getAdCounterKey()()` Returns the ad counter key that the frequency cap is applied to. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks whether the KeyedFrequencyCap objects contain the same information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getAdCounterKey Returns the ad counter key that the frequency cap is applied to. |
 | --- | --- |
-| [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getInterval()()` Returns the interval, as a `https://developer.android.com/reference/kotlin/java/time/Duration.html#` which will be truncated to the nearest second, over which the frequency cap is calculated. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getMaxCount()()` Returns the maximum count of event occurrences allowed within a given time interval. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` object's data. |
+| [Duration](../java.time/Duration.md) | getInterval Returns the interval, as a `https://developer.android.com/reference/kotlin/java/time/Duration.html#` which will be truncated to the nearest second, over which the frequency cap is calculated. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaxCount Returns the maximum count of event occurrences allowed within a given time interval. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hash of the KeyedFrequencyCap object's data. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -61,7 +61,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -78,7 +78,7 @@ fun equals(other: Any?): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` objects contain the same information.
+Checks whether the KeyedFrequencyCap objects contain the same information.
 
 | Parameters ||
 |---|---|
@@ -122,7 +122,7 @@ fun getInterval(): Duration
 
 Returns the interval, as a `https://developer.android.com/reference/kotlin/java/time/Duration.html#` which will be truncated to the nearest second, over which the frequency cap is calculated.
 
-When this frequency cap is computed, the number of persisted events is counted in the most recent time interval. If the count of previously occurring matching events for an adtech is greater than the number returned by `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getMaxCount()`, the frequency cap has been exceeded, and the ad will not be eligible for ad selection.
+When this frequency cap is computed, the number of persisted events is counted in the most recent time interval. If the count of previously occurring matching events for an adtech is greater than the number returned by getMaxCount, the frequency cap has been exceeded, and the ad will not be eligible for ad selection.
 
 | Return ||
 |---|---|
@@ -142,7 +142,7 @@ fun getMaxCount(): Int
 
 Returns the maximum count of event occurrences allowed within a given time interval.
 
-If there are more events matching the ad counter key and ad event type counted on the device within the time interval defined by `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#getInterval()`, the frequency cap has been exceeded, and the ad will not be eligible for ad selection.
+If there are more events matching the ad counter key and ad event type counted on the device within the time interval defined by getInterval, the frequency cap has been exceeded, and the ad will not be eligible for ad selection.
 
 For example, an ad that specifies a filter for a max count of two within one hour will not be eligible for ad selection if the event has been counted two or more times within the hour preceding the ad selection process.
 
@@ -157,7 +157,7 @@ fun hashCode(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/KeyedFrequencyCap#` object's data.
+Returns the hash of the KeyedFrequencyCap object's data.
 
 | Return ||
 |---|---|

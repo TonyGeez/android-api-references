@@ -10,33 +10,33 @@ abstract class BluetoothGattServerCallback
 | --- | --- |
 | ↳ | [android.bluetooth.BluetoothGattServerCallback](BluetoothGattServerCallback.md) |
 
-This abstract class is used to implement `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer` callbacks.
+This abstract class is used to implement BluetoothGattServer callbacks.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#BluetoothGattServerCallback()()` <br /> |
+| BluetoothGattServerCallback <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onCharacteristicReadRequest(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20android.bluetooth.BluetoothGattCharacteristic)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic!)` A remote client has requested to read a local characteristic. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onCharacteristicWriteRequest(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20android.bluetooth.BluetoothGattCharacteristic,%20kotlin.Boolean,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.ByteArray)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, characteristic: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCharacteristic!, preparedWrite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, responseNeeded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` A remote client has requested to write to a local characteristic. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onConnectionStateChange(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback indicating when a remote device has been connected or disconnected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCharacteristicReadRequest A remote client has requested to read a local characteristic. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onCharacteristicWriteRequest A remote client has requested to write to a local characteristic. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onConnectionStateChange Callback indicating when a remote device has been connected or disconnected. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onConnectionUpdated(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice, interval: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, latency: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, supervisionTimeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback indicating the connection parameters were updated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onDescriptorReadRequest(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20android.bluetooth.BluetoothGattDescriptor)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, descriptor: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor!)` A remote client has requested to read a local descriptor. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onDescriptorWriteRequest(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20android.bluetooth.BluetoothGattDescriptor,%20kotlin.Boolean,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.ByteArray)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, descriptor: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattDescriptor!, preparedWrite: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, responseNeeded: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` A remote client has requested to write to a local descriptor. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onConnectionUpdated Callback indicating the connection parameters were updated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onDescriptorReadRequest A remote client has requested to read a local descriptor. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onDescriptorWriteRequest A remote client has requested to write to a local descriptor. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onExecuteWrite(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Boolean)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, execute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Execute all pending write operations for this device. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onMtuChanged(android.bluetooth.BluetoothDevice,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, mtu: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback indicating the MTU for a given device connection has changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onNotificationSent(android.bluetooth.BluetoothDevice,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback invoked when a notification or indication has been sent to a remote device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onExecuteWrite Execute all pending write operations for this device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onMtuChanged Callback indicating the MTU for a given device connection has changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onNotificationSent Callback invoked when a notification or indication has been sent to a remote device. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onPhyRead(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, txPhy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rxPhy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback triggered as result of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#readPhy(android.bluetooth.BluetoothDevice)` |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onPhyUpdate(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!, txPhy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, rxPhy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback triggered as result of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#setPreferredPhy(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, or as a result of remote device changing the PHY. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onServiceAdded(kotlin.Int,%20android.bluetooth.BluetoothGattService)(status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, service: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattService!)` Indicates whether a local service has been added successfully. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPhyRead Callback triggered as result of readPhy |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPhyUpdate Callback triggered as result of setPreferredPhy, or as a result of remote device changing the PHY. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onServiceAdded Indicates whether a local service has been added successfully. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServerCallback#onSubrateChange(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice, subrateMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, status: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback indicating LE connection's subrate parameters have changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSubrateChange Callback indicating LE connection's subrate parameters have changed. |
 
 ## Public constructors
 
@@ -65,7 +65,7 @@ open fun onCharacteristicReadRequest(
 
 A remote client has requested to read a local characteristic.
 
-An application must call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#sendResponse(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)` to complete the request.
+An application must call sendResponse to complete the request.
 
 | Parameters ||
 |---|---|
@@ -93,7 +93,7 @@ open fun onCharacteristicWriteRequest(
 
 A remote client has requested to write to a local characteristic.
 
-An application must call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#sendResponse(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)` to complete the request.
+An application must call sendResponse to complete the request.
 
 | Parameters ||
 |---|---|
@@ -168,7 +168,7 @@ open fun onDescriptorReadRequest(
 
 A remote client has requested to read a local descriptor.
 
-An application must call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#sendResponse(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)` to complete the request.
+An application must call sendResponse to complete the request.
 
 | Parameters ||
 |---|---|
@@ -196,7 +196,7 @@ open fun onDescriptorWriteRequest(
 
 A remote client has requested to write to a local descriptor.
 
-An application must call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#sendResponse(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)` to complete the request.
+An application must call sendResponse to complete the request.
 
 | Parameters ||
 |---|---|
@@ -224,7 +224,7 @@ open fun onExecuteWrite(
 
 Execute all pending write operations for this device.
 
-An application must call `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#sendResponse(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.ByteArray)` to complete the request.
+An application must call sendResponse to complete the request.
 
 | Parameters ||
 |---|---|
@@ -286,7 +286,7 @@ open fun onPhyRead(
 ): Unit
 ```
 
-Callback triggered as result of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#readPhy(android.bluetooth.BluetoothDevice)`
+Callback triggered as result of readPhy
 
 | Parameters ||
 |---|---|
@@ -309,7 +309,7 @@ open fun onPhyUpdate(
 ): Unit
 ```
 
-Callback triggered as result of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattServer#setPreferredPhy(android.bluetooth.BluetoothDevice,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`, or as a result of remote device changing the PHY.
+Callback triggered as result of setPreferredPhy, or as a result of remote device changing the PHY.
 
 | Parameters ||
 |---|---|

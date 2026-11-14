@@ -53,25 +53,25 @@ Although SAX drivers (parsers) may choose to use this class to implement namespa
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#NamespaceSupport()()` Create a new Namespace support object. |
+| NamespaceSupport Create a new Namespace support object. |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Declare a Namespace prefix. |
-| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getDeclaredPrefixes()()` Return an enumeration of all prefixes declared in this context. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return one of the prefixes mapped to a Namespace URI. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | declarePrefix Declare a Namespace prefix. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | getDeclaredPrefixes Return an enumeration of all prefixes declared in this context. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPrefix Return one of the prefixes mapped to a Namespace URI. |
 | --- | --- |
-| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes()()` Return an enumeration of all prefixes whose declarations are active in the current context. |
-| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return an enumeration of all prefixes for a given URI whose declarations are active in the current context. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up a prefix and get the currently-mapped Namespace URI. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | getPrefixes Return an enumeration of all prefixes whose declarations are active in the current context. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | getPrefixes Return an enumeration of all prefixes for a given URI whose declarations are active in the current context. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getURI Look up a prefix and get the currently-mapped Namespace URI. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#isNamespaceDeclUris()()` Returns true if namespace declaration attributes are placed into a namespace. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#popContext()()` Revert to the previous Namespace context. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)(qName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, isAttribute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Process a raw XML qualified name, after all declarations in the current context have been handled by `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isNamespaceDeclUris Returns true if namespace declaration attributes are placed into a namespace. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | popContext Revert to the previous Namespace context. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | processName Process a raw XML qualified name, after all declarations in the current context have been handled by declarePrefix. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#pushContext()()` Start a new Namespace context. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#reset()()` Reset this Namespace support object for reuse. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#setNamespaceDeclUris(kotlin.Boolean)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether namespace declaration attributes are placed into the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#NSDECL:kotlin.String` namespace by `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | pushContext Start a new Namespace context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reset Reset this Namespace support object for reuse. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNamespaceDeclUris Controls whether namespace declaration attributes are placed into the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#NSDECL:kotlin.String` namespace by processName. |
 | --- | --- |
 
 ## Constants
@@ -92,8 +92,8 @@ This is the Namespace URI that is optionally applied to *xmlns* and *xmlns:\** a
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#setNamespaceDeclUris(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#isNamespaceDeclUris()`
+- setNamespaceDeclUris
+- isNamespaceDeclUris
 
 ### XMLNS
 
@@ -134,7 +134,7 @@ open fun declarePrefix(
 ): Boolean
 ```
 
-Declare a Namespace prefix. All prefixes must be declared before they are referenced. For example, a SAX driver (parser) would scan an element's attributes in two passes: first for namespace declarations, then a second pass using `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)` to interpret prefixes against (potentially redefined) prefixes.
+Declare a Namespace prefix. All prefixes must be declared before they are referenced. For example, a SAX driver (parser) would scan an element's attributes in two passes: first for namespace declarations, then a second pass using processName to interpret prefixes against (potentially redefined) prefixes.
 
 This method declares a prefix in the current Namespace context; the prefix will remain in force until this context is popped, unless it is shadowed in a descendant context.
 
@@ -142,7 +142,7 @@ To declare the default element Namespace, use the empty string as the prefix.
 
 Note that you must *not* declare a prefix after you've pushed and popped another Namespace context, or treated the declarations phase as complete by processing a prefixed name.
 
-Note that there is an asymmetry in this library: `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)` will not return the "" prefix, even if you have declared a default element namespace. To check for a default namespace, you have to look it up explicitly using `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)`. This asymmetry exists to make it easier to look up prefixes for attribute names, where the default prefix is not allowed.
+Note that there is an asymmetry in this library: getPrefix will not return the "" prefix, even if you have declared a default element namespace. To check for a default namespace, you have to look it up explicitly using getURI. This asymmetry exists to make it easier to look up prefixes for attribute names, where the default prefix is not allowed.
 
 | Parameters ||
 |---|---|
@@ -155,9 +155,9 @@ Note that there is an asymmetry in this library: `https://developer.android.com/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)`
+- processName
+- getURI
+- getPrefix
 
 ### getDeclaredPrefixes
 
@@ -169,7 +169,7 @@ open fun getDeclaredPrefixes(): Enumeration<Any!>!
 
 Return an enumeration of all prefixes declared in this context.
 
-The empty (default) prefix will be included in this enumeration; note that this behaviour differs from that of `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)` and #getPrefixes.
+The empty (default) prefix will be included in this enumeration; note that this behaviour differs from that of getPrefix and #getPrefixes.
 
 | Return ||
 |---|---|
@@ -177,7 +177,7 @@ The empty (default) prefix will be included in this enumeration; note that this 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)`
+- getURI
 
 ### getPrefix
 
@@ -191,7 +191,7 @@ Return one of the prefixes mapped to a Namespace URI.
 
 If more than one prefix is currently mapped to the same URI, this method will make an arbitrary selection; if you want all of the prefixes, use the #getPrefixes method instead.
 
-**Note:** this will never return the empty (default) prefix; to check for a default prefix, use the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)` method with an argument of "".
+**Note:** this will never return the empty (default) prefix; to check for a default prefix, use the getURI method with an argument of "".
 
 | Parameters ||
 |---|---|
@@ -203,8 +203,8 @@ If more than one prefix is currently mapped to the same URI, this method will ma
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)`
+- getPrefixes
+- getURI
 
 ### getPrefixes
 
@@ -216,7 +216,7 @@ open fun getPrefixes(): Enumeration<Any!>!
 
 Return an enumeration of all prefixes whose declarations are active in the current context. This includes declarations from parent contexts that have not been overridden.
 
-**Note:** if there is a default prefix, it will not be returned in this enumeration; check for the default prefix using the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)` with an argument of "".
+**Note:** if there is a default prefix, it will not be returned in this enumeration; check for the default prefix using the getURI with an argument of "".
 
 | Return ||
 |---|---|
@@ -224,8 +224,8 @@ Return an enumeration of all prefixes whose declarations are active in the curre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getDeclaredPrefixes()`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)`
+- getDeclaredPrefixes
+- getURI
 
 ### getPrefixes
 
@@ -237,9 +237,9 @@ open fun getPrefixes(uri: String!): Enumeration<Any!>!
 
 Return an enumeration of all prefixes for a given URI whose declarations are active in the current context. This includes declarations from parent contexts that have not been overridden.
 
-This method returns prefixes mapped to a specific Namespace URI. The xml: prefix will be included. If you want only one prefix that's mapped to the Namespace URI, and you don't care which one you get, use the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)` method instead.
+This method returns prefixes mapped to a specific Namespace URI. The xml: prefix will be included. If you want only one prefix that's mapped to the Namespace URI, and you don't care which one you get, use the getPrefix method instead.
 
-**Note:** the empty (default) prefix is *never* included in this enumeration; to check for the presence of a default Namespace, use the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)` method with an argument of "".
+**Note:** the empty (default) prefix is *never* included in this enumeration; to check for the presence of a default Namespace, use the getURI method with an argument of "".
 
 | Parameters ||
 |---|---|
@@ -251,9 +251,9 @@ This method returns prefixes mapped to a specific Namespace URI. The xml: prefix
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getDeclaredPrefixes()`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)`
+- getPrefix
+- getDeclaredPrefixes
+- getURI
 
 ### getURI
 
@@ -277,7 +277,7 @@ This method looks up the prefix in the current context. Use the empty string (""
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)`
+- getPrefix
 
 ### isNamespaceDeclUris
 
@@ -308,7 +308,7 @@ Normally, you should pop the context at the end of each XML element. After poppi
 You must not attempt to declare additional Namespace prefixes after popping a context, unless you push another context first.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#pushContext()`
+- pushContext
 
 ### processName
 
@@ -322,7 +322,7 @@ open fun processName(
 ): Array<String!>!
 ```
 
-Process a raw XML qualified name, after all declarations in the current context have been handled by `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)`.
+Process a raw XML qualified name, after all declarations in the current context have been handled by declarePrefix.
 
 This method processes a raw XML qualified name in the current context by removing the prefix and looking it up among the prefixes currently declared. The return value will be the array supplied by the caller, filled in as follows:
 
@@ -355,8 +355,8 @@ Note that attribute names are processed differently than element names: an unpre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/lang/String.html#intern()`
+- declarePrefix
+- intern
 
 ### pushContext
 
@@ -376,7 +376,7 @@ The Namespace support object always starts with a base context already in force:
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#`
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#popContext()`
+- popContext
 
 ### reset
 
@@ -391,7 +391,7 @@ Reset this Namespace support object for reuse.
 It is necessary to invoke this method before reusing the Namespace support object for a new session. If namespace declaration URIs are to be supported, that flag must also be set to a non-default value.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#setNamespaceDeclUris(kotlin.Boolean)`
+- setNamespaceDeclUris
 
 ### setNamespaceDeclUris
 
@@ -401,7 +401,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setNamespaceDeclUris(value: Boolean): Unit
 ```
 
-Controls whether namespace declaration attributes are placed into the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#NSDECL:kotlin.String` namespace by `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#processName(kotlin.String,%20kotlin.Array,%20kotlin.Boolean)`. This may only be changed before any contexts have been pushed.
+Controls whether namespace declaration attributes are placed into the `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#NSDECL:kotlin.String` namespace by processName. This may only be changed before any contexts have been pushed.
 
 | Parameters ||
 |---|---|

@@ -16,7 +16,7 @@ class VcnWifiUnderlyingNetworkTemplate : VcnUnderlyingNetworkTemplate
 
 This class represents a configuration for a network template class of underlying Carrier WiFi networks.
 
-See `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate`
+See VcnUnderlyingNetworkTemplate
 
 ## Summary
 
@@ -26,18 +26,18 @@ See `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyin
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int` Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that networks with or without the characteristic are both acceptable to match this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int` Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST NOT have the capability in order to match this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int` Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST have the capability in order to match this template. <br /> | ||
+| From class VcnUnderlyingNetworkTemplate |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_ANY:kotlin.Int` Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that networks with or without the characteristic are both acceptable to match this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_FORBIDDEN:kotlin.Int` Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST NOT have the capability in order to match this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#MATCH_REQUIRED:kotlin.Int` Used to configure the matching criteria of a network characteristic. This may include network capabilities, or cellular subscription information. Denotes that a network MUST have the capability in order to match this template. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#getSsids()()` Retrieve the matching SSIDs, or an empty set if any SSID is acceptable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate#hashCode()()` Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getSsids Retrieve the matching SSIDs, or an empty set if any SSID is acceptable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMetered()()` Return the matching criteria for metered networks. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinEntryDownstreamBandwidthKbps()()` Returns the minimum entry downstream bandwidth allowed by this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinEntryUpstreamBandwidthKbps()()` Returns the minimum entry upstream bandwidth allowed by this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinExitDownstreamBandwidthKbps()()` Returns the minimum exit downstream bandwidth allowed by this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/net/vcn/VcnUnderlyingNetworkTemplate#getMinExitUpstreamBandwidthKbps()()` Returns the minimum exit upstream bandwidth allowed by this template. <br /> | ||
+| From class VcnUnderlyingNetworkTemplate |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getMetered Return the matching criteria for metered networks. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getMinEntryDownstreamBandwidthKbps Returns the minimum entry downstream bandwidth allowed by this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getMinEntryUpstreamBandwidthKbps Returns the minimum entry upstream bandwidth allowed by this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getMinExitDownstreamBandwidthKbps Returns the minimum exit downstream bandwidth allowed by this template. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | getMinExitUpstreamBandwidthKbps Returns the minimum exit upstream bandwidth allowed by this template. <br /> | ||
 
 ## Public methods
 
@@ -86,7 +86,7 @@ Retrieve the matching SSIDs, or an empty set if any SSID is acceptable.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/net/vcn/VcnWifiUnderlyingNetworkTemplate.Builder#setSsids(kotlin.collections.MutableSet)`
+- setSsids
 
 ### hashCode
 
@@ -101,8 +101,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

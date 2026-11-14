@@ -21,7 +21,7 @@ Known Indirect Subclasses [AbstractInputMethodService](../android.inputmethodser
 [Application](../android.app/Application.md) Base class for maintaining global application state.
 [AutofillService](../android.service.autofill/AutofillService.md) An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
 [CallRedirectionService](../android.telecom/CallRedirectionService.md) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
-[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
+[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see getDefaultDialerPackage) or a third party app to allow or disallow incoming calls before they are shown to a user.
 [CameraPrewarmService](../android.service.media/CameraPrewarmService.md) Extend this class to implement a camera prewarm service.
 [CarrierMessagingClientService](../android.service.carrier/CarrierMessagingClientService.md) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
 [CarrierMessagingService](../android.service.carrier/CarrierMessagingService.md) A service that receives calls from the system when new SMS and MMS are sent or received.
@@ -55,7 +55,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [HostNfcFService](../android.nfc.cardemulation/HostNfcFService.md) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
 [InCallService](../android.telecom/InCallService.md) This service is implemented by an app that wishes to provide functionality for managing phone calls.
 [InputMethodService](../android.inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
-[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent`s) on demand.
+[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as Intents) on demand.
 [IsolatedService](../android.adservices.ondevicepersonalization/IsolatedService.md) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
 [JobService](../android.app.job/JobService.md) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`.
 [LauncherActivity](../android.app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
@@ -84,7 +84,7 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [SettingsPreferenceService](../android.service.settings.preferences/SettingsPreferenceService.md) Base class for a service that exposes its settings preferences to external access.
 [SliceProvider](../android.app.slice/SliceProvider.md) A SliceProvider allows an app to provide content to be displayed in system spaces.
 [SpellCheckerService](../android.service.textservice/SpellCheckerService.md) SpellCheckerService provides an abstract base class for a spell checker.
-[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
+[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new newTab and related APIs for placing tabs within their action bar area.
 [TextToSpeechService](../android.speech.tts/TextToSpeechService.md) Abstract base class for TTS engine implementations.
 [TileService](../android.service.quicksettings/TileService.md) A TileService provides the user a tile that can be added to Quick Settings.
 [TvAdService](../android.media.tv.ad/TvAdService.md) The TvAdService class represents a TV client-side advertisement service.
@@ -99,16 +99,16 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 [WallpaperService](../android.service.wallpaper/WallpaperService.md) A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it.
 [WebViewFragment](../android.webkit/WebViewFragment.md) A fragment that displays a WebView.
 
-The set of callback APIs that are common to all application components (`https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, `https://developer.android.com/reference/kotlin/android/content/ContentProvider`, and `https://developer.android.com/reference/kotlin/android/app/Application.html#`).
+The set of callback APIs that are common to all application components (`https://developer.android.com/reference/kotlin/android/app/Activity.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, ContentProvider, and `https://developer.android.com/reference/kotlin/android/app/Application.html#`).
 
-**Note:** You should also implement the `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` interface, which provides the `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)` callback to help your app manage its memory usage more effectively.
+**Note:** You should also implement the ComponentCallbacks2 interface, which provides the onTrimMemory callback to help your app manage its memory usage more effectively.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration)` Called by the system when the device configuration changes while your component is running. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks#onLowMemory()()` This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onConfigurationChanged Called by the system when the device configuration changes while your component is running. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onLowMemory This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. |
 
 ## Public methods
 
@@ -139,6 +139,6 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 abstract fun onLowMemory(): Unit
 ```
 
-**Deprecated:** *Since API level 14 this is superseded by `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2#onTrimMemory(kotlin.Int)`. Since API level 34 this is never called. If you're overriding ComponentCallbacks2#onTrimMemory and your minSdkVersion is greater than API 14, you can provide an empty implementation for this method.*
+**Deprecated:** *Since API level 14 this is superseded by onTrimMemory. Since API level 34 this is never called. If you're overriding ComponentCallbacks2#onTrimMemory and your minSdkVersion is greater than API 14, you can provide an empty implementation for this method.*
 
 This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. While the exact point at which this will be called is not defined, generally it will happen when all background process have been killed. That is, before reaching the point of killing processes hosting service and foreground UI that we would like to avoid killing.

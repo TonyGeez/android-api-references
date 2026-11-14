@@ -9,7 +9,7 @@
 
 | [ContentCaptureCondition](ContentCaptureCondition.md) | Defines a condition for when content capture should be allowed. |
 | --- | --- |
-| [ContentCaptureContext](ContentCaptureContext.md) | Context associated with a `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession` - see `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureManager` for more info. |
+| [ContentCaptureContext](ContentCaptureContext.md) | Context associated with a ContentCaptureSession - see ContentCaptureManager for more info. |
 | [ContentCaptureManager](ContentCaptureManager.md) | Provides additional ways for apps to integrate with the content capture subsystem. |
 | [ContentCaptureNodeProperties](ContentCaptureNodeProperties.md) | Properties of a Node for Content Capture. |
 | --- | --- |

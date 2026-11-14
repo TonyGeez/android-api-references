@@ -18,16 +18,16 @@ The checkServerTrusted methods allow callers to provide some additional context 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/http/X509TrustManagerExtensions#X509TrustManagerExtensions(javax.net.ssl.X509TrustManager)(tm: https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html#!)` Constructs a new X509TrustManagerExtensions wrapper. |
+| X509TrustManagerExtensions Constructs a new X509TrustManagerExtensions wrapper. |
 
 | Public methods ||
 |---|---|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/net/http/X509TrustManagerExtensions#checkServerTrusted(kotlin.Array,%20kotlin.ByteArray,%20kotlin.ByteArray,%20kotlin.String,%20kotlin.String)(chain: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#!>, ocspData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, tlsSctData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, authType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Verifies the given certificate chain. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/http/X509TrustManagerExtensions#checkServerTrusted(kotlin.Array,%20kotlin.String,%20kotlin.String)(chain: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#!>!, authType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Verifies the given certificate chain. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/X509TrustManagerExtensions#isSameTrustConfiguration(kotlin.String,%20kotlin.String)(hostname1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, hostname2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns `true` if the TrustManager uses the same trust configuration for the provided hostnames. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\> | checkServerTrusted Verifies the given certificate chain. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>! | checkServerTrusted Verifies the given certificate chain. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSameTrustConfiguration Returns `true` if the TrustManager uses the same trust configuration for the provided hostnames. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/X509TrustManagerExtensions#isUserAddedCertificate(java.security.cert.X509Certificate)(cert: https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#!)` Checks whether a CA certificate is added by an user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/X509TrustManagerExtensions#setNetworkSecurityPolicy(android.security.NetworkSecurityPolicy)(policy: https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#)` Sets the `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#` to be used by this TrustManager. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isUserAddedCertificate Checks whether a CA certificate is added by an user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setNetworkSecurityPolicy Sets the `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#` to be used by this TrustManager. |
 
 ## Public constructors
 
@@ -67,7 +67,7 @@ open fun checkServerTrusted(
 
 Verifies the given certificate chain.
 
-See `https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html#checkServerTrusted(kotlin.Array,%20kotlin.String)` for a description of the chain and authType parameters. The final parameter, host, should be the hostname of the server.
+See checkServerTrusted for a description of the chain and authType parameters. The final parameter, host, should be the hostname of the server.
 
 ocspData and tlsSctData may be provided to verify any Signed Certificate Timestamp (SCT) attached to the connection. These are ASN.1 octet strings (SignedCertificateTimestampList) as described in RFC 6962, Section 3.3. Note that SCTs embedded in the certificate chain will automatically be processed.
 
@@ -103,7 +103,7 @@ open fun checkServerTrusted(
 
 Verifies the given certificate chain.
 
-See `https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html#checkServerTrusted(kotlin.Array,%20kotlin.String)` for a description of the chain and authType parameters. The final parameter, host, should be the hostname of the server.
+See checkServerTrusted for a description of the chain and authType parameters. The final parameter, host, should be the hostname of the server.
 
 | Return ||
 |---|---|
@@ -136,7 +136,7 @@ open fun isUserAddedCertificate(cert: X509Certificate!): Boolean
 
 Checks whether a CA certificate is added by an user.
 
-Since `https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html#checkServerTrusted(kotlin.Array,%20kotlin.String)` may allow its parameter `chain` to chain up to user-added CA certificates, this method can be used to perform additional policies for user-added CA certificates.
+Since checkServerTrusted may allow its parameter `chain` to chain up to user-added CA certificates, this method can be used to perform additional policies for user-added CA certificates.
 
 | Return ||
 |---|---|
@@ -152,7 +152,7 @@ open fun setNetworkSecurityPolicy(policy: NetworkSecurityPolicy): Unit
 
 Sets the `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#` to be used by this TrustManager.
 
-This method allows an application to associate a specific security policy with this `https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html#` instance. When a policy is set, it overrides the default process-wide policy returned by `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#getInstance()` for all certificate verifications performed by this TrustManager.
+This method allows an application to associate a specific security policy with this `https://developer.android.com/reference/kotlin/javax/net/ssl/X509TrustManager.html#` instance. When a policy is set, it overrides the default process-wide policy returned by getInstance for all certificate verifications performed by this TrustManager.
 
 The TrustManager will query the provided policy for security decisions, including:
 
@@ -169,4 +169,4 @@ By using a custom `https://developer.android.com/reference/kotlin/android/securi
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#`
-- `https://developer.android.com/reference/kotlin/android/security/NetworkSecurityPolicy.html#getInstance()`
+- getInstance

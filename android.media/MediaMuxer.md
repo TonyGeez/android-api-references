@@ -118,24 +118,24 @@ The following table summarizes the feature support in different API version and 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#MediaMuxer(java.io.FileDescriptor,%20kotlin.Int)(fd: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a media muxer that writes to the specified FileDescriptor. |
-| `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#MediaMuxer(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a media muxer that writes to the specified path. |
+| MediaMuxer Creates a media muxer that writes to the specified FileDescriptor. |
+| MediaMuxer Creates a media muxer that writes to the specified path. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#addTrack(android.media.MediaFormat)(format: https://developer.android.com/reference/kotlin/android/media/MediaFormat)` Adds a track with the specified format. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#release()()` Make sure you call this when you're done to free up any resources instead of relying on the garbage collector to do this for you at some point in the future. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setLocation(kotlin.Float,%20kotlin.Float)(latitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, longitude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set and store the geodata (latitude and longitude) in the output file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | addTrack Adds a track with the specified format. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | release Make sure you call this when you're done to free up any resources instead of relying on the garbage collector to do this for you at some point in the future. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLocation Set and store the geodata (latitude and longitude) in the output file. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)(degrees: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the orientation hint for output video playback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()()` Starts the muxer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#stop()()` Stops the muxer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOrientationHint Sets the orientation hint for output video playback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start Starts the muxer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stop Stops the muxer. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)(trackIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, byteBuf: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, bufferInfo: https://developer.android.com/reference/kotlin/android/media/MediaCodec.BufferInfo)` Writes an encoded sample into the muxer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeSampleData Writes an encoded sample into the muxer. |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Public constructors
 
@@ -151,7 +151,7 @@ MediaMuxer(
 
 Creates a media muxer that writes to the specified FileDescriptor.
 
-The caller must not use the file referenced by the specified `fd` before calling `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#stop()`.
+The caller must not use the file referenced by the specified `fd` before calling stop.
 
 It is the caller's responsibility to close the file descriptor, which is safe to do so as soon as this call returns.
 
@@ -181,7 +181,7 @@ MediaMuxer(
 
 Creates a media muxer that writes to the specified path.
 
-The caller must not use the file `path` before calling `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#stop()`.
+The caller must not use the file `path` before calling stop.
 
 | Parameters ||
 |---|---|
@@ -215,17 +215,17 @@ The following table summarizes support for specific format keys across android r
 | --- | --- | --- | --- |
 | OS Version(s) | All Tracks | Audio Tracks | Video Tracks |
 |---|---|---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
-| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
-| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
+| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR2:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use setOrientationHint.mp4, +: **codec-specific dataAVC, MPEG4** |
+| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use setOrientationHint.mp4, +: **codec-specific dataAVC, MPEG4** |
+| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_SAMPLE_RATE:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_CHANNEL_COUNT:kotlin.String`, +: **codec-specific dataAAC** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use setOrientationHint.mp4, +: **codec-specific dataAVC, MPEG4** |
 | --- | --- | --- | --- |
-| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
-| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP_MR1:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#setOrientationHint(kotlin.Int)`.mp4, +: **codec-specific dataAVC, MPEG4** |
+| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use setOrientationHint.mp4, +: **codec-specific dataAVC, MPEG4** |
+| `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP_MR1:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_WIDTH:kotlin.String`, +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HEIGHT:kotlin.String`, no `KEY_ROTATION`, use setOrientationHint.mp4, +: **codec-specific dataAVC, MPEG4** |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | as above, plus `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BIT_RATE:kotlin.String`AAC |
 | --- | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` | +: `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` | as above, plus +: **codec-specific dataVorbis \& .webm** | as above, plus `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_BIT_RATE:kotlin.String`MPEG4, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_HDR_STATIC_INFO:kotlin.String`, .webm, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_STANDARD:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_TRANSFER:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_COLOR_RANGE:kotlin.String`, +: **codec-specific dataHEVC** , codec-specific dataVP9 |
 | **Notes:** #: storing into container metadata. .mp4, .webm...: for listed containers MPEG4, AAC...: for listed codecs ||||
-| Note that the codec-specific data for the track must be specified using this method. Furthermore, codec-specific data must not be passed/specified via the `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)` call. ||||
+| Note that the codec-specific data for the track must be specified using this method. Furthermore, codec-specific data must not be passed/specified via the writeSampleData call. ||||
 | --- | --- | --- | --- |
 
 The following table summarizes codec support for containers across android releases:
@@ -257,7 +257,7 @@ The following table summarizes codec support for containers across android relea
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The track index for this newly added track, and it should be used in the `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The track index for this newly added track, and it should be used in the writeSampleData. |
 
 | Exceptions ||
 |---|---|
@@ -285,7 +285,7 @@ fun setLocation(
 ): Unit
 ```
 
-Set and store the geodata (latitude and longitude) in the output file. This method should be called before `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()`. The geodata is stored in udta box if the output format is `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_MPEG_4:kotlin.Int`, and is ignored for other output formats. The geodata is stored according to ISO-6709 standard.
+Set and store the geodata (latitude and longitude) in the output file. This method should be called before start. The geodata is stored in udta box if the output format is `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_MPEG_4:kotlin.Int`, and is ignored for other output formats. The geodata is stored according to ISO-6709 standard.
 
 | Parameters ||
 |---|---|
@@ -295,7 +295,7 @@ Set and store the geodata (latitude and longitude) in the output file. This meth
 | Exceptions ||
 |---|---|
 | `java.lang.IllegalArgumentException` | If the given latitude or longitude is out of range. |
-| `java.lang.IllegalStateException` | If this method is called after `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()`. |
+| `java.lang.IllegalStateException` | If this method is called after start. |
 
 ### setOrientationHint
 
@@ -307,7 +307,7 @@ fun setOrientationHint(degrees: Int): Unit
 
 Sets the orientation hint for output video playback.
 
-This method should be called before `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()`. Calling this method will not rotate the video frame when muxer is generating the file, but add a composition matrix containing the rotation angle in the output video if the output format is `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_MPEG_4:kotlin.Int` so that a video player can choose the proper orientation for playback. Note that some video players may choose to ignore the composition matrix in a video during playback. By default, the rotation degree is 0.
+This method should be called before start. Calling this method will not rotate the video frame when muxer is generating the file, but add a composition matrix containing the rotation angle in the output video if the output format is `https://developer.android.com/reference/kotlin/android/media/MediaMuxer.OutputFormat#MUXER_OUTPUT_MPEG_4:kotlin.Int` so that a video player can choose the proper orientation for playback. Note that some video players may choose to ignore the composition matrix in a video during playback. By default, the rotation degree is 0.
 
 | Parameters ||
 |---|---|
@@ -316,7 +316,7 @@ This method should be called before `https://developer.android.com/reference/kot
 | Exceptions ||
 |---|---|
 | `java.lang.IllegalArgumentException` | if degree is not supported. |
-| `java.lang.IllegalStateException` | If this method is called after `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()`. |
+| `java.lang.IllegalStateException` | If this method is called after start. |
 
 ### start
 
@@ -328,11 +328,11 @@ fun start(): Unit
 
 Starts the muxer.
 
-Make sure this is called after `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#addTrack(android.media.MediaFormat)` and before `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#writeSampleData(kotlin.Int,%20java.nio.ByteBuffer,%20android.media.MediaCodec.BufferInfo)`.
+Make sure this is called after addTrack and before writeSampleData.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If this method is called after `https://developer.android.com/reference/kotlin/android/media/MediaMuxer#start()` or Muxer is released |
+| `java.lang.IllegalStateException` | If this method is called after start or Muxer is released |
 
 ### stop
 

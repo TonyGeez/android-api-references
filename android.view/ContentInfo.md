@@ -13,13 +13,13 @@ class ContentInfo : Parcelable
 | --- | --- |
 | ↳ | [android.view.ContentInfo](ContentInfo.md) |
 
-Holds all the relevant data for a request to `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)`.
+Holds all the relevant data for a request to performReceiveContent.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/view/ContentInfo.Builder` Builder for `https://developer.android.com/reference/kotlin/android/view/ContentInfo#`. |
+| | `https://developer.android.com/reference/kotlin/android/view/ContentInfo.Builder` Builder for ContentInfo. |
 
 | Constants ||
 |---|---|
@@ -35,24 +35,24 @@ Holds all the relevant data for a request to `https://developer.android.com/refe
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [ClipData](../android.content/ClipData.md) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getClip()()` The data to be inserted. |
-| [Bundle](../android.os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getExtras()()` Optional additional metadata. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [ClipData](../android.content/ClipData.md) | getClip The data to be inserted. |
+| [Bundle](../android.os/Bundle.md)? | getExtras Optional additional metadata. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getFlags()()` Optional flags that control the insertion behavior. |
-| [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getLinkUri()()` Optional http/https URI for the content that may be provided by the IME. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#getSource()()` The source of the operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFlags Optional flags that control the insertion behavior. |
+| [Uri](../android.net/Uri.md)? | getLinkUri Optional http/https URI for the content that may be provided by the IME. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSource The source of the operation. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes this object into the given parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Writes this object into the given parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentInfo](ContentInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#CREATOR:android.os.Parcelable.Creator` Creates `https://developer.android.com/reference/kotlin/android/view/ContentInfo#` instances from parcels. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentInfo](ContentInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/ContentInfo#CREATOR:android.os.Parcelable.Creator` Creates ContentInfo instances from parcels. |
 
 ## Constants
 
@@ -150,7 +150,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -178,7 +178,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getExtras(): Bundle?
 ```
 
-Optional additional metadata. If the source is `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_INPUT_METHOD:kotlin.Int`, this will include the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#commitContent(android.view.inputmethod.InputContentInfo,%20kotlin.Int,%20android.os.Bundle)` passed by the IME.
+Optional additional metadata. If the source is `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_INPUT_METHOD:kotlin.Int`, this will include the commitContent passed by the IME.
 
 | Return ||
 |---|---|
@@ -206,7 +206,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getLinkUri(): Uri?
 ```
 
-Optional http/https URI for the content that may be provided by the IME. This is only populated if the source is `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_INPUT_METHOD:kotlin.Int` and if a non-empty `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#getLinkUri()` was passed by the IME.
+Optional http/https URI for the content that may be provided by the IME. This is only populated if the source is `https://developer.android.com/reference/kotlin/android/view/ContentInfo#SOURCE_INPUT_METHOD:kotlin.Int` and if a non-empty getLinkUri was passed by the IME.
 
 | Return ||
 |---|---|
@@ -268,4 +268,4 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val CREATOR: Parcelable.Creator<ContentInfo!>
 ```
 
-Creates `https://developer.android.com/reference/kotlin/android/view/ContentInfo#` instances from parcels.
+Creates ContentInfo instances from parcels.

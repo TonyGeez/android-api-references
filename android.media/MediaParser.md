@@ -12,7 +12,7 @@ class MediaParser
 
 Parses media container formats and extracts contained media samples and metadata.
 
-This class provides access to a battery of low-level media container parsers. Each instance of this class is associated to a specific media parser implementation which is suitable for extraction from a specific media container format. The media parser implementation assignment depends on the factory method (see `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)` and `https://developer.android.com/reference/kotlin/android/media/MediaParser#createByName(kotlin.String,%20android.media.MediaParser.OutputConsumer)`) used to create the instance.
+This class provides access to a battery of low-level media container parsers. Each instance of this class is associated to a specific media parser implementation which is suitable for extraction from a specific media container format. The media parser implementation assignment depends on the factory method (see create and createByName) used to create the instance.
 
 Users must implement the following to use this class.
 
@@ -123,8 +123,8 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` Provides input data to `https://developer.android.com/reference/kotlin/android/media/MediaParser#`. |
-| abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer` Receives extracted media sample data and metadata from `https://developer.android.com/reference/kotlin/android/media/MediaParser#`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` Provides input data to MediaParser. |
+| abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer` Receives extracted media sample data and metadata from MediaParser. |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.ParsingException` Thrown when an error occurs while parsing a media stream. |
 | --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap` Maps seek positions to `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint` in the stream. |
@@ -132,7 +132,7 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 | abstract | `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader` `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` that allows setting the read position. |
 | --- | --- |
 | | `https://developer.android.com/reference/kotlin/android/media/MediaParser.TrackData` Holds information associated with a track. |
-| | `https://developer.android.com/reference/kotlin/android/media/MediaParser.UnrecognizedInputFormatException` Thrown if all parser implementations provided to `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)` failed to sniff the input content. |
+| | `https://developer.android.com/reference/kotlin/android/media/MediaParser.UnrecognizedInputFormatException` Thrown if all parser implementations provided to create failed to sniff the input content. |
 
 | Constants ||
 |---|---|
@@ -176,7 +176,7 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_PS:kotlin.String` Parser for the PS container format, as defined in ISO/IEC 11172-1. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_TS:kotlin.String` Parser for the TS container format, as defined in ISO/IEC 13818-1. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_UNKNOWN:kotlin.String` Parser name returned by `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserName()` when no parser has been selected yet. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_UNKNOWN:kotlin.String` Parser name returned by getParserName when no parser has been selected yet. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_WAV:kotlin.String` Parser for the WAV container format, as defined in Multimedia Programming Interface and Data Specifications. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#SAMPLE_FLAG_DECODE_ONLY:kotlin.Int` Indicates that the sample should be decoded but not rendered. |
 | --- | --- |
@@ -188,20 +188,20 @@ class VideoOutputConsumer implements MediaParser.OutputConsumer {
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)(seekableInputReader: https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekableInputReader)` Makes progress in the extraction of the input media stream, unless the end of the input has been reached. |
-| static [MediaParser](MediaParser.md) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)(outputConsumer: https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer, vararg parserNames: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates an instance whose backing parser will be selected by sniffing the content during the first `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)` call. |
-| static [MediaParser](MediaParser.md) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#createByName(kotlin.String,%20android.media.MediaParser.OutputConsumer)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, outputConsumer: https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer)` Creates an instance backed by the parser with the given `name`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | advance Makes progress in the extraction of the input media stream, unless the end of the input has been reached. |
+| static [MediaParser](MediaParser.md) | create Creates an instance whose backing parser will be selected by sniffing the content during the first advance call. |
+| static [MediaParser](MediaParser.md) | createByName Creates an instance backed by the parser with the given `name`. |
 | --- | --- |
-| [LogSessionId](../android.media.metrics/LogSessionId.md) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#getLogSessionId()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserName()()` Returns the name of the backing parser implementation. |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserNames(android.media.MediaFormat)(mediaFormat: https://developer.android.com/reference/kotlin/android/media/MediaFormat)` Returns an immutable list with the names of the parsers that are suitable for container formats with the given `https://developer.android.com/reference/kotlin/android/media/MediaFormat`. |
+| [LogSessionId](../android.media.metrics/LogSessionId.md) | getLogSessionId <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getParserName Returns the name of the backing parser implementation. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getParserNames Returns an immutable list with the names of the parsers that are suitable for container formats with the given MediaFormat. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#release()()` Releases any acquired resources. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#seek(android.media.MediaParser.SeekPoint)(seekPoint: https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint)` Seeks within the media container being extracted. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#setLogSessionId(android.media.metrics.LogSessionId)(logSessionId: https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | release Releases any acquired resources. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | seek Seeks within the media container being extracted. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLogSessionId <br /> |
 | --- | --- |
-| [MediaParser](MediaParser.md) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#setParameter(kotlin.String,%20kotlin.Any)(parameterName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)` Sets parser-specific parameters which allow customizing behavior. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaParser#supportsParameter(kotlin.String)(parameterName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns whether the given `parameterName` is supported by this parser. |
+| [MediaParser](MediaParser.md) | setParameter Sets parser-specific parameters which allow customizing behavior. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsParameter Returns whether the given `parameterName` is supported by this parser. |
 
 ## Constants
 
@@ -590,7 +590,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val PARSER_NAME_UNKNOWN: String
 ```
 
-Parser name returned by `https://developer.android.com/reference/kotlin/android/media/MediaParser#getParserName()` when no parser has been selected yet.
+Parser name returned by getParserName when no parser has been selected yet.
 
  Value: "android.media.mediaparser.UNKNOWN"
 
@@ -643,7 +643,7 @@ static val SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA: Int
 
 Indicates that the sample has supplemental data.
 
-Samples will not have this flag set unless the `"android.media.mediaparser.includeSupplementalData"` parameter is set to `true` via `https://developer.android.com/reference/kotlin/android/media/MediaParser#setParameter(kotlin.String,%20kotlin.Any)`.
+Samples will not have this flag set unless the `"android.media.mediaparser.includeSupplementalData"` parameter is set to `true` via setParameter.
 
 Samples with supplemental data have the following sample data format:
 
@@ -692,7 +692,7 @@ Makes progress in the extraction of the input media stream, unless the end of th
 
 This method will block until some progress has been made.
 
-If this instance was created using `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)`, the first call to this method will sniff the content using the selected parser implementations.
+If this instance was created using create, the first call to this method will sniff the content using the selected parser implementations.
 
 | Parameters ||
 |---|---|
@@ -718,7 +718,7 @@ static fun create(
 ): MediaParser
 ```
 
-Creates an instance whose backing parser will be selected by sniffing the content during the first `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)` call. Parser implementations will sniff the content in order of appearance in `parserNames`.
+Creates an instance whose backing parser will be selected by sniffing the content during the first advance call. Parser implementations will sniff the content in order of appearance in `parserNames`.
 
 | Parameters ||
 |---|---|
@@ -727,7 +727,7 @@ Creates an instance whose backing parser will be selected by sniffing the conten
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaParser#` | A new instance. This value cannot be `null`. |
+| MediaParser | A new instance. This value cannot be `null`. |
 
 ### createByName
 
@@ -749,7 +749,7 @@ Creates an instance backed by the parser with the given `name`. The returned ins
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaParser#` | A new instance. This value cannot be `null`. |
+| MediaParser | A new instance. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -765,7 +765,7 @@ fun getLogSessionId(): LogSessionId
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId` | This value cannot be `null`. |
+| LogSessionId | This value cannot be `null`. |
 
 ### getParserName
 
@@ -777,7 +777,7 @@ fun getParserName(): String
 
 Returns the name of the backing parser implementation.
 
-If this instance was creating using `https://developer.android.com/reference/kotlin/android/media/MediaParser#createByName(kotlin.String,%20android.media.MediaParser.OutputConsumer)`, the provided name is returned. If this instance was created using `https://developer.android.com/reference/kotlin/android/media/MediaParser#create(android.media.MediaParser.OutputConsumer,%20kotlin.String)`, this method will return `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_UNKNOWN:kotlin.String` until the first call to `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)`, after which the name of the backing parser implementation is returned.
+If this instance was creating using createByName, the provided name is returned. If this instance was created using create, this method will return `https://developer.android.com/reference/kotlin/android/media/MediaParser#PARSER_NAME_UNKNOWN:kotlin.String` until the first call to advance, after which the name of the backing parser implementation is returned.
 
 | Return ||
 |---|---|
@@ -791,13 +791,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static fun getParserNames(mediaFormat: MediaFormat): MutableList<String!>
 ```
 
-Returns an immutable list with the names of the parsers that are suitable for container formats with the given `https://developer.android.com/reference/kotlin/android/media/MediaFormat`.
+Returns an immutable list with the names of the parsers that are suitable for container formats with the given MediaFormat.
 
-A parser supports a `https://developer.android.com/reference/kotlin/android/media/MediaFormat` if the mime type associated with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` corresponds to the supported container format.
+A parser supports a MediaFormat if the mime type associated with `https://developer.android.com/reference/kotlin/android/media/MediaFormat#KEY_MIME:kotlin.String` corresponds to the supported container format.
 
 | Parameters ||
 |---|---|
-| `mediaFormat` | [MediaFormat](MediaFormat.md): The `https://developer.android.com/reference/kotlin/android/media/MediaFormat` to check support for. This value cannot be `null`. |
+| `mediaFormat` | [MediaFormat](MediaFormat.md): The MediaFormat to check support for. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -825,9 +825,9 @@ fun seek(seekPoint: MediaParser.SeekPoint): Unit
 
 Seeks within the media container being extracted.
 
-`https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint` can be obtained from the `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap` passed to `https://developer.android.com/reference/kotlin/android/media/MediaParser.OutputConsumer#onSeekMapFound(android.media.MediaParser.SeekMap)`.
+`https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint` can be obtained from the `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekMap` passed to onSeekMapFound.
 
-Following a call to this method, the `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` passed to the next invocation of `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)` must provide data starting from `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint#position:kotlin.Long` in the stream.
+Following a call to this method, the `https://developer.android.com/reference/kotlin/android/media/MediaParser.InputReader` passed to the next invocation of advance must provide data starting from `https://developer.android.com/reference/kotlin/android/media/MediaParser.SeekPoint#position:kotlin.Long` in the stream.
 
 | Parameters ||
 |---|---|
@@ -858,7 +858,7 @@ fun setParameter(
 
 Sets parser-specific parameters which allow customizing behavior.
 
-Must be called before the first call to `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)`.
+Must be called before the first call to advance.
 
 | Parameters ||
 |---|---|
@@ -867,11 +867,11 @@ Must be called before the first call to `https://developer.android.com/reference
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaParser#` | This instance, for convenience. This value cannot be `null`. |
+| MediaParser | This instance, for convenience. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | If called after calling `https://developer.android.com/reference/kotlin/android/media/MediaParser#advance(android.media.MediaParser.SeekableInputReader)` on the same instance. |
+| `java.lang.IllegalStateException` | If called after calling advance on the same instance. |
 
 ### supportsParameter
 

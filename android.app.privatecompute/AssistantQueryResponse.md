@@ -17,20 +17,20 @@ Specialized response for Assistant Query use-cases. Includes the specific query 
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse.Builder` Builder for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#`. |
+| | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse.Builder` Builder for AssistantQueryResponse. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#getMetadata()()` Returns the metadata bytes associated with this egress response. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#getQueryId()()` Returns the unique identifier of the query associated with this egress response. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getMetadata Returns the metadata bytes associated with this egress response. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getQueryId Returns the unique identifier of the query associated with this egress response. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#getQueryResponse()()` Returns the raw query response payload generated for the query. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getQueryResponse Returns the raw query response payload generated for the query. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistantQueryResponse](AssistantQueryResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#` instance. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistantQueryResponse](AssistantQueryResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#CREATOR:android.os.Parcelable.Creator` Creator for AssistantQueryResponse instance. |
 
 ## Public methods
 
@@ -42,7 +42,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -120,4 +120,4 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val CREATOR: Parcelable.Creator<AssistantQueryResponse!>
 ```
 
-Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#` instance.
+Creator for AssistantQueryResponse instance.

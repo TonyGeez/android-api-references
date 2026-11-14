@@ -74,9 +74,9 @@ MediaSync sync = new MediaSync();
 ```
 The client needs to configure corresponding sink by setting the Surface and/or AudioTrack based on the stream type it will play.
 
-For video, the client needs to call `https://developer.android.com/reference/kotlin/android/media/MediaSync#createInputSurface()` to obtain a surface on which it will render video frames.
+For video, the client needs to call createInputSurface to obtain a surface on which it will render video frames.
 
-For audio, the client needs to set up audio track correctly, e.g., using `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STREAM:kotlin.Int`. The audio buffers are sent to MediaSync directly via `https://developer.android.com/reference/kotlin/android/media/MediaSync#queueAudio(java.nio.ByteBuffer,%20kotlin.Int,%20kotlin.Long)`, and are returned to the client via `https://developer.android.com/reference/kotlin/android/media/MediaSync.Callback#onAudioBufferConsumed(android.media.MediaSync,%20java.nio.ByteBuffer,%20kotlin.Int)` asynchronously. The client should not modify an audio buffer till it's returned.
+For audio, the client needs to set up audio track correctly, e.g., using `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STREAM:kotlin.Int`. The audio buffers are sent to MediaSync directly via queueAudio, and are returned to the client via onAudioBufferConsumed asynchronously. The client should not modify an audio buffer till it's returned.
 
 The client can optionally pre-fill audio/video buffers by setting playback rate to 0.0, and then feed audio/video buffers to corresponding components. This can reduce possible initial underrun.
 
@@ -96,31 +96,31 @@ The client can optionally pre-fill audio/video buffers by setting playback rate 
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaSync#MediaSync()()` Class constructor. |
+| MediaSync Class constructor. |
 
 | Public methods ||
 |---|---|
-| [Surface](../android.view/Surface.md) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#createInputSurface()()` Requests a Surface to use as the input. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#flush()()` Flushes all buffers from the sync object. |
-| [PlaybackParams](PlaybackParams.md) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#getPlaybackParams()()` Gets the playback rate using `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`. |
+| [Surface](../android.view/Surface.md) | createInputSurface Requests a Surface to use as the input. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flushes all buffers from the sync object. |
+| [PlaybackParams](PlaybackParams.md) | getPlaybackParams Gets the playback rate using PlaybackParams. |
 | --- | --- |
-| [SyncParams](SyncParams.md) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#getSyncParams()()` Gets the A/V sync mode. |
-| [MediaTimestamp](MediaTimestamp.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaSync#getTimestamp()()` Get current playback position. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#queueAudio(java.nio.ByteBuffer,%20kotlin.Int,%20kotlin.Long)(audioData: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, bufferId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, presentationTimeUs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Queues the audio data asynchronously for playback (AudioTrack must be in streaming mode). |
+| [SyncParams](SyncParams.md) | getSyncParams Gets the A/V sync mode. |
+| [MediaTimestamp](MediaTimestamp.md)? | getTimestamp Get current playback position. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | queueAudio Queues the audio data asynchronously for playback (AudioTrack must be in streaming mode). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#release()()` Make sure you call this when you're done to free up any opened component instance instead of relying on the garbage collector to do this for you at some point in the future. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setAudioTrack(android.media.AudioTrack)(audioTrack: https://developer.android.com/reference/kotlin/android/media/AudioTrack?)` Sets the audio track for MediaSync. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setCallback(android.media.MediaSync.Callback,%20android.os.Handler)(cb: https://developer.android.com/reference/kotlin/android/media/MediaSync.Callback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Sets an asynchronous callback for actionable MediaSync events. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | release Make sure you call this when you're done to free up any opened component instance instead of relying on the garbage collector to do this for you at some point in the future. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAudioTrack Sets the audio track for MediaSync. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCallback Sets an asynchronous callback for actionable MediaSync events. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setOnErrorListener(android.media.MediaSync.OnErrorListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/MediaSync.OnErrorListener?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Sets an asynchronous callback for error events. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setPlaybackParams(android.media.PlaybackParams)(params: https://developer.android.com/reference/kotlin/android/media/PlaybackParams)` Sets playback rate using `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setSurface(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?)` Sets the output surface for MediaSync. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setOnErrorListener Sets an asynchronous callback for error events. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPlaybackParams Sets playback rate using PlaybackParams. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSurface Sets the output surface for MediaSync. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#setSyncParams(android.media.SyncParams)(params: https://developer.android.com/reference/kotlin/android/media/SyncParams)` Sets A/V sync mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSyncParams Sets A/V sync mode. |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSync#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 ## Constants
 
@@ -178,7 +178,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun createInputSurface(): Surface
 ```
 
-Requests a Surface to use as the input. This may only be called after `https://developer.android.com/reference/kotlin/android/media/MediaSync#setSurface(android.view.Surface)`.
+Requests a Surface to use as the input. This may only be called after setSurface.
 
 The application is responsible for calling release() on the Surface when done.
 
@@ -216,11 +216,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getPlaybackParams(): PlaybackParams
 ```
 
-Gets the playback rate using `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`.
+Gets the playback rate using PlaybackParams.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/PlaybackParams` | the playback rate being used. This value cannot be `null`. |
+| PlaybackParams | the playback rate being used. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -238,7 +238,7 @@ Gets the A/V sync mode.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/SyncParams` | the A/V sync params. This value cannot be `null`. |
+| SyncParams | the A/V sync params. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -256,15 +256,15 @@ Get current playback position.
 
 The MediaTimestamp represents how the media time correlates to the system time in a linear fashion using an anchor and a clock rate. During regular playback, the media time moves fairly constantly (though the anchor frame may be rebased to a current system time, the linear correlation stays steady). Therefore, this method does not need to be called often.
 
-To help users get current playback position, this method always anchors the timestamp to the current `https://developer.android.com/reference/kotlin/java/lang/System.html#nanoTime()`, so `https://developer.android.com/reference/kotlin/android/media/MediaTimestamp#getAnchorMediaTimeUs()` can be used as current playback position.
+To help users get current playback position, this method always anchors the timestamp to the current nanoTime, so getAnchorMediaTimeUs can be used as current playback position.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaTimestamp?` | a MediaTimestamp object if a timestamp is available, or `null` if no timestamp is available, e.g. because the media player has not been initialized. |
+| MediaTimestamp | a MediaTimestamp object if a timestamp is available, or `null` if no timestamp is available, e.g. because the media player has not been initialized. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaTimestamp`
+- MediaTimestamp
 
 ### queueAudio
 
@@ -278,7 +278,7 @@ fun queueAudio(
 ): Unit
 ```
 
-Queues the audio data asynchronously for playback (AudioTrack must be in streaming mode). If the audio track was flushed as a result of `https://developer.android.com/reference/kotlin/android/media/MediaSync#flush()`, it will be restarted.
+Queues the audio data asynchronously for playback (AudioTrack must be in streaming mode). If the audio track was flushed as a result of flush, it will be restarted.
 
 | Parameters ||
 |---|---|
@@ -374,15 +374,15 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun setPlaybackParams(params: PlaybackParams): Unit
 ```
 
-Sets playback rate using `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`.
+Sets playback rate using PlaybackParams.
 
-When using MediaSync with `https://developer.android.com/reference/kotlin/android/media/AudioTrack`, set playback params using this call instead of calling it directly on the track, so that the sync is aware of the params change.
+When using MediaSync with AudioTrack, set playback params using this call instead of calling it directly on the track, so that the sync is aware of the params change.
 
 This call also works if there is no audio track.
 
 | Parameters ||
 |---|---|
-| `params` | [PlaybackParams](PlaybackParams.md): the playback params to use. `https://developer.android.com/reference/kotlin/android/media/PlaybackParams#getSpeed()` is the ratio between desired playback rate and normal one. 1.0 means normal playback speed. 0.0 means pause. Value larger than 1.0 means faster playback, while value between 0.0 and 1.0 for slower playback. **Note:** the normal rate does not change as a result of this call. To restore the original rate at any time, use speed of 1.0. This value cannot be `null`. |
+| `params` | [PlaybackParams](PlaybackParams.md): the playback params to use. getSpeed is the ratio between desired playback rate and normal one. 1.0 means normal playback speed. 0.0 means pause. Value larger than 1.0 means faster playback, while value between 0.0 and 1.0 for slower playback. **Note:** the normal rate does not change as a result of this call. To restore the original rate at any time, use speed of 1.0. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

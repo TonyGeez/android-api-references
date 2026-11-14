@@ -11,13 +11,13 @@ open class DoubleAccumulator : Number, Serializable
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
 | | ↳ | [java.util.concurrent.atomic.DoubleAccumulator](DoubleAccumulator.md) |
 
-One or more variables that together maintain a running `double` value updated using a supplied function. When updates (method `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#accumulate(kotlin.Double)`) are contended across threads, the set of variables may grow dynamically to reduce contention. Method `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()` (or, equivalently, `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toDouble()`) returns the current value across the variables maintaining updates.
+One or more variables that together maintain a running `double` value updated using a supplied function. When updates (method accumulate) are contended across threads, the set of variables may grow dynamically to reduce contention. Method get (or, equivalently, toDouble) returns the current value across the variables maintaining updates.
 
 This class is usually preferable to alternatives when multiple threads update a common value that is used for purposes such as summary statistics that are frequently updated but less frequently read.
 
 The supplied accumulator function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. For predictable results, the accumulator function should be commutative and associative within the floating point tolerance required in usage contexts. The function is applied with an existing value (or identity) as one argument, and a given update as the other argument. For example, to maintain a running maximum value, you could supply `Double::max` along with `Double.NEGATIVE_INFINITY` as the identity. The order of accumulation within or across threads is not guaranteed. Thus, this class may not be applicable if numerical stability is required, especially when combining values of substantially different orders of magnitude.
 
-Class `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAdder` provides analogs of the functionality of this class for the common special case of maintaining sums. The call `new DoubleAdder()` is equivalent to `new DoubleAccumulator((x, y) -> x + y, 0.0)`.
+Class DoubleAdder provides analogs of the functionality of this class for the common special case of maintaining sums. The call `new DoubleAdder()` is equivalent to `new DoubleAccumulator((x, y) -> x + y, 0.0)`.
 
 This class extends `https://developer.android.com/reference/kotlin/java/lang/Number.html#`, but does *not* define methods such as `equals`, `hashCode` and `compareTo` because instances are expected to be mutated, and so are not useful as collection keys.
 
@@ -25,21 +25,21 @@ This class extends `https://developer.android.com/reference/kotlin/java/lang/Num
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#DoubleAccumulator(java.util.function.DoubleBinaryOperator,%20kotlin.Double)(accumulatorFunction: https://developer.android.com/reference/kotlin/java/util/function/DoubleBinaryOperator.html#!, identity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Creates a new instance using the given accumulator function and identity element. |
+| DoubleAccumulator Creates a new instance using the given accumulator function and identity element. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#accumulate(kotlin.Double)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Updates with the given value. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()()` Returns the current value. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#getThenReset()()` Equivalent in effect to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()` followed by `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#reset()`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | accumulate Updates with the given value. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | get Returns the current value. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getThenReset Equivalent in effect to get followed by reset. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#reset()()` Resets variables maintaining updates to the identity value. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toDouble()()` Equivalent to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toFloat()()` Returns the [current value](DoubleAccumulator.md)) as a `float` after a narrowing primitive conversion. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reset Resets variables maintaining updates to the identity value. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toDouble Equivalent to get. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | toFloat Returns the [current value](DoubleAccumulator.md)) as a `float` after a narrowing primitive conversion. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toInt()()` Returns the [current value](DoubleAccumulator.md)) as an `int` after a narrowing primitive conversion. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toLong()()` Returns the [current value](DoubleAccumulator.md)) as a `long` after a narrowing primitive conversion. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#toString()()` {@return the String representation of the current value} |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toInt Returns the [current value](DoubleAccumulator.md)) as an `int` after a narrowing primitive conversion. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toLong Returns the [current value](DoubleAccumulator.md)) as a `long` after a narrowing primitive conversion. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString {@return the String representation of the current value} |
 | --- | --- |
 
 ## Public constructors
@@ -99,7 +99,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getThenReset(): Double
 ```
 
-Equivalent in effect to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()` followed by `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#reset()`. This method may apply for example during quiescent points between multithreaded computations. If there are updates concurrent with this method, the returned value is *not* guaranteed to be the final value occurring before the reset.
+Equivalent in effect to get followed by reset. This method may apply for example during quiescent points between multithreaded computations. If there are updates concurrent with this method, the returned value is *not* guaranteed to be the final value occurring before the reset.
 
 | Return ||
 |---|---|
@@ -123,7 +123,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toDouble(): Double
 ```
 
-Equivalent to `https://developer.android.com/reference/kotlin/java/util/concurrent/atomic/DoubleAccumulator#get()`.
+Equivalent to get.
 
 | Return ||
 |---|---|

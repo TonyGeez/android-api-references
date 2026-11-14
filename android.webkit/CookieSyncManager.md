@@ -14,7 +14,7 @@ class CookieSyncManager : Runnable
 > [!CAUTION]
 > **This class was deprecated in API level 21.**
 >
-> The WebView now automatically syncs cookies as necessary. You no longer need to create or use the CookieSyncManager. To manually force a sync you can use the CookieManager method `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#flush()` which is a synchronous replacement for `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#sync()`.
+> The WebView now automatically syncs cookies as necessary. You no longer need to create or use the CookieSyncManager. To manually force a sync you can use the CookieManager method flush which is a synchronous replacement for sync.
 
 The CookieSyncManager is used to synchronize the browser cookie store between RAM and permanent storage. To get the best performance, browser cookies are saved in RAM. A separate thread saves the cookies between, driven by a timer.
 
@@ -45,25 +45,25 @@ To get instant sync instead of waiting for the timer to trigger, the host can ca
 CookieSyncManager.getInstance().sync()
 ```
 
-The sync interval is 5 minutes, so you will want to force syncs manually anyway, for instance in `https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onPageFinished(android.webkit.WebView,%20kotlin.String)`. Note that even sync() happens asynchronously, so don't do it just as your activity is shutting down.
+The sync interval is 5 minutes, so you will want to force syncs manually anyway, for instance in onPageFinished. Note that even sync() happens asynchronously, so don't do it just as your activity is shutting down.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| static [CookieSyncManager](CookieSyncManager.md)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#createInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Create a singleton CookieSyncManager within a context |
-| static [CookieSyncManager](CookieSyncManager.md)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#getInstance()()` Singleton access to a `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#resetSync()()` resetSync() resets sync manager's timer. |
+| static [CookieSyncManager](CookieSyncManager.md)! | createInstance Create a singleton CookieSyncManager within a context |
+| static [CookieSyncManager](CookieSyncManager.md)! | getInstance Singleton access to a CookieSyncManager. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | resetSync resetSync() resets sync manager's timer. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#run()()` When an object implementing interface `Runnable` is used to create a thread, starting the thread causes the object's `run` method to be called in that separately executing thread. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#startSync()()` startSync() requests sync manager to start sync. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#stopSync()()` stopSync() requests sync manager to stop sync. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | run When an object implementing interface `Runnable` is used to create a thread, starting the thread causes the object's `run` method to be called in that separately executing thread. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startSync startSync() requests sync manager to start sync. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopSync stopSync() requests sync manager to stop sync. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#sync()()` sync() forces sync manager to sync now |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | sync sync() forces sync manager to sync now |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#syncFromRamToFlash()()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | syncFromRamToFlash <br /> |
 
 ## Public methods
 
@@ -97,7 +97,7 @@ static fun getInstance(): CookieSyncManager!
 
 **Deprecated:** *Deprecated in Java.*
 
-Singleton access to a `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#`. An IllegalStateException will be thrown if `https://developer.android.com/reference/kotlin/android/webkit/CookieSyncManager#createInstance(android.content.Context)` is not called before.
+Singleton access to a CookieSyncManager. An IllegalStateException will be thrown if createInstance is not called before.
 
 | Return ||
 |---|---|
@@ -165,7 +165,7 @@ Deprecated in [API level 1](https://developer.android.com/guide/topics/manifest/
 fun sync(): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#flush()` instead.*
+**Deprecated:** *Use flush instead.*
 
 sync() forces sync manager to sync now
 
@@ -179,4 +179,4 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected fun syncFromRamToFlash(): Unit
 ```
 
-**Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#flush()` instead.*
+**Deprecated:** *Use flush instead.*

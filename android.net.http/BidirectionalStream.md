@@ -11,14 +11,14 @@ abstract class BidirectionalStream
 | --- | --- |
 | ↳ | [android.net.http.BidirectionalStream](BidirectionalStream.md) |
 
-Class for bidirectional sending and receiving of data over HTTP/2 or QUIC connections. Created by `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder`. Note: There are ordering restrictions on methods of `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#`; please see individual methods for description of restrictions.
+Class for bidirectional sending and receiving of data over HTTP/2 or QUIC connections. Created by `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder`. Note: There are ordering restrictions on methods of BidirectionalStream; please see individual methods for description of restrictions.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder` Builder for `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#`s. |
-| abstract | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback` Callback interface used to receive callbacks from a `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#`. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder` Builder for BidirectionalStreams. |
+| abstract | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback` Callback interface used to receive callbacks from a BidirectionalStream. |
 
 | Constants ||
 |---|---|
@@ -31,29 +31,29 @@ Class for bidirectional sending and receiving of data over HTTP/2 or QUIC connec
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#BidirectionalStream()()` <br /> |
+| BidirectionalStream <br /> |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#cancel()()` Cancels the stream. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#flush()()` Flushes pending writes. |
-| open [FinishedRequestTimings](FinishedRequestTimings.md) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#getFinishedRequestTimings()()` Returns the detailed timing metrics for the request. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancels the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flush Flushes pending writes. |
+| open [FinishedRequestTimings](FinishedRequestTimings.md) | getFinishedRequestTimings Returns the detailed timing metrics for the request. |
 | --- | --- |
-| abstract [HeaderBlock](HeaderBlock.md) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#getHeaders()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#addHeader(kotlin.String,%20kotlin.String)` |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#getHttpMethod()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setHttpMethod(kotlin.String)`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#getPriority()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)` |
+| abstract [HeaderBlock](HeaderBlock.md) | getHeaders See addHeader |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getHttpMethod See setHttpMethod. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPriority See setPriority |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#getTrafficStatsTag()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsTag(kotlin.Int)` |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#getTrafficStatsUid()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsUid(kotlin.Int)` |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#hasTrafficStatsTag()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsTag(kotlin.Int)` |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTrafficStatsTag See setTrafficStatsTag |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getTrafficStatsUid See setTrafficStatsUid |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasTrafficStatsTag See setTrafficStatsTag |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#hasTrafficStatsUid()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsUid(kotlin.Int)` |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#isDelayRequestHeadersUntilFirstFlushEnabled()()` See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setDelayRequestHeadersUntilFirstFlushEnabled(kotlin.Boolean)` |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#isDone()()` Returns `true` if the stream was successfully started and is now done (succeeded, canceled, or failed). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasTrafficStatsUid See setTrafficStatsUid |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDelayRequestHeadersUntilFirstFlushEnabled See setDelayRequestHeadersUntilFirstFlushEnabled |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDone Returns `true` if the stream was successfully started and is now done (succeeded, canceled, or failed). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#read(java.nio.ByteBuffer)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Reads data from the stream into the provided buffer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#start()()` Starts the stream, all callbacks go to the `callback` argument passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder`'s constructor. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#write(java.nio.ByteBuffer,%20kotlin.Boolean)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#, endOfStream: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Attempts to write data from the provided buffer into the stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | read Reads data from the stream into the provided buffer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start Starts the stream, all callbacks go to the `callback` argument passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder`'s constructor. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Attempts to write data from the provided buffer into the stream. |
 | --- | --- |
 
 ## Constants
@@ -67,7 +67,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val STREAM_PRIORITY_HIGHEST: Int
 ```
 
-Highest stream priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)`.
+Highest stream priority. Passed to setPriority.
 
  Value: 4
 
@@ -80,7 +80,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val STREAM_PRIORITY_IDLE: Int
 ```
 
-Lowest stream priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)`.
+Lowest stream priority. Passed to setPriority.
 
  Value: 0
 
@@ -93,7 +93,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val STREAM_PRIORITY_LOW: Int
 ```
 
-Low stream priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)`.
+Low stream priority. Passed to setPriority.
 
  Value: 2
 
@@ -106,7 +106,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val STREAM_PRIORITY_LOWEST: Int
 ```
 
-Very low stream priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)`.
+Very low stream priority. Passed to setPriority.
 
  Value: 1
 
@@ -119,7 +119,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 static val STREAM_PRIORITY_MEDIUM: Int
 ```
 
-Medium stream priority. Passed to `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)`. This is the default priority given to the stream.
+Medium stream priority. Passed to setPriority. This is the default priority given to the stream.
 
  Value: 3
 
@@ -145,7 +145,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun cancel(): Unit
 ```
 
-Cancels the stream. Can be called at any time after `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#start()`. `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onCanceled(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo)` will be invoked when cancelation is complete and no further callback methods will be invoked. If the stream has completed or has not started, calling `cancel()` has no effect and `onCanceled()` will not be invoked. If the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed in during `BidirectionalStream` construction runs tasks on a single thread, and `cancel()` is called on that thread, no listener methods (besides `onCanceled()`) will be invoked after `cancel()` is called. Otherwise, at most one callback method may be invoked after `cancel()` has completed.
+Cancels the stream. Can be called at any time after start. onCanceled will be invoked when cancelation is complete and no further callback methods will be invoked. If the stream has completed or has not started, calling `cancel()` has no effect and `onCanceled()` will not be invoked. If the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` passed in during `BidirectionalStream` construction runs tasks on a single thread, and `cancel()` is called on that thread, no listener methods (besides `onCanceled()`) will be invoked after `cancel()` is called. Otherwise, at most one callback method may be invoked after `cancel()` has completed.
 
 ### flush
 
@@ -156,7 +156,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun flush(): Unit
 ```
 
-Flushes pending writes. This method should not be invoked before `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onStreamReady(android.net.http.BidirectionalStream)`. For previously delayed `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#write(java.nio.ByteBuffer,%20kotlin.Boolean)`s, a corresponding `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onWriteCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)` will be invoked when the buffer is sent.
+Flushes pending writes. This method should not be invoked before onStreamReady. For previously delayed writes, a corresponding onWriteCompleted will be invoked when the buffer is sent.
 
 ### getFinishedRequestTimings
 
@@ -169,11 +169,11 @@ open fun getFinishedRequestTimings(): FinishedRequestTimings
 
 Returns the detailed timing metrics for the request.
 
-This method can be only called when the request has reached a terminal callback. This is defined by the execution of one of the following callbacks: `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onSucceeded(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo)`, `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onFailed(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` or `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onCanceled(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo)`. It's also allowed to call this method in the terminal callback itself.
+This method can be only called when the request has reached a terminal callback. This is defined by the execution of one of the following callbacks: onSucceeded, onFailed or onCanceled. It's also allowed to call this method in the terminal callback itself.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/http/FinishedRequestTimings` | This value cannot be `null`. |
+| FinishedRequestTimings | This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -188,11 +188,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getHeaders(): HeaderBlock
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#addHeader(kotlin.String,%20kotlin.String)`
+See addHeader
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/http/HeaderBlock` | This value cannot be `null`. |
+| HeaderBlock | This value cannot be `null`. |
 
 ### getHttpMethod
 
@@ -203,7 +203,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getHttpMethod(): String
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setHttpMethod(kotlin.String)`.
+See setHttpMethod.
 
 | Return ||
 |---|---|
@@ -218,7 +218,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getPriority(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setPriority(kotlin.Int)`
+See setPriority
 
 | Return ||
 |---|---|
@@ -233,7 +233,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getTrafficStatsTag(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsTag(kotlin.Int)`
+See setTrafficStatsTag
 
 ### getTrafficStatsUid
 
@@ -244,7 +244,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun getTrafficStatsUid(): Int
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsUid(kotlin.Int)`
+See setTrafficStatsUid
 
 ### hasTrafficStatsTag
 
@@ -255,7 +255,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun hasTrafficStatsTag(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsTag(kotlin.Int)`
+See setTrafficStatsTag
 
 ### hasTrafficStatsUid
 
@@ -266,7 +266,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun hasTrafficStatsUid(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setTrafficStatsUid(kotlin.Int)`
+See setTrafficStatsUid
 
 ### isDelayRequestHeadersUntilFirstFlushEnabled
 
@@ -277,7 +277,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun isDelayRequestHeadersUntilFirstFlushEnabled(): Boolean
 ```
 
-See `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Builder#setDelayRequestHeadersUntilFirstFlushEnabled(kotlin.Boolean)`
+See setDelayRequestHeadersUntilFirstFlushEnabled
 
 ### isDone
 
@@ -303,11 +303,11 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 abstract fun read(buffer: ByteBuffer): Unit
 ```
 
-Reads data from the stream into the provided buffer. Can only be called at most once in response to each invocation of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onStreamReady(android.net.http.BidirectionalStream)`/ `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onResponseHeadersReceived(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo)` and `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onReadCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)` methods of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback`. Each call will result in an invocation of one of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback`'s `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onReadCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)` method if data is read, or its `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onFailed(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` method if there's an error. An attempt to read data into `buffer` starting at `buffer.position()` is begun. At most `buffer.remaining()` bytes are read. `buffer.position()` is updated upon invocation of `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onReadCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)` to indicate how much data was read.
+Reads data from the stream into the provided buffer. Can only be called at most once in response to each invocation of the onStreamReady/ onResponseHeadersReceived and onReadCompleted methods of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback`. Each call will result in an invocation of one of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback`'s onReadCompleted method if data is read, or its onFailed method if there's an error. An attempt to read data into `buffer` starting at `buffer.position()` is begun. At most `buffer.remaining()` bytes are read. `buffer.position()` is updated upon invocation of onReadCompleted to indicate how much data was read.
 
 | Parameters ||
 |---|---|
-| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md): the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` to read data into. Must be a direct ByteBuffer. The embedder must not read or modify buffer's position, limit, or data between its position and limit until `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onReadCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)`, `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onCanceled(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo)`, or `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onFailed(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` are invoked. This value cannot be `null`. |
+| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md): the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` to read data into. Must be a direct ByteBuffer. The embedder must not read or modify buffer's position, limit, or data between its position and limit until onReadCompleted, onCanceled, or onFailed are invoked. This value cannot be `null`. |
 
 ### start
 
@@ -332,9 +332,9 @@ abstract fun write(
 ): Unit
 ```
 
-Attempts to write data from the provided buffer into the stream. If auto flush is disabled, data will be sent only after `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream#flush()` is called. Each call will result in an invocation of one of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback`'s `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onWriteCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)` method if data is sent, or its `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onFailed(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` method if there's an error. An attempt to write data from `buffer` starting at `buffer.position()` is begun. `buffer.remaining()` bytes will be written. `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onWriteCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)` will be invoked only when the full ByteBuffer is written.
+Attempts to write data from the provided buffer into the stream. If auto flush is disabled, data will be sent only after flush is called. Each call will result in an invocation of one of the `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback`'s onWriteCompleted method if data is sent, or its onFailed method if there's an error. An attempt to write data from `buffer` starting at `buffer.position()` is begun. `buffer.remaining()` bytes will be written. onWriteCompleted will be invoked only when the full ByteBuffer is written.
 
 | Parameters ||
 |---|---|
-| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md): the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` to write data from. Must be a direct ByteBuffer. The embedder must not read or modify buffer's position, limit, or data between its position and limit until `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onWriteCompleted(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20java.nio.ByteBuffer,%20kotlin.Boolean)`, `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onCanceled(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo)`, or `https://developer.android.com/reference/kotlin/android/net/http/BidirectionalStream.Callback#onFailed(android.net.http.BidirectionalStream,%20android.net.http.UrlResponseInfo,%20android.net.http.HttpException)` are invoked. Can be empty when `endOfStream` is `true`. This value cannot be `null`. |
+| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md): the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#` to write data from. Must be a direct ByteBuffer. The embedder must not read or modify buffer's position, limit, or data between its position and limit until onWriteCompleted, onCanceled, or onFailed are invoked. Can be empty when `endOfStream` is `true`. This value cannot be `null`. |
 | `endOfStream` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if `true`, then `buffer` is the last buffer to be written, and once written, stream is closed from the client side, resulting in half-closed stream or a fully closed stream if the remote side has already closed. |

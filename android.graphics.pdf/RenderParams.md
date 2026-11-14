@@ -17,7 +17,7 @@ Represents a set of parameters that will be used to render a page of the PDF doc
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams.Builder` Builder for constructing `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#`. |
+| | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams.Builder` Builder for constructing RenderParams. |
 
 | Constants ||
 |---|---|
@@ -33,19 +33,19 @@ Represents a set of parameters that will be used to render a page of the PDF doc
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_MODE_FOR_DISPLAY:kotlin.Int` Mode to render the content for display on a screen. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_MODE_FOR_PRINT:kotlin.Int` Mode to render the content for printing. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_IMAGE:kotlin.Int` Flag to exclude `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageImageObject` in the rendered page bitmaps |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_IMAGE:kotlin.Int` Flag to exclude PdfPageImageObject in the rendered page bitmaps |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_NONE:kotlin.Int` Flag to include all the page objects in the rendered page bitmaps |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_PATH:kotlin.Int` Flag to exclude `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPagePathObject` in the rendered page bitmaps |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_PATH:kotlin.Int` Flag to exclude PdfPagePathObject in the rendered page bitmaps |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_TEXT:kotlin.Int` Flag to exclude `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject` in the rendered page bitmaps |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_PAGE_OBJECT_EXCLUDE_TEXT:kotlin.Int` Flag to exclude PdfPageTextObject in the rendered page bitmaps |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderFlags()()` Returns the bitmask of the render flags. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderFormContentMode()()` Returns the mode for rendering PDF form content, one of: `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_FORM_CONTENT_ENABLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_FORM_CONTENT_DISABLED:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_FORM_CONTENT_DEFAULT:kotlin.Int` |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderMode()()` Returns the render mode. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRenderFlags Returns the bitmask of the render flags. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRenderFormContentMode Returns the mode for rendering PDF form content, one of: `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_FORM_CONTENT_ENABLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_FORM_CONTENT_DISABLED:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#RENDER_FORM_CONTENT_DEFAULT:kotlin.Int` |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRenderMode Returns the render mode. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderPageObjectFlags()()` Returns the bitmask of the render page object flags. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRenderPageObjectFlags Returns the bitmask of the render page object flags. |
 
 ## Constants
 
@@ -64,8 +64,8 @@ Flag to enable rendering of freetext annotation on the page.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderFlags()`
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams.Builder#setRenderFlags(kotlin.Int)`
+- getRenderFlags
+- setRenderFlags
 
 ### FLAG_RENDER_HIGHLIGHT_ANNOTATIONS
 
@@ -82,8 +82,8 @@ Flag to enable rendering of highlight annotation on the page.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderFlags()`
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams.Builder#setRenderFlags(kotlin.Int)`
+- getRenderFlags
+- setRenderFlags
 
 ### FLAG_RENDER_STAMP_ANNOTATIONS
 
@@ -100,8 +100,8 @@ Flag to enable rendering of stamp annotation on the page.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderFlags()`
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams.Builder#setRenderFlags(kotlin.Int)`
+- getRenderFlags
+- setRenderFlags
 
 ### FLAG_RENDER_TEXT_ANNOTATIONS
 
@@ -118,8 +118,8 @@ Flag to enable rendering of text annotation on the page.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams#getRenderFlags()`
-- `https://developer.android.com/reference/kotlin/android/graphics/pdf/RenderParams.Builder#setRenderFlags(kotlin.Int)`
+- getRenderFlags
+- setRenderFlags
 
 ### RENDER_FORM_CONTENT_DEFAULT
 
@@ -132,9 +132,9 @@ static val RENDER_FORM_CONTENT_DEFAULT: Int
 
 Mode to rely on the default behavior with respect to including PDF form content in rendered PDF bitmaps.
 
-`https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRenderer` will render form content by default if the application is targeting SDK version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` or higher.
+PdfRenderer will render form content by default if the application is targeting SDK version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` or higher.
 
-`https://developer.android.com/reference/kotlin/android/graphics/pdf/PdfRendererPreV` will always render form content by default.
+PdfRendererPreV will always render form content by default.
 
  Value: 3
 
@@ -199,7 +199,7 @@ Also in [S Extensions 24](https://developer.android.com/sdkExtensions)
 static val RENDER_PAGE_OBJECT_EXCLUDE_IMAGE: Int
 ```
 
-Flag to exclude `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageImageObject` in the rendered page bitmaps
+Flag to exclude PdfPageImageObject in the rendered page bitmaps
 
  Value: 4
 
@@ -225,7 +225,7 @@ Also in [S Extensions 24](https://developer.android.com/sdkExtensions)
 static val RENDER_PAGE_OBJECT_EXCLUDE_PATH: Int
 ```
 
-Flag to exclude `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPagePathObject` in the rendered page bitmaps
+Flag to exclude PdfPagePathObject in the rendered page bitmaps
 
  Value: 2
 
@@ -238,7 +238,7 @@ Also in [S Extensions 24](https://developer.android.com/sdkExtensions)
 static val RENDER_PAGE_OBJECT_EXCLUDE_TEXT: Int
 ```
 
-Flag to exclude `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageTextObject` in the rendered page bitmaps
+Flag to exclude PdfPageTextObject in the rendered page bitmaps
 
  Value: 8
 

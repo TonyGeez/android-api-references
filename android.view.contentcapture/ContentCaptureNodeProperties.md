@@ -16,14 +16,14 @@ Used to provide changes from a UI node (e.g. a View or a virtual view) to the Co
 
 To use this class:
 
-1. Obtain the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the node. For virtual views, use `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#newAutofillId(android.view.autofill.AutofillId,%20kotlin.Long)`.
-2. Set the desired properties on an instance of this class (e.g., `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setText(kotlin.CharSequence)`, `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`).
-3. Pass the ID and this properties instance to `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#notifyNodeAppearedOrChanged(android.view.autofill.AutofillId,%20android.view.contentcapture.ContentCaptureNodeProperties)`.
-4. Call `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#clear()` to reset the properties before reusing the instance for the next node.
+1. Obtain the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#` of the node. For virtual views, use newAutofillId.
+2. Set the desired properties on an instance of this class (e.g., setText, setBounds).
+3. Pass the ID and this properties instance to notifyNodeAppearedOrChanged.
+4. Call clear to reset the properties before reusing the instance for the next node.
 
 <br />
 
-To track which properties have been modified explicitly this class offers methods like `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasBounds()`, `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasText()` that will return `true` only if the corresponding property was explicitly set. Calling `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#clear()` removes all set fields and brings back this class to its initial state to be reused.
+To track which properties have been modified explicitly this class offers methods like hasBounds, hasText that will return `true` only if the corresponding property was explicitly set. Calling clear removes all set fields and brings back this class to its initial state to be reused.
 
 Calling a getter method when the corresponding property has not been set (i.e. when `has*()` returns `false`) will throw an `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`. Callers should check `has*()` prior to calling the getter.
 
@@ -31,27 +31,27 @@ Calling a getter method when the corresponding property has not been set (i.e. w
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#ContentCaptureNodeProperties()()` <br /> |
+| ContentCaptureNodeProperties <br /> |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#clear()()` Clears the entire properties object for reuse. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getBounds(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Copies the relative boundaries of this node into the provided `https://developer.android.com/reference/kotlin/android/graphics/Rect.html#`. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getContentDescription()()` Gets the content description of the node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Clears the entire properties object for reuse. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getBounds Copies the relative boundaries of this node into the provided `https://developer.android.com/reference/kotlin/android/graphics/Rect.html#`. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getContentDescription Gets the content description of the node. |
 | --- | --- |
-| open [AutofillId](../android.view.autofill/AutofillId.md)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getParentId()()` Gets the parent ID of the node. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#getText()()` Gets the text of the node. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasBounds()()` Checks if the bounds have been explicitly set. |
+| open [AutofillId](../android.view.autofill/AutofillId.md)? | getParentId Gets the parent ID of the node. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getText Gets the text of the node. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasBounds Checks if the bounds have been explicitly set. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasContentDescription()()` Checks if the content description has been explicitly set. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasParentId()()` Checks if the parent ID has been explicitly set. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasText()()` Checks if the text has been explicitly set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasContentDescription Checks if the content description has been explicitly set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasParentId Checks if the parent ID has been explicitly set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasText Checks if the text has been explicitly set. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setBounds(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(left: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, top: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, right: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bottom: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the boundaries for this node relative to the parent node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setContentDescription(kotlin.CharSequence)(contentDescription: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the content description for this node. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setParentId(android.view.autofill.AutofillId)(parentId: https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId.html#?)` Sets the parent ID for this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBounds Sets the boundaries for this node relative to the parent node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setContentDescription Sets the content description for this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setParentId Sets the parent ID for this node. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#setText(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Sets the text for this node. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setText Sets the text for this node. |
 
 ## Public constructors
 
@@ -91,7 +91,7 @@ Copies the relative boundaries of this node into the provided `https://developer
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasBounds()` is `false`. |
+| `java.lang.IllegalStateException` | if hasBounds is `false`. |
 
 ### getContentDescription
 
@@ -109,7 +109,7 @@ Gets the content description of the node.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasContentDescription()` is `false`. |
+| `java.lang.IllegalStateException` | if hasContentDescription is `false`. |
 
 ### getParentId
 
@@ -127,7 +127,7 @@ Gets the parent ID of the node.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasParentId()` is `false`. |
+| `java.lang.IllegalStateException` | if hasParentId is `false`. |
 
 ### getText
 
@@ -145,7 +145,7 @@ Gets the text of the node.
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalStateException` | if `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureNodeProperties#hasText()` is `false`. |
+| `java.lang.IllegalStateException` | if hasText is `false`. |
 
 ### hasBounds
 

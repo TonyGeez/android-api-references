@@ -64,28 +64,28 @@ Contains metadata about an item, such as the title, artist, etc.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#containsKey(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the given key is contained in the metadata |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the contents of this object to another MediaMetadata object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | containsKey Returns true if the given key is contained in the metadata |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares the contents of this object to another MediaMetadata object. |
 | --- | --- |
-| [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmap(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` for the given key or null if no bitmap exists for the given key. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getBitmapDimensionLimit()()` Gets the width/height limit (in pixels) for the bitmaps when this metadata was created. |
-| [MediaDescription](MediaDescription.md) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()()` Returns a simple description of this metadata for display purposes. |
+| [Bitmap](../android.graphics/Bitmap.md)? | getBitmap Returns a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` for the given key or null if no bitmap exists for the given key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBitmapDimensionLimit Gets the width/height limit (in pixels) for the bitmaps when this metadata was created. |
+| [MediaDescription](MediaDescription.md) | getDescription Returns a simple description of this metadata for display purposes. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getLong(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or 0L if no long exists for the given key. |
-| [Rating](Rating.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getRating(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `https://developer.android.com/reference/kotlin/android/media/Rating` for the given key or null if no rating exists for the given key. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getString(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the text value associated with the given key as a String, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Returns the value associated with the given key, or 0L if no long exists for the given key. |
+| [Rating](Rating.md)? | getRating Returns a Rating for the given key or null if no rating exists for the given key. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getString Returns the text value associated with the given key as a String, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getText(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#hashCode()()` Returns a hash code value for the object. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#keySet()()` Returns a Set containing the Strings used as keys in this metadata. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getText Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | keySet Returns a Set containing the Strings used as keys in this metadata. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#size()()` Returns the number of fields in this metadata. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | size Returns the number of fields in this metadata. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -139,9 +139,9 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_KEY_ALBUM_ART_URI: String
 ```
 
-The artwork for the album of the media's original source as a Uri formatted String. The artwork can be loaded using a combination of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openInputStream(android.net.Uri)` and android.graphics.BitmapFactory#decodeStream.
+The artwork for the album of the media's original source as a Uri formatted String. The artwork can be loaded using a combination of openInputStream and android.graphics.BitmapFactory#decodeStream.
 
-For the best results, Uris should use the content:// style and support `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_SIZE:kotlin.String` for retrieving scaled artwork through `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`.
+For the best results, Uris should use the content:// style and support `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_SIZE:kotlin.String` for retrieving scaled artwork through openTypedAssetFileDescriptor.
 
  Value: "android.media.metadata.ALBUM_ART_URI"
 
@@ -179,9 +179,9 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_KEY_ART_URI: String
 ```
 
-The artwork for the media as a Uri formatted String. The artwork can be loaded using a combination of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openInputStream(android.net.Uri)` and android.graphics.BitmapFactory#decodeStream.
+The artwork for the media as a Uri formatted String. The artwork can be loaded using a combination of openInputStream and android.graphics.BitmapFactory#decodeStream.
 
-For the best results, Uris should use the content:// style and support `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_SIZE:kotlin.String` for retrieving scaled artwork through `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`.
+For the best results, Uris should use the content:// style and support `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_SIZE:kotlin.String` for retrieving scaled artwork through openTypedAssetFileDescriptor.
 
  Value: "android.media.metadata.ART_URI"
 
@@ -301,9 +301,9 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_KEY_DISPLAY_ICON_URI: String
 ```
 
-A Uri formatted String for an icon or thumbnail that is suitable for display to the user. When displaying more information for media described by this metadata the display description should be preferred to other fields when present. The icon can be loaded using a combination of `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openInputStream(android.net.Uri)` and android.graphics.BitmapFactory#decodeStream.
+A Uri formatted String for an icon or thumbnail that is suitable for display to the user. When displaying more information for media described by this metadata the display description should be preferred to other fields when present. The icon can be loaded using a combination of openInputStream and android.graphics.BitmapFactory#decodeStream.
 
-For the best results, Uris should use the content:// style and support `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_SIZE:kotlin.String` for retrieving scaled artwork through `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#openTypedAssetFileDescriptor(android.net.Uri,%20kotlin.String,%20android.os.Bundle)`.
+For the best results, Uris should use the content:// style and support `https://developer.android.com/reference/kotlin/android/content/ContentResolver.html#EXTRA_SIZE:kotlin.String` for retrieving scaled artwork through openTypedAssetFileDescriptor.
 
  Value: "android.media.metadata.DISPLAY_ICON_URI"
 
@@ -363,7 +363,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_KEY_MEDIA_ID: String
 ```
 
-A String key for identifying the content. This value is specific to the service providing the content. If used, this should be a persistent unique key for the underlying content. It may be used with `https://developer.android.com/reference/kotlin/android/media/session/MediaController.TransportControls#playFromMediaId(kotlin.String,%20android.os.Bundle)` to initiate playback when provided by a `https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser` connected to the same app.
+A String key for identifying the content. This value is specific to the service providing the content. If used, this should be a persistent unique key for the underlying content. It may be used with playFromMediaId to initiate playback when provided by a MediaBrowser connected to the same app.
 
  Value: "android.media.metadata.MEDIA_ID"
 
@@ -375,7 +375,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val METADATA_KEY_MEDIA_URI: String
 ```
 
-A Uri formatted String representing the content. This value is specific to the service providing the content. It may be used with `https://developer.android.com/reference/kotlin/android/media/session/MediaController.TransportControls#playFromUri(android.net.Uri,%20android.os.Bundle)` to initiate playback when provided by a `https://developer.android.com/reference/kotlin/android/media/browse/MediaBrowser` connected to the same app.
+A Uri formatted String representing the content. This value is specific to the service providing the content. It may be used with playFromUri to initiate playback when provided by a MediaBrowser connected to the same app.
 
  Value: "android.media.metadata.MEDIA_URI"
 
@@ -405,7 +405,7 @@ The overall rating for the media.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/Rating`
+- Rating
 
 ### METADATA_KEY_TITLE
 
@@ -445,7 +445,7 @@ The user's rating for the media.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/Rating`
+- Rating
 
 ### METADATA_KEY_WRITER
 
@@ -499,7 +499,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -564,7 +564,7 @@ If it returns another positive value, then all the bitmaps in this metadata has 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaMetadata.Builder#setBitmapDimensionLimit(kotlin.Int)`
+- setBitmapDimensionLimit
 
 ### getDescription
 
@@ -578,7 +578,7 @@ Returns a simple description of this metadata for display purposes.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/MediaDescription` | A simple description of this metadata. This value cannot be `null`. |
+| MediaDescription | A simple description of this metadata. This value cannot be `null`. |
 
 ### getLong
 
@@ -606,7 +606,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getRating(key: String!): Rating?
 ```
 
-Returns a `https://developer.android.com/reference/kotlin/android/media/Rating` for the given key or null if no rating exists for the given key.
+Returns a Rating for the given key or null if no rating exists for the given key.
 
 | Parameters ||
 |---|---|
@@ -614,7 +614,7 @@ Returns a `https://developer.android.com/reference/kotlin/android/media/Rating` 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/media/Rating?` | A `https://developer.android.com/reference/kotlin/android/media/Rating` or null |
+| Rating | A Rating or null |
 
 ### getString
 
@@ -624,7 +624,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getString(key: String!): String?
 ```
 
-Returns the text value associated with the given key as a String, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. This is equivalent to calling `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getText(kotlin.String)` if the value is not null.
+Returns the text value associated with the given key as a String, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. This is equivalent to calling getText if the value is not null.
 
 | Parameters ||
 |---|---|
@@ -665,8 +665,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

@@ -97,92 +97,92 @@ Information you can retrieve about a particular application. This corresponds to
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#ApplicationInfo()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#ApplicationInfo(android.content.pm.ApplicationInfo)(orig: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#!)` <br /> |
+| ApplicationInfo <br /> |
+| ApplicationInfo <br /> |
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#areAttributionsUserVisible()()` Returns whether attributions provided by the application are meant to be user-visible. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | areAttributionsUserVisible Returns whether attributions provided by the application are meant to be user-visible. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump <br /> |
 | --- | --- |
-| open static [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#getCategoryTitle(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a concise, localized title for the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#category:kotlin.Int` value, or `null` for unknown values such as `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#CATEGORY_UNDEFINED:kotlin.Int`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#getGwpAsanMode()()` <br /> |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#getKnownActivityEmbeddingCerts()()` Gets the trusted host certificate digests of apps that are allowed to embed activities of this application. |
+| open static [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getCategoryTitle Return a concise, localized title for the given `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#category:kotlin.Int` value, or `null` for unknown values such as `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#CATEGORY_UNDEFINED:kotlin.Int`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGwpAsanMode <br /> |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getKnownActivityEmbeddingCerts Gets the trusted host certificate digests of apps that are allowed to embed activities of this application. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#getMemtagMode()()` Returns whether the application has requested Memtag to be enabled, disabled, or left unspecified. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#getNativeHeapZeroInitialized()()` Returns whether the application has requested automatic zero-initialization of native heap memory allocations to be enabled or disabled. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#getRequestRawExternalStorageAccess()()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMemtagMode Returns whether the application has requested Memtag to be enabled, disabled, or left unspecified. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getNativeHeapZeroInitialized Returns whether the application has requested automatic zero-initialization of native heap memory allocations to be enabled or disabled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRequestRawExternalStorageAccess <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isProfileable()()` Returns whether this application can be profiled, either by the shell user or the system. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isProfileableByShell()()` Returns whether or not this application can be profiled by the shell user, even when running on a device that is running in user mode. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isResourceOverlay()()` Returns true if the package has declared in its manifest that it is a runtime resource overlay. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isProfileable Returns whether this application can be profiled, either by the shell user or the system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isProfileableByShell Returns whether or not this application can be profiled by the shell user, even when running on a device that is running in user mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isResourceOverlay Returns true if the package has declared in its manifest that it is a runtime resource overlay. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#isVirtualPreload()()` Returns whether or not this application was installed as a virtual preload. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#loadDescription(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the textual description of the application. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#toString()()` Returns a string representation of the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isVirtualPreload Returns whether or not this application was installed as a virtual preload. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | loadDescription Retrieve the textual description of the application. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#dumpBack(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#dumpFront(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+Inherited functions From class PackageItemInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpBack
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` dumpFront
+
+<br />
+
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadBanner
 
 Retrieve the current graphical banner associated with this item. This will call back on the given PackageManager to load the banner from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadIcon
 
 Retrieve the current graphical icon associated with this item. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html` loadLabel
 
 Retrieve the current textual label associated with this item. This will call back on the given PackageManager to load the label from the application.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadLogo
 
 Retrieve the current graphical logo associated with this item. This will call back on the given PackageManager to load the logo from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)`
+`https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#!` loadUnbadgedIcon
 
 Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. This will call back on the given PackageManager to load the icon from the application.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://developer.android.com/reference/kotlin/android/content/res/XmlResourceParser.html#!` loadXmlMetaData
 
 Load an XML resource attached to the meta-data of this item. This will retrieved the name meta-data entry, and if defined call back on the given PackageManager to load its XML file from the application.
 
@@ -236,7 +236,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#uid:kotlin.Int` The kernel user-ID that has been assigned to this application; currently this is not a unique ID (multiple applications can have the same uid). |
 
-Inherited properties From class `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
+Inherited properties From class PackageItemInfo `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#banner:kotlin.Int`
 
 A drawable resource identifier (in the package's resources) of this component's banner. From the "banner" attribute or, if not set, 0.
 
@@ -252,7 +252,7 @@ A drawable resource identifier (in the package's resources) of this component's 
 
 Whether the package is currently in an archived state.
 
-Packages can be archived through `https://developer.android.com/reference/kotlin/android/content/pm/PackageInstaller#requestArchive(kotlin.String,%20android.content.IntentSender)` and do not have any APKs stored on the device, but do keep the data directory.
+Packages can be archived through requestArchive and do not have any APKs stored on the device, but do keep the data directory.
 
 <br />
 
@@ -282,7 +282,7 @@ Public name of this item. From the "android:name" attribute.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!` `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#nonLocalizedLabel:kotlin.CharSequence`
 
-The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationLabel(android.content.pm.ApplicationInfo)`
+The string provided in the AndroidManifest file, if any. You probably don't want to use this. You probably want getApplicationLabel
 
 <br />
 
@@ -1064,7 +1064,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -1304,7 +1304,7 @@ var category: Int
 
 The category of this app. Categories are used to cluster multiple apps together into meaningful groups, such as when summarizing battery, network, or disk usage. Apps should only define this value when they fit well into one of the specific categories.
 
-Set from the `https://developer.android.com/reference/kotlin/android/R.attr.html#appCategory:kotlin.Int` attribute in the manifest. If the manifest doesn't define a category, this value may have been provided by the installer via `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#setApplicationCategoryHint(kotlin.String,%20kotlin.Int)`. 
+Set from the `https://developer.android.com/reference/kotlin/android/R.attr.html#appCategory:kotlin.Int` attribute in the manifest. If the manifest doesn't define a category, this value may have been provided by the installer via setApplicationCategoryHint. 
 Value is one of the following:
 
 - `https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo#CATEGORY_UNDEFINED:kotlin.Int`
@@ -1393,7 +1393,7 @@ var deviceProtectedDataDir: String!
 Full path to the device-protected directory assigned to the package for its persistent data.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/Context.html#createDeviceProtectedStorageContext()`
+- createDeviceProtectedStorageContext
 
 ### enabled
 
@@ -1423,7 +1423,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 var isAppLockEnabled: Boolean
 ```
 
-App lock enablement state of an application. This field is only set if the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_APP_LOCK_INFO:kotlin.Long` was used when retrieving the application info and the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission and will default to `false`. To enable App Lock for a package, call `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)`.
+App lock enablement state of an application. This field is only set if the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_APP_LOCK_INFO:kotlin.Long` was used when retrieving the application info and the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission and will default to `false`. To enable App Lock for a package, call getEnableAppLockIntentForPackage.
 
 ### isAppLockSupported
 
@@ -1433,7 +1433,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 var isAppLockSupported: Boolean
 ```
 
-If `true` this app supports App Lock. This field is only set if the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_APP_LOCK_INFO:kotlin.Long` was used when retrieving the application info and the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission, and will default to `false`. To enable App Lock for a package, call `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getEnableAppLockIntentForPackage(kotlin.String,%20kotlin.Boolean)`.
+If `true` this app supports App Lock. This field is only set if the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#GET_APP_LOCK_INFO:kotlin.Long` was used when retrieving the application info and the caller has the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#LOCK_APPS:kotlin.String` permission, and will default to `false`. To enable App Lock for a package, call getEnableAppLockIntentForPackage.
 
 ### largestWidthLimitDp
 
@@ -1576,7 +1576,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 var storageUuid: UUID!
 ```
 
-UUID of the storage volume on which this application is being hosted. For apps hosted on the default internal storage at `https://developer.android.com/reference/kotlin/android/os/Environment.html#getDataDirectory()`, the UUID value is `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#UUID_DEFAULT:java.util.UUID`.
+UUID of the storage volume on which this application is being hosted. For apps hosted on the default internal storage at getDataDirectory, the UUID value is `https://developer.android.com/reference/kotlin/android/os/storage/StorageManager.html#UUID_DEFAULT:java.util.UUID`.
 
 ### targetSdkVersion
 

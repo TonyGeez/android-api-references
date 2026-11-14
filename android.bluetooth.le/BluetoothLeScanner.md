@@ -10,28 +10,28 @@ class BluetoothLeScanner
 | --- | --- |
 | ↳ | [android.bluetooth.le.BluetoothLeScanner](BluetoothLeScanner.md) |
 
-This class provides methods to perform scan related operations for Bluetooth LE devices. An application can scan for a particular type of Bluetooth LE devices using `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`. It can also request different types of callbacks for delivering the result.
+This class provides methods to perform scan related operations for Bluetooth LE devices. An application can scan for a particular type of Bluetooth LE devices using ScanFilter. It can also request different types of callbacks for delivering the result.
 
-Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter.html#getBluetoothLeScanner()` to get an instance of `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#`.
+Use getBluetoothLeScanner to get an instance of BluetoothLeScanner.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_CALLBACK_TYPE:kotlin.String` Optional extra indicating the callback type, which will be one of CALLBACK_TYPE_\* constants in `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_CALLBACK_TYPE:kotlin.String` Optional extra indicating the callback type, which will be one of CALLBACK_TYPE_\* constants in ScanSettings. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_ERROR_CODE:kotlin.String` Optional extra indicating the error code, if any. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#EXTRA_LIST_SCAN_RESULT:kotlin.String` Extra containing a list of ScanResults. |
 | --- | --- |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#flushPendingScanResults(android.bluetooth.le.ScanCallback)(callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback!)` Flush pending batch scan results stored in Bluetooth controller. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(android.bluetooth.le.ScanCallback)(callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback)` Start Bluetooth LE scan with default parameters and no filters. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(kotlin.collections.MutableList,%20android.bluetooth.le.ScanSettings,%20android.app.PendingIntent)(filters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter!>?, settings: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings?, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#)` Start Bluetooth LE scan using a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | flushPendingScanResults Flush pending batch scan results stored in Bluetooth controller. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startScan Start Bluetooth LE scan with default parameters and no filters. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | startScan Start Bluetooth LE scan using a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(kotlin.collections.MutableList,%20android.bluetooth.le.ScanSettings,%20android.bluetooth.le.ScanCallback)(filters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter!>?, settings: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings, callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback)` Start Bluetooth LE scan. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#stopScan(android.app.PendingIntent)(callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Stops an ongoing Bluetooth LE scan started using a PendingIntent. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#stopScan(android.bluetooth.le.ScanCallback)(callback: https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback!)` Stops an ongoing Bluetooth LE scan. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startScan Start Bluetooth LE scan. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopScan Stops an ongoing Bluetooth LE scan started using a PendingIntent. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | stopScan Stops an ongoing Bluetooth LE scan. |
 | --- | --- |
 
 ## Constants
@@ -44,13 +44,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CALLBACK_TYPE: String
 ```
 
-Optional extra indicating the callback type, which will be one of CALLBACK_TYPE_\* constants in `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings`.
+Optional extra indicating the callback type, which will be one of CALLBACK_TYPE_\* constants in ScanSettings.
 
  Value: "android.bluetooth.le.extra.CALLBACK_TYPE"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback#onScanResult(kotlin.Int,%20android.bluetooth.le.ScanResult)`
+- onScanResult
 
 ### EXTRA_ERROR_CODE
 
@@ -60,7 +60,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_ERROR_CODE: String
 ```
 
-Optional extra indicating the error code, if any. The error code will be one of the SCAN_FAILED_\* codes in `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback`.
+Optional extra indicating the error code, if any. The error code will be one of the SCAN_FAILED_\* codes in ScanCallback.
 
  Value: "android.bluetooth.le.extra.ERROR_CODE"
 
@@ -88,7 +88,7 @@ fun flushPendingScanResults(callback: ScanCallback!): Unit
 
 Flush pending batch scan results stored in Bluetooth controller. This will return Bluetooth LE scan results batched on bluetooth controller. Returns immediately, batch scan results data will be delivered through the `callback`. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String`
 
 | Parameters ||
@@ -103,13 +103,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun startScan(callback: ScanCallback): Unit
 ```
 
-Start Bluetooth LE scan with default parameters and no filters. The scan results will be delivered through `callback`. For unfiltered scans, scanning is stopped on screen off to save power. Scanning is resumed when screen is turned on again. To avoid this, use `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(kotlin.collections.MutableList,%20android.bluetooth.le.ScanSettings,%20android.bluetooth.le.ScanCallback)` with desired `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`.
+Start Bluetooth LE scan with default parameters and no filters. The scan results will be delivered through `callback`. For unfiltered scans, scanning is stopped on screen off to save power. Scanning is resumed when screen is turned on again. To avoid this, use startScan with desired ScanFilter.
 
 An app must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String` permission in order to get results. An App targeting Android Q or later must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission in order to get results.
 
 This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission. Additionally, an app must have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` if it is used for BLE scan only mode (when the adapter state is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter.html#STATE_ON:kotlin.Int`). 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 In addition, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission. For apps targeting Build.VERSION_CODES#S or higher, an alternative is a strong assertion that you will never derive the physical location of the device, made by declaring `usesPermissionFlags="neverForLocation"` on the relevant `<uses-permission>` manifest tag. However, this assertion may restrict the types of Bluetooth devices you can interact with.
 
 | Parameters ||
@@ -141,13 +141,13 @@ When the PendingIntent is delivered, the Intent passed to the receiver or activi
 This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission. Additionally, an app must have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` if any of the following is true:
 
 - it is used for BLE scan only mode (when the adapter state is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter.html#STATE_ON:kotlin.Int`).
-- the `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings` uses android.bluetooth.le.ScanSettings#SCAN_MODE_AMBIENT_DISCOVERY.
-- the `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings` uses batched scanning (`https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getReportDelayMillis()` \> 0) with android.bluetooth.le.ScanSettings#SCAN_RESULT_TYPE_ABBREVIATED.
-- a `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter` has a device address set, and either the address type is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC:kotlin.Int` or the IRK is not null.
+- the ScanSettings uses android.bluetooth.le.ScanSettings#SCAN_MODE_AMBIENT_DISCOVERY.
+- the ScanSettings uses batched scanning (getReportDelayMillis \> 0) with android.bluetooth.le.ScanSettings#SCAN_RESULT_TYPE_ABBREVIATED.
+- a ScanFilter has a device address set, and either the address type is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC:kotlin.Int` or the IRK is not null.
 
 . 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 In addition, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission. For apps targeting Build.VERSION_CODES#S or higher, an alternative is a strong assertion that you will never derive the physical location of the device, made by declaring `usesPermissionFlags="neverForLocation"` on the relevant `<uses-permission>` manifest tag. However, this assertion may restrict the types of Bluetooth devices you can interact with.
 
 | Parameters ||
@@ -159,11 +159,11 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | Returns 0 for success or an error code from `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanCallback` if the scan request could not be sent. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | Returns 0 for success or an error code from ScanCallback if the scan request could not be sent. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#stopScan(android.app.PendingIntent)`
+- stopScan
 
 ### startScan
 
@@ -177,25 +177,25 @@ fun startScan(
 ): Unit
 ```
 
-Start Bluetooth LE scan. The scan results will be delivered through `callback`. For unfiltered scans, scanning is stopped on screen off to save power. Scanning is resumed when screen is turned on again. To avoid this, do filtered scanning by using proper `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`
+Start Bluetooth LE scan. The scan results will be delivered through `callback`. For unfiltered scans, scanning is stopped on screen off to save power. Scanning is resumed when screen is turned on again. To avoid this, do filtered scanning by using proper ScanFilter
 
 An app must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_COARSE_LOCATION:kotlin.String` permission in order to get results. An App targeting Android Q or later must have `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission in order to get results.
 
 This method requires the calling app to have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission. Additionally, an app must have the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_PRIVILEGED:kotlin.String` if any of the following is true:
 
 - it is used for BLE scan only mode (when the adapter state is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter.html#STATE_ON:kotlin.Int`).
-- the `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings` uses android.bluetooth.le.ScanSettings#SCAN_MODE_AMBIENT_DISCOVERY.
-- the `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings` uses batched scanning (`https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanSettings#getReportDelayMillis()` \> 0) with android.bluetooth.le.ScanSettings#SCAN_RESULT_TYPE_ABBREVIATED.
-- a `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter` has a device address set, and either the address type is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC:kotlin.Int` or the IRK is not null.
+- the ScanSettings uses android.bluetooth.le.ScanSettings#SCAN_MODE_AMBIENT_DISCOVERY.
+- the ScanSettings uses batched scanning (getReportDelayMillis \> 0) with android.bluetooth.le.ScanSettings#SCAN_RESULT_TYPE_ABBREVIATED.
+- a ScanFilter has a device address set, and either the address type is not `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC:kotlin.Int` or the IRK is not null.
 
 . 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 In addition, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String` permission. For apps targeting Build.VERSION_CODES#S or higher, an alternative is a strong assertion that you will never derive the physical location of the device, made by declaring `usesPermissionFlags="neverForLocation"` on the relevant `<uses-permission>` manifest tag. However, this assertion may restrict the types of Bluetooth devices you can interact with.
 
 | Parameters ||
 |---|---|
-| `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](ScanFilter.md)!\>?: `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`s for finding exact BLE devices. This value may be `null`. |
+| `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](ScanFilter.md)!\>?: ScanFilters for finding exact BLE devices. This value may be `null`. |
 | `settings` | [ScanSettings](ScanSettings.md): Settings for the scan. This value cannot be `null`. |
 | `callback` | [ScanCallback](ScanCallback.md): Callback used to deliver scan results. This value cannot be `null`. |
 | --- | --- |
@@ -214,7 +214,7 @@ fun stopScan(callbackIntent: PendingIntent!): Unit
 
 Stops an ongoing Bluetooth LE scan started using a PendingIntent. When creating the PendingIntent parameter, please do not use the FLAG_CANCEL_CURRENT flag. Otherwise, the stop scan may have no effect. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String`
 
 | Parameters ||
@@ -223,7 +223,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner#startScan(kotlin.collections.MutableList,%20android.bluetooth.le.ScanSettings,%20android.app.PendingIntent)`
+- startScan
 
 ### stopScan
 
@@ -235,5 +235,5 @@ fun stopScan(callback: ScanCallback!): Unit
 
 Stops an ongoing Bluetooth LE scan. 
 For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#R:kotlin.Int` or lower, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_ADMIN:kotlin.String` permission which can be gained with a simple `<uses-permission>` manifest tag. 
-For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. 
+For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String` permission which can be gained with requestPermissions. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_SCAN:kotlin.String`

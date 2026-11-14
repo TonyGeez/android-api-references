@@ -13,266 +13,266 @@ class Parcel
 | --- | --- |
 | ↳ | [android.os.Parcel](Parcel.md) |
 
-Container for a message (data and object references) that can be sent through an IBinder. A Parcel can contain both flattened data that will be unflattened on the other side of the IPC (using the various methods here for writing specific types, or the general `https://developer.android.com/reference/kotlin/android/os/Parcelable` interface), and references to live `https://developer.android.com/reference/kotlin/android/os/IBinder` objects that will result in the other side receiving a proxy IBinder connected with the original IBinder in the Parcel.
+Container for a message (data and object references) that can be sent through an IBinder. A Parcel can contain both flattened data that will be unflattened on the other side of the IPC (using the various methods here for writing specific types, or the general Parcelable interface), and references to live IBinder objects that will result in the other side receiving a proxy IBinder connected with the original IBinder in the Parcel.
 
-Parcel is **not** a general-purpose serialization mechanism. This class (and the corresponding `https://developer.android.com/reference/kotlin/android/os/Parcelable` API for placing arbitrary objects into a Parcel) is designed as a high-performance IPC transport. As such, it is not appropriate to place any Parcel data in to persistent storage: changes in the underlying implementation of any of the data in the Parcel can render older data unreadable.
+Parcel is **not** a general-purpose serialization mechanism. This class (and the corresponding Parcelable API for placing arbitrary objects into a Parcel) is designed as a high-performance IPC transport. As such, it is not appropriate to place any Parcel data in to persistent storage: changes in the underlying implementation of any of the data in the Parcel can render older data unreadable.
 
 The bulk of the Parcel API revolves around reading and writing data of various types. There are six major classes of such functions available.
 
 ### Primitives
 
-The most basic data functions are for writing and reading primitive data types: `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByte(kotlin.Byte)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readByte()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeDouble(kotlin.Double)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readDouble()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFloat(kotlin.Float)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readFloat()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInt(kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readInt()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeLong(kotlin.Long)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readLong()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeString(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readString()`. Most other data operations are built on top of these. The given data is written and read using the endianess of the host CPU.
+The most basic data functions are for writing and reading primitive data types: writeByte, readByte, writeDouble, readDouble, writeFloat, readFloat, writeInt, readInt, writeLong, readLong, writeString, readString. Most other data operations are built on top of these. The given data is written and read using the endianess of the host CPU.
 
 ### Primitive Arrays
 
 There are a variety of methods for reading and writing raw arrays of primitive objects, which generally result in writing a 4-byte length followed by the primitive data items. The methods for reading can either read the data into an existing array, or create and return a new array. These available types are:
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBooleanArray(kotlin.BooleanArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readBooleanArray(kotlin.BooleanArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createBooleanArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByteArray(kotlin.ByteArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByteArray(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readByteArray(kotlin.ByteArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createByteArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeCharArray(kotlin.CharArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readCharArray(kotlin.CharArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createCharArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeDoubleArray(kotlin.DoubleArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readDoubleArray(kotlin.DoubleArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createDoubleArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFloatArray(kotlin.FloatArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readFloatArray(kotlin.FloatArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createFloatArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeIntArray(kotlin.IntArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readIntArray(kotlin.IntArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createIntArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeLongArray(kotlin.LongArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readLongArray(kotlin.LongArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createLongArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringArray(kotlin.Array)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readStringArray(kotlin.Array)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createStringArray()`.
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSparseBooleanArray(android.util.SparseBooleanArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseBooleanArray()`.
+- writeBooleanArray, readBooleanArray, createBooleanArray
+- writeByteArray, writeByteArray, readByteArray, createByteArray
+- writeCharArray, readCharArray, createCharArray
+- writeDoubleArray, readDoubleArray, createDoubleArray
+- writeFloatArray, readFloatArray, createFloatArray
+- writeIntArray, readIntArray, createIntArray
+- writeLongArray, readLongArray, createLongArray
+- writeStringArray, readStringArray, createStringArray.
+- writeSparseBooleanArray, readSparseBooleanArray.
 
 ### Parcelables
 
-The `https://developer.android.com/reference/kotlin/android/os/Parcelable` protocol provides an extremely efficient (but low-level) protocol for objects to write and read themselves from Parcels. You can use the direct methods `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelable(android.os.Parcelable,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader)` or `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableArray(kotlin.Array,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader)` to write or read. These methods write both the class type and its data to the Parcel, allowing that class to be reconstructed from the appropriate class loader when later reading.
+The Parcelable protocol provides an extremely efficient (but low-level) protocol for objects to write and read themselves from Parcels. You can use the direct methods writeParcelable and readParcelable or writeParcelableArray and readParcelableArray to write or read. These methods write both the class type and its data to the Parcel, allowing that class to be reconstructed from the appropriate class loader when later reading.
 
-There are also some methods that provide a more efficient way to work with Parcelables: `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedObject(android.os.Parcel.writeTypedObject.T,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`, #writeTypedList, `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedObject(android.os.Parcelable.Creator)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArray(android.os.Parcelable.Creator)` and `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayList(android.os.Parcelable.Creator)`. These methods do not write the class information of the original object: instead, the caller of the read function must know what type to expect and pass in the appropriate `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator` instead to properly construct the new object and read its data. (To more efficient write and read a single Parcelable object that is not null, you can directly call `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator#createFromParcel(android.os.Parcel)` yourself.)
+There are also some methods that provide a more efficient way to work with Parcelables: writeTypedObject, writeTypedArray, #writeTypedList, readTypedObject, createTypedArray and createTypedArrayList. These methods do not write the class information of the original object: instead, the caller of the read function must know what type to expect and pass in the appropriate `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator` instead to properly construct the new object and read its data. (To more efficient write and read a single Parcelable object that is not null, you can directly call writeToParcel and createFromParcel yourself.)
 
 ### Bundles
 
-A special type-safe container, called `https://developer.android.com/reference/kotlin/android/os/Bundle`, is available for key/value maps of heterogeneous values. This has many optimizations for improved performance when reading and writing data, and its type-safe API avoids difficult to debug type errors when finally marshalling the data contents into a Parcel. The methods to use are `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle()`, and `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)`.
+A special type-safe container, called Bundle, is available for key/value maps of heterogeneous values. This has many optimizations for improved performance when reading and writing data, and its type-safe API avoids difficult to debug type errors when finally marshalling the data contents into a Parcel. The methods to use are writeBundle, readBundle, and readBundle.
 
 ### Active Objects
 
 An unusual feature of Parcel is the ability to read and write active objects. For these objects the actual contents of the object is not written, rather a special token referencing the object is written. When reading the object back from the Parcel, you do not get a new instance of the object, but rather a handle that operates on the exact same object that was originally written. There are two forms of active objects available.
 
-`https://developer.android.com/reference/kotlin/android/os/Binder` objects are a core facility of Android's general cross-process communication system. The `https://developer.android.com/reference/kotlin/android/os/IBinder` interface describes an abstract protocol with a Binder object. Any such interface can be written in to a Parcel, and upon reading you will receive either the original object implementing that interface or a special proxy implementation that communicates calls back to the original object. The methods to use are `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStrongBinder(android.os.IBinder)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStrongInterface(android.os.IInterface)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readStrongBinder()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderArray(kotlin.Array)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderArray(kotlin.Array)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArray()`, #writeInterfaceArray(T\[\]), #readInterfaceArray(T\[\],java.util.function.Function), `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArray(java.util.function.IntFunction,%20java.util.function.Function)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderList(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArrayList()`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceList(kotlin.collections.MutableList,%20java.util.function.Function)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArrayList(java.util.function.Function)`.
+Binder objects are a core facility of Android's general cross-process communication system. The IBinder interface describes an abstract protocol with a Binder object. Any such interface can be written in to a Parcel, and upon reading you will receive either the original object implementing that interface or a special proxy implementation that communicates calls back to the original object. The methods to use are writeStrongBinder, writeStrongInterface, readStrongBinder, writeBinderArray, readBinderArray, createBinderArray, #writeInterfaceArray(T\[\]), #readInterfaceArray(T\[\],java.util.function.Function), createInterfaceArray, writeBinderList, readBinderList, createBinderArrayList, writeInterfaceList, readInterfaceList, createInterfaceArrayList.
 
-FileDescriptor objects, representing raw Linux file descriptor identifiers, can be written and `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor` objects returned to operate on the original file descriptor. The returned file descriptor is a dup of the original file descriptor: the object and fd is different, but operating on the same underlying file stream, with the same position, etc. The methods to use are `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFileDescriptor(java.io.FileDescriptor)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readFileDescriptor()`.
+FileDescriptor objects, representing raw Linux file descriptor identifiers, can be written and ParcelFileDescriptor objects returned to operate on the original file descriptor. The returned file descriptor is a dup of the original file descriptor: the object and fd is different, but operating on the same underlying file stream, with the same position, etc. The methods to use are writeFileDescriptor, readFileDescriptor.
 
 ### Parcelable Containers
 
-A final class of methods are for writing and reading standard Java containers of arbitrary types. These all revolve around the `https://developer.android.com/reference/kotlin/android/os/Parcel#writeValue(kotlin.Any)` and `https://developer.android.com/reference/kotlin/android/os/Parcel#readValue(java.lang.ClassLoader)` methods which define the types of objects allowed. The container methods are `https://developer.android.com/reference/kotlin/android/os/Parcel#writeArray(kotlin.Array)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeList(kotlin.collections.MutableList)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeMap(kotlin.collections.MutableMap)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSparseArray(android.util.SparseArray)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader)`.
+A final class of methods are for writing and reading standard Java containers of arbitrary types. These all revolve around the writeValue and readValue methods which define the types of objects allowed. The container methods are writeArray, readArray, writeList, readList, readArrayList, writeMap, readMap, writeSparseArray, readSparseArray.
 
 ### Restricted Parcelable Containers
 
-A final class of methods are for reading standard Java containers of restricted types. These methods replace methods for reading containers of arbitrary types from previous section starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. The pairing writing methods are still the same from previous section. These methods accepts additional `clazz` parameters as the required types. The Restricted Parcelable container methods are `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader,%20java.lang.Class)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader,%20java.lang.Class)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader,%20java.lang.Class)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader,%20java.lang.Class,%20java.lang.Class)`, `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader,%20java.lang.Class)`.
+A final class of methods are for reading standard Java containers of restricted types. These methods replace methods for reading containers of arbitrary types from previous section starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. The pairing writing methods are still the same from previous section. These methods accepts additional `clazz` parameters as the required types. The Restricted Parcelable container methods are readArray, readList, readArrayList, readMap, readSparseArray.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#appendFrom(android.os.Parcel,%20kotlin.Int,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel#!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [IBinder](IBinder.md)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArray()()` <br /> |
-| [ArrayList](../java.util/ArrayList.md)\< [IBinder](IBinder.md)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArrayList()()` Read and return a new ArrayList containing IBinder objects from the parcel that was written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)` at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | appendFrom <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [IBinder](IBinder.md)!\>? | createBinderArray <br /> |
+| [ArrayList](../java.util/ArrayList.md)\< [IBinder](IBinder.md)!\>? | createBinderArrayList Read and return a new ArrayList containing IBinder objects from the parcel that was written with writeBinderList at the current dataPosition(). |
 | --- | --- |
-| [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createBooleanArray()()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createByteArray()()` Read and return a byte\[\] object from the parcel. |
-| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createCharArray()()` <br /> |
+| [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)? | createBooleanArray <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | createByteArray Read and return a byte\[\] object from the parcel. |
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)? | createCharArray <br /> |
 | --- | --- |
-| [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createDoubleArray()()` <br /> |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20android.os.Parcelable.Creator,%20kotlin.Int)(cls: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>, c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<S>, vararg dimensions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read and return a new multi-dimensional array of typed parcelables from a parcel. |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20kotlin.Int)(cls: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>, vararg dimensions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read and return a new multi-dimensional array from a parcel. |
+| [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)? | createDoubleArray <br /> |
+| T? | createFixedArray Read and return a new multi-dimensional array of typed parcelables from a parcel. |
+| T? | createFixedArray Read and return a new multi-dimensional array from a parcel. |
 | --- | --- |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20java.util.function.Function,%20kotlin.Int)(cls: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>, asInterface: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/os/IBinder!, S>, vararg dimensions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Read and return a new multi-dimensional array of typed interfaces from a parcel. |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createFloatArray()()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createIntArray()()` <br /> |
+| T? | createFixedArray Read and return a new multi-dimensional array of typed interfaces from a parcel. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | createFloatArray <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | createIntArray <br /> |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArray(java.util.function.IntFunction,%20java.util.function.Function)(newArray: https://developer.android.com/reference/kotlin/java/util/function/IntFunction.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>!>, asInterface: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/os/IBinder!, T>)` Read and return a new array of T (IInterface) from the parcel. |
-| [ArrayList](../java.util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArrayList(java.util.function.Function)(asInterface: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/os/IBinder!, T>)` Read and return a new ArrayList containing T (IInterface) objects from the parcel that was written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)` at the current dataPosition(). |
-| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createLongArray()()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | createInterfaceArray Read and return a new array of T (IInterface) from the parcel. |
+| [ArrayList](../java.util/ArrayList.md)\<T\>? | createInterfaceArrayList Read and return a new ArrayList containing T (IInterface) objects from the parcel that was written with writeInterfaceList at the current dataPosition(). |
+| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | createLongArray <br /> |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createStringArray()()` <br /> |
-| [ArrayList](../java.util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createStringArrayList()()` Read and return a new ArrayList containing String objects from the parcel that was written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)` at the current dataPosition(). |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArray(android.os.Parcelable.Creator)(c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` Read and return a new array containing a particular object type from the parcel at the current dataPosition(). |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | createStringArray <br /> |
+| [ArrayList](../java.util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | createStringArrayList Read and return a new ArrayList containing String objects from the parcel that was written with writeStringList at the current dataPosition(). |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | createTypedArray Read and return a new array containing a particular object type from the parcel at the current dataPosition(). |
 | --- | --- |
-| [ArrayList](../java.util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayList(android.os.Parcelable.Creator)(c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` Read and return a new ArrayList containing a particular object type from the parcel that was written with #writeTypedList at the current dataPosition(). |
-| [ArrayMap](../android.util/ArrayMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayMap(android.os.Parcelable.Creator)(creator: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` Read into a new `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys items containing a particular object type that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArrayMap(android.util.ArrayMap,%20kotlin.Int)` at the current dataPosition(). |
-| [SparseArray](../android.util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedSparseArray(android.os.Parcelable.Creator)(creator: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` Read into a new `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` items containing a particular object type that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedSparseArray(android.util.SparseArray,%20kotlin.Int)` at the current dataPosition(). |
+| [ArrayList](../java.util/ArrayList.md)\<T\>? | createTypedArrayList Read and return a new ArrayList containing a particular object type from the parcel that was written with #writeTypedList at the current dataPosition(). |
+| [ArrayMap](../android.util/ArrayMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, T\>? | createTypedArrayMap Read into a new `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys items containing a particular object type that were written with writeTypedArrayMap at the current dataPosition(). |
+| [SparseArray](../android.util/SparseArray.md)\<T\>? | createTypedSparseArray Read into a new `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` items containing a particular object type that were written with writeTypedSparseArray at the current dataPosition(). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#dataAvail()()` Returns the amount of data remaining to be read from the parcel. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()()` Returns the total amount of space in the parcel. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()()` Returns the current position in the parcel data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | dataAvail Returns the amount of data remaining to be read from the parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | dataCapacity Returns the total amount of space in the parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | dataPosition Returns the current position in the parcel data. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()()` Returns the total amount of data contained in the parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#enforceInterface(kotlin.String)(interfaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Read the header written by writeInterfaceToken and verify it matches the interface name in question. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#enforceNoDataAvail()()` Verify there are no bytes left to be read on the Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | dataSize Returns the total amount of data contained in the parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceInterface Read the header written by writeInterfaceToken and verify it matches the interface name in question. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enforceNoDataAvail Verify there are no bytes left to be read on the Parcel. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#hasFileDescriptors()()` Report whether the parcel contains any marshalled file descriptors. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#hasFileDescriptors(kotlin.Int,%20kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Report whether the parcel contains any marshalled file descriptors in the range defined by `offset` and `length`. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Parcel#marshall()()` Returns the raw bytes of the parcel. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasFileDescriptors Report whether the parcel contains any marshalled file descriptors. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasFileDescriptors Report whether the parcel contains any marshalled file descriptors in the range defined by `offset` and `length`. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | marshall Returns the raw bytes of the parcel. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#marshall(java.nio.ByteBuffer)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Writes the raw bytes of the parcel to a buffer. |
-| static [Parcel](Parcel.md) | `https://developer.android.com/reference/kotlin/android/os/Parcel#obtain()()` Retrieve a new Parcel object from the pool. |
-| static [Parcel](Parcel.md) | `https://developer.android.com/reference/kotlin/android/os/Parcel#obtain(android.os.IBinder)(binder: https://developer.android.com/reference/kotlin/android/os/IBinder)` Retrieve a new Parcel object from the pool for use with a specific binder. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | marshall Writes the raw bytes of the parcel to a buffer. |
+| static [Parcel](Parcel.md) | obtain Retrieve a new Parcel object from the pool. |
+| static [Parcel](Parcel.md) | obtain Retrieve a new Parcel object from the pool for use with a specific binder. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new Object array from the parcel at the current dataPosition(). |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [ArrayList](../java.util/ArrayList.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new ArrayList object from the parcel at the current dataPosition(). |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | readArray Read and return a new Object array from the parcel at the current dataPosition(). |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | readArray Same as readArray but accepts `clazz` parameter as the type required for each item. |
+| [ArrayList](../java.util/ArrayList.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | readArrayList Read and return a new ArrayList object from the parcel at the current dataPosition(). |
 | --- | --- |
-| [ArrayList](../java.util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderArray(kotlin.Array)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/IBinder!>)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderList(kotlin.collections.MutableList)(list: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/IBinder!>)` Read into the given List items IBinder objects that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)` at the current dataPosition(). |
+| [ArrayList](../java.util/ArrayList.md)\<T\>? | readArrayList Same as readArrayList but accepts `clazz` parameter as the type required for each item. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readBinderArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readBinderList Read into the given List items IBinder objects that were written with writeBinderList at the current dataPosition(). |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBlob()()` Read a blob of data from the parcel and return it as a byte array. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBoolean()()` Read a boolean value from the parcel at the current dataPosition(). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBooleanArray(kotlin.BooleanArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | readBlob Read a blob of data from the parcel and return it as a byte array. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | readBoolean Read a boolean value from the parcel at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readBooleanArray <br /> |
 | --- | --- |
-| [Bundle](Bundle.md)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle()()` Read and return a new Bundle object from the parcel at the current dataPosition(). |
-| [Bundle](Bundle.md)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new Bundle object from the parcel at the current dataPosition(), using the given class loader to initialize the class loader of the Bundle for later retrieval of Parcelable objects. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readByte()()` Read a byte value from the parcel at the current dataPosition(). |
+| [Bundle](Bundle.md)? | readBundle Read and return a new Bundle object from the parcel at the current dataPosition(). |
+| [Bundle](Bundle.md)? | readBundle Read and return a new Bundle object from the parcel at the current dataPosition(), using the given class loader to initialize the class loader of the Bundle for later retrieval of Parcelable objects. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | readByte Read a byte value from the parcel at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readByteArray(kotlin.ByteArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Read a byte\[\] object from the parcel and copy it into the given byte array. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readCharArray(kotlin.CharArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)` <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readDouble()()` Read a double precision floating point value from the parcel at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readByteArray Read a byte\[\] object from the parcel and copy it into the given byte array. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readCharArray <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | readDouble Read a double precision floating point value from the parcel at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readDoubleArray(kotlin.DoubleArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readException()()` Special function for reading an exception result from the header of a parcel, to be used after receiving the result of a transaction. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readException(kotlin.Int,%20kotlin.String)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, msg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Throw an exception with the given message. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readDoubleArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readException Special function for reading an exception result from the header of a parcel, to be used after receiving the result of a transaction. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readException Throw an exception with the given message. |
 | --- | --- |
-| [ParcelFileDescriptor](ParcelFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/os/Parcel#readFileDescriptor()()` Read a FileDescriptor from the parcel at the current dataPosition(). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T)(val: T)` Read a new multi-dimensional array from a parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T,%20android.os.Parcelable.Creator)(val: T, c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<S>)` Read a new multi-dimensional array of typed parcelables from a parcel. |
+| [ParcelFileDescriptor](ParcelFileDescriptor.md)! | readFileDescriptor Read a FileDescriptor from the parcel at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFixedArray Read a new multi-dimensional array from a parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFixedArray Read a new multi-dimensional array of typed parcelables from a parcel. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T,%20java.util.function.Function)(val: T, asInterface: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/os/IBinder!, S>)` Read a new multi-dimensional array of typed interfaces from a parcel. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readFloat()()` Read a floating point value from the parcel at the current dataPosition(). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readFloatArray(kotlin.FloatArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFixedArray Read a new multi-dimensional array of typed interfaces from a parcel. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | readFloat Read a floating point value from the parcel at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readFloatArray <br /> |
 | --- | --- |
-| [HashMap](../java.util/HashMap.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readHashMap(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Please use `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)` instead (whose data must have been written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)`. |
-| [HashMap](../java.util/HashMap.md)\<K, V\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readHashMap(java.lang.ClassLoader,%20java.lang.Class,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazzKey: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out K>, clazzValue: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out V>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readHashMap(java.lang.ClassLoader)` but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readInt()()` Read an integer value from the parcel at the current dataPosition(). |
+| [HashMap](../java.util/HashMap.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | readHashMap Please use readBundle instead (whose data must have been written with writeBundle. |
+| [HashMap](../java.util/HashMap.md)\<K, V\>? | readHashMap Same as readHashMap but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | readInt Read an integer value from the parcel at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readIntArray(kotlin.IntArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceArray(kotlin.Array,%20java.util.function.Function)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, asInterface: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/os/IBinder!, T>)` Read an array of T (IInterface) from a parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceList(kotlin.collections.MutableList,%20java.util.function.Function)(list: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>, asInterface: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<https://developer.android.com/reference/kotlin/android/os/IBinder!, T>)` Read into the given List items IInterface objects that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)` at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readIntArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readInterfaceArray Read an array of T (IInterface) from a parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readInterfaceList Read into the given List items IInterface objects that were written with writeInterfaceList at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader)(outVal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?>, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read into an existing List object from the parcel at the current dataPosition(), using the given class loader to load any enclosed Parcelables. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader,%20java.lang.Class)(outVal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<in T>, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readLong()()` Read a long integer value from the parcel at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readList Read into an existing List object from the parcel at the current dataPosition(), using the given class loader to load any enclosed Parcelables. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readList Same as readList but accepts `clazz` parameter as the type required for each item. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | readLong Read a long integer value from the parcel at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readLongArray(kotlin.LongArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader)(outVal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?>, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Please use `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)` instead (whose data must have been written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader,%20java.lang.Class,%20java.lang.Class)(outVal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<in K, in V>, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazzKey: https://developer.android.com/reference/kotlin/java/lang/Class.html#<K>, clazzValue: https://developer.android.com/reference/kotlin/java/lang/Class.html#<V>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader)` but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readLongArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readMap Please use readBundle instead (whose data must have been written with writeBundle. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readMap Same as readMap but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair. |
 | --- | --- |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new Parcelable from the parcel. |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](Parcelable.md)!\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new Parcelable array from the parcel. |
+| T? | readParcelable Read and return a new Parcelable from the parcel. |
+| T? | readParcelable Same as readParcelable but accepts `clazz` parameter as the type required for each item. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](Parcelable.md)!\>? | readParcelableArray Read and return a new Parcelable array from the parcel. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [Parcelable.Creator](../android/os/Parcelable.Creator.md)\<\*\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableCreator(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a Parcelable. |
-| [Parcelable.Creator](../android/os/Parcelable.Creator.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableCreator(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableCreator(java.lang.ClassLoader)` but accepts `clazz` parameter as the required type. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | readParcelableArray Same as readParcelableArray but accepts `clazz` parameter as the type required for each item. |
+| [Parcelable.Creator](../android/os/Parcelable.Creator.md)\<\*\>? | readParcelableCreator Read and return a Parcelable. |
+| [Parcelable.Creator](../android/os/Parcelable.Creator.md)\<T\>? | readParcelableCreator Same as readParcelableCreator but accepts `clazz` parameter as the required type. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader)(list: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>, cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read the list of `Parcelable` objects at the current data position into the given `list`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader,%20java.lang.Class)(list: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>, cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [PersistableBundle](PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readPersistableBundle()()` Read and return a new Bundle object from the parcel at the current dataPosition(). |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | readParcelableList Read the list of `Parcelable` objects at the current data position into the given `list`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | readParcelableList Same as readParcelableList but accepts `clazz` parameter as the type required for each item. |
+| [PersistableBundle](PersistableBundle.md)? | readPersistableBundle Read and return a new Bundle object from the parcel at the current dataPosition(). |
 | --- | --- |
-| [PersistableBundle](PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readPersistableBundle(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new Bundle object from the parcel at the current dataPosition(), using the given class loader to initialize the class loader of the Bundle for later retrieval of Parcelable objects. |
-| [Serializable](../java.io/Serializable.md)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSerializable()()` Read and return a new Serializable object from the parcel. |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSerializable(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readSerializable()` but accepts `loader` and `clazz` parameters. |
+| [PersistableBundle](PersistableBundle.md)? | readPersistableBundle Read and return a new Bundle object from the parcel at the current dataPosition(), using the given class loader to initialize the class loader of the Bundle for later retrieval of Parcelable objects. |
+| [Serializable](../java.io/Serializable.md)? | readSerializable Read and return a new Serializable object from the parcel. |
+| T? | readSerializable Same as readSerializable but accepts `loader` and `clazz` parameters. |
 | --- | --- |
-| [Size](../android.util/Size.md) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSize()()` Read a Size from the parcel at the current dataPosition(). |
-| [SizeF](../android.util/SizeF.md) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSizeF()()` Read a SizeF from the parcel at the current dataPosition(). |
-| [SparseArray](../android.util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read and return a new SparseArray object from the parcel at the current dataPosition(). |
+| [Size](../android.util/Size.md) | readSize Read a Size from the parcel at the current dataPosition(). |
+| [SizeF](../android.util/SizeF.md) | readSizeF Read a SizeF from the parcel at the current dataPosition(). |
+| [SparseArray](../android.util/SparseArray.md)\<T\>? | readSparseArray Read and return a new SparseArray object from the parcel at the current dataPosition(). |
 | --- | --- |
-| [SparseArray](../android.util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader,%20java.lang.Class)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item. |
-| [SparseBooleanArray](../android.util/SparseBooleanArray.md)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseBooleanArray()()` Read and return a new SparseBooleanArray object from the parcel at the current dataPosition(). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readString()()` Read a string value from the parcel at the current dataPosition(). |
+| [SparseArray](../android.util/SparseArray.md)\<T\>? | readSparseArray Same as readSparseArray but accepts `clazz` parameter as the type required for each item. |
+| [SparseBooleanArray](../android.util/SparseBooleanArray.md)? | readSparseBooleanArray Read and return a new SparseBooleanArray object from the parcel at the current dataPosition(). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | readString Read a string value from the parcel at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readStringArray(kotlin.Array)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readStringList(kotlin.collections.MutableList)(list: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Read into the given List items String objects that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)` at the current dataPosition(). |
-| [IBinder](IBinder.md)! | `https://developer.android.com/reference/kotlin/android/os/Parcel#readStrongBinder()()` Read an object from the parcel at the current dataPosition(). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readStringArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readStringList Read into the given List items String objects that were written with writeStringList at the current dataPosition(). |
+| [IBinder](IBinder.md)! | readStrongBinder Read an object from the parcel at the current dataPosition(). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedArray(kotlin.Array,%20android.os.Parcelable.Creator)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>, c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedList(kotlin.collections.MutableList,%20android.os.Parcelable.Creator)(list: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>, c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` Read into the given List items containing a particular object type that were written with #writeTypedList at the current dataPosition(). |
-| T? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedObject(android.os.Parcelable.Creator)(c: https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator<T>)` Read and return a typed Parcelable object from a parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readTypedArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | readTypedList Read into the given List items containing a particular object type that were written with #writeTypedList at the current dataPosition(). |
+| T? | readTypedObject Read and return a typed Parcelable object from a parcel. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Parcel#readValue(java.lang.ClassLoader)(loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#?)` Read a typed object from a parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#recycle()()` Put a Parcel object back into the pool. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#setDataCapacity(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Change the capacity (current available space) of the parcel. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | readValue Read a typed object from a parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | recycle Put a Parcel object back into the pool. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDataCapacity Change the capacity (current available space) of the parcel. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#setDataPosition(kotlin.Int)(pos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Move the current read/write position in the parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#setDataSize(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Change the amount of data in the parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#setPropagateAllowBlocking()()` This method is used by the AIDL compiler for system components. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDataPosition Move the current read/write position in the parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDataSize Change the amount of data in the parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPropagateAllowBlocking This method is used by the AIDL compiler for system components. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#unmarshall(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Fills the raw bytes of this Parcel with the supplied data. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#unmarshall(java.nio.ByteBuffer)(buffer: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#)` Fills the raw bytes of this Parcel with data from the supplied buffer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeArray(kotlin.Array)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>?)` Flatten an Object array into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unmarshall Fills the raw bytes of this Parcel with the supplied data. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unmarshall Fills the raw bytes of this Parcel with data from the supplied buffer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeArray Flatten an Object array into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderArray(kotlin.Array)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/os/IBinder!>?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/IBinder!>?)` Flatten a List containing IBinder objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBlob(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Write a blob of data into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBinderArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBinderList Flatten a List containing IBinder objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBlob Write a blob of data into the parcel at the current dataPosition, growing dataCapacity if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBlob(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write a blob of data into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBoolean(kotlin.Boolean)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Write a boolean value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBooleanArray(kotlin.BooleanArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html?)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBlob Write a blob of data into the parcel at the current dataPosition, growing dataCapacity if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBoolean Write a boolean value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBooleanArray <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)(val: https://developer.android.com/reference/kotlin/android/os/Bundle?)` Flatten a Bundle into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByte(kotlin.Byte)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Write a byte value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByteArray(kotlin.ByteArray)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Write a byte array into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeBundle Flatten a Bundle into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeByte Write a byte value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeByteArray Write a byte array into the parcel at the current dataPosition, growing dataCapacity if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByteArray(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, len: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write a byte array into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeCharArray(kotlin.CharArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeDouble(kotlin.Double)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Write a double precision floating point value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeByteArray Write a byte array into the parcel at the current dataPosition, growing dataCapacity if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeCharArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeDouble Write a double precision floating point value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeDoubleArray(kotlin.DoubleArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeException(java.lang.Exception)(e: https://developer.android.com/reference/kotlin/java/lang/Exception.html#)` Special function for writing an exception result at the header of a parcel, to be used when returning an exception from a transaction. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFileDescriptor(java.io.FileDescriptor)(val: https://developer.android.com/reference/kotlin/java/io/FileDescriptor.html#)` Write a FileDescriptor into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeDoubleArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeException Special function for writing an exception result at the header of a parcel, to be used when returning an exception from a transaction. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeFileDescriptor Write a FileDescriptor into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFixedArray(android.os.Parcel.writeFixedArray.T,%20kotlin.Int,%20kotlin.Int)(val: T?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg dimensions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten a homogeneous multi-dimensional array with fixed-size. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFloat(kotlin.Float)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Write a floating point value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFloatArray(kotlin.FloatArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeFixedArray Flatten a homogeneous multi-dimensional array with fixed-size. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeFloat Write a floating point value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeFloatArray <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInt(kotlin.Int)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write an integer value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeIntArray(kotlin.IntArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceArray(kotlin.Array)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?)` Flatten a homogeneous array containing an IInterface type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeInt Write an integer value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeIntArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeInterfaceArray Flatten a homogeneous array containing an IInterface type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>?)` Flatten a `List` containing T (IInterface) objects into this parcel at the current position. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceToken(kotlin.String)(interfaceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Store or read an IBinder interface token in the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeList(kotlin.collections.MutableList)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?>?)` Flatten a List into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeInterfaceList Flatten a `List` containing T (IInterface) objects into this parcel at the current position. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeInterfaceToken Store or read an IBinder interface token in the parcel at the current dataPosition. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeList Flatten a List into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeLong(kotlin.Long)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Write a long integer value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeLongArray(kotlin.LongArray)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeMap(kotlin.collections.MutableMap)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?>?)` Please use `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)` instead. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeLong Write a long integer value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeLongArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeMap Please use writeBundle instead. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeNoException()()` Special function for writing information at the front of the Parcel indicating that no exception occurred. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelable(android.os.Parcelable,%20kotlin.Int)(p: https://developer.android.com/reference/kotlin/android/os/Parcelable?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten the name of the class of the Parcelable and its contents into the parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableArray(kotlin.Array,%20kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write a heterogeneous array of Parcelable objects into the Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeNoException Special function for writing information at the front of the Parcel indicating that no exception occurred. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeParcelable Flatten the name of the class of the Parcelable and its contents into the parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeParcelableArray Write a heterogeneous array of Parcelable objects into the Parcel. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableCreator(android.os.Parcelable)(p: https://developer.android.com/reference/kotlin/android/os/Parcelable)` Flatten the name of the class of the Parcelable into this Parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableList(kotlin.collections.MutableList,%20kotlin.Int)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten a `List` containing arbitrary `Parcelable` objects into this parcel at the current position. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writePersistableBundle(android.os.PersistableBundle)(val: https://developer.android.com/reference/kotlin/android/os/PersistableBundle?)` Flatten a PersistableBundle into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeParcelableCreator Flatten the name of the class of the Parcelable into this Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeParcelableList Flatten a `List` containing arbitrary `Parcelable` objects into this parcel at the current position. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writePersistableBundle Flatten a PersistableBundle into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSerializable(java.io.Serializable)(s: https://developer.android.com/reference/kotlin/java/io/Serializable.html#?)` Write a generic serializable object in to a Parcel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSize(android.util.Size)(val: https://developer.android.com/reference/kotlin/android/util/Size.html#)` Flatten a Size into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSizeF(android.util.SizeF)(val: https://developer.android.com/reference/kotlin/android/util/SizeF.html#)` Flatten a SizeF into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeSerializable Write a generic serializable object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeSize Flatten a Size into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeSizeF Flatten a SizeF into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSparseArray(android.util.SparseArray)(val: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<T>?)` Flatten a generic SparseArray into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSparseBooleanArray(android.util.SparseBooleanArray)(val: https://developer.android.com/reference/kotlin/android/util/SparseBooleanArray.html#?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeString(kotlin.String)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Write a string value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeSparseArray Flatten a generic SparseArray into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeSparseBooleanArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeString Write a string value into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringArray(kotlin.Array)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Flatten a List containing String objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStrongBinder(android.os.IBinder)(val: https://developer.android.com/reference/kotlin/android/os/IBinder!)` Write an object into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeStringArray <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeStringList Flatten a List containing String objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeStrongBinder Write an object into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStrongInterface(android.os.IInterface)(val: https://developer.android.com/reference/kotlin/android/os/IInterface!)` Write an object into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<T>?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten a homogeneous array containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArrayMap(android.util.ArrayMap,%20kotlin.Int)(val: https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, T>?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten an `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeStrongInterface Write an object into the parcel at the current dataPosition(), growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTypedArray Flatten a homogeneous array containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTypedArrayMap Flatten an `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedList(kotlin.collections.MutableList)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>?)` Flatten a List containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedList(kotlin.collections.MutableList,%20kotlin.Int)(val: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten a List containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedObject(android.os.Parcel.writeTypedObject.T,%20kotlin.Int)(val: T?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten the Parcelable object into the parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTypedList Flatten a List containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTypedList Flatten a List containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTypedObject Flatten the Parcelable object into the parcel. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedSparseArray(android.util.SparseArray,%20kotlin.Int)(val: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<T>?, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten a `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#writeValue(kotlin.Any)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Flatten a generic object in to a parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeTypedSparseArray Flatten a `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeValue Flatten a generic object in to a parcel. |
 
 | Protected methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Parcel#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
 
 | Properties ||
 |---|---|
@@ -312,7 +312,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun createBinderArrayList(): ArrayList<IBinder!>?
 ```
 
-Read and return a new ArrayList containing IBinder objects from the parcel that was written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)` at the current dataPosition(). Returns null if the previously written list object was null.
+Read and return a new ArrayList containing IBinder objects from the parcel that was written with writeBinderList at the current dataPosition(). Returns null if the previously written list object was null.
 
 | Return ||
 |---|---|
@@ -320,7 +320,7 @@ Read and return a new ArrayList containing IBinder objects from the parcel that 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)`
+- writeBinderList
 
 ### createBooleanArray
 
@@ -384,7 +384,7 @@ fun <T : Any!, S : Parcelable!> createFixedArray(
 ): T?
 ```
 
-Read and return a new multi-dimensional array of typed parcelables from a parcel. Returns null if the previously written array object is null. If you want to read IInterface values, use `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20java.util.function.Function,%20kotlin.Int)`. For values of other types use `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20kotlin.Int)`.
+Read and return a new multi-dimensional array of typed parcelables from a parcel. Returns null if the previously written array object is null. If you want to read IInterface values, use createFixedArray. For values of other types use createFixedArray.
 
 | Parameters ||
 |---|---|
@@ -404,7 +404,7 @@ fun <T : Any!> createFixedArray(
 ): T?
 ```
 
-Read and return a new multi-dimensional array from a parcel. Returns null if the previously written array object is null. If you want to read Parcelable or IInterface values, use `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20android.os.Parcelable.Creator,%20kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20java.util.function.Function,%20kotlin.Int)`.
+Read and return a new multi-dimensional array from a parcel. Returns null if the previously written array object is null. If you want to read Parcelable or IInterface values, use createFixedArray or createFixedArray.
 
 | Parameters ||
 |---|---|
@@ -413,17 +413,17 @@ Read and return a new multi-dimensional array from a parcel. Returns null if the
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createBooleanArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createByteArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createCharArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createIntArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createLongArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createFloatArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createDoubleArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArray()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArray(java.util.function.IntFunction,%20java.util.function.Function)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArray(android.os.Parcelable.Creator)`
+- writeTypedArray
+- createBooleanArray
+- createByteArray
+- createCharArray
+- createIntArray
+- createLongArray
+- createFloatArray
+- createDoubleArray
+- createBinderArray
+- createInterfaceArray
+- createTypedArray
 
 ### createFixedArray
 
@@ -437,7 +437,7 @@ fun <T : Any!, S : IInterface!> createFixedArray(
 ): T?
 ```
 
-Read and return a new multi-dimensional array of typed interfaces from a parcel. Returns null if the previously written array object is null. If you want to read Parcelable values, use `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20android.os.Parcelable.Creator,%20kotlin.Int)`. For values of other types use `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20kotlin.Int)`.
+Read and return a new multi-dimensional array of typed interfaces from a parcel. Returns null if the previously written array object is null. If you want to read Parcelable values, use createFixedArray. For values of other types use createFixedArray.
 
 | Parameters ||
 |---|---|
@@ -500,7 +500,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun <T : IInterface!> createInterfaceArrayList(asInterface: Function<IBinder!, T>): ArrayList<T>?
 ```
 
-Read and return a new ArrayList containing T (IInterface) objects from the parcel that was written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)` at the current dataPosition(). Returns null if the previously written list object was null.
+Read and return a new ArrayList containing T (IInterface) objects from the parcel that was written with writeInterfaceList at the current dataPosition(). Returns null if the previously written list object was null.
 
 | Parameters ||
 |---|---|
@@ -512,7 +512,7 @@ Read and return a new ArrayList containing T (IInterface) objects from the parce
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)`
+- writeInterfaceList
 
 ### createLongArray
 
@@ -546,7 +546,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun createStringArrayList(): ArrayList<String!>?
 ```
 
-Read and return a new ArrayList containing String objects from the parcel that was written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)` at the current dataPosition(). Returns null if the previously written list object was null.
+Read and return a new ArrayList containing String objects from the parcel that was written with writeStringList at the current dataPosition(). Returns null if the previously written list object was null.
 
 | Return ||
 |---|---|
@@ -554,7 +554,7 @@ Read and return a new ArrayList containing String objects from the parcel that w
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)`
+- writeStringList
 
 ### createTypedArray
 
@@ -564,7 +564,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun <T : Any!> createTypedArray(c: Parcelable.Creator<T>): Array<T>?
 ```
 
-Read and return a new array containing a particular object type from the parcel at the current dataPosition(). Returns null if the previously written array was null. The array *must* have previously been written via `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)` with the same object type.
+Read and return a new array containing a particular object type from the parcel at the current dataPosition(). Returns null if the previously written array was null. The array *must* have previously been written via writeTypedArray with the same object type.
 
 | Parameters ||
 |---|---|
@@ -576,7 +576,7 @@ Read and return a new array containing a particular object type from the parcel 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`
+- writeTypedArray
 
 ### createTypedArrayList
 
@@ -606,7 +606,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun <T : Parcelable!> createTypedArrayMap(creator: Parcelable.Creator<T>): ArrayMap<String!, T>?
 ```
 
-Read into a new `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys items containing a particular object type that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArrayMap(android.util.ArrayMap,%20kotlin.Int)` at the current dataPosition(). The list *must* have previously been written via `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArrayMap(android.util.ArrayMap,%20kotlin.Int)` with the same object type.
+Read into a new `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys items containing a particular object type that were written with writeTypedArrayMap at the current dataPosition(). The list *must* have previously been written via writeTypedArrayMap with the same object type.
 
 | Parameters ||
 |---|---|
@@ -618,7 +618,7 @@ Read into a new `https://developer.android.com/reference/kotlin/android/util/Arr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArrayMap(android.util.ArrayMap,%20kotlin.Int)`
+- writeTypedArrayMap
 
 ### createTypedSparseArray
 
@@ -628,7 +628,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun <T : Parcelable!> createTypedSparseArray(creator: Parcelable.Creator<T>): SparseArray<T>?
 ```
 
-Read into a new `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` items containing a particular object type that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedSparseArray(android.util.SparseArray,%20kotlin.Int)` at the current dataPosition(). The list *must* have previously been written via `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedSparseArray(android.util.SparseArray,%20kotlin.Int)` with the same object type.
+Read into a new `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` items containing a particular object type that were written with writeTypedSparseArray at the current dataPosition(). The list *must* have previously been written via writeTypedSparseArray with the same object type.
 
 | Parameters ||
 |---|---|
@@ -640,7 +640,7 @@ Read into a new `https://developer.android.com/reference/kotlin/android/util/Spa
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedSparseArray(android.util.SparseArray,%20kotlin.Int)`
+- writeTypedSparseArray
 
 ### dataAvail
 
@@ -650,7 +650,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun dataAvail(): Int
 ```
 
-Returns the amount of data remaining to be read from the parcel. That is, `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()`-`https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`.
+Returns the amount of data remaining to be read from the parcel. That is, dataSize-dataPosition.
 
 ### dataCapacity
 
@@ -660,7 +660,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun dataCapacity(): Int
 ```
 
-Returns the total amount of space in the parcel. This is always \>= `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()`. The difference between it and dataSize() is the amount of room left until the parcel needs to re-allocate its data buffer.
+Returns the total amount of space in the parcel. This is always \>= dataSize. The difference between it and dataSize() is the amount of room left until the parcel needs to re-allocate its data buffer.
 
 ### dataPosition
 
@@ -670,7 +670,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun dataPosition(): Int
 ```
 
-Returns the current position in the parcel data. Never more than `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()`.
+Returns the current position in the parcel data. Never more than dataSize.
 
 ### dataSize
 
@@ -735,8 +735,8 @@ Report whether the parcel contains any marshalled file descriptors in the range 
 
 | Parameters ||
 |---|---|
-| `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset from which the range starts. Should be between 0 and `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()`. |
-| `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The length of the range. Should be between 0 and `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()` - `offset`. |
+| `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset from which the range starts. Should be between 0 and dataSize. |
+| `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The length of the range. Should be between 0 and dataSize - `offset`. |
 
 | Return ||
 |---|---|
@@ -791,7 +791,7 @@ Retrieve a new Parcel object from the pool.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Parcel#` | This value cannot be `null`. |
+| Parcel | This value cannot be `null`. |
 
 ### obtain
 
@@ -809,7 +809,7 @@ Retrieve a new Parcel object from the pool for use with a specific binder. Assoc
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/os/Parcel#` | This value cannot be `null`. |
+| Parcel | This value cannot be `null`. |
 
 ### readArray
 
@@ -820,7 +820,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun readArray(loader: ClassLoader?): Array<Any!>?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArray(android.os.Parcelable.Creator)` if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readArray starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use createTypedArray if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read and return a new Object array from the parcel at the current dataPosition(). Returns null if the previously written array was null. The given class loader will be used to load any enclosed Parcelables.
 
@@ -839,9 +839,9 @@ fun <T : Any!> readArray(
 ): Array<T>?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readArray but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** if the list contains items implementing the `https://developer.android.com/reference/kotlin/android/os/Parcelable` interface, the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readArray(java.lang.ClassLoader)` instead.
+**Warning:** if the list contains items implementing the Parcelable interface, the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readArray instead.
 
 | Parameters ||
 |---|---|
@@ -865,7 +865,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun readArrayList(loader: ClassLoader?): ArrayList<Any!>?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayList(android.os.Parcelable.Creator)` if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readArrayList starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use createTypedArrayList if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read and return a new ArrayList object from the parcel at the current dataPosition(). Returns null if the previously written list object was null. The given class loader will be used to load any enclosed Parcelables.
 
@@ -884,9 +884,9 @@ fun <T : Any!> readArrayList(
 ): ArrayList<T>?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readArrayList but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** if the list contains items implementing the `https://developer.android.com/reference/kotlin/android/os/Parcelable` interface, the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readArrayList(java.lang.ClassLoader)` instead.
+**Warning:** if the list contains items implementing the Parcelable interface, the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readArrayList instead.
 
 | Parameters ||
 |---|---|
@@ -921,7 +921,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun readBinderList(list: MutableList<IBinder!>): Unit
 ```
 
-Read into the given List items IBinder objects that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)` at the current dataPosition().
+Read into the given List items IBinder objects that were written with writeBinderList at the current dataPosition().
 
 | Parameters ||
 |---|---|
@@ -929,7 +929,7 @@ Read into the given List items IBinder objects that were written with `https://d
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderList(kotlin.collections.MutableList)`
+- writeBinderList
 
 ### readBlob
 
@@ -947,7 +947,7 @@ Read a blob of data from the parcel and return it as a byte array.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBlob(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`
+- writeBlob
 
 ### readBoolean
 
@@ -1064,8 +1064,8 @@ fun readException(): Unit
 Special function for reading an exception result from the header of a parcel, to be used after receiving the result of a transaction. This will throw the exception for you if it had been written to the Parcel, otherwise return and let you read the normal result data from the Parcel.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeException(java.lang.Exception)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeNoException()`
+- writeException
+- writeNoException
 
 ### readException
 
@@ -1103,7 +1103,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun <T : Any!> readFixedArray(val: T): Unit
 ```
 
-Read a new multi-dimensional array from a parcel. If you want to read Parcelable or IInterface values, use `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T,%20android.os.Parcelable.Creator)` or `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T,%20java.util.function.Function)`.
+Read a new multi-dimensional array from a parcel. If you want to read Parcelable or IInterface values, use readFixedArray or readFixedArray.
 
 | Parameters ||
 |---|---|
@@ -1111,17 +1111,17 @@ Read a new multi-dimensional array from a parcel. If you want to read Parcelable
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readBooleanArray(kotlin.BooleanArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readByteArray(kotlin.ByteArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readCharArray(kotlin.CharArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readIntArray(kotlin.IntArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readLongArray(kotlin.LongArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readFloatArray(kotlin.FloatArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readDoubleArray(kotlin.DoubleArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderArray(kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceArray(kotlin.Array,%20java.util.function.Function)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedArray(kotlin.Array,%20android.os.Parcelable.Creator)`
+- writeTypedArray
+- readBooleanArray
+- readByteArray
+- readCharArray
+- readIntArray
+- readLongArray
+- readFloatArray
+- readDoubleArray
+- readBinderArray
+- readInterfaceArray
+- readTypedArray
 
 ### readFixedArray
 
@@ -1134,7 +1134,7 @@ fun <T : Any!, S : Parcelable!> readFixedArray(
 ): Unit
 ```
 
-Read a new multi-dimensional array of typed parcelables from a parcel. If you want to read IInterface values, use `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T,%20java.util.function.Function)`. For values of other types, use `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T)`.
+Read a new multi-dimensional array of typed parcelables from a parcel. If you want to read IInterface values, use readFixedArray. For values of other types, use readFixedArray.
 
 | Parameters ||
 |---|---|
@@ -1152,7 +1152,7 @@ fun <T : Any!, S : IInterface!> readFixedArray(
 ): Unit
 ```
 
-Read a new multi-dimensional array of typed interfaces from a parcel. If you want to read Parcelable values, use `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T,%20android.os.Parcelable.Creator)`. For values of other types, use `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T)`.
+Read a new multi-dimensional array of typed interfaces from a parcel. If you want to read Parcelable values, use readFixedArray. For values of other types, use readFixedArray.
 
 | Parameters ||
 |---|---|
@@ -1190,9 +1190,9 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun readHashMap(loader: ClassLoader?): HashMap<Any!, Any!>?
 ```
 
-**Deprecated:** *Consider using `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)` as stated above, in case this method is still preferred use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readHashMap(java.lang.ClassLoader,%20java.lang.Class,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
+**Deprecated:** *Consider using readBundle as stated above, in case this method is still preferred use the type-safer version readHashMap starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
 
-Please use `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)` instead (whose data must have been written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)`. Read and return a new HashMap object from the parcel at the current dataPosition(), using the given class loader to load any enclosed Parcelables. Returns null if the previously written map object was null.
+Please use readBundle instead (whose data must have been written with writeBundle. Read and return a new HashMap object from the parcel at the current dataPosition(), using the given class loader to load any enclosed Parcelables. Returns null if the previously written map object was null.
 
 | Parameters ||
 |---|---|
@@ -1210,7 +1210,7 @@ fun <K : Any!, V : Any!> readHashMap(
 ): HashMap<K, V>?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readHashMap(java.lang.ClassLoader)` but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair.
+Same as readHashMap but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair.
 
 | Parameters ||
 |---|---|
@@ -1282,7 +1282,7 @@ fun <T : IInterface!> readInterfaceList(
 ): Unit
 ```
 
-Read into the given List items IInterface objects that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)` at the current dataPosition().
+Read into the given List items IInterface objects that were written with writeInterfaceList at the current dataPosition().
 
 | Parameters ||
 |---|---|
@@ -1291,7 +1291,7 @@ Read into the given List items IInterface objects that were written with `https:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceList(kotlin.collections.MutableList)`
+- writeInterfaceList
 
 ### readList
 
@@ -1305,7 +1305,7 @@ fun readList(
 ): Unit
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedList(kotlin.collections.MutableList,%20android.os.Parcelable.Creator)` if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readList starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use readTypedList if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read into an existing List object from the parcel at the current dataPosition(), using the given class loader to load any enclosed Parcelables. If it is null, the default class loader is used.
 
@@ -1326,9 +1326,9 @@ fun <T : Any!> readList(
 ): Unit
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readList but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** if the list contains items implementing the `https://developer.android.com/reference/kotlin/android/os/Parcelable` interface, the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` instead.
+**Warning:** if the list contains items implementing the Parcelable interface, the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readList instead.
 
 | Parameters ||
 |---|---|
@@ -1375,9 +1375,9 @@ fun readMap(
 ): Unit
 ```
 
-**Deprecated:** *Consider using `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)` as stated above, in case this method is still preferred use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader,%20java.lang.Class,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
+**Deprecated:** *Consider using readBundle as stated above, in case this method is still preferred use the type-safer version readMap starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
 
-Please use `https://developer.android.com/reference/kotlin/android/os/Parcel#readBundle(java.lang.ClassLoader)` instead (whose data must have been written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)`. Read into an existing Map object from the parcel at the current dataPosition().
+Please use readBundle instead (whose data must have been written with writeBundle. Read into an existing Map object from the parcel at the current dataPosition().
 
 | Parameters ||
 |---|---|
@@ -1397,7 +1397,7 @@ fun <K : Any!, V : Any!> readMap(
 ): Unit
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readMap(kotlin.collections.MutableMap,%20java.lang.ClassLoader)` but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair.
+Same as readMap but accepts `clazzKey` and `clazzValue` parameter as the types required for each key and value pair.
 
 | Parameters ||
 |---|---|
@@ -1420,7 +1420,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun <T : Parcelable!> readParcelable(loader: ClassLoader?): T?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator#createFromParcel(android.os.Parcel)` if possible since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readParcelable starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use createFromParcel if possible since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read and return a new Parcelable from the parcel. The given class loader will be used to load any enclosed Parcelables. If it is null, the default class loader will be used.
 
@@ -1447,9 +1447,9 @@ fun <T : Any!> readParcelable(
 ): T?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readParcelable but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelable(java.lang.ClassLoader)` instead.
+**Warning:** the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readParcelable instead.
 
 | Parameters ||
 |---|---|
@@ -1473,7 +1473,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun readParcelableArray(loader: ClassLoader?): Array<Parcelable!>?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArray(android.os.Parcelable.Creator)` if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readParcelableArray starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use createTypedArray if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read and return a new Parcelable array from the parcel. The given class loader will be used to load any enclosed Parcelables.
 
@@ -1496,9 +1496,9 @@ fun <T : Any!> readParcelableArray(
 ): Array<T>?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readParcelableArray but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableArray(java.lang.ClassLoader)` instead.
+**Warning:** the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readParcelableArray instead.
 
 | Parameters ||
 |---|---|
@@ -1522,7 +1522,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun readParcelableCreator(loader: ClassLoader?): Parcelable.Creator<*>?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableCreator(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
+**Deprecated:** *Use the type-safer version readParcelableCreator starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
 
 Read and return a Parcelable.Creator from the parcel. The given class loader will be used to load the `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator`. If it is null, the default class loader will be used.
 
@@ -1540,7 +1540,7 @@ Read and return a Parcelable.Creator from the parcel. The given class loader wil
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableCreator(android.os.Parcelable)`
+- writeParcelableCreator
 
 ### readParcelableCreator
 
@@ -1553,9 +1553,9 @@ fun <T : Any!> readParcelableCreator(
 ): Parcelable.Creator<T>?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableCreator(java.lang.ClassLoader)` but accepts `clazz` parameter as the required type.
+Same as readParcelableCreator but accepts `clazz` parameter as the required type.
 
-**Warning:** the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableCreator(java.lang.ClassLoader)` instead.
+**Warning:** the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readParcelableCreator instead.
 
 | Parameters ||
 |---|---|
@@ -1582,7 +1582,7 @@ fun <T : Parcelable!> readParcelableList(
 ): MutableList<T>
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedList(kotlin.collections.MutableList,%20android.os.Parcelable.Creator)` if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readParcelableList starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use readTypedList if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read the list of `Parcelable` objects at the current data position into the given `list`. The contents of the `list` are replaced. If the serialized list was `null`, `list` is cleared.
 
@@ -1593,7 +1593,7 @@ Read the list of `Parcelable` objects at the current data position into the give
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableList(kotlin.collections.MutableList,%20kotlin.Int)`
+- writeParcelableList
 
 ### readParcelableList
 
@@ -1607,9 +1607,9 @@ fun <T : Any!> readParcelableList(
 ): MutableList<T>
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readParcelableList but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** if the list contains items implementing the `https://developer.android.com/reference/kotlin/android/os/Parcelable` interface, the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` instead.
+**Warning:** if the list contains items implementing the Parcelable interface, the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readParcelableList instead.
 
 | Parameters ||
 |---|---|
@@ -1659,13 +1659,13 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun readSerializable(): Serializable?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readSerializable(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
+**Deprecated:** *Use the type-safer version readSerializable starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`.*
 
 Read and return a new Serializable object from the parcel.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/io/Serializable.html#?` | the Serializable object, or null if the Serializable name wasn't found in the parcel. Unlike `https://developer.android.com/reference/kotlin/android/os/Parcel#readSerializable(java.lang.ClassLoader,%20java.lang.Class)`, it uses the nearest valid class loader up the execution stack to instantiate the Serializable object. |
+| `https://developer.android.com/reference/kotlin/java/io/Serializable.html#?` | the Serializable object, or null if the Serializable name wasn't found in the parcel. Unlike readSerializable, it uses the nearest valid class loader up the execution stack to instantiate the Serializable object. |
 
 ### readSerializable
 
@@ -1678,7 +1678,7 @@ fun <T : Any!> readSerializable(
 ): T?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readSerializable()` but accepts `loader` and `clazz` parameters.
+Same as readSerializable but accepts `loader` and `clazz` parameters.
 
 | Parameters ||
 |---|---|
@@ -1730,7 +1730,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 fun <T : Any!> readSparseArray(loader: ClassLoader?): SparseArray<T>?
 ```
 
-**Deprecated:** *Use the type-safer version `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader,%20java.lang.Class)` starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedSparseArray(android.os.Parcelable.Creator)` if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
+**Deprecated:** *Use the type-safer version readSparseArray starting from Android `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES#TIRAMISU:kotlin.Int`. Also consider changing the format to use createTypedSparseArray if possible (eg. if the items' class is final) since this is also more performant. Note that changing to the latter also requires changing the writes.*
 
 Read and return a new SparseArray object from the parcel at the current dataPosition(). Returns null if the previously written list object was null. The given class loader will be used to load any enclosed Parcelables.
 
@@ -1749,9 +1749,9 @@ fun <T : Any!> readSparseArray(
 ): SparseArray<T>?
 ```
 
-Same as `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader)` but accepts `clazz` parameter as the type required for each item.
+Same as readSparseArray but accepts `clazz` parameter as the type required for each item.
 
-**Warning:** if the list contains items implementing the `https://developer.android.com/reference/kotlin/android/os/Parcelable` interface, the class that implements `https://developer.android.com/reference/kotlin/android/os/Parcelable` has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, `https://developer.android.com/reference/kotlin/java/lang/Class.html#getEnclosingClass()` has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated `https://developer.android.com/reference/kotlin/android/os/Parcel#readSparseArray(java.lang.ClassLoader)` instead.
+**Warning:** if the list contains items implementing the Parcelable interface, the class that implements Parcelable has to be the immediately enclosing class of the runtime type of its CREATOR field (that is, getEnclosingClass has to return the parcelable implementing class), otherwise this method might throw an exception. If the Parcelable class does not enclose the CREATOR, use the deprecated readSparseArray instead.
 
 | Parameters ||
 |---|---|
@@ -1810,7 +1810,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun readStringList(list: MutableList<String!>): Unit
 ```
 
-Read into the given List items String objects that were written with `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)` at the current dataPosition().
+Read into the given List items String objects that were written with writeStringList at the current dataPosition().
 
 | Parameters ||
 |---|---|
@@ -1818,7 +1818,7 @@ Read into the given List items String objects that were written with `https://de
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeStringList(kotlin.collections.MutableList)`
+- writeStringList
 
 ### readStrongBinder
 
@@ -1874,7 +1874,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun <T : Any!> readTypedObject(c: Parcelable.Creator<T>): T?
 ```
 
-Read and return a typed Parcelable object from a parcel. Returns null if the previous written object was null. The object *must* have previous been written via `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedObject(android.os.Parcel.writeTypedObject.T,%20kotlin.Int)` with the same object type.
+Read and return a typed Parcelable object from a parcel. Returns null if the previous written object was null. The object *must* have previous been written via writeTypedObject with the same object type.
 
 | Parameters ||
 |---|---|
@@ -1886,7 +1886,7 @@ Read and return a typed Parcelable object from a parcel. Returns null if the pre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedObject(android.os.Parcel.writeTypedObject.T,%20kotlin.Int)`
+- writeTypedObject
 
 ### readValue
 
@@ -1924,7 +1924,7 @@ Change the capacity (current available space) of the parcel.
 
 | Parameters ||
 |---|---|
-| `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new capacity of the parcel, in bytes. Can not be less than `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()` -- that is, you can not drop existing data with this method. |
+| `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new capacity of the parcel, in bytes. Can not be less than dataSize -- that is, you can not drop existing data with this method. |
 
 ### setDataPosition
 
@@ -1938,7 +1938,7 @@ Move the current read/write position in the parcel.
 
 | Parameters ||
 |---|---|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New offset in the parcel; must be between 0 and `https://developer.android.com/reference/kotlin/android/os/Parcel#dataSize()`. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New offset in the parcel; must be between 0 and dataSize. |
 
 ### setDataSize
 
@@ -2004,7 +2004,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeArray(val: Array<Any!>?): Unit
 ```
 
-Flatten an Object array into the parcel at the current dataPosition(), growing dataCapacity() if needed. The array values are written using `https://developer.android.com/reference/kotlin/android/os/Parcel#writeValue(kotlin.Any)` and must follow the specification there.
+Flatten an Object array into the parcel at the current dataPosition(), growing dataCapacity() if needed. The array values are written using writeValue and must follow the specification there.
 
 | Parameters ||
 |---|---|
@@ -2030,7 +2030,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeBinderList(val: MutableList<IBinder!>?): Unit
 ```
 
-Flatten a List containing IBinder objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. They can later be retrieved with `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArrayList()` or `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderList(kotlin.collections.MutableList)`.
+Flatten a List containing IBinder objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. They can later be retrieved with createBinderArrayList or readBinderList.
 
 | Parameters ||
 |---|---|
@@ -2038,8 +2038,8 @@ Flatten a List containing IBinder objects into the parcel, at the current dataPo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createBinderArrayList()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readBinderList(kotlin.collections.MutableList)`
+- createBinderArrayList
+- readBinderList
 
 ### writeBlob
 
@@ -2049,9 +2049,9 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun writeBlob(b: ByteArray?): Unit
 ```
 
-Write a blob of data into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed.
+Write a blob of data into the parcel at the current dataPosition, growing dataCapacity if needed.
 
-If the blob is small, then it is stored in-place, otherwise it is transferred by way of an anonymous shared memory region. If you prefer send in-place, please use `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByteArray(kotlin.ByteArray)`.
+If the blob is small, then it is stored in-place, otherwise it is transferred by way of an anonymous shared memory region. If you prefer send in-place, please use writeByteArray.
 
 | Parameters ||
 |---|---|
@@ -2059,7 +2059,7 @@ If the blob is small, then it is stored in-place, otherwise it is transferred by
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readBlob()`
+- readBlob
 
 ### writeBlob
 
@@ -2073,9 +2073,9 @@ fun writeBlob(
 ): Unit
 ```
 
-Write a blob of data into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed.
+Write a blob of data into the parcel at the current dataPosition, growing dataCapacity if needed.
 
-If the blob is small, then it is stored in-place, otherwise it is transferred by way of an anonymous shared memory region. If you prefer send in-place, please use `https://developer.android.com/reference/kotlin/android/os/Parcel#writeByteArray(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`.
+If the blob is small, then it is stored in-place, otherwise it is transferred by way of an anonymous shared memory region. If you prefer send in-place, please use writeByteArray.
 
 | Parameters ||
 |---|---|
@@ -2086,7 +2086,7 @@ If the blob is small, then it is stored in-place, otherwise it is transferred by
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readBlob()`
+- readBlob
 
 ### writeBoolean
 
@@ -2146,7 +2146,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeByteArray(b: ByteArray?): Unit
 ```
 
-Write a byte array into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed.
+Write a byte array into the parcel at the current dataPosition, growing dataCapacity if needed.
 
 | Parameters ||
 |---|---|
@@ -2164,7 +2164,7 @@ fun writeByteArray(
 ): Unit
 ```
 
-Write a byte array into the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`, growing `https://developer.android.com/reference/kotlin/android/os/Parcel#dataCapacity()` if needed.
+Write a byte array into the parcel at the current dataPosition, growing dataCapacity if needed.
 
 | Parameters ||
 |---|---|
@@ -2219,13 +2219,13 @@ Special function for writing an exception result at the header of a parcel, to b
 
 The supported exception types are:
 
-- `https://developer.android.com/reference/kotlin/android/os/BadParcelableException`
+- BadParcelableException
 - `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`
 - `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`
 - `https://developer.android.com/reference/kotlin/java/lang/NullPointerException.html#`
 - `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#`
 - `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`
-- `https://developer.android.com/reference/kotlin/android/os/NetworkOnMainThreadException`
+- NetworkOnMainThreadException
 
 | Parameters ||
 |---|---|
@@ -2233,7 +2233,7 @@ The supported exception types are:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeNoException()`
+- writeNoException
 
 ### writeFileDescriptor
 
@@ -2245,7 +2245,7 @@ fun writeFileDescriptor(val: FileDescriptor): Unit
 
 Write a FileDescriptor into the parcel at the current dataPosition(), growing dataCapacity() if needed.
 
-The file descriptor will not be closed, which may result in file descriptor leaks when objects are returned from Binder calls. Use `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor#writeToParcel(android.os.Parcel,%20kotlin.Int)` instead, which accepts contextual flags and will close the original file descriptor if `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` is set.
+The file descriptor will not be closed, which may result in file descriptor leaks when objects are returned from Binder calls. Use writeToParcel instead, which accepts contextual flags and will close the original file descriptor if `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` is set.
 
 | Parameters ||
 |---|---|
@@ -2263,12 +2263,12 @@ fun <T : Any!> writeFixedArray(
 ): Unit
 ```
 
-Flatten a homogeneous multi-dimensional array with fixed-size. This delegates to other APIs to write a one-dimensional array. Use `https://developer.android.com/reference/kotlin/android/os/Parcel#readFixedArray(android.os.Parcel.readFixedArray.T)` or `https://developer.android.com/reference/kotlin/android/os/Parcel#createFixedArray(java.lang.Class,%20kotlin.Int)` with the same dimensions to unmarshal.
+Flatten a homogeneous multi-dimensional array with fixed-size. This delegates to other APIs to write a one-dimensional array. Use readFixedArray or createFixedArray with the same dimensions to unmarshal.
 
 | Parameters ||
 |---|---|
 | `val` | T?: The array to be written. This value may be `null`. |
-| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`. Used only if val is an array of Parcelable objects. |
+| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per writeToParcel. Used only if val is an array of Parcelable objects. |
 | `dimensions` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an array of int representing length of each dimension. The array should be sized with the exact size of dimensions. This value cannot be `null`. |
 | --- | --- |
 
@@ -2278,15 +2278,15 @@ Flatten a homogeneous multi-dimensional array with fixed-size. This delegates to
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBooleanArray(kotlin.BooleanArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeCharArray(kotlin.CharArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeIntArray(kotlin.IntArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeLongArray(kotlin.LongArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeFloatArray(kotlin.FloatArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeDoubleArray(kotlin.DoubleArray)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBinderArray(kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeInterfaceArray(kotlin.Array)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`
+- writeBooleanArray
+- writeCharArray
+- writeIntArray
+- writeLongArray
+- writeFloatArray
+- writeDoubleArray
+- writeBinderArray
+- writeInterfaceArray
+- writeTypedArray
 
 ### writeFloat
 
@@ -2348,9 +2348,9 @@ Flatten a homogeneous array containing an IInterface type into the parcel, at th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArray(java.util.function.IntFunction,%20java.util.function.Function)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceArray(kotlin.Array,%20java.util.function.Function)`
-- `https://developer.android.com/reference/kotlin/android/os/IInterface`
+- createInterfaceArray
+- readInterfaceArray
+- IInterface
 
 ### writeInterfaceList
 
@@ -2360,7 +2360,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun <T : IInterface!> writeInterfaceList(val: MutableList<T>?): Unit
 ```
 
-Flatten a `List` containing T (IInterface) objects into this parcel at the current position. They can later be retrieved with `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArrayList(java.util.function.Function)` or `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceList(kotlin.collections.MutableList,%20java.util.function.Function)`.
+Flatten a `List` containing T (IInterface) objects into this parcel at the current position. They can later be retrieved with createInterfaceArrayList or readInterfaceList.
 
 | Parameters ||
 |---|---|
@@ -2368,8 +2368,8 @@ Flatten a `List` containing T (IInterface) objects into this parcel at the curre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createInterfaceArrayList(java.util.function.Function)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readInterfaceList(kotlin.collections.MutableList,%20java.util.function.Function)`
+- createInterfaceArrayList
+- readInterfaceList
 
 ### writeInterfaceToken
 
@@ -2379,7 +2379,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeInterfaceToken(interfaceName: String): Unit
 ```
 
-Store or read an IBinder interface token in the parcel at the current `https://developer.android.com/reference/kotlin/android/os/Parcel#dataPosition()`. This is used to validate that the marshalled transaction is intended for the target interface. This is typically written at the beginning of transactions as a header.
+Store or read an IBinder interface token in the parcel at the current dataPosition. This is used to validate that the marshalled transaction is intended for the target interface. This is typically written at the beginning of transactions as a header.
 
 | Parameters ||
 |---|---|
@@ -2393,7 +2393,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeList(val: MutableList<Any?>?): Unit
 ```
 
-Flatten a List into the parcel at the current dataPosition(), growing dataCapacity() if needed. The List values are written using `https://developer.android.com/reference/kotlin/android/os/Parcel#writeValue(kotlin.Any)` and must follow the specification there.
+Flatten a List into the parcel at the current dataPosition(), growing dataCapacity() if needed. The List values are written using writeValue and must follow the specification there.
 
 | Parameters ||
 |---|---|
@@ -2429,9 +2429,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeMap(val: MutableMap<Any?, Any?>?): Unit
 ```
 
-Please use `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)` instead. Flattens a Map into the parcel at the current dataPosition(), growing dataCapacity() if needed. The Map keys must be String objects. The Map values are written using `https://developer.android.com/reference/kotlin/android/os/Parcel#writeValue(kotlin.Any)` and must follow the specification there.
+Please use writeBundle instead. Flattens a Map into the parcel at the current dataPosition(), growing dataCapacity() if needed. The Map keys must be String objects. The Map values are written using writeValue and must follow the specification there.
 
-It is strongly recommended to use `https://developer.android.com/reference/kotlin/android/os/Parcel#writeBundle(android.os.Bundle)` instead of this method, since the Bundle class provides a type-safe API that allows you to avoid mysterious type errors at the point of marshalling.
+It is strongly recommended to use writeBundle instead of this method, since the Bundle class provides a type-safe API that allows you to avoid mysterious type errors at the point of marshalling.
 
 | Parameters ||
 |---|---|
@@ -2448,7 +2448,7 @@ fun writeNoException(): Unit
 Special function for writing information at the front of the Parcel indicating that no exception occurred.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeException(java.lang.Exception)`
+- writeException
 
 ### writeParcelable
 
@@ -2466,7 +2466,7 @@ Flatten the name of the class of the Parcelable and its contents into the parcel
 | Parameters ||
 |---|---|
 | `p` | [Parcelable](Parcelable.md)?: The Parcelable object to be written. This value may be `null`. |
-| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`. |
+| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per writeToParcel. |
 
 ### writeParcelableArray
 
@@ -2479,16 +2479,16 @@ fun <T : Parcelable!> writeParcelableArray(
 ): Unit
 ```
 
-Write a heterogeneous array of Parcelable objects into the Parcel. Each object in the array is written along with its class name, so that the correct class can later be instantiated. As a result, this has significantly more overhead than `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`, but will correctly handle an array containing more than one type of object.
+Write a heterogeneous array of Parcelable objects into the Parcel. Each object in the array is written along with its class name, so that the correct class can later be instantiated. As a result, this has significantly more overhead than writeTypedArray, but will correctly handle an array containing more than one type of object.
 
 | Parameters ||
 |---|---|
 | `value` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: The array of objects to be written. This value may be `null`. |
-| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`. |
+| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per writeToParcel. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeTypedArray(kotlin.Array,%20kotlin.Int)`
+- writeTypedArray
 
 ### writeParcelableCreator
 
@@ -2517,7 +2517,7 @@ fun <T : Parcelable!> writeParcelableList(
 ): Unit
 ```
 
-Flatten a `List` containing arbitrary `Parcelable` objects into this parcel at the current position. They can later be retrieved using `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader)` if required.
+Flatten a `List` containing arbitrary `Parcelable` objects into this parcel at the current position. They can later be retrieved using readParcelableList if required.
 
 | Parameters ||
 |---|---|
@@ -2525,7 +2525,7 @@ Flatten a `List` containing arbitrary `Parcelable` objects into this parcel at t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readParcelableList(kotlin.collections.MutableList,%20java.lang.ClassLoader)`
+- readParcelableList
 
 ### writePersistableBundle
 
@@ -2591,7 +2591,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun <T : Any!> writeSparseArray(val: SparseArray<T>?): Unit
 ```
 
-Flatten a generic SparseArray into the parcel at the current dataPosition(), growing dataCapacity() if needed. The SparseArray values are written using `https://developer.android.com/reference/kotlin/android/os/Parcel#writeValue(kotlin.Any)` and must follow the specification there.
+Flatten a generic SparseArray into the parcel at the current dataPosition(), growing dataCapacity() if needed. The SparseArray values are written using writeValue and must follow the specification there.
 
 | Parameters ||
 |---|---|
@@ -2643,7 +2643,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeStringList(val: MutableList<String!>?): Unit
 ```
 
-Flatten a List containing String objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. They can later be retrieved with `https://developer.android.com/reference/kotlin/android/os/Parcel#createStringArrayList()` or `https://developer.android.com/reference/kotlin/android/os/Parcel#readStringList(kotlin.collections.MutableList)`.
+Flatten a List containing String objects into the parcel, at the current dataPosition() and growing dataCapacity() if needed. They can later be retrieved with createStringArrayList or readStringList.
 
 | Parameters ||
 |---|---|
@@ -2651,8 +2651,8 @@ Flatten a List containing String objects into the parcel, at the current dataPos
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createStringArrayList()`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readStringList(kotlin.collections.MutableList)`
+- createStringArrayList
+- readStringList
 
 ### writeStrongBinder
 
@@ -2685,17 +2685,17 @@ fun <T : Parcelable!> writeTypedArray(
 ): Unit
 ```
 
-Flatten a homogeneous array containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. The type of the objects in the array must be one that implements Parcelable. Unlike the `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableArray(kotlin.Array,%20kotlin.Int)` method, however, only the raw data of the objects is written and not their type, so you must use `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedArray(kotlin.Array,%20android.os.Parcelable.Creator)` with the correct corresponding `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator` implementation to unmarshall them.
+Flatten a homogeneous array containing a particular object type into the parcel, at the current dataPosition() and growing dataCapacity() if needed. The type of the objects in the array must be one that implements Parcelable. Unlike the writeParcelableArray method, however, only the raw data of the objects is written and not their type, so you must use readTypedArray with the correct corresponding `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator` implementation to unmarshall them.
 
 | Parameters ||
 |---|---|
 | `val` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>?: The array of objects to be written. This value may be `null`. |
-| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`. |
+| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per writeToParcel. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedArray(kotlin.Array,%20android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#writeParcelableArray(kotlin.Array,%20kotlin.Int)`
+- readTypedArray
+- writeParcelableArray
 - `https://developer.android.com/reference/kotlin/android/os/Parcelable.Creator`
 
 ### writeTypedArrayMap
@@ -2709,7 +2709,7 @@ fun <T : Parcelable!> writeTypedArrayMap(
 ): Unit
 ```
 
-Flatten an `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. The type of the objects in the array must be one that implements Parcelable. Only the raw data of the objects is written and not their type, so you must use the corresponding `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayMap(android.os.Parcelable.Creator)`
+Flatten an `https://developer.android.com/reference/kotlin/android/util/ArrayMap.html#` with string keys containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. The type of the objects in the array must be one that implements Parcelable. Only the raw data of the objects is written and not their type, so you must use the corresponding createTypedArrayMap
 
 | Parameters ||
 |---|---|
@@ -2718,8 +2718,8 @@ Flatten an `https://developer.android.com/reference/kotlin/android/util/ArrayMap
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayMap(android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcelable`
+- createTypedArrayMap
+- Parcelable
 
 ### writeTypedList
 
@@ -2737,9 +2737,9 @@ Flatten a List containing a particular object type into the parcel, at the curre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayList(android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedList(kotlin.collections.MutableList,%20android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcelable`
+- createTypedArrayList
+- readTypedList
+- Parcelable
 
 ### writeTypedList
 
@@ -2757,13 +2757,13 @@ Flatten a List containing a particular object type into the parcel, at the curre
 | Parameters ||
 |---|---|
 | `val` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>?: The list of objects to be written. This value may be `null`. |
-| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`. |
+| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per writeToParcel. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedArrayList(android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedList(kotlin.collections.MutableList,%20android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcelable`
+- createTypedArrayList
+- readTypedList
+- Parcelable
 
 ### writeTypedObject
 
@@ -2781,11 +2781,11 @@ Flatten the Parcelable object into the parcel.
 | Parameters ||
 |---|---|
 | `val` | T?: The Parcelable object to be written. This value may be `null`. |
-| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)`. |
+| `parcelableFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Contextual flags as per writeToParcel. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#readTypedObject(android.os.Parcelable.Creator)`
+- readTypedObject
 
 ### writeTypedSparseArray
 
@@ -2798,7 +2798,7 @@ fun <T : Parcelable!> writeTypedSparseArray(
 ): Unit
 ```
 
-Flatten a `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. The type of the objects in the array must be one that implements Parcelable. Unlike the generic `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSparseArray(android.util.SparseArray)` method, however, only the raw data of the objects is written and not their type, so you must use the corresponding `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedSparseArray(android.os.Parcelable.Creator)`.
+Flatten a `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` containing a particular object type into the parcel at the current dataPosition() and growing dataCapacity() if needed. The type of the objects in the array must be one that implements Parcelable. Unlike the generic writeSparseArray method, however, only the raw data of the objects is written and not their type, so you must use the corresponding createTypedSparseArray.
 
 | Parameters ||
 |---|---|
@@ -2807,8 +2807,8 @@ Flatten a `https://developer.android.com/reference/kotlin/android/util/SparseArr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/Parcel#createTypedSparseArray(android.os.Parcelable.Creator)`
-- `https://developer.android.com/reference/kotlin/android/os/Parcelable`
+- createTypedSparseArray
+- Parcelable
 
 ### writeValue
 
@@ -2835,19 +2835,19 @@ Flatten a generic object in to a parcel. The given Object value may currently be
 - int\[\]
 - long\[\]
 - Object\[\] (supporting objects of the same type defined here).
-- `https://developer.android.com/reference/kotlin/android/os/Bundle`
-- Map (as supported by `https://developer.android.com/reference/kotlin/android/os/Parcel#writeMap(kotlin.collections.MutableMap)`).
-- Any object that implements the `https://developer.android.com/reference/kotlin/android/os/Parcelable` protocol.
+- Bundle
+- Map (as supported by writeMap).
+- Any object that implements the Parcelable protocol.
 - Parcelable\[\]
-- CharSequence (as supported by `https://developer.android.com/reference/kotlin/android/text/TextUtils.html#writeToParcel(kotlin.CharSequence,%20android.os.Parcel,%20kotlin.Int)`).
-- List (as supported by `https://developer.android.com/reference/kotlin/android/os/Parcel#writeList(kotlin.collections.MutableList)`).
-- `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` (as supported by `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSparseArray(android.util.SparseArray)`).
-- `https://developer.android.com/reference/kotlin/android/os/IBinder`
-- Any object that implements Serializable (but see `https://developer.android.com/reference/kotlin/android/os/Parcel#writeSerializable(java.io.Serializable)` for caveats). Note that all of the previous types have relatively efficient implementations for writing to a Parcel; having to rely on the generic serialization approach is much less efficient and should be avoided whenever possible.
+- CharSequence (as supported by writeToParcel).
+- List (as supported by writeList).
+- `https://developer.android.com/reference/kotlin/android/util/SparseArray.html#` (as supported by writeSparseArray).
+- IBinder
+- Any object that implements Serializable (but see writeSerializable for caveats). Note that all of the previous types have relatively efficient implementations for writing to a Parcel; having to rely on the generic serialization approach is much less efficient and should be avoided whenever possible.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/Parcelable` objects are written with `https://developer.android.com/reference/kotlin/android/os/Parcelable#writeToParcel(android.os.Parcel,%20kotlin.Int)` using contextual flags of 0. When serializing objects containing `https://developer.android.com/reference/kotlin/android/os/ParcelFileDescriptor`s, this may result in file descriptor leaks when they are returned from Binder calls (where `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` should be used).
+Parcelable objects are written with writeToParcel using contextual flags of 0. When serializing objects containing ParcelFileDescriptors, this may result in file descriptor leaks when they are returned from Binder calls (where `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` should be used).
 
 | Parameters ||
 |---|---|

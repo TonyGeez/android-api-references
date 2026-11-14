@@ -25,16 +25,16 @@ SDK has to implement this abstract class to generate an entry point for SDK sand
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#SandboxedSdkProvider()()` <br /> |
+| SandboxedSdkProvider <br /> |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#attachContext(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Sets the SDK `https://developer.android.com/reference/kotlin/android/content/Context.html#` which can then be received using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getContext()`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#beforeUnloadSdk()()` Does the work needed for the SDK to free its resources before being unloaded. |
-| [Context](../android.content/Context.md)? | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getContext()()` Return the `https://developer.android.com/reference/kotlin/android/content/Context.html#` previously set through `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#attachContext(android.content.Context)`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | attachContext Sets the SDK `https://developer.android.com/reference/kotlin/android/content/Context.html#` which can then be received using getContext. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | beforeUnloadSdk Does the work needed for the SDK to free its resources before being unloaded. |
+| [Context](../android.content/Context.md)? | getContext Return the `https://developer.android.com/reference/kotlin/android/content/Context.html#` previously set through attachContext. |
 | --- | --- |
-| abstract [View](../android.view/View.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getView(android.content.Context,%20android.os.Bundle,%20kotlin.Int,%20kotlin.Int)(windowContext: https://developer.android.com/reference/kotlin/android/content/Context.html#, params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Requests a view to be remotely rendered to the client app process. |
-| abstract [SandboxedSdk](SandboxedSdk.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#onLoadSdk(android.os.Bundle)(params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Does the work needed for the SDK to start handling requests. |
+| abstract [View](../android.view/View.md) | getView Requests a view to be remotely rendered to the client app process. |
+| abstract [SandboxedSdk](SandboxedSdk.md) | onLoadSdk Does the work needed for the SDK to start handling requests. |
 
 ## Public constructors
 
@@ -61,7 +61,7 @@ fun attachContext(context: Context): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the SDK `https://developer.android.com/reference/kotlin/android/content/Context.html#` which can then be received using `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getContext()`. This is called before `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#onLoadSdk(android.os.Bundle)` is invoked. No operations requiring a `https://developer.android.com/reference/kotlin/android/content/Context.html#` should be performed before then, as `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#getContext()` will return null until this method has been called.
+Sets the SDK `https://developer.android.com/reference/kotlin/android/content/Context.html#` which can then be received using getContext. This is called before onLoadSdk is invoked. No operations requiring a `https://developer.android.com/reference/kotlin/android/content/Context.html#` should be performed before then, as getContext will return null until this method has been called.
 
 Throws IllegalStateException if a base context has already been set.
 
@@ -83,7 +83,7 @@ open fun beforeUnloadSdk(): Unit
 
 Does the work needed for the SDK to free its resources before being unloaded.
 
-This function is called by the SDK sandbox manager before it unloads the SDK. The SDK should fail any invocations on the Binder previously returned to the client through `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk#getInterface()`.
+This function is called by the SDK sandbox manager before it unloads the SDK. The SDK should fail any invocations on the Binder previously returned to the client through getInterface.
 
 The SDK should not do any long-running tasks here, like I/O and network calls.
 
@@ -99,7 +99,7 @@ fun getContext(): Context?
 
 **Deprecated:** *Deprecated in Java.*
 
-Return the `https://developer.android.com/reference/kotlin/android/content/Context.html#` previously set through `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdkProvider#attachContext(android.content.Context)`. This will return null if no context has been previously set.
+Return the `https://developer.android.com/reference/kotlin/android/content/Context.html#` previously set through attachContext. This will return null if no context has been previously set.
 
 ### getView
 
@@ -116,7 +116,7 @@ abstract fun getView(
 ): View
 ```
 
-**Deprecated:** *This method will no longer be supported as it is being used by `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SdkSandboxManager#requestSurfacePackage(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` which is getting deprecated.*
+**Deprecated:** *This method will no longer be supported as it is being used by requestSurfacePackage which is getting deprecated.*
 
 Requests a view to be remotely rendered to the client app process.
 
@@ -162,4 +162,4 @@ The SDK should not do any operations requiring a `https://developer.android.com/
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk` | Returns a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk`, passed back to the client. The IBinder used to create the `https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk` object will be used by the client to call into the SDK. This value cannot be `null`. |
+| SandboxedSdk | Returns a SandboxedSdk, passed back to the client. The IBinder used to create the SandboxedSdk object will be used by the client to call into the SDK. This value cannot be `null`. |

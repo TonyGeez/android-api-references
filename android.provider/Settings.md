@@ -189,9 +189,9 @@ The Settings provider contains global system-level device preferences.
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED:kotlin.String` Activity Extra: The minimum strength to request enrollment for. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_CHANNEL_FILTER_LIST:kotlin.String` Activity Extra: An `Arraylist<String>` of `https://developer.android.com/reference/kotlin/android/app/NotificationChannel.html#` field names to show on the Settings UI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_CHANNEL_ID:kotlin.String` Activity Extra: The `https://developer.android.com/reference/kotlin/android/app/NotificationChannel.html#getId()` of the notification channel settings to display. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_CHANNEL_ID:kotlin.String` Activity Extra: The getId of the notification channel settings to display. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_CONVERSATION_ID:kotlin.String` Activity Extra: The `https://developer.android.com/reference/kotlin/android/app/NotificationChannel.html#getConversationId()` of the notification conversation settings to display. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_CONVERSATION_ID:kotlin.String` Activity Extra: The getConversationId of the notification conversation settings to display. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_DO_NOT_DISTURB_MODE_ENABLED:kotlin.String` Activity Extra: Enable or disable Do Not Disturb mode. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_DO_NOT_DISTURB_MODE_MINUTES:kotlin.String` Activity Extra: How many minutes to enable do not disturb mode for. |
 | --- | --- |
@@ -219,11 +219,11 @@ The Settings provider contains global system-level device preferences.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/provider/Settings#Settings()()` <br /> |
+| Settings <br /> |
 
 | Public methods ||
 |---|---|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/provider/Settings#canDrawOverlays(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Checks if the specified context can draw on top of other apps. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canDrawOverlays Checks if the specified context can draw on top of other apps. |
 
 ## Constants
 
@@ -429,7 +429,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_APP_NOTIFICATION_BUBBLE_SETTINGS: String
 ```
 
-Activity Action: Show notification bubble settings for a single app. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#getBubblePreference()`.
+Activity Action: Show notification bubble settings for a single app. See getBubblePreference.
 
 Input: `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_APP_PACKAGE:kotlin.String`, the package to display.
 
@@ -527,9 +527,9 @@ static val ACTION_AUTOMATIC_ZEN_RULE_SETTINGS: String
 
 Activity Action: Shows the settings page for an `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#` mode.
 
-Users can change the behavior of the mode when it's activated and access the owning app's additional configuration screen, where triggering criteria can be modified (see `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#setConfigurationActivity(android.content.ComponentName)`).
+Users can change the behavior of the mode when it's activated and access the owning app's additional configuration screen, where triggering criteria can be modified (see setConfigurationActivity).
 
-A matching Activity will only be found if `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#areAutomaticZenRulesUserManaged()` is true.
+A matching Activity will only be found if areAutomaticZenRulesUserManaged is true.
 
 Input: The id of the rule, provided in the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_AUTOMATIC_ZEN_RULE_ID:kotlin.String` extra.
 
@@ -575,7 +575,7 @@ Activity Action: Show settings to enroll biometrics, and setup PIN/Pattern/Pass 
 
 Input: extras `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED:kotlin.String` as an integer, with constants defined in `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators.html#`, e.g. `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators.html#BIOMETRIC_STRONG:kotlin.Int`. If not specified, the default behavior is `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.Authenticators.html#BIOMETRIC_WEAK:kotlin.Int`.
 
-Output: Nothing. Note that callers should still check `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricManager.html#canAuthenticate(kotlin.Int)` afterwards to ensure that the user actually completed enrollment.
+Output: Nothing. Note that callers should still check canAuthenticate afterwards to ensure that the user actually completed enrollment.
 
  Value: "android.settings.BIOMETRIC_ENROLL"
 
@@ -659,7 +659,7 @@ static val ACTION_CONDITION_PROVIDER_SETTINGS: String
 
 Activity Action: Show the automatic do not disturb rule listing page
 
-Users can add, enable, disable, and remove automatic do not disturb rules from this screen. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#addAutomaticZenRule(android.app.AutomaticZenRule)` for more details.
+Users can add, enable, disable, and remove automatic do not disturb rules from this screen. See addAutomaticZenRule for more details.
 
 Input: Nothing Output: Nothing
 
@@ -679,7 +679,7 @@ Input: Intent's data URI set with an application package name, using the "packag
 
 Output: `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` if user selected a provider belonging to the caller package.
 
-**NOTE:** Applications should call `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager.html#isEnabledCredentialProviderService(android.content.ComponentName)` and only use this action to start an activity if they return `false`.
+**NOTE:** Applications should call isEnabledCredentialProviderService and only use this action to start an activity if they return `false`.
 
  Value: "android.settings.CREDENTIAL_PROVIDER"
 
@@ -893,7 +893,7 @@ Input: Intent's data URI set with an application name, using the "package" schem
 
 Output: Nothing.
 
-Applications can also use `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.html#getRestrictBackgroundStatus()` to determine the status of the background data restrictions for them.
+Applications can also use getRestrictBackgroundStatus to determine the status of the background data restrictions for them.
 
 In some cases, a matching Activity may not exist, so ensure you safeguard against this.
 
@@ -913,7 +913,7 @@ Input: Nothing.
 
 Output: Nothing.
 
-You can use `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#isIgnoringBatteryOptimizations(kotlin.String)` to determine if an application is already ignoring optimizations. You can use `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:kotlin.String` to ask the user to put you on this list.
+You can use isIgnoringBatteryOptimizations to determine if an application is already ignoring optimizations. You can use `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:kotlin.String` to ask the user to put you on this list.
 
  Value: "android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS"
 
@@ -953,7 +953,7 @@ To tell which input method's subtypes are displayed in the settings, add `https:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo.html#getId()`
+- getId
 
 ### ACTION_INTERNAL_STORAGE_SETTINGS
 
@@ -1374,7 +1374,7 @@ Output: Nothing
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.html#isEnabled()`
+- isEnabled
 
 ### ACTION_NIGHT_DISPLAY_SETTINGS
 
@@ -1422,7 +1422,7 @@ static val ACTION_NOTIFICATION_LISTENER_DETAIL_SETTINGS: String
 
 Activity Action: Show notification listener permission settings page for app.
 
-Users can grant and deny access to notifications for a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` from here. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#isNotificationListenerAccessGranted(android.content.ComponentName)` for more details.
+Users can grant and deny access to notifications for a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` from here. See isNotificationListenerAccessGranted for more details.
 
 Input: The extra `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_NOTIFICATION_LISTENER_COMPONENT_NAME:kotlin.String` containing the name of the component to grant or revoke notification listener access to.
 
@@ -1462,7 +1462,7 @@ static val ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS: String
 
 Activity Action: Show Notification Policy access settings.
 
-Users can grant and deny access to Notification Policy (DND / Modes) configuration from here. Managed profiles cannot grant Notification Policy access. See `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#isNotificationPolicyAccessGranted()` for more details.
+Users can grant and deny access to Notification Policy (DND / Modes) configuration from here. Managed profiles cannot grant Notification Policy access. See isNotificationPolicyAccessGranted for more details.
 
 Input: Nothing.
 
@@ -1518,9 +1518,9 @@ static val ACTION_PROCESS_WIFI_EASY_CONNECT_URI: String
 
 Activity Action: Show setting page to process a Wi-Fi Easy Connect (aka DPP) URI and start configuration. This intent should be used when you want to use this device to take on the configurator role for an IoT/other device. When provided with a valid DPP URI string, Settings will open a Wi-Fi selection screen for the user to indicate which network they would like to configure the device specified in the DPP URI string and carry them through the rest of the flow for provisioning the device.
 
-In some cases, a matching Activity may not exist, so ensure to safeguard against this by checking `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.html#isEasyConnectSupported()`.
+In some cases, a matching Activity may not exist, so ensure to safeguard against this by checking isEasyConnectSupported.
 
-Input: The Intent's data URI specifies bootstrapping information for authenticating and provisioning the peer, and uses a "DPP" scheme. The URI should be attached to the intent using `https://developer.android.com/reference/kotlin/android/content/Intent.html#setData(android.net.Uri)`. The calling app can obtain a DPP URI in any way, e.g. by scanning a QR code or other out-of-band methods. The calling app may also attach the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_EASY_CONNECT_BAND_LIST:kotlin.String` extra to provide information about the bands supported by the enrollee device.
+Input: The Intent's data URI specifies bootstrapping information for authenticating and provisioning the peer, and uses a "DPP" scheme. The URI should be attached to the intent using setData. The calling app can obtain a DPP URI in any way, e.g. by scanning a QR code or other out-of-band methods. The calling app may also attach the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_EASY_CONNECT_BAND_LIST:kotlin.String` extra to provide information about the bands supported by the enrollee device.
 
 Output: After calling android.app.Activity#startActivityForResult, the callback `onActivityResult` will have resultCode `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` if the Wi-Fi Easy Connect configuration succeeded and the user tapped the 'Done' button, or `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` if the operation failed and user tapped the 'Cancel' button. In case the operation has failed, a status code from `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#` `EASY_CONNECT_EVENT_FAILURE_*` will be returned as an Extra `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_EASY_CONNECT_ERROR_CODE:kotlin.String`. Easy Connect R2 Enrollees report additional details about the error they encountered, which will be provided in the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_EASY_CONNECT_ATTEMPTED_SSID:kotlin.String`, `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_EASY_CONNECT_CHANNEL_LIST:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_EASY_CONNECT_BAND_LIST:kotlin.String`.
 
@@ -1610,7 +1610,7 @@ Input: The Intent's data URI must specify the application package name to be sho
 
 Output: Nothing.
 
-You can use `https://developer.android.com/reference/kotlin/android/os/PowerManager.html#isIgnoringBatteryOptimizations(kotlin.String)` to determine if an application is already ignoring optimizations.
+You can use isIgnoringBatteryOptimizations to determine if an application is already ignoring optimizations.
 
  Value: "android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
 
@@ -1670,7 +1670,7 @@ Input: Intent's data URI set with an application package name, using the "packag
 
 Output: `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` if user selected an Autofill Service belonging to the caller package.
 
-**NOTE:** Applications should call `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager.html#hasEnabledAutofillServices()` and `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager.html#isAutofillSupported()`, and only use this action to start an activity if they return `false` and `true` respectively.
+**NOTE:** Applications should call hasEnabledAutofillServices and isAutofillSupported, and only use this action to start an activity if they return `false` and `true` respectively.
 
  Value: "android.settings.REQUEST_SET_AUTOFILL_SERVICE"
 
@@ -1829,7 +1829,7 @@ Input: Nothing.
 
 Output: Nothing.
 
-Applications typically use this action to ask the user to revert the "Do not ask again" status of directory access requests made by `https://developer.android.com/reference/kotlin/android/os/storage/StorageVolume.html#createAccessIntent(kotlin.String)`.
+Applications typically use this action to ask the user to revert the "Do not ask again" status of directory access requests made by createAccessIntent.
 
  Value: "android.settings.STORAGE_VOLUME_ACCESS_SETTINGS"
 
@@ -1964,9 +1964,9 @@ Activity Action: Modify Airplane mode settings using a voice command.
 
 In some cases, a matching Activity may not exist, so ensure you safeguard against this.
 
-This intent MUST be started using `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.html#startVoiceActivity(android.content.Intent)`.
+This intent MUST be started using startVoiceActivity.
 
-Note: The activity implementing this intent MUST verify that `https://developer.android.com/reference/kotlin/android/app/Activity.html#isVoiceInteraction()` returns true before modifying the setting.
+Note: The activity implementing this intent MUST verify that isVoiceInteraction returns true before modifying the setting.
 
 Input: To tell which state airplane mode should be set to, add the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_AIRPLANE_MODE_ENABLED:kotlin.String` extra to this Intent with the state specified. If the extra is not included, no changes will be made.
 
@@ -1986,9 +1986,9 @@ Activity Action: Modify Battery Saver mode setting using a voice command.
 
 In some cases, a matching Activity may not exist, so ensure you safeguard against this.
 
-This intent MUST be started using `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.html#startVoiceActivity(android.content.Intent)`.
+This intent MUST be started using startVoiceActivity.
 
-Note: The activity implementing this intent MUST verify that `https://developer.android.com/reference/kotlin/android/app/Activity.html#isVoiceInteraction()` returns true before modifying the setting.
+Note: The activity implementing this intent MUST verify that isVoiceInteraction returns true before modifying the setting.
 
 Input: To tell which state batter saver mode should be set to, add the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_BATTERY_SAVER_MODE_ENABLED:kotlin.String` extra to this Intent with the state specified. If the extra is not included, no changes will be made.
 
@@ -2008,9 +2008,9 @@ Activity Action: Modify do not disturb mode settings.
 
 In some cases, a matching Activity may not exist, so ensure you safeguard against this.
 
-This intent MUST be started using `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSession.html#startVoiceActivity(android.content.Intent)`.
+This intent MUST be started using startVoiceActivity.
 
-Note: The Activity implementing this intent MUST verify that `https://developer.android.com/reference/kotlin/android/app/Activity.html#isVoiceInteraction()`. returns true before modifying the setting.
+Note: The Activity implementing this intent MUST verify that isVoiceInteraction. returns true before modifying the setting.
 
 Input: The optional `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_DO_NOT_DISTURB_MODE_MINUTES:kotlin.String` extra can be used to indicate how long the user wishes to avoid interruptions for. The optional `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_DO_NOT_DISTURB_MODE_ENABLED:kotlin.String` extra can be to indicate if the user is enabling or disabling do not disturb mode. If either extra is not included, the user maybe asked to provide the value.
 
@@ -2048,7 +2048,7 @@ Activity Action: Show a settings screen to configure application exclusions for 
 
 Invoking this Intent with android.app.Activity#startActivity displays a screen allowing the user to select applications that will be excluded from the calling package's `https://developer.android.com/reference/kotlin/android/net/VpnManager.html#` VPN. Exclusion changes will take effect immediately if the VPN is already running, or the next time the VPN is started.
 
-The presence of this activity is not guaranteed on all devices; accordingly callers should verify `https://developer.android.com/reference/kotlin/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager)` prior to android.app.Activity#startActivity or catch `https://developer.android.com/reference/kotlin/android/content/ActivityNotFoundException.html#`.
+The presence of this activity is not guaranteed on all devices; accordingly callers should verify resolveActivity prior to android.app.Activity#startActivity or catch `https://developer.android.com/reference/kotlin/android/content/ActivityNotFoundException.html#`.
 
 Input: Nothing.
 
@@ -2120,13 +2120,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_WIFI_ADD_NETWORKS: String
 ```
 
-Activity Action: Show setting page to process the addition of Wi-Fi networks to the user's saved network list. The app should send a new intent with an extra that holds a maximum of five `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.html#` that specify credentials for the networks to be added to the user's database. The Intent should be sent via the `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` API.
+Activity Action: Show setting page to process the addition of Wi-Fi networks to the user's saved network list. The app should send a new intent with an extra that holds a maximum of five `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.html#` that specify credentials for the networks to be added to the user's database. The Intent should be sent via the startActivityForResult API.
 
 Note: The app sending the Intent to add the credentials doesn't get any ownership over the newly added network(s). For the Wi-Fi stack, these networks will look like the user manually added them from the Settings UI.
 
 Input: The app should put parcelable array list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion.html#` into the `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_WIFI_NETWORK_LIST:kotlin.String` extra.
 
-Output: After `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)`, the callback `https://developer.android.com/reference/kotlin/android/app/Activity.html#onActivityResult(kotlin.Int,%20kotlin.Int,%20android.content.Intent)` will have a result code `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` to indicate user pressed the save button to save the networks or `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` to indicate that the user rejected the request. Additionally, an integer array list, stored in `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_WIFI_NETWORK_RESULT_LIST:kotlin.String`, will indicate the process result of each network.
+Output: After startActivityForResult, the callback onActivityResult will have a result code `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` to indicate user pressed the save button to save the networks or `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` to indicate that the user rejected the request. Additionally, an integer array list, stored in `https://developer.android.com/reference/kotlin/android/provider/Settings#EXTRA_WIFI_NETWORK_RESULT_LIST:kotlin.String`, will indicate the process result of each network.
 
  Value: "android.settings.WIFI_ADD_NETWORKS"
 
@@ -2366,7 +2366,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CHANNEL_ID: String
 ```
 
-Activity Extra: The `https://developer.android.com/reference/kotlin/android/app/NotificationChannel.html#getId()` of the notification channel settings to display.
+Activity Extra: The getId of the notification channel settings to display.
 
 This must be passed as an extra field to the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_CHANNEL_NOTIFICATION_SETTINGS:kotlin.String`.
 
@@ -2380,9 +2380,9 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CONVERSATION_ID: String
 ```
 
-Activity Extra: The `https://developer.android.com/reference/kotlin/android/app/NotificationChannel.html#getConversationId()` of the notification conversation settings to display.
+Activity Extra: The getConversationId of the notification conversation settings to display.
 
-This is an optional extra field to the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_CHANNEL_NOTIFICATION_SETTINGS:kotlin.String`. If included the system will first look up notification settings by channel and conversation id, and will fall back to channel id if a specialized channel for this conversation doesn't exist, similar to `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#getNotificationChannel(kotlin.String,%20kotlin.String)`.
+This is an optional extra field to the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_CHANNEL_NOTIFICATION_SETTINGS:kotlin.String`. If included the system will first look up notification settings by channel and conversation id, and will fall back to channel id if a specialized channel for this conversation doesn't exist, similar to getNotificationChannel.
 
  Value: "android.provider.extra.CONVERSATION_ID"
 
@@ -2424,9 +2424,9 @@ static val EXTRA_EASY_CONNECT_ATTEMPTED_SSID: String
 
 Activity Extra: The SSID that the Enrollee tried to connect to.
 
-An extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation. This extra contains the SSID of the Access Point that the remote Enrollee tried to connect to. This value is populated only by remote R2 devices, and only for the following error codes: `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK:kotlin.Int` `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_ENROLLEE_AUTHENTICATION:kotlin.Int`. Therefore, always check if this extra is available using `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasExtra(kotlin.String)`. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, then this extra is not attached to the result intent.
+An extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation. This extra contains the SSID of the Access Point that the remote Enrollee tried to connect to. This value is populated only by remote R2 devices, and only for the following error codes: `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK:kotlin.Int` `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_ENROLLEE_AUTHENTICATION:kotlin.Int`. Therefore, always check if this extra is available using hasExtra. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, then this extra is not attached to the result intent.
 
-Use the `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)` to obtain the SSID.
+Use the getStringExtra to obtain the SSID.
 
  Value: "android.provider.extra.EASY_CONNECT_ATTEMPTED_SSID"
 
@@ -2442,11 +2442,11 @@ Activity Extra: The Band List that the Enrollee supports.
 
 This extra contains the bands the Enrollee supports, expressed as the Global Operating Class, see Table E-4 in IEEE Std 802.11-2016 Global operating classes. It is used both as input, to configure the Easy Connect operation and as output of the operation.
 
-As input: an optional extra to be attached to the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String`. If attached, it indicates the bands which the remote device (enrollee, device-to-be-configured) supports. The Settings operation may take this into account when presenting the user with list of networks configurations to be used. The calling app may obtain this information in any out-of-band method. The information should be attached as an array of raw integers - using the `https://developer.android.com/reference/kotlin/android/content/Intent.html#putExtra(kotlin.String,%20kotlin.IntArray)`.
+As input: an optional extra to be attached to the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String`. If attached, it indicates the bands which the remote device (enrollee, device-to-be-configured) supports. The Settings operation may take this into account when presenting the user with list of networks configurations to be used. The calling app may obtain this information in any out-of-band method. The information should be attached as an array of raw integers - using the putExtra.
 
-As output: an extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation . This value is populated only by remote R2 devices, and only for the following error codes: `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_ENROLLEE_AUTHENTICATION:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_ENROLLEE_REJECTED_CONFIGURATION:kotlin.Int`. Therefore, always check if this extra is available using `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasExtra(kotlin.String)`. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` , then this extra is not attached to the result intent.
+As output: an extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation . This value is populated only by remote R2 devices, and only for the following error codes: `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_ENROLLEE_AUTHENTICATION:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_ENROLLEE_REJECTED_CONFIGURATION:kotlin.Int`. Therefore, always check if this extra is available using hasExtra. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` , then this extra is not attached to the result intent.
 
-Use the `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntArrayExtra(kotlin.String)` to obtain the list.
+Use the getIntArrayExtra to obtain the list.
 
  Value: "android.provider.extra.EASY_CONNECT_BAND_LIST"
 
@@ -2460,9 +2460,9 @@ static val EXTRA_EASY_CONNECT_CHANNEL_LIST: String
 
 Activity Extra: The Channel List that the Enrollee used to scan a network.
 
-An extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation. This extra contains the channel list that the Enrollee scanned for a network. This value is populated only by remote R2 devices, and only for the following error code: `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK:kotlin.Int`. Therefore, always check if this extra is available using `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasExtra(kotlin.String)`. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, then this extra is not attached to the result intent. The list is JSON formatted, as an array (Wi-Fi global operating classes) of arrays (Wi-Fi channels).
+An extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation. This extra contains the channel list that the Enrollee scanned for a network. This value is populated only by remote R2 devices, and only for the following error code: `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK:kotlin.Int`. Therefore, always check if this extra is available using hasExtra. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, then this extra is not attached to the result intent. The list is JSON formatted, as an array (Wi-Fi global operating classes) of arrays (Wi-Fi channels).
 
-Use the `https://developer.android.com/reference/kotlin/android/content/Intent.html#getStringExtra(kotlin.String)` to obtain the list.
+Use the getStringExtra to obtain the list.
 
  Value: "android.provider.extra.EASY_CONNECT_CHANNEL_LIST"
 
@@ -2478,7 +2478,7 @@ Activity Extra: The Easy Connect operation error code
 
 An extra returned on the result intent received when using the `https://developer.android.com/reference/kotlin/android/provider/Settings#ACTION_PROCESS_WIFI_EASY_CONNECT_URI:kotlin.String` intent to launch the Easy Connect Operation. This extra contains the integer error code of the operation - one of `https://developer.android.com/reference/kotlin/android/net/wifi/EasyConnectStatusCallback.html#` `EASY_CONNECT_EVENT_FAILURE_*`. If there is no error, i.e. if the operation returns `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int`, then this extra is not attached to the result intent.
 
-Use the `https://developer.android.com/reference/kotlin/android/content/Intent.html#hasExtra(kotlin.String)` to determine whether the extra is attached and `https://developer.android.com/reference/kotlin/android/content/Intent.html#getIntExtra(kotlin.String,%20kotlin.Int)` to obtain the error code data.
+Use the hasExtra to determine whether the extra is attached and getIntExtra to obtain the error code data.
 
  Value: "android.provider.extra.EASY_CONNECT_ERROR_CODE"
 
@@ -2548,7 +2548,7 @@ An int extra specifying a subscription ID.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getSubscriptionId()`
+- getSubscriptionId
 
 ### EXTRA_SUPERVISOR_RESTRICTED_SETTING_KEY
 

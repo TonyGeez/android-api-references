@@ -23,9 +23,9 @@ Enabling this flag will cause all draw operations that support antialiasing to u
 
 Notable draw operations that do **not** support antialiasing include:
 
-- `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawBitmapMesh(android.graphics.Bitmap,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20android.graphics.Paint)`
+- drawBitmapMesh
 - android.graphics.Canvas#drawPatch
-- `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawVertices(android.graphics.Canvas.VertexMode,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Paint)`
+- drawVertices
 
 <br />
 
@@ -139,7 +139,7 @@ If cleared, scaled bitmaps will be drawn with nearest neighbor sampling, likely 
 
 If bitmaps are scaled for device density at creation time (as resource bitmaps often are) the filtering will already have been done.
 
-On devices running `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and below, hardware accelerated drawing always uses bilinear sampling on scaled bitmaps, regardless of this flag. On devices running `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` and above, this flag defaults to being set on a new `Paint`. It can be cleared with `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFlags(kotlin.Int)` or `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFilterBitmap(kotlin.Boolean)`.
+On devices running `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and below, hardware accelerated drawing always uses bilinear sampling on scaled bitmaps, regardless of this flag. On devices running `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int` and above, this flag defaults to being set on a new `Paint`. It can be cleared with setFlags or setFilterBitmap.
 
 <br />
 
@@ -209,7 +209,7 @@ Note that the caller must resolve BiDi runs and reorder them visually and set th
 
 If the run covers entire line, caller should set `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_RIGHT_EDGE:kotlin.Int` as well.
 
-Note that this flag is only effective for run based APIs. For example, this flag works for `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawTextRun(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean,%20android.graphics.Paint)` and `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getRunCharacterAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int)`. However, this doesn't work for `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Paint)` or `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)`. The non-run based APIs works as both `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_LEFT_EDGE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_RIGHT_EDGE:kotlin.Int` are specified.
+Note that this flag is only effective for run based APIs. For example, this flag works for drawTextRun and getRunCharacterAdvance. However, this doesn't work for drawText or measureText. The non-run based APIs works as both `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_LEFT_EDGE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_RIGHT_EDGE:kotlin.Int` are specified.
 
 <br />
 
@@ -223,7 +223,7 @@ Note that the caller must resolve BiDi runs and reorder them visually and set th
 
 If the run covers entire line, caller should set `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_LEFT_EDGE:kotlin.Int` as well.
 
-Note that this flag is only effective for run based APIs. For example, this flag works for `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawTextRun(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean,%20android.graphics.Paint)` and `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getRunCharacterAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int)`. However, this doesn't work for `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Paint)` or `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)`. The non-run based APIs works as both `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_LEFT_EDGE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_RIGHT_EDGE:kotlin.Int` are specified.
+Note that this flag is only effective for run based APIs. For example, this flag works for drawTextRun and getRunCharacterAdvance. However, this doesn't work for drawText or measureText. The non-run based APIs works as both `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_LEFT_EDGE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#TEXT_RUN_FLAG_RIGHT_EDGE:kotlin.Int` are specified.
 
 <br />
 
@@ -237,24 +237,24 @@ Paint flag that applies an underline decoration to drawn text.
 
 A flat that controls text to be written in vertical orientation
 
-This flag is used for telling the underlying text layout engine that the text is for vertical direction. By enabling this flag, text measurement, drawing and shaping APIs works for vertical text layout. For example, `https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#drawText(kotlin.String,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Paint)` draws text from top to bottom. `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.String)` returns vertical advances instead of horizontal advances. `https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper.html#` shapes text vertically and report glyph IDs for vertical layout.
+This flag is used for telling the underlying text layout engine that the text is for vertical direction. By enabling this flag, text measurement, drawing and shaping APIs works for vertical text layout. For example, drawText draws text from top to bottom. measureText returns vertical advances instead of horizontal advances. `https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper.html#` shapes text vertically and report glyph IDs for vertical layout.
 
-Do not set this flag for making `https://developer.android.com/reference/kotlin/android/text/Layout`. The `https://developer.android.com/reference/kotlin/android/text/Layout` class and its subclasses are designed for horizontal text only and does not work for vertical text.
+Do not set this flag for making Layout. The Layout class and its subclasses are designed for horizontal text only and does not work for vertical text.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/TextPaint#TextPaint()()` <br /> |
-| `https://developer.android.com/reference/kotlin/android/text/TextPaint#TextPaint(android.graphics.Paint)(p: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#!)` <br /> |
-| `https://developer.android.com/reference/kotlin/android/text/TextPaint#TextPaint(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
+| TextPaint <br /> |
+| TextPaint <br /> |
+| TextPaint <br /> |
 
 | Public methods ||
 |---|---|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#getUnderlineThickness()()` Returns the thickness of the underline in pixels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/TextPaint#set(android.text.TextPaint)(tp: https://developer.android.com/reference/kotlin/android/text/TextPaint#!)` Copy the fields from tp into this TextPaint, including the fields inherited from Paint. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getUnderlineThickness Returns the thickness of the underline in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Copy the fields from tp into this TextPaint, including the fields inherited from Paint. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#ascent()()`
+Inherited functions From class `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` ascent
 
 Return the distance above (negative) the baseline (ascent) based on the current typeface and text size.
 
@@ -262,31 +262,31 @@ Note that this is the ascent of the main typeface, and actual text rendered may 
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#breakText(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, measuredWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` breakText
 
 Measure the text, stopping early if the measured width exceeds maxWidth. Return the number of chars that were measured, and if measuredWidth is not null, return in it the actual width measured.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#breakText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, measureForwards: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, measuredWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` breakText
 
 Measure the text, stopping early if the measured width exceeds maxWidth. Return the number of chars that were measured, and if measuredWidth is not null, return in it the actual width measured.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#breakText(kotlin.String,%20kotlin.Boolean,%20kotlin.Float,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, measureForwards: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, measuredWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` breakText
 
 Measure the text, stopping early if the measured width exceeds maxWidth. Return the number of chars that were measured, and if measuredWidth is not null, return in it the actual width measured.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#clearShadowLayer()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` clearShadowLayer
 
 Clear the shadow layer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#descent()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` descent
 
 Return the distance below (positive) the baseline (descent) based on the current typeface and text size.
 
@@ -294,73 +294,73 @@ Note that this is the descent of the main typeface, and actual text rendered may
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#equalsForTextMeasurement(android.graphics.Paint)(other: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` equalsForTextMeasurement
 
 Returns true of the passed `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#` will have the same effect on text measurement
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getAlpha()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getAlpha
 
 Helper to getColor() that just returns the color's alpha value. This is the same as calling getColor() \>\>\> 24. It always returns a value between 0 (completely transparent) and 255 (completely opaque).
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getBlendMode()()`
+`https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?` getBlendMode
 
 Get the paint's blend mode object. Will return null if there is a Xfermode applied that cannot be represented by a blend mode (i.e. a custom `RuntimeXfermode`
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getColor()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getColor
 
 Return the paint's color in sRGB. Note that the color is a 32bit value containing alpha as well as r,g,b. This 32bit value is not premultiplied, meaning that its alpha can be any value, regardless of the values of r,g,b. See the Color class for more details.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getColorFilter()()`
+`https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#!` getColorFilter
 
 Get the paint's colorfilter (maybe be null).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getColorLong()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` getColorLong
 
 Return the paint's color. Note that the color is a long with an encoded `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.html#` as well as alpha and r,g,b. These values are not premultiplied, meaning that alpha can be any value, regardless of the values of r,g,b. See the `https://developer.android.com/reference/kotlin/android/graphics/Color.html#` class for more details.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getEndHyphenEdit()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getEndHyphenEdit
 
 Get the current value of end hyphen edit. The default value is 0 which is equivalent to `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#END_HYPHEN_EDIT_NO_EDIT:kotlin.Int`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFillPath(android.graphics.Path,%20android.graphics.Path)(src: https://developer.android.com/reference/kotlin/android/graphics/Path.html#!, dst: https://developer.android.com/reference/kotlin/android/graphics/Path.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getFillPath
 
 Applies any/all effects (patheffect, stroking) to src, returning the result in dst. The result is that drawing src with this paint will be the same as drawing dst with a default paint (at least from the geometric perspective).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFlags()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getFlags
 
 Return the paint's flags. Use the Flag enum to test flag values.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontFeatureSettings()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` getFontFeatureSettings
 
 Returns the font feature settings. The format is the same as the CSS font-feature-settings attribute: <https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop>
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetrics()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#!` getFontMetrics
 
 Allocates a new FontMetrics object, and then calls getFontMetrics(fm) with it, returning the object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetrics(android.graphics.Paint.FontMetrics)(metrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getFontMetrics
 
 Return the font's recommended interline spacing, given the Paint's settings for typeface, textSize, etc. If metrics is not null, return the fontmetric values in it.
 
@@ -368,17 +368,17 @@ Note that these are the values for the main typeface, and actual text rendered m
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetricsForLocale(android.graphics.Paint.FontMetrics)(metrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetrics.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getFontMetricsForLocale
 
-Get the font metrics used for the locale Obtain the metrics of the font that is used for the specified locale by `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)`. If multiple locales are specified, the minimum ascent and maximum descent will be set. This API is useful for determining the default line height of the empty text field, e.g. `https://developer.android.com/reference/kotlin/android/widget/EditText.html#`. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is created from the custom font files, its metrics are reserved, i.e. the ascent will be the custom font's ascent or smaller, the descent will be the custom font's descent or larger. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is a system fallback, e.g. `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#SERIF:android.graphics.Typeface`, the default font's metrics are reserved, i.e. the ascent will be the serif font's ascent or smaller, the descent will be the serif font's descent or larger.
-
-<br />
-
-`https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetricsInt()()`
+Get the font metrics used for the locale Obtain the metrics of the font that is used for the specified locale by setTextLocales. If multiple locales are specified, the minimum ascent and maximum descent will be set. This API is useful for determining the default line height of the empty text field, e.g. `https://developer.android.com/reference/kotlin/android/widget/EditText.html#`. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is created from the custom font files, its metrics are reserved, i.e. the ascent will be the custom font's ascent or smaller, the descent will be the custom font's descent or larger. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is a system fallback, e.g. `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#SERIF:android.graphics.Typeface`, the default font's metrics are reserved, i.e. the ascent will be the serif font's ascent or smaller, the descent will be the serif font's descent or larger.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetricsInt(android.graphics.Paint.FontMetricsInt)(fmi: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#!` getFontMetricsInt
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getFontMetricsInt
 
 Return the font's interline spacing, given the Paint's settings for typeface, textSize, etc. If metrics is not null, return the fontmetric values in it. Note: all values have been converted to integers from floats, in such a way has to make the answers useful for both spacing and clipping. If you want more control over the rounding, call getFontMetrics().
 
@@ -386,25 +386,25 @@ Note that these are the values for the main typeface, and actual text rendered m
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetricsInt(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.graphics.Paint.FontMetricsInt)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, outMetrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getFontMetricsInt
 
 Returns the font metrics value for the given text. If the text is rendered with multiple font files, this function returns the large ascent and descent that are enough for drawing all font files. The context range is used for shaping context. Some script, e.g. Arabic or Devanagari, changes letter shape based on its location or surrounding characters.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetricsInt(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20android.graphics.Paint.FontMetricsInt)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, outMetrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getFontMetricsInt
 
 Returns the font metrics value for the given text. If the text is rendered with multiple font files, this function returns the large ascent and descent that are enough for drawing all font files. The context range is used for shaping context. Some script, e.g. Arabic or Devanagari, changes letter shape based on its location or surrounding characters.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontMetricsIntForLocale(android.graphics.Paint.FontMetricsInt)(metrics: https://developer.android.com/reference/kotlin/android/graphics/Paint.FontMetricsInt.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getFontMetricsIntForLocale
 
-Get the font metrics used for the locale Obtain the metrics of the font that is used for the specified locale by `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)`. If multiple locales are specified, the minimum ascent and maximum descent will be set. This API is useful for determining the default line height of the empty text field, e.g. `https://developer.android.com/reference/kotlin/android/widget/EditText.html#`. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is created from the custom font files, its metrics are reserved, i.e. the ascent will be the custom font's ascent or smaller, the descent will be the custom font's descent or larger. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is a system fallback, e.g. `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#SERIF:android.graphics.Typeface`, the default font's metrics are reserved, i.e. the ascent will be the serif font's ascent or smaller, the descent will be the serif font's descent or larger.
+Get the font metrics used for the locale Obtain the metrics of the font that is used for the specified locale by setTextLocales. If multiple locales are specified, the minimum ascent and maximum descent will be set. This API is useful for determining the default line height of the empty text field, e.g. `https://developer.android.com/reference/kotlin/android/widget/EditText.html#`. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is created from the custom font files, its metrics are reserved, i.e. the ascent will be the custom font's ascent or smaller, the descent will be the custom font's descent or larger. Note, if the `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#` is a system fallback, e.g. `https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#SERIF:android.graphics.Typeface`, the default font's metrics are reserved, i.e. the ascent will be the serif font's ascent or smaller, the descent will be the serif font's descent or larger.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontSpacing()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getFontSpacing
 
 Return the recommend line spacing based on the current typeface and text size.
 
@@ -412,37 +412,37 @@ Note that this is the value for the main typeface, and actual text rendered may 
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontVariationOverride()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getFontVariationOverride
 
 Gets the current font variation override value.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getFontVariationSettings()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` getFontVariationSettings
 
 Returns the font variation settings.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getHinting()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getHinting
 
 Return the paint's hinting mode. Returns either `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#HINTING_OFF:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#HINTING_ON:kotlin.Int`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getLetterSpacing()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getLetterSpacing
 
 Return the paint's letter-spacing for text. The default value is 0.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getMaskFilter()()`
+`https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#!` getMaskFilter
 
 Get the paint's maskfilter object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getOffsetForAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, advance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getOffsetForAdvance
 
 Get the character offset within the string whose position is closest to the specified horizontal position.
 
@@ -454,17 +454,17 @@ All indices are relative to the start of `text`. Further, `0 <= contextStart <= 
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getOffsetForAdvance(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Float)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, advance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getOffsetForAdvance
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/PathEffect.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getPathEffect()()`
+`https://developer.android.com/reference/kotlin/android/graphics/PathEffect.html#!` getPathEffect
 
 Get the paint's patheffect object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getRunAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getRunAdvance
 
 Measure cursor position within a run of text.
 
@@ -482,95 +482,95 @@ All indices are relative to the start of `text`. Further, `0 <= contextStart <= 
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getRunAdvance(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getRunAdvance
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getRunCharacterAdvance(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, advances: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, advancesIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getRunCharacterAdvance
 
 Measure the advance of each character within a run of text and also return the cursor position within the run.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getRunCharacterAdvance(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.FloatArray,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, advances: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, advancesIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getRunCharacterAdvance
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Shader.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getShader()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Shader.html#!` getShader
 
 Get the paint's shader object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getShadowLayerColor()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getShadowLayerColor
 
 Returns the color of the shadow layer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getShadowLayerColorLong()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` getShadowLayerColorLong
 
 Returns the color of the shadow layer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getShadowLayerDx()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getShadowLayerDx
 
 Returns the x offset of the shadow layer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getShadowLayerDy()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getShadowLayerDy
 
 Returns the y offset of the shadow layer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getShadowLayerRadius()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getShadowLayerRadius
 
 Returns the blur radius of the shadow layer.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStartHyphenEdit()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getStartHyphenEdit
 
 Get the current value of start hyphen edit. The default value is 0 which is equivalent to `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#START_HYPHEN_EDIT_NO_EDIT:kotlin.Int`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStrikeThruPosition()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getStrikeThruPosition
 
 Distance from top of the strike-through line to the baseline in pixels. The result is negative for positions that are above the baseline. This method returns where the strike-through line should be drawn independent of if the `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#STRIKE_THRU_TEXT_FLAG:kotlin.Int` bit is set. 
 The units of this value are pixels.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStrikeThruThickness()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getStrikeThruThickness
 
 Returns the thickness of the strike-through line in pixels. 
 The units of this value are pixels.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Paint.Cap.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStrokeCap()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Paint.Cap.html#!` getStrokeCap
 
 Return the paint's Cap, controlling how the start and end of stroked lines and paths are treated.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Paint.Join.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStrokeJoin()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Paint.Join.html#!` getStrokeJoin
 
 Return the paint's stroke join type.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStrokeMiter()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getStrokeMiter
 
 Return the paint's stroke miter value. Used to control the behavior of miter joins when the joins angle is sharp.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStrokeWidth()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getStrokeWidth
 
 Return the width for stroking.
 
@@ -580,61 +580,61 @@ A value of 0 strokes in hairline mode. Hairlines always draws a single pixel ind
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Paint.Style.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getStyle()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Paint.Style.html#!` getStyle
 
 Return the paint's style, used for controlling how primitives' geometries are interpreted (except for drawBitmap, which always assumes FILL_STYLE).
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Paint.Align.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextAlign()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Paint.Align.html#!` getTextAlign
 
 Return the paint's Align value for drawing text. This controls how the text is positioned relative to its origin. LEFT align means that all of the text will be drawn to the right of its origin (i.e. the origin specifies the LEFT edge of the text) and so on.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextBounds(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getTextBounds
 
 Return in bounds (allocated by the caller) the smallest rectangle that encloses all of the characters, with an implied origin at (0,0).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextBounds(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getTextBounds
 
-Retrieve the text boundary box and store to bounds. Return in bounds (allocated by the caller) the smallest rectangle that encloses all of the characters, with an implied origin at (0,0). Note that styles are ignored even if you pass `https://developer.android.com/reference/kotlin/android/text/Spanned` instance. Use `https://developer.android.com/reference/kotlin/android/text/StaticLayout` for measuring bounds of `https://developer.android.com/reference/kotlin/android/text/Spanned`.
+Retrieve the text boundary box and store to bounds. Return in bounds (allocated by the caller) the smallest rectangle that encloses all of the characters, with an implied origin at (0,0). Note that styles are ignored even if you pass Spanned instance. Use StaticLayout for measuring bounds of Spanned.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextBounds(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20android.graphics.Rect)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getTextBounds
 
 Retrieve the text boundary box and store to bounds. Return in bounds (allocated by the caller) the smallest rectangle that encloses all of the characters, with an implied origin at (0,0).
 
 <br />
 
-`https://developer.android.com/reference/kotlin/java/util/Locale.html#` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextLocale()()`
+`https://developer.android.com/reference/kotlin/java/util/Locale.html#` getTextLocale
 
-Get the text's primary Locale. Note that this is not all of the locale-related information Paint has. Use `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextLocales()` to get the complete list.
+Get the text's primary Locale. Note that this is not all of the locale-related information Paint has. Use getTextLocales to get the complete list.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextLocales()()`
+`https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` getTextLocales
 
 Get the text locale list.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextPath(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, path: https://developer.android.com/reference/kotlin/android/graphics/Path.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getTextPath
 
 Return the path (outline) for the specified text. Note: just like Canvas.drawText, this will respect the Align setting in the paint.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextPath(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20android.graphics.Path)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, path: https://developer.android.com/reference/kotlin/android/graphics/Path.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` getTextPath
 
 Return the path (outline) for the specified text. Note: just like Canvas.drawText, this will respect the Align setting in the paint.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextRunAdvances(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.FloatArray,%20kotlin.Int)(chars: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, advances: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html?, advancesIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getTextRunAdvances
 
 Retrieve the character advances of the text. Returns the total advance width for the characters in the run from `index` for `count` of chars, and if `advances` is not null, the advance assigned to each of these characters (java chars).
 
@@ -648,7 +648,7 @@ The shaping bounds limit the amount of context available outside start and end t
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextRunCursor(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cursorOpt: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTextRunCursor
 
 Returns the next cursor position in the run. This avoids placing the cursor between surrogates, between characters that form conjuncts, between base characters and combining marks, or within a reordering cluster.
 
@@ -658,7 +658,7 @@ If cursorOpt is `https://developer.android.com/reference/kotlin/android/graphics
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextRunCursor(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, contextStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, contextEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isRtl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cursorOpt: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTextRunCursor
 
 Returns the next cursor position in the run. This avoids placing the cursor between surrogates, between characters that form conjuncts, between base characters and combining marks, or within a reordering cluster.
 
@@ -668,49 +668,49 @@ If cursorOpt is `https://developer.android.com/reference/kotlin/android/graphics
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextScaleX()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getTextScaleX
 
 Return the paint's horizontal scale factor for text. The default value is 1.0.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextSize()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getTextSize
 
 Return the paint's text size.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextSkewX()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getTextSkewX
 
 Return the paint's horizontal skew factor for text. The default value is 0.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextWidths(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTextWidths
 
 Return the advance widths for the characters in the string.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextWidths(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTextWidths
 
 Return the advance widths for the characters in the string.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextWidths(kotlin.String,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, widths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTextWidths
 
 Return the advance widths for the characters in the string.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTextWidths(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.FloatArray)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, widths: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getTextWidths
 
 Return the advance widths for the characters in the string.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getTypeface()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#!` getTypeface
 
 Get the paint's typeface object.
 
@@ -720,27 +720,27 @@ The typeface object identifies which font to use when drawing or measuring text.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getUnderlinePosition()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getUnderlinePosition
 
 Returns the distance from top of the underline to the baseline in pixels. The result is positive for positions that are below the baseline. This method returns where the underline should be drawn independent of if the `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#UNDERLINE_TEXT_FLAG:kotlin.Int` bit is set. 
 The units of this value are pixels.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getWordSpacing()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` getWordSpacing
 
 Return the paint's extra word-spacing for text. The default value is 0. 
 The units of this value are pixels.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Xfermode.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#getXfermode()()`
+`https://developer.android.com/reference/kotlin/android/graphics/Xfermode.html#!` getXfermode
 
 Get the paint's transfer mode object.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#hasGlyph(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` hasGlyph
 
 Determine whether the typeface set on the paint has a glyph supporting the string. The simplest case is when the string contains a single character, in which this method determines whether the font has the character. In the case of multiple characters, the method returns true if there is a single glyph representing the ligature. For example, if the input is a pair of regional indicator symbols, determine whether there is an emoji flag for the pair.
 
@@ -750,115 +750,115 @@ Checking is done on the entire fallback chain, not just the immediate font refer
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isAntiAlias()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isAntiAlias
 
 Helper for getFlags(), returning true if ANTI_ALIAS_FLAG bit is set AntiAliasing smooths out the edges of what is being drawn, but is has no impact on the interior of the shape. See setDither() and setFilterBitmap() to affect how colors are treated.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isDither()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isDither
 
 Helper for getFlags(), returning true if DITHER_FLAG bit is set Dithering affects how colors that are higher precision than the device are down-sampled. No dithering is generally faster, but higher precision colors are just truncated down (e.g. 8888 -\> 565). Dithering tries to distribute the error inherent in this process, to reduce the visual artifacts.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isElegantTextHeight()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isElegantTextHeight
 
 Get the elegant metrics flag. Note: For applications target API 35 or later, this function returns true by default. For applications target API 36 or later, the function call will be ignored and the elegant text height is always enabled.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isFakeBoldText()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isFakeBoldText
 
 Helper for getFlags(), returning true if FAKE_BOLD_TEXT_FLAG bit is set
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isFilterBitmap()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isFilterBitmap
 
 Whether or not the bitmap filter is activated. Filtering affects the sampling of bitmaps when they are transformed. Filtering does not affect how the colors in the bitmap are converted into device pixels. That is dependent on dithering and xfermodes.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isLinearText()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isLinearText
 
 Helper for getFlags(), returning true if LINEAR_TEXT_FLAG bit is set
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isStrikeThruText()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isStrikeThruText
 
 Helper for getFlags(), returning true if STRIKE_THRU_TEXT_FLAG bit is set
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isSubpixelText()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isSubpixelText
 
 Helper for getFlags(), returning true if SUBPIXEL_TEXT_FLAG bit is set
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#isUnderlineText()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isUnderlineText
 
 Helper for getFlags(), returning true if UNDERLINE_TEXT_FLAG bit is set
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, count: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` measureText
 
 Return the width of the text.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` measureText
 
 Return the width of the text.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` measureText
 
 Return the width of the text.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#measureText(kotlin.String,%20kotlin.Int,%20kotlin.Int)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` measureText
 
 Return the width of the text.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#reset()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` reset
 
 Restores the paint to its default settings.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#set(android.graphics.Paint)(src: https://developer.android.com/reference/kotlin/android/graphics/Paint.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` set
 
 Copy the fields from src into this paint. This is equivalent to calling get() on all of the src fields, and calling the corresponding set() methods on this.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setARGB(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setARGB
 
 Helper to setColor(), that takes a,r,g,b and constructs the color int
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setAlpha(kotlin.Int)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setAlpha
 
 Helper to setColor(), that only assigns the color's alpha value, leaving its r,g,b values unchanged. Results are undefined if the alpha value is outside of the range \[0..255\]
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setAntiAlias(kotlin.Boolean)(aa: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setAntiAlias
 
 Helper for setFlags(), setting or clearing the ANTI_ALIAS_FLAG bit AntiAliasing smooths out the edges of what is being drawn, but is has no impact on the interior of the shape. See setDither() and setFilterBitmap() to affect how colors are treated.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setBlendMode(android.graphics.BlendMode)(blendmode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode.html#?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setBlendMode
 
 Set or clear the blend mode. A blend mode defines how source pixels (generated by a drawing command) are composited with the destination pixels (content of the render target).
 
@@ -870,31 +870,31 @@ Pass null to clear any previous blend mode.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setColor(kotlin.Int)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setColor
 
 Set the paint's color. Note that the color is an int containing alpha as well as r,g,b. This 32bit value is not premultiplied, meaning that its alpha can be any value, regardless of the values of r,g,b. See the Color class for more details.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setColor(kotlin.Long)(color: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setColor
 
 Set the paint's color with a `ColorLong`. Note that the color is a long with an encoded `https://developer.android.com/reference/kotlin/android/graphics/ColorSpace.html#` as well as alpha and r,g,b. These values are not premultiplied, meaning that alpha can be any value, regardless of the values of r,g,b. See the `https://developer.android.com/reference/kotlin/android/graphics/Color.html#` class for more details.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setColorFilter(android.graphics.ColorFilter)(filter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/ColorFilter.html#!` setColorFilter
 
 Set or clear the paint's colorfilter, returning the parameter.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setDither(kotlin.Boolean)(dither: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setDither
 
 Helper for setFlags(), setting or clearing the DITHER_FLAG bit Dithering affects how colors that are higher precision than the device are down-sampled. No dithering is generally faster, but higher precision colors are just truncated down (e.g. 8888 -\> 565). Dithering tries to distribute the error inherent in this process, to reduce the visual artifacts.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setElegantTextHeight(kotlin.Boolean)(elegant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setElegantTextHeight
 
 Set the paint's elegant height metrics flag. This setting selects font variants that have not been compacted to fit Latin-based vertical metrics, and also increases top and bottom bounds to provide more space.
 
@@ -902,7 +902,7 @@ Note: For applications target API 35 or later, the default value will be true by
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setEndHyphenEdit(kotlin.Int)(endHyphen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setEndHyphenEdit
 
 Set a end hyphen edit on the paint. By setting end hyphen edit, the measurement and drawing is performed with modifying hyphenation at the end of line. For example, by passing `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#END_HYPHEN_EDIT_INSERT_HYPHEN:kotlin.Int` like as follows, HYPHEN(U+2010) character is appended at the end of line.
 
@@ -920,37 +920,37 @@ The default value is 0 which is equivalent to `https://developer.android.com/ref
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFakeBoldText(kotlin.Boolean)(fakeBoldText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setFakeBoldText
 
 Helper for setFlags(), setting or clearing the FAKE_BOLD_TEXT_FLAG bit
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFilterBitmap(kotlin.Boolean)(filter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setFilterBitmap
 
 Helper for setFlags(), setting or clearing the FILTER_BITMAP_FLAG bit. Filtering affects the sampling of bitmaps when they are transformed. Filtering does not affect how the colors in the bitmap are converted into device pixels. That is dependent on dithering and xfermodes.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFlags(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setFlags
 
 Set the paint's flags. Use the Flag enum to specific flag values.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFontFeatureSettings(kotlin.String)(settings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setFontFeatureSettings
 
 Set font feature settings. The format is the same as the CSS font-feature-settings attribute: <https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop>
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFontVariationOverride(kotlin.String)(fontVariationOverride: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setFontVariationOverride
 
-Sets TrueType or OpenType font variation settings for overriding. The settings string is constructed from multiple pairs of axis tag and style values. The axis tag must contain four ASCII characters and must be wrapped with single quotes (U+0027) or double quotes (U+0022). Axis strings that are longer or shorter than four characters, or contain characters outside of U+0020..U+007E are invalid. If invalid font variation settings is provided, this method does nothing and returning false with printing error message to the logcat. Different from `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFontVariationSettings(kotlin.String)`, this overrides the font variation settings which is already assigned to the font instance. For example, if the underlying font is configured as `'wght' 500, 'ital' 1`, and if the override is specified as ``'wght' 700, `wdth` 150``, then the effective font variation setting is `` `wght' 700, 'ital' 1, 'wdth' 150 ``. The \`wght\` value is updated by override, 'ital' value is preserved because no overrides, and \`wdth\` value is added by override. If the font variation override is empty or null, nothing overrides and original font variation settings assigned to the font instance is used as it is.
+Sets TrueType or OpenType font variation settings for overriding. The settings string is constructed from multiple pairs of axis tag and style values. The axis tag must contain four ASCII characters and must be wrapped with single quotes (U+0027) or double quotes (U+0022). Axis strings that are longer or shorter than four characters, or contain characters outside of U+0020..U+007E are invalid. If invalid font variation settings is provided, this method does nothing and returning false with printing error message to the logcat. Different from setFontVariationSettings, this overrides the font variation settings which is already assigned to the font instance. For example, if the underlying font is configured as `'wght' 500, 'ital' 1`, and if the override is specified as ``'wght' 700, `wdth` 150``, then the effective font variation setting is `` `wght' 700, 'ital' 1, 'wdth' 150 ``. The \`wght\` value is updated by override, 'ital' value is preserved because no overrides, and \`wdth\` value is added by override. If the font variation override is empty or null, nothing overrides and original font variation settings assigned to the font instance is used as it is.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setFontVariationSettings(kotlin.String)(fontVariationSettings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` setFontVariationSettings
 
 Sets TrueType or OpenType font variation settings. The settings string is constructed from multiple pairs of axis tag and style values. The axis tag must contain four ASCII characters and must be wrapped with single quotes (U+0027) or double quotes (U+0022). Axis strings that are longer or shorter than four characters, or contain characters outside of U+0020..U+007E are invalid. If a specified axis name is not defined in the font, the settings will be ignored. Examples,
 
@@ -975,25 +975,25 @@ Sets TrueType or OpenType font variation settings. The settings string is constr
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setHinting(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setHinting
 
 Set the paint's hinting mode. May be either `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#HINTING_OFF:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#HINTING_ON:kotlin.Int`.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setLetterSpacing(kotlin.Float)(letterSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setLetterSpacing
 
 Set the paint's letter-spacing for text. The default value is 0. The value is in 'EM' units. Typical values for slight expansion will be around 0.05. Negative values tighten text.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setLinearText(kotlin.Boolean)(linearText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setLinearText
 
 Helper for setFlags(), setting or clearing the LINEAR_TEXT_FLAG bit
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setMaskFilter(android.graphics.MaskFilter)(maskfilter: https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/MaskFilter.html#!` setMaskFilter
 
 Set or clear the maskfilter object.
 
@@ -1003,7 +1003,7 @@ Pass null to clear any previous maskfilter. As a convenience, the parameter pass
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/PathEffect.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setPathEffect(android.graphics.PathEffect)(effect: https://developer.android.com/reference/kotlin/android/graphics/PathEffect.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/PathEffect.html#!` setPathEffect
 
 Set or clear the patheffect object.
 
@@ -1013,7 +1013,7 @@ Pass null to clear any previous patheffect. As a convenience, the parameter pass
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Shader.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setShader(android.graphics.Shader)(shader: https://developer.android.com/reference/kotlin/android/graphics/Shader.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/Shader.html#!` setShader
 
 Set or clear the shader object.
 
@@ -1023,7 +1023,7 @@ Pass null to clear any previous shader. As a convenience, the parameter passed i
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setShadowLayer(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Int)(radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, shadowColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setShadowLayer
 
 This draws a shadow layer below the main layer, with the specified offset and color, and blur radius. If radius is 0, then the shadow layer is removed.
 
@@ -1033,7 +1033,7 @@ The alpha of the shadow will be the paint's alpha if the shadow color is opaque,
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setShadowLayer(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Long)(radius: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, dy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, shadowColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setShadowLayer
 
 This draws a shadow layer below the main layer, with the specified offset and color, and blur radius. If radius is 0, then the shadow layer is removed.
 
@@ -1043,7 +1043,7 @@ The alpha of the shadow will be the paint's alpha if the shadow color is opaque,
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStartHyphenEdit(kotlin.Int)(startHyphen: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStartHyphenEdit
 
 Set a start hyphen edit on the paint. By setting start hyphen edit, the measurement and drawing is performed with modifying hyphenation at the start of line. For example, by passing `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#START_HYPHEN_EDIT_INSERT_HYPHEN:kotlin.Int` like as follows, HYPHEN(U+2010) character is appended at the start of line.
 
@@ -1061,85 +1061,85 @@ The default value is 0 which is equivalent to `https://developer.android.com/ref
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStrikeThruText(kotlin.Boolean)(strikeThruText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStrikeThruText
 
 Helper for setFlags(), setting or clearing the STRIKE_THRU_TEXT_FLAG bit
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStrokeCap(android.graphics.Paint.Cap)(cap: https://developer.android.com/reference/kotlin/android/graphics/Paint.Cap.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStrokeCap
 
 Set the paint's Cap.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStrokeJoin(android.graphics.Paint.Join)(join: https://developer.android.com/reference/kotlin/android/graphics/Paint.Join.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStrokeJoin
 
 Set the paint's Join.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStrokeMiter(kotlin.Float)(miter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStrokeMiter
 
 Set the paint's stroke miter value. This is used to control the behavior of miter joins when the joins angle is sharp. This value must be \>= 0.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStrokeWidth(kotlin.Float)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStrokeWidth
 
 Set the width for stroking. Pass 0 to stroke in hairline mode. Hairlines always draws a single pixel independent of the canvas's matrix.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setStyle(android.graphics.Paint.Style)(style: https://developer.android.com/reference/kotlin/android/graphics/Paint.Style.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setStyle
 
 Set the paint's style, used for controlling how primitives' geometries are interpreted (except for drawBitmap, which always assumes Fill).
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setSubpixelText(kotlin.Boolean)(subpixelText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setSubpixelText
 
 Helper for setFlags(), setting or clearing the SUBPIXEL_TEXT_FLAG bit
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextAlign(android.graphics.Paint.Align)(align: https://developer.android.com/reference/kotlin/android/graphics/Paint.Align.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTextAlign
 
 Set the paint's text alignment. This controls how the text is positioned relative to its origin. LEFT align means that all of the text will be drawn to the right of its origin (i.e. the origin specifies the LEFT edge of the text) and so on.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextLocale(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTextLocale
 
-Set the text locale list to a one-member list consisting of just the locale. See `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)` for how the locale list affects the way the text is drawn for some languages.
+Set the text locale list to a one-member list consisting of just the locale. See setTextLocales for how the locale list affects the way the text is drawn for some languages.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextLocales(android.os.LocaleList)(locales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTextLocales
 
 Set the text locale list. The text locale list affects how the text is drawn for some languages. For example, if the locale list contains `https://developer.android.com/reference/kotlin/java/util/Locale.html#CHINESE:java.util.Locale` or `https://developer.android.com/reference/kotlin/java/util/Locale.html#CHINA:java.util.Locale`, then the text renderer will prefer to draw text using a Chinese font. Likewise, if the locale list contains `https://developer.android.com/reference/kotlin/java/util/Locale.html#JAPANESE:java.util.Locale` or `https://developer.android.com/reference/kotlin/java/util/Locale.html#JAPAN:java.util.Locale`, then the text renderer will prefer to draw text using a Japanese font. If the locale list contains both, the order those locales appear in the list is considered for deciding the font. This distinction is important because Chinese and Japanese text both use many of the same Unicode code points but their appearance is subtly different for each language. By default, the text locale list is initialized to a one-member list just containing the system locales. This assumes that the text to be rendered will most likely be in the user's preferred language. If the actual language or languages of the text is/are known, then they can be provided to the text renderer using this method. The text renderer may attempt to guess the language script based on the contents of the text to be drawn independent of the text locale here. Specifying the text locales just helps it do a better job in certain ambiguous cases.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextScaleX(kotlin.Float)(scaleX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTextScaleX
 
 Set the paint's horizontal scale factor for text. The default value is 1.0. Values \> 1.0 will stretch the text wider. Values \< 1.0 will stretch the text narrower.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextSize(kotlin.Float)(textSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTextSize
 
 Set the paint's text size. This value must be \> 0
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTextSkewX(kotlin.Float)(skewX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setTextSkewX
 
 Set the paint's horizontal skew factor for text. The default value is 0. For approximating oblique text, use values around -0.25.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setTypeface(android.graphics.Typeface)(typeface: https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/Typeface.html#!` setTypeface
 
 Set or clear the typeface object.
 
@@ -1149,19 +1149,19 @@ Pass null to clear any previous typeface. As a convenience, the parameter passed
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setUnderlineText(kotlin.Boolean)(underlineText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setUnderlineText
 
 Helper for setFlags(), setting or clearing the UNDERLINE_TEXT_FLAG bit
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setWordSpacing(kotlin.Float)(wordSpacing: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setWordSpacing
 
 Set the paint's extra word-spacing for text. Increases the white space width between words with the given amount of pixels. The default value is 0.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/graphics/Xfermode.html#!` `https://developer.android.com/reference/kotlin/android/graphics/Paint.html#setXfermode(android.graphics.Xfermode)(xfermode: https://developer.android.com/reference/kotlin/android/graphics/Xfermode.html#!)`
+`https://developer.android.com/reference/kotlin/android/graphics/Xfermode.html#!` setXfermode
 
 Set or clear the transfer mode object. A transfer mode defines how source pixels (generate by a drawing command) are composited with the destination pixels (content of the render target).
 

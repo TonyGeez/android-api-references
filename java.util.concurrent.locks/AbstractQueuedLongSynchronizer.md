@@ -11,72 +11,72 @@ abstract class AbstractQueuedLongSynchronizer : AbstractOwnableSynchronizer, S
 | ↳ | [java.util.concurrent.locks.AbstractOwnableSynchronizer](AbstractOwnableSynchronizer.md) ||
 | | ↳ | [java.util.concurrent.locks.AbstractQueuedLongSynchronizer](AbstractQueuedLongSynchronizer.md) |
 
-A version of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` in which synchronization state is maintained as a `long`. This class has exactly the same structure, properties, and methods as `AbstractQueuedSynchronizer` with the exception that all state-related parameters and results are defined as `long` rather than `int`. This class may be useful when creating synchronizers such as multilevel locks and barriers that require 64 bits of state.
+A version of AbstractQueuedSynchronizer in which synchronization state is maintained as a `long`. This class has exactly the same structure, properties, and methods as `AbstractQueuedSynchronizer` with the exception that all state-related parameters and results are defined as `long` rather than `int`. This class may be useful when creating synchronizers such as multilevel locks and barriers that require 64 bits of state.
 
-See `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedSynchronizer` for usage notes and examples.
+See AbstractQueuedSynchronizer for usage notes and examples.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| open | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject` Condition implementation for a `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#` serving as the basis of a `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock` implementation. |
+| open | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject` Condition implementation for a AbstractQueuedLongSynchronizer serving as the basis of a Lock implementation. |
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#AbstractQueuedLongSynchronizer()()` Constructor for subclasses to call. |
+| AbstractQueuedLongSynchronizer Constructor for subclasses to call. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#acquire(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Acquires in exclusive mode, ignoring interrupts. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#acquireInterruptibly(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Acquires in exclusive mode, aborting if interrupted. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#acquireShared(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Acquires in shared mode, ignoring interrupts. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acquire Acquires in exclusive mode, ignoring interrupts. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acquireInterruptibly Acquires in exclusive mode, aborting if interrupted. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acquireShared Acquires in shared mode, ignoring interrupts. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#acquireSharedInterruptibly(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Acquires in shared mode, aborting if interrupted. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getExclusiveQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in exclusive mode. |
-| [Thread](../java.lang/Thread.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getFirstQueuedThread()()` Returns the first (longest-waiting) thread in the queue, or `null` if no threads are currently queued. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | acquireSharedInterruptibly Acquires in shared mode, aborting if interrupted. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | getExclusiveQueuedThreads Returns a collection containing threads that may be waiting to acquire in exclusive mode. |
+| [Thread](../java.lang/Thread.md)! | getFirstQueuedThread Returns the first (longest-waiting) thread in the queue, or `null` if no threads are currently queued. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueueLength()()` Returns an estimate of the number of threads waiting to acquire. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getSharedQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire in shared mode. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getQueueLength Returns an estimate of the number of threads waiting to acquire. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | getQueuedThreads Returns a collection containing threads that may be waiting to acquire. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | getSharedQueuedThreads Returns a collection containing threads that may be waiting to acquire in shared mode. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#hasContended()()` Queries whether any threads have ever contended to acquire this synchronizer; that is, if an acquire method has ever blocked. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWaitQueueLength Returns an estimate of the number of threads waiting on the given condition associated with this synchronizer. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | getWaitingThreads Returns a collection containing those threads that may be waiting on the given condition associated with this synchronizer. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasContended Queries whether any threads have ever contended to acquire this synchronizer; that is, if an acquire method has ever blocked. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#hasQueuedPredecessors()()` Queries whether any threads have been waiting to acquire longer than the current thread. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#hasQueuedThreads()()` Queries whether any threads are waiting to acquire. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#hasWaiters(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Queries whether any threads are waiting on the given condition associated with this synchronizer. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasQueuedPredecessors Queries whether any threads have been waiting to acquire longer than the current thread. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasQueuedThreads Queries whether any threads are waiting to acquire. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasWaiters Queries whether any threads are waiting on the given condition associated with this synchronizer. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#isQueued(java.lang.Thread)(thread: https://developer.android.com/reference/kotlin/java/lang/Thread.html#!)` Returns true if the given thread is currently queued. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#owns(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)(condition: https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject!)` Queries whether the given ConditionObject uses this synchronizer as its lock. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#release(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Releases in exclusive mode. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isQueued Returns true if the given thread is currently queued. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | owns Queries whether the given ConditionObject uses this synchronizer as its lock. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | release Releases in exclusive mode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#releaseShared(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Releases in shared mode. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#toString()()` Returns a string identifying this synchronizer, as well as its state. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireNanos(kotlin.Long,%20kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanosTimeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Attempts to acquire in exclusive mode, aborting if interrupted, and failing if the given timeout elapses. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | releaseShared Releases in shared mode. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string identifying this synchronizer, as well as its state. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | tryAcquireNanos Attempts to acquire in exclusive mode, aborting if interrupted, and failing if the given timeout elapses. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireSharedNanos(kotlin.Long,%20kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, nanosTimeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Attempts to acquire in shared mode, aborting if interrupted, and failing if the given timeout elapses. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | tryAcquireSharedNanos Attempts to acquire in shared mode, aborting if interrupted, and failing if the given timeout elapses. |
 
 | Protected methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#compareAndSetState(kotlin.Long,%20kotlin.Long)(expect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, update: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Atomically sets synchronization state to the given updated value if the current state value equals the expected value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getState()()` Returns the current value of synchronization state. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#isHeldExclusively()()` Returns `true` if synchronization is held exclusively with respect to the current (calling) thread. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | compareAndSetState Atomically sets synchronization state to the given updated value if the current state value equals the expected value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getState Returns the current value of synchronization state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isHeldExclusively Returns `true` if synchronization is held exclusively with respect to the current (calling) thread. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#setState(kotlin.Long)(newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the value of synchronization state. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Attempts to acquire in exclusive mode. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Attempts to acquire in shared mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setState Sets the value of synchronization state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | tryAcquire Attempts to acquire in exclusive mode. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | tryAcquireShared Attempts to acquire in shared mode. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryRelease(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Attempts to set the state to reflect a release in exclusive mode. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryReleaseShared(kotlin.Long)(arg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Attempts to set the state to reflect a release in shared mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | tryRelease Attempts to set the state to reflect a release in exclusive mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | tryReleaseShared Attempts to set the state to reflect a release in shared mode. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer` `https://developer.android.com/reference/kotlin/java/lang/Thread.html#!` `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#getExclusiveOwnerThread()()`
+Inherited functions From class AbstractOwnableSynchronizer `https://developer.android.com/reference/kotlin/java/lang/Thread.html#!` getExclusiveOwnerThread
 
 Returns the thread last set by `setExclusiveOwnerThread`, or `null` if never set. This method does not otherwise impose any synchronization or `volatile` field accesses.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractOwnableSynchronizer#setExclusiveOwnerThread(java.lang.Thread)(thread: https://developer.android.com/reference/kotlin/java/lang/Thread.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setExclusiveOwnerThread
 
 Sets the thread that currently owns exclusive access. A `null` argument indicates that no thread owns access. This method does not otherwise impose any synchronization or `volatile` field accesses.
 
@@ -104,11 +104,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun acquire(arg: Long): Unit
 ```
 
-Acquires in exclusive mode, ignoring interrupts. Implemented by invoking at least once `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)`, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` until success. This method can be used to implement method `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lock()`.
+Acquires in exclusive mode, ignoring interrupts. Implemented by invoking at least once tryAcquire, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking tryAcquire until success. This method can be used to implement method lock.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to tryAcquire but is otherwise uninterpreted and can represent anything you like. |
 
 ### acquireInterruptibly
 
@@ -118,11 +118,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun acquireInterruptibly(arg: Long): Unit
 ```
 
-Acquires in exclusive mode, aborting if interrupted. Implemented by first checking interrupt status, then invoking at least once `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)`, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` until success or the thread is interrupted. This method can be used to implement method `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#lockInterruptibly()`.
+Acquires in exclusive mode, aborting if interrupted. Implemented by first checking interrupt status, then invoking at least once tryAcquire, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking tryAcquire until success or the thread is interrupted. This method can be used to implement method lockInterruptibly.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to tryAcquire but is otherwise uninterpreted and can represent anything you like. |
 
 | Exceptions ||
 |---|---|
@@ -136,11 +136,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun acquireShared(arg: Long): Unit
 ```
 
-Acquires in shared mode, ignoring interrupts. Implemented by first invoking at least once `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)`, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` until success.
+Acquires in shared mode, ignoring interrupts. Implemented by first invoking at least once tryAcquireShared, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking tryAcquireShared until success.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to tryAcquireShared but is otherwise uninterpreted and can represent anything you like. |
 
 ### acquireSharedInterruptibly
 
@@ -150,11 +150,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun acquireSharedInterruptibly(arg: Long): Unit
 ```
 
-Acquires in shared mode, aborting if interrupted. Implemented by first checking interrupt status, then invoking at least once `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)`, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` until success or the thread is interrupted.
+Acquires in shared mode, aborting if interrupted. Implemented by first checking interrupt status, then invoking at least once tryAcquireShared, returning on success. Otherwise the thread is queued, possibly repeatedly blocking and unblocking, invoking tryAcquireShared until success or the thread is interrupted.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to tryAcquireShared but is otherwise uninterpreted and can represent anything you like. |
 
 | Exceptions ||
 |---|---|
@@ -168,7 +168,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getExclusiveQueuedThreads(): MutableCollection<Thread!>!
 ```
 
-Returns a collection containing threads that may be waiting to acquire in exclusive mode. This has the same properties as `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueuedThreads()` except that it only returns those threads waiting due to an exclusive acquire.
+Returns a collection containing threads that may be waiting to acquire in exclusive mode. This has the same properties as getQueuedThreads except that it only returns those threads waiting due to an exclusive acquire.
 
 | Return ||
 |---|---|
@@ -226,7 +226,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getSharedQueuedThreads(): MutableCollection<Thread!>!
 ```
 
-Returns a collection containing threads that may be waiting to acquire in shared mode. This has the same properties as `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getQueuedThreads()` except that it only returns those threads waiting due to a shared acquire.
+Returns a collection containing threads that may be waiting to acquire in shared mode. This has the same properties as getQueuedThreads except that it only returns those threads waiting due to a shared acquire.
 
 | Return ||
 |---|---|
@@ -317,7 +317,7 @@ An invocation of this method is equivalent to (but may be more efficient than):
 
 Note that because cancellations due to interrupts and timeouts may occur at any time, a `true` return does not guarantee that some other thread will acquire before the current thread. Likewise, it is possible for another thread to win a race to enqueue after this method has returned `false`, due to the queue being empty.
 
-This method is designed to be used by a fair synchronizer to avoid [barging](AbstractQueuedSynchronizer.md). Such a synchronizer's `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` method should return `false`, and its `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` method should return a negative value, if this method returns `true` (unless this is a reentrant acquire). For example, the `tryAcquire` method for a fair, reentrant, exclusive mode synchronizer might look like this:
+This method is designed to be used by a fair synchronizer to avoid [barging](AbstractQueuedSynchronizer.md). Such a synchronizer's tryAcquire method should return `false`, and its tryAcquireShared method should return a negative value, if this method returns `true` (unless this is a reentrant acquire). For example, the `tryAcquire` method for a fair, reentrant, exclusive mode synchronizer might look like this:
 
 ```kotlin
 <code>protected boolean tryAcquire(long arg) {
@@ -429,15 +429,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun release(arg: Long): Boolean
 ```
 
-Releases in exclusive mode. Implemented by unblocking one or more threads if `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryRelease(kotlin.Long)` returns true. This method can be used to implement method `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#unlock()`.
+Releases in exclusive mode. Implemented by unblocking one or more threads if tryRelease returns true. This method can be used to implement method unlock.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the release argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryRelease(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the release argument. This value is conveyed to tryRelease but is otherwise uninterpreted and can represent anything you like. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | the value returned from `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryRelease(kotlin.Long)` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | the value returned from tryRelease |
 
 ### releaseShared
 
@@ -447,15 +447,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun releaseShared(arg: Long): Boolean
 ```
 
-Releases in shared mode. Implemented by unblocking one or more threads if `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryReleaseShared(kotlin.Long)` returns true.
+Releases in shared mode. Implemented by unblocking one or more threads if tryReleaseShared returns true.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the release argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryReleaseShared(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the release argument. This value is conveyed to tryReleaseShared but is otherwise uninterpreted and can represent anything you like. |
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | the value returned from `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryReleaseShared(kotlin.Long)` |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | the value returned from tryReleaseShared |
 
 ### toString
 
@@ -465,7 +465,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open fun toString(): String
 ```
 
-Returns a string identifying this synchronizer, as well as its state. The state, in brackets, includes the String `"State ="` followed by the current value of `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#getState()`, and either `"nonempty"` or `"empty"` depending on whether the queue is empty.
+Returns a string identifying this synchronizer, as well as its state. The state, in brackets, includes the String `"State ="` followed by the current value of getState, and either `"nonempty"` or `"empty"` depending on whether the queue is empty.
 
 | Return ||
 |---|---|
@@ -482,11 +482,11 @@ fun tryAcquireNanos(
 ): Boolean
 ```
 
-Attempts to acquire in exclusive mode, aborting if interrupted, and failing if the given timeout elapses. Implemented by first checking interrupt status, then invoking at least once `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)`, returning on success. Otherwise, the thread is queued, possibly repeatedly blocking and unblocking, invoking `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` until success or the thread is interrupted or the timeout elapses. This method can be used to implement method `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#tryLock(kotlin.Long,%20java.util.concurrent.TimeUnit)`.
+Attempts to acquire in exclusive mode, aborting if interrupted, and failing if the given timeout elapses. Implemented by first checking interrupt status, then invoking at least once tryAcquire, returning on success. Otherwise, the thread is queued, possibly repeatedly blocking and unblocking, invoking tryAcquire until success or the thread is interrupted or the timeout elapses. This method can be used to implement method tryLock.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquire(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to tryAcquire but is otherwise uninterpreted and can represent anything you like. |
 | `nanosTimeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum number of nanoseconds to wait |
 
 | Return ||
@@ -508,11 +508,11 @@ fun tryAcquireSharedNanos(
 ): Boolean
 ```
 
-Attempts to acquire in shared mode, aborting if interrupted, and failing if the given timeout elapses. Implemented by first checking interrupt status, then invoking at least once `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)`, returning on success. Otherwise, the thread is queued, possibly repeatedly blocking and unblocking, invoking `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` until success or the thread is interrupted or the timeout elapses.
+Attempts to acquire in shared mode, aborting if interrupted, and failing if the given timeout elapses. Implemented by first checking interrupt status, then invoking at least once tryAcquireShared, returning on success. Otherwise, the thread is queued, possibly repeatedly blocking and unblocking, invoking tryAcquireShared until success or the thread is interrupted or the timeout elapses.
 
 | Parameters ||
 |---|---|
-| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/AbstractQueuedLongSynchronizer#tryAcquireShared(kotlin.Long)` but is otherwise uninterpreted and can represent anything you like. |
+| `arg` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the acquire argument. This value is conveyed to tryAcquireShared but is otherwise uninterpreted and can represent anything you like. |
 | `nanosTimeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum number of nanoseconds to wait |
 
 | Return ||
@@ -605,7 +605,7 @@ protected open fun tryAcquire(arg: Long): Boolean
 
 Attempts to acquire in exclusive mode. This method should query if the state of the object permits it to be acquired in the exclusive mode, and if so to acquire it.
 
-This method is always invoked by the thread performing acquire. If this method reports failure, the acquire method may queue the thread, if it is not already queued, until it is signalled by a release from some other thread. This can be used to implement method `https://developer.android.com/reference/kotlin/java/util/concurrent/locks/Lock#tryLock()`.
+This method is always invoked by the thread performing acquire. If this method reports failure, the acquire method may queue the thread, if it is not already queued, until it is signalled by a release from some other thread. This can be used to implement method tryLock.
 
 The default implementation throws `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`.
 

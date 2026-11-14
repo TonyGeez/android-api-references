@@ -29,73 +29,73 @@ The basic elements of date-time can all be added:
 
 In addition, any of the elements may be decorated by padding, either with spaces or any other character.
 
-Finally, a shorthand pattern, mostly compatible with `java.text.SimpleDateFormat SimpleDateFormat` can be used, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendPattern(kotlin.String)`. In practice, this simply parses the pattern and calls other methods on the builder.
+Finally, a shorthand pattern, mostly compatible with `java.text.SimpleDateFormat SimpleDateFormat` can be used, see appendPattern. In practice, this simply parses the pattern and calls other methods on the builder.
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#DateTimeFormatterBuilder()()` Constructs a new instance of the builder. |
+| DateTimeFormatterBuilder Constructs a new instance of the builder. |
 
 | Public methods ||
 |---|---|
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#append(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` <br /> |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendChronologyId()()` Appends the chronology ID, such as 'ISO' or 'ThaiBuddhist', to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendChronologyText(java.time.format.TextStyle)(textStyle: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!)` Appends the chronology name to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | append <br /> |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendChronologyId Appends the chronology ID, such as 'ISO' or 'ThaiBuddhist', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendChronologyText Appends the chronology name to the formatter. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendFraction(java.time.temporal.TemporalField,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, minWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, decimalPoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Appends the fractional value of a date-time field to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendGenericZoneText(java.time.format.TextStyle)(textStyle: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!)` Appends the generic time-zone name, such as 'Pacific Time', to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendGenericZoneText(java.time.format.TextStyle,%20kotlin.collections.MutableSet)(textStyle: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!, preferredZones: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!>!)` Appends the generic time-zone name, such as 'Pacific Time', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendFraction Appends the fractional value of a date-time field to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendGenericZoneText Appends the generic time-zone name, such as 'Pacific Time', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendGenericZoneText Appends the generic time-zone name, such as 'Pacific Time', to the formatter. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendInstant()()` Appends an instant using ISO-8601 to the formatter, formatting fractional digits in groups of three. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendInstant(kotlin.Int)(fractionalDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends an instant using ISO-8601 to the formatter with control over the number of fractional digits. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLiteral(kotlin.Char)(literal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends a character literal to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendInstant Appends an instant using ISO-8601 to the formatter, formatting fractional digits in groups of three. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendInstant Appends an instant using ISO-8601 to the formatter with control over the number of fractional digits. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendLiteral Appends a character literal to the formatter. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLiteral(kotlin.String)(literal: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Appends a string literal to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md) | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLocalized(kotlin.String)(requestedTemplate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Appends a localized pattern to the formatter using the requested template. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLocalized(java.time.format.FormatStyle,%20java.time.format.FormatStyle)(dateStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!, timeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!)` Appends a localized date-time pattern to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendLiteral Appends a string literal to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md) | appendLocalized Appends a localized pattern to the formatter using the requested template. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendLocalized Appends a localized date-time pattern to the formatter. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLocalizedOffset(java.time.format.TextStyle)(style: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!)` Appends the localized zone offset, such as 'GMT+01:00', to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffset(kotlin.String,%20kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, noOffsetText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Appends the zone offset, such as '+01:00', to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffsetId()()` Appends the zone offset, such as '+01:00', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendLocalizedOffset Appends the localized zone offset, such as 'GMT+01:00', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendOffset Appends the zone offset, such as '+01:00', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendOffsetId Appends the zone offset, such as '+01:00', to the formatter. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOptional(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Appends a formatter to the builder which will optionally format/parse. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendPattern(kotlin.String)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Appends the elements defined by the specified pattern to the builder. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendText(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Appends the text of a date-time field to the formatter using the full text style. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendOptional Appends a formatter to the builder which will optionally format/parse. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendPattern Appends the elements defined by the specified pattern to the builder. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendText Appends the text of a date-time field to the formatter using the full text style. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendText(java.time.temporal.TemporalField,%20java.time.format.TextStyle)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, textStyle: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!)` Appends the text of a date-time field to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendText(java.time.temporal.TemporalField,%20kotlin.collections.MutableMap)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, textLookup: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Appends the text of a date-time field to the formatter using the specified map to supply the text. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValue(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Appends the value of a date-time field to the formatter using a normal output style. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendText Appends the text of a date-time field to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendText Appends the text of a date-time field to the formatter using the specified map to supply the text. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendValue Appends the value of a date-time field to the formatter using a normal output style. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValue(java.time.temporal.TemporalField,%20kotlin.Int)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends the value of a date-time field to the formatter using a fixed width, zero-padded approach. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValue(java.time.temporal.TemporalField,%20kotlin.Int,%20kotlin.Int,%20java.time.format.SignStyle)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, minWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, signStyle: https://developer.android.com/reference/kotlin/java/time/format/SignStyle!)` Appends the value of a date-time field to the formatter providing full control over formatting. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValueReduced(java.time.temporal.TemporalField,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, baseValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends the reduced value of a date-time field to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendValue Appends the value of a date-time field to the formatter using a fixed width, zero-padded approach. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendValue Appends the value of a date-time field to the formatter providing full control over formatting. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendValueReduced Appends the reduced value of a date-time field to the formatter. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValueReduced(java.time.temporal.TemporalField,%20kotlin.Int,%20kotlin.Int,%20java.time.chrono.ChronoLocalDate)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, baseDate: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate.html#!)` Appends the reduced value of a date-time field to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneId()()` Appends the time-zone ID, such as 'Europe/Paris' or '+02:00', to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneOrOffsetId()()` Appends the time-zone ID, such as 'Europe/Paris' or '+02:00', to the formatter, using the best available zone ID. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendValueReduced Appends the reduced value of a date-time field to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendZoneId Appends the time-zone ID, such as 'Europe/Paris' or '+02:00', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendZoneOrOffsetId Appends the time-zone ID, such as 'Europe/Paris' or '+02:00', to the formatter, using the best available zone ID. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneRegionId()()` Appends the time-zone region ID, such as 'Europe/Paris', to the formatter, rejecting the zone ID if it is a `ZoneOffset`. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneText(java.time.format.TextStyle)(textStyle: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!)` Appends the time-zone name, such as 'British Summer Time', to the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneText(java.time.format.TextStyle,%20kotlin.collections.MutableSet)(textStyle: https://developer.android.com/reference/kotlin/java/time/format/TextStyle!, preferredZones: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!>!)` Appends the time-zone name, such as 'British Summer Time', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendZoneRegionId Appends the time-zone region ID, such as 'Europe/Paris', to the formatter, rejecting the zone ID if it is a `ZoneOffset`. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendZoneText Appends the time-zone name, such as 'British Summer Time', to the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | appendZoneText Appends the time-zone name, such as 'British Summer Time', to the formatter. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#getLocalizedDateTimePattern(kotlin.String,%20java.time.chrono.Chronology,%20java.util.Locale)(requestedTemplate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, chrono: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#)` Returns the formatting pattern for the requested template for a locale and chronology. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#getLocalizedDateTimePattern(java.time.format.FormatStyle,%20java.time.format.FormatStyle,%20java.time.chrono.Chronology,%20java.util.Locale)(dateStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!, timeStyle: https://developer.android.com/reference/kotlin/java/time/format/FormatStyle!, chrono: https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Gets the formatting pattern for date and time styles for a locale and chronology. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalEnd()()` Ends an optional section. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getLocalizedDateTimePattern Returns the formatting pattern for the requested template for a locale and chronology. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getLocalizedDateTimePattern Gets the formatting pattern for date and time styles for a locale and chronology. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | optionalEnd Ends an optional section. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalStart()()` Mark the start of an optional section. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#padNext(kotlin.Int)(padWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Causes the next added printer/parser to pad to a fixed width using a space. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#padNext(kotlin.Int,%20kotlin.Char)(padWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, padChar: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Causes the next added printer/parser to pad to a fixed width. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | optionalStart Mark the start of an optional section. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | padNext Causes the next added printer/parser to pad to a fixed width using a space. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | padNext Causes the next added printer/parser to pad to a fixed width. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseCaseInsensitive()()` Changes the parse style to be case insensitive for the remainder of the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseCaseSensitive()()` Changes the parse style to be case sensitive for the remainder of the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseDefaulting(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Appends a default value for a field to the formatter for use in parsing. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | parseCaseInsensitive Changes the parse style to be case insensitive for the remainder of the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | parseCaseSensitive Changes the parse style to be case sensitive for the remainder of the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | parseDefaulting Appends a default value for a field to the formatter for use in parsing. |
 | --- | --- |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseLenient()()` Changes the parse style to be lenient for the remainder of the formatter. |
-| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseStrict()()` Changes the parse style to be strict for the remainder of the formatter. |
-| [DateTimeFormatter](DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#toFormatter()()` Completes this builder by creating the `DateTimeFormatter` using the default locale. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | parseLenient Changes the parse style to be lenient for the remainder of the formatter. |
+| [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md)! | parseStrict Changes the parse style to be strict for the remainder of the formatter. |
+| [DateTimeFormatter](DateTimeFormatter.md)! | toFormatter Completes this builder by creating the `DateTimeFormatter` using the default locale. |
 | --- | --- |
-| [DateTimeFormatter](DateTimeFormatter.md)! | `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#toFormatter(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Completes this builder by creating the `DateTimeFormatter` using the specified locale. |
+| [DateTimeFormatter](DateTimeFormatter.md)! | toFormatter Completes this builder by creating the `DateTimeFormatter` using the specified locale. |
 
 ## Public constructors
 
@@ -131,9 +131,9 @@ Appends the chronology ID, such as 'ISO' or 'ThaiBuddhist', to the formatter.
 
 This appends an instruction to format/parse the chronology ID to the builder.
 
-During formatting, the chronology is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#chronology()`. It will be printed using the result of `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#getId()`. If the chronology cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the chronology is obtained using a mechanism equivalent to querying the temporal with chronology. It will be printed using the result of getId. If the chronology cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
-During parsing, the chronology is parsed and must match one of the chronologies in `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology.html#getAvailableChronologies()`. If the chronology cannot be parsed then an exception is thrown unless the section of the formatter is optional. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
+During parsing, the chronology is parsed and must match one of the chronologies in getAvailableChronologies. If the chronology cannot be parsed then an exception is thrown unless the section of the formatter is optional. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
 
 | Return ||
 |---|---|
@@ -178,7 +178,7 @@ The fractional value of the field will be output including the preceding decimal
 
 The width of the printed fraction can be controlled. Setting the minimum width to zero will cause no output to be generated. The printed fraction will have the minimum width necessary between the minimum and maximum widths - trailing zeroes are omitted. No rounding occurs due to the maximum width - digits are simply dropped.
 
-When parsing in strict mode, the number of parsed digits must be between the minimum and maximum width. In strict mode, if the minimum and maximum widths are equal and there is no decimal point then the parser will participate in adjacent value parsing, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValue(java.time.temporal.TemporalField,%20kotlin.Int)`. When parsing in lenient mode, the minimum width is considered to be zero and the maximum is nine.
+When parsing in strict mode, the number of parsed digits must be between the minimum and maximum width. In strict mode, if the minimum and maximum widths are equal and there is no decimal point then the parser will participate in adjacent value parsing, see appendValue. When parsing in lenient mode, the minimum width is considered to be zero and the maximum is nine.
 
 If the value cannot be obtained then an exception will be thrown. If the value is negative an exception will be thrown. If the field does not have a fixed set of valid values then an exception will be thrown. If the field value in the date-time to be printed is outside the range of valid values then an exception will be thrown.
 
@@ -208,11 +208,11 @@ fun appendGenericZoneText(textStyle: TextStyle!): DateTimeFormatterBuilder!
 
 Appends the generic time-zone name, such as 'Pacific Time', to the formatter.
 
-This appends an instruction to format/parse the generic textual name of the zone to the builder. The generic name is the same throughout the whole year, ignoring any daylight saving changes. For example, 'Pacific Time' is the generic name, whereas 'Pacific Standard Time' and 'Pacific Daylight Time' are the specific names, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneText(java.time.format.TextStyle)`.
+This appends an instruction to format/parse the generic textual name of the zone to the builder. The generic name is the same throughout the whole year, ignoring any daylight saving changes. For example, 'Pacific Time' is the generic name, whereas 'Pacific Standard Time' and 'Pacific Daylight Time' are the specific names, see appendZoneText.
 
-During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#zoneId()`. If the zone is a `ZoneOffset` it will be printed using the result of `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#getId()`. If the zone is not an offset, the textual name will be looked up for the locale set in the `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter`. If the lookup for text does not find any suitable result, then the `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#getId()` will be printed. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with zoneId. If the zone is a `ZoneOffset` it will be printed using the result of getId. If the zone is not an offset, the textual name will be looked up for the locale set in the DateTimeFormatter. If the lookup for text does not find any suitable result, then the getId will be printed. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
-During parsing, either the textual zone name, the zone ID or the offset is accepted. Many textual zone names are not unique, such as CST can be for both "Central Standard Time" and "China Standard Time". In this situation, the zone id will be determined by the region information from formatter's `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getLocale()` and the standard zone id for that area, for example, America/New_York for the America Eastern zone. The `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendGenericZoneText(java.time.format.TextStyle,%20kotlin.collections.MutableSet)` may be used to specify a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` in this situation.
+During parsing, either the textual zone name, the zone ID or the offset is accepted. Many textual zone names are not unique, such as CST can be for both "Central Standard Time" and "China Standard Time". In this situation, the zone id will be determined by the region information from formatter's getLocale and the standard zone id for that area, for example, America/New_York for the America Eastern zone. The appendGenericZoneText may be used to specify a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` in this situation.
 
 | Parameters ||
 |---|---|
@@ -235,11 +235,11 @@ fun appendGenericZoneText(
 
 Appends the generic time-zone name, such as 'Pacific Time', to the formatter.
 
-This appends an instruction to format/parse the generic textual name of the zone to the builder. The generic name is the same throughout the whole year, ignoring any daylight saving changes. For example, 'Pacific Time' is the generic name, whereas 'Pacific Standard Time' and 'Pacific Daylight Time' are the specific names, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneText(java.time.format.TextStyle)`.
+This appends an instruction to format/parse the generic textual name of the zone to the builder. The generic name is the same throughout the whole year, ignoring any daylight saving changes. For example, 'Pacific Time' is the generic name, whereas 'Pacific Standard Time' and 'Pacific Daylight Time' are the specific names, see appendZoneText.
 
 This method also allows a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` to be specified for parsing. The matched preferred zone id will be used if the textural zone name being parsed is not unique.
 
-See `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendGenericZoneText(java.time.format.TextStyle)` for details about formatting and parsing.
+See appendGenericZoneText for details about formatting and parsing.
 
 | Parameters ||
 |---|---|
@@ -264,9 +264,9 @@ Instants have a fixed output format. They are converted to a date-time with a zo
 
 The instant is obtained using `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#` and optionally `NANO_OF_SECOND`. The value of `INSTANT_SECONDS` may be outside the maximum range of `LocalDateTime`.
 
-The [resolver style](ResolverStyle.md) has no effect on instant parsing. The end-of-day time of '24:00' is handled as midnight at the start of the following day. The leap-second time of '23:59:59' is handled to some degree, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedLeapSecond()` for full details.
+The [resolver style](ResolverStyle.md) has no effect on instant parsing. The end-of-day time of '24:00' is handled as midnight at the start of the following day. The leap-second time of '23:59:59' is handled to some degree, see parsedLeapSecond for full details.
 
-When formatting, the instant will always be suffixed by 'Z' to indicate UTC. When parsing, the behaviour of `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffsetId()` will be used to parse the offset, converting the instant to UTC as necessary.
+When formatting, the instant will always be suffixed by 'Z' to indicate UTC. When parsing, the behaviour of appendOffsetId will be used to parse the offset, converting the instant to UTC as necessary.
 
 An alternative to this method is to format/parse the instant as a single epoch-seconds value. That is achieved using `appendValue(INSTANT_SECONDS)`.
 
@@ -292,7 +292,7 @@ When parsing in strict mode, the number of parsed digits must match the fraction
 
 The instant is obtained using `https://developer.android.com/reference/kotlin/java/time/temporal/ChronoField.html#` and optionally `NANO_OF_SECOND`. The value of `INSTANT_SECONDS` may be outside the maximum range of `LocalDateTime`.
 
-The [resolver style](ResolverStyle.md) has no effect on instant parsing. The end-of-day time of '24:00' is handled as midnight at the start of the following day. The leap-second time of '23:59:60' is handled to some degree, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#parsedLeapSecond()` for full details.
+The [resolver style](ResolverStyle.md) has no effect on instant parsing. The end-of-day time of '24:00' is handled as midnight at the start of the following day. The leap-second time of '23:59:60' is handled to some degree, see parsedLeapSecond for full details.
 
 An alternative to this method is to format/parse the instant as a single epoch-seconds value. That is achieved using `appendValue(INSTANT_SECONDS)`.
 
@@ -366,7 +366,7 @@ This appends a localized section to the builder, suitable for outputting a date,
 - the `Locale` of the `DateTimeFormatter`
 - the `Chronology` of the `DateTimeFormatter` unless overridden
 
-During formatting, the chronology is obtained from the temporal object being formatted, which may have been overridden by `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withChronology(java.time.chrono.Chronology)`.
+During formatting, the chronology is obtained from the temporal object being formatted, which may have been overridden by withChronology.
 
 During parsing, if a chronology has already been parsed, then it is used. Otherwise the default from `DateTimeFormatter.withChronology(Chronology)` is used, with `IsoChronology` as the fallback.
 
@@ -380,7 +380,7 @@ The mapping of the requested template to the closest of the available localized 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#` | this, for chaining, not null |
+| DateTimeFormatterBuilder | this, for chaining, not null |
 
 | Exceptions ||
 |---|---|
@@ -388,7 +388,7 @@ The mapping of the requested template to the closest of the available localized 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendPattern(kotlin.String)`
+- appendPattern
 
 ### appendLocalized
 
@@ -410,11 +410,11 @@ This appends a localized section to the builder, suitable for outputting a date,
 - the `Locale` of the `DateTimeFormatter`
 - the `Chronology`, selecting the best available
 
-During formatting, the chronology is obtained from the temporal object being formatted, which may have been overridden by `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withChronology(java.time.chrono.Chronology)`. The `FULL` and `LONG` styles typically require a time-zone. When formatting using these styles, a `ZoneId` must be available, either by using `ZonedDateTime` or `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#withZone(java.time.ZoneId)`.
+During formatting, the chronology is obtained from the temporal object being formatted, which may have been overridden by withChronology. The `FULL` and `LONG` styles typically require a time-zone. When formatting using these styles, a `ZoneId` must be available, either by using `ZonedDateTime` or withZone.
 
 During parsing, if a chronology has already been parsed, then it is used. Otherwise the default from `DateTimeFormatter.withChronology(Chronology)` is used, with `IsoChronology` as the fallback.
 
-Note that this method provides similar functionality to methods on `DateFormat` such as `https://developer.android.com/reference/kotlin/java/text/DateFormat.html#getDateTimeInstance(kotlin.Int,%20kotlin.Int)`.
+Note that this method provides similar functionality to methods on `DateFormat` such as getDateTimeInstance.
 
 | Parameters ||
 |---|---|
@@ -439,12 +439,12 @@ fun appendLocalizedOffset(style: TextStyle!): DateTimeFormatterBuilder!
 
 Appends the localized zone offset, such as 'GMT+01:00', to the formatter.
 
-This appends a localized zone offset to the builder, the format of the localized offset is controlled by the specified `https://developer.android.com/reference/kotlin/java/time/format/FormatStyle` to this method:
+This appends a localized zone offset to the builder, the format of the localized offset is controlled by the specified FormatStyle to this method:
 
-- `https://developer.android.com/reference/kotlin/java/time/format/TextStyle` - formats with localized offset text, such as 'GMT, 2-digit hour and minute field, optional second field if non-zero, and colon.
-- `https://developer.android.com/reference/kotlin/java/time/format/TextStyle` - formats with localized offset text, such as 'GMT, hour without leading zero, optional 2-digit minute and second if non-zero, and colon.
+- TextStyle - formats with localized offset text, such as 'GMT, 2-digit hour and minute field, optional second field if non-zero, and colon.
+- TextStyle - formats with localized offset text, such as 'GMT, hour without leading zero, optional 2-digit minute and second if non-zero, and colon.
 
-During formatting, the offset is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#offset()`. If the offset cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the offset is obtained using a mechanism equivalent to querying the temporal with offset. If the offset cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
 During parsing, the offset is parsed using the format defined above. If the offset cannot be parsed then an exception is thrown unless the section of the formatter is optional.
 
@@ -458,7 +458,7 @@ During parsing, the offset is parsed using the format defined above. If the offs
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if style is neither `https://developer.android.com/reference/kotlin/java/time/format/TextStyle` nor `https://developer.android.com/reference/kotlin/java/time/format/TextStyle` |
+| `java.lang.IllegalArgumentException` | if style is neither TextStyle nor TextStyle |
 
 ### appendOffset
 
@@ -475,7 +475,7 @@ Appends the zone offset, such as '+01:00', to the formatter.
 
 This appends an instruction to format/parse the offset ID to the builder.
 
-During formatting, the offset is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#offset()`. It will be printed using the format defined below. If the offset cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the offset is obtained using a mechanism equivalent to querying the temporal with offset. It will be printed using the format defined below. If the offset cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
 When parsing in strict mode, the input must contain the mandatory and optional elements are defined by the specified pattern. If the offset cannot be parsed then an exception is thrown unless the section of the formatter is optional.
 
@@ -531,7 +531,7 @@ fun appendOffsetId(): DateTimeFormatterBuilder!
 
 Appends the zone offset, such as '+01:00', to the formatter.
 
-This appends an instruction to format/parse the offset ID to the builder. This is equivalent to calling `appendOffset("+HH:mm:ss", "Z")`. See `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffset(kotlin.String,%20kotlin.String)` for details on formatting and parsing.
+This appends an instruction to format/parse the offset ID to the builder. This is equivalent to calling `appendOffset("+HH:mm:ss", "Z")`. See appendOffset for details on formatting and parsing.
 
 | Return ||
 |---|---|
@@ -547,7 +547,7 @@ fun appendOptional(formatter: DateTimeFormatter!): DateTimeFormatterBuilder!
 
 Appends a formatter to the builder which will optionally format/parse.
 
-This method has the same effect as appending each of the constituent parts directly to this builder surrounded by an `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalStart()` and `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalEnd()`.
+This method has the same effect as appending each of the constituent parts directly to this builder surrounded by an optionalStart and optionalEnd.
 
 The formatter will format if data is available for all the fields contained within it. The formatter will parse if the string matches, otherwise no error is returned.
 
@@ -893,7 +893,7 @@ The value of the field will be output during a format. If the value cannot be ob
 
 The value will be printed as per the normal format of an integer value. Only negative numbers will be signed. No padding will be added.
 
-The parser for a variable width value such as this normally behaves greedily, requiring one digit, but accepting as many digits as possible. This behavior can be affected by 'adjacent value parsing'. See `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValue(java.time.temporal.TemporalField,%20kotlin.Int)` for full details.
+The parser for a variable width value such as this normally behaves greedily, requiring one digit, but accepting as many digits as possible. This behavior can be affected by 'adjacent value parsing'. See appendValue for full details.
 
 | Parameters ||
 |---|---|
@@ -962,7 +962,7 @@ The value of the field will be output during a format. If the value cannot be ob
 
 This method provides full control of the numeric formatting, including zero-padding and the positive/negative sign.
 
-The parser for a variable width value such as this normally behaves greedily, accepting as many digits as possible. This behavior can be affected by 'adjacent value parsing'. See `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValue(java.time.temporal.TemporalField,%20kotlin.Int)` for full details.
+The parser for a variable width value such as this normally behaves greedily, accepting as many digits as possible. This behavior can be affected by 'adjacent value parsing'. See appendValue for full details.
 
 In strict parsing mode, the minimum number of parsed digits is `minWidth` and the maximum is `maxWidth`. In lenient parsing mode, the minimum number of parsed digits is one and the maximum is 19 (except as limited by adjacent value parsing).
 
@@ -999,7 +999,7 @@ fun appendValueReduced(
 
 Appends the reduced value of a date-time field to the formatter.
 
-Since fields such as year vary by chronology, it is recommended to use the `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendValueReduced(java.time.temporal.TemporalField,%20kotlin.Int,%20kotlin.Int,%20java.time.chrono.ChronoLocalDate)` date} variant of this method in most cases. This variant is suitable for simple fields or working with only the ISO chronology.
+Since fields such as year vary by chronology, it is recommended to use the appendValueReduced date} variant of this method in most cases. This variant is suitable for simple fields or working with only the ISO chronology.
 
 For formatting, the `width` and `maxWidth` are used to determine the number of characters to format. If they are equal then the format is fixed width. If the value of the field is within the range of the `baseValue` using `width` characters then the reduced value is formatted otherwise the value is truncated to fit `maxWidth`. The rightmost characters are output to match the width, left padding with zero.
 
@@ -1076,11 +1076,11 @@ fun appendZoneId(): DateTimeFormatterBuilder!
 
 Appends the time-zone ID, such as 'Europe/Paris' or '+02:00', to the formatter.
 
-This appends an instruction to format/parse the zone ID to the builder. The zone ID is obtained in a strict manner suitable for `ZonedDateTime`. By contrast, `OffsetDateTime` does not have a zone ID suitable for use with this method, see `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneOrOffsetId()`.
+This appends an instruction to format/parse the zone ID to the builder. The zone ID is obtained in a strict manner suitable for `ZonedDateTime`. By contrast, `OffsetDateTime` does not have a zone ID suitable for use with this method, see appendZoneOrOffsetId.
 
-During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#zoneId()`. It will be printed using the result of `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#getId()`. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with zoneId. It will be printed using the result of getId. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
-During parsing, the text must match a known zone or offset. There are two types of zone ID, offset-based, such as '+01:30' and region-based, such as 'Europe/London'. These are parsed differently. If the parse starts with '+' or '-', then the parser expects an offset-based zone and will not match region-based zones. The offset ID parsing is equivalent to using `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffset(kotlin.String,%20kotlin.String)` using the arguments 'HH:MM:ss' and the no offset string '0'. If the parse starts with 'UT', 'UTC' or 'GMT', and the parser can match a following offset, then a region-based zone with the parsed offset will be returned, or else if the parser cannot match a following offset, then `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#UTC:java.time.ZoneOffset` is selected. In all other cases, the list of known region-based zones is used to find the longest available match. If no match is found, and the parse starts with 'Z', then `ZoneOffset.UTC` is selected. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
+During parsing, the text must match a known zone or offset. There are two types of zone ID, offset-based, such as '+01:30' and region-based, such as 'Europe/London'. These are parsed differently. If the parse starts with '+' or '-', then the parser expects an offset-based zone and will not match region-based zones. The offset ID parsing is equivalent to using appendOffset using the arguments 'HH:MM:ss' and the no offset string '0'. If the parse starts with 'UT', 'UTC' or 'GMT', and the parser can match a following offset, then a region-based zone with the parsed offset will be returned, or else if the parser cannot match a following offset, then `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#UTC:java.time.ZoneOffset` is selected. In all other cases, the list of known region-based zones is used to find the longest available match. If no match is found, and the parse starts with 'Z', then `ZoneOffset.UTC` is selected. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
 
 For example, the following will parse:
 
@@ -1103,7 +1103,7 @@ For example, the following will parse:
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneRegionId()`
+- appendZoneRegionId
 
 ### appendZoneOrOffsetId
 
@@ -1117,9 +1117,9 @@ Appends the time-zone ID, such as 'Europe/Paris' or '+02:00', to the formatter, 
 
 This appends an instruction to format/parse the best available zone or offset ID to the builder. The zone ID is obtained in a lenient manner that first attempts to find a true zone ID, such as that on `ZonedDateTime`, and then attempts to find an offset, such as that on `OffsetDateTime`.
 
-During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#zone()`. It will be printed using the result of `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#getId()`. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with zone. It will be printed using the result of getId. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
-During parsing, the text must match a known zone or offset. There are two types of zone ID, offset-based, such as '+01:30' and region-based, such as 'Europe/London'. These are parsed differently. If the parse starts with '+' or '-', then the parser expects an offset-based zone and will not match region-based zones. The offset ID parsing is equivalent to using `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffset(kotlin.String,%20kotlin.String)` using the arguments 'HH:MM:ss' and the no offset string '0'. If the parse starts with 'UT', 'UTC' or 'GMT', and the parser can match a following offset, then a region-based zone with the parsed offset will be returned, or else if the parser cannot match a following offset, then `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#UTC:java.time.ZoneOffset` is selected. In all other cases, the list of known region-based zones is used to find the longest available match. If no match is found, and the parse starts with 'Z', then `ZoneOffset.UTC` is selected. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
+During parsing, the text must match a known zone or offset. There are two types of zone ID, offset-based, such as '+01:30' and region-based, such as 'Europe/London'. These are parsed differently. If the parse starts with '+' or '-', then the parser expects an offset-based zone and will not match region-based zones. The offset ID parsing is equivalent to using appendOffset using the arguments 'HH:MM:ss' and the no offset string '0'. If the parse starts with 'UT', 'UTC' or 'GMT', and the parser can match a following offset, then a region-based zone with the parsed offset will be returned, or else if the parser cannot match a following offset, then `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#UTC:java.time.ZoneOffset` is selected. In all other cases, the list of known region-based zones is used to find the longest available match. If no match is found, and the parse starts with 'Z', then `ZoneOffset.UTC` is selected. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
 
 For example, the following will parse:
 
@@ -1144,7 +1144,7 @@ Note that this method is identical to `appendZoneId()` except in the mechanism u
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneId()`
+- appendZoneId
 
 ### appendZoneRegionId
 
@@ -1158,9 +1158,9 @@ Appends the time-zone region ID, such as 'Europe/Paris', to the formatter, rejec
 
 This appends an instruction to format only region-based zone IDs to the builder.
 
-During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#zoneId()`. If the zone is a `ZoneOffset` or it cannot be obtained then an exception is thrown unless the section of the formatter is optional. If the zone is not an offset, then the zone will be printed using the zone ID from `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#getId()`.
+During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with zoneId. If the zone is a `ZoneOffset` or it cannot be obtained then an exception is thrown unless the section of the formatter is optional. If the zone is not an offset, then the zone will be printed using the zone ID from getId.
 
-During parsing, the text must match a known zone or offset. There are two types of zone ID, offset-based, such as '+01:30' and region-based, such as 'Europe/London'. These are parsed differently. If the parse starts with '+' or '-', then the parser expects an offset-based zone and will not match region-based zones. The offset ID parsing is equivalent to using `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendOffset(kotlin.String,%20kotlin.String)` using the arguments 'HH:MM:ss' and the no offset string '0'. If the parse starts with 'UT', 'UTC' or 'GMT', and the parser can match a following offset, then a region-based zone with the parsed offset will be returned, or else if the parser cannot match a following offset, then `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#UTC:java.time.ZoneOffset` is selected. In all other cases, the list of known region-based zones is used to find the longest available match. If no match is found, and the parse starts with 'Z', then `ZoneOffset.UTC` is selected. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
+During parsing, the text must match a known zone or offset. There are two types of zone ID, offset-based, such as '+01:30' and region-based, such as 'Europe/London'. These are parsed differently. If the parse starts with '+' or '-', then the parser expects an offset-based zone and will not match region-based zones. The offset ID parsing is equivalent to using appendOffset using the arguments 'HH:MM:ss' and the no offset string '0'. If the parse starts with 'UT', 'UTC' or 'GMT', and the parser can match a following offset, then a region-based zone with the parsed offset will be returned, or else if the parser cannot match a following offset, then `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#UTC:java.time.ZoneOffset` is selected. In all other cases, the list of known region-based zones is used to find the longest available match. If no match is found, and the parse starts with 'Z', then `ZoneOffset.UTC` is selected. The parser uses the [case sensitive](DateTimeFormatterBuilder.md)) setting.
 
 For example, the following will parse:
 
@@ -1185,7 +1185,7 @@ Note that this method is identical to `appendZoneId()` except in the mechanism u
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneId()`
+- appendZoneId
 
 ### appendZoneText
 
@@ -1199,9 +1199,9 @@ Appends the time-zone name, such as 'British Summer Time', to the formatter.
 
 This appends an instruction to format/parse the textual name of the zone to the builder.
 
-During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#zoneId()`. If the zone is a `ZoneOffset` it will be printed using the result of `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#getId()`. If the zone is not an offset, the textual name will be looked up for the locale set in the `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter`. If the temporal object being printed represents an instant, or if it is a local date-time that is not in a daylight saving gap or overlap then the text will be the summer or winter time text as appropriate. If the lookup for text does not find any suitable result, then the `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#getId()` will be printed. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with zoneId. If the zone is a `ZoneOffset` it will be printed using the result of getId. If the zone is not an offset, the textual name will be looked up for the locale set in the DateTimeFormatter. If the temporal object being printed represents an instant, or if it is a local date-time that is not in a daylight saving gap or overlap then the text will be the summer or winter time text as appropriate. If the lookup for text does not find any suitable result, then the getId will be printed. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
-During parsing, either the textual zone name, the zone ID or the offset is accepted. Many textual zone names are not unique, such as CST can be for both "Central Standard Time" and "China Standard Time". In this situation, the zone id will be determined by the region information from formatter's `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getLocale()` and the standard zone id for that area, for example, America/New_York for the America Eastern zone. The `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendZoneText(java.time.format.TextStyle,%20kotlin.collections.MutableSet)` may be used to specify a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` in this situation.
+During parsing, either the textual zone name, the zone ID or the offset is accepted. Many textual zone names are not unique, such as CST can be for both "Central Standard Time" and "China Standard Time". In this situation, the zone id will be determined by the region information from formatter's getLocale and the standard zone id for that area, for example, America/New_York for the America Eastern zone. The appendZoneText may be used to specify a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` in this situation.
 
 | Parameters ||
 |---|---|
@@ -1226,9 +1226,9 @@ Appends the time-zone name, such as 'British Summer Time', to the formatter.
 
 This appends an instruction to format/parse the textual name of the zone to the builder.
 
-During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries.html#zoneId()`. If the zone is a `ZoneOffset` it will be printed using the result of `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#getId()`. If the zone is not an offset, the textual name will be looked up for the locale set in the `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter`. If the temporal object being printed represents an instant, or if it is a local date-time that is not in a daylight saving gap or overlap, then the text will be the summer or winter time text as appropriate. If the lookup for text does not find any suitable result, then the `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#getId()` will be printed. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
+During formatting, the zone is obtained using a mechanism equivalent to querying the temporal with zoneId. If the zone is a `ZoneOffset` it will be printed using the result of getId. If the zone is not an offset, the textual name will be looked up for the locale set in the DateTimeFormatter. If the temporal object being printed represents an instant, or if it is a local date-time that is not in a daylight saving gap or overlap, then the text will be the summer or winter time text as appropriate. If the lookup for text does not find any suitable result, then the getId will be printed. If the zone cannot be obtained then an exception is thrown unless the section of the formatter is optional.
 
-During parsing, either the textual zone name, the zone ID or the offset is accepted. Many textual zone names are not unique, such as CST can be for both "Central Standard Time" and "China Standard Time". In this situation, the zone id will be determined by the region information from formatter's `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter#getLocale()` and the standard zone id for that area, for example, America/New_York for the America Eastern zone. This method also allows a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` to be specified for parsing. The matched preferred zone id will be used if the textural zone name being parsed is not unique.
+During parsing, either the textual zone name, the zone ID or the offset is accepted. Many textual zone names are not unique, such as CST can be for both "Central Standard Time" and "China Standard Time". In this situation, the zone id will be determined by the region information from formatter's getLocale and the standard zone id for that area, for example, America/New_York for the America Eastern zone. This method also allows a set of preferred `https://developer.android.com/reference/kotlin/java/time/ZoneId.html#` to be specified for parsing. The matched preferred zone id will be used if the textural zone name being parsed is not unique.
 
 If the zone cannot be parsed then an exception is thrown unless the section of the formatter is optional.
 
@@ -1255,7 +1255,7 @@ static fun getLocalizedDateTimePattern(
 
 Returns the formatting pattern for the requested template for a locale and chronology. The locale and chronology are used to lookup the locale specific format for the requested template.
 
-Refer to `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLocalized(kotlin.String)` for the detail of `requestedTemplate` argument.
+Refer to appendLocalized for the detail of `requestedTemplate` argument.
 
 | Parameters ||
 |---|---|
@@ -1270,12 +1270,12 @@ Refer to `https://developer.android.com/reference/kotlin/java/time/format/DateTi
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if `requestedTemplate` does not match the regular expression syntax described in `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLocalized(kotlin.String)`. |
+| `java.lang.IllegalArgumentException` | if `requestedTemplate` does not match the regular expression syntax described in appendLocalized. |
 | `java.time.DateTimeException` | if a match for the localized pattern for `requestedTemplate` is not available |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#appendLocalized(kotlin.String)`
+- appendLocalized
 
 ### getLocalizedDateTimePattern
 
@@ -1318,7 +1318,7 @@ fun optionalEnd(): DateTimeFormatterBuilder!
 
 Ends an optional section.
 
-The output of formatting can include optional sections, which may be nested. An optional section is started by calling `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalStart()` and ended using this method (or at the end of the builder).
+The output of formatting can include optional sections, which may be nested. An optional section is started by calling optionalStart and ended using this method (or at the end of the builder).
 
 Calling this method without having previously called `optionalStart` will throw an exception. Calling this method immediately after calling `optionalStart` has no effect on the formatter other than ending the (empty) optional section.
 
@@ -1344,7 +1344,7 @@ fun optionalStart(): DateTimeFormatterBuilder!
 
 Mark the start of an optional section.
 
-The output of formatting can include optional sections, which may be nested. An optional section is started by calling this method and ended by calling `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalEnd()` or by ending the build process.
+The output of formatting can include optional sections, which may be nested. An optional section is started by calling this method and ended by calling optionalEnd or by ending the build process.
 
 All elements in the optional section are treated as optional. During formatting, the section is only output if data is available in the `TemporalAccessor` for all the elements in the section. During parsing, the whole section may be missing from the parsed string.
 
@@ -1426,7 +1426,7 @@ Changes the parse style to be case insensitive for the remainder of the formatte
 
 Parsing can be case sensitive or insensitive - by default it is case sensitive. This method allows the case sensitivity setting of parsing to be changed.
 
-Calling this method changes the state of the builder such that all subsequent builder method calls will parse text in case insensitive mode. See `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseCaseSensitive()` for the opposite setting. The parse case sensitive/insensitive methods may be called at any point in the builder, thus the parser can swap between case parsing modes multiple times during the parse.
+Calling this method changes the state of the builder such that all subsequent builder method calls will parse text in case insensitive mode. See parseCaseSensitive for the opposite setting. The parse case sensitive/insensitive methods may be called at any point in the builder, thus the parser can swap between case parsing modes multiple times during the parse.
 
 | Return ||
 |---|---|
@@ -1444,7 +1444,7 @@ Changes the parse style to be case sensitive for the remainder of the formatter.
 
 Parsing can be case sensitive or insensitive - by default it is case sensitive. This method allows the case sensitivity setting of parsing to be changed.
 
-Calling this method changes the state of the builder such that all subsequent builder method calls will parse text in case sensitive mode. See `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseCaseInsensitive()` for the opposite setting. The parse case sensitive/insensitive methods may be called at any point in the builder, thus the parser can swap between case parsing modes multiple times during the parse.
+Calling this method changes the state of the builder such that all subsequent builder method calls will parse text in case sensitive mode. See parseCaseInsensitive for the opposite setting. The parse case sensitive/insensitive methods may be called at any point in the builder, thus the parser can swap between case parsing modes multiple times during the parse.
 
 Since the default is case sensitive, this method should only be used after a previous call to `parseCaseInsensitive`.
 
@@ -1492,7 +1492,7 @@ fun parseLenient(): DateTimeFormatterBuilder!
 
 Changes the parse style to be lenient for the remainder of the formatter. Note that case sensitivity is set separately to this method.
 
-Parsing can be strict or lenient - by default it is strict. This controls the degree of flexibility in matching the text and sign styles. Applications calling this method should typically also call `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseCaseInsensitive()`.
+Parsing can be strict or lenient - by default it is strict. This controls the degree of flexibility in matching the text and sign styles. Applications calling this method should typically also call parseCaseInsensitive.
 
 When used, this method changes the parsing to be lenient from this point onwards. The change will remain in force until the end of the formatter that is eventually constructed or until `parseStrict` is called.
 
@@ -1512,7 +1512,7 @@ Changes the parse style to be strict for the remainder of the formatter.
 
 Parsing can be strict or lenient - by default it is strict. This controls the degree of flexibility in matching the text and sign styles.
 
-When used, this method changes the parsing to be strict from this point onwards. As strict is the default, this is normally only needed after calling `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#parseLenient()`. The change will remain in force until the end of the formatter that is eventually constructed or until `parseLenient` is called.
+When used, this method changes the parsing to be strict from this point onwards. As strict is the default, this is normally only needed after calling parseLenient. The change will remain in force until the end of the formatter that is eventually constructed or until `parseLenient` is called.
 
 | Return ||
 |---|---|
@@ -1528,9 +1528,9 @@ fun toFormatter(): DateTimeFormatter!
 
 Completes this builder by creating the `DateTimeFormatter` using the default locale.
 
-This will create a formatter with the [default FORMAT locale](../java.util/Locale.md)). Numbers will be printed and parsed using the standard DecimalStyle. The resolver style will be `https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle`.
+This will create a formatter with the [default FORMAT locale](../java.util/Locale.md)). Numbers will be printed and parsed using the standard DecimalStyle. The resolver style will be ResolverStyle.
 
-Calling this method will end any open optional sections by repeatedly calling `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalEnd()` before creating the formatter.
+Calling this method will end any open optional sections by repeatedly calling optionalEnd before creating the formatter.
 
 This builder can still be used after creating the formatter if desired, although the state may have been changed by calls to `optionalEnd`.
 
@@ -1548,9 +1548,9 @@ fun toFormatter(locale: Locale!): DateTimeFormatter!
 
 Completes this builder by creating the `DateTimeFormatter` using the specified locale.
 
-This will create a formatter with the specified locale. Numbers will be printed and parsed using the standard DecimalStyle. The resolver style will be `https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle`.
+This will create a formatter with the specified locale. Numbers will be printed and parsed using the standard DecimalStyle. The resolver style will be ResolverStyle.
 
-Calling this method will end any open optional sections by repeatedly calling `https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatterBuilder#optionalEnd()` before creating the formatter.
+Calling this method will end any open optional sections by repeatedly calling optionalEnd before creating the formatter.
 
 This builder can still be used after creating the formatter if desired, although the state may have been changed by calls to `optionalEnd`.
 

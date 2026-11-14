@@ -21,11 +21,11 @@ A class for receiving HPKE messages.
 
 | Public methods ||
 |---|---|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Recipient#export(kotlin.Int,%20kotlin.ByteArray)(length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, context: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Exports secret key material from this Recipient as described in RFC 9180. |
-| open [Provider](../java.security/Provider.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Recipient#getProvider()()` Returns the `https://developer.android.com/reference/kotlin/java/security/Provider.html#` being used by this Recipient. |
-| open [HpkeSpi](HpkeSpi.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Recipient#getSpi()()` Returns the `https://developer.android.com/reference/kotlin/android/crypto/hpke/HpkeSpi` being used by this Recipient. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | export Exports secret key material from this Recipient as described in RFC 9180. |
+| open [Provider](../java.security/Provider.md) | getProvider Returns the `https://developer.android.com/reference/kotlin/java/security/Provider.html#` being used by this Recipient. |
+| open [HpkeSpi](HpkeSpi.md) | getSpi Returns the HpkeSpi being used by this Recipient. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Recipient#open(kotlin.ByteArray,%20kotlin.ByteArray)(ciphertext: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, aad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` Opens a message, using the internal key schedule maintained by this Recipient. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | open Opens a message, using the internal key schedule maintained by this Recipient. |
 
 ## Public methods
 
@@ -71,11 +71,11 @@ Returns the `https://developer.android.com/reference/kotlin/java/security/Provid
 open fun getSpi(): HpkeSpi
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/crypto/hpke/HpkeSpi` being used by this Recipient.
+Returns the HpkeSpi being used by this Recipient.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/crypto/hpke/HpkeSpi` | the SPI. This value cannot be `null`. |
+| HpkeSpi | the SPI. This value cannot be `null`. |
 
 ### open
 

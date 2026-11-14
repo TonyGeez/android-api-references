@@ -16,23 +16,23 @@ Class to store version numbers of the form major.minor.milli.micro.
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#compareTo(android.icu.util.VersionInfo)(other: https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#!)` Compares other with this VersionInfo. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this version information is equals to the argument version |
-| static [VersionInfo](VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares other with this VersionInfo. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks if this version information is equals to the argument version |
+| static [VersionInfo](VersionInfo.md)! | getInstance Returns an instance of VersionInfo with the argument version. |
 | --- | --- |
-| static [VersionInfo](VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
-| static [VersionInfo](VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
-| static [VersionInfo](VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(major: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milli: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, micro: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](VersionInfo.md)! | getInstance Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](VersionInfo.md)! | getInstance Returns an instance of VersionInfo with the argument version. |
+| static [VersionInfo](VersionInfo.md)! | getInstance Returns an instance of VersionInfo with the argument version. |
 | --- | --- |
-| static [VersionInfo](VersionInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getInstance(kotlin.String)(version: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns an instance of VersionInfo with the argument version. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getMajor()()` Returns the major version number |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getMicro()()` Returns the micro version number |
+| static [VersionInfo](VersionInfo.md)! | getInstance Returns an instance of VersionInfo with the argument version. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMajor Returns the major version number |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMicro Returns the micro version number |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getMilli()()` Returns the milli version number |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#getMinor()()` Returns the minor version number |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#hashCode()()` Returns the hash code value for this set. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMilli Returns the milli version number |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinor Returns the minor version number |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hash code value for this set. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/VersionInfo#toString()()` Returns the String representative of VersionInfo in the format of "major. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns the String representative of VersionInfo in the format of "major. |
 
 | Properties ||
 |---|---|
@@ -321,7 +321,7 @@ Returns the hash code value for this set.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()`
+- hashCode
 
 ### toString
 

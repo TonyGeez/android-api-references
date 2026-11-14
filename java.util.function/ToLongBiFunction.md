@@ -8,15 +8,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 | [java.util.function.ToLongBiFunction](ToLongBiFunction.md) |
 
-Represents a function that accepts two arguments and produces a long-valued result. This is the `long`-producing primitive specialization for `https://developer.android.com/reference/kotlin/java/util/function/BiFunction`.
+Represents a function that accepts two arguments and produces a long-valued result. This is the `long`-producing primitive specialization for BiFunction.
 
-This is a [functional interface](_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction#applyAsLong(java.util.function.ToLongBiFunction.T,%20java.util.function.ToLongBiFunction.U)`.
+This is a [functional interface](_package.md) whose functional method is applyAsLong.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/function/ToLongBiFunction#applyAsLong(java.util.function.ToLongBiFunction.T,%20java.util.function.ToLongBiFunction.U)(t: T, u: U)` Applies this function to the given arguments. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | applyAsLong Applies this function to the given arguments. |
 
 ## Public methods
 

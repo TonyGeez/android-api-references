@@ -34,7 +34,7 @@ AuthenticationPolicyManager exposes a set of methods that can be used by privile
 
 This will require the caller to have the android.Manifest.permission#MANAGE_CROSS_DEVICE_AUTHENTICATED_MESSAGES permission.
 
-Cross device access requests can be initiated on one device by calling `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager#createCrossDeviceAuthenticationRequest(java.util.UUID,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`. The returned token should be transmitted to another device, via any means, and the receiving service should then use that token to call #parseCrossDeviceAuthenticationRequest(byte\[\],java.lang.String,java.util.concurrent.Executor,android.os.OutcomeReceiver) before executing the request. This ensures that a common set of security checks are verified before executing the request and it decouples many form factor specific checks from the service being guarded.
+Cross device access requests can be initiated on one device by calling createCrossDeviceAuthenticationRequest. The returned token should be transmitted to another device, via any means, and the receiving service should then use that token to call #parseCrossDeviceAuthenticationRequest(byte\[\],java.lang.String,java.util.concurrent.Executor,android.os.OutcomeReceiver) before executing the request. This ensures that a common set of security checks are verified before executing the request and it decouples many form factor specific checks from the service being guarded.
 
 ## Summary
 
@@ -45,7 +45,7 @@ Cross device access requests can be initiated on one device by calling `https://
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager#createCrossDeviceAuthenticationRequest(java.util.UUID,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(associationToken: https://developer.android.com/reference/kotlin/java/util/UUID.html#, callbackExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/CrossDeviceAuthenticationException!>)` Creates a new cross-device authentication request associated with the given `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`'s obfuscated remote device ID. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createCrossDeviceAuthenticationRequest Creates a new cross-device authentication request associated with the given `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`'s obfuscated remote device ID. |
 
 ## Constants
 
@@ -59,7 +59,7 @@ static val PROPERTY_CROSS_DEVICE_TRUSTED_CERTIFICATES: String
 
 An optional property that applications can define in their manifest's `<application>` element on the **target device** (the receiver of the request) to specify trusted signing certificates for cross-device authentication requests.
 
-This property is only relevant for applications that use the cross-device authentication framework (`https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager#createCrossDeviceAuthenticationRequest(java.util.UUID,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`).
+This property is only relevant for applications that use the cross-device authentication framework (createCrossDeviceAuthenticationRequest).
 
 This property allows the target application to trust cross-device authentication requests originating from applications signed with different certificates. The value should be a comma-separated list of SHA-256 fingerprints of the trusted certificates and a maximum of 50 entries is supported.
 
@@ -75,7 +75,7 @@ static val PROPERTY_CROSS_DEVICE_TRUSTED_PACKAGES: String
 
 An optional property that applications can define in their manifest's `<application>` element on the **originating device** (the sender of the request) to specify package name aliases.
 
-This property is only relevant for applications that use the cross-device authentication framework (`https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager#createCrossDeviceAuthenticationRequest(java.util.UUID,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`). For example, an application should use this property when the application's package name on a wearable, or any other form factor, is different than the package name on the phone.
+This property is only relevant for applications that use the cross-device authentication framework (createCrossDeviceAuthenticationRequest). For example, an application should use this property when the application's package name on a wearable, or any other form factor, is different than the package name on the phone.
 
 Using these aliases does not remove the need for the applications on each device to be signed with the same certificate unless `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager#PROPERTY_CROSS_DEVICE_TRUSTED_CERTIFICATES:kotlin.String` is also used.
 
@@ -95,7 +95,7 @@ fun createCrossDeviceAuthenticationRequest(
 ): Unit
 ```
 
-Creates a new cross-device authentication request associated with the given `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`'s obfuscated remote device ID. Callers typically get this ID from a companion application which uses `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo.html#getAssociationToken()` to retrieve it along with other device information that will be shared with applications.
+Creates a new cross-device authentication request associated with the given `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#`'s obfuscated remote device ID. Callers typically get this ID from a companion application which uses getAssociationToken to retrieve it along with other device information that will be shared with applications.
 
 Returns an opaque token to be passed to the remote device and used as a parameter in #parseCrossDeviceAuthenticationRequest(byte\[\],java.lang.String,java.util.concurrent.Executor,android.os.OutcomeReceiver) to unpack the data and run authorization checks. In most cases, applications will pass this token as a parameter to another service that will parse the token to verify the request before proceeding.
 
@@ -103,13 +103,13 @@ Use `https://developer.android.com/reference/kotlin/android/security/authenticat
 
 Use `https://developer.android.com/reference/kotlin/android/security/authenticationpolicy/AuthenticationPolicyManager#PROPERTY_CROSS_DEVICE_TRUSTED_CERTIFICATES:kotlin.String` if the application is signed with a different certificate on the remote device.
 
-Using this API requires that the association has been granted a supported trust type via `https://developer.android.com/reference/kotlin/android/companion/CompanionDeviceManager.html#requestDeviceTrustPairing(kotlin.Int,%20android.companion.OutOfBandPairingRequest,%20kotlin.IntArray,%20java.util.concurrent.Executor,%20android.companion.CompanionDeviceManager.TrustPairingCallback)` to ensure the user is informed that cross-device actions are allowed. Untrusted associations will always fail with an error.
+Using this API requires that the association has been granted a supported trust type via requestDeviceTrustPairing to ensure the user is informed that cross-device actions are allowed. Untrusted associations will always fail with an error.
 
 Using this API may also require meeting additional requirements, such as showing an active notification to the user while the cross-device operation is in progress. Refer to the documentation of the service that is guarded by this API for details.
 
 | Parameters ||
 |---|---|
 | `associationToken` | [UUID](../java.util/UUID.md): the association token of the remote device where this request will be processed. This value cannot be `null`. |
-| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!, [CrossDeviceAuthenticationException](CrossDeviceAuthenticationException.md)!\>: the receiver for the encrypted request on success, or an exception on failure. This value cannot be `null`. |
 | --- | --- |

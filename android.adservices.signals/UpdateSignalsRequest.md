@@ -25,15 +25,15 @@ The request object for updateSignals.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest.Builder` Builder for `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest.Builder` Builder for UpdateSignalsRequest objects. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
-| [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#getUpdateUri()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#hashCode()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals <br /> |
+| [Uri](../android.net/Uri.md) | getUpdateUri <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#toString()()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString <br /> |
 
 ## Public methods
 
@@ -54,7 +54,7 @@ fun equals(other: Any?): Boolean
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if and only if the other object is `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#` with the same update URI. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `true` if and only if the other object is UpdateSignalsRequest with the same update URI. |
 
 ### getUpdateUri
 
@@ -85,7 +85,7 @@ fun hashCode(): Int
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the hash of the `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#` object's data. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | the hash of the UpdateSignalsRequest object's data. |
 
 ### toString
 
@@ -100,4 +100,4 @@ fun toString(): String
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | a human-readable representation of `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | a human-readable representation of UpdateSignalsRequest. |

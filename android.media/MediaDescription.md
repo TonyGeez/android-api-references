@@ -13,13 +13,13 @@ open class MediaDescription : Parcelable
 | --- | --- |
 | ↳ | [android.media.MediaDescription](MediaDescription.md) |
 
-A simple set of metadata for a media item suitable for display. This can be created using the Builder or retrieved from existing metadata using `https://developer.android.com/reference/kotlin/android/media/MediaMetadata#getDescription()`.
+A simple set of metadata for a media item suitable for display. This can be created using the Builder or retrieved from existing metadata using getDescription.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| open | `https://developer.android.com/reference/kotlin/android/media/MediaDescription.Builder` Builder for `https://developer.android.com/reference/kotlin/android/media/MediaDescription#` objects. |
+| open | `https://developer.android.com/reference/kotlin/android/media/MediaDescription.Builder` Builder for MediaDescription objects. |
 
 | Constants ||
 |---|---|
@@ -36,25 +36,25 @@ A simple set of metadata for a media item suitable for display. This can be crea
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getDescription()()` Returns a description suitable for display or null. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getDescription Returns a description suitable for display or null. |
 | --- | --- |
-| open [Bundle](../android.os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getExtras()()` Returns any extras that were added to the description. |
-| open [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconBitmap()()` Returns a bitmap icon suitable for display or null. |
-| open [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getIconUri()()` Returns a Uri for an icon suitable for display or null. |
+| open [Bundle](../android.os/Bundle.md)? | getExtras Returns any extras that were added to the description. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | getIconBitmap Returns a bitmap icon suitable for display or null. |
+| open [Uri](../android.net/Uri.md)? | getIconUri Returns a Uri for an icon suitable for display or null. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaId()()` Returns the media id or null. |
-| open [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getMediaUri()()` Returns a Uri representing this content or null. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getSubtitle()()` Returns a subtitle suitable for display or null. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getMediaId Returns the media id or null. |
+| open [Uri](../android.net/Uri.md)? | getMediaUri Returns a Uri representing this content or null. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getSubtitle Returns a subtitle suitable for display or null. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getTitle()()` Returns a title suitable for display or null. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#toString()()` Returns a string representation of the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaDescription#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTitle Returns a title suitable for display or null. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -171,7 +171,7 @@ Used as a long extra field to indicate the bluetooth folder type of the media it
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/MediaDescription#getExtras()`
+- getExtras
 
 ## Public methods
 
@@ -183,7 +183,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

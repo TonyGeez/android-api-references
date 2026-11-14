@@ -45,54 +45,54 @@ Use of this class requires the `https://developer.android.com/reference/kotlin/a
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#PROTOCOL_AND_TECHNOLOGY_ROUTE_UICC:kotlin.Int` Route to UICC. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#PROTOCOL_AND_TECHNOLOGY_ROUTE_UNSET:kotlin.Int` Route unset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ALWAYS_ASK:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ASK_IF_CONFLICT:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ALWAYS_ASK:kotlin.Int` Return value for getSelectionModeForCategory. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ASK_IF_CONFLICT:kotlin.Int` Return value for getSelectionModeForCategory. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_PREFER_DEFAULT:kotlin.Int` Return value for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_PREFER_DEFAULT:kotlin.Int` Return value for getSelectionModeForCategory. |
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#categoryAllowsForegroundPreference(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns whether the user has allowed AIDs registered in the specified category to be handled by a service that is preferred by the foreground application, instead of by a pre-configured default. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getAidsForPreferredPaymentService()()` Retrieves the registered AIDs for the preferred payment service. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getAidsForService(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieves the currently registered AIDs for the specified category for a service. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | categoryAllowsForegroundPreference Returns whether the user has allowed AIDs registered in the specified category to be handled by a service that is preferred by the foreground application, instead of by a pre-configured default. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getAidsForPreferredPaymentService Retrieves the registered AIDs for the preferred payment service. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAidsForService Retrieves the currently registered AIDs for the specified category for a service. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getDefaultNfcSubscriptionId()()` Returns the system's default NFC subscription id. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getDescriptionForPreferredPaymentService()()` Returns a user-visible description of the preferred payment service. |
-| static [CardEmulation](CardEmulation.md)! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getInstance(android.nfc.NfcAdapter)(adapter: https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.html#!)` Helper to get an instance of this class. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDefaultNfcSubscriptionId Returns the system's default NFC subscription id. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getDescriptionForPreferredPaymentService Returns a user-visible description of the preferred payment service. |
+| static [CardEmulation](CardEmulation.md)! | getInstance Helper to get an instance of this class. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getPollingLoopFiltersForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve all the polling loop filters registered for a `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getPollingLoopPatternFiltersForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve all the polling loop pattern filters registered for a `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getRouteDestinationForPreferredPaymentService()()` Retrieves the route destination for the preferred payment service. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getPollingLoopFiltersForService Retrieve all the polling loop filters registered for a HostApduService. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getPollingLoopPatternFiltersForService Retrieve all the polling loop pattern filters registered for a HostApduService. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getRouteDestinationForPreferredPaymentService Retrieves the route destination for the preferred payment service. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the service selection mode for the passed in category. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#isDefaultServiceForAid(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, aid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Allows an application to query whether a service is currently the default handler for a specified ISO7816-4 Application ID. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#isDefaultServiceForCategory(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Allows an application to query whether a service is currently the default service to handle a card emulation category. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSelectionModeForCategory Returns the service selection mode for the passed in category. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDefaultServiceForAid Allows an application to query whether a service is currently the default handler for a specified ISO7816-4 Application ID. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDefaultServiceForCategory Allows an application to query whether a service is currently the default service to handle a card emulation category. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#isDeviceScreenOnRequiredForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Checks whether the device must have its screen on for the service to be activated. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#isDeviceUnlockRequiredForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Checks whether the device must be unlocked for the service to be activated. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#isEuiccSupported()()` Is EUICC supported as a Secure Element EE which supports off host card emulation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceScreenOnRequiredForService Checks whether the device must have its screen on for the service to be activated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isDeviceUnlockRequiredForService Checks whether the device must be unlocked for the service to be activated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEuiccSupported Is EUICC supported as a Secure Element EE which supports off host card emulation. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerAidsForService(android.content.ComponentName,%20kotlin.String,%20kotlin.collections.MutableList)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, aids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Registers a list of AIDs for a specific category for the specified service. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerNfcEventCallback(java.util.concurrent.Executor,%20android.nfc.cardemulation.CardEmulation.NfcEventCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation.NfcEventCallback)` Register a callback for NFC events. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, pollingLoopFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, autoTransact: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Register a polling loop filter (PLF) for a HostApduService and indicate whether it should auto-transact or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | registerAidsForService Registers a list of AIDs for a specific category for the specified service. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerNfcEventCallback Register a callback for NFC events. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | registerPollingLoopFilterForService Register a polling loop filter (PLF) for a HostApduService and indicate whether it should auto-transact or not. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopPatternFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, pollingLoopPatternFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, autoTransact: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Register a polling loop pattern filter (PLPF) for a HostApduService and indicate whether it should auto-transact or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#removeAidsForService(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Removes a previously registered list of AIDs for the specified category for the service provided. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#removePollingLoopFilterForService(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, pollingLoopFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Unregister a polling loop filter (PLF) for a HostApduService. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | registerPollingLoopPatternFilterForService Register a polling loop pattern filter (PLPF) for a HostApduService and indicate whether it should auto-transact or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removeAidsForService Removes a previously registered list of AIDs for the specified category for the service provided. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removePollingLoopFilterForService Unregister a polling loop filter (PLF) for a HostApduService. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#removePollingLoopPatternFilterForService(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, pollingLoopPatternFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Unregister a polling loop pattern filter (PLPF) for a HostApduService. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setOffHostForService(android.content.ComponentName,%20kotlin.String)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, offHostSecureElement: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Sets the off-host Secure Element for the given service. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setPreferredService(android.app.Activity,%20android.content.ComponentName)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Allows a foreground application to specify which card emulation service should be preferred while a specific Activity is in the foreground. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | removePollingLoopPatternFilterForService Unregister a polling loop pattern filter (PLPF) for a HostApduService. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setOffHostForService Sets the off-host Secure Element for the given service. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setPreferredService Allows a foreground application to specify which card emulation service should be preferred while a specific Activity is in the foreground. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setRequireDeviceScreenOnForService(android.content.ComponentName,%20kotlin.Boolean)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the device must have its screen on for the service to be activated. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setRequireDeviceUnlockForService(android.content.ComponentName,%20kotlin.Boolean)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether the device must be unlocked for the service to be activated. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setShouldDefaultToObserveModeForService(android.content.ComponentName,%20kotlin.Boolean)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, enable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether when this service becomes the preferred service, if the NFC stack should enable observe mode or disable observe mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRequireDeviceScreenOnForService Sets whether the device must have its screen on for the service to be activated. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRequireDeviceUnlockForService Sets whether the device must be unlocked for the service to be activated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setShouldDefaultToObserveModeForService Sets whether when this service becomes the preferred service, if the NFC stack should enable observe mode or disable observe mode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#supportsAidPrefixRegistration()()` Some devices may allow an application to register all AIDs that starts with a certain prefix, e. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#unregisterNfcEventCallback(android.nfc.cardemulation.CardEmulation.NfcEventCallback)(callback: https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation.NfcEventCallback)` Unregister an NFC event callback that was previously registered with `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerNfcEventCallback(java.util.concurrent.Executor,%20android.nfc.cardemulation.CardEmulation.NfcEventCallback)`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#unsetOffHostForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Unsets the off-host Secure Element for the given service. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsAidPrefixRegistration Some devices may allow an application to register all AIDs that starts with a certain prefix, e. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterNfcEventCallback Unregister an NFC event callback that was previously registered with registerNfcEventCallback. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | unsetOffHostForService Unsets the off-host Secure Element for the given service. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#unsetPreferredService(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!)` Unsets the preferred service for the specified Activity. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | unsetPreferredService Unsets the preferred service for the specified Activity. |
 
 ## Constants
 
@@ -105,7 +105,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 static val ACTION_CHANGE_DEFAULT: String
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#createRequestRoleIntent(kotlin.String)` with `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_WALLET:kotlin.String` parameter and `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` instead.*
+**Deprecated:** *Please use createRequestRoleIntent with `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_WALLET:kotlin.String` parameter and startActivityForResult instead.*
 
 Activity action: ask the user to change the default card emulation service for a certain category. This will show a dialog that asks the user whether they want to replace the current default service with the service identified with the ComponentName specified in `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#EXTRA_SERVICE_COMPONENT:kotlin.String`, for the category specified in `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#EXTRA_CATEGORY:kotlin.String`. There is an optional extra field using `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_USER:kotlin.String` to specify the `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that owns the app.
 
@@ -296,7 +296,7 @@ Route to T4T NDEF-NCEE emulation.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#`
+- CardEmulation
 
 ### PROTOCOL_AND_TECHNOLOGY_ROUTE_UICC
 
@@ -330,9 +330,9 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val SELECTION_MODE_ALWAYS_ASK: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)`.
+Return value for getSelectionModeForCategory.
 
-In this mode, when using ISO-DEP card emulation with `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/OffHostApduService`, whenever an Application ID (AID) of this category is selected, the user is asked which service they want to use to handle the transaction, even if there is only one matching service.
+In this mode, when using ISO-DEP card emulation with HostApduService or OffHostApduService, whenever an Application ID (AID) of this category is selected, the user is asked which service they want to use to handle the transaction, even if there is only one matching service.
 
  Value: 1
 
@@ -344,9 +344,9 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val SELECTION_MODE_ASK_IF_CONFLICT: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)`.
+Return value for getSelectionModeForCategory.
 
-In this mode, when using ISO-DEP card emulation with `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/OffHostApduService`, the user will only be asked to select a service if the Application ID (AID) selected by the reader has been registered by multiple services. If there is only one service that has registered for the AID, that service will be invoked directly.
+In this mode, when using ISO-DEP card emulation with HostApduService or OffHostApduService, the user will only be asked to select a service if the Application ID (AID) selected by the reader has been registered by multiple services. If there is only one service that has registered for the AID, that service will be invoked directly.
 
  Value: 2
 
@@ -358,11 +358,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val SELECTION_MODE_PREFER_DEFAULT: Int
 ```
 
-Return value for `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)`.
+Return value for getSelectionModeForCategory.
 
 In this mode, the user has set a default service for this category.
 
-When using ISO-DEP card emulation with `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/OffHostApduService`, if a remote NFC device selects any of the Application IDs (AIDs) that the default service has registered in this category, that service will automatically be bound to to handle the transaction.
+When using ISO-DEP card emulation with HostApduService or OffHostApduService, if a remote NFC device selects any of the Application IDs (AIDs) that the default service has registered in this category, that service will automatically be bound to to handle the transaction.
 
  Value: 0
 
@@ -376,7 +376,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun categoryAllowsForegroundPreference(category: String!): Boolean
 ```
 
-Returns whether the user has allowed AIDs registered in the specified category to be handled by a service that is preferred by the foreground application, instead of by a pre-configured default. Foreground applications can set such preferences using the `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setPreferredService(android.app.Activity,%20android.content.ComponentName)` method.
+Returns whether the user has allowed AIDs registered in the specified category to be handled by a service that is preferred by the foreground application, instead of by a pre-configured default. Foreground applications can set such preferences using the setPreferredService method.
 
 Starting with `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, this method will always return true.
 
@@ -416,7 +416,7 @@ fun getAidsForService(
 
 Retrieves the currently registered AIDs for the specified category for a service.
 
-Note that this will only return AIDs that were dynamically registered using `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerAidsForService(android.content.ComponentName,%20kotlin.String,%20kotlin.collections.MutableList)` method. It will \*not\* return AIDs that were statically registered in the manifest.
+Note that this will only return AIDs that were dynamically registered using registerAidsForService method. It will \*not\* return AIDs that were statically registered in the manifest.
 
 | Parameters ||
 |---|---|
@@ -441,7 +441,7 @@ For devices with multiple UICC/EUICC that is configured to be NFCEE, this return
 
 If the device has no UICC that can serve as NFCEE, this will return `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int`.
 . 
-Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
+Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using hasSystemFeature.
 
 | Return ||
 |---|---|
@@ -494,7 +494,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getPollingLoopFiltersForService(service: ComponentName): MutableList<String!>
 ```
 
-Retrieve all the polling loop filters registered for a `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService`.
+Retrieve all the polling loop filters registered for a HostApduService.
 
 | Parameters ||
 |---|---|
@@ -510,7 +510,7 @@ Retrieve all the polling loop filters registered for a `https://developer.androi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`
+- registerPollingLoopFilterForService
 
 ### getPollingLoopPatternFiltersForService
 
@@ -520,7 +520,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getPollingLoopPatternFiltersForService(service: ComponentName): MutableList<String!>
 ```
 
-Retrieve all the polling loop pattern filters registered for a `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService`.
+Retrieve all the polling loop pattern filters registered for a HostApduService.
 
 | Parameters ||
 |---|---|
@@ -536,7 +536,7 @@ Retrieve all the polling loop pattern filters registered for a `https://develope
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopPatternFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)`
+- registerPollingLoopPatternFilterForService
 
 ### getRouteDestinationForPreferredPaymentService
 
@@ -616,7 +616,7 @@ fun isDefaultServiceForCategory(
 
 Allows an application to query whether a service is currently the default service to handle a card emulation category.
 
-Note that if `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getSelectionModeForCategory(kotlin.String)` returns `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ALWAYS_ASK:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ASK_IF_CONFLICT:kotlin.Int`, this method will always return false. That is because in these selection modes a default can't be set at the category level. For categories where the selection mode is `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ALWAYS_ASK:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ASK_IF_CONFLICT:kotlin.Int`, use `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#isDefaultServiceForAid(android.content.ComponentName,%20kotlin.String)` to determine whether a service is the default for a specific AID.
+Note that if getSelectionModeForCategory returns `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ALWAYS_ASK:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ASK_IF_CONFLICT:kotlin.Int`, this method will always return false. That is because in these selection modes a default can't be set at the category level. For categories where the selection mode is `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ALWAYS_ASK:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#SELECTION_MODE_ASK_IF_CONFLICT:kotlin.Int`, use isDefaultServiceForAid to determine whether a service is the default for a specific AID.
 
 | Parameters ||
 |---|---|
@@ -729,7 +729,7 @@ Register a callback for NFC events.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor to run the call back with. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor to run the call back with. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [CardEmulation.NfcEventCallback](../android/nfc/cardemulation/CardEmulation.NfcEventCallback.md): The callback to register. This value cannot be `null`. |
 
 ### registerPollingLoopFilterForService
@@ -744,7 +744,7 @@ fun registerPollingLoopFilterForService(
 ): Boolean
 ```
 
-Register a polling loop filter (PLF) for a HostApduService and indicate whether it should auto-transact or not. The PLF can be sequence of an even number of at least 2 hexadecimal numbers (0-9, A-F or a-f), representing a series of bytes. When non-standard polling loop frame matches this sequence exactly, it may be delivered to `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processPollingFrames(kotlin.collections.MutableList)`. If auto-transact is set to true and this service is currently preferred or there are no other services registered for this filter then observe mode will also be disabled.
+Register a polling loop filter (PLF) for a HostApduService and indicate whether it should auto-transact or not. The PLF can be sequence of an even number of at least 2 hexadecimal numbers (0-9, A-F or a-f), representing a series of bytes. When non-standard polling loop frame matches this sequence exactly, it may be delivered to processPollingFrames. If auto-transact is set to true and this service is currently preferred or there are no other services registered for this filter then observe mode will also be disabled.
 
 When auto-transact is set to true, if the filter matches the following requirements, it will be considered to be included in the firmware filtering list (if the device supports exit frames). Filters not matching these requirements will be handled via the NFC stack software auto-transact functionality.
 
@@ -777,7 +777,7 @@ fun registerPollingLoopPatternFilterForService(
 ): Boolean
 ```
 
-Register a polling loop pattern filter (PLPF) for a HostApduService and indicate whether it should auto-transact or not. The pattern may include the characters 0-9 and A-F as well as the regular expression operators \`.\`, \`?\` and \`\*\` after the first byte. When the beginning of a non-standard polling loop frame matches this sequence exactly, it may be delivered to `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processPollingFrames(kotlin.collections.MutableList)`. If auto-transact is set to true and this service is currently preferred or there are no other services registered for this filter then observe mode will also be disabled.
+Register a polling loop pattern filter (PLPF) for a HostApduService and indicate whether it should auto-transact or not. The pattern may include the characters 0-9 and A-F as well as the regular expression operators \`.\`, \`?\` and \`\*\` after the first byte. When the beginning of a non-standard polling loop frame matches this sequence exactly, it may be delivered to processPollingFrames. If auto-transact is set to true and this service is currently preferred or there are no other services registered for this filter then observe mode will also be disabled.
 
 When auto-transact is set to true, if the pattern matches the following requirements, it will be considered to be included in the firmware filtering list (if the device supports exit frames). Patterns not matching these requirements will be handled via the NFC stack software auto-transact functionality.
 
@@ -789,7 +789,7 @@ When auto-transact is set to true, if the pattern matches the following requirem
 | Parameters ||
 |---|---|
 | `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to register the filter for. This value cannot be `null`. |
-| `pollingLoopPatternFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The pattern filter to register, must to be compatible with `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#compile(kotlin.String)` and only contain hexadecimal numbers and \`.\`, \`?\` and \`\*\` operators. This value cannot be `null`. |
+| `pollingLoopPatternFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The pattern filter to register, must to be compatible with compile and only contain hexadecimal numbers and \`.\`, \`?\` and \`\*\` operators. This value cannot be `null`. |
 | `autoTransact` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true to have the NFC stack automatically disable observe mode and allow transactions to proceed when this filter matches, false otherwise |
 | --- | --- |
 
@@ -815,7 +815,7 @@ fun removeAidsForService(
 
 Removes a previously registered list of AIDs for the specified category for the service provided.
 
-Note that this will only remove AIDs that were dynamically registered using the `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerAidsForService(android.content.ComponentName,%20kotlin.String,%20kotlin.collections.MutableList)` method. It will \*not\* remove AIDs that were statically registered in the manifest. If dynamically registered AIDs are removed using this method, and a statically registered AID group for the same category exists in the manifest, the static AID group will become active again.
+Note that this will only remove AIDs that were dynamically registered using the registerAidsForService method. It will \*not\* remove AIDs that were statically registered in the manifest. If dynamically registered AIDs are removed using this method, and a statically registered AID group for the same category exists in the manifest, the static AID group will become active again.
 
 | Parameters ||
 |---|---|
@@ -837,7 +837,7 @@ fun removePollingLoopFilterForService(
 ): Boolean
 ```
 
-Unregister a polling loop filter (PLF) for a HostApduService. If the PLF had previously been registered via `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)` for this service it will be removed.
+Unregister a polling loop filter (PLF) for a HostApduService. If the PLF had previously been registered via registerPollingLoopFilterForService for this service it will be removed.
 
 | Parameters ||
 |---|---|
@@ -863,12 +863,12 @@ fun removePollingLoopPatternFilterForService(
 ): Boolean
 ```
 
-Unregister a polling loop pattern filter (PLPF) for a HostApduService. If the PLF had previously been registered via `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerPollingLoopFilterForService(android.content.ComponentName,%20kotlin.String,%20kotlin.Boolean)` for this service it will be removed.
+Unregister a polling loop pattern filter (PLPF) for a HostApduService. If the PLF had previously been registered via registerPollingLoopFilterForService for this service it will be removed.
 
 | Parameters ||
 |---|---|
 | `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to unregister the filter for. This value cannot be `null`. |
-| `pollingLoopPatternFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The filter to unregister, must to be compatible with `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#compile(kotlin.String)` and only contain hexadecimal numbers and\`.\`, \`?\` and \`\*\` operators. This value cannot be `null`. |
+| `pollingLoopPatternFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The filter to unregister, must to be compatible with compile and only contain hexadecimal numbers and\`.\`, \`?\` and \`\*\` operators. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -921,14 +921,14 @@ fun setPreferredService(
 
 Allows a foreground application to specify which card emulation service should be preferred while a specific Activity is in the foreground.
 
-The specified Activity must currently be in resumed state. A good paradigm is to call this method in your `https://developer.android.com/reference/kotlin/android/app/Activity.html#onResume()`, and to call `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#unsetPreferredService(android.app.Activity)` in your `https://developer.android.com/reference/kotlin/android/app/Activity.html#onPause()`.
+The specified Activity must currently be in resumed state. A good paradigm is to call this method in your onResume, and to call unsetPreferredService in your onPause.
 
 This method call will fail in two specific scenarios:
 
 - If the service registers one or more AIDs in the `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#CATEGORY_PAYMENT:kotlin.String` category, but the user has indicated that foreground apps are not allowed to override the default payment service.
 - If the service registers one or more AIDs in the `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#CATEGORY_OTHER:kotlin.String` category that are also handled by the default payment service, and the user has indicated that foreground apps are not allowed to override the default payment service.
 
-Use `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#categoryAllowsForegroundPreference(kotlin.String)` to determine whether foreground apps can override the default payment service.
+Use categoryAllowsForegroundPreference to determine whether foreground apps can override the default payment service.
 
 Note that this preference is not persisted by the OS, and hence must be called every time the Activity is resumed.
 
@@ -1031,7 +1031,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun unregisterNfcEventCallback(callback: CardEmulation.NfcEventCallback): Unit
 ```
 
-Unregister an NFC event callback that was previously registered with `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#registerNfcEventCallback(java.util.concurrent.Executor,%20android.nfc.cardemulation.CardEmulation.NfcEventCallback)`.
+Unregister an NFC event callback that was previously registered with registerNfcEventCallback.
 
 | Parameters ||
 |---|---|
@@ -1047,7 +1047,7 @@ fun unsetOffHostForService(service: ComponentName): Boolean
 
 Unsets the off-host Secure Element for the given service.
 
-Note that this will only remove Secure Element that was dynamically set using the `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setOffHostForService(android.content.ComponentName,%20kotlin.String)` and resets it to a value that was statically assigned using manifest.
+Note that this will only remove Secure Element that was dynamically set using the setOffHostForService and resets it to a value that was statically assigned using manifest.
 
 Note that you can only unset off-host SE for a service that is running under the same UID as the caller of this API. Typically this means you need to call this from the same package as the service itself, though UIDs can also be shared between packages using shared UIDs. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String`
@@ -1070,7 +1070,7 @@ fun unsetPreferredService(activity: Activity!): Boolean
 
 Unsets the preferred service for the specified Activity.
 
-Note that the specified Activity must still be in resumed state at the time of this call. A good place to call this method is in your `https://developer.android.com/reference/kotlin/android/app/Activity.html#onPause()` implementation.
+Note that the specified Activity must still be in resumed state at the time of this call. A good place to call this method is in your onPause implementation.
 
 | Parameters ||
 |---|---|

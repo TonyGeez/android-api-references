@@ -13,19 +13,19 @@ abstract class Transition : Cloneable
 | --- | --- |
 | ↳ | [android.transition.Transition](Transition.md) |
 
-| Known Direct Subclasses [ChangeBounds](ChangeBounds.md), [ChangeClipBounds](ChangeClipBounds.md), [ChangeImageTransform](ChangeImageTransform.md), [ChangeScroll](ChangeScroll.md), [ChangeTransform](ChangeTransform.md), [TransitionSet](TransitionSet.md), [Visibility](Visibility.md) |---|---| | [ChangeBounds](ChangeBounds.md) | This transition captures the layout bounds of target views before and after the scene change and animates those changes during the transition. | | [ChangeClipBounds](ChangeClipBounds.md) | ChangeClipBounds captures the `https://developer.android.com/reference/kotlin/android/view/View.html#getClipBounds()` before and after the scene change and animates those changes during the transition. | | [ChangeImageTransform](ChangeImageTransform.md) | This Transition captures an ImageView's matrix before and after the scene change and animates it during the transition. | | [ChangeScroll](ChangeScroll.md) | This transition captures the scroll properties of targets before and after the scene change and animates any changes. | | [ChangeTransform](ChangeTransform.md) | This Transition captures scale and rotation for Views before and after the scene change and animates those changes during the transition. | | [TransitionSet](TransitionSet.md) | A TransitionSet is a parent of child transitions (including other TransitionSets). | | [Visibility](Visibility.md) | This transition tracks changes to the visibility of target views in the start and end scenes. | |
+| Known Direct Subclasses [ChangeBounds](ChangeBounds.md), [ChangeClipBounds](ChangeClipBounds.md), [ChangeImageTransform](ChangeImageTransform.md), [ChangeScroll](ChangeScroll.md), [ChangeTransform](ChangeTransform.md), [TransitionSet](TransitionSet.md), [Visibility](Visibility.md) |---|---| | [ChangeBounds](ChangeBounds.md) | This transition captures the layout bounds of target views before and after the scene change and animates those changes during the transition. | | [ChangeClipBounds](ChangeClipBounds.md) | ChangeClipBounds captures the getClipBounds before and after the scene change and animates those changes during the transition. | | [ChangeImageTransform](ChangeImageTransform.md) | This Transition captures an ImageView's matrix before and after the scene change and animates it during the transition. | | [ChangeScroll](ChangeScroll.md) | This transition captures the scroll properties of targets before and after the scene change and animates any changes. | | [ChangeTransform](ChangeTransform.md) | This Transition captures scale and rotation for Views before and after the scene change and animates those changes during the transition. | | [TransitionSet](TransitionSet.md) | A TransitionSet is a parent of child transitions (including other TransitionSets). | | [Visibility](Visibility.md) | This transition tracks changes to the visibility of target views in the start and end scenes. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AutoTransition](AutoTransition.md), [Explode](Explode.md), [Fade](Fade.md), [Slide](Slide.md) |---|---| | [AutoTransition](AutoTransition.md) | Utility class for creating a default transition that automatically fades, moves, and resizes views during a scene change. | | [Explode](Explode.md) | This transition tracks changes to the visibility of target views in the start and end scenes and moves views in or out from the edges of the scene. | | [Fade](Fade.md) | This transition tracks changes to the visibility of target views in the start and end scenes and fades views in or out when they become visible or non-visible. | | [Slide](Slide.md) | This transition tracks changes to the visibility of target views in the start and end scenes and moves views in or out from one of the edges of the scene. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A Transition holds information about animations that will be run on its targets during a scene change. Subclasses of this abstract class may choreograph several child transitions (`https://developer.android.com/reference/kotlin/android/transition/TransitionSet` or they may perform custom animations themselves. Any Transition has two main jobs: (1) capture property values, and (2) play animations based on changes to captured property values. A custom transition knows what property values on View objects are of interest to it, and also knows how to animate changes to those values. For example, the `https://developer.android.com/reference/kotlin/android/transition/Fade` transition tracks changes to visibility-related properties and is able to construct and run animations that fade items in or out based on changes to those properties.
+A Transition holds information about animations that will be run on its targets during a scene change. Subclasses of this abstract class may choreograph several child transitions (TransitionSet or they may perform custom animations themselves. Any Transition has two main jobs: (1) capture property values, and (2) play animations based on changes to captured property values. A custom transition knows what property values on View objects are of interest to it, and also knows how to animate changes to those values. For example, the Fade transition tracks changes to visibility-related properties and is able to construct and run animations that fade items in or out based on changes to those properties.
 
-Note: Transitions may not work correctly with either `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` or `https://developer.android.com/reference/kotlin/android/view/TextureView.html#`, due to the way that these views are displayed on the screen. For SurfaceView, the problem is that the view is updated from a non-UI thread, so changes to the view due to transitions (such as moving and resizing the view) may be out of sync with the display inside those bounds. TextureView is more compatible with transitions in general, but some specific transitions (such as `https://developer.android.com/reference/kotlin/android/transition/Fade`) may not be compatible with TextureView because they rely on `https://developer.android.com/reference/kotlin/android/view/ViewOverlay.html#` functionality, which does not currently work with TextureView.
+Note: Transitions may not work correctly with either `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#` or `https://developer.android.com/reference/kotlin/android/view/TextureView.html#`, due to the way that these views are displayed on the screen. For SurfaceView, the problem is that the view is updated from a non-UI thread, so changes to the view due to transitions (such as moving and resizing the view) may be out of sync with the display inside those bounds. TextureView is more compatible with transitions in general, but some specific transitions (such as Fade) may not be compatible with TextureView because they rely on `https://developer.android.com/reference/kotlin/android/view/ViewOverlay.html#` functionality, which does not currently work with TextureView.
 
-Transitions can be declared in XML resource files inside the `res/transition` directory. Transition resources consist of a tag name for one of the Transition subclasses along with attributes to define some of the attributes of that transition. For example, here is a minimal resource file that declares a `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds` transition:
+Transitions can be declared in XML resource files inside the `res/transition` directory. Transition resources consist of a tag name for one of the Transition subclasses along with attributes to define some of the attributes of that transition. For example, here is a minimal resource file that declares a ChangeBounds transition:
 
-This TransitionSet contains `https://developer.android.com/reference/kotlin/android/transition/Explode` for visibility, `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds`, `https://developer.android.com/reference/kotlin/android/transition/ChangeTransform`, and `https://developer.android.com/reference/kotlin/android/transition/ChangeClipBounds` and `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform`:
+This TransitionSet contains Explode for visibility, ChangeBounds, ChangeTransform, and ChangeClipBounds and ChangeImageTransform:
 
 Custom transition classes may be instantiated with a `transition` tag:
 
@@ -35,9 +35,9 @@ Custom transition classes may be instantiated with a `transition` tag:
 
 Custom transition classes loaded from XML should have a public constructor taking a `https://developer.android.com/reference/kotlin/android/content/Context.html#` and `https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#`.
 
-Note that attributes for the transition are not required, just as they are optional when declared in code; Transitions created from XML resources will use the same defaults as their code-created equivalents. Here is a slightly more elaborate example which declares a `https://developer.android.com/reference/kotlin/android/transition/TransitionSet` transition with `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds` and `https://developer.android.com/reference/kotlin/android/transition/Fade` child transitions:
+Note that attributes for the transition are not required, just as they are optional when declared in code; Transitions created from XML resources will use the same defaults as their code-created equivalents. Here is a slightly more elaborate example which declares a TransitionSet transition with ChangeBounds and Fade child transitions:
 
-In this example, the transitionOrdering attribute is used on the TransitionSet object to change from the default `https://developer.android.com/reference/kotlin/android/transition/TransitionSet#ORDERING_TOGETHER:kotlin.Int` behavior to be `https://developer.android.com/reference/kotlin/android/transition/TransitionSet#ORDERING_SEQUENTIAL:kotlin.Int` instead. Also, the `https://developer.android.com/reference/kotlin/android/transition/Fade` transition uses a fadingMode of `https://developer.android.com/reference/kotlin/android/transition/Fade#OUT:kotlin.Int` instead of the default out-in behavior. Finally, note the use of the `targets` sub-tag, which takes a set of `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionTarget:kotlin.IntArray` tags, each of which lists a specific `targetId`, `targetClass`, `targetName`, `excludeId`, `excludeClass`, or `excludeName`, which this transition acts upon. Use of targets is optional, but can be used to either limit the time spent checking attributes on unchanging views, or limiting the types of animations run on specific views. In this case, we know that only the `grayscaleContainer` will be disappearing, so we choose to limit the `https://developer.android.com/reference/kotlin/android/transition/Fade` transition to only that view.
+In this example, the transitionOrdering attribute is used on the TransitionSet object to change from the default `https://developer.android.com/reference/kotlin/android/transition/TransitionSet#ORDERING_TOGETHER:kotlin.Int` behavior to be `https://developer.android.com/reference/kotlin/android/transition/TransitionSet#ORDERING_SEQUENTIAL:kotlin.Int` instead. Also, the Fade transition uses a fadingMode of `https://developer.android.com/reference/kotlin/android/transition/Fade#OUT:kotlin.Int` instead of the default out-in behavior. Finally, note the use of the `targets` sub-tag, which takes a set of `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionTarget:kotlin.IntArray` tags, each of which lists a specific `targetId`, `targetClass`, `targetName`, `excludeId`, `excludeClass`, or `excludeName`, which this transition acts upon. Use of targets is optional, but can be used to either limit the time spent checking attributes on unchanging views, or limiting the types of animations run on specific views. In this case, we know that only the `grayscaleContainer` will be disappearing, so we choose to limit the Fade transition to only that view.
 Further information on XML resource descriptions for transitions can be found for `https://developer.android.com/reference/kotlin/android/R.styleable.html#Transition:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionSet:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#TransitionTarget:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#Fade:kotlin.IntArray`, `https://developer.android.com/reference/kotlin/android/R.styleable.html#Slide:kotlin.IntArray`, and `https://developer.android.com/reference/kotlin/android/R.styleable.html#ChangeTransform:kotlin.IntArray`.
 
 ## Summary
@@ -49,78 +49,78 @@ Further information on XML resource descriptions for transitions can be found fo
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ID:kotlin.Int` With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by `https://developer.android.com/reference/kotlin/android/view/View.html#getId()`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_INSTANCE:kotlin.Int` With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by View instance. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ITEM_ID:kotlin.Int` With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by the `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#` item id. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ID:kotlin.Int` With setMatchOrder, chooses to match by getId. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_INSTANCE:kotlin.Int` With setMatchOrder, chooses to match by View instance. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ITEM_ID:kotlin.Int` With setMatchOrder, chooses to match by the `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#` item id. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_NAME:kotlin.Int` With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by `https://developer.android.com/reference/kotlin/android/view/View.html#getTransitionName()`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_NAME:kotlin.Int` With setMatchOrder, chooses to match by getTransitionName. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/transition/Transition#Transition()()` Constructs a Transition object with no target objects. |
-| `https://developer.android.com/reference/kotlin/android/transition/Transition#Transition(android.content.Context,%20android.util.AttributeSet)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Perform inflation from XML and apply a class-specific base style from a theme attribute or style resource. |
+| Transition Constructs a Transition object with no target objects. |
+| Transition Perform inflation from XML and apply a class-specific base style from a theme attribute or style resource. |
 
 | Public methods ||
 |---|---|
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#addListener(android.transition.Transition.TransitionListener)(listener: https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener!)` Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(android.view.View)(target: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets the target view instances that this Transition is interested in animating. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(kotlin.Int)(targetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds the id of a target view that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | addListener Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. |
+| open [Transition](Transition.md)! | addTarget Sets the target view instances that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | addTarget Adds the id of a target view that this Transition is interested in animating. |
 | --- | --- |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(java.lang.Class)(targetType: https://developer.android.com/reference/kotlin/java/lang/Class.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>!)` Adds the Class of a target view that this Transition is interested in animating. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(kotlin.String)(targetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Adds the transitionName of a target view that this Transition is interested in animating. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#canRemoveViews()()` <br /> |
+| open [Transition](Transition.md)! | addTarget Adds the Class of a target view that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | addTarget Adds the transitionName of a target view that this Transition is interested in animating. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | canRemoveViews <br /> |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#captureEndValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the end scene for the properties that this transition monitors. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
-| open [Transition](Transition.md) | `https://developer.android.com/reference/kotlin/android/transition/Transition#clone()()` Creates and returns a copy of this object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | captureEndValues Captures the values in the end scene for the properties that this transition monitors. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | captureStartValues Captures the values in the start scene for the properties that this transition monitors. |
+| open [Transition](Transition.md) | clone Creates and returns a copy of this object. |
 | --- | --- |
-| open [Animator](../android.animation/Animator.md)? | `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` This method creates an animation that will be run for this transition given the information in the startValues and endValues structures captured earlier for the start and end scenes. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(android.view.View,%20kotlin.Boolean)(target: https://developer.android.com/reference/kotlin/android/view/View.html#!, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the children of given target to the list of target children to exclude from this transition. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(kotlin.Int,%20kotlin.Boolean)(targetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the children of the given id to the list of targets to exclude from this transition. |
+| open [Animator](../android.animation/Animator.md)? | createAnimator This method creates an animation that will be run for this transition given the information in the startValues and endValues structures captured earlier for the start and end scenes. |
+| open [Transition](Transition.md)! | excludeChildren Whether to add the children of given target to the list of target children to exclude from this transition. |
+| open [Transition](Transition.md)! | excludeChildren Whether to add the children of the given id to the list of targets to exclude from this transition. |
 | --- | --- |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(java.lang.Class,%20kotlin.Boolean)(type: https://developer.android.com/reference/kotlin/java/lang/Class.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>!, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the given type to the list of types whose children should be excluded from this transition. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(android.view.View,%20kotlin.Boolean)(target: https://developer.android.com/reference/kotlin/android/view/View.html#!, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the given target to the list of targets to exclude from this transition. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(kotlin.Int,%20kotlin.Boolean)(targetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the given id to the list of target ids to exclude from this transition. |
+| open [Transition](Transition.md)! | excludeChildren Whether to add the given type to the list of types whose children should be excluded from this transition. |
+| open [Transition](Transition.md)! | excludeTarget Whether to add the given target to the list of targets to exclude from this transition. |
+| open [Transition](Transition.md)! | excludeTarget Whether to add the given id to the list of target ids to exclude from this transition. |
 | --- | --- |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(java.lang.Class,%20kotlin.Boolean)(type: https://developer.android.com/reference/kotlin/java/lang/Class.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>!, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the given type to the list of types to exclude from this transition. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(kotlin.String,%20kotlin.Boolean)(targetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, exclude: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Whether to add the given transitionName to the list of target transitionNames to exclude from this transition. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#getDuration()()` Returns the duration set on this transition. |
+| open [Transition](Transition.md)! | excludeTarget Whether to add the given type to the list of types to exclude from this transition. |
+| open [Transition](Transition.md)! | excludeTarget Whether to add the given transitionName to the list of target transitionNames to exclude from this transition. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getDuration Returns the duration set on this transition. |
 | --- | --- |
-| open [Rect](../android.graphics/Rect.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getEpicenter()()` Returns the epicenter as specified by the `https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback` or null if no callback exists. |
-| open [Transition.EpicenterCallback](../android/transition/Transition.EpicenterCallback.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getEpicenterCallback()()` Returns the callback used to find the epicenter of the Transition. |
-| open [TimeInterpolator](../android.animation/TimeInterpolator.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getInterpolator()()` Returns the interpolator set on this transition. |
+| open [Rect](../android.graphics/Rect.md)! | getEpicenter Returns the epicenter as specified by the `https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback` or null if no callback exists. |
+| open [Transition.EpicenterCallback](../android/transition/Transition.EpicenterCallback.md)! | getEpicenterCallback Returns the callback used to find the epicenter of the Transition. |
+| open [TimeInterpolator](../android.animation/TimeInterpolator.md)! | getInterpolator Returns the interpolator set on this transition. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getName()()` Returns the name of this Transition. |
-| open [PathMotion](PathMotion.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getPathMotion()()` Returns the algorithm object used to interpolate along two dimensions. |
-| open [TransitionPropagation](TransitionPropagation.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getPropagation()()` Returns the `https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation` used to calculate Animator start delays. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Returns the name of this Transition. |
+| open [PathMotion](PathMotion.md)! | getPathMotion Returns the algorithm object used to interpolate along two dimensions. |
+| open [TransitionPropagation](TransitionPropagation.md)! | getPropagation Returns the TransitionPropagation used to calculate Animator start delays. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#getStartDelay()()` Returns the startDelay set on this transition. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetIds()()` Returns the list of target IDs that this transition limits itself to tracking and animating. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetNames()()` Returns the list of target transitionNames that this transition limits itself to tracking and animating. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartDelay Returns the startDelay set on this transition. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | getTargetIds Returns the list of target IDs that this transition limits itself to tracking and animating. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getTargetNames Returns the list of target transitionNames that this transition limits itself to tracking and animating. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetTypes()()` Returns the list of target transitionNames that this transition limits itself to tracking and animating. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [View](../android.view/View.md)!\>! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargets()()` Returns the list of target views that this transition limits itself to tracking and animating. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getTransitionProperties()()` Returns the set of property names used stored in the `https://developer.android.com/reference/kotlin/android/transition/TransitionValues` object passed into `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` that this transition cares about for the purposes of canceling overlapping animations. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>! | getTargetTypes Returns the list of target transitionNames that this transition limits itself to tracking and animating. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [View](../android.view/View.md)!\>! | getTargets Returns the list of target views that this transition limits itself to tracking and animating. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getTransitionProperties Returns the set of property names used stored in the TransitionValues object passed into captureStartValues that this transition cares about for the purposes of canceling overlapping animations. |
 | --- | --- |
-| open [TransitionValues](TransitionValues.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#getTransitionValues(android.view.View,%20kotlin.Boolean)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` This method can be called by transitions to get the TransitionValues for any particular view during the transition-playing process. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#isTransitionRequired(android.transition.TransitionValues,%20android.transition.TransitionValues)(startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` Returns whether or not the transition should create an Animator, based on the values captured during `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` and `https://developer.android.com/reference/kotlin/android/transition/Transition#captureEndValues(android.transition.TransitionValues)`. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#removeListener(android.transition.Transition.TransitionListener)(listener: https://developer.android.com/reference/kotlin/android/transition/Transition.TransitionListener!)` Removes a listener from the set listening to this animation. |
+| open [TransitionValues](TransitionValues.md)! | getTransitionValues This method can be called by transitions to get the TransitionValues for any particular view during the transition-playing process. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTransitionRequired Returns whether or not the transition should create an Animator, based on the values captured during captureStartValues and captureEndValues. |
+| open [Transition](Transition.md)! | removeListener Removes a listener from the set listening to this animation. |
 | --- | --- |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#removeTarget(android.view.View)(target: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Removes the given target from the list of targets that this Transition is interested in animating. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#removeTarget(kotlin.Int)(targetId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Removes the given targetId from the list of ids that this Transition is interested in animating. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#removeTarget(java.lang.Class)(target: https://developer.android.com/reference/kotlin/java/lang/Class.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>!)` Removes the given target from the list of targets that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | removeTarget Removes the given target from the list of targets that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | removeTarget Removes the given targetId from the list of ids that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | removeTarget Removes the given target from the list of targets that this Transition is interested in animating. |
 | --- | --- |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#removeTarget(kotlin.String)(targetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Removes the given targetName from the list of transitionNames that this Transition is interested in animating. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#setDuration(kotlin.Long)(duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the duration of this transition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#setEpicenterCallback(android.transition.Transition.EpicenterCallback)(epicenterCallback: https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback!)` Sets the callback to use to find the epicenter of a Transition. |
+| open [Transition](Transition.md)! | removeTarget Removes the given targetName from the list of transitionNames that this Transition is interested in animating. |
+| open [Transition](Transition.md)! | setDuration Sets the duration of this transition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEpicenterCallback Sets the callback to use to find the epicenter of a Transition. |
 | --- | --- |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#setInterpolator(android.animation.TimeInterpolator)(interpolator: https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html#!)` Sets the interpolator of this transition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)(vararg matches: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the order in which Transition matches View start and end values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#setPathMotion(android.transition.PathMotion)(pathMotion: https://developer.android.com/reference/kotlin/android/transition/PathMotion!)` Sets the algorithm used to calculate two-dimensional interpolation. |
+| open [Transition](Transition.md)! | setInterpolator Sets the interpolator of this transition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMatchOrder Sets the order in which Transition matches View start and end values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPathMotion Sets the algorithm used to calculate two-dimensional interpolation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#setPropagation(android.transition.TransitionPropagation)(transitionPropagation: https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation!)` Sets the method for determining Animator start delays. |
-| open [Transition](Transition.md)! | `https://developer.android.com/reference/kotlin/android/transition/Transition#setStartDelay(kotlin.Long)(startDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the startDelay of this transition. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Transition#toString()()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPropagation Sets the method for determining Animator start delays. |
+| open [Transition](Transition.md)! | setStartDelay Sets the startDelay of this transition. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
 
 ## Constants
@@ -133,7 +133,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val MATCH_ID: Int
 ```
 
-With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by `https://developer.android.com/reference/kotlin/android/view/View.html#getId()`. Negative IDs will not be matched.
+With setMatchOrder, chooses to match by getId. Negative IDs will not be matched.
 
  Value: 3
 
@@ -145,7 +145,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val MATCH_INSTANCE: Int
 ```
 
-With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by View instance.
+With setMatchOrder, chooses to match by View instance.
 
  Value: 1
 
@@ -157,7 +157,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val MATCH_ITEM_ID: Int
 ```
 
-With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by the `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#` item id. When `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#hasStableIds()` returns false, no match will be made for items.
+With setMatchOrder, chooses to match by the `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#` item id. When hasStableIds returns false, no match will be made for items.
 
  Value: 4
 
@@ -169,7 +169,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val MATCH_NAME: Int
 ```
 
-With `https://developer.android.com/reference/kotlin/android/transition/Transition#setMatchOrder(kotlin.Int)`, chooses to match by `https://developer.android.com/reference/kotlin/android/view/View.html#getTransitionName()`. Null names will not be matched.
+With setMatchOrder, chooses to match by getTransitionName. Null names will not be matched.
 
  Value: 2
 
@@ -232,7 +232,7 @@ open fun addTarget(target: View!): Transition!
 
 Sets the target view instances that this Transition is interested in animating. By default, there are no targets, and a Transition will listen for changes on every view in the hierarchy below the sceneRoot of the Scene being transitioned into. Setting targets constrains the Transition to only listen for, and act on, these views. All other views will be ignored.
 
-The target list is like the `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(kotlin.Int)` list except this list specifies the actual View instances, not the ids of the views. This is an important distinction when scene changes involve view hierarchies which have been inflated separately; different views may share the same id but not actually be the same instance. If the transition should treat those views as the same, then `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(kotlin.Int)` should be used instead of `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(android.view.View)`. If, on the other hand, scene changes involve changes all within the same view hierarchy, among views which do not necessarily have ids set on them, then the target list of views may be more convenient.
+The target list is like the addTarget list except this list specifies the actual View instances, not the ids of the views. This is an important distinction when scene changes involve view hierarchies which have been inflated separately; different views may share the same id but not actually be the same instance. If the transition should treat those views as the same, then addTarget should be used instead of addTarget. If, on the other hand, scene changes involve changes all within the same view hierarchy, among views which do not necessarily have ids set on them, then the target list of views may be more convenient.
 
 | Parameters ||
 |---|---|
@@ -244,7 +244,7 @@ The target list is like the `https://developer.android.com/reference/kotlin/andr
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(kotlin.Int)`
+- addTarget
 
 ### addTarget
 
@@ -268,7 +268,7 @@ Note that using ids to specify targets implies that ids should be unique within 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#getId()`
+- getId
 
 ### addTarget
 
@@ -292,10 +292,10 @@ Note that any View that can be cast to targetType will be included, so if target
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#addTarget(android.view.View)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(java.lang.Class,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(java.lang.Class,%20kotlin.Boolean)`
+- addTarget
+- addTarget
+- excludeTarget
+- excludeChildren
 
 ### addTarget
 
@@ -319,7 +319,7 @@ Note that transitionNames should be unique within the view hierarchy.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/View.html#getTransitionName()`
+- getTransitionName
 
 ### canRemoveViews
 
@@ -337,7 +337,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun captureEndValues(transitionValues: TransitionValues!): Unit
 ```
 
-Captures the values in the end scene for the properties that this transition monitors. These values are then passed as the endValues structure in a later call to `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)`. The main concern for an implementation is what the properties are that the transition cares about and what the values are for all of those properties. The start and end values will be compared later during the `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)` method to determine what, if any, animations, should be run.
+Captures the values in the end scene for the properties that this transition monitors. These values are then passed as the endValues structure in a later call to createAnimator. The main concern for an implementation is what the properties are that the transition cares about and what the values are for all of those properties. The start and end values will be compared later during the createAnimator method to determine what, if any, animations, should be run.
 
 Subclasses must implement this method. The method should only be called by the transition system; it is not intended to be called from external classes.
 
@@ -347,8 +347,8 @@ Subclasses must implement this method. The method should only be called by the t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)`
+- captureStartValues
+- createAnimator
 
 ### captureStartValues
 
@@ -358,7 +358,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun captureStartValues(transitionValues: TransitionValues!): Unit
 ```
 
-Captures the values in the start scene for the properties that this transition monitors. These values are then passed as the startValues structure in a later call to `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)`. The main concern for an implementation is what the properties are that the transition cares about and what the values are for all of those properties. The start and end values will be compared later during the `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)` method to determine what, if any, animations, should be run.
+Captures the values in the start scene for the properties that this transition monitors. These values are then passed as the startValues structure in a later call to createAnimator. The main concern for an implementation is what the properties are that the transition cares about and what the values are for all of those properties. The start and end values will be compared later during the createAnimator method to determine what, if any, animations, should be run.
 
 Subclasses must implement this method. The method should only be called by the transition system; it is not intended to be called from external classes.
 
@@ -368,8 +368,8 @@ Subclasses must implement this method. The method should only be called by the t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#captureEndValues(android.transition.TransitionValues)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)`
+- captureEndValues
+- createAnimator
 
 ### clone
 
@@ -404,7 +404,7 @@ By convention, the object returned by this method should be independent of this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/transition/Transition#` | a clone of this instance. |
+| Transition | a clone of this instance. |
 
 | Exceptions ||
 |---|---|
@@ -424,7 +424,7 @@ open fun createAnimator(
 
 This method creates an animation that will be run for this transition given the information in the startValues and endValues structures captured earlier for the start and end scenes. Subclasses of Transition should override this method. The method should only be called by the transition system; it is not intended to be called from external classes.
 
-This method is called by the transition's parent (all the way up to the topmost Transition in the hierarchy) with the sceneRoot and start/end values that the transition may need to set up initial target values and construct an appropriate animation. For example, if an overall Transition is a `https://developer.android.com/reference/kotlin/android/transition/TransitionSet` consisting of several child transitions in sequence, then some of the child transitions may want to set initial values on target views prior to the overall Transition commencing, to put them in an appropriate state for the delay between that start and the child Transition start time. For example, a transition that fades an item in may wish to set the starting alpha value to 0, to avoid it blinking in prior to the transition actually starting the animation. This is necessary because the scene change that triggers the Transition will automatically set the end-scene on all target views, so a Transition that wants to animate from a different value should set that value prior to returning from this method.
+This method is called by the transition's parent (all the way up to the topmost Transition in the hierarchy) with the sceneRoot and start/end values that the transition may need to set up initial target values and construct an appropriate animation. For example, if an overall Transition is a TransitionSet consisting of several child transitions in sequence, then some of the child transitions may want to set initial values on target views prior to the overall Transition commencing, to put them in an appropriate state for the delay between that start and the child Transition start time. For example, a transition that fades an item in may wish to set the starting alpha value to 0, to avoid it blinking in prior to the transition actually starting the animation. This is necessary because the scene change that triggers the Transition will automatically set the end-scene on all target views, so a Transition that wants to animate from a different value should set that value prior to returning from this method.
 
 Additionally, a Transition can perform logic to determine whether the transition needs to run on the given target and start/end values. For example, a transition that resizes objects on the screen may wish to avoid running for views which are not present in either the start or end scenes.
 
@@ -469,9 +469,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(android.view.View,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(java.lang.Class,%20kotlin.Boolean)`
+- excludeTarget
+- excludeChildren
+- excludeChildren
 
 ### excludeChildren
 
@@ -499,9 +499,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(android.view.View,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(java.lang.Class,%20kotlin.Boolean)`
+- excludeTarget
+- excludeChildren
+- excludeChildren
 
 ### excludeChildren
 
@@ -529,9 +529,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(java.lang.Class,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(android.view.View,%20kotlin.Boolean)`
+- excludeTarget
+- excludeChildren
+- excludeChildren
 
 ### excludeTarget
 
@@ -559,9 +559,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(android.view.View,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(java.lang.Class,%20kotlin.Boolean)`
+- excludeChildren
+- excludeTarget
+- excludeTarget
 
 ### excludeTarget
 
@@ -589,9 +589,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(android.view.View,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(java.lang.Class,%20kotlin.Boolean)`
+- excludeChildren
+- excludeTarget
+- excludeTarget
 
 ### excludeTarget
 
@@ -619,9 +619,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeChildren(java.lang.Class,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(android.view.View,%20kotlin.Boolean)`
+- excludeChildren
+- excludeTarget
+- excludeTarget
 
 ### excludeTarget
 
@@ -649,9 +649,9 @@ Excluding targets is a general mechanism for allowing transitions to run on a vi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(android.view.View,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#excludeTarget(java.lang.Class,%20kotlin.Boolean)`
+- excludeTarget
+- excludeTarget
+- excludeTarget
 
 ### getDuration
 
@@ -683,7 +683,7 @@ Returns the epicenter as specified by the `https://developer.android.com/referen
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/Transition#setEpicenterCallback(android.transition.Transition.EpicenterCallback)`
+- setEpicenterCallback
 
 ### getEpicenterCallback
 
@@ -693,7 +693,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getEpicenterCallback(): Transition.EpicenterCallback!
 ```
 
-Returns the callback used to find the epicenter of the Transition. Transitions like `https://developer.android.com/reference/kotlin/android/transition/Explode` use a point or Rect to orient the direction of travel. This is called the epicenter of the Transition and is typically centered on a touched View. The `https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback` allows a Transition to dynamically retrieve the epicenter during a Transition.
+Returns the callback used to find the epicenter of the Transition. Transitions like Explode use a point or Rect to orient the direction of travel. This is called the epicenter of the Transition and is typically centered on a touched View. The `https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback` allows a Transition to dynamically retrieve the epicenter during a Transition.
 
 | Return ||
 |---|---|
@@ -723,7 +723,7 @@ open fun getName(): String!
 
 Returns the name of this Transition. This name is used internally to distinguish between different transitions to determine when interrupting transitions overlap. For example, a ChangeBounds running on the same target view as another ChangeBounds should determine whether the old transition is animating to different end values and should be canceled in favor of the new transition.
 
-By default, a Transition's name is simply the value of `https://developer.android.com/reference/kotlin/java/lang/Class.html#getName()`, but subclasses are free to override and return something different.
+By default, a Transition's name is simply the value of getName, but subclasses are free to override and return something different.
 
 | Return ||
 |---|---|
@@ -763,9 +763,9 @@ or
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/ArcMotion`
-- `https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion`
-- `https://developer.android.com/reference/kotlin/android/transition/PathMotion`
+- ArcMotion
+- PatternPathMotion
+- PathMotion
 
 ### getPropagation
 
@@ -775,11 +775,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getPropagation(): TransitionPropagation!
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation` used to calculate Animator start delays. When a Transition affects several Views like `https://developer.android.com/reference/kotlin/android/transition/Explode` or `https://developer.android.com/reference/kotlin/android/transition/Slide`, there may be a desire to have a "wave-front" effect such that the Animator start delay depends on position of the View. The TransitionPropagation specifies how the start delays are calculated.
+Returns the TransitionPropagation used to calculate Animator start delays. When a Transition affects several Views like Explode or Slide, there may be a desire to have a "wave-front" effect such that the Animator start delay depends on position of the View. The TransitionPropagation specifies how the start delays are calculated.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation!` | the `https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation` used to calculate Animator start delays. This is null by default. |
+| `https://developer.android.com/reference/kotlin/android/transition/TransitionPropagation!` | the TransitionPropagation used to calculate Animator start delays. This is null by default. |
 
 ### getStartDelay
 
@@ -803,7 +803,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun getTargetIds(): MutableList<Int!>!
 ```
 
-Returns the list of target IDs that this transition limits itself to tracking and animating. If the list is null or empty for `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetIds()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargets()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetNames()`, and `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetTypes()` then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
+Returns the list of target IDs that this transition limits itself to tracking and animating. If the list is null or empty for getTargetIds, getTargets, getTargetNames, and getTargetTypes then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
 
 | Return ||
 |---|---|
@@ -817,7 +817,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getTargetNames(): MutableList<String!>!
 ```
 
-Returns the list of target transitionNames that this transition limits itself to tracking and animating. If the list is null or empty for `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetIds()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargets()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetNames()`, and `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetTypes()` then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
+Returns the list of target transitionNames that this transition limits itself to tracking and animating. If the list is null or empty for getTargetIds, getTargets, getTargetNames, and getTargetTypes then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
 
 | Return ||
 |---|---|
@@ -831,7 +831,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getTargetTypes(): MutableList<Class<Any!>!>!
 ```
 
-Returns the list of target transitionNames that this transition limits itself to tracking and animating. If the list is null or empty for `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetIds()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargets()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetNames()`, and `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetTypes()` then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
+Returns the list of target transitionNames that this transition limits itself to tracking and animating. If the list is null or empty for getTargetIds, getTargets, getTargetNames, and getTargetTypes then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
 
 | Return ||
 |---|---|
@@ -845,7 +845,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun getTargets(): MutableList<View!>!
 ```
 
-Returns the list of target views that this transition limits itself to tracking and animating. If the list is null or empty for `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetIds()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargets()`, `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetNames()`, and `https://developer.android.com/reference/kotlin/android/transition/Transition#getTargetTypes()` then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
+Returns the list of target views that this transition limits itself to tracking and animating. If the list is null or empty for getTargetIds, getTargets, getTargetNames, and getTargetTypes then this transition is not limited to specific views, and will handle changes to any views in the hierarchy of a scene change.
 
 | Return ||
 |---|---|
@@ -859,13 +859,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun getTransitionProperties(): Array<String!>!
 ```
 
-Returns the set of property names used stored in the `https://developer.android.com/reference/kotlin/android/transition/TransitionValues` object passed into `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` that this transition cares about for the purposes of canceling overlapping animations. When any transition is started on a given scene root, all transitions currently running on that same scene root are checked to see whether the properties on which they based their animations agree with the end values of the same properties in the new transition. If the end values are not equal, then the old animation is canceled since the new transition will start a new animation to these new values. If the values are equal, the old animation is allowed to continue and no new animation is started for that transition.
+Returns the set of property names used stored in the TransitionValues object passed into captureStartValues that this transition cares about for the purposes of canceling overlapping animations. When any transition is started on a given scene root, all transitions currently running on that same scene root are checked to see whether the properties on which they based their animations agree with the end values of the same properties in the new transition. If the end values are not equal, then the old animation is canceled since the new transition will start a new animation to these new values. If the values are equal, the old animation is allowed to continue and no new animation is started for that transition.
 
 A transition does not need to override this method. However, not doing so will mean that the cancellation logic outlined in the previous paragraph will be skipped for that transition, possibly leading to artifacts as old transitions and new transitions on the same targets run in parallel, animating views toward potentially different end values.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | An array of property names as described in the class documentation for `https://developer.android.com/reference/kotlin/android/transition/TransitionValues`. The default implementation returns `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!` | An array of property names as described in the class documentation for TransitionValues. The default implementation returns `null`. |
 
 ### getTransitionValues
 
@@ -891,7 +891,7 @@ open fun isTransitionRequired(
 ): Boolean
 ```
 
-Returns whether or not the transition should create an Animator, based on the values captured during `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` and `https://developer.android.com/reference/kotlin/android/transition/Transition#captureEndValues(android.transition.TransitionValues)`. The default implementation compares the property values returned from `https://developer.android.com/reference/kotlin/android/transition/Transition#getTransitionProperties()`, or all property values if `getTransitionProperties()` returns null. Subclasses may override this method to provide logic more specific to the transition implementation.
+Returns whether or not the transition should create an Animator, based on the values captured during captureStartValues and captureEndValues. The default implementation compares the property values returned from getTransitionProperties, or all property values if `getTransitionProperties()` returns null. Subclasses may override this method to provide logic more specific to the transition implementation.
 
 | Parameters ||
 |---|---|
@@ -1014,7 +1014,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setEpicenterCallback(epicenterCallback: Transition.EpicenterCallback!): Unit
 ```
 
-Sets the callback to use to find the epicenter of a Transition. A null value indicates that there is no epicenter in the Transition and onGetEpicenter() will return null. Transitions like `https://developer.android.com/reference/kotlin/android/transition/Explode` use a point or Rect to orient the direction of travel. This is called the epicenter of the Transition and is typically centered on a touched View. The `https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback` allows a Transition to dynamically retrieve the epicenter during a Transition.
+Sets the callback to use to find the epicenter of a Transition. A null value indicates that there is no epicenter in the Transition and onGetEpicenter() will return null. Transitions like Explode use a point or Rect to orient the direction of travel. This is called the epicenter of the Transition and is typically centered on a touched View. The `https://developer.android.com/reference/kotlin/android/transition/Transition.EpicenterCallback` allows a Transition to dynamically retrieve the epicenter during a Transition.
 
 | Parameters ||
 |---|---|
@@ -1048,7 +1048,7 @@ open fun setMatchOrder(vararg matches: Int): Unit
 
 Sets the order in which Transition matches View start and end values.
 
-The default behavior is to match first by `https://developer.android.com/reference/kotlin/android/view/View.html#getTransitionName()`, then by View instance, then by `https://developer.android.com/reference/kotlin/android/view/View.html#getId()` and finally by its item ID if it is in a direct child of ListView. The caller can choose to have only some or all of the values of `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_INSTANCE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_NAME:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ITEM_ID:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ID:kotlin.Int`. Only the match algorithms supplied will be used to determine whether Views are the the same in both the start and end Scene. Views that do not match will be considered as entering or leaving the Scene.
+The default behavior is to match first by getTransitionName, then by View instance, then by getId and finally by its item ID if it is in a direct child of ListView. The caller can choose to have only some or all of the values of `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_INSTANCE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_NAME:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ITEM_ID:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/transition/Transition#MATCH_ID:kotlin.Int`. Only the match algorithms supplied will be used to determine whether Views are the the same in both the start and end Scene. Views that do not match will be considered as entering or leaving the Scene.
 
 | Parameters ||
 |---|---|
@@ -1064,7 +1064,7 @@ open fun setPathMotion(pathMotion: PathMotion!): Unit
 
 Sets the algorithm used to calculate two-dimensional interpolation.
 
-Transitions such as `https://developer.android.com/reference/kotlin/android/transition/ChangeBounds` move Views, typically in a straight path between the start and end positions. Applications that desire to have these motions move in a curve can change how Views interpolate in two dimensions by extending PathMotion and implementing `https://developer.android.com/reference/kotlin/android/transition/PathMotion#getPath(kotlin.Float,%20kotlin.Float,%20kotlin.Float,%20kotlin.Float)`.
+Transitions such as ChangeBounds move Views, typically in a straight path between the start and end positions. Applications that desire to have these motions move in a curve can change how Views interpolate in two dimensions by extending PathMotion and implementing getPath.
 
 When describing in XML, use a nested XML tag for the path motion. It can be one of the built-in tags `arcMotion` or `patternPathMotion` or it can be a custom PathMotion using `pathMotion` with the `class` attributed with the fully-described class name. For example:
 
@@ -1091,9 +1091,9 @@ or
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/transition/ArcMotion`
-- `https://developer.android.com/reference/kotlin/android/transition/PatternPathMotion`
-- `https://developer.android.com/reference/kotlin/android/transition/PathMotion`
+- ArcMotion
+- PatternPathMotion
+- PathMotion
 
 ### setPropagation
 
@@ -1103,7 +1103,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setPropagation(transitionPropagation: TransitionPropagation!): Unit
 ```
 
-Sets the method for determining Animator start delays. When a Transition affects several Views like `https://developer.android.com/reference/kotlin/android/transition/Explode` or `https://developer.android.com/reference/kotlin/android/transition/Slide`, there may be a desire to have a "wave-front" effect such that the Animator start delay depends on position of the View. The TransitionPropagation specifies how the start delays are calculated.
+Sets the method for determining Animator start delays. When a Transition affects several Views like Explode or Slide, there may be a desire to have a "wave-front" effect such that the Animator start delay depends on position of the View. The TransitionPropagation specifies how the start delays are calculated.
 
 | Parameters ||
 |---|---|

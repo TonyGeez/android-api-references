@@ -31,51 +31,51 @@ It should be defined in an XML resource file with an `<input-method>` element. F
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()` for the IME language settings. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()` for IME that `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String` getAction for the IME language settings. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` getAction for IME that supportsStylusHandwriting. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#InputMethodInfo(android.content.Context,%20android.content.pm.ResolveInfo)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, service: https://developer.android.com/reference/kotlin/android/content/pm/ResolveInfo.html#!)` Constructor. |
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#InputMethodInfo(kotlin.String,%20kotlin.String,%20kotlin.CharSequence,%20kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, label: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, settingsActivity: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Temporary API for creating a built-in input method for test. |
+| InputMethodInfo Constructor. |
+| InputMethodInfo Temporary API for creating a built-in input method for test. |
 
 | Public methods ||
 |---|---|
-| [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createImeLanguageSettingsActivityIntent()()` Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for IME language settings activity with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()``https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String`. |
-| [Intent](../android.content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createStylusHandwritingSettingsActivityIntent()()` Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for stylus handwriting settings activity with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()``https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` if IME `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()`, else `null` if there are no associated settings for stylus handwriting / handwriting is not supported or if `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_stylusHandwritingSettingsActivity:kotlin.Int` is not defined. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Intent](../android.content/Intent.md)? | createImeLanguageSettingsActivityIntent Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for IME language settings activity with getAction`https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String`. |
+| [Intent](../android.content/Intent.md)? | createStylusHandwritingSettingsActivityIntent Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for stylus handwriting settings activity with getAction`https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` if IME supportsStylusHandwriting, else `null` if there are no associated settings for stylus handwriting / handwriting is not supported or if `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_stylusHandwritingSettingsActivity:kotlin.Int` is not defined. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#dump(android.util.Printer,%20kotlin.String)(pw: https://developer.android.com/reference/kotlin/android/util/Printer.html#!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Used to test whether the given parameter object is an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#` and its Id is the same to this one. |
-| [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getComponent()()` Return the component of the service that implements this input method. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | dump <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Used to test whether the given parameter object is an InputMethodInfo and its Id is the same to this one. |
+| [ComponentName](../android.content/ComponentName.md)! | getComponent Return the component of the service that implements this input method. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getConfigChanges()()` Returns the bit mask of kinds of configuration changes that this IME can handle itself (without being restarted by the system). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getId()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getIsDefaultResourceId()()` Return the resource identifier of a resource inside of this input method's . |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getConfigChanges Returns the bit mask of kinds of configuration changes that this IME can handle itself (without being restarted by the system). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getId <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getIsDefaultResourceId Return the resource identifier of a resource inside of this input method's . |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getPackageName()()` Return the . |
-| [ServiceInfo](../android.content.pm/ServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getServiceInfo()()` Return the raw information about the Service implementing this input method. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getServiceName()()` Return the class name of the service component that implements this input method. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPackageName Return the . |
+| [ServiceInfo](../android.content.pm/ServiceInfo.md)! | getServiceInfo Return the raw information about the Service implementing this input method. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getServiceName Return the class name of the service component that implements this input method. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSettingsActivity()()` Return the class name of an activity that provides a settings UI for the input method. |
-| [InputMethodSubtype](InputMethodSubtype.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSubtypeAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the Input Method's subtype at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSubtypeCount()()` Return the count of the subtypes of Input Method. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSettingsActivity Return the class name of an activity that provides a settings UI for the input method. |
+| [InputMethodSubtype](InputMethodSubtype.md)! | getSubtypeAt Return the Input Method's subtype at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSubtypeCount Return the count of the subtypes of Input Method. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#hashCode()()` Returns a hash code value for the object. |
-| [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed icon for this input method. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#!)` Load the user-displayed label for this input method. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Drawable](../android.graphics.drawable/Drawable.md)! | loadIcon Load the user-displayed icon for this input method. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | loadLabel Load the user-displayed label for this input method. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#shouldShowInInputMethodPicker()()` Returns `true` if this input method should be shown in menus for selecting an Input Method, such as the system Input Method Picker. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsConnectionlessStylusHandwriting()()` Returns whether the IME supports connectionless stylus handwriting sessions. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()()` Returns if IME supports handwriting using stylus input. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | shouldShowInInputMethodPicker Returns `true` if this input method should be shown in menus for selecting an Input Method, such as the system Input Method Picker. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsConnectionlessStylusHandwriting Returns whether the IME supports connectionless stylus handwriting sessions. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | supportsStylusHandwriting Returns if IME supports handwriting using stylus input. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#suppressesSpellChecker()()` Return `true` if this input method suppresses spell checker. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | suppressesSpellChecker Return `true` if this input method suppresses spell checker. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Used to package this object into a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 | --- | --- |
 
 | Properties ||
@@ -202,13 +202,13 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_IME_LANGUAGE_SETTINGS: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()` for the IME language settings.
+getAction for the IME language settings.
 
  Value: "android.view.inputmethod.action.IME_LANGUAGE_SETTINGS"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createImeLanguageSettingsActivityIntent()`
+- createImeLanguageSettingsActivityIntent
 
 ### ACTION_STYLUS_HANDWRITING_SETTINGS
 
@@ -218,13 +218,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_STYLUS_HANDWRITING_SETTINGS: String
 ```
 
-`https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()` for IME that `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()`.
+getAction for IME that supportsStylusHandwriting.
 
  Value: "android.view.inputmethod.action.STYLUS_HANDWRITING_SETTINGS"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createStylusHandwritingSettingsActivityIntent()`
+- createStylusHandwritingSettingsActivityIntent
 
 ## Public constructors
 
@@ -269,7 +269,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun createImeLanguageSettingsActivityIntent(): Intent?
 ```
 
-Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for IME language settings activity with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()``https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String`. If `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_languageSettingsActivity:kotlin.Int` is not defined, tries to fall back to the IME general settings activity. If `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_settingsActivity:kotlin.Int` is also not defined, returns `null`.
+Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for IME language settings activity with getAction`https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_IME_LANGUAGE_SETTINGS:kotlin.String`. If `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_languageSettingsActivity:kotlin.Int` is not defined, tries to fall back to the IME general settings activity. If `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_settingsActivity:kotlin.Int` is also not defined, returns `null`.
 
 To launch IME language settings, use this method to get the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to launch the IME language settings activity.
 
@@ -289,7 +289,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun createStylusHandwritingSettingsActivityIntent(): Intent?
 ```
 
-Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for stylus handwriting settings activity with `https://developer.android.com/reference/kotlin/android/content/Intent.html#getAction()``https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` if IME `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()`, else `null` if there are no associated settings for stylus handwriting / handwriting is not supported or if `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_stylusHandwritingSettingsActivity:kotlin.Int` is not defined.
+Returns `https://developer.android.com/reference/kotlin/android/content/Intent.html#` for stylus handwriting settings activity with getAction`https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#ACTION_STYLUS_HANDWRITING_SETTINGS:kotlin.String` if IME supportsStylusHandwriting, else `null` if there are no associated settings for stylus handwriting / handwriting is not supported or if `https://developer.android.com/reference/kotlin/android/R.styleable.html#InputMethod_stylusHandwritingSettingsActivity:kotlin.Int` is not defined.
 
 To launch stylus settings, use this method to get the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to launch the stylus handwriting settings activity.
 
@@ -303,8 +303,8 @@ e.g.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getSettingsActivity()`
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#supportsStylusHandwriting()`
+- getSettingsActivity
+- supportsStylusHandwriting
 
 ### describeContents
 
@@ -314,7 +314,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -339,7 +339,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 fun equals(other: Any?): Boolean
 ```
 
-Used to test whether the given parameter object is an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#` and its Id is the same to this one.
+Used to test whether the given parameter object is an InputMethodInfo and its Id is the same to this one.
 
 | Parameters ||
 |---|---|
@@ -348,7 +348,7 @@ Used to test whether the given parameter object is an `https://developer.android
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the given parameter object is an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#` and its Id is the same to this one. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | true if the given parameter object is an InputMethodInfo and its Id is the same to this one. |
 
 ### getComponent
 
@@ -388,7 +388,7 @@ fun getId(): String!
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#unflattenFromString(kotlin.String)`
+- unflattenFromString
 
 ### getIsDefaultResourceId
 
@@ -438,12 +438,12 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 fun getSettingsActivity(): String!
 ```
 
-Return the class name of an activity that provides a settings UI for the input method. You can launch this activity be starting it with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` whose action is MAIN and with an explicit `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` composed of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#getPackageName()` and the class name returned here.
+Return the class name of an activity that provides a settings UI for the input method. You can launch this activity be starting it with an `https://developer.android.com/reference/kotlin/android/content/Intent.html#` whose action is MAIN and with an explicit `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` composed of getPackageName and the class name returned here.
 
 A null will be returned if there is no settings activity associated with the input method.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createStylusHandwritingSettingsActivityIntent()`
+- createStylusHandwritingSettingsActivityIntent
 
 ### getSubtypeAt
 
@@ -482,8 +482,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -548,7 +548,7 @@ fun supportsStylusHandwriting(): Boolean
 Returns if IME supports handwriting using stylus input.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo#createStylusHandwritingSettingsActivityIntent()`
+- createStylusHandwritingSettingsActivityIntent
 
 ### suppressesSpellChecker
 

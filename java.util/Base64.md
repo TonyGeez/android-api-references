@@ -35,15 +35,15 @@ Unless otherwise noted, passing a `null` argument to a method of this class will
 
 | Public methods ||
 |---|---|
-| static [Base64.Decoder](../java/util/Base64.Decoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getDecoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [Basic](Base64.md) type base64 encoding scheme. |
-| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getEncoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [Basic](Base64.md) type base64 encoding scheme. |
-| static [Base64.Decoder](../java/util/Base64.Decoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getMimeDecoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [MIME](Base64.md) type base64 decoding scheme. |
+| static [Base64.Decoder](../java/util/Base64.Decoder.md)! | getDecoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [Basic](Base64.md) type base64 encoding scheme. |
+| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | getEncoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [Basic](Base64.md) type base64 encoding scheme. |
+| static [Base64.Decoder](../java/util/Base64.Decoder.md)! | getMimeDecoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [MIME](Base64.md) type base64 decoding scheme. |
 | --- | --- |
-| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getMimeEncoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [MIME](Base64.md) type base64 encoding scheme. |
-| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getMimeEncoder(kotlin.Int,%20kotlin.ByteArray)(lineLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, lineSeparator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [MIME](Base64.md) type base64 encoding scheme with specified line length and line separators. |
-| static [Base64.Decoder](../java/util/Base64.Decoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getUrlDecoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [URL and Filename safe](Base64.md) type base64 encoding scheme. |
+| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | getMimeEncoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [MIME](Base64.md) type base64 encoding scheme. |
+| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | getMimeEncoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [MIME](Base64.md) type base64 encoding scheme with specified line length and line separators. |
+| static [Base64.Decoder](../java/util/Base64.Decoder.md)! | getUrlDecoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Decoder` that decodes using the [URL and Filename safe](Base64.md) type base64 encoding scheme. |
 | --- | --- |
-| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | `https://developer.android.com/reference/kotlin/java/util/Base64#getUrlEncoder()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [URL and Filename safe](Base64.md) type base64 encoding scheme. |
+| static [Base64.Encoder](../java/util/Base64.Encoder.md)! | getUrlEncoder Returns a `https://developer.android.com/reference/kotlin/java/util/Base64.Encoder` that encodes using the [URL and Filename safe](Base64.md) type base64 encoding scheme. |
 
 ## Public methods
 

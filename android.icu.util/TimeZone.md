@@ -14,15 +14,15 @@ abstract class TimeZone : Cloneable, Freezable<TimeZone!>, Serializable
 
 `TimeZone` represents a time zone offset, and also computes daylight savings.
 
-Typically, you get a `TimeZone` using `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDefault()` which creates a `TimeZone` based on the time zone where the program is running. For example, for a program running in Japan, `getDefault` creates a `TimeZone` object based on Japanese Standard Time.
+Typically, you get a `TimeZone` using getDefault which creates a `TimeZone` based on the time zone where the program is running. For example, for a program running in Japan, `getDefault` creates a `TimeZone` object based on Japanese Standard Time.
 
-You can also get a `TimeZone` using `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTimeZone(kotlin.String)` along with a time zone ID. For instance, the time zone ID for the U.S. Pacific Time zone is "America/Los_Angeles". So, you can get a U.S. Pacific Time `TimeZone` object with:
+You can also get a `TimeZone` using getTimeZone along with a time zone ID. For instance, the time zone ID for the U.S. Pacific Time zone is "America/Los_Angeles". So, you can get a U.S. Pacific Time `TimeZone` object with:
 
 ```kotlin
 TimeZone tz = TimeZone.getTimeZone("America/Los_Angeles");
   
 ```
-You can use the `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs()` method to iterate through all the supported time zone IDs, or getCanonicalID method to check if a time zone ID is supported or not. You can then choose a supported ID to get a `TimeZone`. If the time zone you want is not represented by one of the supported IDs, then you can create a custom time zone ID with the following syntax:
+You can use the getAvailableIDs method to iterate through all the supported time zone IDs, or getCanonicalID method to check if a time zone ID is supported or not. You can then choose a supported ID to get a `TimeZone`. If the time zone you want is not represented by one of the supported IDs, then you can create a custom time zone ID with the following syntax:
 
 ```kotlin
 GMT[+|-]hh[[:]mm]
@@ -36,7 +36,7 @@ For compatibility with JDK 1.1.x, some other three-letter time zone IDs (such as
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.SystemTimeZoneType` **\[icu\]** System time zone type constants used by filtering zones in `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(android.icu.util.TimeZone.SystemTimeZoneType,%20kotlin.String,%20kotlin.Int)` |
+| | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.SystemTimeZoneType` **\[icu\]** System time zone type constants used by filtering zones in getAvailableIDs |
 
 | Constants ||
 |---|---|
@@ -57,64 +57,64 @@ For compatibility with JDK 1.1.x, some other three-letter time zone IDs (such as
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#TimeZone()()` Default constructor. |
+| TimeZone Default constructor. |
 
 | Public methods ||
 |---|---|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#clone()()` Overrides clone. |
-| open [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#cloneAsThawed()()` Provides for the clone operation. |
-| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#countEquivalentIDs(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns the number of IDs in the equivalency group that includes the given ID. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Overrides clone. |
+| open [TimeZone](TimeZone.md)! | cloneAsThawed Provides for the clone operation. |
+| open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | countEquivalentIDs **\[icu\]** Returns the number of IDs in the equivalency group that includes the given ID. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Overrides equals. |
-| open [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#freeze()()` Freezes the object. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs()()` Return a new String array containing all system TimeZone IDs. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Overrides equals. |
+| open [TimeZone](TimeZone.md)! | freeze Freezes the object. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableIDs Return a new String array containing all system TimeZone IDs. |
 | --- | --- |
-| open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(android.icu.util.TimeZone.SystemTimeZoneType,%20kotlin.String,%20kotlin.Int)(zoneType: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone.SystemTimeZoneType!, region: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, rawOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!)` **\[icu\]** Returns a set of time zone ID strings with the given filter conditions. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(kotlin.Int)(rawOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a new String array containing all system TimeZone IDs with the given raw offset from GMT. |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(kotlin.String)(country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a new String array containing all system TimeZone IDs associated with the given country. |
+| open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableIDs **\[icu\]** Returns a set of time zone ID strings with the given filter conditions. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableIDs Return a new String array containing all system TimeZone IDs with the given raw offset from GMT. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableIDs Return a new String array containing all system TimeZone IDs associated with the given country. |
 | --- | --- |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getCanonicalID(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns the canonical system time zone ID or the normalized custom time zone ID for the given time zone ID. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getCanonicalID(kotlin.String,%20kotlin.BooleanArray)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, isSystemID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html!)` **\[icu\]** Returns the canonical system time zone ID or the normalized custom time zone ID for the given time zone ID. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDSTSavings()()` Returns the amount of time to be added to local standard time to get local wall clock time. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getCanonicalID **\[icu\]** Returns the canonical system time zone ID or the normalized custom time zone ID for the given time zone ID. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getCanonicalID **\[icu\]** Returns the canonical system time zone ID or the normalized custom time zone ID for the given time zone ID. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDSTSavings Returns the amount of time to be added to local standard time to get local wall clock time. |
 | --- | --- |
-| open static [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDefault()()` Gets the default `TimeZone` for this host. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDisplayName()()` Returns a name of this time zone suitable for presentation to the user in the default `DISPLAY` locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDisplayName(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a name of this time zone suitable for presentation to the user in the specified locale. |
+| open static [TimeZone](TimeZone.md)! | getDefault Gets the default `TimeZone` for this host. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name of this time zone suitable for presentation to the user in the default `DISPLAY` locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name of this time zone suitable for presentation to the user in the specified locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDisplayName(kotlin.Boolean,%20kotlin.Int)(daylight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a name of this time zone suitable for presentation to the user in the default `DISPLAY` locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDisplayName(kotlin.Boolean,%20kotlin.Int,%20android.icu.util.ULocale)(daylight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a name of this time zone suitable for presentation to the user in the specified locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDisplayName(kotlin.Boolean,%20kotlin.Int,%20java.util.Locale)(daylight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a name of this time zone suitable for presentation to the user in the specified locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name of this time zone suitable for presentation to the user in the default `DISPLAY` locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name of this time zone suitable for presentation to the user in the specified locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name of this time zone suitable for presentation to the user in the specified locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDisplayName(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a name of this time zone suitable for presentation to the user in the specified locale. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getEquivalentID(kotlin.String,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an ID in the equivalency group that includes the given ID. |
-| open static [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getFrozenTimeZone(kotlin.String)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the `TimeZone` for the given ID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name of this time zone suitable for presentation to the user in the specified locale. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getEquivalentID Returns an ID in the equivalency group that includes the given ID. |
+| open static [TimeZone](TimeZone.md)! | getFrozenTimeZone Gets the `TimeZone` for the given ID. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getID()()` Gets the ID of this time zone. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getIDForWindowsID(kotlin.String,%20kotlin.String)(winid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, region: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Converts a Windows time zone ID to an equivalent system time zone ID for a region. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getIanaID(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the preferred time zone ID in the IANA database for the given time zone ID. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getID Gets the ID of this time zone. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getIDForWindowsID **\[icu\]** Converts a Windows time zone ID to an equivalent system time zone ID for a region. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getIanaID Returns the preferred time zone ID in the IANA database for the given time zone ID. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getOffset(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(era: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, day: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, milliseconds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the time zone offset, for current date, modified in case of daylight savings. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getOffset(kotlin.Long)(date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns the offset of this time zone from UTC at the specified date. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getOffset(kotlin.Long,%20kotlin.Boolean,%20kotlin.IntArray)(date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, local: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, offsets: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Returns the time zone raw and GMT offset for the given moment in time. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOffset Gets the time zone offset, for current date, modified in case of daylight savings. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOffset Returns the offset of this time zone from UTC at the specified date. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getOffset Returns the time zone raw and GMT offset for the given moment in time. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getRawOffset()()` Gets unmodified offset, NOT modified in case of daylight savings. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getRegion(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Returns the region code associated with the given system time zone ID. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTZDataVersion()()` **\[icu\]** Returns the time zone data version currently used by ICU. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRawOffset Gets unmodified offset, NOT modified in case of daylight savings. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getRegion **\[icu\]** Returns the region code associated with the given system time zone ID. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getTZDataVersion **\[icu\]** Returns the time zone data version currently used by ICU. |
 | --- | --- |
-| open static [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTimeZone(kotlin.String)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the `TimeZone` for the given ID. |
-| open static [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTimeZone(kotlin.String,%20kotlin.Int)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the `TimeZone` for the given ID and the timezone type. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getWindowsID(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Converts a system time zone ID to an equivalent Windows time zone ID. |
+| open static [TimeZone](TimeZone.md)! | getTimeZone Gets the `TimeZone` for the given ID. |
+| open static [TimeZone](TimeZone.md)! | getTimeZone Gets the `TimeZone` for the given ID and the timezone type. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getWindowsID **\[icu\]** Converts a system time zone ID to an equivalent Windows time zone ID. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#hasSameRules(android.icu.util.TimeZone)(other: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#!)` Returns true if this zone has the same rule and offset as another zone. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#hashCode()()` Overrides hashCode. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#inDaylightTime(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` Queries if the given date is in daylight savings time in this time zone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSameRules Returns true if this zone has the same rule and offset as another zone. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Overrides hashCode. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | inDaylightTime Queries if the given date is in daylight savings time in this time zone. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#isFrozen()()` Determines whether the object has been frozen or not. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#observesDaylightTime()()` Queries if this time zone is in daylight saving time or will observe daylight saving time at any future time. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#setID(kotlin.String)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets the time zone ID. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFrozen Determines whether the object has been frozen or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | observesDaylightTime Queries if this time zone is in daylight saving time or will observe daylight saving time at any future time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setID Sets the time zone ID. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#setRawOffset(kotlin.Int)(offsetMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the base time zone offset to GMT. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#useDaylightTime()()` Queries if this time zone uses daylight savings time. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRawOffset Sets the base time zone offset to GMT. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | useDaylightTime Queries if this time zone uses daylight savings time. |
 
 | Properties ||
 |---|---|
@@ -281,7 +281,7 @@ static val UNKNOWN_ZONE_ID: String
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTimeZone(kotlin.String)`
+- getTimeZone
 
 ## Public constructors
 
@@ -347,7 +347,7 @@ The returned count includes the given ID; it is always \>= 1 for valid IDs. The 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getEquivalentID(kotlin.String,%20kotlin.Int)`
+- getEquivalentID
 
 ### equals
 
@@ -397,7 +397,7 @@ Return a new String array containing all system TimeZone IDs. These IDs (and onl
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(android.icu.util.TimeZone.SystemTimeZoneType,%20kotlin.String,%20kotlin.Int)`
+- getAvailableIDs
 
 ### getAvailableIDs
 
@@ -450,7 +450,7 @@ Return a new String array containing all system TimeZone IDs with the given raw 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(android.icu.util.TimeZone.SystemTimeZoneType,%20kotlin.String,%20kotlin.Int)`
+- getAvailableIDs
 
 ### getAvailableIDs
 
@@ -472,7 +472,7 @@ Return a new String array containing all system TimeZone IDs associated with the
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(android.icu.util.TimeZone.SystemTimeZoneType,%20kotlin.String,%20kotlin.Int)`
+- getAvailableIDs
 
 ### getCanonicalID
 
@@ -710,7 +710,7 @@ The given index must be in the range 0..n-1, where n is the value returned by `c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#countEquivalentIDs(kotlin.String)`
+- countEquivalentIDs
 
 ### getFrozenTimeZone
 
@@ -720,7 +720,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getFrozenTimeZone(ID: String!): TimeZone!
 ```
 
-Gets the `TimeZone` for the given ID. The instance of `TimeZone` returned by this method is immutable. Any methods mutate the instance(`https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#setID(kotlin.String)`, `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#setRawOffset(kotlin.Int)`) will throw `UnsupportedOperationException` upon its invocation.
+Gets the `TimeZone` for the given ID. The instance of `TimeZone` returned by this method is immutable. Any methods mutate the instance(setID, setRawOffset) will throw `UnsupportedOperationException` upon its invocation.
 
 | Parameters ||
 |---|---|
@@ -776,7 +776,7 @@ This implementation utilizes [Zone-Tzid mapping data](http://unicode.org/cldr/ch
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getWindowsID(kotlin.String)`
+- getWindowsID
 
 ### getIanaID
 
@@ -788,7 +788,7 @@ open static fun getIanaID(id: String!): String!
 
 Returns the preferred time zone ID in the IANA database for the given time zone ID. There are two types of preferred IDs. The first type is the one defined in zone.tab file, such as "America/Los_Angeles". The second types is the one defined for zones not associated with a specific region, but not defined with "Link" syntax, such as "Etc/GMT+10".
 
-Note: For most of system time zone IDs, this method returns an ID same as `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getCanonicalID(kotlin.String)`. `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getCanonicalID(kotlin.String)` is based on canonical time zone IDs defined in Unicode CLDR. These canonical time zone IDs in CLDR were based on very old version of the time zone database. In the IANA time zone database, some IDs were updated since then. This API returns a newer time zone ID. For example, CLDR defines "Asia/Calcutta" as the canonical time zone ID. This method returns "Asia/Kolkata" instead.
+Note: For most of system time zone IDs, this method returns an ID same as getCanonicalID. getCanonicalID is based on canonical time zone IDs defined in Unicode CLDR. These canonical time zone IDs in CLDR were based on very old version of the time zone database. In the IANA time zone database, some IDs were updated since then. This API returns a newer time zone ID. For example, CLDR defines "Asia/Calcutta" as the canonical time zone ID. This method returns "Asia/Kolkata" instead.
 
 "Etc/Unknown" is a special time zone ID defined by CLDR. There are no corresponding zones in the IANA time zone database. when the input is "Etc/Unknown", this method returns "Etc/Unknown", but it really means no mappings available. Caller of this method should interpret "Etc/Unknown" as an error.
 
@@ -802,7 +802,7 @@ Note: For most of system time zone IDs, this method returns an ID same as `https
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getCanonicalID(kotlin.String)`
+- getCanonicalID
 
 ### getOffset
 
@@ -858,7 +858,7 @@ Returns the offset of this time zone from UTC at the specified date. If Daylight
 
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ZONE_OFFSET:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DST_OFFSET:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getOffset(kotlin.Long,%20kotlin.Boolean,%20kotlin.IntArray)`
+- getOffset
 
 ### getOffset
 
@@ -919,7 +919,7 @@ open static fun getRegion(id: String!): String!
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getAvailableIDs(kotlin.String)`
+- getAvailableIDs
 
 ### getTZDataVersion
 
@@ -1011,7 +1011,7 @@ This implementation utilizes [Zone-Tzid mapping data](http://unicode.org/cldr/ch
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getIDForWindowsID(kotlin.String,%20kotlin.String)`
+- getIDForWindowsID
 
 ### hasSameRules
 
@@ -1083,11 +1083,11 @@ open fun observesDaylightTime(): Boolean
 
 Queries if this time zone is in daylight saving time or will observe daylight saving time at any future time.
 
-The default implementation in this class returns `true` if `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#useDaylightTime()` or `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#inDaylightTime(java.util.Date)` returns `true`.
+The default implementation in this class returns `true` if useDaylightTime or inDaylightTime returns `true`.
 
-**Note:** This method was added for `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#` compatibility support. The `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#useDaylightTime()` method only checks the last known rule(s), therefore it may return false even the zone observes daylight saving time currently. `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#` added `observesDaylightTime()` to resolve the issue. In ICU, `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#useDaylightTime()` works differently. The ICU implementation checks if the zone uses daylight saving time in the current calendar year. Therefore, it will never return `false` if daylight saving time is currently used.
+**Note:** This method was added for `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#` compatibility support. The useDaylightTime method only checks the last known rule(s), therefore it may return false even the zone observes daylight saving time currently. `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#` added `observesDaylightTime()` to resolve the issue. In ICU, useDaylightTime works differently. The ICU implementation checks if the zone uses daylight saving time in the current calendar year. Therefore, it will never return `false` if daylight saving time is currently used.
 
-ICU's TimeZone subclass implementations override this method to support the same behavior with `https://developer.android.com/reference/kotlin/java/util/TimeZone.html#observesDaylightTime()`. Unlike `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#useDaylightTime()`, the implementation does not take past daylight saving time into account, so that this method may return `false` even when `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#useDaylightTime()` returns `true`.
+ICU's TimeZone subclass implementations override this method to support the same behavior with observesDaylightTime. Unlike useDaylightTime, the implementation does not take past daylight saving time into account, so that this method may return `false` even when useDaylightTime returns `true`.
 
 | Return ||
 |---|---|
@@ -1095,7 +1095,7 @@ ICU's TimeZone subclass implementations override this method to support the same
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#useDaylightTime()`
+- useDaylightTime
 
 ### setID
 
@@ -1159,8 +1159,8 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val UNKNOWN_ZONE: TimeZone!
 ```
 
-**\[icu\]** The immutable (frozen) "unknown" time zone. It behaves like the GMT/UTC time zone but has the UNKNOWN_ZONE_ID = "Etc/Unknown". `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTimeZone(kotlin.String)` returns a mutable clone of this time zone if the input ID is not recognized.
+**\[icu\]** The immutable (frozen) "unknown" time zone. It behaves like the GMT/UTC time zone but has the UNKNOWN_ZONE_ID = "Etc/Unknown". getTimeZone returns a mutable clone of this time zone if the input ID is not recognized.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#UNKNOWN_ZONE_ID:kotlin.String`
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getTimeZone(kotlin.String)`
+- getTimeZone

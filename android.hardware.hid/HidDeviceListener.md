@@ -14,8 +14,8 @@ Interface for receiving HID device connectivity updates.
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDeviceListener#onHidDeviceAdded(android.hardware.hid.HidDevice)(device: https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice)` Called when a HID device is added. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidDeviceListener#onHidDeviceRemoved(android.hardware.hid.HidDevice)(device: https://developer.android.com/reference/kotlin/android/hardware/hid/HidDevice)` Called when a HID device is removed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onHidDeviceAdded Called when a HID device is added. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onHidDeviceRemoved Called when a HID device is removed. |
 
 ## Public methods
 

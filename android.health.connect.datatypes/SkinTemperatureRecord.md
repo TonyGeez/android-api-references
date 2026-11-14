@@ -20,8 +20,8 @@ Captures the skin temperature of a user. Each record can represent a series of m
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#` |
-| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord.Delta` Skin temperature delta entry of `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#`. |
+| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord.Builder` Builder class for SkinTemperatureRecord |
+| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord.Delta` Skin temperature delta entry of SkinTemperatureRecord. |
 
 | Constants ||
 |---|---|
@@ -33,21 +33,21 @@ Captures the skin temperature of a user. Each record can represent a series of m
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
+| From class Record |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Temperature](../android.health.connect.datatypes.units/Temperature.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getBaseline()()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SkinTemperatureRecord.Delta](../android/health/connect/datatypes/SkinTemperatureRecord.Delta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getDeltas()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Temperature](../android.health.connect.datatypes.units/Temperature.md)? | getBaseline <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SkinTemperatureRecord.Delta](../android/health/connect/datatypes/SkinTemperatureRecord.Delta.md)!\> | getDeltas <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getMeasurementLocation()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#hashCode()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMeasurementLocation <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord` |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndZoneOffset()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartZoneOffset()()` <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#getMetadata()()` <br /> | ||
+| From class IntervalRecord |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getEndTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getEndZoneOffset <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getStartTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getStartZoneOffset <br /> | ||
+| From class Record |---|---| | Metadata | getMetadata <br /> | ||
 
 | Properties ||
 |---|---|
@@ -142,7 +142,7 @@ fun getBaseline(): Temperature?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature?` | baseline skin temperature in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Temperature` unit. This value may be `null`. |
+| Temperature | baseline skin temperature in Temperature unit. This value may be `null`. |
 
 ### getDeltas
 
@@ -155,7 +155,7 @@ fun getDeltas(): MutableList<SkinTemperatureRecord.Delta!>
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord.Delta!>` | an unmodified list of skin temperature deltas in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/TemperatureDelta` unit. This value cannot be `null`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord.Delta!>` | an unmodified list of skin temperature deltas in TemperatureDelta unit. This value cannot be `null`. |
 
 ### getMeasurementLocation
 

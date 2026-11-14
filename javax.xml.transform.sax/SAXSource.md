@@ -12,31 +12,31 @@ open class SAXSource : Source
 
 Acts as an holder for SAX-style Source.
 
-Note that XSLT requires namespace support. Attempting to transform an input source that is not generated with a namespace-aware parser may result in errors. Parsers can be made namespace aware by calling the `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory.html#setNamespaceAware(kotlin.Boolean)` method.
+Note that XSLT requires namespace support. Attempting to transform an input source that is not generated with a namespace-aware parser may result in errors. Parsers can be made namespace aware by calling the setNamespaceAware method.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#FEATURE:kotlin.String` If `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#getFeature(kotlin.String)` returns true when passed this value as an argument, the Transformer supports Source input of this type. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#FEATURE:kotlin.String` If getFeature returns true when passed this value as an argument, the Transformer supports Source input of this type. |
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#SAXSource()()` Zero-argument default constructor. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#SAXSource(org.xml.sax.InputSource)(inputSource: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!)` Create a `SAXSource`, using a SAX `InputSource`. |
-| `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#SAXSource(org.xml.sax.XMLReader,%20org.xml.sax.InputSource)(reader: https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#!, inputSource: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!)` Create a `SAXSource`, using an `https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#` and a SAX InputSource. |
+| SAXSource Zero-argument default constructor. |
+| SAXSource Create a `SAXSource`, using a SAX `InputSource`. |
+| SAXSource Create a `SAXSource`, using an `https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#` and a SAX InputSource. |
 
 | Public methods ||
 |---|---|
-| open [InputSource](../org.xml.sax/InputSource.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getInputSource()()` Get the SAX InputSource to be used for the Source. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getSystemId()()` Get the base ID (URI or system ID) from where URIs will be resolved. |
-| open [XMLReader](../org.xml.sax/XMLReader.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getXMLReader()()` Get the XMLReader to be used for the Source. |
+| open [InputSource](../org.xml.sax/InputSource.md)! | getInputSource Get the SAX InputSource to be used for the Source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getSystemId Get the base ID (URI or system ID) from where URIs will be resolved. |
+| open [XMLReader](../org.xml.sax/XMLReader.md)! | getXMLReader Get the XMLReader to be used for the Source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setInputSource(org.xml.sax.InputSource)(inputSource: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!)` Set the SAX InputSource to be used for the Source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setSystemId(kotlin.String)(systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the system identifier for this Source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setXMLReader(org.xml.sax.XMLReader)(reader: https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#!)` Set the XMLReader to be used for the Source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInputSource Set the SAX InputSource to be used for the Source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSystemId Set the system identifier for this Source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setXMLReader Set the XMLReader to be used for the Source. |
 | --- | --- |
-| open static [InputSource](../org.xml.sax/InputSource.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#sourceToInputSource(javax.xml.transform.Source)(source: https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#!)` Attempt to obtain a SAX InputSource object from a Source object. |
+| open static [InputSource](../org.xml.sax/InputSource.md)! | sourceToInputSource Attempt to obtain a SAX InputSource object from a Source object. |
 
 ## Constants
 
@@ -48,7 +48,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val FEATURE: String
 ```
 
-If `https://developer.android.com/reference/kotlin/javax/xml/transform/TransformerFactory.html#getFeature(kotlin.String)` returns true when passed this value as an argument, the Transformer supports Source input of this type.
+If getFeature returns true when passed this value as an argument, the Transformer supports Source input of this type.
 
  Value: "http://javax.xml.transform.sax.SAXSource/feature"
 
@@ -62,10 +62,10 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 SAXSource()
 ```
 
-Zero-argument default constructor. If this constructor is used, and no SAX source is set using `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setInputSource(org.xml.sax.InputSource)` , then the `Transformer` will create an empty source `https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#` using `https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#InputSource()`.
+Zero-argument default constructor. If this constructor is used, and no SAX source is set using setInputSource , then the `Transformer` will create an empty source `https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#` using InputSource.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,%20javax.xml.transform.Result)`
+- transform
 
 ### SAXSource
 
@@ -75,7 +75,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 SAXSource(inputSource: InputSource!)
 ```
 
-Create a `SAXSource`, using a SAX `InputSource`. The `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#` or `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory` creates a reader via `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderFactory.html#` (if setXMLReader is not used), sets itself as the reader's `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#`, and calls reader.parse(inputSource).
+Create a `SAXSource`, using a SAX `InputSource`. The `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#` or SAXTransformerFactory creates a reader via `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/XMLReaderFactory.html#` (if setXMLReader is not used), sets itself as the reader's `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#`, and calls reader.parse(inputSource).
 
 | Parameters ||
 |---|---|
@@ -91,7 +91,7 @@ SAXSource(
     inputSource: InputSource!)
 ```
 
-Create a `SAXSource`, using an `https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#` and a SAX InputSource. The `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#` or `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXTransformerFactory` will set itself to be the reader's `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#`, and then will call reader.parse(inputSource).
+Create a `SAXSource`, using an `https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#` and a SAX InputSource. The `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer.html#` or SAXTransformerFactory will set itself to be the reader's `https://developer.android.com/reference/kotlin/org/xml/sax/ContentHandler.html#`, and then will call reader.parse(inputSource).
 
 | Parameters ||
 |---|---|

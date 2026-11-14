@@ -28,21 +28,21 @@ By default, all "put" methods throw `https://developer.android.com/reference/kot
 
 | Public methods ||
 |---|---|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieve a boolean value from the data store. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getFloat(kotlin.String,%20kotlin.Float)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Retrieve a float value from the data store. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getInt(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve an int value from the data store. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getBoolean Retrieve a boolean value from the data store. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getFloat Retrieve a float value from the data store. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInt Retrieve an int value from the data store. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getLong(kotlin.String,%20kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Retrieve a long value from the data store. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getString(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Retrieve a String value from the data store. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getStringSet(kotlin.String,%20kotlin.collections.MutableSet)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Retrieve a set of String values from the data store. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLong Retrieve a long value from the data store. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getString Retrieve a String value from the data store. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | getStringSet Retrieve a set of String values from the data store. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putBoolean(kotlin.String,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set a boolean value to the data store. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putFloat(kotlin.String,%20kotlin.Float)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Set a float value to the data store. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putInt(kotlin.String,%20kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set an int value to the data store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putBoolean Set a boolean value to the data store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putFloat Set a float value to the data store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putInt Set an int value to the data store. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putLong(kotlin.String,%20kotlin.Long)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Set a long value to the data store. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putString(kotlin.String,%20kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Set a String value to the data store. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putStringSet(kotlin.String,%20kotlin.collections.MutableSet)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, values: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Set a set of String value to the data store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putLong Set a long value to the data store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putString Set a String value to the data store. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | putStringSet Set a set of String value to the data store. |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ Retrieve a boolean value from the data store.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getBoolean(kotlin.String,%20kotlin.Boolean)`
+- getBoolean
 
 ### getFloat
 
@@ -93,7 +93,7 @@ Retrieve a float value from the data store.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putFloat(kotlin.String,%20kotlin.Float)`
+- putFloat
 
 ### getInt
 
@@ -117,7 +117,7 @@ Retrieve an int value from the data store.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putInt(kotlin.String,%20kotlin.Int)`
+- putInt
 
 ### getLong
 
@@ -141,7 +141,7 @@ Retrieve a long value from the data store.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putLong(kotlin.String,%20kotlin.Long)`
+- putLong
 
 ### getString
 
@@ -169,7 +169,7 @@ Retrieve a String value from the data store.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putString(kotlin.String,%20kotlin.String)`
+- putString
 
 ### getStringSet
 
@@ -197,7 +197,7 @@ Retrieve a set of String values from the data store.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#putStringSet(kotlin.String,%20kotlin.collections.MutableSet)`
+- putStringSet
 
 ### putBoolean
 
@@ -223,7 +223,7 @@ Once the value is set the data store is responsible for holding it.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getBoolean(kotlin.String,%20kotlin.Boolean)`
+- getBoolean
 
 ### putFloat
 
@@ -249,7 +249,7 @@ Once the value is set the data store is responsible for holding it.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getFloat(kotlin.String,%20kotlin.Float)`
+- getFloat
 
 ### putInt
 
@@ -275,7 +275,7 @@ Once the value is set the data store is responsible for holding it.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getInt(kotlin.String,%20kotlin.Int)`
+- getInt
 
 ### putLong
 
@@ -301,7 +301,7 @@ Once the value is set the data store is responsible for holding it.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getLong(kotlin.String,%20kotlin.Long)`
+- getLong
 
 ### putString
 
@@ -327,7 +327,7 @@ Once the value is set the data store is responsible for holding it.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getString(kotlin.String,%20kotlin.String)`
+- getString
 
 ### putStringSet
 
@@ -353,4 +353,4 @@ Once the value is set the data store is responsible for holding it.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/preference/PreferenceDataStore#getStringSet(kotlin.String,%20kotlin.collections.MutableSet)`
+- getStringSet

@@ -16,31 +16,31 @@ class UserData : Parcelable
 >
 > The ODP APIs are deprecated and will not be supported in future Android releases. There is no direct replacement API available. Developers currently integrated with these APIs must cease further integration efforts. For comprehensive details regarding this deprecation and the future roadmap of Privacy Sandbox on Android, please consult the official Privacy Sandbox developer documentation and announcements: <https://privacysandbox.google.com>
 
-User data provided by the platform to an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService`.
+User data provided by the platform to an IsolatedService.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [AppInfo](AppInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getAppInfos()()` A map from package name to app information for installed and uninstalled apps. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [AppInfo](AppInfo.md)!\> | getAppInfos A map from package name to app information for installed and uninstalled apps. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getAvailableStorageBytes()()` The available space on device in bytes. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getBatteryPercentage()()` Battery percentage. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getCarrier()()` The Service Provider Name (SPN) returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimOperatorName()` |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getAvailableStorageBytes The available space on device in bytes. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBatteryPercentage Battery percentage. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getCarrier The Service Provider Name (SPN) returned by getSimOperatorName |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getDataNetworkType()()` Data network type. |
-| [NetworkCapabilities](../android.net/NetworkCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getNetworkCapabilities()()` A filtered subset of the Network capabilities of the device that contains upstream and downstream speeds, and whether the network is metered. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getOrientation()()` The device orientation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDataNetworkType Data network type. |
+| [NetworkCapabilities](../android.net/NetworkCapabilities.md)? | getNetworkCapabilities A filtered subset of the Network capabilities of the device that contains upstream and downstream speeds, and whether the network is metered. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getOrientation The device orientation. |
 | --- | --- |
-| [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#getTimezoneUtcOffset()()` The device timezone +/- offset from UTC. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#hashCode()()` Returns a hash code value for the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Duration](../java.time/Duration.md) | getTimezoneUtcOffset The device timezone +/- offset from UTC. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -59,7 +59,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -154,7 +154,7 @@ fun getCarrier(): String
 
 **Deprecated:** *Deprecated in Java.*
 
-The Service Provider Name (SPN) returned by `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimOperatorName()`
+The Service Provider Name (SPN) returned by getSimOperatorName
 
 | Return ||
 |---|---|
@@ -170,7 +170,7 @@ fun getDataNetworkType(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Data network type. This is the value of `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getDataNetworkType()`.
+Data network type. This is the value of getDataNetworkType.
 
 | Return ||
 |---|---|
@@ -186,7 +186,7 @@ fun getNetworkCapabilities(): NetworkCapabilities?
 
 **Deprecated:** *Deprecated in Java.*
 
-A filtered subset of the Network capabilities of the device that contains upstream and downstream speeds, and whether the network is metered. This is an instance of `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` that contains the capability `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_NOT_METERED:kotlin.Int` if the network is not metered, and `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#getLinkDownstreamBandwidthKbps()` and `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#getLinkUpstreamBandwidthKbps()` return the downstream and upstream connection speeds. All other methods of this `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` object return empty or default values.
+A filtered subset of the Network capabilities of the device that contains upstream and downstream speeds, and whether the network is metered. This is an instance of `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` that contains the capability `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#NET_CAPABILITY_NOT_METERED:kotlin.Int` if the network is not metered, and getLinkDownstreamBandwidthKbps and getLinkUpstreamBandwidthKbps return the downstream and upstream connection speeds. All other methods of this `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities.html#` object return empty or default values.
 
 | Return ||
 |---|---|
@@ -239,8 +239,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

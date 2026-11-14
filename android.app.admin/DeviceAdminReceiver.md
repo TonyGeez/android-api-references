@@ -13,11 +13,11 @@ open class DeviceAdminReceiver : BroadcastReceiver
 
 Base class for implementing a device administration component. This class provides a convenience for interpreting the raw intent actions that are sent by the system.
 
-The callback methods, like the base `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#onReceive(android.content.Context,%20android.content.Intent)` method, happen on the main thread of the process. Thus long running operations must be done on another thread. Note that because a receiver is done once returning from its receive function, such long-running operations should probably be done in a `https://developer.android.com/reference/kotlin/android/app/Service.html#`.
+The callback methods, like the base onReceive method, happen on the main thread of the process. Thus long running operations must be done on another thread. Note that because a receiver is done once returning from its receive function, such long-running operations should probably be done in a `https://developer.android.com/reference/kotlin/android/app/Service.html#`.
 
 When publishing your DeviceAdmin subclass as a receiver, it must handle `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_ENABLED:kotlin.String` and require the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BIND_DEVICE_ADMIN:kotlin.String` permission. A typical manifest entry would look like:
 
-The meta-data referenced here provides addition information specific to the device administrator, as parsed by the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminInfo` class. A typical file would be:
+The meta-data referenced here provides addition information specific to the device administrator, as parsed by the DeviceAdminInfo class. A typical file would be:
 
 <br />
 
@@ -59,181 +59,181 @@ The meta-data referenced here provides addition information specific to the devi
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#DeviceAdminReceiver()()` <br /> |
+| DeviceAdminReceiver <br /> |
 
 | Public methods ||
 |---|---|
-| open [DevicePolicyManager](DevicePolicyManager.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#getManager(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Retrieve the DevicePolicyManager interface for this administrator to work with the system. |
-| open [ComponentName](../android.content/ComponentName.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#getWho(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Retrieve the ComponentName describing who this device administrator is, for use in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` APIs that require the administrator to identify itself. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onBugreportFailed(android.content.Context,%20android.content.Intent,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, failureCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the bugreport collection flow has failed. |
+| open [DevicePolicyManager](DevicePolicyManager.md) | getManager Retrieve the DevicePolicyManager interface for this administrator to work with the system. |
+| open [ComponentName](../android.content/ComponentName.md) | getWho Retrieve the ComponentName describing who this device administrator is, for use in DevicePolicyManager APIs that require the administrator to identify itself. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onBugreportFailed Called when the bugreport collection flow has failed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onBugreportShared(android.content.Context,%20android.content.Intent,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, bugreportHash: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called when the bugreport has been shared with the device administrator app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onBugreportSharingDeclined(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when sharing a bugreport has been cancelled by the user of the device. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Allows this receiver to select the alias for a private key and certificate pair for authentication. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onBugreportShared Called when the bugreport has been shared with the device administrator app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onBugreportSharingDeclined Called when sharing a bugreport has been cancelled by the user of the device. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | onChoosePrivateKeyAlias Allows this receiver to select the alias for a private key and certificate pair for authentication. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onComplianceAcknowledgementRequired(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called to notify a profile owner of an organization-owned device that it needs to acknowledge device compliance to allow the user to turn the profile off if needed according to the maximum profile time off policy. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onDisableRequested(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when the user has asked to disable the administrator, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_DISABLE_REQUESTED:kotlin.String`, giving you a chance to present a warning message to them. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onDisabled(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called prior to the administrator being disabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_DISABLED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onComplianceAcknowledgementRequired Called to notify a profile owner of an organization-owned device that it needs to acknowledge device compliance to allow the user to turn the profile off if needed according to the maximum profile time off policy. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | onDisableRequested Called when the user has asked to disable the administrator, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_DISABLE_REQUESTED:kotlin.String`, giving you a chance to present a warning message to them. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onDisabled Called prior to the administrator being disabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_DISABLED:kotlin.String`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onEnabled(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called after the administrator is first enabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_ENABLED:kotlin.String`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onLockTaskModeEntering(android.content.Context,%20android.content.Intent,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called when a device is entering lock task mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onLockTaskModeExiting(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when a device is exiting lock task mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onEnabled Called after the administrator is first enabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_ENABLED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onLockTaskModeEntering Called when a device is entering lock task mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onLockTaskModeExiting Called when a device is exiting lock task mode. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onNetworkLogsAvailable(android.content.Context,%20android.content.Intent,%20kotlin.Long,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, batchToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, networkLogsCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called each time a new batch of network logs can be retrieved. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onOperationSafetyStateChanged(android.content.Context,%20kotlin.Int,%20kotlin.Boolean)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isSafe: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called to notify the state of operations that can be unsafe to execute has changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordChanged(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onNetworkLogsAvailable Called each time a new batch of network logs can be retrieved. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onOperationSafetyStateChanged Called to notify the state of operations that can be unsafe to execute has changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordChanged Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordChanged(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordExpiring(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called periodically when the device or profile challenge password is about to expire or has expired. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordExpiring(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called periodically when the device or profile challenge password is about to expire or has expired. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordChanged Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordExpiring Called periodically when the device or profile challenge password is about to expire or has expired. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordExpiring Called periodically when the device or profile challenge password is about to expire or has expired. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordFailed(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordFailed(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordSucceeded(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called after the user has succeeded at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_SUCCEEDED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordFailed Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordFailed Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordSucceeded Called after the user has succeeded at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_SUCCEEDED:kotlin.String`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordSucceeded(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called after the user has succeeded at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_SUCCEEDED:kotlin.String`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onProfileProvisioningComplete(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when provisioning of a managed profile or managed device has completed successfully. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReadyForUserInitialization(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called during provisioning of a managed device to allow the device initializer to perform user setup steps. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onPasswordSucceeded Called after the user has succeeded at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_SUCCEEDED:kotlin.String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onProfileProvisioningComplete Called when provisioning of a managed profile or managed device has completed successfully. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onReadyForUserInitialization Called during provisioning of a managed device to allow the device initializer to perform user setup steps. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Intercept standard device administrator broadcasts. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onSecurityLogsAvailable(android.content.Context,%20android.content.Intent)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when a new batch of security logs can be retrieved. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onSystemUpdatePending(android.content.Context,%20android.content.Intent,%20kotlin.Long)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, receivedTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Called when the information about a pending system update is available. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onReceive Intercept standard device administrator broadcasts. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSecurityLogsAvailable Called when a new batch of security logs can be retrieved. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onSystemUpdatePending Called when the information about a pending system update is available. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onTransferAffiliatedProfileOwnershipComplete(android.content.Context,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called on the device owner when the ownership of one of its affiliated profiles is transferred. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onTransferOwnershipComplete(android.content.Context,%20android.os.PersistableBundle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, bundle: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#?)` Called on the newly assigned owner (either device owner or profile owner) when the ownership transfer has completed successfully. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onUserAdded(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, addedUser: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called when a user or profile is created. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onTransferAffiliatedProfileOwnershipComplete Called on the device owner when the ownership of one of its affiliated profiles is transferred. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onTransferOwnershipComplete Called on the newly assigned owner (either device owner or profile owner) when the ownership transfer has completed successfully. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onUserAdded Called when a user or profile is created. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onUserRemoved(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, removedUser: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called when a user or profile is removed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onUserStarted(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, startedUser: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called when a user or profile is started. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onUserStopped(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, stoppedUser: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called when a user or profile is stopped. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onUserRemoved Called when a user or profile is removed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onUserStarted Called when a user or profile is started. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onUserStopped Called when a user or profile is stopped. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onUserSwitched(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, switchedUser: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Called when a user or profile is switched to. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | onUserSwitched Called when a user or profile is switched to. |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#abortBroadcast()()`
+Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` abortBroadcast
 
-Sets the flag indicating that this receiver should abort the current broadcast; only works with broadcasts sent through `https://developer.android.com/reference/kotlin/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`. This will prevent any other broadcast receivers from receiving the broadcast. It will still call `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#onReceive(android.content.Context,%20android.content.Intent)` of the BroadcastReceiver that the caller of `https://developer.android.com/reference/kotlin/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)` passed in.
+Sets the flag indicating that this receiver should abort the current broadcast; only works with broadcasts sent through sendOrderedBroadcast. This will prevent any other broadcast receivers from receiving the broadcast. It will still call onReceive of the BroadcastReceiver that the caller of sendOrderedBroadcast passed in.
 
-**This method does not work with non-ordered broadcasts such as those sent with `https://developer.android.com/reference/kotlin/android/content/Context.html#sendBroadcast(android.content.Intent)`**
+**This method does not work with non-ordered broadcasts such as those sent with sendBroadcast**
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#clearAbortBroadcast()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` clearAbortBroadcast
 
 Clears the flag indicating that this receiver should abort the current broadcast.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getAbortBroadcast()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getAbortBroadcast
 
 Returns the flag indicating whether or not this receiver should abort the current broadcast.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getDebugUnregister()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` getDebugUnregister
 
-Return the last value given to `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setDebugUnregister(kotlin.Boolean)`.
+Return the last value given to setDebugUnregister.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getResultCode()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getResultCode
 
 Retrieve the current result code, as set by the previous receiver.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getResultData()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!` getResultData
 
 Retrieve the current result data, as set by the previous receiver. Often this is null.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/Bundle.html#!` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getResultExtras(kotlin.Boolean)(makeMap: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://developer.android.com/reference/kotlin/android/os/Bundle.html#!` getResultExtras
 
 Retrieve the current result extra data, as set by the previous receiver. Any changes you make to the returned Map will be propagated to the next receiver.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getSentFromPackage()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?` getSentFromPackage
 
 Returns the package name of the app that initially sent this broadcast.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#getSentFromUid()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` getSentFromUid
 
 Returns the uid of the app that initially sent this broadcast.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.PendingResult.html#!` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#goAsync()()`
+`https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.PendingResult.html#!` goAsync
 
-This can be called by an application in `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#onReceive(android.content.Context,%20android.content.Intent)` to allow it to keep the broadcast active after returning from that function. This does *not* change the expectation of being relatively responsive to the broadcast, but does allow the implementation to move work related to it over to another thread to avoid glitching the main UI thread due to disk IO.
+This can be called by an application in onReceive to allow it to keep the broadcast active after returning from that function. This does *not* change the expectation of being relatively responsive to the broadcast, but does allow the implementation to move work related to it over to another thread to avoid glitching the main UI thread due to disk IO.
 
-As a general rule, broadcast receivers are allowed to run for up to 10 seconds before the system will consider them non-responsive and ANR the app. Since these usually execute on the app's main thread, they are already bound by the \~5 second time limit of various operations that can happen there (not to mention just avoiding UI jank), so the receive limit is generally not of concern. However, once you use `goAsync`, though able to be off the main thread, the broadcast execution limit still applies, and that includes the time spent between calling this method and ultimately `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.PendingResult.html#finish()`.
+As a general rule, broadcast receivers are allowed to run for up to 10 seconds before the system will consider them non-responsive and ANR the app. Since these usually execute on the app's main thread, they are already bound by the \~5 second time limit of various operations that can happen there (not to mention just avoiding UI jank), so the receive limit is generally not of concern. However, once you use `goAsync`, though able to be off the main thread, the broadcast execution limit still applies, and that includes the time spent between calling this method and ultimately finish.
 
 If you are taking advantage of this method to have more time to execute, it is useful to know that the available time can be longer in certain situations. In particular, if the broadcast you are receiving is not a foreground broadcast (that is, the sender has not used `https://developer.android.com/reference/kotlin/android/content/Intent.html#FLAG_RECEIVER_FOREGROUND:kotlin.Int`), then more time is allowed for the receivers to run, allowing them to execute for 30 seconds or even a bit more. This is something that receivers should rarely take advantage of (long work should be punted to another system facility such as `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`, `https://developer.android.com/reference/kotlin/android/app/Service.html#`, or see especially androidx.core.app.JobIntentService), but can be useful in certain rare cases where it is necessary to do some work as soon as the broadcast is delivered. Keep in mind that the work you do here will block further broadcasts until it completes, so taking advantage of this at all excessively can be counter-productive and cause later events to be received more slowly.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#isInitialStickyBroadcast()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isInitialStickyBroadcast
 
 Returns true if the receiver is currently processing the initial value of a sticky broadcast -- that is, the value that was last broadcast and is currently held in the sticky cache, so this is not directly the result of a broadcast right now.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#isOrderedBroadcast()()`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` isOrderedBroadcast
 
 Returns true if the receiver is currently processing an ordered broadcast.
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/os/IBinder.html#!` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#peekService(android.content.Context,%20android.content.Intent)(myContext: https://developer.android.com/reference/kotlin/android/content/Context.html#!, service: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)`
+`https://developer.android.com/reference/kotlin/android/os/IBinder.html#!` peekService
 
-Provide a binder to an already-bound service. This method is synchronous and will not start the target service if it is not present, so it is safe to call from `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#onReceive(android.content.Context,%20android.content.Intent)`. For peekService() to return a non null `https://developer.android.com/reference/kotlin/android/os/IBinder.html#` interface the service must have published it before. In other words some component must have called `https://developer.android.com/reference/kotlin/android/content/Context.html#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)` on it.
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setDebugUnregister(kotlin.Boolean)(debug: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
-
-Control inclusion of debugging help for mismatched calls to `https://developer.android.com/reference/kotlin/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)`. If called with true, before given to registerReceiver(), then the callstack of the following `https://developer.android.com/reference/kotlin/android/content/Context.html#unregisterReceiver(android.content.BroadcastReceiver)` call is retained, to be printed if a later incorrect unregister call is made. Note that doing this requires retaining information about the BroadcastReceiver for the lifetime of the app, resulting in a leak -- this should only be used for debugging.
+Provide a binder to an already-bound service. This method is synchronous and will not start the target service if it is not present, so it is safe to call from onReceive. For peekService() to return a non null `https://developer.android.com/reference/kotlin/android/os/IBinder.html#` interface the service must have published it before. In other words some component must have called bindService on it.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setOrderedHint(kotlin.Boolean)(isOrdered: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setDebugUnregister
+
+Control inclusion of debugging help for mismatched calls to registerReceiver. If called with true, before given to registerReceiver(), then the callstack of the following unregisterReceiver call is retained, to be printed if a later incorrect unregister call is made. Note that doing this requires retaining information about the BroadcastReceiver for the lifetime of the app, resulting in a leak -- this should only be used for debugging.
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setOrderedHint
 
 For internal use, sets the hint about whether this BroadcastReceiver is running in ordered mode.
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setResult(kotlin.Int,%20kotlin.String,%20android.os.Bundle)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setResult
 
-Change all of the result data returned from this broadcasts; only works with broadcasts sent through `https://developer.android.com/reference/kotlin/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`. All current result data is replaced by the value given to this method.
+Change all of the result data returned from this broadcasts; only works with broadcasts sent through sendOrderedBroadcast. All current result data is replaced by the value given to this method.
 
-**This method does not work with non-ordered broadcasts such as those sent with `https://developer.android.com/reference/kotlin/android/content/Context.html#sendBroadcast(android.content.Intent)`**
-
-<br />
-
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setResultCode(kotlin.Int)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
-
-Change the current result code of this broadcast; only works with broadcasts sent through `https://developer.android.com/reference/kotlin/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`. Often uses the Activity `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` constants, though the actual meaning of this value is ultimately up to the broadcaster.
-
-This method does not work with non-ordered broadcasts such as those sent with `https://developer.android.com/reference/kotlin/android/content/Context.html#sendBroadcast(android.content.Intent)`
+**This method does not work with non-ordered broadcasts such as those sent with sendBroadcast**
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setResultData(kotlin.String)(data: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setResultCode
 
-Change the current result data of this broadcast; only works with broadcasts sent through `https://developer.android.com/reference/kotlin/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`. This is an arbitrary string whose interpretation is up to the broadcaster.
+Change the current result code of this broadcast; only works with broadcasts sent through sendOrderedBroadcast. Often uses the Activity `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` constants, though the actual meaning of this value is ultimately up to the broadcaster.
 
-**This method does not work with non-ordered broadcasts such as those sent with `https://developer.android.com/reference/kotlin/android/content/Context.html#sendBroadcast(android.content.Intent)`**
+This method does not work with non-ordered broadcasts such as those sent with sendBroadcast
 
 <br />
 
-`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#setResultExtras(android.os.Bundle)(extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)`
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setResultData
 
-Change the current result extras of this broadcast; only works with broadcasts sent through `https://developer.android.com/reference/kotlin/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,%20kotlin.String)`. This is a Bundle holding arbitrary data, whose interpretation is up to the broadcaster. Can be set to null. Calling this method completely replaces the current map (if any).
+Change the current result data of this broadcast; only works with broadcasts sent through sendOrderedBroadcast. This is an arbitrary string whose interpretation is up to the broadcaster.
 
-**This method does not work with non-ordered broadcasts such as those sent with `https://developer.android.com/reference/kotlin/android/content/Context.html#sendBroadcast(android.content.Intent)`**
+**This method does not work with non-ordered broadcasts such as those sent with sendBroadcast**
+
+<br />
+
+`https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` setResultExtras
+
+Change the current result extras of this broadcast; only works with broadcasts sent through sendOrderedBroadcast. This is a Bundle holding arbitrary data, whose interpretation is up to the broadcaster. Can be set to null. Calling this method completely replaces the current map (if any).
+
+**This method does not work with non-ordered broadcasts such as those sent with sendBroadcast**
 
 <br />
 
@@ -253,8 +253,8 @@ Broadcast action: notify that some app is attempting to choose a KeyChain key.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)`
+- onChoosePrivateKeyAlias
+- onChoosePrivateKeyAlias
 
 ### ACTION_DEVICE_ADMIN_DISABLED
 
@@ -264,7 +264,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_DEVICE_ADMIN_DISABLED: String
 ```
 
-Action sent to a device administrator when the user has disabled it. Upon return, the application no longer has access to the protected device policy manager APIs. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onDisabled(android.content.Context,%20android.content.Intent)`. Note that this action will be sent the receiver regardless of whether it is explicitly listed in its intent filter.
+Action sent to a device administrator when the user has disabled it. Upon return, the application no longer has access to the protected device policy manager APIs. You will generally handle this in onDisabled. Note that this action will be sent the receiver regardless of whether it is explicitly listed in its intent filter.
 
  Value: "android.app.action.DEVICE_ADMIN_DISABLED"
 
@@ -288,7 +288,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_DEVICE_ADMIN_ENABLED: String
 ```
 
-This is the primary action that a device administrator must implement to be allowed to manage a device. This will be set to the receiver when the user enables it for administration. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onEnabled(android.content.Context,%20android.content.Intent)`. To be supported, the receiver must also require the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BIND_DEVICE_ADMIN:kotlin.String` permission so that other applications can not abuse it.
+This is the primary action that a device administrator must implement to be allowed to manage a device. This will be set to the receiver when the user enables it for administration. You will generally handle this in onEnabled. To be supported, the receiver must also require the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BIND_DEVICE_ADMIN:kotlin.String` permission so that other applications can not abuse it.
 
  Value: "android.app.action.DEVICE_ADMIN_ENABLED"
 
@@ -308,7 +308,7 @@ The calling device admin must be the device owner or profile owner to receive th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isLockTaskPermitted(kotlin.String)`
+- isLockTaskPermitted
 
 ### ACTION_LOCK_TASK_EXITING
 
@@ -326,7 +326,7 @@ The calling device admin must be the device owner or profile owner to receive th
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isLockTaskPermitted(kotlin.String)`
+- isLockTaskPermitted
 
 ### ACTION_NETWORK_LOGS_AVAILABLE
 
@@ -342,8 +342,8 @@ Broadcast action: notify that a new batch of network logs is ready to be collect
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onNetworkLogsAvailable(android.content.Context,%20android.content.Intent,%20kotlin.Long,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onNetworkLogsAvailable(android.content.Context,%20android.content.Intent,%20kotlin.Long,%20kotlin.Int)`
+- onNetworkLogsAvailable
+- onNetworkLogsAvailable
 
 ### ACTION_PASSWORD_CHANGED
 
@@ -353,7 +353,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_PASSWORD_CHANGED: String
 ```
 
-Action sent to a device administrator when the user has changed the password of their device or profile challenge. You can at this point check the characteristics of the new password with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isActivePasswordSufficient()`. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordChanged(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)`.
+Action sent to a device administrator when the user has changed the password of their device or profile challenge. You can at this point check the characteristics of the new password with isActivePasswordSufficient. You will generally handle this in onPasswordChanged.
 
 The calling device admin must have requested `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminInfo#USES_POLICY_LIMIT_PASSWORD:kotlin.Int` to receive this broadcast.
 
@@ -367,7 +367,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_PASSWORD_EXPIRING: String
 ```
 
-Action periodically sent to a device administrator when the device or profile challenge password is expiring. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordExpiring(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)`.
+Action periodically sent to a device administrator when the device or profile challenge password is expiring. You will generally handle this in onPasswordExpiring.
 
 The calling device admin must have requested `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminInfo#USES_POLICY_EXPIRE_PASSWORD:kotlin.Int` to receive this broadcast.
 
@@ -381,7 +381,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_PASSWORD_FAILED: String
 ```
 
-Action sent to a device administrator when the user has entered an incorrect device or profile challenge password. You can at this point check the number of failed password attempts there have been with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCurrentFailedPasswordAttempts()`. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordFailed(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)`.
+Action sent to a device administrator when the user has entered an incorrect device or profile challenge password. You can at this point check the number of failed password attempts there have been with getCurrentFailedPasswordAttempts. You will generally handle this in onPasswordFailed.
 
 The calling device admin must have requested `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminInfo#USES_POLICY_WATCH_LOGIN:kotlin.Int` to receive this broadcast.
 
@@ -395,7 +395,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_PASSWORD_SUCCEEDED: String
 ```
 
-Action sent to a device administrator when the user has successfully entered their device or profile challenge password, after failing one or more times. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordSucceeded(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)`.
+Action sent to a device administrator when the user has successfully entered their device or profile challenge password, after failing one or more times. You will generally handle this in onPasswordSucceeded.
 
 The calling device admin must have requested `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminInfo#USES_POLICY_WATCH_LOGIN:kotlin.Int` to receive this broadcast.
 
@@ -411,9 +411,9 @@ static val ACTION_PROFILE_PROVISIONING_COMPLETE: String
 
 Broadcast Action: This broadcast is sent to indicate that provisioning of a managed profile or managed device has completed successfully.
 
-The broadcast is limited to the profile that will be managed by the application that requested provisioning. In the device owner case the profile is the primary user. The broadcast will also be limited to the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#` component specified in the original intent or NFC bump that started the provisioning process (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_PROFILE:kotlin.String`).
+The broadcast is limited to the profile that will be managed by the application that requested provisioning. In the device owner case the profile is the primary user. The broadcast will also be limited to the DeviceAdminReceiver component specified in the original intent or NFC bump that started the provisioning process (see `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_PROFILE:kotlin.String`).
 
-A device admin application which listens to this intent can find out if the device was provisioned for the device owner or profile owner case by calling respectively `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isDeviceOwnerApp(kotlin.String)` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isProfileOwnerApp(kotlin.String)`. You will generally handle this in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onProfileProvisioningComplete(android.content.Context,%20android.content.Intent)`.
+A device admin application which listens to this intent can find out if the device was provisioned for the device owner or profile owner case by calling respectively isDeviceOwnerApp and isProfileOwnerApp. You will generally handle this in onProfileProvisioningComplete.
 
 The intent for this action may include the following extras:
 
@@ -453,7 +453,7 @@ If this error code is received, the requesting of bugreport can be retried.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#requestBugreport(android.content.ComponentName)`
+- requestBugreport
 
 ### BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE
 
@@ -473,7 +473,7 @@ If this error code is received, the requesting of bugreport can be retried.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#requestBugreport(android.content.ComponentName)`
+- requestBugreport
 
 ### DEVICE_ADMIN_META_DATA
 
@@ -529,13 +529,13 @@ static val EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE: String
 
 A `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` extra of type `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that allows a mobile device management application to pass data to the management application instance after owner transfer.
 
-If the transfer is successful, the new owner receives the data in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onTransferOwnershipComplete(android.content.Context,%20android.os.PersistableBundle)`. The bundle is not changed during the ownership transfer.
+If the transfer is successful, the new owner receives the data in onTransferOwnershipComplete. The bundle is not changed during the ownership transfer.
 
  Value: "android.app.extra.TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#transferOwnership(android.content.ComponentName,%20android.content.ComponentName,%20android.os.PersistableBundle)`
+- transferOwnership
 
 ## Public constructors
 
@@ -563,7 +563,7 @@ Retrieve the DevicePolicyManager interface for this administrator to work with t
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` | This value cannot be `null`. |
+| DevicePolicyManager | This value cannot be `null`. |
 
 ### getWho
 
@@ -573,7 +573,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getWho(context: Context): ComponentName
 ```
 
-Retrieve the ComponentName describing who this device administrator is, for use in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` APIs that require the administrator to identify itself.
+Retrieve the ComponentName describing who this device administrator is, for use in DevicePolicyManager APIs that require the administrator to identify itself.
 
 | Parameters ||
 |---|---|
@@ -601,14 +601,14 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `failureCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): int containing failure code. One of `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FAILED_COMPLETING:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FAILED_COMPLETING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#BUGREPORT_FAILURE_FILE_NO_LONGER_AVAILABLE:kotlin.Int` |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#requestBugreport(android.content.ComponentName)`
+- requestBugreport
 
 ### onBugreportShared
 
@@ -628,14 +628,14 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. Contains the URI of the bugreport file (with MIME type "application/vnd.android.bugreport"), that can be accessed by calling `https://developer.android.com/reference/kotlin/android/content/Intent.html#getData()` This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. Contains the URI of the bugreport file (with MIME type "application/vnd.android.bugreport"), that can be accessed by calling getData This value cannot be `null`. |
 | `bugreportHash` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): SHA-256 hash of the bugreport file. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#requestBugreport(android.content.ComponentName)`
+- requestBugreport
 
 ### onBugreportSharingDeclined
 
@@ -654,12 +654,12 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#requestBugreport(android.content.ComponentName)`
+- requestBugreport
 
 ### onChoosePrivateKeyAlias
 
@@ -679,8 +679,8 @@ Allows this receiver to select the alias for a private key and certificate pair 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the app asking for the private key and certificate pair. |
 | --- | --- |
 | `uri` | [Uri](../android.net/Uri.md)?: The URI to authenticate, may be null. |
@@ -709,14 +709,14 @@ Default implementation acknowledges compliance immediately. DPC may prefer to ov
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the running context as per onReceive This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#acknowledgeDeviceCompliant()`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isComplianceAcknowledgementRequired()`
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setManagedProfileMaximumTimeOff(android.content.ComponentName,%20kotlin.Long)`
+- acknowledgeDeviceCompliant
+- isComplianceAcknowledgementRequired
+- setManagedProfileMaximumTimeOff
 
 ### onDisableRequested
 
@@ -733,8 +733,8 @@ Called when the user has asked to disable the administrator, as a result of rece
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -751,12 +751,12 @@ open fun onDisabled(
 ): Unit
 ```
 
-Called prior to the administrator being disabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_DISABLED:kotlin.String`. Upon return, you can no longer use the protected parts of the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` API.
+Called prior to the administrator being disabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_DISABLED:kotlin.String`. Upon return, you can no longer use the protected parts of the DevicePolicyManager API.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onEnabled
 
@@ -769,14 +769,14 @@ open fun onEnabled(
 ): Unit
 ```
 
-Called after the administrator is first enabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_ENABLED:kotlin.String`. At this point you can use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` to set your desired policies.
+Called after the administrator is first enabled, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_DEVICE_ADMIN_ENABLED:kotlin.String`. At this point you can use DevicePolicyManager to set your desired policies.
 
-If the admin is activated by a device owner, then the intent may contain private extras that are relevant to user setup. See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#createAndManageUser(android.content.ComponentName,%20kotlin.String,%20android.content.ComponentName,%20android.os.PersistableBundle,%20kotlin.Int)`
+If the admin is activated by a device owner, then the intent may contain private extras that are relevant to user setup. See createAndManageUser
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onLockTaskModeEntering
 
@@ -794,8 +794,8 @@ Called when a device is entering lock task mode.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The authorized package using lock task mode. This value cannot be `null`. |
 | --- | --- |
 
@@ -814,8 +814,8 @@ Called when a device is exiting lock task mode.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onNetworkLogsAvailable
 
@@ -832,7 +832,7 @@ open fun onNetworkLogsAvailable(
 
 Called each time a new batch of network logs can be retrieved. This callback method will only ever be called when network logging is enabled. The logs can only be retrieved while network logging is enabled.
 
-If a secondary user or profile is created, this callback won't be received until all users become affiliated again (even if network logging is enabled). It will also no longer be possible to retrieve the network logs batch with the most recent `batchToken` provided by this callback. See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)`.
+If a secondary user or profile is created, this callback won't be received until all users become affiliated again (even if network logging is enabled). It will also no longer be possible to retrieve the network logs batch with the most recent `batchToken` provided by this callback. See setAffiliationIds.
 
 This callback is only applicable to device owners and profile owners.
 
@@ -840,15 +840,15 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `batchToken` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The token representing the current batch of network logs. |
 | --- | --- |
 | `networkLogsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The total count of events in the current batch of network logs. Value is 1 or greater |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#retrieveNetworkLogs(android.content.ComponentName,%20kotlin.Long)`
+- retrieveNetworkLogs
 
 ### onOperationSafetyStateChanged
 
@@ -864,11 +864,11 @@ open fun onOperationSafetyStateChanged(
 
 Called to notify the state of operations that can be unsafe to execute has changed.
 
-**Note:** notice that the operation safety state might change between the time this callback is received and the operation's method on `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager` is called, so calls to the latter could still throw a `https://developer.android.com/reference/kotlin/android/app/admin/UnsafeStateException` even when this method is called with `isSafe` as `true`
+**Note:** notice that the operation safety state might change between the time this callback is received and the operation's method on DevicePolicyManager is called, so calls to the latter could still throw a UnsafeStateException even when this method is called with `isSafe` as `true`
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the running context as per onReceive This value cannot be `null`. |
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the reason an operation could be unsafe. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#OPERATION_SAFETY_REASON_DRIVING_DISTRACTION:kotlin.Int` |
 | `isSafe` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the operation is safe to be executed. |
 | --- | --- |
@@ -885,14 +885,14 @@ open fun onPasswordChanged(
 ): Unit
 ```
 
-**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordChanged(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)` instead.*
+**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use onPasswordChanged instead.*
 
-Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. At this point you can use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordQuality(android.content.ComponentName)` to retrieve the active password characteristics.
+Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. At this point you can use getPasswordQuality to retrieve the active password characteristics.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onPasswordChanged
 
@@ -906,13 +906,13 @@ open fun onPasswordChanged(
 ): Unit
 ```
 
-Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. At this point you can use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordQuality(android.content.ComponentName)` to retrieve the active password characteristics.
+Called after the user has changed their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_CHANGED:kotlin.String`. At this point you can use getPasswordQuality to retrieve the active password characteristics.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](../android.os/UserHandle.md): The user or profile for whom the password changed. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user or profile for whom the password changed. To see whether this user is the current profile or a parent user, check for equality with myUserHandle. This value cannot be `null`. |
 | --- | --- |
 
 ### onPasswordExpiring
@@ -927,20 +927,20 @@ open fun onPasswordExpiring(
 ): Unit
 ```
 
-**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordExpiring(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)` instead.*
+**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use onPasswordExpiring instead.*
 
 Called periodically when the device or profile challenge password is about to expire or has expired. It will typically be called at these times: on device boot, once per day before the password expires, and at the time when the password expires.
 
 If the password is not updated by the user, this method will continue to be called once per day until the password is changed or the device admin disables password expiration.
 
-The admin will typically post a notification requesting the user to change their password in response to this call. The actual password expiration time can be obtained by calling `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordExpiration(android.content.ComponentName)`
+The admin will typically post a notification requesting the user to change their password in response to this call. The actual password expiration time can be obtained by calling getPasswordExpiration
 
-The admin should be sure to take down any notifications it posted in response to this call when it receives `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordChanged(android.content.Context,%20android.content.Intent)`.
+The admin should be sure to take down any notifications it posted in response to this call when it receives onPasswordChanged.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onPasswordExpiring
 
@@ -958,15 +958,15 @@ Called periodically when the device or profile challenge password is about to ex
 
 If the password is not updated by the user, this method will continue to be called once per day until the password is changed or the device admin disables password expiration.
 
-The admin will typically post a notification requesting the user to change their password in response to this call. The actual password expiration time can be obtained by calling `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordExpiration(android.content.ComponentName)`
+The admin will typically post a notification requesting the user to change their password in response to this call. The actual password expiration time can be obtained by calling getPasswordExpiration
 
-The admin should be sure to take down any notifications it posted in response to this call when it receives `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordChanged(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)`.
+The admin should be sure to take down any notifications it posted in response to this call when it receives onPasswordChanged.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](../android.os/UserHandle.md): The user or profile for whom the password is expiring. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user or profile for whom the password is expiring. To see whether this user is the current profile or a parent user, check for equality with myUserHandle. This value cannot be `null`. |
 | --- | --- |
 
 ### onPasswordFailed
@@ -981,14 +981,14 @@ open fun onPasswordFailed(
 ): Unit
 ```
 
-**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordFailed(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)` instead.*
+**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use onPasswordFailed instead.*
 
-Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. At this point you can use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCurrentFailedPasswordAttempts()` to retrieve the number of failed password attempts.
+Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. At this point you can use getCurrentFailedPasswordAttempts to retrieve the number of failed password attempts.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onPasswordFailed
 
@@ -1002,13 +1002,13 @@ open fun onPasswordFailed(
 ): Unit
 ```
 
-Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. At this point you can use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCurrentFailedPasswordAttempts()` to retrieve the number of failed password attempts.
+Called after the user has failed at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_FAILED:kotlin.String`. At this point you can use getCurrentFailedPasswordAttempts to retrieve the number of failed password attempts.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](../android.os/UserHandle.md): The user or profile for whom the password check failed. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user or profile for whom the password check failed. To see whether this user is the current profile or a parent user, check for equality with myUserHandle. This value cannot be `null`. |
 | --- | --- |
 
 ### onPasswordSucceeded
@@ -1023,14 +1023,14 @@ open fun onPasswordSucceeded(
 ): Unit
 ```
 
-**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onPasswordSucceeded(android.content.Context,%20android.content.Intent,%20android.os.UserHandle)` instead.*
+**Deprecated:** *From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, use onPasswordSucceeded instead.*
 
 Called after the user has succeeded at entering their device or profile challenge password, as a result of receiving `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PASSWORD_SUCCEEDED:kotlin.String`. This will only be received the first time they succeed after having previously failed.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onPasswordSucceeded
 
@@ -1048,9 +1048,9 @@ Called after the user has succeeded at entering their device or profile challeng
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `user` | [UserHandle](../android.os/UserHandle.md): The user of profile for whom the password check succeeded. To see whether this user is the current profile or a parent user, check for equality with `https://developer.android.com/reference/kotlin/android/os/Process.html#myUserHandle()`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user of profile for whom the password check succeeded. To see whether this user is the current profile or a parent user, check for equality with myUserHandle. This value cannot be `null`. |
 | --- | --- |
 
 ### onProfileProvisioningComplete
@@ -1066,9 +1066,9 @@ open fun onProfileProvisioningComplete(
 
 Called when provisioning of a managed profile or managed device has completed successfully.
 
-As a prerequisite for the execution of this callback the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#` has to declare an intent filter for `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PROFILE_PROVISIONING_COMPLETE:kotlin.String`. Its component must also be specified in the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_DEVICE_ADMIN:kotlin.String` of the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_PROFILE:kotlin.String` intent that started the managed provisioning.
+As a prerequisite for the execution of this callback the DeviceAdminReceiver has to declare an intent filter for `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PROFILE_PROVISIONING_COMPLETE:kotlin.String`. Its component must also be specified in the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_DEVICE_ADMIN:kotlin.String` of the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_PROFILE:kotlin.String` intent that started the managed provisioning.
 
-When provisioning of a managed profile is complete, the managed profile is hidden until the profile owner calls `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setProfileEnabled(android.content.ComponentName)`. Typically a profile owner will enable the profile when it has finished any additional setup such as adding an account by using the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#` and calling APIs to bring the profile into the desired state.
+When provisioning of a managed profile is complete, the managed profile is hidden until the profile owner calls setProfileEnabled. Typically a profile owner will enable the profile when it has finished any additional setup such as adding an account by using the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager.html#` and calling APIs to bring the profile into the desired state.
 
 Note that provisioning completes without waiting for any server interactions, so the profile owner needs to wait for data to be available if required (e.g. Android device IDs or other data that is set as a result of server interactions).
 
@@ -1078,8 +1078,8 @@ The `Intent` may include any of the extras specified for `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onReadyForUserInitialization
 
@@ -1099,8 +1099,8 @@ Called during provisioning of a managed device to allow the device initializer t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 ### onReceive
 
@@ -1133,7 +1133,7 @@ open fun onSecurityLogsAvailable(
 
 Called when a new batch of security logs can be retrieved.
 
-If a secondary user or profile is created, this callback won't be received until all users become affiliated again (even if security logging is enabled). See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)`
+If a secondary user or profile is created, this callback won't be received until all users become affiliated again (even if security logging is enabled). See setAffiliationIds
 
 This callback will be re-triggered if the logs are not retrieved.
 
@@ -1143,12 +1143,12 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#retrieveSecurityLogs(android.content.ComponentName)`
+- retrieveSecurityLogs
 
 ### onSystemUpdatePending
 
@@ -1168,18 +1168,18 @@ Allows the receiver to be notified when information about a pending system updat
 
 This callback is only applicable to device owners and profile owners.
 
-To get further information about a pending system update (for example, whether or not the update is a security patch), the device owner or profile owner can call `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPendingSystemUpdate(android.content.ComponentName)`.
+To get further information about a pending system update (for example, whether or not the update is a security patch), the device owner or profile owner can call getPendingSystemUpdate.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `receivedTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time as given by `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()` indicating when the current pending update was first available. -1 if no pending update is available. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
+| `receivedTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time as given by currentTimeMillis indicating when the current pending update was first available. -1 if no pending update is available. |
 | --- | --- |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPendingSystemUpdate(android.content.ComponentName)`
+- getPendingSystemUpdate
 
 ### onTransferAffiliatedProfileOwnershipComplete
 
@@ -1203,12 +1203,12 @@ This can be used when transferring both device and profile ownership when using 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the running context as per onReceive This value cannot be `null`. |
 | `user` | [UserHandle](../android.os/UserHandle.md): the `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the affiliated user. This value cannot be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#transferOwnership(android.content.ComponentName,%20android.content.ComponentName,%20android.os.PersistableBundle)`
+- transferOwnership
 
 ### onTransferOwnershipComplete
 
@@ -1227,7 +1227,7 @@ The `bundle` parameter allows the original owner to pass data to the new one.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): the running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)` This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the running context as per onReceive This value cannot be `null`. |
 | `bundle` | [PersistableBundle](../android.os/PersistableBundle.md)?: the data to be passed to the new owner. This value may be `null`. |
 
 ### onUserAdded
@@ -1248,8 +1248,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `addedUser` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been added. This value cannot be `null`. |
 | --- | --- |
 
@@ -1271,8 +1271,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `removedUser` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been removed. This value cannot be `null`. |
 | --- | --- |
 
@@ -1294,8 +1294,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `startedUser` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been started. This value cannot be `null`. |
 | --- | --- |
 
@@ -1317,8 +1317,8 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `stoppedUser` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been stopped. This value cannot be `null`. |
 | --- | --- |
 
@@ -1340,7 +1340,7 @@ This callback is only applicable to device owners.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per onReceive. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per onReceive. This value cannot be `null`. |
 | `switchedUser` | [UserHandle](../android.os/UserHandle.md): The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` of the user that has just been switched to. This value cannot be `null`. |
 | --- | --- |

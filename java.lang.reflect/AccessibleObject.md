@@ -10,7 +10,7 @@ open class AccessibleObject : AnnotatedElement
 | --- | --- |
 | ↳ | [java.lang.reflect.AccessibleObject](AccessibleObject.md) |
 
-| Known Direct Subclasses [Executable](Executable.md), [Field](Field.md) |---|---| | [Executable](Executable.md) | A shared superclass for the common functionality of `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` and `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor`. | | [Field](Field.md) | A `Field` provides information about, and dynamic access to, a single field of a class or an interface. | |
+| Known Direct Subclasses [Executable](Executable.md), [Field](Field.md) |---|---| | [Executable](Executable.md) | A shared superclass for the common functionality of Method and Constructor. | | [Field](Field.md) | A `Field` provides information about, and dynamic access to, a single field of a class or an interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [Constructor](Constructor.md), [Method](Method.md) |---|---| | [Constructor](Constructor.md) | `Constructor` provides information about, and access to, a single constructor for a class. | | [Method](Method.md) | A `Method` provides information about, and access to, a single method on a class or interface. | |
@@ -26,23 +26,23 @@ By default, a reflected object is *not* accessible.
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#AccessibleObject()()` Constructor: only used by the Java Virtual Machine. |
+| AccessibleObject Constructor: only used by the Java Virtual Machine. |
 
 | Public methods ||
 |---|---|
-| open T? | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotations()()` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
+| open T? | getAnnotation <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | getAnnotations <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | getAnnotationsByType <br /> |
 | --- | --- |
-| open T? | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotations()()` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#getDeclaredAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` <br /> |
+| open T? | getDeclaredAnnotation <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | getDeclaredAnnotations <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | getDeclaredAnnotationsByType <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#isAccessible()()` Get the value of the `accessible` flag for this object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#isAnnotationPresent(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html!>)` Returns true if an annotation for the specified type is *present* on this element, else false. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Boolean)(flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set the `accessible` flag for this object to the indicated boolean value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAccessible Get the value of the `accessible` flag for this object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAnnotationPresent Returns true if an annotation for the specified type is *present* on this element, else false. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAccessible Set the `accessible` flag for this object to the indicated boolean value. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#setAccessible(kotlin.Array,%20kotlin.Boolean)(array: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/lang/reflect/AccessibleObject#!>!, flag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Convenience method to set the `accessible` flag for an array of objects with a single security check (for efficiency). |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAccessible Convenience method to set the `accessible` flag for an array of objects with a single security check (for efficiency). |
 
 ## Protected constructors
 
@@ -218,9 +218,9 @@ Set the `accessible` flag for this object to the indicated boolean value. A valu
 
 First, if there is a security manager, its `checkPermission` method is called with a `ReflectPermission("suppressAccessChecks")` permission.
 
-A `SecurityException` is raised if `flag` is `true` but accessibility of this object may not be changed (for example, if this element object is a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object for the class `https://developer.android.com/reference/kotlin/java/lang/Class.html#`).
+A `SecurityException` is raised if `flag` is `true` but accessibility of this object may not be changed (for example, if this element object is a Constructor object for the class `https://developer.android.com/reference/kotlin/java/lang/Class.html#`).
 
-A `SecurityException` is raised if this object is a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object for the class `java.lang.Class`, and `flag` is true.
+A `SecurityException` is raised if this object is a Constructor object for the class `java.lang.Class`, and `flag` is true.
 
 | Parameters ||
 |---|---|
@@ -249,7 +249,7 @@ Convenience method to set the `accessible` flag for an array of objects with a s
 
 First, if there is a security manager, its `checkPermission` method is called with a `ReflectPermission("suppressAccessChecks")` permission.
 
-A `SecurityException` is raised if `flag` is `true` but accessibility of any of the elements of the input `array` may not be changed (for example, if the element object is a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object for the class `https://developer.android.com/reference/kotlin/java/lang/Class.html#`). In the event of such a SecurityException, the accessibility of objects is set to `flag` for array elements upto (and excluding) the element for which the exception occurred; the accessibility of elements beyond (and including) the element for which the exception occurred is unchanged.
+A `SecurityException` is raised if `flag` is `true` but accessibility of any of the elements of the input `array` may not be changed (for example, if the element object is a Constructor object for the class `https://developer.android.com/reference/kotlin/java/lang/Class.html#`). In the event of such a SecurityException, the accessibility of objects is set to `flag` for array elements upto (and excluding) the element for which the exception occurred; the accessibility of elements beyond (and including) the element for which the exception occurred is unchanged.
 
 | Parameters ||
 |---|---|

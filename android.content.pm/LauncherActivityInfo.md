@@ -16,19 +16,19 @@ A representation of an activity that can belong to this user or a managed profil
 
 | Public methods ||
 |---|---|
-| open [ActivityInfo](ActivityInfo.md) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getActivityInfo()()` Returns the ActivityInfo of the activity. |
-| open [ApplicationInfo](ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getApplicationInfo()()` Returns the application info for the application this activity belongs to. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getBadgedIcon(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the activity icon with badging appropriate for the profile. |
+| open [ActivityInfo](ActivityInfo.md) | getActivityInfo Returns the ActivityInfo of the activity. |
+| open [ApplicationInfo](ApplicationInfo.md)! | getApplicationInfo Returns the application info for the application this activity belongs to. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | getBadgedIcon Returns the activity icon with badging appropriate for the profile. |
 | --- | --- |
-| open [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getComponentName()()` Returns the component name of this activity. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getFirstInstallTime()()` Returns the time at which the package was first installed. |
-| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getIcon(kotlin.Int)(density: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the icon for this activity, without any badging for the profile. |
+| open [ComponentName](../android.content/ComponentName.md)! | getComponentName Returns the component name of this activity. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getFirstInstallTime Returns the time at which the package was first installed. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | getIcon Returns the icon for this activity, without any badging for the profile. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getLabel()()` Retrieves the label for the activity. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getLoadingProgress()()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getName()()` Returns the name for the activity from android:name in the manifest. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | getLabel Retrieves the label for the activity. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getLoadingProgress <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getName Returns the name for the activity from android:name in the manifest. |
 | --- | --- |
-| open [UserHandle](../android.os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getUser()()` Returns the user handle of the user profile that this activity belongs to. |
+| open [UserHandle](../android.os/UserHandle.md)! | getUser Returns the user handle of the user profile that this activity belongs to. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ Returns the ActivityInfo of the activity.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo` | Activity Info. This value cannot be `null`. |
+| ActivityInfo | Activity Info. This value cannot be `null`. |
 
 ### getApplicationInfo
 
@@ -120,7 +120,7 @@ open fun getIcon(density: Int): Drawable!
 
 Returns the icon for this activity, without any badging for the profile.
 
-The returned drawable is subject to the same size capping limits as described in `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager#getApplicationIcon(android.content.pm.ApplicationInfo)`.
+The returned drawable is subject to the same size capping limits as described in getApplicationIcon.
 
 | Parameters ||
 |---|---|
@@ -132,7 +132,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/content/pm/LauncherActivityInfo#getBadgedIcon(kotlin.Int)`
+- getBadgedIcon
 - `https://developer.android.com/reference/kotlin/android/util/DisplayMetrics.html#`
 
 ### getLabel
@@ -191,5 +191,5 @@ Returns the user handle of the user profile that this activity belongs to. In or
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)`
-- `https://developer.android.com/reference/kotlin/android/os/UserManager.html#getUserForSerialNumber(kotlin.Long)`
+- getSerialNumberForUser
+- getUserForSerialNumber

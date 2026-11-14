@@ -11,7 +11,7 @@ open class MutableCallSite : CallSite
 | ↳ | [java.lang.invoke.CallSite](CallSite.md) ||
 | | ↳ | [java.lang.invoke.MutableCallSite](MutableCallSite.md) |
 
-A `MutableCallSite` is a `https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite` whose target variable behaves like an ordinary field. An `invokedynamic` instruction linked to a `MutableCallSite` delegates all calls to the site's current target. The [dynamic invoker](CallSite.md)) of a mutable call site also delegates each call to the site's current target.
+A `MutableCallSite` is a CallSite whose target variable behaves like an ordinary field. An `invokedynamic` instruction linked to a `MutableCallSite` delegates all calls to the site's current target. The [dynamic invoker](CallSite.md)) of a mutable call site also delegates each call to the site's current target.
 
 Here is an example of a mutable call site which introduces a state variable into a method handle chain.
 
@@ -53,19 +53,19 @@ For target values which will be frequently updated, consider using a [volatile c
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#MutableCallSite(java.lang.invoke.MethodHandle)(target: https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle!)` Creates a call site object with an initial target method handle. |
-| `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#MutableCallSite(java.lang.invoke.MethodType)(type: https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType!)` Creates a blank call site object with the given method type. |
+| MutableCallSite Creates a call site object with an initial target method handle. |
+| MutableCallSite Creates a blank call site object with the given method type. |
 
 | Public methods ||
 |---|---|
-| [MethodHandle](MethodHandle.md)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#dynamicInvoker()()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
-| [MethodHandle](MethodHandle.md)! | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#getTarget()()` Returns the target method of the call site, which behaves like a normal field of the `MutableCallSite`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#setTarget(java.lang.invoke.MethodHandle)(newTarget: https://developer.android.com/reference/kotlin/java/lang/invoke/MethodHandle!)` Updates the target method of this call site, as a normal variable. |
+| [MethodHandle](MethodHandle.md)! | dynamicInvoker Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
+| [MethodHandle](MethodHandle.md)! | getTarget Returns the target method of the call site, which behaves like a normal field of the `MutableCallSite`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTarget Updates the target method of this call site, as a normal variable. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite` |---|---| | `https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType!` | `https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#type()()` Returns the type of this call site's target. Although targets may change, any call site's type is permanent, and can never change to an unequal type. The `setTarget` method enforces this invariant by refusing any new target that does not have the previous target's type. <br /> | ||
+| From class CallSite |---|---| | `https://developer.android.com/reference/kotlin/java/lang/invoke/MethodType!` | type Returns the type of this call site's target. Although targets may change, any call site's type is permanent, and can never change to an unequal type. The `setTarget` method enforces this invariant by refusing any new target that does not have the previous target's type. <br /> | ||
 
 ## Public constructors
 
@@ -99,7 +99,7 @@ Creates a blank call site object with the given method type. The initial target 
 
 The type of the call site is permanently set to the given type.
 
-Before this `CallSite` object is returned from a bootstrap method, or invoked in some other manner, it is usually provided with a more useful target method, via a call to `https://developer.android.com/reference/kotlin/java/lang/invoke/CallSite#setTarget(java.lang.invoke.MethodHandle)`.
+Before this `CallSite` object is returned from a bootstrap method, or invoked in some other manner, it is usually provided with a more useful target method, via a call to setTarget.
 
 | Parameters ||
 |---|---|
@@ -155,7 +155,7 @@ In particular, the current thread may choose to reuse the result of a previous r
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#setTarget(java.lang.invoke.MethodHandle)`
+- setTarget
 
 ### setTarget
 
@@ -182,4 +182,4 @@ In particular, unrelated threads may fail to see the updated target until they p
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/lang/invoke/MutableCallSite#getTarget()`
+- getTarget

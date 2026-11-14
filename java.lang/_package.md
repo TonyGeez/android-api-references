@@ -6,14 +6,14 @@
 | --- | --- |
 | [AutoCloseable](AutoCloseable.md) | An object that may hold resources (such as file or socket handles) until it is closed. |
 | [CharSequence](CharSequence.md) | A `CharSequence` is a readable sequence of `char` values. |
-| [Cloneable](Cloneable.md) | A class implements the `Cloneable` interface to indicate to the `https://developer.android.com/reference/kotlin/java/lang/Object#clone()` method that it is legal for that method to make a field-for-field copy of instances of that class. |
+| [Cloneable](Cloneable.md) | A class implements the `Cloneable` interface to indicate to the clone method that it is legal for that method to make a field-for-field copy of instances of that class. |
 | --- | --- |
 | [Comparable](Comparable.md) | This interface imposes a total ordering on the objects of each class that implements it. |
 | [Iterable](Iterable.md) | Implementing this interface allows an object to be the target of the enhanced `for` statement (sometimes called the "for-each loop" statement). |
 | [Readable](Readable.md) | A `Readable` is a source of characters. |
 | --- | --- |
 | [Runnable](Runnable.md) | The `Runnable` interface should be implemented by any class whose instances are intended to be executed by a thread. |
-| [StackFrame](../java/lang/StackWalker.StackFrame.md) | A `StackFrame` object represents a method invocation returned by `https://developer.android.com/reference/kotlin/java/lang/StackWalker`. |
+| [StackFrame](../java/lang/StackWalker.StackFrame.md) | A `StackFrame` object represents a method invocation returned by StackWalker. |
 | [UncaughtExceptionHandler](../java/lang/Thread.UncaughtExceptionHandler.md) | Interface for handlers invoked when a `Thread` abruptly terminates due to an uncaught exception. |
 | --- | --- |
 
@@ -42,7 +42,7 @@
 | [Object](Object.md) | Class `Object` is the root of the class hierarchy. |
 | --- | --- |
 | [Package](Package.md) | `Package` objects contain version information about the implementation and specification of a Java package. |
-| [Process](Process.md) | The `https://developer.android.com/reference/kotlin/java/lang/ProcessBuilder#start()` and `https://developer.android.com/reference/kotlin/java/lang/Runtime#exec(kotlin.Array,%20kotlin.Array,%20java.io.File)` methods create a native process and return an instance of a subclass of `Process` that can be used to control the process and obtain information about it. |
+| [Process](Process.md) | The start and exec methods create a native process and return an instance of a subclass of `Process` that can be used to control the process and obtain information about it. |
 | [ProcessBuilder](ProcessBuilder.md) | This class is used to create operating system processes. |
 | --- | --- |
 | [Record](Record.md) | This is the common base class of all Java language record classes. |
@@ -51,7 +51,7 @@
 | --- | --- |
 | [SecurityManager](SecurityManager.md) | Legacy security code; do not use. |
 | [Short](Short.md) | The `Short` class wraps a value of primitive type `short` in an object. |
-| [StackTraceElement](StackTraceElement.md) | An element in a stack trace, as returned by `https://developer.android.com/reference/kotlin/java/lang/Throwable#getStackTrace()`. |
+| [StackTraceElement](StackTraceElement.md) | An element in a stack trace, as returned by getStackTrace. |
 | --- | --- |
 | [StackWalker](StackWalker.md) | A stack walker. |
 | [StrictMath](StrictMath.md) | The class contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions. |
@@ -129,7 +129,7 @@
 | [StackOverflowError](StackOverflowError.md) | Thrown when a stack overflow occurs because an application recurses too deeply. |
 | --- | --- |
 | [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md) | Thrown by `String` methods to indicate that an index is either negative or greater than the size of the string. |
-| [ThreadDeath](ThreadDeath.md) | An instance of `ThreadDeath` is thrown in the victim thread when the (deprecated) `https://developer.android.com/reference/kotlin/java/lang/Thread#stop()` method is invoked. |
+| [ThreadDeath](ThreadDeath.md) | An instance of `ThreadDeath` is thrown in the victim thread when the (deprecated) stop method is invoked. |
 | [TypeNotPresentException](TypeNotPresentException.md) | Thrown when an application tries to access a type using a string representing the type's name, but no definition for the type with the specified name can be found. |
 | --- | --- |
 | [UnknownError](UnknownError.md) | Thrown when an unknown but serious exception has occurred in the Java Virtual Machine. |

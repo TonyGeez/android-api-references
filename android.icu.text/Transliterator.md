@@ -21,7 +21,7 @@ Although script conversion is its most common use, a transliterator can actually
 **Batch transliteration**
 
 The simplest way to perform transliteration is all at once, on a string of existing text. This is referred to as *batch* transliteration. For example, given a string `input` and a transliterator `t`, the call
-`String result = t.transliterate(input); ` will transliterate it and return the result. Other methods allow the client to specify a substring to be transliterated and to use `https://developer.android.com/reference/kotlin/android/icu/text/Replaceable` objects instead of strings, in order to preserve out-of-band information (such as text styles).
+`String result = t.transliterate(input); ` will transliterate it and return the result. Other methods allow the client to specify a substring to be transliterated and to use Replaceable objects instead of strings, in order to preserve out-of-band information (such as text styles).
 
 **Keyboard transliteration**
 
@@ -116,7 +116,7 @@ $vowel=[aeiou]; $vowel>'*'; # One way to do this
   
 ```
 
-See `https://developer.android.com/reference/kotlin/android/icu/text/UnicodeSet` for more documentation and examples.
+See UnicodeSet for more documentation and examples.
 
 **Segments**
 
@@ -200,41 +200,41 @@ While a Transliterator is being built from rules, it checks that the rules are a
 
 | Public methods ||
 |---|---|
-| static [Transliterator](Transliterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#createFromRules(kotlin.String,%20kotlin.String,%20kotlin.Int)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, rules: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dir: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `Transliterator` object constructed from the given rule string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#filteredTransliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.Boolean)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, index: https://developer.android.com/reference/kotlin/android/icu/text/Transliterator.Position!, incremental: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Transliterate a substring of text, as specified by index, taking filters into account. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#finishTransliteration(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, index: https://developer.android.com/reference/kotlin/android/icu/text/Transliterator.Position!)` Finishes any pending transliterations that were waiting for more characters. |
+| static [Transliterator](Transliterator.md)! | createFromRules Returns a `Transliterator` object constructed from the given rule string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | filteredTransliterate Transliterate a substring of text, as specified by index, taking filters into account. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finishTransliteration Finishes any pending transliterations that were waiting for more characters. |
 | --- | --- |
-| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getAvailableIDs()()` Returns an enumeration over the programmatic names of registered `Transliterator` objects. |
-| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getAvailableSources()()` Returns an enumeration over the source names of registered transliterators. |
-| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getAvailableTargets(kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns an enumeration over the target names of registered transliterators having a given source name. |
+| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableIDs Returns an enumeration over the programmatic names of registered `Transliterator` objects. |
+| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableSources Returns an enumeration over the source names of registered transliterators. |
+| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableTargets Returns an enumeration over the target names of registered transliterators having a given source name. |
 | --- | --- |
-| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getAvailableVariants(kotlin.String,%20kotlin.String)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns an enumeration over the variant names of registered transliterators having a given source name and target name. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getDisplayName(kotlin.String)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a name for this transliterator that is appropriate for display to the user in the default `DISPLAY` locale. |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getDisplayName(kotlin.String,%20android.icu.util.ULocale)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, inLocale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Returns a name for this transliterator that is appropriate for display to the user in the given locale. |
+| static [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getAvailableVariants Returns an enumeration over the variant names of registered transliterators having a given source name and target name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name for this transliterator that is appropriate for display to the user in the default `DISPLAY` locale. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name for this transliterator that is appropriate for display to the user in the given locale. |
 | --- | --- |
-| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getDisplayName(kotlin.String,%20java.util.Locale)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, inLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a name for this transliterator that is appropriate for display to the user in the given locale. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Transliterator](Transliterator.md)!\>! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getElements()()` Return the elements that make up this transliterator. |
-| [UnicodeFilter](UnicodeFilter.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getFilter()()` Returns the filter used by this transliterator, or `null` if this transliterator uses no filter. |
+| open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns a name for this transliterator that is appropriate for display to the user in the given locale. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Transliterator](Transliterator.md)!\>! | getElements Return the elements that make up this transliterator. |
+| [UnicodeFilter](UnicodeFilter.md)! | getFilter Returns the filter used by this transliterator, or `null` if this transliterator uses no filter. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getID()()` Returns a programmatic identifier for this transliterator. |
-| static [Transliterator](Transliterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getInstance(kotlin.String)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a `Transliterator` object given its ID. |
-| open static [Transliterator](Transliterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getInstance(kotlin.String,%20kotlin.Int)(ID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dir: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a `Transliterator` object given its ID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getID Returns a programmatic identifier for this transliterator. |
+| static [Transliterator](Transliterator.md)! | getInstance Returns a `Transliterator` object given its ID. |
+| open static [Transliterator](Transliterator.md)! | getInstance Returns a `Transliterator` object given its ID. |
 | --- | --- |
-| [Transliterator](Transliterator.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getInverse()()` Returns this transliterator's inverse. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getMaximumContextLength()()` Returns the length of the longest context required by this transliterator. |
-| [UnicodeSet](UnicodeSet.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getSourceSet()()` Returns the set of all characters that may be modified in the input text by this Transliterator. |
+| [Transliterator](Transliterator.md)! | getInverse Returns this transliterator's inverse. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaximumContextLength Returns the length of the longest context required by this transliterator. |
+| [UnicodeSet](UnicodeSet.md)! | getSourceSet Returns the set of all characters that may be modified in the input text by this Transliterator. |
 | --- | --- |
-| open [UnicodeSet](UnicodeSet.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getTargetSet()()` Returns the set of all characters that may be generated as replacement text by this transliterator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#setFilter(android.icu.text.UnicodeFilter)(filter: https://developer.android.com/reference/kotlin/android/icu/text/UnicodeFilter!)` Changes the filter used by this transliterator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#toRules(kotlin.Boolean)(escapeUnprintable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a rule string for this transliterator. |
+| open [UnicodeSet](UnicodeSet.md)! | getTargetSet Returns the set of all characters that may be generated as replacement text by this transliterator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFilter Changes the filter used by this transliterator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | toRules Returns a rule string for this transliterator. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!)` Transliterates an entire string in place. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, index: https://developer.android.com/reference/kotlin/android/icu/text/Transliterator.Position!)` Transliterates the portion of the text buffer that can be transliterated unambiguosly. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.Int)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, index: https://developer.android.com/reference/kotlin/android/icu/text/Transliterator.Position!, insertion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Transliterates the portion of the text buffer that can be transliterated unambiguosly after a new character has been inserted, typically as a result of a keyboard event. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | transliterate Transliterates an entire string in place. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | transliterate Transliterates the portion of the text buffer that can be transliterated unambiguosly. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | transliterate Transliterates the portion of the text buffer that can be transliterated unambiguosly after a new character has been inserted, typically as a result of a keyboard event. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.String)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, index: https://developer.android.com/reference/kotlin/android/icu/text/Transliterator.Position!, insertion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Transliterates the portion of the text buffer that can be transliterated unambiguosly after new text has been inserted, typically as a result of a keyboard event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20kotlin.Int,%20kotlin.Int)(text: https://developer.android.com/reference/kotlin/android/icu/text/Replaceable!, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Transliterates a segment of a string, with optional filtering. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(kotlin.String)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Transliterate an entire string and returns the result. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | transliterate Transliterates the portion of the text buffer that can be transliterated unambiguosly after new text has been inserted, typically as a result of a keyboard event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | transliterate Transliterates a segment of a string, with optional filtering. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | transliterate Transliterate an entire string and returns the result. |
 | --- | --- |
 
 ## Constants
@@ -390,7 +390,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static fun getDisplayName(ID: String!): String!
 ```
 
-Returns a name for this transliterator that is appropriate for display to the user in the default `DISPLAY` locale. See `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getDisplayName(kotlin.String,%20java.util.Locale)` for details.
+Returns a name for this transliterator that is appropriate for display to the user in the default `DISPLAY` locale. See getDisplayName for details.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category.html#`
@@ -478,7 +478,7 @@ fun getID(): String!
 Returns a programmatic identifier for this transliterator. If this identifier is passed to `getInstance()`, it will return this object, if it has been registered.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getAvailableIDs()`
+- getAvailableIDs
 
 ### getInstance
 
@@ -530,8 +530,8 @@ Returns a `Transliterator` object given its ID. The ID must be a system translit
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getAvailableIDs()`
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getID()`
+- getAvailableIDs
+- getID
 
 ### getInverse
 
@@ -574,7 +574,7 @@ fun getSourceSet(): UnicodeSet!
 Returns the set of all characters that may be modified in the input text by this Transliterator. This incorporates this object's current filter; if the filter is changed, the return value of this function will change. The default implementation returns an empty set. The return result is approximate in any case and is intended for use by tests, tools, or utilities.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getTargetSet()`
+- getTargetSet
 
 ### getTargetSet
 
@@ -600,7 +600,7 @@ With a filter of \[\], you still get some elements in the target set, because th
 ```
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#getTargetSet()`
+- getTargetSet
 
 ### setFilter
 
@@ -653,7 +653,7 @@ fun transliterate(
 ): Unit
 ```
 
-Transliterates the portion of the text buffer that can be transliterated unambiguosly. This is a convenience method; see `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.String)` for details.
+Transliterates the portion of the text buffer that can be transliterated unambiguosly. This is a convenience method; see transliterate for details.
 
 | Parameters ||
 |---|---|
@@ -662,7 +662,7 @@ Transliterates the portion of the text buffer that can be transliterated unambig
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.String)`
+- transliterate
 
 ### transliterate
 
@@ -676,7 +676,7 @@ fun transliterate(
 ): Unit
 ```
 
-Transliterates the portion of the text buffer that can be transliterated unambiguosly after a new character has been inserted, typically as a result of a keyboard event. This is a convenience method; see `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.String)` for details.
+Transliterates the portion of the text buffer that can be transliterated unambiguosly after a new character has been inserted, typically as a result of a keyboard event. This is a convenience method; see transliterate for details.
 
 | Parameters ||
 |---|---|
@@ -687,7 +687,7 @@ Transliterates the portion of the text buffer that can be transliterated unambig
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#transliterate(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position,%20kotlin.String)`
+- transliterate
 
 ### transliterate
 
@@ -707,7 +707,7 @@ Upon return, values in `index` will be updated. `index.contextStart` will be adv
 
 Typical usage of this method begins with an initial call with `index.contextStart` and `index.contextLimit` set to indicate the portion of `text` to be transliterated, and `index.start == index.contextStart`. Thereafter, `index` can be used without modification in future calls, provided that all changes to `text` are made via this method.
 
-This method assumes that future calls may be made that will insert new text into the buffer. As a result, it only performs unambiguous transliterations. After the last call to this method, there may be untransliterated text that is waiting for more input to resolve an ambiguity. In order to perform these pending transliterations, clients should call `https://developer.android.com/reference/kotlin/android/icu/text/Transliterator#finishTransliteration(android.icu.text.Replaceable,%20android.icu.text.Transliterator.Position)` after the last call to this method has been made.
+This method assumes that future calls may be made that will insert new text into the buffer. As a result, it only performs unambiguous transliterations. After the last call to this method, there may be untransliterated text that is waiting for more input to resolve an ambiguity. In order to perform these pending transliterations, clients should call finishTransliteration after the last call to this method has been made.
 
 | Parameters ||
 |---|---|

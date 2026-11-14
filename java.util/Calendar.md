@@ -97,7 +97,7 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 
 **Roll rule** . Larger fields are unchanged after the call. A larger field represents a larger unit of time. `DAY_OF_MONTH` is a larger field than `HOUR`.
 
-*Example* : See `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar#roll(kotlin.Int,%20kotlin.Int)`.
+*Example* : See roll.
 
 **Usage model** . To motivate the behavior of `add()` and `roll()`, consider a user interface component with increment and decrement buttons for the month, day, and year, and an underlying `GregorianCalendar`. If the interface reads January 31, 1999 and the user presses the month increment button, what should it read? If the underlying implementation uses `set()`, it might read March 3, 1999. A better result would be February 28, 1999. Furthermore, if the user presses the month increment button again, it should read March 31, 1999, not March 28, 1999. By saving the original date and using either `add()` or `roll()`, depending on whether larger fields should be affected, the user interface can behave as most users will intuitively expect.
 
@@ -109,7 +109,7 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#ALL_STYLES:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating names in all styles, such as "January" and "Jan". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#ALL_STYLES:kotlin.Int` A style specifier for getDisplayNames indicating names in all styles, such as "January" and "Jan". |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#AM:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#AM_PM:kotlin.Int` field indicating the period of the day from midnight to just before noon. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#AM_PM:kotlin.Int` Field number for `get` and `set` indicating whether the `HOUR` is before or after noon. |
 | --- | --- |
@@ -137,9 +137,9 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#JULY:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the seventh month of the year in the Gregorian and Julian calendars. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#JUNE:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the sixth month of the year in the Gregorian and Julian calendars. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a long name used for format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_STANDALONE:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a long name used independently, such as a month name as calendar headers. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG:kotlin.Int` A style specifier for getDisplayName and getDisplayNames equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int` A style specifier for getDisplayName and getDisplayNames indicating a long name used for format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_STANDALONE:kotlin.Int` A style specifier for getDisplayName and getDisplayNames indicating a long name used independently, such as a month name as calendar headers. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#MARCH:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the third month of the year in the Gregorian and Julian calendars. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#MAY:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the fifth month of the year in the Gregorian and Julian calendars. |
@@ -149,8 +149,8 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#MONDAY:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#DAY_OF_WEEK:kotlin.Int` field indicating Monday. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` Field number for `get` and `set` indicating the month. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_FORMAT:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a narrow name used for format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_STANDALONE:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a narrow name independently. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_FORMAT:kotlin.Int` A style specifier for getDisplayName and getDisplayNames indicating a narrow name used for format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#NARROW_STANDALONE:kotlin.Int` A style specifier for getDisplayName and getDisplayNames indicating a narrow name independently. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#NOVEMBER:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the eleventh month of the year in the Gregorian and Julian calendars. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#OCTOBER:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the tenth month of the year in the Gregorian and Julian calendars. |
@@ -159,10 +159,10 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SECOND:kotlin.Int` Field number for `get` and `set` indicating the second within the minute. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SEPTEMBER:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field indicating the ninth month of the year in the Gregorian and Julian calendars. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT:kotlin.Int` A style specifier for getDisplayName and getDisplayNames equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a short name used for format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_STANDALONE:kotlin.Int` A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a short name used independently, such as a month abbreviation as calendar headers. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int` A style specifier for getDisplayName and getDisplayNames indicating a short name used for format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_STANDALONE:kotlin.Int` A style specifier for getDisplayName and getDisplayNames indicating a short name used independently, such as a month abbreviation as calendar headers. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#SUNDAY:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#DAY_OF_WEEK:kotlin.Int` field indicating Sunday. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#THURSDAY:kotlin.Int` Value of the `https://developer.android.com/reference/kotlin/java/util/Calendar#DAY_OF_WEEK:kotlin.Int` field indicating Thursday. |
@@ -178,85 +178,85 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Calendar#Calendar()()` Constructs a Calendar with the default time zone and the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category` locale. |
-| `https://developer.android.com/reference/kotlin/java/util/Calendar#Calendar(java.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Constructs a calendar with the specified time zone and locale. |
+| Calendar Constructs a Calendar with the default time zone and the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category` locale. |
+| Calendar Constructs a calendar with the specified time zone and locale. |
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#add(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, amount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds or subtracts the specified amount of time to the given calendar field, based on the calendar's rules. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#after(kotlin.Any)(when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns whether this `Calendar` represents a time after the time represented by the specified `Object`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#before(kotlin.Any)(when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Returns whether this `Calendar` represents a time before the time represented by the specified `Object`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | add Adds or subtracts the specified amount of time to the given calendar field, based on the calendar's rules. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | after Returns whether this `Calendar` represents a time after the time represented by the specified `Object`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | before Returns whether this `Calendar` represents a time before the time represented by the specified `Object`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()()` Sets all the calendar field values and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clear(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the given calendar field value and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#clone()()` Creates and returns a copy of this object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Sets all the calendar field values and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Sets the given calendar field value and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Creates and returns a copy of this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#compareTo(java.util.Calendar)(other: https://developer.android.com/reference/kotlin/java/util/Calendar#)` Compares the time values (millisecond offsets from the [Epoch](Calendar.md)) represented by two `Calendar` objects. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this `Calendar` to the specified `Object`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the given calendar field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares the time values (millisecond offsets from the [Epoch](Calendar.md)) represented by two `Calendar` objects. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this `Calendar` to the specified `Object`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get Returns the value of the given calendar field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum value that the specified calendar field could have, given the time value of this `Calendar`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value that the specified calendar field could have, given the time value of this `Calendar`. |
-| open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Calendar#getAvailableCalendarTypes()()` Returns an unmodifiable `Set` containing all calendar types supported by `Calendar` in the runtime environment. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActualMaximum Returns the maximum value that the specified calendar field could have, given the time value of this `Calendar`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActualMinimum Returns the minimum value that the specified calendar field could have, given the time value of this `Calendar`. |
+| open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | getAvailableCalendarTypes Returns an unmodifiable `Set` containing all calendar types supported by `Calendar` in the runtime environment. |
 | --- | --- |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](Locale.md)!\> | `https://developer.android.com/reference/kotlin/java/util/Calendar#getAvailableLocales()()` Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getCalendarType()()` Returns the calendar type of this `Calendar`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale)` Returns the string representation of the calendar `field` value in the given `style` and `locale`. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](Locale.md)!\> | getAvailableLocales Returns an array of all locales for which the `getInstance` methods of this class can return localized instances. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getCalendarType Returns the calendar type of this `Calendar`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getDisplayName Returns the string representation of the calendar `field` value in the given `style` and `locale`. |
 | --- | --- |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, style: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, locale: https://developer.android.com/reference/kotlin/java/util/Locale)` Returns a `Map` containing all names of the calendar `field` in the given `style` and `locale` and their corresponding field values. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()()` Gets what the first day of the week is; e. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the highest minimum value for the given calendar field of this `Calendar` instance. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | getDisplayNames Returns a `Map` containing all names of the calendar `field` in the given `style` and `locale` and their corresponding field values. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFirstDayOfWeek Gets what the first day of the week is; e. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGreatestMinimum Returns the highest minimum value for the given calendar field of this `Calendar` instance. |
 | --- | --- |
-| open static [Calendar](Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance()()` Gets a calendar using the default time zone and locale. |
-| open static [Calendar](Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.Locale)(aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Gets a calendar using the default time zone and specified locale. |
-| open static [Calendar](Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.TimeZone)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone)` Gets a calendar using the specified time zone and default locale. |
+| open static [Calendar](Calendar.md) | getInstance Gets a calendar using the default time zone and locale. |
+| open static [Calendar](Calendar.md) | getInstance Gets a calendar using the default time zone and specified locale. |
+| open static [Calendar](Calendar.md) | getInstance Gets a calendar using the specified time zone and default locale. |
 | --- | --- |
-| open static [Calendar](Calendar.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getInstance(java.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/java/util/TimeZone, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale)` Gets a calendar with the specified time zone and locale. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the lowest maximum value for the given calendar field of this `Calendar` instance. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum value for the given calendar field of this `Calendar` instance. |
+| open static [Calendar](Calendar.md) | getInstance Gets a calendar with the specified time zone and locale. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeastMaximum Returns the lowest maximum value for the given calendar field of this `Calendar` instance. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaximum Returns the maximum value for the given calendar field of this `Calendar` instance. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()()` Gets what the minimal days required in the first week of the year are; e. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value for the given calendar field of this `Calendar` instance. |
-| [Date](Date.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTime()()` Returns a `Date` object representing this `Calendar`'s time value (millisecond offset from the [Epoch](Calendar.md)"). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinimalDaysInFirstWeek Gets what the minimal days required in the first week of the year are; e. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinimum Returns the minimum value for the given calendar field of this `Calendar` instance. |
+| [Date](Date.md) | getTime Returns a `Date` object representing this `Calendar`'s time value (millisecond offset from the [Epoch](Calendar.md)"). |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeInMillis()()` Returns this Calendar's time value in milliseconds. |
-| open [TimeZone](TimeZone.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeZone()()` Gets the time zone. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeekYear()()` Returns the week year represented by this `Calendar`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimeInMillis Returns this Calendar's time value in milliseconds. |
+| open [TimeZone](TimeZone.md) | getTimeZone Gets the time zone. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWeekYear Returns the week year represented by this `Calendar`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeeksInWeekYear()()` Returns the number of weeks in the week year represented by this `Calendar`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#hashCode()()` Returns a hash code for this calendar. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#isLenient()()` Tells whether date/time interpretation is to be lenient. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getWeeksInWeekYear Returns the number of weeks in the week year represented by this `Calendar`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this calendar. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLenient Tells whether date/time interpretation is to be lenient. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the given calendar field has a value set, including cases that the value has been set by internal fields calculations triggered by a `get` method call. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#isWeekDateSupported()()` Returns whether this `Calendar` supports week dates. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#roll(kotlin.Int,%20kotlin.Boolean)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, up: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Adds or subtracts (up/down) a single unit of time on the given time field without changing larger fields. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSet Determines if the given calendar field has a value set, including cases that the value has been set by internal fields calculations triggered by a `get` method call. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWeekDateSupported Returns whether this `Calendar` supports week dates. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | roll Adds or subtracts (up/down) a single unit of time on the given time field without changing larger fields. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#roll(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, amount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adds the specified (signed) amount to the specified calendar field without changing larger fields. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the given calendar field to the given value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the values for the calendar fields `YEAR`, `MONTH`, and `DAY_OF_MONTH`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | roll Adds the specified (signed) amount to the specified calendar field without changing larger fields. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the given calendar field to the given value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the values for the calendar fields `YEAR`, `MONTH`, and `DAY_OF_MONTH`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hourOfDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the values for the calendar fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, and `MINUTE`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hourOfDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the values for the fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, `MINUTE`, and `SECOND`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setFirstDayOfWeek(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets what the first day of the week is; e. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the values for the calendar fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, and `MINUTE`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the values for the fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, `MINUTE`, and `SECOND`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFirstDayOfWeek Sets what the first day of the week is; e. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setLenient(kotlin.Boolean)(lenient: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies whether or not date/time interpretation is to be lenient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setMinimalDaysInFirstWeek(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets what the minimal days required in the first week of the year are; For example, if the first week is defined as one that contains the first day of the first month of a year, call this method with value 1. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setTime(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date)` Sets this Calendar's time with the given `Date`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLenient Specifies whether or not date/time interpretation is to be lenient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMinimalDaysInFirstWeek Sets what the minimal days required in the first week of the year are; For example, if the first week is defined as one that contains the first day of the first month of a year, call this method with value 1. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTime Sets this Calendar's time with the given `Date`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setTimeInMillis(kotlin.Long)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets this Calendar's current time from the given long value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setTimeZone(java.util.TimeZone)(value: https://developer.android.com/reference/kotlin/java/util/TimeZone)` Sets the time zone with the given time zone value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#setWeekDate(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(weekYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, weekOfYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the date of this `Calendar` with the given date specifiers - week year, week of year, and day of week. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTimeInMillis Sets this Calendar's current time from the given long value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTimeZone Sets the time zone with the given time zone value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setWeekDate Sets the date of this `Calendar` with the given date specifiers - week year, week of year, and day of week. |
 | --- | --- |
-| [Instant](../java.time/Instant.md) | `https://developer.android.com/reference/kotlin/java/util/Calendar#toInstant()()` Converts this object to an `https://developer.android.com/reference/kotlin/java/time/Instant.html#`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#toString()()` Return a string representation of this calendar. |
+| [Instant](../java.time/Instant.md) | toInstant Converts this object to an `https://developer.android.com/reference/kotlin/java/time/Instant.html#`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Return a string representation of this calendar. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#complete()()` Fills in any unset fields in the calendar fields. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#computeFields()()` Converts the current millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long` to calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#computeTime()()` Converts the current calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray` to the millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | complete Fills in any unset fields in the calendar fields. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | computeFields Converts the current millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long` to calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | computeTime Converts the current calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray` to the millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Calendar#internalGet(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value of the given calendar field. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | internalGet Returns the value of the given calendar field. |
 
 | Properties ||
 |---|---|
@@ -277,7 +277,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ALL_STYLES: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating names in all styles, such as "January" and "Jan".
+A style specifier for getDisplayNames indicating names in all styles, such as "January" and "Jan".
 
  Value: 0
 
@@ -583,7 +583,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val LONG: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int`.
+A style specifier for getDisplayName and getDisplayNames equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#LONG_FORMAT:kotlin.Int`.
 
  Value: 2
 
@@ -600,7 +600,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val LONG_FORMAT: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a long name used for format.
+A style specifier for getDisplayName and getDisplayNames indicating a long name used for format.
 
  Value: 2
 
@@ -618,7 +618,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val LONG_STANDALONE: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a long name used independently, such as a month name as calendar headers.
+A style specifier for getDisplayName and getDisplayNames indicating a long name used independently, such as a month name as calendar headers.
 
  Value: 32770
 
@@ -724,7 +724,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val NARROW_FORMAT: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a narrow name used for format. Narrow names are typically single character strings, such as "M" for Monday.
+A style specifier for getDisplayName and getDisplayNames indicating a narrow name used for format. Narrow names are typically single character strings, such as "M" for Monday.
 
  Value: 4
 
@@ -742,7 +742,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val NARROW_STANDALONE: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a narrow name independently. Narrow names are typically single character strings, such as "M" for Monday.
+A style specifier for getDisplayName and getDisplayNames indicating a narrow name independently. Narrow names are typically single character strings, such as "M" for Monday.
 
  Value: 32772
 
@@ -832,7 +832,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val SHORT: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int`.
+A style specifier for getDisplayName and getDisplayNames equivalent to `https://developer.android.com/reference/kotlin/java/util/Calendar#SHORT_FORMAT:kotlin.Int`.
 
  Value: 1
 
@@ -849,7 +849,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val SHORT_FORMAT: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a short name used for format.
+A style specifier for getDisplayName and getDisplayNames indicating a short name used for format.
 
  Value: 1
 
@@ -867,7 +867,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val SHORT_STANDALONE: Int
 ```
 
-A style specifier for `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayName(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` and `https://developer.android.com/reference/kotlin/java/util/Calendar#getDisplayNames(kotlin.Int,%20kotlin.Int,%20java.util.Locale)` indicating a short name used independently, such as a month abbreviation as calendar headers.
+A style specifier for getDisplayName and getDisplayNames indicating a short name used independently, such as a month abbreviation as calendar headers.
 
  Value: 32769
 
@@ -951,8 +951,8 @@ Field number for `get` and `set` indicating the week number within the current m
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### WEEK_OF_YEAR
 
@@ -968,8 +968,8 @@ Field number for `get` and `set` indicating the week number within the current y
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### YEAR
 
@@ -1010,7 +1010,7 @@ protected Calendar()
 Constructs a Calendar with the default time zone and the default `https://developer.android.com/reference/kotlin/java/util/Locale.Category` locale.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/TimeZone#getDefault()`
+- getDefault
 
 ### Calendar
 
@@ -1053,8 +1053,8 @@ Adds or subtracts the specified amount of time to the given calendar field, base
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#roll(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
+- roll
+- set
 
 ### after
 
@@ -1084,7 +1084,7 @@ if and only if `when` is a `Calendar` instance. Otherwise, the method returns `f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#compareTo(java.util.Calendar)`
+- compareTo
 
 ### before
 
@@ -1114,7 +1114,7 @@ if and only if `when` is a `Calendar` instance. Otherwise, the method returns `f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#compareTo(java.util.Calendar)`
+- compareTo
 
 ### clear
 
@@ -1124,10 +1124,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun clear(): Unit
 ```
 
-Sets all the calendar field values and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. This means that `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)` will return `false` for all the calendar fields, and the date and time calculations will treat the fields as if they had never been set. A `Calendar` implementation class may use its specific default field values for date/time calculations. For example, `GregorianCalendar` uses 1970 if the `YEAR` field value is undefined.
+Sets all the calendar field values and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. This means that isSet will return `false` for all the calendar fields, and the date and time calculations will treat the fields as if they had never been set. A `Calendar` implementation class may use its specific default field values for date/time calculations. For example, `GregorianCalendar` uses 1970 if the `YEAR` field value is undefined.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#clear(kotlin.Int)`
+- clear
 
 ### clear
 
@@ -1137,9 +1137,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun clear(field: Int): Unit
 ```
 
-Sets the given calendar field value and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. This means that `https://developer.android.com/reference/kotlin/java/util/Calendar#isSet(kotlin.Int)` will return `false`, and the date and time calculations will treat the field as if it had never been set. A `Calendar` implementation class may use the field's specific default value for date and time calculations.
+Sets the given calendar field value and the time value (millisecond offset from the [Epoch](Calendar.md)) of this `Calendar` undefined. This means that isSet will return `false`, and the date and time calculations will treat the field as if it had never been set. A `Calendar` implementation class may use the field's specific default value for date and time calculations.
 
-The `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR_OF_DAY:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR:kotlin.Int` and `https://developer.android.com/reference/kotlin/java/util/Calendar#AM_PM:kotlin.Int` fields are handled independently and the [the resolution rule for the time of day](Calendar.md) is applied. Clearing one of the fields doesn't reset the hour of day value of this `Calendar`. Use `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)` to reset the hour value.
+The `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR_OF_DAY:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR:kotlin.Int` and `https://developer.android.com/reference/kotlin/java/util/Calendar#AM_PM:kotlin.Int` fields are handled independently and the [the resolution rule for the time of day](Calendar.md) is applied. Clearing one of the fields doesn't reset the hour of day value of this `Calendar`. Use set to reset the hour value.
 
 | Parameters ||
 |---|---|
@@ -1147,7 +1147,7 @@ The `https://developer.android.com/reference/kotlin/java/util/Calendar#HOUR_OF_D
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()`
+- clear
 
 ### clone
 
@@ -1205,7 +1205,7 @@ Compares this `Calendar` to the specified `Object`. The result is `true` if and 
 
 The `Calendar` parameters are the values represented by the `isLenient`, `getFirstDayOfWeek`, `getMinimalDaysInFirstWeek` and `getTimeZone` methods. If there is any difference in those parameters between the two `Calendar`s, this method returns `false`.
 
-Use the `https://developer.android.com/reference/kotlin/java/util/Calendar#compareTo(java.util.Calendar)` method to compare only the time values.
+Use the compareTo method to compare only the time values.
 
 | Parameters ||
 |---|---|
@@ -1223,7 +1223,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun get(field: Int): Int
 ```
 
-Returns the value of the given calendar field. In lenient mode, all calendar fields are normalized. In non-lenient mode, all calendar fields are validated and this method throws an exception if any calendar fields have out-of-range values. The normalization and validation are handled by the `https://developer.android.com/reference/kotlin/java/util/Calendar#complete()` method, which process is calendar system dependent.
+Returns the value of the given calendar field. In lenient mode, all calendar fields are normalized. In non-lenient mode, all calendar fields are validated and this method throws an exception if any calendar fields have out-of-range values. The normalization and validation are handled by the complete method, which process is calendar system dependent.
 
 | Parameters ||
 |---|---|
@@ -1239,8 +1239,8 @@ Returns the value of the given calendar field. In lenient mode, all calendar fie
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#complete()`
+- set
+- complete
 
 ### getActualMaximum
 
@@ -1264,11 +1264,11 @@ The default implementation of this method uses an iterative algorithm to determi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)`
+- getMinimum
+- getMaximum
+- getGreatestMinimum
+- getLeastMaximum
+- getActualMinimum
 
 ### getActualMinimum
 
@@ -1292,11 +1292,11 @@ The default implementation of this method uses an iterative algorithm to determi
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)`
+- getMinimum
+- getMaximum
+- getGreatestMinimum
+- getLeastMaximum
+- getActualMaximum
 
 ### getAvailableCalendarTypes
 
@@ -1314,9 +1314,9 @@ Returns an unmodifiable `Set` containing all calendar types supported by `Calend
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getCalendarType()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar.Builder#setCalendarType(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/java/util/Locale#getUnicodeLocaleType(kotlin.String)`
+- getCalendarType
+- setCalendarType
+- getUnicodeLocaleType
 
 ### getAvailableLocales
 
@@ -1350,8 +1350,8 @@ The default implementation of this method returns the class name of this `Calend
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Locale.Builder#setLocale(java.util.Locale)`
-- `https://developer.android.com/reference/kotlin/java/util/Locale.Builder#setUnicodeLocaleKeyword(kotlin.String,%20kotlin.String)`
+- setLocale
+- setUnicodeLocaleKeyword
 
 ### getDisplayName
 
@@ -1365,7 +1365,7 @@ open fun getDisplayName(
 ): String?
 ```
 
-Returns the string representation of the calendar `field` value in the given `style` and `locale`. If no string representation is applicable, `null` is returned. This method calls `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)` to get the calendar `field` value if the string representation is applicable to the given calendar `field`.
+Returns the string representation of the calendar `field` value in the given `style` and `locale`. If no string representation is applicable, `null` is returned. This method calls get to get the calendar `field` value if the string representation is applicable to the given calendar `field`.
 
 For example, if this `Calendar` is a `GregorianCalendar` and its date is 2005-01-01, then the string representation of the `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` field would be "January" in the long style in an English locale or "Jan" in the short style. However, no string representation would be available for the `https://developer.android.com/reference/kotlin/java/util/Calendar#DAY_OF_MONTH:kotlin.Int` field, and this method would return `null`.
 
@@ -1399,13 +1399,13 @@ open fun getDisplayNames(
 ): MutableMap<String!, Int!>?
 ```
 
-Returns a `Map` containing all names of the calendar `field` in the given `style` and `locale` and their corresponding field values. For example, if this `Calendar` is a `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar`, the returned map would contain "Jan" to `https://developer.android.com/reference/kotlin/java/util/Calendar#JANUARY:kotlin.Int`, "Feb" to `https://developer.android.com/reference/kotlin/java/util/Calendar#FEBRUARY:kotlin.Int`, and so on, in the [short](Calendar.md) style in an English locale.
+Returns a `Map` containing all names of the calendar `field` in the given `style` and `locale` and their corresponding field values. For example, if this `Calendar` is a GregorianCalendar, the returned map would contain "Jan" to `https://developer.android.com/reference/kotlin/java/util/Calendar#JANUARY:kotlin.Int`, "Feb" to `https://developer.android.com/reference/kotlin/java/util/Calendar#FEBRUARY:kotlin.Int`, and so on, in the [short](Calendar.md) style in an English locale.
 
 Narrow names may not be unique due to use of single characters, such as "S" for Sunday and Saturday. In that case narrow names are not included in the returned `Map`.
 
 The values of other calendar fields may be taken into account to determine a set of display names. For example, if this `Calendar` is a lunisolar calendar system and the year value given by the `https://developer.android.com/reference/kotlin/java/util/Calendar#YEAR:kotlin.Int` field has a leap month, this method would return month names containing the leap month name, and month names are mapped to their values specific for the year.
 
-The default implementation supports display names contained in a `https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#`. For example, if `field` is `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` and `style` is `https://developer.android.com/reference/kotlin/java/util/Calendar#ALL_STYLES:kotlin.Int`, this method returns a `Map` containing all strings returned by `https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getShortMonths()` and `https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#getMonths()`.
+The default implementation supports display names contained in a `https://developer.android.com/reference/kotlin/java/text/DateFormatSymbols.html#`. For example, if `field` is `https://developer.android.com/reference/kotlin/java/util/Calendar#MONTH:kotlin.Int` and `style` is `https://developer.android.com/reference/kotlin/java/util/Calendar#ALL_STYLES:kotlin.Int`, this method returns a `Map` containing all strings returned by getShortMonths and getMonths.
 
 | Parameters ||
 |---|---|
@@ -1439,8 +1439,8 @@ Gets what the first day of the week is; e.g., `SUNDAY` in the U.S., `MONDAY` in 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setFirstDayOfWeek(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- setFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### getGreatestMinimum
 
@@ -1450,7 +1450,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getGreatestMinimum(field: Int): Int
 ```
 
-Returns the highest minimum value for the given calendar field of this `Calendar` instance. The highest minimum value is defined as the largest value returned by `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)` for any possible time value. The greatest minimum value depends on calendar system specific parameters of the instance.
+Returns the highest minimum value for the given calendar field of this `Calendar` instance. The highest minimum value is defined as the largest value returned by getActualMinimum for any possible time value. The greatest minimum value depends on calendar system specific parameters of the instance.
 
 | Parameters ||
 |---|---|
@@ -1462,11 +1462,11 @@ Returns the highest minimum value for the given calendar field of this `Calendar
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)`
+- getMinimum
+- getMaximum
+- getLeastMaximum
+- getActualMinimum
+- getActualMaximum
 
 ### getInstance
 
@@ -1482,7 +1482,7 @@ Since Android 13, if the locale contains the time zone with "tz" [Unicode extens
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Calendar#` | a Calendar. |
+| Calendar | a Calendar. |
 
 ### getInstance
 
@@ -1502,7 +1502,7 @@ Since Android 13, if the locale contains the time zone with "tz" [Unicode extens
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Calendar#` | a Calendar. |
+| Calendar | a Calendar. |
 
 ### getInstance
 
@@ -1520,7 +1520,7 @@ Gets a calendar using the specified time zone and default locale. The `Calendar`
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Calendar#` | a Calendar. |
+| Calendar | a Calendar. |
 
 ### getInstance
 
@@ -1542,7 +1542,7 @@ Gets a calendar with the specified time zone and locale. The `Calendar` returned
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Calendar#` | a Calendar. |
+| Calendar | a Calendar. |
 
 ### getLeastMaximum
 
@@ -1552,7 +1552,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getLeastMaximum(field: Int): Int
 ```
 
-Returns the lowest maximum value for the given calendar field of this `Calendar` instance. The lowest maximum value is defined as the smallest value returned by `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)` for any possible time value. The least maximum value depends on calendar system specific parameters of the instance. For example, a `Calendar` for the Gregorian calendar system returns 28 for the `DAY_OF_MONTH` field, because the 28th is the last day of the shortest month of this calendar, February in a common year.
+Returns the lowest maximum value for the given calendar field of this `Calendar` instance. The lowest maximum value is defined as the smallest value returned by getActualMaximum for any possible time value. The least maximum value depends on calendar system specific parameters of the instance. For example, a `Calendar` for the Gregorian calendar system returns 28 for the `DAY_OF_MONTH` field, because the 28th is the last day of the shortest month of this calendar, February in a common year.
 
 | Parameters ||
 |---|---|
@@ -1564,11 +1564,11 @@ Returns the lowest maximum value for the given calendar field of this `Calendar`
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)`
+- getMinimum
+- getMaximum
+- getGreatestMinimum
+- getActualMinimum
+- getActualMaximum
 
 ### getMaximum
 
@@ -1578,7 +1578,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getMaximum(field: Int): Int
 ```
 
-Returns the maximum value for the given calendar field of this `Calendar` instance. The maximum value is defined as the largest value returned by the `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)` method for any possible time value. The maximum value depends on calendar system specific parameters of the instance.
+Returns the maximum value for the given calendar field of this `Calendar` instance. The maximum value is defined as the largest value returned by the get method for any possible time value. The maximum value depends on calendar system specific parameters of the instance.
 
 | Parameters ||
 |---|---|
@@ -1590,11 +1590,11 @@ Returns the maximum value for the given calendar field of this `Calendar` instan
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)`
+- getMinimum
+- getGreatestMinimum
+- getLeastMaximum
+- getActualMinimum
+- getActualMaximum
 
 ### getMinimalDaysInFirstWeek
 
@@ -1612,7 +1612,7 @@ Gets what the minimal days required in the first week of the year are; e.g., if 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setMinimalDaysInFirstWeek(kotlin.Int)`
+- setMinimalDaysInFirstWeek
 
 ### getMinimum
 
@@ -1622,7 +1622,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getMinimum(field: Int): Int
 ```
 
-Returns the minimum value for the given calendar field of this `Calendar` instance. The minimum value is defined as the smallest value returned by the `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)` method for any possible time value. The minimum value depends on calendar system specific parameters of the instance.
+Returns the minimum value for the given calendar field of this `Calendar` instance. The minimum value is defined as the smallest value returned by the get method for any possible time value. The minimum value depends on calendar system specific parameters of the instance.
 
 | Parameters ||
 |---|---|
@@ -1634,11 +1634,11 @@ Returns the minimum value for the given calendar field of this `Calendar` instan
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getGreatestMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getLeastMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)`
+- getMaximum
+- getGreatestMinimum
+- getLeastMaximum
+- getActualMinimum
+- getActualMaximum
 
 ### getTime
 
@@ -1652,12 +1652,12 @@ Returns a `Date` object representing this `Calendar`'s time value (millisecond o
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/Date` | a `Date` representing the time value. |
+| Date | a `Date` representing the time value. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setTime(java.util.Date)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeInMillis()`
+- setTime
+- getTimeInMillis
 
 ### getTimeInMillis
 
@@ -1675,8 +1675,8 @@ Returns this Calendar's time value in milliseconds.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getTime()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setTimeInMillis(kotlin.Long)`
+- getTime
+- setTimeInMillis
 
 ### getTimeZone
 
@@ -1690,7 +1690,7 @@ Gets the time zone.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/TimeZone` | the time zone object associated with this calendar. |
+| TimeZone | the time zone object associated with this calendar. |
 
 ### getWeekYear
 
@@ -1714,9 +1714,9 @@ The default implementation of this method throws an `https://developer.android.c
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#isWeekDateSupported()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- isWeekDateSupported
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### getWeeksInWeekYear
 
@@ -1741,9 +1741,9 @@ The default implementation of this method throws an `UnsupportedOperationExcepti
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/java/util/Calendar#WEEK_OF_YEAR:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#isWeekDateSupported()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeekYear()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getActualMaximum(kotlin.Int)`
+- isWeekDateSupported
+- getWeekYear
+- getActualMaximum
 
 ### hashCode
 
@@ -1775,7 +1775,7 @@ Tells whether date/time interpretation is to be lenient.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setLenient(kotlin.Boolean)`
+- setLenient
 
 ### isSet
 
@@ -1813,9 +1813,9 @@ The default implementation of this method returns `false`.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeekYear()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setWeekDate(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getWeeksInWeekYear()`
+- getWeekYear
+- setWeekDate
+- getWeeksInWeekYear
 
 ### roll
 
@@ -1839,8 +1839,8 @@ roll(Calendar.DATE, true). When rolling on the year or Calendar.YEAR field, it w
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#add(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
+- add
+- set
 
 ### roll
 
@@ -1855,7 +1855,7 @@ open fun roll(
 
 Adds the specified (signed) amount to the specified calendar field without changing larger fields. A negative amount means to roll down.
 
-NOTE: This default implementation on `Calendar` just repeatedly calls the version of `https://developer.android.com/reference/kotlin/java/util/Calendar#roll(kotlin.Int,%20kotlin.Boolean)` that rolls by one unit. This may not always do the right thing. For example, if the `DAY_OF_MONTH` field is 31, rolling through February will leave it set to 28. The `GregorianCalendar` version of this function takes care of this problem. Other subclasses should also provide overrides of this function that do the right thing.
+NOTE: This default implementation on `Calendar` just repeatedly calls the version of roll that rolls by one unit. This may not always do the right thing. For example, if the `DAY_OF_MONTH` field is 31, rolling through February will leave it set to 28. The `GregorianCalendar` version of this function takes care of this problem. Other subclasses should also provide overrides of this function that do the right thing.
 
 | Parameters ||
 |---|---|
@@ -1864,9 +1864,9 @@ NOTE: This default implementation on `Calendar` just repeatedly calls the versio
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#roll(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#add(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
+- roll
+- add
+- set
 
 ### set
 
@@ -1892,10 +1892,10 @@ Sets the given calendar field to the given value. The value is not interpreted b
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)`
+- set
+- set
+- set
+- get
 
 ### set
 
@@ -1909,7 +1909,7 @@ fun set(
 ): Unit
 ```
 
-Sets the values for the calendar fields `YEAR`, `MONTH`, and `DAY_OF_MONTH`. Previous values of other calendar fields are retained. If this is not desired, call `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()` first.
+Sets the values for the calendar fields `YEAR`, `MONTH`, and `DAY_OF_MONTH`. Previous values of other calendar fields are retained. If this is not desired, call clear first.
 
 | Parameters ||
 |---|---|
@@ -1920,9 +1920,9 @@ Sets the values for the calendar fields `YEAR`, `MONTH`, and `DAY_OF_MONTH`. Pre
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- set
+- set
+- set
 
 ### set
 
@@ -1938,7 +1938,7 @@ fun set(
 ): Unit
 ```
 
-Sets the values for the calendar fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, and `MINUTE`. Previous values of other fields are retained. If this is not desired, call `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()` first.
+Sets the values for the calendar fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, and `MINUTE`. Previous values of other fields are retained. If this is not desired, call clear first.
 
 | Parameters ||
 |---|---|
@@ -1951,9 +1951,9 @@ Sets the values for the calendar fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_O
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- set
+- set
+- set
 
 ### set
 
@@ -1970,7 +1970,7 @@ fun set(
 ): Unit
 ```
 
-Sets the values for the fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, `MINUTE`, and `SECOND`. Previous values of other fields are retained. If this is not desired, call `https://developer.android.com/reference/kotlin/java/util/Calendar#clear()` first.
+Sets the values for the fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, `MINUTE`, and `SECOND`. Previous values of other fields are retained. If this is not desired, call clear first.
 
 | Parameters ||
 |---|---|
@@ -1985,9 +1985,9 @@ Sets the values for the fields `YEAR`, `MONTH`, `DAY_OF_MONTH`, `HOUR_OF_DAY`, `
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- set
+- set
+- set
 
 ### setFirstDayOfWeek
 
@@ -2005,8 +2005,8 @@ Sets what the first day of the week is; e.g., `SUNDAY` in the U.S., `MONDAY` in 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### setLenient
 
@@ -2024,8 +2024,8 @@ Specifies whether or not date/time interpretation is to be lenient. With lenient
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#isLenient()`
-- `https://developer.android.com/reference/kotlin/java/text/DateFormat.html#setLenient(kotlin.Boolean)`
+- isLenient
+- setLenient
 
 ### setMinimalDaysInFirstWeek
 
@@ -2043,7 +2043,7 @@ Sets what the minimal days required in the first week of the year are; For examp
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- getMinimalDaysInFirstWeek
 
 ### setTime
 
@@ -2067,8 +2067,8 @@ Note: Calling `setTime()` with `Date(Long.MAX_VALUE)` or `Date(Long.MIN_VALUE)` 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getTime()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setTimeInMillis(kotlin.Long)`
+- getTime
+- setTimeInMillis
 
 ### setTimeInMillis
 
@@ -2086,8 +2086,8 @@ Sets this Calendar's current time from the given long value.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#setTime(java.util.Date)`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getTimeInMillis()`
+- setTime
+- getTimeInMillis
 
 ### setTimeZone
 
@@ -2137,9 +2137,9 @@ The default implementation of this method throws an `UnsupportedOperationExcepti
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#isWeekDateSupported()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#getMinimalDaysInFirstWeek()`
+- isWeekDateSupported
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### toInstant
 
@@ -2181,7 +2181,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun complete(): Unit
 ```
 
-Fills in any unset fields in the calendar fields. First, the `https://developer.android.com/reference/kotlin/java/util/Calendar#computeTime()` method is called if the time value (millisecond offset from the [Epoch](Calendar.md)) has not been calculated from calendar field values. Then, the `https://developer.android.com/reference/kotlin/java/util/Calendar#computeFields()` method is called to calculate all calendar field values.
+Fills in any unset fields in the calendar fields. First, the computeTime method is called if the time value (millisecond offset from the [Epoch](Calendar.md)) has not been calculated from calendar field values. Then, the computeFields method is called to calculate all calendar field values.
 
 ### computeFields
 
@@ -2191,10 +2191,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected abstract fun computeFields(): Unit
 ```
 
-Converts the current millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long` to calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray`. This allows you to sync up the calendar field values with a new time that is set for the calendar. The time is *not* recomputed first; to recompute the time, then the fields, call the `https://developer.android.com/reference/kotlin/java/util/Calendar#complete()` method.
+Converts the current millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long` to calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray`. This allows you to sync up the calendar field values with a new time that is set for the calendar. The time is *not* recomputed first; to recompute the time, then the fields, call the complete method.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#computeTime()`
+- computeTime
 
 ### computeTime
 
@@ -2207,8 +2207,8 @@ protected abstract fun computeTime(): Unit
 Converts the current calendar field values in `https://developer.android.com/reference/kotlin/java/util/Calendar#fields:kotlin.IntArray` to the millisecond time value `https://developer.android.com/reference/kotlin/java/util/Calendar#time:kotlin.Long`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#complete()`
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#computeFields()`
+- complete
+- computeFields
 
 ### internalGet
 
@@ -2230,7 +2230,7 @@ Returns the value of the given calendar field. This method does not involve norm
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/util/Calendar#get(kotlin.Int)`
+- get
 
 ## Properties
 

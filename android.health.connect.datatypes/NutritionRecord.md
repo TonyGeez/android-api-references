@@ -20,80 +20,80 @@ Captures what nutrients were consumed as part of a meal or a food item.
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#` |
+| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord.Builder` Builder class for NutritionRecord |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
+| From class Record |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getBiotin()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getCaffeine()()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getBiotin <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getCaffeine <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getCalcium()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getChloride()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getCholesterol()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getCalcium <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getChloride <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getCholesterol <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getChromium()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getCopper()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getDietaryFiber()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getChromium <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getCopper <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getDietaryFiber <br /> |
 | --- | --- |
-| [Energy](../android.health.connect.datatypes.units/Energy.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getEnergy()()` <br /> |
-| [Energy](../android.health.connect.datatypes.units/Energy.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getEnergyFromFat()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getFolate()()` <br /> |
+| [Energy](../android.health.connect.datatypes.units/Energy.md)? | getEnergy <br /> |
+| [Energy](../android.health.connect.datatypes.units/Energy.md)? | getEnergyFromFat <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getFolate <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getFolicAcid()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getIodine()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getIron()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getFolicAcid <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getIodine <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getIron <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getMagnesium()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getManganese()()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getMealName()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getMagnesium <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getManganese <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getMealName <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getMealType()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getMolybdenum()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getMonounsaturatedFat()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMealType <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getMolybdenum <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getMonounsaturatedFat <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getNiacin()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getPantothenicAcid()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getPhosphorus()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getNiacin <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getPantothenicAcid <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getPhosphorus <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getPolyunsaturatedFat()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getPotassium()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getProtein()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getPolyunsaturatedFat <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getPotassium <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getProtein <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getRiboflavin()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getSaturatedFat()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getSelenium()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getRiboflavin <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getSaturatedFat <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getSelenium <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getSodium()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getSugar()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getThiamin()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getSodium <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getSugar <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getThiamin <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getTotalCarbohydrate()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getTotalFat()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getTransFat()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getTotalCarbohydrate <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getTotalFat <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getTransFat <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getUnsaturatedFat()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminA()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminB12()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getUnsaturatedFat <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminA <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminB12 <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminB6()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminC()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminD()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminB6 <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminC <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminD <br /> |
 | --- | --- |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminE()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getVitaminK()()` <br /> |
-| [Mass](../android.health.connect.datatypes.units/Mass.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#getZinc()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminE <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getVitaminK <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md)? | getZinc <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/NutritionRecord#hashCode()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord` |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndZoneOffset()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartZoneOffset()()` <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#getMetadata()()` <br /> | ||
+| From class IntervalRecord |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getEndTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getEndZoneOffset <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getStartTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getStartZoneOffset <br /> | ||
+| From class Record |---|---| | Metadata | getMetadata <br /> | ||
 
 | Properties ||
 |---|---|
@@ -188,7 +188,7 @@ fun getBiotin(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | biotin in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | biotin in Mass unit. This value may be `null`. |
 
 ### getCaffeine
 
@@ -201,7 +201,7 @@ fun getCaffeine(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | caffeine in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | caffeine in Mass unit. This value may be `null`. |
 
 ### getCalcium
 
@@ -214,7 +214,7 @@ fun getCalcium(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | calcium in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | calcium in Mass unit. This value may be `null`. |
 
 ### getChloride
 
@@ -227,7 +227,7 @@ fun getChloride(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | chloride in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | chloride in Mass unit. This value may be `null`. |
 
 ### getCholesterol
 
@@ -240,7 +240,7 @@ fun getCholesterol(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | cholesterol in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | cholesterol in Mass unit. This value may be `null`. |
 
 ### getChromium
 
@@ -253,7 +253,7 @@ fun getChromium(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | chromium in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | chromium in Mass unit. This value may be `null`. |
 
 ### getCopper
 
@@ -266,7 +266,7 @@ fun getCopper(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | copper in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | copper in Mass unit. This value may be `null`. |
 
 ### getDietaryFiber
 
@@ -279,7 +279,7 @@ fun getDietaryFiber(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | dietaryFiber in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | dietaryFiber in Mass unit. This value may be `null`. |
 
 ### getEnergy
 
@@ -292,7 +292,7 @@ fun getEnergy(): Energy?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy?` | energy in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy` unit. This value may be `null`. |
+| Energy | energy in Energy unit. This value may be `null`. |
 
 ### getEnergyFromFat
 
@@ -305,7 +305,7 @@ fun getEnergyFromFat(): Energy?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy?` | energyFromFat in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Energy` unit. This value may be `null`. |
+| Energy | energyFromFat in Energy unit. This value may be `null`. |
 
 ### getFolate
 
@@ -318,7 +318,7 @@ fun getFolate(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | folate in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | folate in Mass unit. This value may be `null`. |
 
 ### getFolicAcid
 
@@ -331,7 +331,7 @@ fun getFolicAcid(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | folicAcid in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | folicAcid in Mass unit. This value may be `null`. |
 
 ### getIodine
 
@@ -344,7 +344,7 @@ fun getIodine(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | iodine in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | iodine in Mass unit. This value may be `null`. |
 
 ### getIron
 
@@ -357,7 +357,7 @@ fun getIron(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | iron in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | iron in Mass unit. This value may be `null`. |
 
 ### getMagnesium
 
@@ -370,7 +370,7 @@ fun getMagnesium(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | magnesium in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | magnesium in Mass unit. This value may be `null`. |
 
 ### getManganese
 
@@ -383,7 +383,7 @@ fun getManganese(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | manganese in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | manganese in Mass unit. This value may be `null`. |
 
 ### getMealName
 
@@ -422,7 +422,7 @@ fun getMolybdenum(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | molybdenum in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | molybdenum in Mass unit. This value may be `null`. |
 
 ### getMonounsaturatedFat
 
@@ -435,7 +435,7 @@ fun getMonounsaturatedFat(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | monounsaturatedFat in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | monounsaturatedFat in Mass unit. This value may be `null`. |
 
 ### getNiacin
 
@@ -448,7 +448,7 @@ fun getNiacin(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | niacin in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | niacin in Mass unit. This value may be `null`. |
 
 ### getPantothenicAcid
 
@@ -461,7 +461,7 @@ fun getPantothenicAcid(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | pantothenicAcid in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | pantothenicAcid in Mass unit. This value may be `null`. |
 
 ### getPhosphorus
 
@@ -474,7 +474,7 @@ fun getPhosphorus(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | phosphorus in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | phosphorus in Mass unit. This value may be `null`. |
 
 ### getPolyunsaturatedFat
 
@@ -487,7 +487,7 @@ fun getPolyunsaturatedFat(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | polyunsaturatedFat in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | polyunsaturatedFat in Mass unit. This value may be `null`. |
 
 ### getPotassium
 
@@ -500,7 +500,7 @@ fun getPotassium(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | potassium. This value may be `null`. |
+| Mass | potassium. This value may be `null`. |
 
 ### getProtein
 
@@ -513,7 +513,7 @@ fun getProtein(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | protein in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | protein in Mass unit. This value may be `null`. |
 
 ### getRiboflavin
 
@@ -526,7 +526,7 @@ fun getRiboflavin(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | riboflavin in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | riboflavin in Mass unit. This value may be `null`. |
 
 ### getSaturatedFat
 
@@ -539,7 +539,7 @@ fun getSaturatedFat(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | saturatedFat in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | saturatedFat in Mass unit. This value may be `null`. |
 
 ### getSelenium
 
@@ -552,7 +552,7 @@ fun getSelenium(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | selenium in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | selenium in Mass unit. This value may be `null`. |
 
 ### getSodium
 
@@ -565,7 +565,7 @@ fun getSodium(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | sodium in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | sodium in Mass unit. This value may be `null`. |
 
 ### getSugar
 
@@ -578,7 +578,7 @@ fun getSugar(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | sugar in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | sugar in Mass unit. This value may be `null`. |
 
 ### getThiamin
 
@@ -591,7 +591,7 @@ fun getThiamin(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | thiamin. This value may be `null`. |
+| Mass | thiamin. This value may be `null`. |
 
 ### getTotalCarbohydrate
 
@@ -604,7 +604,7 @@ fun getTotalCarbohydrate(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | totalCarbohydrate in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | totalCarbohydrate in Mass unit. This value may be `null`. |
 
 ### getTotalFat
 
@@ -617,7 +617,7 @@ fun getTotalFat(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | totalFat in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | totalFat in Mass unit. This value may be `null`. |
 
 ### getTransFat
 
@@ -630,7 +630,7 @@ fun getTransFat(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | transFat in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | transFat in Mass unit. This value may be `null`. |
 
 ### getUnsaturatedFat
 
@@ -643,7 +643,7 @@ fun getUnsaturatedFat(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | unsaturatedFat. This value may be `null`. |
+| Mass | unsaturatedFat. This value may be `null`. |
 
 ### getVitaminA
 
@@ -656,7 +656,7 @@ fun getVitaminA(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminA in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminA in Mass unit. This value may be `null`. |
 
 ### getVitaminB12
 
@@ -669,7 +669,7 @@ fun getVitaminB12(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminB12 in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminB12 in Mass unit. This value may be `null`. |
 
 ### getVitaminB6
 
@@ -682,7 +682,7 @@ fun getVitaminB6(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminB6 in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminB6 in Mass unit. This value may be `null`. |
 
 ### getVitaminC
 
@@ -695,7 +695,7 @@ fun getVitaminC(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminC in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminC in Mass unit. This value may be `null`. |
 
 ### getVitaminD
 
@@ -708,7 +708,7 @@ fun getVitaminD(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminD in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminD in Mass unit. This value may be `null`. |
 
 ### getVitaminE
 
@@ -721,7 +721,7 @@ fun getVitaminE(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminE in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminE in Mass unit. This value may be `null`. |
 
 ### getVitaminK
 
@@ -734,7 +734,7 @@ fun getVitaminK(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | vitaminK in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | vitaminK in Mass unit. This value may be `null`. |
 
 ### getZinc
 
@@ -747,7 +747,7 @@ fun getZinc(): Mass?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass?` | zinc in `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Mass` unit. This value may be `null`. |
+| Mass | zinc in Mass unit. This value may be `null`. |
 
 ### hashCode
 

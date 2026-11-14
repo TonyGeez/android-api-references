@@ -35,7 +35,7 @@ Abstraction for an Animation that can be applied to Views, Surfaces, or other ob
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#RESTART:kotlin.Int` When the animation reaches the end and the repeat count is INFINTE_REPEAT or a positive value, the animation restarts from the beginning. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#REVERSE:kotlin.Int` When the animation reaches the end and the repeat count is INFINTE_REPEAT or a positive value, the animation plays backward (and then forward again). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#START_ON_FIRST_FRAME:kotlin.Int` Can be used as the start time to indicate the start time should be the current time when `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation)` is invoked for the first animation frame. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#START_ON_FIRST_FRAME:kotlin.Int` Can be used as the start time to indicate the start time should be the current time when getTransformation is invoked for the first animation frame. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#ZORDER_BOTTOM:kotlin.Int` Requests that the content being animated be forced under all other content for the duration of the animation. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#ZORDER_NORMAL:kotlin.Int` Requests that the content being animated be kept in its current Z order. |
 | --- | --- |
@@ -43,81 +43,81 @@ Abstraction for an Animation that can be applied to Views, Surfaces, or other ob
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/animation/Animation#Animation()()` Creates a new animation with a duration of 0ms, the default interpolator, with fillBefore set to true and fillAfter set to false |
-| `https://developer.android.com/reference/kotlin/android/view/animation/Animation#Animation(android.content.Context,%20android.util.AttributeSet)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#!)` Creates a new animation whose parameters come from the specified context and attributes set. |
+| Animation Creates a new animation with a duration of 0ms, the default interpolator, with fillBefore set to true and fillAfter set to false |
+| Animation Creates a new animation whose parameters come from the specified context and attributes set. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#cancel()()` Cancel the animation. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#computeDurationHint()()` Compute a hint at how long the entire animation may last, in milliseconds. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getBackdropColor()()` Returns the background color to show behind the animating windows. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | cancel Cancel the animation. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | computeDurationHint Compute a hint at how long the entire animation may last, in milliseconds. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBackdropColor Returns the background color to show behind the animating windows. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getBackgroundColor()()` Returns the background color behind the animation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getDetachWallpaper()()` Return value of `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setDetachWallpaper(kotlin.Boolean)`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getDuration()()` How long this animation should last |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getBackgroundColor Returns the background color behind the animation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getDetachWallpaper Return value of setDetachWallpaper. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getDuration How long this animation should last |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getFillAfter()()` If fillAfter is true, this animation will apply its transformation after the end time of the animation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getFillBefore()()` If fillBefore is true, this animation will apply its transformation before the start time of the animation. |
-| open [Interpolator](Interpolator.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getInterpolator()()` Gets the acceleration curve type for this animation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getFillAfter If fillAfter is true, this animation will apply its transformation after the end time of the animation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getFillBefore If fillBefore is true, this animation will apply its transformation before the start time of the animation. |
+| open [Interpolator](Interpolator.md)! | getInterpolator Gets the acceleration curve type for this animation. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getRepeatCount()()` Defines how many times the animation should repeat. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getRepeatMode()()` Defines what this animation should do when it reaches the end. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getShowBackdrop()()` If showBackdrop is `true` and this animation is applied on a window, then the windows in the animation will animate with the background associated with this window behind them. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRepeatCount Defines how many times the animation should repeat. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRepeatMode Defines what this animation should do when it reaches the end. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getShowBackdrop If showBackdrop is `true` and this animation is applied on a window, then the windows in the animation will animate with the background associated with this window behind them. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getStartOffset()()` When this animation should start, relative to StartTime |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getStartTime()()` When this animation should start. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation)(currentTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, outTransformation: https://developer.android.com/reference/kotlin/android/view/animation/Transformation!)` Gets the transformation to apply at a specified point in time. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartOffset When this animation should start, relative to StartTime |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getStartTime When this animation should start. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getTransformation Gets the transformation to apply at a specified point in time. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation,%20kotlin.Float)(currentTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, outTransformation: https://developer.android.com/reference/kotlin/android/view/animation/Transformation!, scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Gets the transformation to apply at a specified point in time. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getZAdjustment()()` Returns the Z ordering mode to use while running the animation as previously set by `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setZAdjustment(kotlin.Int)`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#hasEnded()()` Indicates whether this animation has ended or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | getTransformation Gets the transformation to apply at a specified point in time. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getZAdjustment Returns the Z ordering mode to use while running the animation as previously set by setZAdjustment. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasEnded Indicates whether this animation has ended or not. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#hasStarted()()` Indicates whether this animation has started or not. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#initialize(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentWidth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentHeight: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Initialize this animation with the dimensions of the object being animated as well as the objects parents. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#isFillEnabled()()` If fillEnabled is true, this animation will apply the value of fillBefore. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasStarted Indicates whether this animation has started or not. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | initialize Initialize this animation with the dimensions of the object being animated as well as the objects parents. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFillEnabled If fillEnabled is true, this animation will apply the value of fillBefore. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#isInitialized()()` Whether or not the animation has been initialized. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#reset()()` Reset the initialization state of this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#restrictDuration(kotlin.Long)(durationMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Ensure that the duration that this animation will run is not longer than durationMillis. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInitialized Whether or not the animation has been initialized. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reset Reset the initialization state of this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | restrictDuration Ensure that the duration that this animation will run is not longer than durationMillis. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#scaleCurrentDuration(kotlin.Float)(scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` How much to scale the duration by. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setAnimationListener(android.view.animation.Animation.AnimationListener)(listener: https://developer.android.com/reference/kotlin/android/view/animation/Animation.AnimationListener!)` Binds an animation listener to this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setBackdropColor(kotlin.Int)(backdropColor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the color to use for the backdrop shown behind the animating windows. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | scaleCurrentDuration How much to scale the duration by. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAnimationListener Binds an animation listener to this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBackdropColor Set the color to use for the backdrop shown behind the animating windows. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setBackgroundColor(kotlin.Int)(bg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set background behind animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setDetachWallpaper(kotlin.Boolean)(detachWallpaper: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If detachWallpaper is true, and this is a window animation of a window that has a wallpaper background, then the window will be detached from the wallpaper while it runs. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setDuration(kotlin.Long)(durationMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` How long this animation should last. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBackgroundColor Set background behind animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDetachWallpaper If detachWallpaper is true, and this is a window animation of a window that has a wallpaper background, then the window will be detached from the wallpaper while it runs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDuration How long this animation should last. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillAfter(kotlin.Boolean)(fillAfter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If fillAfter is true, the transformation that this animation performed will persist when it is finished. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillBefore(kotlin.Boolean)(fillBefore: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If fillBefore is true, this animation will apply its transformation before the start time of the animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillEnabled(kotlin.Boolean)(fillEnabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If fillEnabled is true, the animation will apply the value of fillBefore. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFillAfter If fillAfter is true, the transformation that this animation performed will persist when it is finished. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFillBefore If fillBefore is true, this animation will apply its transformation before the start time of the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFillEnabled If fillEnabled is true, the animation will apply the value of fillBefore. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setInterpolator(android.content.Context,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resID: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the acceleration curve for this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setInterpolator(android.view.animation.Interpolator)(i: https://developer.android.com/reference/kotlin/android/view/animation/Interpolator!)` Sets the acceleration curve for this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setRepeatCount(kotlin.Int)(repeatCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets how many times the animation should be repeated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInterpolator Sets the acceleration curve for this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setInterpolator Sets the acceleration curve for this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRepeatCount Sets how many times the animation should be repeated. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setRepeatMode(kotlin.Int)(repeatMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Defines what this animation should do when it reaches the end. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setShowBackdrop(kotlin.Boolean)(showBackdrop: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` If showBackdrop is `true` and this animation is applied on a window, then the windows in the animation will animate with the background associated with this window behind them. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setStartOffset(kotlin.Long)(startOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` When this animation should start relative to the start time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRepeatMode Defines what this animation should do when it reaches the end. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setShowBackdrop If showBackdrop is `true` and this animation is applied on a window, then the windows in the animation will animate with the background associated with this window behind them. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStartOffset When this animation should start relative to the start time. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setStartTime(kotlin.Long)(startTimeMillis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` When this animation should start. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setZAdjustment(kotlin.Int)(zAdjustment: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the Z ordering mode to use while running the animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#start()()` Convenience method to start the animation the first time `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation)` is invoked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setStartTime When this animation should start. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setZAdjustment Set the Z ordering mode to use while running the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | start Convenience method to start the animation the first time getTransformation is invoked. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#startNow()()` Convenience method to start the animation at the current time in milliseconds. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#willChangeBounds()()` Indicates whether or not this animation will affect the bounds of the animated view. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#willChangeTransformationMatrix()()` Indicates whether or not this animation will affect the transformation matrix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | startNow Convenience method to start the animation at the current time in milliseconds. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | willChangeBounds Indicates whether or not this animation will affect the bounds of the animated view. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | willChangeTransformationMatrix Indicates whether or not this animation will affect the transformation matrix. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#applyTransformation(kotlin.Float,%20android.view.animation.Transformation)(interpolatedTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, t: https://developer.android.com/reference/kotlin/android/view/animation/Transformation!)` Helper for getTransformation. |
-| open [Animation](Animation.md) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#clone()()` Creates and returns a copy of this object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#ensureInterpolator()()` Gurantees that this animation has an interpolator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | applyTransformation Helper for getTransformation. |
+| open [Animation](Animation.md) | clone Creates and returns a copy of this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | ensureInterpolator Gurantees that this animation has an interpolator. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getScaleFactor()()` The scale factor is set by the call to `getTransformation`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#resolveSize(kotlin.Int,%20kotlin.Float,%20kotlin.Int,%20kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, parentSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Convert the information in the description of a size to an actual dimension |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | finalize Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getScaleFactor The scale factor is set by the call to `getTransformation`. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | resolveSize Convert the information in the description of a size to an actual dimension |
 | --- | --- |
 
 ## Constants
@@ -202,7 +202,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val START_ON_FIRST_FRAME: Int
 ```
 
-Can be used as the start time to indicate the start time should be the current time when `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation)` is invoked for the first animation frame. This can is useful for short animations.
+Can be used as the start time to indicate the start time should be the current time when getTransformation is invoked for the first animation frame. This can is useful for short animations.
 
  Value: -1
 
@@ -281,12 +281,12 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun cancel(): Unit
 ```
 
-Cancel the animation. Cancelling an animation invokes the animation listener, if set, to notify the end of the animation. If you cancel an animation manually, you must call `https://developer.android.com/reference/kotlin/android/view/animation/Animation#reset()` before starting the animation again.
+Cancel the animation. Cancelling an animation invokes the animation listener, if set, to notify the end of the animation. If you cancel an animation manually, you must call reset before starting the animation again.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#reset()`
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#start()`
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#startNow()`
+- reset
+- start
+- startNow
 
 ### computeDurationHint
 
@@ -306,7 +306,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun getBackdropColor(): Int
 ```
 
-Returns the background color to show behind the animating windows. Will only show the background if showBackdrop was set to true. See `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setShowBackdrop(kotlin.Boolean)`.
+Returns the background color to show behind the animating windows. Will only show the background if showBackdrop was set to true. See setShowBackdrop.
 
 | Return ||
 |---|---|
@@ -326,7 +326,7 @@ open fun getBackgroundColor(): Int
 Returns the background color behind the animation.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getBackdropColor()`
+- getBackdropColor
 
 ### getDetachWallpaper
 
@@ -339,7 +339,7 @@ open fun getDetachWallpaper(): Boolean
 
 **Deprecated:** *All window animations are running with detached wallpaper.*
 
-Return value of `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setDetachWallpaper(kotlin.Boolean)`.
+Return value of setDetachWallpaper.
 
 ### getDuration
 
@@ -377,7 +377,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getFillBefore(): Boolean
 ```
 
-If fillBefore is true, this animation will apply its transformation before the start time of the animation. If fillBefore is false and `https://developer.android.com/reference/kotlin/android/view/animation/Animation#isFillEnabled()` is true, the transformation will not be applied until the start time of the animation.
+If fillBefore is true, this animation will apply its transformation before the start time of the animation. If fillBefore is false and isFillEnabled is true, the transformation will not be applied until the start time of the animation.
 
 | Return ||
 |---|---|
@@ -395,7 +395,7 @@ Gets the acceleration curve type for this animation.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/animation/Interpolator!` | the `https://developer.android.com/reference/kotlin/android/view/animation/Interpolator` associated to this animation |
+| `https://developer.android.com/reference/kotlin/android/view/animation/Interpolator!` | the Interpolator associated to this animation |
 
 ### getRepeatCount
 
@@ -522,7 +522,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getZAdjustment(): Int
 ```
 
-Returns the Z ordering mode to use while running the animation as previously set by `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setZAdjustment(kotlin.Int)`.
+Returns the Z ordering mode to use while running the animation as previously set by setZAdjustment.
 
 | Return ||
 |---|---|
@@ -611,7 +611,7 @@ Whether or not the animation has been initialized.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#initialize(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- initialize
 
 ### reset
 
@@ -624,7 +624,7 @@ open fun reset(): Unit
 Reset the initialization state of this animation.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#initialize(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- initialize
 
 ### restrictDuration
 
@@ -676,7 +676,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun setBackdropColor(backdropColor: Int): Unit
 ```
 
-Set the color to use for the backdrop shown behind the animating windows. Will only show the backdrop if showBackdrop was set to true. See `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setShowBackdrop(kotlin.Boolean)`.
+Set the color to use for the backdrop shown behind the animating windows. Will only show the backdrop if showBackdrop was set to true. See setShowBackdrop.
 
 | Parameters ||
 |---|---|
@@ -701,7 +701,7 @@ Set background behind animation.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setBackdropColor(kotlin.Int)`
+- setBackdropColor
 
 ### setDetachWallpaper
 
@@ -746,7 +746,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setFillAfter(fillAfter: Boolean): Unit
 ```
 
-If fillAfter is true, the transformation that this animation performed will persist when it is finished. Defaults to false if not set. Note that this applies to individual animations and when using an `https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet` to chain animations.
+If fillAfter is true, the transformation that this animation performed will persist when it is finished. Defaults to false if not set. Note that this applies to individual animations and when using an AnimationSet to chain animations.
 
 | Parameters ||
 |---|---|
@@ -754,7 +754,7 @@ If fillAfter is true, the transformation that this animation performed will pers
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillEnabled(kotlin.Boolean)`
+- setFillEnabled
 
 ### setFillBefore
 
@@ -764,7 +764,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setFillBefore(fillBefore: Boolean): Unit
 ```
 
-If fillBefore is true, this animation will apply its transformation before the start time of the animation. Defaults to true if `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillEnabled(kotlin.Boolean)` is not set to true. Note that this applies when using an `https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet` to chain animations. The transformation is not applied before the AnimationSet itself starts.
+If fillBefore is true, this animation will apply its transformation before the start time of the animation. Defaults to true if setFillEnabled is not set to true. Note that this applies when using an AnimationSet to chain animations. The transformation is not applied before the AnimationSet itself starts.
 
 | Parameters ||
 |---|---|
@@ -772,7 +772,7 @@ If fillBefore is true, this animation will apply its transformation before the s
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillEnabled(kotlin.Boolean)`
+- setFillEnabled
 
 ### setFillEnabled
 
@@ -790,8 +790,8 @@ If fillEnabled is true, the animation will apply the value of fillBefore. Otherw
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillBefore(kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/view/animation/Animation#setFillAfter(kotlin.Boolean)`
+- setFillBefore
+- setFillAfter
 
 ### setInterpolator
 
@@ -875,7 +875,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setStartOffset(startOffset: Long): Unit
 ```
 
-When this animation should start relative to the start time. This is most useful when composing complex animations using an `https://developer.android.com/reference/kotlin/android/view/animation/AnimationSet` where some of the animations components start at different times.
+When this animation should start relative to the start time. This is most useful when composing complex animations using an AnimationSet where some of the animations components start at different times.
 
 | Parameters ||
 |---|---|
@@ -889,7 +889,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setStartTime(startTimeMillis: Long): Unit
 ```
 
-When this animation should start. When the start time is set to `https://developer.android.com/reference/kotlin/android/view/animation/Animation#START_ON_FIRST_FRAME:kotlin.Int`, the animation will start the first time `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation)` is invoked. The time passed to this method should be obtained by calling `https://developer.android.com/reference/kotlin/android/view/animation/AnimationUtils#currentAnimationTimeMillis()` instead of `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+When this animation should start. When the start time is set to `https://developer.android.com/reference/kotlin/android/view/animation/Animation#START_ON_FIRST_FRAME:kotlin.Int`, the animation will start the first time getTransformation is invoked. The time passed to this method should be obtained by calling currentAnimationTimeMillis instead of currentTimeMillis.
 
 | Parameters ||
 |---|---|
@@ -917,7 +917,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun start(): Unit
 ```
 
-Convenience method to start the animation the first time `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation)` is invoked.
+Convenience method to start the animation the first time getTransformation is invoked.
 
 ### startNow
 
@@ -1010,7 +1010,7 @@ By convention, the object returned by this method should be independent of this 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/animation/Animation#` | a clone of this instance. |
+| Animation | a clone of this instance. |
 
 | Exceptions ||
 |---|---|
@@ -1060,11 +1060,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 protected open fun getScaleFactor(): Float
 ```
 
-The scale factor is set by the call to `getTransformation`. Overrides of `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getTransformation(kotlin.Long,%20android.view.animation.Transformation,%20kotlin.Float)` will get this value directly. Overrides of `https://developer.android.com/reference/kotlin/android/view/animation/Animation#applyTransformation(kotlin.Float,%20android.view.animation.Transformation)` can call this method to get the value.
+The scale factor is set by the call to `getTransformation`. Overrides of getTransformation will get this value directly. Overrides of applyTransformation can call this method to get the value.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` | float The scale factor that should be applied to pre-scaled values in an Animation such as the pivot points in `https://developer.android.com/reference/kotlin/android/view/animation/ScaleAnimation` and `https://developer.android.com/reference/kotlin/android/view/animation/RotateAnimation`. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html` | float The scale factor that should be applied to pre-scaled values in an Animation such as the pivot points in ScaleAnimation and RotateAnimation. |
 
 ### resolveSize
 

@@ -14,7 +14,7 @@ Represents a function that accepts an `int`-valued argument and an object-valued
 
 | Public methods ||
 |---|---|
-| abstract R | `https://developer.android.com/reference/kotlin/android/util/function/IntObjFunction#apply(kotlin.Int,%20android.util.function.IntObjFunction.T)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: T)` Performs this operation on the given arguments. |
+| abstract R | apply Performs this operation on the given arguments. |
 
 ## Public methods
 

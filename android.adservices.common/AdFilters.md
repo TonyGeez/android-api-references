@@ -19,29 +19,29 @@ class AdFilters : Parcelable
 
 A container class for filters which are associated with an ad.
 
-If any of the filters in an `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` instance are not satisfied, the associated ad will not be eligible for ad selection. Filters are optional ad parameters and are not required as part of `https://developer.android.com/reference/kotlin/android/adservices/common/AdData`.
+If any of the filters in an AdFilters instance are not satisfied, the associated ad will not be eligible for ad selection. Filters are optional ad parameters and are not required as part of AdData.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters.Builder` Builder for creating `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters.Builder` Builder for creating AdFilters objects. |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` objects represent the same set of filters. |
-| [AppInstallFilters](AppInstallFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getAppInstallFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters` instance that represents all app install filters for the ad. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Checks whether the AdFilters objects represent the same set of filters. |
+| [AppInstallFilters](AppInstallFilters.md)? | getAppInstallFilters Gets the AppInstallFilters instance that represents all app install filters for the ad. |
 | --- | --- |
-| [FrequencyCapFilters](FrequencyCapFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getFrequencyCapFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters` instance that represents all frequency cap filters for the ad. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` object's data. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#toString()()` Returns a string representation of the object. |
+| [FrequencyCapFilters](FrequencyCapFilters.md)? | getFrequencyCapFilters Gets the FrequencyCapFilters instance that represents all frequency cap filters for the ad. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hash of the AdFilters object's data. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -60,7 +60,7 @@ fun describeContents(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -77,7 +77,7 @@ fun equals(other: Any?): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` objects represent the same set of filters.
+Checks whether the AdFilters objects represent the same set of filters.
 
 | Parameters ||
 |---|---|
@@ -99,7 +99,7 @@ fun getAppInstallFilters(): AppInstallFilters?
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters` instance that represents all app install filters for the ad.
+Gets the AppInstallFilters instance that represents all app install filters for the ad.
 
 If `null`, there are no app install filters which apply to the ad.
 
@@ -115,7 +115,7 @@ fun getFrequencyCapFilters(): FrequencyCapFilters?
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters` instance that represents all frequency cap filters for the ad.
+Gets the FrequencyCapFilters instance that represents all frequency cap filters for the ad.
 
 If `null`, there are no frequency cap filters which apply to the ad.
 
@@ -130,7 +130,7 @@ fun hashCode(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` object's data.
+Returns the hash of the AdFilters object's data.
 
 | Return ||
 |---|---|

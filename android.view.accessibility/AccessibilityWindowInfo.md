@@ -28,64 +28,64 @@ This class represents a state snapshot of a window for accessibility purposes. T
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#AccessibilityWindowInfo()()` Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#`. |
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#AccessibilityWindowInfo(android.view.accessibility.AccessibilityWindowInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#)` Copy constructor. |
+| AccessibilityWindowInfo Creates a new AccessibilityWindowInfo. |
+| AccessibilityWindowInfo Copy constructor. |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getAnchor()()` Gets the node that anchors this window to another. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getAnchor Gets the node that anchors this window to another. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getBoundsInScreen(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Gets the bounds of this window in the screen. |
-| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getChild(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the child window at a given index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getChildCount()()` Gets the number of child windows. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getBoundsInScreen Gets the bounds of this window in the screen. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | getChild Gets the child window at a given index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getChildCount Gets the number of child windows. |
 | --- | --- |
-| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindow(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the controlled window at the given index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindowsCount()()` Gets the number of windows which are controlled by this window, if there are any. |
-| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControllingWindow()()` Gets the system window which has the functionality to control this window. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)? | getControlledWindow Gets the controlled window at the given index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getControlledWindowsCount Gets the number of windows which are controlled by this window, if there are any. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)? | getControllingWindow Gets the system window which has the functionality to control this window. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getDisplayId()()` Returns the ID of the display this window is on, for use with `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getId()()` Gets the unique window id. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getLayer()()` Gets the layer which determines the Z-order of the window. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getDisplayId Returns the ID of the display this window is on, for use with getDisplay. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getId Gets the unique window id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLayer Gets the layer which determines the Z-order of the window. |
 | --- | --- |
-| [LocaleList](../android.os/LocaleList.md) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getLocales()()` Return the `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the window. |
-| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getParent()()` Gets the parent window. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRegionInScreen(android.graphics.Region)(outRegion: https://developer.android.com/reference/kotlin/android/graphics/Region.html#)` Gets the touchable region of this window in the screen. |
+| [LocaleList](../android.os/LocaleList.md) | getLocales Return the `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the window. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | getParent Gets the parent window. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | getRegionInScreen Gets the touchable region of this window in the screen. |
 | --- | --- |
-| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot()()` Gets the root node in the window's hierarchy. |
-| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot(kotlin.Int)(prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the root node in the window's hierarchy. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getTitle()()` Gets the title of the window. |
+| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | getRoot Gets the root node in the window's hierarchy. |
+| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | getRoot Gets the root node in the window's hierarchy. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTitle Gets the title of the window. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getTransitionTimeMillis()()` Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` at which the last transition happens. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getType()()` Gets the type of the window. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#hashCode()()` Returns a hash code value for the object. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTransitionTimeMillis Return the uptimeMillis at which the last transition happens. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getType Gets the type of the window. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#isAccessibilityFocused()()` Gets if this window has accessibility focus. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#isActive()()` Gets if this window is active. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#isFocused()()` Gets if this window has input focus. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isAccessibilityFocused Gets if this window has accessibility focus. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isActive Gets if this window is active. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isFocused Gets if this window has input focus. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#isInPictureInPictureMode()()` Check if the window is in picture-in-picture mode. |
-| static [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#obtain()()` Returns a cached instance if such is available or a new one is created. |
-| static [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#obtain(android.view.accessibility.AccessibilityWindowInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#!)` Returns a cached instance if such is available or a new one is created. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isInPictureInPictureMode Check if the window is in picture-in-picture mode. |
+| static [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | obtain Returns a cached instance if such is available or a new one is created. |
+| static [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | obtain Returns a cached instance if such is available or a new one is created. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#recycle()()` Return an instance back to be reused. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#refresh()()` Refreshes this window with the latest state of the window it represents. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#toString()()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | recycle Return an instance back to be reused. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | refresh Refreshes this window with the latest state of the window it represents. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -175,7 +175,7 @@ static val TYPE_WINDOW_CONTROL: Int
 
 Window type: A system window that has the function to control an associated window.
 
-Window associations can be determined using `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControllingWindow()`, `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindowsCount()` and `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindow(kotlin.Int)`.
+Window associations can be determined using getControllingWindow, getControlledWindowsCount and getControlledWindow.
 
  Value: 7
 
@@ -189,7 +189,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityWindowInfo()
 ```
 
-Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#`.
+Creates a new AccessibilityWindowInfo.
 
 ### AccessibilityWindowInfo
 
@@ -199,7 +199,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 AccessibilityWindowInfo(info: AccessibilityWindowInfo)
 ```
 
-Copy constructor. Creates a new `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#`, and this new instance is initialized from given `info`.
+Copy constructor. Creates a new AccessibilityWindowInfo, and this new instance is initialized from given `info`.
 
 | Parameters ||
 |---|---|
@@ -215,7 +215,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -271,7 +271,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getBoundsInScreen(outBounds: Rect!): Unit
 ```
 
-Gets the bounds of this window in the screen. This is equivalent to get the bounds of the Region from `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRegionInScreen(android.graphics.Region)`.
+Gets the bounds of this window in the screen. This is equivalent to get the bounds of the Region from getRegionInScreen.
 
 | Parameters ||
 |---|---|
@@ -327,7 +327,7 @@ Clients should not depend on the order of the controlled windows. If the control
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#?` | The `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#` controlled by this window at the given `index`, or `null` if the connection is invalid or the window is no longer available. |
+| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#?` | The AccessibilityWindowInfo controlled by this window at the given `index`, or `null` if the connection is invalid or the window is no longer available. |
 
 | Exceptions ||
 |---|---|
@@ -347,7 +347,7 @@ The returned list will not include children of the top level controlled windows.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The count of `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#` controlled by this window, or 0 if this window does not control other windows. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The count of AccessibilityWindowInfo controlled by this window, or 0 if this window does not control other windows. |
 
 ### getControllingWindow
 
@@ -373,7 +373,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getDisplayId(): Int
 ```
 
-Returns the ID of the display this window is on, for use with `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)`.
+Returns the ID of the display this window is on, for use with getDisplay.
 
 | Return ||
 |---|---|
@@ -459,7 +459,7 @@ fun getRoot(): AccessibilityNodeInfo!
 
 Gets the root node in the window's hierarchy.
 
-Returns `null` if connection is invalid. Otherwise, always returns a node, even if the root is considered unimportant for accessibility. In this case, calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isImportantForAccessibility()` on the returned node will return `false`.
+Returns `null` if connection is invalid. Otherwise, always returns a node, even if the root is considered unimportant for accessibility. In this case, calling isImportantForAccessibility on the returned node will return `false`.
 
 | Return ||
 |---|---|
@@ -475,7 +475,7 @@ fun getRoot(prefetchingStrategy: Int): AccessibilityNodeInfo?
 
 Gets the root node in the window's hierarchy.
 
-Returns `null` if connection is invalid. Otherwise, always returns a node, even if the root is considered unimportant for accessibility. In this case, calling `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#isImportantForAccessibility()` on the returned node will return `false`.
+Returns `null` if connection is invalid. Otherwise, always returns a node, even if the root is considered unimportant for accessibility. In this case, calling isImportantForAccessibility on the returned node will return `false`.
 
 | Parameters ||
 |---|---|
@@ -483,11 +483,11 @@ Returns `null` if connection is invalid. Otherwise, always returns a node, even 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo?` | The root node. |
+| AccessibilityNodeInfo | The root node. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getParent(kotlin.Int)`
+- getParent
 
 ### getTitle
 
@@ -513,12 +513,12 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getTransitionTimeMillis(): Long
 ```
 
-Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` at which the last transition happens. A transition happens when `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getBoundsInScreen(android.graphics.Rect)` is changed. 
-Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base.
+Return the uptimeMillis at which the last transition happens. A transition happens when getBoundsInScreen is changed. 
+Value is a non-negative timestamp in the uptimeMillis time base.
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The transition timestamp. Value is a non-negative timestamp in the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` time base. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html` | The transition timestamp. Value is a non-negative timestamp in the uptimeMillis time base. |
 
 ### getType
 
@@ -554,8 +554,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -629,7 +629,7 @@ static fun obtain(): AccessibilityWindowInfo!
 
 Returns a cached instance if such is available or a new one is created.
 
-In most situations object pooling is not beneficial. Create a new instance using the constructor `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#AccessibilityWindowInfo()` instead.
+In most situations object pooling is not beneficial. Create a new instance using the constructor AccessibilityWindowInfo instead.
 
 | Return ||
 |---|---|
@@ -645,7 +645,7 @@ static fun obtain(info: AccessibilityWindowInfo!): AccessibilityWindowInfo!
 
 Returns a cached instance if such is available or a new one is created. The returned instance is initialized from the given `info`.
 
-In most situations object pooling is not beneficial. Create a new instance using the constructor `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#AccessibilityWindowInfo(android.view.accessibility.AccessibilityWindowInfo)` instead.
+In most situations object pooling is not beneficial. Create a new instance using the constructor AccessibilityWindowInfo instead.
 
 | Parameters ||
 |---|---|

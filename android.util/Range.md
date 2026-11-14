@@ -25,28 +25,28 @@ Although the implementation itself is immutable, there is no restriction that ob
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/util/Range#Range(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Create a new immutable range. |
+| Range Create a new immutable range. |
 
 | Public methods ||
 |---|---|
-| T | `https://developer.android.com/reference/kotlin/android/util/Range#clamp(android.util.Range.T)(value: T)` Clamps `value` to this range. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#contains(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Checks if another `range` is within the bounds of this range. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#contains(android.util.Range.T)(value: T)` Checks if the `value` is within the bounds of this range. |
+| T | clamp Clamps `value` to this range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contains Checks if another `range` is within the bounds of this range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | contains Checks if the `value` is within the bounds of this range. |
 | --- | --- |
-| static [Range](Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#create(android.util.Range.create.T,%20android.util.Range.create.T)(lower: T, upper: T)` Create a new immutable range, with the argument types inferred. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare two ranges for equality. |
-| [Range](Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Returns the smallest range that includes this range and another `range`. |
+| static [Range](Range.md)\<T\>! | create Create a new immutable range, with the argument types inferred. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compare two ranges for equality. |
+| [Range](Range.md)\<T\>! | extend Returns the smallest range that includes this range and another `range`. |
 | --- | --- |
-| [Range](Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range.T)(value: T)` Returns the smallest range that includes this range and the `value`. |
-| [Range](Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Returns the smallest range that includes this range and the inclusive range specified by `[lower, upper]`. |
-| T | `https://developer.android.com/reference/kotlin/android/util/Range#getLower()()` Get the lower endpoint. |
+| [Range](Range.md)\<T\>! | extend Returns the smallest range that includes this range and the `value`. |
+| [Range](Range.md)\<T\>! | extend Returns the smallest range that includes this range and the inclusive range specified by `[lower, upper]`. |
+| T | getLower Get the lower endpoint. |
 | --- | --- |
-| T | `https://developer.android.com/reference/kotlin/android/util/Range#getUpper()()` Get the upper endpoint. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#hashCode()()` Returns a hash code value for the object. |
-| [Range](Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range)(range: https://developer.android.com/reference/kotlin/android/util/Range#<T>!)` Returns the intersection of this range and another `range`. |
+| T | getUpper Get the upper endpoint. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Range](Range.md)\<T\>! | intersect Returns the intersection of this range and another `range`. |
 | --- | --- |
-| [Range](Range.md)\<T\>! | `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range.T,%20android.util.Range.T)(lower: T, upper: T)` Returns the intersection of this range and the inclusive range specified by `[lower, upper]`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Range#toString()()` Return the range as a string representation `"[lower, upper]"`. |
+| [Range](Range.md)\<T\>! | intersect Returns the intersection of this range and the inclusive range specified by `[lower, upper]`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Return the range as a string representation `"[lower, upper]"`. |
 
 ## Public constructors
 
@@ -62,7 +62,7 @@ Range(
 
 Create a new immutable range.
 
-The endpoints are `[lower, upper]`; that is the range is bounded. `lower` must be `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#compareTo(java.lang.Comparable.T)` to `upper`.
+The endpoints are `[lower, upper]`; that is the range is bounded. `lower` must be compareTo to `upper`.
 
 | Parameters ||
 |---|---|
@@ -156,7 +156,7 @@ static fun <T : Comparable<T>!> create(
 
 Create a new immutable range, with the argument types inferred.
 
-The endpoints are `[lower, upper]`; that is the range is bounded. `lower` must be `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#compareTo(java.lang.Comparable.T)` to `upper`.
+The endpoints are `[lower, upper]`; that is the range is bounded. `lower` must be compareTo to `upper`.
 
 | Parameters ||
 |---|---|
@@ -223,7 +223,7 @@ fun extend(value: T): Range<T>!
 
 Returns the smallest range that includes this range and the `value`.
 
-See `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range)` for more details, as this method is equivalent to `extend(Range.create(value, value))`.
+See extend for more details, as this method is equivalent to `extend(Range.create(value, value))`.
 
 | Parameters ||
 |---|---|
@@ -250,7 +250,7 @@ fun extend(
 
 Returns the smallest range that includes this range and the inclusive range specified by `[lower, upper]`.
 
-See `https://developer.android.com/reference/kotlin/android/util/Range#extend(android.util.Range)` for more details.
+See extend for more details.
 
 | Parameters ||
 |---|---|
@@ -306,8 +306,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -353,7 +353,7 @@ fun intersect(
 
 Returns the intersection of this range and the inclusive range specified by `[lower, upper]`.
 
-See `https://developer.android.com/reference/kotlin/android/util/Range#intersect(android.util.Range)` for more details.
+See intersect for more details.
 
 | Parameters ||
 |---|---|

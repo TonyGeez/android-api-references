@@ -12,7 +12,7 @@ class NfcAdapter
 
 Represents the local NFC adapter.
 
-Use the helper `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#getDefaultAdapter(android.content.Context)` to get the default NFC adapter for this Android device.
+Use the helper getDefaultAdapter to get the default NFC adapter for this Android device.
 
 > [!NOTE]
 >
@@ -28,7 +28,7 @@ Use the helper `https://developer.android.com/reference/kotlin/android/nfc/NfcAd
 |---|---|
 | abstract | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.CreateBeamUrisCallback` <br /> |
 | abstract | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.CreateNdefMessageCallback` A callback to be invoked when another NFC device capable of NDEF push (Android Beam) is within range. |
-| abstract | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnNdefPushCompleteCallback` A callback to be invoked when the system successfully delivers your `https://developer.android.com/reference/kotlin/android/nfc/NdefMessage` to another device. |
+| abstract | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnNdefPushCompleteCallback` A callback to be invoked when the system successfully delivers your NdefMessage to another device. |
 | --- | --- |
 | abstract | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnTagRemovedListener` A callback that is invoked when a tag is removed from the field. |
 | abstract | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.ReaderCallback` A callback to be invoked when the system finds a tag while the foreground activity is operating in reader mode. |
@@ -49,33 +49,33 @@ Use the helper `https://developer.android.com/reference/kotlin/android/nfc/NfcAd
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_DATA:kotlin.String` Optional byte\[\] extra field in `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TRANSACTION_DETECTED:kotlin.String` |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_ID:kotlin.String` Optional extra containing a byte array containing the ID of the discovered tag for the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intents. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_NDEF_MESSAGES:kotlin.String` Extra containing an array of `https://developer.android.com/reference/kotlin/android/nfc/NdefMessage` present on the discovered tag. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_NDEF_MESSAGES:kotlin.String` Extra containing an array of NdefMessage present on the discovered tag. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_PREFERRED_PAYMENT_CHANGED_REASON:kotlin.String` Mandatory String extra field in `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_PREFERRED_PAYMENT_CHANGED:kotlin.String` Indicates the condition when trigger this event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_PRESENCE_CHECK_DELAY:kotlin.String` Int Extra for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION:kotlin.String` Key to specify an NFC-A polling loop annotation (as a byte array) in the extras Bundle when calling `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_PRESENCE_CHECK_DELAY:kotlin.String` Int Extra for use with enableReaderMode. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION:kotlin.String` Key to specify an NFC-A polling loop annotation (as a byte array) in the extras Bundle when calling enableReaderMode. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_SECURE_ELEMENT_NAME:kotlin.String` Mandatory String extra field in `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TRANSACTION_DETECTED:kotlin.String` Indicates the Secure Element on which the transaction occurred. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_TAG:kotlin.String` Mandatory extra containing the `https://developer.android.com/reference/kotlin/android/nfc/Tag` that was discovered for the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intents. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_DISABLE:kotlin.Int` Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_TAG:kotlin.String` Mandatory extra containing the Tag that was discovered for the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intents. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_DISABLE:kotlin.Int` Flags for use with setDiscoveryTechnology. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_KEEP:kotlin.Int` Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_NFC_PASSIVE_A:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_NFC_PASSIVE_B:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_KEEP:kotlin.Int` Flags for use with setDiscoveryTechnology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_NFC_PASSIVE_A:kotlin.Int` Flag for use with setDiscoveryTechnology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_NFC_PASSIVE_B:kotlin.Int` Flag for use with setDiscoveryTechnology. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_NFC_PASSIVE_F:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_DISABLE:kotlin.Int` Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_KEEP:kotlin.Int` Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_NFC_PASSIVE_F:kotlin.Int` Flag for use with setDiscoveryTechnology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_DISABLE:kotlin.Int` Flags for use with setDiscoveryTechnology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_KEEP:kotlin.Int` Flags for use with setDiscoveryTechnology. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_A:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_B:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_BARCODE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_A:kotlin.Int` Flag for use with enableReaderMode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_B:kotlin.Int` Flag for use with enableReaderMode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_BARCODE:kotlin.Int` Flag for use with enableReaderMode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_F:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_V:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NO_PLATFORM_SOUNDS:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_F:kotlin.Int` Flag for use with enableReaderMode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_V:kotlin.Int` Flag for use with enableReaderMode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NO_PLATFORM_SOUNDS:kotlin.Int` Flag for use with enableReaderMode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_SKIP_NDEF_CHECK:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_SKIP_NDEF_CHECK:kotlin.Int` Flag for use with enableReaderMode. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#PREFERRED_PAYMENT_CHANGED:kotlin.Int` User selected another payment application as the preferred payment. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#PREFERRED_PAYMENT_LOADED:kotlin.Int` Nfc is enabled and the preferred payment aids are registered. |
 | --- | --- |
@@ -88,43 +88,43 @@ Use the helper `https://developer.android.com/reference/kotlin/android/nfc/NfcAd
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#allowOneTransaction()()` Temporarily disables observe mode to allow a single Host Card Emulation (HCE) transaction to proceed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disable()()` Disable NFC hardware. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disableForegroundDispatch(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!)` Disable foreground dispatch to the given activity. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | allowOneTransaction Temporarily disables observe mode to allow a single Host Card Emulation (HCE) transaction to proceed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | disable Disable NFC hardware. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disableForegroundDispatch Disable foreground dispatch to the given activity. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disableReaderMode(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!)` Restore the NFC adapter to normal mode of operation: supporting peer-to-peer (Android Beam), card emulation, and polling for all supported tag technologies. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enable()()` Enable NFC hardware. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableForegroundDispatch(android.app.Activity,%20android.app.PendingIntent,%20kotlin.Array,%20kotlin.Array)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, intent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!, filters: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!>!, techLists: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!>!)` Enable foreground dispatch to the given Activity. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | disableReaderMode Restore the NFC adapter to normal mode of operation: supporting peer-to-peer (Android Beam), card emulation, and polling for all supported tag technologies. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | enable Enable NFC hardware. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enableForegroundDispatch Enable foreground dispatch to the given Activity. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.ReaderCallback!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Limit the NFC controller to reader mode while this Activity is in the foreground. |
-| static [NfcAdapter](NfcAdapter.md)! | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#getDefaultAdapter(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Helper to get the default NFC Adapter. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#getGestureExchangeAid()()` Get the AID for Tap to Share functionality. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | enableReaderMode Limit the NFC controller to reader mode while this Activity is in the foreground. |
+| static [NfcAdapter](NfcAdapter.md)! | getDefaultAdapter Helper to get the default NFC Adapter. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getGestureExchangeAid Get the AID for Tap to Share functionality. |
 | --- | --- |
-| [NfcAntennaInfo](NfcAntennaInfo.md)? | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#getNfcAntennaInfo()()` Returns information regarding Nfc antennas on the device such as their relative positioning on the device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ignore(android.nfc.Tag,%20kotlin.Int,%20android.nfc.NfcAdapter.OnTagRemovedListener,%20android.os.Handler)(tag: https://developer.android.com/reference/kotlin/android/nfc/Tag!, debounceMs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, tagRemovedListener: https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.OnTagRemovedListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Signals that you are no longer interested in communicating with an NFC tag for as long as it remains in range. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isEnabled()()` Return true if this NFC Adapter has any features enabled. |
+| [NfcAntennaInfo](NfcAntennaInfo.md)? | getNfcAntennaInfo Returns information regarding Nfc antennas on the device such as their relative positioning on the device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | ignore Signals that you are no longer interested in communicating with an NFC tag for as long as it remains in range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEnabled Return true if this NFC Adapter has any features enabled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isExitFramesSupported()()` Returns whether the device supports exit frames or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isObserveModeEnabled()()` Returns whether Observe Mode is currently enabled or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isObserveModeSupported()()` Returns whether the device supports observe mode or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isExitFramesSupported Returns whether the device supports exit frames or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isObserveModeEnabled Returns whether Observe Mode is currently enabled or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isObserveModeSupported Returns whether the device supports observe mode or not. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isPowerSavingModeEnabled()()` Returns whether power-saving mode is currently enabled or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isPowerSavingModeSupported()()` Returns whether the device supports power-saving mode or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isReaderModeAnnotationSupported()()` Returns whether the device supports setting annotation frames when enabling reader mode by passing an extras bundle that includes a `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION:kotlin.String` key to `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPowerSavingModeEnabled Returns whether power-saving mode is currently enabled or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isPowerSavingModeSupported Returns whether the device supports power-saving mode or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isReaderModeAnnotationSupported Returns whether the device supports setting annotation frames when enabling reader mode by passing an extras bundle that includes a `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION:kotlin.String` key to enableReaderMode. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isReaderOptionEnabled()()` Checks NFC Reader option feature is enabled. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isReaderOptionSupported()()` Checks if the device supports NFC Reader option functionality. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isSecureNfcEnabled()()` Checks Secure NFC feature is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isReaderOptionEnabled Checks NFC Reader option feature is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isReaderOptionSupported Checks if the device supports NFC Reader option functionality. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSecureNfcEnabled Checks Secure NFC feature is enabled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isSecureNfcSupported()()` Checks if the device supports Secure NFC functionality. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isTagIntentAllowed()()` Checks whether the user has disabled the calling app from receiving NFC tag intents. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isTagIntentAppPreferenceSupported()()` Checks if the device supports Tag Intent App Preference functionality. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSecureNfcSupported Checks if the device supports Secure NFC functionality. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTagIntentAllowed Checks whether the user has disabled the calling app from receiving NFC tag intents. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isTagIntentAppPreferenceSupported Checks if the device supports Tag Intent App Preference functionality. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#resetDiscoveryTechnology(android.app.Activity)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#?)` Restore the poll/listen technologies of NFC controller to its default state, which were changed by `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)` |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)(activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#?, pollTechnology: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, listenTechnology: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the NFC controller to enable specific poll/listen technologies, as specified in parameters, while this Activity is in the foreground. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setObserveModeEnabled(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls whether the NFC adapter will allow transactions to proceed or be in observe mode and simply observe and notify the APDU service of polling loop frames. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | resetDiscoveryTechnology Restore the poll/listen technologies of NFC controller to its default state, which were changed by setDiscoveryTechnology |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDiscoveryTechnology Set the NFC controller to enable specific poll/listen technologies, as specified in parameters, while this Activity is in the foreground. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | setObserveModeEnabled Controls whether the NFC adapter will allow transactions to proceed or be in observe mode and simply observe and notify the APDU service of polling loop frames. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setPowerSavingMode(kotlin.Boolean)(enabled: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets whether or not the NFC chip should be in power-saving mode next time it is disabled with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disable()`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPowerSavingMode Sets whether or not the NFC chip should be in power-saving mode next time it is disabled with disable. |
 
 ## Constants
 
@@ -168,7 +168,7 @@ static val ACTION_NDEF_DISCOVERED: String
 
 Intent to start an activity when a tag with NDEF payload is discovered.
 
-The system inspects the first `https://developer.android.com/reference/kotlin/android/nfc/NdefRecord` in the first `https://developer.android.com/reference/kotlin/android/nfc/NdefMessage` and looks for a URI, SmartPoster, or MIME record. If a URI or SmartPoster record is found the intent will contain the URI in its data field. If a MIME record is found the intent will contain the MIME type in its type field. This allows activities to register `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#`s targeting specific content on tags. Activities should register the most specific intent filters possible to avoid the activity chooser dialog, which can disrupt the interaction with the tag as the user interacts with the screen.
+The system inspects the first NdefRecord in the first NdefMessage and looks for a URI, SmartPoster, or MIME record. If a URI or SmartPoster record is found the intent will contain the URI in its data field. If a MIME record is found the intent will contain the MIME type in its type field. This allows activities to register `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#`s targeting specific content on tags. Activities should register the most specific intent filters possible to avoid the activity chooser dialog, which can disrupt the interaction with the tag as the user interacts with the screen.
 
 If the tag has an NDEF payload this intent is started before `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`. If any activities respond to this intent neither `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String` or `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` will be started.
 
@@ -239,7 +239,7 @@ To receive this intent an activity must include an intent filter for this action
 
 The meta-data XML file should contain one or more `tech-list` entries each consisting or one or more `tech` entries. The `tech` entries refer to the qualified class name implementing the technology, for example "android.nfc.tech.NfcA".
 
-A tag matches if any of the `tech-list` sets is a subset of `https://developer.android.com/reference/kotlin/android/nfc/Tag#getTechList()`. Each of the `tech-list`s is considered independently and the activity is considered a match is any single `tech-list` matches the tag that was discovered. This provides AND and OR semantics for filtering desired techs. Here is an example that will match any tag using `https://developer.android.com/reference/kotlin/android/nfc/tech/NfcF` or any tag using `https://developer.android.com/reference/kotlin/android/nfc/tech/NfcA`, `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic`, and `https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef`:
+A tag matches if any of the `tech-list` sets is a subset of getTechList. Each of the `tech-list`s is considered independently and the activity is considered a match is any single `tech-list` matches the tag that was discovered. This provides AND and OR semantics for filtering desired techs. Here is an example that will match any tag using NfcF or any tag using NfcA, MifareClassic, and Ndef:
 
 ```kotlin
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -334,11 +334,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_NDEF_MESSAGES: String
 ```
 
-Extra containing an array of `https://developer.android.com/reference/kotlin/android/nfc/NdefMessage` present on the discovered tag.
+Extra containing an array of NdefMessage present on the discovered tag.
 
 This extra is mandatory for `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String` intents, and optional for `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intents.
 
-When this extra is present there will always be at least one `https://developer.android.com/reference/kotlin/android/nfc/NdefMessage` element. Most NDEF tags have only one NDEF message, but we use an array for future compatibility.
+When this extra is present there will always be at least one NdefMessage element. Most NDEF tags have only one NDEF message, but we use an array for future compatibility.
 
  Value: "android.nfc.extra.NDEF_MESSAGES"
 
@@ -362,7 +362,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_READER_PRESENCE_CHECK_DELAY: String
 ```
 
-Int Extra for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Int Extra for use with enableReaderMode.
 
 Setting this integer extra allows the calling application to specify the delay that the platform will use for performing presence checks on any discovered tag.
 
@@ -376,7 +376,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION: String
 ```
 
-Key to specify an NFC-A polling loop annotation (as a byte array) in the extras Bundle when calling `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. This polling loop annotation will be included as a non-standard polling frame which will be reported to via `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processPollingFrames(kotlin.collections.MutableList)`. If there is no explicit value set by the app, the device will emit the default annotation. Use `new byte[0]` as annotation in the extra to override the default and don't emit any annotation.
+Key to specify an NFC-A polling loop annotation (as a byte array) in the extras Bundle when calling enableReaderMode. This polling loop annotation will be included as a non-standard polling frame which will be reported to via processPollingFrames. If there is no explicit value set by the app, the device will emit the default annotation. Use `new byte[0]` as annotation in the extra to override the default and don't emit any annotation.
 
  Value: "android.nfc.extra.READER_TECH_A_POLLING_LOOP_ANNOTATION"
 
@@ -400,7 +400,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_TAG: String
 ```
 
-Mandatory extra containing the `https://developer.android.com/reference/kotlin/android/nfc/Tag` that was discovered for the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intents.
+Mandatory extra containing the Tag that was discovered for the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String`, `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String`, and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intents.
 
  Value: "android.nfc.extra.TAG"
 
@@ -412,7 +412,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_LISTEN_DISABLE: Int
 ```
 
-Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flags for use with setDiscoveryTechnology.
 
 Setting this flag disables listening.
 
@@ -426,7 +426,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_LISTEN_KEEP: Int
 ```
 
-Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flags for use with setDiscoveryTechnology.
 
 Setting this flag makes listening to be set to the current stored default technology configuration.
 
@@ -440,7 +440,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_LISTEN_NFC_PASSIVE_A: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flag for use with setDiscoveryTechnology.
 
 Setting this flag enables listening for Nfc-A technology.
 
@@ -454,7 +454,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_LISTEN_NFC_PASSIVE_B: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flag for use with setDiscoveryTechnology.
 
 Setting this flag enables listening for Nfc-B technology.
 
@@ -468,7 +468,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_LISTEN_NFC_PASSIVE_F: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flag for use with setDiscoveryTechnology.
 
 Setting this flag enables listening for Nfc-F technology.
 
@@ -482,7 +482,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_DISABLE: Int
 ```
 
-Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flags for use with setDiscoveryTechnology.
 
 Setting this flag disables polling.
 
@@ -496,7 +496,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_KEEP: Int
 ```
 
-Flags for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`.
+Flags for use with setDiscoveryTechnology.
 
 Setting this flag makes polling to be set to the current stored default technology configuration.
 
@@ -510,7 +510,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_NFC_A: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag enables polling for Nfc-A technology.
 
@@ -524,7 +524,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_NFC_B: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag enables polling for Nfc-B technology.
 
@@ -538,7 +538,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_NFC_BARCODE: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag enables polling for NfcBarcode technology.
 
@@ -552,7 +552,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_NFC_F: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag enables polling for Nfc-F technology.
 
@@ -566,7 +566,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_NFC_V: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag enables polling for Nfc-V (ISO15693) technology.
 
@@ -580,7 +580,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_NO_PLATFORM_SOUNDS: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag allows the caller to prevent the platform from playing sounds when it discovers a tag.
 
@@ -594,7 +594,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_READER_SKIP_NDEF_CHECK: Int
 ```
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`.
+Flag for use with enableReaderMode.
 
 Setting this flag allows the caller to prevent the platform from performing an NDEF check on the tags it finds.
 
@@ -719,7 +719,7 @@ fun disableForegroundDispatch(activity: Activity!): Unit
 
 Disable foreground dispatch to the given activity.
 
-After calling `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableForegroundDispatch(android.app.Activity,%20android.app.PendingIntent,%20kotlin.Array,%20kotlin.Array)`, an activity must call this method before its `https://developer.android.com/reference/kotlin/android/app/Activity.html#onPause()` callback completes.
+After calling enableForegroundDispatch, an activity must call this method before its onPause callback completes.
 
 This method must be called from the main thread.
 
@@ -784,13 +784,13 @@ fun enableForegroundDispatch(
 
 Enable foreground dispatch to the given Activity.
 
-This will give priority to the foreground activity when dispatching a discovered `https://developer.android.com/reference/kotlin/android/nfc/Tag` to an application.
+This will give priority to the foreground activity when dispatching a discovered Tag to an application.
 
 If any IntentFilters are provided to this method they are used to match dispatch Intents for both the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_NDEF_DISCOVERED:kotlin.String` and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String`. Since `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TECH_DISCOVERED:kotlin.String` relies on meta data outside of the IntentFilter matching for that dispatch Intent is handled by passing in the tech lists separately. Each first level entry in the tech list represents an array of technologies that must all be present to match. If any of the first level sets match then the dispatch is routed through the given PendingIntent. In other words, the second level is ANDed together and the first level entries are ORed together.
 
 If you pass `null` for both the `filters` and `techLists` parameters that acts a wild card and will cause the foreground activity to receive all tags via the `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#ACTION_TAG_DISCOVERED:kotlin.String` intent.
 
-This method must be called from the main thread, and only when the activity is in the foreground (resumed). Also, activities must call `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disableForegroundDispatch(android.app.Activity)` before the completion of their `https://developer.android.com/reference/kotlin/android/app/Activity.html#onPause()` callback to disable foreground dispatch after it has been enabled.
+This method must be called from the main thread, and only when the activity is in the foreground (resumed). Also, activities must call disableForegroundDispatch before the completion of their onPause callback to disable foreground dispatch after it has been enabled.
 
 Requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#NFC:kotlin.String` permission.
 
@@ -824,7 +824,7 @@ Limit the NFC controller to reader mode while this Activity is in the foreground
 
 In this mode the NFC controller will only act as an NFC tag reader/writer, thus disabling any peer-to-peer (Android Beam) and card-emulation modes of the NFC adapter on this device.
 
-Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_SKIP_NDEF_CHECK:kotlin.Int` to prevent the platform from performing any NDEF checks in reader mode. Note that this will prevent the `https://developer.android.com/reference/kotlin/android/nfc/tech/Ndef` tag technology from being enumerated on the tag, and that NDEF-based tag dispatch will not be functional.
+Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_SKIP_NDEF_CHECK:kotlin.Int` to prevent the platform from performing any NDEF checks in reader mode. Note that this will prevent the Ndef tag technology from being enumerated on the tag, and that NDEF-based tag dispatch will not be functional.
 
 For interacting with tags that are emulated on another Android device using Android's host-based card-emulation, the recommended flags are `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_NFC_A:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_SKIP_NDEF_CHECK:kotlin.Int`.
 
@@ -894,7 +894,7 @@ Returns information regarding Nfc antennas on the device such as their relative 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/nfc/NfcAntennaInfo?` | Information on the nfc antenna(s) on the device. This value may be `null`. |
+| NfcAntennaInfo | Information on the nfc antenna(s) on the device. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -917,7 +917,7 @@ Signals that you are no longer interested in communicating with an NFC tag for a
 
 | Parameters ||
 |---|---|
-| `tag` | [Tag](Tag.md)!: the `https://developer.android.com/reference/kotlin/android/nfc/Tag` to ignore. |
+| `tag` | [Tag](Tag.md)!: the Tag to ignore. |
 | `debounceMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): minimum amount of time the tag needs to be out of range before being dispatched again. |
 | `tagRemovedListener` | [NfcAdapter.OnTagRemovedListener](../android/nfc/NfcAdapter.OnTagRemovedListener.md)!: listener to be called when the tag is removed from the field. Note that this will only be called if the tag has been out of range for at least debounceMs, or if another tag came into range before debounceMs. May be null in case you don't want a callback. |
 | --- | --- |
@@ -991,7 +991,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun isObserveModeSupported(): Boolean
 ```
 
-Returns whether the device supports observe mode or not. When observe mode is enabled, the NFC hardware will listen to NFC readers, but not respond to them. While enabled, observed polling frames will be sent to the APDU service (see `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setObserveModeEnabled(kotlin.Boolean)`. When observe mode is disabled (or if it's not supported), the NFC hardware will automatically respond to the reader and proceed with the transaction.
+Returns whether the device supports observe mode or not. When observe mode is enabled, the NFC hardware will listen to NFC readers, but not respond to them. While enabled, observed polling frames will be sent to the APDU service (see setObserveModeEnabled. When observe mode is disabled (or if it's not supported), the NFC hardware will automatically respond to the reader and proceed with the transaction.
 
 | Return ||
 |---|---|
@@ -1033,7 +1033,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 fun isReaderModeAnnotationSupported(): Boolean
 ```
 
-Returns whether the device supports setting annotation frames when enabling reader mode by passing an extras bundle that includes a `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION:kotlin.String` key to `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#enableReaderMode(android.app.Activity,%20android.nfc.NfcAdapter.ReaderCallback,%20kotlin.Int,%20android.os.Bundle)`. These annotations frames will be reported as unknown frames via `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#processPollingFrames(kotlin.collections.MutableList)` on another Android device that has set enabled observe mode by passing true to `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setObserveModeEnabled(kotlin.Boolean)` .
+Returns whether the device supports setting annotation frames when enabling reader mode by passing an extras bundle that includes a `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#EXTRA_READER_TECH_A_POLLING_LOOP_ANNOTATION:kotlin.String` key to enableReaderMode. These annotations frames will be reported as unknown frames via processPollingFrames on another Android device that has set enabled observe mode by passing true to setObserveModeEnabled .
 
 | Return ||
 |---|---|
@@ -1055,7 +1055,7 @@ Checks NFC Reader option feature is enabled.
 
 | Exceptions ||
 |---|---|
-| `java.lang.UnsupportedOperationException` | if device doesn't support NFC Reader option functionality. `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isReaderOptionSupported()` |
+| `java.lang.UnsupportedOperationException` | if device doesn't support NFC Reader option functionality. isReaderOptionSupported |
 
 ### isReaderOptionSupported
 
@@ -1091,7 +1091,7 @@ Checks Secure NFC feature is enabled.
 
 | Exceptions ||
 |---|---|
-| `java.lang.UnsupportedOperationException` | if device doesn't support Secure NFC functionality. `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isSecureNfcSupported()` |
+| `java.lang.UnsupportedOperationException` | if device doesn't support Secure NFC functionality. isSecureNfcSupported |
 
 ### isSecureNfcSupported
 
@@ -1157,7 +1157,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun resetDiscoveryTechnology(activity: Activity?): Unit
 ```
 
-Restore the poll/listen technologies of NFC controller to its default state, which were changed by `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#setDiscoveryTechnology(android.app.Activity,%20kotlin.Int,%20kotlin.Int)`
+Restore the poll/listen technologies of NFC controller to its default state, which were changed by setDiscoveryTechnology
 
 | Parameters ||
 |---|---|
@@ -1175,7 +1175,7 @@ fun setDiscoveryTechnology(
 ): Unit
 ```
 
-Set the NFC controller to enable specific poll/listen technologies, as specified in parameters, while this Activity is in the foreground. Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_KEEP:kotlin.Int` to keep current polling technology. Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_KEEP:kotlin.Int` to keep current listenig technology. (if the _KEEP flag is specified the other technology flags shouldn't be set and are quietly ignored otherwise). Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_DISABLE:kotlin.Int` to disable polling. Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_DISABLE:kotlin.Int` to disable listening. Also refer to `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#resetDiscoveryTechnology(android.app.Activity)` to restore these changes.
+Set the NFC controller to enable specific poll/listen technologies, as specified in parameters, while this Activity is in the foreground. Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_KEEP:kotlin.Int` to keep current polling technology. Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_KEEP:kotlin.Int` to keep current listenig technology. (if the _KEEP flag is specified the other technology flags shouldn't be set and are quietly ignored otherwise). Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_READER_DISABLE:kotlin.Int` to disable polling. Use `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#FLAG_LISTEN_DISABLE:kotlin.Int` to disable listening. Also refer to resetDiscoveryTechnology to restore these changes.
 
 <br />
 
@@ -1222,7 +1222,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun setObserveModeEnabled(enabled: Boolean): Boolean
 ```
 
-Controls whether the NFC adapter will allow transactions to proceed or be in observe mode and simply observe and notify the APDU service of polling loop frames. See `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#isObserveModeSupported()` for a description of observe mode. Only the package of the currently preferred service (the service set as preferred by the current foreground application via `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#setPreferredService(android.app.Activity,%20android.content.ComponentName)` or the current Default Wallet Role Holder `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_WALLET:kotlin.String`), otherwise a call to this method will fail and return false.
+Controls whether the NFC adapter will allow transactions to proceed or be in observe mode and simply observe and notify the APDU service of polling loop frames. See isObserveModeSupported for a description of observe mode. Only the package of the currently preferred service (the service set as preferred by the current foreground application via setPreferredService or the current Default Wallet Role Holder `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_WALLET:kotlin.String`), otherwise a call to this method will fail and return false.
 
 | Parameters ||
 |---|---|
@@ -1240,7 +1240,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun setPowerSavingMode(enabled: Boolean): Unit
 ```
 
-Sets whether or not the NFC chip should be in power-saving mode next time it is disabled with `https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter#disable()`. If the chip is already disabled, power-saving mode will take effect immediately.
+Sets whether or not the NFC chip should be in power-saving mode next time it is disabled with disable. If the chip is already disabled, power-saving mode will take effect immediately.
 
 This mode puts the NFC chip in a very low power mode, but not fully turned off. This mode limits communication between the NFC chip and the host processor to conserve power, although the exact implementation may depend on the device's underlying hardware. Other NFC APIs are disabled while this mode is active. 
 Requires android.Manifest.permission#NFC_SET_CONTROLLER_ALWAYS_ON

@@ -21,37 +21,37 @@ The span can be used like this:
 <code>SpannableString string = new SpannableString("1st example");
  string.setSpan(new SuperscriptSpan(), 1, 3, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);</code>
 ```
-Text with `SuperscriptSpan`. Note: Since the span affects the position of the text, if the text is on the first line of a TextView, it may appear cut. This can be avoided by decreasing the text size with an `https://developer.android.com/reference/kotlin/android/text/style/AbsoluteSizeSpan`
+Text with `SuperscriptSpan`. Note: Since the span affects the position of the text, if the text is on the first line of a TextView, it may appear cut. This can be avoided by decreasing the text size with an AbsoluteSizeSpan
 
 ## Summary
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#SuperscriptSpan()()` Creates a `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#`. |
-| `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#SuperscriptSpan(android.os.Parcel)(src: https://developer.android.com/reference/kotlin/android/os/Parcel.html#)` Creates a `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#` from a parcel. |
+| SuperscriptSpan Creates a SuperscriptSpan. |
+| SuperscriptSpan Creates a SuperscriptSpan from a parcel. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#toString()()` Returns a string representation of the object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSpanTypeId Return a special type identifier for this span class. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#updateDrawState(android.text.TextPaint)(textPaint: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#updateMeasureState(android.text.TextPaint)(textPaint: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateDrawState <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | updateMeasureState Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
-Inherited functions From class `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan` `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan#getUnderlying()()`
+Inherited functions From class MetricAffectingSpan `https://developer.android.com/reference/kotlin/android/text/style/MetricAffectingSpan!` getUnderlying
 
-Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)`, returns the underlying MetricAffectingSpan.
+Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by wrap, returns the underlying MetricAffectingSpan.
 
 <br />
 
-From class `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#updateDrawState(android.text.TextPaint)(tp: https://developer.android.com/reference/kotlin/android/text/TextPaint.html#!)`
+From class CharacterStyle `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` updateDrawState
 
 <br />
 
-`https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!` `https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle#wrap(android.text.style.CharacterStyle)(cs: https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!)`
+`https://developer.android.com/reference/kotlin/android/text/style/CharacterStyle!` wrap
 
 A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict.
 
@@ -67,7 +67,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 SuperscriptSpan()
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#`.
+Creates a SuperscriptSpan.
 
 ### SuperscriptSpan
 
@@ -77,7 +77,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 SuperscriptSpan(src: Parcel)
 ```
 
-Creates a `https://developer.android.com/reference/kotlin/android/text/style/SuperscriptSpan#` from a parcel.
+Creates a SuperscriptSpan from a parcel.
 
 | Parameters ||
 |---|---|
@@ -93,7 +93,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|

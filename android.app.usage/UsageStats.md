@@ -19,29 +19,29 @@ Contains usage statistics for an app package for a specific time range.
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#UsageStats(android.app.usage.UsageStats)(stats: https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#!)` <br /> |
+| UsageStats <br /> |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#add(android.app.usage.UsageStats)(right: https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#!)` Add the statistics from the right `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` to the left. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getFirstTimeStamp()()` Get the beginning of the time range this `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` represents, measured in milliseconds since the epoch. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | add Add the statistics from the right UsageStats to the left. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getFirstTimeStamp Get the beginning of the time range this UsageStats represents, measured in milliseconds since the epoch. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeForegroundServiceUsed()()` Get the last time this package's foreground service was used, measured in milliseconds since the epoch. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeStamp()()` Get the end of the time range this `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` represents, measured in milliseconds since the epoch. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeUsed()()` Get the last time this package's activity was used, measured in milliseconds since the epoch. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastTimeForegroundServiceUsed Get the last time this package's foreground service was used, measured in milliseconds since the epoch. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastTimeStamp Get the end of the time range this UsageStats represents, measured in milliseconds since the epoch. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastTimeUsed Get the last time this package's activity was used, measured in milliseconds since the epoch. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getLastTimeVisible()()` Get the last time this package's activity is visible in the UI, measured in milliseconds since the epoch. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getPackageName()()` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getTotalTimeForegroundServiceUsed()()` Get the total time this package's foreground services are started, measured in milliseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getLastTimeVisible Get the last time this package's activity is visible in the UI, measured in milliseconds since the epoch. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getPackageName <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTotalTimeForegroundServiceUsed Get the total time this package's foreground services are started, measured in milliseconds. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getTotalTimeInForeground()()` Get the total time this package spent in the foreground, measured in milliseconds. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#getTotalTimeVisible()()` Get the total time this package's activity is visible in the UI, measured in milliseconds. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTotalTimeInForeground Get the total time this package spent in the foreground, measured in milliseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTotalTimeVisible Get the total time this package's activity is visible in the UI, measured in milliseconds. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
@@ -68,15 +68,15 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun add(right: UsageStats!): Unit
 ```
 
-Add the statistics from the right `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` to the left. The package name for both `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` objects must be the same.
+Add the statistics from the right UsageStats to the left. The package name for both UsageStats objects must be the same.
 
 | Parameters ||
 |---|---|
-| `right` | [UsageStats](UsageStats.md)!: The `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` object to merge into this one. |
+| `right` | [UsageStats](UsageStats.md)!: The UsageStats object to merge into this one. |
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the package names of the two `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` objects are different. |
+| `java.lang.IllegalArgumentException` | if the package names of the two UsageStats objects are different. |
 
 ### describeContents
 
@@ -86,7 +86,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -100,11 +100,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getFirstTimeStamp(): Long
 ```
 
-Get the beginning of the time range this `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` represents, measured in milliseconds since the epoch.
+Get the beginning of the time range this UsageStats represents, measured in milliseconds since the epoch.
 
 <br />
 
-See `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+See currentTimeMillis.
 
 ### getLastTimeForegroundServiceUsed
 
@@ -118,7 +118,7 @@ Get the last time this package's foreground service was used, measured in millis
 
 <br />
 
-See `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+See currentTimeMillis.
 
 ### getLastTimeStamp
 
@@ -128,11 +128,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getLastTimeStamp(): Long
 ```
 
-Get the end of the time range this `https://developer.android.com/reference/kotlin/android/app/usage/UsageStats#` represents, measured in milliseconds since the epoch.
+Get the end of the time range this UsageStats represents, measured in milliseconds since the epoch.
 
 <br />
 
-See `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+See currentTimeMillis.
 
 ### getLastTimeUsed
 
@@ -146,7 +146,7 @@ Get the last time this package's activity was used, measured in milliseconds sin
 
 <br />
 
-See `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`.
+See currentTimeMillis.
 
 ### getLastTimeVisible
 

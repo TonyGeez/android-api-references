@@ -34,18 +34,18 @@ A process budget applies to a single process. It is possible to set a large budg
 The primary interfaces provided by this class are:
 
 - **Memory Budget Configuration:**
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setPackageBudgetBytes(kotlin.Long)` / `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#clearPackageBudget()` - Sets or clears the memory budget for the application.
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setProcessBudgetBytes(kotlin.Long)` / `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#clearProcessBudget()` - Sets or clears the memory budget for the calling process.
+ - setPackageBudgetBytes / clearPackageBudget - Sets or clears the memory budget for the application.
+ - setProcessBudgetBytes / clearProcessBudget - Sets or clears the memory budget for the calling process.
 - **Memory Budget Queries:**
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageBudgetBytes()` - Returns the current budget for the application.
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessBudgetBytes()` - Returns the current budget for the calling process.
+ - getPackageBudgetBytes - Returns the current budget for the application.
+ - getProcessBudgetBytes - Returns the current budget for the calling process.
 - **Memory Usage Queries:**
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageCurrentUsageBytes()` - Returns the aggregate memory usage across all processes in the application package.
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessCurrentUsageBytes()` - Returns the memory usage for the caller's specific process.
+ - getPackageCurrentUsageBytes - Returns the aggregate memory usage across all processes in the application package.
+ - getProcessCurrentUsageBytes - Returns the memory usage for the caller's specific process.
 - **Over-Budget Event Monitoring:**
  - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener` - Callback interface notified when memory usage exceeds a budget threshold.
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#registerPackageOverBudgetListener(android.os.Looper,%20android.app.MemoryBudgetManager.OnOverBudgetListener)` / `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#unregisterPackageOverBudgetListener(android.app.MemoryBudgetManager.OnOverBudgetListener)` - Registers or unregisters listeners for package-level budget breaches.
- - `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#registerProcessOverBudgetListener(android.os.Looper,%20android.app.MemoryBudgetManager.OnOverBudgetListener)` / `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#unregisterProcessOverBudgetListener(android.app.MemoryBudgetManager.OnOverBudgetListener)` - Registers or unregisters listeners for process-level budget breaches.
+ - registerPackageOverBudgetListener / unregisterPackageOverBudgetListener - Registers or unregisters listeners for package-level budget breaches.
+ - registerProcessOverBudgetListener / unregisterProcessOverBudgetListener - Registers or unregisters listeners for process-level budget breaches.
 
 ## Summary
 
@@ -55,25 +55,25 @@ The primary interfaces provided by this class are:
 
 | Constants ||
 |---|---|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#LIMIT_IS_DISABLED:kotlin.Long` This value is returned by `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageBudgetBytes()` and `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessBudgetBytes()` if there is no memory limit associated with the application or process, respectively. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#LIMIT_IS_DISABLED:kotlin.Long` This value is returned by getPackageBudgetBytes and getProcessBudgetBytes if there is no memory limit associated with the application or process, respectively. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#clearPackageBudget()()` Removes the package budget, if any, for the caller's application. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#clearProcessBudget()()` Removes the process budget, if any, for the caller's process. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageBudgetBytes()()` Returns the budget for the caller's application. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearPackageBudget Removes the package budget, if any, for the caller's application. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearProcessBudget Removes the process budget, if any, for the caller's process. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPackageBudgetBytes Returns the budget for the caller's application. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageCurrentUsageBytes()()` Returns the aggregate memory usage across all processes running under the caller's application UID. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessBudgetBytes()()` Returns the budget for the caller's process. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessCurrentUsageBytes()()` Returns the current memory usage for the caller's process. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getPackageCurrentUsageBytes Returns the aggregate memory usage across all processes running under the caller's application UID. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getProcessBudgetBytes Returns the budget for the caller's process. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getProcessCurrentUsageBytes Returns the current memory usage for the caller's process. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#registerPackageOverBudgetListener(android.os.Looper,%20android.app.MemoryBudgetManager.OnOverBudgetListener)(looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#?, listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Registers to be notified if the caller's application exceeds its package budget. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#registerProcessOverBudgetListener(android.os.Looper,%20android.app.MemoryBudgetManager.OnOverBudgetListener)(looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#?, listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Registers to be notified if the caller's process exceeds its process budget. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setPackageBudgetBytes(kotlin.Long)(budgetBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the memory budget for the caller's application. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerPackageOverBudgetListener Registers to be notified if the caller's application exceeds its package budget. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerProcessOverBudgetListener Registers to be notified if the caller's process exceeds its process budget. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setPackageBudgetBytes Sets the memory budget for the caller's application. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setProcessBudgetBytes(kotlin.Long)(budgetBytes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the memory budget for the caller's process. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#unregisterPackageOverBudgetListener(android.app.MemoryBudgetManager.OnOverBudgetListener)(listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Unregisters a package budget listener. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#unregisterProcessOverBudgetListener(android.app.MemoryBudgetManager.OnOverBudgetListener)(listener: https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager.OnOverBudgetListener)` Unregisters a process budget listener. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setProcessBudgetBytes Sets the memory budget for the caller's process. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterPackageOverBudgetListener Unregisters a package budget listener. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterProcessOverBudgetListener Unregisters a process budget listener. |
 | --- | --- |
 
 ## Constants
@@ -86,7 +86,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 static val LIMIT_IS_DISABLED: Long
 ```
 
-This value is returned by `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getPackageBudgetBytes()` and `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#getProcessBudgetBytes()` if there is no memory limit associated with the application or process, respectively. This value may not be passed to a function that sets a budget: use the clear functions instead.
+This value is returned by getPackageBudgetBytes and getProcessBudgetBytes if there is no memory limit associated with the application or process, respectively. This value may not be passed to a function that sets a budget: use the clear functions instead.
 
  Value: -1L
 
@@ -128,7 +128,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getPackageBudgetBytes(): Long
 ```
 
-Returns the budget for the caller's application. The value returned will be the last value set via `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setPackageBudgetBytes(kotlin.Long)`, if any, or the existing system or manifest limit, if there is no package budget.
+Returns the budget for the caller's application. The value returned will be the last value set via setPackageBudgetBytes, if any, or the existing system or manifest limit, if there is no package budget.
 
 | Return ||
 |---|---|
@@ -163,7 +163,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 fun getProcessBudgetBytes(): Long
 ```
 
-Returns the budget for the caller's process. The value returned will be the last value set via `https://developer.android.com/reference/kotlin/android/app/MemoryBudgetManager#setProcessBudgetBytes(kotlin.Long)`, if any, or the existing system or manifest limit, if there is no process budget.
+Returns the budget for the caller's process. The value returned will be the last value set via setProcessBudgetBytes, if any, or the existing system or manifest limit, if there is no process budget.
 
 | Return ||
 |---|---|

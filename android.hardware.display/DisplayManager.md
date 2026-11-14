@@ -48,28 +48,28 @@ Manages the properties of attached displays.
 
 | Public methods ||
 |---|---|
-| [VirtualDisplay](VirtualDisplay.md)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig)(config: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig)` Creates a virtual display. |
-| [VirtualDisplay](VirtualDisplay.md)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig,%20android.os.Handler,%20android.hardware.display.VirtualDisplay.Callback)(config: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplayConfig, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, callback: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback?)` Creates a virtual display. |
-| [VirtualDisplay](VirtualDisplay.md)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, densityDpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a virtual display. |
+| [VirtualDisplay](VirtualDisplay.md)? | createVirtualDisplay Creates a virtual display. |
+| [VirtualDisplay](VirtualDisplay.md)? | createVirtualDisplay Creates a virtual display. |
+| [VirtualDisplay](VirtualDisplay.md)! | createVirtualDisplay Creates a virtual display. |
 | --- | --- |
-| [VirtualDisplay](VirtualDisplay.md)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int,%20android.hardware.display.VirtualDisplay.Callback,%20android.os.Handler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, densityDpi: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay.Callback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Creates a virtual display. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getBrightness(kotlin.Int,%20kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the brightness of the specified display in the specified brightness unit. |
-| [Display](../android.view/Display.md)! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplay(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets information about a logical display. |
+| [VirtualDisplay](VirtualDisplay.md)! | createVirtualDisplay Creates a virtual display. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getBrightness Gets the brightness of the specified display in the specified brightness unit. |
+| [Display](../android.view/Display.md)! | getDisplay Gets information about a logical display. |
 | --- | --- |
-| [DisplayTopology](DisplayTopology.md)? | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplayTopology()()` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](../android.view/Display.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays()()` Gets all currently valid logical displays. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](../android.view/Display.md)!\>! | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays(kotlin.String)(category: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets all currently valid logical displays of the specified category. |
+| [DisplayTopology](DisplayTopology.md)? | getDisplayTopology <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](../android.view/Display.md)!\>! | getDisplays Gets all currently valid logical displays. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display](../android.view/Display.md)!\>! | getDisplays Gets all currently valid logical displays of the specified category. |
 | --- | --- |
-| [HdrConversionMode](HdrConversionMode.md) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getHdrConversionMode()()` Returns the `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode` of the device, which is set by the user. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getMatchContentFrameRateUserPreference()()` Returns the user preference for "Match content frame rate". |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(android.hardware.display.DisplayManager.DisplayListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Registers a display listener to receive notifications about when displays are added, removed or changed. |
+| [HdrConversionMode](HdrConversionMode.md) | getHdrConversionMode Returns the HdrConversionMode of the device, which is set by the user. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMatchContentFrameRateUserPreference Returns the user preference for "Match content frame rate". |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerDisplayListener Registers a display listener to receive notifications about when displays are added, removed or changed. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(java.util.concurrent.Executor,%20kotlin.Long,%20android.hardware.display.DisplayManager.DisplayListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, eventFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, listener: https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener)` Registers a display listener to receive notifications about given display event types. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerTopologyListener(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology!>)` Register a listener to receive display topology updates. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#setBrightness(kotlin.Int,%20kotlin.Float,%20kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, unit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the brightness of the specified display. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerDisplayListener Registers a display listener to receive notifications about given display event types. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | registerTopologyListener Register a listener to receive display topology updates. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setBrightness Sets the brightness of the specified display. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#unregisterDisplayListener(android.hardware.display.DisplayManager.DisplayListener)(listener: https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener!)` Unregisters a display listener. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#unregisterTopologyListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology!>)` Unregister a display topology listener. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterDisplayListener Unregisters a display listener. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | unregisterTopologyListener Unregister a display topology listener. |
 
 ## Constants
 
@@ -107,13 +107,13 @@ static val DISPLAY_CATEGORY_BUILT_IN_DISPLAYS: String
 
 Display category: Built in displays.
 
-This category can be used to identify displays that are built into the device. The displays that are returned may be inactive or disabled at the current moment. The returned displays are useful in identifying the various sizes of built-in displays. The id from `https://developer.android.com/reference/kotlin/android/view/Display.html#getDisplayId()` is not guaranteed to be stable and may change when the display becomes active.
+This category can be used to identify displays that are built into the device. The displays that are returned may be inactive or disabled at the current moment. The returned displays are useful in identifying the various sizes of built-in displays. The id from getDisplayId is not guaranteed to be stable and may change when the display becomes active.
 
  Value: "android.hardware.display.category.BUILT_IN_DISPLAYS"
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays(kotlin.String)`
+- getDisplays
 
 ### DISPLAY_CATEGORY_PRESENTATION
 
@@ -133,7 +133,7 @@ This category can be used to identify secondary displays that are suitable for u
 
 - `https://developer.android.com/reference/kotlin/android/app/Presentation.html#`
 - `https://developer.android.com/reference/kotlin/android/view/Display.html#FLAG_PRESENTATION:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#getDisplays(kotlin.String)`
+- getDisplays
 
 ### EVENT_TYPE_DISPLAY_ADDED
 
@@ -143,7 +143,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EVENT_TYPE_DISPLAY_ADDED: Long
 ```
 
-Event type for when a new display is added. This notification is sent through the `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayAdded(kotlin.Int)` callback method
+Event type for when a new display is added. This notification is sent through the onDisplayAdded callback method
 
  Value: 1L
 
@@ -157,13 +157,13 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val EVENT_TYPE_DISPLAY_BRIGHTNESS: Long
 ```
 
-Event type to register for a display's brightness changes. This notification is sent through the `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayChanged(kotlin.Int)` callback method. New brightness values can be retrieved via android.view.Display#getBrightnessInfo().
+Event type to register for a display's brightness changes. This notification is sent through the onDisplayChanged callback method. New brightness values can be retrieved via android.view.Display#getBrightnessInfo().
 
  Value: 32L
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(java.util.concurrent.Executor,%20kotlin.Long,%20android.hardware.display.DisplayManager.DisplayListener)`
+- registerDisplayListener
 
 ### EVENT_TYPE_DISPLAY_CHANGED
 
@@ -173,7 +173,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EVENT_TYPE_DISPLAY_CHANGED: Long
 ```
 
-Event type for when a display is changed. `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayChanged(kotlin.Int)` callback is triggered whenever the properties of a `https://developer.android.com/reference/kotlin/android/view/Display.html#`, such as size, state, density are modified. This event is not triggered for refresh rate changes as they can change very often. To monitor refresh rate changes, subscribe to `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_REFRESH_RATE:kotlin.Long`.
+Event type for when a display is changed. onDisplayChanged callback is triggered whenever the properties of a `https://developer.android.com/reference/kotlin/android/view/Display.html#`, such as size, state, density are modified. This event is not triggered for refresh rate changes as they can change very often. To monitor refresh rate changes, subscribe to `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_REFRESH_RATE:kotlin.Long`.
 
  Value: 4L
 
@@ -187,7 +187,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EVENT_TYPE_DISPLAY_REFRESH_RATE: Long
 ```
 
-Event type for when a display's refresh rate changes. `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayChanged(kotlin.Int)` callback is triggered whenever the refresh rate of the display changes. New refresh rate values can be retrieved via `https://developer.android.com/reference/kotlin/android/view/Display.html#getRefreshRate()`.
+Event type for when a display's refresh rate changes. onDisplayChanged callback is triggered whenever the refresh rate of the display changes. New refresh rate values can be retrieved via getRefreshRate.
 
  Value: 8L
 
@@ -201,7 +201,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EVENT_TYPE_DISPLAY_REMOVED: Long
 ```
 
-Event type for when a display is removed. This notification is sent through the `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayRemoved(kotlin.Int)` callback method
+Event type for when a display is removed. This notification is sent through the onDisplayRemoved callback method
 
  Value: 2L
 
@@ -215,7 +215,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val EVENT_TYPE_DISPLAY_STATE: Long
 ```
 
-Event type for when a display state changes. `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.DisplayListener#onDisplayChanged(kotlin.Int)` callback is triggered whenever the state of the display changes. New state values can be retrieved via `https://developer.android.com/reference/kotlin/android/view/Display.html#getState()`.
+Event type for when a display state changes. onDisplayChanged callback is triggered whenever the state of the display changes. New state values can be retrieved via getState.
 
  Value: 16L
 
@@ -418,11 +418,11 @@ Creates a virtual display.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay?` | This value may be `null`. |
+| VirtualDisplay | This value may be `null`. |
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig,%20android.os.Handler,%20android.hardware.display.VirtualDisplay.Callback)`
+- createVirtualDisplay
 
 ### createVirtualDisplay
 
@@ -440,11 +440,11 @@ Creates a virtual display.
 
 The content of a virtual display is rendered to a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` provided by the application.
 
-The virtual display should be `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#release()` when no longer needed. Because a virtual display renders to a surface provided by the application, it will be released automatically when the process terminates and all remaining windows on it will be forcibly removed.
+The virtual display should be release when no longer needed. Because a virtual display renders to a surface provided by the application, it will be released automatically when the process terminates and all remaining windows on it will be forcibly removed.
 
 The behavior of the virtual display depends on the flags that are provided to this method. By default, virtual displays are created to be private, non-presentation and unsecure. Permissions may be required to use certain flags.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int`, the surface may be attached or detached dynamically using `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#setSurface(android.view.Surface)`. Previously, the surface had to be non-null when #createVirtualDisplay was called and could not be changed for the lifetime of the display.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int`, the surface may be attached or detached dynamically using setSurface. Previously, the surface had to be non-null when #createVirtualDisplay was called and could not be changed for the lifetime of the display.
 
 Detaching the surface that backs a virtual display has a similar effect to turning off the screen.
 
@@ -452,12 +452,12 @@ Detaching the surface that backs a virtual display has a similar effect to turni
 |---|---|
 | `config` | [VirtualDisplayConfig](VirtualDisplayConfig.md): The configuration of the virtual display, must be non-null. |
 | `handler` | [Handler](../android.os/Handler.md)?: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
-| `callback` | [VirtualDisplay.Callback](../android/hardware/display/VirtualDisplay.Callback.md)?: Callback to call when the state of the `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay` changes. This value may be `null`. |
+| `callback` | [VirtualDisplay.Callback](../android/hardware/display/VirtualDisplay.Callback.md)?: Callback to call when the state of the VirtualDisplay changes. This value may be `null`. |
 | --- | --- |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay?` | The newly created virtual display, or null if the application could not create the virtual display. |
+| VirtualDisplay | The newly created virtual display, or null if the application could not create the virtual display. |
 
 | Exceptions ||
 |---|---|
@@ -493,7 +493,7 @@ Creates a virtual display.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#createVirtualDisplay(kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.view.Surface,%20kotlin.Int,%20android.hardware.display.VirtualDisplay.Callback,%20android.os.Handler)`
+- createVirtualDisplay
 
 ### createVirtualDisplay
 
@@ -516,11 +516,11 @@ Creates a virtual display.
 
 The content of a virtual display is rendered to a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` provided by the application.
 
-The virtual display should be `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#release()` when no longer needed. Because a virtual display renders to a surface provided by the application, it will be released automatically when the process terminates and all remaining windows on it will be forcibly removed.
+The virtual display should be release when no longer needed. Because a virtual display renders to a surface provided by the application, it will be released automatically when the process terminates and all remaining windows on it will be forcibly removed.
 
 The behavior of the virtual display depends on the flags that are provided to this method. By default, virtual displays are created to be private, non-presentation and unsecure. Permissions may be required to use certain flags.
 
-As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int`, the surface may be attached or detached dynamically using `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay#setSurface(android.view.Surface)`. Previously, the surface had to be non-null when #createVirtualDisplay was called and could not be changed for the lifetime of the display.
+As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#KITKAT_WATCH:kotlin.Int`, the surface may be attached or detached dynamically using setSurface. Previously, the surface had to be non-null when #createVirtualDisplay was called and could not be changed for the lifetime of the display.
 
 Detaching the surface that backs a virtual display has a similar effect to turning off the screen.
 
@@ -534,7 +534,7 @@ Detaching the surface that backs a virtual display has a similar effect to turni
 | `surface` | [Surface](../android.view/Surface.md)?: The surface to which the content of the virtual display should be rendered, or null if there is none initially. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A combination of virtual display flags: `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PUBLIC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PRESENTATION:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_SECURE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PUBLIC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_SECURE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR:kotlin.Int` |
 | --- | --- |
-| `callback` | [VirtualDisplay.Callback](../android/hardware/display/VirtualDisplay.Callback.md)?: Callback to call when the state of the `https://developer.android.com/reference/kotlin/android/hardware/display/VirtualDisplay` changes. This value may be `null`. |
+| `callback` | [VirtualDisplay.Callback](../android/hardware/display/VirtualDisplay.Callback.md)?: Callback to call when the state of the VirtualDisplay changes. This value may be `null`. |
 | `handler` | [Handler](../android.os/Handler.md)?: The handler on which the listener should be invoked, or null if the listener should be invoked on the calling thread's looper. |
 
 | Return ||
@@ -591,7 +591,7 @@ fun getDisplayTopology(): DisplayTopology?
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayTopology?` | The current display topology that represents the relative positions of extended displays. It only includes the displays that can be reached with the mouse cursor. This value may be `null`. |
+| DisplayTopology | The current display topology that represents the relative positions of extended displays. It only includes the displays that can be reached with the mouse cursor. This value may be `null`. |
 
 ### getDisplays
 
@@ -639,11 +639,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getHdrConversionMode(): HdrConversionMode
 ```
 
-Returns the `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode` of the device, which is set by the user. When `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#getConversionMode()` is `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#HDR_CONVERSION_SYSTEM:kotlin.Int`, the `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#getPreferredHdrOutputType()` depicts the systemPreferredHdrOutputType. The HDR conversion mode chosen by user which considers the app override is returned. Apps can override HDR conversion using `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#setHdrConversionEnabled(kotlin.Boolean)`.
+Returns the HdrConversionMode of the device, which is set by the user. When getConversionMode is `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode#HDR_CONVERSION_SYSTEM:kotlin.Int`, the getPreferredHdrOutputType depicts the systemPreferredHdrOutputType. The HDR conversion mode chosen by user which considers the app override is returned. Apps can override HDR conversion using setHdrConversionEnabled.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/hardware/display/HdrConversionMode` | This value cannot be `null`. |
+| HdrConversionMode | This value cannot be `null`. |
 
 ### getMatchContentFrameRateUserPreference
 
@@ -676,7 +676,7 @@ fun registerDisplayListener(
 ): Unit
 ```
 
-Registers a display listener to receive notifications about when displays are added, removed or changed. Because of the high frequency at which the refresh rate can change, clients will be registered for refresh rate change callbacks only when they request for refresh rate data(`https://developer.android.com/reference/kotlin/android/view/Display.html#getRefreshRate()`. Or alternately, you can consider using `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(java.util.concurrent.Executor,%20kotlin.Long,%20android.hardware.display.DisplayManager.DisplayListener)` and explicitly subscribe to `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_REFRESH_RATE:kotlin.Long` event We encourage to use `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(java.util.concurrent.Executor,%20kotlin.Long,%20android.hardware.display.DisplayManager.DisplayListener)` instead to subscribe for explicit events of interest
+Registers a display listener to receive notifications about when displays are added, removed or changed. Because of the high frequency at which the refresh rate can change, clients will be registered for refresh rate change callbacks only when they request for refresh rate data(getRefreshRate. Or alternately, you can consider using registerDisplayListener and explicitly subscribe to `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#EVENT_TYPE_DISPLAY_REFRESH_RATE:kotlin.Long` event We encourage to use registerDisplayListener instead to subscribe for explicit events of interest
 
 | Parameters ||
 |---|---|
@@ -685,7 +685,7 @@ Registers a display listener to receive notifications about when displays are ad
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#unregisterDisplayListener(android.hardware.display.DisplayManager.DisplayListener)`
+- unregisterDisplayListener
 
 ### registerDisplayListener
 
@@ -710,8 +710,8 @@ Registers a display listener to receive notifications about given display event 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#registerDisplayListener(android.hardware.display.DisplayManager.DisplayListener,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager#unregisterDisplayListener(android.hardware.display.DisplayManager.DisplayListener)`
+- registerDisplayListener
+- unregisterDisplayListener
 
 ### registerTopologyListener
 
@@ -728,7 +728,7 @@ Register a listener to receive display topology updates.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor specifying the thread on which the callbacks will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor specifying the thread on which the callbacks will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use getMainExecutor. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [Consumer](../java.util.function/Consumer.md)\< [DisplayTopology](DisplayTopology.md)!\>: The listener. This value cannot be `null`. |
 
 ### setBrightness

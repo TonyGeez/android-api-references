@@ -12,13 +12,13 @@ class SQLiteRawStatement : Closeable
 
 A represents a SQLite prepared statement. The methods correspond very closely to SQLite APIs that operate on a sqlite_stmt object. In general, each API in this class corresponds to a single SQLite API.
 
-A `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#` must be created through a database, and there must be a transaction open at the time. Statements are implicitly closed when the outermost transaction ends, or if the current transaction is marked successful. Statements may be explicitly closed at any time with #close. The #close operation is idempotent and may be called multiple times without harm.
+A SQLiteRawStatement must be created through a database, and there must be a transaction open at the time. Statements are implicitly closed when the outermost transaction ends, or if the current transaction is marked successful. Statements may be explicitly closed at any time with #close. The #close operation is idempotent and may be called multiple times without harm.
 
-Multiple `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#`s may be open simultaneously. They are independent of each other. Closing one statement does not affect any other statement nor does it have any effect on the enclosing transaction.
+Multiple SQLiteRawStatements may be open simultaneously. They are independent of each other. Closing one statement does not affect any other statement nor does it have any effect on the enclosing transaction.
 
-Once a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#` has been closed, no further database operations are permitted on that statement. An `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` will be thrown if a database operation is attempted on a closed statement.
+Once a SQLiteRawStatement has been closed, no further database operations are permitted on that statement. An `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` will be thrown if a database operation is attempted on a closed statement.
 
-All operations on a `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#` must be invoked from the thread that created it. A `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` will be thrown if cross-thread use is detected.
+All operations on a SQLiteRawStatement must be invoked from the thread that created it. A `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#` will be thrown if cross-thread use is detected.
 
 A common pattern for statements is try-with-resources.
 
@@ -36,55 +36,55 @@ A common pattern for statements is try-with-resources.
   }
   </code>
 ```
-Note that `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#` is unrelated to `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement`.
+Note that SQLiteRawStatement is unrelated to SQLiteStatement.
 
 ## Summary
 
 | Constants ||
 |---|---|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_BLOB:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_BLOB. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_FLOAT:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_FLOAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_INTEGER:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_INTEGER. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_BLOB:kotlin.Int` The constant returned by getColumnType when the column value is SQLITE_BLOB. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_FLOAT:kotlin.Int` The constant returned by getColumnType when the column value is SQLITE_FLOAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_INTEGER:kotlin.Int` The constant returned by getColumnType when the column value is SQLITE_INTEGER. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_NULL:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_NULL. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_TEXT:kotlin.Int` The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_TEXT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_NULL:kotlin.Int` The constant returned by getColumnType when the column value is SQLITE_NULL. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#SQLITE_DATA_TYPE_TEXT:kotlin.Int` The constant returned by getColumnType when the column value is SQLITE_TEXT. |
 
 | Public methods ||
 |---|---|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindBlob(kotlin.Int,%20kotlin.ByteArray)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Bind a blob to a parameter. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindBlob(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Bind a blob to a parameter. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindDouble(kotlin.Int,%20kotlin.Double)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Bind a double to a parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindBlob Bind a blob to a parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindBlob Bind a blob to a parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindDouble Bind a double to a parameter. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindInt(kotlin.Int,%20kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Bind an int to a parameter. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindLong(kotlin.Int,%20kotlin.Long)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Bind a long to the parameter. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindNull(kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Bind a null to the parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindInt Bind an int to a parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindLong Bind a long to the parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindNull Bind a null to the parameter. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#bindText(kotlin.Int,%20kotlin.String)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Bind a string to the parameter. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#clearBindings()()` Clear all parameter bindings. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#close()()` Close the object and release any native resources. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | bindText Bind a string to the parameter. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clearBindings Clear all parameter bindings. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Close the object and release any native resources. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnBlob(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value of the result row as a blob. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnDouble(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a double. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnInt(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a int. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | getColumnBlob Return the column value of the result row as a blob. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | getColumnDouble Return the column value as a double. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColumnInt Return the column value as a int. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnLength(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the length of the column value in the result row. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnLong(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a long. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnName(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the name of the column in the result row. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColumnLength Return the length of the column value in the result row. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getColumnLong Return the column value as a long. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getColumnName Return the name of the column in the result row. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnText(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the column value as a text. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the type of the column in the result row. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getParameterCount()()` Return the number of parameters in the statement. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getColumnText Return the column value as a text. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getColumnType Return the type of the column in the result row. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getParameterCount Return the number of parameters in the statement. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getParameterIndex(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the index of the parameter with specified name. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getParameterName(kotlin.Int)(parameterIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the name of the parameter at the specified index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getResultColumnCount()()` Return the number of columns in the result set for the statement. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getParameterIndex Return the index of the parameter with specified name. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getParameterName Return the name of the parameter at the specified index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getResultColumnCount Return the number of columns in the result set for the statement. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#isOpen()()` Return true if the statement is still open and false otherwise. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#readColumnBlob(kotlin.Int,%20kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(columnIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, buffer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcOffset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the column value of the result row, interpreted as a blob, into the buffer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#reset()()` Reset the statement. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isOpen Return true if the statement is still open and false otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | readColumnBlob Copy the column value of the result row, interpreted as a blob, into the buffer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | reset Reset the statement. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#step()()` Step to the next result row. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | step Step to the next result row. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 
 ## Constants
 
@@ -96,7 +96,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SQLITE_DATA_TYPE_BLOB: Int
 ```
 
-The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_BLOB.
+The constant returned by getColumnType when the column value is SQLITE_BLOB.
 
  Value: 4
 
@@ -108,7 +108,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SQLITE_DATA_TYPE_FLOAT: Int
 ```
 
-The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_FLOAT.
+The constant returned by getColumnType when the column value is SQLITE_FLOAT.
 
  Value: 2
 
@@ -120,7 +120,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SQLITE_DATA_TYPE_INTEGER: Int
 ```
 
-The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_INTEGER.
+The constant returned by getColumnType when the column value is SQLITE_INTEGER.
 
  Value: 1
 
@@ -132,7 +132,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SQLITE_DATA_TYPE_NULL: Int
 ```
 
-The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_NULL.
+The constant returned by getColumnType when the column value is SQLITE_NULL.
 
  Value: 5
 
@@ -144,7 +144,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val SQLITE_DATA_TYPE_TEXT: Int
 ```
 
-The constant returned by `https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteRawStatement#getColumnType(kotlin.Int)` when the column value is SQLITE_TEXT.
+The constant returned by getColumnType when the column value is SQLITE_TEXT.
 
  Value: 3
 

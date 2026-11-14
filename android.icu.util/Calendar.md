@@ -13,7 +13,7 @@ abstract class Calendar : Cloneable, Comparable<Calendar!>, Serializable
 | --- | --- |
 | ↳ | [android.icu.util.Calendar](Calendar.md) |
 
-| Known Direct Subclasses [ChineseCalendar](ChineseCalendar.md), [CopticCalendar](../android/icu/util/CopticCalendar.md), [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md), [GregorianCalendar](GregorianCalendar.md), [HebrewCalendar](HebrewCalendar.md), [IndianCalendar](../android/icu/util/IndianCalendar.md), [IslamicCalendar](IslamicCalendar.md) |---|---| | [ChineseCalendar](ChineseCalendar.md) | `ChineseCalendar` is a concrete subclass of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#` that implements a traditional Chinese calendar. | | [CopticCalendar](../android/icu/util/CopticCalendar.md) | Implement the Coptic calendar system. | | [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md) | Implement the Ethiopic calendar system. | | [GregorianCalendar](GregorianCalendar.md) | **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. | | [HebrewCalendar](HebrewCalendar.md) | `HebrewCalendar` is a subclass of `Calendar` that that implements the traditional Hebrew calendar. | | [IndianCalendar](../android/icu/util/IndianCalendar.md) | `IndianCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [IslamicCalendar](IslamicCalendar.md) | `IslamicCalendar` is a subclass of `Calendar` that that implements the Islamic civil and religious calendars. | |
+| Known Direct Subclasses [ChineseCalendar](ChineseCalendar.md), [CopticCalendar](../android/icu/util/CopticCalendar.md), [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md), [GregorianCalendar](GregorianCalendar.md), [HebrewCalendar](HebrewCalendar.md), [IndianCalendar](../android/icu/util/IndianCalendar.md), [IslamicCalendar](IslamicCalendar.md) |---|---| | [ChineseCalendar](ChineseCalendar.md) | `ChineseCalendar` is a concrete subclass of Calendar that implements a traditional Chinese calendar. | | [CopticCalendar](../android/icu/util/CopticCalendar.md) | Implement the Coptic calendar system. | | [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md) | Implement the Ethiopic calendar system. | | [GregorianCalendar](GregorianCalendar.md) | **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. | | [HebrewCalendar](HebrewCalendar.md) | `HebrewCalendar` is a subclass of `Calendar` that that implements the traditional Hebrew calendar. | | [IndianCalendar](../android/icu/util/IndianCalendar.md) | `IndianCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [IslamicCalendar](IslamicCalendar.md) | `IslamicCalendar` is a subclass of `Calendar` that that implements the Islamic civil and religious calendars. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [BuddhistCalendar](BuddhistCalendar.md), [JapaneseCalendar](JapaneseCalendar.md), [TaiwanCalendar](TaiwanCalendar.md) |---|---| | [BuddhistCalendar](BuddhistCalendar.md) | `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [JapaneseCalendar](JapaneseCalendar.md) | `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. | | [TaiwanCalendar](TaiwanCalendar.md) | `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912. | |
@@ -70,7 +70,7 @@ HOUR_OF_DAY
 
 On the date switching back to standard time, wall clock time is moved back one hour at 2:00 AM. So wall clock time from 1:00 AM to 1:59 AM occur twice. In this case, the ICU Calendar resolves the time using the UTC offset after the transition by default. For example, 1:30 AM on the date is resolved as 1:30 AM standard time.
 
-Ambiguous wall clock time resolution behaviors can be customized by Calendar APIs `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)`. These methods are available in ICU 49 or later versions.
+Ambiguous wall clock time resolution behaviors can be customized by Calendar APIs setRepeatedWallTimeOption and setSkippedWallTimeOption. These methods are available in ICU 49 or later versions.
 
 **Note:** for some non-Gregorian calendars, different fields may be necessary for complete disambiguation. For example, a full specification of the historial Arabic astronomical calendar requires year, month, day-of-month *and* day-of-week in some cases.
 
@@ -109,7 +109,7 @@ In addition, unlike `set()`, `add()` forces an immediate recomputation of the ca
 
 **Usage model** . To motivate the behavior of `add()` and `roll()`, consider a user interface component with increment and decrement buttons for the month, day, and year, and an underlying `GregorianCalendar`. If the interface reads January 31, 1999 and the user presses the month increment button, what should it read? If the underlying implementation uses `set()`, it might read March 3, 1999. A better result would be February 28, 1999. Furthermore, if the user presses the month increment button again, it should read March 31, 1999, not March 28, 1999. By saving the original date and using either `add()` or `roll()`, depending on whether larger fields should be affected, the user interface can behave as most users will intuitively expect.
 
-**Note:** You should always use #roll and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)` rather than attempting to perform arithmetic operations directly on the fields of a `Calendar`. It is quite possible for `Calendar` subclasses to have fields with non-linear behavior, for example missing months or days during non-leap years. The subclasses' `add` and `roll` methods will take this into account, while simple arithmetic manipulations may give invalid results.
+**Note:** You should always use #roll and add rather than attempting to perform arithmetic operations directly on the fields of a `Calendar`. It is quite possible for `Calendar` subclasses to have fields with non-linear behavior, for example missing months or days during non-leap years. The subclasses' `add` and `roll` methods will take this into account, while simple arithmetic manipulations may give invalid results.
 
 Calendar Architecture in ICU4J
 
@@ -119,12 +119,12 @@ Changes
 
 Overview of changes between the classic `Calendar` architecture and the new architecture.
 
-- The `fields[]` array is `private` now instead of `protected`. Subclasses must access it using the methods `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#internalSet(kotlin.Int,%20kotlin.Int)` and #internalGet. **Motivation:** Subclasses should not directly access data members.
-- The `time` long word is `private` now instead of `protected`. Subclasses may access it using the method `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#internalGetTimeInMillis()`, which does not provoke an update. **Motivation:** Subclasses should not directly access data members.
-- The scope of responsibility of subclasses has been drastically reduced. As much functionality as possible is implemented in the `Calendar` base class. As a result, it is much easier to subclass `Calendar`. **Motivation:** Subclasses should not have to reimplement common code. Certain behaviors are common across calendar systems: The definition and behavior of week-related fields and time fields, the arithmetic (`https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#roll(kotlin.Int,%20kotlin.Int)`) behavior of many fields, and the field validation system.
+- The `fields[]` array is `private` now instead of `protected`. Subclasses must access it using the methods internalSet and #internalGet. **Motivation:** Subclasses should not directly access data members.
+- The `time` long word is `private` now instead of `protected`. Subclasses may access it using the method internalGetTimeInMillis, which does not provoke an update. **Motivation:** Subclasses should not directly access data members.
+- The scope of responsibility of subclasses has been drastically reduced. As much functionality as possible is implemented in the `Calendar` base class. As a result, it is much easier to subclass `Calendar`. **Motivation:** Subclasses should not have to reimplement common code. Certain behaviors are common across calendar systems: The definition and behavior of week-related fields and time fields, the arithmetic (add and roll) behavior of many fields, and the field validation system.
 - The subclassing API has been completely redesigned.
-- The `Calendar` base class contains some Gregorian calendar algorithmic support that subclasses can use (specifically in `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeFields(kotlin.Int)`). Subclasses can use the methods `getGregorianXxx()` to obtain precomputed values. **Motivation:** This is required by all `Calendar` subclasses in order to implement consistent time zone behavior, and Gregorian-derived systems can use the already computed data.
-- The `FIELD_COUNT` constant has been removed. Use `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFieldCount()`. In addition, framework API has been added to allow subclasses to define additional fields. **Motivation:**The number of fields is not constant across calendar systems.
+- The `Calendar` base class contains some Gregorian calendar algorithmic support that subclasses can use (specifically in handleComputeFields). Subclasses can use the methods `getGregorianXxx()` to obtain precomputed values. **Motivation:** This is required by all `Calendar` subclasses in order to implement consistent time zone behavior, and Gregorian-derived systems can use the already computed data.
+- The `FIELD_COUNT` constant has been removed. Use getFieldCount. In addition, framework API has been added to allow subclasses to define additional fields. **Motivation:**The number of fields is not constant across calendar systems.
 - The range of handled dates has been narrowed from +/- \~300,000,000 years to +/- \~5,000,000 years. In practical terms this should not affect clients. However, it does mean that client code cannot be guaranteed well-behaved results with dates such as `Date(Long.MIN_VALUE)` or `Date(Long.MAX_VALUE)`. Instead, the `Calendar` protected constants should be used. **Motivation:** With the addition of the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#JULIAN_DAY:kotlin.Int` field, Julian day numbers must be restricted to a 32-bit `int`. This restricts the overall supported range. Furthermore, restricting the supported range simplifies the computations by removing special case code that was used to accommodate arithmetic overflow at millis near `Long.MIN_VALUE` and `Long.MAX_VALUE`.
 - New fields are implemented: `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#JULIAN_DAY:kotlin.Int` defines single-field specification of the date. `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MILLISECONDS_IN_DAY:kotlin.Int` defines a single-field specification of the wall time. `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DOW_LOCAL:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR_WOY:kotlin.Int` implement localized day-of-week and week-of-year behavior.
 - Subclasses can access protected millisecond constants defined in `Calendar`.
@@ -143,24 +143,24 @@ Common computations have been moved into `Calendar`. Subclasses no longer comput
 
 The `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_MONTH:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_YEAR:kotlin.Int` fields are computed by the subclass, based on the Julian day. All other fields are computed by `Calendar`.
 
-- Subclasses should implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeFields(kotlin.Int)` to compute the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_MONTH:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_YEAR:kotlin.Int` fields, based on the value of the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#JULIAN_DAY:kotlin.Int` field. If there are calendar-specific fields not defined by `Calendar`, they must also be computed. These are the only fields that the subclass should compute. All other fields are computed by the base class, so time and week fields behave in a consistent way across all calendars. The default version of this method in `Calendar` implements a proleptic Gregorian calendar. Within this method, subclasses may call `getGregorianXxx()` to obtain the Gregorian calendar month, day of month, and extended year for the given date.
+- Subclasses should implement handleComputeFields to compute the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_MONTH:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_YEAR:kotlin.Int` fields, based on the value of the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#JULIAN_DAY:kotlin.Int` field. If there are calendar-specific fields not defined by `Calendar`, they must also be computed. These are the only fields that the subclass should compute. All other fields are computed by the base class, so time and week fields behave in a consistent way across all calendars. The default version of this method in `Calendar` implements a proleptic Gregorian calendar. Within this method, subclasses may call `getGregorianXxx()` to obtain the Gregorian calendar month, day of month, and extended year for the given date.
 
 **Subclass computation of fields `=&gt;` time**
 
 The interpretation of most field values is handled entirely by `Calendar`. `Calendar` determines which fields are set, which are not, which are set more recently, and so on. In addition, `Calendar` handles the computation of the time from the time fields and handles the week-related fields. The only thing the subclass must do is determine the extended year, based on the year fields, and then, given an extended year and a month, it must return a Julian day number.
 
-- Subclasses should implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetExtendedYear()` to return the extended year for this calendar system, based on the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`, and any fields that the calendar system uses that are larger than a year, such as `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`.
-- Subclasses should implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)` to return the Julian day number associated with a month and extended year. This is the Julian day number of the day before the first day of the month. The month number is zero-based. This computation should not depend on any field values.
+- Subclasses should implement handleGetExtendedYear to return the extended year for this calendar system, based on the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`, and any fields that the calendar system uses that are larger than a year, such as `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`.
+- Subclasses should implement handleComputeMonthStart to return the Julian day number associated with a month and extended year. This is the Julian day number of the day before the first day of the month. The month number is zero-based. This computation should not depend on any field values.
 
 **Other methods**
 
-- Subclasses should implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetMonthLength(kotlin.Int,%20kotlin.Int)` to return the number of days in a given month of a given extended year. The month number, as always, is zero-based.
-- Subclasses should implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetYearLength(kotlin.Int)` to return the number of days in the given extended year. This method is used by `computeWeekFields` to compute the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR_WOY:kotlin.Int` fields.
-- Subclasses should implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)` to return the protected values of a field, depending on the value of `limitType`. This method only needs to handle the fields `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_WEEK_IN_MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR_WOY:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`. Other fields are invariant (with respect to calendar system) and are handled by the base class.
+- Subclasses should implement handleGetMonthLength to return the number of days in a given month of a given extended year. The month number, as always, is zero-based.
+- Subclasses should implement handleGetYearLength to return the number of days in the given extended year. This method is used by `computeWeekFields` to compute the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR_WOY:kotlin.Int` fields.
+- Subclasses should implement handleGetLimit to return the protected values of a field, depending on the value of `limitType`. This method only needs to handle the fields `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_WEEK_IN_MONTH:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR_WOY:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int`. Other fields are invariant (with respect to calendar system) and are handled by the base class.
 - Optionally, subclasses may override #validateField to check any subclass-specific fields. If the field's value is out of range, the method should throw an `IllegalArgumentException`. The method may call `super.validateField(field)` to handle fields in a generic way, that is, to compare them to the range `getMinimum(field)`..`getMaximum(field)`.
-- Optionally, subclasses may override `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleCreateFields()` to create an `int[]` array large enough to hold the calendar's fields. This is only necessary if the calendar defines additional fields beyond those defined by `Calendar`. The length of the result must be be between the base and maximum field counts.
+- Optionally, subclasses may override handleCreateFields to create an `int[]` array large enough to hold the calendar's fields. This is only necessary if the calendar defines additional fields beyond those defined by `Calendar`. The length of the result must be be between the base and maximum field counts.
 - Optionally, subclasses may override #handleGetDateFormat to create a `DateFormat` appropriate to this calendar. This is only required if a calendar subclass redefines the use of a field (for example, changes the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int` field from a symbolic field to a numeric one) or defines an additional field.
-- Optionally, subclasses may override #roll and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)` to handle fields that are discontinuous. For example, in the Hebrew calendar the month "Adar I" only occurs in leap years; in other years the calendar jumps from Shevat (month #4) to Adar (month #6). The `https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#add(kotlin.Int,%20kotlin.Int)` and android.icu.util.HebrewCalendar#roll methods take this into account, so that adding 1 month to Shevat gives the proper result (Adar) in a non-leap year. The protected utility method `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#pinField(kotlin.Int)` is often useful when implementing these two methods.
+- Optionally, subclasses may override #roll and add to handle fields that are discontinuous. For example, in the Hebrew calendar the month "Adar I" only occurs in leap years; in other years the calendar jumps from Shevat (month #4) to Adar (month #6). The add and android.icu.util.HebrewCalendar#roll methods take this into account, so that adding 1 month to Shevat gives the proper result (Adar) in a non-leap year. The protected utility method pinField is often useful when implementing these two methods.
 
 Normalized behavior
 
@@ -176,7 +176,7 @@ The allowable range of `Calendar` has been narrowed. `GregorianCalendar` used to
 
 General notes
 
-- Calendars implementations are *proleptic* . For example, even though the Gregorian calendar was not instituted until the 16th century, the `GregorianCalendar` class supports dates before the historical onset of the calendar by extending the calendar system backward in time. Similarly, the `HebrewCalendar` extends backward before the start of its epoch into zero and negative years. Subclasses do not throw exceptions because a date precedes the historical start of a calendar system. Instead, they implement `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)` to return appropriate limits on `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, etc. fields. Then, if the calendar is set to not be lenient, out-of-range field values will trigger an exception.
+- Calendars implementations are *proleptic* . For example, even though the Gregorian calendar was not instituted until the 16th century, the `GregorianCalendar` class supports dates before the historical onset of the calendar by extending the calendar system backward in time. Similarly, the `HebrewCalendar` extends backward before the start of its epoch into zero and negative years. Subclasses do not throw exceptions because a date precedes the historical start of a calendar system. Instead, they implement handleGetLimit to return appropriate limits on `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#ERA:kotlin.Int`, etc. fields. Then, if the calendar is set to not be lenient, out-of-range field values will trigger an exception.
 - Calendar system subclasses compute a *extended year* . This differs from the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` field in that it ranges over all integer values, including zero and negative values, and it encapsulates the information of the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` field and all larger fields. Thus, for the Gregorian calendar, the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int` is computed as `ERA==AD ? YEAR : 1-YEAR`. Another example is the Mayan long count, which has years (`KUN`) and nested cycles of years (`KATUN` and `BAKTUN`). The Mayan `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int` is computed as `TUN + 20 * (KATUN + 20 * BAKTUN)`. The `Calendar` base class uses the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#EXTENDED_YEAR:kotlin.Int` field to compute the week-related fields.
 
 ## Summary
@@ -268,10 +268,10 @@ General notes
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#UNDECIMBER:kotlin.Int` Value of the `MONTH` field indicating the thirteenth month of the year. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#UNSET:kotlin.Int` Value of the time stamp `stamp[]` indicating that a field has not been set since the last call to `clear()`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_FIRST:kotlin.Int` **\[icu\]** Option used by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)` specifying an ambiguous wall time to be interpreted as the earliest. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_LAST:kotlin.Int` **\[icu\]** Option used by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)` specifying an ambiguous wall time to be interpreted as the latest. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_FIRST:kotlin.Int` **\[icu\]** Option used by setRepeatedWallTimeOption and setSkippedWallTimeOption specifying an ambiguous wall time to be interpreted as the earliest. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_LAST:kotlin.Int` **\[icu\]** Option used by setRepeatedWallTimeOption and setSkippedWallTimeOption specifying an ambiguous wall time to be interpreted as the latest. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_NEXT_VALID:kotlin.Int` **\[icu\]** Option used by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)` specifying an ambiguous wall time to be interpreted as the next valid wall time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_NEXT_VALID:kotlin.Int` **\[icu\]** Option used by setSkippedWallTimeOption specifying an ambiguous wall time to be interpreted as the next valid wall time. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEDNESDAY:kotlin.Int` Value of the `DAY_OF_WEEK` field indicating Wednesday. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int` Field number for `get` and `set` indicating the week number within the current month. |
 | --- | --- |
@@ -283,167 +283,167 @@ General notes
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#Calendar()()` Constructs a Calendar with the default time zone and the default `FORMAT` locale. |
-| `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#Calendar(android.icu.util.TimeZone,%20android.icu.util.ULocale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Constructs a calendar with the specified time zone and locale. |
-| `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#Calendar(android.icu.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Constructs a calendar with the specified time zone and locale. |
+| Calendar Constructs a Calendar with the default time zone and the default `FORMAT` locale. |
+| Calendar Constructs a calendar with the specified time zone and locale. |
+| Calendar Constructs a calendar with the specified time zone and locale. |
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, amount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add a signed amount to a specified field, using this calendar's rules. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#after(kotlin.Any)(when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Compares the time field records. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#before(kotlin.Any)(when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Compares the time field records. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | add Add a signed amount to a specified field, using this calendar's rules. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | after Compares the time field records. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | before Compares the time field records. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#clear()()` Clears the values of all the time fields. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#clear(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Clears the value in the given time field. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#clone()()` Overrides Cloneable |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Clears the values of all the time fields. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | clear Clears the value in the given time field. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | clone Overrides Cloneable |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#compareTo(android.icu.util.Calendar)(other: https://developer.android.com/reference/kotlin/android/icu/util/Calendar#!)` Compares the times (in millis) represented by two `Calendar` objects. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this calendar to the specified object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#fieldDifference(java.util.Date,%20kotlin.Int)(when: https://developer.android.com/reference/kotlin/java/util/Date.html#!, field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **\[icu\]** Returns the difference between the given time and the time this calendar object is set to. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares the times (in millis) represented by two `Calendar` objects. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this calendar to the specified object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | fieldDifference **\[icu\]** Returns the difference between the given time and the time this calendar object is set to. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#get(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value for a given time field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum value that this field could have, given the current date. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value that this field could have, given the current date. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | get Returns the value for a given time field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActualMaximum Returns the maximum value that this field could have, given the current date. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getActualMinimum Returns the minimum value that this field could have, given the current date. |
 | --- | --- |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getAvailableLocales()()` Returns the list of locales for which Calendars are installed. |
-| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDateTimeFormat(kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, loc: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
-| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDateTimeFormat(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, loc: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | getAvailableLocales Returns the list of locales for which Calendars are installed. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | getDateTimeFormat **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | getDateTimeFormat **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDisplayName(android.icu.util.ULocale)(loc: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns the name of this calendar in the language of the given locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDisplayName(java.util.Locale)(loc: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the name of this calendar in the language of the given locale. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFieldCount()()` **\[icu\]** Returns the number of fields defined by this calendar. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns the name of this calendar in the language of the given locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getDisplayName Returns the name of this calendar in the language of the given locale. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFieldCount **\[icu\]** Returns the number of fields defined by this calendar. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()()` Returns what the first day of the week is, where 1 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SUNDAY:kotlin.Int` and 7 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SATURDAY:kotlin.Int`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGreatestMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the highest minimum value for the given field if varies. |
-| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance()()` Returns a calendar using the default time zone and locale. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getFirstDayOfWeek Returns what the first day of the week is, where 1 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SUNDAY:kotlin.Int` and 7 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SATURDAY:kotlin.Int`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGreatestMinimum Returns the highest minimum value for the given field if varies. |
+| open static [Calendar](Calendar.md)! | getInstance Returns a calendar using the default time zone and locale. |
 | --- | --- |
-| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!)` Returns a calendar using the specified time zone and default locale. |
-| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone,%20android.icu.util.ULocale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a calendar with the specified time zone and locale. |
-| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a calendar with the specified time zone and locale. |
+| open static [Calendar](Calendar.md)! | getInstance Returns a calendar using the specified time zone and default locale. |
+| open static [Calendar](Calendar.md)! | getInstance Returns a calendar with the specified time zone and locale. |
+| open static [Calendar](Calendar.md)! | getInstance Returns a calendar with the specified time zone and locale. |
 | --- | --- |
-| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a calendar using the default time zone and specified locale. |
-| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(java.util.Locale)(aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a calendar using the default time zone and specified locale. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getKeywordValuesForLocale(kotlin.String,%20android.icu.util.ULocale,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!, commonlyUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` **\[icu\]** Given a key and a locale, returns an array of string values in a preferred order that would make a difference. |
+| open static [Calendar](Calendar.md)! | getInstance Returns a calendar using the default time zone and specified locale. |
+| open static [Calendar](Calendar.md)! | getInstance Returns a calendar using the default time zone and specified locale. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getKeywordValuesForLocale **\[icu\]** Given a key and a locale, returns an array of string values in a preferred order that would make a difference. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLeastMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the lowest maximum value for the given field if varies. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum value for the given time field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()()` Returns what the minimal days required in the first week of the year are. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLeastMaximum Returns the lowest maximum value for the given field if varies. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMaximum Returns the maximum value for the given time field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinimalDaysInFirstWeek Returns what the minimal days required in the first week of the year are. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value for the given time field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getRepeatedWallTimeOption()()` **\[icu\]**Gets the behavior for handling wall time repeating multiple times at negative time zone offset transitions. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getSkippedWallTimeOption()()` **\[icu\]**Gets the behavior for handling skipped wall time at positive time zone offset transitions. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMinimum Returns the minimum value for the given time field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getRepeatedWallTimeOption **\[icu\]**Gets the behavior for handling wall time repeating multiple times at negative time zone offset transitions. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSkippedWallTimeOption **\[icu\]**Gets the behavior for handling skipped wall time at positive time zone offset transitions. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTemporalMonthCode()()` Gets The Temporal monthCode value corresponding to the month for the date. |
-| [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTime()()` Returns this Calendar's current time. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTimeInMillis()()` Returns this Calendar's current time as a long. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getTemporalMonthCode Gets The Temporal monthCode value corresponding to the month for the date. |
+| [Date](../java.util/Date.md)! | getTime Returns this Calendar's current time. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getTimeInMillis Returns this Calendar's current time as a long. |
 | --- | --- |
-| open [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTimeZone()()` Returns the time zone. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getType()()` **\[icu\]** Returns the calendar type name string for this Calendar object. |
-| open [Calendar.WeekData](../android/icu/util/Calendar.WeekData.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getWeekData()()` **\[icu\]** Return simple, immutable struct-like class for access to the week data in this calendar. |
+| open [TimeZone](TimeZone.md)! | getTimeZone Returns the time zone. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | getType **\[icu\]** Returns the calendar type name string for this Calendar object. |
+| open [Calendar.WeekData](../android/icu/util/Calendar.WeekData.md)! | getWeekData **\[icu\]** Return simple, immutable struct-like class for access to the week data in this calendar. |
 | --- | --- |
-| open static [Calendar.WeekData](../android/icu/util/Calendar.WeekData.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getWeekDataForRegion(kotlin.String)(region: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` **\[icu\]** Return simple, immutable struct-like class for access to the CLDR week data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#hashCode()()` Returns a hash code for this calendar. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#inTemporalLeapYear()()` **\[icu\]** Returns true if the date is in a leap year. |
+| open static [Calendar.WeekData](../android/icu/util/Calendar.WeekData.md)! | getWeekDataForRegion **\[icu\]** Return simple, immutable struct-like class for access to the CLDR week data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code for this calendar. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | inTemporalLeapYear **\[icu\]** Returns true if the date is in a leap year. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isEquivalentTo(android.icu.util.Calendar)(other: https://developer.android.com/reference/kotlin/android/icu/util/Calendar#!)` **\[icu\]** Returns true if the given Calendar object is equivalent to this one. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isLenient()()` Tell whether date/time interpretation is to be lenient. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isSet(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the given time field has a value set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isEquivalentTo **\[icu\]** Returns true if the given Calendar object is equivalent to this one. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isLenient Tell whether date/time interpretation is to be lenient. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSet Determines if the given time field has a value set. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isWeekend()()` **\[icu\]** Returns true if this Calendar's current date and time is in the weekend in this calendar system. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isWeekend(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` **\[icu\]** Returns true if the given date and time is in the weekend in this calendar system. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#roll(kotlin.Int,%20kotlin.Boolean)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, up: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Rolls (up/down) a single unit of time on the given field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWeekend **\[icu\]** Returns true if this Calendar's current date and time is in the weekend in this calendar system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isWeekend **\[icu\]** Returns true if the given date and time is in the weekend in this calendar system. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | roll Rolls (up/down) a single unit of time on the given field. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#roll(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, amount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Rolls (up/down) a specified amount time on the given field. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#set(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the time field with the given value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the values for the fields year, month, and date. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | roll Rolls (up/down) a specified amount time on the given field. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the time field with the given value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the values for the fields year, month, and date. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the values for the fields year, month, date, hour, and minute. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#set(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, date: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, hour: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, minute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, second: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the values for the fields year, month, date, hour, minute, and second. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setFirstDayOfWeek(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets what the first day of the week is, where 1 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SUNDAY:kotlin.Int` and 7 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SATURDAY:kotlin.Int`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the values for the fields year, month, date, hour, and minute. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | set Sets the values for the fields year, month, date, hour, minute, and second. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setFirstDayOfWeek Sets what the first day of the week is, where 1 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SUNDAY:kotlin.Int` and 7 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SATURDAY:kotlin.Int`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setLenient(kotlin.Boolean)(lenient: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specify whether or not date/time interpretation is to be lenient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setMinimalDaysInFirstWeek(kotlin.Int)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets what the minimal days required in the first week of the year are. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)(option: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **\[icu\]**Sets the behavior for handling wall time repeating multiple times at negative time zone offset transitions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setLenient Specify whether or not date/time interpretation is to be lenient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMinimalDaysInFirstWeek Sets what the minimal days required in the first week of the year are. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRepeatedWallTimeOption **\[icu\]**Sets the behavior for handling wall time repeating multiple times at negative time zone offset transitions. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)(option: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` **\[icu\]**Sets the behavior for handling skipped wall time at positive time zone offset transitions. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setTemporalMonthCode(kotlin.String)(temporalMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets The Temporal monthCode which is a string identifier that starts with the literal grapheme "M" followed by two graphemes representing the zero-padded month number of the current month in a normal (non-leap) year and suffixed by an optional literal grapheme "L" if this is a leap month in a lunisolar calendar. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setTime(java.util.Date)(date: https://developer.android.com/reference/kotlin/java/util/Date.html#!)` Sets this Calendar's current time with the given Date. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setSkippedWallTimeOption **\[icu\]**Sets the behavior for handling skipped wall time at positive time zone offset transitions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTemporalMonthCode Sets The Temporal monthCode which is a string identifier that starts with the literal grapheme "M" followed by two graphemes representing the zero-padded month number of the current month in a normal (non-leap) year and suffixed by an optional literal grapheme "L" if this is a leap month in a lunisolar calendar. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTime Sets this Calendar's current time with the given Date. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setTimeInMillis(kotlin.Long)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets this Calendar's current time from the given long value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setTimeZone(android.icu.util.TimeZone)(value: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!)` Sets the time zone with the given time zone value. |
-| open [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setWeekData(android.icu.util.Calendar.WeekData)(wdata: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.WeekData!)` **\[icu\]** Set data in this calendar based on the WeekData input. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTimeInMillis Sets this Calendar's current time from the given long value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setTimeZone Sets the time zone with the given time zone value. |
+| open [Calendar](Calendar.md)! | setWeekData **\[icu\]** Set data in this calendar based on the WeekData input. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#toString()()` Returns a string representation of this calendar. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of this calendar. |
 
 | Protected methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#complete()()` Fills in any unset fields in the time field list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeFields()()` Converts the current millisecond time value `time` to field values in `fields[]`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianFields(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compute the Gregorian calendar year, month, and day of month from the Julian day. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | complete Fills in any unset fields in the time field list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | computeFields Converts the current millisecond time value `time` to field values in `fields[]`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | computeGregorianFields Compute the Gregorian calendar year, month, and day of month from the Julian day. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianMonthStart(kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Compute the Julian day of a month of the Gregorian calendar. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeJulianDay()()` Compute the Julian day number as specified by this calendar's fields. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeMillisInDay()()` Compute the milliseconds in the day from the fields. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | computeGregorianMonthStart Compute the Julian day of a month of the Gregorian calendar. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | computeJulianDay Compute the Julian day number as specified by this calendar's fields. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | computeMillisInDay Compute the milliseconds in the day from the fields. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeTime()()` Converts the current field values in `fields[]` to the millisecond time value `time`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeZoneOffset(kotlin.Long,%20kotlin.Int)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, millisInDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method can assume EXTENDED_YEAR has been set. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#fieldName(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a string name for a field, for debugging and exceptions. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | computeTime Converts the current field values in `fields[]` to the millisecond time value `time`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | computeZoneOffset This method can assume EXTENDED_YEAR has been set. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | fieldName Returns a string name for a field, for debugging and exceptions. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#floorDivide(kotlin.Int,%20kotlin.Int)(numerator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, denominator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Divide two integers, returning the floor of the quotient. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#floorDivide(kotlin.Int,%20kotlin.Int,%20kotlin.IntArray)(numerator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, denominator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, remainder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Divide two integers, returning the floor of the quotient, and the modulus remainder. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#floorDivide(kotlin.Long,%20kotlin.Int,%20kotlin.IntArray)(numerator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, denominator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, remainder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Divide two integers, returning the floor of the quotient, and the modulus remainder. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorDivide Divide two integers, returning the floor of the quotient. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorDivide Divide two integers, returning the floor of the quotient, and the modulus remainder. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | floorDivide Divide two integers, returning the floor of the quotient, and the modulus remainder. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#floorDivide(kotlin.Long,%20kotlin.Long)(numerator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, denominator: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Divide two long integers, returning the floor of the quotient. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\>!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFieldResolutionTable()()` Returns the field resolution array for this calendar. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGregorianDayOfMonth()()` Returns the day of month (1-based) on the Gregorian calendar as computed by `computeGregorianFields()`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | floorDivide Divide two long integers, returning the floor of the quotient. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\>!\>! | getFieldResolutionTable Returns the field resolution array for this calendar. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGregorianDayOfMonth Returns the day of month (1-based) on the Gregorian calendar as computed by `computeGregorianFields()`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGregorianDayOfYear()()` Returns the day of year (1-based) on the Gregorian calendar as computed by `computeGregorianFields()`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGregorianMonth()()` Returns the month (0-based) on the Gregorian calendar as computed by `computeGregorianFields()`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGregorianYear()()` Returns the extended year on the Gregorian calendar as computed by `computeGregorianFields()`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGregorianDayOfYear Returns the day of year (1-based) on the Gregorian calendar as computed by `computeGregorianFields()`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGregorianMonth Returns the month (0-based) on the Gregorian calendar as computed by `computeGregorianFields()`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGregorianYear Returns the extended year on the Gregorian calendar as computed by `computeGregorianFields()`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a limit for a field. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getStamp(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the timestamp of a field. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#gregorianMonthLength(kotlin.Int,%20kotlin.Int)(y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, m: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the length of a month of the Gregorian calendar. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getLimit Returns a limit for a field. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getStamp Returns the timestamp of a field. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | gregorianMonthLength Returns the length of a month of the Gregorian calendar. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#gregorianPreviousMonthLength(kotlin.Int,%20kotlin.Int)(y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, m: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the length of a previous month of the Gregorian calendar. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeFields(kotlin.Int)(julianDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Subclasses may override this method to compute several fields specific to each calendar system. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeJulianDay(kotlin.Int)(bestField: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Subclasses may override this. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | gregorianPreviousMonthLength Returns the length of a previous month of the Gregorian calendar. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | handleComputeFields Subclasses may override this method to compute several fields specific to each calendar system. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | handleComputeJulianDay Subclasses may override this. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(eyear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the Julian day number of day before the first day of the given month in the given extended year. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleCreateFields()()` Subclasses that use additional fields beyond those defined in `Calendar` should override this method to return an `int[]` array of the appropriate length. |
-| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20android.icu.util.ULocale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Creates a `DateFormat` appropriate to this calendar. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | handleComputeMonthStart Returns the Julian day number of day before the first day of the given month in the given extended year. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | handleCreateFields Subclasses that use additional fields beyond those defined in `Calendar` should override this method to return an `int[]` array of the appropriate length. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | handleGetDateFormat Creates a `DateFormat` appropriate to this calendar. |
 | --- | --- |
-| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, override: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `DateFormat` appropriate to this calendar. |
-| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `DateFormat` appropriate to this calendar. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetExtendedYear()()` Returns the extended year defined by the current fields. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | handleGetDateFormat Creates a `DateFormat` appropriate to this calendar. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | handleGetDateFormat Creates a `DateFormat` appropriate to this calendar. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | handleGetExtendedYear Returns the extended year defined by the current fields. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Subclass API for defining limits of different types. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetMonthLength(kotlin.Int,%20kotlin.Int)(extendedYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the number of days in the given month of the given extended year of this calendar system. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetYearLength(kotlin.Int)(eyear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the number of days in the given extended year of this calendar system. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | handleGetLimit Subclass API for defining limits of different types. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | handleGetMonthLength Returns the number of days in the given month of the given extended year of this calendar system. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | handleGetYearLength Returns the number of days in the given extended year of this calendar system. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#internalGet(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value for a given time field. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#internalGet(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the value for a given time field, or return the given default value if the field is not set. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#internalGetTimeInMillis()()` Returns the current milliseconds without recomputing. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | internalGet Returns the value for a given time field. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | internalGet Returns the value for a given time field, or return the given default value if the field is not set. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | internalGetTimeInMillis Returns the current milliseconds without recomputing. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#internalSet(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set a field to a value. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isGregorianLeapYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the given year is a leap year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#julianDayToDayOfWeek(kotlin.Int)(julian: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the day of week, from SUNDAY to SATURDAY, given a Julian day. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | internalSet Set a field to a value. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isGregorianLeapYear Determines if the given year is a leap year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | julianDayToDayOfWeek Returns the day of week, from SUNDAY to SATURDAY, given a Julian day. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#julianDayToMillis(kotlin.Int)(julian: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts Julian day to time as milliseconds. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#millisToJulianDay(kotlin.Long)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Converts time as milliseconds to Julian day. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#newerField(kotlin.Int,%20kotlin.Int)(defaultField: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, alternateField: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the field that is newer, either defaultField, or alternateField. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | julianDayToMillis Converts Julian day to time as milliseconds. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | millisToJulianDay Converts time as milliseconds to Julian day. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | newerField Returns the field that is newer, either defaultField, or alternateField. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#newestStamp(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(first: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, last: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, bestStampSoFar: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the newest stamp of a given range of fields. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#pinField(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Adjust the specified field so that it is within the allowable range for the date to which this calendar is set. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#prepareGetActual(kotlin.Int,%20kotlin.Boolean)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, isMinimum: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Prepare this calendar for computing the actual minimum or maximum. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | newestStamp Returns the newest stamp of a given range of fields. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | pinField Adjust the specified field so that it is within the allowable range for the date to which this calendar is set. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | prepareGetActual Prepare this calendar for computing the actual minimum or maximum. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#resolveFields(kotlin.Array)(precedenceTable: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!>!>!)` Given a precedence table, return the newest field combination in the table, or -1 if none is found. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Validate a single field of this calendar. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Validate a single field of this calendar given its minimum and maximum allowed value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | resolveFields Given a precedence table, return the newest field combination in the table, or -1 if none is found. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | validateField Validate a single field of this calendar. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | validateField Validate a single field of this calendar given its minimum and maximum allowed value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateFields()()` Ensure that each field is within its valid range by calling `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int)` on each field that has been set. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#weekNumber(kotlin.Int,%20kotlin.Int)(dayOfPeriod: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the week number of a day, within a period. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#weekNumber(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(desiredDay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfPeriod: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfWeek: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the week number of a day, within a period. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | validateFields Ensure that each field is within its valid range by calling validateField on each field that has been set. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | weekNumber Returns the week number of a day, within a period. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | weekNumber Returns the week number of a day, within a period. |
 | --- | --- |
 
 | Properties ||
@@ -569,7 +569,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DAY_OF_WEEK_IN_MONTH: Int
 ```
 
-Field number for `get` and `set` indicating the ordinal number of the day of the week within the current month. Together with the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_WEEK:kotlin.Int` field, this uniquely specifies a day within a month. Unlike `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int`, this field's value does *not* depend on `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()` or `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()`. `DAY_OF_MONTH 1` through `7` always correspond to `DAY_OF_WEEK_IN_MONTH 1`; `8` through `15` correspond to `DAY_OF_WEEK_IN_MONTH 2`, and so on. `DAY_OF_WEEK_IN_MONTH 0` indicates the week before `DAY_OF_WEEK_IN_MONTH 1`. Negative values count back from the end of the month, so the last Sunday of a month is specified as `DAY_OF_WEEK = SUNDAY, DAY_OF_WEEK_IN_MONTH = -1`. Because negative values count backward they will usually be aligned differently within the month than positive values. For example, if a month has 31 days, `DAY_OF_WEEK_IN_MONTH -1` will overlap `DAY_OF_WEEK_IN_MONTH 5` and the end of `4`.
+Field number for `get` and `set` indicating the ordinal number of the day of the week within the current month. Together with the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_WEEK:kotlin.Int` field, this uniquely specifies a day within a month. Unlike `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int`, this field's value does *not* depend on getFirstDayOfWeek or getMinimalDaysInFirstWeek. `DAY_OF_MONTH 1` through `7` always correspond to `DAY_OF_WEEK_IN_MONTH 1`; `8` through `15` correspond to `DAY_OF_WEEK_IN_MONTH 2`, and so on. `DAY_OF_WEEK_IN_MONTH 0` indicates the week before `DAY_OF_WEEK_IN_MONTH 1`. Negative values count back from the end of the month, so the last Sunday of a month is specified as `DAY_OF_WEEK = SUNDAY, DAY_OF_WEEK_IN_MONTH = -1`. Because negative values count backward they will usually be aligned differently within the month than positive values. For example, if a month has 31 days, `DAY_OF_WEEK_IN_MONTH -1` will overlap `DAY_OF_WEEK_IN_MONTH 5` and the end of `4`.
 
  Value: 8
 
@@ -705,8 +705,8 @@ Limit type for `getLimit()` and `handleGetLimit()` indicating the greatest minim
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLimit(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)`
+- getLimit
+- handleGetLimit
 
 ### HOUR
 
@@ -844,8 +844,8 @@ Limit type for `getLimit()` and `handleGetLimit()` indicating the least maximum 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLimit(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)`
+- getLimit
+- handleGetLimit
 
 ### MARCH
 
@@ -873,8 +873,8 @@ Limit type for `getLimit()` and `handleGetLimit()` indicating the maximum value 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLimit(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)`
+- getLimit
+- handleGetLimit
 
 ### MAX_FIELD_COUNT
 
@@ -969,8 +969,8 @@ Limit type for `getLimit()` and `handleGetLimit()` indicating the minimum value 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLimit(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)`
+- getLimit
+- handleGetLimit
 
 ### MINIMUM_USER_STAMP
 
@@ -1191,7 +1191,7 @@ Value to OR against resolve table field values for remapping.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#resolveFields(kotlin.Array)`
+- resolveFields
 
 ### SATURDAY
 
@@ -1273,7 +1273,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val UNDECIMBER: Int
 ```
 
-Value of the `MONTH` field indicating the thirteenth month of the year. Although `https://developer.android.com/reference/kotlin/android/icu/util/GregorianCalendar` does not use this value, lunar calendars do.
+Value of the `MONTH` field indicating the thirteenth month of the year. Although GregorianCalendar does not use this value, lunar calendars do.
 
  Value: 12
 
@@ -1302,16 +1302,16 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val WALLTIME_FIRST: Int
 ```
 
-**\[icu\]** Option used by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)` specifying an ambiguous wall time to be interpreted as the earliest.
+**\[icu\]** Option used by setRepeatedWallTimeOption and setSkippedWallTimeOption specifying an ambiguous wall time to be interpreted as the earliest.
 
  Value: 1
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getRepeatedWallTimeOption()`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getSkippedWallTimeOption()`
+- setRepeatedWallTimeOption
+- getRepeatedWallTimeOption
+- setSkippedWallTimeOption
+- getSkippedWallTimeOption
 
 ### WALLTIME_LAST
 
@@ -1321,16 +1321,16 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val WALLTIME_LAST: Int
 ```
 
-**\[icu\]** Option used by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)` specifying an ambiguous wall time to be interpreted as the latest.
+**\[icu\]** Option used by setRepeatedWallTimeOption and setSkippedWallTimeOption specifying an ambiguous wall time to be interpreted as the latest.
 
  Value: 0
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getRepeatedWallTimeOption()`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getSkippedWallTimeOption()`
+- setRepeatedWallTimeOption
+- getRepeatedWallTimeOption
+- setSkippedWallTimeOption
+- getSkippedWallTimeOption
 
 ### WALLTIME_NEXT_VALID
 
@@ -1340,14 +1340,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val WALLTIME_NEXT_VALID: Int
 ```
 
-**\[icu\]** Option used by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)` specifying an ambiguous wall time to be interpreted as the next valid wall time.
+**\[icu\]** Option used by setSkippedWallTimeOption specifying an ambiguous wall time to be interpreted as the next valid wall time.
 
  Value: 2
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getSkippedWallTimeOption()`
+- setSkippedWallTimeOption
+- getSkippedWallTimeOption
 
 ### WEDNESDAY
 
@@ -1369,14 +1369,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val WEEK_OF_MONTH: Int
 ```
 
-Field number for `get` and `set` indicating the week number within the current month. The first week of the month, as defined by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()`, has value 1. Subclasses define the value of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int` for days before the first week of the month.
+Field number for `get` and `set` indicating the week number within the current month. The first week of the month, as defined by getFirstDayOfWeek and getMinimalDaysInFirstWeek, has value 1. Subclasses define the value of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_MONTH:kotlin.Int` for days before the first week of the month.
 
  Value: 4
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()`
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### WEEK_OF_YEAR
 
@@ -1386,14 +1386,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val WEEK_OF_YEAR: Int
 ```
 
-Field number for `get` and `set` indicating the week number within the current year. The first week of the year, as defined by `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()`, has value 1. Subclasses define the value of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int` for days before the first week of the year.
+Field number for `get` and `set` indicating the week number within the current year. The first week of the year, as defined by getFirstDayOfWeek and getMinimalDaysInFirstWeek, has value 1. Subclasses define the value of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WEEK_OF_YEAR:kotlin.Int` for days before the first week of the year.
 
  Value: 3
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()`
+- getFirstDayOfWeek
+- getMinimalDaysInFirstWeek
 
 ### YEAR
 
@@ -1444,7 +1444,7 @@ protected Calendar()
 Constructs a Calendar with the default time zone and the default `FORMAT` locale.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/TimeZone#getDefault()`
+- getDefault
 - `https://developer.android.com/reference/kotlin/android/icu/util/ULocale.Category`
 
 ### Calendar
@@ -1505,9 +1505,9 @@ Adding a positive value always means moving forward in time, so for the Gregoria
 **Note:** You should always use `roll` and `add` rather than attempting to perform arithmetic operations directly on the fields of a `Calendar`. It is quite possible for `Calendar` subclasses to have fields with non-linear behavior, for example missing months or days during non-leap years. The subclasses' `add` and `roll` methods will take this into account, while simple arithmetic manipulations may give invalid results.
 
 **Subclassing:** 
-This implementation of `add` assumes that the behavior of the field is continuous between its minimum and maximum, which are found by calling `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)`. For such fields, simple arithmetic operations are sufficient to perform the add.
+This implementation of `add` assumes that the behavior of the field is continuous between its minimum and maximum, which are found by calling getActualMinimum and getActualMaximum. For such fields, simple arithmetic operations are sufficient to perform the add.
 
-Subclasses that have fields for which this assumption of continuity breaks down must override `add` to handle those fields specially. For example, in the Hebrew calendar the month "Adar I" only occurs in leap years; in other years the calendar jumps from Shevat (month #4) to Adar (month #6). The `https://developer.android.com/reference/kotlin/android/icu/util/HebrewCalendar#add(kotlin.Int,%20kotlin.Int)` method takes this into account, so that adding one month to a date in Shevat gives the proper result (Adar) in a non-leap year.
+Subclasses that have fields for which this assumption of continuity breaks down must override `add` to handle those fields specially. For example, in the Hebrew calendar the month "Adar I" only occurs in leap years; in other years the calendar jumps from Shevat (month #4) to Adar (month #6). The add method takes this into account, so that adding one month to a date in Shevat gives the proper result (Adar) in a non-leap year.
 
 <br />
 
@@ -1522,7 +1522,7 @@ Subclasses that have fields for which this assumption of continuity breaks down 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#roll(kotlin.Int,%20kotlin.Int)`
+- roll
 
 ### after
 
@@ -1731,8 +1731,8 @@ The actual maximum computation ignores smaller fields and the current value of l
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMaximum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLeastMaximum(kotlin.Int)`
+- getMaximum
+- getLeastMaximum
 
 ### getActualMinimum
 
@@ -1742,9 +1742,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getActualMinimum(field: Int): Int
 ```
 
-Returns the minimum value that this field could have, given the current date. For most fields, this is the same as `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimum(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGreatestMinimum(kotlin.Int)`. However, some fields, especially those related to week number, are more complicated.
+Returns the minimum value that this field could have, given the current date. For most fields, this is the same as getMinimum and getGreatestMinimum. However, some fields, especially those related to week number, are more complicated.
 
-For example, assume `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()` returns 4 and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()` returns SUNDAY. If the first day of the month is Sunday, Monday, Tuesday, or Wednesday there will be four or more days in the first week, so it will be week number 1, and `getActualMinimum(WEEK_OF_MONTH)` will return 1. However, if the first of the month is a Thursday, Friday, or Saturday, there are *not* four days in that week, so it is week number 0, and `getActualMinimum(WEEK_OF_MONTH)` will return 0.
+For example, assume getMinimalDaysInFirstWeek returns 4 and getFirstDayOfWeek returns SUNDAY. If the first day of the month is Sunday, Monday, Tuesday, or Wednesday there will be four or more days in the first week, so it will be week number 1, and `getActualMinimum(WEEK_OF_MONTH)` will return 1. However, if the first of the month is a Thursday, Friday, or Saturday, there are *not* four days in that week, so it is week number 0, and `getActualMinimum(WEEK_OF_MONTH)` will return 0.
 
 <br />
 
@@ -1758,8 +1758,8 @@ For example, assume `https://developer.android.com/reference/kotlin/android/icu/
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGreatestMinimum(kotlin.Int)`
+- getMinimum
+- getGreatestMinimum
 
 ### getAvailableLocales
 
@@ -2086,7 +2086,7 @@ open fun getRepeatedWallTimeOption(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setRepeatedWallTimeOption(kotlin.Int)`
+- setRepeatedWallTimeOption
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_FIRST:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_LAST:kotlin.Int`
 
@@ -2106,7 +2106,7 @@ open fun getSkippedWallTimeOption(): Int
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setSkippedWallTimeOption(kotlin.Int)`
+- setSkippedWallTimeOption
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_FIRST:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_LAST:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_NEXT_VALID:kotlin.Int`
@@ -2297,7 +2297,7 @@ open fun isWeekend(): Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isWeekend(java.util.Date)`
+- isWeekend
 
 ### isWeekend
 
@@ -2319,7 +2319,7 @@ open fun isWeekend(date: Date!): Boolean
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isWeekend()`
+- isWeekend
 
 ### roll
 
@@ -2336,7 +2336,7 @@ Rolls (up/down) a single unit of time on the given field. If the field is rolled
 
 ``roll(`https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DATE:kotlin.Int`, true)``
 
-When rolling on the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` field, it will roll the year value in the range between 1 and the value returned by calling `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMaximum(kotlin.Int)`(`https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`).
+When rolling on the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int` field, it will roll the year value in the range between 1 and the value returned by calling getMaximum(`https://developer.android.com/reference/kotlin/android/icu/util/Calendar#YEAR:kotlin.Int`).
 
 When rolling on certain fields, the values of other fields may conflict and need to be changed. For example, when rolling the `MONTH` field for the Gregorian date 1/31/96 upward, the `DAY_OF_MONTH` field must be adjusted so that the result is 2/29/96 rather than the invalid 2/31/96.
 
@@ -2359,8 +2359,8 @@ Rolling up always means rolling forward in time (unless the limit of the field i
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#roll(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)`
+- roll
+- add
 
 ### roll
 
@@ -2384,7 +2384,7 @@ Rolling by a positive value always means rolling forward in time (unless the lim
 **Note:** You should always use `roll` and `add` rather than attempting to perform arithmetic operations directly on the fields of a `Calendar`. It is quite possible for `Calendar` subclasses to have fields with non-linear behavior, for example missing months or days during non-leap years. The subclasses' `add` and `roll` methods will take this into account, while simple arithmetic manipulations may give invalid results.
 
 **Subclassing:** 
-This implementation of `roll` assumes that the behavior of the field is continuous between its minimum and maximum, which are found by calling `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)`. For most such fields, simple addition, subtraction, and modulus operations are sufficient to perform the roll. For week-related fields, the results of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()` are also necessary. Subclasses can override these two methods if their values differ from the defaults.
+This implementation of `roll` assumes that the behavior of the field is continuous between its minimum and maximum, which are found by calling getActualMinimum and getActualMaximum. For most such fields, simple addition, subtraction, and modulus operations are sufficient to perform the roll. For week-related fields, the results of getFirstDayOfWeek and getMinimalDaysInFirstWeek are also necessary. Subclasses can override these two methods if their values differ from the defaults.
 
 Subclasses that have fields for which the assumption of continuity breaks down must override `roll` to handle those fields specially. For example, in the Hebrew calendar the month "Adar I" only occurs in leap years; in other years the calendar jumps from Shevat (month #4) to Adar (month #6). The android.icu.util.HebrewCalendar#roll method takes this into account, so that rolling the month of Shevat by one gives the proper result (Adar) in a non-leap year.
 
@@ -2401,8 +2401,8 @@ Subclasses that have fields for which the assumption of continuity breaks down m
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#roll(kotlin.Int,%20kotlin.Boolean)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)`
+- roll
+- add
 
 ### set
 
@@ -2434,7 +2434,7 @@ fun set(
 ): Unit
 ```
 
-Sets the values for the fields year, month, and date. Previous values of other fields are retained. If this is not desired, call `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#clear()` first.
+Sets the values for the fields year, month, and date. Previous values of other fields are retained. If this is not desired, call clear first.
 
 | Parameters ||
 |---|---|
@@ -2457,7 +2457,7 @@ fun set(
 ): Unit
 ```
 
-Sets the values for the fields year, month, date, hour, and minute. Previous values of other fields are retained. If this is not desired, call `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#clear()` first.
+Sets the values for the fields year, month, date, hour, and minute. Previous values of other fields are retained. If this is not desired, call clear first.
 
 | Parameters ||
 |---|---|
@@ -2521,7 +2521,7 @@ open fun setLenient(lenient: Boolean): Unit
 Specify whether or not date/time interpretation is to be lenient. With lenient interpretation, a date such as "February 942, 1996" will be treated as being equivalent to the 941st day after February 1, 1996. With strict interpretation, such dates will cause an exception to be thrown.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/text/DateFormat.html#setLenient(kotlin.Boolean)`
+- setLenient
 
 ### setMinimalDaysInFirstWeek
 
@@ -2557,7 +2557,7 @@ open fun setRepeatedWallTimeOption(option: Int): Unit
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getRepeatedWallTimeOption()`
+- getRepeatedWallTimeOption
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_FIRST:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_LAST:kotlin.Int`
 
@@ -2571,7 +2571,7 @@ open fun setSkippedWallTimeOption(option: Int): Unit
 
 **\[icu\]** Sets the behavior for handling skipped wall time at positive time zone offset transitions. For example, 2:30 AM on March 13, 2011 in US Eastern time (America/New_York) does not exist because the wall time jump from 1:59 AM EST to 3:00 AM EDT. When `WALLTIME_FIRST` is used, 2:30 AM is interpreted as 30 minutes before 3:00 AM EDT, therefore, it will be resolved as 1:30 AM EST. When `WALLTIME_LAST` is used, 2:30 AM is interpreted as 31 minutes after 1:59 AM EST, therefore, it will be resolved as 3:30 AM EDT. When `WALLTIME_NEXT_VALID` is used, 2:30 AM will be resolved as next valid wall time, that is 3:00 AM EDT. The default value is `WALLTIME_LAST`.
 
-**Note:** This option is effective only when this calendar is `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isLenient()`. When the calendar is strict, such non-existing wall time will cause an exception.
+**Note:** This option is effective only when this calendar is isLenient. When the calendar is strict, such non-existing wall time will cause an exception.
 
 | Parameters ||
 |---|---|
@@ -2583,7 +2583,7 @@ open fun setSkippedWallTimeOption(option: Int): Unit
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getSkippedWallTimeOption()`
+- getSkippedWallTimeOption
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_FIRST:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_LAST:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#WALLTIME_NEXT_VALID:kotlin.Int`
@@ -2612,7 +2612,7 @@ fun setTime(date: Date!): Unit
 
 Sets this Calendar's current time with the given Date.
 
-Note: Calling `setTime` with `Date(Long.MAX_VALUE)` or `Date(Long.MIN_VALUE)` may yield incorrect field values from `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#get(kotlin.Int)`.
+Note: Calling `setTime` with `Date(Long.MAX_VALUE)` or `Date(Long.MIN_VALUE)` may yield incorrect field values from get.
 
 | Parameters ||
 |---|---|
@@ -2701,7 +2701,7 @@ protected open fun computeFields(): Unit
 Converts the current millisecond time value `time` to field values in `fields[]`. This synchronizes the time field values with a new time that is set for the calendar. The time is *not* recomputed first; to recompute the time, then the fields, call the `complete` method.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#complete()`
+- complete
 
 ### computeGregorianFields
 
@@ -2714,7 +2714,7 @@ protected fun computeGregorianFields(julianDay: Int): Unit
 Compute the Gregorian calendar year, month, and day of month from the Julian day. These values are not stored in fields, but in member variables gregorianXxx. They are used for time zone computations and by subclasses that are Gregorian derivatives. Subclasses may call this method to perform a Gregorian calendar millis-\>fields computation. To perform a Gregorian calendar fields-\>millis computation, call computeGregorianMonthStart().
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianMonthStart(kotlin.Int,%20kotlin.Int)`
+- computeGregorianMonthStart
 
 ### computeGregorianMonthStart
 
@@ -2740,7 +2740,7 @@ Compute the Julian day of a month of the Gregorian calendar. Subclasses may call
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianFields(kotlin.Int)`
+- computeGregorianFields
 
 ### computeJulianDay
 
@@ -2923,7 +2923,7 @@ protected open fun getFieldResolutionTable(): Array<Array<IntArray!>!>!
 Returns the field resolution array for this calendar. Calendars that define additional fields or change the semantics of existing fields should override this method to adjust the field resolution semantics accordingly. Other subclasses should not override this method.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#resolveFields(kotlin.Array)`
+- resolveFields
 
 ### getGregorianDayOfMonth
 
@@ -2936,7 +2936,7 @@ protected fun getGregorianDayOfMonth(): Int
 Returns the day of month (1-based) on the Gregorian calendar as computed by `computeGregorianFields()`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianFields(kotlin.Int)`
+- computeGregorianFields
 
 ### getGregorianDayOfYear
 
@@ -2949,7 +2949,7 @@ protected fun getGregorianDayOfYear(): Int
 Returns the day of year (1-based) on the Gregorian calendar as computed by `computeGregorianFields()`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianFields(kotlin.Int)`
+- computeGregorianFields
 
 ### getGregorianMonth
 
@@ -2962,7 +2962,7 @@ protected fun getGregorianMonth(): Int
 Returns the month (0-based) on the Gregorian calendar as computed by `computeGregorianFields()`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianFields(kotlin.Int)`
+- computeGregorianFields
 
 ### getGregorianYear
 
@@ -2975,7 +2975,7 @@ protected fun getGregorianYear(): Int
 Returns the extended year on the Gregorian calendar as computed by `computeGregorianFields()`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeGregorianFields(kotlin.Int)`
+- computeGregorianFields
 
 ### getLimit
 
@@ -3430,9 +3430,9 @@ protected open fun pinField(field: Int): Unit
 Adjust the specified field so that it is within the allowable range for the date to which this calendar is set. For example, in a Gregorian calendar pinning the `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#DAY_OF_MONTH:kotlin.Int` field for a calendar set to April 31 would cause it to be set to April 30.
 
 **Subclassing:** 
-This utility method is intended for use by subclasses that need to implement their own overrides of #roll and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#add(kotlin.Int,%20kotlin.Int)`.
+This utility method is intended for use by subclasses that need to implement their own overrides of #roll and add.
 
-**Note:** `pinField` is implemented in terms of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)`. If either of those methods uses a slow, iterative algorithm for a particular field, it would be unwise to attempt to call `pinField` for that field. If you really do need to do so, you should override this method to do something more efficient for that field.
+**Note:** `pinField` is implemented in terms of getActualMinimum and getActualMaximum. If either of those methods uses a slow, iterative algorithm for a particular field, it would be unwise to attempt to call `pinField` for that field. If you really do need to do so, you should override this method to do something more efficient for that field.
 
 <br />
 
@@ -3442,8 +3442,8 @@ This utility method is intended for use by subclasses that need to implement the
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)`
+- getActualMinimum
+- getActualMaximum
 
 ### prepareGetActual
 
@@ -3492,7 +3492,7 @@ protected open fun validateField(field: Int): Unit
 Validate a single field of this calendar. Subclasses should override this method to validate any calendar-specific fields. Generic fields can be handled by `Calendar.validateField()`.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
+- validateField
 
 ### validateField
 
@@ -3506,7 +3506,7 @@ protected fun validateField(
 ): Unit
 ```
 
-Validate a single field of this calendar given its minimum and maximum allowed value. If the field is out of range, throw a descriptive `IllegalArgumentException`. Subclasses may use this method in their implementation of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int)`.
+Validate a single field of this calendar given its minimum and maximum allowed value. If the field is out of range, throw a descriptive `IllegalArgumentException`. Subclasses may use this method in their implementation of validateField.
 
 ### validateFields
 
@@ -3516,11 +3516,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 protected open fun validateFields(): Unit
 ```
 
-Ensure that each field is within its valid range by calling `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int)` on each field that has been set. This method should only be called if this calendar is not lenient.
+Ensure that each field is within its valid range by calling validateField on each field that has been set. This method should only be called if this calendar is not lenient.
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#isLenient()`
-- `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#validateField(kotlin.Int)`
+- isLenient
+- validateField
 
 ### weekNumber
 
@@ -3533,10 +3533,10 @@ protected fun weekNumber(
 ): Int
 ```
 
-Returns the week number of a day, within a period. This may be the week number in a year, or the week number in a month. Usually this will be a value \>= 1, but if some initial days of the period are excluded from week 1, because `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()` is \> 1, then the week number will be zero for those initial days. This method requires the day of week for the given date in order to determine the result.
+Returns the week number of a day, within a period. This may be the week number in a year, or the week number in a month. Usually this will be a value \>= 1, but if some initial days of the period are excluded from week 1, because getMinimalDaysInFirstWeek is \> 1, then the week number will be zero for those initial days. This method requires the day of week for the given date in order to determine the result.
 
 **Subclassing:** 
-This method is intended for use by subclasses in implementing their `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeTime()` and/or `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeFields()` methods. It is often useful in `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)` as well.
+This method is intended for use by subclasses in implementing their computeTime and/or computeFields methods. It is often useful in getActualMinimum and getActualMaximum as well.
 
 <br />
 
@@ -3547,7 +3547,7 @@ This method is intended for use by subclasses in implementing their `https://dev
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The week number (one-based), or zero if the day falls before the first week because `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()` is more than one. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The week number (one-based), or zero if the day falls before the first week because getMinimalDaysInFirstWeek is more than one. |
 
 ### weekNumber
 
@@ -3561,10 +3561,10 @@ protected open fun weekNumber(
 ): Int
 ```
 
-Returns the week number of a day, within a period. This may be the week number in a year or the week number in a month. Usually this will be a value \>= 1, but if some initial days of the period are excluded from week 1, because `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()` is \> 1, then the week number will be zero for those initial days. This method requires the day number and day of week for some known date in the period in order to determine the day of week on the desired day.
+Returns the week number of a day, within a period. This may be the week number in a year or the week number in a month. Usually this will be a value \>= 1, but if some initial days of the period are excluded from week 1, because getMinimalDaysInFirstWeek is \> 1, then the week number will be zero for those initial days. This method requires the day number and day of week for some known date in the period in order to determine the day of week on the desired day.
 
 **Subclassing:** 
-This method is intended for use by subclasses in implementing their `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeTime()` and/or `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#computeFields()` methods. It is often useful in `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)` as well.
+This method is intended for use by subclasses in implementing their computeTime and/or computeFields methods. It is often useful in getActualMinimum and getActualMaximum as well.
 
 This variant is handy for computing the week number of some other day of a period (often the first or last day of the period) when its day of the week is not known but the day number and day of week for some other day in the period (e.g. the current date) *is* known.
 
@@ -3579,7 +3579,7 @@ This variant is handy for computing the week number of some other day of a perio
 
 | Return ||
 |---|---|
-| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The week number (one-based), or zero if the day falls before the first week because `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getMinimalDaysInFirstWeek()` is more than one. |
+| `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | The week number (one-based), or zero if the day falls before the first week because getMinimalDaysInFirstWeek is more than one. |
 
 ## Properties
 

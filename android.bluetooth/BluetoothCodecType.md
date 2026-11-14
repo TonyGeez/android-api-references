@@ -10,7 +10,7 @@ class BluetoothCodecType : Parcelable
 | --- | --- |
 | ↳ | [android.bluetooth.BluetoothCodecType](BluetoothCodecType.md) |
 
-Represents a supported source codec type for a Bluetooth A2DP device. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothA2dp#getSupportedCodecTypes()`. The codec type is uniquely identified by its name and codec identifier.
+Represents a supported source codec type for a Bluetooth A2DP device. See getSupportedCodecTypes. The codec type is uniquely identified by its name and codec identifier.
 
 ## Summary
 
@@ -29,20 +29,20 @@ Represents a supported source codec type for a Bluetooth A2DP device. See `https
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()()` Returns the codec unique identifier. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | getCodecId Returns the codec unique identifier. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecName()()` Returns the codec name. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#hashCode()()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#isMandatoryCodec()()` Returns if the codec type is mandatory in the Bluetooth specification. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getCodecName Returns the codec name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isMandatoryCodec Returns if the codec type is mandatory in the Bluetooth specification. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -58,7 +58,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CODEC_ID_AAC: Long
 ```
 
-AAC codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+AAC codec identifier. See getCodecId.
 
  Value: 2L
 
@@ -70,7 +70,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CODEC_ID_APTX: Long
 ```
 
-AptX codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+AptX codec identifier. See getCodecId.
 
  Value: 16797695L
 
@@ -82,7 +82,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CODEC_ID_APTX_HD: Long
 ```
 
-Aptx HD codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+Aptx HD codec identifier. See getCodecId.
 
  Value: 604035071L
 
@@ -97,7 +97,7 @@ static val CODEC_ID_LDAC: Long
 
 **Deprecated:** *This codec value is invalid. Please use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#CODEC_ID_SONY_LDAC:kotlin.Long` instead.*
 
-LDAC codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+LDAC codec identifier. See getCodecId.
 
  Value: -1442763265L
 
@@ -109,7 +109,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 static val CODEC_ID_LHDCV5: Long
 ```
 
-LHDC codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+LHDC codec identifier. See getCodecId.
 
  Value: 327307049727L
 
@@ -121,7 +121,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CODEC_ID_OPUS: Long
 ```
 
-Opus codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+Opus codec identifier. See getCodecId.
 
  Value: 16834815L
 
@@ -133,7 +133,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val CODEC_ID_SBC: Long
 ```
 
-SBC codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+SBC codec identifier. See getCodecId.
 
  Value: 0L
 
@@ -145,7 +145,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 static val CODEC_ID_SONY_LDAC: Long
 ```
 
-LDAC codec identifier. See `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothCodecType#getCodecId()`.
+LDAC codec identifier. See getCodecId.
 
  Value: 2852204031L
 
@@ -159,7 +159,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -240,8 +240,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

@@ -16,41 +16,41 @@ class ExerciseSessionRecord : IntervalRecord
 
 Captures exercise or a sequence of exercises. This can be a playing game like football or a sequence of fitness exercises.
 
-Each record needs a start time, end time and session type. In addition, each record has two optional independent lists of time intervals: `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSegment` represents particular exercise within session, `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseLap` represents a lap time within session.
+Each record needs a start time, end time and session type. In addition, each record has two optional independent lists of time intervals: ExerciseSegment represents particular exercise within session, ExerciseLap represents a lap time within session.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord.Builder` Builder class for `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#` |
+| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord.Builder` Builder class for ExerciseSessionRecord |
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
+| From class Record |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INSTANT:kotlin.Int` The record represents an instantaneous event. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_INTERVAL:kotlin.Int` The record represents an event over an interval. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#RECORD_TEMPORAL_TYPE_LOCAL_DATE:kotlin.Int` The record represents an event that occurred on a specific date. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getExerciseType()()` Returns exerciseType of this session. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseLap](ExerciseLap.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getLaps()()` Returns laps of this session. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getExerciseType Returns exerciseType of this session. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseLap](ExerciseLap.md)!\> | getLaps Returns laps of this session. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getNotes()()` Returns notes for this activity. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getPlannedExerciseSessionId()()` Returns the ID of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord` that this session was based upon. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getRateOfPerceivedExertion()()` Gets the rate of perceived exertion (RPE) for this exercise session. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getNotes Returns notes for this activity. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | getPlannedExerciseSessionId Returns the ID of the PlannedExerciseSessionRecord that this session was based upon. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getRateOfPerceivedExertion Gets the rate of perceived exertion (RPE) for this exercise session. |
 | --- | --- |
-| [ExerciseRoute](ExerciseRoute.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getRoute()()` Returns route of this session. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseSegment](ExerciseSegment.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getSegments()()` Returns segments of this session. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#getTitle()()` Returns title of this session. |
+| [ExerciseRoute](ExerciseRoute.md)? | getRoute Returns route of this session. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ExerciseSegment](ExerciseSegment.md)!\> | getSegments Returns segments of this session. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | getTitle Returns title of this session. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#hasRateOfPerceivedExertion()()` Returns true if this session has an associated rate of perceived exertion. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#hasRoute()()` Returns if this session has recorded route. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#hashCode()()` Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasRateOfPerceivedExertion Returns true if this session has an associated rate of perceived exertion. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasRoute Returns if this session has recorded route. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord` |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getEndZoneOffset()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartTime()()` <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/IntervalRecord#getStartZoneOffset()()` <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record` |---|---| | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Metadata` | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Record#getMetadata()()` <br /> | ||
+| From class IntervalRecord |---|---| | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getEndTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getEndZoneOffset <br /> | | `https://developer.android.com/reference/kotlin/java/time/Instant.html#` | getStartTime <br /> | | `https://developer.android.com/reference/kotlin/java/time/ZoneOffset.html#` | getStartZoneOffset <br /> | ||
+| From class Record |---|---| | Metadata | getMetadata <br /> | ||
 
 | Properties ||
 |---|---|
@@ -129,7 +129,7 @@ Also in [U Extensions 13](https://developer.android.com/sdkExtensions)
 fun getPlannedExerciseSessionId(): String?
 ```
 
-Returns the ID of the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord` that this session was based upon. If not set, returns null.
+Returns the ID of the PlannedExerciseSessionRecord that this session was based upon. If not set, returns null.
 
 ### getRateOfPerceivedExertion
 
@@ -144,7 +144,7 @@ Gets the rate of perceived exertion (RPE) for this exercise session.
 
 Values correspond to the Borg CR10 RPE scale and must be in the range 0 to 10 inclusive. 0: No exertion (at rest) 1: Very light 2-3: Light 4-5: Moderate 6-7: Hard 8-9: Very hard 10: Maximum effort
 
-Use `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ExerciseSessionRecord#hasRateOfPerceivedExertion()` to check whether RPE exists for this session.
+Use hasRateOfPerceivedExertion to check whether RPE exists for this session.
 
 | Return ||
 |---|---|

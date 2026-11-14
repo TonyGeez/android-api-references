@@ -25,7 +25,7 @@ The floating point arithmetic provided by this class is defined by the ANSI X3.2
 
 ### Operator methods
 
-Operations on `BigDecimal` numbers are controlled by a `https://developer.android.com/reference/kotlin/android/icu/math/MathContext` object, which provides the context (precision and other information) for the operation. Methods that can take a `MathContext` parameter implement the standard arithmetic operators for `BigDecimal` objects and are known as *operator methods* . The default settings provided by the constant `https://developer.android.com/reference/kotlin/android/icu/math/MathContext#DEFAULT:android.icu.math.MathContext` (`digits=9, form=SCIENTIFIC, lostDigits=false, roundingMode=ROUND_HALF_UP`) perform general-purpose floating point arithmetic to nine digits of precision. The `MathContext` parameter must not be `null`.
+Operations on `BigDecimal` numbers are controlled by a MathContext object, which provides the context (precision and other information) for the operation. Methods that can take a `MathContext` parameter implement the standard arithmetic operators for `BigDecimal` objects and are known as *operator methods* . The default settings provided by the constant `https://developer.android.com/reference/kotlin/android/icu/math/MathContext#DEFAULT:android.icu.math.MathContext` (`digits=9, form=SCIENTIFIC, lostDigits=false, roundingMode=ROUND_HALF_UP`) perform general-purpose floating point arithmetic to nine digits of precision. The `MathContext` parameter must not be `null`.
 
 Each operator method also has a version provided which does not take a `MathContext` parameter. For this version of each method, the context settings used are `digits=0, form=PLAIN, lostDigits=false, roundingMode=ROUND_HALF_UP`; these settings perform fixed point arithmetic with unlimited precision, as defined for the original BigDecimal class in Java 1.1 and Java 1.2.
 
@@ -87,91 +87,91 @@ The names of methods in this class follow the conventions established by `java.l
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.CharArray)(inchars: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Constructs a `BigDecimal` object from an array of characters. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)(inchars: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a `BigDecimal` object from an array of characters. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.Double)(num: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Constructs a `BigDecimal` object directly from a `double`. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.Int)(num: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a `BigDecimal` object directly from a `int`. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Constructs a `BigDecimal` object from a `String`. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(java.math.BigDecimal)(bd: https://developer.android.com/reference/kotlin/java/math/BigDecimal.html#!)` Constructs a `BigDecimal` object from a `java.math.BigDecimal`. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(java.math.BigInteger)(bi: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!)` Constructs a `BigDecimal` object from a `BigInteger`, with scale 0. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(java.math.BigInteger,%20kotlin.Int)(bi: https://developer.android.com/reference/kotlin/java/math/BigInteger.html#!, scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a `BigDecimal` object from a `BigInteger` and a scale. |
-| `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.Long)(num: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Constructs a `BigDecimal` object directly from a `long`. |
+| BigDecimal Constructs a `BigDecimal` object from an array of characters. |
+| BigDecimal Constructs a `BigDecimal` object from an array of characters. |
+| BigDecimal Constructs a `BigDecimal` object directly from a `double`. |
+| BigDecimal Constructs a `BigDecimal` object directly from a `int`. |
+| BigDecimal Constructs a `BigDecimal` object from a `String`. |
+| BigDecimal Constructs a `BigDecimal` object from a `java.math.BigDecimal`. |
+| BigDecimal Constructs a `BigDecimal` object from a `BigInteger`, with scale 0. |
+| BigDecimal Constructs a `BigDecimal` object from a `BigInteger` and a scale. |
+| BigDecimal Constructs a `BigDecimal` object directly from a `long`. |
 
 | Public methods ||
 |---|---|
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#abs()()` Returns a plain `BigDecimal` whose value is the absolute value of this `BigDecimal`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#abs(android.icu.math.MathContext)(set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is the absolute value of this `BigDecimal`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#add(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is `this+rhs`, using fixed point arithmetic. |
+| open [BigDecimal](BigDecimal.md)! | abs Returns a plain `BigDecimal` whose value is the absolute value of this `BigDecimal`. |
+| open [BigDecimal](BigDecimal.md)! | abs Returns a `BigDecimal` whose value is the absolute value of this `BigDecimal`. |
+| open [BigDecimal](BigDecimal.md)! | add Returns a plain `BigDecimal` whose value is `this+rhs`, using fixed point arithmetic. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#add(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `this+rhs`. |
-| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#byteValueExact()()` Converts this `BigDecimal` to a `byte`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal)(other: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Compares this `BigDecimal` to another, using unlimited precision. |
+| open [BigDecimal](BigDecimal.md)! | add Returns a `BigDecimal` whose value is `this+rhs`. |
+| open [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | byteValueExact Converts this `BigDecimal` to a `byte`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this `BigDecimal` to another, using unlimited precision. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Compares this `BigDecimal` to another. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `this/rhs`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | compareTo Compares this `BigDecimal` to another. |
+| open [BigDecimal](BigDecimal.md)! | divide Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic. |
+| open [BigDecimal](BigDecimal.md)! | divide Returns a `BigDecimal` whose value is `this/rhs`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal,%20kotlin.Int)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, round: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic and a rounding mode. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal,%20kotlin.Int,%20kotlin.Int)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, round: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic and a given scale and rounding mode. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divideInteger(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is the integer part of `this/rhs`. |
+| open [BigDecimal](BigDecimal.md)! | divide Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic and a rounding mode. |
+| open [BigDecimal](BigDecimal.md)! | divide Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic and a given scale and rounding mode. |
+| open [BigDecimal](BigDecimal.md)! | divideInteger Returns a plain `BigDecimal` whose value is the integer part of `this/rhs`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divideInteger(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is the integer part of `this/rhs`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this `BigDecimal` with `rhs` for equality. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#format(kotlin.Int,%20kotlin.Int)(before: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, after: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `String` representation of this `BigDecimal`, modified by layout parameters. |
+| open [BigDecimal](BigDecimal.md)! | divideInteger Returns a `BigDecimal` whose value is the integer part of `this/rhs`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Compares this `BigDecimal` with `rhs` for equality. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | format Returns the `String` representation of this `BigDecimal`, modified by layout parameters. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#format(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(before: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, after: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, explaces: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exdigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exformint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, exround: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `String` representation of this `BigDecimal`, modified by layout parameters and allowing exponential notation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#hashCode()()` Returns the hashcode for this `BigDecimal`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#intValueExact()()` Converts this `BigDecimal` to an `int`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | format Returns the `String` representation of this `BigDecimal`, modified by layout parameters and allowing exponential notation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns the hashcode for this `BigDecimal`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | intValueExact Converts this `BigDecimal` to an `int`. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#longValueExact()()` Converts this `BigDecimal` to a `long`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#max(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is the maximum of `this` and `rhs`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#max(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is the maximum of `this` and `rhs`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | longValueExact Converts this `BigDecimal` to a `long`. |
+| open [BigDecimal](BigDecimal.md)! | max Returns a plain `BigDecimal` whose value is the maximum of `this` and `rhs`. |
+| open [BigDecimal](BigDecimal.md)! | max Returns a `BigDecimal` whose value is the maximum of `this` and `rhs`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#min(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is the minimum of `this` and `rhs`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#min(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is the minimum of `this` and `rhs`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#movePointLeft(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a plain `BigDecimal` whose decimal point has been moved to the left by a specified number of positions. |
+| open [BigDecimal](BigDecimal.md)! | min Returns a plain `BigDecimal` whose value is the minimum of `this` and `rhs`. |
+| open [BigDecimal](BigDecimal.md)! | min Returns a `BigDecimal` whose value is the minimum of `this` and `rhs`. |
+| open [BigDecimal](BigDecimal.md)! | movePointLeft Returns a plain `BigDecimal` whose decimal point has been moved to the left by a specified number of positions. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#movePointRight(kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a plain `BigDecimal` whose decimal point has been moved to the right by a specified number of positions. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#multiply(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is `this*rhs`, using fixed point arithmetic. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#multiply(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `this*rhs`. |
+| open [BigDecimal](BigDecimal.md)! | movePointRight Returns a plain `BigDecimal` whose decimal point has been moved to the right by a specified number of positions. |
+| open [BigDecimal](BigDecimal.md)! | multiply Returns a plain `BigDecimal` whose value is `this*rhs`, using fixed point arithmetic. |
+| open [BigDecimal](BigDecimal.md)! | multiply Returns a `BigDecimal` whose value is `this*rhs`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#negate()()` Returns a plain `BigDecimal` whose value is `-this`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#negate(android.icu.math.MathContext)(set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `-this`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus()()` Returns a plain `BigDecimal` whose value is `+this`. |
+| open [BigDecimal](BigDecimal.md)! | negate Returns a plain `BigDecimal` whose value is `-this`. |
+| open [BigDecimal](BigDecimal.md)! | negate Returns a `BigDecimal` whose value is `-this`. |
+| open [BigDecimal](BigDecimal.md)! | plus Returns a plain `BigDecimal` whose value is `+this`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)(set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `+this`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#pow(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is `this**rhs`, using fixed point arithmetic. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#pow(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `this**rhs`. |
+| open [BigDecimal](BigDecimal.md)! | plus Returns a `BigDecimal` whose value is `+this`. |
+| open [BigDecimal](BigDecimal.md)! | pow Returns a plain `BigDecimal` whose value is `this**rhs`, using fixed point arithmetic. |
+| open [BigDecimal](BigDecimal.md)! | pow Returns a `BigDecimal` whose value is `this**rhs`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#remainder(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is the remainder of `this/rhs`, using fixed point arithmetic. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#remainder(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is the remainder of `this/rhs`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#scale()()` Returns the scale of this `BigDecimal`. |
+| open [BigDecimal](BigDecimal.md)! | remainder Returns a plain `BigDecimal` whose value is the remainder of `this/rhs`, using fixed point arithmetic. |
+| open [BigDecimal](BigDecimal.md)! | remainder Returns a `BigDecimal` whose value is the remainder of `this/rhs`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | scale Returns the scale of this `BigDecimal`. |
 | --- | --- |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#setScale(kotlin.Int)(scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a plain `BigDecimal` with a given scale. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#setScale(kotlin.Int,%20kotlin.Int)(scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, round: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a plain `BigDecimal` with a given scale. |
-| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#shortValueExact()()` Converts this `BigDecimal` to a `short`. |
+| open [BigDecimal](BigDecimal.md)! | setScale Returns a plain `BigDecimal` with a given scale. |
+| open [BigDecimal](BigDecimal.md)! | setScale Returns a plain `BigDecimal` with a given scale. |
+| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | shortValueExact Converts this `BigDecimal` to a `short`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#signum()()` Returns the sign of this `BigDecimal`, as an `int`. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#subtract(android.icu.math.BigDecimal)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!)` Returns a plain `BigDecimal` whose value is `this-rhs`, using fixed point arithmetic. |
-| open [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#subtract(android.icu.math.BigDecimal,%20android.icu.math.MathContext)(rhs: https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#!, set: https://developer.android.com/reference/kotlin/android/icu/math/MathContext!)` Returns a `BigDecimal` whose value is `this-rhs`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | signum Returns the sign of this `BigDecimal`, as an `int`. |
+| open [BigDecimal](BigDecimal.md)! | subtract Returns a plain `BigDecimal` whose value is `this-rhs`, using fixed point arithmetic. |
+| open [BigDecimal](BigDecimal.md)! | subtract Returns a `BigDecimal` whose value is `this-rhs`. |
 | --- | --- |
-| open [BigDecimal](../java.math/BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toBigDecimal()()` Converts this `BigDecimal` to a `java.math.BigDecimal`. |
-| open [BigInteger](../java.math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toBigInteger()()` Converts this `BigDecimal` to a `java.math.BigInteger`. |
-| open [BigInteger](../java.math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toBigIntegerExact()()` Converts this `BigDecimal` to a `java.math.BigInteger`. |
+| open [BigDecimal](../java.math/BigDecimal.md)! | toBigDecimal Converts this `BigDecimal` to a `java.math.BigDecimal`. |
+| open [BigInteger](../java.math/BigInteger.md)! | toBigInteger Converts this `BigDecimal` to a `java.math.BigInteger`. |
+| open [BigInteger](../java.math/BigInteger.md)! | toBigIntegerExact Converts this `BigDecimal` to a `java.math.BigInteger`. |
 | --- | --- |
-| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toCharArray()()` Returns the `BigDecimal` as a character array. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toDouble()()` Converts this `BigDecimal` to a `double`. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toFloat()()` Converts this `BigDecimal` to a `float`. |
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | toCharArray Returns the `BigDecimal` as a character array. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | toDouble Converts this `BigDecimal` to a `double`. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | toFloat Converts this `BigDecimal` to a `float`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toInt()()` Converts this `BigDecimal` to an `int`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toLong()()` Converts this `BigDecimal` to a `long`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toString()()` Returns the `BigDecimal` as a `String`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | toInt Converts this `BigDecimal` to an `int`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | toLong Converts this `BigDecimal` to a `long`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns the `BigDecimal` as a `String`. |
 | --- | --- |
-| open [BigInteger](../java.math/BigInteger.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#unscaledValue()()` Returns the number as a `BigInteger` after removing the scale. |
-| open static [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#valueOf(kotlin.Double)(dub: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Translates a `double` to a `BigDecimal`. |
-| open static [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#valueOf(kotlin.Long)(lint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Translates a `long` to a `BigDecimal`. |
+| open [BigInteger](../java.math/BigInteger.md)! | unscaledValue Returns the number as a `BigInteger` after removing the scale. |
+| open static [BigDecimal](BigDecimal.md)! | valueOf Translates a `double` to a `BigDecimal`. |
+| open static [BigDecimal](BigDecimal.md)! | valueOf Translates a `long` to a `BigDecimal`. |
 | --- | --- |
-| open static [BigDecimal](BigDecimal.md)! | `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#valueOf(kotlin.Long,%20kotlin.Int)(lint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, scale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Translates a `long` to a `BigDecimal` with a given scale. |
+| open static [BigDecimal](BigDecimal.md)! | valueOf Translates a `long` to a `BigDecimal` with a given scale. |
 
 | Properties ||
 |---|---|
@@ -322,7 +322,7 @@ BigDecimal(inchars: CharArray!)
 
 Constructs a `BigDecimal` object from an array of characters.
 
-Constructs a `BigDecimal` as though a `String` had been constructed from the character array and the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)` constructor had then been used. The parameter must not be `null`.
+Constructs a `BigDecimal` as though a `String` had been constructed from the character array and the BigDecimal constructor had then been used. The parameter must not be `null`.
 
 Using this constructor is faster than using the `BigDecimal(String)` constructor if the string is already available in character array form.
 
@@ -347,7 +347,7 @@ BigDecimal(
 
 Constructs a `BigDecimal` object from an array of characters.
 
-Constructs a `BigDecimal` as though a `String` had been constructed from the character array (or a subarray of that array) and the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)` constructor had then been used. The first parameter must not be `null`, and the subarray must be wholly contained within it.
+Constructs a `BigDecimal` as though a `String` had been constructed from the character array (or a subarray of that array) and the BigDecimal constructor had then been used. The first parameter must not be `null`, and the subarray must be wholly contained within it.
 
 Using this constructor is faster than using the `BigDecimal(String)` constructor if the string is already available within a character array.
 
@@ -374,7 +374,7 @@ Constructs a `BigDecimal` object directly from a `double`.
 
 Constructs a `BigDecimal` which is the exact decimal representation of the 64-bit signed binary floating point parameter.
 
-Note that this constructor it an exact conversion; it does not give the same result as converting `num ` to a `String` using the `Double.toString()` method and then using the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)` constructor. To get that result, use the static `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#valueOf(kotlin.Double)` method to construct a `BigDecimal` from a `double`.
+Note that this constructor it an exact conversion; it does not give the same result as converting `num ` to a `String` using the `Double.toString()` method and then using the BigDecimal constructor. To get that result, use the static valueOf method to construct a `BigDecimal` from a `double`.
 
 | Parameters ||
 |---|---|
@@ -410,7 +410,7 @@ BigDecimal(string: String!)
 
 Constructs a `BigDecimal` object from a `String`.
 
-Constructs a `BigDecimal` from the parameter, which must not be `null` and must represent a valid *number* , as described formally in the documentation referred to `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`.
+Constructs a `BigDecimal` from the parameter, which must not be `null` and must represent a valid *number* , as described formally in the documentation referred to BigDecimal.
 
 In summary, numbers in `String` form must have at least one digit, may have a leading sign, may have a decimal point, and exponential notation may be used. They follow conventional syntax, and may not contain blanks.
 
@@ -426,7 +426,7 @@ Some valid strings from which a `BigDecimal` might be constructed are:
 
 (Exponential notation means that the number includes an optional sign and a power of ten following an '`E`' that indicates how the decimal point will be shifted. Thus the `"4E+9"` above is just a short way of writing `4000000000`, and the `"0.73e-7"` is short for ` 0.000000073`.)
 
-The `BigDecimal` constructed from the String is in a standard form, with no blanks, as though the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#add(android.icu.math.BigDecimal)` method had been used to add zero to the number with unlimited precision. If the string uses exponential notation (that is, includes an `e` or an `E`), then the `BigDecimal ` number will be expressed in scientific notation (where the power of ten is adjusted so there is a single non-zero digit to the left of the decimal point); in this case if the number is zero then it will be expressed as the single digit 0, and if non-zero it will have an exponent unless that exponent would be 0. The exponent must fit in nine digits both before and after it is expressed in scientific notation.
+The `BigDecimal` constructed from the String is in a standard form, with no blanks, as though the add method had been used to add zero to the number with unlimited precision. If the string uses exponential notation (that is, includes an `e` or an `E`), then the `BigDecimal ` number will be expressed in scientific notation (where the power of ten is adjusted so there is a single non-zero digit to the left of the decimal point); in this case if the number is zero then it will be expressed as the single digit 0, and if non-zero it will have an exponent unless that exponent would be 0. The exponent must fit in nine digits both before and after it is expressed in scientific notation.
 
 Any digits in the parameter must be decimal; that is, `Character.digit(c, 10)` (where `c` is the character in question) would not return -1.
 
@@ -448,7 +448,7 @@ BigDecimal(bd: BigDecimal!)
 
 Constructs a `BigDecimal` object from a `java.math.BigDecimal`.
 
-Constructs a `BigDecimal` as though the parameter had been represented as a `String` (using its `toString` method) and the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)` constructor had then been used. The parameter must not be `null`.
+Constructs a `BigDecimal` as though the parameter had been represented as a `String` (using its `toString` method) and the BigDecimal constructor had then been used. The parameter must not be `null`.
 
 *(Note: this constructor is provided only in the `android.icu.math` version of the BigDecimal class. It would not be present in a `java.math` version.)*
 
@@ -527,7 +527,7 @@ open fun abs(): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is the absolute value of this `BigDecimal`.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#abs(android.icu.math.MathContext)`, where the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as abs, where the context is `new MathContext(0, MathContext.PLAIN)`.
 
 The length of the decimal part (the scale) of the result will be `this.scale()`
 
@@ -545,7 +545,7 @@ open fun abs(set: MathContext!): BigDecimal!
 
 Returns a `BigDecimal` whose value is the absolute value of this `BigDecimal`.
 
-If the current object is zero or positive, then the same result as invoking the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)` method with the same parameter is returned. Otherwise, the same result as invoking the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#negate(android.icu.math.MathContext)` method with the same parameter is returned.
+If the current object is zero or positive, then the same result as invoking the plus method with the same parameter is returned. Otherwise, the same result as invoking the negate method with the same parameter is returned.
 
 | Parameters ||
 |---|---|
@@ -565,7 +565,7 @@ open fun add(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `this+rhs`, using fixed point arithmetic.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#add(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as add, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 The length of the decimal part (the scale) of the result will be the maximum of the scales of the two operands.
 
@@ -590,7 +590,7 @@ open fun add(
 
 Returns a `BigDecimal` whose value is `this+rhs`.
 
-Implements the addition (**`+`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the addition (**`+`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 | Parameters ||
 |---|---|
@@ -629,7 +629,7 @@ open fun compareTo(other: BigDecimal!): Int
 
 Compares this `BigDecimal` to another, using unlimited precision.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as compareTo, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 | Parameters ||
 |---|---|
@@ -658,7 +658,7 @@ open fun compareTo(
 
 Compares this `BigDecimal` to another.
 
-Implements numeric comparison, (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns a result of type `int`.
+Implements numeric comparison, (as defined in the decimal documentation, see BigDecimal), and returns a result of type `int`.
 
 The result will be:
 
@@ -667,7 +667,7 @@ The result will be:
 | **0** | if the current object is equal to the first parameter |
 | **1** | if the current object is greater than the first parameter. |
 
-A `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal)` method is also provided.
+A compareTo method is also provided.
 
 | Parameters ||
 |---|---|
@@ -688,7 +688,7 @@ open fun divide(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal,%20kotlin.Int)`, where the `BigDecimal` is `rhs`, and the rounding mode is `https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_UP:kotlin.Int`. The length of the decimal part (the scale) of the result will be the same as the scale of the current object, if the latter were formatted without exponential notation.
+The same as divide, where the `BigDecimal` is `rhs`, and the rounding mode is `https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ROUND_HALF_UP:kotlin.Int`. The length of the decimal part (the scale) of the result will be the same as the scale of the current object, if the latter were formatted without exponential notation.
 
 | Parameters ||
 |---|---|
@@ -715,7 +715,7 @@ open fun divide(
 
 Returns a `BigDecimal` whose value is `this/rhs`.
 
-Implements the division (**`/`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the division (**`/`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 | Parameters ||
 |---|---|
@@ -743,7 +743,7 @@ open fun divide(
 
 Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic and a rounding mode.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal,%20kotlin.Int,%20kotlin.Int)`, where the `BigDecimal` is `rhs`, and the second parameter is `this.scale()`, and the third is `round`.
+The same as divide, where the `BigDecimal` is `rhs`, and the second parameter is `this.scale()`, and the third is `round`.
 
 The length of the decimal part (the scale) of the result will therefore be the same as the scale of the current object, if the latter were formatted without exponential notation.
 
@@ -752,7 +752,7 @@ The length of the decimal part (the scale) of the result will therefore be the s
 | Parameters ||
 |---|---|
 | `rhs` | [BigDecimal](BigDecimal.md)!: The `BigDecimal` for the right hand side of the division. |
-| `round` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` rounding mode to be used for the division (see the `https://developer.android.com/reference/kotlin/android/icu/math/MathContext` class). |
+| `round` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` rounding mode to be used for the division (see the MathContext class). |
 
 | Return ||
 |---|---|
@@ -777,7 +777,7 @@ open fun divide(
 
 Returns a plain `BigDecimal` whose value is `this/rhs`, using fixed point arithmetic and a given scale and rounding mode.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divide(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, `new MathContext(0, MathContext.PLAIN, false, round)`, except that the length of the decimal part (the scale) to be used for the result is explicit rather than being taken from `this`.
+The same as divide, where the `BigDecimal` is `rhs`, `new MathContext(0, MathContext.PLAIN, false, round)`, except that the length of the decimal part (the scale) to be used for the result is explicit rather than being taken from `this`.
 
 The length of the decimal part (the scale) of the result will be the same as the scale of the current object, if the latter were formatted without exponential notation.
 
@@ -787,7 +787,7 @@ The length of the decimal part (the scale) of the result will be the same as the
 |---|---|
 | `rhs` | [BigDecimal](BigDecimal.md)!: The `BigDecimal` for the right hand side of the division. |
 | `scale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` scale to be used for the result. |
-| `round` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` rounding mode to be used for the division (see the `https://developer.android.com/reference/kotlin/android/icu/math/MathContext` class). |
+| `round` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` rounding mode to be used for the division (see the MathContext class). |
 | --- | --- |
 
 | Return ||
@@ -809,7 +809,7 @@ open fun divideInteger(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is the integer part of `this/rhs`.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#divideInteger(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs `, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as divideInteger, where the `BigDecimal` is `rhs `, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 | Parameters ||
 |---|---|
@@ -836,7 +836,7 @@ open fun divideInteger(
 
 Returns a `BigDecimal` whose value is the integer part of `this/rhs`.
 
-Implements the integer division operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the integer division operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 | Parameters ||
 |---|---|
@@ -865,7 +865,7 @@ If the parameter is `null`, or is not an instance of the BigDecimal type, or is 
 
 "Exactly equal", here, means that the `String` representations of the `BigDecimal` numbers are identical (they have the same characters in the same sequence).
 
-The `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal,%20android.icu.math.MathContext)` method should be used for more general comparisons.
+The compareTo method should be used for more general comparisons.
 
 | Parameters ||
 |---|---|
@@ -881,8 +881,8 @@ The `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal)`
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`
+- compareTo
+- compareTo
 
 ### format
 
@@ -907,7 +907,7 @@ The parameters, `before` and `after`, specify the number of characters to be use
 
 `after` must be a non-negative number; if it is not the same size as the decimal part of the number, the number will be rounded (or extended with zeros) to fit. Specifying 0 for `after` will cause the number to be rounded to an integer (that is, it will have no decimal part or decimal point). The rounding method will be the default, `MathContext.ROUND_HALF_UP`.
 
-Other rounding methods, and the use of exponential notation, can be selected by using `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#format(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`. Using the two-parameter form of the method has exactly the same effect as using the six-parameter form with the final four parameters all being -1.
+Other rounding methods, and the use of exponential notation, can be selected by using format. Using the two-parameter form of the method has exactly the same effect as using the six-parameter form with the final four parameters all being -1.
 
 | Parameters ||
 |---|---|
@@ -925,8 +925,8 @@ Other rounding methods, and the use of exponential notation, can be selected by 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toString()`
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toCharArray()`
+- toString
+- toCharArray
 
 ### format
 
@@ -949,7 +949,7 @@ Returns the `String` representation of this `BigDecimal`, modified by layout par
 
 The parameters are all of type `int`. A value of -1 for any parameter indicates that the default action or value for that parameter should be used.
 
-The first two parameters (`before` and `after`) specify the number of characters to be used for the integer part and decimal part of the result respectively, as defined for `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#format(kotlin.Int,%20kotlin.Int)`. If either of these is -1 (which indicates the default action), the number of characters used will be exactly as many as are needed for that part.
+The first two parameters (`before` and `after`) specify the number of characters to be used for the integer part and decimal part of the result respectively, as defined for format. If either of these is -1 (which indicates the default action), the number of characters used will be exactly as many as are needed for that part.
 
 The remaining parameters control the use of exponential notation and rounding. Three (`explaces`, `exdigits`, and `exform`) control the exponent part of the result. As before, the default action for any of these parameters may be selected by using the value -1.
 
@@ -959,7 +959,7 @@ The remaining parameters control the use of exponential notation and rounding. T
 
 `exform` sets the form for exponential notation (if needed). It may be either `https://developer.android.com/reference/kotlin/android/icu/math/MathContext#SCIENTIFIC:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/icu/math/MathContext#ENGINEERING:kotlin.Int`. If the latter, engineering, form is requested, up to three digits (plus sign, if negative) may be needed for the integer part of the result (`before` ). Otherwise, only one digit (plus sign, if negative) is needed.
 
-Finally, the sixth argument, `exround`, selects the rounding algorithm to be used, and must be one of the values indicated by a public constant in the `https://developer.android.com/reference/kotlin/android/icu/math/MathContext` class whose name starts with `ROUND_ `. The default (`ROUND_HALF_UP`) may also be selected by using the value -1, as before.
+Finally, the sixth argument, `exround`, selects the rounding algorithm to be used, and must be one of the values indicated by a public constant in the MathContext class whose name starts with `ROUND_ `. The default (`ROUND_HALF_UP`) may also be selected by using the value -1, as before.
 
 The special value `MathContext.ROUND_UNNECESSARY` may be used to detect whether non-zero digits are discarded -- if `exround` has this value than if non-zero digits would be discarded (rounded) during formatting then an `ArithmeticException` is thrown.
 
@@ -985,8 +985,8 @@ The special value `MathContext.ROUND_UNNECESSARY` may be used to detect whether 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toString()`
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toCharArray()`
+- toString
+- toCharArray
 
 ### hashCode
 
@@ -1050,7 +1050,7 @@ open fun max(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is the maximum of `this` and `rhs`.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#max(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as max, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 | Parameters ||
 |---|---|
@@ -1075,7 +1075,7 @@ Returns a `BigDecimal` whose value is the maximum of `this` and `rhs`.
 
 Returns the larger of the current object and the first parameter.
 
-If calling the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal,%20android.icu.math.MathContext)` method with the same parameters would return `1 ` or `0`, then the result of calling the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)` method on the current object (using the same `MathContext` parameter) is returned. Otherwise, the result of calling the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)` method on the first parameter object (using the same `MathContext` parameter) is returned.
+If calling the compareTo method with the same parameters would return `1 ` or `0`, then the result of calling the plus method on the current object (using the same `MathContext` parameter) is returned. Otherwise, the result of calling the plus method on the first parameter object (using the same `MathContext` parameter) is returned.
 
 | Parameters ||
 |---|---|
@@ -1096,7 +1096,7 @@ open fun min(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is the minimum of `this` and `rhs`.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#min(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as min, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 | Parameters ||
 |---|---|
@@ -1121,7 +1121,7 @@ Returns a `BigDecimal` whose value is the minimum of `this` and `rhs`.
 
 Returns the smaller of the current object and the first parameter.
 
-If calling the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#compareTo(android.icu.math.BigDecimal,%20android.icu.math.MathContext)` method with the same parameters would return `-1 ` or `0`, then the result of calling the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)` method on the current object (using the same `MathContext` parameter) is returned. Otherwise, the result of calling the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)` method on the first parameter object (using the same `MathContext` parameter) is returned.
+If calling the compareTo method with the same parameters would return `-1 ` or `0`, then the result of calling the plus method on the current object (using the same `MathContext` parameter) is returned. Otherwise, the result of calling the plus method on the first parameter object (using the same `MathContext` parameter) is returned.
 
 | Parameters ||
 |---|---|
@@ -1186,7 +1186,7 @@ open fun multiply(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `this*rhs`, using fixed point arithmetic.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#add(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as add, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 The length of the decimal part (the scale) of the result will be the sum of the scales of the operands, if they were formatted without exponential notation.
 
@@ -1211,7 +1211,7 @@ open fun multiply(
 
 Returns a `BigDecimal` whose value is `this*rhs`.
 
-Implements the multiplication (**`*`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the multiplication (**`*`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 | Parameters ||
 |---|---|
@@ -1232,7 +1232,7 @@ open fun negate(): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `-this`.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#negate(android.icu.math.MathContext)`, where the context is `new MathContext(0, MathContext.PLAIN)` .
+The same as negate, where the context is `new MathContext(0, MathContext.PLAIN)` .
 
 The length of the decimal part (the scale) of the result will be be `this.scale()`
 
@@ -1250,7 +1250,7 @@ open fun negate(set: MathContext!): BigDecimal!
 
 Returns a `BigDecimal` whose value is `-this`.
 
-Implements the negation (Prefix **`-`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the negation (Prefix **`-`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 | Parameters ||
 |---|---|
@@ -1270,7 +1270,7 @@ open fun plus(): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `+this`. Note that `this` is not necessarily a plain `BigDecimal`, but the result will always be.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#plus(android.icu.math.MathContext)`, where the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as plus, where the context is `new MathContext(0, MathContext.PLAIN)`.
 
 The length of the decimal part (the scale) of the result will be be `this.scale()`
 
@@ -1288,7 +1288,7 @@ open fun plus(set: MathContext!): BigDecimal!
 
 Returns a `BigDecimal` whose value is `+this`.
 
-Implements the plus (Prefix **`+`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the plus (Prefix **`+`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 This method is useful for rounding or otherwise applying a context to a decimal value.
 
@@ -1310,7 +1310,7 @@ open fun pow(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `this**rhs`, using fixed point arithmetic.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#pow(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as pow, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 The parameter is the power to which the `this` will be raised; it must be in the range 0 through 999999999, and must have a decimal part of zero. Note that these restrictions may be removed in the future, so they should not be used as a test for a whole number.
 
@@ -1341,7 +1341,7 @@ open fun pow(
 
 Returns a `BigDecimal` whose value is `this**rhs`.
 
-Implements the power (**`^`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the power (**`^`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 The first parameter is the power to which the `this` will be raised; it must be in the range -999999999 through 999999999, and must have a decimal part of zero. Note that these restrictions may be removed in the future, so they should not be used as a test for a whole number.
 
@@ -1370,7 +1370,7 @@ open fun remainder(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is the remainder of `this/rhs`, using fixed point arithmetic.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#remainder(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as remainder, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 This is not the modulo operator -- the result may be negative.
 
@@ -1399,7 +1399,7 @@ open fun remainder(
 
 Returns a `BigDecimal` whose value is the remainder of `this/rhs`.
 
-Implements the remainder operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the remainder operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 This is not the modulo operator -- the result may be negative.
 
@@ -1444,7 +1444,7 @@ If the given scale (which must be zero or positive) is the same as or greater th
 
 If the given scale is less than the length of the decimal part (the scale) of this `BigDecimal` then trailing digits will be removed, and in this case an `ArithmeticException` is thrown if any discarded digits are non-zero.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#setScale(kotlin.Int,%20kotlin.Int)`, where the first parameter is the scale, and the second is ` MathContext.ROUND_UNNECESSARY`.
+The same as setScale, where the first parameter is the scale, and the second is ` MathContext.ROUND_UNNECESSARY`.
 
 | Parameters ||
 |---|---|
@@ -1480,7 +1480,7 @@ If `round` is `MathContext.ROUND_UNNECESSARY`, an `ArithmeticException` is throw
 | Parameters ||
 |---|---|
 | `scale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` specifying the scale of the resulting `BigDecimal`. |
-| `round` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` rounding mode to be used for the division (see the `https://developer.android.com/reference/kotlin/android/icu/math/MathContext` class). |
+| `round` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The `int` rounding mode to be used for the division (see the MathContext class). |
 
 | Return ||
 |---|---|
@@ -1533,7 +1533,7 @@ open fun subtract(rhs: BigDecimal!): BigDecimal!
 
 Returns a plain `BigDecimal` whose value is `this-rhs`, using fixed point arithmetic.
 
-The same as `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#subtract(android.icu.math.BigDecimal,%20android.icu.math.MathContext)`, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
+The same as subtract, where the `BigDecimal` is `rhs`, and the context is `new MathContext(0, MathContext.PLAIN)`.
 
 The length of the decimal part (the scale) of the result will be the maximum of the scales of the two operands.
 
@@ -1558,7 +1558,7 @@ open fun subtract(
 
 Returns a `BigDecimal` whose value is `this-rhs`.
 
-Implements the subtraction (**`-`** ) operator (as defined in the decimal documentation, see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`), and returns the result as a `BigDecimal` object.
+Implements the subtraction (**`-`** ) operator (as defined in the decimal documentation, see BigDecimal), and returns the result as a `BigDecimal` object.
 
 | Parameters ||
 |---|---|
@@ -1597,7 +1597,7 @@ open fun toBigInteger(): BigInteger!
 
 Converts this `BigDecimal` to a `java.math.BigInteger`.
 
-Any decimal part is truncated (discarded). If an exception is desired should the decimal part be non-zero, use `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toBigIntegerExact()`.
+Any decimal part is truncated (discarded). If an exception is desired should the decimal part be non-zero, use toBigIntegerExact.
 
 | Return ||
 |---|---|
@@ -1677,7 +1677,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toInt(): Int
 ```
 
-Converts this `BigDecimal` to an `int`. If the `BigDecimal` has a non-zero decimal part it is discarded. If the `BigDecimal` is out of the possible range for an `int` (32-bit signed integer) result then only the low-order 32 bits are used. (That is, the number may be *decapitated* .) To avoid unexpected errors when these conditions occur, use the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#intValueExact()` method.
+Converts this `BigDecimal` to an `int`. If the `BigDecimal` has a non-zero decimal part it is discarded. If the `BigDecimal` is out of the possible range for an `int` (32-bit signed integer) result then only the low-order 32 bits are used. (That is, the number may be *decapitated* .) To avoid unexpected errors when these conditions occur, use the intValueExact method.
 
 | Return ||
 |---|---|
@@ -1691,7 +1691,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toLong(): Long
 ```
 
-Converts this `BigDecimal` to a `long`. If the `BigDecimal` has a non-zero decimal part it is discarded. If the `BigDecimal` is out of the possible range for a `long` (64-bit signed integer) result then only the low-order 64 bits are used. (That is, the number may be *decapitated* .) To avoid unexpected errors when these conditions occur, use the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#longValueExact()` method.
+Converts this `BigDecimal` to a `long`. If the `BigDecimal` has a non-zero decimal part it is discarded. If the `BigDecimal` is out of the possible range for a `long` (64-bit signed integer) result then only the low-order 64 bits are used. (That is, the number may be *decapitated* .) To avoid unexpected errors when these conditions occur, use the longValueExact method.
 
 | Return ||
 |---|---|
@@ -1705,9 +1705,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun toString(): String
 ```
 
-Returns the `BigDecimal` as a `String`. This returns a `String` that exactly represents this `BigDecimal`, as defined in the decimal documentation (see `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#`).
+Returns the `BigDecimal` as a `String`. This returns a `String` that exactly represents this `BigDecimal`, as defined in the decimal documentation (see BigDecimal).
 
-By definition, using the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)` constructor on the result `String` will create a `BigDecimal` that is exactly equal to the original `BigDecimal`.
+By definition, using the BigDecimal constructor on the result `String` will create a `BigDecimal` that is exactly equal to the original `BigDecimal`.
 
 | Return ||
 |---|---|
@@ -1715,9 +1715,9 @@ By definition, using the `https://developer.android.com/reference/kotlin/android
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#format(kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#format(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#toCharArray()`
+- format
+- format
+- toCharArray
 
 ### unscaledValue
 
@@ -1745,7 +1745,7 @@ Translates a `double` to a `BigDecimal`.
 
 Returns a `BigDecimal` which is the decimal representation of the 64-bit signed binary floating point parameter. If the parameter is infinite, or is not a number (NaN), a `NumberFormatException` is thrown.
 
-The number is constructed as though `num` had been converted to a `String` using the ` Double.toString()` method and the `https://developer.android.com/reference/kotlin/android/icu/math/BigDecimal#BigDecimal(kotlin.String)` constructor had then been used. This is typically not an exact conversion.
+The number is constructed as though `num` had been converted to a `String` using the ` Double.toString()` method and the BigDecimal constructor had then been used. This is typically not an exact conversion.
 
 | Parameters ||
 |---|---|

@@ -15,13 +15,13 @@ class Gainmap : Parcelable
 
 Gainmap represents a mechanism for augmenting an SDR image to produce an HDR one with variable display adjustment capability. It is a combination of a set of metadata describing how to apply the gainmap, as well as either a 1 (such as `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` or 3 (such as `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` with the alpha channel ignored) channel Bitmap that represents the gainmap data itself.
 
-When rendering to an `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int` activity, the hardware accelerated `https://developer.android.com/reference/kotlin/android/graphics/Canvas` will automatically apply the gainmap when sufficient HDR headroom is available.
+When rendering to an `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int` activity, the hardware accelerated Canvas will automatically apply the gainmap when sufficient HDR headroom is available.
 
 ### Gainmap Structure
 
 The logical whole of a gainmap'd image consists of a base Bitmap that represents the original image as would be displayed without gainmap support in addition to a gainmap with a second enhancement image. In the case of a JPEG, the base image would be the typical 8-bit SDR image that the format is commonly associated with. The gainmap image is embedded alongside the base image, often at a lower resolution (such as 1/4th), along with some metadata to describe how to apply the gainmap. The gainmap image itself is then a greyscale image representing the transformation to apply onto the base image to reconstruct an HDR rendition of it.
 
-As such these "gainmap images" consist of 3 parts - a base `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` with a `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getGainmap()` that returns an instance of this class which in turn contains the enhancement layer represented as another Bitmap, accessible via `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGainmapContents()`
+As such these "gainmap images" consist of 3 parts - a base Bitmap with a getGainmap that returns an instance of this class which in turn contains the enhancement layer represented as another Bitmap, accessible via getGainmapContents
 
 ### Applying a gainmap manually
 
@@ -57,44 +57,44 @@ In the above math, log() is a natural logarithm and exp() is natural exponentiat
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#Gainmap(android.graphics.Bitmap)(gainmapContents: https://developer.android.com/reference/kotlin/android/graphics/Bitmap)` Creates a gainmap from a given Bitmap. |
-| `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#Gainmap(android.graphics.Gainmap,%20android.graphics.Bitmap)(gainmap: https://developer.android.com/reference/kotlin/android/graphics/Gainmap#, gainmapContents: https://developer.android.com/reference/kotlin/android/graphics/Bitmap)` Creates a new gainmap using the provided gainmap as the metadata source and the provided bitmap as the replacement for the gainmapContents |
+| Gainmap Creates a gainmap from a given Bitmap. |
+| Gainmap Creates a new gainmap using the provided gainmap as the metadata source and the provided bitmap as the replacement for the gainmapContents |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#describeContents()()` No special parcel contents. |
-| [ColorSpace](ColorSpace.md)? | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getAlternativeImagePrimaries()()` Gets the colorspace that the gainmap math should be applied in. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getDisplayRatioForFullHdr()()` Gets the hdr/sdr ratio at which point applying the gainmap results in an HDR rendition |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents No special parcel contents. |
+| [ColorSpace](ColorSpace.md)? | getAlternativeImagePrimaries Gets the colorspace that the gainmap math should be applied in. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getDisplayRatioForFullHdr Gets the hdr/sdr ratio at which point applying the gainmap results in an HDR rendition |
 | --- | --- |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getEpsilonHdr()()` Gets the hdr epsilon. |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getEpsilonSdr()()` Gets the sdr epsilon. |
-| [Bitmap](Bitmap.md) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGainmapContents()()` <br /> |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | getEpsilonHdr Gets the hdr epsilon. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | getEpsilonSdr Gets the sdr epsilon. |
+| [Bitmap](Bitmap.md) | getGainmapContents <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGainmapDirection()()` Gets the direction that the gainmap math should be applied in. |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGamma()()` Gets the gainmap gamma. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getMinDisplayRatioForHdrTransition()()` Gets the hdr/sdr ratio below which applying the gainmap results in an SDR rendition. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getGainmapDirection Gets the direction that the gainmap math should be applied in. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | getGamma Gets the gainmap gamma. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | getMinDisplayRatioForHdrTransition Gets the hdr/sdr ratio below which applying the gainmap results in an SDR rendition. |
 | --- | --- |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getRatioMax()()` Gets the gainmap ratio max. |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getRatioMin()()` Gets the gainmap ratio max. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setAlternativeImagePrimaries(android.graphics.ColorSpace)(colorSpace: https://developer.android.com/reference/kotlin/android/graphics/ColorSpace?)` Sets the colorspace that the gainmap math should be applied in. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | getRatioMax Gets the gainmap ratio max. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | getRatioMin Gets the gainmap ratio max. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setAlternativeImagePrimaries Sets the colorspace that the gainmap math should be applied in. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setDisplayRatioForFullHdr(kotlin.Float)(max: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the hdr/sdr ratio at which point applying the gainmap results in an HDR rendition. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setEpsilonHdr(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the hdr epsilon which is used to avoid numerical instability. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setEpsilonSdr(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the sdr epsilon which is used to avoid numerical instability. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setDisplayRatioForFullHdr Sets the hdr/sdr ratio at which point applying the gainmap results in an HDR rendition. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEpsilonHdr Sets the hdr epsilon which is used to avoid numerical instability. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setEpsilonSdr Sets the sdr epsilon which is used to avoid numerical instability. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setGainmapContents(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap)` Sets the image data of the gainmap. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setGainmapDirection(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the direction that the gainmap math should be applied in. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setGamma(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the gainmap gamma. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setGainmapContents Sets the image data of the gainmap. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setGainmapDirection Sets the direction that the gainmap math should be applied in. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setGamma Sets the gainmap gamma. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setMinDisplayRatioForHdrTransition(kotlin.Float)(min: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the hdr/sdr ratio below which applying the gainmap results in an SDR rendition. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setRatioMax(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the gainmap ratio max. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#setRatioMin(kotlin.Float,%20kotlin.Float,%20kotlin.Float)(r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, g: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Sets the gainmap ratio min. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setMinDisplayRatioForHdrTransition Sets the hdr/sdr ratio below which applying the gainmap results in an SDR rendition. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRatioMax Sets the gainmap ratio max. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setRatioMin Sets the gainmap ratio min. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write the gainmap to the parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Write the gainmap to the parcel. |
 
 | Properties ||
 |---|---|
@@ -249,7 +249,7 @@ fun getGainmapContents(): Bitmap
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/graphics/Bitmap` | Returns the image data of the gainmap represented as a Bitmap. This is represented as a Bitmap for broad API compatibility, however certain aspects of the Bitmap are ignored such as `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getColorSpace()` or `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getGainmap()` as they are not relevant to the gainmap's enhancement layer. This value cannot be `null`. |
+| Bitmap | Returns the image data of the gainmap represented as a Bitmap. This is represented as a Bitmap for broad API compatibility, however certain aspects of the Bitmap are ignored such as getColorSpace or getGainmap as they are not relevant to the gainmap's enhancement layer. This value cannot be `null`. |
 
 ### getGainmapDirection
 
@@ -385,7 +385,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun setGainmapContents(bitmap: Bitmap): Unit
 ```
 
-Sets the image data of the gainmap. This is the 1 or 3 channel enhancement layer to apply to the base image. This is represented as a Bitmap for broad API compatibility, however certain aspects of the Bitmap are ignored such as `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getColorSpace()` or `https://developer.android.com/reference/kotlin/android/graphics/Bitmap#getGainmap()` as they are not relevant to the gainmap's enhancement layer.
+Sets the image data of the gainmap. This is the 1 or 3 channel enhancement layer to apply to the base image. This is represented as a Bitmap for broad API compatibility, however certain aspects of the Bitmap are ignored such as getColorSpace or getGainmap as they are not relevant to the gainmap's enhancement layer.
 
 | Parameters ||
 |---|---|

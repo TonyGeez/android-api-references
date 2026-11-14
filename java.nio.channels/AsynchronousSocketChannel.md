@@ -12,13 +12,13 @@ abstract class AsynchronousSocketChannel : AsynchronousByteChannel, NetworkCha
 
 An asynchronous channel for stream-oriented connecting sockets.
 
-Asynchronous socket channels are created in one of two ways. A newly-created `AsynchronousSocketChannel` is created by invoking one of the #open methods defined by this class. A newly-created channel is open but not yet connected. A connected `AsynchronousSocketChannel` is created when a connection is made to the socket of an `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousServerSocketChannel`. It is not possible to create an asynchronous socket channel for an arbitrary, pre-existing `https://developer.android.com/reference/kotlin/java/net/Socket.html#`.
+Asynchronous socket channels are created in one of two ways. A newly-created `AsynchronousSocketChannel` is created by invoking one of the #open methods defined by this class. A newly-created channel is open but not yet connected. A connected `AsynchronousSocketChannel` is created when a connection is made to the socket of an AsynchronousServerSocketChannel. It is not possible to create an asynchronous socket channel for an arbitrary, pre-existing `https://developer.android.com/reference/kotlin/java/net/Socket.html#`.
 
-A newly-created channel is connected by invoking its #connect method; once connected, a channel remains connected until it is closed. Whether or not a socket channel is connected may be determined by invoking its `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getRemoteAddress()` method. An attempt to invoke an I/O operation upon an unconnected channel will cause a `https://developer.android.com/reference/kotlin/java/nio/channels/NotYetConnectedException` to be thrown.
+A newly-created channel is connected by invoking its #connect method; once connected, a channel remains connected until it is closed. Whether or not a socket channel is connected may be determined by invoking its getRemoteAddress method. An attempt to invoke an I/O operation upon an unconnected channel will cause a NotYetConnectedException to be thrown.
 
-Channels of this type are safe for use by multiple concurrent threads. They support concurrent reading and writing, though at most one read operation and one write operation can be outstanding at any time. If a thread initiates a read operation before a previous read operation has completed then a `https://developer.android.com/reference/kotlin/java/nio/channels/ReadPendingException` will be thrown. Similarly, an attempt to initiate a write operation before a previous write has completed will throw a `https://developer.android.com/reference/kotlin/java/nio/channels/WritePendingException`.
+Channels of this type are safe for use by multiple concurrent threads. They support concurrent reading and writing, though at most one read operation and one write operation can be outstanding at any time. If a thread initiates a read operation before a previous read operation has completed then a ReadPendingException will be thrown. Similarly, an attempt to initiate a write operation before a previous write has completed will throw a WritePendingException.
 
-Socket options are configured using the `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#setOption(java.net.SocketOption,%20java.nio.channels.AsynchronousSocketChannel.setOption.T)` method. Asynchronous socket channels support the following options:
+Socket options are configured using the setOption method. Asynchronous socket channels support the following options:
 
 | Option Name | Description |
 | --- | --- |
@@ -34,46 +34,46 @@ Additional (implementation specific) options may also be supported.
 
 ## Timeouts
 
-The `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)` and `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.write.A,%20java.nio.channels.CompletionHandler)` methods defined by this class allow a timeout to be specified when initiating a read or write operation. If the timeout elapses before an operation completes then the operation completes with the exception `https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException`. A timeout may leave the channel, or the underlying connection, in an inconsistent state. Where the implementation cannot guarantee that bytes have not been read from the channel then it puts the channel into an implementation specific *error state* . A subsequent attempt to initiate a `read` operation causes an unspecified runtime exception to be thrown. Similarly if a `write` operation times out and the implementation cannot guarantee bytes have not been written to the channel then further attempts to `write` to the channel cause an unspecified runtime exception to be thrown. When a timeout elapses then the state of the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#`, or the sequence of buffers, for the I/O operation is not defined. Buffers should be discarded or at least care must be taken to ensure that the buffers are not accessed while the channel remains open. All methods that accept timeout parameters treat values less than or equal to zero to mean that the I/O operation does not timeout.
+The read and write methods defined by this class allow a timeout to be specified when initiating a read or write operation. If the timeout elapses before an operation completes then the operation completes with the exception InterruptedByTimeoutException. A timeout may leave the channel, or the underlying connection, in an inconsistent state. Where the implementation cannot guarantee that bytes have not been read from the channel then it puts the channel into an implementation specific *error state* . A subsequent attempt to initiate a `read` operation causes an unspecified runtime exception to be thrown. Similarly if a `write` operation times out and the implementation cannot guarantee bytes have not been written to the channel then further attempts to `write` to the channel cause an unspecified runtime exception to be thrown. When a timeout elapses then the state of the `https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#`, or the sequence of buffers, for the I/O operation is not defined. Buffers should be discarded or at least care must be taken to ensure that the buffers are not accessed while the channel remains open. All methods that accept timeout parameters treat values less than or equal to zero to mean that the I/O operation does not timeout.
 
 ## Summary
 
 | Protected constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#AsynchronousSocketChannel(java.nio.channels.spi.AsynchronousChannelProvider)(provider: https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider!)` Initializes a new instance of this class. |
+| AsynchronousSocketChannel Initializes a new instance of this class. |
 
 | Public methods ||
 |---|---|
-| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#bind(java.net.SocketAddress)(local: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` <br /> |
-| abstract [Future](../java.util.concurrent/Future.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#connect(java.net.SocketAddress)(remote: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` Connects this channel. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#connect(java.net.SocketAddress,%20java.nio.channels.AsynchronousSocketChannel.connect.A,%20java.nio.channels.CompletionHandler)(remote: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, in A>!)` Connects this channel. |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | bind <br /> |
+| abstract [Future](../java.util.concurrent/Future.md)\< [Void](../java.lang/Void.md)!\>! | connect Connects this channel. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | connect Connects this channel. |
 | --- | --- |
-| abstract [SocketAddress](../java.net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getLocalAddress()()` Returns the socket address that this channel's socket is bound to. |
-| abstract [SocketAddress](../java.net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getRemoteAddress()()` Returns the remote address to which this channel's socket is connected. |
-| open static [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#open()()` Opens an asynchronous socket channel. |
+| abstract [SocketAddress](../java.net/SocketAddress.md)! | getLocalAddress Returns the socket address that this channel's socket is bound to. |
+| abstract [SocketAddress](../java.net/SocketAddress.md)! | getRemoteAddress Returns the remote address to which this channel's socket is connected. |
+| open static [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | open Opens an asynchronous socket channel. |
 | --- | --- |
-| open static [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#open(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup!)` Opens an asynchronous socket channel. |
-| [AsynchronousChannelProvider](../java.nio.channels.spi/AsynchronousChannelProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#provider()()` Returns the provider that created this channel. |
-| abstract [Future](../java.util.concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` <br /> |
+| open static [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | open Opens an asynchronous socket channel. |
+| [AsynchronousChannelProvider](../java.nio.channels.spi/AsynchronousChannelProvider.md)! | provider Returns the provider that created this channel. |
+| abstract [Future](../java.util.concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | read <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` Reads a sequence of bytes from this channel into the given buffer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)(dsts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!>!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!, in A>!)` Reads a sequence of bytes from this channel into a subsequence of the given buffers. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | read <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | read Reads a sequence of bytes from this channel into the given buffer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | read Reads a sequence of bytes from this channel into a subsequence of the given buffers. |
 | --- | --- |
-| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#setOption(java.net.SocketOption,%20java.nio.channels.AsynchronousSocketChannel.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!, value: T)` <br /> |
-| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#shutdownInput()()` Shutdown the connection for reading without closing the channel. |
-| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#shutdownOutput()()` Shutdown the connection for writing without closing the channel. |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | setOption <br /> |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | shutdownInput Shutdown the connection for reading without closing the channel. |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | shutdownOutput Shutdown the connection for writing without closing the channel. |
 | --- | --- |
-| abstract [Future](../java.util.concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousSocketChannel.write.A,%20java.nio.channels.CompletionHandler)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.write.A,%20java.nio.channels.CompletionHandler)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` Writes a sequence of bytes to this channel from the given buffer. |
+| abstract [Future](../java.util.concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | write <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes a sequence of bytes to this channel from the given buffer. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.write.A,%20java.nio.channels.CompletionHandler)(srcs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!>!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!, in A>!)` Writes a sequence of bytes to this channel from a subsequence of the given buffers. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | write Writes a sequence of bytes to this channel from a subsequence of the given buffers. |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/nio/channels/Channel` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/nio/channels/Channel#close()()` Closes this channel. After a channel is closed, any further attempt to invoke I/O operations upon it will cause a `https://developer.android.com/reference/kotlin/java/nio/channels/ClosedChannelException` to be thrown. If this channel is already closed then invoking this method has no effect. This method may be invoked at any time. If some other thread has already invoked it, however, then another invocation will block until the first invocation is complete, after which it will return without effect. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | `https://developer.android.com/reference/kotlin/java/nio/channels/Channel#isOpen()()` Tells whether or not this channel is open. <br /> | ||
-| From class `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel` |---|---| | `T` | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!)` Returns the value of a socket option. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<*>!>!` | `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#supportedOptions()()` Returns a set of the socket options supported by this channel. This method will continue to return the set of options even after the channel has been closed. <br /> | ||
+| From class Channel |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | close Closes this channel. After a channel is closed, any further attempt to invoke I/O operations upon it will cause a ClosedChannelException to be thrown. If this channel is already closed then invoking this method has no effect. This method may be invoked at any time. If some other thread has already invoked it, however, then another invocation will block until the first invocation is complete, after which it will return without effect. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html` | isOpen Tells whether or not this channel is open. <br /> | ||
+| From class NetworkChannel |---|---| | `T` | getOption Returns the value of a socket option. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<*>!>!` | supportedOptions Returns a set of the socket options supported by this channel. This method will continue to return the set of options even after the channel has been closed. <br /> | ||
 
 ## Protected constructors
 
@@ -112,7 +112,7 @@ abstract fun bind(local: SocketAddress!): AsynchronousSocketChannel!
 | Exceptions ||
 |---|---|
 | `java.io.IOException` | If some other I/O error occurs |
-| `java.lang.SecurityException` | If a security manager has been installed and its `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#checkListen(kotlin.Int)` method denies the operation |
+| `java.lang.SecurityException` | If a security manager has been installed and its checkListen method denies the operation |
 | `java.nio.channels.AlreadyBoundException` | If the socket is already bound |
 | --- | --- |
 | `java.nio.channels.ClosedChannelException` | If the channel is closed |
@@ -130,7 +130,7 @@ abstract fun connect(remote: SocketAddress!): Future<Void!>!
 
 Connects this channel.
 
-This method initiates an operation to connect this channel. This method behaves in exactly the same manner as the `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#connect(java.net.SocketAddress,%20java.nio.channels.AsynchronousSocketChannel.connect.A,%20java.nio.channels.CompletionHandler)` method except that instead of specifying a completion handler, this method returns a `Future` representing the pending result. The `Future`'s `https://developer.android.com/reference/kotlin/java/util/concurrent/Future.html#get()` method returns `null` on successful completion.
+This method initiates an operation to connect this channel. This method behaves in exactly the same manner as the connect method except that instead of specifying a completion handler, this method returns a `Future` representing the pending result. The `Future`'s get method returns `null` on successful completion.
 
 | Parameters ||
 |---|---|
@@ -188,7 +188,7 @@ This method performs exactly the same security checks as the `https://developer.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getRemoteAddress()`
+- getRemoteAddress
 
 ### getLocalAddress
 
@@ -200,9 +200,9 @@ abstract fun getLocalAddress(): SocketAddress!
 
 Returns the socket address that this channel's socket is bound to.
 
-Where the channel is `https://developer.android.com/reference/kotlin/java/nio/channels/NetworkChannel#bind(java.net.SocketAddress)` to an Internet Protocol socket address then the return value from this method is of type `https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#`.
+Where the channel is bind to an Internet Protocol socket address then the return value from this method is of type `https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#`.
 
-If there is a security manager set, its `checkConnect` method is called with the local address and `-1` as its arguments to see if the operation is allowed. If the operation is not allowed, a `SocketAddress` representing the `https://developer.android.com/reference/kotlin/java/net/InetAddress.html#getLoopbackAddress()` address and the local port of the channel's socket is returned.
+If there is a security manager set, its `checkConnect` method is called with the local address and `-1` as its arguments to see if the operation is allowed. If the operation is not allowed, a `SocketAddress` representing the getLoopbackAddress address and the local port of the channel's socket is returned.
 
 | Return ||
 |---|---|
@@ -269,7 +269,7 @@ open static fun open(group: AsynchronousChannelGroup!): AsynchronousSocketChann
 
 Opens an asynchronous socket channel.
 
-The new channel is created by invoking the `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)` method on the `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider` that created the group. If the group parameter is `null` then the resulting channel is created by the system-wide default provider, and bound to the *default group*.
+The new channel is created by invoking the openAsynchronousSocketChannel method on the AsynchronousChannelProvider that created the group. If the group parameter is `null` then the resulting channel is created by the system-wide default provider, and bound to the *default group*.
 
 | Parameters ||
 |---|---|
@@ -367,9 +367,9 @@ Reads a sequence of bytes from this channel into the given buffer.
 
 This method initiates an asynchronous read operation to read a sequence of bytes from this channel into the given buffer. The `handler` parameter is a completion handler that is invoked when the read operation completes (or fails). The result passed to the completion handler is the number of bytes read or `-1` if no bytes could be read because the channel has reached end-of-stream.
 
-If a timeout is specified and the timeout elapses before the operation completes then the operation completes with the exception `https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException`. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been read, or will not be read from the channel into the given buffer, then further attempts to read from the channel will cause an unspecific runtime exception to be thrown.
+If a timeout is specified and the timeout elapses before the operation completes then the operation completes with the exception InterruptedByTimeoutException. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been read, or will not be read from the channel into the given buffer, then further attempts to read from the channel will cause an unspecific runtime exception to be thrown.
 
-Otherwise this method works in the same manner as the `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#read(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousByteChannel.read.A,%20java.nio.channels.CompletionHandler)` method.
+Otherwise this method works in the same manner as the read method.
 
 | Parameters ||
 |---|---|
@@ -419,7 +419,7 @@ at the moment that the read is attempted.
 
 Suppose that a byte sequence of length *n* is read, where `0` `<` *n* `<=` *r* . Up to the first `dsts[offset].remaining()` bytes of this sequence are transferred into buffer `dsts[offset]`, up to the next `dsts[offset+1].remaining()` bytes are transferred into buffer `dsts[offset+1]`, and so forth, until the entire byte sequence is transferred into the given buffers. As many bytes as possible are transferred into each buffer, hence the final position of each updated buffer, except the last updated buffer, is guaranteed to be equal to that buffer's limit. The underlying operating system may impose a limit on the number of buffers that may be used in an I/O operation. Where the number of buffers (with bytes remaining), exceeds this limit, then the I/O operation is performed with the maximum number of buffers allowed by the operating system.
 
-If a timeout is specified and the timeout elapses before the operation completes then it completes with the exception `https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException`. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been read, or will not be read from the channel into the given buffers, then further attempts to read from the channel will cause an unspecific runtime exception to be thrown.
+If a timeout is specified and the timeout elapses before the operation completes then it completes with the exception InterruptedByTimeoutException. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been read, or will not be read from the channel into the given buffers, then further attempts to read from the channel will cause an unspecific runtime exception to be thrown.
 
 | Parameters ||
 |---|---|
@@ -506,7 +506,7 @@ abstract fun shutdownOutput(): AsynchronousSocketChannel!
 
 Shutdown the connection for writing without closing the channel.
 
-Once shutdown for writing then further attempts to write to the channel will throw `https://developer.android.com/reference/kotlin/java/nio/channels/ClosedChannelException`. If the output side of the connection is already shutdown then invoking this method has no effect. The effect on an outstanding write operation is system dependent and therefore not specified.
+Once shutdown for writing then further attempts to write to the channel will throw ClosedChannelException. If the output side of the connection is already shutdown then invoking this method has no effect. The effect on an outstanding write operation is system dependent and therefore not specified.
 
 | Return ||
 |---|---|
@@ -585,9 +585,9 @@ Writes a sequence of bytes to this channel from the given buffer.
 
 This method initiates an asynchronous write operation to write a sequence of bytes to this channel from the given buffer. The `handler` parameter is a completion handler that is invoked when the write operation completes (or fails). The result passed to the completion handler is the number of bytes written.
 
-If a timeout is specified and the timeout elapses before the operation completes then it completes with the exception `https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException`. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been written, or will not be written to the channel from the given buffer, then further attempts to write to the channel will cause an unspecific runtime exception to be thrown.
+If a timeout is specified and the timeout elapses before the operation completes then it completes with the exception InterruptedByTimeoutException. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been written, or will not be written to the channel from the given buffer, then further attempts to write to the channel will cause an unspecific runtime exception to be thrown.
 
-Otherwise this method works in the same manner as the `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousByteChannel#write(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousByteChannel.write.A,%20java.nio.channels.CompletionHandler)` method.
+Otherwise this method works in the same manner as the write method.
 
 | Parameters ||
 |---|---|
@@ -636,7 +636,7 @@ at the moment that the write is attempted.
 
 Suppose that a byte sequence of length *n* is written, where `0` `<` *n* `<=` *r* . Up to the first `srcs[offset].remaining()` bytes of this sequence are written from buffer `srcs[offset]`, up to the next `srcs[offset+1].remaining()` bytes are written from buffer `srcs[offset+1]`, and so forth, until the entire byte sequence is written. As many bytes as possible are written from each buffer, hence the final position of each updated buffer, except the last updated buffer, is guaranteed to be equal to that buffer's limit. The underlying operating system may impose a limit on the number of buffers that may be used in an I/O operation. Where the number of buffers (with bytes remaining), exceeds this limit, then the I/O operation is performed with the maximum number of buffers allowed by the operating system.
 
-If a timeout is specified and the timeout elapses before the operation completes then it completes with the exception `https://developer.android.com/reference/kotlin/java/nio/channels/InterruptedByTimeoutException`. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been written, or will not be written to the channel from the given buffers, then further attempts to write to the channel will cause an unspecific runtime exception to be thrown.
+If a timeout is specified and the timeout elapses before the operation completes then it completes with the exception InterruptedByTimeoutException. Where a timeout occurs, and the implementation cannot guarantee that bytes have not been written, or will not be written to the channel from the given buffers, then further attempts to write to the channel will cause an unspecific runtime exception to be thrown.
 
 | Parameters ||
 |---|---|

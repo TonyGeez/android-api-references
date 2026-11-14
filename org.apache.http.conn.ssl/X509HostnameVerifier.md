@@ -9,7 +9,7 @@ interface X509HostnameVerifier : HostnameVerifier
 
 | [org.apache.http.conn.ssl.X509HostnameVerifier](X509HostnameVerifier.md) |
 
-| Known Direct Subclasses [AbstractVerifier](AbstractVerifier.md) |---|---| | [AbstractVerifier](AbstractVerifier.md) | Abstract base class for all standard `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#` implementations. | |
+| Known Direct Subclasses [AbstractVerifier](AbstractVerifier.md) |---|---| | [AbstractVerifier](AbstractVerifier.md) | Abstract base class for all standard X509HostnameVerifier implementations. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | Known Indirect Subclasses [AllowAllHostnameVerifier](AllowAllHostnameVerifier.md), [BrowserCompatHostnameVerifier](BrowserCompatHostnameVerifier.md), [StrictHostnameVerifier](StrictHostnameVerifier.md) |---|---| | [AllowAllHostnameVerifier](AllowAllHostnameVerifier.md) | The ALLOW_ALL HostnameVerifier essentially turns hostname verification off. | | [BrowserCompatHostnameVerifier](BrowserCompatHostnameVerifier.md) | The HostnameVerifier that works the same way as Curl and Firefox. | | [StrictHostnameVerifier](StrictHostnameVerifier.md) | The Strict HostnameVerifier works the same way as Sun Java 1. | |
@@ -33,11 +33,11 @@ Inspired by Sebastian Hauer's original StrictSSLProtocolSocketFactory in the Htt
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20kotlin.Array,%20kotlin.Array)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cns: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, subjectAlts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Checks to see if the supplied hostname matches any of the supplied CNs or "DNS" Subject-Alts. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20java.security.cert.X509Certificate)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, cert: https://developer.android.com/reference/kotlin/java/security/cert/X509Certificate.html#!)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20javax.net.ssl.SSLSession)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, session: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSession.html#!)` Verify that the host name is an acceptable match with the server's authentication scheme. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verify Checks to see if the supplied hostname matches any of the supplied CNs or "DNS" Subject-Alts. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verify <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | verify Verify that the host name is an acceptable match with the server's authentication scheme. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#verify(kotlin.String,%20javax.net.ssl.SSLSocket)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, ssl: https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket.html#!)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | verify <br /> |
 
 ## Public methods
 

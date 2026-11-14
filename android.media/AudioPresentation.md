@@ -13,13 +13,13 @@ class AudioPresentation : Parcelable
 | --- | --- |
 | ↳ | [android.media.AudioPresentation](AudioPresentation.md) |
 
-The AudioPresentation class encapsulates the information that describes an audio presentation which is available in next generation audio content. Used by `https://developer.android.com/reference/kotlin/android/media/MediaExtractor` `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getAudioPresentations(kotlin.Int)` and `https://developer.android.com/reference/kotlin/android/media/AudioTrack` `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPresentation(android.media.AudioPresentation)` to query available presentations and to select one, respectively. A list of available audio presentations in a media source can be queried using `https://developer.android.com/reference/kotlin/android/media/MediaExtractor#getAudioPresentations(kotlin.Int)`. This list can be presented to a user for selection. An AudioPresentation can be passed to an offloaded audio decoder via `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPresentation(android.media.AudioPresentation)` to request decoding of the selected presentation. An audio stream may contain multiple presentations that differ by language, accessibility, end point mastering and dialogue enhancement. An audio presentation may also have a set of description labels in different languages to help the user to make an informed selection. Applications that parse media streams and extract presentation information on their own can create instances of AudioPresentation by using `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder` class.
+The AudioPresentation class encapsulates the information that describes an audio presentation which is available in next generation audio content. Used by MediaExtractor getAudioPresentations and AudioTrack setPresentation to query available presentations and to select one, respectively. A list of available audio presentations in a media source can be queried using getAudioPresentations. This list can be presented to a user for selection. An AudioPresentation can be passed to an offloaded audio decoder via setPresentation to request decoding of the selected presentation. An audio stream may contain multiple presentations that differ by language, accessibility, end point mastering and dialogue enhancement. An audio presentation may also have a set of description labels in different languages to help the user to make an informed selection. Applications that parse media streams and extract presentation information on their own can create instances of AudioPresentation by using `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder` class.
 
 ## Summary
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder` A builder class for creating `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#` objects. |
+| | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder` A builder class for creating AudioPresentation objects. |
 
 | Constants ||
 |---|---|
@@ -47,27 +47,27 @@ The AudioPresentation class encapsulates the information that describes an audio
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Locale](../java.util/Locale.md)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLabels()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Locale](../java.util/Locale.md)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | getLabels <br /> |
 | --- | --- |
-| [Locale](../java.util/Locale.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getLocale()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getMasteringIndication()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getPresentationId()()` Returns presentation ID used by the framework to select an audio presentation rendered by a decoder. |
+| [Locale](../java.util/Locale.md)! | getLocale <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getMasteringIndication <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPresentationId Returns presentation ID used by the framework to select an audio presentation rendered by a decoder. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#getProgramId()()` Returns program ID used by the framework to select an audio presentation rendered by a decoder. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hasAudioDescription()()` Indicates whether an audio description for the visually impaired is available. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hasDialogueEnhancement()()` Indicates whether dialogue enhancement is available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getProgramId Returns program ID used by the framework to select an audio presentation rendered by a decoder. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasAudioDescription Indicates whether an audio description for the visually impaired is available. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasDialogueEnhancement Indicates whether dialogue enhancement is available. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hasSpokenSubtitles()()` Indicates whether spoken subtitles for the visually impaired are available. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#hashCode()()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#toString()()` Returns a string representation of the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | hasSpokenSubtitles Indicates whether spoken subtitles for the visually impaired are available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioPresentation#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -197,7 +197,7 @@ Three-dimensional (e.g. 5.1.2) speaker layout.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder#setMasteringIndication(kotlin.Int)`
+- setMasteringIndication
 
 ### MASTERED_FOR_HEADPHONE
 
@@ -213,7 +213,7 @@ Prerendered for headphone playback.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder#setMasteringIndication(kotlin.Int)`
+- setMasteringIndication
 
 ### MASTERED_FOR_STEREO
 
@@ -229,7 +229,7 @@ Stereo speaker layout.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder#setMasteringIndication(kotlin.Int)`
+- setMasteringIndication
 
 ### MASTERED_FOR_SURROUND
 
@@ -245,7 +245,7 @@ Two-dimensional (e.g. 5.1) speaker layout.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder#setMasteringIndication(kotlin.Int)`
+- setMasteringIndication
 
 ### MASTERING_NOT_INDICATED
 
@@ -261,7 +261,7 @@ No preferred reproduction channel layout.
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/media/AudioPresentation.Builder#setMasteringIndication(kotlin.Int)`
+- setMasteringIndication
 
 ### PRESENTATION_ID_UNKNOWN
 
@@ -297,7 +297,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
@@ -442,8 +442,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|

@@ -19,17 +19,17 @@ An immutable data snapshot of text editing state.
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#TextSnapshot(android.view.inputmethod.SurroundingText,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(surroundingText: https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText, compositionStart: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, compositionEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, cursorCapsMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new instance of `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#` |
+| TextSnapshot Creates a new instance of TextSnapshot |
 
 | Public methods ||
 |---|---|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getCompositionEnd()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getCompositionStart()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getCursorCapsMode()()` The capitalization mode of the first character being edited in the text. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCompositionEnd <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCompositionStart <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCursorCapsMode The capitalization mode of the first character being edited in the text. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getSelectionEnd()()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getSelectionStart()()` <br /> |
-| [SurroundingText](SurroundingText.md) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#getSurroundingText()()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSelectionEnd <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getSelectionStart <br /> |
+| [SurroundingText](SurroundingText.md) | getSurroundingText <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -46,11 +46,11 @@ TextSnapshot(
     cursorCapsMode: Int)
 ```
 
-Creates a new instance of `https://developer.android.com/reference/kotlin/android/view/inputmethod/TextSnapshot#`
+Creates a new instance of TextSnapshot
 
 | Parameters ||
 |---|---|
-| `surroundingText` | [SurroundingText](SurroundingText.md): `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText` of the current edit field. This value cannot be `null`. |
+| `surroundingText` | [SurroundingText](SurroundingText.md): SurroundingText of the current edit field. This value cannot be `null`. |
 | `compositionStart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The start index of the composing text. `-1` if there is no composing text. Value is -1 or greater |
 | `compositionEnd` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The end index of the composing text. `-1` if there is no composing text. Value is -1 or greater |
 | --- | --- |
@@ -142,4 +142,4 @@ fun getSurroundingText(): SurroundingText
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText` | `https://developer.android.com/reference/kotlin/android/view/inputmethod/SurroundingText` of the current edit field. This value cannot be `null`. |
+| SurroundingText | SurroundingText of the current edit field. This value cannot be `null`. |

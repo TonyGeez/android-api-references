@@ -16,15 +16,15 @@ Holds presentations used to visualize autofill suggestions for each available UI
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations.Builder` A builder for `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#` |
+| | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations.Builder` A builder for Presentations |
 
 | Public methods ||
 |---|---|
-| [RemoteViews](../android.widget/RemoteViews.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getDialogPresentation()()` The presentation used to visualize this field in the [fill dialog UI](Dataset.md) |
-| [InlinePresentation](InlinePresentation.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getInlinePresentation()()` The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to visualize this dataset as inline suggestions. |
-| [InlinePresentation](InlinePresentation.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getInlineTooltipPresentation()()` The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to show the tooltip for the `mInlinePresentation`. |
+| [RemoteViews](../android.widget/RemoteViews.md)? | getDialogPresentation The presentation used to visualize this field in the [fill dialog UI](Dataset.md) |
+| [InlinePresentation](InlinePresentation.md)? | getInlinePresentation The InlinePresentation used to visualize this dataset as inline suggestions. |
+| [InlinePresentation](InlinePresentation.md)? | getInlineTooltipPresentation The InlinePresentation used to show the tooltip for the `mInlinePresentation`. |
 | --- | --- |
-| [RemoteViews](../android.widget/RemoteViews.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/Presentations#getMenuPresentation()()` The presentation used to visualize this field in fill UI. |
+| [RemoteViews](../android.widget/RemoteViews.md)? | getMenuPresentation The presentation used to visualize this field in fill UI. |
 
 ## Public methods
 
@@ -52,7 +52,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getInlinePresentation(): InlinePresentation?
 ```
 
-The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to visualize this dataset as inline suggestions. If the dataset supports inline suggestions, this should not be null.
+The InlinePresentation used to visualize this dataset as inline suggestions. If the dataset supports inline suggestions, this should not be null.
 
 ### getInlineTooltipPresentation
 
@@ -62,7 +62,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getInlineTooltipPresentation(): InlinePresentation?
 ```
 
-The `https://developer.android.com/reference/kotlin/android/service/autofill/InlinePresentation` used to show the tooltip for the `mInlinePresentation`. If the set this field, the `mInlinePresentation` should not be null.
+The InlinePresentation used to show the tooltip for the `mInlinePresentation`. If the set this field, the `mInlinePresentation` should not be null.
 
 ### getMenuPresentation
 

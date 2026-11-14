@@ -20,7 +20,7 @@ A given camera device may provide support at one of several levels defined in `h
 
 | Nested classes ||
 |---|---|
-| abstract | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.CameraDeviceSetup` CameraDeviceSetup is a limited representation of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#` that can be used to query device specific information which would otherwise need a CameraDevice instance. |
+| abstract | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.CameraDeviceSetup` CameraDeviceSetup is a limited representation of CameraDevice that can be used to query device specific information which would otherwise need a CameraDevice instance. |
 | abstract | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.StateCallback` A callback objects for receiving updates about the state of a camera device. |
 
 | Constants ||
@@ -40,25 +40,25 @@ A given camera device may provide support at one of several levels defined in `h
 
 | Public methods ||
 |---|---|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#close()()` Close the connection to this camera device as quickly as possible. |
-| abstract [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
-| open [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureRequest(kotlin.Int,%20kotlin.collections.MutableSet)(templateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, physicalCameraIdSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | close Close the connection to this camera device as quickly as possible. |
+| abstract [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | createCaptureRequest Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
+| open [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | createCaptureRequest Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)(config: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration!)` Create a new `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession` using a `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` helper object that aggregates all supported parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new camera capture session by providing the target output set of Surfaces to the camera device. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSessionByOutputConfigurations(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputConfigurations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>!, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new camera capture session by providing the target output set of Surfaces and its corresponding surface configuration to the camera device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createCaptureSession Create a new CameraCaptureSession using a SessionConfiguration helper object that aggregates all supported parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createCaptureSession Create a new camera capture session by providing the target output set of Surfaces to the camera device. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createCaptureSessionByOutputConfigurations Create a new camera capture session by providing the target output set of Surfaces and its corresponding surface configuration to the camera device. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new constrained high speed capture session. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createExtensionSession(android.hardware.camera2.params.ExtensionSessionConfiguration)(extensionConfiguration: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ExtensionSessionConfiguration)` Initialize a specific device-specific extension augmented camera capture session. |
-| abstract [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessCaptureRequest(android.hardware.camera2.TotalCaptureResult)(inputResult: https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult)` Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` from a `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createConstrainedHighSpeedCaptureSession Create a new constrained high speed capture session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createExtensionSession Initialize a specific device-specific extension augmented camera capture session. |
+| abstract [CaptureRequest.Builder](../android/hardware/camera2/CaptureRequest.Builder.md) | createReprocessCaptureRequest Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess CaptureRequest from a TotalCaptureResult. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSession(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(inputConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new reprocessable camera capture session by providing the desired reprocessing input Surface configuration and the target output set of Surfaces to the camera device. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSessionByConfigurations(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)(inputConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration, outputs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>, callback: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Create a new reprocessable camera capture session by providing the desired reprocessing input configuration and output `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` to the camera device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#getCameraAudioRestriction()()` Get currently applied global camera audio restriction mode. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createReprocessableCaptureSession Create a new reprocessable camera capture session by providing the desired reprocessing input Surface configuration and the target output set of Surfaces to the camera device. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | createReprocessableCaptureSessionByConfigurations Create a new reprocessable camera capture session by providing the desired reprocessing input configuration and output OutputConfiguration to the camera device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getCameraAudioRestriction Get currently applied global camera audio restriction mode. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#getId()()` Get the ID of this camera device. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)(sessionConfig: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration)` Checks whether a particular `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` is supported by the camera device. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set audio restriction mode when this CameraDevice is being used. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | getId Get the ID of this camera device. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | isSessionConfigurationSupported Checks whether a particular SessionConfiguration is supported by the camera device. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | setCameraAudioRestriction Set audio restriction mode when this CameraDevice is being used. |
 | --- | --- |
 
 ## Constants
@@ -77,7 +77,7 @@ No vibration or sound muting for this camera device. This is the default mode fo
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)`
+- setCameraAudioRestriction
 
 ### AUDIO_RESTRICTION_VIBRATION
 
@@ -93,7 +93,7 @@ Mute vibration from ringtones, alarms or notifications while this camera device 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)`
+- setCameraAudioRestriction
 
 ### AUDIO_RESTRICTION_VIBRATION_SOUND
 
@@ -111,7 +111,7 @@ As of API level 37, this option will also turn off any lights on the device if t
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)`
+- setCameraAudioRestriction
 
 ### TEMPLATE_MANUAL
 
@@ -135,7 +135,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TEMPLATE_PREVIEW: Int
 ```
 
-Create a request suitable for a camera preview window. Specifically, this means that high frame rate is given priority over the highest-quality post-processing. These requests would normally be used with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)` method. This template is guaranteed to be supported on all camera devices.
+Create a request suitable for a camera preview window. Specifically, this means that high frame rate is given priority over the highest-quality post-processing. These requests would normally be used with the setRepeatingRequest method. This template is guaranteed to be supported on all camera devices.
 
  Value: 1
 
@@ -149,7 +149,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TEMPLATE_RECORD: Int
 ```
 
-Create a request suitable for video recording. Specifically, this means that a stable frame rate is used, and post-processing is set for recording quality. These requests would commonly be used with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)` method. This template is guaranteed to be supported on all camera devices except `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int` devices that are not `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE:kotlin.Int`.
+Create a request suitable for video recording. Specifically, this means that a stable frame rate is used, and post-processing is set for recording quality. These requests would commonly be used with the setRepeatingRequest method. This template is guaranteed to be supported on all camera devices except `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int` devices that are not `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE:kotlin.Int`.
 
  Value: 3
 
@@ -163,7 +163,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TEMPLATE_STILL_CAPTURE: Int
 ```
 
-Create a request suitable for still image capture. Specifically, this means prioritizing image quality over frame rate. These requests would commonly be used with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#capture(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)` method. This template is guaranteed to be supported on all camera devices except `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int` devices that are not `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE:kotlin.Int`.
+Create a request suitable for still image capture. Specifically, this means prioritizing image quality over frame rate. These requests would commonly be used with the capture method. This template is guaranteed to be supported on all camera devices except `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int` devices that are not `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE:kotlin.Int`.
 
  Value: 2
 
@@ -177,7 +177,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TEMPLATE_VIDEO_SNAPSHOT: Int
 ```
 
-Create a request suitable for still image capture while recording video. Specifically, this means maximizing image quality without disrupting the ongoing recording. These requests would commonly be used with the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#capture(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)` method while a request based on `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_RECORD:kotlin.Int` is is in use with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`. This template is guaranteed to be supported on all camera devices except legacy devices (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY:kotlin.Int`) and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int` devices that are not `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE:kotlin.Int`.
+Create a request suitable for still image capture while recording video. Specifically, this means maximizing image quality without disrupting the ongoing recording. These requests would commonly be used with the capture method while a request based on `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_RECORD:kotlin.Int` is is in use with setRepeatingRequest. This template is guaranteed to be supported on all camera devices except legacy devices (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY:kotlin.Int`) and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DEPTH_OUTPUT:kotlin.Int` devices that are not `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE:kotlin.Int`.
 
  Value: 4
 
@@ -211,9 +211,9 @@ abstract fun close(): Unit
 
 Close the connection to this camera device as quickly as possible.
 
-Immediately after this call, all calls to the camera device or active session interface will throw a `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`, except for calls to close(). Once the device has fully shut down, the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.StateCallback#onClosed(android.hardware.camera2.CameraDevice)` callback will be called, and the camera is free to be re-opened.
+Immediately after this call, all calls to the camera device or active session interface will throw a `https://developer.android.com/reference/kotlin/java/lang/IllegalStateException.html#`, except for calls to close(). Once the device has fully shut down, the onClosed callback will be called, and the camera is free to be re-opened.
 
-Immediately after this call, besides the final `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.StateCallback#onClosed(android.hardware.camera2.CameraDevice)` calls, no further callbacks from the device or the active session will occur, and any remaining submitted capture requests will be discarded, as if `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#abortCaptures()` had been called, except that no success or failure callbacks will be invoked.
+Immediately after this call, besides the final onClosed calls, no further callbacks from the device or the active session will occur, and any remaining submitted capture requests will be discarded, as if abortCaptures had been called, except that no success or failure callbacks will be invoked.
 
 | Exceptions ||
 |---|---|
@@ -256,9 +256,9 @@ open fun createCaptureRequest(
 ): CaptureRequest.Builder
 ```
 
-Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. This methods allows clients to pass physical camera ids which can be used to customize the request for a specific physical camera. The settings are chosen to be the best options for the specific logical camera device. If additional physical camera ids are passed, then they will also use the same settings template. Clients can further modify individual camera settings by calling `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder#setPhysicalCameraKey(android.hardware.camera2.CaptureRequest.Key,%20android.hardware.camera2.CaptureRequest.Builder.setPhysicalCameraKey.T,%20kotlin.String)`.
+Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for new capture requests, initialized with template for a target use case. This methods allows clients to pass physical camera ids which can be used to customize the request for a specific physical camera. The settings are chosen to be the best options for the specific logical camera device. If additional physical camera ids are passed, then they will also use the same settings template. Clients can further modify individual camera settings by calling setPhysicalCameraKey.
 
-Individual physical camera settings will only be honored for camera session that was initialized with corresponding physical camera id output configuration `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setPhysicalCameraId(kotlin.String)` and the same output targets are also attached in the request by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder#addTarget(android.view.Surface)`.
+Individual physical camera settings will only be honored for camera session that was initialized with corresponding physical camera id output configuration setPhysicalCameraId and the same output targets are also attached in the request by addTarget.
 
 The output is undefined for any logical camera streams in case valid physical camera settings are attached.
 
@@ -286,8 +286,8 @@ The output is undefined for any logical camera streams in case valid physical ca
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_STILL_CAPTURE:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_VIDEO_SNAPSHOT:kotlin.Int`
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#TEMPLATE_MANUAL:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder#setPhysicalCameraKey(android.hardware.camera2.CaptureRequest.Key,%20android.hardware.camera2.CaptureRequest.Builder.setPhysicalCameraKey.T,%20kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder#getPhysicalCameraKey(android.hardware.camera2.CaptureRequest.Key,%20kotlin.String)`
+- setPhysicalCameraKey
+- getPhysicalCameraKey
 
 ### createCaptureSession
 
@@ -297,37 +297,37 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun createCaptureSession(config: SessionConfiguration!): Unit
 ```
 
-Create a new `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession` using a `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` helper object that aggregates all supported parameters.
+Create a new CameraCaptureSession using a SessionConfiguration helper object that aggregates all supported parameters.
 
-The active capture session determines the set of potential output Surfaces for the camera device for each capture request. A given request may use all or only some of the outputs. Once the CameraCaptureSession is created, requests can be submitted with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#capture(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#captureBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`, or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`.
+The active capture session determines the set of potential output Surfaces for the camera device for each capture request. A given request may use all or only some of the outputs. Once the CameraCaptureSession is created, requests can be submitted with capture, captureBurst, setRepeatingRequest, or setRepeatingBurst.
 
 Surfaces suitable for inclusion as a camera output can be created for various use cases and targets:
 
-- For drawing to a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#`: Once the SurfaceView's Surface is `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.Callback.html#surfaceCreated(android.view.SurfaceHolder)`, set the size of the Surface with `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#setFixedSize(kotlin.Int,%20kotlin.Int)` to be one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` and then obtain the Surface by calling `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#getSurface()`. If the size is not set by the application, it will be rounded to the nearest supported size less than 1080p, by the camera device.
-- For accessing through an OpenGL texture via a `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`: Set the size of the SurfaceTexture with `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#setDefaultBufferSize(kotlin.Int,%20kotlin.Int)` to be one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` before creating a Surface from the SurfaceTexture with `https://developer.android.com/reference/kotlin/android/view/Surface.html#Surface(android.graphics.SurfaceTexture)`. If the size is not set by the application, it will be set to be the smallest supported size less than 1080p, by the camera device.
-- For recording with `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#`: Call `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#createInputSurface()` after configuring the media codec to use one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)`
-- For recording with `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#`: Call `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#getSurface()` after configuring the media recorder to use one of the sizes returned by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)`, or configuring it to use one of the supported `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`.
-- For access to RAW, uncompressed YUV, or compressed JPEG data in the application: Create an `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#` object with one of the supported output formats given by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()`, setting its size to one of the corresponding supported sizes by passing the chosen output format into `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)`. Then obtain a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` from it with `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#getSurface()`. If the ImageReader size is not set to a supported size, it will be rounded to a supported size less than 1080p by the camera device.
+- For drawing to a `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#`: Once the SurfaceView's Surface is surfaceCreated, set the size of the Surface with setFixedSize to be one of the sizes returned by getOutputSizes and then obtain the Surface by calling getSurface. If the size is not set by the application, it will be rounded to the nearest supported size less than 1080p, by the camera device.
+- For accessing through an OpenGL texture via a `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`: Set the size of the SurfaceTexture with setDefaultBufferSize to be one of the sizes returned by getOutputSizes before creating a Surface from the SurfaceTexture with Surface. If the size is not set by the application, it will be set to be the smallest supported size less than 1080p, by the camera device.
+- For recording with `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#`: Call createInputSurface after configuring the media codec to use one of the sizes returned by getOutputSizes
+- For recording with `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#`: Call getSurface after configuring the media recorder to use one of the sizes returned by getOutputSizes, or configuring it to use one of the supported `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`.
+- For access to RAW, uncompressed YUV, or compressed JPEG data in the application: Create an `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#` object with one of the supported output formats given by getOutputFormats, setting its size to one of the corresponding supported sizes by passing the chosen output format into getOutputSizes. Then obtain a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` from it with getSurface. If the ImageReader size is not set to a supported size, it will be rounded to a supported size less than 1080p by the camera device.
 
 The camera device will query each Surface's size and formats upon this call, so they must be set to a valid setting at this time.
 
-It can take several hundred milliseconds for the session's configuration to complete, since camera hardware may need to be powered on or reconfigured. Once the configuration is complete and the session is ready to actually capture data, the provided `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback`'s `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback#onConfigured(android.hardware.camera2.CameraCaptureSession)` callback will be called.
+It can take several hundred milliseconds for the session's configuration to complete, since camera hardware may need to be powered on or reconfigured. Once the configuration is complete and the session is ready to actually capture data, the provided `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback`'s onConfigured callback will be called.
 
-If a prior CameraCaptureSession already exists when this method is called, the previous session will no longer be able to accept new capture requests and will be closed. Any in-progress capture requests made on the prior session will be completed before it's closed. `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback#onConfigured(android.hardware.camera2.CameraCaptureSession)` for the new session may be invoked before `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback#onClosed(android.hardware.camera2.CameraCaptureSession)` is invoked for the prior session. Once the new session is `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback#onConfigured(android.hardware.camera2.CameraCaptureSession)`, it is able to start capturing its own requests. To minimize the transition time, the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#abortCaptures()` call can be used to discard the remaining requests for the prior capture session before a new one is created. Note that once the new session is created, the old one can no longer have its captures aborted.
+If a prior CameraCaptureSession already exists when this method is called, the previous session will no longer be able to accept new capture requests and will be closed. Any in-progress capture requests made on the prior session will be completed before it's closed. onConfigured for the new session may be invoked before onClosed is invoked for the prior session. Once the new session is onConfigured, it is able to start capturing its own requests. To minimize the transition time, the abortCaptures call can be used to discard the remaining requests for the prior capture session before a new one is created. Note that once the new session is created, the old one can no longer have its captures aborted.
 
 Using larger resolution outputs, or more outputs, can result in slower output rate from the device.
 
 Configuring a session with an empty or null list will close the current session, if any. This can be used to release the current session's target surfaces for another use.
 
-This function throws an `IllegalArgumentException` if called with a SessionConfiguration lacking state callbacks or valid output surfaces. The only exceptions are deferred SurfaceView or SurfaceTexture outputs. See `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#OutputConfiguration(android.util.Size,%20java.lang.Class)` for details.
+This function throws an `IllegalArgumentException` if called with a SessionConfiguration lacking state callbacks or valid output surfaces. The only exceptions are deferred SurfaceView or SurfaceTexture outputs. See OutputConfiguration for details.
 
 ### Regular capture
 
-While any of the sizes from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes can be used when a single output stream is configured, a given camera device may not be able to support all combination of sizes, formats, and targets when multiple outputs are configured at once. The tables below list the maximum guaranteed resolutions for combinations of streams and targets, given the capabilities of the camera device. These are valid for when the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setInputConfiguration(android.hardware.camera2.params.InputConfiguration)` is not set and therefore no reprocessing is active.
+While any of the sizes from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes can be used when a single output stream is configured, a given camera device may not be able to support all combination of sizes, formats, and targets when multiple outputs are configured at once. The tables below list the maximum guaranteed resolutions for combinations of streams and targets, given the capabilities of the camera device. These are valid for when the setInputConfiguration is not set and therefore no reprocessing is active.
 
-If an application tries to create a session using a set of targets that exceed the limits described in the below tables, one of three possibilities may occur. First, the session may be successfully created and work normally. Second, the session may be successfully created, but the camera device won't meet the frame rate guarantees as described in android.hardware.camera2.params.StreamConfigurationMap#getOutputMinFrameDuration. Or third, if the output set cannot be used at all, session creation will fail entirely, with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession.StateCallback#onConfigureFailed(android.hardware.camera2.CameraCaptureSession)` being invoked.
+If an application tries to create a session using a set of targets that exceed the limits described in the below tables, one of three possibilities may occur. First, the session may be successfully created and work normally. Second, the session may be successfully created, but the camera device won't meet the frame rate guarantees as described in android.hardware.camera2.params.StreamConfigurationMap#getOutputMinFrameDuration. Or third, if the output set cannot be used at all, session creation will fail entirely, with onConfigureFailed being invoked.
 
-For the type column, `PRIV` refers to any target whose available sizes are found using `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)` with no direct application-visible format, `YUV` refers to a target Surface using the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` format, `JPEG` refers to the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` format, and `RAW` refers to the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` format.
+For the type column, `PRIV` refers to any target whose available sizes are found using getOutputSizes with no direct application-visible format, `YUV` refers to a target Surface using the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` format, `JPEG` refers to the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` format, and `RAW` refers to the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#RAW_SENSOR:kotlin.Int` format.
 
 For the maximum size column, `PREVIEW` refers to the best size match to the device's screen resolution, or to 1080p (`1920x1080`), whichever is smaller. `RECORD` refers to the camera device's maximum supported recording resolution, as determined by `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`. And `MAXIMUM` refers to the camera device's maximum output resolution for that format or target from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes.
 
@@ -455,7 +455,7 @@ LEVEL-3 (`https://developer.android.com/reference/kotlin/android/hardware/camera
 
 ##### Concurrent stream guaranteed configurations
 
-BACKWARD_COMPATIBLE devices capable of streaming concurrently with other devices as described by `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getConcurrentCameraIds()` have the following guaranteed streams (when streaming concurrently with other devices)
+BACKWARD_COMPATIBLE devices capable of streaming concurrently with other devices as described by getConcurrentCameraIds have the following guaranteed streams (when streaming concurrently with other devices)
 
 Note: The sizes mentioned for these concurrent streams are the maximum sizes guaranteed to be supported. Sizes smaller than these, obtained by android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes for a particular format, are supported as well.
 
@@ -486,13 +486,13 @@ s1440p refers to the camera device's maximum resolution for that format from and
 
 MONOCHROME-capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` includes `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_MONOCHROME:kotlin.Int`) devices supporting `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#Y8:kotlin.Int` support substituting `YUV` streams with `Y8` in all guaranteed stream combinations for the device's hardware level and capabilities.
 
-Clients can access the above mandatory stream combination tables via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination`.
+Clients can access the above mandatory stream combination tables via MandatoryStreamCombination.
 
-Devices capable of outputting HEIC formats (`https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()` contains `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC:kotlin.Int`) will support substituting `JPEG` streams with `HEIC` in all guaranteed stream combinations for the device's hardware level and capabilities. Calling createCaptureSession with both JPEG and HEIC outputs is not supported.
+Devices capable of outputting HEIC formats (getOutputFormats contains `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#HEIC:kotlin.Int`) will support substituting `JPEG` streams with `HEIC` in all guaranteed stream combinations for the device's hardware level and capabilities. Calling createCaptureSession with both JPEG and HEIC outputs is not supported.
 
 ##### LEGACY-level additional guaranteed combinations with multi-resolution outputs
 
-Devices capable of multi-resolution output for a particular format ( `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap#getOutputInfo(kotlin.Int)` returns a non-empty list) support using `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` for MAXIMUM resolution streams of that format for all mandatory stream combinations. For example, if a LIMITED camera device supports multi-resolution output streams for both `JPEG` and `PRIVATE`, in addition to the stream configurations in the LIMITED and Legacy table above, the camera device supports the following guaranteed stream combinations (`MULTI_RES` in the Max size column refers to a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` created based on the variable max resolutions supported):
+Devices capable of multi-resolution output for a particular format ( getOutputInfo returns a non-empty list) support using MultiResolutionImageReader for MAXIMUM resolution streams of that format for all mandatory stream combinations. For example, if a LIMITED camera device supports multi-resolution output streams for both `JPEG` and `PRIVATE`, in addition to the stream configurations in the LIMITED and Legacy table above, the camera device supports the following guaranteed stream combinations (`MULTI_RES` in the Max size column refers to a MultiResolutionImageReader created based on the variable max resolutions supported):
 
 | Target 1 || Target 2 || Target 3 || Sample use case(s) |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -539,7 +539,7 @@ Devices with the ULTRA_HIGH_RESOLUTION_SENSOR capability have some additional gu
 
 <br />
 
-Here, SC Map, refers to the `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`, the target stream sizes must be chosen from. `DEFAULT` refers to the default sensor pixel mode `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap` and `MAX_RES` refers to the maximum resolution `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`. For `MAX_RES` streams, `MAX` in the `Max size` column refers to the maximum size from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes and `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighResolutionOutputSizes(kotlin.Int)`. Note: The same capture request must not mix targets from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`s corresponding to different sensor pixel modes.
+Here, SC Map, refers to the StreamConfigurationMap, the target stream sizes must be chosen from. `DEFAULT` refers to the default sensor pixel mode StreamConfigurationMap and `MAX_RES` refers to the maximum resolution StreamConfigurationMap. For `MAX_RES` streams, `MAX` in the `Max size` column refers to the maximum size from android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes and getHighResolutionOutputSizes. Note: The same capture request must not mix targets from StreamConfigurationMaps corresponding to different sensor pixel modes.
 
 ##### 10-bit output additional guaranteed configurations
 
@@ -564,14 +564,14 @@ Here, SC Map, refers to the `https://developer.android.com/reference/kotlin/andr
 
 <br />
 
-Here PRIV can be either 8 or 10-bit `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` pixel format. YUV can be either `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int`. For the maximum size column, PREVIEW refers to the best size match to the device's screen resolution, or to 1080p (1920x1080), whichever is smaller. RECORD refers to the camera device's maximum supported recording resolution, as determined by `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`. MAXIMUM refers to the camera device's maximum output resolution for that format or target from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)`. Do note that invalid combinations such as having a camera surface configured to use pixel format `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` with a 10-bit profile will cause a capture session initialization failure.
+Here PRIV can be either 8 or 10-bit `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` pixel format. YUV can be either `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int`. For the maximum size column, PREVIEW refers to the best size match to the device's screen resolution, or to 1080p (1920x1080), whichever is smaller. RECORD refers to the camera device's maximum supported recording resolution, as determined by `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`. MAXIMUM refers to the camera device's maximum output resolution for that format or target from getOutputSizes. Do note that invalid combinations such as having a camera surface configured to use pixel format `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YUV_420_888:kotlin.Int` with a 10-bit profile will cause a capture session initialization failure.
 
-`https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG_R:kotlin.Int` may also be supported if advertised by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap`. When initializing a capture session that includes a Jpeg/R camera output clients must consider the following items w.r.t. the 10-bit mandatory stream combination table:
+`https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG_R:kotlin.Int` may also be supported if advertised by StreamConfigurationMap. When initializing a capture session that includes a Jpeg/R camera output clients must consider the following items w.r.t. the 10-bit mandatory stream combination table:
 
 - To generate the compressed Jpeg/R image a single `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#YCBCR_P010:kotlin.Int` output will be used internally by the camera device.
-- On camera devices that are able to support concurrent 10 and 8-bit capture requests see `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getProfileCaptureRequestConstraints(kotlin.Long)` an extra `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` will also be configured internally to help speed up the encoding process.
+- On camera devices that are able to support concurrent 10 and 8-bit capture requests see getProfileCaptureRequestConstraints an extra `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#JPEG:kotlin.Int` will also be configured internally to help speed up the encoding process.
 
-Jpeg/R camera outputs will typically be able to support the MAXIMUM device resolution. Clients can also call `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)` for a complete list supported sizes. Camera clients that register a Jpeg/R output within a stream combination that doesn't fit in the mandatory stream table above can call `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)` to ensure that this particular configuration is supported.
+Jpeg/R camera outputs will typically be able to support the MAXIMUM device resolution. Clients can also call getOutputSizes for a complete list supported sizes. Camera clients that register a Jpeg/R output within a stream combination that doesn't fit in the mandatory stream table above can call isSessionConfigurationSupported to ensure that this particular configuration is supported.
 
 <br />
 
@@ -640,27 +640,27 @@ For devices where `https://developer.android.com/reference/kotlin/android/hardwa
 
 <br />
 
-For the maximum size column, PREVIEW refers to the best size match to the device's screen resolution, or to 1080p (1920x1080), whichever is smaller. RECORD refers to the camera device's maximum supported recording resolution, as determined by `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`. MAXIMUM refers to the camera device's maximum output resolution for that format or target from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)`.
+For the maximum size column, PREVIEW refers to the best size match to the device's screen resolution, or to 1080p (1920x1080), whichever is smaller. RECORD refers to the camera device's maximum supported recording resolution, as determined by `https://developer.android.com/reference/kotlin/android/media/CamcorderProfile.html#`. MAXIMUM refers to the camera device's maximum output resolution for that format or target from getOutputSizes.
 
-Since the capabilities of camera devices vary greatly, a given camera device may support target combinations with sizes outside of these guarantees, but this can only be tested for by calling `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)` or attempting to create a session with such targets.
+Since the capabilities of camera devices vary greatly, a given camera device may support target combinations with sizes outside of these guarantees, but this can only be tested for by calling isSessionConfigurationSupported or attempting to create a session with such targets.
 
 Exception on 176x144 (QCIF) resolution: Camera devices usually have a fixed capability for downscaling from larger resolution to smaller, and the QCIF resolution sometimes is not fully supported due to this limitation on devices with high-resolution image sensors. Therefore, trying to configure a QCIF resolution stream together with any other stream larger than 1920x1080 resolution (either width or height) might not be supported, and capture session creation will fail if it is not.
 
 ### Reprocessing
 
-If a camera device supports YUV reprocessing (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_YUV_REPROCESSING:kotlin.Int`) or PRIVATE reprocessing (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_PRIVATE_REPROCESSING:kotlin.Int`), the application can also create a reprocessable capture session to submit reprocess capture requests in addition to regular capture requests, by setting an `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setInputConfiguration(android.hardware.camera2.params.InputConfiguration)` for the session. A reprocess capture request takes the next available buffer from the session's input Surface, and sends it through the camera device's processing pipeline again, to produce buffers for the request's target output Surfaces. No new image data is captured for a reprocess request. However the input buffer provided by the application must be captured previously by the same camera device in the same session directly (e.g. for Zero-Shutter-Lag use case) or indirectly (e.g. combining multiple output images).
+If a camera device supports YUV reprocessing (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_YUV_REPROCESSING:kotlin.Int`) or PRIVATE reprocessing (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_PRIVATE_REPROCESSING:kotlin.Int`), the application can also create a reprocessable capture session to submit reprocess capture requests in addition to regular capture requests, by setting an setInputConfiguration for the session. A reprocess capture request takes the next available buffer from the session's input Surface, and sends it through the camera device's processing pipeline again, to produce buffers for the request's target output Surfaces. No new image data is captured for a reprocess request. However the input buffer provided by the application must be captured previously by the same camera device in the same session directly (e.g. for Zero-Shutter-Lag use case) or indirectly (e.g. combining multiple output images).
 
-The active reprocessable capture session determines an input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` and the set of potential output Surfaces for the camera devices for each capture request. The application can use #createCaptureRequest to create regular capture requests to capture new images from the camera device, and use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessCaptureRequest(android.hardware.camera2.TotalCaptureResult)` to create reprocess capture requests to process buffers from the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#`. Some combinations of output Surfaces in a session may not be used in a request simultaneously. The guaranteed combinations of output Surfaces that can be used in a request simultaneously are listed in the tables under #createCaptureSession. All the output Surfaces in one capture request will come from the same source, either from a new capture by the camera device, or from the input Surface depending on if the request is a reprocess capture request.
+The active reprocessable capture session determines an input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` and the set of potential output Surfaces for the camera devices for each capture request. The application can use #createCaptureRequest to create regular capture requests to capture new images from the camera device, and use createReprocessCaptureRequest to create reprocess capture requests to process buffers from the input `https://developer.android.com/reference/kotlin/android/view/Surface.html#`. Some combinations of output Surfaces in a session may not be used in a request simultaneously. The guaranteed combinations of output Surfaces that can be used in a request simultaneously are listed in the tables under #createCaptureSession. All the output Surfaces in one capture request will come from the same source, either from a new capture by the camera device, or from the input Surface depending on if the request is a reprocess capture request.
 
-Input formats and sizes supported by the camera device can be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)`. For each supported input format, the camera device supports a set of output formats and sizes for reprocessing that can be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)` and android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes. While output Surfaces with formats that aren't valid reprocess output targets for the input configuration can be part of a session, they cannot be used as targets for a reprocessing request.
+Input formats and sizes supported by the camera device can be queried via getInputFormats and getInputSizes. For each supported input format, the camera device supports a set of output formats and sizes for reprocessing that can be queried via getValidOutputFormatsForInput and android.hardware.camera2.params.StreamConfigurationMap#getOutputSizes. While output Surfaces with formats that aren't valid reprocess output targets for the input configuration can be part of a session, they cannot be used as targets for a reprocessing request.
 
 Since the application cannot access `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` images directly, an output Surface created by android.media.ImageReader#newInstance with `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` as the format will be considered as intended to be used for reprocessing input and thus the `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#` size must match one of the supported input sizes for `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#PRIVATE:kotlin.Int` format. Otherwise, creating a reprocessable capture session will fail.
 
 Starting from API level 30, recreating a reprocessable capture session will flush all the queued but not yet processed buffers from the input surface.
 
-The configurations in the tables below are guaranteed for creating a reprocessable capture session if the camera device supports YUV reprocessing or PRIVATE reprocessing. However, not all output targets used to create a reprocessable session may be used in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` simultaneously. For devices that support only 1 output target in a reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest`, submitting a reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` with multiple output targets will result in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure`. For devices that support multiple output targets in a reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest`, the guaranteed output targets that can be included in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` simultaneously are listed in the tables under #createCaptureSession. For example, with a FULL-capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int`) device that supports PRIVATE reprocessing, an application can create a reprocessable capture session with 1 input, (`PRIV`, `MAXIMUM`), and 3 outputs, (`PRIV`, `MAXIMUM`), (`PRIV`, `PREVIEW`), and (`YUV`, `MAXIMUM`). However, it's not guaranteed that an application can submit a regular or reprocess capture with (`PRIV`, `MAXIMUM`) and (`YUV`, `MAXIMUM`) outputs based on the table listed under #createCaptureSession. In other words, use the tables below to determine the guaranteed stream configurations for creating a reprocessable capture session, and use the tables under #createCaptureSession to determine the guaranteed output targets that can be submitted in a regular or reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` simultaneously.
+The configurations in the tables below are guaranteed for creating a reprocessable capture session if the camera device supports YUV reprocessing or PRIVATE reprocessing. However, not all output targets used to create a reprocessable session may be used in a CaptureRequest simultaneously. For devices that support only 1 output target in a reprocess CaptureRequest, submitting a reprocess CaptureRequest with multiple output targets will result in a CaptureFailure. For devices that support multiple output targets in a reprocess CaptureRequest, the guaranteed output targets that can be included in a CaptureRequest simultaneously are listed in the tables under #createCaptureSession. For example, with a FULL-capability (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ` `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_FULL:kotlin.Int`) device that supports PRIVATE reprocessing, an application can create a reprocessable capture session with 1 input, (`PRIV`, `MAXIMUM`), and 3 outputs, (`PRIV`, `MAXIMUM`), (`PRIV`, `PREVIEW`), and (`YUV`, `MAXIMUM`). However, it's not guaranteed that an application can submit a regular or reprocess capture with (`PRIV`, `MAXIMUM`) and (`YUV`, `MAXIMUM`) outputs based on the table listed under #createCaptureSession. In other words, use the tables below to determine the guaranteed stream configurations for creating a reprocessable capture session, and use the tables under #createCaptureSession to determine the guaranteed output targets that can be submitted in a regular or reprocess CaptureRequest simultaneously.
 
-Reprocessing with 10-bit output targets on 10-bit capable `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DYNAMIC_RANGE_TEN_BIT:kotlin.Int` devices is not supported. Trying to initialize a repreocessable capture session with one ore more output configurations set `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)` to use a 10-bit dynamic range profile `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles` will trigger `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
+Reprocessing with 10-bit output targets on 10-bit capable `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_DYNAMIC_RANGE_TEN_BIT:kotlin.Int` devices is not supported. Trying to initialize a repreocessable capture session with one ore more output configurations set setDynamicRangeProfile to use a 10-bit dynamic range profile DynamicRangeProfiles will trigger `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#`.
 
 LIMITED-level (`https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#INFO_SUPPORTED_HARDWARE_LEVEL:android.hardware.camera2.CameraCharacteristics.Key` `== ``https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int`) devices support at least the following stream combinations for creating a reprocessable capture session in addition to those listed earlier for regular captures for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED:kotlin.Int` devices:
 
@@ -731,7 +731,7 @@ LEVEL-3 (`https://developer.android.com/reference/kotlin/android/hardware/camera
 
 <br />
 
-If a camera device supports multi-resolution `YUV` input and multi-resolution `YUV` output or supports multi-resolution `PRIVATE` input and multi-resolution `PRIVATE` output, the additional mandatory stream combinations for LIMITED and FULL devices are listed below (`MULTI_RES` in the Max size column refers to a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader` for output, and a multi-resolution `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/InputConfiguration` for input):
+If a camera device supports multi-resolution `YUV` input and multi-resolution `YUV` output or supports multi-resolution `PRIVATE` input and multi-resolution `PRIVATE` output, the additional mandatory stream combinations for LIMITED and FULL devices are listed below (`MULTI_RES` in the Max size column refers to a MultiResolutionImageReader for output, and a multi-resolution InputConfiguration for input):
 
 | LIMITED-level additional guaranteed configurations for creating a reprocessable capture session with multi-resolution input and multi-resolution outputs (`PRIV` input is guaranteed only if PRIVATE reprocessing is supported. `YUV` input is guaranteed only if YUV reprocessing is supported) |||||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -782,14 +782,14 @@ The application can use a `https://developer.android.com/reference/kotlin/androi
 
 A `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#SESSION_HIGH_SPEED:kotlin.Int` can be use for high speed video recording (\>=120fps) when the camera device supports high speed video capability (i.e., `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key` contains `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_CONSTRAINED_HIGH_SPEED_VIDEO:kotlin.Int`). A constrained high-speed capture session has special limitations compared with a normal capture session:
 
-- In addition to the output target Surface requirements specified above for regular captures, a high speed capture session will only support up to 2 output Surfaces, though the application might choose to configure just one Surface (e.g., preview only). All Surfaces must be either video encoder surfaces (acquired by `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#getSurface()` or `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#createInputSurface()`) or preview surfaces (obtained from `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#`, `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` via `https://developer.android.com/reference/kotlin/android/view/Surface.html#Surface(android.graphics.SurfaceTexture)`). The Surface sizes must be one of the sizes reported by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()`. When multiple Surfaces are configured, their size must be same.
-- An active high speed capture session only accepts request lists created via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#createHighSpeedRequestList(android.hardware.camera2.CaptureRequest)`, and the request list can only be submitted to this session via `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#captureBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`, or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`.
-- The FPS ranges being requested to this session must be selected from `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRangesFor(android.util.Size)`. The application can still use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_AE_TARGET_FPS_RANGE:android.hardware.camera2.CaptureRequest.Key` to control the desired FPS range. Switching to an FPS range that has different `https://developer.android.com/reference/kotlin/android/util/Range.html#getUpper()` may trigger some camera device reconfigurations, which may introduce extra latency. It is recommended that the application avoids unnecessary maximum target FPS changes as much as possible during high speed streaming.
+- In addition to the output target Surface requirements specified above for regular captures, a high speed capture session will only support up to 2 output Surfaces, though the application might choose to configure just one Surface (e.g., preview only). All Surfaces must be either video encoder surfaces (acquired by getSurface or createInputSurface) or preview surfaces (obtained from `https://developer.android.com/reference/kotlin/android/view/SurfaceView.html#`, `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` via Surface). The Surface sizes must be one of the sizes reported by getHighSpeedVideoSizes. When multiple Surfaces are configured, their size must be same.
+- An active high speed capture session only accepts request lists created via createHighSpeedRequestList, and the request list can only be submitted to this session via captureBurst, or setRepeatingBurst.
+- The FPS ranges being requested to this session must be selected from getHighSpeedVideoFpsRangesFor. The application can still use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_AE_TARGET_FPS_RANGE:android.hardware.camera2.CaptureRequest.Key` to control the desired FPS range. Switching to an FPS range that has different getUpper may trigger some camera device reconfigurations, which may introduce extra latency. It is recommended that the application avoids unnecessary maximum target FPS changes as much as possible during high speed streaming.
 - For the request lists submitted to this session, the camera device will override the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_MODE:android.hardware.camera2.CaptureRequest.Key`, auto-exposure (AE), auto-white balance (AWB) and auto-focus (AF) to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_MODE_AUTO:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_AE_MODE_ON:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_AWB_MODE_AUTO:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_AF_MODE_CONTINUOUS_VIDEO:kotlin.Int`, respectively. All post-processing block mode controls will be overridden to be FAST. Therefore, no manual control of capture and post-processing parameters is possible. Beside these, only a subset of controls will work, see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_CONSTRAINED_HIGH_SPEED_VIDEO:kotlin.Int` for more details.
 
 | Parameters ||
 |---|---|
-| `config` | [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md)!: A session configuration (see `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration`). |
+| `config` | [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md)!: A session configuration (see SessionConfiguration). |
 
 | Exceptions ||
 |---|---|
@@ -798,12 +798,12 @@ A `https://developer.android.com/reference/kotlin/android/hardware/camera2/param
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSessionByOutputConfigurations(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSession(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createConstrainedHighSpeedCaptureSession(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles`
+- createCaptureSession
+- createCaptureSessionByOutputConfigurations
+- createReprocessableCaptureSession
+- createConstrainedHighSpeedCaptureSession
+- setDynamicRangeProfile
+- DynamicRangeProfiles
 
 ### createCaptureSession
 
@@ -818,7 +818,7 @@ abstract fun createCaptureSession(
 ): Unit
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` for the full set of configuration options available.*
+**Deprecated:** *Please use createCaptureSession for the full set of configuration options available.*
 
 Create a new camera capture session by providing the target output set of Surfaces to the camera device.
 
@@ -838,10 +838,10 @@ Create a new camera capture session by providing the target output set of Surfac
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputFormats()`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)`
+- CameraCaptureSession
+- getOutputFormats
+- getOutputSizes
+- getOutputSizes
 
 ### createCaptureSessionByOutputConfigurations
 
@@ -856,7 +856,7 @@ abstract fun createCaptureSessionByOutputConfigurations(
 ): Unit
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` for the full set of configuration options available.*
+**Deprecated:** *Please use createCaptureSession for the full set of configuration options available.*
 
 Create a new camera capture session by providing the target output set of Surfaces and its corresponding surface configuration to the camera device.
 
@@ -866,7 +866,7 @@ Create a new camera capture session by providing the target output set of Surfac
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration`
+- OutputConfiguration
 
 ### createConstrainedHighSpeedCaptureSession
 
@@ -881,7 +881,7 @@ abstract fun createConstrainedHighSpeedCaptureSession(
 ): Unit
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` for the full set of configuration options available.*
+**Deprecated:** *Please use createCaptureSession for the full set of configuration options available.*
 
 Create a new constrained high speed capture session.
 
@@ -902,13 +902,13 @@ Create a new constrained high speed capture session.
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_AE_TARGET_FPS_RANGE:android.hardware.camera2.CaptureRequest.Key`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoSizes()`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getHighSpeedVideoFpsRangesFor(android.util.Size)`
+- getHighSpeedVideoSizes
+- getHighSpeedVideoFpsRangesFor
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key`
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_CONSTRAINED_HIGH_SPEED_VIDEO:kotlin.Int`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#captureBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession#createHighSpeedRequestList(android.hardware.camera2.CaptureRequest)`
+- captureBurst
+- setRepeatingBurst
+- createHighSpeedRequestList
 
 ### createExtensionSession
 
@@ -920,7 +920,7 @@ open fun createExtensionSession(extensionConfiguration: ExtensionSessionConfigu
 
 Initialize a specific device-specific extension augmented camera capture session.
 
-Extension sessions can be used to enable device-specific operation modes like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_HDR:kotlin.Int`. These modes are less flexible than the full camera API, but enable access to more sophisticated processing algorithms that can capture multi-frame bursts to generate single output images. To query for available extensions on this device call `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getSupportedExtensions()`.
+Extension sessions can be used to enable device-specific operation modes like `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_NIGHT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#EXTENSION_HDR:kotlin.Int`. These modes are less flexible than the full camera API, but enable access to more sophisticated processing algorithms that can capture multi-frame bursts to generate single output images. To query for available extensions on this device call getSupportedExtensions.
 
 This method will also trigger the setup of the internal processing pipeline for extension augmented preview and multi-frame still capture.
 
@@ -928,7 +928,7 @@ If a prior CameraCaptureSession already exists when this method is called, the p
 
 The CameraExtensionSession will be active until the client either calls CameraExtensionSession.close() or creates a new camera capture session. In both cases all internal resources will be released, continuous repeating requests stopped and any pending multi-frame capture requests flushed.
 
-Note that the CameraExtensionSession currently supports multi-frame capture surface formats including ImageFormat.JPEG and ImageFormat.YUV_420_888, which may or may not be supported depending on the extension. Starting from API level 37.1, if an extension does not support still capture functionality, no multi-frame capture formats will be supported. Clients must query the multi-frame capture format support using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getExtensionSupportedSizes(kotlin.Int,%20kotlin.Int)`. For repeating requests CameraExtensionSession supports only `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` as output. Clients can query the supported resolution for the repeating request output using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getExtensionSupportedSizes(kotlin.Int,%20java.lang.Class)`.
+Note that the CameraExtensionSession currently supports multi-frame capture surface formats including ImageFormat.JPEG and ImageFormat.YUV_420_888, which may or may not be supported depending on the extension. Starting from API level 37.1, if an extension does not support still capture functionality, no multi-frame capture formats will be supported. Clients must query the multi-frame capture format support using getExtensionSupportedSizes. For repeating requests CameraExtensionSession supports only `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` as output. Clients can query the supported resolution for the repeating request output using getExtensionSupportedSizes.
 
 At the very minimum the initialization expects either one valid output surface for repeating or one valid output for high-quality single requests registered in the outputs argument of the extension configuration argument. At the maximum the initialization will accept two valid output surfaces, one for repeating and the other for single requests. Additional unsupported surfaces passed to ExtensionSessionConfiguration will cause an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` to be thrown.
 
@@ -943,7 +943,7 @@ At the very minimum the initialization expects either one valid output surface f
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraExtensionCharacteristics#getSupportedExtensions()`
+- getSupportedExtensions
 
 ### createReprocessCaptureRequest
 
@@ -953,9 +953,9 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 abstract fun createReprocessCaptureRequest(inputResult: TotalCaptureResult): CaptureRequest.Builder
 ```
 
-Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` from a `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult`.
+Create a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder` for a new reprocess CaptureRequest from a TotalCaptureResult.
 
-Each reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` processes one buffer from `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession`'s input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` to all output `https://developer.android.com/reference/kotlin/android/view/Surface.html#` included in the reprocess capture request. The reprocess input images must be generated from one or multiple output images captured from the same camera device. The application can provide input images to camera device via `https://developer.android.com/reference/kotlin/android/media/ImageWriter.html#queueInputImage(android.media.Image)`. The application must use the capture result of one of those output images to create a reprocess capture request so that the camera device can use the information to achieve optimal reprocess image quality. For camera devices that support only 1 output `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, submitting a reprocess `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` with multiple output targets will result in a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureFailure`. From Android 14 onward, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_CAPTURE_INTENT:android.hardware.camera2.CaptureRequest.Key` will be set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_CAPTURE_INTENT_STILL_CAPTURE:kotlin.Int` by default. Prior to Android 14, apps will need to explicitly set this key themselves.
+Each reprocess CaptureRequest processes one buffer from CameraCaptureSession's input `https://developer.android.com/reference/kotlin/android/view/Surface.html#` to all output `https://developer.android.com/reference/kotlin/android/view/Surface.html#` included in the reprocess capture request. The reprocess input images must be generated from one or multiple output images captured from the same camera device. The application can provide input images to camera device via queueInputImage. The application must use the capture result of one of those output images to create a reprocess capture request so that the camera device can use the information to achieve optimal reprocess image quality. For camera devices that support only 1 output `https://developer.android.com/reference/kotlin/android/view/Surface.html#`, submitting a reprocess CaptureRequest with multiple output targets will result in a CaptureFailure. From Android 14 onward, `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest#CONTROL_CAPTURE_INTENT:android.hardware.camera2.CaptureRequest.Key` will be set to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraMetadata#CONTROL_CAPTURE_INTENT_STILL_CAPTURE:kotlin.Int` by default. Prior to Android 14, apps will need to explicitly set this key themselves.
 
 | Parameters ||
 |---|---|
@@ -976,8 +976,8 @@ Each reprocess `https://developer.android.com/reference/kotlin/android/hardware/
 **See Also**
 
 - `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest.Builder`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/TotalCaptureResult`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`
+- TotalCaptureResult
+- createCaptureSession
 - `https://developer.android.com/reference/kotlin/android/media/ImageWriter.html#`
 
 ### createReprocessableCaptureSession
@@ -994,7 +994,7 @@ abstract fun createReprocessableCaptureSession(
 ): Unit
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` for the full set of configuration options available.*
+**Deprecated:** *Please use createCaptureSession for the full set of configuration options available.*
 
 Create a new reprocessable camera capture session by providing the desired reprocessing input Surface configuration and the target output set of Surfaces to the camera device.
 
@@ -1015,12 +1015,12 @@ Create a new reprocessable camera capture session by providing the desired repro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputFormats()`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getInputSizes(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getValidOutputFormatsForInput(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(kotlin.Int)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/StreamConfigurationMap#getOutputSizes(java.lang.Class)`
+- CameraCaptureSession
+- getInputFormats
+- getInputSizes
+- getValidOutputFormatsForInput
+- getOutputSizes
+- getOutputSizes
 - `https://developer.android.com/reference/kotlin/android/media/ImageWriter.html#`
 - `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#`
 
@@ -1038,9 +1038,9 @@ abstract fun createReprocessableCaptureSessionByConfigurations(
 ): Unit
 ```
 
-**Deprecated:** *Please use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)` for the full set of configuration options available.*
+**Deprecated:** *Please use createCaptureSession for the full set of configuration options available.*
 
-Create a new reprocessable camera capture session by providing the desired reprocessing input configuration and output `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` to the camera device.
+Create a new reprocessable camera capture session by providing the desired reprocessing input configuration and output OutputConfiguration to the camera device.
 
 | Parameters ||
 |---|---|
@@ -1052,8 +1052,8 @@ Create a new reprocessable camera capture session by providing the desired repro
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createReprocessableCaptureSession(android.hardware.camera2.params.InputConfiguration,%20kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration`
+- createReprocessableCaptureSession
+- OutputConfiguration
 
 ### getCameraAudioRestriction
 
@@ -1065,7 +1065,7 @@ open fun getCameraAudioRestriction(): Int
 
 Get currently applied global camera audio restriction mode.
 
-Application can use this method to retrieve the system-wide camera audio restriction settings described in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)`.
+Application can use this method to retrieve the system-wide camera audio restriction settings described in setCameraAudioRestriction.
 
 | Return ||
 |---|---|
@@ -1078,7 +1078,7 @@ Application can use this method to retrieve the system-wide camera audio restric
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#setCameraAudioRestriction(kotlin.Int)`
+- setCameraAudioRestriction
 
 ### getId
 
@@ -1092,7 +1092,7 @@ Get the ID of this camera device.
 
 This matches the ID given to android.hardware.camera2.CameraManager#openCamera to instantiate this this camera device.
 
-This ID can be used to query the camera device's `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics` with `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraCharacteristics(kotlin.String)`.
+This ID can be used to query the camera device's CameraCharacteristics with getCameraCharacteristics.
 
 This method can be called even if the device has been closed or has encountered a serious error.
 
@@ -1102,8 +1102,8 @@ This method can be called even if the device has been closed or has encountered 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraCharacteristics(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraIdList()`
+- getCameraCharacteristics
+- getCameraIdList
 
 ### isSessionConfigurationSupported
 
@@ -1113,25 +1113,25 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun isSessionConfigurationSupported(sessionConfig: SessionConfiguration): Boolean
 ```
 
-Checks whether a particular `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration` is supported by the camera device.
+Checks whether a particular SessionConfiguration is supported by the camera device.
 
-This method performs a runtime check of a given `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration`. The result confirms whether or not the passed session configuration can be successfully used to create a camera capture session using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSession(android.hardware.camera2.params.SessionConfiguration)`.
+This method performs a runtime check of a given SessionConfiguration. The result confirms whether or not the passed session configuration can be successfully used to create a camera capture session using createCaptureSession.
 
 The method can be called at any point before, during and after active capture session. It must not impact normal camera behavior in any way and must complete significantly faster than creating a regular or constrained capture session.
 
-Although this method is faster than creating a new capture session, it is not intended to be used for exploring the entire space of supported stream combinations. The available mandatory stream combinations `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination` are better suited for this purpose.
+Although this method is faster than creating a new capture session, it is not intended to be used for exploring the entire space of supported stream combinations. The available mandatory stream combinations MandatoryStreamCombination are better suited for this purpose.
 
 If this function returns `true` for a particular stream combination, the camera device supports concurrent captures on all of the streams in the same CaptureRequest, with two exceptions below where concurrent captures are not supported:
 
-- Supported stream combinations with exclusive dynamic range profiles as specified by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getProfileCaptureRequestConstraints(kotlin.Long)`.
+- Supported stream combinations with exclusive dynamic range profiles as specified by getProfileCaptureRequestConstraints.
 - Supported combinations of 'default' mode and 'max resolution' mode streams for devices with ULTRA_HIGH_RESOLUTION_SENSOR capability.
 
 For other cases where concurrent captures of a stream combination are not supported, this function returns `false`.
 
 **NOTE:**
 
-- For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` and above, this method will automatically delegate to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.CameraDeviceSetup#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)` whenever possible. This means that the output of this method will consider parameters set through `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/SessionConfiguration#setSessionParameters(android.hardware.camera2.CaptureRequest)` as well.
-- Session Parameters will be ignored for apps targeting \<= `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, or if `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#isCameraDeviceSetupSupported(kotlin.String)` returns false for the camera id associated with this `CameraDevice`.
+- For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` and above, this method will automatically delegate to isSessionConfigurationSupported whenever possible. This means that the output of this method will consider parameters set through setSessionParameters as well.
+- Session Parameters will be ignored for apps targeting \<= `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int`, or if isCameraDeviceSetupSupported returns false for the camera id associated with this `CameraDevice`.
 
 | Parameters ||
 |---|---|
@@ -1151,8 +1151,8 @@ For other cases where concurrent captures of a stream combination are not suppor
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#isCameraDeviceSetupSupported(kotlin.String)`
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice.CameraDeviceSetup#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)`
+- isCameraDeviceSetupSupported
+- isSessionConfigurationSupported
 
 ### setCameraAudioRestriction
 
@@ -1166,7 +1166,7 @@ Set audio restriction mode when this CameraDevice is being used.
 
 Some camera hardware (e.g. devices with optical image stabilization support) are sensitive to device vibration and video recordings can be ruined by unexpected sounds. Applications can use this method to suppress vibration or sounds coming from ringtones, alarms or notifications. Other vibration or sounds (e.g. media playback or accessibility) will not be muted.
 
-The mute mode is a system-wide setting. When multiple CameraDevice objects are setting different modes, the system will pick a the mode that's union of all modes set by CameraDevice. Applications can also use `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#getCameraAudioRestriction()` to query current system-wide camera mute mode in effect.
+The mute mode is a system-wide setting. When multiple CameraDevice objects are setting different modes, the system will pick a the mode that's union of all modes set by CameraDevice. Applications can also use getCameraAudioRestriction to query current system-wide camera mute mode in effect.
 
 The mute settings from this CameraDevice will be automatically removed when the CameraDevice is closed or the application is disconnected from the camera.
 
@@ -1183,4 +1183,4 @@ The mute settings from this CameraDevice will be automatically removed when the 
 
 **See Also**
 
-- `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#getCameraAudioRestriction()`
+- getCameraAudioRestriction

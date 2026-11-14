@@ -13,36 +13,36 @@ open class WifiP2pServiceRequest : Parcelable
 | --- | --- |
 | ↳ | [android.net.wifi.p2p.nsd.WifiP2pServiceRequest](WifiP2pServiceRequest.md) |
 
-| Known Direct Subclasses [WifiP2pDnsSdServiceRequest](WifiP2pDnsSdServiceRequest.md), [WifiP2pUpnpServiceRequest](WifiP2pUpnpServiceRequest.md) |---|---| | [WifiP2pDnsSdServiceRequest](WifiP2pDnsSdServiceRequest.md) | A class for creating a Bonjour service discovery request for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` | | [WifiP2pUpnpServiceRequest](WifiP2pUpnpServiceRequest.md) | A class for creating a Upnp service discovery request for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` | |
+| Known Direct Subclasses [WifiP2pDnsSdServiceRequest](WifiP2pDnsSdServiceRequest.md), [WifiP2pUpnpServiceRequest](WifiP2pUpnpServiceRequest.md) |---|---| | [WifiP2pDnsSdServiceRequest](WifiP2pDnsSdServiceRequest.md) | A class for creating a Bonjour service discovery request for use with addServiceRequest and removeServiceRequest | | [WifiP2pUpnpServiceRequest](WifiP2pUpnpServiceRequest.md) | A class for creating a Upnp service discovery request for use with addServiceRequest and removeServiceRequest | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A class for creating a service discovery request for use with `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,%20android.net.wifi.p2p.nsd.WifiP2pServiceRequest,%20android.net.wifi.p2p.WifiP2pManager.ActionListener)`
+A class for creating a service discovery request for use with addServiceRequest and removeServiceRequest
 
 This class is used to create service discovery request for custom vendor specific service discovery protocol `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int` or to search all service protocols `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int`.
 
-For the purpose of creating a UPnP or Bonjour service request, use `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest` respectively.
+For the purpose of creating a UPnP or Bonjour service request, use WifiP2pUpnpServiceRequest or WifiP2pDnsSdServiceRequest respectively.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#WifiP2pServiceRequest(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig)(usdConfig: https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig)` Constructor for creating a service discovery request for discovering the service using un-synchronized service discovery (USD) protocol. |
+| WifiP2pServiceRequest Constructor for creating a service discovery request for discovering the service using un-synchronized service discovery (USD) protocol. |
 
 | Public methods ||
 |---|---|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#describeContents()()` Implement the Parcelable interface |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| open [WifiP2pUsdBasedServiceConfig](WifiP2pUsdBasedServiceConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#getWifiP2pUsdBasedServiceConfig()()` /\*\* Get the service information configured to discover a service using un-synchronized service discovery (USD) protocol. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Implement the Parcelable interface |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | equals Indicates whether some other object is "equal to" this one. |
+| open [WifiP2pUsdBasedServiceConfig](WifiP2pUsdBasedServiceConfig.md)? | getWifiP2pUsdBasedServiceConfig /\*\* Get the service information configured to discover a service using un-synchronized service discovery (USD) protocol. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#hashCode()()` Returns a hash code value for the object. |
-| open static [WifiP2pServiceRequest](WifiP2pServiceRequest.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#newInstance(kotlin.Int)(protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a service discovery request. |
-| open static [WifiP2pServiceRequest](WifiP2pServiceRequest.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#newInstance(kotlin.Int,%20kotlin.String)(protocolType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, queryData: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Create a service discovery request. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | hashCode Returns a hash code value for the object. |
+| open static [WifiP2pServiceRequest](WifiP2pServiceRequest.md)! | newInstance Create a service discovery request. |
+| open static [WifiP2pServiceRequest](WifiP2pServiceRequest.md)! | newInstance Create a service discovery request. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement the Parcelable interface |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Implement the Parcelable interface |
 
 ## Public constructors
 
@@ -58,7 +58,7 @@ Constructor for creating a service discovery request for discovering the service
 
 | Parameters ||
 |---|---|
-| `usdConfig` | [WifiP2pUsdBasedServiceConfig](WifiP2pUsdBasedServiceConfig.md): See `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig` This value cannot be `null`. |
+| `usdConfig` | [WifiP2pUsdBasedServiceConfig](WifiP2pUsdBasedServiceConfig.md): See WifiP2pUsdBasedServiceConfig This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -116,11 +116,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getWifiP2pUsdBasedServiceConfig(): WifiP2pUsdBasedServiceConfig?
 ```
 
-/\*\* Get the service information configured to discover a service using un-synchronized service discovery (USD) protocol. See `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceRequest#WifiP2pServiceRequest(android.net.wifi.p2p.nsd.WifiP2pUsdBasedServiceConfig)`.
+/\*\* Get the service information configured to discover a service using un-synchronized service discovery (USD) protocol. See WifiP2pServiceRequest.
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig?` | A valid or not null `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUsdBasedServiceConfig` if the service information is configured to discover a service using un-synchronized service discovery (USD) protocol. Otherwise, it is null. |
+| WifiP2pUsdBasedServiceConfig | A valid or not null WifiP2pUsdBasedServiceConfig if the service information is configured to discover a service using un-synchronized service discovery (USD) protocol. Otherwise, it is null. |
 
 ### hashCode
 
@@ -135,8 +135,8 @@ Returns a hash code value for the object. This method is supported for the benef
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)` method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the equals method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the equals method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |---|---|
@@ -154,7 +154,7 @@ Create a service discovery request.
 
 | Parameters ||
 |---|---|
-| `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): can be `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int`. In order to create a UPnP or Bonjour service request, use `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest` respectively |
+| `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): can be `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int`. In order to create a UPnP or Bonjour service request, use WifiP2pUpnpServiceRequest or WifiP2pDnsSdServiceRequest respectively |
 
 | Return ||
 |---|---|
@@ -175,7 +175,7 @@ Create a service discovery request.
 
 | Parameters ||
 |---|---|
-| `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): can be `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int`. In order to create a UPnP or Bonjour service request, use `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pDnsSdServiceRequest` respectively |
+| `protocolType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): can be `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_ALL:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/nsd/WifiP2pServiceInfo#SERVICE_TYPE_VENDOR_SPECIFIC:kotlin.Int`. In order to create a UPnP or Bonjour service request, use WifiP2pUpnpServiceRequest or WifiP2pDnsSdServiceRequest respectively |
 | `queryData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: hex string that is vendor specific. Can be null. |
 
 | Return ||

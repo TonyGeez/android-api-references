@@ -10,7 +10,7 @@ class SystemUpdatePolicy : Parcelable
 | --- | --- |
 | ↳ | [android.app.admin.SystemUpdatePolicy](SystemUpdatePolicy.md) |
 
-Determines when over-the-air system updates are installed on a device. Only a device policy controller (DPC) running in device owner mode or in profile owner mode for an organization-owned device can set an update policy for the device by calling the `DevicePolicyManager` method `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setSystemUpdatePolicy(android.content.ComponentName,%20android.app.admin.SystemUpdatePolicy)`. An update policy affects the pending system update (if there is one) and any future updates for the device.
+Determines when over-the-air system updates are installed on a device. Only a device policy controller (DPC) running in device owner mode or in profile owner mode for an organization-owned device can set an update policy for the device by calling the `DevicePolicyManager` method setSystemUpdatePolicy. An update policy affects the pending system update (if there is one) and any future updates for the device.
 
 If a policy is set on a device, the system doesn't notify the user about updates.
 
@@ -47,7 +47,7 @@ To learn more, read [Manage system updates](https://developer.android.com/work/d
 
 | Nested classes ||
 |---|---|
-| | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy.ValidationFailedException` An exception class that represents various validation errors thrown from `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#setFreezePeriods(kotlin.collections.MutableList)` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setSystemUpdatePolicy(android.content.ComponentName,%20android.app.admin.SystemUpdatePolicy)` |
+| | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy.ValidationFailedException` An exception class that represents various validation errors thrown from setFreezePeriods and setSystemUpdatePolicy |
 
 | Constants ||
 |---|---|
@@ -58,32 +58,32 @@ To learn more, read [Manage system updates](https://developer.android.com/work/d
 
 Inherited constants From class `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int`
 
-Descriptor bit used with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#describeContents()`: indicates that the Parcelable object's flattened representation includes a file descriptor.
+Descriptor bit used with describeContents: indicates that the Parcelable object's flattened representation includes a file descriptor.
 
 <br />
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`
 
-Flag for use with `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
+Flag for use with writeToParcel: the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point.
 
 <br />
 
 | Public methods ||
 |---|---|
-| static [SystemUpdatePolicy](SystemUpdatePolicy.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#createAutomaticInstallPolicy()()` Create a policy object and set it to install update automatically as soon as one is available. |
-| static [SystemUpdatePolicy](SystemUpdatePolicy.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#createPostponeInstallPolicy()()` Create a policy object and set it to block installation for a maximum period of 30 days. |
-| static [SystemUpdatePolicy](SystemUpdatePolicy.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#createWindowedInstallPolicy(kotlin.Int,%20kotlin.Int)(startTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a policy object and set it to: new system update will only be installed automatically when the system clock is inside a daily maintenance window. |
+| static [SystemUpdatePolicy](SystemUpdatePolicy.md)! | createAutomaticInstallPolicy Create a policy object and set it to install update automatically as soon as one is available. |
+| static [SystemUpdatePolicy](SystemUpdatePolicy.md)! | createPostponeInstallPolicy Create a policy object and set it to block installation for a maximum period of 30 days. |
+| static [SystemUpdatePolicy](SystemUpdatePolicy.md)! | createWindowedInstallPolicy Create a policy object and set it to: new system update will only be installed automatically when the system clock is inside a daily maintenance window. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FreezePeriod](FreezePeriod.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#getFreezePeriods()()` Returns the list of freeze periods previously set on this system update policy object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#getInstallWindowEnd()()` Get the end of the maintenance window. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | describeContents Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [FreezePeriod](FreezePeriod.md)!\>! | getFreezePeriods Returns the list of freeze periods previously set on this system update policy object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInstallWindowEnd Get the end of the maintenance window. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#getInstallWindowStart()()` Get the start of the maintenance window. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#getPolicyType()()` Returns the type of system update policy, or -1 if no policy has been set. |
-| [SystemUpdatePolicy](SystemUpdatePolicy.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#setFreezePeriods(kotlin.collections.MutableList)(freezePeriods: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/admin/FreezePeriod!>!)` Configure a list of freeze periods on top of the current policy. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getInstallWindowStart Get the start of the maintenance window. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | getPolicyType Returns the type of system update policy, or -1 if no policy has been set. |
+| [SystemUpdatePolicy](SystemUpdatePolicy.md)! | setFreezePeriods Configure a list of freeze periods on top of the current policy. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#toString()()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | toString Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | writeToParcel Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
@@ -111,7 +111,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_INSTALL_WINDOWED: Int
 ```
 
-Installs system updates (without user interaction) during a daily maintenance window. Set the start and end of the daily maintenance window, as minutes of the day, when creating a new `TYPE_INSTALL_WINDOWED` policy. See `https://developer.android.com/reference/kotlin/android/app/admin/SystemUpdatePolicy#createWindowedInstallPolicy(kotlin.Int,%20kotlin.Int)`.
+Installs system updates (without user interaction) during a daily maintenance window. Set the start and end of the daily maintenance window, as minutes of the day, when creating a new `TYPE_INSTALL_WINDOWED` policy. See createWindowedInstallPolicy.
 
 No connectivity, not enough disk space, or a low battery are typical reasons Android might not install a system update in the daily maintenance window. After 30 days trying to install an update in the maintenance window (regardless of policy changes in this period), the system prompts the device user to install the update.
 
@@ -201,7 +201,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun describeContents(): Int
 ```
 
-Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#writeToParcel(android.os.Parcel,%20kotlin.Int)`, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
+Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of writeToParcel, the return value of this method must include the `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#CONTENTS_FILE_DESCRIPTOR:kotlin.Int` bit.
 
 | Return ||
 |---|---|
